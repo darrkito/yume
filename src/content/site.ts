@@ -6,8 +6,10 @@ export const SITE = {
   description:
     "Yume — papelería y artículos personalizados hechos en México: recetarios médicos, stickers, plantillas y botellas personalizadas.",
   whatsappNumber: "524621922778",
-  email: "hola@studioyume.mx",
-  instagram: "https://instagram.com/studio.yume",
+  // TODO(real inbox): using the owner's personal email as a placeholder
+  // until a real hola@studioyume.mx inbox exists — swap when ready.
+  email: "sebasesc5@gmail.com",
+  instagram: "https://www.instagram.com/studioyume.mx",
 };
 
 export const waLink = (message: string) =>
