@@ -5,9 +5,7 @@ export const SITE = {
   tagline: "Papelería y artículos personalizados",
   description:
     "Yume — papelería y artículos personalizados hechos en México: recetarios médicos, stickers, plantillas y botellas personalizadas.",
-  // TODO(real contact info): placeholder — replace with the real WhatsApp
-  // number and email before launch. Never invent a real-looking number.
-  whatsappNumber: "5200000000",
+  whatsappNumber: "524621922778",
   email: "hola@studioyume.mx",
   instagram: "https://instagram.com/studio.yume",
 };

@@ -20,7 +20,8 @@ npx tsc --noEmit        # solo type-check
 
 ## Pendiente antes de lanzar
 
-- [ ] Número de WhatsApp real en `src/content/site.ts`
+- [x] Número de WhatsApp real en `src/content/site.ts` (+52 462 192 2778)
+- [ ] Confirmar que `hola@studioyume.mx` es una bandeja real (se usó como default por convención, no verificado)
 - [ ] Fotografía real del recetario (reemplaza `NotepadMark`)
 - [ ] Decidir método de pago: ¿solo WhatsApp + transferencia/efectivo, o agregar Stripe Checkout (tarjeta + OXXO)?
 - [ ] Conectar dominio `studioyume.mx` en Vercel
