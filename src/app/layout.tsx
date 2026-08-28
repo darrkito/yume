@@ -42,7 +42,7 @@ const orgSchema = {
   "@id": ORG_ID,
   name: SITE.name,
   url: SITE.url,
-  logo: `${SITE.url}/logo-yume.png`,
+  logo: `${SITE.url}/logo-yume.webp`,
   description: SITE.description,
   email: SITE.email,
   sameAs: [SITE.instagram],

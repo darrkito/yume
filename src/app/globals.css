@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --paper: #faf7f2;
+  color-scheme: light;
+  --paper: #fffcf5;
   --paper-raised: #ffffff;
   --ink: #241b1a;
   --ink-soft: #6b5d59;
@@ -9,19 +10,6 @@
   --brand-deep: #560000;
   --brand-tint: #f4e3e0;
   --line: #e7ded7;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --paper: #1a1412;
-    --paper-raised: #241b19;
-    --ink: #f3ebe6;
-    --ink-soft: #b8a9a3;
-    --brand: #d1584f;
-    --brand-deep: #e8756c;
-    --brand-tint: #3a201d;
-    --line: #3a2e2b;
-  }
 }
 
 @theme inline {
