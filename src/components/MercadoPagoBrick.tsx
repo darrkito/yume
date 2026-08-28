@@ -5,6 +5,7 @@ import { initMercadoPago, Payment } from "@mercadopago/sdk-react";
 import { Loader2, CheckCircle2, Store, XCircle } from "lucide-react";
 import { useCart } from "@/components/CartContext";
 import type { CartItem } from "@/components/CartContext";
+import type { Customer, ShippingAddress } from "@/lib/orders";
 
 type Result =
   | { kind: "approved" }
@@ -15,10 +16,14 @@ type Result =
 export function MercadoPagoBrick({
   items,
   total,
+  customer,
+  shippingAddress,
   onSettled,
 }: {
   items: CartItem[];
   total: number;
+  customer: Customer;
+  shippingAddress: ShippingAddress;
   onSettled?: () => void;
 }) {
   const { clear } = useCart();
@@ -101,7 +106,7 @@ export function MercadoPagoBrick({
       {ready && (
         <Payment
           key={total}
-          initialization={{ amount: total }}
+          initialization={{ amount: total, payer: { email: customer.email } }}
           customization={{
             paymentMethods: {
               creditCard: "all",
@@ -115,7 +120,7 @@ export function MercadoPagoBrick({
               const res = await fetch("/api/checkout-payment", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ items, formData }),
+                body: JSON.stringify({ items, formData, customer, shippingAddress }),
               });
               const data = await res.json();
               if (!res.ok) throw new Error(data.error ?? "No se pudo procesar el pago.");

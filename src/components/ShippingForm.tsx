@@ -1,0 +1,129 @@
+"use client";
+
+import { useState } from "react";
+import type { Customer, ShippingAddress } from "@/lib/orders";
+
+const FIELD_CLASS =
+  "w-full rounded-lg border border-line bg-paper px-4 py-2.5 text-sm text-ink placeholder:text-ink-soft/60 focus:border-brand focus:outline-none";
+const LABEL_CLASS = "mb-1.5 block text-xs font-medium uppercase tracking-[0.08em] text-ink-soft";
+
+export function ShippingForm({
+  onSubmit,
+}: {
+  onSubmit: (data: { customer: Customer; shippingAddress: ShippingAddress }) => void;
+}) {
+  const [values, setValues] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    street: "",
+    number: "",
+    neighborhood: "",
+    city: "Guadalajara",
+    state: "Jalisco",
+    zip: "",
+    references: "",
+  });
+
+  const update = (key: keyof typeof values) => (e: React.ChangeEvent<HTMLInputElement>) =>
+    setValues((v) => ({ ...v, [key]: e.target.value }));
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    onSubmit({
+      customer: { name: values.name, email: values.email, phone: values.phone || undefined },
+      shippingAddress: {
+        street: values.street,
+        number: values.number,
+        neighborhood: values.neighborhood,
+        city: values.city,
+        state: values.state,
+        zip: values.zip,
+        references: values.references || undefined,
+      },
+    });
+  };
+
+  return (
+    <form onSubmit={handleSubmit} className="space-y-8">
+      <div>
+        <h2 className="font-display text-lg text-ink">Tus datos</h2>
+        <div className="mt-4 grid gap-4 sm:grid-cols-2">
+          <div className="sm:col-span-2">
+            <label className={LABEL_CLASS} htmlFor="name">
+              Nombre completo
+            </label>
+            <input id="name" required className={FIELD_CLASS} value={values.name} onChange={update("name")} placeholder="María López" />
+          </div>
+          <div>
+            <label className={LABEL_CLASS} htmlFor="email">
+              Correo
+            </label>
+            <input id="email" type="email" required className={FIELD_CLASS} value={values.email} onChange={update("email")} placeholder="maria@correo.com" />
+          </div>
+          <div>
+            <label className={LABEL_CLASS} htmlFor="phone">
+              Teléfono (opcional)
+            </label>
+            <input id="phone" type="tel" className={FIELD_CLASS} value={values.phone} onChange={update("phone")} placeholder="33 1234 5678" />
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h2 className="font-display text-lg text-ink">Dirección de envío</h2>
+        <div className="mt-4 grid gap-4 sm:grid-cols-3">
+          <div className="sm:col-span-2">
+            <label className={LABEL_CLASS} htmlFor="street">
+              Calle
+            </label>
+            <input id="street" required className={FIELD_CLASS} value={values.street} onChange={update("street")} placeholder="Av. Vallarta" />
+          </div>
+          <div>
+            <label className={LABEL_CLASS} htmlFor="number">
+              Número
+            </label>
+            <input id="number" required className={FIELD_CLASS} value={values.number} onChange={update("number")} placeholder="123" />
+          </div>
+          <div className="sm:col-span-3">
+            <label className={LABEL_CLASS} htmlFor="neighborhood">
+              Colonia
+            </label>
+            <input id="neighborhood" required className={FIELD_CLASS} value={values.neighborhood} onChange={update("neighborhood")} placeholder="Americana" />
+          </div>
+          <div>
+            <label className={LABEL_CLASS} htmlFor="city">
+              Ciudad
+            </label>
+            <input id="city" required className={FIELD_CLASS} value={values.city} onChange={update("city")} />
+          </div>
+          <div>
+            <label className={LABEL_CLASS} htmlFor="state">
+              Estado
+            </label>
+            <input id="state" required className={FIELD_CLASS} value={values.state} onChange={update("state")} />
+          </div>
+          <div>
+            <label className={LABEL_CLASS} htmlFor="zip">
+              Código postal
+            </label>
+            <input id="zip" required inputMode="numeric" className={FIELD_CLASS} value={values.zip} onChange={update("zip")} placeholder="44100" />
+          </div>
+          <div className="sm:col-span-3">
+            <label className={LABEL_CLASS} htmlFor="references">
+              Referencias (opcional)
+            </label>
+            <input id="references" className={FIELD_CLASS} value={values.references} onChange={update("references")} placeholder="Portón negro, entre calles X y Y" />
+          </div>
+        </div>
+      </div>
+
+      <button
+        type="submit"
+        className="w-full rounded-full bg-brand px-7 py-3.5 text-center text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brand-deep sm:w-auto"
+      >
+        Continuar al pago →
+      </button>
+    </form>
+  );
+}
