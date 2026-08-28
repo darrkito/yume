@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getProduct, products } from "@/content/products";
 import { SITE, waLink } from "@/content/site";
-import { NotepadMark } from "@/components/NotepadMark";
+import { ProductVisual } from "@/components/ProductVisual";
 
 export function generateStaticParams() {
   return products.map((p) => ({ slug: p.slug }));
@@ -15,11 +15,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!product) return {};
   const title = product.name;
   const description = product.description;
+  const ogImage = product.image ?? "/og-image.jpg";
   return {
     title,
     description,
     alternates: { canonical: `/productos/${slug}` },
-    openGraph: { title, description, type: "website", url: `/productos/${slug}` },
+    openGraph: { title, description, type: "website", url: `/productos/${slug}`, images: [ogImage] },
+    twitter: { card: "summary_large_image", images: [ogImage] },
   };
 }
 
@@ -72,7 +74,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
 
       <div className="grid gap-14 sm:grid-cols-2">
         <div className="flex justify-center rounded-2xl border border-line bg-paper-raised p-10 sm:justify-start">
-          <NotepadMark />
+          <ProductVisual product={product} />
         </div>
 
         <div>

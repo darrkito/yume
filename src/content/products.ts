@@ -33,6 +33,7 @@ export const products: Product[] = [
       "Envías tu logo o lo diseñamos contigo",
       "Aprobación de diseño antes de imprimir",
     ],
+    image: "/recetario-medico.webp",
     faq: [
       {
         q: "¿Qué datos necesito enviar para personalizar mi recetario?",

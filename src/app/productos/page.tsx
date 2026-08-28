@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { products } from "@/content/products";
-import { NotepadMark } from "@/components/NotepadMark";
+import { ProductVisual } from "@/components/ProductVisual";
 
 export const metadata: Metadata = {
   title: "Tienda",
@@ -25,8 +25,8 @@ export default function ProductosPage() {
             href={`/productos/${p.slug}`}
             className="group rounded-2xl border border-line bg-paper-raised p-6 transition-shadow hover:shadow-lg"
           >
-            <div className="flex justify-center">
-              <NotepadMark compact />
+            <div className="flex h-48 items-center justify-center">
+              <ProductVisual product={p} compact />
             </div>
             <p className="mt-6 text-xs uppercase tracking-[0.15em] text-brand">{p.category}</p>
             <h2 className="mt-1 font-display text-xl text-ink group-hover:text-brand transition-colors">{p.name}</h2>

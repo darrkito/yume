@@ -2,6 +2,7 @@ import Link from "next/link";
 import { products } from "@/content/products";
 import { waLink } from "@/content/site";
 import { NotepadMark } from "@/components/NotepadMark";
+import { ProductVisual } from "@/components/ProductVisual";
 
 export default function Home() {
   const featured = products[0];
@@ -50,8 +51,8 @@ export default function Home() {
           <p className="text-xs uppercase tracking-[0.25em] text-brand">Destacado</p>
           <h2 className="mt-3 font-display text-3xl text-ink sm:text-4xl">{featured.name}</h2>
           <div className="mt-10 grid gap-10 sm:grid-cols-[1fr_1.2fr] sm:items-start">
-            <div className="rounded-2xl border border-line bg-paper p-8">
-              <NotepadMark compact />
+            <div className="flex items-center justify-center rounded-2xl border border-line bg-paper p-8">
+              <ProductVisual product={featured} compact />
             </div>
             <div>
               <p className="text-2xl font-semibold text-ink">
