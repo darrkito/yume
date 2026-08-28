@@ -8,7 +8,9 @@ export function Footer() {
         <div className="grid gap-10 sm:grid-cols-3">
           <div>
             <p className="font-display text-xl tracking-[0.2em] text-ink">{SITE.name.toUpperCase()}</p>
-            <p className="mt-3 max-w-xs text-sm leading-relaxed text-ink-soft">{SITE.tagline}. Piezas hechas por encargo en México.</p>
+            <p className="mt-3 max-w-xs text-sm leading-relaxed text-ink-soft">
+              {SITE.tagline}. Piezas hechas por encargo en {SITE.city}, {SITE.state} — con envíos a todo México.
+            </p>
           </div>
           <nav aria-label="Enlaces" className="text-sm text-ink-soft">
             <p className="mb-3 text-xs uppercase tracking-[0.15em] text-ink">Explora</p>
@@ -48,7 +50,7 @@ export function Footer() {
         </div>
         <div className="mt-12 border-t border-line pt-6 text-xs text-ink-soft">
           <p>
-            © {new Date().getFullYear()} {SITE.name}. Hecho en México.
+            © {new Date().getFullYear()} {SITE.name}. Hecho en {SITE.city}, {SITE.state}, México.
           </p>
         </div>
       </div>

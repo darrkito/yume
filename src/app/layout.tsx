@@ -34,18 +34,39 @@ export const metadata: Metadata = {
   },
   twitter: { card: "summary_large_image", images: ["/og-image.jpg"] },
   robots: { index: true, follow: true },
+  other: {
+    "geo.region": "MX-JAL",
+    "geo.placename": `${SITE.city}, ${SITE.state}`,
+    "geo.position": `${SITE.geo.lat};${SITE.geo.lng}`,
+  },
 };
 
 const ORG_ID = `${SITE.url}/#organization`;
 const orgSchema = {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": ["LocalBusiness", "Organization"],
   "@id": ORG_ID,
   name: SITE.name,
   url: SITE.url,
   logo: `${SITE.url}/logo-yume.webp`,
+  image: `${SITE.url}/logo-yume.webp`,
   description: SITE.description,
   email: SITE.email,
+  priceRange: "$$",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: SITE.city,
+    addressRegion: SITE.state,
+    addressCountry: "MX",
+  },
+  geo: { "@type": "GeoCoordinates", latitude: SITE.geo.lat, longitude: SITE.geo.lng },
+  areaServed: [
+    { "@type": "City", name: "Guadalajara" },
+    { "@type": "City", name: "Zapopan" },
+    { "@type": "City", name: "Tlaquepaque" },
+    { "@type": "State", name: "Jalisco" },
+    { "@type": "Country", name: "México" },
+  ],
   sameAs: [SITE.instagram],
 };
 

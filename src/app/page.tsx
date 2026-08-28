@@ -15,13 +15,14 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-6 pb-20 pt-16 sm:pt-24">
         <div className="grid items-center gap-12 sm:grid-cols-2">
           <div>
-            <p className="text-xs uppercase tracking-[0.25em] text-brand">Papelería personalizada · México</p>
+            <p className="text-xs uppercase tracking-[0.25em] text-brand">Papelería personalizada · Guadalajara, Jalisco</p>
             <h1 className="mt-4 font-display text-4xl leading-[1.1] tracking-tight text-ink sm:text-5xl">
               Piezas de papel hechas con intención.
             </h1>
             <p className="mt-6 max-w-md text-base leading-relaxed text-ink-soft">
-              Yume diseña y produce papelería personalizada por encargo: recetarios médicos, stickers, plantillas y botellas
-              a tu medida. Cada pieza se aprueba contigo antes de imprimir.
+              Yume diseña y produce papelería personalizada por encargo desde Guadalajara, Jalisco, con envíos a todo
+              México: recetarios médicos, stickers, plantillas y botellas a tu medida. Cada pieza se aprueba contigo
+              antes de imprimir.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
@@ -115,7 +116,7 @@ export default function Home() {
           {[
             { title: "Diseño a tu medida", body: "Cada pieza se ajusta a tus datos, tu marca o tu consultorio — nada de plantillas genéricas." },
             { title: "Apruebas antes de imprimir", body: "Recibes una prueba digital y das el visto bueno antes de que se produzca tu pedido." },
-            { title: "Hecho en México", body: "Producción local, pensada para negocios y profesionales que quieren papelería con carácter." },
+            { title: "Hecho en Guadalajara", body: "Producción local en Jalisco, con envíos a todo México — pensada para negocios y profesionales que quieren papelería con carácter." },
           ].map((v) => (
             <div key={v.title}>
               <h3 className="font-display text-xl text-ink">{v.title}</h3>

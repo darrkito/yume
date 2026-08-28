@@ -47,6 +47,8 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       priceCurrency: product.currency,
       availability: "https://schema.org/InStock",
       url: `${SITE.url}/productos/${product.slug}`,
+      areaServed: { "@type": "Country", name: "México" },
+      seller: { "@id": `${SITE.url}/#organization` },
     },
   };
 
