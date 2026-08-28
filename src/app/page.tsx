@@ -51,7 +51,7 @@ export default function Home() {
           <p className="text-xs uppercase tracking-[0.25em] text-brand">Destacado</p>
           <h2 className="mt-3 font-display text-3xl text-ink sm:text-4xl">{featured.name}</h2>
           <div className="mt-10 grid gap-10 sm:grid-cols-[1fr_1.2fr] sm:items-start">
-            <div className="flex items-center justify-center rounded-2xl border border-line bg-paper p-8">
+            <div className="flex h-72 items-center justify-center overflow-hidden rounded-2xl border border-line bg-paper p-8">
               <ProductVisual product={featured} compact />
             </div>
             <div>

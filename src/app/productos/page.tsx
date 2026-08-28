@@ -23,7 +23,7 @@ export default function ProductosPage() {
         {products.map((p) => (
           <div key={p.slug} className="group rounded-2xl border border-line bg-paper-raised p-6 transition-shadow hover:shadow-lg">
             <Link href={`/productos/${p.slug}`}>
-              <div className="flex h-48 items-center justify-center">
+              <div className="flex h-48 items-center justify-center overflow-hidden">
                 <ProductVisual product={p} compact />
               </div>
               <p className="mt-6 text-xs uppercase tracking-[0.15em] text-brand">{p.category}</p>

@@ -14,7 +14,11 @@ export function ProductVisual({ product, compact = false }: { product: Product; 
         alt={product.name}
         width={size}
         height={size}
-        className="h-auto w-full max-w-[380px] object-contain"
+        className={
+          compact
+            ? "h-full w-auto max-w-full object-contain"
+            : "h-auto w-full max-w-[380px] object-contain"
+        }
         priority={!compact}
       />
     );
