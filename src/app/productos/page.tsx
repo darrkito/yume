@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { products } from "@/content/products";
 import { ProductVisual } from "@/components/ProductVisual";
+import { AddToCartButton } from "@/components/AddToCartButton";
 
 export const metadata: Metadata = {
   title: "Tienda",
@@ -20,18 +21,17 @@ export default function ProductosPage() {
 
       <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {products.map((p) => (
-          <Link
-            key={p.slug}
-            href={`/productos/${p.slug}`}
-            className="group rounded-2xl border border-line bg-paper-raised p-6 transition-shadow hover:shadow-lg"
-          >
-            <div className="flex h-48 items-center justify-center">
-              <ProductVisual product={p} compact />
-            </div>
-            <p className="mt-6 text-xs uppercase tracking-[0.15em] text-brand">{p.category}</p>
-            <h2 className="mt-1 font-display text-xl text-ink group-hover:text-brand transition-colors">{p.name}</h2>
-            <p className="mt-2 text-lg font-semibold text-ink">${p.price.toFixed(2)} MXN</p>
-          </Link>
+          <div key={p.slug} className="group rounded-2xl border border-line bg-paper-raised p-6 transition-shadow hover:shadow-lg">
+            <Link href={`/productos/${p.slug}`}>
+              <div className="flex h-48 items-center justify-center">
+                <ProductVisual product={p} compact />
+              </div>
+              <p className="mt-6 text-xs uppercase tracking-[0.15em] text-brand">{p.category}</p>
+              <h2 className="mt-1 font-display text-xl text-ink group-hover:text-brand transition-colors">{p.name}</h2>
+              <p className="mt-2 text-lg font-semibold text-ink">${p.price.toFixed(2)} MXN</p>
+            </Link>
+            <AddToCartButton product={p} compact />
+          </div>
         ))}
       </div>
     </section>

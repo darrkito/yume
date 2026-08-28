@@ -4,13 +4,15 @@ export interface Product {
   price: number;
   currency: "MXN";
   category: string;
-  sheetCount: number;
-  dimensions: { width: number; height: number; unit: "cm" };
-  color: string;
+  specs: { label: string; value: string }[];
   description: string;
   details: string[];
   faq: { q: string; a: string }[];
   image?: string;
+  /** True when the customer must send their own logo/artwork for us to print — the
+   * product page shows a file picker (preview only, no upload backend yet) and
+   * clear instructions to attach it in the WhatsApp chat. */
+  requiresImage?: boolean;
 }
 
 export const products: Product[] = [
@@ -20,9 +22,12 @@ export const products: Product[] = [
     price: 400,
     currency: "MXN",
     category: "Papelería personalizada",
-    sheetCount: 400,
-    dimensions: { width: 14, height: 21.5, unit: "cm" },
-    color: "Blanco",
+    specs: [
+      { label: "Hojas", value: "400" },
+      { label: "Tamaño", value: "14 × 21.5 cm" },
+      { label: "Color", value: "Blanco" },
+      { label: "Producción", value: "Por encargo" },
+    ],
     description:
       "Recetario médico personalizado de 400 hojas, tamaño 14 x 21.5 cm, papel blanco. Diseñamos el membrete con tus datos profesionales (nombre, cédula, especialidad, dirección del consultorio) antes de imprimir, para que apruebes el diseño final antes de producción.",
     details: [
@@ -50,6 +55,47 @@ export const products: Product[] = [
       {
         q: "¿El papel es apto para recetas médicas oficiales?",
         a: "Es papel blanco estándar de 14 × 21.5 cm, el tamaño más usado para recetarios médicos en México. Si tu consultorio requiere alguna especificación adicional (folio, código de barras, etc.), cuéntanos al cotizar.",
+      },
+    ],
+  },
+  {
+    slug: "stickers-logo-personalizado",
+    name: "Stickers Logo Personalizado",
+    price: 75,
+    currency: "MXN",
+    category: "Stickers personalizados",
+    specs: [
+      { label: "Piezas por hoja", value: "30" },
+      { label: "Forma", value: "Circular" },
+      { label: "Personalización", value: "Tu logo o diseño" },
+      { label: "Producción", value: "Por encargo" },
+    ],
+    description:
+      "Hoja de 30 stickers circulares con tu logo o diseño. Envíanos tu imagen (o el diseño que quieras convertir en sticker) y te mandamos una prueba digital antes de imprimir.",
+    details: [
+      "30 stickers circulares por hoja",
+      "Imprimimos tu logo o el diseño que nos envíes",
+      "Prueba digital antes de imprimir",
+      "Ideal para packaging, laptops, agendas, regalos",
+    ],
+    image: "/stickers-logo-muestra.webp",
+    requiresImage: true,
+    faq: [
+      {
+        q: "¿Qué formato de imagen necesito enviar?",
+        a: "Preferimos PNG o vectores (AI, PDF, SVG) con fondo transparente si tu logo lo permite — pero si solo tienes un JPG o una foto del logo, también podemos trabajar con eso y te avisamos si necesitamos algo mejor.",
+      },
+      {
+        q: "¿Puedo pedir stickers de más de un diseño en la misma hoja?",
+        a: "Sí, cuéntanos al cotizar cuántos diseños distintos quieres combinar en las 30 piezas de la hoja.",
+      },
+      {
+        q: "¿Los stickers son resistentes al agua?",
+        a: "Escríbenos por WhatsApp para confirmar el material disponible según el uso que le vayas a dar (interior, exterior, botellas, etc.).",
+      },
+      {
+        q: "¿Puedo ver cómo va a quedar antes de imprimir?",
+        a: "Sí, siempre mandamos una prueba digital de la hoja completa para que la apruebes antes de producción.",
       },
     ],
   },

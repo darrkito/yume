@@ -3,8 +3,9 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ShoppingBag } from "lucide-react";
 import { SITE, waLink } from "@/content/site";
+import { useCart } from "@/components/CartContext";
 
 const NAV_LINKS = [
   { href: "/", label: "Inicio" },
@@ -14,6 +15,7 @@ const NAV_LINKS = [
 
 export function Header() {
   const [open, setOpen] = useState(false);
+  const { count } = useCart();
 
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-paper/90 backdrop-blur-sm">
@@ -28,7 +30,15 @@ export function Header() {
             </Link>
           ))}
         </nav>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-3">
+          <Link href="/carrito" className="relative p-2 text-ink hover:text-brand transition-colors" aria-label={`Carrito${count > 0 ? ` (${count} ${count === 1 ? "artículo" : "artículos"})` : ""}`}>
+            <ShoppingBag size={22} />
+            {count > 0 && (
+              <span className="absolute -right-0.5 -top-0.5 flex h-4 min-w-4 items-center justify-center rounded-full bg-brand px-1 text-[10px] font-semibold text-white">
+                {count}
+              </span>
+            )}
+          </Link>
           <a
             href={waLink("Hola, me interesa cotizar un producto de Yume.")}
             target="_blank"

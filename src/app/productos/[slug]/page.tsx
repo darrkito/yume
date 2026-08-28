@@ -4,6 +4,8 @@ import Link from "next/link";
 import { getProduct, products } from "@/content/products";
 import { SITE, waLink } from "@/content/site";
 import { ProductVisual } from "@/components/ProductVisual";
+import { AddToCartButton } from "@/components/AddToCartButton";
+import { LogoUploadNote } from "@/components/LogoUploadNote";
 
 export function generateStaticParams() {
   return products.map((p) => ({ slug: p.slug }));
@@ -87,34 +89,27 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           <p className="mt-6 text-sm leading-relaxed text-ink-soft">{product.description}</p>
 
           <dl className="mt-8 grid grid-cols-2 gap-4 border-y border-line py-6 text-sm">
-            <div>
-              <dt className="text-ink-soft">Hojas</dt>
-              <dd className="mt-1 font-medium text-ink">{product.sheetCount}</dd>
-            </div>
-            <div>
-              <dt className="text-ink-soft">Tamaño</dt>
-              <dd className="mt-1 font-medium text-ink">
-                {product.dimensions.width} × {product.dimensions.height} {product.dimensions.unit}
-              </dd>
-            </div>
-            <div>
-              <dt className="text-ink-soft">Color</dt>
-              <dd className="mt-1 font-medium text-ink">{product.color}</dd>
-            </div>
-            <div>
-              <dt className="text-ink-soft">Producción</dt>
-              <dd className="mt-1 font-medium text-ink">Por encargo</dd>
-            </div>
+            {product.specs.map((spec) => (
+              <div key={spec.label}>
+                <dt className="text-ink-soft">{spec.label}</dt>
+                <dd className="mt-1 font-medium text-ink">{spec.value}</dd>
+              </div>
+            ))}
           </dl>
 
-          <a
-            href={waLink(waMsg)}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-8 inline-block w-full rounded-full bg-brand px-7 py-3.5 text-center text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brand-deep sm:w-auto"
-          >
-            Cotizar por WhatsApp
-          </a>
+          {product.requiresImage && <LogoUploadNote />}
+
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a
+              href={waLink(waMsg)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block rounded-full bg-brand px-7 py-3.5 text-center text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brand-deep"
+            >
+              Cotizar por WhatsApp
+            </a>
+            <AddToCartButton product={product} />
+          </div>
 
           <ul className="mt-10 space-y-2 text-sm text-ink">
             {product.details.map((d) => (
