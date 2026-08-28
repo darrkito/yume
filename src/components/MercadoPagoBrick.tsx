@@ -12,7 +12,15 @@ type Result =
   | { kind: "pending" }
   | { kind: "error"; message: string };
 
-export function MercadoPagoBrick({ items, total }: { items: CartItem[]; total: number }) {
+export function MercadoPagoBrick({
+  items,
+  total,
+  onSettled,
+}: {
+  items: CartItem[];
+  total: number;
+  onSettled?: () => void;
+}) {
   const { clear } = useCart();
   const [ready, setReady] = useState(false);
   const [result, setResult] = useState<Result | null>(null);
@@ -114,12 +122,15 @@ export function MercadoPagoBrick({ items, total }: { items: CartItem[]; total: n
 
               if (data.status === "approved") {
                 clear();
+                onSettled?.();
                 setResult({ kind: "approved" });
               } else if (data.status === "pending" && data.point_of_interaction?.transaction_data?.ticket_url) {
                 clear();
+                onSettled?.();
                 setResult({ kind: "cash", ticketUrl: data.point_of_interaction.transaction_data.ticket_url });
               } else if (data.status === "pending" || data.status === "in_process") {
                 clear();
+                onSettled?.();
                 setResult({ kind: "pending" });
               } else {
                 setResult({ kind: "error", message: "El pago fue rechazado. Intenta con otro medio de pago." });

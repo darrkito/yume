@@ -11,8 +11,13 @@ export function CheckoutView() {
   const [mode, setMode] = useState<"choose" | "onsite">("choose");
   const [redirecting, setRedirecting] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [settled, setSettled] = useState(false);
 
-  if (items.length === 0) {
+  // Once a payment resolves, MercadoPagoBrick clears the cart itself — but
+  // it still needs to render its own success/pending/cash-voucher result.
+  // Only fall back to the empty-cart screen while still choosing a payment
+  // method, never mid-checkout, or the result flashes to this instead.
+  if (items.length === 0 && mode === "choose" && !settled) {
     return (
       <section className="mx-auto max-w-2xl px-6 py-24 text-center">
         <p className="text-xs uppercase tracking-[0.25em] text-brand">Pago</p>
@@ -51,20 +56,24 @@ export function CheckoutView() {
       <p className="text-xs uppercase tracking-[0.25em] text-brand">Pago</p>
       <h1 className="mt-3 font-display text-4xl text-ink">Elige cómo pagar</h1>
 
-      <ul className="mt-8 divide-y divide-line border-y border-line text-sm">
-        {items.map((item) => (
-          <li key={item.slug} className="flex items-center justify-between py-3">
-            <span className="text-ink">
-              {item.name} <span className="text-ink-soft">x{item.qty}</span>
-            </span>
-            <span className="font-medium text-ink">${(item.price * item.qty).toFixed(2)}</span>
-          </li>
-        ))}
-      </ul>
-      <div className="mt-4 flex items-center justify-between">
-        <p className="text-sm text-ink-soft">Total</p>
-        <p className="font-display text-2xl text-ink">${total.toFixed(2)} MXN</p>
-      </div>
+      {!settled && (
+        <>
+          <ul className="mt-8 divide-y divide-line border-y border-line text-sm">
+            {items.map((item) => (
+              <li key={item.slug} className="flex items-center justify-between py-3">
+                <span className="text-ink">
+                  {item.name} <span className="text-ink-soft">x{item.qty}</span>
+                </span>
+                <span className="font-medium text-ink">${(item.price * item.qty).toFixed(2)}</span>
+              </li>
+            ))}
+          </ul>
+          <div className="mt-4 flex items-center justify-between">
+            <p className="text-sm text-ink-soft">Total</p>
+            <p className="font-display text-2xl text-ink">${total.toFixed(2)} MXN</p>
+          </div>
+        </>
+      )}
 
       {error && <p className="mt-6 rounded-xl border border-line bg-paper p-4 text-sm text-ink">{error}</p>}
 
@@ -105,10 +114,12 @@ export function CheckoutView() {
 
       {mode === "onsite" && (
         <div className="mt-10">
-          <button type="button" onClick={() => setMode("choose")} className="mb-4 text-xs text-ink-soft hover:text-brand transition-colors">
-            ← Elegir otra forma de pago
-          </button>
-          <MercadoPagoBrick items={items} total={total} />
+          {!settled && (
+            <button type="button" onClick={() => setMode("choose")} className="mb-4 text-xs text-ink-soft hover:text-brand transition-colors">
+              ← Elegir otra forma de pago
+            </button>
+          )}
+          <MercadoPagoBrick items={items} total={total} onSettled={() => setSettled(true)} />
         </div>
       )}
     </section>
