@@ -1,0 +1,47 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schemas/draft/server-card.json",
+  "schemaVersion": "2025-11-25",
+  "serverInfo": {
+    "name": "yume-mcp",
+    "title": "Yume",
+    "version": "1.0.0",
+    "description": "Real, read-only MCP server over Yume's product catalog, FAQ, and blog content — papelería y artículos personalizados desde Guadalajara, Jalisco, México.",
+    "websiteUrl": "https://studioyume.mx"
+  },
+  "protocolVersion": "2025-06-18",
+  "transport": {
+    "type": "streamable-http",
+    "url": "https://studioyume.mx/mcp"
+  },
+  "capabilities": {
+    "tools": {
+      "listChanged": false
+    }
+  },
+  "tools": [
+    {
+      "name": "get_products",
+      "description": "List Yume's catalog: papelería y artículos personalizados (recetarios médicos, stickers) with real prices in MXN."
+    },
+    {
+      "name": "get_product",
+      "description": "Get full detail for one Yume product by slug: price, specs, description, and FAQ."
+    },
+    {
+      "name": "search_faq",
+      "description": "Search Yume's frequently asked questions across all products."
+    },
+    {
+      "name": "get_blog_posts",
+      "description": "List Yume's blog posts — local commerce guides for Guadalajara/Jalisco."
+    },
+    {
+      "name": "get_blog_post_detail",
+      "description": "Get the full content of one Yume blog post by slug."
+    },
+    {
+      "name": "request_quote",
+      "description": "Get a link to request a real quote from Yume via WhatsApp."
+    }
+  ]
+}

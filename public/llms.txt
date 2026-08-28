@@ -10,12 +10,26 @@ Yume diseña y produce papelería personalizada por encargo: cada pieza se aprue
 - [Stickers Logo Personalizado](https://studioyume.mx/productos/stickers-logo-personalizado): Hoja de 30 stickers circulares con tu logo o diseño. $75.00 MXN.
 - [Catálogo completo](https://studioyume.mx/productos)
 
+## Blog
+
+Guías reales de papelería personalizada para comercio local en Guadalajara y Jalisco — sin testimonios ni casos de estudio fabricados.
+
+- [Blog índice](https://studioyume.mx/blog)
+- [Recetarios médicos personalizados en Guadalajara: guía para tu consultorio](https://studioyume.mx/blog/recetarios-medicos-personalizados-guadalajara)
+- [Stickers personalizados para tu negocio en Guadalajara: guía rápida](https://studioyume.mx/blog/stickers-personalizados-para-negocios-guadalajara)
+- [Papelería personalizada para negocios en Jalisco: por qué vale la pena](https://studioyume.mx/blog/papeleria-personalizada-para-negocios-jalisco)
+
 ## Contacto y compra
 
 - [Cotizar por WhatsApp](https://api.whatsapp.com/send?phone=524621922778): forma principal de contacto y cotización.
 - [Pagar en línea](https://studioyume.mx/pago): checkout con Mercado Pago (tarjeta, cuenta Mercado Pago, transferencia SPEI y pago en efectivo en tiendas como OXXO).
 - Instagram: https://www.instagram.com/studioyume.mx
 - Correo: sebasesc5@gmail.com
+
+## Agent access
+
+- MCP server: https://studioyume.mx/.well-known/mcp/server-card.json — endpoint at https://studioyume.mx/mcp — tools: get_products, get_product, search_faq, get_blog_posts, get_blog_post_detail, request_quote
+- A2A agent card: https://studioyume.mx/.well-known/agent-card.json — endpoint at https://studioyume.mx/a2a (JSON-RPC, method `message/send`) — rule-based, answers questions about products, pricing, coverage area and payment methods
 
 ## Notas para agentes
 

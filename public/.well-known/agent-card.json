@@ -1,0 +1,52 @@
+{
+  "protocolVersion": "0.3.0",
+  "name": "Yume Assistant",
+  "description": "Answers questions in Spanish about Yume's personalized stationery products (medical prescription pads, custom stickers), pricing, and coverage area from Guadalajara, Jalisco, Mexico, with nationwide shipping, and helps request a quote via WhatsApp.",
+  "url": "https://studioyume.mx/a2a",
+  "preferredTransport": "JSONRPC",
+  "supportedInterfaces": [
+    {
+      "url": "https://studioyume.mx/a2a",
+      "transport": "JSONRPC"
+    }
+  ],
+  "version": "1.0.0",
+  "documentationUrl": "https://studioyume.mx/llms.txt",
+  "provider": {
+    "organization": "Yume",
+    "url": "https://studioyume.mx"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "securitySchemes": {},
+  "security": [],
+  "defaultInputModes": ["text/plain"],
+  "defaultOutputModes": ["text/plain", "application/json"],
+  "skills": [
+    {
+      "id": "answer-questions",
+      "name": "Answer questions",
+      "description": "Answer questions about products, pricing, and coverage area.",
+      "tags": ["faq", "pricing"],
+      "examples": [
+        "¿Cuánto cuesta el recetario médico personalizado?",
+        "¿Hacen envíos fuera de Guadalajara?",
+        "¿Cómo pago en línea?"
+      ],
+      "inputModes": ["text/plain"],
+      "outputModes": ["text/plain", "application/json"]
+    },
+    {
+      "id": "request-quote",
+      "name": "Request a quote",
+      "description": "Point the user to Yume's WhatsApp to start a real quote.",
+      "tags": ["quote", "contact"],
+      "examples": ["Quiero cotizar stickers personalizados"],
+      "inputModes": ["text/plain"],
+      "outputModes": ["text/plain", "application/json"]
+    }
+  ]
+}
