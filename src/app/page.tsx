@@ -6,6 +6,7 @@ import { ProductVisual } from "@/components/ProductVisual";
 
 export default function Home() {
   const featured = products[0];
+  const rest = products.slice(1);
   const allFaq = products.flatMap((p) => p.faq);
 
   return (
@@ -77,6 +78,36 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* More products */}
+      {rest.length > 0 && (
+        <section className="mx-auto max-w-6xl px-6 py-20">
+          <p className="text-xs uppercase tracking-[0.25em] text-brand">También en la tienda</p>
+          <h2 className="mt-3 font-display text-3xl text-ink sm:text-4xl">Más productos</h2>
+          <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {rest.map((p) => (
+              <Link
+                key={p.slug}
+                href={`/productos/${p.slug}`}
+                className="group rounded-2xl border border-line bg-paper-raised p-6 transition-shadow hover:shadow-lg"
+              >
+                <div className="flex h-48 items-center justify-center overflow-hidden">
+                  <ProductVisual product={p} compact />
+                </div>
+                <p className="mt-6 text-xs uppercase tracking-[0.15em] text-brand">{p.category}</p>
+                <h3 className="mt-1 font-display text-xl text-ink transition-colors group-hover:text-brand">{p.name}</h3>
+                <p className="mt-2 text-lg font-semibold text-ink">${p.price.toFixed(2)} MXN</p>
+              </Link>
+            ))}
+          </div>
+          <Link
+            href="/productos"
+            className="mt-10 inline-block text-sm font-semibold uppercase tracking-[0.1em] text-brand hover:text-brand-deep"
+          >
+            Ver toda la tienda →
+          </Link>
+        </section>
+      )}
 
       {/* Values */}
       <section className="mx-auto max-w-6xl px-6 py-20">
