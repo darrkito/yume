@@ -19,7 +19,7 @@ export function Header() {
   const { count } = useCart();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-line bg-paper/90 backdrop-blur-sm">
+    <header className="sticky top-0 z-50 border-b border-line bg-paper">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link href="/" className="flex items-center gap-2" aria-label={`${SITE.name} — Inicio`} onClick={() => setOpen(false)}>
           <Image src="/logo-yume-wordmark.webp" alt={SITE.name} width={215} height={80} className="h-10 w-auto sm:h-12" priority />
