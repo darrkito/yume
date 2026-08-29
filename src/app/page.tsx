@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { products } from "@/content/products";
 import { waLink } from "@/content/site";
+import { formatMXN } from "@/lib/format";
 import { NotepadMark } from "@/components/NotepadMark";
 import { ProductVisual } from "@/components/ProductVisual";
+import { RevealOnScroll } from "@/components/RevealOnScroll";
 
 export default function Home() {
   const featured = products[0];
@@ -16,7 +18,7 @@ export default function Home() {
         <div className="grid items-center gap-12 sm:grid-cols-2">
           <div>
             <p className="text-xs uppercase tracking-[0.25em] text-brand">Papelería personalizada · Guadalajara, Jalisco</p>
-            <h1 className="mt-4 font-display text-4xl leading-[1.1] tracking-tight text-ink sm:text-5xl">
+            <h1 className="mt-4 font-display text-4xl leading-[1.1] tracking-tight text-ink text-balance sm:text-5xl">
               Piezas de papel hechas con intención.
             </h1>
             <p className="mt-6 max-w-md text-base leading-relaxed text-ink-soft">
@@ -27,7 +29,7 @@ export default function Home() {
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
                 href="/productos"
-                className="rounded-full bg-brand px-7 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brand-deep"
+                className="rounded-full bg-brand px-7 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brand-deep active:scale-[0.98]"
               >
                 Ver tienda
               </Link>
@@ -51,14 +53,14 @@ export default function Home() {
       <section className="border-y border-line bg-paper-raised">
         <div className="mx-auto max-w-6xl px-6 py-20">
           <p className="text-xs uppercase tracking-[0.25em] text-brand">Destacado</p>
-          <h2 className="mt-3 font-display text-3xl text-ink sm:text-4xl">{featured.name}</h2>
+          <h2 className="mt-3 font-display text-3xl text-ink text-balance sm:text-4xl">{featured.name}</h2>
           <div className="mt-10 grid gap-10 sm:grid-cols-[1fr_1.2fr] sm:items-start">
             <div className="flex h-72 items-center justify-center overflow-hidden rounded-2xl border border-line bg-paper p-8">
               <ProductVisual product={featured} compact />
             </div>
             <div>
               <p className="text-2xl font-semibold text-ink">
-                ${featured.price.toFixed(2)} <span className="text-sm font-normal text-ink-soft">MXN</span>
+                {formatMXN(featured.price)} <span className="text-sm font-normal text-ink-soft">MXN</span>
               </p>
               <p className="mt-4 max-w-lg text-sm leading-relaxed text-ink-soft">{featured.description}</p>
               <ul className="mt-6 space-y-2 text-sm text-ink">
@@ -71,7 +73,7 @@ export default function Home() {
               </ul>
               <Link
                 href={`/productos/${featured.slug}`}
-                className="mt-8 inline-block rounded-full bg-brand px-7 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brand-deep"
+                className="mt-8 inline-block rounded-full bg-brand px-7 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brand-deep active:scale-[0.98]"
               >
                 Ver detalle y cotizar
               </Link>
@@ -83,22 +85,22 @@ export default function Home() {
       {/* More products */}
       {rest.length > 0 && (
         <section className="mx-auto max-w-6xl px-6 py-20">
-          <p className="text-xs uppercase tracking-[0.25em] text-brand">También en la tienda</p>
-          <h2 className="mt-3 font-display text-3xl text-ink sm:text-4xl">Más productos</h2>
+          <h2 className="font-display text-3xl text-ink sm:text-4xl text-balance">Más productos</h2>
           <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {rest.map((p) => (
-              <Link
-                key={p.slug}
-                href={`/productos/${p.slug}`}
-                className="group rounded-2xl border border-line bg-paper-raised p-6 transition-shadow hover:shadow-lg"
-              >
-                <div className="flex h-48 items-center justify-center overflow-hidden">
-                  <ProductVisual product={p} compact />
-                </div>
-                <p className="mt-6 text-xs uppercase tracking-[0.15em] text-brand">{p.category}</p>
-                <h3 className="mt-1 font-display text-xl text-ink transition-colors group-hover:text-brand">{p.name}</h3>
-                <p className="mt-2 text-lg font-semibold text-ink">${p.price.toFixed(2)} MXN</p>
-              </Link>
+            {rest.map((p, i) => (
+              <RevealOnScroll key={p.slug} delay={i * 80}>
+                <Link
+                  href={`/productos/${p.slug}`}
+                  className="group rounded-2xl border border-line bg-paper-raised p-6 transition-shadow hover:shadow-lg"
+                >
+                  <div className="flex h-48 items-center justify-center overflow-hidden">
+                    <ProductVisual product={p} compact />
+                  </div>
+                  <p className="mt-6 text-xs uppercase tracking-[0.15em] text-brand">{p.category}</p>
+                  <h3 className="mt-1 font-display text-xl text-ink transition-colors group-hover:text-brand">{p.name}</h3>
+                  <p className="mt-2 text-lg font-semibold text-ink">{formatMXN(p.price)} MXN</p>
+                </Link>
+              </RevealOnScroll>
             ))}
           </div>
           <Link
@@ -113,24 +115,34 @@ export default function Home() {
       {/* Values */}
       <section className="mx-auto max-w-6xl px-6 py-20">
         <div className="grid gap-10 sm:grid-cols-3">
-          {[
-            { title: "Diseño a tu medida", body: "Cada pieza se ajusta a tus datos, tu marca o tu consultorio — nada de plantillas genéricas." },
-            { title: "Apruebas antes de imprimir", body: "Recibes una prueba digital y das el visto bueno antes de que se produzca tu pedido." },
-            { title: "Hecho en Guadalajara", body: "Producción local en Jalisco, con envíos a todo México — pensada para negocios y profesionales que quieren papelería con carácter." },
-          ].map((v) => (
-            <div key={v.title}>
-              <h3 className="font-display text-xl text-ink">{v.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-ink-soft">{v.body}</p>
+          <div className="sm:col-span-2 sm:border-r sm:border-line sm:pr-10">
+            <h3 className="font-display text-2xl text-ink text-balance">Diseño a tu medida</h3>
+            <p className="mt-3 max-w-md text-sm leading-relaxed text-ink-soft">
+              Cada pieza se ajusta a tus datos, tu marca o tu consultorio: nada de plantillas genéricas.
+            </p>
+          </div>
+          <div className="flex flex-col gap-10">
+            <div>
+              <h3 className="font-display text-lg text-ink">Apruebas antes de imprimir</h3>
+              <p className="mt-2 text-sm leading-relaxed text-ink-soft">
+                Recibes una prueba digital y das el visto bueno antes de que se produzca tu pedido.
+              </p>
             </div>
-          ))}
+            <div>
+              <h3 className="font-display text-lg text-ink">Hecho en Guadalajara</h3>
+              <p className="mt-2 text-sm leading-relaxed text-ink-soft">
+                Producción local en Jalisco, con envíos a todo México, pensada para negocios y profesionales que
+                quieren papelería con carácter.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* FAQ */}
       <section id="faq" className="border-t border-line bg-paper-raised">
         <div className="mx-auto max-w-3xl px-6 py-20">
-          <p className="text-xs uppercase tracking-[0.25em] text-brand">Preguntas frecuentes</p>
-          <h2 className="mt-3 font-display text-3xl text-ink">¿Tienes dudas?</h2>
+          <h2 className="font-display text-3xl text-ink text-balance">¿Tienes dudas?</h2>
           <div className="mt-10 space-y-6">
             {allFaq.map((f) => (
               <div key={f.q} className="border-b border-line pb-6">

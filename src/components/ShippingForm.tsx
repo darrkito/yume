@@ -4,7 +4,7 @@ import { useState } from "react";
 import type { Customer, ShippingAddress } from "@/lib/orders";
 
 const FIELD_CLASS =
-  "w-full rounded-lg border border-line bg-paper px-4 py-2.5 text-sm text-ink placeholder:text-ink-soft/60 focus:border-brand focus:outline-none";
+  "w-full rounded-lg border border-line bg-paper px-4 py-2.5 text-sm text-ink placeholder:text-ink-soft/60 focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/30";
 const LABEL_CLASS = "mb-1.5 block text-xs font-medium uppercase tracking-[0.08em] text-ink-soft";
 
 export function ShippingForm({
@@ -53,19 +53,47 @@ export function ShippingForm({
             <label className={LABEL_CLASS} htmlFor="name">
               Nombre completo
             </label>
-            <input id="name" required className={FIELD_CLASS} value={values.name} onChange={update("name")} placeholder="María López" />
+            <input
+              id="name"
+              required
+              autoComplete="name"
+              className={FIELD_CLASS}
+              value={values.name}
+              onChange={update("name")}
+              placeholder="María López"
+            />
           </div>
           <div>
             <label className={LABEL_CLASS} htmlFor="email">
               Correo
             </label>
-            <input id="email" type="email" required className={FIELD_CLASS} value={values.email} onChange={update("email")} placeholder="maria@correo.com" />
+            <input
+              id="email"
+              type="email"
+              required
+              autoComplete="email"
+              spellCheck={false}
+              inputMode="email"
+              className={FIELD_CLASS}
+              value={values.email}
+              onChange={update("email")}
+              placeholder="maria@correo.com"
+            />
           </div>
           <div>
             <label className={LABEL_CLASS} htmlFor="phone">
               Teléfono (opcional)
             </label>
-            <input id="phone" type="tel" className={FIELD_CLASS} value={values.phone} onChange={update("phone")} placeholder="33 1234 5678" />
+            <input
+              id="phone"
+              type="tel"
+              autoComplete="tel"
+              inputMode="tel"
+              className={FIELD_CLASS}
+              value={values.phone}
+              onChange={update("phone")}
+              placeholder="33 1234 5678"
+            />
           </div>
         </div>
       </div>
@@ -77,37 +105,84 @@ export function ShippingForm({
             <label className={LABEL_CLASS} htmlFor="street">
               Calle
             </label>
-            <input id="street" required className={FIELD_CLASS} value={values.street} onChange={update("street")} placeholder="Av. Vallarta" />
+            <input
+              id="street"
+              required
+              autoComplete="address-line1"
+              className={FIELD_CLASS}
+              value={values.street}
+              onChange={update("street")}
+              placeholder="Av. Vallarta"
+            />
           </div>
           <div>
             <label className={LABEL_CLASS} htmlFor="number">
               Número
             </label>
-            <input id="number" required className={FIELD_CLASS} value={values.number} onChange={update("number")} placeholder="123" />
+            <input
+              id="number"
+              required
+              autoComplete="address-line2"
+              className={FIELD_CLASS}
+              value={values.number}
+              onChange={update("number")}
+              placeholder="123"
+            />
           </div>
           <div className="sm:col-span-3">
             <label className={LABEL_CLASS} htmlFor="neighborhood">
               Colonia
             </label>
-            <input id="neighborhood" required className={FIELD_CLASS} value={values.neighborhood} onChange={update("neighborhood")} placeholder="Americana" />
+            <input
+              id="neighborhood"
+              required
+              autoComplete="address-line3"
+              className={FIELD_CLASS}
+              value={values.neighborhood}
+              onChange={update("neighborhood")}
+              placeholder="Americana"
+            />
           </div>
           <div>
             <label className={LABEL_CLASS} htmlFor="city">
               Ciudad
             </label>
-            <input id="city" required className={FIELD_CLASS} value={values.city} onChange={update("city")} />
+            <input
+              id="city"
+              required
+              autoComplete="address-level2"
+              className={FIELD_CLASS}
+              value={values.city}
+              onChange={update("city")}
+            />
           </div>
           <div>
             <label className={LABEL_CLASS} htmlFor="state">
               Estado
             </label>
-            <input id="state" required className={FIELD_CLASS} value={values.state} onChange={update("state")} />
+            <input
+              id="state"
+              required
+              autoComplete="address-level1"
+              className={FIELD_CLASS}
+              value={values.state}
+              onChange={update("state")}
+            />
           </div>
           <div>
             <label className={LABEL_CLASS} htmlFor="zip">
               Código postal
             </label>
-            <input id="zip" required inputMode="numeric" className={FIELD_CLASS} value={values.zip} onChange={update("zip")} placeholder="44100" />
+            <input
+              id="zip"
+              required
+              autoComplete="postal-code"
+              inputMode="numeric"
+              className={FIELD_CLASS}
+              value={values.zip}
+              onChange={update("zip")}
+              placeholder="44100"
+            />
           </div>
           <div className="sm:col-span-3">
             <label className={LABEL_CLASS} htmlFor="references">
@@ -120,7 +195,7 @@ export function ShippingForm({
 
       <button
         type="submit"
-        className="w-full rounded-full bg-brand px-7 py-3.5 text-center text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brand-deep sm:w-auto"
+        className="w-full rounded-full bg-brand px-7 py-3.5 text-center text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brand-deep active:scale-[0.98] sm:w-auto"
       >
         Continuar al pago →
       </button>

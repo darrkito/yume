@@ -33,7 +33,7 @@ export function Header() {
         </nav>
         <div className="flex items-center gap-3">
           <Link href="/carrito" className="relative p-2 text-ink hover:text-brand transition-colors" aria-label={`Carrito${count > 0 ? ` (${count} ${count === 1 ? "artículo" : "artículos"})` : ""}`}>
-            <ShoppingBag size={22} />
+            <ShoppingBag size={22} aria-hidden="true" />
             {count > 0 && (
               <span className="absolute -right-0.5 -top-0.5 flex h-4 min-w-4 items-center justify-center rounded-full bg-brand px-1 text-[10px] font-semibold text-white">
                 {count}
@@ -46,22 +46,23 @@ export function Header() {
             rel="noopener noreferrer"
             className="hidden rounded-full bg-brand px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brand-deep sm:inline-block"
           >
-            Contactar
+            Cotizar por WhatsApp
           </a>
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
             aria-expanded={open}
+            aria-controls="mobile-nav"
             aria-label={open ? "Cerrar menú" : "Abrir menú"}
             className="p-2 text-ink sm:hidden"
           >
-            {open ? <X size={22} /> : <Menu size={22} />}
+            {open ? <X size={22} aria-hidden="true" /> : <Menu size={22} aria-hidden="true" />}
           </button>
         </div>
       </div>
 
       {open && (
-        <nav aria-label="Navegación móvil" className="border-t border-line bg-paper px-6 py-4 sm:hidden">
+        <nav id="mobile-nav" aria-label="Navegación móvil" className="border-t border-line bg-paper px-6 py-4 sm:hidden">
           <ul className="flex flex-col gap-4 text-sm uppercase tracking-[0.15em] text-ink-soft">
             {NAV_LINKS.map((l) => (
               <li key={l.href}>
@@ -78,7 +79,7 @@ export function Header() {
                 className="inline-block rounded-full bg-brand px-5 py-2.5 text-xs font-semibold text-white"
                 onClick={() => setOpen(false)}
               >
-                Contactar
+                Cotizar por WhatsApp
               </a>
             </li>
           </ul>

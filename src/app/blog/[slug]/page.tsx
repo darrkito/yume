@@ -4,6 +4,7 @@ import Link from "next/link";
 import { blogPosts, getBlogPost } from "@/content/blog";
 import { products } from "@/content/products";
 import { SITE } from "@/content/site";
+import { formatMXN } from "@/lib/format";
 
 export function generateStaticParams() {
   return blogPosts.map((p) => ({ slug: p.slug }));
@@ -79,7 +80,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             {relatedProducts.map((p) => (
               <li key={p.slug}>
                 <Link href={`/productos/${p.slug}`} className="text-sm font-medium text-ink hover:text-brand transition-colors">
-                  {p.name} — ${p.price.toFixed(2)} MXN
+                  {p.name} · {formatMXN(p.price)} MXN
                 </Link>
               </li>
             ))}

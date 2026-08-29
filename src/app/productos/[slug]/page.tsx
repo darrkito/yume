@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getProduct, products } from "@/content/products";
 import { SITE, waLink } from "@/content/site";
+import { formatMXN } from "@/lib/format";
 import { ProductVisual } from "@/components/ProductVisual";
 import { AddToCartButton } from "@/components/AddToCartButton";
 import { LogoUploadNote } from "@/components/LogoUploadNote";
@@ -32,7 +33,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
   const product = getProduct(slug);
   if (!product) notFound();
 
-  const waMsg = `Hola, me interesa cotizar: ${product.name} ($${product.price.toFixed(2)} MXN). ¿Podrían darme más información?`;
+  const waMsg = `Hola, me interesa cotizar: ${product.name} (${formatMXN(product.price)} MXN). ¿Podrían darme más información?`;
 
   const productSchema = {
     "@context": "https://schema.org",
@@ -85,7 +86,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           <p className="text-xs uppercase tracking-[0.25em] text-brand">{product.category}</p>
           <h1 className="mt-3 font-display text-3xl text-ink sm:text-4xl">{product.name}</h1>
           <p className="mt-4 text-2xl font-semibold text-ink">
-            ${product.price.toFixed(2)} <span className="text-sm font-normal text-ink-soft">MXN</span>
+            {formatMXN(product.price)} <span className="text-sm font-normal text-ink-soft">MXN</span>
           </p>
 
           <p className="mt-6 text-sm leading-relaxed text-ink-soft">{product.description}</p>
@@ -106,7 +107,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
               href={waLink(waMsg)}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block rounded-full bg-brand px-7 py-3.5 text-center text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brand-deep"
+              className="inline-block rounded-full bg-brand px-7 py-3.5 text-center text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brand-deep active:scale-[0.98]"
             >
               Cotizar por WhatsApp
             </a>

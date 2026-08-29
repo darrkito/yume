@@ -7,6 +7,7 @@ import { useCart } from "@/components/CartContext";
 import { MercadoPagoBrick } from "@/components/MercadoPagoBrick";
 import { ShippingForm } from "@/components/ShippingForm";
 import type { Customer, ShippingAddress } from "@/lib/orders";
+import { formatMXN } from "@/lib/format";
 
 type Mode = "form" | "choose" | "onsite";
 
@@ -31,7 +32,7 @@ export function CheckoutView() {
         <p className="mt-4 text-sm text-ink-soft">Agrega productos desde la tienda antes de pagar.</p>
         <Link
           href="/productos"
-          className="mt-8 inline-block rounded-full bg-brand px-7 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brand-deep"
+          className="mt-8 inline-block rounded-full bg-brand px-7 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brand-deep active:scale-[0.98]"
         >
           Ver tienda
         </Link>
@@ -73,13 +74,13 @@ export function CheckoutView() {
                 <span className="text-ink">
                   {item.name} <span className="text-ink-soft">x{item.qty}</span>
                 </span>
-                <span className="font-medium text-ink">${(item.price * item.qty).toFixed(2)}</span>
+                <span className="font-medium text-ink">{formatMXN(item.price * item.qty)}</span>
               </li>
             ))}
           </ul>
           <div className="mt-4 flex items-center justify-between">
             <p className="text-sm text-ink-soft">Total</p>
-            <p className="font-display text-2xl text-ink">${total.toFixed(2)} MXN</p>
+            <p className="font-display text-2xl text-ink">{formatMXN(total)} MXN</p>
           </div>
         </>
       )}

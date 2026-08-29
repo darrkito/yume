@@ -5,6 +5,7 @@ import { Minus, Plus, X, ImageUp, CreditCard } from "lucide-react";
 import { useCart } from "@/components/CartContext";
 import { getProduct } from "@/content/products";
 import { waLink } from "@/content/site";
+import { formatMXN } from "@/lib/format";
 
 export function CartView() {
   const { items, removeItem, updateQty, total, clear } = useCart();
@@ -14,8 +15,8 @@ export function CartView() {
     .filter((p): p is NonNullable<typeof p> => Boolean(p?.requiresImage));
 
   const buildWaMessage = () => {
-    const lines = items.map((i) => `- ${i.name} x${i.qty} — $${(i.price * i.qty).toFixed(2)}`);
-    let msg = `Hola, quiero hacer un pedido:\n${lines.join("\n")}\n\nTotal: $${total.toFixed(2)} MXN\n\n¿Podrían confirmar disponibilidad y tiempo de entrega?`;
+    const lines = items.map((i) => `- ${i.name} x${i.qty}: ${formatMXN(i.price * i.qty)}`);
+    let msg = `Hola, quiero hacer un pedido:\n${lines.join("\n")}\n\nTotal: ${formatMXN(total)} MXN\n\n¿Podrían confirmar disponibilidad y tiempo de entrega?`;
     if (itemsRequiringImage.length > 0) {
       msg += `\n\nVoy a adjuntar en este chat el logo/diseño para: ${itemsRequiringImage.map((p) => p.name).join(", ")}.`;
     }
@@ -30,7 +31,7 @@ export function CartView() {
         <p className="mt-4 text-sm text-ink-soft">Agrega productos desde la tienda para armar tu pedido.</p>
         <Link
           href="/productos"
-          className="mt-8 inline-block rounded-full bg-brand px-7 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brand-deep"
+          className="mt-8 inline-block rounded-full bg-brand px-7 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brand-deep active:scale-[0.98]"
         >
           Ver tienda
         </Link>
@@ -50,7 +51,7 @@ export function CartView() {
               <Link href={`/productos/${item.slug}`} className="font-display text-lg text-ink hover:text-brand transition-colors">
                 {item.name}
               </Link>
-              <p className="mt-1 text-sm text-ink-soft">${item.price.toFixed(2)} MXN c/u</p>
+              <p className="mt-1 text-sm text-ink-soft">{formatMXN(item.price)} MXN c/u</p>
             </div>
             <div className="flex items-center gap-4">
               <div className="flex items-center rounded-full border border-line">
@@ -73,7 +74,7 @@ export function CartView() {
                   <Plus size={14} />
                 </button>
               </div>
-              <p className="w-20 text-right text-sm font-semibold text-ink">${(item.price * item.qty).toFixed(2)}</p>
+              <p className="w-20 text-right text-sm font-semibold text-ink">{formatMXN(item.price * item.qty)}</p>
               <button type="button" onClick={() => removeItem(item.slug)} aria-label={`Quitar ${item.name}`} className="p-1 text-ink-soft transition-colors hover:text-brand">
                 <X size={16} />
               </button>
@@ -94,13 +95,13 @@ export function CartView() {
 
       <div className="mt-8 flex items-center justify-between">
         <p className="text-sm text-ink-soft">Total</p>
-        <p className="font-display text-2xl text-ink">${total.toFixed(2)} MXN</p>
+        <p className="font-display text-2xl text-ink">{formatMXN(total)} MXN</p>
       </div>
 
       <div className="mt-8 flex flex-col gap-3 sm:flex-row">
         <Link
           href="/pago"
-          className="flex items-center justify-center gap-2 rounded-full bg-brand px-7 py-3.5 text-center text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brand-deep"
+          className="flex items-center justify-center gap-2 rounded-full bg-brand px-7 py-3.5 text-center text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brand-deep active:scale-[0.98]"
         >
           <CreditCard size={16} /> Pagar en línea
         </Link>
