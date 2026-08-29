@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ChevronDown } from "lucide-react";
 import { products } from "@/content/products";
 import { waLink } from "@/content/site";
 import { formatMXN } from "@/lib/format";
@@ -141,12 +142,15 @@ export default function Home() {
       <section id="faq" className="border-t border-line bg-paper-raised">
         <div className="mx-auto max-w-3xl px-6 py-20">
           <h2 className="font-display text-3xl text-ink text-balance">¿Tienes dudas?</h2>
-          <div className="mt-10 space-y-6">
+          <div className="mt-10 divide-y divide-line border-y border-line">
             {allFaq.map((f) => (
-              <div key={f.q} className="border-b border-line pb-6">
-                <h3 className="font-display text-lg text-ink">{f.q}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-ink-soft">{f.a}</p>
-              </div>
+              <details key={f.q} className="group py-5">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-lg text-ink marker:content-none [&::-webkit-details-marker]:hidden">
+                  {f.q}
+                  <ChevronDown size={18} className="shrink-0 text-brand transition-transform group-open:rotate-180" aria-hidden="true" />
+                </summary>
+                <p className="mt-3 text-sm leading-relaxed text-ink-soft">{f.a}</p>
+              </details>
             ))}
           </div>
         </div>
