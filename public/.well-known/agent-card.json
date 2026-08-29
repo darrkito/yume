@@ -44,7 +44,7 @@
       "name": "Request a quote",
       "description": "Point the user to Yume's WhatsApp to start a real quote.",
       "tags": ["quote", "contact"],
-      "examples": ["Quiero cotizar stickers personalizados"],
+      "examples": ["¿Cómo hago un pedido?"],
       "inputModes": ["text/plain"],
       "outputModes": ["text/plain", "application/json"]
     }

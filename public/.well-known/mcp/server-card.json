@@ -29,11 +29,11 @@
     },
     {
       "name": "search_faq",
-      "description": "Search Yume's frequently asked questions across all products."
+      "description": "Search Yume's frequently asked questions across all products (customization, file formats, turnaround, etc.)."
     },
     {
       "name": "get_blog_posts",
-      "description": "List Yume's blog posts — local commerce guides for Guadalajara/Jalisco."
+      "description": "List Yume's blog posts — local commerce guides for Guadalajara/Jalisco (personalized stationery, stickers for small businesses)."
     },
     {
       "name": "get_blog_post_detail",
