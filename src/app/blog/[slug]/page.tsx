@@ -4,7 +4,7 @@ import Link from "next/link";
 import { blogPosts, getBlogPost } from "@/content/blog";
 import { products } from "@/content/products";
 import { SITE } from "@/content/site";
-import { formatMXN } from "@/lib/format";
+import { formatMXN, formatBlogDate } from "@/lib/format";
 
 export function generateStaticParams() {
   return blogPosts.map((p) => ({ slug: p.slug }));
@@ -54,8 +54,15 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         <span className="text-ink">{post.title}</span>
       </nav>
 
-      <p className="text-xs uppercase tracking-[0.25em] text-brand">{post.category}</p>
-      <h1 className="mt-3 font-display text-3xl text-ink sm:text-4xl">{post.title}</h1>
+      <div className="flex items-center gap-3">
+        <span className="rounded-full bg-brand-tint px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.1em] text-brand-deep">
+          {post.category}
+        </span>
+        <time dateTime={post.publishedAt} className="text-xs text-ink-soft">
+          {formatBlogDate(post.publishedAt)}
+        </time>
+      </div>
+      <h1 className="mt-4 font-display text-3xl text-ink text-balance sm:text-4xl">{post.title}</h1>
       <p className="mt-4 text-sm leading-relaxed text-ink-soft">{post.intro}</p>
 
       <div className="mt-10 space-y-10">
