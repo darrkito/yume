@@ -23,15 +23,15 @@ export const products: Product[] = [
     currency: "MXN",
     category: "Papelería personalizada",
     specs: [
-      { label: "Hojas", value: "400" },
+      { label: "Hojas", value: "100" },
       { label: "Tamaño", value: "14 × 21.5 cm" },
       { label: "Color", value: "Blanco" },
       { label: "Producción", value: "Por encargo" },
     ],
     description:
-      "Recetario médico personalizado de 400 hojas, tamaño 14 x 21.5 cm, papel blanco. Diseñamos el membrete con tus datos profesionales (nombre, cédula, especialidad, dirección del consultorio) antes de imprimir, para que apruebes el diseño final antes de producción.",
+      "Recetario médico personalizado de 100 hojas, tamaño 14 x 21.5 cm, papel blanco. Diseñamos el membrete con tus datos profesionales (nombre, cédula, especialidad, dirección del consultorio) antes de imprimir, para que apruebes el diseño final antes de producción.",
     details: [
-      "400 hojas por recetario",
+      "100 hojas por recetario",
       "Tamaño 14 cm × 21.5 cm",
       "Papel blanco",
       "Membrete personalizado con tus datos profesionales",

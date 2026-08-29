@@ -43,7 +43,7 @@ export const blogPosts: BlogPost[] = [
         heading: "El proceso: de la cotización a tener el recetario en mano",
         body: [
           "El proceso no cambia si estás en Guadalajara o en cualquier otra ciudad de México, porque todo el diseño se aprueba a distancia antes de imprimir: cotizas por WhatsApp o desde la tienda en línea, mandas tus datos (o tu logo, si ya tienes uno), te enviamos una prueba digital del membrete, y hasta que la apruebas se manda a producción.",
-          "Ese paso de aprobación es el que evita el error más común al personalizar papelería: mandar a imprimir sin haber visto el diseño final y encontrar una errata en la cédula profesional o en el teléfono ya con las 400 hojas impresas.",
+          "Ese paso de aprobación es el que evita el error más común al personalizar papelería: mandar a imprimir sin haber visto el diseño final y encontrar una errata en la cédula profesional o en el teléfono ya con las 100 hojas impresas.",
         ],
       },
     ],
