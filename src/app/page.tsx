@@ -4,7 +4,6 @@ import { waLink } from "@/content/site";
 import { formatMXN } from "@/lib/format";
 import { NotepadMark } from "@/components/NotepadMark";
 import { ProductVisual } from "@/components/ProductVisual";
-import { RevealOnScroll } from "@/components/RevealOnScroll";
 
 export default function Home() {
   const featured = products[0];
@@ -87,20 +86,19 @@ export default function Home() {
         <section className="mx-auto max-w-6xl px-6 py-20">
           <h2 className="font-display text-3xl text-ink sm:text-4xl text-balance">Más productos</h2>
           <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {rest.map((p, i) => (
-              <RevealOnScroll key={p.slug} delay={i * 80}>
-                <Link
-                  href={`/productos/${p.slug}`}
-                  className="group rounded-2xl border border-line bg-paper-raised p-6 transition-shadow hover:shadow-lg"
-                >
-                  <div className="flex h-48 items-center justify-center overflow-hidden">
-                    <ProductVisual product={p} compact />
-                  </div>
-                  <p className="mt-6 text-xs uppercase tracking-[0.15em] text-brand">{p.category}</p>
-                  <h3 className="mt-1 font-display text-xl text-ink transition-colors group-hover:text-brand">{p.name}</h3>
-                  <p className="mt-2 text-lg font-semibold text-ink">{formatMXN(p.price)} MXN</p>
-                </Link>
-              </RevealOnScroll>
+            {rest.map((p) => (
+              <Link
+                key={p.slug}
+                href={`/productos/${p.slug}`}
+                className="group rounded-2xl border border-line bg-paper-raised p-6 transition-shadow hover:shadow-lg"
+              >
+                <div className="flex h-48 items-center justify-center overflow-hidden">
+                  <ProductVisual product={p} compact />
+                </div>
+                <p className="mt-6 text-xs uppercase tracking-[0.15em] text-brand">{p.category}</p>
+                <h3 className="mt-1 font-display text-xl text-ink transition-colors group-hover:text-brand">{p.name}</h3>
+                <p className="mt-2 text-lg font-semibold text-ink">{formatMXN(p.price)} MXN</p>
+              </Link>
             ))}
           </div>
           <Link

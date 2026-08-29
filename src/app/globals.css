@@ -34,11 +34,3 @@ body {
   background: var(--brand-tint);
   color: var(--brand-deep);
 }
-
-@media (prefers-reduced-motion: reduce) {
-  .reveal-on-scroll {
-    transition: none !important;
-    opacity: 1 !important;
-    transform: none !important;
-  }
-}
