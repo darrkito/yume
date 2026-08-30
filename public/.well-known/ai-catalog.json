@@ -5,25 +5,29 @@
   "description": "Custom creative stationery from Guadalajara, Jalisco, México — medical prescription pads and custom logo stickers, made to order.",
   "entries": [
     {
+      "identifier": "yume-mcp-server",
+      "displayName": "Yume MCP server",
       "type": "mcp",
-      "name": "Yume MCP server",
       "url": "https://studioyume.mx/mcp",
       "documentation": "https://studioyume.mx/.well-known/mcp/server-card.json"
     },
     {
+      "identifier": "yume-a2a-agent",
+      "displayName": "Yume A2A agent",
       "type": "a2a",
-      "name": "Yume A2A agent",
       "url": "https://studioyume.mx/a2a",
       "documentation": "https://studioyume.mx/.well-known/agent-card.json"
     },
     {
+      "identifier": "yume-api-catalog",
+      "displayName": "Yume API catalog",
       "type": "api-catalog",
-      "name": "Yume API catalog",
       "url": "https://studioyume.mx/.well-known/api-catalog"
     },
     {
+      "identifier": "yume-llms-txt",
+      "displayName": "Yume site summary (llms.txt)",
       "type": "content",
-      "name": "Yume site summary (llms.txt)",
       "url": "https://studioyume.mx/llms.txt"
     }
   ]
