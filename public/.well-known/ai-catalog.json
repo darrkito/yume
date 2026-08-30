@@ -3,7 +3,7 @@
   "name": "Yume",
   "url": "https://studioyume.mx",
   "description": "Custom creative stationery from Guadalajara, Jalisco, México — medical prescription pads and custom logo stickers, made to order.",
-  "resources": [
+  "entries": [
     {
       "type": "mcp",
       "name": "Yume MCP server",
