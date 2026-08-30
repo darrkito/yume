@@ -1,15 +1,16 @@
 import Link from "next/link";
-import { ChevronDown } from "lucide-react";
 import { hasVariants, productDisplayPrice, products } from "@/content/products";
+import { getFeaturedFaq } from "@/content/faq";
 import { waLink } from "@/content/site";
 import { formatMXN } from "@/lib/format";
 import { NotepadMark } from "@/components/NotepadMark";
 import { ProductVisual } from "@/components/ProductVisual";
+import { FaqQuestion } from "@/components/FaqAccordion";
 
 export default function Home() {
   const featured = products[0];
   const rest = products.slice(1);
-  const allFaq = products.flatMap((p) => p.faq);
+  const featuredFaq = getFeaturedFaq();
 
   return (
     <>
@@ -23,8 +24,9 @@ export default function Home() {
             </h1>
             <p className="mt-6 max-w-md text-base leading-relaxed text-ink-soft">
               Yume diseña y produce papelería personalizada sobre pedido desde Guadalajara, Jalisco, con envíos a todo
-              México: recetarios médicos, stickers, plantillas y botellas a tu medida. Cada pieza se aprueba contigo
-              antes de imprimir.
+              México: recetarios médicos, stickers y más. También personalizamos otros productos como tatuajes
+              temporales, invitaciones para eventos, menús y más — cuéntanos qué necesitas al cotizar. Cada pieza se
+              aprueba contigo antes de imprimir.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
@@ -142,38 +144,23 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* FAQ teaser */}
       <section id="faq" className="border-t border-line bg-paper-raised">
         <div className="mx-auto max-w-3xl px-6 py-20">
           <h2 className="font-display text-3xl text-ink text-balance">¿Tienes dudas?</h2>
           <div className="mt-10 divide-y divide-line border-y border-line">
-            {allFaq.map((f) => (
-              <details key={f.q} className="group py-5">
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-lg text-ink marker:content-none [&::-webkit-details-marker]:hidden">
-                  {f.q}
-                  <ChevronDown size={18} className="shrink-0 text-brand transition-transform group-open:rotate-180" aria-hidden="true" />
-                </summary>
-                <p className="mt-3 text-sm leading-relaxed text-ink-soft">{f.a}</p>
-              </details>
+            {featuredFaq.map((f) => (
+              <FaqQuestion key={f.q} item={f} />
             ))}
           </div>
+          <Link
+            href="/preguntas-frecuentes"
+            className="mt-8 inline-block text-sm font-semibold uppercase tracking-[0.1em] text-brand hover:text-brand-deep"
+          >
+            Ver todas las preguntas →
+          </Link>
         </div>
       </section>
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: allFaq.map((f) => ({
-              "@type": "Question",
-              name: f.q,
-              acceptedAnswer: { "@type": "Answer", text: f.a },
-            })),
-          }),
-        }}
-      />
     </>
   );
 }

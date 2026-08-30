@@ -70,7 +70,6 @@ export const products: Product[] = [
       "Membrete personalizado con tus datos profesionales",
       "Envías tu diseño en formato editable o lo diseñamos contigo",
       "Cada pieza se aprueba contigo antes de producirse",
-      "También personalizamos otros productos: tatuajes temporales, invitaciones para eventos, menús, y más — cuéntanos qué necesitas al cotizar",
     ],
     image: "/recetario-medico.webp",
     variants: [
@@ -79,24 +78,24 @@ export const products: Product[] = [
     ],
     faq: [
       {
-        q: "¿Cuál es la diferencia entre las dos opciones de precio?",
-        a: "Es el mismo recetario en ambos casos. La opción de $320 es para cuando ya tienes tu diseño listo en formato editable y solo lo imprimimos; la de $400 incluye que diseñemos el membrete contigo desde cero.",
+        q: "¿Qué opciones hay para el recetario médico?",
+        a: "Dos opciones: si ya tienes tu diseño, el costo es de $320; si no tienes diseño y necesitas que lo hagamos, el costo es de $400.",
       },
       {
-        q: "¿Qué datos necesito enviar para personalizar mi recetario?",
-        a: "Nombre completo, cédula profesional, especialidad, y los datos de contacto que quieras en el membrete (dirección del consultorio, teléfono, horario). Si tienes un logo, lo puedes enviar; si no, te ayudamos a crear uno simple para el membrete.",
+        q: "¿Qué tamaño tiene el recetario?",
+        a: "Media Carta (14 cm × 21.5 cm).",
       },
       {
-        q: "¿Puedo ver el diseño antes de que se imprima?",
-        a: "Sí. Antes de mandar a imprimir te enviamos una prueba digital del membrete para que la apruebes o pidas ajustes, sin costo adicional.",
+        q: "¿Qué tipo de papel se usa?",
+        a: "Papel Bond 90 gr.",
       },
       {
-        q: "¿Cuánto tarda en estar listo mi recetario?",
-        a: "Escríbenos por WhatsApp con los datos de tu membrete y te confirmamos el tiempo de entrega exacto según la carga de producción del momento.",
+        q: "¿Cómo envío mi diseño?",
+        a: "Puedes enviar tu diseño en formato editable, o lo diseñamos contigo desde cero.",
       },
       {
-        q: "¿El papel es apto para recetas médicas oficiales?",
-        a: "Es papel Bond blanco de 90 gr en tamaño Media Carta (14 × 21.5 cm), el más usado para recetarios médicos en México. Si tu consultorio requiere alguna especificación adicional (folio, código de barras, etc.), cuéntanos al cotizar.",
+        q: "¿El recetario se produce sin mi aprobación?",
+        a: "No, cada pieza se aprueba contigo antes de producirse.",
       },
     ],
   },
@@ -130,24 +129,28 @@ export const products: Product[] = [
     requiresImage: true,
     faq: [
       {
-        q: "¿Cuántos stickers puedo pedir y cuánto cuestan?",
-        a: "El mínimo de compra es 50 piezas por $100. A partir de ahí, cada 25 piezas adicionales tienen 20% de descuento y cuestan $40 en vez de $50 — ese descuento aplica solo a las piezas extra, no a las primeras 50. Por ejemplo: 75 piezas = $140, 100 piezas = $180. Si necesitas más de 300 piezas, cotiza por WhatsApp.",
+        q: "¿Cómo se vende el sticker, por hoja o por pieza?",
+        a: "Se vende por cantidad de piezas, no por hoja.",
       },
       {
-        q: "¿Qué formato de imagen necesito enviar?",
-        a: "Preferimos PNG o vectores (AI, PDF, SVG) con fondo transparente si tu logo lo permite — pero si solo tienes un JPG o una foto del logo, también podemos trabajar con eso y te avisamos si necesitamos algo mejor.",
+        q: "¿Cuál es la cantidad mínima de compra?",
+        a: "A partir de 50 piezas.",
       },
       {
-        q: "¿Puedo pedir stickers de más de un diseño?",
-        a: "Sí, cuéntanos al cotizar cuántos diseños distintos quieres combinar dentro de la cantidad total que pidas.",
+        q: "¿Puedo elegir distintas cantidades?",
+        a: "Sí, hay un dropdown para seleccionar la cantidad: 50, 75, 100, 125, 150... (de 25 en 25).",
+      },
+      {
+        q: "¿Cuál es el precio?",
+        a: "Las primeras 50 piezas cuestan $100. A partir de ahí, cada 25 piezas extra tienen 20% de descuento y cuestan $40 en vez de $50 — por ejemplo, 75 piezas son $140 y 100 piezas son $180.",
       },
       {
         q: "¿Los stickers son resistentes al agua?",
         a: "Sí, todos nuestros stickers son resistentes al agua.",
       },
       {
-        q: "¿Puedo ver cómo va a quedar antes de imprimir?",
-        a: "Sí, siempre mandamos una prueba digital antes de producción para que la apruebes.",
+        q: "¿Puedo usar mi propio logo o diseño?",
+        a: "Sí, puedes enviar tu logo/diseño en formato editable o lo diseñamos contigo.",
       },
     ],
   },

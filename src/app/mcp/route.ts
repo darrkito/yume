@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { products } from "@/content/products";
+import { generalFaq } from "@/content/faq";
 import { blogPosts, getBlogPost } from "@/content/blog";
 import { SITE, waLink } from "@/content/site";
 
@@ -81,7 +82,10 @@ function callTool(name: string, args: Record<string, unknown>) {
 
     case "search_faq": {
       const query = String(args.query ?? "").toLowerCase();
-      const allFaq = products.flatMap((p) => p.faq.map((f) => ({ ...f, product: p.name })));
+      const allFaq = [
+        ...generalFaq.map((f) => ({ ...f, product: "General" })),
+        ...products.flatMap((p) => p.faq.map((f) => ({ ...f, product: p.name }))),
+      ];
       const matches = query ? allFaq.filter((f) => f.q.toLowerCase().includes(query) || f.a.toLowerCase().includes(query)) : allFaq;
       return matches;
     }
