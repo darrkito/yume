@@ -9,7 +9,7 @@ export function Footer() {
           <div>
             <p className="font-display text-xl tracking-[0.2em] text-ink">{SITE.name.toUpperCase()}</p>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-ink-soft">
-              {SITE.tagline}. Piezas hechas por encargo en {SITE.city}, {SITE.state} — con envíos a todo México.
+              {SITE.tagline}. Piezas hechas sobre pedido en {SITE.city}, {SITE.state} — con envíos a todo México.
             </p>
           </div>
           <nav aria-label="Enlaces" className="text-sm text-ink-soft">
@@ -55,7 +55,10 @@ export function Footer() {
         </div>
         <div className="mt-12 border-t border-line pt-6 text-xs text-ink-soft">
           <p>
-            © {new Date().getFullYear()} {SITE.name}. Hecho en {SITE.city}, {SITE.state}, México.
+            © {new Date().getFullYear()} {SITE.name}. Hecho en {SITE.city}, {SITE.state}, México.{" "}
+            <a href="https://dizayn.com.mx/" target="_blank" rel="noopener noreferrer" className="text-inherit no-underline">
+              Web diseñada por Dizayn
+            </a>
           </p>
         </div>
       </div>

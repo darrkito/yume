@@ -1,5 +1,5 @@
 import { MercadoPagoConfig } from "mercadopago";
-import { getProduct } from "@/content/products";
+import { getProduct, cartItemLabel, resolvePrice } from "@/content/products";
 
 // Server-only client — never import this from a "use client" component.
 // Throws at request time (not at module load) so `next build` doesn't fail
@@ -19,15 +19,15 @@ export interface CheckoutItem {
   qty: number;
 }
 
-// Trusts only `slug` and `qty` from the client — `name`/`price` are always
-// re-resolved from the server-side product catalog so a tampered request
-// body can never change what actually gets charged.
+// Trusts only `slug`, `qty`, and `variantId` from the client — `name`/`price`
+// are always re-resolved from the server-side product catalog so a tampered
+// request body can never change what actually gets charged.
 export function validateCartItems(items: unknown): CheckoutItem[] {
   if (!Array.isArray(items) || items.length === 0) {
     throw new Error("El carrito está vacío.");
   }
   return items.map((raw) => {
-    const { slug, qty } = raw as { slug?: unknown; qty?: unknown };
+    const { slug, qty, variantId } = raw as { slug?: unknown; qty?: unknown; variantId?: unknown };
     if (typeof slug !== "string" || typeof qty !== "number" || !Number.isFinite(qty) || qty <= 0) {
       throw new Error("Producto inválido en el carrito.");
     }
@@ -35,6 +35,15 @@ export function validateCartItems(items: unknown): CheckoutItem[] {
     if (!product) {
       throw new Error(`Producto no encontrado: ${slug}`);
     }
-    return { slug: product.slug, name: product.name, price: product.price, qty: Math.floor(qty) };
+    const vId = typeof variantId === "string" ? variantId : undefined;
+    if (product.variants && product.variants.length > 0 && !product.variants.some((v) => v.id === vId)) {
+      throw new Error(`Selecciona una opción válida para ${product.name}.`);
+    }
+    return {
+      slug: product.slug,
+      name: cartItemLabel(product, vId),
+      price: resolvePrice(product, vId),
+      qty: Math.floor(qty),
+    };
   });
 }

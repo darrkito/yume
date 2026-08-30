@@ -6,9 +6,7 @@ export const SITE = {
   description:
     "Yume — papelería y artículos personalizados desde Guadalajara, Jalisco, con envíos a todo México: recetarios médicos, stickers, plantillas y botellas personalizadas.",
   whatsappNumber: "524621922778",
-  // TODO(real inbox): using the owner's personal email as a placeholder
-  // until a real hola@studioyume.mx inbox exists — swap when ready.
-  email: "sebasesc5@gmail.com",
+  email: "yume.studiomx@gmail.com",
   instagram: "https://www.instagram.com/studioyume.mx",
   city: "Guadalajara",
   state: "Jalisco",

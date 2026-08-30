@@ -15,7 +15,7 @@ export default function BlogIndexPage() {
       <p className="text-xs uppercase tracking-[0.25em] text-brand">Blog</p>
       <h1 className="mt-3 font-display text-4xl text-ink text-balance sm:text-5xl">Guías y notas</h1>
       <p className="mt-4 max-w-lg text-sm leading-relaxed text-ink-soft">
-        Papelería personalizada, recetarios médicos y stickers para negocios — con foco en Guadalajara y Jalisco.
+        Papelería Creativa Personalizada, recetarios médicos y stickers para negocios — con foco en Guadalajara y Jalisco.
       </p>
 
       <div className="mt-14 grid gap-8 sm:grid-cols-2">

@@ -10,8 +10,8 @@ import { formatMXN } from "@/lib/format";
 export function CartView() {
   const { items, removeItem, updateQty, total, clear } = useCart();
 
-  const itemsRequiringImage = items
-    .map((i) => getProduct(i.slug))
+  const itemsRequiringImage = [...new Set(items.map((i) => i.slug))]
+    .map((slug) => getProduct(slug))
     .filter((p): p is NonNullable<typeof p> => Boolean(p?.requiresImage));
 
   const buildWaMessage = () => {
@@ -46,7 +46,7 @@ export function CartView() {
 
       <ul className="mt-10 divide-y divide-line border-y border-line">
         {items.map((item) => (
-          <li key={item.slug} className="flex flex-wrap items-center justify-between gap-4 py-6">
+          <li key={`${item.slug}:${item.variantId ?? ""}`} className="flex flex-wrap items-center justify-between gap-4 py-6">
             <div>
               <Link href={`/productos/${item.slug}`} className="font-display text-lg text-ink hover:text-brand transition-colors">
                 {item.name}
@@ -57,7 +57,7 @@ export function CartView() {
               <div className="flex items-center rounded-full border border-line">
                 <button
                   type="button"
-                  onClick={() => updateQty(item.slug, item.qty - 1)}
+                  onClick={() => updateQty(item.slug, item.qty - 1, item.variantId)}
                   disabled={item.qty <= 1}
                   aria-label="Reducir cantidad"
                   className="p-2 text-ink-soft transition-colors hover:text-brand disabled:opacity-30"
@@ -67,7 +67,7 @@ export function CartView() {
                 <span className="min-w-6 text-center text-sm text-ink">{item.qty}</span>
                 <button
                   type="button"
-                  onClick={() => updateQty(item.slug, item.qty + 1)}
+                  onClick={() => updateQty(item.slug, item.qty + 1, item.variantId)}
                   aria-label="Aumentar cantidad"
                   className="p-2 text-ink-soft transition-colors hover:text-brand"
                 >
@@ -75,7 +75,12 @@ export function CartView() {
                 </button>
               </div>
               <p className="w-20 text-right text-sm font-semibold text-ink">{formatMXN(item.price * item.qty)}</p>
-              <button type="button" onClick={() => removeItem(item.slug)} aria-label={`Quitar ${item.name}`} className="p-1 text-ink-soft transition-colors hover:text-brand">
+              <button
+                type="button"
+                onClick={() => removeItem(item.slug, item.variantId)}
+                aria-label={`Quitar ${item.name}`}
+                className="p-1 text-ink-soft transition-colors hover:text-brand"
+              >
                 <X size={16} />
               </button>
             </div>

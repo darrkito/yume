@@ -67,10 +67,10 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "Qué formato pedir",
+        heading: "Qué cantidad pedir",
         body: [
-          "Nuestra hoja estándar es de 30 stickers circulares por hoja — suficiente para varios pedidos de un emprendimiento chico sin sobrar cientos de piezas que no vas a usar pronto.",
-          "Si tu logo no es circular o prefieres otra forma o cantidad, cuéntanos al cotizar — el tamaño de hoja y forma se pueden ajustar, pero confírmalo antes para que la prueba digital que te mandamos ya sea la definitiva.",
+          "Vendemos por cantidad de piezas, no por hoja: el mínimo de compra son 50 piezas por $100, y a partir de ahí cada 25 piezas extra tienen 20% de descuento — suficiente para ajustar el pedido al tamaño real de tu emprendimiento sin comprar de más.",
+          "Todos nuestros stickers son resistentes al agua, así que aguantan bien en empaques que se pueden mojar o manejar seguido (bolsas, botellas, envíos). Cuéntanos la forma o el tamaño que prefieres al cotizar, y te mandamos una prueba digital antes de imprimir.",
         ],
       },
       {
@@ -97,7 +97,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Consistencia antes que cantidad",
         body: [
           "No hace falta rediseñar todo tu negocio para que se vea más profesional — a veces basta con que el recetario, la bolsa de entrega y el sticker que cierra el paquete usen el mismo logo y los mismos colores. Es más barato que un rebranding completo y el efecto se nota igual.",
-          "Por eso en Yume trabajamos por encargo y a la medida en vez de vender plantillas genéricas: cada pieza se diseña con tus datos y tu marca real, no con un molde que también está usando otro negocio.",
+          "Por eso en Yume trabajamos sobre pedido y a la medida en vez de vender plantillas genéricas: cada pieza se diseña con tus datos y tu marca real, no con un molde que también está usando otro negocio.",
         ],
       },
       {

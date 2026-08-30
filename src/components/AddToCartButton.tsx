@@ -3,14 +3,15 @@
 import { useState } from "react";
 import { ShoppingBag, Check } from "lucide-react";
 import { useCart } from "@/components/CartContext";
-import type { Product } from "@/content/products";
+import { cartItemLabel, defaultVariantId, resolvePrice, type Product } from "@/content/products";
 
 export function AddToCartButton({ product, compact = false }: { product: Product; compact?: boolean }) {
   const { addItem } = useCart();
   const [justAdded, setJustAdded] = useState(false);
 
   const handleAdd = () => {
-    addItem({ slug: product.slug, name: product.name, price: product.price });
+    const variantId = defaultVariantId(product);
+    addItem({ slug: product.slug, name: cartItemLabel(product, variantId), price: resolvePrice(product, variantId), variantId });
     setJustAdded(true);
     setTimeout(() => setJustAdded(false), 1800);
   };

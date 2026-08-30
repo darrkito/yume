@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ChevronDown } from "lucide-react";
-import { products } from "@/content/products";
+import { hasVariants, productDisplayPrice, products } from "@/content/products";
 import { waLink } from "@/content/site";
 import { formatMXN } from "@/lib/format";
 import { NotepadMark } from "@/components/NotepadMark";
@@ -17,12 +17,12 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-6 pb-20 pt-16 sm:pt-24">
         <div className="grid items-center gap-12 sm:grid-cols-2">
           <div>
-            <p className="text-xs uppercase tracking-[0.25em] text-brand">Papelería personalizada · Guadalajara, Jalisco</p>
+            <p className="text-xs uppercase tracking-[0.25em] text-brand">Papelería Creativa Personalizada · Guadalajara, Jalisco</p>
             <h1 className="mt-4 font-display text-4xl leading-[1.1] tracking-tight text-ink text-balance sm:text-5xl">
               Piezas de papel hechas con intención.
             </h1>
             <p className="mt-6 max-w-md text-base leading-relaxed text-ink-soft">
-              Yume diseña y produce papelería personalizada por encargo desde Guadalajara, Jalisco, con envíos a todo
+              Yume diseña y produce papelería personalizada sobre pedido desde Guadalajara, Jalisco, con envíos a todo
               México: recetarios médicos, stickers, plantillas y botellas a tu medida. Cada pieza se aprueba contigo
               antes de imprimir.
             </p>
@@ -60,7 +60,8 @@ export default function Home() {
             </div>
             <div>
               <p className="text-2xl font-semibold text-ink">
-                {formatMXN(featured.price)} <span className="text-sm font-normal text-ink-soft">MXN</span>
+                {hasVariants(featured) && "Desde "}
+                {formatMXN(productDisplayPrice(featured))} <span className="text-sm font-normal text-ink-soft">MXN</span>
               </p>
               <p className="mt-4 max-w-lg text-sm leading-relaxed text-ink-soft">{featured.description}</p>
               <ul className="mt-6 space-y-2 text-sm text-ink">
@@ -98,7 +99,10 @@ export default function Home() {
                 </div>
                 <p className="mt-6 text-xs uppercase tracking-[0.15em] text-brand">{p.category}</p>
                 <h3 className="mt-1 font-display text-xl text-ink transition-colors group-hover:text-brand">{p.name}</h3>
-                <p className="mt-2 text-lg font-semibold text-ink">{formatMXN(p.price)} MXN</p>
+                <p className="mt-2 text-lg font-semibold text-ink">
+                  {hasVariants(p) && "Desde "}
+                  {formatMXN(productDisplayPrice(p))} MXN
+                </p>
               </Link>
             ))}
           </div>

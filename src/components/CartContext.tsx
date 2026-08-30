@@ -7,13 +7,16 @@ export interface CartItem {
   name: string;
   price: number;
   qty: number;
+  /** Set when the product has purchase options (e.g. with/without design) —
+   * two variants of the same product are kept as separate line items. */
+  variantId?: string;
 }
 
 interface CartContextValue {
   items: CartItem[];
   addItem: (item: Omit<CartItem, "qty">, qty?: number) => void;
-  removeItem: (slug: string) => void;
-  updateQty: (slug: string, qty: number) => void;
+  removeItem: (slug: string, variantId?: string) => void;
+  updateQty: (slug: string, qty: number, variantId?: string) => void;
   clear: () => void;
   count: number;
   total: number;
@@ -50,20 +53,24 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
 
   const addItem = useCallback((item: Omit<CartItem, "qty">, qty = 1) => {
     setItems((prev) => {
-      const existing = prev.find((i) => i.slug === item.slug);
+      const existing = prev.find((i) => i.slug === item.slug && i.variantId === item.variantId);
       if (existing) {
-        return prev.map((i) => (i.slug === item.slug ? { ...i, qty: i.qty + qty } : i));
+        return prev.map((i) =>
+          i.slug === item.slug && i.variantId === item.variantId ? { ...i, qty: i.qty + qty } : i,
+        );
       }
       return [...prev, { ...item, qty }];
     });
   }, []);
 
-  const removeItem = useCallback((slug: string) => {
-    setItems((prev) => prev.filter((i) => i.slug !== slug));
+  const removeItem = useCallback((slug: string, variantId?: string) => {
+    setItems((prev) => prev.filter((i) => !(i.slug === slug && i.variantId === variantId)));
   }, []);
 
-  const updateQty = useCallback((slug: string, qty: number) => {
-    setItems((prev) => prev.map((i) => (i.slug === slug ? { ...i, qty: Math.max(1, qty) } : i)));
+  const updateQty = useCallback((slug: string, qty: number, variantId?: string) => {
+    setItems((prev) =>
+      prev.map((i) => (i.slug === slug && i.variantId === variantId ? { ...i, qty: Math.max(1, qty) } : i)),
+    );
   }, []);
 
   const clear = useCallback(() => setItems([]), []);

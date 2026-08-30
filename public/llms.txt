@@ -1,13 +1,13 @@
 # Yume
 
-> Papelería y artículos personalizados hechos por encargo desde Guadalajara, Jalisco, con envíos a todo México. Recetarios médicos, stickers, plantillas y botellas personalizadas.
+> Papelería Creativa Personalizada hecha sobre pedido desde Guadalajara, Jalisco, con envíos a todo México. Recetarios médicos, stickers, plantillas y botellas personalizadas.
 
-Yume diseña y produce papelería personalizada por encargo: cada pieza se aprueba con el cliente (prueba digital) antes de imprimir. Con base en Guadalajara, Jalisco, y cobertura de envíos a nivel nacional en México.
+Yume diseña y produce papelería personalizada sobre pedido: cada pieza se aprueba con el cliente (prueba digital) antes de imprimir. Con base en Guadalajara, Jalisco, y cobertura de envíos a nivel nacional en México.
 
 ## Productos
 
-- [Recetario Médico Personalizado](https://studioyume.mx/productos/recetario-medico-personalizado): 400 hojas, 14 × 21.5 cm, papel blanco, membrete personalizado con datos profesionales. $400.00 MXN.
-- [Stickers Logo Personalizado](https://studioyume.mx/productos/stickers-logo-personalizado): Hoja de 30 stickers circulares con tu logo o diseño. $75.00 MXN.
+- [Recetario Médico Personalizado](https://studioyume.mx/productos/recetario-medico-personalizado): 100 hojas, tamaño Media Carta (14 × 21.5 cm), papel Bond 90 gr, membrete personalizado con datos profesionales. Desde $320.00 MXN (sin diseño) o $400.00 MXN (con diseño incluido).
+- [Stickers Logo Personalizado](https://studioyume.mx/productos/stickers-logo-personalizado): stickers personalizados resistentes al agua, vendidos por cantidad de piezas (no por hoja). Mínimo 50 piezas por $100.00 MXN; cada 25 piezas extra tienen 20% de descuento ($40 en vez de $50).
 - [Catálogo completo](https://studioyume.mx/productos)
 
 ## Blog
@@ -24,7 +24,7 @@ Guías reales de papelería personalizada para comercio local en Guadalajara y J
 - [Cotizar por WhatsApp](https://api.whatsapp.com/send?phone=524621922778): forma principal de contacto y cotización.
 - [Pagar en línea](https://studioyume.mx/pago): checkout con Mercado Pago (tarjeta, cuenta Mercado Pago, transferencia SPEI y pago en efectivo en tiendas como OXXO).
 - Instagram: https://www.instagram.com/studioyume.mx
-- Correo: sebasesc5@gmail.com
+- Correo: yume.studiomx@gmail.com
 
 ## Agent access
 
@@ -33,6 +33,6 @@ Guías reales de papelería personalizada para comercio local en Guadalajara y J
 
 ## Notas para agentes
 
-- Yume no tiene tienda física para visitar — es producción por encargo con envíos a todo México, con sede en Guadalajara, Jalisco.
+- Yume no tiene tienda física para visitar — es producción sobre pedido con envíos a todo México, con sede en Guadalajara, Jalisco.
 - Los precios están en pesos mexicanos (MXN) y no incluyen envío.
 - Cada producto requiere aprobación de un diseño/prueba digital antes de producción; algunos productos (como los stickers) requieren que el cliente envíe su propio logo o diseño.

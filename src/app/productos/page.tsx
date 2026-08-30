@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { products } from "@/content/products";
+import { hasVariants, productDisplayPrice, products } from "@/content/products";
 import { formatMXN } from "@/lib/format";
 import { ProductVisual } from "@/components/ProductVisual";
 import { AddToCartButton } from "@/components/AddToCartButton";
@@ -17,7 +17,7 @@ export default function ProductosPage() {
       <p className="text-xs uppercase tracking-[0.25em] text-brand">Tienda</p>
       <h1 className="mt-3 font-display text-4xl text-ink sm:text-5xl">Nuestros productos</h1>
       <p className="mt-4 max-w-lg text-sm leading-relaxed text-ink-soft">
-        Cada pieza se produce por encargo y se personaliza contigo antes de imprimir.
+        Cada pieza se produce sobre pedido y se personaliza contigo antes de imprimir.
       </p>
 
       <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -29,7 +29,10 @@ export default function ProductosPage() {
               </div>
               <p className="mt-6 text-xs uppercase tracking-[0.15em] text-brand">{p.category}</p>
               <h2 className="mt-1 font-display text-xl text-ink group-hover:text-brand transition-colors">{p.name}</h2>
-              <p className="mt-2 text-lg font-semibold text-ink">{formatMXN(p.price)} MXN</p>
+              <p className="mt-2 text-lg font-semibold text-ink">
+                {hasVariants(p) && "Desde "}
+                {formatMXN(productDisplayPrice(p))} MXN
+              </p>
             </Link>
             <AddToCartButton product={p} compact />
           </div>
