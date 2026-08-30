@@ -1,0 +1,24 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://studioyume.mx/",
+      "service-desc": [
+        {
+          "href": "https://studioyume.mx/mcp",
+          "type": "application/json",
+          "title": "Yume MCP server (Streamable HTTP, JSON-RPC) — real read-only tools over the product catalog, FAQ, and blog"
+        },
+        {
+          "href": "https://studioyume.mx/a2a",
+          "type": "application/json",
+          "title": "Yume A2A agent (JSON-RPC, method message/send) — answers questions about products, pricing, and coverage"
+        }
+      ],
+      "service-doc": [
+        { "href": "https://studioyume.mx/.well-known/mcp/server-card.json", "type": "application/json" },
+        { "href": "https://studioyume.mx/.well-known/agent-card.json", "type": "application/json" },
+        { "href": "https://studioyume.mx/llms.txt", "type": "text/markdown" }
+      ]
+    }
+  ]
+}

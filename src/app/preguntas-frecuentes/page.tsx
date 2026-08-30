@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { getFaqCategories } from "@/content/faq";
 import { FaqAccordion } from "@/components/FaqAccordion";
+import { hreflangFor } from "@/lib/i18n";
 
 export const metadata: Metadata = {
   title: "Preguntas frecuentes",
   description: "Respuestas a las dudas más comunes sobre los productos de Yume: generales, recetarios médicos y stickers personalizados.",
-  alternates: { canonical: "/preguntas-frecuentes" },
+  alternates: { canonical: "/preguntas-frecuentes", languages: hreflangFor("/preguntas-frecuentes") },
 };
 
 export default function PreguntasFrecuentesPage() {

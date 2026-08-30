@@ -8,10 +8,11 @@ import { MercadoPagoBrick } from "@/components/MercadoPagoBrick";
 import { ShippingForm } from "@/components/ShippingForm";
 import type { Customer, ShippingAddress } from "@/lib/orders";
 import { formatMXN } from "@/lib/format";
+import { UI, type Lang } from "@/lib/i18n";
 
 type Mode = "form" | "choose" | "onsite";
 
-export function CheckoutView() {
+export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
   const { items, total } = useCart();
   const [mode, setMode] = useState<Mode>("form");
   const [customer, setCustomer] = useState<Customer | null>(null);
@@ -19,6 +20,8 @@ export function CheckoutView() {
   const [redirecting, setRedirecting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [settled, setSettled] = useState(false);
+  const t = UI[lang];
+  const shopHref = lang === "en" ? "/en/products" : "/productos";
 
   // Once a payment resolves, MercadoPagoBrick clears the cart itself — but
   // it still needs to render its own success/pending/cash-voucher result.
@@ -27,14 +30,14 @@ export function CheckoutView() {
   if (items.length === 0 && mode === "form" && !settled) {
     return (
       <section className="mx-auto max-w-2xl px-6 py-24 text-center">
-        <p className="text-xs uppercase tracking-[0.25em] text-brand">Pago</p>
-        <h1 className="mt-3 font-display text-3xl text-ink sm:text-4xl">Tu carrito está vacío</h1>
-        <p className="mt-4 text-sm text-ink-soft">Agrega productos desde la tienda antes de pagar.</p>
+        <p className="text-xs uppercase tracking-[0.25em] text-brand">{t.checkout}</p>
+        <h1 className="mt-3 font-display text-3xl text-ink sm:text-4xl">{t.emptyCartTitle}</h1>
+        <p className="mt-4 text-sm text-ink-soft">{t.emptyCartCheckoutBody}</p>
         <Link
-          href="/productos"
+          href={shopHref}
           className="mt-8 inline-block rounded-full bg-brand px-7 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brand-deep active:scale-[0.98]"
         >
-          Ver tienda
+          {t.viewShop}
         </Link>
       </section>
     );
@@ -51,20 +54,18 @@ export function CheckoutView() {
         body: JSON.stringify({ items, customer, shippingAddress }),
       });
       const data = await res.json();
-      if (!res.ok || !data.initPoint) throw new Error(data.error ?? "No se pudo iniciar el pago.");
+      if (!res.ok || !data.initPoint) throw new Error(data.error ?? t.couldNotStartPayment);
       window.location.href = data.initPoint;
     } catch (err) {
-      setError(err instanceof Error ? err.message : "No se pudo iniciar el pago.");
+      setError(err instanceof Error ? err.message : t.couldNotStartPayment);
       setRedirecting(false);
     }
   };
 
   return (
     <section className="mx-auto max-w-2xl px-6 py-16 sm:py-24">
-      <p className="text-xs uppercase tracking-[0.25em] text-brand">Pago</p>
-      <h1 className="mt-3 font-display text-4xl text-ink">
-        {mode === "form" ? "Tus datos y envío" : "Elige cómo pagar"}
-      </h1>
+      <p className="text-xs uppercase tracking-[0.25em] text-brand">{t.checkout}</p>
+      <h1 className="mt-3 font-display text-4xl text-ink">{mode === "form" ? t.yourDetailsShipping : t.chooseHowToPay}</h1>
 
       {!settled && (
         <>
@@ -79,7 +80,7 @@ export function CheckoutView() {
             ))}
           </ul>
           <div className="mt-4 flex items-center justify-between">
-            <p className="text-sm text-ink-soft">Total</p>
+            <p className="text-sm text-ink-soft">{t.total}</p>
             <p className="font-display text-2xl text-ink">{formatMXN(total)} MXN</p>
           </div>
         </>
@@ -90,6 +91,7 @@ export function CheckoutView() {
       {mode === "form" && (
         <div className="mt-10">
           <ShippingForm
+            lang={lang}
             onSubmit={({ customer: c, shippingAddress: a }) => {
               setCustomer(c);
               setShippingAddress(a);
@@ -102,7 +104,7 @@ export function CheckoutView() {
       {mode === "choose" && (
         <div className="mt-10">
           <button type="button" onClick={() => setMode("form")} className="mb-4 text-xs text-ink-soft hover:text-brand transition-colors">
-            ← Editar datos de envío
+            {t.editShipping}
           </button>
           <div className="grid gap-4 sm:grid-cols-2">
             <button
@@ -112,12 +114,10 @@ export function CheckoutView() {
               className="flex flex-col items-start gap-3 rounded-2xl border border-line bg-paper-raised p-6 text-left transition-colors hover:border-brand disabled:opacity-60"
             >
               <ExternalLink size={22} className="text-brand" />
-              <span className="font-display text-lg text-ink">Pagar en Mercado Pago</span>
-              <span className="text-xs leading-relaxed text-ink-soft">
-                Te llevamos al sitio seguro de Mercado Pago. Ahí puedes usar tarjeta, tu cuenta de Mercado Pago o pagar en efectivo en tiendas como OXXO.
-              </span>
+              <span className="font-display text-lg text-ink">{t.payWithMercadoPago}</span>
+              <span className="text-xs leading-relaxed text-ink-soft">{t.mpDescription}</span>
               <span className="mt-auto text-xs font-semibold uppercase tracking-[0.1em] text-brand">
-                {redirecting ? "Redirigiendo…" : "Continuar →"}
+                {redirecting ? t.redirecting : t.continueArrow}
               </span>
             </button>
 
@@ -127,12 +127,10 @@ export function CheckoutView() {
               className="flex flex-col items-start gap-3 rounded-2xl border border-line bg-paper-raised p-6 text-left transition-colors hover:border-brand"
             >
               <CreditCard size={22} className="text-brand" />
-              <span className="font-display text-lg text-ink">Pagar aquí mismo</span>
-              <span className="text-xs leading-relaxed text-ink-soft">
-                Ingresa tu tarjeta o genera una ficha para pagar en efectivo, sin salir de esta página.
-              </span>
+              <span className="font-display text-lg text-ink">{t.payHere}</span>
+              <span className="text-xs leading-relaxed text-ink-soft">{t.payHereDescription}</span>
               <span className="mt-auto flex items-center gap-1.5 text-xs font-semibold uppercase tracking-[0.1em] text-brand">
-                <Store size={13} /> Incluye pago en tiendas
+                <Store size={13} /> {t.includesStorePayment}
               </span>
             </button>
           </div>
@@ -143,10 +141,10 @@ export function CheckoutView() {
         <div className="mt-10">
           {!settled && (
             <button type="button" onClick={() => setMode("choose")} className="mb-4 text-xs text-ink-soft hover:text-brand transition-colors">
-              ← Elegir otra forma de pago
+              {t.changePaymentMethod}
             </button>
           )}
-          <MercadoPagoBrick items={items} total={total} customer={customer} shippingAddress={shippingAddress} onSettled={() => setSettled(true)} />
+          <MercadoPagoBrick items={items} total={total} customer={customer} shippingAddress={shippingAddress} onSettled={() => setSettled(true)} lang={lang} />
         </div>
       )}
     </section>

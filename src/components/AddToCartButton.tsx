@@ -4,14 +4,18 @@ import { useState } from "react";
 import { ShoppingBag, Check } from "lucide-react";
 import { useCart } from "@/components/CartContext";
 import { cartItemLabel, defaultVariantId, resolvePrice, type Product } from "@/content/products";
+import { cartItemLabelEn } from "@/content/products.en";
+import { UI, type Lang } from "@/lib/i18n";
 
-export function AddToCartButton({ product, compact = false }: { product: Product; compact?: boolean }) {
+export function AddToCartButton({ product, compact = false, lang = "es" }: { product: Product; compact?: boolean; lang?: Lang }) {
   const { addItem } = useCart();
   const [justAdded, setJustAdded] = useState(false);
+  const t = UI[lang];
 
   const handleAdd = () => {
     const variantId = defaultVariantId(product);
-    addItem({ slug: product.slug, name: cartItemLabel(product, variantId), price: resolvePrice(product, variantId), variantId });
+    const name = lang === "en" ? cartItemLabelEn(product, variantId) : cartItemLabel(product, variantId);
+    addItem({ slug: product.slug, name, price: resolvePrice(product, variantId), variantId });
     setJustAdded(true);
     setTimeout(() => setJustAdded(false), 1800);
   };
@@ -29,11 +33,11 @@ export function AddToCartButton({ product, compact = false }: { product: Product
     >
       {justAdded ? (
         <>
-          <Check size={compact ? 14 : 16} aria-hidden="true" /> Agregado
+          <Check size={compact ? 14 : 16} aria-hidden="true" /> {t.added}
         </>
       ) : (
         <>
-          <ShoppingBag size={compact ? 14 : 16} aria-hidden="true" /> Agregar al carrito
+          <ShoppingBag size={compact ? 14 : 16} aria-hidden="true" /> {t.addToCart}
         </>
       )}
     </button>

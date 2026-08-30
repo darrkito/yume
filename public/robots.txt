@@ -5,6 +5,8 @@ Disallow: /mcp
 Disallow: /a2a
 Disallow: /carrito
 Disallow: /pago
+Disallow: /en/cart
+Disallow: /en/checkout
 Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 User-agent: Googlebot

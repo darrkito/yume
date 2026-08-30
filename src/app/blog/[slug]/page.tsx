@@ -5,6 +5,7 @@ import { blogPosts, getBlogPost } from "@/content/blog";
 import { products } from "@/content/products";
 import { SITE } from "@/content/site";
 import { formatMXN, formatBlogDate } from "@/lib/format";
+import { hreflangFor } from "@/lib/i18n";
 
 export function generateStaticParams() {
   return blogPosts.map((p) => ({ slug: p.slug }));
@@ -17,7 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: post.title,
     description: post.description,
-    alternates: { canonical: `/blog/${slug}` },
+    alternates: { canonical: `/blog/${slug}`, languages: hreflangFor(`/blog/${slug}`) },
     openGraph: { title: post.title, description: post.description, type: "article", url: `/blog/${slug}` },
   };
 }

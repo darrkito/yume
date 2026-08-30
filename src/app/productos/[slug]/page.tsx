@@ -6,6 +6,7 @@ import { SITE } from "@/content/site";
 import { ProductVisual } from "@/components/ProductVisual";
 import { ProductPurchase } from "@/components/ProductPurchase";
 import { LogoUploadNote } from "@/components/LogoUploadNote";
+import { hreflangFor } from "@/lib/i18n";
 
 export function generateStaticParams() {
   return products.map((p) => ({ slug: p.slug }));
@@ -21,7 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title,
     description,
-    alternates: { canonical: `/productos/${slug}` },
+    alternates: { canonical: `/productos/${slug}`, languages: hreflangFor(`/productos/${slug}`) },
     openGraph: { title, description, type: "website", url: `/productos/${slug}`, images: [ogImage] },
     twitter: { card: "summary_large_image", images: [ogImage] },
   };
@@ -38,6 +39,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
     name: product.name,
     description: product.description,
     category: product.category,
+    image: [`${SITE.url}${product.image ?? "/og-image.jpg"}`],
     brand: { "@type": "Brand", name: SITE.name },
     offers: {
       "@type": "Offer",
@@ -47,6 +49,26 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       url: `${SITE.url}/productos/${product.slug}`,
       areaServed: { "@type": "Country", name: "México" },
       seller: { "@id": `${SITE.url}/#organization` },
+      // No hay devoluciones salvo defecto de fábrica — todos los productos
+      // son personalizados/hechos por pedido.
+      hasMerchantReturnPolicy: {
+        "@type": "MerchantReturnPolicy",
+        returnPolicyCategory: "https://schema.org/MerchantReturnNotPermitted",
+        applicableCountry: "MX",
+      },
+      // El costo real de envío varía por destino/paquetería; $150 MXN es un
+      // estimado nacional promedio para paquetería ligera — ajustar cuando
+      // se tenga una tarifa real confirmada.
+      shippingDetails: {
+        "@type": "OfferShippingDetails",
+        shippingRate: { "@type": "MonetaryAmount", value: "150", currency: "MXN" },
+        shippingDestination: { "@type": "DefinedRegion", addressCountry: "MX" },
+        deliveryTime: {
+          "@type": "ShippingDeliveryTime",
+          handlingTime: { "@type": "QuantitativeValue", minValue: 3, maxValue: 5, unitCode: "DAY" },
+          transitTime: { "@type": "QuantitativeValue", minValue: 2, maxValue: 5, unitCode: "DAY" },
+        },
+      },
     },
   };
 

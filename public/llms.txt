@@ -29,8 +29,21 @@ Guías reales de papelería personalizada para comercio local en Guadalajara y J
 
 ## Agent access
 
-- MCP server: https://studioyume.mx/.well-known/mcp/server-card.json — endpoint at https://studioyume.mx/mcp — tools: get_products, get_product, search_faq, get_blog_posts, get_blog_post_detail, request_quote
-- A2A agent card: https://studioyume.mx/.well-known/agent-card.json — endpoint at https://studioyume.mx/a2a (JSON-RPC, method `message/send`) — rule-based, answers questions about products, pricing, coverage area and payment methods
+- MCP server: https://studioyume.mx/.well-known/mcp/server-card.json — endpoint at https://studioyume.mx/mcp — tools: get_products, get_product, search_faq, get_blog_posts, get_blog_post_detail, request_quote (each accepts lang=es or lang=en)
+- A2A agent card: https://studioyume.mx/.well-known/agent-card.json — endpoint at https://studioyume.mx/a2a (JSON-RPC, method `message/send`) — rule-based, bilingual (detects Spanish/English), answers questions about products, pricing, coverage area and payment methods
+- API catalog (RFC 9727): https://studioyume.mx/.well-known/api-catalog
+- Agent Skills index: https://studioyume.mx/.well-known/agent-skills/index.json
+- ARD capability manifest: https://studioyume.mx/.well-known/ai-catalog.json
+- Markdown content negotiation: send `Accept: text/markdown` to the home, shop, FAQ, or blog pages (ES or EN) to get the page's content as real Markdown instead of HTML.
+
+## English version
+
+Every page above also has a real, independently crawlable English URL at the same domain, prefixed `/en` with translated slugs (Spanish stays the priority/default market — Guadalajara, Jalisco, México).
+
+- [English home](https://studioyume.mx/en)
+- [Shop](https://studioyume.mx/en/products) — [Custom Medical Prescription Pads](https://studioyume.mx/en/products/medical-prescription-pads), [Custom Logo Stickers](https://studioyume.mx/en/products/custom-logo-stickers)
+- [Blog](https://studioyume.mx/en/blog)
+- [FAQ](https://studioyume.mx/en/faq)
 
 ## Notas para agentes
 

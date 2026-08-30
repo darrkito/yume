@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
 import { CheckoutStatus } from "@/components/CheckoutStatus";
+import { hreflangFor } from "@/lib/i18n";
 
-export const metadata: Metadata = { title: "Pago no completado", robots: { index: false } };
+export const metadata: Metadata = {
+  title: "Pago no completado",
+  robots: { index: false },
+  alternates: { languages: hreflangFor("/pago/error") },
+};
 
 export default function PagoErrorPage() {
   return (

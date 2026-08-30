@@ -3,8 +3,12 @@ import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { LanguageBanner } from "@/components/LanguageBanner";
+import { HtmlLangSync } from "@/components/HtmlLangSync";
+import { WebMcpProvider } from "@/components/WebMcpProvider";
 import { CartProvider } from "@/components/CartContext";
 import { SITE } from "@/content/site";
+import { hreflangFor } from "@/lib/i18n";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -22,7 +26,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: { default: `${SITE.name} — ${SITE.tagline}`, template: `%s | ${SITE.name}` },
   description: SITE.description,
-  alternates: { canonical: "/" },
+  alternates: { canonical: "/", languages: hreflangFor("/") },
   openGraph: {
     title: `${SITE.name} — ${SITE.tagline}`,
     description: SITE.description,
@@ -78,6 +82,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="es-MX">
       <body className={`${playfair.variable} ${inter.variable} font-sans antialiased`}>
+        {/* Rendered <link>/<meta> tags are hoisted into <head> by Next.js — ARD's
+            capability manifest discovery path, real resource (see .well-known/ai-catalog.json). */}
+        <link rel="ai-catalog" href={`${SITE.url}/.well-known/ai-catalog.json`} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
         <a
           href="#main"
@@ -86,7 +93,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           Saltar al contenido
         </a>
         <CartProvider>
+          <HtmlLangSync />
+          <WebMcpProvider />
           <Header />
+          <LanguageBanner />
           <main id="main">{children}</main>
           <Footer />
         </CartProvider>

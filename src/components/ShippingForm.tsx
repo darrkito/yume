@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { Customer, ShippingAddress } from "@/lib/orders";
+import { UI, type Lang } from "@/lib/i18n";
 
 const FIELD_CLASS =
   "w-full rounded-lg border border-line bg-paper px-4 py-2.5 text-sm text-ink placeholder:text-ink-soft/60 focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/30";
@@ -9,9 +10,12 @@ const LABEL_CLASS = "mb-1.5 block text-xs font-medium uppercase tracking-[0.08em
 
 export function ShippingForm({
   onSubmit,
+  lang = "es",
 }: {
   onSubmit: (data: { customer: Customer; shippingAddress: ShippingAddress }) => void;
+  lang?: Lang;
 }) {
+  const t = UI[lang];
   const [values, setValues] = useState({
     name: "",
     email: "",
@@ -47,11 +51,11 @@ export function ShippingForm({
   return (
     <form onSubmit={handleSubmit} className="space-y-8">
       <div>
-        <h2 className="font-display text-lg text-ink">Tus datos</h2>
+        <h2 className="font-display text-lg text-ink">{t.yourDetails}</h2>
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
           <div className="sm:col-span-2">
             <label className={LABEL_CLASS} htmlFor="name">
-              Nombre completo
+              {t.fullName}
             </label>
             <input
               id="name"
@@ -60,12 +64,12 @@ export function ShippingForm({
               className={FIELD_CLASS}
               value={values.name}
               onChange={update("name")}
-              placeholder="María López"
+              placeholder={lang === "en" ? "Jane Smith" : "María López"}
             />
           </div>
           <div>
             <label className={LABEL_CLASS} htmlFor="email">
-              Correo
+              {t.email}
             </label>
             <input
               id="email"
@@ -77,12 +81,12 @@ export function ShippingForm({
               className={FIELD_CLASS}
               value={values.email}
               onChange={update("email")}
-              placeholder="maria@correo.com"
+              placeholder={lang === "en" ? "jane@email.com" : "maria@correo.com"}
             />
           </div>
           <div>
             <label className={LABEL_CLASS} htmlFor="phone">
-              Teléfono (opcional)
+              {t.phoneOptional}
             </label>
             <input
               id="phone"
@@ -99,11 +103,11 @@ export function ShippingForm({
       </div>
 
       <div>
-        <h2 className="font-display text-lg text-ink">Dirección de envío</h2>
+        <h2 className="font-display text-lg text-ink">{t.shippingAddress}</h2>
         <div className="mt-4 grid gap-4 sm:grid-cols-3">
           <div className="sm:col-span-2">
             <label className={LABEL_CLASS} htmlFor="street">
-              Calle
+              {t.street}
             </label>
             <input
               id="street"
@@ -117,7 +121,7 @@ export function ShippingForm({
           </div>
           <div>
             <label className={LABEL_CLASS} htmlFor="number">
-              Número
+              {t.number}
             </label>
             <input
               id="number"
@@ -131,7 +135,7 @@ export function ShippingForm({
           </div>
           <div className="sm:col-span-3">
             <label className={LABEL_CLASS} htmlFor="neighborhood">
-              Colonia
+              {t.neighborhood}
             </label>
             <input
               id="neighborhood"
@@ -145,7 +149,7 @@ export function ShippingForm({
           </div>
           <div>
             <label className={LABEL_CLASS} htmlFor="city">
-              Ciudad
+              {t.city}
             </label>
             <input
               id="city"
@@ -158,7 +162,7 @@ export function ShippingForm({
           </div>
           <div>
             <label className={LABEL_CLASS} htmlFor="state">
-              Estado
+              {t.state}
             </label>
             <input
               id="state"
@@ -171,7 +175,7 @@ export function ShippingForm({
           </div>
           <div>
             <label className={LABEL_CLASS} htmlFor="zip">
-              Código postal
+              {t.zip}
             </label>
             <input
               id="zip"
@@ -186,9 +190,9 @@ export function ShippingForm({
           </div>
           <div className="sm:col-span-3">
             <label className={LABEL_CLASS} htmlFor="references">
-              Referencias (opcional)
+              {t.referencesOptional}
             </label>
-            <input id="references" className={FIELD_CLASS} value={values.references} onChange={update("references")} placeholder="Portón negro, entre calles X y Y" />
+            <input id="references" className={FIELD_CLASS} value={values.references} onChange={update("references")} placeholder={t.referencesPlaceholder} />
           </div>
         </div>
       </div>
@@ -197,7 +201,7 @@ export function ShippingForm({
         type="submit"
         className="w-full rounded-full bg-brand px-7 py-3.5 text-center text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brand-deep active:scale-[0.98] sm:w-auto"
       >
-        Continuar al pago →
+        {t.continueToPayment}
       </button>
     </form>
   );

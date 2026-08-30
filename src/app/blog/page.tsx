@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { blogPosts } from "@/content/blog";
 import { formatBlogDate } from "@/lib/format";
+import { hreflangFor } from "@/lib/i18n";
 
 export const metadata: Metadata = {
   title: "Blog",
   description: "Guías sobre papelería personalizada, recetarios médicos y stickers para negocios en Guadalajara y Jalisco.",
-  alternates: { canonical: "/blog" },
+  alternates: { canonical: "/blog", languages: hreflangFor("/blog") },
 };
 
 export default function BlogIndexPage() {

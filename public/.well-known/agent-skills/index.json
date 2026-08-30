@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "0.2.0",
+  "name": "yume-agent-skills",
+  "title": "Yume",
+  "description": "Real, read-only skills over Yume's product catalog, FAQ, and blog — the same data the MCP server and A2A agent expose.",
+  "skills": [
+    {
+      "id": "get_products",
+      "name": "List products",
+      "description": "List Yume's catalog (medical prescription pads, custom logo stickers) with real prices in MXN, in Spanish or English.",
+      "url": "https://studioyume.mx/mcp"
+    },
+    {
+      "id": "get_product",
+      "name": "Get product detail",
+      "description": "Get full detail for one Yume product by slug: price, specs, description, and FAQ.",
+      "url": "https://studioyume.mx/mcp"
+    },
+    {
+      "id": "search_faq",
+      "name": "Search FAQ",
+      "description": "Search Yume's frequently asked questions across general, medical-prescription-pad, and sticker topics.",
+      "url": "https://studioyume.mx/mcp"
+    },
+    {
+      "id": "get_blog_posts",
+      "name": "List blog posts",
+      "description": "List Yume's blog guides for local commerce in Guadalajara/Jalisco.",
+      "url": "https://studioyume.mx/mcp"
+    },
+    {
+      "id": "get_blog_post_detail",
+      "name": "Get blog post detail",
+      "description": "Get the full content of one Yume blog post by slug.",
+      "url": "https://studioyume.mx/mcp"
+    },
+    {
+      "id": "request_quote",
+      "name": "Request a quote",
+      "description": "Get a link to request a real quote from Yume via WhatsApp.",
+      "url": "https://studioyume.mx/mcp"
+    }
+  ]
+}
