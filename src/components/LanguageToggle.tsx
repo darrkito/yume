@@ -2,24 +2,41 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Languages } from "lucide-react";
 import { esPathToEnPath, enPathToEsPath } from "@/lib/i18n";
 
-// Pure URL-derived language, no context/localStorage — navigates to the
-// real sibling URL for the current route rather than flipping client state.
+// Pure URL-derived language, no context/localStorage — the inactive
+// language navigates to the real sibling URL for the current route rather
+// than flipping client state. "ES / EN" with the current one highlighted,
+// matching the toggle pattern used on the user's other bilingual sites.
 export function LanguageToggle({ className }: { className?: string }) {
   const pathname = usePathname();
   const isEn = pathname.startsWith("/en");
-  const target = isEn ? enPathToEsPath(pathname) : esPathToEnPath(pathname);
+  const esHref = isEn ? enPathToEsPath(pathname) : pathname;
+  const enHref = isEn ? pathname : esPathToEnPath(pathname);
 
   return (
-    <Link
-      href={target}
-      className={className ?? "flex items-center gap-1.5 text-xs font-semibold uppercase tracking-[0.1em] text-ink-soft transition-colors hover:text-brand"}
-      aria-label={isEn ? "Cambiar a español" : "Switch to English"}
-    >
-      <Languages size={14} aria-hidden="true" />
-      {isEn ? "ES" : "EN"}
-    </Link>
+    <span className={className ?? "flex items-center gap-1.5 text-xs font-semibold uppercase tracking-[0.1em]"}>
+      {isEn ? (
+        <Link href={esHref} className="text-ink-soft transition-colors hover:text-brand" aria-label="Cambiar a español">
+          ES
+        </Link>
+      ) : (
+        <span className="text-ink" aria-current="true">
+          ES
+        </span>
+      )}
+      <span className="text-ink-soft" aria-hidden="true">
+        /
+      </span>
+      {isEn ? (
+        <span className="text-ink" aria-current="true">
+          EN
+        </span>
+      ) : (
+        <Link href={enHref} className="text-ink-soft transition-colors hover:text-brand" aria-label="Switch to English">
+          EN
+        </Link>
+      )}
+    </span>
   );
 }

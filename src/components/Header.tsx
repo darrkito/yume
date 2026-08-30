@@ -52,7 +52,7 @@ export function Header() {
           ))}
         </nav>
         <div className="flex items-center gap-4">
-          <LanguageToggle className="hidden text-xs font-semibold uppercase tracking-[0.1em] text-ink-soft transition-colors hover:text-brand sm:flex sm:items-center sm:gap-1.5" />
+          <LanguageToggle className="hidden items-center gap-1.5 text-xs font-semibold uppercase tracking-[0.1em] sm:flex" />
           <Link href={cartHref} className="relative p-2 text-ink hover:text-brand transition-colors" aria-label={`${t.cart}${count > 0 ? ` (${count})` : ""}`}>
             <ShoppingBag size={22} aria-hidden="true" />
             {count > 0 && (
@@ -93,7 +93,7 @@ export function Header() {
               </li>
             ))}
             <li>
-              <LanguageToggle className="flex items-center gap-1.5 text-sm font-semibold uppercase tracking-[0.15em] text-ink-soft transition-colors hover:text-brand" />
+              <LanguageToggle className="flex items-center gap-1.5 text-sm font-semibold uppercase tracking-[0.15em]" />
             </li>
             <li>
               <a
