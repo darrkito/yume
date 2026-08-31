@@ -20,7 +20,7 @@ export function FaqAccordion({ categories }: { categories: FaqCategory[] }) {
     <div className="space-y-12">
       {categories.map((category) => (
         <div key={category.label}>
-          <h3 className="text-xs uppercase tracking-[0.2em] text-brand">{category.label}</h3>
+          <h2 className="text-xs uppercase tracking-[0.2em] text-brand">{category.label}</h2>
           <div className="mt-4 divide-y divide-line border-y border-line">
             {category.items.map((item) => (
               <FaqQuestion key={item.q} item={item} />
