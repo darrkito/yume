@@ -43,7 +43,7 @@ export const productsEn: Record<string, ProductTranslation> = {
     },
     faq: [
       {
-        q: "What's the difference between the two pricing options?",
+        q: "What's the price of the prescription pad?",
         a: "It's the same prescription pad either way. The $320 option is for when you already have your design ready in an editable format and we just print it; the $400 option includes us designing the letterhead with you from scratch.",
       },
       {
@@ -101,7 +101,7 @@ export const productsEn: Record<string, ProductTranslation> = {
         a: "Yes, there's a dropdown to select the quantity: 50, 75, 100, 125, 150... (in steps of 25).",
       },
       {
-        q: "What's the price?",
+        q: "What's the price of the stickers?",
         a: "The first 50 pieces cost $100. From there, every extra 25 pieces get a 20% discount and cost $40 instead of $50 — for example, 75 pieces is $140 and 100 pieces is $180.",
       },
       {

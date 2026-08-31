@@ -78,7 +78,7 @@ export const products: Product[] = [
     ],
     faq: [
       {
-        q: "¿Qué opciones hay para el recetario médico?",
+        q: "¿Cuál es el precio del recetario médico?",
         a: "Dos opciones: si ya tienes tu diseño, el costo es de $320; si no tienes diseño y necesitas que lo hagamos, el costo es de $400.",
       },
       {
@@ -141,7 +141,7 @@ export const products: Product[] = [
         a: "Sí, hay un dropdown para seleccionar la cantidad: 50, 75, 100, 125, 150... (de 25 en 25).",
       },
       {
-        q: "¿Cuál es el precio?",
+        q: "¿Cuál es el precio de los stickers?",
         a: "Las primeras 50 piezas cuestan $100. A partir de ahí, cada 25 piezas extra tienen 20% de descuento y cuestan $40 en vez de $50 — por ejemplo, 75 piezas son $140 y 100 piezas son $180.",
       },
       {
