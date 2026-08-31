@@ -2,9 +2,9 @@ export const SITE = {
   name: "Yume",
   domain: "studioyume.mx",
   url: "https://studioyume.mx",
-  tagline: "Papelería y artículos personalizados",
+  tagline: "Papelería creativa y artículos personalizados",
   description:
-    "Yume — papelería y artículos personalizados desde Guadalajara, Jalisco, con envíos a todo México: recetarios médicos, stickers, plantillas y botellas personalizadas.",
+    "Yume — papelería creativa y artículos personalizados desde Guadalajara, Jalisco, con envíos a todo México: recetarios médicos, stickers, plantillas y botellas personalizadas.",
   whatsappNumber: "523334005135",
   email: "yume.studiomx@gmail.com",
   instagram: "https://www.instagram.com/studioyume.mx",
