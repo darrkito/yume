@@ -4,8 +4,9 @@ import Link from "next/link";
 import { blogPosts, getBlogPost } from "@/content/blog";
 import { products } from "@/content/products";
 import { SITE, waLink } from "@/content/site";
-import { formatMXN, formatBlogDate } from "@/lib/format";
+import { formatBlogDate } from "@/lib/format";
 import { hreflangFor } from "@/lib/i18n";
+import { BlogProductCard } from "@/components/BlogProductCard";
 
 export function generateStaticParams() {
   return blogPosts.map((p) => ({ slug: p.slug }));
@@ -82,27 +83,17 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       </div>
 
       {relatedProducts.length > 0 ? (
-        <div className="mt-14 rounded-2xl border border-line bg-paper-raised p-6">
-          <p className="text-xs uppercase tracking-[0.15em] text-brand">Productos relacionados</p>
-          <ul className="mt-3 space-y-3">
+        <div className="mt-14 rounded-2xl border-2 border-brand bg-brand-tint/40 p-6">
+          <p className="text-xs uppercase tracking-[0.15em] text-brand-deep">Pídelo ahora</p>
+          <div className="mt-3 space-y-3">
             {relatedProducts.map((p) => (
-              <li key={p.slug} className="flex flex-wrap items-center justify-between gap-3">
-                <span className="text-sm font-medium text-ink">
-                  {p.name} · {formatMXN(p.price)} MXN
-                </span>
-                <Link
-                  href={`/productos/${p.slug}`}
-                  className="shrink-0 rounded-full bg-brand px-5 py-2 text-xs font-semibold uppercase tracking-[0.1em] text-white transition-colors hover:bg-brand-deep"
-                >
-                  Ver y comprar
-                </Link>
-              </li>
+              <BlogProductCard key={p.slug} product={p} name={p.name} href={`/productos/${p.slug}`} lang="es" />
             ))}
-          </ul>
+          </div>
         </div>
       ) : post.quoteMessage ? (
-        <div className="mt-14 rounded-2xl border border-line bg-paper-raised p-6">
-          <p className="text-xs uppercase tracking-[0.15em] text-brand">¿Te interesa?</p>
+        <div className="mt-14 rounded-2xl border-2 border-brand bg-brand-tint/40 p-6">
+          <p className="text-xs uppercase tracking-[0.15em] text-brand-deep">¿Te interesa?</p>
           <p className="mt-2 text-sm leading-relaxed text-ink-soft">
             Este producto se cotiza a la medida — cuéntanos tu evento o proyecto y te confirmamos precio y tiempo de entrega.
           </p>
