@@ -16,11 +16,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const post = getBlogPost(slug);
   if (!post) return {};
+  const seoTitle = post.metaTitle ?? post.title;
   return {
-    title: post.title,
+    title: seoTitle,
     description: post.description,
     alternates: { canonical: `/blog/${slug}`, languages: hreflangFor(`/blog/${slug}`) },
-    openGraph: { title: post.title, description: post.description, type: "article", url: `/blog/${slug}` },
+    openGraph: { title: seoTitle, description: post.description, type: "article", url: `/blog/${slug}` },
   };
 }
 

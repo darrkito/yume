@@ -6,6 +6,10 @@ export interface BlogSection {
 export interface BlogPost {
   slug: string;
   title: string;
+  /** Shorter variant for the <title> tag / OG title when `title` (used as the
+   * on-page H1) would push the rendered "<title> | Yume" past ~70 characters
+   * and risk truncation in search results. Falls back to `title` when unset. */
+  metaTitle?: string;
   description: string;
   category: string;
   publishedAt: string; // ISO date
@@ -22,6 +26,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "recetarios-medicos-personalizados-guadalajara",
     title: "Recetarios médicos personalizados en Guadalajara: guía para tu consultorio",
+    metaTitle: "Recetarios médicos personalizados en Guadalajara",
     description:
       "Qué datos incluir en el membrete, qué tamaño usar y cómo funciona el proceso para pedir recetarios médicos personalizados si tienes un consultorio en Guadalajara o cualquier parte de México.",
     category: "Guías",
@@ -56,6 +61,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "stickers-personalizados-para-negocios-guadalajara",
     title: "Stickers personalizados para tu negocio en Guadalajara: guía rápida",
+    metaTitle: "Stickers personalizados para tu negocio en Guadalajara",
     description:
       "Cómo usar stickers personalizados si tienes una marca, un emprendimiento o un puesto en bazares de Guadalajara — qué formato pedir y qué archivo enviar para tu logo.",
     category: "Guías",
@@ -90,6 +96,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "papeleria-personalizada-para-negocios-jalisco",
     title: "Papelería personalizada para negocios en Jalisco: por qué vale la pena",
+    metaTitle: "Papelería personalizada para negocios en Jalisco",
     description:
       "Por qué invertir en papelería con tu marca — recetarios, stickers y otros detalles impresos — hace diferencia para negocios y profesionales en Guadalajara y el resto de Jalisco.",
     category: "Negocio local",
@@ -158,6 +165,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "recetario-medico-impreso-vs-digital",
     title: "Recetario médico impreso vs digital: ¿cuál conviene para tu consultorio?",
+    metaTitle: "Recetario médico impreso vs. digital",
     description:
       "Ventajas y limitaciones del recetario médico impreso frente a la receta digital, y por qué muchos consultorios en México siguen usando ambos en vez de elegir uno solo.",
     category: "Guías",

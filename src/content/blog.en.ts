@@ -5,6 +5,7 @@ export const blogPostsEn: BlogPost[] = [
   {
     slug: BLOG_SLUG_EN["recetarios-medicos-personalizados-guadalajara"],
     title: "Custom Medical Prescription Pads in Guadalajara: A Guide for Your Practice",
+    metaTitle: "Custom Medical Prescription Pads in Guadalajara",
     description:
       "What to include on the letterhead, what size to use, and how the process works for ordering custom medical prescription pads if you run a practice in Guadalajara or anywhere else in Mexico.",
     category: "Guides",
@@ -39,6 +40,7 @@ export const blogPostsEn: BlogPost[] = [
   {
     slug: BLOG_SLUG_EN["stickers-personalizados-para-negocios-guadalajara"],
     title: "Custom Stickers for Your Business in Guadalajara: A Quick Guide",
+    metaTitle: "Custom Stickers for Your Business in Guadalajara",
     description:
       "How to use custom stickers if you have a brand, a small business, or a stall at bazaars in Guadalajara — what format to order and what file to send for your logo.",
     category: "Guides",
@@ -73,6 +75,7 @@ export const blogPostsEn: BlogPost[] = [
   {
     slug: BLOG_SLUG_EN["papeleria-personalizada-para-negocios-jalisco"],
     title: "Custom Stationery for Businesses in Jalisco: Why It's Worth It",
+    metaTitle: "Custom Stationery for Businesses in Jalisco",
     description:
       "Why investing in stationery with your brand — prescription pads, stickers, and other printed details — makes a difference for businesses and professionals in Guadalajara and the rest of Jalisco.",
     category: "Local Business",
@@ -141,6 +144,7 @@ export const blogPostsEn: BlogPost[] = [
   {
     slug: BLOG_SLUG_EN["recetario-medico-impreso-vs-digital"],
     title: "Printed vs. Digital Prescription Pads: Which Is Right for Your Practice?",
+    metaTitle: "Printed vs. Digital Prescription Pads",
     description:
       "The advantages and limits of printed medical prescription pads versus digital prescriptions, and why many practices in Mexico still use both instead of choosing just one.",
     category: "Guides",
