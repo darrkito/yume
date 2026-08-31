@@ -43,4 +43,3 @@ User-agent: Bytespider
 Allow: /
 
 Sitemap: https://studioyume.mx/sitemap.xml
-llms.txt: https://studioyume.mx/llms.txt
