@@ -15,6 +15,10 @@ export const BLOG_SLUG_EN: Record<string, string> = {
   "recetarios-medicos-personalizados-guadalajara": "custom-medical-prescription-pads-guadalajara",
   "stickers-personalizados-para-negocios-guadalajara": "custom-stickers-for-businesses-guadalajara",
   "papeleria-personalizada-para-negocios-jalisco": "custom-stationery-for-businesses-jalisco",
+  "como-pedir-papeleria-personalizada-en-linea": "how-to-order-custom-stationery-online",
+  "recetario-medico-impreso-vs-digital": "printed-vs-digital-prescription-pads",
+  "tatuajes-temporales-personalizados-para-eventos": "custom-temporary-tattoos-for-events-and-brands",
+  "como-pedir-invitaciones-personalizadas-para-eventos": "how-to-order-custom-event-invitations",
 };
 
 export const PRODUCT_SLUG_ES: Record<string, string> = Object.fromEntries(

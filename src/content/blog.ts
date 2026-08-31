@@ -12,6 +12,10 @@ export interface BlogPost {
   intro: string;
   sections: BlogSection[];
   relatedProductSlugs: string[];
+  /** WhatsApp quote message shown as the post's CTA when it has no
+   * `relatedProductSlugs` yet — e.g. a topic covering a service that isn't
+   * a cataloged product yet (still quote-only, handled case by case). */
+  quoteMessage?: string;
 }
 
 export const blogPosts: BlogPost[] = [
@@ -116,6 +120,144 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["recetario-medico-personalizado", "stickers-logo-personalizado"],
+  },
+  {
+    slug: "como-pedir-papeleria-personalizada-en-linea",
+    title: "Cómo hacer un pedido de papelería personalizada en línea",
+    description:
+      "El proceso completo para pedir papelería personalizada en línea desde cualquier parte de México: qué información preparar antes de cotizar, cómo funciona la prueba digital y qué esperar entre que apruebas el diseño y recibes tu pedido.",
+    category: "Guías",
+    publishedAt: "2026-08-31",
+    intro:
+      "No necesitas visitar una imprenta física para tener papelería con tu marca — todo el proceso en Yume se hace en línea, desde Guadalajara y con envíos a cualquier ciudad de México. Esta guía explica paso a paso cómo cotizar y pedir, para que sepas qué preparar antes de escribirnos.",
+    sections: [
+      {
+        heading: "El proceso paso a paso",
+        body: [
+          "1) Cotizas por WhatsApp o desde la tienda en línea, indicando qué producto necesitas y la cantidad. 2) Nos mandas tus datos o tu logo/diseño, según el producto. 3) Te enviamos una prueba digital para que revises que todo esté correcto. 4) Apruebas el diseño y hasta ese momento se manda a producción. 5) Recibes tu pedido por paquetería a la dirección que nos des, en cualquier parte de México.",
+          "El único paso presencial que existe es recibir el paquete — todo lo demás, incluida la aprobación del diseño, se hace a distancia por WhatsApp o correo.",
+        ],
+      },
+      {
+        heading: "Qué necesitas tener listo antes de cotizar",
+        body: [
+          "Para un recetario médico: tu nombre completo, especialidad, número de cédula profesional y los datos de contacto de tu consultorio. Para stickers con tu logo: el archivo de tu diseño (idealmente PNG, PDF, AI o SVG con fondo transparente) y la cantidad que quieres.",
+          "Si todavía no tienes un logo o diseño terminado, dínoslo al cotizar de todas formas — se puede trabajar en conjunto antes de llegar a la prueba digital, no es necesario llegar con todo resuelto.",
+        ],
+      },
+      {
+        heading: "Por qué no hace falta una imprenta física en Guadalajara",
+        body: [
+          "Aunque producimos en Guadalajara, Jalisco, no operamos como una imprenta de mostrador — no necesitas ir a dejar un archivo en USB ni recoger tu pedido en persona. Todo el proceso, desde cotizar hasta aprobar el diseño final, pasa por WhatsApp o correo, así que el servicio funciona igual si estás en la ciudad o en cualquier otro estado de México.",
+          "Eso sí: si estás en la zona metropolitana de Guadalajara el tiempo de entrega suele ser un poco más corto por cercanía, aunque el proceso de cotización y aprobación es idéntico para todo el país.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["recetario-medico-personalizado", "stickers-logo-personalizado"],
+  },
+  {
+    slug: "recetario-medico-impreso-vs-digital",
+    title: "Recetario médico impreso vs digital: ¿cuál conviene para tu consultorio?",
+    description:
+      "Ventajas y limitaciones del recetario médico impreso frente a la receta digital, y por qué muchos consultorios en México siguen usando ambos en vez de elegir uno solo.",
+    category: "Guías",
+    publishedAt: "2026-08-31",
+    intro:
+      "Cada vez hay más consultorios usando algún sistema de receta electrónica, pero el recetario impreso sigue siendo parte del día a día de la mayoría de los médicos en México. Antes de decidir si vale la pena seguir imprimiendo o migrar por completo a digital, conviene ver qué resuelve cada opción y dónde falla.",
+    sections: [
+      {
+        heading: "Qué resuelve cada opción",
+        body: [
+          "La receta digital (desde una app, un sistema del consultorio o una plataforma de expediente electrónico) tiene ventajas claras: se puede reenviar por correo o WhatsApp al paciente, queda respaldada automáticamente y es más fácil de buscar en un historial. El recetario impreso, en cambio, no depende de que haya internet, batería o que el sistema esté funcionando en ese momento — el paciente sale de la consulta con el papel en la mano, sin depender de nada más.",
+          "Para muchos pacientes, sobre todo de mayor edad o que van a llevar la receta directo a una farmacia física, el papel impreso sigue siendo lo que esperan recibir al final de la consulta.",
+        ],
+      },
+      {
+        heading: "Cuándo conviene seguir imprimiendo",
+        body: [
+          "Si tu consultorio no tiene (o no quiere depender de) un sistema digital instalado, el recetario impreso sigue siendo la opción más simple y sin fricción: no hay que aprender una plataforma nueva, no hay riesgo de que un corte de internet detenga la consulta, y el paciente se va con algo físico sin pasos extra.",
+          "También es común usarlo como respaldo aunque tu consultorio ya tenga un sistema digital — para el día que el sistema falla, no hay señal, o simplemente prefieres no depender de una pantalla frente al paciente.",
+        ],
+      },
+      {
+        heading: "No es una decisión de todo o nada",
+        body: [
+          "La mayoría de los consultorios que vemos en Guadalajara y el resto de México no eligen uno solo — usan digital para el expediente y el seguimiento, e impreso para lo que el paciente se lleva ese mismo día. Tener un recetario impreso con tu membrete, tu cédula y los datos de tu consultorio no compite con tu sistema digital, lo complementa.",
+          "Si decides pedir uno personalizado, el proceso es el mismo sin importar si es tu único recetario o un respaldo: cotizas, mandas tus datos, apruebas una prueba digital del membrete y se manda a producción.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["recetario-medico-personalizado"],
+  },
+  {
+    slug: "tatuajes-temporales-personalizados-para-eventos",
+    title: "Tatuajes temporales personalizados para eventos y marcas",
+    description:
+      "Para qué se usan los tatuajes temporales personalizados en eventos, activaciones de marca y celebraciones, y qué información necesitamos para cotizar los tuyos con tu diseño o logo.",
+    category: "Guías",
+    publishedAt: "2026-08-31",
+    intro:
+      "Un tatuaje temporal con tu logo o un diseño hecho para la ocasión es una forma efectiva y económica de dejar marca en un evento — literalmente. Funcionan tanto para activaciones de negocio como para celebraciones personales, y el proceso para pedirlos personalizados es tan sencillo como el de cualquier otro producto a la medida en Yume.",
+    sections: [
+      {
+        heading: "Para qué se usan realmente",
+        body: [
+          "Los vemos más seguido en tres contextos: activaciones de marca (ferias, lanzamientos, stands en eventos, regalos promocionales), bodas y XV años (con las iniciales, la fecha o un ícono relacionado al festejo), y eventos deportivos o escolares (con el logo del equipo o la institución).",
+          "A diferencia de un sticker, un tatuaje temporal se lo lleva la persona puesto — funciona como una pieza de merchandising que la gente usa y muestra durante el resto del evento, no solo algo que se queda en una bolsa.",
+        ],
+      },
+      {
+        heading: "Qué necesitamos para cotizar el tuyo",
+        body: [
+          "Tu logo o el diseño que quieres convertir en tatuaje (idealmente en un archivo con buena resolución), el tamaño aproximado que buscas, y la cantidad que necesitas para tu evento. Si el diseño tiene texto (nombre, fecha, frase), dínoslo también para confirmar que se vea legible en el tamaño final.",
+          "Como con cualquier producto personalizado, antes de producir te mandamos una prueba digital del diseño para que la apruebes — así confirmas cómo se va a ver antes de que se imprima la cantidad completa.",
+        ],
+      },
+      {
+        heading: "Por qué personalizarlos en vez de comprar genéricos",
+        body: [
+          "Un tatuaje temporal genérico (una carita, una estrella, un diseño de catálogo) no comunica nada sobre tu marca o tu evento — se ve igual que el de cualquier otra fiesta o feria. Uno con tu logo, tus colores o el nombre del festejo hace que quien se lo pone quede asociado directamente con tu marca o tu evento el resto del día, que es justo el punto de usarlo.",
+          "Si tienes un evento o una activación en puerta y quieres cotizar tatuajes temporales con tu diseño, escríbenos directo por WhatsApp con los detalles.",
+        ],
+      },
+    ],
+    relatedProductSlugs: [],
+    quoteMessage: "Hola, me interesa cotizar tatuajes temporales personalizados.",
+  },
+  {
+    slug: "como-pedir-invitaciones-personalizadas-para-eventos",
+    title: "Cómo pedir invitaciones personalizadas para eventos",
+    description:
+      "Qué información necesitas tener lista para cotizar invitaciones personalizadas para boda, XV años o un evento corporativo, y cómo funciona el proceso de diseño y aprobación antes de imprimir.",
+    category: "Guías",
+    publishedAt: "2026-08-31",
+    intro:
+      "Ya sea una boda, unos XV años, un baby shower o un evento corporativo, la invitación suele ser lo primero que tus invitados ven del evento — vale la pena que se vea a la altura de lo que estás organizando. Así funciona el proceso para pedir las tuyas personalizadas en Yume.",
+    sections: [
+      {
+        heading: "Qué información necesitamos",
+        body: [
+          "Para cotizar, necesitamos: el tipo de evento y la fecha, la cantidad de invitaciones que necesitas, el texto que quieres incluir (nombres, fecha, lugar, horario, y cualquier indicación como código de vestimenta), y si tienes una idea de estilo o referencia visual en mente.",
+          "También necesitamos saber si buscas invitación impresa, digital (para compartir por WhatsApp) o ambas — el proceso de diseño es el mismo, solo cambia el formato final.",
+        ],
+      },
+      {
+        heading: "El proceso de diseño y aprobación",
+        body: [
+          "Con tus datos armamos una propuesta de diseño y te la mandamos como prueba digital. Puedes pedir ajustes antes de aprobarla — es más fácil corregir un color o un texto en esta etapa que después de que las invitaciones ya están impresas.",
+          "Una vez que apruebas el diseño final, se manda a producción (si pediste impresas) o te entregamos el archivo final listo para enviar (si son digitales o ambas).",
+        ],
+      },
+      {
+        heading: "Cuándo empezar a cotizar",
+        body: [
+          "Como con cualquier pieza impresa, conviene cotizar con tiempo de anticipación al evento — así hay margen para ajustar el diseño sin apurar la producción ni el envío. Si tu evento ya tiene fecha, puedes escribirnos desde ahora aunque todavía no tengas todos los detalles definidos.",
+          "Cuéntanos el tipo de evento, la fecha aproximada y la cantidad que estimas necesitar, y armamos la cotización desde ahí.",
+        ],
+      },
+    ],
+    relatedProductSlugs: [],
+    quoteMessage: "Hola, me interesa cotizar invitaciones personalizadas para un evento.",
   },
 ];
 

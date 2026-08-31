@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { blogPosts, getBlogPost } from "@/content/blog";
 import { products } from "@/content/products";
-import { SITE } from "@/content/site";
+import { SITE, waLink } from "@/content/site";
 import { formatMXN, formatBlogDate } from "@/lib/format";
 import { hreflangFor } from "@/lib/i18n";
 
@@ -81,20 +81,41 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         ))}
       </div>
 
-      {relatedProducts.length > 0 && (
+      {relatedProducts.length > 0 ? (
         <div className="mt-14 rounded-2xl border border-line bg-paper-raised p-6">
           <p className="text-xs uppercase tracking-[0.15em] text-brand">Productos relacionados</p>
-          <ul className="mt-3 space-y-2">
+          <ul className="mt-3 space-y-3">
             {relatedProducts.map((p) => (
-              <li key={p.slug}>
-                <Link href={`/productos/${p.slug}`} className="text-sm font-medium text-ink hover:text-brand transition-colors">
+              <li key={p.slug} className="flex flex-wrap items-center justify-between gap-3">
+                <span className="text-sm font-medium text-ink">
                   {p.name} · {formatMXN(p.price)} MXN
+                </span>
+                <Link
+                  href={`/productos/${p.slug}`}
+                  className="shrink-0 rounded-full bg-brand px-5 py-2 text-xs font-semibold uppercase tracking-[0.1em] text-white transition-colors hover:bg-brand-deep"
+                >
+                  Ver y comprar
                 </Link>
               </li>
             ))}
           </ul>
         </div>
-      )}
+      ) : post.quoteMessage ? (
+        <div className="mt-14 rounded-2xl border border-line bg-paper-raised p-6">
+          <p className="text-xs uppercase tracking-[0.15em] text-brand">¿Te interesa?</p>
+          <p className="mt-2 text-sm leading-relaxed text-ink-soft">
+            Este producto se cotiza a la medida — cuéntanos tu evento o proyecto y te confirmamos precio y tiempo de entrega.
+          </p>
+          <a
+            href={waLink(post.quoteMessage)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-flex rounded-full bg-brand px-6 py-3 text-xs font-semibold uppercase tracking-[0.1em] text-white transition-colors hover:bg-brand-deep"
+          >
+            Cotizar por WhatsApp
+          </a>
+        </div>
+      ) : null}
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
     </article>
