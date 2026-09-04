@@ -8,7 +8,7 @@ import { AddToCartButton } from "@/components/AddToCartButton";
 import { hreflangFor, PRODUCT_SLUG_EN } from "@/lib/i18n";
 
 export const metadata: Metadata = {
-  title: "Shop",
+  title: "Shop Custom Stationery",
   description: "Custom stationery and personalized goods from Yume: medical prescription pads, custom stickers, and more, tailored to you.",
   alternates: { canonical: "/en/products", languages: hreflangFor("/productos") },
 };

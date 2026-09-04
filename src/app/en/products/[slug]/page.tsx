@@ -20,11 +20,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const t = esSlug ? getProductTranslation(esSlug) : undefined;
   if (!product || !t) return {};
   const ogImage = product.image ?? "/og-image.jpg";
+  const description = t.metaDescription ?? t.description;
   return {
     title: t.name,
-    description: t.description,
+    description,
     alternates: { canonical: `/en/products/${slug}`, languages: hreflangFor(`/productos/${esSlug}`) },
-    openGraph: { title: t.name, description: t.description, type: "website", url: `/en/products/${slug}`, images: [ogImage], locale: "en_US" },
+    openGraph: { title: t.name, description, type: "website", url: `/en/products/${slug}`, images: [ogImage], locale: "en_US" },
     twitter: { card: "summary_large_image", images: [ogImage] },
   };
 }

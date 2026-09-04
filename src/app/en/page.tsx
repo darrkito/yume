@@ -11,7 +11,7 @@ import { FaqQuestion } from "@/components/FaqAccordion";
 import { hreflangFor, PRODUCT_SLUG_EN } from "@/lib/i18n";
 
 export const metadata: Metadata = {
-  title: "Yume — Custom Creative Stationery",
+  title: { absolute: "Yume — Custom Creative Stationery" },
   description:
     "Yume — custom stationery and personalized goods made to order from Guadalajara, Jalisco, shipping across all of Mexico: medical prescription pads, custom stickers, and more.",
   alternates: { canonical: "/en", languages: hreflangFor("/") },

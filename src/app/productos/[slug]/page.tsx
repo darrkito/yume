@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const product = getProduct(slug);
   if (!product) return {};
   const title = product.name;
-  const description = product.description;
+  const description = product.metaDescription ?? product.description;
   const ogImage = product.image ?? "/og-image.jpg";
   return {
     title,

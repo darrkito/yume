@@ -4,6 +4,8 @@ export interface ProductTranslation {
   name: string;
   category: string;
   description: string;
+  /** Short summary for <meta description>/OG — falls back to `description` when unset. */
+  metaDescription?: string;
   details: string[];
   specs: { label: string; value: string }[];
   faq: { q: string; a: string }[];
@@ -29,6 +31,8 @@ export const productsEn: Record<string, ProductTranslation> = {
     ],
     description:
       "Custom medical prescription pad, 100 sheets, Half Letter size (14 x 21.5 cm), white bond paper. We design the letterhead with your professional details (name, license number, specialty, office address) before printing, so you approve the final design before production.",
+    metaDescription:
+      "Custom medical prescription pad, 100 sheets, Half Letter size, 90gsm bond paper, with your professional letterhead. Design approved before printing.",
     details: [
       "100 sheets per pad",
       "Half Letter size (14 cm × 21.5 cm)",
@@ -77,6 +81,8 @@ export const productsEn: Record<string, ProductTranslation> = {
     ],
     description:
       "Custom stickers with your logo or design, water-resistant. Sold by piece count, not by sheet: the first 50 pieces cost $100 and, from there, every extra 25 pieces get a 20% discount ($40 instead of $50). Send us your image (or the design you'd like turned into a sticker) and we'll send a digital proof before printing.",
+    metaDescription:
+      "Custom stickers with your logo, water-resistant. Starting at $100 for 50 pieces, with volume discounts. Digital proof before printing.",
     details: [
       "Sold by piece count, 50-piece minimum",
       "First 50 pieces: $100",

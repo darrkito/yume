@@ -5,7 +5,7 @@ import { formatBlogDate } from "@/lib/format";
 import { hreflangFor } from "@/lib/i18n";
 
 export const metadata: Metadata = {
-  title: "Blog",
+  title: "Custom Stationery Blog",
   description: "Guides on custom stationery, medical prescription pads, and stickers for businesses in Guadalajara and Jalisco.",
   alternates: { canonical: "/en/blog", languages: hreflangFor("/blog") },
 };

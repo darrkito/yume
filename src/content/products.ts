@@ -16,6 +16,10 @@ export interface Product {
   category: string;
   specs: { label: string; value: string }[];
   description: string;
+  /** Short summary for <meta description>/OG — falls back to `description`
+   * when unset. `description` doubles as the visible on-page paragraph, so
+   * long ones need a separate, search-length-appropriate summary here. */
+  metaDescription?: string;
   details: string[];
   faq: { q: string; a: string }[];
   image?: string;
@@ -63,6 +67,8 @@ export const products: Product[] = [
     ],
     description:
       "Recetario médico personalizado de 100 hojas, tamaño Media Carta (14 x 21.5 cm), papel Bond de 90 gr. Diseñamos el membrete con tus datos profesionales (nombre, cédula, especialidad, dirección del consultorio) antes de imprimir, para que apruebes el diseño final antes de producción.",
+    metaDescription:
+      "Recetario médico personalizado de 100 hojas, Media Carta, papel Bond 90gr, con tu membrete profesional. Diseño aprobado antes de imprimir.",
     details: [
       "100 hojas por recetario",
       "Tamaño Media Carta (14 cm × 21.5 cm)",
@@ -116,6 +122,8 @@ export const products: Product[] = [
     ],
     description:
       "Stickers personalizados con tu logo o diseño, resistentes al agua. Se venden por cantidad de piezas, no por hoja: los primeros 50 piezas cuestan $100 y, a partir de ahí, cada 25 piezas extra tienen 20% de descuento ($40 en vez de $50). Envíanos tu imagen (o el diseño que quieras convertir en sticker) y te mandamos una prueba digital antes de imprimir.",
+    metaDescription:
+      "Stickers personalizados con tu logo, resistentes al agua. Desde $100 por 50 piezas, con descuento por volumen. Prueba digital antes de imprimir.",
     details: [
       "Se venden por cantidad de piezas, mínimo 50",
       "Primeras 50 piezas: $100",
