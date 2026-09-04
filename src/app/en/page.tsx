@@ -13,7 +13,7 @@ import { hreflangFor, PRODUCT_SLUG_EN } from "@/lib/i18n";
 export const metadata: Metadata = {
   title: { absolute: "Yume — Custom Creative Stationery" },
   description:
-    "Yume — custom stationery and personalized goods made to order from Guadalajara, Jalisco, shipping across all of Mexico: medical prescription pads, custom stickers, and more.",
+    "Yume — custom stationery from Guadalajara, Jalisco: medical prescription pads and custom stickers, shipping across Mexico.",
   alternates: { canonical: "/en", languages: hreflangFor("/") },
   openGraph: {
     title: "Yume — Custom Creative Stationery",
