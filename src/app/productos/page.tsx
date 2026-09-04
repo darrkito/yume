@@ -8,7 +8,7 @@ import { hreflangFor } from "@/lib/i18n";
 
 export const metadata: Metadata = {
   title: "Tienda",
-  description: "Papelería y artículos personalizados de Yume: recetarios médicos, stickers, plantillas y botellas a tu medida.",
+  description: "Papelería y artículos personalizados de Yume: recetarios médicos personalizados y stickers con tu logo, envíos a todo México.",
   alternates: { canonical: "/productos", languages: hreflangFor("/productos") },
 };
 
