@@ -35,7 +35,7 @@ export function ShippingForm({
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     onSubmit({
-      customer: { name: values.name, email: values.email, phone: values.phone || undefined },
+      customer: { name: values.name, email: values.email, phone: values.phone },
       shippingAddress: {
         street: values.street,
         number: values.number,
@@ -86,11 +86,12 @@ export function ShippingForm({
           </div>
           <div>
             <label className={LABEL_CLASS} htmlFor="phone">
-              {t.phoneOptional}
+              {t.phone}
             </label>
             <input
               id="phone"
               type="tel"
+              required
               autoComplete="tel"
               inputMode="tel"
               className={FIELD_CLASS}

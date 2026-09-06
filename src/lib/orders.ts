@@ -14,7 +14,7 @@ export interface ShippingAddress {
 export interface Customer {
   name: string;
   email: string;
-  phone?: string;
+  phone: string;
 }
 
 export interface Order {
@@ -50,10 +50,10 @@ export function validateShippingAddress(raw: unknown): ShippingAddress {
 
 export function validateCustomer(raw: unknown): Customer {
   const c = raw as Partial<Customer> | undefined;
-  if (!c || !c.name || !c.email) {
-    throw new Error("Falta nombre o correo del cliente.");
+  if (!c || !c.name || !c.email || !c.phone) {
+    throw new Error("Falta nombre, correo o teléfono del cliente.");
   }
-  return { name: String(c.name), email: String(c.email), phone: c.phone ? String(c.phone) : undefined };
+  return { name: String(c.name), email: String(c.email), phone: String(c.phone) };
 }
 
 export async function createPendingOrder({
@@ -73,7 +73,7 @@ export async function createPendingOrder({
     .insert({
       customer_name: customer.name,
       customer_email: customer.email,
-      customer_phone: customer.phone ?? null,
+      customer_phone: customer.phone,
       shipping_address: shippingAddress,
       items,
       total,
