@@ -24,10 +24,10 @@ const translations: Record<string, GalleryTranslation> = {
     title: "Pompompurin, Badtz-Maru and Kuromi stickers",
     alt: "Sanrio's Pompompurin, Badtz-Maru and Kuromi stickers on vinyl",
   },
-  "pompompurin-osos": {
+  "pompompurin-chiikawa": {
     category: "Sanrio",
-    title: "More Pompompurin stickers",
-    alt: "Sheets of Pompompurin and kawaii bear stickers on vinyl",
+    title: "Pompompurin and Chiikawa stickers",
+    alt: "Sheets of Pompompurin and Chiikawa character stickers on vinyl",
   },
   "tuxedosam-vanelia": {
     category: "Sanrio",

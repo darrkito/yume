@@ -53,13 +53,13 @@ export const galleryItems: GalleryItem[] = [
     alt: "Stickers de Pompompurin, Badtz-Maru y Kuromi de Sanrio en vinil",
   },
   {
-    slug: "pompompurin-osos",
-    image: "/gallery/gallery-sanrio-pompompurin-osos.webp",
+    slug: "pompompurin-chiikawa",
+    image: "/gallery/gallery-sanrio-pompompurin-chiikawa.webp",
     width: 960,
     height: 1280,
     category: "Sanrio",
-    title: "Más stickers de Pompompurin",
-    alt: "Planillas de stickers de Pompompurin y ositos kawaii en vinil",
+    title: "Stickers de Pompompurin y Chiikawa",
+    alt: "Planillas de stickers de Pompompurin y personajes de Chiikawa en vinil",
   },
   {
     slug: "tuxedosam-vanelia",
@@ -81,7 +81,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     slug: "zelda-lucario",
-    image: "/gallery/gallery-videojuegos-zelda.webp",
+    image: "/gallery/gallery-videojuegos-zelda-lucario.webp",
     width: 960,
     height: 1280,
     category: "Videojuegos",
@@ -90,7 +90,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     slug: "coraline-scream-dandadan",
-    image: "/gallery/gallery-anime-terror-coraline.webp",
+    image: "/gallery/gallery-anime-terror-coraline-scream-dandadan.webp",
     width: 960,
     height: 1280,
     category: "Anime y Terror",
