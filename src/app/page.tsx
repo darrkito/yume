@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { hasVariants, productDisplayPrice, products } from "@/content/products";
+import { getProduct, hasVariants, productDisplayPrice, products } from "@/content/products";
 import { getFeaturedFaq } from "@/content/faq";
 import { waLink } from "@/content/site";
 import { formatMXN } from "@/lib/format";
@@ -11,8 +11,8 @@ import { InfiniteGalleryStrip } from "@/components/InfiniteGalleryStrip";
 import { galleryItems } from "@/content/gallery";
 
 export default function Home() {
-  const featured = products[0];
-  const rest = products.slice(1);
+  const featured = getProduct("stickers-vinil-impermeable") ?? products[0];
+  const rest = products.filter((p) => p.slug !== featured.slug);
   const featuredFaq = getFeaturedFaq();
 
   return (

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { hasVariants, productDisplayPrice, products } from "@/content/products";
+import { getProduct, hasVariants, productDisplayPrice, products } from "@/content/products";
 import { productsEn } from "@/content/products.en";
 import { getFeaturedFaqEn } from "@/content/faq.en";
 import { waLink } from "@/content/site";
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
 };
 
 export default function HomeEn() {
-  const featured = products[0];
-  const rest = products.slice(1);
+  const featured = getProduct("stickers-vinil-impermeable") ?? products[0];
+  const rest = products.filter((p) => p.slug !== featured.slug);
   const featuredT = productsEn[featured.slug];
   const featuredFaq = getFeaturedFaqEn();
 

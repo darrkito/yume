@@ -128,22 +128,22 @@ export const productsEn: Record<string, ProductTranslation> = {
     name: "Waterproof Vinyl Stickers",
     category: "Custom Vinyl Stickers",
     specs: [
-      { label: "Minimum order", value: "50 pieces" },
-      { label: "Base price", value: "$100 (50 pieces)" },
-      { label: "Extra pieces", value: "+25 pieces = +$40 (20% discount)" },
+      { label: "Minimum order", value: "40 pieces" },
+      { label: "Base price", value: "$100 (40 pieces)" },
+      { label: "Extra pieces", value: "+10 pieces = +$20 (20% discount)" },
       { label: "Material", value: "Premium vinyl, die-cut" },
       { label: "Durability", value: "Water, sun, and scratch resistant" },
       { label: "Customization", value: "Your design, character, or photo" },
     ],
     description:
-      "Die-cut stickers on premium vinyl, resistant to water, sun, and scratches — for any design, character, or photo you want turned into a sticker, not just logos. Sold by piece count, not by sheet: the first 50 pieces cost $100 and, from there, every extra 25 pieces get a 20% discount ($40 instead of $50). Send us your image or design and we'll send a digital proof before printing.",
+      "Die-cut stickers on premium vinyl, resistant to water, sun, and scratches — for any design, character, or photo you want turned into a sticker, not just logos. Sold by piece count, not by sheet: the first 40 pieces cost $100 and, from there, every extra 10 pieces get a 20% discount ($20 instead of $25). Send us your image or design and we'll send a digital proof before printing.",
     metaDescription:
-      "Custom vinyl stickers, resistant to water, sun, and scratches. Any design, character, or photo. Starting at $100 for 50 pieces, with volume discounts.",
+      "Custom vinyl stickers, resistant to water, sun, and scratches. Any design, character, or photo. Starting at $100 for 40 pieces, with volume discounts.",
     details: [
       "Premium vinyl, die-cut to the shape of your design",
-      "Sold by piece count, 50-piece minimum",
-      "First 50 pieces: $100",
-      "Every extra 25 pieces: +$40 (20% discount on those pieces)",
+      "Sold by piece count, 40-piece minimum",
+      "First 40 pieces: $100",
+      "Every extra 10 pieces: +$20 (20% discount on those pieces)",
       "Water, sun, and scratch resistant",
       "Great for your favorite characters, pets, photos, or any design",
       "Digital proof before printing",
@@ -153,7 +153,7 @@ export const productsEn: Record<string, ProductTranslation> = {
     faq: [
       {
         q: "How is this different from Custom Logo Stickers?",
-        a: "Same vinyl and the same piece-count pricing — the difference is the use case: Custom Logo Stickers is meant for your business logo, while Waterproof Vinyl Stickers is for any design, character, pet, or photo you want turned into a sticker.",
+        a: "Same vinyl, but a different minimum and price step — Custom Logo Stickers is meant for your business logo (starting at 50 pieces), while Waterproof Vinyl Stickers is for any design, character, pet, or photo you want turned into a sticker (starting at 40 pieces).",
       },
       {
         q: "Can I order stickers of my favorite characters?",
@@ -169,7 +169,7 @@ export const productsEn: Record<string, ProductTranslation> = {
       },
       {
         q: "What's the price of the vinyl stickers?",
-        a: "The first 50 pieces cost $100. From there, every extra 25 pieces get a 20% discount and cost $40 instead of $50 — for example, 75 pieces is $140 and 100 pieces is $180.",
+        a: "The first 40 pieces cost $100. From there, every extra 10 pieces get a 20% discount and cost $20 instead of $25 — for example, 50 pieces is $120 and 60 pieces is $140.",
       },
       {
         q: "Is the vinyl water and sun resistant?",

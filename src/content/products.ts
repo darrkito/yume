@@ -53,6 +53,23 @@ const stickerVariants: ProductVariant[] = Array.from({ length: STICKER_MAX_STEPS
   return { id: String(qty), label: `${qty} piezas`, price, default: step === 0 };
 });
 
+// Vinyl stickers pricing: 40 piezas = $100 (base rate $2.50/pieza). From
+// there, each extra 10-pieza block costs $20 instead of $25 — a 20%
+// discount on the extra piezas beyond the first 40. Same discount
+// mechanism as stickerVariants, different base/step sizes.
+// Generates: 40→$100, 50→$120, 60→$140, ... up to 140→$300.
+const VINYL_BASE_QTY = 40;
+const VINYL_BASE_PRICE = 100;
+const VINYL_STEP_QTY = 10;
+const VINYL_STEP_PRICE = 20;
+const VINYL_MAX_STEPS = 10; // caps the dropdown at 140 piezas; more via WhatsApp
+
+const vinylStickerVariants: ProductVariant[] = Array.from({ length: VINYL_MAX_STEPS + 1 }, (_, step) => {
+  const qty = VINYL_BASE_QTY + step * VINYL_STEP_QTY;
+  const price = VINYL_BASE_PRICE + step * VINYL_STEP_PRICE;
+  return { id: String(qty), label: `${qty} piezas`, price, default: step === 0 };
+});
+
 export const products: Product[] = [
   {
     slug: "recetario-medico-personalizado",
@@ -168,28 +185,28 @@ export const products: Product[] = [
   {
     slug: "stickers-vinil-impermeable",
     name: "Stickers Vinil Impermeable",
-    price: STICKER_BASE_PRICE,
+    price: VINYL_BASE_PRICE,
     currency: "MXN",
     category: "Stickers de Vinil Personalizados",
-    variants: stickerVariants,
+    variants: vinylStickerVariants,
     showGallery: true,
     specs: [
-      { label: "Mínimo de compra", value: "50 piezas" },
-      { label: "Precio base", value: "$100 (50 piezas)" },
-      { label: "Piezas extra", value: "+25 piezas = +$40 (20% de descuento)" },
+      { label: "Mínimo de compra", value: "40 piezas" },
+      { label: "Precio base", value: "$100 (40 piezas)" },
+      { label: "Piezas extra", value: "+10 piezas = +$20 (20% de descuento)" },
       { label: "Material", value: "Vinil premium, corte troquelado" },
       { label: "Resistencia", value: "Al agua, al sol y a rayones" },
       { label: "Personalización", value: "Tu diseño, personaje o foto" },
     ],
     description:
-      "Stickers troquelados en vinil premium, resistentes al agua, al sol y a rayones — para cualquier diseño, personaje o foto que quieras convertir en sticker, no solo logos. Se venden por cantidad de piezas, no por planilla: los primeros 50 piezas cuestan $100 y, a partir de ahí, cada 25 piezas extra tienen 20% de descuento ($40 en vez de $50). Envíanos tu imagen o diseño y te mandamos una prueba digital antes de imprimir.",
+      "Stickers troquelados en vinil premium, resistentes al agua, al sol y a rayones — para cualquier diseño, personaje o foto que quieras convertir en sticker, no solo logos. Se venden por cantidad de piezas, no por planilla: los primeros 40 piezas cuestan $100 y, a partir de ahí, cada 10 piezas extra tienen 20% de descuento ($20 en vez de $25). Envíanos tu imagen o diseño y te mandamos una prueba digital antes de imprimir.",
     metaDescription:
-      "Stickers de vinil personalizados, resistentes al agua, al sol y a rayones. Cualquier diseño, personaje o foto. Desde $100 por 50 piezas, con descuento por volumen.",
+      "Stickers de vinil personalizados, resistentes al agua, al sol y a rayones. Cualquier diseño, personaje o foto. Desde $100 por 40 piezas, con descuento por volumen.",
     details: [
       "Vinil premium con corte troquelado a la forma del diseño",
-      "Se venden por cantidad de piezas, mínimo 50",
-      "Primeras 50 piezas: $100",
-      "Cada 25 piezas extra: +$40 (20% de descuento sobre esas piezas)",
+      "Se venden por cantidad de piezas, mínimo 40",
+      "Primeras 40 piezas: $100",
+      "Cada 10 piezas extra: +$20 (20% de descuento sobre esas piezas)",
       "Resistentes al agua, al sol y a rayones",
       "Ideal para tus personajes favoritos, mascotas, fotos o cualquier diseño",
       "Prueba digital antes de imprimir",
@@ -200,7 +217,7 @@ export const products: Product[] = [
     faq: [
       {
         q: "¿En qué se diferencian de las Etiquetas Logo Personalizado?",
-        a: "Es el mismo tipo de vinil e igual precio por cantidad de piezas — la diferencia es el uso: Etiquetas Logo Personalizado está pensado para el logo de tu negocio, mientras que Stickers Vinil Impermeable es para cualquier diseño, personaje, mascota o foto que quieras convertir en sticker.",
+        a: "Es el mismo tipo de vinil, pero con distinto mínimo y escalón de precio — Etiquetas Logo Personalizado está pensado para el logo de tu negocio (desde 50 piezas), mientras que Stickers Vinil Impermeable es para cualquier diseño, personaje, mascota o foto que quieras convertir en sticker (desde 40 piezas).",
       },
       {
         q: "¿Puedo pedir stickers de mis personajes favoritos?",
@@ -216,7 +233,7 @@ export const products: Product[] = [
       },
       {
         q: "¿Cuál es el precio de los stickers de vinil?",
-        a: "Las primeras 50 piezas cuestan $100. A partir de ahí, cada 25 piezas extra tienen 20% de descuento y cuestan $40 en vez de $50 — por ejemplo, 75 piezas son $140 y 100 piezas son $180.",
+        a: "Las primeras 40 piezas cuestan $100. A partir de ahí, cada 10 piezas extra tienen 20% de descuento y cuestan $20 en vez de $25 — por ejemplo, 50 piezas son $120 y 60 piezas son $140.",
       },
       {
         q: "¿El vinil resiste el agua y el sol?",
