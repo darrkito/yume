@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Preference } from "mercadopago";
 import { getMpClient, validateCartItems } from "@/lib/mercadopago";
-import { createPendingOrder, validateCustomer, validateShippingAddress } from "@/lib/orders";
+import { createPendingOrder, validateCustomer, validateDesignFileUrls, validateShippingAddress } from "@/lib/orders";
 import { SITE } from "@/content/site";
 
 export async function POST(req: NextRequest) {
@@ -10,9 +10,10 @@ export async function POST(req: NextRequest) {
     const items = validateCartItems(body.items);
     const customer = validateCustomer(body.customer);
     const shippingAddress = validateShippingAddress(body.shippingAddress);
+    const designFileUrls = validateDesignFileUrls(body.designFileUrls);
     const total = items.reduce((sum, item) => sum + item.price * item.qty, 0);
 
-    const order = await createPendingOrder({ customer, shippingAddress, items, total });
+    const order = await createPendingOrder({ customer, shippingAddress, items, total, designFileUrls });
 
     const preference = new Preference(getMpClient());
     const result = await preference.create({

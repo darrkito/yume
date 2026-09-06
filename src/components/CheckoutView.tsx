@@ -4,24 +4,54 @@ import { useState } from "react";
 import Link from "next/link";
 import { CreditCard, ExternalLink, Store } from "lucide-react";
 import { useCart } from "@/components/CartContext";
+import { useDesignFiles } from "@/components/DesignFileContext";
 import { MercadoPagoBrick } from "@/components/MercadoPagoBrick";
 import { ShippingForm } from "@/components/ShippingForm";
+import { getProduct } from "@/content/products";
 import type { Customer, ShippingAddress } from "@/lib/orders";
 import { formatMXN } from "@/lib/format";
 import { UI, type Lang } from "@/lib/i18n";
 
 type Mode = "form" | "choose" | "onsite";
+export interface DesignFileUpload {
+  productName: string;
+  fileName: string;
+  url: string;
+}
 
 export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
   const { items, total } = useCart();
+  const { getDesignFile } = useDesignFiles();
   const [mode, setMode] = useState<Mode>("form");
   const [customer, setCustomer] = useState<Customer | null>(null);
   const [shippingAddress, setShippingAddress] = useState<ShippingAddress | null>(null);
+  const [designFileUrls, setDesignFileUrls] = useState<DesignFileUpload[]>([]);
   const [redirecting, setRedirecting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [settled, setSettled] = useState(false);
   const t = UI[lang];
   const shopHref = lang === "en" ? "/en/products" : "/productos";
+
+  // Uploads happen once, at checkout submission — not when the file is
+  // picked on the product page — so an abandoned cart never leaves an
+  // orphaned file in storage. Any upload failure surfaces as the normal
+  // checkout error instead of silently dropping the customer's file.
+  const uploadDesignFiles = async (): Promise<DesignFileUpload[]> => {
+    const uploads: DesignFileUpload[] = [];
+    for (const item of items) {
+      const product = getProduct(item.slug);
+      if (!product?.requiresImage) continue;
+      const file = getDesignFile(item.slug);
+      if (!file) continue;
+      const body = new FormData();
+      body.set("file", file);
+      const res = await fetch("/api/upload-design", { method: "POST", body });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error ?? t.couldNotUploadFile);
+      uploads.push({ productName: product.name, fileName: data.fileName ?? file.name, url: data.url });
+    }
+    return uploads;
+  };
 
   // Once a payment resolves, MercadoPagoBrick clears the cart itself — but
   // it still needs to render its own success/pending/cash-voucher result.
@@ -51,7 +81,7 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
       const res = await fetch("/api/checkout-pro", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ items, customer, shippingAddress }),
+        body: JSON.stringify({ items, customer, shippingAddress, designFileUrls }),
       });
       const data = await res.json();
       if (!res.ok || !data.initPoint) throw new Error(data.error ?? t.couldNotStartPayment);
@@ -92,10 +122,17 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
         <div className="mt-10">
           <ShippingForm
             lang={lang}
-            onSubmit={({ customer: c, shippingAddress: a }) => {
-              setCustomer(c);
-              setShippingAddress(a);
-              setMode("choose");
+            onSubmit={async ({ customer: c, shippingAddress: a }) => {
+              setError(null);
+              try {
+                const uploads = await uploadDesignFiles();
+                setDesignFileUrls(uploads);
+                setCustomer(c);
+                setShippingAddress(a);
+                setMode("choose");
+              } catch (err) {
+                setError(err instanceof Error ? err.message : t.couldNotUploadFile);
+              }
             }}
           />
         </div>
@@ -144,7 +181,15 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
               {t.changePaymentMethod}
             </button>
           )}
-          <MercadoPagoBrick items={items} total={total} customer={customer} shippingAddress={shippingAddress} onSettled={() => setSettled(true)} lang={lang} />
+          <MercadoPagoBrick
+            items={items}
+            total={total}
+            customer={customer}
+            shippingAddress={shippingAddress}
+            designFileUrls={designFileUrls}
+            onSettled={() => setSettled(true)}
+            lang={lang}
+          />
         </div>
       )}
     </section>

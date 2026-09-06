@@ -1,22 +1,98 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { motion, useMotionValue, useSpring, useReducedMotion } from "motion/react";
 import { ImageUp, X } from "lucide-react";
 import { UI, type Lang } from "@/lib/i18n";
+import { useDesignFiles } from "@/components/DesignFileContext";
 
-// No upload backend exists yet — this only lets the customer confirm which
-// file they intend to send (client-side preview) and makes clear it still
-// has to be attached manually in the WhatsApp chat, since a wa.me link can
-// only pre-fill text, never an attachment. Honest about the limitation
-// rather than implying an automatic upload that doesn't exist.
-export function LogoUploadNote({ lang = "es" }: { lang?: Lang } = {}) {
+const MAGNET_DISTANCE = 180;
+const MAX_OFFSET = 10;
+const MAX_SIZE_BYTES = 10 * 1024 * 1024;
+
+type Stage = "idle" | "near" | "over";
+
+const STAGE_CLASSES: Record<Stage, string> = {
+  idle: "border-line text-ink-soft",
+  near: "border-brand/50 bg-brand-tint/40 text-brand",
+  over: "border-brand bg-brand-tint text-brand shadow-[0_0_0_4px_var(--brand-tint)]",
+};
+
+// Real upload target now (see /api/upload-design) — the file is uploaded
+// when checkout is submitted (CheckoutView), not here. This component only
+// picks the file, previews it, and hands it to DesignFileContext.
+export function LogoUploadNote({ slug, lang = "es" }: { slug: string; lang?: Lang }) {
   const [preview, setPreview] = useState<string | null>(null);
   const [fileName, setFileName] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  const [stage, setStage] = useState<Stage>("idle");
   const t = UI[lang];
+  const { setDesignFile, clearDesignFile } = useDesignFiles();
+  const zoneRef = useRef<HTMLLabelElement>(null);
+  const reduceMotion = useReducedMotion();
+
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+  const springX = useSpring(x, { damping: 24, mass: 0.65, stiffness: 280 });
+  const springY = useSpring(y, { damping: 24, mass: 0.65, stiffness: 280 });
+
+  useEffect(() => {
+    if (reduceMotion) return; // proximity pull is a pure flourish, skip entirely
+    function onDragOver(e: DragEvent) {
+      const rect = zoneRef.current?.getBoundingClientRect();
+      if (!rect) return;
+      const cx = rect.left + rect.width / 2;
+      const cy = rect.top + rect.height / 2;
+      const dx = e.clientX - cx;
+      const dy = e.clientY - cy;
+      const dist = Math.hypot(dx, dy);
+      if (dist < MAGNET_DISTANCE) {
+        const pull = 1 - dist / MAGNET_DISTANCE;
+        x.set(dist > 0 ? (dx / dist) * pull * MAX_OFFSET : 0);
+        y.set(dist > 0 ? (dy / dist) * pull * MAX_OFFSET : 0);
+        const inside = e.clientX >= rect.left && e.clientX <= rect.right && e.clientY >= rect.top && e.clientY <= rect.bottom;
+        setStage(inside ? "over" : "near");
+      } else {
+        x.set(0);
+        y.set(0);
+        setStage("idle");
+      }
+    }
+    function reset() {
+      x.set(0);
+      y.set(0);
+      setStage("idle");
+    }
+    window.addEventListener("dragover", onDragOver);
+    window.addEventListener("drop", reset);
+    window.addEventListener("dragend", reset);
+    return () => {
+      window.removeEventListener("dragover", onDragOver);
+      window.removeEventListener("drop", reset);
+      window.removeEventListener("dragend", reset);
+    };
+  }, [x, y, reduceMotion]);
+
+  const validate = (file: File): boolean => {
+    if (file.size > MAX_SIZE_BYTES) {
+      setError(t.fileTooLarge);
+      return false;
+    }
+    const okType = file.type.startsWith("image/") || file.type === "application/pdf";
+    const okExt = /\.(ai|svg|psd|pdf)$/i.test(file.name);
+    if (!okType && !okExt) {
+      setError(t.fileTypeNotAllowed);
+      return false;
+    }
+    return true;
+  };
 
   const handleFile = (file: File | undefined) => {
     if (!file) return;
+    setError(null);
+    if (!validate(file)) return;
     setFileName(file.name);
+    setDesignFile(slug, file);
     const reader = new FileReader();
     reader.onload = () => setPreview(reader.result as string);
     reader.readAsDataURL(file);
@@ -25,6 +101,8 @@ export function LogoUploadNote({ lang = "es" }: { lang?: Lang } = {}) {
   const clearFile = () => {
     setPreview(null);
     setFileName(null);
+    setError(null);
+    clearDesignFile(slug);
   };
 
   return (
@@ -46,11 +124,30 @@ export function LogoUploadNote({ lang = "es" }: { lang?: Lang } = {}) {
           </div>
         </div>
       ) : (
-        <label className="mt-4 flex cursor-pointer items-center justify-center rounded-lg border border-dashed border-line py-4 text-xs text-ink-soft transition-colors hover:border-brand hover:text-brand">
-          <input type="file" accept="image/*,.pdf,.ai,.svg" className="hidden" onChange={(e) => handleFile(e.target.files?.[0])} />
-          {t.chooseFile}
+        <label
+          ref={zoneRef}
+          className={`relative mt-4 block cursor-pointer rounded-lg border border-dashed py-4 text-center text-xs transition-colors ${STAGE_CLASSES[stage]}`}
+          onDragOver={(e) => e.preventDefault()}
+          onDrop={(e) => {
+            e.preventDefault();
+            handleFile(e.dataTransfer.files?.[0]);
+            x.set(0);
+            y.set(0);
+            setStage("idle");
+          }}
+        >
+          <motion.span style={reduceMotion ? undefined : { x: springX, y: springY }} className="block">
+            {stage === "over" ? t.dropOver : stage === "near" ? t.dropNear : t.chooseFile}
+          </motion.span>
+          <input
+            type="file"
+            accept="image/*,.pdf,.ai,.svg,.psd"
+            className="hidden"
+            onChange={(e) => handleFile(e.target.files?.[0])}
+          />
         </label>
       )}
+      {error && <p className="mt-2 text-xs text-brand">{error}</p>}
     </div>
   );
 }

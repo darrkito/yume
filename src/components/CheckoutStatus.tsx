@@ -43,6 +43,10 @@ export function CheckoutStatus({
     if (!clearCart || captured.current) return;
     if (items.length > 0) {
       captured.current = true;
+      // Reacting to the cart (an external store via useSyncExternalStore)
+      // finishing its post-hydration resync, guarded to fire once — not a
+      // derived-from-props case the lint rule is meant to catch.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setReceipt({ items, total });
       clear();
     }

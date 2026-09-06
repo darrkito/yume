@@ -39,6 +39,10 @@ export function ReceiptPrinter({ items, total, lang = "es" }: { items: CartItem[
   useEffect(() => {
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (reduced) {
+      // Reflects an external system (the OS/browser motion preference,
+      // only readable client-side) finishing its check, not state derived
+      // from props/render.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setStage("complete");
       return;
     }
@@ -95,6 +99,9 @@ export function ReceiptPrinter({ items, total, lang = "es" }: { items: CartItem[
 function useOrderNumber() {
   const [n, setN] = useState<number | null>(null);
   useEffect(() => {
+    // Client-only Date.now() read, exactly the hydration-mismatch case
+    // this effect exists to avoid (see comment above).
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setN(Math.floor(1000 + (Date.now() % 9000)));
   }, []);
   return n;

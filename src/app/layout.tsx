@@ -7,6 +7,7 @@ import { LanguageBanner } from "@/components/LanguageBanner";
 import { HtmlLangSync } from "@/components/HtmlLangSync";
 import { WebMcpProvider } from "@/components/WebMcpProvider";
 import { CartProvider } from "@/components/CartContext";
+import { DesignFileProvider } from "@/components/DesignFileContext";
 import { SITE } from "@/content/site";
 import { hreflangFor } from "@/lib/i18n";
 
@@ -94,12 +95,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           Saltar al contenido
         </a>
         <CartProvider>
-          <HtmlLangSync />
-          <WebMcpProvider />
-          <Header />
-          <LanguageBanner />
-          <main id="main">{children}</main>
-          <Footer />
+          <DesignFileProvider>
+            <HtmlLangSync />
+            <WebMcpProvider />
+            <Header />
+            <LanguageBanner />
+            <main id="main">{children}</main>
+            <Footer />
+          </DesignFileProvider>
         </CartProvider>
       </body>
     </html>

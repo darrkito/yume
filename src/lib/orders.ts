@@ -17,6 +17,12 @@ export interface Customer {
   phone: string;
 }
 
+export interface DesignFileUpload {
+  productName: string;
+  fileName: string;
+  url: string;
+}
+
 export interface Order {
   id: string;
   customer_name: string;
@@ -28,6 +34,7 @@ export interface Order {
   status: "pending" | "paid" | "failed" | "cancelled";
   mp_payment_id: string | null;
   emails_sent: boolean;
+  design_file_urls: DesignFileUpload[] | null;
   created_at: string;
   updated_at: string;
 }
@@ -56,16 +63,31 @@ export function validateCustomer(raw: unknown): Customer {
   return { name: String(c.name), email: String(c.email), phone: String(c.phone) };
 }
 
+// Best-effort: these come from the client after a successful upload to our
+// own /api/upload-design (which is where the real validation already
+// happened), so a malformed entry here just gets dropped rather than
+// failing the whole order — a lost design-file link should never block a
+// real payment from going through.
+export function validateDesignFileUrls(raw: unknown): DesignFileUpload[] {
+  if (!Array.isArray(raw)) return [];
+  return raw.filter(
+    (d): d is DesignFileUpload =>
+      d && typeof d.productName === "string" && typeof d.fileName === "string" && typeof d.url === "string",
+  );
+}
+
 export async function createPendingOrder({
   customer,
   shippingAddress,
   items,
   total,
+  designFileUrls,
 }: {
   customer: Customer;
   shippingAddress: ShippingAddress;
   items: CheckoutItem[];
   total: number;
+  designFileUrls?: DesignFileUpload[];
 }): Promise<Order> {
   const supabase = getSupabaseClient();
   const { data, error } = await supabase
@@ -78,6 +100,7 @@ export async function createPendingOrder({
       items,
       total,
       status: "pending",
+      design_file_urls: designFileUrls?.length ? designFileUrls : null,
     })
     .select()
     .single();

@@ -120,7 +120,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             ))}
           </dl>
 
-          {product.requiresImage && <LogoUploadNote />}
+          {product.requiresImage && <LogoUploadNote slug={product.slug} />}
 
           <ul className="mt-10 space-y-2 text-sm text-ink">
             {product.details.map((d) => (

@@ -6,6 +6,7 @@ import { Loader2, Store, XCircle } from "lucide-react";
 import { useCart } from "@/components/CartContext";
 import type { CartItem } from "@/components/CartContext";
 import { ReceiptPrinter } from "@/components/ReceiptPrinter";
+import type { DesignFileUpload } from "@/components/CheckoutView";
 import type { Customer, ShippingAddress } from "@/lib/orders";
 import type { Lang } from "@/lib/i18n";
 
@@ -61,6 +62,7 @@ export function MercadoPagoBrick({
   total,
   customer,
   shippingAddress,
+  designFileUrls = [],
   onSettled,
   lang = "es",
 }: {
@@ -68,6 +70,7 @@ export function MercadoPagoBrick({
   total: number;
   customer: Customer;
   shippingAddress: ShippingAddress;
+  designFileUrls?: DesignFileUpload[];
   onSettled?: () => void;
   lang?: Lang;
 }) {
@@ -169,7 +172,7 @@ export function MercadoPagoBrick({
               const res = await fetch("/api/checkout-payment", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ items, formData, customer, shippingAddress }),
+                body: JSON.stringify({ items, formData, customer, shippingAddress, designFileUrls }),
               });
               const data = await res.json();
               if (!res.ok) throw new Error(data.error ?? c.genericError);

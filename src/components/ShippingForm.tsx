@@ -12,10 +12,11 @@ export function ShippingForm({
   onSubmit,
   lang = "es",
 }: {
-  onSubmit: (data: { customer: Customer; shippingAddress: ShippingAddress }) => void;
+  onSubmit: (data: { customer: Customer; shippingAddress: ShippingAddress }) => void | Promise<void>;
   lang?: Lang;
 }) {
   const t = UI[lang];
+  const [submitting, setSubmitting] = useState(false);
   const [values, setValues] = useState({
     name: "",
     email: "",
@@ -32,20 +33,25 @@ export function ShippingForm({
   const update = (key: keyof typeof values) => (e: React.ChangeEvent<HTMLInputElement>) =>
     setValues((v) => ({ ...v, [key]: e.target.value }));
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    onSubmit({
-      customer: { name: values.name, email: values.email, phone: values.phone },
-      shippingAddress: {
-        street: values.street,
-        number: values.number,
-        neighborhood: values.neighborhood,
-        city: values.city,
-        state: values.state,
-        zip: values.zip,
-        references: values.references || undefined,
-      },
-    });
+    setSubmitting(true);
+    try {
+      await onSubmit({
+        customer: { name: values.name, email: values.email, phone: values.phone },
+        shippingAddress: {
+          street: values.street,
+          number: values.number,
+          neighborhood: values.neighborhood,
+          city: values.city,
+          state: values.state,
+          zip: values.zip,
+          references: values.references || undefined,
+        },
+      });
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -200,7 +206,8 @@ export function ShippingForm({
 
       <button
         type="submit"
-        className="w-full rounded-full bg-brand px-7 py-3.5 text-center text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brand-deep active:scale-[0.98] sm:w-auto"
+        disabled={submitting}
+        className="w-full rounded-full bg-brand px-7 py-3.5 text-center text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brand-deep active:scale-[0.98] disabled:opacity-60 sm:w-auto"
       >
         {t.continueToPayment}
       </button>

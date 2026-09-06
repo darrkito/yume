@@ -1,7 +1,15 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Payment } from "mercadopago";
 import { getMpClient, validateCartItems } from "@/lib/mercadopago";
-import { createPendingOrder, markOrderAsPaid, markOrderAsFailed, markEmailsAsSent, validateCustomer, validateShippingAddress } from "@/lib/orders";
+import {
+  createPendingOrder,
+  markOrderAsPaid,
+  markOrderAsFailed,
+  markEmailsAsSent,
+  validateCustomer,
+  validateDesignFileUrls,
+  validateShippingAddress,
+} from "@/lib/orders";
 import { sendOrderEmails } from "@/lib/email";
 import { SITE } from "@/content/site";
 
@@ -15,6 +23,7 @@ export async function POST(req: NextRequest) {
     const items = validateCartItems(body.items);
     const customer = validateCustomer(body.customer);
     const shippingAddress = validateShippingAddress(body.shippingAddress);
+    const designFileUrls = validateDesignFileUrls(body.designFileUrls);
     const total = items.reduce((sum, item) => sum + item.price * item.qty, 0);
     const formData = body.formData ?? {};
 
@@ -22,7 +31,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Falta el correo del pagador." }, { status: 400 });
     }
 
-    const order = await createPendingOrder({ customer, shippingAddress, items, total });
+    const order = await createPendingOrder({ customer, shippingAddress, items, total, designFileUrls });
 
     const payment = new Payment(getMpClient());
     const result = await payment.create({

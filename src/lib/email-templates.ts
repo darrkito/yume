@@ -31,6 +31,22 @@ function itemsTable(order: Order): string {
     </p>`;
 }
 
+function designFilesSection(order: Order): string {
+  if (!order.design_file_urls?.length) return "";
+  const rows = order.design_file_urls
+    .map(
+      (f) => `
+      <li style="margin-bottom:6px;">
+        <strong>${f.productName}:</strong>
+        <a href="${f.url}" style="color:#7c0000;">${f.fileName}</a>
+      </li>`
+    )
+    .join("");
+  return `
+    <h3>Logo/diseño del cliente</h3>
+    <ul style="padding-left:18px;">${rows}</ul>`;
+}
+
 export function businessNotificationEmail(order: Order): { subject: string; html: string } {
   const addr = order.shipping_address;
   const subject = `🛒 Nueva venta #${order.id.slice(0, 8)} - $${order.total.toFixed(2)} MXN`;
@@ -59,6 +75,7 @@ export function businessNotificationEmail(order: Order): { subject: string; html
 
     <h3>Productos</h3>
     ${itemsTable(order)}
+    ${designFilesSection(order)}
 
     <h3>Qué sigue</h3>
     <ol>
