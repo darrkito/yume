@@ -308,3 +308,33 @@ body {
   font-size: 0.9rem;
   color: var(--brand);
 }
+
+/* Infinite horizontal gallery strip: track is the item list duplicated once,
+   translated by exactly -50% so the loop seam is invisible. Reduced motion
+   just leaves the track static (no JS fallback needed, unlike HeroJar which
+   needs JS either way for its physics). */
+.gallery-marquee {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+.gallery-marquee-track {
+  display: flex;
+  width: max-content;
+}
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes gallery-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  .gallery-marquee-track {
+    animation: gallery-scroll 45s linear infinite;
+  }
+  .gallery-marquee:hover .gallery-marquee-track {
+    animation-play-state: paused;
+  }
+}

@@ -29,6 +29,7 @@ export function getFaqCategoriesEn(): FaqCategory[] {
     { label: "General", items: generalFaqEn },
     { label: "Medical Prescription Pads", items: getProductTranslation("recetario-medico-personalizado").faq },
     { label: "Custom Logo Stickers", items: getProductTranslation("stickers-logo-personalizado").faq },
+    { label: "Waterproof Vinyl Stickers", items: getProductTranslation("stickers-vinil-impermeable").faq },
   ];
 }
 

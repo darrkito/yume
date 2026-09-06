@@ -7,6 +7,8 @@ import { SITE } from "@/content/site";
 import { ProductVisual } from "@/components/ProductVisual";
 import { ProductPurchase } from "@/components/ProductPurchase";
 import { LogoUploadNote } from "@/components/LogoUploadNote";
+import { InfiniteGalleryStrip } from "@/components/InfiniteGalleryStrip";
+import { getGalleryItemsEn } from "@/content/gallery.en";
 import { hreflangFor, PRODUCT_SLUG_EN, PRODUCT_SLUG_ES } from "@/lib/i18n";
 
 export function generateStaticParams() {
@@ -131,6 +133,16 @@ export default async function ProductPageEn({ params }: { params: Promise<{ slug
           </ul>
         </div>
       </div>
+
+      {product.showGallery && (
+        <InfiniteGalleryStrip
+          items={getGalleryItemsEn()}
+          heading="Work we've done"
+          body="Real examples of stickers we've produced — characters, pets, and logos."
+          viewAllLabel="See the full gallery"
+          viewAllHref="/en/gallery"
+        />
+      )}
 
       <div className="mt-20 border-t border-line pt-14">
         <h2 className="font-display text-2xl text-ink">Frequently Asked Questions</h2>

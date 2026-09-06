@@ -13,6 +13,7 @@ import { UI } from "@/lib/i18n";
 const NAV_LINKS_ES = [
   { href: "/", label: "Inicio" },
   { href: "/productos", label: "Tienda" },
+  { href: "/galeria", label: "Galería" },
   { href: "/blog", label: "Blog" },
   { href: "/preguntas-frecuentes", label: "Preguntas" },
 ];
@@ -20,6 +21,7 @@ const NAV_LINKS_ES = [
 const NAV_LINKS_EN = [
   { href: "/en", label: "Home" },
   { href: "/en/products", label: "Shop" },
+  { href: "/en/gallery", label: "Gallery" },
   { href: "/en/blog", label: "Blog" },
   { href: "/en/faq", label: "FAQ" },
 ];

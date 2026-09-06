@@ -25,6 +25,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE.url}/productos`, changeFrequency: "weekly", priority: 0.9, alternates: withLanguages("/productos") },
     { url: `${SITE.url}/en/products`, changeFrequency: "weekly", priority: 0.8, alternates: withLanguages("/productos") },
 
+    { url: `${SITE.url}/galeria`, changeFrequency: "monthly", priority: 0.8, alternates: withLanguages("/galeria") },
+    { url: `${SITE.url}/en/gallery`, changeFrequency: "monthly", priority: 0.7, alternates: withLanguages("/galeria") },
+
     { url: `${SITE.url}/preguntas-frecuentes`, changeFrequency: "monthly", priority: 0.7, alternates: withLanguages("/preguntas-frecuentes") },
     { url: `${SITE.url}/en/faq`, changeFrequency: "monthly", priority: 0.6, alternates: withLanguages("/preguntas-frecuentes") },
 

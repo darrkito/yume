@@ -6,6 +6,8 @@ import { SITE } from "@/content/site";
 import { ProductVisual } from "@/components/ProductVisual";
 import { ProductPurchase } from "@/components/ProductPurchase";
 import { LogoUploadNote } from "@/components/LogoUploadNote";
+import { InfiniteGalleryStrip } from "@/components/InfiniteGalleryStrip";
+import { galleryItems } from "@/content/gallery";
 import { hreflangFor } from "@/lib/i18n";
 
 export function generateStaticParams() {
@@ -132,6 +134,16 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           </ul>
         </div>
       </div>
+
+      {product.showGallery && (
+        <InfiniteGalleryStrip
+          items={galleryItems}
+          heading="Trabajos realizados"
+          body="Ejemplos reales de stickers que hemos producido — personajes, mascotas y logos."
+          viewAllLabel="Ver galería completa"
+          viewAllHref="/galeria"
+        />
+      )}
 
       <div className="mt-20 border-t border-line pt-14">
         <h2 className="font-display text-2xl text-ink">Preguntas frecuentes</h2>

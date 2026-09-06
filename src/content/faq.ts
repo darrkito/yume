@@ -42,6 +42,7 @@ export function getFaqCategories(): FaqCategory[] {
     { label: "Generales", items: generalFaq },
     { label: "Recetarios Médicos", items: getProduct("recetario-medico-personalizado")!.faq },
     { label: "Etiquetas Logo Personalizado", items: getProduct("stickers-logo-personalizado")!.faq },
+    { label: "Stickers Vinil Impermeable", items: getProduct("stickers-vinil-impermeable")!.faq },
   ];
 }
 

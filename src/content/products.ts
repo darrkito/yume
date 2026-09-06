@@ -33,6 +33,8 @@ export interface Product {
    * per selectable quantity. When set, the customer picks one on the
    * product page and its price replaces `price`. */
   variants?: ProductVariant[];
+  /** Shows the "trabajos realizados" infinite gallery strip on this product's page. */
+  showGallery?: boolean;
 }
 
 // Stickers pricing: 50 piezas = $100 (base rate $2.00/pieza). From there,
@@ -112,6 +114,7 @@ export const products: Product[] = [
     currency: "MXN",
     category: "Etiquetas personalizadas",
     variants: stickerVariants,
+    showGallery: true,
     specs: [
       { label: "Mínimo de compra", value: "50 piezas" },
       { label: "Precio base", value: "$100 (50 piezas)" },
@@ -159,6 +162,65 @@ export const products: Product[] = [
       {
         q: "¿Puedo usar mi propio logo o diseño?",
         a: "Sí, puedes enviar tu logo/diseño en formato editable o lo diseñamos contigo.",
+      },
+    ],
+  },
+  {
+    slug: "stickers-vinil-impermeable",
+    name: "Stickers Vinil Impermeable",
+    price: STICKER_BASE_PRICE,
+    currency: "MXN",
+    category: "Stickers de Vinil Personalizados",
+    variants: stickerVariants,
+    showGallery: true,
+    specs: [
+      { label: "Mínimo de compra", value: "50 piezas" },
+      { label: "Precio base", value: "$100 (50 piezas)" },
+      { label: "Piezas extra", value: "+25 piezas = +$40 (20% de descuento)" },
+      { label: "Material", value: "Vinil premium, corte troquelado" },
+      { label: "Resistencia", value: "Al agua, al sol y a rayones" },
+      { label: "Personalización", value: "Tu diseño, personaje o foto" },
+    ],
+    description:
+      "Stickers troquelados en vinil premium, resistentes al agua, al sol y a rayones — para cualquier diseño, personaje o foto que quieras convertir en sticker, no solo logos. Se venden por cantidad de piezas, no por planilla: los primeros 50 piezas cuestan $100 y, a partir de ahí, cada 25 piezas extra tienen 20% de descuento ($40 en vez de $50). Envíanos tu imagen o diseño y te mandamos una prueba digital antes de imprimir.",
+    metaDescription:
+      "Stickers de vinil personalizados, resistentes al agua, al sol y a rayones. Cualquier diseño, personaje o foto. Desde $100 por 50 piezas, con descuento por volumen.",
+    details: [
+      "Vinil premium con corte troquelado a la forma del diseño",
+      "Se venden por cantidad de piezas, mínimo 50",
+      "Primeras 50 piezas: $100",
+      "Cada 25 piezas extra: +$40 (20% de descuento sobre esas piezas)",
+      "Resistentes al agua, al sol y a rayones",
+      "Ideal para tus personajes favoritos, mascotas, fotos o cualquier diseño",
+      "Prueba digital antes de imprimir",
+      "Mira ejemplos reales de nuestro trabajo en la galería",
+    ],
+    image: "/gallery/gallery-sanrio-hello-kitty.webp",
+    requiresImage: true,
+    faq: [
+      {
+        q: "¿En qué se diferencian de las Etiquetas Logo Personalizado?",
+        a: "Es el mismo tipo de vinil e igual precio por cantidad de piezas — la diferencia es el uso: Etiquetas Logo Personalizado está pensado para el logo de tu negocio, mientras que Stickers Vinil Impermeable es para cualquier diseño, personaje, mascota o foto que quieras convertir en sticker.",
+      },
+      {
+        q: "¿Puedo pedir stickers de mis personajes favoritos?",
+        a: "Sí, mándanos referencia del personaje o diseño que quieras y te preparamos una prueba digital antes de imprimir. Puedes ver ejemplos reales de trabajos anteriores en nuestra galería.",
+      },
+      {
+        q: "¿Puedo hacer stickers con la foto de mi mascota?",
+        a: "Sí, envíanos una foto de tu perro o gato y la convertimos en un sticker troquelado con su silueta.",
+      },
+      {
+        q: "¿Cómo se vende, por planilla o por pieza?",
+        a: "Se vende por cantidad de piezas, no por planilla.",
+      },
+      {
+        q: "¿Cuál es el precio de los stickers de vinil?",
+        a: "Las primeras 50 piezas cuestan $100. A partir de ahí, cada 25 piezas extra tienen 20% de descuento y cuestan $40 en vez de $50 — por ejemplo, 75 piezas son $140 y 100 piezas son $180.",
+      },
+      {
+        q: "¿El vinil resiste el agua y el sol?",
+        a: "Sí, es vinil premium resistente al agua, al sol y a rayones — aguanta bien en botellas, laptops, patinetas o superficies que se mojan o se exponen al sol.",
       },
     ],
   },

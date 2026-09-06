@@ -7,6 +7,8 @@ import { HeroJar } from "@/components/HeroJar";
 import { CtaFillLink } from "@/components/CtaFillLink";
 import { ProductVisual } from "@/components/ProductVisual";
 import { FaqQuestion } from "@/components/FaqAccordion";
+import { InfiniteGalleryStrip } from "@/components/InfiniteGalleryStrip";
+import { galleryItems } from "@/content/gallery";
 
 export default function Home() {
   const featured = products[0];
@@ -119,6 +121,17 @@ export default function Home() {
           </Link>
         </section>
       )}
+
+      {/* Gallery teaser */}
+      <section className="mx-auto max-w-6xl px-6 pb-20">
+        <InfiniteGalleryStrip
+          items={galleryItems}
+          heading="Galería de trabajos"
+          body="Hello Kitty, Pokémon, Zelda, mascotas, logos y más — mira ejemplos reales de stickers que hemos producido."
+          viewAllLabel="Ver galería completa"
+          viewAllHref="/galeria"
+        />
+      </section>
 
       {/* Values */}
       <section className="mx-auto max-w-6xl px-6 py-20">

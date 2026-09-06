@@ -9,6 +9,8 @@ import { HeroJar } from "@/components/HeroJar";
 import { CtaFillLink } from "@/components/CtaFillLink";
 import { ProductVisual } from "@/components/ProductVisual";
 import { FaqQuestion } from "@/components/FaqAccordion";
+import { InfiniteGalleryStrip } from "@/components/InfiniteGalleryStrip";
+import { getGalleryItemsEn } from "@/content/gallery.en";
 import { hreflangFor, PRODUCT_SLUG_EN } from "@/lib/i18n";
 
 export const metadata: Metadata = {
@@ -140,6 +142,17 @@ export default function HomeEn() {
           </Link>
         </section>
       )}
+
+      {/* Gallery teaser */}
+      <section className="mx-auto max-w-6xl px-6 pb-20">
+        <InfiniteGalleryStrip
+          items={getGalleryItemsEn()}
+          heading="Work we've done"
+          body="Hello Kitty, Pokémon, Zelda, pets, logos and more — see real examples of stickers we've produced."
+          viewAllLabel="See the full gallery"
+          viewAllHref="/en/gallery"
+        />
+      </section>
 
       {/* Values */}
       <section className="mx-auto max-w-6xl px-6 py-20">

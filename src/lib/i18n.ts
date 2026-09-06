@@ -9,6 +9,7 @@ export type Lang = "es" | "en";
 export const PRODUCT_SLUG_EN: Record<string, string> = {
   "recetario-medico-personalizado": "medical-prescription-pads",
   "stickers-logo-personalizado": "custom-logo-stickers",
+  "stickers-vinil-impermeable": "waterproof-vinyl-stickers",
 };
 
 export const BLOG_SLUG_EN: Record<string, string> = {
@@ -31,6 +32,7 @@ export const BLOG_SLUG_ES: Record<string, string> = Object.fromEntries(
 const STATIC_PATH_EN: Record<string, string> = {
   "/": "/en",
   "/productos": "/en/products",
+  "/galeria": "/en/gallery",
   "/blog": "/en/blog",
   "/preguntas-frecuentes": "/en/faq",
   "/carrito": "/en/cart",
@@ -84,6 +86,7 @@ export const UI: Record<Lang, Record<string, string>> = {
   es: {
     home: "Inicio",
     shop: "Tienda",
+    galleryNav: "Galería",
     blog: "Blog",
     faqNav: "Preguntas",
     explore: "Explora",
@@ -156,6 +159,7 @@ export const UI: Record<Lang, Record<string, string>> = {
   en: {
     home: "Home",
     shop: "Shop",
+    galleryNav: "Gallery",
     blog: "Blog",
     faqNav: "FAQ",
     explore: "Explore",
