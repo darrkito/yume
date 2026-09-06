@@ -36,7 +36,7 @@ Bilingual pattern used throughout: Spanish is canonical/unprefixed (`/productos`
 ## Checkout & delivery (`src/components/{ShippingForm,CheckoutView,MercadoPagoBrick}.tsx`, `src/lib/orders.ts`, `src/app/api/checkout-{pro,payment}/`)
 
 Two delivery methods, both **actually charged** at checkout (not left as an after-the-fact WhatsApp negotiation):
-- **`envio_nacional`** — national paquetería, $150 MXN flat, requires full `shipping_address`.
+- **`envio_nacional`** — national paquetería, $150 MXN, **free at $750+ cart subtotal** (`FREE_SHIPPING_THRESHOLD` in `shipping.ts`, derived from real margin math — see `[[ecommerce_checkout_playbook]]`), requires full `shipping_address`.
 - **`recoleccion_casablanca`** — local pickup at one of 11 real Casa Blanca branches in the Guadalajara metro area, $20 MXN, no address needed (just name/email/phone + branch id). Real branch addresses/hours in `shipping.ts`.
 
 `ShippingForm` lets the customer pick the method; address fields are entirely unmounted (not just hidden) when pickup is chosen. `DeliveryInfo` (`orders.ts`) is the discriminated shape passed through: `{ method, shippingAddress: ShippingAddress | null, casablancaBranch: string | null }`. `deliverySurcharge(method)` (in `shipping.ts`) is **always recomputed server-side** in both `/api/checkout-pro` and `/api/checkout-payment` — the client-sent method is validated (`validateDelivery`) but never trusted for the amount, same rule as product prices. The surcharge shows as its own line item in the Mercado Pago preference/description, not silently folded into the total.
