@@ -30,9 +30,9 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
   if (items.length === 0 && mode === "form" && !settled) {
     return (
       <section className="mx-auto max-w-2xl px-6 py-24 text-center">
-        <p className="text-xs uppercase tracking-[0.25em] text-brand">{t.checkout}</p>
-        <h1 className="mt-3 font-display text-3xl text-ink sm:text-4xl">{t.emptyCartTitle}</h1>
-        <p className="mt-4 text-sm text-ink-soft">{t.emptyCartCheckoutBody}</p>
+        <p className="animate-fade-up text-xs uppercase tracking-[0.25em] text-brand">{t.checkout}</p>
+        <h1 className="animate-fade-up animate-fade-up-1 mt-3 font-display text-3xl text-ink sm:text-4xl">{t.emptyCartTitle}</h1>
+        <p className="animate-fade-up animate-fade-up-2 mt-4 text-sm text-ink-soft">{t.emptyCartCheckoutBody}</p>
         <Link
           href={shopHref}
           className="mt-8 inline-block rounded-full bg-brand px-7 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brand-deep active:scale-[0.98]"
@@ -64,8 +64,8 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
 
   return (
     <section className="mx-auto max-w-2xl px-6 py-16 sm:py-24">
-      <p className="text-xs uppercase tracking-[0.25em] text-brand">{t.checkout}</p>
-      <h1 className="mt-3 font-display text-4xl text-ink">{mode === "form" ? t.yourDetailsShipping : t.chooseHowToPay}</h1>
+      <p className="animate-fade-up text-xs uppercase tracking-[0.25em] text-brand">{t.checkout}</p>
+      <h1 className="animate-fade-up animate-fade-up-1 mt-3 font-display text-4xl text-ink">{mode === "form" ? t.yourDetailsShipping : t.chooseHowToPay}</h1>
 
       {!settled && (
         <>

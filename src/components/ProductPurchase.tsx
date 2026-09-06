@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { ShoppingBag, Check } from "lucide-react";
 import { useCart } from "@/components/CartContext";
+import { CtaFillLink } from "@/components/CtaFillLink";
 import { cartItemLabel, defaultVariantId, hasVariants, resolvePrice, type Product } from "@/content/products";
 import { cartItemLabelEn, getProductTranslation } from "@/content/products.en";
 import { waLink } from "@/content/site";
@@ -103,7 +104,7 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
         >
           {justAdded ? (
             <>
-              <Check size={16} aria-hidden="true" /> {t.added}
+              <Check className="animate-pop" size={16} aria-hidden="true" /> {t.added}
             </>
           ) : (
             <>
@@ -111,14 +112,14 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
             </>
           )}
         </button>
-        <a
+        <CtaFillLink
           href={waLink(waMsg)}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block rounded-full border border-line px-5 py-2 text-center text-xs font-semibold uppercase tracking-[0.1em] text-ink-soft transition-colors hover:border-brand hover:text-brand"
+          className="inline-block rounded-full border border-line px-5 py-2 text-center text-xs font-semibold uppercase tracking-[0.1em] text-ink-soft transition-colors hover:border-brand"
         >
           {t.quoteWhatsapp}
-        </a>
+        </CtaFillLink>
       </div>
     </div>
   );

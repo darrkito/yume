@@ -193,3 +193,26 @@ body {
 .cta-fill:focus-visible > span {
   color: #fff;
 }
+
+/* Product photo loading shimmer — shown until the real photo finishes
+   loading, instead of a flash of empty space on slow connections. */
+.product-image-wrap {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+}
+.product-image-shimmer {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, var(--line) 30%, var(--paper-raised) 50%, var(--line) 70%);
+  background-size: 200% 100%;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .product-image-shimmer {
+    animation: shimmerSweep 1.6s ease-in-out infinite;
+  }
+}
+@keyframes shimmerSweep {
+  from { background-position: 200% 0; }
+  to { background-position: -200% 0; }
+}

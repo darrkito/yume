@@ -25,9 +25,9 @@ export default function FaqPageEn() {
 
   return (
     <section className="mx-auto max-w-3xl px-6 py-16 sm:py-24">
-      <p className="text-xs uppercase tracking-[0.25em] text-brand">Help</p>
-      <h1 className="mt-3 font-display text-4xl text-ink sm:text-5xl">Frequently Asked Questions</h1>
-      <p className="mt-4 max-w-lg text-sm leading-relaxed text-ink-soft">
+      <p className="animate-fade-up text-xs uppercase tracking-[0.25em] text-brand">Help</p>
+      <h1 className="animate-fade-up animate-fade-up-1 mt-3 font-display text-4xl text-ink sm:text-5xl">Frequently Asked Questions</h1>
+      <p className="animate-fade-up animate-fade-up-2 mt-4 max-w-lg text-sm leading-relaxed text-ink-soft">
         Everything you need to know about orders, shipping, and our products — organized by topic.
       </p>
 

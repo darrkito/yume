@@ -60,7 +60,7 @@ export default async function BlogPostPageEn({ params }: { params: Promise<{ slu
         <span className="text-ink">{post.title}</span>
       </nav>
 
-      <div className="flex items-center gap-3">
+      <div className="animate-fade-up flex items-center gap-3">
         <span className="rounded-full bg-brand-tint px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.1em] text-brand-deep">
           {post.category}
         </span>
@@ -68,8 +68,8 @@ export default async function BlogPostPageEn({ params }: { params: Promise<{ slu
           {formatBlogDate(post.publishedAt)}
         </time>
       </div>
-      <h1 className="mt-4 font-display text-3xl text-ink text-balance sm:text-4xl">{post.title}</h1>
-      <p className="mt-4 text-sm leading-relaxed text-ink-soft">{post.intro}</p>
+      <h1 className="animate-fade-up animate-fade-up-1 mt-4 font-display text-3xl text-ink text-balance sm:text-4xl">{post.title}</h1>
+      <p className="animate-fade-up animate-fade-up-2 mt-4 text-sm leading-relaxed text-ink-soft">{post.intro}</p>
 
       <div className="mt-10 space-y-10">
         {post.sections.map((section) => (

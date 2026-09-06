@@ -5,6 +5,7 @@ import { Minus, Plus, X, ImageUp, CreditCard } from "lucide-react";
 import { useCart } from "@/components/CartContext";
 import { getProduct } from "@/content/products";
 import { ProductVisual } from "@/components/ProductVisual";
+import { CtaFillLink } from "@/components/CtaFillLink";
 import { waLink } from "@/content/site";
 import { formatMXN } from "@/lib/format";
 import { PRODUCT_SLUG_EN, UI, type Lang } from "@/lib/i18n";
@@ -41,9 +42,9 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
   if (items.length === 0) {
     return (
       <section className="mx-auto max-w-2xl px-6 py-24 text-center">
-        <p className="text-xs uppercase tracking-[0.25em] text-brand">{t.cart}</p>
-        <h1 className="mt-3 font-display text-3xl text-ink sm:text-4xl">{t.emptyCartTitle}</h1>
-        <p className="mt-4 text-sm text-ink-soft">{t.emptyCartBody}</p>
+        <p className="animate-fade-up text-xs uppercase tracking-[0.25em] text-brand">{t.cart}</p>
+        <h1 className="animate-fade-up animate-fade-up-1 mt-3 font-display text-3xl text-ink sm:text-4xl">{t.emptyCartTitle}</h1>
+        <p className="animate-fade-up animate-fade-up-2 mt-4 text-sm text-ink-soft">{t.emptyCartBody}</p>
         <Link
           href={shopHref}
           className="mt-8 inline-block rounded-full bg-brand px-7 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brand-deep active:scale-[0.98]"
@@ -56,8 +57,8 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
 
   return (
     <section className="mx-auto max-w-3xl px-6 py-16 sm:py-24">
-      <p className="text-xs uppercase tracking-[0.25em] text-brand">{t.cart}</p>
-      <h1 className="mt-3 font-display text-4xl text-ink">{t.yourOrder}</h1>
+      <p className="animate-fade-up text-xs uppercase tracking-[0.25em] text-brand">{t.cart}</p>
+      <h1 className="animate-fade-up animate-fade-up-1 mt-3 font-display text-4xl text-ink">{t.yourOrder}</h1>
 
       <ul className="mt-10 divide-y divide-line border-y border-line">
         {items.map((item) => {
@@ -143,14 +144,14 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
         >
           <CreditCard size={16} /> {t.payOnline}
         </Link>
-        <a
+        <CtaFillLink
           href={waLink(buildWaMessage())}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block rounded-full border border-line px-5 py-2 text-center text-xs font-semibold uppercase tracking-[0.1em] text-ink-soft transition-colors hover:border-brand hover:text-brand"
+          className="inline-block rounded-full border border-line px-5 py-2 text-center text-xs font-semibold uppercase tracking-[0.1em] text-ink-soft transition-colors hover:border-brand"
         >
           {t.quoteWhatsapp}
-        </a>
+        </CtaFillLink>
       </div>
       <button
         type="button"

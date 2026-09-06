@@ -103,8 +103,8 @@ export default async function ProductPageEn({ params }: { params: Promise<{ slug
         </div>
 
         <div>
-          <p className="text-xs uppercase tracking-[0.25em] text-brand">{t.category}</p>
-          <h1 className="mt-3 font-display text-3xl text-ink sm:text-4xl">{t.name}</h1>
+          <p className="animate-fade-up text-xs uppercase tracking-[0.25em] text-brand">{t.category}</p>
+          <h1 className="animate-fade-up animate-fade-up-1 mt-3 font-display text-3xl text-ink sm:text-4xl">{t.name}</h1>
 
           <ProductPurchase product={product} lang="en" />
 
