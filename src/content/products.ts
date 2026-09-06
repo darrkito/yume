@@ -23,6 +23,11 @@ export interface Product {
   details: string[];
   faq: { q: string; a: string }[];
   image?: string;
+  /** Real pixel dimensions of `image` — lets the product photo frame size
+   * itself to the image's actual aspect ratio instead of an arbitrary box,
+   * and gives next/image a correct intrinsic size (avoids layout shift). */
+  imageWidth?: number;
+  imageHeight?: number;
   /** True when the customer must send their own logo/artwork for us to print — the
    * product page shows a file picker (preview only, no upload backend yet) and
    * clear instructions to attach it in the WhatsApp chat. */
@@ -213,6 +218,8 @@ export const products: Product[] = [
       "Mira ejemplos reales de nuestro trabajo en la galería",
     ],
     image: "/gallery/gallery-sanrio-hello-kitty.webp",
+    imageWidth: 1280,
+    imageHeight: 1226,
     requiresImage: true,
     faq: [
       {

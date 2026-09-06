@@ -98,8 +98,8 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         <span className="text-ink">{product.name}</span>
       </nav>
 
-      <div className="grid gap-14 sm:grid-cols-2">
-        <div className="product-zoom-frame flex items-center justify-center overflow-hidden rounded-2xl border border-line bg-paper-raised p-10 sm:justify-start">
+      <div className="grid gap-14 sm:grid-cols-2 sm:items-start">
+        <div className="product-zoom-frame flex items-center justify-center rounded-2xl border border-line bg-paper-raised p-10 sm:justify-start">
           <div className="product-zoom-img">
             <ProductVisual product={product} />
           </div>
