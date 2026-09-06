@@ -37,6 +37,10 @@ export const generalFaq: FaqItem[] = [
     q: "¿Tienen entrega local en Guadalajara?",
     a: "Sí — si estás en Guadalajara o la zona metropolitana, puedes elegir recolección en una sucursal de Casa Blanca por $20 MXN en vez de envío a domicilio ($150 MXN). Al pagar eliges la sucursal que te quede mejor (hay 11 en la ZMG); te avisamos por WhatsApp y correo en cuanto tu pedido esté listo, junto con el comprobante que necesitas presentar para recogerlo.",
   },
+  {
+    q: "¿El envío a domicilio tiene costo?",
+    a: "Sí, $150 MXN a cualquier parte de México — pero es gratis en compras de $750 MXN o más. La recolección en Casa Blanca (Guadalajara) siempre cuesta $20 MXN, sin importar el monto de tu compra.",
+  },
 ];
 
 // Single source of truth for the 3 FAQ categories shown on the FAQ page and

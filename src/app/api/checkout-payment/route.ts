@@ -25,7 +25,8 @@ export async function POST(req: NextRequest) {
     const customer = validateCustomer(body.customer);
     const delivery = validateDelivery(body.delivery);
     const designFileUrls = validateDesignFileUrls(body.designFileUrls);
-    const total = items.reduce((sum, item) => sum + item.price * item.qty, 0) + deliverySurcharge(delivery.method);
+    const subtotal = items.reduce((sum, item) => sum + item.price * item.qty, 0);
+    const total = subtotal + deliverySurcharge(delivery.method, subtotal);
     const formData = body.formData ?? {};
 
     if (!formData.payer?.email) {

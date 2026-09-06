@@ -9,6 +9,14 @@ export const CASABLANCA_PRICE = 20;
 // surcharge rather than left as an after-the-fact WhatsApp negotiation.
 export const NATIONAL_SHIPPING_PRICE = 150;
 
+// Free national shipping above this cart subtotal (items only, before any
+// delivery surcharge). Derived from real margin math, not a round guess:
+// at ~40% gross margin (materials only, not labor), $750 leaves ~$150
+// profit even after absorbing the $150 shipping cost — well above the
+// $375 pure break-even point. Casa Blanca pickup is cheap enough ($20)
+// that it deliberately has no free threshold of its own.
+export const FREE_SHIPPING_THRESHOLD = 750;
+
 export interface CasablancaBranch {
   id: string;
   name: string;
@@ -37,6 +45,8 @@ export type DeliveryMethod = "envio_nacional" | "recoleccion_casablanca";
 // Pure lookup, safe to import from client components (e.g. to show the
 // surcharge in the order summary) — kept out of orders.ts, which imports
 // the server-only Supabase client and must never reach a client bundle.
-export function deliverySurcharge(method: DeliveryMethod): number {
-  return method === "recoleccion_casablanca" ? CASABLANCA_PRICE : NATIONAL_SHIPPING_PRICE;
+// `subtotal` is the cart's items total (before any delivery surcharge).
+export function deliverySurcharge(method: DeliveryMethod, subtotal: number): number {
+  if (method === "recoleccion_casablanca") return CASABLANCA_PRICE;
+  return subtotal >= FREE_SHIPPING_THRESHOLD ? 0 : NATIONAL_SHIPPING_PRICE;
 }

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import type { Customer, DeliveryInfo, DeliveryMethod } from "@/lib/orders";
-import { CASABLANCA_BRANCHES, CASABLANCA_PRICE, NATIONAL_SHIPPING_PRICE } from "@/content/shipping";
+import { CASABLANCA_BRANCHES, CASABLANCA_PRICE, deliverySurcharge } from "@/content/shipping";
 import { CASABLANCA_BRANCHES_EN } from "@/content/shipping.en";
 import { formatMXN } from "@/lib/format";
 import { UI, type Lang } from "@/lib/i18n";
@@ -13,13 +13,16 @@ const LABEL_CLASS = "mb-1.5 block text-xs font-medium uppercase tracking-[0.08em
 
 export function ShippingForm({
   onSubmit,
+  subtotal,
   lang = "es",
 }: {
   onSubmit: (data: { customer: Customer; delivery: DeliveryInfo }) => void | Promise<void>;
+  subtotal: number;
   lang?: Lang;
 }) {
   const t = UI[lang];
   const branches = lang === "en" ? CASABLANCA_BRANCHES_EN : CASABLANCA_BRANCHES;
+  const nationalShippingCost = deliverySurcharge("envio_nacional", subtotal);
   const [submitting, setSubmitting] = useState(false);
   const [deliveryMethod, setDeliveryMethod] = useState<DeliveryMethod>("envio_nacional");
   const [branchId, setBranchId] = useState(branches[0].id);
@@ -134,9 +137,9 @@ export function ShippingForm({
             }`}
           >
             <p className="text-sm font-semibold text-ink">
-              {t.nationalShipping} — {formatMXN(NATIONAL_SHIPPING_PRICE)} MXN
+              {t.nationalShipping} — {nationalShippingCost > 0 ? `${formatMXN(nationalShippingCost)} MXN` : t.free}
             </p>
-            <p className="mt-1 text-xs leading-relaxed text-ink-soft">{t.nationalShippingDesc}</p>
+            <p className="mt-1 text-xs leading-relaxed text-ink-soft">{nationalShippingCost === 0 ? t.nationalShippingFreeNote : t.nationalShippingDesc}</p>
           </button>
           <button
             type="button"

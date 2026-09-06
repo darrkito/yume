@@ -12,8 +12,9 @@ export async function POST(req: NextRequest) {
     const customer = validateCustomer(body.customer);
     const delivery = validateDelivery(body.delivery);
     const designFileUrls = validateDesignFileUrls(body.designFileUrls);
-    const surcharge = deliverySurcharge(delivery.method);
-    const total = items.reduce((sum, item) => sum + item.price * item.qty, 0) + surcharge;
+    const subtotal = items.reduce((sum, item) => sum + item.price * item.qty, 0);
+    const surcharge = deliverySurcharge(delivery.method, subtotal);
+    const total = subtotal + surcharge;
 
     const order = await createPendingOrder({ customer, delivery, items, total, designFileUrls });
 
@@ -28,13 +29,17 @@ export async function POST(req: NextRequest) {
             unit_price: item.price,
             currency_id: "MXN",
           })),
-          {
-            id: delivery.method === "recoleccion_casablanca" ? "recoleccion-casablanca" : "envio-nacional",
-            title: delivery.method === "recoleccion_casablanca" ? "Recolección en sucursal Casa Blanca" : "Envío a domicilio",
-            quantity: 1,
-            unit_price: surcharge,
-            currency_id: "MXN",
-          },
+          ...(surcharge > 0
+            ? [
+                {
+                  id: delivery.method === "recoleccion_casablanca" ? "recoleccion-casablanca" : "envio-nacional",
+                  title: delivery.method === "recoleccion_casablanca" ? "Recolección en sucursal Casa Blanca" : "Envío a domicilio",
+                  quantity: 1,
+                  unit_price: surcharge,
+                  currency_id: "MXN",
+                },
+              ]
+            : []),
         ],
         payer: { name: customer.name, email: customer.email },
         external_reference: order.id,

@@ -32,7 +32,7 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
   const [settled, setSettled] = useState(false);
   const t = UI[lang];
   const shopHref = lang === "en" ? "/en/products" : "/productos";
-  const surcharge = delivery ? deliverySurcharge(delivery.method) : 0;
+  const surcharge = delivery ? deliverySurcharge(delivery.method, total) : 0;
   const grandTotal = total + surcharge;
   const deliveryLabel = delivery?.method === "recoleccion_casablanca" ? t.casablancaPickup : t.nationalShipping;
 
@@ -116,7 +116,7 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
           {delivery && (
             <div className="mt-3 flex items-center justify-between text-sm">
               <span className="text-ink-soft">{deliveryLabel}</span>
-              <span className="font-medium text-ink">{formatMXN(surcharge)}</span>
+              <span className="font-medium text-ink">{surcharge > 0 ? formatMXN(surcharge) : t.free}</span>
             </div>
           )}
           <div className="mt-4 flex items-center justify-between">
@@ -132,6 +132,7 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
         <div className="mt-10">
           <ShippingForm
             lang={lang}
+            subtotal={total}
             onSubmit={async ({ customer: c, delivery: d }) => {
               setError(null);
               try {
