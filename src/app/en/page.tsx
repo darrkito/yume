@@ -5,7 +5,7 @@ import { productsEn } from "@/content/products.en";
 import { getFeaturedFaqEn } from "@/content/faq.en";
 import { waLink } from "@/content/site";
 import { formatMXN } from "@/lib/format";
-import { NotepadMark } from "@/components/NotepadMark";
+import { HeroIllustration } from "@/components/HeroIllustration";
 import { ProductVisual } from "@/components/ProductVisual";
 import { FaqQuestion } from "@/components/FaqAccordion";
 import { hreflangFor, PRODUCT_SLUG_EN } from "@/lib/i18n";
@@ -64,7 +64,7 @@ export default function HomeEn() {
             </div>
           </div>
           <div className="animate-fade-up animate-fade-up-2 flex justify-center sm:justify-end">
-            <NotepadMark />
+            <HeroIllustration />
           </div>
         </div>
       </section>

@@ -85,6 +85,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Rendered <link>/<meta> tags are hoisted into <head> by Next.js — ARD's
             capability manifest discovery path, real resource (see .well-known/ai-catalog.json). */}
         <link rel="ai-catalog" href={`${SITE.url}/.well-known/ai-catalog.json`} />
+        <div className="paper-grain" aria-hidden="true" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
         <a
           href="#main"
