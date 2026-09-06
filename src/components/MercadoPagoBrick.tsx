@@ -2,9 +2,10 @@
 
 import { useEffect, useState } from "react";
 import { initMercadoPago, Payment } from "@mercadopago/sdk-react";
-import { Loader2, CheckCircle2, Store, XCircle } from "lucide-react";
+import { Loader2, Store, XCircle } from "lucide-react";
 import { useCart } from "@/components/CartContext";
 import type { CartItem } from "@/components/CartContext";
+import { ReceiptPrinter } from "@/components/ReceiptPrinter";
 import type { Customer, ShippingAddress } from "@/lib/orders";
 import type { Lang } from "@/lib/i18n";
 
@@ -73,6 +74,12 @@ export function MercadoPagoBrick({
   const { clear } = useCart();
   const [ready, setReady] = useState(false);
   const [result, setResult] = useState<Result | null>(null);
+  // `items`/`total` are props from the parent's live cart — once clear()
+  // runs, the parent re-renders and hands this component fresh (now
+  // empty) props on the next render. Snapshot them here, at the moment
+  // the order actually settles, so the receipt still has something to
+  // show after the cart is wiped.
+  const [orderSnapshot, setOrderSnapshot] = useState<{ items: CartItem[]; total: number } | null>(null);
   const c = COPY[lang];
 
   useEffect(() => {
@@ -93,14 +100,12 @@ export function MercadoPagoBrick({
     return <p className="rounded-xl border border-line bg-paper p-4 text-sm text-ink-soft">{c.notConfigured}</p>;
   }
 
-  if (result?.kind === "approved") {
+  if (result?.kind === "approved" && orderSnapshot) {
     return (
-      <div className="flex items-start gap-3 rounded-xl border border-line bg-paper-raised p-5">
-        <CheckCircle2 size={20} className="mt-0.5 shrink-0 text-brand" />
-        <div>
-          <p className="font-display text-lg text-ink">{c.approvedTitle}</p>
-          <p className="mt-1 text-sm text-ink-soft">{c.approvedBody}</p>
-        </div>
+      <div className="rounded-xl border border-line bg-paper-raised p-6 text-center">
+        <ReceiptPrinter items={orderSnapshot.items} total={orderSnapshot.total} lang={lang} />
+        <p className="mt-6 font-display text-lg text-ink">{c.approvedTitle}</p>
+        <p className="mt-1 text-sm text-ink-soft">{c.approvedBody}</p>
       </div>
     );
   }
@@ -170,6 +175,7 @@ export function MercadoPagoBrick({
               if (!res.ok) throw new Error(data.error ?? c.genericError);
 
               if (data.status === "approved") {
+                setOrderSnapshot({ items, total });
                 clear();
                 onSettled?.();
                 setResult({ kind: "approved" });

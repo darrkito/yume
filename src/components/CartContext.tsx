@@ -52,8 +52,13 @@ function getSnapshot(): CartItem[] {
   return cachedItems;
 }
 
+// Must return the SAME reference every call — React re-invokes this to
+// detect a mismatch, and a fresh [] literal each time reads as "always
+// changed," which is exactly the "getServerSnapshot should be cached"
+// warning/loop this fixes.
+const EMPTY_ITEMS: CartItem[] = [];
 function getServerSnapshot(): CartItem[] {
-  return [];
+  return EMPTY_ITEMS;
 }
 
 function subscribe(callback: () => void) {
