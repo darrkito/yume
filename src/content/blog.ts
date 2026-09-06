@@ -60,33 +60,33 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "stickers-personalizados-para-negocios-guadalajara",
-    title: "Stickers personalizados para tu negocio en Guadalajara: guía rápida",
-    metaTitle: "Stickers personalizados para tu negocio en Guadalajara",
+    title: "Etiquetas personalizadas para tu negocio en Guadalajara: guía rápida",
+    metaTitle: "Etiquetas personalizadas para tu negocio en Guadalajara",
     description:
-      "Cómo usar stickers personalizados si tienes una marca, un emprendimiento o un puesto en bazares de Guadalajara — qué formato pedir y qué archivo enviar para tu logo.",
+      "Cómo usar etiquetas personalizadas si tienes una marca, un emprendimiento o un puesto en bazares de Guadalajara — qué formato pedir y qué archivo enviar para tu logo.",
     category: "Guías",
     publishedAt: "2026-08-28",
     intro:
-      "En Guadalajara hay un movimiento fuerte de emprendimientos pequeños — marcas de repostería, ropa, velas, joyería, café — que venden en bazares, mercados sobre ruedas o directo por redes sociales. Un sticker con tu logo es de las formas más baratas de que tu marca se vea consistente en cada pedido que sale, sin necesitar empaque especial.",
+      "En Guadalajara hay un movimiento fuerte de emprendimientos pequeños — marcas de repostería, ropa, velas, joyería, café — que venden en bazares, mercados sobre ruedas o directo por redes sociales. Una etiqueta con tu logo es de las formas más baratas de que tu marca se vea consistente en cada pedido que sale, sin necesitar empaque especial.",
     sections: [
       {
         heading: "Para qué sirven realmente",
         body: [
-          "Los usos más comunes que vemos: sellar bolsas o cajas de empaque, pegar en el fondo de productos (velas, jabones, frascos), cerrar sobres de envíos, o simplemente regalarlos sueltos como detalle en el pedido — funcionan como una tarjeta de presentación pequeña que además decora.",
-          "Si vendes en bazares o mercados de Guadalajara, tener stickers con tu logo en cada bolsa de papel ayuda a que la gente te reconozca la próxima vez, sin gastar en empaque personalizado caro desde el arranque.",
+          "Los usos más comunes que vemos: sellar bolsas o cajas de empaque, pegar en el fondo de productos (velas, jabones, frascos), cerrar sobres de envíos, o simplemente regalarlas sueltas como detalle en el pedido — funcionan como una tarjeta de presentación pequeña que además decora.",
+          "Si vendes en bazares o mercados de Guadalajara, tener etiquetas con tu logo en cada bolsa de papel ayuda a que la gente te reconozca la próxima vez, sin gastar en empaque personalizado caro desde el arranque.",
         ],
       },
       {
         heading: "Qué cantidad pedir",
         body: [
           "Vendemos por cantidad de piezas, no por hoja: el mínimo de compra son 50 piezas por $100, y a partir de ahí cada 25 piezas extra tienen 20% de descuento — suficiente para ajustar el pedido al tamaño real de tu emprendimiento sin comprar de más.",
-          "Todos nuestros stickers son resistentes al agua, así que aguantan bien en empaques que se pueden mojar o manejar seguido (bolsas, botellas, envíos). Cuéntanos la forma o el tamaño que prefieres al cotizar, y te mandamos una prueba digital antes de imprimir.",
+          "Todas nuestras etiquetas son resistentes al agua, así que aguantan bien en empaques que se pueden mojar o manejar seguido (bolsas, botellas, envíos). Cuéntanos la forma o el tamaño que prefieres al cotizar, y te mandamos una prueba digital antes de imprimir.",
         ],
       },
       {
         heading: "Qué archivo enviar de tu logo",
         body: [
-          "Lo ideal es un PNG, PDF, AI o SVG con fondo transparente — así el sticker se ve limpio sin un cuadro blanco alrededor. Si solo tienes tu logo en JPG o una foto, también podemos trabajarlo, pero te avisamos si hace falta vectorizarlo o mejorar la calidad antes de imprimir.",
+          "Lo ideal es un PNG, PDF, AI o SVG con fondo transparente — así la etiqueta se ve limpia sin un cuadro blanco alrededor. Si solo tienes tu logo en JPG o una foto, también podemos trabajarlo, pero te avisamos si hace falta vectorizarlo o mejorar la calidad antes de imprimir.",
           "Si todavía no tienes un logo diseñado, dínoslo al cotizar — podemos apoyarte con algo simple basado en tu marca antes de llegar a producción.",
         ],
       },
@@ -98,16 +98,16 @@ export const blogPosts: BlogPost[] = [
     title: "Papelería personalizada para negocios en Jalisco: por qué vale la pena",
     metaTitle: "Papelería personalizada para negocios en Jalisco",
     description:
-      "Por qué invertir en papelería con tu marca — recetarios, stickers y otros detalles impresos — hace diferencia para negocios y profesionales en Guadalajara y el resto de Jalisco.",
+      "Por qué invertir en papelería con tu marca — recetarios, etiquetas y otros detalles impresos — hace diferencia para negocios y profesionales en Guadalajara y el resto de Jalisco.",
     category: "Negocio local",
     publishedAt: "2026-08-28",
     intro:
-      "Ya sea que tengas un consultorio médico o un emprendimiento que vende en bazares de Guadalajara, la papelería que usas todos los días — recetarios, stickers, etiquetas — es una de las formas más baratas de verse consistente. No es la parte más vistosa de un negocio, pero es la que el cliente o paciente tiene literalmente en la mano.",
+      "Ya sea que tengas un consultorio médico o un emprendimiento que vende en bazares de Guadalajara, la papelería que usas todos los días — recetarios, etiquetas — es una de las formas más baratas de verse consistente. No es la parte más vistosa de un negocio, pero es la que el cliente o paciente tiene literalmente en la mano.",
     sections: [
       {
         heading: "Consistencia antes que cantidad",
         body: [
-          "No hace falta rediseñar todo tu negocio para que se vea más profesional — a veces basta con que el recetario, la bolsa de entrega y el sticker que cierra el paquete usen el mismo logo y los mismos colores. Es más barato que un rebranding completo y el efecto se nota igual.",
+          "No hace falta rediseñar todo tu negocio para que se vea más profesional — a veces basta con que el recetario, la bolsa de entrega y la etiqueta que cierra el paquete usen el mismo logo y los mismos colores. Es más barato que un rebranding completo y el efecto se nota igual.",
           "Por eso en Yume trabajamos sobre pedido y a la medida en vez de vender plantillas genéricas: cada pieza se diseña con tus datos y tu marca real, no con un molde que también está usando otro negocio.",
         ],
       },
@@ -121,7 +121,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Por dónde empezar",
         body: [
-          "Si tienes un consultorio, el punto de entrada más común es el recetario médico personalizado. Si tienes una marca o emprendimiento, normalmente son los stickers con tu logo.",
+          "Si tienes un consultorio, el punto de entrada más común es el recetario médico personalizado. Si tienes una marca o emprendimiento, normalmente son las etiquetas con tu logo.",
           "Puedes cotizar directo por WhatsApp o ver el catálogo completo en la tienda — en ambos casos el siguiente paso es el mismo: mandarnos tus datos o tu logo para armar la prueba digital.",
         ],
       },
@@ -148,7 +148,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Qué necesitas tener listo antes de cotizar",
         body: [
-          "Para un recetario médico: tu nombre completo, especialidad, número de cédula profesional y los datos de contacto de tu consultorio. Para stickers con tu logo: el archivo de tu diseño (idealmente PNG, PDF, AI o SVG con fondo transparente) y la cantidad que quieres.",
+          "Para un recetario médico: tu nombre completo, especialidad, número de cédula profesional y los datos de contacto de tu consultorio. Para etiquetas con tu logo: el archivo de tu diseño (idealmente PNG, PDF, AI o SVG con fondo transparente) y la cantidad que quieres.",
           "Si todavía no tienes un logo o diseño terminado, dínoslo al cotizar de todas formas — se puede trabajar en conjunto antes de llegar a la prueba digital, no es necesario llegar con todo resuelto.",
         ],
       },
@@ -211,7 +211,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Para qué se usan realmente",
         body: [
           "Los vemos más seguido en tres contextos: activaciones de marca (ferias, lanzamientos, stands en eventos, regalos promocionales), bodas y XV años (con las iniciales, la fecha o un ícono relacionado al festejo), y eventos deportivos o escolares (con el logo del equipo o la institución).",
-          "A diferencia de un sticker, un tatuaje temporal se lo lleva la persona puesto — funciona como una pieza de merchandising que la gente usa y muestra durante el resto del evento, no solo algo que se queda en una bolsa.",
+          "A diferencia de una etiqueta, un tatuaje temporal se lo lleva la persona puesto — funciona como una pieza de merchandising que la gente usa y muestra durante el resto del evento, no solo algo que se queda en una bolsa.",
         ],
       },
       {

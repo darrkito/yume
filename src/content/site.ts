@@ -4,7 +4,7 @@ export const SITE = {
   url: "https://studioyume.mx",
   tagline: "Papelería creativa y artículos personalizados",
   description:
-    "Yume — papelería personalizada desde Guadalajara, Jalisco: recetarios médicos y stickers con tu logo, envíos a todo México.",
+    "Yume — papelería personalizada desde Guadalajara, Jalisco: recetarios médicos y etiquetas con tu logo, envíos a todo México.",
   whatsappNumber: "523334005135",
   email: "yume.studiomx@gmail.com",
   instagram: "https://www.instagram.com/studioyume.mx",

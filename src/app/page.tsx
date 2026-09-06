@@ -25,7 +25,7 @@ export default function Home() {
             </h1>
             <p className="animate-fade-up animate-fade-up-2 mt-6 max-w-md text-base leading-relaxed text-ink-soft">
               Yume diseña y produce papelería personalizada sobre pedido desde Guadalajara, Jalisco, con envíos a todo
-              México: recetarios médicos, stickers y más. También personalizamos otros productos como tatuajes
+              México: recetarios médicos, etiquetas y más. También personalizamos otros productos como tatuajes
               temporales, invitaciones para eventos, menús y más — cuéntanos qué necesitas al cotizar. Cada pieza se
               aprueba contigo antes de imprimir.
             </p>

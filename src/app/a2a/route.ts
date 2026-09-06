@@ -35,7 +35,7 @@ function matchAnswerEs(text: string): string {
     return `Yume produce desde ${SITE.city}, ${SITE.state}, y envía a todo México. No tenemos tienda física para visitar — todo el proceso se hace a distancia con una prueba digital que apruebas antes de imprimir.`;
   }
 
-  if (/sticker/.test(q)) {
+  if (/sticker|etiqueta/.test(q)) {
     const p = products.find((prod) => prod.slug === "stickers-logo-personalizado");
     return p
       ? `${p.name}: $${p.price.toFixed(2)} MXN. ${p.description} Más info: ${SITE.url}/productos/${p.slug}`

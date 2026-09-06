@@ -41,7 +41,7 @@ export function getFaqCategories(): FaqCategory[] {
   return [
     { label: "Generales", items: generalFaq },
     { label: "Recetarios Médicos", items: getProduct("recetario-medico-personalizado")!.faq },
-    { label: "Stickers Logo Personalizado", items: getProduct("stickers-logo-personalizado")!.faq },
+    { label: "Etiquetas Logo Personalizado", items: getProduct("stickers-logo-personalizado")!.faq },
   ];
 }
 

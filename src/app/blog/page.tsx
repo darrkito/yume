@@ -6,7 +6,7 @@ import { hreflangFor } from "@/lib/i18n";
 
 export const metadata: Metadata = {
   title: "Blog de papelería personalizada",
-  description: "Guías sobre papelería personalizada, recetarios médicos y stickers para negocios en Guadalajara y Jalisco.",
+  description: "Guías sobre papelería personalizada, recetarios médicos y etiquetas para negocios en Guadalajara y Jalisco.",
   alternates: { canonical: "/blog", languages: hreflangFor("/blog") },
 };
 
@@ -16,7 +16,7 @@ export default function BlogIndexPage() {
       <p className="animate-fade-up text-xs uppercase tracking-[0.25em] text-brand">Blog</p>
       <h1 className="animate-fade-up animate-fade-up-1 mt-3 font-display text-4xl text-ink text-balance sm:text-5xl">Guías y notas</h1>
       <p className="animate-fade-up animate-fade-up-2 mt-4 max-w-lg text-sm leading-relaxed text-ink-soft">
-        Papelería Creativa Personalizada, recetarios médicos y stickers para negocios — con foco en Guadalajara y Jalisco.
+        Papelería Creativa Personalizada, recetarios médicos y etiquetas para negocios — con foco en Guadalajara y Jalisco.
       </p>
 
       <div className="mt-14 grid gap-8 sm:grid-cols-2">

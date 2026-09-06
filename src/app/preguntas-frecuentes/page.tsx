@@ -5,7 +5,7 @@ import { hreflangFor } from "@/lib/i18n";
 
 export const metadata: Metadata = {
   title: "Preguntas frecuentes",
-  description: "Respuestas a las dudas más comunes sobre los productos de Yume: generales, recetarios médicos y stickers personalizados.",
+  description: "Respuestas a las dudas más comunes sobre los productos de Yume: generales, recetarios médicos y etiquetas personalizadas.",
   alternates: { canonical: "/preguntas-frecuentes", languages: hreflangFor("/preguntas-frecuentes") },
 };
 

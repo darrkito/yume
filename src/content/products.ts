@@ -107,10 +107,10 @@ export const products: Product[] = [
   },
   {
     slug: "stickers-logo-personalizado",
-    name: "Stickers Logo Personalizado",
+    name: "Etiquetas Logo Personalizado",
     price: STICKER_BASE_PRICE,
     currency: "MXN",
-    category: "Stickers personalizados",
+    category: "Etiquetas personalizadas",
     variants: stickerVariants,
     specs: [
       { label: "Mínimo de compra", value: "50 piezas" },
@@ -121,9 +121,9 @@ export const products: Product[] = [
       { label: "Producción", value: "Sobre pedido" },
     ],
     description:
-      "Stickers personalizados con tu logo o diseño, resistentes al agua. Se venden por cantidad de piezas, no por hoja: los primeros 50 piezas cuestan $100 y, a partir de ahí, cada 25 piezas extra tienen 20% de descuento ($40 en vez de $50). Envíanos tu imagen (o el diseño que quieras convertir en sticker) y te mandamos una prueba digital antes de imprimir.",
+      "Etiquetas personalizadas con tu logo o diseño, resistentes al agua. Se venden por cantidad de piezas, no por hoja: los primeros 50 piezas cuestan $100 y, a partir de ahí, cada 25 piezas extra tienen 20% de descuento ($40 en vez de $50). Envíanos tu imagen (o el diseño que quieras convertir en etiqueta) y te mandamos una prueba digital antes de imprimir.",
     metaDescription:
-      "Stickers personalizados con tu logo, resistentes al agua. Desde $100 por 50 piezas, con descuento por volumen. Prueba digital antes de imprimir.",
+      "Etiquetas personalizadas con tu logo, resistentes al agua. Desde $100 por 50 piezas, con descuento por volumen. Prueba digital antes de imprimir.",
     details: [
       "Se venden por cantidad de piezas, mínimo 50",
       "Primeras 50 piezas: $100",
@@ -137,7 +137,7 @@ export const products: Product[] = [
     requiresImage: true,
     faq: [
       {
-        q: "¿Cómo se vende el sticker, por hoja o por pieza?",
+        q: "¿Cómo se vende la etiqueta, por hoja o por pieza?",
         a: "Se vende por cantidad de piezas, no por hoja.",
       },
       {
@@ -149,12 +149,12 @@ export const products: Product[] = [
         a: "Sí, hay un dropdown para seleccionar la cantidad: 50, 75, 100, 125, 150... (de 25 en 25).",
       },
       {
-        q: "¿Cuál es el precio de los stickers?",
+        q: "¿Cuál es el precio de las etiquetas?",
         a: "Las primeras 50 piezas cuestan $100. A partir de ahí, cada 25 piezas extra tienen 20% de descuento y cuestan $40 en vez de $50 — por ejemplo, 75 piezas son $140 y 100 piezas son $180.",
       },
       {
-        q: "¿Los stickers son resistentes al agua?",
-        a: "Sí, todos nuestros stickers son resistentes al agua.",
+        q: "¿Las etiquetas son resistentes al agua?",
+        a: "Sí, todas nuestras etiquetas son resistentes al agua.",
       },
       {
         q: "¿Puedo usar mi propio logo o diseño?",
