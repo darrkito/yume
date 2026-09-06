@@ -6,6 +6,7 @@ import { getFeaturedFaqEn } from "@/content/faq.en";
 import { waLink } from "@/content/site";
 import { formatMXN } from "@/lib/format";
 import { HeroIllustration } from "@/components/HeroIllustration";
+import { CtaFillLink } from "@/components/CtaFillLink";
 import { ProductVisual } from "@/components/ProductVisual";
 import { FaqQuestion } from "@/components/FaqAccordion";
 import { hreflangFor, PRODUCT_SLUG_EN } from "@/lib/i18n";
@@ -53,14 +54,14 @@ export default function HomeEn() {
               >
                 View shop
               </Link>
-              <a
+              <CtaFillLink
                 href={waLink("Hi, I'm interested in getting a quote for a Yume product.")}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full border border-line px-7 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-ink transition-colors hover:border-brand hover:text-brand"
+                className="rounded-full border border-line px-7 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-ink transition-colors hover:border-brand"
               >
                 Quote via WhatsApp
-              </a>
+              </CtaFillLink>
             </div>
           </div>
           <div className="animate-fade-up animate-fade-up-2 flex justify-center sm:justify-end">

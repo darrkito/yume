@@ -22,10 +22,12 @@ export function BlogProductCard({
 }) {
   const fromLabel = lang === "en" ? "From " : "Desde ";
   return (
-    <div className="rounded-xl border border-line bg-paper p-4">
+    <div className="product-card rounded-xl border border-line bg-paper p-4">
       <Link href={href} className="group flex items-center gap-4">
         <div className="flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-paper-raised">
-          <ProductVisual product={product} compact />
+          <div className="product-card-visual">
+            <ProductVisual product={product} compact />
+          </div>
         </div>
         <div className="min-w-0 flex-1">
           <p className="font-display text-base text-ink transition-colors group-hover:text-brand text-balance">{name}</p>
