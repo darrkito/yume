@@ -18,17 +18,17 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-6 pb-20 pt-16 sm:pt-24">
         <div className="grid items-center gap-12 sm:grid-cols-2">
           <div>
-            <p className="text-xs uppercase tracking-[0.25em] text-brand">Papelería Creativa Personalizada · Guadalajara, Jalisco</p>
-            <h1 className="mt-4 font-display text-4xl leading-[1.1] tracking-tight text-ink text-balance sm:text-5xl">
+            <p className="animate-fade-up text-xs uppercase tracking-[0.25em] text-brand">Papelería Creativa Personalizada · Guadalajara, Jalisco</p>
+            <h1 className="animate-fade-up animate-fade-up-1 mt-4 font-display text-4xl leading-[1.1] tracking-tight text-ink text-balance sm:text-5xl">
               Piezas de papel hechas con intención.
             </h1>
-            <p className="mt-6 max-w-md text-base leading-relaxed text-ink-soft">
+            <p className="animate-fade-up animate-fade-up-2 mt-6 max-w-md text-base leading-relaxed text-ink-soft">
               Yume diseña y produce papelería personalizada sobre pedido desde Guadalajara, Jalisco, con envíos a todo
               México: recetarios médicos, stickers y más. También personalizamos otros productos como tatuajes
               temporales, invitaciones para eventos, menús y más — cuéntanos qué necesitas al cotizar. Cada pieza se
               aprueba contigo antes de imprimir.
             </p>
-            <div className="mt-8 flex flex-wrap gap-4">
+            <div className="animate-fade-up animate-fade-up-3 mt-8 flex flex-wrap gap-4">
               <Link
                 href="/productos"
                 className="rounded-full bg-brand px-7 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brand-deep active:scale-[0.98]"
@@ -45,7 +45,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="flex justify-center sm:justify-end">
+          <div className="animate-fade-up animate-fade-up-2 flex justify-center sm:justify-end">
             <NotepadMark />
           </div>
         </div>
@@ -94,10 +94,12 @@ export default function Home() {
               <Link
                 key={p.slug}
                 href={`/productos/${p.slug}`}
-                className="group rounded-2xl border border-line bg-paper-raised p-6 transition-shadow hover:shadow-lg"
+                className="product-card group rounded-2xl border border-line bg-paper-raised p-6 transition-shadow hover:shadow-lg"
               >
                 <div className="flex h-48 items-center justify-center overflow-hidden">
-                  <ProductVisual product={p} compact />
+                  <div className="product-card-visual">
+                    <ProductVisual product={p} compact />
+                  </div>
                 </div>
                 <p className="mt-6 text-xs uppercase tracking-[0.15em] text-brand">{p.category}</p>
                 <h3 className="mt-1 font-display text-xl text-ink transition-colors group-hover:text-brand">{p.name}</h3>

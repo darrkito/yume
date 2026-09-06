@@ -33,7 +33,7 @@ export function AddToCartButton({ product, compact = false, lang = "es" }: { pro
     >
       {justAdded ? (
         <>
-          <Check size={compact ? 14 : 16} aria-hidden="true" /> {t.added}
+          <Check className="animate-pop" size={compact ? 14 : 16} aria-hidden="true" /> {t.added}
         </>
       ) : (
         <>

@@ -26,10 +26,12 @@ export default function ProductsPageEn() {
         {products.map((p) => {
           const t = productsEn[p.slug];
           return (
-            <div key={p.slug} className="group rounded-2xl border border-line bg-paper-raised p-6 transition-shadow hover:shadow-lg">
+            <div key={p.slug} className="product-card group rounded-2xl border border-line bg-paper-raised p-6 transition-shadow hover:shadow-lg">
               <Link href={`/en/products/${PRODUCT_SLUG_EN[p.slug]}`}>
                 <div className="flex h-48 items-center justify-center overflow-hidden">
-                  <ProductVisual product={p} compact />
+                  <div className="product-card-visual">
+                    <ProductVisual product={p} compact />
+                  </div>
                 </div>
                 <p className="mt-6 text-xs uppercase tracking-[0.15em] text-brand">{t.category}</p>
                 <h2 className="mt-1 font-display text-xl text-ink group-hover:text-brand transition-colors">{t.name}</h2>
