@@ -5,7 +5,7 @@ import { productsEn } from "@/content/products.en";
 import { getFeaturedFaqEn } from "@/content/faq.en";
 import { waLink } from "@/content/site";
 import { formatMXN } from "@/lib/format";
-import { HeroIllustration } from "@/components/HeroIllustration";
+import { HeroJar } from "@/components/HeroJar";
 import { CtaFillLink } from "@/components/CtaFillLink";
 import { ProductVisual } from "@/components/ProductVisual";
 import { FaqQuestion } from "@/components/FaqAccordion";
@@ -65,7 +65,7 @@ export default function HomeEn() {
             </div>
           </div>
           <div className="animate-fade-up animate-fade-up-2 flex justify-center sm:justify-end">
-            <HeroIllustration />
+            <HeroJar />
           </div>
         </div>
       </section>
