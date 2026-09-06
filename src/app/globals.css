@@ -88,3 +88,23 @@ body {
     transform: translateY(-3px);
   }
 }
+
+.faq-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: none;
+}
+
+.faq-panel[data-open="true"] {
+  grid-template-rows: 1fr;
+}
+
+.faq-panel > div {
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .faq-panel {
+    transition: grid-template-rows 0.32s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+}

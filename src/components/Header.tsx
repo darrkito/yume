@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -32,11 +32,23 @@ const WA_QUOTE_MESSAGE = {
 export function Header() {
   const [open, setOpen] = useState(false);
   const { count } = useCart();
+  const [bump, setBump] = useState(false);
+  const prevCount = useRef(count);
   const pathname = usePathname();
   const lang = pathname.startsWith("/en") ? "en" : "es";
   const navLinks = lang === "en" ? NAV_LINKS_EN : NAV_LINKS_ES;
   const cartHref = lang === "en" ? "/en/cart" : "/carrito";
   const t = UI[lang];
+
+  useEffect(() => {
+    if (count > prevCount.current) {
+      setBump(true);
+      const timer = setTimeout(() => setBump(false), 400);
+      prevCount.current = count;
+      return () => clearTimeout(timer);
+    }
+    prevCount.current = count;
+  }, [count]);
 
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-paper">
@@ -56,7 +68,9 @@ export function Header() {
           <Link href={cartHref} className="relative p-2 text-ink hover:text-brand transition-colors" aria-label={`${t.cart}${count > 0 ? ` (${count})` : ""}`}>
             <ShoppingBag size={22} aria-hidden="true" />
             {count > 0 && (
-              <span className="absolute -right-0.5 -top-0.5 flex h-4 min-w-4 items-center justify-center rounded-full bg-brand px-1 text-[10px] font-semibold text-white">
+              <span
+                className={`absolute -right-0.5 -top-0.5 flex h-4 min-w-4 items-center justify-center rounded-full bg-brand px-1 text-[10px] font-semibold text-white ${bump ? "animate-pop" : ""}`}
+              >
                 {count}
               </span>
             )}

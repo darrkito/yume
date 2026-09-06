@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Minus, Plus, X, ImageUp, CreditCard } from "lucide-react";
 import { useCart } from "@/components/CartContext";
 import { getProduct } from "@/content/products";
+import { ProductVisual } from "@/components/ProductVisual";
 import { waLink } from "@/content/site";
 import { formatMXN } from "@/lib/format";
 import { PRODUCT_SLUG_EN, UI, type Lang } from "@/lib/i18n";
@@ -59,18 +60,30 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
       <h1 className="mt-3 font-display text-4xl text-ink">{t.yourOrder}</h1>
 
       <ul className="mt-10 divide-y divide-line border-y border-line">
-        {items.map((item) => (
+        {items.map((item) => {
+          const product = getProduct(item.slug);
+          return (
           <li key={`${item.slug}:${item.variantId ?? ""}`} className="flex flex-wrap items-center justify-between gap-4 py-6">
-            <div>
+            <div className="flex items-center gap-4">
               <Link
                 href={`${shopHref}/${lang === "en" ? (PRODUCT_SLUG_EN[item.slug] ?? item.slug) : item.slug}`}
-                className="font-display text-lg text-ink hover:text-brand transition-colors"
+                className="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-line bg-paper-raised p-1.5"
+                aria-hidden="true"
+                tabIndex={-1}
               >
-                {item.name}
+                {product && <ProductVisual product={product} compact />}
               </Link>
-              <p className="mt-1 text-sm text-ink-soft">
-                {formatMXN(item.price)} {t.each}
-              </p>
+              <div>
+                <Link
+                  href={`${shopHref}/${lang === "en" ? (PRODUCT_SLUG_EN[item.slug] ?? item.slug) : item.slug}`}
+                  className="font-display text-lg text-ink hover:text-brand transition-colors"
+                >
+                  {item.name}
+                </Link>
+                <p className="mt-1 text-sm text-ink-soft">
+                  {formatMXN(item.price)} {t.each}
+                </p>
+              </div>
             </div>
             <div className="flex items-center gap-4">
               <div className="flex items-center rounded-full border border-line">
@@ -104,7 +117,8 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
               </button>
             </div>
           </li>
-        ))}
+          );
+        })}
       </ul>
 
       {itemsRequiringImage.length > 0 && (
