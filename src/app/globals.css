@@ -216,3 +216,117 @@ body {
   from { background-position: 200% 0; }
   to { background-position: -200% 0; }
 }
+
+/* Receipt printer — checkout success moment. Stage-driven (processing /
+   printing / complete), real order data, mechanical stepped feed via
+   steps() rather than a smooth ease, reduced-motion collapses straight
+   to the finished receipt (see ReceiptPrinter.tsx). */
+.receipt-printer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.receipt-body {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 52px;
+  background: var(--ink);
+  border-radius: 14px 14px 4px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 24px -14px rgb(36 27 26 / 0.55);
+}
+.receipt-slot {
+  position: absolute;
+  top: 9px;
+  left: 18px;
+  right: 18px;
+  height: 4px;
+  border-radius: 2px;
+  background: #000;
+  opacity: 0.55;
+}
+.receipt-status-icon {
+  position: relative;
+  color: #fff;
+}
+.receipt-feed {
+  position: relative;
+  z-index: 1;
+  width: calc(100% - 20px);
+  overflow: hidden;
+}
+.receipt-paper {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-top: none;
+  padding: 22px 18px 30px;
+  transform: translateY(-100%);
+  font-variant-numeric: tabular-nums;
+}
+.receipt-feed[data-stage="complete"] .receipt-paper {
+  transform: translateY(0%);
+}
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes receiptFeed {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0%); }
+  }
+  .receipt-feed[data-stage="printing"] .receipt-paper {
+    animation: receiptFeed 1.4s steps(18, end) forwards;
+  }
+}
+.receipt-brand {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: var(--ink);
+}
+.receipt-tagline {
+  margin-top: 2px;
+  font-size: 0.68rem;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+}
+.receipt-rule {
+  margin: 14px 0;
+  border-top: 1px dashed var(--line);
+}
+.receipt-items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.78rem;
+  color: var(--ink);
+}
+.receipt-items li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.receipt-total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  color: var(--ink);
+}
+.receipt-order-no {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+}
+.receipt-thanks {
+  margin-top: 4px;
+  text-align: center;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 0.9rem;
+  color: var(--brand);
+}
