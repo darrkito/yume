@@ -33,6 +33,10 @@ export const generalFaq: FaqItem[] = [
     q: "¿Cómo puedo cotizar o hacer un pedido?",
     a: "Puedes escribirnos a yume.studiomx@gmail.com con los detalles de lo que necesitas.",
   },
+  {
+    q: "¿Tienen entrega local en Guadalajara?",
+    a: "Sí — si estás en Guadalajara o la zona metropolitana, puedes elegir recolección en una sucursal de Casa Blanca por $20 MXN en vez de envío a domicilio ($150 MXN). Al pagar eliges la sucursal que te quede mejor (hay 11 en la ZMG); te avisamos por WhatsApp y correo en cuanto tu pedido esté listo, junto con el comprobante que necesitas presentar para recogerlo.",
+  },
 ];
 
 // Single source of truth for the 3 FAQ categories shown on the FAQ page and

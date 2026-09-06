@@ -1,7 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import type { Customer, ShippingAddress } from "@/lib/orders";
+import type { Customer, DeliveryInfo, DeliveryMethod } from "@/lib/orders";
+import { CASABLANCA_BRANCHES, CASABLANCA_PRICE, NATIONAL_SHIPPING_PRICE } from "@/content/shipping";
+import { CASABLANCA_BRANCHES_EN } from "@/content/shipping.en";
+import { formatMXN } from "@/lib/format";
 import { UI, type Lang } from "@/lib/i18n";
 
 const FIELD_CLASS =
@@ -12,11 +15,14 @@ export function ShippingForm({
   onSubmit,
   lang = "es",
 }: {
-  onSubmit: (data: { customer: Customer; shippingAddress: ShippingAddress }) => void | Promise<void>;
+  onSubmit: (data: { customer: Customer; delivery: DeliveryInfo }) => void | Promise<void>;
   lang?: Lang;
 }) {
   const t = UI[lang];
+  const branches = lang === "en" ? CASABLANCA_BRANCHES_EN : CASABLANCA_BRANCHES;
   const [submitting, setSubmitting] = useState(false);
+  const [deliveryMethod, setDeliveryMethod] = useState<DeliveryMethod>("envio_nacional");
+  const [branchId, setBranchId] = useState(branches[0].id);
   const [values, setValues] = useState({
     name: "",
     email: "",
@@ -37,17 +43,25 @@ export function ShippingForm({
     e.preventDefault();
     setSubmitting(true);
     try {
+      const delivery: DeliveryInfo =
+        deliveryMethod === "recoleccion_casablanca"
+          ? { method: "recoleccion_casablanca", shippingAddress: null, casablancaBranch: branchId }
+          : {
+              method: "envio_nacional",
+              casablancaBranch: null,
+              shippingAddress: {
+                street: values.street,
+                number: values.number,
+                neighborhood: values.neighborhood,
+                city: values.city,
+                state: values.state,
+                zip: values.zip,
+                references: values.references || undefined,
+              },
+            };
       await onSubmit({
         customer: { name: values.name, email: values.email, phone: values.phone },
-        shippingAddress: {
-          street: values.street,
-          number: values.number,
-          neighborhood: values.neighborhood,
-          city: values.city,
-          state: values.state,
-          zip: values.zip,
-          references: values.references || undefined,
-        },
+        delivery,
       });
     } finally {
       setSubmitting(false);
@@ -109,6 +123,53 @@ export function ShippingForm({
         </div>
       </div>
 
+      <div>
+        <h2 className="font-display text-lg text-ink">{t.deliveryMethod}</h2>
+        <div className="mt-4 grid gap-4 sm:grid-cols-2">
+          <button
+            type="button"
+            onClick={() => setDeliveryMethod("envio_nacional")}
+            className={`rounded-xl border p-4 text-left transition-colors ${
+              deliveryMethod === "envio_nacional" ? "border-brand bg-brand-tint" : "border-line bg-paper hover:border-brand"
+            }`}
+          >
+            <p className="text-sm font-semibold text-ink">
+              {t.nationalShipping} — {formatMXN(NATIONAL_SHIPPING_PRICE)} MXN
+            </p>
+            <p className="mt-1 text-xs leading-relaxed text-ink-soft">{t.nationalShippingDesc}</p>
+          </button>
+          <button
+            type="button"
+            onClick={() => setDeliveryMethod("recoleccion_casablanca")}
+            className={`rounded-xl border p-4 text-left transition-colors ${
+              deliveryMethod === "recoleccion_casablanca" ? "border-brand bg-brand-tint" : "border-line bg-paper hover:border-brand"
+            }`}
+          >
+            <p className="text-sm font-semibold text-ink">
+              {t.casablancaPickup} — {formatMXN(CASABLANCA_PRICE)} MXN
+            </p>
+            <p className="mt-1 text-xs leading-relaxed text-ink-soft">{t.casablancaPickupDesc}</p>
+          </button>
+        </div>
+
+        {deliveryMethod === "recoleccion_casablanca" && (
+          <div className="mt-4">
+            <label className={LABEL_CLASS} htmlFor="casablanca-branch">
+              {t.chooseBranch}
+            </label>
+            <select id="casablanca-branch" required className={FIELD_CLASS} value={branchId} onChange={(e) => setBranchId(e.target.value)}>
+              {branches.map((b) => (
+                <option key={b.id} value={b.id}>
+                  {b.name} — {b.address}
+                </option>
+              ))}
+            </select>
+            <p className="mt-2 text-xs leading-relaxed text-ink-soft">{t.casablancaNote}</p>
+          </div>
+        )}
+      </div>
+
+      {deliveryMethod === "envio_nacional" && (
       <div>
         <h2 className="font-display text-lg text-ink">{t.shippingAddress}</h2>
         <div className="mt-4 grid gap-4 sm:grid-cols-3">
@@ -203,6 +264,7 @@ export function ShippingForm({
           </div>
         </div>
       </div>
+      )}
 
       <button
         type="submit"

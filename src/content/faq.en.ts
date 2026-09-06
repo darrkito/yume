@@ -22,6 +22,10 @@ export const generalFaqEn: FaqItem[] = [
     q: "How can I get a quote or place an order?",
     a: "You can email us at yume.studiomx@gmail.com with the details of what you need.",
   },
+  {
+    q: "Do you offer local delivery in Guadalajara?",
+    a: "Yes — if you're in Guadalajara or the metro area, you can choose pickup at a Casa Blanca branch for $20 MXN instead of home delivery ($150 MXN). At checkout you pick whichever of the 11 ZMG branches works best for you; we'll let you know via WhatsApp and email as soon as your order is ready, along with the proof you need to show at the branch to pick it up.",
+  },
 ];
 
 export function getFaqCategoriesEn(): FaqCategory[] {

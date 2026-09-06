@@ -1,5 +1,6 @@
 import { getSupabaseClient } from "@/lib/supabase";
 import type { CheckoutItem } from "@/lib/mercadopago";
+import { getCasablancaBranch, type DeliveryMethod } from "@/content/shipping";
 
 export interface ShippingAddress {
   street: string;
@@ -10,6 +11,8 @@ export interface ShippingAddress {
   zip: string;
   references?: string;
 }
+
+export type { DeliveryMethod };
 
 export interface Customer {
   name: string;
@@ -28,7 +31,9 @@ export interface Order {
   customer_name: string;
   customer_email: string;
   customer_phone: string | null;
-  shipping_address: ShippingAddress;
+  delivery_method: DeliveryMethod;
+  shipping_address: ShippingAddress | null;
+  casablanca_branch: string | null;
   items: CheckoutItem[];
   total: number;
   status: "pending" | "paid" | "failed" | "cancelled";
@@ -55,6 +60,29 @@ export function validateShippingAddress(raw: unknown): ShippingAddress {
   };
 }
 
+export interface DeliveryInfo {
+  method: DeliveryMethod;
+  shippingAddress: ShippingAddress | null;
+  casablancaBranch: string | null;
+}
+
+export function validateDelivery(raw: unknown): DeliveryInfo {
+  const d = raw as { method?: unknown; shippingAddress?: unknown; casablancaBranch?: unknown } | undefined;
+  const method = d?.method;
+
+  if (method === "recoleccion_casablanca") {
+    const branchId = typeof d?.casablancaBranch === "string" ? d.casablancaBranch : undefined;
+    if (!branchId || !getCasablancaBranch(branchId)) {
+      throw new Error("Selecciona una sucursal válida de Casa Blanca.");
+    }
+    return { method: "recoleccion_casablanca", shippingAddress: null, casablancaBranch: branchId };
+  }
+
+  // Default to national shipping — matches the form's default and keeps
+  // existing callers (that never sent a `delivery` field) working.
+  return { method: "envio_nacional", shippingAddress: validateShippingAddress(d?.shippingAddress), casablancaBranch: null };
+}
+
 export function validateCustomer(raw: unknown): Customer {
   const c = raw as Partial<Customer> | undefined;
   if (!c || !c.name || !c.email || !c.phone) {
@@ -78,13 +106,13 @@ export function validateDesignFileUrls(raw: unknown): DesignFileUpload[] {
 
 export async function createPendingOrder({
   customer,
-  shippingAddress,
+  delivery,
   items,
   total,
   designFileUrls,
 }: {
   customer: Customer;
-  shippingAddress: ShippingAddress;
+  delivery: DeliveryInfo;
   items: CheckoutItem[];
   total: number;
   designFileUrls?: DesignFileUpload[];
@@ -96,7 +124,9 @@ export async function createPendingOrder({
       customer_name: customer.name,
       customer_email: customer.email,
       customer_phone: customer.phone,
-      shipping_address: shippingAddress,
+      delivery_method: delivery.method,
+      shipping_address: delivery.shippingAddress,
+      casablanca_branch: delivery.casablancaBranch,
       items,
       total,
       status: "pending",

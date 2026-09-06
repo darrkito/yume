@@ -8,7 +8,8 @@ import { useDesignFiles } from "@/components/DesignFileContext";
 import { MercadoPagoBrick } from "@/components/MercadoPagoBrick";
 import { ShippingForm } from "@/components/ShippingForm";
 import { getProduct } from "@/content/products";
-import type { Customer, ShippingAddress } from "@/lib/orders";
+import type { Customer, DeliveryInfo } from "@/lib/orders";
+import { deliverySurcharge } from "@/content/shipping";
 import { formatMXN } from "@/lib/format";
 import { UI, type Lang } from "@/lib/i18n";
 
@@ -24,13 +25,16 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
   const { getDesignFile } = useDesignFiles();
   const [mode, setMode] = useState<Mode>("form");
   const [customer, setCustomer] = useState<Customer | null>(null);
-  const [shippingAddress, setShippingAddress] = useState<ShippingAddress | null>(null);
+  const [delivery, setDelivery] = useState<DeliveryInfo | null>(null);
   const [designFileUrls, setDesignFileUrls] = useState<DesignFileUpload[]>([]);
   const [redirecting, setRedirecting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [settled, setSettled] = useState(false);
   const t = UI[lang];
   const shopHref = lang === "en" ? "/en/products" : "/productos";
+  const surcharge = delivery ? deliverySurcharge(delivery.method) : 0;
+  const grandTotal = total + surcharge;
+  const deliveryLabel = delivery?.method === "recoleccion_casablanca" ? t.casablancaPickup : t.nationalShipping;
 
   // Uploads happen once, at checkout submission — not when the file is
   // picked on the product page — so an abandoned cart never leaves an
@@ -74,14 +78,14 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
   }
 
   const handleCheckoutPro = async () => {
-    if (!customer || !shippingAddress) return;
+    if (!customer || !delivery) return;
     setError(null);
     setRedirecting(true);
     try {
       const res = await fetch("/api/checkout-pro", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ items, customer, shippingAddress, designFileUrls }),
+        body: JSON.stringify({ items, customer, delivery, designFileUrls }),
       });
       const data = await res.json();
       if (!res.ok || !data.initPoint) throw new Error(data.error ?? t.couldNotStartPayment);
@@ -109,9 +113,15 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
               </li>
             ))}
           </ul>
+          {delivery && (
+            <div className="mt-3 flex items-center justify-between text-sm">
+              <span className="text-ink-soft">{deliveryLabel}</span>
+              <span className="font-medium text-ink">{formatMXN(surcharge)}</span>
+            </div>
+          )}
           <div className="mt-4 flex items-center justify-between">
             <p className="text-sm text-ink-soft">{t.total}</p>
-            <p className="font-display text-2xl text-ink">{formatMXN(total)} MXN</p>
+            <p className="font-display text-2xl text-ink">{formatMXN(grandTotal)} MXN</p>
           </div>
         </>
       )}
@@ -122,13 +132,13 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
         <div className="mt-10">
           <ShippingForm
             lang={lang}
-            onSubmit={async ({ customer: c, shippingAddress: a }) => {
+            onSubmit={async ({ customer: c, delivery: d }) => {
               setError(null);
               try {
                 const uploads = await uploadDesignFiles();
                 setDesignFileUrls(uploads);
                 setCustomer(c);
-                setShippingAddress(a);
+                setDelivery(d);
                 setMode("choose");
               } catch (err) {
                 setError(err instanceof Error ? err.message : t.couldNotUploadFile);
@@ -174,7 +184,7 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
         </div>
       )}
 
-      {mode === "onsite" && customer && shippingAddress && (
+      {mode === "onsite" && customer && delivery && (
         <div className="mt-10">
           {!settled && (
             <button type="button" onClick={() => setMode("choose")} className="mb-4 text-xs text-ink-soft hover:text-brand transition-colors">
@@ -183,9 +193,9 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
           )}
           <MercadoPagoBrick
             items={items}
-            total={total}
+            total={grandTotal}
             customer={customer}
-            shippingAddress={shippingAddress}
+            delivery={delivery}
             designFileUrls={designFileUrls}
             onSettled={() => setSettled(true)}
             lang={lang}

@@ -1,5 +1,29 @@
 import type { Order } from "@/lib/orders";
+import { getCasablancaBranch } from "@/content/shipping";
 import { SITE, waLink } from "@/content/site";
+
+function deliverySection(order: Order): string {
+  if (order.delivery_method === "recoleccion_casablanca") {
+    const branch = order.casablanca_branch ? getCasablancaBranch(order.casablanca_branch) : undefined;
+    return `
+    <h3>Entrega</h3>
+    <p>
+      Recolección en sucursal Casa Blanca (Guadalajara): <strong>${branch?.name ?? order.casablanca_branch ?? ""}</strong><br/>
+      ${branch?.address ?? ""}<br/>
+      ${branch?.hours ?? ""}
+    </p>`;
+  }
+  const addr = order.shipping_address;
+  if (!addr) return "";
+  return `
+    <h3>Dirección de envío</h3>
+    <p>
+      ${addr.street} ${addr.number}<br/>
+      ${addr.neighborhood}<br/>
+      ${addr.city}, ${addr.state}, CP ${addr.zip}<br/>
+      ${addr.references ? `Referencias: ${addr.references}` : ""}
+    </p>`;
+}
 
 function itemsRows(order: Order): string {
   return order.items
@@ -48,7 +72,7 @@ function designFilesSection(order: Order): string {
 }
 
 export function businessNotificationEmail(order: Order): { subject: string; html: string } {
-  const addr = order.shipping_address;
+  const isPickup = order.delivery_method === "recoleccion_casablanca";
   const subject = `🛒 Nueva venta #${order.id.slice(0, 8)} - $${order.total.toFixed(2)} MXN`;
 
   const html = `
@@ -65,13 +89,7 @@ export function businessNotificationEmail(order: Order): { subject: string; html
       ${order.customer_phone ? `Tel: ${order.customer_phone}<br/>` : ""}
     </p>
 
-    <h3>Dirección de envío</h3>
-    <p>
-      ${addr.street} ${addr.number}<br/>
-      ${addr.neighborhood}<br/>
-      ${addr.city}, ${addr.state}, CP ${addr.zip}<br/>
-      ${addr.references ? `Referencias: ${addr.references}` : ""}
-    </p>
+    ${deliverySection(order)}
 
     <h3>Productos</h3>
     ${itemsTable(order)}
@@ -81,8 +99,11 @@ export function businessNotificationEmail(order: Order): { subject: string; html
     <ol>
       <li>Confirmar el diseño/personalización con el cliente antes de imprimir.</li>
       <li>Preparar y empacar el pedido.</li>
-      <li>Generar guía de envío con la dirección de arriba.</li>
-      <li>Avisar al cliente cuando salga a reparto (por WhatsApp).</li>
+      ${
+        isPickup
+          ? "<li>Llevar el paquete a la sucursal Casa Blanca elegida y guardar el comprobante.</li><li>Enviar el comprobante de recolección al cliente por WhatsApp y correo.</li>"
+          : "<li>Generar guía de envío con la dirección de arriba.</li><li>Avisar al cliente cuando salga a reparto (por WhatsApp y correo).</li>"
+      }
     </ol>
   </div>`;
 
@@ -90,7 +111,7 @@ export function businessNotificationEmail(order: Order): { subject: string; html
 }
 
 export function customerConfirmationEmail(order: Order): { subject: string; html: string } {
-  const addr = order.shipping_address;
+  const isPickup = order.delivery_method === "recoleccion_casablanca";
   const orderShort = order.id.slice(0, 8);
   const firstName = order.customer_name.split(" ")[0];
 
@@ -111,14 +132,13 @@ export function customerConfirmationEmail(order: Order): { subject: string; html
     <h3>Resumen de tu pedido</h3>
     ${itemsTable(order)}
 
-    <h3>Se enviará a</h3>
-    <p>
-      ${addr.street} ${addr.number}<br/>
-      ${addr.neighborhood}<br/>
-      ${addr.city}, ${addr.state}, CP ${addr.zip}
-    </p>
+    ${deliverySection(order)}
 
-    <p>Te avisaremos cuando tu pedido salga rumbo a tu domicilio.</p>
+    <p>${
+      isPickup
+        ? "Te avisaremos por WhatsApp y correo en cuanto tu pedido esté listo, junto con el comprobante que necesitas presentar en la sucursal para recogerlo."
+        : "Te avisaremos por WhatsApp y correo cuando tu pedido salga rumbo a tu domicilio."
+    }</p>
 
     <h3>¿Tienes alguna duda?</h3>
     <p>Contáctanos por el medio que prefieras:</p>

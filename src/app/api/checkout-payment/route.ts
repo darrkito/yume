@@ -7,9 +7,10 @@ import {
   markOrderAsFailed,
   markEmailsAsSent,
   validateCustomer,
+  validateDelivery,
   validateDesignFileUrls,
-  validateShippingAddress,
 } from "@/lib/orders";
+import { deliverySurcharge } from "@/content/shipping";
 import { sendOrderEmails } from "@/lib/email";
 import { SITE } from "@/content/site";
 
@@ -22,23 +23,26 @@ export async function POST(req: NextRequest) {
     const body = await req.json();
     const items = validateCartItems(body.items);
     const customer = validateCustomer(body.customer);
-    const shippingAddress = validateShippingAddress(body.shippingAddress);
+    const delivery = validateDelivery(body.delivery);
     const designFileUrls = validateDesignFileUrls(body.designFileUrls);
-    const total = items.reduce((sum, item) => sum + item.price * item.qty, 0);
+    const total = items.reduce((sum, item) => sum + item.price * item.qty, 0) + deliverySurcharge(delivery.method);
     const formData = body.formData ?? {};
 
     if (!formData.payer?.email) {
       return NextResponse.json({ error: "Falta el correo del pagador." }, { status: 400 });
     }
 
-    const order = await createPendingOrder({ customer, shippingAddress, items, total, designFileUrls });
+    const order = await createPendingOrder({ customer, delivery, items, total, designFileUrls });
 
     const payment = new Payment(getMpClient());
     const result = await payment.create({
       body: {
         transaction_amount: total,
         token: formData.token,
-        description: items.map((i) => `${i.name} x${i.qty}`).join(", "),
+        description: [
+          ...items.map((i) => `${i.name} x${i.qty}`),
+          delivery.method === "recoleccion_casablanca" ? "Recolección en sucursal Casa Blanca" : "Envío a domicilio",
+        ].join(", "),
         installments: formData.installments ? Number(formData.installments) : 1,
         payment_method_id: formData.payment_method_id,
         issuer_id: formData.issuer_id,

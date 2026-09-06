@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Preference } from "mercadopago";
 import { getMpClient, validateCartItems } from "@/lib/mercadopago";
-import { createPendingOrder, validateCustomer, validateDesignFileUrls, validateShippingAddress } from "@/lib/orders";
+import { createPendingOrder, validateCustomer, validateDelivery, validateDesignFileUrls } from "@/lib/orders";
+import { deliverySurcharge } from "@/content/shipping";
 import { SITE } from "@/content/site";
 
 export async function POST(req: NextRequest) {
@@ -9,22 +10,32 @@ export async function POST(req: NextRequest) {
     const body = await req.json();
     const items = validateCartItems(body.items);
     const customer = validateCustomer(body.customer);
-    const shippingAddress = validateShippingAddress(body.shippingAddress);
+    const delivery = validateDelivery(body.delivery);
     const designFileUrls = validateDesignFileUrls(body.designFileUrls);
-    const total = items.reduce((sum, item) => sum + item.price * item.qty, 0);
+    const surcharge = deliverySurcharge(delivery.method);
+    const total = items.reduce((sum, item) => sum + item.price * item.qty, 0) + surcharge;
 
-    const order = await createPendingOrder({ customer, shippingAddress, items, total, designFileUrls });
+    const order = await createPendingOrder({ customer, delivery, items, total, designFileUrls });
 
     const preference = new Preference(getMpClient());
     const result = await preference.create({
       body: {
-        items: items.map((item) => ({
-          id: item.slug,
-          title: item.name,
-          quantity: item.qty,
-          unit_price: item.price,
-          currency_id: "MXN",
-        })),
+        items: [
+          ...items.map((item) => ({
+            id: item.slug,
+            title: item.name,
+            quantity: item.qty,
+            unit_price: item.price,
+            currency_id: "MXN",
+          })),
+          {
+            id: delivery.method === "recoleccion_casablanca" ? "recoleccion-casablanca" : "envio-nacional",
+            title: delivery.method === "recoleccion_casablanca" ? "Recolección en sucursal Casa Blanca" : "Envío a domicilio",
+            quantity: 1,
+            unit_price: surcharge,
+            currency_id: "MXN",
+          },
+        ],
         payer: { name: customer.name, email: customer.email },
         external_reference: order.id,
         notification_url: `${SITE.url}/api/mercadopago/webhook`,
