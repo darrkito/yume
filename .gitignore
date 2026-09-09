@@ -37,6 +37,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# service account keys (GSC, etc.)
+yume-507307-*.json
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
