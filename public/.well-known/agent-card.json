@@ -1,7 +1,7 @@
 {
   "protocolVersion": "0.3.0",
   "name": "Yume Assistant",
-  "description": "Answers questions in Spanish or English about Yume's personalized stationery products (medical prescription pads, custom stickers), pricing, and coverage area from Guadalajara, Jalisco, Mexico, with nationwide shipping, and helps request a quote via WhatsApp.",
+  "description": "Answers questions in Spanish or English about Yume's personalized stationery products (medical prescription pads, custom stickers), pricing, and coverage area from Guadalajara, Jalisco, Mexico, with nationwide shipping, points to relevant blog guides, and helps request a quote via WhatsApp.",
   "url": "https://studioyume.mx/a2a",
   "preferredTransport": "JSONRPC",
   "supportedInterfaces": [
@@ -30,14 +30,17 @@
     {
       "id": "answer-questions",
       "name": "Answer questions",
-      "description": "Answer questions about products, pricing, and coverage area, in Spanish or English.",
-      "tags": ["faq", "pricing"],
+      "description": "Answer questions about products, pricing, coverage area, and point to relevant blog guides (e.g. pet stickers, prescription requirements, vinyl vs. paper), in Spanish or English.",
+      "tags": ["faq", "pricing", "guides"],
       "examples": [
         "¿Cuánto cuesta el recetario médico personalizado?",
         "¿Hacen envíos fuera de Guadalajara?",
         "¿Cómo pago en línea?",
+        "¿Puedo pedir stickers de mi mascota?",
+        "¿Qué debe llevar una receta médica?",
         "How much are the custom logo stickers?",
-        "Do you ship outside Guadalajara?"
+        "Do you ship outside Guadalajara?",
+        "What should a medical prescription include?"
       ],
       "inputModes": ["text/plain"],
       "outputModes": ["text/plain", "application/json"]

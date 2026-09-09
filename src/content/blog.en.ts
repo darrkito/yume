@@ -246,6 +246,288 @@ export const blogPostsEn: BlogPost[] = [
     relatedProductSlugs: [],
     quoteMessage: "Hi, I'm interested in getting a quote for custom event invitations.",
   },
+  {
+    slug: BLOG_SLUG_EN["stickers-personalizados-para-mascotas"],
+    title: "Custom Pet Stickers: Turn Your Dog or Cat Into a Sticker",
+    metaTitle: "Custom Pet Stickers",
+    description:
+      "How to order a die-cut sticker from a photo of your dog or cat: what photo to send, what the final result looks like, and how much it costs at Yume.",
+    category: "Guides",
+    publishedAt: "2026-09-09",
+    intro:
+      "One of the most common requests we get for Waterproof Vinyl Stickers isn't a logo or a cartoon character — it's a photo of someone's pet. Turning your dog or cat into a die-cut sticker of its silhouette is one of our most common orders, and one of the easiest to quote. Here's how the process works.",
+    sections: [
+      {
+        heading: "What photo to send",
+        body: [
+          "You don't need a professional photo — just one where your pet is fully visible, well lit, and not blocked by anything else. The clearer the outline, the cleaner the die cut around the silhouette turns out.",
+          "If you have a few photos of the same pet, send us all of them when requesting a quote — sometimes one works better than another for the cutout, so we can pick the best one together before building the digital proof.",
+        ],
+      },
+      {
+        heading: "What the result looks like",
+        body: [
+          "The sticker is die-cut to the exact shape of your pet's silhouette (or to the full photo, if you'd rather keep a background or frame) — not a generic square or circle, which is what makes it a die-cut vinyl sticker. You can see real examples of pets already turned into stickers in our gallery.",
+          "Before printing, we send you a digital proof of the final result so you can confirm the cut and the colors came out the way you expected — same as with any other design we work on.",
+        ],
+      },
+      {
+        heading: "Quantity and price",
+        body: [
+          "Vinyl stickers are sold by piece count, not by sheet: the minimum is 40 pieces for $100, and every extra 10 pieces get a 20% discount — 50 pieces come out to $120, 60 to $140.",
+          "It's the same premium vinyl, resistant to water, sun, and scratches, that we use for any other custom design, so it holds up well on water bottles, laptops, or wherever you want to stick it.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable"],
+  },
+  {
+    slug: BLOG_SLUG_EN["recetario-medico-con-diseno-vs-sin-diseno"],
+    title: "Prescription Pad With Design vs. Without Design: Which One to Order?",
+    metaTitle: "Prescription Pad With vs. Without Design",
+    description:
+      "The real difference between ordering your custom medical prescription pad with logo and design work included or print-only, their prices, and when each option makes sense.",
+    category: "Guides",
+    publishedAt: "2026-09-09",
+    intro:
+      "When you request a quote for the custom medical prescription pad at Yume, you'll see two options at different prices: \"without design\" and \"with design.\" It's not just a price difference — it's a real difference in the work we do for you. Here's what each one includes so you can pick the right one.",
+    sections: [
+      {
+        heading: "What each option includes",
+        body: [
+          "\"Without design\" ($320) is for when you already have your letterhead put together — an editable file with your logo, your details, and the layout you want — and you just need us to print it on the 100 Half-Letter sheets of 90 gr Bond paper.",
+          "\"With design\" ($400) includes designing the letterhead with you from scratch: you give us your details (name, professional license number, specialty, practice address) and we put together a visual proposal, which we adjust with you until it looks the way you want, before printing.",
+        ],
+      },
+      {
+        heading: "When each one makes sense",
+        body: [
+          "If you already worked out your letterhead with a designer or have it from a previous print shop in an editable format, \"without design\" is the faster, cheaper option — we're just producing what you've already sorted out.",
+          "If this is your first custom prescription pad, your old one looks outdated, or you simply don't have the editable file on hand, \"with design\" saves you from having to sort that part out yourself or hire someone else before you can print.",
+        ],
+      },
+      {
+        heading: "The process is the same either way",
+        body: [
+          "Whichever option you choose, the approval step is the same: before sending it to production, we send you a digital proof of the final letterhead, so you can confirm your license number, phone number, and every other detail are correct.",
+          "You can switch options during the quoting process if, once you see how it works, you'd rather have us design it — just let us know on WhatsApp before approving the digital proof.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["recetario-medico-personalizado"],
+  },
+  {
+    slug: BLOG_SLUG_EN["datos-obligatorios-receta-medica-mexico"],
+    title: "What a Medical Prescription Must Include in Mexico: A General Guide",
+    metaTitle: "What a Medical Prescription Must Include in Mexico",
+    description:
+      "The requirements and information a medical prescription typically needs to include in Mexico — on the letterhead, for the patient, and for the medication — and why it's worth having it preprinted on your pad.",
+    category: "Guides",
+    publishedAt: "2026-09-09",
+    intro:
+      "If you're about to order your first custom prescription pad, it's normal to wonder exactly what information it needs to include. This is general information based on common practice at medical offices in Mexico — it doesn't replace whatever your professional board, state, or institution specifically requires, so it's always worth confirming with them before printing.",
+    sections: [
+      {
+        heading: "What goes on your letterhead",
+        body: [
+          "At the top of the prescription you'll typically find: your full name, specialty, professional license number (and specialty license, if applicable), and your practice's contact details — address, phone, and, if you want, office hours.",
+          "These are exactly the details that get preprinted on the letterhead when you order a custom pad — so you don't have to write them by hand on every single prescription, only what changes per patient.",
+        ],
+      },
+      {
+        heading: "What gets filled in per patient",
+        body: [
+          "In the body of the prescription, you add, per patient: their full name, the date of the visit, the diagnosis or reason for the visit (if that's part of how you work), the medication prescribed with dosage and treatment duration, and your signature.",
+          "Some practices also add the patient's age or weight when it's relevant to dosage, especially in pediatric practices.",
+        ],
+      },
+      {
+        heading: "Why it's worth preprinting the fixed details",
+        body: [
+          "Every time you write your license number or your practice's phone number by hand, there's a chance for a mistake or for it to come out illegible — which can cause problems if the patient takes the prescription to a pharmacy that checks those details.",
+          "Having the letterhead preprinted solves that once and for all: you approve the design a single time, and from then on, every prescription you fill by hand already carries your fixed details, correct and legible.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["recetario-medico-personalizado"],
+  },
+  {
+    slug: BLOG_SLUG_EN["yume-vs-imprentas-online-stickers"],
+    title: "Yume vs. Other Online Sticker Print Shops: A Real Price Comparison",
+    metaTitle: "Yume vs. Other Sticker Print Shops",
+    description:
+      "We compared the per-piece price and minimum order of Yume against real Mexican custom-sticker print shops — using real public pricing data.",
+    category: "Guides",
+    publishedAt: "2026-09-09",
+    intro:
+      "Before requesting a quote for stickers, it's worth knowing whether the price you're being offered is actually competitive. In September 2026 we checked the public prices of several Mexican custom-sticker print shops — here are the real numbers, compared against Yume's.",
+    sections: [
+      {
+        heading: "How we compared",
+        body: [
+          "We took the public price each print shop lists on its site for custom stickers and converted it to a per-piece price, while also noting the minimum order in pesos — that makes the comparison fair between businesses that sell by sheet, by roll, or by piece count.",
+          "Every price is the one published directly on each competitor's site as of that date — none of them are estimates.",
+        ],
+      },
+      {
+        heading: "The numbers",
+        body: [
+          "Among the Mexican custom-sticker print shops we reviewed, per-piece price ranges from $1.83 to $11.00 MXN, with minimum orders ranging from $319 to $550 MXN — in some cases the real minimum is only reached by buying several full sheets at once.",
+          "Yume — Custom Logo Stickers: $2.00 to $1.80 per piece, minimum $100 (50 pieces). Yume — Waterproof Vinyl Stickers: $2.50 to $2.20 per piece, minimum $100 (40 pieces).",
+        ],
+      },
+      {
+        heading: "What this means for you",
+        body: [
+          "On a per-piece basis, Yume is among the lowest-priced options we reviewed — only one of the other options we checked comes close, and only if you buy the equivalent of 2 full sheets at once.",
+          "The clearest difference is in minimum order size: with Yume you can get started for $100 MXN, while the competitors we reviewed require a minimum between $319 and $550 — so if you just want to try a small batch, Yume lets you do that without committing to a large order.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
+  },
+  {
+    slug: BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"],
+    title: "Vinyl vs. Paper: Why Your Stickers Should Be Vinyl",
+    metaTitle: "Vinyl vs. Paper Stickers",
+    description:
+      "The real difference between a vinyl sticker and a paper sticker — resistance to water, sun, and scratches — and why at Yume we work exclusively with vinyl.",
+    category: "Guides",
+    publishedAt: "2026-09-09",
+    intro:
+      "If you've never ordered custom stickers before, it's easy to miss the difference between vinyl and paper until one gets wet, fades in the sun, or tears when you peel it. Here's the real difference, and why at Yume we work exclusively with vinyl.",
+    sections: [
+      {
+        heading: "The difference isn't just the material",
+        body: [
+          "A regular paper sticker can get wet, fade in the sun, and tear easily when peeled or rubbed against something — it works fine for short-lived, indoor use, or anywhere the weather won't get to it.",
+          "Vinyl, on the other hand, is a flexible plastic material that resists water, sun, and scratches — it holds up well on bottles that get washed, laptops that travel with you, skateboards, or any surface that gets wet or spends time outdoors.",
+        ],
+      },
+      {
+        heading: "Where the difference matters most",
+        body: [
+          "If the sticker goes on something that gets wet often (a water bottle, packaging that goes in the fridge), that sits in the sun (a car, a window), or gets handled a lot (a laptop, a suitcase), vinyl is the option that actually lasts without fading or peeling off.",
+          "For something used once, indoors — like a detail inside a gift box that will never touch water or sun — the difference matters less, but even there, vinyl looks and feels more premium to the touch.",
+        ],
+      },
+      {
+        heading: "Why at Yume we only work with vinyl",
+        body: [
+          "Both of our sticker products — Custom Logo Stickers and Waterproof Vinyl Stickers — are made from premium die-cut vinyl, not paper. We'd rather offer one material we know holds up than a cheaper option that looks fine at first and deteriorates fast.",
+          "That way, whether the sticker ends up on your brand's packaging, your laptop, or a package you're shipping to a customer, you know it'll arrive and hold up in the same condition.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable"],
+  },
+  {
+    slug: BLOG_SLUG_EN["menu-de-boda-personalizado"],
+    title: "Custom Wedding Menus: How to Order Yours",
+    metaTitle: "Custom Wedding Menus",
+    description:
+      "What information you need ready to quote your wedding's custom-designed menu, and how the design and approval process works before printing.",
+    category: "Guides",
+    publishedAt: "2026-09-09",
+    intro:
+      "The menu is one of those wedding pieces guests hold in their hand through the whole dinner — it's worth having it match the rest of the event's stationery instead of being generic. Here's how the process works to order yours custom at Yume.",
+    sections: [
+      {
+        heading: "What information we need",
+        body: [
+          "To quote, we need: the number of menus (usually one per guest or per table, depending on how you want to set it up), the exact text for each one (the dishes, in serving order), and whether you have a style or visual reference in mind — especially if you want it to match the invitations or other stationery you're already ordering for the same event.",
+          "It also helps to know the wedding date and whether the menu will stand alone (one card per place setting) or come together with other details, like the guest's name or assigned table.",
+        ],
+      },
+      {
+        heading: "The design and approval process",
+        body: [
+          "With your details, we put together a design proposal and send it to you as a digital proof. You can request adjustments before approving it — it's much easier to fix the order of the dishes or a color at this stage than after the menus are already printed.",
+          "Once you approve the final design, it goes to production. If you're also ordering invitations or other stationery for the same wedding, everything can be coordinated under the same design line so it reads as one set, not separate pieces.",
+        ],
+      },
+      {
+        heading: "When to start requesting a quote",
+        body: [
+          "Since the menu is usually confirmed once your catering is locked in, it tends to get quoted a bit later than invitations — but it's still worth doing with time to spare, so there's room to adjust the design without rushing production or shipping.",
+          "Reach out with the type of event, the approximate date, and the quantity you estimate you'll need, and we'll build the quote from there.",
+        ],
+      },
+    ],
+    relatedProductSlugs: [],
+    quoteMessage: "Hi, I'm interested in getting a quote for custom wedding menus.",
+  },
+  {
+    slug: BLOG_SLUG_EN["tarjetas-de-presentacion-consultorio"],
+    title: "Business Cards for Your Practice: How to Order Them Alongside Your Prescription Pad",
+    metaTitle: "Business Cards for Your Practice",
+    description:
+      "What information you need ready to quote business cards for your medical practice, and why it's worth ordering them alongside your custom prescription pad.",
+    category: "Guides",
+    publishedAt: "2026-09-09",
+    intro:
+      "If you've already ordered your custom medical prescription pad, it's common to want a matching business card — it's one of the first things a patient takes away from the visit, along with the prescription. Here's how the process works to quote yours at Yume.",
+    sections: [
+      {
+        heading: "What information we need",
+        body: [
+          "The same details your prescription pad uses: full name, specialty, professional license number (and specialty license, if applicable), and your practice's contact details — address, phone, and, if you want, social media or email. Also the quantity of cards you need.",
+          "If you already have your letterhead or logo from an earlier piece (like the prescription pad), let us know when requesting a quote — we can reuse the same design on the card so both pieces look consistent instead of building something new from scratch.",
+        ],
+      },
+      {
+        heading: "The design and approval process",
+        body: [
+          "With your details, we put together a design proposal and send you a digital proof before printing. You can request adjustments — it's much easier to fix your license number or phone number at this stage than after the cards are already printed.",
+          "Once you approve the final design, it goes to production. The process is the same whether you order the card on its own or together with your prescription pad in the same quote.",
+        ],
+      },
+      {
+        heading: "Why order it alongside your prescription pad",
+        body: [
+          "Having the business card and the prescription pad share the same letterhead — same typography, same colors, same details — makes your practice look more consistent without having to redesign anything separately. It's the same logic behind having a professionally consistent look across all of your stationery.",
+          "If you don't have your custom prescription pad yet, you can quote both together from scratch and we'll put together a single letterhead design that works for both pieces.",
+        ],
+      },
+    ],
+    relatedProductSlugs: [],
+    quoteMessage: "Hi, I'm interested in getting a quote for business cards for my medical practice.",
+  },
+  {
+    slug: BLOG_SLUG_EN["yume-vs-imprentas-recetarios-medicos"],
+    title: "Yume vs. Other Medical Prescription Pad Print Shops: A Real Price Comparison",
+    metaTitle: "Yume vs. Other Prescription Pad Print Shops",
+    description:
+      "We compared the price and what's included in Yume's custom medical prescription pad against real Mexican print shops — using real public pricing data.",
+    category: "Guides",
+    publishedAt: "2026-09-09",
+    intro:
+      "Before requesting a quote for your custom medical prescription pad, it's worth knowing whether the price you're being offered is actually competitive — and more importantly, what it includes. In September 2026 we checked the public prices of several Mexican medical-prescription-pad print shops — here are the real numbers, compared against Yume's.",
+    sections: [
+      {
+        heading: "How we compared",
+        body: [
+          "We took the public price each print shop lists on its site for a 100-sheet, Half-Letter custom medical prescription pad, and noted whether the price includes letterhead design work — not just printing.",
+          "Every price is the one published directly on each competitor's site as of that date — none of them are estimates.",
+        ],
+      },
+      {
+        heading: "The numbers",
+        body: [
+          "Among the Mexican prescription-pad print shops we reviewed, prices range from $300 to $900 MXN per batch (from 100 sheets to a full block), on Bond or Opalina paper — and none of the options we checked clarifies or includes letterhead design work as part of the price; in some cases it isn't even mentioned.",
+          "Yume: $320 MXN without design (if you already have your letterhead ready) or $400 MXN with design included (we build it with you from scratch), on 90 gr Bond paper, with a digital proof approved before printing.",
+        ],
+      },
+      {
+        heading: "What this means for you",
+        body: [
+          "On base price, Yume is among the most affordable options we reviewed — but none of the others offer design work as part of the price. We didn't find a single print shop advertising \"we design your letterhead with you\" included in the cost, which is exactly what Yume's $400 tier covers.",
+          "If you already have your letterhead sorted, Yume's price is already among the lowest we reviewed. If you don't, the with-design tier saves you from having to sort that out yourself before you can print — something none of the competitors we reviewed include in their public pricing.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["recetario-medico-personalizado"],
+  },
 ];
 
 export function getBlogPostEn(slug: string) {

@@ -63,8 +63,17 @@ const TOOLS = [
   },
   {
     name: "request_quote",
-    description: "Get a link to request a real quote from Yume via WhatsApp.",
-    inputSchema: { type: "object", properties: { ...LANG_PARAM }, additionalProperties: false },
+    description:
+      "Get a link to request a real quote from Yume via WhatsApp. Pass productSlug or blogSlug to personalize the message to that specific product/topic (same pattern the site's own quote buttons use) — omit both only when no product or post is in context.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        productSlug: { type: "string", description: "Product slug (ES or EN) to personalize the quote message, e.g. recetario-medico-personalizado" },
+        blogSlug: { type: "string", description: "Blog post slug (ES or EN) for quote-only topics (e.g. custom tattoos, invitations) to personalize the message" },
+        ...LANG_PARAM,
+      },
+      additionalProperties: false,
+    },
   },
 ];
 
@@ -134,11 +143,34 @@ function callTool(name: string, args: Record<string, unknown>) {
       return { ...post, url: lang === "en" ? `${SITE.url}/en/blog/${post.slug}` : `${SITE.url}/blog/${post.slug}` };
     }
 
-    case "request_quote":
+    case "request_quote": {
+      const productSlugRaw = args.productSlug ? String(args.productSlug) : undefined;
+      if (productSlugRaw) {
+        const esSlug = PRODUCT_SLUG_EN[productSlugRaw] ? productSlugRaw : (Object.keys(PRODUCT_SLUG_EN).find((k) => PRODUCT_SLUG_EN[k] === productSlugRaw) ?? productSlugRaw);
+        const product = getProduct(esSlug);
+        if (product) {
+          const name = lang === "en" ? (productsEn[esSlug]?.name ?? product.name) : product.name;
+          const message =
+            lang === "en"
+              ? `Hi, I'm interested in getting a quote for: ${name} ($${product.price.toFixed(2)} MXN). Could you give me more information?`
+              : `Hola, me interesa cotizar: ${name} ($${product.price.toFixed(2)} MXN). ¿Podrían darme más información?`;
+          return { whatsappUrl: waLink(message), whatsappNumber: SITE.whatsappNumber };
+        }
+      }
+
+      const blogSlugRaw = args.blogSlug ? String(args.blogSlug) : undefined;
+      if (blogSlugRaw) {
+        const post = lang === "en" ? getBlogPostEn(blogSlugRaw) : getBlogPost(blogSlugRaw);
+        if (post?.quoteMessage) {
+          return { whatsappUrl: waLink(post.quoteMessage), whatsappNumber: SITE.whatsappNumber };
+        }
+      }
+
       return {
         whatsappUrl: waLink(lang === "en" ? "Hi, I'm interested in getting a quote for a Yume product." : "Hola, me interesa cotizar un producto de Yume."),
         whatsappNumber: SITE.whatsappNumber,
       };
+    }
 
     default:
       throw { code: -32602, message: `Unknown tool: ${name}` };

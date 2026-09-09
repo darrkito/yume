@@ -267,6 +267,288 @@ export const blogPosts: BlogPost[] = [
     relatedProductSlugs: [],
     quoteMessage: "Hola, me interesa cotizar invitaciones personalizadas para un evento.",
   },
+  {
+    slug: "stickers-personalizados-para-mascotas",
+    title: "Stickers personalizados para mascotas: el sticker de tu perro o gato",
+    metaTitle: "Stickers personalizados para mascotas",
+    description:
+      "Cómo pedir un sticker troquelado con la foto de tu perro o gato: qué imagen enviar, cómo se ve el resultado final y cuánto cuesta en Yume.",
+    category: "Guías",
+    publishedAt: "2026-09-09",
+    intro:
+      "Una de las peticiones que más vemos en Stickers Vinil Impermeable no es un logo ni un personaje de caricatura — es la foto de una mascota. Convertir a tu perro o gato en un sticker troquelado con su silueta es de los pedidos más comunes y más sencillos de cotizar. Así funciona el proceso.",
+    sections: [
+      {
+        heading: "Qué foto enviar",
+        body: [
+          "No necesitas una foto profesional — basta con que la mascota se vea completa, con buena luz y sin que otra cosa le tape el cuerpo. Entre mejor definido el contorno, más limpio sale el corte troquelado alrededor de la silueta.",
+          "Si tienes varias fotos de la misma mascota, mándanoslas todas al cotizar — a veces una funciona mejor que otra para el recorte, y así elegimos juntos la mejor antes de armar la prueba digital.",
+        ],
+      },
+      {
+        heading: "Cómo se ve el resultado",
+        body: [
+          "El sticker se corta a la forma exacta de la silueta de tu mascota (o de la foto completa, si prefieres mantener un fondo o marco), no en un cuadrado o círculo genérico — por eso hablamos de vinil troquelado. Puedes ver ejemplos reales de mascotas ya convertidas en sticker en nuestra galería.",
+          "Antes de imprimir te mandamos una prueba digital del resultado final, para que confirmes que el corte y los colores quedaron como esperabas — igual que con cualquier otro diseño que trabajamos.",
+        ],
+      },
+      {
+        heading: "Cantidad y precio",
+        body: [
+          "Los stickers de vinil se venden por cantidad de piezas, no por planilla: el mínimo son 40 piezas por $100, y cada 10 piezas extra tienen 20% de descuento — 50 piezas quedan en $120, 60 en $140.",
+          "Es el mismo vinil premium resistente al agua, al sol y a rayones que usamos para cualquier otro diseño personalizado, así que aguanta bien en botellas de agua, laptops o donde quieras pegarlo.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable"],
+  },
+  {
+    slug: "recetario-medico-con-diseno-vs-sin-diseno",
+    title: "Recetario médico con diseño vs. sin diseño: ¿cuál te conviene?",
+    metaTitle: "Recetario médico con diseño vs. sin diseño",
+    description:
+      "La diferencia real entre pedir tu recetario médico personalizado con logo y diseño incluido o solo con impresión, sus precios y cuándo conviene cada opción.",
+    category: "Guías",
+    publishedAt: "2026-09-09",
+    intro:
+      "Al cotizar el recetario médico personalizado en Yume vas a ver dos opciones con precio distinto: \"sin diseño\" y \"con diseño\". No es solo una diferencia de precio — es una diferencia real en el trabajo que hacemos por ti. Aquí te explicamos qué incluye cada una para que elijas la que te conviene.",
+    sections: [
+      {
+        heading: "Qué incluye cada opción",
+        body: [
+          "\"Sin diseño\" ($320) es para cuando ya tienes el membrete armado — un archivo editable con tu logo, tus datos y el layout que quieres — y solo necesitas que lo imprimamos en las 100 hojas Media Carta con papel Bond 90 gr.",
+          "\"Con diseño\" ($400) incluye que diseñemos el membrete contigo desde cero: nos das tus datos (nombre, cédula profesional, especialidad, dirección del consultorio) y armamos una propuesta visual, que ajustamos contigo hasta que quede como quieres, antes de imprimir.",
+        ],
+      },
+      {
+        heading: "Cuándo conviene cada una",
+        body: [
+          "Si ya trabajaste tu membrete con un diseñador o lo tienes de una imprenta anterior en formato editable, \"sin diseño\" es la opción más rápida y barata — nosotros solo producimos lo que ya tienes resuelto.",
+          "Si es tu primer recetario personalizado, si el que tenías se ve anticuado, o simplemente no tienes el archivo editable a la mano, \"con diseño\" te ahorra tener que resolver esa parte por tu cuenta o contratar a alguien más antes de poder imprimir.",
+        ],
+      },
+      {
+        heading: "El proceso es el mismo en ambos casos",
+        body: [
+          "Elijas la opción que elijas, el paso de aprobación es igual: antes de mandar a producción te enviamos una prueba digital del membrete final, así confirmas que la cédula, el teléfono y el resto de tus datos estén correctos.",
+          "Puedes cambiar de opción durante la cotización si al ver el proceso decides que prefieres que lo diseñemos nosotros — solo dínoslo por WhatsApp antes de aprobar la prueba digital.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["recetario-medico-personalizado"],
+  },
+  {
+    slug: "datos-obligatorios-receta-medica-mexico",
+    title: "Qué debe llevar una receta médica en México: guía general",
+    metaTitle: "Qué debe llevar una receta médica en México",
+    description:
+      "Los requisitos y datos que normalmente debe incluir una receta médica en México — de tu membrete, del paciente y del medicamento — y por qué conviene tenerlos preimpresos en tu recetario.",
+    category: "Guías",
+    publishedAt: "2026-09-09",
+    intro:
+      "Si estás por pedir tu primer recetario personalizado, es normal preguntarte qué datos debe llevar exactamente. Esta es información general basada en lo que se acostumbra en consultorios de México — no sustituye lo que tu colegio de médicos, tu estado o la institución donde trabajas exija de forma específica, así que siempre vale la pena confirmarlo con ellos antes de mandar a imprimir.",
+    sections: [
+      {
+        heading: "Datos de tu membrete",
+        body: [
+          "En la parte de arriba de la receta normalmente va: tu nombre completo, especialidad, número de cédula profesional (y cédula de especialidad si aplica), y los datos de contacto de tu consultorio — dirección, teléfono y, si quieres, horario de consulta.",
+          "Estos son justo los datos que van preimpresos en el membrete cuando pides un recetario personalizado — así no tienes que escribirlos a mano en cada receta, solo lo que cambia con cada paciente.",
+        ],
+      },
+      {
+        heading: "Datos que se llenan por paciente",
+        body: [
+          "En el cuerpo de la receta se agrega, ya con cada paciente: su nombre completo, la fecha de la consulta, el diagnóstico o motivo (si tu forma de trabajar lo incluye), el medicamento indicado con dosis y duración del tratamiento, y tu firma.",
+          "Algunos consultorios agregan también la edad o el peso del paciente cuando es relevante para la dosis, sobre todo en consultorios pediátricos.",
+        ],
+      },
+      {
+        heading: "Por qué conviene preimprimir lo fijo",
+        body: [
+          "Cada vez que escribes a mano tu cédula profesional o el teléfono del consultorio hay una oportunidad de error o de que el dato salga ilegible — algo que puede causar problemas si el paciente lleva la receta a una farmacia que valida esos datos.",
+          "Tener el membrete preimpreso resuelve eso de una vez: apruebas el diseño una sola vez y, desde ahí, cada receta que llenas a mano ya trae tus datos fijos correctos y legibles.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["recetario-medico-personalizado"],
+  },
+  {
+    slug: "yume-vs-imprentas-online-stickers",
+    title: "Yume vs. otras imprentas online de stickers: comparación real de precios",
+    metaTitle: "Yume vs. otras imprentas de stickers",
+    description:
+      "Comparamos el precio por pieza y el mínimo de compra de Yume contra imprentas mexicanas reales de stickers personalizados — con datos reales de precios públicos.",
+    category: "Guías",
+    publishedAt: "2026-09-09",
+    intro:
+      "Antes de cotizar tus stickers vale la pena saber si el precio que te están dando es competitivo. En septiembre de 2026 revisamos los precios públicos de varias imprentas mexicanas de stickers personalizados — aquí están los números reales, comparados contra los de Yume.",
+    sections: [
+      {
+        heading: "Cómo comparamos",
+        body: [
+          "Tomamos el precio público que cada imprenta muestra en su sitio para stickers personalizados y lo convertimos a precio por pieza, además de anotar el mínimo de compra en pesos — así la comparación es justa entre negocios que venden por planilla, por rollo o por cantidad de piezas.",
+          "Todos los precios son los publicados directamente en el sitio de cada competidor a esa fecha; no son estimaciones.",
+        ],
+      },
+      {
+        heading: "Los números",
+        body: [
+          "Entre las imprentas mexicanas de stickers personalizados que revisamos, el precio por pieza va de $1.83 a $11.00 MXN, con mínimos de compra que van de $319 a $550 MXN — en algunos casos el mínimo real solo se alcanza comprando varias planillas completas de una vez.",
+          "Yume — Etiquetas Logo Personalizado: de $2.00 a $1.80 por pieza, mínimo $100 (50 piezas). Yume — Stickers Vinil Impermeable: de $2.50 a $2.20 por pieza, mínimo $100 (40 piezas).",
+        ],
+      },
+      {
+        heading: "Qué significa esto para ti",
+        body: [
+          "En precio por pieza, Yume está entre los más bajos del mercado que revisamos — solo una de las opciones revisadas se acerca, y únicamente si compras el equivalente a 2 planillas completas de una vez.",
+          "La diferencia más clara está en el mínimo de compra: con Yume puedes entrar desde $100 MXN, mientras que la competencia revisada pide entre $319 y $550 mínimo — así que si solo quieres probar con poca cantidad, Yume te deja hacerlo sin comprometerte a un pedido grande.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
+  },
+  {
+    slug: "stickers-vinil-vs-papel-diferencias",
+    title: "Vinil vs. papel: por qué tus stickers deberían ser de vinil",
+    metaTitle: "Stickers de vinil vs. de papel",
+    description:
+      "La diferencia real entre un sticker de vinil y uno de papel — resistencia al agua, al sol y a rayones — y por qué en Yume solo trabajamos vinil premium.",
+    category: "Guías",
+    publishedAt: "2026-09-09",
+    intro:
+      "Si nunca has pedido stickers personalizados, es fácil no notar la diferencia entre vinil y papel hasta que uno se moja, se despinta con el sol o se rompe al despegarlo. Aquí te explicamos la diferencia real y por qué en Yume trabajamos exclusivamente con vinil.",
+    sections: [
+      {
+        heading: "La diferencia no es solo el material",
+        body: [
+          "Un sticker de papel común se puede mojar, decolorar con el sol y rasgar fácilmente al despegarlo o al rozar con algo — funciona bien para uso interior, de corta duración, o donde no le va a dar el clima.",
+          "El vinil, en cambio, es un material plástico flexible que resiste el agua, el sol y los rayones — aguanta bien en botellas que se lavan, laptops que viajan contigo, patinetas o cualquier superficie que se moja o se expone al exterior.",
+        ],
+      },
+      {
+        heading: "En qué casos se nota más la diferencia",
+        body: [
+          "Si el sticker va en algo que se moja seguido (una botella de agua, un empaque que se refrigera), que sale al sol (un carro, una ventana) o que se manipula mucho (una laptop, una maleta), el vinil es la opción que realmente dura sin decolorarse ni despegarse.",
+          "Para algo que se usa una sola vez y en interior — como un detalle dentro de una caja de regalo que no va a tocar agua ni sol — la diferencia se nota menos, pero incluso ahí el vinil se ve y se siente más premium al tacto.",
+        ],
+      },
+      {
+        heading: "Por qué en Yume trabajamos solo vinil",
+        body: [
+          "Nuestros dos productos de sticker — Etiquetas Logo Personalizado y Stickers Vinil Impermeable — están hechos en vinil premium con corte troquelado, no en papel. Preferimos ofrecer un solo material que sabemos que aguanta, en vez de una opción más barata que se ve bien al inicio pero se deteriora rápido.",
+          "Así, sin importar si el sticker va en el empaque de tu marca, en tu laptop o en el paquete que le envías a un cliente, sabes que va a llegar y va a durar en las mismas condiciones.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable"],
+  },
+  {
+    slug: "menu-de-boda-personalizado",
+    title: "Menú de boda personalizado: cómo pedir el tuyo",
+    metaTitle: "Menú de boda personalizado",
+    description:
+      "Qué información necesitas tener lista para cotizar el menú de tu boda con diseño personalizado, y cómo funciona el proceso de diseño y aprobación antes de imprimir.",
+    category: "Guías",
+    publishedAt: "2026-09-09",
+    intro:
+      "El menú es una de esas piezas de la boda que los invitados tienen en la mano toda la cena — vale la pena que combine con el resto de la papelería del evento, en vez de ser genérico. Así funciona el proceso para pedir el tuyo personalizado en Yume.",
+    sections: [
+      {
+        heading: "Qué información necesitamos",
+        body: [
+          "Para cotizar, necesitamos: la cantidad de menús (normalmente uno por invitado o por mesa, según cómo lo quieras montar), el texto exacto que va en cada uno (los platillos, en el orden que se sirven), y si tienes una idea de estilo o referencia visual — sobre todo si quieres que combine con las invitaciones u otra papelería que ya estés pidiendo para el mismo evento.",
+          "También ayuda saber la fecha de la boda y si el menú va a ir solo (una tarjeta por lugar) o junto con otros elementos como el nombre del invitado o la mesa asignada.",
+        ],
+      },
+      {
+        heading: "El proceso de diseño y aprobación",
+        body: [
+          "Con tus datos armamos una propuesta de diseño y te la mandamos como prueba digital. Puedes pedir ajustes antes de aprobarla — es más fácil corregir el orden de los platillos o un color en esta etapa que después de que los menús ya están impresos.",
+          "Una vez que apruebas el diseño final, se manda a producción. Si además estás pidiendo invitaciones u otra papelería para la misma boda, se puede coordinar todo bajo la misma línea de diseño para que se vea como un solo set, no piezas sueltas.",
+        ],
+      },
+      {
+        heading: "Cuándo empezar a cotizar",
+        body: [
+          "Como el menú normalmente se confirma cuando ya tienes el banquete cerrado, suele cotizarse un poco después que las invitaciones — pero igual conviene hacerlo con tiempo, para que haya margen de ajustar el diseño sin apurar la producción ni el envío.",
+          "Escríbenos con el tipo de evento, la fecha aproximada y la cantidad que estimas necesitar, y armamos la cotización desde ahí.",
+        ],
+      },
+    ],
+    relatedProductSlugs: [],
+    quoteMessage: "Hola, me interesa cotizar menús de boda personalizados.",
+  },
+  {
+    slug: "tarjetas-de-presentacion-consultorio",
+    title: "Tarjetas de presentación para tu consultorio: cómo pedirlas junto con tu recetario",
+    metaTitle: "Tarjetas de presentación para tu consultorio",
+    description:
+      "Qué información necesitas tener lista para cotizar tarjetas de presentación para tu consultorio médico, y por qué conviene pedirlas junto con tu recetario personalizado.",
+    category: "Guías",
+    publishedAt: "2026-09-09",
+    intro:
+      "Si ya pediste tu recetario médico personalizado, es común querer una tarjeta de presentación con el mismo diseño — es lo primero que el paciente se lleva de la consulta, junto con la receta. Así funciona el proceso para cotizar la tuya en Yume.",
+    sections: [
+      {
+        heading: "Qué información necesitamos",
+        body: [
+          "Los mismos datos que usa tu recetario: nombre completo, especialidad, número de cédula profesional (y de especialidad, si aplica), y los datos de contacto de tu consultorio — dirección, teléfono, y si quieres, redes sociales o correo. También la cantidad de tarjetas que necesitas.",
+          "Si ya tienes tu membrete o logo de una pieza anterior (como el recetario), dínoslo al cotizar — podemos usar el mismo diseño en la tarjeta para que ambas piezas se vean consistentes, en vez de armar algo nuevo desde cero.",
+        ],
+      },
+      {
+        heading: "El proceso de diseño y aprobación",
+        body: [
+          "Con tus datos armamos una propuesta de diseño y te mandamos una prueba digital antes de imprimir. Puedes pedir ajustes — es más fácil corregir la cédula profesional o el teléfono en esta etapa que después de tener las tarjetas impresas.",
+          "Una vez que apruebas el diseño final, se manda a producción. El proceso es el mismo si pides la tarjeta sola o junto con tu recetario en la misma cotización.",
+        ],
+      },
+      {
+        heading: "Por qué pedirlas junto con tu recetario",
+        body: [
+          "Tener la tarjeta y el recetario con el mismo membrete — misma tipografía, mismos colores, mismos datos — hace que tu consultorio se vea más consistente sin que tengas que rediseñar nada por separado. Es la misma lógica de imagen profesional que ya aplica al resto de tu papelería.",
+          "Si todavía no tienes tu recetario personalizado, puedes cotizar ambos juntos desde cero y armamos un solo diseño de membrete que funcione para las dos piezas.",
+        ],
+      },
+    ],
+    relatedProductSlugs: [],
+    quoteMessage: "Hola, me interesa cotizar tarjetas de presentación para mi consultorio.",
+  },
+  {
+    slug: "yume-vs-imprentas-recetarios-medicos",
+    title: "Yume vs. otras imprentas de recetarios médicos: comparación real de precios",
+    metaTitle: "Yume vs. otras imprentas de recetarios médicos",
+    description:
+      "Comparamos el precio y lo que incluye el recetario médico personalizado de Yume contra imprentas mexicanas reales — con datos reales de precios públicos.",
+    category: "Guías",
+    publishedAt: "2026-09-09",
+    intro:
+      "Antes de cotizar tu recetario médico personalizado vale la pena saber si el precio que te están dando es competitivo — y sobre todo, qué incluye. En septiembre de 2026 revisamos los precios públicos de varias imprentas mexicanas de recetarios médicos — aquí están los números reales, comparados contra los de Yume.",
+    sections: [
+      {
+        heading: "Cómo comparamos",
+        body: [
+          "Tomamos el precio público que cada imprenta muestra en su sitio para recetarios médicos personalizados de 100 hojas tamaño Media Carta, y anotamos si el precio incluye o no el servicio de diseño del membrete — no solo el precio de impresión.",
+          "Todos los precios son los publicados directamente en el sitio de cada competidor a esa fecha; no son estimaciones.",
+        ],
+      },
+      {
+        heading: "Los números",
+        body: [
+          "Entre las imprentas mexicanas de recetarios médicos que revisamos, los precios van de $300 a $900 MXN por partida (de 100 hojas a un bloque completo), en papel Bond u Opalina — y ninguna de las opciones revisadas aclara o incluye el servicio de diseño del membrete como parte del precio; en algunos casos ni siquiera lo menciona.",
+          "Yume: $320 MXN sin diseño (si ya tienes tu membrete listo) o $400 MXN con diseño incluido (lo armamos contigo desde cero), en papel Bond 90 gr, con prueba digital aprobada antes de imprimir.",
+        ],
+      },
+      {
+        heading: "Qué significa esto para ti",
+        body: [
+          "En precio base, Yume está entre las opciones más económicas del mercado que revisamos — pero ninguna de las demás ofrece servicio de diseño como parte del precio. No encontramos ninguna imprenta que anuncie \"diseñamos tu membrete contigo\" incluido en el costo, que es justo lo que cubre el tier de $400 de Yume.",
+          "Si ya tienes tu membrete resuelto, el precio de Yume ya es de los más bajos del mercado que revisamos. Si no lo tienes, el tier con diseño te ahorra tener que resolverlo por tu cuenta antes de poder imprimir — algo que ninguno de los competidores revisados incluye en su precio público.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["recetario-medico-personalizado"],
+  },
 ];
 
 export function getBlogPost(slug: string) {

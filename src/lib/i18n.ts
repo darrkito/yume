@@ -20,6 +20,14 @@ export const BLOG_SLUG_EN: Record<string, string> = {
   "recetario-medico-impreso-vs-digital": "printed-vs-digital-prescription-pads",
   "tatuajes-temporales-personalizados-para-eventos": "custom-temporary-tattoos-for-events-and-brands",
   "como-pedir-invitaciones-personalizadas-para-eventos": "how-to-order-custom-event-invitations",
+  "stickers-personalizados-para-mascotas": "custom-pet-stickers",
+  "recetario-medico-con-diseno-vs-sin-diseno": "prescription-pad-with-design-vs-without-design",
+  "datos-obligatorios-receta-medica-mexico": "required-information-medical-prescription-mexico",
+  "yume-vs-imprentas-online-stickers": "yume-vs-online-sticker-print-shops",
+  "stickers-vinil-vs-papel-diferencias": "vinyl-vs-paper-stickers-differences",
+  "menu-de-boda-personalizado": "custom-wedding-menus",
+  "tarjetas-de-presentacion-consultorio": "business-cards-for-your-practice",
+  "yume-vs-imprentas-recetarios-medicos": "yume-vs-online-prescription-pad-print-shops",
 };
 
 export const PRODUCT_SLUG_ES: Record<string, string> = Object.fromEntries(

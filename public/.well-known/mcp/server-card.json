@@ -41,7 +41,7 @@
     },
     {
       "name": "request_quote",
-      "description": "Get a link to request a real quote from Yume via WhatsApp."
+      "description": "Get a link to request a real quote from Yume via WhatsApp. Pass productSlug or blogSlug to personalize the message to that product/topic."
     }
   ]
 }
