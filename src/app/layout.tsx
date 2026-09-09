@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
@@ -104,6 +105,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Footer />
           </DesignFileProvider>
         </CartProvider>
+        {/* Microsoft Clarity — session recording/heatmaps. strategy="lazyOnload"
+            (same pattern used on Dizayn/SwapperBetweenChains): Clarity's own
+            snippet dynamically injects a second script tag, so there's no
+            benefit to loading it any earlier than the page becoming interactive. */}
+        <Script id="clarity-init" strategy="lazyOnload">
+          {`
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "yfgkmcjep5");
+          `}
+        </Script>
       </body>
     </html>
   );
