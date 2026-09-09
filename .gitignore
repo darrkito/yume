@@ -40,6 +40,10 @@ yarn-error.log*
 # service account keys (GSC, etc.)
 yume-507307-*.json
 
+# internal-only docs (competitor research, project instructions — not for the public repo)
+precios-competencia-*.md
+CLAUDE.md
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
