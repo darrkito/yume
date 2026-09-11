@@ -8,7 +8,7 @@ import { formatMXN } from "@/lib/format";
 import { UI, type Lang } from "@/lib/i18n";
 
 const FIELD_CLASS =
-  "w-full rounded-lg border border-line bg-paper px-4 py-2.5 text-sm text-ink placeholder:text-ink-soft/60 focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/30";
+  "w-full rounded-lg border border-line bg-paper px-4 py-3 text-sm text-ink placeholder:text-ink-soft/60 focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/30";
 const LABEL_CLASS = "mb-1.5 block text-xs font-medium uppercase tracking-[0.08em] text-ink-soft";
 
 export function ShippingForm({
