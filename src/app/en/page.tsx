@@ -125,7 +125,10 @@ export default function HomeEn() {
               );
             })}
           </div>
-          <Link href="/en/products" className="mt-10 inline-block text-sm font-semibold text-brand hover:text-brand-deep">
+          <Link
+            href="/en/products"
+            className="mt-10 inline-flex min-h-11 items-center text-sm font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+          >
             View full shop →
           </Link>
         </section>
@@ -178,7 +181,10 @@ export default function HomeEn() {
               <FaqQuestion key={f.q} item={f} />
             ))}
           </div>
-          <Link href="/en/faq" className="mt-8 inline-block text-sm font-semibold text-brand hover:text-brand-deep">
+          <Link
+            href="/en/faq"
+            className="mt-8 inline-flex min-h-11 items-center text-sm font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+          >
             View all questions →
           </Link>
         </div>

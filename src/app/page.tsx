@@ -104,7 +104,10 @@ export default function Home() {
               </Link>
             ))}
           </div>
-          <Link href="/productos" className="mt-10 inline-block text-sm font-semibold text-brand hover:text-brand-deep">
+          <Link
+            href="/productos"
+            className="mt-10 inline-flex min-h-11 items-center text-sm font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+          >
             Ver toda la tienda →
           </Link>
         </section>
@@ -157,7 +160,10 @@ export default function Home() {
               <FaqQuestion key={f.q} item={f} />
             ))}
           </div>
-          <Link href="/preguntas-frecuentes" className="mt-8 inline-block text-sm font-semibold text-brand hover:text-brand-deep">
+          <Link
+            href="/preguntas-frecuentes"
+            className="mt-8 inline-flex min-h-11 items-center text-sm font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+          >
             Ver todas las preguntas →
           </Link>
         </div>

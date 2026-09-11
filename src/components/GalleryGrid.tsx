@@ -52,7 +52,7 @@ export function GalleryGrid({ items, categories, allLabel }: GalleryGridProps) {
               setActive(cat);
               setLightboxIndex(null);
             }}
-            className={`rounded-full border px-4 py-2 text-xs font-semibold uppercase tracking-[0.1em] transition-colors ${
+            className={`flex min-h-11 items-center rounded-full border px-4 py-2 text-xs font-semibold uppercase tracking-[0.1em] transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand ${
               active === cat ? "border-brand bg-brand text-white" : "border-line text-ink-soft hover:border-brand hover:text-brand"
             }`}
           >
@@ -95,7 +95,7 @@ export function GalleryGrid({ items, categories, allLabel }: GalleryGridProps) {
             type="button"
             onClick={() => setLightboxIndex(null)}
             aria-label="Close"
-            className="absolute right-4 top-4 text-white/80 hover:text-white"
+            className="absolute right-2 top-2 flex size-11 items-center justify-center text-white/80 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
           >
             <X size={28} aria-hidden="true" />
           </button>
@@ -106,7 +106,7 @@ export function GalleryGrid({ items, categories, allLabel }: GalleryGridProps) {
               setLightboxIndex((i) => (i === null ? i : (i - 1 + filtered.length) % filtered.length));
             }}
             aria-label="Previous"
-            className="absolute left-2 text-white/80 hover:text-white sm:left-6"
+            className="absolute left-2 flex size-11 items-center justify-center text-white/80 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:left-6"
           >
             <ChevronLeft size={32} aria-hidden="true" />
           </button>
@@ -123,7 +123,7 @@ export function GalleryGrid({ items, categories, allLabel }: GalleryGridProps) {
               setLightboxIndex((i) => (i === null ? i : (i + 1) % filtered.length));
             }}
             aria-label="Next"
-            className="absolute right-2 text-white/80 hover:text-white sm:right-6"
+            className="absolute right-2 flex size-11 items-center justify-center text-white/80 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:right-6"
           >
             <ChevronRight size={32} aria-hidden="true" />
           </button>
