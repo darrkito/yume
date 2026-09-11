@@ -81,7 +81,7 @@
       "refersTo": "button-primary",
       "description": "Solid burgundy CTA (add to cart, view details, quote).",
       "html": "<button class=\"ds-btn-primary\">Ver tienda</button>",
-      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; border-radius: 999px; padding: 0.8rem 1.75rem; font-size: 0.875rem; font-weight: 600; letter-spacing: 0.02em; font-family: Inter, system-ui, sans-serif; background: #7c0000; color: #ffffff; border: none; box-shadow: 0 8px 20px -10px hsl(43 25% 20% / 0.55); transition: transform 150ms ease, box-shadow 150ms ease, background-color 150ms ease; } .ds-btn-primary:hover { background: #560000; box-shadow: 0 10px 24px -8px hsl(43 25% 20% / 0.6); } .ds-btn-primary:focus-visible { outline: 2px solid #7c0000; outline-offset: 2px; } .ds-btn-primary:active { transform: scale(0.97); }"
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; border-radius: 999px; padding: 0.8rem 1.75rem; font-size: 0.875rem; font-weight: 600; letter-spacing: 0.02em; font-family: Karla, system-ui, sans-serif; background: #7c0000; color: #ffffff; border: none; box-shadow: 0 8px 20px -10px hsl(43 25% 20% / 0.55); transition: transform 150ms ease, box-shadow 150ms ease, background-color 150ms ease; } .ds-btn-primary:hover { background: #560000; box-shadow: 0 10px 24px -8px hsl(43 25% 20% / 0.6); } .ds-btn-primary:focus-visible { outline: 2px solid #7c0000; outline-offset: 2px; } .ds-btn-primary:active { transform: scale(0.97); }"
     },
     {
       "name": "Outline Button",
@@ -89,7 +89,7 @@
       "refersTo": "button-outline",
       "description": "Secondary CTA (e.g. Cotizar por WhatsApp).",
       "html": "<button class=\"ds-btn-outline\">Cotizar por WhatsApp</button>",
-      "css": ".ds-btn-outline { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; border-radius: 999px; padding: 0.8rem 1.75rem; font-size: 0.875rem; font-weight: 600; font-family: Inter, system-ui, sans-serif; background: #fffdf8; color: #2b211d; border: 1.5px solid #d8c3ae; transition: border-color 150ms ease, color 150ms ease; } .ds-btn-outline:hover { border-color: #7c0000; color: #7c0000; } .ds-btn-outline:focus-visible { outline: 2px solid #7c0000; outline-offset: 2px; }"
+      "css": ".ds-btn-outline { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; border-radius: 999px; padding: 0.8rem 1.75rem; font-size: 0.875rem; font-weight: 600; font-family: Karla, system-ui, sans-serif; background: #fffdf8; color: #2b211d; border: 1.5px solid #d8c3ae; transition: border-color 150ms ease, color 150ms ease; } .ds-btn-outline:hover { border-color: #7c0000; color: #7c0000; } .ds-btn-outline:focus-visible { outline: 2px solid #7c0000; outline-offset: 2px; }"
     },
     {
       "name": "Product Card",
@@ -97,7 +97,7 @@
       "refersTo": "card",
       "description": "Product/blog listing card with the signature subtle tilt (tilt-a variant shown).",
       "html": "<a class=\"ds-card ds-card-tilt-a\" href=\"#\"><div class=\"ds-card-media\"></div><p class=\"ds-card-label\">Etiquetas personalizadas</p><h3 class=\"ds-card-title\">Etiquetas Logo Personalizado</h3><p class=\"ds-card-price\">Desde $100.00 MXN</p></a>",
-      "css": ".ds-card { display: block; background: #fffdf8; border-radius: 1.25rem; padding: 1.75rem; box-shadow: 0 1px 2px hsl(43 25% 20% / 0.06), 0 12px 28px -14px hsl(43 25% 20% / 0.22); text-decoration: none; color: inherit; transition: transform 250ms cubic-bezier(0.16,1,0.3,1); } .ds-card-tilt-a { transform: rotate(-1.1deg); } .ds-card-tilt-a:hover, .ds-card-tilt-a:focus-within { transform: rotate(0deg) translateY(-3px); } .ds-card-media { height: 12rem; border-radius: 0.75rem; background: #f7e6e0; margin-bottom: 1rem; } .ds-card-label { font-family: Inter, system-ui, sans-serif; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #7c0000; margin: 0 0 0.25rem; } .ds-card-title { font-family: 'Playfair Display', Georgia, serif; font-size: 1.25rem; margin: 0 0 0.5rem; color: #2b211d; } .ds-card-price { font-family: Inter, system-ui, sans-serif; font-size: 1.125rem; font-weight: 600; color: #2b211d; margin: 0; }"
+      "css": ".ds-card { display: block; background: #fffdf8; border-radius: 1.25rem; padding: 1.75rem; box-shadow: 0 1px 2px hsl(43 25% 20% / 0.06), 0 12px 28px -14px hsl(43 25% 20% / 0.22); text-decoration: none; color: inherit; transition: transform 250ms cubic-bezier(0.16,1,0.3,1); } .ds-card-tilt-a { transform: rotate(-1.1deg); } .ds-card-tilt-a:hover, .ds-card-tilt-a:focus-within { transform: rotate(0deg) translateY(-3px); } .ds-card-media { height: 12rem; border-radius: 0.75rem; background: #f7e6e0; margin-bottom: 1rem; } .ds-card-label { font-family: Karla, system-ui, sans-serif; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #7c0000; margin: 0 0 0.25rem; } .ds-card-title { font-family: 'Playfair Display', Georgia, serif; font-size: 1.25rem; margin: 0 0 0.5rem; color: #2b211d; } .ds-card-price { font-family: Karla, system-ui, sans-serif; font-size: 1.125rem; font-weight: 600; color: #2b211d; margin: 0; }"
     },
     {
       "name": "Category Tag",
@@ -105,7 +105,7 @@
       "refersTo": "chip",
       "description": "Blog category pill.",
       "html": "<span class=\"ds-tag\">Guías</span>",
-      "css": ".ds-tag { display: inline-block; border-radius: 999px; background: #f7e6e0; color: #560000; font-family: Inter, system-ui, sans-serif; font-size: 0.6875rem; font-weight: 600; padding: 0.25rem 0.75rem; }"
+      "css": ".ds-tag { display: inline-block; border-radius: 999px; background: #f7e6e0; color: #560000; font-family: Karla, system-ui, sans-serif; font-size: 0.6875rem; font-weight: 600; padding: 0.25rem 0.75rem; }"
     },
     {
       "name": "Navigation",
@@ -113,7 +113,7 @@
       "refersTo": "nav",
       "description": "Sticky header nav link row.",
       "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-link\" href=\"#\">Tienda</a><a class=\"ds-nav-link\" href=\"#\">Galería</a></nav>",
-      "css": ".ds-nav { display: flex; gap: 2rem; align-items: center; } .ds-nav-link { font-family: Inter, system-ui, sans-serif; font-size: 0.875rem; color: #7d6d63; text-decoration: none; transition: color 150ms ease; } .ds-nav-link:hover, .ds-nav-link:focus-visible { color: #7c0000; }"
+      "css": ".ds-nav { display: flex; gap: 2rem; align-items: center; } .ds-nav-link { font-family: Karla, system-ui, sans-serif; font-size: 0.875rem; color: #7d6d63; text-decoration: none; transition: color 150ms ease; } .ds-nav-link:hover, .ds-nav-link:focus-visible { color: #7c0000; }"
     }
   ],
   "narrative": {
@@ -125,7 +125,7 @@
       "Soft, generous corner radius everywhere; no sharp rectangles",
       "Warm-tinted low-alpha shadows instead of hard borders on content surfaces",
       "A subtle, consistent tilt on card grids for a handmade, non-machined feel",
-      "Serif display type (Playfair Display) paired with a plain sans body (Inter)"
+      "Serif display type (Playfair Display) paired with a warm, slightly quirky sans body (Karla)"
     ],
     "rules": [
       { "name": "The One Accent Rule", "body": "Burgundy is the only saturated color on the page. Every other surface is warm neutral (paper, ink, blush tint). A second accent hue is never introduced.", "section": "colors" },
@@ -137,7 +137,7 @@
       "Do keep burgundy as the only saturated accent color on any page.",
       "Do use full-pill radius for every button and small tag, 1.25rem for cards/frames.",
       "Do apply the tilt-a/tilt-b alternation to any new card grid with 2+ items.",
-      "Do keep body copy in Inter and any headline/product-name in Playfair Display."
+      "Do keep body copy in Karla and any headline/product-name in Playfair Display."
     ],
     "donts": [
       "Don't reintroduce sharp (0-radius) corners, mono-caps uppercase chrome strips, numbered index cards, or a black/inverted section — all confirmed anti-references from the Swiss-editorial pass this system replaced.",

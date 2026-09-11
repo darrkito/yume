@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
-import { Playfair_Display, Inter } from "next/font/google";
+import { Playfair_Display, Karla } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -18,8 +18,8 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
-const inter = Inter({
-  variable: "--font-inter",
+const karla = Karla({
+  variable: "--font-karla",
   subsets: ["latin"],
   display: "swap",
 });
@@ -83,7 +83,7 @@ const orgSchema = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es-MX">
-      <body className={`${playfair.variable} ${inter.variable} font-sans antialiased`}>
+      <body className={`${playfair.variable} ${karla.variable} font-sans antialiased`}>
         {/* Rendered <link>/<meta> tags are hoisted into <head> by Next.js — ARD's
             capability manifest discovery path, real resource (see .well-known/ai-catalog.json). */}
         <link rel="ai-catalog" href={`${SITE.url}/.well-known/ai-catalog.json`} />

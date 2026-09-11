@@ -36,8 +36,8 @@ export default function HomeEn() {
   return (
     <>
       {/* Hero */}
-      <section className="mx-auto max-w-6xl px-6 pb-20 pt-16 sm:pt-20">
-        <div className="grid grid-cols-1 items-center gap-12 sm:grid-cols-2">
+      <section className="desk-lamp-wash">
+        <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 px-6 pb-20 pt-16 sm:grid-cols-2 sm:pt-20">
           <div>
             <h1 className="animate-fade-up font-display text-4xl leading-[1.1] text-ink text-balance sm:text-5xl lg:text-6xl">
               Paper goods made with <em className="italic text-brand">intention</em>.

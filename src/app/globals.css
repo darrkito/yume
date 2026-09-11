@@ -66,7 +66,7 @@
   --color-line: var(--line);
   --color-line-strong: var(--line-strong);
   --font-display: var(--font-playfair);
-  --font-sans: var(--font-inter);
+  --font-sans: var(--font-karla);
   --font-heading: var(--font-playfair);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -172,6 +172,14 @@ body {
   .card-soft:focus-visible {
     outline: 2px solid var(--brand);
     outline-offset: 2px;
+  }
+  /* "Desk lamp wash" — a single soft warm glow suggesting light falling
+     across paper from above, not a decorative mesh gradient. Reserved for
+     large, otherwise-empty section backgrounds (hero, above-the-fold);
+     never stacked with a card's own shadow (No-Stack Rule) and never a
+     second hue — the wash stays inside the brand-tint family. */
+  .desk-lamp-wash {
+    background: radial-gradient(120% 60% at 50% -10%, hsl(14 55% 90% / 0.8) 0%, transparent 65%), var(--paper);
   }
 }
 

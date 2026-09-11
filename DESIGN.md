@@ -19,12 +19,12 @@ typography:
     lineHeight: 1.1
     letterSpacing: "normal"
   body:
-    fontFamily: "Inter, system-ui, sans-serif"
+    fontFamily: "Karla, system-ui, sans-serif"
     fontSize: "1rem"
     fontWeight: 400
     lineHeight: 1.6
   label:
-    fontFamily: "Inter, system-ui, sans-serif"
+    fontFamily: "Karla, system-ui, sans-serif"
     fontSize: "0.75rem"
     fontWeight: 600
     letterSpacing: "0.1em"
@@ -71,7 +71,8 @@ Yume's visual system reads like a real desk drawer of a small stationery studio:
 - Soft, generous corner radius everywhere; no sharp rectangles
 - Warm-tinted low-alpha shadows instead of hard borders on content surfaces
 - A subtle, consistent tilt on card grids for a handmade, non-machined feel
-- Serif display type (Playfair Display) paired with a plain sans body (Inter)
+- Serif display type (Playfair Display) paired with a warm, slightly quirky sans body (Karla)
+- A single soft "desk lamp" glow on the homepage hero — the site's only background wash, never repeated more than once per page
 
 ## Colors
 
@@ -96,7 +97,7 @@ A warm, narrow palette: cream paper, a warm near-black ink, and a single burgund
 ## Typography
 
 **Display Font:** Playfair Display (with Georgia, serif fallback)
-**Body Font:** Inter (with system-ui, sans-serif fallback)
+**Body Font:** Karla (with system-ui, sans-serif fallback)
 
 **Character:** A warm editorial serif for anything that should feel like it was actually written or printed (headlines, product names), paired with a plain, quiet sans for everything functional (body copy, labels, prices). The pairing reads as "a real stationery shop's signage," not a tech product.
 
@@ -112,6 +113,13 @@ A warm, narrow palette: cream paper, a warm near-black ink, and a single burgund
 ## Layout
 
 Standard content container `max-w-6xl` (product/marketing pages) or `max-w-5xl`/`max-w-2xl` (product detail / article reading width), centered with `px-6` side padding. Section rhythm is generous: `py-16` to `py-24` vertical padding per section, matching an "art gallery" density rather than a dense app. Card grids are 2-column on desktop (`sm:grid-cols-2`), collapsing to a single column below `sm`. Product-detail and article layouts use a simple two-column split (image/text) that collapses to a stacked single column on mobile.
+
+## Backgrounds
+
+Flat warm paper (`--paper`) is the default everywhere — most of the site should stay that way. One deliberate exception: the homepage hero (and, if a future page needs the same lift, another single above-the-fold moment per page, never more than one) carries `.desk-lamp-wash`, a soft radial warmth rising from the bottom of the viewport toward the top, like light falling across a desk from a lamp just out of frame. It reads as atmosphere, not decoration — a single soft-edged glow, no visible gradient bands, no second hue (it stays inside the brand-tint family, `hsl(14 55% 90%)`), and never applied to a card, button, or anything that already carries a shadow.
+
+### Named Rules
+**The Desk Lamp Rule.** At most one soft radial warmth per page, reserved for a genuine above-the-fold moment (a hero, never a card/button/tag). It never stacks with the Shadow Vocabulary below — a background wash and a surface shadow are two different jobs (page atmosphere vs. object elevation) and never sit on the same element. Never a multi-stop "mesh" gradient, never a second hue.
 
 ## Elevation & Depth
 
@@ -151,10 +159,10 @@ Soft and a little imperfect: rounded, warm-shadowed, gently tilted where it fits
 - **Variant selection (radio-style option cards):** selected state fills with Blush Tint and a burgundy border; unselected state uses a plain warm-line border.
 
 ### Navigation
-- Sticky header, warm-paper background at 95% opacity with a light backdrop blur, single hairline bottom border (Warm Line). Nav links are plain-weight Inter, no uppercase, no letter-spacing chrome — the previous mono-caps nav treatment is retired. Active/hover state is a simple color shift to burgundy, no underline or background change.
+- Sticky header, warm-paper background at 95% opacity with a light backdrop blur, single hairline bottom border (Warm Line). Nav links are plain-weight Karla, no uppercase, no letter-spacing chrome — the previous mono-caps nav treatment is retired. Active/hover state is a simple color shift to burgundy, no underline or background change.
 
 ### Tags / Labels
-- Category tags render as small pill badges: Blush Tint background, Burgundy Deep text, no border. Metadata labels (spec names, form labels) are plain uppercase Inter at small size and soft-ink color, not pill-shaped.
+- Category tags render as small pill badges: Blush Tint background, Burgundy Deep text, no border. Metadata labels (spec names, form labels) are plain uppercase Karla at small size and soft-ink color, not pill-shaped.
 
 ## Do's and Don'ts
 
@@ -163,7 +171,8 @@ Soft and a little imperfect: rounded, warm-shadowed, gently tilted where it fits
 - **Do** keep burgundy as the only saturated accent color on any page.
 - **Do** use full-pill radius for every button and small tag, `1.25rem` for cards/frames.
 - **Do** apply the tilt-a/tilt-b alternation to any new card grid with 2+ items.
-- **Do** keep body copy in Inter and any headline/product-name in Playfair Display.
+- **Do** keep body copy in Karla and any headline/product-name in Playfair Display.
+- **Do** keep `.desk-lamp-wash` to at most one per page, on a genuine above-the-fold moment.
 
 ### Don't:
 - **Don't** reintroduce sharp (0-radius) corners, mono-caps uppercase chrome strips, numbered index cards, or a black/inverted section — all confirmed anti-references from the Swiss-editorial pass this system replaced.
@@ -171,3 +180,4 @@ Soft and a little imperfect: rounded, warm-shadowed, gently tilted where it fits
 - **Don't** introduce a second accent hue (no blue, no green, no purple) even for a single small element.
 - **Don't** use pure `#000000` or pure `#ffffff` anywhere.
 - **Don't** make the tilt effect stronger than about a degree, or apply it to a single isolated card outside a grid.
+- **Don't** put a background wash on a card, button, or any surface that already carries a shadow, or use a multi-stop "mesh" gradient anywhere.
