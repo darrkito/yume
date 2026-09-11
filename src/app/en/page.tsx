@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Check, MessageCircle, CheckCircle2, Truck, PenTool, MapPin } from "lucide-react";
 import { getProduct, hasVariants, productDisplayPrice, products } from "@/content/products";
 import { productsEn } from "@/content/products.en";
 import { getFeaturedFaqEn } from "@/content/faq.en";
@@ -12,6 +13,30 @@ import { FaqQuestion } from "@/components/FaqAccordion";
 import { InfiniteGalleryStrip } from "@/components/InfiniteGalleryStrip";
 import { getGalleryItemsEn } from "@/content/gallery.en";
 import { hreflangFor, PRODUCT_SLUG_EN } from "@/lib/i18n";
+
+const NO_MINIMUMS = [
+  "One prescription pad or 40–50 stickers, not hundreds",
+  "Flexible pricing from $100 MXN",
+  "No bulk minimums like other print shops",
+];
+
+const HOW_IT_WORKS = [
+  {
+    icon: MessageCircle,
+    title: "Get a quote",
+    body: "Tell us what you need via WhatsApp or from the shop: your logo, character, pet, or design.",
+  },
+  {
+    icon: CheckCircle2,
+    title: "Approve your digital proof",
+    body: "We send you a proof before printing. Nothing goes into production without your go-ahead.",
+  },
+  {
+    icon: Truck,
+    title: "Receive your order",
+    body: "Shipping across Mexico or pickup at Casa Blanca Guadalajara.",
+  },
+];
 
 export const metadata: Metadata = {
   title: { absolute: "Yume — Custom Creative Stationery" },
@@ -66,6 +91,25 @@ export default function HomeEn() {
         </div>
       </section>
 
+      {/* No-minimums differentiator */}
+      <section className="border-y border-line bg-paper-raised">
+        <div className="mx-auto max-w-6xl px-6 py-8">
+          <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+            <p className="font-display text-lg text-ink text-balance sm:text-xl">
+              No bulk order minimums<span className="text-ink-soft">.</span>
+            </p>
+            <ul className="flex flex-col gap-3 text-sm text-ink-soft sm:flex-row sm:flex-wrap sm:gap-x-8 sm:gap-y-2">
+              {NO_MINIMUMS.map((item) => (
+                <li key={item} className="flex items-start gap-2 sm:items-center">
+                  <Check size={16} className="mt-0.5 shrink-0 text-brand sm:mt-0" aria-hidden="true" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* Featured product */}
       <section className="bg-brand-tint/60">
         <div className="mx-auto max-w-6xl px-6 py-20">
@@ -94,6 +138,23 @@ export default function HomeEn() {
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* How it works */}
+      <section className="mx-auto max-w-6xl px-6 py-20">
+        <h2 className="font-display text-3xl text-ink sm:text-4xl text-balance">How it works</h2>
+        <div className="mt-12 grid gap-6 sm:grid-cols-3">
+          {HOW_IT_WORKS.map((step, i) => (
+            <div key={step.title} className="info-card p-7">
+              <div className="info-card-icon">
+                <step.icon size={20} aria-hidden="true" />
+              </div>
+              <p className="mt-5 text-xs font-semibold uppercase tracking-[0.1em] text-brand">Step {i + 1}</p>
+              <h3 className="mt-1 font-display text-xl text-ink text-balance">{step.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-ink-soft">{step.body}</p>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -147,22 +208,31 @@ export default function HomeEn() {
 
       {/* Values */}
       <section className="border-t border-line">
-        <div className="mx-auto grid max-w-6xl gap-10 px-6 py-20 sm:grid-cols-3">
-          <div className="sm:col-span-2 sm:border-r sm:border-line sm:pr-10">
-            <h3 className="font-display text-2xl text-ink text-balance">Design tailored to you</h3>
-            <p className="mt-3 max-w-md text-sm leading-relaxed text-ink-soft">
-              Every piece is adjusted to your details, your brand, or your practice — no generic templates.
-            </p>
-          </div>
-          <div className="flex flex-col gap-10">
-            <div>
-              <h3 className="font-display text-lg text-ink">You approve before printing</h3>
+        <div className="mx-auto max-w-6xl px-6 py-20">
+          <div className="grid gap-6 sm:grid-cols-3">
+            <div className="info-card p-7">
+              <div className="info-card-icon">
+                <PenTool size={20} aria-hidden="true" />
+              </div>
+              <h3 className="mt-5 font-display text-xl text-ink text-balance">Design tailored to you</h3>
+              <p className="mt-2 text-sm leading-relaxed text-ink-soft">
+                Every piece is adjusted to your details, your brand, or your practice — no generic templates.
+              </p>
+            </div>
+            <div className="info-card p-7">
+              <div className="info-card-icon">
+                <CheckCircle2 size={20} aria-hidden="true" />
+              </div>
+              <h3 className="mt-5 font-display text-xl text-ink text-balance">You approve before printing</h3>
               <p className="mt-2 text-sm leading-relaxed text-ink-soft">
                 You get a digital proof and give the go-ahead before your order goes into production.
               </p>
             </div>
-            <div>
-              <h3 className="font-display text-lg text-ink">Made in Guadalajara</h3>
+            <div className="info-card p-7">
+              <div className="info-card-icon">
+                <MapPin size={20} aria-hidden="true" />
+              </div>
+              <h3 className="mt-5 font-display text-xl text-ink text-balance">Made in Guadalajara</h3>
               <p className="mt-2 text-sm leading-relaxed text-ink-soft">
                 Local production in Jalisco, shipping across all of Mexico, made for businesses and professionals who
                 want stationery with character.
@@ -187,6 +257,26 @@ export default function HomeEn() {
           >
             View all questions →
           </Link>
+        </div>
+      </section>
+
+      {/* Closing CTA */}
+      <section className="border-t border-line bg-brand-tint/60">
+        <div className="mx-auto flex max-w-6xl flex-col items-start gap-6 px-6 py-16 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <h2 className="font-display text-2xl text-ink text-balance sm:text-3xl">Have a design in mind?</h2>
+            <p className="mt-2 max-w-md text-sm leading-relaxed text-ink-soft">
+              Get a free quote via WhatsApp and we'll reply with pricing and timing, no strings attached.
+            </p>
+          </div>
+          <CtaFillLink
+            href={waLink("Hi, I'm interested in getting a quote for a Yume product.")}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-soft btn-soft-outline shrink-0"
+          >
+            Quote via WhatsApp
+          </CtaFillLink>
         </div>
       </section>
     </>

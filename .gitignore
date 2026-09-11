@@ -53,3 +53,5 @@ next-env.d.ts
 # system sidecar) and live/config.json (framework inject config) ARE tracked.
 .impeccable/live/*
 !.impeccable/live/config.json
+
+graphify-out/

@@ -167,11 +167,29 @@ body {
   .card-soft {
     border-radius: 1.25rem;
     background: var(--paper-raised);
-    box-shadow: 0 1px 2px hsl(var(--shadow-tint) / 0.06), 0 12px 28px -14px hsl(var(--shadow-tint) / 0.22);
+    box-shadow: 0 2px 4px hsl(var(--shadow-tint) / 0.08), 0 18px 40px -16px hsl(var(--shadow-tint) / 0.32);
   }
   .card-soft:focus-visible {
     outline: 2px solid var(--brand);
     outline-offset: 2px;
+  }
+  /* A quieter sibling of .card-soft for content that shouldn't tilt or lift
+     (value-prop cards, process steps) — same warm elevation vocabulary, no
+     motion, plus a small icon roundel that carries the one accent color. */
+  .info-card {
+    border-radius: 1.25rem;
+    background: var(--paper-raised);
+    box-shadow: 0 1px 2px hsl(var(--shadow-tint) / 0.06), 0 14px 32px -16px hsl(var(--shadow-tint) / 0.24);
+  }
+  .info-card-icon {
+    display: flex;
+    height: 2.75rem;
+    width: 2.75rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    background: var(--brand-tint);
+    color: var(--brand);
   }
   /* "Desk lamp wash" — a single soft warm glow suggesting light falling
      across paper from above, not a decorative mesh gradient. Reserved for
@@ -188,18 +206,18 @@ body {
    grid. Used sparingly (product/blog cards), never on text-only rows. */
 @media (prefers-reduced-motion: no-preference) {
   .tilt-a {
-    transform: rotate(-1.1deg);
+    transform: rotate(-2deg);
     transition: transform 250ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 250ms ease;
   }
   .tilt-b {
-    transform: rotate(0.9deg);
+    transform: rotate(1.6deg);
     transition: transform 250ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 250ms ease;
   }
   .tilt-a:hover,
   .tilt-a:focus-within,
   .tilt-b:hover,
   .tilt-b:focus-within {
-    transform: rotate(0deg) translateY(-3px);
+    transform: rotate(0deg) translateY(-4px);
   }
 }
 
