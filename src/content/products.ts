@@ -103,8 +103,8 @@ export const products: Product[] = [
     ],
     image: "/recetario-medico.webp",
     variants: [
-      { id: "sin-diseno", label: "Sin diseño — ya tienes tu diseño listo", price: 320 },
-      { id: "con-diseno", label: "Con diseño — lo diseñamos contigo", price: 400, default: true },
+      { id: "sin-diseno", label: "Sin diseño — ya tienes tu diseño listo", price: 320, default: true },
+      { id: "con-diseno", label: "Con diseño — lo diseñamos contigo", price: 400 },
     ],
     faq: [
       {

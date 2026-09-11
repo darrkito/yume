@@ -116,8 +116,9 @@ body {
      wall/item coordinates are absolute pixels, not resizable without
      re-deriving the whole simulation) that's wider than viewports below
      ~420px. Clipping horizontal overflow here avoids a sitewide scrollbar
-     from that one fixed-width island instead of touching the physics. */
-  overflow-x: hidden;
+     from that one fixed-width island instead of touching the physics. Clip
+     (not hidden) is required because hidden creates a scroll container that breaks descendant position: sticky. */
+  overflow-x: clip;
 }
 
 /* Cozy shape + elevation system: soft radius everywhere (buttons full-pill,

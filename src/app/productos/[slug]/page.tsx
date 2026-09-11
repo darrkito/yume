@@ -85,8 +85,8 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
   };
 
   return (
-    <section className="mx-auto max-w-5xl px-6 py-16 sm:py-24">
-      <nav aria-label="Breadcrumb" className="mb-10 text-xs text-ink-soft">
+    <section className="mx-auto max-w-5xl px-6 pb-20 pt-8 sm:pb-24 sm:pt-16">
+      <nav aria-label="Breadcrumb" className="mb-4 text-xs text-ink-soft sm:mb-10">
         <Link href="/" className="inline-flex min-h-11 items-center hover:text-brand transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
           Inicio
         </Link>
@@ -98,10 +98,12 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         <span className="text-ink">{product.name}</span>
       </nav>
 
-      <div className="grid gap-14 sm:grid-cols-2 sm:items-start">
-        <div className="product-zoom-frame card-soft tilt-a flex items-center justify-center p-10 sm:justify-start">
-          <div className="product-zoom-img">
-            <ProductVisual product={product} />
+      <div className="grid gap-8 sm:gap-14 sm:grid-cols-2 sm:items-start">
+        <div className="sm:sticky sm:top-24 sm:self-start">
+          <div className="product-zoom-frame card-soft flex items-center justify-center p-4 [&_img]:max-h-44 [&_img]:w-auto [&_img]:object-contain sm:[&_img]:max-h-none sm:justify-start sm:p-10">
+            <div className="product-zoom-img">
+              <ProductVisual product={product} />
+            </div>
           </div>
         </div>
 
@@ -127,7 +129,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           <ul className="mt-10 space-y-2 text-sm text-ink">
             {product.details.map((d) => (
               <li key={d} className="flex items-start gap-2">
-                <span className="mt-2 h-1.5 w-1.5 shrink-0 bg-brand" />
+                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
                 {d}
               </li>
             ))}
