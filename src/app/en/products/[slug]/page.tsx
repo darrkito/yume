@@ -85,7 +85,7 @@ export default async function ProductPageEn({ params }: { params: Promise<{ slug
 
   return (
     <section className="mx-auto max-w-5xl px-6 py-16 sm:py-24">
-      <nav aria-label="Breadcrumb" className="mb-10 text-xs text-ink-soft">
+      <nav aria-label="Breadcrumb" className="mono-label mb-10 text-[11px] text-ink-soft">
         <Link href="/en" className="hover:text-brand transition-colors">
           Home
         </Link>
@@ -98,24 +98,24 @@ export default async function ProductPageEn({ params }: { params: Promise<{ slug
       </nav>
 
       <div className="grid gap-14 sm:grid-cols-2 sm:items-start">
-        <div className="product-zoom-frame flex items-center justify-center rounded-2xl border border-line bg-paper-raised p-10 sm:justify-start">
+        <div className="product-zoom-frame flex items-center justify-center border-2 border-line-strong bg-paper-raised p-10 sm:justify-start">
           <div className="product-zoom-img">
             <ProductVisual product={product} />
           </div>
         </div>
 
         <div>
-          <p className="animate-fade-up text-xs uppercase tracking-[0.25em] text-brand">{t.category}</p>
-          <h1 className="animate-fade-up animate-fade-up-1 mt-3 font-display text-3xl text-ink sm:text-4xl">{t.name}</h1>
+          <p className="mono-label animate-fade-up text-xs text-brand">{t.category}</p>
+          <h1 className="animate-fade-up animate-fade-up-1 mt-3 font-display text-3xl font-black uppercase text-ink sm:text-4xl">{t.name}</h1>
 
           <ProductPurchase product={product} lang="en" />
 
           <p className="mt-6 text-sm leading-relaxed text-ink-soft">{t.description}</p>
 
-          <dl className="mt-8 grid grid-cols-2 gap-4 border-y border-line py-6 text-sm">
+          <dl className="mt-8 grid grid-cols-2 gap-4 border-y-2 border-line-strong py-6 text-sm">
             {t.specs.map((spec) => (
               <div key={spec.label}>
-                <dt className="text-ink-soft">{spec.label}</dt>
+                <dt className="mono-label text-[11px] text-ink-soft">{spec.label}</dt>
                 <dd className="mt-1 font-medium text-ink">{spec.value}</dd>
               </div>
             ))}
@@ -126,7 +126,7 @@ export default async function ProductPageEn({ params }: { params: Promise<{ slug
           <ul className="mt-10 space-y-2 text-sm text-ink">
             {t.details.map((d) => (
               <li key={d} className="flex items-start gap-2">
-                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
+                <span className="mt-2 h-1.5 w-1.5 shrink-0 bg-brand" />
                 {d}
               </li>
             ))}
@@ -144,8 +144,8 @@ export default async function ProductPageEn({ params }: { params: Promise<{ slug
         />
       )}
 
-      <div className="mt-20 border-t border-line pt-14">
-        <h2 className="font-display text-2xl text-ink">Frequently Asked Questions</h2>
+      <div className="mt-20 border-t-2 border-line-strong pt-14">
+        <h2 className="font-display text-2xl font-bold uppercase text-ink">Frequently Asked Questions</h2>
         <div className="mt-8 space-y-6 max-w-2xl">
           {t.faq.map((f) => (
             <div key={f.q} className="border-b border-line pb-6">

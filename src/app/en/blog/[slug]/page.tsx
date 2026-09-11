@@ -61,20 +61,20 @@ export default async function BlogPostPageEn({ params }: { params: Promise<{ slu
       </nav>
 
       <div className="animate-fade-up flex items-center gap-3">
-        <span className="rounded-full bg-brand-tint px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.1em] text-brand-deep">
+        <span className="mono-label border border-line-strong px-3 py-1 text-[11px] font-semibold text-ink">
           {post.category}
         </span>
         <time dateTime={post.publishedAt} className="text-xs text-ink-soft">
           {formatBlogDate(post.publishedAt)}
         </time>
       </div>
-      <h1 className="animate-fade-up animate-fade-up-1 mt-4 font-display text-3xl text-ink text-balance sm:text-4xl">{post.title}</h1>
+      <h1 className="animate-fade-up animate-fade-up-1 mt-4 font-display text-3xl font-bold text-ink text-balance sm:text-4xl">{post.title}</h1>
       <p className="animate-fade-up animate-fade-up-2 mt-4 text-sm leading-relaxed text-ink-soft">{post.intro}</p>
 
       <div className="mt-10 space-y-10">
         {post.sections.map((section) => (
           <div key={section.heading}>
-            <h2 className="font-display text-xl text-ink">{section.heading}</h2>
+            <h2 className="font-display text-xl font-bold text-ink">{section.heading}</h2>
             <div className="mt-3 space-y-3">
               {section.body.map((paragraph, i) => (
                 <p key={i} className="text-sm leading-relaxed text-ink-soft">
@@ -87,7 +87,7 @@ export default async function BlogPostPageEn({ params }: { params: Promise<{ slu
       </div>
 
       {relatedProducts.length > 0 ? (
-        <div className="mt-14 rounded-2xl border-2 border-brand bg-brand-tint/40 p-6">
+        <div className="mt-14 border-2 border-line-strong bg-paper-raised p-6">
           <p className="text-xs uppercase tracking-[0.15em] text-brand-deep">Order it now</p>
           <div className="mt-3 space-y-3">
             {relatedProducts.map((p) => (
@@ -102,7 +102,7 @@ export default async function BlogPostPageEn({ params }: { params: Promise<{ slu
           </div>
         </div>
       ) : post.quoteMessage ? (
-        <div className="mt-14 rounded-2xl border-2 border-brand bg-brand-tint/40 p-6">
+        <div className="mt-14 border-2 border-line-strong bg-paper-raised p-6">
           <p className="text-xs uppercase tracking-[0.15em] text-brand-deep">Interested?</p>
           <p className="mt-2 text-sm leading-relaxed text-ink-soft">
             This one is quoted per project — tell us about your event or brand and we'll confirm price and turnaround.
@@ -111,7 +111,7 @@ export default async function BlogPostPageEn({ params }: { params: Promise<{ slu
             href={waLink(post.quoteMessage)}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-4 inline-flex rounded-full bg-brand px-6 py-3 text-xs font-semibold uppercase tracking-[0.1em] text-white transition-colors hover:bg-brand-deep"
+            className="btn-edit btn-edit-solid mt-4"
           >
             Get a Quote on WhatsApp
           </a>

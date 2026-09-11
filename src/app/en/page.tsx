@@ -36,68 +36,62 @@ export default function HomeEn() {
   return (
     <>
       {/* Hero */}
-      <section className="mx-auto max-w-6xl px-6 pb-20 pt-16 sm:pt-24">
-        <div className="grid items-center gap-12 sm:grid-cols-2">
+      <section className="mx-auto max-w-6xl px-6 pb-20 pt-16 sm:pt-20">
+        <div className="grid grid-cols-1 items-center gap-12 sm:grid-cols-2">
           <div>
-            <p className="animate-fade-up text-xs uppercase tracking-[0.25em] text-brand">Custom Creative Stationery · Guadalajara, Jalisco</p>
-            <h1 className="animate-fade-up animate-fade-up-1 mt-4 font-display text-4xl leading-[1.1] tracking-tight text-ink text-balance sm:text-5xl">
-              Paper goods made with intention.
+            <h1 className="animate-fade-up font-display text-5xl font-black uppercase leading-[0.95] tracking-tight text-ink text-balance sm:text-6xl lg:text-7xl">
+              Paper with intention.
             </h1>
-            <p className="animate-fade-up animate-fade-up-2 mt-6 max-w-md text-base leading-relaxed text-ink-soft">
-              Yume designs and produces custom stationery made to order from Guadalajara, Jalisco, shipping across all
-              of Mexico: medical prescription pads, stickers, and more. We also customize other products like
-              temporary tattoos, event invitations, menus, and more — tell us what you need when you request a quote.
-              Every piece is approved with you before it goes to print.
+            <p className="animate-fade-up animate-fade-up-1 mt-6 max-w-md text-base leading-relaxed text-ink-soft">
+              Custom stationery made to order in Guadalajara: medical prescription pads, stickers, and pieces built
+              to your specs, approved with you before printing.
             </p>
-            <div className="animate-fade-up animate-fade-up-3 mt-8 flex flex-wrap gap-4">
-              <Link
-                href="/en/products"
-                className="rounded-full bg-brand px-7 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brand-deep active:scale-[0.98]"
-              >
+            <div className="animate-fade-up animate-fade-up-2 mt-8 flex flex-wrap gap-4">
+              <Link href="/en/products" className="btn-edit btn-edit-solid">
                 View shop
               </Link>
               <CtaFillLink
                 href={waLink("Hi, I'm interested in getting a quote for a Yume product.")}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full border border-line px-7 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-ink transition-colors hover:border-brand"
+                className="btn-edit"
               >
                 Quote via WhatsApp
               </CtaFillLink>
             </div>
           </div>
-          <div className="animate-fade-up animate-fade-up-2 flex justify-center sm:justify-end">
+          <div className="animate-fade-up animate-fade-up-1 flex min-w-0 justify-center sm:justify-end">
             <HeroJar />
           </div>
         </div>
       </section>
 
       {/* Featured product */}
-      <section className="border-y border-line bg-paper-raised">
+      <section className="border-y-2 border-line-strong bg-ink text-paper">
         <div className="mx-auto max-w-6xl px-6 py-20">
-          <p className="text-xs uppercase tracking-[0.25em] text-brand">Featured</p>
-          <h2 className="mt-3 font-display text-3xl text-ink text-balance sm:text-4xl">{featuredT.name}</h2>
-          <div className="mt-10 grid gap-10 sm:grid-cols-[1fr_1.2fr] sm:items-start">
-            <div className="flex h-72 items-center justify-center overflow-hidden rounded-2xl border border-line bg-paper p-8">
+          <div className="grid gap-10 sm:grid-cols-[1fr_1.2fr] sm:items-start">
+            <div className="flex h-72 items-center justify-center overflow-hidden border border-paper/20 bg-paper p-8">
               <ProductVisual product={featured} compact />
             </div>
             <div>
-              <p className="text-2xl font-semibold text-ink">
+              <p className="mono-label text-xs text-paper/60">Featured product</p>
+              <h2 className="mt-3 font-display text-3xl font-black uppercase text-balance sm:text-4xl">{featuredT.name}</h2>
+              <p className="mt-4 text-2xl font-semibold">
                 {hasVariants(featured) && "From "}
-                {formatMXN(productDisplayPrice(featured))} <span className="text-sm font-normal text-ink-soft">MXN</span>
+                {formatMXN(productDisplayPrice(featured))} <span className="text-sm font-normal text-paper/60">MXN</span>
               </p>
-              <p className="mt-4 max-w-lg text-sm leading-relaxed text-ink-soft">{featuredT.description}</p>
-              <ul className="mt-6 space-y-2 text-sm text-ink">
+              <p className="mt-4 max-w-lg text-sm leading-relaxed text-paper/75">{featuredT.description}</p>
+              <ul className="mt-6 space-y-2 text-sm">
                 {featuredT.details.map((d) => (
                   <li key={d} className="flex items-start gap-2">
-                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 bg-brand" />
                     {d}
                   </li>
                 ))}
               </ul>
               <Link
                 href={`/en/products/${PRODUCT_SLUG_EN[featured.slug]}`}
-                className="mt-8 inline-block rounded-full bg-brand px-7 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brand-deep active:scale-[0.98]"
+                className="btn-edit btn-edit-solid mt-8 border-paper bg-paper text-ink hover:bg-brand hover:text-paper"
               >
                 View details & quote
               </Link>
@@ -109,23 +103,24 @@ export default function HomeEn() {
       {/* More products */}
       {rest.length > 0 && (
         <section className="mx-auto max-w-6xl px-6 py-20">
-          <h2 className="font-display text-3xl text-ink sm:text-4xl text-balance">More products</h2>
-          <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {rest.map((p) => {
+          <h2 className="font-display text-3xl font-black uppercase text-ink sm:text-4xl text-balance">More products</h2>
+          <div className="mt-10 grid gap-px overflow-hidden border-2 border-line-strong bg-line-strong sm:grid-cols-2">
+            {rest.map((p, i) => {
               const t = productsEn[p.slug];
               return (
                 <Link
                   key={p.slug}
                   href={`/en/products/${PRODUCT_SLUG_EN[p.slug]}`}
-                  className="product-card group rounded-2xl border border-line bg-paper-raised p-6 transition-shadow hover:shadow-lg"
+                  className="product-card group flex flex-col bg-paper-raised p-8"
                 >
-                  <div className="flex h-48 items-center justify-center overflow-hidden">
+                  <span className="mono-label text-xs text-brand">{String(i + 1).padStart(2, "0")}</span>
+                  <div className="mt-4 flex h-48 items-center justify-center overflow-hidden">
                     <div className="product-card-visual">
                       <ProductVisual product={p} compact />
                     </div>
                   </div>
-                  <p className="mt-6 text-xs uppercase tracking-[0.15em] text-brand">{t.category}</p>
-                  <h3 className="mt-1 font-display text-xl text-ink transition-colors group-hover:text-brand">{t.name}</h3>
+                  <p className="mono-label mt-6 text-[11px] text-ink-soft">{t.category}</p>
+                  <h3 className="mt-1 font-display text-xl font-bold text-ink transition-colors group-hover:text-brand">{t.name}</h3>
                   <p className="mt-2 text-lg font-semibold text-ink">
                     {hasVariants(p) && "From "}
                     {formatMXN(productDisplayPrice(p))} MXN
@@ -134,10 +129,7 @@ export default function HomeEn() {
               );
             })}
           </div>
-          <Link
-            href="/en/products"
-            className="mt-10 inline-block text-sm font-semibold uppercase tracking-[0.1em] text-brand hover:text-brand-deep"
-          >
+          <Link href="/en/products" className="mono-label mt-10 inline-block text-xs text-brand hover:text-brand-deep">
             View full shop →
           </Link>
         </section>
@@ -155,23 +147,23 @@ export default function HomeEn() {
       </section>
 
       {/* Values */}
-      <section className="mx-auto max-w-6xl px-6 py-20">
-        <div className="grid gap-10 sm:grid-cols-3">
+      <section className="border-t-2 border-line-strong">
+        <div className="mx-auto grid max-w-6xl gap-10 px-6 py-20 sm:grid-cols-3">
           <div className="sm:col-span-2 sm:border-r sm:border-line sm:pr-10">
-            <h3 className="font-display text-2xl text-ink text-balance">Design tailored to you</h3>
+            <h3 className="font-display text-2xl font-bold text-ink text-balance">Design tailored to you</h3>
             <p className="mt-3 max-w-md text-sm leading-relaxed text-ink-soft">
               Every piece is adjusted to your details, your brand, or your practice — no generic templates.
             </p>
           </div>
           <div className="flex flex-col gap-10">
             <div>
-              <h3 className="font-display text-lg text-ink">You approve before printing</h3>
+              <h3 className="font-display text-lg font-bold text-ink">You approve before printing</h3>
               <p className="mt-2 text-sm leading-relaxed text-ink-soft">
                 You get a digital proof and give the go-ahead before your order goes into production.
               </p>
             </div>
             <div>
-              <h3 className="font-display text-lg text-ink">Made in Guadalajara</h3>
+              <h3 className="font-display text-lg font-bold text-ink">Made in Guadalajara</h3>
               <p className="mt-2 text-sm leading-relaxed text-ink-soft">
                 Local production in Jalisco, shipping across all of Mexico, made for businesses and professionals who
                 want stationery with character.
@@ -182,18 +174,15 @@ export default function HomeEn() {
       </section>
 
       {/* FAQ teaser */}
-      <section id="faq" className="border-t border-line bg-paper-raised">
+      <section id="faq" className="border-t-2 border-line-strong bg-paper-raised">
         <div className="mx-auto max-w-3xl px-6 py-20">
-          <h2 className="font-display text-3xl text-ink text-balance">Have questions?</h2>
+          <h2 className="font-display text-3xl font-black uppercase text-ink text-balance">Have questions?</h2>
           <div className="mt-10 divide-y divide-line border-y border-line">
             {featuredFaq.map((f) => (
               <FaqQuestion key={f.q} item={f} />
             ))}
           </div>
-          <Link
-            href="/en/faq"
-            className="mt-8 inline-block text-sm font-semibold uppercase tracking-[0.1em] text-brand hover:text-brand-deep"
-          >
+          <Link href="/en/faq" className="mono-label mt-8 inline-block text-xs text-brand hover:text-brand-deep">
             View all questions →
           </Link>
         </div>

@@ -2,14 +2,15 @@
 
 :root {
   color-scheme: light;
-  --paper: #fffcf5;
+  --paper: #f7f4ec;
   --paper-raised: #ffffff;
-  --ink: #241b1a;
-  --ink-soft: #6b5d59;
+  --ink: #17130f;
+  --ink-soft: #6b6058;
   --brand: #7c0000;
   --brand-deep: #560000;
   --brand-tint: #f4e3e0;
-  --line: #e7ded7;
+  --line: #d9d0c3;
+  --line-strong: #17130f;
 }
 
 @theme inline {
@@ -21,13 +22,71 @@
   --color-brand-deep: var(--brand-deep);
   --color-brand-tint: var(--brand-tint);
   --color-line: var(--line);
-  --font-display: var(--font-playfair);
+  --color-line-strong: var(--line-strong);
+  --font-display: var(--font-archivo);
   --font-sans: var(--font-inter);
+  --font-mono: var(--font-plex-mono);
 }
 
+html,
 body {
   background: var(--paper);
   color: var(--ink);
+  /* Safety net: HeroJar's canvas has a fixed 420px physics stage (Matter.js
+     wall/item coordinates are absolute pixels, not resizable without
+     re-deriving the whole simulation) that's wider than viewports below
+     ~420px. Clipping horizontal overflow here avoids a sitewide scrollbar
+     from that one fixed-width island instead of touching the physics. */
+  overflow-x: hidden;
+}
+
+/* Editorial chrome: mono, wide-tracked micro-labels (index numbers, page
+   markers, category eyebrows) — the "swiss editorial" signature borrowed
+   from the reference direction, used sparingly per section budget. */
+.mono-label {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+/* Shape system lock: every interactive control and media frame is sharp
+   (no radius). The only rounded-full elements left in the app are the
+   cart-count badge and the mobile language pill — small functional
+   indicators, not layout containers.
+
+   Defined inside @layer components (not as bare rules) so Tailwind's
+   utilities layer — e.g. `hidden` / `sm:inline-flex` on the header's
+   WhatsApp CTA — always wins the cascade over this class's own `display`,
+   regardless of source order. A bare rule here previously broke that
+   responsive hide/show (the button stayed visible and overflowed on
+   mobile) because it shared the same specificity as `.hidden` but came
+   later in the stylesheet. */
+@layer components {
+  .btn-edit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid var(--line-strong);
+    padding: 0.85rem 1.75rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    transition: transform 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+  }
+  .btn-edit:active {
+    transform: scale(0.98);
+  }
+  .btn-edit-solid {
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+  }
+  .btn-edit-solid:hover {
+    background: var(--brand);
+    border-color: var(--brand);
+  }
 }
 
 ::selection {

@@ -52,7 +52,7 @@ export function GalleryGrid({ items, categories, allLabel }: GalleryGridProps) {
               setActive(cat);
               setLightboxIndex(null);
             }}
-            className={`rounded-full border px-4 py-2 text-xs font-semibold uppercase tracking-[0.1em] transition-colors ${
+            className={`border px-4 py-2 text-xs font-semibold uppercase tracking-[0.1em] transition-colors ${
               active === cat ? "border-brand bg-brand text-white" : "border-line text-ink-soft hover:border-brand hover:text-brand"
             }`}
           >
@@ -67,7 +67,7 @@ export function GalleryGrid({ items, categories, allLabel }: GalleryGridProps) {
             key={item.slug}
             type="button"
             onClick={() => setLightboxIndex(i)}
-            className="group relative aspect-[3/4] overflow-hidden rounded-xl border border-line bg-paper-raised text-left"
+            className="group relative aspect-[3/4] overflow-hidden border border-line bg-paper-raised text-left"
           >
             <Image
               src={item.image}
@@ -111,7 +111,7 @@ export function GalleryGrid({ items, categories, allLabel }: GalleryGridProps) {
             <ChevronLeft size={32} aria-hidden="true" />
           </button>
           <div className="relative max-h-[80vh] w-full max-w-md" onClick={(e) => e.stopPropagation()}>
-            <div className="relative aspect-[3/4] max-h-[80vh] w-full overflow-hidden rounded-xl">
+            <div className="relative aspect-[3/4] max-h-[80vh] w-full overflow-hidden ">
               <Image src={active_item.image} alt={active_item.alt} fill sizes="90vw" className="object-contain" priority />
             </div>
             <p className="mt-3 text-center text-sm text-white/90">{active_item.title}</p>

@@ -29,9 +29,8 @@ export default function GalleryPageEn() {
 
   return (
     <section className="mx-auto max-w-6xl px-6 py-16 sm:py-24">
-      <p className="animate-fade-up text-xs uppercase tracking-[0.25em] text-brand">Portfolio</p>
-      <h1 className="animate-fade-up animate-fade-up-1 mt-3 font-display text-4xl text-ink text-balance sm:text-5xl">Sticker gallery</h1>
-      <p className="animate-fade-up animate-fade-up-2 mt-4 max-w-2xl text-sm leading-relaxed text-ink-soft">
+      <h1 className="animate-fade-up font-display text-4xl font-black uppercase text-ink text-balance sm:text-5xl">Sticker gallery</h1>
+      <p className="animate-fade-up animate-fade-up-1 mt-4 max-w-2xl text-sm leading-relaxed text-ink-soft">
         Real examples of vinyl stickers we've produced: Hello Kitty, Kuromi, Pompompurin and other Sanrio characters, Pokémon, Zelda, Coraline, Sylvanian
         Families, pet stickers made from real dog and cat photos, and custom business logos. All made to order from Guadalajara, Jalisco.
       </p>
