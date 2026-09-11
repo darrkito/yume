@@ -87,11 +87,11 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
   return (
     <section className="mx-auto max-w-5xl px-6 py-16 sm:py-24">
       <nav aria-label="Breadcrumb" className="mb-10 text-xs text-ink-soft">
-        <Link href="/" className="hover:text-brand transition-colors">
+        <Link href="/" className="inline-flex min-h-11 items-center hover:text-brand transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
           Inicio
         </Link>
         {" / "}
-        <Link href="/productos" className="hover:text-brand transition-colors">
+        <Link href="/productos" className="inline-flex min-h-11 items-center hover:text-brand transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
           Tienda
         </Link>
         {" / "}

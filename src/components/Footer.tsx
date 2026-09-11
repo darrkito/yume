@@ -45,17 +45,17 @@ export function Footer() {
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.1em] text-ink">{t.explore}</p>
             <ul className="space-y-2">
               <li>
-                <Link href={shopHref} className="hover:text-brand transition-colors">
+                <Link href={shopHref} className="inline-flex min-h-11 items-center hover:text-brand transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
                   {t.shop}
                 </Link>
               </li>
               <li>
-                <Link href={blogHref} className="hover:text-brand transition-colors">
+                <Link href={blogHref} className="inline-flex min-h-11 items-center hover:text-brand transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
                   {t.blog}
                 </Link>
               </li>
               <li>
-                <Link href={faqHref} className="hover:text-brand transition-colors">
+                <Link href={faqHref} className="inline-flex min-h-11 items-center hover:text-brand transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
                   {lang === "en" ? "Frequently Asked Questions" : "Preguntas frecuentes"}
                 </Link>
               </li>
@@ -65,17 +65,17 @@ export function Footer() {
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.1em] text-ink">{t.contact}</p>
             <ul className="space-y-2">
               <li>
-                <a href={waLink(WA_QUOTE_MESSAGE[lang])} target="_blank" rel="noopener noreferrer" className="hover:text-brand transition-colors">
+                <a href={waLink(WA_QUOTE_MESSAGE[lang])} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center hover:text-brand transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
                   WhatsApp
                 </a>
               </li>
               <li>
-                <a href={`mailto:${SITE.email}`} className="hover:text-brand transition-colors">
+                <a href={`mailto:${SITE.email}`} className="inline-flex min-h-11 items-center hover:text-brand transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
                   {SITE.email}
                 </a>
               </li>
               <li>
-                <a href={SITE.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-brand transition-colors">
+                <a href={SITE.instagram} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center hover:text-brand transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
                   Instagram
                 </a>
               </li>

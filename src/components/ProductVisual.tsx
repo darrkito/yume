@@ -61,7 +61,7 @@ export function ProductVisual({ product, compact = false }: { product: Product; 
             className="fixed inset-0 z-[60] flex cursor-zoom-out items-center justify-center bg-black/85 p-4 sm:p-10"
             onClick={() => setOpen(false)}
           >
-            <button type="button" onClick={() => setOpen(false)} aria-label="Cerrar" className="absolute right-4 top-4 text-white/80 hover:text-white">
+            <button type="button" onClick={() => setOpen(false)} aria-label="Cerrar" className="absolute right-4 top-4 flex size-11 items-center justify-center text-white/80 transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
               <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                 <path d="M6 6l12 12M18 6L6 18" strokeLinecap="round" />
               </svg>

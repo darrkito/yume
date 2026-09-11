@@ -118,7 +118,7 @@ export function LogoUploadNote({ slug, lang = "es" }: { slug: string; lang?: Lan
           <img src={preview} alt={t.previewAlt} className="h-16 w-16 rounded-lg border border-line object-contain bg-paper-raised" />
           <div className="min-w-0 flex-1">
             <p className="truncate text-xs text-ink">{fileName}</p>
-            <button type="button" onClick={clearFile} className="mt-1 flex items-center gap-1 text-xs text-ink-soft hover:text-brand transition-colors">
+            <button type="button" onClick={clearFile} className="mt-1 flex min-h-11 items-center gap-1 text-xs text-ink-soft transition-colors hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
               <X size={12} /> {t.remove}
             </button>
           </div>

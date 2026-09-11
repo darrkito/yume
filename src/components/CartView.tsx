@@ -93,7 +93,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
                   onClick={() => updateQty(item.slug, item.qty - 1, item.variantId)}
                   disabled={item.qty <= 1}
                   aria-label={t.decreaseQty}
-                  className="p-2 text-ink-soft transition-colors hover:text-brand disabled:opacity-30"
+                  className="flex size-11 items-center justify-center text-ink-soft transition-colors hover:text-brand disabled:opacity-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
                 >
                   <Minus size={14} />
                 </button>
@@ -102,7 +102,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
                   type="button"
                   onClick={() => updateQty(item.slug, item.qty + 1, item.variantId)}
                   aria-label={t.increaseQty}
-                  className="p-2 text-ink-soft transition-colors hover:text-brand"
+                  className="flex size-11 items-center justify-center text-ink-soft transition-colors hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
                 >
                   <Plus size={14} />
                 </button>
@@ -112,7 +112,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
                 type="button"
                 onClick={() => removeItem(item.slug, item.variantId)}
                 aria-label={`${t.remove} ${item.name}`}
-                className="p-1 text-ink-soft transition-colors hover:text-brand"
+                className="flex size-11 items-center justify-center text-ink-soft transition-colors hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
               >
                 <X size={16} />
               </button>
@@ -156,7 +156,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
       <button
         type="button"
         onClick={clear}
-        className="mt-4 text-xs text-ink-soft underline decoration-line underline-offset-4 transition-colors hover:text-brand"
+        className="mt-4 inline-flex min-h-11 items-center text-xs text-ink-soft underline decoration-line underline-offset-4 transition-colors hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
       >
         {t.emptyCart}
       </button>

@@ -46,11 +46,11 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   return (
     <article className="mx-auto max-w-2xl px-6 py-16 sm:py-24">
       <nav aria-label="Breadcrumb" className="mb-10 text-xs text-ink-soft">
-        <Link href="/" className="hover:text-brand transition-colors">
+        <Link href="/" className="inline-flex min-h-11 items-center hover:text-brand transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
           Inicio
         </Link>
         {" / "}
-        <Link href="/blog" className="hover:text-brand transition-colors">
+        <Link href="/blog" className="inline-flex min-h-11 items-center hover:text-brand transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
           Blog
         </Link>
         {" / "}

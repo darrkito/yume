@@ -156,7 +156,7 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
 
       {mode === "choose" && (
         <div className="mt-10">
-          <button type="button" onClick={() => setMode("form")} className="mb-4 text-xs text-ink-soft hover:text-brand transition-colors">
+          <button type="button" onClick={() => setMode("form")} className="mb-4 inline-flex min-h-11 items-center text-xs text-ink-soft transition-colors hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
             {t.editShipping}
           </button>
           <div className="grid gap-4 sm:grid-cols-2">
@@ -193,7 +193,7 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
       {mode === "onsite" && customer && delivery && (
         <div className="mt-10">
           {!settled && (
-            <button type="button" onClick={() => setMode("choose")} className="mb-4 text-xs text-ink-soft hover:text-brand transition-colors">
+            <button type="button" onClick={() => setMode("choose")} className="mb-4 inline-flex min-h-11 items-center text-xs text-ink-soft transition-colors hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
               {t.changePaymentMethod}
             </button>
           )}
