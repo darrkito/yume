@@ -1,9 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
-import { Archivo, Inter, IBM_Plex_Mono } from "next/font/google";
+import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
-import { InfoBar } from "@/components/InfoBar";
 import { Footer } from "@/components/Footer";
 import { LanguageBanner } from "@/components/LanguageBanner";
 import { HtmlLangSync } from "@/components/HtmlLangSync";
@@ -13,8 +12,8 @@ import { DesignFileProvider } from "@/components/DesignFileContext";
 import { SITE } from "@/content/site";
 import { hreflangFor } from "@/lib/i18n";
 
-const archivo = Archivo({
-  variable: "--font-archivo",
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
   subsets: ["latin"],
   display: "swap",
 });
@@ -22,13 +21,6 @@ const archivo = Archivo({
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
-  display: "swap",
-});
-
-const plexMono = IBM_Plex_Mono({
-  variable: "--font-plex-mono",
-  subsets: ["latin"],
-  weight: ["500", "600"],
   display: "swap",
 });
 
@@ -56,7 +48,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#fffcf5",
+  themeColor: "#fffbf3",
 };
 
 const ORG_ID = `${SITE.url}/#organization`;
@@ -91,7 +83,7 @@ const orgSchema = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es-MX">
-      <body className={`${archivo.variable} ${inter.variable} ${plexMono.variable} font-sans antialiased`}>
+      <body className={`${playfair.variable} ${inter.variable} font-sans antialiased`}>
         {/* Rendered <link>/<meta> tags are hoisted into <head> by Next.js — ARD's
             capability manifest discovery path, real resource (see .well-known/ai-catalog.json). */}
         <link rel="ai-catalog" href={`${SITE.url}/.well-known/ai-catalog.json`} />
@@ -108,7 +100,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <HtmlLangSync />
             <WebMcpProvider />
             <Header />
-            <InfoBar />
             <LanguageBanner />
             <main id="main">{children}</main>
             <Footer />

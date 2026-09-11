@@ -27,8 +27,8 @@ export function AddToCartButton({ product, compact = false, lang = "es" }: { pro
       aria-live="polite"
       className={
         compact
-          ? "mt-3 flex w-full items-center justify-center gap-2 border border-line py-2 text-xs font-semibold uppercase tracking-[0.1em] text-ink transition-colors hover:border-brand hover:text-brand active:scale-[0.98]"
-          : "flex items-center justify-center gap-2 border border-brand px-7 py-3.5 text-sm font-semibold uppercase tracking-[0.15em] text-brand transition-colors hover:bg-brand hover:text-white active:scale-[0.98]"
+          ? "mt-3 flex w-full items-center justify-center gap-2 rounded-full border border-line py-2 text-xs font-semibold text-ink transition-colors hover:border-brand hover:text-brand active:scale-[0.98]"
+          : "btn-soft btn-soft-outline"
       }
     >
       {justAdded ? (

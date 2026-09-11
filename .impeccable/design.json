@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-12T00:00:00Z",
+  "title": "Design System: Yume",
+  "extensions": {
+    "colorMeta": {
+      "brand": {
+        "role": "primary",
+        "displayName": "Yume Burgundy",
+        "canonical": "#7c0000",
+        "tonalRamp": ["#4c0000", "#8f0000", "#cc0000", "#ff0a0a", "#ff4747", "#ff8585", "#ffc2c2", "#ffebeb"]
+      },
+      "brand-deep": {
+        "role": "primary-hover",
+        "displayName": "Yume Burgundy Deep",
+        "canonical": "#560000"
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "canonical": "#fffbf3"
+      },
+      "paper-raised": {
+        "role": "neutral",
+        "displayName": "Paper Raised",
+        "canonical": "#fffdf8"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Warm Ink",
+        "canonical": "#2b211d",
+        "tonalRamp": ["#2e231f", "#55413a", "#7a5e52", "#9c7a6d", "#b59c91", "#cebdb6", "#e6deda", "#f7f4f3"]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "#7d6d63"
+      },
+      "brand-tint": {
+        "role": "neutral",
+        "displayName": "Blush Tint",
+        "canonical": "#f7e6e0",
+        "tonalRamp": ["#3d1b10", "#72331d", "#a2492a", "#cd623c", "#d9896d", "#e6b19e", "#f2d8ce", "#fbf2ef"]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Warm Line",
+        "canonical": "#ecdfd0"
+      },
+      "line-strong": {
+        "role": "neutral",
+        "displayName": "Warm Line Strong",
+        "canonical": "#d8c3ae"
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Page and section headlines, product names. Mixed case, italic-in-brand-color for emphasis." },
+      "body": { "displayName": "Body", "purpose": "All prose copy, ~65ch max width." },
+      "label": { "displayName": "Label", "purpose": "Category tags, form labels, small metadata. Used sparingly, never as a persistent chrome strip." }
+    },
+    "shadows": [
+      { "name": "card-ambient", "value": "0 1px 2px hsl(43 25% 20% / 0.06), 0 12px 28px -14px hsl(43 25% 20% / 0.22)", "purpose": "Resting elevation for card-soft (product cards, blog cards, photo frames)." },
+      { "name": "button-ambient", "value": "0 8px 20px -10px hsl(43 25% 20% / 0.55)", "purpose": "Solid burgundy button at rest." },
+      { "name": "button-ambient-hover", "value": "0 10px 24px -8px hsl(43 25% 20% / 0.6)", "purpose": "Solid burgundy button on hover, paired with a background shift to brand-deep." }
+    ],
+    "motion": [
+      { "name": "tilt-settle", "value": "250ms cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Card tilt straightening + lift on hover/focus (tilt-a/tilt-b)." },
+      { "name": "control-transition", "value": "150ms ease", "purpose": "Button transform/box-shadow/background/color transitions." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Solid burgundy CTA (add to cart, view details, quote).",
+      "html": "<button class=\"ds-btn-primary\">Ver tienda</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; border-radius: 999px; padding: 0.8rem 1.75rem; font-size: 0.875rem; font-weight: 600; letter-spacing: 0.02em; font-family: Inter, system-ui, sans-serif; background: #7c0000; color: #ffffff; border: none; box-shadow: 0 8px 20px -10px hsl(43 25% 20% / 0.55); transition: transform 150ms ease, box-shadow 150ms ease, background-color 150ms ease; } .ds-btn-primary:hover { background: #560000; box-shadow: 0 10px 24px -8px hsl(43 25% 20% / 0.6); } .ds-btn-primary:focus-visible { outline: 2px solid #7c0000; outline-offset: 2px; } .ds-btn-primary:active { transform: scale(0.97); }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary CTA (e.g. Cotizar por WhatsApp).",
+      "html": "<button class=\"ds-btn-outline\">Cotizar por WhatsApp</button>",
+      "css": ".ds-btn-outline { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; border-radius: 999px; padding: 0.8rem 1.75rem; font-size: 0.875rem; font-weight: 600; font-family: Inter, system-ui, sans-serif; background: #fffdf8; color: #2b211d; border: 1.5px solid #d8c3ae; transition: border-color 150ms ease, color 150ms ease; } .ds-btn-outline:hover { border-color: #7c0000; color: #7c0000; } .ds-btn-outline:focus-visible { outline: 2px solid #7c0000; outline-offset: 2px; }"
+    },
+    {
+      "name": "Product Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Product/blog listing card with the signature subtle tilt (tilt-a variant shown).",
+      "html": "<a class=\"ds-card ds-card-tilt-a\" href=\"#\"><div class=\"ds-card-media\"></div><p class=\"ds-card-label\">Etiquetas personalizadas</p><h3 class=\"ds-card-title\">Etiquetas Logo Personalizado</h3><p class=\"ds-card-price\">Desde $100.00 MXN</p></a>",
+      "css": ".ds-card { display: block; background: #fffdf8; border-radius: 1.25rem; padding: 1.75rem; box-shadow: 0 1px 2px hsl(43 25% 20% / 0.06), 0 12px 28px -14px hsl(43 25% 20% / 0.22); text-decoration: none; color: inherit; transition: transform 250ms cubic-bezier(0.16,1,0.3,1); } .ds-card-tilt-a { transform: rotate(-1.1deg); } .ds-card-tilt-a:hover, .ds-card-tilt-a:focus-within { transform: rotate(0deg) translateY(-3px); } .ds-card-media { height: 12rem; border-radius: 0.75rem; background: #f7e6e0; margin-bottom: 1rem; } .ds-card-label { font-family: Inter, system-ui, sans-serif; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #7c0000; margin: 0 0 0.25rem; } .ds-card-title { font-family: 'Playfair Display', Georgia, serif; font-size: 1.25rem; margin: 0 0 0.5rem; color: #2b211d; } .ds-card-price { font-family: Inter, system-ui, sans-serif; font-size: 1.125rem; font-weight: 600; color: #2b211d; margin: 0; }"
+    },
+    {
+      "name": "Category Tag",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Blog category pill.",
+      "html": "<span class=\"ds-tag\">Guías</span>",
+      "css": ".ds-tag { display: inline-block; border-radius: 999px; background: #f7e6e0; color: #560000; font-family: Inter, system-ui, sans-serif; font-size: 0.6875rem; font-weight: 600; padding: 0.25rem 0.75rem; }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "nav",
+      "description": "Sticky header nav link row.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-link\" href=\"#\">Tienda</a><a class=\"ds-nav-link\" href=\"#\">Galería</a></nav>",
+      "css": ".ds-nav { display: flex; gap: 2rem; align-items: center; } .ds-nav-link { font-family: Inter, system-ui, sans-serif; font-size: 0.875rem; color: #7d6d63; text-decoration: none; transition: color 150ms ease; } .ds-nav-link:hover, .ds-nav-link:focus-visible { color: #7c0000; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Desk Drawer",
+    "overview": "Yume's visual system reads like a real desk drawer of a small stationery studio: pieces of paper, stickers, and printed samples set down slightly askew, not squared to a grid. Warmth comes first, precision second, order a distant third. The palette stays close to the material it sells (paper, warm cream, a single deep burgundy ink), typography leans on a real serif rather than a system sans, and the layout tolerates gentle imperfection (a card tilted a degree or two) rather than enforcing machined alignment. This is a deliberate reversal of an earlier Swiss-editorial pass on this same project (bold grotesk display type, mono-caps chrome, sharp 0-radius corners, numbered index cards, a black inversion block) — that direction is a confirmed anti-reference: nothing in this system should drift back toward it.",
+    "keyCharacteristics": [
+      "Warm cream paper background, never stark white or pure black",
+      "One accent color only (burgundy), used deliberately and sparingly",
+      "Soft, generous corner radius everywhere; no sharp rectangles",
+      "Warm-tinted low-alpha shadows instead of hard borders on content surfaces",
+      "A subtle, consistent tilt on card grids for a handmade, non-machined feel",
+      "Serif display type (Playfair Display) paired with a plain sans body (Inter)"
+    ],
+    "rules": [
+      { "name": "The One Accent Rule", "body": "Burgundy is the only saturated color on the page. Every other surface is warm neutral (paper, ink, blush tint). A second accent hue is never introduced.", "section": "colors" },
+      { "name": "The One Emphasis Rule", "body": "To emphasize a word inside a serif headline, use italic of the same family in the brand color. Never mix in a second typeface for emphasis.", "section": "typography" },
+      { "name": "The No-Stack Rule", "body": "A surface is either shadow-elevated (content: cards, photos, buttons) or hairline-structural (chrome: header, footer, dividers). Never both on the same element.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do use warm-tinted shadows (hsl(43 25% 20% / …)) for every card/button shadow — never a neutral or pure-black shadow.",
+      "Do keep burgundy as the only saturated accent color on any page.",
+      "Do use full-pill radius for every button and small tag, 1.25rem for cards/frames.",
+      "Do apply the tilt-a/tilt-b alternation to any new card grid with 2+ items.",
+      "Do keep body copy in Inter and any headline/product-name in Playfair Display."
+    ],
+    "donts": [
+      "Don't reintroduce sharp (0-radius) corners, mono-caps uppercase chrome strips, numbered index cards, or a black/inverted section — all confirmed anti-references from the Swiss-editorial pass this system replaced.",
+      "Don't stack a border and a shadow on the same card or frame.",
+      "Don't introduce a second accent hue (no blue, no green, no purple) even for a single small element.",
+      "Don't use pure #000000 or pure #ffffff anywhere.",
+      "Don't make the tilt effect stronger than about a degree, or apply it to a single isolated card outside a grid."
+    ]
+  }
+}

@@ -37,9 +37,9 @@ export function BlogProductCard({
   const price = productDisplayPrice(product);
   const waMsg = WA_QUOTE_MSG[lang](name, formatMXN(price));
   return (
-    <div className="product-card border border-line bg-paper p-4">
+    <div className="card-soft p-4">
       <Link href={href} className="group flex items-center gap-4">
-        <div className="flex h-20 w-20 shrink-0 justify-center overflow-hidden bg-paper-raised">
+        <div className="flex h-20 w-20 shrink-0 justify-center overflow-hidden rounded-xl bg-paper">
           <div className="product-card-visual">
             <ProductVisual product={product} compact />
           </div>

@@ -55,7 +55,7 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
             id={`variant-${product.slug}`}
             value={variantId}
             onChange={(e) => setVariantId(e.target.value)}
-            className="mt-2 block w-full border border-line bg-paper px-4 py-3 text-sm text-ink"
+            className="mt-2 block w-full rounded-xl border border-line bg-paper px-4 py-3 text-sm text-ink"
           >
             {product.variants!.map((v) => (
               <option key={v.id} value={v.id}>
@@ -73,7 +73,7 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
             {product.variants!.map((v) => (
               <label
                 key={v.id}
-                className={`flex cursor-pointer items-center justify-between gap-3 border px-4 py-3 text-sm transition-colors ${
+                className={`flex cursor-pointer items-center justify-between gap-3 rounded-xl border px-4 py-3 text-sm transition-colors ${
                   variantId === v.id ? "border-brand bg-brand-tint text-ink" : "border-line text-ink-soft hover:border-brand"
                 }`}
               >
@@ -100,7 +100,7 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
           type="button"
           onClick={handleAdd}
           aria-live="polite"
-          className="flex w-full items-center justify-center gap-2 bg-brand px-7 py-3.5 text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brand-deep active:scale-[0.98] sm:w-auto"
+          className="btn-soft btn-soft-solid w-full sm:w-auto"
         >
           {justAdded ? (
             <>
@@ -116,7 +116,7 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
           href={waLink(waMsg)}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block border border-line px-5 py-2 text-center text-xs font-semibold uppercase tracking-[0.1em] text-ink-soft transition-colors hover:border-brand"
+          className="btn-soft btn-soft-outline text-center text-xs"
         >
           {t.quoteWhatsapp}
         </CtaFillLink>

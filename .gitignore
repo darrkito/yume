@@ -47,3 +47,9 @@ CLAUDE.md
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Impeccable live-mode runtime state (session tokens, journals, machine-local
+# absolute paths) — not portable, not meant for git. design.json (the design
+# system sidecar) and live/config.json (framework inject config) ARE tracked.
+.impeccable/live/*
+!.impeccable/live/config.json

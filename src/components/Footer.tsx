@@ -34,15 +34,15 @@ export function Footer() {
   const faqHref = lang === "en" ? "/en/faq" : "/preguntas-frecuentes";
 
   return (
-    <footer className="border-t-2 border-line-strong bg-paper-raised">
+    <footer className="border-t border-line bg-paper-raised">
       <div className="mx-auto max-w-6xl px-6 py-14">
         <div className="grid gap-10 sm:grid-cols-3">
           <div>
-            <p className="font-display text-2xl font-black tracking-tight text-ink">{SITE.name.toUpperCase()}</p>
+            <p className="font-display text-2xl text-ink">{SITE.name}</p>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-ink-soft">{TAGLINE[lang]}</p>
           </div>
           <nav aria-label="Enlaces" className="text-sm text-ink-soft">
-            <p className="mono-label mb-3 text-xs text-ink">{t.explore}</p>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.1em] text-ink">{t.explore}</p>
             <ul className="space-y-2">
               <li>
                 <Link href={shopHref} className="hover:text-brand transition-colors">
@@ -62,7 +62,7 @@ export function Footer() {
             </ul>
           </nav>
           <div className="text-sm text-ink-soft">
-            <p className="mono-label mb-3 text-xs text-ink">{t.contact}</p>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.1em] text-ink">{t.contact}</p>
             <ul className="space-y-2">
               <li>
                 <a href={waLink(WA_QUOTE_MESSAGE[lang])} target="_blank" rel="noopener noreferrer" className="hover:text-brand transition-colors">
@@ -82,7 +82,7 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <div className="mono-label mt-12 border-t border-line pt-6 text-[11px] text-ink-soft">
+        <div className="mt-12 border-t border-line pt-6 text-xs text-ink-soft">
           <p>
             © {new Date().getFullYear()} {SITE.name}. {MADE_IN[lang]}{" "}
             <a href="https://dizayn.com.mx/" target="_blank" rel="noopener noreferrer" className="text-inherit no-underline">

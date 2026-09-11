@@ -2,15 +2,21 @@
 
 :root {
   color-scheme: light;
-  --paper: #f7f4ec;
-  --paper-raised: #ffffff;
-  --ink: #17130f;
-  --ink-soft: #6b6058;
+  /* Warm, soft palette — this is Yume's own original brand identity
+     (cream paper + burgundy), restored and warmed further, not a fresh
+     "artisan brand" default: the burgundy accent and wordmark are fixed
+     brand anchors (see redesign notes), and the cream/paper family is
+     literally what "Yume" (papel/paper) has always meant here. */
+  --paper: #fffbf3;
+  --paper-raised: #fffdf8;
+  --ink: #2b211d;
+  --ink-soft: #7d6d63;
   --brand: #7c0000;
   --brand-deep: #560000;
-  --brand-tint: #f4e3e0;
-  --line: #d9d0c3;
-  --line-strong: #17130f;
+  --brand-tint: #f7e6e0;
+  --line: #ecdfd0;
+  --line-strong: #d8c3ae;
+  --shadow-tint: 43 25% 20%;
 }
 
 @theme inline {
@@ -23,9 +29,8 @@
   --color-brand-tint: var(--brand-tint);
   --color-line: var(--line);
   --color-line-strong: var(--line-strong);
-  --font-display: var(--font-archivo);
+  --font-display: var(--font-playfair);
   --font-sans: var(--font-inter);
-  --font-mono: var(--font-plex-mono);
 }
 
 html,
@@ -40,52 +45,70 @@ body {
   overflow-x: hidden;
 }
 
-/* Editorial chrome: mono, wide-tracked micro-labels (index numbers, page
-   markers, category eyebrows) — the "swiss editorial" signature borrowed
-   from the reference direction, used sparingly per section budget. */
-.mono-label {
-  font-family: var(--font-mono);
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-}
-
-/* Shape system lock: every interactive control and media frame is sharp
-   (no radius). The only rounded-full elements left in the app are the
-   cart-count badge and the mobile language pill — small functional
-   indicators, not layout containers.
-
-   Defined inside @layer components (not as bare rules) so Tailwind's
-   utilities layer — e.g. `hidden` / `sm:inline-flex` on the header's
-   WhatsApp CTA — always wins the cascade over this class's own `display`,
-   regardless of source order. A bare rule here previously broke that
-   responsive hide/show (the button stayed visible and overflowed on
-   mobile) because it shared the same specificity as `.hidden` but came
-   later in the stylesheet. */
+/* Cozy shape + elevation system: soft radius everywhere (buttons full-pill,
+   cards/frames 1.25rem), warm low-alpha shadows tinted to the paper hue
+   instead of hard borders — see craft-skill R7/R10. Defined inside
+   @layer components so Tailwind's utilities (e.g. `hidden` / `sm:inline-flex`
+   on the header's WhatsApp CTA) still win the cascade over this class's own
+   `display`, regardless of source order. */
 @layer components {
-  .btn-edit {
+  .btn-soft {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border: 1.5px solid var(--line-strong);
-    padding: 0.85rem 1.75rem;
-    font-family: var(--font-mono);
-    font-size: 0.75rem;
+    gap: 0.5rem;
+    border-radius: 999px;
+    padding: 0.8rem 1.75rem;
+    font-size: 0.875rem;
     font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.14em;
-    transition: transform 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+    letter-spacing: 0.02em;
+    transition: transform 150ms ease, box-shadow 150ms ease, background-color 150ms ease, color 150ms ease;
   }
-  .btn-edit:active {
-    transform: scale(0.98);
+  .btn-soft:active {
+    transform: scale(0.97);
   }
-  .btn-edit-solid {
-    background: var(--ink);
-    color: var(--paper);
-    border-color: var(--ink);
-  }
-  .btn-edit-solid:hover {
+  .btn-soft-solid {
     background: var(--brand);
+    color: #fff;
+    box-shadow: 0 8px 20px -10px hsl(var(--shadow-tint) / 0.55);
+  }
+  .btn-soft-solid:hover {
+    background: var(--brand-deep);
+    box-shadow: 0 10px 24px -8px hsl(var(--shadow-tint) / 0.6);
+  }
+  .btn-soft-outline {
+    border: 1.5px solid var(--line-strong);
+    color: var(--ink);
+    background: var(--paper-raised);
+  }
+  .btn-soft-outline:hover {
     border-color: var(--brand);
+    color: var(--brand);
+  }
+  .card-soft {
+    border-radius: 1.25rem;
+    background: var(--paper-raised);
+    box-shadow: 0 1px 2px hsl(var(--shadow-tint) / 0.06), 0 12px 28px -14px hsl(var(--shadow-tint) / 0.22);
+  }
+}
+
+/* Handmade-desk tilt: a few degrees of rotation at rest, straightening on
+   hover/focus — like a stack of scattered stationery rather than a rigid
+   grid. Used sparingly (product/blog cards), never on text-only rows. */
+@media (prefers-reduced-motion: no-preference) {
+  .tilt-a {
+    transform: rotate(-1.1deg);
+    transition: transform 250ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 250ms ease;
+  }
+  .tilt-b {
+    transform: rotate(0.9deg);
+    transition: transform 250ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 250ms ease;
+  }
+  .tilt-a:hover,
+  .tilt-a:focus-within,
+  .tilt-b:hover,
+  .tilt-b:focus-within {
+    transform: rotate(0deg) translateY(-3px);
   }
 }
 

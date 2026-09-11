@@ -53,12 +53,12 @@ export function Header() {
   }, [count]);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-line-strong bg-paper">
+    <header className="sticky top-0 z-50 border-b border-line bg-paper/95 backdrop-blur-sm">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link href={lang === "en" ? "/en" : "/"} className="flex items-center gap-2" aria-label={`${SITE.name} — ${t.home}`} onClick={() => setOpen(false)}>
           <Image src="/logo-yume-wordmark.webp" alt={SITE.name} width={215} height={80} className="h-9 w-auto sm:h-11" priority />
         </Link>
-        <nav aria-label="Navegación principal" className="mono-label hidden items-center gap-8 text-xs text-ink-soft sm:flex">
+        <nav aria-label="Navegación principal" className="hidden items-center gap-8 text-sm text-ink-soft sm:flex">
           {navLinks.map((l) => (
             <Link key={l.href} href={l.href} className="hover:text-brand transition-colors">
               {l.label}
@@ -66,7 +66,7 @@ export function Header() {
           ))}
         </nav>
         <div className="flex items-center gap-4">
-          <LanguageToggle className="mono-label hidden items-center gap-1.5 text-xs font-semibold sm:flex" />
+          <LanguageToggle className="hidden items-center gap-1.5 text-xs font-semibold uppercase tracking-[0.08em] sm:flex" />
           <Link href={cartHref} className="relative p-2 text-ink hover:text-brand transition-colors" aria-label={`${t.cart}${count > 0 ? ` (${count})` : ""}`}>
             <ShoppingBag size={22} aria-hidden="true" />
             {count > 0 && (
@@ -77,7 +77,7 @@ export function Header() {
               </span>
             )}
           </Link>
-          <a href={waLink(WA_QUOTE_MESSAGE[lang])} target="_blank" rel="noopener noreferrer" className="btn-edit btn-edit-solid hidden sm:inline-flex">
+          <a href={waLink(WA_QUOTE_MESSAGE[lang])} target="_blank" rel="noopener noreferrer" className="btn-soft btn-soft-solid hidden sm:inline-flex">
             {t.quoteWhatsapp}
           </a>
           <button
@@ -94,7 +94,7 @@ export function Header() {
       </div>
 
       {open && (
-        <nav id="mobile-nav" aria-label="Navegación móvil" className="mono-label border-t border-line-strong bg-paper px-6 py-4 text-sm text-ink-soft sm:hidden">
+        <nav id="mobile-nav" aria-label="Navegación móvil" className="border-t border-line bg-paper px-6 py-4 text-sm text-ink-soft sm:hidden">
           <ul className="flex flex-col gap-4">
             {navLinks.map((l) => (
               <li key={l.href}>
@@ -107,7 +107,7 @@ export function Header() {
               <LanguageToggle className="flex items-center gap-1.5" />
             </li>
             <li>
-              <a href={waLink(WA_QUOTE_MESSAGE[lang])} target="_blank" rel="noopener noreferrer" className="btn-edit btn-edit-solid" onClick={() => setOpen(false)}>
+              <a href={waLink(WA_QUOTE_MESSAGE[lang])} target="_blank" rel="noopener noreferrer" className="btn-soft btn-soft-solid" onClick={() => setOpen(false)}>
                 {t.quoteWhatsapp}
               </a>
             </li>

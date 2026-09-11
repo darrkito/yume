@@ -37,7 +37,7 @@ export function InfiniteGalleryStrip({ items, heading, body, viewAllLabel, viewA
                   key={`${groupIndex}-${item.slug}-${i}`}
                   href={viewAllHref}
                   tabIndex={groupIndex === 1 ? -1 : undefined}
-                  className="group relative mx-2 block h-40 w-32 shrink-0 overflow-hidden border border-line bg-paper-raised sm:h-48 sm:w-40"
+                  className="group relative mx-2 block h-40 w-32 shrink-0 overflow-hidden rounded-xl border border-line bg-paper-raised sm:h-48 sm:w-40"
                 >
                   <Image
                     src={item.image}

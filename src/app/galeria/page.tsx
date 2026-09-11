@@ -27,7 +27,7 @@ export default function GaleriaPage() {
 
   return (
     <section className="mx-auto max-w-6xl px-6 py-16 sm:py-24">
-      <h1 className="animate-fade-up font-display text-4xl font-black uppercase text-ink text-balance sm:text-5xl">Galería de stickers</h1>
+      <h1 className="animate-fade-up font-display text-4xl text-ink text-balance sm:text-5xl">Galería de stickers</h1>
       <p className="animate-fade-up animate-fade-up-1 mt-4 max-w-2xl text-sm leading-relaxed text-ink-soft">
         Ejemplos reales de stickers de vinil que hemos producido: Hello Kitty, Kuromi, Pompompurin y otros personajes de Sanrio, Pokémon, Zelda, Coraline,
         Sylvanian Families, stickers de mascotas con fotos de perros y gatos, y logos personalizados para negocios. Todo hecho por pedido desde Guadalajara,
