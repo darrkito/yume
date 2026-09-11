@@ -31,7 +31,14 @@ export function ProductVisual({ product, compact = false }: { product: Product; 
     return (
       <>
         <span
-          className="product-image-wrap"
+          // `self-stretch` (compact only) makes this flex item actually fill
+          // the card thumbnail's fixed height — the parent uses
+          // `items-center`, so without it the wrap's `height: 100%` (see
+          // .product-image-wrap in globals.css) never resolves to a real
+          // value, and the image falls back to filling the container's
+          // width instead and scales its height by the real aspect ratio,
+          // overflowing tall/portrait photos past the thumbnail box.
+          className={compact ? "product-image-wrap self-stretch" : "product-image-wrap"}
           style={compact ? undefined : { aspectRatio: `${width} / ${height}`, height: "auto", width: "100%" }}
         >
           {!loaded && <span className="product-image-shimmer" aria-hidden="true" />}

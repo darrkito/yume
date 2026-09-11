@@ -28,7 +28,7 @@ export default function ProductsPageEn() {
             <div key={p.slug} className="product-card group flex flex-col bg-paper-raised p-6">
               <Link href={`/en/products/${PRODUCT_SLUG_EN[p.slug]}`}>
                 <span className="mono-label text-xs text-brand">{String(i + 1).padStart(2, "0")}</span>
-                <div className="mt-4 flex h-48 items-center justify-center overflow-hidden">
+                <div className="mt-4 flex h-48 justify-center overflow-hidden">
                   <div className="product-card-visual">
                     <ProductVisual product={p} compact />
                   </div>

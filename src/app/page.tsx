@@ -52,7 +52,7 @@ export default function Home() {
       <section className="border-y-2 border-line-strong bg-ink text-paper">
         <div className="mx-auto max-w-6xl px-6 py-20">
           <div className="grid gap-10 sm:grid-cols-[1fr_1.2fr] sm:items-start">
-            <div className="flex h-72 items-center justify-center overflow-hidden border border-paper/20 bg-paper p-8">
+            <div className="flex h-72 justify-center overflow-hidden border border-paper/20 bg-paper p-8">
               <ProductVisual product={featured} compact />
             </div>
             <div>
@@ -87,7 +87,7 @@ export default function Home() {
             {rest.map((p, i) => (
               <Link key={p.slug} href={`/productos/${p.slug}`} className="product-card group flex flex-col bg-paper-raised p-8">
                 <span className="mono-label text-xs text-brand">{String(i + 1).padStart(2, "0")}</span>
-                <div className="mt-4 flex h-48 items-center justify-center overflow-hidden">
+                <div className="mt-4 flex h-48 justify-center overflow-hidden">
                   <div className="product-card-visual">
                     <ProductVisual product={p} compact />
                   </div>

@@ -68,7 +68,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
             <div className="flex items-center gap-4">
               <Link
                 href={`${shopHref}/${lang === "en" ? (PRODUCT_SLUG_EN[item.slug] ?? item.slug) : item.slug}`}
-                className="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-line bg-paper-raised p-1.5"
+                className="flex h-16 w-16 shrink-0 justify-center overflow-hidden rounded-lg border border-line bg-paper-raised p-1.5"
                 aria-hidden="true"
                 tabIndex={-1}
               >

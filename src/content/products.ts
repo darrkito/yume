@@ -159,6 +159,8 @@ export const products: Product[] = [
       "Ideal para packaging, laptops, agendas, regalos",
     ],
     image: "/stickers-logo-muestra.webp",
+    imageWidth: 900,
+    imageHeight: 1164,
     requiresImage: true,
     faq: [
       {
