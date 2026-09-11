@@ -27,7 +27,7 @@ export function AddToCartButton({ product, compact = false, lang = "es" }: { pro
       aria-live="polite"
       className={
         compact
-          ? "mt-3 flex w-full items-center justify-center gap-2 rounded-full border border-line py-2 text-xs font-semibold text-ink transition-colors hover:border-brand hover:text-brand active:scale-[0.98]"
+          ? "mt-3 flex min-h-11 w-full items-center justify-center gap-2 rounded-full border border-line py-2 text-xs font-semibold text-ink transition-colors hover:border-brand hover:text-brand active:scale-[0.98] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
           : "btn-soft btn-soft-outline"
       }
     >
