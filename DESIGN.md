@@ -78,6 +78,8 @@ Yume's visual system reads like a real desk drawer of a small stationery studio:
 
 A warm, narrow palette: cream paper, a warm near-black ink, and a single burgundy accent — this is Yume's own original brand identity (predates this design pass), restored and warmed further, not an invented "artisan" palette.
 
+**On the resemblance to a "generic warm-craft" palette**: the `taste-skill` anti-slop guidance flags cream-background + oxblood-family-accent + espresso-text as a banned default for premium-consumer/artisan briefs, since it's the single most-reached-for LLM palette for that category. Yume's palette structurally resembles that family. It stays anyway, deliberately: paper and burgundy aren't a generic "artisan brand" reach picked for this redesign, they're literally what the business sells (papel) and its pre-existing brand mark, unchanged across every design pass this system has gone through. This is the documented exception, not an oversight.
+
 ### Primary
 - **Yume Burgundy** (`#7c0000`): the one accent color. Primary CTAs, category labels, links, small accent dots. Used deliberately, not decoratively — see the One Accent Rule below.
 - **Yume Burgundy Deep** (`#560000`): hover/active state for burgundy surfaces (buttons, links).
@@ -173,6 +175,7 @@ Soft and a little imperfect: rounded, warm-shadowed, gently tilted where it fits
 - **Do** apply the tilt-a/tilt-b alternation to any new card grid with 2+ items.
 - **Do** keep body copy in Karla and any headline/product-name in Playfair Display.
 - **Do** keep `.desk-lamp-wash` to at most one per page, on a genuine above-the-fold moment.
+- **Do** write all new copy (headlines, buttons, captions, new blog posts) without em-dashes — use a period, comma, or restructure the sentence instead. Doesn't apply retroactively to already-published copy (see CLAUDE.md's taste-skill audit note) unless a copy rewrite is separately requested.
 
 ### Don't:
 - **Don't** reintroduce sharp (0-radius) corners, mono-caps uppercase chrome strips, numbered index cards, or a black/inverted section — all confirmed anti-references from the Swiss-editorial pass this system replaced.
