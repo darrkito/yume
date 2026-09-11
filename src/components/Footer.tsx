@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { SITE, waLink } from "@/content/site";
+import { CASABLANCA_PRICE, FREE_SHIPPING_THRESHOLD, NATIONAL_SHIPPING_PRICE } from "@/content/shipping";
+import { formatMXN } from "@/lib/format";
 import { UI } from "@/lib/i18n";
 
 const TAGLINE = {
@@ -80,6 +82,20 @@ export function Footer() {
                 </a>
               </li>
             </ul>
+          </div>
+        </div>
+        <div className="mt-12 grid gap-6 border-t border-line pt-8 sm:grid-cols-3">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.1em] text-ink">{t.footerShippingTitle}</p>
+            <p className="mt-2 text-sm leading-relaxed text-ink-soft">{t.footerShippingBody.replace("{national}", formatMXN(NATIONAL_SHIPPING_PRICE)).replace("{threshold}", formatMXN(FREE_SHIPPING_THRESHOLD)).replace("{pickup}", formatMXN(CASABLANCA_PRICE))}</p>
+          </div>
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.1em] text-ink">{t.footerProofTitle}</p>
+            <p className="mt-2 text-sm leading-relaxed text-ink-soft">{t.factProof}</p>
+          </div>
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.1em] text-ink">{t.footerPaymentTitle}</p>
+            <p className="mt-2 text-sm leading-relaxed text-ink-soft">{t.footerPaymentBody}</p>
           </div>
         </div>
         <div className="mt-12 border-t border-line pt-6 text-xs text-ink-soft">

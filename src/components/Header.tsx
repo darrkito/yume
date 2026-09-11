@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, ShoppingBag } from "lucide-react";
+import { Menu, X, ShoppingBag, MessageCircle } from "lucide-react";
 import { SITE, waLink } from "@/content/site";
 import { useCart } from "@/components/CartContext";
 import { LanguageToggle } from "@/components/LanguageToggle";
@@ -58,16 +58,16 @@ export function Header() {
         <Link href={lang === "en" ? "/en" : "/"} className="flex items-center gap-2" aria-label={`${SITE.name} — ${t.home}`} onClick={() => setOpen(false)}>
           <Image src="/logo-yume-wordmark.webp" alt={SITE.name} width={215} height={80} className="h-9 w-auto sm:h-11" priority />
         </Link>
-        <nav aria-label="Navegación principal" className="hidden items-center gap-8 text-sm text-ink-soft sm:flex">
+        <nav aria-label={t.mainNav} className="hidden items-center gap-8 text-sm text-ink-soft sm:flex">
           {navLinks.map((l) => (
-            <Link key={l.href} href={l.href} className="hover:text-brand transition-colors">
+            <Link key={l.href} href={l.href} className="inline-flex min-h-11 items-center hover:text-brand transition-colors">
               {l.label}
             </Link>
           ))}
         </nav>
         <div className="flex items-center gap-4">
           <LanguageToggle className="hidden items-center gap-1.5 text-xs font-semibold uppercase tracking-[0.08em] sm:flex" />
-          <Link href={cartHref} className="relative p-2 text-ink hover:text-brand transition-colors" aria-label={`${t.cart}${count > 0 ? ` (${count})` : ""}`}>
+          <Link href={cartHref} className="relative flex size-11 items-center justify-center text-ink hover:text-brand transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand" aria-label={`${t.cart}${count > 0 ? ` (${count})` : ""}`}>
             <ShoppingBag size={22} aria-hidden="true" />
             {count > 0 && (
               <span
@@ -77,6 +77,7 @@ export function Header() {
               </span>
             )}
           </Link>
+          <a href={waLink(WA_QUOTE_MESSAGE[lang])} target="_blank" rel="noopener noreferrer" aria-label={t.quoteWhatsapp} className="flex size-11 items-center justify-center text-ink transition-colors hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand sm:hidden"><MessageCircle size={22} aria-hidden="true" /></a>
           <a href={waLink(WA_QUOTE_MESSAGE[lang])} target="_blank" rel="noopener noreferrer" className="btn-soft btn-soft-solid hidden sm:inline-flex">
             {t.quoteWhatsapp}
           </a>
@@ -85,7 +86,7 @@ export function Header() {
             onClick={() => setOpen((v) => !v)}
             aria-expanded={open}
             aria-controls="mobile-nav"
-            aria-label={open ? "Cerrar menú" : "Abrir menú"}
+            aria-label={open ? t.closeMenu : t.openMenu}
             className="flex size-11 items-center justify-center text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand sm:hidden"
           >
             {open ? <X size={22} aria-hidden="true" /> : <Menu size={22} aria-hidden="true" />}
@@ -94,7 +95,7 @@ export function Header() {
       </div>
 
       {open && (
-        <nav id="mobile-nav" aria-label="Navegación móvil" className="border-t border-line bg-paper px-6 py-4 text-sm text-ink-soft sm:hidden">
+        <nav id="mobile-nav" aria-label={t.mobileNav} className="border-t border-line bg-paper px-6 py-4 text-sm text-ink-soft sm:hidden">
           <ul className="flex flex-col gap-4">
             {navLinks.map((l) => (
               <li key={l.href}>

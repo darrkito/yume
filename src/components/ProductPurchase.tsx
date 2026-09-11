@@ -112,7 +112,7 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
             {product.variants!.map((v) => (
               <label
                 key={v.id}
-                className={`flex cursor-pointer items-center justify-between gap-3 rounded-xl border px-4 py-3 text-sm transition-colors ${
+                className={`flex cursor-pointer items-center justify-between gap-3 rounded-xl border px-4 py-2.5 sm:py-3 text-sm transition-colors ${
                   variantId === v.id ? "border-brand bg-brand-tint text-ink" : "border-line text-ink-soft hover:border-brand"
                 }`}
               >
