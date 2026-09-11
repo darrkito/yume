@@ -17,7 +17,11 @@ export function LanguageToggle({ className }: { className?: string }) {
   return (
     <span className={className ?? "flex items-center gap-1.5 text-xs font-semibold uppercase tracking-[0.1em]"}>
       {isEn ? (
-        <Link href={esHref} className="text-ink-soft transition-colors hover:text-brand" aria-label="Cambiar a español">
+        <Link
+          href={esHref}
+          className="inline-flex min-h-11 items-center px-1 text-ink-soft transition-colors hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+          aria-label="Cambiar a español"
+        >
           ES
         </Link>
       ) : (
@@ -33,7 +37,11 @@ export function LanguageToggle({ className }: { className?: string }) {
           EN
         </span>
       ) : (
-        <Link href={enHref} className="text-ink-soft transition-colors hover:text-brand" aria-label="Switch to English">
+        <Link
+          href={enHref}
+          className="inline-flex min-h-11 items-center px-1 text-ink-soft transition-colors hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+          aria-label="Switch to English"
+        >
           EN
         </Link>
       )}

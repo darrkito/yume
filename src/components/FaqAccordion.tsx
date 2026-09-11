@@ -19,7 +19,7 @@ export function FaqQuestion({ item }: { item: FaqItem }) {
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
         aria-controls={panelId}
-        className="flex w-full cursor-pointer items-center justify-between gap-4 text-left font-display text-lg text-ink"
+        className="flex min-h-11 w-full cursor-pointer items-center justify-between gap-4 text-left font-display text-lg text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
       >
         {item.q}
         <ChevronDown
