@@ -1,12 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { Minus, Plus, X, ImageUp, CreditCard } from "lucide-react";
+import { Minus, Plus, X, ImageUp, CreditCard, Truck, CheckCircle2, Clock, ShieldCheck, MessageCircle } from "lucide-react";
 import { useCart } from "@/components/CartContext";
 import { getProduct } from "@/content/products";
 import { ProductVisual } from "@/components/ProductVisual";
 import { CtaFillLink } from "@/components/CtaFillLink";
 import { waLink } from "@/content/site";
+import { FREE_SHIPPING_THRESHOLD, NATIONAL_SHIPPING_PRICE, CASABLANCA_PRICE } from "@/content/shipping";
 import { formatMXN } from "@/lib/format";
 import { PRODUCT_SLUG_EN, UI, type Lang } from "@/lib/i18n";
 
@@ -51,6 +52,15 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
         >
           {t.viewShop}
         </Link>
+        <p className="mt-6 text-sm text-ink-soft">{t.emptyCartHelp}</p>
+        <a
+          href={waLink(lang === "es" ? "Hola, me interesa cotizar un producto de Yume." : "Hi, I'm interested in getting a quote for a Yume product.")}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-3 inline-flex min-h-11 items-center gap-1.5 text-sm font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+        >
+          <MessageCircle size={16} aria-hidden="true" />{t.quoteWhatsapp}
+        </a>
       </section>
     );
   }
@@ -132,9 +142,27 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
         </div>
       )}
 
-      <div className="mt-8 flex items-center justify-between">
-        <p className="text-sm text-ink-soft">{t.total}</p>
-        <p className="font-display text-2xl text-ink">{formatMXN(total)} MXN</p>
+      {total < FREE_SHIPPING_THRESHOLD && (
+        <div className="mt-8 rounded-xl border border-line bg-paper-raised p-4">
+          <p className="text-sm text-ink">{t.freeShippingProgress.replace("{remaining}", formatMXN(FREE_SHIPPING_THRESHOLD - total))}</p>
+          <div className="mt-3 h-1.5 w-full overflow-hidden rounded-full bg-line">
+            <div className="h-full rounded-full bg-brand transition-[width] duration-300" style={{ width: `${Math.min(100, Math.round((total / FREE_SHIPPING_THRESHOLD) * 100))}%` }} />
+          </div>
+        </div>
+      )}
+      {total >= FREE_SHIPPING_THRESHOLD && (
+        <div className="mt-8 flex items-start gap-2 rounded-xl border border-line bg-paper-raised p-4 text-sm text-ink"><Truck size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.freeShippingReached}</div>
+      )}
+
+      <div className="mt-8 border-t border-line pt-6">
+        <div className="flex items-center justify-between text-sm text-ink-soft"><span>{t.subtotal}</span><span>{formatMXN(total)} MXN</span></div>
+        <div className="mt-2 flex items-center justify-between text-sm text-ink-soft"><span>{t.shippingLabel}</span><span>{total >= FREE_SHIPPING_THRESHOLD ? t.freeShipping : `${formatMXN(NATIONAL_SHIPPING_PRICE)} MXN`}</span></div>
+        <p className="mt-2 text-xs text-ink-soft">{t.pickupAlternative.replace("{pickup}", formatMXN(CASABLANCA_PRICE))}</p>
+        <div className="mt-4 flex items-center justify-between border-t border-line pt-4">
+          <p className="text-sm text-ink-soft">{t.total}</p>
+          <p className="font-display text-2xl text-ink">{formatMXN(total >= FREE_SHIPPING_THRESHOLD ? total : total + NATIONAL_SHIPPING_PRICE)} MXN</p>
+        </div>
+        <p className="mt-2 text-xs text-ink-soft">{t.totalNote}</p>
       </div>
 
       <div className="mt-8 flex flex-col items-start gap-3">
@@ -148,11 +176,16 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
           href={waLink(buildWaMessage())}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block rounded-full border border-line px-5 py-2 text-center text-xs font-semibold uppercase tracking-[0.1em] text-ink-soft transition-colors hover:border-brand"
+          className="inline-flex min-h-11 items-center rounded-full border border-line px-5 py-2 text-center text-sm font-semibold text-ink-soft transition-colors hover:border-brand"
         >
           {t.quoteWhatsapp}
         </CtaFillLink>
       </div>
+      <ul className="mt-6 space-y-2 text-sm text-ink">
+        <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.factProof}</li>
+        <li className="flex items-start gap-2"><Clock size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.factTiming}</li>
+        <li className="flex items-start gap-2"><ShieldCheck size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.securePayment}</li>
+      </ul>
       <button
         type="button"
         onClick={clear}

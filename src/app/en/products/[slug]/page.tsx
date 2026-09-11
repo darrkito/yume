@@ -99,7 +99,7 @@ export default async function ProductPageEn({ params }: { params: Promise<{ slug
 
       <div className="grid gap-8 sm:gap-14 sm:grid-cols-2 sm:items-start">
         <div className="sm:sticky sm:top-24 sm:self-start">
-          <div className="product-zoom-frame card-soft flex items-center justify-center p-4 [&_img]:max-h-44 [&_img]:w-auto [&_img]:object-contain sm:[&_img]:max-h-none sm:justify-start sm:p-10">
+          <div className="product-zoom-frame card-soft flex items-center justify-center p-4 [&_img]:max-h-44 [&_img]:w-auto [&_img]:object-contain [&_.product-zoom-img]:max-h-44 sm:[&_img]:max-h-none sm:[&_.product-zoom-img]:max-h-none sm:justify-start sm:p-10">
             <div className="product-zoom-img">
               <ProductVisual product={product} />
             </div>

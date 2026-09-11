@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { CreditCard, ExternalLink, Store } from "lucide-react";
+import { CreditCard, ExternalLink, Store, ShieldCheck, CheckCircle2 } from "lucide-react";
 import { useCart } from "@/components/CartContext";
 import { useDesignFiles } from "@/components/DesignFileContext";
 import { MercadoPagoBrick } from "@/components/MercadoPagoBrick";
@@ -110,7 +110,7 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
         <>
           <ul className="mt-8 divide-y divide-line border-y border-line text-sm">
             {items.map((item) => (
-              <li key={item.slug} className="flex items-center justify-between py-3">
+              <li key={`${item.slug}:${item.variantId ?? ""}`} className="flex items-center justify-between py-3">
                 <span className="text-ink">
                   {item.name} <span className="text-ink-soft">x{item.qty}</span>
                 </span>
@@ -128,6 +128,10 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
             <p className="text-sm text-ink-soft">{t.total}</p>
             <p className="font-display text-2xl text-ink">{formatMXN(grandTotal)} MXN</p>
           </div>
+          <ul className="mt-5 space-y-2 text-sm text-ink">
+            <li className="flex items-start gap-2"><ShieldCheck size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.securePayment}</li>
+            <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.afterPayment}</li>
+          </ul>
         </>
       )}
 

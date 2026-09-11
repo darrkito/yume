@@ -122,6 +122,7 @@ export function ShippingForm({
               onChange={update("phone")}
               placeholder="33 1234 5678"
             />
+            <p className="mt-1 text-xs text-ink-soft">{t.phoneHelp}</p>
           </div>
         </div>
       </div>
