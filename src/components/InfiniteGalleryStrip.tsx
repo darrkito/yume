@@ -23,7 +23,10 @@ export function InfiniteGalleryStrip({ items, heading, body, viewAllLabel, viewA
           <h2 className="font-display text-2xl text-ink">{heading}</h2>
           <p className="mt-2 max-w-lg text-sm leading-relaxed text-ink-soft">{body}</p>
         </div>
-        <Link href={viewAllHref} className="text-xs font-semibold uppercase tracking-[0.15em] text-brand hover:text-brand-deep transition-colors">
+        <Link
+          href={viewAllHref}
+          className="inline-flex min-h-11 items-center text-xs font-semibold uppercase tracking-[0.15em] text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+        >
           {viewAllLabel} →
         </Link>
       </div>
