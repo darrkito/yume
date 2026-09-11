@@ -46,7 +46,7 @@ export function InfiniteGalleryStrip({ items, heading, body, viewAllLabel, viewA
                     src={item.image}
                     alt={item.alt}
                     fill
-                    sizes="(min-width: 640px) 160px, 128px"
+                    sizes="(min-width: 640px) 320px, 256px"
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                 </Link>

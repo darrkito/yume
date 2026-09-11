@@ -3,6 +3,18 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { UI } from "@/lib/i18n";
+
+const CATEGORY_PRODUCT: Record<string, "logos" | "stickers"> = {
+  Logos: "logos",
+};
+// Every other category (Sanrio, Videojuegos, Anime y Terror, Mascotas,
+// Ternurines) is custom vinyl sticker work.
+function productHrefFor(category: string, lang: "es" | "en") {
+  const kind = CATEGORY_PRODUCT[category] ?? "stickers";
+  if (lang === "en") return kind === "logos" ? "/en/products/custom-logo-stickers" : "/en/products/waterproof-vinyl-stickers";
+  return kind === "logos" ? "/productos/stickers-logo-personalizado" : "/productos/stickers-vinil-impermeable";
+}
 
 export interface GalleryGridItem {
   slug: string;
@@ -18,9 +30,11 @@ interface GalleryGridProps {
   items: GalleryGridItem[];
   categories: readonly string[];
   allLabel: string;
+  lang?: "es" | "en";
 }
 
-export function GalleryGrid({ items, categories, allLabel }: GalleryGridProps) {
+export function GalleryGrid({ items, categories, allLabel, lang = "es" }: GalleryGridProps) {
+  const t = UI[lang];
   const [active, setActive] = useState<string>(allLabel);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
@@ -115,6 +129,13 @@ export function GalleryGrid({ items, categories, allLabel }: GalleryGridProps) {
               <Image src={active_item.image} alt={active_item.alt} fill sizes="90vw" className="object-contain" priority />
             </div>
             <p className="mt-3 text-center text-sm text-white/90">{active_item.title}</p>
+            <a
+              href={productHrefFor(active_item.category, lang)}
+              className="btn-soft btn-soft-solid mx-auto mt-4 flex w-fit"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {t.galleryCtaButton}
+            </a>
           </div>
           <button
             type="button"
