@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ShoppingBag, Check } from "lucide-react";
+import { ShoppingBag, Check, Truck, ShieldCheck } from "lucide-react";
 import { useCart } from "@/components/CartContext";
 import { CtaFillLink } from "@/components/CtaFillLink";
 import { cartItemLabel, defaultVariantId, hasVariants, resolvePrice, type Product } from "@/content/products";
@@ -44,6 +44,10 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
     <div className="mt-4">
       <p className="text-2xl font-semibold text-ink">
         {formatMXN(price)} <span className="text-sm font-normal text-ink-soft">MXN</span>
+      </p>
+      <p className="mt-2 flex items-start gap-2 text-xs leading-relaxed text-ink-soft">
+        <Truck size={14} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />
+        {t.shippingEstimate}
       </p>
 
       {hasVariants(product) && product.variants!.length > RADIO_VS_SELECT_THRESHOLD && (
@@ -120,6 +124,10 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
         >
           {t.quoteWhatsapp}
         </CtaFillLink>
+        <p className="flex items-start gap-2 text-xs leading-relaxed text-ink-soft">
+          <ShieldCheck size={14} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />
+          {t.approvalReassurance}
+        </p>
       </div>
     </div>
   );

@@ -173,6 +173,10 @@ export const UI: Record<Lang, Record<string, string>> = {
     switchToSpanish: "Cambiar a español",
     switchToEnglish: "Switch to English",
     viewingInEnglish: "Estás viendo esta página en inglés.",
+    shippingEstimate: "Envío nacional $150 MXN (gratis desde $750) · Producción 3-5 días + envío 2-5 días",
+    approvalReassurance: "Apruebas el diseño antes de imprimir — sin sorpresas.",
+    checkoutStepShipping: "Paso 1 de 2 · Envío",
+    checkoutStepPayment: "Paso 2 de 2 · Pago",
   },
   en: {
     home: "Home",
@@ -255,5 +259,9 @@ export const UI: Record<Lang, Record<string, string>> = {
     switchToSpanish: "Cambiar a español",
     switchToEnglish: "Switch to English",
     viewingInEnglish: "You're viewing this page in English.",
+    shippingEstimate: "Nationwide shipping $150 MXN (free from $750) · Production 3-5 days + shipping 2-5 days",
+    approvalReassurance: "You approve the design before we print — no surprises.",
+    checkoutStepShipping: "Step 1 of 2 · Shipping",
+    checkoutStepPayment: "Step 2 of 2 · Payment",
   },
 };

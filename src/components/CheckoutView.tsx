@@ -100,6 +100,11 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
     <section className="mx-auto max-w-2xl px-6 py-16 sm:py-24">
       <p className="animate-fade-up text-xs uppercase tracking-[0.25em] text-brand">{t.checkout}</p>
       <h1 className="animate-fade-up animate-fade-up-1 mt-3 font-display text-4xl text-ink">{mode === "form" ? t.yourDetailsShipping : t.chooseHowToPay}</h1>
+      {!settled && (
+        <p className="animate-fade-up animate-fade-up-2 mt-2 text-xs font-semibold uppercase tracking-[0.1em] text-ink-soft">
+          {mode === "form" ? t.checkoutStepShipping : t.checkoutStepPayment}
+        </p>
+      )}
 
       {!settled && (
         <>
