@@ -14,7 +14,7 @@ export default function ContactoPage() {
   return (
     <section className="mx-auto max-w-3xl px-6 py-16 sm:py-24">
       <p className="animate-fade-up text-xs uppercase tracking-[0.25em] text-brand">Contacto</p>
-      <h1 className="animate-fade-up animate-fade-up-1 mt-3 font-display text-4xl text-ink sm:text-5xl">Hablemos</h1>
+      <h1 className="animate-fade-up animate-fade-up-1 mt-3 font-display text-4xl text-ink sm:text-5xl">Cotiza tu producto personalizado</h1>
       <p className="animate-fade-up animate-fade-up-2 mt-4 max-w-lg text-sm leading-relaxed text-ink-soft">
         La forma más rápida de cotizar es por WhatsApp: cuéntanos qué necesitas (recetario, etiquetas, stickers, cantidad, diseño) y te respondemos con precio y siguientes pasos.
       </p>

@@ -47,7 +47,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 px-6 pb-20 pt-16 sm:grid-cols-2 sm:pt-20">
           <div>
             <h1 className="animate-fade-up font-display text-4xl leading-[1.1] text-ink text-balance sm:text-5xl lg:text-6xl">
-              Piezas de papel hechas con <em className="italic text-brand">intención</em>.
+              Papelería creativa hecha con <em className="italic text-brand">intención</em>.
             </h1>
             <p className="animate-fade-up animate-fade-up-1 mt-6 max-w-md text-base leading-relaxed text-ink-soft">
               Papelería y artículos personalizados hechos sobre pedido en Guadalajara: recetarios médicos, etiquetas y
