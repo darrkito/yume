@@ -34,6 +34,9 @@ export function Footer() {
   const shopHref = lang === "en" ? "/en/products" : "/productos";
   const blogHref = lang === "en" ? "/en/blog" : "/blog";
   const faqHref = lang === "en" ? "/en/faq" : "/preguntas-frecuentes";
+  const aboutHref = lang === "en" ? "/en/about" : "/nosotros";
+  const contactPageHref = lang === "en" ? "/en/contact" : "/contacto";
+  const privacyHref = lang === "en" ? "/en/privacy" : "/privacidad";
 
   return (
     <footer className="border-t border-line bg-paper-raised">
@@ -61,11 +64,21 @@ export function Footer() {
                   {lang === "en" ? "Frequently Asked Questions" : "Preguntas frecuentes"}
                 </Link>
               </li>
+              <li>
+                <Link href={aboutHref} className="inline-flex min-h-11 items-center hover:text-brand transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
+                  {t.about}
+                </Link>
+              </li>
             </ul>
           </nav>
           <div className="text-sm text-ink-soft">
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.1em] text-ink">{t.contact}</p>
             <ul className="space-y-2">
+              <li>
+                <Link href={contactPageHref} className="inline-flex min-h-11 items-center hover:text-brand transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
+                  {t.contact}
+                </Link>
+              </li>
               <li>
                 <a href={waLink(WA_QUOTE_MESSAGE[lang])} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center hover:text-brand transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
                   WhatsApp
@@ -98,13 +111,16 @@ export function Footer() {
             <p className="mt-2 text-sm leading-relaxed text-ink-soft">{t.footerPaymentBody}</p>
           </div>
         </div>
-        <div className="mt-12 border-t border-line pt-6 text-xs text-ink-soft">
+        <div className="mt-12 flex flex-wrap items-center justify-between gap-4 border-t border-line pt-6 text-xs text-ink-soft">
           <p>
             © {new Date().getFullYear()} {SITE.name}. {MADE_IN[lang]}{" "}
             <a href="https://dizayn.com.mx/" target="_blank" rel="noopener noreferrer" className="text-inherit no-underline">
               {FOOTER_CREDIT[lang]}
             </a>
           </p>
+          <Link href={privacyHref} className="inline-flex min-h-11 items-center hover:text-brand transition-colors">
+            {t.privacy}
+          </Link>
         </div>
       </div>
     </footer>

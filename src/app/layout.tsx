@@ -70,6 +70,14 @@ const orgSchema = {
     addressCountry: "MX",
   },
   geo: { "@type": "GeoCoordinates", latitude: SITE.geo.lat, longitude: SITE.geo.lng },
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: `+${SITE.whatsappNumber}`,
+    email: SITE.email,
+    contactType: "customer service",
+    areaServed: "MX",
+    availableLanguage: ["es", "en"],
+  },
   areaServed: [
     { "@type": "City", name: "Guadalajara" },
     { "@type": "City", name: "Zapopan" },

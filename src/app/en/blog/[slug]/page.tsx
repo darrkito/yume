@@ -105,7 +105,7 @@ export default async function BlogPostPageEn({ params }: { params: Promise<{ slu
         <div className="card-soft mt-14 p-6">
           <p className="text-xs font-semibold uppercase tracking-[0.1em] text-brand-deep">Interested?</p>
           <p className="mt-2 text-sm leading-relaxed text-ink-soft">
-            This one is quoted per project — tell us about your event or brand and we'll confirm price and turnaround.
+            This one is quoted per project — tell us about your event or brand and we&apos;ll confirm price and turnaround.
           </p>
           <a
             href={waLink(post.quoteMessage)}

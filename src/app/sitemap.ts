@@ -33,6 +33,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     { url: `${SITE.url}/blog`, changeFrequency: "weekly", priority: 0.7, alternates: withLanguages("/blog") },
     { url: `${SITE.url}/en/blog`, changeFrequency: "weekly", priority: 0.6, alternates: withLanguages("/blog") },
+
+    { url: `${SITE.url}/nosotros`, changeFrequency: "monthly", priority: 0.5, alternates: withLanguages("/nosotros") },
+    { url: `${SITE.url}/en/about`, changeFrequency: "monthly", priority: 0.4, alternates: withLanguages("/nosotros") },
+
+    { url: `${SITE.url}/contacto`, changeFrequency: "monthly", priority: 0.6, alternates: withLanguages("/contacto") },
+    { url: `${SITE.url}/en/contact`, changeFrequency: "monthly", priority: 0.5, alternates: withLanguages("/contacto") },
+
+    { url: `${SITE.url}/privacidad`, changeFrequency: "yearly", priority: 0.3, alternates: withLanguages("/privacidad") },
+    { url: `${SITE.url}/en/privacy`, changeFrequency: "yearly", priority: 0.2, alternates: withLanguages("/privacidad") },
   ];
 
   for (const p of products) {

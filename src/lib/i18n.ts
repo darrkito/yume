@@ -48,6 +48,9 @@ const STATIC_PATH_EN: Record<string, string> = {
   "/pago/exito": "/en/checkout/success",
   "/pago/error": "/en/checkout/error",
   "/pago/pendiente": "/en/checkout/pending",
+  "/nosotros": "/en/about",
+  "/contacto": "/en/contact",
+  "/privacidad": "/en/privacy",
 };
 const STATIC_PATH_ES: Record<string, string> = Object.fromEntries(
   Object.entries(STATIC_PATH_EN).map(([es, en]) => [en, es]),
@@ -99,6 +102,8 @@ export const UI: Record<Lang, Record<string, string>> = {
     faqNav: "Preguntas",
     explore: "Explora",
     contact: "Contacto",
+    about: "Nosotros",
+    privacy: "Aviso de Privacidad",
     quoteWhatsapp: "Cotizar por WhatsApp",
     viewOptions: "Ver opciones",
     listingCtaTitle: "¿Buscas algo distinto?",
@@ -222,6 +227,8 @@ export const UI: Record<Lang, Record<string, string>> = {
     faqNav: "FAQ",
     explore: "Explore",
     contact: "Contact",
+    about: "About",
+    privacy: "Privacy Policy",
     quoteWhatsapp: "Quote via WhatsApp",
     viewOptions: "View options",
     listingCtaTitle: "Looking for something else?",

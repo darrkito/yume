@@ -18,7 +18,7 @@ function prefersMarkdown(req: NextRequest): boolean {
 
 function markdownResponse(body: string | null): NextResponse | null {
   if (body === null) return null;
-  return new NextResponse(body, { headers: { "Content-Type": "text/markdown; charset=utf-8" } });
+  return new NextResponse(body, { headers: { "Content-Type": "text/markdown; charset=utf-8", Vary: "Accept" } });
 }
 
 export async function middleware(req: NextRequest) {
@@ -29,7 +29,7 @@ export async function middleware(req: NextRequest) {
   if (pathname === "/" || pathname === "/en") {
     const res = await fetch(new URL("/llms.txt", origin));
     if (res.ok) {
-      return new NextResponse(await res.text(), { headers: { "Content-Type": "text/markdown; charset=utf-8" } });
+      return new NextResponse(await res.text(), { headers: { "Content-Type": "text/markdown; charset=utf-8", Vary: "Accept" } });
     }
   }
 

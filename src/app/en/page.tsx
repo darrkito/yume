@@ -266,7 +266,7 @@ export default function HomeEn() {
           <div>
             <h2 className="font-display text-2xl text-ink text-balance sm:text-3xl">Have a design in mind?</h2>
             <p className="mt-2 max-w-md text-sm leading-relaxed text-ink-soft">
-              Get a free quote via WhatsApp and we'll reply with pricing and timing, no strings attached.
+              Get a free quote via WhatsApp and we&apos;ll reply with pricing and timing, no strings attached.
             </p>
           </div>
           <CtaFillLink
