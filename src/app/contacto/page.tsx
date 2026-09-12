@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { MessageCircle, Mail, MapPin, AtSign } from "lucide-react";
+import { Mail, MapPin, AtSign } from "lucide-react";
 import { SITE, waLink } from "@/content/site";
 import { pageMetadata, breadcrumbSchema } from "@/lib/seo";
+import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 
 export const metadata: Metadata = pageMetadata({
   title: "Contacto — Cotiza tu Papelería Personalizada",
@@ -26,7 +27,7 @@ export default function ContactoPage() {
           rel="noopener noreferrer"
           className="inline-flex min-h-11 items-center gap-2 text-base font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
         >
-          <MessageCircle size={20} aria-hidden="true" />
+          <WhatsAppIcon size={20} />
           Cotizar por WhatsApp
         </a>
         <a
