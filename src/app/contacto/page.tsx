@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
 import { MessageCircle, Mail, MapPin, AtSign } from "lucide-react";
 import { SITE, waLink } from "@/content/site";
-import { hreflangFor } from "@/lib/i18n";
+import { pageMetadata, breadcrumbSchema } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Contacto",
+export const metadata: Metadata = pageMetadata({
+  title: "Contacto — Cotiza tu Papelería Personalizada",
   description: "Contacta a Yume por WhatsApp, correo o Instagram para cotizar tu papelería o artículos personalizados. Envíos a todo México desde Guadalajara.",
-  alternates: { canonical: "/contacto", languages: hreflangFor("/contacto") },
-};
+  path: "/contacto",
+});
 
 export default function ContactoPage() {
+  const breadcrumb = breadcrumbSchema("/contacto", [{ name: "Inicio", url: "/" }, { name: "Contacto" }]);
   return (
     <section className="mx-auto max-w-3xl px-6 py-16 sm:py-24">
       <p className="animate-fade-up text-xs uppercase tracking-[0.25em] text-brand">Contacto</p>
@@ -56,6 +57,7 @@ export default function ContactoPage() {
           Cada pieza se produce sobre pedido, así que el tiempo de entrega varía según el producto y la cantidad. Te confirmamos el tiempo exacto al cotizar por WhatsApp — no publicamos un plazo fijo porque preferimos darte el real para tu pedido, no un estimado genérico.
         </p>
       </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
     </section>
   );
 }

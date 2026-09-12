@@ -2,15 +2,28 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { blogPosts } from "@/content/blog";
 import { formatBlogDate } from "@/lib/format";
-import { hreflangFor } from "@/lib/i18n";
+import { pageMetadata, breadcrumbSchema } from "@/lib/seo";
+import { SITE } from "@/content/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Blog de papelería personalizada",
   description: "Guías sobre papelería personalizada, recetarios médicos y etiquetas para negocios en Guadalajara y Jalisco.",
-  alternates: { canonical: "/blog", languages: hreflangFor("/blog") },
+  path: "/blog",
+});
+
+const blogSchema = {
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "@id": `${SITE.url}/blog#blog`,
+  name: "Blog de Yume",
+  url: `${SITE.url}/blog`,
+  publisher: { "@id": `${SITE.url}/#organization` },
+  blogPost: blogPosts.map((p) => ({ "@type": "BlogPosting", headline: p.title, url: `${SITE.url}/blog/${p.slug}`, datePublished: p.publishedAt })),
 };
 
 export default function BlogIndexPage() {
+  const breadcrumb = breadcrumbSchema("/blog", [{ name: "Inicio", url: "/" }, { name: "Blog" }]);
+
   return (
     <section className="mx-auto max-w-5xl px-6 py-16 sm:py-24">
       <h1 className="animate-fade-up font-display text-4xl text-ink text-balance sm:text-5xl">Guías y notas</h1>
@@ -37,6 +50,8 @@ export default function BlogIndexPage() {
           </Link>
         ))}
       </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
     </section>
   );
 }

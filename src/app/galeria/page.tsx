@@ -4,17 +4,19 @@ import { MessageCircle } from "lucide-react";
 import { galleryItems, galleryCategories } from "@/content/gallery";
 import { GalleryGrid } from "@/components/GalleryGrid";
 import { SITE, waLink } from "@/content/site";
-import { hreflangFor, UI } from "@/lib/i18n";
+import { UI } from "@/lib/i18n";
+import { pageMetadata, breadcrumbSchema } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Galería de Stickers Personalizados: Hello Kitty, Pokémon, Zelda y más",
+export const metadata: Metadata = pageMetadata({
+  title: "Galería de Stickers Personalizados en Guadalajara",
   description:
-    "Galería real de stickers de vinil que hemos hecho: Hello Kitty, Kuromi, Pompompurin, Pokémon, Zelda, Coraline, mascotas (perros y gatos) y logos de negocios. Stickers personalizados desde Guadalajara.",
-  alternates: { canonical: "/galeria", languages: hreflangFor("/galeria") },
-};
+    "Galería real de stickers de vinil que hemos hecho: Hello Kitty, Kuromi, Pokémon, Zelda, mascotas y logos de negocios. Stickers personalizados desde Guadalajara.",
+  path: "/galeria",
+});
 
 export default function GaleriaPage() {
   const t = UI.es;
+  const breadcrumb = breadcrumbSchema("/galeria", [{ name: "Inicio", url: "/" }, { name: "Galería" }]);
   const schema = {
     "@context": "https://schema.org",
     "@type": "ImageGallery",
@@ -32,9 +34,9 @@ export default function GaleriaPage() {
     <section className="mx-auto max-w-6xl px-6 py-16 sm:py-24">
       <h1 className="animate-fade-up font-display text-4xl text-ink text-balance sm:text-5xl">Galería de stickers</h1>
       <p className="animate-fade-up animate-fade-up-1 mt-4 max-w-2xl text-sm leading-relaxed text-ink-soft">
-        Ejemplos reales de stickers de vinil que hemos producido: Hello Kitty, Kuromi, Pompompurin y otros personajes de Sanrio, Pokémon, Zelda, Coraline,
-        Sylvanian Families, stickers de mascotas con fotos de perros y gatos, y logos personalizados para negocios. Todo hecho por pedido desde Guadalajara,
-        Jalisco.
+        Ejemplos reales de <Link href="/productos/stickers-vinil-impermeable" className="text-brand underline underline-offset-2 hover:text-brand-deep">stickers de vinil</Link> que hemos producido: Hello Kitty, Kuromi, Pompompurin y otros personajes de Sanrio, Pokémon, Zelda, Coraline,
+        Sylvanian Families, stickers de mascotas con fotos de perros y gatos, y <Link href="/productos/stickers-logo-personalizado" className="text-brand underline underline-offset-2 hover:text-brand-deep">logos personalizados para negocios</Link>. Todo hecho por pedido desde Guadalajara,
+        Jalisco. ¿Dudas sobre precios o tiempos? Revisa nuestras <Link href="/preguntas-frecuentes" className="text-brand underline underline-offset-2 hover:text-brand-deep">preguntas frecuentes</Link>.
       </p>
 
       <div className="mt-14">
@@ -50,6 +52,7 @@ export default function GaleriaPage() {
         </div>
       </div>
 
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
     </section>
   );

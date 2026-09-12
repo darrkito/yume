@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { SITE } from "@/content/site";
-import { hreflangFor } from "@/lib/i18n";
+import { pageMetadata, breadcrumbSchema } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Aviso de Privacidad",
+export const metadata: Metadata = pageMetadata({
+  title: "Aviso de Privacidad de Yume",
   description: "Aviso de privacidad de Yume: qué datos personales recabamos, para qué los usamos y cómo ejerces tus derechos ARCO.",
-  alternates: { canonical: "/privacidad", languages: hreflangFor("/privacidad") },
-};
+  path: "/privacidad",
+});
 
 const SECTIONS = [
   {
@@ -36,6 +36,7 @@ const SECTIONS = [
 ];
 
 export default function PrivacidadPage() {
+  const breadcrumb = breadcrumbSchema("/privacidad", [{ name: "Inicio", url: "/" }, { name: "Aviso de Privacidad" }]);
   return (
     <section className="mx-auto max-w-3xl px-6 py-16 sm:py-24">
       <p className="animate-fade-up text-xs uppercase tracking-[0.25em] text-brand">Legal</p>
@@ -50,6 +51,7 @@ export default function PrivacidadPage() {
           </div>
         ))}
       </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
     </section>
   );
 }

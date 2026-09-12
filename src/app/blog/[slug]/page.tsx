@@ -104,6 +104,21 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         </div>
       ) : null}
 
+      {post.sources && post.sources.length > 0 ? (
+        <div className="mt-10 border-t border-line pt-6">
+          <p className="text-xs font-semibold uppercase tracking-[0.1em] text-ink-soft">Fuentes</p>
+          <ul className="mt-2 space-y-1">
+            {post.sources.map((s) => (
+              <li key={s.url} className="text-xs text-ink-soft">
+                <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-brand underline underline-offset-2 hover:text-brand-deep">
+                  {s.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
     </article>
   );

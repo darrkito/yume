@@ -180,11 +180,11 @@ export function HeroJar() {
           <Image src="/recetario-medico.webp" alt="" width={72} height={54} className="absolute rotate-[-8deg] rounded object-cover" style={{ left: 130, top: 250 }} />
           <Image src="/stickers-logo-muestra.webp" alt="" width={58} height={74} className="absolute rotate-[6deg] rounded object-cover" style={{ left: 215, top: 265 }} />
           {/* eslint-disable-next-line @next/next/no-img-element -- inline data: URI illustrations, next/image doesn't handle these */}
-          <img src={stickerBadgeDataUri(BRAND, "#fff")} alt="" className="absolute h-16 w-16" style={{ left: 105, top: 290 }} />
+          <img src={stickerBadgeDataUri(BRAND, "#fff")} alt="" width={64} height={64} className="absolute h-16 w-16" style={{ left: 105, top: 290 }} />
           {/* eslint-disable-next-line @next/next/no-img-element -- inline data: URI illustrations, next/image doesn't handle these */}
-          <img src={stickerBadgeDataUri(BRAND_TINT, BRAND_DEEP)} alt="" className="absolute h-12 w-12" style={{ left: 265, top: 215 }} />
+          <img src={stickerBadgeDataUri(BRAND_TINT, BRAND_DEEP)} alt="" width={48} height={48} className="absolute h-12 w-12" style={{ left: 265, top: 215 }} />
           {/* eslint-disable-next-line @next/next/no-img-element -- inline data: URI illustrations, next/image doesn't handle these */}
-          <img src={washiTapeDataUri()} alt="" className="absolute rotate-[10deg]" style={{ left: 170, top: 205, width: 68 }} />
+          <img src={washiTapeDataUri()} alt="" width={68} height={26} className="absolute rotate-[10deg]" style={{ left: 170, top: 205, width: 68 }} />
         </div>
       )}
     </div>

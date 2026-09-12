@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
 import { MessageCircle, Mail, MapPin, AtSign } from "lucide-react";
 import { SITE, waLink } from "@/content/site";
-import { hreflangFor } from "@/lib/i18n";
+import { pageMetadata, breadcrumbSchema } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Contact",
+export const metadata: Metadata = pageMetadata({
+  title: "Contact — Get a Custom Stationery Quote",
   description: "Contact Yume via WhatsApp, email, or Instagram to get a quote for custom stationery or personalized goods. Shipping across Mexico from Guadalajara.",
-  alternates: { canonical: "/en/contact", languages: hreflangFor("/contacto") },
-};
+  path: "/en/contact",
+  lang: "en",
+});
 
 export default function ContactPageEn() {
+  const breadcrumb = breadcrumbSchema("/en/contact", [{ name: "Home", url: "/en" }, { name: "Contact" }]);
   return (
     <section className="mx-auto max-w-3xl px-6 py-16 sm:py-24">
       <p className="animate-fade-up text-xs uppercase tracking-[0.25em] text-brand">Contact</p>
@@ -56,6 +58,7 @@ export default function ContactPageEn() {
           Every piece is made to order, so turnaround varies by product and quantity. We confirm the exact timeline when you request a quote on WhatsApp — we don&apos;t publish a fixed timeframe because we&apos;d rather give you the real one for your order, not a generic estimate.
         </p>
       </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
     </section>
   );
 }

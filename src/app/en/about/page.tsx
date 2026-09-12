@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { MessageCircle } from "lucide-react";
 import { SITE, waLink } from "@/content/site";
-import { hreflangFor } from "@/lib/i18n";
+import { pageMetadata, breadcrumbSchema } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "About Us",
+export const metadata: Metadata = pageMetadata({
+  title: "About Yume — Custom Stationery Studio in Guadalajara",
   description: "Meet Yume: custom stationery and personalized goods made to order in Guadalajara, Jalisco, shipping across all of Mexico.",
-  alternates: { canonical: "/en/about", languages: hreflangFor("/nosotros") },
-};
+  path: "/en/about",
+  lang: "en",
+});
 
 const SECTIONS = [
   {
@@ -29,6 +31,7 @@ const SECTIONS = [
 ];
 
 export default function AboutPageEn() {
+  const breadcrumb = breadcrumbSchema("/en/about", [{ name: "Home", url: "/en" }, { name: "About" }]);
   return (
     <section className="mx-auto max-w-3xl px-6 py-16 sm:py-24">
       <p className="animate-fade-up text-xs uppercase tracking-[0.25em] text-brand">About us</p>
@@ -46,7 +49,7 @@ export default function AboutPageEn() {
         ))}
       </div>
 
-      <div className="mt-10">
+      <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3">
         <a
           href={waLink("Hi, I'd like to know more about Yume.")}
           target="_blank"
@@ -56,7 +59,10 @@ export default function AboutPageEn() {
           <MessageCircle size={16} aria-hidden="true" />
           Message us on WhatsApp
         </a>
+        <Link href="/en/products" className="inline-flex min-h-11 items-center text-sm text-ink-soft underline underline-offset-2 hover:text-brand">See our products</Link>
+        <Link href="/en/gallery" className="inline-flex min-h-11 items-center text-sm text-ink-soft underline underline-offset-2 hover:text-brand">See sticker gallery</Link>
       </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
     </section>
   );
 }

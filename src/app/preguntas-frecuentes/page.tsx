@@ -1,17 +1,19 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { getFaqCategories } from "@/content/faq";
 import { FaqAccordion } from "@/components/FaqAccordion";
-import { hreflangFor } from "@/lib/i18n";
+import { pageMetadata, breadcrumbSchema } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Preguntas frecuentes",
+export const metadata: Metadata = pageMetadata({
+  title: "Preguntas frecuentes sobre papelería personalizada",
   description: "Respuestas a las dudas más comunes sobre los productos de Yume: generales, recetarios médicos y etiquetas personalizadas.",
-  alternates: { canonical: "/preguntas-frecuentes", languages: hreflangFor("/preguntas-frecuentes") },
-};
+  path: "/preguntas-frecuentes",
+});
 
 export default function PreguntasFrecuentesPage() {
   const categories = getFaqCategories();
   const allFaq = categories.flatMap((c) => c.items);
+  const breadcrumb = breadcrumbSchema("/preguntas-frecuentes", [{ name: "Inicio", url: "/" }, { name: "Preguntas frecuentes" }]);
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -35,6 +37,13 @@ export default function PreguntasFrecuentesPage() {
         <FaqAccordion categories={categories} />
       </div>
 
+      <p className="mt-10 text-sm text-ink-soft">
+        ¿No encontraste tu respuesta? Revisa nuestros{" "}
+        <Link href="/productos" className="text-brand underline underline-offset-2 hover:text-brand-deep">productos</Link>{" "}
+        o <Link href="/contacto" className="text-brand underline underline-offset-2 hover:text-brand-deep">contáctanos</Link> directamente.
+      </p>
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
     </section>
   );

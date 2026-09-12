@@ -4,18 +4,21 @@ import { MessageCircle } from "lucide-react";
 import { galleryCategoriesEn, getGalleryItemsEn } from "@/content/gallery.en";
 import { GalleryGrid } from "@/components/GalleryGrid";
 import { SITE, waLink } from "@/content/site";
-import { hreflangFor, UI } from "@/lib/i18n";
+import { UI } from "@/lib/i18n";
+import { pageMetadata, breadcrumbSchema } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Custom Sticker Gallery: Hello Kitty, Pokémon, Zelda & More",
+export const metadata: Metadata = pageMetadata({
+  title: "Custom Sticker Gallery: Hello Kitty and More",
   description:
-    "Real gallery of vinyl stickers we've made: Hello Kitty, Kuromi, Pompompurin, Pokémon, Zelda, Coraline, pet stickers (dogs and cats), and business logos. Custom stickers from Guadalajara, Mexico.",
-  alternates: { canonical: "/en/gallery", languages: hreflangFor("/galeria") },
-};
+    "Real gallery of vinyl stickers we've made: Hello Kitty, Kuromi, Pokémon, Zelda, pet stickers, and business logos. Custom stickers from Guadalajara, Mexico.",
+  path: "/en/gallery",
+  lang: "en",
+});
 
 export default function GalleryPageEn() {
   const t = UI.en;
   const items = getGalleryItemsEn();
+  const breadcrumb = breadcrumbSchema("/en/gallery", [{ name: "Home", url: "/en" }, { name: "Gallery" }]);
 
   const schema = {
     "@context": "https://schema.org",
@@ -34,8 +37,8 @@ export default function GalleryPageEn() {
     <section className="mx-auto max-w-6xl px-6 py-16 sm:py-24">
       <h1 className="animate-fade-up font-display text-4xl text-ink text-balance sm:text-5xl">Sticker gallery</h1>
       <p className="animate-fade-up animate-fade-up-1 mt-4 max-w-2xl text-sm leading-relaxed text-ink-soft">
-        Real examples of vinyl stickers we&apos;ve produced: Hello Kitty, Kuromi, Pompompurin and other Sanrio characters, Pokémon, Zelda, Coraline, Sylvanian
-        Families, pet stickers made from real dog and cat photos, and custom business logos. All made to order from Guadalajara, Jalisco.
+        Real examples of <Link href="/en/products/waterproof-vinyl-stickers" className="text-brand underline underline-offset-2 hover:text-brand-deep">vinyl stickers</Link> we&apos;ve produced: Hello Kitty, Kuromi, Pompompurin and other Sanrio characters, Pokémon, Zelda, Coraline, Sylvanian
+        Families, pet stickers made from real dog and cat photos, and <Link href="/en/products/custom-logo-stickers" className="text-brand underline underline-offset-2 hover:text-brand-deep">custom business logos</Link>. All made to order from Guadalajara, Jalisco. Questions about pricing or timing? Check our <Link href="/en/faq" className="text-brand underline underline-offset-2 hover:text-brand-deep">FAQ</Link>.
       </p>
 
       <div className="mt-14">
@@ -51,6 +54,7 @@ export default function GalleryPageEn() {
         </div>
       </div>
 
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
     </section>
   );

@@ -20,6 +20,9 @@ export interface BlogPost {
    * `relatedProductSlugs` yet — e.g. a topic covering a service that isn't
    * a cataloged product yet (still quote-only, handled case by case). */
   quoteMessage?: string;
+  /** Outbound citations to real primary/authoritative sources referenced in
+   * the post's content — rendered as a "Fuentes" list at the end. */
+  sources?: { label: string; url: string }[];
 }
 
 export const blogPosts: BlogPost[] = [
@@ -346,7 +349,7 @@ export const blogPosts: BlogPost[] = [
     category: "Guías",
     publishedAt: "2026-09-09",
     intro:
-      "Si estás por pedir tu primer recetario personalizado, es normal preguntarte qué datos debe llevar exactamente. Esta es información general basada en lo que se acostumbra en consultorios de México — no sustituye lo que tu colegio de médicos, tu estado o la institución donde trabajas exija de forma específica, así que siempre vale la pena confirmarlo con ellos antes de mandar a imprimir.",
+      "Si estás por pedir tu primer recetario personalizado, es normal preguntarte qué datos debe llevar exactamente. Esta es información general basada en lo que se acostumbra en consultorios de México y en la norma oficial NOM-004-SSA3-2012 del expediente clínico (que enlistamos al final) — no sustituye lo que tu colegio de médicos, tu estado o la institución donde trabajas exija de forma específica, así que siempre vale la pena confirmarlo con ellos antes de mandar a imprimir.",
     sections: [
       {
         heading: "Datos de tu membrete",
@@ -371,6 +374,12 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["recetario-medico-personalizado"],
+    sources: [
+      {
+        label: "NOM-004-SSA3-2012, Diario Oficial de la Federación",
+        url: "https://dof.gob.mx/nota_detalle_popup.php?codigo=5272787",
+      },
+    ],
   },
   {
     slug: "yume-vs-imprentas-online-stickers",

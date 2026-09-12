@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { SITE } from "@/content/site";
-import { hreflangFor } from "@/lib/i18n";
+import { pageMetadata, breadcrumbSchema } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Privacy Policy",
+export const metadata: Metadata = pageMetadata({
+  title: "Yume's Privacy Policy",
   description: "Yume's privacy policy: what personal data we collect, how we use it, and how to exercise your data rights.",
-  alternates: { canonical: "/en/privacy", languages: hreflangFor("/privacidad") },
-};
+  path: "/en/privacy",
+  lang: "en",
+});
 
 const SECTIONS = [
   {
@@ -36,6 +37,7 @@ const SECTIONS = [
 ];
 
 export default function PrivacyPageEn() {
+  const breadcrumb = breadcrumbSchema("/en/privacy", [{ name: "Home", url: "/en" }, { name: "Privacy Policy" }]);
   return (
     <section className="mx-auto max-w-3xl px-6 py-16 sm:py-24">
       <p className="animate-fade-up text-xs uppercase tracking-[0.25em] text-brand">Legal</p>
@@ -50,6 +52,7 @@ export default function PrivacyPageEn() {
           </div>
         ))}
       </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
     </section>
   );
 }

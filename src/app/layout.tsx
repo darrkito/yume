@@ -88,6 +88,16 @@ const orgSchema = {
   sameAs: [SITE.instagram],
 };
 
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${SITE.url}/#website`,
+  name: SITE.name,
+  url: SITE.url,
+  inLanguage: "es-MX",
+  publisher: { "@id": ORG_ID },
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es-MX">
@@ -97,6 +107,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="ai-catalog" href={`${SITE.url}/.well-known/ai-catalog.json`} />
         <div className="paper-grain" aria-hidden="true" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-brand focus:px-5 focus:py-2.5 focus:text-sm focus:font-semibold focus:text-white"

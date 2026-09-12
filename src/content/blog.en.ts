@@ -325,7 +325,7 @@ export const blogPostsEn: BlogPost[] = [
     category: "Guides",
     publishedAt: "2026-09-09",
     intro:
-      "If you're about to order your first custom prescription pad, it's normal to wonder exactly what information it needs to include. This is general information based on common practice at medical offices in Mexico — it doesn't replace whatever your professional board, state, or institution specifically requires, so it's always worth confirming with them before printing.",
+      "If you're about to order your first custom prescription pad, it's normal to wonder exactly what information it needs to include. This is general information based on common practice at medical offices in Mexico and Mexico's official clinical-record standard NOM-004-SSA3-2012 (listed at the end) — it doesn't replace whatever your professional board, state, or institution specifically requires, so it's always worth confirming with them before printing.",
     sections: [
       {
         heading: "What goes on your letterhead",
@@ -350,6 +350,12 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["recetario-medico-personalizado"],
+    sources: [
+      {
+        label: "NOM-004-SSA3-2012, Diario Oficial de la Federación (Mexico)",
+        url: "https://dof.gob.mx/nota_detalle_popup.php?codigo=5272787",
+      },
+    ],
   },
   {
     slug: BLOG_SLUG_EN["yume-vs-imprentas-online-stickers"],

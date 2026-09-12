@@ -7,17 +7,20 @@ import { ProductVisual } from "@/components/ProductVisual";
 import { AddToCartButton } from "@/components/AddToCartButton";
 import { waLink } from "@/content/site";
 import { CheckCircle2, Clock, Truck } from "lucide-react";
-import { hreflangFor, UI } from "@/lib/i18n";
+import { UI } from "@/lib/i18n";
+import { pageMetadata, productSchema, breadcrumbSchema } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Tienda de papelería personalizada",
   description:
-    "Papelería y artículos personalizados de Yume: recetarios médicos, etiquetas con tu logo y stickers de vinil personalizados (Hello Kitty, Pokémon, mascotas y más). Envíos a todo México.",
-  alternates: { canonical: "/productos", languages: hreflangFor("/productos") },
-};
+    "Papelería y artículos personalizados de Yume: recetarios médicos, etiquetas y stickers de vinil (Hello Kitty, Pokémon, mascotas y más). Envíos a todo México.",
+  path: "/productos",
+});
 
 export default function ProductosPage() {
   const t = UI.es;
+  const productSchemas = products.map((p) => productSchema(p, { path: `/productos/${p.slug}` }));
+  const breadcrumb = breadcrumbSchema("/productos", [{ name: "Inicio", url: "/" }, { name: "Productos" }]);
 
   return (
     <section className="mx-auto max-w-6xl px-6 py-16 sm:py-24">
@@ -56,6 +59,10 @@ export default function ProductosPage() {
         <p className="mx-auto mt-2 max-w-md text-sm leading-relaxed text-ink-soft">{t.listingCtaBody}</p>
         <a href={waLink("Hola, me interesa cotizar un producto de Yume.")} target="_blank" rel="noopener noreferrer" className="btn-soft btn-soft-solid mt-6">{t.quoteWhatsapp}</a>
       </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      {productSchemas.map((s, i) => (
+        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />
+      ))}
     </section>
   );
 }

@@ -1,17 +1,20 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { getFaqCategoriesEn } from "@/content/faq.en";
 import { FaqAccordion } from "@/components/FaqAccordion";
-import { hreflangFor } from "@/lib/i18n";
+import { pageMetadata, breadcrumbSchema } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Frequently Asked Questions",
+export const metadata: Metadata = pageMetadata({
+  title: "Frequently Asked Questions About Custom Stationery",
   description: "Answers to the most common questions about Yume's products: general, medical prescription pads, and custom stickers.",
-  alternates: { canonical: "/en/faq", languages: hreflangFor("/preguntas-frecuentes") },
-};
+  path: "/en/faq",
+  lang: "en",
+});
 
 export default function FaqPageEn() {
   const categories = getFaqCategoriesEn();
   const allFaq = categories.flatMap((c) => c.items);
+  const breadcrumb = breadcrumbSchema("/en/faq", [{ name: "Home", url: "/en" }, { name: "FAQ" }]);
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -35,6 +38,13 @@ export default function FaqPageEn() {
         <FaqAccordion categories={categories} />
       </div>
 
+      <p className="mt-10 text-sm text-ink-soft">
+        Didn&apos;t find your answer? Check our{" "}
+        <Link href="/en/products" className="text-brand underline underline-offset-2 hover:text-brand-deep">products</Link>{" "}
+        or <Link href="/en/contact" className="text-brand underline underline-offset-2 hover:text-brand-deep">contact us</Link> directly.
+      </p>
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
     </section>
   );

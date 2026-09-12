@@ -28,7 +28,14 @@ export function FaqQuestion({ item }: { item: FaqItem }) {
           aria-hidden="true"
         />
       </button>
-      <div id={panelId} className="faq-panel" data-open={open} aria-hidden={!open}>
+      {/* No aria-hidden here: the visual collapse is fully handled by
+          .faq-panel's grid-template-rows CSS (see globals.css), so hiding
+          the answer from the accessibility tree when closed served no
+          visual purpose — it only hid the real FAQ answer text from any
+          crawler/extractor that reads the accessibility tree instead of
+          raw HTML, even though the same answer is asserted in FAQPage
+          JSON-LD as existing. */}
+      <div id={panelId} className="faq-panel" data-open={open}>
         <div>
           <p className="mt-3 text-sm leading-relaxed text-ink-soft">{item.a}</p>
         </div>
