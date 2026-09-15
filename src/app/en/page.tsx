@@ -115,14 +115,24 @@ export default function HomeEn() {
       <section className="bg-brand-tint/60">
         <div className="mx-auto max-w-6xl px-6 py-20">
           <div className="grid gap-10 sm:grid-cols-[1fr_1.2fr] sm:items-center">
-            <div className="card-soft tilt-a flex h-72 justify-center overflow-hidden p-8">
+            <Link
+              href={`/en/products/${PRODUCT_SLUG_EN[featured.slug]}`}
+              className="card-soft tilt-a flex h-72 justify-center overflow-hidden p-8 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+            >
               <ProductVisual product={featured} compact />
-            </div>
+            </Link>
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.1em] text-brand-deep">
                 {featured.isNew ? "New!" : "Featured product"}
               </p>
-              <h2 className="mt-3 font-display text-3xl text-ink text-balance sm:text-4xl">{featuredT.name}</h2>
+              <h2 className="mt-3 font-display text-3xl text-ink text-balance sm:text-4xl">
+                <Link
+                  href={`/en/products/${PRODUCT_SLUG_EN[featured.slug]}`}
+                  className="transition-colors hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+                >
+                  {featuredT.name}
+                </Link>
+              </h2>
               <p className="mt-4 text-2xl font-semibold text-ink">
                 {hasVariants(featured) && "From "}
                 {formatMXN(productDisplayPrice(featured))} <span className="text-sm font-normal text-ink-soft">MXN</span>
