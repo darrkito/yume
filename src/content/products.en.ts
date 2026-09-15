@@ -178,7 +178,7 @@ export const productsEn: Record<string, ProductTranslation> = {
     ],
   },
   "placa-resena-google-nfc": {
-    name: "Acrylic Google Review Plate — NFC and QR",
+    name: "Google Review Plate — NFC and QR",
     category: "NFC & QR Google Review Plates and Stands",
     specs: [
       { label: "Size", value: "12 × 12 cm" },
@@ -189,9 +189,9 @@ export const productsEn: Record<string, ProductTranslation> = {
       { label: "Production", value: "Made to order" },
     ],
     description:
-      "An acrylic plate for getting more Google reviews with NFC and QR technology, perfect for a counter, register, or table. We configure it with your business's link before shipping: the NFC is already programmed and the QR is already ready to use — nothing to install, set up, or subscribe to on your end. Includes adhesive backing so you can stick it anywhere. Available in white or black.",
+      "A plate for getting more Google reviews with NFC and QR technology, perfect for a counter, register, or table. We configure it with your business's link before shipping: the NFC is already programmed and the QR is already ready to use — nothing to install, set up, or subscribe to on your end. Includes adhesive backing so you can stick it anywhere. Available in white or black.",
     metaDescription:
-      "Acrylic NFC and QR plate for Google reviews, 12 × 12 cm, ready to use with zero setup or subscription. White or black, adhesive included. From $140 MXN.",
+      "NFC and QR plate for Google reviews, 12 × 12 cm, ready to use with zero setup or subscription. White or black, adhesive included. From $140 MXN.",
     details: [
       "Customers tap with their phone (NFC) or scan the QR — both go straight to leaving a Google review",
       "Arrives configured with your business's link: NFC and QR ready to use",
@@ -199,7 +199,7 @@ export const productsEn: Record<string, ProductTranslation> = {
       "Adhesive backing included, stick it on a counter, register, or table",
       "Available in white or black",
       "12 × 12 cm, 0.2 cm thick",
-      "Also available with a stand — see Acrylic Google Review Stand",
+      "Also available with a stand — see Google Review Stand",
     ],
     variantLabels: { blanco: "White", negro: "Black" },
     faq: [
@@ -230,7 +230,7 @@ export const productsEn: Record<string, ProductTranslation> = {
     ],
   },
   "stand-resena-google-nfc": {
-    name: "Acrylic Google Review Stand — NFC and QR",
+    name: "Google Review Stand — NFC and QR",
     category: "NFC & QR Google Review Plates and Stands",
     specs: [
       { label: "Height", value: "12.75 cm" },
@@ -242,9 +242,9 @@ export const productsEn: Record<string, ProductTranslation> = {
       { label: "Production", value: "Made to order" },
     ],
     description:
-      "A freestanding acrylic stand for getting more Google reviews with NFC and QR technology, for a counter, register, or table without needing to stick it down. We configure it with your business's link before shipping: the NFC is already programmed and the QR is already ready to use — nothing to install, set up, or subscribe to on your end. Available in white or black.",
+      "A freestanding stand for getting more Google reviews with NFC and QR technology, for a counter, register, or table without needing to stick it down. We configure it with your business's link before shipping: the NFC is already programmed and the QR is already ready to use — nothing to install, set up, or subscribe to on your end. Available in white or black.",
     metaDescription:
-      "Acrylic NFC and QR stand for Google reviews with its own base, ready to use with zero setup or subscription. White or black. From $200 MXN.",
+      "NFC and QR stand for Google reviews with its own base, ready to use with zero setup or subscription. White or black. From $200 MXN.",
     details: [
       "Customers tap with their phone (NFC) or scan the QR — both go straight to leaving a Google review",
       "Arrives configured with your business's link: NFC and QR ready to use",
@@ -252,7 +252,7 @@ export const productsEn: Record<string, ProductTranslation> = {
       "Freestanding base: stands upright, no glue or tape needed",
       "Available in white or black",
       "12.75 cm tall, 7.6 cm wide, 5 cm base depth",
-      "Also available without a stand, with adhesive — see Acrylic Google Review Plate",
+      "Also available without a stand, with adhesive — see Google Review Plate",
     ],
     variantLabels: { blanco: "White", negro: "Black" },
     faq: [

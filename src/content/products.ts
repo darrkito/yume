@@ -256,7 +256,7 @@ export const products: Product[] = [
   },
   {
     slug: "placa-resena-google-nfc",
-    name: "Placa Acrílica para Reseñas de Google — NFC y QR",
+    name: "Placa para Reseñas de Google — NFC y QR",
     price: 140,
     currency: "MXN",
     category: "Placas y Stands NFC para Reseñas de Google",
@@ -270,9 +270,9 @@ export const products: Product[] = [
       { label: "Producción", value: "Sobre pedido" },
     ],
     description:
-      "Placa acrílica para conseguir más reseñas de Google, con tecnología NFC y código QR, ideal para mostrador, caja o mesa. La configuramos con el enlace de tu negocio antes de enviártela: el NFC ya está programado y el QR ya está listo para usar, no necesitas instalar ni configurar nada, ni pagar ninguna suscripción. Incluye adhesivo para pegarla donde prefieras. Disponible en blanco o negro.",
+      "Placa para conseguir más reseñas de Google, con tecnología NFC y código QR, ideal para mostrador, caja o mesa. La configuramos con el enlace de tu negocio antes de enviártela: el NFC ya está programado y el QR ya está listo para usar, no necesitas instalar ni configurar nada, ni pagar ninguna suscripción. Incluye adhesivo para pegarla donde prefieras. Disponible en blanco o negro.",
     metaDescription:
-      "Placa acrílica NFC y QR para reseñas de Google, 12 × 12 cm, lista para usar sin configuración ni suscripción. Blanco o negro, adhesivo incluido. Desde $140 MXN.",
+      "Placa NFC y QR para reseñas de Google, 12 × 12 cm, lista para usar sin configuración ni suscripción. Blanco o negro, adhesivo incluido. Desde $140 MXN.",
     details: [
       "Tus clientes tocan con el celular (NFC) o escanean el QR — ambos llevan directo a dejar una reseña en Google",
       "Se entrega configurada con el enlace de tu negocio: NFC y QR listos para usar",
@@ -280,7 +280,7 @@ export const products: Product[] = [
       "Incluye adhesivo para pegarla en mostrador, caja o mesa",
       "Disponible en blanco o negro",
       "12 × 12 cm, 0.2 cm de grosor",
-      "También disponible con base para escritorio — ver Stand Acrílico para Reseñas de Google",
+      "También disponible con base para escritorio — ver Stand para Reseñas de Google",
     ],
     image: "/placa-resena-google-nfc.webp",
     imageWidth: 250,
@@ -318,7 +318,7 @@ export const products: Product[] = [
   },
   {
     slug: "stand-resena-google-nfc",
-    name: "Stand Acrílico para Reseñas de Google — NFC y QR",
+    name: "Stand para Reseñas de Google — NFC y QR",
     price: 200,
     currency: "MXN",
     category: "Placas y Stands NFC para Reseñas de Google",
@@ -333,9 +333,9 @@ export const products: Product[] = [
       { label: "Producción", value: "Sobre pedido" },
     ],
     description:
-      "Stand acrílico con base para conseguir más reseñas de Google, con tecnología NFC y código QR, para colocar de pie sobre mostrador, caja o mesa sin necesidad de pegarlo. La configuramos con el enlace de tu negocio antes de enviártelo: el NFC ya está programado y el QR ya está listo para usar, no necesitas instalar ni configurar nada, ni pagar ninguna suscripción. Disponible en blanco o negro.",
+      "Stand con base para conseguir más reseñas de Google, con tecnología NFC y código QR, para colocar de pie sobre mostrador, caja o mesa sin necesidad de pegarlo. La configuramos con el enlace de tu negocio antes de enviártelo: el NFC ya está programado y el QR ya está listo para usar, no necesitas instalar ni configurar nada, ni pagar ninguna suscripción. Disponible en blanco o negro.",
     metaDescription:
-      "Stand acrílico NFC y QR para reseñas de Google, con base independiente, listo para usar sin configuración ni suscripción. Blanco o negro. Desde $200 MXN.",
+      "Stand NFC y QR para reseñas de Google, con base independiente, listo para usar sin configuración ni suscripción. Blanco o negro. Desde $200 MXN.",
     details: [
       "Tus clientes tocan con el celular (NFC) o escanean el QR — ambos llevan directo a dejar una reseña en Google",
       "Se entrega configurado con el enlace de tu negocio: NFC y QR listos para usar",
@@ -343,7 +343,7 @@ export const products: Product[] = [
       "Base independiente: se coloca de pie, no necesita pegamento ni cinta",
       "Disponible en blanco o negro",
       "12.75 cm de alto, 7.6 cm de ancho, base de 5 cm de profundidad",
-      "También disponible sin base, con adhesivo — ver Placa Acrílica para Reseñas de Google",
+      "También disponible sin base, con adhesivo — ver Placa para Reseñas de Google",
     ],
     image: "/stand-resena-google-nfc.webp",
     imageWidth: 250,

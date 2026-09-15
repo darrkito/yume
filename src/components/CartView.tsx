@@ -5,6 +5,7 @@ import { Minus, Plus, X, ImageUp, CreditCard, Truck, CheckCircle2, Clock, Shield
 import { useCart } from "@/components/CartContext";
 import { getProduct } from "@/content/products";
 import { ProductVisual } from "@/components/ProductVisual";
+import { RelatedProducts } from "@/components/RelatedProducts";
 import { CtaFillLink } from "@/components/CtaFillLink";
 import { waLink } from "@/content/site";
 import { FREE_SHIPPING_THRESHOLD, NATIONAL_SHIPPING_PRICE, CASABLANCA_PRICE } from "@/content/shipping";
@@ -131,6 +132,12 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
           );
         })}
       </ul>
+
+      <RelatedProducts
+        excludeSlugs={[...new Set(items.map((i) => i.slug))]}
+        lang={lang}
+        heading={lang === "en" ? "Products you might also like" : "Productos que también te pueden interesar"}
+      />
 
       {itemsRequiringImage.length > 0 && (
         <div className="mt-6 flex items-start gap-3 rounded-xl bg-brand-tint p-4 text-sm text-ink">

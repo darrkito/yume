@@ -1,0 +1,45 @@
+import Link from "next/link";
+import { hasVariants, productDisplayPrice, products } from "@/content/products";
+import { productsEn } from "@/content/products.en";
+import { ProductVisual } from "@/components/ProductVisual";
+import { formatMXN } from "@/lib/format";
+import { PRODUCT_SLUG_EN, type Lang } from "@/lib/i18n";
+
+const MAX_ITEMS = 3;
+
+// Cross-sell block reused on product pages (excludes the current product)
+// and the cart (excludes whatever's already in it) — same card style as
+// the shop grid, just fewer columns.
+export function RelatedProducts({ excludeSlugs, lang = "es", heading }: { excludeSlugs: string[]; lang?: Lang; heading?: string }) {
+  const others = products.filter((p) => !excludeSlugs.includes(p.slug)).slice(0, MAX_ITEMS);
+  if (others.length === 0) return null;
+
+  const title = heading ?? (lang === "en" ? "You might also like" : "También te puede interesar");
+  const shopBase = lang === "en" ? "/en/products" : "/productos";
+
+  return (
+    <div className="mt-14 border-t border-line pt-10">
+      <h2 className="font-display text-2xl text-ink">{title}</h2>
+      <div className="mt-6 grid gap-6 sm:grid-cols-3">
+        {others.map((p) => {
+          const name = lang === "en" ? (productsEn[p.slug]?.name ?? p.name) : p.name;
+          const href = `${shopBase}/${lang === "en" ? PRODUCT_SLUG_EN[p.slug] : p.slug}`;
+          return (
+            <Link key={p.slug} href={href} className="card-soft group flex flex-col p-5">
+              <div className="flex h-32 justify-center overflow-hidden">
+                <div className="product-card-visual">
+                  <ProductVisual product={p} compact />
+                </div>
+              </div>
+              <p className="mt-4 font-display text-sm text-ink transition-colors group-hover:text-brand">{name}</p>
+              <p className="mt-1 text-sm font-semibold text-ink">
+                {hasVariants(p) && (lang === "en" ? "From " : "Desde ")}
+                {formatMXN(productDisplayPrice(p))} MXN
+              </p>
+            </Link>
+          );
+        })}
+      </div>
+    </div>
+  );
+}

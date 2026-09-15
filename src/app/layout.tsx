@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 import { Playfair_Display, Karla } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
@@ -124,6 +125,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Footer />
           </DesignFileProvider>
         </CartProvider>
+        <Analytics />
         {/* Microsoft Clarity — session recording/heatmaps. strategy="lazyOnload"
             (same pattern used on Dizayn/SwapperBetweenChains): Clarity's own
             snippet dynamically injects a second script tag, so there's no

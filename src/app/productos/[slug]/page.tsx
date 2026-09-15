@@ -7,6 +7,7 @@ import { ProductVisual } from "@/components/ProductVisual";
 import { ProductPurchase } from "@/components/ProductPurchase";
 import { LogoUploadNote } from "@/components/LogoUploadNote";
 import { InfiniteGalleryStrip } from "@/components/InfiniteGalleryStrip";
+import { RelatedProducts } from "@/components/RelatedProducts";
 import { galleryItems } from "@/content/gallery";
 import { hreflangFor } from "@/lib/i18n";
 
@@ -149,6 +150,8 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           viewAllHref="/galeria"
         />
       )}
+
+      <RelatedProducts excludeSlugs={[product.slug]} />
 
       <div className="mt-20 border-t border-line pt-14">
         <h2 className="font-display text-2xl text-ink">Preguntas frecuentes</h2>
