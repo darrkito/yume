@@ -50,6 +50,11 @@ export const metadata: Metadata = {
     type: "website",
     url: "/en",
     locale: "en_US",
+    // Same gap as pageMetadata() (see src/lib/seo.ts): a page-level openGraph
+    // object replaces the root layout's wholesale, not merges — this page
+    // predates pageMetadata() and duplicated its openGraph block by hand,
+    // missing the image the same way.
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Yume" }],
   },
 };
 
