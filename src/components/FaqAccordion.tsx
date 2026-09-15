@@ -1,6 +1,7 @@
 "use client";
 
 import { useId, useState } from "react";
+import Link from "next/link";
 import { ChevronDown } from "lucide-react";
 import type { FaqCategory, FaqItem } from "@/content/faq";
 
@@ -49,7 +50,15 @@ export function FaqAccordion({ categories }: { categories: FaqCategory[] }) {
     <div className="space-y-12">
       {categories.map((category) => (
         <div key={category.label}>
-          <h2 className="text-xs uppercase tracking-[0.2em] text-brand">{category.label}</h2>
+          <h2 className="text-xs uppercase tracking-[0.2em] text-brand">
+            {category.href ? (
+              <Link href={category.href} className="underline-offset-4 hover:underline">
+                {category.label}
+              </Link>
+            ) : (
+              category.label
+            )}
+          </h2>
           <div className="mt-4 divide-y divide-line border-y border-line">
             {category.items.map((item) => (
               <FaqQuestion key={item.q} item={item} />

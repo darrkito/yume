@@ -26,7 +26,18 @@ export function pageMetadata({
     title,
     description,
     alternates: { canonical: path, languages: hreflangFor(esPath) },
-    openGraph: { title, description, type: "website", url: path, locale: lang === "en" ? "en_US" : "es_MX" },
+    openGraph: {
+      title,
+      description,
+      type: "website",
+      url: path,
+      locale: lang === "en" ? "en_US" : "es_MX",
+      // openGraph is replaced wholesale by the child page, not deep-merged
+      // with the root layout's — so every static page needs its own image,
+      // or it renders with none (2026-09-15 SEO audit: 11/12 pages had no
+      // og:image because this was missing here).
+      images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: SITE.name }],
+    },
   };
 }
 

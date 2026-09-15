@@ -63,6 +63,7 @@ const orgSchema = {
   image: `${SITE.url}/logo-yume.webp`,
   description: SITE.description,
   email: SITE.email,
+  telephone: `+${SITE.whatsappNumber}`,
   priceRange: "$$",
   address: {
     "@type": "PostalAddress",

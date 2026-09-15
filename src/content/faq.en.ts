@@ -35,9 +35,9 @@ export const generalFaqEn: FaqItem[] = [
 export function getFaqCategoriesEn(): FaqCategory[] {
   return [
     { label: "General", items: generalFaqEn },
-    { label: "Medical Prescription Pads", items: getProductTranslation("recetario-medico-personalizado").faq },
-    { label: "Custom Logo Stickers", items: getProductTranslation("stickers-logo-personalizado").faq },
-    { label: "Waterproof Vinyl Stickers", items: getProductTranslation("stickers-vinil-impermeable").faq },
+    { label: "Medical Prescription Pads", items: getProductTranslation("recetario-medico-personalizado").faq, href: "/en/products/medical-prescription-pads" },
+    { label: "Custom Logo Stickers", items: getProductTranslation("stickers-logo-personalizado").faq, href: "/en/products/custom-logo-stickers" },
+    { label: "Waterproof Vinyl Stickers", items: getProductTranslation("stickers-vinil-impermeable").faq, href: "/en/products/waterproof-vinyl-stickers" },
   ];
 }
 

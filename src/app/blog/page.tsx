@@ -18,7 +18,15 @@ const blogSchema = {
   name: "Blog de Yume",
   url: `${SITE.url}/blog`,
   publisher: { "@id": `${SITE.url}/#organization` },
-  blogPost: blogPosts.map((p) => ({ "@type": "BlogPosting", headline: p.title, url: `${SITE.url}/blog/${p.slug}`, datePublished: p.publishedAt })),
+  blogPost: blogPosts.map((p) => ({
+    "@type": "BlogPosting",
+    headline: p.title,
+    url: `${SITE.url}/blog/${p.slug}`,
+    datePublished: p.publishedAt,
+    dateModified: p.modifiedAt ?? p.publishedAt,
+    author: { "@id": `${SITE.url}/#organization` },
+    publisher: { "@id": `${SITE.url}/#organization` },
+  })),
 };
 
 export default function BlogIndexPage() {

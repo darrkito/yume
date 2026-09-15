@@ -13,6 +13,9 @@ export interface BlogPost {
   description: string;
   category: string;
   publishedAt: string; // ISO date
+  /** Real last-edit date (ISO), set by hand when a post's content actually
+   * changes. Defaults to publishedAt — never backdated, never build time. */
+  modifiedAt?: string;
   intro: string;
   sections: BlogSection[];
   relatedProductSlugs: string[];

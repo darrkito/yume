@@ -8,6 +8,10 @@ export interface FaqItem {
 export interface FaqCategory {
   label: string;
   items: FaqItem[];
+  /** Product page this category's questions are about, if any: renders the
+   * category heading as a link so FAQ answers pass link equity to the
+   * specific product page they discuss, not just the catalog index. */
+  href?: string;
 }
 
 // General FAQs that don't belong to a specific product: shown as their own
@@ -48,9 +52,9 @@ export const generalFaq: FaqItem[] = [
 export function getFaqCategories(): FaqCategory[] {
   return [
     { label: "Generales", items: generalFaq },
-    { label: "Recetarios Médicos", items: getProduct("recetario-medico-personalizado")!.faq },
-    { label: "Etiquetas Logo Personalizado", items: getProduct("stickers-logo-personalizado")!.faq },
-    { label: "Stickers Vinil Impermeable", items: getProduct("stickers-vinil-impermeable")!.faq },
+    { label: "Recetarios Médicos", items: getProduct("recetario-medico-personalizado")!.faq, href: "/productos/recetario-medico-personalizado" },
+    { label: "Etiquetas Logo Personalizado", items: getProduct("stickers-logo-personalizado")!.faq, href: "/productos/stickers-logo-personalizado" },
+    { label: "Stickers Vinil Impermeable", items: getProduct("stickers-vinil-impermeable")!.faq, href: "/productos/stickers-vinil-impermeable" },
   ];
 }
 

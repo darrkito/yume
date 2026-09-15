@@ -19,7 +19,15 @@ const blogSchema = {
   name: "Yume Blog",
   url: `${SITE.url}/en/blog`,
   publisher: { "@id": `${SITE.url}/#organization` },
-  blogPost: blogPostsEn.map((p) => ({ "@type": "BlogPosting", headline: p.title, url: `${SITE.url}/en/blog/${p.slug}`, datePublished: p.publishedAt })),
+  blogPost: blogPostsEn.map((p) => ({
+    "@type": "BlogPosting",
+    headline: p.title,
+    url: `${SITE.url}/en/blog/${p.slug}`,
+    datePublished: p.publishedAt,
+    dateModified: p.modifiedAt ?? p.publishedAt,
+    author: { "@id": `${SITE.url}/#organization` },
+    publisher: { "@id": `${SITE.url}/#organization` },
+  })),
 };
 
 export default function BlogIndexPageEn() {
