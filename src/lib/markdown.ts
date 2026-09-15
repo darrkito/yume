@@ -13,7 +13,7 @@ import { SITE } from "@/content/site";
 import { PRODUCT_SLUG_EN } from "@/lib/i18n";
 
 export function productsListMarkdown(lang: "es" | "en"): string {
-  const lines = [lang === "en" ? "# Yume — Products" : "# Yume — Productos", ""];
+  const lines = [lang === "en" ? "# Yume: Products" : "# Yume: Productos", ""];
   for (const p of products) {
     const url = lang === "en" ? `${SITE.url}/en/products/${PRODUCT_SLUG_EN[p.slug]}` : `${SITE.url}/productos/${p.slug}`;
     const t = lang === "en" ? productsEn[p.slug] : undefined;
@@ -53,7 +53,7 @@ export function productMarkdown(slug: string, lang: "es" | "en"): string | null 
 
 export function faqMarkdown(lang: "es" | "en"): string {
   const categories = lang === "en" ? getFaqCategoriesEn() : getFaqCategories();
-  const lines = [lang === "en" ? "# Yume — Frequently Asked Questions" : "# Yume — Preguntas frecuentes", ""];
+  const lines = [lang === "en" ? "# Yume: Frequently Asked Questions" : "# Yume: Preguntas frecuentes", ""];
   for (const category of categories) {
     lines.push(`## ${category.label}`, "");
     for (const item of category.items) {
@@ -67,7 +67,7 @@ export function faqMarkdown(lang: "es" | "en"): string {
 
 export function blogListMarkdown(lang: "es" | "en"): string {
   const posts = lang === "en" ? blogPostsEn : blogPosts;
-  const lines = [lang === "en" ? "# Yume — Blog" : "# Yume — Blog", ""];
+  const lines = [lang === "en" ? "# Yume: Blog" : "# Yume: Blog", ""];
   for (const p of posts) {
     const url = lang === "en" ? `${SITE.url}/en/blog/${p.slug}` : `${SITE.url}/blog/${p.slug}`;
     lines.push(`## [${p.title}](${url})`);

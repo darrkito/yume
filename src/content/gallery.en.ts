@@ -6,7 +6,7 @@ export interface GalleryTranslation {
   alt: string;
 }
 
-// Keyed by the same `slug` as gallery.ts — translation-only, image/dimensions
+// Keyed by the same `slug` as gallery.ts: translation-only, image/dimensions
 // stay shared from the Spanish source (same pattern as products.en.ts).
 const translations: Record<string, GalleryTranslation> = {
   "hello-kitty": {

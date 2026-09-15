@@ -8,7 +8,7 @@ export const generalFaqEn: FaqItem[] = [
   },
   {
     q: "Can I order a custom product that isn't in the catalog?",
-    a: "Yes, we also customize temporary tattoos, event invitations, menus, and more — tell us what you need when you request a quote.",
+    a: "Yes, we also customize temporary tattoos, event invitations, menus, and more: tell us what you need when you request a quote.",
   },
   {
     q: "Can I approve the design before it's produced?",

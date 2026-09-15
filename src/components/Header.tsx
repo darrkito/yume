@@ -55,7 +55,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-paper/95 backdrop-blur-sm">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link href={lang === "en" ? "/en" : "/"} className="flex items-center gap-2" aria-label={`${SITE.name} — ${t.home}`} onClick={() => setOpen(false)}>
+        <Link href={lang === "en" ? "/en" : "/"} className="flex items-center gap-2" aria-label={`${SITE.name}: ${t.home}`} onClick={() => setOpen(false)}>
           <Image src="/logo-yume-wordmark.webp" alt={SITE.name} width={215} height={80} className="h-9 w-auto sm:h-11" priority />
         </Link>
         <nav aria-label={t.mainNav} className="hidden items-center gap-8 text-sm text-ink-soft sm:flex">

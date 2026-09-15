@@ -98,7 +98,7 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
           >
             {product.variants!.map((v) => (
               <option key={v.id} value={v.id}>
-                {variantLabel(v.id, v.label)} — {formatMXN(v.price)} MXN
+                {variantLabel(v.id, v.label)} · {formatMXN(v.price)} MXN
               </option>
             ))}
           </select>

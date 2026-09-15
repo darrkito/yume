@@ -2,7 +2,7 @@
   "schemaVersion": "0.2.0",
   "name": "yume-agent-skills",
   "title": "Yume",
-  "description": "Real, read-only skills over Yume's product catalog, FAQ, and blog — the same data the MCP server and A2A agent expose.",
+  "description": "Real, read-only skills over Yume's product catalog, FAQ, and blog: the same data the MCP server and A2A agent expose.",
   "skills": [
     {
       "id": "get_products",

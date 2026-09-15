@@ -9,26 +9,26 @@ export interface ProductVariant {
 export interface Product {
   slug: string;
   name: string;
-  /** Base/starting price — the lowest variant price when `variants` is set.
+  /** Base/starting price: the lowest variant price when `variants` is set.
    * Always what schema.org Offer, MCP/A2A, and listing cards show. */
   price: number;
   currency: "MXN";
   category: string;
   specs: { label: string; value: string }[];
   description: string;
-  /** Short summary for <meta description>/OG — falls back to `description`
+  /** Short summary for <meta description>/OG: falls back to `description`
    * when unset. `description` doubles as the visible on-page paragraph, so
    * long ones need a separate, search-length-appropriate summary here. */
   metaDescription?: string;
   details: string[];
   faq: { q: string; a: string }[];
   image?: string;
-  /** Real pixel dimensions of `image` — lets the product photo frame size
+  /** Real pixel dimensions of `image`: lets the product photo frame size
    * itself to the image's actual aspect ratio instead of an arbitrary box,
    * and gives next/image a correct intrinsic size (avoids layout shift). */
   imageWidth?: number;
   imageHeight?: number;
-  /** True when the customer must send their own logo/artwork for us to print — the
+  /** True when the customer must send their own logo/artwork for us to print: the
    * product page shows a file picker (preview only, no upload backend yet) and
    * clear instructions to attach it in the WhatsApp chat. */
   requiresImage?: boolean;
@@ -42,12 +42,12 @@ export interface Product {
   showGallery?: boolean;
   /** Shows a "Nuevo" badge on listing cards, the product page, and makes it
    * eligible for the homepage's featured-product slot. Toggle off by hand
-   * once the launch window has passed — no expiry date logic, YAGNI. */
+   * once the launch window has passed: no expiry date logic, YAGNI. */
   isNew?: boolean;
 }
 
 // Stickers pricing: 50 piezas = $100 (base rate $2.00/pieza). From there,
-// each extra 25-pieza block costs $40 instead of $50 — a 20% discount that
+// each extra 25-pieza block costs $40 instead of $50: a 20% discount that
 // applies only to the extra piezas beyond the first 50. Generates the
 // selectable quantities: 50→$100, 75→$140, 100→$180, ... up to 300→$500.
 const STICKER_BASE_QTY = 50;
@@ -63,7 +63,7 @@ const stickerVariants: ProductVariant[] = Array.from({ length: STICKER_MAX_STEPS
 });
 
 // Vinyl stickers pricing: 40 piezas = $100 (base rate $2.50/pieza). From
-// there, each extra 10-pieza block costs $20 instead of $25 — a 20%
+// there, each extra 10-pieza block costs $20 instead of $25: a 20%
 // discount on the extra piezas beyond the first 40. Same discount
 // mechanism as stickerVariants, different base/step sizes.
 // Generates: 40→$100, 50→$120, 60→$140, ... up to 140→$300.
@@ -107,8 +107,8 @@ export const products: Product[] = [
     ],
     image: "/recetario-medico.webp",
     variants: [
-      { id: "sin-diseno", label: "Sin diseño — ya tienes tu diseño listo", price: 320, default: true },
-      { id: "con-diseno", label: "Con diseño — lo diseñamos contigo", price: 400 },
+      { id: "sin-diseno", label: "Sin diseño: ya tienes tu diseño listo", price: 320, default: true },
+      { id: "con-diseno", label: "Con diseño: lo diseñamos contigo", price: 400 },
     ],
     faq: [
       {
@@ -181,7 +181,7 @@ export const products: Product[] = [
       },
       {
         q: "¿Cuál es el precio de las etiquetas?",
-        a: "Las primeras 50 piezas cuestan $100. A partir de ahí, cada 25 piezas extra tienen 20% de descuento y cuestan $40 en vez de $50 — por ejemplo, 75 piezas son $140 y 100 piezas son $180.",
+        a: "Las primeras 50 piezas cuestan $100. A partir de ahí, cada 25 piezas extra tienen 20% de descuento y cuestan $40 en vez de $50: por ejemplo, 75 piezas son $140 y 100 piezas son $180.",
       },
       {
         q: "¿Las etiquetas son resistentes al agua?",
@@ -210,7 +210,7 @@ export const products: Product[] = [
       { label: "Personalización", value: "Tu diseño, personaje o foto" },
     ],
     description:
-      "Stickers troquelados en vinil premium, resistentes al agua, al sol y a rayones — para cualquier diseño, personaje o foto que quieras convertir en sticker, no solo logos. Se venden por cantidad de piezas, no por planilla: los primeros 40 piezas cuestan $100 y, a partir de ahí, cada 10 piezas extra tienen 20% de descuento ($20 en vez de $25). Envíanos tu imagen o diseño y te mandamos una prueba digital antes de imprimir.",
+      "Stickers troquelados en vinil premium, resistentes al agua, al sol y a rayones: para cualquier diseño, personaje o foto que quieras convertir en sticker, no solo logos. Se venden por cantidad de piezas, no por planilla: los primeros 40 piezas cuestan $100 y, a partir de ahí, cada 10 piezas extra tienen 20% de descuento ($20 en vez de $25). Envíanos tu imagen o diseño y te mandamos una prueba digital antes de imprimir.",
     metaDescription:
       "Stickers de vinil personalizados, resistentes al agua, al sol y a rayones. Cualquier diseño, personaje o foto. Desde $100 por 40 piezas, con descuento por volumen.",
     details: [
@@ -230,7 +230,7 @@ export const products: Product[] = [
     faq: [
       {
         q: "¿En qué se diferencian de las Etiquetas Logo Personalizado?",
-        a: "Es el mismo tipo de vinil, pero con distinto mínimo y escalón de precio — Etiquetas Logo Personalizado está pensado para el logo de tu negocio (desde 50 piezas), mientras que Stickers Vinil Impermeable es para cualquier diseño, personaje, mascota o foto que quieras convertir en sticker (desde 40 piezas).",
+        a: "Es el mismo tipo de vinil, pero con distinto mínimo y escalón de precio: Etiquetas Logo Personalizado está pensado para el logo de tu negocio (desde 50 piezas), mientras que Stickers Vinil Impermeable es para cualquier diseño, personaje, mascota o foto que quieras convertir en sticker (desde 40 piezas).",
       },
       {
         q: "¿Puedo pedir stickers de mis personajes favoritos?",
@@ -246,11 +246,11 @@ export const products: Product[] = [
       },
       {
         q: "¿Cuál es el precio de los stickers de vinil?",
-        a: "Las primeras 40 piezas cuestan $100. A partir de ahí, cada 10 piezas extra tienen 20% de descuento y cuestan $20 en vez de $25 — por ejemplo, 50 piezas son $120 y 60 piezas son $140.",
+        a: "Las primeras 40 piezas cuestan $100. A partir de ahí, cada 10 piezas extra tienen 20% de descuento y cuestan $20 en vez de $25: por ejemplo, 50 piezas son $120 y 60 piezas son $140.",
       },
       {
         q: "¿El vinil resiste el agua y el sol?",
-        a: "Sí, es vinil premium resistente al agua, al sol y a rayones — aguanta bien en botellas, laptops, patinetas o superficies que se mojan o se exponen al sol.",
+        a: "Sí, es vinil premium resistente al agua, al sol y a rayones: aguanta bien en botellas, laptops, patinetas o superficies que se mojan o se exponen al sol.",
       },
     ],
   },
@@ -400,5 +400,5 @@ export const resolvePrice = (product: Product, variantId?: string): number => {
 
 export const cartItemLabel = (product: Product, variantId?: string): string => {
   const variant = product.variants?.find((v) => v.id === variantId);
-  return variant ? `${product.name} — ${variant.label}` : product.name;
+  return variant ? `${product.name}: ${variant.label}` : product.name;
 };

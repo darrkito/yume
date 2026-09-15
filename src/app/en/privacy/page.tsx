@@ -16,7 +16,7 @@ const SECTIONS = [
   },
   {
     title: "2. Data we collect",
-    body: "We collect the data you provide directly when requesting a quote on WhatsApp (name, message, and any image/design you attach) or when placing an order online (name, shipping address, email, phone, and payment data processed directly by Mercado Pago — we never store card numbers ourselves).",
+    body: "We collect the data you provide directly when requesting a quote on WhatsApp (name, message, and any image/design you attach) or when placing an order online (name, shipping address, email, phone, and payment data processed directly by Mercado Pago; we never store card numbers ourselves).",
   },
   {
     title: "3. Purpose of processing",
@@ -24,7 +24,7 @@ const SECTIONS = [
   },
   {
     title: "4. Third parties that process data on our behalf",
-    body: "We use Mercado Pago to process online payments (card, SPEI, cash at stores) and Supabase to securely store your order information. We use Microsoft Clarity to anonymously understand how the site is used (heatmaps, session recordings) — we do not use Google Analytics or Meta Pixel on this site.",
+    body: "We use Mercado Pago to process online payments (card, SPEI, cash at stores) and Supabase to securely store your order information. We use Microsoft Clarity to anonymously understand how the site is used (heatmaps, session recordings); we do not use Google Analytics or Meta Pixel on this site.",
   },
   {
     title: "5. Your rights",

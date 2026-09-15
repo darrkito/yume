@@ -35,7 +35,7 @@ function matchAnswerEs(text: string): string {
   }
 
   if (/dónde|ubicaci|ciudad|guadalajara|jalisco|envío|envían|nacional/.test(q)) {
-    return `Yume produce desde ${SITE.city}, ${SITE.state}, y envía a todo México. No tenemos tienda física para visitar — todo el proceso se hace a distancia con una prueba digital que apruebas antes de imprimir.`;
+    return `Yume produce desde ${SITE.city}, ${SITE.state}, y envía a todo México. No tenemos tienda física para visitar: todo el proceso se hace a distancia con una prueba digital que apruebas antes de imprimir.`;
   }
 
   if (/requisitos|datos obligatorios|debe llevar/.test(q) && /receta|recetario|médico/.test(q)) {
@@ -58,8 +58,8 @@ function matchAnswerEs(text: string): string {
     const p = blogPosts.find((post) => post.slug === slug);
     if (!p) return "No encontré esa guía en el blog.";
     const claim = isRecetario
-      ? "Sí — nuestro precio está prácticamente empatado con el más bajo del mercado, y somos los únicos que incluyen el diseño del membrete en el precio."
-      : "Sí — en precio por pieza estamos entre los más bajos del mercado que revisamos, y con el mínimo de compra más accesible ($100 MXN vs. $319–$550 de la competencia).";
+      ? "Sí, nuestro precio está prácticamente empatado con el más bajo del mercado, y somos los únicos que incluyen el diseño del membrete en el precio."
+      : "Sí, en precio por pieza estamos entre los más bajos del mercado que revisamos, y con el mínimo de compra más accesible ($100 MXN vs. $319–$550 de la competencia).";
     return `${claim} Comparación completa: ${SITE.url}/blog/${p.slug}`;
   }
 
@@ -77,7 +77,7 @@ function matchAnswerEs(text: string): string {
     const petGuideNote = /mascota|perro|gato/.test(q)
       ? ` Guía dedicada a stickers de mascota: ${SITE.url}/blog/stickers-personalizados-para-mascotas`
       : "";
-    return `${p.name}: $${p.price.toFixed(2)} MXN. ${p.description} Más info: ${SITE.url}/productos/${p.slug} — también puedes ver ejemplos reales en ${SITE.url}/galeria${petGuideNote}`;
+    return `${p.name}: $${p.price.toFixed(2)} MXN. ${p.description} Más info: ${SITE.url}/productos/${p.slug}. También puedes ver ejemplos reales en ${SITE.url}/galeria${petGuideNote}`;
   }
 
   if (/sticker|etiqueta/.test(q)) {
@@ -95,7 +95,7 @@ function matchAnswerEs(text: string): string {
   }
 
   if (/cotiz|comprar|pedido|whatsapp/.test(q)) {
-    return `Puedes cotizar directo por WhatsApp: ${waLink("Hola, me interesa cotizar un producto de Yume.")} — o pagar en línea desde ${SITE.url}/pago.`;
+    return `Puedes cotizar directo por WhatsApp: ${waLink("Hola, me interesa cotizar un producto de Yume.")}, o pagar en línea desde ${SITE.url}/pago.`;
   }
 
   if (/pago|pagar|tarjeta|efectivo|oxxo/.test(q)) {
@@ -114,7 +114,7 @@ function matchAnswerEn(text: string): string {
   }
 
   if (/where|location|city|guadalajara|jalisco|ship/.test(q)) {
-    return `Yume produces everything from ${SITE.city}, ${SITE.state}, and ships across all of Mexico. We don't have a physical storefront to visit — the whole process happens remotely, with a digital proof you approve before printing.`;
+    return `Yume produces everything from ${SITE.city}, ${SITE.state}, and ships across all of Mexico. We don't have a physical storefront to visit: the whole process happens remotely, with a digital proof you approve before printing.`;
   }
 
   if (/requirements|required information|what.*include/.test(q) && /prescription|medical/.test(q)) {
@@ -137,8 +137,8 @@ function matchAnswerEn(text: string): string {
     const p = blogPostsEn.find((post) => post.slug === slug);
     if (!p) return "I couldn't find that guide on the blog.";
     const claim = isPrescriptionPad
-      ? "Yes — our price is practically tied with the lowest in the market, and we're the only ones who include letterhead design in the price."
-      : "Yes — on a per-piece basis we're among the lowest-priced options we reviewed, with the most accessible minimum order ($100 MXN vs. $319–$550 for competitors).";
+      ? "Yes, our price is practically tied with the lowest in the market, and we're the only ones who include letterhead design in the price."
+      : "Yes, on a per-piece basis we're among the lowest-priced options we reviewed, with the most accessible minimum order ($100 MXN vs. $319–$550 for competitors).";
     return `${claim} Full comparison: ${SITE.url}/en/blog/${p.slug}`;
   }
 
@@ -158,7 +158,7 @@ function matchAnswerEn(text: string): string {
     const petGuideNote = /pet\b|dog|cat/.test(q)
       ? ` Dedicated pet-sticker guide: ${SITE.url}/en/blog/custom-pet-stickers`
       : "";
-    return `${t.name}: $${p.price.toFixed(2)} MXN. ${t.description} More info: ${SITE.url}/en/products/waterproof-vinyl-stickers — see real examples at ${SITE.url}/en/gallery${petGuideNote}`;
+    return `${t.name}: $${p.price.toFixed(2)} MXN. ${t.description} More info: ${SITE.url}/en/products/waterproof-vinyl-stickers. See real examples at ${SITE.url}/en/gallery${petGuideNote}`;
   }
 
   if (/sticker/.test(q)) {
@@ -178,7 +178,7 @@ function matchAnswerEn(text: string): string {
   }
 
   if (/quote|order|whatsapp/.test(q)) {
-    return `You can request a quote directly on WhatsApp: ${waLink("Hi, I'm interested in getting a quote for a Yume product.")} — or pay online from ${SITE.url}/en/checkout.`;
+    return `You can request a quote directly on WhatsApp: ${waLink("Hi, I'm interested in getting a quote for a Yume product.")}, or pay online from ${SITE.url}/en/checkout.`;
   }
 
   if (/pay|payment|card|cash/.test(q)) {

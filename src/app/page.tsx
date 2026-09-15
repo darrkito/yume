@@ -186,7 +186,7 @@ export default function Home() {
         <InfiniteGalleryStrip
           items={galleryItems}
           heading="Galería de trabajos"
-          body="Hello Kitty, Pokémon, Zelda, mascotas, logos y más — mira ejemplos reales de stickers que hemos producido."
+          body="Hello Kitty, Pokémon, Zelda, mascotas, logos y más: mira ejemplos reales de stickers que hemos producido."
           viewAllLabel="Ver galería completa"
           viewAllHref="/galeria"
         />

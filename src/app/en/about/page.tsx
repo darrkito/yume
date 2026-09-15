@@ -5,7 +5,7 @@ import { SITE, waLink } from "@/content/site";
 import { pageMetadata, breadcrumbSchema } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "About Yume — Custom Stationery Studio in Guadalajara",
+  title: "About Yume: Custom Stationery Studio in Guadalajara",
   description: "Meet Yume: custom stationery and personalized goods made to order in Guadalajara, Jalisco, shipping across all of Mexico.",
   path: "/en/about",
   lang: "en",
@@ -18,15 +18,15 @@ const SECTIONS = [
   },
   {
     title: "Flexible quantities, not wholesale minimums",
-    body: "Unlike most print shops, we don't require minimums in the hundreds or thousands. You can order a single personalized prescription pad, or as few as 40-50 stickers, with pricing starting at $100 MXN — not the large-minimum tiers typical of this market.",
+    body: "Unlike most print shops, we don't require minimums in the hundreds or thousands. You can order a single personalized prescription pad, or as few as 40-50 stickers, with pricing starting at $100 MXN, not the large-minimum tiers typical of this market.",
   },
   {
     title: "Digital proof before printing",
-    body: "Every piece is approved by the customer via a digital proof before it goes into production. Nothing is printed without your approval — no surprises, no guessing at what you wanted.",
+    body: "Every piece is approved by the customer via a digital proof before it goes into production. Nothing is printed without your approval, no surprises, no guessing at what you wanted.",
   },
   {
     title: "Honest about who we are",
-    body: "Yume is a real, small business based in Guadalajara — not a generic global operation. We don't currently have published customer testimonials or reviews; we'd rather say so than invent social proof that doesn't exist yet.",
+    body: "Yume is a real, small business based in Guadalajara, not a generic global operation. We don't currently have published customer testimonials or reviews; we'd rather say so than invent social proof that doesn't exist yet.",
   },
 ];
 

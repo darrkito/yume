@@ -5,7 +5,7 @@ import { pageMetadata, breadcrumbSchema } from "@/lib/seo";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Contact — Get a Custom Stationery Quote",
+  title: "Contact: Get a Custom Stationery Quote",
   description: "Contact Yume via WhatsApp, email, or Instagram to get a quote for custom stationery or personalized goods. Shipping across Mexico from Guadalajara.",
   path: "/en/contact",
   lang: "en",
@@ -49,14 +49,14 @@ export default function ContactPageEn() {
         </a>
         <p className="flex items-center gap-2 text-sm text-ink-soft">
           <MapPin size={18} aria-hidden="true" />
-          {SITE.city}, {SITE.state}, Mexico — shipping nationwide, pickup available at the Casa Blanca point (Guadalajara).
+          {SITE.city}, {SITE.state}, Mexico. Shipping nationwide, pickup available at the Casa Blanca point (Guadalajara).
         </p>
       </div>
 
       <div className="mt-12 border-t border-line pt-8">
         <h2 className="font-display text-xl text-ink">On turnaround times</h2>
         <p className="mt-2 max-w-xl text-sm leading-relaxed text-ink-soft">
-          Every piece is made to order, so turnaround varies by product and quantity. We confirm the exact timeline when you request a quote on WhatsApp — we don&apos;t publish a fixed timeframe because we&apos;d rather give you the real one for your order, not a generic estimate.
+          Every piece is made to order, so turnaround varies by product and quantity. We confirm the exact timeline when you request a quote on WhatsApp; we don&apos;t publish a fixed timeframe because we&apos;d rather give you the real one for your order, not a generic estimate.
         </p>
       </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />

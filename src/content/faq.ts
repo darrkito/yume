@@ -10,7 +10,7 @@ export interface FaqCategory {
   items: FaqItem[];
 }
 
-// General FAQs that don't belong to a specific product — shown as their own
+// General FAQs that don't belong to a specific product: shown as their own
 // accordion category alongside each product's own FAQ list.
 export const generalFaq: FaqItem[] = [
   {
@@ -19,7 +19,7 @@ export const generalFaq: FaqItem[] = [
   },
   {
     q: "¿Puedo pedir un producto personalizado que no está en el catálogo?",
-    a: "Sí, también personalizamos tatuajes temporales, invitaciones para eventos, menús y más — cuéntanos qué necesitas al cotizar.",
+    a: "Sí, también personalizamos tatuajes temporales, invitaciones para eventos, menús y más: cuéntanos qué necesitas al cotizar.",
   },
   {
     q: "¿Puedo aprobar el diseño antes de que se produzca?",
@@ -35,7 +35,7 @@ export const generalFaq: FaqItem[] = [
   },
   {
     q: "¿Tienen entrega local en Guadalajara?",
-    a: "Sí — si estás en Guadalajara o la zona metropolitana, puedes elegir recolección en una sucursal de Casa Blanca por $20 MXN en vez de envío a domicilio ($190 MXN). Al pagar eliges la sucursal que te quede mejor (hay 11 en la ZMG); te avisamos por WhatsApp y correo en cuanto tu pedido esté listo, junto con el comprobante que necesitas presentar para recogerlo.",
+    a: "Sí: si estás en Guadalajara o la zona metropolitana, puedes elegir recolección en una sucursal de Casa Blanca por $20 MXN en vez de envío a domicilio ($190 MXN). Al pagar eliges la sucursal que te quede mejor (hay 11 en la ZMG); te avisamos por WhatsApp y correo en cuanto tu pedido esté listo, junto con el comprobante que necesitas presentar para recogerlo.",
   },
   {
     q: "¿El envío a domicilio tiene costo?",
@@ -54,7 +54,7 @@ export function getFaqCategories(): FaqCategory[] {
   ];
 }
 
-// A small, cross-category preview for the home page teaser — one question
+// A small, cross-category preview for the home page teaser: one question
 // per category so the visitor sees the spread of topics before clicking
 // through to the full page.
 export function getFeaturedFaq(): FaqItem[] {

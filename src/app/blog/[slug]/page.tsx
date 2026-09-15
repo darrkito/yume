@@ -96,7 +96,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         <div className="card-soft mt-14 p-6">
           <p className="text-xs font-semibold uppercase tracking-[0.1em] text-brand-deep">¿Te interesa?</p>
           <p className="mt-2 text-sm leading-relaxed text-ink-soft">
-            Este producto se cotiza a la medida — cuéntanos tu evento o proyecto y te confirmamos precio y tiempo de entrega.
+            Este producto se cotiza a la medida: cuéntanos tu evento o proyecto y te confirmamos precio y tiempo de entrega.
           </p>
           <a href={waLink(post.quoteMessage)} target="_blank" rel="noopener noreferrer" className="btn-soft btn-soft-solid mt-4">
             Cotizar por WhatsApp

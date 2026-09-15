@@ -30,7 +30,7 @@ export default function PreguntasFrecuentesPage() {
       <p className="animate-fade-up text-xs uppercase tracking-[0.25em] text-brand">Ayuda</p>
       <h1 className="animate-fade-up animate-fade-up-1 mt-3 font-display text-4xl text-ink sm:text-5xl">Preguntas frecuentes</h1>
       <p className="animate-fade-up animate-fade-up-2 mt-4 max-w-lg text-sm leading-relaxed text-ink-soft">
-        Todo lo que necesitas saber sobre pedidos, envíos y nuestros productos — organizado por tema.
+        Todo lo que necesitas saber sobre pedidos, envíos y nuestros productos, organizado por tema.
       </p>
 
       <div className="mt-14">

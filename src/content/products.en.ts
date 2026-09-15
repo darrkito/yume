@@ -4,12 +4,12 @@ export interface ProductTranslation {
   name: string;
   category: string;
   description: string;
-  /** Short summary for <meta description>/OG — falls back to `description` when unset. */
+  /** Short summary for <meta description>/OG: falls back to `description` when unset. */
   metaDescription?: string;
   details: string[];
   specs: { label: string; value: string }[];
   faq: { q: string; a: string }[];
-  /** English label per variant id — variant ids/prices themselves are never
+  /** English label per variant id: variant ids/prices themselves are never
    * translated, they're the canonical pricing data shared with checkout. */
   variantLabels?: Record<string, string>;
 }
@@ -46,8 +46,8 @@ export const productsEn: Record<string, ProductTranslation> = {
       "Every piece is approved with you before it goes into production",
     ],
     variantLabels: {
-      "sin-diseno": "No design — you already have your design ready",
-      "con-diseno": "With design — we design it with you",
+      "sin-diseno": "No design: you already have your design ready",
+      "con-diseno": "With design: we design it with you",
     },
     faq: [
       {
@@ -56,7 +56,7 @@ export const productsEn: Record<string, ProductTranslation> = {
       },
       {
         q: "What information do I need to send to customize my pad?",
-        a: "Full name, professional license number, specialty, and whatever contact details you want on the letterhead (office address, phone, hours). If you have a logo, send it over — if not, we'll help you create a simple one for the letterhead.",
+        a: "Full name, professional license number, specialty, and whatever contact details you want on the letterhead (office address, phone, hours). If you have a logo, send it over: if not, we'll help you create a simple one for the letterhead.",
       },
       {
         q: "Can I see the design before it's printed?",
@@ -112,7 +112,7 @@ export const productsEn: Record<string, ProductTranslation> = {
       },
       {
         q: "What's the price of the stickers?",
-        a: "The first 50 pieces cost $100. From there, every extra 25 pieces get a 20% discount and cost $40 instead of $50 — for example, 75 pieces is $140 and 100 pieces is $180.",
+        a: "The first 50 pieces cost $100. From there, every extra 25 pieces get a 20% discount and cost $40 instead of $50: for example, 75 pieces is $140 and 100 pieces is $180.",
       },
       {
         q: "Are the stickers water-resistant?",
@@ -136,7 +136,7 @@ export const productsEn: Record<string, ProductTranslation> = {
       { label: "Customization", value: "Your design, character, or photo" },
     ],
     description:
-      "Die-cut stickers on premium vinyl, resistant to water, sun, and scratches — for any design, character, or photo you want turned into a sticker, not just logos. Sold by piece count, not by sheet: the first 40 pieces cost $100 and, from there, every extra 10 pieces get a 20% discount ($20 instead of $25). Send us your image or design and we'll send a digital proof before printing.",
+      "Die-cut stickers on premium vinyl, resistant to water, sun, and scratches: for any design, character, or photo you want turned into a sticker, not just logos. Sold by piece count, not by sheet: the first 40 pieces cost $100 and, from there, every extra 10 pieces get a 20% discount ($20 instead of $25). Send us your image or design and we'll send a digital proof before printing.",
     metaDescription:
       "Custom vinyl stickers, resistant to water, sun, and scratches. Any design, character, or photo. Starting at $100 for 40 pieces, with volume discounts.",
     details: [
@@ -153,7 +153,7 @@ export const productsEn: Record<string, ProductTranslation> = {
     faq: [
       {
         q: "How is this different from Custom Logo Stickers?",
-        a: "Same vinyl, but a different minimum and price step — Custom Logo Stickers is meant for your business logo (starting at 50 pieces), while Waterproof Vinyl Stickers is for any design, character, pet, or photo you want turned into a sticker (starting at 40 pieces).",
+        a: "Same vinyl, but a different minimum and price step: Custom Logo Stickers is meant for your business logo (starting at 50 pieces), while Waterproof Vinyl Stickers is for any design, character, pet, or photo you want turned into a sticker (starting at 40 pieces).",
       },
       {
         q: "Can I order stickers of my favorite characters?",
@@ -169,11 +169,11 @@ export const productsEn: Record<string, ProductTranslation> = {
       },
       {
         q: "What's the price of the vinyl stickers?",
-        a: "The first 40 pieces cost $100. From there, every extra 10 pieces get a 20% discount and cost $20 instead of $25 — for example, 50 pieces is $120 and 60 pieces is $140.",
+        a: "The first 40 pieces cost $100. From there, every extra 10 pieces get a 20% discount and cost $20 instead of $25: for example, 50 pieces is $120 and 60 pieces is $140.",
       },
       {
         q: "Is the vinyl water and sun resistant?",
-        a: "Yes, it's premium vinyl resistant to water, sun, and scratches — it holds up well on bottles, laptops, skateboards, or surfaces that get wet or sun exposure.",
+        a: "Yes, it's premium vinyl resistant to water, sun, and scratches: it holds up well on bottles, laptops, skateboards, or surfaces that get wet or sun exposure.",
       },
     ],
   },
@@ -286,12 +286,12 @@ export const productsEn: Record<string, ProductTranslation> = {
 
 export const getProductTranslation = (slug: string) => productsEn[slug];
 
-/** English equivalent of products.ts's cartItemLabel() — variant id/price
+/** English equivalent of products.ts's cartItemLabel(): variant id/price
  * resolution stays shared (resolvePrice()); only the display strings differ. */
 export function cartItemLabelEn(product: Product, variantId?: string): string {
   const t = productsEn[product.slug];
   if (!t) return product.name;
   const variant = product.variants?.find((v) => v.id === variantId);
   if (!variant) return t.name;
-  return `${t.name} — ${t.variantLabels?.[variant.id] ?? variant.label}`;
+  return `${t.name}: ${t.variantLabels?.[variant.id] ?? variant.label}`;
 }

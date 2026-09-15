@@ -5,7 +5,7 @@ import { SITE, waLink } from "@/content/site";
 import { pageMetadata, breadcrumbSchema } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Nosotros — Papelería Personalizada en Guadalajara",
+  title: "Nosotros: Papelería Personalizada en Guadalajara",
   description: "Conoce a Yume: papelería y artículos personalizados hechos sobre pedido desde Guadalajara, Jalisco, con envíos a todo México.",
   path: "/nosotros",
 });
@@ -17,15 +17,15 @@ const SECTIONS = [
   },
   {
     title: "Cantidades flexibles, no mínimos de mayoreo",
-    body: "A diferencia de la mayoría de las imprentas, no exigimos mínimos de cientos o miles de piezas. Puedes pedir un solo recetario personalizado, o desde 40-50 piezas de stickers, con precios desde $100 MXN — no las planillas de mínimos grandes típicas del mercado.",
+    body: "A diferencia de la mayoría de las imprentas, no exigimos mínimos de cientos o miles de piezas. Puedes pedir un solo recetario personalizado, o desde 40-50 piezas de stickers, con precios desde $100 MXN, no las planillas de mínimos grandes típicas del mercado.",
   },
   {
     title: "Prueba digital antes de imprimir",
-    body: "Cada pieza se aprueba con el cliente mediante una prueba digital antes de entrar a producción. No imprimimos nada sin tu aprobación — sin sorpresas, sin adivinar qué querías.",
+    body: "Cada pieza se aprueba con el cliente mediante una prueba digital antes de entrar a producción. No imprimimos nada sin tu aprobación, sin sorpresas, sin adivinar qué querías.",
   },
   {
     title: "Honestidad sobre quiénes somos",
-    body: "Yume es un negocio real y pequeño con base en Guadalajara — no una operación global genérica. Actualmente no contamos con testimonios ni reseñas publicadas de clientes; preferimos no inventar prueba social que no existe todavía.",
+    body: "Yume es un negocio real y pequeño con base en Guadalajara, no una operación global genérica. Actualmente no contamos con testimonios ni reseñas publicadas de clientes; preferimos no inventar prueba social que no existe todavía.",
   },
 ];
 

@@ -2,7 +2,7 @@
   "specVersion": "1.0.0",
   "name": "Yume",
   "url": "https://studioyume.mx",
-  "description": "Custom creative stationery from Guadalajara, Jalisco, México — medical prescription pads, custom logo stickers, and NFC/QR plates and stands for Google reviews, made to order.",
+  "description": "Custom creative stationery from Guadalajara, Jalisco, México: medical prescription pads, custom logo stickers, and NFC/QR plates and stands for Google reviews, made to order.",
   "entries": [
     {
       "identifier": "yume-mcp-server",

@@ -138,7 +138,7 @@ export function ShippingForm({
             }`}
           >
             <p className="text-sm font-semibold text-ink">
-              {t.nationalShipping} — {nationalShippingCost > 0 ? `${formatMXN(nationalShippingCost)} MXN` : t.free}
+              {t.nationalShipping} · {nationalShippingCost > 0 ? `${formatMXN(nationalShippingCost)} MXN` : t.free}
             </p>
             <p className="mt-1 text-xs leading-relaxed text-ink-soft">{nationalShippingCost === 0 ? t.nationalShippingFreeNote : t.nationalShippingDesc}</p>
           </button>
@@ -150,7 +150,7 @@ export function ShippingForm({
             }`}
           >
             <p className="text-sm font-semibold text-ink">
-              {t.casablancaPickup} — {formatMXN(CASABLANCA_PRICE)} MXN
+              {t.casablancaPickup} · {formatMXN(CASABLANCA_PRICE)} MXN
             </p>
             <p className="mt-1 text-xs leading-relaxed text-ink-soft">{t.casablancaPickupDesc}</p>
           </button>
@@ -164,7 +164,7 @@ export function ShippingForm({
             <select id="casablanca-branch" required className={FIELD_CLASS} value={branchId} onChange={(e) => setBranchId(e.target.value)}>
               {branches.map((b) => (
                 <option key={b.id} value={b.id}>
-                  {b.name} — {b.address}
+                  {b.name} · {b.address}
                 </option>
               ))}
             </select>

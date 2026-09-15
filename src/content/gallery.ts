@@ -1,7 +1,7 @@
 export interface GalleryItem {
   slug: string;
   image: string;
-  /** Width/height of the source photo — required for next/image to avoid CLS. */
+  /** Width/height of the source photo: required for next/image to avoid CLS. */
   width: number;
   height: number;
   category: string;

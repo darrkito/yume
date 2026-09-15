@@ -77,7 +77,7 @@ export function businessNotificationEmail(order: Order): { subject: string; html
 
   const html = `
   <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;color:#222;">
-    <h2 style="color:#111;">Nueva venta confirmada — ${SITE.name}</h2>
+    <h2 style="color:#111;">Nueva venta confirmada: ${SITE.name}</h2>
     <p><strong>Orden:</strong> ${order.id}</p>
     <p><strong>Fecha:</strong> ${new Date(order.updated_at).toLocaleString("es-MX")}</p>
     <p><strong>ID de pago Mercado Pago:</strong> ${order.mp_payment_id ?? "N/A"}</p>

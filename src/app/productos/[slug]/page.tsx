@@ -143,7 +143,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         <InfiniteGalleryStrip
           items={galleryItems}
           heading="Trabajos realizados"
-          body="Ejemplos reales de stickers que hemos producido — personajes, mascotas y logos."
+          body="Ejemplos reales de stickers que hemos producido: personajes, mascotas y logos."
           viewAllLabel="Ver galería completa"
           viewAllHref="/galeria"
         />

@@ -8,8 +8,8 @@ import { formatMXN } from "@/lib/format";
 import { UI } from "@/lib/i18n";
 
 const TAGLINE = {
-  es: `${SITE.tagline}. Piezas hechas sobre pedido en ${SITE.city}, ${SITE.state} — con envíos a todo México.`,
-  en: `Custom stationery and personalized goods. Pieces made to order in ${SITE.city}, ${SITE.state} — shipping across all of Mexico.`,
+  es: `${SITE.tagline}. Piezas hechas sobre pedido en ${SITE.city}, ${SITE.state}, con envíos a todo México.`,
+  en: `Custom stationery and personalized goods. Pieces made to order in ${SITE.city}, ${SITE.state}, shipping across all of Mexico.`,
 };
 
 const WA_QUOTE_MESSAGE = {

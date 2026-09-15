@@ -15,7 +15,7 @@ const SECTIONS = [
   },
   {
     title: "2. Datos que recabamos",
-    body: "Recabamos los datos que nos proporcionas directamente al solicitar una cotización por WhatsApp (nombre, mensaje, y cualquier imagen/diseño que adjuntes) o al realizar un pedido en línea (nombre, dirección de envío, correo electrónico, teléfono, y los datos de pago que procesa directamente Mercado Pago — nosotros no almacenamos números de tarjeta).",
+    body: "Recabamos los datos que nos proporcionas directamente al solicitar una cotización por WhatsApp (nombre, mensaje, y cualquier imagen/diseño que adjuntes) o al realizar un pedido en línea (nombre, dirección de envío, correo electrónico, teléfono, y los datos de pago que procesa directamente Mercado Pago; nosotros no almacenamos números de tarjeta).",
   },
   {
     title: "3. Finalidad del tratamiento",
@@ -23,7 +23,7 @@ const SECTIONS = [
   },
   {
     title: "4. Terceros que procesan datos en tu nombre",
-    body: "Usamos Mercado Pago para procesar pagos en línea (tarjeta, SPEI, efectivo en tiendas) y Supabase para almacenar la información de tu pedido de forma segura. Usamos Microsoft Clarity para entender de forma anónima cómo se usa el sitio (mapas de calor, grabaciones de sesión) — no usamos Google Analytics ni Meta Pixel en este sitio.",
+    body: "Usamos Mercado Pago para procesar pagos en línea (tarjeta, SPEI, efectivo en tiendas) y Supabase para almacenar la información de tu pedido de forma segura. Usamos Microsoft Clarity para entender de forma anónima cómo se usa el sitio (mapas de calor, grabaciones de sesión); no usamos Google Analytics ni Meta Pixel en este sitio.",
   },
   {
     title: "5. Derechos ARCO",

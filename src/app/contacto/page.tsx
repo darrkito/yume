@@ -5,7 +5,7 @@ import { pageMetadata, breadcrumbSchema } from "@/lib/seo";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Contacto — Cotiza tu Papelería Personalizada",
+  title: "Contacto: Cotiza tu Papelería Personalizada",
   description: "Contacta a Yume por WhatsApp, correo o Instagram para cotizar tu papelería o artículos personalizados. Envíos a todo México desde Guadalajara.",
   path: "/contacto",
 });
@@ -48,14 +48,14 @@ export default function ContactoPage() {
         </a>
         <p className="flex items-center gap-2 text-sm text-ink-soft">
           <MapPin size={18} aria-hidden="true" />
-          {SITE.city}, {SITE.state}, México — envíos a todo el país, recolección en punto Casa Blanca (Guadalajara).
+          {SITE.city}, {SITE.state}, México. Envíos a todo el país, recolección en punto Casa Blanca (Guadalajara).
         </p>
       </div>
 
       <div className="mt-12 border-t border-line pt-8">
         <h2 className="font-display text-xl text-ink">Sobre los tiempos de entrega</h2>
         <p className="mt-2 max-w-xl text-sm leading-relaxed text-ink-soft">
-          Cada pieza se produce sobre pedido, así que el tiempo de entrega varía según el producto y la cantidad. Te confirmamos el tiempo exacto al cotizar por WhatsApp — no publicamos un plazo fijo porque preferimos darte el real para tu pedido, no un estimado genérico.
+          Cada pieza se produce sobre pedido, así que el tiempo de entrega varía según el producto y la cantidad. Te confirmamos el tiempo exacto al cotizar por WhatsApp; no publicamos un plazo fijo porque preferimos darte el real para tu pedido, no un estimado genérico.
         </p>
       </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />

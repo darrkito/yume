@@ -39,12 +39,12 @@ const HOW_IT_WORKS = [
 ];
 
 export const metadata: Metadata = {
-  title: { absolute: "Yume — Custom Creative Stationery" },
+  title: { absolute: "Yume: Custom Creative Stationery" },
   description:
-    "Yume — custom stationery from Guadalajara, Jalisco: medical prescription pads and custom stickers, shipping across Mexico.",
+    "Yume: custom stationery from Guadalajara, Jalisco: medical prescription pads and custom stickers, shipping across Mexico.",
   alternates: { canonical: "/en", languages: hreflangFor("/") },
   openGraph: {
-    title: "Yume — Custom Creative Stationery",
+    title: "Yume: Custom Creative Stationery",
     description: "Custom stationery and personalized goods made to order from Guadalajara, Jalisco, shipping across all of Mexico.",
     type: "website",
     url: "/en",
@@ -205,7 +205,7 @@ export default function HomeEn() {
         <InfiniteGalleryStrip
           items={getGalleryItemsEn()}
           heading="Work we've done"
-          body="Hello Kitty, Pokémon, Zelda, pets, logos and more — see real examples of stickers we've produced."
+          body="Hello Kitty, Pokémon, Zelda, pets, logos and more: see real examples of stickers we've produced."
           viewAllLabel="See the full gallery"
           viewAllHref="/en/gallery"
         />
@@ -221,7 +221,7 @@ export default function HomeEn() {
               </div>
               <h3 className="mt-5 font-display text-xl text-ink text-balance">Design tailored to you</h3>
               <p className="mt-2 text-sm leading-relaxed text-ink-soft">
-                Every piece is adjusted to your details, your brand, or your practice — no generic templates.
+                Every piece is adjusted to your details, your brand, or your practice, no generic templates.
               </p>
             </div>
             <div className="info-card p-7">

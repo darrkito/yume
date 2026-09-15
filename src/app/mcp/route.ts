@@ -48,7 +48,7 @@ const TOOLS = [
   },
   {
     name: "get_blog_posts",
-    description: "List Yume's blog posts — local commerce guides for Guadalajara/Jalisco (personalized stationery, stickers for small businesses). Available in Spanish or English.",
+    description: "List Yume's blog posts: local commerce guides for Guadalajara/Jalisco (personalized stationery, stickers for small businesses). Available in Spanish or English.",
     inputSchema: { type: "object", properties: { ...LANG_PARAM }, additionalProperties: false },
   },
   {
@@ -64,7 +64,7 @@ const TOOLS = [
   {
     name: "request_quote",
     description:
-      "Get a link to request a real quote from Yume via WhatsApp. Pass productSlug or blogSlug to personalize the message to that specific product/topic (same pattern the site's own quote buttons use) — omit both only when no product or post is in context.",
+      "Get a link to request a real quote from Yume via WhatsApp. Pass productSlug or blogSlug to personalize the message to that specific product/topic (same pattern the site's own quote buttons use); omit both only when no product or post is in context.",
     inputSchema: {
       type: "object",
       properties: {

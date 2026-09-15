@@ -29,7 +29,7 @@ export default function BlogIndexPageEn() {
     <section className="mx-auto max-w-5xl px-6 py-16 sm:py-24">
       <h1 className="animate-fade-up font-display text-4xl text-ink text-balance sm:text-5xl">Guides & notes</h1>
       <p className="animate-fade-up animate-fade-up-1 mt-4 max-w-lg text-sm leading-relaxed text-ink-soft">
-        Custom creative stationery, medical prescription pads, and stickers for businesses — focused on Guadalajara and Jalisco.
+        Custom creative stationery, medical prescription pads, and stickers for businesses, focused on Guadalajara and Jalisco.
       </p>
 
       <div className="mt-14 grid gap-8 sm:grid-cols-2">
