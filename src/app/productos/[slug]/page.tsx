@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getProduct, productDisplayPrice, products } from "@/content/products";
 import { SITE } from "@/content/site";
+import { NATIONAL_SHIPPING_PRICE } from "@/content/shipping";
 import { ProductVisual } from "@/components/ProductVisual";
 import { ProductPurchase } from "@/components/ProductPurchase";
 import { LogoUploadNote } from "@/components/LogoUploadNote";
@@ -59,12 +60,9 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         returnPolicyCategory: "https://schema.org/MerchantReturnNotPermitted",
         applicableCountry: "MX",
       },
-      // El costo real de envío varía por destino/paquetería; $150 MXN es un
-      // estimado nacional promedio para paquetería ligera — ajustar cuando
-      // se tenga una tarifa real confirmada.
       shippingDetails: {
         "@type": "OfferShippingDetails",
-        shippingRate: { "@type": "MonetaryAmount", value: "150", currency: "MXN" },
+        shippingRate: { "@type": "MonetaryAmount", value: String(NATIONAL_SHIPPING_PRICE), currency: "MXN" },
         shippingDestination: { "@type": "DefinedRegion", addressCountry: "MX" },
         deliveryTime: {
           "@type": "ShippingDeliveryTime",

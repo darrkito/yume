@@ -178,34 +178,34 @@ export const productsEn: Record<string, ProductTranslation> = {
     ],
   },
   "placa-resena-google-nfc": {
-    name: "Google Review Plate — NFC and QR",
+    name: "Google Review Plate (NFC and QR)",
     category: "NFC & QR Google Review Plates and Stands",
     specs: [
       { label: "Size", value: "12 × 12 cm" },
       { label: "Thickness", value: "0.2 cm" },
       { label: "Available colors", value: "White and Black" },
       { label: "Technology", value: "NFC + QR code" },
-      { label: "Setup", value: "None needed — arrives ready to use" },
+      { label: "Setup", value: "None needed, arrives ready to use" },
       { label: "Production", value: "Made to order" },
     ],
     description:
-      "A plate for getting more Google reviews with NFC and QR technology, perfect for a counter, register, or table. We configure it with your business's link before shipping: the NFC is already programmed and the QR is already ready to use — nothing to install, set up, or subscribe to on your end. Includes adhesive backing so you can stick it anywhere. Available in white or black.",
+      "A plate for getting more Google reviews with NFC and QR technology, perfect for a counter, register, or table. We configure it with your business's link before shipping: the NFC is already programmed and the QR is already ready to use: nothing to install, set up, or subscribe to on your end. Includes adhesive backing so you can stick it anywhere. Available in white or black.",
     metaDescription:
       "NFC and QR plate for Google reviews, 12 × 12 cm, ready to use with zero setup or subscription. White or black, adhesive included. From $140 MXN.",
     details: [
-      "Customers tap with their phone (NFC) or scan the QR — both go straight to leaving a Google review",
+      "Customers tap with their phone (NFC) or scan the QR: both go straight to leaving a Google review",
       "Arrives configured with your business's link: NFC and QR ready to use",
-      "No app or subscription required — one-time payment, works with the customer's phone camera and NFC",
+      "No app or subscription required: one-time payment, works with the customer's phone camera and NFC",
       "Adhesive backing included, stick it on a counter, register, or table",
       "Available in white or black",
       "12 × 12 cm, 0.2 cm thick",
-      "Also available with a stand — see Google Review Stand",
+      "Also available with a stand: see Google Review Stand",
     ],
     variantLabels: { blanco: "White", negro: "Black" },
     faq: [
       {
         q: "Do I need to set up the NFC or QR myself?",
-        a: "No. We program the NFC and generate the QR code with your Google review link before shipping your plate — it arrives ready to use.",
+        a: "No. We program the NFC and generate the QR code with your Google review link before shipping your plate: it arrives ready to use.",
       },
       {
         q: "How do I give Yume my business's Google link?",
@@ -225,12 +225,12 @@ export const productsEn: Record<string, ProductTranslation> = {
       },
       {
         q: "What's the difference with the Stand version?",
-        a: "Same plate, same ready-to-use setup — the Stand adds a base so it stands upright on a desk or counter without needing to be stuck down.",
+        a: "Same plate, same ready-to-use setup: the Stand adds a base so it stands upright on a desk or counter without needing to be stuck down.",
       },
     ],
   },
   "stand-resena-google-nfc": {
-    name: "Google Review Stand — NFC and QR",
+    name: "Google Review Stand (NFC and QR)",
     category: "NFC & QR Google Review Plates and Stands",
     specs: [
       { label: "Height", value: "12.75 cm" },
@@ -238,27 +238,27 @@ export const productsEn: Record<string, ProductTranslation> = {
       { label: "Base depth", value: "5 cm" },
       { label: "Available colors", value: "White and Black" },
       { label: "Technology", value: "NFC + QR code" },
-      { label: "Setup", value: "None needed — arrives ready to use" },
+      { label: "Setup", value: "None needed, arrives ready to use" },
       { label: "Production", value: "Made to order" },
     ],
     description:
-      "A freestanding stand for getting more Google reviews with NFC and QR technology, for a counter, register, or table without needing to stick it down. We configure it with your business's link before shipping: the NFC is already programmed and the QR is already ready to use — nothing to install, set up, or subscribe to on your end. Available in white or black.",
+      "A freestanding stand for getting more Google reviews with NFC and QR technology, for a counter, register, or table without needing to stick it down. We configure it with your business's link before shipping: the NFC is already programmed and the QR is already ready to use: nothing to install, set up, or subscribe to on your end. Available in white or black.",
     metaDescription:
       "NFC and QR stand for Google reviews with its own base, ready to use with zero setup or subscription. White or black. From $200 MXN.",
     details: [
-      "Customers tap with their phone (NFC) or scan the QR — both go straight to leaving a Google review",
+      "Customers tap with their phone (NFC) or scan the QR: both go straight to leaving a Google review",
       "Arrives configured with your business's link: NFC and QR ready to use",
-      "No app or subscription required — one-time payment, works with the customer's phone camera and NFC",
+      "No app or subscription required: one-time payment, works with the customer's phone camera and NFC",
       "Freestanding base: stands upright, no glue or tape needed",
       "Available in white or black",
       "12.75 cm tall, 7.6 cm wide, 5 cm base depth",
-      "Also available without a stand, with adhesive — see Google Review Plate",
+      "Also available without a stand, with adhesive: see Google Review Plate",
     ],
     variantLabels: { blanco: "White", negro: "Black" },
     faq: [
       {
         q: "Do I need to set up the NFC or QR myself?",
-        a: "No. We program the NFC and generate the QR code with your Google review link before shipping your stand — it arrives ready to use.",
+        a: "No. We program the NFC and generate the QR code with your Google review link before shipping your stand: it arrives ready to use.",
       },
       {
         q: "How do I give Yume my business's Google link?",
@@ -278,7 +278,7 @@ export const productsEn: Record<string, ProductTranslation> = {
       },
       {
         q: "What's the difference with the Plate version?",
-        a: "Same ready-to-use setup — the Plate has no base, sticks on with the included adhesive, and costs less.",
+        a: "Same ready-to-use setup: the Plate has no base, sticks on with the included adhesive, and costs less.",
       },
     ],
   },

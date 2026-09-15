@@ -543,26 +543,26 @@ export const blogPostsEn: BlogPost[] = [
     category: "Guides",
     publishedAt: "2026-09-15",
     intro:
-      "Asking for a Google review is almost always awkward: you spell out your business name, the customer searches for it, sifts through several similar-looking results, and sometimes gives up before finding the right one. A plate with NFC and a QR code solves exactly that step — it goes straight to the correct listing in two seconds, with nothing for the customer to search for.",
+      "Asking for a Google review is almost always awkward: you spell out your business name, the customer searches for it, sifts through several similar-looking results, and sometimes gives up before finding the right one. A plate with NFC and a QR code solves exactly that step: it goes straight to the correct listing in two seconds, with nothing for the customer to search for.",
     sections: [
       {
         heading: "Why timing matters more than the message",
         body: [
-          "The best time to ask for a review is right when a customer is satisfied — at checkout, when picking up their order, on their way out of your office. If in that moment they have to pull out their phone, search for your business by hand, and pick it out among similar results, many simply won't — not because they don't want to leave a review, but because the process took more effort than they were willing to spend right then.",
+          "The best time to ask for a review is right when a customer is satisfied: at checkout, when picking up their order, on their way out of your office. If in that moment they have to pull out their phone, search for your business by hand, and pick it out among similar results, many simply won't, not because they don't want to leave a review, but because the process took more effort than they were willing to spend right then.",
           "An NFC/QR plate removes that friction: the customer taps their phone or scans the code and lands straight on the \"leave a review\" screen for your listing, with nothing to type and no similar results to pick through.",
         ],
       },
       {
         heading: "NFC and QR together, not one or the other",
         body: [
-          "NFC (the same \"tap to pay\" technology already used by bank cards) works with nearly any modern phone, Android or iPhone, with no app to open — the customer just taps their phone against the plate. The QR code is the backup for everything else: phones with NFC turned off, or customers who'd rather just use the camera.",
+          "NFC (the same \"tap to pay\" technology already used by bank cards) works with nearly any modern phone, Android or iPhone, with no app to open: the customer just taps their phone against the plate. The QR code is the backup for everything else: phones with NFC turned off, or customers who'd rather just use the camera.",
           "Having both on the same plate covers practically any phone without relying on the customer knowing what NFC even is.",
         ],
       },
       {
         heading: "Where to place it so it actually gets used",
         body: [
-          "The spots that work best: next to the register, on the front desk, on the table when the bill arrives, or on the desk at the end of an appointment — anywhere the customer is already in front of you at the moment they decide whether they're satisfied.",
+          "The spots that work best: next to the register, on the front desk, on the table when the bill arrives, or on the desk at the end of an appointment: anywhere the customer is already in front of you at the moment they decide whether they're satisfied.",
           "The version without a stand sticks directly onto those spots (counter, register, wall); the version with a stand sits upright on a desk or table with nothing to stick down, useful if you move it around often or don't want a permanent adhesive.",
         ],
       },
@@ -578,7 +578,7 @@ export const blogPostsEn: BlogPost[] = [
     category: "Guides",
     publishedAt: "2026-09-15",
     intro:
-      "Printing a QR code on a sheet of paper and taping it to the counter is free and anyone can do it. So why pay for a plate with NFC? The difference isn't whether it works — a printed QR also leads to the review — it's durability, how easy it is to use, and the impression it leaves.",
+      "Printing a QR code on a sheet of paper and taping it to the counter is free and anyone can do it. So why pay for a plate with NFC? The difference isn't whether it works (a printed QR also leads to the review), it's durability, how easy it is to use, and the impression it leaves.",
     sections: [
       {
         heading: "Durability: paper vs. a rigid plate",
@@ -589,7 +589,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "NFC: one more option for the customer, not a QR replacement",
         body: [
-          "A homemade sign only has a QR code — it works, but depends on the customer opening their camera and framing the shot correctly. NFC adds a second way to use it: just tap the phone, no aiming or focusing needed, something more people already recognize from contactless payment terminals. Having both on the same plate means no customer is left unable to use it.",
+          "A homemade sign only has a QR code: it works, but depends on the customer opening their camera and framing the shot correctly. NFC adds a second way to use it: just tap the phone, no aiming or focusing needed, something more people already recognize from contactless payment terminals. Having both on the same plate means no customer is left unable to use it.",
         ],
       },
       {
@@ -610,25 +610,25 @@ export const blogPostsEn: BlogPost[] = [
     category: "Guides",
     publishedAt: "2026-09-15",
     intro:
-      "Unlike other NFC plates sold \"blank\" that ask you to program them yourself with an app, Yume's plates arrive with the NFC and QR already configured with your business's link from the moment we produce them — you take it out of the box and it's already ready for your customers to use.",
+      "Unlike other NFC plates sold \"blank\" that ask you to program them yourself with an app, Yume's plates arrive with the NFC and QR already configured with your business's link from the moment we produce them: you take it out of the box and it's already ready for your customers to use.",
     sections: [
       {
         heading: "What we need from you before we produce it",
         body: [
-          "After your purchase we ask for your Google review link over WhatsApp (or your business's exact name as it appears on Google, if you don't have the link handy) — we use that to program the NFC and generate the QR code before printing and shipping your plate.",
+          "After your purchase we ask for your Google review link over WhatsApp (or your business's exact name as it appears on Google, if you don't have the link handy). We use that to program the NFC and generate the QR code before printing and shipping your plate.",
         ],
       },
       {
         heading: "The day it arrives",
         body: [
-          "There's no app to install and nothing to scan to \"activate\" it — the plate arrives already working. Just place it where your customers will see it (counter, register, table) and, if it's the no-stand version, stick it down with the adhesive already on the back.",
-          "To test that it works before putting it out, just tap your own phone or scan the QR — it should take you straight to the screen for leaving a review for your business.",
+          "There's no app to install and nothing to scan to \"activate\" it: the plate arrives already working. Just place it where your customers will see it (counter, register, table) and, if it's the no-stand version, stick it down with the adhesive already on the back.",
+          "To test that it works before putting it out, just tap your own phone or scan the QR: it should take you straight to the screen for leaving a review for your business.",
         ],
       },
       {
         heading: "If your business changes its name or Google listing",
         body: [
-          "Message us on WhatsApp and we'll sort it out with you — depending on the case, it can be solved by reprogramming the same plate or may require a new one. It's not something the end customer can change on their own from their phone, precisely to prevent anyone else from reconfiguring it without you knowing.",
+          "Message us on WhatsApp and we'll sort it out with you: depending on the case, it can be solved by reprogramming the same plate or may require a new one. It's not something the end customer can change on their own from their phone, precisely to prevent anyone else from reconfiguring it without you knowing.",
         ],
       },
     ],

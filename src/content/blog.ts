@@ -567,26 +567,26 @@ export const blogPosts: BlogPost[] = [
     category: "Guías",
     publishedAt: "2026-09-15",
     intro:
-      "Pedir una reseña de Google casi siempre es incómodo: le dictas a tu cliente el nombre del negocio, él lo busca, filtra entre varios resultados parecidos y a veces se rinde antes de encontrar el correcto. Una placa con NFC y código QR resuelve justo ese paso — lleva directo a la ficha correcta en dos segundos, sin que el cliente tenga que buscar nada.",
+      "Pedir una reseña de Google casi siempre es incómodo: le dictas a tu cliente el nombre del negocio, él lo busca, filtra entre varios resultados parecidos y a veces se rinde antes de encontrar el correcto. Una placa con NFC y código QR resuelve justo ese paso: lleva directo a la ficha correcta en dos segundos, sin que el cliente tenga que buscar nada.",
     sections: [
       {
         heading: "Por qué el momento importa más que el mensaje",
         body: [
-          "El mejor momento para pedir una reseña es justo cuando el cliente está satisfecho — al pagar, al recoger su pedido, al salir del consultorio. Si en ese momento tiene que sacar el teléfono, buscar tu negocio a mano y encontrarlo entre varios resultados similares, muchos simplemente no lo hacen, no porque no quieran dejarte una reseña, sino porque el proceso les tomó más de lo que estaban dispuestos a invertir en ese momento.",
+          "El mejor momento para pedir una reseña es justo cuando el cliente está satisfecho: al pagar, al recoger su pedido, al salir del consultorio. Si en ese momento tiene que sacar el teléfono, buscar tu negocio a mano y encontrarlo entre varios resultados similares, muchos simplemente no lo hacen, no porque no quieran dejarte una reseña, sino porque el proceso les tomó más de lo que estaban dispuestos a invertir en ese momento.",
           "Una placa NFC/QR quita esa fricción: el cliente toca su teléfono o escanea el código y llega directo a la pantalla de \"dejar una reseña\" de tu ficha de Google, sin escribir nada ni elegir entre resultados parecidos.",
         ],
       },
       {
         heading: "NFC y QR juntos, no uno u otro",
         body: [
-          "El NFC (la tecnología de \"toca para pagar\" que ya usan las tarjetas bancarias) funciona con casi cualquier teléfono moderno, Android o iPhone, sin abrir ninguna app — el cliente solo acerca su teléfono a la placa. El código QR es el respaldo para el resto de los casos: teléfonos donde el NFC está desactivado, o clientes que prefieren usar la cámara directamente.",
+          "El NFC (la tecnología de \"toca para pagar\" que ya usan las tarjetas bancarias) funciona con casi cualquier teléfono moderno, Android o iPhone, sin abrir ninguna app: el cliente solo acerca su teléfono a la placa. El código QR es el respaldo para el resto de los casos: teléfonos donde el NFC está desactivado, o clientes que prefieren usar la cámara directamente.",
           "Tenerlos juntos en la misma placa cubre prácticamente cualquier teléfono sin depender de que el cliente sepa qué es NFC.",
         ],
       },
       {
         heading: "Dónde colocarla para que realmente se use",
         body: [
-          "Los lugares donde mejor funciona: junto a la caja registradora, en el mostrador de recepción, en la mesa al momento de la cuenta, o en el escritorio de un consultorio al finalizar la consulta — cualquier punto donde el cliente ya está frente a ti en el momento en que decide si quedó satisfecho.",
+          "Los lugares donde mejor funciona: junto a la caja registradora, en el mostrador de recepción, en la mesa al momento de la cuenta, o en el escritorio de un consultorio al finalizar la consulta: cualquier punto donde el cliente ya está frente a ti en el momento en que decide si quedó satisfecho.",
           "La versión sin base se pega directo en esos puntos (mostrador, caja, pared); la versión con stand se coloca de pie sobre un escritorio o mesa sin necesidad de pegarla, útil si cambias de lugar seguido o no quieres dejar adhesivo permanente.",
         ],
       },
@@ -602,7 +602,7 @@ export const blogPosts: BlogPost[] = [
     category: "Guías",
     publishedAt: "2026-09-15",
     intro:
-      "Imprimir un código QR en una hoja y pegarlo en el mostrador es gratis y cualquiera lo puede hacer. Entonces, ¿por qué pagar por una placa con NFC? La diferencia no está en si funciona — un QR impreso también lleva a la reseña — sino en durabilidad, en qué tan fácil es de usar, y en la imagen que proyecta.",
+      "Imprimir un código QR en una hoja y pegarlo en el mostrador es gratis y cualquiera lo puede hacer. Entonces, ¿por qué pagar por una placa con NFC? La diferencia no está en si funciona (un QR impreso también lleva a la reseña), sino en durabilidad, en qué tan fácil es de usar, y en la imagen que proyecta.",
     sections: [
       {
         heading: "Durabilidad: papel vs. placa rígida",
@@ -613,7 +613,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "NFC: una opción más para el cliente, no un reemplazo del QR",
         body: [
-          "Un letrero casero solo tiene QR — funciona, pero depende de que el cliente abra la cámara y enfoque bien. El NFC agrega una segunda forma de usarlo: tocar el teléfono, sin apuntar ni enfocar nada, algo que cada vez más gente ya conoce por las terminales de pago sin contacto. Tener ambas opciones en la misma placa significa que ningún cliente se queda sin poder usarla.",
+          "Un letrero casero solo tiene QR: funciona, pero depende de que el cliente abra la cámara y enfoque bien. El NFC agrega una segunda forma de usarlo: tocar el teléfono, sin apuntar ni enfocar nada, algo que cada vez más gente ya conoce por las terminales de pago sin contacto. Tener ambas opciones en la misma placa significa que ningún cliente se queda sin poder usarla.",
         ],
       },
       {
@@ -634,25 +634,25 @@ export const blogPosts: BlogPost[] = [
     category: "Guías",
     publishedAt: "2026-09-15",
     intro:
-      "A diferencia de otras placas NFC que venden \"en blanco\" y te piden programarlas tú mismo con una app, en Yume el NFC y el QR ya vienen configurados con el enlace de tu negocio desde que la producimos — la sacas de la caja y ya está lista para que tus clientes la usen.",
+      "A diferencia de otras placas NFC que venden \"en blanco\" y te piden programarlas tú mismo con una app, en Yume el NFC y el QR ya vienen configurados con el enlace de tu negocio desde que la producimos: la sacas de la caja y ya está lista para que tus clientes la usen.",
     sections: [
       {
         heading: "Qué necesitamos de ti antes de producirla",
         body: [
-          "Después de tu compra te pedimos por WhatsApp el enlace de tu reseña de Google (o el nombre exacto de tu negocio tal como aparece en Google, si no tienes el enlace a la mano) — con eso programamos el NFC y generamos el código QR antes de imprimir y enviar tu placa.",
+          "Después de tu compra te pedimos por WhatsApp el enlace de tu reseña de Google (o el nombre exacto de tu negocio tal como aparece en Google, si no tienes el enlace a la mano). Con eso programamos el NFC y generamos el código QR antes de imprimir y enviar tu placa.",
         ],
       },
       {
         heading: "El día que la recibes",
         body: [
-          "No hay que instalar ninguna app ni escanear nada para \"activarla\" — la placa llega funcionando. Solo tienes que colocarla donde tus clientes la vean (mostrador, caja, mesa) y, si es la versión sin base, pegarla con el adhesivo que ya trae en la parte trasera.",
-          "Para probar que funciona antes de dejarla en el mostrador, simplemente acerca tu propio teléfono o escanea el QR — debería llevarte directo a la pantalla para dejar una reseña de tu negocio.",
+          "No hay que instalar ninguna app ni escanear nada para \"activarla\": la placa llega funcionando. Solo tienes que colocarla donde tus clientes la vean (mostrador, caja, mesa) y, si es la versión sin base, pegarla con el adhesivo que ya trae en la parte trasera.",
+          "Para probar que funciona antes de dejarla en el mostrador, simplemente acerca tu propio teléfono o escanea el QR: debería llevarte directo a la pantalla para dejar una reseña de tu negocio.",
         ],
       },
       {
         heading: "Si tu negocio cambia de nombre o de ficha de Google",
         body: [
-          "Escríbenos por WhatsApp y lo revisamos contigo — dependiendo del caso, puede resolverse reprogramando la misma placa o puede requerir una nueva. No es algo que el cliente final pueda cambiar por su cuenta desde el teléfono, precisamente para evitar que alguien más la reconfigure sin que tú lo sepas.",
+          "Escríbenos por WhatsApp y lo revisamos contigo: dependiendo del caso, puede resolverse reprogramando la misma placa o puede requerir una nueva. No es algo que el cliente final pueda cambiar por su cuenta desde el teléfono, precisamente para evitar que alguien más la reconfigure sin que tú lo sepas.",
         ],
       },
     ],

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getProduct, productDisplayPrice, products } from "@/content/products";
 import { getProductTranslation } from "@/content/products.en";
 import { SITE } from "@/content/site";
+import { NATIONAL_SHIPPING_PRICE } from "@/content/shipping";
 import { ProductVisual } from "@/components/ProductVisual";
 import { ProductPurchase } from "@/components/ProductPurchase";
 import { LogoUploadNote } from "@/components/LogoUploadNote";
@@ -63,7 +64,7 @@ export default async function ProductPageEn({ params }: { params: Promise<{ slug
       },
       shippingDetails: {
         "@type": "OfferShippingDetails",
-        shippingRate: { "@type": "MonetaryAmount", value: "150", currency: "MXN" },
+        shippingRate: { "@type": "MonetaryAmount", value: String(NATIONAL_SHIPPING_PRICE), currency: "MXN" },
         shippingDestination: { "@type": "DefinedRegion", addressCountry: "MX" },
         deliveryTime: {
           "@type": "ShippingDeliveryTime",
