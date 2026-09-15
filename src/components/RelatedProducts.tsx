@@ -27,13 +27,17 @@ export function RelatedProducts({ excludeSlugs, lang = "es", heading }: { exclud
 
   return (
     <div className="mt-14 border-t border-line pt-10">
-      <h2 className="font-display text-2xl text-ink">{title}</h2>
+      <h2 className="animate-fade-up font-display text-2xl text-ink">{title}</h2>
       <div className="mt-6 grid gap-6 sm:grid-cols-3">
-        {others.map((p) => {
+        {others.map((p, i) => {
           const name = lang === "en" ? (productsEn[p.slug]?.name ?? p.name) : p.name;
           const href = `${shopBase}/${lang === "en" ? PRODUCT_SLUG_EN[p.slug] : p.slug}`;
           return (
-            <Link key={p.slug} href={href} className="card-soft group flex flex-col p-5">
+            <Link
+              key={p.slug}
+              href={href}
+              className={`card-soft group animate-fade-up animate-fade-up-1 flex flex-col p-5 ${i % 2 === 0 ? "tilt-a" : "tilt-b"}`}
+            >
               <div className="flex h-32 justify-center overflow-hidden">
                 <div className="product-card-visual">
                   <ProductVisual product={p} compact />
