@@ -63,6 +63,14 @@ function matchAnswerEs(text: string): string {
     return `${claim} Comparación completa: ${SITE.url}/blog/${p.slug}`;
   }
 
+  if (/nfc|reseñas? de google|placa|reseña google|google reviews?/.test(q)) {
+    const isStand = /stand|base/.test(q);
+    const slug = isStand ? "stand-resena-google-nfc" : "placa-resena-google-nfc";
+    const p = products.find((prod) => prod.slug === slug) ?? products.find((prod) => prod.slug === "placa-resena-google-nfc");
+    if (!p) return "No encontré ese producto en el catálogo.";
+    return `${p.name}: $${p.price.toFixed(2)} MXN. ${p.description} Más info: ${SITE.url}/productos/${p.slug}`;
+  }
+
   if (/vinil|personaje|mascota|perro|gato/.test(q)) {
     const p = products.find((prod) => prod.slug === "stickers-vinil-impermeable");
     if (!p) return "No encontré ese producto en el catálogo.";
@@ -132,6 +140,15 @@ function matchAnswerEn(text: string): string {
       ? "Yes — our price is practically tied with the lowest in the market, and we're the only ones who include letterhead design in the price."
       : "Yes — on a per-piece basis we're among the lowest-priced options we reviewed, with the most accessible minimum order ($100 MXN vs. $319–$550 for competitors).";
     return `${claim} Full comparison: ${SITE.url}/en/blog/${p.slug}`;
+  }
+
+  if (/nfc|google review|review plate|review stand|review card/.test(q)) {
+    const isStand = /stand|base/.test(q);
+    const slug = isStand ? "stand-resena-google-nfc" : "placa-resena-google-nfc";
+    const p = products.find((prod) => prod.slug === slug) ?? products.find((prod) => prod.slug === "placa-resena-google-nfc");
+    const t = p ? productsEn[p.slug] : undefined;
+    if (!p || !t) return "I couldn't find that product in the catalog.";
+    return `${t.name}: $${p.price.toFixed(2)} MXN. ${t.description} More info: ${SITE.url}/en/products/${slug === "stand-resena-google-nfc" ? "google-review-nfc-stand" : "google-review-nfc-plate"}`;
   }
 
   if (/vinyl|character|pet\b|\bdog\b|\bcat\b/.test(q)) {

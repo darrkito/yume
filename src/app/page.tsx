@@ -36,7 +36,7 @@ const HOW_IT_WORKS = [
 ];
 
 export default function Home() {
-  const featured = getProduct("stickers-vinil-impermeable") ?? products[0];
+  const featured = getProduct("stand-resena-google-nfc") ?? products[0];
   const rest = products.filter((p) => p.slug !== featured.slug);
   const featuredFaq = getFeaturedFaq();
 
@@ -100,7 +100,9 @@ export default function Home() {
               <ProductVisual product={featured} compact />
             </div>
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.1em] text-brand-deep">Producto destacado</p>
+              <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.1em] text-brand-deep">
+                {featured.isNew ? "¡Nuevo!" : "Producto destacado"}
+              </p>
               <h2 className="mt-3 font-display text-3xl text-ink text-balance sm:text-4xl">{featured.name}</h2>
               <p className="mt-4 text-2xl font-semibold text-ink">
                 {hasVariants(featured) && "Desde "}
@@ -156,7 +158,12 @@ export default function Home() {
                     <ProductVisual product={p} compact />
                   </div>
                 </div>
-                <p className="mt-6 text-xs font-semibold uppercase tracking-[0.1em] text-brand">{p.category}</p>
+                <p className="mt-6 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.1em] text-brand">
+                  {p.category}
+                  {p.isNew && (
+                    <span className="rounded-full bg-brand px-2 py-0.5 text-[10px] text-white">Nuevo</span>
+                  )}
+                </p>
                 <h3 className="mt-1 font-display text-xl text-ink transition-colors group-hover:text-brand">{p.name}</h3>
                 <p className="mt-2 text-lg font-semibold text-ink">
                   {hasVariants(p) && "Desde "}

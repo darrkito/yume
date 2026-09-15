@@ -48,7 +48,10 @@ export default function ProductsPageEn() {
                     <ProductVisual product={p} compact />
                   </div>
                 </div>
-                <p className="mt-6 text-xs font-semibold uppercase tracking-[0.1em] text-brand">{productT.category}</p>
+                <p className="mt-6 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.1em] text-brand">
+                  {productT.category}
+                  {p.isNew && <span className="rounded-full bg-brand px-2 py-0.5 text-[10px] text-white">New</span>}
+                </p>
                 <h2 className="mt-1 font-display text-xl text-ink group-hover:text-brand transition-colors">{productT.name}</h2>
                 <p className="mt-2 text-lg font-semibold text-ink">
                   {hasVariants(p) && "From "}

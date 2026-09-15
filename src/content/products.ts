@@ -40,6 +40,10 @@ export interface Product {
   variants?: ProductVariant[];
   /** Shows the "trabajos realizados" infinite gallery strip on this product's page. */
   showGallery?: boolean;
+  /** Shows a "Nuevo" badge on listing cards, the product page, and makes it
+   * eligible for the homepage's featured-product slot. Toggle off by hand
+   * once the launch window has passed — no expiry date logic, YAGNI. */
+  isNew?: boolean;
 }
 
 // Stickers pricing: 50 piezas = $100 (base rate $2.00/pieza). From there,
@@ -247,6 +251,131 @@ export const products: Product[] = [
       {
         q: "¿El vinil resiste el agua y el sol?",
         a: "Sí, es vinil premium resistente al agua, al sol y a rayones — aguanta bien en botellas, laptops, patinetas o superficies que se mojan o se exponen al sol.",
+      },
+    ],
+  },
+  {
+    slug: "placa-resena-google-nfc",
+    name: "Placa Acrílica para Reseñas de Google — NFC y QR",
+    price: 140,
+    currency: "MXN",
+    category: "Placas y Stands NFC para Reseñas de Google",
+    isNew: true,
+    specs: [
+      { label: "Tamaño", value: "12 × 12 cm" },
+      { label: "Grosor", value: "0.2 cm" },
+      { label: "Colores disponibles", value: "Blanco y Negro" },
+      { label: "Tecnología", value: "NFC + Código QR" },
+      { label: "Instalación", value: "Ninguna — se entrega lista para usar" },
+      { label: "Producción", value: "Sobre pedido" },
+    ],
+    description:
+      "Placa acrílica para conseguir más reseñas de Google, con tecnología NFC y código QR, ideal para mostrador, caja o mesa. La configuramos con el enlace de tu negocio antes de enviártela: el NFC ya está programado y el QR ya está listo para usar, no necesitas instalar ni configurar nada, ni pagar ninguna suscripción. Incluye adhesivo para pegarla donde prefieras. Disponible en blanco o negro.",
+    metaDescription:
+      "Placa acrílica NFC y QR para reseñas de Google, 12 × 12 cm, lista para usar sin configuración ni suscripción. Blanco o negro, adhesivo incluido. Desde $140 MXN.",
+    details: [
+      "Tus clientes tocan con el celular (NFC) o escanean el QR — ambos llevan directo a dejar una reseña en Google",
+      "Se entrega configurada con el enlace de tu negocio: NFC y QR listos para usar",
+      "No necesita ninguna aplicación ni suscripción — pago único, funciona con la cámara y el NFC del teléfono del cliente",
+      "Incluye adhesivo para pegarla en mostrador, caja o mesa",
+      "Disponible en blanco o negro",
+      "12 × 12 cm, 0.2 cm de grosor",
+      "También disponible con base para escritorio — ver Stand Acrílico para Reseñas de Google",
+    ],
+    image: "/placa-resena-google-nfc.webp",
+    imageWidth: 250,
+    imageHeight: 250,
+    variants: [
+      { id: "blanco", label: "Blanco", price: 140, default: true },
+      { id: "negro", label: "Negro", price: 140 },
+    ],
+    faq: [
+      {
+        q: "¿Necesito configurar el NFC o el QR yo mismo?",
+        a: "No. Nosotros programamos el NFC y generamos el código QR con el enlace de tu reseña de Google antes de enviarte tu placa — la recibes lista para usar.",
+      },
+      {
+        q: "¿Cómo le doy a Yume el enlace de mi negocio en Google?",
+        a: "Después de tu compra te lo pedimos por WhatsApp (el enlace de tu reseña o el nombre exacto de tu negocio en Google) para configurar tu placa antes de producirla.",
+      },
+      {
+        q: "¿Necesita alguna aplicación para funcionar?",
+        a: "No. El cliente solo acerca su teléfono para leer el NFC o escanea el QR con la cámara, sin instalar nada.",
+      },
+      {
+        q: "¿Cómo se pega la placa?",
+        a: "Incluye adhesivo en la parte trasera, lista para pegarse en mostrador, caja o mesa.",
+      },
+      {
+        q: "¿En qué colores está disponible?",
+        a: "Blanco y negro, mismo precio en ambos.",
+      },
+      {
+        q: "¿Cuál es la diferencia con el Stand con base?",
+        a: "Es la misma placa y la misma configuración lista para usar; el Stand agrega una base para colocarla de pie sobre un escritorio o mostrador sin necesidad de pegarla.",
+      },
+    ],
+  },
+  {
+    slug: "stand-resena-google-nfc",
+    name: "Stand Acrílico para Reseñas de Google — NFC y QR",
+    price: 200,
+    currency: "MXN",
+    category: "Placas y Stands NFC para Reseñas de Google",
+    isNew: true,
+    specs: [
+      { label: "Alto", value: "12.75 cm" },
+      { label: "Ancho", value: "7.6 cm" },
+      { label: "Profundidad de la base", value: "5 cm" },
+      { label: "Colores disponibles", value: "Blanco y Negro" },
+      { label: "Tecnología", value: "NFC + Código QR" },
+      { label: "Instalación", value: "Ninguna — se entrega lista para usar" },
+      { label: "Producción", value: "Sobre pedido" },
+    ],
+    description:
+      "Stand acrílico con base para conseguir más reseñas de Google, con tecnología NFC y código QR, para colocar de pie sobre mostrador, caja o mesa sin necesidad de pegarlo. La configuramos con el enlace de tu negocio antes de enviártelo: el NFC ya está programado y el QR ya está listo para usar, no necesitas instalar ni configurar nada, ni pagar ninguna suscripción. Disponible en blanco o negro.",
+    metaDescription:
+      "Stand acrílico NFC y QR para reseñas de Google, con base independiente, listo para usar sin configuración ni suscripción. Blanco o negro. Desde $200 MXN.",
+    details: [
+      "Tus clientes tocan con el celular (NFC) o escanean el QR — ambos llevan directo a dejar una reseña en Google",
+      "Se entrega configurado con el enlace de tu negocio: NFC y QR listos para usar",
+      "No necesita ninguna aplicación ni suscripción — pago único, funciona con la cámara y el NFC del teléfono del cliente",
+      "Base independiente: se coloca de pie, no necesita pegamento ni cinta",
+      "Disponible en blanco o negro",
+      "12.75 cm de alto, 7.6 cm de ancho, base de 5 cm de profundidad",
+      "También disponible sin base, con adhesivo — ver Placa Acrílica para Reseñas de Google",
+    ],
+    image: "/stand-resena-google-nfc.webp",
+    imageWidth: 250,
+    imageHeight: 250,
+    variants: [
+      { id: "blanco", label: "Blanco", price: 200, default: true },
+      { id: "negro", label: "Negro", price: 200 },
+    ],
+    faq: [
+      {
+        q: "¿Necesito configurar el NFC o el QR yo mismo?",
+        a: "No. Nosotros programamos el NFC y generamos el código QR con el enlace de tu reseña de Google antes de enviarte tu stand — lo recibes listo para usar.",
+      },
+      {
+        q: "¿Cómo le doy a Yume el enlace de mi negocio en Google?",
+        a: "Después de tu compra te lo pedimos por WhatsApp (el enlace de tu reseña o el nombre exacto de tu negocio en Google) para configurar tu stand antes de producirlo.",
+      },
+      {
+        q: "¿Necesita alguna aplicación para funcionar?",
+        a: "No. El cliente solo acerca su teléfono para leer el NFC o escanea el QR con la cámara, sin instalar nada.",
+      },
+      {
+        q: "¿Necesito pegarlo a algo?",
+        a: "No, tiene base propia y se coloca de pie sobre cualquier superficie plana.",
+      },
+      {
+        q: "¿En qué colores está disponible?",
+        a: "Blanco y negro, mismo precio en ambos.",
+      },
+      {
+        q: "¿Cuál es la diferencia con la Placa sin base?",
+        a: "Es la misma configuración lista para usar; la Placa no tiene base, se pega con el adhesivo incluido, y cuesta menos.",
       },
     ],
   },

@@ -7,7 +7,7 @@
     {
       "id": "get_products",
       "name": "List products",
-      "description": "List Yume's catalog (medical prescription pads, custom logo stickers) with real prices in MXN, in Spanish or English.",
+      "description": "List Yume's catalog (medical prescription pads, custom logo stickers, NFC/QR Google review plates and stands) with real prices in MXN, in Spanish or English.",
       "url": "https://studioyume.mx/mcp"
     },
     {

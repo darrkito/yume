@@ -108,7 +108,10 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         </div>
 
         <div>
-          <p className="animate-fade-up text-xs font-semibold uppercase tracking-[0.1em] text-brand">{product.category}</p>
+          <p className="animate-fade-up flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.1em] text-brand">
+            {product.category}
+            {product.isNew && <span className="rounded-full bg-brand px-2 py-0.5 text-[10px] text-white">Nuevo</span>}
+          </p>
           <h1 className="animate-fade-up animate-fade-up-1 mt-3 font-display text-3xl text-ink sm:text-4xl">{product.name}</h1>
 
           <ProductPurchase product={product} />

@@ -10,6 +10,8 @@ export const PRODUCT_SLUG_EN: Record<string, string> = {
   "recetario-medico-personalizado": "medical-prescription-pads",
   "stickers-logo-personalizado": "custom-logo-stickers",
   "stickers-vinil-impermeable": "waterproof-vinyl-stickers",
+  "placa-resena-google-nfc": "google-review-nfc-plate",
+  "stand-resena-google-nfc": "google-review-nfc-stand",
 };
 
 export const BLOG_SLUG_EN: Record<string, string> = {
@@ -28,6 +30,9 @@ export const BLOG_SLUG_EN: Record<string, string> = {
   "menu-de-boda-personalizado": "custom-wedding-menus",
   "tarjetas-de-presentacion-consultorio": "business-cards-for-your-practice",
   "yume-vs-imprentas-recetarios-medicos": "yume-vs-online-prescription-pad-print-shops",
+  "como-conseguir-mas-resenas-de-google-nfc-qr": "how-to-get-more-google-reviews-nfc-qr",
+  "placa-nfc-vs-codigo-qr-impreso-resenas": "nfc-plate-vs-printed-qr-code-for-reviews",
+  "como-usar-placa-resenas-google-yume": "how-to-use-your-yume-google-review-plate",
 };
 
 export const PRODUCT_SLUG_ES: Record<string, string> = Object.fromEntries(
