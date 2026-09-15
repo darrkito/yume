@@ -55,7 +55,7 @@ export default function ProductosPage() {
                 {formatMXN(productDisplayPrice(p))} MXN
               </p>
             </Link>
-            <AddToCartButton product={p} compact href={`/productos/${p.slug}`} />
+            <AddToCartButton product={p} compact />
           </div>
         ))}
       </div>

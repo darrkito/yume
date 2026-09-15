@@ -58,7 +58,7 @@ export default function ProductsPageEn() {
                   {formatMXN(productDisplayPrice(p))} MXN
                 </p>
               </Link>
-              <AddToCartButton product={p} compact lang="en" href={`/en/products/${PRODUCT_SLUG_EN[p.slug]}`} />
+              <AddToCartButton product={p} compact lang="en" />
             </div>
           );
         })}

@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { ShoppingBag, Check, CheckCircle2, Clock, MapPin, MessageCircle, Truck } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { ShoppingBag, Check, CheckCircle2, Clock, MapPin, MessageCircle, Truck, Zap } from "lucide-react";
 import { useCart } from "@/components/CartContext";
 import { cartItemLabel, defaultVariantId, hasVariants, resolvePrice, type Product } from "@/content/products";
 import { cartItemLabelEn, getProductTranslation } from "@/content/products.en";
@@ -22,6 +23,7 @@ const WA_QUOTE_MSG = {
 
 export function ProductPurchase({ product, lang = "es" }: { product: Product; lang?: Lang }) {
   const { addItem } = useCart();
+  const router = useRouter();
   const [variantId, setVariantId] = useState<string | undefined>(defaultVariantId(product));
   const [justAdded, setJustAdded] = useState(false);
   const [showBar, setShowBar] = useState(false);
@@ -49,6 +51,11 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
     addItem({ slug: product.slug, name: label, price, variantId });
     setJustAdded(true);
     setTimeout(() => setJustAdded(false), 1800);
+  };
+
+  const handleBuyNow = () => {
+    addItem({ slug: product.slug, name: label, price, variantId });
+    router.push(lang === "en" ? "/en/cart" : "/carrito");
   };
 
   useEffect(() => {
@@ -145,23 +152,28 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
       )}
 
       <div className="mt-6 flex flex-col items-start">
-        <button
-          ref={addButtonRef}
-          type="button"
-          onClick={handleAdd}
-          aria-live="polite"
-          className="btn-soft btn-soft-solid w-full sm:w-auto"
-        >
-          {justAdded ? (
-            <>
-              <Check className="animate-pop" size={16} aria-hidden="true" /> {t.added}
-            </>
-          ) : (
-            <>
-              <ShoppingBag size={16} aria-hidden="true" /> {t.addToCart}
-            </>
-          )}
-        </button>
+        <div className="flex w-full flex-wrap gap-3 sm:w-auto">
+          <button
+            ref={addButtonRef}
+            type="button"
+            onClick={handleAdd}
+            aria-live="polite"
+            className="btn-soft btn-soft-outline flex-1 sm:flex-initial"
+          >
+            {justAdded ? (
+              <>
+                <Check className="animate-pop" size={16} aria-hidden="true" /> {t.added}
+              </>
+            ) : (
+              <>
+                <ShoppingBag size={16} aria-hidden="true" /> {t.addToCart}
+              </>
+            )}
+          </button>
+          <button type="button" onClick={handleBuyNow} className="btn-soft btn-soft-solid flex-1 sm:flex-initial">
+            <Zap size={16} aria-hidden="true" /> {t.buyNow}
+          </button>
+        </div>
         <ul className="mt-5 space-y-2 text-sm text-ink">
           <li className="flex items-start gap-2"><Truck size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.factShipping.replace("{national}", formatMXN(NATIONAL_SHIPPING_PRICE)).replace("{threshold}", formatMXN(FREE_SHIPPING_THRESHOLD))}</li>
           <li className="flex items-start gap-2"><Clock size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.factTiming}</li>
@@ -187,9 +199,14 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
             <p className="truncate text-base font-semibold text-ink">{formatMXN(selected?.price ?? product.price)}</p>
             <p className="truncate text-xs text-ink-soft">{selected ? variantLabel(selected.id, selected.label) : product.name}</p>
           </div>
-          <button type="button" onClick={handleAdd} className="btn-soft btn-soft-solid min-h-11 shrink-0 px-5 text-sm">
-            {justAdded ? t.added : t.addToCart}
-          </button>
+          <div className="flex shrink-0 gap-2">
+            <button type="button" onClick={handleAdd} className="btn-soft btn-soft-outline min-h-11 px-4 text-sm">
+              {justAdded ? t.added : t.addToCart}
+            </button>
+            <button type="button" onClick={handleBuyNow} className="btn-soft btn-soft-solid min-h-11 px-4 text-sm">
+              {t.buyNow}
+            </button>
+          </div>
         </div>
       </div>
     </div>

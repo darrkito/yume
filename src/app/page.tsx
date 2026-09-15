@@ -7,6 +7,7 @@ import { formatMXN } from "@/lib/format";
 import { HeroJar } from "@/components/HeroJar";
 import { CtaFillLink } from "@/components/CtaFillLink";
 import { ProductVisual } from "@/components/ProductVisual";
+import { AddToCartButton } from "@/components/AddToCartButton";
 import { FaqQuestion } from "@/components/FaqAccordion";
 import { InfiniteGalleryStrip } from "@/components/InfiniteGalleryStrip";
 import { galleryItems } from "@/content/gallery";
@@ -117,8 +118,12 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <Link href={`/productos/${featured.slug}`} className="btn-soft btn-soft-solid mt-8">
-                Ver detalle y cotizar
+              <AddToCartButton product={featured} />
+              <Link
+                href={`/productos/${featured.slug}`}
+                className="mt-3 inline-flex min-h-11 items-center text-sm font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+              >
+                Ver detalle y elegir opciones →
               </Link>
             </div>
           </div>
@@ -148,28 +153,27 @@ export default function Home() {
           <h2 className="font-display text-3xl text-ink sm:text-4xl text-balance">Más productos</h2>
           <div className="mt-12 grid gap-8 sm:grid-cols-2">
             {rest.map((p, i) => (
-              <Link
-                key={p.slug}
-                href={`/productos/${p.slug}`}
-                className={`card-soft group flex flex-col p-7 ${i % 2 === 0 ? "tilt-a" : "tilt-b"}`}
-              >
-                <div className="flex h-48 justify-center overflow-hidden">
-                  <div className="product-card-visual">
-                    <ProductVisual product={p} compact />
+              <div key={p.slug} className={`card-soft flex flex-col p-7 ${i % 2 === 0 ? "tilt-a" : "tilt-b"}`}>
+                <Link href={`/productos/${p.slug}`} className="group flex flex-col">
+                  <div className="flex h-48 justify-center overflow-hidden">
+                    <div className="product-card-visual">
+                      <ProductVisual product={p} compact />
+                    </div>
                   </div>
-                </div>
-                <p className="mt-6 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.1em] text-brand">
-                  {p.category}
-                  {p.isNew && (
-                    <span className="rounded-full bg-brand px-2 py-0.5 text-[10px] text-white">Nuevo</span>
-                  )}
-                </p>
-                <h3 className="mt-1 font-display text-xl text-ink transition-colors group-hover:text-brand">{p.name}</h3>
-                <p className="mt-2 text-lg font-semibold text-ink">
-                  {hasVariants(p) && "Desde "}
-                  {formatMXN(productDisplayPrice(p))} MXN
-                </p>
-              </Link>
+                  <p className="mt-6 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.1em] text-brand">
+                    {p.category}
+                    {p.isNew && (
+                      <span className="rounded-full bg-brand px-2 py-0.5 text-[10px] text-white">Nuevo</span>
+                    )}
+                  </p>
+                  <h3 className="mt-1 font-display text-xl text-ink transition-colors group-hover:text-brand">{p.name}</h3>
+                  <p className="mt-2 text-lg font-semibold text-ink">
+                    {hasVariants(p) && "Desde "}
+                    {formatMXN(productDisplayPrice(p))} MXN
+                  </p>
+                </Link>
+                <AddToCartButton product={p} compact />
+              </div>
             ))}
           </div>
           <Link
