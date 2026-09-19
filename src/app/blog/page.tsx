@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { blogPosts } from "@/content/blog";
-import { formatBlogDate } from "@/lib/format";
+import { BlogGrid } from "@/components/BlogGrid";
 import { pageMetadata, breadcrumbSchema } from "@/lib/seo";
 import { SITE } from "@/content/site";
 
@@ -39,24 +38,8 @@ export default function BlogIndexPage() {
         Papelería creativa personalizada, recetarios médicos y etiquetas para negocios, con foco en Guadalajara y Jalisco.
       </p>
 
-      <div className="mt-14 grid gap-8 sm:grid-cols-2">
-        {blogPosts.map((post, i) => (
-          <Link
-            key={post.slug}
-            href={`/blog/${post.slug}`}
-            className={`card-soft group flex flex-col p-6 ${i % 2 === 0 ? "tilt-a" : "tilt-b"}`}
-          >
-            <div className="flex items-center gap-3">
-              <span className="rounded-full bg-brand-tint px-3 py-1 text-[11px] font-semibold text-brand-deep">{post.category}</span>
-              <time dateTime={post.publishedAt} className="text-xs text-ink-soft">
-                {formatBlogDate(post.publishedAt)}
-              </time>
-            </div>
-            <h2 className="mt-4 font-display text-xl text-ink transition-colors group-hover:text-brand text-balance">{post.title}</h2>
-            <p className="mt-3 text-sm leading-relaxed text-ink-soft">{post.description}</p>
-            <span className="mt-6 text-xs font-semibold text-brand">Leer más →</span>
-          </Link>
-        ))}
+      <div className="mt-14">
+        <BlogGrid posts={blogPosts} lang="es" basePath="/blog" allLabel="Todos" readMoreLabel="Leer más" />
       </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />

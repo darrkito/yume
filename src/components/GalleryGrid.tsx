@@ -57,7 +57,7 @@ export function GalleryGrid({ items, categories, allLabel, lang = "es" }: Galler
 
   return (
     <div>
-      <div className="flex flex-wrap gap-2">
+      <div className="-mx-6 flex gap-2 overflow-x-auto px-6 pb-1 sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0 sm:pb-0">
         {[allLabel, ...categories].map((cat) => (
           <button
             key={cat}
@@ -66,7 +66,7 @@ export function GalleryGrid({ items, categories, allLabel, lang = "es" }: Galler
               setActive(cat);
               setLightboxIndex(null);
             }}
-            className={`flex min-h-11 items-center rounded-full border px-4 py-2 text-xs font-semibold uppercase tracking-[0.1em] transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand ${
+            className={`flex min-h-11 shrink-0 items-center rounded-full border px-4 py-2 text-xs font-semibold uppercase tracking-[0.1em] transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand ${
               active === cat ? "border-brand bg-brand text-white" : "border-line text-ink-soft hover:border-brand hover:text-brand"
             }`}
           >

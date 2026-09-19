@@ -96,7 +96,7 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
   };
 
   return (
-    <section className="mx-auto max-w-2xl px-6 py-16 sm:py-24">
+    <section className={`mx-auto px-6 py-16 sm:py-24 ${settled ? "max-w-2xl" : "max-w-2xl lg:max-w-5xl"}`}>
       <h1 className="animate-fade-up font-display text-4xl text-ink">{mode === "form" ? t.yourDetailsShipping : t.chooseHowToPay}</h1>
       {!settled && (
         <p className="animate-fade-up animate-fade-up-2 mt-2 text-xs font-semibold uppercase tracking-[0.1em] text-ink-soft">
@@ -104,112 +104,116 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
         </p>
       )}
 
-      {!settled && (
-        <>
-          <ul className="mt-8 divide-y divide-line border-y border-line text-sm">
-            {items.map((item) => (
-              <li key={`${item.slug}:${item.variantId ?? ""}`} className="flex items-center justify-between py-3">
-                <span className="text-ink">
-                  {item.name} <span className="text-ink-soft">x{item.qty}</span>
-                </span>
-                <span className="font-medium text-ink">{formatMXN(item.price * item.qty)}</span>
-              </li>
-            ))}
-          </ul>
-          {delivery && (
-            <div className="mt-3 flex items-center justify-between text-sm">
-              <span className="text-ink-soft">{deliveryLabel}</span>
-              <span className="font-medium text-ink">{surcharge > 0 ? formatMXN(surcharge) : t.free}</span>
+      <div className={settled ? "" : "lg:grid lg:grid-cols-[1fr_360px] lg:items-start lg:gap-12"}>
+        {!settled && (
+          <div className="mt-8 lg:sticky lg:top-24 lg:order-2 lg:col-start-2 lg:mt-10">
+            <ul className="divide-y divide-line border-y border-line text-sm">
+              {items.map((item) => (
+                <li key={`${item.slug}:${item.variantId ?? ""}`} className="flex items-center justify-between py-3">
+                  <span className="text-ink">
+                    {item.name} <span className="text-ink-soft">x{item.qty}</span>
+                  </span>
+                  <span className="font-medium text-ink">{formatMXN(item.price * item.qty)}</span>
+                </li>
+              ))}
+            </ul>
+            {delivery && (
+              <div className="mt-3 flex items-center justify-between text-sm">
+                <span className="text-ink-soft">{deliveryLabel}</span>
+                <span className="font-medium text-ink">{surcharge > 0 ? formatMXN(surcharge) : t.free}</span>
+              </div>
+            )}
+            <div className="mt-4 flex items-center justify-between">
+              <p className="text-sm text-ink-soft">{t.total}</p>
+              <p className="font-display text-2xl text-ink">{formatMXN(grandTotal)} MXN</p>
+            </div>
+            <ul className="mt-5 space-y-2 text-sm text-ink">
+              <li className="flex items-start gap-2"><ShieldCheck size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.securePayment}</li>
+              <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.afterPayment}</li>
+            </ul>
+          </div>
+        )}
+
+        <div className={settled ? "" : "lg:order-1 lg:col-start-1 lg:row-start-1"}>
+          {error && <p className="mt-6 rounded-xl border border-line bg-paper p-4 text-sm text-ink">{error}</p>}
+
+          {mode === "form" && (
+            <div className="mt-10">
+              <ShippingForm
+                lang={lang}
+                subtotal={total}
+                onSubmit={async ({ customer: c, delivery: d }) => {
+                  setError(null);
+                  try {
+                    const uploads = await uploadDesignFiles();
+                    setDesignFileUrls(uploads);
+                    setCustomer(c);
+                    setDelivery(d);
+                    setMode("choose");
+                  } catch (err) {
+                    setError(err instanceof Error ? err.message : t.couldNotUploadFile);
+                  }
+                }}
+              />
             </div>
           )}
-          <div className="mt-4 flex items-center justify-between">
-            <p className="text-sm text-ink-soft">{t.total}</p>
-            <p className="font-display text-2xl text-ink">{formatMXN(grandTotal)} MXN</p>
-          </div>
-          <ul className="mt-5 space-y-2 text-sm text-ink">
-            <li className="flex items-start gap-2"><ShieldCheck size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.securePayment}</li>
-            <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.afterPayment}</li>
-          </ul>
-        </>
-      )}
 
-      {error && <p className="mt-6 rounded-xl border border-line bg-paper p-4 text-sm text-ink">{error}</p>}
+          {mode === "choose" && (
+            <div className="mt-10">
+              <button type="button" onClick={() => setMode("form")} className="mb-4 inline-flex min-h-11 items-center text-xs text-ink-soft transition-colors hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
+                {t.editShipping}
+              </button>
+              <div className="grid gap-4 sm:grid-cols-2">
+                <button
+                  type="button"
+                  onClick={handleCheckoutPro}
+                  disabled={redirecting}
+                  className="flex flex-col items-start gap-3 rounded-2xl border border-line bg-paper-raised p-6 text-left transition-colors hover:border-brand disabled:opacity-60"
+                >
+                  <ExternalLink size={22} className="text-brand" />
+                  <span className="font-display text-lg text-ink">{t.payWithMercadoPago}</span>
+                  <span className="text-xs leading-relaxed text-ink-soft">{t.mpDescription}</span>
+                  <span className="mt-auto text-xs font-semibold uppercase tracking-[0.1em] text-brand">
+                    {redirecting ? t.redirecting : t.continueArrow}
+                  </span>
+                </button>
 
-      {mode === "form" && (
-        <div className="mt-10">
-          <ShippingForm
-            lang={lang}
-            subtotal={total}
-            onSubmit={async ({ customer: c, delivery: d }) => {
-              setError(null);
-              try {
-                const uploads = await uploadDesignFiles();
-                setDesignFileUrls(uploads);
-                setCustomer(c);
-                setDelivery(d);
-                setMode("choose");
-              } catch (err) {
-                setError(err instanceof Error ? err.message : t.couldNotUploadFile);
-              }
-            }}
-          />
-        </div>
-      )}
-
-      {mode === "choose" && (
-        <div className="mt-10">
-          <button type="button" onClick={() => setMode("form")} className="mb-4 inline-flex min-h-11 items-center text-xs text-ink-soft transition-colors hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
-            {t.editShipping}
-          </button>
-          <div className="grid gap-4 sm:grid-cols-2">
-            <button
-              type="button"
-              onClick={handleCheckoutPro}
-              disabled={redirecting}
-              className="flex flex-col items-start gap-3 rounded-2xl border border-line bg-paper-raised p-6 text-left transition-colors hover:border-brand disabled:opacity-60"
-            >
-              <ExternalLink size={22} className="text-brand" />
-              <span className="font-display text-lg text-ink">{t.payWithMercadoPago}</span>
-              <span className="text-xs leading-relaxed text-ink-soft">{t.mpDescription}</span>
-              <span className="mt-auto text-xs font-semibold uppercase tracking-[0.1em] text-brand">
-                {redirecting ? t.redirecting : t.continueArrow}
-              </span>
-            </button>
-
-            <button
-              type="button"
-              onClick={() => setMode("onsite")}
-              className="flex flex-col items-start gap-3 rounded-2xl border border-line bg-paper-raised p-6 text-left transition-colors hover:border-brand"
-            >
-              <CreditCard size={22} className="text-brand" />
-              <span className="font-display text-lg text-ink">{t.payHere}</span>
-              <span className="text-xs leading-relaxed text-ink-soft">{t.payHereDescription}</span>
-              <span className="mt-auto flex items-center gap-1.5 text-xs font-semibold uppercase tracking-[0.1em] text-brand">
-                <Lock size={13} /> {t.includesStorePayment}
-              </span>
-            </button>
-          </div>
-        </div>
-      )}
-
-      {mode === "onsite" && customer && delivery && (
-        <div className="mt-10">
-          {!settled && (
-            <button type="button" onClick={() => setMode("choose")} className="mb-4 inline-flex min-h-11 items-center text-xs text-ink-soft transition-colors hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
-              {t.changePaymentMethod}
-            </button>
+                <button
+                  type="button"
+                  onClick={() => setMode("onsite")}
+                  className="flex flex-col items-start gap-3 rounded-2xl border border-line bg-paper-raised p-6 text-left transition-colors hover:border-brand"
+                >
+                  <CreditCard size={22} className="text-brand" />
+                  <span className="font-display text-lg text-ink">{t.payHere}</span>
+                  <span className="text-xs leading-relaxed text-ink-soft">{t.payHereDescription}</span>
+                  <span className="mt-auto flex items-center gap-1.5 text-xs font-semibold uppercase tracking-[0.1em] text-brand">
+                    <Lock size={13} /> {t.includesStorePayment}
+                  </span>
+                </button>
+              </div>
+            </div>
           )}
-          <MercadoPagoBrick
-            items={items}
-            total={grandTotal}
-            customer={customer}
-            delivery={delivery}
-            designFileUrls={designFileUrls}
-            onSettled={() => setSettled(true)}
-            lang={lang}
-          />
+
+          {mode === "onsite" && customer && delivery && (
+            <div className="mt-10">
+              {!settled && (
+                <button type="button" onClick={() => setMode("choose")} className="mb-4 inline-flex min-h-11 items-center text-xs text-ink-soft transition-colors hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
+                  {t.changePaymentMethod}
+                </button>
+              )}
+              <MercadoPagoBrick
+                items={items}
+                total={grandTotal}
+                customer={customer}
+                delivery={delivery}
+                designFileUrls={designFileUrls}
+                onSettled={() => setSettled(true)}
+                lang={lang}
+              />
+            </div>
+          )}
         </div>
-      )}
+      </div>
     </section>
   );
 }
