@@ -583,7 +583,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "Durability: paper vs. a rigid plate",
         body: [
-          "A printed sheet with a QR code wears out fast: it bends, gets wet, fades in the window sun, or just starts looking out of place after a few weeks on the counter. A rigid (acrylic) plate holds up to daily use at a business without discoloring or bending, and it reads as part of the counter, not an improvised notice.",
+          "A printed sheet with a QR code wears out fast: it bends, gets wet, fades in the window sun, or just starts looking out of place after a few weeks on the counter. A rigid plate holds up to daily use at a business without discoloring or bending, and it reads as part of the counter, not an improvised notice.",
         ],
       },
       {

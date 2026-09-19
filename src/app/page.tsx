@@ -13,7 +13,7 @@ import { InfiniteGalleryStrip } from "@/components/InfiniteGalleryStrip";
 import { galleryItems } from "@/content/gallery";
 
 const NO_MINIMUMS = [
-  "Un recetario o desde 40–50 piezas de stickers, no cientos",
+  "Un recetario o desde 40-50 piezas de stickers, no cientos",
   "Precios flexibles desde $100 MXN",
   "Sin planillas de mínimos como otros talleres",
 ];

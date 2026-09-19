@@ -16,7 +16,7 @@ import { getGalleryItemsEn } from "@/content/gallery.en";
 import { hreflangFor, PRODUCT_SLUG_EN } from "@/lib/i18n";
 
 const NO_MINIMUMS = [
-  "One prescription pad or 40–50 stickers, not hundreds",
+  "One prescription pad or 40-50 stickers, not hundreds",
   "Flexible pricing from $100 MXN",
   "No bulk minimums like other print shops",
 ];

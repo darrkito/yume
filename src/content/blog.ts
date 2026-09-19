@@ -610,7 +610,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Durabilidad: papel vs. placa rígida",
         body: [
-          "Una hoja impresa con un QR se maltrata rápido: se dobla, se moja, se despinta con el sol de la ventana o simplemente se ve fuera de lugar después de unas semanas en el mostrador. Una placa rígida (acrílico) aguanta el uso diario de un negocio sin decolorarse ni doblarse, y se ve como parte del mostrador, no como un aviso improvisado.",
+          "Una hoja impresa con un QR se maltrata rápido: se dobla, se moja, se despinta con el sol de la ventana o simplemente se ve fuera de lugar después de unas semanas en el mostrador. Una placa rígida aguanta el uso diario de un negocio sin decolorarse ni doblarse, y se ve como parte del mostrador, no como un aviso improvisado.",
         ],
       },
       {

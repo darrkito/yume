@@ -10,6 +10,7 @@ import { ProductPurchase } from "@/components/ProductPurchase";
 import { LogoUploadNote } from "@/components/LogoUploadNote";
 import { InfiniteGalleryStrip } from "@/components/InfiniteGalleryStrip";
 import { RelatedProducts } from "@/components/RelatedProducts";
+import { FaqQuestion } from "@/components/FaqAccordion";
 import { getGalleryItemsEn } from "@/content/gallery.en";
 import { hreflangFor, PRODUCT_SLUG_EN, PRODUCT_SLUG_ES } from "@/lib/i18n";
 
@@ -155,12 +156,9 @@ export default async function ProductPageEn({ params }: { params: Promise<{ slug
 
       <div className="mt-20 border-t border-line pt-14">
         <h2 className="font-display text-2xl text-ink">Frequently Asked Questions</h2>
-        <div className="mt-8 space-y-6 max-w-2xl">
+        <div className="mt-4 max-w-2xl divide-y divide-line border-y border-line">
           {t.faq.map((f) => (
-            <div key={f.q} className="border-b border-line pb-6">
-              <h3 className="font-display text-lg text-ink">{f.q}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-ink-soft">{f.a}</p>
-            </div>
+            <FaqQuestion key={f.q} item={f} />
           ))}
         </div>
       </div>
