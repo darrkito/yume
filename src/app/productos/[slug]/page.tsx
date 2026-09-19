@@ -100,7 +100,12 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
 
       <div className="grid gap-8 sm:gap-14 sm:grid-cols-2 sm:items-start">
         <div className="sm:sticky sm:top-24 sm:self-start">
-          <div className="product-zoom-frame card-soft flex items-center justify-center p-4 [&_img]:max-h-44 [&_img]:w-auto [&_img]:object-contain [&_.product-zoom-img]:max-h-44 sm:[&_img]:max-h-none sm:[&_.product-zoom-img]:max-h-none sm:justify-start sm:p-10">
+          <div className="product-zoom-frame card-soft relative flex items-center justify-center p-4 [&_img]:max-h-44 [&_img]:w-auto [&_img]:object-contain [&_.product-zoom-img]:max-h-44 sm:[&_img]:max-h-none sm:[&_.product-zoom-img]:max-h-none sm:justify-start sm:p-10">
+            {product.isNew && (
+              <span className="absolute left-4 top-4 z-10 rounded-full bg-brand px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-white shadow-sm">
+                Nuevo
+              </span>
+            )}
             <div className="product-zoom-img">
               <ProductVisual product={product} />
             </div>
@@ -108,10 +113,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         </div>
 
         <div>
-          <p className="animate-fade-up flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.1em] text-brand">
-            {product.category}
-            {product.isNew && <span className="rounded-full bg-brand px-2 py-0.5 text-[10px] text-white">Nuevo</span>}
-          </p>
+          <p className="animate-fade-up text-xs font-semibold uppercase tracking-[0.1em] text-brand">{product.category}</p>
           <h1 className="animate-fade-up animate-fade-up-1 mt-3 font-display text-3xl text-ink sm:text-4xl">{product.name}</h1>
 
           <ProductPurchase product={product} />

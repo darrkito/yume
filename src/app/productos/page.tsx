@@ -38,21 +38,21 @@ export default function ProductosPage() {
         {products.map((p, i) => (
           <div key={p.slug} className={`card-soft group flex flex-col p-6 ${i % 2 === 0 ? "tilt-a" : "tilt-b"}`}>
             <Link href={`/productos/${p.slug}`}>
-              <div className="flex h-48 justify-center overflow-hidden">
+              <div className="relative flex h-48 justify-center overflow-hidden">
+                {p.isNew && (
+                  <span className="absolute left-0 top-0 z-10 rounded-full bg-brand px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-white shadow-sm">
+                    Nuevo
+                  </span>
+                )}
                 <div className="product-card-visual">
                   <ProductVisual product={p} compact />
                 </div>
               </div>
-              <p className="mt-6 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.1em] text-brand">
-                {p.category}
-                {p.isNew && (
-                  <span className="rounded-full bg-brand px-2 py-0.5 text-[10px] text-white">Nuevo</span>
-                )}
-              </p>
+              <p className="mt-6 text-xs font-semibold uppercase tracking-[0.1em] text-brand">{p.category}</p>
               <h2 className="mt-1 font-display text-xl text-ink group-hover:text-brand transition-colors">{p.name}</h2>
-              <p className="mt-2 text-lg font-semibold text-ink">
-                {hasVariants(p) && "Desde "}
-                {formatMXN(productDisplayPrice(p))} MXN
+              <p className="mt-2 text-xl font-bold text-ink">
+                {hasVariants(p) && <span className="text-sm font-normal text-ink-soft">Desde </span>}
+                {formatMXN(productDisplayPrice(p))} <span className="text-sm font-normal text-ink-soft">MXN</span>
               </p>
             </Link>
             <AddToCartButton product={p} compact />
