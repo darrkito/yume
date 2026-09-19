@@ -52,7 +52,7 @@ export function RelatedProducts({ excludeSlugs, lang = "es", heading }: { exclud
                   {formatMXN(productDisplayPrice(p))} MXN
                 </p>
               </Link>
-              <AddToCartButton product={p} compact lang={lang} />
+              <AddToCartButton product={p} compact lang={lang} stackActions />
             </div>
           );
         })}

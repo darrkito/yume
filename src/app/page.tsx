@@ -199,7 +199,7 @@ export default function Home() {
       )}
 
       {/* Gallery teaser */}
-      <section className="mx-auto max-w-6xl px-6 pb-20">
+      <section className="mx-auto max-w-6xl px-6">
         <InfiniteGalleryStrip
           items={galleryItems}
           heading="Galería de trabajos"

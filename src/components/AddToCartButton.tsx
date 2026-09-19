@@ -17,7 +17,20 @@ import { UI, type Lang } from "@/lib/i18n";
 // "Comprar ahora" adds the same item and jumps straight to the cart to
 // finish checkout, the always-be-closing pattern from Amazon's own
 // buy box: every product surface (cards, cross-sell) gets both actions.
-export function AddToCartButton({ product, compact = false, lang = "es" }: { product: Product; compact?: boolean; lang?: Lang }) {
+export function AddToCartButton({
+  product,
+  compact = false,
+  lang = "es",
+  stackActions = false,
+}: {
+  product: Product;
+  compact?: boolean;
+  lang?: Lang;
+  // Cross-sell tiles (RelatedProducts) render this in a narrower column
+  // than the shop grid does — two side-by-side buttons wrap their labels
+  // there, so that caller stacks them instead of squeezing them in a row.
+  stackActions?: boolean;
+}) {
   const { addItem } = useCart();
   const router = useRouter();
   const [justAdded, setJustAdded] = useState(false);
@@ -53,7 +66,7 @@ export function AddToCartButton({ product, compact = false, lang = "es" }: { pro
           aria-label={t.chooseOption}
           value={variantId}
           onChange={(e) => setVariantId(e.target.value)}
-          className={compact ? "mb-2 block w-full rounded-lg border border-line bg-paper px-2.5 py-2 text-xs text-ink" : "mb-3 block w-full max-w-xs rounded-lg border border-line bg-paper px-3 py-2 text-sm text-ink"}
+          className={compact ? "mb-2 block min-h-11 w-full rounded-lg border border-line bg-paper px-2.5 py-2 text-xs text-ink" : "mb-3 block min-h-11 w-full max-w-xs rounded-lg border border-line bg-paper px-3 py-2 text-sm text-ink"}
         >
           {product.variants!.map((v) => (
             <option key={v.id} value={v.id}>
@@ -62,7 +75,7 @@ export function AddToCartButton({ product, compact = false, lang = "es" }: { pro
           ))}
         </select>
       )}
-      <div className={compact ? "flex gap-2" : "flex flex-wrap gap-3"}>
+      <div className={stackActions ? "flex flex-col gap-2" : compact ? "flex gap-2" : "flex flex-wrap gap-3"}>
         <button
           type="button"
           onClick={handleAdd}

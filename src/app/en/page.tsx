@@ -225,7 +225,7 @@ export default function HomeEn() {
       )}
 
       {/* Gallery teaser */}
-      <section className="mx-auto max-w-6xl px-6 pb-20">
+      <section className="mx-auto max-w-6xl px-6">
         <InfiniteGalleryStrip
           items={getGalleryItemsEn()}
           heading="Work we've done"

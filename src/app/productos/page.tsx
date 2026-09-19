@@ -34,7 +34,7 @@ export default function ProductosPage() {
         <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.factProof}</li>
       </ul>
 
-      <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-14 grid gap-8 sm:grid-cols-2">
         {products.map((p, i) => (
           <div key={p.slug} className={`card-soft group flex flex-col p-6 ${i % 2 === 0 ? "tilt-a" : "tilt-b"}`}>
             <Link href={`/productos/${p.slug}`}>

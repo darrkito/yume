@@ -192,7 +192,7 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
       <div
         inert={!showBar || undefined}
         aria-hidden={!showBar}
-        className={`fixed inset-x-0 bottom-0 z-40 border-t border-line bg-paper-raised px-4 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] shadow-[0_-8px_24px_-12px_hsl(var(--shadow-tint)/0.35)] transition-transform duration-200 motion-reduce:transition-none ${showBar ? "translate-y-0" : "translate-y-full"}`}
+        className={`fixed inset-x-0 bottom-0 z-40 sm:hidden border-t border-line bg-paper-raised px-4 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] shadow-[0_-8px_24px_-12px_hsl(var(--shadow-tint)/0.35)] transition-transform duration-200 motion-reduce:transition-none ${showBar ? "translate-y-0" : "translate-y-full"}`}
       >
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4">
           <div className="min-w-0">

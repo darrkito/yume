@@ -73,8 +73,8 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
         {items.map((item) => {
           const product = getProduct(item.slug);
           return (
-          <li key={`${item.slug}:${item.variantId ?? ""}`} className="flex flex-wrap items-center justify-between gap-4 py-6">
-            <div className="flex items-center gap-4">
+          <li key={`${item.slug}:${item.variantId ?? ""}`} className="flex flex-wrap items-center justify-between gap-4 py-6 sm:flex-nowrap">
+            <div className="flex min-w-0 items-center gap-4">
               <Link
                 href={`${shopHref}/${lang === "en" ? (PRODUCT_SLUG_EN[item.slug] ?? item.slug) : item.slug}`}
                 className="flex h-16 w-16 shrink-0 justify-center overflow-hidden rounded-lg border border-line bg-paper-raised p-1.5"
@@ -83,7 +83,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
               >
                 {product && <ProductVisual product={product} compact />}
               </Link>
-              <div>
+              <div className="min-w-0">
                 <Link
                   href={`${shopHref}/${lang === "en" ? (PRODUCT_SLUG_EN[item.slug] ?? item.slug) : item.slug}`}
                   className="font-display text-lg text-ink hover:text-brand transition-colors"
@@ -95,7 +95,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
                 </p>
               </div>
             </div>
-            <div className="flex items-center gap-4">
+            <div className="flex shrink-0 items-center gap-4">
               <div className="flex items-center rounded-full border border-line">
                 <button
                   type="button"
