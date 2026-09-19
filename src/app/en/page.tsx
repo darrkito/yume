@@ -116,6 +116,23 @@ export default function HomeEn() {
         </div>
       </section>
 
+      {/* How it works */}
+      <section className="mx-auto max-w-6xl px-6 py-20">
+        <h2 className="font-display text-3xl text-ink sm:text-4xl text-balance">How it works</h2>
+        <div className="mt-12 grid gap-6 sm:grid-cols-3">
+          {HOW_IT_WORKS.map((step, i) => (
+            <div key={step.title} className="info-card p-7">
+              <div className="info-card-icon">
+                <step.icon size={20} aria-hidden="true" />
+              </div>
+              <p className="mt-5 text-xs font-semibold uppercase tracking-[0.1em] text-brand">Step {i + 1}</p>
+              <h3 className="mt-1 font-display text-xl text-ink text-balance">{step.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-ink-soft">{step.body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Featured product */}
       <section className="bg-brand-tint/60">
         <div className="mx-auto max-w-6xl px-6 py-20">
@@ -160,23 +177,6 @@ export default function HomeEn() {
               </Link>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* How it works */}
-      <section className="mx-auto max-w-6xl px-6 py-20">
-        <h2 className="font-display text-3xl text-ink sm:text-4xl text-balance">How it works</h2>
-        <div className="mt-12 grid gap-6 sm:grid-cols-3">
-          {HOW_IT_WORKS.map((step, i) => (
-            <div key={step.title} className="info-card p-7">
-              <div className="info-card-icon">
-                <step.icon size={20} aria-hidden="true" />
-              </div>
-              <p className="mt-5 text-xs font-semibold uppercase tracking-[0.1em] text-brand">Step {i + 1}</p>
-              <h3 className="mt-1 font-display text-xl text-ink text-balance">{step.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-ink-soft">{step.body}</p>
-            </div>
-          ))}
         </div>
       </section>
 
