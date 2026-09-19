@@ -64,8 +64,7 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
   if (items.length === 0 && mode === "form" && !settled) {
     return (
       <section className="mx-auto max-w-2xl px-6 py-24 text-center">
-        <p className="animate-fade-up text-xs uppercase tracking-[0.25em] text-brand">{t.checkout}</p>
-        <h1 className="animate-fade-up animate-fade-up-1 mt-3 font-display text-3xl text-ink sm:text-4xl">{t.emptyCartTitle}</h1>
+        <h1 className="animate-fade-up font-display text-3xl text-ink sm:text-4xl">{t.emptyCartTitle}</h1>
         <p className="animate-fade-up animate-fade-up-2 mt-4 text-sm text-ink-soft">{t.emptyCartCheckoutBody}</p>
         <Link
           href={shopHref}
@@ -98,8 +97,7 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
 
   return (
     <section className="mx-auto max-w-2xl px-6 py-16 sm:py-24">
-      <p className="animate-fade-up text-xs uppercase tracking-[0.25em] text-brand">{t.checkout}</p>
-      <h1 className="animate-fade-up animate-fade-up-1 mt-3 font-display text-4xl text-ink">{mode === "form" ? t.yourDetailsShipping : t.chooseHowToPay}</h1>
+      <h1 className="animate-fade-up font-display text-4xl text-ink">{mode === "form" ? t.yourDetailsShipping : t.chooseHowToPay}</h1>
       {!settled && (
         <p className="animate-fade-up animate-fade-up-2 mt-2 text-xs font-semibold uppercase tracking-[0.1em] text-ink-soft">
           {mode === "form" ? t.checkoutStepShipping : t.checkoutStepPayment}

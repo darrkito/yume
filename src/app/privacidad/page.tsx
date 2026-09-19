@@ -39,8 +39,7 @@ export default function PrivacidadPage() {
   const breadcrumb = breadcrumbSchema("/privacidad", [{ name: "Inicio", url: "/" }, { name: "Aviso de Privacidad" }]);
   return (
     <section className="mx-auto max-w-3xl px-6 py-16 sm:py-24">
-      <p className="animate-fade-up text-xs uppercase tracking-[0.25em] text-brand">Legal</p>
-      <h1 className="animate-fade-up animate-fade-up-1 mt-3 font-display text-4xl text-ink sm:text-5xl">Aviso de Privacidad</h1>
+      <h1 className="animate-fade-up font-display text-4xl text-ink sm:text-5xl">Aviso de Privacidad</h1>
       <p className="animate-fade-up animate-fade-up-2 mt-4 text-sm text-ink-soft">Última actualización: 12 de septiembre de 2026</p>
 
       <div className="mt-12 space-y-8">

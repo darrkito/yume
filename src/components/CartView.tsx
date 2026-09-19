@@ -44,8 +44,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
   if (items.length === 0) {
     return (
       <section className="mx-auto max-w-2xl px-6 py-24 text-center">
-        <p className="animate-fade-up text-xs uppercase tracking-[0.25em] text-brand">{t.cart}</p>
-        <h1 className="animate-fade-up animate-fade-up-1 mt-3 font-display text-3xl text-ink sm:text-4xl">{t.emptyCartTitle}</h1>
+        <h1 className="animate-fade-up font-display text-3xl text-ink sm:text-4xl">{t.emptyCartTitle}</h1>
         <p className="animate-fade-up animate-fade-up-2 mt-4 text-sm text-ink-soft">{t.emptyCartBody}</p>
         <Link
           href={shopHref}
@@ -68,8 +67,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
 
   return (
     <section className="mx-auto max-w-3xl px-6 py-16 sm:py-24">
-      <p className="animate-fade-up text-xs uppercase tracking-[0.25em] text-brand">{t.cart}</p>
-      <h1 className="animate-fade-up animate-fade-up-1 mt-3 font-display text-4xl text-ink">{t.yourOrder}</h1>
+      <h1 className="animate-fade-up font-display text-4xl text-ink">{t.yourOrder}</h1>
 
       <ul className="mt-10 divide-y divide-line border-y border-line">
         {items.map((item) => {

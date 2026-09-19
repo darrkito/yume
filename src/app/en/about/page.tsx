@@ -34,8 +34,7 @@ export default function AboutPageEn() {
   const breadcrumb = breadcrumbSchema("/en/about", [{ name: "Home", url: "/en" }, { name: "About" }]);
   return (
     <section className="mx-auto max-w-3xl px-6 py-16 sm:py-24">
-      <p className="animate-fade-up text-xs uppercase tracking-[0.25em] text-brand">About us</p>
-      <h1 className="animate-fade-up animate-fade-up-1 mt-3 font-display text-4xl text-ink sm:text-5xl">About Yume</h1>
+      <h1 className="animate-fade-up font-display text-4xl text-ink sm:text-5xl">About Yume</h1>
       <p className="animate-fade-up animate-fade-up-2 mt-4 max-w-lg text-sm leading-relaxed text-ink-soft">
         Custom stationery and personalized goods made to order in {SITE.city}, {SITE.state}.
       </p>

@@ -15,8 +15,7 @@ export default function ContactPageEn() {
   const breadcrumb = breadcrumbSchema("/en/contact", [{ name: "Home", url: "/en" }, { name: "Contact" }]);
   return (
     <section className="mx-auto max-w-3xl px-6 py-16 sm:py-24">
-      <p className="animate-fade-up text-xs uppercase tracking-[0.25em] text-brand">Contact</p>
-      <h1 className="animate-fade-up animate-fade-up-1 mt-3 font-display text-4xl text-ink sm:text-5xl">Get a quote for your custom order</h1>
+      <h1 className="animate-fade-up font-display text-4xl text-ink sm:text-5xl">Get a quote for your custom order</h1>
       <p className="animate-fade-up animate-fade-up-2 mt-4 max-w-lg text-sm leading-relaxed text-ink-soft">
         The fastest way to get a quote is WhatsApp: tell us what you need (prescription pad, logo stickers, vinyl stickers, quantity, design) and we&apos;ll reply with pricing and next steps.
       </p>

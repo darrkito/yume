@@ -33,8 +33,7 @@ export default function NosotrosPage() {
   const breadcrumb = breadcrumbSchema("/nosotros", [{ name: "Inicio", url: "/" }, { name: "Nosotros" }]);
   return (
     <section className="mx-auto max-w-3xl px-6 py-16 sm:py-24">
-      <p className="animate-fade-up text-xs uppercase tracking-[0.25em] text-brand">Sobre nosotros</p>
-      <h1 className="animate-fade-up animate-fade-up-1 mt-3 font-display text-4xl text-ink sm:text-5xl">Sobre Yume</h1>
+      <h1 className="animate-fade-up font-display text-4xl text-ink sm:text-5xl">Sobre Yume</h1>
       <p className="animate-fade-up animate-fade-up-2 mt-4 max-w-lg text-sm leading-relaxed text-ink-soft">
         Papelería creativa y artículos personalizados hechos sobre pedido en {SITE.city}, {SITE.state}.
       </p>

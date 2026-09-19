@@ -124,7 +124,7 @@ export default function HomeEn() {
               href={`/en/products/${PRODUCT_SLUG_EN[featured.slug]}`}
               className="card-soft tilt-a flex h-72 justify-center overflow-hidden p-8 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
             >
-              <ProductVisual product={featured} compact />
+              <ProductVisual product={featured} compact priority />
             </Link>
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.1em] text-brand-deep">
@@ -235,8 +235,9 @@ export default function HomeEn() {
       {/* Values */}
       <section className="border-t border-line">
         <div className="mx-auto max-w-6xl px-6 py-20">
-          <div className="grid gap-6 sm:grid-cols-3">
-            <div className="info-card p-7">
+          <h2 className="font-display text-3xl text-ink sm:text-4xl text-balance">Why Yume</h2>
+          <div className="mt-12 grid gap-10 sm:grid-cols-3">
+            <div>
               <div className="info-card-icon">
                 <PenTool size={20} aria-hidden="true" />
               </div>
@@ -245,7 +246,7 @@ export default function HomeEn() {
                 Every piece is adjusted to your details, your brand, or your practice, no generic templates.
               </p>
             </div>
-            <div className="info-card p-7">
+            <div>
               <div className="info-card-icon">
                 <CheckCircle2 size={20} aria-hidden="true" />
               </div>
@@ -254,7 +255,7 @@ export default function HomeEn() {
                 You get a digital proof and give the go-ahead before your order goes into production.
               </p>
             </div>
-            <div className="info-card p-7">
+            <div>
               <div className="info-card-icon">
                 <MapPin size={20} aria-hidden="true" />
               </div>

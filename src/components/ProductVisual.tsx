@@ -8,7 +8,20 @@ import { NotepadMark } from "@/components/NotepadMark";
 // Real product photo when available; falls back to the honest CSS/SVG
 // illustration for products that don't have photography yet (never a
 // fake stock photo).
-export function ProductVisual({ product, compact = false }: { product: Product; compact?: boolean }) {
+export function ProductVisual({
+  product,
+  compact = false,
+  priority,
+}: {
+  product: Product;
+  compact?: boolean;
+  // Defaults to the non-compact usage (product detail pages) since that's
+  // normally the largest image in view. A compact card can still be the
+  // page's actual LCP element (e.g. a homepage featured-product card above
+  // the fold) — pass this explicitly rather than swapping to non-compact
+  // sizing just to get priority loading.
+  priority?: boolean;
+}) {
   const [loaded, setLoaded] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -48,7 +61,7 @@ export function ProductVisual({ product, compact = false }: { product: Product; 
             width={width}
             height={height}
             className={compact ? "h-full w-auto max-w-full object-contain" : "h-auto max-h-full w-auto max-w-full object-contain"}
-            priority={!compact}
+            priority={priority ?? !compact}
             onLoad={() => setLoaded(true)}
             onClick={compact ? undefined : () => setOpen(true)}
           />
