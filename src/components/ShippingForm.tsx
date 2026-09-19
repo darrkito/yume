@@ -140,7 +140,7 @@ export function ShippingForm({
             <p className="text-sm font-semibold text-ink">
               {t.nationalShipping} · {nationalShippingCost > 0 ? `${formatMXN(nationalShippingCost)} MXN` : t.free}
             </p>
-            <p className="mt-1 text-xs leading-relaxed text-ink-soft">{nationalShippingCost === 0 ? t.nationalShippingFreeNote : t.nationalShippingDesc}</p>
+            <p className={`mt-1 text-xs leading-relaxed ${deliveryMethod === "envio_nacional" ? "text-ink" : "text-ink-soft"}`}>{nationalShippingCost === 0 ? t.nationalShippingFreeNote : t.nationalShippingDesc}</p>
           </button>
           <button
             type="button"
@@ -152,7 +152,7 @@ export function ShippingForm({
             <p className="text-sm font-semibold text-ink">
               {t.casablancaPickup} · {formatMXN(CASABLANCA_PRICE)} MXN
             </p>
-            <p className="mt-1 text-xs leading-relaxed text-ink-soft">{t.casablancaPickupDesc}</p>
+            <p className={`mt-1 text-xs leading-relaxed ${deliveryMethod === "recoleccion_casablanca" ? "text-ink" : "text-ink-soft"}`}>{t.casablancaPickupDesc}</p>
           </button>
         </div>
 

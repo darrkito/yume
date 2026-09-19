@@ -78,7 +78,7 @@ export function Header() {
             )}
           </Link>
           <a href={waLink(WA_QUOTE_MESSAGE[lang])} target="_blank" rel="noopener noreferrer" aria-label={t.quoteWhatsapp} className="flex size-11 items-center justify-center text-ink transition-colors hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand sm:hidden"><MessageCircle size={22} aria-hidden="true" /></a>
-          <a href={waLink(WA_QUOTE_MESSAGE[lang])} target="_blank" rel="noopener noreferrer" className="btn-soft btn-soft-solid hidden sm:inline-flex">
+          <a href={waLink(WA_QUOTE_MESSAGE[lang])} target="_blank" rel="noopener noreferrer" className="btn-soft btn-soft-outline hidden sm:inline-flex">
             {t.quoteWhatsapp}
           </a>
           <button
@@ -108,7 +108,7 @@ export function Header() {
               <LanguageToggle className="flex items-center gap-1.5" />
             </li>
             <li>
-              <a href={waLink(WA_QUOTE_MESSAGE[lang])} target="_blank" rel="noopener noreferrer" className="btn-soft btn-soft-solid" onClick={() => setOpen(false)}>
+              <a href={waLink(WA_QUOTE_MESSAGE[lang])} target="_blank" rel="noopener noreferrer" className="btn-soft btn-soft-outline" onClick={() => setOpen(false)}>
                 {t.quoteWhatsapp}
               </a>
             </li>

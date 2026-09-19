@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { CreditCard, ExternalLink, Store, ShieldCheck, CheckCircle2 } from "lucide-react";
+import { CreditCard, ExternalLink, Lock, ShieldCheck, CheckCircle2 } from "lucide-react";
 import { useCart } from "@/components/CartContext";
 import { useDesignFiles } from "@/components/DesignFileContext";
 import { MercadoPagoBrick } from "@/components/MercadoPagoBrick";
@@ -185,7 +185,7 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
               <span className="font-display text-lg text-ink">{t.payHere}</span>
               <span className="text-xs leading-relaxed text-ink-soft">{t.payHereDescription}</span>
               <span className="mt-auto flex items-center gap-1.5 text-xs font-semibold uppercase tracking-[0.1em] text-brand">
-                <Store size={13} /> {t.includesStorePayment}
+                <Lock size={13} /> {t.includesStorePayment}
               </span>
             </button>
           </div>

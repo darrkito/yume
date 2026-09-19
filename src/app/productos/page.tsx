@@ -54,6 +54,9 @@ export default function ProductosPage() {
                 {hasVariants(p) && <span className="text-sm font-normal text-ink-soft">Desde </span>}
                 {formatMXN(productDisplayPrice(p))} <span className="text-sm font-normal text-ink-soft">MXN</span>
               </p>
+              <span className="mt-3 inline-flex min-h-11 w-fit items-center rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-white transition-colors group-hover:bg-brand-deep">
+                Ver detalle →
+              </span>
             </Link>
             <AddToCartButton product={p} compact />
           </div>

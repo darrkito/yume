@@ -131,12 +131,6 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
         })}
       </ul>
 
-      <RelatedProducts
-        excludeSlugs={[...new Set(items.map((i) => i.slug))]}
-        lang={lang}
-        heading={lang === "en" ? "Products you might also like" : "Productos que también te pueden interesar"}
-      />
-
       {itemsRequiringImage.length > 0 && (
         <div className="mt-6 flex items-start gap-3 rounded-xl bg-brand-tint p-4 text-sm text-ink">
           <ImageUp size={18} className="mt-0.5 shrink-0 text-brand" />
@@ -198,6 +192,12 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
       >
         {t.emptyCart}
       </button>
+
+      <RelatedProducts
+        excludeSlugs={[...new Set(items.map((i) => i.slug))]}
+        lang={lang}
+        heading={lang === "en" ? "Products you might also like" : "Productos que también te pueden interesar"}
+      />
     </section>
   );
 }
