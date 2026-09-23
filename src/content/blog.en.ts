@@ -751,6 +751,76 @@ export const blogPostsEn: BlogPost[] = [
     ],
     relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
   },
+  {
+    slug: BLOG_SLUG_EN["stickers-para-bodas-eventos-y-fiestas"],
+    title: "Stickers for Weddings, Events, and Parties: Ideas and How to Order",
+    metaTitle: "Stickers for Weddings, Events, and Parties",
+    description:
+      "Stickers for weddings, events, and parties: sealing favor bags, decorating the table detail, or matching your invitations. What format to order and how to get a quote.",
+    category: "Guides",
+    publishedAt: "2026-09-23",
+    intro:
+      "A sticker with the couple's names, the event date, or the party's theme is one of the cheapest ways to personalize a celebration: it doesn't replace the invitation or the menu, but it ties everything else together visually. This guide covers the most common uses for stickers at weddings, events, and parties, and what to order depending on the type of celebration.",
+    sections: [
+      {
+        heading: "The most common uses at a celebration",
+        body: [
+          "The ones we see most: sealing candy or gift favor bags for guests, closing invitation envelopes, decorating the centerpiece or welcome sign, and sticking on water bottles or personalized cans for the toast. At a wedding or quinceañera these usually carry the couple's initials or the honoree's name and the date; at a kids' or themed party, the design or character matching the theme.",
+          "If you're already ordering custom invitations or a custom wedding menu, using the same design on the stickers makes the whole event feel like one cohesive piece, not separate items bought apart from each other.",
+        ],
+      },
+      {
+        heading: "What format to order depending on the use",
+        body: [
+          "For favor bags or envelopes, a round or oval sticker 3 to 5 cm is the most common size. For bottles or cans, a rectangular format or a die-cut matching your design's exact shape looks better on curved surfaces. If the sticker will be on something that gets wet (a cooler, a bottle, outdoors), it's worth ordering it in water-resistant vinyl instead of paper.",
+          "At Yume these sell by piece count, not by sheet: you can order exactly the number of guests or tables your event has, without buying more than you need.",
+        ],
+      },
+      {
+        heading: "How to get a quote for yours",
+        body: [
+          "Send us the names, the date, and the style or colors you want (or your finished design, if you have one) along with the quantity you need, and we'll prepare a digital proof before printing. If your event already has invitations or a custom menu, let us know: we can match the sticker to the same design.",
+          "We produce in Guadalajara and ship anywhere in Mexico, so the same process applies no matter where your wedding, event, or party is.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
+  },
+  {
+    slug: BLOG_SLUG_EN["tatuajes-temporales-para-boda-eventos-y-fiestas"],
+    title: "Temporary Tattoos for Weddings, Events, and Parties: How to Use Them",
+    metaTitle: "Temporary Tattoos for Parties and Celebrations",
+    description:
+      "Temporary tattoos for weddings, events, and parties as a guest favor: quinceañeras, bachelorette parties, kids' parties, and themed celebrations. What we need to quote yours.",
+    category: "Guides",
+    publishedAt: "2026-09-23",
+    intro:
+      "Beyond brand activations (see also our guide to custom temporary tattoos for events and brands), temporary tattoos are an increasingly popular favor for personal celebrations: weddings, quinceañeras, bachelorette parties, and kids' parties. Unlike a sticker or a keepsake that stays tucked away, the guest wears it for the rest of the party.",
+    sections: [
+      {
+        heading: "Which celebrations request them most",
+        body: [
+          "The most common: bachelorette parties (with a phrase, date, or icon related to the bride-to-be), quinceañeras (with the honoree's name or the party's theme), weddings (the couple's initials or the date, as a detail at the welcome table), and kids' parties (characters or designs matching the party theme).",
+          "They work especially well as an activity for the youngest guests at a kids' party, or as a photogenic detail at bachelorette parties and quinceañeras.",
+        ],
+      },
+      {
+        heading: "What we need to quote yours",
+        body: [
+          "The design, name, or phrase you want (or a reference for the party theme if you don't have a design yet), the approximate size, and the quantity you need based on your guest count. Before producing, we send you a digital proof so you can approve how it'll look.",
+          "We produce in Guadalajara and ship anywhere in Mexico, so you can quote temporary tattoos for your wedding, event, or party no matter where the celebration is.",
+        ],
+      },
+      {
+        heading: "How to match them with the rest of your stationery",
+        body: [
+          "If you're already customizing invitations, a wedding menu, or stickers for the celebration, using the same design or color palette on the temporary tattoos makes it feel like part of the same event, not a separate product. Let us know if you already have other pieces in progress so we can match the design.",
+        ],
+      },
+    ],
+    relatedProductSlugs: [],
+    quoteMessage: "Hi, I'm interested in getting a quote for temporary tattoos for a wedding, event, or party.",
+  },
 ];
 
 export function getBlogPostEn(slug: string) {

@@ -779,6 +779,76 @@ export const blogPosts: BlogPost[] = [
     ],
     relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
   },
+  {
+    slug: "stickers-para-bodas-eventos-y-fiestas",
+    title: "Stickers para bodas, eventos y fiestas: ideas y cómo pedirlos",
+    metaTitle: "Stickers para bodas, eventos y fiestas",
+    description:
+      "Stickers para bodas, stickers para eventos y stickers para fiestas: para sellar bolsitas de regalo, decorar el detalle de la mesa o combinar con tu papelería. Qué formato pedir y cómo cotizar el tuyo.",
+    category: "Guías",
+    publishedAt: "2026-09-23",
+    intro:
+      "Un sticker con el nombre de los novios, la fecha del evento o el tema de la fiesta es uno de los detalles más baratos de personalizar una celebración: no reemplaza la invitación ni el menú, pero sí amarra visualmente todo lo demás. Esta guía cubre los usos más comunes de stickers para bodas, eventos y fiestas, y qué pedir según el tipo de celebración.",
+    sections: [
+      {
+        heading: "Los usos más comunes en una celebración",
+        body: [
+          "Los que más vemos: sellar bolsitas de dulces o regalos para los invitados, cerrar el sobre de las invitaciones, decorar el centro de mesa o el letrero de bienvenida, y pegar en botellas de agua o latas personalizadas para el brindis. En una boda o XV años suelen llevar las iniciales o el nombre de los festejados y la fecha; en una fiesta infantil o temática, el diseño o personaje del tema.",
+          "Si ya tienes invitaciones o un menú de boda personalizado, usar el mismo diseño en los stickers hace que todo el evento se vea como una sola pieza, no como elementos sueltos comprados por separado.",
+        ],
+      },
+      {
+        heading: "Qué formato pedir según el uso",
+        body: [
+          "Para bolsitas de regalo o sobres, un sticker circular u ovalado de 3 a 5 cm es el tamaño más común. Para botellas o latas, un formato rectangular o el troquelado exacto a la silueta de tu diseño se ve mejor en superficies curvas. Si el sticker va a estar en algo que se moja (hielera, botella, exterior), conviene pedirlo en vinil resistente al agua en vez de papel.",
+          "En Yume se venden por cantidad de piezas, no por planilla: puedes pedir exactamente el número de invitados o mesas que tiene tu evento, sin comprar de más.",
+        ],
+      },
+      {
+        heading: "Cómo cotizar el tuyo",
+        body: [
+          "Mándanos el nombre, la fecha y el estilo o color que quieres (o el diseño ya armado, si lo tienes) junto con la cantidad que necesitas, y te preparamos una prueba digital antes de imprimir. Si tu evento ya tiene invitaciones o un menú personalizado, cuéntanos: podemos alinear el sticker al mismo diseño.",
+          "Producimos en Guadalajara y enviamos a cualquier parte de México, así que aplica el mismo proceso sin importar dónde sea tu boda, evento o fiesta.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
+  },
+  {
+    slug: "tatuajes-temporales-para-boda-eventos-y-fiestas",
+    title: "Tatuajes temporales para boda, eventos y fiestas: cómo usarlos",
+    metaTitle: "Tatuajes temporales para fiestas y celebraciones",
+    description:
+      "Tatuajes temporales para boda, eventos y fiestas como detalle para los invitados: XV años, despedidas de soltera, fiestas infantiles y celebraciones temáticas. Qué necesitamos para cotizar los tuyos.",
+    category: "Guías",
+    publishedAt: "2026-09-23",
+    intro:
+      "Además de las activaciones de marca (ver también nuestra guía de tatuajes temporales personalizados para eventos y marcas), los tatuajes temporales son un detalle cada vez más pedido para celebraciones personales: bodas, XV años, despedidas de soltera y fiestas infantiles. A diferencia de un sticker o un recuerdo que se queda guardado, el invitado se lo lleva puesto el resto de la fiesta.",
+    sections: [
+      {
+        heading: "Para qué celebraciones se piden más",
+        body: [
+          "Los más comunes: despedidas de soltera (con una frase, fecha o ícono relacionado a la festejada), XV años (con el nombre o el tema de la fiesta), bodas (iniciales de los novios o la fecha, como detalle en la mesa de bienvenida) y fiestas infantiles (personajes o diseños del tema de la fiesta).",
+          "Funcionan especialmente bien como actividad para los invitados más pequeños en una fiesta infantil, o como detalle fotogénico en despedidas de soltera y XV años.",
+        ],
+      },
+      {
+        heading: "Qué necesitamos para cotizar el tuyo",
+        body: [
+          "El diseño, nombre o frase que quieres (o referencia del tema de la fiesta si aún no tienes diseño), el tamaño aproximado y la cantidad que necesitas según el número de invitados. Antes de producir te mandamos una prueba digital para que apruebes cómo se va a ver.",
+          "Producimos en Guadalajara y enviamos a cualquier parte de México, así que puedes cotizar tatuajes temporales para tu boda, evento o fiesta sin importar dónde sea la celebración.",
+        ],
+      },
+      {
+        heading: "Cómo combinarlos con el resto de tu papelería",
+        body: [
+          "Si ya estás personalizando invitaciones, menú de boda o stickers para la celebración, usar el mismo diseño o paleta de colores en los tatuajes temporales hace que se sienta parte del mismo festejo, no un producto aparte. Cuéntanos si ya tienes otras piezas en proceso para alinear el diseño.",
+        ],
+      },
+    ],
+    relatedProductSlugs: [],
+    quoteMessage: "Hola, me interesa cotizar tatuajes temporales para una boda, evento o fiesta.",
+  },
 ];
 
 export function getBlogPost(slug: string) {
