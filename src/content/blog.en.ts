@@ -760,8 +760,14 @@ export const blogPostsEn: BlogPost[] = [
     category: "Guides",
     publishedAt: "2026-09-23",
     intro:
-      "A sticker with the couple's names, the event date, or the party's theme is one of the cheapest ways to personalize a celebration: it doesn't replace the invitation or the menu, but it ties everything else together visually. This guide covers the most common uses for stickers at weddings, events, and parties, and what to order depending on the type of celebration.",
+      "Custom stickers are trending as a celebration detail: they've become a real hit at weddings, quinceañeras, and parties of every kind, sealing favor bags, decorating the table, or matched to the rest of the event's stationery. A sticker with the couple's names, the event date, or the party's theme is one of the cheapest ways to personalize a celebration: it doesn't replace the invitation or the menu, but it ties everything else together visually. This guide covers the most common uses for stickers at weddings, events, and parties, and what to order depending on the type of celebration.",
     sections: [
+      {
+        heading: "Why they've become so popular",
+        body: [
+          "It's a trend we see grow wedding after wedding, party after party: a small, inexpensive detail that still shows up in photos, on social media, and on every favor bag or bottle a guest takes home. Unlike a generic party favor, a custom sticker costs little per piece and works on almost any surface, making it an easy add regardless of budget or event size.",
+        ],
+      },
       {
         heading: "The most common uses at a celebration",
         body: [
@@ -795,8 +801,14 @@ export const blogPostsEn: BlogPost[] = [
     category: "Guides",
     publishedAt: "2026-09-23",
     intro:
-      "Beyond brand activations (see also our guide to custom temporary tattoos for events and brands), temporary tattoos are an increasingly popular favor for personal celebrations: weddings, quinceañeras, bachelorette parties, and kids' parties. Unlike a sticker or a keepsake that stays tucked away, the guest wears it for the rest of the party.",
+      "Temporary tattoos are trending as a party detail: they've become a real hit at weddings, quinceañeras, and celebrations of every kind, for the opposite reason a sticker or a keepsake works: the guest wears it for the rest of the event instead of tucking it away. Beyond brand activations (see also our guide to custom temporary tattoos for events and brands), this format is an increasingly popular favor for personal celebrations: weddings, quinceañeras, bachelorette parties, and kids' parties.",
     sections: [
+      {
+        heading: "Why they've become so popular at parties",
+        body: [
+          "More and more weddings and parties are building them into the guest experience itself, not just handing them out as a gift: they go on in the moment, stay visible for the rest of the celebration, and end up in the event photos. That mix of low cost and high visual payoff is exactly what's made them so popular at celebrations of every size.",
+        ],
+      },
       {
         heading: "Which celebrations request them most",
         body: [
