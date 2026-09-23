@@ -68,12 +68,24 @@ function JarOutline() {
 export function HeroJar() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [reduced, setReduced] = useState<boolean | null>(null);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     // Client-only OS/browser motion preference — not state derived from
     // props/render, so this doesn't fit the rule's target case.
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setReduced(window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+
+    // Below `sm` the jar sits mid-viewport, so a drag gesture started on
+    // its canvas gets captured by Matter's Mouse module (preventDefault on
+    // touchmove) instead of scrolling the page — users got stuck unable to
+    // scroll past it. Below this width the jar stays a passive "items
+    // falling in" animation: same physics/renderer, just no drag input.
+    const mq = window.matchMedia("(max-width: 639px)");
+    setIsMobile(mq.matches);
+    const onChange = (e: MediaQueryListEvent) => setIsMobile(e.matches);
+    mq.addEventListener("change", onChange);
+    return () => mq.removeEventListener("change", onChange);
   }, []);
 
   useEffect(() => {
@@ -128,20 +140,29 @@ export function HeroJar() {
       Body.setAngularVelocity(body, 0);
     }
 
-    const mouse = Mouse.create(render.canvas);
-    const mouseConstraint = MouseConstraint.create(engine, { mouse, constraint: { stiffness: 0.2, render: { visible: false } } });
-    render.mouse = mouse;
+    // On mobile the jar sits mid-viewport — a drag gesture on its canvas
+    // would get captured as a Matter interaction instead of a page scroll,
+    // leaving the user stuck. Skip Mouse/MouseConstraint entirely there:
+    // items still fall and settle under plain gravity, just not draggable.
+    const bodies: (Matter.Body | Matter.MouseConstraint)[] = [...walls, ...items];
+    if (!isMobile) {
+      const mouse = Mouse.create(render.canvas);
+      const mouseConstraint = MouseConstraint.create(engine, { mouse, constraint: { stiffness: 0.2, render: { visible: false } } });
+      render.mouse = mouse;
 
-    // @types/matter-js's IEvent doesn't declare the `body` property that
-    // Matter actually attaches to "enddrag" events at runtime.
-    Events.on(mouseConstraint, "enddrag", (event: Matter.IEvent<Matter.MouseConstraint>) => {
-      const body = (event as Matter.IEvent<Matter.MouseConstraint> & { body?: Matter.Body }).body;
-      if (!body) return;
-      const outOfJar = body.position.y < ESCAPE_Y || body.position.x < BODY_LEFT - 40 || body.position.x > BODY_RIGHT + 40;
-      if (outOfJar) respawn(body);
-    });
+      // @types/matter-js's IEvent doesn't declare the `body` property that
+      // Matter actually attaches to "enddrag" events at runtime.
+      Events.on(mouseConstraint, "enddrag", (event: Matter.IEvent<Matter.MouseConstraint>) => {
+        const body = (event as Matter.IEvent<Matter.MouseConstraint> & { body?: Matter.Body }).body;
+        if (!body) return;
+        const outOfJar = body.position.y < ESCAPE_Y || body.position.x < BODY_LEFT - 40 || body.position.x > BODY_RIGHT + 40;
+        if (outOfJar) respawn(body);
+      });
 
-    Composite.add(engine.world, [...walls, ...items, mouseConstraint]);
+      bodies.push(mouseConstraint);
+    }
+
+    Composite.add(engine.world, bodies);
 
     // Keep dropped items inside the visible canvas even if flung hard —
     // an invisible ceiling/side guard well outside the jar, not part of
@@ -166,12 +187,20 @@ export function HeroJar() {
       Engine.clear(engine);
       render.canvas.getContext("2d")?.clearRect(0, 0, WIDTH, HEIGHT);
     };
-  }, [reduced]);
+  }, [reduced, isMobile]);
 
   return (
     <div className="relative" style={{ width: WIDTH, height: HEIGHT }}>
       <JarOutline />
-      {reduced === false && <canvas ref={canvasRef} width={WIDTH} height={HEIGHT} className="relative cursor-grab active:cursor-grabbing" />}
+      {reduced === false && (
+        <canvas
+          ref={canvasRef}
+          width={WIDTH}
+          height={HEIGHT}
+          className={isMobile ? "relative" : "relative cursor-grab active:cursor-grabbing"}
+          style={isMobile ? { touchAction: "pan-y" } : undefined}
+        />
+      )}
       {reduced !== false && (
         // Reduced-motion / not-yet-known fallback: items pre-arranged at
         // rest, no simulation, so the hero never depends on JS physics
