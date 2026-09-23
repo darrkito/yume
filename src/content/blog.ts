@@ -66,26 +66,27 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "stickers-personalizados-para-negocios-guadalajara",
-    title: "Etiquetas personalizadas para tu negocio en Guadalajara: guía rápida",
-    metaTitle: "Etiquetas personalizadas para tu negocio en Guadalajara",
+    title: "Etiquetas personalizadas para tu negocio en Guadalajara (GDL): guía rápida",
+    metaTitle: "Etiquetas personalizadas en Guadalajara / GDL",
     description:
-      "Cómo usar etiquetas personalizadas si tienes una marca, un emprendimiento o un puesto en bazares de Guadalajara: qué formato pedir y qué archivo enviar para tu logo.",
+      "Cómo usar etiquetas personalizadas si tienes una marca, un emprendimiento o un puesto en bazares de Guadalajara (GDL): qué formato pedir y qué archivo enviar para tu logo.",
     category: "Guías",
     publishedAt: "2026-08-28",
+    modifiedAt: "2026-09-23",
     intro:
-      "En Guadalajara hay un movimiento fuerte de emprendimientos pequeños (marcas de repostería, ropa, velas, joyería, café) que venden en bazares, mercados sobre ruedas o directo por redes sociales. Una etiqueta con tu logo es de las formas más baratas de que tu marca se vea consistente en cada pedido que sale, sin necesitar empaque especial.",
+      "En Guadalajara (GDL) hay un movimiento fuerte de emprendimientos pequeños (marcas de repostería, ropa, velas, joyería, café) que venden en bazares, mercados sobre ruedas o directo por redes sociales. Una etiqueta con tu logo es de las formas más baratas de que tu marca se vea consistente en cada pedido que sale, sin necesitar empaque especial.",
     sections: [
       {
         heading: "Para qué sirven realmente",
         body: [
           "Los usos más comunes que vemos: sellar bolsas o cajas de empaque, pegar en el fondo de productos (velas, jabones, frascos), cerrar sobres de envíos, o simplemente regalarlas sueltas como detalle en el pedido: funcionan como una tarjeta de presentación pequeña que además decora.",
-          "Si vendes en bazares o mercados de Guadalajara, tener etiquetas con tu logo en cada bolsa de papel ayuda a que la gente te reconozca la próxima vez, sin gastar en empaque personalizado caro desde el arranque.",
+          "Si vendes en bazares o mercados de Guadalajara (GDL), tener etiquetas con tu logo en cada bolsa de papel ayuda a que la gente te reconozca la próxima vez, sin gastar en empaque personalizado caro desde el arranque.",
         ],
       },
       {
         heading: "Qué cantidad pedir",
         body: [
-          "Vendemos por cantidad de piezas, no por hoja: el mínimo de compra son 50 piezas por $100, y a partir de ahí cada 25 piezas extra tienen 20% de descuento: suficiente para ajustar el pedido al tamaño real de tu emprendimiento sin comprar de más.",
+          "Vendemos por cantidad de piezas, no por hoja: el mínimo de compra son 50 piezas por $100, y a partir de 100 piezas cada 25 piezas extra tienen 20% de descuento: suficiente para ajustar el pedido al tamaño real de tu emprendimiento sin comprar de más.",
           "Todas nuestras etiquetas son resistentes al agua, así que aguantan bien en empaques que se pueden mojar o manejar seguido (bolsas, botellas, envíos). Cuéntanos la forma o el tamaño que prefieres al cotizar, y te mandamos una prueba digital antes de imprimir.",
         ],
       },
@@ -137,18 +138,20 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "como-pedir-papeleria-personalizada-en-linea",
     title: "Cómo hacer un pedido de papelería personalizada en línea",
+    metaTitle: "Cómo cotizar y pedir papelería personalizada en línea",
     description:
-      "El proceso completo para pedir papelería personalizada en línea desde cualquier parte de México: qué información preparar antes de cotizar, cómo funciona la prueba digital y qué esperar entre que apruebas el diseño y recibes tu pedido.",
+      "Cómo cotizar papelería personalizada y pedirla en línea desde cualquier parte de México: qué información preparar, cómo funciona la prueba digital y qué esperar entre que apruebas el diseño y recibes tu pedido.",
     category: "Guías",
     publishedAt: "2026-08-31",
+    modifiedAt: "2026-09-23",
     intro:
-      "No necesitas visitar una imprenta física para tener papelería con tu marca: todo el proceso en Yume se hace en línea, desde Guadalajara y con envíos a cualquier ciudad de México. Esta guía explica paso a paso cómo cotizar y pedir, para que sepas qué preparar antes de escribirnos.",
+      "No necesitas visitar una imprenta física para tener papelería con tu marca: en Yume funcionamos como una imprenta online en Guadalajara, con todo el proceso a distancia y envíos a cualquier ciudad de México. Esta guía explica paso a paso cómo cotizar papelería personalizada y pedirla en línea, para que sepas qué preparar antes de escribirnos.",
     sections: [
       {
         heading: "El proceso paso a paso",
         body: [
           "1) Cotizas por WhatsApp o desde la tienda en línea, indicando qué producto necesitas y la cantidad. 2) Nos mandas tus datos o tu logo/diseño, según el producto. 3) Te enviamos una prueba digital para que revises que todo esté correcto. 4) Apruebas el diseño y hasta ese momento se manda a producción. 5) Recibes tu pedido por paquetería a la dirección que nos des, en cualquier parte de México.",
-          "El único paso presencial que existe es recibir el paquete: todo lo demás, incluida la aprobación del diseño, se hace a distancia por WhatsApp o correo.",
+          "El único paso presencial que existe es recibir el paquete: todo lo demás, incluida cotizar papelería personalizada y aprobar el diseño, se hace a distancia por WhatsApp o correo.",
         ],
       },
       {
@@ -161,8 +164,8 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Por qué no hace falta una imprenta física en Guadalajara",
         body: [
-          "Aunque producimos en Guadalajara, Jalisco, no operamos como una imprenta de mostrador: no necesitas ir a dejar un archivo en USB ni recoger tu pedido en persona. Todo el proceso, desde cotizar hasta aprobar el diseño final, pasa por WhatsApp o correo, así que el servicio funciona igual si estás en la ciudad o en cualquier otro estado de México.",
-          "Eso sí: si estás en la zona metropolitana de Guadalajara el tiempo de entrega suele ser un poco más corto por cercanía, aunque el proceso de cotización y aprobación es idéntico para todo el país.",
+          "Aunque producimos en Guadalajara, Jalisco, no operamos como una imprenta de mostrador: somos una imprenta online en Guadalajara, así que no necesitas ir a dejar un archivo en USB ni recoger tu pedido en persona. Todo el proceso, desde cotizar hasta aprobar el diseño final, pasa por WhatsApp o correo, así que el servicio funciona igual si estás en la ciudad o en cualquier otro estado de México.",
+          "Eso sí: si estás en la zona metropolitana de Guadalajara el tiempo de entrega suele ser un poco más corto por cercanía, aunque el proceso de cotización y aprobación es idéntico para todo el país: puedes pedir papelería en línea desde México sin importar en qué ciudad estés.",
         ],
       },
     ],
@@ -206,12 +209,14 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "tatuajes-temporales-personalizados-para-eventos",
     title: "Tatuajes temporales personalizados para eventos y marcas",
+    metaTitle: "Tatuajes temporales con logo para eventos",
     description:
-      "Para qué se usan los tatuajes temporales personalizados en eventos, activaciones de marca y celebraciones, y qué información necesitamos para cotizar los tuyos con tu diseño o logo.",
+      "Tatuajes temporales con logo para eventos, activaciones de marca y celebraciones: para qué se usan, qué información necesitamos para cotizar los tuyos y cómo pedir tatuajes temporales personalizados en México.",
     category: "Guías",
     publishedAt: "2026-08-31",
+    modifiedAt: "2026-09-23",
     intro:
-      "Un tatuaje temporal con tu logo o un diseño hecho para la ocasión es una forma efectiva y económica de dejar marca en un evento: literalmente. Funcionan tanto para activaciones de negocio como para celebraciones personales, y el proceso para pedirlos personalizados es tan sencillo como el de cualquier otro producto a la medida en Yume.",
+      "Un tatuaje temporal con tu logo o un diseño hecho para la ocasión es una forma efectiva y económica de dejar marca en un evento: literalmente. Los tatuajes temporales para eventos funcionan tanto para activaciones de negocio como para celebraciones personales, y el proceso para pedir tatuajes temporales personalizados en México es tan sencillo como el de cualquier otro producto a la medida en Yume.",
     sections: [
       {
         heading: "Para qué se usan realmente",
@@ -230,8 +235,8 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Por qué personalizarlos en vez de comprar genéricos",
         body: [
-          "Un tatuaje temporal genérico (una carita, una estrella, un diseño de catálogo) no comunica nada sobre tu marca o tu evento: se ve igual que el de cualquier otra fiesta o feria. Uno con tu logo, tus colores o el nombre del festejo hace que quien se lo pone quede asociado directamente con tu marca o tu evento el resto del día, que es justo el punto de usarlo.",
-          "Si tienes un evento o una activación en puerta y quieres cotizar tatuajes temporales con tu diseño, escríbenos directo por WhatsApp con los detalles.",
+          "Un tatuaje temporal genérico (una carita, una estrella, un diseño de catálogo) no comunica nada sobre tu marca o tu evento: se ve igual que el de cualquier otra fiesta o feria. Unos tatuajes temporales con logo, con tus colores o el nombre del festejo hacen que quien se los pone quede asociado directamente con tu marca o tu evento el resto del día, que es justo el punto de usarlos.",
+          "Producimos en Guadalajara y enviamos a cualquier parte de México, así que puedes cotizar tatuajes temporales personalizados sin importar en qué estado esté tu evento. Si tienes uno en puerta y quieres cotizar tatuajes temporales con tu diseño, escríbenos directo por WhatsApp con los detalles.",
         ],
       },
     ],
@@ -241,12 +246,14 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "como-pedir-invitaciones-personalizadas-para-eventos",
     title: "Cómo pedir invitaciones personalizadas para eventos",
+    metaTitle: "Invitaciones personalizadas para eventos en México",
     description:
-      "Qué información necesitas tener lista para cotizar invitaciones personalizadas para boda, XV años o un evento corporativo, y cómo funciona el proceso de diseño y aprobación antes de imprimir.",
+      "Papelería para eventos en Yume: qué información necesitas tener lista para cotizar invitaciones para boda en Guadalajara, XV años o un evento corporativo, y cómo funciona el proceso de diseño y aprobación antes de imprimir.",
     category: "Guías",
     publishedAt: "2026-08-31",
+    modifiedAt: "2026-09-23",
     intro:
-      "Ya sea una boda, unos XV años, un baby shower o un evento corporativo, la invitación suele ser lo primero que tus invitados ven del evento: vale la pena que se vea a la altura de lo que estás organizando. Así funciona el proceso para pedir las tuyas personalizadas en Yume.",
+      "Ya sea una boda, unos XV años, un baby shower o un evento corporativo, la invitación suele ser lo primero que tus invitados ven del evento: vale la pena que se vea a la altura de lo que estás organizando. La invitación es solo una pieza dentro de la papelería para eventos (junto con menús, tarjetas de mesa o agradecimientos), y así funciona el proceso para pedir invitaciones personalizadas en México desde Yume.",
     sections: [
       {
         heading: "Qué información necesitamos",
@@ -260,6 +267,12 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Con tus datos armamos una propuesta de diseño y te la mandamos como prueba digital. Puedes pedir ajustes antes de aprobarla: es más fácil corregir un color o un texto en esta etapa que después de que las invitaciones ya están impresas.",
           "Una vez que apruebas el diseño final, se manda a producción (si pediste impresas) o te entregamos el archivo final listo para enviar (si son digitales o ambas).",
+        ],
+      },
+      {
+        heading: "Invitaciones para boda en Guadalajara, envíos a todo México",
+        body: [
+          "Producimos en Guadalajara, así que si organizas una boda en la ciudad o la zona metropolitana el proceso es el mismo, con la ventaja de un tiempo de entrega un poco más corto por cercanía. Pero no hace falta estar en Jalisco: cotizamos y enviamos invitaciones personalizadas a cualquier estado de México, con el mismo proceso de diseño y aprobación de principio a fin.",
         ],
       },
       {
@@ -301,7 +314,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Cantidad y precio",
         body: [
-          "Los stickers de vinil se venden por cantidad de piezas, no por planilla: el mínimo son 40 piezas por $100, y cada 10 piezas extra tienen 20% de descuento: 50 piezas quedan en $120, 60 en $140.",
+          "Los stickers de vinil se venden por cantidad de piezas, no por planilla: el mínimo son 40 piezas por $100, y a partir de 100 piezas cada 10 piezas extra tienen 20% de descuento: 110 piezas quedan en $270, 120 en $290.",
           "Es el mismo vinil premium resistente al agua, al sol y a rayones que usamos para cualquier otro diseño personalizado, así que aguanta bien en botellas de agua, laptops o donde quieras pegarlo.",
         ],
       },
@@ -406,7 +419,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Los números",
         body: [
           "Entre las imprentas mexicanas de stickers personalizados que revisamos, el precio por pieza va de $1.83 a $11.00 MXN, con mínimos de compra que van de $319 a $550 MXN: en algunos casos el mínimo real solo se alcanza comprando varias planillas completas de una vez.",
-          "Yume: Etiquetas Logo Personalizado: de $2.00 a $1.80 por pieza, mínimo $100 (50 piezas). Yume: Stickers Vinil Impermeable: de $2.50 a $2.20 por pieza, mínimo $100 (40 piezas).",
+          "Yume: Etiquetas Logo Personalizado: de $2.00 a $1.73 por pieza, mínimo $100 (50 piezas). Yume: Stickers Vinil Impermeable: de $2.50 a $2.36 por pieza, mínimo $100 (40 piezas).",
         ],
       },
       {
@@ -660,6 +673,111 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
+  },
+  {
+    slug: "papeleria-personalizada-vs-plantillas-genericas",
+    title: "Papelería personalizada vs. plantillas genéricas: qué cambia realmente",
+    metaTitle: "Papelería personalizada vs. plantillas genéricas",
+    description:
+      "Diseño a medida vs. plantilla: qué pierde tu marca con una plantilla genérica y por qué conviene una imprenta personalizada en Guadalajara para tu papelería personalizada en México.",
+    category: "Guías",
+    publishedAt: "2026-09-23",
+    intro:
+      "Cuando cotizas papelería es fácil toparte con dos tipos de proveedor muy distintos: el que te vende una plantilla genérica ya lista, y el que diseña la pieza a la medida de tu marca. Los dos resuelven \"tener papelería impresa\", pero no resuelven lo mismo. Aquí está la diferencia real entre diseño a medida vs plantilla, y cuándo cada opción tiene sentido.",
+    sections: [
+      {
+        heading: "Qué es una plantilla genérica (y por qué es tan barata)",
+        body: [
+          "Una plantilla genérica es un molde de diseño ya hecho, donde solo se cambia un dato (tu nombre, tu logo pegado encima) sin tocar el resto de la composición: tipografía, colores y distribución los define el proveedor, no tu marca. Por eso es barata: el mismo molde se reutiliza para decenas de negocios distintos.",
+          "El problema no es que se vea mal, sino que no se ve tuyo: es común encontrarte con otro negocio usando exactamente la misma plantilla, solo con el nombre cambiado.",
+        ],
+      },
+      {
+        heading: "Diseño a medida vs. plantilla: qué cambia para tu marca",
+        body: [
+          "Con diseño a medida, la pieza se arma desde cero con tus colores, tu tipografía (si ya tienes una) y la información real de tu negocio o consultorio, no con un molde ajeno. Eso importa más de lo que parece en papelería personalizada: es la pieza que tu cliente o paciente tiene literalmente en la mano, así que comunica tanto como tu logo en la fachada.",
+          "La otra diferencia práctica es el proceso: con una plantilla genérica normalmente eliges de un catálogo cerrado; con diseño a medida, te mandamos una prueba digital del diseño final antes de imprimir, para que apruebes (o pidas ajustes) antes de que se produzca una sola pieza.",
+        ],
+      },
+      {
+        heading: "Por qué elegir una imprenta personalizada en Guadalajara",
+        body: [
+          "En Yume operamos como una imprenta personalizada en Guadalajara, no como una imprenta de plantillas: cada recetario médico, cada etiqueta o cada pieza de papelería personalizada en México que producimos se diseña con los datos reales de quien la pide, no con un molde reciclado.",
+          "Si ya tienes un logo o una identidad de marca, la adaptamos directo a la pieza; si no la tienes, la construimos contigo antes de llegar a la prueba digital. En ambos casos, lo que recibes es una pieza que es tuya, no una plantilla con tu nombre encima.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["recetario-medico-personalizado", "stickers-logo-personalizado"],
+  },
+  {
+    slug: "stickers-para-empaques-de-negocio",
+    title: "Guía de stickers para empaques de negocio: cómo usarlos y qué pedir",
+    metaTitle: "Stickers para empaques de negocio",
+    description:
+      "Cómo usar stickers para empaque en tu negocio: sellar bolsas y cajas, etiquetar productos y qué pedir si necesitas etiquetas personalizadas para tu negocio o stickers con logo en Guadalajara.",
+    category: "Guías",
+    publishedAt: "2026-09-23",
+    intro:
+      "El empaque es uno de los puntos de contacto más baratos de mejorar en un negocio: no necesitas cambiar tu caja o tu bolsa, basta con cerrarla o decorarla con un sticker que lleve tu logo. Esta guía cubre los usos más comunes de stickers para empaque y qué pedir según el tipo de empaque que uses.",
+    sections: [
+      {
+        heading: "Los usos más comunes de stickers para empaque",
+        body: [
+          "Los que más vemos: sellar la solapa de una bolsa de papel o kraft, cerrar una caja de cartón, etiquetar el fondo o la tapa de un frasco, o ir pegado directo en el producto (velas, jabones, cosméticos). En todos los casos, el sticker cumple dos funciones a la vez: cierra el empaque y lo identifica como tuyo.",
+          "Si tu empaque se transporta o se puede mojar (envíos, productos refrigerados, bebidas), conviene usar un sticker resistente al agua en vez de una etiqueta de papel común, que se despega o se corre con la humedad.",
+        ],
+      },
+      {
+        heading: "Etiquetas personalizadas para negocio: qué formato pedir",
+        body: [
+          "Para empaque, lo más común es un sticker circular o cuadrado de 3 a 5 cm con el logo centrado, pensado para verse bien en la solapa de una bolsa o el centro de una caja. Si tu empaque es una botella o un frasco, un formato ovalado o rectangular suele ajustarse mejor a la curvatura.",
+          "En Yume vendemos las etiquetas personalizadas por cantidad de piezas, no por hoja: puedes pedir la cantidad exacta que tu negocio necesita en un momento dado, sin comprar de más solo para llenar una planilla completa.",
+        ],
+      },
+      {
+        heading: "Stickers con logo en Guadalajara: cómo cotizar el tuyo",
+        body: [
+          "Si tienes tu logo en PNG, PDF, AI o SVG con fondo transparente, lo puedes mandar directo por WhatsApp junto con la cantidad y el tamaño que buscas, y te preparamos una prueba digital antes de imprimir. Si todavía no tienes un logo definido, también podemos ayudarte a construir uno simple para arrancar.",
+          "Producimos en Guadalajara y enviamos a cualquier parte de México, así que el mismo proceso aplica sin importar si tu negocio vende en bazares locales o hace envíos a otros estados.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
+  },
+  {
+    slug: "stickers-para-marca-pequena-vs-grande",
+    title: "Mejores stickers para marca pequeña vs grande: qué pedir según tu tamaño",
+    metaTitle: "Stickers para marca pequeña vs grande",
+    description:
+      "Stickers económicos en México para un emprendimiento que recién arranca, y etiquetas para emprendedores que ya venden en volumen: cómo elegir la cantidad correcta según el tamaño real de tu negocio.",
+    category: "Guías",
+    publishedAt: "2026-09-23",
+    intro:
+      "Un negocio que recién arranca y una marca que ya vende en volumen no necesitan la misma cantidad de stickers, pero muchas imprentas les cobran como si fuera lo mismo: piden el mismo mínimo alto sin importar qué tan chico o grande sea el pedido real. Aquí está cómo elegir entre stickers para pequeño negocio y pedidos más grandes, y por qué el precio no debería ser el mismo para los dos.",
+    sections: [
+      {
+        heading: "Si tu marca es pequeña: entra sin comprometerte a un pedido grande",
+        body: [
+          "Si apenas estás probando tu marca o vendes en bazares de forma ocasional, no tiene sentido comprar 500 piezas de una sola vez: es dinero inmovilizado en inventario que a lo mejor tarda meses en usarse. Por eso vendemos por cantidad de piezas y no por planilla completa: el mínimo son 50 piezas por $100 en Etiquetas Logo Personalizado, o 40 piezas por $100 en Stickers Vinil Impermeable.",
+          "Son de los stickers más económicos en México para arrancar: puedes probar tu diseño, ver cómo reacciona la gente y ajustar antes de comprometerte a un volumen mayor.",
+        ],
+      },
+      {
+        heading: "Si tu marca ya vende en volumen: el precio por pieza baja",
+        body: [
+          "Cuando tu negocio ya tiene ventas constantes, comprar de más sí conviene: a partir de 100 piezas, cada bloque extra tiene 20% de descuento, así que el precio por pieza baja mientras más pides. Es la misma lógica de etiquetas para emprendedores, solo que aplicada a un volumen mayor: pagas menos por pieza sin cambiar de proveedor ni de proceso.",
+          "No hay un tope fijo en el catálogo: si necesitas un volumen mayor al que muestra el selector de cantidad, cotiza directo por WhatsApp y ajustamos el pedido a tu volumen real.",
+        ],
+      },
+      {
+        heading: "Cómo elegir la cantidad correcta para tu etapa",
+        body: [
+          "Una guía simple: si todavía no sabes cuánto vas a vender al mes, empieza con el mínimo (50 o 40 piezas) y repite el pedido conforme se agote. Si ya tienes un ritmo de ventas conocido, calcula 2-3 meses de inventario y pide directo en el rango donde el descuento por volumen ya aplica (100 piezas o más).",
+          "En ambos casos el proceso es idéntico: mandas tu logo, te mandamos una prueba digital, apruebas y se produce. Lo único que cambia es la cantidad que eliges.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
   },
 ];
 

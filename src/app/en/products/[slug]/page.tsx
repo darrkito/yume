@@ -10,6 +10,7 @@ import { ProductPurchase } from "@/components/ProductPurchase";
 import { LogoUploadNote } from "@/components/LogoUploadNote";
 import { InfiniteGalleryStrip } from "@/components/InfiniteGalleryStrip";
 import { RelatedProducts } from "@/components/RelatedProducts";
+import { RelatedGuides } from "@/components/RelatedGuides";
 import { FaqQuestion } from "@/components/FaqAccordion";
 import { getGalleryItemsEn } from "@/content/gallery.en";
 import { hreflangFor, PRODUCT_SLUG_EN, PRODUCT_SLUG_ES } from "@/lib/i18n";
@@ -153,6 +154,8 @@ export default async function ProductPageEn({ params }: { params: Promise<{ slug
           viewAllHref="/en/gallery"
         />
       )}
+
+      <RelatedGuides productSlug={product.slug} lang="en" />
 
       <RelatedProducts excludeSlugs={[product.slug]} lang="en" />
 

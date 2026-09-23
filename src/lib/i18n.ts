@@ -33,6 +33,9 @@ export const BLOG_SLUG_EN: Record<string, string> = {
   "como-conseguir-mas-resenas-de-google-nfc-qr": "how-to-get-more-google-reviews-nfc-qr",
   "placa-nfc-vs-codigo-qr-impreso-resenas": "nfc-plate-vs-printed-qr-code-for-reviews",
   "como-usar-placa-resenas-google-yume": "how-to-use-your-yume-google-review-plate",
+  "papeleria-personalizada-vs-plantillas-genericas": "custom-stationery-vs-generic-templates",
+  "stickers-para-empaques-de-negocio": "stickers-for-business-packaging",
+  "stickers-para-marca-pequena-vs-grande": "stickers-for-small-vs-large-brands",
 };
 
 export const PRODUCT_SLUG_ES: Record<string, string> = Object.fromEntries(

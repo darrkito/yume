@@ -78,19 +78,20 @@ export const productsEn: Record<string, ProductTranslation> = {
     specs: [
       { label: "Minimum order", value: "50 pieces" },
       { label: "Base price", value: "$100 (50 pieces)" },
-      { label: "Extra pieces", value: "+25 pieces = +$40 (20% discount)" },
+      { label: "Volume discount", value: "From 100 pieces on: +25 pieces = +$40 (20% discount)" },
       { label: "Customization", value: "Your logo or design" },
       { label: "Durability", value: "Water-resistant" },
       { label: "Production", value: "Made to order" },
     ],
     description:
-      "Custom stickers with your logo or design, water-resistant. Sold by piece count, not by sheet: the first 50 pieces cost $100 and, from there, every extra 25 pieces get a 20% discount ($40 instead of $50). Send us your image (or the design you'd like turned into a sticker) and we'll send a digital proof before printing.",
+      "Custom stickers with your logo or design, water-resistant. Sold by piece count, not by sheet: starting at 50 pieces at $2.00 each ($100), no discount until you reach 100 pieces ($200). From there, every extra 25 pieces get a 20% discount ($40 instead of $50). Send us your image (or the design you'd like turned into a sticker) and we'll send a digital proof before printing.",
     metaDescription:
-      "Custom stickers with your logo, water-resistant. Starting at $100 for 50 pieces, with volume discounts. Digital proof before printing.",
+      "Custom stickers with your logo, water-resistant. Starting at $100 for 50 pieces, with volume discounts from 100 pieces on. Digital proof before printing.",
     details: [
       "Sold by piece count, 50-piece minimum",
-      "First 50 pieces: $100",
-      "Every extra 25 pieces: +$40 (20% discount on those pieces)",
+      "First 50 pieces: $100 ($2.00/piece)",
+      "No discount until you reach 100 pieces ($200)",
+      "From 100 pieces on, every extra 25: +$40 (20% discount on those pieces)",
       "Water-resistant",
       "We print your logo or the design you send us",
       "Digital proof before printing",
@@ -112,7 +113,7 @@ export const productsEn: Record<string, ProductTranslation> = {
       },
       {
         q: "What's the price of the stickers?",
-        a: "The first 50 pieces cost $100. From there, every extra 25 pieces get a 20% discount and cost $40 instead of $50: for example, 75 pieces is $140 and 100 pieces is $180.",
+        a: "The first 50 pieces cost $100 ($2.00/piece), with no discount until you reach 100 pieces ($200). From there, every extra 25 pieces get a 20% discount and cost $40 instead of $50: for example, 125 pieces is $240 and 150 pieces is $280.",
       },
       {
         q: "Are the stickers water-resistant?",
@@ -130,20 +131,21 @@ export const productsEn: Record<string, ProductTranslation> = {
     specs: [
       { label: "Minimum order", value: "40 pieces" },
       { label: "Base price", value: "$100 (40 pieces)" },
-      { label: "Extra pieces", value: "+10 pieces = +$20 (20% discount)" },
+      { label: "Volume discount", value: "From 100 pieces on: +10 pieces = +$20 (20% discount)" },
       { label: "Material", value: "Premium vinyl, die-cut" },
       { label: "Durability", value: "Water, sun, and scratch resistant" },
       { label: "Customization", value: "Your design, character, or photo" },
     ],
     description:
-      "Die-cut stickers on premium vinyl, resistant to water, sun, and scratches: for any design, character, or photo you want turned into a sticker, not just logos. Sold by piece count, not by sheet: the first 40 pieces cost $100 and, from there, every extra 10 pieces get a 20% discount ($20 instead of $25). Send us your image or design and we'll send a digital proof before printing.",
+      "Die-cut stickers on premium vinyl, resistant to water, sun, and scratches: for any design, character, or photo you want turned into a sticker, not just logos. Sold by piece count, not by sheet: starting at 40 pieces at $2.50 each ($100), no discount until you reach 100 pieces ($250). From there, every extra 10 pieces get a 20% discount ($20 instead of $25). Send us your image or design and we'll send a digital proof before printing.",
     metaDescription:
-      "Custom vinyl stickers, resistant to water, sun, and scratches. Any design, character, or photo. Starting at $100 for 40 pieces, with volume discounts.",
+      "Custom vinyl stickers, resistant to water, sun, and scratches. Any design, character, or photo. Starting at $100 for 40 pieces, with volume discounts from 100 pieces on.",
     details: [
       "Premium vinyl, die-cut to the shape of your design",
       "Sold by piece count, 40-piece minimum",
-      "First 40 pieces: $100",
-      "Every extra 10 pieces: +$20 (20% discount on those pieces)",
+      "First 40 pieces: $100 ($2.50/piece)",
+      "No discount until you reach 100 pieces ($250)",
+      "From 100 pieces on, every extra 10: +$20 (20% discount on those pieces)",
       "Water, sun, and scratch resistant",
       "Great for your favorite characters, pets, photos, or any design",
       "Digital proof before printing",
@@ -169,7 +171,7 @@ export const productsEn: Record<string, ProductTranslation> = {
       },
       {
         q: "What's the price of the vinyl stickers?",
-        a: "The first 40 pieces cost $100. From there, every extra 10 pieces get a 20% discount and cost $20 instead of $25: for example, 50 pieces is $120 and 60 pieces is $140.",
+        a: "The first 40 pieces cost $100 ($2.50/piece), with no discount until you reach 100 pieces ($250). From there, every extra 10 pieces get a 20% discount and cost $20 instead of $25: for example, 110 pieces is $270 and 120 pieces is $290.",
       },
       {
         q: "Is the vinyl water and sun resistant?",

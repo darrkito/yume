@@ -58,7 +58,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "What quantity to order",
         body: [
-          "We sell by piece count, not by sheet: the minimum order is 50 pieces for $100, and from there every extra 25 pieces get a 20% discount: enough to match the order to your business's actual size without buying more than you need.",
+          "We sell by piece count, not by sheet: the minimum order is 50 pieces for $100, and from 100 pieces on every extra 25 pieces get a 20% discount: enough to match the order to your business's actual size without buying more than you need.",
           "All of our stickers are water-resistant, so they hold up well on packaging that gets wet or handled often (bags, bottles, shipments). Let us know the shape or size you prefer when requesting a quote, and we'll send you a digital proof before printing.",
         ],
       },
@@ -110,18 +110,20 @@ export const blogPostsEn: BlogPost[] = [
   {
     slug: BLOG_SLUG_EN["como-pedir-papeleria-personalizada-en-linea"],
     title: "How to Order Custom Stationery Online",
+    metaTitle: "How to Quote and Order Custom Stationery Online",
     description:
-      "The full process for ordering custom stationery online from anywhere in Mexico: what information to prepare before requesting a quote, how the digital proof works, and what to expect between approving the design and receiving your order.",
+      "How to quote custom stationery online and order it from anywhere in Mexico: what information to prepare, how the digital proof works, and what to expect between approving the design and receiving your order.",
     category: "Guides",
     publishedAt: "2026-08-31",
+    modifiedAt: "2026-09-23",
     intro:
-      "You don't need to visit a physical print shop to get stationery with your brand on it: the whole process at Yume happens online, from Guadalajara, with shipping to any city in Mexico. This guide walks through how to quote and order step by step, so you know what to prepare before reaching out.",
+      "You don't need to visit a physical print shop to get stationery with your brand on it: Yume is an online print shop based in Guadalajara, with the whole process handled remotely and shipping to any city in Mexico. This guide walks through how to quote custom stationery online and order it step by step, so you know what to prepare before reaching out.",
     sections: [
       {
         heading: "The process, step by step",
         body: [
           "1) Request a quote via WhatsApp or from the online shop, telling us which product and quantity you need. 2) Send us your details or your logo/design, depending on the product. 3) We send you a digital proof so you can check everything is correct. 4) You approve the design, and only then does it go to production. 5) You receive your order by courier at the address you give us, anywhere in Mexico.",
-          "The only in-person step in the whole process is receiving the package: everything else, including design approval, happens remotely over WhatsApp or email.",
+          "The only in-person step in the whole process is receiving the package: everything else, including requesting a quote and design approval, happens remotely over WhatsApp or email.",
         ],
       },
       {
@@ -134,8 +136,8 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "Why you don't need a physical print shop in Guadalajara",
         body: [
-          "Although we produce in Guadalajara, Jalisco, we don't operate like a walk-in print shop: you don't need to drop off a USB drive or pick up your order in person. The whole process, from quoting to approving the final design, happens over WhatsApp or email, so the service works the same whether you're in the city or in any other state in Mexico.",
-          "That said, if you're in the Guadalajara metro area, turnaround tends to be a bit faster simply due to proximity, though the quoting and approval process is identical for the whole country.",
+          "Although we produce in Guadalajara, Jalisco, we don't operate like a walk-in print shop: we're an online print shop, so you don't need to drop off a USB drive or pick up your order in person. The whole process, from quoting to approving the final design, happens over WhatsApp or email, so the service works the same whether you're in the city or in any other state in Mexico.",
+          "That said, if you're in the Guadalajara metro area, turnaround tends to be a bit faster simply due to proximity, though the process to order stationery online in Mexico is identical for the whole country.",
         ],
       },
     ],
@@ -179,12 +181,14 @@ export const blogPostsEn: BlogPost[] = [
   {
     slug: BLOG_SLUG_EN["tatuajes-temporales-personalizados-para-eventos"],
     title: "Custom Temporary Tattoos for Events and Brands",
+    metaTitle: "Temporary Tattoos with Your Logo for Events",
     description:
-      "What custom temporary tattoos are used for at events, brand activations, and celebrations, and what we need to quote yours with your own design or logo.",
+      "Temporary tattoos with your logo for events, brand activations, and celebrations: what they're used for, what we need to quote yours, and how to order custom temporary tattoos in Mexico.",
     category: "Guides",
     publishedAt: "2026-08-31",
+    modifiedAt: "2026-09-23",
     intro:
-      "A temporary tattoo with your logo or a design made for the occasion is an effective, affordable way to leave a mark at an event: literally. They work just as well for brand activations as for personal celebrations, and ordering a custom batch is as simple as any other made-to-order product at Yume.",
+      "A temporary tattoo with your logo or a design made for the occasion is an effective, affordable way to leave a mark at an event: literally. Temporary tattoos for events work just as well for brand activations as for personal celebrations, and ordering custom temporary tattoos in Mexico is as simple as any other made-to-order product at Yume.",
     sections: [
       {
         heading: "What they're actually used for",
@@ -203,8 +207,8 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "Why go custom instead of generic",
         body: [
-          "A generic temporary tattoo (a smiley face, a star, a catalog design) doesn't communicate anything about your brand or your event: it looks the same as the one at any other party or fair. One with your logo, your colors, or the name of the celebration means whoever wears it stays directly associated with your brand or event for the rest of the day: which is exactly the point of using one.",
-          "If you have an event or activation coming up and want to quote custom temporary tattoos with your own design, message us directly on WhatsApp with the details.",
+          "A generic temporary tattoo (a smiley face, a star, a catalog design) doesn't communicate anything about your brand or your event: it looks the same as the one at any other party or fair. Temporary tattoos with your logo, your colors, or the name of the celebration mean whoever wears them stays directly associated with your brand or event for the rest of the day: which is exactly the point of using one.",
+          "We produce in Guadalajara and ship anywhere in Mexico, so you can order custom temporary tattoos no matter what state your event is in. If you have an event or activation coming up and want to quote custom temporary tattoos with your own design, message us directly on WhatsApp with the details.",
         ],
       },
     ],
@@ -214,12 +218,14 @@ export const blogPostsEn: BlogPost[] = [
   {
     slug: BLOG_SLUG_EN["como-pedir-invitaciones-personalizadas-para-eventos"],
     title: "How to Order Custom Event Invitations",
+    metaTitle: "Custom Event Stationery in Mexico",
     description:
-      "What information you need ready to quote custom invitations for a wedding, quinceañera, or corporate event, and how the design and approval process works before printing.",
+      "Event stationery at Yume: what information you need ready to quote custom wedding invitations, a quinceañera, or a corporate event, and how the design and approval process works before printing.",
     category: "Guides",
     publishedAt: "2026-08-31",
+    modifiedAt: "2026-09-23",
     intro:
-      "Whether it's a wedding, a quinceañera, a baby shower, or a corporate event, the invitation is usually the first thing your guests see of the event: it's worth having it match what you're putting together. Here's how the process works to order custom ones at Yume.",
+      "Whether it's a wedding, a quinceañera, a baby shower, or a corporate event, the invitation is usually the first thing your guests see of the event: it's worth having it match what you're putting together. The invitation is just one piece of your event stationery (along with menus, place cards, or thank-you cards), and here's how the process works to order custom event invitations from Yume.",
     sections: [
       {
         heading: "What information we need",
@@ -233,6 +239,12 @@ export const blogPostsEn: BlogPost[] = [
         body: [
           "With your details, we put together a design proposal and send it to you as a digital proof. You can request adjustments before approving it: it's much easier to fix a color or a line of text at this stage than after the invitations are already printed.",
           "Once you approve the final design, it goes to production (if you ordered printed ones) or we deliver the final file ready to send (if it's digital, or both).",
+        ],
+      },
+      {
+        heading: "Wedding invitations in Guadalajara, shipping across Mexico",
+        body: [
+          "We produce in Guadalajara, so if you're planning a wedding in the city or metro area the process is the same, with the advantage of a slightly faster turnaround thanks to proximity. But you don't need to be in Jalisco: we quote and ship custom invitations to any state in Mexico, with the same design and approval process from start to finish.",
         ],
       },
       {
@@ -274,7 +286,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "Quantity and price",
         body: [
-          "Vinyl stickers are sold by piece count, not by sheet: the minimum is 40 pieces for $100, and every extra 10 pieces get a 20% discount: 50 pieces come out to $120, 60 to $140.",
+          "Vinyl stickers are sold by piece count, not by sheet: the minimum is 40 pieces for $100, and from 100 pieces on every extra 10 pieces get a 20% discount: 110 pieces come out to $270, 120 to $290.",
           "It's the same premium vinyl, resistant to water, sun, and scratches, that we use for any other custom design, so it holds up well on water bottles, laptops, or wherever you want to stick it.",
         ],
       },
@@ -379,7 +391,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "The numbers",
         body: [
           "Among the Mexican custom-sticker print shops we reviewed, per-piece price ranges from $1.83 to $11.00 MXN, with minimum orders ranging from $319 to $550 MXN: in some cases the real minimum is only reached by buying several full sheets at once.",
-          "Yume (Custom Logo Stickers: $2.00 to $1.80 per piece, minimum $100 (50 pieces). Yume) Waterproof Vinyl Stickers: $2.50 to $2.20 per piece, minimum $100 (40 pieces).",
+          "Yume (Custom Logo Stickers: $2.00 to $1.73 per piece, minimum $100 (50 pieces). Yume) Waterproof Vinyl Stickers: $2.50 to $2.36 per piece, minimum $100 (40 pieces).",
         ],
       },
       {
@@ -633,6 +645,111 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
+  },
+  {
+    slug: BLOG_SLUG_EN["papeleria-personalizada-vs-plantillas-genericas"],
+    title: "Custom Stationery vs. Generic Templates: What Actually Changes",
+    metaTitle: "Custom Stationery vs. Generic Templates",
+    description:
+      "Custom design vs. template: what your brand loses with a generic template and why a custom print shop in Guadalajara is worth it for your custom stationery in Mexico.",
+    category: "Guides",
+    publishedAt: "2026-09-23",
+    intro:
+      "When you're quoting stationery, it's easy to run into two very different kinds of supplier: one who sells you a generic template already made, and one who designs the piece around your brand from scratch. Both solve \"having printed stationery,\" but they don't solve the same problem. Here's the real difference between custom design and a template, and when each one makes sense.",
+    sections: [
+      {
+        heading: "What a generic template is (and why it's so cheap)",
+        body: [
+          "A generic template is a ready-made design mold where only one detail changes (your name, your logo dropped on top) without touching the rest of the layout: the print shop decides the typography, colors, and composition, not your brand. That's why it's cheap: the same mold gets reused across dozens of different businesses.",
+          "The problem isn't that it looks bad, it's that it doesn't look like you: it's common to run into another business using the exact same template, just with the name swapped.",
+        ],
+      },
+      {
+        heading: "Custom design vs. template: what changes for your brand",
+        body: [
+          "With custom design, the piece is built from scratch with your colors, your typography (if you already have one), and your business's or practice's real information, not someone else's mold. That matters more than it seems for custom stationery: it's the piece your customer or patient literally holds in their hand, so it communicates as much as your logo on your storefront.",
+          "The other practical difference is the process: with a generic template you usually pick from a closed catalog; with custom design, we send you a digital proof of the final design before printing, so you approve it (or ask for changes) before a single piece goes into production.",
+        ],
+      },
+      {
+        heading: "Why choose a custom print shop in Guadalajara",
+        body: [
+          "At Yume we operate as a custom print shop in Guadalajara, not a template shop: every prescription pad, every sticker, and every piece of custom stationery in Mexico we produce is designed around the real details of whoever ordered it, not a recycled mold.",
+          "If you already have a logo or brand identity, we adapt it directly into the piece; if you don't, we build it with you before reaching the digital proof stage. Either way, what you get is a piece that's actually yours, not a template with your name stamped on it.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["recetario-medico-personalizado", "stickers-logo-personalizado"],
+  },
+  {
+    slug: BLOG_SLUG_EN["stickers-para-empaques-de-negocio"],
+    title: "Guide to Stickers for Business Packaging: How to Use Them and What to Order",
+    metaTitle: "Stickers for Business Packaging",
+    description:
+      "How to use stickers for product packaging: sealing bags and boxes, labeling products, and what to order if you need custom labels for your business or stickers with your logo in Guadalajara.",
+    category: "Guides",
+    publishedAt: "2026-09-23",
+    intro:
+      "Packaging is one of the cheapest touchpoints to upgrade in a business: you don't need to change your box or bag, just seal or decorate it with a sticker carrying your logo. This guide covers the most common uses for packaging stickers and what to order depending on the type of packaging you use.",
+    sections: [
+      {
+        heading: "The most common uses for packaging stickers",
+        body: [
+          "The ones we see most: sealing the flap of a paper or kraft bag, closing a cardboard box, labeling the bottom or lid of a jar, or sticking directly onto the product (candles, soaps, cosmetics). In every case, the sticker does two jobs at once: it closes the packaging and marks it as yours.",
+          "If your packaging travels or can get wet (shipments, refrigerated products, drinks), it's worth using a water-resistant sticker instead of a regular paper label, which peels or runs with moisture.",
+        ],
+      },
+      {
+        heading: "Custom labels for your business: what format to order",
+        body: [
+          "For packaging, the most common choice is a round or square sticker, 3 to 5 cm, with the logo centered, sized to look good on a bag flap or the center of a box. If your packaging is a bottle or jar, an oval or rectangular format usually fits the curve better.",
+          "At Yume we sell custom labels by piece count, not by sheet: you can order the exact quantity your business needs at a given moment, without buying more just to fill a full sheet.",
+        ],
+      },
+      {
+        heading: "Stickers with your logo in Guadalajara: how to get a quote",
+        body: [
+          "If you have your logo as a PNG, PDF, AI, or SVG with a transparent background, you can send it directly over WhatsApp along with the quantity and size you're after, and we'll prepare a digital proof before printing. If you don't have a finished logo yet, we can also help you put together a simple one to start with.",
+          "We produce in Guadalajara and ship anywhere in Mexico, so the same process applies whether your business sells at local markets or ships to other states.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
+  },
+  {
+    slug: BLOG_SLUG_EN["stickers-para-marca-pequena-vs-grande"],
+    title: "Best Stickers for Small vs. Large Brands: What to Order Based on Your Size",
+    metaTitle: "Stickers for Small vs. Large Brands",
+    description:
+      "Affordable stickers in Mexico for a small business just starting out, and custom labels for growing brands ordering in volume: how to pick the right quantity for your actual size.",
+    category: "Guides",
+    publishedAt: "2026-09-23",
+    intro:
+      "A business that's just getting started and a brand already selling in volume don't need the same number of stickers, but a lot of print shops charge them the same way: the same high minimum no matter how small or large the real order is. Here's how to choose between stickers for a small business and larger orders, and why the price shouldn't be the same for both.",
+    sections: [
+      {
+        heading: "If your brand is small: get in without committing to a big order",
+        body: [
+          "If you're just testing your brand or sell at local markets occasionally, buying 500 pieces at once doesn't make sense: it's money tied up in inventory that might take months to use. That's why we sell by piece count instead of full sheets: the minimum is 50 pieces for $100 on Custom Logo Stickers, or 40 pieces for $100 on Waterproof Vinyl Stickers.",
+          "These are some of the most affordable stickers in Mexico to get started with: you can test your design, see how people react, and adjust before committing to a bigger volume.",
+        ],
+      },
+      {
+        heading: "If your brand already sells in volume: the per-piece price drops",
+        body: [
+          "Once your business has steady sales, buying more makes sense: from 100 pieces on, every extra block gets a 20% discount, so the per-piece price drops the more you order. It's the same logic as custom labels for a growing business, just applied at a larger scale: you pay less per piece without switching provider or process.",
+          "There's no hard cap in the catalog: if you need a larger volume than the quantity selector shows, request a quote directly over WhatsApp and we'll match the order to your real volume.",
+        ],
+      },
+      {
+        heading: "How to pick the right quantity for your stage",
+        body: [
+          "A simple guide: if you don't yet know how much you'll sell per month, start with the minimum (50 or 40 pieces) and reorder as it runs out. If you already have a known sales pace, calculate 2-3 months of inventory and order directly in the range where the volume discount already applies (100 pieces or more).",
+          "The process is identical either way: you send your logo, we send you a digital proof, you approve it, and it gets produced. The only thing that changes is the quantity you pick.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
   },
 ];
 

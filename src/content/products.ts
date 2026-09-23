@@ -46,38 +46,70 @@ export interface Product {
   isNew?: boolean;
 }
 
-// Stickers pricing: 50 piezas = $100 (base rate $2.00/pieza). From there,
-// each extra 25-pieza block costs $40 instead of $50: a 20% discount that
-// applies only to the extra piezas beyond the first 50. Generates the
-// selectable quantities: 50→$100, 75→$140, 100→$180, ... up to 300→$500.
+// Builds quantity-tiered variants priced at a flat per-pieza rate up to
+// `discountQty`, then a discounted per-block price for every step beyond
+// that (e.g. 20% off). Minimum order stays `baseQty`; the discount just
+// doesn't kick in until the quantity reaches `discountQty`.
+function buildTieredVariants(opts: {
+  baseQty: number;
+  rate: number;
+  stepQty: number;
+  discountQty: number;
+  discountedStepPrice: number;
+  maxSteps: number;
+}): ProductVariant[] {
+  const { baseQty, rate, stepQty, discountQty, discountedStepPrice, maxSteps } = opts;
+  return Array.from({ length: maxSteps + 1 }, (_, step) => {
+    const qty = baseQty + step * stepQty;
+    const price =
+      qty <= discountQty
+        ? qty * rate
+        : discountQty * rate + ((qty - discountQty) / stepQty) * discountedStepPrice;
+    return { id: String(qty), label: `${qty} piezas`, price, default: step === 0 };
+  });
+}
+
+// Stickers pricing: 50 piezas mínimo a $2.00/pieza ($100), sin descuento
+// hasta llegar a 100 piezas ($200). A partir de ahí, cada 25-pieza block
+// extra cuesta $40 en vez de $50: 20% de descuento.
+// Genera: 50→$100, 75→$150, 100→$200, 125→$240, ... hasta 300→$520.
 const STICKER_BASE_QTY = 50;
-const STICKER_BASE_PRICE = 100;
+const STICKER_RATE = 2.0;
 const STICKER_STEP_QTY = 25;
-const STICKER_STEP_PRICE = 40;
+const STICKER_DISCOUNT_QTY = 100;
+const STICKER_DISCOUNTED_STEP_PRICE = 40;
 const STICKER_MAX_STEPS = 10; // caps the dropdown at 300 piezas; more via WhatsApp
 
-const stickerVariants: ProductVariant[] = Array.from({ length: STICKER_MAX_STEPS + 1 }, (_, step) => {
-  const qty = STICKER_BASE_QTY + step * STICKER_STEP_QTY;
-  const price = STICKER_BASE_PRICE + step * STICKER_STEP_PRICE;
-  return { id: String(qty), label: `${qty} piezas`, price, default: step === 0 };
+const stickerVariants: ProductVariant[] = buildTieredVariants({
+  baseQty: STICKER_BASE_QTY,
+  rate: STICKER_RATE,
+  stepQty: STICKER_STEP_QTY,
+  discountQty: STICKER_DISCOUNT_QTY,
+  discountedStepPrice: STICKER_DISCOUNTED_STEP_PRICE,
+  maxSteps: STICKER_MAX_STEPS,
 });
+const STICKER_BASE_PRICE = STICKER_BASE_QTY * STICKER_RATE;
 
-// Vinyl stickers pricing: 40 piezas = $100 (base rate $2.50/pieza). From
-// there, each extra 10-pieza block costs $20 instead of $25: a 20%
-// discount on the extra piezas beyond the first 40. Same discount
-// mechanism as stickerVariants, different base/step sizes.
-// Generates: 40→$100, 50→$120, 60→$140, ... up to 140→$300.
+// Vinyl stickers pricing: 40 piezas mínimo a $2.50/pieza ($100), sin
+// descuento hasta llegar a 100 piezas ($250). A partir de ahí, cada
+// 10-pieza block extra cuesta $20 en vez de $25: 20% de descuento.
+// Genera: 40→$100, 50→$125, ... 100→$250, 110→$270, ... hasta 140→$330.
 const VINYL_BASE_QTY = 40;
-const VINYL_BASE_PRICE = 100;
+const VINYL_RATE = 2.5;
 const VINYL_STEP_QTY = 10;
-const VINYL_STEP_PRICE = 20;
+const VINYL_DISCOUNT_QTY = 100;
+const VINYL_DISCOUNTED_STEP_PRICE = 20;
 const VINYL_MAX_STEPS = 10; // caps the dropdown at 140 piezas; more via WhatsApp
 
-const vinylStickerVariants: ProductVariant[] = Array.from({ length: VINYL_MAX_STEPS + 1 }, (_, step) => {
-  const qty = VINYL_BASE_QTY + step * VINYL_STEP_QTY;
-  const price = VINYL_BASE_PRICE + step * VINYL_STEP_PRICE;
-  return { id: String(qty), label: `${qty} piezas`, price, default: step === 0 };
+const vinylStickerVariants: ProductVariant[] = buildTieredVariants({
+  baseQty: VINYL_BASE_QTY,
+  rate: VINYL_RATE,
+  stepQty: VINYL_STEP_QTY,
+  discountQty: VINYL_DISCOUNT_QTY,
+  discountedStepPrice: VINYL_DISCOUNTED_STEP_PRICE,
+  maxSteps: VINYL_MAX_STEPS,
 });
+const VINYL_BASE_PRICE = VINYL_BASE_QTY * VINYL_RATE;
 
 export const products: Product[] = [
   {
@@ -144,19 +176,20 @@ export const products: Product[] = [
     specs: [
       { label: "Mínimo de compra", value: "50 piezas" },
       { label: "Precio base", value: "$100 (50 piezas)" },
-      { label: "Piezas extra", value: "+25 piezas = +$40 (20% de descuento)" },
+      { label: "Descuento por volumen", value: "A partir de 100 piezas: +25 piezas = +$40 (20% de descuento)" },
       { label: "Personalización", value: "Tu logo o diseño" },
       { label: "Resistencia", value: "Resistentes al agua" },
       { label: "Producción", value: "Sobre pedido" },
     ],
     description:
-      "Etiquetas personalizadas con tu logo o diseño, resistentes al agua. Se venden por cantidad de piezas, no por hoja: los primeros 50 piezas cuestan $100 y, a partir de ahí, cada 25 piezas extra tienen 20% de descuento ($40 en vez de $50). Envíanos tu imagen (o el diseño que quieras convertir en etiqueta) y te mandamos una prueba digital antes de imprimir.",
+      "Etiquetas personalizadas con tu logo o diseño, resistentes al agua. Se venden por cantidad de piezas, no por hoja: desde 50 piezas a $2.00 c/u ($100), sin descuento hasta llegar a 100 piezas ($200). A partir de ahí, cada 25 piezas extra tienen 20% de descuento ($40 en vez de $50). Envíanos tu imagen (o el diseño que quieras convertir en etiqueta) y te mandamos una prueba digital antes de imprimir.",
     metaDescription:
-      "Etiquetas personalizadas con tu logo, resistentes al agua. Desde $100 por 50 piezas, con descuento por volumen. Prueba digital antes de imprimir.",
+      "Etiquetas personalizadas con tu logo, resistentes al agua. Desde $100 por 50 piezas, con descuento por volumen a partir de 100 piezas. Prueba digital antes de imprimir.",
     details: [
       "Se venden por cantidad de piezas, mínimo 50",
-      "Primeras 50 piezas: $100",
-      "Cada 25 piezas extra: +$40 (20% de descuento sobre esas piezas)",
+      "Primeras 50 piezas: $100 ($2.00/pieza)",
+      "Sin descuento hasta llegar a 100 piezas ($200)",
+      "A partir de 100 piezas, cada 25 extra: +$40 (20% de descuento sobre esas piezas)",
       "Resistentes al agua",
       "Imprimimos tu logo o el diseño que nos envíes",
       "Prueba digital antes de imprimir",
@@ -181,7 +214,7 @@ export const products: Product[] = [
       },
       {
         q: "¿Cuál es el precio de las etiquetas?",
-        a: "Las primeras 50 piezas cuestan $100. A partir de ahí, cada 25 piezas extra tienen 20% de descuento y cuestan $40 en vez de $50: por ejemplo, 75 piezas son $140 y 100 piezas son $180.",
+        a: "Las primeras 50 piezas cuestan $100 ($2.00/pieza) y no hay descuento hasta llegar a 100 piezas ($200). A partir de ahí, cada 25 piezas extra tienen 20% de descuento y cuestan $40 en vez de $50: por ejemplo, 125 piezas son $240 y 150 piezas son $280.",
       },
       {
         q: "¿Las etiquetas son resistentes al agua?",
@@ -204,20 +237,21 @@ export const products: Product[] = [
     specs: [
       { label: "Mínimo de compra", value: "40 piezas" },
       { label: "Precio base", value: "$100 (40 piezas)" },
-      { label: "Piezas extra", value: "+10 piezas = +$20 (20% de descuento)" },
+      { label: "Descuento por volumen", value: "A partir de 100 piezas: +10 piezas = +$20 (20% de descuento)" },
       { label: "Material", value: "Vinil premium, corte troquelado" },
       { label: "Resistencia", value: "Al agua, al sol y a rayones" },
       { label: "Personalización", value: "Tu diseño, personaje o foto" },
     ],
     description:
-      "Stickers troquelados en vinil premium, resistentes al agua, al sol y a rayones: para cualquier diseño, personaje o foto que quieras convertir en sticker, no solo logos. Se venden por cantidad de piezas, no por planilla: los primeros 40 piezas cuestan $100 y, a partir de ahí, cada 10 piezas extra tienen 20% de descuento ($20 en vez de $25). Envíanos tu imagen o diseño y te mandamos una prueba digital antes de imprimir.",
+      "Stickers troquelados en vinil premium, resistentes al agua, al sol y a rayones: para cualquier diseño, personaje o foto que quieras convertir en sticker, no solo logos. Se venden por cantidad de piezas, no por planilla: desde 40 piezas a $2.50 c/u ($100), sin descuento hasta llegar a 100 piezas ($250). A partir de ahí, cada 10 piezas extra tienen 20% de descuento ($20 en vez de $25). Envíanos tu imagen o diseño y te mandamos una prueba digital antes de imprimir.",
     metaDescription:
-      "Stickers de vinil personalizados, resistentes al agua, al sol y a rayones. Cualquier diseño, personaje o foto. Desde $100 por 40 piezas, con descuento por volumen.",
+      "Stickers de vinil personalizados, resistentes al agua, al sol y a rayones. Cualquier diseño, personaje o foto. Desde $100 por 40 piezas, con descuento por volumen a partir de 100 piezas.",
     details: [
       "Vinil premium con corte troquelado a la forma del diseño",
       "Se venden por cantidad de piezas, mínimo 40",
-      "Primeras 40 piezas: $100",
-      "Cada 10 piezas extra: +$20 (20% de descuento sobre esas piezas)",
+      "Primeras 40 piezas: $100 ($2.50/pieza)",
+      "Sin descuento hasta llegar a 100 piezas ($250)",
+      "A partir de 100 piezas, cada 10 extra: +$20 (20% de descuento sobre esas piezas)",
       "Resistentes al agua, al sol y a rayones",
       "Ideal para tus personajes favoritos, mascotas, fotos o cualquier diseño",
       "Prueba digital antes de imprimir",
@@ -246,7 +280,7 @@ export const products: Product[] = [
       },
       {
         q: "¿Cuál es el precio de los stickers de vinil?",
-        a: "Las primeras 40 piezas cuestan $100. A partir de ahí, cada 10 piezas extra tienen 20% de descuento y cuestan $20 en vez de $25: por ejemplo, 50 piezas son $120 y 60 piezas son $140.",
+        a: "Las primeras 40 piezas cuestan $100 ($2.50/pieza) y no hay descuento hasta llegar a 100 piezas ($250). A partir de ahí, cada 10 piezas extra tienen 20% de descuento y cuestan $20 en vez de $25: por ejemplo, 110 piezas son $270 y 120 piezas son $290.",
       },
       {
         q: "¿El vinil resiste el agua y el sol?",
