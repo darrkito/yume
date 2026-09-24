@@ -3,6 +3,7 @@ import Link from "next/link";
 import { MessageCircle } from "lucide-react";
 import { SITE, waLink } from "@/content/site";
 import { pageMetadata, breadcrumbSchema } from "@/lib/seo";
+import { ShopCta } from "@/components/ShopCta";
 
 export const metadata: Metadata = pageMetadata({
   title: "About Yume: Custom Stationery Studio in Guadalajara",
@@ -58,9 +59,9 @@ export default function AboutPageEn() {
           <MessageCircle size={16} aria-hidden="true" />
           Message us on WhatsApp
         </a>
-        <Link href="/en/products" className="inline-flex min-h-11 items-center text-sm text-ink-soft underline underline-offset-2 hover:text-brand">See our products</Link>
         <Link href="/en/gallery" className="inline-flex min-h-11 items-center text-sm text-ink-soft underline underline-offset-2 hover:text-brand">See sticker gallery</Link>
       </div>
+      <ShopCta lang="en" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
     </section>
   );

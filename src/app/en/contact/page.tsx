@@ -3,6 +3,7 @@ import { Mail, MapPin, AtSign } from "lucide-react";
 import { SITE, waLink } from "@/content/site";
 import { pageMetadata, breadcrumbSchema } from "@/lib/seo";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
+import { ShopCta } from "@/components/ShopCta";
 
 export const metadata: Metadata = pageMetadata({
   title: "Contact: Get a Custom Stationery Quote",
@@ -55,9 +56,10 @@ export default function ContactPageEn() {
       <div className="mt-12 border-t border-line pt-8">
         <h2 className="font-display text-xl text-ink">On turnaround times</h2>
         <p className="mt-2 max-w-xl text-sm leading-relaxed text-ink-soft">
-          Every piece is made to order, so turnaround varies by product and quantity. We confirm the exact timeline when you request a quote on WhatsApp; we don&apos;t publish a fixed timeframe because we&apos;d rather give you the real one for your order, not a generic estimate.
+          Every piece is made to order: usually 3-5 days of production after you approve your digital proof, plus 2-5 days of shipping (or pick up at Casa Blanca, Guadalajara). Have a deadline? Message us on WhatsApp and we&apos;ll confirm whether we can make it.
         </p>
       </div>
+      <ShopCta lang="en" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
     </section>
   );

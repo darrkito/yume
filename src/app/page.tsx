@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Check, MessageCircle, CheckCircle2, Truck, PenTool, MapPin } from "lucide-react";
+import { Check, MessageCircle, CheckCircle2, Truck, PenTool, MapPin, ShieldCheck } from "lucide-react";
+import { CASABLANCA_PRICE } from "@/content/shipping";
 import { getProduct, hasVariants, productDisplayPrice, products } from "@/content/products";
 import { getFeaturedFaq } from "@/content/faq";
 import { waLink } from "@/content/site";
@@ -48,7 +49,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 px-6 pb-20 pt-16 sm:grid-cols-2 sm:pt-20">
           <div>
             <h1 className="animate-fade-up font-display text-4xl leading-[1.1] text-ink text-balance sm:text-5xl lg:text-6xl">
-              Papelería creativa hecha con <em className="italic text-brand">intención</em>.
+              Stickers, recetarios y papelería personalizada, <em className="italic text-brand">desde $100</em>.
             </h1>
             <p className="animate-fade-up animate-fade-up-1 mt-6 max-w-md text-base leading-relaxed text-ink-soft">
               Papelería y artículos personalizados hechos sobre pedido en Guadalajara: recetarios médicos, etiquetas y
@@ -56,7 +57,7 @@ export default function Home() {
             </p>
             <div className="animate-fade-up animate-fade-up-2 mt-8 flex flex-wrap gap-4">
               <Link href="/productos" className="btn-soft btn-soft-solid">
-                Ver tienda
+                Ver productos y precios
               </Link>
               <CtaFillLink
                 href={waLink("Hola, me interesa cotizar un producto de Yume.")}
@@ -67,6 +68,11 @@ export default function Home() {
                 Cotizar por WhatsApp
               </CtaFillLink>
             </div>
+            <ul aria-label="Por qué comprar con confianza" className="animate-fade-up animate-fade-up-2 mt-6 space-y-2 text-sm text-ink">
+              <li className="flex items-center gap-2"><MapPin size={16} className="shrink-0 text-brand" aria-hidden="true" />Recoge en Guadalajara por {formatMXN(CASABLANCA_PRICE)}</li>
+              <li className="flex items-center gap-2"><ShieldCheck size={16} className="shrink-0 text-brand" aria-hidden="true" />Paga con tarjeta, OXXO o SPEI</li>
+              <li className="flex items-center gap-2"><CheckCircle2 size={16} className="shrink-0 text-brand" aria-hidden="true" />Apruebas el diseño antes de imprimir</li>
+            </ul>
           </div>
           <div className="animate-fade-up animate-fade-up-1 flex min-w-0 justify-center sm:justify-end">
             <HeroJar />

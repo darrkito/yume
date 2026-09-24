@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useSearchParams } from "next/navigation";
 import type { Customer, DeliveryInfo, DeliveryMethod } from "@/lib/orders";
 import { CASABLANCA_BRANCHES, CASABLANCA_PRICE, deliverySurcharge } from "@/content/shipping";
 import { CASABLANCA_BRANCHES_EN } from "@/content/shipping.en";
@@ -24,7 +25,12 @@ export function ShippingForm({
   const branches = lang === "en" ? CASABLANCA_BRANCHES_EN : CASABLANCA_BRANCHES;
   const nationalShippingCost = deliverySurcharge("envio_nacional", subtotal);
   const [submitting, setSubmitting] = useState(false);
-  const [deliveryMethod, setDeliveryMethod] = useState<DeliveryMethod>("envio_nacional");
+  // Preselect whatever the shopper already picked in the cart (?entrega=).
+  // Only mounts once the cart has items, so never during static prerender.
+  const searchParams = useSearchParams();
+  const [deliveryMethod, setDeliveryMethod] = useState<DeliveryMethod>(
+    searchParams.get("entrega") === "casablanca" ? "recoleccion_casablanca" : "envio_nacional",
+  );
   const [branchId, setBranchId] = useState(branches[0].id);
   const [values, setValues] = useState({
     name: "",

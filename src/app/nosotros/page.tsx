@@ -3,6 +3,7 @@ import Link from "next/link";
 import { MessageCircle } from "lucide-react";
 import { SITE, waLink } from "@/content/site";
 import { pageMetadata, breadcrumbSchema } from "@/lib/seo";
+import { ShopCta } from "@/components/ShopCta";
 
 export const metadata: Metadata = pageMetadata({
   title: "Nosotros: Papelería Personalizada en Guadalajara",
@@ -57,9 +58,9 @@ export default function NosotrosPage() {
           <MessageCircle size={16} aria-hidden="true" />
           Escríbenos por WhatsApp
         </a>
-        <Link href="/productos" className="inline-flex min-h-11 items-center text-sm text-ink-soft underline underline-offset-2 hover:text-brand">Ver nuestros productos</Link>
         <Link href="/galeria" className="inline-flex min-h-11 items-center text-sm text-ink-soft underline underline-offset-2 hover:text-brand">Ver galería de stickers</Link>
       </div>
+      <ShopCta lang="es" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
     </section>
   );

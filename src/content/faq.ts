@@ -31,7 +31,7 @@ export const generalFaq: FaqItem[] = [
   },
   {
     q: "¿Cuánto tiempo tarda mi pedido?",
-    a: "Todos los productos son sobre pedido; el tiempo varía según el producto y la cantidad. Escríbenos para confirmar el tiempo exacto de tu pedido.",
+    a: "Todo se hace sobre pedido: normalmente 3-5 días de producción después de que apruebas tu prueba digital, más 2-5 días de envío a domicilio. ¿Tienes fecha límite? Escríbenos y te confirmamos.",
   },
   {
     q: "¿Cómo puedo cotizar o hacer un pedido?",

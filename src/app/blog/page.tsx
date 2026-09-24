@@ -3,6 +3,7 @@ import { blogPosts } from "@/content/blog";
 import { BlogGrid } from "@/components/BlogGrid";
 import { pageMetadata, breadcrumbSchema } from "@/lib/seo";
 import { SITE } from "@/content/site";
+import { ShopCta } from "@/components/ShopCta";
 
 export const metadata: Metadata = pageMetadata({
   title: "Blog de papelería personalizada",
@@ -41,6 +42,7 @@ export default function BlogIndexPage() {
       <div className="mt-14">
         <BlogGrid posts={blogPosts} lang="es" basePath="/blog" allLabel="Todos" readMoreLabel="Leer más" />
       </div>
+      <ShopCta lang="es" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
     </section>

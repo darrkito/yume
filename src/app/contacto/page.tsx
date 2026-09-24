@@ -3,6 +3,7 @@ import { Mail, MapPin, AtSign } from "lucide-react";
 import { SITE, waLink } from "@/content/site";
 import { pageMetadata, breadcrumbSchema } from "@/lib/seo";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
+import { ShopCta } from "@/components/ShopCta";
 
 export const metadata: Metadata = pageMetadata({
   title: "Contacto: Cotiza tu Papelería Personalizada",
@@ -54,9 +55,10 @@ export default function ContactoPage() {
       <div className="mt-12 border-t border-line pt-8">
         <h2 className="font-display text-xl text-ink">Sobre los tiempos de entrega</h2>
         <p className="mt-2 max-w-xl text-sm leading-relaxed text-ink-soft">
-          Cada pieza se produce sobre pedido, así que el tiempo de entrega varía según el producto y la cantidad. Te confirmamos el tiempo exacto al cotizar por WhatsApp; no publicamos un plazo fijo porque preferimos darte el real para tu pedido, no un estimado genérico.
+          Cada pieza se produce sobre pedido: normalmente 3-5 días de producción después de que apruebas tu prueba digital, más 2-5 días de envío (o recoges en Casa Blanca, Guadalajara). Si tienes una fecha límite, escríbenos por WhatsApp y te confirmamos si llegamos.
         </p>
       </div>
+      <ShopCta lang="es" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
     </section>
   );

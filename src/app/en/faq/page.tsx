@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getFaqCategoriesEn } from "@/content/faq.en";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { pageMetadata, breadcrumbSchema } from "@/lib/seo";
+import { ShopCta } from "@/components/ShopCta";
 
 export const metadata: Metadata = pageMetadata({
   title: "Frequently Asked Questions About Custom Stationery",
@@ -43,6 +44,7 @@ export default function FaqPageEn() {
         or <Link href="/en/contact" className="text-brand underline underline-offset-2 hover:text-brand-deep">contact us</Link> directly.
       </p>
 
+      <ShopCta lang="en" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
     </section>

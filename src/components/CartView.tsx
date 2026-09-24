@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { Minus, Plus, X, ImageUp, CreditCard, Truck, CheckCircle2, Clock, ShieldCheck, MessageCircle } from "lucide-react";
 import { useCart } from "@/components/CartContext";
@@ -8,7 +9,7 @@ import { ProductVisual } from "@/components/ProductVisual";
 import { RelatedProducts } from "@/components/RelatedProducts";
 import { CtaFillLink } from "@/components/CtaFillLink";
 import { waLink } from "@/content/site";
-import { FREE_SHIPPING_THRESHOLD, NATIONAL_SHIPPING_PRICE, CASABLANCA_PRICE } from "@/content/shipping";
+import { FREE_SHIPPING_THRESHOLD, CASABLANCA_PRICE, deliverySurcharge, type DeliveryMethod } from "@/content/shipping";
 import { formatMXN } from "@/lib/format";
 import { PRODUCT_SLUG_EN, UI, type Lang } from "@/lib/i18n";
 
@@ -24,9 +25,13 @@ const ATTACH_MSG = {
 
 export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
   const { items, removeItem, updateQty, total, clear } = useCart();
+  const [method, setMethod] = useState<DeliveryMethod>("envio_nacional");
   const t = UI[lang];
   const shopHref = lang === "en" ? "/en/products" : "/productos";
-  const checkoutHref = lang === "en" ? "/en/checkout" : "/pago";
+  const checkoutPath = lang === "en" ? "/en/checkout" : "/pago";
+  // ShippingForm reads ?entrega= to preselect the same option at checkout.
+  const checkoutHref = method === "recoleccion_casablanca" ? `${checkoutPath}?entrega=casablanca` : checkoutPath;
+  const shipping = deliverySurcharge(method, total);
 
   const itemsRequiringImage = [...new Set(items.map((i) => i.slug))]
     .map((slug) => getProduct(slug))
@@ -141,7 +146,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
         </div>
       )}
 
-      {total < FREE_SHIPPING_THRESHOLD && (
+      {method === "envio_nacional" && total < FREE_SHIPPING_THRESHOLD && (
         <div className="mt-8 rounded-xl border border-line bg-paper-raised p-4">
           <p className="text-sm text-ink">{t.freeShippingProgress.replace("{remaining}", formatMXN(FREE_SHIPPING_THRESHOLD - total))}</p>
           <div className="mt-3 h-1.5 w-full overflow-hidden rounded-full bg-line">
@@ -149,17 +154,37 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
           </div>
         </div>
       )}
-      {total >= FREE_SHIPPING_THRESHOLD && (
+      {method === "envio_nacional" && total >= FREE_SHIPPING_THRESHOLD && (
         <div className="mt-8 flex items-start gap-2 rounded-xl border border-line bg-paper-raised p-4 text-sm text-ink"><Truck size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.freeShippingReached}</div>
       )}
 
       <div className="mt-8 border-t border-line pt-6">
         <div className="flex items-center justify-between text-sm text-ink-soft"><span>{t.subtotal}</span><span>{formatMXN(total)} MXN</span></div>
-        <div className="mt-2 flex items-center justify-between text-sm text-ink-soft"><span>{t.shippingLabel}</span><span>{total >= FREE_SHIPPING_THRESHOLD ? t.freeShipping : `${formatMXN(NATIONAL_SHIPPING_PRICE)} MXN`}</span></div>
-        <p className="mt-2 text-xs text-ink-soft">{t.pickupAlternative.replace("{pickup}", formatMXN(CASABLANCA_PRICE))}</p>
+        <fieldset className="mt-4">
+          <legend className="text-sm text-ink-soft">{t.deliveryChoice}</legend>
+          <div className="mt-2 grid gap-2 sm:grid-cols-2">
+            {([
+              ["recoleccion_casablanca", t.pickupGdl, CASABLANCA_PRICE],
+              ["envio_nacional", t.nationalShipping, deliverySurcharge("envio_nacional", total)],
+            ] as const).map(([value, label, cost]) => (
+              <label
+                key={value}
+                className={`flex min-h-11 cursor-pointer items-center justify-between gap-3 rounded-xl border px-4 py-2.5 text-sm transition-colors ${
+                  method === value ? "border-brand bg-paper text-ink" : "border-line text-ink-soft hover:border-brand"
+                }`}
+              >
+                <span className="flex items-center gap-3">
+                  <input type="radio" name="cart-delivery" value={value} checked={method === value} onChange={() => setMethod(value)} className="accent-brand" />
+                  {label}
+                </span>
+                <span className="font-semibold text-ink">{cost === 0 ? t.freeShipping : formatMXN(cost)}</span>
+              </label>
+            ))}
+          </div>
+        </fieldset>
         <div className="mt-4 flex items-center justify-between border-t border-line pt-4">
           <p className="text-sm text-ink-soft">{t.total}</p>
-          <p className="font-display text-2xl text-ink">{formatMXN(total >= FREE_SHIPPING_THRESHOLD ? total : total + NATIONAL_SHIPPING_PRICE)} MXN</p>
+          <p className="font-display text-2xl text-ink">{formatMXN(total + shipping)} MXN</p>
         </div>
         <p className="mt-2 text-xs text-ink-soft">{t.totalNote}</p>
       </div>

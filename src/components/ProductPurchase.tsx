@@ -199,14 +199,10 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
             <p className="truncate text-base font-semibold text-ink">{formatMXN(selected?.price ?? product.price)}</p>
             <p className="truncate text-xs text-ink-soft">{selected ? variantLabel(selected.id, selected.label) : product.name}</p>
           </div>
-          <div className="flex shrink-0 gap-2">
-            <button type="button" onClick={handleAdd} className="btn-soft btn-soft-outline min-h-11 px-4 text-sm">
-              {justAdded ? t.added : t.addToCart}
-            </button>
-            <button type="button" onClick={handleBuyNow} className="btn-soft btn-soft-solid min-h-11 px-4 text-sm">
-              {t.buyNow}
-            </button>
-          </div>
+          {/* One CTA only: two buttons squeezed the price to "$100..." at 390px. */}
+          <button type="button" onClick={handleBuyNow} className="btn-soft btn-soft-solid min-h-11 shrink-0 px-5 text-sm">
+            <Zap size={16} aria-hidden="true" /> {t.buyNow}
+          </button>
         </div>
       </div>
     </div>

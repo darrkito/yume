@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getFaqCategories } from "@/content/faq";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { pageMetadata, breadcrumbSchema } from "@/lib/seo";
+import { ShopCta } from "@/components/ShopCta";
 
 export const metadata: Metadata = pageMetadata({
   title: "Preguntas frecuentes sobre papelería personalizada",
@@ -42,6 +43,7 @@ export default function PreguntasFrecuentesPage() {
         o <Link href="/contacto" className="text-brand underline underline-offset-2 hover:text-brand-deep">contáctanos</Link> directamente.
       </p>
 
+      <ShopCta lang="es" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
     </section>

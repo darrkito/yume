@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Check, MessageCircle, CheckCircle2, Truck, PenTool, MapPin } from "lucide-react";
+import { Check, MessageCircle, CheckCircle2, Truck, PenTool, MapPin, ShieldCheck } from "lucide-react";
+import { CASABLANCA_PRICE } from "@/content/shipping";
 import { getProduct, hasVariants, productDisplayPrice, products } from "@/content/products";
 import { productsEn } from "@/content/products.en";
 import { getFeaturedFaqEn } from "@/content/faq.en";
@@ -71,7 +72,7 @@ export default function HomeEn() {
         <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 px-6 pb-20 pt-16 sm:grid-cols-2 sm:pt-20">
           <div>
             <h1 className="animate-fade-up font-display text-4xl leading-[1.1] text-ink text-balance sm:text-5xl lg:text-6xl">
-              Paper goods made with <em className="italic text-brand">intention</em>.
+              Custom stickers, prescription pads and stationery, <em className="italic text-brand">from $100</em>.
             </h1>
             <p className="animate-fade-up animate-fade-up-1 mt-6 max-w-md text-base leading-relaxed text-ink-soft">
               Custom stationery made to order in Guadalajara: medical prescription pads, stickers, and pieces built
@@ -79,7 +80,7 @@ export default function HomeEn() {
             </p>
             <div className="animate-fade-up animate-fade-up-2 mt-8 flex flex-wrap gap-4">
               <Link href="/en/products" className="btn-soft btn-soft-solid">
-                View shop
+                See products &amp; prices
               </Link>
               <CtaFillLink
                 href={waLink("Hi, I'm interested in getting a quote for a Yume product.")}
@@ -90,6 +91,11 @@ export default function HomeEn() {
                 Quote via WhatsApp
               </CtaFillLink>
             </div>
+            <ul aria-label="Why buy with confidence" className="animate-fade-up animate-fade-up-2 mt-6 space-y-2 text-sm text-ink">
+              <li className="flex items-center gap-2"><MapPin size={16} className="shrink-0 text-brand" aria-hidden="true" />Pick up in Guadalajara for {formatMXN(CASABLANCA_PRICE)}</li>
+              <li className="flex items-center gap-2"><ShieldCheck size={16} className="shrink-0 text-brand" aria-hidden="true" />Pay by card, OXXO or SPEI</li>
+              <li className="flex items-center gap-2"><CheckCircle2 size={16} className="shrink-0 text-brand" aria-hidden="true" />You approve the design before printing</li>
+            </ul>
           </div>
           <div className="animate-fade-up animate-fade-up-1 flex min-w-0 justify-center sm:justify-end">
             <HeroJar />

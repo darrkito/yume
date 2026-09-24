@@ -16,7 +16,7 @@ export const generalFaqEn: FaqItem[] = [
   },
   {
     q: "How long does my order take?",
-    a: "All of our products are made to order; turnaround varies by product and quantity. Message us to confirm the exact timeline for your order.",
+    a: "Everything is made to order: usually 3-5 days of production after you approve your digital proof, plus 2-5 days of home delivery. Have a deadline? Message us and we'll confirm.",
   },
   {
     q: "How can I get a quote or place an order?",
