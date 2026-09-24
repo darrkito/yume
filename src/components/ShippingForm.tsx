@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import type { Customer, DeliveryInfo, DeliveryMethod } from "@/lib/orders";
 import { CASABLANCA_BRANCHES, CASABLANCA_PRICE, deliverySurcharge } from "@/content/shipping";
@@ -14,10 +14,12 @@ const LABEL_CLASS = "mb-1.5 block text-xs font-medium uppercase tracking-[0.08em
 
 export function ShippingForm({
   onSubmit,
+  onMethodChange,
   subtotal,
   lang = "es",
 }: {
   onSubmit: (data: { customer: Customer; delivery: DeliveryInfo }) => void | Promise<void>;
+  onMethodChange?: (method: DeliveryMethod) => void;
   subtotal: number;
   lang?: Lang;
 }) {
@@ -31,6 +33,9 @@ export function ShippingForm({
   const [deliveryMethod, setDeliveryMethod] = useState<DeliveryMethod>(
     searchParams.get("entrega") === "casablanca" ? "recoleccion_casablanca" : "envio_nacional",
   );
+  useEffect(() => {
+    onMethodChange?.(deliveryMethod);
+  }, [deliveryMethod, onMethodChange]);
   const [branchId, setBranchId] = useState(branches[0].id);
   const [values, setValues] = useState({
     name: "",

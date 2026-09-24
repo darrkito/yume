@@ -9,7 +9,7 @@ import { MercadoPagoBrick } from "@/components/MercadoPagoBrick";
 import { ShippingForm } from "@/components/ShippingForm";
 import { getProduct } from "@/content/products";
 import type { Customer, DeliveryInfo } from "@/lib/orders";
-import { deliverySurcharge } from "@/content/shipping";
+import { deliverySurcharge, type DeliveryMethod } from "@/content/shipping";
 import { formatMXN } from "@/lib/format";
 import { UI, type Lang } from "@/lib/i18n";
 
@@ -32,9 +32,13 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
   const [settled, setSettled] = useState(false);
   const t = UI[lang];
   const shopHref = lang === "en" ? "/en/products" : "/productos";
-  const surcharge = delivery ? deliverySurcharge(delivery.method, total) : 0;
+  // The option highlighted in step 1, so the summary total matches the cart's
+  // before the form is submitted; the submitted `delivery` wins after that.
+  const [formMethod, setFormMethod] = useState<DeliveryMethod | null>(null);
+  const summaryMethod = delivery?.method ?? formMethod;
+  const surcharge = summaryMethod ? deliverySurcharge(summaryMethod, total) : 0;
   const grandTotal = total + surcharge;
-  const deliveryLabel = delivery?.method === "recoleccion_casablanca" ? t.casablancaPickup : t.nationalShipping;
+  const deliveryLabel = summaryMethod === "recoleccion_casablanca" ? t.casablancaPickup : t.nationalShipping;
 
   // Uploads happen once, at checkout submission — not when the file is
   // picked on the product page — so an abandoned cart never leaves an
@@ -117,7 +121,7 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
                 </li>
               ))}
             </ul>
-            {delivery && (
+            {summaryMethod && (
               <div className="mt-3 flex items-center justify-between text-sm">
                 <span className="text-ink-soft">{deliveryLabel}</span>
                 <span className="font-medium text-ink">{surcharge > 0 ? formatMXN(surcharge) : t.free}</span>
@@ -142,6 +146,7 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
               <ShippingForm
                 lang={lang}
                 subtotal={total}
+                onMethodChange={setFormMethod}
                 onSubmit={async ({ customer: c, delivery: d }) => {
                   setError(null);
                   try {
