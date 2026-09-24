@@ -58,7 +58,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "What quantity to order",
         body: [
-          "We sell by piece count, not by sheet: the minimum order is 50 pieces for $100, and from 100 pieces on every extra 25 pieces get a 20% discount: enough to match the order to your business's actual size without buying more than you need.",
+          "We sell by piece count, not by sheet: the first 100 pieces are $200 and, past 100, every extra piece is at wholesale price ($1.60, 20% off); and if you need fewer, you can order from 50: enough to match the order to your business's actual size without buying more than you need.",
           "All of our stickers are water-resistant, so they hold up well on packaging that gets wet or handled often (bags, bottles, shipments). Let us know the shape or size you prefer when requesting a quote, and we'll send you a digital proof before printing.",
         ],
       },
@@ -286,7 +286,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "Quantity and price",
         body: [
-          "Vinyl stickers are sold by piece count, not by sheet: the minimum is 40 pieces for $100, and from 100 pieces on every extra 10 pieces get a 20% discount: 110 pieces come out to $270, 120 to $290.",
+          "Vinyl stickers are sold by piece count, not by sheet: the first 100 pieces are $250 and, past 100, every extra piece is at wholesale price ($2.00, 20% off): 150 pieces come out to $350 and 200 to $450.",
           "It's the same premium vinyl, resistant to water, sun, and scratches, that we use for any other custom design, so it holds up well on water bottles, laptops, or wherever you want to stick it.",
         ],
       },

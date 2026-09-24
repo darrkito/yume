@@ -2,9 +2,11 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Minus, Plus, X, ImageUp, CreditCard, Truck, CheckCircle2, Clock, ShieldCheck, MessageCircle } from "lucide-react";
+import { X, ImageUp, CreditCard, Truck, CheckCircle2, Clock, ShieldCheck, MessageCircle } from "lucide-react";
 import { useCart } from "@/components/CartContext";
-import { getProduct } from "@/content/products";
+import { getProduct, MAX_PIECES, pieceCount } from "@/content/products";
+import { QtyInput } from "@/components/QtyInput";
+import { cartLine } from "@/components/useAddProduct";
 import { ProductVisual } from "@/components/ProductVisual";
 import { RelatedProducts } from "@/components/RelatedProducts";
 import { CtaFillLink } from "@/components/CtaFillLink";
@@ -24,7 +26,7 @@ const ATTACH_MSG = {
 };
 
 export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
-  const { items, removeItem, updateQty, total, clear } = useCart();
+  const { items, removeItem, updateQty, replaceLine, total, clear } = useCart();
   const [method, setMethod] = useState<DeliveryMethod>("envio_nacional");
   const t = UI[lang];
   const shopHref = lang === "en" ? "/en/products" : "/productos";
@@ -77,6 +79,9 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
       <ul className="mt-10 divide-y divide-line border-y border-line">
         {items.map((item) => {
           const product = getProduct(item.slug);
+          // Sticker lines are edited in pieces (legacy lines may carry qty > 1).
+          const perPiece = product ? pieceCount(product, item.variantId) : null;
+          const pieces = perPiece === null ? null : perPiece * item.qty;
           return (
           <li key={`${item.slug}:${item.variantId ?? ""}`} className="flex flex-wrap items-center justify-between gap-4 py-6 sm:flex-nowrap">
             <div className="flex min-w-0 items-center gap-4">
@@ -96,31 +101,35 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
                   {item.name}
                 </Link>
                 <p className="mt-1 text-sm text-ink-soft">
-                  {formatMXN(item.price)} {t.each}
+                  {pieces !== null
+                    ? `${formatMXN((item.price * item.qty) / pieces)}${t.perPieceSuffix}`
+                    : `${formatMXN(item.price)} ${t.each}`}
                 </p>
               </div>
             </div>
             <div className="flex shrink-0 items-center gap-4">
-              <div className="flex items-center rounded-full border border-line">
-                <button
-                  type="button"
-                  onClick={() => updateQty(item.slug, item.qty - 1, item.variantId)}
-                  disabled={item.qty <= 1}
-                  aria-label={t.decreaseQty}
-                  className="flex size-11 items-center justify-center text-ink-soft transition-colors hover:text-brand disabled:opacity-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
-                >
-                  <Minus size={14} />
-                </button>
-                <span className="min-w-6 text-center text-sm text-ink">{item.qty}</span>
-                <button
-                  type="button"
-                  onClick={() => updateQty(item.slug, item.qty + 1, item.variantId)}
-                  aria-label={t.increaseQty}
-                  className="flex size-11 items-center justify-center text-ink-soft transition-colors hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
-                >
-                  <Plus size={14} />
-                </button>
-              </div>
+              {product && pieces !== null ? (
+                <QtyInput
+                  value={pieces}
+                  min={product.tiers!.baseQty}
+                  max={MAX_PIECES}
+                  step={product.tiers!.stepQty}
+                  onChange={(n) => replaceLine(item, cartLine(product, String(n), lang))}
+                  label={`${t.piecesInputLabel}: ${item.name}`}
+                  decreaseLabel={t.decreaseQty}
+                  increaseLabel={t.increaseQty}
+                />
+              ) : (
+                <QtyInput
+                  value={item.qty}
+                  min={1}
+                  max={99}
+                  onChange={(n) => updateQty(item.slug, n, item.variantId)}
+                  label={`${t.unitsLabel}: ${item.name}`}
+                  decreaseLabel={t.decreaseQty}
+                  increaseLabel={t.increaseQty}
+                />
+              )}
               <p className="w-20 text-right text-sm font-semibold text-ink">{formatMXN(item.price * item.qty)}</p>
               <button
                 type="button"

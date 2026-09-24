@@ -1,5 +1,5 @@
 import { MercadoPagoConfig } from "mercadopago";
-import { getProduct, cartItemLabel, resolvePrice } from "@/content/products";
+import { getProduct, cartItemLabel, isValidVariant, resolvePrice } from "@/content/products";
 
 // Server-only client — never import this from a "use client" component.
 // Throws at request time (not at module load) so `next build` doesn't fail
@@ -11,6 +11,9 @@ export function getMpClient() {
   }
   return new MercadoPagoConfig({ accessToken });
 }
+
+// Units per cart line (piece counts live in variantId, not here).
+const MAX_LINE_QTY = 999;
 
 export interface CheckoutItem {
   slug: string;
@@ -28,7 +31,7 @@ export function validateCartItems(items: unknown): CheckoutItem[] {
   }
   return items.map((raw) => {
     const { slug, qty, variantId } = raw as { slug?: unknown; qty?: unknown; variantId?: unknown };
-    if (typeof slug !== "string" || typeof qty !== "number" || !Number.isFinite(qty) || qty <= 0) {
+    if (typeof slug !== "string" || typeof qty !== "number" || !Number.isFinite(qty) || qty < 1 || qty > MAX_LINE_QTY) {
       throw new Error("Producto inválido en el carrito.");
     }
     const product = getProduct(slug);
@@ -36,7 +39,7 @@ export function validateCartItems(items: unknown): CheckoutItem[] {
       throw new Error(`Producto no encontrado: ${slug}`);
     }
     const vId = typeof variantId === "string" ? variantId : undefined;
-    if (product.variants && product.variants.length > 0 && !product.variants.some((v) => v.id === vId)) {
+    if (!isValidVariant(product, vId)) {
       throw new Error(`Selecciona una opción válida para ${product.name}.`);
     }
     return {

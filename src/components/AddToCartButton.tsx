@@ -3,9 +3,9 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { ShoppingBag, Check, Zap } from "lucide-react";
-import { useCart } from "@/components/CartContext";
-import { cartItemLabel, defaultVariantId, hasVariants, resolvePrice, type Product } from "@/content/products";
-import { cartItemLabelEn, getProductTranslation } from "@/content/products.en";
+import { useAddProduct } from "@/components/useAddProduct";
+import { defaultVariantId, hasVariants, type Product } from "@/content/products";
+import { getProductTranslation } from "@/content/products.en";
 import { formatMXN } from "@/lib/format";
 import { UI, type Lang } from "@/lib/i18n";
 
@@ -31,7 +31,7 @@ export function AddToCartButton({
   // there, so that caller stacks them instead of squeezing them in a row.
   stackActions?: boolean;
 }) {
-  const { addItem } = useCart();
+  const addProduct = useAddProduct(lang);
   const router = useRouter();
   const [justAdded, setJustAdded] = useState(false);
   const [variantId, setVariantId] = useState<string | undefined>(defaultVariantId(product));
@@ -39,19 +39,14 @@ export function AddToCartButton({
   const translation = lang === "en" ? getProductTranslation(product.slug) : undefined;
   const variantLabel = (id: string, fallback: string) => (lang === "en" ? (translation?.variantLabels?.[id] ?? fallback) : fallback);
 
-  const buildItem = () => {
-    const name = lang === "en" ? cartItemLabelEn(product, variantId) : cartItemLabel(product, variantId);
-    return { slug: product.slug, name, price: resolvePrice(product, variantId), variantId };
-  };
-
   const handleAdd = () => {
-    addItem(buildItem());
+    addProduct(product, variantId);
     setJustAdded(true);
     setTimeout(() => setJustAdded(false), 1800);
   };
 
   const handleBuyNow = () => {
-    addItem(buildItem());
+    addProduct(product, variantId);
     router.push(lang === "en" ? "/en/cart" : "/carrito");
   };
 

@@ -3,8 +3,9 @@
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { ShoppingBag, Check, CheckCircle2, Clock, MapPin, MessageCircle, Truck, Zap } from "lucide-react";
-import { useCart } from "@/components/CartContext";
-import { cartItemLabel, defaultVariantId, hasVariants, resolvePrice, type Product } from "@/content/products";
+import { useAddProduct } from "@/components/useAddProduct";
+import { QtyInput } from "@/components/QtyInput";
+import { cartItemLabel, defaultVariantId, hasVariants, MAX_PIECES, pieceCount, resolvePrice, tieredPrice, wholesaleRate, type Product } from "@/content/products";
 import { cartItemLabelEn, getProductTranslation } from "@/content/products.en";
 import { waLink } from "@/content/site";
 import { CASABLANCA_PRICE, FREE_SHIPPING_THRESHOLD, NATIONAL_SHIPPING_PRICE } from "@/content/shipping";
@@ -22,9 +23,10 @@ const WA_QUOTE_MSG = {
 };
 
 export function ProductPurchase({ product, lang = "es" }: { product: Product; lang?: Lang }) {
-  const { addItem } = useCart();
+  const addProduct = useAddProduct(lang);
   const router = useRouter();
   const [variantId, setVariantId] = useState<string | undefined>(defaultVariantId(product));
+  const [units, setUnits] = useState(1);
   const [justAdded, setJustAdded] = useState(false);
   const [showBar, setShowBar] = useState(false);
   const addButtonRef = useRef<HTMLButtonElement>(null);
@@ -35,38 +37,23 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
   const label = lang === "en" ? cartItemLabelEn(product, variantId) : cartItemLabel(product, variantId);
   const variantLabel = (variantIdValue: string, fallback: string) =>
     lang === "en" ? (translation?.variantLabels?.[variantIdValue] ?? fallback) : fallback;
-  const selected = product.variants?.find((variant) => variant.id === variantId);
-  const qty = selected ? Number(selected.id) : NaN;
-  const isQuantityTier = Number.isFinite(qty) && qty > 0;
-  const variants = product.variants ?? [];
-  const base = variants[0];
-  const baseRate = base ? base.price / Number(base.id) : 0;
-  const savings = selected ? qty * baseRate - selected.price : 0;
-  const pct = selected ? Math.round((savings / (qty * baseRate)) * 100) : 0;
-  // Wholesale tier, derived from the variant prices: the last quantity
-  // still at the base rate, and the cheaper per-piece rate after it.
-  const stepQty = variants.length >= 2 ? Number(variants[1].id) - Number(variants[0].id) : 0;
-  const stepPrice = variants.length >= 2 ? variants[1].price - variants[0].price : 0;
-  const tierBreak = variants.findIndex((v, i) => i > 0 && v.price - variants[i - 1].price < stepPrice);
-  const wholesale =
-    tierBreak > 0
-      ? {
-          qty: variants[tierBreak - 1].id,
-          price: variants[tierBreak - 1].price,
-          baseUnit: stepPrice / stepQty,
-          unit: (variants[tierBreak].price - variants[tierBreak - 1].price) / stepQty,
-        }
-      : null;
-  const isTieredProduct = variants.length > 0 && variants.every((variant) => Number.isFinite(Number(variant.id)));
+  // Per-piece products: the piece count IS the variant (presets or typed),
+  // so there's no separate units control; everything else gets one.
+  const tiers = product.tiers;
+  const pieces = pieceCount(product, variantId);
+  const lineTotal = tiers ? price : price * units;
+  const savings = tiers && pieces ? pieces * tiers.rate - price : 0;
+  const pct = tiers && pieces ? Math.round((savings / (pieces * tiers.rate)) * 100) : 0;
+  const isPreset = product.variants?.some((v) => v.id === variantId);
 
   const handleAdd = () => {
-    addItem({ slug: product.slug, name: label, price, variantId });
+    addProduct(product, variantId, tiers ? 1 : units);
     setJustAdded(true);
     setTimeout(() => setJustAdded(false), 1800);
   };
 
   const handleBuyNow = () => {
-    addItem({ slug: product.slug, name: label, price, variantId });
+    addProduct(product, variantId, tiers ? 1 : units);
     router.push(lang === "en" ? "/en/cart" : "/carrito");
   };
 
@@ -82,19 +69,22 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
   }, []);
 
   const waMsg = WA_QUOTE_MSG[lang](label, formatMXN(price));
-  const guidance = isTieredProduct
-    ? t.whatsappGuidanceTiered.replace("{maxQty}", String(Number(variants[variants.length - 1].id)))
-    : t.whatsappGuidance;
+  const guidance = t.whatsappGuidance;
 
   return (
     <div className="mt-4">
       <p className="text-2xl font-semibold text-ink">
-        {formatMXN(price)} <span className="text-sm font-normal text-ink-soft">MXN</span>
+        {formatMXN(lineTotal)} <span className="text-sm font-normal text-ink-soft">MXN</span>
       </p>
-      {selected && isQuantityTier && (
+      {!tiers && units > 1 && (
+        <p className="mt-1 text-sm text-ink">
+          {units} × {formatMXN(price)}
+        </p>
+      )}
+      {pieces && (
         <>
           <p className="mt-1 text-sm text-ink">
-            {qty} {t.pieces} · {formatMXN(selected.price)} · {formatMXN(selected.price / qty)}{t.perPieceSuffix}
+            {pieces} {t.pieces} · {formatMXN(price)} · {formatMXN(price / pieces)}{t.perPieceSuffix}
           </p>
           {savings > 0 && (
             <p className="mt-0.5 text-xs font-semibold text-brand">
@@ -115,13 +105,33 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
             onChange={(e) => setVariantId(e.target.value)}
             className="mt-2 block w-full rounded-xl border border-line bg-paper px-4 py-3 text-sm text-ink"
           >
+            {!isPreset && pieces && (
+              <option value={variantId}>
+                {pieces} {t.pieces} · {formatMXN(price)} MXN
+              </option>
+            )}
             {product.variants!.map((v) => (
               <option key={v.id} value={v.id}>
                 {variantLabel(v.id, v.label)} · {formatMXN(v.price)} MXN
-                {wholesale && Number(v.id) > Number(wholesale.qty) ? ` · ${t.wholesaleTag}` : ""}
+                {tiers && Number(v.id) > tiers.discountQty ? ` · ${t.wholesaleTag}` : ""}
               </option>
             ))}
           </select>
+          {tiers && pieces && (
+            <div className="mt-3 flex flex-wrap items-center gap-3">
+              <span className="text-sm text-ink-soft">{t.orTypePieces}</span>
+              <QtyInput
+                value={pieces}
+                min={tiers.baseQty}
+                max={MAX_PIECES}
+                step={tiers.stepQty}
+                onChange={(n) => setVariantId(String(n))}
+                label={t.piecesInputLabel}
+                decreaseLabel={t.decreaseQty}
+                increaseLabel={t.increaseQty}
+              />
+            </div>
+          )}
         </div>
       )}
 
@@ -154,20 +164,35 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
         </fieldset>
       )}
 
-      {selected && isQuantityTier && wholesale && (
+      {tiers && (
         <div className="mt-3 rounded-xl bg-brand-tint px-4 py-3 text-sm">
           <p className="text-ink">
             {t.tierBase
-              .replace("{qty}", wholesale.qty)
-              .replace("{price}", formatMXN(wholesale.price))
-              .replace("{unit}", formatMXN(wholesale.baseUnit))}
+              .replace("{qty}", String(tiers.discountQty))
+              .replace("{price}", formatMXN(tieredPrice(tiers, tiers.discountQty)))
+              .replace("{unit}", formatMXN(tiers.rate))}
           </p>
           <p className="mt-1 font-semibold text-brand-deep">
             {t.tierWholesale
-              .replace("{qty}", wholesale.qty)
-              .replace("{unit}", formatMXN(wholesale.unit))
-              .replace("{pct}", String(Math.round((1 - wholesale.unit / wholesale.baseUnit) * 100)))}
+              .replace("{qty}", String(tiers.discountQty))
+              .replace("{unit}", formatMXN(wholesaleRate(tiers)))
+              .replace("{pct}", String(Math.round((1 - wholesaleRate(tiers) / tiers.rate) * 100)))}
           </p>
+        </div>
+      )}
+
+      {!tiers && (
+        <div className="mt-5 flex items-center gap-3">
+          <span className="text-xs uppercase tracking-[0.15em] text-ink-soft">{t.unitsLabel}</span>
+          <QtyInput
+            value={units}
+            min={1}
+            max={99}
+            onChange={setUnits}
+            label={t.unitsLabel}
+            decreaseLabel={t.decreaseQty}
+            increaseLabel={t.increaseQty}
+          />
         </div>
       )}
 
@@ -216,8 +241,8 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
       >
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4">
           <div className="min-w-0">
-            <p className="truncate text-base font-semibold text-ink">{formatMXN(selected?.price ?? product.price)}</p>
-            <p className="truncate text-xs text-ink-soft">{selected ? variantLabel(selected.id, selected.label) : product.name}</p>
+            <p className="truncate text-base font-semibold text-ink">{formatMXN(lineTotal)}</p>
+            <p className="truncate text-xs text-ink-soft">{pieces ? `${pieces} ${t.pieces}` : units > 1 ? `${units} × ${product.name}` : label}</p>
           </div>
           {/* One CTA only: two buttons squeezed the price to "$100..." at 390px. */}
           <button type="button" onClick={handleBuyNow} className="btn-soft btn-soft-solid min-h-11 shrink-0 px-5 text-sm">

@@ -86,7 +86,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Qué cantidad pedir",
         body: [
-          "Vendemos por cantidad de piezas, no por hoja: el mínimo de compra son 50 piezas por $100, y a partir de 100 piezas cada 25 piezas extra tienen 20% de descuento: suficiente para ajustar el pedido al tamaño real de tu emprendimiento sin comprar de más.",
+          "Vendemos por cantidad de piezas, no por hoja: las primeras 100 piezas cuestan $200 y, pasando las 100, cada pieza extra va a precio mayoreo ($1.60, 20% menos); y si necesitas menos, puedes pedir desde 50: suficiente para ajustar el pedido al tamaño real de tu emprendimiento sin comprar de más.",
           "Todas nuestras etiquetas son resistentes al agua, así que aguantan bien en empaques que se pueden mojar o manejar seguido (bolsas, botellas, envíos). Cuéntanos la forma o el tamaño que prefieres al cotizar, y te mandamos una prueba digital antes de imprimir.",
         ],
       },
@@ -314,7 +314,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Cantidad y precio",
         body: [
-          "Los stickers de vinil se venden por cantidad de piezas, no por planilla: el mínimo son 40 piezas por $100, y a partir de 100 piezas cada 10 piezas extra tienen 20% de descuento: 110 piezas quedan en $270, 120 en $290.",
+          "Los stickers de vinil se venden por cantidad de piezas, no por planilla: las primeras 100 piezas cuestan $250 y, pasando las 100, cada pieza extra va a precio mayoreo ($2.00, 20% menos): 150 piezas quedan en $350 y 200 en $450.",
           "Es el mismo vinil premium resistente al agua, al sol y a rayones que usamos para cualquier otro diseño personalizado, así que aguanta bien en botellas de agua, laptops o donde quieras pegarlo.",
         ],
       },

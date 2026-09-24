@@ -16,6 +16,9 @@ interface CartContextValue {
   items: CartItem[];
   addItem: (item: Omit<CartItem, "qty">, qty?: number) => void;
   removeItem: (slug: string, variantId?: string) => void;
+  /** Swap one line for another in place (e.g. a new piece count), merging
+   * into an identical line if one exists. `announce` shows the add toast. */
+  replaceLine: (old: { slug: string; variantId?: string }, item: Omit<CartItem, "qty">, qty?: number, announce?: boolean) => void;
   updateQty: (slug: string, qty: number, variantId?: string) => void;
   clear: () => void;
   count: number;
@@ -99,6 +102,23 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
 
   const dismissAdded = useCallback(() => setLastAdded(null), []);
 
+  const replaceLine = useCallback(
+    (old: { slug: string; variantId?: string }, item: Omit<CartItem, "qty">, qty = 1, announce = false) => {
+      setItems((prev) => {
+        const isOld = (i: CartItem) => i.slug === old.slug && i.variantId === old.variantId;
+        const at = prev.findIndex(isOld);
+        const rest = prev.filter((i) => !isOld(i));
+        const twin = rest.find((i) => i.slug === item.slug && i.variantId === item.variantId);
+        if (twin) return rest.map((i) => (i === twin ? { ...i, qty: i.qty + qty } : i));
+        const next = [...rest];
+        next.splice(at < 0 ? next.length : at, 0, { ...item, qty });
+        return next;
+      });
+      if (announce) setLastAdded({ id: Date.now(), name: item.name });
+    },
+    [],
+  );
+
   const removeItem = useCallback((slug: string, variantId?: string) => {
     setItems((prev) => prev.filter((i) => !(i.slug === slug && i.variantId === variantId)));
   }, []);
@@ -115,7 +135,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   const total = useMemo(() => items.reduce((sum, i) => sum + i.qty * i.price, 0), [items]);
 
   return (
-    <CartContext.Provider value={{ items, addItem, removeItem, updateQty, clear, count, total, lastAdded, dismissAdded }}>
+    <CartContext.Provider value={{ items, addItem, replaceLine, removeItem, updateQty, clear, count, total, lastAdded, dismissAdded }}>
       {children}
     </CartContext.Provider>
   );
