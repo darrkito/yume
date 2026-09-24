@@ -163,7 +163,15 @@ Soft and a little imperfect: rounded, warm-shadowed, gently tilted where it fits
 ### Navigation
 - Sticky header, warm-paper background at 95% opacity with a light backdrop blur, single hairline bottom border (Warm Line). Nav links are plain-weight Karla, no uppercase, no letter-spacing chrome — the previous mono-caps nav treatment is retired. Active/hover state is a simple color shift to burgundy, no underline or background change.
 
+### Quantity input
+- `QtyInput`: pill outline (`border-line`, paper bg), 44px −/+ buttons in soft ink that turn burgundy on hover, a borderless tabular-number field in the middle with native spin buttons removed. Same component on product pages and in the cart.
+
+### Confirmation toast
+- `CartToast` is a `card-soft` resting at `rotate(-1deg)`, just under the header's cart icon (aligned to the header content edge on wide screens, full-width minus 16px gutters on phones). Its entrance is the site's one authored motion moment, **sticker-press**: lands lifted (−6deg, 1.05 scale, deep shadow) and settles to −1deg as the shadow presses down, 480ms `cubic-bezier(0.16, 1, 0.3, 1)`; exit **sticker-lift** 180ms ease-in. Reduced motion: plain 150ms fade. Burgundy check roundel, solid "Ver carrito" + outline "Seguir viendo".
+
 ### Tags / Labels
+- **Pickup badge** (`PickupBadge`): outline pill (paper bg, `brand/30` border, burgundy text, map-pin icon), top-right of product-card photos; the solid burgundy "Nuevo" pill owns top-left.
+- **Wholesale callout** (PDP): Blush Tint box, ink line for "Primeras 100 piezas", Burgundy Deep semibold line for "precio mayoreo".
 - Category tags render as small pill badges: Blush Tint background, Burgundy Deep text, no border. Metadata labels (spec names, form labels) are plain uppercase Karla at small size and soft-ink color, not pill-shaped.
 
 ## Do's and Don'ts
@@ -176,6 +184,9 @@ Soft and a little imperfect: rounded, warm-shadowed, gently tilted where it fits
 - **Do** keep body copy in Karla and any headline/product-name in Playfair Display.
 - **Do** keep `.desk-lamp-wash` to at most one per page, on a genuine above-the-fold moment.
 - **Do** write all new copy (headlines, buttons, captions, new blog posts) without em-dashes — use a period, comma, or restructure the sentence instead. Doesn't apply retroactively to already-published copy (see CLAUDE.md's taste-skill audit note) unless a copy rewrite is separately requested.
+
+- **Do** keep motion easing exponential (`cubic-bezier(0.16, 1, 0.3, 1)`); no bounce/elastic overshoot (the cart badge `pop` was changed from overshoot to a settle for this reason).
+- **Do** let a straightened (hovered) tilted card also lift its shadow, so it reads as picked up.
 
 ### Don't:
 - **Don't** reintroduce sharp (0-radius) corners, mono-caps uppercase chrome strips, numbered index cards, or a black/inverted section — all confirmed anti-references from the Swiss-editorial pass this system replaced.
