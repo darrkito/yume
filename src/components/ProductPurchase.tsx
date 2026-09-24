@@ -43,8 +43,20 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
   const baseRate = base ? base.price / Number(base.id) : 0;
   const savings = selected ? qty * baseRate - selected.price : 0;
   const pct = selected ? Math.round((savings / (qty * baseRate)) * 100) : 0;
+  // Wholesale tier, derived from the variant prices: the last quantity
+  // still at the base rate, and the cheaper per-piece rate after it.
   const stepQty = variants.length >= 2 ? Number(variants[1].id) - Number(variants[0].id) : 0;
   const stepPrice = variants.length >= 2 ? variants[1].price - variants[0].price : 0;
+  const tierBreak = variants.findIndex((v, i) => i > 0 && v.price - variants[i - 1].price < stepPrice);
+  const wholesale =
+    tierBreak > 0
+      ? {
+          qty: variants[tierBreak - 1].id,
+          price: variants[tierBreak - 1].price,
+          baseUnit: stepPrice / stepQty,
+          unit: (variants[tierBreak].price - variants[tierBreak - 1].price) / stepQty,
+        }
+      : null;
   const isTieredProduct = variants.length > 0 && variants.every((variant) => Number.isFinite(Number(variant.id)));
 
   const handleAdd = () => {
@@ -106,6 +118,7 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
             {product.variants!.map((v) => (
               <option key={v.id} value={v.id}>
                 {variantLabel(v.id, v.label)} · {formatMXN(v.price)} MXN
+                {wholesale && Number(v.id) > Number(wholesale.qty) ? ` · ${t.wholesaleTag}` : ""}
               </option>
             ))}
           </select>
@@ -141,14 +154,21 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
         </fieldset>
       )}
 
-      {selected && isQuantityTier && variants.length >= 2 && (
-        <p className="mt-2 text-xs text-ink-soft">
-          {t.tierExplainer
-            .replace("{baseQty}", variants[0].id)
-            .replace("{basePrice}", formatMXN(variants[0].price))
-            .replace("{stepQty}", String(stepQty))
-            .replace("{stepPrice}", formatMXN(stepPrice))}
-        </p>
+      {selected && isQuantityTier && wholesale && (
+        <div className="mt-3 rounded-xl bg-brand-tint px-4 py-3 text-sm">
+          <p className="text-ink">
+            {t.tierBase
+              .replace("{qty}", wholesale.qty)
+              .replace("{price}", formatMXN(wholesale.price))
+              .replace("{unit}", formatMXN(wholesale.baseUnit))}
+          </p>
+          <p className="mt-1 font-semibold text-brand-deep">
+            {t.tierWholesale
+              .replace("{qty}", wholesale.qty)
+              .replace("{unit}", formatMXN(wholesale.unit))
+              .replace("{pct}", String(Math.round((1 - wholesale.unit / wholesale.baseUnit) * 100)))}
+          </p>
+        </div>
       )}
 
       <div className="mt-6 flex flex-col items-start">
