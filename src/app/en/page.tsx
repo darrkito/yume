@@ -302,19 +302,24 @@ export default function HomeEn() {
       <section className="border-t border-line bg-brand-tint/60">
         <div className="mx-auto flex max-w-6xl flex-col items-start gap-6 px-6 py-16 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <h2 className="font-display text-2xl text-ink text-balance sm:text-3xl">Have a design in mind?</h2>
+            <h2 className="font-display text-2xl text-ink text-balance sm:text-3xl">Ready to order?</h2>
             <p className="mt-2 max-w-md text-sm leading-relaxed text-ink-soft">
-              Get a free quote via WhatsApp and we&apos;ll reply with pricing and timing, no strings attached.
+              Pick from the shop and pay online, or get a free WhatsApp quote for something custom.
             </p>
           </div>
-          <CtaFillLink
-            href={waLink("Hi, I'm interested in getting a quote for a Yume product.")}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-soft btn-soft-outline shrink-0"
-          >
-            Quote via WhatsApp
-          </CtaFillLink>
+          <div className="flex shrink-0 flex-wrap gap-3">
+            <Link href="/en/products" className="btn-soft btn-soft-solid">
+              See products &amp; prices
+            </Link>
+            <CtaFillLink
+              href={waLink("Hi, I'm interested in getting a quote for a Yume product.")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-soft btn-soft-outline"
+            >
+              Quote via WhatsApp
+            </CtaFillLink>
+          </div>
         </div>
       </section>
     </>

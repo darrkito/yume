@@ -3,14 +3,19 @@ import Link from "next/link";
 export default function NotFound() {
   return (
     <section className="mx-auto flex min-h-[60vh] max-w-xl flex-col items-center justify-center px-6 py-24 text-center">
-      <h1 className="font-display text-5xl text-ink">404</h1>
-      <p className="mt-3 text-lg font-semibold text-ink">Página no encontrada</p>
-      <p className="mt-2 max-w-md text-sm leading-relaxed text-ink-soft">
-        La página que buscas no existe o fue movida. Visita nuestra tienda para ver los productos disponibles.
+      <p className="text-xs font-semibold text-ink-soft">404</p>
+      <h1 className="mt-2 font-display text-4xl text-ink text-balance sm:text-5xl">Esta hoja se quedó en blanco</h1>
+      <p className="mt-4 max-w-md text-sm leading-relaxed text-ink-soft">
+        La página que buscas no existe o cambió de lugar. Lo que sí sigue aquí: todos nuestros productos, con precios desde $100.
       </p>
-      <Link href="/" className="mt-6 inline-flex min-h-11 items-center text-sm font-semibold text-brand hover:text-brand-deep">
-        Volver al inicio
-      </Link>
+      <div className="mt-8 flex flex-wrap justify-center gap-3">
+        <Link href="/productos" className="btn-soft btn-soft-solid">
+          Ver la tienda
+        </Link>
+        <Link href="/" className="btn-soft btn-soft-outline">
+          Volver al inicio
+        </Link>
+      </div>
       <p className="mt-8 text-sm text-ink-soft">
         También puedes revisar la{" "}
         <Link href="/productos" className="underline hover:text-ink">tienda</Link>,{" "}

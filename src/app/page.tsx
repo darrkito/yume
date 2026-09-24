@@ -276,19 +276,24 @@ export default function Home() {
       <section className="border-t border-line bg-brand-tint/60">
         <div className="mx-auto flex max-w-6xl flex-col items-start gap-6 px-6 py-16 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <h2 className="font-display text-2xl text-ink text-balance sm:text-3xl">¿Tienes un diseño en mente?</h2>
+            <h2 className="font-display text-2xl text-ink text-balance sm:text-3xl">¿Listo para tu pedido?</h2>
             <p className="mt-2 max-w-md text-sm leading-relaxed text-ink-soft">
-              Cotiza gratis por WhatsApp y te respondemos con precio y tiempos, sin compromiso.
+              Elige en la tienda y paga en línea, o cotiza gratis por WhatsApp si buscas algo a tu medida.
             </p>
           </div>
-          <CtaFillLink
-            href={waLink("Hola, me interesa cotizar un producto de Yume.")}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-soft btn-soft-outline shrink-0"
-          >
-            Cotizar por WhatsApp
-          </CtaFillLink>
+          <div className="flex shrink-0 flex-wrap gap-3">
+            <Link href="/productos" className="btn-soft btn-soft-solid">
+              Ver productos y precios
+            </Link>
+            <CtaFillLink
+              href={waLink("Hola, me interesa cotizar un producto de Yume.")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-soft btn-soft-outline"
+            >
+              Cotizar por WhatsApp
+            </CtaFillLink>
+          </div>
         </div>
       </section>
     </>

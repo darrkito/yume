@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useCallback, useMemo, useSyncExternalStore } from "react";
+import { createContext, useContext, useCallback, useMemo, useState, useSyncExternalStore } from "react";
 
 export interface CartItem {
   slug: string;
@@ -20,6 +20,9 @@ interface CartContextValue {
   clear: () => void;
   count: number;
   total: number;
+  /** Most recent add, for the confirmation toast. `id` changes on every add. */
+  lastAdded: { id: number; name: string } | null;
+  dismissAdded: () => void;
 }
 
 const CartContext = createContext<CartContextValue | null>(null);
@@ -79,6 +82,7 @@ function setItems(updater: (prev: CartItem[]) => CartItem[]) {
 
 export function CartProvider({ children }: { children: React.ReactNode }) {
   const items = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
+  const [lastAdded, setLastAdded] = useState<CartContextValue["lastAdded"]>(null);
 
   const addItem = useCallback((item: Omit<CartItem, "qty">, qty = 1) => {
     setItems((prev) => {
@@ -90,7 +94,10 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
       }
       return [...prev, { ...item, qty }];
     });
+    setLastAdded({ id: Date.now(), name: item.name });
   }, []);
+
+  const dismissAdded = useCallback(() => setLastAdded(null), []);
 
   const removeItem = useCallback((slug: string, variantId?: string) => {
     setItems((prev) => prev.filter((i) => !(i.slug === slug && i.variantId === variantId)));
@@ -108,7 +115,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   const total = useMemo(() => items.reduce((sum, i) => sum + i.qty * i.price, 0), [items]);
 
   return (
-    <CartContext.Provider value={{ items, addItem, removeItem, updateQty, clear, count, total }}>
+    <CartContext.Provider value={{ items, addItem, removeItem, updateQty, clear, count, total, lastAdded, dismissAdded }}>
       {children}
     </CartContext.Provider>
   );
