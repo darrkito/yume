@@ -10,6 +10,7 @@ import { waLink } from "@/content/site";
 import { CheckCircle2, Clock, Truck } from "lucide-react";
 import { PRODUCT_SLUG_EN, UI } from "@/lib/i18n";
 import { pageMetadata, productSchema, breadcrumbSchema } from "@/lib/seo";
+import { PickupBadge } from "@/components/PickupBadge";
 
 export const metadata: Metadata = pageMetadata({
   title: "Shop Custom Stationery and Prescription Pads Online",
@@ -44,6 +45,7 @@ export default function ProductsPageEn() {
             <div key={p.slug} className={`card-soft group flex flex-col p-6 ${i % 2 === 0 ? "tilt-a" : "tilt-b"}`}>
               <Link href={`/en/products/${PRODUCT_SLUG_EN[p.slug]}`}>
                 <div className="relative flex h-48 justify-center overflow-hidden">
+                  <PickupBadge lang="en" />
                   {p.isNew && (
                     <span className="absolute left-0 top-0 z-10 rounded-full bg-brand px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-white shadow-sm">
                       New

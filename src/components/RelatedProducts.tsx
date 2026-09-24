@@ -5,6 +5,7 @@ import { ProductVisual } from "@/components/ProductVisual";
 import { AddToCartButton } from "@/components/AddToCartButton";
 import { formatMXN } from "@/lib/format";
 import { PRODUCT_SLUG_EN, type Lang } from "@/lib/i18n";
+import { PickupBadge } from "@/components/PickupBadge";
 
 const MAX_ITEMS = 3;
 
@@ -41,7 +42,8 @@ export function RelatedProducts({ excludeSlugs, lang = "es", heading }: { exclud
               className={`card-soft animate-fade-up animate-fade-up-1 flex flex-col p-5 ${i % 2 === 0 ? "tilt-a" : "tilt-b"}`}
             >
               <Link href={href} className="group flex flex-col">
-                <div className="flex h-32 justify-center overflow-hidden">
+                <div className="relative flex h-32 justify-center overflow-hidden">
+                  <PickupBadge lang={lang} />
                   <div className="product-card-visual">
                     <ProductVisual product={p} compact />
                   </div>

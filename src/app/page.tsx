@@ -12,6 +12,7 @@ import { AddToCartButton } from "@/components/AddToCartButton";
 import { FaqQuestion } from "@/components/FaqAccordion";
 import { InfiniteGalleryStrip } from "@/components/InfiniteGalleryStrip";
 import { galleryItems } from "@/content/gallery";
+import { PickupBadge } from "@/components/PickupBadge";
 
 const NO_MINIMUMS = [
   "Un recetario o desde 40-50 piezas de stickers, no cientos",
@@ -172,6 +173,7 @@ export default function Home() {
               <div key={p.slug} className={`card-soft flex flex-col p-7 ${i % 2 === 0 ? "tilt-a" : "tilt-b"}`}>
                 <Link href={`/productos/${p.slug}`} className="group flex flex-col">
                   <div className="relative flex h-48 justify-center overflow-hidden">
+                    <PickupBadge lang="es" />
                     {p.isNew && (
                       <span className="absolute left-0 top-0 z-10 rounded-full bg-brand px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-white shadow-sm">
                         Nuevo
