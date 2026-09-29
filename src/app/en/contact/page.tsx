@@ -23,10 +23,10 @@ export default function ContactPageEn() {
 
       <div className="mt-12 space-y-6">
         <a
-          href={waLink("Hi, I'd like to get a quote for a Yume product.")}
+          href={waLink("Hi, I'd like to get a quote for a Yume product.\n\nProduct:\nQuantity:\nDo I already have a design? (yes / no):")}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex min-h-11 items-center gap-2 text-base font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+          className="btn-soft btn-soft-solid gap-2"
         >
           <WhatsAppIcon size={20} />
           Get a quote on WhatsApp

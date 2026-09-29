@@ -9,7 +9,8 @@ import type { FaqCategory, FaqItem } from "@/content/faq";
 // <details> — needed so the expand/collapse can animate smoothly via the
 // grid-template-rows trick in globals.css. Native <details> snaps open
 // instantly with no way to transition it cross-browser.
-export function FaqQuestion({ item }: { item: FaqItem }) {
+export function FaqQuestion({ item, fallbackCta }: { item: FaqItem; fallbackCta?: FaqItem["cta"] }) {
+  const cta = item.cta ?? fallbackCta;
   const [open, setOpen] = useState(false);
   const panelId = useId();
 
@@ -39,6 +40,16 @@ export function FaqQuestion({ item }: { item: FaqItem }) {
       <div id={panelId} className="faq-panel" data-open={open}>
         <div>
           <p className="mt-3 text-sm leading-relaxed text-ink-soft">{item.a}</p>
+          {cta && (
+            <a
+              href={cta.href}
+              {...(cta.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+              tabIndex={open ? undefined : -1}
+              className="mt-2 inline-flex min-h-11 items-center text-sm font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+            >
+              {cta.label} →
+            </a>
+          )}
         </div>
       </div>
     </div>
@@ -61,7 +72,15 @@ export function FaqAccordion({ categories }: { categories: FaqCategory[] }) {
           </h2>
           <div className="mt-4 divide-y divide-line border-y border-line">
             {category.items.map((item) => (
-              <FaqQuestion key={item.q} item={item} />
+              <FaqQuestion
+                key={item.q}
+                item={item}
+                fallbackCta={
+                  category.href
+                    ? { label: category.href.startsWith("/en") ? "See product" : "Ver producto", href: category.href }
+                    : undefined
+                }
+              />
             ))}
           </div>
         </div>

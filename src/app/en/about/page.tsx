@@ -54,7 +54,7 @@ export default function AboutPageEn() {
           href={waLink("Hi, I'd like to know more about Yume.")}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex min-h-11 items-center gap-1.5 text-sm font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+          className="btn-soft btn-soft-solid gap-1.5"
         >
           <MessageCircle size={16} aria-hidden="true" />
           Message us on WhatsApp

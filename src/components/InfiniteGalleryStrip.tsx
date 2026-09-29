@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { GalleryItem } from "@/content/gallery";
+import { productHrefFor } from "@/lib/gallery-links";
 
 interface InfiniteGalleryStripProps {
   items: (GalleryItem & { title: string; alt: string })[];
@@ -8,6 +9,8 @@ interface InfiniteGalleryStripProps {
   body: string;
   viewAllLabel: string;
   viewAllHref: string;
+  /** When set, each thumbnail links to its category's product instead of the gallery. */
+  productLinksLang?: "es" | "en";
 }
 
 // Decorative "trabajos realizados" strip for sticker product pages — an
@@ -15,7 +18,7 @@ interface InfiniteGalleryStripProps {
 // The track is the item list rendered twice back to back so translateX(-50%)
 // loops seamlessly; aria-hidden on the duplicate half keeps screen readers
 // from hearing every photo twice.
-export function InfiniteGalleryStrip({ items, heading, body, viewAllLabel, viewAllHref }: InfiniteGalleryStripProps) {
+export function InfiniteGalleryStrip({ items, heading, body, viewAllLabel, viewAllHref, productLinksLang }: InfiniteGalleryStripProps) {
   return (
     <div className="mt-20 border-t border-line pt-14">
       <div className="flex flex-wrap items-end justify-between gap-4">
@@ -38,7 +41,7 @@ export function InfiniteGalleryStrip({ items, heading, body, viewAllLabel, viewA
               {group.map((item, i) => (
                 <Link
                   key={`${groupIndex}-${item.slug}-${i}`}
-                  href={viewAllHref}
+                  href={productLinksLang ? productHrefFor(item.category, productLinksLang) : viewAllHref}
                   tabIndex={groupIndex === 1 ? -1 : undefined}
                   className="group relative mx-2 block h-40 w-32 shrink-0 overflow-hidden rounded-xl border border-line bg-paper-raised sm:h-48 sm:w-40"
                 >

@@ -115,6 +115,9 @@ export default function Home() {
             </div>
           ))}
         </div>
+        <Link href="/productos" className="mt-10 inline-flex min-h-11 items-center text-sm font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
+          Elegir mi producto →
+        </Link>
       </section>
 
       {/* Featured product */}
@@ -190,6 +193,7 @@ export default function Home() {
           body="Hello Kitty, Pokémon, Zelda, mascotas, logos y más: mira ejemplos reales de stickers que hemos producido."
           viewAllLabel="Ver galería completa"
           viewAllHref="/galeria"
+        productLinksLang="es"
         />
       </section>
 
@@ -227,6 +231,9 @@ export default function Home() {
               </p>
             </div>
           </div>
+          <Link href="/productos" className="mt-10 inline-flex min-h-11 items-center text-sm font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
+            Ver productos y precios →
+          </Link>
         </div>
       </section>
 

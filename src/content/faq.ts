@@ -1,8 +1,11 @@
 import { getProduct } from "@/content/products";
+import { waLink } from "@/content/site";
 
 export interface FaqItem {
   q: string;
   a: string;
+  /** Next step shown under the answer. Product-category items fall back to their category link. */
+  cta?: { label: string; href: string; external?: boolean };
 }
 
 export interface FaqCategory {
@@ -24,6 +27,7 @@ export const generalFaq: FaqItem[] = [
   {
     q: "¿Puedo pedir un producto personalizado que no está en el catálogo?",
     a: "Sí, también personalizamos tatuajes temporales, invitaciones para eventos, menús y más: cuéntanos qué necesitas al cotizar.",
+    cta: { label: "Cuéntanos qué necesitas por WhatsApp", href: waLink("Hola, me interesa cotizar un producto a la medida."), external: true },
   },
   {
     q: "¿Puedo aprobar el diseño antes de que se produzca?",
@@ -36,14 +40,17 @@ export const generalFaq: FaqItem[] = [
   {
     q: "¿Cómo puedo cotizar o hacer un pedido?",
     a: "Agrega tu producto al carrito y paga en línea con tarjeta, OXXO o SPEI. Si prefieres cotizar primero o necesitas algo a la medida, escríbenos por WhatsApp al 33 3400 5135 o a yume.studiomx@gmail.com.",
+    cta: { label: "Ver la tienda", href: "/productos" },
   },
   {
     q: "¿Tienen entrega local en Guadalajara?",
     a: "Sí: si estás en Guadalajara o la zona metropolitana, puedes elegir recolección en una sucursal de Casa Blanca por $20 MXN en vez de envío a domicilio ($190 MXN). Al pagar eliges la sucursal que te quede mejor (hay 11 en la ZMG); te avisamos por WhatsApp y correo en cuanto tu pedido esté listo, junto con el comprobante que necesitas presentar para recogerlo.",
+    cta: { label: "Ver la tienda", href: "/productos" },
   },
   {
     q: "¿El envío a domicilio tiene costo?",
     a: "Sí, $190 MXN a cualquier parte de México, pero es gratis en compras de $750 MXN o más. La recolección en Casa Blanca (Guadalajara) siempre cuesta $20 MXN, sin importar el monto de tu compra.",
+    cta: { label: "Ver la tienda", href: "/productos" },
   },
 ];
 

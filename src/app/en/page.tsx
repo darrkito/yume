@@ -138,6 +138,9 @@ export default function HomeEn() {
             </div>
           ))}
         </div>
+        <Link href="/en/products" className="mt-10 inline-flex min-h-11 items-center text-sm font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
+          Choose my product →
+        </Link>
       </section>
 
       {/* Featured product */}
@@ -213,6 +216,7 @@ export default function HomeEn() {
           body="Hello Kitty, Pokémon, Zelda, pets, logos and more: see real examples of stickers we've produced."
           viewAllLabel="See the full gallery"
           viewAllHref="/en/gallery"
+        productLinksLang="en"
         />
       </section>
 
@@ -250,6 +254,9 @@ export default function HomeEn() {
               </p>
             </div>
           </div>
+          <Link href="/en/products" className="mt-10 inline-flex min-h-11 items-center text-sm font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
+            See products and prices →
+          </Link>
         </div>
       </section>
 

@@ -4,18 +4,28 @@ import { type Lang } from "@/lib/i18n";
 
 const MAX_ITEMS = 3;
 
+const AUDIENCE: Record<string, "clinic" | "brand"> = {
+  "recetario-medico-personalizado": "clinic",
+  "stickers-logo-personalizado": "brand",
+  "stickers-vinil-impermeable": "brand",
+  "placa-resena-google-nfc": "brand",
+  "stand-resena-google-nfc": "brand",
+};
+
 // Cross-sell block reused on product pages (excludes the current product)
 // and the cart (excludes whatever's already in it): the same ProductCard as
 // the shop grid, just smaller and in more columns.
 export function RelatedProducts({ excludeSlugs, lang = "es", heading }: { excludeSlugs: string[]; lang?: Lang; heading?: string }) {
-  // Same-category products (e.g. the plate and the stand) are the most
-  // relevant cross-sell — bubble them to the front before falling back to
-  // catalog order, so a 3-item slice never drops the one product that's
-  // actually related in favor of unrelated ones earlier in the array.
-  const priorityCategories = new Set(products.filter((p) => excludeSlugs.includes(p.slug)).map((p) => p.category));
+  // Rank by relevance to what's already in view: same category first (plate
+  // and stand), then same audience (stickers + NFC serve brands; the
+  // prescription pad serves clinics), then catalog order. Without this a
+  // sticker cart was offered the prescription pad ahead of the NFC plate.
+  const current = products.filter((p) => excludeSlugs.includes(p.slug));
+  const score = (p: (typeof products)[number]) =>
+    current.some((c) => c.category === p.category) ? 2 : current.some((c) => AUDIENCE[c.slug] === AUDIENCE[p.slug]) ? 1 : 0;
   const others = products
     .filter((p) => !excludeSlugs.includes(p.slug))
-    .sort((a, b) => Number(priorityCategories.has(b.category)) - Number(priorityCategories.has(a.category)))
+    .sort((a, b) => score(b) - score(a))
     .slice(0, MAX_ITEMS);
   if (others.length === 0) return null;
 

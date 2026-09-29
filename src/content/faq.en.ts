@@ -1,4 +1,5 @@
 import type { FaqCategory, FaqItem } from "@/content/faq";
+import { waLink } from "@/content/site";
 import { getProductTranslation } from "@/content/products.en";
 
 export const generalFaqEn: FaqItem[] = [
@@ -9,6 +10,7 @@ export const generalFaqEn: FaqItem[] = [
   {
     q: "Can I order a custom product that isn't in the catalog?",
     a: "Yes, we also customize temporary tattoos, event invitations, menus, and more: tell us what you need when you request a quote.",
+    cta: { label: "Tell us what you need on WhatsApp", href: waLink("Hi, I'm interested in a custom Yume product."), external: true },
   },
   {
     q: "Can I approve the design before it's produced?",
@@ -21,14 +23,17 @@ export const generalFaqEn: FaqItem[] = [
   {
     q: "How can I get a quote or place an order?",
     a: "Add your product to the cart and pay online by card, OXXO, or SPEI. If you'd rather get a quote first or need something custom, message us on WhatsApp at +52 33 3400 5135 or email yume.studiomx@gmail.com.",
+    cta: { label: "See the shop", href: "/en/products" },
   },
   {
     q: "Do you offer local delivery in Guadalajara?",
     a: "Yes, if you're in Guadalajara or the metro area, you can choose pickup at a Casa Blanca branch for $20 MXN instead of home delivery ($190 MXN). At checkout you pick whichever of the 11 ZMG branches works best for you; we'll let you know via WhatsApp and email as soon as your order is ready, along with the proof you need to show at the branch to pick it up.",
+    cta: { label: "See the shop", href: "/en/products" },
   },
   {
     q: "Does home delivery cost anything?",
     a: "Yes, $190 MXN anywhere in Mexico, but it's free on orders of $750 MXN or more. Pickup at Casa Blanca (Guadalajara) always costs $20 MXN, regardless of your order total.",
+    cta: { label: "See the shop", href: "/en/products" },
   },
 ];
 

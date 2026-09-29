@@ -6,6 +6,7 @@ import { products } from "@/content/products";
 import { productsEn } from "@/content/products.en";
 import { SITE, waLink } from "@/content/site";
 import { formatBlogDate } from "@/lib/format";
+import { topicsFor } from "@/lib/blog-topics";
 import { hreflangFor, PRODUCT_SLUG_EN, BLOG_SLUG_ES } from "@/lib/i18n";
 import { BlogProductCard } from "@/components/BlogProductCard";
 
@@ -66,7 +67,7 @@ export default async function BlogPostPageEn({ params }: { params: Promise<{ slu
 
       <div className="animate-fade-up flex items-center gap-3">
         <span className="rounded-full bg-brand-tint px-3 py-1 text-[11px] font-semibold text-brand-deep">
-          {post.category}
+          {topicsFor(post, "en")[0]}
         </span>
         <time dateTime={post.publishedAt} className="text-xs text-ink-soft">
           {formatBlogDate(post.publishedAt)}
@@ -76,7 +77,7 @@ export default async function BlogPostPageEn({ params }: { params: Promise<{ slu
       <p className="animate-fade-up animate-fade-up-2 mt-4 text-sm leading-relaxed text-ink-soft">{post.intro}</p>
 
       <div className="mt-10 space-y-10">
-        {post.sections.map((section) => (
+        {post.sections.map((section, i) => (
           <div key={section.heading}>
             <h2 className="font-display text-xl text-ink">{section.heading}</h2>
             <div className="mt-3 space-y-3">
@@ -86,6 +87,15 @@ export default async function BlogPostPageEn({ params }: { params: Promise<{ slu
                 </p>
               ))}
             </div>
+            {i === 0 && (relatedProducts.length > 0 ? (
+              <Link href={`/en/products/${PRODUCT_SLUG_EN[relatedProducts[0].slug]}`} className="mt-3 inline-flex min-h-11 items-center text-sm font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
+                See {productsEn[relatedProducts[0].slug].name} →
+              </Link>
+            ) : post.quoteMessage ? (
+              <a href={waLink(post.quoteMessage)} target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex min-h-11 items-center text-sm font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
+                Get a Quote on WhatsApp →
+              </a>
+            ) : null)}
           </div>
         ))}
       </div>

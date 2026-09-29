@@ -4,17 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { UI } from "@/lib/i18n";
-
-const CATEGORY_PRODUCT: Record<string, "logos" | "stickers"> = {
-  Logos: "logos",
-};
-// Every other category (Sanrio, Videojuegos, Anime y Terror, Mascotas,
-// Ternurines) is custom vinyl sticker work.
-function productHrefFor(category: string, lang: "es" | "en") {
-  const kind = CATEGORY_PRODUCT[category] ?? "stickers";
-  if (lang === "en") return kind === "logos" ? "/en/products/custom-logo-stickers" : "/en/products/waterproof-vinyl-stickers";
-  return kind === "logos" ? "/productos/stickers-logo-personalizado" : "/productos/stickers-vinil-impermeable";
-}
+import { productHrefFor } from "@/lib/gallery-links";
 
 export interface GalleryGridItem {
   slug: string;

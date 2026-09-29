@@ -40,6 +40,7 @@ export function Header() {
   const lang = pathname.startsWith("/en") ? "en" : "es";
   const navLinks = lang === "en" ? NAV_LINKS_EN : NAV_LINKS_ES;
   const cartHref = lang === "en" ? "/en/cart" : "/carrito";
+  const shopHref = lang === "en" ? "/en/products" : "/productos";
   const t = UI[lang];
 
   useEffect(() => {
@@ -109,10 +110,10 @@ export function Header() {
               </span>
             )}
           </Link>
-          <a href={waLink(WA_QUOTE_MESSAGE[lang])} target="_blank" rel="noopener noreferrer" aria-label={t.quoteWhatsapp} className="flex size-11 items-center justify-center text-ink transition-colors hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand sm:hidden"><MessageCircle size={22} aria-hidden="true" /></a>
-          <a href={waLink(WA_QUOTE_MESSAGE[lang])} target="_blank" rel="noopener noreferrer" className="btn-soft btn-soft-outline hidden sm:inline-flex">
-            {t.quoteWhatsapp}
-          </a>
+          <a href={waLink(WA_QUOTE_MESSAGE[lang])} target="_blank" rel="noopener noreferrer" aria-label={t.quoteWhatsapp} className="flex size-11 items-center justify-center text-ink transition-colors hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"><MessageCircle size={22} aria-hidden="true" /></a>
+          <Link href={shopHref} className="btn-soft btn-soft-solid hidden whitespace-nowrap sm:inline-flex">
+            {t.viewShop}
+          </Link>
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}

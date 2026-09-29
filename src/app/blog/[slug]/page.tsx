@@ -5,6 +5,7 @@ import { blogPosts, getBlogPost } from "@/content/blog";
 import { products } from "@/content/products";
 import { SITE, waLink } from "@/content/site";
 import { formatBlogDate } from "@/lib/format";
+import { topicsFor } from "@/lib/blog-topics";
 import { hreflangFor } from "@/lib/i18n";
 import { BlogProductCard } from "@/components/BlogProductCard";
 
@@ -63,7 +64,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
       <div className="animate-fade-up flex items-center gap-3">
         <span className="rounded-full bg-brand-tint px-3 py-1 text-[11px] font-semibold text-brand-deep">
-          {post.category}
+          {topicsFor(post, "es")[0]}
         </span>
         <time dateTime={post.publishedAt} className="text-xs text-ink-soft">
           {formatBlogDate(post.publishedAt)}
@@ -73,7 +74,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       <p className="animate-fade-up animate-fade-up-2 mt-4 text-sm leading-relaxed text-ink-soft">{post.intro}</p>
 
       <div className="mt-10 space-y-10">
-        {post.sections.map((section) => (
+        {post.sections.map((section, i) => (
           <div key={section.heading}>
             <h2 className="font-display text-xl text-ink">{section.heading}</h2>
             <div className="mt-3 space-y-3">
@@ -83,6 +84,15 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 </p>
               ))}
             </div>
+            {i === 0 && (relatedProducts.length > 0 ? (
+              <Link href={`/productos/${relatedProducts[0].slug}`} className="mt-3 inline-flex min-h-11 items-center text-sm font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
+                Ver {relatedProducts[0].name} →
+              </Link>
+            ) : post.quoteMessage ? (
+              <a href={waLink(post.quoteMessage)} target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex min-h-11 items-center text-sm font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
+                Cotizar por WhatsApp →
+              </a>
+            ) : null)}
           </div>
         ))}
       </div>

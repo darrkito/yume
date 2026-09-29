@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { products } from "@/content/products";
 import { FREE_SHIPPING_THRESHOLD, NATIONAL_SHIPPING_PRICE } from "@/content/shipping";
 import { formatMXN } from "@/lib/format";
@@ -32,7 +33,16 @@ export default function ProductosPage() {
         <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.factProof}</li>
       </ul>
 
-      <div className="mt-14 grid gap-8 sm:grid-cols-2">
+      <nav aria-label="Elegir por uso" className="animate-fade-up animate-fade-up-2 mt-8">
+        <ul className="flex flex-wrap gap-3">
+          <li><Link href="/productos/recetario-medico-personalizado" className="inline-flex min-h-11 items-center rounded-full border border-line bg-paper-raised px-5 text-sm font-semibold text-ink transition-colors hover:border-brand hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">Para tu consultorio</Link></li>
+          <li><Link href="/productos/stickers-logo-personalizado" className="inline-flex min-h-11 items-center rounded-full border border-line bg-paper-raised px-5 text-sm font-semibold text-ink transition-colors hover:border-brand hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">Para tu marca</Link></li>
+          <li><Link href="/productos/stickers-vinil-impermeable" className="inline-flex min-h-11 items-center rounded-full border border-line bg-paper-raised px-5 text-sm font-semibold text-ink transition-colors hover:border-brand hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">Para regalar</Link></li>
+          <li><Link href="/productos/placa-resena-google-nfc" className="inline-flex min-h-11 items-center rounded-full border border-line bg-paper-raised px-5 text-sm font-semibold text-ink transition-colors hover:border-brand hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">Para tener más reseñas</Link></li>
+        </ul>
+      </nav>
+
+      <div className="mt-10 grid gap-8 sm:grid-cols-2">
         {products.map((p, i) => (
           <ProductCard key={p.slug} product={p} index={i} headingAs="h2" />
         ))}

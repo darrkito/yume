@@ -5,29 +5,7 @@ import Link from "next/link";
 import type { BlogPost } from "@/content/blog";
 import { formatBlogDate } from "@/lib/format";
 import type { Lang } from "@/lib/i18n";
-
-// The blog's own `category` field is nearly useless for filtering (16 of
-// 18 posts are "Guías") — `relatedProductSlugs` is the real signal for what
-// a post is actually about, so filter topics are derived from that instead
-// of introducing a second, parallel taxonomy in the content files.
-const TOPIC_BY_PRODUCT: Record<string, { es: string; en: string }> = {
-  "recetario-medico-personalizado": { es: "Recetarios médicos", en: "Prescription pads" },
-  "stickers-logo-personalizado": { es: "Etiquetas y stickers", en: "Labels & stickers" },
-  "stickers-vinil-impermeable": { es: "Etiquetas y stickers", en: "Labels & stickers" },
-  "stand-resena-google-nfc": { es: "Reseñas de Google (NFC/QR)", en: "Google reviews (NFC/QR)" },
-  "placa-resena-google-nfc": { es: "Reseñas de Google (NFC/QR)", en: "Google reviews (NFC/QR)" },
-};
-const OTHER_TOPIC = { es: "Eventos y otros", en: "Events & other" };
-const TOPIC_ORDER = {
-  es: ["Recetarios médicos", "Etiquetas y stickers", "Reseñas de Google (NFC/QR)", "Eventos y otros"],
-  en: ["Prescription pads", "Labels & stickers", "Google reviews (NFC/QR)", "Events & other"],
-};
-
-function topicsFor(post: BlogPost, lang: Lang): string[] {
-  if (post.relatedProductSlugs.length === 0) return [OTHER_TOPIC[lang]];
-  const set = new Set(post.relatedProductSlugs.map((slug) => TOPIC_BY_PRODUCT[slug]?.[lang]).filter((t): t is string => Boolean(t)));
-  return set.size > 0 ? [...set] : [OTHER_TOPIC[lang]];
-}
+import { TOPIC_ORDER, topicsFor } from "@/lib/blog-topics";
 
 export function BlogGrid({
   posts,
@@ -43,7 +21,8 @@ export function BlogGrid({
   readMoreLabel: string;
 }) {
   const [active, setActive] = useState(allLabel);
-  const filtered = active === allLabel ? posts : posts.filter((p) => topicsFor(p, lang).includes(active));
+  const newestFirst = [...posts].sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
+  const filtered = active === allLabel ? newestFirst : newestFirst.filter((p) => topicsFor(p, lang).includes(active));
 
   return (
     <div>
@@ -66,7 +45,7 @@ export function BlogGrid({
         {filtered.map((post, i) => (
           <Link key={post.slug} href={`${basePath}/${post.slug}`} className={`card-soft group flex flex-col p-6 ${i % 2 === 0 ? "tilt-a" : "tilt-b"}`}>
             <div className="flex items-center gap-3">
-              <span className="rounded-full bg-brand-tint px-3 py-1 text-[11px] font-semibold text-brand-deep">{post.category}</span>
+              <span className="rounded-full bg-brand-tint px-3 py-1 text-[11px] font-semibold text-brand-deep">{topicsFor(post, lang)[0]}</span>
               <time dateTime={post.publishedAt} className="text-xs text-ink-soft">
                 {formatBlogDate(post.publishedAt)}
               </time>

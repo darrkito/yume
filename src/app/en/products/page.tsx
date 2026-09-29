@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { products } from "@/content/products";
 import { productsEn } from "@/content/products.en";
 import { FREE_SHIPPING_THRESHOLD, NATIONAL_SHIPPING_PRICE } from "@/content/shipping";
@@ -35,7 +36,16 @@ export default function ProductsPageEn() {
         <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.factProof}</li>
       </ul>
 
-      <div className="mt-14 grid gap-8 sm:grid-cols-2">
+      <nav aria-label="Shop by use" className="animate-fade-up animate-fade-up-2 mt-8">
+        <ul className="flex flex-wrap gap-3">
+          <li><Link href="/en/products/medical-prescription-pads" className="inline-flex min-h-11 items-center rounded-full border border-line bg-paper-raised px-5 text-sm font-semibold text-ink transition-colors hover:border-brand hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">For your practice</Link></li>
+          <li><Link href="/en/products/custom-logo-stickers" className="inline-flex min-h-11 items-center rounded-full border border-line bg-paper-raised px-5 text-sm font-semibold text-ink transition-colors hover:border-brand hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">For your brand</Link></li>
+          <li><Link href="/en/products/waterproof-vinyl-stickers" className="inline-flex min-h-11 items-center rounded-full border border-line bg-paper-raised px-5 text-sm font-semibold text-ink transition-colors hover:border-brand hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">For gifting</Link></li>
+          <li><Link href="/en/products/google-review-nfc-plate" className="inline-flex min-h-11 items-center rounded-full border border-line bg-paper-raised px-5 text-sm font-semibold text-ink transition-colors hover:border-brand hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">For more reviews</Link></li>
+        </ul>
+      </nav>
+
+      <div className="mt-10 grid gap-8 sm:grid-cols-2">
         {products.map((p, i) => (
           <ProductCard key={p.slug} product={p} index={i} headingAs="h2" lang="en" />
         ))}

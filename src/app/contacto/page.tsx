@@ -22,10 +22,10 @@ export default function ContactoPage() {
 
       <div className="mt-12 space-y-6">
         <a
-          href={waLink("Hola, quiero cotizar un producto de Yume.")}
+          href={waLink("Hola, quiero cotizar un producto de Yume.\n\nProducto:\nCantidad:\n¿Ya tengo diseño? (sí / no):")}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex min-h-11 items-center gap-2 text-base font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+          className="btn-soft btn-soft-solid gap-2"
         >
           <WhatsAppIcon size={20} />
           Cotizar por WhatsApp
