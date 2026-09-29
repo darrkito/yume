@@ -6,6 +6,7 @@ import { getFeaturedFaq } from "@/content/faq";
 import { waLink } from "@/content/site";
 import { formatMXN } from "@/lib/format";
 import { HeroJar } from "@/components/HeroJar";
+import { HeroPhotos } from "@/components/HeroPhotos";
 import { CtaFillLink } from "@/components/CtaFillLink";
 import { ProductVisual } from "@/components/ProductVisual";
 import { AddToCartButton } from "@/components/AddToCartButton";
@@ -75,8 +76,9 @@ export default function Home() {
               <li className="flex items-center gap-2"><CheckCircle2 size={16} className="shrink-0 text-brand" aria-hidden="true" />Apruebas el diseño antes de imprimir</li>
             </ul>
           </div>
-          <div className="animate-fade-up animate-fade-up-1 flex min-w-0 justify-center sm:justify-end">
+          <div className="animate-fade-up animate-fade-up-1 flex min-w-0 flex-col items-center sm:items-end">
             <HeroJar />
+            <HeroPhotos lang="es" />
           </div>
         </div>
       </section>

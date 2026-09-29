@@ -4,7 +4,8 @@ import Link from "next/link";
 import { getProduct, productDisplayPrice, products } from "@/content/products";
 import { SITE } from "@/content/site";
 import { NATIONAL_SHIPPING_PRICE } from "@/content/shipping";
-import { ProductVisual } from "@/components/ProductVisual";
+import { ProductMedia } from "@/components/ProductMedia";
+import { productPhotos } from "@/content/product-photos";
 import { ProductPurchase } from "@/components/ProductPurchase";
 import { InfiniteGalleryStrip } from "@/components/InfiniteGalleryStrip";
 import { RelatedProducts } from "@/components/RelatedProducts";
@@ -100,16 +101,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
 
       <div className="grid gap-8 sm:gap-14 sm:grid-cols-2 sm:items-start">
         <div className="sm:sticky sm:top-24 sm:self-start">
-          <div className="product-zoom-frame card-soft relative flex items-center justify-center p-4 [&_img]:max-h-44 [&_img]:w-auto [&_img]:object-contain [&_.product-zoom-img]:max-h-44 sm:[&_img]:max-h-none sm:[&_.product-zoom-img]:max-h-none sm:justify-start sm:p-10">
-            {product.isNew && (
-              <span className="absolute left-4 top-4 z-10 rounded-full bg-brand px-2.5 py-1 text-xs font-semibold text-white shadow-sm">
-                Nuevo
-              </span>
-            )}
-            <div className="product-zoom-img">
-              <ProductVisual product={product} />
-            </div>
-          </div>
+          <ProductMedia product={product} photos={productPhotos(product.slug, "es")} badge={product.isNew ? "Nuevo" : undefined} thumbLabel="Fotos del producto" />
         </div>
 
         <div>

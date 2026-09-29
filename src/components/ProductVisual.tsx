@@ -12,8 +12,11 @@ export function ProductVisual({
   product,
   compact = false,
   priority,
+  photo,
 }: {
   product: Product;
+  /** Show this photo instead of the product's main image (product page picker). */
+  photo?: { src: string; width: number; height: number; alt: string };
   compact?: boolean;
   // Defaults to the non-compact usage (product detail pages) since that's
   // normally the largest image in view. A compact card can still be the
@@ -38,8 +41,10 @@ export function ProductVisual({
     // Real aspect ratio when known, so the frame around the photo matches
     // the photo instead of an arbitrary square — falls back to a square
     // only for the rare case a product image ships without dimensions.
-    const width = product.imageWidth ?? 380;
-    const height = product.imageHeight ?? 380;
+    const src = photo?.src ?? product.image;
+    const alt = photo?.alt ?? product.name;
+    const width = photo?.width ?? product.imageWidth ?? 380;
+    const height = photo?.height ?? product.imageHeight ?? 380;
 
     return (
       <>
@@ -56,8 +61,9 @@ export function ProductVisual({
         >
           {!loaded && <span className="product-image-shimmer" aria-hidden="true" />}
           <Image
-            src={product.image}
-            alt={product.name}
+            key={src}
+            src={src}
+            alt={alt}
             width={width}
             height={height}
             className={compact ? "h-full w-auto max-w-full object-contain" : "h-auto max-h-full w-auto max-w-full object-contain"}
@@ -80,7 +86,7 @@ export function ProductVisual({
               </svg>
             </button>
             <div className="relative max-h-[85vh] w-full max-w-2xl" style={{ aspectRatio: `${width} / ${height}` }}>
-              <Image src={product.image} alt={product.name} fill sizes="90vw" className="object-contain" />
+              <Image src={src} alt={alt} fill sizes="90vw" className="object-contain" />
             </div>
           </div>
         )}
