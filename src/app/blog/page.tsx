@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { blogPosts } from "@/content/blog";
 import { BlogGrid } from "@/components/BlogGrid";
-import { pageMetadata, breadcrumbSchema } from "@/lib/seo";
+import { pageMetadata, breadcrumbSchema, blogPostingEntry } from "@/lib/seo";
 import { SITE } from "@/content/site";
 import { ShopCta } from "@/components/ShopCta";
 
@@ -18,15 +18,7 @@ const blogSchema = {
   name: "Blog de Yume",
   url: `${SITE.url}/blog`,
   publisher: { "@id": `${SITE.url}/#organization` },
-  blogPost: blogPosts.map((p) => ({
-    "@type": "BlogPosting",
-    headline: p.title,
-    url: `${SITE.url}/blog/${p.slug}`,
-    datePublished: p.publishedAt,
-    dateModified: p.modifiedAt ?? p.publishedAt,
-    author: { "@id": `${SITE.url}/#organization` },
-    publisher: { "@id": `${SITE.url}/#organization` },
-  })),
+  blogPost: blogPosts.map((p) => blogPostingEntry(p, { baseUrl: `${SITE.url}/blog` })),
 };
 
 export default function BlogIndexPage() {

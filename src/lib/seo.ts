@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { hreflangFor, enPathToEsPath, type Lang } from "@/lib/i18n";
 import { SITE } from "@/content/site";
-import { hasVariants, productDisplayPrice, type Product } from "@/content/products";
+import { hasVariants, productDisplayPrice, products, type Product } from "@/content/products";
+import type { BlogPost } from "@/content/blog";
 
 // Root cause of the og:url/og:title/og:description/og:locale bug found by
 // the 2026-09-12 SEO audit: static pages that only set title/description
@@ -73,6 +74,7 @@ export function productSchema(product: Product, { name, path }: { name?: string;
     "@id": `${SITE.url}${path}#product`,
     name: name ?? product.name,
     image: `${SITE.url}${product.image ?? "/og-image.jpg"}`,
+    brand: { "@id": `${SITE.url}/#organization` },
     url: `${SITE.url}${path}`,
     offers: {
       "@type": hasVariants(product) ? "AggregateOffer" : "Offer",
@@ -82,5 +84,27 @@ export function productSchema(product: Product, { name, path }: { name?: string;
       url: `${SITE.url}${path}`,
       seller: { "@id": `${SITE.url}/#organization` },
     },
+  };
+}
+
+// Each blogPost[] entry gets a stable @id (so it can be cross-referenced from
+// a single @graph, e.g. by the post's own page-level schema later) and a real
+// `image`: the first related product's actual photo when the post has one
+// (relatedProductSlugs), otherwise the site's real default share image —
+// never a fabricated per-post photo (the blog deliberately has none, see
+// yume_project.md "no stock photos" decision).
+export function blogPostingEntry(post: BlogPost, { baseUrl }: { baseUrl: string }) {
+  const relatedProduct = post.relatedProductSlugs.length > 0 ? products.find((p) => p.slug === post.relatedProductSlugs[0]) : undefined;
+  const url = `${baseUrl}/${post.slug}`;
+  return {
+    "@type": "BlogPosting",
+    "@id": `${url}#article`,
+    headline: post.title,
+    url,
+    image: `${SITE.url}${relatedProduct?.image ?? "/og-image.jpg"}`,
+    datePublished: post.publishedAt,
+    dateModified: post.modifiedAt ?? post.publishedAt,
+    author: { "@id": `${SITE.url}/#organization` },
+    publisher: { "@id": `${SITE.url}/#organization` },
   };
 }
