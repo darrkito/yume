@@ -38,6 +38,7 @@ export const BLOG_SLUG_EN: Record<string, string> = {
   "stickers-para-marca-pequena-vs-grande": "stickers-for-small-vs-large-brands",
   "stickers-para-bodas-eventos-y-fiestas": "stickers-for-weddings-events-and-parties",
   "tatuajes-temporales-para-boda-eventos-y-fiestas": "temporary-tattoos-for-weddings-events-and-parties",
+  "donde-imprimir-stickers-personalizados-mexico": "where-to-print-custom-stickers-mexico",
 };
 
 export const PRODUCT_SLUG_ES: Record<string, string> = Object.fromEntries(

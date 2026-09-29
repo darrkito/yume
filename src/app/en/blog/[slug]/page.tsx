@@ -33,6 +33,9 @@ export default async function BlogPostPageEn({ params }: { params: Promise<{ slu
   if (!post) notFound();
 
   const relatedProducts = products.filter((p) => post.relatedProductSlugs.includes(p.slug));
+  const relatedPosts = (post.relatedBlogSlugs ?? [])
+    .map((s) => getBlogPostEn(s))
+    .filter((p): p is NonNullable<typeof p> => Boolean(p));
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -86,6 +89,24 @@ export default async function BlogPostPageEn({ params }: { params: Promise<{ slu
           </div>
         ))}
       </div>
+
+      {relatedPosts.length > 0 ? (
+        <div className="mt-14">
+          <p className="text-xs font-semibold uppercase tracking-[0.1em] text-brand-deep">Keep reading</p>
+          <ul className="mt-3 space-y-2">
+            {relatedPosts.map((p) => (
+              <li key={p.slug}>
+                <Link
+                  href={`/en/blog/${p.slug}`}
+                  className="text-sm text-ink underline underline-offset-2 hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+                >
+                  {p.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
 
       {relatedProducts.length > 0 ? (
         <div className="card-soft mt-14 p-6">

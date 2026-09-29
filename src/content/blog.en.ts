@@ -71,6 +71,7 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["stickers-logo-personalizado"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"], BLOG_SLUG_EN["stickers-para-empaques-de-negocio"]],
   },
   {
     slug: BLOG_SLUG_EN["papeleria-personalizada-para-negocios-jalisco"],
@@ -403,15 +404,17 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"], BLOG_SLUG_EN["donde-imprimir-stickers-personalizados-mexico"]],
   },
   {
     slug: BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"],
-    title: "Vinyl vs. Paper: Why Your Stickers Should Be Vinyl",
-    metaTitle: "Vinyl vs. Paper Stickers",
+    title: "Vinyl vs. Paper: Why Your Custom Stickers Should Be Vinyl",
+    metaTitle: "Custom Stickers: Vinyl vs. Paper",
     description:
-      "The real difference between a vinyl sticker and a paper sticker (resistance to water, sun, and scratches) and why at Yume we work exclusively with vinyl.",
+      "The real difference between a custom vinyl sticker and a paper sticker (resistance to water, sun, and scratches), and where to design and order yours online.",
     category: "Guides",
     publishedAt: "2026-09-09",
+    modifiedAt: "2026-09-29",
     intro:
       "If you've never ordered custom stickers before, it's easy to miss the difference between vinyl and paper until one gets wet, fades in the sun, or tears when you peel it. Here's the real difference, and why at Yume we work exclusively with vinyl.",
     sections: [
@@ -436,8 +439,16 @@ export const blogPostsEn: BlogPost[] = [
           "That way, whether the sticker ends up on your brand's packaging, your laptop, or a package you're shipping to a customer, you know it'll arrive and hold up in the same condition.",
         ],
       },
+      {
+        heading: "Where to design and order your stickers online",
+        body: [
+          "You don't need a finished design to order: send us your logo, character, photo, or pet (in whatever format you have, even if it's not ideal) via WhatsApp or from the online shop, and we'll build a digital proof of the sticker before printing. You can request size or color adjustments at that stage.",
+          "The whole process happens remotely: you request a quote, approve the design, and receive your order at home no matter what city in Mexico you're in, even though we produce in Guadalajara.",
+        ],
+      },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["yume-vs-imprentas-online-stickers"], BLOG_SLUG_EN["stickers-personalizados-para-negocios-guadalajara"]],
   },
   {
     slug: BLOG_SLUG_EN["menu-de-boda-personalizado"],
@@ -832,6 +843,48 @@ export const blogPostsEn: BlogPost[] = [
     ],
     relatedProductSlugs: [],
     quoteMessage: "Hi, I'm interested in getting a quote for temporary tattoos for a wedding, event, or party.",
+  },
+  {
+    slug: BLOG_SLUG_EN["donde-imprimir-stickers-personalizados-mexico"],
+    title: "Where to Print Custom Stickers in Mexico: What You Need and How to Order",
+    metaTitle: "Where to Print Custom Stickers in Mexico",
+    description:
+      "What you need ready to get your custom stickers printed in Mexico (file, size, quantity) and how ordering online works, without needing to visit a print shop in person.",
+    category: "Guides",
+    publishedAt: "2026-09-29",
+    intro:
+      "If you're looking for where to print custom stickers in Mexico, most options fall into two groups: printing them yourself at home (with vinyl and a special printer) or ordering them from a shop that already has die-cutting equipment. This guide covers the second option: what you need ready and how ordering your stickers online works, without buying equipment or visiting a shop in person.",
+    sections: [
+      {
+        heading: "Printing it yourself vs. ordering it done",
+        body: [
+          "Printing at home makes sense if you already have, or want to invest in, a special printer and vinyl by the roll, and your volume is low. For most businesses and individuals, it's cheaper and simpler to order from a shop that already has die-cutting equipment: no need to buy or learn a machine for an order of 50 or 100 pieces.",
+          "The difference shows most in the finish: a die cut made with professional equipment follows the exact outline of the design, something hard to replicate with scissors or a home cutter.",
+        ],
+      },
+      {
+        heading: "What to have ready before requesting a quote",
+        body: [
+          "Your design, logo, character, or photo (ideally PNG, PDF, AI, or SVG with a transparent background; a JPG or photo also works, though it may need cleanup before printing), the approximate size you want, and the quantity of pieces.",
+          "Your design doesn't need to be 100% finished: a reference or sketch is enough to start a quote and adjust before the digital proof.",
+        ],
+      },
+      {
+        heading: "How ordering online works",
+        body: [
+          "Send your design and quantity via WhatsApp or from the online shop, we confirm price and send you a digital proof of the sticker before printing: you can request size or color adjustments at that stage. Once you approve it, it goes to production and ships anywhere in Mexico.",
+          "The whole process happens remotely, so it works the same whether you're in Guadalajara (where we produce) or any other city in the country.",
+        ],
+      },
+      {
+        heading: "How much it costs to print custom stickers",
+        body: [
+          "At Yume, pricing is by piece count, not by sheet: Custom Logo Stickers start at $100 (50 pieces) and Waterproof Vinyl Stickers start at $100 (40 pieces), with automatic wholesale pricing past 100 pieces. See the full price comparison against other Mexican print shops in the related guide below.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["yume-vs-imprentas-online-stickers"], BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"]],
   },
 ];
 

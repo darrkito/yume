@@ -19,6 +19,11 @@ export interface BlogPost {
   intro: string;
   sections: BlogSection[];
   relatedProductSlugs: string[];
+  /** Slugs of other posts in this same array worth cross-linking (same-language
+   * slugs only — the EN file wires its own EN slugs). Rendered as a "Sigue
+   * leyendo" block; keeps topically related guides actually connected instead
+   * of relying only on relatedProductSlugs (blog->product, never blog->blog). */
+  relatedBlogSlugs?: string[];
   /** WhatsApp quote message shown as the post's CTA when it has no
    * `relatedProductSlugs` yet: e.g. a topic covering a service that isn't
    * a cataloged product yet (still quote-only, handled case by case). */
@@ -99,6 +104,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["stickers-logo-personalizado"],
+    relatedBlogSlugs: ["stickers-vinil-vs-papel-diferencias", "stickers-para-empaques-de-negocio"],
   },
   {
     slug: "papeleria-personalizada-para-negocios-jalisco",
@@ -431,15 +437,17 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
+    relatedBlogSlugs: ["stickers-vinil-vs-papel-diferencias", "donde-imprimir-stickers-personalizados-mexico"],
   },
   {
     slug: "stickers-vinil-vs-papel-diferencias",
-    title: "Vinil vs. papel: por qué tus stickers deberían ser de vinil",
-    metaTitle: "Stickers de vinil vs. de papel",
+    title: "Vinil vs. papel: por qué tus stickers personalizados deberían ser de vinil",
+    metaTitle: "Stickers personalizados: vinil vs. papel",
     description:
-      "La diferencia real entre un sticker de vinil y uno de papel (resistencia al agua, al sol y a rayones) y por qué en Yume solo trabajamos vinil premium.",
+      "La diferencia real entre un sticker personalizado de vinil y uno de papel (resistencia al agua, al sol y a rayones), y dónde diseñar y mandar a hacer los tuyos en línea.",
     category: "Guías",
     publishedAt: "2026-09-09",
+    modifiedAt: "2026-09-29",
     intro:
       "Si nunca has pedido stickers personalizados, es fácil no notar la diferencia entre vinil y papel hasta que uno se moja, se despinta con el sol o se rompe al despegarlo. Aquí te explicamos la diferencia real y por qué en Yume trabajamos exclusivamente con vinil.",
     sections: [
@@ -464,8 +472,16 @@ export const blogPosts: BlogPost[] = [
           "Así, sin importar si el sticker va en el empaque de tu marca, en tu laptop o en el paquete que le envías a un cliente, sabes que va a llegar y va a durar en las mismas condiciones.",
         ],
       },
+      {
+        heading: "Dónde diseñar y mandar a hacer tus stickers en línea",
+        body: [
+          "No necesitas tener el diseño terminado para pedirlos: mándanos tu logo, personaje, foto o mascota por WhatsApp o desde la tienda en línea (en el formato que tengas, aunque no sea el ideal) y armamos una prueba digital del sticker antes de imprimir. Ahí puedes pedir ajustes de tamaño o color antes de aprobar.",
+          "Todo el proceso es a distancia: cotizas, apruebas el diseño y recibes tu pedido en casa sin importar en qué ciudad de México estés, aunque producimos en Guadalajara.",
+        ],
+      },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["yume-vs-imprentas-online-stickers", "stickers-personalizados-para-negocios-guadalajara"],
   },
   {
     slug: "menu-de-boda-personalizado",
@@ -860,6 +876,48 @@ export const blogPosts: BlogPost[] = [
     ],
     relatedProductSlugs: [],
     quoteMessage: "Hola, me interesa cotizar tatuajes temporales para una boda, evento o fiesta.",
+  },
+  {
+    slug: "donde-imprimir-stickers-personalizados-mexico",
+    title: "Dónde imprimir stickers personalizados en México: qué necesitas y cómo pedirlos",
+    metaTitle: "Dónde imprimir stickers personalizados en México",
+    description:
+      "Qué necesitas tener listo para mandar a imprimir tus stickers personalizados en México (archivo, tamaño, cantidad) y cómo funciona pedirlos en línea sin ir a una imprenta física.",
+    category: "Guías",
+    publishedAt: "2026-09-29",
+    intro:
+      "Si buscas dónde imprimir stickers personalizados en México, la mayoría de las opciones caen en dos grupos: imprimirlos tú mismo en casa (con vinil y una impresora especial) o mandarlos a hacer con una imprenta que ya tiene el equipo de corte troquelado. Esta guía cubre la segunda opción: qué necesitas tener listo y cómo funciona el proceso para mandar a imprimir tus stickers en línea, sin tener que comprar equipo ni ir a una imprenta física.",
+    sections: [
+      {
+        heading: "Imprimir tú mismo vs. mandarlos a hacer",
+        body: [
+          "Imprimir en casa tiene sentido si ya tienes o quieres invertir en una impresora especial y vinil por rollo, y tu volumen es bajo. Para la mayoría de negocios y personas, sale más barato y más simple mandar a hacer el pedido con una imprenta que ya tiene el equipo de corte troquelado: no hay que comprar ni aprender a usar una máquina para un pedido de 50 o 100 piezas.",
+          "La diferencia se nota más en el acabado: un corte troquelado hecho con equipo profesional sigue el contorno exacto del diseño, algo difícil de replicar con tijeras o un cortador casero.",
+        ],
+      },
+      {
+        heading: "Qué necesitas tener listo antes de cotizar",
+        body: [
+          "Tu diseño, logo, personaje o foto (idealmente en PNG, PDF, AI o SVG con fondo transparente; si solo tienes un JPG o una foto, también se puede trabajar, pero puede necesitar limpieza antes de imprimir), el tamaño aproximado que quieres, y la cantidad de piezas.",
+          "No necesitas el diseño 100% terminado: con una referencia o boceto ya se puede empezar a cotizar y ajustar antes de la prueba digital.",
+        ],
+      },
+      {
+        heading: "Cómo funciona pedirlos en línea",
+        body: [
+          "Mandas tu diseño y cantidad por WhatsApp o desde la tienda en línea, te confirmamos precio y te mandamos una prueba digital del sticker antes de imprimir: puedes pedir ajustes de tamaño o color en esa etapa. Una vez que la apruebas, se manda a producción y se envía a cualquier parte de México.",
+          "Todo el proceso es a distancia, así que aplica igual si estás en Guadalajara (donde producimos) o en cualquier otra ciudad del país.",
+        ],
+      },
+      {
+        heading: "Cuánto cuesta imprimir stickers personalizados",
+        body: [
+          "En Yume se vende por cantidad de piezas, no por planilla: Etiquetas Logo Personalizado desde $100 (50 piezas) y Stickers Vinil Impermeable desde $100 (40 piezas), con precio mayoreo automático pasando las 100 piezas. Ver la comparación completa de precios contra otras imprentas mexicanas en la guía relacionada abajo.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
+    relatedBlogSlugs: ["yume-vs-imprentas-online-stickers", "stickers-vinil-vs-papel-diferencias"],
   },
 ];
 
