@@ -17,11 +17,13 @@ export function ShippingForm({
   onMethodChange,
   subtotal,
   lang = "es",
+  beforeSubmit,
 }: {
   onSubmit: (data: { customer: Customer; delivery: DeliveryInfo }) => void | Promise<void>;
   onMethodChange?: (method: DeliveryMethod) => void;
   subtotal: number;
   lang?: Lang;
+  beforeSubmit?: React.ReactNode;
 }) {
   const t = UI[lang];
   const branches = lang === "en" ? CASABLANCA_BRANCHES_EN : CASABLANCA_BRANCHES;
@@ -280,6 +282,8 @@ export function ShippingForm({
         </div>
       </div>
       )}
+
+      {beforeSubmit}
 
       <button
         type="submit"

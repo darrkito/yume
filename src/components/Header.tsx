@@ -52,8 +52,10 @@ export function Header() {
     prevCount.current = count;
   }, [count]);
 
+  // Opaque on purpose: backdrop-blur doesn't composite reliably here and left
+  // content behind the header readable (fixed in 9fbbc50, regressed by the redesign).
   return (
-    <header className="sticky top-0 z-50 border-b border-line bg-paper/95 backdrop-blur-sm">
+    <header className="sticky top-0 z-50 border-b border-line bg-paper">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link href={lang === "en" ? "/en" : "/"} className="flex items-center gap-2" aria-label={`${SITE.name}: ${t.home}`} onClick={() => setOpen(false)}>
           <Image src="/logo-yume-wordmark.webp" alt={SITE.name} width={215} height={80} className="h-9 w-auto sm:h-11" priority />

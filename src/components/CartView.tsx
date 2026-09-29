@@ -4,7 +4,9 @@ import { useState } from "react";
 import Link from "next/link";
 import { X, ImageUp, CreditCard, Truck, CheckCircle2, Clock, ShieldCheck, MessageCircle } from "lucide-react";
 import { useCart } from "@/components/CartContext";
+import { useDesignFiles } from "@/components/DesignFileContext";
 import { getProduct, MAX_PIECES, pieceCount } from "@/content/products";
+import { productsEn } from "@/content/products.en";
 import { QtyInput } from "@/components/QtyInput";
 import { cartLine } from "@/components/useAddProduct";
 import { ProductVisual } from "@/components/ProductVisual";
@@ -27,6 +29,7 @@ const ATTACH_MSG = {
 
 export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
   const { items, removeItem, updateQty, replaceLine, total, clear } = useCart();
+  const { getDesignFile } = useDesignFiles();
   const [method, setMethod] = useState<DeliveryMethod>("envio_nacional");
   const t = UI[lang];
   const shopHref = lang === "en" ? "/en/products" : "/productos";
@@ -148,10 +151,28 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
       {itemsRequiringImage.length > 0 && (
         <div className="mt-6 flex items-start gap-3 rounded-xl bg-brand-tint p-4 text-sm text-ink">
           <ImageUp size={18} className="mt-0.5 shrink-0 text-brand" />
-          <p>
-            {itemsRequiringImage.length === 1 ? t.requiresImageOne : t.requiresImageMany} {t.requiresImageSuffix}{" "}
-            <strong>{itemsRequiringImage.map((p) => p.name).join(", ")}</strong>. {t.attachInWhatsapp}
-          </p>
+          <div>
+            <p>{itemsRequiringImage.length === 1 ? t.requiresImageOne : t.requiresImageMany} {t.requiresImageSuffix}</p>
+            <ul className="mt-1.5 space-y-1">
+              {itemsRequiringImage.map((p) => {
+                const file = getDesignFile(p.slug);
+                return (
+                  <li key={p.slug} className="flex items-start gap-1.5">
+                    {file ? (
+                      <CheckCircle2 size={14} className="mt-1 shrink-0 text-brand" aria-hidden="true" />
+                    ) : (
+                      <span className="mt-2 size-1.5 shrink-0 rounded-full bg-brand" aria-hidden="true" />
+                    )}
+                    <span>
+                      <strong>{lang === "en" ? (productsEn[p.slug]?.name ?? p.name) : p.name}</strong>
+                      {file && ` · ${t.designReady} ${file.name}`}
+                    </span>
+                  </li>
+                );
+              })}
+            </ul>
+            {itemsRequiringImage.some((p) => !getDesignFile(p.slug)) && <p className="mt-1.5">{t.designNextStep}</p>}
+          </div>
         </div>
       )}
 

@@ -1,14 +1,16 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { motion, useMotionValue, useSpring, useReducedMotion } from "motion/react";
-import { ImageUp, X } from "lucide-react";
+import { FileText, ImageUp, X } from "lucide-react";
 import { UI, type Lang } from "@/lib/i18n";
 import { useDesignFiles } from "@/components/DesignFileContext";
 
 const MAGNET_DISTANCE = 180;
 const MAX_OFFSET = 10;
 const MAX_SIZE_BYTES = 10 * 1024 * 1024;
+// Formats a browser can actually draw in an <img>; PDF/AI/PSD get an icon.
+const RENDERABLE = /^image\/(png|jpe?g|webp|gif|avif|svg\+xml)$/;
 
 type Stage = "idle" | "near" | "over";
 
@@ -20,14 +22,17 @@ const STAGE_CLASSES: Record<Stage, string> = {
 
 // Real upload target now (see /api/upload-design) — the file is uploaded
 // when checkout is submitted (CheckoutView), not here. This component only
-// picks the file, previews it, and hands it to DesignFileContext.
-export function LogoUploadNote({ slug, lang = "es" }: { slug: string; lang?: Lang }) {
-  const [preview, setPreview] = useState<string | null>(null);
-  const [fileName, setFileName] = useState<string | null>(null);
+// picks the file, previews it, and hands it to DesignFileContext. The file
+// itself is read back from the context (not local state), so the same pick
+// shows up on the product page and at checkout.
+export function LogoUploadNote({ slug, lang = "es", heading }: { slug: string; lang?: Lang; heading?: string }) {
   const [error, setError] = useState<string | null>(null);
   const [stage, setStage] = useState<Stage>("idle");
   const t = UI[lang];
-  const { setDesignFile, clearDesignFile } = useDesignFiles();
+  const { getDesignFile, setDesignFile, clearDesignFile } = useDesignFiles();
+  const file = getDesignFile(slug);
+  const preview = useMemo(() => (file && RENDERABLE.test(file.type) ? URL.createObjectURL(file) : null), [file]);
+  useEffect(() => () => { if (preview) URL.revokeObjectURL(preview); }, [preview]);
   const zoneRef = useRef<HTMLLabelElement>(null);
   const reduceMotion = useReducedMotion();
 
@@ -87,20 +92,14 @@ export function LogoUploadNote({ slug, lang = "es" }: { slug: string; lang?: Lan
     return true;
   };
 
-  const handleFile = (file: File | undefined) => {
-    if (!file) return;
+  const handleFile = (picked: File | undefined) => {
+    if (!picked) return;
     setError(null);
-    if (!validate(file)) return;
-    setFileName(file.name);
-    setDesignFile(slug, file);
-    const reader = new FileReader();
-    reader.onload = () => setPreview(reader.result as string);
-    reader.readAsDataURL(file);
+    if (!validate(picked)) return;
+    setDesignFile(slug, picked);
   };
 
   const clearFile = () => {
-    setPreview(null);
-    setFileName(null);
     setError(null);
     clearDesignFile(slug);
   };
@@ -108,16 +107,22 @@ export function LogoUploadNote({ slug, lang = "es" }: { slug: string; lang?: Lan
   return (
     <div className="mt-6 rounded-xl border border-line bg-paper p-5">
       <p className="flex items-center gap-2 text-sm font-semibold text-ink">
-        <ImageUp size={16} className="text-brand" /> {t.yourLogoOrDesign}
+        <ImageUp size={16} className="text-brand" /> {heading ?? t.yourLogoOrDesign}
       </p>
       <p className="mt-1.5 text-xs leading-relaxed text-ink-soft">{t.logoNoteBody}</p>
 
-      {preview ? (
+      {file ? (
         <div className="mt-4 flex items-center gap-3">
-          {/* eslint-disable-next-line @next/next/no-img-element -- local data: URL preview, next/image doesn't handle these */}
-          <img src={preview} alt={t.previewAlt} className="h-16 w-16 rounded-lg border border-line object-contain bg-paper-raised" />
+          {preview ? (
+            // eslint-disable-next-line @next/next/no-img-element -- local blob: URL preview, next/image doesn't handle these
+            <img src={preview} alt={t.previewAlt} className="h-16 w-16 rounded-lg border border-line object-contain bg-paper-raised" />
+          ) : (
+            <span className="flex h-16 w-16 items-center justify-center rounded-lg border border-line bg-paper-raised text-brand">
+              <FileText size={24} aria-hidden="true" />
+            </span>
+          )}
           <div className="min-w-0 flex-1">
-            <p className="truncate text-xs text-ink">{fileName}</p>
+            <p className="truncate text-xs text-ink">{file.name}</p>
             <button type="button" onClick={clearFile} className="mt-1 flex min-h-11 items-center gap-1 text-xs text-ink-soft transition-colors hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
               <X size={12} /> {t.remove}
             </button>

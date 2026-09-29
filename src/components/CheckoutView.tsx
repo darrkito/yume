@@ -5,9 +5,11 @@ import Link from "next/link";
 import { CreditCard, ExternalLink, Lock, ShieldCheck, CheckCircle2 } from "lucide-react";
 import { useCart } from "@/components/CartContext";
 import { useDesignFiles } from "@/components/DesignFileContext";
+import { LogoUploadNote } from "@/components/LogoUploadNote";
 import { MercadoPagoBrick } from "@/components/MercadoPagoBrick";
 import { ShippingForm } from "@/components/ShippingForm";
-import { getProduct } from "@/content/products";
+import { getProduct, type Product } from "@/content/products";
+import { productsEn } from "@/content/products.en";
 import type { Customer, DeliveryInfo } from "@/lib/orders";
 import { deliverySurcharge, type DeliveryMethod } from "@/content/shipping";
 import { formatMXN } from "@/lib/format";
@@ -30,7 +32,16 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
   const [redirecting, setRedirecting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [settled, setSettled] = useState(false);
+  const [sendDesignLater, setSendDesignLater] = useState(false);
+  const [designAttempted, setDesignAttempted] = useState(false);
   const t = UI[lang];
+  const nameOf = (p: Product) => (lang === "en" ? (productsEn[p.slug]?.name ?? p.name) : p.name);
+  const designProducts = [...new Set(items.map((i) => i.slug))]
+    .map((slug) => getProduct(slug))
+    .filter((p): p is Product => Boolean(p?.requiresImage));
+  const missingDesigns = designProducts.filter((p) => !getDesignFile(p.slug));
+  // Derived live, so the message disappears as soon as the shopper fixes it.
+  const designBlocked = missingDesigns.length > 0 && !sendDesignLater;
   const shopHref = lang === "en" ? "/en/products" : "/productos";
   // The option highlighted in step 1, so the summary total matches the cart's
   // before the form is submitted; the submitted `delivery` wins after that.
@@ -147,8 +158,38 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
                 lang={lang}
                 subtotal={total}
                 onMethodChange={setFormMethod}
+                beforeSubmit={
+                  designProducts.length > 0 && (
+                    <div id="design-files">
+                      <h2 className="font-display text-lg text-ink">{t.yourLogoOrDesign}</h2>
+                      <p className="mt-1 text-xs leading-relaxed text-ink-soft">{t.designFilesIntro}</p>
+                      {designProducts.map((p) => (
+                        <LogoUploadNote key={p.slug} slug={p.slug} lang={lang} heading={nameOf(p)} />
+                      ))}
+                      <label className="mt-4 flex min-h-11 cursor-pointer items-center gap-3 text-sm text-ink">
+                        <input
+                          type="checkbox"
+                          checked={sendDesignLater}
+                          onChange={(e) => setSendDesignLater(e.target.checked)}
+                          className="size-4 accent-brand"
+                        />
+                        {t.sendDesignLater}
+                      </label>
+                      {designAttempted && designBlocked && (
+                        <p role="alert" className="mt-2 text-sm font-medium text-brand">
+                          {t.designMissing.replace("{names}", missingDesigns.map(nameOf).join(", "))}
+                        </p>
+                      )}
+                    </div>
+                  )
+                }
                 onSubmit={async ({ customer: c, delivery: d }) => {
                   setError(null);
+                  if (designBlocked) {
+                    setDesignAttempted(true);
+                    document.getElementById("design-files")?.scrollIntoView({ behavior: "smooth", block: "center" });
+                    return;
+                  }
                   try {
                     const uploads = await uploadDesignFiles();
                     setDesignFileUrls(uploads);

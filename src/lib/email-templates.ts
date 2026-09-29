@@ -1,6 +1,18 @@
 import type { Order } from "@/lib/orders";
+import { getProduct, type Product } from "@/content/products";
 import { getCasablancaBranch } from "@/content/shipping";
 import { SITE, waLink } from "@/content/site";
+
+// Products that need the customer's design but got no uploaded file — the
+// customer ticked "I'll send it on WhatsApp" at checkout. Derived from the
+// order itself (server-side catalog + stored uploads), not a client flag.
+function missingDesignNames(order: Order): string[] {
+  const uploaded = new Set((order.design_file_urls ?? []).map((f) => f.productName));
+  return [...new Set(order.items.map((i) => i.slug))]
+    .map((slug) => getProduct(slug))
+    .filter((p): p is Product => Boolean(p?.requiresImage) && !uploaded.has(p!.name))
+    .map((p) => p.name);
+}
 
 function deliverySection(order: Order): string {
   if (order.delivery_method === "recoleccion_casablanca") {
@@ -73,6 +85,7 @@ function designFilesSection(order: Order): string {
 
 export function businessNotificationEmail(order: Order): { subject: string; html: string } {
   const isPickup = order.delivery_method === "recoleccion_casablanca";
+  const missing = missingDesignNames(order);
   const subject = `🛒 Nueva venta #${order.id.slice(0, 8)} - $${order.total.toFixed(2)} MXN`;
 
   const html = `
@@ -94,6 +107,11 @@ export function businessNotificationEmail(order: Order): { subject: string; html
     <h3>Productos</h3>
     ${itemsTable(order)}
     ${designFilesSection(order)}
+    ${
+      missing.length
+        ? `<p style="background:#fff4e5;padding:12px;border-radius:8px;"><strong>⚠️ Diseño pendiente:</strong> ${missing.join(", ")}. El cliente eligió mandarlo por WhatsApp: pídeselo antes de producir.</p>`
+        : ""
+    }
 
     <h3>Qué sigue</h3>
     <ol>
@@ -116,6 +134,8 @@ export function customerConfirmationEmail(order: Order): { subject: string; html
   const firstName = order.customer_name.split(" ")[0];
 
   const waHref = waLink(`Hola! Tengo una duda sobre mi pedido #${orderShort}`);
+  const missing = missingDesignNames(order);
+  const designWaHref = waLink(`Hola! Les mando el diseño de mi pedido #${orderShort} (${missing.join(", ")}).`);
   const mailtoHref = `mailto:${SITE.email}?subject=${encodeURIComponent(`Duda sobre mi pedido #${orderShort}`)}`;
 
   const subject = `Tu pedido #${orderShort} en ${SITE.name} fue confirmado ✅`;
@@ -131,6 +151,11 @@ export function customerConfirmationEmail(order: Order): { subject: string; html
 
     <h3>Resumen de tu pedido</h3>
     ${itemsTable(order)}
+    ${
+      missing.length
+        ? `<p style="background:#fff4e5;padding:12px;border-radius:8px;"><strong>Falta tu diseño</strong> para: ${missing.join(", ")}. Mándanoslo por <a href="${designWaHref}" style="color:#7c0000;">WhatsApp</a> para preparar tu prueba digital; sin él no podemos empezar.</p>`
+        : ""
+    }
 
     ${deliverySection(order)}
 
