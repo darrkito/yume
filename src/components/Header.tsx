@@ -52,6 +52,36 @@ export function Header() {
     prevCount.current = count;
   }, [count]);
 
+  // Checkout gets a reduced header: logo, the way back to the cart, and a
+  // quiet help link. The full nav and the "Cotizar" button were exits from
+  // the step closest to payment.
+  if (pathname === "/pago" || pathname === "/en/checkout") {
+    return (
+      <header className="sticky top-0 z-50 border-b border-line bg-paper">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
+          <Link href={lang === "en" ? "/en" : "/"} aria-label={`${SITE.name}: ${t.home}`}>
+            <Image src="/logo-yume-wordmark.webp" alt={SITE.name} width={215} height={80} className="h-9 w-auto sm:h-11" priority />
+          </Link>
+          <div className="flex items-center gap-2 text-sm text-ink-soft sm:gap-6">
+            <Link href={cartHref} className="inline-flex min-h-11 items-center transition-colors hover:text-brand">
+              {t.backToCart}
+            </Link>
+            <a
+              href={waLink(WA_QUOTE_MESSAGE[lang])}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={t.checkoutHelp}
+              className="inline-flex min-h-11 min-w-11 items-center justify-center gap-1.5 transition-colors hover:text-brand"
+            >
+              <MessageCircle size={18} aria-hidden="true" />
+              <span className="hidden sm:inline">{t.checkoutHelp}</span>
+            </a>
+          </div>
+        </div>
+      </header>
+    );
+  }
+
   // Opaque on purpose: backdrop-blur doesn't composite reliably here and left
   // content behind the header readable (fixed in 9fbbc50, regressed by the redesign).
   return (

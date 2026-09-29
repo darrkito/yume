@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { ShoppingBag, Check, CheckCircle2, Clock, MapPin, MessageCircle, Truck, Zap } from "lucide-react";
 import { useAddProduct } from "@/components/useAddProduct";
 import { QtyInput } from "@/components/QtyInput";
+import { LogoUploadNote } from "@/components/LogoUploadNote";
 import { cartItemLabel, defaultVariantId, hasVariants, MAX_PIECES, pieceCount, resolvePrice, tieredPrice, wholesaleRate, type Product } from "@/content/products";
 import { cartItemLabelEn, getProductTranslation } from "@/content/products.en";
 import { waLink } from "@/content/site";
@@ -16,6 +17,7 @@ import { UI, type Lang } from "@/lib/i18n";
 // a native <select> is the sane control once it's a long list of selectable
 // quantities (stickers) — same variants mechanism either way.
 const RADIO_VS_SELECT_THRESHOLD = 4;
+const QUICK_PICK_MAX = 300;
 
 const WA_QUOTE_MSG = {
   es: (label: string, price: string) => `Hola, me interesa cotizar: ${label} (${price} MXN). ¿Podrían darme más información?`,
@@ -44,7 +46,6 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
   const lineTotal = tiers ? price : price * units;
   const savings = tiers && pieces ? pieces * tiers.rate - price : 0;
   const pct = tiers && pieces ? Math.round((savings / (pieces * tiers.rate)) * 100) : 0;
-  const isPreset = product.variants?.some((v) => v.id === variantId);
 
   const handleAdd = () => {
     addProduct(product, variantId, tiers ? 1 : units);
@@ -94,7 +95,45 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
         </>
       )}
 
-      {hasVariants(product) && product.variants!.length > RADIO_VS_SELECT_THRESHOLD && (
+      {tiers && pieces && (
+        // Three one-tap amounts plus a typable stepper for anything else:
+        // one control for "how many", instead of a 12-row select AND a field.
+        <fieldset className="mt-5">
+          <legend className="text-xs uppercase tracking-[0.15em] text-ink-soft">{t.chooseQuantity}</legend>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {[tiers.baseQty, tiers.discountQty, QUICK_PICK_MAX].map((n) => (
+              <button
+                key={n}
+                type="button"
+                aria-pressed={pieces === n}
+                onClick={() => setVariantId(String(n))}
+                className={`min-h-11 rounded-full border px-4 text-sm transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand ${
+                  pieces === n ? "border-brand bg-brand-tint font-semibold text-ink" : "border-line text-ink-soft hover:border-brand"
+                }`}
+              >
+                {n} {t.pieces}
+              </button>
+            ))}
+          </div>
+          <div className="mt-3 flex flex-wrap items-center gap-3">
+            <span className="text-sm text-ink-soft">{t.piecesLabel}</span>
+            <QtyInput
+              value={pieces}
+              min={tiers.baseQty}
+              max={MAX_PIECES}
+              step={tiers.stepQty}
+              onChange={(n) => setVariantId(String(n))}
+              label={t.piecesInputLabel}
+              decreaseLabel={t.decreaseQty}
+              increaseLabel={t.increaseQty}
+              minNote={t.qtyMinNote.replace("{min}", String(tiers.baseQty))}
+              maxNote={t.qtyMaxNote.replace("{max}", String(MAX_PIECES))}
+            />
+          </div>
+        </fieldset>
+      )}
+
+      {!tiers && hasVariants(product) && product.variants!.length > RADIO_VS_SELECT_THRESHOLD && (
         <div className="mt-5">
           <label htmlFor={`variant-${product.slug}`} className="text-xs uppercase tracking-[0.15em] text-ink-soft">
             {t.chooseQuantity}
@@ -105,33 +144,12 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
             onChange={(e) => setVariantId(e.target.value)}
             className="mt-2 block w-full rounded-xl border border-line bg-paper px-4 py-3 text-sm text-ink"
           >
-            {!isPreset && pieces && (
-              <option value={variantId}>
-                {pieces} {t.pieces} · {formatMXN(price)} MXN
-              </option>
-            )}
             {product.variants!.map((v) => (
               <option key={v.id} value={v.id}>
                 {variantLabel(v.id, v.label)} · {formatMXN(v.price)} MXN
-                {tiers && Number(v.id) > tiers.discountQty ? ` · ${t.wholesaleTag}` : ""}
               </option>
             ))}
           </select>
-          {tiers && pieces && (
-            <div className="mt-3 flex flex-wrap items-center gap-3">
-              <span className="text-sm text-ink-soft">{t.orTypePieces}</span>
-              <QtyInput
-                value={pieces}
-                min={tiers.baseQty}
-                max={MAX_PIECES}
-                step={tiers.stepQty}
-                onChange={(n) => setVariantId(String(n))}
-                label={t.piecesInputLabel}
-                decreaseLabel={t.decreaseQty}
-                increaseLabel={t.increaseQty}
-              />
-            </div>
-          )}
         </div>
       )}
 
@@ -196,14 +214,16 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
         </div>
       )}
 
+      {product.requiresImage && <LogoUploadNote slug={product.slug} lang={lang} hint={t.uploadLaterHint} />}
+
       <div className="mt-6 flex flex-col items-start">
-        <div className="flex w-full flex-wrap gap-3 sm:w-auto">
+        <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
           <button
             ref={addButtonRef}
             type="button"
             onClick={handleAdd}
             aria-live="polite"
-            className="btn-soft btn-soft-outline flex-1 sm:flex-initial"
+            className="btn-soft btn-soft-outline w-full whitespace-nowrap sm:w-auto"
           >
             {justAdded ? (
               <>
@@ -215,7 +235,7 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
               </>
             )}
           </button>
-          <button type="button" onClick={handleBuyNow} className="btn-soft btn-soft-solid flex-1 sm:flex-initial">
+          <button type="button" onClick={handleBuyNow} className="btn-soft btn-soft-solid w-full whitespace-nowrap sm:w-auto">
             <Zap size={16} aria-hidden="true" /> {t.buyNow}
           </button>
         </div>

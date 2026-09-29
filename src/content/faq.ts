@@ -27,7 +27,7 @@ export const generalFaq: FaqItem[] = [
   },
   {
     q: "¿Puedo aprobar el diseño antes de que se produzca?",
-    a: "Sí, cada pieza se aprueba contigo antes de producirse/imprimirse.",
+    a: "Sí. Antes de imprimir te mandamos una prueba digital y no producimos nada hasta que la apruebas; incluye hasta 2 rondas de ajustes.",
   },
   {
     q: "¿Cuánto tiempo tarda mi pedido?",
@@ -35,7 +35,7 @@ export const generalFaq: FaqItem[] = [
   },
   {
     q: "¿Cómo puedo cotizar o hacer un pedido?",
-    a: "Puedes escribirnos a yume.studiomx@gmail.com con los detalles de lo que necesitas.",
+    a: "Agrega tu producto al carrito y paga en línea con tarjeta, OXXO o SPEI. Si prefieres cotizar primero o necesitas algo a la medida, escríbenos por WhatsApp al 33 3400 5135 o a yume.studiomx@gmail.com.",
   },
   {
     q: "¿Tienen entrega local en Guadalajara?",

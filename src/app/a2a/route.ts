@@ -35,7 +35,7 @@ function matchAnswerEs(text: string): string {
   }
 
   if (/dónde|ubicaci|ciudad|guadalajara|jalisco|envío|envían|nacional/.test(q)) {
-    return `Yume produce desde ${SITE.city}, ${SITE.state}, y envía a todo México. No tenemos tienda física para visitar: todo el proceso se hace a distancia con una prueba digital que apruebas antes de imprimir.`;
+    return `Yume produce desde ${SITE.city}, ${SITE.state}, y envía a todo México. No tenemos tienda física para visitar: todo el proceso se hace a distancia con una prueba digital que apruebas antes de imprimir (incluye hasta 2 rondas de ajustes).`;
   }
 
   if (/requisitos|datos obligatorios|debe llevar/.test(q) && /receta|recetario|médico/.test(q)) {
@@ -114,7 +114,7 @@ function matchAnswerEn(text: string): string {
   }
 
   if (/where|location|city|guadalajara|jalisco|ship/.test(q)) {
-    return `Yume produces everything from ${SITE.city}, ${SITE.state}, and ships across all of Mexico. We don't have a physical storefront to visit: the whole process happens remotely, with a digital proof you approve before printing.`;
+    return `Yume produces everything from ${SITE.city}, ${SITE.state}, and ships across all of Mexico. We don't have a physical storefront to visit: the whole process happens remotely, with a digital proof you approve before printing (up to 2 rounds of changes included).`;
   }
 
   if (/requirements|required information|what.*include/.test(q) && /prescription|medical/.test(q)) {

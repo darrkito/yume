@@ -13,7 +13,7 @@ Instructions for AI agents interacting with this site programmatically (not huma
 
 - No agentic/programmatic checkout API exists yet — orders go through the human checkout flow at `/pago` (Mercado Pago Checkout Pro or embedded Bricks), or a quote is requested via WhatsApp / the `request_quote` MCP tool.
 - Every price returned by `get_product`/`get_products` is server-validated at actual checkout time from the same source (`src/content/products.ts`) — never trust a cached price for a real transaction, re-fetch via `get_product` first.
-- Every physical product is made to order and requires a design/logo approval step (a digital proof) before production; there is no instant-fulfillment SKU.
+- Every physical product is made to order and requires a design/logo approval step (a digital proof, up to 2 rounds of changes included) before production; there is no instant-fulfillment SKU.
 
 ## Rate limits
 

@@ -1,38 +1,19 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
-import { ShoppingBag, Check, Zap } from "lucide-react";
+import { ShoppingBag, Check } from "lucide-react";
 import { useAddProduct } from "@/components/useAddProduct";
 import { defaultVariantId, hasVariants, type Product } from "@/content/products";
 import { getProductTranslation } from "@/content/products.en";
 import { formatMXN } from "@/lib/format";
 import { UI, type Lang } from "@/lib/i18n";
 
-// Card-level add still defaults to the product's default variant (same
-// default the PDP preselects), but a tiered/multi-variant product also
-// gets a compact selector here so a "buy from the grid" click isn't a
-// silent guess at quantity/color — the visitor sees and can change what
-// they're about to add before either button does anything.
-// "Comprar ahora" adds the same item and jumps straight to the cart to
-// finish checkout, the always-be-closing pattern from Amazon's own
-// buy box: every product surface (cards, cross-sell) gets both actions.
-export function AddToCartButton({
-  product,
-  compact = false,
-  lang = "es",
-  stackActions = false,
-}: {
-  product: Product;
-  compact?: boolean;
-  lang?: Lang;
-  // Cross-sell tiles (RelatedProducts) render this in a narrower column
-  // than the shop grid does — two side-by-side buttons wrap their labels
-  // there, so that caller stacks them instead of squeezing them in a row.
-  stackActions?: boolean;
-}) {
+// One action per product surface: pick the option, add it. The CartToast
+// that follows already offers "Ver carrito", so a second "Comprar ahora"
+// button here only competed with this one. Only rendered for quickBuy
+// products; personalized ones route to their product page instead.
+export function AddToCartButton({ product, compact = false, lang = "es" }: { product: Product; compact?: boolean; lang?: Lang }) {
   const addProduct = useAddProduct(lang);
-  const router = useRouter();
   const [justAdded, setJustAdded] = useState(false);
   const [variantId, setVariantId] = useState<string | undefined>(defaultVariantId(product));
   const t = UI[lang];
@@ -44,15 +25,6 @@ export function AddToCartButton({
     setJustAdded(true);
     setTimeout(() => setJustAdded(false), 1800);
   };
-
-  const handleBuyNow = () => {
-    addProduct(product, variantId);
-    router.push(lang === "en" ? "/en/cart" : "/carrito");
-  };
-
-  const baseBtn = compact
-    ? "flex min-h-11 flex-1 items-center justify-center gap-1.5 rounded-full py-2 text-xs font-semibold transition-colors active:scale-[0.98] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
-    : "flex min-h-11 flex-1 items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition-colors active:scale-[0.98] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand";
 
   return (
     <div className={compact ? "mt-3" : "mt-4"}>
@@ -70,35 +42,22 @@ export function AddToCartButton({
           ))}
         </select>
       )}
-      <div className={stackActions ? "flex flex-col gap-2" : compact ? "flex gap-2" : "flex flex-wrap gap-3"}>
-        <button
-          type="button"
-          onClick={handleAdd}
-          aria-live="polite"
-          className={`${baseBtn} border border-line text-ink hover:border-brand hover:text-brand`}
-        >
-          {justAdded ? (
-            <>
-              <Check className="animate-pop" size={compact ? 14 : 16} aria-hidden="true" /> {t.added}
-            </>
-          ) : (
-            <>
-              <ShoppingBag size={compact ? 14 : 16} aria-hidden="true" /> {t.addToCart}
-            </>
-          )}
-        </button>
-        <button
-          type="button"
-          onClick={handleBuyNow}
-          className={
-            compact
-              ? `${baseBtn} border border-line text-ink hover:border-brand hover:text-brand`
-              : `${baseBtn} bg-brand text-white hover:bg-brand-deep`
-          }
-        >
-          <Zap size={compact ? 14 : 16} aria-hidden="true" /> {t.buyNow}
-        </button>
-      </div>
+      <button
+        type="button"
+        onClick={handleAdd}
+        aria-live="polite"
+        className={`btn-soft btn-soft-solid whitespace-nowrap ${compact ? "w-full px-4" : "w-full sm:w-auto"}`}
+      >
+        {justAdded ? (
+          <>
+            <Check className="animate-pop" size={16} aria-hidden="true" /> {t.added}
+          </>
+        ) : (
+          <>
+            <ShoppingBag size={16} aria-hidden="true" /> {t.addToCart}
+          </>
+        )}
+      </button>
     </div>
   );
 }

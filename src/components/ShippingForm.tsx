@@ -20,7 +20,7 @@ export function ShippingForm({
   beforeSubmit,
 }: {
   onSubmit: (data: { customer: Customer; delivery: DeliveryInfo }) => void | Promise<void>;
-  onMethodChange?: (method: DeliveryMethod) => void;
+  onMethodChange?: (method: DeliveryMethod | null) => void;
   subtotal: number;
   lang?: Lang;
   beforeSubmit?: React.ReactNode;
@@ -32,9 +32,12 @@ export function ShippingForm({
   // Preselect whatever the shopper already picked in the cart (?entrega=).
   // Only mounts once the cart has items, so never during static prerender.
   const searchParams = useSearchParams();
-  const [deliveryMethod, setDeliveryMethod] = useState<DeliveryMethod>(
-    searchParams.get("entrega") === "casablanca" ? "recoleccion_casablanca" : "envio_nacional",
+  const entrega = searchParams.get("entrega");
+  // No default, same as the cart: only carry over what the shopper chose.
+  const [deliveryMethod, setDeliveryMethod] = useState<DeliveryMethod | null>(
+    entrega === "casablanca" ? "recoleccion_casablanca" : entrega === "nacional" ? "envio_nacional" : null,
   );
+  const [methodError, setMethodError] = useState(false);
   useEffect(() => {
     onMethodChange?.(deliveryMethod);
   }, [deliveryMethod, onMethodChange]);
@@ -57,6 +60,11 @@ export function ShippingForm({
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!deliveryMethod) {
+      setMethodError(true);
+      document.getElementById("delivery-method")?.scrollIntoView({ behavior: "smooth", block: "center" });
+      return;
+    }
     setSubmitting(true);
     try {
       const delivery: DeliveryInfo =
@@ -140,11 +148,17 @@ export function ShippingForm({
         </div>
       </div>
 
-      <div>
+      <div id="delivery-method">
         <h2 className="font-display text-lg text-ink">{t.deliveryMethod}</h2>
+        {methodError && !deliveryMethod && (
+          <p role="alert" className="mt-2 text-sm font-medium text-brand">
+            {t.chooseDeliveryError}
+          </p>
+        )}
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
           <button
             type="button"
+            aria-pressed={deliveryMethod === "envio_nacional"}
             onClick={() => setDeliveryMethod("envio_nacional")}
             className={`rounded-xl border p-4 text-left transition-colors ${
               deliveryMethod === "envio_nacional" ? "border-brand bg-brand-tint" : "border-line bg-paper hover:border-brand"
@@ -157,6 +171,7 @@ export function ShippingForm({
           </button>
           <button
             type="button"
+            aria-pressed={deliveryMethod === "recoleccion_casablanca"}
             onClick={() => setDeliveryMethod("recoleccion_casablanca")}
             className={`rounded-xl border p-4 text-left transition-colors ${
               deliveryMethod === "recoleccion_casablanca" ? "border-brand bg-brand-tint" : "border-line bg-paper hover:border-brand"
@@ -288,7 +303,7 @@ export function ShippingForm({
       <button
         type="submit"
         disabled={submitting}
-        className="w-full rounded-full bg-brand px-7 py-3.5 text-center text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brand-deep active:scale-[0.98] disabled:opacity-60 sm:w-auto"
+        className="w-full rounded-full bg-brand px-8 py-4 text-center text-base font-semibold text-white transition-colors hover:bg-brand-deep active:scale-[0.98] disabled:opacity-60 sm:w-auto"
       >
         {t.continueToPayment}
       </button>

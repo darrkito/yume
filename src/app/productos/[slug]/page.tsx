@@ -6,7 +6,6 @@ import { SITE } from "@/content/site";
 import { NATIONAL_SHIPPING_PRICE } from "@/content/shipping";
 import { ProductVisual } from "@/components/ProductVisual";
 import { ProductPurchase } from "@/components/ProductPurchase";
-import { LogoUploadNote } from "@/components/LogoUploadNote";
 import { InfiniteGalleryStrip } from "@/components/InfiniteGalleryStrip";
 import { RelatedProducts } from "@/components/RelatedProducts";
 import { RelatedGuides } from "@/components/RelatedGuides";
@@ -130,7 +129,6 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             ))}
           </dl>
 
-          {product.requiresImage && <LogoUploadNote slug={product.slug} />}
 
           <ul className="mt-10 space-y-2 text-sm text-ink">
             {product.details.map((d) => (

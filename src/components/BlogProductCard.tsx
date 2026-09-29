@@ -36,8 +36,10 @@ export function BlogProductCard({
   const fromLabel = lang === "en" ? "From " : "Desde ";
   const price = productDisplayPrice(product);
   const waMsg = WA_QUOTE_MSG[lang](name, formatMXN(price));
+  // Sits inside the post's "Pídelo ahora" card, so this is a flat inset
+  // (no card-soft shadow): nested cards read as clutter.
   return (
-    <div className="card-soft p-4">
+    <div className="rounded-xl bg-paper p-4">
       <Link href={href} className="group flex items-center gap-4">
         <div className="flex h-20 w-20 shrink-0 justify-center overflow-hidden rounded-xl bg-paper">
           <div className="product-card-visual">
@@ -52,12 +54,18 @@ export function BlogProductCard({
           </p>
         </div>
       </Link>
-      <AddToCartButton product={product} compact lang={lang} />
+      {product.quickBuy ? (
+        <AddToCartButton product={product} compact lang={lang} />
+      ) : (
+        <Link href={href} className="btn-soft btn-soft-solid mt-3 w-full">
+          {UI[lang].viewAndCustomize}
+        </Link>
+      )}
       <a
         href={waLink(waMsg)}
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-2 block text-center text-xs font-semibold uppercase tracking-[0.1em] text-ink-soft transition-colors hover:text-brand"
+        className="mt-2 flex min-h-11 items-center justify-center text-sm font-semibold text-ink-soft transition-colors hover:text-brand"
       >
         {UI[lang].quoteWhatsapp}
       </a>

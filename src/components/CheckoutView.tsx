@@ -132,12 +132,10 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
                 </li>
               ))}
             </ul>
-            {summaryMethod && (
-              <div className="mt-3 flex items-center justify-between text-sm">
-                <span className="text-ink-soft">{deliveryLabel}</span>
-                <span className="font-medium text-ink">{surcharge > 0 ? formatMXN(surcharge) : t.free}</span>
-              </div>
-            )}
+            <div className="mt-3 flex items-center justify-between text-sm">
+              <span className="text-ink-soft">{summaryMethod ? deliveryLabel : t.deliveryMethod}</span>
+              <span className="font-medium text-ink">{!summaryMethod ? t.chooseBelow : surcharge > 0 ? formatMXN(surcharge) : t.free}</span>
+            </div>
             <div className="mt-4 flex items-center justify-between">
               <p className="text-sm text-ink-soft">{t.total}</p>
               <p className="font-display text-2xl text-ink">{formatMXN(grandTotal)} MXN</p>

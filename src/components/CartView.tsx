@@ -1,11 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { X, ImageUp, CreditCard, Truck, CheckCircle2, Clock, ShieldCheck, MessageCircle } from "lucide-react";
 import { useCart } from "@/components/CartContext";
 import { useDesignFiles } from "@/components/DesignFileContext";
-import { getProduct, MAX_PIECES, pieceCount } from "@/content/products";
+import { getProduct, MAX_PIECES, pieceCount, tieredPrice } from "@/content/products";
 import { productsEn } from "@/content/products.en";
 import { QtyInput } from "@/components/QtyInput";
 import { cartLine } from "@/components/useAddProduct";
@@ -30,13 +30,47 @@ const ATTACH_MSG = {
 export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
   const { items, removeItem, updateQty, replaceLine, total, clear } = useCart();
   const { getDesignFile } = useDesignFiles();
-  const [method, setMethod] = useState<DeliveryMethod>("envio_nacional");
+  // No default: preselecting $190 national shipping made a $100 order read
+  // as $290 at first sight. The shopper picks, then sees the real total.
+  const [method, setMethod] = useState<DeliveryMethod | null>(null);
+  const [confirmClear, setConfirmClear] = useState(false);
+  const [showBar, setShowBar] = useState(false);
+  const payRef = useRef<HTMLAnchorElement>(null);
   const t = UI[lang];
   const shopHref = lang === "en" ? "/en/products" : "/productos";
   const checkoutPath = lang === "en" ? "/en/checkout" : "/pago";
   // ShippingForm reads ?entrega= to preselect the same option at checkout.
-  const checkoutHref = method === "recoleccion_casablanca" ? `${checkoutPath}?entrega=casablanca` : checkoutPath;
-  const shipping = deliverySurcharge(method, total);
+  const checkoutHref = method ? `${checkoutPath}?entrega=${method === "recoleccion_casablanca" ? "casablanca" : "nacional"}` : checkoutPath;
+  const shipping = method ? deliverySurcharge(method, total) : 0;
+
+  // Mobile: the pay button sits well below the fold, so a fixed bar carries
+  // it whenever the real one isn't on screen (same idea as the PDP's bar).
+  useEffect(() => {
+    const el = payRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(([entry]) => setShowBar(!entry.isIntersecting));
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [items.length]);
+
+  // Honest free-shipping nudge: the smallest bump of a sticker line already
+  // in the cart that crosses the threshold (rounded up to a tidy 10).
+  const nudge = (() => {
+    if (total >= FREE_SHIPPING_THRESHOLD) return null;
+    for (const item of items) {
+      const product = getProduct(item.slug);
+      const perPiece = product ? pieceCount(product, item.variantId) : null;
+      if (!product?.tiers || perPiece === null) continue;
+      const rest = total - item.price * item.qty;
+      for (let n = perPiece * item.qty + 1; n <= MAX_PIECES; n++) {
+        if (rest + tieredPrice(product.tiers, n) >= FREE_SHIPPING_THRESHOLD) {
+          const qty = Math.min(MAX_PIECES, Math.ceil(n / 10) * 10);
+          return { item, product, qty, newTotal: rest + tieredPrice(product.tiers, qty) };
+        }
+      }
+    }
+    return null;
+  })();
 
   const itemsRequiringImage = [...new Set(items.map((i) => i.slug))]
     .map((slug) => getProduct(slug))
@@ -121,6 +155,8 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
                   label={`${t.piecesInputLabel}: ${item.name}`}
                   decreaseLabel={t.decreaseQty}
                   increaseLabel={t.increaseQty}
+                  minNote={t.qtyMinNote.replace("{min}", String(product.tiers!.baseQty))}
+                  maxNote={t.qtyMaxNote.replace("{max}", String(MAX_PIECES))}
                 />
               ) : (
                 <QtyInput
@@ -176,15 +212,28 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
         </div>
       )}
 
-      {method === "envio_nacional" && total < FREE_SHIPPING_THRESHOLD && (
+      {method !== "recoleccion_casablanca" && total < FREE_SHIPPING_THRESHOLD && (
         <div className="mt-8 rounded-xl border border-line bg-paper-raised p-4">
           <p className="text-sm text-ink">{t.freeShippingProgress.replace("{remaining}", formatMXN(FREE_SHIPPING_THRESHOLD - total))}</p>
           <div className="mt-3 h-1.5 w-full overflow-hidden rounded-full bg-line">
-            <div className="h-full rounded-full bg-brand transition-[width] duration-300" style={{ width: `${Math.min(100, Math.round((total / FREE_SHIPPING_THRESHOLD) * 100))}%` }} />
+            <div
+              className="h-full origin-left rounded-full bg-brand transition-transform duration-300"
+              style={{ transform: `scaleX(${Math.min(1, total / FREE_SHIPPING_THRESHOLD)})` }}
+            />
           </div>
+          {nudge && (
+            <button
+              type="button"
+              onClick={() => replaceLine(nudge.item, cartLine(nudge.product, String(nudge.qty), lang))}
+              className="btn-soft btn-soft-outline mt-3 text-sm"
+            >
+              <Truck size={16} aria-hidden="true" />
+              {t.freeShippingNudge.replace("{qty}", String(nudge.qty)).replace("{total}", formatMXN(nudge.newTotal))}
+            </button>
+          )}
         </div>
       )}
-      {method === "envio_nacional" && total >= FREE_SHIPPING_THRESHOLD && (
+      {method !== "recoleccion_casablanca" && total >= FREE_SHIPPING_THRESHOLD && (
         <div className="mt-8 flex items-start gap-2 rounded-xl border border-line bg-paper-raised p-4 text-sm text-ink"><Truck size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.freeShippingReached}</div>
       )}
 
@@ -212,19 +261,23 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
             ))}
           </div>
         </fieldset>
-        <div className="mt-4 flex items-center justify-between border-t border-line pt-4">
+        <div className="mt-4 flex items-baseline justify-between gap-3 border-t border-line pt-4">
           <p className="text-sm text-ink-soft">{t.total}</p>
-          <p className="font-display text-2xl text-ink">{formatMXN(total + shipping)} MXN</p>
+          <p className="font-display text-2xl text-ink">
+            {formatMXN(total + shipping)} MXN
+            {!method && <span className="ml-1.5 font-sans text-sm text-ink-soft">{t.plusShipping}</span>}
+          </p>
         </div>
         <p className="mt-2 text-xs text-ink-soft">{t.totalNote}</p>
       </div>
 
       <div className="mt-8 flex flex-col items-start gap-3">
         <Link
+          ref={payRef}
           href={checkoutHref}
-          className="flex w-full items-center justify-center gap-2 rounded-full bg-brand px-7 py-3.5 text-center text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brand-deep active:scale-[0.98] sm:w-auto"
+          className="flex w-full items-center justify-center gap-2 rounded-full bg-brand px-8 py-4 text-center text-base font-semibold text-white transition-colors hover:bg-brand-deep active:scale-[0.98] sm:w-auto"
         >
-          <CreditCard size={16} /> {t.payOnline}
+          <CreditCard size={18} aria-hidden="true" /> {t.payOnline}
         </Link>
         <CtaFillLink
           href={waLink(buildWaMessage())}
@@ -240,13 +293,45 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
         <li className="flex items-start gap-2"><Clock size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.factTiming}</li>
         <li className="flex items-start gap-2"><ShieldCheck size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.securePayment}</li>
       </ul>
-      <button
-        type="button"
-        onClick={clear}
-        className="mt-4 inline-flex min-h-11 items-center text-xs text-ink-soft underline decoration-line underline-offset-4 transition-colors hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+      {confirmClear ? (
+        <div className="mt-4 flex flex-wrap items-center gap-3 text-sm text-ink">
+          <span>{t.confirmEmptyCart}</span>
+          <button type="button" onClick={clear} className="btn-soft btn-soft-outline text-sm">
+            {t.yesEmpty}
+          </button>
+          <button
+            type="button"
+            onClick={() => setConfirmClear(false)}
+            className="inline-flex min-h-11 items-center text-ink-soft underline decoration-line underline-offset-4 transition-colors hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+          >
+            {t.cancel}
+          </button>
+        </div>
+      ) : (
+        <button
+          type="button"
+          onClick={() => setConfirmClear(true)}
+          className="mt-4 inline-flex min-h-11 items-center text-xs text-ink-soft underline decoration-line underline-offset-4 transition-colors hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+        >
+          {t.emptyCart}
+        </button>
+      )}
+
+      <div
+        inert={!showBar || undefined}
+        aria-hidden={!showBar}
+        className={`fixed inset-x-0 bottom-0 z-40 border-t border-line bg-paper-raised px-4 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] shadow-[0_-8px_24px_-12px_hsl(var(--shadow-tint)/0.35)] transition-transform duration-200 motion-reduce:transition-none sm:hidden ${showBar ? "translate-y-0" : "translate-y-full"}`}
       >
-        {t.emptyCart}
-      </button>
+        <div className="flex items-center justify-between gap-4">
+          <p className="min-w-0 truncate text-base font-semibold text-ink">
+            {formatMXN(total + shipping)} MXN
+            {!method && <span className="ml-1 text-xs font-normal text-ink-soft">{t.plusShipping}</span>}
+          </p>
+          <Link href={checkoutHref} className="btn-soft btn-soft-solid min-h-11 shrink-0 px-6 text-sm">
+            <CreditCard size={16} aria-hidden="true" /> {t.pay}
+          </Link>
+        </div>
+      </div>
 
       <RelatedProducts
         excludeSlugs={[...new Set(items.map((i) => i.slug))]}

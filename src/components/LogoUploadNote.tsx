@@ -25,7 +25,7 @@ const STAGE_CLASSES: Record<Stage, string> = {
 // picks the file, previews it, and hands it to DesignFileContext. The file
 // itself is read back from the context (not local state), so the same pick
 // shows up on the product page and at checkout.
-export function LogoUploadNote({ slug, lang = "es", heading }: { slug: string; lang?: Lang; heading?: string }) {
+export function LogoUploadNote({ slug, lang = "es", heading, hint }: { slug: string; lang?: Lang; heading?: string; hint?: string }) {
   const [error, setError] = useState<string | null>(null);
   const [stage, setStage] = useState<Stage>("idle");
   const t = UI[lang];
@@ -109,7 +109,10 @@ export function LogoUploadNote({ slug, lang = "es", heading }: { slug: string; l
       <p className="flex items-center gap-2 text-sm font-semibold text-ink">
         <ImageUp size={16} className="text-brand" /> {heading ?? t.yourLogoOrDesign}
       </p>
-      <p className="mt-1.5 text-xs leading-relaxed text-ink-soft">{t.logoNoteBody}</p>
+      <p className="mt-1.5 text-xs leading-relaxed text-ink-soft">
+        {t.logoNoteBody}
+        {hint && <> {hint}</>}
+      </p>
 
       {file ? (
         <div className="mt-4 flex items-center gap-3">

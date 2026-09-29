@@ -47,6 +47,10 @@ export interface Product {
    * eligible for the homepage's featured-product slot. Toggle off by hand
    * once the launch window has passed: no expiry date logic, YAGNI. */
   isNew?: boolean;
+  /** Needs nothing from the customer beyond picking an option, so listing
+   * cards may add it to the cart directly. Everything else is personalized
+   * (a design, a letterhead) and its card routes to the product page. */
+  quickBuy?: boolean;
 }
 
 /** Per-piece pricing for products sold by piece count (stickers): a flat
@@ -277,6 +281,7 @@ export const products: Product[] = [
     currency: "MXN",
     category: "Placas y Stands NFC para Reseñas de Google",
     isNew: true,
+    quickBuy: true,
     specs: [
       { label: "Tamaño", value: "12 × 12 cm" },
       { label: "Grosor", value: "0.2 cm" },
@@ -339,6 +344,7 @@ export const products: Product[] = [
     currency: "MXN",
     category: "Placas y Stands NFC para Reseñas de Google",
     isNew: true,
+    quickBuy: true,
     specs: [
       { label: "Alto", value: "12.75 cm" },
       { label: "Ancho", value: "7.6 cm" },

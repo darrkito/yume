@@ -11,11 +11,11 @@ import { HeroJar } from "@/components/HeroJar";
 import { CtaFillLink } from "@/components/CtaFillLink";
 import { ProductVisual } from "@/components/ProductVisual";
 import { AddToCartButton } from "@/components/AddToCartButton";
+import { ProductCard } from "@/components/ProductCard";
 import { FaqQuestion } from "@/components/FaqAccordion";
 import { InfiniteGalleryStrip } from "@/components/InfiniteGalleryStrip";
 import { getGalleryItemsEn } from "@/content/gallery.en";
 import { hreflangFor, PRODUCT_SLUG_EN } from "@/lib/i18n";
-import { PickupBadge } from "@/components/PickupBadge";
 
 const NO_MINIMUMS = [
   "One prescription pad or 40-50 stickers, not hundreds",
@@ -192,36 +192,9 @@ export default function HomeEn() {
         <section className="mx-auto max-w-6xl px-6 py-20">
           <h2 className="font-display text-3xl text-ink sm:text-4xl text-balance">More products</h2>
           <div className="mt-12 grid gap-8 sm:grid-cols-2">
-            {rest.map((p, i) => {
-              const t = productsEn[p.slug];
-              return (
-                <div key={p.slug} className={`card-soft flex flex-col p-7 ${i % 2 === 0 ? "tilt-a" : "tilt-b"}`}>
-                  <Link href={`/en/products/${PRODUCT_SLUG_EN[p.slug]}`} className="group flex flex-col">
-                    <div className="relative flex h-48 justify-center overflow-hidden">
-                      <PickupBadge lang="en" />
-                      {p.isNew && (
-                        <span className="absolute left-0 top-0 z-10 rounded-full bg-brand px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-white shadow-sm">
-                          New
-                        </span>
-                      )}
-                      <div className="product-card-visual">
-                        <ProductVisual product={p} compact />
-                      </div>
-                    </div>
-                    <p className="mt-6 text-xs font-semibold uppercase tracking-[0.1em] text-brand">{t.category}</p>
-                    <h3 className="mt-1 font-display text-xl text-ink transition-colors group-hover:text-brand">{t.name}</h3>
-                    <p className="mt-2 text-xl font-bold text-ink">
-                      {hasVariants(p) && <span className="text-sm font-normal text-ink-soft">From </span>}
-                      {formatMXN(productDisplayPrice(p))} <span className="text-sm font-normal text-ink-soft">MXN</span>
-                    </p>
-                    <span className="mt-3 inline-flex min-h-11 w-fit items-center rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-white transition-colors group-hover:bg-brand-deep">
-                      View details →
-                    </span>
-                  </Link>
-                  <AddToCartButton product={p} compact lang="en" />
-                </div>
-              );
-            })}
+            {rest.map((p, i) => (
+              <ProductCard key={p.slug} product={p} index={i} lang="en" />
+            ))}
           </div>
           <Link
             href="/en/products"

@@ -12,7 +12,7 @@ export const generalFaqEn: FaqItem[] = [
   },
   {
     q: "Can I approve the design before it's produced?",
-    a: "Yes, every piece is approved with you before it's produced/printed.",
+    a: "Yes. Before printing we send you a digital proof and nothing is produced until you approve it; up to 2 rounds of changes are included.",
   },
   {
     q: "How long does my order take?",
@@ -20,7 +20,7 @@ export const generalFaqEn: FaqItem[] = [
   },
   {
     q: "How can I get a quote or place an order?",
-    a: "You can email us at yume.studiomx@gmail.com with the details of what you need.",
+    a: "Add your product to the cart and pay online by card, OXXO, or SPEI. If you'd rather get a quote first or need something custom, message us on WhatsApp at +52 33 3400 5135 or email yume.studiomx@gmail.com.",
   },
   {
     q: "Do you offer local delivery in Guadalajara?",
