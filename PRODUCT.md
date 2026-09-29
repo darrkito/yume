@@ -31,7 +31,7 @@ Orders are placed either through the website (cart + Mercado Pago checkout, Chec
 
 - Real Next.js e-commerce site, not a mockup: Mercado Pago payments (Checkout Pro + Bricks), Supabase order storage, real webhook-verified payment confirmation, transactional emails.
 - Fully bilingual (ES canonical, EN at real translated slugs under `/en`), not a machine-translated mirror.
-- Current catalog: 3 products (recetario médico personalizado, etiquetas/stickers de logo, stickers de vinil de uso general), each with real tiered-quantity pricing via a `variants` mechanism.
+- Current catalog: 5 products (recetario médico personalizado, etiquetas/stickers de logo, stickers de vinil de uso general, placa NFC/QR de reseñas de Google, stand NFC/QR de reseñas), each with real tiered-quantity pricing via a `variants` mechanism.
 - Real gallery of past sticker work (13 real production photos), including licensed-character fan art (Sanrio, Pokémon, Zelda, etc.) — an informed, deliberate choice by the business owner to include and SEO-target by character name, made with awareness of the IP-enforcement risk.
 - No fabricated testimonials, case studies, reviews, or social proof anywhere on the site — explicit standing policy. The business launched 2026-08-27 and has no real customer testimonials yet; none should be invented to fill that gap.
 
@@ -39,14 +39,14 @@ Orders are placed either through the website (cart + Mercado Pago checkout, Chec
 
 - Name: **Yume**. Tagline: "Papelería creativa y artículos personalizados."
 - Fixed color anchors: burgundy accent (`#7c0000` / deep `#560000`) and warm cream paper tones — this is Yume's own original brand identity, not a placeholder to be redesigned away.
-- Typography: Playfair Display (display/headlines) + Inter (body) — Playfair is Yume's own pre-existing brand typeface.
+- Typography: Playfair Display (display/headlines) + Karla (body) — Playfair is Yume's own pre-existing brand typeface.
 - Real wordmark logo with a burgundy dot mark (`logo-yume-wordmark.webp`).
 - Real contact channels: WhatsApp `3334005135`, Instagram `@studioyume.mx`, email `yume.studiomx@gmail.com`.
 - Voice: warm, specific, honest about being a small real business in Guadalajara — never corporate-generic, never overstating scale.
 
 ## Evidence on Hand
 
-- Real product photography for all 3 catalog products.
+- Real sticker photography exists; the recetario and the NFC plate/stand still use renders and need real photos from the owner.
 - Real gallery photography: 13 phone photos of physical sticker sheets (`public/gallery/`), catalogued into 6 categories.
 - Real competitor pricing research (local file, not committed to the repo: business-sensitive).
 - No real customer testimonials, case studies, press, or review data exists yet. State this openly in any work that would otherwise want social proof; do not fabricate it.

@@ -63,7 +63,7 @@ export function CheckoutStatus({
       <p className="mt-4 text-sm leading-relaxed text-ink-soft">{message}</p>
       <Link
         href={shopHref}
-        className="mt-8 inline-block rounded-full bg-brand px-7 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brand-deep active:scale-[0.98]"
+        className="mt-8 inline-block rounded-full bg-brand px-7 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-deep active:scale-[0.98]"
       >
         {t.backToShop}
       </Link>

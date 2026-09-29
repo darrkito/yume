@@ -102,7 +102,7 @@ export default async function BlogPostPageEn({ params }: { params: Promise<{ slu
 
       {relatedPosts.length > 0 ? (
         <div className="mt-14">
-          <p className="text-xs font-semibold uppercase tracking-[0.1em] text-brand-deep">Keep reading</p>
+          <p className="text-xs font-semibold text-brand-deep">Keep reading</p>
           <ul className="mt-3 space-y-2">
             {relatedPosts.map((p) => (
               <li key={p.slug}>
@@ -120,7 +120,7 @@ export default async function BlogPostPageEn({ params }: { params: Promise<{ slu
 
       {relatedProducts.length > 0 ? (
         <div className="card-soft mt-14 p-6">
-          <p className="text-xs font-semibold uppercase tracking-[0.1em] text-brand-deep">Order it now</p>
+          <p className="text-xs font-semibold text-brand-deep">Order it now</p>
           <div className="mt-3 space-y-3">
             {relatedProducts.map((p) => (
               <BlogProductCard
@@ -135,7 +135,7 @@ export default async function BlogPostPageEn({ params }: { params: Promise<{ slu
         </div>
       ) : post.quoteMessage ? (
         <div className="card-soft mt-14 p-6">
-          <p className="text-xs font-semibold uppercase tracking-[0.1em] text-brand-deep">Interested?</p>
+          <p className="text-xs font-semibold text-brand-deep">Interested?</p>
           <p className="mt-2 text-sm leading-relaxed text-ink-soft">
             This one is quoted per project: tell us about your event or brand and we&apos;ll confirm price and turnaround.
           </p>
@@ -152,7 +152,7 @@ export default async function BlogPostPageEn({ params }: { params: Promise<{ slu
 
       {post.sources && post.sources.length > 0 ? (
         <div className="mt-10 border-t border-line pt-6">
-          <p className="text-xs font-semibold uppercase tracking-[0.1em] text-ink-soft">Sources</p>
+          <p className="text-xs font-semibold text-ink-soft">Sources</p>
           <ul className="mt-2 space-y-1">
             {post.sources.map((s) => (
               <li key={s.url} className="text-xs text-ink-soft">

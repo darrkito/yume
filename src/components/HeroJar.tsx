@@ -190,7 +190,7 @@ export function HeroJar() {
   }, [reduced, isMobile]);
 
   return (
-    <div className="relative" style={{ width: WIDTH, height: HEIGHT }}>
+    <div className="relative max-sm:[zoom:0.8]" style={{ width: WIDTH, height: HEIGHT }}>
       <JarOutline />
       {reduced === false && (
         <canvas

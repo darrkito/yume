@@ -109,7 +109,7 @@ export default function Home() {
               <div className="info-card-icon">
                 <step.icon size={20} aria-hidden="true" />
               </div>
-              <p className="mt-5 text-xs font-semibold uppercase tracking-[0.1em] text-brand">Paso {i + 1}</p>
+              <p className="mt-5 text-xs font-semibold text-brand">Paso {i + 1}</p>
               <h3 className="mt-1 font-display text-xl text-ink text-balance">{step.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-ink-soft">{step.body}</p>
             </div>
@@ -131,7 +131,7 @@ export default function Home() {
               <ProductVisual product={featured} compact priority />
             </Link>
             <div>
-              <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.1em] text-brand-deep">
+              <p className="flex items-center gap-2 text-xs font-semibold text-brand-deep">
                 {featured.isNew ? "¡Nuevo!" : "Producto destacado"}
               </p>
               <h2 className="mt-3 font-display text-3xl text-ink text-balance sm:text-4xl">

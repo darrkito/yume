@@ -19,9 +19,8 @@ export default function NotFound() {
       <p className="mt-8 text-sm text-ink-soft">
         También puedes revisar la{" "}
         <Link href="/productos" className="underline hover:text-ink">tienda</Link>,{" "}
-        <Link href="/blog" className="underline hover:text-ink">el blog</Link>,{" "}
-        <a href="/sitemap.xml" className="underline hover:text-ink">el mapa del sitio</a>{" "}
-        o <a href="/llms.txt" className="underline hover:text-ink">llms.txt</a> para ver todas las páginas disponibles.
+        <Link href="/blog" className="underline hover:text-ink">el blog</Link>{" "}
+        o <a href="/sitemap.xml" className="underline hover:text-ink">el mapa del sitio</a> para ver todas las páginas disponibles.
       </p>
     </section>
   );

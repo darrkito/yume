@@ -73,7 +73,7 @@ export default function HomeEn() {
         <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 px-6 pb-20 pt-16 sm:grid-cols-2 sm:pt-20">
           <div>
             <h1 className="animate-fade-up font-display text-4xl leading-[1.1] text-ink text-balance sm:text-5xl lg:text-6xl">
-              Custom stickers, prescription pads and stationery, <em className="italic text-brand">from $100</em>.
+              Custom stickers, prescription pads and stationery, <em className="italic text-brand">from $100 MXN</em>.
             </h1>
             <p className="animate-fade-up animate-fade-up-1 mt-6 max-w-md text-base leading-relaxed text-ink-soft">
               Custom stationery made to order in Guadalajara: medical prescription pads, stickers, and pieces built
@@ -132,7 +132,7 @@ export default function HomeEn() {
               <div className="info-card-icon">
                 <step.icon size={20} aria-hidden="true" />
               </div>
-              <p className="mt-5 text-xs font-semibold uppercase tracking-[0.1em] text-brand">Step {i + 1}</p>
+              <p className="mt-5 text-xs font-semibold text-brand">Step {i + 1}</p>
               <h3 className="mt-1 font-display text-xl text-ink text-balance">{step.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-ink-soft">{step.body}</p>
             </div>
@@ -154,7 +154,7 @@ export default function HomeEn() {
               <ProductVisual product={featured} compact priority />
             </Link>
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.1em] text-brand-deep">
+              <p className="text-xs font-semibold text-brand-deep">
                 {featured.isNew ? "New!" : "Featured product"}
               </p>
               <h2 className="mt-3 font-display text-3xl text-ink text-balance sm:text-4xl">

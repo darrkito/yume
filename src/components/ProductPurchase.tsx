@@ -99,7 +99,7 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
         // Three one-tap amounts plus a typable stepper for anything else:
         // one control for "how many", instead of a 12-row select AND a field.
         <fieldset className="mt-5">
-          <legend className="text-xs uppercase tracking-[0.15em] text-ink-soft">{t.chooseQuantity}</legend>
+          <legend className="text-xs text-ink-soft">{t.chooseQuantity}</legend>
           <div className="mt-3 flex flex-wrap gap-2">
             {[tiers.baseQty, tiers.discountQty, QUICK_PICK_MAX].map((n) => (
               <button
@@ -135,7 +135,7 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
 
       {!tiers && hasVariants(product) && product.variants!.length > RADIO_VS_SELECT_THRESHOLD && (
         <div className="mt-5">
-          <label htmlFor={`variant-${product.slug}`} className="text-xs uppercase tracking-[0.15em] text-ink-soft">
+          <label htmlFor={`variant-${product.slug}`} className="text-xs text-ink-soft">
             {t.chooseQuantity}
           </label>
           <select
@@ -155,7 +155,7 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
 
       {hasVariants(product) && product.variants!.length <= RADIO_VS_SELECT_THRESHOLD && (
         <fieldset className="mt-5">
-          <legend className="text-xs uppercase tracking-[0.15em] text-ink-soft">{t.chooseOption}</legend>
+          <legend className="text-xs text-ink-soft">{t.chooseOption}</legend>
           <div className="mt-3 flex flex-col gap-2">
             {product.variants!.map((v) => (
               <label
@@ -201,7 +201,7 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
 
       {!tiers && (
         <div className="mt-5 flex items-center gap-3">
-          <span className="text-xs uppercase tracking-[0.15em] text-ink-soft">{t.unitsLabel}</span>
+          <span className="text-xs text-ink-soft">{t.unitsLabel}</span>
           <QtyInput
             value={units}
             min={1}

@@ -99,7 +99,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
       {relatedPosts.length > 0 ? (
         <div className="mt-14">
-          <p className="text-xs font-semibold uppercase tracking-[0.1em] text-brand-deep">Sigue leyendo</p>
+          <p className="text-xs font-semibold text-brand-deep">Sigue leyendo</p>
           <ul className="mt-3 space-y-2">
             {relatedPosts.map((p) => (
               <li key={p.slug}>
@@ -117,7 +117,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
       {relatedProducts.length > 0 ? (
         <div className="card-soft mt-14 p-6">
-          <p className="text-xs font-semibold uppercase tracking-[0.1em] text-brand-deep">Pídelo ahora</p>
+          <p className="text-xs font-semibold text-brand-deep">Pídelo ahora</p>
           <div className="mt-3 space-y-3">
             {relatedProducts.map((p) => (
               <BlogProductCard key={p.slug} product={p} name={p.name} href={`/productos/${p.slug}`} lang="es" />
@@ -126,7 +126,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         </div>
       ) : post.quoteMessage ? (
         <div className="card-soft mt-14 p-6">
-          <p className="text-xs font-semibold uppercase tracking-[0.1em] text-brand-deep">¿Te interesa?</p>
+          <p className="text-xs font-semibold text-brand-deep">¿Te interesa?</p>
           <p className="mt-2 text-sm leading-relaxed text-ink-soft">
             Este producto se cotiza a la medida: cuéntanos tu evento o proyecto y te confirmamos precio y tiempo de entrega.
           </p>
@@ -138,7 +138,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
       {post.sources && post.sources.length > 0 ? (
         <div className="mt-10 border-t border-line pt-6">
-          <p className="text-xs font-semibold uppercase tracking-[0.1em] text-ink-soft">Fuentes</p>
+          <p className="text-xs font-semibold text-ink-soft">Fuentes</p>
           <ul className="mt-2 space-y-1">
             {post.sources.map((s) => (
               <li key={s.url} className="text-xs text-ink-soft">

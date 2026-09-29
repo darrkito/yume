@@ -62,7 +62,7 @@ export function Footer() {
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-ink-soft">{TAGLINE[lang]}</p>
           </div>
           <nav aria-label="Enlaces" className="text-sm text-ink-soft">
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.1em] text-ink">{t.explore}</p>
+            <p className="mb-3 text-xs font-semibold text-ink">{t.explore}</p>
             <ul className="space-y-2">
               <li>
                 <Link href={shopHref} className="inline-flex min-h-11 items-center hover:text-brand transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
@@ -87,7 +87,7 @@ export function Footer() {
             </ul>
           </nav>
           <div className="text-sm text-ink-soft">
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.1em] text-ink">{t.contact}</p>
+            <p className="mb-3 text-xs font-semibold text-ink">{t.contact}</p>
             <ul className="space-y-2">
               <li>
                 <Link href={contactPageHref} className="inline-flex min-h-11 items-center hover:text-brand transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
@@ -114,15 +114,15 @@ export function Footer() {
         </div>
         <div className="mt-12 grid gap-6 border-t border-line pt-8 sm:grid-cols-3">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.1em] text-ink">{t.footerShippingTitle}</p>
+            <p className="text-xs font-semibold text-ink">{t.footerShippingTitle}</p>
             <p className="mt-2 text-sm leading-relaxed text-ink-soft">{t.footerShippingBody.replace("{national}", formatMXN(NATIONAL_SHIPPING_PRICE)).replace("{threshold}", formatMXN(FREE_SHIPPING_THRESHOLD)).replace("{pickup}", formatMXN(CASABLANCA_PRICE))}</p>
           </div>
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.1em] text-ink">{t.footerProofTitle}</p>
+            <p className="text-xs font-semibold text-ink">{t.footerProofTitle}</p>
             <p className="mt-2 text-sm leading-relaxed text-ink-soft">{t.factProof}</p>
           </div>
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.1em] text-ink">{t.footerPaymentTitle}</p>
+            <p className="text-xs font-semibold text-ink">{t.footerPaymentTitle}</p>
             <p className="mt-2 text-sm leading-relaxed text-ink-soft">{t.footerPaymentBody}</p>
           </div>
         </div>

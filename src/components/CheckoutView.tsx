@@ -83,7 +83,7 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
         <p className="animate-fade-up animate-fade-up-2 mt-4 text-sm text-ink-soft">{t.emptyCartCheckoutBody}</p>
         <Link
           href={shopHref}
-          className="mt-8 inline-block rounded-full bg-brand px-7 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brand-deep active:scale-[0.98]"
+          className="mt-8 inline-block rounded-full bg-brand px-7 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-deep active:scale-[0.98]"
         >
           {t.viewShop}
         </Link>
@@ -114,7 +114,7 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
     <section className={`mx-auto px-6 py-16 sm:py-24 ${settled ? "max-w-2xl" : "max-w-2xl lg:max-w-5xl"}`}>
       <h1 className="animate-fade-up font-display text-4xl text-ink">{mode === "form" ? t.yourDetailsShipping : t.chooseHowToPay}</h1>
       {!settled && (
-        <p className="animate-fade-up animate-fade-up-2 mt-2 text-xs font-semibold uppercase tracking-[0.1em] text-ink-soft">
+        <p className="animate-fade-up animate-fade-up-2 mt-2 text-xs font-semibold text-ink-soft">
           {mode === "form" ? t.checkoutStepShipping : t.checkoutStepPayment}
         </p>
       )}
@@ -217,7 +217,7 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
                   <ExternalLink size={22} className="text-brand" />
                   <span className="font-display text-lg text-ink">{t.payWithMercadoPago}</span>
                   <span className="text-xs leading-relaxed text-ink-soft">{t.mpDescription}</span>
-                  <span className="mt-auto text-xs font-semibold uppercase tracking-[0.1em] text-brand">
+                  <span className="mt-auto text-xs font-semibold text-brand">
                     {redirecting ? t.redirecting : t.continueArrow}
                   </span>
                 </button>
@@ -230,7 +230,7 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
                   <CreditCard size={22} className="text-brand" />
                   <span className="font-display text-lg text-ink">{t.payHere}</span>
                   <span className="text-xs leading-relaxed text-ink-soft">{t.payHereDescription}</span>
-                  <span className="mt-auto flex items-center gap-1.5 text-xs font-semibold uppercase tracking-[0.1em] text-brand">
+                  <span className="mt-auto flex items-center gap-1.5 text-xs font-semibold text-brand">
                     <Lock size={13} /> {t.includesStorePayment}
                   </span>
                 </button>

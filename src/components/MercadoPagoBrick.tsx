@@ -125,7 +125,7 @@ export function MercadoPagoBrick({
               href={result.ticketUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-block rounded-full bg-brand px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brand-deep"
+              className="mt-4 inline-block rounded-full bg-brand px-6 py-2.5 text-xs font-semibold text-white transition-colors hover:bg-brand-deep"
             >
               {c.viewVoucher}
             </a>

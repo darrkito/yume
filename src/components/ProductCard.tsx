@@ -44,7 +44,7 @@ export function ProductCard({
         <div className={`relative flex ${s.media} justify-center overflow-hidden`}>
           <PickupBadge lang={lang} />
           {product.isNew && (
-            <span className="absolute left-0 top-0 z-10 rounded-full bg-brand px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-white shadow-sm">
+            <span className="absolute left-0 top-0 z-10 rounded-full bg-brand px-2.5 py-1 text-xs font-semibold text-white shadow-sm">
               {lang === "en" ? "New" : "Nuevo"}
             </span>
           )}

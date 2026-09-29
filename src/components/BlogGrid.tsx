@@ -32,7 +32,7 @@ export function BlogGrid({
             key={cat}
             type="button"
             onClick={() => setActive(cat)}
-            className={`flex min-h-11 shrink-0 items-center rounded-full border px-4 py-2 text-xs font-semibold uppercase tracking-[0.1em] transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand ${
+            className={`flex min-h-11 shrink-0 items-center rounded-full border px-4 py-2 text-xs font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand ${
               active === cat ? "border-brand bg-brand text-white" : "border-line text-ink-soft hover:border-brand hover:text-brand"
             }`}
           >

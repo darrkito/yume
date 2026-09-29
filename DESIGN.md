@@ -5,7 +5,7 @@ colors:
   paper: "#fffbf3"
   paper-raised: "#fffdf8"
   ink: "#2b211d"
-  ink-soft: "#7d6d63"
+  ink-soft: "#736459"
   brand: "#7c0000"
   brand-deep: "#560000"
   brand-tint: "#f7e6e0"
@@ -88,7 +88,7 @@ A warm, narrow palette: cream paper, a warm near-black ink, and a single burgund
 - **Warm Paper** (`#fffbf3`): page background everywhere. Never pure white.
 - **Paper Raised** (`#fffdf8`): card and raised-surface background, barely lighter than the page so cards read as "sitting on" the paper rather than punched out of it.
 - **Warm Ink** (`#2b211d`): primary text color. Warm near-black, never pure `#000`.
-- **Soft Ink** (`#7d6d63`): secondary text (body copy, captions, metadata).
+- **Soft Ink** (`#736459`): secondary text (body copy, captions, metadata).
 - **Blush Tint** (`#f7e6e0`): soft dusty-pink section backgrounds (the featured-product block) and category-tag fills. A tint of the primary, not a second hue.
 - **Warm Line** (`#ecdfd0`): hairline dividers and structural borders.
 - **Warm Line Strong** (`#d8c3ae`): the slightly stronger border used on outline buttons and product-detail frames.
@@ -161,7 +161,7 @@ Soft and a little imperfect: rounded, warm-shadowed, gently tilted where it fits
 - **Variant selection (radio-style option cards):** selected state fills with Blush Tint and a burgundy border; unselected state uses a plain warm-line border.
 
 ### Navigation
-- Sticky header, warm-paper background at 95% opacity with a light backdrop blur, single hairline bottom border (Warm Line). Nav links are plain-weight Karla, no uppercase, no letter-spacing chrome — the previous mono-caps nav treatment is retired. Active/hover state is a simple color shift to burgundy, no underline or background change.
+- Sticky header, opaque warm-paper background (no backdrop blur: it did not composite reliably and left content readable behind the header), single hairline bottom border (Warm Line). Nav links are plain-weight Karla, no uppercase, no letter-spacing chrome — the previous mono-caps nav treatment is retired. Active/hover state is a simple color shift to burgundy, no underline or background change.
 
 ### Quantity input
 - `QtyInput`: pill outline (`border-line`, paper bg), 44px −/+ buttons in soft ink that turn burgundy on hover, a borderless tabular-number field in the middle with native spin buttons removed. Same component on product pages and in the cart.
@@ -172,7 +172,7 @@ Soft and a little imperfect: rounded, warm-shadowed, gently tilted where it fits
 ### Tags / Labels
 - **Pickup badge** (`PickupBadge`): outline pill (paper bg, `brand/30` border, burgundy text, map-pin icon), top-right of product-card photos; the solid burgundy "Nuevo" pill owns top-left.
 - **Wholesale callout** (PDP): Blush Tint box, ink line for "Primeras 100 piezas", Burgundy Deep semibold line for "precio mayoreo".
-- Category tags render as small pill badges: Blush Tint background, Burgundy Deep text, no border. Metadata labels (spec names, form labels) are plain uppercase Karla at small size and soft-ink color, not pill-shaped.
+- Category tags render as small pill badges: Blush Tint background, Burgundy Deep text, no border. Metadata labels (spec names, form labels) are plain sentence-case Karla at 12px minimum and soft-ink color, not pill-shaped. No text is set in spaced capitals; the only uppercase is the ES / EN language toggle. Badges and counters are never below 12px.
 
 ## Do's and Don'ts
 
@@ -192,6 +192,6 @@ Soft and a little imperfect: rounded, warm-shadowed, gently tilted where it fits
 - **Don't** reintroduce sharp (0-radius) corners, mono-caps uppercase chrome strips, numbered index cards, or a black/inverted section — all confirmed anti-references from the Swiss-editorial pass this system replaced.
 - **Don't** stack a border and a shadow on the same card or frame.
 - **Don't** introduce a second accent hue (no blue, no green, no purple) even for a single small element.
-- **Don't** use pure `#000000` or pure `#ffffff` anywhere.
+- **Don't** use pure `#000000` or pure `#ffffff` anywhere. The one exception is label text on solid burgundy (buttons, badges, cart counter), which is `#ffffff` for contrast.
 - **Don't** make the tilt effect stronger than about a degree, or apply it to a single isolated card outside a grid.
 - **Don't** put a background wash on a card, button, or any surface that already carries a shadow, or use a multi-stop "mesh" gradient anywhere.

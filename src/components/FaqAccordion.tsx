@@ -61,7 +61,7 @@ export function FaqAccordion({ categories }: { categories: FaqCategory[] }) {
     <div className="space-y-12">
       {categories.map((category) => (
         <div key={category.label}>
-          <h2 className="text-xs uppercase tracking-[0.2em] text-brand">
+          <h2 className="text-xs text-brand">
             {category.href ? (
               <Link href={category.href} className="underline-offset-4 hover:underline">
                 {category.label}

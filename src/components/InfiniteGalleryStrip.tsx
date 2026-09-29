@@ -28,7 +28,7 @@ export function InfiniteGalleryStrip({ items, heading, body, viewAllLabel, viewA
         </div>
         <Link
           href={viewAllHref}
-          className="inline-flex min-h-11 items-center text-xs font-semibold uppercase tracking-[0.15em] text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+          className="inline-flex min-h-11 items-center text-sm font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
         >
           {viewAllLabel} →
         </Link>
