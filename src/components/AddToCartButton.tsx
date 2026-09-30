@@ -45,6 +45,7 @@ export function AddToCartButton({ product, compact = false, lang = "es" }: { pro
       <button
         type="button"
         onClick={handleAdd}
+        data-track="add_to_cart"
         aria-live="polite"
         className={`btn-soft btn-soft-solid whitespace-nowrap ${compact ? "w-full px-4" : "w-full sm:w-auto"}`}
       >

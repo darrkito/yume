@@ -284,6 +284,7 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
             ref={addButtonRef}
             type="button"
             onClick={handleAdd}
+            data-track="add_to_cart"
             aria-live="polite"
             className="btn-soft btn-soft-outline w-full whitespace-nowrap sm:w-auto"
           >
@@ -297,7 +298,7 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
               </>
             )}
           </button>
-          <button type="button" onClick={handleBuyNow} className="btn-soft btn-soft-solid w-full whitespace-nowrap sm:w-auto">
+          <button type="button" data-track="buy_now" onClick={handleBuyNow} className="btn-soft btn-soft-solid w-full whitespace-nowrap sm:w-auto">
             <Zap size={16} aria-hidden="true" /> {t.buyNow}
           </button>
         </div>
@@ -342,11 +343,11 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
           </a>
           {/* One primary CTA: two full buttons squeezed the price to "$100..." at 390px; WhatsApp is an icon. */}
           {needsDesign ? (
-            <button type="button" onClick={handleChooseDesign} className="btn-soft btn-soft-solid min-h-11 shrink-0 px-5 text-sm">
+            <button type="button" data-track="choose_design" onClick={handleChooseDesign} className="btn-soft btn-soft-solid min-h-11 shrink-0 px-5 text-sm">
               <ImageUp size={16} aria-hidden="true" /> {t.chooseDesign}
             </button>
           ) : (
-            <button type="button" onClick={handleBuyNow} className="btn-soft btn-soft-solid min-h-11 shrink-0 px-5 text-sm">
+            <button type="button" data-track="buy_now" onClick={handleBuyNow} className="btn-soft btn-soft-solid min-h-11 shrink-0 px-5 text-sm">
               <Zap size={16} aria-hidden="true" /> {t.buyNow}
             </button>
           )}

@@ -1,3 +1,4 @@
+import { ProductDetails } from "@/components/ProductDetails";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -114,7 +115,8 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
 
           <ProductPurchase product={product} />
 
-          <p className="mt-6 max-w-[65ch] text-sm leading-relaxed text-ink-soft">{product.description}</p>
+          <ProductDetails title="Detalles del producto">
+<p className="mt-4 sm:mt-6 max-w-[65ch] text-sm leading-relaxed text-ink-soft">{product.description}</p>
 
           <dl className="mt-8 grid grid-cols-2 gap-4 border-y border-line py-6 text-sm">
             {product.specs.filter((spec) => !TIER_RESTATEMENT.test(spec.label)).map((spec) => (
@@ -134,6 +136,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
               </li>
             ))}
           </ul>
+          </ProductDetails>
         </div>
       </div>
 

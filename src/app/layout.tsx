@@ -6,6 +6,7 @@ import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { TabBar } from "@/components/TabBar";
+import { TrackClicks } from "@/components/TrackClicks";
 import { LanguageBanner } from "@/components/LanguageBanner";
 import { HtmlLangSync } from "@/components/HtmlLangSync";
 import { WebMcpProvider } from "@/components/WebMcpProvider";
@@ -127,6 +128,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <main id="main">{children}</main>
             <Footer />
             <TabBar />
+            <TrackClicks />
             <CartToast />
           </DesignFileProvider>
         </CartProvider>

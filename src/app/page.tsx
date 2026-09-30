@@ -7,6 +7,7 @@ import { waLink } from "@/content/site";
 import { formatMXN } from "@/lib/format";
 import { HeroJarLazy } from "@/components/HeroJarLazy";
 import { HeroPhotos } from "@/components/HeroPhotos";
+import { CartReminder } from "@/components/CartReminder";
 import { QuoteCard } from "@/components/QuoteCard";
 import { QuoteBand } from "@/components/QuoteBand";
 import { ProductRail } from "@/components/ProductRail";
@@ -49,6 +50,7 @@ export default function Home() {
 
   return (
     <>
+      <CartReminder />
       {/* Hero */}
       <section className="desk-lamp-wash">
         <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-8 px-6 pb-6 pt-8 sm:grid-cols-2 sm:gap-12 sm:pb-20 sm:pt-20">
@@ -144,7 +146,7 @@ export default function Home() {
               href={`/productos/${featured.slug}`}
               className="card-soft tilt-a flex h-72 justify-center overflow-hidden p-8 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
             >
-              <ProductVisual product={featured} compact priority />
+              <ProductVisual product={featured} compact />
             </Link>
             <div>
               <p className="flex items-center gap-2 text-xs font-semibold text-brand-deep">

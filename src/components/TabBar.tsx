@@ -6,7 +6,9 @@ import { usePathname } from "next/navigation";
 import { Home, Image as ImageIcon, MessageCircle, ShoppingBag, Store, X } from "lucide-react";
 import { useCart } from "@/components/CartContext";
 import { LanguageToggle } from "@/components/LanguageToggle";
+import { itemName } from "@/components/useAddProduct";
 import { waLink } from "@/content/site";
+import { formatMXN } from "@/lib/format";
 import { UI } from "@/lib/i18n";
 
 // Pages that already own a fixed bottom action bar (PDP buy bar, cart "Pagar")
@@ -23,7 +25,7 @@ const tab =
 
 export function TabBar() {
   const pathname = usePathname();
-  const { count } = useCart();
+  const { count, items: cartItems } = useCart();
   const [helpOpen, setHelpOpen] = useState(false);
   const dialogRef = useRef<HTMLDialogElement>(null);
   const lang = pathname.startsWith("/en") ? "en" : "es";
@@ -39,6 +41,13 @@ export function TabBar() {
   if (HIDE_PREFIXES.some((p) => pathname.startsWith(p))) return null;
 
   const en = lang === "en";
+  // With something in the cart, the quote opens with what they picked.
+  const cartLines = cartItems.map((i) => `- ${itemName(i, lang)} x${i.qty}: ${formatMXN(i.price * i.qty)}`).join("\n");
+  const waMessage = cartItems.length
+    ? en
+      ? `Hi, I have this in my cart:\n${cartLines}\n\nI have a question before paying.`
+      : `Hola, tengo esto en mi carrito:\n${cartLines}\n\nTengo una duda antes de pagar.`
+    : WA_MESSAGE[lang];
   const items = [
     { href: en ? "/en" : "/", label: t.tabHome, Icon: Home },
     { href: en ? "/en/products" : "/productos", label: t.tabShop, Icon: Store },
@@ -97,7 +106,7 @@ export function TabBar() {
               <X size={22} aria-hidden="true" />
             </button>
           </div>
-          <a href={waLink(WA_MESSAGE[lang])} target="_blank" rel="noopener noreferrer" className="btn-soft btn-soft-solid mt-3 w-full">
+          <a href={waLink(waMessage)} target="_blank" rel="noopener noreferrer" className="btn-soft btn-soft-solid mt-3 w-full">
             <MessageCircle size={18} aria-hidden="true" /> {t.quoteWhatsapp}
           </a>
           <ul className="mt-2 divide-y divide-line">

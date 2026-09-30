@@ -3,10 +3,10 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { X, ImageUp, CreditCard, Truck, CheckCircle2, Clock, ShieldCheck, MessageCircle } from "lucide-react";
-import { useCart } from "@/components/CartContext";
+import { useCart, type CartItem } from "@/components/CartContext";
 import { useDesignFiles } from "@/components/DesignFileContext";
-import { getProduct, MAX_PIECES, pieceCount, tieredPrice } from "@/content/products";
-import { productsEn } from "@/content/products.en";
+import { getProduct, hasVariants, MAX_PIECES, pieceCount, tieredPrice } from "@/content/products";
+import { getProductTranslation, productsEn } from "@/content/products.en";
 import { QtyInput } from "@/components/QtyInput";
 import { cartLine } from "@/components/useAddProduct";
 import { ProductVisual } from "@/components/ProductVisual";
@@ -35,6 +35,21 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
   // as $290 at first sight. The shopper picks, then sees the real total.
   const [method, setMethod] = useState<DeliveryMethod | null>(null);
   const [confirmClear, setConfirmClear] = useState(false);
+  // Removing a line is one tap, so it can be undone for a few seconds.
+  const [removed, setRemoved] = useState<CartItem | null>(null);
+  const undoTimer = useRef<ReturnType<typeof setTimeout>>(undefined);
+  const removeWithUndo = (item: CartItem) => {
+    removeItem(item.slug, item.variantId);
+    setRemoved(item);
+    clearTimeout(undoTimer.current);
+    undoTimer.current = setTimeout(() => setRemoved(null), 6000);
+  };
+  const undoRemove = () => {
+    if (!removed) return;
+    const { qty, ...line } = removed;
+    replaceLine({ slug: line.slug, variantId: "__removed__" }, line, qty);
+    setRemoved(null);
+  };
   const [showBar, setShowBar] = useState(false);
   const payRef = useRef<HTMLAnchorElement>(null);
   const t = UI[lang];
@@ -86,6 +101,15 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
     return msg;
   };
 
+  const undoBar = removed && (
+    <div role="status" className="fixed inset-x-4 bottom-24 z-50 mx-auto flex max-w-md items-center justify-between gap-4 rounded-full bg-ink px-5 py-2 text-sm text-white shadow-lg sm:bottom-8">
+      <span className="min-w-0 truncate">{t.removedItem.replace("{name}", itemName(removed, lang))}</span>
+      <button type="button" onClick={undoRemove} className="min-h-11 shrink-0 px-2 font-semibold underline underline-offset-2">
+        {t.undo}
+      </button>
+    </div>
+  );
+
   if (items.length === 0) {
     return (
       <section className="mx-auto max-w-2xl px-6 py-24 text-center">
@@ -106,12 +130,14 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
         >
           <MessageCircle size={16} aria-hidden="true" />{t.quoteWhatsapp}
         </a>
+        {undoBar}
       </section>
     );
   }
 
   return (
     <section className="mx-auto max-w-3xl px-6 py-16 sm:py-24">
+      {undoBar}
       <h1 className="animate-fade-up font-display text-4xl text-ink">{t.yourOrder}</h1>
 
       <ul className="mt-10 divide-y divide-line border-y border-line">
@@ -143,6 +169,20 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
                     ? `${formatMXN((item.price * item.qty) / pieces)}${t.perPieceSuffix}`
                     : `${formatMXN(item.price)} ${t.each}`}
                 </p>
+                {product && !product.tiers && hasVariants(product) && product.variants!.length > 1 && (
+                  <select
+                    aria-label={t.chooseOption}
+                    value={item.variantId}
+                    onChange={(e) => replaceLine(item, cartLine(product, e.target.value, lang), item.qty)}
+                    className="mt-2 block min-h-11 max-w-full rounded-xl border border-line bg-paper px-3 text-sm text-ink"
+                  >
+                    {product.variants!.map((v) => (
+                      <option key={v.id} value={v.id}>
+                        {(lang === "en" ? getProductTranslation(product.slug)?.variantLabels?.[v.id] : undefined) ?? v.label} · {formatMXN(v.price)}
+                      </option>
+                    ))}
+                  </select>
+                )}
               </div>
             </div>
             <div className="flex shrink-0 items-center gap-4">
@@ -173,7 +213,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
               <p className="w-20 text-right text-sm font-semibold text-ink">{formatMXN(item.price * item.qty)}</p>
               <button
                 type="button"
-                onClick={() => removeItem(item.slug, item.variantId)}
+                onClick={() => removeWithUndo(item)}
                 aria-label={`${t.remove} ${itemName(item, lang)}`}
                 className="flex size-11 items-center justify-center text-ink-soft transition-colors hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
               >
