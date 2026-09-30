@@ -20,7 +20,7 @@ const SECTIONS = [
   },
   {
     title: "3. Purpose of processing",
-    body: "We use your data to: respond to your quote request, process and follow up on your order (including sending the digital proof for your approval), coordinate shipping or pickup at the Casa Blanca point, and follow up on your purchase. We do not sell your data to third parties.",
+    body: "We use your data to: respond to your quote request, process and follow up on your order (including sending the digital proof for your approval), coordinate shipping or pickup at the Casa Blanca point, and follow up on your purchase. If you started an online order and did not complete the payment, we may send you a single reminder email 24 to 72 hours later; we do not use it for any other marketing purpose. We do not sell your data to third parties.",
   },
   {
     title: "4. Third parties that process data on our behalf",

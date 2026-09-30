@@ -40,6 +40,7 @@ export interface Order {
   mp_payment_id: string | null;
   emails_sent: boolean;
   design_file_urls: DesignFileUpload[] | null;
+  abandoned_reminder_sent_at: string | null;
   created_at: string;
   updated_at: string;
 }
@@ -173,5 +174,87 @@ export async function markOrderAsFailed(orderId: string): Promise<Order> {
 export async function markEmailsAsSent(orderId: string): Promise<void> {
   const supabase = getSupabaseClient();
   const { error } = await supabase.from("orders").update({ emails_sent: true }).eq("id", orderId);
+  if (error) throw error;
+}
+
+// --- Abandoned-checkout reminder ---------------------------------------------
+// One email per shopper, 24-72 h after a pending order was created. The 72 h
+// upper bound keeps a missed cron day from reminding someone a week late.
+const REMINDER_MIN_AGE_H = 24;
+const REMINDER_MAX_AGE_H = 72;
+
+/** Pending, never-reminded orders in the reminder window, one per email
+ * (the newest), skipping shoppers who paid an order created after it. */
+export async function getAbandonedOrders(now = new Date()): Promise<{ send: Order[]; skipped: Order[] }> {
+  const supabase = getSupabaseClient();
+  const ago = (h: number) => new Date(now.getTime() - h * 3600_000).toISOString();
+
+  const { data, error } = await supabase
+    .from("orders")
+    .select("*")
+    .eq("status", "pending")
+    .is("abandoned_reminder_sent_at", null)
+    .gte("created_at", ago(REMINDER_MAX_AGE_H))
+    .lte("created_at", ago(REMINDER_MIN_AGE_H))
+    .order("created_at", { ascending: false });
+  if (error) throw error;
+  const pending = (data ?? []) as Order[];
+  if (pending.length === 0) return { send: [], skipped: [] };
+
+  const emails = [...new Set(pending.map((o) => o.customer_email))];
+  const { data: paid, error: paidError } = await supabase
+    .from("orders")
+    .select("customer_email, created_at")
+    .eq("status", "paid")
+    .gte("created_at", ago(REMINDER_MAX_AGE_H))
+    .in("customer_email", emails);
+  if (paidError) throw paidError;
+
+  const send: Order[] = [];
+  const skipped: Order[] = [];
+  const seen = new Set<string>();
+  for (const order of pending) {
+    const email = order.customer_email.toLowerCase();
+    const alreadyPaid = (paid ?? []).some((p) => p.customer_email.toLowerCase() === email && p.created_at >= order.created_at);
+    if (seen.has(email) || alreadyPaid) {
+      skipped.push(order);
+    } else {
+      seen.add(email);
+      send.push(order);
+    }
+  }
+  return { send, skipped };
+}
+
+/** Atomically claims an order for reminding: true only for the caller that
+ * flips the column, so two overlapping cron runs can never both send. */
+export async function claimReminder(orderId: string): Promise<boolean> {
+  const supabase = getSupabaseClient();
+  const { data, error } = await supabase
+    .from("orders")
+    .update({ abandoned_reminder_sent_at: new Date().toISOString() })
+    .eq("id", orderId)
+    .is("abandoned_reminder_sent_at", null)
+    .select("id");
+  if (error) throw error;
+  return (data ?? []).length === 1;
+}
+
+/** Undo a claim when the email did not go out, so tomorrow's run retries. */
+export async function releaseReminder(orderId: string): Promise<void> {
+  const supabase = getSupabaseClient();
+  const { error } = await supabase.from("orders").update({ abandoned_reminder_sent_at: null }).eq("id", orderId);
+  if (error) throw error;
+}
+
+/** Skipped duplicates are marked too, so the shopper never gets a second email. */
+export async function markRemindedWithoutSending(orderIds: string[]): Promise<void> {
+  if (orderIds.length === 0) return;
+  const supabase = getSupabaseClient();
+  const { error } = await supabase
+    .from("orders")
+    .update({ abandoned_reminder_sent_at: new Date().toISOString() })
+    .in("id", orderIds)
+    .is("abandoned_reminder_sent_at", null);
   if (error) throw error;
 }

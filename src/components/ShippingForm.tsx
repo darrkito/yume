@@ -135,6 +135,7 @@ export function ShippingForm({
               onChange={update("email")}
               placeholder={lang === "en" ? "jane@email.com" : "maria@correo.com"}
             />
+            <p className="mt-1 text-xs text-ink-soft">{t.reminderNotice}</p>
           </div>
           <div>
             <label className={LABEL_CLASS} htmlFor="phone">

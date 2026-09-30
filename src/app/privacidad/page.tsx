@@ -19,7 +19,7 @@ const SECTIONS = [
   },
   {
     title: "3. Finalidad del tratamiento",
-    body: "Usamos tus datos para: responder tu solicitud de cotización, procesar y dar seguimiento a tu pedido (incluyendo el envío de la prueba digital para tu aprobación), coordinar el envío o la recolección en punto Casa Blanca, y darte seguimiento sobre tu compra. No vendemos tus datos a terceros.",
+    body: "Usamos tus datos para: responder tu solicitud de cotización, procesar y dar seguimiento a tu pedido (incluyendo el envío de la prueba digital para tu aprobación), coordinar el envío o la recolección en punto Casa Blanca, y darte seguimiento sobre tu compra. Si iniciaste un pedido en línea y no completaste el pago, podemos enviarte un solo correo de recordatorio entre 24 y 72 horas después; no lo usamos para ningún otro fin de mercadotecnia. No vendemos tus datos a terceros.",
   },
   {
     title: "4. Terceros que procesan datos en tu nombre",
