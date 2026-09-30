@@ -5,7 +5,7 @@ import { getProduct, hasVariants, productDisplayPrice, products } from "@/conten
 import { getFeaturedFaq } from "@/content/faq";
 import { waLink } from "@/content/site";
 import { formatMXN } from "@/lib/format";
-import { HeroJar } from "@/components/HeroJar";
+import { HeroJarLazy } from "@/components/HeroJarLazy";
 import { HeroPhotos } from "@/components/HeroPhotos";
 import { CtaFillLink } from "@/components/CtaFillLink";
 import { ProductVisual } from "@/components/ProductVisual";
@@ -77,8 +77,8 @@ export default function Home() {
             </ul>
           </div>
           <div className="animate-fade-up animate-fade-up-1 flex min-w-0 flex-col items-center sm:items-end">
-            <div className="hidden sm:block">
-              <HeroJar />
+            <div className="hidden sm:block sm:min-h-[380px]">
+              <HeroJarLazy />
             </div>
             <HeroPhotos lang="es" />
           </div>

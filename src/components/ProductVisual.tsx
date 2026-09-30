@@ -67,6 +67,7 @@ export function ProductVisual({
             width={width}
             height={height}
             className={compact ? "h-full w-auto max-w-full object-contain" : "h-auto max-h-full w-auto max-w-full object-contain"}
+            sizes={compact ? "(min-width: 640px) 400px, calc(100vw - 48px)" : "(min-width: 640px) 50vw, 100vw"}
             priority={priority ?? !compact}
             onLoad={() => setLoaded(true)}
             onClick={compact ? undefined : () => setOpen(true)}
