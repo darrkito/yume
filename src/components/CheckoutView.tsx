@@ -1,5 +1,6 @@
 "use client";
 
+import { itemName } from "@/components/useAddProduct";
 import { useState } from "react";
 import Link from "next/link";
 import { CreditCard, ExternalLink, Lock, ShieldCheck, CheckCircle2 } from "lucide-react";
@@ -126,7 +127,7 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
               {items.map((item) => (
                 <li key={`${item.slug}:${item.variantId ?? ""}`} className="flex items-center justify-between py-3">
                   <span className="text-ink">
-                    {item.name} <span className="text-ink-soft">x{item.qty}</span>
+                    {itemName(item, lang)} <span className="text-ink-soft">x{item.qty}</span>
                   </span>
                   <span className="font-medium text-ink">{formatMXN(item.price * item.qty)}</span>
                 </li>

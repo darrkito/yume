@@ -1,5 +1,6 @@
 "use client";
 
+import { itemName } from "@/components/useAddProduct";
 import { useEffect, useState } from "react";
 import { Loader2, Check } from "lucide-react";
 import type { CartItem } from "@/components/CartContext";
@@ -73,7 +74,7 @@ export function ReceiptPrinter({ items, total, lang = "es" }: { items: CartItem[
             {items.map((item) => (
               <li key={`${item.slug}:${item.variantId ?? ""}`}>
                 <span>
-                  {item.name} ×{item.qty}
+                  {itemName(item, lang)} ×{item.qty}
                 </span>
                 <span>{formatMXN(item.price * item.qty)}</span>
               </li>

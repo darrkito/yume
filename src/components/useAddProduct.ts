@@ -1,7 +1,7 @@
 "use client";
 
-import { useCart } from "@/components/CartContext";
-import { cartItemLabel, MAX_PIECES, pieceCount, resolvePrice, type Product } from "@/content/products";
+import { useCart, type CartItem } from "@/components/CartContext";
+import { cartItemLabel, getProduct, MAX_PIECES, pieceCount, resolvePrice, type Product } from "@/content/products";
 import { cartItemLabelEn } from "@/content/products.en";
 import type { Lang } from "@/lib/i18n";
 
@@ -13,6 +13,15 @@ export function cartLine(product: Product, variantId: string | undefined, lang: 
     price: resolvePrice(product, variantId),
     variantId,
   };
+}
+
+/** A saved cart line's name in the language of the page showing it. The name
+ * stored at add time is in whatever language the shopper was browsing then,
+ * so switching ES/EN would otherwise leave lines in the wrong language. */
+export function itemName(item: CartItem, lang: Lang): string {
+  const product = getProduct(item.slug);
+  if (!product) return item.name;
+  return lang === "en" ? cartItemLabelEn(product, item.variantId) : cartItemLabel(product, item.variantId);
 }
 
 // Per-piece products (stickers) keep ONE cart line whose piece count grows:

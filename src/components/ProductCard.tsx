@@ -1,9 +1,11 @@
 import Link from "next/link";
+import { MessageCircle } from "lucide-react";
 import { hasVariants, productDisplayPrice, tieredPrice, type Product } from "@/content/products";
 import { productsEn } from "@/content/products.en";
 import { ProductVisual } from "@/components/ProductVisual";
 import { AddToCartButton } from "@/components/AddToCartButton";
 import { PickupBadge } from "@/components/PickupBadge";
+import { waLink } from "@/content/site";
 import { formatMXN } from "@/lib/format";
 import { PRODUCT_SLUG_EN, UI, type Lang } from "@/lib/i18n";
 
@@ -69,6 +71,14 @@ export function ProductCard({
         )}
       </Link>
       {product.quickBuy && <AddToCartButton product={product} compact lang={lang} />}
+      <a
+        href={waLink(t.cardQuoteMsg.replace("{name}", name))}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn-soft btn-soft-outline mt-3 w-full whitespace-nowrap px-4"
+      >
+        <MessageCircle size={16} aria-hidden="true" /> {t.quoteWhatsapp}
+      </a>
     </div>
   );
 }

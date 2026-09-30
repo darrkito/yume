@@ -14,13 +14,12 @@ export function QuoteCard({ lang = "es", index = 0, size = "md" }: { lang?: Lang
         <Sparkles size={sm ? 40 : 56} className="text-brand" aria-hidden="true" />
       </div>
       <p className={`font-display text-ink text-balance ${sm ? "mt-4 text-base" : "mt-6 text-xl"}`}>{t.quoteCardName}</p>
-      <p className="mt-1 text-sm leading-relaxed text-ink-soft">{t.quoteCardBody}</p>
+      <p className="mb-auto mt-1 text-sm leading-relaxed text-ink-soft">{t.quoteCardBody}</p>
       <a
         href={waLink(t.quoteCardMsg)}
         target="_blank"
         rel="noopener noreferrer"
-        className="btn-soft btn-soft-solid mt-auto w-full whitespace-nowrap px-4"
-        style={{ marginTop: "1rem" }}
+        className="btn-soft btn-soft-solid mt-4 w-full whitespace-nowrap self-end px-4"
       >
         <MessageCircle size={16} aria-hidden="true" /> {t.quoteWhatsapp}
       </a>

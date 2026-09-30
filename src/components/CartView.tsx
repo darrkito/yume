@@ -10,6 +10,7 @@ import { productsEn } from "@/content/products.en";
 import { QtyInput } from "@/components/QtyInput";
 import { cartLine } from "@/components/useAddProduct";
 import { ProductVisual } from "@/components/ProductVisual";
+import { itemName } from "@/components/useAddProduct";
 import { RelatedProducts } from "@/components/RelatedProducts";
 import { CtaFillLink } from "@/components/CtaFillLink";
 import { waLink } from "@/content/site";
@@ -77,7 +78,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
     .filter((p): p is NonNullable<typeof p> => Boolean(p?.requiresImage));
 
   const buildWaMessage = () => {
-    const lines = items.map((i) => `- ${i.name} x${i.qty}: ${formatMXN(i.price * i.qty)}`).join("\n");
+    const lines = items.map((i) => `- ${itemName(i, lang)} x${i.qty}: ${formatMXN(i.price * i.qty)}`).join("\n");
     let msg = CONFIRM_MSG[lang](lines, formatMXN(total));
     if (itemsRequiringImage.length > 0) {
       msg += ATTACH_MSG[lang](itemsRequiringImage.map((p) => p.name).join(", "));
@@ -135,7 +136,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
                   href={`${shopHref}/${lang === "en" ? (PRODUCT_SLUG_EN[item.slug] ?? item.slug) : item.slug}`}
                   className="font-display text-lg text-ink hover:text-brand transition-colors"
                 >
-                  {item.name}
+                  {itemName(item, lang)}
                 </Link>
                 <p className="mt-1 text-sm text-ink-soft">
                   {pieces !== null
@@ -152,7 +153,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
                   max={MAX_PIECES}
                   step={product.tiers!.stepQty}
                   onChange={(n) => replaceLine(item, cartLine(product, String(n), lang))}
-                  label={`${t.piecesInputLabel}: ${item.name}`}
+                  label={`${t.piecesInputLabel}: ${itemName(item, lang)}`}
                   decreaseLabel={t.decreaseQty}
                   increaseLabel={t.increaseQty}
                   minNote={t.qtyMinNote.replace("{min}", String(product.tiers!.baseQty))}
@@ -164,7 +165,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
                   min={1}
                   max={99}
                   onChange={(n) => updateQty(item.slug, n, item.variantId)}
-                  label={`${t.unitsLabel}: ${item.name}`}
+                  label={`${t.unitsLabel}: ${itemName(item, lang)}`}
                   decreaseLabel={t.decreaseQty}
                   increaseLabel={t.increaseQty}
                 />
@@ -173,7 +174,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
               <button
                 type="button"
                 onClick={() => removeItem(item.slug, item.variantId)}
-                aria-label={`${t.remove} ${item.name}`}
+                aria-label={`${t.remove} ${itemName(item, lang)}`}
                 className="flex size-11 items-center justify-center text-ink-soft transition-colors hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
               >
                 <X size={16} />
