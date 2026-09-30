@@ -61,6 +61,21 @@ export function CheckoutStatus({
       )}
       <h1 className="mt-6 font-display text-3xl text-ink">{title}</h1>
       <p className="mt-4 text-sm leading-relaxed text-ink-soft">{message}</p>
+      {variant === "success" && (
+        <div className="mt-8 rounded-2xl bg-brand-tint px-5 py-5 text-left">
+          <h2 className="font-display text-lg text-ink">{t.nextTitle}</h2>
+          <ol className="mt-3 space-y-3 text-sm text-ink">
+            {[t.next1, t.next2, t.next3].map((step, i) => (
+              <li key={i} className="flex items-start gap-3">
+                <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-brand text-xs font-semibold text-white" aria-hidden="true">
+                  {i + 1}
+                </span>
+                <span>{step}</span>
+              </li>
+            ))}
+          </ol>
+        </div>
+      )}
       <Link
         href={shopHref}
         className="mt-8 inline-block rounded-full bg-brand px-7 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-deep active:scale-[0.98]"

@@ -58,6 +58,14 @@ export function ShippingForm({
   const update = (key: keyof typeof values) => (e: React.ChangeEvent<HTMLInputElement>) =>
     setValues((v) => ({ ...v, [key]: e.target.value }));
 
+  // Specific validation messages instead of the browser's generic "match the
+  // requested format": say what is wrong and by how much. Empty stays "" so
+  // `required` still reports its own message.
+  const checkDigits = (min: number, max: number, message: (have: number) => string) => (e: React.ChangeEvent<HTMLInputElement>) => {
+    const have = e.target.value.replace(/\D/g, "").length;
+    e.target.setCustomValidity(have === 0 || (have >= min && have <= max) ? "" : message(have));
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!deliveryMethod) {
@@ -140,7 +148,10 @@ export function ShippingForm({
               inputMode="tel"
               className={FIELD_CLASS}
               value={values.phone}
-              onChange={update("phone")}
+              onChange={(e) => {
+                update("phone")(e);
+                checkDigits(10, 13, (n) => t.phoneDigits.replace("{n}", String(n)))(e);
+              }}
               placeholder="33 1234 5678"
             />
             <p className="mt-1 text-xs text-ink-soft">{t.phoneHelp}</p>
@@ -284,7 +295,12 @@ export function ShippingForm({
               inputMode="numeric"
               className={FIELD_CLASS}
               value={values.zip}
-              onChange={update("zip")}
+              maxLength={5}
+              enterKeyHint="next"
+              onChange={(e) => {
+                update("zip")(e);
+                checkDigits(5, 5, (n) => t.zipDigits.replace("{n}", String(n)))(e);
+              }}
               placeholder="44100"
             />
           </div>

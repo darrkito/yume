@@ -107,6 +107,12 @@ export function hreflangFor(esPath: string) {
 export const UI: Record<Lang, Record<string, string>> = {
   es: {
     home: "Inicio",
+    phoneDigits: "El teléfono necesita 10 dígitos (llevas {n}).",
+    zipDigits: "El código postal tiene 5 dígitos (llevas {n}).",
+    nextTitle: "Qué sigue",
+    next1: "Te contactamos por WhatsApp o correo para confirmar los detalles.",
+    next2: "Apruebas tu prueba digital (incluye hasta 2 rondas de ajustes).",
+    next3: "Producimos tu pedido (3-5 días) y lo enviamos (2-5 días) o lo dejamos en tu sucursal Casa Blanca.",
     tabHome: "Inicio",
     tabShop: "Tienda",
     tabGallery: "Galería",
@@ -275,6 +281,12 @@ export const UI: Record<Lang, Record<string, string>> = {
   },
   en: {
     home: "Home",
+    phoneDigits: "The phone number needs 10 digits (you have {n}).",
+    zipDigits: "The postal code has 5 digits (you have {n}).",
+    nextTitle: "What happens next",
+    next1: "We contact you on WhatsApp or by email to confirm the details.",
+    next2: "You approve your digital proof (up to 2 rounds of changes included).",
+    next3: "We produce your order (3-5 days) and ship it (2-5 days) or leave it at your Casa Blanca branch.",
     tabHome: "Home",
     tabShop: "Shop",
     tabGallery: "Gallery",
