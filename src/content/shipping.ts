@@ -51,3 +51,28 @@ export function deliverySurcharge(method: DeliveryMethod, subtotal: number): num
   if (method === "recoleccion_casablanca") return CASABLANCA_PRICE;
   return subtotal >= FREE_SHIPPING_THRESHOLD ? 0 : NATIONAL_SHIPPING_PRICE;
 }
+
+// Business-day math for the "if you approve today" delivery estimate: the
+// same 3-5 day production + 2-5 day national shipping already promised in
+// the copy (UI.factTiming). Weekends are skipped; national holidays are not,
+// which is why the UI words it as an estimate.
+export const PRODUCTION_DAYS = { min: 3, max: 5 };
+export const NATIONAL_TRANSIT_DAYS = { min: 2, max: 5 };
+
+export function addBusinessDays(from: Date, days: number): Date {
+  const d = new Date(from);
+  let left = days;
+  while (left > 0) {
+    d.setDate(d.getDate() + 1);
+    const day = d.getDay();
+    if (day !== 0 && day !== 6) left--;
+  }
+  return d;
+}
+
+export function estimateNationalDelivery(from: Date): { from: Date; to: Date } {
+  return {
+    from: addBusinessDays(from, PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min),
+    to: addBusinessDays(from, PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max),
+  };
+}

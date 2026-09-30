@@ -7,6 +7,7 @@ import { waLink } from "@/content/site";
 import { formatMXN } from "@/lib/format";
 import { HeroJarLazy } from "@/components/HeroJarLazy";
 import { HeroPhotos } from "@/components/HeroPhotos";
+import { ProductRail } from "@/components/ProductRail";
 import { CtaFillLink } from "@/components/CtaFillLink";
 import { ProductVisual } from "@/components/ProductVisual";
 import { AddToCartButton } from "@/components/AddToCartButton";
@@ -48,7 +49,7 @@ export default function Home() {
     <>
       {/* Hero */}
       <section className="desk-lamp-wash">
-        <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 px-6 pb-20 pt-16 sm:grid-cols-2 sm:pt-20">
+        <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-8 px-6 pb-6 pt-8 sm:grid-cols-2 sm:gap-12 sm:pb-20 sm:pt-20">
           <div>
             <h1 className="animate-fade-up font-display text-4xl leading-[1.1] text-ink text-balance sm:text-5xl lg:text-6xl">
               Stickers, recetarios y papelería personalizada, <em className="italic text-brand">desde $100</em>.
@@ -57,7 +58,7 @@ export default function Home() {
               Papelería y artículos personalizados hechos sobre pedido en Guadalajara: recetarios médicos, etiquetas y
               piezas a tu medida, aprobadas contigo antes de imprimir.
             </p>
-            <div className="animate-fade-up animate-fade-up-2 mt-8 flex flex-wrap gap-4">
+            <div className="animate-fade-up animate-fade-up-2 mt-6 flex flex-wrap gap-4 sm:mt-8">
               <Link href="/productos" className="btn-soft btn-soft-solid">
                 Ver productos y precios
               </Link>
@@ -65,12 +66,12 @@ export default function Home() {
                 href={waLink("Hola, me interesa cotizar un producto de Yume.")}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-soft btn-soft-outline"
+                className="btn-soft btn-soft-outline max-sm:hidden"
               >
                 Cotizar por WhatsApp
               </CtaFillLink>
             </div>
-            <ul aria-label="Por qué comprar con confianza" className="animate-fade-up animate-fade-up-2 mt-6 space-y-2 text-sm text-ink">
+            <ul aria-label="Por qué comprar con confianza" className="animate-fade-up animate-fade-up-2 mt-6 max-sm:hidden space-y-2 text-sm text-ink">
               <li className="flex items-center gap-2"><MapPin size={16} className="shrink-0 text-brand" aria-hidden="true" />Recoge en Guadalajara por {formatMXN(CASABLANCA_PRICE)}</li>
               <li className="flex items-center gap-2"><ShieldCheck size={16} className="shrink-0 text-brand" aria-hidden="true" />Paga con tarjeta, OXXO o SPEI</li>
               <li className="flex items-center gap-2"><CheckCircle2 size={16} className="shrink-0 text-brand" aria-hidden="true" />Apruebas el diseño antes de imprimir</li>
@@ -84,6 +85,15 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Phones: the shelf comes first, before any long explanation */}
+      <ProductRail lang="es" heading="Elige tu producto">
+        <ul aria-label="Por qué comprar con confianza" className="mt-2 space-y-2 px-6 pb-8 text-sm text-ink">
+              <li className="flex items-center gap-2"><MapPin size={16} className="shrink-0 text-brand" aria-hidden="true" />Recoge en Guadalajara por {formatMXN(CASABLANCA_PRICE)}</li>
+              <li className="flex items-center gap-2"><ShieldCheck size={16} className="shrink-0 text-brand" aria-hidden="true" />Paga con tarjeta, OXXO o SPEI</li>
+              <li className="flex items-center gap-2"><CheckCircle2 size={16} className="shrink-0 text-brand" aria-hidden="true" />Apruebas el diseño antes de imprimir</li>
+            </ul>
+      </ProductRail>
 
       {/* No-minimums differentiator */}
       <section className="border-y border-line bg-paper-raised">
@@ -125,7 +135,7 @@ export default function Home() {
       </section>
 
       {/* Featured product */}
-      <section className="bg-brand-tint/60">
+      <section className="bg-brand-tint/60 max-sm:hidden">
         <div className="mx-auto max-w-6xl px-6 py-20">
           <div className="grid gap-10 sm:grid-cols-[1fr_1.2fr] sm:items-center">
             <Link
@@ -173,7 +183,7 @@ export default function Home() {
 
       {/* More products */}
       {rest.length > 0 && (
-        <section className="mx-auto max-w-6xl px-6 py-20">
+        <section className="mx-auto max-w-6xl px-6 py-20 max-sm:hidden">
           <h2 className="font-display text-3xl text-ink sm:text-4xl text-balance">Más productos</h2>
           <div className="mt-12 grid gap-8 sm:grid-cols-2">
             {rest.map((p, i) => (

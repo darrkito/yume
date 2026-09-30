@@ -5,6 +5,7 @@ import { Playfair_Display, Karla } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { TabBar } from "@/components/TabBar";
 import { LanguageBanner } from "@/components/LanguageBanner";
 import { HtmlLangSync } from "@/components/HtmlLangSync";
 import { WebMcpProvider } from "@/components/WebMcpProvider";
@@ -125,6 +126,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <LanguageBanner />
             <main id="main">{children}</main>
             <Footer />
+            <TabBar />
             <CartToast />
           </DesignFileProvider>
         </CartProvider>

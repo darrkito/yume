@@ -1,16 +1,16 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { useRouter } from "next/navigation";
 import { ImageUp, ShoppingBag, Check, CheckCircle2, Clock, MapPin, MessageCircle, Truck, Zap } from "lucide-react";
 import { useAddProduct } from "@/components/useAddProduct";
 import { useDesignFiles } from "@/components/DesignFileContext";
 import { QtyInput } from "@/components/QtyInput";
 import { LogoUploadNote } from "@/components/LogoUploadNote";
-import { cartItemLabel, defaultVariantId, hasVariants, MAX_PIECES, pieceCount, resolvePrice, tieredPrice, wholesaleRate, type Product } from "@/content/products";
+import { cartItemLabel, defaultVariantId, hasVariants, MAX_PIECES, pieceCount, piecesForAmount, resolvePrice, tieredPrice, wholesaleRate, type Product } from "@/content/products";
 import { cartItemLabelEn, getProductTranslation } from "@/content/products.en";
 import { waLink } from "@/content/site";
-import { CASABLANCA_PRICE, FREE_SHIPPING_THRESHOLD, NATIONAL_SHIPPING_PRICE } from "@/content/shipping";
+import { CASABLANCA_PRICE, estimateNationalDelivery, FREE_SHIPPING_THRESHOLD, NATIONAL_SHIPPING_PRICE } from "@/content/shipping";
 import { formatMXN } from "@/lib/format";
 import { UI, type Lang } from "@/lib/i18n";
 
@@ -25,6 +25,13 @@ const WA_QUOTE_MSG = {
   en: (label: string, price: string) => `Hi, I'm interested in getting a quote for: ${label} (${price} MXN). Could you give me more information?`,
 };
 
+const noopSubscribe = () => () => {};
+const serverToday = (): string | null => null;
+const clientToday = (): string | null => {
+  const n = new Date();
+  return `${n.getFullYear()}-${n.getMonth() + 1}-${n.getDate()}`;
+};
+
 export function ProductPurchase({ product, lang = "es" }: { product: Product; lang?: Lang }) {
   const addProduct = useAddProduct(lang);
   const router = useRouter();
@@ -36,6 +43,9 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
   const [units, setUnits] = useState(1);
   const [justAdded, setJustAdded] = useState(false);
   const [showBar, setShowBar] = useState(false);
+  // null on the server and during hydration: the server's "today" can differ
+  // from the shopper's, so the date only renders once we're on the client.
+  const today = useSyncExternalStore(noopSubscribe, clientToday, serverToday);
   const addButtonRef = useRef<HTMLButtonElement>(null);
   const t = UI[lang];
   const translation = lang === "en" ? getProductTranslation(product.slug) : undefined;
@@ -79,6 +89,45 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
     observer.observe(button);
     return () => observer.disconnect();
   }, []);
+
+  // Free-shipping nudge at the decision point: one tap raises this line to
+  // the amount that clears the threshold. Never shown as fake urgency, only
+  // the real cart-subtotal rule from shipping.ts.
+  let nudge: React.ReactNode = null;
+  const nudgeClass =
+    "mt-3 inline-flex min-h-11 items-center gap-2 rounded-full bg-brand-tint px-4 text-left text-sm font-semibold text-brand-deep transition-colors hover:bg-brand-tint/70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand";
+  if (lineTotal >= FREE_SHIPPING_THRESHOLD) {
+    nudge = (
+      <p className="mt-3 flex items-center gap-2 text-sm font-semibold text-brand-deep">
+        <Truck size={16} aria-hidden="true" /> {t.freeShipReached}
+      </p>
+    );
+  } else if (tiers) {
+    const n = piecesForAmount(tiers, FREE_SHIPPING_THRESHOLD);
+    nudge = (
+      <button type="button" onClick={() => setVariantId(String(n))} className={nudgeClass}>
+        <Truck size={16} aria-hidden="true" />
+        {t.freeShipNudge.replace("{qty}", String(n)).replace("{price}", formatMXN(tieredPrice(tiers, n)))}
+      </button>
+    );
+  } else {
+    const need = Math.ceil((FREE_SHIPPING_THRESHOLD - lineTotal) / price);
+    if (units + need <= 99) {
+      nudge = (
+        <button type="button" onClick={() => setUnits(units + need)} className={nudgeClass}>
+          <Truck size={16} aria-hidden="true" /> {t.freeShipUnits.replace("{n}", String(need))}
+        </button>
+      );
+    }
+  }
+
+  let delivery: { from: string; to: string } | null = null;
+  if (today) {
+    const [y, m, d] = today.split("-").map(Number);
+    const fmt = new Intl.DateTimeFormat(lang === "en" ? "en-US" : "es-MX", { weekday: "short", day: "numeric", month: "short" });
+    const est = estimateNationalDelivery(new Date(y, m - 1, d));
+    delivery = { from: fmt.format(est.from), to: fmt.format(est.to) };
+  }
 
   const waMsg = WA_QUOTE_MSG[lang](label, formatMXN(price));
   const guidance = t.whatsappGuidance;
@@ -225,6 +274,8 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
         </div>
       )}
 
+      {nudge}
+
       {product.requiresImage && <LogoUploadNote slug={product.slug} lang={lang} hint={t.uploadLaterHint} />}
 
       <div className="mt-6 flex flex-col items-start">
@@ -252,7 +303,12 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
         </div>
         <ul className="mt-5 space-y-2 text-sm text-ink">
           <li className="flex items-start gap-2"><Truck size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.factShipping.replace("{national}", formatMXN(NATIONAL_SHIPPING_PRICE)).replace("{threshold}", formatMXN(FREE_SHIPPING_THRESHOLD))}</li>
-          <li className="flex items-start gap-2"><Clock size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.factTiming}</li>
+          <li className="flex items-start gap-2"><Clock size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />
+            <span>
+              {delivery ? t.deliveryEstimate.replace("{from}", delivery.from).replace("{to}", delivery.to) : t.factTiming}
+              {delivery && <span className="block text-xs text-ink-soft">{t.deliveryEstimateNote}</span>}
+            </span>
+          </li>
           <li className="flex items-start gap-2"><MapPin size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.factPickup.replace("{pickup}", formatMXN(CASABLANCA_PRICE))}</li>
           <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.factProof}</li>
         </ul>

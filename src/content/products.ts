@@ -74,6 +74,13 @@ export function tieredPrice(t: TierPricing, qty: number): number {
   return Math.round(price * 100) / 100;
 }
 
+/** Smallest whole piece count whose tiered price reaches `amount`. */
+export function piecesForAmount(t: TierPricing, amount: number): number {
+  const flat = t.discountQty * t.rate;
+  const n = amount <= flat ? Math.ceil(amount / t.rate) : t.discountQty + Math.ceil((amount - flat) / wholesaleRate(t));
+  return Math.max(t.baseQty, n);
+}
+
 // Dropdown presets only: any whole piece count in [baseQty, MAX_PIECES] is
 // also valid (see pieceCount), typed on the product page or in the cart.
 function buildTieredVariants(t: TierPricing, presets: number): ProductVariant[] {
