@@ -13,6 +13,7 @@ Written 2026-09-30.
 | C Home storefront | done except C3 | Mobile: compact hero, `ProductRail` under the hero, "Cómo funciona" and "Por qué Yume" as swipe rows, tighter padding. 9,331 → 5,133 px (target ≤ 5,500). C3 (headline) waits on owner decision #1. |
 | E Cart/checkout | done except CP autofill | In-place option change on cart lines, 6 s undo after removing a line, Specific phone/zip messages (`setCustomValidity`), zip `maxLength`, "what happens next" steps on `/pago/exito`. Form already had autocomplete + inputmode. Open: CP autofill (SEPOMEX licence). |
 | G Re-engagement | partly done | "Tu carrito te espera" strip on home when the cart has items; the Cotizar sheet WhatsApp message carries the cart contents. Open: abandoned-checkout email (owner decision #11). |
+| Round 3 (2026-09-30) | done, live (`abb73fa`) | Share button (native sheet on phones; WhatsApp/Facebook/Telegram/email/copy-link menu otherwise), design upload sheet (upload or "lo subo después" before buying), Casa Blanca pickup dates (production + 1 business day, PDP and cart), AVIF (production: 32 KB vs 53 KB WebP), page cross-fade (`<ViewTransition>`), headline "Mínimos bajos: desde 1 recetario o 40 stickers". Owner decisions: no countdown, no MSI badge, no gift note, no postal-code autofill, no review pipeline until a Google reviews link exists. |
 | Tracking | done | `TrackClicks` sends Clarity events: add_to_cart, buy_now, choose_design, begin_checkout, wa_click, tab_*. Build funnels in the Clarity dashboard. |
 | F, H | not started | Need owner decisions #8, #12. |
 
