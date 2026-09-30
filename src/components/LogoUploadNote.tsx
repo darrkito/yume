@@ -8,6 +8,14 @@ import { useDesignFiles } from "@/components/DesignFileContext";
 const MAGNET_DISTANCE = 180;
 const MAX_OFFSET = 10;
 const MAX_SIZE_BYTES = 10 * 1024 * 1024;
+
+/** Returns the i18n key of the problem, or null when the file is acceptable. */
+export function designFileProblem(file: File): "fileTooLarge" | "fileTypeNotAllowed" | null {
+  if (file.size > MAX_SIZE_BYTES) return "fileTooLarge";
+  const okType = file.type.startsWith("image/") || file.type === "application/pdf";
+  const okExt = /\.(ai|svg|psd|pdf)$/i.test(file.name);
+  return okType || okExt ? null : "fileTypeNotAllowed";
+}
 // Formats a browser can actually draw in an <img>; PDF/AI/PSD get an icon.
 const RENDERABLE = /^image\/(png|jpe?g|webp|gif|avif|svg\+xml)$/;
 
@@ -76,17 +84,9 @@ export function LogoUploadNote({ slug, lang = "es", heading, hint }: { slug: str
   }, []);
 
   const validate = (file: File): boolean => {
-    if (file.size > MAX_SIZE_BYTES) {
-      setError(t.fileTooLarge);
-      return false;
-    }
-    const okType = file.type.startsWith("image/") || file.type === "application/pdf";
-    const okExt = /\.(ai|svg|psd|pdf)$/i.test(file.name);
-    if (!okType && !okExt) {
-      setError(t.fileTypeNotAllowed);
-      return false;
-    }
-    return true;
+    const problem = designFileProblem(file);
+    if (problem) setError(t[problem]);
+    return problem === null;
   };
 
   const handleFile = (picked: File | undefined) => {

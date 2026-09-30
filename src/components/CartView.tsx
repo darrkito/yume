@@ -11,6 +11,7 @@ import { QtyInput } from "@/components/QtyInput";
 import { cartLine } from "@/components/useAddProduct";
 import { ProductVisual } from "@/components/ProductVisual";
 import { itemName } from "@/components/useAddProduct";
+import { useDeliveryDates } from "@/components/useDeliveryDates";
 import { RelatedProducts } from "@/components/RelatedProducts";
 import { CtaFillLink } from "@/components/CtaFillLink";
 import { waLink } from "@/content/site";
@@ -34,6 +35,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
   // No default: preselecting $190 national shipping made a $100 order read
   // as $290 at first sight. The shopper picks, then sees the real total.
   const [method, setMethod] = useState<DeliveryMethod | null>(null);
+  const dates = useDeliveryDates(lang);
   const [confirmClear, setConfirmClear] = useState(false);
   // Removing a line is one tap, so it can be undone for a few seconds.
   const [removed, setRemoved] = useState<CartItem | null>(null);
@@ -302,6 +304,14 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
             ))}
           </div>
         </fieldset>
+        {method && dates && (
+          <p className="mt-3 flex items-start gap-2 text-sm text-ink">
+            <Clock size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />
+            {method === "recoleccion_casablanca"
+              ? t.pickupEstimate.replace("{from}", dates.pickup.from).replace("{to}", dates.pickup.to)
+              : t.deliveryEstimate.replace("{from}", dates.national.from).replace("{to}", dates.national.to)}
+          </p>
+        )}
         <div className="mt-4 flex items-baseline justify-between gap-3 border-t border-line pt-4">
           <p className="text-sm text-ink-soft">{t.total}</p>
           <p className="font-display text-2xl text-ink">

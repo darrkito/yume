@@ -1,6 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  images: {
+    // AVIF first (smaller than WebP at the same quality); WebP as fallback.
+    formats: ["image/avif", "image/webp"],
+  },
   turbopack: {
     // Pin the workspace root to this project — a stray package-lock.json in
     // the home directory would otherwise make Next.js infer /home/darrkito

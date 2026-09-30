@@ -1,6 +1,6 @@
 // Run: npx tsx scripts/check-delivery.ts
 import assert from "node:assert";
-import { addBusinessDays, estimateNationalDelivery } from "../src/content/shipping";
+import { addBusinessDays, estimateCasablancaPickup, estimateNationalDelivery } from "../src/content/shipping";
 import { getProduct, piecesForAmount, tieredPrice } from "../src/content/products";
 
 const fri = new Date(2026, 9, 2); // Fri Oct 2 2026
@@ -19,4 +19,7 @@ for (const t of [vinyl, logo]) {
   assert.ok(tieredPrice(t, n) >= 750);
   assert.ok(tieredPrice(t, n - 1) < 750);
 }
+const pick = estimateCasablancaPickup(fri); // production 3-5 + 1 business day
+assert.equal(pick.from.getDate(), 8);
+assert.equal(pick.to.getDate(), 12); // skips the weekend
 console.log("delivery ok");

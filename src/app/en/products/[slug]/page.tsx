@@ -1,3 +1,4 @@
+import { ShareButton } from "@/components/ShareButton";
 import { ProductDetails } from "@/components/ProductDetails";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
@@ -112,7 +113,10 @@ export default async function ProductPageEn({ params }: { params: Promise<{ slug
         </div>
 
         <div>
-          <p className="animate-fade-up text-xs font-semibold text-brand">{t.category}</p>
+          <div className="flex items-center justify-between gap-3">
+            <p className="animate-fade-up text-xs font-semibold text-brand">{t.category}</p>
+            <ShareButton name={t.name} />
+          </div>
           <h1 className="animate-fade-up animate-fade-up-1 mt-3 font-display text-3xl text-ink sm:text-4xl">{t.name}</h1>
 
           <ProductPurchase product={product} lang="en" />

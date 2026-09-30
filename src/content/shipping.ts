@@ -76,3 +76,14 @@ export function estimateNationalDelivery(from: Date): { from: Date; to: Date } {
     to: addBusinessDays(from, PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max),
   };
 }
+
+// Casa Blanca pickup: production plus one business day to reach the branch
+// (owner-confirmed 2026-09-30).
+export const PICKUP_EXTRA_DAYS = 1;
+
+export function estimateCasablancaPickup(from: Date): { from: Date; to: Date } {
+  return {
+    from: addBusinessDays(from, PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS),
+    to: addBusinessDays(from, PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS),
+  };
+}

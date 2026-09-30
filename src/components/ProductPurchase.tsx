@@ -1,16 +1,18 @@
 "use client";
 
-import { useEffect, useRef, useState, useSyncExternalStore } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { ImageUp, ShoppingBag, Check, CheckCircle2, Clock, MapPin, MessageCircle, Truck, Zap } from "lucide-react";
 import { useAddProduct } from "@/components/useAddProduct";
+import { useDeliveryDates } from "@/components/useDeliveryDates";
 import { useDesignFiles } from "@/components/DesignFileContext";
+import { DesignSheet } from "@/components/DesignSheet";
 import { QtyInput } from "@/components/QtyInput";
 import { LogoUploadNote } from "@/components/LogoUploadNote";
 import { cartItemLabel, defaultVariantId, hasVariants, MAX_PIECES, pieceCount, piecesForAmount, resolvePrice, tieredPrice, wholesaleRate, type Product } from "@/content/products";
 import { cartItemLabelEn, getProductTranslation } from "@/content/products.en";
 import { waLink } from "@/content/site";
-import { CASABLANCA_PRICE, estimateNationalDelivery, FREE_SHIPPING_THRESHOLD, NATIONAL_SHIPPING_PRICE } from "@/content/shipping";
+import { CASABLANCA_PRICE, FREE_SHIPPING_THRESHOLD, NATIONAL_SHIPPING_PRICE } from "@/content/shipping";
 import { formatMXN } from "@/lib/format";
 import { UI, type Lang } from "@/lib/i18n";
 
@@ -25,27 +27,21 @@ const WA_QUOTE_MSG = {
   en: (label: string, price: string) => `Hi, I'm interested in getting a quote for: ${label} (${price} MXN). Could you give me more information?`,
 };
 
-const noopSubscribe = () => () => {};
-const serverToday = (): string | null => null;
-const clientToday = (): string | null => {
-  const n = new Date();
-  return `${n.getFullYear()}-${n.getMonth() + 1}-${n.getDate()}`;
-};
-
 export function ProductPurchase({ product, lang = "es" }: { product: Product; lang?: Lang }) {
   const addProduct = useAddProduct(lang);
   const router = useRouter();
-  const { getDesignFile } = useDesignFiles();
+  const { getDesignFile, setDesignFile } = useDesignFiles();
   // The sticky bar leads with the design step when the product needs one and
   // none is attached yet; buying without it stays possible (upload at checkout).
-  const needsDesign = Boolean(product.requiresImage) && !getDesignFile(product.slug);
+  const [designLater, setDesignLater] = useState(false);
+  const designDialog = useRef<HTMLDialogElement>(null);
+  const buyAfterChoice = useRef(false);
+  const needsDesign = Boolean(product.requiresImage) && !getDesignFile(product.slug) && !designLater;
   const [variantId, setVariantId] = useState<string | undefined>(defaultVariantId(product));
   const [units, setUnits] = useState(1);
   const [justAdded, setJustAdded] = useState(false);
   const [showBar, setShowBar] = useState(false);
-  // null on the server and during hydration: the server's "today" can differ
-  // from the shopper's, so the date only renders once we're on the client.
-  const today = useSyncExternalStore(noopSubscribe, clientToday, serverToday);
+  const dates = useDeliveryDates(lang);
   const addButtonRef = useRef<HTMLButtonElement>(null);
   const t = UI[lang];
   const translation = lang === "en" ? getProductTranslation(product.slug) : undefined;
@@ -73,10 +69,15 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
     router.push(lang === "en" ? "/en/cart" : "/carrito");
   };
 
-  const handleChooseDesign = () => {
-    const zone = document.getElementById(`design-${product.slug}`);
-    zone?.scrollIntoView({ behavior: "smooth", block: "center" });
-    zone?.querySelector<HTMLInputElement>('input[type="file"]')?.click();
+  // Buying a product that needs the customer's artwork always goes through
+  // this explicit "design or later" choice (upload or skip are both fine).
+  const askDesign = (thenBuy: boolean) => {
+    buyAfterChoice.current = thenBuy;
+    designDialog.current?.showModal();
+  };
+  const resolveDesign = () => {
+    designDialog.current?.close();
+    if (buyAfterChoice.current) handleBuyNow();
   };
 
   useEffect(() => {
@@ -119,14 +120,6 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
         </button>
       );
     }
-  }
-
-  let delivery: { from: string; to: string } | null = null;
-  if (today) {
-    const [y, m, d] = today.split("-").map(Number);
-    const fmt = new Intl.DateTimeFormat(lang === "en" ? "en-US" : "es-MX", { weekday: "short", day: "numeric", month: "short" });
-    const est = estimateNationalDelivery(new Date(y, m - 1, d));
-    delivery = { from: fmt.format(est.from), to: fmt.format(est.to) };
   }
 
   const waMsg = WA_QUOTE_MSG[lang](label, formatMXN(price));
@@ -298,7 +291,7 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
               </>
             )}
           </button>
-          <button type="button" data-track="buy_now" onClick={handleBuyNow} className="btn-soft btn-soft-solid w-full whitespace-nowrap sm:w-auto">
+          <button type="button" data-track="buy_now" onClick={() => (needsDesign ? askDesign(true) : handleBuyNow())} className="btn-soft btn-soft-solid w-full whitespace-nowrap sm:w-auto">
             <Zap size={16} aria-hidden="true" /> {t.buyNow}
           </button>
         </div>
@@ -306,11 +299,14 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
           <li className="flex items-start gap-2"><Truck size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.factShipping.replace("{national}", formatMXN(NATIONAL_SHIPPING_PRICE)).replace("{threshold}", formatMXN(FREE_SHIPPING_THRESHOLD))}</li>
           <li className="flex items-start gap-2"><Clock size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />
             <span>
-              {delivery ? t.deliveryEstimate.replace("{from}", delivery.from).replace("{to}", delivery.to) : t.factTiming}
-              {delivery && <span className="block text-xs text-ink-soft">{t.deliveryEstimateNote}</span>}
+              {dates ? t.deliveryEstimate.replace("{from}", dates.national.from).replace("{to}", dates.national.to) : t.factTiming}
+              {dates && <span className="block text-xs text-ink-soft">{t.deliveryEstimateNote}</span>}
             </span>
           </li>
-          <li className="flex items-start gap-2"><MapPin size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.factPickup.replace("{pickup}", formatMXN(CASABLANCA_PRICE))}</li>
+          <li className="flex items-start gap-2"><MapPin size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" /><span>
+              {t.factPickup.replace("{pickup}", formatMXN(CASABLANCA_PRICE))}
+              {dates && <span className="block text-xs text-ink-soft">{t.pickupEstimate.replace("{from}", dates.pickup.from).replace("{to}", dates.pickup.to)}</span>}
+            </span></li>
           <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.factProof}</li>
         </ul>
         <a
@@ -343,7 +339,7 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
           </a>
           {/* One primary CTA: two full buttons squeezed the price to "$100..." at 390px; WhatsApp is an icon. */}
           {needsDesign ? (
-            <button type="button" data-track="choose_design" onClick={handleChooseDesign} className="btn-soft btn-soft-solid min-h-11 shrink-0 px-5 text-sm">
+            <button type="button" data-track="choose_design" onClick={() => askDesign(false)} className="btn-soft btn-soft-solid min-h-11 shrink-0 px-5 text-sm">
               <ImageUp size={16} aria-hidden="true" /> {t.chooseDesign}
             </button>
           ) : (
@@ -353,6 +349,20 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
           )}
         </div>
       </div>
+      {product.requiresImage && (
+        <DesignSheet
+          ref={designDialog}
+          lang={lang}
+          onFile={(file) => {
+            setDesignFile(product.slug, file);
+            resolveDesign();
+          }}
+          onLater={() => {
+            setDesignLater(true);
+            resolveDesign();
+          }}
+        />
+      )}
     </div>
   );
 }

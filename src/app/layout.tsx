@@ -1,3 +1,4 @@
+import { ViewTransition } from "react";
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
@@ -125,7 +126,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <WebMcpProvider />
             <Header />
             <LanguageBanner />
-            <main id="main">{children}</main>
+            {/* Short cross-fade between pages (View Transitions API; browsers without it navigate as before). */}
+            <main id="main">
+              <ViewTransition>{children}</ViewTransition>
+            </main>
             <Footer />
             <TabBar />
             <TrackClicks />

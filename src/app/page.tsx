@@ -104,7 +104,7 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-6 py-8">
           <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
             <p className="font-display text-lg text-ink text-balance sm:text-xl">
-              Sin pedidos mínimos<span className="text-ink-soft">.</span>
+              Mínimos bajos: desde 1 recetario o 40 stickers<span className="text-ink-soft">.</span>
             </p>
             <ul className="flex flex-col gap-3 text-sm text-ink-soft sm:flex-row sm:flex-wrap sm:gap-x-8 sm:gap-y-2">
               {NO_MINIMUMS.map((item) => (
