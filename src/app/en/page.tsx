@@ -138,11 +138,11 @@ export default function HomeEn() {
       </section>
 
       {/* How it works */}
-      <section className="mx-auto max-w-6xl px-6 py-20">
+      <section className="mx-auto max-w-6xl px-6 py-12 sm:py-20">
         <h2 className="font-display text-3xl text-ink sm:text-4xl text-balance">How it works</h2>
-        <div className="mt-12 grid gap-6 sm:grid-cols-3">
+        <div className="rail -mx-6 mt-8 flex scroll-px-6 snap-x snap-mandatory gap-4 overflow-x-auto px-6 pb-2 sm:mx-0 sm:mt-12 sm:grid sm:grid-cols-3 sm:gap-6 sm:overflow-visible sm:px-0 sm:pb-0">
           {HOW_IT_WORKS.map((step, i) => (
-            <div key={step.title} className="info-card p-7">
+            <div key={step.title} className="info-card w-[80%] shrink-0 snap-start p-7 sm:w-auto">
               <div className="info-card-icon">
                 <step.icon size={20} aria-hidden="true" />
               </div>
@@ -159,7 +159,7 @@ export default function HomeEn() {
 
       {/* Featured product */}
       <section className="bg-brand-tint/60 max-sm:hidden">
-        <div className="mx-auto max-w-6xl px-6 py-20">
+        <div className="mx-auto max-w-6xl px-6 py-12 sm:py-20">
           <div className="grid gap-10 sm:grid-cols-[1fr_1.2fr] sm:items-center">
             <Link
               href={`/en/products/${PRODUCT_SLUG_EN[featured.slug]}`}
@@ -206,7 +206,7 @@ export default function HomeEn() {
 
       {/* More products */}
       {rest.length > 0 && (
-        <section className="mx-auto max-w-6xl px-6 py-20 max-sm:hidden">
+        <section className="mx-auto max-w-6xl px-6 py-12 sm:py-20 max-sm:hidden">
           <h2 className="font-display text-3xl text-ink sm:text-4xl text-balance">More products</h2>
           <div className="mt-12 grid gap-8 sm:grid-cols-2">
             {rest.map((p, i) => (
@@ -236,10 +236,10 @@ export default function HomeEn() {
 
       {/* Values */}
       <section className="border-t border-line">
-        <div className="mx-auto max-w-6xl px-6 py-20">
+        <div className="mx-auto max-w-6xl px-6 py-12 sm:py-20">
           <h2 className="font-display text-3xl text-ink sm:text-4xl text-balance">Why Yume</h2>
-          <div className="mt-12 grid gap-10 sm:grid-cols-3">
-            <div>
+          <div className="rail -mx-6 mt-8 flex scroll-px-6 snap-x snap-mandatory gap-4 overflow-x-auto px-6 pb-2 sm:mx-0 sm:mt-12 sm:grid sm:grid-cols-3 sm:gap-10 sm:overflow-visible sm:px-0 sm:pb-0">
+            <div className="w-[78%] shrink-0 snap-start sm:w-auto">
               <div className="info-card-icon">
                 <PenTool size={20} aria-hidden="true" />
               </div>
@@ -248,7 +248,7 @@ export default function HomeEn() {
                 Every piece is adjusted to your details, your brand, or your practice, no generic templates.
               </p>
             </div>
-            <div>
+            <div className="w-[78%] shrink-0 snap-start sm:w-auto">
               <div className="info-card-icon">
                 <CheckCircle2 size={20} aria-hidden="true" />
               </div>
@@ -257,7 +257,7 @@ export default function HomeEn() {
                 You get a digital proof and give the go-ahead before your order goes into production.
               </p>
             </div>
-            <div>
+            <div className="w-[78%] shrink-0 snap-start sm:w-auto">
               <div className="info-card-icon">
                 <MapPin size={20} aria-hidden="true" />
               </div>
@@ -276,7 +276,7 @@ export default function HomeEn() {
 
       {/* FAQ teaser */}
       <section id="faq" className="border-t border-line bg-paper-raised">
-        <div className="mx-auto max-w-3xl px-6 py-20">
+        <div className="mx-auto max-w-3xl px-6 py-12 sm:py-20">
           <h2 className="font-display text-3xl text-ink text-balance">Have questions?</h2>
           <div className="mt-10 divide-y divide-line border-y border-line">
             {featuredFaq.map((f) => (

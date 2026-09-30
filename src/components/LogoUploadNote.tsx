@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { motion, useMotionValue, useSpring, useReducedMotion } from "motion/react";
 import { FileText, ImageUp, X } from "lucide-react";
 import { UI, type Lang } from "@/lib/i18n";
 import { useDesignFiles } from "@/components/DesignFileContext";
@@ -34,15 +33,16 @@ export function LogoUploadNote({ slug, lang = "es", heading, hint }: { slug: str
   const preview = useMemo(() => (file && RENDERABLE.test(file.type) ? URL.createObjectURL(file) : null), [file]);
   useEffect(() => () => { if (preview) URL.revokeObjectURL(preview); }, [preview]);
   const zoneRef = useRef<HTMLLabelElement>(null);
-  const reduceMotion = useReducedMotion();
-
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
-  const springX = useSpring(x, { damping: 24, mass: 0.65, stiffness: 280 });
-  const springY = useSpring(y, { damping: 24, mass: 0.65, stiffness: 280 });
+  // Label text drifts toward a file being dragged near the zone. Plain CSS
+  // transform + transition (was the `motion` library: ~40 KB gz on every
+  // product page for this one flourish).
+  const labelRef = useRef<HTMLSpanElement>(null);
+  const pull = (px: number, py: number) => {
+    if (labelRef.current) labelRef.current.style.transform = `translate(${px}px, ${py}px)`;
+  };
 
   useEffect(() => {
-    if (reduceMotion) return; // proximity pull is a pure flourish, skip entirely
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return; // pure flourish, skip entirely
     function onDragOver(e: DragEvent) {
       const rect = zoneRef.current?.getBoundingClientRect();
       if (!rect) return;
@@ -52,20 +52,17 @@ export function LogoUploadNote({ slug, lang = "es", heading, hint }: { slug: str
       const dy = e.clientY - cy;
       const dist = Math.hypot(dx, dy);
       if (dist < MAGNET_DISTANCE) {
-        const pull = 1 - dist / MAGNET_DISTANCE;
-        x.set(dist > 0 ? (dx / dist) * pull * MAX_OFFSET : 0);
-        y.set(dist > 0 ? (dy / dist) * pull * MAX_OFFSET : 0);
+        const strength = 1 - dist / MAGNET_DISTANCE;
+        pull(dist > 0 ? (dx / dist) * strength * MAX_OFFSET : 0, dist > 0 ? (dy / dist) * strength * MAX_OFFSET : 0);
         const inside = e.clientX >= rect.left && e.clientX <= rect.right && e.clientY >= rect.top && e.clientY <= rect.bottom;
         setStage(inside ? "over" : "near");
       } else {
-        x.set(0);
-        y.set(0);
+        pull(0, 0);
         setStage("idle");
       }
     }
     function reset() {
-      x.set(0);
-      y.set(0);
+      pull(0, 0);
       setStage("idle");
     }
     window.addEventListener("dragover", onDragOver);
@@ -76,7 +73,7 @@ export function LogoUploadNote({ slug, lang = "es", heading, hint }: { slug: str
       window.removeEventListener("drop", reset);
       window.removeEventListener("dragend", reset);
     };
-  }, [x, y, reduceMotion]);
+  }, []);
 
   const validate = (file: File): boolean => {
     if (file.size > MAX_SIZE_BYTES) {
@@ -139,14 +136,13 @@ export function LogoUploadNote({ slug, lang = "es", heading, hint }: { slug: str
           onDrop={(e) => {
             e.preventDefault();
             handleFile(e.dataTransfer.files?.[0]);
-            x.set(0);
-            y.set(0);
+            pull(0, 0);
             setStage("idle");
           }}
         >
-          <motion.span style={reduceMotion ? undefined : { x: springX, y: springY }} className="block">
+          <span ref={labelRef} className="block transition-transform duration-150 ease-out motion-reduce:transition-none">
             {stage === "over" ? t.dropOver : stage === "near" ? t.dropNear : t.chooseFile}
-          </motion.span>
+          </span>
           <input
             type="file"
             accept="image/*,.pdf,.ai,.svg,.psd"

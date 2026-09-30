@@ -59,7 +59,9 @@ export function ProductVisual({
           className={compact ? "product-image-wrap self-stretch" : "product-image-wrap"}
           style={compact ? undefined : { aspectRatio: `${width} / ${height}`, height: "auto", width: "100%" }}
         >
-          {!loaded && <span className="product-image-shimmer" aria-hidden="true" />}
+          {/* Above-the-fold (priority) images skip the shimmer: it sits over the photo
+              until hydration flips `loaded`, which held the LCP paint back ~2s. */}
+          {!loaded && !(priority ?? !compact) && <span className="product-image-shimmer" aria-hidden="true" />}
           <Image
             key={src}
             src={src}
