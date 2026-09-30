@@ -186,42 +186,5 @@ export function customerConfirmationEmail(order: Order): { subject: string; html
   return { subject, html };
 }
 
-const escapeHtml = (v: string) => v.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
-
-/** The single "you left something unpaid" reminder. Spanish first with a short
- * English line (orders do not record the language they were placed in). Says
- * plainly that this is the only reminder and how to stop worrying about it. */
-export function abandonedCheckoutEmail(order: Order): { subject: string; html: string } {
-  const name = escapeHtml(order.customer_name.split(" ")[0] || order.customer_name);
-  const lines = order.items.map((i) => `- ${i.name} x${i.qty}`).join("\n");
-  const waHref = waLink(`Hola, empecé un pedido en ${SITE.name} y tengo una duda antes de pagar:\n${lines}`);
-  const shopHref = `${SITE.url}/productos`;
-  const subject = `Tu pedido en ${SITE.name} sigue esperándote`;
-
-  const html = `
-  <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;color:#222;">
-    <h2 style="color:#7c0000;">Hola ${name}, tu pedido sigue esperándote</h2>
-    <p>Empezaste un pedido en ${SITE.name} pero el pago no se completó. Esto es lo que tenías:</p>
-    ${itemsTable(order)}
-    <p>Si ya pagaste en OXXO o por SPEI, ignora este correo: tu pago puede tardar un poco en reflejarse.</p>
-    <p>Si tuviste algún problema o alguna duda (diseño, cantidad, entrega), escríbenos y lo resolvemos contigo:</p>
-    <div style="margin:20px 0;">
-      <a href="${waHref}"
-         style="background:#25D366;color:#fff;text-decoration:none;padding:12px 20px;border-radius:6px;font-weight:bold;display:inline-block;margin-right:10px;">
-        💬 Escribir por WhatsApp
-      </a>
-      <a href="${shopHref}"
-         style="background:#7c0000;color:#fff;text-decoration:none;padding:12px 20px;border-radius:6px;font-weight:bold;display:inline-block;">
-        Volver a la tienda
-      </a>
-    </div>
-    <p style="color:#666;font-size:13px;">Este es el único recordatorio que enviamos por este pedido; no te escribiremos más por esto.</p>
-    <p style="color:#888;font-size:12px;">
-      English: you started an order at ${SITE.name} but the payment was not completed. If you already paid by OXXO or SPEI, ignore this email.
-      Questions? Reply on WhatsApp. This is the only reminder we send for this order.
-      Privacy notice: <a href="${SITE.url}/privacidad" style="color:#888;">${SITE.url}/privacidad</a>
-    </p>
-  </div>`;
-
-  return { subject, html };
-}
+// The branded abandoned-checkout reminder lives in its own module.
+export { abandonedCheckoutEmail } from "@/lib/email-abandoned";
