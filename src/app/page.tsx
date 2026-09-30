@@ -77,7 +77,9 @@ export default function Home() {
             </ul>
           </div>
           <div className="animate-fade-up animate-fade-up-1 flex min-w-0 flex-col items-center sm:items-end">
-            <HeroJar />
+            <div className="hidden sm:block">
+              <HeroJar />
+            </div>
             <HeroPhotos lang="es" />
           </div>
         </div>

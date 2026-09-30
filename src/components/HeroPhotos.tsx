@@ -13,15 +13,15 @@ export function HeroPhotos({ lang }: { lang: Lang }) {
   const items = lang === "en" ? getGalleryItemsEn() : galleryItems;
   const photos = SLUGS.flatMap((s) => items.find((i) => i.slug === s) ?? []);
   return (
-    <ul className="mt-6 flex justify-center gap-4 sm:justify-end">
+    <ul className="flex justify-center gap-4 sm:mt-6 sm:justify-end">
       {photos.map((p, i) => (
         <li key={p.slug}>
           <Link
             href={productHrefFor(p.category, lang)}
             aria-label={p.title}
-            className={`card-soft relative block h-32 w-24 overflow-hidden p-0 sm:h-36 sm:w-28 ${i % 2 === 0 ? "tilt-a" : "tilt-b"}`}
+            className={`card-soft relative block h-36 w-24 overflow-hidden p-0 sm:h-40 sm:w-32 ${i % 2 === 0 ? "tilt-a" : "tilt-b"}`}
           >
-            <Image src={p.image} alt={p.alt} fill sizes="112px" className="object-cover" />
+            <Image src={p.image} alt={p.alt} fill sizes="128px" className="object-cover" />
           </Link>
         </li>
       ))}

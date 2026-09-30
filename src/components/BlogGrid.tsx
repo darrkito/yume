@@ -45,7 +45,7 @@ export function BlogGrid({
         {filtered.map((post, i) => (
           <Link key={post.slug} href={`${basePath}/${post.slug}`} className={`card-soft group flex flex-col p-6 ${i % 2 === 0 ? "tilt-a" : "tilt-b"}`}>
             <div className="flex items-center gap-3">
-              <span className="rounded-full bg-brand-tint px-3 py-1 text-[11px] font-semibold text-brand-deep">{topicsFor(post, lang)[0]}</span>
+              <span className="rounded-full bg-brand-tint px-3 py-1 text-xs font-semibold text-brand-deep">{topicsFor(post, lang)[0]}</span>
               <time dateTime={post.publishedAt} className="text-xs text-ink-soft">
                 {formatBlogDate(post.publishedAt)}
               </time>

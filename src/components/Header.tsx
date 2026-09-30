@@ -42,6 +42,7 @@ export function Header() {
   const cartHref = lang === "en" ? "/en/cart" : "/carrito";
   const shopHref = lang === "en" ? "/en/products" : "/productos";
   const t = UI[lang];
+  const isActive = (href: string) => (href === "/" || href === "/en" ? pathname === href : pathname === href || pathname.startsWith(`${href}/`));
 
   useEffect(() => {
     if (count > prevCount.current) {
@@ -93,7 +94,12 @@ export function Header() {
         </Link>
         <nav aria-label={t.mainNav} className="hidden items-center gap-8 text-sm text-ink-soft sm:flex">
           {navLinks.map((l) => (
-            <Link key={l.href} href={l.href} className="inline-flex min-h-11 items-center hover:text-brand transition-colors">
+            <Link
+              key={l.href}
+              href={l.href}
+              aria-current={isActive(l.href) ? "page" : undefined}
+              className={`inline-flex min-h-11 items-center transition-colors hover:text-brand ${isActive(l.href) ? "font-semibold text-ink" : ""}`}
+            >
               {l.label}
             </Link>
           ))}
@@ -111,9 +117,14 @@ export function Header() {
             )}
           </Link>
           <a href={waLink(WA_QUOTE_MESSAGE[lang])} target="_blank" rel="noopener noreferrer" aria-label={t.quoteWhatsapp} className="flex size-11 items-center justify-center text-ink transition-colors hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"><MessageCircle size={22} aria-hidden="true" /></a>
-          <Link href={shopHref} className="btn-soft btn-soft-solid hidden whitespace-nowrap sm:inline-flex">
-            {t.viewShop}
-          </Link>
+          {pathname !== cartHref && (
+            <Link
+              href={pathname === shopHref ? cartHref : shopHref}
+              className="btn-soft btn-soft-solid hidden whitespace-nowrap sm:inline-flex"
+            >
+              {pathname === shopHref ? t.cart : t.viewShop}
+            </Link>
+          )}
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
@@ -132,7 +143,12 @@ export function Header() {
           <ul className="flex flex-col gap-4">
             {navLinks.map((l) => (
               <li key={l.href}>
-                <Link href={l.href} className="hover:text-brand transition-colors" onClick={() => setOpen(false)}>
+                <Link
+                  href={l.href}
+                  aria-current={isActive(l.href) ? "page" : undefined}
+                  className={`inline-flex min-h-11 items-center transition-colors hover:text-brand ${isActive(l.href) ? "font-semibold text-ink" : ""}`}
+                  onClick={() => setOpen(false)}
+                >
                   {l.label}
                 </Link>
               </li>

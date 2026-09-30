@@ -2,8 +2,9 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import { ShoppingBag, Check, CheckCircle2, Clock, MapPin, MessageCircle, Truck, Zap } from "lucide-react";
+import { ImageUp, ShoppingBag, Check, CheckCircle2, Clock, MapPin, MessageCircle, Truck, Zap } from "lucide-react";
 import { useAddProduct } from "@/components/useAddProduct";
+import { useDesignFiles } from "@/components/DesignFileContext";
 import { QtyInput } from "@/components/QtyInput";
 import { LogoUploadNote } from "@/components/LogoUploadNote";
 import { cartItemLabel, defaultVariantId, hasVariants, MAX_PIECES, pieceCount, resolvePrice, tieredPrice, wholesaleRate, type Product } from "@/content/products";
@@ -27,6 +28,10 @@ const WA_QUOTE_MSG = {
 export function ProductPurchase({ product, lang = "es" }: { product: Product; lang?: Lang }) {
   const addProduct = useAddProduct(lang);
   const router = useRouter();
+  const { getDesignFile } = useDesignFiles();
+  // The sticky bar leads with the design step when the product needs one and
+  // none is attached yet; buying without it stays possible (upload at checkout).
+  const needsDesign = Boolean(product.requiresImage) && !getDesignFile(product.slug);
   const [variantId, setVariantId] = useState<string | undefined>(defaultVariantId(product));
   const [units, setUnits] = useState(1);
   const [justAdded, setJustAdded] = useState(false);
@@ -56,6 +61,12 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
   const handleBuyNow = () => {
     addProduct(product, variantId, tiers ? 1 : units);
     router.push(lang === "en" ? "/en/cart" : "/carrito");
+  };
+
+  const handleChooseDesign = () => {
+    const zone = document.getElementById(`design-${product.slug}`);
+    zone?.scrollIntoView({ behavior: "smooth", block: "center" });
+    zone?.querySelector<HTMLInputElement>('input[type="file"]')?.click();
   };
 
   useEffect(() => {
@@ -265,9 +276,15 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
             <p className="truncate text-xs text-ink-soft">{pieces ? `${pieces} ${t.pieces}` : units > 1 ? `${units} × ${product.name}` : label}</p>
           </div>
           {/* One CTA only: two buttons squeezed the price to "$100..." at 390px. */}
-          <button type="button" onClick={handleBuyNow} className="btn-soft btn-soft-solid min-h-11 shrink-0 px-5 text-sm">
-            <Zap size={16} aria-hidden="true" /> {t.buyNow}
-          </button>
+          {needsDesign ? (
+            <button type="button" onClick={handleChooseDesign} className="btn-soft btn-soft-solid min-h-11 shrink-0 px-5 text-sm">
+              <ImageUp size={16} aria-hidden="true" /> {t.chooseDesign}
+            </button>
+          ) : (
+            <button type="button" onClick={handleBuyNow} className="btn-soft btn-soft-solid min-h-11 shrink-0 px-5 text-sm">
+              <Zap size={16} aria-hidden="true" /> {t.buyNow}
+            </button>
+          )}
         </div>
       </div>
     </div>

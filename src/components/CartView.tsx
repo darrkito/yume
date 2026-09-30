@@ -279,17 +279,17 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
         >
           <CreditCard size={18} aria-hidden="true" /> {t.payOnline}
         </Link>
+        <p className="max-w-md text-xs leading-relaxed text-ink-soft">{t.factProof}</p>
         <CtaFillLink
           href={waLink(buildWaMessage())}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex min-h-11 items-center rounded-full border border-line px-5 py-2 text-center text-sm font-semibold text-ink-soft transition-colors hover:border-brand"
+          className="inline-flex min-h-11 items-center rounded-full border border-line-strong px-5 py-2 text-center text-sm font-semibold text-ink transition-colors hover:border-brand hover:text-brand"
         >
           {t.quoteWhatsapp}
         </CtaFillLink>
       </div>
       <ul className="mt-6 space-y-2 text-sm text-ink">
-        <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.factProof}</li>
         <li className="flex items-start gap-2"><Clock size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.factTiming}</li>
         <li className="flex items-start gap-2"><ShieldCheck size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.securePayment}</li>
       </ul>

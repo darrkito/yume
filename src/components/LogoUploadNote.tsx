@@ -15,7 +15,7 @@ const RENDERABLE = /^image\/(png|jpe?g|webp|gif|avif|svg\+xml)$/;
 type Stage = "idle" | "near" | "over";
 
 const STAGE_CLASSES: Record<Stage, string> = {
-  idle: "border-line text-ink-soft",
+  idle: "border-brand/40 bg-brand-tint/30 text-brand hover:border-brand",
   near: "border-brand/50 bg-brand-tint/40 text-brand",
   over: "border-brand bg-brand-tint text-brand shadow-[0_0_0_4px_var(--brand-tint)]",
 };
@@ -105,7 +105,7 @@ export function LogoUploadNote({ slug, lang = "es", heading, hint }: { slug: str
   };
 
   return (
-    <div className="mt-6 rounded-xl border border-line bg-paper p-5">
+    <div id={`design-${slug}`} className="mt-6 scroll-mt-24 rounded-xl border border-line bg-paper p-5">
       <p className="flex items-center gap-2 text-sm font-semibold text-ink">
         <ImageUp size={16} className="text-brand" /> {heading ?? t.yourLogoOrDesign}
       </p>
@@ -134,7 +134,7 @@ export function LogoUploadNote({ slug, lang = "es", heading, hint }: { slug: str
       ) : (
         <label
           ref={zoneRef}
-          className={`relative mt-4 block cursor-pointer rounded-lg border border-dashed py-4 text-center text-xs transition-colors ${STAGE_CLASSES[stage]}`}
+          className={`relative mt-4 block cursor-pointer rounded-lg border border-dashed py-6 text-center text-sm font-semibold transition-colors ${STAGE_CLASSES[stage]}`}
           onDragOver={(e) => e.preventDefault()}
           onDrop={(e) => {
             e.preventDefault();

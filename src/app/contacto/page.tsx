@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Mail, MapPin, AtSign } from "lucide-react";
+import { Mail, MapPin, AtSign, Phone } from "lucide-react";
 import { SITE, waLink } from "@/content/site";
 import { pageMetadata, breadcrumbSchema } from "@/lib/seo";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
@@ -29,6 +29,13 @@ export default function ContactoPage() {
         >
           <WhatsAppIcon size={20} />
           Cotizar por WhatsApp
+        </a>
+        <a
+          href="tel:+523334005135"
+          className="flex min-h-11 items-center gap-2 text-sm text-ink-soft transition-colors hover:text-brand"
+        >
+          <Phone size={18} aria-hidden="true" />
+          33 3400 5135
         </a>
         <a
           href={`mailto:${SITE.email}`}

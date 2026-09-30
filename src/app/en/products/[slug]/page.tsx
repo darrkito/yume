@@ -15,6 +15,10 @@ import { FaqQuestion } from "@/components/FaqAccordion";
 import { getGalleryItemsEn } from "@/content/gallery.en";
 import { hreflangFor, PRODUCT_SLUG_EN, PRODUCT_SLUG_ES } from "@/lib/i18n";
 
+// The price box (ProductPurchase) already states the first-100 / wholesale rule;
+// skip it in the spec grid and bullets so it is not repeated four times.
+const TIER_RESTATEMENT = /primeras 100|first 100|precio mayoreo|wholesale price|más de 100|over 100/i;
+
 export function generateStaticParams() {
   return products.map((p) => ({ slug: PRODUCT_SLUG_EN[p.slug] }));
 }
@@ -115,7 +119,7 @@ export default async function ProductPageEn({ params }: { params: Promise<{ slug
           <p className="mt-6 max-w-[65ch] text-sm leading-relaxed text-ink-soft">{t.description}</p>
 
           <dl className="mt-8 grid grid-cols-2 gap-4 border-y border-line py-6 text-sm">
-            {t.specs.map((spec) => (
+            {t.specs.filter((spec) => !TIER_RESTATEMENT.test(spec.label)).map((spec) => (
               <div key={spec.label}>
                 <dt className="text-xs text-ink-soft">{spec.label}</dt>
                 <dd className="mt-1 font-medium text-ink">{spec.value}</dd>
@@ -125,7 +129,7 @@ export default async function ProductPageEn({ params }: { params: Promise<{ slug
 
 
           <ul className="mt-10 space-y-2 text-sm text-ink">
-            {t.details.map((d) => (
+            {t.details.filter((d) => !TIER_RESTATEMENT.test(d)).map((d) => (
               <li key={d} className="flex items-start gap-2">
                 <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
                 {d}
