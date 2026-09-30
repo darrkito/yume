@@ -316,7 +316,7 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
           href={waLink(waMsg)}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-3 inline-flex min-h-11 items-center gap-1.5 text-sm font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+          className="btn-soft btn-soft-outline mt-3 w-full sm:w-auto"
         >
           <MessageCircle size={16} aria-hidden="true" />{guidance}
         </a>
@@ -331,7 +331,16 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
             <p className="truncate text-base font-semibold text-ink">{formatMXN(lineTotal)}</p>
             <p className="truncate text-xs text-ink-soft">{pieces ? `${pieces} ${t.pieces}` : units > 1 ? `${units} × ${product.name}` : label}</p>
           </div>
-          {/* One CTA only: two buttons squeezed the price to "$100..." at 390px. */}
+          <a
+            href={waLink(waMsg)}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={t.quoteWhatsapp}
+            className="flex size-11 shrink-0 items-center justify-center rounded-full border border-line-strong text-brand transition-colors hover:border-brand"
+          >
+            <MessageCircle size={20} aria-hidden="true" />
+          </a>
+          {/* One primary CTA: two full buttons squeezed the price to "$100..." at 390px; WhatsApp is an icon. */}
           {needsDesign ? (
             <button type="button" onClick={handleChooseDesign} className="btn-soft btn-soft-solid min-h-11 shrink-0 px-5 text-sm">
               <ImageUp size={16} aria-hidden="true" /> {t.chooseDesign}

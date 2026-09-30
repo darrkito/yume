@@ -5,6 +5,7 @@ import { productsEn } from "@/content/products.en";
 import { FREE_SHIPPING_THRESHOLD, NATIONAL_SHIPPING_PRICE } from "@/content/shipping";
 import { formatMXN } from "@/lib/format";
 import { ProductCard } from "@/components/ProductCard";
+import { QuoteCard } from "@/components/QuoteCard";
 import { waLink } from "@/content/site";
 import { CheckCircle2, Clock, Truck } from "lucide-react";
 import { PRODUCT_SLUG_EN, UI } from "@/lib/i18n";
@@ -46,9 +47,10 @@ export default function ProductsPageEn() {
       </nav>
 
       <div className="mt-10 grid gap-8 sm:grid-cols-2">
-        {products.map((p, i) => (
-          <ProductCard key={p.slug} product={p} index={i} headingAs="h2" lang="en" />
-        ))}
+        {products.flatMap((p, i) => [
+          <ProductCard key={p.slug} product={p} index={i} headingAs="h2" lang="en" />,
+          ...(p.slug === "stickers-logo-personalizado" ? [<QuoteCard key="tattoos" index={i + 1} lang="en" />] : []),
+        ])}
       </div>
       <div className="mt-16 rounded-2xl border border-line bg-paper-raised p-8 text-center">
         <h2 className="font-display text-2xl text-ink text-balance">{t.listingCtaTitle}</h2>

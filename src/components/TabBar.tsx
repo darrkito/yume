@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { CircleHelp, Home, Image as ImageIcon, MessageCircle, ShoppingBag, Store, X } from "lucide-react";
+import { Home, Image as ImageIcon, MessageCircle, ShoppingBag, Store, X } from "lucide-react";
 import { useCart } from "@/components/CartContext";
 import { LanguageToggle } from "@/components/LanguageToggle";
 import { waLink } from "@/content/site";
@@ -74,8 +74,8 @@ export function TabBar() {
             );
           })}
           <li className="flex flex-1">
-            <button type="button" onClick={() => setHelpOpen(true)} aria-haspopup="dialog" className={`${tab} text-ink-soft`}>
-              <CircleHelp size={22} aria-hidden="true" />
+            <button type="button" onClick={() => setHelpOpen(true)} aria-haspopup="dialog" className={`${tab} font-semibold text-brand`}>
+              <MessageCircle size={22} aria-hidden="true" />
               {t.tabHelp}
             </button>
           </li>

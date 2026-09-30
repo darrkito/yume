@@ -18,6 +18,12 @@ Follows `PLAN-conversion-ui.md` (Phases 1-3 are done and live). The latest criti
 
 ---
 
+## Owner priorities added 2026-09-30 (implemented)
+
+- **Sales priority order everywhere** (home shelf, shop, cross-sell, MCP/A2A lists): stickers de vinil, stickers de logo, tatuajes temporales, placa NFC, stand NFC, recetario al final. Order is the array order in `src/content/products.ts`.
+- **Tatuajes temporales** are a quote-only card (`QuoteCard`, no price, no cart, prefilled WhatsApp message), placed after the two sticker lines. Not a catalog product, per the earlier owner decision.
+- **More WhatsApp quote CTAs:** hero button now visible on phones; tab bar "Cotizar" (WhatsApp icon, burgundy) on every tabbed page; `QuoteBand` ("¿Tienes un diseño especial?") under the phone shelf and under the desktop product grid; product page WhatsApp is a full outline button and the sticky buy bar has a WhatsApp icon button beside the main CTA.
+
 ## 0. Goal and what "better" means
 
 **Goal:** on a phone, studioyume.mx should feel like a native shopping app: instant, thumb-driven, always one tap from buying. It should also make an honest, strong case that Yume is the best place to order custom stickers, recetarios and NFC review plates in Mexico.

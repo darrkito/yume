@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { Check, MessageCircle, CheckCircle2, Truck, PenTool, MapPin, ShieldCheck } from "lucide-react";
 import { CASABLANCA_PRICE } from "@/content/shipping";
-import { getProduct, hasVariants, productDisplayPrice, products } from "@/content/products";
+import { hasVariants, productDisplayPrice, products } from "@/content/products";
 import { getFeaturedFaq } from "@/content/faq";
 import { waLink } from "@/content/site";
 import { formatMXN } from "@/lib/format";
 import { HeroJarLazy } from "@/components/HeroJarLazy";
 import { HeroPhotos } from "@/components/HeroPhotos";
+import { QuoteCard } from "@/components/QuoteCard";
+import { QuoteBand } from "@/components/QuoteBand";
 import { ProductRail } from "@/components/ProductRail";
 import { CtaFillLink } from "@/components/CtaFillLink";
 import { ProductVisual } from "@/components/ProductVisual";
@@ -41,7 +43,7 @@ const HOW_IT_WORKS = [
 ];
 
 export default function Home() {
-  const featured = getProduct("stand-resena-google-nfc") ?? products[0];
+  const featured = products[0];
   const rest = products.filter((p) => p.slug !== featured.slug);
   const featuredFaq = getFeaturedFaq();
 
@@ -66,7 +68,7 @@ export default function Home() {
                 href={waLink("Hola, me interesa cotizar un producto de Yume.")}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-soft btn-soft-outline max-sm:hidden"
+                className="btn-soft btn-soft-outline"
               >
                 Cotizar por WhatsApp
               </CtaFillLink>
@@ -186,10 +188,12 @@ export default function Home() {
         <section className="mx-auto max-w-6xl px-6 py-12 sm:py-20 max-sm:hidden">
           <h2 className="font-display text-3xl text-ink sm:text-4xl text-balance">Más productos</h2>
           <div className="mt-12 grid gap-8 sm:grid-cols-2">
-            {rest.map((p, i) => (
-              <ProductCard key={p.slug} product={p} index={i} />
-            ))}
+            {rest.flatMap((p, i) => [
+              <ProductCard key={p.slug} product={p} index={i} />,
+              ...(p.slug === "stickers-logo-personalizado" ? [<QuoteCard key="tattoos" index={i + 1} />] : []),
+            ])}
           </div>
+          <QuoteBand className="mt-10" />
           <Link
             href="/productos"
             className="mt-10 inline-flex min-h-11 items-center text-sm font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
