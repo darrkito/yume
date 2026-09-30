@@ -161,13 +161,22 @@ Soft and a little imperfect: rounded, warm-shadowed, gently tilted where it fits
 - **Variant selection (radio-style option cards):** selected state fills with Blush Tint and a burgundy border; unselected state uses a plain warm-line border.
 
 ### Navigation
-- Sticky header, opaque warm-paper background (no backdrop blur: it did not composite reliably and left content readable behind the header), single hairline bottom border (Warm Line). Nav links are plain-weight Karla, no uppercase, no letter-spacing chrome — the previous mono-caps nav treatment is retired. Active/hover state is a simple color shift to burgundy, no underline or background change.
+- **Phones**: bottom tab bar replaces the hamburger (see Mobile app shell). Sticky header, opaque warm-paper background (no backdrop blur: it did not composite reliably and left content readable behind the header), single hairline bottom border (Warm Line). Nav links are plain-weight Karla, no uppercase, no letter-spacing chrome — the previous mono-caps nav treatment is retired. Active/hover state is a simple color shift to burgundy, no underline or background change.
 
 ### Quantity input
 - `QtyInput`: pill outline (`border-line`, paper bg), 44px −/+ buttons in soft ink that turn burgundy on hover, a borderless tabular-number field in the middle with native spin buttons removed. Same component on product pages and in the cart.
 
 ### Confirmation toast
 - `CartToast` is a `card-soft` resting at `rotate(-1deg)`, just under the header's cart icon (aligned to the header content edge on wide screens, full-width minus 16px gutters on phones). Its entrance is the site's one authored motion moment, **sticker-press**: lands lifted (−6deg, 1.05 scale, deep shadow) and settles to −1deg as the shadow presses down, 480ms `cubic-bezier(0.16, 1, 0.3, 1)`; exit **sticker-lift** 180ms ease-in. Reduced motion: plain 150ms fade. Burgundy check roundel, solid "Ver carrito" + outline "Seguir viendo".
+
+### Mobile app shell (phones, added 2026-09-30)
+- **Tab bar**: fixed bottom, `paper-raised` with a hairline top border and a warm upward shadow (opaque, no blur), five equal tabs, 48px+ hit areas, 12px labels, active tab in burgundy with `aria-current`; the last tab ("Cotizar", WhatsApp glyph) is always burgundy semibold so the quote path stays visible. Hidden where a page owns its own sticky action bar.
+- **Sheets**: native `<dialog>` rising from the bottom (`1.25rem` top radius, `paper-raised`, 220 ms slide, none for reduced motion), a 40px grabber line, ink 50% backdrop. On desktop the share/upload dialogs become a centered card.
+- **Shelves**: horizontal scroll-snap rows (`.rail`, hidden scrollbar, cards peek at the edge) for the product shelf and the home explainer rows; no carousel library.
+- **Feedback**: `tap-highlight` off, `touch-action: manipulation`, 16px inputs on phones, burgundy-tint pressed state on tabs; every action still ≥44px.
+
+### Transactional email
+- Same identity as the site, expressed for mail clients: blush (`brand-tint`) page background, `paper` card with `1.5rem` radius and a hairline `line` border, wordmark centered on top, Playfair Display headings with one burgundy italic phrase, Karla body, `paper-raised` rounded boxes for order/delivery details, full pill buttons (burgundy solid + outline), numbered burgundy circles for "Qué sigue", blush footer band. Fonts fall back to Georgia/Helvetica in clients that ignore web fonts. Logos/photos are PNG/JPG in `public/email/`. Defined once in `src/lib/email-brand.ts`.
 
 ### Tags / Labels
 - **Pickup badge** (`PickupBadge`): outline pill (paper bg, `brand/30` border, burgundy text, map-pin icon), top-right of product-card photos; the solid burgundy "Nuevo" pill owns top-left.

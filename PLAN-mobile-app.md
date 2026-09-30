@@ -27,6 +27,12 @@ Follows `PLAN-conversion-ui.md` (Phases 1-3 are done and live). The latest criti
 - **Tatuajes temporales** are a quote-only card (`QuoteCard`, no price, no cart, prefilled WhatsApp message), placed after the two sticker lines. Not a catalog product, per the earlier owner decision.
 - **More WhatsApp quote CTAs:** hero button now visible on phones; tab bar "Cotizar" (WhatsApp icon, burgundy) on every tabbed page; `QuoteBand` ("¿Tienes un diseño especial?") under the phone shelf and under the desktop product grid; product page WhatsApp is a full outline button and the sticky buy bar has a WhatsApp icon button beside the main CTA.
 
+## Final state (2026-09-30, end of session)
+
+Live on studioyume.mx: tab bar + Cotizar sheet, manifest (installable, no service worker), product shelf, swipe rows, collapsible details, swipeable photos, share button, upload-or-later sheet, delivery/pickup dates, free-shipping nudge, cart undo/option change/language-correct names, specific form messages, success-page steps, AVIF, page cross-fade, Clarity click events, WhatsApp quote CTAs everywhere, new product order + tattoos quote card, "Mínimos bajos" headline, **branded emails** (confirmation, internal sale, abandoned-checkout reminder with daily cron; migration run, `CRON_SECRET` set, dry run verified).
+
+**Still open** (need the owner, or deferred by decision): real photos of recetario/NFC + a sticker-sheet scale photo (owner will shoot; wire into `product-photos.ts`); Clarity funnels/recordings review (dashboard); review pipeline (waits for a Google reviews link); proof-turnaround claim (waits for a real number); first real reminder send is the daily cron (check the Vercel logs the morning after the first unpaid order ages 24 h). Skipped by decision: countdown, MSI badge, gift note, postal-code autofill.
+
 ## 0. Goal and what "better" means
 
 **Goal:** on a phone, studioyume.mx should feel like a native shopping app: instant, thumb-driven, always one tap from buying. It should also make an honest, strong case that Yume is the best place to order custom stickers, recetarios and NFC review plates in Mexico.

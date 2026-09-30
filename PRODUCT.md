@@ -31,6 +31,11 @@ Orders are placed either through the website (cart + Mercado Pago checkout, Chec
 
 - Real Next.js e-commerce site, not a mockup: Mercado Pago payments (Checkout Pro + Bricks), Supabase order storage, real webhook-verified payment confirmation, transactional emails.
 - Fully bilingual (ES canonical, EN at real translated slugs under `/en`), not a machine-translated mirror.
+- **Sales priority (owner, 2026-09-30)**: stickers de vinil, stickers de logo, tatuajes temporales, placa NFC, stand NFC, recetarios al final. Tatuajes temporales are **quote-only** (no catalog entry, no price, WhatsApp only).
+- **WhatsApp quoting is a co-primary conversion goal** next to online purchase: the products are personalized, so a chat is often the sale.
+- **Delivery promise**: the clock starts at **proof approval** (3-5 business days production + 2-5 shipping; Casa Blanca pickup = production + 1 business day). No countdown, no proof-turnaround-hours claim until the owner gives a real number.
+- **Deliberately not shown**: meses sin intereses (not offered on the Mercado Pago account), reviews/ratings/counters (none exist; the review pipeline waits for a Google reviews link), gift note, postal-code autofill.
+- Transactional email (order confirmation, internal sale, one abandoned-checkout reminder) is branded like the site; the reminder is a single email 24-72 h after an unpaid order, disclosed at checkout and in the privacy notice.
 - Current catalog: 5 products (recetario médico personalizado, etiquetas/stickers de logo, stickers de vinil de uso general, placa NFC/QR de reseñas de Google, stand NFC/QR de reseñas), each with real tiered-quantity pricing via a `variants` mechanism.
 - Real gallery of past sticker work (13 real production photos), including licensed-character fan art (Sanrio, Pokémon, Zelda, etc.) — an informed, deliberate choice by the business owner to include and SEO-target by character name, made with awareness of the IP-enforcement risk.
 - No fabricated testimonials, case studies, reviews, or social proof anywhere on the site — explicit standing policy. The business launched 2026-08-27 and has no real customer testimonials yet; none should be invented to fill that gap.
