@@ -14,7 +14,7 @@ export interface ProductPhoto {
 // real photos from the owner.
 const GALLERY_SLUGS: Record<string, string[]> = {
   "stickers-logo-personalizado": ["logo-vanelia", "logo-yume"],
-  "stickers-vinil-impermeable": ["mascotas-perros-gatos", "mascotas-schnauzer", "pokemon-dragones"],
+  "stickers-vinil-impermeable": ["mascotas-schnauzer", "hello-kitty", "pokemon-dragones"],
 };
 
 export function productPhotos(slug: string, lang: Lang): ProductPhoto[] {

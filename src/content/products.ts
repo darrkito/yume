@@ -138,9 +138,9 @@ export const products: Product[] = [
       "Prueba digital antes de imprimir",
       "Mira ejemplos reales de nuestro trabajo en la galería",
     ],
-    image: "/gallery/gallery-sanrio-hello-kitty.webp",
-    imageWidth: 1280,
-    imageHeight: 1226,
+    image: "/gallery/gallery-mascotas-perros-gatos.webp",
+    imageWidth: 960,
+    imageHeight: 1280,
     requiresImage: true,
     faq: [
       {
