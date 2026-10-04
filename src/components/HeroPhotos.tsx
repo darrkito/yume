@@ -5,7 +5,7 @@ import { getGalleryItemsEn } from "@/content/gallery.en";
 import { productHrefFor } from "@/lib/gallery-links";
 import type { Lang } from "@/lib/i18n";
 
-const SLUGS = ["hello-kitty", "mascotas-perros-gatos", "logo-vanelia"];
+const SLUGS = ["mascotas-perros-gatos", "hello-kitty", "logo-vanelia"];
 
 // Three real photos of past work under the hero jar: proof of the product
 // next to the playful animation, each linking to the matching product.
