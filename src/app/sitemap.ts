@@ -12,7 +12,7 @@ function withLanguages(esPath: string) {
   return {
     languages: {
       "es-MX": `${SITE.url}${esPath}`,
-      "en-US": `${SITE.url}${esPathToEnPath(esPath)}`,
+      en: `${SITE.url}${esPathToEnPath(esPath)}`,
     },
   };
 }

@@ -32,7 +32,7 @@ export function pageMetadata({
       description,
       type: "website",
       url: path,
-      locale: lang === "en" ? "en_US" : "es_MX",
+      locale: lang === "en" ? "en_MX" : "es_MX",
       // openGraph is replaced wholesale by the child page, not deep-merged
       // with the root layout's — so every static page needs its own image,
       // or it renders with none (2026-09-15 SEO audit: 11/12 pages had no
@@ -82,6 +82,7 @@ export function productSchema(product: Product, { name, path }: { name?: string;
       priceCurrency: product.currency,
       availability: "https://schema.org/MadeToOrder",
       url: `${SITE.url}${path}`,
+      eligibleRegion: { "@type": "Country", name: "MX" },
       seller: { "@id": `${SITE.url}/#organization` },
     },
   };

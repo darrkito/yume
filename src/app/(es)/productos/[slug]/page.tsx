@@ -60,6 +60,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       availability: "https://schema.org/InStock",
       url: `${SITE.url}/productos/${product.slug}`,
       areaServed: { "@type": "Country", name: "México" },
+      eligibleRegion: { "@type": "Country", name: "MX" },
       seller: { "@id": `${SITE.url}/#organization` },
       // Solo se aceptan devoluciones/cambios de artículos defectuosos (todo es
       // hecho por pedido); detalle en /politica-de-devoluciones.

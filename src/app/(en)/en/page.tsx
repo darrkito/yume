@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     description: "Custom stationery and personalized goods made to order from Guadalajara, Jalisco, shipping across all of Mexico.",
     type: "website",
     url: "/en",
-    locale: "en_US",
+    locale: "en_MX",
     // Same gap as pageMetadata() (see src/lib/seo.ts): a page-level openGraph
     // object replaces the root layout's wholesale, not merges — this page
     // predates pageMetadata() and duplicated its openGraph block by hand,

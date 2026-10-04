@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: seoTitle,
     description: post.description,
     alternates: { canonical: `/en/blog/${slug}`, languages: esSlug ? hreflangFor(`/blog/${esSlug}`) : undefined },
-    openGraph: { title: seoTitle, description: post.description, type: "article", url: `/en/blog/${slug}`, locale: "en_US" },
+    openGraph: { title: seoTitle, description: post.description, type: "article", url: `/en/blog/${slug}`, locale: "en_MX" },
   };
 }
 

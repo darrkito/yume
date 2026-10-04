@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: t.name,
     description,
     alternates: { canonical: `/en/products/${slug}`, languages: hreflangFor(`/productos/${esSlug}`) },
-    openGraph: { title: t.name, description, type: "website", url: `/en/products/${slug}`, images: [ogImage], locale: "en_US" },
+    openGraph: { title: t.name, description, type: "website", url: `/en/products/${slug}`, images: [ogImage], locale: "en_MX" },
     twitter: { card: "summary_large_image", images: [ogImage] },
   };
 }
@@ -64,6 +64,7 @@ export default async function ProductPageEn({ params }: { params: Promise<{ slug
       availability: "https://schema.org/InStock",
       url: `${SITE.url}/en/products/${slug}`,
       areaServed: { "@type": "Country", name: "Mexico" },
+      eligibleRegion: { "@type": "Country", name: "MX" },
       seller: { "@id": `${SITE.url}/#organization` },
       hasMerchantReturnPolicy: {
         "@type": "MerchantReturnPolicy",

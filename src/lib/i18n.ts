@@ -95,7 +95,9 @@ export function enPathToEsPath(enPath: string): string {
 export function hreflangFor(esPath: string) {
   return {
     "es-MX": esPath,
-    "en-US": esPathToEnPath(esPath),
+    // Language only, no country: the English pages are for English speakers
+    // buying in Mexico. "en-US" made Merchant Center list products for the US.
+    en: esPathToEnPath(esPath),
     "x-default": esPath,
   } as const;
 }
@@ -361,7 +363,7 @@ export const UI: Record<Lang, Record<string, string>> = {
     openMenu: "Open menu",
     closeMenu: "Close menu",
     footerShippingTitle: "Shipping and delivery",
-    footerShippingBody: "National shipping {national}, free from {threshold}. Or pick up at Casa Blanca, Guadalajara ({pickup}).",
+    footerShippingBody: "Shipping within Mexico {national}, free from {threshold}. Or pick up at Casa Blanca, Guadalajara ({pickup}).",
     footerProofTitle: "Digital proof",
     footerPaymentTitle: "Payments",
     footerPaymentBody: "Secure payments with Mercado Pago: credit or debit card, cash at OXXO and other stores, or SPEI bank transfer.",
@@ -470,13 +472,13 @@ export const UI: Record<Lang, Record<string, string>> = {
     unitsLabel: "Quantity",
     tierBase: "First {qty} pieces: {price} MXN ({unit} each)",
     tierWholesale: "Wholesale price over {qty} pieces: each extra piece at {unit} ({pct}% off)",
-    factShipping: "National shipping {national} · free from {threshold}",
+    factShipping: "Shipping within Mexico {national} · free from {threshold}",
     factTiming: "Production 3-5 days + shipping 2-5 days",
     deliveryEstimate: "If you approve your proof today, you get it between {from} and {to}",
     deliveryEstimateNote: "Business-day estimate: production 3-5 days + shipping 2-5 days.",
-    freeShipNudge: "Get {qty} pieces ({price}) and national shipping is free",
-    freeShipReached: "National shipping is free on this order",
-    freeShipUnits: "Add {n} more and national shipping is free",
+    freeShipNudge: "Get {qty} pieces ({price}) and shipping within Mexico is free",
+    freeShipReached: "Shipping within Mexico is free on this order",
+    freeShipUnits: "Add {n} more and shipping within Mexico is free",
     factPickup: "Or pick up at Casa Blanca, Guadalajara ({pickup})",
     factProof: "Nothing is printed without your approval: up to 2 rounds of changes to your digital proof are included.",
     subtotal: "Subtotal",
@@ -485,8 +487,8 @@ export const UI: Record<Lang, Record<string, string>> = {
     deliveryChoice: "How do you want it?",
     pickupGdl: "Pick up in Guadalajara (Casa Blanca)",
     totalNote: "Next step: choose your branch or enter your address.",
-    freeShippingProgress: "You're {remaining} away from free national shipping.",
-    freeShippingReached: "Your order qualifies for free national shipping.",
+    freeShippingProgress: "You're {remaining} away from free shipping within Mexico.",
+    freeShippingReached: "Your order qualifies for free shipping within Mexico.",
     securePayment: "Secure payment via Mercado Pago: card, OXXO or SPEI.",
     afterPayment: "After payment we send you the digital proof: up to 2 rounds of changes are included before printing.",
     emptyCartHelp: "Need something custom or a different quantity?",
