@@ -7,13 +7,13 @@ export const CASABLANCA_PRICE = 20;
 // National paquetería shipping — a flat estimate (actual carrier cost varies
 // by destination/weight), charged at checkout same as the Casa Blanca
 // surcharge rather than left as an after-the-fact WhatsApp negotiation.
-export const NATIONAL_SHIPPING_PRICE = 190;
+export const NATIONAL_SHIPPING_PRICE = 199;
 
 // Free national shipping above this cart subtotal (items only, before any
 // delivery surcharge). Derived from real margin math, not a round guess:
-// at ~40% gross margin (materials only, not labor), $750 leaves ~$110
-// profit even after absorbing the real $190 shipping cost, still above
-// the $475 pure break-even point (0.40 x 475 = 190). Casa Blanca pickup
+// at ~40% gross margin (materials only, not labor), $750 leaves ~$101
+// profit even after absorbing the real $199 shipping cost, still above
+// the ~$498 pure break-even point (0.40 x 497.5 = 199). Casa Blanca pickup
 // is cheap enough ($20) that it deliberately has no free threshold of
 // its own.
 export const FREE_SHIPPING_THRESHOLD = 750;

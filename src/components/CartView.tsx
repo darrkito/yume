@@ -32,7 +32,7 @@ const ATTACH_MSG = {
 export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
   const { items, removeItem, updateQty, replaceLine, total, clear } = useCart();
   const { getDesignFile } = useDesignFiles();
-  // No default: preselecting $190 national shipping made a $100 order read
+  // No default: preselecting $199 national shipping made a $100 order read
   // as $290 at first sight. The shopper picks, then sees the real total.
   const [method, setMethod] = useState<DeliveryMethod | null>(null);
   const dates = useDeliveryDates(lang);
