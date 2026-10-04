@@ -62,6 +62,7 @@ const STATIC_PATH_EN: Record<string, string> = {
   "/nosotros": "/en/about",
   "/contacto": "/en/contact",
   "/privacidad": "/en/privacy",
+  "/politica-de-devoluciones": "/en/returns-policy",
 };
 const STATIC_PATH_ES: Record<string, string> = Object.fromEntries(
   Object.entries(STATIC_PATH_EN).map(([es, en]) => [en, es]),
@@ -152,6 +153,7 @@ export const UI: Record<Lang, Record<string, string>> = {
     contact: "Contacto",
     about: "Nosotros",
     privacy: "Aviso de Privacidad",
+    returnsPolicy: "Política de Devoluciones",
     quoteWhatsapp: "Cotizar por WhatsApp",
     buyNow: "Comprar ahora",
     listingCtaTitle: "¿Buscas algo distinto?",
@@ -346,6 +348,7 @@ export const UI: Record<Lang, Record<string, string>> = {
     contact: "Contact",
     about: "About",
     privacy: "Privacy Policy",
+    returnsPolicy: "Returns Policy",
     quoteWhatsapp: "Quote via WhatsApp",
     buyNow: "Buy now",
     listingCtaTitle: "Looking for something else?",

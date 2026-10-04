@@ -69,6 +69,9 @@ export default async function ProductPageEn({ params }: { params: Promise<{ slug
         "@type": "MerchantReturnPolicy",
         returnPolicyCategory: "https://schema.org/MerchantReturnNotPermitted",
         applicableCountry: "MX",
+        // Defective items only: 48h from delivery, customer pays return shipping.
+        itemDefectReturnFees: "https://schema.org/ReturnShippingFees",
+        merchantReturnLink: `${SITE.url}/en/returns-policy`,
       },
       shippingDetails: {
         "@type": "OfferShippingDetails",

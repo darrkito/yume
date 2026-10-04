@@ -53,6 +53,7 @@ Guías reales de papelería personalizada para comercio local en Guadalajara y J
 - [Nosotros](https://studioyume.mx/nosotros): quiénes somos, cómo trabajamos, honestidad sobre reseñas (aún no tenemos testimonios publicados).
 - [Contacto](https://studioyume.mx/contacto): WhatsApp, correo, Instagram y cobertura de envío.
 - [Aviso de Privacidad](https://studioyume.mx/privacidad): qué datos recabamos y cómo los usamos.
+- [Política de Devoluciones y Cambios](https://studioyume.mx/politica-de-devoluciones): solo artículos defectuosos, dentro de las 48 horas posteriores a la llegada del paquete; el envío de regreso lo paga el cliente; devolución de dinero o reenvío del artículo.
 - [Cotizar por WhatsApp](https://api.whatsapp.com/send?phone=523334005135): forma principal de contacto y cotización.
 - [Pagar en línea](https://studioyume.mx/pago): checkout con Mercado Pago (tarjeta, cuenta Mercado Pago, transferencia SPEI y pago en efectivo en tiendas como OXXO).
 - [Instagram](https://www.instagram.com/studioyume.mx)

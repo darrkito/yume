@@ -37,6 +37,7 @@ export function Footer() {
   const aboutHref = lang === "en" ? "/en/about" : "/nosotros";
   const contactPageHref = lang === "en" ? "/en/contact" : "/contacto";
   const privacyHref = lang === "en" ? "/en/privacy" : "/privacidad";
+  const returnsHref = lang === "en" ? "/en/returns-policy" : "/politica-de-devoluciones";
 
   // Checkout keeps only the legal line: every other footer link is an exit
   // from the one step where the shopper is closest to paying.
@@ -45,9 +46,14 @@ export function Footer() {
       <footer className="border-t border-line bg-paper-raised">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-6 text-xs text-ink-soft">
           <p>© {new Date().getFullYear()} {SITE.name}. {t.securePayment}</p>
-          <Link href={privacyHref} className="inline-flex min-h-11 items-center transition-colors hover:text-brand">
-            {t.privacy}
-          </Link>
+          <div className="flex flex-wrap gap-x-6">
+            <Link href={returnsHref} className="inline-flex min-h-11 items-center transition-colors hover:text-brand">
+              {t.returnsPolicy}
+            </Link>
+            <Link href={privacyHref} className="inline-flex min-h-11 items-center transition-colors hover:text-brand">
+              {t.privacy}
+            </Link>
+          </div>
         </div>
       </footer>
     );
@@ -133,9 +139,14 @@ export function Footer() {
               {FOOTER_CREDIT[lang]}
             </a>
           </p>
-          <Link href={privacyHref} className="inline-flex min-h-11 items-center hover:text-brand transition-colors">
-            {t.privacy}
-          </Link>
+          <div className="flex flex-wrap gap-x-6">
+            <Link href={returnsHref} className="inline-flex min-h-11 items-center hover:text-brand transition-colors">
+              {t.returnsPolicy}
+            </Link>
+            <Link href={privacyHref} className="inline-flex min-h-11 items-center hover:text-brand transition-colors">
+              {t.privacy}
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

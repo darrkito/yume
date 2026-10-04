@@ -42,6 +42,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     { url: `${SITE.url}/privacidad`, changeFrequency: "yearly", priority: 0.3, alternates: withLanguages("/privacidad") },
     { url: `${SITE.url}/en/privacy`, changeFrequency: "yearly", priority: 0.2, alternates: withLanguages("/privacidad") },
+
+    { url: `${SITE.url}/politica-de-devoluciones`, changeFrequency: "yearly", priority: 0.3, lastModified: "2026-10-04", alternates: withLanguages("/politica-de-devoluciones") },
+    { url: `${SITE.url}/en/returns-policy`, changeFrequency: "yearly", priority: 0.2, lastModified: "2026-10-04", alternates: withLanguages("/politica-de-devoluciones") },
   ];
 
   for (const p of products) {

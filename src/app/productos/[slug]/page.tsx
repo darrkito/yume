@@ -61,12 +61,15 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       url: `${SITE.url}/productos/${product.slug}`,
       areaServed: { "@type": "Country", name: "México" },
       seller: { "@id": `${SITE.url}/#organization` },
-      // No hay devoluciones salvo defecto de fábrica — todos los productos
-      // son personalizados/hechos por pedido.
+      // Solo se aceptan devoluciones/cambios de artículos defectuosos (todo es
+      // hecho por pedido); detalle en /politica-de-devoluciones.
       hasMerchantReturnPolicy: {
         "@type": "MerchantReturnPolicy",
         returnPolicyCategory: "https://schema.org/MerchantReturnNotPermitted",
         applicableCountry: "MX",
+        // Defective items only: 48h from delivery, customer pays return shipping.
+        itemDefectReturnFees: "https://schema.org/ReturnShippingFees",
+        merchantReturnLink: `${SITE.url}/politica-de-devoluciones`,
       },
       shippingDetails: {
         "@type": "OfferShippingDetails",
