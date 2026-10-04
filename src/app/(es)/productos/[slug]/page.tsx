@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const product = getProduct(slug);
   if (!product) return {};
-  const title = product.name;
+  const title = product.metaTitle ?? product.name;
   const description = product.metaDescription ?? product.description;
   const ogImage = product.image ?? "/og-image.jpg";
   return {
@@ -51,7 +51,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
     name: product.name,
     description: product.description,
     category: product.category,
-    image: [`${SITE.url}${product.image ?? "/og-image.jpg"}`],
+    image: [...new Set([product.image ?? "/og-image.jpg", ...productPhotos(product.slug, "es").map((p) => p.src)])].map((src) => `${SITE.url}${src}`),
     brand: { "@type": "Brand", name: SITE.name },
     offers: {
       "@type": "Offer",

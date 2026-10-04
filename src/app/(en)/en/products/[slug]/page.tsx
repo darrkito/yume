@@ -55,7 +55,7 @@ export default async function ProductPageEn({ params }: { params: Promise<{ slug
     name: t.name,
     description: t.description,
     category: t.category,
-    image: [`${SITE.url}${product.image ?? "/og-image.jpg"}`],
+    image: [...new Set([product.image ?? "/og-image.jpg", ...productPhotos(product.slug, "en").map((p) => p.src)])].map((src) => `${SITE.url}${src}`),
     brand: { "@type": "Brand", name: SITE.name },
     offers: {
       "@type": "Offer",

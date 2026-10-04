@@ -52,6 +52,11 @@ export const generalFaq: FaqItem[] = [
     a: "Sí, $190 MXN a cualquier parte de México, pero es gratis en compras de $750 MXN o más. La recolección en Casa Blanca (Guadalajara) siempre cuesta $20 MXN, sin importar el monto de tu compra.",
     cta: { label: "Ver la tienda", href: "/productos" },
   },
+  {
+    q: "¿Aceptan devoluciones o cambios?",
+    a: "Solo en artículos defectuosos, porque todo se hace sobre pedido con tu diseño. Tienes 48 horas desde que llega tu paquete para avisarnos; el artículo se envía de regreso (el envío corre por tu cuenta) y eliges la devolución de tu dinero o el reenvío del artículo.",
+    cta: { label: "Ver la política de devoluciones", href: "/politica-de-devoluciones" },
+  },
 ];
 
 // Single source of truth for the 3 FAQ categories shown on the FAQ page and
@@ -60,8 +65,8 @@ export function getFaqCategories(): FaqCategory[] {
   return [
     { label: "Generales", items: generalFaq },
     { label: "Recetarios Médicos", items: getProduct("recetario-medico-personalizado")!.faq, href: "/productos/recetario-medico-personalizado" },
-    { label: "Etiquetas Logo Personalizado", items: getProduct("stickers-logo-personalizado")!.faq, href: "/productos/stickers-logo-personalizado" },
-    { label: "Stickers Vinil Impermeable", items: getProduct("stickers-vinil-impermeable")!.faq, href: "/productos/stickers-vinil-impermeable" },
+    { label: "Stickers y Etiquetas con tu Logo", items: getProduct("stickers-logo-personalizado")!.faq, href: "/productos/stickers-logo-personalizado" },
+    { label: "Stickers de Vinil Personalizados", items: getProduct("stickers-vinil-impermeable")!.faq, href: "/productos/stickers-vinil-impermeable" },
   ];
 }
 

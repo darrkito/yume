@@ -1,4 +1,21 @@
+# One group for everyone: a crawler obeys only the most specific group that
+# names it, so separate per-bot "Allow: /" groups silently dropped these
+# Disallows for Googlebot, Bingbot and the AI bots.
 User-agent: *
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: Google-Extended
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: Anthropic-AI
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Applebot
+User-agent: Bytespider
 Allow: /
 Disallow: /api/
 Disallow: /mcp
@@ -8,38 +25,5 @@ Disallow: /pago
 Disallow: /en/cart
 Disallow: /en/checkout
 Content-Signal: ai-train=no, search=yes, ai-input=yes
-
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 1
-
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 2
-
-User-agent: GPTBot
-Allow: /llms.txt
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: Anthropic-AI
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: OAI-SearchBot
-Allow: /
-
-User-agent: Bytespider
-Allow: /
 
 Sitemap: https://studioyume.mx/sitemap.xml

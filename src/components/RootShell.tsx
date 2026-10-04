@@ -3,13 +3,12 @@ import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 import { Playfair_Display, Karla } from "next/font/google";
-import "./globals.css";
+import "@/app/globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { TabBar } from "@/components/TabBar";
 import { TrackClicks } from "@/components/TrackClicks";
 import { LanguageBanner } from "@/components/LanguageBanner";
-import { HtmlLangSync } from "@/components/HtmlLangSync";
 import { WebMcpProvider } from "@/components/WebMcpProvider";
 import { CartProvider } from "@/components/CartContext";
 import { CartToast } from "@/components/CartToast";
@@ -29,13 +28,15 @@ const karla = Karla({
   display: "swap",
 });
 
-export const metadata: Metadata = {
+// Shared by both root layouts (app/(es) and app/(en)): with one root layout
+// per language, each route group renders its own <html lang> statically.
+export const rootMetadata: Metadata = {
   metadataBase: new URL(SITE.url),
-  title: { default: `${SITE.name}: ${SITE.tagline}`, template: `%s | ${SITE.name}` },
+  title: { default: SITE.homeTitle, template: `%s | ${SITE.name}` },
   description: SITE.description,
   alternates: { canonical: "/", languages: hreflangFor("/") },
   openGraph: {
-    title: `${SITE.name}: ${SITE.tagline}`,
+    title: SITE.homeTitle,
     description: SITE.description,
     type: "website",
     url: "/",
@@ -104,9 +105,9 @@ const websiteSchema = {
   publisher: { "@id": ORG_ID },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export function RootShell({ lang, children }: { lang: "es-MX" | "en"; children: React.ReactNode }) {
   return (
-    <html lang="es-MX">
+    <html lang={lang}>
       <body className={`${playfair.variable} ${karla.variable} font-sans antialiased`}>
         {/* Rendered <link>/<meta> tags are hoisted into <head> by Next.js — ARD's
             capability manifest discovery path, real resource (see .well-known/ai-catalog.json). */}
@@ -118,11 +119,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           href="#main"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-brand focus:px-5 focus:py-2.5 focus:text-sm focus:font-semibold focus:text-white"
         >
-          Saltar al contenido
+          {lang === "en" ? "Skip to content" : "Saltar al contenido"}
         </a>
         <CartProvider>
           <DesignFileProvider>
-            <HtmlLangSync />
             <WebMcpProvider />
             <Header />
             <LanguageBanner />

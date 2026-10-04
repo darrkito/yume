@@ -1,6 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Two root layouts ((es)/(en), one <html lang> each) need a global 404 for unmatched URLs.
+  experimental: { globalNotFound: true },
   images: {
     // AVIF first (smaller than WebP at the same quality); WebP as fallback.
     formats: ["image/avif", "image/webp"],

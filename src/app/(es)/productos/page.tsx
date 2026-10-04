@@ -11,9 +11,9 @@ import { UI } from "@/lib/i18n";
 import { pageMetadata, productSchema, breadcrumbSchema } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Tienda de papelería personalizada",
+  title: "Stickers, Etiquetas y Papelería Personalizada",
   description:
-    "Papelería y artículos personalizados de Yume: recetarios médicos, etiquetas y stickers de vinil (Hello Kitty, Pokémon, mascotas y más). Envíos a todo México.",
+    "Stickers de vinil, stickers y etiquetas con tu logo, recetarios médicos y placas NFC para reseñas. Hechos en Guadalajara, envíos a todo México.",
   path: "/productos",
 });
 
@@ -24,7 +24,7 @@ export default function ProductosPage() {
 
   return (
     <section className="mx-auto max-w-6xl px-6 py-16 sm:py-24">
-      <h1 className="animate-fade-up font-display text-4xl text-ink sm:text-5xl">Nuestros productos</h1>
+      <h1 className="animate-fade-up font-display text-4xl text-ink sm:text-5xl">Stickers, etiquetas y papelería personalizada</h1>
       <p className="animate-fade-up animate-fade-up-1 mt-4 max-w-lg text-sm leading-relaxed text-ink-soft">
         Cada pieza se produce sobre pedido y se personaliza contigo antes de imprimir.
       </p>

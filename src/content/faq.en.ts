@@ -35,6 +35,11 @@ export const generalFaqEn: FaqItem[] = [
     a: "Yes, $190 MXN anywhere in Mexico, but it's free on orders of $750 MXN or more. Pickup at Casa Blanca (Guadalajara) always costs $20 MXN, regardless of your order total.",
     cta: { label: "See the shop", href: "/en/products" },
   },
+  {
+    q: "Do you accept returns or exchanges?",
+    a: "Only for defective items, since everything is made to order with your design. You have 48 hours from when your package arrives to let us know; the item is shipped back (return shipping is on you) and you choose a refund or having the item sent again.",
+    cta: { label: "See the returns policy", href: "/en/returns-policy" },
+  },
 ];
 
 export function getFaqCategoriesEn(): FaqCategory[] {

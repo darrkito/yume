@@ -301,7 +301,7 @@ export const blogPosts: BlogPost[] = [
     category: "Guías",
     publishedAt: "2026-09-09",
     intro:
-      "Una de las peticiones que más vemos en Stickers Vinil Impermeable no es un logo ni un personaje de caricatura: es la foto de una mascota. Convertir a tu perro o gato en un sticker troquelado con su silueta es de los pedidos más comunes y más sencillos de cotizar. Así funciona el proceso.",
+      "Una de las peticiones que más vemos en Stickers de Vinil Personalizados no es un logo ni un personaje de caricatura: es la foto de una mascota. Convertir a tu perro o gato en un sticker troquelado con su silueta es de los pedidos más comunes y más sencillos de cotizar. Así funciona el proceso.",
     sections: [
       {
         heading: "Qué foto enviar",
@@ -425,7 +425,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Los números",
         body: [
           "Entre las imprentas mexicanas de stickers personalizados que revisamos, el precio por pieza va de $1.83 a $11.00 MXN, con mínimos de compra que van de $319 a $550 MXN: en algunos casos el mínimo real solo se alcanza comprando varias planillas completas de una vez.",
-          "Yume: Etiquetas Logo Personalizado: de $2.00 a $1.73 por pieza, mínimo $100 (50 piezas). Yume: Stickers Vinil Impermeable: de $2.50 a $2.36 por pieza, mínimo $100 (40 piezas).",
+          "Yume: Stickers y Etiquetas con tu Logo: de $2.00 a $1.73 por pieza, mínimo $100 (50 piezas). Yume: Stickers de Vinil Personalizados: de $2.50 a $2.36 por pieza, mínimo $100 (40 piezas).",
         ],
       },
       {
@@ -468,7 +468,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Por qué en Yume trabajamos solo vinil",
         body: [
-          "Nuestros dos productos de sticker (Etiquetas Logo Personalizado y Stickers Vinil Impermeable) están hechos en vinil premium con corte troquelado, no en papel. Preferimos ofrecer un solo material que sabemos que aguanta, en vez de una opción más barata que se ve bien al inicio pero se deteriora rápido.",
+          "Nuestros dos productos de sticker (Stickers y Etiquetas con tu Logo, y Stickers de Vinil Personalizados) están hechos en vinil premium con corte troquelado, no en papel. Preferimos ofrecer un solo material que sabemos que aguanta, en vez de una opción más barata que se ve bien al inicio pero se deteriora rápido.",
           "Así, sin importar si el sticker va en el empaque de tu marca, en tu laptop o en el paquete que le envías a un cliente, sabes que va a llegar y va a durar en las mismas condiciones.",
         ],
       },
@@ -774,7 +774,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Si tu marca es pequeña: entra sin comprometerte a un pedido grande",
         body: [
-          "Si apenas estás probando tu marca o vendes en bazares de forma ocasional, no tiene sentido comprar 500 piezas de una sola vez: es dinero inmovilizado en inventario que a lo mejor tarda meses en usarse. Por eso vendemos por cantidad de piezas y no por planilla completa: el mínimo son 50 piezas por $100 en Etiquetas Logo Personalizado, o 40 piezas por $100 en Stickers Vinil Impermeable.",
+          "Si apenas estás probando tu marca o vendes en bazares de forma ocasional, no tiene sentido comprar 500 piezas de una sola vez: es dinero inmovilizado en inventario que a lo mejor tarda meses en usarse. Por eso vendemos por cantidad de piezas y no por planilla completa: el mínimo son 50 piezas por $100 en Stickers y Etiquetas con tu Logo, o 40 piezas por $100 en Stickers de Vinil Personalizados.",
           "Son de los stickers más económicos en México para arrancar: puedes probar tu diseño, ver cómo reacciona la gente y ajustar antes de comprometerte a un volumen mayor.",
         ],
       },
@@ -912,7 +912,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Cuánto cuesta imprimir stickers personalizados",
         body: [
-          "En Yume se vende por cantidad de piezas, no por planilla: Etiquetas Logo Personalizado desde $100 (50 piezas) y Stickers Vinil Impermeable desde $100 (40 piezas), con precio mayoreo automático pasando las 100 piezas. Ver la comparación completa de precios contra otras imprentas mexicanas en la guía relacionada abajo.",
+          "En Yume se vende por cantidad de piezas, no por planilla: Stickers y Etiquetas con tu Logo desde $100 (50 piezas) y Stickers de Vinil Personalizados desde $100 (40 piezas), con precio mayoreo automático pasando las 100 piezas. Ver la comparación completa de precios contra otras imprentas mexicanas en la guía relacionada abajo.",
         ],
       },
     ],

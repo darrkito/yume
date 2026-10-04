@@ -20,6 +20,8 @@ export interface Product {
    * when unset. `description` doubles as the visible on-page paragraph, so
    * long ones need a separate, search-length-appropriate summary here. */
   metaDescription?: string;
+  /** SERP <title> when it should differ from the on-page name (H1). */
+  metaTitle?: string;
   details: string[];
   faq: { q: string; a: string }[];
   image?: string;
@@ -105,7 +107,8 @@ const VINYL_BASE_PRICE = tieredPrice(VINYL_TIERS, VINYL_TIERS.baseQty);
 export const products: Product[] = [
   {
     slug: "stickers-vinil-impermeable",
-    name: "Stickers Vinil Impermeable",
+    name: "Stickers de Vinil Personalizados",
+    metaTitle: "Stickers de Vinil Personalizados Impermeables",
     price: VINYL_BASE_PRICE,
     currency: "MXN",
     category: "Stickers de Vinil Personalizados",
@@ -141,8 +144,8 @@ export const products: Product[] = [
     requiresImage: true,
     faq: [
       {
-        q: "¿En qué se diferencian de las Etiquetas Logo Personalizado?",
-        a: "Es el mismo tipo de vinil, pero con distinto mínimo y escalón de precio: Etiquetas Logo Personalizado está pensado para el logo de tu negocio (desde 50 piezas), mientras que Stickers Vinil Impermeable es para cualquier diseño, personaje, mascota o foto que quieras convertir en sticker (desde 40 piezas).",
+        q: "¿En qué se diferencian de los Stickers y Etiquetas con tu Logo?",
+        a: "Es el mismo tipo de vinil, pero con distinto mínimo y escalón de precio: Stickers y Etiquetas con tu Logo está pensado para el logo de tu negocio (desde 50 piezas), mientras que Stickers de Vinil Personalizados es para cualquier diseño, personaje, mascota o foto que quieras convertir en sticker (desde 40 piezas).",
       },
       {
         q: "¿Puedo pedir stickers de mis personajes favoritos?",
@@ -168,10 +171,11 @@ export const products: Product[] = [
   },
   {
     slug: "stickers-logo-personalizado",
-    name: "Etiquetas Logo Personalizado",
+    name: "Stickers y Etiquetas con tu Logo",
+    metaTitle: "Stickers y Etiquetas con tu Logo Personalizados",
     price: STICKER_BASE_PRICE,
     currency: "MXN",
-    category: "Etiquetas personalizadas",
+    category: "Stickers y etiquetas personalizadas",
     variants: stickerVariants,
     tiers: STICKER_TIERS,
     showGallery: true,
@@ -184,9 +188,9 @@ export const products: Product[] = [
       { label: "Producción", value: "Sobre pedido" },
     ],
     description:
-      "Etiquetas personalizadas con tu logo o diseño, resistentes al agua. Se venden por cantidad de piezas, no por hoja: las primeras 100 piezas cuestan $200 ($2.00 c/u) y, entre más pidas, mejor: pasando las 100 entras a precio mayoreo y cada pieza extra te sale en $1.60, 20% menos. Envíanos tu imagen (o el diseño que quieras convertir en etiqueta) y te mandamos una prueba digital antes de imprimir.",
+      "Stickers y etiquetas personalizadas con tu logo o diseño, resistentes al agua: etiquetas para productos, etiquetas para empaques, bolsas y cajas de tu negocio. Se venden por cantidad de piezas, no por hoja: las primeras 100 piezas cuestan $200 ($2.00 c/u) y, entre más pidas, mejor: pasando las 100 entras a precio mayoreo y cada pieza extra te sale en $1.60, 20% menos. Envíanos tu imagen (o el diseño que quieras convertir en etiqueta) y te mandamos una prueba digital antes de imprimir.",
     metaDescription:
-      "Etiquetas personalizadas con tu logo, resistentes al agua. Primeras 100 piezas por $200 y precio mayoreo en cada pieza extra. Prueba digital antes de imprimir.",
+      "Stickers y etiquetas con tu logo para productos y empaques, resistentes al agua. Primeras 100 piezas por $200 y precio mayoreo en cada pieza extra.",
     details: [
       "Se venden por cantidad de piezas, mínimo 50",
       "Primeras 100 piezas: $200 ($2.00 c/u)",
@@ -195,7 +199,7 @@ export const products: Product[] = [
       "Resistentes al agua",
       "Imprimimos tu logo o el diseño que nos envíes",
       "Prueba digital antes de imprimir",
-      "Ideal para packaging, laptops, agendas, regalos",
+      "Ideal como etiquetas para productos y empaques, y para laptops, agendas y regalos",
     ],
     image: "/stickers-logo-muestra.webp",
     imageWidth: 900,

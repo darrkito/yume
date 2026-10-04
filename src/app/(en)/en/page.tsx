@@ -47,12 +47,12 @@ const HOW_IT_WORKS = [
 ];
 
 export const metadata: Metadata = {
-  title: { absolute: "Yume: Custom Creative Stationery" },
+  title: { absolute: "Custom Vinyl Stickers, Temporary Tattoos & Stationery | Yume" },
   description:
-    "Yume: custom stationery from Guadalajara, Jalisco: medical prescription pads and custom stickers, shipping across Mexico.",
+    "Custom vinyl stickers and logo stickers from $100 MXN, temporary tattoos and custom stationery. Made in Guadalajara, shipping across Mexico.",
   alternates: { canonical: "/en", languages: hreflangFor("/") },
   openGraph: {
-    title: "Yume: Custom Creative Stationery",
+    title: "Custom Vinyl Stickers, Temporary Tattoos & Stationery | Yume",
     description: "Custom stationery and personalized goods made to order from Guadalajara, Jalisco, shipping across all of Mexico.",
     type: "website",
     url: "/en",

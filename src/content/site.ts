@@ -3,8 +3,10 @@ export const SITE = {
   domain: "studioyume.mx",
   url: "https://studioyume.mx",
   tagline: "Papelería creativa y artículos personalizados",
+  /** Homepage SERP title: leads with the head terms Yume wants to rank for. */
+  homeTitle: "Stickers de Vinil, Tatuajes y Papelería Personalizada | Yume",
   description:
-    "Yume: papelería personalizada y placas NFC/QR para reseñas de Google desde Guadalajara, Jalisco, envíos a todo México.",
+    "Stickers de vinil y stickers con tu logo desde $100, tatuajes temporales y papelería personalizada. Hechos en Guadalajara, envíos a todo México.",
   whatsappNumber: "523334005135",
   email: "yume.studiomx@gmail.com",
   instagram: "https://www.instagram.com/studioyume.mx",
