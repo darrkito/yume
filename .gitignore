@@ -55,3 +55,7 @@ next-env.d.ts
 !.impeccable/live/config.json
 
 graphify-out/
+
+# Internal business docs (traffic data, competitors, account IDs): keep off the public repo.
+SEO-AUDIT-*.md
+MERCHANT-CENTER.md
