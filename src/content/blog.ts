@@ -1,3 +1,5 @@
+import { dulceroPosts } from "@/content/blog-dulceros";
+
 export interface BlogSection {
   heading: string;
   body: string[];
@@ -919,6 +921,8 @@ export const blogPosts: BlogPost[] = [
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
     relatedBlogSlugs: ["yume-vs-imprentas-online-stickers", "stickers-vinil-vs-papel-diferencias"],
   },
+  // Dulceros cluster lives in its own file (blog-dulceros.ts).
+  ...dulceroPosts,
 ];
 
 export function getBlogPost(slug: string) {

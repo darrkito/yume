@@ -12,6 +12,7 @@ export const PRODUCT_SLUG_EN: Record<string, string> = {
   "stickers-vinil-impermeable": "waterproof-vinyl-stickers",
   "placa-resena-google-nfc": "google-review-nfc-plate",
   "stand-resena-google-nfc": "google-review-nfc-stand",
+  "dulceros-personalizados": "personalized-party-favor-boxes",
 };
 
 export const BLOG_SLUG_EN: Record<string, string> = {
@@ -39,6 +40,17 @@ export const BLOG_SLUG_EN: Record<string, string> = {
   "stickers-para-bodas-eventos-y-fiestas": "stickers-for-weddings-events-and-parties",
   "tatuajes-temporales-para-boda-eventos-y-fiestas": "temporary-tattoos-for-weddings-events-and-parties",
   "donde-imprimir-stickers-personalizados-mexico": "where-to-print-custom-stickers-mexico",
+  "dulceros-personalizados-guadalajara": "personalized-party-favor-boxes-guadalajara",
+  "ideas-de-dulceros-para-fiesta-infantil": "kids-birthday-party-favor-box-ideas",
+  "dulceros-navidenos-personalizados": "personalized-christmas-treat-boxes",
+  "dulceros-para-dia-del-nino": "childrens-day-party-favor-boxes",
+  "dulceros-para-graduacion": "graduation-favor-boxes",
+  "dulceros-para-bautizo-y-primera-comunion": "baptism-and-first-communion-favor-boxes",
+  "dulceros-para-eventos-empresariales": "corporate-event-favor-boxes-with-logo",
+  "dulceros-para-eventos-sociales-boda-xv-baby-shower": "wedding-quinceanera-baby-shower-favor-boxes",
+  "que-poner-en-un-dulcero": "what-to-put-in-a-party-favor-box",
+  "dulceros-de-halloween": "personalized-halloween-treat-boxes",
+  "cajas-bolsas-o-vasos-dulceros-cual-elegir": "favor-boxes-vs-goodie-bags-vs-treat-cups",
 };
 
 export const PRODUCT_SLUG_ES: Record<string, string> = Object.fromEntries(
@@ -251,6 +263,7 @@ export const UI: Record<Lang, Record<string, string>> = {
     designNextStep: "Lo subes en el siguiente paso al pagar en línea (o lo adjuntas en el chat si cotizas por WhatsApp).",
     viewAndCustomize: "Ver y personalizar",
     cardTier: "Primeras {qty} piezas: {price}, luego precio mayoreo",
+    cardFlat: "{unit} c/u · mínimo {min} piezas",
     uploadLaterHint: "¿Aún no lo tienes a la mano? También puedes subirlo al pagar.",
     qtyMinNote: "El mínimo es {min} piezas, lo ajustamos.",
     qtyMaxNote: "El máximo en línea es {max} piezas. Para más, cotiza por WhatsApp.",
@@ -278,6 +291,7 @@ export const UI: Record<Lang, Record<string, string>> = {
     unitsLabel: "Cantidad",
     tierBase: "Primeras {qty} piezas: {price} MXN ({unit} c/u)",
     tierWholesale: "Precio mayoreo en más de {qty} piezas: cada pieza extra a {unit} ({pct}% menos)",
+    tierFlat: "{unit} MXN por pieza, mínimo {min} piezas: pide la cantidad exacta que necesitas",
     factShipping: "Envío nacional {national} · gratis desde {threshold}",
     factTiming: "Producción 3-5 días + envío 2-5 días",
     deliveryEstimate: "Si apruebas tu prueba hoy, lo recibes entre el {from} y el {to}",
@@ -445,6 +459,7 @@ export const UI: Record<Lang, Record<string, string>> = {
     designNextStep: "You'll upload it in the next step when paying online (or attach it in the chat if you request a quote on WhatsApp).",
     viewAndCustomize: "View & customize",
     cardTier: "First {qty} pieces: {price}, then wholesale pricing",
+    cardFlat: "{unit} each · minimum {min} pieces",
     uploadLaterHint: "Don't have it handy? You can also upload it at checkout.",
     qtyMinNote: "The minimum is {min} pieces, we adjusted it.",
     qtyMaxNote: "The online maximum is {max} pieces. For more, get a WhatsApp quote.",
@@ -472,6 +487,7 @@ export const UI: Record<Lang, Record<string, string>> = {
     unitsLabel: "Quantity",
     tierBase: "First {qty} pieces: {price} MXN ({unit} each)",
     tierWholesale: "Wholesale price over {qty} pieces: each extra piece at {unit} ({pct}% off)",
+    tierFlat: "{unit} MXN per piece, minimum {min} pieces: order the exact amount you need",
     factShipping: "Shipping within Mexico {national} · free from {threshold}",
     factTiming: "Production 3-5 days + shipping 2-5 days",
     deliveryEstimate: "If you approve your proof today, you get it between {from} and {to}",

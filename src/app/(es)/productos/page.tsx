@@ -13,7 +13,7 @@ import { pageMetadata, itemListSchema, breadcrumbSchema } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Stickers, Etiquetas y Papelería Personalizada",
   description:
-    "Stickers de vinil, stickers y etiquetas con tu logo, recetarios médicos y placas NFC para reseñas. Hechos en Guadalajara, envíos a todo México.",
+    "Stickers de vinil, etiquetas con tu logo, dulceros personalizados, recetarios médicos y placas NFC para reseñas. Hechos en Guadalajara, envíos a todo México.",
   path: "/productos",
 });
 
@@ -40,6 +40,7 @@ export default function ProductosPage() {
           <li><Link href="/productos/stickers-logo-personalizado" className="inline-flex min-h-11 items-center rounded-full border border-line bg-paper-raised px-5 text-sm font-semibold text-ink transition-colors hover:border-brand hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">Para tu marca</Link></li>
           <li><Link href="/productos/stickers-vinil-impermeable" className="inline-flex min-h-11 items-center rounded-full border border-line bg-paper-raised px-5 text-sm font-semibold text-ink transition-colors hover:border-brand hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">Para regalar</Link></li>
           <li><Link href="/productos/placa-resena-google-nfc" className="inline-flex min-h-11 items-center rounded-full border border-line bg-paper-raised px-5 text-sm font-semibold text-ink transition-colors hover:border-brand hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">Para tener más reseñas</Link></li>
+          <li><Link href="/productos/dulceros-personalizados" className="inline-flex min-h-11 items-center rounded-full border border-line bg-paper-raised px-5 text-sm font-semibold text-ink transition-colors hover:border-brand hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">Para tu fiesta o evento</Link></li>
         </ul>
       </nav>
 

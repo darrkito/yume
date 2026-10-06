@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { MessageCircle } from "lucide-react";
-import { hasVariants, productDisplayPrice, tieredPrice, type Product } from "@/content/products";
+import { hasVariants, hasWholesale, productDisplayPrice, tieredPrice, type Product } from "@/content/products";
 import { productsEn } from "@/content/products.en";
 import { ProductVisual } from "@/components/ProductVisual";
 import { AddToCartButton } from "@/components/AddToCartButton";
@@ -61,7 +61,9 @@ export function ProductCard({
         </p>
         {tiers && (
           <p className="mt-1 text-xs leading-relaxed text-ink-soft">
-            {t.cardTier.replace("{qty}", String(tiers.discountQty)).replace("{price}", formatMXN(tieredPrice(tiers, tiers.discountQty)))}
+            {hasWholesale(tiers)
+              ? t.cardTier.replace("{qty}", String(tiers.discountQty)).replace("{price}", formatMXN(tieredPrice(tiers, tiers.discountQty)))
+              : t.cardFlat.replace("{unit}", formatMXN(tiers.rate)).replace("{min}", String(tiers.baseQty))}
           </p>
         )}
         {!product.quickBuy && (

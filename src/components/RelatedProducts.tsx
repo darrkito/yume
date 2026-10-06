@@ -4,12 +4,13 @@ import { type Lang } from "@/lib/i18n";
 
 const MAX_ITEMS = 3;
 
-const AUDIENCE: Record<string, "clinic" | "brand"> = {
+const AUDIENCE: Record<string, "clinic" | "brand" | "party"> = {
   "recetario-medico-personalizado": "clinic",
   "stickers-logo-personalizado": "brand",
   "stickers-vinil-impermeable": "brand",
   "placa-resena-google-nfc": "brand",
   "stand-resena-google-nfc": "brand",
+  "dulceros-personalizados": "party",
 };
 
 // Cross-sell block reused on product pages (excludes the current product)

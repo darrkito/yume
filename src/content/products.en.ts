@@ -22,6 +22,10 @@ const vinylStickerVariantLabelsEn: Record<string, string> = Object.fromEntries(
   (getProduct("stickers-vinil-impermeable")?.variants ?? []).map((v) => [v.id, `${v.id} pieces`]),
 );
 
+const dulceroVariantLabelsEn: Record<string, string> = Object.fromEntries(
+  (getProduct("dulceros-personalizados")?.variants ?? []).map((v) => [v.id, `${v.id} pieces`]),
+);
+
 export const productsEn: Record<string, ProductTranslation> = {
   "recetario-medico-personalizado": {
     name: "Custom Medical Prescription Pads",
@@ -69,6 +73,62 @@ export const productsEn: Record<string, ProductTranslation> = {
       {
         q: "Is the paper suitable for official medical prescriptions?",
         a: "It's white bond paper, Half Letter size (14 × 21.5 cm), the most commonly used size for medical prescription pads in Mexico. If your office needs any additional specification (folio number, barcode, etc.), let us know when you request a quote.",
+      },
+    ],
+  },
+  "dulceros-personalizados": {
+    name: "Personalized Party Favor Boxes (Lunch Box Style)",
+    category: "Party favor boxes",
+    specs: [
+      { label: "Price", value: "$75 MXN per piece" },
+      { label: "Minimum order", value: "5 pieces" },
+      { label: "Size", value: "15.7 × 11.7 × 9.9 cm (6.2 × 4.6 × 3.9 in)" },
+      { label: "Material", value: "Opaline cardstock" },
+      { label: "Customization", value: "Name and theme" },
+      { label: "Delivery", value: "Assembled, ready to fill" },
+    ],
+    description:
+      "Personalized lunch-box-style party favor boxes: an opaline cardstock treat box with a handle, 15.7 × 11.7 × 9.9 cm (6.2 × 4.6 × 3.9 in), decorated with the name and theme you choose. For birthdays, kids' parties, baptisms, graduations, Christmas, social events and corporate events (with your logo). $75 MXN per piece, minimum order of 5, delivered assembled. We send you a digital proof of the design before production.",
+    metaDescription:
+      "Personalized lunch-box-style party favor boxes with a name and theme, opaline cardstock, delivered assembled. $75 MXN each, minimum 5. For parties, baptisms, graduations and corporate events.",
+    details: [
+      "$75 MXN per piece, minimum 5: order the exact number of guests",
+      "Lunch-box-style treat box with a handle, 15.7 × 11.7 × 9.9 cm",
+      "Opaline cardstock",
+      "Includes the name and theme you choose (or your company logo)",
+      "Delivered assembled, ready to fill",
+      "Digital proof of the design before production",
+      "For birthdays, kids' parties, baptisms, graduations, Christmas and corporate events",
+    ],
+    variantLabels: dulceroVariantLabelsEn,
+    faq: [
+      {
+        q: "How much do the personalized favor boxes cost?",
+        a: "$75 MXN per piece, with a minimum order of 5. For example, 10 boxes are $750 MXN (which already gets you free shipping across Mexico), 20 are $1,500 and 30 are $2,250.",
+      },
+      {
+        q: "What size is the box?",
+        a: "15.7 × 11.7 × 9.9 cm (6.2 × 4.6 × 3.9 inches), with a handle to carry it. It fits a good handful of candy, a small toy and a little extra.",
+      },
+      {
+        q: "What material is it?",
+        a: "Opaline cardstock: a smooth, sturdy cardstock that gives the print a clean finish.",
+      },
+      {
+        q: "What does the personalization include?",
+        a: "The name (the birthday child, the couple or your company) and the theme you choose: a character, colors, a sport, a Christmas style or your brand logo. We send you a digital proof to approve before production.",
+      },
+      {
+        q: "Do they arrive assembled?",
+        a: "Yes, they arrive assembled and ready to fill with candy or small gifts.",
+      },
+      {
+        q: "Do they work for corporate events?",
+        a: "Yes: with your company logo and colors they work for holiday parties, anniversaries, welcome kits, launches and client events.",
+      },
+      {
+        q: "How far ahead should I order?",
+        a: "Production takes 3 to 5 business days after you approve your digital proof, plus shipping (2 to 5 days), or 1 more business day if you pick up at a Casa Blanca branch in Guadalajara. For Christmas, Children's Day or graduations, order at least two weeks ahead.",
       },
     ],
   },

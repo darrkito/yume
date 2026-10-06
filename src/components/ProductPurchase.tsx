@@ -9,7 +9,7 @@ import { useDesignFiles } from "@/components/DesignFileContext";
 import { DesignSheet } from "@/components/DesignSheet";
 import { QtyInput } from "@/components/QtyInput";
 import { LogoUploadNote } from "@/components/LogoUploadNote";
-import { cartItemLabel, defaultVariantId, hasVariants, MAX_PIECES, pieceCount, piecesForAmount, resolvePrice, tieredPrice, wholesaleRate, type Product } from "@/content/products";
+import { cartItemLabel, defaultVariantId, hasVariants, hasWholesale, MAX_PIECES, pieceCount, piecesForAmount, resolvePrice, tieredPrice, wholesaleRate, type Product } from "@/content/products";
 import { cartItemLabelEn, getProductTranslation } from "@/content/products.en";
 import { waLink } from "@/content/site";
 import { CASABLANCA_PRICE, FREE_SHIPPING_THRESHOLD, NATIONAL_SHIPPING_PRICE } from "@/content/shipping";
@@ -154,7 +154,7 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
         <fieldset className="mt-5">
           <legend className="text-xs text-ink-soft">{t.chooseQuantity}</legend>
           <div className="mt-3 flex flex-wrap gap-2">
-            {[tiers.baseQty, tiers.discountQty, QUICK_PICK_MAX].map((n) => (
+            {(hasWholesale(tiers) ? [tiers.baseQty, tiers.discountQty, QUICK_PICK_MAX] : [tiers.baseQty, tiers.baseQty * 2, tiers.baseQty * 4]).map((n) => (
               <button
                 key={n}
                 type="button"
@@ -235,7 +235,15 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
         </fieldset>
       )}
 
-      {tiers && (
+      {tiers && !hasWholesale(tiers) && (
+        <div className="mt-3 rounded-xl bg-brand-tint px-4 py-3 text-sm">
+          <p className="text-ink">
+            {t.tierFlat.replace("{unit}", formatMXN(tiers.rate)).replace("{min}", String(tiers.baseQty))}
+          </p>
+        </div>
+      )}
+
+      {tiers && hasWholesale(tiers) && (
         <div className="mt-3 rounded-xl bg-brand-tint px-4 py-3 text-sm">
           <p className="text-ink">
             {t.tierBase

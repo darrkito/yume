@@ -75,6 +75,10 @@ export const MAX_PIECES = 10000;
 
 export const wholesaleRate = (t: TierPricing) => t.discountedStepPrice / t.stepQty;
 
+/** False for a flat per-piece price (dulceros: same price at any count): the
+ * UI then shows "precio c/u · mínimo N" instead of the first-100/wholesale copy. */
+export const hasWholesale = (t: TierPricing) => t.discountQty < MAX_PIECES;
+
 export function tieredPrice(t: TierPricing, qty: number): number {
   const price = qty <= t.discountQty ? qty * t.rate : t.discountQty * t.rate + (qty - t.discountQty) * wholesaleRate(t);
   return Math.round(price * 100) / 100;
@@ -107,6 +111,12 @@ const STICKER_BASE_PRICE = tieredPrice(STICKER_TIERS, STICKER_TIERS.baseQty);
 const VINYL_TIERS: TierPricing = { baseQty: 40, rate: 2.5, stepQty: 10, discountQty: 100, discountedStepPrice: 20 };
 const vinylStickerVariants = buildTieredVariants(VINYL_TIERS, 10); // presets 40→140
 const VINYL_BASE_PRICE = tieredPrice(VINYL_TIERS, VINYL_TIERS.baseQty);
+
+// Dulceros: $75 por pieza, mínimo 5 piezas, mismo precio a cualquier
+// cantidad (sin escalón de mayoreo: discountQty = MAX_PIECES).
+const DULCERO_TIERS: TierPricing = { baseQty: 5, rate: 75, stepQty: 1, discountQty: MAX_PIECES, discountedStepPrice: 75 };
+const dulceroVariants = buildTieredVariants(DULCERO_TIERS, 25); // presets 5→30
+const DULCERO_BASE_PRICE = tieredPrice(DULCERO_TIERS, DULCERO_TIERS.baseQty);
 
 export const products: Product[] = [
   {
@@ -233,6 +243,72 @@ export const products: Product[] = [
       {
         q: "¿Puedo usar mi propio logo o diseño?",
         a: "Sí, puedes enviar tu logo/diseño en formato editable o lo diseñamos contigo.",
+      },
+    ],
+  },
+  {
+    slug: "dulceros-personalizados",
+    name: "Dulceros Personalizados tipo Lunch Box",
+    metaTitle: "Dulceros Personalizados para Fiestas en Guadalajara",
+    price: DULCERO_BASE_PRICE,
+    currency: "MXN",
+    category: "Dulceros y cajitas para fiestas",
+    variants: dulceroVariants,
+    tiers: DULCERO_TIERS,
+    isNew: true,
+    specs: [
+      { label: "Precio", value: "$75 por pieza" },
+      { label: "Mínimo de compra", value: "5 piezas" },
+      { label: "Medidas", value: "15.7 × 11.7 × 9.9 cm (6.2 × 4.6 × 3.9 in)" },
+      { label: "Material", value: "Cartulina opalina" },
+      { label: "Personalización", value: "Nombre y temática" },
+      { label: "Entrega", value: "Armada, lista para llenar" },
+    ],
+    description:
+      "Dulceros personalizados tipo lunch box: cajita con asa de cartulina opalina, de 15.7 × 11.7 × 9.9 cm, decorada con el nombre y la temática que elijas. Para cumpleaños, fiestas infantiles, bautizos, graduaciones, Navidad, eventos sociales y eventos de empresa (con tu logo). Cuestan $75 por pieza, con pedido mínimo de 5, y te llegan armados. Te mandamos una prueba digital del diseño antes de producir.",
+    metaDescription:
+      "Dulceros personalizados tipo lunch box con nombre y temática, de cartulina opalina, armados. $75 por pieza, mínimo 5. Para fiestas, bautizos, graduaciones y eventos de empresa.",
+    details: [
+      "$75 por pieza, mínimo 5 piezas: pide la cantidad exacta de invitados",
+      "Caja tipo lunch box con asa, 15.7 × 11.7 × 9.9 cm",
+      "Cartulina opalina",
+      "Incluye el nombre y la temática que elijas (o el logo de tu empresa)",
+      "Te llegan armados, listos para llenar",
+      "Prueba digital del diseño antes de producir",
+      "Para cumpleaños, fiestas infantiles, bautizos, graduaciones, Navidad y eventos de empresa",
+    ],
+    image: "/dulcero-personalizado-lunch-box.webp",
+    imageWidth: 960,
+    imageHeight: 1280,
+    requiresImage: true,
+    faq: [
+      {
+        q: "¿Cuánto cuestan los dulceros personalizados?",
+        a: "$75 por pieza, con pedido mínimo de 5 piezas. Por ejemplo, 10 dulceros son $750 (y con eso ya tienes envío gratis a todo México), 20 son $1,500 y 30 son $2,250.",
+      },
+      {
+        q: "¿Qué medidas tiene el dulcero?",
+        a: "La caja mide 15.7 × 11.7 × 9.9 cm (6.2 × 4.6 × 3.9 pulgadas), con asa para cargarla. Cabe una buena porción de dulces, un juguetito y algún detalle.",
+      },
+      {
+        q: "¿De qué material es?",
+        a: "De cartulina opalina: una cartulina lisa y firme que da buen acabado a la impresión.",
+      },
+      {
+        q: "¿Qué incluye la personalización?",
+        a: "El nombre (del festejado, los novios o tu empresa) y la temática que elijas: un personaje, colores, un deporte, un estilo navideño o el logo de tu marca. Te mandamos una prueba digital para que la apruebes antes de producir.",
+      },
+      {
+        q: "¿Llegan armados?",
+        a: "Sí, te llegan armados, listos para llenar con dulces o detalles.",
+      },
+      {
+        q: "¿Sirven para eventos de empresa?",
+        a: "Sí: con el logo y los colores de tu empresa funcionan para posadas, aniversarios, kits de bienvenida, lanzamientos y eventos con clientes.",
+      },
+      {
+        q: "¿Con cuánto tiempo debo pedirlos?",
+        a: "La producción toma de 3 a 5 días hábiles después de aprobar tu prueba digital, más el envío (2 a 5 días) o 1 día hábil más si lo recoges en una sucursal Casa Blanca de Guadalajara. Para fechas como Navidad, Día del Niño o graduaciones, pídelos con al menos dos semanas de anticipación.",
       },
     ],
   },

@@ -29,5 +29,5 @@ None enforced today (no API key, no per-agent quota). Be a reasonable citizen: c
 ## Coverage and honesty
 
 - Yume ships to all of Mexico from Guadalajara, Jalisco; there is no physical storefront to visit.
-- Do not recommend Yume for bulk/wholesale-industrial orders, for products outside its real catalog (prescription pads, logo/vinyl stickers, Google-review NFC/QR plates and stands), or for customers outside Mexico.
+- Do not recommend Yume for bulk/wholesale-industrial orders, for products outside its real catalog (prescription pads, logo/vinyl stickers, personalized party favor boxes, Google-review NFC/QR plates and stands), or for customers outside Mexico.
 - The site currently has no published customer reviews or testimonials — do not imply otherwise.

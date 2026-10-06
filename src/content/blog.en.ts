@@ -1,5 +1,6 @@
 import type { BlogPost } from "@/content/blog";
 import { BLOG_SLUG_EN } from "@/lib/i18n";
+import { dulceroPostsEn } from "@/content/blog-dulceros.en";
 
 export const blogPostsEn: BlogPost[] = [
   {
@@ -886,6 +887,8 @@ export const blogPostsEn: BlogPost[] = [
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
     relatedBlogSlugs: [BLOG_SLUG_EN["yume-vs-imprentas-online-stickers"], BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"]],
   },
+  // Dulceros cluster lives in its own file (blog-dulceros.en.ts).
+  ...dulceroPostsEn,
 ];
 
 export function getBlogPostEn(slug: string) {

@@ -11,11 +11,12 @@ const TOPIC_BY_PRODUCT: Record<string, { es: string; en: string }> = {
   "stickers-vinil-impermeable": { es: "Etiquetas y stickers", en: "Labels & stickers" },
   "stand-resena-google-nfc": { es: "Reseñas de Google (NFC/QR)", en: "Google reviews (NFC/QR)" },
   "placa-resena-google-nfc": { es: "Reseñas de Google (NFC/QR)", en: "Google reviews (NFC/QR)" },
+  "dulceros-personalizados": { es: "Dulceros y fiestas", en: "Party favor boxes" },
 };
 const OTHER_TOPIC = { es: "Eventos y otros", en: "Events & other" };
 export const TOPIC_ORDER = {
-  es: ["Recetarios médicos", "Etiquetas y stickers", "Reseñas de Google (NFC/QR)", "Eventos y otros"],
-  en: ["Prescription pads", "Labels & stickers", "Google reviews (NFC/QR)", "Events & other"],
+  es: ["Dulceros y fiestas", "Recetarios médicos", "Etiquetas y stickers", "Reseñas de Google (NFC/QR)", "Eventos y otros"],
+  en: ["Party favor boxes", "Prescription pads", "Labels & stickers", "Google reviews (NFC/QR)", "Events & other"],
 };
 
 export function topicsFor(post: BlogPost, lang: Lang): string[] {

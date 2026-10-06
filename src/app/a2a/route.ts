@@ -30,7 +30,7 @@ function matchAnswerEs(text: string): string {
   const q = text.toLowerCase();
 
   if (/precio|cuesta|cuánto|costo/.test(q)) {
-    const list = products.map((p) => `${p.name}: $${p.price.toFixed(2)} MXN`).join(". ");
+    const list = products.map((p) => `${p.name}: $${p.price.toFixed(2)} MXN${p.tiers ? ` (${p.tiers.baseQty} piezas)` : ""}`).join(". ");
     return `Precios actuales: ${list}. Puedes ver el catálogo completo en ${SITE.url}/productos.`;
   }
 
@@ -80,6 +80,13 @@ function matchAnswerEs(text: string): string {
     return `${p.name}: $${p.price.toFixed(2)} MXN. ${p.description} Más info: ${SITE.url}/productos/${p.slug}. También puedes ver ejemplos reales en ${SITE.url}/galeria${petGuideNote}`;
   }
 
+  if (/dulcer|lunch ?box|cajita|fiesta|bolo/.test(q)) {
+    const p = products.find((prod) => prod.slug === "dulceros-personalizados");
+    return p
+      ? `${p.name}: $75 MXN por pieza, mínimo 5 piezas. ${p.description} Más info: ${SITE.url}/productos/${p.slug}`
+      : "No encontré ese producto en el catálogo.";
+  }
+
   if (/sticker|etiqueta/.test(q)) {
     const p = products.find((prod) => prod.slug === "stickers-logo-personalizado");
     return p
@@ -109,7 +116,7 @@ function matchAnswerEn(text: string): string {
   const q = text.toLowerCase();
 
   if (/price|cost|how much/.test(q)) {
-    const list = products.map((p) => `${productsEn[p.slug]?.name ?? p.name}: $${p.price.toFixed(2)} MXN`).join(". ");
+    const list = products.map((p) => `${productsEn[p.slug]?.name ?? p.name}: $${p.price.toFixed(2)} MXN${p.tiers ? ` (${p.tiers.baseQty} pieces)` : ""}`).join(". ");
     return `Current prices: ${list}. See the full catalog at ${SITE.url}/en/products.`;
   }
 
@@ -159,6 +166,14 @@ function matchAnswerEn(text: string): string {
       ? ` Dedicated pet-sticker guide: ${SITE.url}/en/blog/custom-pet-stickers`
       : "";
     return `${t.name}: $${p.price.toFixed(2)} MXN. ${t.description} More info: ${SITE.url}/en/products/waterproof-vinyl-stickers. See real examples at ${SITE.url}/en/gallery${petGuideNote}`;
+  }
+
+  if (/favou?r box|treat box|lunch ?box|goodie|party favou?r/.test(q)) {
+    const p = products.find((prod) => prod.slug === "dulceros-personalizados");
+    const t = p ? productsEn[p.slug] : undefined;
+    return p && t
+      ? `${t.name}: $75 MXN per piece, minimum 5. ${t.description} More info: ${SITE.url}/en/products/personalized-party-favor-boxes`
+      : "I couldn't find that product in the catalog.";
   }
 
   if (/sticker/.test(q)) {
