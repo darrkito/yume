@@ -14,6 +14,7 @@ import { cartItemLabelEn, getProductTranslation } from "@/content/products.en";
 import { waLink } from "@/content/site";
 import { CASABLANCA_PRICE, FREE_SHIPPING_THRESHOLD, NATIONAL_SHIPPING_PRICE } from "@/content/shipping";
 import { formatMXN } from "@/lib/format";
+import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import { UI, type Lang } from "@/lib/i18n";
 
 // Radio buttons read well for a couple of fulfillment options (recetario);
@@ -147,6 +148,15 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
           )}
         </>
       )}
+      {/* Text CTA right under the price so it is visible on the first phone screen. */}
+      <a
+        href={waLink(waMsg)}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-1 inline-flex min-h-11 items-center gap-1.5 text-sm font-semibold text-brand underline-offset-2 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+      >
+        <WhatsAppIcon size={16} /> {t.quoteWhatsapp}
+      </a>
 
       {tiers && pieces && (
         // Three one-tap amounts plus a typable stepper for anything else:

@@ -9,6 +9,7 @@ import { topicsFor } from "@/lib/blog-topics";
 import { hreflangFor } from "@/lib/i18n";
 import { BlogProductCard } from "@/components/BlogProductCard";
 import { BlogTable } from "@/components/BlogTable";
+import { BlogQuickFacts } from "@/components/BlogQuickFacts";
 import { blogPostingSchema, blogPostMetadata, breadcrumbSchema, notFoundMetadata } from "@/lib/seo";
 
 export function generateStaticParams() {
@@ -69,6 +70,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         )}
       </div>
       <h1 className="animate-fade-up animate-fade-up-1 mt-4 font-display text-3xl text-ink text-balance sm:text-4xl">{post.title}</h1>
+      <BlogQuickFacts post={post} lang="es" />
       <p className="animate-fade-up animate-fade-up-2 mt-4 text-sm leading-relaxed text-ink-soft">{post.intro}</p>
 
       <div className="mt-10 space-y-10">

@@ -55,11 +55,15 @@ export function TrackClicks() {
       if (!el) return;
       const tracked = el.closest<HTMLElement>("[data-track]")?.dataset.track;
       const href = el instanceof HTMLAnchorElement ? el.href : "";
-      if (tracked) return send(tracked, pathname);
-      if (href.includes("whatsapp.com")) {
-        tagWhatsAppLink(el as HTMLAnchorElement, pathname);
-        return send("wa_click", pathname);
+      const isWhatsApp = href.includes("whatsapp.com");
+      if (isWhatsApp) tagWhatsAppLink(el as HTMLAnchorElement, pathname);
+      if (tracked) {
+        send(tracked, pathname);
+        // A tracked WhatsApp link still counts as a WhatsApp click.
+        if (isWhatsApp) send("wa_click", pathname);
+        return;
       }
+      if (isWhatsApp) return send("wa_click", pathname);
       if (href && /^\/(pago|en\/checkout)$/.test(new URL(href).pathname)) return send("begin_checkout", pathname);
       if (el.closest(".tabbar")) return send(`tab_${(el.textContent ?? "").trim().toLowerCase()}`, pathname);
     };
