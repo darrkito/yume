@@ -284,7 +284,7 @@ export const dulceroPostsEn: BlogPost[] = [
       {
         heading: "Quantities and price",
         body: [
-          "Each box is $75 MXN with a minimum of 10 and no fixed packs: you can order 18 for a small team or 120 for the whole company. 40 boxes are $3,000 and 100 are $7,500, with free national shipping from $750.",
+          "Each box is $75 MXN with a minimum of 10 and no fixed packs: you can order 18 for a small team or 120 for the whole company. 40 boxes are $3,000 and 100 are $7,500, with free national shipping from $750. Note that we do not issue invoices (CFDI); if your company needs one, message us before ordering.",
           "For large orders, message us on WhatsApp before paying so we can confirm dates and any details of your event.",
         ],
       },

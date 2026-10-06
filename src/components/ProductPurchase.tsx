@@ -153,23 +153,45 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
         // one control for "how many", instead of a 12-row select AND a field.
         <fieldset className="mt-5">
           <legend className="text-xs text-ink-soft">{t.chooseQuantity}</legend>
-          <div className="mt-3 flex flex-wrap gap-2">
-            {(hasWholesale(tiers) ? [tiers.baseQty, tiers.discountQty, QUICK_PICK_MAX] : [tiers.baseQty, tiers.baseQty * 2, tiers.baseQty * 4]).map((n) => (
-              <button
-                key={n}
-                type="button"
-                aria-pressed={pieces === n}
-                onClick={() => setVariantId(String(n))}
-                className={`min-h-11 rounded-full border px-4 text-sm transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand ${
-                  pieces === n ? "border-brand bg-brand-tint font-semibold text-ink" : "border-line text-ink-soft hover:border-brand"
-                }`}
-              >
-                {n} {t.pieces}
-              </button>
-            ))}
-          </div>
+          {hasWholesale(tiers) ? (
+                      <div className="mt-3 flex flex-wrap gap-2">
+              {(hasWholesale(tiers) ? [tiers.baseQty, tiers.discountQty, QUICK_PICK_MAX] : [tiers.baseQty, tiers.baseQty * 2, tiers.baseQty * 4]).map((n) => (
+                <button
+                  key={n}
+                  type="button"
+                  aria-pressed={pieces === n}
+                  onClick={() => setVariantId(String(n))}
+                  className={`min-h-11 rounded-full border px-4 text-sm transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand ${
+                    pieces === n ? "border-brand bg-brand-tint font-semibold text-ink" : "border-line text-ink-soft hover:border-brand"
+                  }`}
+                >
+                  {n} {t.pieces}
+                </button>
+              ))}
+            </div>
+          ) : (
+            // Flat-price products (dulceros): presets in a select (10→200 by 10);
+            // any other count is typed below and shows as "Otra cantidad".
+            <select
+              aria-label={t.chooseQuantity}
+              value={product.variants?.some((v) => v.id === String(pieces)) ? String(pieces) : "custom"}
+              onChange={(e) => e.target.value !== "custom" && setVariantId(e.target.value)}
+              className="mt-3 min-h-11 w-full rounded-lg border border-line bg-paper px-4 text-sm text-ink focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/30 sm:w-auto"
+            >
+              {product.variants!.map((v) => (
+                <option key={v.id} value={v.id}>
+                  {v.id} {t.pieces} · {formatMXN(v.price)}
+                </option>
+              ))}
+              {!product.variants?.some((v) => v.id === String(pieces)) && (
+                <option value="custom">
+                  {lang === "en" ? "Other amount" : "Otra cantidad"}: {pieces} {t.pieces}
+                </option>
+              )}
+            </select>
+          )}
           <div className="mt-3 flex flex-wrap items-center gap-3">
-            <span className="text-sm text-ink-soft">{t.piecesLabel}</span>
+            <span className="text-sm text-ink-soft">{hasWholesale(tiers) ? t.piecesLabel : lang === "en" ? "Or type another amount" : "O escribe otra cantidad"}</span>
             <QtyInput
               value={pieces}
               min={tiers.baseQty}
@@ -183,6 +205,7 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
               maxNote={t.qtyMaxNote.replace("{max}", String(MAX_PIECES))}
             />
           </div>
+          {pieces >= 100 && <p className="mt-3 max-w-md text-xs leading-relaxed text-ink-soft">{t.bigOrderNote}</p>}
         </fieldset>
       )}
 

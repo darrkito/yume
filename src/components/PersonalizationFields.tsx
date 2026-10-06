@@ -4,6 +4,7 @@ import { fieldsFor, MAX_NOTE_LENGTH, type PersonalizationInput } from "@/content
 import type { CartItem } from "@/components/CartContext";
 import { getProduct } from "@/content/products";
 import { productsEn } from "@/content/products.en";
+import { estimateCasablancaPickup, estimateNationalDelivery, type DeliveryMethod } from "@/content/shipping";
 import type { Lang } from "@/lib/i18n";
 
 const FIELD_CLASS =
@@ -25,6 +26,7 @@ export function PersonalizationFields({
   note,
   onNoteChange,
   lang,
+  method,
 }: {
   items: CartItem[];
   values: PersonalizationInput;
@@ -32,8 +34,17 @@ export function PersonalizationFields({
   note: string;
   onNoteChange: (v: string) => void;
   lang: Lang;
+  method: DeliveryMethod | null;
 }) {
   const t = COPY[lang];
+  // Latest realistic arrival if the proof is approved today (worst case:
+  // national shipping until the buyer picks a method). Estimate only.
+  const arrival = (method === "recoleccion_casablanca" ? estimateCasablancaPickup(new Date()) : estimateNationalDelivery(new Date())).to;
+  const fmt = (d: Date) => d.toLocaleDateString(lang === "en" ? "en-US" : "es-MX", { weekday: "short", day: "numeric", month: "short" });
+  const tooLate = (iso: string) => {
+    const event = new Date(`${iso}T23:59:59`);
+    return !Number.isNaN(event.getTime()) && event < arrival;
+  };
   const blocks = [...new Set(items.map((i) => i.slug))]
     .map((slug) => ({ slug, fields: fieldsFor(slug, items.filter((i) => i.slug === slug).map((i) => i.variantId)) }))
     .filter((b) => b.fields.length > 0);
@@ -74,6 +85,13 @@ export function PersonalizationFields({
                           {...common}
                           onChange={(e) => onChange(slug, f.id, e.target.value)}
                         />
+                      )}
+                      {f.type === "date" && values[slug]?.[f.id] && tooLate(values[slug][f.id]) && (
+                        <p role="status" className="mt-1.5 text-xs font-medium text-brand-deep">
+                          {lang === "en"
+                            ? `Heads up: with production and delivery your order could arrive as late as ${fmt(arrival)} (estimate, if you approve the proof today). Message us on WhatsApp and we will see if we can speed it up.`
+                            : `Ojo: con producción y entrega tu pedido podría llegar hasta el ${fmt(arrival)} (estimado, si apruebas la prueba hoy). Escríbenos por WhatsApp y vemos si se puede acelerar.`}
+                        </p>
                       )}
                     </div>
                   );

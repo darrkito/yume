@@ -48,6 +48,22 @@ assert.throws(() => validateCartItems([{ slug: "recetario-medico-personalizado",
 const [nl] = validateCartItems(dulcero, { personalization: { "dulceros-personalizados": { name: "a", theme: "b" } }, note: "  fiesta el 12  " });
 assert.equal(nl.personalization!.at(-1)!.value, "fiesta el 12");
 
+// language: stored on the first line; errors translated for English shoppers
+const { localizeError } = await import("../src/lib/errors");
+assert.equal(validateCartItems(dulcero, { personalization: { "dulceros-personalizados": { name: "a", theme: "b" } }, lang: "en" })[0].locale, "en");
+assert.equal(validateCartItems(dulcero, { personalization: { "dulceros-personalizados": { name: "a", theme: "b" } } })[0].locale, undefined);
+assert.equal(localizeError("El correo no es válido.", "en"), "The email address is not valid.");
+assert.equal(localizeError("El correo no es válido.", "es"), "El correo no es válido.");
+assert.ok(!/[áéíóú¿]/i.test(localizeError("Algo raro que no conocemos", "en")), "unknown errors must not leak Spanish");
+
+// opt-out links: only the signed one works
+process.env.CRON_SECRET = "test-secret";
+const { unsubscribeUrl, validUnsubscribe } = await import("../src/lib/unsubscribe");
+const url = new URL(unsubscribeUrl("Maria@Example.com")!);
+assert.ok(validUnsubscribe(url.searchParams.get("e")!, url.searchParams.get("t")!));
+assert.ok(!validUnsubscribe("other@example.com", url.searchParams.get("t")!));
+assert.ok(!validUnsubscribe("maria@example.com", "deadbeef"));
+
 console.log("check-checkout-validation: ok");
 }
 main();

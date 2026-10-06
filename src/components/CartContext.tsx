@@ -1,5 +1,6 @@
 "use client";
 
+import { getProduct, isValidVariant, resolvePrice } from "@/content/products";
 import { createContext, useContext, useCallback, useEffect, useMemo, useState, useSyncExternalStore } from "react";
 
 export interface CartItem {
@@ -26,11 +27,16 @@ interface CartContextValue {
   /** Most recent add, for the confirmation toast. `id` changes on every add. */
   lastAdded: { id: number; name: string } | null;
   dismissAdded: () => void;
+  /** Set when saved lines were repriced or dropped against today's catalog. */
+  cartNotice: { changed: string[]; removed: string[] } | null;
+  dismissNotice: () => void;
 }
 
 const CartContext = createContext<CartContextValue | null>(null);
 
 const STORAGE_KEY = "yume_cart_v1";
+// Most units of one line; per-piece products carry their count in variantId instead.
+const MAX_LINE_QTY = 999;
 
 // The cart is persisted to localStorage and read/written outside of React
 // state — useSyncExternalStore is the pattern React recommends for this
@@ -69,7 +75,18 @@ function getServerSnapshot(): CartItem[] {
 
 function subscribe(callback: () => void) {
   listeners.add(callback);
-  return () => listeners.delete(callback);
+  // Another tab changed the cart: pick it up instead of overwriting it later.
+  const onStorage = (e: StorageEvent) => {
+    if (e.key !== STORAGE_KEY) return;
+    cachedItems = readFromStorage();
+    cachedInitialized = true;
+    callback();
+  };
+  window.addEventListener("storage", onStorage);
+  return () => {
+    listeners.delete(callback);
+    window.removeEventListener("storage", onStorage);
+  };
 }
 
 function setItems(updater: (prev: CartItem[]) => CartItem[]) {
@@ -86,16 +103,17 @@ function setItems(updater: (prev: CartItem[]) => CartItem[]) {
 export function CartProvider({ children }: { children: React.ReactNode }) {
   const items = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
   const [lastAdded, setLastAdded] = useState<CartContextValue["lastAdded"]>(null);
+  const [cartNotice, setCartNotice] = useState<CartContextValue["cartNotice"]>(null);
 
   const addItem = useCallback((item: Omit<CartItem, "qty">, qty = 1) => {
     setItems((prev) => {
       const existing = prev.find((i) => i.slug === item.slug && i.variantId === item.variantId);
       if (existing) {
         return prev.map((i) =>
-          i.slug === item.slug && i.variantId === item.variantId ? { ...i, qty: i.qty + qty } : i,
+          i.slug === item.slug && i.variantId === item.variantId ? { ...i, qty: Math.min(MAX_LINE_QTY, i.qty + qty) } : i,
         );
       }
-      return [...prev, { ...item, qty }];
+      return [...prev, { ...item, qty: Math.min(MAX_LINE_QTY, qty) }];
     });
     setLastAdded({ id: Date.now(), name: item.name });
   }, []);
@@ -130,6 +148,32 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const clear = useCallback(() => setItems(() => []), []);
+  const dismissNotice = useCallback(() => setCartNotice(null), []);
+
+  // A saved cart keeps the prices from the day lines were added. Reprice each
+  // line against today's catalog and drop products that no longer exist, and
+  // say so, instead of letting the server reject the order at payment time.
+  useEffect(() => {
+    const changed: string[] = [];
+    const removed: string[] = [];
+    const next = getSnapshot().flatMap((i) => {
+      const product = getProduct(i.slug);
+      if (!product || !isValidVariant(product, i.variantId)) {
+        removed.push(i.name);
+        return [];
+      }
+      const price = resolvePrice(product, i.variantId);
+      if (price === i.price) return [i];
+      changed.push(i.name);
+      return [{ ...i, price }];
+    });
+    if (changed.length || removed.length) {
+      setItems(() => next);
+      // One-shot reaction to the cart's post-hydration state.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setCartNotice({ changed, removed });
+    }
+  }, []);
 
   // Paid in Mercado Pago's page and closed the tab without coming back: the
   // cart would still be full, inviting a second order. If the last order sent
@@ -157,7 +201,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   const total = useMemo(() => items.reduce((sum, i) => sum + i.qty * i.price, 0), [items]);
 
   return (
-    <CartContext.Provider value={{ items, addItem, replaceLine, removeItem, updateQty, clear, count, total, lastAdded, dismissAdded }}>
+    <CartContext.Provider value={{ items, addItem, replaceLine, removeItem, updateQty, clear, count, total, lastAdded, dismissAdded, cartNotice, dismissNotice }}>
       {children}
     </CartContext.Provider>
   );

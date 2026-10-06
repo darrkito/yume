@@ -74,6 +74,10 @@ export const productsEn: Record<string, ProductTranslation> = {
         q: "Is the paper suitable for official medical prescriptions?",
         a: "It's white bond paper, Half Letter size (14 × 21.5 cm), the most commonly used size for medical prescription pads in Mexico. If your office needs any additional specification (folio number, barcode, etc.), let us know when you request a quote.",
       },
+      {
+        q: "Do you issue invoices?",
+        a: "We do not issue invoices (CFDI). Your receipt is the order confirmation email. If you need one for your office or clinic, message us on WhatsApp before paying.",
+      },
     ],
   },
   "dulceros-personalizados": {
@@ -133,6 +137,10 @@ export const productsEn: Record<string, ProductTranslation> = {
       {
         q: "How far ahead should I order?",
         a: "Production takes 3 to 5 business days after you approve your digital proof, plus shipping (2 to 5 days), or 1 more business day if you pick up at a Casa Blanca branch in Guadalajara. For Christmas, Children's Day or graduations, order at least two weeks ahead.",
+      },
+      {
+        q: "Do you issue invoices?",
+        a: "We do not issue invoices (CFDI). Your receipt is the order confirmation email. If this is for your company and you need an invoice, message us on WhatsApp before paying.",
       },
     ],
   },

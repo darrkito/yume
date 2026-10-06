@@ -75,7 +75,8 @@ export function ShippingForm({
   useEffect(() => {
     onMethodChange?.(deliveryMethod);
   }, [deliveryMethod, onMethodChange]);
-  const [branchId, setBranchId] = useState(branches[0].id);
+  // No default: the shopper picks the branch on purpose.
+  const [branchId, setBranchId] = useState("");
   const [values, setValues] = useState<typeof EMPTY_VALUES>(() => ({ ...EMPTY_VALUES, ...readDraft() }));
 
   // Draft survives a reload or coming back from Mercado Pago (never any card
@@ -228,19 +229,36 @@ export function ShippingForm({
         </div>
 
         {deliveryMethod === "recoleccion_casablanca" && (
-          <div className="mt-4">
-            <label className={LABEL_CLASS} htmlFor="casablanca-branch">
-              {t.chooseBranch}
-            </label>
-            <select id="casablanca-branch" required className={FIELD_CLASS} value={branchId} onChange={(e) => setBranchId(e.target.value)}>
-              {branches.map((b) => (
-                <option key={b.id} value={b.id}>
-                  {b.name} · {b.address}
-                </option>
+          <fieldset className="mt-4">
+            <legend className={LABEL_CLASS}>{t.chooseBranch}</legend>
+            <div className="grid gap-2">
+              {branches.map((b, i) => (
+                <label
+                  key={b.id}
+                  className={`flex min-h-11 cursor-pointer items-start gap-3 rounded-xl border p-3 text-sm transition-colors ${
+                    branchId === b.id ? "border-brand bg-brand-tint" : "border-line bg-paper hover:border-brand"
+                  }`}
+                >
+                  <input
+                    type="radio"
+                    name="casablanca-branch"
+                    value={b.id}
+                    required={i === 0}
+                    checked={branchId === b.id}
+                    onChange={() => setBranchId(b.id)}
+                    className="mt-1 size-4 accent-brand"
+                  />
+                  <span>
+                    <span className="block font-semibold text-ink">{b.name}</span>
+                    <span className="block text-xs text-ink-soft">{b.address}</span>
+                    <span className="block text-xs text-ink-soft">{b.hours}</span>
+                  </span>
+                </label>
               ))}
-            </select>
-            <p className="mt-2 text-xs leading-relaxed text-ink-soft">{t.casablancaNote}</p>
-          </div>
+            </div>
+            <p className="mt-3 text-xs leading-relaxed text-ink-soft">{t.casablancaNote}</p>
+            {nationalShippingCost === 0 && <p className="mt-2 text-xs leading-relaxed text-ink-soft">{t.casablancaFeeNote}</p>}
+          </fieldset>
         )}
       </div>
 

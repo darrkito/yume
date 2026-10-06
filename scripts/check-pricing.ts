@@ -29,6 +29,9 @@ assert.equal(dulcero.price, 750); // 10 pieces, the "Desde" price
 assert.equal(resolvePrice(dulcero, "10"), 750);
 assert.equal(resolvePrice(dulcero, "13"), 975);
 assert.equal(resolvePrice(dulcero, "200"), 15000);
+assert.equal(dulcero.variants!.length, 20); // presets 10..200 by 10
+assert.equal(dulcero.variants!.at(-1)!.id, "200");
+assert.equal(resolvePrice(dulcero, "13"), 975); // custom counts stay valid
 assert.equal(isValidVariant(dulcero, "9"), false);
 const [dLine] = validateCartItems([{ slug: dulcero.slug, qty: 1, variantId: "12", price: 1 }], {
   personalization: { [dulcero.slug]: { name: "Sofía", theme: "Unicornios" } }, // required for dulceros

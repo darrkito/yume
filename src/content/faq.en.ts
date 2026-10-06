@@ -40,6 +40,10 @@ export const generalFaqEn: FaqItem[] = [
     a: "Only for defective items, since everything is made to order with your design. You have 48 hours from when your package arrives to let us know; the item is shipped back (return shipping is on you) and you choose a refund or having the item sent again.",
     cta: { label: "See the returns policy", href: "/en/returns-policy" },
   },
+  {
+    q: "Do you issue invoices?",
+    a: "We do not issue invoices (CFDI). Your receipt is the order confirmation email. If your company needs an invoice, message us on WhatsApp before paying so we can look at it with you.",
+  },
 ];
 
 export function getFaqCategoriesEn(): FaqCategory[] {

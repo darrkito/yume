@@ -93,9 +93,9 @@ export function piecesForAmount(t: TierPricing, amount: number): number {
 
 // Dropdown presets only: any whole piece count in [baseQty, MAX_PIECES] is
 // also valid (see pieceCount), typed on the product page or in the cart.
-function buildTieredVariants(t: TierPricing, presets: number): ProductVariant[] {
+function buildTieredVariants(t: TierPricing, presets: number, presetStep = t.stepQty): ProductVariant[] {
   return Array.from({ length: presets + 1 }, (_, step) => {
-    const qty = t.baseQty + step * t.stepQty;
+    const qty = t.baseQty + step * presetStep;
     return { id: String(qty), label: `${qty} piezas`, price: tieredPrice(t, qty), default: step === 0 };
   });
 }
@@ -115,7 +115,7 @@ const VINYL_BASE_PRICE = tieredPrice(VINYL_TIERS, VINYL_TIERS.baseQty);
 // Dulceros: $75 por pieza, mínimo 10 piezas, mismo precio a cualquier
 // cantidad (sin escalón de mayoreo: discountQty = MAX_PIECES).
 const DULCERO_TIERS: TierPricing = { baseQty: 10, rate: 75, stepQty: 1, discountQty: MAX_PIECES, discountedStepPrice: 75 };
-const dulceroVariants = buildTieredVariants(DULCERO_TIERS, 20); // presets 10→30
+const dulceroVariants = buildTieredVariants(DULCERO_TIERS, 19, 10); // presets 10→200 by 10; any count ≥ 10 can be typed
 const DULCERO_BASE_PRICE = tieredPrice(DULCERO_TIERS, DULCERO_TIERS.baseQty);
 
 export const products: Product[] = [
@@ -314,6 +314,10 @@ export const products: Product[] = [
         q: "¿Con cuánto tiempo debo pedirlos?",
         a: "La producción toma de 3 a 5 días hábiles después de aprobar tu prueba digital, más el envío (2 a 5 días) o 1 día hábil más si lo recoges en una sucursal Casa Blanca de Guadalajara. Para fechas como Navidad, Día del Niño o graduaciones, pídelos con al menos dos semanas de anticipación.",
       },
+      {
+        q: "¿Emiten factura?",
+        a: "No emitimos factura (CFDI). Tu comprobante es el correo de confirmación del pedido. Si es para tu empresa y necesitas factura, escríbenos por WhatsApp antes de pagar.",
+      },
     ],
   },
   {
@@ -495,6 +499,10 @@ export const products: Product[] = [
       {
         q: "¿El recetario se produce sin mi aprobación?",
         a: "No, cada pieza se aprueba contigo antes de producirse.",
+      },
+      {
+        q: "¿Emiten factura?",
+        a: "No emitimos factura (CFDI). Tu comprobante es el correo de confirmación del pedido. Si la necesitas para tu consultorio o clínica, escríbenos por WhatsApp antes de pagar.",
       },
     ],
   },

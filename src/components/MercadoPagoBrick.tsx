@@ -1,10 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { initMercadoPago, Payment } from "@mercadopago/sdk-react";
 import { Loader2, Store, XCircle } from "lucide-react";
 import { useCart } from "@/components/CartContext";
 import type { CartItem } from "@/components/CartContext";
+import { formatMXN } from "@/lib/format";
 import { ReceiptPrinter } from "@/components/ReceiptPrinter";
 import type { DesignFileUpload } from "@/components/CheckoutView";
 import type { Customer, DeliveryInfo } from "@/lib/orders";
@@ -13,7 +14,7 @@ import type { Lang } from "@/lib/i18n";
 
 type Result =
   | { kind: "approved" }
-  | { kind: "cash"; ticketUrl?: string }
+  | { kind: "cash"; ticketUrl?: string; orderNumber?: string; expiresAt?: string; reference?: string; amount?: number; method?: string }
   | { kind: "pending" }
   | { kind: "error"; message: string };
 
@@ -30,6 +31,13 @@ const COPY: Record<
     pendingBody: string;
     genericError: string;
     rejected: string;
+    loading: string;
+    voucherOrder: string;
+    voucherAmount: string;
+    voucherExpires: string;
+    voucherReference: string;
+    voucherKeep: string;
+    rejectedBy: Record<string, string>;
   }
 > = {
   es: {
@@ -42,7 +50,24 @@ const COPY: Record<
     pendingTitle: "Pago en revisión",
     pendingBody: "Te avisaremos por WhatsApp o correo en cuanto se confirme.",
     genericError: "Error al procesar el pago.",
-    rejected: "El pago fue rechazado. Intenta con otro medio de pago.",
+    rejected: "El pago fue rechazado. Intenta con otra tarjeta o paga en efectivo (OXXO).",
+    loading: "Cargando medios de pago…",
+    voucherOrder: "Pedido",
+    voucherAmount: "Monto a pagar",
+    voucherExpires: "Vence",
+    voucherReference: "Referencia",
+    voucherKeep: "Guarda esta información o abre la ficha para pagar en la tienda.",
+    rejectedBy: {
+      cc_rejected_insufficient_amount: "Tu tarjeta no tiene fondos suficientes. Prueba con otra tarjeta o paga en efectivo (OXXO).",
+      cc_rejected_bad_filled_card_number: "El número de tarjeta no es correcto. Revísalo e inténtalo de nuevo.",
+      cc_rejected_bad_filled_date: "La fecha de vencimiento no es correcta. Revísala e inténtalo de nuevo.",
+      cc_rejected_bad_filled_security_code: "El código de seguridad no es correcto. Revísalo e inténtalo de nuevo.",
+      cc_rejected_bad_filled_other: "Revisa los datos de tu tarjeta e inténtalo de nuevo.",
+      cc_rejected_call_for_authorize: "Tu banco necesita autorizar este pago: llámales o prueba con otra tarjeta.",
+      cc_rejected_card_disabled: "Tu tarjeta está inactiva. Actívala con tu banco o usa otra.",
+      cc_rejected_duplicated_payment: "Ya hiciste un pago igual hace un momento. Revisa tu correo antes de intentarlo otra vez.",
+      cc_rejected_max_attempts: "Llegaste al máximo de intentos con esta tarjeta. Usa otra o paga en efectivo (OXXO).",
+    },
   },
   en: {
     notConfigured: 'Online payment isn\'t set up yet. Use "Quote via WhatsApp" in the meantime.',
@@ -54,7 +79,24 @@ const COPY: Record<
     pendingTitle: "Payment under review",
     pendingBody: "We'll let you know via WhatsApp or email as soon as it's confirmed.",
     genericError: "Error processing the payment.",
-    rejected: "The payment was declined. Try another payment method.",
+    rejected: "The payment was declined. Try another card or pay with cash (OXXO).",
+    loading: "Loading payment methods…",
+    voucherOrder: "Order",
+    voucherAmount: "Amount to pay",
+    voucherExpires: "Expires",
+    voucherReference: "Reference",
+    voucherKeep: "Keep this information or open the voucher to pay at the store.",
+    rejectedBy: {
+      cc_rejected_insufficient_amount: "Your card has insufficient funds. Try another card or pay with cash (OXXO).",
+      cc_rejected_bad_filled_card_number: "The card number is not correct. Check it and try again.",
+      cc_rejected_bad_filled_date: "The expiration date is not correct. Check it and try again.",
+      cc_rejected_bad_filled_security_code: "The security code is not correct. Check it and try again.",
+      cc_rejected_bad_filled_other: "Check your card details and try again.",
+      cc_rejected_call_for_authorize: "Your bank needs to authorize this payment: call them or try another card.",
+      cc_rejected_card_disabled: "Your card is inactive. Activate it with your bank or use another one.",
+      cc_rejected_duplicated_payment: "You already made the same payment a moment ago. Check your email before trying again.",
+      cc_rejected_max_attempts: "You reached the maximum attempts with this card. Use another or pay with cash (OXXO).",
+    },
   },
 };
 
@@ -82,6 +124,10 @@ export function MercadoPagoBrick({
   const { clear } = useCart();
   const [ready, setReady] = useState(false);
   const [result, setResult] = useState<Result | null>(null);
+  const [brickReady, setBrickReady] = useState(false);
+  // A rejected submit is reported with its own message; the Brick then also
+  // fires onError, which must not overwrite it.
+  const submitFailed = useRef(false);
   // `items`/`total` are props from the parent's live cart — once clear()
   // runs, the parent re-renders and hands this component fresh (now
   // empty) props on the next render. Snapshot them here, at the moment
@@ -125,12 +171,42 @@ export function MercadoPagoBrick({
   }
 
   if (result?.kind === "cash") {
+    const expires = result.expiresAt
+      ? new Date(result.expiresAt).toLocaleString(lang === "en" ? "en-US" : "es-MX", { dateStyle: "long", timeStyle: "short" })
+      : null;
     return (
       <div className="flex items-start gap-3 rounded-xl border border-line bg-paper-raised p-5">
         <Store size={20} className="mt-0.5 shrink-0 text-brand" />
         <div>
           <p className="font-display text-lg text-ink">{c.cashTitle}</p>
           <p className="mt-1 text-sm text-ink-soft">{c.cashBody}</p>
+          <dl className="mt-4 grid grid-cols-[auto_1fr] gap-x-4 gap-y-1.5 text-sm">
+            {result.orderNumber && (
+              <>
+                <dt className="text-ink-soft">{c.voucherOrder}</dt>
+                <dd className="font-medium text-ink">#{result.orderNumber}</dd>
+              </>
+            )}
+            {result.amount != null && (
+              <>
+                <dt className="text-ink-soft">{c.voucherAmount}</dt>
+                <dd className="font-medium text-ink">{formatMXN(result.amount)} MXN</dd>
+              </>
+            )}
+            {expires && (
+              <>
+                <dt className="text-ink-soft">{c.voucherExpires}</dt>
+                <dd className="font-medium text-ink">{expires}</dd>
+              </>
+            )}
+            {result.reference && (
+              <>
+                <dt className="text-ink-soft">{c.voucherReference}</dt>
+                <dd className="font-mono font-medium text-ink">{result.reference}</dd>
+              </>
+            )}
+          </dl>
+          <p className="mt-3 text-xs text-ink-soft">{c.voucherKeep}</p>
           {result.ticketUrl && (
             <a
               href={result.ticketUrl}
@@ -166,6 +242,12 @@ export function MercadoPagoBrick({
           {result.message}
         </div>
       )}
+      {ready && !brickReady && !result && (
+        <p role="status" className="flex items-center gap-2 rounded-xl border border-line bg-paper p-4 text-sm text-ink-soft">
+          <Loader2 size={16} className="animate-spin" aria-hidden="true" />
+          {c.loading}
+        </p>
+      )}
       {ready && (
         <Payment
           key={total}
@@ -178,14 +260,16 @@ export function MercadoPagoBrick({
               bankTransfer: "all",
             },
           }}
+          onReady={() => setBrickReady(true)}
           onSubmit={async ({ formData }) => {
+            submitFailed.current = false;
             try {
               const res = await fetch("/api/checkout-payment", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ items, formData, customer, delivery, designFileUrls, personalization, note }),
+                body: JSON.stringify({ items, formData, customer, delivery, designFileUrls, personalization, note, lang }),
               });
-              const data = await res.json();
+              const data = await res.json().catch(() => ({}));
               if (!res.ok) throw new Error(data.error ?? c.genericError);
 
               if (data.status === "approved") {
@@ -193,22 +277,38 @@ export function MercadoPagoBrick({
                 clear();
                 onSettled?.();
                 setResult({ kind: "approved" });
-              } else if (data.status === "pending" && data.point_of_interaction?.transaction_data?.ticket_url) {
+              } else if (data.status === "pending" && data.ticket_url) {
                 clear();
                 onSettled?.();
-                setResult({ kind: "cash", ticketUrl: data.point_of_interaction.transaction_data.ticket_url });
+                setResult({
+                  kind: "cash",
+                  ticketUrl: data.ticket_url,
+                  orderNumber: String(data.orderId ?? "").slice(0, 8) || undefined,
+                  expiresAt: data.date_of_expiration,
+                  reference: data.reference,
+                  amount: data.amount,
+                  method: data.payment_method_id,
+                });
               } else if (data.status === "pending" || data.status === "in_process") {
                 clear();
                 onSettled?.();
                 setResult({ kind: "pending" });
               } else {
-                setResult({ kind: "error", message: c.rejected });
+                throw new Error(c.rejectedBy[data.status_detail as string] ?? c.rejected);
               }
             } catch (err) {
+              // Show the reason, then reject so the Brick re-enables the form
+              // for another card instead of staying stuck.
+              submitFailed.current = true;
               setResult({ kind: "error", message: err instanceof Error ? err.message : c.genericError });
+              throw err;
             }
           }}
-          onError={(err) => setResult({ kind: "error", message: String(err) })}
+          onError={(err) => {
+            if (submitFailed.current) return;
+            const message = (err as { message?: string })?.message;
+            setResult({ kind: "error", message: message && !/^\[object/.test(message) ? message : c.genericError });
+          }}
         />
       )}
     </div>

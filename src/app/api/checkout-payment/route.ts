@@ -3,6 +3,7 @@ import { Payment } from "mercadopago";
 import { getMpClient, notificationUrl, validateCartItems } from "@/lib/mercadopago";
 import { createPendingOrder, validateCustomer, validateDelivery, validateDesignFileUrls } from "@/lib/orders";
 import { applyPayment } from "@/lib/payments";
+import { localizeError } from "@/lib/errors";
 import { rateLimited } from "@/lib/rate-limit";
 import { deliverySurcharge } from "@/content/shipping";
 
@@ -12,13 +13,15 @@ import { deliverySurcharge } from "@/content/shipping";
 // through the client before reaching us.
 export async function POST(req: NextRequest) {
   if (rateLimited(req, "checkout", 10)) {
-    return NextResponse.json({ error: "Demasiados intentos. Espera un minuto e intenta de nuevo." }, { status: 429 });
+    return NextResponse.json({ error: localizeError("Demasiados intentos. Espera un minuto e intenta de nuevo.", req.headers.get("x-lang")) }, { status: 429 });
   }
   let result;
   let orderId: string;
+  let lang: unknown;
   try {
     const body = await req.json();
-    const items = validateCartItems(body.items, { personalization: body.personalization, note: body.note });
+    lang = body.lang;
+    const items = validateCartItems(body.items, { personalization: body.personalization, note: body.note, lang: body.lang });
     const customer = validateCustomer(body.customer);
     const delivery = validateDelivery(body.delivery);
     const designFileUrls = validateDesignFileUrls(body.designFileUrls);
@@ -58,7 +61,7 @@ export async function POST(req: NextRequest) {
   } catch (err) {
     console.error("[checkout-payment] error", err);
     const message = err instanceof Error ? err.message : "Error al procesar el pago.";
-    return NextResponse.json({ error: message }, { status: 400 });
+    return NextResponse.json({ error: localizeError(message, lang) }, { status: 400 });
   }
 
   // Money may already have moved. From here on, bookkeeping problems are
@@ -77,5 +80,12 @@ export async function POST(req: NextRequest) {
     status: result.status,
     status_detail: result.status_detail,
     point_of_interaction: result.point_of_interaction,
+    // For cash vouchers (OXXO...): the voucher link lives in transaction_details
+    // (point_of_interaction is empty for them), and the rest is shown on the page.
+    ticket_url: result.transaction_details?.external_resource_url ?? result.point_of_interaction?.transaction_data?.ticket_url,
+    payment_method_id: result.payment_method_id,
+    date_of_expiration: result.date_of_expiration,
+    reference: result.transaction_details?.payment_method_reference_id,
+    amount: result.transaction_amount,
   });
 }

@@ -58,4 +58,11 @@ for (const html of [customerConfirmationEmail(pz).html, businessNotificationEmai
   assert.ok(!html.includes("<b>Unicornios"), "personalization must be escaped");
 }
 assert.ok(!customerConfirmationEmail(ship).html.includes("Personalización"), "no box without personalization");
+// English orders get English emails
+const en = { ...ship, items: [{ ...ship.items[0], locale: "en" }] } as unknown as Order;
+const e1 = customerConfirmationEmail(en);
+assert.ok(e1.subject.includes("is confirmed") && e1.html.includes('lang="en"') && e1.html.includes("What happens next"));
+assert.ok(e1.html.includes("Shipping address") && !e1.html.includes("Dirección de envío"));
+assert.ok(e1.html.includes("We do not issue invoices"));
+assert.ok(customerConfirmationEmail(ship).html.includes("No emitimos factura"));
 console.log("order emails ok");

@@ -271,6 +271,9 @@ export async function releaseEmails(orderId: string): Promise<void> {
   if (error) throw error;
 }
 
+/** Language the order was placed in (stored on its first line). */
+export const orderLocale = (order: Pick<Order, "items">): "es" | "en" => (order.items[0]?.locale === "en" ? "en" : "es");
+
 // --- Abandoned-checkout reminder ---------------------------------------------
 // One email per shopper, 24-72 h after a pending order was created. The 72 h
 // upper bound keeps a missed cron day from reminding someone a week late.
@@ -295,14 +298,15 @@ export async function getAbandonedOrders(now = new Date()): Promise<{ send: Orde
   const pending = (data ?? []) as Order[];
   if (pending.length === 0) return { send: [], skipped: [] };
 
-  const emails = [...new Set(pending.map((o) => o.customer_email))];
+  // Case-insensitive on purpose: the same shopper may type their email with
+  // different capitalization on a later order.
   const { data: paid, error: paidError } = await supabase
     .from("orders")
     .select("customer_email, created_at")
     .eq("status", "paid")
-    .gte("created_at", ago(REMINDER_MAX_AGE_H))
-    .in("customer_email", emails);
+    .gte("created_at", ago(REMINDER_MAX_AGE_H));
   if (paidError) throw paidError;
+  const optedOut = await getOptedOutEmails();
 
   const send: Order[] = [];
   const skipped: Order[] = [];
@@ -310,7 +314,7 @@ export async function getAbandonedOrders(now = new Date()): Promise<{ send: Orde
   for (const order of pending) {
     const email = order.customer_email.toLowerCase();
     const alreadyPaid = (paid ?? []).some((p) => p.customer_email.toLowerCase() === email && p.created_at >= order.created_at);
-    if (seen.has(email) || alreadyPaid) {
+    if (seen.has(email) || alreadyPaid || optedOut.has(email)) {
       skipped.push(order);
     } else {
       seen.add(email);
@@ -349,6 +353,29 @@ export async function markRemindedWithoutSending(orderIds: string[]): Promise<vo
     .from("orders")
     .update({ abandoned_reminder_sent_at: new Date().toISOString() })
     .in("id", orderIds)
+    .is("abandoned_reminder_sent_at", null);
+  if (error) throw error;
+}
+
+// --- Reminder opt-out ----------------------------------------------------------
+/** Emails that asked for no reminders. Tolerates the table not existing yet
+ * (sql/add-email-optouts.sql not run): then nobody is opted out. */
+async function getOptedOutEmails(): Promise<Set<string>> {
+  const { data, error } = await getSupabaseClient().from("email_optouts").select("email");
+  if (error) return new Set();
+  return new Set((data ?? []).map((r: { email: string }) => r.email));
+}
+
+/** Records the opt-out and marks the shopper's pending orders as already
+ * reminded, so it holds even if the table is missing. */
+export async function optOutOfReminders(email: string): Promise<void> {
+  const supabase = getSupabaseClient();
+  const clean = email.trim().toLowerCase();
+  await supabase.from("email_optouts").upsert({ email: clean }); // ignore error: table may not exist yet
+  const { error } = await supabase
+    .from("orders")
+    .update({ abandoned_reminder_sent_at: new Date().toISOString() })
+    .ilike("customer_email", clean.replace(/[\\%_]/g, "\\$&"))
     .is("abandoned_reminder_sent_at", null);
   if (error) throw error;
 }

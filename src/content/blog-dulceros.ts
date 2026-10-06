@@ -289,7 +289,7 @@ export const dulceroPosts: BlogPost[] = [
       {
         heading: "Cantidades y precio",
         body: [
-          "Cada dulcero cuesta $75 y el mínimo es de 10 piezas, sin paquetes cerrados: puedes pedir 18 para un equipo pequeño o 120 para toda la empresa. 40 dulceros son $3,000 y 100 son $7,500, con envío nacional gratis desde $750.",
+          "Cada dulcero cuesta $75 y el mínimo es de 10 piezas, sin paquetes cerrados: puedes pedir 18 para un equipo pequeño o 120 para toda la empresa. 40 dulceros son $3,000 y 100 son $7,500, con envío nacional gratis desde $750. Ten en cuenta que no emitimos factura (CFDI); si tu empresa la necesita, escríbenos antes de pedir.",
           "Para pedidos grandes, escríbenos por WhatsApp antes de pagar: así confirmamos fechas y cualquier detalle de tu evento.",
         ],
       },

@@ -30,7 +30,7 @@ const ATTACH_MSG = {
 };
 
 export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
-  const { items, removeItem, updateQty, replaceLine, total, clear } = useCart();
+  const { items, removeItem, updateQty, replaceLine, total, clear, cartNotice, dismissNotice } = useCart();
   const { getDesignFile } = useDesignFiles();
   // No default: preselecting $199 national shipping made a $100 order read
   // as $290 at first sight. The shopper picks, then sees the real total.
@@ -141,6 +141,19 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
     <section className="mx-auto max-w-3xl px-6 py-16 sm:py-24">
       {undoBar}
       <h1 className="animate-fade-up font-display text-4xl text-ink">{t.yourOrder}</h1>
+      {cartNotice && (
+        <div role="status" className="mt-4 flex items-start justify-between gap-3 rounded-xl border border-line bg-paper p-4 text-sm text-ink">
+          <p>
+            {cartNotice.changed.length > 0 &&
+              (lang === "en" ? `Prices were updated for: ${cartNotice.changed.join(", ")}. ` : `Actualizamos el precio de: ${cartNotice.changed.join(", ")}. `)}
+            {cartNotice.removed.length > 0 &&
+              (lang === "en" ? `No longer available, removed: ${cartNotice.removed.join(", ")}.` : `Ya no están disponibles y los quitamos: ${cartNotice.removed.join(", ")}.`)}
+          </p>
+          <button type="button" onClick={dismissNotice} className="min-h-11 shrink-0 px-2 text-xs font-semibold text-brand">
+            {lang === "en" ? "OK" : "Entendido"}
+          </button>
+        </div>
+      )}
 
       <ul className="mt-10 divide-y divide-line border-y border-line">
         {items.map((item) => {
@@ -339,6 +352,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
         >
           {t.quoteWhatsapp}
         </CtaFillLink>
+        <p className="max-w-md text-xs leading-relaxed text-ink-soft">{t.quoteCompany}</p>
       </div>
       <ul className="mt-6 space-y-2 text-sm text-ink">
         <li className="flex items-start gap-2"><Clock size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.factTiming}</li>

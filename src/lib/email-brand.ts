@@ -161,6 +161,7 @@ export function emailShell({
   rows,
   footerNotes,
   waHref,
+  lang = "es",
 }: {
   subject: string;
   preheader: string;
@@ -169,9 +170,11 @@ export function emailShell({
   /** Extra small paragraphs in the footer (promises, English line...). */
   footerNotes: string;
   waHref: string;
+  lang?: "es" | "en";
 }): string {
+  const en = lang === "en";
   return `<!DOCTYPE html>
-<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="${lang}" xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -211,12 +214,12 @@ export function emailShell({
           <tr>
             <td align="center" class="pad foot" bgcolor="${C.tint}" style="background:${C.tint};border-radius:0 0 23px 23px;padding:28px 40px 30px;">
               <p style="margin:0;font-family:${DISPLAY};font-size:20px;color:${C.brand};">${SITE.name}</p>
-              <p style="margin:4px 0 14px;font-family:${BODY};font-size:13px;line-height:1.5;color:${C.soft};">${SITE.tagline}<br />${SITE.city}, ${SITE.state} &nbsp;·&nbsp; Envíos a todo México</p>
+              <p style="margin:4px 0 14px;font-family:${BODY};font-size:13px;line-height:1.5;color:${C.soft};">${SITE.tagline}<br />${SITE.city}, ${SITE.state} &nbsp;·&nbsp; ${en ? "Shipping across Mexico" : "Envíos a todo México"}</p>
               <p style="margin:0 0 14px;font-family:${BODY};font-size:13px;line-height:1.8;">
                 <a href="${waHref}" style="color:${C.brand};font-weight:700;text-decoration:none;">WhatsApp</a> &nbsp;·&nbsp;
                 <a href="${SITE.instagram}" style="color:${C.brand};font-weight:700;text-decoration:none;">Instagram</a> &nbsp;·&nbsp;
-                <a href="mailto:${SITE.email}" style="color:${C.brand};font-weight:700;text-decoration:none;">Correo</a> &nbsp;·&nbsp;
-                <a href="${SITE.url}/privacidad" style="color:${C.brand};font-weight:700;text-decoration:none;">Privacidad</a>
+                <a href="mailto:${SITE.email}" style="color:${C.brand};font-weight:700;text-decoration:none;">${en ? "Email" : "Correo"}</a> &nbsp;·&nbsp;
+                <a href="${SITE.url}${en ? "/en/privacy" : "/privacidad"}" style="color:${C.brand};font-weight:700;text-decoration:none;">${en ? "Privacy" : "Privacidad"}</a>
               </p>
               ${footerNotes}
             </td>

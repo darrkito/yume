@@ -45,6 +45,8 @@ export interface CheckoutItem {
   price: number;
   qty: number;
   variantId?: string;
+  /** Language the order was placed in (set on the first line only; no schema change needed). */
+  locale?: "es" | "en";
   /** Buyer-provided details (name on the box, license no...), see content/personalization.ts. */
   personalization?: PersonalizationEntry[];
 }
@@ -52,7 +54,7 @@ export interface CheckoutItem {
 // Trusts only `slug`, `qty`, and `variantId` from the client — `name`/`price`
 // are always re-resolved from the server-side product catalog so a tampered
 // request body can never change what actually gets charged.
-export function validateCartItems(items: unknown, extras: { personalization?: unknown; note?: unknown } = {}): CheckoutItem[] {
+export function validateCartItems(items: unknown, extras: { personalization?: unknown; note?: unknown; lang?: unknown } = {}): CheckoutItem[] {
   if (!Array.isArray(items) || items.length === 0) {
     throw new Error("El carrito está vacío.");
   }
@@ -89,5 +91,6 @@ export function validateCartItems(items: unknown, extras: { personalization?: un
   }
   const note = validateNote(extras.note);
   if (note) checked[0].personalization = [...(checked[0].personalization ?? []), { label: ORDER_NOTE_LABEL, value: note }];
+  if (extras.lang === "en") checked[0].locale = "en";
   return checked;
 }

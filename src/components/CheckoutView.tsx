@@ -3,7 +3,7 @@
 import { itemName } from "@/components/useAddProduct";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { CreditCard, ExternalLink, Lock, ShieldCheck, CheckCircle2 } from "lucide-react";
+import { CreditCard, ExternalLink, Info, Lock, ShieldCheck, CheckCircle2 } from "lucide-react";
 import { useCart } from "@/components/CartContext";
 import { useDesignFiles } from "@/components/DesignFileContext";
 import { LogoUploadNote } from "@/components/LogoUploadNote";
@@ -158,7 +158,7 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
       const res = await fetch("/api/checkout-pro", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ items, customer, delivery, designFileUrls, personalization, note }),
+        body: JSON.stringify({ items, customer, delivery, designFileUrls, personalization, note, lang }),
       });
       const data = await res.json();
       if (!res.ok || !data.initPoint) throw new Error(data.error ?? t.couldNotStartPayment);
@@ -205,6 +205,7 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
             <ul className="mt-5 space-y-2 text-sm text-ink">
               <li className="flex items-start gap-2"><ShieldCheck size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.securePayment}</li>
               <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.afterPayment}</li>
+              <li className="flex items-start gap-2 text-ink-soft"><Info size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.noInvoice}</li>
             </ul>
           </div>
         )}
@@ -229,6 +230,7 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
                       note={note}
                       onNoteChange={setNote}
                       lang={lang}
+                      method={summaryMethod}
                     />
                   {designProducts.length > 0 && (
                     <div id="design-files">

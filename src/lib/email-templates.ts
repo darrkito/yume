@@ -1,4 +1,4 @@
-import type { Order } from "@/lib/orders";
+import { orderLocale, type Order } from "@/lib/orders";
 import { getProduct, type Product } from "@/content/products";
 import { getCasablancaBranch } from "@/content/shipping";
 import { SITE, waLink } from "@/content/site";
@@ -30,27 +30,27 @@ function missingDesignNames(order: Order): string[] {
 }
 
 /** Delivery details box: pickup branch or shipping address (all escaped). */
-function deliveryBox(order: Order): string {
+function deliveryBox(order: Order, en = false): string {
   if (order.delivery_method === "recoleccion_casablanca") {
     const branch = order.casablanca_branch ? getCasablancaBranch(order.casablanca_branch) : undefined;
     return infoBox(
-      "Entrega",
-      `Recolección en sucursal Casa Blanca (Guadalajara)<br /><strong style="color:${C.ink};">${esc(branch?.name ?? order.casablanca_branch ?? "")}</strong><br />${esc(branch?.address ?? "")}<br />${esc(branch?.hours ?? "")}`,
+      en ? "Delivery" : "Entrega",
+      `${en ? "Pickup at the Casa Blanca branch (Guadalajara)" : "Recolección en sucursal Casa Blanca (Guadalajara)"}<br /><strong style="color:${C.ink};">${esc(branch?.name ?? order.casablanca_branch ?? "")}</strong><br />${esc(branch?.address ?? "")}<br />${esc(branch?.hours ?? "")}`,
     );
   }
   const addr = order.shipping_address;
   if (!addr) return "";
   return infoBox(
-    "Dirección de envío",
+    en ? "Shipping address" : "Dirección de envío",
     `${esc(addr.street)} ${esc(addr.number)}<br />${esc(addr.neighborhood)}<br />${esc(addr.city)}, ${esc(addr.state)}, CP ${esc(addr.zip)}${
-      addr.references ? `<br />Referencias: ${esc(addr.references)}` : ""
+      addr.references ? `<br />${en ? "Notes" : "Referencias"}: ${esc(addr.references)}` : ""
     }`,
   );
 }
 
 /** What the buyer wrote for each product (name on the box, license no...) and
  * the order note, grouped under their line. */
-function personalizationBox(order: Order): string {
+function personalizationBox(order: Order, en = false): string {
   const lines = order.items.filter((i) => i.personalization?.length);
   if (!lines.length) return "";
   const html = lines
@@ -61,7 +61,7 @@ function personalizationBox(order: Order): string {
           .join("")}</ul>`,
     )
     .join("");
-  return infoBox("Personalización", html);
+  return infoBox(en ? "Personalization" : "Personalización", html);
 }
 
 function designFilesBox(order: Order): string {
@@ -148,62 +148,86 @@ export function businessNotificationEmail(order: Order): { subject: string; html
   return { subject, html };
 }
 
-/** The customer's order confirmation, in the same brand look as the reminder. */
+/** The customer's order confirmation, in the same brand look as the reminder,
+ * in the language the order was placed in. */
 export function customerConfirmationEmail(order: Order): { subject: string; html: string } {
+  const en = orderLocale(order) === "en";
   const isPickup = order.delivery_method === "recoleccion_casablanca";
   const orderShort = order.id.slice(0, 8);
   const firstName = esc(order.customer_name.split(" ")[0] || order.customer_name);
-
-  const waHref = waLink(`Hola! Tengo una duda sobre mi pedido #${orderShort}`);
   const missing = missingDesignNames(order);
-  const designWaHref = waLink(`Hola! Les mando el diseño de mi pedido #${orderShort} (${missing.join(", ")}).`);
-  const mailtoHref = `mailto:${SITE.email}?subject=${encodeURIComponent(`Duda sobre mi pedido #${orderShort}`)}`;
 
-  const subject = `Tu pedido #${orderShort} en ${SITE.name} fue confirmado ✅`;
+  const waHref = waLink(en ? `Hi! I have a question about my order #${orderShort}` : `Hola! Tengo una duda sobre mi pedido #${orderShort}`);
+  const designWaHref = waLink(
+    en ? `Hi! Sending the design for my order #${orderShort} (${missing.join(", ")}).` : `Hola! Les mando el diseño de mi pedido #${orderShort} (${missing.join(", ")}).`,
+  );
+  const mailtoHref = `mailto:${SITE.email}?subject=${encodeURIComponent(en ? `Question about my order #${orderShort}` : `Duda sobre mi pedido #${orderShort}`)}`;
+
+  const subject = en ? `Your ${SITE.name} order #${orderShort} is confirmed ✅` : `Tu pedido #${orderShort} en ${SITE.name} fue confirmado ✅`;
 
   const rows =
     row(
-      heading1(`¡Gracias por tu compra, <em style="color:${C.brand};">${firstName}</em>!`) +
-        paragraph("Tu pago fue confirmado y ya estamos preparando tu pedido.", { margin: "16px 0 0" }),
+      heading1(
+        en
+          ? `Thank you for your order, <em style="color:${C.brand};">${firstName}</em>!`
+          : `¡Gracias por tu compra, <em style="color:${C.brand};">${firstName}</em>!`,
+      ) + paragraph(en ? "Your payment is confirmed and we are already preparing your order." : "Tu pago fue confirmado y ya estamos preparando tu pedido.", { margin: "16px 0 0" }),
       "30px 40px 6px",
     ) +
-    row(callout(`<strong>Número de orden:</strong> #${orderShort}`), "16px 40px 0") +
-    row(heading2("Resumen de tu pedido") + orderBox(order.items, order.total), "26px 40px 0") +
+    row(callout(`<strong>${en ? "Order number" : "Número de orden"}:</strong> #${orderShort}`), "16px 40px 0") +
+    row(heading2(en ? "Your order summary" : "Resumen de tu pedido") + orderBox(order.items, order.total), "26px 40px 0") +
     (missing.length
       ? row(
           callout(
-            `<strong>Falta tu diseño</strong> para: ${esc(missing.join(", "))}. Mándanoslo por <a href="${designWaHref}" style="color:${C.brand};font-weight:700;">WhatsApp</a> para preparar tu prueba digital; sin él no podemos empezar.`,
+            en
+              ? `<strong>We still need your design</strong> for: ${esc(missing.join(", "))}. Send it to us on <a href="${designWaHref}" style="color:${C.brand};font-weight:700;">WhatsApp</a> so we can prepare your digital proof; we can't start without it.`
+              : `<strong>Falta tu diseño</strong> para: ${esc(missing.join(", "))}. Mándanoslo por <a href="${designWaHref}" style="color:${C.brand};font-weight:700;">WhatsApp</a> para preparar tu prueba digital; sin él no podemos empezar.`,
           ),
           "16px 40px 0",
         )
       : "") +
-    row(deliveryBox(order), "16px 40px 0") +
-    (order.items.some((i) => i.personalization?.length) ? row(personalizationBox(order), "14px 40px 0") : "") +
+    row(deliveryBox(order, en), "16px 40px 0") +
+    (order.items.some((i) => i.personalization?.length) ? row(personalizationBox(order, en), "14px 40px 0") : "") +
     row(
-      heading2("Qué sigue") +
-        steps([
-          "Te contactamos por WhatsApp o correo para confirmar los detalles de tu pedido.",
-          "Apruebas tu prueba digital (incluye hasta 2 rondas de ajustes). No imprimimos nada sin tu aprobación.",
-          isPickup
-            ? "Producimos tu pedido (3-5 días hábiles) y lo dejamos en tu sucursal Casa Blanca (1 día hábil más). Te avisamos por WhatsApp y correo, con el comprobante que necesitas presentar para recogerlo."
-            : "Producimos tu pedido (3-5 días hábiles) y lo enviamos (2-5 días hábiles). Te avisamos por WhatsApp y correo cuando salga rumbo a tu domicilio.",
-        ]),
+      heading2(en ? "What happens next" : "Qué sigue") +
+        steps(
+          en
+            ? [
+                "We contact you on WhatsApp or by email to confirm your order details.",
+                "You approve your digital proof within 24 hours (it includes up to 2 rounds of adjustments). We print nothing without your approval.",
+                isPickup
+                  ? "We produce your order (3-5 business days) and drop it at your Casa Blanca branch (1 more business day). We let you know by WhatsApp and email, with the receipt you need to show when picking it up."
+                  : "We produce your order (3-5 business days) and ship it (2-5 business days). We let you know by WhatsApp and email when it is on its way.",
+              ]
+            : [
+                "Te contactamos por WhatsApp o correo para confirmar los detalles de tu pedido.",
+                "Recibes tu prueba digital en un máximo de 24 horas y la apruebas (incluye hasta 2 rondas de ajustes). No imprimimos nada sin tu aprobación.",
+                isPickup
+                  ? "Producimos tu pedido (3-5 días hábiles) y lo dejamos en tu sucursal Casa Blanca (1 día hábil más). Te avisamos por WhatsApp y correo, con el comprobante que necesitas presentar para recogerlo."
+                  : "Producimos tu pedido (3-5 días hábiles) y lo enviamos (2-5 días hábiles). Te avisamos por WhatsApp y correo cuando salga rumbo a tu domicilio.",
+              ],
+        ),
       "28px 40px 0",
     ) +
     row(
-      `<div style="text-align:center;">${heading2("¿Tienes alguna duda?", "center")}${paragraph("Contáctanos por el medio que prefieras:", {
-        align: "center",
-        margin: "0 0 20px",
-      })}${button(waHref, "Escribir por WhatsApp", "solid")}${button(mailtoHref, "Escribir por correo", "outline")}</div>`,
+      `<div style="text-align:center;">${heading2(en ? "Any questions?" : "¿Tienes alguna duda?", "center")}${paragraph(
+        en ? "Reach us whichever way you prefer:" : "Contáctanos por el medio que prefieras:",
+        { align: "center", margin: "0 0 20px" },
+      )}${button(waHref, en ? "Message us on WhatsApp" : "Escribir por WhatsApp", "solid")}${button(mailtoHref, en ? "Send an email" : "Escribir por correo", "outline")}</div>`,
       "30px 40px 0",
     );
 
   const html = emailShell({
     subject,
-    preheader: `Pago confirmado. Tu pedido #${orderShort} ya está en preparación.`,
+    preheader: en ? `Payment confirmed. Your order #${orderShort} is now being prepared.` : `Pago confirmado. Tu pedido #${orderShort} ya está en preparación.`,
     rows,
     waHref,
-    footerNotes: footerNote(`Este correo confirma tu compra #${orderShort} en ${SITE.name}. Consérvalo como comprobante.`),
+    lang: en ? "en" : "es",
+    footerNotes: footerNote(
+      en
+        ? `This email confirms your purchase #${orderShort} at ${SITE.name}. Keep it as your receipt. We do not issue invoices (CFDI).`
+        : `Este correo confirma tu compra #${orderShort} en ${SITE.name}. Consérvalo como comprobante. No emitimos factura (CFDI).`,
+    ),
   });
 
   return { subject, html };

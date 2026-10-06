@@ -3,15 +3,19 @@ import { Preference } from "mercadopago";
 import { checkoutBaseUrl, getMpClient, notificationUrl, validateCartItems } from "@/lib/mercadopago";
 import { createPendingOrder, validateCustomer, validateDelivery, validateDesignFileUrls } from "@/lib/orders";
 import { deliverySurcharge } from "@/content/shipping";
+import { localizeError } from "@/lib/errors";
 import { rateLimited } from "@/lib/rate-limit";
 
 export async function POST(req: NextRequest) {
   if (rateLimited(req, "checkout", 10)) {
-    return NextResponse.json({ error: "Demasiados intentos. Espera un minuto e intenta de nuevo." }, { status: 429 });
+    return NextResponse.json({ error: localizeError("Demasiados intentos. Espera un minuto e intenta de nuevo.", req.headers.get("x-lang")) }, { status: 429 });
   }
+  let lang: unknown;
   try {
     const body = await req.json();
-    const items = validateCartItems(body.items, { personalization: body.personalization, note: body.note });
+    lang = body.lang;
+    const backBase = `${checkoutBaseUrl()}${lang === "en" ? "/en/checkout" : "/pago"}`;
+    const items = validateCartItems(body.items, { personalization: body.personalization, note: body.note, lang: body.lang });
     const customer = validateCustomer(body.customer);
     const delivery = validateDelivery(body.delivery);
     const designFileUrls = validateDesignFileUrls(body.designFileUrls);
@@ -48,9 +52,9 @@ export async function POST(req: NextRequest) {
         external_reference: order.id,
         notification_url: notificationUrl(),
         back_urls: {
-          success: `${checkoutBaseUrl()}/pago/exito`,
-          failure: `${checkoutBaseUrl()}/pago/error`,
-          pending: `${checkoutBaseUrl()}/pago/pendiente`,
+          success: `${backBase}/${lang === "en" ? "success" : "exito"}`,
+          failure: `${backBase}/error`,
+          pending: `${backBase}/${lang === "en" ? "pending" : "pendiente"}`,
         },
         // MP refuses auto_return with localhost back_urls (local runs).
         ...(notificationUrl() ? { auto_return: "approved" as const } : {}),
@@ -62,6 +66,6 @@ export async function POST(req: NextRequest) {
   } catch (err) {
     console.error("[checkout-pro] error", err);
     const message = err instanceof Error ? err.message : "Error al crear la preferencia de pago.";
-    return NextResponse.json({ error: message }, { status: 400 });
+    return NextResponse.json({ error: localizeError(message, lang) }, { status: 400 });
   }
 }

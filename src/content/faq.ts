@@ -57,6 +57,10 @@ export const generalFaq: FaqItem[] = [
     a: "Solo en artículos defectuosos, porque todo se hace sobre pedido con tu diseño. Tienes 48 horas desde que llega tu paquete para avisarnos; el artículo se envía de regreso (el envío corre por tu cuenta) y eliges la devolución de tu dinero o el reenvío del artículo.",
     cta: { label: "Ver la política de devoluciones", href: "/politica-de-devoluciones" },
   },
+  {
+    q: "¿Emiten factura?",
+    a: "No emitimos factura (CFDI). Tu comprobante es el correo de confirmación de tu pedido. Si tu empresa necesita factura, escríbenos por WhatsApp antes de pagar para que lo revisemos contigo.",
+  },
 ];
 
 // Single source of truth for the 3 FAQ categories shown on the FAQ page and

@@ -64,7 +64,14 @@ export function QtyInput({
           max={max}
           step={1}
           value={draft ?? String(value)}
-          onChange={(e) => setDraft(e.target.value)}
+          onChange={(e) => {
+            // Apply a valid number right away (not only on blur): on iOS the
+            // "Buy now" tap can land before the field loses focus.
+            const raw = e.target.value;
+            setDraft(raw);
+            const n = Number(raw);
+            if (raw.trim() !== "" && Number.isInteger(n) && n >= min && n <= max && n !== value) onChange(n);
+          }}
           onBlur={(e) => commit(e.target.value)}
           onKeyDown={(e) => {
             if (e.key === "Enter") {
