@@ -27,6 +27,7 @@ export const BLOG_SLUG_EN: Record<string, string> = {
   "recetario-medico-con-diseno-vs-sin-diseno": "prescription-pad-with-design-vs-without-design",
   "datos-obligatorios-receta-medica-mexico": "required-information-medical-prescription-mexico",
   "yume-vs-imprentas-online-stickers": "yume-vs-online-sticker-print-shops",
+  "cuanto-tarda-un-pedido-de-stickers-personalizados": "how-long-do-custom-stickers-take-to-arrive",
   "stickers-vinil-vs-papel-diferencias": "vinyl-vs-paper-stickers-differences",
   "menu-de-boda-personalizado": "custom-wedding-menus",
   "tarjetas-de-presentacion-consultorio": "business-cards-for-your-practice",

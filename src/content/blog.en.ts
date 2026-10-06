@@ -1,5 +1,6 @@
 import type { BlogPost } from "@/content/blog";
 import { tierPriceRows } from "@/content/products";
+import { NATIONAL_TRANSIT_DAYS, PICKUP_EXTRA_DAYS, PRODUCTION_DAYS } from "@/content/shipping";
 import { BLOG_SLUG_EN } from "@/lib/i18n";
 import { dulceroPostsEn } from "@/content/blog-dulceros.en";
 
@@ -914,7 +915,58 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
-    relatedBlogSlugs: [BLOG_SLUG_EN["yume-vs-imprentas-online-stickers"], BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"]],
+    relatedBlogSlugs: [BLOG_SLUG_EN["yume-vs-imprentas-online-stickers"], BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"], BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"]],
+  },
+  {
+    slug: BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"],
+    title: "How Long Do Custom Stickers Take to Arrive? Real Turnaround Times",
+    metaTitle: "How Long Do Custom Stickers Take to Arrive?",
+    description:
+      "Real turnaround times for a custom sticker order at Yume: digital proof, production, shipping across Mexico or pickup in Guadalajara, and how to order ahead for a deadline.",
+    category: "Guides",
+    publishedAt: "2026-10-06",
+    intro:
+      "If you need your stickers by a certain date (a launch, a trade show, a party), the first thing to know is how many days each stage takes. These are the real turnaround times of a Yume order, from payment to having it in your hands.",
+    sections: [
+      {
+        heading: "How long does a custom sticker order take to arrive?",
+        body: [
+          `From the moment you approve the digital proof, an order takes ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days to reach your door anywhere in Mexico, or ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days if you pick it up at a Casa Blanca branch in Guadalajara. The digital proof normally arrives within 24 hours of payment.`,
+        ],
+        table: {
+          headers: ["Stage", "Time"],
+          rows: [
+            ["Digital proof (up to 2 rounds of changes included)", "Normally within 24 hours of payment"],
+            ["Production", `${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after you approve the proof`],
+            ["Home delivery (anywhere in Mexico)", `${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} business days`],
+            ["Pickup at a Casa Blanca branch (Guadalajara)", `${PICKUP_EXTRA_DAYS} business day`],
+            ["Total from proof approval", `${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days to your door · ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} at a branch`],
+          ],
+        },
+      },
+      {
+        heading: "What makes it faster or slower",
+        body: [
+          "The production clock starts when you approve the digital proof, not when you pay: the sooner you review and approve it, the sooner your order goes into production. Having your logo or design ready from the start (PNG, PDF, AI or SVG) avoids back-and-forth.",
+          "Days are business days, so weekends do not count; public holidays are not counted in the estimate either, which is why it is approximate.",
+        ],
+      },
+      {
+        heading: "How to order ahead when you have a deadline",
+        body: [
+          "Count backwards from your date: add the production and shipping (or pickup) days and leave a margin in case you ask for a change on the proof. For high-demand dates such as Christmas or graduations, order at least two weeks ahead.",
+          "If your date is tight, message us on WhatsApp before paying and we will check together whether it fits.",
+        ],
+      },
+      {
+        heading: "What if I am in Guadalajara?",
+        body: [
+          "You can pick your order up at one of the Casa Blanca branches in the metro area: it adds just 1 business day to production. Pickup costs $20 MXN and is free on orders of $750 MXN or more, just like home delivery.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["donde-imprimir-stickers-personalizados-mexico"], BLOG_SLUG_EN["yume-vs-imprentas-online-stickers"]],
   },
   // Dulceros cluster lives in its own file (blog-dulceros.en.ts).
   ...dulceroPostsEn,

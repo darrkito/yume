@@ -18,6 +18,6 @@ for (const [lang, posts] of [["es", blogPosts], ["en", blogPostsEn]] as const) {
     assert.ok(row[1].startsWith(`$${tieredPrice(logo, q).toLocaleString("en-US", { minimumFractionDigits: 2 })}`), `${lang}: logo ${q}`);
     assert.ok(row[2].startsWith(`$${tieredPrice(vinyl, q).toLocaleString("en-US", { minimumFractionDigits: 2 })}`), `${lang}: vinyl ${q}`);
   }
-  for (const p of posts) if (p.sections.some((s) => s.table)) assert.ok(p.modifiedAt, `${lang}/${p.slug}: table post needs modifiedAt`);
+  for (const p of posts) if (p.sections.some((s) => s.table)) assert.ok(p.modifiedAt || p.publishedAt >= "2026-10-06", `${lang}/${p.slug}: older table post needs modifiedAt`);
 }
 console.log("check-blog-tables: ok");

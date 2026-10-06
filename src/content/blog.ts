@@ -1,5 +1,6 @@
 import { dulceroPosts } from "@/content/blog-dulceros";
 import { tierPriceRows } from "@/content/products";
+import { NATIONAL_TRANSIT_DAYS, PICKUP_EXTRA_DAYS, PRODUCTION_DAYS } from "@/content/shipping";
 
 export interface BlogSection {
   heading: string;
@@ -950,7 +951,58 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
-    relatedBlogSlugs: ["yume-vs-imprentas-online-stickers", "stickers-vinil-vs-papel-diferencias"],
+    relatedBlogSlugs: ["yume-vs-imprentas-online-stickers", "stickers-vinil-vs-papel-diferencias", "cuanto-tarda-un-pedido-de-stickers-personalizados"],
+  },
+  {
+    slug: "cuanto-tarda-un-pedido-de-stickers-personalizados",
+    title: "¿Cuánto tarda un pedido de stickers personalizados en llegar? Tiempos reales",
+    metaTitle: "Cuánto tarda un pedido de stickers personalizados",
+    description:
+      "Tiempos reales de un pedido de stickers personalizados en Yume: prueba digital, producción, envío a todo México o recolección en Guadalajara, y cómo pedir con anticipación para una fecha.",
+    category: "Guías",
+    publishedAt: "2026-10-06",
+    intro:
+      "Si necesitas tus stickers para una fecha (un lanzamiento, una feria, una fiesta), lo primero es saber cuántos días tarda cada etapa. Estos son los tiempos reales de un pedido en Yume, desde que pagas hasta que lo tienes en tus manos.",
+    sections: [
+      {
+        heading: "¿Cuánto tarda en llegar un pedido de stickers personalizados?",
+        body: [
+          `Desde que apruebas la prueba digital, un pedido tarda ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles en llegar a tu domicilio en cualquier parte de México, o ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles si lo recoges en una sucursal Casa Blanca en Guadalajara. La prueba digital llega normalmente en un máximo de 24 horas después del pago.`,
+        ],
+        table: {
+          headers: ["Etapa", "Tiempo"],
+          rows: [
+            ["Prueba digital (incluye hasta 2 rondas de ajustes)", "Normalmente en un máximo de 24 horas después del pago"],
+            ["Producción", `${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba`],
+            ["Envío a domicilio (todo México)", `${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días hábiles`],
+            ["Recolección en sucursal Casa Blanca (Guadalajara)", `${PICKUP_EXTRA_DAYS} día hábil`],
+            ["Total desde que apruebas la prueba", `${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles a domicilio · ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} en sucursal`],
+          ],
+        },
+      },
+      {
+        heading: "Qué hace que tarde más o menos",
+        body: [
+          "El reloj de producción empieza cuando apruebas la prueba digital, no cuando pagas: cuanto más rápido la revises y apruebes, antes entra tu pedido a producción. Tener tu logo o diseño listo desde el principio (en PNG, PDF, AI o SVG) evita idas y vueltas.",
+          "Los días son hábiles, así que los fines de semana no cuentan; los días festivos tampoco están contados en la estimación, por eso es un cálculo aproximado.",
+        ],
+      },
+      {
+        heading: "Cómo pedir con anticipación si tienes una fecha",
+        body: [
+          "Cuenta hacia atrás desde tu fecha: suma los días de producción y envío (o recolección) y deja un margen por si pides un ajuste en la prueba. Para fechas con mucha demanda, como Navidad o graduaciones, conviene pedir con al menos dos semanas de anticipación.",
+          "Si tu fecha es muy justa, escríbenos por WhatsApp antes de pagar y revisamos juntos si alcanza.",
+        ],
+      },
+      {
+        heading: "¿Y si estoy en Guadalajara?",
+        body: [
+          "Puedes elegir recoger tu pedido en una de las sucursales Casa Blanca de la zona metropolitana: se suma solo 1 día hábil a la producción. La recolección cuesta $20 MXN y es gratis en compras de $750 MXN o más, igual que el envío a domicilio.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["donde-imprimir-stickers-personalizados-mexico", "yume-vs-imprentas-online-stickers"],
   },
   // Dulceros cluster lives in its own file (blog-dulceros.ts).
   ...dulceroPosts,
