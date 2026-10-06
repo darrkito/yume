@@ -262,10 +262,10 @@ export const products: Product[] = [
       { label: "Medidas", value: "15.7 × 11.7 × 9.9 cm (6.2 × 4.6 × 3.9 in)" },
       { label: "Material", value: "Cartulina opalina" },
       { label: "Personalización", value: "Nombre y temática" },
-      { label: "Entrega", value: "Armada, lista para llenar" },
+      { label: "Entrega", value: "Armada y vacía (sin dulces), lista para llenar" },
     ],
     description:
-      "Dulceros personalizados tipo lunch box: cajita con asa de cartulina opalina, de 15.7 × 11.7 × 9.9 cm, decorada con el nombre y la temática que elijas. Para cumpleaños, fiestas infantiles, bautizos, graduaciones, Navidad, eventos sociales y eventos de empresa (con tu logo). Cuestan $75 por pieza, con pedido mínimo de 5, y te llegan armados. Te mandamos una prueba digital del diseño antes de producir.",
+      "Dulceros personalizados tipo lunch box: cajita con asa de cartulina opalina, de 15.7 × 11.7 × 9.9 cm, decorada con el nombre y la temática que elijas. Para cumpleaños, fiestas infantiles, bautizos, graduaciones, Navidad, eventos sociales y eventos de empresa (con tu logo). Cuestan $75 por pieza, con pedido mínimo de 5, y te llegan armados y vacíos (no incluyen dulces), listos para llenar. Te mandamos una prueba digital del diseño antes de producir.",
     metaDescription:
       "Dulceros personalizados tipo lunch box con nombre y temática, de cartulina opalina, armados. $75 por pieza, mínimo 5. Para fiestas, bautizos, graduaciones y eventos de empresa.",
     details: [
@@ -273,7 +273,7 @@ export const products: Product[] = [
       "Caja tipo lunch box con asa, 15.7 × 11.7 × 9.9 cm",
       "Cartulina opalina",
       "Incluye el nombre y la temática que elijas (o el logo de tu empresa)",
-      "Te llegan armados, listos para llenar",
+      "Te llegan armados y vacíos (sin dulces), listos para llenar",
       "Prueba digital del diseño antes de producir",
       "Para cumpleaños, fiestas infantiles, bautizos, graduaciones, Navidad y eventos de empresa",
     ],
@@ -301,6 +301,10 @@ export const products: Product[] = [
       {
         q: "¿Llegan armados?",
         a: "Sí, te llegan armados, listos para llenar con dulces o detalles.",
+      },
+      {
+        q: "¿Incluyen dulces?",
+        a: "No, el dulcero llega vacío: tú eliges los dulces o detalles que van dentro. Si necesitas ideas, tenemos una guía de qué poner en un dulcero según la edad de los invitados.",
       },
       {
         q: "¿Sirven para eventos de empresa?",

@@ -85,10 +85,10 @@ export const productsEn: Record<string, ProductTranslation> = {
       { label: "Size", value: "15.7 × 11.7 × 9.9 cm (6.2 × 4.6 × 3.9 in)" },
       { label: "Material", value: "Opaline cardstock" },
       { label: "Customization", value: "Name and theme" },
-      { label: "Delivery", value: "Assembled, ready to fill" },
+      { label: "Delivery", value: "Assembled and empty (no candy), ready to fill" },
     ],
     description:
-      "Personalized lunch-box-style party favor boxes: an opaline cardstock treat box with a handle, 15.7 × 11.7 × 9.9 cm (6.2 × 4.6 × 3.9 in), decorated with the name and theme you choose. For birthdays, kids' parties, baptisms, graduations, Christmas, social events and corporate events (with your logo). $75 MXN per piece, minimum order of 5, delivered assembled. We send you a digital proof of the design before production.",
+      "Personalized lunch-box-style party favor boxes: an opaline cardstock treat box with a handle, 15.7 × 11.7 × 9.9 cm (6.2 × 4.6 × 3.9 in), decorated with the name and theme you choose. For birthdays, kids' parties, baptisms, graduations, Christmas, social events and corporate events (with your logo). $75 MXN per piece, minimum order of 5, delivered assembled and empty (candy not included), ready to fill. We send you a digital proof of the design before production.",
     metaDescription:
       "Personalized lunch-box-style party favor boxes with a name and theme, opaline cardstock, delivered assembled. $75 MXN each, minimum 5. For parties, baptisms, graduations and corporate events.",
     details: [
@@ -96,7 +96,7 @@ export const productsEn: Record<string, ProductTranslation> = {
       "Lunch-box-style treat box with a handle, 15.7 × 11.7 × 9.9 cm",
       "Opaline cardstock",
       "Includes the name and theme you choose (or your company logo)",
-      "Delivered assembled, ready to fill",
+      "Delivered assembled and empty (no candy), ready to fill",
       "Digital proof of the design before production",
       "For birthdays, kids' parties, baptisms, graduations, Christmas and corporate events",
     ],
@@ -121,6 +121,10 @@ export const productsEn: Record<string, ProductTranslation> = {
       {
         q: "Do they arrive assembled?",
         a: "Yes, they arrive assembled and ready to fill with candy or small gifts.",
+      },
+      {
+        q: "Is candy included?",
+        a: "No, the box arrives empty: you choose the candy or small gifts that go inside. If you need ideas, we have a guide on what to put in a party favor box by guest age.",
       },
       {
         q: "Do they work for corporate events?",
