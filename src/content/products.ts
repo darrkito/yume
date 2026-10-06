@@ -112,7 +112,7 @@ export const products: Product[] = [
   {
     slug: "stickers-vinil-impermeable",
     name: "Stickers de Vinil Personalizados",
-    metaTitle: "Stickers de Vinil Personalizados Impermeables",
+    metaTitle: "Stickers de Vinil Personalizados en Guadalajara",
     price: VINYL_BASE_PRICE,
     currency: "MXN",
     category: "Stickers de Vinil Personalizados",
@@ -176,7 +176,7 @@ export const products: Product[] = [
   {
     slug: "stickers-logo-personalizado",
     name: "Stickers y Etiquetas con tu Logo",
-    metaTitle: "Stickers y Etiquetas con tu Logo Personalizados",
+    metaTitle: "Stickers y Etiquetas con tu Logo en Guadalajara",
     price: STICKER_BASE_PRICE,
     currency: "MXN",
     category: "Stickers y etiquetas personalizadas",
@@ -366,6 +366,7 @@ export const products: Product[] = [
   {
     slug: "recetario-medico-personalizado",
     name: "Recetario Médico Personalizado",
+    metaTitle: "Recetarios Médicos Personalizados en Guadalajara",
     price: 320,
     currency: "MXN",
     category: "Papelería Creativa Personalizada",

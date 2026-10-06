@@ -12,6 +12,7 @@ import { ProductPurchase } from "@/components/ProductPurchase";
 import { InfiniteGalleryStrip } from "@/components/InfiniteGalleryStrip";
 import { RelatedProducts } from "@/components/RelatedProducts";
 import { RelatedGuides } from "@/components/RelatedGuides";
+import { LocalPickup } from "@/components/LocalPickup";
 import { FaqQuestion } from "@/components/FaqAccordion";
 import { galleryItems } from "@/content/gallery";
 import { hreflangFor } from "@/lib/i18n";
@@ -128,6 +129,8 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           viewAllHref="/galeria"
         />
       )}
+
+      <LocalPickup lang="es" />
 
       <RelatedGuides productSlug={product.slug} />
 

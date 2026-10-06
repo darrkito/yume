@@ -17,9 +17,12 @@ export const SITE = {
   domain: "studioyume.mx",
   url: "https://studioyume.mx",
   tagline: "Papelería creativa y artículos personalizados",
-  /** Homepage SERP title: leads with the head terms Yume wants to rank for. */
-  homeTitle: "Stickers de Vinil, Tatuajes y Papelería Personalizada | Yume",
-  homeTitleEn: "Custom Vinyl Stickers, Temporary Tattoos & Stationery | Yume",
+  /** Homepage SERP title: the head terms Yume wants to rank for, plus the
+   * city its commercial queries carry ("... en Guadalajara"). Temporary
+   * tattoos are quote-only (no product page), so they stay in the
+   * description, not the title. */
+  homeTitle: "Stickers de Vinil y Papelería Personalizada en Guadalajara | Yume",
+  homeTitleEn: "Custom Vinyl Stickers & Stationery in Guadalajara, Mexico | Yume",
   description:
     "Stickers de vinil y stickers con tu logo desde $100, tatuajes temporales y papelería personalizada. Hechos en Guadalajara, envíos a todo México.",
   descriptionEn:
