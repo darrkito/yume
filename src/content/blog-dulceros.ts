@@ -8,7 +8,7 @@ import type { BlogPost } from "@/content/blog";
 // niño, graduación, fiesta infantil. Character names are deliberately left
 // out of titles and copy (trademarks): themes are described generically.
 // Facts only from content/products.ts and content/shipping.ts: $75 c/u,
-// mínimo 5, 15.7 × 11.7 × 9.9 cm, cartulina opalina, nombre + temática,
+// mínimo 10, 15.7 × 11.7 × 9.9 cm, cartulina opalina, nombre + temática,
 // llegan armados, prueba digital, 3-5 días de producción.
 const PUBLISHED = "2026-10-06";
 const DULCERO = "dulceros-personalizados";
@@ -28,7 +28,7 @@ export const dulceroPosts: BlogPost[] = [
       {
         heading: "Cuánto cuestan los dulceros personalizados",
         body: [
-          "Cada dulcero cuesta $75 MXN y el pedido mínimo es de 5 piezas, así que puedes pedir la cantidad exacta de invitados: 5 dulceros son $375, 12 son $900, 20 son $1,500 y 30 son $2,250. No hay paquetes cerrados de 50 o 100 piezas.",
+          "Cada dulcero cuesta $75 MXN y el pedido mínimo es de 10 piezas, así que puedes pedir la cantidad exacta de invitados: 10 dulceros son $750, 12 son $900, 20 son $1,500 y 30 son $2,250. No hay paquetes cerrados de 50 o 100 piezas.",
           "A partir de $750 de compra el envío nacional es gratis, y eso son justo 10 dulceros. Si estás en la zona metropolitana de Guadalajara, también puedes recogerlos por $20 en cualquiera de las 11 sucursales de paquetería Casa Blanca.",
         ],
       },
@@ -85,7 +85,7 @@ export const dulceroPosts: BlogPost[] = [
       {
         heading: "Cuántos dulceros pedir",
         body: [
-          "Cuenta a los niños invitados y suma de 2 a 4 extra para hermanos que llegan sin avisar o niños que se suman al último momento. Como el mínimo es de 5 piezas y cada dulcero cuesta $75, puedes pedir exactamente los que necesitas: 15 dulceros son $1,125 y 25 son $1,875.",
+          "Cuenta a los niños invitados y suma de 2 a 4 extra para hermanos que llegan sin avisar o niños que se suman al último momento. Como el mínimo es de 10 piezas y cada dulcero cuesta $75, puedes pedir exactamente los que necesitas: 15 dulceros son $1,125 y 25 son $1,875.",
           "Si también vas a dar dulceros a los adultos, considera un diseño un poco más sobrio con el mismo nombre, o simplemente la misma temática: se pueden pedir juntos en una sola orden.",
         ],
       },
@@ -135,7 +135,7 @@ export const dulceroPosts: BlogPost[] = [
       {
         heading: "Precio para grupos grandes",
         body: [
-          "Cada dulcero cuesta $75 con mínimo de 5 piezas, así que un salón de 30 niños son $2,250 y una posada de 20 invitados son $1,500. Desde $750 el envío nacional es gratis.",
+          "Cada dulcero cuesta $75 con mínimo de 10 piezas, así que un salón de 30 niños son $2,250 y una posada de 20 invitados son $1,500. Desde $750 el envío nacional es gratis.",
         ],
       },
     ],
@@ -163,7 +163,7 @@ export const dulceroPosts: BlogPost[] = [
       {
         heading: "Cuántos pedir y cuánto cuesta",
         body: [
-          "Cada dulcero cuesta $75 y el mínimo es de 5, así que pides exactamente el número de alumnos: un grupo de 25 son $1,875 y uno de 32 son $2,400. Pide 1 o 2 de más por si llega un alumno nuevo o alguno se daña al llenarlo.",
+          "Cada dulcero cuesta $75 y el mínimo es de 10, así que pides exactamente el número de alumnos: un grupo de 25 son $1,875 y uno de 32 son $2,400. Pide 1 o 2 de más por si llega un alumno nuevo o alguno se daña al llenarlo.",
           "Si el comité de padres divide el costo, el precio por niño queda claro desde el principio: $75 por dulcero, y desde $750 el envío nacional es gratis.",
         ],
       },
@@ -205,7 +205,7 @@ export const dulceroPosts: BlogPost[] = [
       {
         heading: "Cuántos pedir y cuánto cuesta",
         body: [
-          "Cada dulcero cuesta $75 con mínimo de 5 piezas: un grupo de kínder de 20 alumnos son $1,500 y una generación de 40 son $3,000. Desde $750 de compra el envío nacional es gratis.",
+          "Cada dulcero cuesta $75 con mínimo de 10 piezas: un grupo de kínder de 20 alumnos son $1,500 y una generación de 40 son $3,000. Desde $750 de compra el envío nacional es gratis.",
           "Si el comité de graduación lo organiza, confirma la lista final de alumnos antes de aprobar la prueba digital: es el mejor momento para corregir nombres.",
         ],
       },
@@ -254,7 +254,7 @@ export const dulceroPosts: BlogPost[] = [
       {
         heading: "Cuántos pedir y cuánto cuesta",
         body: [
-          "Pide uno por familia o por invitado, según tu presupuesto. Cada dulcero cuesta $75 con mínimo de 5 piezas: 30 dulceros son $2,250 y 50 son $3,750, con envío gratis desde $750. Te llegan armados, listos para llenar.",
+          "Pide uno por familia o por invitado, según tu presupuesto. Cada dulcero cuesta $75 con mínimo de 10 piezas: 30 dulceros son $2,250 y 50 son $3,750, con envío gratis desde $750. Te llegan armados, listos para llenar.",
         ],
       },
     ],
@@ -289,7 +289,7 @@ export const dulceroPosts: BlogPost[] = [
       {
         heading: "Cantidades y precio",
         body: [
-          "Cada dulcero cuesta $75 y el mínimo es de 5 piezas, sin paquetes cerrados: puedes pedir 18 para un equipo pequeño o 120 para toda la empresa. 40 dulceros son $3,000 y 100 son $7,500, con envío nacional gratis desde $750.",
+          "Cada dulcero cuesta $75 y el mínimo es de 10 piezas, sin paquetes cerrados: puedes pedir 18 para un equipo pequeño o 120 para toda la empresa. 40 dulceros son $3,000 y 100 son $7,500, con envío nacional gratis desde $750.",
           "Para pedidos grandes, escríbenos por WhatsApp antes de pagar: así confirmamos fechas y cualquier detalle de tu evento.",
         ],
       },
@@ -336,7 +336,7 @@ export const dulceroPosts: BlogPost[] = [
       {
         heading: "Cuántos pedir, precio y tiempos",
         body: [
-          "Cada dulcero cuesta $75 con mínimo de 5 piezas: 50 invitados son $3,750 y 80 son $6,000, con envío nacional gratis desde $750. La producción toma de 3 a 5 días hábiles después de aprobar la prueba digital, más el envío; para eventos grandes conviene pedirlos con tres o cuatro semanas de anticipación. Te llegan armados, listos para llenar.",
+          "Cada dulcero cuesta $75 con mínimo de 10 piezas: 50 invitados son $3,750 y 80 son $6,000, con envío nacional gratis desde $750. La producción toma de 3 a 5 días hábiles después de aprobar la prueba digital, más el envío; para eventos grandes conviene pedirlos con tres o cuatro semanas de anticipación. Te llegan armados, listos para llenar.",
         ],
       },
     ],
@@ -406,7 +406,7 @@ export const dulceroPosts: BlogPost[] = [
       {
         heading: "Para la fiesta del salón o de la oficina",
         body: [
-          "Para la escuela, un mismo diseño con el nombre del grupo; para una oficina o negocio, un diseño de Halloween con tu logo. Cada dulcero cuesta $75 con mínimo de 5 piezas, y desde $750 el envío nacional es gratis.",
+          "Para la escuela, un mismo diseño con el nombre del grupo; para una oficina o negocio, un diseño de Halloween con tu logo. Cada dulcero cuesta $75 con mínimo de 10 piezas, y desde $750 el envío nacional es gratis.",
         ],
       },
       {
@@ -448,7 +448,7 @@ export const dulceroPosts: BlogPost[] = [
         heading: "Cajas dulceras tipo lunch box",
         body: [
           "La caja con asa se sostiene sola, se ve ordenada en la mesa de dulces y se personaliza completa: el nombre del festejado y la temática ocupan todo el diseño, no solo una etiqueta. El asa facilita que los niños la carguen, y tiene espacio para dulces y un detalle.",
-          "En Yume las hacemos de cartulina opalina, de 15.7 × 11.7 × 9.9 cm, con nombre y temática, a $75 por pieza con mínimo de 5, y te llegan armadas.",
+          "En Yume las hacemos de cartulina opalina, de 15.7 × 11.7 × 9.9 cm, con nombre y temática, a $75 por pieza con mínimo de 10, y te llegan armadas.",
         ],
       },
       {

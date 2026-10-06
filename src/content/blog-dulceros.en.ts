@@ -25,7 +25,7 @@ export const dulceroPostsEn: BlogPost[] = [
       {
         heading: "How much personalized favor boxes cost",
         body: [
-          "Each box is $75 MXN with a minimum order of 5, so you can order the exact number of guests: 5 boxes are $375, 12 are $900, 20 are $1,500 and 30 are $2,250. There are no fixed packs of 50 or 100.",
+          "Each box is $75 MXN with a minimum order of 10, so you can order the exact number of guests: 10 boxes are $750, 12 are $900, 20 are $1,500 and 30 are $2,250. There are no fixed packs of 50 or 100.",
           "Orders from $750 MXN ship free across Mexico, and that's exactly 10 boxes. If you're in the Guadalajara metro area, you can also pick them up for $20 at any of the 11 Casa Blanca parcel branches.",
         ],
       },
@@ -82,7 +82,7 @@ export const dulceroPostsEn: BlogPost[] = [
       {
         heading: "How many to order",
         body: [
-          "Count the invited kids and add 2 to 4 extra for siblings who show up unannounced or last-minute guests. With a minimum of 5 and a price of $75 MXN each, you can order exactly what you need: 15 boxes are $1,125 and 25 are $1,875.",
+          "Count the invited kids and add 2 to 4 extra for siblings who show up unannounced or last-minute guests. With a minimum of 10 and a price of $75 MXN each, you can order exactly what you need: 15 boxes are $1,125 and 25 are $1,875.",
           "If you're also giving favors to the adults, consider a slightly more understated design with the same name, or just the same theme: they can go in a single order.",
         ],
       },
@@ -131,7 +131,7 @@ export const dulceroPostsEn: BlogPost[] = [
       },
       {
         heading: "Pricing for large groups",
-        body: ["Each box is $75 MXN with a minimum of 5, so a class of 30 kids is $2,250 and a posada for 20 guests is $1,500. Orders from $750 MXN ship free across Mexico."],
+        body: ["Each box is $75 MXN with a minimum of 10, so a class of 30 kids is $2,250 and a posada for 20 guests is $1,500. Orders from $750 MXN ship free across Mexico."],
       },
     ],
     relatedProductSlugs: [DULCERO],
@@ -158,7 +158,7 @@ export const dulceroPostsEn: BlogPost[] = [
       {
         heading: "How many to order and what it costs",
         body: [
-          "Each box is $75 MXN with a minimum of 5, so you order exactly the number of students: a class of 25 is $1,875 and a class of 32 is $2,400. Order 1 or 2 extra in case a new student joins or one gets damaged while filling.",
+          "Each box is $75 MXN with a minimum of 10, so you order exactly the number of students: a class of 25 is $1,875 and a class of 32 is $2,400. Order 1 or 2 extra in case a new student joins or one gets damaged while filling.",
           "If the parent committee splits the cost, the per-child price is clear from the start: $75 MXN per box, with free national shipping from $750.",
         ],
       },
@@ -200,7 +200,7 @@ export const dulceroPostsEn: BlogPost[] = [
       {
         heading: "How many to order and what it costs",
         body: [
-          "Each box is $75 MXN with a minimum of 5: a kindergarten class of 20 is $1,500 and a graduating class of 40 is $3,000. Orders from $750 MXN ship free across Mexico.",
+          "Each box is $75 MXN with a minimum of 10: a kindergarten class of 20 is $1,500 and a graduating class of 40 is $3,000. Orders from $750 MXN ship free across Mexico.",
           "If a graduation committee is organizing, confirm the final list of students before approving the digital proof: that's the best moment to fix names.",
         ],
       },
@@ -249,7 +249,7 @@ export const dulceroPostsEn: BlogPost[] = [
       {
         heading: "How many to order and what it costs",
         body: [
-          "Order one per family or per guest, depending on your budget. Each box is $75 MXN with a minimum of 5: 30 boxes are $2,250 and 50 are $3,750, with free shipping from $750. They arrive assembled, ready to fill.",
+          "Order one per family or per guest, depending on your budget. Each box is $75 MXN with a minimum of 10: 30 boxes are $2,250 and 50 are $3,750, with free shipping from $750. They arrive assembled, ready to fill.",
         ],
       },
     ],
@@ -284,7 +284,7 @@ export const dulceroPostsEn: BlogPost[] = [
       {
         heading: "Quantities and price",
         body: [
-          "Each box is $75 MXN with a minimum of 5 and no fixed packs: you can order 18 for a small team or 120 for the whole company. 40 boxes are $3,000 and 100 are $7,500, with free national shipping from $750.",
+          "Each box is $75 MXN with a minimum of 10 and no fixed packs: you can order 18 for a small team or 120 for the whole company. 40 boxes are $3,000 and 100 are $7,500, with free national shipping from $750.",
           "For large orders, message us on WhatsApp before paying so we can confirm dates and any details of your event.",
         ],
       },
@@ -331,7 +331,7 @@ export const dulceroPostsEn: BlogPost[] = [
       {
         heading: "How many to order, price and timing",
         body: [
-          "Each box is $75 MXN with a minimum of 5: 50 guests is $3,750 and 80 is $6,000, with free national shipping from $750. Production takes 3 to 5 business days after you approve the digital proof, plus shipping; for large events, order three or four weeks ahead. They arrive assembled, ready to fill.",
+          "Each box is $75 MXN with a minimum of 10: 50 guests is $3,750 and 80 is $6,000, with free national shipping from $750. Production takes 3 to 5 business days after you approve the digital proof, plus shipping; for large events, order three or four weeks ahead. They arrive assembled, ready to fill.",
         ],
       },
     ],
@@ -401,7 +401,7 @@ export const dulceroPostsEn: BlogPost[] = [
       {
         heading: "For the class or office party",
         body: [
-          "For school, one design with the class name; for an office or business, a Halloween design with your logo. Each box is $75 MXN with a minimum of 5, and orders from $750 MXN ship free across Mexico.",
+          "For school, one design with the class name; for an office or business, a Halloween design with your logo. Each box is $75 MXN with a minimum of 10, and orders from $750 MXN ship free across Mexico.",
         ],
       },
       {
@@ -443,7 +443,7 @@ export const dulceroPostsEn: BlogPost[] = [
         heading: "Lunch-box-style favor boxes",
         body: [
           "A box with a handle stands on its own, looks tidy on the candy table and is fully personalized: the birthday child's name and the theme cover the whole design, not just a label. The handle makes it easy for kids to carry, and there's room for candy and a small gift.",
-          "At Yume we make them in opaline cardstock, 15.7 × 11.7 × 9.9 cm, with name and theme, at $75 MXN per piece with a minimum of 5, and they arrive assembled.",
+          "At Yume we make them in opaline cardstock, 15.7 × 11.7 × 9.9 cm, with name and theme, at $75 MXN per piece with a minimum of 10, and they arrive assembled.",
         ],
       },
       {

@@ -23,13 +23,13 @@ assert.equal(line.price, 924); // server ignores the client's price
 assert.throws(() => validateCartItems([{ slug: vinyl.slug, qty: 1, variantId: "20" }]));
 assert.throws(() => validateCartItems([{ slug: vinyl.slug, qty: 5000, variantId: "40" }]));
 
-// Dulceros: flat $75 per piece, minimum 5, no wholesale step.
+// Dulceros: flat $75 per piece, minimum 10, no wholesale step.
 const dulcero = getProduct("dulceros-personalizados")!;
-assert.equal(dulcero.price, 375); // 5 pieces, the "Desde" price
-assert.equal(resolvePrice(dulcero, "5"), 375);
+assert.equal(dulcero.price, 750); // 10 pieces, the "Desde" price
+assert.equal(resolvePrice(dulcero, "10"), 750);
 assert.equal(resolvePrice(dulcero, "13"), 975);
 assert.equal(resolvePrice(dulcero, "200"), 15000);
-assert.equal(isValidVariant(dulcero, "4"), false);
+assert.equal(isValidVariant(dulcero, "9"), false);
 const [dLine] = validateCartItems([{ slug: dulcero.slug, qty: 1, variantId: "12", price: 1 }], {
   personalization: { [dulcero.slug]: { name: "Sofía", theme: "Unicornios" } }, // required for dulceros
 });

@@ -83,7 +83,7 @@ function matchAnswerEs(text: string): string {
   if (/dulcer|lunch ?box|cajita|fiesta|bolo/.test(q)) {
     const p = products.find((prod) => prod.slug === "dulceros-personalizados");
     return p
-      ? `${p.name}: $75 MXN por pieza, mínimo 5 piezas. ${p.description} Más info: ${SITE.url}/productos/${p.slug}`
+      ? `${p.name}: $75 MXN por pieza, mínimo 10 piezas. ${p.description} Más info: ${SITE.url}/productos/${p.slug}`
       : "No encontré ese producto en el catálogo.";
   }
 
@@ -172,7 +172,7 @@ function matchAnswerEn(text: string): string {
     const p = products.find((prod) => prod.slug === "dulceros-personalizados");
     const t = p ? productsEn[p.slug] : undefined;
     return p && t
-      ? `${t.name}: $75 MXN per piece, minimum 5. ${t.description} More info: ${SITE.url}/en/products/personalized-party-favor-boxes`
+      ? `${t.name}: $75 MXN per piece, minimum 10. ${t.description} More info: ${SITE.url}/en/products/personalized-party-favor-boxes`
       : "I couldn't find that product in the catalog.";
   }
 

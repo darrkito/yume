@@ -112,10 +112,10 @@ const VINYL_TIERS: TierPricing = { baseQty: 40, rate: 2.5, stepQty: 10, discount
 const vinylStickerVariants = buildTieredVariants(VINYL_TIERS, 10); // presets 40→140
 const VINYL_BASE_PRICE = tieredPrice(VINYL_TIERS, VINYL_TIERS.baseQty);
 
-// Dulceros: $75 por pieza, mínimo 5 piezas, mismo precio a cualquier
+// Dulceros: $75 por pieza, mínimo 10 piezas, mismo precio a cualquier
 // cantidad (sin escalón de mayoreo: discountQty = MAX_PIECES).
-const DULCERO_TIERS: TierPricing = { baseQty: 5, rate: 75, stepQty: 1, discountQty: MAX_PIECES, discountedStepPrice: 75 };
-const dulceroVariants = buildTieredVariants(DULCERO_TIERS, 25); // presets 5→30
+const DULCERO_TIERS: TierPricing = { baseQty: 10, rate: 75, stepQty: 1, discountQty: MAX_PIECES, discountedStepPrice: 75 };
+const dulceroVariants = buildTieredVariants(DULCERO_TIERS, 20); // presets 10→30
 const DULCERO_BASE_PRICE = tieredPrice(DULCERO_TIERS, DULCERO_TIERS.baseQty);
 
 export const products: Product[] = [
@@ -258,18 +258,18 @@ export const products: Product[] = [
     isNew: true,
     specs: [
       { label: "Precio", value: "$75 por pieza" },
-      { label: "Mínimo de compra", value: "5 piezas" },
+      { label: "Mínimo de compra", value: "10 piezas" },
       { label: "Medidas", value: "15.7 × 11.7 × 9.9 cm (6.2 × 4.6 × 3.9 in)" },
       { label: "Material", value: "Cartulina opalina" },
       { label: "Personalización", value: "Nombre y temática" },
       { label: "Entrega", value: "Armada y vacía (sin dulces), lista para llenar" },
     ],
     description:
-      "Dulceros personalizados tipo lunch box: cajita con asa de cartulina opalina, de 15.7 × 11.7 × 9.9 cm, decorada con el nombre y la temática que elijas. Para cumpleaños, fiestas infantiles, bautizos, graduaciones, Navidad, eventos sociales y eventos de empresa (con tu logo). Cuestan $75 por pieza, con pedido mínimo de 5, y te llegan armados y vacíos (no incluyen dulces), listos para llenar. Te mandamos una prueba digital del diseño antes de producir.",
+      "Dulceros personalizados tipo lunch box: cajita con asa de cartulina opalina, de 15.7 × 11.7 × 9.9 cm, decorada con el nombre y la temática que elijas. Para cumpleaños, fiestas infantiles, bautizos, graduaciones, Navidad, eventos sociales y eventos de empresa (con tu logo). Cuestan $75 por pieza, con pedido mínimo de 10, y te llegan armados y vacíos (no incluyen dulces), listos para llenar. Te mandamos una prueba digital del diseño antes de producir.",
     metaDescription:
-      "Dulceros personalizados tipo lunch box con nombre y temática, de cartulina opalina, armados. $75 por pieza, mínimo 5. Para fiestas, bautizos, graduaciones y eventos de empresa.",
+      "Dulceros personalizados tipo lunch box con nombre y temática, de cartulina opalina, armados. $75 por pieza, mínimo 10. Para fiestas, bautizos, graduaciones y eventos de empresa.",
     details: [
-      "$75 por pieza, mínimo 5 piezas: pide la cantidad exacta de invitados",
+      "$75 por pieza, mínimo 10 piezas: pide la cantidad exacta de invitados",
       "Caja tipo lunch box con asa, 15.7 × 11.7 × 9.9 cm",
       "Cartulina opalina",
       "Incluye el nombre y la temática que elijas (o el logo de tu empresa)",
@@ -284,7 +284,7 @@ export const products: Product[] = [
     faq: [
       {
         q: "¿Cuánto cuestan los dulceros personalizados?",
-        a: "$75 por pieza, con pedido mínimo de 5 piezas. Por ejemplo, 10 dulceros son $750 (y con eso ya tienes envío gratis a todo México), 20 son $1,500 y 30 son $2,250.",
+        a: "$75 por pieza, con pedido mínimo de 10 piezas. Por ejemplo, 10 dulceros son $750 (y con eso ya tienes envío gratis a todo México), 20 son $1,500 y 30 son $2,250.",
       },
       {
         q: "¿Qué medidas tiene el dulcero?",

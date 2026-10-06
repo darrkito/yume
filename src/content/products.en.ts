@@ -81,18 +81,18 @@ export const productsEn: Record<string, ProductTranslation> = {
     category: "Party favor boxes",
     specs: [
       { label: "Price", value: "$75 MXN per piece" },
-      { label: "Minimum order", value: "5 pieces" },
+      { label: "Minimum order", value: "10 pieces" },
       { label: "Size", value: "15.7 × 11.7 × 9.9 cm (6.2 × 4.6 × 3.9 in)" },
       { label: "Material", value: "Opaline cardstock" },
       { label: "Customization", value: "Name and theme" },
       { label: "Delivery", value: "Assembled and empty (no candy), ready to fill" },
     ],
     description:
-      "Personalized lunch-box-style party favor boxes: an opaline cardstock treat box with a handle, 15.7 × 11.7 × 9.9 cm (6.2 × 4.6 × 3.9 in), decorated with the name and theme you choose. For birthdays, kids' parties, baptisms, graduations, Christmas, social events and corporate events (with your logo). $75 MXN per piece, minimum order of 5, delivered assembled and empty (candy not included), ready to fill. We send you a digital proof of the design before production.",
+      "Personalized lunch-box-style party favor boxes: an opaline cardstock treat box with a handle, 15.7 × 11.7 × 9.9 cm (6.2 × 4.6 × 3.9 in), decorated with the name and theme you choose. For birthdays, kids' parties, baptisms, graduations, Christmas, social events and corporate events (with your logo). $75 MXN per piece, minimum order of 10, delivered assembled and empty (candy not included), ready to fill. We send you a digital proof of the design before production.",
     metaDescription:
-      "Personalized lunch-box-style party favor boxes with a name and theme, opaline cardstock, delivered assembled. $75 MXN each, minimum 5. For parties, baptisms, graduations and corporate events.",
+      "Personalized lunch-box-style party favor boxes with a name and theme, opaline cardstock, delivered assembled. $75 MXN each, minimum 10. For parties, baptisms, graduations and corporate events.",
     details: [
-      "$75 MXN per piece, minimum 5: order the exact number of guests",
+      "$75 MXN per piece, minimum 10: order the exact number of guests",
       "Lunch-box-style treat box with a handle, 15.7 × 11.7 × 9.9 cm",
       "Opaline cardstock",
       "Includes the name and theme you choose (or your company logo)",
@@ -104,7 +104,7 @@ export const productsEn: Record<string, ProductTranslation> = {
     faq: [
       {
         q: "How much do the personalized favor boxes cost?",
-        a: "$75 MXN per piece, with a minimum order of 5. For example, 10 boxes are $750 MXN (which already gets you free shipping across Mexico), 20 are $1,500 and 30 are $2,250.",
+        a: "$75 MXN per piece, with a minimum order of 10. For example, 10 boxes are $750 MXN (which already gets you free shipping across Mexico), 20 are $1,500 and 30 are $2,250.",
       },
       {
         q: "What size is the box?",
