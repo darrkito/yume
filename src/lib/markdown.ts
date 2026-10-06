@@ -87,6 +87,11 @@ export function blogPostMarkdown(slug: string, lang: "es" | "en"): string | null
   for (const section of post.sections) {
     lines.push(`## ${section.heading}`, "");
     for (const paragraph of section.body) lines.push(paragraph, "");
+    if (section.table) {
+      lines.push(`| ${section.table.headers.join(" | ")} |`, `| ${section.table.headers.map(() => "---").join(" | ")} |`);
+      for (const row of section.table.rows) lines.push(`| ${row.join(" | ")} |`);
+      lines.push("");
+    }
   }
   return lines.join("\n");
 }

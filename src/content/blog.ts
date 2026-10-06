@@ -1,8 +1,11 @@
 import { dulceroPosts } from "@/content/blog-dulceros";
+import { tierPriceRows } from "@/content/products";
 
 export interface BlogSection {
   heading: string;
   body: string[];
+  /** Optional comparison/price table rendered after the paragraphs. */
+  table?: { headers: string[]; rows: string[][] };
 }
 
 export interface BlogPost {
@@ -222,10 +225,17 @@ export const blogPosts: BlogPost[] = [
       "Tatuajes temporales con logo para eventos, activaciones de marca y celebraciones: para qué se usan, qué información necesitamos para cotizar los tuyos y cómo pedir tatuajes temporales personalizados en México.",
     category: "Guías",
     publishedAt: "2026-08-31",
-    modifiedAt: "2026-09-23",
+    modifiedAt: "2026-10-06",
     intro:
       "Un tatuaje temporal con tu logo o un diseño hecho para la ocasión es una forma efectiva y económica de dejar marca en un evento: literalmente. Los tatuajes temporales para eventos funcionan tanto para activaciones de negocio como para celebraciones personales, y el proceso para pedir tatuajes temporales personalizados en México es tan sencillo como el de cualquier otro producto a la medida en Yume.",
     sections: [
+      {
+        heading: "¿Cómo se piden los tatuajes temporales personalizados y qué incluye el pedido?",
+        body: [
+          "Los tatuajes temporales se cotizan por WhatsApp: no hay un precio fijo publicado porque se confirma con tu diseño, tamaño y cantidad. Antes de producir te mandamos una prueba digital, normalmente en 24 horas y con hasta 2 rondas de ajustes, y no imprimimos nada sin tu aprobación.",
+          "Producimos en Guadalajara y enviamos a todo México. No emitimos factura (CFDI); si tu empresa la necesita, avísanos al cotizar.",
+        ],
+      },
       {
         heading: "Para qué se usan realmente",
         body: [
@@ -413,9 +423,16 @@ export const blogPosts: BlogPost[] = [
       "Comparamos el precio por pieza y el mínimo de compra de Yume contra imprentas mexicanas reales de stickers personalizados: con datos reales de precios públicos.",
     category: "Guías",
     publishedAt: "2026-09-09",
+    modifiedAt: "2026-10-06",
     intro:
       "Antes de cotizar tus stickers vale la pena saber si el precio que te están dando es competitivo. En septiembre de 2026 revisamos los precios públicos de varias imprentas mexicanas de stickers personalizados: aquí están los números reales, comparados contra los de Yume.",
     sections: [
+      {
+        heading: "¿Yume es más barato que otras imprentas online de stickers?",
+        body: [
+          "En precio por pieza, Yume está entre los más bajos de las imprentas mexicanas que revisamos en septiembre de 2026, y tiene el mínimo de compra más bajo: $100 MXN frente a $319–$550 MXN de la competencia revisada.",
+        ],
+      },
       {
         heading: "Cómo comparamos",
         body: [
@@ -429,6 +446,14 @@ export const blogPosts: BlogPost[] = [
           "Entre las imprentas mexicanas de stickers personalizados que revisamos, el precio por pieza va de $1.83 a $11.00 MXN, con mínimos de compra que van de $319 a $550 MXN: en algunos casos el mínimo real solo se alcanza comprando varias planillas completas de una vez.",
           "Yume: Stickers y Etiquetas con tu Logo: de $2.00 a $1.73 por pieza, mínimo $100 (50 piezas). Yume: Stickers de Vinil Personalizados: de $2.50 a $2.36 por pieza, mínimo $100 (40 piezas).",
         ],
+        table: {
+          headers: ["", "Precio por pieza", "Mínimo de compra"],
+          rows: [
+            ["Imprentas mexicanas revisadas (precios públicos, septiembre 2026)", "$1.83 a $11.00 MXN", "$319 a $550 MXN"],
+            ["Yume: Stickers y Etiquetas con tu Logo", "$2.00 a $1.73 MXN", "$100 MXN (50 piezas)"],
+            ["Yume: Stickers de Vinil Personalizados", "$2.50 a $2.36 MXN", "$100 MXN (40 piezas)"],
+          ],
+        },
       },
       {
         heading: "Qué significa esto para ti",
@@ -887,9 +912,21 @@ export const blogPosts: BlogPost[] = [
       "Qué necesitas tener listo para mandar a imprimir tus stickers personalizados en México (archivo, tamaño, cantidad) y cómo funciona pedirlos en línea sin ir a una imprenta física.",
     category: "Guías",
     publishedAt: "2026-09-29",
+    modifiedAt: "2026-10-06",
     intro:
       "Si buscas dónde imprimir stickers personalizados en México, la mayoría de las opciones caen en dos grupos: imprimirlos tú mismo en casa (con vinil y una impresora especial) o mandarlos a hacer con una imprenta que ya tiene el equipo de corte troquelado. Esta guía cubre la segunda opción: qué necesitas tener listo y cómo funciona el proceso para mandar a imprimir tus stickers en línea, sin tener que comprar equipo ni ir a una imprenta física.",
     sections: [
+      {
+        heading: "¿Cuánto cuesta imprimir stickers personalizados en México?",
+        body: [
+          "En Yume, imprimir stickers personalizados cuesta desde $100 MXN: 50 piezas de etiquetas con tu logo ($2.00 c/u) o 40 piezas de stickers de vinil ($2.50 c/u). Las primeras 100 piezas van a precio normal y cada pieza extra después de 100 baja 20% (precio mayoreo). El envío a todo México es gratis desde $750 MXN, y recoger en Guadalajara también.",
+          "Precio por cantidad (el mínimo de compra es 50 piezas en etiquetas con logo y 40 en vinil):",
+        ],
+        table: {
+          headers: ["Cantidad", "Etiquetas con tu logo", "Stickers de vinil"],
+          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
+        },
+      },
       {
         heading: "Imprimir tú mismo vs. mandarlos a hacer",
         body: [
@@ -909,12 +946,6 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Mandas tu diseño y cantidad por WhatsApp o desde la tienda en línea, te confirmamos precio y te mandamos una prueba digital del sticker antes de imprimir: puedes pedir ajustes de tamaño o color en esa etapa. Una vez que la apruebas, se manda a producción y se envía a cualquier parte de México.",
           "Todo el proceso es a distancia, así que aplica igual si estás en Guadalajara (donde producimos) o en cualquier otra ciudad del país.",
-        ],
-      },
-      {
-        heading: "Cuánto cuesta imprimir stickers personalizados",
-        body: [
-          "En Yume se vende por cantidad de piezas, no por planilla: Stickers y Etiquetas con tu Logo desde $100 (50 piezas) y Stickers de Vinil Personalizados desde $100 (40 piezas), con precio mayoreo automático pasando las 100 piezas. Ver la comparación completa de precios contra otras imprentas mexicanas en la guía relacionada abajo.",
         ],
       },
     ],

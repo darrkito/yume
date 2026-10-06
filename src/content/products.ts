@@ -125,6 +125,7 @@ export const products: Product[] = [
     metaTitle: "Stickers de Vinil Personalizados en Guadalajara",
     price: VINYL_BASE_PRICE,
     currency: "MXN",
+    updatedAt: "2026-10-06",
     category: "Stickers de Vinil Personalizados",
     variants: vinylStickerVariants,
     tiers: VINYL_TIERS,
@@ -181,6 +182,14 @@ export const products: Product[] = [
         q: "¿El vinil resiste el agua y el sol?",
         a: "Sí, es vinil premium resistente al agua, al sol y a rayones: aguanta bien en botellas, laptops, patinetas o superficies que se mojan o se exponen al sol.",
       },
+      {
+        q: "¿Cuánto cuesta el envío y hay recolección en Guadalajara?",
+        a: "El envío a domicilio a todo México cuesta $199 MXN y es gratis en compras de $750 MXN o más. Si estás en Guadalajara o su zona metropolitana, puedes recoger en una de las 11 sucursales Casa Blanca por $20 MXN, también gratis desde $750 MXN.",
+      },
+      {
+        q: "¿Cuánto tarda la prueba digital?",
+        a: "La prueba digital llega normalmente en un máximo de 24 horas después de tu pago, e incluye hasta 2 rondas de ajustes. No imprimimos nada sin tu aprobación.",
+      },
     ],
   },
   {
@@ -189,6 +198,7 @@ export const products: Product[] = [
     metaTitle: "Stickers y Etiquetas con tu Logo en Guadalajara",
     price: STICKER_BASE_PRICE,
     currency: "MXN",
+    updatedAt: "2026-10-06",
     category: "Stickers y etiquetas personalizadas",
     variants: stickerVariants,
     tiers: STICKER_TIERS,
@@ -244,6 +254,18 @@ export const products: Product[] = [
         q: "¿Puedo usar mi propio logo o diseño?",
         a: "Sí, puedes enviar tu logo/diseño en formato editable o lo diseñamos contigo.",
       },
+      {
+        q: "¿Cuánto cuesta el envío y hay recolección en Guadalajara?",
+        a: "El envío a domicilio a todo México cuesta $199 MXN y es gratis en compras de $750 MXN o más. Si estás en Guadalajara o su zona metropolitana, puedes recoger en una de las 11 sucursales Casa Blanca por $20 MXN, también gratis desde $750 MXN.",
+      },
+      {
+        q: "¿Cuánto tarda la prueba digital?",
+        a: "La prueba digital llega normalmente en un máximo de 24 horas después de tu pago, e incluye hasta 2 rondas de ajustes. No imprimimos nada sin tu aprobación.",
+      },
+      {
+        q: "¿Emiten factura?",
+        a: "No emitimos factura (CFDI). Tu comprobante es el correo de confirmación del pedido. Si tu empresa necesita factura, escríbenos por WhatsApp antes de pagar.",
+      },
     ],
   },
   {
@@ -252,6 +274,7 @@ export const products: Product[] = [
     metaTitle: "Dulceros Personalizados para Fiestas en Guadalajara",
     price: DULCERO_BASE_PRICE,
     currency: "MXN",
+    updatedAt: "2026-10-06",
     category: "Dulceros y cajitas para fiestas",
     variants: dulceroVariants,
     tiers: DULCERO_TIERS,
@@ -453,6 +476,7 @@ export const products: Product[] = [
     metaTitle: "Recetarios Médicos Personalizados en Guadalajara",
     price: 320,
     currency: "MXN",
+    updatedAt: "2026-10-06",
     category: "Papelería Creativa Personalizada",
     specs: [
       { label: "Hojas", value: "100" },
@@ -543,3 +567,18 @@ export const cartItemLabel = (product: Product, variantId?: string): string => {
   const variant = product.variants?.find((v) => v.id === variantId);
   return variant ? `${product.name}: ${variant.label}` : product.name;
 };
+
+/** Price table rows for per-piece products, computed from the catalog so blog
+ * and product tables can never drift from the real prices. */
+export function tierPriceRows(slugs: string[], quantities: number[], lang: "es" | "en"): string[][] {
+  const fmt = (n: number) => `$${n.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+  return quantities.map((q) => [
+    `${q} ${lang === "en" ? "pieces" : "piezas"}`,
+    ...slugs.map((slug) => {
+      const t = getProduct(slug)?.tiers;
+      if (!t) return "";
+      const total = tieredPrice(t, q);
+      return `${fmt(total)} (${fmt(total / q)} ${lang === "en" ? "each" : "c/u"})`;
+    }),
+  ]);
+}

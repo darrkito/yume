@@ -195,6 +195,18 @@ export const productsEn: Record<string, ProductTranslation> = {
         q: "Can I use my own logo or design?",
         a: "Yes, you can send your logo/design in an editable format, or we design it with you.",
       },
+      {
+        q: "How much is shipping and can I pick up in Guadalajara?",
+        a: "Home delivery anywhere in Mexico is $199 MXN and free on orders of $750 MXN or more. If you are in Guadalajara or its metro area, you can pick up at one of 11 Casa Blanca branches for $20 MXN, also free from $750 MXN.",
+      },
+      {
+        q: "How long does the digital proof take?",
+        a: "The digital proof normally arrives within 24 hours of your payment and includes up to 2 rounds of changes. We print nothing without your approval.",
+      },
+      {
+        q: "Do you issue invoices?",
+        a: "We do not issue invoices (CFDI). Your receipt is the order confirmation email. If your company needs an invoice, message us on WhatsApp before paying.",
+      },
     ],
   },
   "stickers-vinil-impermeable": {
@@ -248,6 +260,14 @@ export const productsEn: Record<string, ProductTranslation> = {
       {
         q: "Is the vinyl water and sun resistant?",
         a: "Yes, it's premium vinyl resistant to water, sun, and scratches: it holds up well on bottles, laptops, skateboards, or surfaces that get wet or sun exposure.",
+      },
+      {
+        q: "How much is shipping and can I pick up in Guadalajara?",
+        a: "Home delivery anywhere in Mexico is $199 MXN and free on orders of $750 MXN or more. If you are in Guadalajara or its metro area, you can pick up at one of 11 Casa Blanca branches for $20 MXN, also free from $750 MXN.",
+      },
+      {
+        q: "How long does the digital proof take?",
+        a: "The digital proof normally arrives within 24 hours of your payment and includes up to 2 rounds of changes. We print nothing without your approval.",
       },
     ],
   },

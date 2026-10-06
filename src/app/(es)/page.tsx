@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { WhatIsYume } from "@/components/WhatIsYume";
 import { Check, MessageCircle, CheckCircle2, Truck, PenTool, MapPin, ShieldCheck } from "lucide-react";
 import { CASABLANCA_PRICE, FREE_SHIPPING_THRESHOLD } from "@/content/shipping";
 import { hasVariants, productDisplayPrice, products } from "@/content/products";
@@ -107,6 +108,8 @@ export default function Home() {
       </ProductRail>
 
       {/* No-minimums differentiator */}
+      <WhatIsYume lang="es" />
+
       <section className="border-y border-line bg-paper-raised">
         <div className="mx-auto max-w-6xl px-6 py-8">
           <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">

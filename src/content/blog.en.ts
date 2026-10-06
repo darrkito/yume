@@ -1,4 +1,5 @@
 import type { BlogPost } from "@/content/blog";
+import { tierPriceRows } from "@/content/products";
 import { BLOG_SLUG_EN } from "@/lib/i18n";
 import { dulceroPostsEn } from "@/content/blog-dulceros.en";
 
@@ -49,6 +50,13 @@ export const blogPostsEn: BlogPost[] = [
     intro:
       "Guadalajara has a strong small-business scene (bakeries, clothing brands, candle makers, jewelry, coffee) selling at bazaars, pop-up markets, or directly through social media. A sticker with your logo is one of the cheapest ways to make your brand look consistent on every order that goes out, with no need for special packaging.",
     sections: [
+      {
+        heading: "How do you order custom temporary tattoos and what does the order include?",
+        body: [
+          "Temporary tattoos are quoted on WhatsApp: there is no fixed published price because it is confirmed with your design, size and quantity. Before production we send you a digital proof, normally within 24 hours and with up to 2 rounds of changes, and we print nothing without your approval.",
+          "We produce in Guadalajara and ship across Mexico. We do not issue invoices (CFDI); if your company needs one, tell us when you ask for a quote.",
+        ],
+      },
       {
         heading: "What they're actually used for",
         body: [
@@ -188,7 +196,7 @@ export const blogPostsEn: BlogPost[] = [
       "Temporary tattoos with your logo for events, brand activations, and celebrations: what they're used for, what we need to quote yours, and how to order custom temporary tattoos in Mexico.",
     category: "Guides",
     publishedAt: "2026-08-31",
-    modifiedAt: "2026-09-23",
+    modifiedAt: "2026-10-06",
     intro:
       "A temporary tattoo with your logo or a design made for the occasion is an effective, affordable way to leave a mark at an event: literally. Temporary tattoos for events work just as well for brand activations as for personal celebrations, and ordering custom temporary tattoos in Mexico is as simple as any other made-to-order product at Yume.",
     sections: [
@@ -379,9 +387,16 @@ export const blogPostsEn: BlogPost[] = [
       "We compared the per-piece price and minimum order of Yume against real Mexican custom-sticker print shops: using real public pricing data.",
     category: "Guides",
     publishedAt: "2026-09-09",
+    modifiedAt: "2026-10-06",
     intro:
       "Before requesting a quote for stickers, it's worth knowing whether the price you're being offered is actually competitive. In September 2026 we checked the public prices of several Mexican custom-sticker print shops: here are the real numbers, compared against Yume's.",
     sections: [
+      {
+        heading: "Is Yume cheaper than other online sticker print shops?",
+        body: [
+          "On a per-piece basis, Yume is among the lowest-priced Mexican print shops we reviewed in September 2026, and it has the lowest minimum order: $100 MXN versus $319-$550 MXN for the competitors we checked.",
+        ],
+      },
       {
         heading: "How we compared",
         body: [
@@ -395,6 +410,14 @@ export const blogPostsEn: BlogPost[] = [
           "Among the Mexican custom-sticker print shops we reviewed, per-piece price ranges from $1.83 to $11.00 MXN, with minimum orders ranging from $319 to $550 MXN: in some cases the real minimum is only reached by buying several full sheets at once.",
           "Yume (Custom Logo Stickers: $2.00 to $1.73 per piece, minimum $100 (50 pieces). Yume) Waterproof Vinyl Stickers: $2.50 to $2.36 per piece, minimum $100 (40 pieces).",
         ],
+        table: {
+          headers: ["", "Price per piece", "Minimum order"],
+          rows: [
+            ["Mexican print shops reviewed (public prices, September 2026)", "$1.83 to $11.00 MXN", "$319 to $550 MXN"],
+            ["Yume: Custom Logo Stickers", "$2.00 to $1.73 MXN", "$100 MXN (50 pieces)"],
+            ["Yume: Waterproof Vinyl Stickers", "$2.50 to $2.36 MXN", "$100 MXN (40 pieces)"],
+          ],
+        },
       },
       {
         heading: "What this means for you",
@@ -853,9 +876,21 @@ export const blogPostsEn: BlogPost[] = [
       "What you need ready to get your custom stickers printed in Mexico (file, size, quantity) and how ordering online works, without needing to visit a print shop in person.",
     category: "Guides",
     publishedAt: "2026-09-29",
+    modifiedAt: "2026-10-06",
     intro:
       "If you're looking for where to print custom stickers in Mexico, most options fall into two groups: printing them yourself at home (with vinyl and a special printer) or ordering them from a shop that already has die-cutting equipment. This guide covers the second option: what you need ready and how ordering your stickers online works, without buying equipment or visiting a shop in person.",
     sections: [
+      {
+        heading: "How much does it cost to print custom stickers in Mexico?",
+        body: [
+          "At Yume, printing custom stickers starts at $100 MXN: 50 pieces of custom logo stickers ($2.00 each) or 40 pieces of waterproof vinyl stickers ($2.50 each). The first 100 pieces are at the regular price and every piece beyond 100 drops 20% (wholesale price). Shipping anywhere in Mexico is free from $750 MXN, and so is pickup in Guadalajara.",
+          "Price by quantity (minimum order is 50 pieces for logo stickers and 40 for vinyl):",
+        ],
+        table: {
+          headers: ["Quantity", "Custom logo stickers", "Waterproof vinyl stickers"],
+          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
+        },
+      },
       {
         heading: "Printing it yourself vs. ordering it done",
         body: [
@@ -875,12 +910,6 @@ export const blogPostsEn: BlogPost[] = [
         body: [
           "Send your design and quantity via WhatsApp or from the online shop, we confirm price and send you a digital proof of the sticker before printing: you can request size or color adjustments at that stage. Once you approve it, it goes to production and ships anywhere in Mexico.",
           "The whole process happens remotely, so it works the same whether you're in Guadalajara (where we produce) or any other city in the country.",
-        ],
-      },
-      {
-        heading: "How much it costs to print custom stickers",
-        body: [
-          "At Yume, pricing is by piece count, not by sheet: Custom Logo Stickers start at $100 (50 pieces) and Waterproof Vinyl Stickers start at $100 (40 pieces), with automatic wholesale pricing past 100 pieces. See the full price comparison against other Mexican print shops in the related guide below.",
         ],
       },
     ],

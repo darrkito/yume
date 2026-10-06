@@ -9,6 +9,7 @@ import { formatBlogDate } from "@/lib/format";
 import { topicsFor } from "@/lib/blog-topics";
 import { hreflangFor, PRODUCT_SLUG_EN, BLOG_SLUG_ES } from "@/lib/i18n";
 import { BlogProductCard } from "@/components/BlogProductCard";
+import { BlogTable } from "@/components/BlogTable";
 import { blogPostingSchema, blogPostMetadata, breadcrumbSchema, notFoundMetadata } from "@/lib/seo";
 
 export function generateStaticParams() {
@@ -83,6 +84,7 @@ export default async function BlogPostPageEn({ params }: { params: Promise<{ slu
                 </p>
               ))}
             </div>
+            {section.table && <BlogTable table={section.table} caption={section.heading} />}
             {i === 0 && (relatedProducts.length > 0 ? (
               <Link href={`/en/products/${PRODUCT_SLUG_EN[relatedProducts[0].slug]}`} className="mt-3 inline-flex min-h-11 items-center text-sm font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
                 See {productsEn[relatedProducts[0].slug].name} →

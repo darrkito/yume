@@ -15,6 +15,7 @@ import { RelatedProducts } from "@/components/RelatedProducts";
 import { RelatedGuides } from "@/components/RelatedGuides";
 import { LocalPickup } from "@/components/LocalPickup";
 import { FaqQuestion } from "@/components/FaqAccordion";
+import { ProductPriceTable } from "@/components/ProductPriceTable";
 import { getGalleryItemsEn } from "@/content/gallery.en";
 import { hreflangFor, PRODUCT_SLUG_EN, PRODUCT_SLUG_ES } from "@/lib/i18n";
 
@@ -133,6 +134,8 @@ export default async function ProductPageEn({ params }: { params: Promise<{ slug
           viewAllHref="/en/gallery"
         />
       )}
+
+      <ProductPriceTable product={product} lang="en" />
 
       <LocalPickup lang="en" />
 
