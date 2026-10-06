@@ -9,6 +9,7 @@ import { useDesignFiles } from "@/components/DesignFileContext";
 import { LogoUploadNote } from "@/components/LogoUploadNote";
 import { MercadoPagoBrick } from "@/components/MercadoPagoBrick";
 import { track } from "@/components/TrackClicks";
+import { readAiSource } from "@/lib/ai-source";
 import { PersonalizationFields } from "@/components/PersonalizationFields";
 import type { PersonalizationInput } from "@/content/personalization";
 import { clearCheckoutDraft, ShippingForm } from "@/components/ShippingForm";
@@ -177,7 +178,7 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
       const res = await fetch("/api/checkout-pro", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ items, customer, delivery, designFileUrls, personalization, note, lang }),
+        body: JSON.stringify({ items, customer, delivery, designFileUrls, personalization, note, lang, src: readAiSource() }),
       });
       const data = await res.json();
       if (!res.ok || !data.initPoint) throw new Error(data.error ?? t.couldNotStartPayment);

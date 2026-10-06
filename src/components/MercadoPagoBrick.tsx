@@ -6,6 +6,7 @@ import { Loader2, Store, XCircle } from "lucide-react";
 import { useCart } from "@/components/CartContext";
 import type { CartItem } from "@/components/CartContext";
 import { track } from "@/components/TrackClicks";
+import { readAiSource } from "@/lib/ai-source";
 import { formatMXN } from "@/lib/format";
 import { ReceiptPrinter } from "@/components/ReceiptPrinter";
 import type { DesignFileUpload } from "@/components/CheckoutView";
@@ -268,7 +269,7 @@ export function MercadoPagoBrick({
               const res = await fetch("/api/checkout-payment", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ items, formData, customer, delivery, designFileUrls, personalization, note, lang }),
+                body: JSON.stringify({ items, formData, customer, delivery, designFileUrls, personalization, note, lang, src: readAiSource() }),
               });
               const data = await res.json().catch(() => ({}));
               if (!res.ok) throw new Error(data.error ?? c.genericError);

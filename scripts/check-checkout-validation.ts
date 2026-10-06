@@ -56,6 +56,10 @@ assert.equal(localizeError("El correo no es válido.", "en"), "The email address
 assert.equal(localizeError("El correo no es válido.", "es"), "El correo no es válido.");
 assert.ok(!/[áéíóú¿]/i.test(localizeError("Algo raro que no conocemos", "en")), "unknown errors must not leak Spanish");
 
+// AI source: stored from a fixed list only
+assert.equal(validateCartItems(dulcero, { personalization: { "dulceros-personalizados": { name: "a", theme: "b" } }, src: "chatgpt" })[0].src, "chatgpt");
+assert.equal(validateCartItems(dulcero, { personalization: { "dulceros-personalizados": { name: "a", theme: "b" } }, src: "<img onerror=x>" })[0].src, undefined);
+
 // opt-out links: only the signed one works
 process.env.CRON_SECRET = "test-secret";
 const { unsubscribeUrl, validUnsubscribe } = await import("../src/lib/unsubscribe");

@@ -8,6 +8,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { TabBar } from "@/components/TabBar";
 import { TrackClicks } from "@/components/TrackClicks";
+import { TrafficSource } from "@/components/TrafficSource";
 import { LanguageBanner } from "@/components/LanguageBanner";
 import { WebMcpProvider } from "@/components/WebMcpProvider";
 import { CartProvider } from "@/components/CartContext";
@@ -153,6 +154,7 @@ export function RootShell({ lang, children }: { lang: "es-MX" | "en"; children: 
             <Footer />
             <TabBar />
             <TrackClicks />
+            <TrafficSource />
             <CartToast />
           </DesignFileProvider>
         </CartProvider>

@@ -21,7 +21,7 @@ export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
     lang = body.lang;
-    const items = validateCartItems(body.items, { personalization: body.personalization, note: body.note, lang: body.lang });
+    const items = validateCartItems(body.items, { personalization: body.personalization, note: body.note, lang: body.lang, src: body.src });
     const customer = validateCustomer(body.customer);
     const delivery = validateDelivery(body.delivery);
     const designFileUrls = validateDesignFileUrls(body.designFileUrls);

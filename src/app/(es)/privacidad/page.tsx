@@ -23,7 +23,7 @@ const SECTIONS = [
   },
   {
     title: "4. Terceros que procesan datos en tu nombre",
-    body: "Usamos Mercado Pago para procesar pagos en línea (tarjeta, SPEI, efectivo en tiendas) y Supabase para almacenar la información de tu pedido de forma segura. Usamos Microsoft Clarity para entender de forma anónima cómo se usa el sitio (mapas de calor, grabaciones de sesión); no usamos Google Analytics ni Meta Pixel en este sitio.",
+    body: "Usamos Mercado Pago para procesar pagos en línea (tarjeta, SPEI, efectivo en tiendas) y Supabase para almacenar la información de tu pedido de forma segura. Usamos Microsoft Clarity para entender de forma anónima cómo se usa el sitio (mapas de calor, grabaciones de sesión); no usamos Google Analytics ni Meta Pixel en este sitio. Si llegas desde un asistente de IA (por ejemplo ChatGPT), guardamos solo una etiqueta con ese origen durante tu visita y, si compras, en tu pedido, para saber qué canales funcionan; no es un dato personal.",
   },
   {
     title: "5. Derechos ARCO",

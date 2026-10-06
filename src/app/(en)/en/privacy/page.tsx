@@ -24,7 +24,7 @@ const SECTIONS = [
   },
   {
     title: "4. Third parties that process data on our behalf",
-    body: "We use Mercado Pago to process online payments (card, SPEI, cash at stores) and Supabase to securely store your order information. We use Microsoft Clarity to anonymously understand how the site is used (heatmaps, session recordings); we do not use Google Analytics or Meta Pixel on this site.",
+    body: "We use Mercado Pago to process online payments (card, SPEI, cash at stores) and Supabase to securely store your order information. We use Microsoft Clarity to anonymously understand how the site is used (heatmaps, session recordings); we do not use Google Analytics or Meta Pixel on this site. If you arrive from an AI assistant (for example ChatGPT), we keep only a label with that origin during your visit and, if you buy, on your order, to learn which channels work; it is not personal data.",
   },
   {
     title: "5. Your rights",

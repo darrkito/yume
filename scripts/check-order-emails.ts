@@ -58,6 +58,12 @@ for (const html of [customerConfirmationEmail(pz).html, businessNotificationEmai
   assert.ok(!html.includes("<b>Unicornios"), "personalization must be escaped");
 }
 assert.ok(!customerConfirmationEmail(ship).html.includes("Personalización"), "no box without personalization");
+// the owner sees where an AI-sent buyer came from (escaped, owner email only)
+const ai = { ...ship, items: [{ ...ship.items[0], src: "chatgpt" }] } as unknown as Order;
+assert.ok(businessNotificationEmail(ai).html.includes("Llegó desde ChatGPT"));
+assert.ok(!customerConfirmationEmail(ai).html.includes("ChatGPT"));
+assert.ok(!businessNotificationEmail(ship).html.includes("Origen"));
+
 // English orders get English emails
 const en = { ...ship, items: [{ ...ship.items[0], locale: "en" }] } as unknown as Order;
 const e1 = customerConfirmationEmail(en);

@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { readAiSource, whatsappMarker } from "@/lib/ai-source";
 
 declare global {
   interface Window {
@@ -28,6 +29,24 @@ const send = (event: string, page: string) => {
  * upload_failed marks a design file that could not be sent. */
 export const track = (event: string) => send(event, typeof location === "undefined" ? "" : location.pathname);
 
+// For visitors an AI assistant sent us, add a short note to the prefilled
+// WhatsApp message so the owner can tell which leads came from where. Done at
+// click time (not in markup) so server-rendered links stay identical for
+// everyone; only touches the message, never the number.
+function tagWhatsAppLink(a: HTMLAnchorElement, pathname: string) {
+  try {
+    const src = readAiSource();
+    if (!src || a.dataset.aiTagged) return;
+    const url = new URL(a.href);
+    const text = url.searchParams.get("text") ?? "";
+    url.searchParams.set("text", `${text}${text ? "\n\n" : ""}${whatsappMarker(src, pathname.startsWith("/en") ? "en" : "es")}`);
+    a.href = url.toString();
+    a.dataset.aiTagged = "1";
+  } catch {
+    // never block the click
+  }
+}
+
 export function TrackClicks() {
   const pathname = usePathname();
   useEffect(() => {
@@ -37,7 +56,10 @@ export function TrackClicks() {
       const tracked = el.closest<HTMLElement>("[data-track]")?.dataset.track;
       const href = el instanceof HTMLAnchorElement ? el.href : "";
       if (tracked) return send(tracked, pathname);
-      if (href.includes("whatsapp.com")) return send("wa_click", pathname);
+      if (href.includes("whatsapp.com")) {
+        tagWhatsAppLink(el as HTMLAnchorElement, pathname);
+        return send("wa_click", pathname);
+      }
       if (href && /^\/(pago|en\/checkout)$/.test(new URL(href).pathname)) return send("begin_checkout", pathname);
       if (el.closest(".tabbar")) return send(`tab_${(el.textContent ?? "").trim().toLowerCase()}`, pathname);
     };

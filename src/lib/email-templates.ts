@@ -1,3 +1,4 @@
+import { aiSourceLabel } from "@/lib/ai-source";
 import { orderLocale, type Order } from "@/lib/orders";
 import { getProduct, type Product } from "@/content/products";
 import { getCasablancaBranch } from "@/content/shipping";
@@ -105,6 +106,7 @@ export function businessNotificationEmail(order: Order): { subject: string; html
     ) +
     row(deliveryBox(order), "14px 40px 0") +
     (order.items.some((i) => i.personalization?.length) ? row(personalizationBox(order), "14px 40px 0") : "") +
+    (order.items[0]?.src ? row(infoBox("Origen", `Llegó desde ${esc(aiSourceLabel(order.items[0].src))} (asistente de IA)`), "14px 40px 0") : "") +
     row(orderBox(order.items, order.total), "14px 40px 0") +
     (order.design_file_urls?.length ? row(designFilesBox(order), "14px 40px 0") : "") +
     (missing.length
