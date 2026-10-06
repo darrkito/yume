@@ -1,6 +1,6 @@
 // Run: npx tsx scripts/check-ai-source.ts
 import assert from "node:assert";
-import { classifyAiSource, isAiSource, whatsappMarker } from "../src/lib/ai-source";
+import { classifyAiSource, isAiSource } from "../src/lib/ai-source";
 
 const own = "studioyume.mx";
 assert.equal(classifyAiSource("?utm_source=chatgpt.com", "", own), "chatgpt"); // what ChatGPT appends
@@ -16,6 +16,4 @@ assert.equal(classifyAiSource("?utm_source=newsletter", "", own), null);
 assert.equal(classifyAiSource("", "not a url", own), null);
 assert.equal(classifyAiSource("", "", own), null);
 assert.ok(isAiSource("chatgpt") && !isAiSource("<script>") && !isAiSource(undefined));
-assert.equal(whatsappMarker("chatgpt", "es"), "(Vi su sitio en ChatGPT)");
-assert.equal(whatsappMarker("chatgpt", "en"), "(Found you via ChatGPT)");
 console.log("check-ai-source: ok");

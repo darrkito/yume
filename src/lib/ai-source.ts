@@ -43,14 +43,6 @@ export function classifyAiSource(search: string, referrer: string, ownHost: stri
 
 const LABEL: Record<AiSource, string> = { chatgpt: "ChatGPT", perplexity: "Perplexity", copilot: "Copilot", gemini: "Gemini", claude: "Claude", other_ai: "" };
 
-/** Short, human note appended to a prefilled WhatsApp message so the owner
- * can see which leads came from an assistant. */
-export function whatsappMarker(src: AiSource, lang: "es" | "en"): string {
-  const name = LABEL[src];
-  if (lang === "en") return name ? `(Found you via ${name})` : "(Found you via an AI assistant)";
-  return name ? `(Vi su sitio en ${name})` : "(Vi su sitio en un asistente de IA)";
-}
-
 export const AI_SOURCE_KEY = "yume_ai_src";
 
 /** The AI source stored for this browser session, if any (client only). */
