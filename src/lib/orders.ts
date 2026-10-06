@@ -22,6 +22,8 @@ export interface Customer {
 }
 
 export interface DesignFileUpload {
+  /** Product slug the file belongs to (language-independent). */
+  slug?: string;
   productName: string;
   fileName: string;
   url: string;
@@ -132,7 +134,7 @@ export function validateDesignFileUrls(raw: unknown): DesignFileUpload[] {
         d && typeof d.productName === "string" && typeof d.fileName === "string" && typeof d.url === "string" && isOwnBucketUrl(d.url),
     )
     .slice(0, 20)
-    .map((d) => ({ productName: d.productName.slice(0, 200), fileName: d.fileName.slice(0, 200), url: d.url }));
+    .map((d) => ({ slug: typeof d.slug === "string" ? d.slug.slice(0, 80) : undefined, productName: d.productName.slice(0, 200), fileName: d.fileName.slice(0, 200), url: d.url }));
 }
 
 // A shopper who retries (rejected card, closed Mercado Pago tab, edited their
@@ -141,7 +143,7 @@ export function validateDesignFileUrls(raw: unknown): DesignFileUpload[] {
 // Orders that already got a payment id are never reused.
 const REUSE_WINDOW_H = 2;
 // jsonb does not preserve key order, so compare cart contents by value.
-const cartKey = (items: CheckoutItem[]) => items.map((i) => `${i.slug}|${i.name}|${i.price}|${i.qty}`).join(";");
+const cartKey = (items: CheckoutItem[]) => items.map((i) => `${i.slug}|${i.name}|${i.price}|${i.qty}|${(i.personalization ?? []).map((p) => `${p.label}=${p.value}`).join(",")}`).join(";");
 
 export async function createPendingOrder({
   customer,

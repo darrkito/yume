@@ -8,6 +8,7 @@ import type { CartItem } from "@/components/CartContext";
 import { ReceiptPrinter } from "@/components/ReceiptPrinter";
 import type { DesignFileUpload } from "@/components/CheckoutView";
 import type { Customer, DeliveryInfo } from "@/lib/orders";
+import type { PersonalizationInput } from "@/content/personalization";
 import type { Lang } from "@/lib/i18n";
 
 type Result =
@@ -63,6 +64,8 @@ export function MercadoPagoBrick({
   customer,
   delivery,
   designFileUrls = [],
+  personalization,
+  note,
   onSettled,
   lang = "es",
 }: {
@@ -71,6 +74,8 @@ export function MercadoPagoBrick({
   customer: Customer;
   delivery: DeliveryInfo;
   designFileUrls?: DesignFileUpload[];
+  personalization?: PersonalizationInput;
+  note?: string;
   onSettled?: () => void;
   lang?: Lang;
 }) {
@@ -178,7 +183,7 @@ export function MercadoPagoBrick({
               const res = await fetch("/api/checkout-payment", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ items, formData, customer, delivery, designFileUrls }),
+                body: JSON.stringify({ items, formData, customer, delivery, designFileUrls, personalization, note }),
               });
               const data = await res.json();
               if (!res.ok) throw new Error(data.error ?? c.genericError);

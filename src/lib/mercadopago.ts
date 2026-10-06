@@ -1,5 +1,6 @@
 import { MercadoPagoConfig } from "mercadopago";
 import { SITE } from "@/content/site";
+import { ORDER_NOTE_LABEL, validateNote, validatePersonalization, type PersonalizationEntry } from "@/content/personalization";
 import { getProduct, cartItemLabel, isValidVariant, resolvePrice } from "@/content/products";
 
 // Server-only client — never import this from a "use client" component.
@@ -43,16 +44,19 @@ export interface CheckoutItem {
   name: string;
   price: number;
   qty: number;
+  variantId?: string;
+  /** Buyer-provided details (name on the box, license no...), see content/personalization.ts. */
+  personalization?: PersonalizationEntry[];
 }
 
 // Trusts only `slug`, `qty`, and `variantId` from the client — `name`/`price`
 // are always re-resolved from the server-side product catalog so a tampered
 // request body can never change what actually gets charged.
-export function validateCartItems(items: unknown): CheckoutItem[] {
+export function validateCartItems(items: unknown, extras: { personalization?: unknown; note?: unknown } = {}): CheckoutItem[] {
   if (!Array.isArray(items) || items.length === 0) {
     throw new Error("El carrito está vacío.");
   }
-  return items.map((raw) => {
+  const checked: CheckoutItem[] = items.map((raw) => {
     const { slug, qty, variantId } = raw as { slug?: unknown; qty?: unknown; variantId?: unknown };
     if (typeof slug !== "string" || typeof qty !== "number" || !Number.isInteger(qty) || qty < 1 || qty > MAX_LINE_QTY) {
       throw new Error("Producto inválido en el carrito.");
@@ -70,6 +74,20 @@ export function validateCartItems(items: unknown): CheckoutItem[] {
       name: cartItemLabel(product, vId),
       price: resolvePrice(product, vId),
       qty: Math.floor(qty),
+      variantId: vId,
     };
   });
+
+  // Personalization is stored once per product (on its first line); the
+  // order note rides on the very first line.
+  const byProduct = validatePersonalization(checked, extras.personalization);
+  const seen = new Set<string>();
+  for (const line of checked) {
+    if (seen.has(line.slug)) continue;
+    seen.add(line.slug);
+    if (byProduct[line.slug]) line.personalization = byProduct[line.slug];
+  }
+  const note = validateNote(extras.note);
+  if (note) checked[0].personalization = [...(checked[0].personalization ?? []), { label: ORDER_NOTE_LABEL, value: note }];
+  return checked;
 }

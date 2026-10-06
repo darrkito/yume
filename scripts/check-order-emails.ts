@@ -48,4 +48,14 @@ assert.ok(b1.html.includes("Generar guía de envío"));
 assert.ok(b1.html.includes("api.whatsapp.com/send?phone=523312345678"), "footer opens a chat with the customer (52 prefix)");
 const b2 = businessNotificationEmail(pickup);
 assert.ok(b2.html.includes("sucursal Casa Blanca elegida"));
+// buyer-provided personalization + note reach both emails, escaped
+const pz = {
+  ...ship,
+  items: [{ ...ship.items[0], personalization: [{ label: "Temática", value: "<b>Unicornios</b>" }, { label: "Nota del pedido", value: "Fiesta el 12" }] }],
+} as unknown as Order;
+for (const html of [customerConfirmationEmail(pz).html, businessNotificationEmail(pz).html]) {
+  assert.ok(html.includes("Personalización") && html.includes("Fiesta el 12"));
+  assert.ok(!html.includes("<b>Unicornios"), "personalization must be escaped");
+}
+assert.ok(!customerConfirmationEmail(ship).html.includes("Personalización"), "no box without personalization");
 console.log("order emails ok");

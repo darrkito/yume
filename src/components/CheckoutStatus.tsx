@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { CheckCircle2, Loader2, XCircle } from "lucide-react";
 import { useCart, type CartItem } from "@/components/CartContext";
+import { clearCheckoutDraft } from "@/components/ShippingForm";
 import { ReceiptPrinter } from "@/components/ReceiptPrinter";
 import { UI, type Lang } from "@/lib/i18n";
 
@@ -51,6 +52,7 @@ export function CheckoutStatus({
   useEffect(() => {
     if (!confirmed || captured.current || items.length === 0) return;
     captured.current = true;
+    clearCheckoutDraft();
     // Reacting to the cart (an external store) finishing its post-hydration
     // resync, guarded to fire once.
     setReceipt({ items, total: confirmed.total, shipping: confirmed.shipping, number: confirmed.number });

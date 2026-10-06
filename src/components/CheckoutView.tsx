@@ -1,14 +1,16 @@
 "use client";
 
 import { itemName } from "@/components/useAddProduct";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { CreditCard, ExternalLink, Lock, ShieldCheck, CheckCircle2 } from "lucide-react";
 import { useCart } from "@/components/CartContext";
 import { useDesignFiles } from "@/components/DesignFileContext";
 import { LogoUploadNote } from "@/components/LogoUploadNote";
 import { MercadoPagoBrick } from "@/components/MercadoPagoBrick";
-import { ShippingForm } from "@/components/ShippingForm";
+import { PersonalizationFields } from "@/components/PersonalizationFields";
+import type { PersonalizationInput } from "@/content/personalization";
+import { clearCheckoutDraft, ShippingForm } from "@/components/ShippingForm";
 import { getProduct, type Product } from "@/content/products";
 import { productsEn } from "@/content/products.en";
 import type { Customer, DeliveryInfo } from "@/lib/orders";
@@ -18,9 +20,27 @@ import { UI, type Lang } from "@/lib/i18n";
 
 type Mode = "form" | "choose" | "onsite";
 export interface DesignFileUpload {
+  slug?: string;
   productName: string;
   fileName: string;
   url: string;
+}
+
+const fileKey = (f: File) => `${f.name}:${f.size}:${f.lastModified}`;
+
+function readJson<T>(key: string, fallback: T, session = false): T {
+  try {
+    const raw = (session ? sessionStorage : localStorage).getItem(key);
+    return raw ? (JSON.parse(raw) as T) : fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+function writeJson(key: string, value: unknown, session = false) {
+  try {
+    (session ? sessionStorage : localStorage).setItem(key, JSON.stringify(value));
+  } catch {}
 }
 
 export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
@@ -35,12 +55,24 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
   const [settled, setSettled] = useState(false);
   const [sendDesignLater, setSendDesignLater] = useState(false);
   const [designAttempted, setDesignAttempted] = useState(false);
+  // What the buyer typed survives going back, a reload and a trip to Mercado
+  // Pago: personalization + note in localStorage, uploaded files (their
+  // Storage links, never the File) in sessionStorage.
+  const [personalization, setPersonalization] = useState<PersonalizationInput>(() => readJson("yume_personalization_v1", {}));
+  const [note, setNote] = useState<string>(() => readJson("yume_order_note_v1", ""));
+  const [uploaded, setUploaded] = useState<Record<string, { key: string; upload: DesignFileUpload }>>(() => readJson("yume_uploads_v1", {}, true));
+  useEffect(() => writeJson("yume_personalization_v1", personalization), [personalization]);
+  useEffect(() => writeJson("yume_order_note_v1", note), [note]);
+  useEffect(() => writeJson("yume_uploads_v1", uploaded, true), [uploaded]);
+  useEffect(() => {
+    if (settled) clearCheckoutDraft();
+  }, [settled]);
   const t = UI[lang];
   const nameOf = (p: Product) => (lang === "en" ? (productsEn[p.slug]?.name ?? p.name) : p.name);
   const designProducts = [...new Set(items.map((i) => i.slug))]
     .map((slug) => getProduct(slug))
     .filter((p): p is Product => Boolean(p?.requiresImage));
-  const missingDesigns = designProducts.filter((p) => !getDesignFile(p.slug));
+  const missingDesigns = designProducts.filter((p) => !getDesignFile(p.slug) && !uploaded[p.slug]);
   // Derived live, so the message disappears as soon as the shopper fixes it.
   const designBlocked = missingDesigns.length > 0 && !sendDesignLater;
   const shopHref = lang === "en" ? "/en/products" : "/productos";
@@ -58,10 +90,17 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
   // checkout error instead of silently dropping the customer's file.
   const uploadDesignFiles = async (): Promise<DesignFileUpload[]> => {
     const uploads: DesignFileUpload[] = [];
-    for (const item of items) {
-      const product = getProduct(item.slug);
+    const cache = { ...uploaded };
+    for (const slug of [...new Set(items.map((i) => i.slug))]) {
+      const product = getProduct(slug);
       if (!product?.requiresImage) continue;
-      const file = getDesignFile(item.slug);
+      const file = getDesignFile(slug);
+      const done = cache[slug];
+      // Already uploaded (same file, or the file is gone after a reload): reuse.
+      if (done && (!file || done.key === fileKey(file))) {
+        uploads.push(done.upload);
+        continue;
+      }
       if (!file) continue;
       const prep = await fetch("/api/upload-design", {
         method: "POST",
@@ -84,8 +123,11 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
       });
       const data = await res.json().catch(() => ({}));
       if (!res.ok) throw new Error(data.error ?? t.couldNotUploadFile);
-      uploads.push({ productName: product.name, fileName: file.name, url: data.url });
+      const upload = { slug, productName: product.name, fileName: file.name, url: data.url };
+      cache[slug] = { key: fileKey(file), upload };
+      uploads.push(upload);
     }
+    setUploaded(cache);
     return uploads;
   };
 
@@ -116,7 +158,7 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
       const res = await fetch("/api/checkout-pro", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ items, customer, delivery, designFileUrls }),
+        body: JSON.stringify({ items, customer, delivery, designFileUrls, personalization, note }),
       });
       const data = await res.json();
       if (!res.ok || !data.initPoint) throw new Error(data.error ?? t.couldNotStartPayment);
@@ -170,19 +212,35 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
         <div className={settled ? "" : "lg:order-1 lg:col-start-1 lg:row-start-1"}>
           {error && <p className="mt-6 rounded-xl border border-line bg-paper p-4 text-sm text-ink">{error}</p>}
 
-          {mode === "form" && (
-            <div className="mt-10">
+          {/* Stays mounted (just hidden) after step 1 so "edit details" brings
+              back everything typed instead of an empty form. */}
+          {(
+            <div className="mt-10" hidden={mode !== "form"}>
               <ShippingForm
                 lang={lang}
                 subtotal={total}
                 onMethodChange={setFormMethod}
                 beforeSubmit={
-                  designProducts.length > 0 && (
+                  <>
+                    <PersonalizationFields
+                      items={items}
+                      values={personalization}
+                      onChange={(slug, id, value) => setPersonalization((p) => ({ ...p, [slug]: { ...p[slug], [id]: value } }))}
+                      note={note}
+                      onNoteChange={setNote}
+                      lang={lang}
+                    />
+                  {designProducts.length > 0 && (
                     <div id="design-files">
                       <h2 className="font-display text-lg text-ink">{t.yourLogoOrDesign}</h2>
                       <p className="mt-1 text-xs leading-relaxed text-ink-soft">{t.designFilesIntro}</p>
                       {designProducts.map((p) => (
-                        <LogoUploadNote key={p.slug} slug={p.slug} lang={lang} heading={nameOf(p)} />
+                        <div key={p.slug}>
+                          <LogoUploadNote slug={p.slug} lang={lang} heading={nameOf(p)} />
+                          {!getDesignFile(p.slug) && uploaded[p.slug] && (
+                            <p className="mt-1 text-xs font-medium text-ink">✓ {uploaded[p.slug].upload.fileName}</p>
+                          )}
+                        </div>
                       ))}
                       <label className="mt-4 flex min-h-11 cursor-pointer items-center gap-3 text-sm text-ink">
                         <input
@@ -199,7 +257,8 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
                         </p>
                       )}
                     </div>
-                  )
+                  )}
+                  </>
                 }
                 onSubmit={async ({ customer: c, delivery: d }) => {
                   setError(null);
@@ -271,6 +330,8 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
                 customer={customer}
                 delivery={delivery}
                 designFileUrls={designFileUrls}
+                personalization={personalization}
+                note={note}
                 onSettled={() => setSettled(true)}
                 lang={lang}
               />

@@ -12,6 +12,40 @@ const FIELD_CLASS =
   "w-full rounded-lg border border-line bg-paper px-4 py-3 text-sm text-ink placeholder:text-ink-soft/60 focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/30";
 const LABEL_CLASS = "mb-1.5 block text-xs font-medium text-ink-soft";
 
+const EMPTY_VALUES = {
+  name: "",
+  email: "",
+  phone: "",
+  street: "",
+  number: "",
+  neighborhood: "",
+  city: "",
+  state: "",
+  zip: "",
+  references: "",
+};
+
+export const DRAFT_KEY = "yume_checkout_draft_v1";
+
+function readDraft() {
+  try {
+    const raw = sessionStorage.getItem(DRAFT_KEY);
+    return raw ? JSON.parse(raw) : null;
+  } catch {
+    return null;
+  }
+}
+
+/** Forget everything typed at checkout once the order is placed. */
+export function clearCheckoutDraft() {
+  try {
+    sessionStorage.removeItem(DRAFT_KEY);
+    sessionStorage.removeItem("yume_uploads_v1");
+    localStorage.removeItem("yume_personalization_v1");
+    localStorage.removeItem("yume_order_note_v1");
+  } catch {}
+}
+
 export function ShippingForm({
   onSubmit,
   onMethodChange,
@@ -42,18 +76,15 @@ export function ShippingForm({
     onMethodChange?.(deliveryMethod);
   }, [deliveryMethod, onMethodChange]);
   const [branchId, setBranchId] = useState(branches[0].id);
-  const [values, setValues] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    street: "",
-    number: "",
-    neighborhood: "",
-    city: "Guadalajara",
-    state: "Jalisco",
-    zip: "",
-    references: "",
-  });
+  const [values, setValues] = useState<typeof EMPTY_VALUES>(() => ({ ...EMPTY_VALUES, ...readDraft() }));
+
+  // Draft survives a reload or coming back from Mercado Pago (never any card
+  // data: the form has none). Cleared by clearCheckoutDraft() once paid.
+  useEffect(() => {
+    try {
+      sessionStorage.setItem(DRAFT_KEY, JSON.stringify(values));
+    } catch {}
+  }, [values]);
 
   const update = (key: keyof typeof values) => (e: React.ChangeEvent<HTMLInputElement>) =>
     setValues((v) => ({ ...v, [key]: e.target.value }));
@@ -151,7 +182,7 @@ export function ShippingForm({
               value={values.phone}
               onChange={(e) => {
                 update("phone")(e);
-                checkDigits(10, 13, (n) => t.phoneDigits.replace("{n}", String(n)))(e);
+                checkDigits(10, 12, (n) => t.phoneDigits.replace("{n}", String(n)))(e);
               }}
               placeholder="33 1234 5678"
             />
@@ -224,7 +255,7 @@ export function ShippingForm({
             <input
               id="street"
               required
-              autoComplete="address-line1"
+              autoComplete="shipping address-line1"
               className={FIELD_CLASS}
               value={values.street}
               onChange={update("street")}
@@ -238,7 +269,7 @@ export function ShippingForm({
             <input
               id="number"
               required
-              autoComplete="address-line2"
+              autoComplete="off"
               className={FIELD_CLASS}
               value={values.number}
               onChange={update("number")}
@@ -252,7 +283,7 @@ export function ShippingForm({
             <input
               id="neighborhood"
               required
-              autoComplete="address-line3"
+              autoComplete="shipping address-line2"
               className={FIELD_CLASS}
               value={values.neighborhood}
               onChange={update("neighborhood")}
@@ -266,7 +297,7 @@ export function ShippingForm({
             <input
               id="city"
               required
-              autoComplete="address-level2"
+              autoComplete="shipping address-level2"
               className={FIELD_CLASS}
               value={values.city}
               onChange={update("city")}
@@ -279,7 +310,7 @@ export function ShippingForm({
             <input
               id="state"
               required
-              autoComplete="address-level1"
+              autoComplete="shipping address-level1"
               className={FIELD_CLASS}
               value={values.state}
               onChange={update("state")}
@@ -292,7 +323,7 @@ export function ShippingForm({
             <input
               id="zip"
               required
-              autoComplete="postal-code"
+              autoComplete="shipping postal-code"
               inputMode="numeric"
               className={FIELD_CLASS}
               value={values.zip}

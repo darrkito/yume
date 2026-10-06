@@ -32,6 +32,22 @@ assert.equal(validateDesignFileUrls("nope").length, 0);
 // quantities must be whole numbers
 assert.throws(() => validateCartItems([{ slug: "x", qty: 1.5 }]));
 
+// personalization: required fields enforced per product/option, stored on the line
+const dulcero = [{ slug: "dulceros-personalizados", qty: 1, variantId: "12" }];
+assert.throws(() => validateCartItems(dulcero, { personalization: {} }), /Falta/);
+const [dl] = validateCartItems(dulcero, { personalization: { "dulceros-personalizados": { name: " Sofía 7 años ", theme: "Unicornios", bogus: "x" } } });
+assert.deepEqual(dl.personalization, [
+  { label: "Nombre o texto de la caja", value: "Sofía 7 años" },
+  { label: "Temática", value: "Unicornios" },
+]);
+assert.throws(() => validateCartItems(dulcero, { personalization: { "dulceros-personalizados": { name: "a", theme: "b", eventDate: "mañana" } } }), /Fecha/);
+// recetario data only required when we design it
+assert.doesNotThrow(() => validateCartItems([{ slug: "recetario-medico-personalizado", qty: 1, variantId: "sin-diseno" }]));
+assert.throws(() => validateCartItems([{ slug: "recetario-medico-personalizado", qty: 1, variantId: "con-diseno" }]), /Falta/);
+// order note rides on the first line, trimmed
+const [nl] = validateCartItems(dulcero, { personalization: { "dulceros-personalizados": { name: "a", theme: "b" } }, note: "  fiesta el 12  " });
+assert.equal(nl.personalization!.at(-1)!.value, "fiesta el 12");
+
 console.log("check-checkout-validation: ok");
 }
 main();

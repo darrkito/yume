@@ -469,6 +469,7 @@ export const products: Product[] = [
       "Envías tu diseño en formato editable o lo diseñamos contigo",
       "Cada pieza se aprueba contigo antes de producirse",
     ],
+    requiresImage: true,
     image: "/recetario-medico.webp",
     variants: [
       { id: "sin-diseno", label: "Sin diseño: ya tienes tu diseño listo", price: 320, default: true },

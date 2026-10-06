@@ -22,10 +22,10 @@ import {
 // customer ticked "I'll send it on WhatsApp" at checkout. Derived from the
 // order itself (server-side catalog + stored uploads), not a client flag.
 function missingDesignNames(order: Order): string[] {
-  const uploaded = new Set((order.design_file_urls ?? []).map((f) => f.productName));
+  const uploaded = new Set((order.design_file_urls ?? []).flatMap((f) => [f.productName, f.slug ?? ""]));
   return [...new Set(order.items.map((i) => i.slug))]
     .map((slug) => getProduct(slug))
-    .filter((p): p is Product => Boolean(p?.requiresImage) && !uploaded.has(p!.name))
+    .filter((p): p is Product => Boolean(p?.requiresImage) && !uploaded.has(p!.name) && !uploaded.has(p!.slug))
     .map((p) => p.name);
 }
 
@@ -46,6 +46,22 @@ function deliveryBox(order: Order): string {
       addr.references ? `<br />Referencias: ${esc(addr.references)}` : ""
     }`,
   );
+}
+
+/** What the buyer wrote for each product (name on the box, license no...) and
+ * the order note, grouped under their line. */
+function personalizationBox(order: Order): string {
+  const lines = order.items.filter((i) => i.personalization?.length);
+  if (!lines.length) return "";
+  const html = lines
+    .map(
+      (i) =>
+        `<p style="margin:0 0 4px;"><strong style="color:${C.ink};">${esc(i.name)}</strong></p><ul style="margin:0 0 10px;padding-left:18px;">${i
+          .personalization!.map((p) => `<li>${esc(p.label)}: <strong style="color:${C.ink};">${esc(p.value)}</strong></li>`)
+          .join("")}</ul>`,
+    )
+    .join("");
+  return infoBox("Personalización", html);
 }
 
 function designFilesBox(order: Order): string {
@@ -88,6 +104,7 @@ export function businessNotificationEmail(order: Order): { subject: string; html
       ),
     ) +
     row(deliveryBox(order), "14px 40px 0") +
+    (order.items.some((i) => i.personalization?.length) ? row(personalizationBox(order), "14px 40px 0") : "") +
     row(orderBox(order.items, order.total), "14px 40px 0") +
     (order.design_file_urls?.length ? row(designFilesBox(order), "14px 40px 0") : "") +
     (missing.length
@@ -161,6 +178,7 @@ export function customerConfirmationEmail(order: Order): { subject: string; html
         )
       : "") +
     row(deliveryBox(order), "16px 40px 0") +
+    (order.items.some((i) => i.personalization?.length) ? row(personalizationBox(order), "14px 40px 0") : "") +
     row(
       heading2("Qué sigue") +
         steps([
