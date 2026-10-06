@@ -40,7 +40,7 @@ export const SITE = {
   /** Google Business Profile share link (g.page / maps.app.goo.gl). Set it
    * once the service-area profile is verified: it feeds Organization.sameAs
    * and hasMap, the strongest single tie between the site and the local entity. */
-  gbpUrl: undefined as string | undefined,
+  gbpUrl: "https://share.google/HK2MSEQMWqxjFl15G" as string | undefined,
   /** Other real, owned profiles (Facebook, TikTok, Bing Places, directories). */
   otherProfiles: [] as string[],
 };
