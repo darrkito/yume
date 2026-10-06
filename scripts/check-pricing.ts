@@ -30,7 +30,9 @@ assert.equal(resolvePrice(dulcero, "5"), 375);
 assert.equal(resolvePrice(dulcero, "13"), 975);
 assert.equal(resolvePrice(dulcero, "200"), 15000);
 assert.equal(isValidVariant(dulcero, "4"), false);
-const [dLine] = validateCartItems([{ slug: dulcero.slug, qty: 1, variantId: "12", price: 1 }]);
+const [dLine] = validateCartItems([{ slug: dulcero.slug, qty: 1, variantId: "12", price: 1 }], {
+  personalization: { [dulcero.slug]: { name: "Sofía", theme: "Unicornios" } }, // required for dulceros
+});
 assert.equal(dLine.price, 900);
 
 console.log("pricing checks OK");
