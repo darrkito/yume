@@ -186,7 +186,10 @@ export function ShippingForm({
               value={values.phone}
               onChange={(e) => {
                 update("phone")(e);
-                checkDigits(10, 12, (n) => t.phoneDigits.replace("{n}", String(n)))(e);
+                // Same rule as the server: 10 digits, or 52 + 10 (country code).
+                const digits = e.target.value.replace(/\D/g, "");
+                const ok = digits.length === 0 || digits.length === 10 || (digits.length === 12 && digits.startsWith("52"));
+                e.target.setCustomValidity(ok ? "" : t.phoneDigits.replace("{n}", String(digits.length)));
               }}
               placeholder="33 1234 5678"
             />
