@@ -1,11 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Preference } from "mercadopago";
-import { getMpClient, validateCartItems } from "@/lib/mercadopago";
+import { checkoutBaseUrl, getMpClient, notificationUrl, validateCartItems } from "@/lib/mercadopago";
 import { createPendingOrder, validateCustomer, validateDelivery, validateDesignFileUrls } from "@/lib/orders";
 import { deliverySurcharge } from "@/content/shipping";
-import { SITE } from "@/content/site";
+import { rateLimited } from "@/lib/rate-limit";
 
 export async function POST(req: NextRequest) {
+  if (rateLimited(req, "checkout", 10)) {
+    return NextResponse.json({ error: "Demasiados intentos. Espera un minuto e intenta de nuevo." }, { status: 429 });
+  }
   try {
     const body = await req.json();
     const items = validateCartItems(body.items);
@@ -43,19 +46,21 @@ export async function POST(req: NextRequest) {
         ],
         payer: { name: customer.name, email: customer.email },
         external_reference: order.id,
-        notification_url: `${SITE.url}/api/mercadopago/webhook`,
+        notification_url: notificationUrl(),
         back_urls: {
-          success: `${SITE.url}/pago/exito`,
-          failure: `${SITE.url}/pago/error`,
-          pending: `${SITE.url}/pago/pendiente`,
+          success: `${checkoutBaseUrl()}/pago/exito`,
+          failure: `${checkoutBaseUrl()}/pago/error`,
+          pending: `${checkoutBaseUrl()}/pago/pendiente`,
         },
-        auto_return: "approved",
+        // MP refuses auto_return with localhost back_urls (local runs).
+        ...(notificationUrl() ? { auto_return: "approved" as const } : {}),
         statement_descriptor: "YUME",
       },
     });
 
     return NextResponse.json({ initPoint: result.init_point, orderId: order.id });
   } catch (err) {
+    console.error("[checkout-pro] error", err);
     const message = err instanceof Error ? err.message : "Error al crear la preferencia de pago.";
     return NextResponse.json({ error: message }, { status: 400 });
   }

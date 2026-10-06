@@ -1,24 +1,21 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Payment } from "mercadopago";
-import { getMpClient, validateCartItems } from "@/lib/mercadopago";
-import {
-  createPendingOrder,
-  markOrderAsPaid,
-  markOrderAsFailed,
-  markEmailsAsSent,
-  validateCustomer,
-  validateDelivery,
-  validateDesignFileUrls,
-} from "@/lib/orders";
+import { getMpClient, notificationUrl, validateCartItems } from "@/lib/mercadopago";
+import { createPendingOrder, validateCustomer, validateDelivery, validateDesignFileUrls } from "@/lib/orders";
+import { applyPayment } from "@/lib/payments";
+import { rateLimited } from "@/lib/rate-limit";
 import { deliverySurcharge } from "@/content/shipping";
-import { sendOrderEmails } from "@/lib/email";
-import { SITE } from "@/content/site";
 
 // Backs the on-site Payment Brick (card entry + OXXO/cash — no redirect).
 // `transaction_amount` is always recomputed from `items` server-side; the
 // amount inside `formData` is never trusted directly, since it travels
 // through the client before reaching us.
 export async function POST(req: NextRequest) {
+  if (rateLimited(req, "checkout", 10)) {
+    return NextResponse.json({ error: "Demasiados intentos. Espera un minuto e intenta de nuevo." }, { status: 429 });
+  }
+  let result;
+  let orderId: string;
   try {
     const body = await req.json();
     const items = validateCartItems(body.items);
@@ -29,14 +26,11 @@ export async function POST(req: NextRequest) {
     const total = subtotal + deliverySurcharge(delivery.method, subtotal);
     const formData = body.formData ?? {};
 
-    if (!formData.payer?.email) {
-      return NextResponse.json({ error: "Falta el correo del pagador." }, { status: 400 });
-    }
-
     const order = await createPendingOrder({ customer, delivery, items, total, designFileUrls });
+    orderId = order.id;
 
     const payment = new Payment(getMpClient());
-    const result = await payment.create({
+    result = await payment.create({
       body: {
         transaction_amount: total,
         token: formData.token,
@@ -48,39 +42,40 @@ export async function POST(req: NextRequest) {
         payment_method_id: formData.payment_method_id,
         issuer_id: formData.issuer_id,
         payer: {
-          email: formData.payer.email,
-          identification: formData.payer.identification,
+          // The order's email, not whatever the Brick form sent, so the
+          // receipt, the order and Mercado Pago all agree.
+          email: customer.email,
+          identification: formData.payer?.identification,
         },
-        notification_url: `${SITE.url}/api/mercadopago/webhook`,
+        notification_url: notificationUrl(),
         external_reference: order.id,
+        statement_descriptor: "YUME",
       },
-    });
-
-    // The Brick resolves synchronously, so we finalize the order right here
-    // instead of waiting for the webhook — the webhook still fires too and
-    // is the idempotent source of truth (emails_sent guards against a
-    // duplicate send if both paths race).
-    if (result.status === "approved" && result.id) {
-      const updatedOrder = await markOrderAsPaid(order.id, String(result.id));
-      if (!updatedOrder.emails_sent) {
-        await sendOrderEmails(updatedOrder);
-        await markEmailsAsSent(order.id);
-      }
-    } else if (result.status === "rejected") {
-      await markOrderAsFailed(order.id);
-    }
-    // "pending" (e.g. an OXXO voucher not yet paid) is left as-is — the
-    // webhook finalizes it whenever the customer actually pays at the store.
-
-    return NextResponse.json({
-      id: result.id,
-      orderId: order.id,
-      status: result.status,
-      status_detail: result.status_detail,
-      point_of_interaction: result.point_of_interaction,
+      // One key per order + card token: a network retry of the same attempt
+      // returns the same payment instead of charging twice.
+      requestOptions: { idempotencyKey: `${order.id}:${formData.token ?? formData.payment_method_id ?? "x"}` },
     });
   } catch (err) {
+    console.error("[checkout-payment] error", err);
     const message = err instanceof Error ? err.message : "Error al procesar el pago.";
     return NextResponse.json({ error: message }, { status: 400 });
   }
+
+  // Money may already have moved. From here on, bookkeeping problems are
+  // logged for the owner and never shown to the customer as a failed payment
+  // (that is how a card gets charged twice). The webhook re-applies the same
+  // payment later, so a transient failure here self-heals.
+  try {
+    await applyPayment(orderId, result);
+  } catch (err) {
+    console.error(`[ALERT] payment ${result.id} (${result.status}) for order ${orderId} could not be recorded`, err);
+  }
+
+  return NextResponse.json({
+    id: result.id,
+    orderId,
+    status: result.status,
+    status_detail: result.status_detail,
+    point_of_interaction: result.point_of_interaction,
+  });
 }

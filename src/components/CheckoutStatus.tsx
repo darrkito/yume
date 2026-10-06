@@ -22,40 +22,45 @@ export function CheckoutStatus({
   clearCart?: boolean;
   lang?: Lang;
 }) {
-  const { items, total, clear } = useCart();
+  const { items, clear } = useCart();
   const Icon = ICONS[variant];
   const t = UI[lang];
   const shopHref = lang === "en" ? "/en/products" : "/productos";
 
-  // Snapshot the cart's contents before clearing it — this is the only
-  // place the just-completed order's line items are still available
-  // client-side, and the receipt below shows exactly what was ordered.
-  // Can't capture this in a useState lazy initializer: useSyncExternalStore
-  // deliberately renders an empty cart on the first client render to match
-  // SSR, then resyncs to the real value a render later — a one-shot
-  // initializer would catch that first, empty render. Reacting to `items`
-  // itself (guarded so it only fires once) captures whichever render
-  // actually has the real data.
-  const [receipt, setReceipt] = useState<{ items: CartItem[]; total: number } | null>(null);
+  // The result pages are reachable by anyone (a stale tab, a typed URL), so
+  // the cart is only cleared once the server confirms the order the buyer
+  // came back from (Mercado Pago appends ?external_reference=<order id>) is
+  // paid or pending. The receipt shows the real order number and the total
+  // actually charged, not the cart's.
+  const [confirmed, setConfirmed] = useState<{ number: string; total: number; shipping: number } | null>(null);
+  const [receipt, setReceipt] = useState<{ items: CartItem[]; total: number; shipping: number; number: string } | null>(null);
   const captured = useRef(false);
 
   useEffect(() => {
-    if (!clearCart || captured.current) return;
-    if (items.length > 0) {
-      captured.current = true;
-      // Reacting to the cart (an external store via useSyncExternalStore)
-      // finishing its post-hydration resync, guarded to fire once — not a
-      // derived-from-props case the lint rule is meant to catch.
-      // eslint-disable-next-line react-hooks/set-state-in-effect
-      setReceipt({ items, total });
-      clear();
-    }
-  }, [items, total, clearCart, clear]);
+    if (!clearCart) return;
+    const ref = new URLSearchParams(window.location.search).get("external_reference");
+    if (!ref) return;
+    fetch(`/api/order-status?id=${encodeURIComponent(ref)}`)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((o) => {
+        if (o && (o.status === "paid" || o.status === "pending")) setConfirmed({ number: o.number, total: o.total, shipping: o.shipping });
+      })
+      .catch(() => {});
+  }, [clearCart]);
+
+  useEffect(() => {
+    if (!confirmed || captured.current || items.length === 0) return;
+    captured.current = true;
+    // Reacting to the cart (an external store) finishing its post-hydration
+    // resync, guarded to fire once.
+    setReceipt({ items, total: confirmed.total, shipping: confirmed.shipping, number: confirmed.number });
+    clear();
+  }, [confirmed, items, clear]);
 
   return (
     <section className="mx-auto max-w-lg px-6 py-24 text-center">
       {receipt ? (
-        <ReceiptPrinter items={receipt.items} total={receipt.total} lang={lang} />
+        <ReceiptPrinter items={receipt.items} total={receipt.total} shipping={receipt.shipping} orderNumber={receipt.number} lang={lang} />
       ) : (
         <Icon size={40} className={`mx-auto text-brand ${variant === "pending" ? "animate-spin" : ""}`} />
       )}

@@ -10,16 +10,14 @@ function getTransporter() {
   return nodemailer.createTransport({ service: "gmail", auth: { user, pass } });
 }
 
-// Both emails are best-effort — a missing Gmail app password (not configured
-// yet) or a transient SMTP failure must never break the checkout/webhook
-// flow itself, since the order and payment are already correctly recorded
-// regardless of whether the notification email goes out. Errors are logged,
-// not thrown.
-export async function sendOrderEmails(order: Order): Promise<void> {
+// Never throws: the order and payment are already recorded regardless of
+// whether the notification goes out. Returns true only when both emails were
+// accepted, so the caller can release its claim and let the next webhook retry.
+export async function sendOrderEmails(order: Order): Promise<boolean> {
   const transporter = getTransporter();
   if (!transporter) {
     console.warn("[email] GMAIL_USER/GMAIL_APP_PASSWORD no configurados — omitiendo envío de correos.");
-    return;
+    return false;
   }
 
   const business = businessNotificationEmail(order);
@@ -33,6 +31,7 @@ export async function sendOrderEmails(order: Order): Promise<void> {
   for (const r of results) {
     if (r.status === "rejected") console.error("[email] Error enviando correo:", r.reason);
   }
+  return results.every((r) => r.status === "fulfilled");
 }
 
 /** Sends the single abandoned-checkout reminder. Returns whether it went out

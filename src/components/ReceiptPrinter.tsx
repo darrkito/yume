@@ -8,8 +8,8 @@ import { formatMXN } from "@/lib/format";
 import type { Lang } from "@/lib/i18n";
 
 const COPY = {
-  es: { processing: "Imprimiendo tu recibo…", total: "Total", thanks: "¡Gracias por tu compra!", tagline: "Guadalajara, Jalisco" },
-  en: { processing: "Printing your receipt…", total: "Total", thanks: "Thank you for your order!", tagline: "Guadalajara, Jalisco" },
+  es: { processing: "Imprimiendo tu recibo…", total: "Total", thanks: "¡Gracias por tu compra!", shipping: "Envío", tagline: "Guadalajara, Jalisco" },
+  en: { processing: "Printing your receipt…", total: "Total", thanks: "Thank you for your order!", shipping: "Shipping", tagline: "Guadalajara, Jalisco" },
 };
 
 // Deterministic (no Math.random, avoids hydration mismatch) torn-edge
@@ -32,10 +32,23 @@ const TORN_EDGE = (() => {
 
 type Stage = "processing" | "printing" | "complete";
 
-export function ReceiptPrinter({ items, total, lang = "es" }: { items: CartItem[]; total: number; lang?: Lang }) {
+// `orderNumber` is the real order reference (same "#xxxxxxxx" as the emails);
+// `total` is what was actually charged, so `shipping` is listed as its own line.
+export function ReceiptPrinter({
+  items,
+  total,
+  shipping = 0,
+  orderNumber,
+  lang = "es",
+}: {
+  items: CartItem[];
+  total: number;
+  shipping?: number;
+  orderNumber?: string;
+  lang?: Lang;
+}) {
   const [stage, setStage] = useState<Stage>("processing");
   const t = COPY[lang];
-  const orderNumber = useOrderNumber();
 
   useEffect(() => {
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -79,6 +92,12 @@ export function ReceiptPrinter({ items, total, lang = "es" }: { items: CartItem[
                 <span>{formatMXN(item.price * item.qty)}</span>
               </li>
             ))}
+            {shipping > 0 && (
+              <li>
+                <span>{t.shipping}</span>
+                <span>{formatMXN(shipping)}</span>
+              </li>
+            )}
           </ul>
           <div className="receipt-rule" />
           <div className="receipt-total">
@@ -91,19 +110,4 @@ export function ReceiptPrinter({ items, total, lang = "es" }: { items: CartItem[
       </div>
     </div>
   );
-}
-
-// A short, stable order reference derived once at mount time — cosmetic
-// only, the real order id lives in Supabase via the webhook. Set in an
-// effect (not a lazy useState initializer) since Date.now() would differ
-// between the server render and the client, causing a hydration mismatch.
-function useOrderNumber() {
-  const [n, setN] = useState<number | null>(null);
-  useEffect(() => {
-    // Client-only Date.now() read, exactly the hydration-mismatch case
-    // this effect exists to avoid (see comment above).
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setN(Math.floor(1000 + (Date.now() % 9000)));
-  }, []);
-  return n;
 }

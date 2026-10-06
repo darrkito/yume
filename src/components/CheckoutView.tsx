@@ -63,12 +63,28 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
       if (!product?.requiresImage) continue;
       const file = getDesignFile(item.slug);
       if (!file) continue;
-      const body = new FormData();
-      body.set("file", file);
-      const res = await fetch("/api/upload-design", { method: "POST", body });
-      const data = await res.json();
+      const prep = await fetch("/api/upload-design", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ fileName: file.name, size: file.size }),
+      });
+      const prepData = await prep.json().catch(() => ({}));
+      if (!prep.ok) throw new Error(prepData.error ?? t.couldNotUploadFile);
+      // The file goes straight to Supabase Storage (bypasses Vercel's 4.5 MB
+      // request limit); same multipart shape the Supabase SDK uses.
+      const form = new FormData();
+      form.append("cacheControl", "3600");
+      form.append("", file);
+      const put = await fetch(prepData.signedUrl, { method: "PUT", body: form });
+      if (!put.ok) throw new Error(t.couldNotUploadFile);
+      const res = await fetch("/api/upload-design", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ path: prepData.path }),
+      });
+      const data = await res.json().catch(() => ({}));
       if (!res.ok) throw new Error(data.error ?? t.couldNotUploadFile);
-      uploads.push({ productName: product.name, fileName: data.fileName ?? file.name, url: data.url });
+      uploads.push({ productName: product.name, fileName: file.name, url: data.url });
     }
     return uploads;
   };
@@ -104,6 +120,9 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
       });
       const data = await res.json();
       if (!res.ok || !data.initPoint) throw new Error(data.error ?? t.couldNotStartPayment);
+      try {
+        localStorage.setItem("yume_last_order", data.orderId);
+      } catch {}
       window.location.href = data.initPoint;
     } catch (err) {
       setError(err instanceof Error ? err.message : t.couldNotStartPayment);

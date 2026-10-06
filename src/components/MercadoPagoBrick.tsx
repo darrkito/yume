@@ -82,7 +82,7 @@ export function MercadoPagoBrick({
   // empty) props on the next render. Snapshot them here, at the moment
   // the order actually settles, so the receipt still has something to
   // show after the cart is wiped.
-  const [orderSnapshot, setOrderSnapshot] = useState<{ items: CartItem[]; total: number } | null>(null);
+  const [orderSnapshot, setOrderSnapshot] = useState<{ items: CartItem[]; total: number; orderNumber?: string } | null>(null);
   const c = COPY[lang];
 
   useEffect(() => {
@@ -106,7 +106,13 @@ export function MercadoPagoBrick({
   if (result?.kind === "approved" && orderSnapshot) {
     return (
       <div className="rounded-xl border border-line bg-paper-raised p-6 text-center">
-        <ReceiptPrinter items={orderSnapshot.items} total={orderSnapshot.total} lang={lang} />
+        <ReceiptPrinter
+          items={orderSnapshot.items}
+          total={orderSnapshot.total}
+          shipping={Math.max(0, orderSnapshot.total - orderSnapshot.items.reduce((sum, i) => sum + i.price * i.qty, 0))}
+          orderNumber={orderSnapshot.orderNumber}
+          lang={lang}
+        />
         <p className="mt-6 font-display text-lg text-ink">{c.approvedTitle}</p>
         <p className="mt-1 text-sm text-ink-soft">{c.approvedBody}</p>
       </div>
@@ -178,7 +184,7 @@ export function MercadoPagoBrick({
               if (!res.ok) throw new Error(data.error ?? c.genericError);
 
               if (data.status === "approved") {
-                setOrderSnapshot({ items, total });
+                setOrderSnapshot({ items, total, orderNumber: String(data.orderId ?? "").slice(0, 8) || undefined });
                 clear();
                 onSettled?.();
                 setResult({ kind: "approved" });

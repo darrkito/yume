@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useCallback, useMemo, useState, useSyncExternalStore } from "react";
+import { createContext, useContext, useCallback, useEffect, useMemo, useState, useSyncExternalStore } from "react";
 
 export interface CartItem {
   slug: string;
@@ -130,6 +130,28 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const clear = useCallback(() => setItems(() => []), []);
+
+  // Paid in Mercado Pago's page and closed the tab without coming back: the
+  // cart would still be full, inviting a second order. If the last order sent
+  // to Checkout Pro is already paid, empty the cart.
+  useEffect(() => {
+    let orderId: string | null = null;
+    try {
+      orderId = localStorage.getItem("yume_last_order");
+    } catch {}
+    if (!orderId || getSnapshot().length === 0) return;
+    fetch(`/api/order-status?id=${encodeURIComponent(orderId)}`)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((o) => {
+        if (o?.status === "paid") {
+          setItems(() => []);
+          try {
+            localStorage.removeItem("yume_last_order");
+          } catch {}
+        }
+      })
+      .catch(() => {});
+  }, []);
 
   const count = useMemo(() => items.reduce((sum, i) => sum + i.qty, 0), [items]);
   const total = useMemo(() => items.reduce((sum, i) => sum + i.qty * i.price, 0), [items]);
