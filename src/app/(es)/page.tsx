@@ -3,7 +3,9 @@ import { Check, MessageCircle, CheckCircle2, Truck, PenTool, MapPin, ShieldCheck
 import { CASABLANCA_PRICE } from "@/content/shipping";
 import { hasVariants, productDisplayPrice, products } from "@/content/products";
 import { getFeaturedFaq } from "@/content/faq";
-import { waLink } from "@/content/site";
+import { SITE, waLink } from "@/content/site";
+import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { formatMXN } from "@/lib/format";
 import { HeroJarLazy } from "@/components/HeroJarLazy";
 import { HeroPhotos } from "@/components/HeroPhotos";
@@ -18,6 +20,11 @@ import { ProductCard } from "@/components/ProductCard";
 import { FaqQuestion } from "@/components/FaqAccordion";
 import { InfiniteGalleryStrip } from "@/components/InfiniteGalleryStrip";
 import { galleryItems } from "@/content/gallery";
+
+export const metadata: Metadata = {
+  ...pageMetadata({ title: SITE.homeTitle, description: SITE.description, path: "/" }),
+  title: { absolute: SITE.homeTitle },
+};
 
 const NO_MINIMUMS = [
   "Un recetario o desde 40-50 piezas de stickers, no cientos",
@@ -55,10 +62,10 @@ export default function Home() {
       <section className="desk-lamp-wash">
         <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-8 px-6 pb-6 pt-8 sm:grid-cols-2 sm:gap-12 sm:pb-20 sm:pt-20">
           <div>
-            <h1 className="animate-fade-up font-display text-4xl leading-[1.1] text-ink text-balance sm:text-5xl lg:text-6xl">
+            <h1 className="font-display text-4xl leading-[1.1] text-ink text-balance sm:text-5xl lg:text-6xl">
               Stickers, recetarios y papelería personalizada, <em className="italic text-brand">desde $100</em>.
             </h1>
-            <p className="animate-fade-up animate-fade-up-1 mt-6 max-w-md text-base leading-relaxed text-ink-soft">
+            <p className="mt-6 max-w-md text-base leading-relaxed text-ink-soft">
               Papelería y artículos personalizados hechos sobre pedido en Guadalajara: recetarios médicos, etiquetas y
               piezas a tu medida, aprobadas contigo antes de imprimir.
             </p>

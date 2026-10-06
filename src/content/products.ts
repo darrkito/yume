@@ -43,6 +43,10 @@ export interface Product {
   /** Set for products sold by piece count: any whole count from
    * `baseQty` up is buyable, the variants are just dropdown presets. */
   tiers?: TierPricing;
+  /** Real last-edit date (ISO) of this product's page content (price, copy,
+   * photos), set by hand when it changes. Feeds the sitemap's lastmod; left
+   * unset rather than guessed. */
+  updatedAt?: string;
   /** Shows the "trabajos realizados" infinite gallery strip on this product's page. */
   showGallery?: boolean;
   /** Shows a "Nuevo" badge on listing cards, the product page, and makes it

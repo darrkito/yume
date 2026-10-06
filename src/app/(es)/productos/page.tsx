@@ -8,7 +8,7 @@ import { QuoteCard } from "@/components/QuoteCard";
 import { waLink } from "@/content/site";
 import { CheckCircle2, Clock, Truck } from "lucide-react";
 import { UI } from "@/lib/i18n";
-import { pageMetadata, productSchema, breadcrumbSchema } from "@/lib/seo";
+import { pageMetadata, itemListSchema, breadcrumbSchema } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
   title: "Stickers, Etiquetas y Papelería Personalizada",
@@ -19,7 +19,7 @@ export const metadata: Metadata = pageMetadata({
 
 export default function ProductosPage() {
   const t = UI.es;
-  const productSchemas = products.map((p) => productSchema(p, { path: `/productos/${p.slug}` }));
+  const itemList = itemListSchema("/productos", products.map((p) => ({ name: p.name, path: `/productos/${p.slug}` })));
   const breadcrumb = breadcrumbSchema("/productos", [{ name: "Inicio", url: "/" }, { name: "Productos" }]);
 
   return (
@@ -55,9 +55,7 @@ export default function ProductosPage() {
         <a href={waLink("Hola, me interesa cotizar un producto de Yume.")} target="_blank" rel="noopener noreferrer" className="btn-soft btn-soft-solid mt-6">{t.quoteWhatsapp}</a>
       </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
-      {productSchemas.map((s, i) => (
-        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />
-      ))}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList) }} />
     </section>
   );
 }

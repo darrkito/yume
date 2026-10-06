@@ -177,10 +177,26 @@ export function HeroJar() {
     ]);
 
     const runner = Runner.create();
-    Runner.run(runner, engine);
-    Render.run(render);
+    // Simulate and draw only while the jar is on screen: two
+    // requestAnimationFrame loops running for a hero the visitor has
+    // scrolled past cost main-thread time on every frame (INP).
+    let running = false;
+    const setRunning = (on: boolean) => {
+      if (on === running) return;
+      running = on;
+      if (on) {
+        Runner.run(runner, engine);
+        Render.run(render);
+      } else {
+        Render.stop(render);
+        Runner.stop(runner);
+      }
+    };
+    const observer = new IntersectionObserver(([entry]) => setRunning(entry.isIntersecting));
+    observer.observe(render.canvas);
 
     return () => {
+      observer.disconnect();
       Render.stop(render);
       Runner.stop(runner);
       Composite.clear(engine.world, false);

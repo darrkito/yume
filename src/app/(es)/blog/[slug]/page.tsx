@@ -3,11 +3,12 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { blogPosts, getBlogPost } from "@/content/blog";
 import { products } from "@/content/products";
-import { SITE, waLink } from "@/content/site";
+import { waLink } from "@/content/site";
 import { formatBlogDate } from "@/lib/format";
 import { topicsFor } from "@/lib/blog-topics";
 import { hreflangFor } from "@/lib/i18n";
 import { BlogProductCard } from "@/components/BlogProductCard";
+import { blogPostingSchema, blogPostMetadata, breadcrumbSchema, notFoundMetadata } from "@/lib/seo";
 
 export function generateStaticParams() {
   return blogPosts.map((p) => ({ slug: p.slug }));
@@ -16,14 +17,8 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const post = getBlogPost(slug);
-  if (!post) return {};
-  const seoTitle = post.metaTitle ?? post.title;
-  return {
-    title: seoTitle,
-    description: post.description,
-    alternates: { canonical: `/blog/${slug}`, languages: hreflangFor(`/blog/${slug}`) },
-    openGraph: { title: seoTitle, description: post.description, type: "article", url: `/blog/${slug}` },
-  };
+  if (!post) return notFoundMetadata("es");
+  return blogPostMetadata(post, { lang: "es", path: `/blog/${slug}`, languages: hreflangFor(`/blog/${slug}`) });
 }
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -36,17 +31,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     .map((slug) => getBlogPost(slug))
     .filter((p): p is NonNullable<typeof p> => Boolean(p));
 
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: post.title,
-    description: post.description,
-    datePublished: post.publishedAt,
-    dateModified: post.modifiedAt ?? post.publishedAt,
-    author: { "@id": `${SITE.url}/#organization` },
-    publisher: { "@id": `${SITE.url}/#organization` },
-    mainEntityOfPage: `${SITE.url}/blog/${post.slug}`,
-  };
+  const path = `/blog/${post.slug}`;
+  const articleSchema = blogPostingSchema(post, { lang: "es", path });
+  const breadcrumb = breadcrumbSchema(path, [{ name: "Inicio", url: "/" }, { name: "Blog", url: "/blog" }, { name: post.title }]);
 
   return (
     <article className="mx-auto max-w-2xl px-6 py-16 sm:py-24">
@@ -69,6 +56,11 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         <time dateTime={post.publishedAt} className="text-xs text-ink-soft">
           {formatBlogDate(post.publishedAt)}
         </time>
+        {post.modifiedAt && post.modifiedAt !== post.publishedAt && (
+          <span className="text-xs text-ink-soft">
+            · Actualizado <time dateTime={post.modifiedAt}>{formatBlogDate(post.modifiedAt)}</time>
+          </span>
+        )}
       </div>
       <h1 className="animate-fade-up animate-fade-up-1 mt-4 font-display text-3xl text-ink text-balance sm:text-4xl">{post.title}</h1>
       <p className="animate-fade-up animate-fade-up-2 mt-4 text-sm leading-relaxed text-ink-soft">{post.intro}</p>
@@ -152,6 +144,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       ) : null}
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
     </article>
   );
 }

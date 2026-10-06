@@ -1,5 +1,5 @@
 // Pure functions turning the site's real content into Markdown — used by
-// middleware.ts for Accept:text/markdown negotiation. No fabricated content:
+// proxy.ts for Accept:text/markdown negotiation. No fabricated content:
 // every renderer reads the exact same data source the human-facing page
 // does, so an agent requesting Markdown never sees something the site
 // doesn't actually say.

@@ -21,7 +21,7 @@ export function HeroPhotos({ lang }: { lang: Lang }) {
             aria-label={p.title}
             className={`card-soft relative block h-36 w-24 overflow-hidden p-0 sm:h-40 sm:w-32 ${i % 2 === 0 ? "tilt-a" : "tilt-b"}`}
           >
-            <Image src={p.image} alt={p.alt} fill sizes="128px" priority={i === 0} className="object-cover" />
+            <Image src={p.image} alt={p.alt} fill sizes="128px" loading="eager" fetchPriority={i === 0 ? "high" : undefined} className="object-cover" />
           </Link>
         </li>
       ))}

@@ -1,12 +1,8 @@
 import type { Metadata } from "next";
+import { noindexMetadata } from "@/lib/seo";
 import { CheckoutStatus } from "@/components/CheckoutStatus";
-import { hreflangFor } from "@/lib/i18n";
 
-export const metadata: Metadata = {
-  title: "Pago pendiente",
-  robots: { index: false },
-  alternates: { languages: hreflangFor("/pago/pendiente") },
-};
+export const metadata: Metadata = noindexMetadata({ title: "Pago pendiente" });
 
 export default function PagoPendientePage() {
   return (

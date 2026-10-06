@@ -3,7 +3,7 @@ import { SITE } from "@/content/site";
 import { pageMetadata, breadcrumbSchema } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Yume's Privacy Policy",
+  title: "Privacy Policy",
   description: "Yume's privacy policy: what personal data we collect, how we use it, and how to exercise your data rights.",
   path: "/en/privacy",
   lang: "en",

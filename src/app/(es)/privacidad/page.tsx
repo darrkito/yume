@@ -3,7 +3,7 @@ import { SITE } from "@/content/site";
 import { pageMetadata, breadcrumbSchema } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Aviso de Privacidad de Yume",
+  title: "Aviso de Privacidad",
   description: "Aviso de privacidad de Yume: qué datos personales recabamos, para qué los usamos y cómo ejerces tus derechos ARCO.",
   path: "/privacidad",
 });

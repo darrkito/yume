@@ -3,9 +3,9 @@ import { ProductDetails } from "@/components/ProductDetails";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getProduct, productDisplayPrice, products } from "@/content/products";
+import { getProduct, products } from "@/content/products";
 import { SITE } from "@/content/site";
-import { NATIONAL_SHIPPING_PRICE } from "@/content/shipping";
+import { breadcrumbSchema, notFoundMetadata, ogLocale, productPageSchema } from "@/lib/seo";
 import { ProductMedia } from "@/components/ProductMedia";
 import { productPhotos } from "@/content/product-photos";
 import { ProductPurchase } from "@/components/ProductPurchase";
@@ -27,7 +27,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const product = getProduct(slug);
-  if (!product) return {};
+  if (!product) return notFoundMetadata("es");
   const title = product.metaTitle ?? product.name;
   const description = product.metaDescription ?? product.description;
   const ogImage = product.image ?? "/og-image.jpg";
@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title,
     description,
     alternates: { canonical: `/productos/${slug}`, languages: hreflangFor(`/productos/${slug}`) },
-    openGraph: { title, description, type: "website", url: `/productos/${slug}`, images: [ogImage] },
+    openGraph: { title, description, type: "website", url: `/productos/${slug}`, siteName: SITE.name, locale: ogLocale("es"), images: [ogImage] },
     twitter: { card: "summary_large_image", images: [ogImage] },
   };
 }
@@ -45,45 +45,16 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
   const product = getProduct(slug);
   if (!product) notFound();
 
-  const productSchema = {
-    "@context": "https://schema.org",
-    "@type": "Product",
+  const path = `/productos/${product.slug}`;
+  const productSchema = productPageSchema(product, {
+    lang: "es",
+    path,
     name: product.name,
     description: product.description,
     category: product.category,
-    image: [...new Set([product.image ?? "/og-image.jpg", ...productPhotos(product.slug, "es").map((p) => p.src)])].map((src) => `${SITE.url}${src}`),
-    brand: { "@type": "Brand", name: SITE.name },
-    offers: {
-      "@type": "Offer",
-      price: productDisplayPrice(product),
-      priceCurrency: product.currency,
-      availability: "https://schema.org/InStock",
-      url: `${SITE.url}/productos/${product.slug}`,
-      areaServed: { "@type": "Country", name: "México" },
-      eligibleRegion: { "@type": "Country", name: "MX" },
-      seller: { "@id": `${SITE.url}/#organization` },
-      // Solo se aceptan devoluciones/cambios de artículos defectuosos (todo es
-      // hecho por pedido); detalle en /politica-de-devoluciones.
-      hasMerchantReturnPolicy: {
-        "@type": "MerchantReturnPolicy",
-        returnPolicyCategory: "https://schema.org/MerchantReturnNotPermitted",
-        applicableCountry: "MX",
-        // Defective items only: 48h from delivery, customer pays return shipping.
-        itemDefectReturnFees: "https://schema.org/ReturnShippingFees",
-        merchantReturnLink: `${SITE.url}/politica-de-devoluciones`,
-      },
-      shippingDetails: {
-        "@type": "OfferShippingDetails",
-        shippingRate: { "@type": "MonetaryAmount", value: String(NATIONAL_SHIPPING_PRICE), currency: "MXN" },
-        shippingDestination: { "@type": "DefinedRegion", addressCountry: "MX" },
-        deliveryTime: {
-          "@type": "ShippingDeliveryTime",
-          handlingTime: { "@type": "QuantitativeValue", minValue: 3, maxValue: 5, unitCode: "DAY" },
-          transitTime: { "@type": "QuantitativeValue", minValue: 2, maxValue: 5, unitCode: "DAY" },
-        },
-      },
-    },
-  };
+    images: [product.image ?? "/og-image.jpg", ...productPhotos(product.slug, "es").map((p) => p.src)],
+  });
+  const breadcrumb = breadcrumbSchema(path, [{ name: "Inicio", url: "/" }, { name: "Tienda", url: "/productos" }, { name: product.name }]);
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -172,6 +143,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       </div>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
     </section>
   );

@@ -61,7 +61,7 @@ export function Header() {
       <header className="sticky top-0 z-50 border-b border-line bg-paper">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
           <Link href={lang === "en" ? "/en" : "/"} aria-label={`${SITE.name}: ${t.home}`}>
-            <Image src="/logo-yume-wordmark.webp" alt={SITE.name} width={215} height={80} className="h-9 w-auto sm:h-11" priority />
+            <Image src="/logo-yume-wordmark.webp" alt={SITE.name} width={215} height={80} className="h-9 w-auto sm:h-11" loading="eager" />
           </Link>
           <div className="flex items-center gap-2 text-sm text-ink-soft sm:gap-6">
             <Link href={cartHref} className="inline-flex min-h-11 items-center transition-colors hover:text-brand">
@@ -89,7 +89,7 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-line bg-paper">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link href={lang === "en" ? "/en" : "/"} className="flex items-center gap-2" aria-label={`${SITE.name}: ${t.home}`}>
-          <Image src="/logo-yume-wordmark.webp" alt={SITE.name} width={215} height={80} className="h-9 w-auto sm:h-11" priority />
+          <Image src="/logo-yume-wordmark.webp" alt={SITE.name} width={215} height={80} className="h-9 w-auto sm:h-11" loading="eager" />
         </Link>
         <nav aria-label={t.mainNav} className="hidden items-center gap-8 text-sm text-ink-soft sm:flex">
           {navLinks.map((l) => (

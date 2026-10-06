@@ -1,12 +1,8 @@
 import type { Metadata } from "next";
+import { noindexMetadata } from "@/lib/seo";
 import { CartView } from "@/components/CartView";
-import { hreflangFor } from "@/lib/i18n";
 
-export const metadata: Metadata = {
-  title: "Cart",
-  robots: { index: false, follow: true },
-  alternates: { languages: hreflangFor("/carrito") },
-};
+export const metadata: Metadata = noindexMetadata({ title: "Cart", lang: "en" });
 
 export default function CartPageEn() {
   return <CartView lang="en" />;

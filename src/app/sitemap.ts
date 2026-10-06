@@ -3,17 +3,16 @@ import { products } from "@/content/products";
 import { blogPosts } from "@/content/blog";
 import { blogPostsEn } from "@/content/blog.en";
 import { SITE } from "@/content/site";
-import { esPathToEnPath, PRODUCT_SLUG_EN, BLOG_SLUG_ES } from "@/lib/i18n";
+import { hreflangFor, PRODUCT_SLUG_EN, BLOG_SLUG_EN, BLOG_SLUG_ES } from "@/lib/i18n";
 
 // Every URL's `alternates.languages` mirrors the same ES<->EN pair regardless
 // of which language entry it's attached to — that reciprocity is what tells
-// Google/Bing the two URLs are the same content in two languages.
+// Google/Bing the two URLs are the same content in two languages. Built from
+// hreflangFor(), the same source as each page's <link rel="alternate">, so
+// the sitemap and the HTML can't disagree (x-default included).
 function withLanguages(esPath: string) {
   return {
-    languages: {
-      "es-MX": `${SITE.url}${esPath}`,
-      en: `${SITE.url}${esPathToEnPath(esPath)}`,
-    },
+    languages: Object.fromEntries(Object.entries(hreflangFor(esPath)).map(([code, path]) => [code, `${SITE.url}${path}`])),
   };
 }
 
@@ -43,19 +42,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE.url}/privacidad`, changeFrequency: "yearly", priority: 0.3, alternates: withLanguages("/privacidad") },
     { url: `${SITE.url}/en/privacy`, changeFrequency: "yearly", priority: 0.2, alternates: withLanguages("/privacidad") },
 
-    { url: `${SITE.url}/politica-de-devoluciones`, changeFrequency: "yearly", priority: 0.3, lastModified: "2026-10-04", alternates: withLanguages("/politica-de-devoluciones") },
-    { url: `${SITE.url}/en/returns-policy`, changeFrequency: "yearly", priority: 0.2, lastModified: "2026-10-04", alternates: withLanguages("/politica-de-devoluciones") },
+    { url: `${SITE.url}/politica-de-devoluciones`, changeFrequency: "yearly", priority: 0.3, alternates: withLanguages("/politica-de-devoluciones") },
+    { url: `${SITE.url}/en/returns-policy`, changeFrequency: "yearly", priority: 0.2, alternates: withLanguages("/politica-de-devoluciones") },
   ];
 
+  // A slug missing from the ES<->EN maps in lib/i18n.ts would otherwise
+  // publish ".../undefined" URLs: skip the sibling instead.
   for (const p of products) {
     const esPath = `/productos/${p.slug}`;
-    entries.push({ url: `${SITE.url}${esPath}`, changeFrequency: "monthly", priority: 0.8, alternates: withLanguages(esPath) });
-    entries.push({
-      url: `${SITE.url}/en/products/${PRODUCT_SLUG_EN[p.slug]}`,
-      changeFrequency: "monthly",
-      priority: 0.7,
-      alternates: withLanguages(esPath),
-    });
+    const enSlug = PRODUCT_SLUG_EN[p.slug];
+    const lastModified = p.updatedAt;
+    entries.push({ url: `${SITE.url}${esPath}`, changeFrequency: "monthly", priority: 0.8, lastModified, alternates: enSlug ? withLanguages(esPath) : undefined });
+    if (enSlug) {
+      entries.push({ url: `${SITE.url}/en/products/${enSlug}`, changeFrequency: "monthly", priority: 0.7, lastModified, alternates: withLanguages(esPath) });
+    }
   }
 
   for (const p of blogPosts) {
@@ -64,18 +64,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${SITE.url}${esPath}`,
       changeFrequency: "monthly",
       priority: 0.6,
-      lastModified: p.publishedAt,
-      alternates: withLanguages(esPath),
+      lastModified: p.modifiedAt ?? p.publishedAt,
+      alternates: BLOG_SLUG_EN[p.slug] ? withLanguages(esPath) : undefined,
     });
   }
   for (const p of blogPostsEn) {
-    const esPath = `/blog/${BLOG_SLUG_ES[p.slug]}`;
+    const esSlug = BLOG_SLUG_ES[p.slug];
     entries.push({
       url: `${SITE.url}/en/blog/${p.slug}`,
       changeFrequency: "monthly",
       priority: 0.5,
-      lastModified: p.publishedAt,
-      alternates: withLanguages(esPath),
+      lastModified: p.modifiedAt ?? p.publishedAt,
+      alternates: esSlug ? withLanguages(`/blog/${esSlug}`) : undefined,
     });
   }
 

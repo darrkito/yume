@@ -21,16 +21,27 @@ function markdownResponse(body: string | null): NextResponse | null {
   return new NextResponse(body, { headers: { "Content-Type": "text/markdown; charset=utf-8", Vary: "Accept" } });
 }
 
-export async function middleware(req: NextRequest) {
+// llms.txt is a static file that only changes on deploy: fetch it once per
+// server instance instead of on every markdown request to / or /en.
+let llmsTxt: Promise<string | null> | undefined;
+function getLlmsTxt(origin: string): Promise<string | null> {
+  llmsTxt ??= fetch(new URL("/llms.txt", origin))
+    .then((res) => (res.ok ? res.text() : null))
+    .catch(() => null);
+  return llmsTxt.then((text) => {
+    if (text === null) llmsTxt = undefined; // retry next time instead of caching a failure
+    return text;
+  });
+}
+
+// Next.js 16 renamed the `middleware` file convention to `proxy`.
+export async function proxy(req: NextRequest) {
   if (!prefersMarkdown(req)) return NextResponse.next();
 
   const { pathname, origin } = req.nextUrl;
 
   if (pathname === "/" || pathname === "/en") {
-    const res = await fetch(new URL("/llms.txt", origin));
-    if (res.ok) {
-      return new NextResponse(await res.text(), { headers: { "Content-Type": "text/markdown; charset=utf-8", Vary: "Accept" } });
-    }
+    return markdownResponse(await getLlmsTxt(origin)) ?? NextResponse.next();
   }
 
   if (pathname === "/productos") return markdownResponse(productsListMarkdown("es")) ?? NextResponse.next();

@@ -5,7 +5,8 @@ import { CASABLANCA_PRICE } from "@/content/shipping";
 import { hasVariants, productDisplayPrice, products } from "@/content/products";
 import { productsEn } from "@/content/products.en";
 import { getFeaturedFaqEn } from "@/content/faq.en";
-import { waLink } from "@/content/site";
+import { SITE, waLink } from "@/content/site";
+import { pageMetadata } from "@/lib/seo";
 import { formatMXN } from "@/lib/format";
 import { HeroJarLazy } from "@/components/HeroJarLazy";
 import { HeroPhotos } from "@/components/HeroPhotos";
@@ -20,7 +21,7 @@ import { ProductCard } from "@/components/ProductCard";
 import { FaqQuestion } from "@/components/FaqAccordion";
 import { InfiniteGalleryStrip } from "@/components/InfiniteGalleryStrip";
 import { getGalleryItemsEn } from "@/content/gallery.en";
-import { hreflangFor, PRODUCT_SLUG_EN } from "@/lib/i18n";
+import { PRODUCT_SLUG_EN } from "@/lib/i18n";
 
 const NO_MINIMUMS = [
   "One prescription pad or 40-50 stickers, not hundreds",
@@ -47,22 +48,8 @@ const HOW_IT_WORKS = [
 ];
 
 export const metadata: Metadata = {
-  title: { absolute: "Custom Vinyl Stickers, Temporary Tattoos & Stationery | Yume" },
-  description:
-    "Custom vinyl stickers and logo stickers from $100 MXN, temporary tattoos and custom stationery. Made in Guadalajara, shipping across Mexico.",
-  alternates: { canonical: "/en", languages: hreflangFor("/") },
-  openGraph: {
-    title: "Custom Vinyl Stickers, Temporary Tattoos & Stationery | Yume",
-    description: "Custom stationery and personalized goods made to order from Guadalajara, Jalisco, shipping across all of Mexico.",
-    type: "website",
-    url: "/en",
-    locale: "en_MX",
-    // Same gap as pageMetadata() (see src/lib/seo.ts): a page-level openGraph
-    // object replaces the root layout's wholesale, not merges — this page
-    // predates pageMetadata() and duplicated its openGraph block by hand,
-    // missing the image the same way.
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Yume" }],
-  },
+  ...pageMetadata({ title: SITE.homeTitleEn, description: SITE.descriptionEn, path: "/en", lang: "en" }),
+  title: { absolute: SITE.homeTitleEn },
 };
 
 export default function HomeEn() {
@@ -78,10 +65,10 @@ export default function HomeEn() {
       <section className="desk-lamp-wash">
         <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-8 px-6 pb-6 pt-8 sm:grid-cols-2 sm:gap-12 sm:pb-20 sm:pt-20">
           <div>
-            <h1 className="animate-fade-up font-display text-4xl leading-[1.1] text-ink text-balance sm:text-5xl lg:text-6xl">
+            <h1 className="font-display text-4xl leading-[1.1] text-ink text-balance sm:text-5xl lg:text-6xl">
               Custom stickers, prescription pads and stationery, <em className="italic text-brand">from $100 MXN</em>.
             </h1>
-            <p className="animate-fade-up animate-fade-up-1 mt-6 max-w-md text-base leading-relaxed text-ink-soft">
+            <p className="mt-6 max-w-md text-base leading-relaxed text-ink-soft">
               Custom stationery made to order in Guadalajara: medical prescription pads, stickers, and pieces built
               to your specs, approved with you before printing.
             </p>

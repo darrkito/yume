@@ -14,7 +14,8 @@ import { CartProvider } from "@/components/CartContext";
 import { CartToast } from "@/components/CartToast";
 import { DesignFileProvider } from "@/components/DesignFileContext";
 import { SITE } from "@/content/site";
-import { hreflangFor } from "@/lib/i18n";
+import type { Lang } from "@/lib/i18n";
+import { founderSchema, merchantReturnPolicy, ogLocale, ORG_ID } from "@/lib/seo";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -28,84 +29,103 @@ const karla = Karla({
   display: "swap",
 });
 
-// Shared by both root layouts (app/(es) and app/(en)): with one root layout
-// per language, each route group renders its own <html lang> statically.
-export const rootMetadata: Metadata = {
-  metadataBase: new URL(SITE.url),
-  title: { default: SITE.homeTitle, template: `%s | ${SITE.name}` },
-  description: SITE.description,
-  alternates: { canonical: "/", languages: hreflangFor("/") },
-  openGraph: {
-    title: SITE.homeTitle,
-    description: SITE.description,
-    type: "website",
-    url: "/",
-    siteName: SITE.name,
-    locale: "es_MX",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: SITE.name }],
-  },
-  twitter: { card: "summary_large_image", images: ["/og-image.jpg"] },
-  robots: { index: true, follow: true },
-  other: {
-    "geo.region": "MX-JAL",
-    "geo.placename": `${SITE.city}, ${SITE.state}`,
-    "geo.position": `${SITE.geo.lat};${SITE.geo.lng}`,
-  },
-};
+// Defaults for every page of one language tree (one root layout per
+// language). No canonical, hreflang or og:url here on purpose: a page that
+// doesn't set its own (cart, checkout, 404) used to inherit the homepage's,
+// which tells search engines "this URL duplicates the homepage". Every
+// indexable page sets its own via pageMetadata()/generateMetadata, and the
+// two homepages set theirs explicitly.
+function rootMetadataFor(lang: Lang): Metadata {
+  const description = lang === "en" ? SITE.descriptionEn : SITE.description;
+  const title = lang === "en" ? SITE.homeTitleEn : SITE.homeTitle;
+  return {
+    metadataBase: new URL(SITE.url),
+    title: { default: title, template: `%s | ${SITE.name}` },
+    description,
+    openGraph: {
+      title,
+      description,
+      type: "website",
+      siteName: SITE.name,
+      locale: ogLocale(lang),
+      images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: SITE.name }],
+    },
+    twitter: { card: "summary_large_image", images: ["/og-image.jpg"] },
+    robots: { index: true, follow: true },
+  };
+}
+
+export const rootMetadata = rootMetadataFor("es");
+export const rootMetadataEn = rootMetadataFor("en");
 
 export const viewport: Viewport = {
   themeColor: "#fffbf3",
 };
 
-const ORG_ID = `${SITE.url}/#organization`;
-const orgSchema = {
-  "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "Organization"],
-  "@id": ORG_ID,
-  name: SITE.name,
-  url: SITE.url,
-  logo: `${SITE.url}/logo-yume.webp`,
-  image: `${SITE.url}/logo-yume.webp`,
-  description: SITE.description,
-  email: SITE.email,
-  telephone: `+${SITE.whatsappNumber}`,
-  priceRange: "$$",
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: SITE.city,
-    addressRegion: SITE.state,
-    addressCountry: "MX",
-  },
-  geo: { "@type": "GeoCoordinates", latitude: SITE.geo.lat, longitude: SITE.geo.lng },
-  contactPoint: {
-    "@type": "ContactPoint",
-    telephone: `+${SITE.whatsappNumber}`,
+// OnlineStore (an Organization subtype), not LocalBusiness: Yume has no
+// storefront to visit (orders ship nationally or go to a Casa Blanca branch),
+// and LocalBusiness without a street address is an incomplete local entity.
+// The local tie comes from areaServed, the city-level address and — once
+// it exists — the Google Business Profile in sameAs/hasMap.
+function orgSchemaFor(lang: Lang) {
+  const founder = founderSchema(lang);
+  const sameAs = [SITE.instagram, SITE.gbpUrl, ...SITE.otherProfiles].filter((u): u is string => Boolean(u));
+  return {
+    "@context": "https://schema.org",
+    "@type": "OnlineStore",
+    "@id": ORG_ID,
+    name: SITE.name,
+    url: SITE.url,
+    logo: `${SITE.url}/logo-yume.webp`,
+    image: `${SITE.url}/logo-yume.webp`,
+    description: lang === "en" ? SITE.descriptionEn : SITE.description,
     email: SITE.email,
-    contactType: "customer service",
-    areaServed: "MX",
-    availableLanguage: ["es", "en"],
-  },
-  areaServed: [
-    { "@type": "City", name: "Guadalajara" },
-    { "@type": "City", name: "Zapopan" },
-    { "@type": "City", name: "Tlaquepaque" },
-    { "@type": "State", name: "Jalisco" },
-    { "@type": "Country", name: "México" },
-  ],
-  sameAs: [SITE.instagram],
-};
+    telephone: `+${SITE.whatsappNumber}`,
+    foundingDate: SITE.foundingDate,
+    ...(founder ? { founder } : {}),
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: SITE.city,
+      addressRegion: SITE.state,
+      addressCountry: "MX",
+    },
+    ...(SITE.gbpUrl ? { hasMap: SITE.gbpUrl } : {}),
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: `+${SITE.whatsappNumber}`,
+      email: SITE.email,
+      contactType: "customer service",
+      areaServed: "MX",
+      availableLanguage: ["es", "en"],
+    },
+    areaServed: [
+      { "@type": "City", name: "Guadalajara" },
+      { "@type": "City", name: "Zapopan" },
+      { "@type": "City", name: "Tlaquepaque" },
+      { "@type": "City", name: "Tonalá" },
+      { "@type": "City", name: "Tlajomulco de Zúñiga" },
+      { "@type": "State", name: "Jalisco" },
+      { "@type": "Country", name: lang === "en" ? "Mexico" : "México" },
+    ],
+    hasMerchantReturnPolicy: merchantReturnPolicy(lang),
+    sameAs,
+  };
+}
 
-const websiteSchema = {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "@id": `${SITE.url}/#website`,
-  name: SITE.name,
-  url: SITE.url,
-  inLanguage: "es-MX",
-  publisher: { "@id": ORG_ID },
-};
+function websiteSchemaFor(lang: Lang) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${SITE.url}/#website`,
+    name: SITE.name,
+    url: SITE.url,
+    inLanguage: lang === "en" ? "en" : "es-MX",
+    publisher: { "@id": ORG_ID },
+  };
+}
 
 export function RootShell({ lang, children }: { lang: "es-MX" | "en"; children: React.ReactNode }) {
+  const pageLang: Lang = lang === "en" ? "en" : "es";
   return (
     <html lang={lang}>
       <body className={`${playfair.variable} ${karla.variable} font-sans antialiased`}>
@@ -113,8 +133,8 @@ export function RootShell({ lang, children }: { lang: "es-MX" | "en"; children: 
             capability manifest discovery path, real resource (see .well-known/ai-catalog.json). */}
         <link rel="ai-catalog" href={`${SITE.url}/.well-known/ai-catalog.json`} />
         <div className="paper-grain" aria-hidden="true" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchemaFor(pageLang)) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaFor(pageLang)) }} />
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-brand focus:px-5 focus:py-2.5 focus:text-sm focus:font-semibold focus:text-white"

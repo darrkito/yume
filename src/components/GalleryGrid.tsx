@@ -116,7 +116,7 @@ export function GalleryGrid({ items, categories, allLabel, lang = "es" }: Galler
           </button>
           <div className="relative max-h-[80vh] w-full max-w-md" onClick={(e) => e.stopPropagation()}>
             <div className="relative aspect-[3/4] max-h-[80vh] w-full overflow-hidden rounded-xl">
-              <Image src={active_item.image} alt={active_item.alt} fill sizes="90vw" className="object-contain" priority />
+              <Image src={active_item.image} alt={active_item.alt} fill sizes="90vw" className="object-contain" loading="eager" />
             </div>
             <p className="mt-3 text-center text-sm text-white/90">{active_item.title}</p>
             <a

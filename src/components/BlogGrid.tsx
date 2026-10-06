@@ -47,7 +47,7 @@ export function BlogGrid({
             <div className="flex items-center gap-3">
               <span className="rounded-full bg-brand-tint px-3 py-1 text-xs font-semibold text-brand-deep">{topicsFor(post, lang)[0]}</span>
               <time dateTime={post.publishedAt} className="text-xs text-ink-soft">
-                {formatBlogDate(post.publishedAt)}
+                {formatBlogDate(post.publishedAt, lang)}
               </time>
             </div>
             <h2 className="mt-4 font-display text-xl text-ink transition-colors group-hover:text-brand text-balance">{post.title}</h2>

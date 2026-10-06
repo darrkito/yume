@@ -5,11 +5,7 @@ const mxn = new Intl.NumberFormat("es-MX", {
 
 export const formatMXN = (amount: number) => mxn.format(amount);
 
-const blogDate = new Intl.DateTimeFormat("es-MX", {
-  day: "numeric",
-  month: "long",
-  year: "numeric",
-  timeZone: "UTC",
-});
+const blogDateOptions: Intl.DateTimeFormatOptions = { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" };
+const blogDate = { es: new Intl.DateTimeFormat("es-MX", blogDateOptions), en: new Intl.DateTimeFormat("en-US", blogDateOptions) };
 
-export const formatBlogDate = (isoDate: string) => blogDate.format(new Date(isoDate));
+export const formatBlogDate = (isoDate: string, lang: "es" | "en" = "es") => blogDate[lang].format(new Date(isoDate));

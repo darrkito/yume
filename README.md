@@ -28,7 +28,7 @@ npx tsc --noEmit        # solo type-check
   - **Pendiente manual, una sola vez:** correr `sql/schema.sql` en el SQL Editor de Supabase para crear la tabla `orders` (copiar y pegar, Run). Intenté correrlo yo directo contra la base de producción con la connection string ya disponible y el clasificador de seguridad de Claude Code lo bloqueó correctamente — es justo el tipo de acción que debe confirmar una persona, no un agente.
   - Para activar los correos: activa verificación en 2 pasos en la cuenta de Gmail que quieras usar para enviar, genera una "contraseña de aplicación" (myaccount.google.com/security → Contraseñas de aplicaciones), y agrega `GMAIL_USER`/`GMAIL_APP_PASSWORD` en Vercel.
 - `NotepadMark.tsx`: ilustración CSS/SVG de respaldo para productos sin foto todavía — `ProductVisual.tsx` usa la foto real (`product.image`) cuando existe, y cae a esta ilustración solo si no hay foto.
-- SEO: `sitemap.ts`/`robots.ts` (convención nativa de Next.js), metadata + JSON-LD `Organization`/`Product`/`FAQPage` por página.
+- SEO: `sitemap.ts` (convención nativa de Next.js) + `public/robots.txt` (estático), metadata vía `pageMetadata` (`src/lib/seo.ts`) + JSON-LD `Organization`/`Product`/`ItemList`/`BlogPosting`/`BreadcrumbList`/`FAQPage` por página.
 
 ## Imágenes: siempre WebP (mismo criterio que Luvory)
 

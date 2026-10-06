@@ -9,7 +9,7 @@ import { QuoteCard } from "@/components/QuoteCard";
 import { waLink } from "@/content/site";
 import { CheckCircle2, Clock, Truck } from "lucide-react";
 import { PRODUCT_SLUG_EN, UI } from "@/lib/i18n";
-import { pageMetadata, productSchema, breadcrumbSchema } from "@/lib/seo";
+import { pageMetadata, itemListSchema, breadcrumbSchema } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
   title: "Shop Custom Stationery and Prescription Pads Online",
@@ -20,8 +20,9 @@ export const metadata: Metadata = pageMetadata({
 
 export default function ProductsPageEn() {
   const t = UI.en;
-  const productSchemas = products.map((p) =>
-    productSchema(p, { name: productsEn[p.slug].name, path: `/en/products/${PRODUCT_SLUG_EN[p.slug]}` }),
+  const itemList = itemListSchema(
+    "/en/products",
+    products.map((p) => ({ name: productsEn[p.slug].name, path: `/en/products/${PRODUCT_SLUG_EN[p.slug]}` })),
   );
   const breadcrumb = breadcrumbSchema("/en/products", [{ name: "Home", url: "/en" }, { name: "Products" }]);
 
@@ -58,9 +59,7 @@ export default function ProductsPageEn() {
         <a href={waLink("Hi, I'm interested in getting a quote for a Yume product.")} target="_blank" rel="noopener noreferrer" className="btn-soft btn-soft-solid mt-6">{t.quoteWhatsapp}</a>
       </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
-      {productSchemas.map((s, i) => (
-        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />
-      ))}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList) }} />
     </section>
   );
 }

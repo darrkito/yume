@@ -1,12 +1,8 @@
 import type { Metadata } from "next";
+import { noindexMetadata } from "@/lib/seo";
 import { CheckoutView } from "@/components/CheckoutView";
-import { hreflangFor } from "@/lib/i18n";
 
-export const metadata: Metadata = {
-  title: "Pago",
-  robots: { index: false },
-  alternates: { languages: hreflangFor("/pago") },
-};
+export const metadata: Metadata = noindexMetadata({ title: "Pago" });
 
 export default function PagoPage() {
   return <CheckoutView />;
