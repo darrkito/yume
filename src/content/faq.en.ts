@@ -27,12 +27,12 @@ export const generalFaqEn: FaqItem[] = [
   },
   {
     q: "Do you offer local delivery in Guadalajara?",
-    a: "Yes, if you're in Guadalajara or the metro area, you can choose pickup at a Casa Blanca branch for $20 MXN instead of home delivery ($199 MXN). At checkout you pick whichever of the 11 ZMG branches works best for you; we'll let you know via WhatsApp and email as soon as your order is ready, along with the proof you need to show at the branch to pick it up.",
+    a: "Yes, if you're in Guadalajara or the metro area, you can choose pickup at a Casa Blanca branch for $20 MXN (free on orders of $750 MXN or more) instead of home delivery ($199 MXN, also free from $750 MXN). At checkout you pick whichever of the 11 ZMG branches works best for you; we'll let you know via WhatsApp and email as soon as your order is ready, along with the proof you need to show at the branch to pick it up.",
     cta: { label: "See the shop", href: "/en/products" },
   },
   {
     q: "Does home delivery cost anything?",
-    a: "Yes, $199 MXN anywhere in Mexico, but it's free on orders of $750 MXN or more. Pickup at Casa Blanca (Guadalajara) always costs $20 MXN, regardless of your order total.",
+    a: "Yes, $199 MXN anywhere in Mexico, but it's free on orders of $750 MXN or more. Pickup at Casa Blanca (Guadalajara) costs $20 MXN and is also free on orders of $750 MXN or more.",
     cta: { label: "See the shop", href: "/en/products" },
   },
   {

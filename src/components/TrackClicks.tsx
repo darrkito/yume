@@ -22,6 +22,12 @@ const send = (event: string, page: string) => {
   }
 };
 
+/** Funnel events fired from code (not clicks). Checkout funnel in Clarity:
+ * add_to_cart → begin_checkout → shipping_submitted → payment_method_chosen
+ * (pro | brick) → purchase_brick (or payment_pending_cash) / payment_rejected_<detail>.
+ * upload_failed marks a design file that could not be sent. */
+export const track = (event: string) => send(event, typeof location === "undefined" ? "" : location.pathname);
+
 export function TrackClicks() {
   const pathname = usePathname();
   useEffect(() => {
@@ -32,7 +38,7 @@ export function TrackClicks() {
       const href = el instanceof HTMLAnchorElement ? el.href : "";
       if (tracked) return send(tracked, pathname);
       if (href.includes("whatsapp.com")) return send("wa_click", pathname);
-      if (/\/(pago|en\/checkout)$/.test(href)) return send("begin_checkout", pathname);
+      if (href && /^\/(pago|en\/checkout)$/.test(new URL(href).pathname)) return send("begin_checkout", pathname);
       if (el.closest(".tabbar")) return send(`tab_${(el.textContent ?? "").trim().toLowerCase()}`, pathname);
     };
     document.addEventListener("click", onClick, { capture: true });

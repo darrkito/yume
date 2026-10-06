@@ -67,6 +67,11 @@ export function CheckoutStatus({
         <Icon size={40} className={`mx-auto text-brand ${variant === "pending" ? "animate-spin" : ""}`} />
       )}
       <h1 className="mt-6 font-display text-3xl text-ink">{title}</h1>
+      {receipt && (
+        <p className="mt-2 text-sm text-ink-soft">
+          {t.orderNumberLabel}: <span className="font-semibold text-ink">#{receipt.number}</span>
+        </p>
+      )}
       <p className="mt-4 text-sm leading-relaxed text-ink-soft">{message}</p>
       {variant === "success" && (
         <div className="mt-8 rounded-2xl bg-brand-tint px-5 py-5 text-left">
@@ -81,6 +86,7 @@ export function CheckoutStatus({
               </li>
             ))}
           </ol>
+          <p className="mt-4 border-t border-line pt-3 text-xs leading-relaxed text-ink-soft">{t.nextDesign}</p>
         </div>
       )}
       <Link

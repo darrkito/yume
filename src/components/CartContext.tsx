@@ -30,6 +30,9 @@ interface CartContextValue {
   /** Set when saved lines were repriced or dropped against today's catalog. */
   cartNotice: { changed: string[]; removed: string[] } | null;
   dismissNotice: () => void;
+  /** False until the saved cart has been read on the client, so pages can
+   * avoid flashing "your cart is empty" before it loads. */
+  ready: boolean;
 }
 
 const CartContext = createContext<CartContextValue | null>(null);
@@ -102,6 +105,11 @@ function setItems(updater: (prev: CartItem[]) => CartItem[]) {
 
 export function CartProvider({ children }: { children: React.ReactNode }) {
   const items = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
+  const ready = useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false,
+  );
   const [lastAdded, setLastAdded] = useState<CartContextValue["lastAdded"]>(null);
   const [cartNotice, setCartNotice] = useState<CartContextValue["cartNotice"]>(null);
 
@@ -201,7 +209,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   const total = useMemo(() => items.reduce((sum, i) => sum + i.qty * i.price, 0), [items]);
 
   return (
-    <CartContext.Provider value={{ items, addItem, replaceLine, removeItem, updateQty, clear, count, total, lastAdded, dismissAdded, cartNotice, dismissNotice }}>
+    <CartContext.Provider value={{ items, addItem, replaceLine, removeItem, updateQty, clear, count, total, lastAdded, dismissAdded, cartNotice, dismissNotice, ready }}>
       {children}
     </CartContext.Provider>
   );

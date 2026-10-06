@@ -59,6 +59,9 @@ export async function POST(req: NextRequest) {
         // MP refuses auto_return with localhost back_urls (local runs).
         ...(notificationUrl() ? { auto_return: "approved" as const } : {}),
         statement_descriptor: "YUME",
+        // A pending preference stops being payable after 3 days instead of living forever.
+        expires: true,
+        expiration_date_to: new Date(Date.now() + 3 * 86400_000).toISOString(),
       },
     });
 

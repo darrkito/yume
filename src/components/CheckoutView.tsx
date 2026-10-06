@@ -1,13 +1,14 @@
 "use client";
 
 import { itemName } from "@/components/useAddProduct";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { CreditCard, ExternalLink, Info, Lock, ShieldCheck, CheckCircle2 } from "lucide-react";
 import { useCart } from "@/components/CartContext";
 import { useDesignFiles } from "@/components/DesignFileContext";
 import { LogoUploadNote } from "@/components/LogoUploadNote";
 import { MercadoPagoBrick } from "@/components/MercadoPagoBrick";
+import { track } from "@/components/TrackClicks";
 import { PersonalizationFields } from "@/components/PersonalizationFields";
 import type { PersonalizationInput } from "@/content/personalization";
 import { clearCheckoutDraft, ShippingForm } from "@/components/ShippingForm";
@@ -44,7 +45,7 @@ function writeJson(key: string, value: unknown, session = false) {
 }
 
 export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
-  const { items, total } = useCart();
+  const { items, total, ready } = useCart();
   const { getDesignFile } = useDesignFiles();
   const [mode, setMode] = useState<Mode>("form");
   const [customer, setCustomer] = useState<Customer | null>(null);
@@ -67,6 +68,22 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
   useEffect(() => {
     if (settled) clearCheckoutDraft();
   }, [settled]);
+  // Move focus to the title when the step changes (keyboard / screen-reader
+  // users otherwise stay on a button that just disappeared), and bring an
+  // error into view when one appears.
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  const errorRef = useRef<HTMLParagraphElement>(null);
+  const firstRender = useRef(true);
+  useEffect(() => {
+    if (firstRender.current) {
+      firstRender.current = false;
+      return;
+    }
+    titleRef.current?.focus();
+  }, [mode]);
+  useEffect(() => {
+    if (error) errorRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+  }, [error]);
   const t = UI[lang];
   const nameOf = (p: Product) => (lang === "en" ? (productsEn[p.slug]?.name ?? p.name) : p.name);
   const designProducts = [...new Set(items.map((i) => i.slug))]
@@ -135,6 +152,7 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
   // it still needs to render its own success/pending/cash-voucher result.
   // Only fall back to the empty-cart screen while still on the first step,
   // never mid-checkout, or the result flashes to this instead.
+  if (!ready) return <section className="mx-auto min-h-[60vh] max-w-2xl px-6 py-24" aria-busy="true" />;
   if (items.length === 0 && mode === "form" && !settled) {
     return (
       <section className="mx-auto max-w-2xl px-6 py-24 text-center">
@@ -152,6 +170,7 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
 
   const handleCheckoutPro = async () => {
     if (!customer || !delivery) return;
+    track("payment_method_chosen_pro");
     setError(null);
     setRedirecting(true);
     try {
@@ -174,7 +193,7 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
 
   return (
     <section className={`mx-auto px-6 py-16 sm:py-24 ${settled ? "max-w-2xl" : "max-w-2xl lg:max-w-5xl"}`}>
-      <h1 className="animate-fade-up font-display text-4xl text-ink">{mode === "form" ? t.yourDetailsShipping : t.chooseHowToPay}</h1>
+      <h1 ref={titleRef} tabIndex={-1} className="animate-fade-up font-display text-4xl text-ink focus:outline-none">{mode === "form" ? t.yourDetailsShipping : t.chooseHowToPay}</h1>
       {!settled && (
         <p className="animate-fade-up animate-fade-up-2 mt-2 text-xs font-semibold text-ink-soft">
           {mode === "form" ? t.checkoutStepShipping : t.checkoutStepPayment}
@@ -211,7 +230,11 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
         )}
 
         <div className={settled ? "" : "lg:order-1 lg:col-start-1 lg:row-start-1"}>
-          {error && <p className="mt-6 rounded-xl border border-line bg-paper p-4 text-sm text-ink">{error}</p>}
+          {error && (
+            <p ref={errorRef} role="alert" className="mt-6 rounded-xl border border-line bg-paper p-4 text-sm text-ink">
+              {error}
+            </p>
+          )}
 
           {/* Stays mounted (just hidden) after step 1 so "edit details" brings
               back everything typed instead of an empty form. */}
@@ -274,8 +297,10 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
                     setDesignFileUrls(uploads);
                     setCustomer(c);
                     setDelivery(d);
+                    track("shipping_submitted");
                     setMode("choose");
                   } catch (err) {
+                    track("upload_failed");
                     setError(err instanceof Error ? err.message : t.couldNotUploadFile);
                   }
                 }}
@@ -295,7 +320,7 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
                   disabled={redirecting}
                   className="flex flex-col items-start gap-3 rounded-2xl border border-line bg-paper-raised p-6 text-left transition-colors hover:border-brand disabled:opacity-60"
                 >
-                  <ExternalLink size={22} className="text-brand" />
+                  <ExternalLink size={22} className="text-brand" aria-hidden="true" />
                   <span className="font-display text-lg text-ink">{t.payWithMercadoPago}</span>
                   <span className="text-xs leading-relaxed text-ink-soft">{t.mpDescription}</span>
                   <span className="mt-auto text-xs font-semibold text-brand">
@@ -303,18 +328,23 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
                   </span>
                 </button>
 
+                {process.env.NEXT_PUBLIC_MERCADOPAGO_PUBLIC_KEY && (
                 <button
                   type="button"
-                  onClick={() => setMode("onsite")}
+                  onClick={() => {
+                    track("payment_method_chosen_brick");
+                    setMode("onsite");
+                  }}
                   className="flex flex-col items-start gap-3 rounded-2xl border border-line bg-paper-raised p-6 text-left transition-colors hover:border-brand"
                 >
-                  <CreditCard size={22} className="text-brand" />
+                  <CreditCard size={22} className="text-brand" aria-hidden="true" />
                   <span className="font-display text-lg text-ink">{t.payHere}</span>
                   <span className="text-xs leading-relaxed text-ink-soft">{t.payHereDescription}</span>
                   <span className="mt-auto flex items-center gap-1.5 text-xs font-semibold text-brand">
-                    <Lock size={13} /> {t.includesStorePayment}
+                    <Lock size={13} aria-hidden="true" /> {t.includesStorePayment}
                   </span>
                 </button>
+                )}
               </div>
             </div>
           )}

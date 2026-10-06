@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import type { Customer, DeliveryInfo, DeliveryMethod } from "@/lib/orders";
-import { CASABLANCA_BRANCHES, CASABLANCA_PRICE, deliverySurcharge } from "@/content/shipping";
+import { CASABLANCA_BRANCHES, deliverySurcharge } from "@/content/shipping";
 import { CASABLANCA_BRANCHES_EN } from "@/content/shipping.en";
 import { formatMXN } from "@/lib/format";
 import { UI, type Lang } from "@/lib/i18n";
@@ -62,6 +62,7 @@ export function ShippingForm({
   const t = UI[lang];
   const branches = lang === "en" ? CASABLANCA_BRANCHES_EN : CASABLANCA_BRANCHES;
   const nationalShippingCost = deliverySurcharge("envio_nacional", subtotal);
+  const pickupCost = deliverySurcharge("recoleccion_casablanca", subtotal);
   const [submitting, setSubmitting] = useState(false);
   // Preselect whatever the shopper already picked in the cart (?entrega=).
   // Only mounts once the cart has items, so never during static prerender.
@@ -160,6 +161,7 @@ export function ShippingForm({
               type="email"
               required
               autoComplete="email"
+              aria-describedby="email-help"
               spellCheck={false}
               inputMode="email"
               className={FIELD_CLASS}
@@ -167,7 +169,7 @@ export function ShippingForm({
               onChange={update("email")}
               placeholder={lang === "en" ? "jane@email.com" : "maria@correo.com"}
             />
-            <p className="mt-1 text-xs text-ink-soft">{t.reminderNotice}</p>
+            <p id="email-help" className="mt-1 text-xs text-ink-soft">{t.reminderNotice}</p>
           </div>
           <div>
             <label className={LABEL_CLASS} htmlFor="phone">
@@ -178,6 +180,7 @@ export function ShippingForm({
               type="tel"
               required
               autoComplete="tel"
+              aria-describedby="phone-help"
               inputMode="tel"
               className={FIELD_CLASS}
               value={values.phone}
@@ -187,45 +190,55 @@ export function ShippingForm({
               }}
               placeholder="33 1234 5678"
             />
-            <p className="mt-1 text-xs text-ink-soft">{t.phoneHelp}</p>
+            <p id="phone-help" className="mt-1 text-xs text-ink-soft">{t.phoneHelp}</p>
           </div>
         </div>
       </div>
 
       <div id="delivery-method">
-        <h2 className="font-display text-lg text-ink">{t.deliveryMethod}</h2>
+        <h2 id="delivery-method-label" className="font-display text-lg text-ink">{t.deliveryMethod}</h2>
         {methodError && !deliveryMethod && (
           <p role="alert" className="mt-2 text-sm font-medium text-brand">
             {t.chooseDeliveryError}
           </p>
         )}
-        <div className="mt-4 grid gap-4 sm:grid-cols-2">
-          <button
-            type="button"
-            aria-pressed={deliveryMethod === "envio_nacional"}
-            onClick={() => setDeliveryMethod("envio_nacional")}
-            className={`rounded-xl border p-4 text-left transition-colors ${
+        <div role="radiogroup" aria-labelledby="delivery-method-label" className="mt-4 grid gap-4 sm:grid-cols-2">
+          <label
+            className={`cursor-pointer rounded-xl border p-4 text-left transition-colors focus-within:outline focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-brand ${
               deliveryMethod === "envio_nacional" ? "border-brand bg-brand-tint" : "border-line bg-paper hover:border-brand"
             }`}
           >
+            <input
+              type="radio"
+              name="delivery-method"
+              value="envio_nacional"
+              checked={deliveryMethod === "envio_nacional"}
+              onChange={() => setDeliveryMethod("envio_nacional")}
+              className="sr-only"
+            />
             <p className="text-sm font-semibold text-ink">
               {t.nationalShipping} · {nationalShippingCost > 0 ? `${formatMXN(nationalShippingCost)} MXN` : t.free}
             </p>
             <p className={`mt-1 text-xs leading-relaxed ${deliveryMethod === "envio_nacional" ? "text-ink" : "text-ink-soft"}`}>{nationalShippingCost === 0 ? t.nationalShippingFreeNote : t.nationalShippingDesc}</p>
-          </button>
-          <button
-            type="button"
-            aria-pressed={deliveryMethod === "recoleccion_casablanca"}
-            onClick={() => setDeliveryMethod("recoleccion_casablanca")}
-            className={`rounded-xl border p-4 text-left transition-colors ${
+          </label>
+          <label
+            className={`cursor-pointer rounded-xl border p-4 text-left transition-colors focus-within:outline focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-brand ${
               deliveryMethod === "recoleccion_casablanca" ? "border-brand bg-brand-tint" : "border-line bg-paper hover:border-brand"
             }`}
           >
+            <input
+              type="radio"
+              name="delivery-method"
+              value="recoleccion_casablanca"
+              checked={deliveryMethod === "recoleccion_casablanca"}
+              onChange={() => setDeliveryMethod("recoleccion_casablanca")}
+              className="sr-only"
+            />
             <p className="text-sm font-semibold text-ink">
-              {t.casablancaPickup} · {formatMXN(CASABLANCA_PRICE)} MXN
+              {t.casablancaPickup} · {pickupCost > 0 ? `${formatMXN(pickupCost)} MXN` : t.free}
             </p>
             <p className={`mt-1 text-xs leading-relaxed ${deliveryMethod === "recoleccion_casablanca" ? "text-ink" : "text-ink-soft"}`}>{t.casablancaPickupDesc}</p>
-          </button>
+          </label>
         </div>
 
         {deliveryMethod === "recoleccion_casablanca" && (
@@ -257,7 +270,6 @@ export function ShippingForm({
               ))}
             </div>
             <p className="mt-3 text-xs leading-relaxed text-ink-soft">{t.casablancaNote}</p>
-            {nationalShippingCost === 0 && <p className="mt-2 text-xs leading-relaxed text-ink-soft">{t.casablancaFeeNote}</p>}
           </fieldset>
         )}
       </div>
@@ -371,7 +383,7 @@ export function ShippingForm({
         disabled={submitting}
         className="w-full rounded-full bg-brand px-8 py-4 text-center text-base font-semibold text-white transition-colors hover:bg-brand-deep active:scale-[0.98] disabled:opacity-60 sm:w-auto"
       >
-        {t.continueToPayment}
+        {submitting ? t.preparingPayment : t.continueToPayment}
       </button>
     </form>
   );

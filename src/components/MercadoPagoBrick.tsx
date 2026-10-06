@@ -5,6 +5,7 @@ import { initMercadoPago, Payment } from "@mercadopago/sdk-react";
 import { Loader2, Store, XCircle } from "lucide-react";
 import { useCart } from "@/components/CartContext";
 import type { CartItem } from "@/components/CartContext";
+import { track } from "@/components/TrackClicks";
 import { formatMXN } from "@/lib/format";
 import { ReceiptPrinter } from "@/components/ReceiptPrinter";
 import type { DesignFileUpload } from "@/components/CheckoutView";
@@ -176,7 +177,7 @@ export function MercadoPagoBrick({
       : null;
     return (
       <div className="flex items-start gap-3 rounded-xl border border-line bg-paper-raised p-5">
-        <Store size={20} className="mt-0.5 shrink-0 text-brand" />
+        <Store size={20} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />
         <div>
           <p className="font-display text-lg text-ink">{c.cashTitle}</p>
           <p className="mt-1 text-sm text-ink-soft">{c.cashBody}</p>
@@ -225,7 +226,7 @@ export function MercadoPagoBrick({
   if (result?.kind === "pending") {
     return (
       <div className="flex items-start gap-3 rounded-xl border border-line bg-paper-raised p-5">
-        <Loader2 size={20} className="mt-0.5 shrink-0 animate-spin text-brand" />
+        <Loader2 size={20} className="mt-0.5 shrink-0 animate-spin text-brand" aria-hidden="true" />
         <div>
           <p className="font-display text-lg text-ink">{c.pendingTitle}</p>
           <p className="mt-1 text-sm text-ink-soft">{c.pendingBody}</p>
@@ -238,7 +239,7 @@ export function MercadoPagoBrick({
     <div>
       {result?.kind === "error" && (
         <div className="mb-4 flex items-start gap-2 rounded-xl border border-line bg-paper p-4 text-sm text-ink">
-          <XCircle size={16} className="mt-0.5 shrink-0 text-brand" />
+          <XCircle size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />
           {result.message}
         </div>
       )}
@@ -273,11 +274,13 @@ export function MercadoPagoBrick({
               if (!res.ok) throw new Error(data.error ?? c.genericError);
 
               if (data.status === "approved") {
+                track("purchase_brick");
                 setOrderSnapshot({ items, total, orderNumber: String(data.orderId ?? "").slice(0, 8) || undefined });
                 clear();
                 onSettled?.();
                 setResult({ kind: "approved" });
               } else if (data.status === "pending" && data.ticket_url) {
+                track("payment_pending_cash");
                 clear();
                 onSettled?.();
                 setResult({
@@ -294,6 +297,7 @@ export function MercadoPagoBrick({
                 onSettled?.();
                 setResult({ kind: "pending" });
               } else {
+                track(`payment_rejected_${data.status_detail ?? "unknown"}`);
                 throw new Error(c.rejectedBy[data.status_detail as string] ?? c.rejected);
               }
             } catch (err) {

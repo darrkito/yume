@@ -13,9 +13,8 @@ export const NATIONAL_SHIPPING_PRICE = 199;
 // delivery surcharge). Derived from real margin math, not a round guess:
 // at ~40% gross margin (materials only, not labor), $750 leaves ~$101
 // profit even after absorbing the real $199 shipping cost, still above
-// the ~$498 pure break-even point (0.40 x 497.5 = 199). Casa Blanca pickup
-// is cheap enough ($20) that it deliberately has no free threshold of
-// its own.
+// the ~$498 pure break-even point (0.40 x 497.5 = 199). Since 2026-10-06 the
+// same threshold also makes Casa Blanca pickup ($20 below it) free (owner decision).
 export const FREE_SHIPPING_THRESHOLD = 750;
 
 export interface CasablancaBranch {
@@ -48,8 +47,8 @@ export type DeliveryMethod = "envio_nacional" | "recoleccion_casablanca";
 // the server-only Supabase client and must never reach a client bundle.
 // `subtotal` is the cart's items total (before any delivery surcharge).
 export function deliverySurcharge(method: DeliveryMethod, subtotal: number): number {
-  if (method === "recoleccion_casablanca") return CASABLANCA_PRICE;
-  return subtotal >= FREE_SHIPPING_THRESHOLD ? 0 : NATIONAL_SHIPPING_PRICE;
+  if (subtotal >= FREE_SHIPPING_THRESHOLD) return 0; // free for home delivery and Casa Blanca pickup alike
+  return method === "recoleccion_casablanca" ? CASABLANCA_PRICE : NATIONAL_SHIPPING_PRICE;
 }
 
 // Business-day math for the "if you approve today" delivery estimate: the

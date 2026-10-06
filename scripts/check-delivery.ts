@@ -1,6 +1,6 @@
 // Run: npx tsx scripts/check-delivery.ts
 import assert from "node:assert";
-import { addBusinessDays, estimateCasablancaPickup, estimateNationalDelivery } from "../src/content/shipping";
+import { addBusinessDays, deliverySurcharge, estimateCasablancaPickup, estimateNationalDelivery } from "../src/content/shipping";
 import { getProduct, piecesForAmount, tieredPrice } from "../src/content/products";
 
 const fri = new Date(2026, 9, 2); // Fri Oct 2 2026
@@ -22,4 +22,9 @@ for (const t of [vinyl, logo]) {
 const pick = estimateCasablancaPickup(fri); // production 3-5 + 1 business day
 assert.equal(pick.from.getDate(), 8);
 assert.equal(pick.to.getDate(), 12); // skips the weekend
+// free from $750 for BOTH home delivery and Casa Blanca pickup (owner, 2026-10-06)
+assert.equal(deliverySurcharge("recoleccion_casablanca", 749), 20);
+assert.equal(deliverySurcharge("recoleccion_casablanca", 750), 0);
+assert.equal(deliverySurcharge("envio_nacional", 749), 199);
+assert.equal(deliverySurcharge("envio_nacional", 750), 0);
 console.log("delivery ok");

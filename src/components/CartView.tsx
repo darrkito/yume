@@ -15,7 +15,7 @@ import { useDeliveryDates } from "@/components/useDeliveryDates";
 import { RelatedProducts } from "@/components/RelatedProducts";
 import { CtaFillLink } from "@/components/CtaFillLink";
 import { waLink } from "@/content/site";
-import { FREE_SHIPPING_THRESHOLD, CASABLANCA_PRICE, deliverySurcharge, type DeliveryMethod } from "@/content/shipping";
+import { FREE_SHIPPING_THRESHOLD, deliverySurcharge, type DeliveryMethod } from "@/content/shipping";
 import { formatMXN } from "@/lib/format";
 import { PRODUCT_SLUG_EN, UI, type Lang } from "@/lib/i18n";
 
@@ -30,7 +30,7 @@ const ATTACH_MSG = {
 };
 
 export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
-  const { items, removeItem, updateQty, replaceLine, total, clear, cartNotice, dismissNotice } = useCart();
+  const { items, removeItem, updateQty, replaceLine, total, clear, cartNotice, dismissNotice, ready } = useCart();
   const { getDesignFile } = useDesignFiles();
   // No default: preselecting $199 national shipping made a $100 order read
   // as $290 at first sight. The shopper picks, then sees the real total.
@@ -45,6 +45,11 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
     setRemoved(item);
     clearTimeout(undoTimer.current);
     undoTimer.current = setTimeout(() => setRemoved(null), 6000);
+  };
+  const pauseUndo = () => clearTimeout(undoTimer.current);
+  const resumeUndo = () => {
+    clearTimeout(undoTimer.current);
+    undoTimer.current = setTimeout(() => setRemoved(null), 4000);
   };
   const undoRemove = () => {
     if (!removed) return;
@@ -98,19 +103,21 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
     const lines = items.map((i) => `- ${itemName(i, lang)} x${i.qty}: ${formatMXN(i.price * i.qty)}`).join("\n");
     let msg = CONFIRM_MSG[lang](lines, formatMXN(total));
     if (itemsRequiringImage.length > 0) {
-      msg += ATTACH_MSG[lang](itemsRequiringImage.map((p) => p.name).join(", "));
+      msg += ATTACH_MSG[lang](itemsRequiringImage.map((p) => (lang === "en" ? (productsEn[p.slug]?.name ?? p.name) : p.name)).join(", "));
     }
     return msg;
   };
 
   const undoBar = removed && (
-    <div role="status" className="fixed inset-x-4 bottom-24 z-50 mx-auto flex max-w-md items-center justify-between gap-4 rounded-full bg-ink px-5 py-2 text-sm text-white shadow-lg sm:bottom-8">
+    <div role="status" onMouseEnter={pauseUndo} onMouseLeave={resumeUndo} onFocus={pauseUndo} onBlur={resumeUndo} className="fixed inset-x-4 bottom-24 z-50 mx-auto flex max-w-md items-center justify-between gap-4 rounded-full bg-ink px-5 py-2 text-sm text-white shadow-lg sm:bottom-8">
       <span className="min-w-0 truncate">{t.removedItem.replace("{name}", itemName(removed, lang))}</span>
       <button type="button" onClick={undoRemove} className="min-h-11 shrink-0 px-2 font-semibold underline underline-offset-2">
         {t.undo}
       </button>
     </div>
   );
+
+  if (!ready) return <section className="mx-auto min-h-[60vh] max-w-2xl px-6 py-24" aria-busy="true" />;
 
   if (items.length === 0) {
     return (
@@ -232,7 +239,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
                 aria-label={`${t.remove} ${itemName(item, lang)}`}
                 className="flex size-11 items-center justify-center text-ink-soft transition-colors hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
               >
-                <X size={16} />
+                <X size={16} aria-hidden="true" />
               </button>
             </div>
           </li>
@@ -242,7 +249,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
 
       {itemsRequiringImage.length > 0 && (
         <div className="mt-6 flex items-start gap-3 rounded-xl bg-brand-tint p-4 text-sm text-ink">
-          <ImageUp size={18} className="mt-0.5 shrink-0 text-brand" />
+          <ImageUp size={18} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />
           <div>
             <p>{itemsRequiringImage.length === 1 ? t.requiresImageOne : t.requiresImageMany} {t.requiresImageSuffix}</p>
             <ul className="mt-1.5 space-y-1">
@@ -268,7 +275,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
         </div>
       )}
 
-      {method !== "recoleccion_casablanca" && total < FREE_SHIPPING_THRESHOLD && (
+      {total < FREE_SHIPPING_THRESHOLD && (
         <div className="mt-8 rounded-xl border border-line bg-paper-raised p-4">
           <p className="text-sm text-ink">{t.freeShippingProgress.replace("{remaining}", formatMXN(FREE_SHIPPING_THRESHOLD - total))}</p>
           <div className="mt-3 h-1.5 w-full overflow-hidden rounded-full bg-line">
@@ -289,7 +296,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
           )}
         </div>
       )}
-      {method !== "recoleccion_casablanca" && total >= FREE_SHIPPING_THRESHOLD && (
+      {total >= FREE_SHIPPING_THRESHOLD && (
         <div className="mt-8 flex items-start gap-2 rounded-xl border border-line bg-paper-raised p-4 text-sm text-ink"><Truck size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.freeShippingReached}</div>
       )}
 
@@ -299,7 +306,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
           <legend className="text-sm text-ink-soft">{t.deliveryChoice}</legend>
           <div className="mt-2 grid gap-2 sm:grid-cols-2">
             {([
-              ["recoleccion_casablanca", t.pickupGdl, CASABLANCA_PRICE],
+              ["recoleccion_casablanca", t.pickupGdl, deliverySurcharge("recoleccion_casablanca", total)],
               ["envio_nacional", t.nationalShipping, deliverySurcharge("envio_nacional", total)],
             ] as const).map(([value, label, cost]) => (
               <label

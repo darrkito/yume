@@ -4,7 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ShoppingBag, MessageCircle } from "lucide-react";
+import { ShoppingBag } from "lucide-react";
+import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import { SITE, waLink } from "@/content/site";
 import { useCart } from "@/components/CartContext";
 import { LanguageToggle } from "@/components/LanguageToggle";
@@ -74,7 +75,7 @@ export function Header() {
               aria-label={t.checkoutHelp}
               className="inline-flex min-h-11 min-w-11 items-center justify-center gap-1.5 transition-colors hover:text-brand"
             >
-              <MessageCircle size={18} aria-hidden="true" />
+              <WhatsAppIcon size={18} />
               <span className="hidden sm:inline">{t.checkoutHelp}</span>
             </a>
           </div>
@@ -115,7 +116,7 @@ export function Header() {
               </span>
             )}
           </Link>
-          <a href={waLink(WA_QUOTE_MESSAGE[lang])} target="_blank" rel="noopener noreferrer" aria-label={t.quoteWhatsapp} className="flex size-11 items-center justify-center text-ink transition-colors hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"><MessageCircle size={22} aria-hidden="true" /></a>
+          <a href={waLink(WA_QUOTE_MESSAGE[lang])} target="_blank" rel="noopener noreferrer" aria-label={t.quoteWhatsapp} className="flex size-11 items-center justify-center text-ink transition-colors hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"><WhatsAppIcon size={22} /></a>
           {pathname !== cartHref && (
             <Link
               href={pathname === shopHref ? cartHref : shopHref}

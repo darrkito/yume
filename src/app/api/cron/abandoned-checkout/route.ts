@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { claimReminder, getAbandonedOrders, markRemindedWithoutSending, releaseReminder } from "@/lib/orders";
+import { claimReminder, cleanupOrphanUploads, getAbandonedOrders, markRemindedWithoutSending, releaseReminder } from "@/lib/orders";
 import { sendAbandonedReminder } from "@/lib/email";
 
 // Vercel Cron (see vercel.json, once a day: Hobby allows no more) calls this
@@ -22,6 +22,7 @@ export async function GET(req: NextRequest) {
     if (req.nextUrl.searchParams.get("dry") === "1") {
       return NextResponse.json({
         dryRun: true,
+        orphanUploads: await cleanupOrphanUploads(true).catch(() => null),
         wouldSend: send.map((o) => ({ id: o.id.slice(0, 8), createdAt: o.created_at, total: o.total })),
         skipped: skipped.length,
       });
@@ -40,7 +41,13 @@ export async function GET(req: NextRequest) {
     }
     await markRemindedWithoutSending(skipped.map((o) => o.id));
 
-    return NextResponse.json({ sent, failed, skipped: skipped.length });
+    // Housekeeping: a failure here must not hide the reminder results.
+    const cleanup = await cleanupOrphanUploads().catch((err) => {
+      console.error("[cron] cleanup de archivos falló:", err);
+      return null;
+    });
+
+    return NextResponse.json({ sent, failed, skipped: skipped.length, cleanup });
   } catch (err) {
     console.error("[cron] abandoned-checkout falló:", err);
     return NextResponse.json({ error: "Internal error" }, { status: 500 });

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Check, MessageCircle, CheckCircle2, Truck, PenTool, MapPin, ShieldCheck } from "lucide-react";
-import { CASABLANCA_PRICE } from "@/content/shipping";
+import { CASABLANCA_PRICE, FREE_SHIPPING_THRESHOLD } from "@/content/shipping";
 import { hasVariants, productDisplayPrice, products } from "@/content/products";
 import { productsEn } from "@/content/products.en";
 import { getFeaturedFaqEn } from "@/content/faq.en";
@@ -86,7 +86,7 @@ export default function HomeEn() {
               </CtaFillLink>
             </div>
             <ul aria-label="Why buy with confidence" className="animate-fade-up animate-fade-up-2 mt-6 max-sm:hidden space-y-2 text-sm text-ink">
-              <li className="flex items-center gap-2"><MapPin size={16} className="shrink-0 text-brand" aria-hidden="true" />Pick up in Guadalajara for {formatMXN(CASABLANCA_PRICE)}</li>
+              <li className="flex items-center gap-2"><MapPin size={16} className="shrink-0 text-brand" aria-hidden="true" />Pick up in Guadalajara for {formatMXN(CASABLANCA_PRICE)} (free from {formatMXN(FREE_SHIPPING_THRESHOLD)})</li>
               <li className="flex items-center gap-2"><ShieldCheck size={16} className="shrink-0 text-brand" aria-hidden="true" />Pay by card, OXXO or SPEI</li>
               <li className="flex items-center gap-2"><CheckCircle2 size={16} className="shrink-0 text-brand" aria-hidden="true" />You approve the design before printing</li>
             </ul>
@@ -103,7 +103,7 @@ export default function HomeEn() {
       {/* Phones: the shelf comes first, before any long explanation */}
       <ProductRail lang="en" heading="Pick your product">
         <ul aria-label="Why buy with confidence" className="mt-2 space-y-2 px-6 pb-8 text-sm text-ink">
-              <li className="flex items-center gap-2"><MapPin size={16} className="shrink-0 text-brand" aria-hidden="true" />Pick up in Guadalajara for {formatMXN(CASABLANCA_PRICE)}</li>
+              <li className="flex items-center gap-2"><MapPin size={16} className="shrink-0 text-brand" aria-hidden="true" />Pick up in Guadalajara for {formatMXN(CASABLANCA_PRICE)} (free from {formatMXN(FREE_SHIPPING_THRESHOLD)})</li>
               <li className="flex items-center gap-2"><ShieldCheck size={16} className="shrink-0 text-brand" aria-hidden="true" />Pay by card, OXXO or SPEI</li>
               <li className="flex items-center gap-2"><CheckCircle2 size={16} className="shrink-0 text-brand" aria-hidden="true" />You approve the design before printing</li>
             </ul>

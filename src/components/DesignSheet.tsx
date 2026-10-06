@@ -24,12 +24,12 @@ export const DesignSheet = forwardRef<HTMLDialogElement, { lang: Lang; onFile: (
             </button>
           </div>
           <p className="mt-2 text-sm leading-relaxed text-ink-soft">{t.designSheetBody}</p>
-          <label className="btn-soft btn-soft-solid mt-4 w-full cursor-pointer">
+          <label className="btn-soft btn-soft-solid mt-4 w-full cursor-pointer focus-within:outline focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-brand">
             <ImageUp size={18} aria-hidden="true" /> {t.chooseFile}
             <input
               type="file"
               accept="image/*,.pdf,.ai,.svg,.psd"
-              className="hidden"
+              className="sr-only"
               onChange={(e) => {
                 const file = e.target.files?.[0];
                 e.target.value = "";

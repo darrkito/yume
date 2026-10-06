@@ -379,3 +379,32 @@ export async function optOutOfReminders(email: string): Promise<void> {
     .is("abandoned_reminder_sent_at", null);
   if (error) throw error;
 }
+
+// --- Orphan design uploads ------------------------------------------------------
+// Files are uploaded before payment, so abandoned carts leave files behind.
+// Anything in the bucket older than ORPHAN_AGE_DAYS that no order references is
+// deleted (an order still in the reminder window is far younger than that).
+const ORPHAN_AGE_DAYS = 30;
+
+export async function cleanupOrphanUploads(dryRun = false): Promise<{ checked: number; deleted: number }> {
+  const supabase = getSupabaseClient();
+  const bucket = supabase.storage.from("order-designs");
+  const cutoff = Date.now() - ORPHAN_AGE_DAYS * 86400_000;
+
+  const { data: files, error } = await bucket.list("", { limit: 1000, sortBy: { column: "created_at", order: "asc" } });
+  if (error) throw error;
+  const old = (files ?? []).filter((f) => f.created_at && new Date(f.created_at).getTime() < cutoff);
+  if (old.length === 0) return { checked: files?.length ?? 0, deleted: 0 };
+
+  const { data: orders, error: ordersError } = await supabase.from("orders").select("design_file_urls").not("design_file_urls", "is", null);
+  if (ordersError) throw ordersError;
+  const referenced = new Set(
+    (orders ?? []).flatMap((o) => (o.design_file_urls as DesignFileUpload[]).map((d) => decodeURIComponent(d.url.split("/order-designs/")[1]?.split("?")[0] ?? ""))),
+  );
+  const orphans = old.map((f) => f.name).filter((name) => !referenced.has(name));
+  if (orphans.length && !dryRun) {
+    const { error: removeError } = await bucket.remove(orphans);
+    if (removeError) throw removeError;
+  }
+  return { checked: files?.length ?? 0, deleted: orphans.length };
+}

@@ -335,7 +335,7 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
             </span>
           </li>
           <li className="flex items-start gap-2"><MapPin size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" /><span>
-              {t.factPickup.replace("{pickup}", formatMXN(CASABLANCA_PRICE))}
+              {t.factPickup.replace("{pickup}", formatMXN(CASABLANCA_PRICE)).replace("{threshold}", formatMXN(FREE_SHIPPING_THRESHOLD))}
               {dates && <span className="block text-xs text-ink-soft">{t.pickupEstimate.replace("{from}", dates.pickup.from).replace("{to}", dates.pickup.to)}</span>}
             </span></li>
           <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.factProof}</li>
@@ -357,7 +357,7 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4">
           <div className="min-w-0">
             <p className="truncate text-base font-semibold text-ink">{formatMXN(lineTotal)}</p>
-            <p className="truncate text-xs text-ink-soft">{pieces ? `${pieces} ${t.pieces}` : units > 1 ? `${units} × ${product.name}` : label}</p>
+            <p className="truncate text-xs text-ink-soft">{pieces ? `${pieces} ${t.pieces}` : units > 1 ? `${units} × ${lang === "en" ? (getProductTranslation(product.slug)?.name ?? product.name) : product.name}` : label}</p>
           </div>
           <a
             href={waLink(waMsg)}

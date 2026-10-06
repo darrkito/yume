@@ -104,7 +104,7 @@ export function LogoUploadNote({ slug, lang = "es", heading, hint }: { slug: str
   return (
     <div id={`design-${slug}`} className="mt-6 scroll-mt-24 rounded-xl border border-line bg-paper p-5">
       <p className="flex items-center gap-2 text-sm font-semibold text-ink">
-        <ImageUp size={16} className="text-brand" /> {heading ?? t.yourLogoOrDesign}
+        <ImageUp size={16} className="text-brand" aria-hidden="true" /> {heading ?? t.yourLogoOrDesign}
       </p>
       <p className="mt-1.5 text-xs leading-relaxed text-ink-soft">
         {t.logoNoteBody}
@@ -124,14 +124,14 @@ export function LogoUploadNote({ slug, lang = "es", heading, hint }: { slug: str
           <div className="min-w-0 flex-1">
             <p className="truncate text-xs text-ink">{file.name}</p>
             <button type="button" onClick={clearFile} className="mt-1 flex min-h-11 items-center gap-1 text-xs text-ink-soft transition-colors hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
-              <X size={12} /> {t.remove}
+              <X size={12} aria-hidden="true" /> {t.remove}
             </button>
           </div>
         </div>
       ) : (
         <label
           ref={zoneRef}
-          className={`relative mt-4 block cursor-pointer rounded-lg border border-dashed py-6 text-center text-sm font-semibold transition-colors ${STAGE_CLASSES[stage]}`}
+          className={`relative mt-4 block cursor-pointer rounded-lg border border-dashed py-6 focus-within:outline focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-brand text-center text-sm font-semibold transition-colors ${STAGE_CLASSES[stage]}`}
           onDragOver={(e) => e.preventDefault()}
           onDrop={(e) => {
             e.preventDefault();
@@ -146,12 +146,16 @@ export function LogoUploadNote({ slug, lang = "es", heading, hint }: { slug: str
           <input
             type="file"
             accept="image/*,.pdf,.ai,.svg,.psd"
-            className="hidden"
+            className="sr-only"
             onChange={(e) => handleFile(e.target.files?.[0])}
           />
         </label>
       )}
-      {error && <p className="mt-2 text-xs text-brand">{error}</p>}
+      {error && (
+        <p role="alert" className="mt-2 text-xs text-brand">
+          {error}
+        </p>
+      )}
     </div>
   );
 }
