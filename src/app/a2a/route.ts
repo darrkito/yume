@@ -3,6 +3,7 @@ import { products } from "@/content/products";
 import { productsEn } from "@/content/products.en";
 import { blogPosts } from "@/content/blog";
 import { blogPostsEn } from "@/content/blog.en";
+import { shippingFacts } from "@/content/shipping-facts";
 import { SITE, waLink } from "@/content/site";
 
 // Rule-based A2A agent — keyword-matches the incoming message against a
@@ -31,11 +32,11 @@ function matchAnswerEs(text: string): string {
 
   if (/precio|cuesta|cuánto|costo/.test(q)) {
     const list = products.map((p) => `${p.name}: $${p.price.toFixed(2)} MXN${p.tiers ? ` (${p.tiers.baseQty} piezas)` : ""}`).join(". ");
-    return `Precios actuales: ${list}. Puedes ver el catálogo completo en ${SITE.url}/productos.`;
+    return `Precios actuales: ${list}. Puedes ver el catálogo completo en ${SITE.url}/productos. ${shippingFacts("es")}`;
   }
 
   if (/dónde|ubicaci|ciudad|guadalajara|jalisco|envío|envían|nacional/.test(q)) {
-    return `Yume produce desde ${SITE.city}, ${SITE.state}, y envía a todo México. No tenemos tienda física para visitar: todo el proceso se hace a distancia con una prueba digital que apruebas antes de imprimir (incluye hasta 2 rondas de ajustes).`;
+    return `Yume produce desde ${SITE.city}, ${SITE.state}, y envía a todo México. No tenemos tienda física para visitar: todo el proceso se hace a distancia con una prueba digital que apruebas antes de imprimir. ${shippingFacts("es")}`;
   }
 
   if (/requisitos|datos obligatorios|debe llevar/.test(q) && /receta|recetario|médico/.test(q)) {
@@ -117,11 +118,11 @@ function matchAnswerEn(text: string): string {
 
   if (/price|cost|how much/.test(q)) {
     const list = products.map((p) => `${productsEn[p.slug]?.name ?? p.name}: $${p.price.toFixed(2)} MXN${p.tiers ? ` (${p.tiers.baseQty} pieces)` : ""}`).join(". ");
-    return `Current prices: ${list}. See the full catalog at ${SITE.url}/en/products.`;
+    return `Current prices: ${list}. See the full catalog at ${SITE.url}/en/products. ${shippingFacts("en")}`;
   }
 
   if (/where|location|city|guadalajara|jalisco|ship/.test(q)) {
-    return `Yume produces everything from ${SITE.city}, ${SITE.state}, and ships across all of Mexico. We don't have a physical storefront to visit: the whole process happens remotely, with a digital proof you approve before printing (up to 2 rounds of changes included).`;
+    return `Yume produces everything from ${SITE.city}, ${SITE.state}, and ships across all of Mexico. We don't have a physical storefront to visit: the whole process happens remotely, with a digital proof you approve before printing. ${shippingFacts("en")}`;
   }
 
   if (/requirements|required information|what.*include/.test(q) && /prescription|medical/.test(q)) {

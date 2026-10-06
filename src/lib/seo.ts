@@ -3,7 +3,7 @@ import { hreflangFor, enPathToEsPath, type Lang } from "@/lib/i18n";
 import { SITE } from "@/content/site";
 import { productDisplayPrice, products, type Product } from "@/content/products";
 import type { BlogPost } from "@/content/blog";
-import { CASABLANCA_PRICE, NATIONAL_SHIPPING_PRICE, NATIONAL_TRANSIT_DAYS, PICKUP_EXTRA_DAYS, PRODUCTION_DAYS } from "@/content/shipping";
+import { CASABLANCA_PRICE, FREE_SHIPPING_THRESHOLD, NATIONAL_SHIPPING_PRICE, NATIONAL_TRANSIT_DAYS, PICKUP_EXTRA_DAYS, PRODUCTION_DAYS } from "@/content/shipping";
 
 export const ORG_ID = `${SITE.url}/#organization`;
 
@@ -172,6 +172,8 @@ export function productPageSchema(
       "@type": "Offer",
       price: productDisplayPrice(product),
       priceCurrency: product.currency,
+      // Rolling one year ahead (computed at build), never a hard-coded date that goes stale.
+      priceValidUntil: new Date(Date.now() + 365 * 86400_000).toISOString().slice(0, 10),
       ...(product.tiers
         ? { eligibleQuantity: { "@type": "QuantitativeValue", minValue: product.tiers.baseQty, unitCode: "C62", unitText: lang === "en" ? "pieces" : "piezas" } }
         : {}),
@@ -185,6 +187,7 @@ export function productPageSchema(
       shippingDetails: [
         {
           "@type": "OfferShippingDetails",
+          shippingLabel: lang === "en" ? `Home delivery in Mexico (free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more)` : `Envío a domicilio en México (gratis en compras de $${FREE_SHIPPING_THRESHOLD} MXN o más)`,
           shippingRate: { "@type": "MonetaryAmount", value: String(NATIONAL_SHIPPING_PRICE), currency: "MXN" },
           shippingDestination: { "@type": "DefinedRegion", addressCountry: "MX" },
           deliveryTime: {
@@ -195,7 +198,7 @@ export function productPageSchema(
         },
         {
           "@type": "OfferShippingDetails",
-          shippingLabel: lang === "en" ? "Pickup at a Casa Blanca branch (Guadalajara metro area)" : "Recolección en sucursal Casa Blanca (zona metropolitana de Guadalajara)",
+          shippingLabel: lang === "en" ? `Pickup at a Casa Blanca branch, Guadalajara metro area (free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more)` : `Recolección en sucursal Casa Blanca, zona metropolitana de Guadalajara (gratis en compras de $${FREE_SHIPPING_THRESHOLD} MXN o más)`,
           shippingRate: { "@type": "MonetaryAmount", value: String(CASABLANCA_PRICE), currency: "MXN" },
           shippingDestination: { "@type": "DefinedRegion", addressCountry: "MX", addressRegion: "JAL" },
           deliveryTime: {

@@ -1,3 +1,4 @@
+import { shippingFacts } from "@/content/shipping-facts";
 import { NextRequest, NextResponse } from "next/server";
 import { products, getProduct } from "@/content/products";
 import { productsEn, getProductTranslation } from "@/content/products.en";
@@ -103,9 +104,9 @@ function callTool(name: string, args: Record<string, unknown>) {
       if (!product) throw { code: -32602, message: `Unknown product slug: ${rawSlug}` };
       if (lang === "en") {
         const t = getProductTranslation(esSlug);
-        return { ...product, ...t, slug: PRODUCT_SLUG_EN[esSlug], url: `${SITE.url}/en/products/${PRODUCT_SLUG_EN[esSlug]}` };
+        return { ...product, ...t, slug: PRODUCT_SLUG_EN[esSlug], url: `${SITE.url}/en/products/${PRODUCT_SLUG_EN[esSlug]}`, shipping: shippingFacts("en") };
       }
-      return { ...product, url: `${SITE.url}/productos/${product.slug}` };
+      return { ...product, url: `${SITE.url}/productos/${product.slug}`, shipping: shippingFacts("es") };
     }
 
     case "search_faq": {

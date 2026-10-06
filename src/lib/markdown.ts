@@ -11,6 +11,7 @@ import { getFaqCategories } from "@/content/faq";
 import { getFaqCategoriesEn } from "@/content/faq.en";
 import { SITE } from "@/content/site";
 import { PRODUCT_SLUG_EN } from "@/lib/i18n";
+import { shippingFacts } from "@/content/shipping-facts";
 
 export function productsListMarkdown(lang: "es" | "en"): string {
   const lines = [lang === "en" ? "# Yume: Products" : "# Yume: Productos", ""];
@@ -21,6 +22,7 @@ export function productsListMarkdown(lang: "es" | "en"): string {
     lines.push(t?.description ?? p.description);
     lines.push("");
   }
+  lines.push(lang === "en" ? "## Shipping, pickup and proof" : "## Envío, recolección y prueba", shippingFacts(lang), "");
   return lines.join("\n");
 }
 
@@ -42,6 +44,7 @@ function productMarkdownFor(product: Product, lang: "es" | "en"): string {
     lines.push(f.a);
     lines.push("");
   }
+  lines.push(lang === "en" ? "## Shipping, pickup and proof" : "## Envío, recolección y prueba", shippingFacts(lang), "");
   return lines.join("\n");
 }
 

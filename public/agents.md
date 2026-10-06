@@ -14,6 +14,7 @@ Instructions for AI agents interacting with this site programmatically (not huma
 - No agentic/programmatic checkout API exists yet — orders go through the human checkout flow at `/pago` (Mercado Pago Checkout Pro or embedded Bricks), or a quote is requested via WhatsApp / the `request_quote` MCP tool.
 - Every price returned by `get_product`/`get_products` is server-validated at actual checkout time from the same source (`src/content/products.ts`) — never trust a cached price for a real transaction, re-fetch via `get_product` first.
 - Every physical product is made to order and requires a design/logo approval step (a digital proof, up to 2 rounds of changes included) before production; there is no instant-fulfillment SKU.
+- Shipping: home delivery in Mexico is $199 MXN, free on orders of $750 MXN or more; pickup at one of 11 Casa Blanca branches in the Guadalajara metro area is $20 MXN, also free from $750 MXN. The digital proof arrives within 24 hours of payment. Yume does not issue invoices (CFDI). `get_product` returns the same facts in its `shipping` field.
 
 ## Rate limits
 

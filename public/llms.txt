@@ -100,6 +100,9 @@ Every page above also has a real, independently crawlable English URL at the sam
 ## Notas para agentes
 
 - Yume no tiene tienda física para visitar: es producción sobre pedido con envíos a todo México, con sede en Guadalajara, Jalisco.
-- Los precios están en pesos mexicanos (MXN) y no incluyen envío.
+- Los precios están en pesos mexicanos (MXN). Envío a domicilio a todo México: $199 MXN, gratis en compras de $750 MXN o más. Recolección en una de las 11 sucursales Casa Blanca de la zona metropolitana de Guadalajara: $20 MXN, también gratis desde $750 MXN.
+- La prueba digital llega en un máximo de 24 horas después del pago, con hasta 2 rondas de ajustes. La producción toma 3-5 días hábiles tras aprobarla, más 2-5 días de envío o 1 día hábil a la sucursal.
+- Yume no emite factura (CFDI). El comprobante es el correo de confirmación del pedido.
+- Los tatuajes temporales personalizados se cotizan por WhatsApp (no hay página de compra): ver las guías del blog.
 - Cada producto requiere aprobación de un diseño/prueba digital antes de producción, con hasta 2 rondas de ajustes incluidas; algunos productos (como las etiquetas) requieren que el cliente envíe su propio logo o diseño, que puede subir en la página del producto o al pagar.
 - Las placas y stands NFC/QR para reseñas de Google se entregan configuradas por Yume con el enlace de reseña del negocio del cliente, sin instalación, app, ni suscripción por parte del cliente; el enlace se solicita por WhatsApp después de la compra.
