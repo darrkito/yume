@@ -25,6 +25,8 @@ export const SITE = {
   descriptionEn:
     "Custom vinyl stickers and logo stickers from $100 MXN, temporary tattoos and custom stationery. Made in Guadalajara, shipping across Mexico.",
   whatsappNumber: "523334005135",
+  /** Same number as whatsappNumber, as people dial it in Mexico. */
+  phoneDisplay: "33 3400 5135",
   email: "yume.studiomx@gmail.com",
   instagram: "https://www.instagram.com/studioyume.mx",
   city: "Guadalajara",

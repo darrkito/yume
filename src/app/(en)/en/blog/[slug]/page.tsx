@@ -4,7 +4,7 @@ import Link from "next/link";
 import { blogPostsEn, getBlogPostEn } from "@/content/blog.en";
 import { products } from "@/content/products";
 import { productsEn } from "@/content/products.en";
-import { waLink } from "@/content/site";
+import { SITE, waLink } from "@/content/site";
 import { formatBlogDate } from "@/lib/format";
 import { topicsFor } from "@/lib/blog-topics";
 import { hreflangFor, PRODUCT_SLUG_EN, BLOG_SLUG_ES } from "@/lib/i18n";
@@ -61,6 +61,11 @@ export default async function BlogPostPageEn({ params }: { params: Promise<{ slu
         {post.modifiedAt && post.modifiedAt !== post.publishedAt && (
           <span className="text-xs text-ink-soft">
             · Updated <time dateTime={post.modifiedAt}>{formatBlogDate(post.modifiedAt, "en")}</time>
+          </span>
+        )}
+        {SITE.founder && (
+          <span className="text-xs text-ink-soft">
+            · By <Link href="/en/about" className="underline underline-offset-2 hover:text-brand">{SITE.founder.name}</Link>
           </span>
         )}
       </div>

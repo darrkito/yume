@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { MessageCircle } from "lucide-react";
 import { SITE, waLink } from "@/content/site";
-import { pageMetadata, breadcrumbSchema } from "@/lib/seo";
+import { pageMetadata, breadcrumbSchema, aboutPageSchema } from "@/lib/seo";
+import { FounderBlock } from "@/components/FounderBlock";
+import { CASABLANCA_BRANCHES, PRODUCTION_DAYS } from "@/content/shipping";
 import { ShopCta } from "@/components/ShopCta";
 
 export const metadata: Metadata = pageMetadata({
@@ -31,6 +33,15 @@ const SECTIONS = [
   },
 ];
 
+// Verifiable facts about the business, from the same data the rest of the
+// site uses (dates, shipping, branches): what an answer engine can quote.
+const FACTS = [
+  `Opened in August 2026 in ${SITE.city}, ${SITE.state}.`,
+  `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after you approve your digital proof.`,
+  `Shipping across Mexico, or pickup at ${CASABLANCA_BRANCHES.length} Casa Blanca branches in the Guadalajara metro area.`,
+  "Online store: there's no walk-in counter to visit.",
+];
+
 export default function AboutPageEn() {
   const breadcrumb = breadcrumbSchema("/en/about", [{ name: "Home", url: "/en" }, { name: "About" }]);
   return (
@@ -49,6 +60,17 @@ export default function AboutPageEn() {
         ))}
       </div>
 
+      <FounderBlock lang="en" />
+
+      <div className="mt-12">
+        <h2 className="font-display text-xl text-ink">Yume at a glance</h2>
+        <ul className="mt-3 list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-ink-soft">
+          {FACTS.map((f) => (
+            <li key={f}>{f}</li>
+          ))}
+        </ul>
+      </div>
+
       <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3">
         <a
           href={waLink("Hi, I'd like to know more about Yume.")}
@@ -63,6 +85,7 @@ export default function AboutPageEn() {
       </div>
       <ShopCta lang="en" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutPageSchema("en")) }} />
     </section>
   );
 }

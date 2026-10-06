@@ -106,6 +106,11 @@ export function Footer() {
                 </a>
               </li>
               <li>
+                <a href={`tel:+${SITE.whatsappNumber}`} className="inline-flex min-h-11 items-center hover:text-brand transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
+                  {SITE.phoneDisplay}
+                </a>
+              </li>
+              <li>
                 <a href={`mailto:${SITE.email}`} className="inline-flex min-h-11 items-center hover:text-brand transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
                   {SITE.email}
                 </a>

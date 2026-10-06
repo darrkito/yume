@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { blogPosts, getBlogPost } from "@/content/blog";
 import { products } from "@/content/products";
-import { waLink } from "@/content/site";
+import { SITE, waLink } from "@/content/site";
 import { formatBlogDate } from "@/lib/format";
 import { topicsFor } from "@/lib/blog-topics";
 import { hreflangFor } from "@/lib/i18n";
@@ -59,6 +59,11 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         {post.modifiedAt && post.modifiedAt !== post.publishedAt && (
           <span className="text-xs text-ink-soft">
             · Actualizado <time dateTime={post.modifiedAt}>{formatBlogDate(post.modifiedAt)}</time>
+          </span>
+        )}
+        {SITE.founder && (
+          <span className="text-xs text-ink-soft">
+            · Por <Link href="/nosotros" className="underline underline-offset-2 hover:text-brand">{SITE.founder.name}</Link>
           </span>
         )}
       </div>

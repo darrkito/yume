@@ -32,11 +32,11 @@ export default function ContactPageEn() {
           Get a quote on WhatsApp
         </a>
         <a
-          href="tel:+523334005135"
+          href={`tel:+${SITE.whatsappNumber}`}
           className="flex min-h-11 items-center gap-2 text-sm text-ink-soft transition-colors hover:text-brand"
         >
           <Phone size={18} aria-hidden="true" />
-          +52 33 3400 5135
+          +52 {SITE.phoneDisplay}
         </a>
         <a
           href={`mailto:${SITE.email}`}

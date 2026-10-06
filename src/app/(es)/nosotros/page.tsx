@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { MessageCircle } from "lucide-react";
 import { SITE, waLink } from "@/content/site";
-import { pageMetadata, breadcrumbSchema } from "@/lib/seo";
+import { pageMetadata, breadcrumbSchema, aboutPageSchema } from "@/lib/seo";
+import { FounderBlock } from "@/components/FounderBlock";
+import { CASABLANCA_BRANCHES, PRODUCTION_DAYS } from "@/content/shipping";
 import { ShopCta } from "@/components/ShopCta";
 
 export const metadata: Metadata = pageMetadata({
@@ -30,6 +32,15 @@ const SECTIONS = [
   },
 ];
 
+// Verifiable facts about the business, from the same data the rest of the
+// site uses (dates, shipping, branches): what an answer engine can quote.
+const FACTS = [
+  `Abrimos en agosto de 2026, en ${SITE.city}, ${SITE.state}.`,
+  `Producción de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar tu prueba digital.`,
+  `Envíos a todo México, o recolección en ${CASABLANCA_BRANCHES.length} sucursales Casa Blanca de la zona metropolitana de Guadalajara.`,
+  "Tienda en línea: no tenemos mostrador para visitar.",
+];
+
 export default function NosotrosPage() {
   const breadcrumb = breadcrumbSchema("/nosotros", [{ name: "Inicio", url: "/" }, { name: "Nosotros" }]);
   return (
@@ -48,6 +59,17 @@ export default function NosotrosPage() {
         ))}
       </div>
 
+      <FounderBlock lang="es" />
+
+      <div className="mt-12">
+        <h2 className="font-display text-xl text-ink">Yume en datos</h2>
+        <ul className="mt-3 list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-ink-soft">
+          {FACTS.map((f) => (
+            <li key={f}>{f}</li>
+          ))}
+        </ul>
+      </div>
+
       <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3">
         <a
           href={waLink("Hola, quiero saber más sobre Yume.")}
@@ -62,6 +84,7 @@ export default function NosotrosPage() {
       </div>
       <ShopCta lang="es" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutPageSchema("es")) }} />
     </section>
   );
 }

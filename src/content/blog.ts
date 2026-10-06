@@ -149,15 +149,15 @@ export const blogPosts: BlogPost[] = [
       "Cómo cotizar papelería personalizada y pedirla en línea desde cualquier parte de México: qué información preparar, cómo funciona la prueba digital y qué esperar entre que apruebas el diseño y recibes tu pedido.",
     category: "Guías",
     publishedAt: "2026-08-31",
-    modifiedAt: "2026-09-23",
+    modifiedAt: "2026-10-06",
     intro:
       "No necesitas visitar una imprenta física para tener papelería con tu marca: en Yume funcionamos como una imprenta online en Guadalajara, con todo el proceso a distancia y envíos a cualquier ciudad de México. Esta guía explica paso a paso cómo cotizar papelería personalizada y pedirla en línea, para que sepas qué preparar antes de escribirnos.",
     sections: [
       {
         heading: "El proceso paso a paso",
         body: [
-          "1) Cotizas por WhatsApp o desde la tienda en línea, indicando qué producto necesitas y la cantidad. 2) Nos mandas tus datos o tu logo/diseño, según el producto. 3) Te enviamos una prueba digital para que revises que todo esté correcto. 4) Apruebas el diseño y hasta ese momento se manda a producción. 5) Recibes tu pedido por paquetería a la dirección que nos des, en cualquier parte de México.",
-          "El único paso presencial que existe es recibir el paquete: todo lo demás, incluida cotizar papelería personalizada y aprobar el diseño, se hace a distancia por WhatsApp o correo.",
+          "1) Cotizas por WhatsApp o desde la tienda en línea, indicando qué producto necesitas y la cantidad. 2) Nos mandas tus datos o tu logo/diseño, según el producto. 3) Te enviamos una prueba digital para que revises que todo esté correcto. 4) Apruebas el diseño y hasta ese momento se manda a producción. 5) Recibes tu pedido por paquetería a la dirección que nos des, en cualquier parte de México, o, si estás en la zona metropolitana de Guadalajara, lo recoges en la sucursal Casa Blanca que elijas ($20 MXN).",
+          "El único paso presencial que existe es recibir el paquete (o recogerlo en tu sucursal Casa Blanca): todo lo demás, incluida cotizar papelería personalizada y aprobar el diseño, se hace a distancia por WhatsApp o correo.",
         ],
       },
       {
@@ -170,7 +170,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Por qué no hace falta una imprenta física en Guadalajara",
         body: [
-          "Aunque producimos en Guadalajara, Jalisco, no operamos como una imprenta de mostrador: somos una imprenta online en Guadalajara, así que no necesitas ir a dejar un archivo en USB ni recoger tu pedido en persona. Todo el proceso, desde cotizar hasta aprobar el diseño final, pasa por WhatsApp o correo, así que el servicio funciona igual si estás en la ciudad o en cualquier otro estado de México.",
+          "Aunque producimos en Guadalajara, Jalisco, no operamos como una imprenta de mostrador: somos una imprenta online en Guadalajara, así que no necesitas ir a dejar un archivo en USB ni pasar a un mostrador: tu pedido llega a tu domicilio o, dentro de la zona metropolitana, a la sucursal Casa Blanca que te quede más cerca. Todo el proceso, desde cotizar hasta aprobar el diseño final, pasa por WhatsApp o correo, así que el servicio funciona igual si estás en la ciudad o en cualquier otro estado de México.",
           "Eso sí: si estás en la zona metropolitana de Guadalajara el tiempo de entrega suele ser un poco más corto por cercanía, aunque el proceso de cotización y aprobación es idéntico para todo el país: puedes pedir papelería en línea desde México sin importar en qué ciudad estés.",
         ],
       },

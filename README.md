@@ -1,6 +1,6 @@
 # Yume — studioyume.mx
 
-Tienda de papelería y artículos personalizados (recetarios médicos, stickers, plantillas, botellas). Next.js 16 (App Router, TS, Tailwind v4), pensado para desplegarse en Vercel.
+Tienda de papelería y artículos personalizados (stickers de vinil, stickers y etiquetas con logo, recetarios médicos, placas y stands NFC/QR para reseñas de Google). Next.js 16 (App Router, TS, Tailwind v4), pensado para desplegarse en Vercel.
 
 ## Comandos
 
@@ -13,7 +13,7 @@ npx tsc --noEmit        # solo type-check
 ## Arquitectura
 
 - Catálogo de productos: `src/content/products.ts` — un archivo tipado, no un backend de e-commerce aparte. Cada producto trae su propio FAQ (alimenta tanto el texto visible como el JSON-LD `FAQPage`).
-- Datos del negocio (WhatsApp, email, redes): `src/content/site.ts` — **`whatsappNumber` es un placeholder, reemplazar con el número real antes de lanzar**.
+- Datos del negocio (WhatsApp, email, redes): `src/content/site.ts` — también los campos de entidad (`founder`, `gbpUrl`, `otherProfiles`) que alimentan el JSON-LD `Organization`/`Person`; se renderizan solo cuando tienen datos reales.
 - Conversión: carrito (`CartContext.tsx`, localStorage) → `/pago`, con dos formas de cobrar (ambas Mercado Pago) más la cotización por WhatsApp de siempre:
   - **Checkout Pro** (`/api/checkout-pro`): crea una Preference y redirige al checkout hospedado de Mercado Pago — incluye tarjeta, cuenta MP, SPEI y efectivo en tienda automáticamente.
   - **Checkout Bricks / Payment Brick** (`/api/checkout-payment`, `MercadoPagoBrick.tsx`): tarjeta y efectivo (ticket) embebidos en `/pago`, sin salir del sitio. La tokenización de tarjeta ocurre en iframes seguros de Mercado Pago (`@mercadopago/sdk-react`); el backend nunca ve el número de tarjeta.
@@ -47,12 +47,12 @@ Para todo lo demás (fotos de producto, logo, futuras imágenes de blog), usa `n
 
 ## Pendiente antes de lanzar
 
-- [x] Número de WhatsApp real en `src/content/site.ts` (+52 462 192 2778)
-- [ ] Confirmar que `hola@studioyume.mx` es una bandeja real (se usó como default por convención, no verificado)
-- [x] Fotografía real del recetario (`public/recetario-medico.webp`)
+- [x] Número de WhatsApp real en `src/content/site.ts` (+52 33 3400 5135)
+- [ ] Correo en el dominio (p. ej. `hola@studioyume.mx`); hoy el contacto es `yume.studiomx@gmail.com`
+- [ ] Fotografía real del recetario y de la placa/stand NFC (hoy son mockup/render, ver `src/content/product-photos.ts`)
 - [x] Pago en línea con Mercado Pago (Checkout Pro + Checkout Bricks, tarjeta + efectivo en tienda) — probado con credenciales TEST, falta cambiar a credenciales de producción antes de lanzar
 - [x] Conectar dominio `studioyume.mx` en Vercel
-- [x] Blog local (3 posts) + MCP server + agente A2A + GSC/Bing/IndexNow
+- [x] Blog (24 posts ES + 24 EN) + MCP server + agente A2A + GSC/Bing/IndexNow (`npm run indexnow` después de cada deploy)
 - [x] Flujo post-compra completo: formulario de envío, orden en Supabase, webhook real, correos de confirmación — código integrado y verificado en local (falla de forma controlada porque la tabla no existe todavía)
 - [ ] Correr `sql/schema.sql` en el SQL Editor de Supabase (crea la tabla `orders`) — paso manual, ver arriba
 - [ ] Agregar `GMAIL_USER` / `GMAIL_APP_PASSWORD` en Vercel para activar los correos de confirmación

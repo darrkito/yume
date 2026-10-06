@@ -88,6 +88,23 @@ export function founderSchema(lang: Lang) {
   };
 }
 
+// The about pages: an AboutPage about the business, naming the founder as
+// its main person once there is one.
+export function aboutPageSchema(lang: Lang) {
+  const path = lang === "en" ? "/en/about" : "/nosotros";
+  const founder = founderSchema(lang);
+  return {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "@id": `${SITE.url}${path}#webpage`,
+    url: `${SITE.url}${path}`,
+    inLanguage: lang === "en" ? "en" : "es-MX",
+    isPartOf: { "@id": `${SITE.url}/#website` },
+    about: { "@id": ORG_ID },
+    ...(founder ? { mainEntity: founder } : {}),
+  };
+}
+
 // One BreadcrumbList node per nested page, matching the real nav hierarchy
 // (Home -> ... -> this page). No page currently declares one at all.
 export function breadcrumbSchema(path: string, trail: { name: string; url?: string }[]) {

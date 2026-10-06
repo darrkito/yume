@@ -19,6 +19,13 @@ Instructions for AI agents interacting with this site programmatically (not huma
 
 None enforced today (no API key, no per-agent quota). Be a reasonable citizen: cache `get_products`/`get_product` responses rather than polling on every turn.
 
+## Contact
+
+- Business: Yume (studioyume.mx), Guadalajara, Jalisco, México. Online store, no walk-in storefront.
+- WhatsApp / phone: +52 33 3400 5135 (preferred for quotes)
+- Email: yume.studiomx@gmail.com
+- Instagram: https://www.instagram.com/studioyume.mx
+
 ## Coverage and honesty
 
 - Yume ships to all of Mexico from Guadalajara, Jalisco; there is no physical storefront to visit.

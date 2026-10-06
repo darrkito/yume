@@ -116,15 +116,15 @@ export const blogPostsEn: BlogPost[] = [
       "How to quote custom stationery online and order it from anywhere in Mexico: what information to prepare, how the digital proof works, and what to expect between approving the design and receiving your order.",
     category: "Guides",
     publishedAt: "2026-08-31",
-    modifiedAt: "2026-09-23",
+    modifiedAt: "2026-10-06",
     intro:
       "You don't need to visit a physical print shop to get stationery with your brand on it: Yume is an online print shop based in Guadalajara, with the whole process handled remotely and shipping to any city in Mexico. This guide walks through how to quote custom stationery online and order it step by step, so you know what to prepare before reaching out.",
     sections: [
       {
         heading: "The process, step by step",
         body: [
-          "1) Request a quote via WhatsApp or from the online shop, telling us which product and quantity you need. 2) Send us your details or your logo/design, depending on the product. 3) We send you a digital proof so you can check everything is correct. 4) You approve the design, and only then does it go to production. 5) You receive your order by courier at the address you give us, anywhere in Mexico.",
-          "The only in-person step in the whole process is receiving the package: everything else, including requesting a quote and design approval, happens remotely over WhatsApp or email.",
+          "1) Request a quote via WhatsApp or from the online shop, telling us which product and quantity you need. 2) Send us your details or your logo/design, depending on the product. 3) We send you a digital proof so you can check everything is correct. 4) You approve the design, and only then does it go to production. 5) You receive your order by courier at the address you give us, anywhere in Mexico, or, if you're in the Guadalajara metro area, pick it up at the Casa Blanca branch of your choice ($20 MXN).",
+          "The only in-person step in the whole process is receiving the package (or picking it up at your Casa Blanca branch): everything else, including requesting a quote and design approval, happens remotely over WhatsApp or email.",
         ],
       },
       {
@@ -137,7 +137,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "Why you don't need a physical print shop in Guadalajara",
         body: [
-          "Although we produce in Guadalajara, Jalisco, we don't operate like a walk-in print shop: we're an online print shop, so you don't need to drop off a USB drive or pick up your order in person. The whole process, from quoting to approving the final design, happens over WhatsApp or email, so the service works the same whether you're in the city or in any other state in Mexico.",
+          "Although we produce in Guadalajara, Jalisco, we don't operate like a walk-in print shop: we're an online print shop, so you don't need to drop off a USB drive or stop by a counter: your order comes to your door or, within the metro area, to the Casa Blanca branch closest to you. The whole process, from quoting to approving the final design, happens over WhatsApp or email, so the service works the same whether you're in the city or in any other state in Mexico.",
           "That said, if you're in the Guadalajara metro area, turnaround tends to be a bit faster simply due to proximity, though the process to order stationery online in Mexico is identical for the whole country.",
         ],
       },
