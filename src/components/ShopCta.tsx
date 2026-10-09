@@ -6,13 +6,13 @@ import type { Lang } from "@/lib/i18n";
 const COPY = {
   es: {
     title: "¿Listo para pedir el tuyo?",
-    body: `Precios claros desde $100 MXN. Recoge en Guadalajara por ${formatMXN(CASABLANCA_PRICE)} (gratis desde ${formatMXN(FREE_SHIPPING_THRESHOLD)}) o te lo enviamos a todo México.`,
+    body: `Precios claros desde $140 MXN. Recoge en Guadalajara por ${formatMXN(CASABLANCA_PRICE)} (gratis desde ${formatMXN(FREE_SHIPPING_THRESHOLD)}) o te lo enviamos a todo México.`,
     cta: "Ver productos y precios",
     href: "/productos",
   },
   en: {
     title: "Ready to order yours?",
-    body: `Clear pricing from $100 MXN. Pick up in Guadalajara for ${formatMXN(CASABLANCA_PRICE)} (free from ${formatMXN(FREE_SHIPPING_THRESHOLD)}) or get it shipped anywhere in Mexico.`,
+    body: `Clear pricing from $140 MXN. Pick up in Guadalajara for ${formatMXN(CASABLANCA_PRICE)} (free from ${formatMXN(FREE_SHIPPING_THRESHOLD)}) or get it shipped anywhere in Mexico.`,
     cta: "See products & prices",
     href: "/en/products",
   },

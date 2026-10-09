@@ -19,9 +19,9 @@ Yume designs and produces custom stationery and personalized goods made to order
 
 ## Positioning
 
-Flexible purchase quantities instead of rigid large minimums. A customer can order a single personalized recetario, or as few as 40 stickers, rather than the 500-piece (or similarly large) minimums typical of print shops and competitors in this market. Real competitor research put comparable minimums at $319-550 MXN; Yume's tiered pricing starts at $100 MXN.
+Flexible purchase quantities instead of rigid large minimums. A customer can order a single personalized recetario, or as few as 40 stickers, rather than the 500-piece (or similarly large) minimums typical of print shops and competitors in this market. Real competitor research put comparable minimums at $319-550 MXN; Yume's tiered pricing starts at $140 MXN.
 
-Pricing message for per-piece products: every price callout leads with **"Primeras 100 piezas"** ($250 vinyl / $200 logo) and presents anything past 100 as **precio mayoreo** (20% less per extra piece), a reward for ordering more, never a restriction. The low minimum is still the entry point: product pages open with the minimum selected, and any piece count can be typed.
+Pricing message for per-piece products: every price callout leads with **"Primeras 100 piezas"** ($350 vinyl / $300 logo) and presents anything past 100 as **precio mayoreo** (10% less per extra piece), a reward for ordering more, never a restriction. The low minimum is still the entry point: product pages open with the minimum selected, and any piece count can be typed.
 
 ## Operating Context
 

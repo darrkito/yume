@@ -6,7 +6,7 @@ export default function NotFound() {
       <p className="text-xs font-semibold text-ink-soft">404</p>
       <h1 className="mt-2 font-display text-4xl text-ink text-balance sm:text-5xl">Esta hoja se quedó en blanco</h1>
       <p className="mt-4 max-w-md text-sm leading-relaxed text-ink-soft">
-        La página que buscas no existe o cambió de lugar. Lo que sí sigue aquí: todos nuestros productos, con precios desde $100.
+        La página que buscas no existe o cambió de lugar. Lo que sí sigue aquí: todos nuestros productos, con precios desde $140.
       </p>
       <div className="mt-8 flex flex-wrap justify-center gap-3">
         <Link href="/productos" className="btn-soft btn-soft-solid">

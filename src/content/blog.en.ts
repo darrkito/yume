@@ -48,6 +48,7 @@ export const blogPostsEn: BlogPost[] = [
       "How to use custom stickers if you have a brand, a small business, or a stall at bazaars in Guadalajara: what format to order and what file to send for your logo.",
     category: "Guides",
     publishedAt: "2026-08-28",
+    modifiedAt: "2026-10-09",
     intro:
       "Guadalajara has a strong small-business scene (bakeries, clothing brands, candle makers, jewelry, coffee) selling at bazaars, pop-up markets, or directly through social media. A sticker with your logo is one of the cheapest ways to make your brand look consistent on every order that goes out, with no need for special packaging.",
     sections: [
@@ -68,7 +69,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "What quantity to order",
         body: [
-          "We sell by piece count, not by sheet: the first 100 pieces are $200 and, past 100, every extra piece is at wholesale price ($1.60, 20% off); and if you need fewer, you can order from 50: enough to match the order to your business's actual size without buying more than you need.",
+          "We sell by piece count, not by sheet: the first 100 pieces are $300 and, past 100, every extra piece is at wholesale price ($2.70, 10% off); and if you need fewer, you can order from 50: enough to match the order to your business's actual size without buying more than you need.",
           "All of our stickers are water-resistant, so they hold up well on packaging that gets wet or handled often (bags, bottles, shipments). Let us know the shape or size you prefer when requesting a quote, and we'll send you a digital proof before printing.",
         ],
       },
@@ -91,6 +92,7 @@ export const blogPostsEn: BlogPost[] = [
       "Why investing in stationery with your brand (prescription pads, stickers, and other printed details) makes a difference for businesses and professionals in Guadalajara and the rest of Jalisco.",
     category: "Local Business",
     publishedAt: "2026-08-28",
+    modifiedAt: "2026-10-09",
     intro:
       "Whether you run a medical practice or a small business selling at bazaars in Guadalajara, the stationery you use every day (prescription pads, stickers, labels) is one of the cheapest ways to look consistent. It's not the flashiest part of a business, but it's the part the customer or patient is literally holding in their hand.",
     sections: [
@@ -297,7 +299,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "Quantity and price",
         body: [
-          "Vinyl stickers are sold by piece count, not by sheet: the first 100 pieces are $250 and, past 100, every extra piece is at wholesale price ($2.00, 20% off): 150 pieces come out to $350 and 200 to $450.",
+          "Vinyl stickers are sold by piece count, not by sheet: the first 100 pieces are $350 and, past 100, every extra piece is at wholesale price ($3.15, 10% off): 150 pieces come out to $507.50 and 200 to $665.",
           "It's the same premium vinyl, resistant to water, sun, and scratches, that we use for any other custom design, so it holds up well on water bottles, laptops, or wherever you want to stick it.",
         ],
       },
@@ -388,14 +390,14 @@ export const blogPostsEn: BlogPost[] = [
       "We compared the per-piece price and minimum order of Yume against real Mexican custom-sticker print shops: using real public pricing data.",
     category: "Guides",
     publishedAt: "2026-09-09",
-    modifiedAt: "2026-10-06",
+    modifiedAt: "2026-10-09",
     intro:
       "Before requesting a quote for stickers, it's worth knowing whether the price you're being offered is actually competitive. In September 2026 we checked the public prices of several Mexican custom-sticker print shops: here are the real numbers, compared against Yume's.",
     sections: [
       {
         heading: "Is Yume cheaper than other online sticker print shops?",
         body: [
-          "On a per-piece basis, Yume is among the lowest-priced Mexican print shops we reviewed in September 2026, and it has the lowest minimum order: $100 MXN versus $319-$550 MXN for the competitors we checked.",
+          "On a per-piece basis, Yume sits within the range of the Mexican print shops we reviewed in September 2026 ($1.83 to $11.00 MXN), and it has the lowest minimum order: $140 MXN versus $319-$550 MXN for the competitors we checked.",
         ],
       },
       {
@@ -409,22 +411,22 @@ export const blogPostsEn: BlogPost[] = [
         heading: "The numbers",
         body: [
           "Among the Mexican custom-sticker print shops we reviewed, per-piece price ranges from $1.83 to $11.00 MXN, with minimum orders ranging from $319 to $550 MXN: in some cases the real minimum is only reached by buying several full sheets at once.",
-          "Yume (Custom Logo Stickers: $2.00 to $1.73 per piece, minimum $100 (50 pieces). Yume) Waterproof Vinyl Stickers: $2.50 to $2.36 per piece, minimum $100 (40 pieces).",
+          "Yume (Custom Logo Stickers: $3.00 to $2.80 per piece, minimum $150 (50 pieces). Yume) Waterproof Vinyl Stickers: $3.50 to $3.40 per piece, minimum $140 (40 pieces).",
         ],
         table: {
           headers: ["", "Price per piece", "Minimum order"],
           rows: [
             ["Mexican print shops reviewed (public prices, September 2026)", "$1.83 to $11.00 MXN", "$319 to $550 MXN"],
-            ["Yume: Custom Logo Stickers", "$2.00 to $1.73 MXN", "$100 MXN (50 pieces)"],
-            ["Yume: Waterproof Vinyl Stickers", "$2.50 to $2.36 MXN", "$100 MXN (40 pieces)"],
+            ["Yume: Custom Logo Stickers", "$3.00 to $2.80 MXN", "$150 MXN (50 pieces)"],
+            ["Yume: Waterproof Vinyl Stickers", "$3.50 to $3.40 MXN", "$140 MXN (40 pieces)"],
           ],
         },
       },
       {
         heading: "What this means for you",
         body: [
-          "On a per-piece basis, Yume is among the lowest-priced options we reviewed: only one of the other options we checked comes close, and only if you buy the equivalent of 2 full sheets at once.",
-          "The clearest difference is in minimum order size: with Yume you can get started for $100 MXN, while the competitors we reviewed require a minimum between $319 and $550: so if you just want to try a small batch, Yume lets you do that without committing to a large order.",
+          "On a per-piece basis, Yume sits within the range of what we reviewed, and the clearest difference is the minimum order: you can order a small number of pieces without buying full sheets.",
+          "The clearest difference is in minimum order size: with Yume you can get started for $140 MXN, while the competitors we reviewed require a minimum between $319 and $550: so if you just want to try a small batch, Yume lets you do that without committing to a large order.",
         ],
       },
     ],
@@ -439,7 +441,7 @@ export const blogPostsEn: BlogPost[] = [
       "The real difference between a custom vinyl sticker and a paper sticker (resistance to water, sun, and scratches), and where to design and order yours online.",
     category: "Guides",
     publishedAt: "2026-09-09",
-    modifiedAt: "2026-09-29",
+    modifiedAt: "2026-10-09",
     intro:
       "If you've never ordered custom stickers before, it's easy to miss the difference between vinyl and paper until one gets wet, fades in the sun, or tears when you peel it. Here's the real difference, and why at Yume we work exclusively with vinyl.",
     sections: [
@@ -760,20 +762,21 @@ export const blogPostsEn: BlogPost[] = [
       "Affordable stickers in Mexico for a small business just starting out, and custom labels for growing brands ordering in volume: how to pick the right quantity for your actual size.",
     category: "Guides",
     publishedAt: "2026-09-23",
+    modifiedAt: "2026-10-09",
     intro:
       "A business that's just getting started and a brand already selling in volume don't need the same number of stickers, but a lot of print shops charge them the same way: the same high minimum no matter how small or large the real order is. Here's how to choose between stickers for a small business and larger orders, and why the price shouldn't be the same for both.",
     sections: [
       {
         heading: "If your brand is small: get in without committing to a big order",
         body: [
-          "If you're just testing your brand or sell at local markets occasionally, buying 500 pieces at once doesn't make sense: it's money tied up in inventory that might take months to use. That's why we sell by piece count instead of full sheets: the minimum is 50 pieces for $100 on Custom Logo Stickers, or 40 pieces for $100 on Waterproof Vinyl Stickers.",
+          "If you're just testing your brand or sell at local markets occasionally, buying 500 pieces at once doesn't make sense: it's money tied up in inventory that might take months to use. That's why we sell by piece count instead of full sheets: the minimum is 50 pieces for $150 on Custom Logo Stickers, or 40 pieces for $140 on Waterproof Vinyl Stickers.",
           "These are some of the most affordable stickers in Mexico to get started with: you can test your design, see how people react, and adjust before committing to a bigger volume.",
         ],
       },
       {
         heading: "If your brand already sells in volume: the per-piece price drops",
         body: [
-          "Once your business has steady sales, buying more makes sense: from 100 pieces on, every extra block gets a 20% discount, so the per-piece price drops the more you order. It's the same logic as custom labels for a growing business, just applied at a larger scale: you pay less per piece without switching provider or process.",
+          "Once your business has steady sales, buying more makes sense: from 100 pieces on, every extra block gets a 10% discount, so the per-piece price drops the more you order. It's the same logic as custom labels for a growing business, just applied at a larger scale: you pay less per piece without switching provider or process.",
           "There's no hard cap in the catalog: if you need a larger volume than the quantity selector shows, request a quote directly over WhatsApp and we'll match the order to your real volume.",
         ],
       },
@@ -884,7 +887,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "How much does it cost to print custom stickers in Mexico?",
         body: [
-          "At Yume, printing custom stickers starts at $100 MXN: 50 pieces of custom logo stickers ($2.00 each) or 40 pieces of waterproof vinyl stickers ($2.50 each). The first 100 pieces are at the regular price and every piece beyond 100 drops 20% (wholesale price). Shipping anywhere in Mexico is free from $750 MXN, and so is pickup in Guadalajara.",
+          "At Yume, printing custom stickers starts at $140 MXN: 40 pieces of waterproof vinyl stickers ($3.50 each) or 50 pieces of custom logo stickers ($3.00 each). The first 100 pieces are at the regular price and every piece beyond 100 drops 10% (wholesale price). Shipping anywhere in Mexico is free from $750 MXN, and so is pickup in Guadalajara.",
           "Price by quantity (minimum order is 50 pieces for logo stickers and 40 for vinyl):",
         ],
         table: {

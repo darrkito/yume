@@ -21,7 +21,7 @@ const SECTIONS = [
   },
   {
     title: "Flexible quantities, not wholesale minimums",
-    body: "Unlike most print shops, we don't require minimums in the hundreds or thousands. You can order a single personalized prescription pad, or as few as 40-50 stickers, with pricing starting at $100 MXN, not the large-minimum tiers typical of this market.",
+    body: "Unlike most print shops, we don't require minimums in the hundreds or thousands. You can order a single personalized prescription pad, or as few as 40-50 stickers, with pricing starting at $140 MXN, not the large-minimum tiers typical of this market.",
   },
   {
     title: "Digital proof before printing",

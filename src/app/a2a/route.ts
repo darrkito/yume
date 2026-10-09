@@ -60,7 +60,7 @@ function matchAnswerEs(text: string): string {
     if (!p) return "No encontré esa guía en el blog.";
     const claim = isRecetario
       ? "Sí, nuestro precio está prácticamente empatado con el más bajo del mercado, y somos los únicos que incluyen el diseño del membrete en el precio."
-      : "Sí, en precio por pieza estamos entre los más bajos del mercado que revisamos, y con el mínimo de compra más accesible ($100 MXN vs. $319–$550 de la competencia).";
+      : "Sí, en mínimo de compra: empiezas desde $140 MXN (40 stickers de vinil) frente a $319–$550 de la competencia que revisamos.";
     return `${claim} Comparación completa: ${SITE.url}/blog/${p.slug}`;
   }
 
@@ -146,7 +146,7 @@ function matchAnswerEn(text: string): string {
     if (!p) return "I couldn't find that guide on the blog.";
     const claim = isPrescriptionPad
       ? "Yes, our price is practically tied with the lowest in the market, and we're the only ones who include letterhead design in the price."
-      : "Yes, on a per-piece basis we're among the lowest-priced options we reviewed, with the most accessible minimum order ($100 MXN vs. $319–$550 for competitors).";
+      : "Yes on minimum order: you can start from $140 MXN (40 vinyl stickers) versus $319–$550 for the competitors we reviewed.";
     return `${claim} Full comparison: ${SITE.url}/en/blog/${p.slug}`;
   }
 

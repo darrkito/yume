@@ -20,7 +20,7 @@ const SECTIONS = [
   },
   {
     title: "Cantidades flexibles, no mínimos de mayoreo",
-    body: "A diferencia de la mayoría de las imprentas, no exigimos mínimos de cientos o miles de piezas. Puedes pedir un solo recetario personalizado, o desde 40-50 piezas de stickers, con precios desde $100 MXN, no las planillas de mínimos grandes típicas del mercado.",
+    body: "A diferencia de la mayoría de las imprentas, no exigimos mínimos de cientos o miles de piezas. Puedes pedir un solo recetario personalizado, o desde 40-50 piezas de stickers, con precios desde $140 MXN, no las planillas de mínimos grandes típicas del mercado.",
   },
   {
     title: "Prueba digital antes de imprimir",

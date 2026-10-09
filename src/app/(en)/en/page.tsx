@@ -26,7 +26,7 @@ import { PRODUCT_SLUG_EN } from "@/lib/i18n";
 
 const NO_MINIMUMS = [
   "One prescription pad or 40-50 stickers, not hundreds",
-  "Flexible pricing from $100 MXN",
+  "Flexible pricing from $140 MXN",
   "No bulk minimums like other print shops",
 ];
 
@@ -67,7 +67,7 @@ export default function HomeEn() {
         <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-8 px-6 pb-6 pt-8 sm:grid-cols-2 sm:gap-12 sm:pb-20 sm:pt-20">
           <div>
             <h1 className="font-display text-4xl leading-[1.1] text-ink text-balance sm:text-5xl lg:text-6xl">
-              Custom stickers, prescription pads and stationery, <em className="italic text-brand">from $100 MXN</em>.
+              Custom stickers, prescription pads and stationery, <em className="italic text-brand">from $140 MXN</em>.
             </h1>
             <p className="mt-6 max-w-md text-base leading-relaxed text-ink-soft">
               Custom stationery made to order in Guadalajara: medical prescription pads, stickers, and pieces built

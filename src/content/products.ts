@@ -61,7 +61,7 @@ export interface Product {
 
 /** Per-piece pricing for products sold by piece count (stickers): a flat
  * rate up to `discountQty`, then every piece beyond it at the wholesale
- * rate (`discountedStepPrice` per `stepQty` block, e.g. 20% off). */
+ * rate (`discountedStepPrice` per `stepQty` block, e.g. 10% off). */
 export interface TierPricing {
   baseQty: number;
   rate: number;
@@ -100,15 +100,15 @@ function buildTieredVariants(t: TierPricing, presets: number, presetStep = t.ste
   });
 }
 
-// Stickers: 50 piezas mínimo a $2.00/pieza ($100); las primeras 100 cuestan
-// $200 y cada pieza extra después de 100 va a precio mayoreo, $1.60 (20% menos).
-const STICKER_TIERS: TierPricing = { baseQty: 50, rate: 2.0, stepQty: 25, discountQty: 100, discountedStepPrice: 40 };
+// Stickers: 50 piezas mínimo a $3.00/pieza ($150); las primeras 100 cuestan
+// $300 y cada pieza extra después de 100 va a precio mayoreo, $2.70 (10% menos).
+const STICKER_TIERS: TierPricing = { baseQty: 50, rate: 3.0, stepQty: 25, discountQty: 100, discountedStepPrice: 67.5 };
 const stickerVariants = buildTieredVariants(STICKER_TIERS, 10); // presets 50→300
 const STICKER_BASE_PRICE = tieredPrice(STICKER_TIERS, STICKER_TIERS.baseQty);
 
-// Vinyl: 40 piezas mínimo a $2.50/pieza ($100); las primeras 100 cuestan $250
-// y cada pieza extra después de 100 va a precio mayoreo, $2.00 (20% menos).
-const VINYL_TIERS: TierPricing = { baseQty: 40, rate: 2.5, stepQty: 10, discountQty: 100, discountedStepPrice: 20 };
+// Vinyl: 40 piezas mínimo a $3.50/pieza ($140); las primeras 100 cuestan $350
+// y cada pieza extra después de 100 va a precio mayoreo, $3.15 (10% menos).
+const VINYL_TIERS: TierPricing = { baseQty: 40, rate: 3.5, stepQty: 10, discountQty: 100, discountedStepPrice: 31.5 };
 const vinylStickerVariants = buildTieredVariants(VINYL_TIERS, 10); // presets 40→140
 const VINYL_BASE_PRICE = tieredPrice(VINYL_TIERS, VINYL_TIERS.baseQty);
 
@@ -132,21 +132,21 @@ export const products: Product[] = [
     showGallery: true,
     specs: [
       { label: "Mínimo de compra", value: "40 piezas" },
-      { label: "Primeras 100 piezas", value: "$250 ($2.50 c/u)" },
-      { label: "Precio mayoreo", value: "Más de 100 piezas: cada pieza extra a $2.00 (20% menos)" },
+      { label: "Primeras 100 piezas", value: "$350 ($3.50 c/u)" },
+      { label: "Precio mayoreo", value: "Más de 100 piezas: cada pieza extra a $3.15 (10% menos)" },
       { label: "Material", value: "Vinil premium, corte troquelado" },
       { label: "Resistencia", value: "Al agua, al sol y a rayones" },
       { label: "Personalización", value: "Tu diseño, personaje o foto" },
     ],
     description:
-      "Stickers troquelados en vinil premium, resistentes al agua, al sol y a rayones: para cualquier diseño, personaje o foto que quieras convertir en sticker, no solo logos. Se venden por cantidad de piezas, no por planilla: las primeras 100 piezas cuestan $250 ($2.50 c/u) y, entre más pidas, mejor: pasando las 100 entras a precio mayoreo y cada pieza extra te sale en $2.00, 20% menos. Envíanos tu imagen o diseño y te mandamos una prueba digital antes de imprimir.",
+      "Stickers troquelados en vinil premium, resistentes al agua, al sol y a rayones: para cualquier diseño, personaje o foto que quieras convertir en sticker, no solo logos. Se venden por cantidad de piezas, no por planilla: las primeras 100 piezas cuestan $350 ($3.50 c/u) y, entre más pidas, mejor: pasando las 100 entras a precio mayoreo y cada pieza extra te sale en $3.15, 10% menos. Envíanos tu imagen o diseño y te mandamos una prueba digital antes de imprimir.",
     metaDescription:
-      "Stickers de vinil personalizados, resistentes al agua, al sol y a rayones. Cualquier diseño, personaje o foto. Primeras 100 piezas por $250 y precio mayoreo en cada pieza extra.",
+      "Stickers de vinil personalizados, resistentes al agua, al sol y a rayones. Cualquier diseño, personaje o foto. Primeras 100 piezas por $350 y precio mayoreo en cada pieza extra.",
     details: [
       "Vinil premium con corte troquelado a la forma del diseño",
       "Se venden por cantidad de piezas, mínimo 40",
-      "Primeras 100 piezas: $250 ($2.50 c/u)",
-      "Más de 100 piezas: precio mayoreo, cada pieza extra a $2.00 (20% menos)",
+      "Primeras 100 piezas: $350 ($3.50 c/u)",
+      "Más de 100 piezas: precio mayoreo, cada pieza extra a $3.15 (10% menos)",
       "Pide la cantidad exacta que necesitas: elígela o escríbela",
       "Resistentes al agua, al sol y a rayones",
       "Ideal para tus personajes favoritos, mascotas, fotos o cualquier diseño",
@@ -176,7 +176,7 @@ export const products: Product[] = [
       },
       {
         q: "¿Cuál es el precio de los stickers de vinil?",
-        a: "Las primeras 100 piezas cuestan $250 ($2.50 c/u). Y pasando las 100 entras a precio mayoreo: cada pieza extra te sale en $2.00, 20% menos. Por ejemplo, 150 piezas son $350 y 200 piezas son $450.",
+        a: "Las primeras 100 piezas cuestan $350 ($3.50 c/u). Y pasando las 100 entras a precio mayoreo: cada pieza extra te sale en $3.15, 10% menos. Por ejemplo, 150 piezas son $507.50 y 200 piezas son $665.",
       },
       {
         q: "¿El vinil resiste el agua y el sol?",
@@ -205,20 +205,20 @@ export const products: Product[] = [
     showGallery: true,
     specs: [
       { label: "Mínimo de compra", value: "50 piezas" },
-      { label: "Primeras 100 piezas", value: "$200 ($2.00 c/u)" },
-      { label: "Precio mayoreo", value: "Más de 100 piezas: cada pieza extra a $1.60 (20% menos)" },
+      { label: "Primeras 100 piezas", value: "$300 ($3.00 c/u)" },
+      { label: "Precio mayoreo", value: "Más de 100 piezas: cada pieza extra a $2.70 (10% menos)" },
       { label: "Personalización", value: "Tu logo o diseño" },
       { label: "Resistencia", value: "Resistentes al agua" },
       { label: "Producción", value: "Sobre pedido" },
     ],
     description:
-      "Stickers y etiquetas personalizadas con tu logo o diseño, resistentes al agua: etiquetas para productos, etiquetas para empaques, bolsas y cajas de tu negocio. Se venden por cantidad de piezas, no por hoja: las primeras 100 piezas cuestan $200 ($2.00 c/u) y, entre más pidas, mejor: pasando las 100 entras a precio mayoreo y cada pieza extra te sale en $1.60, 20% menos. Envíanos tu imagen (o el diseño que quieras convertir en etiqueta) y te mandamos una prueba digital antes de imprimir.",
+      "Stickers y etiquetas personalizadas con tu logo o diseño, resistentes al agua: etiquetas para productos, etiquetas para empaques, bolsas y cajas de tu negocio. Se venden por cantidad de piezas, no por hoja: las primeras 100 piezas cuestan $300 ($3.00 c/u) y, entre más pidas, mejor: pasando las 100 entras a precio mayoreo y cada pieza extra te sale en $2.70, 10% menos. Envíanos tu imagen (o el diseño que quieras convertir en etiqueta) y te mandamos una prueba digital antes de imprimir.",
     metaDescription:
-      "Stickers y etiquetas con tu logo para productos y empaques, resistentes al agua. Primeras 100 piezas por $200 y precio mayoreo en cada pieza extra.",
+      "Stickers y etiquetas con tu logo para productos y empaques, resistentes al agua. Primeras 100 piezas por $300 y precio mayoreo en cada pieza extra.",
     details: [
       "Se venden por cantidad de piezas, mínimo 50",
-      "Primeras 100 piezas: $200 ($2.00 c/u)",
-      "Más de 100 piezas: precio mayoreo, cada pieza extra a $1.60 (20% menos)",
+      "Primeras 100 piezas: $300 ($3.00 c/u)",
+      "Más de 100 piezas: precio mayoreo, cada pieza extra a $2.70 (10% menos)",
       "Pide la cantidad exacta que necesitas: elígela o escríbela",
       "Resistentes al agua",
       "Imprimimos tu logo o el diseño que nos envíes",
@@ -244,7 +244,7 @@ export const products: Product[] = [
       },
       {
         q: "¿Cuál es el precio de las etiquetas?",
-        a: "Las primeras 100 piezas cuestan $200 ($2.00 c/u). Y pasando las 100 entras a precio mayoreo: cada pieza extra te sale en $1.60, 20% menos. Por ejemplo, 150 piezas son $280 y 300 piezas son $520.",
+        a: "Las primeras 100 piezas cuestan $300 ($3.00 c/u). Y pasando las 100 entras a precio mayoreo: cada pieza extra te sale en $2.70, 10% menos. Por ejemplo, 150 piezas son $435 y 300 piezas son $840.",
       },
       {
         q: "¿Las etiquetas son resistentes al agua?",

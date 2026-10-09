@@ -83,7 +83,7 @@ export const blogPosts: BlogPost[] = [
       "Cómo usar etiquetas personalizadas si tienes una marca, un emprendimiento o un puesto en bazares de Guadalajara (GDL): qué formato pedir y qué archivo enviar para tu logo.",
     category: "Guías",
     publishedAt: "2026-08-28",
-    modifiedAt: "2026-09-23",
+    modifiedAt: "2026-10-09",
     intro:
       "En Guadalajara (GDL) hay un movimiento fuerte de emprendimientos pequeños (marcas de repostería, ropa, velas, joyería, café) que venden en bazares, mercados sobre ruedas o directo por redes sociales. Una etiqueta con tu logo es de las formas más baratas de que tu marca se vea consistente en cada pedido que sale, sin necesitar empaque especial.",
     sections: [
@@ -97,7 +97,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Qué cantidad pedir",
         body: [
-          "Vendemos por cantidad de piezas, no por hoja: las primeras 100 piezas cuestan $200 y, pasando las 100, cada pieza extra va a precio mayoreo ($1.60, 20% menos); y si necesitas menos, puedes pedir desde 50: suficiente para ajustar el pedido al tamaño real de tu emprendimiento sin comprar de más.",
+          "Vendemos por cantidad de piezas, no por hoja: las primeras 100 piezas cuestan $300 y, pasando las 100, cada pieza extra va a precio mayoreo ($2.70, 10% menos); y si necesitas menos, puedes pedir desde 50: suficiente para ajustar el pedido al tamaño real de tu emprendimiento sin comprar de más.",
           "Todas nuestras etiquetas son resistentes al agua, así que aguantan bien en empaques que se pueden mojar o manejar seguido (bolsas, botellas, envíos). Cuéntanos la forma o el tamaño que prefieres al cotizar, y te mandamos una prueba digital antes de imprimir.",
         ],
       },
@@ -333,7 +333,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Cantidad y precio",
         body: [
-          "Los stickers de vinil se venden por cantidad de piezas, no por planilla: las primeras 100 piezas cuestan $250 y, pasando las 100, cada pieza extra va a precio mayoreo ($2.00, 20% menos): 150 piezas quedan en $350 y 200 en $450.",
+          "Los stickers de vinil se venden por cantidad de piezas, no por planilla: las primeras 100 piezas cuestan $350 y, pasando las 100, cada pieza extra va a precio mayoreo ($3.15, 10% menos): 150 piezas quedan en $507.50 y 200 en $665.",
           "Es el mismo vinil premium resistente al agua, al sol y a rayones que usamos para cualquier otro diseño personalizado, así que aguanta bien en botellas de agua, laptops o donde quieras pegarlo.",
         ],
       },
@@ -424,14 +424,14 @@ export const blogPosts: BlogPost[] = [
       "Comparamos el precio por pieza y el mínimo de compra de Yume contra imprentas mexicanas reales de stickers personalizados: con datos reales de precios públicos.",
     category: "Guías",
     publishedAt: "2026-09-09",
-    modifiedAt: "2026-10-06",
+    modifiedAt: "2026-10-09",
     intro:
       "Antes de cotizar tus stickers vale la pena saber si el precio que te están dando es competitivo. En septiembre de 2026 revisamos los precios públicos de varias imprentas mexicanas de stickers personalizados: aquí están los números reales, comparados contra los de Yume.",
     sections: [
       {
         heading: "¿Yume es más barato que otras imprentas online de stickers?",
         body: [
-          "En precio por pieza, Yume está entre los más bajos de las imprentas mexicanas que revisamos en septiembre de 2026, y tiene el mínimo de compra más bajo: $100 MXN frente a $319–$550 MXN de la competencia revisada.",
+          "En precio por pieza, Yume queda dentro del rango de las imprentas mexicanas que revisamos en septiembre de 2026 (entre $1.83 y $11.00 MXN), y tiene el mínimo de compra más bajo: $140 MXN frente a $319–$550 MXN de la competencia revisada.",
         ],
       },
       {
@@ -445,22 +445,22 @@ export const blogPosts: BlogPost[] = [
         heading: "Los números",
         body: [
           "Entre las imprentas mexicanas de stickers personalizados que revisamos, el precio por pieza va de $1.83 a $11.00 MXN, con mínimos de compra que van de $319 a $550 MXN: en algunos casos el mínimo real solo se alcanza comprando varias planillas completas de una vez.",
-          "Yume: Stickers y Etiquetas con tu Logo: de $2.00 a $1.73 por pieza, mínimo $100 (50 piezas). Yume: Stickers de Vinil Personalizados: de $2.50 a $2.36 por pieza, mínimo $100 (40 piezas).",
+          "Yume: Stickers y Etiquetas con tu Logo: de $3.00 a $2.80 por pieza, mínimo $150 (50 piezas). Yume: Stickers de Vinil Personalizados: de $3.50 a $3.40 por pieza, mínimo $140 (40 piezas).",
         ],
         table: {
           headers: ["", "Precio por pieza", "Mínimo de compra"],
           rows: [
             ["Imprentas mexicanas revisadas (precios públicos, septiembre 2026)", "$1.83 a $11.00 MXN", "$319 a $550 MXN"],
-            ["Yume: Stickers y Etiquetas con tu Logo", "$2.00 a $1.73 MXN", "$100 MXN (50 piezas)"],
-            ["Yume: Stickers de Vinil Personalizados", "$2.50 a $2.36 MXN", "$100 MXN (40 piezas)"],
+            ["Yume: Stickers y Etiquetas con tu Logo", "$3.00 a $2.80 MXN", "$150 MXN (50 piezas)"],
+            ["Yume: Stickers de Vinil Personalizados", "$3.50 a $3.40 MXN", "$140 MXN (40 piezas)"],
           ],
         },
       },
       {
         heading: "Qué significa esto para ti",
         body: [
-          "En precio por pieza, Yume está entre los más bajos del mercado que revisamos: solo una de las opciones revisadas se acerca, y únicamente si compras el equivalente a 2 planillas completas de una vez.",
-          "La diferencia más clara está en el mínimo de compra: con Yume puedes entrar desde $100 MXN, mientras que la competencia revisada pide entre $319 y $550 mínimo: así que si solo quieres probar con poca cantidad, Yume te deja hacerlo sin comprometerte a un pedido grande.",
+          "En precio por pieza, Yume queda dentro del rango de lo que revisamos, y la diferencia más clara está en el mínimo de compra: puedes pedir pocas piezas sin comprar planillas completas.",
+          "La diferencia más clara está en el mínimo de compra: con Yume puedes entrar desde $140 MXN, mientras que la competencia revisada pide entre $319 y $550 mínimo: así que si solo quieres probar con poca cantidad, Yume te deja hacerlo sin comprometerte a un pedido grande.",
         ],
       },
     ],
@@ -475,7 +475,7 @@ export const blogPosts: BlogPost[] = [
       "La diferencia real entre un sticker personalizado de vinil y uno de papel (resistencia al agua, al sol y a rayones), y dónde diseñar y mandar a hacer los tuyos en línea.",
     category: "Guías",
     publishedAt: "2026-09-09",
-    modifiedAt: "2026-09-29",
+    modifiedAt: "2026-10-09",
     intro:
       "Si nunca has pedido stickers personalizados, es fácil no notar la diferencia entre vinil y papel hasta que uno se moja, se despinta con el sol o se rompe al despegarlo. Aquí te explicamos la diferencia real y por qué en Yume trabajamos exclusivamente con vinil.",
     sections: [
@@ -796,20 +796,21 @@ export const blogPosts: BlogPost[] = [
       "Stickers económicos en México para un emprendimiento que recién arranca, y etiquetas para emprendedores que ya venden en volumen: cómo elegir la cantidad correcta según el tamaño real de tu negocio.",
     category: "Guías",
     publishedAt: "2026-09-23",
+    modifiedAt: "2026-10-09",
     intro:
       "Un negocio que recién arranca y una marca que ya vende en volumen no necesitan la misma cantidad de stickers, pero muchas imprentas les cobran como si fuera lo mismo: piden el mismo mínimo alto sin importar qué tan chico o grande sea el pedido real. Aquí está cómo elegir entre stickers para pequeño negocio y pedidos más grandes, y por qué el precio no debería ser el mismo para los dos.",
     sections: [
       {
         heading: "Si tu marca es pequeña: entra sin comprometerte a un pedido grande",
         body: [
-          "Si apenas estás probando tu marca o vendes en bazares de forma ocasional, no tiene sentido comprar 500 piezas de una sola vez: es dinero inmovilizado en inventario que a lo mejor tarda meses en usarse. Por eso vendemos por cantidad de piezas y no por planilla completa: el mínimo son 50 piezas por $100 en Stickers y Etiquetas con tu Logo, o 40 piezas por $100 en Stickers de Vinil Personalizados.",
+          "Si apenas estás probando tu marca o vendes en bazares de forma ocasional, no tiene sentido comprar 500 piezas de una sola vez: es dinero inmovilizado en inventario que a lo mejor tarda meses en usarse. Por eso vendemos por cantidad de piezas y no por planilla completa: el mínimo son 50 piezas por $150 en Stickers y Etiquetas con tu Logo, o 40 piezas por $140 en Stickers de Vinil Personalizados.",
           "Son de los stickers más económicos en México para arrancar: puedes probar tu diseño, ver cómo reacciona la gente y ajustar antes de comprometerte a un volumen mayor.",
         ],
       },
       {
         heading: "Si tu marca ya vende en volumen: el precio por pieza baja",
         body: [
-          "Cuando tu negocio ya tiene ventas constantes, comprar de más sí conviene: a partir de 100 piezas, cada bloque extra tiene 20% de descuento, así que el precio por pieza baja mientras más pides. Es la misma lógica de etiquetas para emprendedores, solo que aplicada a un volumen mayor: pagas menos por pieza sin cambiar de proveedor ni de proceso.",
+          "Cuando tu negocio ya tiene ventas constantes, comprar de más sí conviene: a partir de 100 piezas, cada bloque extra tiene 10% de descuento, así que el precio por pieza baja mientras más pides. Es la misma lógica de etiquetas para emprendedores, solo que aplicada a un volumen mayor: pagas menos por pieza sin cambiar de proveedor ni de proceso.",
           "No hay un tope fijo en el catálogo: si necesitas un volumen mayor al que muestra el selector de cantidad, cotiza directo por WhatsApp y ajustamos el pedido a tu volumen real.",
         ],
       },
@@ -913,14 +914,14 @@ export const blogPosts: BlogPost[] = [
       "Qué necesitas tener listo para mandar a imprimir tus stickers personalizados en México (archivo, tamaño, cantidad) y cómo funciona pedirlos en línea sin ir a una imprenta física.",
     category: "Guías",
     publishedAt: "2026-09-29",
-    modifiedAt: "2026-10-06",
+    modifiedAt: "2026-10-09",
     intro:
       "Si buscas dónde imprimir stickers personalizados en México, la mayoría de las opciones caen en dos grupos: imprimirlos tú mismo en casa (con vinil y una impresora especial) o mandarlos a hacer con una imprenta que ya tiene el equipo de corte troquelado. Esta guía cubre la segunda opción: qué necesitas tener listo y cómo funciona el proceso para mandar a imprimir tus stickers en línea, sin tener que comprar equipo ni ir a una imprenta física.",
     sections: [
       {
         heading: "¿Cuánto cuesta imprimir stickers personalizados en México?",
         body: [
-          "En Yume, imprimir stickers personalizados cuesta desde $100 MXN: 50 piezas de etiquetas con tu logo ($2.00 c/u) o 40 piezas de stickers de vinil ($2.50 c/u). Las primeras 100 piezas van a precio normal y cada pieza extra después de 100 baja 20% (precio mayoreo). El envío a todo México es gratis desde $750 MXN, y recoger en Guadalajara también.",
+          "En Yume, imprimir stickers personalizados cuesta desde $140 MXN: 40 piezas de stickers de vinil ($3.50 c/u) o 50 piezas de etiquetas con tu logo ($3.00 c/u). Las primeras 100 piezas van a precio normal y cada pieza extra después de 100 baja 10% (precio mayoreo). El envío a todo México es gratis desde $750 MXN, y recoger en Guadalajara también.",
           "Precio por cantidad (el mínimo de compra es 50 piezas en etiquetas con logo y 40 en vinil):",
         ],
         table: {

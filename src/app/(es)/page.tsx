@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 
 const NO_MINIMUMS = [
   "Un recetario o desde 40-50 piezas de stickers, no cientos",
-  "Precios flexibles desde $100 MXN",
+  "Precios flexibles desde $140 MXN",
   "Sin planillas de mínimos como otros talleres",
 ];
 
@@ -64,7 +64,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-8 px-6 pb-6 pt-8 sm:grid-cols-2 sm:gap-12 sm:pb-20 sm:pt-20">
           <div>
             <h1 className="font-display text-4xl leading-[1.1] text-ink text-balance sm:text-5xl lg:text-6xl">
-              Stickers, recetarios y papelería personalizada, <em className="italic text-brand">desde $100</em>.
+              Stickers, recetarios y papelería personalizada, <em className="italic text-brand">desde $140</em>.
             </h1>
             <p className="mt-6 max-w-md text-base leading-relaxed text-ink-soft">
               Papelería y artículos personalizados hechos sobre pedido en Guadalajara: recetarios médicos, etiquetas y

@@ -149,20 +149,20 @@ export const productsEn: Record<string, ProductTranslation> = {
     category: "Custom Stickers",
     specs: [
       { label: "Minimum order", value: "50 pieces" },
-      { label: "First 100 pieces", value: "$200 ($2.00 each)" },
-      { label: "Wholesale price", value: "Over 100 pieces: each extra piece at $1.60 (20% off)" },
+      { label: "First 100 pieces", value: "$300 ($3.00 each)" },
+      { label: "Wholesale price", value: "Over 100 pieces: each extra piece at $2.70 (10% off)" },
       { label: "Customization", value: "Your logo or design" },
       { label: "Durability", value: "Water-resistant" },
       { label: "Production", value: "Made to order" },
     ],
     description:
-      "Custom stickers with your logo or design, water-resistant. Sold by piece count, not by sheet: the first 100 pieces are $200 ($2.00 each), and the more you order, the better: go past 100 and you unlock wholesale pricing, with every extra piece at $1.60, 20% off. Send us your image (or the design you'd like turned into a sticker) and we'll send a digital proof before printing.",
+      "Custom stickers with your logo or design, water-resistant. Sold by piece count, not by sheet: the first 100 pieces are $300 ($3.00 each), and the more you order, the better: go past 100 and you unlock wholesale pricing, with every extra piece at $2.70, 10% off. Send us your image (or the design you'd like turned into a sticker) and we'll send a digital proof before printing.",
     metaDescription:
-      "Custom stickers with your logo, water-resistant. First 100 pieces for $200, with wholesale pricing on every extra piece. Digital proof before printing.",
+      "Custom stickers with your logo, water-resistant. First 100 pieces for $300, with wholesale pricing on every extra piece. Digital proof before printing.",
     details: [
       "Sold by piece count, 50-piece minimum",
-      "First 100 pieces: $200 ($2.00 each)",
-      "Over 100 pieces: wholesale price, every extra piece at $1.60 (20% off)",
+      "First 100 pieces: $300 ($3.00 each)",
+      "Over 100 pieces: wholesale price, every extra piece at $2.70 (10% off)",
       "Order the exact amount you need: pick it or type it",
       "Water-resistant",
       "We print your logo or the design you send us",
@@ -185,7 +185,7 @@ export const productsEn: Record<string, ProductTranslation> = {
       },
       {
         q: "What's the price of the stickers?",
-        a: "The first 100 pieces are $200 ($2.00 each). Go past 100 and you unlock wholesale pricing: every extra piece is $1.60, 20% off. For example, 150 pieces is $280 and 300 pieces is $520.",
+        a: "The first 100 pieces are $300 ($3.00 each). Go past 100 and you unlock wholesale pricing: every extra piece is $2.70, 10% off. For example, 150 pieces is $435 and 300 pieces is $840.",
       },
       {
         q: "Are the stickers water-resistant?",
@@ -214,21 +214,21 @@ export const productsEn: Record<string, ProductTranslation> = {
     category: "Custom Vinyl Stickers",
     specs: [
       { label: "Minimum order", value: "40 pieces" },
-      { label: "First 100 pieces", value: "$250 ($2.50 each)" },
-      { label: "Wholesale price", value: "Over 100 pieces: each extra piece at $2.00 (20% off)" },
+      { label: "First 100 pieces", value: "$350 ($3.50 each)" },
+      { label: "Wholesale price", value: "Over 100 pieces: each extra piece at $3.15 (10% off)" },
       { label: "Material", value: "Premium vinyl, die-cut" },
       { label: "Durability", value: "Water, sun, and scratch resistant" },
       { label: "Customization", value: "Your design, character, or photo" },
     ],
     description:
-      "Die-cut stickers on premium vinyl, resistant to water, sun, and scratches: for any design, character, or photo you want turned into a sticker, not just logos. Sold by piece count, not by sheet: the first 100 pieces are $250 ($2.50 each), and the more you order, the better: go past 100 and you unlock wholesale pricing, with every extra piece at $2.00, 20% off. Send us your image or design and we'll send a digital proof before printing.",
+      "Die-cut stickers on premium vinyl, resistant to water, sun, and scratches: for any design, character, or photo you want turned into a sticker, not just logos. Sold by piece count, not by sheet: the first 100 pieces are $350 ($3.50 each), and the more you order, the better: go past 100 and you unlock wholesale pricing, with every extra piece at $3.15, 10% off. Send us your image or design and we'll send a digital proof before printing.",
     metaDescription:
-      "Custom vinyl stickers, resistant to water, sun, and scratches. Any design, character, or photo. First 100 pieces for $250, with wholesale pricing on every extra piece.",
+      "Custom vinyl stickers, resistant to water, sun, and scratches. Any design, character, or photo. First 100 pieces for $350, with wholesale pricing on every extra piece.",
     details: [
       "Premium vinyl, die-cut to the shape of your design",
       "Sold by piece count, 40-piece minimum",
-      "First 100 pieces: $250 ($2.50 each)",
-      "Over 100 pieces: wholesale price, every extra piece at $2.00 (20% off)",
+      "First 100 pieces: $350 ($3.50 each)",
+      "Over 100 pieces: wholesale price, every extra piece at $3.15 (10% off)",
       "Order the exact amount you need: pick it or type it",
       "Water, sun, and scratch resistant",
       "Great for your favorite characters, pets, photos, or any design",
@@ -255,7 +255,7 @@ export const productsEn: Record<string, ProductTranslation> = {
       },
       {
         q: "What's the price of the vinyl stickers?",
-        a: "The first 100 pieces are $250 ($2.50 each). Go past 100 and you unlock wholesale pricing: every extra piece is $2.00, 20% off. For example, 150 pieces is $350 and 200 pieces is $450.",
+        a: "The first 100 pieces are $350 ($3.50 each). Go past 100 and you unlock wholesale pricing: every extra piece is $3.15, 10% off. For example, 150 pieces is $507.50 and 200 pieces is $665.",
       },
       {
         q: "Is the vinyl water and sun resistant?",

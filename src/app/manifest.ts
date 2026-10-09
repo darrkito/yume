@@ -7,7 +7,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "Yume: papelería creativa y artículos personalizados",
     short_name: "Yume",
-    description: "Stickers, recetarios y papelería personalizada desde $100. Hecho en Guadalajara, envíos a todo México.",
+    description: "Stickers, recetarios y papelería personalizada desde $140. Hecho en Guadalajara, envíos a todo México.",
     start_url: "/?source=pwa",
     display: "standalone",
     background_color: "#fffbf3",

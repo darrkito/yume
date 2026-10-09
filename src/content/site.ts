@@ -24,9 +24,9 @@ export const SITE = {
   homeTitle: "Stickers de Vinil y Papelería Personalizada en Guadalajara | Yume",
   homeTitleEn: "Custom Vinyl Stickers & Stationery in Guadalajara, Mexico | Yume",
   description:
-    "Stickers de vinil y stickers con tu logo desde $100, tatuajes temporales y papelería personalizada. Hechos en Guadalajara, envíos a todo México.",
+    "Stickers de vinil y stickers con tu logo desde $140, tatuajes temporales y papelería personalizada. Hechos en Guadalajara, envíos a todo México.",
   descriptionEn:
-    "Custom vinyl stickers and logo stickers from $100 MXN, temporary tattoos and custom stationery. Made in Guadalajara, shipping across Mexico.",
+    "Custom vinyl stickers and logo stickers from $140 MXN, temporary tattoos and custom stationery. Made in Guadalajara, shipping across Mexico.",
   whatsappNumber: "523334005135",
   /** Same number as whatsappNumber, as people dial it in Mexico. */
   phoneDisplay: "33 3400 5135",
