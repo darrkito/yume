@@ -22,7 +22,7 @@ export const generalFaqEn: FaqItem[] = [
   },
   {
     q: "How can I get a quote or place an order?",
-    a: "Add your product to the cart and pay online by card, OXXO, or SPEI. If you'd rather get a quote first or need something custom, message us on WhatsApp at +52 33 3400 5135 or email yume.studiomx@gmail.com.",
+    a: "Add your product to the cart and pay online by card, OXXO, or SPEI. If you'd rather get a quote first or need something custom, message us on WhatsApp at +52 33 1895 8175 or email yume.studiomx@gmail.com.",
     cta: { label: "See the shop", href: "/en/products" },
   },
   {

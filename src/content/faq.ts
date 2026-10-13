@@ -39,7 +39,7 @@ export const generalFaq: FaqItem[] = [
   },
   {
     q: "¿Cómo puedo cotizar o hacer un pedido?",
-    a: "Agrega tu producto al carrito y paga en línea con tarjeta, OXXO o SPEI. Si prefieres cotizar primero o necesitas algo a la medida, escríbenos por WhatsApp al 33 3400 5135 o a yume.studiomx@gmail.com.",
+    a: "Agrega tu producto al carrito y paga en línea con tarjeta, OXXO o SPEI. Si prefieres cotizar primero o necesitas algo a la medida, escríbenos por WhatsApp al 33 1895 8175 o a yume.studiomx@gmail.com.",
     cta: { label: "Ver la tienda", href: "/productos" },
   },
   {

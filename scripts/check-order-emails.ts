@@ -33,7 +33,7 @@ assert.ok(!c1.html.includes("<i>Juárez"), "address must be escaped");
 assert.ok(c1.html.includes("Dirección de envío") && c1.html.includes("CP 44100") && c1.html.includes("Portón negro"));
 assert.ok(c1.html.includes("salga rumbo a tu domicilio"));
 assert.ok(c1.html.includes("Falta tu diseño"), "logo product without upload must warn");
-assert.ok(c1.html.includes("api.whatsapp.com/send?phone=523334005135"));
+assert.ok(c1.html.includes("api.whatsapp.com/send?phone=523318958175"));
 assert.ok(c1.html.includes("logo-yume-wordmark.png") && c1.html.includes("Playfair"));
 
 const c2 = customerConfirmationEmail(pickup);

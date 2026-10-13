@@ -46,7 +46,7 @@ Orders are placed either through the website (cart + Mercado Pago checkout, Chec
 - Fixed color anchors: burgundy accent (`#7c0000` / deep `#560000`) and warm cream paper tones — this is Yume's own original brand identity, not a placeholder to be redesigned away.
 - Typography: Playfair Display (display/headlines) + Karla (body) — Playfair is Yume's own pre-existing brand typeface.
 - Real wordmark logo with a burgundy dot mark (`logo-yume-wordmark.webp`).
-- Real contact channels: WhatsApp `3334005135`, Instagram `@studioyume.mx`, email `yume.studiomx@gmail.com`.
+- Real contact channels: WhatsApp `3318958175`, Instagram `@studioyume.mx`, email `yume.studiomx@gmail.com`.
 - Voice: warm, specific, honest about being a small real business in Guadalajara — never corporate-generic, never overstating scale.
 
 ## Evidence on Hand

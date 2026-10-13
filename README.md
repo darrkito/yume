@@ -47,7 +47,7 @@ Para todo lo demás (fotos de producto, logo, futuras imágenes de blog), usa `n
 
 ## Pendiente antes de lanzar
 
-- [x] Número de WhatsApp real en `src/content/site.ts` (+52 33 3400 5135)
+- [x] Número de WhatsApp real en `src/content/site.ts` (+52 33 1895 8175)
 - [ ] Correo en el dominio (p. ej. `hola@studioyume.mx`); hoy el contacto es `yume.studiomx@gmail.com`
 - [ ] Fotografía real del recetario y de la placa/stand NFC (hoy son mockup/render, ver `src/content/product-photos.ts`)
 - [x] Pago en línea con Mercado Pago (Checkout Pro + Checkout Bricks, tarjeta + efectivo en tienda) — probado con credenciales TEST, falta cambiar a credenciales de producción antes de lanzar

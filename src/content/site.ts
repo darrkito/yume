@@ -27,9 +27,9 @@ export const SITE = {
     "Stickers de vinil y stickers con tu logo desde $140, tatuajes temporales y papelería personalizada. Hechos en Guadalajara, envíos a todo México.",
   descriptionEn:
     "Custom vinyl stickers and logo stickers from $140 MXN, temporary tattoos and custom stationery. Made in Guadalajara, shipping across Mexico.",
-  whatsappNumber: "523334005135",
+  whatsappNumber: "523318958175",
   /** Same number as whatsappNumber, as people dial it in Mexico. */
-  phoneDisplay: "33 3400 5135",
+  phoneDisplay: "33 1895 8175",
   email: "yume.studiomx@gmail.com",
   instagram: "https://www.instagram.com/studioyume.mx",
   city: "Guadalajara",

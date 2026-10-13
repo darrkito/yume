@@ -21,5 +21,5 @@ assert.ok(html.includes("Stickers Vinil: 100 piezas"));
 assert.ok(html.includes("$250.00"));
 assert.ok(html.includes("único recordatorio"));
 assert.ok(html.includes("OXXO"));
-assert.ok(html.includes("api.whatsapp.com/send?phone=523334005135"));
+assert.ok(html.includes("api.whatsapp.com/send?phone=523318958175"));
 console.log("abandoned email ok");

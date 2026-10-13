@@ -23,7 +23,7 @@ None enforced today (no API key, no per-agent quota). Be a reasonable citizen: c
 ## Contact
 
 - Business: Yume (studioyume.mx), Guadalajara, Jalisco, México. Online store, no walk-in storefront.
-- WhatsApp / phone: +52 33 3400 5135 (preferred for quotes)
+- WhatsApp / phone: +52 33 1895 8175 (preferred for quotes)
 - Email: yume.studiomx@gmail.com
 - Instagram: https://www.instagram.com/studioyume.mx
 
