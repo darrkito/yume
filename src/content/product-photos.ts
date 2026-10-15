@@ -17,10 +17,19 @@ const GALLERY_SLUGS: Record<string, string[]> = {
   "stickers-vinil-impermeable": ["mascotas-schnauzer", "hello-kitty", "pokemon-dragones"],
 };
 
+// Product renders that aren't part of the sticker gallery.
+const STATIC_PHOTOS: Record<string, Record<Lang, ProductPhoto[]>> = {
+  "stand-resena-google-nfc": {
+    es: [{ src: "/stand-resena-google-nfc.webp", width: 250, height: 250, alt: "Stand para reseñas de Google en color negro, con código QR y NFC" }],
+    en: [{ src: "/stand-resena-google-nfc.webp", width: 250, height: 250, alt: "Black Google review stand with a QR code and NFC" }],
+  },
+};
+
 export function productPhotos(slug: string, lang: Lang): ProductPhoto[] {
   const items = lang === "en" ? getGalleryItemsEn() : galleryItems;
-  return (GALLERY_SLUGS[slug] ?? []).flatMap((g) => {
+  const fromGallery = (GALLERY_SLUGS[slug] ?? []).flatMap((g) => {
     const i = items.find((x) => x.slug === g);
     return i ? [{ src: i.image, width: i.width, height: i.height, alt: i.alt }] : [];
   });
+  return [...fromGallery, ...(STATIC_PHOTOS[slug]?.[lang] ?? [])];
 }

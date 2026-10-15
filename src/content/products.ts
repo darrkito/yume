@@ -436,9 +436,10 @@ export const products: Product[] = [
       "12.75 cm de alto, 7.6 cm de ancho, base de 5 cm de profundidad",
       "También disponible sin base, con adhesivo: ver Placa para Reseñas de Google",
     ],
-    image: "/stand-resena-google-nfc.webp",
-    imageWidth: 250,
-    imageHeight: 250,
+    // White is the default option, so its render leads; the black one is the second photo.
+    image: "/stand-resena-google-nfc-blanco.webp",
+    imageWidth: 781,
+    imageHeight: 781,
     variants: [
       { id: "blanco", label: "Blanco", price: 200, default: true },
       { id: "negro", label: "Negro", price: 200 },
