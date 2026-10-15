@@ -19,6 +19,10 @@ const GALLERY_SLUGS: Record<string, string[]> = {
 
 // Product renders that aren't part of the sticker gallery.
 const STATIC_PHOTOS: Record<string, Record<Lang, ProductPhoto[]>> = {
+  "placa-resena-google-nfc": {
+    es: [{ src: "/placa-resena-google-nfc-adhesivo.webp", width: 781, height: 781, alt: "Placa para reseñas de Google con NFC y QR, vista del adhesivo trasero" }],
+    en: [{ src: "/placa-resena-google-nfc-adhesivo.webp", width: 781, height: 781, alt: "Google review plate with NFC and QR, showing the adhesive back" }],
+  },
   "stand-resena-google-nfc": {
     es: [{ src: "/stand-resena-google-nfc.webp", width: 250, height: 250, alt: "Stand para reseñas de Google en color negro, con código QR y NFC" }],
     en: [{ src: "/stand-resena-google-nfc.webp", width: 250, height: 250, alt: "Black Google review stand with a QR code and NFC" }],

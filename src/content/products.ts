@@ -372,9 +372,9 @@ export const products: Product[] = [
       "12 × 12 cm, 0.2 cm de grosor",
       "También disponible con base para escritorio: ver Stand para Reseñas de Google",
     ],
-    image: "/placa-resena-google-nfc.webp",
-    imageWidth: 250,
-    imageHeight: 250,
+    image: "/placa-resena-google-nfc-colores.webp",
+    imageWidth: 781,
+    imageHeight: 781,
     variants: [
       { id: "blanco", label: "Blanco", price: 140, default: true },
       { id: "negro", label: "Negro", price: 140 },
