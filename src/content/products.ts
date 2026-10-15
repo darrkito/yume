@@ -436,8 +436,8 @@ export const products: Product[] = [
       "12.75 cm de alto, 7.6 cm de ancho, base de 5 cm de profundidad",
       "También disponible sin base, con adhesivo: ver Placa para Reseñas de Google",
     ],
-    // White is the default option, so its render leads; the black one is the second photo.
-    image: "/stand-resena-google-nfc-blanco.webp",
+    // The two-color shot leads; white and black follow as the second and third photos.
+    image: "/stand-resena-google-nfc-colores.webp",
     imageWidth: 781,
     imageHeight: 781,
     variants: [
