@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { MessageCircle, Sparkles } from "lucide-react";
 import { waLink } from "@/content/site";
 import { UI, type Lang } from "@/lib/i18n";
@@ -13,7 +14,11 @@ export function QuoteCard({ lang = "es", index = 0, size = "md" }: { lang?: Lang
       <div className={`flex ${sm ? "h-32" : "h-48"} items-center justify-center rounded-xl bg-brand-tint`}>
         <Sparkles size={sm ? 40 : 56} className="text-brand" aria-hidden="true" />
       </div>
-      <p className={`font-display text-ink text-balance ${sm ? "mt-4 text-base" : "mt-6 text-xl"}`}>{t.quoteCardName}</p>
+      <p className={`font-display text-ink text-balance ${sm ? "mt-4 text-base" : "mt-6 text-xl"}`}>
+        <Link href={lang === "en" ? "/en/products/custom-temporary-tattoos" : "/productos/tatuajes-temporales-personalizados"} className="transition-colors hover:text-brand">
+          {t.quoteCardName}
+        </Link>
+      </p>
       <p className="mb-auto mt-1 text-sm leading-relaxed text-ink-soft">{t.quoteCardBody}</p>
       <a
         href={waLink(t.quoteCardMsg)}

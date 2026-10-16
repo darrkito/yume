@@ -44,6 +44,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     { url: `${SITE.url}/politica-de-devoluciones`, changeFrequency: "yearly", priority: 0.3, alternates: withLanguages("/politica-de-devoluciones") },
     { url: `${SITE.url}/en/returns-policy`, changeFrequency: "yearly", priority: 0.2, alternates: withLanguages("/politica-de-devoluciones") },
+
+    { url: `${SITE.url}/productos/tatuajes-temporales-personalizados`, changeFrequency: "monthly", priority: 0.8, lastModified: "2026-10-16", alternates: withLanguages("/productos/tatuajes-temporales-personalizados") },
+    { url: `${SITE.url}/en/products/custom-temporary-tattoos`, changeFrequency: "monthly", priority: 0.7, lastModified: "2026-10-16", alternates: withLanguages("/productos/tatuajes-temporales-personalizados") },
   ];
 
   // A slug missing from the ES<->EN maps in lib/i18n.ts would otherwise

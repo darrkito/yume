@@ -77,6 +77,8 @@ const STATIC_PATH_EN: Record<string, string> = {
   "/contacto": "/en/contact",
   "/privacidad": "/en/privacy",
   "/politica-de-devoluciones": "/en/returns-policy",
+  // Quote-only page: a static route, not a catalog product, so it has no PRODUCT_SLUG_EN entry.
+  "/productos/tatuajes-temporales-personalizados": "/en/products/custom-temporary-tattoos",
 };
 const STATIC_PATH_ES: Record<string, string> = Object.fromEntries(
   Object.entries(STATIC_PATH_EN).map(([es, en]) => [en, es]),
@@ -84,6 +86,7 @@ const STATIC_PATH_ES: Record<string, string> = Object.fromEntries(
 
 /** Given a Spanish (canonical, unprefixed) pathname, returns its English sibling URL. */
 export function esPathToEnPath(esPath: string): string {
+  if (STATIC_PATH_EN[esPath]) return STATIC_PATH_EN[esPath];
   const productMatch = esPath.match(/^\/productos\/([^/]+)\/?$/);
   if (productMatch) return `/en/products/${PRODUCT_SLUG_EN[productMatch[1]] ?? productMatch[1]}`;
 
@@ -95,6 +98,7 @@ export function esPathToEnPath(esPath: string): string {
 
 /** Given an English pathname, returns its Spanish (canonical) sibling URL. */
 export function enPathToEsPath(enPath: string): string {
+  if (STATIC_PATH_ES[enPath]) return STATIC_PATH_ES[enPath];
   const productMatch = enPath.match(/^\/en\/products\/([^/]+)\/?$/);
   if (productMatch) return `/productos/${PRODUCT_SLUG_ES[productMatch[1]] ?? productMatch[1]}`;
 
