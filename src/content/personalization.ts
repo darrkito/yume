@@ -5,6 +5,8 @@
 // ponytail: per product, not per cart line: two different dulcero names in one
 // order go in the order note. Add per-line capture if that becomes common.
 
+import { getProduct, pieceCount } from "@/content/products";
+
 export interface PersonalizationField {
   id: string;
   label: { es: string; en: string };
@@ -40,6 +42,22 @@ const CUT_FIELD: PersonalizationField = {
   ),
 };
 
+// Finish is a required choice on both sticker products; holographic costs
+// extra per piece, added as its own order line (see holoExtraLines).
+export const HOLO_EXTRA_PER_PIECE = 0.5;
+const FINISH_FIELD: PersonalizationField = {
+  id: "finish",
+  type: "select",
+  required: true,
+  maxLength: 20,
+  label: T("Acabado", "Finish"),
+  options: [
+    { value: "mate", label: T("Mate", "Matte") },
+    { value: "brillante", label: T("Brillante", "Glossy") },
+    { value: "holografico", label: T("Holográfico (+$0.50 por pieza)", "Holographic (+$0.50 per piece)") },
+  ],
+};
+
 export const PERSONALIZATION: Record<string, PersonalizationField[]> = {
   "dulceros-personalizados": [
     { id: "name", type: "text", required: true, maxLength: 80, label: T("Nombre o texto de la caja", "Name or text on the box"), placeholder: T("Sofía, 7 años", "Sofia, 7 years") },
@@ -63,10 +81,12 @@ export const PERSONALIZATION: Record<string, PersonalizationField[]> = {
   ],
   "stickers-vinil-impermeable": [
     CUT_FIELD,
+    FINISH_FIELD,
     { id: "note", type: "textarea", maxLength: 300, label: T("Tamaño, forma o indicaciones (opcional)", "Size, shape or notes (optional)") },
   ],
   "stickers-logo-personalizado": [
     CUT_FIELD,
+    FINISH_FIELD,
     { id: "note", type: "textarea", maxLength: 300, label: T("Tamaño, forma o indicaciones (opcional)", "Size, shape or notes (optional)") },
   ],
 };
@@ -113,6 +133,25 @@ export function validatePersonalization(
     if (entries.length) out[slug] = entries;
   }
   return out;
+}
+
+/** Extra order lines for the holographic finish: $0.50 per piece, derived from
+ * the buyer's finish choice and each line's piece count. Shared by the checkout
+ * summary and the server, which recomputes it, so both always agree. */
+export function holoExtraLines(
+  lines: { slug: string; variantId?: string; qty: number }[],
+  raw: unknown,
+  lang: "es" | "en" = "es",
+): { slug: string; name: string; price: number; qty: number; variantId: string }[] {
+  const input = (raw && typeof raw === "object" ? raw : {}) as Record<string, Record<string, unknown>>;
+  const bySlug = new Map<string, number>();
+  for (const l of lines) {
+    const product = getProduct(l.slug);
+    const pieces = product ? pieceCount(product, l.variantId) : null;
+    if (pieces !== null && input[l.slug]?.finish === "holografico") bySlug.set(l.slug, (bySlug.get(l.slug) ?? 0) + pieces * l.qty);
+  }
+  const name = lang === "en" ? "Holographic finish (+$0.50 per piece)" : "Acabado holográfico (+$0.50 por pieza)";
+  return [...bySlug].map(([slug, qty]) => ({ slug, name, price: HOLO_EXTRA_PER_PIECE, qty, variantId: "acabado-holografico" }));
 }
 
 export function validateNote(raw: unknown): string {

@@ -1,7 +1,7 @@
 import { MercadoPagoConfig } from "mercadopago";
 import { isAiSource, type AiSource } from "@/lib/ai-source";
 import { SITE } from "@/content/site";
-import { ORDER_NOTE_LABEL, validateNote, validatePersonalization, type PersonalizationEntry } from "@/content/personalization";
+import { ORDER_NOTE_LABEL, holoExtraLines, validateNote, validatePersonalization, type PersonalizationEntry } from "@/content/personalization";
 import { getProduct, cartItemLabel, isValidVariant, resolvePrice } from "@/content/products";
 
 // Server-only client — never import this from a "use client" component.
@@ -92,6 +92,7 @@ export function validateCartItems(items: unknown, extras: { personalization?: un
     seen.add(line.slug);
     if (byProduct[line.slug]) line.personalization = byProduct[line.slug];
   }
+  checked.push(...holoExtraLines(checked, extras.personalization));
   const note = validateNote(extras.note);
   if (note) checked[0].personalization = [...(checked[0].personalization ?? []), { label: ORDER_NOTE_LABEL, value: note }];
   if (extras.lang === "en") checked[0].locale = "en";
