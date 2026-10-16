@@ -21,8 +21,8 @@ export const SITE = {
    * city its commercial queries carry ("... en Guadalajara"). Temporary
    * tattoos are quote-only (no product page), so they stay in the
    * description, not the title. */
-  homeTitle: "Stickers de Vinil y Papelería Personalizada en Guadalajara | Yume",
-  homeTitleEn: "Custom Vinyl Stickers & Stationery in Guadalajara, Mexico | Yume",
+  homeTitle: "Stickers de Vinil y Papelería en Guadalajara | Yume",
+  homeTitleEn: "Custom Vinyl Stickers & Stationery in Guadalajara | Yume",
   description:
     "Stickers de vinil y stickers con tu logo desde $140, tatuajes temporales y papelería personalizada. Hechos en Guadalajara, envíos a todo México.",
   descriptionEn:
