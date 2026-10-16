@@ -971,6 +971,51 @@ export const blogPostsEn: BlogPost[] = [
     relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
     relatedBlogSlugs: [BLOG_SLUG_EN["donde-imprimir-stickers-personalizados-mexico"], BLOG_SLUG_EN["yume-vs-imprentas-online-stickers"]],
   },
+  {
+    slug: BLOG_SLUG_EN["troquelado-vs-semitroquelado-stickers"],
+    title: "Die Cut vs Kiss Cut Stickers: Which Cut Should You Choose?",
+    metaTitle: "Die Cut vs Kiss Cut Stickers",
+    description:
+      "The difference between die cut and kiss cut stickers (troquelado and semitroquelado): how each looks, when each one fits, and how to choose when you order your stickers at Yume.",
+    category: "Guides",
+    publishedAt: "2026-10-16",
+    intro:
+      "When you order custom stickers you run into two terms: die cut and kiss cut (troquelado and semitroquelado in Spanish). Yume makes both and you choose when you order. This guide explains what each one is, how they differ, and which fits your use.",
+    sections: [
+      {
+        heading: "What is a die cut sticker and what is a kiss cut sticker?",
+        body: [
+          "A die cut sticker (troquelado) is cut all the way through along the outline of your design: the vinyl and its backing are cut together, so you get each sticker loose, in the exact shape of your logo, character, or photo.",
+          "A kiss cut sticker (semitroquelado) is cut through the vinyl only, not the backing sheet. The outline is marked, but the stickers stay on their backing and you peel them off one by one when you use them.",
+        ],
+        table: {
+          headers: ["Feature", "Die cut (troquelado)", "Kiss cut (semitroquelado)"],
+          rows: [
+            ["What is cut", "Vinyl and backing, all the way", "Vinyl only; the backing stays whole"],
+            ["How you receive it", "Each sticker loose", "Stickers on their backing sheet"],
+            ["Sticker shape", "The shape of your design", "The shape of your design"],
+          ],
+        },
+      },
+      {
+        heading: "Which one fits your use?",
+        body: [
+          "Die cut makes sense when stickers are handed out or applied one at a time: a seal to close a bag, a label for a product, a gift for a customer. It arrives ready to peel, with no sheet in between.",
+          "Kiss cut makes sense when you want your stickers kept together and protected until you use them: for a market stall or trade show, for handing out at an event, or for holding a stock to use over time. The backing sheet keeps them organized and clean.",
+          "Both are made on the same premium vinyl and follow the shape of your design; what changes is the cut and how the order arrives. If you are unsure, think about how you will use them: one at a time, or in batches.",
+        ],
+      },
+      {
+        heading: "How to choose the cut type when you order",
+        body: [
+          "At checkout, in the order details step, there is a field called Cut type with both options: Die cut or Kiss cut. It is required for sticker orders, so you pick it and it is saved with your order.",
+          "If you are not sure which fits your case, message us on WhatsApp before paying and we will go over it with you.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"], BLOG_SLUG_EN["donde-imprimir-stickers-personalizados-mexico"]],
+  },
   // Dulceros cluster lives in its own file (blog-dulceros.en.ts).
   ...dulceroPostsEn,
 ];

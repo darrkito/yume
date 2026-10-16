@@ -9,7 +9,11 @@ export interface PersonalizationField {
   id: string;
   label: { es: string; en: string };
   placeholder?: { es: string; en: string };
-  type: "text" | "textarea" | "url" | "date";
+  type: "text" | "textarea" | "url" | "date" | "select";
+  /** For type "select": the allowed values (validated server-side). */
+  options?: { value: string; label: { es: string; en: string } }[];
+  /** Short help line under the field. */
+  hint?: { es: string; en: string };
   required?: boolean;
   maxLength: number;
   /** Only asked when the cart line uses this option (e.g. the recetario's
@@ -18,6 +22,23 @@ export interface PersonalizationField {
 }
 
 const T = (es: string, en: string) => ({ es, en });
+
+// Both sticker products are made either way; the buyer picks at checkout.
+const CUT_FIELD: PersonalizationField = {
+  id: "cut",
+  type: "select",
+  required: true,
+  maxLength: 20,
+  label: T("Tipo de corte", "Cut type"),
+  options: [
+    { value: "troquelado", label: T("Troquelado", "Die cut") },
+    { value: "semitroquelado", label: T("Semitroquelado", "Kiss cut") },
+  ],
+  hint: T(
+    "Troquelado: cada sticker se corta por completo, suelto. Semitroquelado: se corta solo el vinil y quedan sobre su hoja base.",
+    "Die cut: each sticker is cut all the way through, loose. Kiss cut: only the vinyl is cut and the stickers stay on their backing sheet.",
+  ),
+};
 
 export const PERSONALIZATION: Record<string, PersonalizationField[]> = {
   "dulceros-personalizados": [
@@ -41,9 +62,11 @@ export const PERSONALIZATION: Record<string, PersonalizationField[]> = {
     { id: "google", type: "text", required: true, maxLength: 300, label: T("Link de reseñas de Google o nombre de tu negocio", "Google reviews link or your business name"), placeholder: T("g.page/r/... o Café Aurora, Guadalajara", "g.page/r/... or Aurora Cafe, Guadalajara") },
   ],
   "stickers-vinil-impermeable": [
+    CUT_FIELD,
     { id: "note", type: "textarea", maxLength: 300, label: T("Tamaño, forma o indicaciones (opcional)", "Size, shape or notes (optional)") },
   ],
   "stickers-logo-personalizado": [
+    CUT_FIELD,
     { id: "note", type: "textarea", maxLength: 300, label: T("Tamaño, forma o indicaciones (opcional)", "Size, shape or notes (optional)") },
   ],
 };
@@ -82,8 +105,10 @@ export function validatePersonalization(
         if (f.required) throw new Error(`Falta: ${f.label.es}.`);
         continue;
       }
+      if (f.type === "select" && !f.options?.some((o) => o.value === value)) throw new Error(`Opción inválida: ${f.label.es}.`);
       if (f.type === "date" && !/^\d{4}-\d{2}-\d{2}$/.test(value)) throw new Error(`Fecha inválida: ${f.label.es}.`);
-      entries.push({ label: f.label.es.replace(/ \(opcional\)$/, ""), value });
+      const shown = f.type === "select" ? f.options!.find((o) => o.value === value)!.label.es : value;
+      entries.push({ label: f.label.es.replace(/ \(opcional\)$/, ""), value: shown });
     }
     if (entries.length) out[slug] = entries;
   }

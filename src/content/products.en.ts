@@ -151,6 +151,7 @@ export const productsEn: Record<string, ProductTranslation> = {
       { label: "Minimum order", value: "50 pieces" },
       { label: "First 100 pieces", value: "$300 ($3.00 each)" },
       { label: "Wholesale price", value: "Over 100 pieces: each extra piece at $2.70 (10% off)" },
+      { label: "Cut type", value: "Die cut or kiss cut, you choose when ordering" },
       { label: "Customization", value: "Your logo or design" },
       { label: "Durability", value: "Water-resistant" },
       { label: "Production", value: "Made to order" },
@@ -216,7 +217,8 @@ export const productsEn: Record<string, ProductTranslation> = {
       { label: "Minimum order", value: "40 pieces" },
       { label: "First 100 pieces", value: "$350 ($3.50 each)" },
       { label: "Wholesale price", value: "Over 100 pieces: each extra piece at $3.15 (10% off)" },
-      { label: "Material", value: "Premium vinyl, die-cut" },
+      { label: "Material", value: "Premium vinyl" },
+      { label: "Cut type", value: "Die cut or kiss cut, you choose when ordering" },
       { label: "Durability", value: "Water, sun, and scratch resistant" },
       { label: "Customization", value: "Your design, character, or photo" },
     ],
@@ -225,7 +227,7 @@ export const productsEn: Record<string, ProductTranslation> = {
     metaDescription:
       "Custom vinyl stickers, resistant to water, sun, and scratches. Any design, character, or photo. First 100 pieces for $350, with wholesale pricing on every extra piece.",
     details: [
-      "Premium vinyl, die-cut to the shape of your design",
+      "Premium vinyl cut to the shape of your design: die cut or kiss cut, you choose when ordering",
       "Sold by piece count, 40-piece minimum",
       "First 100 pieces: $350 ($3.50 each)",
       "Over 100 pieces: wholesale price, every extra piece at $3.15 (10% off)",

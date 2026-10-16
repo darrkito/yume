@@ -1005,6 +1005,51 @@ export const blogPosts: BlogPost[] = [
     relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
     relatedBlogSlugs: ["donde-imprimir-stickers-personalizados-mexico", "yume-vs-imprentas-online-stickers"],
   },
+  {
+    slug: "troquelado-vs-semitroquelado-stickers",
+    title: "Troquelado vs semitroquelado: qué tipo de corte elegir para tus stickers",
+    metaTitle: "Troquelado vs semitroquelado en stickers",
+    description:
+      "Diferencia entre sticker troquelado y semitroquelado (die cut y kiss cut): cómo se ve cada uno, cuándo conviene cada corte y cómo elegirlo al pedir tus stickers en Yume.",
+    category: "Guías",
+    publishedAt: "2026-10-16",
+    intro:
+      "Al pedir stickers personalizados te topas con dos palabras: troquelado y semitroquelado. En Yume hacemos los dos y tú eliges al pedir. Esta guía explica qué es cada uno, en qué se diferencian y cuál te conviene según el uso que le vas a dar.",
+    sections: [
+      {
+        heading: "¿Qué es un sticker troquelado y qué es uno semitroquelado?",
+        body: [
+          "Un sticker troquelado (en inglés, die cut) se corta por completo siguiendo el contorno del diseño: el vinil y su base se cortan juntos, así que recibes cada sticker suelto, con la forma exacta de tu logo, personaje o foto.",
+          "Un sticker semitroquelado (en inglés, kiss cut) se corta solo en el vinil, sin atravesar la hoja base. El contorno queda marcado, pero los stickers siguen pegados a su hoja de respaldo y los despegas uno por uno cuando los vas a usar.",
+        ],
+        table: {
+          headers: ["Aspecto", "Troquelado (die cut)", "Semitroquelado (kiss cut)"],
+          rows: [
+            ["Qué se corta", "Vinil y base, por completo", "Solo el vinil; la base queda entera"],
+            ["Cómo lo recibes", "Cada sticker suelto", "Stickers sobre su hoja de respaldo"],
+            ["Forma del sticker", "La del diseño", "La del diseño"],
+          ],
+        },
+      },
+      {
+        heading: "¿Cuál conviene según el uso?",
+        body: [
+          "El troquelado tiene sentido cuando el sticker se va a entregar o pegar de uno en uno: un sello para cerrar una bolsa, una etiqueta para un producto, un regalo para un cliente. Llega listo para despegar, sin hoja de por medio.",
+          "El semitroquelado tiene sentido cuando quieres tener tus stickers juntos y protegidos hasta usarlos: para llevarlos a un bazar o una feria, repartirlos en un evento o guardar una cantidad para ir usándola. La hoja de respaldo los mantiene ordenados y limpios.",
+          "Los dos se hacen en el mismo vinil premium y siguen la forma de tu diseño; lo que cambia es el corte y cómo recibes el pedido. Si no estás seguro, piensa en cómo vas a usarlos: uno por uno, o en tanda.",
+        ],
+      },
+      {
+        heading: "Cómo elegir el tipo de corte al pedir",
+        body: [
+          "Al pagar, en el paso de datos de tu pedido, hay un campo llamado Tipo de corte con las dos opciones: Troquelado o Semitroquelado. Es un dato obligatorio para los pedidos de stickers, así que lo eliges tú y queda registrado en tu pedido.",
+          "Si tienes dudas sobre cuál te conviene para tu caso, escríbenos por WhatsApp antes de pagar y lo revisamos contigo.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
+    relatedBlogSlugs: ["stickers-vinil-vs-papel-diferencias", "donde-imprimir-stickers-personalizados-mexico"],
+  },
   // Dulceros cluster lives in its own file (blog-dulceros.ts).
   ...dulceroPosts,
 ];

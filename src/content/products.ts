@@ -134,7 +134,8 @@ export const products: Product[] = [
       { label: "Mínimo de compra", value: "40 piezas" },
       { label: "Primeras 100 piezas", value: "$350 ($3.50 c/u)" },
       { label: "Precio mayoreo", value: "Más de 100 piezas: cada pieza extra a $3.15 (10% menos)" },
-      { label: "Material", value: "Vinil premium, corte troquelado" },
+      { label: "Material", value: "Vinil premium" },
+      { label: "Tipo de corte", value: "Troquelado o semitroquelado, tú eliges al pedir" },
       { label: "Resistencia", value: "Al agua, al sol y a rayones" },
       { label: "Personalización", value: "Tu diseño, personaje o foto" },
     ],
@@ -143,7 +144,7 @@ export const products: Product[] = [
     metaDescription:
       "Stickers de vinil personalizados, resistentes al agua, al sol y a rayones. Cualquier diseño, personaje o foto. Primeras 100 piezas por $350 y precio mayoreo en cada pieza extra.",
     details: [
-      "Vinil premium con corte troquelado a la forma del diseño",
+      "Vinil premium con corte a la forma del diseño: troquelado o semitroquelado, tú eliges al pedir",
       "Se venden por cantidad de piezas, mínimo 40",
       "Primeras 100 piezas: $350 ($3.50 c/u)",
       "Más de 100 piezas: precio mayoreo, cada pieza extra a $3.15 (10% menos)",
@@ -207,6 +208,7 @@ export const products: Product[] = [
       { label: "Mínimo de compra", value: "50 piezas" },
       { label: "Primeras 100 piezas", value: "$300 ($3.00 c/u)" },
       { label: "Precio mayoreo", value: "Más de 100 piezas: cada pieza extra a $2.70 (10% menos)" },
+      { label: "Tipo de corte", value: "Troquelado o semitroquelado, tú eliges al pedir" },
       { label: "Personalización", value: "Tu logo o diseño" },
       { label: "Resistencia", value: "Resistentes al agua" },
       { label: "Producción", value: "Sobre pedido" },
