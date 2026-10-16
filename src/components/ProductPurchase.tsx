@@ -7,9 +7,10 @@ import { useAddProduct } from "@/components/useAddProduct";
 import { useDeliveryDates } from "@/components/useDeliveryDates";
 import { useDesignFiles } from "@/components/DesignFileContext";
 import { DesignSheet } from "@/components/DesignSheet";
+import { LineOptionPicker } from "@/components/LineOptionPicker";
 import { QtyInput } from "@/components/QtyInput";
 import { LogoUploadNote } from "@/components/LogoUploadNote";
-import { CUT_OPTIONS, FINISH_OPTIONS, cartItemLabel, defaultVariantId, hasVariants, hasWholesale, MAX_PIECES, parseVariant, pieceCount, piecesForAmount, resolvePrice, tieredPrice, wholesaleRate, withPieces, type LineOption, type Product } from "@/content/products";
+import { cartItemLabel, defaultVariantId, hasVariants, hasWholesale, MAX_PIECES, pieceCount, piecesForAmount, resolvePrice, tieredPrice, wholesaleRate, withPieces, type Product } from "@/content/products";
 import { cartItemLabelEn, getProductTranslation } from "@/content/products.en";
 import { waLink } from "@/content/site";
 import { CASABLANCA_PRICE, FREE_SHIPPING_THRESHOLD, NATIONAL_SHIPPING_PRICE } from "@/content/shipping";
@@ -22,21 +23,6 @@ import { UI, type Lang } from "@/lib/i18n";
 // quantities (stickers) — same variants mechanism either way.
 const RADIO_VS_SELECT_THRESHOLD = 4;
 const QUICK_PICK_MAX = 300;
-
-const OPTION_COPY = {
-  es: {
-    cut: "Tipo de corte",
-    cutHint: "Troquelado: cada sticker se corta por completo, suelto. Semitroquelado: se corta solo el vinil y quedan sobre su hoja base.",
-    finish: "Acabado",
-    perPiece: "c/u",
-  },
-  en: {
-    cut: "Cut type",
-    cutHint: "Die cut: each sticker is cut all the way through, loose. Kiss cut: only the vinyl is cut and the stickers stay on their backing sheet.",
-    finish: "Finish",
-    perPiece: "each",
-  },
-};
 
 const WA_QUOTE_MSG = {
   es: (label: string, price: string) => `Hola, me interesa cotizar: ${label} (${price} MXN). ¿Podrían darme más información?`,
@@ -73,35 +59,6 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
   const lineTotal = tiers ? price : price * units;
   const savings = tiers && pieces ? pieces * tiers.rate - tieredPrice(tiers, pieces) : 0;
   const pct = tiers && pieces ? Math.round((savings / (pieces * tiers.rate)) * 100) : 0;
-  const chosen = parseVariant(variantId);
-  const oc = OPTION_COPY[lang];
-  const pickOption = (kind: "cut" | "finish", id: string) =>
-    setVariantId(`${pieces}|${kind === "cut" ? id : chosen.cut?.id}|${kind === "finish" ? id : chosen.finish?.id}`);
-  const optionGroup = (kind: "cut" | "finish", options: LineOption[]) => (
-    <fieldset className="mt-5">
-      <legend className="text-xs text-ink-soft">{oc[kind]}</legend>
-      <div className="mt-3 flex flex-wrap gap-2">
-        {options.map((o) => {
-          const on = chosen[kind]?.id === o.id;
-          return (
-            <button
-              key={o.id}
-              type="button"
-              aria-pressed={on}
-              onClick={() => pickOption(kind, o.id)}
-              className={`min-h-11 rounded-full border px-4 text-sm transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand ${
-                on ? "border-brand bg-brand-tint font-semibold text-ink" : "border-line text-ink-soft hover:border-brand"
-              }`}
-            >
-              {o.label[lang]}
-              {o.extraPerPiece ? ` (+${formatMXN(o.extraPerPiece)} ${oc.perPiece})` : ""}
-            </button>
-          );
-        })}
-      </div>
-      {kind === "cut" && <p className="mt-2 max-w-md text-xs leading-relaxed text-ink-soft">{oc.cutHint}</p>}
-    </fieldset>
-  );
 
   const handleAdd = () => {
     addProduct(product, variantId, tiers ? 1 : units);
@@ -265,8 +222,7 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
 
       {product.lineOptions && (
         <>
-          {optionGroup("cut", CUT_OPTIONS)}
-          {optionGroup("finish", FINISH_OPTIONS)}
+          <LineOptionPicker variantId={variantId} onChange={setVariantId} lang={lang} />
         </>
       )}
 

@@ -3,7 +3,8 @@
 import { useState } from "react";
 import { ShoppingBag, Check } from "lucide-react";
 import { useAddProduct } from "@/components/useAddProduct";
-import { defaultVariantId, hasVariants, type Product } from "@/content/products";
+import { LineOptionPicker } from "@/components/LineOptionPicker";
+import { defaultVariantId, hasVariants, parseVariant, withPieces, type Product } from "@/content/products";
 import { getProductTranslation } from "@/content/products.en";
 import { formatMXN } from "@/lib/format";
 import { UI, type Lang } from "@/lib/i18n";
@@ -31,8 +32,8 @@ export function AddToCartButton({ product, compact = false, lang = "es" }: { pro
       {hasVariants(product) && (
         <select
           aria-label={t.chooseOption}
-          value={variantId}
-          onChange={(e) => setVariantId(e.target.value)}
+          value={product.lineOptions ? parseVariant(variantId).base : variantId}
+          onChange={(e) => setVariantId(product.lineOptions ? withPieces(variantId, Number(e.target.value)) : e.target.value)}
           className={compact ? "mb-2 block min-h-11 w-full rounded-lg border border-line bg-paper px-2.5 py-2 text-xs text-ink" : "mb-3 block min-h-11 w-full max-w-xs rounded-lg border border-line bg-paper px-3 py-2 text-sm text-ink"}
         >
           {product.variants!.map((v) => (
@@ -42,6 +43,7 @@ export function AddToCartButton({ product, compact = false, lang = "es" }: { pro
           ))}
         </select>
       )}
+      {product.lineOptions && <LineOptionPicker variantId={variantId} onChange={setVariantId} lang={lang} compact />}
       <button
         type="button"
         onClick={handleAdd}
