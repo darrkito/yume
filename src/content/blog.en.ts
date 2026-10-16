@@ -1008,7 +1008,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "How to choose the cut type when you order",
         body: [
-          "At checkout, in the order details step, there is a field called Cut type with both options: Die cut or Kiss cut. It is required for sticker orders, so you pick it and it is saved with your order.",
+          "On each sticker product page (Waterproof Vinyl Stickers and Custom Logo Stickers) you pick the cut type, Die cut or Kiss cut, before adding to your cart. You also pick the finish there: matte, glossy, or holographic. What you choose is saved with your order.",
           "If you are not sure which fits your case, message us on WhatsApp before paying and we will go over it with you.",
         ],
       },

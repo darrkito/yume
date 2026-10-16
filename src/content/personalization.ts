@@ -5,17 +5,11 @@
 // ponytail: per product, not per cart line: two different dulcero names in one
 // order go in the order note. Add per-line capture if that becomes common.
 
-import { getProduct, pieceCount } from "@/content/products";
-
 export interface PersonalizationField {
   id: string;
   label: { es: string; en: string };
   placeholder?: { es: string; en: string };
-  type: "text" | "textarea" | "url" | "date" | "select";
-  /** For type "select": the allowed values (validated server-side). */
-  options?: { value: string; label: { es: string; en: string } }[];
-  /** Short help line under the field. */
-  hint?: { es: string; en: string };
+  type: "text" | "textarea" | "url" | "date";
   required?: boolean;
   maxLength: number;
   /** Only asked when the cart line uses this option (e.g. the recetario's
@@ -24,39 +18,6 @@ export interface PersonalizationField {
 }
 
 const T = (es: string, en: string) => ({ es, en });
-
-// Both sticker products are made either way; the buyer picks at checkout.
-const CUT_FIELD: PersonalizationField = {
-  id: "cut",
-  type: "select",
-  required: true,
-  maxLength: 20,
-  label: T("Tipo de corte", "Cut type"),
-  options: [
-    { value: "troquelado", label: T("Troquelado", "Die cut") },
-    { value: "semitroquelado", label: T("Semitroquelado", "Kiss cut") },
-  ],
-  hint: T(
-    "Troquelado: cada sticker se corta por completo, suelto. Semitroquelado: se corta solo el vinil y quedan sobre su hoja base.",
-    "Die cut: each sticker is cut all the way through, loose. Kiss cut: only the vinyl is cut and the stickers stay on their backing sheet.",
-  ),
-};
-
-// Finish is a required choice on both sticker products; holographic costs
-// extra per piece, added as its own order line (see holoExtraLines).
-export const HOLO_EXTRA_PER_PIECE = 0.5;
-const FINISH_FIELD: PersonalizationField = {
-  id: "finish",
-  type: "select",
-  required: true,
-  maxLength: 20,
-  label: T("Acabado", "Finish"),
-  options: [
-    { value: "mate", label: T("Mate", "Matte") },
-    { value: "brillante", label: T("Brillante", "Glossy") },
-    { value: "holografico", label: T("Holográfico (+$0.50 por pieza)", "Holographic (+$0.50 per piece)") },
-  ],
-};
 
 export const PERSONALIZATION: Record<string, PersonalizationField[]> = {
   "dulceros-personalizados": [
@@ -80,13 +41,9 @@ export const PERSONALIZATION: Record<string, PersonalizationField[]> = {
     { id: "google", type: "text", required: true, maxLength: 300, label: T("Link de reseñas de Google o nombre de tu negocio", "Google reviews link or your business name"), placeholder: T("g.page/r/... o Café Aurora, Guadalajara", "g.page/r/... or Aurora Cafe, Guadalajara") },
   ],
   "stickers-vinil-impermeable": [
-    CUT_FIELD,
-    FINISH_FIELD,
     { id: "note", type: "textarea", maxLength: 300, label: T("Tamaño, forma o indicaciones (opcional)", "Size, shape or notes (optional)") },
   ],
   "stickers-logo-personalizado": [
-    CUT_FIELD,
-    FINISH_FIELD,
     { id: "note", type: "textarea", maxLength: 300, label: T("Tamaño, forma o indicaciones (opcional)", "Size, shape or notes (optional)") },
   ],
 };
@@ -125,33 +82,12 @@ export function validatePersonalization(
         if (f.required) throw new Error(`Falta: ${f.label.es}.`);
         continue;
       }
-      if (f.type === "select" && !f.options?.some((o) => o.value === value)) throw new Error(`Opción inválida: ${f.label.es}.`);
       if (f.type === "date" && !/^\d{4}-\d{2}-\d{2}$/.test(value)) throw new Error(`Fecha inválida: ${f.label.es}.`);
-      const shown = f.type === "select" ? f.options!.find((o) => o.value === value)!.label.es : value;
-      entries.push({ label: f.label.es.replace(/ \(opcional\)$/, ""), value: shown });
+      entries.push({ label: f.label.es.replace(/ \(opcional\)$/, ""), value });
     }
     if (entries.length) out[slug] = entries;
   }
   return out;
-}
-
-/** Extra order lines for the holographic finish: $0.50 per piece, derived from
- * the buyer's finish choice and each line's piece count. Shared by the checkout
- * summary and the server, which recomputes it, so both always agree. */
-export function holoExtraLines(
-  lines: { slug: string; variantId?: string; qty: number }[],
-  raw: unknown,
-  lang: "es" | "en" = "es",
-): { slug: string; name: string; price: number; qty: number; variantId: string }[] {
-  const input = (raw && typeof raw === "object" ? raw : {}) as Record<string, Record<string, unknown>>;
-  const bySlug = new Map<string, number>();
-  for (const l of lines) {
-    const product = getProduct(l.slug);
-    const pieces = product ? pieceCount(product, l.variantId) : null;
-    if (pieces !== null && input[l.slug]?.finish === "holografico") bySlug.set(l.slug, (bySlug.get(l.slug) ?? 0) + pieces * l.qty);
-  }
-  const name = lang === "en" ? "Holographic finish (+$0.50 per piece)" : "Acabado holográfico (+$0.50 por pieza)";
-  return [...bySlug].map(([slug, qty]) => ({ slug, name, price: HOLO_EXTRA_PER_PIECE, qty, variantId: "acabado-holografico" }));
 }
 
 export function validateNote(raw: unknown): string {

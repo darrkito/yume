@@ -11,7 +11,7 @@ import { MercadoPagoBrick } from "@/components/MercadoPagoBrick";
 import { track } from "@/components/TrackClicks";
 import { readAiSource } from "@/lib/ai-source";
 import { PersonalizationFields } from "@/components/PersonalizationFields";
-import { holoExtraLines, type PersonalizationInput } from "@/content/personalization";
+import type { PersonalizationInput } from "@/content/personalization";
 import { clearCheckoutDraft, ShippingForm } from "@/components/ShippingForm";
 import { getProduct, type Product } from "@/content/products";
 import { productsEn } from "@/content/products.en";
@@ -98,11 +98,8 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
   // before the form is submitted; the submitted `delivery` wins after that.
   const [formMethod, setFormMethod] = useState<DeliveryMethod | null>(null);
   const summaryMethod = delivery?.method ?? formMethod;
-  // Holographic finish is billed as its own lines; the server derives the same ones.
-  const finishLines = holoExtraLines(items, personalization, lang);
-  const subtotal = total + finishLines.reduce((sum, l) => sum + l.price * l.qty, 0);
-  const surcharge = summaryMethod ? deliverySurcharge(summaryMethod, subtotal) : 0;
-  const grandTotal = subtotal + surcharge;
+  const surcharge = summaryMethod ? deliverySurcharge(summaryMethod, total) : 0;
+  const grandTotal = total + surcharge;
   const deliveryLabel = summaryMethod === "recoleccion_casablanca" ? t.casablancaPickup : t.nationalShipping;
 
   // Uploads happen once, at checkout submission — not when the file is
@@ -216,14 +213,6 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
                   <span className="font-medium text-ink">{formatMXN(item.price * item.qty)}</span>
                 </li>
               ))}
-              {finishLines.map((l) => (
-                <li key={l.slug + l.variantId} className="flex items-center justify-between py-3">
-                  <span className="text-ink">
-                    {l.name} <span className="text-ink-soft">x{l.qty}</span>
-                  </span>
-                  <span className="font-medium text-ink">{formatMXN(l.price * l.qty)}</span>
-                </li>
-              ))}
             </ul>
             <div className="mt-3 flex items-center justify-between text-sm">
               <span className="text-ink-soft">{summaryMethod ? deliveryLabel : t.deliveryMethod}</span>
@@ -254,7 +243,7 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
             <div className="mt-10" hidden={mode !== "form"}>
               <ShippingForm
                 lang={lang}
-                subtotal={subtotal}
+                subtotal={total}
                 onMethodChange={setFormMethod}
                 beforeSubmit={
                   <>

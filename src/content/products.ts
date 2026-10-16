@@ -57,7 +57,54 @@ export interface Product {
    * cards may add it to the cart directly. Everything else is personalized
    * (a design, a letterhead) and its card routes to the product page. */
   quickBuy?: boolean;
+  /** Stickers: cut type and finish are chosen on the product page and ride in
+   * the cart line's variantId as "<pieces>|<cut>|<finish>" (see lineVariantId). */
+  lineOptions?: boolean;
 }
+
+export interface LineOption {
+  id: string;
+  label: { es: string; en: string };
+  /** Added to the price of every piece. */
+  extraPerPiece?: number;
+}
+const L = (es: string, en: string) => ({ es, en });
+export const CUT_OPTIONS: LineOption[] = [
+  { id: "troquelado", label: L("Troquelado", "Die cut") },
+  { id: "semitroquelado", label: L("Semitroquelado", "Kiss cut") },
+];
+export const FINISH_OPTIONS: LineOption[] = [
+  { id: "mate", label: L("Mate", "Matte") },
+  { id: "brillante", label: L("Brillante", "Glossy") },
+  { id: "holografico", label: L("Holográfico", "Holographic"), extraPerPiece: 0.5 },
+];
+const DEFAULT_SUFFIX = `|${CUT_OPTIONS[0].id}|${FINISH_OPTIONS[0].id}`;
+
+/** "80|troquelado|mate" -> { base: "80", cut, finish }; ids not in the catalog come back undefined. */
+export function parseVariant(variantId?: string) {
+  const [base = "", cut, finish, ...rest] = (variantId ?? "").split("|");
+  return {
+    base,
+    cut: CUT_OPTIONS.find((o) => o.id === cut),
+    finish: FINISH_OPTIONS.find((o) => o.id === finish),
+    shapeOk: rest.length === 0 && (cut === undefined) === (finish === undefined),
+    hasSuffix: cut !== undefined || finish !== undefined,
+  };
+}
+
+/** Same cut and finish as `variantId`, with a new piece count. */
+export const withPieces = (variantId: string | undefined, pieces: number) => {
+  const i = (variantId ?? "").indexOf("|");
+  return `${pieces}${i < 0 ? "" : variantId!.slice(i)}`;
+};
+
+/** Cart-line key part that distinguishes lines of the same product (cut + finish). */
+export const optionSuffix = (variantId?: string) => {
+  const i = (variantId ?? "").indexOf("|");
+  return i < 0 ? "" : variantId!.slice(i);
+};
+
+export const lineVariantId = (pieces: number, cutId: string, finishId: string) => `${pieces}|${cutId}|${finishId}`;
 
 /** Per-piece pricing for products sold by piece count (stickers): a flat
  * rate up to `discountQty`, then every piece beyond it at the wholesale
@@ -129,6 +176,7 @@ export const products: Product[] = [
     category: "Stickers de Vinil Personalizados",
     variants: vinylStickerVariants,
     tiers: VINYL_TIERS,
+    lineOptions: true,
     showGallery: true,
     specs: [
       { label: "Mínimo de compra", value: "40 piezas" },
@@ -204,6 +252,7 @@ export const products: Product[] = [
     category: "Stickers y etiquetas personalizadas",
     variants: stickerVariants,
     tiers: STICKER_TIERS,
+    lineOptions: true,
     showGallery: true,
     specs: [
       { label: "Mínimo de compra", value: "50 piezas" },
@@ -546,29 +595,41 @@ export const productDisplayPrice = (product: Product) =>
 
 export const defaultVariantId = (product: Product): string | undefined => {
   if (!hasVariants(product)) return undefined;
-  return (product.variants!.find((v) => v.default) ?? product.variants![0]).id;
+  return (product.variants!.find((v) => v.default) ?? product.variants![0]).id + (product.lineOptions ? DEFAULT_SUFFIX : "");
 };
 
 /** Piece count encoded in `variantId` for a per-piece product, when valid. */
 export const pieceCount = (product: Product, variantId?: string): number | null => {
-  if (!product.tiers || !variantId || !/^\d+$/.test(variantId)) return null;
-  const qty = Number(variantId);
+  if (!product.tiers || !variantId) return null;
+  const v = parseVariant(variantId);
+  if (!/^\d+$/.test(v.base) || !v.shapeOk) return null;
+  // Option products need both choices; the rest must not carry any.
+  if (product.lineOptions ? !(v.cut && v.finish) : v.hasSuffix) return null;
+  const qty = Number(v.base);
   return qty >= product.tiers.baseQty && qty <= MAX_PIECES ? qty : null;
 };
 
 export const isValidVariant = (product: Product, variantId?: string): boolean =>
-  !hasVariants(product) || pieceCount(product, variantId) !== null || product.variants!.some((v) => v.id === variantId);
+  !hasVariants(product) ||
+  pieceCount(product, variantId) !== null ||
+  (!product.lineOptions && product.variants!.some((v) => v.id === variantId));
 
 export const resolvePrice = (product: Product, variantId?: string): number => {
   const pieces = pieceCount(product, variantId);
-  if (pieces !== null) return tieredPrice(product.tiers!, pieces);
+  if (pieces !== null) {
+    const extra = parseVariant(variantId).finish?.extraPerPiece ?? 0;
+    return Math.round((tieredPrice(product.tiers!, pieces) + extra * pieces) * 100) / 100;
+  }
   const variant = product.variants?.find((v) => v.id === variantId);
   return variant ? variant.price : product.price;
 };
 
 export const cartItemLabel = (product: Product, variantId?: string): string => {
   const pieces = pieceCount(product, variantId);
-  if (pieces !== null) return `${product.name}: ${pieces} piezas`;
+  if (pieces !== null) {
+    const v = parseVariant(variantId);
+    return [`${product.name}: ${pieces} piezas`, v.cut?.label.es, v.finish?.label.es].filter(Boolean).join(" · ");
+  }
   const variant = product.variants?.find((v) => v.id === variantId);
   return variant ? `${product.name}: ${variant.label}` : product.name;
 };

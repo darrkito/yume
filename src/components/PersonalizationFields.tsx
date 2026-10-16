@@ -76,24 +76,7 @@ export function PersonalizationFields({
                       <label className={LABEL_CLASS} htmlFor={id}>
                         {f.label[lang]}
                       </label>
-                      {f.type === "select" ? (
-                        <select
-                          id={id}
-                          required={f.required}
-                          className={FIELD_CLASS}
-                          value={values[slug]?.[f.id] ?? ""}
-                          onChange={(e) => onChange(slug, f.id, e.target.value)}
-                        >
-                          <option value="" disabled>
-                            {lang === "en" ? "Choose one…" : "Elige una opción…"}
-                          </option>
-                          {f.options?.map((o) => (
-                            <option key={o.value} value={o.value}>
-                              {o.label[lang]}
-                            </option>
-                          ))}
-                        </select>
-                      ) : f.type === "textarea" ? (
+                      {f.type === "textarea" ? (
                         <textarea rows={3} {...common} onChange={(e) => onChange(slug, f.id, e.target.value)} />
                       ) : (
                         <input
@@ -103,7 +86,6 @@ export function PersonalizationFields({
                           onChange={(e) => onChange(slug, f.id, e.target.value)}
                         />
                       )}
-                      {f.hint && <p className="mt-1.5 text-xs leading-relaxed text-ink-soft">{f.hint[lang]}</p>}
                       {f.type === "date" && values[slug]?.[f.id] && tooLate(values[slug][f.id]) && (
                         <p role="status" className="mt-1.5 text-xs font-medium text-brand-deep">
                           {lang === "en"

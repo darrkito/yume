@@ -5,7 +5,7 @@ import Link from "next/link";
 import { X, ImageUp, CreditCard, Truck, CheckCircle2, Clock, ShieldCheck, MessageCircle } from "lucide-react";
 import { useCart, type CartItem } from "@/components/CartContext";
 import { useDesignFiles } from "@/components/DesignFileContext";
-import { getProduct, hasVariants, MAX_PIECES, pieceCount, tieredPrice } from "@/content/products";
+import { getProduct, hasVariants, MAX_PIECES, pieceCount, resolvePrice, withPieces } from "@/content/products";
 import { getProductTranslation, productsEn } from "@/content/products.en";
 import { QtyInput } from "@/components/QtyInput";
 import { cartLine } from "@/components/useAddProduct";
@@ -85,10 +85,11 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
       const perPiece = product ? pieceCount(product, item.variantId) : null;
       if (!product?.tiers || perPiece === null) continue;
       const rest = total - item.price * item.qty;
+      const priceAt = (n: number) => resolvePrice(product, withPieces(item.variantId, n));
       for (let n = perPiece * item.qty + 1; n <= MAX_PIECES; n++) {
-        if (rest + tieredPrice(product.tiers, n) >= FREE_SHIPPING_THRESHOLD) {
+        if (rest + priceAt(n) >= FREE_SHIPPING_THRESHOLD) {
           const qty = Math.min(MAX_PIECES, Math.ceil(n / 10) * 10);
-          return { item, product, qty, newTotal: rest + tieredPrice(product.tiers, qty) };
+          return { item, product, qty, newTotal: rest + priceAt(qty) };
         }
       }
     }
@@ -214,7 +215,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
                   min={product.tiers!.baseQty}
                   max={MAX_PIECES}
                   step={product.tiers!.stepQty}
-                  onChange={(n) => replaceLine(item, cartLine(product, String(n), lang))}
+                  onChange={(n) => replaceLine(item, cartLine(product, withPieces(item.variantId, n), lang))}
                   label={`${t.piecesInputLabel}: ${itemName(item, lang)}`}
                   decreaseLabel={t.decreaseQty}
                   increaseLabel={t.increaseQty}
@@ -287,7 +288,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
           {nudge && (
             <button
               type="button"
-              onClick={() => replaceLine(nudge.item, cartLine(nudge.product, String(nudge.qty), lang))}
+              onClick={() => replaceLine(nudge.item, cartLine(nudge.product, withPieces(nudge.item.variantId, nudge.qty), lang))}
               className="btn-soft btn-soft-outline mt-3 text-sm"
             >
               <Truck size={16} aria-hidden="true" />

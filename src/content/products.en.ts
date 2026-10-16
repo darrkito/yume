@@ -1,4 +1,4 @@
-import { getProduct, pieceCount, type Product } from "@/content/products";
+import { getProduct, parseVariant, pieceCount, type Product } from "@/content/products";
 
 export interface ProductTranslation {
   name: string;
@@ -390,7 +390,10 @@ export function cartItemLabelEn(product: Product, variantId?: string): string {
   const t = productsEn[product.slug];
   if (!t) return product.name;
   const pieces = pieceCount(product, variantId);
-  if (pieces !== null) return `${t.name}: ${pieces} pieces`;
+  if (pieces !== null) {
+    const v = parseVariant(variantId);
+    return [`${t.name}: ${pieces} pieces`, v.cut?.label.en, v.finish?.label.en].filter(Boolean).join(" · ");
+  }
   const variant = product.variants?.find((v) => v.id === variantId);
   if (!variant) return t.name;
   return `${t.name}: ${t.variantLabels?.[variant.id] ?? variant.label}`;

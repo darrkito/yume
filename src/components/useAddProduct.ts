@@ -1,7 +1,7 @@
 "use client";
 
 import { useCart, type CartItem } from "@/components/CartContext";
-import { cartItemLabel, getProduct, MAX_PIECES, pieceCount, resolvePrice, type Product } from "@/content/products";
+import { cartItemLabel, getProduct, MAX_PIECES, optionSuffix, pieceCount, resolvePrice, withPieces, type Product } from "@/content/products";
 import { cartItemLabelEn } from "@/content/products.en";
 import type { Lang } from "@/lib/i18n";
 
@@ -32,13 +32,14 @@ export function useAddProduct(lang: Lang) {
 
   return (product: Product, variantId: string | undefined, units = 1) => {
     const pieces = pieceCount(product, variantId);
-    const existing = pieces === null ? undefined : items.find((i) => i.slug === product.slug);
+    // Same cut and finish merge into one growing line; a different one is its own line.
+    const existing = pieces === null ? undefined : items.find((i) => i.slug === product.slug && optionSuffix(i.variantId) === optionSuffix(variantId));
     if (pieces === null || !existing) {
       addItem(cartLine(product, variantId, lang), units);
       return;
     }
     const had = (pieceCount(product, existing.variantId) ?? 0) * existing.qty;
     const total = Math.min(MAX_PIECES, had + pieces * units);
-    replaceLine(existing, cartLine(product, String(total), lang), 1, true);
+    replaceLine(existing, cartLine(product, withPieces(variantId, total), lang), 1, true);
   };
 }

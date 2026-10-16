@@ -1042,7 +1042,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Cómo elegir el tipo de corte al pedir",
         body: [
-          "Al pagar, en el paso de datos de tu pedido, hay un campo llamado Tipo de corte con las dos opciones: Troquelado o Semitroquelado. Es un dato obligatorio para los pedidos de stickers, así que lo eliges tú y queda registrado en tu pedido.",
+          "En la página de cada producto de stickers (Stickers de Vinil Personalizados y Stickers y Etiquetas con tu Logo) eliges el tipo de corte, Troquelado o Semitroquelado, antes de agregar al carrito. Ahí mismo eliges también el acabado: mate, brillante u holográfico. Lo que elijas queda en tu pedido.",
           "Si tienes dudas sobre cuál te conviene para tu caso, escríbenos por WhatsApp antes de pagar y lo revisamos contigo.",
         ],
       },
