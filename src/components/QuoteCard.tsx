@@ -14,11 +14,11 @@ export function QuoteCard({ lang = "es", index = 0, size = "md" }: { lang?: Lang
     <div className={`card-soft flex flex-col ${sm ? "p-5" : "p-6"} ${index % 2 === 0 ? "tilt-a" : "tilt-b"}`}>
       <div className={`relative ${sm ? "h-32" : "h-48"} overflow-hidden rounded-xl bg-brand-tint`}>
         <Image
-          src="/gallery/gallery-tatuajes-sanrio-chococat-muneca.webp"
+          src="/gallery/gallery-tatuajes-estampillas-sin-cara-cuello.webp"
           alt={t.quoteCardImgAlt}
           fill
           sizes={sm ? "(min-width: 640px) 260px, 70vw" : "(min-width: 640px) 360px, 90vw"}
-          className="object-cover object-[50%_62%]"
+          className="object-cover object-[50%_46%]"
         />
       </div>
       <p className={`font-display text-ink text-balance ${sm ? "mt-4 text-base" : "mt-6 text-xl"}`}>

@@ -133,13 +133,15 @@ const COPY = {
   },
 };
 
-const SKIN = ["tatuaje-chococat", "tatuaje-sin-cara-estampilla", "tatuaje-haku-estampilla", "tatuaje-sprigatito", "tatuaje-hello-kitty-oso", "tatuaje-howl-estampilla", "tatuaje-ponyo-estampilla", "tatuajes-tarjeta-instrucciones"];
+const HERO = "tatuaje-sin-cara-estampilla";
+const SKIN = ["tatuaje-chococat", "tatuaje-cumpleanos-detalle", "tatuaje-haku-estampilla", "tatuaje-sprigatito", "tatuaje-hello-kitty-oso", "tatuaje-howl-estampilla", "tatuaje-ponyo-estampilla", "tatuajes-tarjeta-instrucciones"];
 const PHOTOS = ["tatuaje-pareja-antebrazo", "tatuaje-parejas-recortes", "tatuaje-cumpleanos-tarjeta"];
 
 export function TattooPage({ lang }: { lang: Lang }) {
   const c = COPY[lang];
   const all = lang === "en" ? getGalleryItemsEn().filter((i) => i.type === "tattoo") : tattooItems;
   const pick = (slugs: string[]) => slugs.flatMap((s) => all.find((i) => i.slug === s) ?? []);
+  const hero = pick([HERO])[0];
   const skin = pick(SKIN);
   const photos = pick(PHOTOS);
   const url = `${SITE.url}${c.path}`;
@@ -156,7 +158,7 @@ export function TattooPage({ lang }: { lang: Lang }) {
     serviceType: c.serviceName,
     description: c.intro,
     url,
-    image: [...skin, ...photos].map((i) => `${SITE.url}${i.image}`),
+    image: [hero, ...skin, ...photos].map((i) => `${SITE.url}${i.image}`),
     provider: { "@id": ORG_ID },
     areaServed: [
       { "@type": "City", name: "Guadalajara" },
@@ -170,19 +172,28 @@ export function TattooPage({ lang }: { lang: Lang }) {
   };
   return (
     <section className="mx-auto max-w-3xl px-6 py-16 sm:py-24">
-      <h1 className="animate-fade-up font-display text-4xl text-ink sm:text-5xl text-balance">{c.h1}</h1>
-      <p className="animate-fade-up animate-fade-up-2 mt-4 max-w-xl text-sm leading-relaxed text-ink-soft">{c.intro}</p>
-      <a href={waLink(c.wa)} target="_blank" rel="noopener noreferrer" className="btn-soft btn-soft-solid mt-8 gap-2">
-        <WhatsAppIcon size={20} />
-        {c.cta}
-      </a>
+      <div className="grid items-center gap-8 sm:grid-cols-[1fr_15rem]">
+        <div>
+          <h1 className="animate-fade-up font-display text-4xl text-ink sm:text-5xl text-balance">{c.h1}</h1>
+          <p className="animate-fade-up animate-fade-up-2 mt-4 max-w-xl text-sm leading-relaxed text-ink-soft">{c.intro}</p>
+          <a href={waLink(c.wa)} target="_blank" rel="noopener noreferrer" className="btn-soft btn-soft-solid mt-8 gap-2">
+            <WhatsAppIcon size={20} />
+            {c.cta}
+          </a>
+        </div>
+        {hero && (
+          <div className="relative mx-auto aspect-[3/4] w-full max-w-60 overflow-hidden rounded-2xl border border-line bg-paper-raised sm:max-w-none">
+            <Image src={hero.image} alt={hero.alt} fill sizes="(min-width: 640px) 240px, 240px" className="object-cover" priority />
+          </div>
+        )}
+      </div>
 
       <h2 className="mt-14 font-display text-2xl text-ink">{c.galleryTitle}</h2>
       <p className="mt-2 max-w-xl text-sm leading-relaxed text-ink-soft">{c.galleryBody}</p>
       <ul className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
-        {skin.map((i, n) => (
+        {skin.map((i) => (
           <li key={i.slug} className="relative aspect-[3/4] overflow-hidden rounded-xl border border-line bg-paper-raised">
-            <Image src={i.image} alt={i.alt} fill sizes="(min-width: 768px) 170px, 47vw" className="object-cover" priority={n < 2} />
+            <Image src={i.image} alt={i.alt} fill sizes="(min-width: 768px) 170px, 47vw" className="object-cover" />
           </li>
         ))}
       </ul>
