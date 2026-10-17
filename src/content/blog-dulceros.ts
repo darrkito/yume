@@ -224,7 +224,7 @@ export const dulceroPosts: BlogPost[] = [
   {
     slug: "dulceros-para-bautizo-y-primera-comunion",
     title: "Dulceros y recuerdos para bautizo y primera comunión",
-    metaTitle: "Dulceros para bautizo y primera comunión",
+    metaTitle: "Dulceros para bautizo y primera comunión: ideas",
     description:
       "Ideas de dulceros personalizados como recuerdo de bautizo o primera comunión: diseños, qué datos poner, qué meter dentro y cuántos pedir para tus invitados.",
     category: "Guías",

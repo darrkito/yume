@@ -484,12 +484,12 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "stickers-vinil-vs-papel-diferencias",
     title: "Vinil vs. papel: por qué tus stickers personalizados deberían ser de vinil",
-    metaTitle: "Stickers personalizados: vinil vs. papel",
+    metaTitle: "Stickers de vinil vs papel: ¿cuál te conviene?",
     description:
       "La diferencia real entre un sticker personalizado de vinil y uno de papel (resistencia al agua, al sol y a rayones), y dónde diseñar y mandar a hacer los tuyos en línea.",
     category: "Guías",
     publishedAt: "2026-09-09",
-    modifiedAt: "2026-10-09",
+    modifiedAt: "2026-10-18",
     intro:
       "Si nunca has pedido stickers personalizados, es fácil no notar la diferencia entre vinil y papel hasta que uno se moja, se despinta con el sol o se rompe al despegarlo. Aquí te explicamos la diferencia real y por qué en Yume trabajamos exclusivamente con vinil.",
     sections: [
@@ -777,11 +777,12 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "stickers-para-empaques-de-negocio",
     title: "Guía de stickers para empaques de negocio: cómo usarlos y qué pedir",
-    metaTitle: "Stickers para empaques de negocio",
+    metaTitle: "Stickers para empaques: etiquetas para tu negocio",
     description:
       "Cómo usar stickers para empaque en tu negocio: sellar bolsas y cajas, etiquetar productos y qué pedir si necesitas etiquetas personalizadas para tu negocio o stickers con logo en Guadalajara.",
     category: "Guías",
     publishedAt: "2026-09-23",
+    modifiedAt: "2026-10-18",
     intro:
       "El empaque es uno de los puntos de contacto más baratos de mejorar en un negocio: no necesitas cambiar tu caja o tu bolsa, basta con cerrarla o decorarla con un sticker que lleve tu logo. Esta guía cubre los usos más comunes de stickers para empaque y qué pedir según el tipo de empaque que uses.",
     sections: [
@@ -935,11 +936,11 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "donde-imprimir-stickers-personalizados-mexico",
     title: "Dónde imprimir stickers personalizados en México: qué necesitas y cómo pedirlos",
-    metaTitle: "Dónde imprimir stickers personalizados | Precios",
-    description: "Dónde imprimir stickers personalizados en México: precios, qué archivo enviar y cómo pedirlos en línea con envío a todo el país. Imprimir en casa vs. pedirlos en vinil.",
+    metaTitle: "Dónde imprimir stickers personalizados: precio 2026",
+    description: "Dónde imprimir stickers personalizados en México y cuánto cuestan: primeras 100 piezas por $350, qué archivo enviar y envío a todo el país.",
     category: "Guías",
     publishedAt: "2026-09-29",
-    modifiedAt: "2026-10-17",
+    modifiedAt: "2026-10-18",
     intro:
       "Si buscas dónde imprimir stickers personalizados en México, la mayoría de las opciones caen en dos grupos: imprimirlos tú mismo en casa (con vinil y una impresora especial) o mandarlos a hacer con una imprenta que ya tiene el equipo de corte troquelado. Esta guía cubre la segunda opción: qué necesitas tener listo y cómo funciona el proceso para mandar a imprimir tus stickers en línea, sin tener que comprar equipo ni ir a una imprenta física.",
     sections: [
@@ -983,11 +984,12 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "cuanto-tarda-un-pedido-de-stickers-personalizados",
     title: "¿Cuánto tarda un pedido de stickers personalizados en llegar? Tiempos reales",
-    metaTitle: "Cuánto tarda un pedido de stickers personalizados",
+    metaTitle: "¿Cuánto tarda un pedido de stickers? Tiempos reales",
     description:
       "Tiempos reales de un pedido de stickers personalizados en Yume: prueba digital, producción, envío a todo México o recolección en Guadalajara, y cómo pedir con anticipación para una fecha.",
     category: "Guías",
     publishedAt: "2026-10-06",
+    modifiedAt: "2026-10-18",
     intro:
       "Si necesitas tus stickers para una fecha (un lanzamiento, una feria, una fiesta), lo primero es saber cuántos días tarda cada etapa. Estos son los tiempos reales de un pedido en Yume, desde que pagas hasta que lo tienes en tus manos.",
     sections: [

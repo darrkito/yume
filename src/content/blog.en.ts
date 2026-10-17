@@ -879,12 +879,12 @@ export const blogPostsEn: BlogPost[] = [
   {
     slug: BLOG_SLUG_EN["donde-imprimir-stickers-personalizados-mexico"],
     title: "Where to Print Custom Stickers in Mexico: What You Need and How to Order",
-    metaTitle: "Where to Print Custom Stickers in Mexico",
+    metaTitle: "Where to Print Custom Stickers in Mexico: 2026 Prices",
     description:
       "What you need ready to get your custom stickers printed in Mexico (file, size, quantity) and how ordering online works, without needing to visit a print shop in person.",
     category: "Guides",
     publishedAt: "2026-09-29",
-    modifiedAt: "2026-10-06",
+    modifiedAt: "2026-10-18",
     intro:
       "If you're looking for where to print custom stickers in Mexico, most options fall into two groups: printing them yourself at home (with vinyl and a special printer) or ordering them from a shop that already has die-cutting equipment. This guide covers the second option: what you need ready and how ordering your stickers online works, without buying equipment or visiting a shop in person.",
     sections: [
