@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle } from "lucide-react";
+import { PickupBadge } from "@/components/PickupBadge";
 import { waLink } from "@/content/site";
 import { UI, type Lang } from "@/lib/i18n";
 
@@ -13,6 +14,7 @@ export function QuoteCard({ lang = "es", index = 0, size = "md" }: { lang?: Lang
   return (
     <div className={`card-soft flex flex-col ${sm ? "p-5" : "p-6"} ${index % 2 === 0 ? "tilt-a" : "tilt-b"}`}>
       <div className={`relative ${sm ? "h-32" : "h-48"} overflow-hidden rounded-xl bg-brand-tint`}>
+        <PickupBadge lang={lang} />
         <Image
           src="/gallery/gallery-tatuajes-estampillas-sin-cara-cuello.webp"
           alt={t.quoteCardImgAlt}
