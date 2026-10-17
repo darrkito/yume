@@ -13,14 +13,15 @@ export function QuoteCard({ lang = "es", index = 0, size = "md" }: { lang?: Lang
   const sm = size === "sm";
   return (
     <div className={`card-soft flex flex-col ${sm ? "p-5" : "p-6"} ${index % 2 === 0 ? "tilt-a" : "tilt-b"}`}>
-      <div className={`relative ${sm ? "h-32" : "h-48"} overflow-hidden rounded-xl bg-brand-tint`}>
+      <div className={`relative flex ${sm ? "h-32" : "h-48"} justify-center overflow-hidden`}>
         <PickupBadge lang={lang} />
         <Image
           src="/gallery/gallery-tatuajes-estampillas-sin-cara-cuello.webp"
           alt={t.quoteCardImgAlt}
-          fill
-          sizes={sm ? "(min-width: 640px) 260px, 70vw" : "(min-width: 640px) 360px, 90vw"}
-          className="object-cover object-[50%_46%]"
+          width={1067}
+          height={1600}
+          sizes="(min-width: 640px) 400px, calc(100vw - 48px)"
+          className="h-full w-auto max-w-full rounded-lg object-contain"
         />
       </div>
       <p className={`font-display text-ink text-balance ${sm ? "mt-4 text-base" : "mt-6 text-xl"}`}>
