@@ -41,6 +41,8 @@ export const BLOG_SLUG_EN: Record<string, string> = {
   "stickers-para-marca-pequena-vs-grande": "stickers-for-small-vs-large-brands",
   "stickers-para-bodas-eventos-y-fiestas": "stickers-for-weddings-events-and-parties",
   "tatuajes-temporales-para-boda-eventos-y-fiestas": "temporary-tattoos-for-weddings-events-and-parties",
+  "etiquetas-escolares-personalizadas-guadalajara": "custom-school-labels-guadalajara",
+  "etiquetas-con-nombre-para-botellas-loncheras-y-mochilas": "name-labels-for-bottles-lunch-boxes-backpacks",
   "cuanto-duran-los-tatuajes-temporales-y-como-quitarlos": "how-long-do-temporary-tattoos-last-and-how-to-remove-them",
   "donde-imprimir-stickers-personalizados-mexico": "where-to-print-custom-stickers-mexico",
   "dulceros-personalizados-guadalajara": "personalized-party-favor-boxes-guadalajara",

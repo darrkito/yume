@@ -523,7 +523,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["yume-vs-imprentas-online-stickers", "stickers-personalizados-para-negocios-guadalajara"],
+    relatedBlogSlugs: ["yume-vs-imprentas-online-stickers", "stickers-personalizados-para-negocios-guadalajara", "etiquetas-escolares-personalizadas-guadalajara"],
   },
   {
     slug: "menu-de-boda-personalizado",
@@ -1128,6 +1128,95 @@ export const blogPosts: BlogPost[] = [
     sources: [
       { label: "Ficha del papel de transferencia MECOLOUR en Amazon (duración: al menos 48 horas sin frotar)", url: "https://www.amazon.com/dp/B09C25DL8G" },
     ],
+  },
+  {
+    slug: "etiquetas-escolares-personalizadas-guadalajara",
+    title: "Etiquetas escolares personalizadas en Guadalajara: guía para regreso a clases",
+    metaTitle: "Etiquetas escolares personalizadas: guía regreso a clases",
+    description:
+      "Qué son las etiquetas escolares personalizadas, qué se les pone, para qué útiles sirven y cómo pedirlas en Guadalajara con tiempo antes del regreso a clases. Cotiza por WhatsApp.",
+    category: "Guías",
+    publishedAt: "2026-10-17",
+    intro:
+      "Las etiquetas escolares son pegatinas con el nombre del niño (y a veces su grupo o un dibujo) para marcar cuadernos, loncheras, botellas y mochilas, y que nada se pierda ni se confunda en el salón. En Yume las hacemos en vinil resistente al agua, con el diseño que tú elijas. Esta guía explica qué llevan, cómo pedirlas y cuándo conviene hacerlo.",
+    sections: [
+      {
+        heading: "Qué se les pone a las etiquetas escolares",
+        body: [
+          "Lo básico es el nombre del niño o la niña, con letra grande y fácil de leer. Muchas familias agregan el grado o el grupo, y un dibujo o ícono (una estrella, un animal, un color) para que los más pequeños reconozcan sus cosas aunque todavía no lean.",
+          "Si lo prefieres, también puedes poner un teléfono de contacto en las etiquetas de la mochila y la lonchera. Cuéntanos qué quieres incluir y te mandamos una prueba digital antes de imprimir.",
+        ],
+      },
+      {
+        heading: "En qué útiles se pegan",
+        body: [
+          "Las más comunes son para cuadernos y libros, estuches, loncheras, botellas de agua, termos y mochilas. Como el vinil resiste el agua, el sol y los rayones, aguantan bien en objetos que se mojan, se llevan de un lado a otro y se limpian seguido.",
+          "Pega la etiqueta sobre una superficie limpia y seca, y mejor en una zona lisa que en una orilla o una costura.",
+        ],
+      },
+      {
+        heading: "Etiquetas escolares personalizadas: cómo se piden",
+        body: [
+          "Se cotizan por WhatsApp: nos dices el nombre (o nombres, si son varios hermanos), el diseño que te gusta y cuántas piezas necesitas. Trabajamos con vinil personalizado desde 40 piezas, y las primeras 100 piezas cuestan $350.",
+          "Te mandamos una prueba digital, normalmente en un máximo de 24 horas después del pago, con hasta 2 rondas de ajustes. No imprimimos nada sin tu aprobación.",
+        ],
+      },
+      {
+        heading: "Cuándo pedirlas y cómo recibirlas en Guadalajara",
+        body: [
+          "Conviene pedirlas con unas semanas de anticipación al inicio del ciclo escolar: así hay margen para ajustar el diseño y para la producción y el envío. Producimos en Guadalajara; enviamos a todo México o puedes recoger en una de las sucursales Casa Blanca de la zona metropolitana.",
+          "Si ya tienes la lista de útiles, escríbenos con ella y te ayudamos a calcular cuántas etiquetas necesitas.",
+        ],
+      },
+    ],
+    relatedProductSlugs: [],
+    relatedBlogSlugs: ["etiquetas-con-nombre-para-botellas-loncheras-y-mochilas", "stickers-vinil-vs-papel-diferencias", "cuanto-tarda-un-pedido-de-stickers-personalizados"],
+    serviceLink: { href: "/productos/stickers-vinil-impermeable", label: "Ver stickers de vinil personalizados" },
+    quoteMessage: "Hola, quiero cotizar etiquetas escolares personalizadas.\n\nNombre(s):\nCantidad aproximada:\n¿Ya tengo diseño? (sí / no):",
+  },
+  {
+    slug: "etiquetas-con-nombre-para-botellas-loncheras-y-mochilas",
+    title: "Etiquetas con nombre para botellas, loncheras y mochilas: dónde pegarlas y cómo cuidarlas",
+    metaTitle: "Etiquetas con nombre para botellas, loncheras y mochilas",
+    description:
+      "Dónde pegar las etiquetas con nombre en botellas, loncheras y mochilas, cómo aplicarlas para que duren y qué tamaño y diseño elegir. Hechas en vinil resistente al agua en Guadalajara.",
+    category: "Guías",
+    publishedAt: "2026-10-17",
+    intro:
+      "Una botella, una lonchera o una mochila sin nombre se pierde más fácil, y en un salón donde todos tienen la misma, se confunde. Una etiqueta con nombre lo resuelve en segundos. Aquí va cómo pegarla bien, dónde conviene y cómo cuidarla para que dure todo el ciclo.",
+    sections: [
+      {
+        heading: "Dónde pegar la etiqueta en cada objeto",
+        body: [
+          "En la botella o el termo, en una parte lisa del cuerpo, lejos de la tapa y de la base. En la lonchera, en la tapa o en un costado liso. En la mochila, en una zona plana por fuera, o por dentro si prefieres que no se vea.",
+          "Evita costuras, orillas y partes con relieve: ahí la etiqueta se despega primero.",
+        ],
+      },
+      {
+        heading: "Cómo aplicarla para que dure",
+        body: [
+          "Limpia y seca bien la superficie antes de pegarla, despega el respaldo sin tocar el adhesivo y presiona desde el centro hacia las orillas para sacar el aire. Mejor si pasa un rato antes de mojarla por primera vez.",
+          "El vinil que usamos es resistente al agua, al sol y a los rayones. Aun así, trátala con cuidado: no raspes la etiqueta ni la dejes en remojo largo.",
+        ],
+      },
+      {
+        heading: "Qué diseño elegir",
+        body: [
+          "Letra grande y colores con buen contraste, para que se lea de lejos. Para los más chicos, un dibujo ayuda a reconocer sus cosas; para los grandes, funciona mejor algo sencillo con nombre y apellido.",
+          "Si son varios hermanos, pide un color distinto por cada uno: así saben cuál es la suya sin leer.",
+        ],
+      },
+      {
+        heading: "Cotiza tus etiquetas con nombre",
+        body: [
+          "Mándanos por WhatsApp el nombre, el diseño y la cantidad. Las etiquetas de vinil personalizadas empiezan en 40 piezas y las primeras 100 piezas cuestan $350. Te mandamos prueba digital antes de imprimir y enviamos a todo México.",
+        ],
+      },
+    ],
+    relatedProductSlugs: [],
+    relatedBlogSlugs: ["etiquetas-escolares-personalizadas-guadalajara", "stickers-personalizados-para-mascotas"],
+    serviceLink: { href: "/productos/stickers-vinil-impermeable", label: "Ver stickers de vinil personalizados" },
+    quoteMessage: "Hola, quiero cotizar etiquetas con nombre para botellas, loncheras y mochilas.\n\nNombre(s):\nCantidad aproximada:\n¿Ya tengo diseño? (sí / no):",
   },
   // Dulceros cluster lives in its own file (blog-dulceros.ts).
   ...dulceroPosts,

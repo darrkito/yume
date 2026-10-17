@@ -1075,6 +1075,95 @@ export const blogPostsEn: BlogPost[] = [
   },
   // Dulceros cluster lives in its own file (blog-dulceros.en.ts).
   ...dulceroPostsEn,
+  {
+    slug: BLOG_SLUG_EN["etiquetas-escolares-personalizadas-guadalajara"],
+    title: "Custom school labels in Guadalajara: back-to-school guide",
+    metaTitle: "Custom school labels: back-to-school guide",
+    description:
+      "What custom school labels are, what goes on them, which school supplies they suit, and how to order them in Guadalajara ahead of back-to-school. Quote on WhatsApp.",
+    category: "Guides",
+    publishedAt: "2026-10-17",
+    intro:
+      "School labels are stickers with a child's name (and sometimes their class or a drawing) to mark notebooks, lunch boxes, bottles, and backpacks so nothing gets lost or mixed up in the classroom. At Yume we make them in water-resistant vinyl, with the design you choose. This guide covers what goes on them, how to order, and when.",
+    sections: [
+      {
+        heading: "What goes on a school label",
+        body: [
+          "The basics are the child's name, in large, easy-to-read letters. Many families add the grade or class, plus a drawing or icon (a star, an animal, a color) so younger kids recognize their things before they can read.",
+          "You can also add a phone number to the backpack and lunch box labels. Tell us what you want and we send a digital proof before printing.",
+        ],
+      },
+      {
+        heading: "Which school supplies they go on",
+        body: [
+          "The most common are notebooks and books, pencil cases, lunch boxes, water bottles, thermoses, and backpacks. Because the vinyl resists water, sun, and scratches, they hold up on items that get wet, travel a lot, and are cleaned often.",
+          "Stick the label on a clean, dry, flat surface rather than on an edge or a seam.",
+        ],
+      },
+      {
+        heading: "How to order custom school labels",
+        body: [
+          "They are quoted on WhatsApp: tell us the name (or names, for siblings), the design you like, and how many pieces you need. Custom vinyl starts at 40 pieces, and the first 100 pieces cost $350.",
+          "We send a digital proof, normally within 24 hours of payment, with up to 2 rounds of adjustments. We print nothing without your approval.",
+        ],
+      },
+      {
+        heading: "When to order and how to receive them",
+        body: [
+          "Order a few weeks before the school year starts so there is room to adjust the design and for production and shipping. We produce in Guadalajara; we ship across Mexico, or you can pick up at a Casa Blanca branch in the metro area.",
+          "If you already have the supply list, send it and we will help you work out how many labels you need.",
+        ],
+      },
+    ],
+    relatedProductSlugs: [],
+    relatedBlogSlugs: [BLOG_SLUG_EN["etiquetas-con-nombre-para-botellas-loncheras-y-mochilas"], BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"]],
+    serviceLink: { href: "/en/products/waterproof-vinyl-stickers", label: "See custom vinyl stickers" },
+    quoteMessage: "Hi, I'd like a quote for custom school labels.\n\nName(s):\nApproximate quantity:\nDo I already have a design? (yes / no):",
+  },
+  {
+    slug: BLOG_SLUG_EN["etiquetas-con-nombre-para-botellas-loncheras-y-mochilas"],
+    title: "Name labels for bottles, lunch boxes, and backpacks: where to stick them and how to care for them",
+    metaTitle: "Name labels for bottles, lunch boxes, and backpacks",
+    description:
+      "Where to stick name labels on bottles, lunch boxes, and backpacks, how to apply them so they last, and which size and design to pick. Made in water-resistant vinyl in Guadalajara.",
+    category: "Guides",
+    publishedAt: "2026-10-17",
+    intro:
+      "A bottle, lunch box, or backpack with no name gets lost more easily, and in a classroom where everyone has the same one, it gets mixed up. A name label fixes that in seconds. Here is how to stick it on properly, where it works best, and how to care for it so it lasts all year.",
+    sections: [
+      {
+        heading: "Where to stick the label on each item",
+        body: [
+          "On a bottle or thermos, on a smooth part of the body, away from the lid and the base. On a lunch box, on the lid or a smooth side. On a backpack, on a flat area outside, or inside if you would rather it not show.",
+          "Avoid seams, edges, and raised areas: that is where a label peels first.",
+        ],
+      },
+      {
+        heading: "How to apply it so it lasts",
+        body: [
+          "Clean and dry the surface well, peel the backing without touching the adhesive, and press from the center out to push the air out. It helps to wait a while before the first time it gets wet.",
+          "The vinyl we use resists water, sun, and scratches. Even so, treat it with care: do not scrape the label or leave it soaking for long.",
+        ],
+      },
+      {
+        heading: "Which design to choose",
+        body: [
+          "Large letters and good color contrast so it reads from a distance. For little ones, a drawing helps them recognize their things; for older kids, something simple with first and last name works better.",
+          "For siblings, pick a different color for each so they know which is theirs without reading.",
+        ],
+      },
+      {
+        heading: "Quote your name labels",
+        body: [
+          "Send us the name, the design, and the quantity on WhatsApp. Custom vinyl labels start at 40 pieces and the first 100 pieces cost $350. We send a digital proof before printing and ship across Mexico.",
+        ],
+      },
+    ],
+    relatedProductSlugs: [],
+    relatedBlogSlugs: [BLOG_SLUG_EN["etiquetas-escolares-personalizadas-guadalajara"]],
+    serviceLink: { href: "/en/products/waterproof-vinyl-stickers", label: "See custom vinyl stickers" },
+    quoteMessage: "Hi, I'd like a quote for name labels for bottles, lunch boxes, and backpacks.\n\nName(s):\nApproximate quantity:\nDo I already have a design? (yes / no):",
+  },
 ];
 
 export function getBlogPostEn(slug: string) {
