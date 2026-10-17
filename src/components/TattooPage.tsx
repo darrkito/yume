@@ -1,10 +1,10 @@
-import Image from "next/image";
 import Link from "next/link";
 import { tattooItems } from "@/content/gallery";
 import { getGalleryItemsEn } from "@/content/gallery.en";
 import { SITE, waLink } from "@/content/site";
 import { breadcrumbSchema, ORG_ID } from "@/lib/seo";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
+import { ZoomPhotos } from "@/components/ZoomPhotos";
 import { ShopCta } from "@/components/ShopCta";
 import type { Lang } from "@/lib/i18n";
 
@@ -182,31 +182,23 @@ export function TattooPage({ lang }: { lang: Lang }) {
           </a>
         </div>
         {hero && (
-          <div className="relative mx-auto aspect-[3/4] w-full max-w-60 overflow-hidden rounded-2xl border border-line bg-paper-raised sm:max-w-none">
-            <Image src={hero.image} alt={hero.alt} fill sizes="(min-width: 640px) 240px, 240px" className="object-cover" priority />
+          <div className="mx-auto w-full max-w-60 sm:max-w-none">
+            <ZoomPhotos photos={[hero]} lang={lang} listClassName="" tileClassName="aspect-[3/4] rounded-2xl border border-line bg-paper-raised" sizes="240px" priority />
           </div>
         )}
       </div>
 
       <h2 className="mt-14 font-display text-2xl text-ink">{c.galleryTitle}</h2>
       <p className="mt-2 max-w-xl text-sm leading-relaxed text-ink-soft">{c.galleryBody}</p>
-      <ul className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
-        {skin.map((i) => (
-          <li key={i.slug} className="relative aspect-[3/4] overflow-hidden rounded-xl border border-line bg-paper-raised">
-            <Image src={i.image} alt={i.alt} fill sizes="(min-width: 768px) 170px, 47vw" className="object-cover" />
-          </li>
-        ))}
-      </ul>
+      <div className="mt-6">
+        <ZoomPhotos photos={skin} lang={lang} listClassName="grid grid-cols-2 gap-3 sm:grid-cols-4" tileClassName="aspect-[3/4] rounded-xl border border-line bg-paper-raised" sizes="(min-width: 768px) 170px, 47vw" />
+      </div>
 
       <h2 className="mt-14 font-display text-2xl text-ink">{c.photosTitle}</h2>
       <p className="mt-2 max-w-xl text-sm leading-relaxed text-ink-soft">{c.photosBody}</p>
-      <ul className="mt-6 grid gap-3 sm:grid-cols-3">
-        {photos.map((i) => (
-          <li key={i.slug} className="relative aspect-[3/2] overflow-hidden rounded-xl border border-line bg-paper-raised">
-            <Image src={i.image} alt={i.alt} fill sizes="(min-width: 768px) 230px, 94vw" className="object-cover" />
-          </li>
-        ))}
-      </ul>
+      <div className="mt-6">
+        <ZoomPhotos photos={photos} lang={lang} listClassName="grid gap-3 sm:grid-cols-3" tileClassName="aspect-[3/2] rounded-xl border border-line bg-paper-raised" sizes="(min-width: 768px) 230px, 94vw" />
+      </div>
       <Link href={lang === "en" ? "/en/gallery" : "/galeria"} className="mt-4 inline-flex min-h-11 items-center text-sm font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
         {c.galleryAll} →
       </Link>

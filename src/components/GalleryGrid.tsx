@@ -142,7 +142,7 @@ export function GalleryGrid({ items, categories, allLabel, typeLabels, lang = "e
               setLightboxIndex((i) => (i === null ? i : (i - 1 + filtered.length) % filtered.length));
             }}
             aria-label="Previous"
-            className="absolute left-2 flex size-11 items-center justify-center text-white/80 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:left-6"
+            className="absolute left-2 z-10 flex size-11 items-center justify-center text-white/80 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:left-6"
           >
             <ChevronLeft size={32} aria-hidden="true" />
           </button>
