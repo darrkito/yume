@@ -17,7 +17,7 @@ export function HeroPhotos({ lang }: { lang: Lang }) {
       {photos.map((p, i) => (
         <li key={p.slug}>
           <Link
-            href={productHrefFor(p.category, lang)}
+            href={productHrefFor(p.category, lang, p.type)}
             aria-label={p.title}
             className={`card-soft relative block h-36 w-24 overflow-hidden p-0 sm:h-40 sm:w-32 ${i % 2 === 0 ? "tilt-a" : "tilt-b"}`}
           >

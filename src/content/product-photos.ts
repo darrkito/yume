@@ -13,8 +13,16 @@ export interface ProductPhoto {
 // Only sticker products have them; the recetario and NFC pieces still need
 // real photos from the owner.
 const GALLERY_SLUGS: Record<string, string[]> = {
-  "stickers-logo-personalizado": ["logo-vanelia", "logo-yume"],
-  "stickers-vinil-impermeable": ["mascotas-schnauzer", "hello-kitty", "pokemon-dragones"],
+  "stickers-logo-personalizado": ["logo-vanelia", "logo-yume", "logo-bolsas-cafe-sello", "logo-bolsas-cafe-mano"],
+  "stickers-vinil-impermeable": [
+    "mascotas-schnauzer",
+    "hello-kitty",
+    "pokemon-dragones",
+    "en-uso-botella-schnauzer",
+    "en-uso-laptop-vertical",
+    "religiosos-coleccion-horizontal",
+    "religiosos-bolsas-sello",
+  ],
 };
 
 // Product renders that aren't part of the sticker gallery.

@@ -20,7 +20,7 @@ import { AddToCartButton } from "@/components/AddToCartButton";
 import { ProductCard } from "@/components/ProductCard";
 import { FaqQuestion } from "@/components/FaqAccordion";
 import { InfiniteGalleryStrip } from "@/components/InfiniteGalleryStrip";
-import { galleryItems } from "@/content/gallery";
+import { stickerItems } from "@/content/gallery";
 
 export const metadata: Metadata = {
   ...pageMetadata({ title: SITE.homeTitle, description: SITE.description, path: "/" }),
@@ -218,7 +218,7 @@ export default function Home() {
       {/* Gallery teaser */}
       <section className="mx-auto max-w-6xl px-6">
         <InfiniteGalleryStrip
-          items={galleryItems}
+          items={stickerItems}
           heading="Galería de trabajos"
           body="Hello Kitty, Pokémon, Zelda, mascotas, logos y más: mira ejemplos reales de stickers que hemos producido."
           viewAllLabel="Ver galería completa"

@@ -41,7 +41,7 @@ export function InfiniteGalleryStrip({ items, heading, body, viewAllLabel, viewA
               {group.map((item, i) => (
                 <Link
                   key={`${groupIndex}-${item.slug}-${i}`}
-                  href={productLinksLang ? productHrefFor(item.category, productLinksLang) : viewAllHref}
+                  href={productLinksLang ? productHrefFor(item.category, productLinksLang, item.type) : viewAllHref}
                   tabIndex={groupIndex === 1 ? -1 : undefined}
                   className="group relative mx-2 block h-40 w-32 shrink-0 overflow-hidden rounded-xl border border-line bg-paper-raised sm:h-48 sm:w-40"
                 >

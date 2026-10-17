@@ -221,7 +221,7 @@ export default function HomeEn() {
       {/* Gallery teaser */}
       <section className="mx-auto max-w-6xl px-6">
         <InfiniteGalleryStrip
-          items={getGalleryItemsEn()}
+          items={getGalleryItemsEn().filter((i) => i.type === "sticker")}
           heading="Work we've done"
           body="Hello Kitty, Pokémon, Zelda, pets, logos and more: see real examples of stickers we've produced."
           viewAllLabel="See the full gallery"

@@ -1,5 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
-import { MessageCircle, Sparkles } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 import { waLink } from "@/content/site";
 import { UI, type Lang } from "@/lib/i18n";
 
@@ -11,8 +12,14 @@ export function QuoteCard({ lang = "es", index = 0, size = "md" }: { lang?: Lang
   const sm = size === "sm";
   return (
     <div className={`card-soft flex flex-col ${sm ? "p-5" : "p-6"} ${index % 2 === 0 ? "tilt-a" : "tilt-b"}`}>
-      <div className={`flex ${sm ? "h-32" : "h-48"} items-center justify-center rounded-xl bg-brand-tint`}>
-        <Sparkles size={sm ? 40 : 56} className="text-brand" aria-hidden="true" />
+      <div className={`relative ${sm ? "h-32" : "h-48"} overflow-hidden rounded-xl bg-brand-tint`}>
+        <Image
+          src="/gallery/gallery-tatuajes-sanrio-chococat-muneca.webp"
+          alt={t.quoteCardImgAlt}
+          fill
+          sizes={sm ? "(min-width: 640px) 260px, 70vw" : "(min-width: 640px) 360px, 90vw"}
+          className="object-cover object-[50%_62%]"
+        />
       </div>
       <p className={`font-display text-ink text-balance ${sm ? "mt-4 text-base" : "mt-6 text-xl"}`}>
         <Link href={lang === "en" ? "/en/products/custom-temporary-tattoos" : "/productos/tatuajes-temporales-personalizados"} className="transition-colors hover:text-brand">

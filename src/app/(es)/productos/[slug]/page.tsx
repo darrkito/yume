@@ -15,7 +15,7 @@ import { RelatedGuides } from "@/components/RelatedGuides";
 import { LocalPickup } from "@/components/LocalPickup";
 import { FaqQuestion } from "@/components/FaqAccordion";
 import { ProductPriceTable } from "@/components/ProductPriceTable";
-import { galleryItems } from "@/content/gallery";
+import { stickerItems } from "@/content/gallery";
 import { hreflangFor } from "@/lib/i18n";
 
 // The price box (ProductPurchase) already states the first-100 / wholesale rule;
@@ -123,7 +123,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
 
       {product.showGallery && (
         <InfiniteGalleryStrip
-          items={galleryItems}
+          items={stickerItems}
           heading="Trabajos realizados"
           body="Ejemplos reales de stickers que hemos producido: personajes, mascotas y logos."
           viewAllLabel="Ver galería completa"

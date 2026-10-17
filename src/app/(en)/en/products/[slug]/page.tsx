@@ -127,7 +127,7 @@ export default async function ProductPageEn({ params }: { params: Promise<{ slug
 
       {product.showGallery && (
         <InfiniteGalleryStrip
-          items={getGalleryItemsEn()}
+          items={getGalleryItemsEn().filter((i) => i.type === "sticker")}
           heading="Work we've done"
           body="Real examples of stickers we've produced: characters, pets, and logos."
           viewAllLabel="See the full gallery"
