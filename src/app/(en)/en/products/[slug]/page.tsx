@@ -6,7 +6,7 @@ import Link from "next/link";
 import { getProduct, products } from "@/content/products";
 import { getProductTranslation } from "@/content/products.en";
 import { SITE } from "@/content/site";
-import { breadcrumbSchema, notFoundMetadata, ogLocale, productPageSchema } from "@/lib/seo";
+import { breadcrumbSchema, fitDescription, notFoundMetadata, ogLocale, productPageSchema } from "@/lib/seo";
 import { ProductMedia } from "@/components/ProductMedia";
 import { productPhotos } from "@/content/product-photos";
 import { ProductPurchase } from "@/components/ProductPurchase";
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const t = esSlug ? getProductTranslation(esSlug) : undefined;
   if (!product || !t) return notFoundMetadata("en");
   const ogImage = product.image ?? "/og-image.jpg";
-  const description = t.metaDescription ?? t.description;
+  const description = fitDescription(t.metaDescription ?? t.description);
   return {
     title: t.name,
     description,

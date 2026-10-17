@@ -71,7 +71,7 @@ export function ProductMedia({
                   active === i ? "border-brand" : "border-line hover:border-brand"
                 }`}
               >
-                <Image src={ph.src} alt="" fill sizes="80px" className="object-cover" />
+                <Image src={ph.src} alt={ph.alt} fill sizes="80px" className="object-cover" />
               </button>
             </li>
           ))}

@@ -20,6 +20,16 @@ const OG_IMAGE = { url: "/og-image.jpg", width: 1200, height: 630, alt: SITE.nam
 // [slug] page already sets its own openGraph and is unaffected. One
 // helper, used by every static page, closes the gap for all of them at
 // once instead of patching each file's Open Graph block by hand.
+/** Search results show ~160 characters; cut longer descriptions at a sentence
+ * end, else a word boundary, so crawlers never see an over-long meta tag. */
+export function fitDescription(text: string, max = 160): string {
+  if (text.length <= max) return text;
+  const head = text.slice(0, max - 1);
+  const sentence = Math.max(head.lastIndexOf(". "), head.lastIndexOf("."));
+  if (sentence > 100) return head.slice(0, sentence + 1);
+  return `${head.slice(0, head.lastIndexOf(" ")).replace(/[,;:\s]+$/, "")}…`;
+}
+
 export function pageMetadata({
   title,
   description,
@@ -31,6 +41,7 @@ export function pageMetadata({
   path: string;
   lang?: Lang;
 }): Metadata {
+  description = fitDescription(description);
   const esPath = lang === "en" ? enPathToEsPath(path) : path;
   return {
     title,
@@ -273,13 +284,14 @@ export function blogPostingSchema(post: BlogPost, { lang, path }: { lang: Lang; 
 export function blogPostMetadata(post: BlogPost, { lang, path, languages }: { lang: Lang; path: string; languages?: ReturnType<typeof hreflangFor> }): Metadata {
   const title = post.metaTitle ?? post.title;
   const image = blogPostImage(post);
+  const description = fitDescription(post.description);
   return {
     title,
-    description: post.description,
+    description,
     alternates: { canonical: path, languages },
     openGraph: {
       title,
-      description: post.description,
+      description,
       type: "article",
       url: path,
       siteName: SITE.name,
