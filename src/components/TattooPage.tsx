@@ -66,6 +66,7 @@ const COPY = {
     wa: "Hola, quiero cotizar tatuajes temporales personalizados.\n\nTamaño:\nCantidad:\n¿Ya tengo diseño? (sí / no):",
     moreTitle: "Guías relacionadas",
     more: [
+      ["¿Cuánto duran los tatuajes temporales y cómo se quitan?", "/blog/cuanto-duran-los-tatuajes-temporales-y-como-quitarlos"],
       ["Tatuajes temporales para eventos y marcas", "/blog/tatuajes-temporales-personalizados-para-eventos"],
       ["Tatuajes temporales para bodas, eventos y fiestas", "/blog/tatuajes-temporales-para-boda-eventos-y-fiestas"],
     ],

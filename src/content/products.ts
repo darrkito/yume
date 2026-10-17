@@ -169,10 +169,10 @@ export const products: Product[] = [
   {
     slug: "stickers-vinil-impermeable",
     name: "Stickers de Vinil Personalizados",
-    metaTitle: "Stickers de Vinil Personalizados en Guadalajara",
+    metaTitle: "Stickers Personalizados de Vinil | 100 por $350",
     price: VINYL_BASE_PRICE,
     currency: "MXN",
-    updatedAt: "2026-10-06",
+    updatedAt: "2026-10-17",
     category: "Stickers de Vinil Personalizados",
     variants: vinylStickerVariants,
     tiers: VINYL_TIERS,
@@ -190,8 +190,7 @@ export const products: Product[] = [
     ],
     description:
       "Stickers troquelados en vinil premium, resistentes al agua, al sol y a rayones: para cualquier diseño, personaje o foto que quieras convertir en sticker, no solo logos. Se venden por cantidad de piezas, no por planilla: las primeras 100 piezas cuestan $350 ($3.50 c/u) y, entre más pidas, mejor: pasando las 100 entras a precio mayoreo y cada pieza extra te sale en $3.15, 10% menos. Envíanos tu imagen o diseño y te mandamos una prueba digital antes de imprimir.",
-    metaDescription:
-      "Stickers de vinil personalizados, resistentes al agua, al sol y a rayones. Cualquier diseño, personaje o foto. Primeras 100 piezas por $350 y precio mayoreo en cada pieza extra.",
+    metaDescription: "Stickers personalizados de vinil impermeable con tu diseño, personaje o foto. Primeras 100 piezas por $350, mínimo 40. Envíos a todo México.",
     details: [
       "Vinil premium con corte a la forma del diseño: troquelado o semitroquelado, tú eliges al pedir",
       "Se venden por cantidad de piezas, mínimo 40",
@@ -245,10 +244,10 @@ export const products: Product[] = [
   {
     slug: "stickers-logo-personalizado",
     name: "Stickers y Etiquetas con tu Logo",
-    metaTitle: "Stickers y Etiquetas con tu Logo en Guadalajara",
+    metaTitle: "Etiquetas Personalizadas con Logo | 100 por $300",
     price: STICKER_BASE_PRICE,
     currency: "MXN",
-    updatedAt: "2026-10-06",
+    updatedAt: "2026-10-17",
     category: "Stickers y etiquetas personalizadas",
     variants: stickerVariants,
     tiers: STICKER_TIERS,
@@ -266,8 +265,7 @@ export const products: Product[] = [
     ],
     description:
       "Stickers y etiquetas personalizadas con tu logo o diseño, resistentes al agua: etiquetas para productos, etiquetas para empaques, bolsas y cajas de tu negocio. Se venden por cantidad de piezas, no por hoja: las primeras 100 piezas cuestan $300 ($3.00 c/u) y, entre más pidas, mejor: pasando las 100 entras a precio mayoreo y cada pieza extra te sale en $2.70, 10% menos. Envíanos tu imagen (o el diseño que quieras convertir en etiqueta) y te mandamos una prueba digital antes de imprimir.",
-    metaDescription:
-      "Stickers y etiquetas con tu logo para productos y empaques, resistentes al agua. Primeras 100 piezas por $300 y precio mayoreo en cada pieza extra.",
+    metaDescription: "Etiquetas y stickers con tu logo para productos y empaques, resistentes al agua. Primeras 100 piezas por $300, mínimo 50. Envíos a todo México.",
     details: [
       "Se venden por cantidad de piezas, mínimo 50",
       "Primeras 100 piezas: $300 ($3.00 c/u)",
@@ -324,10 +322,10 @@ export const products: Product[] = [
   {
     slug: "dulceros-personalizados",
     name: "Dulceros Personalizados tipo Lunch Box",
-    metaTitle: "Dulceros Personalizados para Fiestas en Guadalajara",
+    metaTitle: "Dulceros para Niños y Fiestas Personalizados | $75",
     price: DULCERO_BASE_PRICE,
     currency: "MXN",
-    updatedAt: "2026-10-06",
+    updatedAt: "2026-10-17",
     category: "Dulceros y cajitas para fiestas",
     variants: dulceroVariants,
     tiers: DULCERO_TIERS,
@@ -342,8 +340,7 @@ export const products: Product[] = [
     ],
     description:
       "Dulceros personalizados tipo lunch box: cajita con asa de cartulina opalina, de 15.7 × 11.7 × 9.9 cm, decorada con el nombre y la temática que elijas. Para cumpleaños, fiestas infantiles, bautizos, graduaciones, Navidad, eventos sociales y eventos de empresa (con tu logo). Cuestan $75 por pieza, con pedido mínimo de 10, y te llegan armados y vacíos (no incluyen dulces), listos para llenar. Te mandamos una prueba digital del diseño antes de producir.",
-    metaDescription:
-      "Dulceros personalizados tipo lunch box con nombre y temática, de cartulina opalina, armados. $75 por pieza, mínimo 10. Para fiestas, bautizos, graduaciones y eventos de empresa.",
+    metaDescription: "Dulceros para niños y fiestas tipo lunch box con nombre y temática, de cartulina opalina y armados. $75 por pieza, mínimo 10. Envíos a todo México.",
     details: [
       "$75 por pieza, mínimo 10 piezas: pide la cantidad exacta de invitados",
       "Caja tipo lunch box con asa, 15.7 × 11.7 × 9.9 cm",
@@ -412,10 +409,11 @@ export const products: Product[] = [
       { label: "Instalación", value: "Ninguna, se entrega lista para usar" },
       { label: "Producción", value: "Sobre pedido" },
     ],
+    metaTitle: "Placa NFC y QR para Reseñas de Google | $140",
     description:
       "Placa para conseguir más reseñas de Google, con tecnología NFC y código QR, ideal para mostrador, caja o mesa. La configuramos con el enlace de tu negocio antes de enviártela: el NFC ya está programado y el QR ya está listo para usar, no necesitas instalar ni configurar nada, ni pagar ninguna suscripción. Incluye adhesivo para pegarla donde prefieras. Disponible en blanco o negro.",
-    metaDescription:
-      "Placa NFC y QR para reseñas de Google, 12 × 12 cm, lista para usar sin configuración ni suscripción. Blanco o negro, adhesivo incluido. Desde $140 MXN.",
+    metaDescription: "Placa NFC y QR para reseñas de Google: tus clientes acercan el celular y dejan su reseña, sin app ni suscripción. Blanco o negro, adhesivo incluido. Desde $140.",
+    updatedAt: "2026-10-17",
     details: [
       "Tus clientes tocan con el celular (NFC) o escanean el QR: ambos llevan directo a dejar una reseña en Google",
       "Se entrega configurada con el enlace de tu negocio: NFC y QR listos para usar",
@@ -476,10 +474,11 @@ export const products: Product[] = [
       { label: "Instalación", value: "Ninguna, se entrega lista para usar" },
       { label: "Producción", value: "Sobre pedido" },
     ],
+    metaTitle: "Stand NFC y QR para Reseñas de Google | $200",
     description:
       "Stand con base para conseguir más reseñas de Google, con tecnología NFC y código QR, para colocar de pie sobre mostrador, caja o mesa sin necesidad de pegarlo. La configuramos con el enlace de tu negocio antes de enviártelo: el NFC ya está programado y el QR ya está listo para usar, no necesitas instalar ni configurar nada, ni pagar ninguna suscripción. Disponible en blanco o negro.",
-    metaDescription:
-      "Stand NFC y QR para reseñas de Google, con base independiente, listo para usar sin configuración ni suscripción. Blanco o negro. Desde $200 MXN.",
+    metaDescription: "Stand NFC y QR para reseñas de Google con base: tus clientes acercan el celular y dejan su reseña, sin app ni suscripción. Blanco o negro. Desde $200.",
+    updatedAt: "2026-10-17",
     details: [
       "Tus clientes tocan con el celular (NFC) o escanean el QR: ambos llevan directo a dejar una reseña en Google",
       "Se entrega configurado con el enlace de tu negocio: NFC y QR listos para usar",
@@ -527,10 +526,10 @@ export const products: Product[] = [
   {
     slug: "recetario-medico-personalizado",
     name: "Recetario Médico Personalizado",
-    metaTitle: "Recetarios Médicos Personalizados en Guadalajara",
+    metaTitle: "Recetario Médico Personalizado | 100 hojas $320",
     price: 320,
     currency: "MXN",
-    updatedAt: "2026-10-06",
+    updatedAt: "2026-10-17",
     category: "Papelería Creativa Personalizada",
     specs: [
       { label: "Hojas", value: "100" },
@@ -541,8 +540,7 @@ export const products: Product[] = [
     ],
     description:
       "Recetario médico personalizado de 100 hojas, tamaño Media Carta (14 x 21.5 cm), papel Bond de 90 gr. Diseñamos el membrete con tus datos profesionales (nombre, cédula, especialidad, dirección del consultorio) antes de imprimir, para que apruebes el diseño final antes de producción.",
-    metaDescription:
-      "Recetario médico personalizado de 100 hojas, Media Carta, papel Bond 90gr, con tu membrete profesional. Diseño aprobado antes de imprimir.",
+    metaDescription: "Recetario médico personalizado de 100 hojas, media carta, papel bond 90 g. Desde $320; con diseño de membrete, $400. Prueba digital antes de imprimir.",
     details: [
       "100 hojas por recetario",
       "Tamaño Media Carta (14 cm × 21.5 cm)",

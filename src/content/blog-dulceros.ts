@@ -17,11 +17,11 @@ export const dulceroPosts: BlogPost[] = [
   {
     slug: "dulceros-personalizados-guadalajara",
     title: "Dulceros personalizados en Guadalajara: precios, medidas y cómo pedirlos",
-    metaTitle: "Dulceros personalizados en Guadalajara: precio y medidas",
-    description:
-      "Cuánto cuestan los dulceros personalizados tipo lunch box, qué medidas tienen, qué incluye la personalización y cómo pedirlos en Guadalajara o desde cualquier parte de México.",
+    metaTitle: "Precio de dulceros personalizados y medidas",
+    description: "Cuánto cuestan los dulceros personalizados tipo lunch box ($75 por pieza, mínimo 10), qué medidas tienen y qué incluye la personalización. Envío a todo México.",
     category: "Guías",
     publishedAt: PUBLISHED,
+    modifiedAt: "2026-10-17",
     intro:
       "Un dulcero personalizado es la cajita que se lleva cada invitado al terminar la fiesta: con el nombre del festejado y la temática del evento, deja de ser una bolsa genérica y se vuelve parte de la decoración. En Yume los hacemos tipo lunch box, con asa, desde Guadalajara y con envío a todo México. Esta guía reúne todo lo que necesitas saber antes de pedirlos: precio, medidas, material, tiempos y cómo funciona el diseño.",
     sections: [
@@ -60,11 +60,11 @@ export const dulceroPosts: BlogPost[] = [
   {
     slug: "ideas-de-dulceros-para-fiesta-infantil",
     title: "Ideas de dulceros para cumpleaños y fiesta infantil (niño y niña)",
-    metaTitle: "Ideas de dulceros para cumpleaños y fiesta infantil",
-    description:
-      "Ideas de dulceros para la fiesta infantil o el cumpleaños de tu hijo o hija: cómo elegir la temática, qué nombre poner, cuántos pedir y cómo hacer que combinen con la decoración.",
+    metaTitle: "Dulceros para niñas y niños: ideas de fiesta",
+    description: "Ideas de dulceros para niñas y niños en cumpleaños y fiestas infantiles: cómo elegir la temática, qué nombre poner, cuántos pedir y cómo combinarlos con la decoración.",
     category: "Guías",
     publishedAt: PUBLISHED,
+    modifiedAt: "2026-10-17",
     intro:
       "El dulcero es de lo último que se llevan los niños de la fiesta, y muchas veces lo primero que enseñan en casa. Por eso vale la pena que combine con la temática del cumpleaños y lleve el nombre del festejado. Aquí tienes ideas prácticas para elegir el diseño, calcular cuántos pedir y armar dulceros que se vean parte de la fiesta.",
     sections: [
@@ -103,11 +103,12 @@ export const dulceroPosts: BlogPost[] = [
   {
     slug: "dulceros-navidenos-personalizados",
     title: "Dulceros navideños personalizados: para posadas, la escuela y el intercambio",
-    metaTitle: "Dulceros navideños personalizados para posadas",
+    metaTitle: "Dulceros navideños para posadas: ideas y pedidos",
     description:
       "Ideas de dulceros navideños personalizados para posadas, festivales escolares, intercambios y fiestas de fin de año: diseños, qué poner dentro y cuándo pedirlos para que lleguen a tiempo.",
     category: "Guías",
     publishedAt: PUBLISHED,
+    modifiedAt: "2026-10-17",
     intro:
       "Diciembre es la temporada con más búsquedas de dulceros en México: posadas, festivales de la escuela, convivios de la oficina e intercambios. Un dulcero navideño con nombre convierte el clásico aguinaldo de dulces en un detalle que se ve pensado. Esta guía cubre ideas de diseño, qué poner dentro y, lo más importante, con cuánto tiempo pedirlos.",
     sections: [
@@ -346,11 +347,11 @@ export const dulceroPosts: BlogPost[] = [
   {
     slug: "que-poner-en-un-dulcero",
     title: "Qué poner en un dulcero: ideas de dulces y detalles según la edad",
-    metaTitle: "Qué poner en un dulcero: ideas de dulces y detalles",
-    description:
-      "Ideas de dulces para dulceros y detalles que caben en una cajita tipo lunch box: qué poner según la edad de los invitados, cuánto llenar y cómo evitar problemas con alergias.",
+    metaTitle: "Qué dulces poner en un dulcero: ideas por edad",
+    description: "Qué dulces poner en un dulcero según la edad: ideas para niños de 1 a 12 años, adolescentes y adultos, cuánto llenar la cajita y cómo evitar problemas con alergias.",
     category: "Guías",
     publishedAt: PUBLISHED,
+    modifiedAt: "2026-10-17",
     intro:
       "Dulces para dulceros es de las búsquedas más comunes cuando se acerca una fiesta. La caja ya está resuelta; ahora toca decidir qué meter. Esta guía reúne ideas de dulces y detalles según la edad de los invitados, pensadas para una cajita tipo lunch box de 15.7 × 11.7 × 9.9 cm.",
     sections: [
@@ -388,11 +389,12 @@ export const dulceroPosts: BlogPost[] = [
   {
     slug: "dulceros-de-halloween",
     title: "Dulceros de Halloween personalizados para niños y fiestas",
-    metaTitle: "Dulceros de Halloween personalizados",
+    metaTitle: "Dulceros de Halloween personalizados para niños",
     description:
       "Ideas de dulceros de Halloween personalizados para fiestas, la escuela o para pedir dulces: diseños, qué poner dentro y con cuánto tiempo pedirlos antes del 31 de octubre.",
     category: "Guías",
     publishedAt: PUBLISHED,
+    modifiedAt: "2026-10-17",
     intro:
       "Halloween es una de las fechas en las que más se buscan dulceros en México, junto con Navidad y el Día del Niño. Un dulcero personalizado con el nombre del niño sirve para la fiesta del salón, para repartir en una fiesta de disfraces o incluso para salir a pedir dulces. Aquí tienes ideas y tiempos para que llegue antes del 31 de octubre.",
     sections: [
@@ -423,11 +425,12 @@ export const dulceroPosts: BlogPost[] = [
   {
     slug: "cajas-bolsas-o-vasos-dulceros-cual-elegir",
     title: "Cajas, bolsas o vasos dulceros: cuál conviene para tu fiesta",
-    metaTitle: "Cajas, bolsas o vasos dulceros: cuál elegir",
+    metaTitle: "Bolsas, cajas o vasos para dulceros: cuál elegir",
     description:
       "Comparación práctica entre cajas dulceras tipo lunch box, bolsas para dulceros, vasos dulceros y morralitos: capacidad, presentación, personalización y para qué tipo de fiesta conviene cada uno.",
     category: "Guías",
     publishedAt: PUBLISHED,
+    modifiedAt: "2026-10-17",
     intro:
       "Cuando buscas dulceros aparecen muchas opciones: bolsas de celofán o de papel, vasos dulceros de plástico, morralitos de tela y cajitas de cartón. Ninguna es mejor en todo; depende del presupuesto, la edad de los invitados y qué tanto quieres que el dulcero se vea como parte de la decoración. Esta comparación te ayuda a decidir.",
     sections: [

@@ -30,6 +30,9 @@ export interface BlogPost {
    * leyendo" block; keeps topically related guides actually connected instead
    * of relying only on relatedProductSlugs (blog->product, never blog->blog). */
   relatedBlogSlugs?: string[];
+  /** Link to the service/product page when the topic is a quote-only service
+   * (no entry in products.ts), so the post still passes link equity to it. */
+  serviceLink?: { href: string; label: string };
   /** WhatsApp quote message shown as the post's CTA when it has no
    * `relatedProductSlugs` yet: e.g. a topic covering a service that isn't
    * a cataloged product yet (still quote-only, handled case by case). */
@@ -43,11 +46,12 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "recetarios-medicos-personalizados-guadalajara",
     title: "Recetarios médicos personalizados en Guadalajara: guía para tu consultorio",
-    metaTitle: "Recetarios médicos personalizados en Guadalajara",
+    metaTitle: "Recetarios médicos en Guadalajara: guía y membrete",
     description:
       "Qué datos incluir en el membrete, qué tamaño usar y cómo funciona el proceso para pedir recetarios médicos personalizados si tienes un consultorio en Guadalajara o cualquier parte de México.",
     category: "Guías",
     publishedAt: "2026-08-28",
+    modifiedAt: "2026-10-17",
     intro:
       "Si tienes un consultorio en Guadalajara, Zapopan o cualquier ciudad de Jalisco, el recetario que usas todos los días también es parte de la imagen de tu consultorio. Uno genérico, comprado en una papelería cualquiera, no comunica lo mismo que uno con tu membrete, tu cédula profesional y el diseño de tu consultorio. Esta guía cubre lo que necesitas saber antes de pedir uno personalizado.",
     sections: [
@@ -74,16 +78,17 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["recetario-medico-personalizado"],
+    relatedBlogSlugs: ["recetario-medico-impreso-vs-digital", "recetario-medico-con-diseno-vs-sin-diseno", "datos-obligatorios-receta-medica-mexico"],
   },
   {
     slug: "stickers-personalizados-para-negocios-guadalajara",
     title: "Etiquetas personalizadas para tu negocio en Guadalajara (GDL): guía rápida",
-    metaTitle: "Etiquetas personalizadas en Guadalajara / GDL",
+    metaTitle: "Etiquetas en Guadalajara (GDL) para tu negocio: guía",
     description:
       "Cómo usar etiquetas personalizadas si tienes una marca, un emprendimiento o un puesto en bazares de Guadalajara (GDL): qué formato pedir y qué archivo enviar para tu logo.",
     category: "Guías",
     publishedAt: "2026-08-28",
-    modifiedAt: "2026-10-09",
+    modifiedAt: "2026-10-17",
     intro:
       "En Guadalajara (GDL) hay un movimiento fuerte de emprendimientos pequeños (marcas de repostería, ropa, velas, joyería, café) que venden en bazares, mercados sobre ruedas o directo por redes sociales. Una etiqueta con tu logo es de las formas más baratas de que tu marca se vea consistente en cada pedido que sale, sin necesitar empaque especial.",
     sections: [
@@ -146,6 +151,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["recetario-medico-personalizado", "stickers-logo-personalizado"],
+    relatedBlogSlugs: ["como-pedir-papeleria-personalizada-en-linea", "papeleria-personalizada-vs-plantillas-genericas", "stickers-personalizados-para-negocios-guadalajara"],
   },
   {
     slug: "como-pedir-papeleria-personalizada-en-linea",
@@ -182,6 +188,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["recetario-medico-personalizado", "stickers-logo-personalizado"],
+    relatedBlogSlugs: ["papeleria-personalizada-para-negocios-jalisco", "papeleria-personalizada-vs-plantillas-genericas", "cuanto-tarda-un-pedido-de-stickers-personalizados"],
   },
   {
     slug: "recetario-medico-impreso-vs-digital",
@@ -217,16 +224,17 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["recetario-medico-personalizado"],
+    relatedBlogSlugs: ["recetarios-medicos-personalizados-guadalajara", "recetario-medico-con-diseno-vs-sin-diseno", "datos-obligatorios-receta-medica-mexico"],
   },
   {
     slug: "tatuajes-temporales-personalizados-para-eventos",
     title: "Tatuajes temporales personalizados para eventos y marcas",
-    metaTitle: "Tatuajes temporales con logo para eventos",
+    metaTitle: "Tatuajes temporales con logo para marcas y eventos",
     description:
       "Tatuajes temporales con logo para eventos, activaciones de marca y celebraciones: para qué se usan, qué información necesitamos para cotizar los tuyos y cómo pedir tatuajes temporales personalizados en México.",
     category: "Guías",
     publishedAt: "2026-08-31",
-    modifiedAt: "2026-10-06",
+    modifiedAt: "2026-10-17",
     intro:
       "Un tatuaje temporal con tu logo o un diseño hecho para la ocasión es una forma efectiva y económica de dejar marca en un evento: literalmente. Los tatuajes temporales para eventos funcionan tanto para activaciones de negocio como para celebraciones personales, y el proceso para pedir tatuajes temporales personalizados en México es tan sencillo como el de cualquier otro producto a la medida en Yume.",
     sections: [
@@ -260,6 +268,8 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: [],
+    relatedBlogSlugs: ["tatuajes-temporales-para-boda-eventos-y-fiestas", "cuanto-duran-los-tatuajes-temporales-y-como-quitarlos"],
+    serviceLink: { href: "/productos/tatuajes-temporales-personalizados", label: "Ver tatuajes temporales personalizados" },
     quoteMessage: "Hola, me interesa cotizar tatuajes temporales personalizados.",
   },
   {
@@ -303,6 +313,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: [],
+    relatedBlogSlugs: ["menu-de-boda-personalizado", "stickers-para-bodas-eventos-y-fiestas", "tatuajes-temporales-para-boda-eventos-y-fiestas"],
     quoteMessage: "Hola, me interesa cotizar invitaciones personalizadas para un evento.",
   },
   {
@@ -339,15 +350,16 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["stickers-vinil-vs-papel-diferencias", "troquelado-vs-semitroquelado-stickers", "stickers-para-bodas-eventos-y-fiestas"],
   },
   {
     slug: "recetario-medico-con-diseno-vs-sin-diseno",
     title: "Recetario médico con diseño vs. sin diseño: ¿cuál te conviene?",
-    metaTitle: "Recetario médico con diseño vs. sin diseño",
-    description:
-      "La diferencia real entre pedir tu recetario médico personalizado con logo y diseño incluido o solo con impresión, sus precios y cuándo conviene cada opción.",
+    metaTitle: "Diseño de recetario médico: con o sin diseño",
+    description: "Recetario médico con diseño o sin diseño: qué incluye cada opción, cuánto cuesta ($320 sin diseño, $400 con diseño) y cuándo conviene cada una.",
     category: "Guías",
     publishedAt: "2026-09-09",
+    modifiedAt: "2026-10-17",
     intro:
       "Al cotizar el recetario médico personalizado en Yume vas a ver dos opciones con precio distinto: \"sin diseño\" y \"con diseño\". No es solo una diferencia de precio: es una diferencia real en el trabajo que hacemos por ti. Aquí te explicamos qué incluye cada una para que elijas la que te conviene.",
     sections: [
@@ -374,15 +386,16 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["recetario-medico-personalizado"],
+    relatedBlogSlugs: ["recetarios-medicos-personalizados-guadalajara", "recetario-medico-impreso-vs-digital", "datos-obligatorios-receta-medica-mexico"],
   },
   {
     slug: "datos-obligatorios-receta-medica-mexico",
-    title: "Qué debe llevar una receta médica en México: guía general",
-    metaTitle: "Qué debe llevar una receta médica en México",
-    description:
-      "Los requisitos y datos que normalmente debe incluir una receta médica en México (de tu membrete, del paciente y del medicamento) y por qué conviene tenerlos preimpresos en tu recetario.",
+    title: "Formato de receta médica en México: qué debe llevar",
+    metaTitle: "Formato de receta médica en México: qué debe llevar",
+    description: "Formato de receta médica en México: los datos que debe llevar (membrete del médico, paciente y medicamento) y por qué conviene preimprimirlos en tu recetario.",
     category: "Guías",
     publishedAt: "2026-09-09",
+    modifiedAt: "2026-10-17",
     intro:
       "Si estás por pedir tu primer recetario personalizado, es normal preguntarte qué datos debe llevar exactamente. Esta es información general basada en lo que se acostumbra en consultorios de México y en la norma oficial NOM-004-SSA3-2012 del expediente clínico (que enlistamos al final): no sustituye lo que tu colegio de médicos, tu estado o la institución donde trabajas exija de forma específica, así que siempre vale la pena confirmarlo con ellos antes de mandar a imprimir.",
     sections: [
@@ -409,6 +422,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["recetario-medico-personalizado"],
+    relatedBlogSlugs: ["recetarios-medicos-personalizados-guadalajara", "recetario-medico-impreso-vs-digital", "recetario-medico-con-diseno-vs-sin-diseno"],
     sources: [
       {
         label: "NOM-004-SSA3-2012, Diario Oficial de la Federación",
@@ -545,6 +559,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: [],
+    relatedBlogSlugs: ["como-pedir-invitaciones-personalizadas-para-eventos", "stickers-para-bodas-eventos-y-fiestas", "papeleria-personalizada-vs-plantillas-genericas"],
     quoteMessage: "Hola, me interesa cotizar menús de boda personalizados.",
   },
   {
@@ -581,6 +596,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: [],
+    relatedBlogSlugs: ["recetarios-medicos-personalizados-guadalajara", "recetario-medico-impreso-vs-digital", "recetario-medico-con-diseno-vs-sin-diseno"],
     quoteMessage: "Hola, me interesa cotizar tarjetas de presentación para mi consultorio.",
   },
   {
@@ -617,6 +633,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["recetario-medico-personalizado"],
+    relatedBlogSlugs: ["recetarios-medicos-personalizados-guadalajara", "recetario-medico-impreso-vs-digital", "recetario-medico-con-diseno-vs-sin-diseno"],
   },
   {
     slug: "como-conseguir-mas-resenas-de-google-nfc-qr",
@@ -652,6 +669,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["stand-resena-google-nfc", "placa-resena-google-nfc"],
+    relatedBlogSlugs: ["placa-nfc-vs-codigo-qr-impreso-resenas", "como-usar-placa-resenas-google-yume"],
   },
   {
     slug: "placa-nfc-vs-codigo-qr-impreso-resenas",
@@ -684,6 +702,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
+    relatedBlogSlugs: ["como-conseguir-mas-resenas-de-google-nfc-qr", "como-usar-placa-resenas-google-yume"],
   },
   {
     slug: "como-usar-placa-resenas-google-yume",
@@ -717,6 +736,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
+    relatedBlogSlugs: ["como-conseguir-mas-resenas-de-google-nfc-qr", "placa-nfc-vs-codigo-qr-impreso-resenas"],
   },
   {
     slug: "papeleria-personalizada-vs-plantillas-genericas",
@@ -752,6 +772,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["recetario-medico-personalizado", "stickers-logo-personalizado"],
+    relatedBlogSlugs: ["papeleria-personalizada-para-negocios-jalisco", "como-pedir-papeleria-personalizada-en-linea", "menu-de-boda-personalizado"],
   },
   {
     slug: "stickers-para-empaques-de-negocio",
@@ -787,6 +808,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["stickers-para-marca-pequena-vs-grande", "stickers-vinil-vs-papel-diferencias", "cuanto-tarda-un-pedido-de-stickers-personalizados"],
   },
   {
     slug: "stickers-para-marca-pequena-vs-grande",
@@ -823,6 +845,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["stickers-para-empaques-de-negocio", "donde-imprimir-stickers-personalizados-mexico", "troquelado-vs-semitroquelado-stickers"],
   },
   {
     slug: "stickers-para-bodas-eventos-y-fiestas",
@@ -864,15 +887,16 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["tatuajes-temporales-para-boda-eventos-y-fiestas", "stickers-personalizados-para-mascotas", "stickers-vinil-vs-papel-diferencias"],
   },
   {
     slug: "tatuajes-temporales-para-boda-eventos-y-fiestas",
     title: "Tatuajes temporales para boda, eventos y fiestas: cómo usarlos",
-    metaTitle: "Tatuajes temporales para fiestas y celebraciones",
-    description:
-      "Tatuajes temporales para boda, eventos y fiestas como detalle para los invitados: XV años, despedidas de soltera, fiestas infantiles y celebraciones temáticas. Qué necesitamos para cotizar los tuyos.",
+    metaTitle: "Tatuajes temporales para bodas, XV años y fiestas",
+    description: "Tatuajes temporales para bodas, XV años y fiestas infantiles como detalle para los invitados. Qué necesitamos para cotizar los tuyos con tu diseño o tus fotos.",
     category: "Guías",
     publishedAt: "2026-09-23",
+    modifiedAt: "2026-10-17",
     intro:
       "Los tatuajes temporales están en tendencia como detalle de fiesta: se han vuelto un hit en bodas, XV años y celebraciones de todo tipo, justo por lo contrario a un sticker o un recuerdo que se queda guardado: el invitado se lo lleva puesto el resto del evento. Además de las activaciones de marca (ver también nuestra guía de tatuajes temporales personalizados para eventos y marcas), este formato es cada vez más pedido para celebraciones personales: bodas, XV años, despedidas de soltera y fiestas infantiles.",
     sections: [
@@ -904,17 +928,18 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: [],
+    relatedBlogSlugs: ["tatuajes-temporales-personalizados-para-eventos", "cuanto-duran-los-tatuajes-temporales-y-como-quitarlos"],
+    serviceLink: { href: "/productos/tatuajes-temporales-personalizados", label: "Ver tatuajes temporales personalizados" },
     quoteMessage: "Hola, me interesa cotizar tatuajes temporales para una boda, evento o fiesta.",
   },
   {
     slug: "donde-imprimir-stickers-personalizados-mexico",
     title: "Dónde imprimir stickers personalizados en México: qué necesitas y cómo pedirlos",
-    metaTitle: "Dónde imprimir stickers personalizados en México",
-    description:
-      "Qué necesitas tener listo para mandar a imprimir tus stickers personalizados en México (archivo, tamaño, cantidad) y cómo funciona pedirlos en línea sin ir a una imprenta física.",
+    metaTitle: "Dónde imprimir stickers personalizados | Precios",
+    description: "Dónde imprimir stickers personalizados en México: precios, qué archivo enviar y cómo pedirlos en línea con envío a todo el país. Imprimir en casa vs. pedirlos en vinil.",
     category: "Guías",
     publishedAt: "2026-09-29",
-    modifiedAt: "2026-10-09",
+    modifiedAt: "2026-10-17",
     intro:
       "Si buscas dónde imprimir stickers personalizados en México, la mayoría de las opciones caen en dos grupos: imprimirlos tú mismo en casa (con vinil y una impresora especial) o mandarlos a hacer con una imprenta que ya tiene el equipo de corte troquelado. Esta guía cubre la segunda opción: qué necesitas tener listo y cómo funciona el proceso para mandar a imprimir tus stickers en línea, sin tener que comprar equipo ni ir a una imprenta física.",
     sections: [
@@ -930,8 +955,9 @@ export const blogPosts: BlogPost[] = [
         },
       },
       {
-        heading: "Imprimir tú mismo vs. mandarlos a hacer",
+        heading: "Stickers para imprimir en casa vs. mandarlos a imprimir",
         body: [
+          "Muchas búsquedas empiezan con \"stickers para imprimir\" o \"pegatinas personalizadas\" (así les dicen en varias partes de México): quien quiere imprimir en casa necesita impresora, papel adhesivo y tijeras o una cortadora. Quien quiere un acabado de vinil resistente al agua, troquelado y en cantidad, lo más práctico es pedirlos ya impresos.",
           "Imprimir en casa tiene sentido si ya tienes o quieres invertir en una impresora especial y vinil por rollo, y tu volumen es bajo. Para la mayoría de negocios y personas, sale más barato y más simple mandar a hacer el pedido con una imprenta que ya tiene el equipo de corte troquelado: no hay que comprar ni aprender a usar una máquina para un pedido de 50 o 100 piezas.",
           "La diferencia se nota más en el acabado: un corte troquelado hecho con equipo profesional sigue el contorno exacto del diseño, algo difícil de replicar con tijeras o un cortador casero.",
         ],
@@ -1049,6 +1075,59 @@ export const blogPosts: BlogPost[] = [
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
     relatedBlogSlugs: ["stickers-vinil-vs-papel-diferencias", "donde-imprimir-stickers-personalizados-mexico"],
+  },
+  {
+    slug: "cuanto-duran-los-tatuajes-temporales-y-como-quitarlos",
+    title: "¿Cuánto duran los tatuajes temporales y cómo se quitan?",
+    metaTitle: "Cuánto duran los tatuajes temporales y cómo se quitan",
+    description:
+      "Cuánto duran los tatuajes temporales (de unas horas a un par de días), cómo se aplican y cómo se quitan con aceite, crema o alcohol. Guía de Yume.",
+    category: "Guías",
+    publishedAt: "2026-10-17",
+    intro:
+      "Los tatuajes temporales de transferencia con agua duran de unas horas a un par de días, según la zona del cuerpo y cuánto se froten. Esta guía junta lo que más se pregunta: cuánto duran, cómo se aplican, cómo se quitan y dónde se pueden poner, con el procedimiento de la tarjeta de instrucciones que usamos en Yume.",
+    sections: [
+      {
+        heading: "¿Cuánto duran los tatuajes temporales?",
+        body: [
+          "Depende de la zona y del roce. En partes que se mueven o se rozan con la ropa (muñeca, cuello, rodillas) se desgastan antes; en el brazo o la pierna, con menos fricción, aguantan más. El fabricante del papel de transferencia que usamos indica que el tatuaje dura al menos 48 horas si no se frota.",
+          "Para una fiesta, una boda o una activación de un día sobra tiempo: son tatuajes pensados para celebraciones, no para durar semanas. Lo que más los acorta es el roce constante, la ropa apretada y cualquier aceite, crema o alcohol que toque el tatuaje.",
+        ],
+      },
+      {
+        heading: "Cómo se aplican, paso a paso",
+        body: [
+          "1. Elige tu tatuaje y retira la película de plástico protectora. 2. Colócalo hacia abajo, con el diseño directamente sobre la piel limpia y seca. 3. Humedece muy bien el papel con agua y presiona con tu mano durante 20 a 30 segundos. 4. Retira suavemente el papel y espera unos segundos a que seque bien antes de tocar el tatuaje.",
+          "Dos detalles ayudan a que quede mejor: piel limpia, seca y sin crema antes de aplicar, y no mover el papel mientras lo presionas.",
+        ],
+      },
+      {
+        heading: "Cómo se quitan los tatuajes temporales",
+        body: [
+          "Con aceite corporal, crema o alcohol, frotando suavemente hasta que salga. No hace falta raspar ni usar objetos: frotar con calma es suficiente. Si no los quitas, se van desgastando solos con los días.",
+        ],
+      },
+      {
+        heading: "Dónde se pueden poner y qué precauciones tener",
+        body: [
+          "En las fotos de nuestros pedidos se ven aplicados en el brazo, la muñeca, la mano, el cuello y la pierna. Son de uso externo: no se aplican en los ojos ni sobre piel lastimada. Si tienes piel sensible o alergias, prueba primero con uno pequeño; en niños, que un adulto los aplique y supervise.",
+          "El fabricante del papel no indica una edad mínima ni publica certificaciones dermatológicas, así que preferimos decirlo tal cual en lugar de prometer lo que no podemos comprobar.",
+        ],
+      },
+      {
+        heading: "Tatuajes temporales personalizados: con tu logo, diseño o foto",
+        body: [
+          "En Yume hacemos tatuajes temporales a la medida con tu logo, tu diseño o tus fotos: estampillas, personajes, fotos de pareja o de infancia. Se cotizan por WhatsApp según diseño, tamaño y cantidad; la producción toma 2 a 3 días hábiles después del anticipo del 50% y enviamos a todo México o puedes recogerlos en Guadalajara.",
+        ],
+      },
+    ],
+    relatedProductSlugs: [],
+    relatedBlogSlugs: ["tatuajes-temporales-personalizados-para-eventos", "tatuajes-temporales-para-boda-eventos-y-fiestas"],
+    serviceLink: { href: "/productos/tatuajes-temporales-personalizados", label: "Ver tatuajes temporales personalizados" },
+    quoteMessage: "Hola, quiero cotizar tatuajes temporales personalizados.\n\nTamaño:\nCantidad:\n¿Ya tengo diseño? (sí / no):",
+    sources: [
+      { label: "Ficha del papel de transferencia MECOLOUR en Amazon (duración: al menos 48 horas sin frotar)", url: "https://www.amazon.com/dp/B09C25DL8G" },
+    ],
   },
   // Dulceros cluster lives in its own file (blog-dulceros.ts).
   ...dulceroPosts,

@@ -91,6 +91,10 @@ export default async function BlogPostPageEn({ params }: { params: Promise<{ slu
               <Link href={`/en/products/${PRODUCT_SLUG_EN[relatedProducts[0].slug]}`} className="mt-3 inline-flex min-h-11 items-center text-sm font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
                 See {productsEn[relatedProducts[0].slug].name} →
               </Link>
+            ) : post.serviceLink ? (
+              <Link href={post.serviceLink.href} className="mt-3 inline-flex min-h-11 items-center text-sm font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
+                {post.serviceLink.label} →
+              </Link>
             ) : post.quoteMessage ? (
               <a href={waLink(post.quoteMessage)} target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex min-h-11 items-center text-sm font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
                 Get a Quote on WhatsApp →

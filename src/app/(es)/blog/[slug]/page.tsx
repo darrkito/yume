@@ -89,6 +89,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               <Link href={`/productos/${relatedProducts[0].slug}`} className="mt-3 inline-flex min-h-11 items-center text-sm font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
                 Ver {relatedProducts[0].name} →
               </Link>
+            ) : post.serviceLink ? (
+              <Link href={post.serviceLink.href} className="mt-3 inline-flex min-h-11 items-center text-sm font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
+                {post.serviceLink.label} →
+              </Link>
             ) : post.quoteMessage ? (
               <a href={waLink(post.quoteMessage)} target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex min-h-11 items-center text-sm font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
                 Cotizar por WhatsApp →
@@ -131,9 +135,16 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <p className="mt-2 text-sm leading-relaxed text-ink-soft">
             Este producto se cotiza a la medida: cuéntanos tu evento o proyecto y te confirmamos precio y tiempo de entrega.
           </p>
-          <a href={waLink(post.quoteMessage)} target="_blank" rel="noopener noreferrer" className="btn-soft btn-soft-solid mt-4">
-            Cotizar por WhatsApp
-          </a>
+          <div className="mt-4 flex flex-wrap items-center gap-3">
+            <a href={waLink(post.quoteMessage)} target="_blank" rel="noopener noreferrer" className="btn-soft btn-soft-solid">
+              Cotizar por WhatsApp
+            </a>
+            {post.serviceLink && (
+              <Link href={post.serviceLink.href} className="inline-flex min-h-11 items-center text-sm font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
+                {post.serviceLink.label} →
+              </Link>
+            )}
+          </div>
         </div>
       ) : null}
 

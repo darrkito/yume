@@ -226,6 +226,8 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: [],
+    relatedBlogSlugs: ["temporary-tattoos-for-weddings-events-and-parties", "how-long-do-temporary-tattoos-last-and-how-to-remove-them"],
+    serviceLink: { href: "/en/products/custom-temporary-tattoos", label: "See custom temporary tattoos" },
     quoteMessage: "Hi, I'm interested in getting a quote for custom temporary tattoos.",
   },
   {
@@ -870,6 +872,8 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: [],
+    relatedBlogSlugs: ["custom-temporary-tattoos-for-events-and-brands", "how-long-do-temporary-tattoos-last-and-how-to-remove-them"],
+    serviceLink: { href: "/en/products/custom-temporary-tattoos", label: "See custom temporary tattoos" },
     quoteMessage: "Hi, I'm interested in getting a quote for temporary tattoos for a wedding, event, or party.",
   },
   {
@@ -1015,6 +1019,59 @@ export const blogPostsEn: BlogPost[] = [
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
     relatedBlogSlugs: [BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"], BLOG_SLUG_EN["donde-imprimir-stickers-personalizados-mexico"]],
+  },
+  {
+    slug: BLOG_SLUG_EN["cuanto-duran-los-tatuajes-temporales-y-como-quitarlos"],
+    title: "How long do temporary tattoos last and how do you remove them?",
+    metaTitle: "How long temporary tattoos last and how to remove them",
+    description:
+      "How long temporary tattoos last (a few hours to a couple of days), how to apply them step by step, and how to remove them with body oil, lotion, or alcohol. A Yume guide.",
+    category: "Guides",
+    publishedAt: "2026-10-17",
+    intro:
+      "Water-transfer temporary tattoos last from a few hours to a couple of days, depending on the area of the body and how much they are rubbed. This guide covers the most common questions: how long they last, how to apply them, how to remove them, and where they can go, using the instruction card we use at Yume.",
+    sections: [
+      {
+        heading: "How long do temporary tattoos last?",
+        body: [
+          "It depends on the area and on friction. On parts that move or rub against clothing (wrist, neck, knees) they wear off sooner; on the arm or leg, with less friction, they last longer. The maker of the transfer paper we use states the tattoo lasts at least 48 hours if left untouched.",
+          "For a party, a wedding, or a one-day activation that is plenty: they are made for celebrations, not for lasting weeks. What shortens them most is constant rubbing, tight clothing, and any oil, lotion, or alcohol that touches the tattoo.",
+        ],
+      },
+      {
+        heading: "How to apply them, step by step",
+        body: [
+          "1. Pick your tattoo and peel off the protective plastic film. 2. Place it face down, with the design directly on clean, dry skin. 3. Soak the paper well with water and press with your hand for 20 to 30 seconds. 4. Gently peel the paper off and wait a few seconds for it to dry before touching the tattoo.",
+          "Two details help: clean, dry skin with no lotion before applying, and not moving the paper while you press.",
+        ],
+      },
+      {
+        heading: "How to remove temporary tattoos",
+        body: [
+          "With body oil, lotion, or rubbing alcohol, rubbing gently until it comes off. There is no need to scrape or use tools: calm rubbing is enough. If you leave them, they simply wear off over the following days.",
+        ],
+      },
+      {
+        heading: "Where they can go and what precautions to take",
+        body: [
+          "In the photos of our orders they are applied on the arm, wrist, hand, neck, and leg. They are for external use only: do not apply them on the eyes or on broken skin. If you have sensitive skin or allergies, try a small one first; for children, an adult should apply and supervise.",
+          "The paper maker gives no minimum age and publishes no dermatological certifications, so we would rather say so plainly than promise what we cannot verify.",
+        ],
+      },
+      {
+        heading: "Custom temporary tattoos: with your logo, design, or photo",
+        body: [
+          "At Yume we make custom temporary tattoos with your logo, your design, or your photos: stamps, characters, couple or childhood photos. They are quoted on WhatsApp based on design, size, and quantity; production takes 2 to 3 business days after the 50% deposit, and we ship across Mexico or you can pick them up in Guadalajara.",
+        ],
+      },
+    ],
+    relatedProductSlugs: [],
+    relatedBlogSlugs: ["custom-temporary-tattoos-for-events-and-brands", "temporary-tattoos-for-weddings-events-and-parties"],
+    serviceLink: { href: "/en/products/custom-temporary-tattoos", label: "See custom temporary tattoos" },
+    quoteMessage: "Hi, I'd like a quote for custom temporary tattoos.\n\nSize:\nQuantity:\nDo I already have a design? (yes / no):",
+    sources: [
+      { label: "MECOLOUR transfer paper listing on Amazon (lasts at least 48 hours untouched)", url: "https://www.amazon.com/dp/B09C25DL8G" },
+    ],
   },
   // Dulceros cluster lives in its own file (blog-dulceros.en.ts).
   ...dulceroPostsEn,
