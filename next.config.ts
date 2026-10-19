@@ -74,6 +74,14 @@ const nextConfig: NextConfig = {
         source: "/.well-known/api-catalog",
         headers: [{ key: "Content-Type", value: "application/linkset+json" }],
       },
+      {
+        // UCP business profile: extensionless, and the spec requires public caching (max-age >= 60).
+        source: "/.well-known/ucp",
+        headers: [
+          { key: "Content-Type", value: "application/json" },
+          { key: "Cache-Control", value: "public, max-age=300" },
+        ],
+      },
     ];
   },
 };

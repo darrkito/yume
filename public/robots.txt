@@ -34,6 +34,7 @@ Allow: /
 Disallow: /api/
 Disallow: /mcp
 Disallow: /a2a
+Disallow: /ucp/
 Content-Signal: ai-train=yes, search=yes, ai-input=yes
 
 Sitemap: https://studioyume.mx/sitemap.xml

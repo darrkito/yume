@@ -12,6 +12,11 @@
           "href": "https://studioyume.mx/a2a",
           "type": "application/json",
           "title": "Yume A2A agent (JSON-RPC, method message/send): answers questions about products, pricing, and coverage"
+        },
+        {
+          "href": "https://studioyume.mx/ucp/v1",
+          "type": "application/json",
+          "title": "Yume UCP REST endpoint (dev.ucp.shopping.checkout, version 2026-04-08); profile at /.well-known/ucp"
         }
       ],
       "service-doc": [

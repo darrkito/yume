@@ -19,6 +19,12 @@
       "documentation": "https://studioyume.mx/.well-known/agent-card.json"
     },
     {
+      "identifier": "yume-ucp",
+      "displayName": "Yume UCP business profile (dev.ucp.shopping.checkout, REST)",
+      "type": "ucp",
+      "url": "https://studioyume.mx/.well-known/ucp"
+    },
+    {
       "identifier": "yume-api-catalog",
       "displayName": "Yume API catalog",
       "type": "api-catalog",

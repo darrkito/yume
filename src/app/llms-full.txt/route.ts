@@ -14,6 +14,7 @@ const HOW_TO_ORDER = `# How AI agents can order from Yume
 3. Hand off to the customer with either:
    - \`create_cart_link\`: a link that opens the cart already filled (${SITE.url}/carrito?add=slug:variantId:qty,...); the customer adds shipping details and pays, or
    - \`create_checkout\`: with the customer's consent, name, email, phone and delivery details, creates the order and returns a Mercado Pago payment link the customer opens to pay (card, OXXO cash, SPEI). The agent never handles card data.
+   - UCP (Universal Commerce Protocol 2026-04-08): profile ${SITE.url}/.well-known/ucp, REST ${SITE.url}/ucp/v1/checkout-sessions. item.id = "<slug>" or "<slug>:<variantId>"; sessions return requires_escalation + continue_url (the buyer pays on Mercado Pago).
 4. Products that need a logo or design: the customer sends it by WhatsApp (+52 33 1895 8175) after paying; a digital proof follows within 24 hours, with up to 2 rounds of changes.
 
 Example cart link (150 holographic die-cut vinyl stickers): ${SITE.url}/carrito?add=stickers-vinil-impermeable:150%7Ctroquelado%7Cholografico:1
