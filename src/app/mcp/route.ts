@@ -1,4 +1,5 @@
 import { shippingFacts } from "@/content/shipping-facts";
+import { CASABLANCA_BRANCHES } from "@/content/shipping";
 import { NextRequest, NextResponse } from "next/server";
 import { products, getProduct } from "@/content/products";
 import { productsEn, getProductTranslation } from "@/content/products.en";
@@ -8,12 +9,18 @@ import { blogPosts, getBlogPost } from "@/content/blog";
 import { blogPostsEn, getBlogPostEn } from "@/content/blog.en";
 import { SITE, waLink } from "@/content/site";
 import { PRODUCT_SLUG_EN } from "@/lib/i18n";
+import { normalizeLines, orderGuide, priceLines } from "@/lib/agent-order";
+import { createCheckoutPro } from "@/lib/checkout-pro";
+import { localizeError } from "@/lib/errors";
+import { rateLimited } from "@/lib/rate-limit";
 
 // Hand-rolled minimal MCP server (Streamable HTTP transport, 2025-06-18 spec).
-// Stateless, read-only, single POST endpoint returning synchronous JSON —
+// Stateless, single POST endpoint returning synchronous JSON —
 // no session ID or SSE needed for a tool set that's all fast reads. Every
 // tool wraps the same content the site itself already serves (products,
 // blog, FAQ) — nothing exists here that isn't real elsewhere on the site.
+// Ordering tools reuse the real checkout: prices from products.ts, orders via
+// createCheckoutPro, payment always completed by the customer on Mercado Pago.
 //
 // Bilingual: every content tool takes an optional `lang` ("es", default, or
 // "en") returning the same real content in that language, with URLs pointed
@@ -21,15 +28,35 @@ import { PRODUCT_SLUG_EN } from "@/lib/i18n";
 
 const LANG_PARAM = { lang: { type: "string", enum: ["es", "en"], description: "Response language, defaults to es" } };
 
+const ITEMS_PARAM = {
+  items: {
+    type: "array",
+    description: "Lines to order. Per-piece products (stickers, party favor boxes): pieces (+ cut/finish for stickers). Option products (plates, stands, prescription pads): option. See get_product.orderGuide.",
+    items: {
+      type: "object",
+      properties: {
+        slug: { type: "string", description: "Product slug, ES or EN" },
+        pieces: { type: "integer", description: "Piece count for per-piece products (at least orderGuide.minPieces)" },
+        cut: { type: "string", enum: ["troquelado", "semitroquelado"], description: "Stickers only: die cut or kiss cut (default troquelado)" },
+        finish: { type: "string", enum: ["mate", "brillante", "holografico"], description: "Stickers only (default mate; holografico +0.50 MXN per piece)" },
+        option: { type: "string", description: "Option id for option products, e.g. negro, con-diseno" },
+        variantId: { type: "string", description: "Raw variant id instead of the fields above" },
+        qty: { type: "integer", description: "Units of this line, default 1" },
+      },
+      required: ["slug"],
+    },
+  },
+};
+
 const TOOLS = [
   {
     name: "get_products",
-    description: "List Yume's catalog: papelería y artículos personalizados (recetarios médicos, stickers) with real prices in MXN. Available in Spanish or English.",
+    description: "List Yume's full catalog (vinyl stickers, logo stickers/labels, personalized party favor boxes, Google-review NFC plates and stands, medical prescription pads) with real starting prices in MXN. Available in Spanish or English.",
     inputSchema: { type: "object", properties: { ...LANG_PARAM }, additionalProperties: false },
   },
   {
     name: "get_product",
-    description: "Get full detail for one Yume product by slug: price, specs, description, and FAQ. Available in Spanish or English.",
+    description: "Get full detail for one Yume product by slug (ES or EN): price tiers, specs, description, FAQ, shipping, and orderGuide (exact option ids, piece minimums, personalization fields) needed by get_price_quote, create_cart_link and create_checkout.",
     inputSchema: {
       type: "object",
       properties: { slug: { type: "string", description: "Product slug, e.g. recetario-medico-personalizado" }, ...LANG_PARAM },
@@ -63,6 +90,59 @@ const TOOLS = [
     },
   },
   {
+    name: "get_price_quote",
+    description: "Exact price Yume's checkout will charge for a set of items (MXN), with home-delivery and Guadalajara pickup totals and a ready cart link. Use before telling a customer a price.",
+    inputSchema: { type: "object", properties: { ...ITEMS_PARAM, ...LANG_PARAM }, required: ["items"], additionalProperties: false },
+  },
+  {
+    name: "create_cart_link",
+    description: "Link that opens Yume's cart already filled with these items; the customer then enters shipping details and pays on the site (Mercado Pago: card, OXXO cash, SPEI). Best default for agents that hand off to the human.",
+    inputSchema: { type: "object", properties: { ...ITEMS_PARAM, ...LANG_PARAM }, required: ["items"], additionalProperties: false },
+  },
+  {
+    name: "create_checkout",
+    description:
+      "Create a real pending order for the customer and return a Mercado Pago payment link (checkoutUrl) the customer must open to pay; nothing is charged by this call and the agent never handles card data. Requires the customer's consent and real contact + delivery details. Required personalization fields come from get_product.orderGuide.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        ...ITEMS_PARAM,
+        customer: {
+          type: "object",
+          properties: { name: { type: "string" }, email: { type: "string" }, phone: { type: "string", description: "10-digit Mexican phone" } },
+          required: ["name", "email", "phone"],
+        },
+        delivery: {
+          type: "object",
+          description: "method envio_nacional (needs shippingAddress) or recoleccion_casablanca (needs casablancaBranch id; Guadalajara metro only)",
+          properties: {
+            method: { type: "string", enum: ["envio_nacional", "recoleccion_casablanca"] },
+            shippingAddress: {
+              type: "object",
+              properties: {
+                street: { type: "string" }, number: { type: "string" }, neighborhood: { type: "string" }, city: { type: "string" },
+                state: { type: "string" }, zip: { type: "string", description: "5 digits" }, references: { type: "string" },
+              },
+            },
+            casablancaBranch: { type: "string", description: "Branch id from get_pickup_branches" },
+          },
+          required: ["method"],
+        },
+        personalization: { type: "object", description: "Per product slug (ES): { fieldId: value }, e.g. { \"dulceros-personalizados\": { \"name\": \"Sofía\", \"theme\": \"Unicornios\" } }" },
+        note: { type: "string", description: "Order note for Yume (max 500 chars)" },
+        promoCode: { type: "string", description: "Coupon code, only if the customer gave one" },
+        ...LANG_PARAM,
+      },
+      required: ["items", "customer", "delivery"],
+      additionalProperties: false,
+    },
+  },
+  {
+    name: "get_pickup_branches",
+    description: "Casa Blanca branches in the Guadalajara metro area where an order can be picked up (ids for create_checkout).",
+    inputSchema: { type: "object", properties: {}, additionalProperties: false },
+  },
+  {
     name: "request_quote",
     description:
       "Get a link to request a real quote from Yume via WhatsApp. Pass productSlug or blogSlug to personalize the message to that specific product/topic (same pattern the site's own quote buttons use); omit both only when no product or post is in context.",
@@ -78,11 +158,19 @@ const TOOLS = [
   },
 ];
 
+function asLines(raw: unknown) {
+  try {
+    return normalizeLines(raw);
+  } catch (err) {
+    throw { code: -32602, message: err instanceof Error ? err.message : "Invalid items" };
+  }
+}
+
 function asLang(value: unknown): "es" | "en" {
   return value === "en" ? "en" : "es";
 }
 
-function callTool(name: string, args: Record<string, unknown>) {
+async function callTool(name: string, args: Record<string, unknown>, req: NextRequest) {
   const lang = asLang(args.lang);
 
   switch (name) {
@@ -104,9 +192,9 @@ function callTool(name: string, args: Record<string, unknown>) {
       if (!product) throw { code: -32602, message: `Unknown product slug: ${rawSlug}` };
       if (lang === "en") {
         const t = getProductTranslation(esSlug);
-        return { ...product, ...t, slug: PRODUCT_SLUG_EN[esSlug], url: `${SITE.url}/en/products/${PRODUCT_SLUG_EN[esSlug]}`, shipping: shippingFacts("en") };
+        return { ...product, ...t, slug: PRODUCT_SLUG_EN[esSlug], url: `${SITE.url}/en/products/${PRODUCT_SLUG_EN[esSlug]}`, shipping: shippingFacts("en"), orderGuide: orderGuide(product, "en") };
       }
-      return { ...product, url: `${SITE.url}/productos/${product.slug}`, shipping: shippingFacts("es") };
+      return { ...product, url: `${SITE.url}/productos/${product.slug}`, shipping: shippingFacts("es"), orderGuide: orderGuide(product, "es") };
     }
 
     case "search_faq": {
@@ -143,6 +231,42 @@ function callTool(name: string, args: Record<string, unknown>) {
       if (!post) throw { code: -32602, message: `Unknown blog post slug: ${slug}` };
       return { ...post, url: lang === "en" ? `${SITE.url}/en/blog/${post.slug}` : `${SITE.url}/blog/${post.slug}` };
     }
+
+    case "get_price_quote":
+      return priceLines(asLines(args.items), lang);
+
+    case "create_cart_link":
+      return { ...priceLines(asLines(args.items), lang), next: "Send cartUrl to the customer: they review the cart, add shipping details and pay on studioyume.mx." };
+
+    case "create_checkout": {
+      if (rateLimited(req, "checkout", 10)) throw { code: -32000, message: "Too many checkouts from this client, retry in a minute." };
+      const lines = asLines(args.items);
+      try {
+        const { initPoint, orderId, total } = await createCheckoutPro({
+          items: lines,
+          customer: args.customer,
+          delivery: args.delivery,
+          personalization: args.personalization,
+          note: args.note,
+          promoCode: args.promoCode,
+          lang,
+        });
+        return {
+          orderId,
+          total,
+          currency: "MXN",
+          checkoutUrl: initPoint,
+          next: "The customer must open checkoutUrl to pay (link valid 3 days). After payment Yume emails a confirmation; the digital proof arrives within 24 h by WhatsApp.",
+        };
+      } catch (err) {
+        // Keep the original (Spanish) detail: it names the exact field, e.g. "Falta: Temática."
+        const raw = err instanceof Error ? err.message : "Checkout failed";
+        throw { code: -32602, message: `${localizeError(raw, "en")} (${raw})` };
+      }
+    }
+
+    case "get_pickup_branches":
+      return CASABLANCA_BRANCHES;
 
     case "request_quote": {
       const productSlugRaw = args.productSlug ? String(args.productSlug) : undefined;
@@ -216,7 +340,7 @@ export async function POST(req: NextRequest) {
     const toolName = String(params.name ?? "");
     const toolArgs = (params.arguments as Record<string, unknown>) ?? {};
     try {
-      const result = callTool(toolName, toolArgs);
+      const result = await callTool(toolName, toolArgs, req);
       return jsonRpcResult(id, { content: [{ type: "text", text: JSON.stringify(result) }] });
     } catch (err) {
       const e = err as { code?: number; message?: string };

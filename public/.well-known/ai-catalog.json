@@ -2,11 +2,11 @@
   "specVersion": "1.0.0",
   "name": "Yume",
   "url": "https://studioyume.mx",
-  "description": "Custom creative stationery from Guadalajara, Jalisco, México: medical prescription pads, custom logo stickers, and NFC/QR plates and stands for Google reviews, made to order.",
+  "description": "Custom stickers, labels and stationery made to order in Guadalajara, Jalisco, México, shipping nationwide: vinyl and logo stickers, personalized party favor boxes, temporary tattoos (quote), Google-review NFC/QR plates and stands, medical prescription pads. Agents can quote exact prices and create cart or checkout links via MCP.",
   "entries": [
     {
       "identifier": "yume-mcp-server",
-      "displayName": "Yume MCP server",
+      "displayName": "Yume MCP server (catalog, price quotes, cart and checkout links)",
       "type": "mcp",
       "url": "https://studioyume.mx/mcp",
       "documentation": "https://studioyume.mx/.well-known/mcp/server-card.json"
@@ -29,6 +29,12 @@
       "displayName": "Yume site summary (llms.txt)",
       "type": "content",
       "url": "https://studioyume.mx/llms.txt"
+    },
+    {
+      "identifier": "yume-llms-full-txt",
+      "displayName": "Yume full catalog for agents (llms-full.txt)",
+      "type": "content",
+      "url": "https://studioyume.mx/llms-full.txt"
     }
   ]
 }

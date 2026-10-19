@@ -18,6 +18,7 @@ import { waLink } from "@/content/site";
 import { FREE_SHIPPING_THRESHOLD, deliverySurcharge, type DeliveryMethod } from "@/content/shipping";
 import { formatMXN } from "@/lib/format";
 import { PRODUCT_SLUG_EN, UI, type Lang } from "@/lib/i18n";
+import { parseCartParam } from "@/lib/agent-order";
 
 const CONFIRM_MSG = {
   es: (lines: string, total: string) => `Hola, quiero hacer un pedido:\n${lines}\n\nTotal: ${total} MXN\n\n¿Podrían confirmar disponibilidad y tiempo de entrega?`,
@@ -59,6 +60,17 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
   };
   const [showBar, setShowBar] = useState(false);
   const payRef = useRef<HTMLAnchorElement>(null);
+  // Cart links from AI agents (MCP create_cart_link): ?add=slug:variantId:qty,...
+  // Each line is SET to that quantity (not added), so reopening the link never
+  // doubles the order; the param is dropped from the URL once applied.
+  useEffect(() => {
+    const raw = new URLSearchParams(window.location.search).get("add");
+    if (!raw) return;
+    for (const line of parseCartParam(raw)) {
+      replaceLine({ slug: line.slug, variantId: line.variantId }, cartLine(getProduct(line.slug)!, line.variantId, lang), line.qty);
+    }
+    window.history.replaceState(null, "", window.location.pathname);
+  }, [replaceLine, lang]);
   const t = UI[lang];
   const shopHref = lang === "en" ? "/en/products" : "/productos";
   const checkoutPath = lang === "en" ? "/en/checkout" : "/pago";

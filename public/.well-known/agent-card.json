@@ -1,7 +1,7 @@
 {
   "protocolVersion": "0.3.0",
   "name": "Yume Assistant",
-  "description": "Answers questions in Spanish or English about Yume's personalized stationery products (medical prescription pads, custom stickers, NFC/QR plates and stands for Google reviews), pricing, and coverage area from Guadalajara, Jalisco, Mexico, with nationwide shipping, points to relevant blog guides, and helps request a quote via WhatsApp.",
+  "description": "Answers questions in Spanish or English about Yume's custom stickers, labels, party favor boxes, Google-review NFC/QR plates and stands and medical prescription pads (Guadalajara, Jalisco, shipping across Mexico): prices, shipping, payment, and how to buy, including the MCP ordering tools for agents.",
   "url": "https://studioyume.mx/a2a",
   "preferredTransport": "JSONRPC",
   "supportedInterfaces": [
@@ -10,7 +10,7 @@
       "transport": "JSONRPC"
     }
   ],
-  "version": "1.0.0",
+  "version": "1.1.0",
   "documentationUrl": "https://studioyume.mx/llms.txt",
   "provider": {
     "organization": "Yume",
@@ -24,14 +24,23 @@
   "securitySchemes": {},
   "security": [],
   "supportsAuthenticatedExtendedCard": false,
-  "defaultInputModes": ["text/plain"],
-  "defaultOutputModes": ["text/plain", "application/json"],
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/plain",
+    "application/json"
+  ],
   "skills": [
     {
       "id": "answer-questions",
       "name": "Answer questions",
       "description": "Answer questions about products, pricing, coverage area, and point to relevant blog guides (e.g. pet stickers, prescription requirements, vinyl vs. paper), in Spanish or English.",
-      "tags": ["faq", "pricing", "guides"],
+      "tags": [
+        "faq",
+        "pricing",
+        "guides"
+      ],
       "examples": [
         "¿Cuánto cuesta el recetario médico personalizado?",
         "¿Hacen envíos fuera de Guadalajara?",
@@ -45,17 +54,34 @@
         "What should a medical prescription include?",
         "How much is the Google review NFC plate?"
       ],
-      "inputModes": ["text/plain"],
-      "outputModes": ["text/plain", "application/json"]
+      "inputModes": [
+        "text/plain"
+      ],
+      "outputModes": [
+        "text/plain",
+        "application/json"
+      ]
     },
     {
       "id": "request-quote",
-      "name": "Request a quote",
-      "description": "Point the user to Yume's WhatsApp to start a real quote.",
-      "tags": ["quote", "contact"],
-      "examples": ["¿Cómo hago un pedido?", "How do I place an order?"],
-      "inputModes": ["text/plain"],
-      "outputModes": ["text/plain", "application/json"]
+      "name": "Buy or request a quote",
+      "description": "Explain how to buy online (Mercado Pago), request a quote on WhatsApp, or, for AI agents, use the MCP tools get_price_quote, create_cart_link and create_checkout at https://studioyume.mx/mcp.",
+      "tags": [
+        "quote",
+        "contact"
+      ],
+      "examples": [
+        "¿Cómo hago un pedido?",
+        "How do I place an order?",
+        "How can my agent buy stickers for me?"
+      ],
+      "inputModes": [
+        "text/plain"
+      ],
+      "outputModes": [
+        "text/plain",
+        "application/json"
+      ]
     }
   ]
 }

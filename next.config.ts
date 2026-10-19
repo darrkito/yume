@@ -1,4 +1,8 @@
 import type { NextConfig } from "next";
+import { BLOG_SLUG_EN, PRODUCT_SLUG_EN } from "./src/lib/i18n";
+
+// The quote-only tattoo page lives under /productos but is not in products.ts.
+const PAGE_SLUG_EN = { ...PRODUCT_SLUG_EN, "tatuajes-temporales-personalizados": "custom-temporary-tattoos" };
 
 const nextConfig: NextConfig = {
   // Two root layouts ((es)/(en), one <html lang> each) need a global 404 for unmatched URLs.
@@ -12,6 +16,29 @@ const nextConfig: NextConfig = {
     // the home directory would otherwise make Next.js infer /home/darrkito
     // as the root, which it then refuses to use.
     root: __dirname,
+  },
+  // Agents and people often guess the other language's path (/products,
+  // /en/productos/<es-slug>, /productos/<en-slug>): send them to the real page
+  // instead of a 404.
+  async redirects() {
+    const pairs = (map: Record<string, string>, es: string, en: string) =>
+      Object.entries(map).flatMap(([esSlug, enSlug]) => [
+        { source: `/en/${es}/${esSlug}`, destination: `/en/${en}/${enSlug}`, permanent: true },
+        { source: `/en/${en}/${esSlug}`, destination: `/en/${en}/${enSlug}`, permanent: true },
+        { source: `/${es}/${enSlug}`, destination: `/${es}/${esSlug}`, permanent: true },
+      ]);
+    return [
+      { source: "/products", destination: "/en/products", permanent: true },
+      { source: "/en/productos", destination: "/en/products", permanent: true },
+      { source: "/cart", destination: "/en/cart", permanent: true },
+      { source: "/en/carrito", destination: "/en/cart", permanent: true },
+      { source: "/checkout", destination: "/en/checkout", permanent: true },
+      { source: "/tienda", destination: "/productos", permanent: true },
+      { source: "/shop", destination: "/en/products", permanent: true },
+      ...pairs(PAGE_SLUG_EN, "productos", "products"),
+      { source: "/products/:slug", destination: "/en/products/:slug", permanent: true },
+      ...pairs(BLOG_SLUG_EN, "blog", "blog"),
+    ].filter((r, i, all) => r.source !== r.destination && all.findIndex((o) => o.source === r.source) === i);
   },
   async headers() {
     // RFC 8288 Link headers pointing at the site's real agent-discovery
@@ -35,6 +62,7 @@ const nextConfig: NextConfig = {
               '<https://studioyume.mx/.well-known/agent-card.json>; rel="agent-card"',
               '<https://studioyume.mx/.well-known/api-catalog>; rel="api-catalog"',
               '<https://studioyume.mx/llms.txt>; rel="llms-txt"',
+              '<https://studioyume.mx/llms-full.txt>; rel="llms-full-txt"',
             ].join(", "),
           },
         ],

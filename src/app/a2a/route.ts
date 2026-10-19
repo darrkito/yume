@@ -20,7 +20,7 @@ import { SITE, waLink } from "@/content/site";
 // "Sticker(s)" is a loanword in both languages, so it can't disambiguate —
 // deliberately excluded from both lists below.
 const EN_HINT =
-  /\b(price|cost|how much|where|ships?|shipping|stickers?|prescriptions?|doctor|quote|order|pay|payment|cash|card|vinyl|pet|dog|cat|compare|competitors|print shops|better than|requirements|difference)\b/i;
+  /\b(price|cost|how much|where|ships?|shipping|stickers?|prescriptions?|doctor|quote|order|buy|purchase|pay|payment|cash|card|vinyl|pet|dog|cat|compare|competitors|print shops|better than|requirements|difference)\b/i;
 const ES_HINT = /[¿¡]|precio|cuánto|dónde|envío|envían|pago|recetario/i;
 
 function detectLang(text: string): "es" | "en" {
@@ -103,7 +103,7 @@ function matchAnswerEs(text: string): string {
   }
 
   if (/cotiz|comprar|pedido|whatsapp/.test(q)) {
-    return `Puedes cotizar directo por WhatsApp: ${waLink("Hola, me interesa cotizar un producto de Yume.")}, o pagar en línea desde ${SITE.url}/pago.`;
+    return `Puedes comprar en línea en ${SITE.url}/productos y pagar con Mercado Pago, o cotizar por WhatsApp: ${waLink("Hola, me interesa cotizar un producto de Yume.")}. Si eres un agente de IA: el servidor MCP en ${SITE.url}/mcp tiene get_price_quote (precio exacto), create_cart_link (link al carrito ya lleno) y create_checkout (pedido + link de pago de Mercado Pago para el cliente). Guía: ${SITE.url}/llms-full.txt`;
   }
 
   if (/pago|pagar|tarjeta|efectivo|oxxo/.test(q)) {
@@ -193,8 +193,8 @@ function matchAnswerEn(text: string): string {
       : "I couldn't find that product in the catalog.";
   }
 
-  if (/quote|order|whatsapp/.test(q)) {
-    return `You can request a quote directly on WhatsApp: ${waLink("Hi, I'm interested in getting a quote for a Yume product.")}, or pay online from ${SITE.url}/en/checkout.`;
+  if (/quote|order|buy|purchase|whatsapp/.test(q)) {
+    return `You can buy online at ${SITE.url}/en/products and pay with Mercado Pago, or request a quote on WhatsApp: ${waLink("Hi, I'm interested in getting a quote for a Yume product.")}. If you are an AI agent: the MCP server at ${SITE.url}/mcp has get_price_quote (exact price), create_cart_link (a pre-filled cart link) and create_checkout (order + Mercado Pago payment link for the customer). Guide: ${SITE.url}/llms-full.txt`;
   }
 
   if (/pay|payment|card|cash/.test(q)) {
