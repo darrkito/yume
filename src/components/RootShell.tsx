@@ -17,7 +17,7 @@ import { CartToast } from "@/components/CartToast";
 import { DesignFileProvider } from "@/components/DesignFileContext";
 import { SITE } from "@/content/site";
 import type { Lang } from "@/lib/i18n";
-import { founderSchema, merchantReturnPolicy, ogLocale, ORG_ID } from "@/lib/seo";
+import { founderSchema, merchantReturnPolicy, ogLocale, ORG_ID, shippingServices } from "@/lib/seo";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -110,6 +110,7 @@ function orgSchemaFor(lang: Lang) {
       { "@type": "Country", name: lang === "en" ? "Mexico" : "México" },
     ],
     hasMerchantReturnPolicy: merchantReturnPolicy(lang),
+    hasShippingService: shippingServices(lang),
     sameAs,
   };
 }
@@ -165,6 +166,19 @@ export function RootShell({ lang, children }: { lang: "es-MX" | "en"; children: 
             (same pattern used on Dizayn/SwapperBetweenChains): Clarity's own
             snippet dynamically injects a second script tag, so there's no
             benefit to loading it any earlier than the page becoming interactive. */}
+        {/* Google store widget (Merchant Center 5867664375): Google's own badge
+            with the store rating, rendered only once the store qualifies; until
+            then the script draws nothing. Raised on phones to clear the tab bar
+            and the sticky add-to-cart bars. */}
+        <Script id="merchant-widget" strategy="lazyOnload">
+          {`
+            (function(d){
+              var s=d.createElement("script");s.async=1;s.src="https://www.gstatic.com/shopping/merchant/merchantwidget.js";
+              s.onload=function(){ window.merchantwidget.start({ position: "RIGHT_BOTTOM", region: "MX", mobileBottomMargin: 96 }); };
+              d.body.appendChild(s);
+            })(document);
+          `}
+        </Script>
         <Script id="clarity-init" strategy="lazyOnload">
           {`
             (function(c,l,a,r,i,t,y){

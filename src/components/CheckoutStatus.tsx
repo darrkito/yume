@@ -4,7 +4,9 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { CheckCircle2, Loader2, XCircle } from "lucide-react";
 import { useCart, type CartItem } from "@/components/CartContext";
-import { clearCheckoutDraft } from "@/components/ShippingForm";
+import { clearCheckoutDraft, DRAFT_KEY } from "@/components/ShippingForm";
+import { GoogleReviewsOptIn } from "@/components/GoogleReviewsOptIn";
+import type { DeliveryMethod } from "@/content/shipping";
 import { ReceiptPrinter } from "@/components/ReceiptPrinter";
 import { UI, type Lang } from "@/lib/i18n";
 
@@ -33,8 +35,8 @@ export function CheckoutStatus({
   // came back from (Mercado Pago appends ?external_reference=<order id>) is
   // paid or pending. The receipt shows the real order number and the total
   // actually charged, not the cart's.
-  const [confirmed, setConfirmed] = useState<{ number: string; total: number; shipping: number } | null>(null);
-  const [receipt, setReceipt] = useState<{ items: CartItem[]; total: number; shipping: number; number: string } | null>(null);
+  const [confirmed, setConfirmed] = useState<{ id: string; number: string; total: number; shipping: number; delivery: DeliveryMethod } | null>(null);
+  const [receipt, setReceipt] = useState<{ items: CartItem[]; total: number; shipping: number; number: string; email: string } | null>(null);
   const captured = useRef(false);
 
   useEffect(() => {
@@ -44,7 +46,7 @@ export function CheckoutStatus({
     fetch(`/api/order-status?id=${encodeURIComponent(ref)}`)
       .then((r) => (r.ok ? r.json() : null))
       .then((o) => {
-        if (o && (o.status === "paid" || o.status === "pending")) setConfirmed({ number: o.number, total: o.total, shipping: o.shipping });
+        if (o && (o.status === "paid" || o.status === "pending")) setConfirmed({ id: ref, number: o.number, total: o.total, shipping: o.shipping, delivery: o.delivery });
       })
       .catch(() => {});
   }, [clearCart]);
@@ -52,15 +54,22 @@ export function CheckoutStatus({
   useEffect(() => {
     if (!confirmed || captured.current || items.length === 0) return;
     captured.current = true;
+    // The buyer's email for Google's review opt-in comes from their own checkout
+    // draft in this tab (read before it is cleared), never from the API.
+    let email = "";
+    try {
+      email = String(JSON.parse(sessionStorage.getItem(DRAFT_KEY) ?? "{}").email ?? "");
+    } catch {}
     clearCheckoutDraft();
     // Reacting to the cart (an external store) finishing its post-hydration
     // resync, guarded to fire once.
-    setReceipt({ items, total: confirmed.total, shipping: confirmed.shipping, number: confirmed.number });
+    setReceipt({ items, total: confirmed.total, shipping: confirmed.shipping, number: confirmed.number, email });
     clear();
   }, [confirmed, items, clear]);
 
   return (
     <section className="mx-auto max-w-lg px-6 py-24 text-center">
+      {variant === "success" && confirmed && receipt?.email && <GoogleReviewsOptIn orderId={confirmed.id} email={receipt.email} delivery={confirmed.delivery} lang={lang} />}
       {receipt ? (
         <ReceiptPrinter items={receipt.items} total={receipt.total} shipping={receipt.shipping} orderNumber={receipt.number} lang={lang} />
       ) : (

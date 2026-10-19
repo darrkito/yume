@@ -223,6 +223,46 @@ export function productPageSchema(
   };
 }
 
+// Organization-level shipping policy (Google "merchant shipping policy"
+// markup): the same two options and prices as the Product offers and the
+// checkout. Product-level shippingDetails win where both exist; this covers
+// Search features that read the store, not a single product.
+export function shippingServices(lang: Lang) {
+  const en = lang === "en";
+  const handlingTime = {
+    "@type": "ServicePeriod",
+    businessDays: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"].map((d) => `https://schema.org/${d}`),
+    duration: { "@type": "QuantitativeValue", minValue: PRODUCTION_DAYS.min, maxValue: PRODUCTION_DAYS.max, unitCode: "DAY" },
+  };
+  const conditions = (rate: number, region: Record<string, string>, transit: { min: number; max: number }) =>
+    [
+      { orderValue: { "@type": "MonetaryAmount", minValue: 0, maxValue: FREE_SHIPPING_THRESHOLD - 0.01, currency: "MXN" }, rate },
+      { orderValue: { "@type": "MonetaryAmount", minValue: FREE_SHIPPING_THRESHOLD, currency: "MXN" }, rate: 0 },
+    ].map((c) => ({
+      "@type": "ShippingConditions",
+      shippingDestination: { "@type": "DefinedRegion", ...region },
+      orderValue: c.orderValue,
+      shippingRate: { "@type": "MonetaryAmount", value: c.rate, currency: "MXN" },
+      transitTime: { "@type": "ServicePeriod", duration: { "@type": "QuantitativeValue", minValue: transit.min, maxValue: transit.max, unitCode: "DAY" } },
+    }));
+  return [
+    {
+      "@type": "ShippingService",
+      name: en ? "Home delivery in Mexico" : "Envío a domicilio en México",
+      fulfillmentType: "https://schema.org/FulfillmentTypeDelivery",
+      handlingTime,
+      shippingConditions: conditions(NATIONAL_SHIPPING_PRICE, { addressCountry: "MX" }, NATIONAL_TRANSIT_DAYS),
+    },
+    {
+      "@type": "ShippingService",
+      name: en ? "Pickup at a Casa Blanca branch (Guadalajara metro area)" : "Recolección en sucursal Casa Blanca (zona metropolitana de Guadalajara)",
+      fulfillmentType: "https://schema.org/FulfillmentTypeCollectionPoint",
+      handlingTime,
+      shippingConditions: conditions(CASABLANCA_PRICE, { addressCountry: "MX", addressRegion: "JAL" }, { min: PICKUP_EXTRA_DAYS, max: PICKUP_EXTRA_DAYS }),
+    },
+  ];
+}
+
 // Only defective items can be returned or exchanged (everything is made to
 // order): 48 h from delivery, customer pays the return shipping. Full text
 // at /politica-de-devoluciones (ES) and /en/returns-policy (EN).

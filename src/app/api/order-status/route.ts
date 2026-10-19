@@ -21,6 +21,7 @@ export async function GET(req: NextRequest) {
       number: order.id.slice(0, 8),
       total: Number(order.total),
       shipping: Math.max(0, Number(order.total) - subtotal),
+      delivery: order.delivery_method,
     });
   } catch (err) {
     console.error("[order-status] error", err);
