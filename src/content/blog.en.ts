@@ -1167,9 +1167,9 @@ export const blogPostsEn: BlogPost[] = [
   {
     slug: BLOG_SLUG_EN["etiquetas-navidenas-personalizadas"],
     title: "Custom Christmas labels: for gifts, bottles and your business packaging",
-    metaTitle: "Custom Christmas labels for gifts and bottles",
+    metaTitle: "Christmas gift tags: free printable PDF or custom vinyl",
     description:
-      "Custom vinyl Christmas labels for gifts, bottles, treat bags and business packaging. First 100 pieces for $350 MXN, with your design or name. Made in Guadalajara, shipping across Mexico.",
+      "Christmas gift tags: download the free printable PDF or order custom vinyl labels, 100 pieces for $350 MXN. Made in Guadalajara, shipping across Mexico.",
     category: "Guides",
     publishedAt: "2026-10-19",
     intro:
@@ -1187,6 +1187,13 @@ export const blogPostsEn: BlogPost[] = [
         body: [
           "Gifts: on the box or bag, instead of a paper tag that gets lost. Bottles of wine, ponche or liquor you are giving away. Aguinaldo treat bags and posada party favor boxes. And businesses: on the packaging, bags and boxes of your December orders, or on gifts for your customers.",
           "Because vinyl is water resistant, the labels hold up on bottles that come out of the fridge or bags that get wet.",
+        ],
+      },
+      {
+        heading: "Free printable Christmas tags",
+        body: [
+          "If you only need a few, download our free sheet (above): 12 tags per page with room for \"To\" and \"From\", in a color version and a black and white one for kids to color in. Print it on letter size cardstock or sticker paper and cut along the dotted line.",
+          "For lots of gifts, bottles or business packaging, printed vinyl labels last longer, resist water and carry your own design, name or logo.",
         ],
       },
       {
@@ -1212,6 +1219,7 @@ export const blogPostsEn: BlogPost[] = [
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
     relatedBlogSlugs: [BLOG_SLUG_EN["dulceros-navidenos-personalizados"], BLOG_SLUG_EN["stickers-para-empaques-de-negocio"], BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"]],
+    download: { href: "/descargas/printable-christmas-gift-tags.pdf", label: "Free download: printable Christmas gift tags (PDF, color and black and white)" },
   },
 ];
 

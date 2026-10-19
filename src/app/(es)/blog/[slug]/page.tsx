@@ -72,6 +72,11 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       <h1 className="animate-fade-up animate-fade-up-1 mt-4 font-display text-3xl text-ink text-balance sm:text-4xl">{post.title}</h1>
       <BlogQuickFacts post={post} lang="es" />
       <p className="animate-fade-up animate-fade-up-2 mt-4 text-sm leading-relaxed text-ink-soft">{post.intro}</p>
+      {post.download && (
+        <a href={post.download.href} download className="mt-5 inline-flex min-h-11 items-center rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-deep">
+          {post.download.label}
+        </a>
+      )}
 
       <div className="mt-10 space-y-10">
         {post.sections.map((section, i) => (

@@ -40,6 +40,8 @@ export interface BlogPost {
   /** Outbound citations to real primary/authoritative sources referenced in
    * the post's content: rendered as a "Fuentes" list at the end. */
   sources?: { label: string; url: string }[];
+  /** Free file under public/ offered right after the intro (e.g. a printable PDF). */
+  download?: { href: string; label: string };
 }
 
 export const blogPosts: BlogPost[] = [
@@ -1223,9 +1225,9 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "etiquetas-navidenas-personalizadas",
     title: "Etiquetas navideñas personalizadas: para regalos, botellas y empaques de tu negocio",
-    metaTitle: "Etiquetas navideñas personalizadas para regalos y botellas",
+    metaTitle: "Etiquetas navideñas para regalos: PDF gratis o en vinil",
     description:
-      "Etiquetas navideñas personalizadas en vinil: para regalos, botellas, aguinaldos y empaques de negocio. Primeras 100 piezas por $350, con tu diseño o nombre. Hechas en Guadalajara, envíos a todo México.",
+      "Etiquetas navideñas para regalos: descarga gratis el PDF para imprimir o pídelas personalizadas en vinil, 100 piezas por $350. Hechas en Guadalajara, envíos a todo México.",
     category: "Guías",
     publishedAt: "2026-10-19",
     intro:
@@ -1243,6 +1245,13 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Para regalos: en la caja o la bolsa, en vez de la tarjetita de papel que se pierde. Para botellas de vino, ponche o licor que vas a regalar. Para las bolsitas de aguinaldo y los dulceros de la posada. Y para negocios: en los empaques, bolsas y cajas de tus pedidos de diciembre, o en los regalos para tus clientes.",
           "Como el vinil resiste el agua, aguanta bien en botellas que salen del refrigerador o en bolsas que se mojan.",
+        ],
+      },
+      {
+        heading: "Etiquetas navideñas para imprimir gratis",
+        body: [
+          "Si solo necesitas unas cuantas, descarga nuestra hoja gratis (arriba): 12 etiquetas por hoja con espacio para \"Para\" y \"De\", en una versión a color y otra en blanco y negro para que los niños las coloreen. Imprímela en tamaño carta, en cartulina o en papel adhesivo, y recórtalas por la línea punteada.",
+          "Para muchos regalos, botellas o empaques de negocio, las de vinil impreso duran más, resisten el agua y llevan tu propio diseño, nombre o logo.",
         ],
       },
       {
@@ -1268,6 +1277,7 @@ export const blogPosts: BlogPost[] = [
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
     relatedBlogSlugs: ["dulceros-navidenos-personalizados", "stickers-para-empaques-de-negocio", "cuanto-tarda-un-pedido-de-stickers-personalizados"],
+    download: { href: "/descargas/etiquetas-navidenas-para-imprimir.pdf", label: "Descarga gratis: etiquetas navideñas para imprimir (PDF, color y blanco y negro)" },
   },
   // Dulceros cluster lives in its own file (blog-dulceros.ts).
   ...dulceroPosts,
