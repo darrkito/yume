@@ -14,6 +14,7 @@ const EN: [string, string][] = [
   ["El correo no es válido", "The email address is not valid."],
   ["El teléfono debe", "The phone number must have 10 digits."],
   ["Selecciona una sucursal", "Choose a valid Casa Blanca branch."],
+  ["El cupón no es válido", "This coupon is not valid or has expired."],
   ["Demasiados intentos", "Too many attempts. Wait a minute and try again."],
 ];
 

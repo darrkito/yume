@@ -3,6 +3,7 @@ import { isAiSource, type AiSource } from "@/lib/ai-source";
 import { SITE } from "@/content/site";
 import { ORDER_NOTE_LABEL, validateNote, validatePersonalization, type PersonalizationEntry } from "@/content/personalization";
 import { getProduct, cartItemLabel, isValidVariant, resolvePrice } from "@/content/products";
+import { activePromo, discountedPrice } from "@/lib/promo";
 
 // Server-only client — never import this from a "use client" component.
 // Throws at request time (not at module load) so `next build` doesn't fail
@@ -52,12 +53,16 @@ export interface CheckoutItem {
   src?: AiSource;
   /** Buyer-provided details (name on the box, license no...), see content/personalization.ts. */
   personalization?: PersonalizationEntry[];
+  /** Coupon code applied to the whole order; first line only. Line prices are already discounted. */
+  promo?: string;
+  /** Pre-discount unit price, set only when a coupon changed `price`. */
+  listPrice?: number;
 }
 
 // Trusts only `slug`, `qty`, and `variantId` from the client — `name`/`price`
 // are always re-resolved from the server-side product catalog so a tampered
 // request body can never change what actually gets charged.
-export function validateCartItems(items: unknown, extras: { personalization?: unknown; note?: unknown; lang?: unknown; src?: unknown } = {}): CheckoutItem[] {
+export function validateCartItems(items: unknown, extras: { personalization?: unknown; note?: unknown; lang?: unknown; src?: unknown; promoCode?: unknown } = {}): CheckoutItem[] {
   if (!Array.isArray(items) || items.length === 0) {
     throw new Error("El carrito está vacío.");
   }
@@ -96,5 +101,18 @@ export function validateCartItems(items: unknown, extras: { personalization?: un
   if (note) checked[0].personalization = [...(checked[0].personalization ?? []), { label: ORDER_NOTE_LABEL, value: note }];
   if (extras.lang === "en") checked[0].locale = "en";
   if (isAiSource(extras.src)) checked[0].src = extras.src;
+
+  // Shipping stays computed on the pre-discount subtotal by the routes, so the
+  // coupon never costs a shopper their free shipping.
+  if (typeof extras.promoCode === "string" && extras.promoCode.trim()) {
+    const promo = activePromo(extras.promoCode);
+    if (!promo) throw new Error("El cupón no es válido o ya expiró.");
+    for (const line of checked) {
+      line.listPrice = line.price;
+      line.price = discountedPrice(line.price, promo);
+      line.name = `${line.name} (${promo.code} -${promo.pct}%)`;
+    }
+    checked[0].promo = promo.code;
+  }
   return checked;
 }

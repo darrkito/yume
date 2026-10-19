@@ -9,6 +9,7 @@ import { Footer } from "@/components/Footer";
 import { TabBar } from "@/components/TabBar";
 import { TrackClicks } from "@/components/TrackClicks";
 import { TrafficSource } from "@/components/TrafficSource";
+import { PromoBanner } from "@/components/PromoBanner";
 import { LanguageBanner } from "@/components/LanguageBanner";
 import { WebMcpProvider } from "@/components/WebMcpProvider";
 import { CartProvider } from "@/components/CartContext";
@@ -145,6 +146,7 @@ export function RootShell({ lang, children }: { lang: "es-MX" | "en"; children: 
         <CartProvider>
           <DesignFileProvider>
             <WebMcpProvider />
+            <PromoBanner lang={pageLang} />
             <Header />
             <LanguageBanner />
             {/* Short cross-fade between pages (View Transitions API; browsers without it navigate as before). */}

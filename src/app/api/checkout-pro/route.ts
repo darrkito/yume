@@ -15,12 +15,13 @@ export async function POST(req: NextRequest) {
     const body = await req.json();
     lang = body.lang;
     const backBase = `${checkoutBaseUrl()}${lang === "en" ? "/en/checkout" : "/pago"}`;
-    const items = validateCartItems(body.items, { personalization: body.personalization, note: body.note, lang: body.lang, src: body.src });
+    const items = validateCartItems(body.items, { personalization: body.personalization, note: body.note, lang: body.lang, src: body.src, promoCode: body.promoCode });
     const customer = validateCustomer(body.customer);
     const delivery = validateDelivery(body.delivery);
     const designFileUrls = validateDesignFileUrls(body.designFileUrls);
     const subtotal = items.reduce((sum, item) => sum + item.price * item.qty, 0);
-    const surcharge = deliverySurcharge(delivery.method, subtotal);
+    const listSubtotal = items.reduce((sum, item) => sum + (item.listPrice ?? item.price) * item.qty, 0);
+    const surcharge = deliverySurcharge(delivery.method, listSubtotal);
     const total = subtotal + surcharge;
 
     const order = await createPendingOrder({ customer, delivery, items, total, designFileUrls });

@@ -21,12 +21,13 @@ export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
     lang = body.lang;
-    const items = validateCartItems(body.items, { personalization: body.personalization, note: body.note, lang: body.lang, src: body.src });
+    const items = validateCartItems(body.items, { personalization: body.personalization, note: body.note, lang: body.lang, src: body.src, promoCode: body.promoCode });
     const customer = validateCustomer(body.customer);
     const delivery = validateDelivery(body.delivery);
     const designFileUrls = validateDesignFileUrls(body.designFileUrls);
     const subtotal = items.reduce((sum, item) => sum + item.price * item.qty, 0);
-    const total = subtotal + deliverySurcharge(delivery.method, subtotal);
+    const listSubtotal = items.reduce((sum, item) => sum + (item.listPrice ?? item.price) * item.qty, 0);
+    const total = subtotal + deliverySurcharge(delivery.method, listSubtotal);
     const formData = body.formData ?? {};
 
     const order = await createPendingOrder({ customer, delivery, items, total, designFileUrls });

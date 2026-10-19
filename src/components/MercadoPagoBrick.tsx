@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { discountedPrice, type Promo } from "@/lib/promo";
 import { initMercadoPago, Payment } from "@mercadopago/sdk-react";
 import { Loader2, Store, XCircle } from "lucide-react";
 import { useCart } from "@/components/CartContext";
@@ -112,6 +113,7 @@ export function MercadoPagoBrick({
   note,
   onSettled,
   lang = "es",
+  promo = null,
 }: {
   items: CartItem[];
   total: number;
@@ -122,6 +124,7 @@ export function MercadoPagoBrick({
   note?: string;
   onSettled?: () => void;
   lang?: Lang;
+  promo?: Promo | null;
 }) {
   const { clear } = useCart();
   const [ready, setReady] = useState(false);
@@ -269,14 +272,14 @@ export function MercadoPagoBrick({
               const res = await fetch("/api/checkout-payment", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ items, formData, customer, delivery, designFileUrls, personalization, note, lang, src: readAiSource() }),
+                body: JSON.stringify({ items, formData, customer, delivery, designFileUrls, personalization, note, lang, src: readAiSource(), promoCode: promo?.code }),
               });
               const data = await res.json().catch(() => ({}));
               if (!res.ok) throw new Error(data.error ?? c.genericError);
 
               if (data.status === "approved") {
                 track("purchase_brick");
-                setOrderSnapshot({ items, total, orderNumber: String(data.orderId ?? "").slice(0, 8) || undefined });
+                setOrderSnapshot({ items: promo ? items.map((i) => ({ ...i, price: discountedPrice(i.price, promo) })) : items, total, orderNumber: String(data.orderId ?? "").slice(0, 8) || undefined });
                 clear();
                 onSettled?.();
                 setResult({ kind: "approved" });
