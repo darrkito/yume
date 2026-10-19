@@ -135,7 +135,7 @@ export const dulceroPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: [DULCERO],
-    relatedBlogSlugs: [en("dulceros-para-eventos-empresariales"), en("que-poner-en-un-dulcero"), en("dulceros-personalizados-guadalajara")],
+    relatedBlogSlugs: [en("etiquetas-navidenas-personalizadas"), en("dulceros-para-eventos-empresariales"), en("que-poner-en-un-dulcero"), en("dulceros-personalizados-guadalajara")],
   },
   {
     slug: en("dulceros-para-dia-del-nino"),

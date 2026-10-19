@@ -1164,6 +1164,55 @@ export const blogPostsEn: BlogPost[] = [
     serviceLink: { href: "/en/products/waterproof-vinyl-stickers", label: "See custom vinyl stickers" },
     quoteMessage: "Hi, I'd like a quote for name labels for bottles, lunch boxes, and backpacks.\n\nName(s):\nApproximate quantity:\nDo I already have a design? (yes / no):",
   },
+  {
+    slug: BLOG_SLUG_EN["etiquetas-navidenas-personalizadas"],
+    title: "Custom Christmas labels: for gifts, bottles and your business packaging",
+    metaTitle: "Custom Christmas labels for gifts and bottles",
+    description:
+      "Custom vinyl Christmas labels for gifts, bottles, treat bags and business packaging. First 100 pieces for $350 MXN, with your design or name. Made in Guadalajara, shipping across Mexico.",
+    category: "Guides",
+    publishedAt: "2026-10-19",
+    intro:
+      "A Christmas label with the family name, a message or your business logo turns any gift, bottle or treat bag into something made for the person who gets it. At Yume we make them in vinyl, with your design and in any shape you want. Here is what goes on them, what they are used for and the latest date to order so they arrive before Christmas.",
+    sections: [
+      {
+        heading: "What goes on Christmas labels",
+        body: [
+          "The most common choice is a short message (\"Feliz Navidad\", \"With love from the López family\", \"Happy holidays 2026\") next to a Christmas drawing: a tree, an ornament, a star or a snowman. You can also use a photo, each person's name to mark their gifts or, for a business, your logo with a holiday touch.",
+          "Tell us what you want to say and the style you like, and we send you a digital proof before printing. Nothing gets printed without your approval.",
+        ],
+      },
+      {
+        heading: "What they are used for",
+        body: [
+          "Gifts: on the box or bag, instead of a paper tag that gets lost. Bottles of wine, ponche or liquor you are giving away. Aguinaldo treat bags and posada party favor boxes. And businesses: on the packaging, bags and boxes of your December orders, or on gifts for your customers.",
+          "Because vinyl is water resistant, the labels hold up on bottles that come out of the fridge or bags that get wet.",
+        ],
+      },
+      {
+        heading: "Shape, finish and price",
+        body: [
+          "The cut follows the shape of your design: round, ornament or star shaped, or square. You choose die cut (each label loose) or kiss cut (several on one sheet, easy to peel). The finish can be matte, glossy or holographic; holographic looks very festive and costs $0.50 MXN more per piece.",
+        ],
+        table: {
+          headers: ["Product", "Minimum", "First 100 pieces", "Over 100"],
+          rows: [
+            ["Custom vinyl stickers (any design, name or photo)", "40 pieces", "$350 MXN", "$3.15 MXN per extra piece"],
+            ["Logo stickers and labels (businesses)", "50 pieces", "$300 MXN", "$2.70 MXN per extra piece"],
+          ],
+        },
+      },
+      {
+        heading: "Latest date to order for Christmas",
+        body: [
+          `The digital proof usually arrives within 24 hours of payment. Once you approve it, the order takes ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days to reach your door anywhere in Mexico, or ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days if you pick it up at a Casa Blanca branch in Guadalajara.`,
+          "So it is best to order in November or, at the latest, the first week of December: that leaves room to adjust the design and for couriers, which are busier in December. If you are also giving party favor boxes, you can order everything together; shipping is free on orders of $750 MXN or more.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["dulceros-navidenos-personalizados"], BLOG_SLUG_EN["stickers-para-empaques-de-negocio"], BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"]],
+  },
 ];
 
 export function getBlogPostEn(slug: string) {

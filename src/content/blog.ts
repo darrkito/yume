@@ -1220,6 +1220,55 @@ export const blogPosts: BlogPost[] = [
     serviceLink: { href: "/productos/stickers-vinil-impermeable", label: "Ver stickers de vinil personalizados" },
     quoteMessage: "Hola, quiero cotizar etiquetas con nombre para botellas, loncheras y mochilas.\n\nNombre(s):\nCantidad aproximada:\n¿Ya tengo diseño? (sí / no):",
   },
+  {
+    slug: "etiquetas-navidenas-personalizadas",
+    title: "Etiquetas navideñas personalizadas: para regalos, botellas y empaques de tu negocio",
+    metaTitle: "Etiquetas navideñas personalizadas para regalos y botellas",
+    description:
+      "Etiquetas navideñas personalizadas en vinil: para regalos, botellas, aguinaldos y empaques de negocio. Primeras 100 piezas por $350, con tu diseño o nombre. Hechas en Guadalajara, envíos a todo México.",
+    category: "Guías",
+    publishedAt: "2026-10-19",
+    intro:
+      "Una etiqueta navideña con el nombre de la familia, un mensaje o el logo de tu negocio convierte cualquier regalo, botella o bolsita de aguinaldo en algo hecho especialmente para quien lo recibe. En Yume las hacemos en vinil, con tu diseño y en la forma que quieras. Aquí va qué se les pone, en qué se usan y hasta cuándo conviene pedirlas para que lleguen antes de Navidad.",
+    sections: [
+      {
+        heading: "Qué se les pone a las etiquetas navideñas",
+        body: [
+          "Lo más común es un mensaje corto (\"Feliz Navidad\", \"Con cariño de la familia López\", \"Felices fiestas 2026\") junto a un dibujo navideño: un pino, una esfera, una estrella o un muñeco de nieve. También puedes usar una foto, el nombre de cada persona para marcar sus regalos o, si es para tu negocio, tu logo con un toque navideño.",
+          "Cuéntanos qué quieres decir y qué estilo te gusta, y te mandamos una prueba digital antes de imprimir. No imprimimos nada sin tu aprobación.",
+        ],
+      },
+      {
+        heading: "En qué se usan",
+        body: [
+          "Para regalos: en la caja o la bolsa, en vez de la tarjetita de papel que se pierde. Para botellas de vino, ponche o licor que vas a regalar. Para las bolsitas de aguinaldo y los dulceros de la posada. Y para negocios: en los empaques, bolsas y cajas de tus pedidos de diciembre, o en los regalos para tus clientes.",
+          "Como el vinil resiste el agua, aguanta bien en botellas que salen del refrigerador o en bolsas que se mojan.",
+        ],
+      },
+      {
+        heading: "Forma, acabado y precio",
+        body: [
+          "El corte sigue la forma de tu diseño: redondas, en forma de esfera o de estrella, o cuadradas. Eliges troquelado (cada etiqueta suelta) o semitroquelado (varias en una hoja, fáciles de despegar). El acabado puede ser mate, brillante u holográfico; el holográfico se ve muy navideño y cuesta $0.50 más por pieza.",
+        ],
+        table: {
+          headers: ["Producto", "Mínimo", "Primeras 100 piezas", "Más de 100"],
+          rows: [
+            ["Stickers de vinil personalizados (cualquier diseño, nombre o foto)", "40 piezas", "$350", "$3.15 por pieza extra"],
+            ["Stickers y etiquetas con tu logo (negocios)", "50 piezas", "$300", "$2.70 por pieza extra"],
+          ],
+        },
+      },
+      {
+        heading: "Hasta cuándo pedirlas para que lleguen antes de Navidad",
+        body: [
+          `La prueba digital llega normalmente en un máximo de 24 horas después del pago. Desde que la apruebas, el pedido tarda ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles en llegar a tu domicilio en cualquier parte de México, o ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles si lo recoges en una sucursal Casa Blanca en Guadalajara.`,
+          "Por eso conviene pedirlas en noviembre o, a más tardar, la primera semana de diciembre: así hay margen para ajustar el diseño y para la paquetería, que en diciembre va más cargada. Si también vas a regalar dulceros, puedes pedir todo junto; el envío es gratis en compras de $750 o más.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
+    relatedBlogSlugs: ["dulceros-navidenos-personalizados", "stickers-para-empaques-de-negocio", "cuanto-tarda-un-pedido-de-stickers-personalizados"],
+  },
   // Dulceros cluster lives in its own file (blog-dulceros.ts).
   ...dulceroPosts,
 ];
