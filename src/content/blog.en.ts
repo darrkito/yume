@@ -131,7 +131,7 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["stickers-logo-personalizado"],
-    relatedBlogSlugs: [BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"], BLOG_SLUG_EN["stickers-para-empaques-de-negocio"]],
+    relatedBlogSlugs: [BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"], BLOG_SLUG_EN["stickers-para-empaques-de-negocio"], BLOG_SLUG_EN["impresion-de-etiquetas-rollo-hoja-o-por-pieza"]],
   },
   {
     slug: BLOG_SLUG_EN["papeleria-personalizada-para-negocios-jalisco"],
@@ -1212,6 +1212,94 @@ export const blogPostsEn: BlogPost[] = [
     relatedBlogSlugs: [BLOG_SLUG_EN["etiquetas-escolares-personalizadas-guadalajara"]],
     serviceLink: { href: "/en/products/waterproof-vinyl-stickers", label: "See custom vinyl stickers" },
     quoteMessage: "Hi, I'd like a quote for name labels for bottles, lunch boxes, and backpacks.\n\nName(s):\nApproximate quantity:\nDo I already have a design? (yes / no):",
+  },
+  {
+    slug: BLOG_SLUG_EN["impresion-de-etiquetas-rollo-hoja-o-por-pieza"],
+    title: "Custom Label Printing: Roll, Sheet or By the Piece",
+    metaTitle: "Label Printing: Roll, Sheet or By the Piece",
+    description:
+      "Label printing on rolls, sheets or by the piece: which one fits depending on how many you need and how you'll apply them, with real prices from 50 pieces.",
+    category: "Guides",
+    publishedAt: "2026-10-20",
+    intro:
+      "When you look for somewhere to print labels for your product or business, the first decision isn't the design but the format: some print shops work with roll labels, others print full sheets, and others deliver each label cut to its shape. Each format makes sense for a different kind of business, and picking the wrong one is the most common way to overpay or end up with labels you can't use.",
+    sections: [
+      {
+        heading: "Roll labels: for volume and labeling machines",
+        body: [
+          "Roll labels are printed one after another on a backed strip and are made for businesses that label lots of identical products: drinks, packaged food, cosmetics made in series. Their advantage is that they're applied with a labeling machine or a dispenser, without peeling them one by one.",
+          "The trade-off is that they're usually produced in large runs of the same design: if you're just starting out or change designs often, you end up buying more than you'll use. Yume doesn't offer roll labels in its catalog; if your production uses a labeling machine, message us on WhatsApp before ordering and we'll tell you whether we can help.",
+        ],
+      },
+      {
+        heading: "Sheet labels: several on one page",
+        body: [
+          "On a sheet, several labels are printed together and you peel them off by hand. It's the format of office-printer label sheets and many quick-print shops: practical when your labels are rectangles or circles and you'll apply them yourself.",
+          "The limits are shape and material: standard sheets usually come in preset sizes, and paper doesn't hold up well to water or handling. If you're thinking of printing them at home, our guide on where to print custom stickers compares printing yourself with having them made.",
+        ],
+      },
+      {
+        heading: "Labels by the piece: cut to your design's shape",
+        body: [
+          "The third option is the one we work with at Yume: each label follows the shape of your logo or design and you order the exact number of pieces, not by sheet or roll. You choose die-cut (each label loose, cut all the way around its outline) or kiss-cut (cut to shape but left on its backing sheet, to peel when you use it).",
+          "It's the format that best fits small and mid-size brands that label by hand: packaging, bags, jars, candles or shipping boxes. You order from 50 pieces with your logo, without committing to a large run, and we send you a digital proof to approve before printing.",
+        ],
+      },
+      {
+        heading: "Material and finish",
+        body: [
+          "Our labels are vinyl and water-resistant; Custom Vinyl Stickers also resist sun and scratches. The difference compared with paper shows most on products that get wet or handled a lot, and we explain it in detail in our vinyl vs. paper guide.",
+          "For the finish you choose matte, glossy or holographic (holographic adds $0.50 per piece).",
+        ],
+      },
+      {
+        heading: "How much label printing by the piece costs",
+        body: [
+          `These are the real prices from our catalog. Past 100 pieces, every extra piece is at wholesale price, 10% off. Shipping is separate: $${NATIONAL_SHIPPING_PRICE} MXN anywhere in Mexico or $${CASABLANCA_PRICE} MXN if you pick up at a Casa Blanca branch in Guadalajara, and it's free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more.`,
+        ],
+        table: {
+          headers: ["Quantity", "Logo stickers & labels", "Vinyl stickers (your design)"],
+          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
+        },
+      },
+      {
+        heading: "How to choose in 4 questions",
+        body: [
+          "How many do you need? Dozens or hundreds: by the piece. Thousands of the same design every month: it's worth getting a roll quote.",
+          "How will you apply them? By hand: by the piece or on sheets. With a labeling machine: rolls.",
+          "What shape is your logo? If it isn't a rectangle or a circle, a label cut to its shape looks much better than a square with a white background around it.",
+          "Will it get wet or handled a lot? Then vinyl, not paper.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Which is better, roll labels or sheet labels?",
+        a: "It depends on how you apply them: rolls if you use a labeling machine or dispenser and order large runs of the same design; sheets or by the piece if you apply them by hand and need smaller quantities.",
+      },
+      {
+        q: "What is the minimum to print labels at Yume?",
+        a: "50 pieces for Logo Stickers & Labels and 40 pieces for Custom Vinyl Stickers.",
+      },
+      {
+        q: "How much do 100 custom labels cost?",
+        a: `100 labels with your logo cost $${priceOf("stickers-logo-personalizado", 100)} MXN and 100 vinyl stickers with your design cost $${priceOf("stickers-vinil-impermeable", 100)} MXN. Past 100 pieces, every extra piece is at wholesale price.`,
+      },
+      {
+        q: "Do you print roll labels?",
+        a: "Roll labels aren't in our catalog: we make die-cut or kiss-cut labels by the piece. If your production uses a labeling machine, message us on WhatsApp before ordering.",
+      },
+      {
+        q: "Are the labels water-resistant?",
+        a: "Yes, all of our labels and stickers are water-resistant vinyl.",
+      },
+      {
+        q: "How long does printing my labels take?",
+        a: `The digital proof arrives within 24 hours of payment. Once you approve it, your order reaches your home in ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days, or is ready for Casa Blanca pickup (Guadalajara) in ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days.`,
+      },
+    ],
+    relatedProductSlugs: ["stickers-logo-personalizado"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"], BLOG_SLUG_EN["troquelado-vs-semitroquelado-stickers"], BLOG_SLUG_EN["donde-imprimir-stickers-personalizados-mexico"]],
   },
   {
     slug: BLOG_SLUG_EN["etiquetas-navidenas-personalizadas"],

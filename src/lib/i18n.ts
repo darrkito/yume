@@ -44,6 +44,7 @@ export const BLOG_SLUG_EN: Record<string, string> = {
   "etiquetas-escolares-personalizadas-guadalajara": "custom-school-labels-guadalajara",
   "etiquetas-con-nombre-para-botellas-loncheras-y-mochilas": "name-labels-for-bottles-lunch-boxes-backpacks",
   "etiquetas-navidenas-personalizadas": "custom-christmas-labels",
+  "impresion-de-etiquetas-rollo-hoja-o-por-pieza": "label-printing-roll-sheet-or-by-the-piece",
   "cuanto-duran-los-tatuajes-temporales-y-como-quitarlos": "how-long-do-temporary-tattoos-last-and-how-to-remove-them",
   "donde-imprimir-stickers-personalizados-mexico": "where-to-print-custom-stickers-mexico",
   "dulceros-personalizados-guadalajara": "personalized-party-favor-boxes-guadalajara",
