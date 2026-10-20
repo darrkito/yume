@@ -1,6 +1,7 @@
 import type { BlogPost } from "@/content/blog";
+import { priceOf, casablancaBranchNames } from "@/content/blog";
 import { tierPriceRows } from "@/content/products";
-import { NATIONAL_TRANSIT_DAYS, PICKUP_EXTRA_DAYS, PRODUCTION_DAYS } from "@/content/shipping";
+import { CASABLANCA_BRANCHES, CASABLANCA_PRICE, FREE_SHIPPING_THRESHOLD, NATIONAL_SHIPPING_PRICE, NATIONAL_TRANSIT_DAYS, PICKUP_EXTRA_DAYS, PRODUCTION_DAYS } from "@/content/shipping";
 import { BLOG_SLUG_EN } from "@/lib/i18n";
 import { dulceroPostsEn } from "@/content/blog-dulceros.en";
 
@@ -48,17 +49,10 @@ export const blogPostsEn: BlogPost[] = [
       "How to use custom stickers if you have a brand, a small business, or a stall at bazaars in Guadalajara: what format to order and what file to send for your logo.",
     category: "Guides",
     publishedAt: "2026-08-28",
-    modifiedAt: "2026-10-09",
+    modifiedAt: "2026-10-20",
     intro:
       "Guadalajara has a strong small-business scene (bakeries, clothing brands, candle makers, jewelry, coffee) selling at bazaars, pop-up markets, or directly through social media. A sticker with your logo is one of the cheapest ways to make your brand look consistent on every order that goes out, with no need for special packaging.",
     sections: [
-      {
-        heading: "How do you order custom temporary tattoos and what does the order include?",
-        body: [
-          "Temporary tattoos are quoted on WhatsApp: there is no fixed published price because it is confirmed with your design, size and quantity. Before production we send you a digital proof, normally within 24 hours and with up to 2 rounds of changes, and we print nothing without your approval.",
-          "We produce in Guadalajara and ship across Mexico. We do not issue invoices (CFDI); if your company needs one, tell us when you ask for a quote.",
-        ],
-      },
       {
         heading: "What they're actually used for",
         body: [
@@ -67,10 +61,29 @@ export const blogPostsEn: BlogPost[] = [
         ],
       },
       {
+        heading: "Custom sticker and label prices",
+        body: [
+          "We sell by piece count, not by sheet, and there are two options: Logo Stickers & Labels, made for your business logo (50 pieces minimum), and Custom Vinyl Stickers, for any design, character or photo (40 pieces minimum). On both, past 100 pieces every extra piece is at wholesale price, 10% off.",
+          "On both you choose the cut (die-cut to your design's shape, or kiss-cut) and the finish: matte, glossy or holographic (holographic adds $0.50 per piece). All of them are water-resistant.",
+        ],
+        table: {
+          headers: ["Quantity", "Logo stickers & labels", "Vinyl stickers (your design)"],
+          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
+        },
+      },
+      {
         heading: "What quantity to order",
         body: [
-          "We sell by piece count, not by sheet: the first 100 pieces are $300 and, past 100, every extra piece is at wholesale price ($2.70, 10% off); and if you need fewer, you can order from 50: enough to match the order to your business's actual size without buying more than you need.",
+          "Since we sell by the piece, you order the exact quantity you need instead of full sheets: from 50 with your logo, enough to match the order to your business's actual size without buying more than you need.",
           "All of our stickers are water-resistant, so they hold up well on packaging that gets wet or handled often (bags, bottles, shipments). Let us know the shape or size you prefer when requesting a quote, and we'll send you a digital proof before printing.",
+        ],
+      },
+      {
+        heading: "Pick up in Guadalajara or get it delivered",
+        body: [
+          `We don't have a storefront, but we produce in Guadalajara. If you're in the metro area you can pick up your order at one of ${CASABLANCA_BRANCHES.length} Casa Blanca parcel branches for $${CASABLANCA_PRICE} MXN: ${casablancaBranchNames}. You choose the branch at checkout.`,
+          `If you'd rather have it delivered to your home or business, shipping anywhere in Mexico is $${NATIONAL_SHIPPING_PRICE} MXN. On orders of $${FREE_SHIPPING_THRESHOLD} MXN or more, both shipping and pickup are free.`,
+          `The digital proof normally arrives within 24 hours of payment. Once you approve it, Casa Blanca pickup takes ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days and home delivery ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days.`,
         ],
       },
       {
@@ -79,6 +92,42 @@ export const blogPostsEn: BlogPost[] = [
           "Ideally a PNG, PDF, AI, or SVG with a transparent background: that way the sticker looks clean without a white box around it. If you only have your logo as a JPG or a photo, we can also work with that, but we'll let you know if it needs to be vectorized or improved in quality before printing.",
           "If you don't have a logo designed yet, let us know when you request a quote: we can help you put together something simple based on your brand before moving to production.",
         ],
+      },
+      {
+        heading: "How the process works",
+        body: [
+          "You order in the online store (choose quantity, cut and finish, and upload your logo) or ask for a quote on WhatsApp first if you have questions. We send you a digital proof with up to 2 rounds of changes, and we print nothing until you approve it: so you never find a typo with every sticker already printed.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Do you have a physical store in Guadalajara?",
+        a: `No. We produce to order in Guadalajara and deliver two ways: pickup at one of ${CASABLANCA_BRANCHES.length} Casa Blanca branches in the metro area ($${CASABLANCA_PRICE} MXN) or home delivery ($${NATIONAL_SHIPPING_PRICE} MXN anywhere in Mexico). Both are free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more.`,
+      },
+      {
+        q: "How much do 100 stickers with my logo cost?",
+        a: `100 pieces cost $${priceOf("stickers-logo-personalizado", 100)} MXN. Past 100, every extra piece is at wholesale price: for example, 200 pieces are $${priceOf("stickers-logo-personalizado", 200)} and 300 pieces are $${priceOf("stickers-logo-personalizado", 300)} MXN.`,
+      },
+      {
+        q: "What is the minimum order?",
+        a: "50 pieces for Logo Stickers & Labels and 40 pieces for Custom Vinyl Stickers.",
+      },
+      {
+        q: "How long does my order take if I'm in Guadalajara?",
+        a: `The digital proof arrives within 24 hours of payment. Once you approve it, your order is ready for Casa Blanca pickup in ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days, or reaches your home in ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days.`,
+      },
+      {
+        q: "Are the stickers water-resistant?",
+        a: "Yes, all of our stickers and labels are water-resistant.",
+      },
+      {
+        q: "Do you ship outside Guadalajara?",
+        a: `Yes, we ship anywhere in Mexico for $${NATIONAL_SHIPPING_PRICE} MXN, free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more.`,
+      },
+      {
+        q: "Do you issue invoices?",
+        a: "We don't issue invoices (CFDI). Your receipt is the order confirmation email. If your company needs an invoice, message us on WhatsApp before paying.",
       },
     ],
     relatedProductSlugs: ["stickers-logo-personalizado"],

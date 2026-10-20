@@ -1,6 +1,13 @@
 import { dulceroPosts } from "@/content/blog-dulceros";
-import { tierPriceRows } from "@/content/products";
-import { NATIONAL_TRANSIT_DAYS, PICKUP_EXTRA_DAYS, PRODUCTION_DAYS } from "@/content/shipping";
+import { getProduct, tieredPrice, tierPriceRows } from "@/content/products";
+import { CASABLANCA_BRANCHES, CASABLANCA_PRICE, FREE_SHIPPING_THRESHOLD, NATIONAL_SHIPPING_PRICE, NATIONAL_TRANSIT_DAYS, PICKUP_EXTRA_DAYS, PRODUCTION_DAYS } from "@/content/shipping";
+
+// Catalog-derived figures for posts, so copy never drifts from real prices.
+export const priceOf = (slug: string, qty: number) => {
+  const n = tieredPrice(getProduct(slug)!.tiers!, qty);
+  return n % 1 ? n.toFixed(2) : String(n);
+};
+export const casablancaBranchNames = CASABLANCA_BRANCHES.map((b) => b.name.replace(/ \(matriz\)$/, "")).join(", ");
 
 export interface BlogSection {
   heading: string;
@@ -42,6 +49,8 @@ export interface BlogPost {
   sources?: { label: string; url: string }[];
   /** Free file under public/ offered right after the intro (e.g. a printable PDF). */
   download?: { href: string; label: string };
+  /** Visible FAQ after the sections, with matching FAQPage JSON-LD (BlogFaq). Real facts only. */
+  faq?: { q: string; a: string }[];
 }
 
 export const blogPosts: BlogPost[] = [
@@ -90,7 +99,7 @@ export const blogPosts: BlogPost[] = [
       "Cómo usar etiquetas personalizadas si tienes una marca, un emprendimiento o un puesto en bazares de Guadalajara (GDL): qué formato pedir y qué archivo enviar para tu logo.",
     category: "Guías",
     publishedAt: "2026-08-28",
-    modifiedAt: "2026-10-17",
+    modifiedAt: "2026-10-20",
     intro:
       "En Guadalajara (GDL) hay un movimiento fuerte de emprendimientos pequeños (marcas de repostería, ropa, velas, joyería, café) que venden en bazares, mercados sobre ruedas o directo por redes sociales. Una etiqueta con tu logo es de las formas más baratas de que tu marca se vea consistente en cada pedido que sale, sin necesitar empaque especial.",
     sections: [
@@ -102,10 +111,29 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
+        heading: "Precios de etiquetas personalizadas",
+        body: [
+          "Vendemos por cantidad de piezas, no por hoja, y hay dos opciones: las Etiquetas con tu Logo, pensadas para el logo de tu negocio (mínimo 50 piezas), y los Stickers de Vinil Personalizados, para cualquier diseño, personaje o foto (mínimo 40 piezas). En las dos, pasando las 100 piezas cada pieza extra va a precio mayoreo, 10% menos.",
+          "En ambas eliges el corte (troquelado, a la forma de tu diseño, o semitroquelado) y el acabado: mate, brillante u holográfico (el holográfico suma $0.50 por pieza). Todas son resistentes al agua.",
+        ],
+        table: {
+          headers: ["Cantidad", "Etiquetas con tu logo", "Stickers de vinil (tu diseño)"],
+          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
+        },
+      },
+      {
         heading: "Qué cantidad pedir",
         body: [
-          "Vendemos por cantidad de piezas, no por hoja: las primeras 100 piezas cuestan $300 y, pasando las 100, cada pieza extra va a precio mayoreo ($2.70, 10% menos); y si necesitas menos, puedes pedir desde 50: suficiente para ajustar el pedido al tamaño real de tu emprendimiento sin comprar de más.",
+          "Como se vende por pieza, pides la cantidad exacta que necesitas en vez de planillas completas: desde 50 con tu logo, suficiente para ajustar el pedido al tamaño real de tu emprendimiento sin comprar de más.",
           "Todas nuestras etiquetas son resistentes al agua, así que aguantan bien en empaques que se pueden mojar o manejar seguido (bolsas, botellas, envíos). Cuéntanos la forma o el tamaño que prefieres al cotizar, y te mandamos una prueba digital antes de imprimir.",
+        ],
+      },
+      {
+        heading: "Recoger en Guadalajara o recibir a domicilio",
+        body: [
+          `No tenemos tienda física, pero producimos en Guadalajara. Si estás en la zona metropolitana puedes recoger tu pedido en una de las ${CASABLANCA_BRANCHES.length} sucursales de paquetería Casa Blanca por $${CASABLANCA_PRICE}: ${casablancaBranchNames}. Eliges la sucursal al pagar.`,
+          `Si prefieres que llegue a tu casa o negocio, el envío a cualquier parte de México cuesta $${NATIONAL_SHIPPING_PRICE}. En compras de $${FREE_SHIPPING_THRESHOLD} o más, tanto el envío como la recolección son gratis.`,
+          `La prueba digital llega normalmente en un máximo de 24 horas después del pago. Desde que la apruebas, recoger en Casa Blanca toma ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles y el envío a domicilio ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles.`,
         ],
       },
       {
@@ -114,6 +142,42 @@ export const blogPosts: BlogPost[] = [
           "Lo ideal es un PNG, PDF, AI o SVG con fondo transparente: así la etiqueta se ve limpia sin un cuadro blanco alrededor. Si solo tienes tu logo en JPG o una foto, también podemos trabajarlo, pero te avisamos si hace falta vectorizarlo o mejorar la calidad antes de imprimir.",
           "Si todavía no tienes un logo diseñado, dínoslo al cotizar: podemos apoyarte con algo simple basado en tu marca antes de llegar a producción.",
         ],
+      },
+      {
+        heading: "Cómo es el proceso",
+        body: [
+          "Haces tu pedido en la tienda en línea (eliges cantidad, corte y acabado, y subes tu logo) o cotizas primero por WhatsApp si tienes dudas. Te mandamos una prueba digital con hasta 2 rondas de ajustes, y no imprimimos nada hasta que la apruebas: así evitas encontrar un error ya con todas las etiquetas impresas.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "¿Tienen tienda física en Guadalajara?",
+        a: `No. Producimos sobre pedido en Guadalajara y entregamos de dos formas: recolección en una de las ${CASABLANCA_BRANCHES.length} sucursales Casa Blanca de la zona metropolitana ($${CASABLANCA_PRICE}) o envío a domicilio ($${NATIONAL_SHIPPING_PRICE} a todo México). Las dos son gratis en compras de $${FREE_SHIPPING_THRESHOLD} o más.`,
+      },
+      {
+        q: "¿Cuánto cuestan 100 etiquetas con mi logo?",
+        a: `100 piezas cuestan $${priceOf("stickers-logo-personalizado", 100)}. Pasando las 100, cada pieza extra va a precio mayoreo: por ejemplo, 200 piezas son $${priceOf("stickers-logo-personalizado", 200)} y 300 piezas son $${priceOf("stickers-logo-personalizado", 300)}.`,
+      },
+      {
+        q: "¿Cuál es el pedido mínimo?",
+        a: "50 piezas en las Etiquetas con tu Logo y 40 piezas en los Stickers de Vinil Personalizados.",
+      },
+      {
+        q: "¿Cuánto tarda mi pedido si estoy en Guadalajara?",
+        a: `La prueba digital llega en un máximo de 24 horas después del pago. Desde que la apruebas, tu pedido está listo para recoger en Casa Blanca en ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles, o llega a tu domicilio en ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles.`,
+      },
+      {
+        q: "¿Las etiquetas son resistentes al agua?",
+        a: "Sí, todas nuestras etiquetas y stickers son resistentes al agua.",
+      },
+      {
+        q: "¿Hacen envíos fuera de Guadalajara?",
+        a: `Sí, enviamos a todo México por $${NATIONAL_SHIPPING_PRICE}, gratis en compras de $${FREE_SHIPPING_THRESHOLD} o más.`,
+      },
+      {
+        q: "¿Emiten factura?",
+        a: "No emitimos factura (CFDI). Tu comprobante es el correo de confirmación del pedido. Si tu empresa necesita factura, escríbenos por WhatsApp antes de pagar.",
       },
     ],
     relatedProductSlugs: ["stickers-logo-personalizado"],

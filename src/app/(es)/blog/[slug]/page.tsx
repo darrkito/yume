@@ -10,6 +10,7 @@ import { hreflangFor } from "@/lib/i18n";
 import { BlogProductCard } from "@/components/BlogProductCard";
 import { BlogTable } from "@/components/BlogTable";
 import { BlogQuickFacts } from "@/components/BlogQuickFacts";
+import { BlogFaq } from "@/components/BlogFaq";
 import { blogPostingSchema, blogPostMetadata, breadcrumbSchema, notFoundMetadata } from "@/lib/seo";
 
 export function generateStaticParams() {
@@ -106,6 +107,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           </div>
         ))}
       </div>
+
+      {post.faq && post.faq.length > 0 ? <BlogFaq faq={post.faq} lang="es" /> : null}
 
       {relatedPosts.length > 0 ? (
         <div className="mt-14">
