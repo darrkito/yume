@@ -377,42 +377,103 @@ export const dulceroPostsEn: BlogPost[] = [
     title: "Corporate Event Favor Boxes with Your Company Logo",
     metaTitle: "Corporate Event Favor Boxes with Your Logo",
     description:
-      "How to use personalized favor boxes with your company logo at holiday parties, anniversaries, welcome kits, launches and client events: design, quantities and timing.",
+      "Personalized favor boxes with your company logo for holiday parties, anniversaries and client events: design, quantities, price and delivery times.",
     category: "Guides",
     publishedAt: PUBLISHED,
+    modifiedAt: "2026-10-26",
     intro:
-      "Favor boxes aren't just for kids' parties. With your company's logo and colors, a lunch-box-style treat box is an affordable corporate gift that looks well put together: for the year-end posada, the company anniversary, welcome kits for new hires or a client event. This guide explains how to order them for your business.",
+      "Favor boxes aren't just for kids' parties. With your company's logo and colors, a lunch-box-style treat box is a corporate gift that looks well put together: for the year-end posada, the company anniversary, welcome kits for new team members or a client event. This guide explains how to order corporate event favor boxes in Guadalajara or with shipping across Mexico: occasions, design, what to put inside, quantities, price and timing.",
     sections: [
       {
-        heading: "Occasions where they work",
+        heading: "Occasions where corporate favor boxes work",
         body: [
-          "Holiday parties and year-end posadas, company anniversaries, welcome kits for new team members, product launches, client or supplier events, Children's Day for employees' kids, and booths at trade shows or expos.",
-          "In every case the box does two jobs: it's a gift for the person, and it takes your brand home or to their desk.",
+          "Personalized favor boxes work at any company event where you want each person to take home a gift with your brand: holiday parties, anniversaries, welcome kits, launches and client events. Every box carries your logo and brand colors, so the keepsake goes home with them or to their desk.",
+          "These are the occasions where they make the most sense: the year-end posada or holiday party, the company anniversary, the welcome kit for new team members, a product launch, a client or supplier event, Children's Day for employees' kids, and booths at trade shows or expos.",
+          "In every case the box does two jobs: it's a gift for the person, and it takes your brand home or to their desk. Unlike a generic bag, a box with your company's name and your own message makes the event look planned.",
+          "For a large team, you can give one box per person. For a dinner with clients, one at each place setting looks like part of the table.",
         ],
       },
       {
-        heading: "How it looks with your brand",
+        heading: "How the favor box looks with your company logo",
         body: [
-          "We use your logo, your brand colors and, if you like, a short message (Thanks for a great year, Welcome to the team). Send us your logo in good quality (PNG, PDF, AI or SVG) and we'll send a digital proof for your team to approve before production.",
+          "We design the box with your logo, your brand colors and, if you like, a short message. Before production we send a digital proof, and nothing is produced until you approve it. Send your logo in PNG, PDF, AI or SVG in good quality so we can work with it.",
+          "Each box is a lunch-box style box with a handle, made of opalina cardstock, and measures 15.7 × 11.7 × 9.9 cm (6.2 × 4.6 × 3.9 in). Customization includes the name and theme, which for a company event means your logo and colors, with a message such as Thanks for a great year or Welcome to the team.",
+          "When you send the logo, include your brand colors and the exact text you want. Check the spelling, the company name and the event year on the digital proof, because it's the last step before production. If several people approve, name one person to reply so you avoid back and forth.",
           "To seal or complement the gift, you can also order stickers with your logo and use them to close small bags or decorate what goes inside.",
         ],
       },
       {
-        heading: "Quantities and price",
+        heading: "What to put inside a favor box for a company event",
         body: [
-          "Each box is $75 MXN with a minimum of 10 and no fixed packs: you can order 18 for a small team or 120 for the whole company. 40 boxes are $3,000 and 100 are $7,500, with free national shipping from $750. Note that we do not issue invoices (CFDI); if your company needs one, message us before ordering.",
+          "The box arrives assembled and empty, so you decide what goes inside: candy, a chocolate, cookies or a branded touch like stickers with your logo. It measures 15.7 × 11.7 × 9.9 cm, so it's worth assembling one test box before buying the filling for everyone.",
+          "A few ideas: chocolates, cookies, traditional Mexican candy or snacks, plus something that isn't candy, like stickers with your logo or a thank-you card. Between 8 and 12 pieces of candy looks full in this box.",
+          "Ask your team or guests about allergies (peanuts and chocolate are the most common) and, if in doubt, prepare an option without those ingredients too. For more ideas by type of candy, see our guide on what to put in a favor box.",
+        ],
+      },
+      {
+        heading: "How many favor boxes to order and what they cost",
+        body: [
+          `First 100 pieces: $${dulceroUnit} MXN per box, with a minimum order of 10 and no fixed packs. Above 100 pieces it's wholesale pricing: message us on WhatsApp for a quote. Orders from $${FREE_SHIPPING_THRESHOLD} MXN ship free across Mexico. You order the exact number of guests or team members.`,
+          `For example, 18 boxes for a small team are $${dulceroTotal(18)}, 40 are $${dulceroTotal(40)} and 100 are $${dulceroTotal(100)}. In the Guadalajara metro area you can pick them up at any of the ${CASABLANCA_BRANCHES.length} Casa Blanca parcel branches; on orders under $${FREE_SHIPPING_THRESHOLD} pickup costs $${CASABLANCA_PRICE}.`,
+          "Count the confirmed attendees and add 2 or 3 extra boxes in case someone is added at the last minute. You can pay by card, OXXO or SPEI. Note that we do not issue invoices (CFDI); if your company needs one, message us before ordering.",
           "For large orders, message us on WhatsApp before paying so we can confirm dates and any details of your event.",
         ],
       },
       {
-        heading: "Timing for corporate events",
+        heading: "Delivery timing for a corporate event",
         body: [
-          "Production takes 3 to 5 business days after you approve the design, plus shipping. Since design approval at a company often goes through more than one person, it's best to start the order two or three weeks ahead. They arrive assembled, ready to fill.",
+          `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after you approve the digital proof, plus ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} days of national shipping, or ${PICKUP_EXTRA_DAYS} business day if you pick up at a Casa Blanca branch in Guadalajara. If approval goes through several people, start the order two or three weeks ahead.`,
+          `Adding the maximum of production and national shipping gives ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days, not counting the time your team takes to approve the proof. Count backwards from the event date and leave a margin.`,
+          "Posadas cluster in December; if your date falls in those weeks, start earlier. The boxes arrive assembled, so on the day of the event you only need to fill and arrange them.",
+        ],
+      },
+      {
+        heading: "If you plan events for companies: how to work with us",
+        body: [
+          "If you plan events for companies or clients, you can order per event: the exact quantity, a design with each client's identity and a digital proof that gets approved before production. To coordinate dates and details, message us on WhatsApp before paying.",
+          "A workflow that works: send us the event date, the number of attendees and the logo; review the digital proof with your client; confirm the final quantity; and place the order with a margin for shipping.",
+          "Besides favor boxes, we quote stickers with logos, temporary tattoos for events and custom invitations, so the whole event shares one visual style.",
         ],
       },
     ],
+    faq: [
+      {
+        q: "Can I put my company logo on the favor boxes?",
+        a: "Yes. Customization includes the name and theme: your logo, your colors and, if you like, a short message. We send a digital proof for you to approve before production.",
+      },
+      {
+        q: "What file format should I send my logo in?",
+        a: "PNG, PDF, AI or SVG, in good quality.",
+      },
+      {
+        q: "What is the minimum number of boxes I can order?",
+        a: "The minimum order is 10 pieces, with no fixed packs: you order the exact quantity for your event.",
+      },
+      {
+        q: "How much do favor boxes cost for a company?",
+        a: `First 100 pieces: $${dulceroUnit} MXN per piece, with a minimum order of 10. Above 100 pieces it's wholesale pricing and is quoted on WhatsApp. Orders from $${FREE_SHIPPING_THRESHOLD} MXN ship free across Mexico.`,
+      },
+      {
+        q: "Do the boxes include candy?",
+        a: "No. They arrive assembled and empty, ready for you to fill with whatever you choose.",
+      },
+      {
+        q: "How far ahead should I order for a year-end posada?",
+        a: `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after you approve the proof, plus ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} days of national shipping. If approval goes through several people, it's best to start two or three weeks ahead.`,
+      },
+      {
+        q: "Do you issue invoices?",
+        a: "We do not issue invoices (CFDI). If your company needs one, message us before ordering.",
+      },
+    ],
     relatedProductSlugs: [DULCERO, "stickers-logo-personalizado"],
-    relatedBlogSlugs: [en("dulceros-navidenos-personalizados"), en("dulceros-para-eventos-sociales-boda-xv-baby-shower"), en("que-poner-en-un-dulcero")],
+    relatedBlogSlugs: [
+      en("dulceros-navidenos-personalizados"),
+      en("dulceros-para-eventos-sociales-boda-xv-baby-shower"),
+      en("que-poner-en-un-dulcero"),
+      en("como-pedir-invitaciones-personalizadas-para-eventos"),
+      en("tatuajes-temporales-personalizados-para-eventos"),
+    ],
   },
   {
     slug: en("dulceros-para-eventos-sociales-boda-xv-baby-shower"),
