@@ -7,7 +7,9 @@ export const priceOf = (slug: string, qty: number) => {
   const n = tieredPrice(getProduct(slug)!.tiers!, qty);
   return n % 1 ? n.toFixed(2) : String(n);
 };
-export const casablancaBranchNames = CASABLANCA_BRANCHES.map((b) => b.name.replace(/ \(matriz\)$/, "")).join(", ");
+export const recetarioPrice = (variantId: "sin-diseno" | "con-diseno") =>
+  getProduct("recetario-medico-personalizado")!.variants!.find((v) => v.id === variantId)!.price;
+export const casablancaBranchNames =CASABLANCA_BRANCHES.map((b) => b.name.replace(/ \(matriz\)$/, "")).join(", ");
 
 export interface BlogSection {
   heading: string;
@@ -801,36 +803,99 @@ export const blogPosts: BlogPost[] = [
     title: "Tarjetas de presentación para tu consultorio: cómo pedirlas junto con tu recetario",
     metaTitle: "Tarjetas de presentación para tu consultorio",
     description:
-      "Qué información necesitas tener lista para cotizar tarjetas de presentación para tu consultorio médico, y por qué conviene pedirlas junto con tu recetario personalizado.",
+      "Qué datos necesitas para cotizar tarjetas de presentación de consultorio, cómo se aprueba la prueba digital y por qué conviene pedirlas con tu recetario.",
     category: "Guías",
     publishedAt: "2026-09-09",
+    modifiedAt: "2026-10-26",
     intro:
-      "Si ya pediste tu recetario médico personalizado, es común querer una tarjeta de presentación con el mismo diseño: es lo primero que el paciente se lleva de la consulta, junto con la receta. Así funciona el proceso para cotizar la tuya en Yume.",
+      "Si ya pediste tu recetario médico personalizado, es común querer una tarjeta de presentación con el mismo diseño: es lo primero que el paciente se lleva de la consulta, junto con la receta. Esta guía te explica qué datos preparar, cómo verificar tu cédula, qué conviene poner en la tarjeta y cómo es el proceso para cotizar la tuya en Yume.",
     sections: [
       {
         heading: "Qué información necesitamos",
         body: [
-          "Los mismos datos que usa tu recetario: nombre completo, especialidad, número de cédula profesional (y de especialidad, si aplica), y los datos de contacto de tu consultorio: dirección, teléfono, y si quieres, redes sociales o correo. También la cantidad de tarjetas que necesitas.",
+          "Para cotizar tu tarjeta necesitamos tu nombre completo, especialidad, número de cédula profesional (y de especialidad, si aplica), los datos de contacto del consultorio y la cantidad de tarjetas. Son los mismos datos que lleva tu recetario, así que si ya lo pediste, casi todo está listo.",
+          "Los datos de contacto son la dirección del consultorio, el teléfono y, si quieres, redes sociales, correo o sitio web. Si trabajas en más de un consultorio, dinos cuál debe aparecer en la tarjeta o si prefieres una tarjeta distinta por cada lugar.",
           "Si ya tienes tu membrete o logo de una pieza anterior (como el recetario), dínoslo al cotizar: podemos usar el mismo diseño en la tarjeta para que ambas piezas se vean consistentes, en vez de armar algo nuevo desde cero.",
+        ],
+      },
+      {
+        heading: "Cómo verificar tu cédula profesional antes de imprimir",
+        body: [
+          "Antes de mandar a imprimir, copia el número de cédula tal como aparece en tu cédula oficial, sin reescribirlo de memoria. La cédula la tramita la Dirección General de Profesiones de la SEP, y el número exacto es el que debe ir impreso.",
+          "Si tramitaste tu cédula en línea, la SEP la entrega en formato digital por correo electrónico. Según el boletín de la SEP, las cédulas físicas mantienen su vigencia, así que cualquiera de las dos sirve para tomar el número exacto. Si tienes cédula de especialidad, es un número distinto y conviene confirmarlo por separado.",
+          "Un solo dígito equivocado obliga a reimprimir todo el tiraje. Por eso, cuando te enviemos la prueba digital, revisa el número de cédula contra tu documento antes de aprobar.",
+        ],
+      },
+      {
+        heading: "Qué poner en la tarjeta (y qué dejar fuera)",
+        body: [
+          "Una tarjeta de consultorio funciona mejor con pocos datos y legibles: tu nombre, especialidad, número de cédula, teléfono, dirección y un medio de contacto digital. Es una recomendación de diseño, no una regla: tu colegio, institución o estado pueden pedir otros datos, así que confírmalo con ellos si trabajas bajo alguna.",
+          "Deja fuera lo que cambia seguido. Si tu horario, tu teléfono o tus tarifas se actualizan cada pocos meses, no los imprimas en toda una tanda de tarjetas: prefiere un dato estable, como tu correo o un código QR a tu página o tu agenda en línea.",
+          "Si usas un QR, pruébalo con tu celular en la prueba digital antes de aprobar. Cuida también que el texto sea de un tamaño cómodo de leer: el paciente suele revisar la tarjeta días después, en casa, no en el consultorio.",
         ],
       },
       {
         heading: "El proceso de diseño y aprobación",
         body: [
-          "Con tus datos armamos una propuesta de diseño y te mandamos una prueba digital antes de imprimir. Puedes pedir ajustes: es más fácil corregir la cédula profesional o el teléfono en esta etapa que después de tener las tarjetas impresas.",
-          "Una vez que apruebas el diseño final, se manda a producción. El proceso es el mismo si pides la tarjeta sola o junto con tu recetario en la misma cotización.",
+          "El proceso es: nos mandas tus datos, armamos una propuesta, te enviamos una prueba digital y solo mandamos a producción cuando la apruebas. Puedes pedir ajustes en la prueba, que es el momento más barato para corregir un error.",
+          "Con tus datos armamos una propuesta de diseño y te mandamos una prueba digital antes de imprimir. Es más fácil corregir la cédula profesional o el teléfono en esta etapa que después de tener las tarjetas impresas.",
+          "Una vez que apruebas el diseño final, se manda a producción. El proceso es el mismo si pides la tarjeta sola o junto con tu recetario en la misma cotización. Producimos en Guadalajara y enviamos a cualquier parte de México; los tiempos y el costo de tu pedido te los confirmamos al cotizar.",
         ],
       },
       {
         heading: "Por qué pedirlas junto con tu recetario",
         body: [
-          "Tener la tarjeta y el recetario con el mismo membrete (misma tipografía, mismos colores, mismos datos) hace que tu consultorio se vea más consistente sin que tengas que rediseñar nada por separado. Es la misma lógica de imagen profesional que ya aplica al resto de tu papelería.",
-          "Si todavía no tienes tu recetario personalizado, puedes cotizar ambos juntos desde cero y armamos un solo diseño de membrete que funcione para las dos piezas.",
+          "Pedirlas juntas te da un solo membrete para las dos piezas: misma tipografía, mismos colores y mismos datos. Tu consultorio se ve más consistente y no pagas ni coordinas dos diseños distintos. Es la misma lógica de imagen profesional que aplica al resto de tu papelería.",
+          `Si ya tienes el membrete listo, el recetario de 100 hojas Media Carta cuesta $${recetarioPrice("sin-diseno")}. Si quieres que lo diseñemos contigo, cuesta $${recetarioPrice("con-diseno")}. Ese mismo diseño es la base para tu tarjeta, así no empiezas de cero con cada pieza.`,
+          "Si todavía no tienes tu recetario personalizado, puedes cotizar ambos juntos desde cero y armamos un solo diseño de membrete que funcione para las dos piezas. Si quieres entender qué cambia entre las dos opciones de recetario, lee la guía de recetario con diseño vs. sin diseño.",
+        ],
+      },
+      {
+        heading: "Cómo cotizar tu tarjeta de presentación",
+        body: [
+          "Cotizar es sencillo: escríbenos por WhatsApp con tus datos, la cantidad de tarjetas y, si lo tienes, tu logo o membrete. Las tarjetas de presentación se cotizan caso por caso, así que te respondemos con el precio de tu pedido en particular, no con una tarifa genérica.",
+          "Para que la cotización salga rápida, ten a la mano: nombre y especialidad como quieres que aparezcan, número(s) de cédula, teléfono, dirección, correo o redes, cantidad y si quieres el mismo diseño de tu recetario. Si aún no hay recetario, dinos y cotizamos ambas piezas juntas.",
         ],
       },
     ],
-    relatedProductSlugs: [],
-    relatedBlogSlugs: ["recetarios-medicos-personalizados-guadalajara", "recetario-medico-impreso-vs-digital", "recetario-medico-con-diseno-vs-sin-diseno"],
+    faq: [
+      {
+        q: "¿Qué datos necesito para cotizar mis tarjetas de presentación?",
+        a: "Tu nombre completo, especialidad, número de cédula profesional (y de especialidad, si aplica), los datos de contacto del consultorio y la cantidad de tarjetas. Si ya tienes membrete o logo, mándalo para reutilizar el diseño.",
+      },
+      {
+        q: "¿Puedo usar el mismo diseño de mi recetario?",
+        a: "Sí. Si ya tienes tu membrete o logo de otra pieza, como el recetario, podemos usar el mismo diseño en la tarjeta para que ambas piezas se vean consistentes.",
+      },
+      {
+        q: "¿Veo la tarjeta antes de que se imprima?",
+        a: "Sí. Te mandamos una prueba digital y solo producimos cuando la apruebas. Revisa ahí tu número de cédula y tu teléfono, porque es más fácil corregirlos antes de imprimir.",
+      },
+      {
+        q: "¿Cuánto cuestan las tarjetas de presentación?",
+        a: "Se cotizan caso por caso según el diseño y la cantidad. Escríbenos por WhatsApp con tus datos y te preparamos la cotización de tu pedido.",
+      },
+      {
+        q: "¿Cuánto cuesta el recetario que puedo pedir junto con la tarjeta?",
+        a: `El recetario de 100 hojas Media Carta cuesta $${recetarioPrice("sin-diseno")} si ya tienes tu diseño y $${recetarioPrice("con-diseno")} si lo diseñamos contigo.`,
+      },
+      {
+        q: "¿Envían fuera de Guadalajara?",
+        a: "Sí. Producimos en Guadalajara y enviamos a cualquier parte de México.",
+      },
+      {
+        q: "¿Sirve mi cédula física o necesito la digital?",
+        a: "Según la SEP, las cédulas físicas mantienen su vigencia, y quien prefiere la digital la puede solicitar en línea. Para la tarjeta solo necesitas copiar el número exacto de tu cédula.",
+      },
+    ],
+    relatedProductSlugs: ["recetario-medico-personalizado"],
+    relatedBlogSlugs: ["recetarios-medicos-personalizados-guadalajara", "recetario-medico-impreso-vs-digital", "recetario-medico-con-diseno-vs-sin-diseno", "datos-obligatorios-receta-medica-mexico", "yume-vs-imprentas-recetarios-medicos"],
+    sources: [
+      {
+        label: "SEP: Simplifica SEP el trámite de cédulas profesionales; cédulas físicas mantienen su vigencia (Boletín 142)",
+        url: "https://www.gob.mx/sep/prensa/boletin-142-simplifica-sep-el-tramite-de-cedulas-profesionales-cedulas-fisicas-mantienen-su-vigencia-sep",
+      },
+    ],
     quoteMessage: "Hola, me interesa cotizar tarjetas de presentación para mi consultorio.",
   },
   {

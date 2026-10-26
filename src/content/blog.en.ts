@@ -1,5 +1,5 @@
 import type { BlogPost } from "@/content/blog";
-import { priceOf, casablancaBranchNames } from "@/content/blog";
+import { priceOf, casablancaBranchNames, recetarioPrice } from "@/content/blog";
 import { tierPriceRows } from "@/content/products";
 import { CASABLANCA_BRANCHES, CASABLANCA_PRICE, FREE_SHIPPING_THRESHOLD, NATIONAL_SHIPPING_PRICE, NATIONAL_TRANSIT_DAYS, PICKUP_EXTRA_DAYS, PRODUCTION_DAYS } from "@/content/shipping";
 import { BLOG_SLUG_EN } from "@/lib/i18n";
@@ -745,35 +745,105 @@ export const blogPostsEn: BlogPost[] = [
     title: "Business Cards for Your Practice: How to Order Them Alongside Your Prescription Pad",
     metaTitle: "Business Cards for Your Practice",
     description:
-      "What information you need ready to quote business cards for your medical practice, and why it's worth ordering them alongside your custom prescription pad.",
+      "What you need to quote business cards for your medical practice, how the digital proof works, and why it pays to order them with your prescription pad.",
     category: "Guides",
     publishedAt: "2026-09-09",
+    modifiedAt: "2026-10-26",
     intro:
-      "If you've already ordered your custom medical prescription pad, it's common to want a matching business card: it's one of the first things a patient takes away from the visit, along with the prescription. Here's how the process works to quote yours at Yume.",
+      "If you've already ordered your custom medical prescription pad, it's common to want a matching business card: it's one of the first things a patient takes away from the visit, along with the prescription. This guide covers what to prepare, how to check your license number, what belongs on the card, and how the quote process works at Yume.",
     sections: [
       {
         heading: "What information we need",
         body: [
-          "The same details your prescription pad uses: full name, specialty, professional license number (and specialty license, if applicable), and your practice's contact details: address, phone, and, if you want, social media or email. Also the quantity of cards you need.",
+          "To quote your card we need your full name, specialty, professional license number (and specialty license, if applicable), your practice's contact details, and the quantity of cards. These are the same details your prescription pad uses, so if you've already ordered one, most of it is ready.",
+          "Contact details means the practice address, phone and, if you want, social media, email or website. If you work at more than one practice, tell us which one goes on the card or whether you'd like a different card for each location.",
           "If you already have your letterhead or logo from an earlier piece (like the prescription pad), let us know when requesting a quote: we can reuse the same design on the card so both pieces look consistent instead of building something new from scratch.",
+        ],
+      },
+      {
+        heading: "How to check your professional license before printing",
+        body: [
+          "Before printing, copy your license number exactly as it appears on your official cédula, instead of retyping it from memory. In Mexico the cédula profesional is handled by the SEP's Dirección General de Profesiones, and the exact number is the one that must be printed.",
+          "If you applied for your cédula online, the SEP delivers it in digital format by email. According to the SEP's announcement, physical cédulas remain valid, so either one works to copy the exact number. A specialty license is a separate number, so confirm it separately.",
+          "A single wrong digit means reprinting the whole run. That's why, when we send you the digital proof, you should check the license number against your document before approving.",
+        ],
+      },
+      {
+        heading: "What to put on the card (and what to leave off)",
+        body: [
+          "A practice card works best with a few legible details: your name, specialty, license number, phone, address and one digital contact. That's a design recommendation, not a rule: your medical association, institution or state may ask for other details, so confirm with them if you work under one.",
+          "Leave off anything that changes often. If your hours, phone or fees change every few months, don't print them on a whole run of cards: prefer a stable detail, like your email or a QR code to your website or online booking page.",
+          "If you use a QR code, test it with your phone on the digital proof before approving. Also make sure the text is a comfortable size: patients often look at the card days later, at home, not in your office.",
         ],
       },
       {
         heading: "The design and approval process",
         body: [
-          "With your details, we put together a design proposal and send you a digital proof before printing. You can request adjustments: it's much easier to fix your license number or phone number at this stage than after the cards are already printed.",
-          "Once you approve the final design, it goes to production. The process is the same whether you order the card on its own or together with your prescription pad in the same quote.",
+          "The process is: you send your details, we build a proposal, we send you a digital proof, and we only go to production once you approve it. You can request adjustments on the proof, which is the cheapest moment to fix a mistake.",
+          "With your details, we put together a design proposal and send you a digital proof before printing. It's much easier to fix your license number or phone number at this stage than after the cards are already printed.",
+          "Once you approve the final design, it goes to production. The process is the same whether you order the card on its own or together with your prescription pad in the same quote. We produce in Guadalajara and ship anywhere in Mexico; we confirm timing and cost for your order when we quote.",
         ],
       },
       {
         heading: "Why order it alongside your prescription pad",
         body: [
-          "Having the business card and the prescription pad share the same letterhead (same typography, same colors, same details) makes your practice look more consistent without having to redesign anything separately. It's the same logic behind having a professionally consistent look across all of your stationery.",
-          "If you don't have your custom prescription pad yet, you can quote both together from scratch and we'll put together a single letterhead design that works for both pieces.",
+          "Ordering together gives you a single letterhead for both pieces: same typography, same colors, same details. Your practice looks more consistent and you don't pay for or coordinate two separate designs. It's the same logic behind a consistent look across all your stationery.",
+          `If you already have your letterhead ready, the 100-sheet Half-Letter prescription pad costs $${recetarioPrice("sin-diseno")} MXN. If you want us to design it with you, it costs $${recetarioPrice("con-diseno")} MXN. That same design is the base for your card, so you don't start from zero with each piece.`,
+          "If you don't have your custom prescription pad yet, you can quote both together from scratch and we'll put together a single letterhead design that works for both pieces. To understand the difference between the two pad options, read our guide on prescription pads with design vs. without design.",
+        ],
+      },
+      {
+        heading: "How to quote your business card",
+        body: [
+          "Quoting is simple: message us on WhatsApp with your details, the number of cards and, if you have it, your logo or letterhead. Business cards are quoted case by case, so we reply with the price for your specific order, not a generic rate.",
+          "To speed things up, have these ready: name and specialty as you want them to appear, license number(s), phone, address, email or social media, quantity, and whether you want the same design as your prescription pad. If you don't have a pad yet, tell us and we'll quote both pieces together.",
         ],
       },
     ],
-    relatedProductSlugs: [],
+    faq: [
+      {
+        q: "What details do I need to quote my business cards?",
+        a: "Your full name, specialty, professional license number (and specialty license, if applicable), your practice's contact details and the quantity of cards. If you already have a letterhead or logo, send it so we can reuse the design.",
+      },
+      {
+        q: "Can I use the same design as my prescription pad?",
+        a: "Yes. If you already have your letterhead or logo from another piece, like the prescription pad, we can use the same design on the card so both pieces look consistent.",
+      },
+      {
+        q: "Do I see the card before it's printed?",
+        a: "Yes. We send a digital proof and only produce once you approve it. Check your license number and phone there, since it's easier to fix them before printing.",
+      },
+      {
+        q: "How much do the business cards cost?",
+        a: "They're quoted case by case based on design and quantity. Message us on WhatsApp with your details and we'll prepare a quote for your order.",
+      },
+      {
+        q: "How much is the prescription pad I can order with the card?",
+        a: `The 100-sheet Half-Letter prescription pad costs $${recetarioPrice("sin-diseno")} MXN if you already have your design and $${recetarioPrice("con-diseno")} MXN if we design it with you.`,
+      },
+      {
+        q: "Do you ship outside Guadalajara?",
+        a: "Yes. We produce in Guadalajara and ship anywhere in Mexico.",
+      },
+      {
+        q: "Does my physical cédula work, or do I need the digital one?",
+        a: "According to the SEP, physical cédulas remain valid, and anyone who prefers a digital one can request it online. For the card you only need to copy the exact number from your cédula.",
+      },
+    ],
+    sources: [
+      {
+        label: "SEP: Simplifica SEP el trámite de cédulas profesionales; cédulas físicas mantienen su vigencia (Boletín 142)",
+        url: "https://www.gob.mx/sep/prensa/boletin-142-simplifica-sep-el-tramite-de-cedulas-profesionales-cedulas-fisicas-mantienen-su-vigencia-sep",
+      },
+    ],
+    relatedProductSlugs: ["recetario-medico-personalizado"],
+    relatedBlogSlugs: [
+      BLOG_SLUG_EN["recetarios-medicos-personalizados-guadalajara"],
+      BLOG_SLUG_EN["recetario-medico-impreso-vs-digital"],
+      BLOG_SLUG_EN["recetario-medico-con-diseno-vs-sin-diseno"],
+      BLOG_SLUG_EN["datos-obligatorios-receta-medica-mexico"],
+      BLOG_SLUG_EN["yume-vs-imprentas-recetarios-medicos"],
+    ],
     quoteMessage: "Hi, I'm interested in getting a quote for business cards for my medical practice.",
   },
   {
