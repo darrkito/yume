@@ -275,41 +275,102 @@ export const dulceroPostsEn: BlogPost[] = [
     title: "Favor Boxes for Baptisms and First Communions",
     metaTitle: "Baptism and First Communion Favor Boxes",
     description:
-      "Ideas for personalized favor boxes as baptism or first communion keepsakes: designs, what details to include, what to put inside and how many to order for your guests.",
+      "Personalized favor boxes for baptisms and first communions: designs, what details to include, what to put inside, how many to order, price and delivery times.",
     category: "Guides",
     publishedAt: PUBLISHED,
+    modifiedAt: "2026-10-26",
     intro:
-      "At a baptism or first communion, the keepsake guests take home is often an important part of the celebration. A personalized favor box with the child's name and the date works as both a keepsake and a treat. Here are ideas to make it look worthy of the occasion.",
+      "At a baptism or first communion, the keepsake guests take home is often an important part of the celebration. A personalized favor box with the child's name and the date works as both a keepsake and a treat. Here are ideas for design, which details to include, what to put inside, how many to order, what it costs and how far ahead to order so it looks worthy of the occasion.",
     sections: [
+      {
+        heading: "Which favor box suits a baptism or first communion",
+        body: [
+          "Choose a box with the child's name, the type of celebration and the date, in the party's color palette. It's lunch-box style with a handle, measures 15.7 × 11.7 × 9.9 cm and arrives assembled and empty, so you decide what goes inside.",
+          "It works as the keepsake you hand out as guests leave the church and as part of the dessert table at the reception. The handle makes it easy to carry, and the name and date turn it into a keepsake after the event.",
+        ],
+      },
       {
         heading: "Designs that work",
         body: [
-          "For baptisms, pastel tones (blue, pink, beige, white) with a dove, a cross or little angels are the most requested. For first communions, white with gold, a chalice or a simple cross, and the name in an elegant script.",
-          "If the party has a set color palette, send us the invitation and we'll match the box design to those colors so it fits the dessert table.",
+          "For baptisms, pastel tones (blue, pink, beige, white) with a dove, a cross or little angels are the most requested. For first communions, white with gold, a chalice or a simple cross, and the name in an elegant script. Our customization includes the name and the theme you choose.",
+          "If the party has a set color palette, send us the invitation and we'll match the box design to those colors so it fits the dessert table. Before production we send a digital proof, and nothing is produced until you approve it.",
+          "A practical tip: if the event has a lot of decoration, pick a simple design with the name nice and big. If the decor is understated, you can afford more detail on the box.",
         ],
       },
       {
-        heading: "What details to include",
+        heading: "What details to put on the box",
         body: [
-          "The most common are the child's name, the type of celebration (My Baptism, My First Communion) and the date. Some families add the godparents' names or a short thank-you line.",
-          "Check the spelling of every name on the digital proof before approving it: it's the last step before production.",
+          "The most common are the child's name, the type of celebration (My Baptism, My First Communion) and the date. With those three details the box already works as a keepsake, and everything else is optional: godparents, a short line or the venue.",
+          "Some families add the godparents' names or a short thank-you line. If siblings are celebrating together, you can put both names on the same design.",
+          "Check the spelling of every name and the date on the digital proof before approving it: it's the last step before production, and a mistake there is repeated on every box.",
         ],
       },
       {
-        heading: "What to put inside",
+        heading: "What to put inside a baptism or communion favor box",
         body: [
-          "For a family event with kids and adults, fine chocolates, candied almonds, Jordan almonds, mazapanes or decorated cookies all work well. If you want it to last as a keepsake, add a small rosary, a medal or a candle.",
+          "For a family event with kids and adults, fine chocolates, candied almonds, Jordan almonds, mazapanes or decorated cookies all work well. The box arrives empty, without candy, so you decide the filling and the budget.",
+          "If you want it to last as a keepsake, add a small rosary, a medal or a candle. Stickers with the name or the party design are also a good sugar-free extra.",
+          "Ask about allergies (peanut and chocolate are the most common) if you're inviting kids you don't know well, and fill one test box before buying everything to work out how much you need. For more ideas by age, see our guide on what to put in a party favor box.",
         ],
       },
       {
         heading: "How many to order and what it costs",
         body: [
-          "Order one per family or per guest, depending on your budget. Each box is $75 MXN with a minimum of 10: 30 boxes are $2,250 and 50 are $3,750, with free shipping from $750. They arrive assembled, ready to fill.",
+          `First 100 pieces: $${dulceroUnit} MXN per box, with a minimum order of 10. 30 boxes are $${dulceroTotal(30)} and 50 are $${dulceroTotal(50)}. Above 100 pieces it's wholesale pricing: message us on WhatsApp and we'll quote you.`,
+          `Order one per family or one per guest, depending on your budget. If it's per family, count the confirmed families and add 2 or 3 extra for people who show up unannounced. Orders from $${FREE_SHIPPING_THRESHOLD} ship free across Mexico, and in the Guadalajara metro area you can pick them up for $${CASABLANCA_PRICE} at any of the ${CASABLANCA_BRANCHES.length} Casa Blanca parcel branches.`,
+          "If the party pairs a baptism with a big meal for many guests, you can order some with the full design for the main table and some with a simpler design for everyone else, all in the same order.",
+        ],
+      },
+      {
+        heading: "When to order so they arrive on time",
+        body: [
+          `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after you approve the digital proof, plus ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} days of national shipping (or ${PICKUP_EXTRA_DAYS} business day if you pick up at a Casa Blanca branch in Guadalajara). To avoid rushing, start the order about three weeks ahead.`,
+          "The Code of Canon Law (canon 867) says parents are obliged to take care that infants are baptized in the first few weeks. So if you already have a date at the parish, order the boxes early instead of waiting until everything else is settled.",
+          "Confirm the list of children, the names and the date before approving the design so you don't lose days on corrections. If the event falls in a season with a lot of celebrations, order further ahead.",
+        ],
+      },
+      {
+        heading: "How to order",
+        body: [
+          "You can order from the online store by choosing the quantity and paying by card, OXXO or SPEI, or get a quote on WhatsApp first if you'd like to talk through the design before paying. Either way you get a digital proof before anything is produced.",
+          "If your event includes other keepsakes, such as stickers to seal little bags or decorate what goes inside, they can go in the same order. And if you're also planning a wedding, quinceañera or baby shower, see our guide to favor boxes for social events.",
         ],
       },
     ],
-    relatedProductSlugs: [DULCERO],
-    relatedBlogSlugs: [en("dulceros-para-eventos-sociales-boda-xv-baby-shower"), en("que-poner-en-un-dulcero"), en("dulceros-personalizados-guadalajara")],
+    faq: [
+      {
+        q: "Do the baptism and communion favor boxes come with candy?",
+        a: "No. The box arrives assembled and empty, ready to fill with whatever candy or keepsakes you choose.",
+      },
+      {
+        q: "How much does a baptism or first communion favor box cost?",
+        a: `First 100 pieces: $${dulceroUnit} MXN each, with a minimum order of 10. Above 100 pieces it's wholesale pricing, quoted on WhatsApp. Orders from $${FREE_SHIPPING_THRESHOLD} ship free across Mexico.`,
+      },
+      {
+        q: "What size is the box?",
+        a: "It measures 15.7 × 11.7 × 9.9 cm (6.2 × 4.6 × 3.9 inches), is made of opaline cardstock, has a handle and arrives assembled.",
+      },
+      {
+        q: "What details go on the box?",
+        a: "The most common are the child's name, the type of celebration (My Baptism, My First Communion) and the date. You can add godparents or a short line. We send a digital proof so you can check the spelling before production.",
+      },
+      {
+        q: "How long does delivery take?",
+        a: `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after you approve the proof, plus ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} days of national shipping, or ${PICKUP_EXTRA_DAYS} business day if you pick up at a Casa Blanca branch in Guadalajara.`,
+      },
+      {
+        q: "When should a child be baptized according to the Code of Canon Law?",
+        a: "Canon 867 says parents are obliged to take care that infants are baptized in the first few weeks. That's why it helps to order the boxes as soon as you have a date at the parish.",
+      },
+    ],
+    sources: [
+      {
+        label: "Code of Canon Law (Holy See): Book IV, canon 867 on the baptism of infants",
+        url: "https://www.vatican.va/archive/cod-iuris-canonici/eng/documents/cic_lib4-cann834-878_en.html",
+      },
+    ],
+    relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
+    relatedBlogSlugs: [en("dulceros-para-eventos-sociales-boda-xv-baby-shower"), en("que-poner-en-un-dulcero"), en("dulceros-personalizados-guadalajara"), en("cajas-bolsas-o-vasos-dulceros-cual-elegir")],
   },
   {
     slug: en("dulceros-para-eventos-empresariales"),

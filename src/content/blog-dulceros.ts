@@ -282,41 +282,102 @@ export const dulceroPosts: BlogPost[] = [
     title: "Dulceros y recuerdos para bautizo y primera comunión",
     metaTitle: "Dulceros para bautizo y primera comunión: ideas",
     description:
-      "Ideas de dulceros personalizados como recuerdo de bautizo o primera comunión: diseños, qué datos poner, qué meter dentro y cuántos pedir para tus invitados.",
+      "Dulceros personalizados para bautizo y primera comunión: diseños, qué datos poner, qué meter dentro, cuántos pedir, precio y tiempos de entrega.",
     category: "Guías",
     publishedAt: PUBLISHED,
+    modifiedAt: "2026-10-26",
     intro:
-      "En un bautizo o una primera comunión, el recuerdo que se llevan los invitados suele ser parte importante de la celebración. Un dulcero personalizado con el nombre del niño o la niña y la fecha funciona como recuerdo y como detalle de dulces a la vez. Aquí tienes ideas para que se vea a la altura del evento.",
+      "En un bautizo o una primera comunión, el recuerdo que se llevan los invitados suele ser parte importante de la celebración. Un dulcero personalizado con el nombre del niño o la niña y la fecha funciona como recuerdo y como detalle de dulces a la vez. Aquí tienes ideas de diseño, qué datos poner, qué meter dentro, cuántos pedir, cuánto cuesta y con cuánta anticipación hacer el pedido para que se vea a la altura del evento.",
     sections: [
+      {
+        heading: "Qué dulcero conviene para un bautizo o una primera comunión",
+        body: [
+          "Conviene un dulcero con el nombre del niño o la niña, el tipo de celebración y la fecha, en la paleta de colores de la fiesta. Es tipo lunch box, con asa, mide 15.7 × 11.7 × 9.9 cm y llega armado y vacío, para que tú elijas qué lleva dentro.",
+          "Funciona igual para el recuerdo que se entrega al salir de la iglesia que para la mesa de dulces del salón. Como es una caja con asa, los invitados lo cargan fácil, y como lleva el nombre y la fecha, se queda como recuerdo después del evento.",
+        ],
+      },
       {
         heading: "Diseños que funcionan",
         body: [
-          "Para bautizo, los tonos pastel (azul, rosa, beige, blanco) con una paloma, una cruz o angelitos son los más pedidos. Para primera comunión, el blanco con dorado, un cáliz o una cruz sencilla y el nombre en letra elegante.",
-          "Si la fiesta tiene una paleta de colores definida, mándanos la invitación y adaptamos el diseño del dulcero a esos tonos para que combine con la mesa de dulces.",
+          "Para bautizo, los tonos pastel (azul, rosa, beige, blanco) con una paloma, una cruz o angelitos son los más pedidos. Para primera comunión, el blanco con dorado, un cáliz o una cruz sencilla y el nombre en letra elegante. Nuestra personalización incluye el nombre y la temática que elijas.",
+          "Si la fiesta tiene una paleta de colores definida, mándanos la invitación y adaptamos el diseño del dulcero a esos tonos para que combine con la mesa de dulces. Antes de producir te mandamos una prueba digital, y nada se produce hasta que la apruebas.",
+          "Un consejo práctico: si el evento tiene mucha decoración, elige un diseño sencillo con el nombre bien grande. Si la decoración es sobria, puedes permitirte más detalle en el dulcero.",
         ],
       },
       {
-        heading: "Qué datos poner",
+        heading: "Qué datos poner en el dulcero",
         body: [
-          "Lo más común es el nombre del niño o la niña, el tipo de celebración (Mi bautizo, Mi primera comunión) y la fecha. Algunas familias agregan el nombre de los padrinos o una frase corta de agradecimiento.",
-          "Revisa bien la ortografía de los nombres en la prueba digital antes de aprobarla: es el último paso antes de producir.",
+          "Lo más común es poner el nombre del niño o la niña, el tipo de celebración (Mi bautizo, Mi primera comunión) y la fecha. Con esos tres datos el dulcero ya funciona como recuerdo, y todo lo demás es opcional: padrinos, una frase corta o el lugar.",
+          "Algunas familias agregan el nombre de los padrinos o una frase corta de agradecimiento. Si hay hermanos que celebran juntos, puedes poner los dos nombres en el mismo diseño.",
+          "Revisa bien la ortografía de los nombres y la fecha en la prueba digital antes de aprobarla: es el último paso antes de producir, y un error ahí se repite en todas las piezas.",
         ],
       },
       {
-        heading: "Qué poner dentro",
+        heading: "Qué poner dentro de un dulcero de bautizo o comunión",
         body: [
-          "Para un evento familiar con niños y adultos, funcionan bien los chocolates finos, almendras cubiertas, peladillas, mazapanes o galletas decoradas. Si quieres que dure como recuerdo, agrega un rosario pequeño, una medallita o una vela.",
+          "Para un evento familiar con niños y adultos, funcionan bien los chocolates finos, las almendras cubiertas, las peladillas, los mazapanes y las galletas decoradas. El dulcero llega vacío, sin dulces, así que tú decides el relleno y el presupuesto.",
+          "Si quieres que dure como recuerdo, agrega un rosario pequeño, una medallita o una vela. Unos stickers con el nombre o el diseño de la fiesta también son un buen detalle sin azúcar.",
+          "Pregunta por alergias (cacahuate y chocolate son las más comunes) si invitas a niños que no conoces bien, y arma un dulcero de prueba antes de comprar todo para calcular cuánto necesitas. Para más ideas por edad, revisa la guía de qué poner en un dulcero.",
         ],
       },
       {
         heading: "Cuántos pedir y cuánto cuesta",
         body: [
-          "Pide uno por familia o por invitado, según tu presupuesto. Cada dulcero cuesta $75 con mínimo de 10 piezas: 30 dulceros son $2,250 y 50 son $3,750, con envío gratis desde $750. Te llegan armados, listos para llenar.",
+          `Primeras 100 piezas: $${dulceroUnit} MXN por dulcero, con pedido mínimo de 10 piezas. 30 dulceros son $${dulceroTotal(30)} y 50 son $${dulceroTotal(50)}. Arriba de 100 piezas es precio mayoreo: escríbenos por WhatsApp y te cotizamos.`,
+          `Pide uno por familia o uno por invitado, según tu presupuesto. Si es por familia, cuenta las familias confirmadas y suma 2 o 3 extra para los que llegan sin avisar. Desde $${FREE_SHIPPING_THRESHOLD} de compra el envío nacional es gratis, y en la zona metropolitana de Guadalajara puedes recogerlos por $${CASABLANCA_PRICE} en cualquiera de las ${CASABLANCA_BRANCHES.length} sucursales de paquetería Casa Blanca.`,
+          "Si la fiesta combina bautizo con una comida para muchos invitados, puedes pedir una parte con el diseño completo para la mesa principal y otra con un diseño más sencillo para el resto, todo en la misma orden.",
+        ],
+      },
+      {
+        heading: "Cuándo pedirlos para que lleguen a tiempo",
+        body: [
+          `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba digital, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional (o ${PICKUP_EXTRA_DAYS} día hábil si recoges en una sucursal Casa Blanca de Guadalajara). Para no ir con prisas, inicia el pedido con unas tres semanas de anticipación.`,
+          "El Código de Derecho Canónico (canon 867) dice que los padres deben procurar que los niños sean bautizados en las primeras semanas de vida. Por eso, si ya tienes fecha en la parroquia, conviene pedir los dulceros pronto, sin esperar a tener resuelto todo lo demás.",
+          "Confirma la lista de niños, los nombres y la fecha antes de aprobar el diseño para no perder días en correcciones. Si el evento cae en una temporada con muchas celebraciones, pídelos con más anticipación.",
+        ],
+      },
+      {
+        heading: "Cómo pedirlos",
+        body: [
+          "Puedes pedirlos desde la tienda en línea eligiendo la cantidad y pagando con tarjeta, OXXO o SPEI, o cotizar primero por WhatsApp si quieres platicar el diseño antes de pagar. En ambos casos recibes una prueba digital antes de que se produzca nada.",
+          "Si tu evento incluye otros recuerdos, como stickers para sellar bolsitas o decorar lo que va dentro, pueden pedirse en la misma orden. Y si organizas también una boda, XV años o baby shower, tienes la guía de dulceros para eventos sociales.",
         ],
       },
     ],
-    relatedProductSlugs: [DULCERO],
-    relatedBlogSlugs: ["dulceros-para-eventos-sociales-boda-xv-baby-shower", "que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara"],
+    faq: [
+      {
+        q: "¿Los dulceros para bautizo y comunión incluyen dulces?",
+        a: "No. El dulcero llega armado y vacío, listo para llenar con los dulces o recuerdos que tú elijas.",
+      },
+      {
+        q: "¿Cuánto cuesta un dulcero para bautizo o primera comunión?",
+        a: `Primeras 100 piezas: $${dulceroUnit} MXN por pieza, con pedido mínimo de 10. Arriba de 100 piezas es precio mayoreo y se cotiza por WhatsApp. Desde $${FREE_SHIPPING_THRESHOLD} el envío nacional es gratis.`,
+      },
+      {
+        q: "¿Qué medidas tiene el dulcero?",
+        a: "Mide 15.7 × 11.7 × 9.9 cm (6.2 × 4.6 × 3.9 pulgadas), es de cartulina opalina, tiene asa y llega armado.",
+      },
+      {
+        q: "¿Qué datos lleva el dulcero?",
+        a: "Lo más común es el nombre del niño o la niña, el tipo de celebración (Mi bautizo, Mi primera comunión) y la fecha. Puedes agregar padrinos o una frase corta. Te mandamos una prueba digital para revisar la ortografía antes de producir.",
+      },
+      {
+        q: "¿Cuánto tardan en llegar?",
+        a: `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional, o ${PICKUP_EXTRA_DAYS} día hábil si recoges en una sucursal Casa Blanca de Guadalajara.`,
+      },
+      {
+        q: "¿Cuándo se bautiza a un niño según el Código de Derecho Canónico?",
+        a: "El canon 867 dice que los padres deben procurar que los niños sean bautizados en las primeras semanas de vida. Por eso conviene pedir los dulceros en cuanto tengas fecha en la parroquia.",
+      },
+    ],
+    sources: [
+      {
+        label: "Código de Derecho Canónico (Santa Sede): libro IV, canon 867 sobre el bautismo de los niños",
+        url: "https://www.vatican.va/archive/cod-iuris-canonici/eng/documents/cic_lib4-cann834-878_en.html",
+      },
+    ],
+    relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["dulceros-para-eventos-sociales-boda-xv-baby-shower", "que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "cajas-bolsas-o-vasos-dulceros-cual-elegir"],
   },
   {
     slug: "dulceros-para-eventos-empresariales",
