@@ -1522,35 +1522,96 @@ export const blogPostsEn: BlogPost[] = [
     title: "Custom Stationery vs. Generic Templates: What Actually Changes",
     metaTitle: "Custom Stationery vs. Generic Templates",
     description:
-      "Custom design vs. template: what your brand loses with a generic template and why a custom print shop in Guadalajara is worth it for your custom stationery in Mexico.",
+      "Custom stationery vs. generic templates: what changes for a wedding, an event or your brand, and when custom design is worth it.",
     category: "Guides",
     publishedAt: "2026-09-23",
+    modifiedAt: "2026-10-26",
     intro:
-      "When you're quoting stationery, it's easy to run into two very different kinds of supplier: one who sells you a generic template already made, and one who designs the piece around your brand from scratch. Both solve \"having printed stationery,\" but they don't solve the same problem. Here's the real difference between custom design and a template, and when each one makes sense.",
+      "When you're quoting stationery, it's easy to run into two very different kinds of supplier: one who sells you a generic template already made, and one who designs the piece around your event or brand from scratch. Both solve \"having printed stationery,\" but they don't solve the same problem. If you're planning a wedding, a baptism, a quinceañera or a gift for someone special, the difference shows on the table. Here's what changes between custom design and a template, and when each one makes sense.",
     sections: [
       {
         heading: "What a generic template is (and why it's so cheap)",
         body: [
-          "A generic template is a ready-made design mold where only one detail changes (your name, your logo dropped on top) without touching the rest of the layout: the print shop decides the typography, colors, and composition, not your brand. That's why it's cheap: the same mold gets reused across dozens of different businesses.",
-          "The problem isn't that it looks bad, it's that it doesn't look like you: it's common to run into another business using the exact same template, just with the name swapped.",
+          "A generic template is a ready-made design mold where you only change a detail, like your name or the date, without touching the composition. The print shop decides the typography, colors and layout, not you. It's cheap because the same mold is reused across many different customers.",
+          "The problem isn't that it looks bad, it's that it doesn't look like you: it's common to run into another business using the exact same template, just with the name swapped. Events work the same way: if your guests already saw that invitation at another party, the detail loses its \"this was made for us\" effect.",
         ],
       },
       {
         heading: "Custom design vs. template: what changes for your brand",
         body: [
-          "With custom design, the piece is built from scratch with your colors, your typography (if you already have one), and your business's or practice's real information, not someone else's mold. That matters more than it seems for custom stationery: it's the piece your customer or patient literally holds in their hand, so it communicates as much as your logo on your storefront.",
-          "The other practical difference is the process: with a generic template you usually pick from a closed catalog; with custom design, we send you a digital proof of the final design before printing, so you approve it (or ask for changes) before a single piece goes into production.",
+          "With custom design, the piece is built from scratch with your colors, your typography if you already have one, and the real details of your event, business or practice. With a template you pick from a closed catalog and fill in fields. The difference is control: you decide how it looks, not the mold.",
+          "That matters more than it seems for custom stationery: it's the piece your guest, customer or patient literally holds in their hand, so it communicates as much as your logo on your storefront.",
+          "The other practical difference is the process: with custom design we send you a digital proof of the final design before printing, so you approve it (or ask for changes) before a single piece goes into production.",
+        ],
+        table: {
+          headers: ["", "Generic template", "Custom design"],
+          rows: [
+            ["Starting point", "The supplier's ready-made mold", "Your details, colors and style"],
+            ["What you can change", "Name, date or logo", "Layout, typography, copy and format"],
+            ["Proof before printing", "Depends on the supplier", "Digital proof you approve"],
+            ["Risk of looking like someone else's", "High", "Low, the piece is built with you"],
+          ],
+        },
+      },
+      {
+        heading: "For weddings and events: why custom detail shows",
+        body: [
+          "At an event, stationery is what your guests touch, read and sometimes take home. When the menu, the invitation and the sticker share a style and carry the real names for the occasion, the event looks planned. A loose template rarely achieves that coherence across pieces.",
+          "At Yume we handle wedding menus, invitations, stickers for weddings and events, temporary tattoos and candy boxes by quote. If you already have a color palette or a visual reference, we use it as the base so every piece looks like one family. If you're putting a wedding together, start with the custom wedding menu, usually the piece that shines most on the table.",
+          "If you're a wedding or event planner, the flow is the same: send us the event details on WhatsApp, we send the digital proof and, once your client approves it, it goes into production. That way you can show the design before a single piece is printed.",
+        ],
+      },
+      {
+        heading: "When a template does make sense",
+        body: [
+          "A template can be enough if the piece is temporary, internal or single-use, and doesn't need to stand out. It also works for a quick start when you haven't defined your identity yet. If the piece represents your brand or your event to other people, custom design is usually worth the difference.",
+          "A useful question: will anyone else see this piece and associate it with you or your event? If yes, it should be yours. If it's a draft, a test or something thrown away after use, a template is a reasonable option.",
         ],
       },
       {
         heading: "Why choose a custom print shop in Guadalajara",
         body: [
-          "At Yume we operate as a custom print shop in Guadalajara, not a template shop: every prescription pad, every sticker, and every piece of custom stationery in Mexico we produce is designed around the real details of whoever ordered it, not a recycled mold.",
+          "Yume operates as a custom print shop in Guadalajara, not a template shop. Every prescription pad, label or piece of stationery is designed around the real details of whoever orders it, goes through a digital proof you approve, and ships across Mexico from Guadalajara.",
           "If you already have a logo or brand identity, we adapt it directly into the piece; if you don't, we build it with you before reaching the digital proof stage. Either way, what you get is a piece that's actually yours, not a template with your name stamped on it.",
+          `For everyday pieces the catalog has clear prices: the first 100 pieces of the Labels with your Logo cost $${priceOf("stickers-logo-personalizado", 100)} MXN, and past 100 pieces you get wholesale price. The 100-sheet prescription pad costs $${recetarioPrice("sin-diseno")} MXN if you already have your design and $${recetarioPrice("con-diseno")} MXN if we design it with you. For invitations, wedding menus and other event pieces we quote on WhatsApp based on quantity and format.`,
+        ],
+      },
+      {
+        heading: "How to start your custom order",
+        body: [
+          "Message us on WhatsApp with the type of piece, the quantity and, if you have them, your logo or style references. We send a digital proof and nothing is produced until you approve it. Then you receive your order by parcel or pick it up at a Casa Blanca branch.",
+          `Once the proof is approved, Casa Blanca pickup takes ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days and home delivery ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days. For an event with a date, quote early so there's room for adjustments. For the full step by step, see how to order custom stationery online.`,
         ],
       },
     ],
-    relatedProductSlugs: ["recetario-medico-personalizado", "stickers-logo-personalizado"],
+    faq: [
+      {
+        q: "What's the difference between custom stationery and a generic template?",
+        a: "A template is a ready-made mold where you only change a few details. Custom stationery is designed around your colors, copy and style, and goes through a digital proof you approve before production.",
+      },
+      {
+        q: "Is anything printed before I approve the design?",
+        a: "No. Every order goes through a digital proof first and nothing goes into production until you approve it.",
+      },
+      {
+        q: "Can I order stationery for a wedding or event?",
+        a: "Yes. We quote wedding menus, invitations, stickers for weddings and events, temporary tattoos and candy boxes on WhatsApp. Tell us the type of event, the date and the estimated quantity.",
+      },
+      {
+        q: "How much do labels with my logo cost?",
+        a: `The first 100 pieces cost $${priceOf("stickers-logo-personalizado", 100)} MXN. Past 100 you get wholesale price: for example, 200 pieces cost $${priceOf("stickers-logo-personalizado", 200)} MXN.`,
+      },
+      {
+        q: "How long does my order take?",
+        a: `The digital proof normally arrives within 24 hours of payment. Once you approve it, Casa Blanca pickup takes ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days and home delivery ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days.`,
+      },
+      {
+        q: "Do you ship outside Guadalajara?",
+        a: `Yes, we produce in Guadalajara and ship anywhere in Mexico for $${NATIONAL_SHIPPING_PRICE} MXN, free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more.`,
+      },
+    ],
+    relatedProductSlugs: ["recetario-medico-personalizado", "stickers-logo-personalizado", "dulceros-personalizados"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["papeleria-personalizada-para-negocios-jalisco"], BLOG_SLUG_EN["como-pedir-papeleria-personalizada-en-linea"], BLOG_SLUG_EN["menu-de-boda-personalizado"], BLOG_SLUG_EN["como-pedir-invitaciones-personalizadas-para-eventos"], BLOG_SLUG_EN["stickers-para-bodas-eventos-y-fiestas"]],
   },
   {
     slug: BLOG_SLUG_EN["stickers-para-empaques-de-negocio"],
