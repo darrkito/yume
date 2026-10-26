@@ -1,4 +1,6 @@
 import type { BlogPost } from "@/content/blog";
+import { getProduct, tieredPrice } from "@/content/products";
+import { CASABLANCA_BRANCHES, CASABLANCA_PRICE, FREE_SHIPPING_THRESHOLD, NATIONAL_TRANSIT_DAYS, PICKUP_EXTRA_DAYS, PRODUCTION_DAYS } from "@/content/shipping";
 import { BLOG_SLUG_EN } from "@/lib/i18n";
 
 // English versions of the dulceros cluster (see blog-dulceros.ts). English
@@ -9,6 +11,8 @@ import { BLOG_SLUG_EN } from "@/lib/i18n";
 const PUBLISHED = "2026-10-06";
 const DULCERO = "dulceros-personalizados";
 const en = (esSlug: string) => BLOG_SLUG_EN[esSlug];
+const dulceroTotal = (qty: number) => tieredPrice(getProduct(DULCERO)!.tiers!, qty).toLocaleString("en-US");
+const dulceroUnit = tieredPrice(getProduct(DULCERO)!.tiers!, 10) / 10;
 
 export const dulceroPostsEn: BlogPost[] = [
   {
@@ -491,5 +495,91 @@ export const dulceroPostsEn: BlogPost[] = [
     ],
     relatedProductSlugs: [DULCERO],
     relatedBlogSlugs: [en("ideas-de-dulceros-para-fiesta-infantil"), en("que-poner-en-un-dulcero"), en("dulceros-personalizados-guadalajara")],
+  },
+  {
+    slug: en("dulceros-dia-de-muertos-noviembre"),
+    title: "Party Favor Boxes for Day of the Dead and November: Ideas for the Classroom and the Party",
+    metaTitle: "Day of the Dead and November Party Favor Boxes",
+    description:
+      "Ideas for personalized favor boxes for Day of the Dead and November: designs for the class and the party, what to put inside, how many to order and when.",
+    category: "Guides",
+    publishedAt: "2026-10-28",
+    intro:
+      "November opens with Day of the Dead and continues with school festivals, birthdays and get-togethers before the posada season starts. A favor box (a dulcero, in Mexico) with a name and a seasonal theme turns ordinary candy into a gift that looks planned. Here are design ideas for the classroom and the party, what to put inside, what it costs and, most of all, how far ahead to order.",
+    sections: [
+      {
+        heading: "Which favor box suits Day of the Dead and November",
+        body: [
+          "For Day of the Dead and November, pick a favor box with the recipient's name and a seasonal theme, such as flowers, paper cut-outs or little skulls, in orange, purple and pink. It works for the classroom, a family party or an office get-together, and it arrives assembled and empty so you choose what goes inside.",
+          "If you're giving them out at a business or school, you can add the group name, the school name or your logo. Our box is lunch-box style, with a handle, and the customization includes a name and a theme.",
+        ],
+      },
+      {
+        heading: "A date with tradition: what UNESCO says",
+        body: [
+          "In 2008 UNESCO inscribed Mexico's indigenous festivity dedicated to the dead on the Representative List of the Intangible Cultural Heritage of Humanity. According to its entry, it takes place each year from the end of October to the beginning of November, and families prepare the deceased's favorite dishes and decorate with flowers and paper cut-outs.",
+          "So it's worth designing with respect: warm colors, flowers, cut paper and a clearly visible name work better than a scary image. For a school festival, a friendly, colorful design is the easiest to get right with kids of any age.",
+        ],
+      },
+      {
+        heading: "Design ideas for the classroom and the party",
+        body: [
+          "For the classroom, the most practical choice is one design for the whole group with the school or class name and a Day of the Dead theme in bright colors. For a family party or a November birthday, the same design with the birthday child's name feels more personal.",
+          "For an office or business get-together, use your brand colors with a seasonal touch and your logo, so it feels festive without losing your image. If you want the box to stay useful after November, a design with just colors and a name also works for other parties.",
+          "Send us a photo of the invitation or the decor and we'll match the design to those colors. We send a digital proof before production, and nothing is produced until you approve it.",
+        ],
+      },
+      {
+        heading: "What to put inside a November favor box",
+        body: [
+          "The box arrives empty, without candy, so you decide the filling. For this season, sugar or chocolate little skulls, traditional Mexican candy, cookies, gummies and a small extra like stickers with the same design all work well.",
+          "For preschoolers, avoid hard candy and small pieces they could swallow. Ask about allergies before you buy (peanut and chocolate are the most common) and assemble one as a test to work out how much you need. For more ideas by age, see our guide on what to put in a party favor box.",
+        ],
+      },
+      {
+        heading: "Price and how many to order",
+        body: [
+          `First 100 pieces: $${dulceroUnit} MXN per box, with a minimum order of 10, so you order exactly the number of guests or students. 10 boxes are $${dulceroTotal(10)}, 20 are $${dulceroTotal(20)} and 30 are $${dulceroTotal(30)}. Above 100 pieces it's wholesale pricing: message us on WhatsApp for a quote.`,
+          `Orders from $${FREE_SHIPPING_THRESHOLD} MXN ship free across Mexico. In the Guadalajara metro area you can pick them up for $${CASABLANCA_PRICE} at any of the ${CASABLANCA_BRANCHES.length} Casa Blanca parcel branches. Add 1 or 2 extra in case a guest shows up last minute.`,
+        ],
+      },
+      {
+        heading: "When to order so they arrive on time",
+        body: [
+          `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after you approve the digital proof, plus ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} days of national shipping (or ${PICKUP_EXTRA_DAYS} business day if you pick up at a Casa Blanca branch in Guadalajara). With those timings, an order placed at the end of October won't arrive for November 1 and 2.`,
+          "If your event is in the weeks after, such as a school festival, a birthday or an end-of-month get-together, order as soon as you can. And if you're already thinking about posadas, the same order can cover both dates with a neutral-color design; for a Christmas one, see our Christmas treat boxes guide.",
+        ],
+      },
+    ],
+    relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
+    relatedBlogSlugs: [en("dulceros-de-halloween"), en("que-poner-en-un-dulcero"), en("dulceros-navidenos-personalizados"), en("dulceros-personalizados-guadalajara")],
+    faq: [
+      {
+        q: "Do the favor boxes include candy?",
+        a: "No. The box arrives assembled and empty, ready to fill with the candy or extras you choose.",
+      },
+      {
+        q: "How much does a personalized favor box cost?",
+        a: `First 100 pieces: $${dulceroUnit} MXN per piece, with a minimum order of 10. Above 100 pieces it's wholesale pricing, quoted on WhatsApp. Orders from $${FREE_SHIPPING_THRESHOLD} ship free across Mexico.`,
+      },
+      {
+        q: "What does the customization include?",
+        a: "The name (of the birthday child, the group or your company) and the theme you choose, including your brand logo. We send a digital proof before production.",
+      },
+      {
+        q: "How long does it take to arrive?",
+        a: `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after you approve the proof, plus ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} days of national shipping, or ${PICKUP_EXTRA_DAYS} business day if you pick up at a Casa Blanca branch in Guadalajara.`,
+      },
+      {
+        q: "When is Day of the Dead celebrated?",
+        a: "According to UNESCO's entry, the indigenous festivity dedicated to the dead takes place each year from the end of October to the beginning of November.",
+      },
+    ],
+    sources: [
+      {
+        label: "UNESCO: Indigenous festivity dedicated to the dead (Representative List of the Intangible Cultural Heritage of Humanity, 2008)",
+        url: "https://ich.unesco.org/en/RL/indigenous-festivity-dedicated-to-the-dead-00054",
+      },
+    ],
   },
 ];

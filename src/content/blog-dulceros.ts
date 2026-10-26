@@ -1,4 +1,6 @@
 import type { BlogPost } from "@/content/blog";
+import { getProduct, tieredPrice } from "@/content/products";
+import { CASABLANCA_BRANCHES, CASABLANCA_PRICE, FREE_SHIPPING_THRESHOLD, NATIONAL_TRANSIT_DAYS, PICKUP_EXTRA_DAYS, PRODUCTION_DAYS } from "@/content/shipping";
 
 // Dulceros (party favor boxes) cluster, one post per real Google Trends query
 // group from the 2026-10 research (MX, 12 months): "dulceros" is the head
@@ -12,6 +14,9 @@ import type { BlogPost } from "@/content/blog";
 // llegan armados, prueba digital, 3-5 días de producción.
 const PUBLISHED = "2026-10-06";
 const DULCERO = "dulceros-personalizados";
+// Local price helper (blog.ts imports this file, so it can't import priceOf back).
+const dulceroTotal = (qty: number) => tieredPrice(getProduct(DULCERO)!.tiers!, qty).toLocaleString("en-US");
+const dulceroUnit = tieredPrice(getProduct(DULCERO)!.tiers!, 10) / 10;
 
 export const dulceroPosts: BlogPost[] = [
   {
@@ -498,5 +503,91 @@ export const dulceroPosts: BlogPost[] = [
     ],
     relatedProductSlugs: [DULCERO],
     relatedBlogSlugs: ["ideas-de-dulceros-para-fiesta-infantil", "que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara"],
+  },
+  {
+    slug: "dulceros-dia-de-muertos-noviembre",
+    title: "Dulceros para Día de Muertos y noviembre: ideas para el salón y la fiesta",
+    metaTitle: "Dulceros para Día de Muertos y noviembre: ideas",
+    description:
+      "Ideas de dulceros personalizados para Día de Muertos y noviembre: diseños para el salón y la fiesta, qué poner dentro, cuántos pedir y cuándo hacerlo.",
+    category: "Guías",
+    publishedAt: "2026-10-28",
+    intro:
+      "Noviembre abre con Día de Muertos y sigue con festivales escolares, cumpleaños y convivios antes de que empiece la temporada de posadas. Un dulcero con nombre y una temática de la temporada convierte los dulces de siempre en un detalle que se ve pensado. Aquí tienes ideas de diseño para el salón y la fiesta, qué poner dentro, cuánto cuesta y, sobre todo, con cuánto tiempo pedirlos.",
+    sections: [
+      {
+        heading: "Qué dulcero conviene para Día de Muertos y noviembre",
+        body: [
+          "Para Día de Muertos y noviembre conviene un dulcero con el nombre de quien lo recibe y una temática de la temporada, como flores, recortes de papel o calaveritas, en tonos naranja, morado y rosa. Sirve igual para el salón, la fiesta familiar o el convivio de la oficina, y llega armado y vacío para que tú elijas qué lleva dentro.",
+          "Si lo vas a dar en un negocio o en la escuela, puedes sumar el nombre del grupo, el de la escuela o tu logo. Nuestro dulcero es tipo lunch box, con asa, y la personalización incluye nombre y temática.",
+        ],
+      },
+      {
+        heading: "Una fecha con tradición: qué dice la UNESCO",
+        body: [
+          "La UNESCO inscribió en 2008 la festividad indígena dedicada a los muertos en México en la Lista Representativa del Patrimonio Cultural Inmaterial de la Humanidad. Según su ficha, se celebra cada año de finales de octubre a principios de noviembre, y las familias preparan los platillos favoritos de sus difuntos y adornan con flores y recortes de papel.",
+          "Por eso conviene pensar el diseño con respeto: colores cálidos, flores, papel recortado y el nombre bien visible funcionan mejor que una imagen de miedo. Si el dulcero es para un festival escolar, un diseño amable y colorido es lo más fácil de acertar con niños de todas las edades.",
+        ],
+      },
+      {
+        heading: "Ideas de diseño para el salón y la fiesta",
+        body: [
+          "Para el salón, lo más práctico es un solo diseño para todo el grupo con el nombre de la escuela o del salón y una temática de Día de Muertos en colores vivos. Para una fiesta familiar o un cumpleaños en noviembre, el mismo diseño con el nombre del festejado se siente más personal.",
+          "Para el convivio de una oficina o un negocio, usa los colores de tu marca con un detalle de temporada y tu logo, así se ve festivo sin perder tu imagen. Si quieres que el dulcero siga siendo útil después de noviembre, un diseño solo con colores y nombre también sirve para otras fiestas.",
+          "Mándanos una foto de la invitación o de la decoración y adaptamos el diseño a esos colores. Antes de producir te enviamos una prueba digital, y nada se produce hasta que la apruebas.",
+        ],
+      },
+      {
+        heading: "Qué poner dentro de un dulcero de noviembre",
+        body: [
+          "El dulcero llega vacío, sin dulces, así que tú decides el relleno. Para esta temporada funcionan las calaveritas de azúcar o de chocolate, los dulces tradicionales mexicanos, las galletas, las gomitas y un detalle pequeño como stickers del mismo diseño.",
+          "Para preescolar, evita dulces duros y piezas pequeñas que se puedan tragar. Pregunta por alergias antes de comprar (cacahuate y chocolate son las más comunes) y arma uno de prueba para calcular cuánto necesitas. Si buscas más ideas por edad, revisa la guía de qué poner en un dulcero.",
+        ],
+      },
+      {
+        heading: "Precio y cuántos pedir",
+        body: [
+          `Primeras 100 piezas: $${dulceroUnit} MXN por dulcero, con pedido mínimo de 10 piezas, así que pides exactamente el número de invitados o alumnos. 10 dulceros son $${dulceroTotal(10)}, 20 son $${dulceroTotal(20)} y 30 son $${dulceroTotal(30)}. Arriba de 100 piezas es precio mayoreo: escríbenos por WhatsApp y te cotizamos.`,
+          `Desde $${FREE_SHIPPING_THRESHOLD} de compra el envío nacional es gratis. Si estás en la zona metropolitana de Guadalajara, puedes recogerlos por $${CASABLANCA_PRICE} en cualquiera de las ${CASABLANCA_BRANCHES.length} sucursales de paquetería Casa Blanca. Suma 1 o 2 extra por si llega un invitado de último momento.`,
+        ],
+      },
+      {
+        heading: "Cuándo pedirlos para que lleguen a tiempo",
+        body: [
+          `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba digital, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional (o ${PICKUP_EXTRA_DAYS} día hábil si recoges en una sucursal Casa Blanca de Guadalajara). Con esos tiempos, un pedido hecho a finales de octubre ya no llega para el 1 y 2 de noviembre.`,
+          "Si tu evento es en las semanas siguientes, como un festival escolar, un cumpleaños o un convivio de fin de mes, pídelos cuanto antes. Y si ya estás pensando en posadas, el mismo pedido puede cubrir ambas fechas con un diseño de colores neutros; para uno navideño revisa la guía de dulceros navideños.",
+        ],
+      },
+    ],
+    relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["dulceros-de-halloween", "que-poner-en-un-dulcero", "dulceros-navidenos-personalizados", "dulceros-personalizados-guadalajara"],
+    faq: [
+      {
+        q: "¿Los dulceros incluyen dulces?",
+        a: "No. El dulcero llega armado y vacío, listo para llenar con los dulces o detalles que tú elijas.",
+      },
+      {
+        q: "¿Cuánto cuesta un dulcero personalizado?",
+        a: `Primeras 100 piezas: $${dulceroUnit} MXN por pieza, con pedido mínimo de 10. Arriba de 100 piezas es precio mayoreo y se cotiza por WhatsApp. Desde $${FREE_SHIPPING_THRESHOLD} el envío nacional es gratis.`,
+      },
+      {
+        q: "¿Qué incluye la personalización?",
+        a: "El nombre (del festejado, del grupo o de tu empresa) y la temática que elijas, incluido el logo de tu marca. Te mandamos una prueba digital antes de producir.",
+      },
+      {
+        q: "¿Cuánto tardan en llegar?",
+        a: `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional, o ${PICKUP_EXTRA_DAYS} día hábil si recoges en una sucursal Casa Blanca de Guadalajara.`,
+      },
+      {
+        q: "¿Cuándo se celebra el Día de Muertos?",
+        a: "Según la ficha de la UNESCO, la festividad indígena dedicada a los muertos se celebra cada año de finales de octubre a principios de noviembre.",
+      },
+    ],
+    sources: [
+      {
+        label: "UNESCO: Fiesta indígena dedicada a los muertos (Lista Representativa del Patrimonio Cultural Inmaterial, 2008)",
+        url: "https://ich.unesco.org/en/RL/indigenous-festivity-dedicated-to-the-dead-00054",
+      },
+    ],
   },
 ];

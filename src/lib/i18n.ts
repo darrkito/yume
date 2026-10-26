@@ -58,6 +58,7 @@ export const BLOG_SLUG_EN: Record<string, string> = {
   "que-poner-en-un-dulcero": "what-to-put-in-a-party-favor-box",
   "dulceros-de-halloween": "personalized-halloween-treat-boxes",
   "cajas-bolsas-o-vasos-dulceros-cual-elegir": "favor-boxes-vs-goodie-bags-vs-treat-cups",
+  "dulceros-dia-de-muertos-noviembre": "day-of-the-dead-and-november-party-favor-boxes",
 };
 
 export const PRODUCT_SLUG_ES: Record<string, string> = Object.fromEntries(
