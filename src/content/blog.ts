@@ -1596,42 +1596,115 @@ export const blogPosts: BlogPost[] = [
     title: "Etiquetas con nombre para botellas, loncheras y mochilas: dónde pegarlas y cómo cuidarlas",
     metaTitle: "Etiquetas con nombre para botellas, loncheras y mochilas",
     description:
-      "Dónde pegar las etiquetas con nombre en botellas, loncheras y mochilas, cómo aplicarlas para que duren y qué tamaño y diseño elegir. Hechas en vinil resistente al agua en Guadalajara.",
+      "Dónde pegar etiquetas con nombre en botellas, loncheras y mochilas, cómo aplicarlas para que duren y qué diseño elegir. Vinil resistente al agua.",
     category: "Guías",
     publishedAt: "2026-10-17",
+    modifiedAt: "2026-10-26",
     intro:
-      "Una botella, una lonchera o una mochila sin nombre se pierde más fácil, y en un salón donde todos tienen la misma, se confunde. Una etiqueta con nombre lo resuelve en segundos. Aquí va cómo pegarla bien, dónde conviene y cómo cuidarla para que dure todo el ciclo.",
+      "Una botella, una lonchera o una mochila sin nombre se pierde más fácil, y en un salón donde todos tienen la misma, se confunde. Una etiqueta con nombre lo resuelve en segundos. Esta guía explica dónde pegarla en cada objeto, cómo aplicarla para que dure, cómo cuidarla durante el ciclo escolar, qué diseño elegir, cuántas pedir y cuánto cuestan. Las hacemos en vinil resistente al agua, en Guadalajara, y enviamos a todo México.",
     sections: [
       {
-        heading: "Dónde pegar la etiqueta en cada objeto",
+        heading: "Dónde pegar la etiqueta con nombre en cada objeto",
         body: [
-          "En la botella o el termo, en una parte lisa del cuerpo, lejos de la tapa y de la base. En la lonchera, en la tapa o en un costado liso. En la mochila, en una zona plana por fuera, o por dentro si prefieres que no se vea.",
-          "Evita costuras, orillas y partes con relieve: ahí la etiqueta se despega primero.",
+          "Pega la etiqueta en una parte lisa y plana de cada objeto: en el cuerpo de la botella o el termo, lejos de la tapa y de la base; en la tapa o en un costado liso de la lonchera; y en una zona plana por fuera de la mochila. Evita costuras, orillas y relieves, donde se despega primero.",
+          "Si no quieres que el nombre se vea a simple vista, en la mochila también puedes pegarla por dentro. En el estuche, igual que en la lonchera, elige una parte lisa por fuera. La tabla resume dónde conviene en cada caso.",
+        ],
+        table: {
+          headers: ["Objeto", "Dónde pegarla", "Evita"],
+          rows: [
+            ["Botella o termo", "En una parte lisa del cuerpo", "Cerca de la tapa y de la base"],
+            ["Lonchera", "En la tapa o en un costado liso", "Costuras y orillas"],
+            ["Mochila", "En una zona plana por fuera, o por dentro", "Bolsillos con relieve y costuras"],
+            ["Estuche", "En una parte lisa por fuera", "Cierres y orillas"],
+          ],
+        },
+      },
+      {
+        heading: "Cómo aplicar la etiqueta para que dure",
+        body: [
+          "Limpia y seca la superficie, despega el respaldo sin tocar el adhesivo y presiona desde el centro hacia las orillas para sacar el aire. Después espera un rato antes de mojarla por primera vez. Con ese cuidado, el vinil resistente al agua, al sol y a los rayones aguanta el uso diario.",
+          "Primero, limpia el objeto y déjalo secar por completo. El adhesivo necesita una superficie limpia y seca para pegar bien.",
+          "Segundo, despega el respaldo con cuidado y trata de no tocar el lado del adhesivo con los dedos. Coloca primero el centro de la etiqueta en el lugar elegido.",
+          "Tercero, presiona con el dedo desde el centro hacia las orillas, para que salga el aire y quede pareja. Si la superficie es curva, como una botella, hazlo con calma y por partes.",
+          "Por último, deja pasar un rato antes de mojarla o meterla a la mochila. Así el adhesivo se asienta antes del primer uso.",
         ],
       },
       {
-        heading: "Cómo aplicarla para que dure",
+        heading: "Cómo cuidar las etiquetas durante el ciclo escolar",
         body: [
-          "Limpia y seca bien la superficie antes de pegarla, despega el respaldo sin tocar el adhesivo y presiona desde el centro hacia las orillas para sacar el aire. Mejor si pasa un rato antes de mojarla por primera vez.",
-          "El vinil que usamos es resistente al agua, al sol y a los rayones. Aun así, trátala con cuidado: no raspes la etiqueta ni la dejes en remojo largo.",
+          "El vinil que usamos resiste el agua, el sol y los rayones, según la ficha del producto, pero no es indestructible. Para que dure todo el ciclo, no raspes la etiqueta ni dejes el objeto en remojo largo. Si una orilla se levanta, revisa si quedó sobre una costura o un relieve.",
+          "Las botellas y los termos son los objetos que más se mojan y se lavan, así que ahí conviene más el cuidado: lávalos con calma y no talles la etiqueta con una esponja áspera. En loncheras y mochilas, que se arrastran y se golpean, la mejor protección es haberlas pegado en una zona plana, lejos de las orillas.",
+          "Si cambias de botella o de lonchera a mitad del ciclo, lo práctico es tener unas etiquetas de repuesto desde el principio.",
         ],
       },
       {
-        heading: "Qué diseño elegir",
+        heading: "Qué diseño elegir para una etiqueta con nombre",
         body: [
-          "Letra grande y colores con buen contraste, para que se lea de lejos. Para los más chicos, un dibujo ayuda a reconocer sus cosas; para los grandes, funciona mejor algo sencillo con nombre y apellido.",
-          "Si son varios hermanos, pide un color distinto por cada uno: así saben cuál es la suya sin leer.",
+          "Elige letra grande y colores con buen contraste entre la letra y el fondo, para que el nombre se lea de lejos. A los más chicos les ayuda un dibujo para reconocer sus cosas; para los más grandes funciona mejor algo sencillo con nombre y apellido.",
+          "Si son varios hermanos, pide un color distinto para cada uno: así saben cuál es la suya sin leer. También puedes agregar el grado o el grupo, o un teléfono de contacto en las etiquetas de la mochila y la lonchera.",
+          "No necesitas tener el diseño listo. Cuéntanos qué nombre y qué estilo te gustan y te mandamos una prueba digital para aprobar antes de imprimir.",
         ],
       },
       {
-        heading: "Cotiza tus etiquetas con nombre",
+        heading: "Cuántas etiquetas con nombre pedir",
         body: [
-          "Mándanos por WhatsApp el nombre, el diseño y la cantidad. Las etiquetas de vinil personalizadas empiezan en 40 piezas y las primeras 100 piezas cuestan $350. Te mandamos prueba digital antes de imprimir y enviamos a todo México.",
+          "Cuenta cada objeto que quieres marcar, multiplícalo por el número de hijos y suma unas cuantas de repuesto. Se venden por cantidad de piezas, no por planilla, con un mínimo de 40 piezas, así que puedes pedir cerca del número que realmente necesitas.",
+          "Un ejemplo: una botella, un termo, una lonchera, una mochila y un estuche son 5 etiquetas por niño; con dos hermanos son 10, y con repuestos para cuadernos y libros llegas a las 40 piezas del mínimo. Si además quieres marcar los útiles, lee nuestra guía de etiquetas escolares personalizadas, que incluye la cuenta completa.",
+          "Si no sabes cuántas necesitas, escríbenos con tu lista de objetos y te ayudamos a calcularlo.",
+        ],
+      },
+      {
+        heading: "Cuánto cuestan las etiquetas con nombre y cómo cotizarlas",
+        body: [
+          `Las etiquetas de vinil personalizadas empiezan en 40 piezas. Primeras 100 piezas: $${priceOf("stickers-vinil-impermeable", 100)}. Pasando las 100, cada pieza extra va a precio mayoreo. Mándanos por WhatsApp el nombre, el diseño y la cantidad, y te mandamos una prueba digital antes de imprimir.`,
+          "La prueba llega normalmente en un máximo de 24 horas después del pago, con hasta 2 rondas de ajustes. No imprimimos nada sin tu aprobación. Así se ve el precio por cantidad:",
+        ],
+        table: {
+          headers: ["Piezas", "Stickers de vinil"],
+          rows: tierPriceRows(["stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
+        },
+      },
+      {
+        heading: "Cuándo llegan y cuánto cuesta el envío",
+        body: [
+          `Desde que apruebas la prueba, el pedido llega a domicilio en ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles en cualquier parte de México, o está listo para recoger en una sucursal Casa Blanca de Guadalajara en ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles.`,
+          `El envío a domicilio cuesta $${NATIONAL_SHIPPING_PRICE} y la recolección en sucursal $${CASABLANCA_PRICE}; en compras de $${FREE_SHIPPING_THRESHOLD} o más, ambos son gratis. Conviene pedirlas con unas semanas de anticipación al inicio de clases. Para ver cada etapa con detalle, revisa cuánto tarda un pedido de stickers personalizados.`,
+          "Si te preguntas por qué usamos vinil y no papel, lo explicamos en la guía de vinil vs. papel. Y si lo que buscas son etiquetas para tu negocio y no para la escuela, mira cómo se piden en rollo, hoja o por pieza.",
         ],
       },
     ],
-    relatedProductSlugs: [],
-    relatedBlogSlugs: ["etiquetas-escolares-personalizadas-guadalajara", "stickers-personalizados-para-mascotas"],
+    faq: [
+      {
+        q: "¿Dónde conviene pegar la etiqueta en una botella?",
+        a: "En una parte lisa del cuerpo, lejos de la tapa y de la base. Evita costuras, orillas y relieves, que es donde la etiqueta se despega primero.",
+      },
+      {
+        q: "¿Las etiquetas aguantan el agua?",
+        a: "Se imprimen en vinil resistente al agua, al sol y a los rayones, según la ficha del producto. Aun así, no las raspes ni dejes el objeto en remojo largo.",
+      },
+      {
+        q: "¿Cuánto cuestan las etiquetas con nombre?",
+        a: `Primeras 100 piezas: $${priceOf("stickers-vinil-impermeable", 100)}. Pasando las 100, cada pieza extra va a precio mayoreo: 150 piezas cuestan $${priceOf("stickers-vinil-impermeable", 150)} y 200 piezas $${priceOf("stickers-vinil-impermeable", 200)}.`,
+      },
+      {
+        q: "¿Cuál es el pedido mínimo?",
+        a: "40 piezas. Se venden por cantidad de piezas, no por planilla, así que puedes pedir cerca del número que necesitas.",
+      },
+      {
+        q: "¿Puedo ver la etiqueta antes de que se imprima?",
+        a: "Sí. La prueba digital llega normalmente en un máximo de 24 horas después del pago, con hasta 2 rondas de ajustes. No imprimimos nada sin tu aprobación.",
+      },
+      {
+        q: "¿Cuánto tarda el pedido?",
+        a: `Desde que apruebas la prueba, llega a domicilio en ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles, o está listo para recoger en Casa Blanca en ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles.`,
+      },
+      {
+        q: "¿Envían fuera de Guadalajara?",
+        a: `Sí, enviamos a todo México por $${NATIONAL_SHIPPING_PRICE}, gratis en compras de $${FREE_SHIPPING_THRESHOLD} o más. En la zona metropolitana de Guadalajara también puedes recoger en una de las ${CASABLANCA_BRANCHES.length} sucursales Casa Blanca por $${CASABLANCA_PRICE}.`,
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["etiquetas-escolares-personalizadas-guadalajara", "stickers-vinil-vs-papel-diferencias", "cuanto-tarda-un-pedido-de-stickers-personalizados", "impresion-de-etiquetas-rollo-hoja-o-por-pieza", "stickers-personalizados-para-mascotas"],
     serviceLink: { href: "/productos/stickers-vinil-impermeable", label: "Ver stickers de vinil personalizados" },
     quoteMessage: "Hola, quiero cotizar etiquetas con nombre para botellas, loncheras y mochilas.\n\nNombre(s):\nCantidad aproximada:\n¿Ya tengo diseño? (sí / no):",
   },

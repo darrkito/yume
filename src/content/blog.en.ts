@@ -1545,42 +1545,115 @@ export const blogPostsEn: BlogPost[] = [
     title: "Name labels for bottles, lunch boxes, and backpacks: where to stick them and how to care for them",
     metaTitle: "Name labels for bottles, lunch boxes, and backpacks",
     description:
-      "Where to stick name labels on bottles, lunch boxes, and backpacks, how to apply them so they last, and which size and design to pick. Made in water-resistant vinyl in Guadalajara.",
+      "Where to stick name labels on bottles, lunch boxes, and backpacks, how to apply them so they last, and which design to pick. Water-resistant vinyl.",
     category: "Guides",
     publishedAt: "2026-10-17",
+    modifiedAt: "2026-10-26",
     intro:
-      "A bottle, lunch box, or backpack with no name gets lost more easily, and in a classroom where everyone has the same one, it gets mixed up. A name label fixes that in seconds. Here is how to stick it on properly, where it works best, and how to care for it so it lasts all year.",
+      "A bottle, lunch box, or backpack with no name gets lost more easily, and in a classroom where everyone has the same one, it gets mixed up. A name label fixes that in seconds. This guide covers where to stick it on each item, how to apply it so it lasts, how to care for it during the school year, which design to pick, how many to order, and what they cost. We make them in water-resistant vinyl in Guadalajara and ship across Mexico.",
     sections: [
       {
-        heading: "Where to stick the label on each item",
+        heading: "Where to stick a name label on each item",
         body: [
-          "On a bottle or thermos, on a smooth part of the body, away from the lid and the base. On a lunch box, on the lid or a smooth side. On a backpack, on a flat area outside, or inside if you would rather it not show.",
-          "Avoid seams, edges, and raised areas: that is where a label peels first.",
+          "Stick the label on a smooth, flat part of each item: on the body of the bottle or thermos, away from the lid and the base; on the lid or a smooth side of the lunch box; and on a flat area outside the backpack. Avoid seams, edges, and raised areas, where a label peels first.",
+          "If you would rather the name not show at first glance, you can also stick it inside the backpack. On a pencil case, as on a lunch box, pick a smooth part outside. The table sums up where each one fits best.",
+        ],
+        table: {
+          headers: ["Item", "Where to stick it", "Avoid"],
+          rows: [
+            ["Bottle or thermos", "On a smooth part of the body", "Near the lid and the base"],
+            ["Lunch box", "On the lid or a smooth side", "Seams and edges"],
+            ["Backpack", "On a flat area outside, or inside", "Raised pockets and seams"],
+            ["Pencil case", "On a smooth part outside", "Zippers and edges"],
+          ],
+        },
+      },
+      {
+        heading: "How to apply a label so it lasts",
+        body: [
+          "Clean and dry the surface, peel the backing without touching the adhesive, and press from the center out to push the air out. Then wait a while before the first time it gets wet. With that care, vinyl that resists water, sun, and scratches holds up to daily use.",
+          "First, clean the item and let it dry completely. The adhesive needs a clean, dry surface to stick well.",
+          "Second, peel the backing carefully and try not to touch the adhesive side with your fingers. Place the center of the label on the spot you picked first.",
+          "Third, press with your finger from the center out to the edges so the air escapes and the label lies flat. If the surface is curved, like a bottle, take it slowly and a section at a time.",
+          "Finally, let some time pass before it gets wet or goes into the backpack, so the adhesive settles before first use.",
         ],
       },
       {
-        heading: "How to apply it so it lasts",
+        heading: "How to care for the labels during the school year",
         body: [
-          "Clean and dry the surface well, peel the backing without touching the adhesive, and press from the center out to push the air out. It helps to wait a while before the first time it gets wet.",
-          "The vinyl we use resists water, sun, and scratches. Even so, treat it with care: do not scrape the label or leave it soaking for long.",
+          "The vinyl we use resists water, sun, and scratches, per the product page, but it is not indestructible. To make it last all year, do not scrape the label or leave the item soaking for long. If an edge lifts, check whether it landed on a seam or a raised area.",
+          "Bottles and thermoses get wet and washed the most, so they deserve the most care: wash them gently and do not scrub the label with a rough sponge. Lunch boxes and backpacks get dragged and bumped, and the best protection is having stuck the label on a flat area, away from the edges.",
+          "If you switch bottles or lunch boxes midway through the year, it is practical to have a few spare labels from the start.",
         ],
       },
       {
-        heading: "Which design to choose",
+        heading: "Which design to choose for a name label",
         body: [
-          "Large letters and good color contrast so it reads from a distance. For little ones, a drawing helps them recognize their things; for older kids, something simple with first and last name works better.",
-          "For siblings, pick a different color for each so they know which is theirs without reading.",
+          "Choose large letters and good contrast between the letters and the background so the name reads from a distance. A drawing helps little ones recognize their things; for older kids, something simple with first and last name works better.",
+          "For siblings, pick a different color for each so they know which is theirs without reading. You can also add the grade or class, or a contact phone number on the backpack and lunch box labels.",
+          "You do not need to have the design ready. Tell us which name and style you like and we send a digital proof to approve before printing.",
         ],
       },
       {
-        heading: "Quote your name labels",
+        heading: "How many name labels to order",
         body: [
-          "Send us the name, the design, and the quantity on WhatsApp. Custom vinyl labels start at 40 pieces and the first 100 pieces cost $350. We send a digital proof before printing and ship across Mexico.",
+          "Count each item you want to mark, multiply by the number of kids, and add a few spares. They are sold by the piece, not by the sheet, with a minimum of 40 pieces, so you can order close to the number you actually need.",
+          "An example: a bottle, a thermos, a lunch box, a backpack, and a pencil case are 5 labels per child; with two siblings that is 10, and with spares for notebooks and books you reach the 40-piece minimum. If you also want to mark school supplies, read our guide to custom school labels, which includes the full count.",
+          "If you are not sure how many you need, send us your list of items and we will help you work it out.",
+        ],
+      },
+      {
+        heading: "How much name labels cost and how to get a quote",
+        body: [
+          `Custom vinyl labels start at 40 pieces. First 100 pieces: $${priceOf("stickers-vinil-impermeable", 100)}. Above 100 pieces, each extra piece is at wholesale price. Send us the name, the design, and the quantity on WhatsApp, and we send a digital proof before printing.`,
+          "The proof normally arrives within 24 hours of payment, with up to 2 rounds of adjustments. We print nothing without your approval. Here is the price by quantity:",
+        ],
+        table: {
+          headers: ["Pieces", "Vinyl stickers"],
+          rows: tierPriceRows(["stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
+        },
+      },
+      {
+        heading: "When they arrive and what shipping costs",
+        body: [
+          `Once you approve the proof, the order reaches your door in ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days anywhere in Mexico, or is ready for pickup at a Casa Blanca branch in Guadalajara in ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days.`,
+          `Home delivery costs $${NATIONAL_SHIPPING_PRICE} and branch pickup $${CASABLANCA_PRICE}; on purchases of $${FREE_SHIPPING_THRESHOLD} or more, both are free. Order a few weeks before school starts. For each stage in detail, see how long custom stickers take to arrive.`,
+          "If you wonder why we use vinyl and not paper, we explain it in the vinyl vs. paper guide. And if you are after labels for your business rather than for school, see how they are ordered on a roll, sheet, or by the piece.",
         ],
       },
     ],
-    relatedProductSlugs: [],
-    relatedBlogSlugs: [BLOG_SLUG_EN["etiquetas-escolares-personalizadas-guadalajara"]],
+    faq: [
+      {
+        q: "Where is the best place to stick a label on a bottle?",
+        a: "On a smooth part of the body, away from the lid and the base. Avoid seams, edges, and raised areas, where a label peels first.",
+      },
+      {
+        q: "Do the labels hold up to water?",
+        a: "They are printed on vinyl that resists water, sun, and scratches, per the product page. Even so, do not scrape them or leave the item soaking for long.",
+      },
+      {
+        q: "How much do name labels cost?",
+        a: `First 100 pieces: $${priceOf("stickers-vinil-impermeable", 100)}. Above 100 pieces, each extra piece is at wholesale price: 150 pieces cost $${priceOf("stickers-vinil-impermeable", 150)} and 200 pieces $${priceOf("stickers-vinil-impermeable", 200)}.`,
+      },
+      {
+        q: "What is the minimum order?",
+        a: "40 pieces. They are sold by the piece, not by the sheet, so you can order close to the number you need.",
+      },
+      {
+        q: "Can I see the label before it is printed?",
+        a: "Yes. The digital proof normally arrives within 24 hours of payment, with up to 2 rounds of adjustments. We print nothing without your approval.",
+      },
+      {
+        q: "How long does the order take?",
+        a: `Once you approve the proof, it reaches your door in ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days, or is ready for pickup at Casa Blanca in ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days.`,
+      },
+      {
+        q: "Do you ship outside Guadalajara?",
+        a: `Yes, we ship across Mexico for $${NATIONAL_SHIPPING_PRICE}, free on purchases of $${FREE_SHIPPING_THRESHOLD} or more. In the Guadalajara metro area you can also pick up at one of ${CASABLANCA_BRANCHES.length} Casa Blanca branches for $${CASABLANCA_PRICE}.`,
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["etiquetas-escolares-personalizadas-guadalajara"], BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"], BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"], BLOG_SLUG_EN["impresion-de-etiquetas-rollo-hoja-o-por-pieza"], BLOG_SLUG_EN["stickers-personalizados-para-mascotas"]],
     serviceLink: { href: "/en/products/waterproof-vinyl-stickers", label: "See custom vinyl stickers" },
     quoteMessage: "Hi, I'd like a quote for name labels for bottles, lunch boxes, and backpacks.\n\nName(s):\nApproximate quantity:\nDo I already have a design? (yes / no):",
   },
