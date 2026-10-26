@@ -1024,43 +1024,104 @@ export const blogPosts: BlogPost[] = [
     slug: "stickers-para-bodas-eventos-y-fiestas",
     title: "Stickers para bodas, eventos y fiestas: ideas y cómo pedirlos",
     metaTitle: "Stickers para bodas, eventos y fiestas",
-    description:
-      "Stickers para bodas, stickers para eventos y stickers para fiestas: para sellar bolsitas de regalo, decorar el detalle de la mesa o combinar con tu papelería. Qué formato pedir y cómo cotizar el tuyo.",
+    description: `Stickers para bodas, eventos y fiestas: usos, tamaños y formato. Primeras 100 piezas: $${priceOf("stickers-logo-personalizado", 100)}, con prueba digital y envío a todo México.`,
     category: "Guías",
     publishedAt: "2026-09-23",
+    modifiedAt: "2026-10-26",
     intro:
       "Los stickers personalizados están en tendencia como detalle de celebración: cada vez se ven más en bodas, XV años y fiestas de todo tipo, sellando bolsitas de regalo, decorando la mesa o combinados con el resto de la papelería del evento. Un sticker con el nombre de los novios, la fecha del evento o el tema de la fiesta es uno de los detalles más baratos de personalizar una celebración: no reemplaza la invitación ni el menú, pero sí amarra visualmente todo lo demás. Esta guía cubre los usos más comunes de stickers para bodas, eventos y fiestas, y qué pedir según el tipo de celebración.",
     sections: [
       {
         heading: "Por qué se han vuelto tan populares",
         body: [
-          "Es una tendencia que vemos crecer en boda tras boda y fiesta tras fiesta: un detalle pequeño y barato, pero que se nota en fotos, en redes y en cada bolsita o botella que se lleva un invitado a casa. A diferencia de un favor de fiesta genérico, un sticker personalizado cuesta poco por pieza y funciona en casi cualquier superficie, lo que lo hace fácil de sumar sin importar el presupuesto o el tamaño del evento.",
+          "Los stickers personalizados se han vuelto populares en celebraciones porque son un detalle pequeño que se ve en fotos y en cada regalo que un invitado se lleva a casa, cuestan poco por pieza y se pegan en casi cualquier superficie. Por eso se pueden sumar a cualquier presupuesto o tamaño de evento.",
+          "Es una tendencia que vemos crecer en boda tras boda y fiesta tras fiesta. A diferencia de un favor de fiesta genérico, un sticker lleva el nombre, la fecha o el tema de tu celebración, así que se siente hecho para ese evento y no comprado en una tienda.",
         ],
       },
       {
         heading: "Los usos más comunes en una celebración",
         body: [
-          "Los que más vemos: sellar bolsitas de dulces o regalos para los invitados, cerrar el sobre de las invitaciones, decorar el centro de mesa o el letrero de bienvenida, y pegar en botellas de agua o latas personalizadas para el brindis. En una boda o XV años suelen llevar las iniciales o el nombre de los festejados y la fecha; en una fiesta infantil o temática, el diseño o personaje del tema.",
+          "Los usos más comunes son sellar bolsitas de dulces o regalos, cerrar el sobre de las invitaciones, decorar el centro de mesa o el letrero de bienvenida y pegar en botellas o latas para el brindis. En bodas y XV años llevan nombres o fecha; en fiestas temáticas, el diseño del tema.",
+          "Por tipo de celebración, estas ideas son las que más se piden:",
+          "Boda: iniciales de los novios y fecha para sellar bolsitas de detalle, sobres de invitación o frascos de la mesa de dulces. XV años: el nombre de la festejada o el tema de la fiesta en bolsitas, botellas y recuerdos.",
+          "Baby shower, bautizo o primera comunión: el nombre del festejado o un ícono del tema en cajitas y bolsas de recuerdo. Fiesta infantil: el personaje o diseño del tema en dulceros y bolsitas sorpresa. Despedida de soltera o evento de empresa: una frase, un logo o el nombre del evento en botellas y regalos para los asistentes.",
           "Si ya tienes invitaciones o un menú de boda personalizado, usar el mismo diseño en los stickers hace que todo el evento se vea como una sola pieza, no como elementos sueltos comprados por separado.",
         ],
       },
       {
         heading: "Qué formato pedir según el uso",
         body: [
-          "Para bolsitas de regalo o sobres, un sticker circular u ovalado de 3 a 5 cm es el tamaño más común. Para botellas o latas, un formato rectangular o el troquelado exacto a la silueta de tu diseño se ve mejor en superficies curvas. Si el sticker va a estar en algo que se moja (hielera, botella, exterior), conviene pedirlo en vinil resistente al agua en vez de papel.",
+          "Para bolsitas de regalo o sobres, un sticker circular u ovalado de 3 a 5 cm es el tamaño más común. Para botellas o latas conviene uno rectangular o un troquelado a la silueta de tu diseño, y si va a mojarse, pide vinil resistente al agua en vez de papel.",
+          "En superficies curvas, como una botella o una lata, el troquelado a la forma exacta de tu diseño se ve más limpio que un cuadrado genérico. Si dudas entre troquelado y semitroquelado, lee nuestra comparación de troquelado vs. semitroquelado.",
+          "Si el sticker va a estar en algo que se moja (hielera, botella, exterior), el vinil es la opción segura; para ver la diferencia con el papel, revisa nuestra guía de stickers de vinil vs. papel. Al pedir de vinil también eliges el acabado: mate, brillante u holográfico (el holográfico tiene un costo extra por pieza, que ves en la página del producto).",
           "En Yume se venden por cantidad de piezas, no por planilla: puedes pedir exactamente el número de invitados o mesas que tiene tu evento, sin comprar de más.",
+        ],
+      },
+      {
+        heading: "Cuántos stickers pedir y cuánto cuestan",
+        body: [
+          `Primeras 100 piezas: $${priceOf("stickers-logo-personalizado", 100)} en etiquetas con tu logo y $${priceOf("stickers-vinil-impermeable", 100)} en stickers de vinil. Pasando las 100, cada pieza extra va a precio mayoreo. El mínimo de compra es de 50 piezas en etiquetas con logo y de 40 en vinil, así que pides cerca del número real de invitados o mesas de tu evento.`,
+          "Una cuenta simple: una pieza por invitado si van en bolsitas o botellas, una por sobre si sellas invitaciones, y unas cuantas de más para mesas, letreros y fotos. Precio por cantidad:",
+        ],
+        table: {
+          headers: ["Piezas", "Etiquetas con tu logo", "Stickers de vinil"],
+          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
+        },
+      },
+      {
+        heading: "Cómo combinarlos con el resto de tu papelería",
+        body: [
+          "Usa la misma paleta, tipografía e iniciales en el sticker, la invitación y el menú, y el evento se ve como una sola pieza. Lo más práctico es definir el diseño una vez y pedir cada pieza con ese mismo archivo, para que los colores y el estilo coincidan en todo.",
+          "Si todavía no tienes la papelería, empieza por la invitación y el menú de boda, y deja los stickers para el final: ya tendrás el diseño definido. Para los detalles de los invitados, también puedes revisar los dulceros para bodas, XV años y baby showers y los tatuajes temporales para fiestas.",
+        ],
+      },
+      {
+        heading: "Cuánto tarda y cómo se entrega",
+        body: [
+          `La prueba digital llega normalmente en un máximo de 24 horas después del pago. Desde que la apruebas, tu pedido llega a domicilio en ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles en cualquier parte de México, o está listo para recoger en una sucursal Casa Blanca de Guadalajara en ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles.`,
+          `El envío a domicilio cuesta $${NATIONAL_SHIPPING_PRICE} y la recolección en sucursal $${CASABLANCA_PRICE}; en compras de $${FREE_SHIPPING_THRESHOLD} o más, ambos son gratis. Si tu evento tiene fecha fija, pide con margen para poder ajustar la prueba antes de producir.`,
         ],
       },
       {
         heading: "Cómo cotizar el tuyo",
         body: [
-          "Mándanos el nombre, la fecha y el estilo o color que quieres (o el diseño ya armado, si lo tienes) junto con la cantidad que necesitas, y te preparamos una prueba digital antes de imprimir. Si tu evento ya tiene invitaciones o un menú personalizado, cuéntanos: podemos alinear el sticker al mismo diseño.",
-          "Producimos en Guadalajara y enviamos a cualquier parte de México, así que aplica el mismo proceso sin importar dónde sea tu boda, evento o fiesta.",
+          "Para cotizar, mándanos nombres, fecha, estilo o colores (o tu diseño ya armado) y la cantidad que necesitas. Te preparamos una prueba digital antes de imprimir, y no se produce nada hasta que la apruebas. Producimos en Guadalajara y enviamos a todo México.",
+          "Si tu evento ya tiene invitaciones o un menú personalizado, cuéntanos: podemos alinear el sticker al mismo diseño. El proceso es el mismo sin importar dónde sea tu boda, evento o fiesta.",
         ],
       },
     ],
+    faq: [
+      {
+        q: "¿Qué tamaño de sticker conviene para bolsitas de regalo?",
+        a: "Un sticker circular u ovalado de 3 a 5 cm es el tamaño más común para bolsitas de regalo y sobres de invitación.",
+      },
+      {
+        q: "¿Cuánto cuestan los stickers para mi evento?",
+        a: `Primeras 100 piezas: $${priceOf("stickers-logo-personalizado", 100)} en etiquetas con tu logo y $${priceOf("stickers-vinil-impermeable", 100)} en stickers de vinil. Pasando las 100, cada pieza extra va a precio mayoreo: 200 piezas de vinil cuestan $${priceOf("stickers-vinil-impermeable", 200)}.`,
+      },
+      {
+        q: "¿Cuál es el pedido mínimo?",
+        a: "50 piezas en etiquetas con tu logo y 40 piezas en stickers de vinil. Se venden por cantidad de piezas, no por planilla.",
+      },
+      {
+        q: "¿Puedo pedir stickers con los nombres y la fecha de mi boda?",
+        a: "Sí. Mándanos los nombres, la fecha y el estilo o colores que quieres, o tu diseño ya armado, y te enviamos una prueba digital antes de imprimir.",
+      },
+      {
+        q: "¿Resisten el agua los stickers para botellas y hieleras?",
+        a: "Los stickers de vinil se imprimen en vinil premium resistente al agua, al sol y a rayones, según la ficha del producto. Para algo que se moja, pídelos en vinil.",
+      },
+      {
+        q: "¿Cuánto tarda el pedido?",
+        a: `La prueba digital llega normalmente en un máximo de 24 horas después del pago. Desde que la apruebas, tu pedido llega a domicilio en ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles, o está listo para recoger en Casa Blanca en ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles.`,
+      },
+      {
+        q: "¿Envían fuera de Guadalajara?",
+        a: `Sí, enviamos a todo México por $${NATIONAL_SHIPPING_PRICE}, gratis en compras de $${FREE_SHIPPING_THRESHOLD} o más.`,
+      },
+    ],
     relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["tatuajes-temporales-para-boda-eventos-y-fiestas", "stickers-personalizados-para-mascotas", "stickers-vinil-vs-papel-diferencias"],
+    relatedBlogSlugs: ["tatuajes-temporales-para-boda-eventos-y-fiestas", "menu-de-boda-personalizado", "como-pedir-invitaciones-personalizadas-para-eventos", "dulceros-para-eventos-sociales-boda-xv-baby-shower", "troquelado-vs-semitroquelado-stickers", "stickers-vinil-vs-papel-diferencias", "cuanto-tarda-un-pedido-de-stickers-personalizados"],
   },
   {
     slug: "tatuajes-temporales-para-boda-eventos-y-fiestas",

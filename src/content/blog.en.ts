@@ -959,42 +959,112 @@ export const blogPostsEn: BlogPost[] = [
     slug: BLOG_SLUG_EN["stickers-para-bodas-eventos-y-fiestas"],
     title: "Stickers for Weddings, Events, and Parties: Ideas and How to Order",
     metaTitle: "Stickers for Weddings, Events, and Parties",
-    description:
-      "Stickers for weddings, events, and parties: sealing favor bags, decorating the table detail, or matching your invitations. What format to order and how to get a quote.",
+    description: `Stickers for weddings, events, and parties: uses, sizes, and formats. First 100 pieces: $${priceOf("stickers-logo-personalizado", 100)} MXN, with a digital proof and shipping across Mexico.`,
     category: "Guides",
     publishedAt: "2026-09-23",
+    modifiedAt: "2026-10-26",
     intro:
       "Custom stickers are trending as a celebration detail: they've become a real hit at weddings, quinceañeras, and parties of every kind, sealing favor bags, decorating the table, or matched to the rest of the event's stationery. A sticker with the couple's names, the event date, or the party's theme is one of the cheapest ways to personalize a celebration: it doesn't replace the invitation or the menu, but it ties everything else together visually. This guide covers the most common uses for stickers at weddings, events, and parties, and what to order depending on the type of celebration.",
     sections: [
       {
         heading: "Why they've become so popular",
         body: [
-          "It's a trend we see grow wedding after wedding, party after party: a small, inexpensive detail that still shows up in photos, on social media, and on every favor bag or bottle a guest takes home. Unlike a generic party favor, a custom sticker costs little per piece and works on almost any surface, making it an easy add regardless of budget or event size.",
+          "Custom stickers have become popular at celebrations because they're a small detail that shows up in photos and on every gift a guest takes home, they cost little per piece, and they stick to almost any surface. That makes them easy to add to any budget or event size.",
+          "It's a trend we see grow wedding after wedding, party after party. Unlike a generic party favor, a sticker carries the name, date, or theme of your celebration, so it feels made for that event instead of bought off a shelf.",
         ],
       },
       {
         heading: "The most common uses at a celebration",
         body: [
-          "The ones we see most: sealing candy or gift favor bags for guests, closing invitation envelopes, decorating the centerpiece or welcome sign, and sticking on water bottles or personalized cans for the toast. At a wedding or quinceañera these usually carry the couple's initials or the honoree's name and the date; at a kids' or themed party, the design or character matching the theme.",
+          "The most common uses are sealing candy or gift bags, closing invitation envelopes, decorating the centerpiece or welcome sign, and sticking on bottles or cans for the toast. At weddings and quinceañeras they carry names or the date; at themed parties, the theme's design.",
+          "By type of celebration, these are the ideas requested most:",
+          "Wedding: the couple's initials and the date to seal favor bags, invitation envelopes, or jars on the candy table. Quinceañera: the honoree's name or the party theme on bags, bottles, and keepsakes.",
+          "Baby shower, baptism, or first communion: the guest of honor's name or a theme icon on small boxes and keepsake bags. Kids' party: the theme's character or design on favor boxes and surprise bags. Bachelorette party or company event: a phrase, a logo, or the event name on bottles and gifts for attendees.",
           "If you're already ordering custom invitations or a custom wedding menu, using the same design on the stickers makes the whole event feel like one cohesive piece, not separate items bought apart from each other.",
         ],
       },
       {
         heading: "What format to order depending on the use",
         body: [
-          "For favor bags or envelopes, a round or oval sticker 3 to 5 cm is the most common size. For bottles or cans, a rectangular format or a die-cut matching your design's exact shape looks better on curved surfaces. If the sticker will be on something that gets wet (a cooler, a bottle, outdoors), it's worth ordering it in water-resistant vinyl instead of paper.",
+          "For favor bags or envelopes, a round or oval sticker 3 to 5 cm is the most common size. For bottles or cans, a rectangle or a die-cut matching your design's shape works best, and if it will get wet, order water-resistant vinyl instead of paper.",
+          "On curved surfaces like a bottle or a can, a die-cut to your design's exact shape looks cleaner than a generic square. If you're unsure between die-cut and kiss-cut, read our die-cut vs. kiss-cut comparison.",
+          "If the sticker will be on something that gets wet (a cooler, a bottle, outdoors), vinyl is the safe choice; to see how it differs from paper, check our vinyl vs. paper stickers guide. When ordering vinyl you also pick the finish: matte, glossy, or holographic (holographic has an extra per-piece cost, which you see on the product page).",
           "At Yume these sell by piece count, not by sheet: you can order exactly the number of guests or tables your event has, without buying more than you need.",
+        ],
+      },
+      {
+        heading: "How many stickers to order and what they cost",
+        body: [
+          `First 100 pieces: $${priceOf("stickers-logo-personalizado", 100)} MXN for custom logo stickers and $${priceOf("stickers-vinil-impermeable", 100)} MXN for vinyl stickers. Past 100, every extra piece is at wholesale price. The minimum order is 50 pieces for logo stickers and 40 for vinyl, so you can order close to your event's real guest or table count.`,
+          "A simple way to count: one piece per guest if they go on bags or bottles, one per envelope if you're sealing invitations, plus a few extra for tables, signs, and photos. Price by quantity:",
+        ],
+        table: {
+          headers: ["Pieces", "Custom logo stickers", "Vinyl stickers"],
+          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
+        },
+      },
+      {
+        heading: "How to match them with the rest of your stationery",
+        body: [
+          "Use the same palette, typeface, and initials on the sticker, the invitation, and the menu, and the event reads as one piece. The most practical approach is to define the design once and order each piece from that same file, so colors and style match everywhere.",
+          "If you don't have your stationery yet, start with the invitation and the wedding menu, and leave the stickers for last: the design will already be set. For guest details you can also look at our favor boxes for weddings, quinceañeras, and baby showers and our temporary tattoos for parties.",
+        ],
+      },
+      {
+        heading: "How long it takes and how it's delivered",
+        body: [
+          `The digital proof normally arrives within 24 hours of payment. Once you approve it, your order reaches your door in ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days anywhere in Mexico, or is ready for pickup at a Casa Blanca branch in Guadalajara in ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days.`,
+          `Home delivery costs $${NATIONAL_SHIPPING_PRICE} MXN and branch pickup $${CASABLANCA_PRICE} MXN; on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more, both are free. If your event has a fixed date, order with some margin so you can adjust the proof before production.`,
         ],
       },
       {
         heading: "How to get a quote for yours",
         body: [
-          "Send us the names, the date, and the style or colors you want (or your finished design, if you have one) along with the quantity you need, and we'll prepare a digital proof before printing. If your event already has invitations or a custom menu, let us know: we can match the sticker to the same design.",
-          "We produce in Guadalajara and ship anywhere in Mexico, so the same process applies no matter where your wedding, event, or party is.",
+          "To get a quote, send us the names, the date, the style or colors (or your finished design), and the quantity you need. We prepare a digital proof before printing, and nothing is produced until you approve it. We produce in Guadalajara and ship across Mexico.",
+          "If your event already has invitations or a custom menu, let us know: we can match the sticker to the same design. The process is the same no matter where your wedding, event, or party is.",
         ],
       },
     ],
+    faq: [
+      {
+        q: "What sticker size works for favor bags?",
+        a: "A round or oval sticker 3 to 5 cm is the most common size for favor bags and invitation envelopes.",
+      },
+      {
+        q: "How much do stickers for my event cost?",
+        a: `First 100 pieces: $${priceOf("stickers-logo-personalizado", 100)} MXN for custom logo stickers and $${priceOf("stickers-vinil-impermeable", 100)} MXN for vinyl stickers. Past 100, every extra piece is at wholesale price: 200 vinyl pieces cost $${priceOf("stickers-vinil-impermeable", 200)} MXN.`,
+      },
+      {
+        q: "What is the minimum order?",
+        a: "50 pieces for custom logo stickers and 40 pieces for vinyl stickers. They sell by piece count, not by sheet.",
+      },
+      {
+        q: "Can I order stickers with my wedding names and date?",
+        a: "Yes. Send us the names, the date, and the style or colors you want, or your finished design, and we'll send a digital proof before printing.",
+      },
+      {
+        q: "Do the stickers hold up on bottles and coolers?",
+        a: "Vinyl stickers are printed on premium vinyl that resists water, sun, and scratches, according to the product page. For anything that gets wet, order them in vinyl.",
+      },
+      {
+        q: "How long does an order take?",
+        a: `The digital proof normally arrives within 24 hours of payment. Once you approve it, your order reaches your door in ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days, or is ready for pickup at Casa Blanca in ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days.`,
+      },
+      {
+        q: "Do you ship outside Guadalajara?",
+        a: `Yes, we ship across Mexico for $${NATIONAL_SHIPPING_PRICE} MXN, free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more.`,
+      },
+    ],
     relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: [
+      BLOG_SLUG_EN["tatuajes-temporales-para-boda-eventos-y-fiestas"],
+      BLOG_SLUG_EN["menu-de-boda-personalizado"],
+      BLOG_SLUG_EN["como-pedir-invitaciones-personalizadas-para-eventos"],
+      BLOG_SLUG_EN["dulceros-para-eventos-sociales-boda-xv-baby-shower"],
+      BLOG_SLUG_EN["troquelado-vs-semitroquelado-stickers"],
+      BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"],
+      BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"],
+    ],
   },
   {
     slug: BLOG_SLUG_EN["tatuajes-temporales-para-boda-eventos-y-fiestas"],
