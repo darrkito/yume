@@ -212,36 +212,114 @@ export const blogPostsEn: BlogPost[] = [
     title: "Custom Stationery for Businesses in Jalisco: Why It's Worth It",
     metaTitle: "Custom Stationery for Businesses in Jalisco",
     description:
-      "Why investing in stationery with your brand (prescription pads, stickers, and other printed details) makes a difference for businesses and professionals in Guadalajara and the rest of Jalisco.",
+      "Custom stationery for businesses in Jalisco: prescription pads, labels and stickers with your brand, real prices, a digital proof and shipping across Mexico.",
     category: "Local Business",
     publishedAt: "2026-08-28",
-    modifiedAt: "2026-10-09",
+    modifiedAt: "2026-10-26",
     intro:
-      "Whether you run a medical practice or a small business selling at bazaars in Guadalajara, the stationery you use every day (prescription pads, stickers, labels) is one of the cheapest ways to look consistent. It's not the flashiest part of a business, but it's the part the customer or patient is literally holding in their hand.",
+      "Whether you run a medical practice or a small business selling at bazaars in Guadalajara, the custom stationery you use every day (prescription pads, stickers, labels) is one of the simplest ways to look consistent. It's not the flashiest part of a business, but it's the part the customer or patient is literally holding in their hand. This guide covers which pieces you can customize, what they cost, how we work from Guadalajara and where it makes sense to start.",
     sections: [
+      {
+        heading: "What custom stationery is and why it matters for your business",
+        body: [
+          "Custom stationery is any printed piece that carries your name, logo and real details: prescription pads, labels, stickers, menus or invitations. For a business in Jalisco it matters because it's what your customer or patient holds in their hand, and done well it signals order and care without a full rebrand.",
+          "Think about a person's path through your business: they get a prescription, open a bag, see a label on a jar or take home a keepsake from your event. Each piece is a moment where your brand shows up (or doesn't). When they all look alike, the business reads as one well-kept whole.",
+        ],
+      },
       {
         heading: "Consistency before quantity",
         body: [
           "You don't need to redesign your entire business to look more professional: sometimes it's enough for the prescription pad, the delivery bag, and the sticker that seals the package to use the same logo and the same colors. It's cheaper than a full rebrand and the effect is just as noticeable.",
-          "That's why at Yume we work made-to-order and tailored to you instead of selling generic templates: every piece is designed with your real details and your real brand, not a mold some other business is also using.",
+          "That's why at Yume we work made-to-order and tailored to you instead of selling generic templates: every piece is designed with your real details and your real brand, not a mold some other business is also using. If you want to compare calmly, read our comparison of custom stationery vs. generic templates.",
+          "A good starting point is to check three things on everything you print: the logo is the same, the colors match, and the phone or WhatsApp number is the same on every piece. That gives you a consistent base before you order anything new.",
         ],
+      },
+      {
+        heading: "Which stationery pieces you can order at Yume",
+        body: [
+          "At Yume you can order medical prescription pads, logo stickers and labels, and vinyl stickers, all with prices published in the shop. We also quote invitations, menus and temporary tattoos for events on WhatsApp. Every order goes through a digital proof before it is printed.",
+          "Custom medical prescription pad: for practices in Guadalajara, Zapopan or anywhere in Jalisco. You can order it without design, if you already have yours, or with design, if we build it with you. There is a full guide to custom medical prescription pads in Guadalajara covering what goes on the letterhead.",
+          "Logo stickers & labels and vinyl stickers: they work for sealing packaging, identifying products or giving customers a branded detail. They're sold by piece count, not by sheet. If you sell products, we also have a guide to custom stickers for businesses in Guadalajara.",
+          "Event pieces: invitations, menus and temporary tattoos don't have a fixed shop price because they depend on the design and quantity. They are quoted on WhatsApp, and the design goes through the same digital proof as every other order.",
+        ],
+      },
+      {
+        heading: "How much custom stationery costs",
+        body: [
+          `The first 100 pieces of Logo Stickers & Labels cost $${priceOf("stickers-logo-personalizado", 100)} MXN. Past 100 you get wholesale price, 10% off each extra piece. The 100-sheet medical prescription pad costs $${recetarioPrice("sin-diseno")} MXN if you already have your design and $${recetarioPrice("con-diseno")} MXN if we design it with you.`,
+          "The minimum order is 50 pieces for Logo Stickers & Labels and 40 pieces for Custom Vinyl Stickers. This table shows what each quantity costs, so you order what you will really use:",
+        ],
+        table: {
+          headers: ["Quantity", "Logo stickers & labels", "Vinyl stickers (your design)"],
+          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
+        },
       },
       {
         heading: "Made in Guadalajara, shipped across Mexico",
         body: [
-          "We're based in Guadalajara, Jalisco, and although we don't have a physical storefront to visit: the whole process happens remotely, with a digital proof you approve before printing: we do produce locally and ship anywhere in Mexico.",
+          "We produce in Guadalajara, Jalisco, and ship anywhere in Mexico. There is no storefront: you request a quote, approve the digital proof and receive your order by courier or pick it up at a Casa Blanca branch in the metro area. Timeframes count business days only, starting when you approve.",
           "If you're in the Guadalajara metro area (Zapopan, Tlaquepaque, Tonalá) turnaround tends to be a bit faster simply due to proximity, but the quoting, design, and approval process is the same no matter which city in Mexico you're in.",
+          `The digital proof normally arrives within 24 hours of payment. Once you approve it, Casa Blanca pickup takes ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days and home delivery ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days. Shipping is $${NATIONAL_SHIPPING_PRICE} MXN anywhere in Mexico and free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more.`,
+          `If you pick up, you can choose from ${CASABLANCA_BRANCHES.length} Casa Blanca branches (${casablancaBranchNames}) for $${CASABLANCA_PRICE} MXN, also free from $${FREE_SHIPPING_THRESHOLD} MXN. You choose the branch at checkout.`,
+        ],
+      },
+      {
+        heading: "Stationery for your business events",
+        body: [
+          "If your business hosts a holiday party, an anniversary or a launch, you can add pieces with the same design: stickers, invitations, menus or temporary tattoos. Invitations, menus and tattoos are quoted on WhatsApp based on quantity and design, so message us with the date and guest count.",
+          "The same consistency logic applies to an event: when the invitation, the menu and the keepsake guests take home share a design, everything looks planned. For ideas on each piece, see our guides to custom event invitations, custom wedding menus and stickers for weddings, events and parties.",
+          "If you're a planner or coordinate events for other people, tell us on WhatsApp the quantity per event and the date, and we'll tell you how to schedule the digital proof with enough time.",
         ],
       },
       {
         heading: "Where to start",
         body: [
-          "If you run a medical practice, the most common entry point is the custom medical prescription pad. If you have a brand or small business, it's usually the stickers with your logo.",
-          "You can request a quote directly on WhatsApp or browse the full catalog in the shop: either way, the next step is the same: send us your details or your logo so we can put together the digital proof.",
+          "Start with the piece you use most: the prescription pad if you run a practice, the logo stickers if you sell a product. Send your details or your logo on WhatsApp or from the shop, review the digital proof and approve it. Nothing is printed before you approve it.",
+          "You can request a quote directly on WhatsApp or browse the full catalog in the shop: either way, the next step is the same: send us your details or your logo so we can put together the digital proof. For the full step-by-step, read how to order custom stationery online.",
+          "If you don't have a finished logo yet, tell us when you request the quote: we can work on it together before the digital proof stage; you don't need to arrive with everything figured out.",
         ],
       },
     ],
-    relatedProductSlugs: ["recetario-medico-personalizado", "stickers-logo-personalizado"],
+    faq: [
+      {
+        q: "What custom stationery can I order for my business in Jalisco?",
+        a: "Medical prescription pads, logo stickers and labels, and vinyl stickers, with prices published in the shop. We also quote invitations, menus and temporary tattoos for events on WhatsApp.",
+      },
+      {
+        q: "How much do stickers with my logo cost?",
+        a: `The first 100 pieces cost $${priceOf("stickers-logo-personalizado", 100)} MXN. Past 100 you get wholesale price: for example, 200 pieces cost $${priceOf("stickers-logo-personalizado", 200)} MXN.`,
+      },
+      {
+        q: "How much does a custom medical prescription pad cost?",
+        a: `The 100-sheet pad costs $${recetarioPrice("sin-diseno")} MXN if you already have your design and $${recetarioPrice("con-diseno")} MXN if we design it with you.`,
+      },
+      {
+        q: "What is the minimum order?",
+        a: "50 pieces for Logo Stickers & Labels and 40 pieces for Custom Vinyl Stickers.",
+      },
+      {
+        q: "Do you have a physical store in Guadalajara?",
+        a: "No. We produce in Guadalajara, but the process is online: you request a quote, approve the digital proof and receive your order by courier or pick it up at a Casa Blanca branch in the metro area.",
+      },
+      {
+        q: "How long does my order take?",
+        a: `The digital proof normally arrives within 24 hours of payment. Once you approve it, Casa Blanca pickup takes ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days and home delivery ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days.`,
+      },
+      {
+        q: "How much is shipping?",
+        a: `$${NATIONAL_SHIPPING_PRICE} MXN anywhere in Mexico, or $${CASABLANCA_PRICE} MXN if you pick up at a Casa Blanca branch in the Guadalajara metro area. Both are free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more.`,
+      },
+      {
+        q: "Is anything printed before I approve the design?",
+        a: "No. Every order goes through a digital proof first and nothing goes to production until you approve it.",
+      },
+      {
+        q: "Do you issue invoices?",
+        a: "We don't issue invoices (CFDI). Your receipt is the order confirmation email. If your company needs an invoice, message us on WhatsApp before paying.",
+      },
+    ],
+    relatedProductSlugs: ["recetario-medico-personalizado", "stickers-logo-personalizado", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["como-pedir-papeleria-personalizada-en-linea"], BLOG_SLUG_EN["papeleria-personalizada-vs-plantillas-genericas"], BLOG_SLUG_EN["stickers-personalizados-para-negocios-guadalajara"], BLOG_SLUG_EN["recetarios-medicos-personalizados-guadalajara"], BLOG_SLUG_EN["como-pedir-invitaciones-personalizadas-para-eventos"], BLOG_SLUG_EN["menu-de-boda-personalizado"]],
   },
   {
     slug: BLOG_SLUG_EN["como-pedir-papeleria-personalizada-en-linea"],

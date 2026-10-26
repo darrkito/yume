@@ -263,36 +263,114 @@ export const blogPosts: BlogPost[] = [
     title: "Papelería personalizada para negocios en Jalisco: por qué vale la pena",
     metaTitle: "Papelería personalizada para negocios en Jalisco",
     description:
-      "Por qué invertir en papelería con tu marca (recetarios, etiquetas y otros detalles impresos) hace diferencia para negocios y profesionales en Guadalajara y el resto de Jalisco.",
+      "Papelería personalizada para negocios en Jalisco: recetarios, etiquetas y stickers con tu marca, precios reales, prueba digital y envío a todo México.",
     category: "Negocio local",
     publishedAt: "2026-08-28",
+    modifiedAt: "2026-10-26",
     intro:
-      "Ya sea que tengas un consultorio médico o un emprendimiento que vende en bazares de Guadalajara, la papelería que usas todos los días (recetarios, etiquetas) es una de las formas más baratas de verse consistente. No es la parte más vistosa de un negocio, pero es la que el cliente o paciente tiene literalmente en la mano.",
+      "Ya sea que tengas un consultorio médico o un emprendimiento que vende en bazares de Guadalajara, la papelería personalizada que usas todos los días (recetarios, etiquetas) es una de las formas más sencillas de verse consistente. No es la parte más vistosa de un negocio, pero es la que el cliente o paciente tiene literalmente en la mano. Esta guía explica qué piezas puedes personalizar, cuánto cuestan, cómo se trabaja desde Guadalajara y por dónde conviene empezar.",
     sections: [
+      {
+        heading: "Qué es la papelería personalizada y por qué importa en tu negocio",
+        body: [
+          "La papelería personalizada es todo impreso que lleva tu nombre, logo y datos reales: recetarios, etiquetas, stickers, menús o invitaciones. Para un negocio en Jalisco sirve porque es lo que tu cliente o paciente tiene en la mano, y bien hecha comunica orden y cuidado sin que tengas que rediseñar tu marca completa.",
+          "Piensa en el recorrido de una persona con tu negocio: recibe un recetario, abre una bolsa, pega una etiqueta en un frasco o se lleva un recuerdo de tu evento. Cada una de esas piezas es un momento en el que tu marca se ve (o no se ve). Cuando todas se parecen entre sí, el negocio se percibe como uno solo y bien cuidado.",
+        ],
+      },
       {
         heading: "Consistencia antes que cantidad",
         body: [
           "No hace falta rediseñar todo tu negocio para que se vea más profesional: a veces basta con que el recetario, la bolsa de entrega y la etiqueta que cierra el paquete usen el mismo logo y los mismos colores. Es más barato que un rebranding completo y el efecto se nota igual.",
-          "Por eso en Yume trabajamos sobre pedido y a la medida en vez de vender plantillas genéricas: cada pieza se diseña con tus datos y tu marca real, no con un molde que también está usando otro negocio.",
+          "Por eso en Yume trabajamos sobre pedido y a la medida en vez de vender plantillas genéricas: cada pieza se diseña con tus datos y tu marca real, no con un molde que también está usando otro negocio. Si quieres ver la diferencia con calma, lee nuestra comparación de papelería personalizada vs. plantillas genéricas.",
+          "Un buen punto de partida es revisar tres cosas en todo lo que imprimes: que el logo sea el mismo, que los colores coincidan y que el teléfono o WhatsApp de contacto sea el mismo en todas las piezas. Con eso ya tienes una base consistente antes de pedir nada nuevo.",
         ],
+      },
+      {
+        heading: "Qué piezas de papelería puedes pedir en Yume",
+        body: [
+          "En Yume puedes pedir recetarios médicos, etiquetas con tu logo y stickers de vinil, todos con precio publicado en la tienda. También cotizamos por WhatsApp invitaciones, menús y tatuajes temporales para eventos. Cada pedido pasa por una prueba digital antes de imprimirse.",
+          "Recetario médico personalizado: para consultorios en Guadalajara, Zapopan o cualquier ciudad de Jalisco. Lo puedes pedir sin diseño, si ya traes el tuyo, o con diseño, si lo armamos contigo. Hay una guía completa de recetarios médicos personalizados en Guadalajara con los datos que lleva el membrete.",
+          "Etiquetas con tu logo y stickers de vinil: sirven para cerrar empaques, identificar productos o dar un detalle de marca a tus clientes. Se venden por cantidad de piezas, no por hoja. Si vendes productos, también tenemos una guía de stickers personalizados para negocios en Guadalajara.",
+          "Piezas para eventos: invitaciones, menús y tatuajes temporales no tienen precio fijo en la tienda porque dependen del diseño y la cantidad. Se cotizan por WhatsApp, y el diseño pasa por la misma prueba digital que el resto de los pedidos.",
+        ],
+      },
+      {
+        heading: "Cuánto cuesta la papelería personalizada",
+        body: [
+          `Las primeras 100 piezas de Etiquetas con tu Logo cuestan $${priceOf("stickers-logo-personalizado", 100)} MXN. Pasando las 100 entras a precio mayoreo, 10% menos por pieza extra. El recetario médico de 100 hojas cuesta $${recetarioPrice("sin-diseno")} MXN si ya tienes tu diseño y $${recetarioPrice("con-diseno")} MXN si lo diseñamos contigo.`,
+          "El mínimo de pedido es de 50 piezas en las Etiquetas con tu Logo y de 40 piezas en los Stickers de Vinil Personalizados. Esta tabla muestra cuánto cuesta cada cantidad, para que pidas lo que de verdad vas a usar:",
+        ],
+        table: {
+          headers: ["Cantidad", "Etiquetas con tu logo", "Stickers de vinil (tu diseño)"],
+          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
+        },
       },
       {
         heading: "Producción en Guadalajara, envíos a todo México",
         body: [
-          "Estamos en Guadalajara, Jalisco, y aunque no tenemos tienda física para visitar: todo el proceso se hace a distancia, con una prueba digital que apruebas antes de imprimir: sí producimos localmente y enviamos a cualquier parte de México.",
+          "Producimos en Guadalajara, Jalisco, y enviamos a todo México. No hay tienda física: cotizas, apruebas la prueba digital y recibes tu pedido por paquetería o lo recoges en una sucursal Casa Blanca de la zona metropolitana. Los plazos cuentan solo días hábiles desde que apruebas.",
           "Si estás en la zona metropolitana de Guadalajara (Zapopan, Tlaquepaque, Tonalá) el tiempo de entrega suele ser más corto simplemente por cercanía, pero el proceso de cotización, diseño y aprobación es el mismo sin importar en qué ciudad de México estés.",
+          `La prueba digital llega normalmente en un máximo de 24 horas después del pago. Desde que la apruebas, recoger en Casa Blanca toma ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles y el envío a domicilio ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles. El envío cuesta $${NATIONAL_SHIPPING_PRICE} MXN a cualquier parte de México y es gratis en compras de $${FREE_SHIPPING_THRESHOLD} MXN o más.`,
+          `Si recoges, tienes ${CASABLANCA_BRANCHES.length} sucursales Casa Blanca para elegir (${casablancaBranchNames}) por $${CASABLANCA_PRICE} MXN, también gratis desde $${FREE_SHIPPING_THRESHOLD} MXN. Eliges la sucursal al pagar.`,
+        ],
+      },
+      {
+        heading: "Papelería para los eventos de tu negocio",
+        body: [
+          "Si tu negocio organiza una posada, un aniversario o un lanzamiento, puedes sumar piezas con el mismo diseño: stickers, invitaciones, menús o tatuajes temporales. Las invitaciones, los menús y los tatuajes se cotizan por WhatsApp según cantidad y diseño, así que escríbenos con la fecha y el número de invitados.",
+          "La misma lógica de consistencia aplica a un evento: cuando la invitación, el menú y el detalle que se llevan los invitados comparten diseño, todo se ve planeado. Para ideas y detalles de cada pieza, revisa nuestras guías de invitaciones personalizadas para eventos, menú de boda personalizado y stickers para bodas, eventos y fiestas.",
+          "Si eres planner o coordinas eventos para otras personas, cuéntanos por WhatsApp la cantidad por evento y la fecha: así te decimos cómo armar la prueba digital con tiempo suficiente.",
         ],
       },
       {
         heading: "Por dónde empezar",
         body: [
-          "Si tienes un consultorio, el punto de entrada más común es el recetario médico personalizado. Si tienes una marca o emprendimiento, normalmente son las etiquetas con tu logo.",
-          "Puedes cotizar directo por WhatsApp o ver el catálogo completo en la tienda: en ambos casos el siguiente paso es el mismo: mandarnos tus datos o tu logo para armar la prueba digital.",
+          "Empieza por la pieza que más usas: el recetario si tienes consultorio, las etiquetas con tu logo si vendes un producto. Manda tus datos o tu logo por WhatsApp o desde la tienda, revisa la prueba digital y apruébala. No se imprime nada antes de tu aprobación.",
+          "Puedes cotizar directo por WhatsApp o ver el catálogo completo en la tienda: en ambos casos el siguiente paso es el mismo: mandarnos tus datos o tu logo para armar la prueba digital. Si quieres el paso a paso completo, lee cómo hacer un pedido de papelería personalizada en línea.",
+          "Si todavía no tienes un logo terminado, dínoslo al cotizar: se puede trabajar en conjunto antes de llegar a la prueba digital, no es necesario llegar con todo resuelto.",
         ],
       },
     ],
-    relatedProductSlugs: ["recetario-medico-personalizado", "stickers-logo-personalizado"],
-    relatedBlogSlugs: ["como-pedir-papeleria-personalizada-en-linea", "papeleria-personalizada-vs-plantillas-genericas", "stickers-personalizados-para-negocios-guadalajara"],
+    faq: [
+      {
+        q: "¿Qué papelería personalizada puedo pedir para mi negocio en Jalisco?",
+        a: "Recetarios médicos, etiquetas con tu logo y stickers de vinil, con precio publicado en la tienda. También cotizamos por WhatsApp invitaciones, menús y tatuajes temporales para eventos.",
+      },
+      {
+        q: "¿Cuánto cuestan las etiquetas con mi logo?",
+        a: `Las primeras 100 piezas cuestan $${priceOf("stickers-logo-personalizado", 100)} MXN. Pasando las 100 entras a precio mayoreo: por ejemplo, 200 piezas cuestan $${priceOf("stickers-logo-personalizado", 200)} MXN.`,
+      },
+      {
+        q: "¿Cuánto cuesta un recetario médico personalizado?",
+        a: `El recetario de 100 hojas cuesta $${recetarioPrice("sin-diseno")} MXN si ya tienes tu diseño y $${recetarioPrice("con-diseno")} MXN si lo diseñamos contigo.`,
+      },
+      {
+        q: "¿Cuál es el pedido mínimo?",
+        a: "50 piezas en las Etiquetas con tu Logo y 40 piezas en los Stickers de Vinil Personalizados.",
+      },
+      {
+        q: "¿Tienen tienda física en Guadalajara?",
+        a: "No. Producimos en Guadalajara, pero el proceso es en línea: cotizas, apruebas la prueba digital y recibes por paquetería o recoges en una sucursal Casa Blanca de la zona metropolitana.",
+      },
+      {
+        q: "¿Cuánto tarda mi pedido?",
+        a: `La prueba digital llega normalmente en un máximo de 24 horas después del pago. Desde que la apruebas, recoger en Casa Blanca toma ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles y el envío a domicilio ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles.`,
+      },
+      {
+        q: "¿Cuánto cuesta el envío?",
+        a: `$${NATIONAL_SHIPPING_PRICE} MXN a cualquier parte de México, o $${CASABLANCA_PRICE} MXN si recoges en una sucursal Casa Blanca de la zona metropolitana de Guadalajara. Las dos opciones son gratis en compras de $${FREE_SHIPPING_THRESHOLD} MXN o más.`,
+      },
+      {
+        q: "¿Se imprime algo antes de que yo apruebe el diseño?",
+        a: "No. Todo pedido pasa primero por una prueba digital y no se manda a producción hasta que la apruebas.",
+      },
+      {
+        q: "¿Emiten factura?",
+        a: "No emitimos factura (CFDI). Tu comprobante es el correo de confirmación del pedido. Si tu empresa necesita factura, escríbenos por WhatsApp antes de pagar.",
+      },
+    ],
+    relatedProductSlugs: ["recetario-medico-personalizado", "stickers-logo-personalizado", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["como-pedir-papeleria-personalizada-en-linea", "papeleria-personalizada-vs-plantillas-genericas", "stickers-personalizados-para-negocios-guadalajara", "recetarios-medicos-personalizados-guadalajara", "como-pedir-invitaciones-personalizadas-para-eventos", "menu-de-boda-personalizado"],
   },
   {
     slug: "como-pedir-papeleria-personalizada-en-linea",
