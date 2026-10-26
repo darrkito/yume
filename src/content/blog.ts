@@ -1430,44 +1430,99 @@ export const blogPosts: BlogPost[] = [
     slug: "etiquetas-escolares-personalizadas-guadalajara",
     title: "Etiquetas escolares personalizadas en Guadalajara: guía para regreso a clases",
     metaTitle: "Etiquetas escolares personalizadas: guía regreso a clases",
-    description:
-      "Qué son las etiquetas escolares personalizadas, qué se les pone, para qué útiles sirven y cómo pedirlas en Guadalajara con tiempo antes del regreso a clases. Cotiza por WhatsApp.",
+    description: `Etiquetas escolares personalizadas en Guadalajara: qué llevan, dónde pegarlas, cuántas pedir. Primeras 100 piezas: $${priceOf("stickers-vinil-impermeable", 100)}, prueba digital y envío a todo México.`,
     category: "Guías",
     publishedAt: "2026-10-17",
+    modifiedAt: "2026-10-26",
     intro:
-      "Las etiquetas escolares son pegatinas con el nombre del niño (y a veces su grupo o un dibujo) para marcar cuadernos, loncheras, botellas y mochilas, y que nada se pierda ni se confunda en el salón. En Yume las hacemos en vinil resistente al agua, con el diseño que tú elijas. Esta guía explica qué llevan, cómo pedirlas y cuándo conviene hacerlo.",
+      "Las etiquetas escolares son pegatinas con el nombre del niño (y a veces su grupo o un dibujo) para marcar cuadernos, loncheras, botellas y mochilas, y que nada se pierda ni se confunda en el salón. En Yume las hacemos en vinil resistente al agua, con el diseño que tú elijas. Esta guía explica qué llevan, en qué útiles se pegan, cuántas conviene pedir, cuánto cuestan, cuándo hacer el pedido y cómo llegan a tu casa o a una sucursal en Guadalajara.",
     sections: [
       {
         heading: "Qué se les pone a las etiquetas escolares",
         body: [
-          "Lo básico es el nombre del niño o la niña, con letra grande y fácil de leer. Muchas familias agregan el grado o el grupo, y un dibujo o ícono (una estrella, un animal, un color) para que los más pequeños reconozcan sus cosas aunque todavía no lean.",
+          "Una etiqueta escolar lleva, como mínimo, el nombre del niño o la niña en letra grande y fácil de leer. Muchas familias agregan el grado o el grupo, y un dibujo o ícono (una estrella, un animal, un color) para que los más pequeños reconozcan sus cosas aunque todavía no lean.",
+          "Para los más grandes funciona mejor algo sencillo: nombre y apellido, con buen contraste entre la letra y el fondo para que se lea de lejos. Si son varios hermanos, pide un color distinto para cada uno: así saben cuál es la suya sin leer.",
           "Si lo prefieres, también puedes poner un teléfono de contacto en las etiquetas de la mochila y la lonchera. Cuéntanos qué quieres incluir y te mandamos una prueba digital antes de imprimir.",
         ],
       },
       {
         heading: "En qué útiles se pegan",
         body: [
-          "Las más comunes son para cuadernos y libros, estuches, loncheras, botellas de agua, termos y mochilas. Como el vinil resiste el agua, el sol y los rayones, aguantan bien en objetos que se mojan, se llevan de un lado a otro y se limpian seguido.",
-          "Pega la etiqueta sobre una superficie limpia y seca, y mejor en una zona lisa que en una orilla o una costura.",
+          "Las etiquetas escolares se pegan en cuadernos y libros, estuches, loncheras, botellas de agua, termos y mochilas. Como el vinil es resistente al agua, al sol y a los rayones, aguantan bien en objetos que se mojan, se llevan de un lado a otro y se limpian seguido.",
+          "Pega la etiqueta sobre una superficie limpia y seca, y mejor en una zona lisa que en una orilla, una costura o una parte con relieve, que es donde se despegan primero. Presiona desde el centro hacia las orillas para sacar el aire y espera un rato antes de mojarla por primera vez.",
+          "En la tabla va una guía rápida de dónde conviene poner cada una. Para más detalle sobre botellas, loncheras y mochilas, lee nuestra guía de etiquetas con nombre.",
         ],
+        table: {
+          headers: ["Útil", "Dónde pegarla"],
+          rows: [
+            ["Cuadernos y libros", "En la portada, en una zona limpia y plana"],
+            ["Estuche", "En una parte lisa por fuera"],
+            ["Lonchera", "En la tapa o en un costado liso"],
+            ["Botella o termo", "En una parte lisa del cuerpo, lejos de la tapa y de la base"],
+            ["Mochila", "En una zona plana por fuera, o por dentro si prefieres que no se vea"],
+          ],
+        },
       },
       {
         heading: "Etiquetas escolares personalizadas: cómo se piden",
         body: [
-          "Se cotizan por WhatsApp: nos dices el nombre (o nombres, si son varios hermanos), el diseño que te gusta y cuántas piezas necesitas. Trabajamos con vinil personalizado desde 40 piezas, y las primeras 100 piezas cuestan $350.",
-          "Te mandamos una prueba digital, normalmente en un máximo de 24 horas después del pago, con hasta 2 rondas de ajustes. No imprimimos nada sin tu aprobación.",
+          `Se cotizan por WhatsApp: nos mandas el nombre (o los nombres, si son varios hermanos), el diseño que te gusta y cuántas piezas necesitas. Trabajamos con stickers de vinil desde 40 piezas. Primeras 100 piezas: $${priceOf("stickers-vinil-impermeable", 100)}. Pasando las 100, cada pieza extra va a precio mayoreo.`,
+          "Te mandamos una prueba digital, normalmente en un máximo de 24 horas después del pago, con hasta 2 rondas de ajustes. No imprimimos nada sin tu aprobación. Así se ve el precio por cantidad:",
+        ],
+        table: {
+          headers: ["Piezas", "Stickers de vinil"],
+          rows: tierPriceRows(["stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
+        },
+      },
+      {
+        heading: "Cuántas etiquetas pedir para el ciclo escolar",
+        body: [
+          "Una cuenta práctica es contar cada útil de la lista, multiplicarlo por el número de hijos y sumar unas cuantas de repuesto. Como se venden por cantidad de piezas y no por planilla, puedes pedir cerca del número real que necesitas, con un mínimo de 40 piezas.",
+          "Un ejemplo de la cuenta: si un niño lleva 10 cuadernos, un estuche, una lonchera, una botella y una mochila, son 14 etiquetas; con dos hermanos, 28, y con unas de repuesto llegas a 40 piezas.",
+          "Si ya tienes la lista de útiles, escríbenos con ella y te ayudamos a calcular cuántas etiquetas necesitas. Para entender qué formato te conviene, también puedes revisar la diferencia entre vinil y papel y cómo se piden las etiquetas en rollo, hoja o por pieza.",
         ],
       },
       {
         heading: "Cuándo pedirlas y cómo recibirlas en Guadalajara",
         body: [
-          "Conviene pedirlas con unas semanas de anticipación al inicio del ciclo escolar: así hay margen para ajustar el diseño y para la producción y el envío. Producimos en Guadalajara; enviamos a todo México o puedes recoger en una de las sucursales Casa Blanca de la zona metropolitana.",
-          "Si ya tienes la lista de útiles, escríbenos con ella y te ayudamos a calcular cuántas etiquetas necesitas.",
+          `La prueba digital llega normalmente en un máximo de 24 horas después del pago. Desde que la apruebas, el pedido llega a domicilio en ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles en cualquier parte de México, o está listo para recoger en una sucursal Casa Blanca de Guadalajara en ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles.`,
+          `El envío a domicilio cuesta $${NATIONAL_SHIPPING_PRICE} y la recolección en sucursal $${CASABLANCA_PRICE}; en compras de $${FREE_SHIPPING_THRESHOLD} o más, ambos son gratis. Conviene pedirlas con unas semanas de anticipación al inicio del ciclo escolar: así hay margen para ajustar el diseño, la producción y el envío. Producimos en Guadalajara y puedes elegir la sucursal al pagar.`,
+          "Para ver con detalle cada etapa, revisa cuánto tarda un pedido de stickers personalizados.",
         ],
       },
     ],
-    relatedProductSlugs: [],
-    relatedBlogSlugs: ["etiquetas-con-nombre-para-botellas-loncheras-y-mochilas", "stickers-vinil-vs-papel-diferencias", "cuanto-tarda-un-pedido-de-stickers-personalizados"],
+    faq: [
+      {
+        q: "¿Cuánto cuestan las etiquetas escolares personalizadas?",
+        a: `Primeras 100 piezas: $${priceOf("stickers-vinil-impermeable", 100)}. Pasando las 100, cada pieza extra va a precio mayoreo: 150 piezas cuestan $${priceOf("stickers-vinil-impermeable", 150)} y 200 piezas $${priceOf("stickers-vinil-impermeable", 200)}.`,
+      },
+      {
+        q: "¿Cuál es el pedido mínimo?",
+        a: "40 piezas. Se venden por cantidad de piezas, no por planilla, así que puedes pedir cerca del número que realmente necesitas.",
+      },
+      {
+        q: "¿Las etiquetas resisten el agua?",
+        a: "Se imprimen en vinil premium resistente al agua, al sol y a rayones, según la ficha del producto. Aun así, no las raspes ni las dejes en remojo largo.",
+      },
+      {
+        q: "¿Puedo pedir etiquetas con los nombres de varios hermanos?",
+        a: "Sí. Mándanos los nombres, el diseño que te gusta y la cantidad, y te enviamos una prueba digital antes de imprimir.",
+      },
+      {
+        q: "¿Veo la etiqueta antes de que se imprima?",
+        a: "Sí. La prueba digital llega normalmente en un máximo de 24 horas después del pago, con hasta 2 rondas de ajustes. No imprimimos nada sin tu aprobación.",
+      },
+      {
+        q: "¿Cuánto tarda el pedido?",
+        a: `Desde que apruebas la prueba, llega a domicilio en ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles, o está listo para recoger en Casa Blanca en ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles.`,
+      },
+      {
+        q: "¿Envían fuera de Guadalajara?",
+        a: `Sí, enviamos a todo México por $${NATIONAL_SHIPPING_PRICE}, gratis en compras de $${FREE_SHIPPING_THRESHOLD} o más. En la zona metropolitana de Guadalajara también puedes recoger en una de las ${CASABLANCA_BRANCHES.length} sucursales Casa Blanca por $${CASABLANCA_PRICE}.`,
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["etiquetas-con-nombre-para-botellas-loncheras-y-mochilas", "stickers-vinil-vs-papel-diferencias", "cuanto-tarda-un-pedido-de-stickers-personalizados", "impresion-de-etiquetas-rollo-hoja-o-por-pieza", "troquelado-vs-semitroquelado-stickers"],
     serviceLink: { href: "/productos/stickers-vinil-impermeable", label: "Ver stickers de vinil personalizados" },
     quoteMessage: "Hola, quiero cotizar etiquetas escolares personalizadas.\n\nNombre(s):\nCantidad aproximada:\n¿Ya tengo diseño? (sí / no):",
   },

@@ -1374,44 +1374,99 @@ export const blogPostsEn: BlogPost[] = [
     slug: BLOG_SLUG_EN["etiquetas-escolares-personalizadas-guadalajara"],
     title: "Custom school labels in Guadalajara: back-to-school guide",
     metaTitle: "Custom school labels: back-to-school guide",
-    description:
-      "What custom school labels are, what goes on them, which school supplies they suit, and how to order them in Guadalajara ahead of back-to-school. Quote on WhatsApp.",
+    description: `Custom school labels in Guadalajara: what goes on them, where to stick them, how many to order. First 100 pieces: $${priceOf("stickers-vinil-impermeable", 100)}, digital proof, shipping across Mexico.`,
     category: "Guides",
     publishedAt: "2026-10-17",
+    modifiedAt: "2026-10-26",
     intro:
-      "School labels are stickers with a child's name (and sometimes their class or a drawing) to mark notebooks, lunch boxes, bottles, and backpacks so nothing gets lost or mixed up in the classroom. At Yume we make them in water-resistant vinyl, with the design you choose. This guide covers what goes on them, how to order, and when.",
+      "School labels are stickers with a child's name (and sometimes their class or a drawing) to mark notebooks, lunch boxes, bottles, and backpacks so nothing gets lost or mixed up in the classroom. At Yume we make them in water-resistant vinyl, with the design you choose. This guide covers what goes on them, which school supplies they suit, how many to order, what they cost, when to place the order, and how they reach your home or a branch in Guadalajara.",
     sections: [
       {
         heading: "What goes on a school label",
         body: [
-          "The basics are the child's name, in large, easy-to-read letters. Many families add the grade or class, plus a drawing or icon (a star, an animal, a color) so younger kids recognize their things before they can read.",
+          "A school label carries, at minimum, the child's name in large, easy-to-read letters. Many families add the grade or class, plus a drawing or icon (a star, an animal, a color) so younger kids recognize their things before they can read.",
+          "For older kids, something simple works better: first and last name, with good contrast between the letters and the background so it reads from a distance. For siblings, pick a different color for each so they know which is theirs without reading.",
           "You can also add a phone number to the backpack and lunch box labels. Tell us what you want and we send a digital proof before printing.",
         ],
       },
       {
         heading: "Which school supplies they go on",
         body: [
-          "The most common are notebooks and books, pencil cases, lunch boxes, water bottles, thermoses, and backpacks. Because the vinyl resists water, sun, and scratches, they hold up on items that get wet, travel a lot, and are cleaned often.",
-          "Stick the label on a clean, dry, flat surface rather than on an edge or a seam.",
+          "School labels go on notebooks and books, pencil cases, lunch boxes, water bottles, thermoses, and backpacks. Because the vinyl resists water, sun, and scratches, they hold up on items that get wet, travel a lot, and are cleaned often.",
+          "Stick the label on a clean, dry, flat surface rather than on an edge, a seam, or a raised area, which is where labels peel first. Press from the center out to push the air out, and wait a while before the first time it gets wet.",
+          "The table is a quick guide to where each one fits best. For more on bottles, lunch boxes, and backpacks, read our guide to name labels.",
         ],
+        table: {
+          headers: ["Item", "Where to stick it"],
+          rows: [
+            ["Notebooks and books", "On the cover, on a clean, flat area"],
+            ["Pencil case", "On a smooth part of the outside"],
+            ["Lunch box", "On the lid or a smooth side"],
+            ["Bottle or thermos", "On a smooth part of the body, away from the lid and the base"],
+            ["Backpack", "On a flat area outside, or inside if you would rather it not show"],
+          ],
+        },
       },
       {
         heading: "How to order custom school labels",
         body: [
-          "They are quoted on WhatsApp: tell us the name (or names, for siblings), the design you like, and how many pieces you need. Custom vinyl starts at 40 pieces, and the first 100 pieces cost $350.",
-          "We send a digital proof, normally within 24 hours of payment, with up to 2 rounds of adjustments. We print nothing without your approval.",
+          `They are quoted on WhatsApp: send us the name (or names, for siblings), the design you like, and how many pieces you need. We work with vinyl stickers from 40 pieces. First 100 pieces: $${priceOf("stickers-vinil-impermeable", 100)}. Above 100 pieces, each extra piece is at wholesale price.`,
+          "We send a digital proof, normally within 24 hours of payment, with up to 2 rounds of adjustments. We print nothing without your approval. Here is the price by quantity:",
+        ],
+        table: {
+          headers: ["Pieces", "Vinyl stickers"],
+          rows: tierPriceRows(["stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
+        },
+      },
+      {
+        heading: "How many labels to order for the school year",
+        body: [
+          "A practical count is to tally every item on the supply list, multiply by the number of kids, and add a few spares. Since they are sold by the piece rather than by the sheet, you can order close to the number you actually need, with a minimum of 40 pieces.",
+          "An example of the count: if a child takes 10 notebooks, a pencil case, a lunch box, a bottle, and a backpack, that is 14 labels; with two siblings, 28, and with a few spares you reach 40 pieces.",
+          "If you already have the supply list, send it and we will help you work out how many labels you need. To pick the right format, you can also read the difference between vinyl and paper and how labels are ordered on a roll, sheet, or by the piece.",
         ],
       },
       {
         heading: "When to order and how to receive them",
         body: [
-          "Order a few weeks before the school year starts so there is room to adjust the design and for production and shipping. We produce in Guadalajara; we ship across Mexico, or you can pick up at a Casa Blanca branch in the metro area.",
-          "If you already have the supply list, send it and we will help you work out how many labels you need.",
+          `The digital proof normally arrives within 24 hours of payment. Once you approve it, the order reaches your door in ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days anywhere in Mexico, or is ready for pickup at a Casa Blanca branch in Guadalajara in ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days.`,
+          `Home delivery costs $${NATIONAL_SHIPPING_PRICE} and branch pickup $${CASABLANCA_PRICE}; on purchases of $${FREE_SHIPPING_THRESHOLD} or more, both are free. Order a few weeks before the school year starts so there is room to adjust the design, production, and shipping. We produce in Guadalajara and you pick the branch at checkout.`,
+          "For a stage-by-stage breakdown, see how long custom stickers take to arrive.",
         ],
       },
     ],
-    relatedProductSlugs: [],
-    relatedBlogSlugs: [BLOG_SLUG_EN["etiquetas-con-nombre-para-botellas-loncheras-y-mochilas"], BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"]],
+    faq: [
+      {
+        q: "How much do custom school labels cost?",
+        a: `First 100 pieces: $${priceOf("stickers-vinil-impermeable", 100)}. Above 100 pieces, each extra piece is at wholesale price: 150 pieces cost $${priceOf("stickers-vinil-impermeable", 150)} and 200 pieces $${priceOf("stickers-vinil-impermeable", 200)}.`,
+      },
+      {
+        q: "What is the minimum order?",
+        a: "40 pieces. They are sold by the piece, not by the sheet, so you can order close to the number you really need.",
+      },
+      {
+        q: "Are the labels water-resistant?",
+        a: "They are printed on premium vinyl that resists water, sun, and scratches, per the product page. Even so, do not scrape them or leave them soaking for long.",
+      },
+      {
+        q: "Can I order labels with the names of several siblings?",
+        a: "Yes. Send us the names, the design you like, and the quantity, and we send a digital proof before printing.",
+      },
+      {
+        q: "Do I see the label before it is printed?",
+        a: "Yes. The digital proof normally arrives within 24 hours of payment, with up to 2 rounds of adjustments. We print nothing without your approval.",
+      },
+      {
+        q: "How long does the order take?",
+        a: `Once you approve the proof, it reaches your door in ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days, or is ready for pickup at Casa Blanca in ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days.`,
+      },
+      {
+        q: "Do you ship outside Guadalajara?",
+        a: `Yes, we ship across Mexico for $${NATIONAL_SHIPPING_PRICE}, free on purchases of $${FREE_SHIPPING_THRESHOLD} or more. In the Guadalajara metro area you can also pick up at one of ${CASABLANCA_BRANCHES.length} Casa Blanca branches for $${CASABLANCA_PRICE}.`,
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["etiquetas-con-nombre-para-botellas-loncheras-y-mochilas"], BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"], BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"], BLOG_SLUG_EN["impresion-de-etiquetas-rollo-hoja-o-por-pieza"], BLOG_SLUG_EN["troquelado-vs-semitroquelado-stickers"]],
     serviceLink: { href: "/en/products/waterproof-vinyl-stickers", label: "See custom vinyl stickers" },
     quoteMessage: "Hi, I'd like a quote for custom school labels.\n\nName(s):\nApproximate quantity:\nDo I already have a design? (yes / no):",
   },
