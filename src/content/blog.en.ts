@@ -541,45 +541,107 @@ export const blogPostsEn: BlogPost[] = [
     slug: BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"],
     title: "Vinyl vs. Paper: Why Your Custom Stickers Should Be Vinyl",
     metaTitle: "Custom Stickers: Vinyl vs. Paper",
-    description:
-      "The real difference between a custom vinyl sticker and a paper sticker (resistance to water, sun, and scratches), and where to design and order yours online.",
+    description: `Vinyl vs paper stickers: when each one makes sense. First 100 pieces: $${priceOf("stickers-vinil-impermeable", 100)} MXN, with a digital proof and shipping across Mexico.`,
     category: "Guides",
     publishedAt: "2026-09-09",
-    modifiedAt: "2026-10-09",
+    modifiedAt: "2026-10-26",
     intro:
-      "If you've never ordered custom stickers before, it's easy to miss the difference between vinyl and paper until one gets wet, fades in the sun, or tears when you peel it. Here's the real difference, and why at Yume we work exclusively with vinyl.",
+      "If you've never ordered custom stickers before, it's easy to miss the difference between vinyl and paper until one gets wet, fades in the sun, or tears when you peel it. Here's the real difference, where it matters most, how to choose the cut and finish, and why at Yume we work exclusively with vinyl.",
     sections: [
       {
         heading: "The difference isn't just the material",
         body: [
-          "A regular paper sticker can get wet, fade in the sun, and tear easily when peeled or rubbed against something: it works fine for short-lived, indoor use, or anywhere the weather won't get to it.",
-          "Vinyl, on the other hand, is a flexible plastic material that resists water, sun, and scratches: it holds up well on bottles that get washed, laptops that travel with you, skateboards, or any surface that gets wet or spends time outdoors.",
+          "The main difference is durability. A regular paper sticker gets wet, fades in the sun, and tears easily. Vinyl is a flexible plastic that resists water, sun, and scratches, according to the spec sheet of our vinyl stickers. That is why vinyl lasts longer on surfaces that get used or wet.",
+          "A paper sticker works fine for short-lived, indoor use, or anywhere the weather won't get to it. Vinyl holds up well on bottles that get washed, laptops that travel with you, skateboards, or any surface that gets wet or spends time outdoors.",
+          "Another difference is what happens when you peel and handle it: paper tears easily if you try to reposition it, while vinyl is flexible. If the sticker will be touched a lot, choose the material that can take that treatment.",
         ],
       },
       {
         heading: "Where the difference matters most",
         body: [
-          "If the sticker goes on something that gets wet often (a water bottle, packaging that goes in the fridge), that sits in the sun (a car, a window), or gets handled a lot (a laptop, a suitcase), vinyl is the option that actually lasts without fading or peeling off.",
+          "It matters most when the sticker gets wet, sits in the sun, or is handled often. On a water bottle, refrigerated packaging, a car, a window, a laptop, or a suitcase, vinyl is the option that actually lasts without fading or peeling off.",
           "For something used once, indoors (like a detail inside a gift box that will never touch water or sun) the difference matters less, but even there, vinyl looks and feels more premium to the touch.",
+          "A quick way to decide: ask yourself three questions. Will it get wet? Will it sit in the sun? Will many people touch it? If any answer is yes, order vinyl. If all three are no and it's a one-time use, paper could be enough, but at Yume we only work with vinyl.",
         ],
+        table: {
+          headers: ["Situation", "What fits best"],
+          rows: [
+            ["Water bottle, tumbler or cooler", "Vinyl, because of water contact"],
+            ["Laptop, suitcase or skateboard", "Vinyl, because of rubbing and scratches"],
+            ["Car or window", "Vinyl, because of sun exposure"],
+            ["Your brand's packaging", "Vinyl, so it arrives and lasts the same"],
+            ["Indoor one-time detail", "The difference matters less, but vinyl feels more premium"],
+          ],
+        },
       },
       {
         heading: "Why at Yume we only work with vinyl",
         body: [
-          "Both of our sticker products (Custom Logo Stickers and Waterproof Vinyl Stickers) are made from premium die-cut vinyl, not paper. We'd rather offer one material we know holds up than a cheaper option that looks fine at first and deteriorates fast.",
-          "That way, whether the sticker ends up on your brand's packaging, your laptop, or a package you're shipping to a customer, you know it'll arrive and hold up in the same condition.",
+          "At Yume we only work with vinyl because we'd rather offer one material we know holds up. Both of our sticker products (Custom Logo Stickers and Waterproof Vinyl Stickers) are made from premium vinyl with die-cut or kiss-cut cutting, not paper.",
+          "We'd rather offer one material that holds up than a cheaper option that looks fine at first and deteriorates fast. That way, whether the sticker ends up on your brand's packaging, your laptop, or a package you're shipping to a customer, you know it'll arrive and hold up in the same condition.",
+          "If your design is a logo for your business, the option is Custom Logo Stickers. If it's a character, a pet, a photo, or any other design, it's Waterproof Vinyl Stickers. Both are sold by piece count, not by sheet.",
         ],
+      },
+      {
+        heading: "Cut and finish: what you can choose",
+        body: [
+          "With vinyl you choose two things when ordering: the type of cut and the finish. The cut can be die-cut or kiss-cut, and the finish matte, glossy or holographic. Holographic costs an extra $0.50 per piece, which you see when you select it on the product page.",
+          "If you're unsure which cut fits you, read our die-cut vs. kiss-cut comparison, where we explain when each one makes sense.",
+          "Cut and finish are design decisions: the material stays the same premium vinyl. Before printing you receive a digital proof to confirm how the design looks.",
+        ],
+      },
+      {
+        heading: "How much vinyl stickers cost",
+        body: [
+          `First 100 pieces: $${priceOf("stickers-vinil-impermeable", 100)} MXN for vinyl stickers and $${priceOf("stickers-logo-personalizado", 100)} MXN for logo stickers. Past 100 pieces, every extra piece is at wholesale price (10% off). The minimum order is 40 pieces for vinyl and 50 for logo stickers.`,
+          `As a reference, 150 vinyl pieces cost $${priceOf("stickers-vinil-impermeable", 150)} and 200 pieces cost $${priceOf("stickers-vinil-impermeable", 200)} MXN. Order the exact quantity you need: you pick it or type it in when you place your order.`,
+        ],
+        table: {
+          headers: ["Pieces", "Price"],
+          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
+        },
       },
       {
         heading: "Where to design and order your stickers online",
         body: [
-          "You don't need a finished design to order: send us your logo, character, photo, or pet (in whatever format you have, even if it's not ideal) via WhatsApp or from the online shop, and we'll build a digital proof of the sticker before printing. You can request size or color adjustments at that stage.",
-          "The whole process happens remotely: you request a quote, approve the design, and receive your order at home no matter what city in Mexico you're in, even though we produce in Guadalajara.",
+          "You can order online without a finished design. Send us your logo, character, photo, or pet via WhatsApp or from the online shop, in whatever format you have, even if it's not ideal, and we'll build a digital proof before printing. You can request size or color adjustments at that stage.",
+          `The digital proof normally arrives within 24 hours of payment and includes up to 2 rounds of adjustments. From the moment you approve it, your order arrives at your door in ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days, or is ready for pickup at Casa Blanca in ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days.`,
+          "The whole process happens remotely: you request a quote, approve the design, and receive your order at home no matter what city in Mexico you're in, even though we produce in Guadalajara. To see how Yume compares with other options, check our comparison with online print shops or the guide on where to print stickers in Mexico.",
         ],
       },
     ],
-    relatedProductSlugs: ["stickers-vinil-impermeable"],
-    relatedBlogSlugs: [BLOG_SLUG_EN["yume-vs-imprentas-online-stickers"], BLOG_SLUG_EN["stickers-personalizados-para-negocios-guadalajara"]],
+    faq: [
+      {
+        q: "Do vinyl stickers resist water and sun?",
+        a: "Yes. They are printed on premium vinyl that resists water, sun and scratches, according to the product spec sheet. They hold up well on bottles, laptops, skateboards or surfaces that get wet or sit in the sun.",
+      },
+      {
+        q: "Does Yume make paper stickers?",
+        a: "No. Both of our sticker products are made from premium vinyl. We'd rather offer one material we know holds up.",
+      },
+      {
+        q: "Which cuts and finishes can I choose?",
+        a: "You can choose die-cut or kiss-cut, and a matte, glossy or holographic finish. Holographic costs $0.50 more per piece.",
+      },
+      {
+        q: "How much do vinyl stickers cost?",
+        a: `First 100 pieces: $${priceOf("stickers-vinil-impermeable", 100)} MXN. Past 100, every extra piece is at wholesale price: 150 pieces cost $${priceOf("stickers-vinil-impermeable", 150)} and 200 pieces $${priceOf("stickers-vinil-impermeable", 200)}. The minimum order is 40 pieces.`,
+      },
+      {
+        q: "Are they sold by sheet or by piece?",
+        a: "By piece count, not by sheet. You order the exact quantity you need, starting at 40 pieces for vinyl and 50 for logo stickers.",
+      },
+      {
+        q: "Can I see how they'll look before printing?",
+        a: "Yes. We send a digital proof, normally within 24 hours of payment, with up to 2 rounds of adjustments. We don't print anything without your approval.",
+      },
+      {
+        q: "How long does an order take and how much is shipping?",
+        a: `From the moment you approve the proof, your order arrives at your door in ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days. Shipping costs $${NATIONAL_SHIPPING_PRICE} MXN and is free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more.`,
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["troquelado-vs-semitroquelado-stickers"], BLOG_SLUG_EN["yume-vs-imprentas-online-stickers"], BLOG_SLUG_EN["donde-imprimir-stickers-personalizados-mexico"], BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"], BLOG_SLUG_EN["stickers-personalizados-para-mascotas"], BLOG_SLUG_EN["stickers-personalizados-para-negocios-guadalajara"]],
   },
   {
     slug: BLOG_SLUG_EN["menu-de-boda-personalizado"],
