@@ -174,36 +174,101 @@ export const blogPostsEn: BlogPost[] = [
     title: "How to Order Custom Stationery Online",
     metaTitle: "How to Quote and Order Custom Stationery Online",
     description:
-      "How to quote custom stationery online and order it from anywhere in Mexico: what information to prepare, how the digital proof works, and what to expect between approving the design and receiving your order.",
+      "How to order custom stationery online in Mexico: what to prepare, how the digital proof works, what it costs and how long your order takes.",
     category: "Guides",
     publishedAt: "2026-08-31",
-    modifiedAt: "2026-10-06",
+    modifiedAt: "2026-10-26",
     intro:
       "You don't need to visit a physical print shop to get stationery with your brand on it: Yume is an online print shop based in Guadalajara, with the whole process handled remotely and shipping to any city in Mexico. This guide walks through how to quote custom stationery online and order it step by step, so you know what to prepare before reaching out.",
     sections: [
       {
         heading: "The process, step by step",
         body: [
-          "1) Request a quote via WhatsApp or from the online shop, telling us which product and quantity you need. 2) Send us your details or your logo/design, depending on the product. 3) We send you a digital proof so you can check everything is correct. 4) You approve the design, and only then does it go to production. 5) You receive your order by courier at the address you give us, anywhere in Mexico, or, if you're in the Guadalajara metro area, pick it up at the Casa Blanca branch of your choice ($20 MXN).",
+          "Ordering custom stationery online takes five steps and almost everything happens remotely: you request a quote on WhatsApp or in the shop, send us your details or your logo, review a digital proof, approve it, and receive your order by courier or at a Casa Blanca branch. Nothing is printed before you approve it.",
+          `1) Request a quote via WhatsApp or from the online shop, telling us which product and quantity you need. 2) Send us your details or your logo/design, depending on the product. 3) We send you a digital proof so you can check everything is correct. 4) You approve the design, and only then does it go to production. 5) You receive your order by courier at the address you give us, anywhere in Mexico, or, if you're in the Guadalajara metro area, pick it up at the Casa Blanca branch of your choice ($${CASABLANCA_PRICE} MXN, free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more).`,
           "The only in-person step in the whole process is receiving the package (or picking it up at your Casa Blanca branch): everything else, including requesting a quote and design approval, happens remotely over WhatsApp or email.",
         ],
       },
       {
         heading: "What to have ready before requesting a quote",
         body: [
+          "To get a quick quote, have your piece's details and the quantity you want at hand. For a prescription pad that means your name, specialty, license number and practice details; for stickers, your logo or design file. If something is missing, tell us when you request the quote and we'll sort it out together.",
           "For a medical prescription pad: your full name, specialty, professional license number, and your practice's contact details. For logo stickers: your design file (ideally a PNG, PDF, AI, or SVG with a transparent background) and the quantity you want.",
-          "If you don't have a finished logo or design yet, tell us anyway when requesting a quote: we can work on it together before reaching the digital proof stage; you don't need to arrive with everything already figured out.",
+          "If you don't have a finished logo or design yet, tell us anyway when requesting a quote: we can work on it together before reaching the digital proof stage; you don't need to arrive with everything already figured out. On the prescription pad this shows up in the price: there is a no-design option (you already have your design ready) and a with-design option (we design it with you).",
+          "If you want to dig into that choice, read our guide to prescription pads with design vs. without design.",
+        ],
+      },
+      {
+        heading: "How much custom stationery costs",
+        body: [
+          `Price depends on the product. The 100-sheet medical prescription pad costs $${recetarioPrice("sin-diseno")} MXN if you already have your design and $${recetarioPrice("con-diseno")} MXN if we design it with you. For logo stickers, the first 100 pieces cost $${priceOf("stickers-logo-personalizado", 100)} MXN; past 100 you get wholesale price, 10% off each extra piece.`,
+          "Stickers and labels are sold by piece count, not by sheet, so you order the quantity you actually need. The minimum is 50 pieces for Logo Stickers & Labels and 40 pieces for Custom Vinyl Stickers. This table shows what each quantity costs:",
+        ],
+        table: {
+          headers: ["Quantity", "Logo stickers & labels", "Vinyl stickers (your design)"],
+          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
+        },
+      },
+      {
+        heading: "How long it takes and how you receive your order",
+        body: [
+          `The digital proof normally arrives within 24 hours of payment. Once you approve it, Casa Blanca pickup takes ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days and home delivery ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days. These timeframes count business days only.`,
+          `Shipping anywhere in Mexico is $${NATIONAL_SHIPPING_PRICE} MXN and free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more. If you're in Guadalajara or the metro area, you can pick up at one of ${CASABLANCA_BRANCHES.length} Casa Blanca parcel branches (${casablancaBranchNames}) for $${CASABLANCA_PRICE} MXN, also free from $${FREE_SHIPPING_THRESHOLD} MXN. You choose the branch at checkout.`,
+          "Since the clock starts when you approve the digital proof, replying quickly is the most effective way to get your order sooner. More on timing in our guide to how long custom stickers take to arrive.",
+        ],
+      },
+      {
+        heading: "How to review the digital proof without mistakes",
+        body: [
+          "The digital proof is your moment to fix things before printing. Check spelling, phone number, license number, colors and logo size carefully, because once a piece is printed it can't be changed. We don't send anything to production until you approve it.",
+          "On stickers and labels, the proof includes up to 2 rounds of changes. A good habit is to have someone else read it with you: typos in a phone number or license number are the easiest to miss once you've been staring at the design for a while.",
         ],
       },
       {
         heading: "Why you don't need a physical print shop in Guadalajara",
         body: [
-          "Although we produce in Guadalajara, Jalisco, we don't operate like a walk-in print shop: we're an online print shop, so you don't need to drop off a USB drive or stop by a counter: your order comes to your door or, within the metro area, to the Casa Blanca branch closest to you. The whole process, from quoting to approving the final design, happens over WhatsApp or email, so the service works the same whether you're in the city or in any other state in Mexico.",
+          "No, you don't need a physical print shop to order custom stationery. Yume produces in Guadalajara but operates online: you request a quote, approve the design and receive your order without visiting a counter or bringing files on a USB drive, from any city in Mexico.",
+          "Although we produce in Guadalajara, Jalisco, we don't operate like a walk-in print shop: we're an online print shop. Your order comes to your door or, within the metro area, to the Casa Blanca branch closest to you. The whole process, from quoting to approving the final design, happens over WhatsApp or email, so the service works the same whether you're in the city or in any other state in Mexico.",
           "That said, if you're in the Guadalajara metro area, turnaround tends to be a bit faster simply due to proximity, though the process to order stationery online in Mexico is identical for the whole country.",
         ],
       },
     ],
-    relatedProductSlugs: ["recetario-medico-personalizado", "stickers-logo-personalizado"],
+    faq: [
+      {
+        q: "How do I order custom stationery online?",
+        a: "You request a quote on WhatsApp or in the online shop, send us your details or your logo, review the digital proof and, once you approve it, your order goes to production. Then you receive it by courier or pick it up at a Casa Blanca branch.",
+      },
+      {
+        q: "How much does a custom medical prescription pad cost?",
+        a: `The 100-sheet pad costs $${recetarioPrice("sin-diseno")} MXN if you already have your design and $${recetarioPrice("con-diseno")} MXN if we design it with you.`,
+      },
+      {
+        q: "How much do 100 stickers with my logo cost?",
+        a: `The first 100 pieces cost $${priceOf("stickers-logo-personalizado", 100)} MXN. Past 100 you get wholesale price: for example, 200 pieces cost $${priceOf("stickers-logo-personalizado", 200)} MXN.`,
+      },
+      {
+        q: "What is the minimum order for stickers and labels?",
+        a: "50 pieces for Logo Stickers & Labels and 40 pieces for Custom Vinyl Stickers.",
+      },
+      {
+        q: "How long does my order take?",
+        a: `The digital proof normally arrives within 24 hours of payment. Once you approve it, Casa Blanca pickup takes ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days and home delivery ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days.`,
+      },
+      {
+        q: "How much is shipping?",
+        a: `$${NATIONAL_SHIPPING_PRICE} MXN anywhere in Mexico, or $${CASABLANCA_PRICE} MXN if you pick up at a Casa Blanca branch in the Guadalajara metro area. Both are free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more.`,
+      },
+      {
+        q: "Is anything printed before I approve the design?",
+        a: "No. Every order goes through a digital proof first and nothing goes to production until you approve it.",
+      },
+      {
+        q: "Do you issue invoices?",
+        a: "We don't issue invoices (CFDI). Your receipt is the order confirmation email. If your company or practice needs an invoice, message us on WhatsApp before paying.",
+      },
+    ],
+    relatedProductSlugs: ["recetario-medico-personalizado", "stickers-logo-personalizado", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["papeleria-personalizada-para-negocios-jalisco"], BLOG_SLUG_EN["papeleria-personalizada-vs-plantillas-genericas"], BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"], BLOG_SLUG_EN["recetario-medico-con-diseno-vs-sin-diseno"], BLOG_SLUG_EN["donde-imprimir-stickers-personalizados-mexico"]],
   },
   {
     slug: BLOG_SLUG_EN["recetario-medico-impreso-vs-digital"],

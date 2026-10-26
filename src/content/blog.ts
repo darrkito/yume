@@ -226,37 +226,101 @@ export const blogPosts: BlogPost[] = [
     title: "Cómo hacer un pedido de papelería personalizada en línea",
     metaTitle: "Cómo cotizar y pedir papelería personalizada en línea",
     description:
-      "Cómo cotizar papelería personalizada y pedirla en línea desde cualquier parte de México: qué información preparar, cómo funciona la prueba digital y qué esperar entre que apruebas el diseño y recibes tu pedido.",
+      "Cómo pedir papelería personalizada en línea en México: qué preparar, cómo funciona la prueba digital, cuánto cuesta y cuánto tarda tu pedido.",
     category: "Guías",
     publishedAt: "2026-08-31",
-    modifiedAt: "2026-10-06",
+    modifiedAt: "2026-10-26",
     intro:
       "No necesitas visitar una imprenta física para tener papelería con tu marca: en Yume funcionamos como una imprenta online en Guadalajara, con todo el proceso a distancia y envíos a cualquier ciudad de México. Esta guía explica paso a paso cómo cotizar papelería personalizada y pedirla en línea, para que sepas qué preparar antes de escribirnos.",
     sections: [
       {
         heading: "El proceso paso a paso",
         body: [
-          "1) Cotizas por WhatsApp o desde la tienda en línea, indicando qué producto necesitas y la cantidad. 2) Nos mandas tus datos o tu logo/diseño, según el producto. 3) Te enviamos una prueba digital para que revises que todo esté correcto. 4) Apruebas el diseño y hasta ese momento se manda a producción. 5) Recibes tu pedido por paquetería a la dirección que nos des, en cualquier parte de México, o, si estás en la zona metropolitana de Guadalajara, lo recoges en la sucursal Casa Blanca que elijas ($20 MXN).",
+          "Pedir papelería personalizada en línea toma cinco pasos y casi todo se hace a distancia: cotizas por WhatsApp o en la tienda, nos mandas tus datos o tu logo, revisas una prueba digital, la apruebas y recibes tu pedido por paquetería o en una sucursal Casa Blanca. No se imprime nada antes de tu aprobación.",
+          `1) Cotizas por WhatsApp o desde la tienda en línea, indicando qué producto necesitas y la cantidad. 2) Nos mandas tus datos o tu logo/diseño, según el producto. 3) Te enviamos una prueba digital para que revises que todo esté correcto. 4) Apruebas el diseño y hasta ese momento se manda a producción. 5) Recibes tu pedido por paquetería a la dirección que nos des, en cualquier parte de México, o, si estás en la zona metropolitana de Guadalajara, lo recoges en la sucursal Casa Blanca que elijas ($${CASABLANCA_PRICE} MXN, gratis en compras de $${FREE_SHIPPING_THRESHOLD} MXN o más).`,
           "El único paso presencial que existe es recibir el paquete (o recogerlo en tu sucursal Casa Blanca): todo lo demás, incluida cotizar papelería personalizada y aprobar el diseño, se hace a distancia por WhatsApp o correo.",
         ],
       },
       {
         heading: "Qué necesitas tener listo antes de cotizar",
         body: [
+          "Para cotizar rápido, ten a la mano los datos de tu pieza y la cantidad que quieres. En un recetario médico son tu nombre, especialidad, cédula y datos del consultorio; en etiquetas, el archivo de tu logo o diseño. Si algo te falta, dínoslo al cotizar y lo resolvemos juntos.",
           "Para un recetario médico: tu nombre completo, especialidad, número de cédula profesional y los datos de contacto de tu consultorio. Para etiquetas con tu logo: el archivo de tu diseño (idealmente PNG, PDF, AI o SVG con fondo transparente) y la cantidad que quieres.",
-          "Si todavía no tienes un logo o diseño terminado, dínoslo al cotizar de todas formas: se puede trabajar en conjunto antes de llegar a la prueba digital, no es necesario llegar con todo resuelto.",
+          "Si todavía no tienes un logo o diseño terminado, dínoslo al cotizar de todas formas: se puede trabajar en conjunto antes de llegar a la prueba digital, no es necesario llegar con todo resuelto. En el recetario esto se refleja en el precio: tienes la opción sin diseño (ya traes tu diseño listo) y la opción con diseño (lo diseñamos contigo).",
+          "Si quieres profundizar en esa decisión, lee nuestra guía de recetario médico con diseño vs. sin diseño.",
+        ],
+      },
+      {
+        heading: "Cuánto cuesta pedir papelería personalizada",
+        body: [
+          `El precio depende del producto. El recetario médico de 100 hojas cuesta $${recetarioPrice("sin-diseno")} MXN si ya tienes tu diseño y $${recetarioPrice("con-diseno")} MXN si lo diseñamos contigo. En etiquetas con tu logo, las primeras 100 piezas cuestan $${priceOf("stickers-logo-personalizado", 100)} MXN; pasando las 100 entras a precio mayoreo, 10% menos por pieza extra.`,
+          "Las etiquetas y los stickers se venden por cantidad de piezas, no por hoja, así que pides la cantidad que de verdad necesitas. El mínimo es de 50 piezas en las Etiquetas con tu Logo y de 40 piezas en los Stickers de Vinil Personalizados. Esta tabla muestra cuánto cuesta cada cantidad:",
+        ],
+        table: {
+          headers: ["Cantidad", "Etiquetas con tu logo", "Stickers de vinil (tu diseño)"],
+          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
+        },
+      },
+      {
+        heading: "Cuánto tarda y cómo recibes tu pedido",
+        body: [
+          `La prueba digital llega normalmente en un máximo de 24 horas después del pago. Desde que la apruebas, recoger en Casa Blanca toma ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles y el envío a domicilio ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles. Esos plazos cuentan solo días hábiles.`,
+          `El envío a cualquier parte de México cuesta $${NATIONAL_SHIPPING_PRICE} MXN y es gratis en compras de $${FREE_SHIPPING_THRESHOLD} MXN o más. Si estás en Guadalajara o su zona metropolitana, puedes recoger en una de las ${CASABLANCA_BRANCHES.length} sucursales de paquetería Casa Blanca (${casablancaBranchNames}) por $${CASABLANCA_PRICE} MXN, también gratis desde $${FREE_SHIPPING_THRESHOLD} MXN. Eliges la sucursal al pagar.`,
+          "Como el tiempo corre desde que apruebas la prueba digital, responder rápido es la forma más efectiva de recibir tu pedido antes. Más detalle sobre plazos en nuestra guía de cuánto tarda un pedido de stickers personalizados.",
+        ],
+      },
+      {
+        heading: "Cómo revisar la prueba digital sin errores",
+        body: [
+          "La prueba digital es tu momento para corregir antes de imprimir. Revisa ortografía, teléfono, número de cédula, colores y tamaño del logo con calma, porque una vez impresa la pieza ya no se puede cambiar. No mandamos nada a producción hasta que la apruebas.",
+          "En etiquetas y stickers, la prueba incluye hasta 2 rondas de ajustes. Un buen hábito es pedir que otra persona la lea contigo: los errores en un número de teléfono o en una cédula son los más fáciles de pasar por alto cuando ya llevas rato mirando el diseño.",
         ],
       },
       {
         heading: "Por qué no hace falta una imprenta física en Guadalajara",
         body: [
-          "Aunque producimos en Guadalajara, Jalisco, no operamos como una imprenta de mostrador: somos una imprenta online en Guadalajara, así que no necesitas ir a dejar un archivo en USB ni pasar a un mostrador: tu pedido llega a tu domicilio o, dentro de la zona metropolitana, a la sucursal Casa Blanca que te quede más cerca. Todo el proceso, desde cotizar hasta aprobar el diseño final, pasa por WhatsApp o correo, así que el servicio funciona igual si estás en la ciudad o en cualquier otro estado de México.",
+          "No, no necesitas una imprenta física para pedir papelería personalizada. Yume produce en Guadalajara, pero opera en línea: cotizas, apruebas el diseño y recibes tu pedido sin ir a un mostrador ni llevar archivos en USB, desde cualquier ciudad de México.",
+          "Aunque producimos en Guadalajara, Jalisco, no operamos como una imprenta de mostrador: somos una imprenta online en Guadalajara. Tu pedido llega a tu domicilio o, dentro de la zona metropolitana, a la sucursal Casa Blanca que te quede más cerca. Todo el proceso, desde cotizar hasta aprobar el diseño final, pasa por WhatsApp o correo, así que el servicio funciona igual si estás en la ciudad o en cualquier otro estado de México.",
           "Eso sí: si estás en la zona metropolitana de Guadalajara el tiempo de entrega suele ser un poco más corto por cercanía, aunque el proceso de cotización y aprobación es idéntico para todo el país: puedes pedir papelería en línea desde México sin importar en qué ciudad estés.",
         ],
       },
     ],
-    relatedProductSlugs: ["recetario-medico-personalizado", "stickers-logo-personalizado"],
-    relatedBlogSlugs: ["papeleria-personalizada-para-negocios-jalisco", "papeleria-personalizada-vs-plantillas-genericas", "cuanto-tarda-un-pedido-de-stickers-personalizados"],
+    faq: [
+      {
+        q: "¿Cómo hago un pedido de papelería personalizada en línea?",
+        a: "Cotizas por WhatsApp o en la tienda en línea, nos mandas tus datos o tu logo, revisas la prueba digital y, cuando la apruebas, tu pedido pasa a producción. Después lo recibes por paquetería o lo recoges en una sucursal Casa Blanca.",
+      },
+      {
+        q: "¿Cuánto cuesta un recetario médico personalizado?",
+        a: `El recetario de 100 hojas cuesta $${recetarioPrice("sin-diseno")} MXN si ya tienes tu diseño y $${recetarioPrice("con-diseno")} MXN si lo diseñamos contigo.`,
+      },
+      {
+        q: "¿Cuánto cuestan 100 etiquetas con mi logo?",
+        a: `Las primeras 100 piezas cuestan $${priceOf("stickers-logo-personalizado", 100)} MXN. Pasando las 100 entras a precio mayoreo: por ejemplo, 200 piezas cuestan $${priceOf("stickers-logo-personalizado", 200)} MXN.`,
+      },
+      {
+        q: "¿Cuál es el pedido mínimo de etiquetas y stickers?",
+        a: "50 piezas en las Etiquetas con tu Logo y 40 piezas en los Stickers de Vinil Personalizados.",
+      },
+      {
+        q: "¿Cuánto tarda mi pedido?",
+        a: `La prueba digital llega normalmente en un máximo de 24 horas después del pago. Desde que la apruebas, recoger en Casa Blanca toma ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles y el envío a domicilio ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles.`,
+      },
+      {
+        q: "¿Cuánto cuesta el envío?",
+        a: `$${NATIONAL_SHIPPING_PRICE} MXN a cualquier parte de México, o $${CASABLANCA_PRICE} MXN si recoges en una sucursal Casa Blanca de la zona metropolitana de Guadalajara. Las dos opciones son gratis en compras de $${FREE_SHIPPING_THRESHOLD} MXN o más.`,
+      },
+      {
+        q: "¿Se imprime algo antes de que yo apruebe el diseño?",
+        a: "No. Todo pedido pasa primero por una prueba digital y no se manda a producción hasta que la apruebas.",
+      },
+      {
+        q: "¿Emiten factura?",
+        a: "No emitimos factura (CFDI). Tu comprobante es el correo de confirmación del pedido. Si tu empresa o consultorio necesita factura, escríbenos por WhatsApp antes de pagar.",
+      },
+    ],
+    relatedProductSlugs: ["recetario-medico-personalizado", "stickers-logo-personalizado", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["papeleria-personalizada-para-negocios-jalisco", "papeleria-personalizada-vs-plantillas-genericas", "cuanto-tarda-un-pedido-de-stickers-personalizados", "recetario-medico-con-diseno-vs-sin-diseno", "donde-imprimir-stickers-personalizados-mexico"],
   },
   {
     slug: "recetario-medico-impreso-vs-digital",
