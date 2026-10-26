@@ -330,32 +330,85 @@ export const blogPostsEn: BlogPost[] = [
       "How to order a die-cut sticker from a photo of your dog or cat: what photo to send, what the final result looks like, and how much it costs at Yume.",
     category: "Guides",
     publishedAt: "2026-09-09",
+    modifiedAt: "2026-10-26",
     intro:
-      "One of the most common requests we get for Waterproof Vinyl Stickers isn't a logo or a cartoon character: it's a photo of someone's pet. Turning your dog or cat into a die-cut sticker of its silhouette is one of our most common orders, and one of the easiest to quote. Here's how the process works.",
+      "One of the most common requests we get for Waterproof Vinyl Stickers isn't a logo or a cartoon character: it's a photo of someone's pet. Turning your dog or cat into a die-cut sticker of its silhouette is one of our most common orders, and one of the easiest to quote. This guide covers what photo to send, what the result looks like, what it costs, how long it takes, and ideas for gifting or selling pet stickers.",
     sections: [
       {
         heading: "What photo to send",
         body: [
-          "You don't need a professional photo: just one where your pet is fully visible, well lit, and not blocked by anything else. The clearer the outline, the cleaner the die cut around the silhouette turns out.",
+          "Send a photo where your pet is fully visible, well lit, and not blocked by anything else. You don't need a professional photo: a phone is enough. The clearer the outline against the background, the cleaner the die cut around the silhouette turns out.",
           "If you have a few photos of the same pet, send us all of them when requesting a quote: sometimes one works better than another for the cutout, so we can pick the best one together before building the digital proof.",
+          "A few practical tips: shoot at your pet's eye level rather than from above, so the face and body aren't distorted; avoid strong backlight, which darkens fur and hides detail; and if the fur is the same color as the background, look for a wall or floor that contrasts. A black dog on a black couch is hard to cut out well.",
+          "If your pet won't sit still, take several shots in a row and pick the best. A photo of your pet sitting or lying down also works well, because the silhouette is more compact and the sticker is easier to apply and peel.",
         ],
       },
       {
         heading: "What the result looks like",
         body: [
-          "The sticker is die-cut to the exact shape of your pet's silhouette (or to the full photo, if you'd rather keep a background or frame): not a generic square or circle, which is what makes it a die-cut vinyl sticker. You can see real examples of pets already turned into stickers in our gallery.",
-          "Before printing, we send you a digital proof of the final result so you can confirm the cut and the colors came out the way you expected: same as with any other design we work on.",
+          "The sticker is cut to the exact shape of your pet's silhouette, or to the full photo if you'd rather keep a background or frame. It isn't a generic square or circle, which is what makes it a die-cut vinyl sticker. Before printing you get a digital proof to confirm the cut and colors.",
+          "You can see real examples of pets already turned into stickers in our gallery. The proof works the same as with any other design we work on: nothing is printed until you approve it.",
+          "When ordering you choose the cut type: die-cut or kiss-cut. If you're unsure which suits your pet, read our die-cut vs. kiss-cut comparison.",
+          "You also choose the finish: matte, glossy, or holographic. For a photo with lots of fur detail, matte and glossy are the most straightforward options; holographic has an extra per-piece cost, which you see when you select it on the product page.",
         ],
       },
       {
         heading: "Quantity and price",
         body: [
-          "Vinyl stickers are sold by piece count, not by sheet: the first 100 pieces are $350 and, past 100, every extra piece is at wholesale price ($3.15, 10% off): 150 pieces come out to $507.50 and 200 to $665.",
+          `First 100 pieces: $${priceOf("stickers-vinil-impermeable", 100)}. Vinyl stickers are sold by piece count, not by sheet, with a minimum order of 40 pieces. Past 100, every extra piece is at wholesale price (10% off the base price).`,
+          `For reference: 150 pieces come out to $${priceOf("stickers-vinil-impermeable", 150)} and 200 to $${priceOf("stickers-vinil-impermeable", 200)} MXN. Order the exact quantity you need: you pick it or type it in when you place your order.`,
           "It's the same premium vinyl, resistant to water, sun, and scratches, that we use for any other custom design, so it holds up well on water bottles, laptops, or wherever you want to stick it.",
+        ],
+        table: {
+          headers: ["Pieces", "Price"],
+          rows: tierPriceRows(["stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
+        },
+      },
+      {
+        heading: "How long it takes and how it's delivered",
+        body: [
+          `The digital proof normally arrives within 24 hours of payment. Once you approve it, the order takes ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days to reach your door anywhere in Mexico, or ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days if you pick it up at a Casa Blanca branch in Guadalajara.`,
+          `Home delivery is $${NATIONAL_SHIPPING_PRICE} MXN and branch pickup is $${CASABLANCA_PRICE} MXN. On orders of $${FREE_SHIPPING_THRESHOLD} MXN or more, both are free. If it's a gift with a deadline, quote early so there's room to adjust the proof.`,
+        ],
+      },
+      {
+        heading: "Ideas for using pet stickers",
+        body: [
+          "A pet sticker works as a gift, a keepsake, and a product to sell. The practical way to decide is to think about who will receive it and where it will be stuck, because that drives the size and quantity worth ordering.",
+          "For personal use, order a few pieces with your dog or cat's photo and stick them on your water bottle, laptop, or helmet. As a gift, a pet cutout is an easy personal touch for a birthday or for someone who just adopted. If your pet has passed away, a sticker of its silhouette is a simple way to keep its image close.",
+          "For pet businesses such as groomers, vet clinics, daycares, or pet stores, you can use photos of your clients' pets (with their permission) or your own pet as a brand image.",
+          "If you're organizing an event, such as a wedding where the pet is part of the family, you can also include a sticker of its silhouette among the event details.",
         ],
       },
     ],
+    faq: [
+      {
+        q: "Can I order a sticker with a photo of my dog or cat?",
+        a: "Yes. Vinyl stickers are made from your design, character, or photo, and cut to the shape of your pet's silhouette. Before printing you get a digital proof to confirm the cut and colors.",
+      },
+      {
+        q: "What kind of photo works best?",
+        a: "One where your pet is fully visible, well lit, and with a clear outline against the background. You don't need a professional photo. If you have several, send them all when requesting a quote and we'll pick the best one together.",
+      },
+      {
+        q: "How much do my pet's stickers cost?",
+        a: `First 100 pieces: $${priceOf("stickers-vinil-impermeable", 100)} MXN. Past 100, every extra piece is at wholesale price: 150 pieces cost $${priceOf("stickers-vinil-impermeable", 150)} and 200 pieces $${priceOf("stickers-vinil-impermeable", 200)}. The minimum order is 40 pieces.`,
+      },
+      {
+        q: "Are the stickers water and sun resistant?",
+        a: "Yes. They are printed on premium vinyl that resists water, sun, and scratches, per the product page.",
+      },
+      {
+        q: "How long does my order take?",
+        a: `The digital proof normally arrives within 24 hours of payment. Once you approve it, your order reaches your door in ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days, or is ready for pickup at Casa Blanca in ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days.`,
+      },
+      {
+        q: "Do you ship outside Guadalajara?",
+        a: `Yes, we ship anywhere in Mexico for $${NATIONAL_SHIPPING_PRICE} MXN, free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more.`,
+      },
+    ],
     relatedProductSlugs: ["stickers-vinil-impermeable"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"], BLOG_SLUG_EN["troquelado-vs-semitroquelado-stickers"], BLOG_SLUG_EN["stickers-para-bodas-eventos-y-fiestas"], BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"]],
   },
   {
     slug: BLOG_SLUG_EN["recetario-medico-con-diseno-vs-sin-diseno"],

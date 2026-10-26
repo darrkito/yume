@@ -390,33 +390,85 @@ export const blogPosts: BlogPost[] = [
       "Cómo pedir un sticker troquelado con la foto de tu perro o gato: qué imagen enviar, cómo se ve el resultado final y cuánto cuesta en Yume.",
     category: "Guías",
     publishedAt: "2026-09-09",
+    modifiedAt: "2026-10-26",
     intro:
-      "Una de las peticiones que más vemos en Stickers de Vinil Personalizados no es un logo ni un personaje de caricatura: es la foto de una mascota. Convertir a tu perro o gato en un sticker troquelado con su silueta es de los pedidos más comunes y más sencillos de cotizar. Así funciona el proceso.",
+      "Una de las peticiones que más vemos en Stickers de Vinil Personalizados no es un logo ni un personaje de caricatura: es la foto de una mascota. Convertir a tu perro o gato en un sticker troquelado con su silueta es de los pedidos más comunes y más sencillos de cotizar. Esta guía te explica qué foto enviar, cómo se ve el resultado, cuánto cuesta, cuánto tarda y qué ideas funcionan para regalar o vender stickers de mascotas.",
     sections: [
       {
         heading: "Qué foto enviar",
         body: [
-          "No necesitas una foto profesional: basta con que la mascota se vea completa, con buena luz y sin que otra cosa le tape el cuerpo. Entre mejor definido el contorno, más limpio sale el corte troquelado alrededor de la silueta.",
+          "Envía una foto donde la mascota se vea completa, con buena luz y sin que otra cosa le tape el cuerpo. No necesitas una foto profesional: un celular basta. Entre mejor definido el contorno contra el fondo, más limpio sale el corte troquelado alrededor de la silueta.",
           "Si tienes varias fotos de la misma mascota, mándanoslas todas al cotizar: a veces una funciona mejor que otra para el recorte, y así elegimos juntos la mejor antes de armar la prueba digital.",
+          "Algunos consejos prácticos: toma la foto a la altura de la mascota y no desde arriba, para que se vea la cara y el cuerpo sin deformarse; evita contraluz fuerte, que oscurece el pelo y borra detalles; y si el pelo es del mismo color que el fondo, busca una pared o piso que contraste. Un perro negro sobre un sillón negro es difícil de recortar bien.",
+          "Si la mascota no se queda quieta, haz varias fotos seguidas y escoge la mejor. También sirve una foto donde esté sentada o acostada, porque la silueta es más compacta y el sticker queda más fácil de pegar y de despegar.",
         ],
       },
       {
         heading: "Cómo se ve el resultado",
         body: [
-          "El sticker se corta a la forma exacta de la silueta de tu mascota (o de la foto completa, si prefieres mantener un fondo o marco), no en un cuadrado o círculo genérico: por eso hablamos de vinil troquelado. Puedes ver ejemplos reales de mascotas ya convertidas en sticker en nuestra galería.",
-          "Antes de imprimir te mandamos una prueba digital del resultado final, para que confirmes que el corte y los colores quedaron como esperabas: igual que con cualquier otro diseño que trabajamos.",
+          "El sticker se corta a la forma exacta de la silueta de tu mascota, o de la foto completa si prefieres conservar un fondo o marco. No es un cuadrado ni un círculo genérico: por eso hablamos de vinil troquelado. Antes de imprimir recibes una prueba digital para confirmar corte y colores.",
+          "Puedes ver ejemplos reales de mascotas ya convertidas en sticker en nuestra galería. La prueba funciona igual que con cualquier otro diseño que trabajamos: no se imprime hasta que la apruebas.",
+          "Al pedir eliges el tipo de corte: troquelado o semitroquelado. Si dudas cuál te conviene para tu mascota, lee nuestra comparación de troquelado vs. semitroquelado.",
+          "También eliges el acabado: mate, brillante u holográfico. Para una foto con mucho detalle de pelo, el mate y el brillante son las opciones más directas; el holográfico tiene un costo extra por pieza, que ves al elegirlo en la página del producto.",
         ],
       },
       {
         heading: "Cantidad y precio",
         body: [
-          "Los stickers de vinil se venden por cantidad de piezas, no por planilla: las primeras 100 piezas cuestan $350 y, pasando las 100, cada pieza extra va a precio mayoreo ($3.15, 10% menos): 150 piezas quedan en $507.50 y 200 en $665.",
+          `Primeras 100 piezas: $${priceOf("stickers-vinil-impermeable", 100)}. Los stickers de vinil se venden por cantidad de piezas, no por planilla, con un mínimo de compra de 40 piezas. Pasando las 100, cada pieza extra va a precio mayoreo (10% menos que el precio base).`,
+          `Como referencia: 150 piezas quedan en $${priceOf("stickers-vinil-impermeable", 150)} y 200 en $${priceOf("stickers-vinil-impermeable", 200)}. Pide la cantidad exacta que necesitas: la eliges o la escribes al hacer tu pedido.`,
           "Es el mismo vinil premium resistente al agua, al sol y a rayones que usamos para cualquier otro diseño personalizado, así que aguanta bien en botellas de agua, laptops o donde quieras pegarlo.",
+        ],
+        table: {
+          headers: ["Piezas", "Precio"],
+          rows: tierPriceRows(["stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
+        },
+      },
+      {
+        heading: "Cuánto tarda y cómo se entrega",
+        body: [
+          `La prueba digital llega normalmente en un máximo de 24 horas después del pago. Desde que la apruebas, el pedido tarda ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles en llegar a tu domicilio en cualquier parte de México, o ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles si lo recoges en una sucursal Casa Blanca de Guadalajara.`,
+          `El envío a domicilio cuesta $${NATIONAL_SHIPPING_PRICE} y la recolección en sucursal $${CASABLANCA_PRICE}. En compras de $${FREE_SHIPPING_THRESHOLD} o más, ambos son gratis. Si es un regalo con fecha, cotiza con tiempo para tener margen de ajustar la prueba.`,
+        ],
+      },
+      {
+        heading: "Ideas para usar stickers de mascotas",
+        body: [
+          "Un sticker de mascota funciona como regalo, como recuerdo y como producto para vender. Lo más práctico es pensar en quién lo va a recibir y dónde lo va a pegar, porque de eso depende el tamaño y la cantidad que te conviene pedir.",
+          "Para uso personal, pide pocas piezas con la foto de tu perro o gato y pégalas en tu botella, tu laptop o tu casco. Para regalo, una mascota recortada es un detalle fácil de personalizar para cumpleaños o para quien acaba de adoptar. Si tu mascota ya falleció, un sticker con su silueta es una forma sencilla de conservar su imagen.",
+          "Para negocios del ramo, como estéticas caninas, veterinarias, guarderías o tiendas de mascotas, puedes usar la foto de las mascotas de tus clientes (con su permiso) o tu propia mascota como imagen de marca.",
+          "Si organizas un evento, como una boda donde la mascota es parte de la familia, también puedes incluir un sticker con su silueta entre los detalles del evento.",
         ],
       },
     ],
+    faq: [
+      {
+        q: "¿Puedo pedir un sticker con la foto de mi perro o gato?",
+        a: "Sí. Los stickers de vinil se hacen con tu diseño, personaje o foto, y se cortan a la forma de la silueta de tu mascota. Antes de imprimir recibes una prueba digital para confirmar el corte y los colores.",
+      },
+      {
+        q: "¿Qué tipo de foto funciona mejor?",
+        a: "Una donde la mascota se vea completa, con buena luz y con el contorno bien definido contra el fondo. No necesitas una foto profesional. Si tienes varias, mándalas todas al cotizar y elegimos juntos la mejor.",
+      },
+      {
+        q: "¿Cuánto cuestan los stickers de mi mascota?",
+        a: `Primeras 100 piezas: $${priceOf("stickers-vinil-impermeable", 100)}. Pasando las 100, cada pieza extra va a precio mayoreo: 150 piezas cuestan $${priceOf("stickers-vinil-impermeable", 150)} y 200 piezas $${priceOf("stickers-vinil-impermeable", 200)}. El mínimo de compra es de 40 piezas.`,
+      },
+      {
+        q: "¿Los stickers resisten el agua y el sol?",
+        a: "Sí. Se imprimen en vinil premium resistente al agua, al sol y a rayones, según la ficha del producto.",
+      },
+      {
+        q: "¿Cuánto tarda mi pedido?",
+        a: `La prueba digital llega normalmente en un máximo de 24 horas después del pago. Desde que la apruebas, tu pedido llega a domicilio en ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles, o está listo para recoger en Casa Blanca en ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles.`,
+      },
+      {
+        q: "¿Envían fuera de Guadalajara?",
+        a: `Sí, enviamos a todo México por $${NATIONAL_SHIPPING_PRICE}, gratis en compras de $${FREE_SHIPPING_THRESHOLD} o más.`,
+      },
+    ],
     relatedProductSlugs: ["stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["stickers-vinil-vs-papel-diferencias", "troquelado-vs-semitroquelado-stickers", "stickers-para-bodas-eventos-y-fiestas"],
+    relatedBlogSlugs: ["stickers-vinil-vs-papel-diferencias", "troquelado-vs-semitroquelado-stickers", "stickers-para-bodas-eventos-y-fiestas", "cuanto-tarda-un-pedido-de-stickers-personalizados"],
   },
   {
     slug: "recetario-medico-con-diseno-vs-sin-diseno",
