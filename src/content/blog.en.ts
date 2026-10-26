@@ -275,35 +275,122 @@ export const blogPostsEn: BlogPost[] = [
     title: "Printed vs. Digital Prescription Pads: Which Is Right for Your Practice?",
     metaTitle: "Printed vs. Digital Prescription Pads",
     description:
-      "The advantages and limits of printed medical prescription pads versus digital prescriptions, and why many practices in Mexico still use both instead of choosing just one.",
+      "Printed prescription pads vs digital prescriptions in Mexico: pros, limits, what NOM-004 and NOM-024 say, and when it makes sense to use both in your practice.",
     category: "Guides",
     publishedAt: "2026-08-31",
+    modifiedAt: "2026-10-26",
     intro:
-      "More and more practices are using some form of electronic prescription, but the printed prescription pad is still part of daily life for most doctors in Mexico. Before deciding whether it's worth continuing to print or switching entirely to digital, it's worth looking at what each option actually solves and where it falls short.",
+      "More and more practices are using some form of electronic prescription, but the printed prescription pad is still part of daily life for most doctors in Mexico. Before deciding whether it's worth continuing to print or switching entirely to digital, it's worth looking at what each option actually solves and where it falls short. Here we compare both, review what the official clinical-record standards say, and explain how to combine them without complicating your day.",
     sections: [
       {
-        heading: "What each option solves",
+        heading: "What does each option solve, the printed or the digital prescription?",
         body: [
-          "A digital prescription (from an app, a practice-management system, or an electronic-record platform) has clear advantages: it can be resent by email or WhatsApp to the patient, it's automatically backed up, and it's easier to search in a history. A printed prescription pad, on the other hand, doesn't depend on internet access, battery life, or the system working at that exact moment: the patient leaves the appointment with paper in hand, with no other dependency.",
+          "A digital prescription can be resent by email or WhatsApp, is backed up, and is easy to search in a history. A printed one doesn't depend on internet, battery, or a system: the patient leaves the appointment with paper in hand. Each solves a different problem, so comparing them only on how modern they are doesn't help.",
+          "A digital prescription (from an app, a practice-management system, or an electronic-record platform) has clear advantages for follow-up: it can be resent to the patient, it's automatically backed up, and it's easier to search in a history. A printed prescription pad, on the other hand, doesn't depend on internet access, battery life, or the system working at that exact moment.",
           "For many patients (especially older ones, or those heading straight to a physical pharmacy) printed paper is still what they expect to receive at the end of an appointment.",
         ],
+        table: {
+          headers: ["Aspect", "Printed pad", "Digital prescription"],
+          rows: [
+            ["Internet, battery, or system", "Depends on none of them", "Needs them to be created and sent"],
+            ["How the patient receives it", "Paper in hand when leaving", "File by email or WhatsApp"],
+            ["Backup and history", "Filed separately if you want a copy", "Backed up and searchable in the system"],
+            ["Learning curve", "None: filled in by hand", "You have to learn the platform"],
+            ["Practice image", "Your own preprinted letterhead", "Depends on what your system allows"],
+          ],
+        },
       },
       {
-        heading: "When it makes sense to keep printing",
+        heading: "What do the official standards say about paper and digital?",
         body: [
-          "If your practice doesn't have (or doesn't want to depend on) a digital system, the printed prescription pad is still the simplest, lowest-friction option: no new platform to learn, no risk of an internet outage stopping the appointment, and the patient leaves with something physical with no extra steps.",
-          "It's also common to use it as a backup even if your practice already has a digital system: for the day the system fails, there's no signal, or you simply prefer not to depend on a screen in front of the patient.",
+          "NOM-004-SSA3-2012 makes electronic media optional and accepts handwritten, electronic, or digital signatures on record notes. NOM-024-SSA3-2012 applies to establishments that adopt electronic health-record systems and asks that records be unalterable. They are clinical-record standards, not a prescription layout guide.",
+          "In NOM-004, using electronic, magnetic, or optical media is \"optional\", and electronic and digital signatures are subject to the applicable legal provisions. The same standard asks that notes be legible, without abbreviations, corrections, or crossed-out text: a point in favor of preprinting your fixed details instead of handwriting them every time.",
+          "NOM-024 defines the advanced electronic signature as one that produces the same legal effects as a handwritten signature, and asks that systems let the health professional use it. What your practice must meet specifically depends on your institution, your medical association, and your state, so confirm with them before changing how you prescribe.",
         ],
       },
       {
-        heading: "It doesn't have to be all-or-nothing",
+        heading: "When does it make sense to keep printing your pad?",
         body: [
-          "Most of the practices we see in Guadalajara and the rest of Mexico don't pick just one: they use digital for records and follow-up, and printed for whatever the patient takes home that same day. Having a printed prescription pad with your letterhead, your license number, and your practice's details doesn't compete with your digital system: it complements it.",
-          "If you decide to order a custom one, the process is the same whether it's your only prescription pad or a backup: request a quote, send us your details, approve a digital proof of the letterhead, and it goes to production.",
+          "Keep printing if you don't want to depend on a system, if your patients take the prescription straight to a physical pharmacy, or if you need a backup for when the signal drops. Paper is the lowest-friction option: no platform to learn and no extra steps for the patient.",
+          "If your practice doesn't have (or doesn't want to depend on) a digital system, the printed prescription pad is still the simplest option: no new platform to learn, no risk of an internet outage stopping the appointment, and the patient leaves with something physical.",
+          "It's also common to use it as a backup even if your practice already has a digital system: for the day the system fails, there's no signal, or you simply prefer not to depend on a screen in front of the patient.",
+          "There's also a practical benefit: with a preprinted letterhead, your name, license number, and practice details always come out complete and legible, and you only handwrite what changes with each patient.",
+        ],
+      },
+      {
+        heading: "When does it make sense to move to digital prescriptions?",
+        body: [
+          "Go digital when you need a searchable history, want to resend instructions to the patient by email or WhatsApp, or need several doctors working in one system. It's the best option for follow-up and records. It still requires internet, power, and a system that meets what your institution asks for.",
+          "Before migrating, ask yourself four questions: can my patients receive and show the prescription on their phone? What do I do if the system or the internet fails mid-appointment? Does the pharmacy my patients use accept the digital format? Does my institution or medical association require anything specific?",
+          "If any answer leaves you unsure, you don't have to decide all at once: you can start using the digital system for records and keep handing out the printed prescription while you get used to it.",
+        ],
+      },
+      {
+        heading: "Does it have to be all digital or all printed?",
+        body: [
+          "No. Many practices use digital for records and follow-up, and printed for what the patient takes home that same day. A pad with your letterhead, license number, and practice details doesn't compete with your system: it complements it and covers you when it fails.",
+          "Most of the practices we see in Guadalajara and the rest of Mexico don't pick just one: they use digital for records and follow-up, and printed for the prescription that leaves the appointment. To see which details are worth preprinting, read the prescription format guide; if you're unsure whether to order a ready letterhead or have us design it with you, compare the with-design and without-design options.",
+        ],
+      },
+      {
+        heading: "How much does a printed prescription pad cost at Yume, and how do you order one?",
+        body: [
+          `The 100-sheet pad, half-letter (14 × 21.5 cm) on white 90 gr Bond paper, costs $${recetarioPrice("sin-diseno")} MXN if you already have your design and $${recetarioPrice("con-diseno")} MXN if we design it with you. You request a quote, send your details, approve a digital proof of the letterhead, and only then does it go to production.`,
+          `The digital proof normally arrives within 24 hours of payment. Once you approve it, pickup at a Casa Blanca branch in Guadalajara takes ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days and home delivery anywhere in Mexico ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days.`,
+          "The process is the same whether the pad is your only option or a backup to your digital system, and nothing is printed until you approve the letterhead.",
         ],
       },
     ],
     relatedProductSlugs: ["recetario-medico-personalizado"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["recetarios-medicos-personalizados-guadalajara"], BLOG_SLUG_EN["recetario-medico-con-diseno-vs-sin-diseno"], BLOG_SLUG_EN["datos-obligatorios-receta-medica-mexico"], BLOG_SLUG_EN["yume-vs-imprentas-recetarios-medicos"]],
+    faq: [
+      {
+        q: "Does a digital prescription fully replace the printed pad?",
+        a: "Not necessarily. NOM-004-SSA3-2012 states that using electronic media in the clinical record is optional. What you must meet depends on your institution, your medical association, and your state, so it's worth confirming with them.",
+      },
+      {
+        q: "Does an electronic signature carry the same weight as a handwritten one?",
+        a: "NOM-024-SSA3-2012 defines the advanced electronic signature as one that produces the same legal effects as a handwritten signature. NOM-004 says electronic and digital signatures are subject to the applicable legal provisions.",
+      },
+      {
+        q: "What details go on a prescription pad letterhead?",
+        a: "Usually your full name, specialty, professional license number (and specialty license if applicable), address, phone, and, if you want, office hours. These are the fixed details that get preprinted.",
+      },
+      {
+        q: "How much does the printed prescription pad cost?",
+        a: `The 100-sheet pad costs $${recetarioPrice("sin-diseno")} MXN if you already have your design and $${recetarioPrice("con-diseno")} MXN if we design it with you.`,
+      },
+      {
+        q: "What size and paper is the pad?",
+        a: "Half-letter (14 × 21.5 cm), on white 90 gr Bond paper, with 100 sheets per pad.",
+      },
+      {
+        q: "How long does my order take?",
+        a: `The digital proof normally arrives within 24 hours of payment. Once you approve it, Casa Blanca pickup takes ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days and home delivery ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days.`,
+      },
+      {
+        q: "How much is shipping?",
+        a: `$${NATIONAL_SHIPPING_PRICE} MXN anywhere in Mexico, or $${CASABLANCA_PRICE} MXN if you pick up at a Casa Blanca branch in the Guadalajara metro area. Both are free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more.`,
+      },
+      {
+        q: "Is anything printed before I approve the design?",
+        a: "No. Every order goes through a digital proof first and nothing goes to production until you approve it.",
+      },
+      {
+        q: "Do you issue invoices?",
+        a: "We don't issue invoices (CFDI). Your receipt is the order confirmation email. If your practice needs an invoice, message us on WhatsApp before paying.",
+      },
+    ],
+    sources: [
+      {
+        label: "NOM-004-SSA3-2012, Clinical record, Diario Oficial de la Federación",
+        url: "https://dof.gob.mx/nota_detalle_popup.php?codigo=5272787",
+      },
+      {
+        label: "NOM-024-SSA3-2012, Electronic health-record information systems, Diario Oficial de la Federación",
+        url: "https://dof.gob.mx/nota_detalle_popup.php?codigo=5280847",
+      },
+    ],
   },
   {
     slug: BLOG_SLUG_EN["tatuajes-temporales-personalizados-para-eventos"],

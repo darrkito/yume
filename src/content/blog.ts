@@ -325,38 +325,124 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "recetario-medico-impreso-vs-digital",
     title: "Recetario médico impreso vs digital: ¿cuál conviene para tu consultorio?",
-    metaTitle: "Recetario médico impreso vs. digital",
+    metaTitle: "Recetario médico impreso vs digital: cuál te conviene",
     description:
-      "Ventajas y limitaciones del recetario médico impreso frente a la receta digital, y por qué muchos consultorios en México siguen usando ambos en vez de elegir uno solo.",
+      "Recetario médico impreso vs receta digital en México: ventajas, límites, qué dicen la NOM-004 y la NOM-024, y cuándo conviene usar ambos en tu consultorio.",
     category: "Guías",
     publishedAt: "2026-08-31",
+    modifiedAt: "2026-10-26",
     intro:
-      "Cada vez hay más consultorios usando algún sistema de receta electrónica, pero el recetario impreso sigue siendo parte del día a día de la mayoría de los médicos en México. Antes de decidir si vale la pena seguir imprimiendo o migrar por completo a digital, conviene ver qué resuelve cada opción y dónde falla.",
+      "Cada vez hay más consultorios usando algún sistema de receta electrónica, pero el recetario impreso sigue siendo parte del día a día de la mayoría de los médicos en México. Antes de decidir si vale la pena seguir imprimiendo o migrar por completo a digital, conviene ver qué resuelve cada opción y dónde falla. Aquí comparamos las dos, revisamos lo que dicen las normas oficiales del expediente clínico y te explicamos cómo combinarlas sin complicarte.",
     sections: [
       {
-        heading: "Qué resuelve cada opción",
+        heading: "¿Qué resuelve cada opción, la receta impresa o la digital?",
         body: [
-          "La receta digital (desde una app, un sistema del consultorio o una plataforma de expediente electrónico) tiene ventajas claras: se puede reenviar por correo o WhatsApp al paciente, queda respaldada automáticamente y es más fácil de buscar en un historial. El recetario impreso, en cambio, no depende de que haya internet, batería o que el sistema esté funcionando en ese momento: el paciente sale de la consulta con el papel en la mano, sin depender de nada más.",
+          "La receta digital se reenvía por correo o WhatsApp, queda respaldada y es fácil de buscar en el historial. La impresa no depende de internet, batería ni sistema: el paciente sale de la consulta con el papel en la mano. Cada una resuelve un problema distinto, por eso comparar solo por modernidad no ayuda.",
+          "La receta digital (desde una app, un sistema del consultorio o una plataforma de expediente electrónico) tiene ventajas claras para el seguimiento: se puede reenviar al paciente, queda respaldada automáticamente y es más fácil de buscar en un historial. El recetario impreso, en cambio, no depende de que haya internet, batería o que el sistema esté funcionando en ese momento.",
           "Para muchos pacientes, sobre todo de mayor edad o que van a llevar la receta directo a una farmacia física, el papel impreso sigue siendo lo que esperan recibir al final de la consulta.",
         ],
+        table: {
+          headers: ["Aspecto", "Recetario impreso", "Receta digital"],
+          rows: [
+            ["Internet, batería o sistema", "No depende de ninguno", "Los necesita para generarse y enviarse"],
+            ["Cómo la recibe el paciente", "Papel en la mano al salir de la consulta", "Archivo por correo o WhatsApp"],
+            ["Respaldo e historial", "Se archiva aparte si quieres conservar copia", "Queda respaldada y se busca en el sistema"],
+            ["Curva de aprendizaje", "Ninguna: se llena a mano", "Hay que aprender la plataforma"],
+            ["Imagen del consultorio", "Membrete propio preimpreso", "Depende de lo que permita tu sistema"],
+          ],
+        },
       },
       {
-        heading: "Cuándo conviene seguir imprimiendo",
+        heading: "¿Qué dicen las normas oficiales sobre el papel y lo digital?",
         body: [
-          "Si tu consultorio no tiene (o no quiere depender de) un sistema digital instalado, el recetario impreso sigue siendo la opción más simple y sin fricción: no hay que aprender una plataforma nueva, no hay riesgo de que un corte de internet detenga la consulta, y el paciente se va con algo físico sin pasos extra.",
-          "También es común usarlo como respaldo aunque tu consultorio ya tenga un sistema digital: para el día que el sistema falla, no hay señal, o simplemente prefieres no depender de una pantalla frente al paciente.",
+          "La NOM-004-SSA3-2012 permite usar medios electrónicos de forma opcional y acepta firma autógrafa, electrónica o digital en las notas del expediente. La NOM-024-SSA3-2012 aplica a los establecimientos que adoptan sistemas de registro electrónico y pide que los registros sean inalterables. Son normas del expediente clínico, no una guía de formato de receta.",
+          "En la NOM-004, el uso de medios electrónicos, magnéticos u ópticos es \"optativo\", y las firmas electrónica y digital se sujetan a las disposiciones jurídicas aplicables. La misma norma pide que las notas sean legibles, sin abreviaturas, enmendaduras ni tachaduras: un punto a favor de tener tus datos fijos preimpresos en lugar de escribirlos a mano cada vez.",
+          "La NOM-024 define la firma electrónica avanzada como la que produce los mismos efectos jurídicos que la firma autógrafa, y pide que los sistemas permitan al profesional de la salud usarla. Lo que tu consultorio debe cumplir en concreto depende de tu institución, tu colegio y tu estado, así que confírmalo con ellos antes de cambiar tu forma de recetar.",
         ],
       },
       {
-        heading: "No es una decisión de todo o nada",
+        heading: "¿Cuándo conviene seguir imprimiendo tu recetario?",
         body: [
-          "La mayoría de los consultorios que vemos en Guadalajara y el resto de México no eligen uno solo: usan digital para el expediente y el seguimiento, e impreso para lo que el paciente se lleva ese mismo día. Tener un recetario impreso con tu membrete, tu cédula y los datos de tu consultorio no compite con tu sistema digital, lo complementa.",
-          "Si decides pedir uno personalizado, el proceso es el mismo sin importar si es tu único recetario o un respaldo: cotizas, mandas tus datos, apruebas una prueba digital del membrete y se manda a producción.",
+          "Conviene seguir imprimiendo si no quieres depender de un sistema, si tus pacientes llevan la receta directo a una farmacia física o si necesitas un respaldo para cuando falle la señal. El papel es la opción con menos fricción: no hay plataforma que aprender ni pasos extra para el paciente.",
+          "Si tu consultorio no tiene (o no quiere depender de) un sistema digital instalado, el recetario impreso sigue siendo la opción más simple: no hay que aprender una plataforma nueva, no hay riesgo de que un corte de internet detenga la consulta, y el paciente se va con algo físico.",
+          "También es común usarlo como respaldo aunque tu consultorio ya tenga un sistema digital: para el día que el sistema falla, no hay señal, o simplemente prefieres no depender de una pantalla frente al paciente.",
+          "Y hay un beneficio práctico: con el membrete preimpreso, tu nombre, tu cédula profesional y los datos del consultorio salen siempre completos y legibles, y a mano solo escribes lo que cambia con cada paciente.",
+        ],
+      },
+      {
+        heading: "¿Cuándo conviene pasar a receta digital?",
+        body: [
+          "Conviene digital cuando necesitas historial consultable, reenviar indicaciones al paciente por correo o WhatsApp, o coordinar a varios médicos en un mismo sistema. Es la mejor opción para seguimiento y expediente. Aun así, requiere internet, energía y que el sistema cumpla lo que pida tu institución.",
+          "Antes de migrar, vale la pena hacerte cuatro preguntas: ¿mis pacientes pueden recibir y mostrar la receta en su teléfono?, ¿qué hago si el sistema o el internet fallan en plena consulta?, ¿la farmacia a la que van mis pacientes acepta el formato digital?, ¿mi institución o colegio pide algo específico?",
+          "Si alguna respuesta te genera dudas, no tienes que decidir de golpe: puedes empezar a usar el sistema digital para el expediente y seguir entregando la receta impresa mientras te acostumbras.",
+        ],
+      },
+      {
+        heading: "¿Tiene que ser todo digital o todo impreso?",
+        body: [
+          "No. Muchos consultorios usan digital para el expediente y el seguimiento, e impreso para lo que el paciente se lleva el mismo día. Un recetario con tu membrete, tu cédula y los datos del consultorio no compite con tu sistema: lo complementa y te cubre cuando falla.",
+          "La mayoría de los consultorios que vemos en Guadalajara y el resto de México no eligen uno solo: usan digital para el expediente y el seguimiento, e impreso para la receta que sale de la consulta. Si quieres ver qué datos conviene preimprimir, revisa la guía de formato de receta médica; si dudas entre pedir el membrete ya hecho o que lo diseñemos contigo, compara las opciones con y sin diseño.",
+        ],
+      },
+      {
+        heading: "¿Cuánto cuesta y cómo se pide un recetario impreso en Yume?",
+        body: [
+          `El recetario de 100 hojas, Media Carta (14 × 21.5 cm) en papel Bond 90 gr blanco, cuesta $${recetarioPrice("sin-diseno")} MXN si ya tienes tu diseño y $${recetarioPrice("con-diseno")} MXN si lo diseñamos contigo. Cotizas, mandas tus datos, apruebas una prueba digital del membrete y hasta entonces pasa a producción.`,
+          `La prueba digital llega normalmente en un máximo de 24 horas después del pago. Desde que la apruebas, recoger en una sucursal Casa Blanca de Guadalajara toma ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles y el envío a domicilio a cualquier parte de México ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles.`,
+          "El proceso es el mismo si el recetario es tu única opción o un respaldo de tu sistema digital, y no se imprime nada hasta que apruebas el membrete.",
         ],
       },
     ],
     relatedProductSlugs: ["recetario-medico-personalizado"],
-    relatedBlogSlugs: ["recetarios-medicos-personalizados-guadalajara", "recetario-medico-con-diseno-vs-sin-diseno", "datos-obligatorios-receta-medica-mexico"],
+    relatedBlogSlugs: ["recetarios-medicos-personalizados-guadalajara", "recetario-medico-con-diseno-vs-sin-diseno", "datos-obligatorios-receta-medica-mexico", "yume-vs-imprentas-recetarios-medicos"],
+    faq: [
+      {
+        q: "¿La receta digital sustituye por completo al recetario impreso?",
+        a: "No necesariamente. La NOM-004-SSA3-2012 establece que el uso de medios electrónicos en el expediente es optativo. Lo que debes cumplir depende de tu institución, tu colegio y tu estado, por eso conviene confirmarlo con ellos.",
+      },
+      {
+        q: "¿Una firma electrónica tiene el mismo valor que la firma a mano?",
+        a: "La NOM-024-SSA3-2012 define la firma electrónica avanzada como la que produce los mismos efectos jurídicos que la firma autógrafa. La NOM-004 indica que las firmas electrónica y digital se sujetan a las disposiciones jurídicas aplicables.",
+      },
+      {
+        q: "¿Qué datos lleva el membrete de un recetario?",
+        a: "Normalmente tu nombre completo, especialidad, cédula profesional (y de especialidad si aplica), dirección, teléfono y, si quieres, horario de consulta. Son los datos fijos que se preimprimen.",
+      },
+      {
+        q: "¿Cuánto cuesta el recetario médico impreso?",
+        a: `El recetario de 100 hojas cuesta $${recetarioPrice("sin-diseno")} MXN si ya tienes tu diseño y $${recetarioPrice("con-diseno")} MXN si lo diseñamos contigo.`,
+      },
+      {
+        q: "¿Qué tamaño y papel tiene el recetario?",
+        a: "Media Carta (14 × 21.5 cm), en papel Bond 90 gr blanco, con 100 hojas por recetario.",
+      },
+      {
+        q: "¿Cuánto tarda mi pedido?",
+        a: `La prueba digital llega normalmente en un máximo de 24 horas después del pago. Desde que la apruebas, recoger en Casa Blanca toma ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles y el envío a domicilio ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles.`,
+      },
+      {
+        q: "¿Cuánto cuesta el envío?",
+        a: `$${NATIONAL_SHIPPING_PRICE} MXN a cualquier parte de México, o $${CASABLANCA_PRICE} MXN si recoges en una sucursal Casa Blanca de la zona metropolitana de Guadalajara. Las dos opciones son gratis en compras de $${FREE_SHIPPING_THRESHOLD} MXN o más.`,
+      },
+      {
+        q: "¿Se imprime algo antes de que yo apruebe el diseño?",
+        a: "No. Todo pedido pasa primero por una prueba digital y no se manda a producción hasta que la apruebas.",
+      },
+      {
+        q: "¿Emiten factura?",
+        a: "No emitimos factura (CFDI). Tu comprobante es el correo de confirmación del pedido. Si tu consultorio necesita factura, escríbenos por WhatsApp antes de pagar.",
+      },
+    ],
+    sources: [
+      {
+        label: "NOM-004-SSA3-2012, Del expediente clínico, Diario Oficial de la Federación",
+        url: "https://dof.gob.mx/nota_detalle_popup.php?codigo=5272787",
+      },
+      {
+        label: "NOM-024-SSA3-2012, Sistemas de información de registro electrónico para la salud, Diario Oficial de la Federación",
+        url: "https://dof.gob.mx/nota_detalle_popup.php?codigo=5280847",
+      },
+    ],
   },
   {
     slug: "tatuajes-temporales-personalizados-para-eventos",
