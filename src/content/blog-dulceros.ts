@@ -195,36 +195,87 @@ export const dulceroPosts: BlogPost[] = [
     title: "Dulceros para graduación de kínder, primaria y secundaria",
     metaTitle: "Dulceros para graduación de kínder y primaria",
     description:
-      "Ideas de dulceros personalizados para graduación de kínder, primaria y secundaria: diseño con el nombre de la generación, cuántos pedir y cuándo hacer el pedido para el fin de cursos.",
+      "Dulceros personalizados para graduación de kínder, primaria y secundaria: diseño con la generación, precio, cuántos pedir y cuándo hacer el pedido.",
     category: "Guías",
     publishedAt: PUBLISHED,
+    modifiedAt: "2026-10-26",
     intro:
-      "Los dulceros de graduación son de las búsquedas que más crecen en México. Cierran el ciclo escolar con un detalle para cada graduado o para los invitados de la ceremonia, y se quedan como recuerdo de la generación. Esta guía cubre ideas de diseño para cada nivel y cómo organizar el pedido con tiempo.",
+      "Los dulceros de graduación son de las búsquedas que más crecen en México. Cierran el ciclo escolar con un detalle para cada graduado o para los invitados de la ceremonia, y se quedan como recuerdo de la generación. Esta guía cubre qué dulcero conviene, ideas de diseño para cada nivel, qué poner dentro, cuánto cuesta y cómo organizar el pedido con tiempo, sobre todo si lo coordinas desde el comité de graduación.",
     sections: [
+      {
+        heading: "Qué dulcero conviene para una graduación",
+        body: [
+          "Para una graduación conviene un dulcero con el nombre del graduado o de la generación, los colores de la escuela y la fecha. El nuestro es tipo lunch box, con asa, de cartulina opalina y mide 15.7 × 11.7 × 9.9 cm. Llega armado y vacío, así que tú eliges qué lleva dentro.",
+          "La personalización incluye nombre y temática, así que el mismo dulcero sirve para un kínder, una primaria o una secundaria: lo que cambia es el diseño. Antes de producir te mandamos una prueba digital, y nada se produce hasta que la apruebas.",
+        ],
+      },
       {
         heading: "Ideas de diseño por nivel",
         body: [
+          "Para kínder funciona un diseño alegre con birrete y el nombre del niño; para primaria y secundaria, los colores de la escuela con el nombre de la generación. Si cada dulcero lleva el nombre de un graduado es un recuerdo personal; si es para invitados, basta la generación y la fecha.",
           "Para kínder, un diseño alegre con birrete, el nombre del niño y la frase Me gradué funciona muy bien. Para primaria y secundaria, los colores de la escuela con el nombre de la generación (por ejemplo, Generación 2021-2027) y el escudo o mascota del colegio se sienten más formales.",
-          "Si cada dulcero lleva el nombre de un graduado, se vuelve un recuerdo personal; si es para los invitados de la ceremonia, basta con la generación y la fecha.",
+          "Si tienes el escudo, el logo o una foto del uniforme, mándanoslo junto con la invitación a la ceremonia y adaptamos el diseño a esos colores. Revisa con calma la ortografía de cada nombre y el año de la generación en la prueba digital, porque es el último paso antes de producir.",
+        ],
+      },
+      {
+        heading: "Qué poner dentro de un dulcero de graduación",
+        body: [
+          "El dulcero llega vacío, así que tú decides el relleno. Para una graduación funcionan chocolates, gomitas, galletas y dulces tradicionales mexicanos, más un detalle que no sea dulce, como stickers con el nombre de la generación. Entre 8 y 12 piezas de dulce se ve completo en esta caja.",
+          "En kínder, evita dulces duros, cacahuates enteros y juguetes con piezas pequeñas que se puedan tragar; mejor gomitas suaves, galletas o chocolates pequeños. En primaria y secundaria puedes sumar paletas, dulces enchilados, mazapanes y botanas.",
+          "Pregunta a la escuela o a los papás por alergias antes de comprar (cacahuate y chocolate son las más comunes) y arma un dulcero de prueba para calcular cuánto necesitas. Para una lista completa por tipo de dulce y edad, revisa la guía de qué poner en un dulcero. Si quieres un detalle extra, también hacemos stickers en vinil resistente al agua con el nombre o el escudo de la generación.",
         ],
       },
       {
         heading: "Cuántos pedir y cuánto cuesta",
         body: [
-          "Cada dulcero cuesta $75 con mínimo de 10 piezas: un grupo de kínder de 20 alumnos son $1,500 y una generación de 40 son $3,000. Desde $750 de compra el envío nacional es gratis.",
-          "Si el comité de graduación lo organiza, confirma la lista final de alumnos antes de aprobar la prueba digital: es el mejor momento para corregir nombres.",
+          `Primeras 100 piezas: $${dulceroUnit} MXN por dulcero, con pedido mínimo de 10 piezas, así que pides exactamente el número de graduados o invitados. 20 dulceros son $${dulceroTotal(20)} y 40 son $${dulceroTotal(40)}. Arriba de 100 piezas es precio mayoreo: escríbenos por WhatsApp y te cotizamos.`,
+          `Desde $${FREE_SHIPPING_THRESHOLD} de compra el envío nacional es gratis. Si estás en la zona metropolitana de Guadalajara, puedes recogerlos por $${CASABLANCA_PRICE} en cualquiera de las ${CASABLANCA_BRANCHES.length} sucursales de paquetería Casa Blanca.`,
+          "Si el comité de graduación lo organiza, confirma la lista final de alumnos antes de aprobar la prueba digital: es el mejor momento para corregir nombres. Suma 1 o 2 dulceros extra por si se agrega un invitado o un alumno de último momento.",
         ],
       },
       {
         heading: "Cuándo pedirlos para el fin de cursos",
         body: [
-          "Las graduaciones se concentran en junio y julio, y en esas semanas se juntan muchos pedidos. La producción toma de 3 a 5 días hábiles después de aprobar el diseño, más el envío, así que lo más seguro es pedirlos con tres o cuatro semanas de anticipación.",
-          "Te llegan armados, así que el día del evento solo tienes que llenarlos y acomodarlos.",
+          `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba digital, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional, o ${PICKUP_EXTRA_DAYS} día hábil si recoges en una sucursal Casa Blanca de Guadalajara. Como las graduaciones se concentran en junio y julio, pídelos con tres o cuatro semanas de anticipación.`,
+          "Las graduaciones se concentran en junio y julio, y en esas semanas se juntan muchos pedidos. Si la aprobación del diseño pasa por varias personas del comité o de la escuela, empieza todavía antes. Te llegan armados, así que el día del evento solo tienes que llenarlos y acomodarlos.",
+        ],
+      },
+      {
+        heading: "Cómo hacer el pedido paso a paso",
+        body: [
+          "Eliges la cantidad en la tienda en línea o cotizas por WhatsApp, nos das el nombre y la temática, revisas la prueba digital y, cuando la apruebas, empieza la producción. Nada se produce antes de tu aprobación. Puedes pagar con tarjeta, OXXO o SPEI.",
+          "Si quieres platicar el diseño antes de pagar, escríbenos por WhatsApp con la fecha de la ceremonia, el nivel y el número aproximado de graduados. Ten en cuenta que no emitimos factura (CFDI); si la escuela o el comité la necesita, escríbenos antes de pedir.",
         ],
       },
     ],
-    relatedProductSlugs: [DULCERO],
-    relatedBlogSlugs: ["dulceros-para-dia-del-nino", "que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara"],
+    faq: [
+      {
+        q: "¿Los dulceros de graduación incluyen dulces?",
+        a: "No. El dulcero llega armado y vacío, listo para llenar con los dulces o detalles que tú elijas.",
+      },
+      {
+        q: "¿Cuánto cuesta un dulcero para graduación?",
+        a: `Primeras 100 piezas: $${dulceroUnit} MXN por pieza, con pedido mínimo de 10. Arriba de 100 piezas es precio mayoreo y se cotiza por WhatsApp. Desde $${FREE_SHIPPING_THRESHOLD} el envío nacional es gratis.`,
+      },
+      {
+        q: "¿Qué medidas tiene el dulcero?",
+        a: "Mide 15.7 × 11.7 × 9.9 cm (6.2 × 4.6 × 3.9 pulgadas), con asa, y está hecho de cartulina opalina.",
+      },
+      {
+        q: "¿Puedo poner el nombre de la generación y de cada graduado?",
+        a: "Sí. La personalización incluye nombre y temática: puede ser la generación y la fecha para todos, o el nombre de cada graduado. Si quieres un nombre distinto por dulcero, coméntalo al cotizar.",
+      },
+      {
+        q: "¿Con cuánta anticipación pido los dulceros?",
+        a: `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional. Para el fin de cursos conviene pedirlos con tres o cuatro semanas de anticipación.`,
+      },
+      {
+        q: "¿Emiten factura?",
+        a: "No emitimos factura (CFDI). Si tu escuela o comité la necesita, escríbenos antes de pedir.",
+      },
+    ],
+    relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["dulceros-para-dia-del-nino", "que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "ideas-de-dulceros-para-fiesta-infantil", "cajas-bolsas-o-vasos-dulceros-cual-elegir"],
   },
   {
     slug: "dulceros-para-bautizo-y-primera-comunion",

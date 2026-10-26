@@ -191,33 +191,84 @@ export const dulceroPostsEn: BlogPost[] = [
       "Personalized graduation favor box ideas for kindergarten, elementary and middle school: designs with the class year, how many to order and when to order for the end of the school year.",
     category: "Guides",
     publishedAt: PUBLISHED,
+    modifiedAt: "2026-10-26",
     intro:
-      "Graduation favor boxes are one of the fastest-growing searches in this category. They close out the school year with a gift for each graduate or for the ceremony guests, and they stay as a keepsake of the class. This guide covers design ideas for each level and how to organize the order in time.",
+      "Graduation favor boxes are one of the fastest-growing searches in this category. They close out the school year with a gift for each graduate or for the ceremony guests, and they stay as a keepsake of the class. This guide covers which box to choose, design ideas for each level, what to put inside, what it costs and how to organize the order in time, especially if you are coordinating from the graduation committee.",
     sections: [
+      {
+        heading: "Which favor box suits a graduation",
+        body: [
+          "For a graduation, pick a box with the graduate's or the class's name, the school colors and the date. Ours is lunch-box style, with a handle, made of opaline cardstock and measures 15.7 × 11.7 × 9.9 cm. It arrives assembled and empty, so you choose what goes inside.",
+          "Customization includes a name and a theme, so the same box works for kindergarten, elementary or middle school: only the design changes. We send a digital proof before production, and nothing is produced until you approve it.",
+        ],
+      },
       {
         heading: "Design ideas by level",
         body: [
+          "For kindergarten, a cheerful design with a graduation cap and the child's name works; for elementary and middle school, the school colors with the class year. A box with a graduate's name is a personal keepsake; for ceremony guests, the class year and date are enough.",
           "For kindergarten, a cheerful design with a graduation cap, the child's name and I graduated! works great. For elementary and middle school, the school colors with the class year (for example, Class of 2021-2027) and the school crest or mascot feel more formal.",
-          "If each box carries a graduate's name, it becomes a personal keepsake; if it's for ceremony guests, the class year and date are enough.",
+          "If you have the crest, the logo or a photo of the uniform, send it along with the ceremony invitation and we'll match the design to those colors. Check the spelling of every name and the class year on the digital proof carefully, since it's the last step before production.",
+        ],
+      },
+      {
+        heading: "What to put inside a graduation favor box",
+        body: [
+          "The box arrives empty, so you decide the filling. For a graduation, chocolates, gummies, cookies and traditional Mexican candy work well, plus a non-candy extra such as stickers with the class name. Between 8 and 12 pieces of candy looks full in this box.",
+          "For kindergarten, avoid hard candy, whole peanuts and toys with small parts that could be swallowed; go for soft gummies, cookies or small chocolates. For elementary and middle school you can add lollipops, spicy candy, mazapanes and snacks.",
+          "Ask the school or the parents about allergies before buying (peanuts and chocolate are the most common) and put together a test box to work out how much you need. For a full list by type of candy and age, see our guide on what to put in a party favor box. If you want an extra touch, we also make water-resistant vinyl stickers with the name or crest of the class.",
         ],
       },
       {
         heading: "How many to order and what it costs",
         body: [
-          "Each box is $75 MXN with a minimum of 10: a kindergarten class of 20 is $1,500 and a graduating class of 40 is $3,000. Orders from $750 MXN ship free across Mexico.",
-          "If a graduation committee is organizing, confirm the final list of students before approving the digital proof: that's the best moment to fix names.",
+          `First 100 pieces: $${dulceroUnit} MXN per box, with a minimum order of 10, so you order exactly the number of graduates or guests. 20 boxes are $${dulceroTotal(20)} and 40 are $${dulceroTotal(40)}. Above 100 pieces it's wholesale pricing: message us on WhatsApp for a quote.`,
+          `Orders from $${FREE_SHIPPING_THRESHOLD} MXN ship free across Mexico. In the Guadalajara metro area you can pick them up for $${CASABLANCA_PRICE} at any of the ${CASABLANCA_BRANCHES.length} Casa Blanca parcel branches.`,
+          "If a graduation committee is organizing, confirm the final list of students before approving the digital proof: that's the best moment to fix names. Add 1 or 2 extra boxes in case a guest or a student is added at the last minute.",
         ],
       },
       {
         heading: "When to order for the end of the school year",
         body: [
-          "Graduations in Mexico cluster in June and July, and lots of orders come in during those weeks. Production takes 3 to 5 business days after you approve the design, plus shipping, so the safest bet is to order three or four weeks ahead.",
-          "They arrive assembled, so on the day of the event you only need to fill and arrange them.",
+          `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after you approve the digital proof, plus ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} days of national shipping, or ${PICKUP_EXTRA_DAYS} business day if you pick up at a Casa Blanca branch in Guadalajara. Since graduations cluster in June and July, order three or four weeks ahead.`,
+          "Graduations in Mexico cluster in June and July, and lots of orders come in during those weeks. If design approval goes through several people on the committee or at the school, start even earlier. They arrive assembled, so on the day of the event you only need to fill and arrange them.",
+        ],
+      },
+      {
+        heading: "How to place the order step by step",
+        body: [
+          "You choose the quantity in the online store or ask for a quote on WhatsApp, send us the name and theme, review the digital proof and, once you approve it, production starts. Nothing is produced before your approval. You can pay by card, OXXO or SPEI.",
+          "If you'd like to talk through the design before paying, message us on WhatsApp with the ceremony date, the school level and the approximate number of graduates. Note that we do not issue invoices (CFDI); if the school or committee needs one, message us before ordering.",
         ],
       },
     ],
-    relatedProductSlugs: [DULCERO],
-    relatedBlogSlugs: [en("dulceros-para-dia-del-nino"), en("que-poner-en-un-dulcero"), en("dulceros-personalizados-guadalajara")],
+    faq: [
+      {
+        q: "Do the graduation favor boxes include candy?",
+        a: "No. The box arrives assembled and empty, ready to fill with the candy or extras you choose.",
+      },
+      {
+        q: "How much does a graduation favor box cost?",
+        a: `First 100 pieces: $${dulceroUnit} MXN per piece, with a minimum order of 10. Above 100 pieces it's wholesale pricing, quoted on WhatsApp. Orders from $${FREE_SHIPPING_THRESHOLD} ship free across Mexico.`,
+      },
+      {
+        q: "What size is the box?",
+        a: "It measures 15.7 × 11.7 × 9.9 cm (6.2 × 4.6 × 3.9 inches), has a handle and is made of opaline cardstock.",
+      },
+      {
+        q: "Can I put the class name and each graduate's name?",
+        a: "Yes. Customization includes a name and a theme: it can be the class year and date for everyone, or each graduate's name. If you want a different name on each box, mention it when you ask for a quote.",
+      },
+      {
+        q: "How far ahead should I order?",
+        a: `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after you approve the proof, plus ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} days of national shipping. For the end of the school year, order three or four weeks ahead.`,
+      },
+      {
+        q: "Do you issue invoices?",
+        a: "We do not issue invoices (CFDI). If your school or committee needs one, message us before ordering.",
+      },
+    ],
+    relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
+    relatedBlogSlugs: [en("dulceros-para-dia-del-nino"), en("que-poner-en-un-dulcero"), en("dulceros-personalizados-guadalajara"), en("ideas-de-dulceros-para-fiesta-infantil"), en("cajas-bolsas-o-vasos-dulceros-cual-elegir")],
   },
   {
     slug: en("dulceros-para-bautizo-y-primera-comunion"),
