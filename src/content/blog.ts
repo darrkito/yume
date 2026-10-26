@@ -648,36 +648,90 @@ export const blogPosts: BlogPost[] = [
     title: "Menú de boda personalizado: cómo pedir el tuyo",
     metaTitle: "Menú de boda personalizado",
     description:
-      "Qué información necesitas tener lista para cotizar el menú de tu boda con diseño personalizado, y cómo funciona el proceso de diseño y aprobación antes de imprimir.",
+      "Menú de boda personalizado: qué datos tener listos, uno por invitado o por mesa, cómo revisar el texto y cómo funciona la prueba digital antes de imprimir.",
     category: "Guías",
     publishedAt: "2026-09-09",
+    modifiedAt: "2026-10-26",
     intro:
-      "El menú es una de esas piezas de la boda que los invitados tienen en la mano toda la cena: vale la pena que combine con el resto de la papelería del evento, en vez de ser genérico. Así funciona el proceso para pedir el tuyo personalizado en Yume.",
+      "El menú es una de esas piezas de la boda que los invitados tienen en la mano toda la cena: vale la pena que combine con el resto de la papelería del evento, en vez de ser genérico. Esta guía te explica qué decidir antes de cotizar, qué texto poner, cómo revisarlo sin errores y cómo funciona el proceso para pedir el tuyo personalizado en Yume.",
     sections: [
       {
         heading: "Qué información necesitamos",
         body: [
-          "Para cotizar, necesitamos: la cantidad de menús (normalmente uno por invitado o por mesa, según cómo lo quieras montar), el texto exacto que va en cada uno (los platillos, en el orden que se sirven), y si tienes una idea de estilo o referencia visual: sobre todo si quieres que combine con las invitaciones u otra papelería que ya estés pidiendo para el mismo evento.",
-          "También ayuda saber la fecha de la boda y si el menú va a ir solo (una tarjeta por lugar) o junto con otros elementos como el nombre del invitado o la mesa asignada.",
+          "Para cotizar un menú de boda necesitamos cuatro cosas: la cantidad de menús, el texto exacto de cada uno, la fecha del evento y una idea de estilo. Con eso preparamos la cotización y la propuesta de diseño. Si todavía no tienes todo definido, escríbenos igual y lo vamos completando contigo.",
+          "La cantidad suele ser un menú por invitado o por mesa, según cómo lo quieras montar. El texto son los platillos, en el orden en que se sirven. Y la referencia visual importa sobre todo si quieres que combine con las invitaciones u otra papelería que ya estés pidiendo para el mismo evento.",
+          "También ayuda saber si el menú va a ir solo (una tarjeta por lugar) o junto con otros elementos como el nombre del invitado o la mesa asignada. Esa decisión cambia el diseño desde el inicio, así que conviene tenerla clara antes de la prueba digital.",
+        ],
+      },
+      {
+        heading: "Un menú por invitado o uno por mesa",
+        body: [
+          "Un menú por invitado se coloca en cada lugar y cada persona lo tiene a la mano; uno por mesa se comparte entre quienes se sientan juntos. La diferencia principal es la cantidad que pides y cuánto texto cabe cómodo. Elige según el tamaño de tu banquete y el estilo de la boda.",
+          "Por invitado se ve más personal y permite incluir el nombre de cada persona en el mismo diseño. Por mesa pides menos piezas y funciona bien si el menú es corto o si prefieres un solo elemento decorativo al centro. Si dudas, cuéntanos el número de invitados y de mesas y te orientamos.",
+          "Piensa también en las restricciones de tus invitados. Si en el banquete habrá opciones vegetarianas, sin gluten o para niños, decide si van en el mismo menú o en una línea aparte, para que el diseño no se sature y cada invitado encuentre rápido lo suyo.",
+        ],
+      },
+      {
+        heading: "Qué texto poner y cómo revisarlo",
+        body: [
+          "El texto de un menú de boda lleva el título (por ejemplo los nombres de los novios o la fecha), los tiempos de la comida en orden y los platillos de cada uno. Antes de enviarlo, confirma cada nombre con tu banquetero: el texto que mandes es el que se imprime tal cual.",
+          "Una estructura que funciona: entrada, sopa o crema, plato fuerte, postre y, si aplica, la bebida o el brindis. No hace falta describir cada ingrediente. Entre más corto y claro, más fácil de leer a media luz en la mesa y más espacio queda para que el diseño respire.",
+          "Para revisar sin errores, pide a una segunda persona que lea el texto completo, sobre todo nombres propios, acentos y cantidades. Revisa también que el orden coincida con el que realmente se va a servir. En la prueba digital tienes oportunidad de pedir correcciones antes de que se imprima algo.",
         ],
       },
       {
         heading: "El proceso de diseño y aprobación",
         body: [
-          "Con tus datos armamos una propuesta de diseño y te la mandamos como prueba digital. Puedes pedir ajustes antes de aprobarla: es más fácil corregir el orden de los platillos o un color en esta etapa que después de que los menús ya están impresos.",
+          "El proceso tiene tres pasos: nos mandas tus datos, te enviamos una propuesta de diseño como prueba digital, y cuando la apruebas pasa a producción. Puedes pedir ajustes antes de aprobar. Este paso existe para que ninguna errata llegue a papel.",
+          "Es más fácil corregir el orden de los platillos o un color en esta etapa que después de que los menús ya están impresos.",
           "Una vez que apruebas el diseño final, se manda a producción. Si además estás pidiendo invitaciones u otra papelería para la misma boda, se puede coordinar todo bajo la misma línea de diseño para que se vea como un solo set, no piezas sueltas.",
+        ],
+      },
+      {
+        heading: "Cómo combinarlo con el resto de tu papelería",
+        body: [
+          "Para que el menú se vea como parte del mismo evento, usa la misma línea de diseño que tus invitaciones: mismos colores, misma tipografía y mismos detalles. Así la mesa, el sobre y la bolsita de regalo se leen como un solo conjunto y no como piezas compradas por separado.",
+          "Si ya estás pidiendo invitaciones, mira la guía para cotizarlas en el post de invitaciones personalizadas para eventos. Para sellar bolsitas o cerrar sobres con el mismo diseño, revisa los stickers para bodas, y para el detalle que se lleva cada invitado, los dulceros para bodas. Abajo, en Sigue leyendo, tienes los enlaces.",
+          "También puedes alinear los detalles del evento con tatuajes temporales para la pista de baile. Cuando tengas el diseño del menú, pídenos que lo adaptemos al resto de piezas: reutilizar la misma línea evita rehacer decisiones de estilo desde cero.",
         ],
       },
       {
         heading: "Cuándo empezar a cotizar",
         body: [
+          "Conviene cotizar el menú en cuanto tengas el banquete cerrado, aunque falten ajustes menores. Así hay margen para revisar la prueba digital, corregir el texto y recibir el pedido sin prisas antes de la boda. Cotizar con tiempo es lo que más reduce el estrés.",
           "Como el menú normalmente se confirma cuando ya tienes el banquete cerrado, suele cotizarse un poco después que las invitaciones: pero igual conviene hacerlo con tiempo, para que haya margen de ajustar el diseño sin apurar la producción ni el envío.",
-          "Escríbenos con el tipo de evento, la fecha aproximada y la cantidad que estimas necesitar, y armamos la cotización desde ahí.",
+          "Escríbenos con el tipo de evento, la fecha aproximada y la cantidad que estimas necesitar, y armamos la cotización desde ahí. Producimos en Guadalajara y enviamos a cualquier parte de México, así que el proceso es el mismo sin importar dónde sea tu boda.",
         ],
       },
     ],
-    relatedProductSlugs: [],
-    relatedBlogSlugs: ["como-pedir-invitaciones-personalizadas-para-eventos", "stickers-para-bodas-eventos-y-fiestas", "papeleria-personalizada-vs-plantillas-genericas"],
+    faq: [
+      {
+        q: "¿Qué datos necesito para cotizar un menú de boda?",
+        a: "La cantidad de menús, el texto exacto (los platillos en el orden en que se sirven), la fecha de la boda y, si la tienes, una referencia de estilo. Si ya pides invitaciones u otra papelería, avísanos para alinear el diseño.",
+      },
+      {
+        q: "¿Puedo ver el diseño antes de que se imprima?",
+        a: "Sí. Te enviamos una propuesta como prueba digital y puedes pedir ajustes antes de aprobarla. Solo cuando apruebas el diseño final se manda a producción.",
+      },
+      {
+        q: "¿Hago un menú por invitado o por mesa?",
+        a: "Las dos opciones son comunes. Por invitado queda en cada lugar y permite incluir el nombre de cada persona; por mesa pides menos piezas. Dinos cuántos invitados y mesas tienes y te orientamos.",
+      },
+      {
+        q: "¿Puedo combinar el menú con mis invitaciones?",
+        a: "Sí. Si pides invitaciones u otra papelería para la misma boda, se puede coordinar todo bajo la misma línea de diseño para que se vea como un solo set.",
+      },
+      {
+        q: "¿Envían fuera de Guadalajara?",
+        a: "Sí. Producimos en Guadalajara y enviamos a cualquier parte de México. El proceso de diseño y aprobación es el mismo sin importar dónde sea tu boda.",
+      },
+      {
+        q: "¿Cuánto cuesta el menú de boda personalizado?",
+        a: "Se cotiza caso por caso según la cantidad y el diseño. Escríbenos por WhatsApp con tu fecha y número de menús y te preparamos la cotización.",
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable", "dulceros-personalizados"],
+    relatedBlogSlugs: ["como-pedir-invitaciones-personalizadas-para-eventos", "stickers-para-bodas-eventos-y-fiestas", "papeleria-personalizada-vs-plantillas-genericas", "dulceros-para-eventos-sociales-boda-xv-baby-shower", "tatuajes-temporales-para-boda-eventos-y-fiestas"],
     quoteMessage: "Hola, me interesa cotizar menús de boda personalizados.",
   },
   {

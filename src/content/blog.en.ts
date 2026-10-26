@@ -586,35 +586,96 @@ export const blogPostsEn: BlogPost[] = [
     title: "Custom Wedding Menus: How to Order Yours",
     metaTitle: "Custom Wedding Menus",
     description:
-      "What information you need ready to quote your wedding's custom-designed menu, and how the design and approval process works before printing.",
+      "Custom wedding menu: what details to have ready, one per guest or per table, how to proofread the text, and how the digital proof works before printing.",
     category: "Guides",
     publishedAt: "2026-09-09",
+    modifiedAt: "2026-10-26",
     intro:
-      "The menu is one of those wedding pieces guests hold in their hand through the whole dinner: it's worth having it match the rest of the event's stationery instead of being generic. Here's how the process works to order yours custom at Yume.",
+      "The menu is one of those wedding pieces guests hold in their hand through the whole dinner: it's worth having it match the rest of the event's stationery instead of being generic. This guide covers what to decide before requesting a quote, what text to include, how to proofread it without errors, and how the process works to order yours custom at Yume.",
     sections: [
       {
         heading: "What information we need",
         body: [
-          "To quote, we need: the number of menus (usually one per guest or per table, depending on how you want to set it up), the exact text for each one (the dishes, in serving order), and whether you have a style or visual reference in mind: especially if you want it to match the invitations or other stationery you're already ordering for the same event.",
-          "It also helps to know the wedding date and whether the menu will stand alone (one card per place setting) or come together with other details, like the guest's name or assigned table.",
+          "To quote a wedding menu we need four things: the number of menus, the exact text for each one, the wedding date, and a style idea. With that we prepare the quote and the design proposal. If you haven't settled everything yet, message us anyway and we'll fill in the gaps together.",
+          "The quantity is usually one menu per guest or per table, depending on how you want to set it up. The text is the dishes, in serving order. And the visual reference matters most if you want it to match the invitations or other stationery you're already ordering for the same event.",
+          "It also helps to know whether the menu will stand alone (one card per place setting) or come together with other details, like the guest's name or assigned table. That choice shapes the design from the start, so settle it before the digital proof.",
+        ],
+      },
+      {
+        heading: "One menu per guest or one per table",
+        body: [
+          "A menu per guest sits at each place setting so everyone has it at hand; a menu per table is shared by the people seated together. The main difference is how many pieces you order and how much text fits comfortably. Choose based on your guest count and the style of the wedding.",
+          "Per guest feels more personal and lets you add each person's name in the same design. Per table means fewer pieces and works well if the menu is short or you prefer a single decorative item at the center. If you're unsure, tell us your guest and table counts and we'll help you decide.",
+          "Think about your guests' dietary needs too. If the catering includes vegetarian, gluten-free or kids' options, decide whether they go on the same menu or on a separate line, so the design doesn't get crowded and each guest finds theirs quickly.",
+        ],
+      },
+      {
+        heading: "What text to include and how to proofread it",
+        body: [
+          "A wedding menu's text has a title (for example the couple's names or the date), the courses in order, and the dishes for each. Before sending it, confirm every dish name with your caterer: the text you send is exactly what gets printed.",
+          "A structure that works: starter, soup or cream, main course, dessert and, if it applies, the drink or toast. You don't need to describe every ingredient. The shorter and clearer it is, the easier it reads in dim light at the table, and the more room the design has to breathe.",
+          "To proofread without errors, ask a second person to read the full text, especially proper names, accents and quantities. Also check that the order matches what will actually be served. The digital proof is your chance to request corrections before anything is printed.",
         ],
       },
       {
         heading: "The design and approval process",
         body: [
-          "With your details, we put together a design proposal and send it to you as a digital proof. You can request adjustments before approving it: it's much easier to fix the order of the dishes or a color at this stage than after the menus are already printed.",
+          "The process has three steps: you send us your details, we send a design proposal as a digital proof, and once you approve it, it goes to production. You can request adjustments before approving. This step exists so no typo ever reaches paper.",
+          "It's much easier to fix the order of the dishes or a color at the proof stage than after the menus are already printed.",
           "Once you approve the final design, it goes to production. If you're also ordering invitations or other stationery for the same wedding, everything can be coordinated under the same design line so it reads as one set, not separate pieces.",
+        ],
+      },
+      {
+        heading: "How to match it with the rest of your stationery",
+        body: [
+          "For the menu to feel part of the same event, use the same design line as your invitations: same colors, same typeface, same details. That way the table, the envelope and the gift bag read as one set instead of pieces bought separately.",
+          "If you're already ordering invitations, see the guide on quoting them in our custom event invitations post. To seal gift bags or close envelopes with the same design, check the stickers for weddings, and for the keepsake each guest takes home, the wedding favor boxes. The links are below, under Keep reading.",
+          "You can also tie in the event's details with temporary tattoos for the dance floor. Once the menu design is ready, ask us to adapt it to the other pieces: reusing the same line saves you from remaking style decisions from scratch.",
         ],
       },
       {
         heading: "When to start requesting a quote",
         body: [
+          "Request the menu quote as soon as your catering is locked in, even if minor tweaks remain. That leaves room to review the digital proof, fix the text and receive the order without rushing before the wedding. Quoting early is what reduces stress the most.",
           "Since the menu is usually confirmed once your catering is locked in, it tends to get quoted a bit later than invitations: but it's still worth doing with time to spare, so there's room to adjust the design without rushing production or shipping.",
-          "Reach out with the type of event, the approximate date, and the quantity you estimate you'll need, and we'll build the quote from there.",
+          "Reach out with the type of event, the approximate date, and the quantity you estimate you'll need, and we'll build the quote from there. We produce in Guadalajara and ship anywhere in Mexico, so the process is the same wherever your wedding is.",
         ],
       },
     ],
-    relatedProductSlugs: [],
+    faq: [
+      {
+        q: "What details do I need to quote a wedding menu?",
+        a: "The number of menus, the exact text (the dishes in serving order), the wedding date and, if you have one, a style reference. If you're also ordering invitations or other stationery, let us know so we can match the design.",
+      },
+      {
+        q: "Can I see the design before it's printed?",
+        a: "Yes. We send a design proposal as a digital proof and you can request adjustments before approving it. Only once you approve the final design does it go to production.",
+      },
+      {
+        q: "Should I order one menu per guest or per table?",
+        a: "Both are common. Per guest sits at each place setting and can include each person's name; per table means fewer pieces. Tell us your guest and table counts and we'll help you choose.",
+      },
+      {
+        q: "Can I match the menu with my invitations?",
+        a: "Yes. If you order invitations or other stationery for the same wedding, everything can be coordinated under the same design line so it reads as one set.",
+      },
+      {
+        q: "Do you ship outside Guadalajara?",
+        a: "Yes. We produce in Guadalajara and ship anywhere in Mexico. The design and approval process is the same wherever your wedding is.",
+      },
+      {
+        q: "How much does a custom wedding menu cost?",
+        a: "It's quoted case by case based on quantity and design. Message us on WhatsApp with your date and number of menus and we'll prepare your quote.",
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable", "dulceros-personalizados"],
+    relatedBlogSlugs: [
+      BLOG_SLUG_EN["como-pedir-invitaciones-personalizadas-para-eventos"],
+      BLOG_SLUG_EN["stickers-para-bodas-eventos-y-fiestas"],
+      BLOG_SLUG_EN["papeleria-personalizada-vs-plantillas-genericas"],
+      BLOG_SLUG_EN["dulceros-para-eventos-sociales-boda-xv-baby-shower"],
+      BLOG_SLUG_EN["tatuajes-temporales-para-boda-eventos-y-fiestas"],
+    ],
     quoteMessage: "Hi, I'm interested in getting a quote for custom wedding menus.",
   },
   {
