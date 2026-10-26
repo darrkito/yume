@@ -576,37 +576,103 @@ export const blogPosts: BlogPost[] = [
     slug: "datos-obligatorios-receta-medica-mexico",
     title: "Formato de receta médica en México: qué debe llevar",
     metaTitle: "Formato de receta médica en México: qué debe llevar",
-    description: "Formato de receta médica en México: los datos que debe llevar (membrete del médico, paciente y medicamento) y por qué conviene preimprimirlos en tu recetario.",
+    description: "Qué datos lleva una receta médica en México: membrete, datos del paciente e indicaciones, qué dice la NOM-004-SSA3-2012 y qué conviene preimprimir.",
     category: "Guías",
     publishedAt: "2026-09-09",
-    modifiedAt: "2026-10-17",
+    modifiedAt: "2026-10-26",
     intro:
-      "Si estás por pedir tu primer recetario personalizado, es normal preguntarte qué datos debe llevar exactamente. Esta es información general basada en lo que se acostumbra en consultorios de México y en la norma oficial NOM-004-SSA3-2012 del expediente clínico (que enlistamos al final): no sustituye lo que tu colegio de médicos, tu estado o la institución donde trabajas exija de forma específica, así que siempre vale la pena confirmarlo con ellos antes de mandar a imprimir.",
+      "Si estás por pedir tu primer recetario personalizado, es normal preguntarte qué datos debe llevar exactamente. Esta es información general basada en lo que se acostumbra en consultorios de México y en la norma oficial NOM-004-SSA3-2012 del expediente clínico (que enlistamos al final): no sustituye lo que tu colegio de médicos, tu estado o la institución donde trabajas exija de forma específica, así que siempre vale la pena confirmarlo con ellos antes de mandar a imprimir. Aquí separamos lo que va fijo en el membrete de lo que escribes con cada paciente, qué pide la norma sobre lo que escribes y cómo revisar tu diseño antes de producir.",
     sections: [
+      {
+        heading: "Qué dice la NOM-004-SSA3-2012 sobre lo que escribes",
+        body: [
+          "La NOM-004-SSA3-2012 regula el expediente clínico, no la receta como formato aparte. Pide que las notas médicas lleven fecha, hora, nombre completo y firma de quien las elabora, que los medicamentos indiquen dosis, vía de administración y periodicidad, y que se escriban con letra legible, sin enmendaduras ni tachaduras.",
+          "Esos puntos están en los apartados 5.10, 5.11 y 6.2.6 de la norma. El apartado 5.9 agrega que las notas llevan el nombre completo, la edad y el sexo del paciente. En las partes de la norma que revisamos no hay una sección dedicada a la receta, así que para el formato exacto confirma con tu colegio, tu estado o tu institución.",
+        ],
+      },
       {
         heading: "Datos de tu membrete",
         body: [
-          "En la parte de arriba de la receta normalmente va: tu nombre completo, especialidad, número de cédula profesional (y cédula de especialidad si aplica), y los datos de contacto de tu consultorio: dirección, teléfono y, si quieres, horario de consulta.",
+          "El membrete es la parte fija de la receta: tu nombre completo, especialidad, número de cédula profesional (y cédula de especialidad si aplica) y los datos de contacto del consultorio, como dirección, teléfono y, si quieres, horario de consulta. Son datos que no cambian de un paciente a otro.",
           "Estos son justo los datos que van preimpresos en el membrete cuando pides un recetario personalizado: así no tienes que escribirlos a mano en cada receta, solo lo que cambia con cada paciente.",
+          "Si trabajas en más de un consultorio, lo más limpio es un membrete por ubicación, cada uno con su dirección y teléfono, en lugar de juntar todo en un solo diseño.",
         ],
       },
       {
         heading: "Datos que se llenan por paciente",
         body: [
-          "En el cuerpo de la receta se agrega, ya con cada paciente: su nombre completo, la fecha de la consulta, el diagnóstico o motivo (si tu forma de trabajar lo incluye), el medicamento indicado con dosis y duración del tratamiento, y tu firma.",
-          "Algunos consultorios agregan también la edad o el peso del paciente cuando es relevante para la dosis, sobre todo en consultorios pediátricos.",
+          "Con cada paciente se escribe su nombre completo, la fecha de la consulta, el medicamento con dosis y duración del tratamiento y tu firma. El diagnóstico, la edad o el peso dependen de tu forma de trabajar y de la dosis. Son los datos que cambian en cada receta, por eso no se preimprimen.",
+          "Algunos consultorios agregan también la edad o el peso del paciente cuando es relevante para la dosis, sobre todo en consultorios pediátricos. Si quieres ahorrarte tiempo, puedes pedir que el diseño deje renglones o espacios marcados para esos datos.",
         ],
+        table: {
+          headers: ["Dato", "Va preimpreso en el membrete", "Lo escribes con cada paciente"],
+          rows: [
+            ["Nombre, especialidad y cédula", "Sí", "No"],
+            ["Dirección, teléfono y horario del consultorio", "Sí", "No"],
+            ["Nombre completo del paciente", "No", "Sí"],
+            ["Fecha de la consulta", "No", "Sí"],
+            ["Medicamento, dosis y duración", "No", "Sí"],
+            ["Firma", "No", "Sí"],
+          ],
+        },
       },
       {
         heading: "Por qué conviene preimprimir lo fijo",
         body: [
+          "Preimprimir el membrete evita errores y letra ilegible en los datos que se repiten en cada receta: tu cédula, tu especialidad y el teléfono del consultorio. Apruebas el diseño una sola vez y cada receta que llenas a mano ya sale con esos datos correctos y legibles.",
           "Cada vez que escribes a mano tu cédula profesional o el teléfono del consultorio hay una oportunidad de error o de que el dato salga ilegible: algo que puede causar problemas si el paciente lleva la receta a una farmacia que valida esos datos.",
-          "Tener el membrete preimpreso resuelve eso de una vez: apruebas el diseño una sola vez y, desde ahí, cada receta que llenas a mano ya trae tus datos fijos correctos y legibles.",
+          "Además, como la norma pide letra legible y sin tachaduras en las notas médicas, cada dato fijo que ya viene impreso es un dato menos que puede quedar con una enmienda.",
+        ],
+      },
+      {
+        heading: "Qué incluye el recetario de Yume y cuánto tarda",
+        body: [
+          `El Recetario Médico Personalizado trae 100 hojas tamaño Media Carta (14 × 21.5 cm) en papel Bond de 90 gr, color blanco, con tu membrete preimpreso. Cuesta $${recetarioPrice("sin-diseno")} MXN si ya tienes tu diseño y $${recetarioPrice("con-diseno")} MXN si lo diseñamos contigo, y apruebas una prueba digital antes de imprimir.`,
+          `La prueba digital llega normalmente en un máximo de 24 horas después del pago. Desde que la apruebas, recoger en una sucursal Casa Blanca toma ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles y el envío a domicilio ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles, en cualquier parte de México.`,
+          "Si todavía no tienes logo o membrete, la opción con diseño sirve para armarlo desde cero con tus datos profesionales. Si ya lo tienes en formato editable, la opción sin diseño es suficiente.",
+        ],
+      },
+      {
+        heading: "Qué revisar antes de mandar a imprimir",
+        body: [
+          "Antes de aprobar revisa cuatro cosas: que tu nombre y tu cédula coincidan con tu documento, que el teléfono y la dirección estén vigentes, que tu colegio o institución no pida otro formato, y que todo se lea bien en la prueba digital. Un error preimpreso se repite en las 100 hojas.",
+          "Si tus recetas necesitan folio o código de barras para algún trámite o institución, avísalo al cotizar: es información que hay que confirmar antes de imprimir, no algo que se pueda corregir después.",
+          "Pídele a alguien más que lea la prueba digital contigo, sobre todo los números de cédula y de teléfono: es fácil no ver un dígito cambiado en tus propios datos.",
         ],
       },
     ],
     relatedProductSlugs: ["recetario-medico-personalizado"],
-    relatedBlogSlugs: ["recetarios-medicos-personalizados-guadalajara", "recetario-medico-impreso-vs-digital", "recetario-medico-con-diseno-vs-sin-diseno"],
+    relatedBlogSlugs: ["recetarios-medicos-personalizados-guadalajara", "recetario-medico-impreso-vs-digital", "recetario-medico-con-diseno-vs-sin-diseno", "tarjetas-de-presentacion-consultorio", "yume-vs-imprentas-recetarios-medicos"],
+    faq: [
+      {
+        q: "¿La NOM-004-SSA3-2012 dice qué datos lleva una receta?",
+        a: "La norma regula el expediente clínico, no la receta como formato aparte. Para las notas médicas pide fecha, hora, nombre completo y firma de quien las elabora, y que los medicamentos indiquen dosis, vía de administración y periodicidad.",
+      },
+      {
+        q: "¿Debo escribir la receta con letra legible?",
+        a: "Sí. El apartado 5.11 de la NOM-004-SSA3-2012 pide que las notas se escriban con letra legible, sin abreviaturas, sin enmendaduras ni tachaduras. Preimprimir los datos fijos te deja menos texto que escribir a mano.",
+      },
+      {
+        q: "¿Qué datos van preimpresos y cuáles se escriben a mano?",
+        a: "Preimpresos van los datos fijos del membrete: nombre, especialidad, cédula y datos del consultorio. A mano se escribe lo que cambia con cada paciente: su nombre, la fecha, el medicamento con dosis y duración, y tu firma.",
+      },
+      {
+        q: "¿Qué tamaño y cuántas hojas tiene el recetario de Yume?",
+        a: "100 hojas tamaño Media Carta (14 × 21.5 cm), en papel Bond de 90 gr, color blanco.",
+      },
+      {
+        q: "¿Cuánto cuesta un recetario médico personalizado?",
+        a: `El recetario de 100 hojas cuesta $${recetarioPrice("sin-diseno")} MXN si ya tienes tu diseño y $${recetarioPrice("con-diseno")} MXN si lo diseñamos contigo.`,
+      },
+      {
+        q: "¿Cuánto tarda mi recetario?",
+        a: `La prueba digital llega normalmente en un máximo de 24 horas después del pago. Desde que la apruebas, recoger en Casa Blanca toma ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles y el envío a domicilio ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles.`,
+      },
+      {
+        q: "¿Se imprime algo antes de que yo apruebe el diseño?",
+        a: "No. Todo pedido pasa primero por una prueba digital y no se manda a producción hasta que la apruebas.",
+      },
+    ],
     sources: [
       {
         label: "NOM-004-SSA3-2012, Diario Oficial de la Federación",

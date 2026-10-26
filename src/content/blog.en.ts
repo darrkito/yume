@@ -515,35 +515,109 @@ export const blogPostsEn: BlogPost[] = [
     title: "What a Medical Prescription Must Include in Mexico: A General Guide",
     metaTitle: "What a Medical Prescription Must Include in Mexico",
     description:
-      "The requirements and information a medical prescription typically needs to include in Mexico (on the letterhead, for the patient, and for the medication) and why it's worth having it preprinted on your pad.",
+      "What goes on a medical prescription in Mexico: letterhead, patient details and medication, what NOM-004-SSA3-2012 says, and what to preprint on your pad.",
     category: "Guides",
     publishedAt: "2026-09-09",
+    modifiedAt: "2026-10-26",
     intro:
-      "If you're about to order your first custom prescription pad, it's normal to wonder exactly what information it needs to include. This is general information based on common practice at medical offices in Mexico and Mexico's official clinical-record standard NOM-004-SSA3-2012 (listed at the end): it doesn't replace whatever your professional board, state, or institution specifically requires, so it's always worth confirming with them before printing.",
+      "If you're about to order your first custom prescription pad, it's normal to wonder exactly what information it needs to include. This is general information based on common practice at medical offices in Mexico and Mexico's official clinical-record standard NOM-004-SSA3-2012 (listed at the end): it doesn't replace whatever your professional board, state, or institution specifically requires, so it's always worth confirming with them before printing. Here we separate what stays fixed on the letterhead from what you write for each patient, what the standard asks of what you write, and how to check your design before production.",
     sections: [
+      {
+        heading: "What NOM-004-SSA3-2012 says about what you write",
+        body: [
+          "NOM-004-SSA3-2012 regulates the clinical record, not the prescription as a separate form. It asks that medical notes carry the date, time, full name and signature of the author, that medications state dose, route of administration and frequency, and that everything be written legibly, without corrections or strike-throughs.",
+          "Those points are in sections 5.10, 5.11 and 6.2.6 of the standard. Section 5.9 adds that notes carry the patient's full name, age and sex. In the parts of the standard we reviewed there is no section dedicated to the prescription, so for the exact format confirm with your professional board, your state or your institution.",
+        ],
+      },
       {
         heading: "What goes on your letterhead",
         body: [
-          "At the top of the prescription you'll typically find: your full name, specialty, professional license number (and specialty license, if applicable), and your practice's contact details: address, phone, and, if you want, office hours.",
+          "The letterhead is the fixed part of the prescription: your full name, specialty, professional license number (and specialty license, if applicable) and your practice's contact details, such as address, phone and, if you want, office hours. None of it changes from one patient to the next.",
           "These are exactly the details that get preprinted on the letterhead when you order a custom pad: so you don't have to write them by hand on every single prescription, only what changes per patient.",
+          "If you work out of more than one practice, the cleanest approach is one letterhead per location, each with its own address and phone, instead of squeezing everything into one design.",
         ],
       },
       {
         heading: "What gets filled in per patient",
         body: [
-          "In the body of the prescription, you add, per patient: their full name, the date of the visit, the diagnosis or reason for the visit (if that's part of how you work), the medication prescribed with dosage and treatment duration, and your signature.",
-          "Some practices also add the patient's age or weight when it's relevant to dosage, especially in pediatric practices.",
+          "For each patient you write their full name, the date of the visit, the medication with dosage and treatment duration, and your signature. The diagnosis, age or weight depend on how you work and on the dosage. These details change on every prescription, which is why they are not preprinted.",
+          "Some practices also add the patient's age or weight when it's relevant to dosage, especially in pediatric practices. To save time, you can ask for the design to leave marked lines or spaces for those details.",
         ],
+        table: {
+          headers: ["Detail", "Preprinted on the letterhead", "You write it for each patient"],
+          rows: [
+            ["Name, specialty and license number", "Yes", "No"],
+            ["Practice address, phone and office hours", "Yes", "No"],
+            ["Patient's full name", "No", "Yes"],
+            ["Date of the visit", "No", "Yes"],
+            ["Medication, dosage and duration", "No", "Yes"],
+            ["Signature", "No", "Yes"],
+          ],
+        },
       },
       {
         heading: "Why it's worth preprinting the fixed details",
         body: [
+          "Preprinting the letterhead prevents mistakes and illegible handwriting in the details that repeat on every prescription: your license number, your specialty and the practice's phone. You approve the design once and every prescription you fill by hand already carries those details, correct and legible.",
           "Every time you write your license number or your practice's phone number by hand, there's a chance for a mistake or for it to come out illegible: which can cause problems if the patient takes the prescription to a pharmacy that checks those details.",
-          "Having the letterhead preprinted solves that once and for all: you approve the design a single time, and from then on, every prescription you fill by hand already carries your fixed details, correct and legible.",
+          "And since the standard asks for legible writing without strike-throughs in medical notes, every fixed detail that already comes printed is one less detail that can end up with a correction.",
+        ],
+      },
+      {
+        heading: "What the Yume pad includes and how long it takes",
+        body: [
+          `The Custom Medical Prescription Pad has 100 sheets in Half Letter size (14 × 21.5 cm) on 90 gr Bond paper, white, with your letterhead preprinted. It costs $${recetarioPrice("sin-diseno")} MXN if you already have your design and $${recetarioPrice("con-diseno")} MXN if we design it with you, and you approve a digital proof before printing.`,
+          `The digital proof normally arrives within 24 hours of payment. Once you approve it, Casa Blanca pickup takes ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days and home delivery ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days, anywhere in Mexico.`,
+          "If you don't have a logo or letterhead yet, the option with design builds one from scratch with your professional details. If you already have it in an editable format, the option without design is enough.",
+        ],
+      },
+      {
+        heading: "What to check before sending it to print",
+        body: [
+          "Before approving, check four things: that your name and license number match your document, that the phone and address are current, that your board or institution doesn't ask for a different format, and that everything reads clearly on the digital proof. A preprinted mistake is repeated on all 100 sheets.",
+          "If your prescriptions need a folio number or barcode for a specific process or institution, say so when you request the quote: it's information that has to be confirmed before printing, not something you can fix afterwards.",
+          "Ask someone else to read the digital proof with you, especially the license and phone numbers: it's easy to miss a swapped digit in your own details.",
         ],
       },
     ],
     relatedProductSlugs: ["recetario-medico-personalizado"],
+    relatedBlogSlugs: [
+      BLOG_SLUG_EN["recetarios-medicos-personalizados-guadalajara"],
+      BLOG_SLUG_EN["recetario-medico-impreso-vs-digital"],
+      BLOG_SLUG_EN["recetario-medico-con-diseno-vs-sin-diseno"],
+      BLOG_SLUG_EN["tarjetas-de-presentacion-consultorio"],
+      BLOG_SLUG_EN["yume-vs-imprentas-recetarios-medicos"],
+    ],
+    faq: [
+      {
+        q: "Does NOM-004-SSA3-2012 say what a prescription must include?",
+        a: "The standard regulates the clinical record, not the prescription as a separate form. For medical notes it asks for the date, time, full name and signature of the author, and for medications to state dose, route of administration and frequency.",
+      },
+      {
+        q: "Does a prescription have to be written legibly?",
+        a: "Yes. Section 5.11 of NOM-004-SSA3-2012 asks that notes be written legibly, without abbreviations, corrections or strike-throughs. Preprinting the fixed details leaves you less text to handwrite.",
+      },
+      {
+        q: "What gets preprinted and what is handwritten?",
+        a: "The fixed letterhead details are preprinted: name, specialty, license number and practice details. You handwrite what changes per patient: their name, the date, the medication with dosage and duration, and your signature.",
+      },
+      {
+        q: "What size is the Yume prescription pad and how many sheets does it have?",
+        a: "100 sheets in Half Letter size (14 × 21.5 cm), on 90 gr Bond paper, white.",
+      },
+      {
+        q: "How much does a custom prescription pad cost?",
+        a: `The 100-sheet pad costs $${recetarioPrice("sin-diseno")} MXN if you already have your design and $${recetarioPrice("con-diseno")} MXN if we design it with you.`,
+      },
+      {
+        q: "How long does my prescription pad take?",
+        a: `The digital proof normally arrives within 24 hours of payment. Once you approve it, Casa Blanca pickup takes ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days and home delivery ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days.`,
+      },
+      {
+        q: "Is anything printed before I approve the design?",
+        a: "No. Every order goes through a digital proof first and nothing goes to production until you approve it.",
+      },
+    ],
     sources: [
       {
         label: "NOM-004-SSA3-2012, Diario Oficial de la Federación (Mexico)",
