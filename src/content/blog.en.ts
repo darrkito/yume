@@ -1804,39 +1804,112 @@ export const blogPostsEn: BlogPost[] = [
   },
   {
     slug: BLOG_SLUG_EN["stickers-para-marca-pequena-vs-grande"],
-    title: "Best Stickers for Small vs. Large Brands: What to Order Based on Your Size",
+    title: "Stickers for Small vs. Large Brands: How Many to Order",
     metaTitle: "Stickers for Small vs. Large Brands",
-    description:
-      "Affordable stickers in Mexico for a small business just starting out, and custom labels for growing brands ordering in volume: how to pick the right quantity for your actual size.",
+    description: `How many stickers to order if your brand is small or large, or for an event. First 100 pieces: $${priceOf("stickers-logo-personalizado", 100)} MXN, with a digital proof.`,
     category: "Guides",
     publishedAt: "2026-09-23",
-    modifiedAt: "2026-10-09",
+    modifiedAt: "2026-10-26",
     intro:
-      "A business that's just getting started and a brand already selling in volume don't need the same number of stickers, but a lot of print shops charge them the same way: the same high minimum no matter how small or large the real order is. Here's how to choose between stickers for a small business and larger orders, and why the price shouldn't be the same for both.",
+      "A brand that's just starting and one that already sells often don't need the same number of stickers, and an event doesn't either: a wedding with 80 guests, a company holiday party, or a gift for someone special calls for a different count. At Yume stickers sell by piece count, not by sheet, so you can order what you actually need. Here's how to pick the right quantity for your stage, what each option costs, and what to expect from the process.",
     sections: [
       {
         heading: "If your brand is small: get in without committing to a big order",
         body: [
-          "If you're just testing your brand or sell at local markets occasionally, buying 500 pieces at once doesn't make sense: it's money tied up in inventory that might take months to use. That's why we sell by piece count instead of full sheets: the minimum is 50 pieces for $150 on Custom Logo Stickers, or 40 pieces for $140 on Waterproof Vinyl Stickers.",
-          "These are some of the most affordable stickers in Mexico to get started with: you can test your design, see how people react, and adjust before committing to a bigger volume.",
+          `If your brand is small, order the minimum: 50 pieces of Custom Logo Stickers ($${priceOf("stickers-logo-personalizado", 50)} MXN) or 40 pieces of Custom Vinyl Stickers ($${priceOf("stickers-vinil-impermeable", 40)} MXN). They sell by piece count, not by full sheet, so you don't tie up money in inventory that will take months to use.`,
+          "If you're just testing your brand or sell at local markets now and then, a small order lets you see how people react to your design and adjust before committing to a larger quantity.",
+          "A well-made sticker also works as a brand detail: sealing a gift bag, closing a box, or going along with an order. For packaging ideas, see our guide to stickers for business packaging.",
         ],
       },
       {
-        heading: "If your brand already sells in volume: the per-piece price drops",
+        heading: "If your brand already sells often: the per-piece price drops",
         body: [
-          "Once your business has steady sales, buying more makes sense: from 100 pieces on, every extra block gets a 10% discount, so the per-piece price drops the more you order. It's the same logic as custom labels for a growing business, just applied at a larger scale: you pay less per piece without switching provider or process.",
-          "There's no hard cap in the catalog: if you need a larger volume than the quantity selector shows, request a quote directly over WhatsApp and we'll match the order to your real volume.",
+          `If you already sell often, ordering more makes sense: the first 100 pieces cost $${priceOf("stickers-logo-personalizado", 100)} MXN for custom logo stickers and $${priceOf("stickers-vinil-impermeable", 100)} MXN for vinyl. Past 100 you reach wholesale price and every extra piece costs 10% less, so the per-piece price drops the more you order.`,
+          "It's the same process and the same provider: you pay less per piece and nothing else changes. If you need more than the quantity selector shows, request a quote over WhatsApp and we'll adjust the order.",
+          "The table below shows the total and the per-piece price at typical quantities, taken from the catalog.",
+        ],
+        table: {
+          headers: ["Pieces", "Custom logo stickers", "Vinyl stickers"],
+          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
+        },
+      },
+      {
+        heading: "If it's for an event or a gift: count guests, not sales",
+        body: [
+          "If the sticker is for a wedding, baptism, quinceañera, or company holiday party, don't count sales: count people. One piece per guest if they go on bags or bottles, one per envelope if you're sealing invitations, plus a few extra for tables, signs, and photos. If your guest list is under the minimum, the minimum is still 50 or 40 pieces, and the extras work for tables and photos.",
+          "The sticker carries the name, date, or theme of the celebration, so each guest takes home a keepsake with their name instead of a generic favor. For uses, sizes, and formats, read our guide to stickers for weddings, events, and parties.",
+          "If you also have invitations or a wedding menu, use the same design on everything: the event looks planned, not put together from loose pieces.",
         ],
       },
       {
         heading: "How to pick the right quantity for your stage",
         body: [
-          "A simple guide: if you don't yet know how much you'll sell per month, start with the minimum (50 or 40 pieces) and reorder as it runs out. If you already have a known sales pace, calculate 2-3 months of inventory and order directly in the range where the volume discount already applies (100 pieces or more).",
-          "The process is identical either way: you send your logo, we send you a digital proof, you approve it, and it gets produced. The only thing that changes is the quantity you pick.",
+          "Choose based on what you know today. If you don't know how many you'll use, start with the minimum (50 or 40 pieces) and reorder as it runs out. If you already have a known pace, estimate 2 to 3 months of use and order in the range where wholesale price applies (over 100 pieces). For an event, order close to your real guest count.",
+          "The process is identical in every case: you send your logo or design, we send a digital proof, you approve it, and it gets produced. The only thing that changes is the quantity you pick.",
+          "You also don't have to decide everything at once. You can order a first batch, see how it gets used, and repeat the same design later without starting over.",
+        ],
+      },
+      {
+        heading: "Which material and cut to choose, whatever your order size",
+        body: [
+          "Choose vinyl if the sticker will get wet, sit in the sun, or get scratched, and choose die-cut if you want it to follow the exact outline of your design. Yume's vinyl resists water, sun, and scratches, according to the product page. Each product lets you pick between die-cut and kiss-cut when you order.",
+          "You also pick the finish: matte, glossy, or holographic. Holographic has an extra per-piece cost you see on the product page. If you're unsure about material or cut, these two guides help: vinyl vs. paper stickers and die-cut vs. kiss-cut.",
+        ],
+      },
+      {
+        heading: "How long it takes and how it's delivered",
+        body: [
+          `The digital proof normally arrives within 24 hours of payment. Once you approve it, your order reaches your door in ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days anywhere in Mexico, or is ready for pickup at a Casa Blanca branch in Guadalajara in ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days.`,
+          `Home delivery costs $${NATIONAL_SHIPPING_PRICE} MXN and branch pickup $${CASABLANCA_PRICE} MXN; on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more, both are free. If your order has a fixed date, order with some margin to adjust the proof before production. More details in our guide to how long a sticker order takes.`,
+        ],
+      },
+      {
+        heading: "How to get a quote for yours",
+        body: [
+          "Send us your logo or design over WhatsApp (PNG, PDF, AI, or SVG with a transparent background work best), the quantity, and the size you want. We prepare a digital proof, and nothing is produced until you approve it. We produce in Guadalajara and ship across Mexico.",
+          "If you don't have a finished design yet, tell us what it's for and we'll work it out together. You can also compare options in our guide to where to print custom stickers in Mexico.",
         ],
       },
     ],
+    faq: [
+      {
+        q: "What is the minimum sticker order?",
+        a: "50 pieces for Custom Logo Stickers and 40 pieces for Custom Vinyl Stickers. They sell by piece count, not by sheet.",
+      },
+      {
+        q: "How much do stickers cost if I'm just starting?",
+        a: `The minimum costs $${priceOf("stickers-logo-personalizado", 50)} MXN for 50 custom logo stickers and $${priceOf("stickers-vinil-impermeable", 40)} MXN for 40 vinyl stickers. First 100 pieces: $${priceOf("stickers-logo-personalizado", 100)} MXN for logo stickers and $${priceOf("stickers-vinil-impermeable", 100)} MXN for vinyl.`,
+      },
+      {
+        q: "What happens if I order more than 100 pieces?",
+        a: `Past 100 pieces you reach wholesale price: every extra piece costs 10% less. For example, 200 vinyl pieces cost $${priceOf("stickers-vinil-impermeable", 200)} MXN.`,
+      },
+      {
+        q: "Can I use the stickers for an event instead of a business?",
+        a: "Yes. You can order stickers with names, a date, or the theme of your wedding, quinceañera, baptism, baby shower, or company event. Send us your design or idea and we'll send a digital proof before printing.",
+      },
+      {
+        q: "Are the stickers water-resistant?",
+        a: "Vinyl stickers resist water, sun, and scratches, and the logo stickers are water-resistant, according to each product page.",
+      },
+      {
+        q: "How long does an order take?",
+        a: `The digital proof normally arrives within 24 hours of payment. Once you approve it, your order reaches your door in ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days, or is ready for pickup at Casa Blanca in ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days.`,
+      },
+      {
+        q: "Do you ship outside Guadalajara?",
+        a: `Yes, we ship across Mexico for $${NATIONAL_SHIPPING_PRICE} MXN, free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more.`,
+      },
+    ],
     relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: [
+      BLOG_SLUG_EN["stickers-para-bodas-eventos-y-fiestas"],
+      BLOG_SLUG_EN["stickers-para-empaques-de-negocio"],
+      BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"],
+      BLOG_SLUG_EN["troquelado-vs-semitroquelado-stickers"],
+      BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"],
+      BLOG_SLUG_EN["donde-imprimir-stickers-personalizados-mexico"],
+    ],
   },
   {
     slug: BLOG_SLUG_EN["stickers-para-bodas-eventos-y-fiestas"],

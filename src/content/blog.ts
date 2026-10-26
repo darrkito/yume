@@ -1835,40 +1835,105 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "stickers-para-marca-pequena-vs-grande",
-    title: "Mejores stickers para marca pequeña vs grande: qué pedir según tu tamaño",
+    title: "Stickers para marca pequeña vs grande: cuántos pedir",
     metaTitle: "Stickers para marca pequeña vs grande",
-    description:
-      "Stickers económicos en México para un emprendimiento que recién arranca, y etiquetas para emprendedores que ya venden en volumen: cómo elegir la cantidad correcta según el tamaño real de tu negocio.",
+    description: `Cuántos stickers pedir si tu marca es chica o grande, o si es para un evento. Primeras 100 piezas: $${priceOf("stickers-logo-personalizado", 100)}, con prueba digital.`,
     category: "Guías",
     publishedAt: "2026-09-23",
-    modifiedAt: "2026-10-09",
+    modifiedAt: "2026-10-26",
     intro:
-      "Un negocio que recién arranca y una marca que ya vende en volumen no necesitan la misma cantidad de stickers, pero muchas imprentas les cobran como si fuera lo mismo: piden el mismo mínimo alto sin importar qué tan chico o grande sea el pedido real. Aquí está cómo elegir entre stickers para pequeño negocio y pedidos más grandes, y por qué el precio no debería ser el mismo para los dos.",
+      "Una marca que recién arranca y una que ya vende seguido no necesitan la misma cantidad de stickers, y un evento tampoco: una boda de 80 invitados, una posada de empresa o un regalo para alguien especial piden otra cuenta. En Yume se vende por cantidad de piezas, no por planilla, así que puedes pedir lo que realmente necesitas. Aquí te explicamos cómo elegir la cantidad correcta según tu etapa, qué cuesta cada opción y qué esperar del proceso.",
     sections: [
       {
         heading: "Si tu marca es pequeña: entra sin comprometerte a un pedido grande",
         body: [
-          "Si apenas estás probando tu marca o vendes en bazares de forma ocasional, no tiene sentido comprar 500 piezas de una sola vez: es dinero inmovilizado en inventario que a lo mejor tarda meses en usarse. Por eso vendemos por cantidad de piezas y no por planilla completa: el mínimo son 50 piezas por $150 en Stickers y Etiquetas con tu Logo, o 40 piezas por $140 en Stickers de Vinil Personalizados.",
-          "Son de los stickers más económicos en México para arrancar: puedes probar tu diseño, ver cómo reacciona la gente y ajustar antes de comprometerte a un volumen mayor.",
+          `Si tu marca es pequeña, pide el mínimo: 50 piezas en Stickers y Etiquetas con tu Logo ($${priceOf("stickers-logo-personalizado", 50)}) o 40 piezas en Stickers de Vinil Personalizados ($${priceOf("stickers-vinil-impermeable", 40)}). Se venden por cantidad de piezas y no por planilla completa, así que no inmovilizas dinero en inventario que tardará meses en usarse.`,
+          "Si apenas estás probando tu marca o vendes en bazares de forma ocasional, un pedido chico te deja ver cómo reacciona la gente a tu diseño y ajustar antes de comprometerte a una cantidad mayor.",
+          "Un sticker bien hecho también funciona como detalle de marca: sellar una bolsa de regalo, cerrar una caja o acompañar un pedido. Para ver ideas de uso en empaque, revisa nuestra guía de stickers para empaques de negocio.",
         ],
       },
       {
-        heading: "Si tu marca ya vende en volumen: el precio por pieza baja",
+        heading: "Si tu marca ya vende seguido: el precio por pieza baja",
         body: [
-          "Cuando tu negocio ya tiene ventas constantes, comprar de más sí conviene: a partir de 100 piezas, cada bloque extra tiene 10% de descuento, así que el precio por pieza baja mientras más pides. Es la misma lógica de etiquetas para emprendedores, solo que aplicada a un volumen mayor: pagas menos por pieza sin cambiar de proveedor ni de proceso.",
-          "No hay un tope fijo en el catálogo: si necesitas un volumen mayor al que muestra el selector de cantidad, cotiza directo por WhatsApp y ajustamos el pedido a tu volumen real.",
+          `Si ya vendes seguido, conviene pedir más: las primeras 100 piezas cuestan $${priceOf("stickers-logo-personalizado", 100)} en etiquetas con tu logo y $${priceOf("stickers-vinil-impermeable", 100)} en vinil. Pasando las 100 entras a precio mayoreo y cada pieza extra cuesta 10% menos, así que el precio por pieza baja mientras más pides.`,
+          "Es el mismo proceso y el mismo proveedor: pagas menos por pieza sin cambiar nada más. Si necesitas una cantidad mayor a la que muestra el selector, cotiza directo por WhatsApp y ajustamos el pedido.",
+          "La tabla de abajo muestra el total y el precio por pieza en cantidades típicas, tomados del catálogo.",
+        ],
+        table: {
+          headers: ["Piezas", "Etiquetas con tu logo", "Stickers de vinil"],
+          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
+        },
+      },
+      {
+        heading: "Si es para un evento o un regalo: cuenta invitados, no ventas",
+        body: [
+          "Si el sticker es para una boda, un bautizo, unos XV años o una posada, no cuentes ventas: cuenta personas. Una pieza por invitado si va en bolsitas o botellas, una por sobre si sellas invitaciones, y unas cuantas más para mesas, letreros y fotos. Si tu lista de invitados es menor al mínimo, el mínimo sigue siendo 50 o 40 piezas, y las que sobren sirven para mesas y fotos.",
+          "El sticker lleva el nombre, la fecha o el tema de la celebración, así que cada invitado se lleva un recuerdo con su nombre en vez de un detalle genérico. Para ver usos, tamaños y formatos, lee nuestra guía de stickers para bodas, eventos y fiestas.",
+          "Si además tienes invitaciones o menú de boda, usa el mismo diseño en todo: el evento se ve planeado y no armado con piezas sueltas.",
         ],
       },
       {
         heading: "Cómo elegir la cantidad correcta para tu etapa",
         body: [
-          "Una guía simple: si todavía no sabes cuánto vas a vender al mes, empieza con el mínimo (50 o 40 piezas) y repite el pedido conforme se agote. Si ya tienes un ritmo de ventas conocido, calcula 2-3 meses de inventario y pide directo en el rango donde el descuento por volumen ya aplica (100 piezas o más).",
-          "En ambos casos el proceso es idéntico: mandas tu logo, te mandamos una prueba digital, apruebas y se produce. Lo único que cambia es la cantidad que eliges.",
+          `Elige según lo que sabes hoy. Si no sabes cuánto vas a usar, empieza con el mínimo (50 o 40 piezas) y repite el pedido conforme se agote. Si ya tienes un ritmo conocido, calcula 2 a 3 meses de uso y pide en el rango donde ya aplica el precio mayoreo (más de 100 piezas). Para un evento, pide cerca del número real de invitados.`,
+          "En todos los casos el proceso es idéntico: mandas tu logo o diseño, te enviamos una prueba digital, apruebas y se produce. Lo único que cambia es la cantidad que eliges.",
+          "Tampoco necesitas decidir todo de una vez. Puedes pedir una primera tanda, ver cómo se usa y repetir el mismo diseño después sin volver a empezar.",
+        ],
+      },
+      {
+        heading: "Qué material y qué corte elegir sin importar el tamaño de tu pedido",
+        body: [
+          "Elige vinil si el sticker va a mojarse, a estar al sol o a rayarse, y elige corte troquelado si quieres que siga la silueta exacta de tu diseño. El vinil de Yume resiste agua, sol y rayones, según la ficha del producto. Cada producto te deja escoger entre troquelado y semitroquelado al pedir.",
+          "También eliges el acabado: mate, brillante u holográfico. El holográfico tiene un costo extra por pieza que ves en la página del producto. Si dudas entre material o corte, estas dos guías te ayudan: stickers de vinil vs. papel y troquelado vs. semitroquelado.",
+        ],
+      },
+      {
+        heading: "Cuánto tarda y cómo se entrega según tu pedido",
+        body: [
+          `La prueba digital llega normalmente en un máximo de 24 horas después del pago. Desde que la apruebas, tu pedido llega a domicilio en ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles en cualquier parte de México, o está listo para recoger en una sucursal Casa Blanca de Guadalajara en ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles.`,
+          `El envío a domicilio cuesta $${NATIONAL_SHIPPING_PRICE} y la recolección en sucursal $${CASABLANCA_PRICE}; en compras de $${FREE_SHIPPING_THRESHOLD} o más, ambos son gratis. Si tu pedido tiene fecha fija, pide con margen para ajustar la prueba antes de producir. Más detalles en nuestra guía de cuánto tarda un pedido de stickers.`,
+        ],
+      },
+      {
+        heading: "Cómo cotizar el tuyo",
+        body: [
+          "Mándanos por WhatsApp tu logo o diseño (PNG, PDF, AI o SVG con fondo transparente funcionan mejor), la cantidad y el tamaño que buscas. Te preparamos una prueba digital y no se produce nada hasta que la apruebas. Producimos en Guadalajara y enviamos a todo México.",
+          "Si todavía no tienes un diseño definido, cuéntanos para qué lo quieres y lo vemos juntos. También puedes comparar opciones en nuestra guía de dónde imprimir stickers personalizados en México.",
         ],
       },
     ],
+    faq: [
+      {
+        q: "¿Cuál es el pedido mínimo de stickers?",
+        a: "50 piezas en Stickers y Etiquetas con tu Logo y 40 piezas en Stickers de Vinil Personalizados. Se venden por cantidad de piezas, no por planilla.",
+      },
+      {
+        q: "¿Cuánto cuestan los stickers si apenas empiezo?",
+        a: `El mínimo cuesta $${priceOf("stickers-logo-personalizado", 50)} por 50 piezas en etiquetas con tu logo y $${priceOf("stickers-vinil-impermeable", 40)} por 40 piezas en vinil. Primeras 100 piezas: $${priceOf("stickers-logo-personalizado", 100)} en etiquetas con logo y $${priceOf("stickers-vinil-impermeable", 100)} en vinil.`,
+      },
+      {
+        q: "¿Qué pasa si pido más de 100 piezas?",
+        a: `Pasando las 100 piezas entras a precio mayoreo: cada pieza extra cuesta 10% menos. Por ejemplo, 200 piezas de vinil cuestan $${priceOf("stickers-vinil-impermeable", 200)}.`,
+      },
+      {
+        q: "¿Puedo usar los stickers para un evento y no para mi negocio?",
+        a: "Sí. Puedes pedir stickers con nombres, fecha o el tema de tu boda, XV años, bautizo, baby shower o evento de empresa. Mándanos tu diseño o la idea y te enviamos una prueba digital antes de imprimir.",
+      },
+      {
+        q: "¿Los stickers resisten el agua?",
+        a: "Los stickers de vinil son resistentes al agua, al sol y a rayones, y las etiquetas con tu logo son resistentes al agua, según la ficha de cada producto.",
+      },
+      {
+        q: "¿Cuánto tarda el pedido?",
+        a: `La prueba digital llega normalmente en un máximo de 24 horas después del pago. Desde que la apruebas, tu pedido llega a domicilio en ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles, o está listo para recoger en Casa Blanca en ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles.`,
+      },
+      {
+        q: "¿Envían fuera de Guadalajara?",
+        a: `Sí, enviamos a todo México por $${NATIONAL_SHIPPING_PRICE}, gratis en compras de $${FREE_SHIPPING_THRESHOLD} o más.`,
+      },
+    ],
     relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["stickers-para-empaques-de-negocio", "donde-imprimir-stickers-personalizados-mexico", "troquelado-vs-semitroquelado-stickers"],
+    relatedBlogSlugs: ["stickers-para-bodas-eventos-y-fiestas", "stickers-para-empaques-de-negocio", "stickers-vinil-vs-papel-diferencias", "troquelado-vs-semitroquelado-stickers", "cuanto-tarda-un-pedido-de-stickers-personalizados", "donde-imprimir-stickers-personalizados-mexico"],
   },
   {
     slug: "stickers-para-bodas-eventos-y-fiestas",
