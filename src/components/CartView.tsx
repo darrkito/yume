@@ -130,7 +130,13 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
     </div>
   );
 
-  if (!ready) return <section className="mx-auto min-h-[60vh] max-w-2xl px-6 py-24" aria-busy="true" />;
+  if (!ready) {
+    return (
+      <section className="mx-auto min-h-[60vh] max-w-2xl px-6 py-24" aria-busy="true">
+        <h1 className="sr-only">{t.yourOrder}</h1>
+      </section>
+    );
+  }
 
   if (items.length === 0) {
     return (
