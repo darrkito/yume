@@ -627,41 +627,104 @@ export const dulceroPostsEn: BlogPost[] = [
     title: "Favor Boxes vs. Goodie Bags vs. Treat Cups: Which Works for Your Party",
     metaTitle: "Favor Boxes vs. Goodie Bags vs. Treat Cups",
     description:
-      "A practical comparison of lunch-box-style favor boxes, goodie bags, plastic treat cups and fabric pouches: capacity, presentation, customization and which party each one suits.",
+      "Favor boxes, goodie bags, treat cups or fabric pouches: compare presentation, personalization, price and which one suits your party or event.",
     category: "Guides",
     publishedAt: PUBLISHED,
+    modifiedAt: "2026-10-26",
     intro:
-      "Look for party favors and you'll find lots of options: cellophane or paper goodie bags, plastic treat cups, fabric pouches and cardstock boxes. None is best at everything; it depends on budget, guest age and how much you want the favor to look like part of the decor. This comparison helps you decide.",
+      "Look for party favors and you'll find lots of options: cellophane or paper goodie bags, plastic treat cups, fabric pouches and cardstock boxes. None is best at everything; it depends on the occasion, guest age and how much you want the favor to look like part of the decor. This comparison helps you decide, with the price, size and timing of our personalized box so you can compare with real numbers.",
     sections: [
+      {
+        heading: "What to compare before you decide",
+        body: [
+          "Compare four things: whether it stands up on the table, how much surface you have to personalize, whether it arrives ready to fill and how many pieces you need. A bag or a cup solves quantity; a box also solves presentation. Settle the occasion and guest count first, then the format.",
+          "If the event has a candy table, photos or a set color palette, presentation matters more. If the favor is handed out at the door and goes straight to the car, simple matters more. With small children, also think about whether they can carry it themselves.",
+        ],
+      },
       {
         heading: "Goodie bags",
         body: [
-          "They're the cheapest and easiest option to find. In exchange, they sag under the weight, don't stand up on the table, and personalization is usually limited to a label or sticker on the front.",
-          "They work well for very large parties on a tight budget, or as an inner bag inside another favor.",
+          "Goodie bags are the easiest option to find, but they sag under the weight, don't stand up on the table and are almost always personalized only with a label or sticker on the front. They work for very large parties or as an inner bag inside another favor.",
+          "If you go with bags, a sticker with the name and theme helps them look more polished. You can look at our waterproof vinyl stickers for that touch.",
         ],
       },
       {
         heading: "Treat cups and fabric pouches",
         body: [
-          "Plastic treat cups are reusable, but they take up space, are hard to personalize with a name and the theme is usually generic. Fabric pouches look nice and can be reused, though they cost more, and adding a name raises the price per piece even further.",
+          "Plastic treat cups are reusable, but they take up space, are hard to personalize with a name and the theme is usually generic. Fabric pouches look nice and can be reused, though they cost more and adding a name raises the price of each piece. They make sense when a second use matters more than presentation.",
+          "What to watch is the table: a cup or a pouch can't carry a full design with the name and theme, so the result depends more on what you put around it.",
         ],
       },
       {
         heading: "Lunch-box-style favor boxes",
         body: [
-          "A box with a handle stands on its own, looks tidy on the candy table and is fully personalized: the birthday child's name and the theme cover the whole design, not just a label. The handle makes it easy for kids to carry, and there's room for candy and a small gift.",
-          "At Yume we make them in opaline cardstock, 15.7 × 11.7 × 9.9 cm, with name and theme, at $75 MXN per piece with a minimum of 10, and they arrive assembled.",
+          "A lunch-box-style favor box stands on its own, looks tidy on the candy table and is fully personalized: the name and the theme cover the whole design, not just a label. It has a handle for kids to carry and room for candy and a small gift.",
+          "At Yume we make it in opaline cardstock, 15.7 × 11.7 × 9.9 cm, with the name and theme you choose. It arrives assembled and empty, without candy, ready to fill. Before production we send a digital proof, and nothing is produced until you approve it.",
+        ],
+      },
+      {
+        heading: "For weddings, baby showers, baptisms and other events",
+        body: [
+          "For a wedding, a baby shower or a baptism, the personalized box is the better fit: the design takes the event's colors and the name or date, and it looks like part of the candy table. For planners, it's one detail per event, with a digital proof and direct contact on WhatsApp.",
+          "Send us a photo of the invitation or the decor and we'll match the design to those colors. For a company, you can add your logo. If your event needs something different from what we describe here, message us on WhatsApp and we'll go over it with you before you decide. For more ideas by occasion, see our guides to favor boxes for social events, for baptisms and first communions, and for graduations.",
+        ],
+      },
+      {
+        heading: "Price and how many to order",
+        body: [
+          `First 100 pieces: $${dulceroUnit} MXN per box, with a minimum order of 10. 10 boxes are $${dulceroTotal(10)}, 20 are $${dulceroTotal(20)} and 30 are $${dulceroTotal(30)}. Above 100 pieces it's wholesale pricing, quoted on WhatsApp. You order the exact number of guests, with no fixed packs.`,
+          `Orders from $${FREE_SHIPPING_THRESHOLD} MXN ship free across Mexico. In the Guadalajara metro area you can pick them up for $${CASABLANCA_PRICE} at any of the ${CASABLANCA_BRANCHES.length} Casa Blanca parcel branches. Add 1 or 2 extra in case a guest shows up last minute.`,
+        ],
+      },
+      {
+        heading: "When to order so they arrive on time",
+        body: [
+          `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after you approve the digital proof, plus ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} days of national shipping (or ${PICKUP_EXTRA_DAYS} business day if you pick up at a Casa Blanca branch in Guadalajara). Count back from your event date and leave room to review the proof.`,
+          "If you're torn between formats, assemble one test box with your candy before ordering everything, to see how the filling fits. Our guide on what to put in a favor box has a list by age.",
         ],
       },
       {
         heading: "Which to choose",
         body: [
-          "If you want the cheapest option for lots of guests, the goodie bag. If you want something reusable, the cup or the pouch. If you want the favor to match the party, carry the birthday child's name and look like part of the decor, the personalized box gives the most for what it costs.",
+          "Pick a goodie bag if you need something simple for lots of guests, a cup or pouch if you want something reusable, and a personalized box if you want the favor to match the party, carry the birthday child's name and look like part of the decor. It's the option that stands out most on the table.",
         ],
       },
     ],
-    relatedProductSlugs: [DULCERO],
-    relatedBlogSlugs: [en("ideas-de-dulceros-para-fiesta-infantil"), en("que-poner-en-un-dulcero"), en("dulceros-personalizados-guadalajara")],
+    relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
+    relatedBlogSlugs: [
+      en("ideas-de-dulceros-para-fiesta-infantil"),
+      en("que-poner-en-un-dulcero"),
+      en("dulceros-personalizados-guadalajara"),
+      en("dulceros-para-eventos-sociales-boda-xv-baby-shower"),
+      en("dulceros-para-bautizo-y-primera-comunion"),
+      en("dulceros-para-graduacion"),
+    ],
+    faq: [
+      {
+        q: "Which is better for party favors: a box, a bag or a cup?",
+        a: "It depends on the occasion. Bags are simple for big groups, cups and pouches are reusable, and the personalized box stands on its own, carries the name and theme across the whole design and looks like part of the decor.",
+      },
+      {
+        q: "How much does a personalized favor box cost?",
+        a: `First 100 pieces: $${dulceroUnit} MXN per piece, with a minimum order of 10. Above 100 pieces it's wholesale pricing, quoted on WhatsApp. Orders from $${FREE_SHIPPING_THRESHOLD} ship free across Mexico.`,
+      },
+      {
+        q: "What size and material is the box?",
+        a: "It measures 15.7 × 11.7 × 9.9 cm, has a handle and is made of opaline cardstock. It arrives assembled.",
+      },
+      {
+        q: "Do the favor boxes include candy?",
+        a: "No. The box arrives assembled and empty, ready to fill with the candy or extras you choose.",
+      },
+      {
+        q: "What does the customization include?",
+        a: "The name (of the birthday child, the group or your company) and the theme you choose, including your logo if it's for a business. We send a digital proof before production.",
+      },
+      {
+        q: "How long does it take to arrive?",
+        a: `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after you approve the digital proof, plus ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} days of national shipping.`,
+      },
+    ],
   },
   {
     slug: en("dulceros-dia-de-muertos-noviembre"),

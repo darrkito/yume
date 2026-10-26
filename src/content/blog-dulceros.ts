@@ -633,42 +633,104 @@ export const dulceroPosts: BlogPost[] = [
     title: "Cajas, bolsas o vasos dulceros: cuál conviene para tu fiesta",
     metaTitle: "Bolsas, cajas o vasos para dulceros: cuál elegir",
     description:
-      "Comparación práctica entre cajas dulceras tipo lunch box, bolsas para dulceros, vasos dulceros y morralitos: capacidad, presentación, personalización y para qué tipo de fiesta conviene cada uno.",
+      "Cajas, bolsas, vasos o morralitos para dulceros: compara presentación, personalización, precio y qué conviene según tu fiesta o evento.",
     category: "Guías",
     publishedAt: PUBLISHED,
-    modifiedAt: "2026-10-17",
+    modifiedAt: "2026-10-26",
     intro:
-      "Cuando buscas dulceros aparecen muchas opciones: bolsas de celofán o de papel, vasos dulceros de plástico, morralitos de tela y cajitas de cartón. Ninguna es mejor en todo; depende del presupuesto, la edad de los invitados y qué tanto quieres que el dulcero se vea como parte de la decoración. Esta comparación te ayuda a decidir.",
+      "Cuando buscas dulceros aparecen muchas opciones: bolsas de celofán o de papel, vasos dulceros de plástico, morralitos de tela y cajitas de cartón. Ninguna es mejor en todo; depende de la ocasión, la edad de los invitados y qué tanto quieres que el dulcero se vea como parte de la decoración. Esta comparación te ayuda a decidir, con el precio, las medidas y los tiempos de nuestra caja personalizada para que compares con datos reales.",
     sections: [
+      {
+        heading: "Qué comparar antes de decidir",
+        body: [
+          "Compara cuatro cosas: si se sostiene sola en la mesa, cuánta superficie tienes para personalizar, si llega lista para llenar y cuántas piezas necesitas. Una bolsa o un vaso resuelven la cantidad; una caja resuelve además la presentación. Define primero la ocasión y el número de invitados, y después el formato.",
+          "Si el evento tiene mesa de dulces, fotos o una paleta de colores definida, la presentación pesa más. Si el dulcero se entrega en la puerta y se va directo al coche, pesa más que sea sencillo. Con niños pequeños, piensa también en que puedan cargarlo solos.",
+        ],
+      },
       {
         heading: "Bolsas para dulceros",
         body: [
-          "Son la opción más económica y fácil de conseguir. A cambio, se deforman con el peso, no se sostienen solas en la mesa y la personalización suele limitarse a una etiqueta o un sticker pegado al frente.",
-          "Funcionan bien para fiestas muy grandes con presupuesto ajustado o como relleno dentro de otro dulcero.",
+          "Las bolsas para dulceros son la opción más fácil de conseguir, pero se deforman con el peso, no se sostienen solas en la mesa y casi siempre se personalizan solo con una etiqueta o un sticker al frente. Funcionan para fiestas muy grandes o como relleno dentro de otro dulcero.",
+          "Si te quedas con bolsas, un sticker con el nombre y la temática ayuda a que se vean más cuidadas. Puedes revisar nuestros stickers de vinil impermeable para ese detalle.",
         ],
       },
       {
         heading: "Vasos dulceros y morralitos",
         body: [
-          "Los vasos dulceros de plástico se reutilizan, pero ocupan espacio, son difíciles de personalizar con nombre y la temática suele ser genérica. Los morralitos de tela se ven bien y se pueden volver a usar, aunque cuestan más y personalizarlos con nombre encarece aún más cada pieza.",
+          "Los vasos dulceros de plástico se reutilizan, pero ocupan espacio, son difíciles de personalizar con nombre y su temática suele ser genérica. Los morralitos de tela se ven bien y se vuelven a usar, aunque cuestan más y ponerles nombre encarece cada pieza. Tiene sentido elegirlos cuando el segundo uso importa más que la presentación.",
+          "El punto a vigilar es la mesa: un vaso o un morralito no cubre un diseño completo con el nombre y la temática, así que el resultado depende más de lo que pongas alrededor.",
         ],
       },
       {
         heading: "Cajas dulceras tipo lunch box",
         body: [
-          "La caja con asa se sostiene sola, se ve ordenada en la mesa de dulces y se personaliza completa: el nombre del festejado y la temática ocupan todo el diseño, no solo una etiqueta. El asa facilita que los niños la carguen, y tiene espacio para dulces y un detalle.",
-          "En Yume las hacemos de cartulina opalina, de 15.7 × 11.7 × 9.9 cm, con nombre y temática, a $75 por pieza con mínimo de 10, y te llegan armadas.",
+          "La caja dulcera tipo lunch box se sostiene sola, se ve ordenada en la mesa de dulces y se personaliza completa: el nombre y la temática ocupan todo el diseño, no solo una etiqueta. Tiene asa para que los niños la carguen y espacio para dulces y un detalle.",
+          "En Yume la hacemos de cartulina opalina, de 15.7 × 11.7 × 9.9 cm, con el nombre y la temática que elijas. Te llega armada y vacía, sin dulces, lista para llenar. Antes de producir te enviamos una prueba digital, y nada se produce hasta que la apruebas.",
+        ],
+      },
+      {
+        heading: "Para bodas, baby showers, bautizos y otros eventos",
+        body: [
+          "Para una boda, un baby shower o un bautizo conviene la caja personalizada: el diseño toma los colores del evento y el nombre o la fecha, y se ve como parte de la mesa de dulces. Para planners, es un detalle por evento con prueba digital y trato directo por WhatsApp.",
+          "Mándanos una foto de la invitación o de la decoración y adaptamos el diseño a esos colores. Si es para una empresa, puedes sumar tu logo. Si tu evento pide algo distinto a lo que describimos aquí, escríbenos por WhatsApp y lo revisamos contigo antes de que decidas. Para más ideas por ocasión, revisa las guías de dulceros para eventos sociales, para bautizo y primera comunión y para graduación.",
+        ],
+      },
+      {
+        heading: "Precio y cuántos pedir",
+        body: [
+          `Primeras 100 piezas: $${dulceroUnit} MXN por dulcero, con pedido mínimo de 10 piezas. 10 dulceros son $${dulceroTotal(10)}, 20 son $${dulceroTotal(20)} y 30 son $${dulceroTotal(30)}. Arriba de 100 piezas es precio mayoreo y se cotiza por WhatsApp. Pides el número exacto de invitados, sin paquetes cerrados.`,
+          `Desde $${FREE_SHIPPING_THRESHOLD} de compra el envío nacional es gratis. Si estás en la zona metropolitana de Guadalajara, puedes recogerlos por $${CASABLANCA_PRICE} en cualquiera de las ${CASABLANCA_BRANCHES.length} sucursales de paquetería Casa Blanca. Suma 1 o 2 extra por si llega un invitado de último momento.`,
+        ],
+      },
+      {
+        heading: "Cuándo pedirlos para que lleguen a tiempo",
+        body: [
+          `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba digital, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional (o ${PICKUP_EXTRA_DAYS} día hábil si recoges en una sucursal Casa Blanca de Guadalajara). Cuenta hacia atrás desde la fecha de tu evento y deja margen para revisar la prueba.`,
+          "Si dudas entre formatos, arma un dulcero de prueba con tus dulces antes de pedir todo, para ver cómo se acomoda el relleno. En la guía de qué poner en un dulcero hay una lista por edad.",
         ],
       },
       {
         heading: "Cuál elegir",
         body: [
-          "Si buscas lo más económico para muchos invitados, la bolsa. Si quieres algo reutilizable, el vaso o el morralito. Si quieres que el dulcero combine con la fiesta, lleve el nombre del festejado y se vea como parte de la decoración, la caja personalizada es la que más luce por lo que cuesta.",
+          "Elige bolsa si necesitas algo sencillo para muchos invitados, vaso o morralito si buscas algo reutilizable, y caja personalizada si quieres que el dulcero combine con la fiesta, lleve el nombre del festejado y se vea como parte de la decoración. Es la opción que más luce en la mesa.",
         ],
       },
     ],
-    relatedProductSlugs: [DULCERO],
-    relatedBlogSlugs: ["ideas-de-dulceros-para-fiesta-infantil", "que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara"],
+    relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
+    relatedBlogSlugs: [
+      "ideas-de-dulceros-para-fiesta-infantil",
+      "que-poner-en-un-dulcero",
+      "dulceros-personalizados-guadalajara",
+      "dulceros-para-eventos-sociales-boda-xv-baby-shower",
+      "dulceros-para-bautizo-y-primera-comunion",
+      "dulceros-para-graduacion",
+    ],
+    faq: [
+      {
+        q: "¿Qué es mejor para dulceros: caja, bolsa o vaso?",
+        a: "Depende de la ocasión. La bolsa es sencilla para grupos grandes, el vaso y el morralito se reutilizan, y la caja personalizada se sostiene sola, lleva nombre y temática en todo el diseño y se ve como parte de la decoración.",
+      },
+      {
+        q: "¿Cuánto cuesta un dulcero personalizado?",
+        a: `Primeras 100 piezas: $${dulceroUnit} MXN por pieza, con pedido mínimo de 10. Arriba de 100 piezas es precio mayoreo y se cotiza por WhatsApp. Desde $${FREE_SHIPPING_THRESHOLD} el envío nacional es gratis.`,
+      },
+      {
+        q: "¿Qué medidas y material tiene la caja?",
+        a: "Mide 15.7 × 11.7 × 9.9 cm, tiene asa y es de cartulina opalina. Llega armada.",
+      },
+      {
+        q: "¿Los dulceros incluyen dulces?",
+        a: "No. La caja llega armada y vacía, lista para llenar con los dulces o detalles que tú elijas.",
+      },
+      {
+        q: "¿Qué incluye la personalización?",
+        a: "El nombre (del festejado, del grupo o de tu empresa) y la temática que elijas, incluido tu logo si es para un negocio. Te enviamos una prueba digital antes de producir.",
+      },
+      {
+        q: "¿Cuánto tardan en llegar?",
+        a: `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba digital, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional.`,
+      },
+    ],
   },
   {
     slug: "dulceros-dia-de-muertos-noviembre",
