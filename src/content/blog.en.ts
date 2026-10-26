@@ -1257,33 +1257,104 @@ export const blogPostsEn: BlogPost[] = [
     title: "How to Use Your Yume Google Review Plate: No Setup Needed",
     metaTitle: "How to Use Your Yume Google Review Plate",
     description:
-      "What we need from you so your NFC and QR plate arrives ready to use, and what to do (and not do) the day it arrives.",
+      "Which link to send us, how to test your NFC and QR plate the day it arrives, and where to place it so customers leave a Google review in seconds.",
     category: "Guides",
     publishedAt: "2026-09-15",
+    modifiedAt: "2026-10-26",
     intro:
-      "Unlike other NFC plates sold \"blank\" that ask you to program them yourself with an app, Yume's plates arrive with the NFC and QR already configured with your business's link from the moment we produce them: you take it out of the box and it's already ready for your customers to use.",
+      "Unlike other NFC plates sold \"blank\" that ask you to program them yourself with an app, Yume's plates arrive with the NFC and QR already configured with your business's link from the moment we produce them: you take it out of the box and it's already ready for your customers to use. This guide walks you through what to send us, how to test it, where to put it, and what to do if something changes at your business.",
     sections: [
       {
         heading: "What we need from you before we produce it",
         body: [
-          "After your purchase we ask for your Google review link over WhatsApp (or your business's exact name as it appears on Google, if you don't have the link handy). We use that to program the NFC and generate the QR code before printing and shipping your plate.",
+          "We only need your Google review link or, if you don't have it handy, your business's exact name as it appears on Google. After your purchase we ask for it over WhatsApp, and we use it to program the NFC and generate the QR code before producing your plate.",
+          "The more precise the detail, the better: if your business shares a name with others, send the direct link or your listing's address so the plate leads to the right one. That's the point of this step: your customers won't have to search for you among similar results.",
+          "You don't have to download an app, create an account with us, or pay a subscription. It's a one-time payment and the plate doesn't depend on any monthly service to work.",
         ],
       },
       {
-        heading: "The day it arrives",
+        heading: "What's included and how big each version is",
         body: [
-          "There's no app to install and nothing to scan to \"activate\" it: the plate arrives already working. Just place it where your customers will see it (counter, register, table) and, if it's the no-stand version, stick it down with the adhesive already on the back.",
-          "To test that it works before putting it out, just tap your own phone or scan the QR: it should take you straight to the screen for leaving a review for your business.",
+          "There are two versions with the same setup: the Plate, 12 × 12 cm and 0.2 cm thick, with adhesive to stick it down, and the Stand, 12.75 cm tall and 7.6 cm wide, with a 5 cm deep base so it stands upright. Both come in white or black and carry NFC and a QR code.",
+          "Choose the Plate if you have a fixed spot to stick it, like the wall next to the register or the front of the counter. Choose the Stand if you'll move it around or prefer no adhesive, since it rests on any flat surface. Both are made to order.",
+        ],
+        table: {
+          headers: ["", "Plate", "Stand"],
+          rows: [
+            ["Size", "12 × 12 cm, 0.2 cm thick", "12.75 cm tall, 7.6 cm wide, 5 cm deep base"],
+            ["How it's placed", "Adhesive included", "Upright, no glue or tape"],
+            ["Colors", "White or black", "White or black"],
+            ["Technology", "NFC + QR code", "NFC + QR code"],
+          ],
+        },
+      },
+      {
+        heading: "The day it arrives: how to test it",
+        body: [
+          "The plate arrives working: there's nothing to install or scan to activate it. Before putting it out, tap your own phone against the plate and then scan the QR with the camera. Both should take you straight to the screen for leaving a review for your business.",
+          "If you have the no-stand version, stick it down with the adhesive already on the back, on a clean, dry surface. If you have the Stand, just set it in place.",
+          "Run the test with your phone and, if you can, someone else's, for example an Android and an iPhone. That confirms the flow works the same for someone without your setup. If something doesn't take you where you expected, message us on WhatsApp with a screenshot and we'll look into it.",
+        ],
+      },
+      {
+        heading: "How your customer uses it",
+        body: [
+          "Your customer has two paths and both end in the same place: tap their phone against the plate (NFC) or scan the QR code with the camera. They install nothing. NFC is the same \"tap to pay\" technology used by contactless terminals.",
+          "The QR is the backup: it works when the phone has NFC turned off or when the person would rather use the camera. That's why the code should stay visible and uncovered, even though NFC is the quickest route.",
+          "A good moment to mention it is when your customer is already happy: at checkout, when picking up an order, or at the end of an appointment. One short sentence is enough: \"If you were happy today, you can leave us a review by tapping your phone here\".",
+        ],
+      },
+      {
+        heading: "Where to place it so it gets used",
+        body: [
+          "Place it where your customer is already in front of you when deciding whether they were satisfied: next to the register, on the front desk, on the table when the bill arrives, or on the desk at the end of an appointment. Avoid corners or far-off walls where nobody stops.",
+          "Make sure the front of the plate isn't hidden behind objects, card holders, or cables, because NFC is read by bringing the phone close and the QR needs to be fully visible. Check once in a while that it's clean and in plain sight.",
         ],
       },
       {
         heading: "If your business changes its name or Google listing",
         body: [
-          "Message us on WhatsApp and we'll sort it out with you: depending on the case, it can be solved by reprogramming the same plate or may require a new one. It's not something the end customer can change on their own from their phone, precisely to prevent anyone else from reconfiguring it without you knowing.",
+          "Message us on WhatsApp and we'll sort it out with you: depending on the case, it can be solved by reprogramming the same plate or may require a new one. Tell us what changed and what the new link is so we can give you a concrete answer.",
+          "It's not something the end customer can change on their own from their phone, precisely to prevent anyone else from reconfiguring it without you knowing. If the plate leads to the wrong listing, tell us before putting it into use.",
         ],
       },
     ],
+    faq: [
+      {
+        q: "Do I have to program the NFC myself?",
+        a: "No. We program the NFC and generate the QR code with your Google review link before shipping your plate, so it arrives ready to use.",
+      },
+      {
+        q: "What details do you ask for after I buy?",
+        a: "Your Google review link or your business's exact name as it appears on Google. We ask over WhatsApp to configure your plate before producing it.",
+      },
+      {
+        q: "Do my customers need to install an app?",
+        a: "No. They just tap their phone to read the NFC or scan the QR with the camera, with nothing to install.",
+      },
+      {
+        q: "Is there a subscription or monthly fee?",
+        a: "No. It's a one-time payment and the plate needs no app or subscription to work.",
+      },
+      {
+        q: "How do I stick it down?",
+        a: "The Plate has adhesive on the back, ready to stick on a counter, register, or table. The Stand needs no glue: it has its own base and stands upright on a flat surface.",
+      },
+      {
+        q: "What are the sizes?",
+        a: "The Plate is 12 × 12 cm and 0.2 cm thick. The Stand is 12.75 cm tall and 7.6 cm wide, with a 5 cm deep base.",
+      },
+      {
+        q: "What colors does it come in?",
+        a: "White and black, at the same price in both.",
+      },
+      {
+        q: "What if my business changes its name or listing?",
+        a: "Message us on WhatsApp. Depending on the case, the same plate can be reprogrammed or a new one may be needed.",
+      },
+    ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"], BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"]],
   },
   {
     slug: BLOG_SLUG_EN["papeleria-personalizada-vs-plantillas-genericas"],

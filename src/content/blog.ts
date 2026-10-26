@@ -1288,30 +1288,100 @@ export const blogPosts: BlogPost[] = [
     title: "Cómo usar tu placa de reseñas de Google Yume: no necesitas configurar nada",
     metaTitle: "Cómo usar tu placa de reseñas de Google Yume",
     description:
-      "Qué necesitas mandarnos para que tu placa NFC y QR llegue lista para usar, y qué hacer (y qué no) el día que la recibes.",
+      "Qué enlace mandarnos, cómo probar tu placa NFC y QR el día que llega y dónde colocarla para que tus clientes dejen su reseña en segundos.",
     category: "Guías",
     publishedAt: "2026-09-15",
+    modifiedAt: "2026-10-26",
     intro:
-      "A diferencia de otras placas NFC que venden \"en blanco\" y te piden programarlas tú mismo con una app, en Yume el NFC y el QR ya vienen configurados con el enlace de tu negocio desde que la producimos: la sacas de la caja y ya está lista para que tus clientes la usen.",
+      "A diferencia de otras placas NFC que venden \"en blanco\" y te piden programarlas tú mismo con una app, en Yume el NFC y el QR ya vienen configurados con el enlace de tu negocio desde que la producimos: la sacas de la caja y ya está lista para que tus clientes la usen. Esta guía te explica, paso a paso, qué nos mandas, cómo la pruebas, dónde la pones y qué hacer si algo cambia en tu negocio.",
     sections: [
       {
         heading: "Qué necesitamos de ti antes de producirla",
         body: [
-          "Después de tu compra te pedimos por WhatsApp el enlace de tu reseña de Google (o el nombre exacto de tu negocio tal como aparece en Google, si no tienes el enlace a la mano). Con eso programamos el NFC y generamos el código QR antes de imprimir y enviar tu placa.",
+          "Solo necesitamos el enlace de tu reseña de Google o, si no lo tienes a la mano, el nombre exacto de tu negocio tal como aparece en Google. Después de tu compra te lo pedimos por WhatsApp, y con eso programamos el NFC y generamos el código QR antes de producir tu placa.",
+          "Mientras más preciso sea el dato, mejor: si tu negocio comparte nombre con otros, mándanos el enlace directo o la dirección de tu ficha para que la placa lleve a la correcta. Para eso existe este paso: tus clientes no tendrán que buscarte entre resultados parecidos.",
+          "No tienes que descargar ninguna app, crear una cuenta con nosotros ni pagar una suscripción. Es un pago único y la placa no depende de ningún servicio mensual para funcionar.",
         ],
       },
       {
-        heading: "El día que la recibes",
+        heading: "Qué incluye y qué tamaño tiene cada versión",
         body: [
-          "No hay que instalar ninguna app ni escanear nada para \"activarla\": la placa llega funcionando. Solo tienes que colocarla donde tus clientes la vean (mostrador, caja, mesa) y, si es la versión sin base, pegarla con el adhesivo que ya trae en la parte trasera.",
-          "Para probar que funciona antes de dejarla en el mostrador, simplemente acerca tu propio teléfono o escanea el QR: debería llevarte directo a la pantalla para dejar una reseña de tu negocio.",
+          "Hay dos versiones con la misma configuración: la Placa, de 12 × 12 cm y 0.2 cm de grosor, con adhesivo para pegarla, y el Stand, de 12.75 cm de alto y 7.6 cm de ancho, con base de 5 cm de profundidad para colocarlo de pie. Ambas vienen en blanco o negro y llevan NFC y código QR.",
+          "Elige la Placa si tienes un punto fijo donde pegarla, como la pared junto a la caja o el frente del mostrador. Elige el Stand si la vas a cambiar de lugar o prefieres no usar adhesivo, porque se apoya sobre cualquier superficie plana. Las dos se producen sobre pedido.",
+        ],
+        table: {
+          headers: ["", "Placa", "Stand"],
+          rows: [
+            ["Medidas", "12 × 12 cm, 0.2 cm de grosor", "12.75 cm de alto, 7.6 cm de ancho, base de 5 cm"],
+            ["Cómo se coloca", "Con adhesivo incluido", "De pie, sin pegamento ni cinta"],
+            ["Colores", "Blanco o negro", "Blanco o negro"],
+            ["Tecnología", "NFC + código QR", "NFC + código QR"],
+          ],
+        },
+      },
+      {
+        heading: "El día que la recibes: cómo probarla",
+        body: [
+          "La placa llega funcionando: no hay nada que instalar ni escanear para activarla. Antes de dejarla a la vista, acerca tu propio teléfono a la placa y, después, escanea el QR con la cámara. Ambos deben llevarte directo a la pantalla para dejar una reseña de tu negocio.",
+          "Si usas la versión sin base, pégala con el adhesivo que ya trae en la parte trasera, en una superficie limpia y seca. Si usas el Stand, solo colócalo en su lugar.",
+          "Haz la prueba con tu teléfono y, si puedes, con el de alguien más, por ejemplo un Android y un iPhone. Así confirmas que el recorrido funciona igual para quien no tiene tu configuración. Si algo no te lleva a donde esperabas, escríbenos por WhatsApp con una captura y lo revisamos.",
+        ],
+      },
+      {
+        heading: "Cómo lo usa tu cliente",
+        body: [
+          "Tu cliente tiene dos caminos y ambos terminan en el mismo lugar: acerca su teléfono a la placa (NFC) o escanea el código QR con la cámara. No instala nada. El NFC es la misma tecnología de \"toca para pagar\" que usan las terminales sin contacto.",
+          "El QR existe como respaldo: sirve cuando el teléfono tiene el NFC desactivado o cuando la persona prefiere usar la cámara. Por eso conviene que el código quede visible y sin tapar, aunque el NFC sea la vía más rápida.",
+          "Un buen momento para mencionarla es cuando tu cliente ya está contento: al pagar, al recoger su pedido o al terminar la consulta. Una frase breve basta: \"Si hoy quedaste a gusto, puedes dejarnos tu reseña tocando aquí con tu teléfono\".",
+        ],
+      },
+      {
+        heading: "Dónde colocarla para que se use",
+        body: [
+          "Colócala donde tu cliente ya esté frente a ti en el momento de decidir si quedó satisfecho: junto a la caja, en el mostrador de recepción, en la mesa al llegar la cuenta o en el escritorio al terminar una consulta. Evita esquinas o paredes alejadas, donde nadie se detiene.",
+          "Cuida que el frente de la placa no quede detrás de objetos, tarjeteros o cables, porque el NFC se lee acercando el teléfono y el QR necesita verse completo. Revisa de vez en cuando que siga limpia y a la vista.",
         ],
       },
       {
         heading: "Si tu negocio cambia de nombre o de ficha de Google",
         body: [
-          "Escríbenos por WhatsApp y lo revisamos contigo: dependiendo del caso, puede resolverse reprogramando la misma placa o puede requerir una nueva. No es algo que el cliente final pueda cambiar por su cuenta desde el teléfono, precisamente para evitar que alguien más la reconfigure sin que tú lo sepas.",
+          "Escríbenos por WhatsApp y lo revisamos contigo: dependiendo del caso, puede resolverse reprogramando la misma placa o puede requerir una nueva. Cuéntanos qué cambió y cuál es el enlace nuevo, para darte una respuesta concreta.",
+          "No es algo que el cliente final pueda cambiar por su cuenta desde el teléfono, precisamente para evitar que alguien más la reconfigure sin que tú lo sepas. Si la placa lleva a una ficha equivocada, avísanos antes de dejarla en uso.",
         ],
+      },
+    ],
+    faq: [
+      {
+        q: "¿Tengo que programar el NFC yo mismo?",
+        a: "No. Nosotros programamos el NFC y generamos el código QR con el enlace de tu reseña de Google antes de enviarte tu placa, así que la recibes lista para usar.",
+      },
+      {
+        q: "¿Qué datos me piden después de comprar?",
+        a: "El enlace de tu reseña de Google o el nombre exacto de tu negocio tal como aparece en Google. Te lo pedimos por WhatsApp para configurar tu placa antes de producirla.",
+      },
+      {
+        q: "¿Mis clientes necesitan instalar una app?",
+        a: "No. Solo acercan el teléfono para leer el NFC o escanean el QR con la cámara, sin instalar nada.",
+      },
+      {
+        q: "¿Hay suscripción o pagos mensuales?",
+        a: "No. Es un pago único y la placa no necesita ninguna aplicación ni suscripción para funcionar.",
+      },
+      {
+        q: "¿Cómo la pego?",
+        a: "La Placa trae adhesivo en la parte trasera, lista para pegarse en mostrador, caja o mesa. El Stand no necesita pegamento: tiene base propia y se coloca de pie sobre una superficie plana.",
+      },
+      {
+        q: "¿Qué medidas tienen?",
+        a: "La Placa mide 12 × 12 cm con 0.2 cm de grosor. El Stand mide 12.75 cm de alto y 7.6 cm de ancho, con base de 5 cm de profundidad.",
+      },
+      {
+        q: "¿En qué colores viene?",
+        a: "En blanco y en negro, con el mismo precio en ambos colores.",
+      },
+      {
+        q: "¿Qué hago si mi negocio cambia de nombre o de ficha?",
+        a: "Escríbenos por WhatsApp. Según el caso, se puede reprogramar la misma placa o puede hacer falta una nueva.",
       },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
