@@ -1064,36 +1064,126 @@ export const blogPostsEn: BlogPost[] = [
     slug: BLOG_SLUG_EN["yume-vs-imprentas-recetarios-medicos"],
     title: "Yume vs. Other Medical Prescription Pad Print Shops: A Real Price Comparison",
     metaTitle: "Yume vs. Other Prescription Pad Print Shops",
-    description:
-      "We compared the price and what's included in Yume's custom medical prescription pad against real Mexican print shops: using real public pricing data.",
+    description: `Yume's custom medical prescription pad vs. Mexican print shops: $${recetarioPrice("sin-diseno")} without design, $${recetarioPrice("con-diseno")} with design, what's included and what to check.`,
     category: "Guides",
     publishedAt: "2026-09-09",
+    modifiedAt: "2026-10-26",
     intro:
-      "Before requesting a quote for your custom medical prescription pad, it's worth knowing whether the price you're being offered is actually competitive: and more importantly, what it includes. In September 2026 we checked the public prices of several Mexican medical-prescription-pad print shops: here are the real numbers, compared against Yume's.",
+      "Before requesting a quote for your custom medical prescription pad, it's worth knowing what the price includes, not just what it costs. In September 2026 we checked the public prices of several Mexican prescription-pad print shops and compared them against Yume's. Here you'll find the numbers, what each option includes, and a checklist of what to review in any quote, so you can choose calmly and without surprises.",
     sections: [
       {
-        heading: "How we compared",
+        heading: "How do we compare other print shops' prescription pads with Yume's?",
         body: [
-          "We took the public price each print shop lists on its site for a 100-sheet, Half-Letter custom medical prescription pad, and noted whether the price includes letterhead design work: not just printing.",
-          "Every price is the one published directly on each competitor's site as of that date: none of them are estimates.",
+          "We compared the same thing every time: the public price of a 100-sheet, Half-Letter custom medical prescription pad, and whether that price includes the letterhead design. That way you see the cost of the whole job, not just printing. The data comes from each print shop's own site in September 2026.",
+          "Every price is the one published directly on each competitor's site as of that date: none of them are estimates. Prices can change over time, so confirm the current price on each print shop's site before deciding.",
+          "We noted the letterhead design because it's the part most often overlooked. A pad with your name, specialty, license number and practice address needs a design before it's printed, and someone has to make it: you, an outside designer, or the print shop.",
         ],
       },
       {
-        heading: "The numbers",
+        heading: "How much do prescription pads cost at other print shops and at Yume?",
         body: [
-          "Among the Mexican prescription-pad print shops we reviewed, prices range from $300 to $900 MXN per batch (from 100 sheets to a full block), on Bond or Opalina paper: and none of the options we checked clarifies or includes letterhead design work as part of the price; in some cases it isn't even mentioned.",
-          "Yume: $320 MXN without design (if you already have your letterhead ready) or $400 MXN with design included (we build it with you from scratch), on 90 gr Bond paper, with a digital proof approved before printing.",
+          `Among the Mexican print shops we reviewed, public prices range from $300 to $900 MXN per batch, on Bond or Opalina paper. At Yume, the 100-sheet pad costs $${recetarioPrice("sin-diseno")} MXN with your design ready or $${recetarioPrice("con-diseno")} MXN with letterhead design included, on 90 gr Bond paper.`,
+          "The batches we reviewed run from 100 sheets to a full block, so before comparing numbers it helps to check how many sheets each one includes. None of the options we checked clarifies or includes letterhead design as part of the price; in some cases it isn't even mentioned.",
+        ],
+        table: {
+          headers: ["Option", "Price", "Letterhead design"],
+          rows: [
+            ["Yume: without design (100 Half-Letter sheets)", `$${recetarioPrice("sin-diseno")} MXN`, "Not included: you bring your design"],
+            ["Yume: with design (100 Half-Letter sheets)", `$${recetarioPrice("con-diseno")} MXN`, "Included: we build it with you"],
+            ["Mexican print shops reviewed (September 2026)", "$300 to $900 MXN per batch", "Not stated in the public price"],
+          ],
+        },
+      },
+      {
+        heading: "What does Yume's prescription pad include besides the price?",
+        body: [
+          "It includes 100 Half-Letter sheets (14 × 21.5 cm) on white 90 gr Bond paper, your letterhead with name, license number, specialty and practice address, and a digital proof you approve before we produce. With the design option, we build the letterhead with you from scratch.",
+          "We produce to order, so your pad is made with your details and doesn't come from generic stock. You can send us your design in an editable format or ask us to design it with you, and the approval step is the same either way.",
+          "If you've ordered or plan to order a business card for your practice, we can use the same letterhead on both pieces. We explain it in the guide to business cards for your practice.",
         ],
       },
       {
-        heading: "What this means for you",
+        heading: "When does the without-design option make sense, and when the with-design one?",
         body: [
-          "On base price, Yume is among the most affordable options we reviewed: but none of the others offer design work as part of the price. We didn't find a single print shop advertising \"we design your letterhead with you\" included in the cost, which is exactly what Yume's $400 tier covers.",
-          "If you already have your letterhead sorted, Yume's price is already among the lowest we reviewed. If you don't, the with-design tier saves you from having to sort that out yourself before you can print: something none of the competitors we reviewed include in their public pricing.",
+          "Choose without design if you already have your letterhead as an editable file with logo, details and layout. Choose with design if it's your first custom pad, the one you use looks dated, or you don't have the file handy. You can switch options over WhatsApp before approving the digital proof.",
+          "With design, you give us your details (name, professional license number, specialty and practice address), we build a visual proposal and adjust it with you until it looks the way you want, before printing.",
+          "Without design is the most direct route when the design work is already done, for example with a designer or a previous print shop. You'll find the full detail of both options in the guide to prescription pad with design vs. without design.",
+        ],
+      },
+      {
+        heading: "What should you check in any prescription pad quote?",
+        body: [
+          "Check five things: how many sheets the batch includes, the size, the paper, whether the letterhead design is included, and whether you get a digital proof before printing. With those you compare equivalent quotes, even if the final price differs from one print shop to another.",
+          "Always ask to see a proof before production. The most common mistakes are in the professional license number and the phone number, and finding them after all 100 sheets are printed means redoing the job. On the proof, compare every detail against your license and your real information.",
+          "On the content of the prescription, NOM-004-SSA3-2012 requires clinical record notes to carry the date, time and full name of the person who writes them, in legible handwriting, and it does not define a specific prescription format. This is general information: your medical association, your state or the institution where you work may ask for more, so confirm before printing.",
+          "To see which details are preprinted on the letterhead and which are filled in per patient, read the guide to the medical prescription format in Mexico.",
+        ],
+      },
+      {
+        heading: "How long does it take and how much is shipping for a prescription pad?",
+        body: [
+          `The digital proof normally arrives within 24 hours of payment. Once you approve it, Casa Blanca pickup takes ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days and home delivery ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days. Shipping anywhere in Mexico is $${NATIONAL_SHIPPING_PRICE} MXN.`,
+          `Orders of $${FREE_SHIPPING_THRESHOLD} MXN or more get free shipping and pickup. If you prefer to pick up, there are ${CASABLANCA_BRANCHES.length} Casa Blanca branches in the Guadalajara metro area. These timeframes count business days only.`,
+          "We produce in Guadalajara and ship anywhere in Mexico. Since design approval happens remotely, the process is the same whether your practice is in Zapopan, Monterrey or any other city.",
+        ],
+      },
+      {
+        heading: "What does this comparison mean for you?",
+        body: [
+          `What changes between quotes isn't just the printing price, but who takes care of the letterhead. At the print shops we reviewed, design doesn't appear in the public price; at Yume, the $${recetarioPrice("con-diseno")} MXN option includes it and you approve it before printing.`,
+          "We didn't find a single print shop advertising \"we design your letterhead with you\" included in the cost, which is exactly what Yume's with-design option covers. If your letterhead is already sorted, the without-design option takes you straight to production.",
+          "If it isn't, the with-design option saves you from sorting it out yourself or hiring someone else before you can print. Message us on WhatsApp with your details and we'll help you pick the option that suits you.",
         ],
       },
     ],
+    faq: [
+      {
+        q: "How much does Yume's custom medical prescription pad cost?",
+        a: `The 100-sheet Half-Letter pad costs $${recetarioPrice("sin-diseno")} MXN if you already have your design and $${recetarioPrice("con-diseno")} MXN if we design it with you.`,
+      },
+      {
+        q: "What's the difference between with design and without design?",
+        a: "With design means we build your letterhead with you from scratch. Without design is for when you already have the letterhead as an editable file and only need us to print it.",
+      },
+      {
+        q: "What size and paper is the pad?",
+        a: "It's 100 sheets, Half-Letter size (14 × 21.5 cm), on white 90 gr Bond paper.",
+      },
+      {
+        q: "Do I see the design before it's printed?",
+        a: "Yes. We send you a digital proof and only send it to production once you approve it. Check your license number and phone number there.",
+      },
+      {
+        q: "How long does my order take?",
+        a: `The digital proof normally arrives within 24 hours of payment. Once you approve it, home delivery takes ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days and Casa Blanca pickup ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days.`,
+      },
+      {
+        q: "Do you ship outside Guadalajara?",
+        a: `Yes. We produce in Guadalajara and ship anywhere in Mexico for $${NATIONAL_SHIPPING_PRICE} MXN, free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more.`,
+      },
+      {
+        q: "Does NOM-004 define a prescription format?",
+        a: "No. NOM-004-SSA3-2012 does not establish a specific prescription format. It requires clinical record notes to carry the date, time and full name of the person who writes them, in legible handwriting. Confirm with your association or institution if they ask for more.",
+      },
+      {
+        q: "Are the other print shops' prices still current?",
+        a: "They're the public prices we reviewed in September 2026 and can change. Confirm the current price on each print shop's site before deciding.",
+      },
+    ],
     relatedProductSlugs: ["recetario-medico-personalizado"],
+    relatedBlogSlugs: [
+      BLOG_SLUG_EN["recetarios-medicos-personalizados-guadalajara"],
+      BLOG_SLUG_EN["recetario-medico-impreso-vs-digital"],
+      BLOG_SLUG_EN["recetario-medico-con-diseno-vs-sin-diseno"],
+      BLOG_SLUG_EN["datos-obligatorios-receta-medica-mexico"],
+      BLOG_SLUG_EN["tarjetas-de-presentacion-consultorio"],
+    ],
+    sources: [
+      {
+        label: "NOM-004-SSA3-2012, Diario Oficial de la Federación",
+        url: "https://dof.gob.mx/nota_detalle_popup.php?codigo=5272787",
+      },
+    ],
   },
   {
     slug: BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"],

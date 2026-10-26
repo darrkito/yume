@@ -1099,37 +1099,120 @@ export const blogPosts: BlogPost[] = [
     slug: "yume-vs-imprentas-recetarios-medicos",
     title: "Yume vs. otras imprentas de recetarios médicos: comparación real de precios",
     metaTitle: "Yume vs. otras imprentas de recetarios médicos",
-    description:
-      "Comparamos el precio y lo que incluye el recetario médico personalizado de Yume contra imprentas mexicanas reales: con datos reales de precios públicos.",
+    description: `Recetario médico personalizado de Yume vs. imprentas mexicanas: $${recetarioPrice("sin-diseno")} sin diseño, $${recetarioPrice("con-diseno")} con diseño, qué incluye y qué revisar al cotizar.`,
     category: "Guías",
     publishedAt: "2026-09-09",
+    modifiedAt: "2026-10-26",
     intro:
-      "Antes de cotizar tu recetario médico personalizado vale la pena saber si el precio que te están dando es competitivo: y sobre todo, qué incluye. En septiembre de 2026 revisamos los precios públicos de varias imprentas mexicanas de recetarios médicos: aquí están los números reales, comparados contra los de Yume.",
+      "Antes de cotizar tu recetario médico personalizado vale la pena saber qué incluye el precio que te dan, y no solo cuánto cuesta. En septiembre de 2026 revisamos los precios públicos de varias imprentas mexicanas de recetarios médicos y los comparamos contra los de Yume. Aquí encuentras los números, lo que incluye cada opción y una lista de qué revisar en cualquier cotización, para que elijas con calma y sin sorpresas.",
     sections: [
       {
-        heading: "Cómo comparamos",
+        heading: "¿Cómo comparamos los recetarios de otras imprentas con el de Yume?",
         body: [
-          "Tomamos el precio público que cada imprenta muestra en su sitio para recetarios médicos personalizados de 100 hojas tamaño Media Carta, y anotamos si el precio incluye o no el servicio de diseño del membrete: no solo el precio de impresión.",
-          "Todos los precios son los publicados directamente en el sitio de cada competidor a esa fecha; no son estimaciones.",
+          "Comparamos lo mismo en todos los casos: el precio público de un recetario médico personalizado de 100 hojas Media Carta y si ese precio incluye el diseño del membrete. Así ves el costo del trabajo completo y no solo el de la impresión. Los datos vienen de los sitios de cada imprenta en septiembre de 2026.",
+          "Todos los precios son los publicados directamente en el sitio de cada competidor a esa fecha; no son estimaciones. Pueden cambiar con el tiempo, así que antes de decidir confirma el precio vigente en el sitio de cada imprenta.",
+          "Anotamos el diseño del membrete porque es la parte que más se pasa por alto. Un recetario con tu nombre, tu especialidad, tu cédula y la dirección de tu consultorio necesita un diseño antes de imprimirse, y alguien tiene que hacerlo: tú, un diseñador externo o la imprenta.",
         ],
       },
       {
-        heading: "Los números",
+        heading: "¿Cuánto cuestan los recetarios médicos en otras imprentas y en Yume?",
         body: [
-          "Entre las imprentas mexicanas de recetarios médicos que revisamos, los precios van de $300 a $900 MXN por partida (de 100 hojas a un bloque completo), en papel Bond u Opalina: y ninguna de las opciones revisadas aclara o incluye el servicio de diseño del membrete como parte del precio; en algunos casos ni siquiera lo menciona.",
-          "Yume: $320 MXN sin diseño (si ya tienes tu membrete listo) o $400 MXN con diseño incluido (lo armamos contigo desde cero), en papel Bond 90 gr, con prueba digital aprobada antes de imprimir.",
+          `Entre las imprentas mexicanas que revisamos, los precios públicos van de $300 a $900 MXN por partida, en papel Bond u Opalina. En Yume, el recetario de 100 hojas cuesta $${recetarioPrice("sin-diseno")} MXN con tu diseño listo o $${recetarioPrice("con-diseno")} MXN con el diseño del membrete incluido, en papel Bond 90 gr.`,
+          "Las partidas que revisamos van de 100 hojas a un bloque completo, así que antes de comparar números conviene fijarse en cuántas hojas trae cada una. Ninguna de las opciones revisadas aclara o incluye el diseño del membrete como parte del precio; en algunos casos ni siquiera lo menciona.",
+        ],
+        table: {
+          headers: ["Opción", "Precio", "Diseño del membrete"],
+          rows: [
+            ["Yume: sin diseño (100 hojas Media Carta)", `$${recetarioPrice("sin-diseno")} MXN`, "No incluido: llevas tu diseño listo"],
+            ["Yume: con diseño (100 hojas Media Carta)", `$${recetarioPrice("con-diseno")} MXN`, "Incluido: lo armamos contigo"],
+            ["Imprentas mexicanas revisadas (septiembre 2026)", "$300 a $900 MXN por partida", "No aclarado en el precio público"],
+          ],
+        },
+      },
+      {
+        heading: "¿Qué incluye el recetario de Yume además del precio?",
+        body: [
+          "Incluye 100 hojas Media Carta (14 × 21.5 cm) en papel Bond 90 gr blanco, tu membrete con nombre, cédula, especialidad y dirección del consultorio, y una prueba digital que apruebas antes de producir. En la opción con diseño, armamos el membrete contigo desde cero.",
+          "Producimos sobre pedido, así que tu recetario se hace con tus datos y no sale de un stock genérico. Puedes enviarnos tu diseño en formato editable o pedirnos que lo diseñemos contigo, y en ambos casos el paso de aprobación es el mismo.",
+          "Si ya pediste o piensas pedir una tarjeta de presentación para tu consultorio, podemos usar el mismo membrete en las dos piezas. Lo explicamos en la guía de tarjetas de presentación para tu consultorio.",
         ],
       },
       {
-        heading: "Qué significa esto para ti",
+        heading: "¿Cuándo conviene la opción sin diseño y cuándo la opción con diseño?",
         body: [
-          "En precio base, Yume está entre las opciones más económicas del mercado que revisamos: pero ninguna de las demás ofrece servicio de diseño como parte del precio. No encontramos ninguna imprenta que anuncie \"diseñamos tu membrete contigo\" incluido en el costo, que es justo lo que cubre el tier de $400 de Yume.",
-          "Si ya tienes tu membrete resuelto, el precio de Yume ya es de los más bajos del mercado que revisamos. Si no lo tienes, el tier con diseño te ahorra tener que resolverlo por tu cuenta antes de poder imprimir: algo que ninguno de los competidores revisados incluye en su precio público.",
+          "Elige sin diseño si ya tienes tu membrete en un archivo editable con logo, datos y distribución. Elige con diseño si es tu primer recetario personalizado, el que usas se ve anticuado o no tienes el archivo a la mano. Puedes cambiar de opción por WhatsApp antes de aprobar la prueba digital.",
+          "Con diseño, nos das tus datos (nombre, cédula profesional, especialidad y dirección del consultorio), armamos una propuesta visual y la ajustamos contigo hasta que quede como quieres, antes de imprimir.",
+          "Sin diseño es la ruta más directa cuando el trabajo de diseño ya está hecho, por ejemplo con un diseñador o con una imprenta anterior. Tienes el detalle completo de ambas opciones en la guía de recetario con diseño vs. sin diseño.",
+        ],
+      },
+      {
+        heading: "¿Qué debes revisar en cualquier cotización de recetarios médicos?",
+        body: [
+          "Revisa cinco cosas: cuántas hojas trae la partida, el tamaño, el papel, si el diseño del membrete va incluido y si recibes una prueba digital antes de imprimir. Con esos datos comparas cotizaciones equivalentes, aunque el precio final cambie de una imprenta a otra.",
+          "Pide ver siempre una prueba antes de producir. Los errores más comunes están en la cédula profesional y en el teléfono, y descubrirlos con las 100 hojas ya impresas obliga a repetir el trabajo. En la prueba, compara cada dato contra tu cédula y tus datos reales.",
+          "Sobre el contenido de la receta, la NOM-004-SSA3-2012 pide que las notas del expediente clínico lleven fecha, hora y nombre completo de quien las elabora, con letra legible, y no define un formato específico de receta. Es información general: tu colegio, tu estado o la institución donde trabajas pueden pedir algo más, así que confírmalo antes de imprimir.",
+          "Para ver qué datos van preimpresos en el membrete y cuáles se llenan por paciente, lee la guía sobre el formato de receta médica en México.",
+        ],
+      },
+      {
+        heading: "¿Cuánto tarda y cuánto cuesta el envío de un recetario?",
+        body: [
+          `La prueba digital llega normalmente en un máximo de 24 horas después del pago. Desde que la apruebas, recoger en Casa Blanca toma ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles y el envío a domicilio ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles. El envío a todo México cuesta $${NATIONAL_SHIPPING_PRICE} MXN.`,
+          `Las compras de $${FREE_SHIPPING_THRESHOLD} MXN o más tienen envío y recolección gratis. Si prefieres recoger, tienes ${CASABLANCA_BRANCHES.length} sucursales Casa Blanca en la zona metropolitana de Guadalajara. Esos plazos cuentan solo días hábiles.`,
+          "Producimos en Guadalajara y enviamos a cualquier parte de México. Como la aprobación del diseño se hace a distancia, el proceso es el mismo si tu consultorio está en Zapopan, Monterrey o en cualquier otra ciudad.",
+        ],
+      },
+      {
+        heading: "¿Qué significa esta comparación para ti?",
+        body: [
+          "Lo que cambia entre cotizaciones no es solo el precio de impresión, sino quién resuelve el membrete. En las imprentas que revisamos, el diseño no aparece en el precio público; en Yume, la opción de $" + recetarioPrice("con-diseno") + " MXN lo incluye y se aprueba contigo antes de imprimir.",
+          "No encontramos ninguna imprenta que anunciara \"diseñamos tu membrete contigo\" dentro del costo, que es justo lo que cubre la opción con diseño de Yume. Si ya tienes tu membrete resuelto, la opción sin diseño te lleva directo a producción.",
+          "Si no lo tienes, la opción con diseño te ahorra resolverlo por tu cuenta o contratar a alguien más antes de poder imprimir. Escríbenos por WhatsApp con tus datos y te ayudamos a elegir la opción que te conviene.",
         ],
       },
     ],
+    faq: [
+      {
+        q: "¿Cuánto cuesta el recetario médico personalizado de Yume?",
+        a: `El recetario de 100 hojas Media Carta cuesta $${recetarioPrice("sin-diseno")} MXN si ya tienes tu diseño y $${recetarioPrice("con-diseno")} MXN si lo diseñamos contigo.`,
+      },
+      {
+        q: "¿Qué diferencia hay entre con diseño y sin diseño?",
+        a: "Con diseño incluye que armemos tu membrete contigo desde cero. Sin diseño es para cuando ya tienes el membrete en un archivo editable y solo necesitas que lo imprimamos.",
+      },
+      {
+        q: "¿Qué tamaño y qué papel tiene el recetario?",
+        a: "Son 100 hojas tamaño Media Carta (14 × 21.5 cm), en papel Bond 90 gr blanco.",
+      },
+      {
+        q: "¿Veo el diseño antes de que se imprima?",
+        a: "Sí. Te enviamos una prueba digital y solo mandamos a producción cuando la apruebas. Revisa ahí tu cédula y tu teléfono.",
+      },
+      {
+        q: "¿Cuánto tarda mi pedido?",
+        a: `La prueba digital llega normalmente en un máximo de 24 horas después del pago. Desde que la apruebas, el envío a domicilio toma ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles y la recolección en Casa Blanca ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles.`,
+      },
+      {
+        q: "¿Envían fuera de Guadalajara?",
+        a: `Sí. Producimos en Guadalajara y enviamos a todo México por $${NATIONAL_SHIPPING_PRICE} MXN, gratis en compras de $${FREE_SHIPPING_THRESHOLD} MXN o más.`,
+      },
+      {
+        q: "¿La NOM-004 define un formato de receta?",
+        a: "No. La NOM-004-SSA3-2012 no establece un formato específico de receta. Pide que las notas del expediente clínico lleven fecha, hora y nombre completo de quien las elabora, con letra legible. Confirma con tu colegio o institución si te piden algo más.",
+      },
+      {
+        q: "¿Los precios de las otras imprentas siguen vigentes?",
+        a: "Son los precios públicos que revisamos en septiembre de 2026 y pueden cambiar. Confirma el precio actual en el sitio de cada imprenta antes de decidir.",
+      },
+    ],
     relatedProductSlugs: ["recetario-medico-personalizado"],
-    relatedBlogSlugs: ["recetarios-medicos-personalizados-guadalajara", "recetario-medico-impreso-vs-digital", "recetario-medico-con-diseno-vs-sin-diseno"],
+    relatedBlogSlugs: ["recetarios-medicos-personalizados-guadalajara", "recetario-medico-impreso-vs-digital", "recetario-medico-con-diseno-vs-sin-diseno", "datos-obligatorios-receta-medica-mexico", "tarjetas-de-presentacion-consultorio"],
+    sources: [
+      {
+        label: "NOM-004-SSA3-2012, Diario Oficial de la Federación",
+        url: "https://dof.gob.mx/nota_detalle_popup.php?codigo=5272787",
+      },
+    ],
   },
   {
     slug: "como-conseguir-mas-resenas-de-google-nfc-qr",
