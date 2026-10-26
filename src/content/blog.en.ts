@@ -483,32 +483,107 @@ export const blogPostsEn: BlogPost[] = [
       "The real difference between ordering your custom medical prescription pad with logo and design work included or print-only, their prices, and when each option makes sense.",
     category: "Guides",
     publishedAt: "2026-09-09",
+    modifiedAt: "2026-10-26",
     intro:
-      "When you request a quote for the custom medical prescription pad at Yume, you'll see two options at different prices: \"without design\" and \"with design.\" It's not just a price difference: it's a real difference in the work we do for you. Here's what each one includes so you can pick the right one.",
+      "When you request a quote for the custom medical prescription pad at Yume, you'll see two options at different prices: \"without design\" and \"with design.\" It's not just a price difference: it's a real difference in the work we do for you. Here's what each one includes, what you need to have ready, how the process works, and how long it takes, so you can pick the right one without going back and forth.",
     sections: [
       {
         heading: "What each option includes",
         body: [
-          "\"Without design\" ($320) is for when you already have your letterhead put together (an editable file with your logo, your details, and the layout you want) and you just need us to print it on the 100 Half-Letter sheets of 90 gr Bond paper.",
-          "\"With design\" ($400) includes designing the letterhead with you from scratch: you give us your details (name, professional license number, specialty, practice address) and we put together a visual proposal, which we adjust with you until it looks the way you want, before printing.",
+          `"Without design" ($${recetarioPrice("sin-diseno")}) is for when you already have your letterhead put together (an editable file with your logo, your details, and the layout you want) and you just need us to print it on the 100 Half-Letter sheets of 90 gr Bond paper.`,
+          `"With design" ($${recetarioPrice("con-diseno")}) includes designing the letterhead with you from scratch: you give us your details (name, professional license number, specialty, practice address) and we put together a visual proposal, which we adjust with you until it looks the way you want, before printing.`,
+          `The price gap between the two is $${recetarioPrice("con-diseno") - recetarioPrice("sin-diseno")}: that's what it costs to have someone build and refine your letterhead instead of you bringing it ready.`,
         ],
+        table: {
+          headers: ["", "Without design", "With design"],
+          rows: [
+            ["Price", `$${recetarioPrice("sin-diseno")}`, `$${recetarioPrice("con-diseno")}`],
+            ["Sheets per pad", "100", "100"],
+            ["Size and paper", "Half-Letter (14 × 21.5 cm), 90 gr Bond", "Half-Letter (14 × 21.5 cm), 90 gr Bond"],
+            ["Letterhead", "You send it as an editable file", "We design it with you from scratch"],
+            ["Digital proof before printing", "Yes", "Yes"],
+          ],
+        },
       },
       {
         heading: "When each one makes sense",
         body: [
-          "If you already worked out your letterhead with a designer or have it from a previous print shop in an editable format, \"without design\" is the faster, cheaper option: we're just producing what you've already sorted out.",
+          "Choose \"without design\" if you already have your letterhead as an editable file and only need it printed; choose \"with design\" if this is your first custom pad, your old one looks outdated, or you don't have the file on hand. The deciding factor is how finished your letterhead is today, not the size of your practice.",
+          "If you already worked out your letterhead with a designer or have it from a previous print shop in an editable format, \"without design\" is the faster, more affordable option: we're just producing what you've already sorted out.",
           "If this is your first custom prescription pad, your old one looks outdated, or you simply don't have the editable file on hand, \"with design\" saves you from having to sort that part out yourself or hire someone else before you can print.",
+          "A middle case: you have your logo but not a finished letterhead. \"With design\" fits there too, because the work is in laying out your logo and details on the page, not just printing them.",
+        ],
+      },
+      {
+        heading: "What you need ready to get started",
+        body: [
+          "For \"without design\" you need your letterhead as an editable file; for \"with design\" you only need your professional details and, if you have it, your logo. Either way, double-check your details before requesting a quote, because they're what ends up printed on all 100 sheets.",
+          "The details that usually go on a letterhead are your full name, specialty, professional license number (and specialty license, if applicable), practice address, phone number and, if you want, office hours. If you're unsure what to include, read our guide on what a medical prescription must include in Mexico.",
+          "If you work out of more than one practice, say so when you request the quote: the cleanest approach is usually one letterhead per location. Tell us how many you need on WhatsApp and we'll quote it with you.",
         ],
       },
       {
         heading: "The process is the same either way",
         body: [
-          "Whichever option you choose, the approval step is the same: before sending it to production, we send you a digital proof of the final letterhead, so you can confirm your license number, phone number, and every other detail are correct.",
+          "Whichever option you choose, the approval step is the same: before sending it to production, we send you a digital proof of the final letterhead. Nothing is printed until you approve it, so you can confirm your license number, phone number, and every other detail are correct.",
           "You can switch options during the quoting process if, once you see how it works, you'd rather have us design it: just let us know on WhatsApp before approving the digital proof.",
+          "Review the proof calmly, detail by detail: license number, phone number, and address matter most to get exactly right, because once you approve, it goes to production.",
+        ],
+      },
+      {
+        heading: "How long it takes and what shipping costs",
+        body: [
+          `The digital proof normally arrives within 24 hours of payment. Once you approve it, the pad reaches your door in ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days, or is ready for pickup at Casa Blanca in ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days. Timelines are the same with or without design.`,
+          `Shipping anywhere in Mexico costs $${NATIONAL_SHIPPING_PRICE} MXN, and it's free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more. The whole design is approved remotely, so the process is the same whether you live in Guadalajara or any other city in Mexico.`,
+        ],
+      },
+      {
+        heading: "How to decide in a minute",
+        body: [
+          "Ask yourself three questions: do I have my letterhead in a file I can edit, do I like how it looks, and do I have all my details on hand? If all three are yes, \"without design\" is enough. If any answer is no, \"with design\" solves that gap within the same order.",
+          "And once your pad is sorted, the same letterhead works as the base for other pieces for your practice, like your business cards, so you don't start from scratch each time.",
+          "If you're not sure, message us on WhatsApp with your file or logo and we'll tell you which option fits your case before you pay.",
         ],
       },
     ],
+    faq: [
+      {
+        q: "How much does the prescription pad cost with and without design?",
+        a: `The 100-sheet pad costs $${recetarioPrice("sin-diseno")} MXN if you already have your design and $${recetarioPrice("con-diseno")} MXN if we design it with you.`,
+      },
+      {
+        q: "What size and paper is the pad?",
+        a: "Half-Letter (14 × 21.5 cm), 100 sheets, on white 90 gr Bond paper. It's the same in both options.",
+      },
+      {
+        q: "What file do I need for the without-design option?",
+        a: "An editable file of your letterhead, with your logo, your details and the layout you want. If you don't have one, the with-design option covers it.",
+      },
+      {
+        q: "Is anything printed before I approve?",
+        a: "No. Before production we send you a digital proof of the letterhead and nothing goes to production until you approve it.",
+      },
+      {
+        q: "Can I switch from without design to with design?",
+        a: "Yes. Let us know on WhatsApp during the quote, before approving the digital proof.",
+      },
+      {
+        q: "How long does it take to arrive?",
+        a: `The digital proof normally arrives within 24 hours of payment. Once you approve it, it reaches your door in ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days, or is ready for pickup at Casa Blanca in ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days.`,
+      },
+      {
+        q: "Do you ship outside Guadalajara?",
+        a: `Yes, we ship anywhere in Mexico for $${NATIONAL_SHIPPING_PRICE} MXN, free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more.`,
+      },
+    ],
     relatedProductSlugs: ["recetario-medico-personalizado"],
+    relatedBlogSlugs: [
+      BLOG_SLUG_EN["recetarios-medicos-personalizados-guadalajara"],
+      BLOG_SLUG_EN["recetario-medico-impreso-vs-digital"],
+      BLOG_SLUG_EN["datos-obligatorios-receta-medica-mexico"],
+      BLOG_SLUG_EN["tarjetas-de-presentacion-consultorio"],
+      BLOG_SLUG_EN["yume-vs-imprentas-recetarios-medicos"],
+    ],
   },
   {
     slug: BLOG_SLUG_EN["datos-obligatorios-receta-medica-mexico"],

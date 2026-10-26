@@ -540,37 +540,104 @@ export const blogPosts: BlogPost[] = [
     slug: "recetario-medico-con-diseno-vs-sin-diseno",
     title: "Recetario médico con diseño vs. sin diseño: ¿cuál te conviene?",
     metaTitle: "Diseño de recetario médico: con o sin diseño",
-    description: "Recetario médico con diseño o sin diseño: qué incluye cada opción, cuánto cuesta ($320 sin diseño, $400 con diseño) y cuándo conviene cada una.",
+    description: `Recetario médico con diseño o sin diseño: qué incluye cada opción, cuánto cuesta ($${recetarioPrice("sin-diseno")} sin diseño, $${recetarioPrice("con-diseno")} con diseño) y cuándo conviene cada una.`,
     category: "Guías",
     publishedAt: "2026-09-09",
-    modifiedAt: "2026-10-17",
+    modifiedAt: "2026-10-26",
     intro:
-      "Al cotizar el recetario médico personalizado en Yume vas a ver dos opciones con precio distinto: \"sin diseño\" y \"con diseño\". No es solo una diferencia de precio: es una diferencia real en el trabajo que hacemos por ti. Aquí te explicamos qué incluye cada una para que elijas la que te conviene.",
+      "Al cotizar el recetario médico personalizado en Yume vas a ver dos opciones con precio distinto: \"sin diseño\" y \"con diseño\". No es solo una diferencia de precio: es una diferencia real en el trabajo que hacemos por ti. Aquí te explicamos qué incluye cada una, qué necesitas tener listo, cómo es el proceso y cuánto tarda, para que elijas la que te conviene sin dar vueltas.",
     sections: [
       {
         heading: "Qué incluye cada opción",
         body: [
-          "\"Sin diseño\" ($320) es para cuando ya tienes el membrete armado (un archivo editable con tu logo, tus datos y el layout que quieres) y solo necesitas que lo imprimamos en las 100 hojas Media Carta con papel Bond 90 gr.",
-          "\"Con diseño\" ($400) incluye que diseñemos el membrete contigo desde cero: nos das tus datos (nombre, cédula profesional, especialidad, dirección del consultorio) y armamos una propuesta visual, que ajustamos contigo hasta que quede como quieres, antes de imprimir.",
+          `"Sin diseño" ($${recetarioPrice("sin-diseno")}) es para cuando ya tienes el membrete armado (un archivo editable con tu logo, tus datos y el layout que quieres) y solo necesitas que lo imprimamos en las 100 hojas Media Carta con papel Bond 90 gr.`,
+          `"Con diseño" ($${recetarioPrice("con-diseno")}) incluye que diseñemos el membrete contigo desde cero: nos das tus datos (nombre, cédula profesional, especialidad, dirección del consultorio) y armamos una propuesta visual, que ajustamos contigo hasta que quede como quieres, antes de imprimir.`,
+          `La diferencia de precio entre una y otra es de $${recetarioPrice("con-diseno") - recetarioPrice("sin-diseno")}: es lo que cuesta que alguien arme y afine el diseño de tu membrete en lugar de que tú lo traigas resuelto.`,
         ],
+        table: {
+          headers: ["", "Sin diseño", "Con diseño"],
+          rows: [
+            ["Precio", `$${recetarioPrice("sin-diseno")}`, `$${recetarioPrice("con-diseno")}`],
+            ["Hojas por recetario", "100", "100"],
+            ["Tamaño y papel", "Media Carta (14 × 21.5 cm), Bond 90 gr", "Media Carta (14 × 21.5 cm), Bond 90 gr"],
+            ["Membrete", "Tú lo envías en formato editable", "Lo diseñamos contigo desde cero"],
+            ["Prueba digital antes de imprimir", "Sí", "Sí"],
+          ],
+        },
       },
       {
         heading: "Cuándo conviene cada una",
         body: [
-          "Si ya trabajaste tu membrete con un diseñador o lo tienes de una imprenta anterior en formato editable, \"sin diseño\" es la opción más rápida y barata: nosotros solo producimos lo que ya tienes resuelto.",
+          "Elige \"sin diseño\" si ya tienes tu membrete en un archivo editable y solo necesitas imprimirlo; elige \"con diseño\" si es tu primer recetario personalizado, si el que tenías se ve anticuado o si no tienes el archivo a la mano. La decisión depende de qué tan resuelto esté tu membrete hoy, no del tamaño de tu consultorio.",
+          "Si ya trabajaste tu membrete con un diseñador o lo tienes de una imprenta anterior en formato editable, \"sin diseño\" es la opción más rápida y económica: nosotros solo producimos lo que ya tienes resuelto.",
           "Si es tu primer recetario personalizado, si el que tenías se ve anticuado, o simplemente no tienes el archivo editable a la mano, \"con diseño\" te ahorra tener que resolver esa parte por tu cuenta o contratar a alguien más antes de poder imprimir.",
+          "Un caso intermedio: tienes tu logo pero no el membrete completo armado. Ahí también conviene \"con diseño\", porque el trabajo está en acomodar tu logo y tus datos en la hoja, no solo en imprimirlos.",
+        ],
+      },
+      {
+        heading: "Qué necesitas tener listo para empezar",
+        body: [
+          "Para \"sin diseño\" necesitas tu membrete en un archivo editable; para \"con diseño\" solo necesitas tus datos profesionales y, si lo tienes, tu logo. En ambos casos conviene revisar tus datos antes de cotizar, porque son lo que va a quedar impreso en las 100 hojas.",
+          "Los datos que normalmente van en el membrete son tu nombre completo, especialidad, número de cédula profesional (y cédula de especialidad si aplica), dirección del consultorio, teléfono y, si quieres, horario de consulta. Si tienes dudas sobre qué incluir, revisa nuestra guía sobre qué datos lleva una receta médica en México.",
+          "Si trabajas en más de un consultorio, dilo desde la cotización: lo más limpio suele ser un membrete por ubicación. Cuéntanos cuántos necesitas por WhatsApp y lo cotizamos contigo.",
         ],
       },
       {
         heading: "El proceso es el mismo en ambos casos",
         body: [
-          "Elijas la opción que elijas, el paso de aprobación es igual: antes de mandar a producción te enviamos una prueba digital del membrete final, así confirmas que la cédula, el teléfono y el resto de tus datos estén correctos.",
+          "Elijas la opción que elijas, el paso de aprobación es igual: antes de mandar a producción te enviamos una prueba digital del membrete final. Nada se imprime hasta que tú la apruebas, así confirmas que la cédula, el teléfono y el resto de tus datos estén correctos.",
           "Puedes cambiar de opción durante la cotización si al ver el proceso decides que prefieres que lo diseñemos nosotros: solo dínoslo por WhatsApp antes de aprobar la prueba digital.",
+          "Revisa la prueba con calma y dato por dato: la cédula, el número telefónico y la dirección son los que más importa que salgan exactos, porque después de la aprobación se manda a producción.",
+        ],
+      },
+      {
+        heading: "Cuánto tarda y cuánto cuesta el envío",
+        body: [
+          `La prueba digital llega normalmente en un máximo de 24 horas después del pago. Desde que la apruebas, el recetario llega a tu domicilio en ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles, o está listo para recoger en Casa Blanca en ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles. Los plazos son iguales con o sin diseño.`,
+          `El envío a cualquier parte de México cuesta $${NATIONAL_SHIPPING_PRICE}, y es gratis en compras de $${FREE_SHIPPING_THRESHOLD} o más. Todo el diseño se aprueba a distancia, así que el proceso es el mismo vivas en Guadalajara o en cualquier otra ciudad de México.`,
+        ],
+      },
+      {
+        heading: "Cómo decidir en un minuto",
+        body: [
+          "Hazte tres preguntas: ¿tengo mi membrete en un archivo que pueda editar?, ¿me gusta cómo se ve?, ¿tengo todos mis datos a la mano? Si respondes sí a las tres, \"sin diseño\" es suficiente. Si alguna respuesta es no, \"con diseño\" te resuelve ese pendiente dentro del mismo pedido.",
+          "Y si ya tienes el recetario resuelto, el mismo membrete te sirve de base para otras piezas del consultorio, como tus tarjetas de presentación, sin empezar de cero cada vez.",
+          "Si no estás seguro, escríbenos por WhatsApp con tu archivo o tu logo y te decimos cuál opción aplica a tu caso antes de que pagues.",
         ],
       },
     ],
+    faq: [
+      {
+        q: "¿Cuánto cuesta el recetario médico con y sin diseño?",
+        a: `El recetario de 100 hojas cuesta $${recetarioPrice("sin-diseno")} si ya tienes tu diseño y $${recetarioPrice("con-diseno")} si lo diseñamos contigo.`,
+      },
+      {
+        q: "¿Qué tamaño y papel tiene el recetario?",
+        a: "Es Media Carta (14 × 21.5 cm), de 100 hojas, en papel Bond 90 gr blanco. Es igual en las dos opciones.",
+      },
+      {
+        q: "¿Qué formato de archivo necesito para la opción sin diseño?",
+        a: "Un archivo editable de tu membrete, con tu logo, tus datos y el layout que quieres. Si no lo tienes, la opción con diseño lo resuelve.",
+      },
+      {
+        q: "¿Se imprime algo antes de que yo apruebe?",
+        a: "No. Antes de producir te enviamos una prueba digital del membrete y nada se manda a producción hasta que la apruebas.",
+      },
+      {
+        q: "¿Puedo cambiar de sin diseño a con diseño?",
+        a: "Sí. Avísanos por WhatsApp durante la cotización, antes de aprobar la prueba digital.",
+      },
+      {
+        q: "¿Cuánto tarda en llegar?",
+        a: `La prueba digital llega normalmente en un máximo de 24 horas después del pago. Desde que la apruebas, llega a domicilio en ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles, o está listo para recoger en Casa Blanca en ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles.`,
+      },
+      {
+        q: "¿Envían fuera de Guadalajara?",
+        a: `Sí, enviamos a todo México por $${NATIONAL_SHIPPING_PRICE}, gratis en compras de $${FREE_SHIPPING_THRESHOLD} o más.`,
+      },
+    ],
     relatedProductSlugs: ["recetario-medico-personalizado"],
-    relatedBlogSlugs: ["recetarios-medicos-personalizados-guadalajara", "recetario-medico-impreso-vs-digital", "datos-obligatorios-receta-medica-mexico"],
+    relatedBlogSlugs: ["recetarios-medicos-personalizados-guadalajara", "recetario-medico-impreso-vs-digital", "datos-obligatorios-receta-medica-mexico", "tarjetas-de-presentacion-consultorio", "yume-vs-imprentas-recetarios-medicos"],
   },
   {
     slug: "datos-obligatorios-receta-medica-mexico",
