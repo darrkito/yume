@@ -540,32 +540,87 @@ export const dulceroPostsEn: BlogPost[] = [
       "Ideas for personalized Halloween treat boxes for parties, school or trick-or-treating: designs, what to put inside and how far ahead to order before October 31.",
     category: "Guides",
     publishedAt: PUBLISHED,
+    modifiedAt: "2026-10-26",
     intro:
-      "Halloween is one of the busiest dates for treat boxes in Mexico, along with Christmas and Children's Day. A personalized treat box with the child's name works for the class party, for handing out at a costume party or even for trick-or-treating. Here are ideas and timing so it arrives before October 31.",
+      "Halloween is one of the busiest dates for treat boxes in Mexico, along with Christmas and Children's Day. A personalized treat box with the child's name works for the class party, for handing out at a costume party or even for trick-or-treating. Here are design ideas, what to put inside, what it costs and the real timing so it arrives before October 31.",
     sections: [
+      {
+        heading: "Which Halloween treat box to choose",
+        body: [
+          "For Halloween, choose a treat box with the recipient's name and a seasonal theme in orange, purple and black. It works for the class party, a costume birthday or trick-or-treating, and it arrives assembled and empty so you decide what goes inside.",
+          "Our box is lunch-box style, with a handle, and the customization includes name and theme. The handle makes it easy to carry, whether at a party or door to door.",
+        ],
+      },
       {
         heading: "Design ideas",
         body: [
-          "Pumpkins, ghosts, bats, black cats and spiderwebs in orange, purple and black are the classics. For little ones, a cute version (smiling ghosts, pumpkins with faces) works better than a scary one.",
-          "With the child's name on the front, the box becomes their trick-or-treat box, and the handle makes it easy to carry from door to door.",
+          "The classics are pumpkins, ghosts, bats, black cats and spiderwebs in orange, purple and black. For little ones, a cute version, like smiling ghosts or pumpkins with faces, works better than a scary one. With the child's name on the front, the box also becomes their trick-or-treat box.",
+          "If you already have the costume or the party decor, send us a photo and we will match the design colors. Before production we send you a digital proof, and nothing is produced until you approve it.",
         ],
       },
       {
         heading: "For the class or office party",
         body: [
-          "For school, one design with the class name; for an office or business, a Halloween design with your logo. Each box is $75 MXN with a minimum of 10, and orders from $750 MXN ship free across Mexico.",
+          "For the classroom, use one design with the class or school name; for an office or business, a Halloween design with your logo. Each box is customized with name and theme, and you can order the exact number of students or guests starting at 10 pieces, with no fixed packs.",
+          "Add 1 or 2 extra boxes in case a last-minute guest shows up or one gets damaged while filling.",
         ],
       },
       {
-        heading: "When to order",
+        heading: "What to put inside a Halloween treat box",
         body: [
-          "Production takes 3 to 5 business days after you approve the digital proof, plus 2 to 5 days of shipping (or 1 business day if you pick up at a Casa Blanca branch in Guadalajara). To have them in time for October 31, order by mid-October at the latest.",
-          "They arrive assembled, ready to fill with the season's candy.",
+          "The box arrives empty, so you choose the filling. Wrapped seasonal candy, cookies, gummies and a small extra like stickers in the same design all work. For very young children, the FDA recommends removing gum, peanuts, hard candies and small toys, which are choking hazards.",
+          "The FDA also says to check the label of packaged treats if a child has a food allergy. If you do not know the guests well, ask their parents before buying, and fill one test box to estimate how much candy you need. For more ideas by age, see our guide on what to put in a party favor box.",
+        ],
+      },
+      {
+        heading: "Price and how many to order",
+        body: [
+          `First 100 pieces: $${dulceroUnit} MXN per box, with a minimum order of 10 pieces, so you order exactly the number of guests or students. 10 boxes are $${dulceroTotal(10)}, 20 are $${dulceroTotal(20)} and 30 are $${dulceroTotal(30)}. Above 100 pieces it is wholesale pricing: message us on WhatsApp for a quote.`,
+          `Orders from $${FREE_SHIPPING_THRESHOLD} MXN ship free across Mexico. In the Guadalajara metro area you can pick up for $${CASABLANCA_PRICE} MXN at any of the ${CASABLANCA_BRANCHES.length} Casa Blanca courier branches.`,
+        ],
+      },
+      {
+        heading: "When to order so they arrive on time",
+        body: [
+          `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after you approve the digital proof, plus ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} days of national shipping (or ${PICKUP_EXTRA_DAYS} business day if you pick up at a Casa Blanca branch in Guadalajara). Adding the maximum of both is ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days, so an order placed in the last days of October may not arrive by the 31st.`,
+          "If your event is after the 31st, such as a school festival or a November get-together, you are still on time: a seasonal design in orange and purple works for those dates too. For November see our Day of the Dead guide, and if you are already thinking about posadas, our Christmas treat box guide.",
         ],
       },
     ],
-    relatedProductSlugs: [DULCERO],
-    relatedBlogSlugs: [en("que-poner-en-un-dulcero"), en("ideas-de-dulceros-para-fiesta-infantil"), en("dulceros-navidenos-personalizados")],
+    relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
+    relatedBlogSlugs: [en("que-poner-en-un-dulcero"), en("ideas-de-dulceros-para-fiesta-infantil"), en("dulceros-dia-de-muertos-noviembre"), en("dulceros-navidenos-personalizados"), en("dulceros-personalizados-guadalajara")],
+    faq: [
+      {
+        q: "Do the Halloween treat boxes come with candy?",
+        a: "No. The box arrives assembled and empty, ready to fill with the candy or extras you choose.",
+      },
+      {
+        q: "How much does a personalized Halloween treat box cost?",
+        a: `First 100 pieces: $${dulceroUnit} MXN each, with a minimum order of 10. Above 100 pieces it is wholesale pricing, quoted on WhatsApp. Orders from $${FREE_SHIPPING_THRESHOLD} MXN ship free across Mexico.`,
+      },
+      {
+        q: "What does the customization include?",
+        a: "The name (of the child, the group or your company) and the theme you choose, including your brand logo. We send a digital proof before producing.",
+      },
+      {
+        q: "How long do they take to arrive?",
+        a: `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after you approve the proof, plus ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} days of national shipping, or ${PICKUP_EXTRA_DAYS} business day if you pick up at a Casa Blanca branch in Guadalajara.`,
+      },
+      {
+        q: "What should I leave out of a very young child's treat box?",
+        a: "The FDA recommends removing gum, peanuts, hard candies and small toys from the bag of very young children, because they are choking hazards.",
+      },
+      {
+        q: "What if a child has allergies?",
+        a: "According to the FDA, if a child has a food allergy, check the label to make sure the allergen is not present. Ask the parents before filling the boxes.",
+      },
+    ],
+    sources: [
+      {
+        label: "FDA: Halloween Food Safety Tips for Parents",
+        url: "https://www.fda.gov/food/buy-store-serve-safe-food/halloween-food-safety-tips-parents",
+      },
+    ],
   },
   {
     slug: en("cajas-bolsas-o-vasos-dulceros-cual-elegir"),

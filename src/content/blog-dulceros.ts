@@ -543,36 +543,90 @@ export const dulceroPosts: BlogPost[] = [
     title: "Dulceros de Halloween personalizados para niños y fiestas",
     metaTitle: "Dulceros de Halloween personalizados para niños",
     description:
-      "Ideas de dulceros de Halloween personalizados para fiestas, la escuela o para pedir dulces: diseños, qué poner dentro y con cuánto tiempo pedirlos antes del 31 de octubre.",
+      "Dulceros de Halloween personalizados para fiesta, salón o pedir dulces: ideas de diseño, qué poner dentro, precio y cuánto tardan en llegar antes del 31 de octubre.",
     category: "Guías",
     publishedAt: PUBLISHED,
-    modifiedAt: "2026-10-17",
+    modifiedAt: "2026-10-26",
     intro:
-      "Halloween es una de las fechas en las que más se buscan dulceros en México, junto con Navidad y el Día del Niño. Un dulcero personalizado con el nombre del niño sirve para la fiesta del salón, para repartir en una fiesta de disfraces o incluso para salir a pedir dulces. Aquí tienes ideas y tiempos para que llegue antes del 31 de octubre.",
+      "Halloween es una de las fechas en las que más se buscan dulceros en México, junto con Navidad y el Día del Niño. Un dulcero personalizado con el nombre del niño sirve para la fiesta del salón, para repartir en una fiesta de disfraces o incluso para salir a pedir dulces. Aquí tienes ideas de diseño, qué poner dentro, cuánto cuesta y los tiempos reales para que llegue antes del 31 de octubre.",
     sections: [
+      {
+        heading: "Qué dulcero de Halloween conviene",
+        body: [
+          "Para Halloween conviene un dulcero con el nombre de quien lo recibe y una temática de la temporada, en naranja, morado y negro. Sirve para la fiesta del salón, un cumpleaños de disfraces o salir a pedir dulces, y llega armado y vacío para que tú elijas qué lleva dentro.",
+          "Nuestro dulcero es tipo lunch box, con asa, y la personalización incluye nombre y temática. El asa lo hace fácil de cargar, sea en una fiesta o de casa en casa.",
+        ],
+      },
       {
         heading: "Ideas de diseño",
         body: [
-          "Calabazas, fantasmas, murciélagos, gatos negros y telarañas en naranja, morado y negro son los clásicos. Para los más pequeños, una versión tierna (fantasmitas sonrientes, calabazas con cara) funciona mejor que una que dé miedo.",
-          "Con el nombre del niño en el frente, el dulcero se vuelve su caja para pedir dulces, y el asa hace que sea fácil de cargar casa por casa.",
+          "Los clásicos son calabazas, fantasmas, murciélagos, gatos negros y telarañas en naranja, morado y negro. Para los más pequeños funciona mejor una versión tierna, como fantasmitas sonrientes o calabazas con cara, que una que dé miedo. Si el dulcero lleva el nombre del niño, además se vuelve su caja para pedir dulces.",
+          "Si ya tienes el disfraz o la decoración de la fiesta, mándanos una foto y adaptamos los colores del diseño. Antes de producir te enviamos una prueba digital, y nada se produce hasta que la apruebas.",
         ],
       },
       {
         heading: "Para la fiesta del salón o de la oficina",
         body: [
-          "Para la escuela, un mismo diseño con el nombre del grupo; para una oficina o negocio, un diseño de Halloween con tu logo. Cada dulcero cuesta $75 con mínimo de 10 piezas, y desde $750 el envío nacional es gratis.",
+          "Para el salón, un mismo diseño con el nombre del grupo o de la escuela; para una oficina o negocio, un diseño de Halloween con tu logo. Cada uno se personaliza con nombre y temática, y puedes pedir la cantidad exacta de alumnos o invitados desde 10 piezas, sin paquetes cerrados.",
+          "Suma 1 o 2 dulceros extra por si llega un invitado de último momento o se echa a perder alguno al llenarlos.",
         ],
       },
       {
-        heading: "Cuándo pedirlos",
+        heading: "Qué poner dentro de un dulcero de Halloween",
         body: [
-          "La producción toma de 3 a 5 días hábiles después de aprobar la prueba digital, más 2 a 5 días de envío (o 1 día hábil si lo recoges en una sucursal Casa Blanca de Guadalajara). Para tenerlos a tiempo para el 31 de octubre, pídelos a más tardar a mediados de octubre.",
-          "Te llegan armados, listos para llenar con los dulces de la temporada.",
+          "El dulcero llega vacío, así que tú decides el relleno. Funcionan los dulces envueltos de la temporada, galletas, gomitas y un detalle pequeño, como stickers del mismo diseño. Para niños muy pequeños, la FDA recomienda quitar chicles, cacahuates, dulces duros y juguetes pequeños, que son riesgo de asfixia.",
+          "La FDA también indica revisar la etiqueta de los dulces envueltos si el niño tiene alguna alergia alimentaria. Si no conoces bien a los invitados, pregunta a los papás antes de comprar y arma un dulcero de prueba para calcular cuántos dulces necesitas. Para más ideas por edad, revisa la guía de qué poner en un dulcero.",
+        ],
+      },
+      {
+        heading: "Precio y cuántos pedir",
+        body: [
+          `Primeras 100 piezas: $${dulceroUnit} MXN por dulcero, con pedido mínimo de 10 piezas, así que pides exactamente el número de invitados o alumnos. 10 dulceros son $${dulceroTotal(10)}, 20 son $${dulceroTotal(20)} y 30 son $${dulceroTotal(30)}. Arriba de 100 piezas es precio mayoreo: escríbenos por WhatsApp y te cotizamos.`,
+          `Desde $${FREE_SHIPPING_THRESHOLD} de compra el envío nacional es gratis. Si estás en la zona metropolitana de Guadalajara, puedes recogerlos por $${CASABLANCA_PRICE} en cualquiera de las ${CASABLANCA_BRANCHES.length} sucursales de paquetería Casa Blanca.`,
+        ],
+      },
+      {
+        heading: "Cuándo pedirlos para que lleguen a tiempo",
+        body: [
+          `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba digital, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional (o ${PICKUP_EXTRA_DAYS} día hábil si recoges en una sucursal Casa Blanca de Guadalajara). Sumando el máximo de ambos son ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles, así que un pedido de los últimos días de octubre puede no llegar al 31.`,
+          "Si tu evento es después del 31, por ejemplo un festival escolar o un convivio de noviembre, todavía estás a tiempo: un diseño de temporada en naranja y morado también sirve para esas fechas. Para noviembre revisa la guía de dulceros para Día de Muertos, y si ya piensas en posadas, la de dulceros navideños.",
         ],
       },
     ],
-    relatedProductSlugs: [DULCERO],
-    relatedBlogSlugs: ["que-poner-en-un-dulcero", "ideas-de-dulceros-para-fiesta-infantil", "dulceros-navidenos-personalizados"],
+    relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["que-poner-en-un-dulcero", "ideas-de-dulceros-para-fiesta-infantil", "dulceros-dia-de-muertos-noviembre", "dulceros-navidenos-personalizados", "dulceros-personalizados-guadalajara"],
+    faq: [
+      {
+        q: "¿Los dulceros de Halloween incluyen dulces?",
+        a: "No. El dulcero llega armado y vacío, listo para llenar con los dulces o detalles que tú elijas.",
+      },
+      {
+        q: "¿Cuánto cuesta un dulcero de Halloween personalizado?",
+        a: `Primeras 100 piezas: $${dulceroUnit} MXN por pieza, con pedido mínimo de 10. Arriba de 100 piezas es precio mayoreo y se cotiza por WhatsApp. Desde $${FREE_SHIPPING_THRESHOLD} el envío nacional es gratis.`,
+      },
+      {
+        q: "¿Qué incluye la personalización?",
+        a: "El nombre (del niño, del grupo o de tu empresa) y la temática que elijas, incluido el logo de tu marca. Te mandamos una prueba digital antes de producir.",
+      },
+      {
+        q: "¿Cuánto tardan en llegar?",
+        a: `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional, o ${PICKUP_EXTRA_DAYS} día hábil si recoges en una sucursal Casa Blanca de Guadalajara.`,
+      },
+      {
+        q: "¿Qué no debo poner en el dulcero de un niño muy pequeño?",
+        a: "La FDA recomienda quitar chicles, cacahuates, dulces duros y juguetes pequeños de la bolsa de los niños muy pequeños, porque son riesgo de asfixia.",
+      },
+      {
+        q: "¿Qué hago si un niño tiene alergias?",
+        a: "Según la FDA, si un niño tiene alergia alimentaria hay que revisar la etiqueta para confirmar que el alérgeno no esté presente. Pregunta a los papás antes de armar los dulceros.",
+      },
+    ],
+    sources: [
+      {
+        label: "FDA: Halloween Food Safety Tips for Parents",
+        url: "https://www.fda.gov/food/buy-store-serve-safe-food/halloween-food-safety-tips-parents",
+      },
+    ],
   },
   {
     slug: "cajas-bolsas-o-vasos-dulceros-cual-elegir",
