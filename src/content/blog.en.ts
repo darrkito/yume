@@ -588,42 +588,119 @@ export const blogPostsEn: BlogPost[] = [
     title: "How to Order Custom Event Invitations",
     metaTitle: "Custom Event Stationery in Mexico",
     description:
-      "Event stationery at Yume: what information you need ready to quote custom wedding invitations, a quinceañera, or a corporate event, and how the design and approval process works before printing.",
+      "What to prepare to quote custom invitations for a wedding, quinceañera, or event, how the digital proof works, and shipping across Mexico from Guadalajara.",
     category: "Guides",
     publishedAt: "2026-08-31",
-    modifiedAt: "2026-09-23",
+    modifiedAt: "2026-10-26",
     intro:
       "Whether it's a wedding, a quinceañera, a baby shower, or a corporate event, the invitation is usually the first thing your guests see of the event: it's worth having it match what you're putting together. The invitation is just one piece of your event stationery (along with menus, place cards, or thank-you cards), and here's how the process works to order custom event invitations from Yume.",
     sections: [
       {
-        heading: "What information we need",
+        heading: "What information we need to quote",
         body: [
-          "To quote, we need: the type of event and the date, the number of invitations you need, the text you want included (names, date, place, time, and any notes like a dress code), and whether you have a style or visual reference in mind.",
-          "We also need to know whether you're looking for a printed invitation, a digital one (to share via WhatsApp), or both: the design process is the same, only the final format changes.",
+          "To quote your invitations we need five things: the type of event and the date, the number of invitations, the full text (names, place, time, and notes), a style reference if you have one, and the format: printed, digital, or both. With that we build the quote over WhatsApp, even if you haven't nailed everything down yet.",
+          "A style reference can be a photo, a color palette, the venue's decor, or an invitation you liked. You don't need to arrive with the design solved: that's exactly what the digital proof we send you is for.",
+          "If you already have other pieces for the event, such as the menu or table details, tell us from the start. That way the invitation is designed with the whole set in mind rather than as an isolated piece.",
+        ],
+      },
+      {
+        heading: "How many invitations to order",
+        body: [
+          "Count one invitation per household or couple, not per person, unless you want one per guest with their name on it. Add a few spares for last-minute guests and for you and your family. Give us the approximate number and we adjust the quote once your list is confirmed.",
+          "If your list is still changing, start with the number you estimate and let us know when it's confirmed. It's better to quote with an approximate figure than to wait weeks for the final list.",
+          "For digital invitations, quantity matters less, because the same file is shared with all your guests. In that case what matters is making sure the text and design look good on a phone screen.",
+        ],
+      },
+      {
+        heading: "How to word your invitation",
+        body: [
+          "Include who is inviting, what is being celebrated, the date, start time, the venue with its full address, and how to confirm attendance. If there is a dress code or a special note, add it in one short line. Check names and numbers twice: a wrong detail is repeated on every piece.",
+          "Write names the way you want them to appear, with surnames, titles, or nicknames if that applies. For corporate events, confirm the company name exactly as the company uses it.",
+          "If you don't know how to word the message, send us whatever you have, even a general idea, and we'll help you organize it in the proposal. The clearer the text, the fewer adjustments are needed later.",
         ],
       },
       {
         heading: "The design and approval process",
         body: [
-          "With your details, we put together a design proposal and send it to you as a digital proof. You can request adjustments before approving it: it's much easier to fix a color or a line of text at this stage than after the invitations are already printed.",
-          "Once you approve the final design, it goes to production (if you ordered printed ones) or we deliver the final file ready to send (if it's digital, or both).",
+          "With your details we put together a design proposal and send it to you as a digital proof. You can request adjustments before approving it, and only once you approve the final design does it go to production. Fixing a color or a line of text at this stage is much easier than after printing.",
+          "Once you approve, it goes to production if you ordered printed invitations, or we deliver the final file ready to send if they are digital or both. Nothing is printed without your approval.",
+        ],
+      },
+      {
+        heading: "Printed, digital, or both",
+        body: [
+          "You can order a printed invitation, a digital one to share over WhatsApp, or both. The design process is the same and only the final format changes. For example, you can print for your closest guests and send the digital version to everyone else. Tell us what you prefer and we'll quote it that way.",
+          "A printed invitation is a keepsake your guests can hold on to. A digital one is shared instantly and is useful when the list grows or changes close to the event date.",
+        ],
+      },
+      {
+        heading: "Matching your invitation to the rest of your stationery",
+        body: [
+          "An invitation works best when it shares a design line with the rest of your details. At Yume we also quote wedding menus, stickers for weddings and events, favor boxes, and temporary tattoos, and they can be coordinated under the same style so the event looks planned from start to finish.",
+          "If you're still deciding what to order, the related guides at the end of this page explain each piece: custom wedding menus, stickers for weddings, events and parties, and favor boxes for social events.",
+        ],
+      },
+      {
+        heading: "If you're a planner: invitations for your clients",
+        body: [
+          "If you organize events for other people, you can work with us event by event: each client gets their own proposal with a digital proof, and you review and approve it with them. Service is direct over WhatsApp, so questions and adjustments are settled without middlemen.",
+          "To quote, send the same details as for any event: date, quantity, text, style, and format. If your client already has a palette or decor references, share them in your first message so the proposal comes out aligned.",
         ],
       },
       {
         heading: "Wedding invitations in Guadalajara, shipping across Mexico",
         body: [
-          "We produce in Guadalajara, so if you're planning a wedding in the city or metro area the process is the same, with the advantage of a slightly faster turnaround thanks to proximity. But you don't need to be in Jalisco: we quote and ship custom invitations to any state in Mexico, with the same design and approval process from start to finish.",
+          "We produce in Guadalajara and ship across Mexico, so you can order invitations for a wedding in Jalisco or in any other state with the same design and approval process from start to finish. You don't need to be in Guadalajara to quote with us.",
+          "If your wedding is in Guadalajara or the metro area, the process is the same, with the advantage of a slightly faster turnaround thanks to proximity. For any other city, shipping is arranged when we quote.",
+        ],
+      },
+      {
+        heading: "What to check before approving the digital proof",
+        body: [
+          "The most common mistakes are wrong dates or times, misspelled names, and incomplete addresses. Before approving, ask someone else to read the whole proof and confirm every detail against your source: the venue, your guest list, or the company's information.",
+          "Also check how the design looks: that the text is easy to read, that the colors resemble what you have in mind, and that no important note is missing. When everything is right, give us your go-ahead and we move to production.",
         ],
       },
       {
         heading: "When to start requesting a quote",
         body: [
-          "As with any printed piece, it's worth quoting well ahead of the event: that leaves room to adjust the design without rushing production or shipping. If your event already has a date, you can reach out now even if you haven't nailed down every detail yet.",
-          "Tell us the type of event, the approximate date, and the quantity you estimate you'll need, and we'll build the quote from there.",
+          "It's worth quoting well ahead of the event: that leaves room to adjust the design without rushing production or shipping. If your event already has a date, you can reach out now even if you haven't nailed down every detail yet.",
+          "Tell us the type of event, the approximate date, and the quantity you estimate you'll need, and we'll build the quote from there. Production and delivery times are confirmed when we quote, based on your order.",
         ],
       },
     ],
-    relatedProductSlugs: [],
+    faq: [
+      {
+        q: "What information do I need to quote custom invitations?",
+        a: "The type of event and the date, the number of invitations, the full text (names, place, time, and notes), a style reference if you have one, and whether you want them printed, digital, or both.",
+      },
+      {
+        q: "Can I see the invitation before it is printed?",
+        a: "Yes. We send you a proposal as a digital proof and you can request adjustments before approving it. Only once you approve the final design does it go to production.",
+      },
+      {
+        q: "Can I order digital-only invitations?",
+        a: "Yes. You can order them printed, digital to share over WhatsApp, or both. The design process is the same and only the final format changes.",
+      },
+      {
+        q: "Do you ship invitations outside Guadalajara?",
+        a: "Yes. We produce in Guadalajara and ship to any state in Mexico, with the same design and approval process no matter where your event is.",
+      },
+      {
+        q: "How much do custom invitations cost?",
+        a: "They are quoted over WhatsApp based on quantity and format. Write to us with the type of event, the date, and the approximate number of invitations and we'll prepare your quote.",
+      },
+      {
+        q: "Can I match the invitation with other event pieces?",
+        a: "Yes. If you also order wedding menus, stickers, favor boxes, or temporary tattoos, they can be coordinated under the same design line so everything looks like one set.",
+      },
+      {
+        q: "Do you work with wedding planners and event organizers?",
+        a: "Yes. You can quote event by event: each client gets their own proposal with a digital proof, and service is direct over WhatsApp.",
+      },
+    ],
+    relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["menu-de-boda-personalizado"], BLOG_SLUG_EN["stickers-para-bodas-eventos-y-fiestas"], BLOG_SLUG_EN["dulceros-para-eventos-sociales-boda-xv-baby-shower"], BLOG_SLUG_EN["tatuajes-temporales-para-boda-eventos-y-fiestas"], BLOG_SLUG_EN["papeleria-personalizada-vs-plantillas-genericas"], BLOG_SLUG_EN["como-pedir-papeleria-personalizada-en-linea"]],
     quoteMessage: "Hi, I'm interested in getting a quote for custom event invitations.",
   },
   {
