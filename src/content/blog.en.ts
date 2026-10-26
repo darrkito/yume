@@ -2016,17 +2016,19 @@ export const blogPostsEn: BlogPost[] = [
   {
     slug: BLOG_SLUG_EN["troquelado-vs-semitroquelado-stickers"],
     title: "Die Cut vs Kiss Cut Stickers: Which Cut Should You Choose?",
-    metaTitle: "Die Cut vs Kiss Cut Stickers",
+    metaTitle: "Die Cut vs Kiss Cut Stickers: Which to Choose",
     description:
-      "The difference between die cut and kiss cut stickers (troquelado and semitroquelado): how each looks, when each one fits, and how to choose when you order your stickers at Yume.",
+      "Die cut vs kiss cut stickers (troquelado and semitroquelado): which to choose for favors, gifts and events, and how to order at Yume with a digital proof first.",
     category: "Guides",
     publishedAt: "2026-10-16",
+    modifiedAt: "2026-10-26",
     intro:
-      "When you order custom stickers you run into two terms: die cut and kiss cut (troquelado and semitroquelado in Spanish). Yume makes both and you choose when you order. This guide explains what each one is, how they differ, and which fits your use.",
+      "When you order custom stickers you run into two terms: die cut and kiss cut (troquelado and semitroquelado in Spanish). Yume makes both and you choose when you order. This guide explains what each one is, how they differ, and which fits your use, whether it is a wedding favor, a detail for your guests, a gift, or your brand's packaging.",
     sections: [
       {
         heading: "What is a die cut sticker and what is a kiss cut sticker?",
         body: [
+          "A die cut sticker (troquelado) is cut all the way through, vinyl and backing together, and you get it loose. A kiss cut sticker (semitroquelado) is cut through the vinyl only and stays on its backing sheet. Both follow the outline of your design.",
           "A die cut sticker (troquelado) is cut all the way through along the outline of your design: the vinyl and its backing are cut together, so you get each sticker loose, in the exact shape of your logo, character, or photo.",
           "A kiss cut sticker (semitroquelado) is cut through the vinyl only, not the backing sheet. The outline is marked, but the stickers stay on their backing and you peel them off one by one when you use them.",
         ],
@@ -2042,21 +2044,87 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "Which one fits your use?",
         body: [
+          "Choose die cut if each sticker is handed out or applied one at a time, and kiss cut if you want them kept together and protected until you use them. Both use the same premium vinyl and the same shape of your design: what changes is the cut and how the order arrives.",
           "Die cut makes sense when stickers are handed out or applied one at a time: a seal to close a bag, a label for a product, a gift for a customer. It arrives ready to peel, with no sheet in between.",
           "Kiss cut makes sense when you want your stickers kept together and protected until you use them: for a market stall or trade show, for handing out at an event, or for holding a stock to use over time. The backing sheet keeps them organized and clean.",
-          "Both are made on the same premium vinyl and follow the shape of your design; what changes is the cut and how the order arrives. If you are unsure, think about how you will use them: one at a time, or in batches.",
+          "If you are unsure, think about how you will use them: one at a time, or in batches.",
+        ],
+      },
+      {
+        heading: "Which cut fits favors, weddings, and events?",
+        body: [
+          "For an event, die cut is usually the most practical if each guest takes home their own sticker, and kiss cut if you or your planner will hand them out or place them on tables. It is a usage guide, not a rule: either one works at an event.",
+          "Picture a sticker with the couple's names and the date sealing a small favor bag, or one with the guest of honor's name on the dessert table. In those cases die cut arrives ready to stick, with nobody having to cut anything.",
+          "If you will assemble the details calmly before the event, for example putting a sticker on each box or bag over an afternoon, kiss cut keeps them organized on their sheet while you work. For more ideas for weddings, quinceañeras, and parties, read our guide to stickers for weddings, events, and parties.",
+        ],
+      },
+      {
+        heading: "Which cut fits your brand, packaging, or gifts?",
+        body: [
+          "If you seal packages or apply labels one by one, die cut saves you steps. If you take stickers to a fair or hand them out in batches, kiss cut keeps them together. Either way, you pick the cut on the product page before paying.",
+          "For your business logo, the option is Custom Logo Stickers. For a character, a pet, a photo, or any other design, it is Waterproof Vinyl Stickers. Both accept both cuts, so the product choice and the cut choice are independent.",
+          "If your question is vinyl or paper, see our vinyl vs paper stickers comparison. At Yume we only work with vinyl, so the cut is the design decision you have left to make.",
         ],
       },
       {
         heading: "How to choose the cut type when you order",
         body: [
-          "On each sticker product page (Waterproof Vinyl Stickers and Custom Logo Stickers) you pick the cut type, Die cut or Kiss cut, before adding to your cart. You also pick the finish there: matte, glossy, or holographic. What you choose is saved with your order.",
+          "You pick the cut, Die cut or Kiss cut, on the product page before adding to your cart, together with the finish: matte, glossy, or holographic. What you choose is saved with your order, and before printing you receive a digital proof to confirm how it looks.",
+          "The product pages are Waterproof Vinyl Stickers and Custom Logo Stickers. The holographic finish has an extra cost of $0.50 per piece, which you see when you select it.",
           "If you are not sure which fits your case, message us on WhatsApp before paying and we will go over it with you.",
         ],
       },
+      {
+        heading: "How much do die cut and kiss cut stickers cost?",
+        body: [
+          `First 100 pieces: $${priceOf("stickers-vinil-impermeable", 100)} MXN for Waterproof Vinyl Stickers and $${priceOf("stickers-logo-personalizado", 100)} MXN for Custom Logo Stickers. Above 100, each extra piece is at wholesale price. The minimum order is 40 pieces for vinyl and 50 for logo stickers.`,
+          "Choosing die cut or kiss cut does not change the base price in the table. Order the exact quantity you need: you pick or type it when you place your order.",
+        ],
+        table: {
+          headers: ["Quantity", "Logo stickers & labels", "Vinyl stickers (your design)"],
+          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
+        },
+      },
+      {
+        heading: "How long does my order take and how do I receive it?",
+        body: [
+          `From the moment you approve the digital proof, your order arrives at home in ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days, or is ready for pickup at Casa Blanca in ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days. We produce in Guadalajara and ship across Mexico.`,
+          `Shipping costs $${NATIONAL_SHIPPING_PRICE} MXN and is free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more. If your event has a date, count these days backward and leave room for the digital proof, which normally arrives within 24 hours of payment and includes up to 2 rounds of adjustments. For more detail, read how long a custom sticker order takes.`,
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "What is the difference between die cut and kiss cut?",
+        a: "Die cut (troquelado) is cut all the way through, vinyl and backing, and you get it loose. Kiss cut (semitroquelado) is cut through the vinyl only and arrives on its backing sheet. In both cases the shape follows your design outline.",
+      },
+      {
+        q: "Can I choose the cut when I order?",
+        a: "Yes. On the Waterproof Vinyl Stickers and Custom Logo Stickers pages you pick Die cut or Kiss cut before adding to your cart.",
+      },
+      {
+        q: "Does the cut change the material or the price?",
+        a: "No. Both cuts are made on the same premium vinyl. The cut is a design and usage decision and does not change the base price in the table.",
+      },
+      {
+        q: "Which finishes can I choose?",
+        a: "Matte, glossy, or holographic. Holographic costs $0.50 more per piece.",
+      },
+      {
+        q: "How much do they cost?",
+        a: `First 100 pieces: $${priceOf("stickers-vinil-impermeable", 100)} MXN for vinyl and $${priceOf("stickers-logo-personalizado", 100)} MXN for logo stickers. Above 100 it is wholesale price. The minimum is 40 pieces for vinyl and 50 for logo stickers.`,
+      },
+      {
+        q: "Can I see it before it is printed?",
+        a: "Yes. You receive a digital proof, normally within 24 hours of payment, with up to 2 rounds of adjustments. We print nothing without your approval.",
+      },
+      {
+        q: "How long does it take and how much is shipping?",
+        a: `From proof approval, it arrives at home in ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days. Shipping costs $${NATIONAL_SHIPPING_PRICE} MXN and is free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more.`,
+      },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
-    relatedBlogSlugs: [BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"], BLOG_SLUG_EN["donde-imprimir-stickers-personalizados-mexico"]],
+    relatedBlogSlugs: [BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"], BLOG_SLUG_EN["stickers-para-bodas-eventos-y-fiestas"], BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"], BLOG_SLUG_EN["donde-imprimir-stickers-personalizados-mexico"]],
   },
   {
     slug: BLOG_SLUG_EN["cuanto-duran-los-tatuajes-temporales-y-como-quitarlos"],
