@@ -61,37 +61,109 @@ export const blogPosts: BlogPost[] = [
     title: "Recetarios médicos personalizados en Guadalajara: guía para tu consultorio",
     metaTitle: "Recetarios médicos en Guadalajara: guía y membrete",
     description:
-      "Qué datos incluir en el membrete, qué tamaño usar y cómo funciona el proceso para pedir recetarios médicos personalizados si tienes un consultorio en Guadalajara o cualquier parte de México.",
+      `Qué datos lleva el membrete, qué tamaño usar y cuánto cuesta un recetario médico personalizado en Guadalajara: desde $${recetarioPrice("sin-diseno")}, con prueba digital.`,
     category: "Guías",
     publishedAt: "2026-08-28",
-    modifiedAt: "2026-10-17",
+    modifiedAt: "2026-10-26",
     intro:
       "Si tienes un consultorio en Guadalajara, Zapopan o cualquier ciudad de Jalisco, el recetario que usas todos los días también es parte de la imagen de tu consultorio. Uno genérico, comprado en una papelería cualquiera, no comunica lo mismo que uno con tu membrete, tu cédula profesional y el diseño de tu consultorio. Esta guía cubre lo que necesitas saber antes de pedir uno personalizado.",
     sections: [
       {
         heading: "Qué datos lleva tu membrete",
         body: [
-          "El membrete de un recetario médico normalmente incluye: nombre completo, especialidad, número de cédula profesional (y cédula de especialidad si aplica), y los datos de contacto del consultorio: dirección, teléfono y, si quieres, horario de consulta.",
+          "Tu membrete debe incluir tu nombre completo, especialidad, número de cédula profesional (y de especialidad, si aplica), y los datos de contacto del consultorio: dirección, teléfono y, si quieres, horario. Son los datos fijos que se imprimen una sola vez para que no los escribas a mano en cada receta.",
           "Si compartes consultorio con otros especialistas o trabajas en más de una dirección, es común usar un membrete distinto por ubicación en vez de intentar meter toda la información en uno solo: se ve más limpio y evita confusiones para el paciente.",
+          "Antes de cotizar, junta tus datos tal como aparecen en tus documentos oficiales: copia el número de cédula sin reescribirlo de memoria y confirma que el teléfono y la dirección sean los que quieres que use el paciente. Si ya tienes un logo, mándalo; si no, puedes pedir la opción con diseño y lo armamos contigo.",
+          "Para saber qué datos se llenan después, ya con cada paciente, y cuáles conviene dejar preimpresos, lee la guía sobre el formato de receta médica en México.",
         ],
       },
       {
         heading: "Tamaño y papel: qué es estándar en México",
         body: [
-          "El tamaño más usado para recetarios médicos en México es 14 × 21.5 cm, en papel blanco: es el que ocupamos en Yume por default. Es un tamaño práctico: cabe en cualquier folder o expediente sin doblarse y es cómodo de escribir a mano.",
+          "En Yume el recetario es Media Carta (14 × 21.5 cm), de 100 hojas, en papel Bond de 90 gr color blanco. Es el tamaño que más se usa en consultorios de México: cabe en cualquier folder o expediente sin doblarse y es cómodo para escribir a mano.",
           "Si tu consultorio maneja recetas para trámites específicos (por ejemplo, con folio o código de barras para alguna institución), coméntalo al cotizar: es información que hay que confirmar antes de mandar a imprimir, no algo que se pueda improvisar después.",
+          "Si lo que te hace dudar es si conviene imprimir o pasarte a una receta digital, revisa la comparación entre recetario impreso y digital antes de decidir.",
         ],
+      },
+      {
+        heading: "Cuánto cuesta un recetario médico personalizado",
+        body: [
+          `Un recetario de 100 hojas cuesta $${recetarioPrice("sin-diseno")} si ya tienes tu diseño listo y $${recetarioPrice("con-diseno")} si lo diseñamos contigo. En ambos casos recibes una prueba digital del membrete y solo producimos cuando la apruebas. Los precios son en pesos mexicanos y por recetario completo.`,
+          "La diferencia entre las dos opciones es el trabajo de diseño: \"sin diseño\" es para cuando ya tienes un archivo editable con tu membrete, y \"con diseño\" incluye que armemos el membrete contigo a partir de tus datos profesionales, con los ajustes que necesites antes de imprimir.",
+          "Si necesitas más de un recetario, por ejemplo uno por consultorio, escríbenos por WhatsApp y lo cotizamos juntos. Para decidir entre las dos opciones con calma, la guía de recetario con diseño vs. sin diseño explica qué incluye cada una.",
+        ],
+        table: {
+          headers: ["Opción", "Precio", "Qué incluye"],
+          rows: [
+            ["Sin diseño", `$${recetarioPrice("sin-diseno")}`, "Imprimimos tu diseño ya listo en 100 hojas Media Carta"],
+            ["Con diseño", `$${recetarioPrice("con-diseno")}`, "Diseñamos el membrete contigo y lo imprimimos en 100 hojas Media Carta"],
+          ],
+        },
       },
       {
         heading: "El proceso: de la cotización a tener el recetario en mano",
         body: [
-          "El proceso no cambia si estás en Guadalajara o en cualquier otra ciudad de México, porque todo el diseño se aprueba a distancia antes de imprimir: cotizas por WhatsApp o desde la tienda en línea, mandas tus datos (o tu logo, si ya tienes uno), te enviamos una prueba digital del membrete, y hasta que la apruebas se manda a producción.",
+          "El proceso es igual en Guadalajara que en cualquier ciudad de México, porque el diseño se aprueba a distancia: cotizas por WhatsApp o en la tienda en línea, mandas tus datos o tu logo, revisas la prueba digital y, hasta que la apruebas, se manda a producción.",
           "Ese paso de aprobación es el que evita el error más común al personalizar papelería: mandar a imprimir sin haber visto el diseño final y encontrar una errata en la cédula profesional o en el teléfono ya con las 100 hojas impresas.",
+          "Cuando te llegue la prueba digital, revisa con calma cuatro cosas: que tu nombre esté bien escrito, que el número de cédula coincida con tu documento, que el teléfono marque al consultorio correcto y que la dirección esté completa. Si algo no cuadra, pide el ajuste en ese momento, que es cuando corregirlo es más fácil.",
+        ],
+      },
+      {
+        heading: "Tiempos y entrega: cuánto tarda y cómo lo recibes",
+        body: [
+          `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles una vez aprobada la prueba digital. Si lo recibes por paquetería, suma de ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días hábiles de tránsito; si lo recoges en una sucursal Casa Blanca, suma ${PICKUP_EXTRA_DAYS} día hábil. Son estimaciones que pueden variar en días festivos.`,
+          `Producimos en Guadalajara y entregamos de dos formas: recolección en una de las ${CASABLANCA_BRANCHES.length} sucursales Casa Blanca de la zona metropolitana ($${CASABLANCA_PRICE}) o envío a domicilio a todo México ($${NATIONAL_SHIPPING_PRICE}). Las sucursales son: ${casablancaBranchNames}.`,
+          `Las dos opciones son gratis en compras de $${FREE_SHIPPING_THRESHOLD} o más. Un recetario solo no llega a ese monto, así que aplica el cargo de envío o de recolección, salvo que sumes más piezas del catálogo hasta alcanzarlo.`,
+        ],
+      },
+      {
+        heading: "Errores comunes al pedir tu primer recetario",
+        body: [
+          "Los errores más comunes son tres: aprobar la prueba sin revisar la cédula contra tu documento, imprimir datos que cambian seguido y meter demasiada información en un espacio pequeño. Los tres se evitan con una revisión tranquila de la prueba digital antes de mandar a producción.",
+          "Si tu teléfono, tu horario o tu dirección cambian seguido, piensa dos veces antes de imprimirlos en las 100 hojas. Un dato estable, como el correo del consultorio, dura más que uno que vas a tener que corregir en unos meses.",
+          "También conviene no saturar el membrete: pocos datos y bien legibles se leen mejor que muchos en letra pequeña, y dejan espacio para escribir a mano. Si trabajas bajo un colegio o una institución con requisitos propios, confírmalos con ellos antes de imprimir.",
+        ],
+      },
+      {
+        heading: "Un recetario y una tarjeta con el mismo diseño",
+        body: [
+          "Si además del recetario quieres una tarjeta de presentación, puedes cotizar ambas con el mismo membrete: misma tipografía, mismos colores y mismos datos. Tu consultorio se ve más consistente, no coordinas dos diseños distintos y el paciente reconoce tu imagen desde la receta hasta la tarjeta que se lleva de la consulta.",
+          "Las tarjetas se cotizan caso por caso por WhatsApp. En la guía de tarjetas de presentación para tu consultorio vemos qué datos preparar. Y si estás comparando proveedores, la comparación de Yume con otras imprentas de recetarios te ayuda a decidir.",
         ],
       },
     ],
+    faq: [
+      {
+        q: "¿Cuánto cuesta un recetario médico personalizado en Yume?",
+        a: `Un recetario de 100 hojas cuesta $${recetarioPrice("sin-diseno")} si ya tienes tu diseño listo y $${recetarioPrice("con-diseno")} si lo diseñamos contigo.`,
+      },
+      {
+        q: "¿Qué tamaño y papel tiene el recetario?",
+        a: "Es Media Carta (14 × 21.5 cm), de 100 hojas, en papel Bond de 90 gr color blanco.",
+      },
+      {
+        q: "¿Veo el diseño antes de que se imprima?",
+        a: "Sí. Te enviamos una prueba digital del membrete y solo producimos cuando la apruebas. Revisa ahí tu cédula y tu teléfono.",
+      },
+      {
+        q: "¿Puedo mandar mi propio diseño?",
+        a: "Sí. Puedes enviar tu diseño en formato editable (opción sin diseño) o pedir que lo diseñemos contigo desde cero (opción con diseño).",
+      },
+      {
+        q: "¿Cuánto tarda en llegar mi pedido?",
+        a: `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles tras aprobar la prueba. Por paquetería suma de ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días hábiles; en sucursal Casa Blanca suma ${PICKUP_EXTRA_DAYS} día hábil.`,
+      },
+      {
+        q: "¿Envían fuera de Guadalajara?",
+        a: `Sí. Producimos en Guadalajara y enviamos a todo México por $${NATIONAL_SHIPPING_PRICE}. En compras de $${FREE_SHIPPING_THRESHOLD} o más el envío es gratis.`,
+      },
+      {
+        q: "¿Emiten factura?",
+        a: "No emitimos factura (CFDI). Tu comprobante es el correo de confirmación del pedido. Si la necesitas para tu consultorio o clínica, escríbenos por WhatsApp antes de pagar.",
+      },
+    ],
     relatedProductSlugs: ["recetario-medico-personalizado"],
-    relatedBlogSlugs: ["recetario-medico-impreso-vs-digital", "recetario-medico-con-diseno-vs-sin-diseno", "datos-obligatorios-receta-medica-mexico"],
+    relatedBlogSlugs: ["recetario-medico-impreso-vs-digital", "recetario-medico-con-diseno-vs-sin-diseno", "datos-obligatorios-receta-medica-mexico", "tarjetas-de-presentacion-consultorio", "yume-vs-imprentas-recetarios-medicos", "como-pedir-papeleria-personalizada-en-linea"],
   },
   {
     slug: "stickers-personalizados-para-negocios-guadalajara",

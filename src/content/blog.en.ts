@@ -11,35 +11,109 @@ export const blogPostsEn: BlogPost[] = [
     title: "Custom Medical Prescription Pads in Guadalajara: A Guide for Your Practice",
     metaTitle: "Custom Medical Prescription Pads in Guadalajara",
     description:
-      "What to include on the letterhead, what size to use, and how the process works for ordering custom medical prescription pads if you run a practice in Guadalajara or anywhere else in Mexico.",
+      `What goes on the letterhead, what size to use, and what a custom medical prescription pad costs in Guadalajara: from $${recetarioPrice("sin-diseno")}, with a digital proof.`,
     category: "Guides",
     publishedAt: "2026-08-28",
+    modifiedAt: "2026-10-26",
     intro:
       "If you run a practice in Guadalajara, Zapopan, or anywhere in Jalisco, the prescription pad you use every day is also part of your practice's image. A generic one bought at any stationery store doesn't communicate the same thing as one with your letterhead, your license number, and your practice's own design. This guide covers what you need to know before ordering a custom one.",
     sections: [
       {
         heading: "What goes on your letterhead",
         body: [
-          "A medical prescription pad's letterhead usually includes: full name, specialty, professional license number (and specialty license, if applicable), and your practice's contact details: address, phone, and, if you want, office hours.",
+          "Your letterhead should include your full name, specialty, professional license number (and specialty license, if applicable), and your practice's contact details: address, phone and, if you want, office hours. These are the fixed details printed once so you don't handwrite them on every prescription.",
           "If you share a practice with other specialists or work out of more than one location, it's common to use a separate letterhead per location instead of trying to fit everything onto one: it looks cleaner and avoids confusing the patient.",
+          "Before requesting a quote, gather your details exactly as they appear on your official documents: copy your license number instead of retyping it from memory, and confirm that the phone and address are the ones you want patients to use. If you already have a logo, send it; if not, you can choose the option with design and we'll build it with you.",
+          "To see which details get filled in later, for each patient, and which are better left preprinted, read the guide on the prescription format in Mexico.",
         ],
       },
       {
         heading: "Size and paper: what's standard in Mexico",
         body: [
-          "The most commonly used size for medical prescription pads in Mexico is 14 × 21.5 cm, on white paper: it's what we use at Yume by default. It's a practical size: it fits in any folder or file without folding and is comfortable to write on by hand.",
+          "At Yume the prescription pad is Half Letter (14 × 21.5 cm), 100 sheets, on white 90 gsm Bond paper. It's the size most used in practices in Mexico: it fits in any folder or file without folding and is comfortable to write on by hand.",
           "If your practice handles prescriptions for specific procedures (for example, with a folio number or barcode for some institution), mention it when requesting a quote: that's information that needs to be confirmed before printing, not something to improvise afterward.",
+          "If you're unsure whether to print or move to a digital prescription, check the comparison between printed and digital prescription pads before deciding.",
         ],
+      },
+      {
+        heading: "How much a custom prescription pad costs",
+        body: [
+          `A 100-sheet prescription pad costs $${recetarioPrice("sin-diseno")} if you already have your design ready and $${recetarioPrice("con-diseno")} if we design it with you. Either way you get a digital proof of the letterhead and we only produce once you approve it. Prices are in Mexican pesos and per complete pad.`,
+          "The difference between the two options is the design work: \"without design\" is for when you already have an editable file with your letterhead, and \"with design\" includes us building the letterhead with you from your professional details, with the adjustments you need before printing.",
+          "If you need more than one pad, for example one per practice location, message us on WhatsApp and we'll quote them together. To choose between the two options calmly, the guide on prescription pads with vs. without design explains what each includes.",
+        ],
+        table: {
+          headers: ["Option", "Price", "What it includes"],
+          rows: [
+            ["Without design", `$${recetarioPrice("sin-diseno")}`, "We print your ready design on 100 Half Letter sheets"],
+            ["With design", `$${recetarioPrice("con-diseno")}`, "We design the letterhead with you and print it on 100 Half Letter sheets"],
+          ],
+        },
       },
       {
         heading: "The process: from quote to prescription pad in hand",
         body: [
-          "The process doesn't change whether you're in Guadalajara or any other city in Mexico, because the whole design gets approved remotely before printing: you request a quote via WhatsApp or from the online shop, send us your details (or your logo, if you already have one), we send you a digital proof of the letterhead, and only once you approve it does it go to production.",
+          "The process is the same in Guadalajara as in any other city in Mexico, because the design is approved remotely: you request a quote via WhatsApp or the online shop, send your details or logo, review the digital proof, and only once you approve it does it go to production.",
           "That approval step is what prevents the most common mistake when customizing stationery: sending something to print without having seen the final design, and finding a typo in the license number or phone number only after all 100 sheets are already printed.",
+          "When the digital proof arrives, calmly check four things: your name is spelled correctly, the license number matches your document, the phone number reaches the right practice, and the address is complete. If something is off, ask for the change right then, when it's easiest to fix.",
+        ],
+      },
+      {
+        heading: "Timing and delivery: how long it takes and how you receive it",
+        body: [
+          `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days once the digital proof is approved. If it ships by courier, add ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} business days in transit; if you pick it up at a Casa Blanca branch, add ${PICKUP_EXTRA_DAYS} business day. These are estimates and can vary around holidays.`,
+          `We produce in Guadalajara and deliver two ways: pickup at one of ${CASABLANCA_BRANCHES.length} Casa Blanca branches in the metropolitan area ($${CASABLANCA_PRICE}) or home delivery anywhere in Mexico ($${NATIONAL_SHIPPING_PRICE}). The branches are: ${casablancaBranchNames}.`,
+          `Both options are free on purchases of $${FREE_SHIPPING_THRESHOLD} or more. A single prescription pad doesn't reach that amount, so the shipping or pickup fee applies, unless you add more catalog pieces to reach it.`,
+        ],
+      },
+      {
+        heading: "Common mistakes when ordering your first pad",
+        body: [
+          "The most common mistakes are three: approving the proof without checking the license number against your document, printing details that change often, and cramming too much information into a small space. All three are avoided by calmly reviewing the digital proof before production.",
+          "If your phone, hours or address change often, think twice before printing them on all 100 sheets. A stable detail, like the practice's email, lasts longer than one you'll have to correct in a few months.",
+          "It also helps not to overcrowd the letterhead: a few legible details read better than many in small print, and leave room for handwriting. If you work under a medical association or an institution with its own requirements, confirm them with them before printing.",
+        ],
+      },
+      {
+        heading: "A prescription pad and a business card with the same design",
+        body: [
+          "If you also want a business card, you can quote both with the same letterhead: same typography, same colors and same details. Your practice looks more consistent, you don't coordinate two separate designs, and patients recognize your image from the prescription to the card they take home from the visit.",
+          "Business cards are quoted case by case on WhatsApp. The guide on business cards for your practice covers which details to prepare. And if you're comparing providers, the comparison of Yume with other prescription pad print shops can help you decide.",
         ],
       },
     ],
+    faq: [
+      {
+        q: "How much does a custom medical prescription pad cost at Yume?",
+        a: `A 100-sheet prescription pad costs $${recetarioPrice("sin-diseno")} if you already have your design ready and $${recetarioPrice("con-diseno")} if we design it with you.`,
+      },
+      {
+        q: "What size and paper is the prescription pad?",
+        a: "It's Half Letter (14 × 21.5 cm), 100 sheets, on white 90 gsm Bond paper.",
+      },
+      {
+        q: "Do I see the design before it's printed?",
+        a: "Yes. We send you a digital proof of the letterhead and only produce once you approve it. Check your license number and phone there.",
+      },
+      {
+        q: "Can I send my own design?",
+        a: "Yes. You can send your design in an editable format (the without-design option) or ask us to design it from scratch with you (the with-design option).",
+      },
+      {
+        q: "How long does my order take to arrive?",
+        a: `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after the proof is approved. By courier, add ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} business days; at a Casa Blanca branch, add ${PICKUP_EXTRA_DAYS} business day.`,
+      },
+      {
+        q: "Do you ship outside Guadalajara?",
+        a: `Yes. We produce in Guadalajara and ship anywhere in Mexico for $${NATIONAL_SHIPPING_PRICE}. On purchases of $${FREE_SHIPPING_THRESHOLD} or more, shipping is free.`,
+      },
+      {
+        q: "Do you issue invoices?",
+        a: "We don't issue invoices (CFDI). Your receipt is the order confirmation email. If you need one for your practice or clinic, message us on WhatsApp before paying.",
+      },
+    ],
     relatedProductSlugs: ["recetario-medico-personalizado"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["recetario-medico-impreso-vs-digital"], BLOG_SLUG_EN["recetario-medico-con-diseno-vs-sin-diseno"], BLOG_SLUG_EN["datos-obligatorios-receta-medica-mexico"], BLOG_SLUG_EN["tarjetas-de-presentacion-consultorio"], BLOG_SLUG_EN["yume-vs-imprentas-recetarios-medicos"], BLOG_SLUG_EN["como-pedir-papeleria-personalizada-en-linea"]],
   },
   {
     slug: BLOG_SLUG_EN["stickers-personalizados-para-negocios-guadalajara"],
