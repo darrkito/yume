@@ -351,10 +351,23 @@ export const dulceroPosts: BlogPost[] = [
     description: "Qué dulces poner en un dulcero según la edad: ideas para niños de 1 a 12 años, adolescentes y adultos, cuánto llenar la cajita y cómo evitar problemas con alergias.",
     category: "Guías",
     publishedAt: PUBLISHED,
-    modifiedAt: "2026-10-17",
+    modifiedAt: "2026-10-28",
     intro:
-      "Dulces para dulceros es de las búsquedas más comunes cuando se acerca una fiesta. La caja ya está resuelta; ahora toca decidir qué meter. Esta guía reúne ideas de dulces y detalles según la edad de los invitados, pensadas para una cajita tipo lunch box de 15.7 × 11.7 × 9.9 cm.",
+      "Un dulcero se ve completo con 8 a 12 piezas: un chocolate, una gomita o paleta, un dulce enchilado o ácido, un dulce tradicional mexicano y una botana chica, más un detalle que no sea dulce, como stickers. Abajo tienes la lista por tipo de dulce y por edad, pensada para una cajita tipo lunch box de 15.7 × 11.7 × 9.9 cm.",
     sections: [
+      {
+        heading: "Qué dulces poner en un dulcero: lista por tipo de dulce",
+        body: [
+          "Mezcla texturas y sabores en vez de repetir uno solo: algo de chocolate, algo suave, algo enchilado o ácido y algo tradicional. Así cada invitado encuentra algo que le gusta y la caja se ve variada al abrirla.",
+          "Chocolates: barritas pequeñas, bolitas o monedas de chocolate. Son los que casi nadie rechaza, aunque en clima caliente conviene guardar los dulceros en un lugar fresco antes de entregarlos.",
+          "Gomitas y malvaviscos: suaves, de colores y fáciles de repartir en bolsitas. Son la opción más segura para los más pequeños.",
+          "Dulces tradicionales mexicanos: mazapanes, cocadas, tamarindos, palanquetas y dulces de leche. Le dan sabor local al dulcero y a los adultos les gusta recordarlos.",
+          "Enchilados y ácidos: paletas con chile, tiras o gomitas enchiladas y dulces de tamarindo. Funcionan sobre todo de los 6 años en adelante.",
+          "Paletas y chicles: llenan espacio con poco volumen. Evita las paletas duras en niños muy pequeños.",
+          "Botanas saladas: una bolsita de papitas, palomitas o cacahuates japoneses (solo si no hay alergias) equilibra tanto dulce.",
+          "Un detalle sin azúcar: stickers, una pulsera, burbujas o una libreta chica. Es lo que el niño conserva cuando el dulce ya se acabó.",
+        ],
+      },
       {
         heading: "Para niños pequeños (1 a 5 años)",
         body: [
@@ -381,6 +394,28 @@ export const dulceroPosts: BlogPost[] = [
           "No hace falta llenar el dulcero hasta arriba: entre 8 y 12 piezas de dulce más un detalle se ve completo en una caja de este tamaño. Arma uno de prueba antes de comprar todo para calcular cuánto necesitas.",
           "Pregunta por alergias si invitas a niños que no conoces bien (cacahuate y chocolate son las más comunes) y, si hay dudas, ten algunos dulceros sin esos ingredientes marcados por separado.",
         ],
+      },
+    ],
+    faq: [
+      {
+        q: "¿Qué dulces se ponen en un dulcero?",
+        a: "Una mezcla de chocolate, gomitas o paletas, un dulce enchilado o ácido, un dulce tradicional mexicano y una botana pequeña, más un detalle que no sea dulce. Ajusta la mezcla según la edad de los invitados.",
+      },
+      {
+        q: "¿Cuántos dulces lleva un dulcero?",
+        a: "Entre 8 y 12 piezas de dulce más un detalle se ve completo en una caja tipo lunch box de 15.7 × 11.7 × 9.9 cm. Arma uno de prueba antes de comprar todo.",
+      },
+      {
+        q: "¿Qué dulces son seguros para niños de 1 a 5 años?",
+        a: "Gomitas suaves, malvaviscos, galletas, chocolates pequeños, pasitas o fruta deshidratada. Evita dulces duros, cacahuates enteros y juguetes con piezas pequeñas.",
+      },
+      {
+        q: "¿Qué pongo en el dulcero además de dulces?",
+        a: "Stickers con el nombre o el personaje de la fiesta, crayolas, burbujas, una pulsera o una pelota saltarina. Son detalles que el niño conserva después de la fiesta.",
+      },
+      {
+        q: "¿Cómo evito problemas de alergias en un dulcero?",
+        a: "Pregunta a los papás si no conoces bien a los invitados. El cacahuate y el chocolate son de las más comunes: si hay dudas, prepara algunos dulceros sin esos ingredientes y márcalos por separado.",
       },
     ],
     relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],

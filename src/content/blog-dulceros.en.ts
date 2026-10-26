@@ -346,9 +346,23 @@ export const dulceroPostsEn: BlogPost[] = [
       "Candy and small gift ideas that fit a lunch-box-style favor box: what to include by guest age, how much to fill it and how to avoid allergy problems.",
     category: "Guides",
     publishedAt: PUBLISHED,
+    modifiedAt: "2026-10-28",
     intro:
-      "What to put inside is one of the most common questions as a party gets close. The box is sorted; now it's time to decide what goes in it. This guide collects candy and small gift ideas by guest age, sized for a 15.7 × 11.7 × 9.9 cm lunch-box-style treat box.",
+      "A favor box looks full with 8 to 12 pieces: a chocolate, a gummy or lollipop, a spicy or sour candy, a traditional Mexican sweet and a small snack, plus one non-candy extra such as stickers. Below is the list by type of candy and by age, sized for a 15.7 × 11.7 × 9.9 cm lunch-box-style treat box.",
     sections: [
+      {
+        heading: "What candy to put in a favor box: list by type",
+        body: [
+          "Mix textures and flavors instead of repeating one: some chocolate, something soft, something spicy or sour and something traditional. Every guest finds something they like and the box looks varied when opened.",
+          "Chocolates: small bars, balls or coins. Almost nobody turns them down, though in hot weather keep the boxes somewhere cool before handing them out.",
+          "Gummies and marshmallows: soft, colorful and easy to portion into small bags. They are the safest option for the youngest kids.",
+          "Traditional Mexican sweets: mazapanes, cocadas, tamarind candy, palanquetas and milk candy. They add local flavor and adults enjoy remembering them.",
+          "Spicy and sour candy: chili lollipops, chili-coated strips or gummies and tamarind candy. They work best from age 6 up.",
+          "Lollipops and gum: they fill space with little bulk. Skip hard lollipops for very young kids.",
+          "Salty snacks: a small bag of chips, popcorn or coated peanuts (only if there are no allergies) balances all the sweetness.",
+          "A sugar-free extra: stickers, a bracelet, bubbles or a small notebook. It is what the child keeps once the candy is gone.",
+        ],
+      },
       {
         heading: "For little kids (ages 1 to 5)",
         body: [
@@ -375,6 +389,28 @@ export const dulceroPostsEn: BlogPost[] = [
           "There's no need to fill the box to the top: 8 to 12 pieces of candy plus one extra looks full in a box this size. Put together a test box before buying everything so you know how much you need.",
           "Ask about allergies if you're inviting kids you don't know well (peanuts and chocolate are the most common) and, if in doubt, keep a few boxes without those ingredients marked separately.",
         ],
+      },
+    ],
+    faq: [
+      {
+        q: "What candy goes in a favor box?",
+        a: "A mix of chocolate, gummies or lollipops, a spicy or sour candy, a traditional Mexican sweet and a small snack, plus one non-candy extra. Adjust the mix to the guests' ages.",
+      },
+      {
+        q: "How much candy goes in a favor box?",
+        a: "8 to 12 pieces of candy plus one extra looks full in a 15.7 × 11.7 × 9.9 cm lunch-box-style box. Put together a test box before buying everything.",
+      },
+      {
+        q: "Which candy is safe for kids ages 1 to 5?",
+        a: "Soft gummies, marshmallows, cookies, small chocolates, raisins or dried fruit. Avoid hard candy, whole peanuts and toys with small parts.",
+      },
+      {
+        q: "What can I put in the box besides candy?",
+        a: "Stickers with the party's character or the child's name, crayons, bubbles, a bracelet or a bouncy ball. These are extras the child keeps after the party.",
+      },
+      {
+        q: "How do I avoid allergy problems in a favor box?",
+        a: "Ask the parents if you don't know the guests well. Peanuts and chocolate are among the most common: if in doubt, prepare a few boxes without those ingredients and mark them separately.",
       },
     ],
     relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
