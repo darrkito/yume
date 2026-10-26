@@ -36,6 +36,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE.url}/nosotros`, changeFrequency: "monthly", priority: 0.5, alternates: withLanguages("/nosotros") },
     { url: `${SITE.url}/en/about`, changeFrequency: "monthly", priority: 0.4, alternates: withLanguages("/nosotros") },
 
+    { url: `${SITE.url}/planners`, changeFrequency: "monthly", priority: 0.6, alternates: withLanguages("/planners") },
+    { url: `${SITE.url}/en/planners`, changeFrequency: "monthly", priority: 0.5, alternates: withLanguages("/planners") },
+
     { url: `${SITE.url}/contacto`, changeFrequency: "monthly", priority: 0.6, alternates: withLanguages("/contacto") },
     { url: `${SITE.url}/en/contact`, changeFrequency: "monthly", priority: 0.5, alternates: withLanguages("/contacto") },
 

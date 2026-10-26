@@ -80,6 +80,7 @@ const STATIC_PATH_EN: Record<string, string> = {
   "/pago/error": "/en/checkout/error",
   "/pago/pendiente": "/en/checkout/pending",
   "/nosotros": "/en/about",
+  "/planners": "/en/planners",
   "/contacto": "/en/contact",
   "/privacidad": "/en/privacy",
   "/politica-de-devoluciones": "/en/returns-policy",

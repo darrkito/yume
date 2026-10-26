@@ -35,6 +35,7 @@ export function Footer() {
   const blogHref = lang === "en" ? "/en/blog" : "/blog";
   const faqHref = lang === "en" ? "/en/faq" : "/preguntas-frecuentes";
   const aboutHref = lang === "en" ? "/en/about" : "/nosotros";
+  const plannersHref = lang === "en" ? "/en/planners" : "/planners";
   const contactPageHref = lang === "en" ? "/en/contact" : "/contacto";
   const privacyHref = lang === "en" ? "/en/privacy" : "/privacidad";
   const returnsHref = lang === "en" ? "/en/returns-policy" : "/politica-de-devoluciones";
@@ -88,6 +89,11 @@ export function Footer() {
               <li>
                 <Link href={aboutHref} className="inline-flex min-h-11 items-center hover:text-brand transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
                   {t.about}
+                </Link>
+              </li>
+              <li>
+                <Link href={plannersHref} className="inline-flex min-h-11 items-center hover:text-brand transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
+                  {lang === "en" ? "For planners" : "Para planners"}
                 </Link>
               </li>
             </ul>
