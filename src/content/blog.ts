@@ -7,7 +7,8 @@ export const priceOf = (slug: string, qty: number) => {
   const n = tieredPrice(getProduct(slug)!.tiers!, qty);
   return n % 1 ? n.toFixed(2) : String(n);
 };
-export const recetarioPrice = (variantId: "sin-diseno" | "con-diseno") =>
+export const perPiece = (slug: string, qty: number) => (Number(priceOf(slug, qty)) / qty).toFixed(2);
+export const recetarioPrice =(variantId: "sin-diseno" | "con-diseno") =>
   getProduct("recetario-medico-personalizado")!.variants!.find((v) => v.id === variantId)!.price;
 export const casablancaBranchNames =CASABLANCA_BRANCHES.map((b) => b.name.replace(/ \(matriz\)$/, "")).join(", ");
 
@@ -907,54 +908,130 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "yume-vs-imprentas-online-stickers",
-    title: "Yume vs. otras imprentas online de stickers: comparación real de precios",
-    metaTitle: "Yume vs. otras imprentas de stickers",
-    description:
-      "Comparamos el precio por pieza y el mínimo de compra de Yume contra imprentas mexicanas reales de stickers personalizados: con datos reales de precios públicos.",
+    title: "Yume vs. imprentas online de stickers: qué comparar antes de pedir",
+    metaTitle: "Yume vs. imprentas online de stickers",
+    description: `Comparamos Yume con imprentas online de stickers en México. Primeras 100 piezas: $${priceOf("stickers-vinil-impermeable", 100)}, con prueba digital y envío a todo México.`,
     category: "Guías",
     publishedAt: "2026-09-09",
-    modifiedAt: "2026-10-09",
+    modifiedAt: "2026-10-26",
     intro:
-      "Antes de cotizar tus stickers vale la pena saber si el precio que te están dando es competitivo. En septiembre de 2026 revisamos los precios públicos de varias imprentas mexicanas de stickers personalizados: aquí están los números reales, comparados contra los de Yume.",
+      "Antes de pedir stickers para tu boda, tu evento o tu negocio vale la pena comparar bien. En septiembre de 2026 revisamos los precios públicos de varias imprentas mexicanas de stickers personalizados y los pusimos junto a los de Yume. Aquí están los números, qué más conviene revisar además del precio por pieza y cómo pedir sin comprar de más.",
     sections: [
       {
-        heading: "¿Yume es más barato que otras imprentas online de stickers?",
+        heading: "¿En qué se diferencia Yume de otras imprentas online de stickers?",
         body: [
-          "En precio por pieza, Yume queda dentro del rango de las imprentas mexicanas que revisamos en septiembre de 2026 (entre $1.83 y $11.00 MXN), y tiene el mínimo de compra más bajo: $140 MXN frente a $319–$550 MXN de la competencia revisada.",
+          "Yume vende por cantidad exacta de piezas, desde 40 en vinil y 50 en etiquetas con logo, con prueba digital antes de imprimir y envío a todo México. Su precio por pieza queda dentro del rango de las imprentas mexicanas que revisamos en septiembre de 2026, y su mínimo de compra es menor que el de todas ellas.",
+          "La diferencia que más se nota al pedir es que no tienes que comprar planillas completas: eliges cuántas piezas necesitas, ya sea para los invitados de una boda, las mesas de una fiesta o el empaque de tu marca.",
         ],
       },
       {
         heading: "Cómo comparamos",
         body: [
-          "Tomamos el precio público que cada imprenta muestra en su sitio para stickers personalizados y lo convertimos a precio por pieza, además de anotar el mínimo de compra en pesos: así la comparación es justa entre negocios que venden por planilla, por rollo o por cantidad de piezas.",
-          "Todos los precios son los publicados directamente en el sitio de cada competidor a esa fecha; no son estimaciones.",
+          "Convertimos el precio público de cada imprenta a precio por pieza y anotamos su mínimo de compra en pesos. Así se pueden comparar negocios que venden por planilla, por rollo o por cantidad de piezas. Todos los precios son los publicados en el sitio de cada competidor en septiembre de 2026, no estimaciones.",
+          "Dejamos fuera cualquier dato que no estuviera publicado a la vista. Como los precios cambian, antes de decidir conviene volver a revisar el sitio de cada imprenta: lo que ves aquí es una foto de esa fecha, no una garantía de precios actuales de otros negocios.",
         ],
       },
       {
         heading: "Los números",
         body: [
-          "Entre las imprentas mexicanas de stickers personalizados que revisamos, el precio por pieza va de $1.83 a $11.00 MXN, con mínimos de compra que van de $319 a $550 MXN: en algunos casos el mínimo real solo se alcanza comprando varias planillas completas de una vez.",
-          "Yume: Stickers y Etiquetas con tu Logo: de $3.00 a $2.80 por pieza, mínimo $150 (50 piezas). Yume: Stickers de Vinil Personalizados: de $3.50 a $3.40 por pieza, mínimo $140 (40 piezas).",
+          `Primeras 100 piezas en Yume: $${priceOf("stickers-vinil-impermeable", 100)} en vinil y $${priceOf("stickers-logo-personalizado", 100)} en etiquetas con logo, con mínimo de compra de $${priceOf("stickers-vinil-impermeable", 40)} MXN en vinil. Las imprentas mexicanas que revisamos cobran de $1.83 a $11.00 MXN por pieza y piden mínimos de $319 a $550 MXN.`,
+          "En algunas imprentas el mínimo real solo se alcanza comprando varias planillas completas de una vez, por eso conviene mirar el mínimo en pesos y no solo el precio por pieza.",
         ],
         table: {
           headers: ["", "Precio por pieza", "Mínimo de compra"],
           rows: [
             ["Imprentas mexicanas revisadas (precios públicos, septiembre 2026)", "$1.83 a $11.00 MXN", "$319 a $550 MXN"],
-            ["Yume: Stickers y Etiquetas con tu Logo", "$3.00 a $2.80 MXN", "$150 MXN (50 piezas)"],
-            ["Yume: Stickers de Vinil Personalizados", "$3.50 a $3.40 MXN", "$140 MXN (40 piezas)"],
+            ["Yume: Stickers y Etiquetas con tu Logo (primeras 100 piezas)", `$${perPiece("stickers-logo-personalizado", 100)} MXN`, `$${priceOf("stickers-logo-personalizado", 50)} MXN (50 piezas)`],
+            ["Yume: Stickers de Vinil Personalizados (primeras 100 piezas)", `$${perPiece("stickers-vinil-impermeable", 100)} MXN`, `$${priceOf("stickers-vinil-impermeable", 40)} MXN (40 piezas)`],
           ],
+        },
+      },
+      {
+        heading: "Cuánto cuesta pedir más de 100 piezas en Yume",
+        body: [
+          "Primeras 100 piezas: precio normal por pieza. Pasando las 100, cada pieza extra va a precio mayoreo, 10% menos. Por eso el precio por pieza baja un poco cuando pides más. La tabla muestra el total y el precio por pieza en cantidades comunes para un evento o un negocio.",
+          `Como ejemplo, 200 piezas de vinil cuestan $${priceOf("stickers-vinil-impermeable", 200)} ($${perPiece("stickers-vinil-impermeable", 200)} c/u). Pide la cantidad que necesitas: la eliges o la escribes al hacer tu pedido.`,
+        ],
+        table: {
+          headers: ["Piezas", "Etiquetas con tu logo", "Stickers de vinil"],
+          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
         },
       },
       {
         heading: "Qué significa esto para ti",
         body: [
-          "En precio por pieza, Yume queda dentro del rango de lo que revisamos, y la diferencia más clara está en el mínimo de compra: puedes pedir pocas piezas sin comprar planillas completas.",
-          "La diferencia más clara está en el mínimo de compra: con Yume puedes entrar desde $140 MXN, mientras que la competencia revisada pide entre $319 y $550 mínimo: así que si solo quieres probar con poca cantidad, Yume te deja hacerlo sin comprometerte a un pedido grande.",
+          "Si pides detalles para un evento, el mínimo bajo importa más que el precio por pieza: puedes pedir cerca del número real de invitados o mesas, sin comprar planillas completas. Con Yume pides la cantidad exacta y apruebas una prueba digital antes de que se imprima nada.",
+          `Con Yume puedes entrar desde $${priceOf("stickers-vinil-impermeable", 40)} MXN, mientras que las imprentas revisadas piden entre $319 y $550 de mínimo. Si solo quieres probar con poca cantidad, o necesitas pocas piezas para una celebración, puedes hacerlo sin comprometerte a un pedido grande.`,
+        ],
+      },
+      {
+        heading: "Qué más comparar además del precio",
+        body: [
+          "Compara cuatro cosas: si venden por pieza o por planilla, si te muestran una prueba digital antes de imprimir, cuánto tarda el pedido y cuánto cuesta el envío. En Yume, la prueba llega normalmente en máximo 24 horas tras el pago e incluye hasta 2 rondas de ajustes.",
+          `Desde que apruebas la prueba, tu pedido llega a domicilio en ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles, o está listo para recoger en una sucursal Casa Blanca de Guadalajara en ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles. El envío a domicilio cuesta $${NATIONAL_SHIPPING_PRICE} y es gratis en compras de $${FREE_SHIPPING_THRESHOLD} o más.`,
+          "Si tu evento tiene fecha fija, pide con margen para poder ajustar la prueba antes de producir. En la guía de cuánto tarda un pedido de stickers personalizados explicamos cada etapa.",
+        ],
+      },
+      {
+        heading: "Cómo comparar dos cotizaciones sin equivocarte",
+        body: [
+          "Pide a cada imprenta el mismo pedido: mismo número de piezas, mismo tamaño, mismo material y mismo acabado. Luego suma envío y revisa si la prueba digital y los ajustes están incluidos. Dos precios por pieza solo se pueden comparar si el pedido es idéntico.",
+          "Revisa también el material. Los stickers de Yume son de vinil premium, resistente al agua, al sol y a rayones según la ficha del producto, y puedes elegir corte troquelado o semitroquelado. Si otra imprenta te cotiza papel, no estás comparando lo mismo: te explicamos la diferencia en la guía de stickers de vinil vs. papel.",
+          "Por último, confirma cómo se cuenta la cantidad. Algunas imprentas venden por planilla y otras por pieza; en Yume siempre es por pieza, así que 100 stickers son 100 stickers, no el número de hojas.",
+        ],
+      },
+      {
+        heading: "Para qué tipo de pedido conviene Yume",
+        body: [
+          "Yume es buena opción cuando quieres un detalle con nombre, fecha o tema: stickers para sellar bolsitas de regalo, cerrar sobres de invitación, decorar botellas del brindis o acompañar recuerdos de bodas, XV años, baby showers y bautizos. También se usan para el logo o el empaque de un negocio.",
+          "Si organizas bodas o eventos de otras personas, puedes pedir por evento la cantidad exacta, mostrar la prueba digital a tu cliente antes de aprobar y coordinar todo por WhatsApp. En la guía de stickers para bodas, eventos y fiestas hay ideas de uso y tamaños.",
+          "Si ya tienes invitaciones o un menú de boda personalizado, usar el mismo diseño en los stickers hace que el evento se vea como una sola pieza. También puedes revisar los dulceros personalizados y los tatuajes temporales para fiestas.",
+        ],
+      },
+      {
+        heading: "Cómo pedir los tuyos",
+        body: [
+          "Mándanos tu logo, nombres, fecha, foto o el diseño que tengas, aunque no esté terminado, por WhatsApp o desde la tienda en línea. Armamos una prueba digital y no producimos nada hasta que la apruebas. Producimos en Guadalajara y enviamos a todo México.",
+          "El proceso es a distancia: cotizas, apruebas el diseño y recibes tu pedido en casa, sin importar en qué ciudad estés. Para ver más opciones de dónde pedir, revisa la guía de dónde imprimir stickers personalizados en México.",
         ],
       },
     ],
-    relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
-    relatedBlogSlugs: ["stickers-vinil-vs-papel-diferencias", "donde-imprimir-stickers-personalizados-mexico"],
+    faq: [
+      {
+        q: "¿Yume es una imprenta online?",
+        a: "Puedes pedir en línea o por WhatsApp, apruebas una prueba digital y recibes el pedido en casa. Producimos en Guadalajara y enviamos a todo México.",
+      },
+      {
+        q: "¿Cuál es el mínimo de compra en Yume?",
+        a: `40 piezas en Stickers de Vinil Personalizados ($${priceOf("stickers-vinil-impermeable", 40)} MXN) y 50 piezas en Stickers y Etiquetas con tu Logo ($${priceOf("stickers-logo-personalizado", 50)} MXN).`,
+      },
+      {
+        q: "¿Cuánto cuestan los stickers en Yume?",
+        a: `Primeras 100 piezas: $${priceOf("stickers-vinil-impermeable", 100)} en vinil y $${priceOf("stickers-logo-personalizado", 100)} en etiquetas con logo. Pasando las 100, cada pieza extra va a precio mayoreo: 200 piezas de vinil cuestan $${priceOf("stickers-vinil-impermeable", 200)}.`,
+      },
+      {
+        q: "¿Se venden por planilla o por pieza?",
+        a: "Por cantidad de piezas, no por planilla. Pides el número exacto que necesitas.",
+      },
+      {
+        q: "¿De dónde salen los precios de las otras imprentas?",
+        a: "Son los precios públicos que cada imprenta mexicana mostraba en su sitio en septiembre de 2026. Pueden haber cambiado, así que conviene revisar el sitio de cada una antes de decidir.",
+      },
+      {
+        q: "¿Puedo ver cómo quedará antes de imprimir?",
+        a: "Sí. Te enviamos una prueba digital, normalmente en un máximo de 24 horas después del pago, con hasta 2 rondas de ajustes. No imprimimos nada sin tu aprobación.",
+      },
+      {
+        q: "¿Cuánto tarda el pedido y cuánto cuesta el envío?",
+        a: `Desde que apruebas la prueba, tu pedido llega a domicilio en ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles. El envío cuesta $${NATIONAL_SHIPPING_PRICE} y es gratis en compras de $${FREE_SHIPPING_THRESHOLD} o más.`,
+      },
+      {
+        q: "¿Puedo pedir pocas piezas para una boda o fiesta?",
+        a: "Sí. Desde 40 piezas en vinil y 50 en etiquetas con logo, así que puedes pedir cerca del número de invitados o mesas de tu evento.",
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado", "dulceros-personalizados"],
+    relatedBlogSlugs: ["stickers-vinil-vs-papel-diferencias", "donde-imprimir-stickers-personalizados-mexico", "stickers-para-bodas-eventos-y-fiestas", "cuanto-tarda-un-pedido-de-stickers-personalizados", "troquelado-vs-semitroquelado-stickers", "menu-de-boda-personalizado", "como-pedir-invitaciones-personalizadas-para-eventos"],
   },
   {
     slug: "stickers-vinil-vs-papel-diferencias",

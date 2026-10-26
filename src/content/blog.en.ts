@@ -1,5 +1,5 @@
 import type { BlogPost } from "@/content/blog";
-import { priceOf, casablancaBranchNames, recetarioPrice } from "@/content/blog";
+import { priceOf, perPiece, casablancaBranchNames, recetarioPrice } from "@/content/blog";
 import { tierPriceRows } from "@/content/products";
 import { CASABLANCA_BRANCHES, CASABLANCA_PRICE, FREE_SHIPPING_THRESHOLD, NATIONAL_SHIPPING_PRICE, NATIONAL_TRANSIT_DAYS, PICKUP_EXTRA_DAYS, PRODUCTION_DAYS } from "@/content/shipping";
 import { BLOG_SLUG_EN } from "@/lib/i18n";
@@ -863,54 +863,130 @@ export const blogPostsEn: BlogPost[] = [
   },
   {
     slug: BLOG_SLUG_EN["yume-vs-imprentas-online-stickers"],
-    title: "Yume vs. Other Online Sticker Print Shops: A Real Price Comparison",
-    metaTitle: "Yume vs. Other Sticker Print Shops",
-    description:
-      "We compared the per-piece price and minimum order of Yume against real Mexican custom-sticker print shops: using real public pricing data.",
+    title: "Yume vs. Online Sticker Print Shops: What to Compare Before You Order",
+    metaTitle: "Yume vs. Online Sticker Print Shops",
+    description: `We compare Yume with online sticker print shops in Mexico. First 100 pieces: $${priceOf("stickers-vinil-impermeable", 100)} MXN, with a digital proof and shipping across Mexico.`,
     category: "Guides",
     publishedAt: "2026-09-09",
-    modifiedAt: "2026-10-09",
+    modifiedAt: "2026-10-26",
     intro:
-      "Before requesting a quote for stickers, it's worth knowing whether the price you're being offered is actually competitive. In September 2026 we checked the public prices of several Mexican custom-sticker print shops: here are the real numbers, compared against Yume's.",
+      "Before ordering stickers for your wedding, your event or your business, it's worth comparing carefully. In September 2026 we checked the public prices of several Mexican custom-sticker print shops and put them next to Yume's. Here are the numbers, what else is worth checking besides the per-piece price, and how to order without buying more than you need.",
     sections: [
       {
-        heading: "Is Yume cheaper than other online sticker print shops?",
+        heading: "How is Yume different from other online sticker print shops?",
         body: [
-          "On a per-piece basis, Yume sits within the range of the Mexican print shops we reviewed in September 2026 ($1.83 to $11.00 MXN), and it has the lowest minimum order: $140 MXN versus $319-$550 MXN for the competitors we checked.",
+          "Yume sells by the exact number of pieces, from 40 in vinyl and 50 in logo labels, with a digital proof before printing and shipping across Mexico. Its per-piece price sits within the range of the Mexican print shops we reviewed in September 2026, and its minimum order is lower than all of theirs.",
+          "The difference you notice most when ordering is that you don't have to buy full sheets: you choose how many pieces you need, whether for the guests at a wedding, the tables at a party or your brand's packaging.",
         ],
       },
       {
         heading: "How we compared",
         body: [
-          "We took the public price each print shop lists on its site for custom stickers and converted it to a per-piece price, while also noting the minimum order in pesos: that makes the comparison fair between businesses that sell by sheet, by roll, or by piece count.",
-          "Every price is the one published directly on each competitor's site as of that date: none of them are estimates.",
+          "We converted each print shop's public price to a per-piece price and noted its minimum order in pesos. That makes it possible to compare businesses that sell by sheet, by roll, or by piece count. Every price is the one published on each competitor's site in September 2026, not an estimate.",
+          "We left out any data that wasn't published in plain view. Prices change, so before deciding it's worth checking each print shop's site again: what you see here is a snapshot of that date, not a guarantee of other businesses' current prices.",
         ],
       },
       {
         heading: "The numbers",
         body: [
-          "Among the Mexican custom-sticker print shops we reviewed, per-piece price ranges from $1.83 to $11.00 MXN, with minimum orders ranging from $319 to $550 MXN: in some cases the real minimum is only reached by buying several full sheets at once.",
-          "Yume (Custom Logo Stickers: $3.00 to $2.80 per piece, minimum $150 (50 pieces). Yume) Waterproof Vinyl Stickers: $3.50 to $3.40 per piece, minimum $140 (40 pieces).",
+          `First 100 pieces at Yume: $${priceOf("stickers-vinil-impermeable", 100)} MXN in vinyl and $${priceOf("stickers-logo-personalizado", 100)} MXN in logo labels, with a minimum order of $${priceOf("stickers-vinil-impermeable", 40)} MXN in vinyl. The Mexican print shops we reviewed charge $1.83 to $11.00 MXN per piece and require minimums of $319 to $550 MXN.`,
+          "At some print shops the real minimum is only reached by buying several full sheets at once, which is why it's worth looking at the minimum in pesos and not just the per-piece price.",
         ],
         table: {
           headers: ["", "Price per piece", "Minimum order"],
           rows: [
             ["Mexican print shops reviewed (public prices, September 2026)", "$1.83 to $11.00 MXN", "$319 to $550 MXN"],
-            ["Yume: Custom Logo Stickers", "$3.00 to $2.80 MXN", "$150 MXN (50 pieces)"],
-            ["Yume: Waterproof Vinyl Stickers", "$3.50 to $3.40 MXN", "$140 MXN (40 pieces)"],
+            ["Yume: Custom Logo Stickers (first 100 pieces)", `$${perPiece("stickers-logo-personalizado", 100)} MXN`, `$${priceOf("stickers-logo-personalizado", 50)} MXN (50 pieces)`],
+            ["Yume: Waterproof Vinyl Stickers (first 100 pieces)", `$${perPiece("stickers-vinil-impermeable", 100)} MXN`, `$${priceOf("stickers-vinil-impermeable", 40)} MXN (40 pieces)`],
           ],
+        },
+      },
+      {
+        heading: "What ordering more than 100 pieces costs at Yume",
+        body: [
+          "First 100 pieces: regular per-piece price. Past 100, every extra piece is at wholesale price, 10% less. That's why the per-piece price drops a little when you order more. The table shows the total and the per-piece price at common quantities for an event or a business.",
+          `For example, 200 vinyl pieces cost $${priceOf("stickers-vinil-impermeable", 200)} MXN ($${perPiece("stickers-vinil-impermeable", 200)} each). Order the quantity you need: you pick it or type it when you place your order.`,
+        ],
+        table: {
+          headers: ["Pieces", "Custom Logo Stickers", "Vinyl Stickers"],
+          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
         },
       },
       {
         heading: "What this means for you",
         body: [
-          "On a per-piece basis, Yume sits within the range of what we reviewed, and the clearest difference is the minimum order: you can order a small number of pieces without buying full sheets.",
-          "The clearest difference is in minimum order size: with Yume you can get started for $140 MXN, while the competitors we reviewed require a minimum between $319 and $550: so if you just want to try a small batch, Yume lets you do that without committing to a large order.",
+          "If you're ordering details for an event, a low minimum matters more than the per-piece price: you can order close to the real number of guests or tables without buying full sheets. With Yume you order the exact quantity and approve a digital proof before anything is printed.",
+          `With Yume you can start from $${priceOf("stickers-vinil-impermeable", 40)} MXN, while the print shops we reviewed ask for a minimum between $319 and $550. If you just want to try a small batch, or need only a few pieces for a celebration, you can do it without committing to a large order.`,
+        ],
+      },
+      {
+        heading: "What else to compare besides price",
+        body: [
+          "Compare four things: whether they sell by piece or by sheet, whether they show you a digital proof before printing, how long the order takes and how much shipping costs. At Yume, the proof normally arrives within 24 hours of payment and includes up to 2 rounds of adjustments.",
+          `From the moment you approve the proof, your order arrives at your door in ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days, or is ready for pickup at a Casa Blanca branch in Guadalajara in ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days. Home delivery costs $${NATIONAL_SHIPPING_PRICE} MXN and is free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more.`,
+          "If your event has a fixed date, order with some margin so you can adjust the proof before production. Our guide on how long custom stickers take to arrive explains each stage.",
+        ],
+      },
+      {
+        heading: "How to compare two quotes without getting it wrong",
+        body: [
+          "Ask each print shop for the same order: same number of pieces, same size, same material and same finish. Then add shipping and check whether the digital proof and revisions are included. Two per-piece prices can only be compared if the order is identical.",
+          "Check the material too. Yume stickers are premium vinyl, resistant to water, sun and scratches according to the product sheet, and you can choose die-cut or kiss-cut. If another print shop quotes you paper, you're not comparing the same thing: we explain the difference in our guide to vinyl vs. paper stickers.",
+          "Finally, confirm how the quantity is counted. Some print shops sell by sheet and others by piece; at Yume it's always by piece, so 100 stickers means 100 stickers, not a number of sheets.",
+        ],
+      },
+      {
+        heading: "What kind of order suits Yume",
+        body: [
+          "Yume is a good fit when you want a detail with a name, date or theme: stickers to seal gift bags, close invitation envelopes, dress up toast bottles or go with keepsakes for weddings, quinceañeras, baby showers and baptisms. They're also used for a business's logo or packaging.",
+          "If you plan weddings or events for other people, you can order the exact quantity per event, show the digital proof to your client before approving, and coordinate everything over WhatsApp. Our guide to stickers for weddings, events and parties has ideas for uses and sizes.",
+          "If you already have invitations or a custom wedding menu, using the same design on the stickers makes the whole event look like one piece. You can also look at our personalized party favor boxes and temporary tattoos for parties.",
+        ],
+      },
+      {
+        heading: "How to order yours",
+        body: [
+          "Send us your logo, names, date, photo or whatever design you have, even if it isn't finished, by WhatsApp or from the online store. We prepare a digital proof and produce nothing until you approve it. We produce in Guadalajara and ship across Mexico.",
+          "The whole process is remote: you get a quote, approve the design and receive your order at home, no matter which city you're in. For more options on where to order, see our guide to where to print custom stickers in Mexico.",
         ],
       },
     ],
-    relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
-    relatedBlogSlugs: [BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"], BLOG_SLUG_EN["donde-imprimir-stickers-personalizados-mexico"]],
+    faq: [
+      {
+        q: "Is Yume an online print shop?",
+        a: "You can order online or by WhatsApp, approve a digital proof and receive the order at home. We produce in Guadalajara and ship across Mexico.",
+      },
+      {
+        q: "What is Yume's minimum order?",
+        a: `40 pieces for Custom Vinyl Stickers ($${priceOf("stickers-vinil-impermeable", 40)} MXN) and 50 pieces for Logo Stickers & Labels ($${priceOf("stickers-logo-personalizado", 50)} MXN).`,
+      },
+      {
+        q: "How much do stickers cost at Yume?",
+        a: `First 100 pieces: $${priceOf("stickers-vinil-impermeable", 100)} MXN in vinyl and $${priceOf("stickers-logo-personalizado", 100)} MXN in logo labels. Past 100, every extra piece is at wholesale price: 200 vinyl pieces cost $${priceOf("stickers-vinil-impermeable", 200)} MXN.`,
+      },
+      {
+        q: "Are they sold by sheet or by piece?",
+        a: "By number of pieces, not by sheet. You order the exact quantity you need.",
+      },
+      {
+        q: "Where do the other print shops' prices come from?",
+        a: "They are the public prices each Mexican print shop showed on its site in September 2026. They may have changed, so check each site before deciding.",
+      },
+      {
+        q: "Can I see how it will look before printing?",
+        a: "Yes. We send a digital proof, normally within 24 hours of payment, with up to 2 rounds of adjustments. We don't print anything without your approval.",
+      },
+      {
+        q: "How long does the order take and how much is shipping?",
+        a: `From the moment you approve the proof, your order arrives at your door in ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days. Shipping costs $${NATIONAL_SHIPPING_PRICE} MXN and is free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more.`,
+      },
+      {
+        q: "Can I order a small quantity for a wedding or party?",
+        a: "Yes. From 40 pieces in vinyl and 50 in logo labels, so you can order close to the number of guests or tables at your event.",
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado", "dulceros-personalizados"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"], BLOG_SLUG_EN["donde-imprimir-stickers-personalizados-mexico"], BLOG_SLUG_EN["stickers-para-bodas-eventos-y-fiestas"], BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"], BLOG_SLUG_EN["troquelado-vs-semitroquelado-stickers"], BLOG_SLUG_EN["menu-de-boda-personalizado"], BLOG_SLUG_EN["como-pedir-invitaciones-personalizadas-para-eventos"]],
   },
   {
     slug: BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"],
