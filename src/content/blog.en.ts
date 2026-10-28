@@ -2771,6 +2771,105 @@ export const blogPostsEn: BlogPost[] = [
     relatedBlogSlugs: [BLOG_SLUG_EN["dulceros-navidenos-personalizados"], BLOG_SLUG_EN["stickers-para-empaques-de-negocio"], BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"]],
     download: { href: "/descargas/printable-christmas-gift-tags.pdf", label: "Free download: printable Christmas gift tags (PDF, color and black and white)" },
   },
+  {
+    slug: BLOG_SLUG_EN["souvenirs-de-boda-personalizados"],
+    title: "Personalized Wedding Favors: Ideas with Name and Date",
+    metaTitle: "Personalized Wedding Favors with Name and Date",
+    description:
+      "Personalized wedding favors with name and date: ideas with favor boxes and stickers, how many to order and when to request a quote. Made in Guadalajara.",
+    category: "Guides",
+    publishedAt: "2026-10-28",
+    intro:
+      "A favor with the couple's names and the wedding date turns a table detail into a keepsake your guests actually want to take home. This guide covers which pieces you can personalize at Yume, how many to order, how to match them with the rest of your stationery and when to request a quote so you reach your wedding calmly.",
+    sections: [
+      {
+        heading: "What makes a personalized wedding favor special?",
+        body: [
+          "A personalized wedding favor is a small gift each guest takes home with the couple's names, the date or the wedding's design. It thanks them for coming and leaves a tangible keepsake. What makes it valuable is that it has a use, or a place, after the party.",
+          "Publimetro México reports that couples in 2026 prefer useful, lasting pieces over single-use objects. Chic Magazine México adds that personalizing goes beyond names, initials or a date: it is about reflecting the couple's style. Both articles are listed under Sources at the end.",
+          "Those articles cite examples such as bottles, art prints and home fragrances. We do not make those. What we make is paper and vinyl with your design, and the idea still applies: a detail made for your wedding, with your colors and your story, not a generic one.",
+        ],
+      },
+      {
+        heading: "Personalized wedding favor ideas with name and date",
+        body: [
+          "At Yume you can make three kinds of wedding favor: favor boxes with the couple's names, stickers with initials and date to seal your details, and temporary tattoos for the dance floor. All three are designed with you and we show you a digital proof before producing.",
+          "Favor boxes: a small handled box in opalina cardstock, with the couple's names and your wedding's theme. It arrives assembled and empty, ready to fill. It can go on the candy table so each guest builds their own, or arrive already filled at each place setting.",
+          "Stickers: initials and date on water-resistant vinyl to seal gift bags, close invitation envelopes or decorate jars on the candy table. It is the simplest way to make a simple detail look planned.",
+          "Temporary tattoos: the couple's initials or the date as a detail at the welcome table or on the dance floor. Guests wear them for the rest of the party and they show up in photos. They are quoted by design and quantity.",
+        ],
+      },
+      {
+        heading: "How many wedding favors to order and what do they cost?",
+        body: [
+          "Order one favor per guest or one per family or couple, plus a few extra for the couple's table, photos and surprises. Start from your confirmed guest list, because at Yume you buy the exact number of pieces and the minimum depends on the product.",
+          `The minimum is 10 favor boxes and 40 vinyl stickers. First 100 pieces: 100 favor boxes cost $${priceOf("dulceros-personalizados", 100)} MXN and 100 vinyl stickers cost $${priceOf("stickers-vinil-impermeable", 100)} MXN. For stickers, past 100 pieces each extra piece is at wholesale price. Temporary tattoos are quoted over WhatsApp.`,
+          "A practical count: with 80 guests, order 80 pieces plus 5 or 10 spare. Price by quantity:",
+        ],
+        table: {
+          headers: ["Pieces", "Personalized favor boxes", "Vinyl stickers"],
+          rows: tierPriceRows(["dulceros-personalizados", "stickers-vinil-impermeable"], [50, 100, 200], "en"),
+        },
+      },
+      {
+        heading: "How do you match favors with your invitations and menu?",
+        body: [
+          "Use the same design everywhere: same colors, same typography and same initials on the invitation, the menu and the favor. The wedding then reads as one planned set instead of loose pieces. Define the design once, approve the digital proof and order each piece with that same file.",
+          "If you do not have your stationery yet, start with the invitations and the wedding menu and leave the favors for later: you will already have your design line. Below, under Keep reading, you will find the guide for each piece.",
+          "If you are a wedding planner organizing a client's wedding, send us the palette, the style and the confirmed guest list. We deal with you directly over WhatsApp and you can review the digital proof with your client before approving.",
+        ],
+      },
+      {
+        heading: "When should you order wedding favors?",
+        body: [
+          "Request a quote as soon as you have a date, a venue and an idea of your colors, and order for real when the guest list is nearly final. That leaves room to review the digital proof, make adjustments and receive the order without rushing, especially if your event has a fixed date.",
+          `The digital proof usually arrives within 24 hours of payment. Once you approve it, your order takes ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days to reach your door anywhere in Mexico, or is ready for pickup at a Casa Blanca branch in Guadalajara in ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days.`,
+          `Home delivery costs $${NATIONAL_SHIPPING_PRICE} MXN and is free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more. If you are also ordering invitations or menus, it helps to coordinate everything in one conversation so each piece's timing fits your date.`,
+        ],
+      },
+      {
+        heading: "How to request a quote for your wedding favors",
+        body: [
+          "Message us on WhatsApp with the couple's names, the date, your colors or your finished design, and your guest count. We prepare the quote, and before producing we send a digital proof: nothing is produced until you approve it. We produce in Guadalajara and ship across Mexico.",
+          "If your wedding is in Guadalajara, you can also pick up at a Casa Blanca branch. If it is in another city, the design and approval process is the same.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Which personalized wedding favors can I order at Yume?",
+        a: "Personalized favor boxes with the couple's names and your wedding's theme, vinyl stickers with initials and date, and temporary tattoos with your design. We do not make bottles or fragrances.",
+      },
+      {
+        q: "Can I see the design before it is produced?",
+        a: "Yes. We send a digital proof before producing and nothing is made until you approve it.",
+      },
+      {
+        q: "What is the minimum order?",
+        a: "10 pieces for personalized favor boxes and 40 pieces for vinyl stickers. They are sold by exact piece count, not by sheet.",
+      },
+      {
+        q: "Do the favor boxes come with candy?",
+        a: "No. Favor boxes arrive assembled and empty, ready for you to fill with whatever you like.",
+      },
+      {
+        q: "Do you ship to other cities in Mexico?",
+        a: `Yes. We produce in Guadalajara and ship across Mexico. Shipping costs $${NATIONAL_SHIPPING_PRICE} MXN and is free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more.`,
+      },
+      {
+        q: "How much do temporary tattoos for a wedding cost?",
+        a: "They are quoted by design and quantity. Message us on WhatsApp with your wedding date and guest count and we will prepare the quote.",
+      },
+    ],
+    relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["dulceros-para-eventos-sociales-boda-xv-baby-shower"], BLOG_SLUG_EN["stickers-para-bodas-eventos-y-fiestas"], BLOG_SLUG_EN["como-pedir-invitaciones-personalizadas-para-eventos"], BLOG_SLUG_EN["menu-de-boda-personalizado"], BLOG_SLUG_EN["tatuajes-temporales-para-boda-eventos-y-fiestas"]],
+    serviceLink: { href: "/en/products/custom-temporary-tattoos", label: "See custom temporary tattoos" },
+    quoteMessage: "Hi, I'd like a quote for personalized wedding favors.",
+    sources: [
+      { label: "Publimetro México: Souvenirs para bodas 2026, las tendencias que ganan terreno", url: "https://www.publimetro.com.mx/virales/2026/10/02/souvenirs-para-bodas-2026-las-tendencias-que-ganan-terreno/" },
+      { label: "Chic Magazine México: Tendencias en souvenirs y recuerdos para bodas 2027", url: "https://www.chicmagazine.com.mx/consejos/tendencias-souvenirs-recuerdos-para-bodas-2027-ideas-originales" },
+    ],
+  },
 ];
 
 export function getBlogPostEn(slug: string) {
