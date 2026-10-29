@@ -1605,16 +1605,32 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "como-conseguir-mas-resenas-de-google-nfc-qr",
-    title: "Cómo conseguir más reseñas de Google con una placa NFC y QR",
-    metaTitle: "Cómo conseguir más reseñas de Google con NFC y QR",
+    title: "Placa de reseñas de Google con NFC: qué es y cuánto cuesta",
+    metaTitle: "Placa de reseñas de Google con NFC: qué es y cuánto cuesta",
     description:
-      "Cómo conseguir más reseñas de Google: pide la reseña en el momento justo y facilita el paso con una placa NFC y QR. Guía práctica y reglas de Google.",
+      "Qué es una placa de reseñas de Google con NFC y QR, cómo funciona, cuánto cuesta y cómo usarla para pedir más reseñas sin romper las reglas de Google.",
     category: "Guías",
     publishedAt: "2026-09-15",
-    modifiedAt: "2026-10-28",
+    modifiedAt: "2026-11-02",
     intro:
-      "Pedir una reseña de Google casi siempre es incómodo: le dictas a tu cliente el nombre del negocio, él lo busca, filtra entre varios resultados parecidos y a veces se rinde antes de encontrar el correcto. Una placa con NFC y código QR resuelve justo ese paso: lleva directo a la ficha correcta en dos segundos, sin que el cliente tenga que buscar nada. Aquí tienes el método completo: cuándo pedir la reseña, qué decir, dónde colocar la placa, qué reglas de Google debes respetar y cómo responder cuando lleguen las opiniones.",
+      "Pedir una reseña de Google casi siempre es incómodo: le dictas a tu cliente el nombre del negocio, él lo busca, filtra entre varios resultados parecidos y a veces se rinde antes de encontrar el correcto. Una placa con NFC y código QR resuelve justo ese paso: lleva directo a la ficha correcta en dos segundos, sin que el cliente tenga que buscar nada. Aquí tienes qué es una placa de reseñas de Google, cómo funciona, dónde ver cuánto cuesta y el método completo: cuándo pedir la reseña, qué decir, dónde colocar la placa, qué reglas de Google debes respetar y cómo responder cuando lleguen las opiniones.",
     sections: [
+      {
+        heading: "Qué es una placa de reseñas de Google con NFC",
+        body: [
+          "Una placa de reseñas de Google es una pieza física que lleva un chip NFC y un código QR, los dos ligados al enlace de reseñas de tu negocio. El cliente toca o escanea con su teléfono y llega directo a la pantalla para escribir su opinión en tu ficha de Google, sin buscarte a mano.",
+          "Según quién la venda, la encontrarás como placa NFC, tarjeta de reseñas o «google review stand» cuando va sobre una base. La idea es la misma: acortar el camino entre tu cliente y el formulario de reseña. En Yume tenemos dos formatos, la placa para pegar en un punto fijo y el stand para colocar de pie.",
+          "Lo que no hace: no publica reseñas por sí sola ni garantiza una calificación. La reseña siempre la escribe tu cliente, con su cuenta de Google, y lo que diga depende de su experiencia contigo.",
+        ],
+      },
+      {
+        heading: "Cómo funciona una placa de reseñas, paso a paso",
+        body: [
+          "El cliente acerca su teléfono a la placa, o escanea el código QR con la cámara, y se abre la pantalla de reseña de tu ficha de Google. Ahí inicia sesión con su cuenta de Google, escribe su opinión y la publica. Tú no tienes que dictarle el nombre de tu negocio ni guiarlo por resultados.",
+          "Visto desde tu lado son tres momentos. Primero, tú mencionas la reseña al terminar la atención. Segundo, el cliente toca o escanea la placa. Tercero, escribe lo que piensa y tú respondes cuando llegue.",
+          "El chip NFC guarda el enlace a la pantalla de reseña y se lee al acercar el teléfono, sin abrir ninguna app, siempre que el teléfono tenga NFC y lo tenga activado. Si no, el código QR hace el mismo trabajo con la cámara.",
+        ],
+      },
       {
         heading: "Cómo conseguir más reseñas de Google: el método en tres pasos",
         body: [
@@ -1676,12 +1692,36 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Elige la placa si tienes un punto fijo donde pegarla, como el mostrador, la caja o una pared. Elige el stand si prefieres colocarla de pie sobre un escritorio o una mesa, sin adhesivo permanente, o si cambias de lugar con frecuencia.",
           "Piensa en tu espacio: un consultorio con escritorio y una recepción con mostrador piden cosas distintas. Si dudas, escríbenos por WhatsApp, cuéntanos cómo es tu local y te ayudamos a elegir. Para ver cómo se usa paso a paso, revisa la guía de cómo usar la placa de reseñas de Google.",
+          "Si buscabas un «google review stand», es este formato: la misma idea de la placa, pero de pie sobre una base.",
+        ],
+      },
+      {
+        heading: "Cuánto cuesta una placa de reseñas de Google",
+        body: [
+          "Para ver cuánto cuesta una placa de reseñas de Google de Yume, abre la página de la placa o del stand: ahí aparece siempre el precio vigente. Los dos se eligen en blanco o negro y el precio es el mismo en ambos colores.",
+          "Si comparas con otras opciones, no mires solo el precio. Revisa si lleva NFC y código QR, si el enlace se puede cambiar y si el soporte aguanta el lugar donde lo vas a poner. Y recuerda que ninguna placa garantiza reseñas: lo que cambia es qué tan fácil se lo pones a tu cliente.",
         ],
       },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
     relatedBlogSlugs: ["placa-nfc-vs-codigo-qr-impreso-resenas", "como-usar-placa-resenas-google-yume"],
     faq: [
+      {
+        q: "¿Qué es una placa de reseñas de Google?",
+        a: "Es una pieza física con un chip NFC y un código QR ligados al enlace de reseñas de tu negocio. El cliente toca o escanea con su teléfono y llega directo a la pantalla para dejar su reseña en tu ficha de Google.",
+      },
+      {
+        q: "¿Cuánto cuesta una placa de reseñas de Google?",
+        a: "El precio vigente de la placa y del stand de Yume aparece en la página de cada producto. Se eligen en blanco o negro, con el mismo precio en los dos colores.",
+      },
+      {
+        q: "¿Qué es un google review stand?",
+        a: "Es la versión de la placa que se coloca de pie sobre un escritorio o una mesa, sin adhesivo. En Yume es el stand de reseñas de Google con NFC y QR.",
+      },
+      {
+        q: "¿En qué colores viene la placa?",
+        a: "La placa y el stand se eligen en blanco o negro. El color no cambia el precio.",
+      },
       {
         q: "¿Una placa NFC y QR garantiza más reseñas?",
         a: "No. La placa solo quita fricción: lleva al cliente directo a tu ficha. Que deje la reseña, y qué escriba, depende de su experiencia contigo y de que se lo pidas en el momento adecuado.",
