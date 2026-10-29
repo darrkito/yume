@@ -216,45 +216,106 @@ export const dulceroPosts: BlogPost[] = [
   {
     slug: "dulceros-navidenos-personalizados",
     title: "Dulceros navideños personalizados: para posadas, la escuela y el intercambio",
-    metaTitle: "Dulceros navideños para posadas: ideas y pedidos",
+    metaTitle: "Dulceros navideños personalizados para posadas",
     description:
-      "Ideas de dulceros navideños personalizados para posadas, festivales escolares, intercambios y fiestas de fin de año: diseños, qué poner dentro y cuándo pedirlos para que lleguen a tiempo.",
+      "Dulceros navideños personalizados para posadas, la escuela y el intercambio: diseños, qué poner dentro, cuántos pedir y cuándo ordenarlos.",
     category: "Guías",
     publishedAt: PUBLISHED,
-    modifiedAt: "2026-10-17",
+    modifiedAt: "2026-10-29",
     intro:
-      "Diciembre es la temporada con más búsquedas de dulceros en México: posadas, festivales de la escuela, convivios de la oficina e intercambios. Un dulcero navideño con nombre convierte el clásico aguinaldo de dulces en un detalle que se ve pensado. Esta guía cubre ideas de diseño, qué poner dentro y, lo más importante, con cuánto tiempo pedirlos.",
+      "Las posadas se celebran del 16 al 24 de diciembre, y entre festivales de la escuela, convivios de la oficina e intercambios, el dulcero navideño personalizado se vuelve el detalle que se ve pensado. Con el nombre de quien lo recibe, convierte el clásico aguinaldo de dulces en un recuerdo. Esta guía cubre diseño, usos, cantidades y, sobre todo, con cuánto tiempo pedirlos.",
     sections: [
       {
-        heading: "Ideas de diseño para Navidad",
+        heading: "Qué dulcero navideño personalizado elegir",
         body: [
-          "Los clásicos funcionan: rojo y verde con detalles dorados, nieve y pinos, estilo nórdico en blanco y rojo, o una temática más infantil con Santa, renos y muñecos de nieve. Para un festival escolar, un diseño con el nombre del grupo o del salón queda muy bien; para una posada familiar, el apellido de la familia o el nombre de cada niño.",
-          "Si los vas a dar en tu negocio o empresa, usa los colores de tu marca con un detalle navideño y tu logo: se ven festivos sin perder tu imagen.",
+          "Un dulcero navideño personalizado funciona mejor con el nombre de quien lo recibe y una temática sencilla de la temporada, como rojo y verde con dorado, pinos o nieve. Sirve para posadas, el salón de clases o un intercambio, y llega armado y vacío para que tú elijas qué lleva dentro.",
+          "Los clásicos funcionan: rojo y verde con detalles dorados, nieve y pinos, estilo nórdico en blanco y rojo, o una temática infantil con Santa, renos y muñecos de nieve. Para la escuela va el nombre del grupo o del salón; para una posada familiar, el apellido de la familia o el nombre de cada niño.",
+          `Nuestro [dulcero personalizado](/productos/${DULCERO}) es tipo lunch box, con asa, e incluye nombre y temática.`,
         ],
       },
       {
-        heading: "Para posadas y aguinaldos",
+        heading: "Dulceros navideños para posadas y aguinaldos",
         body: [
-          "En una posada, el dulcero tipo lunch box reemplaza bien la bolsa de aguinaldo tradicional: cabe una buena porción de dulces, cacahuates, colación o mandarinas pequeñas, y el asa facilita que los niños lo carguen mientras rompen la piñata.",
-          "Mide 15.7 × 11.7 × 9.9 cm y te llega armado, así que el día de la posada solo tienes que llenarlo.",
+          "En una posada, el dulcero tipo lunch box con asa reemplaza la bolsa de aguinaldo tradicional: cabe una buena porción de dulces, cacahuates, colación o mandarinas pequeñas y los niños lo cargan fácil mientras rompen la piñata. Llega armado, así que el día de la posada solo lo llenas.",
+          "Mide 15.7 × 11.7 × 9.9 cm. Muchas oficinas, escuelas y familias han optado por simplificar sus posadas y reducir el gasto, y un detalle compacto con nombre encaja bien con esa idea.",
         ],
       },
       {
-        heading: "Cuándo pedirlos para que lleguen a tiempo",
+        heading: "Dulceros navideños para el salón de clases",
         body: [
-          "La producción toma de 3 a 5 días hábiles desde que apruebas la prueba digital, más el envío. En diciembre las paqueterías van más lentas y los días festivos no cuentan como hábiles, así que lo más seguro es hacer el pedido en noviembre o, a más tardar, la primera semana de diciembre para posadas del 16 al 24.",
-          "Si estás en Guadalajara, recogerlo en una sucursal Casa Blanca ($20) suele ser más rápido que el envío nacional: llega 1 día hábil después de terminar la producción.",
+          "Para un salón, lo más sencillo es un solo diseño para todo el grupo, con el nombre del salón o de la escuela y una temática navideña. Pides un dulcero por alumno, y como el mínimo es de 10 piezas, el número se ajusta a la medida de tu grupo.",
+          "Antes de comprar el relleno, pregunta a la escuela o a la asociación de padres si hay reglas sobre dulces o alergias en el grupo. Para ideas de relleno por edad, revisa la guía de [qué poner en un dulcero](/blog/que-poner-en-un-dulcero).",
         ],
       },
       {
-        heading: "Precio para grupos grandes",
+        heading: "Dulceros navideños para un intercambio",
         body: [
-          "Cada dulcero cuesta $75 con mínimo de 10 piezas, así que un salón de 30 niños son $2,250 y una posada de 20 invitados son $1,500. Desde $750 el envío nacional es gratis.",
+          "Para un intercambio, el dulcero personalizado es un detalle compacto con el nombre de quien lo recibe. Antes de pedir, el grupo debe acordar cuántos participantes hay y qué monto se maneja; como el mínimo es de 10 piezas, funciona mejor en intercambios de oficina, familia o salón con varias personas.",
+        ],
+      },
+      {
+        heading: "Dulceros navideños para empresas y oficinas",
+        body: [
+          "Para el convivio de una oficina o un negocio, usa los colores de tu marca con un detalle navideño y tu logo. El dulcero se ve festivo sin perder tu imagen, y la personalización puede incluir el nombre de tu empresa, el de cada invitado o una temática de fin de año.",
+          "Si organizas un evento con clientes o equipo, revisa la guía de [dulceros para eventos empresariales](/blog/dulceros-para-eventos-empresariales). Para empaques o bolsas del mismo evento, mira las [etiquetas navideñas personalizadas](/blog/etiquetas-navidenas-personalizadas).",
+        ],
+      },
+      {
+        heading: "Cuántos dulceros pedir y cuánto cuestan",
+        body: [
+          `Primeras 100 piezas: $${dulceroUnit} MXN por dulcero, con pedido mínimo de 10 piezas, así que pides el número exacto de invitados o alumnos. 10 dulceros son $${dulceroTotal(10)}, 20 son $${dulceroTotal(20)} y 30 son $${dulceroTotal(30)}. Arriba de 100 piezas es precio mayoreo: escríbenos por WhatsApp y te cotizamos.`,
+          `Un salón de 30 alumnos pide 30 dulceros; una posada de 20 invitados, 20. Desde $${FREE_SHIPPING_THRESHOLD} de compra el envío nacional es gratis. Si estás en la zona metropolitana de Guadalajara, puedes recogerlos por $${CASABLANCA_PRICE} en cualquiera de las ${CASABLANCA_BRANCHES.length} sucursales de paquetería Casa Blanca.`,
+        ],
+      },
+      {
+        heading: "Cuándo pedir dulceros navideños para que lleguen a tiempo",
+        body: [
+          `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba digital, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional (o ${PICKUP_EXTRA_DAYS} día hábil si recoges en una sucursal Casa Blanca de Guadalajara). Como las posadas son del 16 al 24 de diciembre, lo más seguro es pedir en noviembre.`,
+          "Si ya tienes la fecha de tu posada o de tu festival, cuenta hacia atrás desde ese día con los plazos de arriba.",
+        ],
+      },
+      {
+        heading: "Cómo pedir tu dulcero personalizado",
+        body: [
+          "Para pedir, mándanos por WhatsApp cuántos dulceros necesitas, el nombre que llevará cada uno, la temática o los colores que quieres y, si aplica, tu logo. Te enviamos una prueba digital antes de producir, y nada se produce hasta que la apruebas.",
+          `Puedes ver el [dulcero personalizado](/productos/${DULCERO}) y sumar [stickers de vinil](/productos/stickers-vinil-impermeable) del mismo diseño como detalle dentro. Si estás en Zapopan o Guadalajara, revisa los [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara).`,
         ],
       },
     ],
-    relatedProductSlugs: [DULCERO],
+    relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
     relatedBlogSlugs: ["etiquetas-navidenas-personalizadas", "dulceros-para-eventos-empresariales", "que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara"],
+    sources: [
+      {
+        label: "Cuándo empiezan las posadas 2025 en México y cuánto cuesta hacer una posada (InformaBTL)",
+        url: "https://www.informabtl.com/cuando-empiezan-las-posadas-2025-en-mexico-cuanto-cuesta-hacer-una-posada/",
+      },
+    ],
+    faq: [
+      {
+        q: "¿Los dulceros incluyen dulces?",
+        a: "No. El dulcero llega armado y vacío, listo para llenar con los dulces o detalles que tú elijas.",
+      },
+      {
+        q: "¿Cuánto cuesta un dulcero navideño personalizado?",
+        a: `Primeras 100 piezas: $${dulceroUnit} MXN por pieza, con pedido mínimo de 10. Arriba de 100 piezas es precio mayoreo y se cotiza por WhatsApp. Desde $${FREE_SHIPPING_THRESHOLD} el envío nacional es gratis.`,
+      },
+      {
+        q: "¿Qué incluye la personalización?",
+        a: "El nombre (del festejado, del grupo o de tu empresa) y la temática que elijas, incluido el logo de tu marca. Te mandamos una prueba digital antes de producir.",
+      },
+      {
+        q: "¿Cuánto mide el dulcero?",
+        a: "Es tipo lunch box, con asa, y mide 15.7 × 11.7 × 9.9 cm. Te llega armado.",
+      },
+      {
+        q: "¿Cuánto tardan en llegar?",
+        a: `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional, o ${PICKUP_EXTRA_DAYS} día hábil si recoges en una sucursal Casa Blanca de Guadalajara.`,
+      },
+      {
+        q: "¿Cuándo son las posadas?",
+        a: "Las posadas se celebran del 16 al 24 de diciembre, por eso conviene hacer el pedido en noviembre.",
+      },
+    ],
   },
   {
     slug: "dulceros-para-dia-del-nino",
