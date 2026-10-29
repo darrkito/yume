@@ -2335,14 +2335,15 @@ export const blogPosts: BlogPost[] = [
     description: "Dónde imprimir stickers personalizados en México y cuánto cuestan: primeras 100 piezas por $350, qué archivo enviar y envío a todo el país.",
     category: "Guías",
     publishedAt: "2026-09-29",
-    modifiedAt: "2026-10-18",
+    modifiedAt: "2026-10-28",
     intro:
       "Si buscas dónde imprimir stickers personalizados en México, la mayoría de las opciones caen en dos grupos: imprimirlos tú mismo en casa (con vinil y una impresora especial) o mandarlos a hacer con una imprenta que ya tiene el equipo de corte troquelado. Esta guía cubre la segunda opción: qué necesitas tener listo y cómo funciona el proceso para mandar a imprimir tus stickers en línea, sin tener que comprar equipo ni ir a una imprenta física.",
     sections: [
       {
         heading: "¿Cuánto cuesta imprimir stickers personalizados en México?",
         body: [
-          "En Yume, imprimir stickers personalizados cuesta desde $140 MXN: 40 piezas de stickers de vinil ($3.50 c/u) o 50 piezas de etiquetas con tu logo ($3.00 c/u). Las primeras 100 piezas van a precio normal y cada pieza extra después de 100 baja 10% (precio mayoreo). El envío a todo México es gratis desde $750 MXN, y recoger en Guadalajara también.",
+          "Primeras 100 piezas: $350 en stickers de vinil ($3.50 c/u, mínimo 40) y $300 en etiquetas con tu logo ($3.00 c/u, mínimo 50). Pasando de 100 piezas es precio mayoreo y cada pieza extra baja 10%. El envío a todo México es gratis desde $750 MXN.",
+          "Se venden por cantidad de piezas, no por planilla, así que pides la cantidad exacta que necesitas. El corte (troquelado o semitroquelado) y los acabados mate y brillante no cambian el precio; el holográfico suma un costo extra por pieza.",
           "Precio por cantidad (el mínimo de compra es 50 piezas en etiquetas con logo y 40 en vinil):",
         ],
         table: {
@@ -2353,28 +2354,94 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Stickers para imprimir en casa vs. mandarlos a imprimir",
         body: [
-          "Muchas búsquedas empiezan con \"stickers para imprimir\" o \"pegatinas personalizadas\" (así les dicen en varias partes de México): quien quiere imprimir en casa necesita impresora, papel adhesivo y tijeras o una cortadora. Quien quiere un acabado de vinil resistente al agua, troquelado y en cantidad, lo más práctico es pedirlos ya impresos.",
-          "Imprimir en casa tiene sentido si ya tienes o quieres invertir en una impresora especial y vinil por rollo, y tu volumen es bajo. Para la mayoría de negocios y personas, sale más barato y más simple mandar a hacer el pedido con una imprenta que ya tiene el equipo de corte troquelado: no hay que comprar ni aprender a usar una máquina para un pedido de 50 o 100 piezas.",
+          "Si quieres un sticker troquelado, resistente al agua y en cantidad, lo más práctico es pedirlo ya impreso. Imprimir en casa solo conviene para pocas piezas, si ya tienes impresora, papel adhesivo y tijeras o cortadora, y no te importa que el contorno quede menos exacto.",
+          "Muchas búsquedas empiezan con «stickers para imprimir» o «pegatinas personalizadas» (así les dicen en varias partes de México). Quien imprime en casa tiene que recortar pieza por pieza.",
+          "Imprimir en casa tiene sentido si ya tienes o quieres invertir en una impresora especial y vinil por rollo, y tu volumen es bajo. Para un pedido de 50 o 100 piezas, lo más simple suele ser mandarlo a hacer con una imprenta que ya tiene el equipo de corte troquelado: no hay que comprar ni aprender a usar una máquina.",
           "La diferencia se nota más en el acabado: un corte troquelado hecho con equipo profesional sigue el contorno exacto del diseño, algo difícil de replicar con tijeras o un cortador casero.",
+        ],
+      },
+      {
+        heading: "Cómo elegir dónde imprimir stickers personalizados sin equivocarte",
+        body: [
+          "Compara cinco cosas antes de elegir: si te mandan prueba digital antes de imprimir, qué tipo de corte ofrecen, el mínimo de piezas, si cobran por pieza o por planilla, y cuánto cuesta el envío. Con eso comparas ofertas parecidas sin fijarte solo en el precio de lista.",
+          "En Yume te mandamos una prueba digital y no se produce nada hasta que la apruebas. Tú eliges troquelado o semitroquelado, el mínimo es de 40 piezas en vinil y 50 en etiquetas con logo, se vende por pieza y el envío es gratis desde $750 MXN.",
+          "Si quieres ver cómo se compara este proceso con otras opciones en línea, lee la comparativa de Yume contra imprentas online de stickers.",
         ],
       },
       {
         heading: "Qué necesitas tener listo antes de cotizar",
         body: [
-          "Tu diseño, logo, personaje o foto (idealmente en PNG, PDF, AI o SVG con fondo transparente; si solo tienes un JPG o una foto, también se puede trabajar, pero puede necesitar limpieza antes de imprimir), el tamaño aproximado que quieres, y la cantidad de piezas.",
-          "No necesitas el diseño 100% terminado: con una referencia o boceto ya se puede empezar a cotizar y ajustar antes de la prueba digital.",
+          "Necesitas tres cosas: tu diseño, logo o foto, el tamaño aproximado que quieres y la cantidad de piezas. No tiene que estar terminado: con una referencia o un boceto ya podemos empezar a cotizar y ajustar antes de la prueba digital.",
+          "Lo ideal es un archivo PNG, PDF, AI o SVG con fondo transparente. Si solo tienes un JPG o una foto también se puede trabajar, pero puede necesitar limpieza antes de imprimir.",
+          "Sobre el tamaño, no hace falta que sea exacto: si no estás seguro, dinos dónde lo vas a pegar y lo ajustamos en la prueba digital. Y sobre la cantidad, puedes escribir el número exacto que necesitas desde el mínimo.",
         ],
       },
       {
-        heading: "Cómo funciona pedirlos en línea",
+        heading: "Corte y acabado: cómo elegir tus stickers personalizados",
         body: [
-          "Mandas tu diseño y cantidad por WhatsApp o desde la tienda en línea, te confirmamos precio y te mandamos una prueba digital del sticker antes de imprimir: puedes pedir ajustes de tamaño o color en esa etapa. Una vez que la apruebas, se manda a producción y se envía a cualquier parte de México.",
-          "Todo el proceso es a distancia, así que aplica igual si estás en Guadalajara (donde producimos) o en cualquier otra ciudad del país.",
+          "Al pedir eliges el tipo de corte (troquelado o semitroquelado) y el acabado (mate, brillante u holográfico). Los dos cortes y los acabados mate y brillante cuestan lo mismo; el holográfico suma un costo extra por cada pieza. Si dudas cuál te conviene, escríbenos y te orientamos.",
+          "El vinil es premium y resiste el agua, el sol y los rayones. Las etiquetas con tu logo también son resistentes al agua.",
+        ],
+      },
+      {
+        heading: "Cómo funciona pedir stickers personalizados en línea",
+        body: [
+          "Mandas tu diseño y la cantidad por WhatsApp o desde la tienda en línea, te confirmamos el precio y te enviamos una prueba digital antes de imprimir. Puedes pedir ajustes de tamaño o color; una vez que la apruebas, se produce y se envía a cualquier parte de México.",
+          "La prueba digital llega normalmente en un máximo de 24 horas después de tu pago e incluye hasta 2 rondas de ajustes. Para saber cuándo te llega tu pedido, revisa la guía de cuánto tarda un pedido de stickers personalizados.",
+        ],
+      },
+      {
+        heading: "Stickers personalizados para bodas, cumpleaños y eventos",
+        body: [
+          "Sí, puedes pedir stickers personalizados para un evento: con los nombres de los festejados, un diseño de la ocasión o un dibujo propio. Se piden desde 40 piezas, así que cuadras la cantidad al número de invitados. Cuéntanos la fecha de tu evento por WhatsApp y revisamos contigo los tiempos.",
+          "Por ejemplo, un diseño con los nombres y la fecha para los recuerdos de una boda o un bautizo, o el personaje favorito del festejado en un cumpleaños. Puedes usarlos para sellar bolsitas o cajas de regalo, o para acompañar un detalle de mesa. Si prefieres una foto, también se puede: la convertimos en sticker troquelado.",
+          "Antes de producir te mandamos una prueba digital. Como se produce sobre pedido, pide con margen antes de tu fecha y revisa los tiempos en la guía de cuánto tarda un pedido.",
+        ],
+      },
+      {
+        heading: "Dónde imprimir stickers personalizados en Guadalajara y el resto de México",
+        body: [
+          "Producimos en Guadalajara, Jalisco, y enviamos a todo México; si estás en la zona metropolitana puedes recoger en una de las 11 sucursales Casa Blanca. Todo el proceso es a distancia, así que pedir desde otra ciudad es igual de fácil.",
+          "Si recoges en Guadalajara, la entrega en sucursal también es gratis desde $750 MXN. Para el resto del país, el envío es gratis desde esa misma cantidad.",
         ],
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
     relatedBlogSlugs: ["yume-vs-imprentas-online-stickers", "stickers-vinil-vs-papel-diferencias", "cuanto-tarda-un-pedido-de-stickers-personalizados"],
+    faq: [
+      {
+        q: "¿Cuántos stickers mínimo puedo pedir?",
+        a: "El mínimo es de 40 piezas en stickers de vinil y de 50 piezas en etiquetas con tu logo. Se venden por cantidad de piezas, no por planilla, y puedes escribir la cantidad exacta que necesitas.",
+      },
+      {
+        q: "¿Cuánto cuestan 100 stickers personalizados?",
+        a: "Primeras 100 piezas: $350 en stickers de vinil y $300 en etiquetas con tu logo. Pasando de 100 piezas es precio mayoreo y cada pieza extra baja 10%. Por ejemplo, 150 piezas de vinil son $507.50 y 200 piezas son $665.",
+      },
+      {
+        q: "¿Qué archivo debo enviar para imprimir mis stickers?",
+        a: "Lo ideal es un PNG, PDF, AI o SVG con fondo transparente. Si solo tienes un JPG o una foto también se puede trabajar, pero puede necesitar limpieza antes de imprimir.",
+      },
+      {
+        q: "¿Veo cómo quedan antes de imprimir?",
+        a: "Sí. Te mandamos una prueba digital, normalmente en un máximo de 24 horas después de tu pago, con hasta 2 rondas de ajustes. No imprimimos nada sin tu aprobación.",
+      },
+      {
+        q: "¿Los stickers resisten el agua y el sol?",
+        a: "Los stickers de vinil son de vinil premium resistente al agua, al sol y a rayones. Las etiquetas con tu logo son resistentes al agua.",
+      },
+      {
+        q: "¿Puedo elegir troquelado o semitroquelado y el acabado?",
+        a: "Sí, eliges el tipo de corte (troquelado o semitroquelado) y el acabado (mate, brillante u holográfico) al pedir. El holográfico suma un costo extra por pieza; los demás no.",
+      },
+      {
+        q: "¿Puedo hacer stickers con la foto de mi mascota o un personaje?",
+        a: "Sí. Envíanos la foto o la referencia y te preparamos una prueba digital antes de imprimir. También puedes pedirlos con personajes o diseños propios.",
+      },
+      {
+        q: "¿Hacen envíos a todo México y hay recolección en Guadalajara?",
+        a: "Sí. El envío a todo México es gratis desde $750 MXN. Si estás en Guadalajara o su zona metropolitana, puedes recoger en una de las 11 sucursales Casa Blanca, también gratis desde $750 MXN.",
+      },
+    ],
   },
   {
     slug: "cuanto-tarda-un-pedido-de-stickers-personalizados",
