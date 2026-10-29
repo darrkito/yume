@@ -3400,6 +3400,83 @@ export const blogPosts: BlogPost[] = [
   },
   // Dulceros cluster lives in its own file (blog-dulceros.ts).
   ...dulceroPosts,
+  {
+    slug: "detalles-posada-empresa-personalizados",
+    title: "Detalles para posada de empresa: clientes y equipo",
+    description:
+      "Ideas de detalles para posada de empresa para clientes y equipo: qué elegir por invitado, cómo contar las fechas y qué consultar al contador.",
+    category: "Guías",
+    publishedAt: "2026-11-04",
+    intro:
+      "Las posadas de empresa se acercan y con ellas la pregunta de qué entregar a tu equipo y a tus clientes. Los detalles para posada de empresa con diseño hecho para ese evento son una opción sencilla. Aquí tienes ideas por tipo de invitado, un calendario para contar hacia atrás y lo que conviene consultar con tu contador.",
+    sections: [
+      {
+        heading: "Qué detalles para posada de empresa puedes elegir",
+        body: [
+          "Para una posada de empresa conviene elegir el detalle según quién lo recibe: el equipo, los clientes o ambos. Un dulcero con nombre y logo, o stickers con el diseño de la posada, son una opción sencilla. Lo importante es que el diseño se sienta hecho para ese evento.",
+          "Nuestro [dulcero personalizado](/productos/dulceros-personalizados) es tipo lunch box, con asa, llega armado y vacío, y su personalización incluye nombre, temática y logo de tu marca. Si buscas ideas de relleno, revisa [qué poner en un dulcero](/blog/que-poner-en-un-dulcero); para la temporada, mira los [dulceros navideños personalizados](/blog/dulceros-navidenos-personalizados).",
+          "Si prefieres algo que no sea comestible, los [stickers de vinil personalizados](/productos/stickers-vinil-impermeable) llevan el diseño que tú nos mandes, como el nombre de la posada o la ilustración del evento. Antes de producir te enviamos una prueba digital, y nada se produce hasta que la apruebas.",
+        ],
+      },
+      {
+        heading: "Detalles para tu equipo: un extra que no sustituye el aguinaldo",
+        body: [
+          "El detalle de posada para tu equipo es un extra y no reemplaza el aguinaldo. La Ley Federal del Trabajo, en su artículo 87, fija el aguinaldo en al menos 15 días de salario, pagado antes del 20 de diciembre. Piensa el detalle como un extra con nombre o diseño del equipo.",
+          "Para una posada en la oficina, un dulcero con el nombre de cada persona, o con el nombre del equipo y tu logo, es un detalle sencillo. Antes de entregar cualquier regalo a tu equipo, consulta con tu contador cómo se clasifica: como prestación, ingreso en especie u otro concepto. La forma de entrega y el nombre comercial no lo determinan.",
+        ],
+      },
+      {
+        heading: "Detalles para clientes: qué considerar antes de regalar",
+        body: [
+          "Para clientes, elige un detalle ligado a tu marca y al evento, no un regalo individual. El artículo 28, fracción III de la LISR restringe los obsequios a clientes, con excepciones para gastos ligados a la venta de productos o servicios ofrecidos de forma general. Consulta a tu contador antes de decidir.",
+          "Un dulcero con tu logo y el nombre de la posada, o [stickers con tu logo](/productos/stickers-logo-personalizado), son detalles de marca que tus clientes se llevan del evento. Esto no promete que sean deducibles: los regalos individuales suelen quedar sujetos a restricciones de la Ley del Impuesto sobre la Renta (LISR), y tu contador valida cada caso.",
+        ],
+      },
+      {
+        heading: "Calendario inverso: cuándo pedir los detalles de tu posada",
+        body: [
+          "Para que tus detalles lleguen a tiempo, cuenta hacia atrás desde la fecha de tu posada: primero la entrega, luego la producción, después la aprobación de la prueba digital y al inicio el diseño. Así ves cuándo debes escribirnos, sin depender de que los tiempos se junten en diciembre.",
+          "La producción empieza cuando apruebas la prueba digital, así que esa aprobación es la fecha que más cuenta. La fecha estimada de entrega aparece en la página del producto y en el carrito.",
+          "Enviamos a todo México y, si estás en la zona metropolitana de Guadalajara, puedes recoger en una sucursal Casa Blanca. Si quieres ver opciones desde Jalisco, revisa los [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara). Escríbenos por WhatsApp con la fecha de tu posada y contamos hacia atrás contigo.",
+        ],
+      },
+      {
+        heading: "Factura y contador: qué consultar antes de cotizar",
+        body: [
+          "Antes de cotizar, consulta con tu contador si necesitas factura, porque un CFDI válido por sí solo no garantiza la deducción. También hay que acreditar la operación, que el gasto sea estrictamente indispensable y que el pago sea por un medio autorizado. Tu contador es quien decide qué aplica en tu caso.",
+          "Cuéntanos por WhatsApp cuántos invitados son y la fecha de la posada, y te cotizamos tus detalles.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable", "stickers-logo-personalizado"],
+    relatedBlogSlugs: ["dulceros-navidenos-personalizados", "que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara"],
+    faq: [
+      {
+        q: "¿El detalle de posada sustituye el aguinaldo?",
+        a: "No. El artículo 87 de la Ley Federal del Trabajo fija el aguinaldo en al menos 15 días de salario, pagado antes del 20 de diciembre, y el patrón no puede alegar dificultades económicas para no pagarlo ni reducirlo. El detalle de posada es un extra.",
+      },
+      {
+        q: "¿Los detalles de una posada de empresa son deducibles?",
+        a: "No hay una deducción general y automática para posadas ni cenas navideñas. Depende de la finalidad, los beneficiarios y la documentación, y los obsequios a clientes tienen restricciones en el artículo 28 de la LISR. Consulta a tu contador.",
+      },
+      {
+        q: "¿Los dulceros incluyen dulces?",
+        a: "No. El dulcero llega armado y vacío, listo para llenar con los dulces o detalles que tú elijas.",
+      },
+      {
+        q: "¿Qué incluye la personalización de un dulcero?",
+        a: "El nombre (de la persona, del equipo o de tu empresa) y la temática que elijas, incluido el logo de tu marca. Te mandamos una prueba digital antes de producir.",
+      },
+      {
+        q: "¿Cuándo debo pedir los detalles de mi posada?",
+        a: "Cuenta hacia atrás desde la fecha de la posada: entrega, producción, aprobación de la prueba digital y diseño. La fecha estimada de entrega aparece en la página del producto y en el carrito.",
+      },
+    ],
+    sources: [
+      { label: "El Contribuyente: fecha límite para entregar el aguinaldo a los trabajadores", url: "https://www.elcontribuyente.mx/2022/12/cual-es-la-fecha-limite-para-entregar-el-aguinaldo-a-los-trabajadores/" },
+      { label: "Siempre al Día: deducibilidad de gastos de fin de año", url: "https://siemprealdia.co/mexico/fiscal/deducibilidad-de-gastos-de-fin-de-ano/" },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string) {

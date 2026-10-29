@@ -60,6 +60,7 @@ export const BLOG_SLUG_EN: Record<string, string> = {
   "cajas-bolsas-o-vasos-dulceros-cual-elegir": "favor-boxes-vs-goodie-bags-vs-treat-cups",
   "dulceros-dia-de-muertos-noviembre": "day-of-the-dead-and-november-party-favor-boxes",
   "souvenirs-de-boda-personalizados": "personalized-wedding-favors-with-name-and-date",
+  "detalles-posada-empresa-personalizados": "personalized-company-posada-favors",
 };
 
 export const PRODUCT_SLUG_ES: Record<string, string> = Object.fromEntries(

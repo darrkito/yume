@@ -2904,6 +2904,83 @@ export const blogPostsEn: BlogPost[] = [
       { label: "Chic Magazine México: Tendencias en souvenirs y recuerdos para bodas 2027", url: "https://www.chicmagazine.com.mx/consejos/tendencias-souvenirs-recuerdos-para-bodas-2027-ideas-originales" },
     ],
   },
+  {
+    slug: "personalized-company-posada-favors",
+    title: "Company posada favors: ideas for clients and your team",
+    description:
+      "Ideas for company posada favors for clients and your team: what to choose per guest, how to count back from the date and what to ask your accountant.",
+    category: "Guías",
+    publishedAt: "2026-11-04",
+    intro:
+      "Company posadas are coming, and with them the question of what to give your team and your clients. Company posada favors designed for that event are a simple option. Here are ideas by type of guest, a calendar to count back from the date and what to check with your accountant.",
+    sections: [
+      {
+        heading: "Which company posada favors you can choose",
+        body: [
+          "For a company posada, choose the favor by who receives it: your team, your clients or both. A personalized candy box with a name and logo, or stickers with the posada design, are a simple option. What matters is that the design feels made for that event.",
+          "Our [personalized candy box](/en/products) is a lunch box style with a handle, arrives assembled and empty, and its personalization includes a name, a theme and your brand logo. For filling ideas, see [what to put in a party favor box](/en/blog/what-to-put-in-a-party-favor-box); for the season, see [personalized Christmas treat boxes](/en/blog/personalized-christmas-treat-boxes).",
+          "If you prefer something that is not edible, [personalized vinyl stickers](/en/products) carry the design you send us, such as the posada name or the event illustration. Before production we send you a digital proof, and nothing is produced until you approve it.",
+        ],
+      },
+      {
+        heading: "Favors for your team: an extra, not a replacement for the aguinaldo",
+        body: [
+          "The posada favor for your team is an extra and does not replace the aguinaldo. Article 87 of Mexico's Federal Labor Law sets the aguinaldo at no less than 15 days of salary, paid before December 20. Think of the favor as an extra with a name or team design.",
+          "For an office posada, a candy box with each person's name, or with the team name and your logo, is a simple favor. Before giving any gift to your team, check with your accountant how it is classified: as a benefit, income in kind or another concept. The way it is delivered and its commercial name do not determine it.",
+        ],
+      },
+      {
+        heading: "Favors for clients: what to consider before gifting",
+        body: [
+          "For clients, choose a favor tied to your brand and the event, not an individual gift. Article 28, section III of the LISR (Mexico's income tax law) restricts gifts to clients, with exceptions for expenses tied to selling products or services offered to everyone. Check with your accountant before deciding.",
+          "A candy box with your logo and the posada name, or stickers with your logo, are brand favors your clients take home from the event. This does not promise they are deductible: individual gifts are usually subject to restrictions under the income tax law (LISR), and your accountant validates each case.",
+        ],
+      },
+      {
+        heading: "Count back from the date: when to order your posada favors",
+        body: [
+          "To get your favors on time, count back from the date of your posada: first delivery, then production, then approval of the digital proof, and at the start the design. That shows you when to write to us, instead of everything piling up in December.",
+          "Production starts when you approve the digital proof, so that approval is the date that matters most. The estimated delivery date appears on the product page and in the cart.",
+          "We ship across Mexico and, if you are in the Guadalajara metro area, you can pick up at a Casa Blanca branch. For options from Jalisco, see [personalized party favor boxes in Guadalajara](/en/blog/personalized-party-favor-boxes-guadalajara). Message us on WhatsApp with your posada date and we count back with you.",
+        ],
+      },
+      {
+        heading: "Invoice and accountant: what to check before quoting",
+        body: [
+          "Before quoting, check with your accountant whether you need an invoice, because a valid CFDI alone does not guarantee the deduction. You also have to prove the transaction, that the expense is strictly necessary and that payment uses an authorized method. Your accountant decides what applies in your case.",
+          "Tell us on WhatsApp how many guests there are and the posada date, and we will quote your favors.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable", "stickers-logo-personalizado"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["dulceros-navidenos-personalizados"], BLOG_SLUG_EN["que-poner-en-un-dulcero"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"]],
+    faq: [
+      {
+        q: "Does a posada favor replace the aguinaldo?",
+        a: "No. Article 87 of Mexico's Federal Labor Law sets the aguinaldo at no less than 15 days of salary, paid before December 20, and the employer cannot cite economic difficulties to skip or reduce it. The posada favor is an extra.",
+      },
+      {
+        q: "Are company posada favors deductible?",
+        a: "There is no general, automatic deduction for posadas or Christmas dinners. It depends on the purpose, the recipients and the documentation, and gifts to clients have restrictions in article 28 of the LISR. Check with your accountant.",
+      },
+      {
+        q: "Do the candy boxes come with candy?",
+        a: "No. The candy box arrives assembled and empty, ready to fill with the candy or favors you choose.",
+      },
+      {
+        q: "What does candy box personalization include?",
+        a: "The name (of the person, the team or your company) and the theme you choose, including your brand logo. We send you a digital proof before production.",
+      },
+      {
+        q: "When should I order my posada favors?",
+        a: "Count back from the posada date: delivery, production, digital proof approval and design. The estimated delivery date appears on the product page and in the cart.",
+      },
+    ],
+    sources: [
+      { label: "El Contribuyente: deadline to pay the aguinaldo to workers", url: "https://www.elcontribuyente.mx/2022/12/cual-es-la-fecha-limite-para-entregar-el-aguinaldo-a-los-trabajadores/" },
+      { label: "Siempre al Día: deductibility of year-end expenses", url: "https://siemprealdia.co/mexico/fiscal/deducibilidad-de-gastos-de-fin-de-ano/" },
+    ],
+  },
 ];
 
 export function getBlogPostEn(slug: string) {
