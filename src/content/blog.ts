@@ -2347,9 +2347,9 @@ export const blogPosts: BlogPost[] = [
     description: "Dónde imprimir stickers personalizados en México y cuánto cuestan: primeras 100 piezas por $350, qué archivo enviar y envío a todo el país.",
     category: "Guías",
     publishedAt: "2026-09-29",
-    modifiedAt: "2026-10-28",
+    modifiedAt: "2026-10-29",
     intro:
-      "Si buscas dónde imprimir stickers personalizados en México, la mayoría de las opciones caen en dos grupos: imprimirlos tú mismo en casa (con vinil y una impresora especial) o mandarlos a hacer con una imprenta que ya tiene el equipo de corte troquelado. Esta guía cubre la segunda opción: qué necesitas tener listo y cómo funciona el proceso para mandar a imprimir tus stickers en línea, sin tener que comprar equipo ni ir a una imprenta física.",
+      "Si buscas dónde imprimir stickers personalizados en México, la mayoría de las opciones caen en dos grupos: imprimirlos tú mismo en casa (con vinil y una impresora especial) o mandarlos a hacer con una imprenta que ya tiene el equipo de corte troquelado. Esta guía cubre la segunda opción: qué necesitas tener listo, qué archivo enviar y cómo funciona el proceso para mandar a imprimir tus stickers en línea, sea para tu marca, para una boda o para cualquier evento, sin comprar equipo ni ir a una imprenta física.",
     sections: [
       {
         heading: "¿Cuánto cuesta imprimir stickers personalizados en México?",
@@ -2376,6 +2376,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Cómo elegir dónde imprimir stickers personalizados sin equivocarte",
         body: [
           "Compara cinco cosas antes de elegir: si te mandan prueba digital antes de imprimir, qué tipo de corte ofrecen, el mínimo de piezas, si cobran por pieza o por planilla, y cuánto cuesta el envío. Con eso comparas ofertas parecidas sin fijarte solo en el precio de lista.",
+          "Pregunta también qué archivo piden y si te dan una plantilla con el sangrado y la línea de corte, porque cada imprenta tiene su propia especificación.",
           "En Yume te mandamos una prueba digital y no se produce nada hasta que la apruebas. Tú eliges troquelado o semitroquelado, el mínimo es de 40 piezas en vinil y 50 en etiquetas con logo, se vende por pieza y el envío es gratis desde $750 MXN.",
           "Si quieres ver cómo se compara este proceso con otras opciones en línea, lee la comparativa de Yume contra imprentas online de stickers.",
         ],
@@ -2384,15 +2385,29 @@ export const blogPosts: BlogPost[] = [
         heading: "Qué necesitas tener listo antes de cotizar",
         body: [
           "Necesitas tres cosas: tu diseño, logo o foto, el tamaño aproximado que quieres y la cantidad de piezas. No tiene que estar terminado: con una referencia o un boceto ya podemos empezar a cotizar y ajustar antes de la prueba digital.",
-          "Lo ideal es un archivo PNG, PDF, AI o SVG con fondo transparente. Si solo tienes un JPG o una foto también se puede trabajar, pero puede necesitar limpieza antes de imprimir.",
+          "Lo ideal es un archivo vectorial (AI, PDF o SVG), porque se puede ampliar sin perder nitidez. Un PNG o un JPG también sirve si tiene buena resolución al tamaño final; como referencia, varias imprentas piden 300 PPI. Si solo tienes una foto o un JPG pequeño, también se puede trabajar, pero puede necesitar limpieza antes de imprimir.",
           "Sobre el tamaño, no hace falta que sea exacto: si no estás seguro, dinos dónde lo vas a pegar y lo ajustamos en la prueba digital. Y sobre la cantidad, puedes escribir el número exacto que necesitas desde el mínimo.",
+          "Si es para un evento, suma un cuarto dato: la fecha. Con ella revisamos contigo los tiempos antes de que apruebes la prueba digital.",
+        ],
+      },
+      {
+        heading: "Qué archivo enviar para imprimir tus stickers: checklist",
+        body: [
+          "Para que tu sticker salga nítido, envía un archivo vectorial (AI, PDF o SVG) o una imagen de al menos 300 PPI al tamaño final, deja un margen de sangrado alrededor del diseño, evita textos muy pequeños y avisa si el color es importante. Cada imprenta fija su propia especificación, así que confirma la suya.",
+          "El sangrado es la parte del diseño que se extiende más allá de la línea de corte, para que no aparezca un borde blanco si el corte se mueve un poco. Varía según la imprenta: las guías van desde unos 1.6 mm hasta unos 3 mm, por eso conviene pedir la plantilla de quien vaya a imprimir.",
+          "Si tu diseño tiene una forma especial, el vector es lo más seguro para marcar la línea de corte; un PNG o un JPG no puede llevar esa línea. No te preocupes si no sabes trazarla: mándanos tu diseño y lo revisamos en la prueba digital.",
+          "Como regla práctica, usa texto de 6 pt o más y líneas de 1 pt o más. El detalle más fino puede perderse al cortar e imprimir, sobre todo en un sticker pequeño.",
+          "El color en pantalla (RGB) puede verse distinto al imprimir, y varias imprentas recomiendan trabajar en CMYK. Si hay un tono clave en tu diseño, como el de la paleta de un evento, avísanos desde el inicio.",
+          "Errores que conviene evitar: enviar una captura de pantalla de baja resolución, dejar el texto pegado al borde del corte, usar un fondo de color sin sangrado y pedir sin decir dónde se va a pegar el sticker.",
         ],
       },
       {
         heading: "Corte y acabado: cómo elegir tus stickers personalizados",
         body: [
           "Al pedir eliges el tipo de corte (troquelado o semitroquelado) y el acabado (mate, brillante u holográfico). Los dos cortes y los acabados mate y brillante cuestan lo mismo; el holográfico suma un costo extra por cada pieza. Si dudas cuál te conviene, escríbenos y te orientamos.",
+          "El troquelado corta el material y el respaldo siguiendo la silueta del diseño: cada sticker queda individual, ideal para sellar una bolsita o pegarlo en una copa. El semitroquelado corta solo el material y deja el respaldo, útil si los vas a entregar en hoja o los vas a pegar uno por uno.",
           "El vinil es premium y resiste el agua, el sol y los rayones. Las etiquetas con tu logo también son resistentes al agua.",
+          "Antes de pegar cualquier sticker, limpia y seca la superficie: no se adhiere bien sobre superficies húmedas, grasosas o con polvo, como una copa recién lavada o una caja polvosa. Si dudas entre vinil y papel, revisa la guía de diferencias entre vinil y papel.",
         ],
       },
       {
@@ -2407,7 +2422,15 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Sí, puedes pedir stickers personalizados para un evento: con los nombres de los festejados, un diseño de la ocasión o un dibujo propio. Se piden desde 40 piezas, así que cuadras la cantidad al número de invitados. Cuéntanos la fecha de tu evento por WhatsApp y revisamos contigo los tiempos.",
           "Por ejemplo, un diseño con los nombres y la fecha para los recuerdos de una boda o un bautizo, o el personaje favorito del festejado en un cumpleaños. Puedes usarlos para sellar bolsitas o cajas de regalo, o para acompañar un detalle de mesa. Si prefieres una foto, también se puede: la convertimos en sticker troquelado.",
+          "Si organizas el evento de otra persona, como wedding planner o planner de eventos, mándanos por WhatsApp el diseño que aprobó tu clienta, la cantidad y la fecha. Trabajamos con prueba digital y trato directo, así cada evento queda con su propio diseño y sin sorpresas.",
           "Antes de producir te mandamos una prueba digital. Como se produce sobre pedido, pide con margen antes de tu fecha y revisa los tiempos en la guía de cuánto tarda un pedido.",
+        ],
+      },
+      {
+        heading: "Cuánto antes pedir tus stickers personalizados",
+        body: [
+          "Pide con margen: el pedido se produce sobre pedido y el reloj empieza cuando apruebas la prueba digital, no cuando pagas. Revisa la guía de cuánto tarda un pedido de stickers personalizados para ver los tiempos de producción y envío, y cuéntanos la fecha de tu evento por WhatsApp.",
+          "Un orden que funciona: primero decide el diseño y la cantidad, luego envía el archivo, revisa la prueba digital con calma (incluye hasta 2 rondas de ajustes) y solo entonces apruébala. Si es una boda o una fiesta con invitados confirmados, suma unos cuantos extra por si llega alguien más.",
         ],
       },
       {
@@ -2431,7 +2454,19 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Qué archivo debo enviar para imprimir mis stickers?",
-        a: "Lo ideal es un PNG, PDF, AI o SVG con fondo transparente. Si solo tienes un JPG o una foto también se puede trabajar, pero puede necesitar limpieza antes de imprimir.",
+        a: "Lo ideal es un archivo vectorial (AI, PDF o SVG). Un PNG o un JPG también sirve si tiene buena resolución al tamaño final. Si solo tienes una foto o un JPG pequeño también se puede trabajar, pero puede necesitar limpieza antes de imprimir.",
+      },
+      {
+        q: "¿Qué resolución necesita la imagen de un sticker?",
+        a: "Como referencia, varias imprentas piden al menos 300 PPI al tamaño final de impresión, o un archivo vectorial. Cada imprenta fija su propia especificación, así que confirma la de quien vaya a imprimir.",
+      },
+      {
+        q: "¿Qué es el sangrado en un sticker?",
+        a: "Es la parte del diseño que se extiende más allá de la línea de corte para evitar un borde blanco si el corte se mueve un poco. Según la imprenta va desde unos 1.6 mm hasta unos 3 mm, por eso conviene pedir su plantilla.",
+      },
+      {
+        q: "¿Qué diferencia hay entre troquelado y semitroquelado?",
+        a: "El troquelado corta el material y el respaldo siguiendo la silueta, y deja cada sticker individual. El semitroquelado corta solo el material y deja el respaldo. En Yume eliges uno u otro al pedir y el precio es el mismo.",
       },
       {
         q: "¿Veo cómo quedan antes de imprimir?",
@@ -2448,6 +2483,10 @@ export const blogPosts: BlogPost[] = [
       {
         q: "¿Puedo hacer stickers con la foto de mi mascota o un personaje?",
         a: "Sí. Envíanos la foto o la referencia y te preparamos una prueba digital antes de imprimir. También puedes pedirlos con personajes o diseños propios.",
+      },
+      {
+        q: "¿Puedo pedir stickers para una boda o un evento?",
+        a: "Sí. Puedes pedirlos con los nombres de los festejados, una fecha o un diseño de la ocasión, desde 40 piezas en vinil. Cuéntanos la fecha de tu evento por WhatsApp y revisamos contigo los tiempos.",
       },
       {
         q: "¿Hacen envíos a todo México y hay recolección en Guadalajara?",
