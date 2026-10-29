@@ -21,46 +21,91 @@ const dulceroUnit = tieredPrice(getProduct(DULCERO)!.tiers!, 10) / 10;
 export const dulceroPosts: BlogPost[] = [
   {
     slug: "dulceros-personalizados-guadalajara",
-    title: "Dulceros personalizados en Guadalajara: precios, medidas y cómo pedirlos",
-    metaTitle: "Precio de dulceros personalizados y medidas",
-    description: "Cuánto cuestan los dulceros personalizados tipo lunch box ($75 por pieza, mínimo 10), qué medidas tienen y qué incluye la personalización. Envío a todo México.",
+    title: "Dulceros personalizados en Guadalajara: precios y medidas",
+    metaTitle: "Dulceros personalizados en Guadalajara: precio y medidas",
+    description: `Dulceros personalizados en Guadalajara: primeras 100 piezas a $${dulceroUnit} c/u, mínimo 10. Medidas, material, tiempos y cómo pedirlos. Envío a todo México.`,
     category: "Guías",
     publishedAt: PUBLISHED,
-    modifiedAt: "2026-10-17",
+    modifiedAt: "2026-10-29",
     intro:
-      "Un dulcero personalizado es la cajita que se lleva cada invitado al terminar la fiesta: con el nombre del festejado y la temática del evento, deja de ser una bolsa genérica y se vuelve parte de la decoración. En Yume los hacemos tipo lunch box, con asa, desde Guadalajara y con envío a todo México. Esta guía reúne todo lo que necesitas saber antes de pedirlos: precio, medidas, material, tiempos y cómo funciona el diseño.",
+      "Un dulcero personalizado es la cajita que se lleva cada invitado al terminar la fiesta: con el nombre del festejado y la temática del evento, deja de ser una bolsa genérica y se vuelve parte de la decoración. En Yume los hacemos tipo lunch box, con asa, desde Guadalajara y con envío a todo México. Esta guía reúne lo que necesitas saber antes de pedirlos para un cumpleaños, un baby shower, una boda o un evento de tu empresa: precio, medidas, material, tiempos y cómo funciona el diseño.",
     sections: [
       {
-        heading: "Cuánto cuestan los dulceros personalizados",
+        heading: "Cuánto cuestan los dulceros personalizados en Guadalajara",
         body: [
-          "Cada dulcero cuesta $75 MXN y el pedido mínimo es de 10 piezas, así que puedes pedir la cantidad exacta de invitados: 10 dulceros son $750, 12 son $900, 20 son $1,500 y 30 son $2,250. No hay paquetes cerrados de 50 o 100 piezas.",
-          "A partir de $750 de compra el envío nacional es gratis, y eso son justo 10 dulceros. Si estás en la zona metropolitana de Guadalajara, también puedes recogerlos por $20 en cualquiera de las 11 sucursales de paquetería Casa Blanca.",
+          `Primeras 100 piezas: $${dulceroUnit} MXN por dulcero, con pedido mínimo de 10 piezas. Puedes pedir la cantidad exacta de invitados, sin paquetes cerrados. Arriba de 100 piezas es precio mayoreo y se cotiza por WhatsApp. Desde $${FREE_SHIPPING_THRESHOLD} el envío nacional es gratis.`,
+          `Por ejemplo, 10 dulceros son $${dulceroTotal(10)}, 12 son $${dulceroTotal(12)}, 20 son $${dulceroTotal(20)} y 30 son $${dulceroTotal(30)}. Si estás en la zona metropolitana de Guadalajara, puedes recogerlos por $${CASABLANCA_PRICE} en cualquiera de las ${CASABLANCA_BRANCHES.length} sucursales de paquetería Casa Blanca.`,
+          "Es un precio por pieza de trabajo a medida: cada dulcero lleva el nombre y la temática de tu evento, no es un lote genérico de producción en serie.",
         ],
       },
       {
-        heading: "Medidas y material",
+        heading: "Medidas y material del dulcero tipo lunch box",
         body: [
-          "El dulcero mide 15.7 × 11.7 × 9.9 cm (6.2 × 4.6 × 3.9 pulgadas), con asa para cargarlo. Es un tamaño cómodo para niños y adultos: cabe una buena porción de dulces, un juguete pequeño o un detalle, sin que la caja se sienta vacía.",
-          "Está hecho de cartulina opalina, una cartulina lisa y firme que da buen acabado a la impresión y aguanta el peso de los dulces. Te llega armado, listo para llenar: no tienes que doblar ni pegar nada la noche antes de la fiesta.",
+          "El dulcero mide 15.7 × 11.7 × 9.9 cm (6.2 × 4.6 × 3.9 pulgadas), es tipo lunch box y tiene asa. Está hecho de cartulina opalina y te llega armado y vacío, listo para llenar con los dulces o detalles que tú elijas, sin doblar ni pegar nada.",
+          "La cartulina opalina es lisa y firme, y da buen acabado a la impresión. Como llega sin dulces, tú decides el relleno.",
         ],
       },
       {
-        heading: "Qué incluye la personalización",
+        heading: "Qué incluye la personalización del dulcero",
         body: [
-          "Cada dulcero lleva el nombre que nos indiques (el del festejado, los novios, el bebé o tu empresa) y la temática que elijas: el personaje favorito del niño, una paleta de colores, un deporte, un estilo navideño o el logo de tu marca para un evento corporativo.",
-          "Antes de producir te mandamos una prueba digital del diseño por WhatsApp o correo. Puedes pedir ajustes en esa etapa, y nada se produce hasta que lo apruebas.",
+          "Cada dulcero lleva el nombre que nos indiques, ya sea el del festejado, los novios, el bebé o tu empresa, y la temática que elijas. Antes de producir te enviamos una prueba digital del diseño, y nada se produce hasta que la apruebas.",
+          "La temática puede ser el personaje favorito del niño, una paleta de colores, un deporte, un estilo navideño o el logo de tu marca para un evento corporativo. Si lo necesitas para una boda o un baby shower, cuéntanos la ocasión y los colores por WhatsApp y te cotizamos.",
         ],
       },
       {
-        heading: "Tiempos de entrega y cómo pedirlos",
+        heading: "Tiempos de entrega: cuándo pedir tu dulcero",
         body: [
-          "La producción toma de 3 a 5 días hábiles después de aprobar la prueba. Si los recibes por paquetería, suma de 2 a 5 días; si los recoges en una sucursal Casa Blanca de Guadalajara, suma 1 día hábil. Para no ir con prisas, pídelos al menos dos semanas antes de tu fiesta, y con más anticipación en temporadas fuertes como Navidad o fin de cursos.",
-          "Puedes pedirlos desde la tienda en línea eligiendo la cantidad y pagando con tarjeta, OXXO o SPEI, o cotizar primero por WhatsApp si quieres platicar la temática antes de pagar.",
+          `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba digital. Si los recibes por paquetería, suma ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días hábiles de envío nacional; si los recoges en una sucursal Casa Blanca de Guadalajara, suma ${PICKUP_EXTRA_DAYS} día hábil.`,
+          "El reloj empieza cuando apruebas la prueba, así que tener definidos el nombre y la temática desde el inicio es lo que más ayuda. Si tu fiesta es en noviembre, mira los [dulceros para Día de Muertos](/blog/dulceros-dia-de-muertos-noviembre); si es en diciembre, los [dulceros navideños personalizados](/blog/dulceros-navidenos-personalizados).",
+        ],
+      },
+      {
+        heading: "Cómo pedir tus dulceros personalizados",
+        body: [
+          "Puedes pedirlos en la tienda en línea: eliges la cantidad desde 10 piezas y pagas con tarjeta u OXXO. Si prefieres platicar la temática antes de pagar, cotiza por WhatsApp. Te mandamos la prueba digital, haces tus ajustes y solo entonces entra a producción.",
+          `Pídelos directamente en la página de [dulceros personalizados tipo lunch box](/productos/${DULCERO}). Si necesitas ideas para el relleno, revisa [qué poner en un dulcero](/blog/que-poner-en-un-dulcero), y para una fiesta de niños, las [ideas de dulceros para fiesta infantil](/blog/ideas-de-dulceros-para-fiesta-infantil).`,
+        ],
+      },
+      {
+        heading: "Dulceros para bodas, fiestas y eventos de empresa",
+        body: [
+          "Los dulceros funcionan para cumpleaños, baby showers, bautizos, bodas y eventos de empresa, porque cada uno lleva el nombre y la temática del evento. Cuéntanos la fecha, la cantidad y los colores por WhatsApp y te cotizamos. Si organizas eventos para otras personas, el trato es directo por WhatsApp y con prueba digital.",
+          "Para equipos y empresas, revisa los [dulceros para eventos empresariales](/blog/dulceros-para-eventos-empresariales), donde el diseño lleva tu logo y los colores de tu marca.",
         ],
       },
     ],
     relatedProductSlugs: [DULCERO],
-    relatedBlogSlugs: ["ideas-de-dulceros-para-fiesta-infantil", "que-poner-en-un-dulcero", "dulceros-para-eventos-empresariales"],
+    relatedBlogSlugs: ["ideas-de-dulceros-para-fiesta-infantil", "que-poner-en-un-dulcero", "dulceros-para-eventos-empresariales", "dulceros-dia-de-muertos-noviembre", "dulceros-navidenos-personalizados"],
+    faq: [
+      {
+        q: "¿Cuánto cuesta un dulcero personalizado?",
+        a: `Primeras 100 piezas: $${dulceroUnit} MXN por dulcero, con pedido mínimo de 10 piezas. Arriba de 100 piezas es precio mayoreo y se cotiza por WhatsApp. Desde $${FREE_SHIPPING_THRESHOLD} el envío nacional es gratis.`,
+      },
+      {
+        q: "¿Cuál es el pedido mínimo?",
+        a: "El pedido mínimo es de 10 piezas, y puedes pedir la cantidad exacta que necesitas, sin paquetes cerrados.",
+      },
+      {
+        q: "¿Qué medidas tiene el dulcero?",
+        a: "Mide 15.7 × 11.7 × 9.9 cm (6.2 × 4.6 × 3.9 pulgadas), es tipo lunch box, con asa, y está hecho de cartulina opalina.",
+      },
+      {
+        q: "¿Los dulceros incluyen dulces?",
+        a: "No. El dulcero llega armado y vacío, listo para llenar con los dulces o detalles que tú elijas.",
+      },
+      {
+        q: "¿Qué incluye la personalización?",
+        a: "El nombre (del festejado, los novios, el bebé o tu empresa) y la temática que elijas, incluido el logo de tu marca. Te mandamos una prueba digital antes de producir y nada se produce hasta que la apruebas.",
+      },
+      {
+        q: "¿Cuánto tardan en llegar?",
+        a: `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días hábiles de envío nacional, o ${PICKUP_EXTRA_DAYS} día hábil si recoges en una sucursal Casa Blanca de Guadalajara.`,
+      },
+      {
+        q: "¿Puedo recogerlos en Guadalajara?",
+        a: `Sí. En la zona metropolitana de Guadalajara puedes recogerlos por $${CASABLANCA_PRICE} en cualquiera de las ${CASABLANCA_BRANCHES.length} sucursales de paquetería Casa Blanca.`,
+      },
+    ],
   },
   {
     slug: "ideas-de-dulceros-para-fiesta-infantil",
