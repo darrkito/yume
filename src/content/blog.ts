@@ -2786,32 +2786,58 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "cuanto-duran-los-tatuajes-temporales-y-como-quitarlos",
     title: "¿Cuánto duran los tatuajes temporales y cómo se quitan?",
-    metaTitle: "Cuánto duran los tatuajes temporales y cómo se quitan",
+    metaTitle: "Cuánto duran los tatuajes temporales y cómo quitarlos",
     description:
-      "Cuánto duran los tatuajes temporales (de unas horas a un par de días), cómo se aplican y cómo se quitan con aceite, crema o alcohol. Guía de Yume.",
+      "Cuánto duran los tatuajes temporales, de qué depende, cómo aplicarlos y quitarlos con aceite, y por qué conviene evitar la henna negra.",
     category: "Guías",
     publishedAt: "2026-10-17",
+    modifiedAt: "2026-10-29",
     intro:
-      "Los tatuajes temporales de transferencia con agua duran de unas horas a un par de días, según la zona del cuerpo y cuánto se froten. Esta guía junta lo que más se pregunta: cuánto duran, cómo se aplican, cómo se quitan y dónde se pueden poner, con el procedimiento de la tarjeta de instrucciones que usamos en Yume.",
+      "Cuánto duran los tatuajes temporales es la duda más común antes de una fiesta, una boda o una activación. La respuesta corta: los de transferencia con agua duran de horas a unos días, según la zona del cuerpo y cuánto se froten. Aquí encuentras de qué depende la duración, cómo aplicarlos, cómo quitarlos con calma y una alerta sobre la henna negra.",
     sections: [
       {
         heading: "¿Cuánto duran los tatuajes temporales?",
         body: [
-          "Depende de la zona y del roce. En partes que se mueven o se rozan con la ropa (muñeca, cuello, rodillas) se desgastan antes; en el brazo o la pierna, con menos fricción, aguantan más. El fabricante del papel de transferencia que usamos indica que el tatuaje dura al menos 48 horas si no se frota.",
+          "Los tatuajes temporales de transferencia con agua duran al menos 48 horas si no se frotan, según la ficha del papel que usamos. Algunas tiendas de tatuajes temporales dan un rango de 3 a 7 días para calcomanías. Es una referencia, no una garantía: depende de la zona del cuerpo y del roce.",
           "Para una fiesta, una boda o una activación de un día sobra tiempo: son tatuajes pensados para celebraciones, no para durar semanas. Lo que más los acorta es el roce constante, la ropa apretada y cualquier aceite, crema o alcohol que toque el tatuaje.",
+        ],
+      },
+      {
+        heading: "Qué cambia la duración: zona del cuerpo y tipo de producto",
+        body: [
+          "La duración cambia sobre todo con la zona del cuerpo y con el tipo de producto. Donde hay roce, sudor o aceite el tatuaje se gasta antes; donde casi no hay fricción aguanta más. Una calcomanía, una tinta semipermanente y la henna no duran lo mismo, así que conviene saber cuál tienes.",
+          "En partes que se mueven o se rozan con la ropa, como la muñeca, el cuello o las rodillas, se desgastan antes. En el brazo o la pierna, con menos fricción, aguantan más. Las tiendas mencionan 1 a 3 días en zonas con aceite, sudor o roce, y 5 a 7 días o más en zonas de poco roce.",
+          "Según esas mismas tiendas, la calcomanía de agua dura 3 a 7 días, la tinta semipermanente puede llegar a 10 o 14 días o más, y la henna dura más que una calcomanía. Son cifras de vendedores, sin estudio independiente, así que tómalas como orientación.",
         ],
       },
       {
         heading: "Cómo se aplican, paso a paso",
         body: [
-          "1. Elige tu tatuaje y retira la película de plástico protectora. 2. Colócalo hacia abajo, con el diseño directamente sobre la piel limpia y seca. 3. Humedece muy bien el papel con agua y presiona con tu mano durante 20 a 30 segundos. 4. Retira suavemente el papel y espera unos segundos a que seque bien antes de tocar el tatuaje.",
-          "Dos detalles ayudan a que quede mejor: piel limpia, seca y sin crema antes de aplicar, y no mover el papel mientras lo presionas.",
+          "Se aplican en cuatro pasos: retira la película de plástico, coloca el tatuaje con el diseño hacia la piel limpia y seca, humedece bien el papel con agua y presiona 20 a 30 segundos, y retira el papel con suavidad. Espera unos segundos a que seque antes de tocar el tatuaje.",
+          "Ese es el procedimiento de la tarjeta de instrucciones que usamos en Yume. Dos detalles ayudan a que quede mejor: piel limpia, seca y sin crema antes de aplicar, y no mover el papel mientras lo presionas.",
+        ],
+      },
+      {
+        heading: "Cómo preparar la piel para que duren más",
+        body: [
+          "Para que duren más, las guías de tiendas recomiendan lavar la piel con agua y jabón, secarla por completo y no poner crema ni aceite antes, porque funcionan como barrera contra el adhesivo. También sugieren evitar el roce, el sol y el agua después de aplicar. Es consejo de vendedores, no de un estudio.",
+          "Si vas a usar el tatuaje en una fiesta, aplícalo con la piel recién lavada y seca, y deja las cremas y los aceites para después, cuando quieras quitarlo.",
         ],
       },
       {
         heading: "Cómo se quitan los tatuajes temporales",
         body: [
-          "Con aceite corporal, crema o alcohol, frotando suavemente hasta que salga. No hace falta raspar ni usar objetos: frotar con calma es suficiente. Si no los quitas, se van desgastando solos con los días.",
+          "Para quitarlo, lo habitual es usar aceite de bebé, de coco o de oliva: se aplica sobre el tatuaje, se deja actuar un momento, se frota suave con algodón y se lava con agua y jabón. No hace falta raspar ni usar objetos.",
+          "El alcohol isopropílico es más fuerte y reseca la piel. Úsalo con moderación, pruébalo antes en una zona pequeña, no lo acerques a los ojos ni a mucosas y no lo uses sobre piel irritada.",
+          "Después de quitar el tatuaje, conviene hidratar la piel. Repite el paso con aceite si todavía queda diseño.",
+        ],
+      },
+      {
+        heading: "Henna negra: por qué no es lo mismo que un tatuaje temporal",
+        body: [
+          "La «henna negra» no es lo mismo que un tatuaje temporal de transferencia. La FDA de Estados Unidos advierte que suele oscurecerse con PPD (parafenilendiamina), un tinte de cabello que la ley de ese país no permite en cosméticos para la piel. Es una advertencia estadounidense, no una norma mexicana.",
+          "Las reacciones pueden aparecer de inmediato o hasta 2 a 3 semanas después. Incluyen enrojecimiento, ampollas, lesiones con secreción, pérdida de pigmento, más sensibilidad al sol y cicatrices permanentes; algunos casos necesitaron atención de urgencias. Quien se sensibiliza puede reaccionar también al látex, a tintes de cabello y a colorantes textiles.",
+          "La FDA indica además que la henna tradicional está aprobada solo para el cabello, no para la piel.",
         ],
       },
       {
@@ -2822,18 +2848,55 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "Tatuajes temporales personalizados: con tu logo, diseño o foto",
+        heading: "Tatuajes temporales personalizados para fiestas y eventos",
         body: [
-          "En Yume hacemos tatuajes temporales a la medida con tu logo, tu diseño o tus fotos: estampillas, personajes, fotos de pareja o de infancia. Se cotizan por WhatsApp según diseño, tamaño y cantidad; la producción toma 2 a 3 días hábiles después del anticipo del 50% y enviamos a todo México o puedes recogerlos en Guadalajara.",
+          "En Yume hacemos tatuajes temporales a la medida con tu logo, tu diseño o tus fotos: estampillas, personajes, fotos de pareja o de infancia. Se cotizan por WhatsApp según diseño, tamaño y cantidad. La producción toma 2 a 3 días hábiles después del anticipo del 50% y enviamos a todo México o puedes recogerlos en Guadalajara.",
+          "Puedes ver el servicio en [tatuajes temporales personalizados](/productos/tatuajes-temporales-personalizados).",
+          "Más ideas: [tatuajes para eventos](/blog/tatuajes-temporales-personalizados-para-eventos), [tatuajes para bodas](/blog/tatuajes-temporales-para-boda-eventos-y-fiestas) y [stickers de vinil](/productos/stickers-vinil-impermeable) con el mismo diseño.",
         ],
       },
     ],
-    relatedProductSlugs: [],
+    relatedProductSlugs: ["stickers-vinil-impermeable"],
     relatedBlogSlugs: ["tatuajes-temporales-personalizados-para-eventos", "tatuajes-temporales-para-boda-eventos-y-fiestas"],
+    faq: [
+      {
+        q: "¿Cuánto duran los tatuajes temporales?",
+        a: "El fabricante del papel de transferencia que usamos indica que duran al menos 48 horas si no se frotan. Algunas tiendas dan un rango de 3 a 7 días para calcomanías. Es una referencia: cambia con la zona del cuerpo y el roce.",
+      },
+      {
+        q: "¿Qué acorta la duración de un tatuaje temporal?",
+        a: "El roce constante, la ropa apretada, el sudor y cualquier aceite, crema o alcohol que toque el tatuaje. Las tiendas de tatuajes temporales mencionan 1 a 3 días en zonas con aceite, sudor o roce.",
+      },
+      {
+        q: "¿Cómo se quita un tatuaje temporal?",
+        a: "Con aceite corporal, de bebé, de coco o de oliva: se aplica, se deja actuar un momento, se frota suave con algodón y se lava con agua y jabón. No hace falta raspar. Después conviene hidratar la piel.",
+      },
+      {
+        q: "¿Puedo quitarlo con alcohol?",
+        a: "El alcohol isopropílico es más fuerte y reseca la piel. Úsalo con moderación, prueba antes en una zona pequeña, no lo acerques a los ojos ni a mucosas y no lo uses sobre piel irritada.",
+      },
+      {
+        q: "¿Qué es la henna negra y por qué se advierte sobre ella?",
+        a: "Según la FDA de Estados Unidos, la henna negra suele oscurecerse con PPD, un tinte de cabello que la ley de ese país no permite en cosméticos para la piel. Las reacciones pueden aparecer hasta 2 a 3 semanas después.",
+      },
+      {
+        q: "¿Se pueden poner a niños?",
+        a: "Son de uso externo. Si hay piel sensible o alergias, prueba primero con uno pequeño, y en niños que un adulto los aplique y supervise. El fabricante del papel no indica una edad mínima.",
+      },
+      {
+        q: "¿Cuánto tarda un pedido de tatuajes temporales personalizados?",
+        a: "La producción toma 2 a 3 días hábiles después del anticipo del 50%. Se cotizan por WhatsApp según diseño, tamaño y cantidad, y enviamos a todo México o puedes recogerlos en Guadalajara.",
+      },
+    ],
     serviceLink: { href: "/productos/tatuajes-temporales-personalizados", label: "Ver tatuajes temporales personalizados" },
     quoteMessage: "Hola, quiero cotizar tatuajes temporales personalizados.\n\nTamaño:\nCantidad:\n¿Ya tengo diseño? (sí / no):",
     sources: [
       { label: "Ficha del papel de transferencia MECOLOUR en Amazon (duración: al menos 48 horas sin frotar)", url: "https://www.amazon.com/dp/B09C25DL8G" },
+      { label: "Practical Dermatology: la FDA advierte sobre los riesgos de los tatuajes de henna negra", url: "https://practicaldermatology.com/news/fda-warns-public-about-black-henna-tattoo-risks/2458159/" },
+      { label: "Temporary Tattoos: cuánto dura un tatuaje temporal (referencia de tienda)", url: "https://www.temporarytattoos.com/blogs/news/how-long-does-a-temporary-tattoo-last" },
+      { label: "Temporary Tattoos: cuánto duran según la zona del cuerpo (referencia de tienda)", url: "https://www.temporarytattoos.com/blogs/news/how-long-do-temporary-tattoos-last" },
+      { label: "Temporary Tattoos: cómo hacer que duren más (guía de tienda)", url: "https://www.temporarytattoos.com/blogs/news/how-to-make-temporary-tattoos-last-longer" },
+      { label: "Temporalis: cómo quitar un tatuaje temporal (guía comercial)", url: "https://pro.temporalis.tattoo/blogs/magazine/remove-temporary-tattoo" },
     ],
   },
   {
