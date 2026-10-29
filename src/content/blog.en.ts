@@ -582,6 +582,20 @@ export const blogPostsEn: BlogPost[] = [
     relatedBlogSlugs: ["temporary-tattoos-for-weddings-events-and-parties", "how-long-do-temporary-tattoos-last-and-how-to-remove-them"],
     serviceLink: { href: "/en/products/custom-temporary-tattoos", label: "See custom temporary tattoos" },
     quoteMessage: "Hi, I'm interested in getting a quote for custom temporary tattoos.",
+    faq: [
+      {
+        q: "Can I get temporary tattoos with my own logo or event name?",
+        a: "Yes. Temporary tattoos with your logo, your colors, or the name of the celebration keep whoever wears them associated with your brand or event for the rest of the day.",
+      },
+      {
+        q: "Do you ship custom temporary tattoos outside Guadalajara?",
+        a: "Yes. We produce in Guadalajara and ship anywhere in Mexico, so you can order no matter what state your event is in.",
+      },
+      {
+        q: "How do I quote custom temporary tattoos?",
+        a: "Message us directly on WhatsApp with the details of your event or activation and your own design.",
+      },
+    ],
   },
   {
     slug: BLOG_SLUG_EN["como-pedir-invitaciones-personalizadas-para-eventos"],
@@ -1610,6 +1624,16 @@ export const blogPostsEn: BlogPost[] = [
         ],
       },
     ],
+    faq: [
+      {
+        q: "Where is the best place to put the NFC review plate?",
+        a: "Next to the register, on the front desk, on the table when the bill arrives, or on the desk at the end of an appointment: anywhere the customer is already in front of you when they decide whether they're satisfied.",
+      },
+      {
+        q: "What is the difference between the version with and without a stand?",
+        a: "The version without a stand sticks directly onto the counter, register, or wall. The version with a stand sits upright on a desk or table with nothing to stick down.",
+      },
+    ],
     relatedProductSlugs: ["stand-resena-google-nfc", "placa-resena-google-nfc"],
   },
   {
@@ -2185,6 +2209,16 @@ export const blogPostsEn: BlogPost[] = [
           "Send your design and quantity via WhatsApp or from the online shop, we confirm price and send you a digital proof of the sticker before printing: you can request size or color adjustments at that stage. Once you approve it, it goes to production and ships anywhere in Mexico.",
           "The whole process happens remotely, so it works the same whether you're in Guadalajara (where we produce) or any other city in the country.",
         ],
+      },
+    ],
+    faq: [
+      {
+        q: "Can I order custom stickers online from any city in Mexico?",
+        a: "Yes. The whole process happens remotely, so it works the same whether you're in Guadalajara, where we produce, or any other city in the country.",
+      },
+      {
+        q: "Do I see the sticker before it is printed?",
+        a: "Yes. We confirm the price and send you a digital proof before printing, and you can request size or color adjustments at that stage.",
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],

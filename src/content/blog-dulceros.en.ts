@@ -98,6 +98,16 @@ export const dulceroPostsEn: BlogPost[] = [
         ],
       },
     ],
+    faq: [
+      {
+        q: "Can I add stickers with the birthday child's name to the favor boxes?",
+        a: "Yes. Stickers with the same character or the birthday child's name are something we can make for you too, in waterproof vinyl.",
+      },
+      {
+        q: "When should I fill the favor boxes?",
+        a: "The night before or the morning of the party, already assembled, set out together on a table near the exit.",
+      },
+    ],
     relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
     relatedBlogSlugs: [en("que-poner-en-un-dulcero"), en("dulceros-personalizados-guadalajara"), en("cajas-bolsas-o-vasos-dulceros-cual-elegir")],
   },
@@ -510,6 +520,16 @@ export const dulceroPostsEn: BlogPost[] = [
         body: [
           "Each box is $75 MXN with a minimum of 10: 50 guests is $3,750 and 80 is $6,000, with free national shipping from $750. Production takes 3 to 5 business days after you approve the digital proof, plus shipping; for large events, order three or four weeks ahead. They arrive assembled, ready to fill.",
         ],
+      },
+    ],
+    faq: [
+      {
+        q: "Do the favor boxes arrive assembled?",
+        a: "Yes. They arrive assembled, ready to fill.",
+      },
+      {
+        q: "How far ahead should I order favor boxes for a large event?",
+        a: "For large events, order three or four weeks ahead. Production takes 3 to 5 business days after you approve the digital proof, plus shipping time.",
       },
     ],
     relatedProductSlugs: [DULCERO],
