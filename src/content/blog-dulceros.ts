@@ -793,19 +793,43 @@ export const dulceroPosts: BlogPost[] = [
   },
   {
     slug: "que-poner-en-un-dulcero",
-    title: "Qué poner en un dulcero: ideas de dulces y detalles según la edad",
-    metaTitle: "Qué dulces poner en un dulcero: ideas por edad",
-    description: "Qué dulces poner en un dulcero según la edad: ideas para niños de 1 a 12 años, adolescentes y adultos, cuánto llenar la cajita y cómo evitar problemas con alergias.",
+    title: "Qué dulces poner en un dulcero: cuántos y cómo repartirlos",
+    metaTitle: "Qué dulces poner en un dulcero y cuántos por invitado",
+    description: "Qué dulces poner en un dulcero, cuántas piezas lleva según su tamaño, cuánto repartir por invitado y cómo combinar variedades, texturas y colores.",
     category: "Guías",
     publishedAt: PUBLISHED,
-    modifiedAt: "2026-10-28",
+    modifiedAt: "2026-11-09",
     intro:
-      "Un dulcero se ve completo con 8 a 12 piezas: un chocolate, una gomita o paleta, un dulce enchilado o ácido, un dulce tradicional mexicano y una botana chica, más un detalle que no sea dulce, como stickers. Abajo tienes la lista por tipo de dulce y por edad, pensada para una cajita tipo lunch box de 15.7 × 11.7 × 9.9 cm.",
+      "Un dulcero se ve completo con 8 a 12 piezas: un chocolate, una gomita o paleta, un dulce enchilado o ácido, un dulce tradicional mexicano y una botana chica, más un detalle que no sea dulce, como stickers. Abajo tienes la lista por tipo de dulce y por edad, cuántas piezas caben según el tamaño del dulcero y cómo repartirlas por invitado, pensada para una cajita tipo lunch box de 15.7 × 11.7 × 9.9 cm.",
     sections: [
+      {
+        heading: "Qué dulces poner en un dulcero y cuántos por invitado",
+        body: [
+          "Un dulcero individual lleva de 8 a 12 piezas de dulce más un detalle que no sea dulce, y se entrega uno por invitado. Esa cantidad se ve completa en una caja tipo lunch box de 15.7 × 11.7 × 9.9 cm. Si es una mesa de dulces abierta, se calcula distinto.",
+          `Si aún no tienes la caja, mira nuestros [dulceros personalizados](/productos/${DULCERO}): llegan armados y vacíos, y tú eliges qué lleva dentro.`,
+        ],
+      },
+      {
+        heading: "Cuántas piezas caben según el tamaño del dulcero",
+        body: [
+          "Como regla de estimación, un dulcero chico lleva de 5 a 7 piezas, uno mediano de 8 a 12 y uno grande de 13 a 18. Son cifras de Yume pensadas para que la caja se vea llena sin apretarse; no vienen de una fuente externa, así que arma uno de prueba antes de comprar todo.",
+          "Dulcero chico: de 5 a 7 piezas, con 3 tipos de dulce y, si cabe, un sticker.",
+          "Dulcero mediano (como nuestra lunch box de 15.7 × 11.7 × 9.9 cm): de 8 a 12 piezas más un detalle, con 4 o 5 tipos de dulce.",
+          "Dulcero grande: de 13 a 18 piezas más un detalle, con 5 tipos de dulce y una botana.",
+          "Con 30 invitados necesitas 30 dulceros: en el tamaño mediano son entre 240 y 360 piezas de dulce. Arma uno de prueba para ajustar.",
+        ],
+      },
+      {
+        heading: "Cómo repartir las piezas entre variedades",
+        body: [
+          "Para un dulcero usa de 3 a 5 tipos de dulce y reparte las piezas en partes parecidas, sin dejar que uno solo domine. Para una mesa completa, Bodas.net sugiere de 5 a 7 variedades en raciones pequeñas de tamaño similar. Mezcla texturas (cremoso, crujiente, esponjoso) y colores.",
+          "Ejemplo para un dulcero mediano de 10 piezas: 2 chocolates, 3 gomitas, 2 dulces tradicionales, 2 enchilados o ácidos y 1 botana. Es una estimación para guiarte, no una regla fija.",
+        ],
+      },
       {
         heading: "Qué dulces poner en un dulcero: lista por tipo de dulce",
         body: [
-          "Mezcla texturas y sabores en vez de repetir uno solo: algo de chocolate, algo suave, algo enchilado o ácido y algo tradicional. Así cada invitado encuentra algo que le gusta y la caja se ve variada al abrirla.",
+          "Mezcla texturas y sabores en vez de repetir uno solo: algo de chocolate, algo suave, algo enchilado o ácido y algo tradicional. Así cada invitado encuentra algo que le gusta y la caja se ve variada al abrirla, sin importar cuántas piezas lleve.",
           "Chocolates: barritas pequeñas, bolitas o monedas de chocolate. Son los que casi nadie rechaza, aunque en clima caliente conviene guardar los dulceros en un lugar fresco antes de entregarlos.",
           "Gomitas y malvaviscos: suaves, de colores y fáciles de repartir en bolsitas. Son la opción más segura para los más pequeños.",
           "Dulces tradicionales mexicanos: mazapanes, cocadas, tamarindos, palanquetas y dulces de leche. Le dan sabor local al dulcero y a los adultos les gusta recordarlos.",
@@ -818,28 +842,38 @@ export const dulceroPosts: BlogPost[] = [
       {
         heading: "Para niños pequeños (1 a 5 años)",
         body: [
-          "Elige dulces suaves y seguros: gomitas, malvaviscos, galletas, chocolates pequeños, pasitas o fruta deshidratada. Evita dulces duros, cacahuates enteros y juguetes con piezas pequeñas, que son un riesgo de asfixia a esta edad.",
+          "Para los más pequeños elige dulces suaves y seguros, de preferencia en porciones chicas: gomitas, malvaviscos, galletas, chocolates pequeños, pasitas o fruta deshidratada. Evita a esta edad los dulces duros, los cacahuates enteros y los juguetes con piezas pequeñas, y pregunta a los papás si hay alergias.",
           "Como detalle: crayolas, burbujas, una libreta para colorear pequeña o stickers grandes.",
         ],
       },
       {
         heading: "Para niños de primaria (6 a 12 años)",
         body: [
-          "Aquí funcionan los clásicos mexicanos: paletas, chicles, dulces enchilados, tamarindos, mazapanes, chocolates, papitas pequeñas y gomitas. Como detalle, un juguete pequeño, una pulsera, una pelota saltarina o stickers del mismo personaje de la fiesta.",
+          "Para niños de 6 a 12 años funcionan muy bien los clásicos mexicanos: paletas, chicles, dulces enchilados, tamarindos, mazapanes, chocolates, papitas pequeñas y gomitas. Como detalle, un juguete pequeño, una pulsera, una pelota saltarina o stickers del mismo personaje de la fiesta.",
           "Los stickers con el personaje o el nombre del festejado son de los detalles que más duran: se quedan pegados en cuadernos y botellas semanas después de la fiesta.",
         ],
       },
       {
         heading: "Para adolescentes y adultos",
         body: [
-          "Chocolates de mejor calidad, botanas, dulces gourmet, mini botellitas de salsa, un llavero o un detalle con el logo si es un evento de empresa. En bodas y XV años, almendras cubiertas o chocolates finos funcionan muy bien.",
+          "Para adultos conviene priorizar opciones ligeras y de mejor calidad, porque según Bodas.net los adultos consumen menos dulce que los niños: chocolates de mejor calidad, botanas, dulces gourmet, mini botellitas de salsa, un llavero o un detalle con el logo si es un evento de empresa.",
+          "En bodas y XV años, almendras cubiertas o chocolates finos funcionan muy bien.",
+        ],
+      },
+      {
+        heading: "Cuántos dulces por invitado en una mesa de dulces",
+        body: [
+          "Si en lugar de dulceros individuales armas una mesa de dulces, Bodas.net (España) calcula de 3 a 4 raciones por persona cuando no hay pastel y unas 2 cuando sí lo hay. Es una referencia española, no una norma mexicana, y aplica a postres más consistentes como cupcakes o brownies.",
+          "Bodas.net añade que los niños son más golosos que los adultos y que el horario cambia el consumo: tras un banquete de mediodía, más contundente, se consumen menos dulces; en una cena, más ligera, se consumen más.",
         ],
       },
       {
         heading: "Cuánto llenar y cómo evitar problemas",
         body: [
-          "No hace falta llenar el dulcero hasta arriba: entre 8 y 12 piezas de dulce más un detalle se ve completo en una caja de este tamaño. Arma uno de prueba antes de comprar todo para calcular cuánto necesitas.",
+          "No hace falta llenar el dulcero hasta arriba: entre 8 y 12 piezas de dulce más un detalle se ve completo en una caja de este tamaño. Arma uno de prueba antes de comprar todo para calcular cuánto necesitas según tus invitados.",
           "Pregunta por alergias si invitas a niños que no conoces bien (cacahuate y chocolate son las más comunes) y, si hay dudas, ten algunos dulceros sin esos ingredientes marcados por separado.",
+          "Si es un detalle para una boda, un bautizo o una comunión, el dulcero puede llevar el nombre y la temática que elijas, y te enviamos una prueba digital antes de producir.",
+          "Como detalle sin azúcar, puedes sumar [stickers de vinil](/productos/stickers-vinil-impermeable) con el nombre o el personaje de la fiesta. Para ideas de relleno en una fiesta de niños, revisa [dulceros para fiesta infantil](/blog/ideas-de-dulceros-para-fiesta-infantil). Para decidir entre caja, bolsa o vaso, compara [cajas, bolsas o vasos](/blog/cajas-bolsas-o-vasos-dulceros-cual-elegir). Y si estás en Guadalajara, mira los [dulceros en Guadalajara](/blog/dulceros-personalizados-guadalajara).",
         ],
       },
     ],
@@ -851,6 +885,26 @@ export const dulceroPosts: BlogPost[] = [
       {
         q: "¿Cuántos dulces lleva un dulcero?",
         a: "Entre 8 y 12 piezas de dulce más un detalle se ve completo en una caja tipo lunch box de 15.7 × 11.7 × 9.9 cm. Arma uno de prueba antes de comprar todo.",
+      },
+      {
+        q: "¿Cuántos dulces por invitado debo calcular?",
+        a: "Si das un dulcero individual, uno por invitado con 8 a 12 piezas. Si armas una mesa de dulces, Bodas.net (España) sugiere de 3 a 4 raciones por persona sin pastel y unas 2 si hay pastel.",
+      },
+      {
+        q: "¿Cuántas piezas caben en un dulcero chico, mediano y grande?",
+        a: "Es una estimación de Yume, no una fuente externa: de 5 a 7 piezas en uno chico, de 8 a 12 en uno mediano y de 13 a 18 en uno grande. Arma uno de prueba para confirmar.",
+      },
+      {
+        q: "¿Cuántos tipos de dulce lleva un dulcero?",
+        a: "Para un dulcero conviene usar de 3 a 5 tipos, según nuestra estimación. Para una mesa completa, Bodas.net sugiere de 5 a 7 variedades en raciones pequeñas de tamaño similar, mezclando texturas.",
+      },
+      {
+        q: "¿Los niños comen más dulce que los adultos?",
+        a: "Según Bodas.net, los niños son más golosos y los adultos prefieren opciones ligeras y consumen menos. Por eso conviene pensar el relleno según quién lo va a recibir.",
+      },
+      {
+        q: "¿El horario del evento cambia cuántos dulces necesito?",
+        a: "Según Bodas.net, tras un banquete de mediodía, más contundente, se consumen menos dulces, y en una cena, más ligera, se consumen más.",
       },
       {
         q: "¿Qué dulces son seguros para niños de 1 a 5 años?",
@@ -867,6 +921,12 @@ export const dulceroPosts: BlogPost[] = [
     ],
     relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
     relatedBlogSlugs: ["ideas-de-dulceros-para-fiesta-infantil", "cajas-bolsas-o-vasos-dulceros-cual-elegir", "dulceros-personalizados-guadalajara"],
+    sources: [
+      {
+        label: "Bodas.net: buffets de dulces para bodas",
+        url: "https://www.bodas.net/articulos/buffets-de-dulces-para-bodas--c733",
+      },
+    ],
   },
   {
     slug: "dulceros-de-halloween",
