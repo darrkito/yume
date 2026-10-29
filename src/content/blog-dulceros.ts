@@ -64,46 +64,116 @@ export const dulceroPosts: BlogPost[] = [
   },
   {
     slug: "ideas-de-dulceros-para-fiesta-infantil",
-    title: "Ideas de dulceros para cumpleaños y fiesta infantil (niño y niña)",
-    metaTitle: "Dulceros para niñas y niños: ideas de fiesta",
-    description: "Ideas de dulceros para niñas y niños en cumpleaños y fiestas infantiles: cómo elegir la temática, qué nombre poner, cuántos pedir y cómo combinarlos con la decoración.",
+    title: "Ideas de dulceros para fiesta infantil (niño y niña)",
+    metaTitle: "Ideas de dulceros para fiesta infantil",
+    description:
+      "Ideas de dulceros para fiesta infantil: cómo elegir la temática, qué nombre poner, cuántos pedir y cómo armarlos para que combinen con la decoración.",
     category: "Guías",
     publishedAt: PUBLISHED,
-    modifiedAt: "2026-10-17",
+    modifiedAt: "2026-10-28",
     intro:
-      "El dulcero es de lo último que se llevan los niños de la fiesta, y muchas veces lo primero que enseñan en casa. Por eso vale la pena que combine con la temática del cumpleaños y lleve el nombre del festejado. Aquí tienes ideas prácticas para elegir el diseño, calcular cuántos pedir y armar dulceros que se vean parte de la fiesta.",
+      "El dulcero es de lo último que se llevan los niños de la fiesta, y muchas veces lo primero que enseñan en casa. Por eso vale la pena que combine con la temática del cumpleaños y lleve el nombre del festejado. Aquí tienes ideas de dulceros para fiesta infantil: cómo elegir el diseño para niño o niña, qué nombre poner, cuántos pedir, qué llevan dentro y cuándo pedirlos para que lleguen a tiempo.",
     sections: [
       {
-        heading: "Elige la temática a partir de la fiesta, no al revés",
+        heading: "Ideas de dulceros para fiesta infantil: parte de la temática",
         body: [
-          "La forma más fácil de acertar es usar la misma temática que el pastel, las invitaciones o la decoración: el personaje favorito del niño o la niña, su caricatura del momento, dinosaurios, unicornios, fútbol, el espacio o simplemente sus colores favoritos.",
-          "Si la fiesta no tiene un personaje definido, una paleta de dos o tres colores con el nombre grande en el frente funciona muy bien y sirve igual para niño o niña. Mándanos una foto de la invitación o de la decoración y adaptamos el diseño del dulcero a esos colores.",
+          "Para acertar, usa la misma temática del pastel, las invitaciones y la decoración: el personaje favorito del festejado, dinosaurios, unicornios, fútbol, el espacio o sus colores favoritos. Si no hay personaje definido, una paleta de dos o tres colores con el nombre grande al frente funciona para cualquier niño o niña.",
+          "Mándanos una foto de la invitación o de la decoración y adaptamos el diseño del dulcero a esos colores. Antes de producir te enviamos una prueba digital, y nada se produce hasta que la apruebas.",
+          "Los gustos infantiles cambian rápido. Si faltan semanas para la fiesta, un diseño con sus colores favoritos y su nombre suele envejecer mejor que uno basado solo en la caricatura del momento.",
         ],
       },
       {
         heading: "El nombre: del festejado o de cada invitado",
         body: [
-          "Lo más común es que todos los dulceros lleven el nombre del festejado y su edad, por ejemplo, Sofía 7 años: así el dulcero funciona como recuerdo del cumpleaños.",
-          "Si quieres algo más especial para un grupo pequeño (primos, el salón de clases), coméntalo al cotizar: podemos revisar contigo si conviene personalizar cada dulcero con el nombre de cada invitado.",
+          "Lo más común es que todos los dulceros lleven el nombre del festejado y su edad, por ejemplo, Sofía 7 años. Así cada dulcero funciona como recuerdo del cumpleaños. Si prefieres algo especial para un grupo pequeño, como primos o un salón, coméntalo al cotizar y revisamos si conviene personalizar cada uno con el nombre de cada invitado.",
+          "Un consejo práctico: pide el nombre con letra grande y clara, para que los niños encuentren el suyo a la distancia entre varios dulceros iguales.",
         ],
       },
       {
-        heading: "Cuántos dulceros pedir",
+        heading: "Dulceros para niña y para niño: qué cambia y qué no",
         body: [
-          "Cuenta a los niños invitados y suma de 2 a 4 extra para hermanos que llegan sin avisar o niños que se suman al último momento. Como el mínimo es de 10 piezas y cada dulcero cuesta $75, puedes pedir exactamente los que necesitas: 15 dulceros son $1,125 y 25 son $1,875.",
-          "Si también vas a dar dulceros a los adultos, considera un diseño un poco más sobrio con el mismo nombre, o simplemente la misma temática: se pueden pedir juntos en una sola orden.",
+          "Casi nada cambia en el dulcero: la diferencia está en la temática y los colores, no en el producto. Elige el diseño por el gusto del festejado, no por una regla de color. Si la fiesta es mixta, una paleta neutra con el nombre grande y un detalle del tema sirve para todos los invitados.",
+          "Para una fiesta con niñas y niños, lo más práctico es un solo diseño con la temática central y el nombre del festejado, en lugar de dos versiones. La mesa se ve ordenada y todos reciben un detalle que se siente parte de la misma fiesta.",
+          "Si prefieres dos estilos distintos, coméntalo al cotizar y lo revisamos contigo. Recuerda que el pedido mínimo es de 10 piezas.",
         ],
       },
       {
-        heading: "Detalles que hacen la diferencia",
+        heading: "Cuántos dulceros pedir para una fiesta infantil",
         body: [
-          "Unos stickers con el mismo personaje o el nombre del festejado dentro del dulcero son un detalle que a los niños les encanta y que siguen usando días después de la fiesta. También puedes pedirlos con nosotros, en vinil resistente al agua.",
-          "Llénalos la noche anterior o la mañana de la fiesta, ya armados, y colócalos juntos en una mesa cerca de la salida: se convierten en parte de la decoración y nadie se va sin el suyo.",
+          `Cuenta a los niños invitados y suma de 2 a 4 extra para hermanos que llegan sin avisar. El mínimo es de 10 piezas, así que pides exactamente los que necesitas. Primeras 100 piezas: $${dulceroUnit} MXN por dulcero. 15 son $${dulceroTotal(15)} y 25 son $${dulceroTotal(25)}.`,
+          "Una regla simple es sumar los invitados más tres. Si también vas a dar dulceros a los adultos, considera un diseño un poco más sobrio con el mismo nombre, o simplemente la misma temática: se pueden pedir juntos en una sola orden.",
+          "Arriba de 100 piezas es precio mayoreo: escríbenos por WhatsApp y te cotizamos.",
+        ],
+      },
+      {
+        heading: "Qué poner dentro de los dulceros",
+        body: [
+          "El dulcero llega armado y vacío, sin dulces, así que tú decides el relleno. Funcionan bien los dulces de siempre, galletas, gomitas y un detalle pequeño como unos stickers del mismo diseño. Para niños pequeños, evita dulces duros y piezas que se puedan tragar, y pregunta por alergias antes de comprar.",
+          "Arma uno de prueba antes de comprar para todos: así calculas cuánto necesitas y confirmas que todo cabe. Si buscas más ideas por edad, revisa la guía de qué poner en un dulcero. Y si dudas entre dulcero, caja, bolsa o vaso, la comparativa de cajas, bolsas o vasos dulceros te ayuda a decidir.",
+        ],
+      },
+      {
+        heading: "Detalles que hacen la diferencia en el dulcero",
+        body: [
+          "Un detalle extra convierte el dulcero en recuerdo: unos stickers con el mismo personaje o el nombre del festejado dentro de cada uno. A los niños les encantan y los siguen usando días después de la fiesta. Puedes pedirlos con nosotros en vinil resistente al agua, con tu diseño, personaje o foto.",
+          "Llena los dulceros la noche anterior o la mañana de la fiesta, ya armados, y colócalos juntos en una mesa cerca de la salida: se convierten en parte de la decoración y nadie se va sin el suyo.",
+        ],
+      },
+      {
+        heading: "Cómo combinar los dulceros con la decoración de la mesa",
+        body: [
+          "Colócalos juntos en una mesa o repisa cerca de la salida, con el nombre hacia el frente y a la vista. Repite los colores del pastel o del fondo de fotos en el diseño, y los dulceros se vuelven parte de la decoración en lugar de un detalle suelto que aparece al final de la fiesta.",
+          "Si ya tienes globos, manteles o vajilla de la misma paleta, toma una foto con todo junto y mándala al cotizar. Con esa referencia adaptamos el diseño del dulcero a esos colores y te lo mostramos en la prueba digital antes de producir.",
+          "Si la mesa de dulces o el pastel ya tienen un personaje, lo más sencillo es repetirlo en el dulcero con el nombre del festejado. Así los invitados lo reconocen de inmediato.",
+        ],
+      },
+      {
+        heading: "Cómo pedir tus dulceros personalizados paso a paso",
+        body: [
+          "Cuenta a tus invitados y suma extras, elige la temática y el nombre, y escríbenos por WhatsApp con una foto de la invitación o la decoración. Te enviamos una prueba digital antes de producir, y nada se produce hasta que la apruebas. Cuando la apruebas, tu pedido pasa a producción.",
+          "Tenlo claro desde el inicio: la fecha de la fiesta, el número de piezas, el nombre que va en cada dulcero y si lo recibirás por envío o lo recogerás en Guadalajara. Con esos cuatro datos, la cotización y la prueba digital son rápidas de preparar.",
+        ],
+      },
+      {
+        heading: "Precio y cuándo pedirlos para que lleguen a tiempo",
+        body: [
+          `Primeras 100 piezas: $${dulceroUnit} MXN por dulcero, con pedido mínimo de 10 piezas. La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba digital, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional. Pídelos con holgura antes de la fecha de la fiesta.`,
+          `Desde $${FREE_SHIPPING_THRESHOLD} de compra el envío nacional es gratis. Si estás en la zona metropolitana de Guadalajara, puedes recogerlos por $${CASABLANCA_PRICE} en cualquiera de las ${CASABLANCA_BRANCHES.length} sucursales de paquetería Casa Blanca, y el tiempo extra es de ${PICKUP_EXTRA_DAYS} día hábil.`,
         ],
       },
     ],
     relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
     relatedBlogSlugs: ["que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "cajas-bolsas-o-vasos-dulceros-cual-elegir"],
+    faq: [
+      {
+        q: "¿Los dulceros incluyen dulces?",
+        a: "No. El dulcero llega armado y vacío, listo para llenar con los dulces o detalles que tú elijas.",
+      },
+      {
+        q: "¿Cuánto cuesta un dulcero personalizado?",
+        a: `Primeras 100 piezas: $${dulceroUnit} MXN por pieza, con pedido mínimo de 10. Arriba de 100 piezas es precio mayoreo y se cotiza por WhatsApp. Desde $${FREE_SHIPPING_THRESHOLD} el envío nacional es gratis.`,
+      },
+      {
+        q: "¿Cuántos dulceros pido para una fiesta infantil?",
+        a: "Cuenta a los niños invitados y suma de 2 a 4 extra por si llega alguien de último momento. El pedido mínimo es de 10 piezas.",
+      },
+      {
+        q: "¿Qué incluye la personalización?",
+        a: "El nombre (del festejado, del grupo o de tu empresa) y la temática que elijas, incluido el logo de tu marca. Te mandamos una prueba digital antes de producir.",
+      },
+      {
+        q: "¿Puedo poner el nombre de cada invitado?",
+        a: "Coméntalo al cotizar y revisamos contigo si conviene personalizar cada dulcero con el nombre de cada invitado.",
+      },
+      {
+        q: "¿Cuánto tardan en llegar?",
+        a: `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional, o ${PICKUP_EXTRA_DAYS} día hábil si recoges en una sucursal Casa Blanca de Guadalajara.`,
+      },
+      {
+        q: "¿Puedo recoger mi pedido en Guadalajara?",
+        a: `Sí. En la zona metropolitana de Guadalajara puedes recoger en cualquiera de las ${CASABLANCA_BRANCHES.length} sucursales de paquetería Casa Blanca por $${CASABLANCA_PRICE}.`,
+      },
+    ],
   },
   {
     slug: "dulceros-navidenos-personalizados",
