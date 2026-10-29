@@ -2365,45 +2365,100 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "tatuajes-temporales-para-boda-eventos-y-fiestas",
     title: "Tatuajes temporales para boda, eventos y fiestas: cómo usarlos",
-    metaTitle: "Tatuajes temporales para bodas, XV años y fiestas",
-    description: "Tatuajes temporales para bodas, XV años y fiestas infantiles como detalle para los invitados. Qué necesitamos para cotizar los tuyos con tu diseño o tus fotos.",
+    metaTitle: "Tatuajes temporales para boda, XV años y fiestas",
+    description: "Cómo usar tatuajes temporales para boda, XV años y fiestas: ideas por evento, duración según la FDA, seguridad y qué necesitamos para cotizar.",
     category: "Guías",
     publishedAt: "2026-09-23",
-    modifiedAt: "2026-10-17",
+    modifiedAt: "2026-10-29",
     intro:
-      "Los tatuajes temporales están en tendencia como detalle de fiesta: se han vuelto un hit en bodas, XV años y celebraciones de todo tipo, justo por lo contrario a un sticker o un recuerdo que se queda guardado: el invitado se lo lleva puesto el resto del evento. Además de las activaciones de marca (ver también nuestra guía de tatuajes temporales personalizados para eventos y marcas), este formato es cada vez más pedido para celebraciones personales: bodas, XV años, despedidas de soltera y fiestas infantiles.",
+      "Un tatuaje temporal con las iniciales de los novios, el nombre de la festejada o el tema de la fiesta es un detalle que el invitado se lleva puesto el resto del evento, no uno que se queda guardado en un cajón. Se ponen en el momento, se lucen durante la celebración y terminan en las fotos. Aquí encuentras cuánto duran, qué tipo conviene para una fiesta, ideas por evento y qué necesitamos para cotizar los tuyos. Si buscas la versión para marcas, revisa nuestra guía de [tatuajes temporales para eventos](/blog/tatuajes-temporales-personalizados-para-eventos).",
     sections: [
       {
-        heading: "Por qué se han vuelto tan populares en fiestas",
+        heading: "¿Cuánto duran los tatuajes temporales para boda?",
         body: [
-          "Cada vez vemos más bodas y fiestas que los incluyen como parte de la experiencia del invitado, no solo como un detalle de regalo: se ponen en el momento, se lucen el resto de la celebración y terminan en las fotos del evento. Esa combinación de bajo costo y alto impacto visual es justo lo que los ha vuelto tan populares en celebraciones de todo tamaño.",
+          "Depende del tipo de producto. Según la FDA, los tatuajes temporales de calcomanía se van en horas o días, mientras que los de henna pueden durar hasta 3 o 4 semanas. Los de calcomanía son los de duración corta, así que piensa en ellos como un recuerdo para el día del evento.",
+          "Por eso no te prometemos una cifra exacta de días: la duración varía según el producto y la piel de cada persona. Si quieres más detalle sobre este tema, revisa [cuánto duran y cómo quitarlos](/blog/cuanto-duran-los-tatuajes-temporales-y-como-quitarlos).",
         ],
       },
       {
-        heading: "Para qué celebraciones se piden más",
+        heading: "Calcomanía o henna negra: cuál elegir para una fiesta",
         body: [
-          "Los más comunes: despedidas de soltera (con una frase, fecha o ícono relacionado a la festejada), XV años (con el nombre o el tema de la fiesta), bodas (iniciales de los novios o la fecha, como detalle en la mesa de bienvenida) y fiestas infantiles (personajes o diseños del tema de la fiesta).",
-          "Funcionan especialmente bien como actividad para los invitados más pequeños en una fiesta infantil, o como detalle fotogénico en despedidas de soltera y XV años.",
+          "Para una fiesta con invitados, elige tatuajes de calcomanía. La FDA indica que la henna negra puede llevar tinte para el cabello u otros colorantes para que dure más, y que no ha aprobado la henna ni el tinte para el cabello para uso en la piel. Evita la henna negra de un puesto improvisado.",
+          "Si alguien te ofrece henna para tu boda o tu fiesta, pregunta qué lleva antes de aplicarla en la piel de tus invitados. Un tatuaje de calcomanía con diseño propio, además, te deja controlar cómo se ve cada pieza porque lo apruebas antes en una prueba digital.",
         ],
       },
       {
-        heading: "Qué necesitamos para cotizar el tuyo",
+        heading: "Cómo probar los tatuajes temporales antes de la boda",
         body: [
-          "El diseño, nombre o frase que quieres (o referencia del tema de la fiesta si aún no tienes diseño), el tamaño aproximado y la cantidad que necesitas según el número de invitados. Antes de producir te mandamos una prueba digital para que apruebes cómo se va a ver.",
-          "Producimos en Guadalajara y enviamos a cualquier parte de México, así que puedes cotizar tatuajes temporales para tu boda, evento o fiesta sin importar dónde sea la celebración.",
+          "La FDA advierte que las tintas o colorantes pueden irritar la piel y causar erupciones. Por eso conviene hacer una prueba en una zona pequeña antes del evento, sobre todo si la novia o algún invitado tiene piel sensible. Esta prueba es una recomendación general, no una norma de la FDA.",
+          "Haz la prueba con calma, unos días antes y no en la mañana de la celebración, para que tengas tiempo de decidir si los usarás. Es un detalle pequeño que cuida a tus invitados y que tranquiliza a quien organiza el evento.",
+        ],
+      },
+      {
+        heading: "Ideas de tatuajes temporales para boda, XV años y fiestas",
+        body: [
+          "Para una boda funcionan las iniciales de los novios o la fecha, como detalle en la mesa de bienvenida. En XV años, el nombre o el tema de la fiesta; en una despedida de soltera, una frase, fecha o ícono; en una fiesta infantil, personajes o diseños del tema de la fiesta.",
+          "Funcionan especialmente bien como actividad para los invitados más pequeños en una fiesta infantil, o como detalle fotogénico en despedidas de soltera y XV años. Para un baby shower, una posada o un evento de empresa, cuéntanos el nombre del evento, la fecha o tu logo y armamos la propuesta.",
+        ],
+      },
+      {
+        heading: "Tatuajes temporales para planners y eventos de empresa",
+        body: [
+          "Si organizas bodas o eventos, trabajamos por evento: te mandamos una prueba digital antes de producir y hablas directo con nosotros por WhatsApp. La cantidad la defines según el número de invitados. Sirve para wedding planners, event planners y empresas que organizan posadas, aniversarios o lanzamientos.",
+          "Cuando el evento ya tiene paleta de colores, invitación o decoración, mándanos una foto o una referencia y adaptamos el diseño a esa línea. Así el detalle se ve planeado y coherente con el resto de la celebración.",
+        ],
+      },
+      {
+        heading: "Qué necesitamos para cotizar tatuajes temporales para boda",
+        body: [
+          "Necesitamos el diseño, nombre o frase que quieres, o una referencia del tema si aún no tienes diseño, el tamaño aproximado y la cantidad según el número de invitados. Con eso te preparamos la cotización y, antes de producir, te mandamos una prueba digital para que apruebes cómo se verá.",
+          "Producimos en Guadalajara y enviamos a cualquier parte de México, así que puedes cotizar sin importar dónde sea la celebración. Los tatuajes temporales se cotizan por WhatsApp y no tienen un precio publicado. Entra a la página de [tatuajes temporales personalizados](/productos/tatuajes-temporales-personalizados) para empezar tu cotización.",
         ],
       },
       {
         heading: "Cómo combinarlos con el resto de tu papelería",
         body: [
-          "Si ya estás personalizando invitaciones, menú de boda o stickers para la celebración, usar el mismo diseño o paleta de colores en los tatuajes temporales hace que se sienta parte del mismo festejo, no un producto aparte. Cuéntanos si ya tienes otras piezas en proceso para alinear el diseño.",
+          "Si ya personalizas invitaciones, menú de boda o stickers para la celebración, usa el mismo diseño o la misma paleta de colores en los tatuajes temporales. Así se sienten parte del mismo festejo y no un producto aparte. Cuéntanos qué otras piezas tienes en proceso para alinear el diseño.",
+          "Si además quieres un detalle que se pueda pegar y guardar, mira nuestros [stickers de vinil personalizados](/productos/stickers-vinil-impermeable). Con el mismo diseño en ambos, tu evento se ve completo y cuidado.",
         ],
       },
     ],
-    relatedProductSlugs: [],
+    relatedProductSlugs: ["stickers-vinil-impermeable"],
     relatedBlogSlugs: ["tatuajes-temporales-personalizados-para-eventos", "cuanto-duran-los-tatuajes-temporales-y-como-quitarlos"],
     serviceLink: { href: "/productos/tatuajes-temporales-personalizados", label: "Ver tatuajes temporales personalizados" },
     quoteMessage: "Hola, me interesa cotizar tatuajes temporales para una boda, evento o fiesta.",
+    faq: [
+      {
+        q: "¿Cuánto duran los tatuajes temporales?",
+        a: "Según la FDA, los tatuajes temporales de calcomanía se van en horas o días, y los de henna pueden durar hasta 3 o 4 semanas. La duración depende del tipo de producto.",
+      },
+      {
+        q: "¿Es buena idea usar henna negra en una fiesta?",
+        a: "La FDA indica que la henna negra puede llevar tinte para el cabello u otros colorantes para que dure más, y que no ha aprobado la henna ni el tinte para el cabello para uso en la piel. Para una fiesta conviene elegir tatuajes de calcomanía.",
+      },
+      {
+        q: "¿Conviene probar el tatuaje antes del evento?",
+        a: "Sí. La FDA advierte que las tintas o colorantes pueden irritar la piel y causar erupciones, así que conviene probar en una zona pequeña, sobre todo si hay piel sensible. Es una recomendación general, no una norma de la FDA.",
+      },
+      {
+        q: "¿Qué necesito para cotizar mis tatuajes temporales?",
+        a: "El diseño, nombre o frase (o una referencia del tema), el tamaño aproximado y la cantidad según el número de invitados. Antes de producir te mandamos una prueba digital para que la apruebes.",
+      },
+      {
+        q: "¿Cuánto cuestan los tatuajes temporales?",
+        a: "Se cotizan por WhatsApp según tu diseño y la cantidad, porque no tienen un precio publicado en el sitio.",
+      },
+      {
+        q: "¿Envían a todo México?",
+        a: "Sí. Producimos en Guadalajara y enviamos a cualquier parte de México.",
+      },
+    ],
+    sources: [
+      {
+        label: "FDA: Tatuajes y maquillaje permanente (Tattoos and Permanent Makeup)",
+        url: "https://www.fda.gov/consumers/free-publications-women/tatuajes-y-maquillaje-permanente-tattoos-and-permanent-makeup",
+      },
+    ],
   },
   {
     slug: "donde-imprimir-stickers-personalizados-mexico",
