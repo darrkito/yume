@@ -3359,32 +3359,41 @@ export const blogPosts: BlogPost[] = [
       "Souvenirs de boda personalizados con nombre y fecha: ideas con dulceros y stickers, cuántos pedir y cuándo cotizar. Hechos en Guadalajara.",
     category: "Guías",
     publishedAt: "2026-10-28",
+    modifiedAt: "2026-10-29",
     intro:
-      "Un souvenir con el nombre de los novios y la fecha convierte un detalle de mesa en un recuerdo que tus invitados sí quieren llevarse a casa. Esta guía te explica qué piezas puedes personalizar en Yume, cuántas pedir, cómo combinarlas con el resto de tu papelería y cuándo cotizar para llegar con calma a tu boda.",
+      "Un souvenir con el nombre de los novios y la fecha convierte un detalle de mesa en un recuerdo que tus invitados sí quieren llevarse a casa. Pero hoy el nombre y la fecha solos ya no bastan: lo que se queda es una pieza con diseño propio. Esta guía te explica qué souvenirs de boda personalizados puedes pedir en Yume, cómo darles un diseño elegante, cuántos pedir, cómo combinarlos con el resto de tu papelería y cuándo cotizar para llegar con calma a tu boda.",
     sections: [
       {
         heading: "¿Qué hace especial a un souvenir de boda personalizado?",
         body: [
           "Un souvenir de boda personalizado es un detalle que cada invitado se lleva con el nombre de los novios, la fecha o el diseño de la boda. Sirve para agradecer su presencia y dejar un recuerdo tangible. Lo que lo hace valioso es que tenga un uso o un lugar después de la fiesta.",
-          "Publimetro México señala que en las bodas de 2026 las parejas prefieren piezas útiles y duraderas sobre objetos de un solo uso. Chic Magazine México añade que personalizar va más allá de poner nombres, iniciales o fecha: se trata de reflejar el estilo de la pareja. Ambos artículos están en Fuentes, al final.",
-          "Esas notas citan ejemplos como botellas, láminas de arte y aromas para el hogar. Esas piezas no las hacemos. Lo nuestro es papel y vinil con tu diseño, y la idea de fondo se aplica igual: un detalle pensado para tu boda, con tus colores y tu historia, no uno genérico.",
+          "Crónica reporta, en septiembre de 2026, que la tendencia es la hiperpersonalización: piezas que los invitados usen, exhiban o disfruten, en lugar de imanes, dulces o velas desechables. Publimetro México suma que una ilustración numerada hecha para la boda puede funcionar como decoración, a diferencia de un recuerdo impreso solo con nombres y fecha. Ambos artículos están en Fuentes, al final.",
+          "Esas notas citan ejemplos como botellas con etiqueta, arte numerado y fragancias para el hogar. Esas piezas no las hacemos. Lo nuestro es papel y vinil con tu diseño, y la idea de fondo se aplica igual: un detalle pensado para tu boda, con tus colores y tu historia, no uno genérico.",
+        ],
+      },
+      {
+        heading: "¿Cómo personalizar souvenirs de boda con nombre y fecha de forma elegante?",
+        body: [
+          "Para que el nombre y la fecha se vean elegantes, intégralos a un diseño con los colores de la pareja y un detalle de su historia, en lugar de dejarlos como texto suelto. Publimetro apunta que las piezas con colores e ilustraciones propios de la pareja se vuelven conservables. En Yume lo ves antes en prueba digital.",
+          "Publimetro también menciona dos ideas: un diseño neutro y funcional con una sola pieza para todos los invitados, y dar menos piezas pero elegidas con más intención. Con nuestro papel y vinil, eso se traduce en un solo diseño para todos, con tus colores, donde el nombre y la fecha son parte de la composición.",
+          "Cuando nos escribas, cuéntanos tu paleta y si hay un detalle de su historia que quieran en el diseño, como un lugar, una flor o una ilustración. Lo llevamos a la prueba digital y no producimos nada hasta que la apruebas.",
         ],
       },
       {
         heading: "Ideas de souvenirs de boda personalizados con nombre y fecha",
         body: [
           "Con Yume puedes hacer tres tipos de souvenir de boda: dulceros con los nombres de los novios, stickers con iniciales y fecha para sellar tus detalles, y tatuajes temporales para la pista de baile. Los tres se diseñan contigo y te mostramos una prueba digital antes de producir.",
-          "Dulceros: una cajita con asa en cartulina opalina, con el nombre de los novios y la temática de tu boda. Llega armada y vacía, lista para llenar. Puede ir en la mesa de dulces, para que cada invitado arme la suya, o ya llena en cada lugar como recuerdo.",
-          "Stickers: iniciales y fecha en vinil resistente al agua para sellar bolsitas de detalle, cerrar sobres de invitación o decorar frascos de la mesa de dulces. Es la forma más sencilla de que un detalle sencillo se vea planeado.",
-          "Tatuajes temporales: las iniciales de los novios o la fecha como detalle en la mesa de bienvenida o en la pista. El invitado se lo lleva puesto el resto de la fiesta y aparece en las fotos. Se cotizan según tu diseño y la cantidad.",
+          "Dulceros: una cajita con asa en cartulina opalina, con el nombre de los novios y la temática de tu boda. Llega armada y vacía, lista para llenar. Puede ir en la mesa de dulces, para que cada invitado arme la suya, o ya llena en cada lugar como recuerdo. Conoce los [dulceros personalizados](/productos/dulceros-personalizados) y la guía de [dulceros para bodas, XV y baby shower](/blog/dulceros-para-eventos-sociales-boda-xv-baby-shower).",
+          "Stickers: iniciales y fecha en [stickers de vinil](/productos/stickers-vinil-impermeable), resistentes al agua, para sellar bolsitas de detalle, cerrar sobres de invitación o decorar frascos de la mesa de dulces. Si buscas más ideas, revisa los [stickers para bodas y eventos](/blog/stickers-para-bodas-eventos-y-fiestas).",
+          "Tatuajes temporales: las iniciales de los novios o la fecha como detalle en la mesa de bienvenida o en la pista. El invitado se lo lleva puesto el resto de la fiesta y aparece en las fotos. Se cotizan según tu diseño y la cantidad. Mira los [tatuajes temporales personalizados](/productos/tatuajes-temporales-personalizados) y la guía de [tatuajes temporales para boda](/blog/tatuajes-temporales-para-boda-eventos-y-fiestas).",
         ],
       },
       {
         heading: "¿Cuántos souvenirs de boda pedir y cuánto cuestan?",
         body: [
           "Pide un souvenir por invitado o uno por familia o pareja, más unos cuantos extra para la mesa de novios, fotos e imprevistos. Lo importante es partir de tu lista confirmada de asistentes, porque en Yume se vende por pieza exacta y el mínimo cambia según el producto.",
-          `El mínimo es de 10 dulceros y de 40 stickers de vinil. Primeras 100 piezas: 100 dulceros cuestan $${priceOf("dulceros-personalizados", 100)} y 100 stickers de vinil cuestan $${priceOf("stickers-vinil-impermeable", 100)}. En stickers, pasando las 100 piezas cada pieza extra va a precio mayoreo. Los tatuajes temporales se cotizan por WhatsApp.`,
-          "Una cuenta práctica: si tienes 80 invitados, pide 80 piezas más 5 o 10 de reserva. Precio por cantidad:",
+          "El mínimo es de 10 dulceros y de 40 stickers de vinil. Los tatuajes temporales se cotizan por WhatsApp. Una cuenta práctica: si tienes 80 invitados, pide 80 piezas más 5 o 10 de reserva.",
+          `Primeras 100 piezas: 100 dulceros cuestan $${priceOf("dulceros-personalizados", 100)} y 100 stickers de vinil cuestan $${priceOf("stickers-vinil-impermeable", 100)}. En stickers, pasando las 100 piezas cada pieza extra va a precio mayoreo. Precio por cantidad:`,
         ],
         table: {
           headers: ["Piezas", "Dulceros personalizados", "Stickers de vinil"],
@@ -3395,7 +3404,7 @@ export const blogPosts: BlogPost[] = [
         heading: "¿Cómo combinar los souvenirs con tus invitaciones y tu menú?",
         body: [
           "Usa el mismo diseño en todo: mismos colores, misma tipografía y mismas iniciales en la invitación, el menú y el souvenir. Así la boda se lee como un solo conjunto planeado y no como piezas sueltas. Define el diseño una vez, aprueba la prueba digital y pide cada pieza con ese mismo archivo.",
-          "Si todavía no tienes la papelería, empieza por las invitaciones y el menú de boda, y deja los souvenirs para después: ya tendrás la línea de diseño definida. Abajo, en Sigue leyendo, tienes las guías de cada pieza.",
+          "Si todavía no tienes la papelería, empieza por las invitaciones y el menú de boda, y deja los souvenirs para después: ya tendrás la línea de diseño definida. Aquí tienes la guía para [pedir invitaciones personalizadas](/blog/como-pedir-invitaciones-personalizadas-para-eventos) y la del [menú de boda personalizado](/blog/menu-de-boda-personalizado).",
           "Si organizas la boda de un cliente como wedding planner, mándanos la paleta, el estilo y la lista de invitados confirmada. El trato es directo por WhatsApp y puedes ver la prueba digital con tu cliente antes de aprobar.",
         ],
       },
@@ -3403,7 +3412,7 @@ export const blogPosts: BlogPost[] = [
         heading: "¿Cuándo pedir los souvenirs de boda?",
         body: [
           "Cotiza en cuanto tengas fecha, lugar y una idea de los colores, y pide en firme cuando la lista de invitados esté casi cerrada. Así queda margen para revisar la prueba digital, hacer ajustes y recibir el pedido sin prisas antes de la boda, sobre todo si tu evento tiene fecha fija.",
-          `La prueba digital llega normalmente en un máximo de 24 horas después del pago. Desde que la apruebas, tu pedido llega a domicilio en ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles en cualquier parte de México, o está listo para recoger en una sucursal Casa Blanca de Guadalajara en ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles.`,
+          `La prueba digital llega normalmente en un máximo de 24 horas después del pago e incluye hasta 2 rondas de ajustes. Desde que la apruebas, tu pedido llega a domicilio en ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles en cualquier parte de México, o está listo para recoger en una sucursal Casa Blanca de Guadalajara en ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles.`,
           `El envío a domicilio cuesta $${NATIONAL_SHIPPING_PRICE} y es gratis en compras de $${FREE_SHIPPING_THRESHOLD} o más. Si también pides invitaciones o menús, conviene coordinar todo en la misma conversación para que los tiempos de cada pieza se acomoden a tu fecha.`,
         ],
       },
@@ -3421,8 +3430,12 @@ export const blogPosts: BlogPost[] = [
         a: "Dulceros personalizados con el nombre de los novios y la temática de tu boda, stickers de vinil con iniciales y fecha, y tatuajes temporales con tu diseño. No hacemos botellas ni aromas.",
       },
       {
+        q: "¿Qué tipo de souvenir de boda está en tendencia?",
+        a: "Según Crónica (septiembre de 2026), la tendencia es la hiperpersonalización: piezas que los invitados usen, exhiban o disfruten, en lugar de imanes, dulces o velas desechables. Publimetro suma que los colores e ilustraciones propios de la pareja hacen que la pieza se conserve.",
+      },
+      {
         q: "¿Puedo ver el diseño antes de que se produzca?",
-        a: "Sí. Te enviamos una prueba digital antes de producir y no se fabrica nada hasta que la apruebas.",
+        a: "Sí. Te enviamos una prueba digital antes de producir y no se fabrica nada hasta que la apruebas. Llega normalmente en un máximo de 24 horas después del pago e incluye hasta 2 rondas de ajustes.",
       },
       {
         q: "¿Cuál es el pedido mínimo?",
@@ -3446,8 +3459,8 @@ export const blogPosts: BlogPost[] = [
     serviceLink: { href: "/productos/tatuajes-temporales-personalizados", label: "Ver tatuajes temporales personalizados" },
     quoteMessage: "Hola, me interesa cotizar souvenirs de boda personalizados.",
     sources: [
+      { label: "Crónica: Dile adiós a los recuerdos de boda que terminan en la basura, lo que sí se quedan tus invitados en 2026", url: "https://www.cronica.com.mx/tendencias/2026/09/04/dile-adios-a-los-recuerdos-de-boda-que-terminan-en-la-basura-esto-es-lo-que-si-se-quedan-tus-invitados-en-2026/" },
       { label: "Publimetro México: Souvenirs para bodas 2026, las tendencias que ganan terreno", url: "https://www.publimetro.com.mx/virales/2026/10/02/souvenirs-para-bodas-2026-las-tendencias-que-ganan-terreno/" },
-      { label: "Chic Magazine México: Tendencias en souvenirs y recuerdos para bodas 2027", url: "https://www.chicmagazine.com.mx/consejos/tendencias-souvenirs-recuerdos-para-bodas-2027-ideas-originales" },
     ],
   },
   // Dulceros cluster lives in its own file (blog-dulceros.ts).
