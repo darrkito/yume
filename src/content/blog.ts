@@ -1825,35 +1825,100 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "placa-nfc-vs-codigo-qr-impreso-resenas",
     title: "Placa NFC vs. código QR impreso: ¿cuál conviene para pedir reseñas?",
-    metaTitle: "Placa NFC vs. QR impreso para reseñas de Google",
+    metaTitle: "Placa NFC vs. código QR impreso para reseñas",
     description:
-      "Diferencias reales entre una placa con chip NFC y un letrero casero con solo un código QR impreso para pedir reseñas de Google en tu negocio.",
+      "Placa NFC vs. código QR impreso para pedir reseñas de Google: cuándo conviene cada uno, sus límites y por qué lo mejor es una pieza con ambos.",
     category: "Guías",
     publishedAt: "2026-09-15",
+    modifiedAt: "2026-10-29",
     intro:
-      "Imprimir un código QR en una hoja y pegarlo en el mostrador es gratis y cualquiera lo puede hacer. Entonces, ¿por qué pagar por una placa con NFC? La diferencia no está en si funciona (un QR impreso también lleva a la reseña), sino en durabilidad, en qué tan fácil es de usar, y en la imagen que proyecta.",
+      "Imprimir un código QR en una hoja y ponerlo en el mostrador es gratis y cualquiera lo puede hacer. Entonces, ¿por qué considerar una placa con NFC? La respuesta no es que uno funcione y el otro no: los dos llevan a la misma página de reseñas. La diferencia está en la comodidad, en los teléfonos donde funciona cada uno, en la imagen que proyecta la pieza y en las reglas de Google que aplican a ambos.",
     sections: [
       {
-        heading: "Durabilidad: papel vs. placa rígida",
+        heading: "Placa NFC vs. código QR: la diferencia en la práctica",
         body: [
-          "Una hoja impresa con un QR se maltrata rápido: se dobla, se moja, se despinta con el sol de la ventana o simplemente se ve fuera de lugar después de unas semanas en el mostrador. Una placa rígida aguanta el uso diario de un negocio sin decolorarse ni doblarse, y se ve como parte del mostrador, no como un aviso improvisado.",
+          "La diferencia principal es cómo llega el cliente a la reseña. Con el QR abre la cámara y escanea. Con el NFC acerca el teléfono a la placa y toca. Los dos llevan al mismo lugar, así que ninguno garantiza más reseñas por sí solo. Lo que cambia es la comodidad y en qué teléfono funciona.",
+          "Un QR impreso es el medio más conocido: casi todo el mundo sabe escanearlo y solo necesita una cámara. Para que se lea bien, debe ser lo bastante grande y tener espacio libre alrededor. El NFC agrega un solo toque, sin apuntar ni enfocar, pero depende de que el cliente tenga NFC activado, y la ubicación y el material de la superficie pueden afectar la lectura.",
+          "Estos puntos vienen de una guía de tarjetas de reseña de un proveedor, no de una prueba independiente. Por eso no damos porcentajes ni listas exactas de compatibilidad: depende del modelo y de los ajustes de cada teléfono.",
         ],
       },
       {
-        heading: "NFC: una opción más para el cliente, no un reemplazo del QR",
+        heading: "Cuándo conviene el QR y cuándo el NFC",
         body: [
-          "Un letrero casero solo tiene QR: funciona, pero depende de que el cliente abra la cámara y enfoque bien. El NFC agrega una segunda forma de usarlo: tocar el teléfono, sin apuntar ni enfocar nada, algo que cada vez más gente ya conoce por las terminales de pago sin contacto. Tener ambas opciones en la misma placa significa que ningún cliente se queda sin poder usarla.",
+          "El QR conviene cuando quieres que cualquier teléfono con cámara pueda usarlo, incluso en material impreso. El NFC conviene cuando quieres un toque rápido, siempre que el cliente tenga NFC activado. Como no todos los teléfonos lo tienen activo, lo más seguro es no depender de uno solo.",
+          "Piensa en el lugar donde va la pieza y en quién la va a usar. En una recepción o un mostrador, el cliente está cerca y puede elegir entre tocar o escanear. En la mesa de un evento hay invitados con teléfonos distintos, así que un QR visible sirve de respaldo si el toque no funciona. En un kit de bienvenida, la pieza se ve de cerca y puede acompañar una nota amable que invite a contar la experiencia.",
+          "Si solo vas a imprimir una hoja con QR, cuida que sea grande, que no tenga adornos encima y que quede en un lugar donde el cliente pueda apuntar con calma.",
         ],
       },
       {
-        heading: "Imagen de marca",
+        heading: "Por qué la mejor opción es una placa con NFC y QR",
         body: [
-          "Un QR impreso en una hoja tamaño carta comunica algo distinto que una placa con el diseño de la marca, en blanco o negro, hecha para quedarse en el mostrador de forma permanente. Para un negocio que ya cuida su imagen (consultorio, cafetería, tienda), la diferencia se nota.",
+          "La opción más segura es una sola pieza que tenga NFC y QR. Así el cliente que tiene NFC activado toca y el que no lo tiene escanea. La guía de QRCodeChimp recomienda justo ese respaldo y sugiere probar con teléfonos comunes antes de comprar en volumen.",
+          "Nuestra [placa de reseñas NFC](/productos/placa-resena-google-nfc) reúne las dos formas de usarla en el mismo objeto, y el [stand de reseñas NFC](/productos/stand-resena-google-nfc) lo hace en versión para colocar sobre una superficie. Ambos se ofrecen en blanco o negro.",
+          "Antes de usarla en tu negocio o en un evento, pruébala con dos o tres teléfonos distintos, el tuyo y el de alguien más. Si quieres ver cómo se configura y se presenta al cliente, revisa la guía para [usar la placa de reseñas](/blog/como-usar-placa-resenas-google-yume).",
+        ],
+      },
+      {
+        heading: "Imagen y diseño: que la pieza se vea parte de tu marca o evento",
+        body: [
+          "Una hoja con un QR comunica algo distinto que una placa diseñada para verse como parte de la marca o del evento. Para planners, empresas y quienes cuidan cada detalle, el acabado importa. Nuestras placas y stands se ofrecen en blanco o negro, para combinar con el espacio donde se colocan.",
+          "Un consultorio, una cafetería, una tienda o la recepción de un salón de eventos ya cuidan su imagen: una pieza que se integra con la decoración se nota más que un aviso suelto. Si organizas eventos, también puede ser un detalle más de la mesa de bienvenida o del módulo de atención a invitados.",
+        ],
+      },
+      {
+        heading: "Reglas de Google que aplican igual al QR y al NFC",
+        body: [
+          "Google permite pedir reseñas genuinas, pero no ofrecer incentivos a cambio, ni pedir solo reseñas positivas, ni desalentar las negativas. Estas reglas aplican igual a una placa NFC y a un código QR, porque el medio no cambia la política. El texto de la pieza debe ser neutral.",
+          "Según la política de contenido de Google Maps, no se debe ofrecer pago, descuentos, bienes o servicios gratis a cambio de una reseña, de modificarla o de quitar una negativa. Tampoco se debe filtrar a quién se le pide la reseña. Por eso la placa no debe decir cosas como 'deja 5 estrellas y te regalamos algo'.",
+          "La política también indica no pedir contenido específico ni presionar al personal para que deje calificaciones en el local. Un texto sencillo como 'Cuéntanos tu experiencia' cumple: invita sin dictar qué escribir.",
+        ],
+      },
+      {
+        heading: "Qué esperar: una facilidad, no una garantía de más reseñas",
+        body: [
+          "Ninguna de las dos opciones asegura más reseñas por sí sola. La guía de QRCodeChimp, que es de un proveedor y no un estudio independiente, solo dice que las tarjetas pueden ayudar si están bien ubicadas y van acompañadas de una petición amable. Úsalas como facilitador, no como garantía.",
+          "Lo que sí puedes controlar es que la pieza esté a la vista, que funcione al probarla y que la petición sea amable y honesta. Para ideas sobre cómo pedirlas sin salirte de las reglas, lee [cómo conseguir más reseñas de Google](/blog/como-conseguir-mas-resenas-de-google-nfc-qr).",
         ],
       },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
     relatedBlogSlugs: ["como-conseguir-mas-resenas-de-google-nfc-qr", "como-usar-placa-resenas-google-yume"],
+    faq: [
+      {
+        q: "¿El NFC reemplaza al código QR?",
+        a: "No. Algunos clientes tienen el NFC apagado o un teléfono donde la detección falla, y la guía de QRCodeChimp recomienda agregar un QR de respaldo. Lo más seguro es una pieza con NFC y QR.",
+      },
+      {
+        q: "¿Un código QR impreso sirve para pedir reseñas?",
+        a: "Sí. Funciona con cualquier teléfono con cámara y en material impreso. Debe ser lo bastante grande y tener espacio libre alrededor para escanearse bien.",
+      },
+      {
+        q: "¿Puedo dar un descuento o un regalo a cambio de una reseña?",
+        a: "No. La política de Google prohíbe ofrecer incentivos como pagos, descuentos, bienes o servicios gratis a cambio de una reseña, y aplica igual a una placa NFC y a un QR.",
+      },
+      {
+        q: "¿Puedo pedir reseñas solo a los clientes satisfechos?",
+        a: "No. Google no permite solicitar selectivamente reseñas positivas ni desalentar las negativas. Se permite pedir reseñas genuinas sin influir en la calificación ni en el contenido.",
+      },
+      {
+        q: "¿Qué texto conviene poner en la placa?",
+        a: "Uno neutral, por ejemplo 'Cuéntanos tu experiencia'. Google indica no pedir contenido específico en la reseña.",
+      },
+      {
+        q: "¿Con NFC voy a recibir más reseñas?",
+        a: "No hay una cifra confiable que lo respalde. La guía consultada solo dice que las tarjetas pueden ayudar si están bien ubicadas y van con una petición amable.",
+      },
+    ],
+    sources: [
+      {
+        label: "Política de contenido de Google Maps: reseñas",
+        url: "https://support.google.com/contributionpolicy/answer/7400114",
+      },
+      {
+        label: "QRCodeChimp: guía de tarjetas de reseñas de Google",
+        url: "https://www.qrcodechimp.com/google-review-cards/",
+      },
+    ],
   },
   {
     slug: "como-usar-placa-resenas-google-yume",
