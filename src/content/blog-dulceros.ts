@@ -70,9 +70,9 @@ export const dulceroPosts: BlogPost[] = [
       "Ideas de dulceros para fiesta infantil: cómo elegir la temática, qué nombre poner, cuántos pedir y cómo armarlos para que combinen con la decoración.",
     category: "Guías",
     publishedAt: PUBLISHED,
-    modifiedAt: "2026-10-28",
+    modifiedAt: "2026-10-29",
     intro:
-      "El dulcero es de lo último que se llevan los niños de la fiesta, y muchas veces lo primero que enseñan en casa. Por eso vale la pena que combine con la temática del cumpleaños y lleve el nombre del festejado. Aquí tienes ideas de dulceros para fiesta infantil: cómo elegir el diseño para niño o niña, qué nombre poner, cuántos pedir, qué llevan dentro y cuándo pedirlos para que lleguen a tiempo.",
+      "El dulcero es de lo último que se llevan los niños de la fiesta, y muchas veces lo primero que enseñan en casa. Por eso vale la pena que combine con la temática del cumpleaños y lleve el nombre del festejado. Aquí tienes ideas de dulceros para fiesta infantil: cómo elegir el diseño para niño o niña, qué nombre poner, cuántos pedir, qué llevan dentro, cómo cuidar a los invitados más pequeños y cuándo pedirlos para que lleguen a tiempo.",
     sections: [
       {
         heading: "Ideas de dulceros para fiesta infantil: parte de la temática",
@@ -80,6 +80,14 @@ export const dulceroPosts: BlogPost[] = [
           "Para acertar, usa la misma temática del pastel, las invitaciones y la decoración: el personaje favorito del festejado, dinosaurios, unicornios, fútbol, el espacio o sus colores favoritos. Si no hay personaje definido, una paleta de dos o tres colores con el nombre grande al frente funciona para cualquier niño o niña.",
           "Mándanos una foto de la invitación o de la decoración y adaptamos el diseño del dulcero a esos colores. Antes de producir te enviamos una prueba digital, y nada se produce hasta que la apruebas.",
           "Los gustos infantiles cambian rápido. Si faltan semanas para la fiesta, un diseño con sus colores favoritos y su nombre suele envejecer mejor que uno basado solo en la caricatura del momento.",
+        ],
+      },
+      {
+        heading: "Qué incluye un dulcero personalizado para fiesta infantil",
+        body: [
+          "El dulcero es tipo lunch box, con asa, y llega armado y vacío. La personalización incluye el nombre del festejado y la temática que elijas, y te mandamos una prueba digital antes de producir. Los dulces y el relleno los pones tú.",
+          `Es el mismo dulcero para niña y para niño: lo que cambia es el diseño. Si quieres ver el producto y pedirlo, entra a la página de [dulceros personalizados](/productos/${DULCERO}), donde eliges la cantidad desde 10 piezas.`,
+          "Si la fiesta es de un grupo, como un salón, el nombre puede ser el del grupo o el de la escuela. También puedes sumar tu logo si el festejo es de una empresa o un negocio.",
         ],
       },
       {
@@ -100,8 +108,8 @@ export const dulceroPosts: BlogPost[] = [
       {
         heading: "Cuántos dulceros pedir para una fiesta infantil",
         body: [
-          `Cuenta a los niños invitados y suma de 2 a 4 extra para hermanos que llegan sin avisar. El mínimo es de 10 piezas, así que pides exactamente los que necesitas. Primeras 100 piezas: $${dulceroUnit} MXN por dulcero. 15 son $${dulceroTotal(15)} y 25 son $${dulceroTotal(25)}.`,
-          "Una regla simple es sumar los invitados más tres. Si también vas a dar dulceros a los adultos, considera un diseño un poco más sobrio con el mismo nombre, o simplemente la misma temática: se pueden pedir juntos en una sola orden.",
+          `Cuenta a los niños invitados y suma unos extra por si llega alguien de último momento. El mínimo es de 10 piezas, así que pides exactamente los que necesitas. Primeras 100 piezas: $${dulceroUnit} MXN por dulcero. 15 son $${dulceroTotal(15)} y 25 son $${dulceroTotal(25)}.`,
+          "Una regla simple es contar a los invitados y sumar unos extra. Si también vas a dar dulceros a los adultos, considera un diseño un poco más sobrio con el mismo nombre, o simplemente la misma temática: se pueden pedir juntos en una sola orden.",
           "Arriba de 100 piezas es precio mayoreo: escríbenos por WhatsApp y te cotizamos.",
         ],
       },
@@ -109,14 +117,21 @@ export const dulceroPosts: BlogPost[] = [
         heading: "Qué poner dentro de los dulceros",
         body: [
           "El dulcero llega armado y vacío, sin dulces, así que tú decides el relleno. Funcionan bien los dulces de siempre, galletas, gomitas y un detalle pequeño como unos stickers del mismo diseño. Para niños pequeños, evita dulces duros y piezas que se puedan tragar, y pregunta por alergias antes de comprar.",
-          "Arma uno de prueba antes de comprar para todos: así calculas cuánto necesitas y confirmas que todo cabe. Si buscas más ideas por edad, revisa la guía de qué poner en un dulcero. Y si dudas entre dulcero, caja, bolsa o vaso, la comparativa de cajas, bolsas o vasos dulceros te ayuda a decidir.",
+          "Arma uno de prueba antes de comprar para todos: así calculas cuánto necesitas y confirmas que todo cabe. Si buscas más ideas por edad, revisa la guía de [qué poner en un dulcero](/blog/que-poner-en-un-dulcero). Y si dudas entre dulcero, caja, bolsa o vaso, esta comparativa de [cajas, bolsas o vasos dulceros](/blog/cajas-bolsas-o-vasos-dulceros-cual-elegir) te ayuda a decidir.",
+        ],
+      },
+      {
+        heading: "Seguridad y alergias: cómo cuidar a los invitados pequeños",
+        body: [
+          "Revisa la edad de los invitados antes de elegir el relleno: con niños pequeños evita piezas duras o pequeñas que se puedan tragar. Pregunta a las familias por alergias antes de comprar los dulces. Como el dulcero llega vacío, tú controlas cada ingrediente que entra.",
+          "La edad de los invitados manda: una fiesta de preescolar pide un relleno distinto al de una fiesta de primaria. Si tienes dudas sobre alguna alergia, consulta a la familia del niño antes de decidir qué llevará dentro.",
         ],
       },
       {
         heading: "Detalles que hacen la diferencia en el dulcero",
         body: [
-          "Un detalle extra convierte el dulcero en recuerdo: unos stickers con el mismo personaje o el nombre del festejado dentro de cada uno. A los niños les encantan y los siguen usando días después de la fiesta. Puedes pedirlos con nosotros en vinil resistente al agua, con tu diseño, personaje o foto.",
-          "Llena los dulceros la noche anterior o la mañana de la fiesta, ya armados, y colócalos juntos en una mesa cerca de la salida: se convierten en parte de la decoración y nadie se va sin el suyo.",
+          "Un detalle extra convierte el dulcero en recuerdo: unos stickers con el mismo personaje o el nombre del festejado dentro de cada uno. Puedes pedirlos con nosotros en vinil premium, resistente al agua, al sol y a rayones, con tu diseño, personaje o foto.",
+          "Puedes pedir tus [stickers de vinil personalizados](/productos/stickers-vinil-impermeable) junto con los dulceros. Llena los dulceros la noche anterior o la mañana de la fiesta, ya armados, y colócalos juntos en una mesa cerca de la salida: se convierten en parte de la decoración y nadie se va sin el suyo.",
         ],
       },
       {
@@ -125,6 +140,13 @@ export const dulceroPosts: BlogPost[] = [
           "Colócalos juntos en una mesa o repisa cerca de la salida, con el nombre hacia el frente y a la vista. Repite los colores del pastel o del fondo de fotos en el diseño, y los dulceros se vuelven parte de la decoración en lugar de un detalle suelto que aparece al final de la fiesta.",
           "Si ya tienes globos, manteles o vajilla de la misma paleta, toma una foto con todo junto y mándala al cotizar. Con esa referencia adaptamos el diseño del dulcero a esos colores y te lo mostramos en la prueba digital antes de producir.",
           "Si la mesa de dulces o el pastel ya tienen un personaje, lo más sencillo es repetirlo en el dulcero con el nombre del festejado. Así los invitados lo reconocen de inmediato.",
+        ],
+      },
+      {
+        heading: "Si organizas la fiesta como planner: cómo pedir dulceros",
+        body: [
+          "Si eres planner u organizas fiestas infantiles para clientes, pide los dulceros con el nombre del festejado y la temática del evento, y compártenos fotos de la invitación y la decoración. Te mandamos una prueba digital para que tu cliente la apruebe antes de producir, y platicamos todo por WhatsApp.",
+          "Los dulceros se piden desde 10 piezas, así que sirven para un evento pequeño o mediano. Para más de 100 piezas, escríbenos y te cotizamos. Si tu cliente está en la zona, revisa también la guía de [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara).",
         ],
       },
       {
@@ -155,7 +177,7 @@ export const dulceroPosts: BlogPost[] = [
       },
       {
         q: "¿Cuántos dulceros pido para una fiesta infantil?",
-        a: "Cuenta a los niños invitados y suma de 2 a 4 extra por si llega alguien de último momento. El pedido mínimo es de 10 piezas.",
+        a: "Cuenta a los niños invitados y suma unos extra por si llega alguien de último momento. El pedido mínimo es de 10 piezas.",
       },
       {
         q: "¿Qué incluye la personalización?",
@@ -164,6 +186,22 @@ export const dulceroPosts: BlogPost[] = [
       {
         q: "¿Puedo poner el nombre de cada invitado?",
         a: "Coméntalo al cotizar y revisamos contigo si conviene personalizar cada dulcero con el nombre de cada invitado.",
+      },
+      {
+        q: "¿El dulcero es distinto para niña y para niño?",
+        a: "No. Es el mismo dulcero, tipo lunch box con asa. Lo que cambia es el diseño: la temática, los colores y el nombre.",
+      },
+      {
+        q: "¿Qué debo cuidar si hay niños pequeños en la fiesta?",
+        a: "Revisa la edad de los invitados y evita piezas duras o pequeñas con niños pequeños. Pregunta por alergias antes de comprar el relleno.",
+      },
+      {
+        q: "¿Puedo ver una prueba antes de que se produzca?",
+        a: "Sí. Te enviamos una prueba digital antes de producir y nada se produce hasta que la apruebas.",
+      },
+      {
+        q: "¿Trabajan con planners y organizadoras de eventos?",
+        a: "Sí. Puedes pedir los dulceros para el evento de tu cliente, con prueba digital y trato directo por WhatsApp. El pedido mínimo es de 10 piezas.",
       },
       {
         q: "¿Cuánto tardan en llegar?",
