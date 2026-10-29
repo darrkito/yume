@@ -3023,46 +3023,58 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "etiquetas-navidenas-personalizadas",
-    title: "Etiquetas navideñas personalizadas: para regalos, botellas y empaques de tu negocio",
-    metaTitle: "Etiquetas navideñas para regalos: PDF gratis o en vinil",
+    title: "Etiquetas navideñas personalizadas para regalos y botellas",
+    metaTitle: "Etiquetas navideñas personalizadas: PDF gratis o vinil",
     description:
-      "Etiquetas navideñas para regalos: descarga gratis el PDF para imprimir o pídelas personalizadas en vinil, 100 piezas por $350. Hechas en Guadalajara, envíos a todo México.",
+      "Etiquetas navideñas personalizadas en vinil para regalos, botellas y empaques, o descarga gratis el PDF para imprimir. Hechas en Guadalajara.",
     category: "Guías",
     publishedAt: "2026-10-19",
+    modifiedAt: "2026-10-29",
     intro:
-      "Una etiqueta navideña con el nombre de la familia, un mensaje o el logo de tu negocio convierte cualquier regalo, botella o bolsita de aguinaldo en algo hecho especialmente para quien lo recibe. En Yume las hacemos en vinil, con tu diseño y en la forma que quieras. Aquí va qué se les pone, en qué se usan y hasta cuándo conviene pedirlas para que lleguen antes de Navidad.",
+      "Una etiqueta navideña con el nombre de la familia, un mensaje o el logo de tu negocio convierte cualquier regalo, botella o bolsita de aguinaldo en algo hecho especialmente para quien lo recibe. Las etiquetas navideñas personalizadas de Yume se hacen en vinil, con tu diseño y en la forma que quieras. Aquí va qué se les pone, en qué se usan, qué material elegir, cuánto cuestan y hasta cuándo conviene pedirlas para que lleguen antes de Navidad.",
     sections: [
       {
-        heading: "Qué se les pone a las etiquetas navideñas",
+        heading: "Qué llevan las etiquetas navideñas personalizadas",
         body: [
-          "Lo más común es un mensaje corto (\"Feliz Navidad\", \"Con cariño de la familia López\", \"Felices fiestas 2026\") junto a un dibujo navideño: un pino, una esfera, una estrella o un muñeco de nieve. También puedes usar una foto, el nombre de cada persona para marcar sus regalos o, si es para tu negocio, tu logo con un toque navideño.",
-          "Cuéntanos qué quieres decir y qué estilo te gusta, y te mandamos una prueba digital antes de imprimir. No imprimimos nada sin tu aprobación.",
+          "Las etiquetas navideñas personalizadas llevan un mensaje corto y un dibujo de temporada: un pino, una esfera, una estrella o un muñeco de nieve. También puedes sumar el nombre de cada persona, una foto o el logo de tu negocio con un toque navideño. Tú dices qué quieres decir y te mandamos una prueba digital.",
+          "Algunos mensajes que funcionan bien son “Feliz Navidad”, “Con cariño de la familia López” o “Felices fiestas 2026”. Si es para una posada o una cena con invitados, el nombre de cada persona en su regalo o en su copa hace que la mesa se vea pensada y que cada quien se lleve un detalle con su nombre.",
+          "La prueba digital llega normalmente en un máximo de 24 horas después del pago e incluye hasta 2 rondas de ajustes. No imprimimos nada sin tu aprobación.",
         ],
       },
       {
-        heading: "En qué se usan",
+        heading: "En qué se usan las etiquetas para regalos y botellas",
         body: [
-          "Para regalos: en la caja o la bolsa, en vez de la tarjetita de papel que se pierde. Para botellas de vino, ponche o licor que vas a regalar. Para las bolsitas de aguinaldo y los dulceros de la posada. Y para negocios: en los empaques, bolsas y cajas de tus pedidos de diciembre, o en los regalos para tus clientes.",
-          "Como el vinil resiste el agua, aguanta bien en botellas que salen del refrigerador o en bolsas que se mojan.",
+          "Las etiquetas navideñas se usan sobre todo en regalos, botellas, bolsitas de aguinaldo y dulceros de posada. También sirven para empaques y cajas de pedidos de diciembre. Como son de vinil, resistentes al agua, aguantan botellas que salen del refrigerador o bolsas que se mojan.",
+          "Para regalos van en la caja o la bolsa, en vez de la tarjetita de papel que se pierde. Para botellas de vino, ponche o licor que vas a regalar, una etiqueta con el nombre de quien la recibe cambia por completo la presentación. En las bolsitas de aguinaldo y en los dulceros de la posada, la misma etiqueta une todo el set. Si quieres dulceros, revisa los [dulceros navideños personalizados](/blog/dulceros-navidenos-personalizados).",
+          "Si tienes un negocio, puedes ponerlas en los empaques, bolsas y cajas de tus pedidos de diciembre, o en los regalos para tus clientes. Aquí hay más ideas de [stickers para empaques](/blog/stickers-para-empaques-de-negocio). Si eres planner y organizas varios eventos, te preparamos las piezas de cada evento con prueba digital y trato directo por WhatsApp.",
+        ],
+      },
+      {
+        heading: "Qué etiqueta elegir según dónde va a estar",
+        body: [
+          "Si la etiqueta va en una botella con hielo o refrigerador, en una bolsa que se moja o en algo que se maneja mucho, elige vinil: es resistente al agua, al sol y a rayones. Si es una hoja para pocos regalos en interior, el PDF gratis puede bastar.",
+          "Para el logo de tu negocio, usa las [etiquetas con tu logo](/productos/stickers-logo-personalizado). Para nombres, personajes, mascotas o fotos, elige los [stickers de vinil personalizados](/productos/stickers-vinil-impermeable). Es el mismo tipo de vinil, con distinto mínimo y escalón de precio.",
+          "Antes de producir verás la prueba digital con tu diseño, con hasta 2 rondas de ajustes, así que puedes revisar mensaje, nombre y colores sin riesgo antes de aprobar.",
         ],
       },
       {
         heading: "Etiquetas navideñas para imprimir gratis",
         body: [
-          "Si solo necesitas unas cuantas, descarga nuestra hoja gratis (arriba): 12 etiquetas por hoja con espacio para \"Para\" y \"De\", en una versión a color y otra en blanco y negro para que los niños las coloreen. Imprímela en tamaño carta, en cartulina o en papel adhesivo, y recórtalas por la línea punteada.",
-          "Para muchos regalos, botellas o empaques de negocio, las de vinil impreso duran más, resisten el agua y llevan tu propio diseño, nombre o logo.",
+          "Descarga nuestra hoja gratis en PDF: trae 12 etiquetas por hoja con espacio para “Para” y “De”, en una versión a color y otra en blanco y negro para que los niños las coloreen. Imprímela en tamaño carta, en cartulina o en papel adhesivo y recórtala por la línea punteada.",
+          "Para muchos regalos, botellas o empaques, las de vinil impreso resisten el agua y llevan tu propio diseño, nombre o logo. Puedes ver trabajos reales en la [galería de trabajos](/galeria).",
         ],
       },
       {
-        heading: "Forma, acabado y precio",
+        heading: "Forma, acabado y precio de las etiquetas en vinil",
         body: [
-          "El corte sigue la forma de tu diseño: redondas, en forma de esfera o de estrella, o cuadradas. Eliges troquelado (cada etiqueta suelta) o semitroquelado (varias en una hoja, fáciles de despegar). El acabado puede ser mate, brillante u holográfico; el holográfico se ve muy navideño y cuesta $0.50 más por pieza.",
+          "El corte sigue la forma de tu diseño: redondas, de esfera, de estrella o cuadradas. Eliges troquelado, cada etiqueta suelta, o semitroquelado, varias en una hoja y fáciles de despegar. El acabado puede ser mate, brillante u holográfico, y el holográfico tiene un costo extra por pieza.",
+          `Primeras 100 piezas: $${priceOf("stickers-vinil-impermeable", 100)} en los stickers de vinil personalizados, con mínimo de 40 piezas, y $${priceOf("stickers-logo-personalizado", 100)} en las etiquetas con tu logo, con mínimo de 50 piezas. Arriba de 100 piezas es precio mayoreo en cada pieza extra.`,
         ],
         table: {
           headers: ["Producto", "Mínimo", "Primeras 100 piezas", "Más de 100"],
           rows: [
-            ["Stickers de vinil personalizados (cualquier diseño, nombre o foto)", "40 piezas", "$350", "$3.15 por pieza extra"],
-            ["Stickers y etiquetas con tu logo (negocios)", "50 piezas", "$300", "$2.70 por pieza extra"],
+            ["Stickers de vinil personalizados (cualquier diseño, nombre o foto)", "40 piezas", `$${priceOf("stickers-vinil-impermeable", 100)}`, "Precio mayoreo en cada pieza extra"],
+            ["Stickers y etiquetas con tu logo (negocios)", "50 piezas", `$${priceOf("stickers-logo-personalizado", 100)}`, "Precio mayoreo en cada pieza extra"],
           ],
         },
       },
@@ -3070,12 +3082,38 @@ export const blogPosts: BlogPost[] = [
         heading: "Hasta cuándo pedirlas para que lleguen antes de Navidad",
         body: [
           `La prueba digital llega normalmente en un máximo de 24 horas después del pago. Desde que la apruebas, el pedido tarda ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles en llegar a tu domicilio en cualquier parte de México, o ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles si lo recoges en una sucursal Casa Blanca en Guadalajara.`,
-          "Por eso conviene pedirlas en noviembre o, a más tardar, la primera semana de diciembre: así hay margen para ajustar el diseño y para la paquetería, que en diciembre va más cargada. Si también vas a regalar dulceros, puedes pedir todo junto; el envío es gratis en compras de $750 o más.",
+          "Con esos tiempos, cuenta hacia atrás desde la fecha en que necesitas las etiquetas y suma los días de la prueba digital. Si también vas a regalar dulceros, puedes pedir todo junto. Para entender cada etapa, revisa [cuánto tarda un pedido](/blog/cuanto-tarda-un-pedido-de-stickers-personalizados).",
         ],
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
     relatedBlogSlugs: ["dulceros-navidenos-personalizados", "stickers-para-empaques-de-negocio", "cuanto-tarda-un-pedido-de-stickers-personalizados"],
+    faq: [
+      {
+        q: "¿Cuánto cuestan las etiquetas navideñas personalizadas?",
+        a: `Primeras 100 piezas: $${priceOf("stickers-vinil-impermeable", 100)} en stickers de vinil personalizados (mínimo 40 piezas) y $${priceOf("stickers-logo-personalizado", 100)} en etiquetas con tu logo (mínimo 50 piezas). Arriba de 100 piezas es precio mayoreo en cada pieza extra.`,
+      },
+      {
+        q: "¿Hay etiquetas navideñas gratis para imprimir?",
+        a: "Sí. Puedes descargar una hoja en PDF con 12 etiquetas por hoja, con espacio para Para y De, en versión a color y en blanco y negro. Se imprime en tamaño carta.",
+      },
+      {
+        q: "¿Las etiquetas de vinil resisten el agua?",
+        a: "Sí. Los stickers de vinil personalizados son de vinil premium resistente al agua, al sol y a rayones, y las etiquetas con tu logo son resistentes al agua.",
+      },
+      {
+        q: "¿Qué formas y acabados puedo elegir?",
+        a: "El corte puede ser troquelado o semitroquelado, y lo eliges al pedir. El acabado puede ser mate, brillante u holográfico; el holográfico tiene un costo extra por pieza.",
+      },
+      {
+        q: "¿Puedo ver el diseño antes de que se imprima?",
+        a: "Sí. La prueba digital llega normalmente en un máximo de 24 horas después del pago e incluye hasta 2 rondas de ajustes. No imprimimos nada sin tu aprobación.",
+      },
+      {
+        q: "¿Cuánto tardan en llegar las etiquetas?",
+        a: `Desde que apruebas la prueba, el pedido tarda ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles en llegar a tu domicilio en México, o ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles si lo recoges en una sucursal Casa Blanca en Guadalajara.`,
+      },
+    ],
     download: { href: "/descargas/etiquetas-navidenas-para-imprimir.pdf", label: "Descarga gratis: etiquetas navideñas para imprimir (PDF, color y blanco y negro)" },
   },
   {
