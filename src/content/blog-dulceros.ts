@@ -485,42 +485,97 @@ export const dulceroPosts: BlogPost[] = [
   {
     slug: "dulceros-para-eventos-sociales-boda-xv-baby-shower",
     title: "Dulceros para eventos sociales: boda, XV años y baby shower",
-    metaTitle: "Dulceros para boda, XV años y baby shower",
+    metaTitle: "Dulceros para eventos sociales: boda, XV y baby shower",
     description:
-      "Ideas de dulceros personalizados para bodas, XV años, baby showers y otros eventos sociales: diseños según el evento, qué meter dentro, cuántos pedir y cuándo hacer el pedido.",
+      "Ideas de dulceros para eventos sociales: boda, XV años y baby shower. Qué diseño elegir, qué poner dentro, cuántos pedir y cuándo ordenarlos.",
     category: "Guías",
     publishedAt: PUBLISHED,
+    modifiedAt: "2026-10-28",
     intro:
-      "En bodas, XV años y baby showers, los dulceros suelen formar parte de la mesa de dulces o se entregan como recuerdo al final del evento. Personalizados con los nombres y los colores de la fiesta, se ven como parte de la decoración y no como un detalle de último momento. Aquí tienes ideas para cada tipo de evento.",
+      "En bodas, XV años y baby showers, los dulceros suelen formar parte de la mesa de dulces o se entregan como recuerdo al final del evento. Personalizados con los nombres y los colores de la fiesta, se ven como parte de la decoración y no como un detalle de último momento. Aquí tienes ideas para cada tipo de evento, qué poner dentro, cuántos pedir y con cuánto tiempo hacerlo.",
     sections: [
       {
-        heading: "Boda",
+        heading: "Dulceros para eventos sociales: qué son y cuándo usarlos",
         body: [
-          "Para boda funcionan los nombres de los novios con la fecha, en los colores de la boda: blanco con dorado, verde salvia, terracota o el tono de las flores. Pueden ir en la mesa de dulces para que cada invitado llene el suyo, o ya llenos en cada lugar como recuerdo.",
+          "Un dulcero es un contenedor tipo lunch box, con asa, que llega armado y vacío para que tú elijas el relleno. En eventos sociales sirve de recuerdo o de parte de la mesa de dulces. Va personalizado con nombres, fecha y los colores de la fiesta, y antes de producir recibes una prueba digital.",
+          "Lo puedes poner en la mesa para que cada invitado llene el suyo, o entregarlo ya lleno al final del evento. La personalización incluye el nombre y la temática que elijas, así que el mismo formato sirve para una boda elegante, una fiesta de XV años o un baby shower.",
+        ],
+      },
+      {
+        heading: "Boda: dulceros con los nombres de los novios",
+        body: [
+          "Para una boda funciona el dulcero con los nombres de los novios y la fecha, en los colores de la celebración. Puede ir en la mesa de dulces para que cada invitado llene el suyo, o ya lleno en cada lugar como recuerdo. Antes de producir te enviamos una prueba digital para que la apruebes.",
+          "Los colores que más combinan con una boda son blanco con dorado, verde salvia, terracota o el tono de las flores. Si quieres que se vea parte de la decoración, usa la misma paleta de la invitación y de los centros de mesa.",
           "Si en la boda hay niños, un dulcero con una temática más divertida para la mesa infantil es un detalle que los papás agradecen.",
         ],
       },
       {
-        heading: "XV años",
+        heading: "XV años: dulceros con el nombre de la quinceañera",
         body: [
-          "Para XV años, el nombre de la quinceañera con el color o la temática de su fiesta (por ejemplo, un estilo elegante, floral o el tema que eligió) y la fecha. Suelen pedirse para todos los invitados o solo para la corte y los chambelanes.",
+          "Para XV años, el dulcero lleva el nombre de la quinceañera, la fecha y el color o la temática de su fiesta, sea elegante, floral o el tema que elija. Puedes pedirlo para todos los invitados o solo para la corte y los chambelanes, según tu presupuesto.",
+          "Si pides solo para la corte, recuerda que el pedido mínimo es de 10 piezas. Si es para todos los invitados, cuenta primero la lista final y suma uno o dos extra.",
         ],
       },
       {
         heading: "Baby shower y revelación de género",
         body: [
-          "Para baby shower, el nombre del bebé (o Baby + apellido si aún no tiene nombre) en tonos pastel. Para una revelación de género, un diseño neutro con la pregunta niño o niña sirve tanto antes como después de la sorpresa.",
+          "Para baby shower, el dulcero lleva el nombre del bebé, o Baby y el apellido si aún no tiene nombre, en tonos pastel. Para una revelación de género sirve un diseño neutro con la pregunta niño o niña, que funciona antes y después de la sorpresa.",
+          "Es un detalle fácil de repartir al final de la fiesta, y los invitados se llevan un recuerdo con el nombre del bebé.",
         ],
       },
       {
-        heading: "Cuántos pedir, precio y tiempos",
+        heading: "Qué poner dentro de un dulcero para tu evento",
         body: [
-          "Cada dulcero cuesta $75 con mínimo de 10 piezas: 50 invitados son $3,750 y 80 son $6,000, con envío nacional gratis desde $750. La producción toma de 3 a 5 días hábiles después de aprobar la prueba digital, más el envío; para eventos grandes conviene pedirlos con tres o cuatro semanas de anticipación. Te llegan armados, listos para llenar.",
+          "El dulcero llega vacío, así que tú decides el relleno. Funcionan los dulces tradicionales, galletas, chocolates y un detalle pequeño como stickers. Pregunta por alergias antes de comprar y arma uno de prueba para calcular cuánto necesitas de cada cosa.",
+          "Si buscas más ideas por edad y por tipo de evento, revisa la guía de qué poner en un dulcero. Para boda conviene elegir dulces que aguanten bien fuera del refrigerador durante la fiesta.",
+        ],
+      },
+      {
+        heading: "Si organizas eventos: cómo pedir dulceros para tus clientes",
+        body: [
+          "Si organizas eventos, define con tu cliente nombres, fecha, colores y cantidad antes de pedir. Te enviamos una prueba digital para que la apruebe, y nada se produce hasta entonces. Puedes tratar todo directo por WhatsApp. El pedido mínimo es de 10 piezas, así que puedes pedir por evento.",
+          "Lo más útil es tener a la mano los colores de la invitación o de la decoración para pedir el diseño en la misma paleta, y comentárnoslo por WhatsApp. Si tu cliente tiene más de un evento, como bautizo y primera comunión, revisa también la guía de dulceros para bautizo y primera comunión.",
+        ],
+      },
+      {
+        heading: "Cuántos dulceros pedir y cuánto cuestan",
+        body: [
+          `Primeras 100 piezas: $${dulceroUnit} MXN por dulcero, con pedido mínimo de 10 piezas. 50 invitados son $${dulceroTotal(50)} y 80 son $${dulceroTotal(80)}. Arriba de 100 piezas es precio mayoreo: escríbenos por WhatsApp y te cotizamos. Desde $${FREE_SHIPPING_THRESHOLD} el envío nacional es gratis. Suma uno o dos extra por si llega alguien más.`,
+          `Si estás en la zona metropolitana de Guadalajara, puedes recogerlos por $${CASABLANCA_PRICE} en cualquiera de las ${CASABLANCA_BRANCHES.length} sucursales de paquetería Casa Blanca. Para saber más sobre entregas en la ciudad, revisa la guía de dulceros personalizados en Guadalajara.`,
+        ],
+      },
+      {
+        heading: "Cuándo hacer el pedido para que lleguen a tiempo",
+        body: [
+          `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba digital, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional, o ${PICKUP_EXTRA_DAYS} día hábil si recoges en una sucursal Casa Blanca de Guadalajara. Para eventos grandes conviene pedirlos con tres o cuatro semanas de anticipación.`,
+          "Deja ese margen para ajustar el diseño con calma y confirmar la cantidad final de invitados antes de aprobar la prueba.",
         ],
       },
     ],
-    relatedProductSlugs: [DULCERO],
-    relatedBlogSlugs: ["dulceros-para-bautizo-y-primera-comunion", "que-poner-en-un-dulcero", "dulceros-para-eventos-empresariales"],
+    relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["dulceros-para-bautizo-y-primera-comunion", "que-poner-en-un-dulcero", "dulceros-para-eventos-empresariales", "dulceros-personalizados-guadalajara"],
+    faq: [
+      {
+        q: "¿Los dulceros incluyen dulces?",
+        a: "No. El dulcero llega armado y vacío, listo para llenar con los dulces o detalles que tú elijas.",
+      },
+      {
+        q: "¿Cuánto cuesta un dulcero personalizado?",
+        a: `Primeras 100 piezas: $${dulceroUnit} MXN por pieza, con pedido mínimo de 10. Arriba de 100 piezas es precio mayoreo y se cotiza por WhatsApp. Desde $${FREE_SHIPPING_THRESHOLD} el envío nacional es gratis.`,
+      },
+      {
+        q: "¿Qué incluye la personalización?",
+        a: "El nombre (de los novios, de la quinceañera, del bebé o de tu empresa) y la temática que elijas, incluido el logo de tu marca. Te mandamos una prueba digital antes de producir.",
+      },
+      {
+        q: "¿Cuántos dulceros debo pedir para mi evento?",
+        a: "Pide el número de invitados que recibirán uno y suma uno o dos extra. El pedido mínimo es de 10 piezas, así que también puedes pedir solo para la corte, la mesa infantil o un grupo pequeño.",
+      },
+      {
+        q: "¿Cuánto tardan en llegar?",
+        a: `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional, o ${PICKUP_EXTRA_DAYS} día hábil si recoges en una sucursal Casa Blanca de Guadalajara.`,
+      },
+    ],
   },
   {
     slug: "que-poner-en-un-dulcero",
