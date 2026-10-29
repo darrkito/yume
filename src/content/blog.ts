@@ -1608,36 +1608,115 @@ export const blogPosts: BlogPost[] = [
     title: "Cómo conseguir más reseñas de Google con una placa NFC y QR",
     metaTitle: "Cómo conseguir más reseñas de Google con NFC y QR",
     description:
-      "Por qué las reseñas de Google importan para un negocio local y cómo una placa con NFC y código QR facilita que tus clientes dejen la suya en el momento, sin fricción.",
+      "Cómo conseguir más reseñas de Google: pide la reseña en el momento justo y facilita el paso con una placa NFC y QR. Guía práctica y reglas de Google.",
     category: "Guías",
     publishedAt: "2026-09-15",
+    modifiedAt: "2026-10-28",
     intro:
-      "Pedir una reseña de Google casi siempre es incómodo: le dictas a tu cliente el nombre del negocio, él lo busca, filtra entre varios resultados parecidos y a veces se rinde antes de encontrar el correcto. Una placa con NFC y código QR resuelve justo ese paso: lleva directo a la ficha correcta en dos segundos, sin que el cliente tenga que buscar nada.",
+      "Pedir una reseña de Google casi siempre es incómodo: le dictas a tu cliente el nombre del negocio, él lo busca, filtra entre varios resultados parecidos y a veces se rinde antes de encontrar el correcto. Una placa con NFC y código QR resuelve justo ese paso: lleva directo a la ficha correcta en dos segundos, sin que el cliente tenga que buscar nada. Aquí tienes el método completo: cuándo pedir la reseña, qué decir, dónde colocar la placa, qué reglas de Google debes respetar y cómo responder cuando lleguen las opiniones.",
     sections: [
+      {
+        heading: "Cómo conseguir más reseñas de Google: el método en tres pasos",
+        body: [
+          "Para conseguir más reseñas de Google, pídela al terminar la atención, cuando la experiencia sigue fresca, dale un acceso de un solo paso a tu ficha y responde cada reseña que llegue. Una placa con NFC y código QR resuelve el segundo punto: lleva al cliente directo a tu ficha, sin buscar.",
+          "El primer paso es el momento: pide la reseña cuando la experiencia sigue fresca. El segundo es quitar fricción: que el cliente no tenga que escribir el nombre de tu negocio ni elegir entre resultados parecidos. El tercero es la constancia: responder lo que llega y volver a pedir con cada cliente nuevo. Ningún paso por sí solo hace el trabajo, pero juntos convierten una petición incómoda en un hábito sencillo de tu atención diaria.",
+          "Una placa no garantiza una cantidad de reseñas ni una calificación determinada: solo facilita el camino. Que el cliente la deje, y qué escriba, depende de su experiencia contigo.",
+        ],
+      },
       {
         heading: "Por qué el momento importa más que el mensaje",
         body: [
-          "El mejor momento para pedir una reseña es justo cuando el cliente está satisfecho: al pagar, al recoger su pedido, al salir del consultorio. Si en ese momento tiene que sacar el teléfono, buscar tu negocio a mano y encontrarlo entre varios resultados similares, muchos simplemente no lo hacen, no porque no quieran dejarte una reseña, sino porque el proceso les tomó más de lo que estaban dispuestos a invertir en ese momento.",
-          "Una placa NFC/QR quita esa fricción: el cliente toca su teléfono o escanea el código y llega directo a la pantalla de \"dejar una reseña\" de tu ficha de Google, sin escribir nada ni elegir entre resultados parecidos.",
+          "El mejor momento para pedir una reseña es cuando el cliente acaba de recibir tu servicio: al pagar, al recoger su pedido o al salir del consultorio. Si en ese instante tiene que buscar tu negocio a mano, muchos lo dejan para después y ya no lo hacen.",
+          "No es que no quieran dejarte una reseña: el proceso les toma más de lo que estaban dispuestos a invertir en ese momento. Una placa NFC/QR quita esa fricción: el cliente toca su teléfono o escanea el código y llega directo a la pantalla de «dejar una reseña» de tu ficha de Google, sin escribir nada ni elegir entre resultados parecidos.",
+          "Un dato práctico: según la ayuda de Google Business Profile, los clientes deben iniciar sesión en una cuenta de Google para dejar una reseña. Si ves que alguien no puede entrar en ese momento, no insistas: invítalo a hacerlo después con calma, desde su casa.",
         ],
       },
       {
         heading: "NFC y QR juntos, no uno u otro",
         body: [
-          "El NFC (la tecnología de \"toca para pagar\" que ya usan las tarjetas bancarias) funciona con casi cualquier teléfono moderno, Android o iPhone, sin abrir ninguna app: el cliente solo acerca su teléfono a la placa. El código QR es el respaldo para el resto de los casos: teléfonos donde el NFC está desactivado, o clientes que prefieren usar la cámara directamente.",
-          "Tenerlos juntos en la misma placa cubre prácticamente cualquier teléfono sin depender de que el cliente sepa qué es NFC.",
+          "El NFC funciona al acercar el teléfono a la placa, sin abrir ninguna app, siempre que el teléfono tenga NFC y lo tenga activado. El código QR es el respaldo: sirve con la cámara cuando el NFC no está disponible. Tener los dos en una misma placa cubre a más clientes.",
+          "El NFC es la misma tecnología de «toca para pagar» que ya usan las tarjetas bancarias, así que muchos clientes lo reconocen sin explicación. El QR cubre los demás casos: teléfonos con el NFC apagado, o personas que prefieren apuntar la cámara. Google mismo menciona el enlace y el código QR como formas de pedir reseñas.",
+          "Si quieres ver la comparación a detalle, revisa la guía de placa NFC contra código QR impreso, donde explicamos qué aporta cada opción.",
         ],
       },
       {
-        heading: "Dónde colocarla para que realmente se use",
+        heading: "Dónde colocar la placa para que realmente se use",
         body: [
-          "Los lugares donde mejor funciona: junto a la caja registradora, en el mostrador de recepción, en la mesa al momento de la cuenta, o en el escritorio de un consultorio al finalizar la consulta: cualquier punto donde el cliente ya está frente a ti en el momento en que decide si quedó satisfecho.",
-          "La versión sin base se pega directo en esos puntos (mostrador, caja, pared); la versión con stand se coloca de pie sobre un escritorio o mesa sin necesidad de pegarla, útil si cambias de lugar seguido o no quieres dejar adhesivo permanente.",
+          "Colócala donde el cliente ya está frente a ti cuando decide si quedó satisfecho: junto a la caja, en el mostrador de recepción, en la mesa al llegar la cuenta o en el escritorio del consultorio. Debe quedar a la vista, a la altura de la mano y sin estorbar el pago.",
+          "Piensa en el recorrido de tu cliente: ¿en qué punto ya recibió lo que vino a buscar y todavía no se ha ido? Ahí va la placa. Si la dejas en un rincón, o en un lugar que solo ve al salir con prisa, casi nadie la tocará.",
+          "La versión sin base se pega directo en esos puntos (mostrador, caja, pared). La versión con stand se coloca de pie sobre un escritorio o mesa sin necesidad de pegarla, útil si cambias de lugar seguido o no quieres dejar adhesivo permanente.",
+        ],
+      },
+      {
+        heading: "Qué decir al pedir la reseña",
+        body: [
+          "Pide la reseña con una frase corta y en persona, al terminar la atención: «Si quieres contarnos cómo te fue, nos ayudas mucho con una reseña honesta; solo toca tu teléfono aquí». Pide una opinión honesta, sin sugerir calificación ni ofrecer algo a cambio.",
+          "La placa no sustituye tu voz: la persona que ve el letrero sin que nadie se lo mencione puede pasar de largo. Una frase amable, dicha con naturalidad, es lo que convierte una placa en una invitación. No necesitas un guion largo ni insistir; basta con mencionarlo una vez y señalar dónde está la placa.",
+          "Adapta el tono a tu negocio. En un consultorio puede sonar más sereno y en una cafetería más cercano, pero en ambos casos conviene que la petición sea breve, sincera y que el cliente sienta que puede decir que no sin presión.",
+        ],
+      },
+      {
+        heading: "Qué no hacer: las reglas de Google sobre pedir reseñas",
+        body: [
+          "No ofrezcas descuentos ni productos gratis a cambio de una reseña: según la ayuda de Google Business Profile, ofrecer algo así está estrictamente prohibido y cuenta como interacción falsa. Pide a todos tus clientes reales, no solo a quienes crees que estarán contentos, y acepta lo que escriban.",
+          "Si alguien tuvo un mal momento, lo más sano es escuchar, responder con respeto y resolver el problema, no comprar su silencio.",
+          "Una reseña honesta, aunque no sea perfecta, le da más confianza a quien te está conociendo que una lista de elogios idénticos. Pide con naturalidad y deja que cada cliente diga lo que piensa.",
+        ],
+      },
+      {
+        heading: "Cómo responder las reseñas que lleguen",
+        body: [
+          "Responde las reseñas que lleguen, las buenas y las malas. Google recomienda responderlas para mostrar que la opinión del cliente importa, con un tono amable y profesional y respuestas breves. Si la reseña es negativa, discúlpate cuando haga falta, responde pronto y no compartas datos privados de quien la escribió.",
+          "Una respuesta corta y con nombre propio basta: agradece, menciona algo concreto de lo que el cliente contó y, si hubo un problema, di qué harás al respecto. Firmar con tu nombre o tus iniciales hace la respuesta más humana.",
+          "Evita discutir o atacar a la persona: tu respuesta también la leerán otros clientes.",
+        ],
+      },
+      {
+        heading: "Placa o stand: cuál te conviene",
+        body: [
+          "Elige la placa si tienes un punto fijo donde pegarla, como el mostrador, la caja o una pared. Elige el stand si prefieres colocarla de pie sobre un escritorio o una mesa, sin adhesivo permanente, o si cambias de lugar con frecuencia.",
+          "Piensa en tu espacio: un consultorio con escritorio y una recepción con mostrador piden cosas distintas. Si dudas, escríbenos por WhatsApp, cuéntanos cómo es tu local y te ayudamos a elegir. Para ver cómo se usa paso a paso, revisa la guía de cómo usar la placa de reseñas de Google.",
         ],
       },
     ],
-    relatedProductSlugs: ["stand-resena-google-nfc", "placa-resena-google-nfc"],
+    relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
     relatedBlogSlugs: ["placa-nfc-vs-codigo-qr-impreso-resenas", "como-usar-placa-resenas-google-yume"],
+    faq: [
+      {
+        q: "¿Una placa NFC y QR garantiza más reseñas?",
+        a: "No. La placa solo quita fricción: lleva al cliente directo a tu ficha. Que deje la reseña, y qué escriba, depende de su experiencia contigo y de que se lo pidas en el momento adecuado.",
+      },
+      {
+        q: "¿Mis clientes necesitan cuenta de Google para dejar una reseña?",
+        a: "Sí. Según la ayuda de Google Business Profile, los clientes deben iniciar sesión en una cuenta de Google para dejar una reseña.",
+      },
+      {
+        q: "¿Puedo dar un descuento a cambio de una reseña?",
+        a: "No. Google indica que ofrecer productos o servicios gratis o con descuento a cambio de reseñas está estrictamente prohibido y se considera interacción falsa.",
+      },
+      {
+        q: "¿Por qué la placa lleva NFC y QR?",
+        a: "El NFC permite tocar con el teléfono sin abrir ninguna app, siempre que el teléfono tenga NFC activado. El QR es el respaldo para quien prefiere usar la cámara o no tiene NFC disponible.",
+      },
+      {
+        q: "¿Debo responder las reseñas?",
+        a: "Sí. Google recomienda responderlas para mostrar que la opinión del cliente importa: con tono amable y profesional, respuestas breves y, en las negativas, disculpas si hacen falta, sin compartir información privada del cliente.",
+      },
+      {
+        q: "¿Qué es mejor, la placa o el stand?",
+        a: "La placa se pega en un punto fijo, como mostrador, caja o pared. El stand se coloca de pie sobre un escritorio o mesa sin adhesivo, útil si cambias de lugar con frecuencia.",
+      },
+      {
+        q: "¿Cómo pido reseñas con un enlace o código QR?",
+        a: "Google menciona en su ayuda que puedes pedir reseñas compartiendo un enlace de Google o un código QR de tu ficha. La placa NFC y QR de Yume reúne ambos accesos en una sola pieza.",
+      },
+    ],
+    sources: [
+      {
+        label: "Ayuda de Google Business Profile: Leer y responder reseñas, y pedir reseñas a clientes",
+        url: "https://support.google.com/business/answer/3474122?hl=es",
+      },
+    ],
   },
   {
     slug: "placa-nfc-vs-codigo-qr-impreso-resenas",
