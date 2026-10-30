@@ -698,15 +698,15 @@ export const dulceroPosts: BlogPost[] = [
   },
   {
     slug: "dulceros-para-eventos-sociales-boda-xv-baby-shower",
-    title: "Dulceros para eventos sociales: boda, XV años y baby shower",
-    metaTitle: "Dulceros para eventos sociales: boda, XV y baby shower",
+    title: "Recuerdos para XV años personalizados: dulceros y detalles",
+    metaTitle: "Recuerdos para XV años personalizados: dulceros y detalles",
     description:
-      "Ideas de dulceros para eventos sociales: boda, XV años y baby shower. Qué diseño elegir, qué poner dentro, cuántos pedir y cuándo ordenarlos.",
+      "Recuerdos para XV años personalizados: cuántos pedir, cómo combinar el dulcero con la mesa de dulces, tiempos y prueba digital.",
     category: "Guías",
     publishedAt: PUBLISHED,
-    modifiedAt: "2026-10-28",
+    modifiedAt: "2026-11-23",
     intro:
-      "En bodas, XV años y baby showers, los dulceros suelen formar parte de la mesa de dulces o se entregan como recuerdo al final del evento. Personalizados con los nombres y los colores de la fiesta, se ven como parte de la decoración y no como un detalle de último momento. Aquí tienes ideas para cada tipo de evento, qué poner dentro, cuántos pedir y con cuánto tiempo hacerlo.",
+      "Los recuerdos para XV años personalizados se ven mejor cuando son pocos, tienen diseño cuidado y combinan con la fiesta. En bodas, XV años y baby showers, el dulcero puede ser parte de la mesa de dulces o el recuerdo que cada familia se lleva al final. Aquí tienes ideas por evento, cuántos recuerdos pedir, qué poner dentro y con cuánto tiempo hacerlo.",
     sections: [
       {
         heading: "Dulceros para eventos sociales: qué son y cuándo usarlos",
@@ -731,6 +731,34 @@ export const dulceroPosts: BlogPost[] = [
         ],
       },
       {
+        heading: "Recuerdos para XV años personalizados: qué opciones hay",
+        body: [
+          "Para recuerdos de XV años personalizados, las ideas que propone El Imparcial son imanes con foto, llaveros, mini marcos, velas, bolsitas de dulces, abanicos y pulseras. El dulcero con el nombre de la quinceañera aporta algo distinto: es un recuerdo con diseño propio, que además puede formar parte de la mesa de dulces.",
+          `Yume produce el [dulcero personalizado](/productos/${DULCERO}) con nombre, fecha y temática de tu fiesta. Los otros detalles de esa lista, como imanes o llaveros, los resuelves con otro proveedor. Si quieres sumar un detalle pequeño dentro del dulcero, puedes pedir [stickers personalizados de vinil](/productos/stickers-vinil-impermeable) con el mismo diseño.`,
+        ],
+      },
+      {
+        heading: "Cuántos recuerdos pedir para tus invitados de XV años",
+        body: [
+          "No hace falta un recuerdo por persona: El Imparcial recomienda uno por familia o pareja, más algunos extras. Su ejemplo es de 100 invitados, para los que bastan entre 60 y 70 recuerdos. Es una referencia de un solo artículo, así que cuenta tu lista final por familias y parejas antes de decidir.",
+          `Como ejemplo, 65 dulceros son $${dulceroTotal(65)} MXN con el precio de las primeras 100 piezas. El pedido mínimo es de 10 piezas, así que también puedes pedir un lote aparte para la corte, los chambelanes o la familia cercana.`,
+        ],
+      },
+      {
+        heading: "Menos piezas, mejor diseño: qué personalizar",
+        body: [
+          "El Imparcial aconseja pocas piezas bonitas y útiles antes que muchos detalles que nadie usará, y que el recuerdo represente a la quinceañera. En un dulcero eso se traduce en personalizar su nombre, la fecha y el color o temática de la fiesta, que es lo que incluye nuestra personalización.",
+          "Ese mismo artículo sugiere pedir una muestra antes cuando el recuerdo lleva foto. En Yume, antes de producir recibes una prueba digital y nada se produce hasta que la apruebas.",
+        ],
+      },
+      {
+        heading: "Cómo combinar el dulcero con la mesa de dulces y el tema de la fiesta",
+        body: [
+          "Usa en el dulcero la misma paleta de la invitación y de la decoración, y colócalo en la mesa de dulces para que cada invitado llene el suyo o entrégalo ya lleno al final. Así el recuerdo se ve como parte de la fiesta planeada, no como un detalle aparte.",
+          "Mándanos una foto de la invitación o de la decoración y adaptamos el diseño a esos colores. Para elegir el relleno según el tipo de evento, revisa qué poner en un dulcero.".replace("revisa qué poner en un dulcero", "revisa [qué poner en un dulcero](/blog/que-poner-en-un-dulcero)"),
+        ],
+      },
+      {
         heading: "Baby shower y revelación de género",
         body: [
           "Para baby shower, el dulcero lleva el nombre del bebé, o Baby y el apellido si aún no tiene nombre, en tonos pastel. Para una revelación de género sirve un diseño neutro con la pregunta niño o niña, que funciona antes y después de la sorpresa.",
@@ -741,28 +769,28 @@ export const dulceroPosts: BlogPost[] = [
         heading: "Qué poner dentro de un dulcero para tu evento",
         body: [
           "El dulcero llega vacío, así que tú decides el relleno. Funcionan los dulces tradicionales, galletas, chocolates y un detalle pequeño como stickers. Pregunta por alergias antes de comprar y arma uno de prueba para calcular cuánto necesitas de cada cosa.",
-          "Si buscas más ideas por edad y por tipo de evento, revisa la guía de qué poner en un dulcero. Para boda conviene elegir dulces que aguanten bien fuera del refrigerador durante la fiesta.",
+          "Si buscas más ideas por edad y por tipo de evento, revisa la guía de [qué poner en un dulcero](/blog/que-poner-en-un-dulcero). Para boda conviene elegir dulces que aguanten bien fuera del refrigerador durante la fiesta.",
         ],
       },
       {
         heading: "Si organizas eventos: cómo pedir dulceros para tus clientes",
         body: [
           "Si organizas eventos, define con tu cliente nombres, fecha, colores y cantidad antes de pedir. Te enviamos una prueba digital para que la apruebe, y nada se produce hasta entonces. Puedes tratar todo directo por WhatsApp. El pedido mínimo es de 10 piezas, así que puedes pedir por evento.",
-          "Lo más útil es tener a la mano los colores de la invitación o de la decoración para pedir el diseño en la misma paleta, y comentárnoslo por WhatsApp. Si tu cliente tiene más de un evento, como bautizo y primera comunión, revisa también la guía de dulceros para bautizo y primera comunión.",
+          "Lo más útil es tener a la mano los colores de la invitación o de la decoración para pedir el diseño en la misma paleta, y comentárnoslo por WhatsApp. Si tu cliente tiene más de un evento, como bautizo y primera comunión, revisa también los [dulceros para bautizo y primera comunión](/blog/dulceros-para-bautizo-y-primera-comunion).",
         ],
       },
       {
         heading: "Cuántos dulceros pedir y cuánto cuestan",
         body: [
           `Primeras 100 piezas: $${dulceroUnit} MXN por dulcero, con pedido mínimo de 10 piezas. 50 invitados son $${dulceroTotal(50)} y 80 son $${dulceroTotal(80)}. Arriba de 100 piezas es precio mayoreo: escríbenos por WhatsApp y te cotizamos. Desde $${FREE_SHIPPING_THRESHOLD} el envío nacional es gratis. Suma uno o dos extra por si llega alguien más.`,
-          `Si estás en la zona metropolitana de Guadalajara, puedes recogerlos por $${CASABLANCA_PRICE} en cualquiera de las ${CASABLANCA_BRANCHES.length} sucursales de paquetería Casa Blanca. Para saber más sobre entregas en la ciudad, revisa la guía de dulceros personalizados en Guadalajara.`,
+          `Si estás en la zona metropolitana de Guadalajara, puedes recogerlos por $${CASABLANCA_PRICE} en cualquiera de las ${CASABLANCA_BRANCHES.length} sucursales de paquetería Casa Blanca. Para saber más sobre entregas en la ciudad, revisa los [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara).`,
         ],
       },
       {
         heading: "Cuándo hacer el pedido para que lleguen a tiempo",
         body: [
-          `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba digital, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional, o ${PICKUP_EXTRA_DAYS} día hábil si recoges en una sucursal Casa Blanca de Guadalajara. Para eventos grandes conviene pedirlos con tres o cuatro semanas de anticipación.`,
-          "Deja ese margen para ajustar el diseño con calma y confirmar la cantidad final de invitados antes de aprobar la prueba.",
+          `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba digital, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional. Para XV años, el orden es: diseño, prueba digital, aprobación, producción y entrega antes del evento. El Imparcial recomienda encargar con varias semanas de anticipación.`,
+          `Si recoges en una sucursal Casa Blanca de Guadalajara, se suma ${PICKUP_EXTRA_DAYS} día hábil. Para eventos grandes conviene pedirlos con tres o cuatro semanas de anticipación. Deja ese margen para ajustar el diseño con calma y confirmar la cantidad final de invitados antes de aprobar la prueba.`,
         ],
       },
     ],
@@ -788,6 +816,24 @@ export const dulceroPosts: BlogPost[] = [
       {
         q: "¿Cuánto tardan en llegar?",
         a: `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional, o ${PICKUP_EXTRA_DAYS} día hábil si recoges en una sucursal Casa Blanca de Guadalajara.`,
+      },
+      {
+        q: "¿Cuántos recuerdos necesito para 100 invitados de XV años?",
+        a: "No hace falta uno por persona. El Imparcial recomienda uno por familia o pareja más algunos extras y da el ejemplo de 60 a 70 recuerdos para 100 invitados. Es una referencia de un solo artículo: cuenta tus familias y parejas antes de decidir.",
+      },
+      {
+        q: "¿Con cuánta anticipación pido los recuerdos de XV años?",
+        a: `El Imparcial recomienda encargar con varias semanas de anticipación. En Yume, la producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba digital, más el envío o la recolección. Para eventos grandes conviene pedir con tres o cuatro semanas.`,
+      },
+      {
+        q: "¿Qué puedo personalizar en un dulcero para XV años?",
+        a: "El nombre de la quinceañera, la fecha y el color o la temática de la fiesta. Antes de producir recibes una prueba digital y nada se produce hasta que la apruebas.",
+      },
+    ],
+    sources: [
+      {
+        label: "El Imparcial: Recuerdos para 15 años, ideas originales con fotos",
+        url: "https://www.elimparcial.com/locurioso/2026/05/14/recuerdos-para-15-anos-ideas-originales-con-fotos-que-las-quinceaneras-guardaran-para-siempre/",
       },
     ],
   },
