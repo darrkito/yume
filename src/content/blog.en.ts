@@ -2938,38 +2938,51 @@ export const blogPostsEn: BlogPost[] = [
     slug: "personalized-company-posada-favors",
     title: "Company posada favors: ideas for clients and your team",
     description:
-      "Ideas for company posada favors for clients and your team: what to choose per guest, how to count back from the date and what to ask your accountant.",
+      "Company posada favors: ideas for clients and your team, budget per person, when to order and what to ask your accountant.",
     category: "Guías",
     publishedAt: "2026-11-04",
+    modifiedAt: "2026-10-30",
     intro:
-      "Company posadas are coming, and with them the question of what to give your team and your clients. Company posada favors designed for that event are a simple option. Here are ideas by type of guest, a calendar to count back from the date and what to check with your accountant.",
+      "Company posadas are coming, and with them the question of what to give your team and your clients. Company posada favors designed for that event are a simple option and feel thought out. Here are ideas by type of guest, a budget reference per person, a calendar to count back from the date and what to check with your accountant.",
     sections: [
       {
         heading: "Which company posada favors you can choose",
         body: [
-          "For a company posada, choose the favor by who receives it: your team, your clients or both. A personalized candy box with a name and logo, or stickers with the posada design, are a simple option. What matters is that the design feels made for that event.",
+          "For a company posada, choose the favor by who receives it: your team, your clients or both. A personalized candy box with a name and logo, or stickers with the posada design, are a simple option. What matters is that the design feels made for that event, not a generic gift.",
+          "Many year-end gift guides focus on grocery baskets, kits, tumblers or gift cards. An event favor goes another way: it carries the person's name or your posada design, so it feels like part of the celebration and not a generic present.",
           "Our [personalized candy box](/en/products) is a lunch box style with a handle, arrives assembled and empty, and its personalization includes a name, a theme and your brand logo. For filling ideas, see [what to put in a party favor box](/en/blog/what-to-put-in-a-party-favor-box); for the season, see [personalized Christmas treat boxes](/en/blog/personalized-christmas-treat-boxes).",
           "If you prefer something that is not edible, [personalized vinyl stickers](/en/products) carry the design you send us, such as the posada name or the event illustration. Before production we send you a digital proof, and nothing is produced until you approve it.",
+        ],
+      },
+      {
+        heading: "Budget per person: team and client company posada favors",
+        body: [
+          "As a reference, the Pluxee guide, a gift card provider, suggests per person: $300 to $700 MXN for operational or large-group staff, $700 to $1,500 for middle managers and over $1,500 for executives or key clients. It is a commercial guide, not a rule, and it helps you split your list.",
+          "With that reference, the list sorts itself out. For the whole team, think of a uniform favor with each person's name or the team name, such as a personalized candy box. For key clients, a piece with more design and your logo fits there.",
+          "The price of our pieces depends on the product and the quantity, and it appears on each page: see the [personalized candy box](/en/products) or [stickers with your logo](/en/products) for the current price. If your list mixes team and clients, message us on WhatsApp and we help you quote both groups.",
         ],
       },
       {
         heading: "Favors for your team: an extra, not a replacement for the aguinaldo",
         body: [
           "The posada favor for your team is an extra and does not replace the aguinaldo. Article 87 of Mexico's Federal Labor Law sets the aguinaldo at no less than 15 days of salary, paid before December 20. Think of the favor as an extra with a name or team design.",
-          "For an office posada, a candy box with each person's name, or with the team name and your logo, is a simple favor. Before giving any gift to your team, check with your accountant how it is classified: as a benefit, income in kind or another concept. The way it is delivered and its commercial name do not determine it.",
+          "For an office posada, a candy box with each person's name, or with the team name and your logo, is a simple favor. If your team works in several locations, we ship across Mexico, so it helps to define the list of people before quoting.",
+          "Before giving any gift to your team, check with your accountant how it is classified: as a benefit, income in kind or another concept. The way it is delivered and its commercial name do not determine it.",
         ],
       },
       {
         heading: "Favors for clients: what to consider before gifting",
         body: [
-          "For clients, choose a favor tied to your brand and the event, not an individual gift. Article 28, section III of the LISR (Mexico's income tax law) restricts gifts to clients, with exceptions for expenses tied to selling products or services offered to everyone. Check with your accountant before deciding.",
-          "A candy box with your logo and the posada name, or stickers with your logo, are brand favors your clients take home from the event. This does not promise they are deductible: individual gifts are usually subject to restrictions under the income tax law (LISR), and your accountant validates each case.",
+          "For clients, choose a favor tied to your brand and the event, not an individual gift. According to Pluxee and ContadorMX, gifts to clients in general are not deductible, except those tied to selling products or made for advertising. Check with your accountant before deciding.",
+          "A candy box with your logo and the posada name, or [stickers with your logo](/en/products), are brand favors your clients take home from the event. This does not promise they are deductible: individual gifts usually face tax restrictions, and your accountant validates each case.",
+          "ContadorMX also recommends keeping a delivery record signed or stamped by the person who receives the gift. Ask your accountant whether it suits your case.",
         ],
       },
       {
         heading: "Count back from the date: when to order your posada favors",
         body: [
           "To get your favors on time, count back from the date of your posada: first delivery, then production, then approval of the digital proof, and at the start the design. That shows you when to write to us, instead of everything piling up in December.",
+          "Pluxee recommends planning gifts several weeks before delivery, especially with personalization, volume or shipments to several locations. That is why it helps to write to us once you have the date and a rough guest list, and not the week of the posada.",
           "Production starts when you approve the digital proof, so that approval is the date that matters most. The estimated delivery date appears on the product page and in the cart.",
           "We ship across Mexico and, if you are in the Guadalajara metro area, you can pick up at a Casa Blanca branch. For options from Jalisco, see [personalized party favor boxes in Guadalajara](/en/blog/personalized-party-favor-boxes-guadalajara). Message us on WhatsApp with your posada date and we count back with you.",
         ],
@@ -2978,7 +2991,8 @@ export const blogPostsEn: BlogPost[] = [
         heading: "Invoice and accountant: what to check before quoting",
         body: [
           "Before quoting, check with your accountant whether you need an invoice, because a valid CFDI alone does not guarantee the deduction. You also have to prove the transaction, that the expense is strictly necessary and that payment uses an authorized method. Your accountant decides what applies in your case.",
-          "Tell us on WhatsApp how many guests there are and the posada date, and we will quote your favors.",
+          "As a reference, Pluxee lists these proof points: payments over $2,000 MXN by bank transfer, nominative check or card, a CFDI, accounting records and a list of recipients as good practice. It is a provider's guide, not tax advice.",
+          "Tell us on WhatsApp how many guests there are, splitting team and clients, and the posada date, and we will quote your favors.",
         ],
       },
     ],
@@ -2991,7 +3005,15 @@ export const blogPostsEn: BlogPost[] = [
       },
       {
         q: "Are company posada favors deductible?",
-        a: "There is no general, automatic deduction for posadas or Christmas dinners. It depends on the purpose, the recipients and the documentation, and gifts to clients have restrictions in article 28 of the LISR. Check with your accountant.",
+        a: "There is no general, automatic deduction for posadas or Christmas dinners. It depends on the purpose, the recipients and the documentation. Pluxee and ContadorMX indicate that gifts to clients in general are not deductible. Check with your accountant.",
+      },
+      {
+        q: "How much should I budget per person for a company posada?",
+        a: "As a Pluxee reference: $300 to $700 MXN for operational or large-group staff, $700 to $1,500 for middle managers and over $1,500 for executives or key clients. It is a provider's commercial guide, not a rule.",
+      },
+      {
+        q: "When should I order my posada favors?",
+        a: "Pluxee recommends planning several weeks ahead, especially with personalization, volume or several locations. Count back from the posada date: delivery, production, digital proof approval and design. The estimated delivery date appears on the product page and in the cart.",
       },
       {
         q: "Do the candy boxes come with candy?",
@@ -3002,13 +3024,19 @@ export const blogPostsEn: BlogPost[] = [
         a: "The name (of the person, the team or your company) and the theme you choose, including your brand logo. We send you a digital proof before production.",
       },
       {
-        q: "When should I order my posada favors?",
-        a: "Count back from the posada date: delivery, production, digital proof approval and design. The estimated delivery date appears on the product page and in the cart.",
+        q: "Which receipts should I keep for the posada favors?",
+        a: "According to Pluxee: a CFDI, accounting records, payment by an authorized method (bank transfer, nominative check or card for payments over $2,000 MXN) and a list of recipients as good practice. Your accountant confirms what applies in your case.",
+      },
+      {
+        q: "Do you ship the favors across Mexico?",
+        a: "Yes, we ship across Mexico. If you are in the Guadalajara metro area, you can pick up at a Casa Blanca branch.",
       },
     ],
     sources: [
       { label: "El Contribuyente: deadline to pay the aguinaldo to workers", url: "https://www.elcontribuyente.mx/2022/12/cual-es-la-fecha-limite-para-entregar-el-aguinaldo-a-los-trabajadores/" },
       { label: "Siempre al Día: deductibility of year-end expenses", url: "https://siemprealdia.co/mexico/fiscal/deducibilidad-de-gastos-de-fin-de-ano/" },
+      { label: "Pluxee: ideal corporate gift guide", url: "https://www.pluxee.mx/blog/guia-regalo-corporativo-ideal/" },
+      { label: "ContadorMX: how to make gifts to employees or clients deductible", url: "https://contadormx.com/como-hacer-deducibles-regalos-a-empleados-o-clientes/" },
     ],
   },
   {

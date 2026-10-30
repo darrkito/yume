@@ -3469,38 +3469,51 @@ export const blogPosts: BlogPost[] = [
     slug: "detalles-posada-empresa-personalizados",
     title: "Detalles para posada de empresa: clientes y equipo",
     description:
-      "Ideas de detalles para posada de empresa para clientes y equipo: qué elegir por invitado, cómo contar las fechas y qué consultar al contador.",
+      "Detalles para posada de empresa: ideas para clientes y equipo, presupuesto por persona, cuándo pedirlos y qué consultar al contador.",
     category: "Guías",
     publishedAt: "2026-11-04",
+    modifiedAt: "2026-10-30",
     intro:
-      "Las posadas de empresa se acercan y con ellas la pregunta de qué entregar a tu equipo y a tus clientes. Los detalles para posada de empresa con diseño hecho para ese evento son una opción sencilla. Aquí tienes ideas por tipo de invitado, un calendario para contar hacia atrás y lo que conviene consultar con tu contador.",
+      "Las posadas de empresa se acercan y con ellas la pregunta de qué entregar a tu equipo y a tus clientes. Los detalles para posada de empresa con diseño hecho para ese evento son una opción sencilla y se sienten pensados. Aquí tienes ideas por tipo de invitado, una referencia de presupuesto por persona, un calendario para contar hacia atrás y lo que conviene consultar con tu contador.",
     sections: [
       {
         heading: "Qué detalles para posada de empresa puedes elegir",
         body: [
-          "Para una posada de empresa conviene elegir el detalle según quién lo recibe: el equipo, los clientes o ambos. Un dulcero con nombre y logo, o stickers con el diseño de la posada, son una opción sencilla. Lo importante es que el diseño se sienta hecho para ese evento.",
+          "Para una posada de empresa conviene elegir el detalle según quién lo recibe: el equipo, los clientes o ambos. Un dulcero con nombre y logo, o stickers con el diseño de la posada, son una opción sencilla. Lo importante es que el diseño se sienta hecho para ese evento y no un regalo genérico.",
+          "Muchas guías de regalos de fin de año se enfocan en despensas, kits, termos o tarjetas de regalo. Un detalle de evento va por otro lado: lleva el nombre de la persona o el diseño de tu posada, y por eso se siente parte de la celebración y no un obsequio genérico.",
           "Nuestro [dulcero personalizado](/productos/dulceros-personalizados) es tipo lunch box, con asa, llega armado y vacío, y su personalización incluye nombre, temática y logo de tu marca. Si buscas ideas de relleno, revisa [qué poner en un dulcero](/blog/que-poner-en-un-dulcero); para la temporada, mira los [dulceros navideños personalizados](/blog/dulceros-navidenos-personalizados).",
           "Si prefieres algo que no sea comestible, los [stickers de vinil personalizados](/productos/stickers-vinil-impermeable) llevan el diseño que tú nos mandes, como el nombre de la posada o la ilustración del evento. Antes de producir te enviamos una prueba digital, y nada se produce hasta que la apruebas.",
+        ],
+      },
+      {
+        heading: "Cuánto presupuestar por persona: equipo y clientes",
+        body: [
+          "Como referencia, la guía de Pluxee, proveedor de tarjetas de regalo, sugiere por persona: de $300 a $700 MXN para equipo operativo o masivo, de $700 a $1,500 para mandos medios y más de $1,500 para ejecutivos o clientes clave. Es una guía comercial, no una norma, y sirve para dividir tu lista.",
+          "Con esa referencia, la lista se ordena fácil. Para todo el equipo, piensa en un detalle uniforme con el nombre de cada persona o del equipo, como un dulcero personalizado. Para clientes clave, conviene una pieza con más diseño y tu logo.",
+          "El precio de nuestras piezas depende del producto y de la cantidad, y aparece en cada página: revisa el [dulcero personalizado](/productos/dulceros-personalizados) o los [stickers con tu logo](/productos/stickers-logo-personalizado) para ver el precio vigente. Si tu lista combina equipo y clientes, escríbenos por WhatsApp y te ayudamos a cotizar ambos grupos.",
         ],
       },
       {
         heading: "Detalles para tu equipo: un extra que no sustituye el aguinaldo",
         body: [
           "El detalle de posada para tu equipo es un extra y no reemplaza el aguinaldo. La Ley Federal del Trabajo, en su artículo 87, fija el aguinaldo en al menos 15 días de salario, pagado antes del 20 de diciembre. Piensa el detalle como un extra con nombre o diseño del equipo.",
-          "Para una posada en la oficina, un dulcero con el nombre de cada persona, o con el nombre del equipo y tu logo, es un detalle sencillo. Antes de entregar cualquier regalo a tu equipo, consulta con tu contador cómo se clasifica: como prestación, ingreso en especie u otro concepto. La forma de entrega y el nombre comercial no lo determinan.",
+          "Para una posada en la oficina, un dulcero con el nombre de cada persona, o con el nombre del equipo y tu logo, es un detalle sencillo. Si tu equipo trabaja en varias ubicaciones, enviamos a todo México, así que conviene definir la lista de personas antes de cotizar.",
+          "Antes de entregar cualquier regalo a tu equipo, consulta con tu contador cómo se clasifica: como prestación, ingreso en especie u otro concepto. La forma de entrega y el nombre comercial no lo determinan.",
         ],
       },
       {
         heading: "Detalles para clientes: qué considerar antes de regalar",
         body: [
-          "Para clientes, elige un detalle ligado a tu marca y al evento, no un regalo individual. El artículo 28, fracción III de la LISR restringe los obsequios a clientes, con excepciones para gastos ligados a la venta de productos o servicios ofrecidos de forma general. Consulta a tu contador antes de decidir.",
-          "Un dulcero con tu logo y el nombre de la posada, o [stickers con tu logo](/productos/stickers-logo-personalizado), son detalles de marca que tus clientes se llevan del evento. Esto no promete que sean deducibles: los regalos individuales suelen quedar sujetos a restricciones de la Ley del Impuesto sobre la Renta (LISR), y tu contador valida cada caso.",
+          "Para clientes, elige un detalle ligado a tu marca y al evento, no un regalo individual. Según Pluxee y ContadorMX, los obsequios a clientes en general no son deducibles, salvo los ligados a la venta de productos o con fin publicitario. Consulta a tu contador antes de decidir.",
+          "Un dulcero con tu logo y el nombre de la posada, o [stickers con tu logo](/productos/stickers-logo-personalizado), son detalles de marca que tus clientes se llevan del evento. Esto no promete que sean deducibles: los regalos individuales suelen tener restricciones fiscales, y tu contador valida cada caso.",
+          "ContadorMX también recomienda llevar un control de entrega con firma o sello de quien recibe. Pregunta a tu contador si te conviene en tu caso.",
         ],
       },
       {
         heading: "Calendario inverso: cuándo pedir los detalles de tu posada",
         body: [
           "Para que tus detalles lleguen a tiempo, cuenta hacia atrás desde la fecha de tu posada: primero la entrega, luego la producción, después la aprobación de la prueba digital y al inicio el diseño. Así ves cuándo debes escribirnos, sin depender de que los tiempos se junten en diciembre.",
+          "Pluxee recomienda planear los regalos varias semanas antes de la entrega, sobre todo si hay personalización, volumen o envíos a varias ubicaciones. Por eso conviene escribirnos cuando ya tengas la fecha y una lista aproximada de invitados, y no la semana de la posada.",
           "La producción empieza cuando apruebas la prueba digital, así que esa aprobación es la fecha que más cuenta. La fecha estimada de entrega aparece en la página del producto y en el carrito.",
           "Enviamos a todo México y, si estás en la zona metropolitana de Guadalajara, puedes recoger en una sucursal Casa Blanca. Si quieres ver opciones desde Jalisco, revisa los [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara). Escríbenos por WhatsApp con la fecha de tu posada y contamos hacia atrás contigo.",
         ],
@@ -3509,7 +3522,8 @@ export const blogPosts: BlogPost[] = [
         heading: "Factura y contador: qué consultar antes de cotizar",
         body: [
           "Antes de cotizar, consulta con tu contador si necesitas factura, porque un CFDI válido por sí solo no garantiza la deducción. También hay que acreditar la operación, que el gasto sea estrictamente indispensable y que el pago sea por un medio autorizado. Tu contador es quien decide qué aplica en tu caso.",
-          "Cuéntanos por WhatsApp cuántos invitados son y la fecha de la posada, y te cotizamos tus detalles.",
+          "Como referencia, Pluxee menciona estos puntos de comprobación: pagos de más de $2,000 MXN por transferencia, cheque nominativo o tarjeta, CFDI, registro contable y una lista de beneficiarios como buena práctica. Es la guía de un proveedor, no asesoría fiscal.",
+          "Cuéntanos por WhatsApp cuántos invitados son, separando equipo y clientes, y la fecha de la posada, y te cotizamos tus detalles.",
         ],
       },
     ],
@@ -3522,7 +3536,15 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Los detalles de una posada de empresa son deducibles?",
-        a: "No hay una deducción general y automática para posadas ni cenas navideñas. Depende de la finalidad, los beneficiarios y la documentación, y los obsequios a clientes tienen restricciones en el artículo 28 de la LISR. Consulta a tu contador.",
+        a: "No hay una deducción general y automática para posadas ni cenas navideñas. Depende de la finalidad, los beneficiarios y la documentación. Pluxee y ContadorMX indican que los obsequios a clientes en general no son deducibles. Consulta a tu contador.",
+      },
+      {
+        q: "¿Cuánto presupuestar por persona en una posada de empresa?",
+        a: "Como referencia de Pluxee: de $300 a $700 MXN para equipo operativo o masivo, de $700 a $1,500 para mandos medios y más de $1,500 para ejecutivos o clientes clave. Es una guía comercial de un proveedor, no una norma.",
+      },
+      {
+        q: "¿Cuándo debo pedir los detalles de mi posada?",
+        a: "Pluxee recomienda planear varias semanas antes, sobre todo con personalización, volumen o varias ubicaciones. Cuenta hacia atrás desde la fecha de la posada: entrega, producción, aprobación de la prueba digital y diseño. La fecha estimada aparece en la página del producto y en el carrito.",
       },
       {
         q: "¿Los dulceros incluyen dulces?",
@@ -3533,13 +3555,19 @@ export const blogPosts: BlogPost[] = [
         a: "El nombre (de la persona, del equipo o de tu empresa) y la temática que elijas, incluido el logo de tu marca. Te mandamos una prueba digital antes de producir.",
       },
       {
-        q: "¿Cuándo debo pedir los detalles de mi posada?",
-        a: "Cuenta hacia atrás desde la fecha de la posada: entrega, producción, aprobación de la prueba digital y diseño. La fecha estimada de entrega aparece en la página del producto y en el carrito.",
+        q: "¿Qué comprobantes conviene guardar de los detalles de la posada?",
+        a: "Según Pluxee: CFDI, registro contable, pago por medio autorizado (transferencia, cheque nominativo o tarjeta en pagos de más de $2,000 MXN) y una lista de beneficiarios como buena práctica. Tu contador confirma qué aplica en tu caso.",
+      },
+      {
+        q: "¿Envían los detalles a todo México?",
+        a: "Sí, enviamos a todo México. Si estás en la zona metropolitana de Guadalajara, puedes recoger en una sucursal Casa Blanca.",
       },
     ],
     sources: [
       { label: "El Contribuyente: fecha límite para entregar el aguinaldo a los trabajadores", url: "https://www.elcontribuyente.mx/2022/12/cual-es-la-fecha-limite-para-entregar-el-aguinaldo-a-los-trabajadores/" },
       { label: "Siempre al Día: deducibilidad de gastos de fin de año", url: "https://siemprealdia.co/mexico/fiscal/deducibilidad-de-gastos-de-fin-de-ano/" },
+      { label: "Pluxee: guía de regalo corporativo ideal", url: "https://www.pluxee.mx/blog/guia-regalo-corporativo-ideal/" },
+      { label: "ContadorMX: cómo hacer deducibles regalos a empleados o clientes", url: "https://contadormx.com/como-hacer-deducibles-regalos-a-empleados-o-clientes/" },
     ],
   },
   {
