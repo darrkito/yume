@@ -63,6 +63,7 @@ export const BLOG_SLUG_EN: Record<string, string> = {
   "detalles-posada-empresa-personalizados": "personalized-company-posada-favors",
   "guia-planners-proveedor-detalles-personalizados": "guide-for-planners-working-with-custom-favors-supplier",
   "detalles-de-mesa-boda-personalizados": "personalized-wedding-table-details",
+  "mesa-de-dulces-para-boda": "wedding-candy-table-custom-candy-boxes",
 };
 
 export const PRODUCT_SLUG_ES: Record<string, string> = Object.fromEntries(
