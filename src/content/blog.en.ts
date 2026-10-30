@@ -2987,6 +2987,91 @@ export const blogPostsEn: BlogPost[] = [
       { label: "Siempre al Día: deductibility of year-end expenses", url: "https://siemprealdia.co/mexico/fiscal/deducibilidad-de-gastos-de-fin-de-ano/" },
     ],
   },
+  {
+    slug: "guia-planners-proveedor-detalles-personalizados",
+    title: "Working with a custom favors supplier: planner guide",
+    description:
+      "How wedding and event planners can work with a custom favors supplier: brief, digital proof, approval and timing, all handled on WhatsApp.",
+    category: "Guides",
+    publishedAt: "2026-10-29",
+    intro:
+      "If you plan weddings or events, your job is to have everything arrive on time and your client happy. A custom favors supplier can make that easier or harder. This guide explains how we work with planners at Yume: what to send for a quote, how the digital proof is approved, when to start and how we handle contact on WhatsApp.",
+    sections: [
+      {
+        heading: "What to expect from custom favors suppliers for wedding planners",
+        body: [
+          "A good custom favors supplier gives the planner something clear to show, a digital proof the couple can approve, and direct contact on WhatsApp. That way the planner does not have to guess or chase anyone, and the client sees the favor before anything is produced.",
+          "According to Bodas.net, the planner hires vendors, oversees the timing of the day and organizes trials, but does not decide without consulting the couple. That is why the ideal supplier makes approval easy. At Yume we work from Guadalajara and ship across Mexico.",
+        ],
+      },
+      {
+        heading: "Which products you can order for an event",
+        body: [
+          "For an event you can order candy boxes with a name and theme, stickers with the wedding design, temporary tattoos, wedding menus and invitations. Stickers and candy boxes have prices listed on the site; menus, invitations and tattoos are quoted on WhatsApp based on the event.",
+          "The candy box arrives assembled and empty, with the name and theme you choose, so you decide what goes inside. For more ideas for the candy table, read our guide to [personalized party favor boxes in Guadalajara](/en/blog/personalized-party-favor-boxes-guadalajara).",
+        ],
+      },
+      {
+        heading: "How a digital proof gets approved without back and forth",
+        body: [
+          "A digital proof is the design you see before production. For vinyl stickers it normally arrives within 24 hours of payment, includes up to 2 rounds of changes, and nothing is printed without your approval. For other products, confirm the process on WhatsApp.",
+          "Since the planner does not decide without consulting the couple, it helps to send the proof as an image in the chat and keep the approval written in the same thread. Everyone sees the same version, and nothing is produced until it is approved.",
+        ],
+      },
+      {
+        heading: "What to include in the brief to get a quote on WhatsApp",
+        body: [
+          "To get a quote quickly, send us on WhatsApp the event date, the number of pieces, the color palette, the texts with names and date, and any references you have. With that we prepare the digital proof without long message threads.",
+          "If the design is not defined yet, send a photo of the invitation or the decor and we start from there. For menus, invitations and temporary tattoos, we give you the quote and timing on WhatsApp based on your event.",
+        ],
+      },
+      {
+        heading: "When to start so everything arrives on time",
+        body: [
+          "Start as soon as you have the date and a rough idea of the design, because production time counts from the moment the digital proof is approved, not from when you place the order. The later the approval, the later your order arrives.",
+          "Production and shipping days for store products appear on each product page. For menus, invitations and tattoos, ask us for the date on WhatsApp before promising anything to your client. For guest gift ideas, see these [personalized wedding favors](/en/blog/personalized-wedding-favors-with-name-and-date).",
+        ],
+      },
+      {
+        heading: "Delivery and WhatsApp contact so your client is happy",
+        body: [
+          "Yume produces in Guadalajara and ships across Mexico; in the Guadalajara metro area you can also pick up at a Casa Blanca branch. Tell us the venue and event date from the start so delivery can be planned around your calendar.",
+          "All contact happens on WhatsApp: quote, digital proof and approval in a single chat. If you handle several events a year, write to us and we will talk about how to organize your orders.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["souvenirs-de-boda-personalizados"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"]],
+    faq: [
+      {
+        q: "Which products can I order for an event?",
+        a: "Candy boxes, stickers, temporary tattoos, wedding menus and invitations. Stickers and candy boxes have prices listed on the site; menus, invitations and tattoos are quoted on WhatsApp.",
+      },
+      {
+        q: "How long does the digital proof take?",
+        a: "For vinyl stickers it normally arrives within 24 hours of payment. For other products, confirm the timing on WhatsApp.",
+      },
+      {
+        q: "How many rounds of changes are included?",
+        a: "Vinyl stickers include up to 2 rounds of changes on the digital proof. For other products, ask on WhatsApp.",
+      },
+      {
+        q: "Is anything produced before I approve?",
+        a: "No. For vinyl stickers we print nothing without your approval, and production time counts from the moment you approve the digital proof.",
+      },
+      {
+        q: "Does the candy box include candy?",
+        a: "No. The candy box arrives assembled and empty, ready to fill with whatever you choose.",
+      },
+      {
+        q: "Where do you produce and where do you ship?",
+        a: "We produce in Guadalajara, Jalisco, and ship across Mexico. In the Guadalajara metro area you can also pick up at a Casa Blanca branch.",
+      },
+    ],
+    sources: [
+      { label: "Bodas.net: What type of wedding planner do you need?", url: "https://www.bodas.net/articulos/que-tipo-de-wedding-planner-necesitas--c3716" },
+    ],
+  },
 ];
 
 export function getBlogPostEn(slug: string) {

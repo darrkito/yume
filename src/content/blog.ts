@@ -3542,6 +3542,91 @@ export const blogPosts: BlogPost[] = [
       { label: "Siempre al Día: deducibilidad de gastos de fin de año", url: "https://siemprealdia.co/mexico/fiscal/deducibilidad-de-gastos-de-fin-de-ano/" },
     ],
   },
+  {
+    slug: "guia-planners-proveedor-detalles-personalizados",
+    title: "Proveedores de detalles personalizados para wedding planner",
+    description:
+      "Proveedores de detalles personalizados para wedding planner: brief, prueba digital, aprobación y tiempos para trabajar por WhatsApp.",
+    category: "Guías",
+    publishedAt: "2026-10-29",
+    intro:
+      "Si organizas bodas o eventos, tu trabajo es que todo llegue a tiempo y que tu cliente quede feliz. Un proveedor de detalles personalizados puede ayudarte o complicarte la vida. Esta guía explica cómo trabajamos en Yume con planners: qué mandar para cotizar, cómo se aprueba la prueba digital, cuándo conviene empezar y cómo se cuida el trato por WhatsApp.",
+    sections: [
+      {
+        heading: "Qué esperar de proveedores de detalles personalizados para wedding planner",
+        body: [
+          "Un buen proveedor de detalles personalizados le da a la planner algo claro que mostrar, una prueba digital que la pareja pueda aprobar y un trato directo por WhatsApp. Así la planner no tiene que adivinar ni perseguir a nadie, y el cliente ve el detalle antes de que se produzca nada.",
+          "Según Bodas.net, la planner contrata proveedores, supervisa el timing del día y organiza pruebas, pero no decide sin consultar a la pareja. Por eso el proveedor ideal facilita esa aprobación. En Yume trabajamos desde Guadalajara, con envíos a todo México.",
+        ],
+      },
+      {
+        heading: "Qué productos puedes pedir para un evento",
+        body: [
+          "Para un evento puedes pedir dulceros con nombre y temática, stickers con el diseño de la boda, tatuajes temporales, menús de boda e invitaciones. Los stickers y los dulceros tienen precio publicado en el sitio; los menús, las invitaciones y los tatuajes se cotizan por WhatsApp según el evento.",
+          "El dulcero llega armado y vacío, con el nombre y la temática que elijas, para que tú decidas qué lleva dentro. Si buscas ideas para la mesa de dulces, revisa nuestra guía de [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara).",
+        ],
+      },
+      {
+        heading: "Cómo se aprueba una prueba digital sin enredos",
+        body: [
+          "La prueba digital es el diseño que ves antes de producir. En los stickers de vinil llega normalmente en un máximo de 24 horas después del pago, incluye hasta 2 rondas de ajustes y no se imprime nada sin tu aprobación. Para otros productos, confirma el proceso por WhatsApp.",
+          "Como la planner no decide sin consultar a la pareja, conviene enviar la prueba como imagen en el chat y que la aprobación quede escrita en el mismo hilo. Así todos ven la misma versión y nada se produce hasta que se aprueba.",
+        ],
+      },
+      {
+        heading: "Qué incluir en el brief para cotizar por WhatsApp",
+        body: [
+          "Para cotizar rápido, mándanos por WhatsApp la fecha del evento, la cantidad de piezas, la paleta de colores, los textos con nombres y fecha, y las referencias que tengas. Con eso preparamos la prueba digital sin ir y venir de mensajes.",
+          "Si todavía no tienes definido el diseño, manda una foto de la invitación o de la decoración y partimos de ahí. Para menús, invitaciones y tatuajes temporales, te damos la cotización y los tiempos por WhatsApp según tu evento.",
+        ],
+      },
+      {
+        heading: "Cuándo empezar para que todo llegue a tiempo",
+        body: [
+          "Empieza en cuanto tengas la fecha y una idea del diseño, porque el tiempo de producción se cuenta desde que se aprueba la prueba digital, no desde que haces el pedido. Mientras más tarde se apruebe, más tarde llega tu pedido.",
+          "Los días de producción y envío de los productos de la tienda aparecen en la página de cada uno. Para menús, invitaciones y tatuajes, pregúntanos la fecha por WhatsApp antes de prometer nada a tu cliente. Si buscas ideas para los invitados, mira estos [souvenirs de boda personalizados](/blog/souvenirs-de-boda-personalizados).",
+        ],
+      },
+      {
+        heading: "Entrega y trato por WhatsApp para que tu cliente quede contento",
+        body: [
+          "Yume produce en Guadalajara y envía a todo México; en la zona metropolitana también puedes recoger en una sucursal Casa Blanca. Dinos la sede y la fecha del evento desde el inicio para que la entrega quede planeada junto con tu calendario.",
+          "Todo el trato es por WhatsApp: cotización, prueba digital y aprobación en un solo chat. Si manejas varios eventos al año, escríbenos y platicamos cómo acomodar tus pedidos.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
+    relatedBlogSlugs: ["souvenirs-de-boda-personalizados", "dulceros-personalizados-guadalajara"],
+    faq: [
+      {
+        q: "¿Qué productos puedo pedir para un evento?",
+        a: "Dulceros, stickers, tatuajes temporales, menús de boda e invitaciones. Los stickers y dulceros tienen precio publicado en el sitio; menús, invitaciones y tatuajes se cotizan por WhatsApp.",
+      },
+      {
+        q: "¿Cuánto tarda la prueba digital?",
+        a: "En los stickers de vinil llega normalmente en un máximo de 24 horas después del pago. Para otros productos, confirma el tiempo por WhatsApp.",
+      },
+      {
+        q: "¿Cuántas rondas de ajustes incluye?",
+        a: "Los stickers de vinil incluyen hasta 2 rondas de ajustes en la prueba digital. Para otros productos, consúltalo por WhatsApp.",
+      },
+      {
+        q: "¿Se produce algo antes de que yo apruebe?",
+        a: "No. En los stickers de vinil no imprimimos nada sin tu aprobación, y el tiempo de producción se cuenta desde que apruebas la prueba digital.",
+      },
+      {
+        q: "¿El dulcero incluye dulces?",
+        a: "No. El dulcero llega armado y vacío, listo para llenar con lo que tú elijas.",
+      },
+      {
+        q: "¿Dónde producen y a dónde envían?",
+        a: "Producimos en Guadalajara, Jalisco, y enviamos a todo México. En la zona metropolitana de Guadalajara también puedes recoger en una sucursal Casa Blanca.",
+      },
+    ],
+    sources: [
+      { label: "Bodas.net: ¿Qué tipo de wedding planner necesitas?", url: "https://www.bodas.net/articulos/que-tipo-de-wedding-planner-necesitas--c3716" },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string) {
