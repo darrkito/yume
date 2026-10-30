@@ -1666,6 +1666,12 @@ export const blogPostsEn: BlogPost[] = [
         ],
       },
     ],
+    faq: [
+      {
+        q: "Does NFC replace the QR code on a review plate?",
+        a: "No. NFC adds a second way to use the plate, it does not replace the QR code. The customer can tap the phone or scan the code with the camera. Having both on the same plate means no customer is left unable to use it, and the design matches your brand.",
+      },
+    ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
   },
   {
@@ -2162,6 +2168,12 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: [],
+    faq: [
+      {
+        q: "Can temporary tattoos match the rest of my wedding stationery?",
+        a: "Yes. If you are already customizing invitations, a wedding menu or stickers, we can use the same design or color palette on the temporary tattoos so they feel like part of the same event. Let us know which other pieces you have in progress so we can match the design.",
+      },
+    ],
     relatedBlogSlugs: ["custom-temporary-tattoos-for-events-and-brands", "how-long-do-temporary-tattoos-last-and-how-to-remove-them"],
     serviceLink: { href: "/en/products/custom-temporary-tattoos", label: "See custom temporary tattoos" },
     quoteMessage: "Hi, I'm interested in getting a quote for temporary tattoos for a wedding, event, or party.",
@@ -2440,6 +2452,12 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: [],
+    faq: [
+      {
+        q: "Can I order custom temporary tattoos with my own logo or design?",
+        a: "Yes. We make custom temporary tattoos with your logo, your design or your photos. They are quoted on WhatsApp based on design, size and quantity. Production takes 2 to 3 business days after the 50% deposit, and we ship across Mexico or you can pick them up in Guadalajara.",
+      },
+    ],
     relatedBlogSlugs: ["custom-temporary-tattoos-for-events-and-brands", "temporary-tattoos-for-weddings-events-and-parties"],
     serviceLink: { href: "/en/products/custom-temporary-tattoos", label: "See custom temporary tattoos" },
     quoteMessage: "Hi, I'd like a quote for custom temporary tattoos.\n\nSize:\nQuantity:\nDo I already have a design? (yes / no):",
@@ -2808,6 +2826,12 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
+    faq: [
+      {
+        q: "What is the latest date to order custom Christmas labels?",
+        a: `Order in November or, at the latest, the first week of December. Once you approve the digital proof, the order takes ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days to reach your door anywhere in Mexico. That leaves room to adjust the design and for couriers, which are busier in December.`,
+      },
+    ],
     relatedBlogSlugs: [BLOG_SLUG_EN["dulceros-navidenos-personalizados"], BLOG_SLUG_EN["stickers-para-empaques-de-negocio"], BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"]],
     download: { href: "/descargas/printable-christmas-gift-tags.pdf", label: "Free download: printable Christmas gift tags (PDF, color and black and white)" },
   },

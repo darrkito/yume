@@ -56,6 +56,12 @@ export const dulceroPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: [DULCERO],
+    faq: [
+      {
+        q: "When should I order personalized party favor boxes?",
+        a: "Order at least two weeks before your party, and earlier in busy seasons like Christmas or the end of the school year. Production starts after you approve the proof, and you can get delivery by courier across Mexico or pick up at a Casa Blanca branch in Guadalajara.",
+      },
+    ],
     relatedBlogSlugs: [en("ideas-de-dulceros-para-fiesta-infantil"), en("que-poner-en-un-dulcero"), en("dulceros-para-eventos-empresariales")],
   },
   {
@@ -149,6 +155,12 @@ export const dulceroPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: [DULCERO],
+    faq: [
+      {
+        q: "When should I order Christmas treat boxes for a posada?",
+        a: "Order in November or, at the latest, the first week of December for posadas from the 16th to the 24th. In December couriers slow down and holidays don't count as business days. If you're in Guadalajara, picking up at a Casa Blanca branch is usually faster than national shipping.",
+      },
+    ],
     relatedBlogSlugs: [en("etiquetas-navidenas-personalizadas"), en("dulceros-para-eventos-empresariales"), en("que-poner-en-un-dulcero"), en("dulceros-personalizados-guadalajara")],
   },
   {
