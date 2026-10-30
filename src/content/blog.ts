@@ -168,16 +168,30 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "stickers-personalizados-para-negocios-guadalajara",
-    title: "Etiquetas personalizadas para tu negocio en Guadalajara (GDL): guía rápida",
-    metaTitle: "Etiquetas en Guadalajara (GDL) para tu negocio: guía",
+    title: "Etiquetas personalizadas GDL: dónde imprimir y cómo pedir",
+    metaTitle: "Etiquetas personalizadas GDL: dónde imprimir y pedir",
     description:
-      "Cómo usar etiquetas personalizadas si tienes una marca, un emprendimiento o un puesto en bazares de Guadalajara (GDL): qué formato pedir y qué archivo enviar para tu logo.",
+      "Etiquetas personalizadas en GDL: dónde imprimirlas, qué opción elegir para tu evento o marca y cómo pedirlas paso a paso por WhatsApp con prueba digital.",
     category: "Guías",
     publishedAt: "2026-08-28",
-    modifiedAt: "2026-10-20",
+    modifiedAt: "2026-11-25",
     intro:
-      "En Guadalajara (GDL) hay un movimiento fuerte de emprendimientos pequeños (marcas de repostería, ropa, velas, joyería, café) que venden en bazares, mercados sobre ruedas o directo por redes sociales. Una etiqueta con tu logo es de las formas más baratas de que tu marca se vea consistente en cada pedido que sale, sin necesitar empaque especial.",
+      "Si buscas etiquetas personalizadas en GDL, lo primero es saber qué camino te conviene: un estudio con trato directo, una imprenta industrial o una plataforma en línea. Aquí te explicamos las diferencias, cuándo conviene una etiqueta o un sticker para un evento o una marca pequeña, y cómo pedir paso a paso. En Guadalajara hay además un movimiento fuerte de emprendimientos pequeños (repostería, ropa, velas, joyería, café) que venden en bazares o por redes, y una etiqueta con tu logo hace que su marca se vea consistente.",
     sections: [
+      {
+        heading: "Dónde imprimir etiquetas personalizadas en GDL",
+        body: [
+          "En Guadalajara tienes tres caminos: un estudio de diseño con trato directo, una imprenta industrial pensada para producir en serie o una plataforma en línea con plantillas. Para piezas de un evento o una marca pequeña, el estudio suele encajar mejor, porque revisas tu diseño con una persona antes de imprimir.",
+          "Yume es un estudio que produce sobre pedido en Guadalajara: trabajamos piezas para un evento concreto o una marca pequeña, con prueba digital y trato directo por WhatsApp. La producción industrial o en serie no es nuestro enfoque, pero escríbenos por WhatsApp y vemos tu caso.",
+        ],
+      },
+      {
+        heading: "Etiqueta o sticker para un evento: cuál conviene",
+        body: [
+          "Las dos se piden igual: eliges corte y acabado y recibes prueba digital, así que la diferencia es el uso. Las [etiquetas personalizadas con logo](/productos/stickers-logo-personalizado) (mínimo 50 piezas) van bien con tu logo o un diseño propio. Los [stickers de vinil](/productos/stickers-vinil-impermeable) (mínimo 40 piezas) sirven para cualquier diseño, personaje o foto.",
+          "Si organizas una boda, un bautizo, un baby shower o un cumpleaños, cuéntanos la ocasión y los colores por WhatsApp y te decimos cuál opción encaja mejor. Si trabajas como planner, puedes pedir por evento la cantidad exacta que necesitas, con prueba digital antes de producir.",
+        ],
+      },
       {
         heading: "Para qué sirven realmente",
         body: [
@@ -199,8 +213,8 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Qué cantidad pedir",
         body: [
-          "Como se vende por pieza, pides la cantidad exacta que necesitas en vez de planillas completas: desde 50 con tu logo, suficiente para ajustar el pedido al tamaño real de tu emprendimiento sin comprar de más.",
-          "Todas nuestras etiquetas son resistentes al agua, así que aguantan bien en empaques que se pueden mojar o manejar seguido (bolsas, botellas, envíos). Cuéntanos la forma o el tamaño que prefieres al cotizar, y te mandamos una prueba digital antes de imprimir.",
+          "Como se vende por pieza, pides la cantidad exacta que necesitas en vez de planillas completas: desde 50 con tu logo, suficiente para ajustar el pedido al tamaño real de tu emprendimiento o de tu evento sin comprar de más.",
+          "Todas nuestras etiquetas son resistentes al agua, así que aguantan bien en empaques que se pueden mojar o manejar seguido (bolsas, botellas, envíos). Cuéntanos la forma o el tamaño que prefieres al cotizar, y te mandamos una prueba digital antes de imprimir. Si dudas entre formatos, revisa la guía de [rollo, hoja o por pieza](/blog/impresion-de-etiquetas-rollo-hoja-o-por-pieza).",
         ],
       },
       {
@@ -219,13 +233,31 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "Cómo es el proceso",
+        heading: "Cómo pedir tus etiquetas paso a paso",
         body: [
-          "Haces tu pedido en la tienda en línea (eliges cantidad, corte y acabado, y subes tu logo) o cotizas primero por WhatsApp si tienes dudas. Te mandamos una prueba digital con hasta 2 rondas de ajustes, y no imprimimos nada hasta que la apruebas: así evitas encontrar un error ya con todas las etiquetas impresas.",
+          "Pedir es sencillo: eliges la opción y la cantidad, mandas tu logo o diseño y recibes una prueba digital antes de imprimir. Puedes comprar en la tienda en línea o cotizar primero por WhatsApp si tienes dudas. Nada se produce hasta que apruebas la prueba.",
+          "Paso 1: elige entre etiquetas con logo o stickers de vinil, el corte (troquelado o semitroquelado) y el acabado (mate, brillante u holográfico). Paso 2: escribe la cantidad exacta, desde 50 piezas con logo o 40 en vinil. Paso 3: sube tu diseño o mándalo por WhatsApp. Paso 4: revisa la prueba digital, con hasta 2 rondas de ajustes, y apruébala. Paso 5: recoge en una sucursal Casa Blanca o recíbelo en casa.",
+          "Si no sabes si te conviene vinil o papel, lee la comparación de [stickers de vinil y de papel](/blog/stickers-vinil-vs-papel-diferencias).",
         ],
       },
     ],
     faq: [
+      {
+        q: "¿Dónde puedo imprimir etiquetas personalizadas en Guadalajara?",
+        a: "Puedes elegir entre un estudio de diseño, una imprenta industrial o una plataforma en línea. Nosotros somos un estudio: producimos sobre pedido en Guadalajara, mandamos prueba digital y atendemos por WhatsApp, sin tienda física.",
+      },
+      {
+        q: "¿Hacen pedidos industriales o en serie?",
+        a: "No es nuestro enfoque, pero escríbenos por WhatsApp y vemos tu caso. Trabajamos sobre todo piezas para un evento o una marca pequeña.",
+      },
+      {
+        q: "¿Hacen etiquetas para bodas y eventos?",
+        a: "Sí, hacemos stickers y etiquetas para bodas y eventos. Cuéntanos la ocasión y los colores por WhatsApp y te ayudamos a elegir entre etiquetas con logo o stickers de vinil.",
+      },
+      {
+        q: "¿Puedo cotizar por WhatsApp antes de comprar?",
+        a: "Sí. Puedes cotizar por WhatsApp o comprar directo en la tienda en línea. En ambos casos recibes una prueba digital y no imprimimos nada hasta que la apruebas.",
+      },
       {
         q: "¿Tienen tienda física en Guadalajara?",
         a: `No. Producimos sobre pedido en Guadalajara y entregamos de dos formas: recolección en una de las ${CASABLANCA_BRANCHES.length} sucursales Casa Blanca de la zona metropolitana ($${CASABLANCA_PRICE}) o envío a domicilio ($${NATIONAL_SHIPPING_PRICE} a todo México). Las dos son gratis en compras de $${FREE_SHIPPING_THRESHOLD} o más.`,
@@ -255,7 +287,7 @@ export const blogPosts: BlogPost[] = [
         a: "No emitimos factura (CFDI). Tu comprobante es el correo de confirmación del pedido. Si tu empresa necesita factura, escríbenos por WhatsApp antes de pagar.",
       },
     ],
-    relatedProductSlugs: ["stickers-logo-personalizado"],
+    relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
     relatedBlogSlugs: ["stickers-vinil-vs-papel-diferencias", "stickers-para-empaques-de-negocio", "impresion-de-etiquetas-rollo-hoja-o-por-pieza"],
   },
   {
