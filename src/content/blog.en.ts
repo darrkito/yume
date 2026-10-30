@@ -2274,6 +2274,12 @@ export const blogPostsEn: BlogPost[] = [
     ],
     relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
     relatedBlogSlugs: [BLOG_SLUG_EN["donde-imprimir-stickers-personalizados-mexico"], BLOG_SLUG_EN["yume-vs-imprentas-online-stickers"]],
+    faq: [
+      {
+        q: "Can I pick up my custom stickers in Guadalajara?",
+        a: "Yes. You can pick your order up at one of the Casa Blanca branches in the Guadalajara metro area. Pickup adds just 1 business day to production, costs $20 MXN, and is free on orders of $750 MXN or more, just like home delivery.",
+      },
+    ],
   },
   {
     slug: BLOG_SLUG_EN["troquelado-vs-semitroquelado-stickers"],
