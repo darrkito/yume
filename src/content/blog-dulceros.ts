@@ -367,42 +367,94 @@ export const dulceroPosts: BlogPost[] = [
     title: "Dulceros para Día del Niño: ideas para el salón, la escuela y la familia",
     metaTitle: "Dulceros para Día del Niño: ideas y cómo pedirlos",
     description:
-      "Cómo organizar los dulceros del Día del Niño (30 de abril) para todo el salón o la escuela: diseños, cuántos pedir, qué poner dentro y con cuánta anticipación hacer el pedido.",
+      "Dulceros personalizados para el Día del Niño (30 de abril): diseños para el salón, reglas escolares, qué poner dentro, cuántos pedir y cuándo.",
     category: "Guías",
     publishedAt: PUBLISHED,
+    modifiedAt: "2026-10-30",
     intro:
-      "El 30 de abril, Día del Niño en México, es una de las fechas con más búsquedas de dulceros del año, sobre todo por parte de maestras, mamás del comité y escuelas que quieren darle algo especial a cada alumno. Un dulcero con el nombre de cada niño o del grupo se siente mucho más especial que una bolsa genérica. Aquí tienes cómo organizarlo sin estrés.",
+      "El 30 de abril es el Día del Niño en México, y maestras, mamás del comité y familias buscan darle algo especial a cada niño. Un dulcero con el nombre de cada niño o del grupo se siente mucho más especial que una bolsa genérica. Aquí tienes cómo elegir el diseño, qué revisar con la escuela, qué poner dentro, cuántos pedir y cuándo hacerlo.",
     sections: [
       {
-        heading: "Un diseño para todo el salón",
+        heading: "Dulceros para Día del Niño: qué diseño funciona en el salón",
         body: [
-          "Para el salón, lo más práctico es un solo diseño para todos con el nombre del grupo o de la escuela y un mensaje como Feliz Día del Niño. Una temática neutra (colores brillantes, juegos, el espacio, animales) funciona igual para niños y niñas.",
-          "Si el grupo es pequeño, coméntanos al cotizar si quieres el nombre de cada alumno en su dulcero y revisamos contigo cómo organizar la lista.",
+          "Para el salón funciona un solo diseño para todo el grupo, con el nombre de la escuela o del grupo y un mensaje como Feliz Día del Niño. Una temática neutra, como colores brillantes, juegos o animales, sirve igual para niños y niñas. Llega armado y vacío, para que tú elijas qué lleva dentro.",
+          `Nuestro [dulcero personalizado](/productos/${DULCERO}) es tipo lunch box, con asa, y la personalización incluye nombre y temática. Si el grupo es pequeño, coméntanos al cotizar si quieres el nombre de cada alumno en su dulcero y revisamos contigo cómo organizar la lista.`,
+          "Para una fiesta familiar, el mismo diseño con el nombre del festejado se siente más personal; mira más [ideas para fiesta infantil](/blog/ideas-de-dulceros-para-fiesta-infantil). Antes de producir te enviamos una prueba digital, y nada se produce hasta que la apruebas.",
         ],
       },
       {
-        heading: "Cuántos pedir y cuánto cuesta",
+        heading: "El Día del Niño y las reglas de la escuela",
         body: [
-          "Cada dulcero cuesta $75 y el mínimo es de 10, así que pides exactamente el número de alumnos: un grupo de 25 son $1,875 y uno de 32 son $2,400. Pide 1 o 2 de más por si llega un alumno nuevo o alguno se daña al llenarlo.",
-          "Si el comité de padres divide el costo, el precio por niño queda claro desde el principio: $75 por dulcero, y desde $750 el envío nacional es gratis.",
+          "Según una nota de 2025, los lineamientos de la SEP prohíben vender dentro de los planteles alimentos y bebidas con sellos de advertencia. La regla habla de venta, y las fuentes consultadas no mencionan regalos ni dulceros enviados por las familias. Por eso conviene preguntar a la escuela qué permite antes de comprar los dulces.",
+          "La SEP reiteró esa restricción en un comunicado del 9 de abril de 2025, dentro de la estrategia Vida saludable, vive feliz, que según el texto abarca más de 262 mil escuelas públicas y privadas. El 24 de mayo de 2025, la presidenta Sheinbaum reconoció que niñas y niños piden que regresen los dulces a las escuelas, y aun así se mantuvo la restricción por los índices de obesidad infantil.",
+          "Si la escuela prefiere menos dulces, el dulcero puede llevar otras cosas, como un juguete pequeño, artículos de papelería o [stickers personalizados](/productos/stickers-vinil-impermeable) del mismo diseño. Confirma siempre con la maestra o la dirección antes de enviar el pedido.",
         ],
       },
       {
         heading: "Qué poner dentro según la edad",
         body: [
-          "Para preescolar, evita dulces duros y juguetes pequeños con piezas que se puedan tragar; mejor gomitas suaves, galletas, un juguete grande o crayolas. Para primaria funcionan bien paletas, chocolates, dulces enchilados, stickers y un juguete pequeño.",
-          "Revisa con la escuela si hay alumnos con alergias (cacahuate, chocolate) antes de comprar los dulces: es más fácil adaptar todos los dulceros que hacer uno distinto el mismo día.",
+          "Los dulces duros, las gomitas y los chicles figuran entre los alimentos con mayor riesgo de atragantamiento en niños pequeños, según la Asociación Española de Pediatría, que los menciona hasta los 3 a 6 años. Para preescolar, elige un detalle que no sea dulce, como un juguete grande o crayolas.",
+          "Para primaria, si la escuela lo permite, funcionan bien paletas, chocolates, dulces enchilados, stickers y un juguete pequeño. Revisa con la escuela si hay alumnos con alergias (cacahuate, chocolate) antes de comprar el relleno: es más fácil adaptar todos los dulceros que hacer uno distinto el mismo día.",
+          "Si buscas más ideas por edad, revisa la guía de [qué poner en un dulcero](/blog/que-poner-en-un-dulcero).",
         ],
       },
       {
-        heading: "Cuándo pedirlos",
+        heading: "Cuántos dulceros pedir y cuánto cuestan",
         body: [
-          "Como abril se junta con vacaciones de Semana Santa, lo ideal es hacer el pedido a finales de marzo o principios de abril. La producción toma de 3 a 5 días hábiles después de aprobar la prueba digital, más el envío; te llegan armados, listos para llenar.",
+          `Primeras 100 piezas: $${dulceroUnit} MXN por dulcero, con pedido mínimo de 10 piezas, así que pides el número exacto de alumnos. 25 dulceros son $${dulceroTotal(25)} y 32 son $${dulceroTotal(32)}. Arriba de 100 piezas es precio mayoreo: escríbenos por WhatsApp y te cotizamos.`,
+          `Si el comité de padres divide el costo, el precio por niño queda claro desde el principio: $${dulceroUnit} por dulcero. Desde $${FREE_SHIPPING_THRESHOLD} de compra el envío nacional es gratis. Si estás en la zona metropolitana de Guadalajara, puedes recogerlos por $${CASABLANCA_PRICE} en cualquiera de las ${CASABLANCA_BRANCHES.length} sucursales de paquetería Casa Blanca; más detalles en [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara).`,
+        ],
+      },
+      {
+        heading: "Cuándo pedir los dulceros para el 30 de abril",
+        body: [
+          `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba digital, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional, o ${PICKUP_EXTRA_DAYS} día hábil si recoges en una sucursal Casa Blanca de Guadalajara. Pide con tiempo para tener margen de llenar los dulceros antes del 30 de abril.`,
+          "Los dulceros te llegan armados, listos para llenar. Si además tienes una graduación cerca, el mismo proveedor puede cubrir ambas fechas; revisa la guía de [dulceros para graduación](/blog/dulceros-para-graduacion).",
         ],
       },
     ],
-    relatedProductSlugs: [DULCERO],
-    relatedBlogSlugs: ["que-poner-en-un-dulcero", "ideas-de-dulceros-para-fiesta-infantil", "dulceros-para-graduacion"],
+    relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["que-poner-en-un-dulcero", "ideas-de-dulceros-para-fiesta-infantil", "dulceros-para-graduacion", "dulceros-personalizados-guadalajara"],
+    faq: [
+      {
+        q: "¿Los dulceros incluyen dulces?",
+        a: "No. El dulcero llega armado y vacío, listo para llenar con los dulces o detalles que tú elijas.",
+      },
+      {
+        q: "¿Cuánto cuesta un dulcero para el Día del Niño?",
+        a: `Primeras 100 piezas: $${dulceroUnit} MXN por pieza, con pedido mínimo de 10. Arriba de 100 piezas es precio mayoreo y se cotiza por WhatsApp. Desde $${FREE_SHIPPING_THRESHOLD} el envío nacional es gratis.`,
+      },
+      {
+        q: "¿Cuándo es el Día del Niño en México?",
+        a: "El Día del Niño en México es el 30 de abril.",
+      },
+      {
+        q: "¿Puedo mandar dulces a la escuela?",
+        a: "Según una nota de 2025, los lineamientos de la SEP prohíben vender alimentos y bebidas con sellos de advertencia dentro de los planteles. La fuente habla de venta y no menciona regalos, así que lo más seguro es preguntar a la escuela qué permite antes de enviar el pedido.",
+      },
+      {
+        q: "¿Qué dulces no conviene dar a niños pequeños?",
+        a: "Los dulces duros, las gomitas y los chicles figuran entre los alimentos con mayor riesgo de atragantamiento en niños pequeños, según la Asociación Española de Pediatría, que los menciona hasta los 3 a 6 años.",
+      },
+      {
+        q: "¿Puedo poner el nombre de cada alumno?",
+        a: "Sí. Coméntanos al cotizar si quieres el nombre de cada alumno en su dulcero y revisamos contigo cómo organizar la lista. Antes de producir te enviamos una prueba digital.",
+      },
+      {
+        q: "¿Cuánto tardan en llegar?",
+        a: `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional, o ${PICKUP_EXTRA_DAYS} día hábil si recoges en una sucursal Casa Blanca de Guadalajara.`,
+      },
+    ],
+    sources: [
+      {
+        label: "Zeta Tijuana: Sheinbaum y SEP mantienen veto a golosinas en escuelas",
+        url: "https://zetatijuana.com/2025/07/sheinbaum-y-sep-defienden-chocolate-con-sellos-pero-mantienen-veto-a-golosinas-en-escuelas/",
+      },
+      {
+        label: "Asociación Española de Pediatría: prevención del atragantamiento",
+        url: "https://aeped.es/sites/default/files/atragantamiento_csvaep_final.pdf",
+      },
+    ],
   },
   {
     slug: "dulceros-para-graduacion",
