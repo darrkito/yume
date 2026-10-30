@@ -3072,6 +3072,82 @@ export const blogPostsEn: BlogPost[] = [
       { label: "Bodas.net: What type of wedding planner do you need?", url: "https://www.bodas.net/articulos/que-tipo-de-wedding-planner-necesitas--c3716" },
     ],
   },
+  {
+    slug: "personalized-wedding-table-details",
+    title: "Personalized Wedding Table Details: Menu and Stickers",
+    metaTitle: "Personalized Wedding Table Details: Menu and Stickers",
+    description:
+      "Personalized wedding table details: how to match menu, favor box and stickers in one design so the table looks planned.",
+    category: "Guides",
+    publishedAt: "2026-10-29",
+    intro:
+      "A wedding table looks planned when every piece seems to belong to the same set. Menu, favor box and stickers can share the same color, the same lettering and the same symbol, and the whole table feels cared for. Here is how to combine them, in what order to decide, and what to check per guest and per table before asking for a quote.",
+    sections: [
+      {
+        heading: "Which personalized wedding table details work together",
+        body: [
+          "Personalized wedding table details look planned when they share one system: a palette, a typeface and a symbol or monogram that repeats. The menu, the favor box and the stickers are different pieces, but with that common thread the table reads as one set and not as separate purchases.",
+          "Stickers reach the most places. A wedding blog mentions labels for wine or water bottles, which can also work as numbered table markers, phrases or monograms on cutlery or plates, candles and favor jars. If you have a different idea, message us on WhatsApp and we will see if it can be done.",
+        ],
+      },
+      {
+        heading: "The wedding menu as a place card",
+        body: [
+          `One way to simplify the table is to use the menu as the place card too, with each guest's name above the menu. That way a single piece does two jobs and the table looks cleaner. For more ideas, see the Yume [personalized wedding menu](/en/blog/${BLOG_SLUG_EN["menu-de-boda-personalizado"]}), which is quoted over WhatsApp.`,
+          "A wedding stationery guide also suggests one detail per place setting, such as a small vase, a party cookie with a label or a mini bottle with a name label. Fewer pieces per seat, all with the same design, give a more elegant result than many different pieces.",
+        ],
+      },
+      {
+        heading: "Favor box and stickers: one detail per place",
+        body: [
+          "To keep the table from feeling crowded, pick one detail per place and repeat its design everywhere else. It can be a favor box with the guest's name or a sticker with the wedding monogram on a label. What matters is that colors and symbol match the menu.",
+          "The favor box arrives assembled and empty, so you decide what goes inside, and personalization includes name and theme. To see it in more detail, read about [personalized favor boxes in Guadalajara](/en/blog/personalized-party-favor-boxes-guadalajara). For the keepsake guests take home, see [personalized wedding favors](/en/blog/personalized-wedding-favors-with-name-and-date).",
+        ],
+      },
+      {
+        heading: "The order of decisions for a table that looks planned",
+        body: [
+          "Decide in this order: first the palette, then the typeface and finally the symbol or monogram that will repeat. With those three decisions made, every piece is designed on the same base and nothing has to be redone when you add the menu, the favor box or the stickers.",
+          "Message us on WhatsApp to get a quote and we will tell you how to align the design with your palette. The wedding menu is quoted over WhatsApp. For stickers and favor boxes we send you a digital proof before production, and nothing is produced until you approve it. If you work with a wedding planner, share the palette and the proof with her so the pieces match the rest of the decor.",
+        ],
+      },
+      {
+        heading: "Checklist per guest and per table",
+        body: [
+          "A short checklist avoids forgotten items: per guest, check a card or menu with their name, a keepsake and the label or sticker that goes with it; per table, check the numbered marker, menu or card and the shared piece. Confirm everything against your guest list before ordering.",
+          "Quantities depend on your guest list and how many tables you have. Message us on WhatsApp with those numbers and we will quote the menu and the other pieces. We are in Guadalajara and ship across Mexico.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["menu-de-boda-personalizado"], "personalized-wedding-favors-with-name-and-date"],
+    faq: [
+      {
+        q: "How much does the wedding menu cost?",
+        a: "The wedding menu is quoted over WhatsApp based on your design and the quantity you need.",
+      },
+      {
+        q: "Can I use the menu as a place card?",
+        a: "Yes. A wedding stationery guide suggests it: put the guest's name above the menu so one piece does two jobs. Tell us how you want it and we will quote it.",
+      },
+      {
+        q: "Can I see the design before production?",
+        a: "For stickers and favor boxes, yes: we send you a digital proof and nothing is produced until you approve it. The wedding menu is quoted over WhatsApp.",
+      },
+      {
+        q: "Do the favor boxes come with candy?",
+        a: "No. The favor box arrives assembled and empty, ready to fill with the candy or details you choose.",
+      },
+      {
+        q: "Do you ship outside Guadalajara?",
+        a: "Yes. We work from Guadalajara and ship across Mexico.",
+      },
+    ],
+    sources: [
+      { label: "The Budget Savvy Bride: how stickers can elevate your wedding", url: "https://thebudgetsavvybride.com/how-stickers-can-elevate-your-wedding/" },
+      { label: "Mary Hollis Huddleston: place cards, menus, resources and tips", url: "https://maryhollishuddleston.squarespace.com/blog/place-cards-menus-resources-and-tips" },
+    ],
+  },
 ];
 
 export function getBlogPostEn(slug: string) {

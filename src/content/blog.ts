@@ -3627,6 +3627,82 @@ export const blogPosts: BlogPost[] = [
       { label: "Bodas.net: ¿Qué tipo de wedding planner necesitas?", url: "https://www.bodas.net/articulos/que-tipo-de-wedding-planner-necesitas--c3716" },
     ],
   },
+  {
+    slug: "detalles-de-mesa-boda-personalizados",
+    title: "Detalles personalizados para mesa de boda: menú y stickers",
+    metaTitle: "Detalles personalizados para mesa de boda: menú y stickers",
+    description:
+      "Detalles personalizados para mesa de boda: cómo unir menú, dulcero y stickers con un mismo diseño para que la mesa se vea planeada.",
+    category: "Guías",
+    publishedAt: "2026-10-29",
+    intro:
+      "Una mesa de boda se ve planeada cuando cada pieza parece parte de lo mismo. Menú, dulcero y stickers pueden llevar el mismo color, la misma letra y el mismo símbolo, y entonces el conjunto se siente cuidado. Aquí tienes cómo combinarlos, en qué orden decidir y qué revisar por invitado y por mesa antes de cotizar.",
+    sections: [
+      {
+        heading: "Qué detalles personalizados para mesa de boda funcionan juntos",
+        body: [
+          "Los detalles personalizados para mesa de boda se ven planeados cuando comparten un mismo sistema: una paleta, una tipografía y un símbolo o monograma que se repite. El menú, el dulcero y los stickers son piezas distintas, pero con ese hilo conductor la mesa se lee como un solo conjunto y no como compras sueltas.",
+          "Los stickers son los que más lugares alcanzan. Un blog de bodas menciona etiquetas para botellas de vino o agua, que también sirven como marcadores de mesa con número, frases o monogramas en cubiertos o platos, velas y frascos de recuerdo. Si tienes una idea distinta, escríbenos por WhatsApp y vemos si se puede hacer.",
+        ],
+      },
+      {
+        heading: "El menú de boda como tarjeta de lugar",
+        body: [
+          "Una forma de simplificar la mesa es usar el menú también como tarjeta de lugar, con el nombre de cada invitado arriba del menú. Así una sola pieza cumple dos funciones y la mesa se ve más limpia. Si quieres ver más ideas, revisa el [menú de boda personalizado](/blog/menu-de-boda-personalizado) de Yume, que se cotiza por WhatsApp.",
+          "Una guía de papelería de boda propone además un solo detalle por puesto, por ejemplo un florero pequeño, una galleta de fiesta con etiqueta o una mini botella con etiqueta con el nombre. Menos piezas por lugar, pero todas con el mismo diseño, dan un resultado más elegante que muchas piezas distintas.",
+        ],
+      },
+      {
+        heading: "Dulcero y stickers: un detalle por puesto",
+        body: [
+          "Para que la mesa no se sature, elige un solo detalle por puesto y repite su diseño en lo demás. Puede ser un dulcero con el nombre del invitado o un sticker con el monograma de la boda en una etiqueta. Lo importante es que colores y símbolo coincidan con el menú.",
+          "El dulcero llega armado y vacío, así que tú decides qué lleva dentro, y la personalización incluye nombre y temática. Si quieres verlo con calma, revisa los [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara). Para el recuerdo que se llevan a casa, mira los [souvenirs de boda personalizados](/blog/souvenirs-de-boda-personalizados). Y para etiquetas y marcadores con tu monograma, están los [stickers con tu logo](/productos/stickers-logo-personalizado).",
+        ],
+      },
+      {
+        heading: "Orden de decisiones para una mesa que se vea planeada",
+        body: [
+          "Decide en este orden: primero la paleta, luego la tipografía y por último el símbolo o monograma que se repetirá. Con esas tres decisiones tomadas, cada pieza se diseña sobre la misma base y no hay que rehacer nada al sumar el menú, el dulcero o los stickers.",
+          "Escríbenos por WhatsApp para cotizar y te decimos cómo alinear el diseño con tu paleta. El menú de boda se cotiza por WhatsApp. En stickers y dulceros te enviamos una prueba digital antes de producir, y nada se produce hasta que la apruebas. Si trabajas con una wedding planner, comparte con ella la paleta y la prueba para que las piezas coincidan con el resto de la decoración.",
+        ],
+      },
+      {
+        heading: "Checklist por invitado y por mesa",
+        body: [
+          "Un checklist corto evita olvidos: por invitado, revisa tarjeta o menú con su nombre, un detalle de recuerdo y la etiqueta o sticker que lo acompaña; por mesa, revisa marcador con número, menú o carta y la pieza compartida. Confirma todo contra tu lista de invitados antes de pedir.",
+          "Las cantidades dependen de tu lista de invitados y de cuántas mesas tengas. Escríbenos por WhatsApp con esos números y te cotizamos el menú y el resto de las piezas. Estamos en Guadalajara y enviamos a todo México.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["menu-de-boda-personalizado", "souvenirs-de-boda-personalizados", "dulceros-personalizados-guadalajara", "que-poner-en-un-dulcero"],
+    faq: [
+      {
+        q: "¿Cuánto cuesta el menú de boda?",
+        a: "El menú de boda se cotiza por WhatsApp según tu diseño y la cantidad que necesites.",
+      },
+      {
+        q: "¿Puedo usar el menú como tarjeta de lugar?",
+        a: "Sí. Es una opción que sugiere una guía de papelería de boda: poner el nombre del invitado arriba del menú para que una sola pieza cumpla dos funciones. Cuéntanos cómo lo quieres y lo cotizamos.",
+      },
+      {
+        q: "¿Puedo ver el diseño antes de producir?",
+        a: "En stickers y dulceros sí: te mandamos una prueba digital y nada se produce hasta que la apruebas. El menú de boda se cotiza por WhatsApp.",
+      },
+      {
+        q: "¿Los dulceros incluyen dulces?",
+        a: "No. El dulcero llega armado y vacío, listo para llenar con los dulces o detalles que tú elijas.",
+      },
+      {
+        q: "¿Envían fuera de Guadalajara?",
+        a: "Sí. Trabajamos desde Guadalajara y enviamos a todo México.",
+      },
+    ],
+    sources: [
+      { label: "The Budget Savvy Bride: cómo los stickers pueden realzar tu boda", url: "https://thebudgetsavvybride.com/how-stickers-can-elevate-your-wedding/" },
+      { label: "Mary Hollis Huddleston: tarjetas de lugar, menús, recursos y consejos", url: "https://maryhollishuddleston.squarespace.com/blog/place-cards-menus-resources-and-tips" },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string) {
