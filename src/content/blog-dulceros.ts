@@ -109,15 +109,15 @@ export const dulceroPosts: BlogPost[] = [
   },
   {
     slug: "ideas-de-dulceros-para-fiesta-infantil",
-    title: "Ideas de dulceros para fiesta infantil (niño y niña)",
-    metaTitle: "Ideas de dulceros para fiesta infantil",
+    title: "Dulceros para niña y fiesta infantil: ideas de temas y colores",
+    metaTitle: "Dulceros para niña y fiesta infantil: ideas",
     description:
-      "Ideas de dulceros para fiesta infantil: cómo elegir la temática, qué nombre poner, cuántos pedir y cómo armarlos para que combinen con la decoración.",
+      "Dulceros para niña: ideas de temas por edad, paletas de color y detalles con nombre, cuántos pedir y cuándo pedirlos.",
     category: "Guías",
     publishedAt: PUBLISHED,
-    modifiedAt: "2026-10-29",
+    modifiedAt: "2026-10-30",
     intro:
-      "El dulcero es de lo último que se llevan los niños de la fiesta, y muchas veces lo primero que enseñan en casa. Por eso vale la pena que combine con la temática del cumpleaños y lleve el nombre del festejado. Aquí tienes ideas de dulceros para fiesta infantil: cómo elegir el diseño para niño o niña, qué nombre poner, cuántos pedir, qué llevan dentro, cómo cuidar a los invitados más pequeños y cuándo pedirlos para que lleguen a tiempo.",
+      "El dulcero es de lo último que se llevan los niños de la fiesta, y muchas veces lo primero que enseñan en casa. Por eso vale la pena que combine con la temática del cumpleaños y lleve el nombre de la festejada o del festejado. Aquí tienes ideas de dulceros para niña y para fiesta infantil: temas según la edad, paletas de color, detalles que hacen que se vea cuidado, cuántos pedir, qué llevan dentro, cómo cuidar a los invitados más pequeños y cuándo pedirlos para que lleguen a tiempo.",
     sections: [
       {
         heading: "Ideas de dulceros para fiesta infantil: parte de la temática",
@@ -148,6 +148,29 @@ export const dulceroPosts: BlogPost[] = [
           "Casi nada cambia en el dulcero: la diferencia está en la temática y los colores, no en el producto. Elige el diseño por el gusto del festejado, no por una regla de color. Si la fiesta es mixta, una paleta neutra con el nombre grande y un detalle del tema sirve para todos los invitados.",
           "Para una fiesta con niñas y niños, lo más práctico es un solo diseño con la temática central y el nombre del festejado, en lugar de dos versiones. La mesa se ve ordenada y todos reciben un detalle que se siente parte de la misma fiesta.",
           "Si prefieres dos estilos distintos, coméntalo al cotizar y lo revisamos contigo. Recuerda que el pedido mínimo es de 10 piezas.",
+        ],
+      },
+      {
+        heading: "Dulceros para niña: temas según la edad",
+        body: [
+          "Para un dulcero de niña, elige el tema según la edad y el estilo de la fiesta: unicornio, mariposas, bailarina, princesa, jardín, tea party, boho o sirena. Lo importante es que el tema combine con el pastel, la invitación y el resto de la decoración.",
+          "Para los primeros años, un tema suave como mariposas, jardín o un unicornio en colores tranquilos se ve dulce y no recarga el diseño. Para primaria, bailarina, sirena o tea party dejan espacio para un nombre grande y más detalle.",
+          "Son ideas para arrancar, no reglas. Si la niña ya tiene un personaje o un tema favorito, mándanos la referencia y lo revisamos contigo en la prueba digital antes de producir.",
+        ],
+      },
+      {
+        heading: "Paletas de color para dulceros de niña",
+        body: [
+          "Una paleta de dos o tres colores hace que el dulcero se vea planeado. Cuatro combinaciones que sirven para niña: rosa pastel con dorado, lila con blanco, salvia con durazno y rojo con crema. Son sugerencias de estilo de Yume, y las adaptamos a los colores de tu invitación.",
+          "Rosa pastel con dorado se siente delicado y festivo, y va con princesa o tea party. Lila con blanco se ve fresco y limpio, y acompaña bien a unicornio, mariposas o sirena. Salvia con durazno es suave y natural, ideal para jardín o boho. Rojo con crema es más clásico y llamativo, y va con bailarina.",
+          "Si ya tienes globos, manteles o el fondo de fotos, toma una foto con todo junto y mándala al cotizar. Con esa referencia ajustamos los colores del dulcero y te lo mostramos en la prueba digital.",
+        ],
+      },
+      {
+        heading: "Detalles que elevan un dulcero de niña",
+        body: [
+          "Tres detalles cambian cómo se ve un dulcero de niña: el nombre grande con la edad, un tema y una paleta que repitan la fiesta, y un recuerdo dentro que combine con el diseño. Nuestro dulcero es tipo lunch box, con asa, y la personalización incluye nombre y temática.",
+          `El nombre con la edad, por ejemplo Sofía 7 años, convierte el dulcero en recuerdo del cumpleaños. Dentro puedes sumar [stickers de vinil personalizados](/productos/stickers-vinil-impermeable) con el mismo diseño, el nombre o el personaje favorito, para que la pieza se sienta completa. Y si quieres que todo salga con el mismo estilo, pide los [dulceros personalizados](/productos/${DULCERO}) junto con ellos.`,
         ],
       },
       {
@@ -235,6 +258,22 @@ export const dulceroPosts: BlogPost[] = [
       {
         q: "¿El dulcero es distinto para niña y para niño?",
         a: "No. Es el mismo dulcero, tipo lunch box con asa. Lo que cambia es el diseño: la temática, los colores y el nombre.",
+      },
+      {
+        q: "¿Qué temas puedo elegir para un dulcero de niña?",
+        a: "Unicornio, mariposas, bailarina, princesa, jardín, tea party, boho o sirena son ideas de diseño para arrancar. Elige según la edad y el estilo de la fiesta, y si ya tiene un personaje favorito, mándanos la referencia.",
+      },
+      {
+        q: "¿Qué colores combinan para un dulcero de niña?",
+        a: "Algunas combinaciones que sugerimos son rosa pastel con dorado, lila con blanco, salvia con durazno y rojo con crema. También podemos adaptar el diseño a los colores de tu invitación o decoración.",
+      },
+      {
+        q: "¿Cuándo debo ordenar los dulceros de niña?",
+        a: `Cuenta desde la fecha de la fiesta hacia atrás: la producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba digital, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días hábiles de envío nacional, o ${PICKUP_EXTRA_DAYS} día hábil si recoges en una sucursal Casa Blanca de Guadalajara.`,
+      },
+      {
+        q: "¿Cómo coordino el dulcero con la mesa de dulces?",
+        a: "Mándanos una foto de la invitación, los globos o la mesa de dulces y adaptamos los colores y la temática del dulcero. Antes de producir te enviamos una prueba digital para que veas cómo combina.",
       },
       {
         q: "¿Qué debo cuidar si hay niños pequeños en la fiesta?",
