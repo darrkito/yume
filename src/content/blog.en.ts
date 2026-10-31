@@ -3040,7 +3040,7 @@ export const blogPostsEn: BlogPost[] = [
     ],
   },
   {
-    slug: "guia-planners-proveedor-detalles-personalizados",
+    slug: "guide-for-planners-working-with-custom-favors-supplier",
     title: "Working with a custom favors supplier: planner guide",
     description:
       "How wedding and event planners can work with a custom favors supplier: brief, digital proof, approval and timing, all handled on WhatsApp.",
@@ -3201,7 +3201,7 @@ export const blogPostsEn: BlogPost[] = [
     ],
   },
   {
-    slug: "mesa-de-dulces-para-boda",
+    slug: "wedding-candy-table-custom-candy-boxes",
     title: "Wedding candy table: how to set it up and personalize the candy boxes",
     metaTitle: "Wedding candy table: how to set it up and personalize it",
     description:
