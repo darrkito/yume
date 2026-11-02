@@ -3844,6 +3844,94 @@ export const blogPosts: BlogPost[] = [
       { label: "Crehana: Cómo armar una mesa de dulces", url: "https://www.crehana.com/blog/estilo-vida/como-armar-mesa-dulce/" },
     ],
   },
+  {
+    slug: "cuando-enviar-invitaciones-de-boda",
+    title: "Cuándo enviar invitaciones de boda y qué datos incluir",
+    description:
+      "Cuándo enviar invitaciones de boda: plazos orientativos para el save the date, la invitación y la confirmación, y los datos que lleva cada pieza.",
+    category: "Guías",
+    publishedAt: "2026-11-02",
+    intro:
+      "Las invitaciones de boda no se mandan cuando uno se acuerda: dependen de la distancia, de los invitados que viajan y de la fecha en que el banquete necesita el conteo final. Aquí tienes rangos orientativos para el save the date, la invitación y la confirmación, un cronograma que puedes usar con tus clientes y los datos que debe llevar cada pieza.",
+    sections: [
+      {
+        heading: "Cuándo enviar invitaciones de boda: el plazo general",
+        body: [
+          "Lo más habitual en español es enviar las invitaciones formales con 3 o 4 meses de antelación. Si algunos invitados tienen que viajar, conviene adelantarlas a entre 4 y 6 meses. Son rangos orientativos, no una regla única, y las fuentes en inglés manejan plazos más cortos para bodas locales.",
+          "Para comparar: el calendario de Greenvelope, pensado para Estados Unidos, propone invitaciones 6 a 8 semanas antes en una boda estándar y 10 a 12 semanas en una boda de destino. Las invitaciones digitales siguen los mismos plazos que las impresas, aunque lleguen al instante. Si la boda es lejos de donde vive la mayoría o hay invitados de otro país, amplía el plazo para que reserven transporte y alojamiento y pidan días libres.",
+        ],
+      },
+      {
+        heading: "Cuándo enviar el save the date",
+        body: [
+          "Bodas.net sugiere el save the date entre 7 y 9 meses antes, aunque otro artículo de la misma web dice de 10 a 12 meses. Greenvelope propone 6 a 8 meses en una boda estándar y 8 a 12 en una de destino. Como las fuentes no coinciden, trata estas cifras como un rango orientativo.",
+          "Se envía solo a los hogares que recibirán invitación. Puedes omitirlo si el compromiso es corto, la lista es pequeña y local, o todos ya conocen la fecha.",
+        ],
+      },
+      {
+        heading: "Qué fecha límite de confirmación poner",
+        body: [
+          "La fecha límite de confirmación debe caer aproximadamente una semana antes de que el banquetero necesite el conteo final. Además, entre el día en que se recibe la invitación y esa fecha debe haber al menos 2 semanas. Así tus invitados tienen tiempo de responder y tú de ajustar mesas y cantidades.",
+          "Greenvelope recomienda un recordatorio una semana antes del límite y otro el día del límite, solo a quienes no han respondido, y un seguimiento personal 1 o 2 días después. Su calendario ubica la confirmación 3 a 4 semanas antes de la boda en una boda estándar y unas 6 semanas antes en una de destino.",
+        ],
+      },
+      {
+        heading: "Un cronograma hacia atrás para planear el envío",
+        body: [
+          "Empieza por la fecha de la boda y retrocede: primero el conteo final del banquete, luego la fecha límite de confirmación, luego el envío de la invitación y, antes de todo eso, el diseño y la cotización. Usa los rangos de esta guía y deja margen, porque la impresión y la entrega también toman tiempo.",
+          "Ejemplo orientativo con invitados locales: save the date de 7 a 9 meses antes, invitación impresa de 3 a 4 meses antes y confirmación al menos 2 semanas después de recibirla, siempre una semana antes del conteo final. Con invitados que viajan: save the date de 8 a 12 meses antes, invitación de 4 a 6 meses antes y confirmación unas 6 semanas antes de la boda. Es una combinación de las fuentes citadas, no una regla.",
+          "El diseño y la cotización de tus invitaciones tienen que quedar listos antes de la fecha de envío. En Yume te mandamos una prueba digital antes de producir, y nada se produce hasta que la apruebas. Si estás armando otros detalles para la misma boda, revisa nuestra guía de [mesa de dulces para boda](/blog/mesa-de-dulces-para-boda).",
+        ],
+      },
+      {
+        heading: "Qué datos incluir en cada pieza",
+        body: [
+          "Cada pieza lleva lo suyo. El save the date: nombres, fecha, ciudad o destino, una línea que avise que la invitación formal llegará después y la web de boda si ya existe. La invitación suma hora, lugar, fecha límite de confirmación bien visible y medio para confirmar. La tarjeta de detalles reúne el resto.",
+          "En la invitación, si pides elegir menú o tienes preguntas especiales, inclúyelas junto a la fecha límite. En una boda de destino añade datos de viaje, bloque de habitaciones e itinerario del fin de semana. Para enviarlas necesitas el nombre de cada invitado y su dirección completa: calle, número, código postal, localidad y piso.",
+          "En la tarjeta de detalles puedes poner el código de vestimenta, la web o mesa de regalos y si la invitación incluye niños o acompañante. Si mandas las invitaciones por correo o mensajería, conviene llamar para confirmar que llegaron.",
+        ],
+      },
+      {
+        heading: "Un cronograma para wedding planners",
+        body: [
+          "Si eres wedding planner, convierte estos rangos en un cronograma por cliente: fecha de la boda, conteo final del banquete, límite de confirmación, envío de la invitación y cierre del diseño. Marca aparte las bodas con invitados que viajan, porque su plazo es mayor. Con un solo documento tu cliente sabe qué decidir y cuándo.",
+          "En Yume trabajamos con wedding planners: diseño con prueba digital y trato directo por WhatsApp. Para los detalles de mesa, revisa la guía de [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara). Escríbenos por WhatsApp con tiempo para cotizar las invitaciones de tu boda o las de tu cliente.",
+        ],
+      },
+    ],
+    relatedProductSlugs: [],
+    relatedBlogSlugs: ["mesa-de-dulces-para-boda", "dulceros-personalizados-guadalajara"],
+    faq: [
+      {
+        q: "¿Con cuánto tiempo se envían las invitaciones de boda?",
+        a: "Lo habitual en español es de 3 a 4 meses antes de la boda, y de 4 a 6 meses si los invitados tienen que viajar. Son rangos orientativos: según la fuente, los plazos cambian.",
+      },
+      {
+        q: "¿Cuándo se envía el save the date?",
+        a: "Bodas.net sugiere entre 7 y 9 meses antes, aunque otro artículo suyo dice de 10 a 12 meses. Greenvelope propone 6 a 8 meses en una boda estándar y 8 a 12 en una de destino. Las fuentes no coinciden, así que es un rango orientativo.",
+      },
+      {
+        q: "¿Las invitaciones digitales siguen otros plazos?",
+        a: "No. Siguen los mismos plazos que las impresas, aunque lleguen al instante. Si hay invitados de otro país o la boda es lejos de donde vive la mayoría, conviene ampliar el plazo.",
+      },
+      {
+        q: "¿Qué fecha límite de confirmación debo poner?",
+        a: "Una que caiga aproximadamente una semana antes de que el banquetero necesite el conteo final, con al menos 2 semanas entre recibir la invitación y esa fecha.",
+      },
+      {
+        q: "¿Se puede omitir el save the date?",
+        a: "Sí, si el compromiso es corto, la lista es pequeña y local, o todos ya conocen la fecha.",
+      },
+      {
+        q: "¿Cómo cotizo mis invitaciones de boda con Yume?",
+        a: "Escríbenos por WhatsApp con tiempo y te cotizamos. Te mandamos una prueba digital antes de producir, y nada se produce hasta que la apruebas.",
+      },
+    ],
+    sources: [
+      { label: "Bodas.net: Consejos sobre el envío de las invitaciones de boda", url: "https://www.bodas.net/articulos/consejos-sobre-el-envio-de-las-invitaciones-de-boda--c565" },
+      { label: "Greenvelope: When to send wedding invitations and save the dates", url: "https://www.greenvelope.com/resources/when-to-send-wedding-invitations-and-save-the-dates" },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string) {

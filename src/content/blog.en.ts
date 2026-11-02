@@ -3281,6 +3281,94 @@ export const blogPostsEn: BlogPost[] = [
       { label: "Crehana: Cómo armar una mesa de dulces", url: "https://www.crehana.com/blog/estilo-vida/como-armar-mesa-dulce/" },
     ],
   },
+  {
+    slug: "cuando-enviar-invitaciones-de-boda",
+    title: "When to Send Wedding Invitations and What to Include",
+    description:
+      "When to send wedding invitations: guiding timelines for the save the date, the invitation and the RSVP, plus the details each piece should carry.",
+    category: "Guides",
+    publishedAt: "2026-11-02",
+    intro:
+      "Wedding invitations are not sent whenever you remember: the timing depends on distance, on guests who travel and on the date your caterer needs the final headcount. Here are guiding ranges for the save the date, the invitation and the RSVP, a timeline you can use with your clients and the details each piece should carry.",
+    sections: [
+      {
+        heading: "When to send wedding invitations: the general window",
+        body: [
+          "In Spanish-language sources, the usual advice is to send formal invitations 3 or 4 months ahead. If some guests have to travel, move that up to between 4 and 6 months. These are guiding ranges, not a single rule, and English-language sources use shorter windows for local weddings.",
+          "For comparison: the Greenvelope calendar, written for the United States, proposes invitations 6 to 8 weeks ahead for a standard wedding and 10 to 12 weeks for a destination wedding. Digital invitations follow the same timelines as printed ones, even though they arrive instantly. If the wedding is far from where most guests live, or some guests come from another country, widen the window so they can book transport and lodging and request time off.",
+        ],
+      },
+      {
+        heading: "When to send the save the date",
+        body: [
+          "Bodas.net suggests sending the save the date 7 to 9 months ahead, although another article on the same site says 10 to 12 months. Greenvelope proposes 6 to 8 months for a standard wedding and 8 to 12 for a destination one. Since the sources disagree, treat these figures as a guiding range.",
+          "It goes only to the households that will receive an invitation. You can skip it if the engagement is short, the list is small and local, or everyone already knows the date.",
+        ],
+      },
+      {
+        heading: "What RSVP deadline to set",
+        body: [
+          "The RSVP deadline should fall about one week before the caterer needs the final headcount. Also, there should be at least 2 weeks between the day guests receive the invitation and that deadline. That gives your guests time to reply and gives you time to adjust tables and quantities.",
+          "Greenvelope recommends one reminder a week before the deadline and another on the deadline day, only to guests who have not replied, and a personal follow-up 1 or 2 days later. Its calendar places the RSVP 3 to 4 weeks before the wedding for a standard wedding and about 6 weeks before for a destination one.",
+        ],
+      },
+      {
+        heading: "A backward timeline to plan your send date",
+        body: [
+          "Start with the wedding date and work backward: first the final catering headcount, then the RSVP deadline, then the invitation send date and, before all of that, the design and the quote. Use the ranges in this guide and leave a margin, because printing and delivery also take time.",
+          "Guiding example with local guests: save the date 7 to 9 months ahead, printed invitation 3 to 4 months ahead and an RSVP at least 2 weeks after it is received, always one week before the final headcount. With traveling guests: save the date 8 to 12 months ahead, invitation 4 to 6 months ahead and an RSVP about 6 weeks before the wedding. It combines the cited sources and is not a rule.",
+          "The design and the quote for your invitations must be ready before the send date. At Yume we send you a digital proof before producing, and nothing is produced until you approve it. If you are putting together other details for the same wedding, see our guide to the [wedding candy table](/en/blog/wedding-candy-table-custom-candy-boxes).",
+        ],
+      },
+      {
+        heading: "What details to include on each piece",
+        body: [
+          "Each piece carries its own details. The save the date: names, date, city or destination, a line saying the formal invitation will follow, and the wedding website if one exists. The invitation adds time, venue, a clearly visible RSVP deadline and a way to confirm. The details card holds the rest.",
+          "On the invitation, if you ask guests to choose a menu or have special questions, place them next to the deadline. For a destination wedding, add travel details, a room block and the weekend itinerary. To mail them you need each guest's name and full address: street, number, postal code, town and apartment.",
+          "On the details card you can put the dress code, the wedding website or gift registry, and whether the invitation includes children or a plus-one. If you send invitations by mail or courier, it helps to call and confirm they arrived.",
+        ],
+      },
+      {
+        heading: "A timeline for wedding planners",
+        body: [
+          "If you are a wedding planner, turn these ranges into a timeline for each client: wedding date, final catering headcount, RSVP deadline, invitation send date and design sign-off. Mark weddings with traveling guests separately, because they need a longer window. One document tells your client what to decide and when.",
+          "At Yume we work with wedding planners: design with a digital proof and direct contact on WhatsApp. For table details, see our guide to [personalized party favor boxes in Guadalajara](/en/blog/personalized-party-favor-boxes-guadalajara). Write to us on WhatsApp early to get a quote for your wedding invitations or your client's.",
+        ],
+      },
+    ],
+    relatedProductSlugs: [],
+    relatedBlogSlugs: ["mesa-de-dulces-para-boda", "dulceros-personalizados-guadalajara"],
+    faq: [
+      {
+        q: "How far ahead should wedding invitations be sent?",
+        a: "In Spanish-language sources the usual window is 3 to 4 months before the wedding, and 4 to 6 months if guests have to travel. These are guiding ranges: timelines change depending on the source.",
+      },
+      {
+        q: "When should the save the date be sent?",
+        a: "Bodas.net suggests 7 to 9 months ahead, although another of its articles says 10 to 12 months. Greenvelope proposes 6 to 8 months for a standard wedding and 8 to 12 for a destination one. The sources disagree, so it is a guiding range.",
+      },
+      {
+        q: "Do digital invitations follow different timelines?",
+        a: "No. They follow the same timelines as printed ones, even though they arrive instantly. If guests come from another country or the wedding is far from where most guests live, widen the window.",
+      },
+      {
+        q: "What RSVP deadline should I set?",
+        a: "One that falls about a week before the caterer needs the final headcount, with at least 2 weeks between receiving the invitation and that date.",
+      },
+      {
+        q: "Can the save the date be skipped?",
+        a: "Yes, if the engagement is short, the list is small and local, or everyone already knows the date.",
+      },
+      {
+        q: "How do I get a quote for my wedding invitations from Yume?",
+        a: "Write to us on WhatsApp early and we will quote you. We send a digital proof before producing, and nothing is produced until you approve it.",
+      },
+    ],
+    sources: [
+      { label: "Bodas.net: Consejos sobre el envío de las invitaciones de boda", url: "https://www.bodas.net/articulos/consejos-sobre-el-envio-de-las-invitaciones-de-boda--c565" },
+      { label: "Greenvelope: When to send wedding invitations and save the dates", url: "https://www.greenvelope.com/resources/when-to-send-wedding-invitations-and-save-the-dates" },
+    ],
+  },
 ];
 
 export function getBlogPostEn(slug: string) {
