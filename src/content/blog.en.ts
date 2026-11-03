@@ -3041,18 +3041,19 @@ export const blogPostsEn: BlogPost[] = [
   },
   {
     slug: "guide-for-planners-working-with-custom-favors-supplier",
-    title: "Working with a custom favors supplier: planner guide",
+    title: "Custom Favors Supplier for Wedding Planners",
     description:
-      "How wedding and event planners can work with a custom favors supplier: brief, digital proof, approval and timing, all handled on WhatsApp.",
+      "How planners work with a custom favors supplier: what to send for a quote, digital proof approval, final counts and timing, all on WhatsApp.",
     category: "Guides",
     publishedAt: "2026-10-29",
+    modifiedAt: "2026-11-03",
     intro:
-      "If you plan weddings or events, your job is to have everything arrive on time and your client happy. A custom favors supplier can make that easier or harder. This guide explains how we work with planners at Yume: what to send for a quote, how the digital proof is approved, when to start and how we handle contact on WhatsApp.",
+      "If you plan weddings or events, your job is to have everything arrive on time and your client happy. A custom favors supplier can make that easier or harder. This guide explains how we work with planners at Yume: what to send for a quote, how the digital proof is approved, what to confirm in writing, when to start and how we handle contact on WhatsApp.",
     sections: [
       {
-        heading: "What to expect from custom favors suppliers for wedding planners",
+        heading: "What to expect from a custom favors supplier for wedding planners",
         body: [
-          "A good custom favors supplier gives the planner something clear to show, a digital proof the couple can approve, and direct contact on WhatsApp. That way the planner does not have to guess or chase anyone, and the client sees the favor before anything is produced.",
+          "A good custom favors supplier gives the planner three things: a digital proof the couple can approve, clear dates in writing, and direct contact on WhatsApp. That way the planner does not have to guess or chase anyone, and the client sees the favor before anything is produced.",
           "According to Bodas.net, the planner hires vendors, oversees the timing of the day and organizes trials, but does not decide without consulting the couple. That is why the ideal supplier makes approval easy. At Yume we work from Guadalajara and ship across Mexico.",
         ],
       },
@@ -3068,6 +3069,7 @@ export const blogPostsEn: BlogPost[] = [
         body: [
           "A digital proof is the design you see before production. For vinyl stickers it normally arrives within 24 hours of payment, includes up to 2 rounds of changes, and nothing is printed without your approval. For other products, confirm the process on WhatsApp.",
           "Since the planner does not decide without consulting the couple, it helps to send the proof as an image in the chat and keep the approval written in the same thread. Everyone sees the same version, and nothing is produced until it is approved.",
+          "When approving, also write the final piece count. That line avoids doubts if the guest list changes later.",
         ],
       },
       {
@@ -3078,10 +3080,26 @@ export const blogPostsEn: BlogPost[] = [
         ],
       },
       {
+        heading: "What to confirm in writing before promising a date",
+        body: [
+          "Before promising your client a date, confirm three things in writing with your supplier: the final piece count, the deadline to approve the digital proof, and the delivery date. With all three in the same chat, any change is on record and nobody argues later about what was agreed.",
+          "Lead times vary a lot between suppliers. Easy Weddings, an Australian guide, shows favor suppliers with minimums ranging from 2 to 3 weeks up to 12 weeks. It is not a reference for Mexico, but it shows why you should ask each supplier for the lead time in writing.",
+          "If each piece carries the guest's name, RSVPs set the calendar. YAY! Wedding Favours, quoted in that same Easy Weddings guide, recommends 4 to 8 weeks for pieces with names. That is why it helps to agree on a guest list closing date from the start.",
+        ],
+      },
+      {
+        heading: "Backup pieces and a time buffer for delays",
+        body: [
+          "Before fixing the quantity, decide with your client whether you need backup pieces and how much extra time to leave. The Australian Easy Weddings guide lists both to thank other event vendors and absorb shipping surprises. It is a foreign reference, not a Yume rule.",
+          "YAY! Wedding Favours suggests ordering more pieces than guests, for example to thank the celebrant or the photographer, and Brand Candy recommends adding 2 weeks for possible shipping delays. How many backup pieces suit you is something to settle with your client; write to us on WhatsApp and we will quote it.",
+        ],
+      },
+      {
         heading: "When to start so everything arrives on time",
         body: [
           "Start as soon as you have the date and a rough idea of the design, because production time counts from the moment the digital proof is approved, not from when you place the order. The later the approval, the later your order arrives.",
-          "Production and shipping days for store products appear on each product page. For menus, invitations and tattoos, ask us for the date on WhatsApp before promising anything to your client. For guest gift ideas, see these [personalized wedding favors](/en/blog/personalized-wedding-favors-with-name-and-date).",
+          "Plan the calendar backwards from the event date: delivery first, then production, then proof approval, the guest list closing and the brief. Production and shipping days for store products appear on each product page.",
+          "For menus, invitations and tattoos, ask us for the date on WhatsApp before promising anything to your client. For guest gift ideas, see these [personalized wedding favors](/en/blog/personalized-wedding-favors-with-name-and-date).",
         ],
       },
       {
@@ -3112,6 +3130,14 @@ export const blogPostsEn: BlogPost[] = [
         a: "No. For vinyl stickers we print nothing without your approval, and production time counts from the moment you approve the digital proof.",
       },
       {
+        q: "What should I confirm in writing before promising a date?",
+        a: "The final piece count, the deadline to approve the digital proof and the delivery date. For store products, production and shipping days appear on each product page; for menus, invitations and tattoos, ask on WhatsApp.",
+      },
+      {
+        q: "Are other suppliers' lead times a useful reference?",
+        a: "Only as context. An Australian Easy Weddings guide shows minimums from 2 to 3 weeks up to 12 weeks depending on the supplier, so the safest move is to ask each one for the lead time in writing.",
+      },
+      {
         q: "Does the candy box include candy?",
         a: "No. The candy box arrives assembled and empty, ready to fill with whatever you choose.",
       },
@@ -3122,6 +3148,7 @@ export const blogPostsEn: BlogPost[] = [
     ],
     sources: [
       { label: "Bodas.net: What type of wedding planner do you need?", url: "https://www.bodas.net/articulos/que-tipo-de-wedding-planner-necesitas--c3716" },
+      { label: "Easy Weddings: bomboniere lead times (Australian guide)", url: "https://easyweddings.com.au/Bomboniere/advice/bomboniere-lead-time" },
     ],
   },
   {
