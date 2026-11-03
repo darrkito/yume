@@ -2863,8 +2863,9 @@ export const blogPostsEn: BlogPost[] = [
       "Personalized wedding favors with name and date: ideas with favor boxes and stickers, how many to order and when to request a quote. Made in Guadalajara.",
     category: "Guides",
     publishedAt: "2026-10-28",
+    modifiedAt: "2026-11-03",
     intro:
-      "A favor with the couple's names and the wedding date turns a table detail into a keepsake your guests actually want to take home. This guide covers which pieces you can personalize at Yume, how many to order, how to match them with the rest of your stationery and when to request a quote so you reach your wedding calmly.",
+      "Personalized wedding favors with the couple's names and the wedding date turn a table detail into a keepsake your guests actually want to take home. This guide covers which pieces you can personalize at Yume, how many to order, how to match them with the rest of your stationery and when to request a quote so you reach your wedding calmly.",
     sections: [
       {
         heading: "What makes a personalized wedding favor special?",
@@ -2912,6 +2913,27 @@ export const blogPostsEn: BlogPost[] = [
         ],
       },
       {
+        heading: "Elegant and simple wedding favors",
+        body: [
+          "A simple design can bring together the couple's names, the date and the colors of the celebration. Start by thinking about how you want to hand out the favor: a personalized favor box gives you space to choose what goes inside, while a vinyl sticker can close a bag or decorate a jar. The boxes arrive assembled and empty, and the stickers carry the design you share.",
+          "You can use the same visual idea on both or choose one piece for each guest. Before production, you receive a digital proof to review the design. To coordinate it with your guests' places, explore these [personalized wedding table details](/en/blog/personalized-wedding-table-details).",
+        ],
+      },
+      {
+        heading: "Wedding favors for civil and church ceremonies",
+        body: [
+          "For a civil wedding or a church ceremony, the favor can reflect the style the couple chose for their celebration. A favor box with a name and theme lets you prepare a detail for each guest; it arrives assembled and empty so you can decide what to put inside. You can also choose vinyl stickers with your design to complete the presentation.",
+          "If a reception follows the ceremony, consider when you want to hand out the pieces and how many people will attend. Temporary tattoos are another option for the party and are quoted over WhatsApp by design and quantity. Share your date when you get in touch so you can organize your order in advance.",
+        ],
+      },
+      {
+        heading: "Wedding favors for guests: what to give",
+        body: [
+          "To choose what to give, start with your guest list and the moment in the celebration. You can prepare one favor box per person and fill it with what you choose, or place the boxes on a table for guests to pick up. The [wedding candy table guide](/en/blog/wedding-candy-table-custom-candy-boxes) offers ideas for organizing that space.",
+          "Another option is vinyl stickers with your wedding design, on their own or to close a detail you already have. If you prefer temporary tattoos, request a quote over WhatsApp with your design and quantity. Review the digital proof before approving it so the names and date appear as you want them.",
+        ],
+      },
+      {
         heading: "How to request a quote for your wedding favors",
         body: [
           "Message us on WhatsApp with the couple's names, the date, your colors or your finished design, and your guest count. We prepare the quote, and before producing we send a digital proof: nothing is produced until you approve it. We produce in Guadalajara and ship across Mexico.",
@@ -2920,6 +2942,14 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     faq: [
+      {
+        q: "What wedding favors can I give my guests?",
+        a: "You can give personalized favor boxes to fill, vinyl stickers with your design or temporary tattoos, which are quoted over WhatsApp by design and quantity.",
+      },
+      {
+        q: "What are some simple wedding favors?",
+        a: "A favor box with the couple's names and wedding theme or a vinyl sticker with initials and the date are simple options you can personalize.",
+      },
       {
         q: "Which personalized wedding favors can I order at Yume?",
         a: "Personalized favor boxes with the couple's names and your wedding's theme, vinyl stickers with initials and date, and temporary tattoos with your design. We do not make bottles or fragrances.",

@@ -3436,18 +3436,18 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "souvenirs-de-boda-personalizados",
-    title: "Souvenirs de boda personalizados: ideas con nombre y fecha",
-    metaTitle: "Souvenirs de boda personalizados con nombre y fecha",
+    title: "Recuerdos de boda personalizados: ideas con nombre y fecha",
+    metaTitle: "Recuerdos de boda personalizados con nombre y fecha",
     description:
-      "Souvenirs de boda personalizados con nombre y fecha: ideas con dulceros y stickers, cuántos pedir y cuándo cotizar. Hechos en Guadalajara.",
+      "Recuerdos de boda personalizados con nombre y fecha: ideas con dulceros y stickers, cuántos pedir y cuándo cotizar. Hechos en Guadalajara.",
     category: "Guías",
     publishedAt: "2026-10-28",
-    modifiedAt: "2026-10-29",
+    modifiedAt: "2026-11-03",
     intro:
-      "Un souvenir con el nombre de los novios y la fecha convierte un detalle de mesa en un recuerdo que tus invitados sí quieren llevarse a casa. Pero hoy el nombre y la fecha solos ya no bastan: lo que se queda es una pieza con diseño propio. Esta guía te explica qué souvenirs de boda personalizados puedes pedir en Yume, cómo darles un diseño elegante, cuántos pedir, cómo combinarlos con el resto de tu papelería y cuándo cotizar para llegar con calma a tu boda.",
+      "Los recuerdos de boda personalizados, también llamados souvenirs, con el nombre de los novios y la fecha convierten un detalle de mesa en algo que tus invitados sí quieren llevarse a casa. Pero hoy el nombre y la fecha solos ya no bastan: lo que se queda es una pieza con diseño propio. Esta guía te explica qué souvenirs de boda personalizados puedes pedir en Yume, cómo darles un diseño elegante, cuántos pedir, cómo combinarlos con el resto de tu papelería y cuándo cotizar para llegar con calma a tu boda.",
     sections: [
       {
-        heading: "¿Qué hace especial a un souvenir de boda personalizado?",
+        heading: "¿Qué hace especial a un recuerdo de boda personalizado?",
         body: [
           "Un souvenir de boda personalizado es un detalle que cada invitado se lleva con el nombre de los novios, la fecha o el diseño de la boda. Sirve para agradecer su presencia y dejar un recuerdo tangible. Lo que lo hace valioso es que tenga un uso o un lugar después de la fiesta.",
           "Crónica reporta, en septiembre de 2026, que la tendencia es la hiperpersonalización: piezas que los invitados usen, exhiban o disfruten, en lugar de imanes, dulces o velas desechables. Publimetro México suma que una ilustración numerada hecha para la boda puede funcionar como decoración, a diferencia de un recuerdo impreso solo con nombres y fecha. Ambos artículos están en Fuentes, al final.",
@@ -3455,7 +3455,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "¿Cómo personalizar souvenirs de boda con nombre y fecha de forma elegante?",
+        heading: "¿Cómo personalizar recuerdos de boda con nombre y fecha de forma elegante?",
         body: [
           "Para que el nombre y la fecha se vean elegantes, intégralos a un diseño con los colores de la pareja y un detalle de su historia, en lugar de dejarlos como texto suelto. Publimetro apunta que las piezas con colores e ilustraciones propios de la pareja se vuelven conservables. En Yume lo ves antes en prueba digital.",
           "Publimetro también menciona dos ideas: un diseño neutro y funcional con una sola pieza para todos los invitados, y dar menos piezas pero elegidas con más intención. Con nuestro papel y vinil, eso se traduce en un solo diseño para todos, con tus colores, donde el nombre y la fecha son parte de la composición.",
@@ -3463,7 +3463,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "Ideas de souvenirs de boda personalizados con nombre y fecha",
+        heading: "Ideas de recuerdos de boda personalizados con nombre y fecha",
         body: [
           "Con Yume puedes hacer tres tipos de souvenir de boda: dulceros con los nombres de los novios, stickers con iniciales y fecha para sellar tus detalles, y tatuajes temporales para la pista de baile. Los tres se diseñan contigo y te mostramos una prueba digital antes de producir.",
           "Dulceros: una cajita con asa en cartulina opalina, con el nombre de los novios y la temática de tu boda. Llega armada y vacía, lista para llenar. Puede ir en la mesa de dulces, para que cada invitado arme la suya, o ya llena en cada lugar como recuerdo. Conoce los [dulceros personalizados](/productos/dulceros-personalizados) y la guía de [dulceros para bodas, XV y baby shower](/blog/dulceros-para-eventos-sociales-boda-xv-baby-shower).",
@@ -3472,7 +3472,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "¿Cuántos souvenirs de boda pedir y cuánto cuestan?",
+        heading: "¿Cuántos recuerdos de boda pedir y cuánto cuestan?",
         body: [
           "Pide un souvenir por invitado o uno por familia o pareja, más unos cuantos extra para la mesa de novios, fotos e imprevistos. Lo importante es partir de tu lista confirmada de asistentes, porque en Yume se vende por pieza exacta y el mínimo cambia según el producto.",
           "El mínimo es de 10 dulceros y de 40 stickers de vinil. Los tatuajes temporales se cotizan por WhatsApp. Una cuenta práctica: si tienes 80 invitados, pide 80 piezas más 5 o 10 de reserva.",
@@ -3484,7 +3484,7 @@ export const blogPosts: BlogPost[] = [
         },
       },
       {
-        heading: "¿Cómo combinar los souvenirs con tus invitaciones y tu menú?",
+        heading: "¿Cómo combinar los recuerdos con tus invitaciones y tu menú?",
         body: [
           "Usa el mismo diseño en todo: mismos colores, misma tipografía y mismas iniciales en la invitación, el menú y el souvenir. Así la boda se lee como un solo conjunto planeado y no como piezas sueltas. Define el diseño una vez, aprueba la prueba digital y pide cada pieza con ese mismo archivo.",
           "Si todavía no tienes la papelería, empieza por las invitaciones y el menú de boda, y deja los souvenirs para después: ya tendrás la línea de diseño definida. Aquí tienes la guía para [pedir invitaciones personalizadas](/blog/como-pedir-invitaciones-personalizadas-para-eventos) y la del [menú de boda personalizado](/blog/menu-de-boda-personalizado).",
@@ -3492,7 +3492,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "¿Cuándo pedir los souvenirs de boda?",
+        heading: "¿Cuándo pedir los recuerdos de boda?",
         body: [
           "Cotiza en cuanto tengas fecha, lugar y una idea de los colores, y pide en firme cuando la lista de invitados esté casi cerrada. Así queda margen para revisar la prueba digital, hacer ajustes y recibir el pedido sin prisas antes de la boda, sobre todo si tu evento tiene fecha fija.",
           `La prueba digital llega normalmente en un máximo de 24 horas después del pago e incluye hasta 2 rondas de ajustes. Desde que la apruebas, tu pedido llega a domicilio en ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles en cualquier parte de México, o está listo para recoger en una sucursal Casa Blanca de Guadalajara en ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles.`,
@@ -3500,7 +3500,28 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "Cómo cotizar tus souvenirs de boda",
+        heading: "Recuerdos de boda elegantes y sencillos",
+        body: [
+          "Un diseño sencillo puede reunir los nombres de la pareja, la fecha y los colores de la celebración. Piensa primero en cómo quieres entregar el detalle: un dulcero personalizado ofrece espacio para que elijas su contenido, mientras que un sticker de vinil puede cerrar una bolsita o decorar un frasco. Los dulceros llegan armados y vacíos, y los stickers llevan el diseño que compartas.",
+          "Puedes usar la misma idea visual en ambos o elegir una sola pieza para cada invitado. Antes de producir, recibirás una prueba digital para revisar el diseño. Para coordinarlo con los lugares de tus invitados, consulta las ideas de [detalles de mesa para boda](/blog/detalles-de-mesa-boda-personalizados).",
+        ],
+      },
+      {
+        heading: "Recuerdos de boda civil y de iglesia",
+        body: [
+          "Tanto en una boda civil como en una ceremonia de iglesia, el recuerdo puede reflejar el estilo que la pareja eligió para celebrar. Un dulcero con nombre y temática permite preparar un detalle para cada invitado; llega armado y vacío para que ustedes decidan qué poner dentro. También pueden elegir stickers de vinil con su diseño para acompañar la presentación.",
+          "Si después de la ceremonia habrá una recepción, consideren en qué momento quieren entregar las piezas y cuántas personas asistirán. Los tatuajes temporales son otra opción para la fiesta y se cotizan por WhatsApp según el diseño y la cantidad. Compartan su fecha al pedir información para organizar el pedido con tiempo.",
+        ],
+      },
+      {
+        heading: "Recuerdos de boda para invitados: qué entregar",
+        body: [
+          "Para elegir qué entregar, parte de tu lista de invitados y del momento de la celebración. Puedes preparar un dulcero por persona y llenarlo con lo que elijas, o colocar los dulceros en una mesa para que cada quien tome uno. La guía de [mesa de dulces para boda](/blog/mesa-de-dulces-para-boda) reúne ideas para organizar ese espacio.",
+          "Otra alternativa son los stickers de vinil con el diseño de la boda, solos o para cerrar un detalle que ya tengas. Si prefieres tatuajes temporales, consulta la cotización por WhatsApp con tu diseño y la cantidad. Revisa la prueba digital antes de aprobar para que nombres y fecha estén como los quieres.",
+        ],
+      },
+      {
+        heading: "Cómo cotizar tus recuerdos de boda",
         body: [
           "Escríbenos por WhatsApp con los nombres de los novios, la fecha, los colores o tu diseño ya armado y el número de invitados. Te preparamos la cotización, y antes de producir te mandamos una prueba digital: no producimos nada hasta que la apruebas. Producimos en Guadalajara y enviamos a todo México.",
           "Si tu boda es en Guadalajara, también puedes recoger en una sucursal Casa Blanca. Si es en otra ciudad, el proceso de diseño y aprobación es el mismo.",
@@ -3508,6 +3529,14 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     faq: [
+      {
+        q: "¿Qué recuerdos de boda puedo dar a los invitados?",
+        a: "Puedes dar dulceros personalizados para llenar, stickers de vinil con tu diseño o tatuajes temporales, que se cotizan por WhatsApp según el diseño y la cantidad.",
+      },
+      {
+        q: "¿Cuáles son recuerdos de boda sencillos?",
+        a: "Un dulcero con los nombres y la temática de la boda o un sticker de vinil con iniciales y fecha son opciones sencillas que puedes personalizar.",
+      },
       {
         q: "¿Qué souvenirs de boda personalizados puedo pedir en Yume?",
         a: "Dulceros personalizados con el nombre de los novios y la temática de tu boda, stickers de vinil con iniciales y fecha, y tatuajes temporales con tu diseño. No hacemos botellas ni aromas.",
