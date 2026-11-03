@@ -4730,6 +4730,81 @@ export const blogPosts: BlogPost[] = [
       { label: "Mercado Libre: Cajitas de acetato (listado)", url: "https://listado.mercadolibre.com.mx/cajitas-de-acetato" },
     ],
   },
+  {
+    slug: "detalles-cumpleanos-adultos-personalizados",
+    title: "Recuerdos personalizados para cumpleaños de adultos",
+    description:
+      "Recuerdos personalizados para cumpleaños de adultos de 40, 50 y 60 años: una línea visual por década y cómo pedir con prueba digital.",
+    category: "Guías",
+    publishedAt: "2026-11-03",
+    intro:
+      "Cumplir 40, 50 o 60 años merece un detalle que se sienta pensado, no una broma de cotillón. Si preparas una sorpresa para tu mamá, tu papá o tu pareja, aquí tienes una línea visual por década, qué personalizar y cómo pedirlo con prueba digital.",
+    sections: [
+      {
+        heading: "Qué hace que funcionen los recuerdos personalizados para cumpleaños de adultos",
+        body: [
+          "Un recuerdo personalizado para un cumpleaños de adulto funciona mejor cuando se ve sobrio, coherente con la fiesta y lleva algo propio del festejado: su nombre, el año, una foto o su paleta de colores. Así deja de ser cotillón y se vuelve un detalle que se guarda.",
+          "Muchas ofertas para estas edades son de novedad: tazas, camisetas o tatuajes con frases como '50 y fabuloso', o plantillas estándar de tiendas en línea. Si organizas una sorpresa para tu mamá, tu papá o tu pareja, conviene pensar el conjunto completo antes de elegir piezas sueltas.",
+        ],
+      },
+      {
+        heading: "Una línea visual elegante para cada década",
+        body: [
+          "Una forma sencilla de acertar es darle una personalidad a cada década. Para los 40 conviene un diseño moderno y limpio, para los 50 uno sofisticado con pocos elementos, y para los 60 uno cálido que cuente una historia con fotos o recuerdos. Es una guía de diseño, no una regla.",
+          "La tabla resume una idea de estilo para cada edad. Úsala como punto de partida y ajústala a los gustos de quien cumple años.",
+        ],
+        table: {
+          headers: ["Década", "Línea visual", "Qué personalizar"],
+          rows: [
+            ["40 años", "Moderna y limpia", "Nombre y año en una tipografía sencilla, con dos colores"],
+            ["50 años", "Sofisticada", "Nombre y año con pocos elementos y colores sobrios"],
+            ["60 años", "Cálida y con historia", "Una foto o un detalle familiar, con una paleta cálida"],
+          ],
+        },
+      },
+      {
+        heading: "Qué personalizar: nombre, año, foto o paleta",
+        body: [
+          "Cada pieza puede llevar uno o varios de estos elementos: el nombre del festejado, el año que cumple, una foto o los colores de la fiesta. Lo importante es repetir los mismos elementos en todas las piezas para que se vea como un solo conjunto y no como detalles de distintas tiendas.",
+          "En Yume puedes pedir [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara) con nombre y temática, [stickers de vinil personalizados](/productos/stickers-vinil-impermeable) con tu diseño o foto, y tatuajes temporales para eventos por cotización. Todo con prueba digital antes de producir.",
+        ],
+      },
+      {
+        heading: "Cómo combinar dulceros, stickers y tatuajes temporales",
+        body: [
+          "Piensa en tres piezas con el mismo diseño: el dulcero como detalle principal, un sticker como recuerdo adicional y un tatuaje temporal para animar la fiesta. Si repiten nombre, año y paleta, los tres se leen como un conjunto cuidado y no como cotillón.",
+          "El dulcero llega armado y vacío, así que tú eliges qué lleva dentro. Si necesitas ideas, revisa [qué poner en un dulcero](/blog/que-poner-en-un-dulcero).",
+        ],
+      },
+      {
+        heading: "Cómo pedirlo: diseño, prueba digital y WhatsApp",
+        body: [
+          "El proceso es directo: nos escribes por WhatsApp, nos cuentas para quién es y qué estilo imaginas, y preparamos el diseño. Antes de producir te enviamos una prueba digital, y nada se produce hasta que la apruebas. Así llegas a la fiesta con un detalle que ya viste y aprobaste.",
+          "Para precios y tiempos, escríbenos por WhatsApp y te cotizamos según las piezas que elijas.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["dulceros-personalizados-guadalajara", "que-poner-en-un-dulcero"],
+    faq: [
+      {
+        q: "¿Qué piezas puedo combinar para un cumpleaños de adulto?",
+        a: "Puedes combinar dulceros con nombre y temática, stickers de vinil con tu diseño o foto y tatuajes temporales para eventos, todos con el mismo diseño.",
+      },
+      {
+        q: "¿Veré el diseño antes de que se produzca?",
+        a: "Sí. Te enviamos una prueba digital antes de producir y nada se produce hasta que la apruebas.",
+      },
+      {
+        q: "¿Los dulceros incluyen dulces?",
+        a: "No. El dulcero llega armado y vacío, listo para llenar con lo que tú elijas.",
+      },
+      {
+        q: "¿Puedo usar una foto del festejado?",
+        a: "Sí. Los stickers de vinil se pueden hacer con tu diseño, personaje o foto.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string) {

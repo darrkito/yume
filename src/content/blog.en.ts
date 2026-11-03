@@ -4129,6 +4129,80 @@ export const blogPostsEn: BlogPost[] = [
       { label: "Mercado Libre: Acetate boxes (listing, in Spanish)", url: "https://listado.mercadolibre.com.mx/cajitas-de-acetato" },
     ],
   },
+  {
+    slug: "personalized-adult-birthday-favors",
+    title: "Personalized Birthday Favors for Adults",
+    description:
+      "Personalized birthday favors for adults turning 40, 50 or 60: a visual style for each decade and how to order with a digital proof.",
+    category: "Guides",
+    publishedAt: "2026-11-03",
+    intro:
+      "Turning 40, 50 or 60 deserves a detail that feels thought out, not a party-store joke. If you are planning a surprise for your mom, dad or partner, here is a visual style for each decade, what to personalize and how to order with a digital proof.",
+    sections: [
+      {
+        heading: "What makes personalized birthday favors for adults work",
+        body: [
+          "A personalized favor for an adult birthday works best when it looks understated, matches the party and carries something of the guest of honor: their name, the year, a photo or their color palette. That is what turns party filler into a keepsake worth keeping.",
+          "Many offers for these ages are novelty items: mugs, shirts or temporary tattoos with phrases like '50 and fabulous', or standard templates from online shops. If you are planning a surprise for your mom, dad or partner, think about the whole set before choosing separate pieces.",
+        ],
+      },
+      {
+        heading: "A refined visual style for each decade",
+        body: [
+          "A simple way to get it right is to give each decade its own personality. For 40, choose a modern, clean design. For 50, a sophisticated one with few elements. For 60, a warm one that tells a story with photos or keepsakes. It is a design guide, not a rule.",
+          "The table sums up one style idea for each age. Use it as a starting point and adjust it to the taste of the birthday guest.",
+        ],
+        table: {
+          headers: ["Decade", "Visual style", "What to personalize"],
+          rows: [
+            ["40 years", "Modern and clean", "Name and year in a simple typeface, with two colors"],
+            ["50 years", "Sophisticated", "Name and year with few elements and understated colors"],
+            ["60 years", "Warm, with a story", "A photo or a family detail, with a warm palette"],
+          ],
+        },
+      },
+      {
+        heading: "What to personalize: name, year, photo or palette",
+        body: [
+          "Each piece can carry one or more of these elements: the guest of honor's name, the age they are turning, a photo or the party colors. What matters is repeating the same elements on every piece, so it reads as one set and not as favors from different shops.",
+          "At Yume you can order [personalized candy boxes in Guadalajara](/blog/dulceros-personalizados-guadalajara) with a name and theme, [custom vinyl stickers](/productos/stickers-vinil-impermeable) with your design or photo, and temporary tattoos for events by quote. Everything comes with a digital proof before production.",
+        ],
+      },
+      {
+        heading: "How to combine candy boxes, stickers and temporary tattoos",
+        body: [
+          "Think of three pieces with the same design: the candy box as the main favor, a sticker as an extra keepsake and a temporary tattoo to liven up the party. If they repeat the name, year and palette, the three read as a polished set and not as party filler.",
+          "The candy box arrives assembled and empty, so you choose what goes inside. For ideas, see [what to put in a candy box](/blog/que-poner-en-un-dulcero) (in Spanish).",
+        ],
+      },
+      {
+        heading: "How to order: design, digital proof and WhatsApp",
+        body: [
+          "The process is simple: you message us on WhatsApp, tell us who it is for and the style you imagine, and we prepare the design. Before producing, we send you a digital proof, and nothing is produced until you approve it. You arrive at the party with a favor you have already seen and approved.",
+          "For prices and timing, message us on WhatsApp and we will quote the pieces you choose.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable"],
+    faq: [
+      {
+        q: "Which pieces can I combine for an adult birthday?",
+        a: "You can combine candy boxes with a name and theme, vinyl stickers with your design or photo, and temporary tattoos for events, all with the same design.",
+      },
+      {
+        q: "Will I see the design before it is produced?",
+        a: "Yes. We send you a digital proof before production and nothing is produced until you approve it.",
+      },
+      {
+        q: "Do the candy boxes come with candy?",
+        a: "No. The candy box arrives assembled and empty, ready to fill with whatever you choose.",
+      },
+      {
+        q: "Can I use a photo of the birthday guest?",
+        a: "Yes. Vinyl stickers can be made with your design, character or photo.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPostEn(slug: string) {
