@@ -7,10 +7,418 @@ import { dulceroPostsEn } from "@/content/blog-dulceros.en";
 
 export const blogPostsEn: BlogPost[] = [
   {
+    "slug": "google-review-plate-for-medical-practices",
+    "title": "Google review plate for medical practices",
+    "metaTitle": "Google review plate for medical practices",
+    "description": "Find a place for an NFC and QR review plate and invite patients to share honest feedback respectfully.",
+    "category": "Guides",
+    "publishedAt": "2026-11-03",
+    "modifiedAt": "2026-11-03",
+    "intro": "A Google review plate for medical practices makes the listing easier for each patient to find, without requiring anyone to write. A discreet invitation and care for patient privacy should accompany every request.",
+    "sections": [
+      {
+        "heading": "Where can a practice place the plate?",
+        "body": [
+          "Reception and the waiting room are practical places if the piece is visible without blocking access. Choose a surface patients can reach and test the link with a phone. The plate includes adhesive; the stand sits upright on a counter."
+        ]
+      },
+      {
+        "heading": "When should you invite patients to review?",
+        "body": [
+          "At the end of a visit or on leaving reception, offer the link discreetly and let each person decide. Avoid interrupting a private conversation or insisting if someone declines. Patients can also choose to respond later on their own phone."
+        ]
+      },
+      {
+        "heading": "How can you ask without pressure or incentives?",
+        "body": [
+          "Ask all patients for an honest opinion, without suggesting a rating or offering discounts or gifts. For example: “If you wish, you can share your experience on Google.” According to Google, incentives in exchange for reviews are prohibited and count as fake engagement."
+        ]
+      },
+      {
+        "heading": "How should you respond while protecting privacy?",
+        "body": [
+          "Thank the person in general terms and never disclose patient health information or details of their care in a public reply. If follow-up is needed, offer an appropriate private channel without publicly confirming personal information or the circumstances of a visit."
+        ]
+      },
+      {
+        "heading": "Which format can a practice use?",
+        "body": [
+          "The Yume plate measures 12 × 12 cm and costs MXN $140; the stand costs MXN $200. Both have NFC and QR and come in white or black. Payment is one-time and you can order one piece without an app or subscription."
+        ]
+      },
+      {
+        "heading": "How do you prepare the link and other materials?",
+        "body": [
+          "Check that the listing belongs to your practice and share its review link with Yume: NFC and QR are configured before shipping. To complement your practice’s identification materials, see our practical guide to business cards for your practice as well."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can I order one piece?",
+        "a": "Yes. You can order one plate or stand; both have NFC and QR configured with your review link before shipping."
+      },
+      {
+        "q": "Does the piece guarantee more reviews?",
+        "a": "No. It makes the link easier to reach; each person decides whether to leave feedback and what to write."
+      }
+    ],
+    "relatedProductSlugs": [
+      "placa-resena-google-nfc",
+      "stand-resena-google-nfc"
+    ],
+    "relatedBlogSlugs": [
+      "set-up-google-business-profile-and-ask-for-reviews",
+      "maxreviewer-alternative-google-review-plates",
+      "how-to-get-more-google-reviews-nfc-qr",
+      "nfc-plate-vs-printed-qr-code-for-reviews",
+      "how-to-use-your-yume-google-review-plate",
+      "business-cards-for-your-practice"
+    ],
+    "quoteMessage": "Hi, I am interested in the NFC plate and stand for Google reviews.",
+    "sources": [
+      {
+        "label": "Google: tips to get reviews",
+        "url": "https://support.google.com/business/answer/3474122?hl=en"
+      },
+      {
+        "label": "Google: prohibited and restricted content",
+        "url": "https://support.google.com/business/answer/7400114?hl=en"
+      }
+    ]
+  },
+  {
+    "slug": "google-review-plate-for-restaurants",
+    "title": "Google review plate for restaurants",
+    "metaTitle": "Google review plate for restaurants",
+    "description": "Find a place for an NFC and QR plate at your restaurant and invite honest feedback at the right moment.",
+    "category": "Guides",
+    "publishedAt": "2026-11-03",
+    "modifiedAt": "2026-11-03",
+    "intro": "A Google review plate for restaurants can bring the listing link closer to customers at a single location. Choose a visible place and invite honest feedback at the end of the experience without influencing the response.",
+    "sections": [
+      {
+        "heading": "Where can a restaurant place the plate?",
+        "body": [
+          "A table, register or takeout collection area can make the link visible as customers finish. Choose an accessible location that does not obstruct service and check that both NFC and QR open the correct listing before inviting customers to use them."
+        ]
+      },
+      {
+        "heading": "When should you ask for a review?",
+        "body": [
+          "When closing the bill or handing over a takeout order, invite customers politely and let them decide whether to participate. Avoid interrupting their meal or insisting. They can open the link at that moment or choose not to write anything."
+        ]
+      },
+      {
+        "heading": "Should you choose a plate or a stand?",
+        "body": [
+          "The plate includes adhesive and measures 12 × 12 cm; the stand sits upright on a surface. The plate costs MXN $140 and the stand MXN $200. Both have NFC and QR, with a one-time payment and orders from one piece."
+        ]
+      },
+      {
+        "heading": "How can you ask without influencing feedback?",
+        "body": [
+          "Offer the link to all real customers and request an honest opinion without suggesting stars. Do not offer discounts or free products in exchange: Google prohibits review incentives. Accept positive and negative comments alike and avoid putting pressure on anyone."
+        ]
+      },
+      {
+        "heading": "How is the piece prepared for your restaurant?",
+        "body": [
+          "Share your restaurant listing’s review link when placing the order. Yume configures the NFC and QR with that link before shipping. Choose white or black and use the piece without an app or subscription; it does not include a dashboard."
+        ]
+      },
+      {
+        "heading": "What should you do after receiving a review?",
+        "body": [
+          "Read feedback carefully and thank the customer briefly and professionally. If someone raises a problem, listen and offer an appropriate channel for follow-up without arguing publicly. Check that your listing’s contact details and opening hours are still accurate as well."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can I order one piece?",
+        "a": "Yes. You can order one plate or stand; both have NFC and QR configured with your review link before shipping."
+      },
+      {
+        "q": "Does the piece guarantee more reviews?",
+        "a": "No. It makes the link easier to reach; each person decides whether to leave feedback and what to write."
+      }
+    ],
+    "relatedProductSlugs": [
+      "placa-resena-google-nfc",
+      "stand-resena-google-nfc"
+    ],
+    "relatedBlogSlugs": [
+      "set-up-google-business-profile-and-ask-for-reviews",
+      "maxreviewer-alternative-google-review-plates",
+      "how-to-get-more-google-reviews-nfc-qr",
+      "nfc-plate-vs-printed-qr-code-for-reviews",
+      "how-to-use-your-yume-google-review-plate"
+    ],
+    "quoteMessage": "Hi, I am interested in the NFC plate and stand for Google reviews.",
+    "sources": [
+      {
+        "label": "Google: tips to get reviews",
+        "url": "https://support.google.com/business/answer/3474122?hl=en"
+      },
+      {
+        "label": "Google: prohibited and restricted content",
+        "url": "https://support.google.com/business/answer/7400114?hl=en"
+      }
+    ]
+  },
+  {
+    "slug": "google-review-plate-for-salons-and-barbershops",
+    "title": "Google review plate for salons and barbershops",
+    "metaTitle": "Google review plate for salons and barbershops",
+    "description": "Choose a place for an NFC and QR plate and invite honest reviews at your salon or barbershop.",
+    "category": "Guides",
+    "publishedAt": "2026-11-03",
+    "modifiedAt": "2026-11-03",
+    "intro": "A Google review plate for salons and barbershops makes a single business’s listing easier to reach. Place it near reception or the register to offer each customer a simple way to share their experience if they choose.",
+    "sections": [
+      {
+        "heading": "Where should you place the piece?",
+        "body": [
+          "Reception, the register or a waiting table can keep the piece visible without interrupting service. Check that customers can comfortably tap their phone or scan the QR code and that the link leads to the correct listing for your business."
+        ]
+      },
+      {
+        "heading": "When should you invite customers to review?",
+        "body": [
+          "At the end of an appointment or during payment, invite customers to share their experience without pressure. Offer the same opportunity to all real customers; each person decides whether they want to write and what they want to say about their visit."
+        ]
+      },
+      {
+        "heading": "Which format fits your space?",
+        "body": [
+          "The plate measures 12 × 12 cm and includes adhesive; the stand sits upright. The plate costs MXN $140 and the stand MXN $200, with a one-time payment. Both are available in white or black and you can order one piece."
+        ]
+      },
+      {
+        "heading": "How can you ask respectfully?",
+        "body": [
+          "Ask for an honest opinion without suggesting a rating or selecting only customers who seem satisfied. Do not offer free services or discounts for reviews: Google prohibits these incentives. A simple invitation is “If you wish, share your experience on Google.”"
+        ]
+      },
+      {
+        "heading": "How do NFC and QR work?",
+        "body": [
+          "Yume configures the NFC and QR with the business’s review link before shipping. Customers can tap their phone or scan the code to open it. The piece needs no app or subscription and does not include a dashboard for managing reviews."
+        ]
+      },
+      {
+        "heading": "How can you handle public feedback?",
+        "body": [
+          "Thank customers briefly and professionally without sharing private information about their visit. If a complaint arises, listen and offer an appropriate channel for follow-up. Keep your listing’s opening hours and contact details accurate so other customers know how to reach you."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can I order one piece?",
+        "a": "Yes. You can order one plate or stand; both have NFC and QR configured with your review link before shipping."
+      },
+      {
+        "q": "Does the piece guarantee more reviews?",
+        "a": "No. It makes the link easier to reach; each person decides whether to leave feedback and what to write."
+      }
+    ],
+    "relatedProductSlugs": [
+      "placa-resena-google-nfc",
+      "stand-resena-google-nfc"
+    ],
+    "relatedBlogSlugs": [
+      "set-up-google-business-profile-and-ask-for-reviews",
+      "maxreviewer-alternative-google-review-plates",
+      "how-to-get-more-google-reviews-nfc-qr",
+      "nfc-plate-vs-printed-qr-code-for-reviews",
+      "how-to-use-your-yume-google-review-plate"
+    ],
+    "quoteMessage": "Hi, I am interested in the NFC plate and stand for Google reviews.",
+    "sources": [
+      {
+        "label": "Google: tips to get reviews",
+        "url": "https://support.google.com/business/answer/3474122?hl=en"
+      },
+      {
+        "label": "Google: prohibited and restricted content",
+        "url": "https://support.google.com/business/answer/7400114?hl=en"
+      }
+    ]
+  },
+  {
+    "slug": "google-review-plate-for-event-planners-and-venues",
+    "title": "Google review plate for event planners and venues",
+    "metaTitle": "Google review plate for event planners and venues",
+    "description": "How planners, venues and event vendors can share their review link with an NFC and QR plate.",
+    "category": "Guides",
+    "publishedAt": "2026-11-03",
+    "modifiedAt": "2026-11-03",
+    "intro": "A Google review plate for event planners and venues makes a business listing easier for clients to reach. Honest reviews can provide social proof for people looking for a planner, venue or vendor for their own celebration.",
+    "sections": [
+      {
+        "heading": "Which profile should receive the reviews?",
+        "body": [
+          "Use the review link for the business that provided the service, provided it meets Google’s requirements for a profile. A planner or service vendor can check eligibility and complete the listing with clear, accurate information about the business and its contact details."
+        ]
+      },
+      {
+        "heading": "Where can you share the link at an event?",
+        "body": [
+          "A venue can place the piece at reception; a vendor can display it at their service table when appropriate. Choose an accessible location that does not interrupt the celebration and make sure the link leads to your own business listing."
+        ]
+      },
+      {
+        "heading": "When should you invite clients to review?",
+        "body": [
+          "After the service or when wrapping up coordination, offer the link without interrupting important moments at the event. An invitation by message also lets the client respond later. Participation is voluntary and each person decides what to say about their experience."
+        ]
+      },
+      {
+        "heading": "How can you request honest reviews?",
+        "body": [
+          "Invite all real clients, not just those you believe are satisfied, and do not suggest a rating. Google prohibits gifts or discounts in exchange for reviews. Accept positive and negative opinions and avoid pressuring anyone or making the invitation conditional."
+        ]
+      },
+      {
+        "heading": "Which piece fits the way you work?",
+        "body": [
+          "The 12 × 12 cm plate includes adhesive and costs MXN $140; the stand sits upright and costs MXN $200. Both have NFC and QR, are available in white or black and can be ordered from one piece with one-time payment."
+        ]
+      },
+      {
+        "heading": "How do you prepare the link and other details?",
+        "body": [
+          "Yume configures the NFC and QR with the customer’s review link before shipping the piece; it requires no app or subscription. To plan other event materials, see our practical guide for planners working with a supplier of personalized event details."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can I order one piece?",
+        "a": "Yes. You can order one plate or stand; both have NFC and QR configured with your review link before shipping."
+      },
+      {
+        "q": "Does the piece guarantee more reviews?",
+        "a": "No. It makes the link easier to reach; each person decides whether to leave feedback and what to write."
+      }
+    ],
+    "relatedProductSlugs": [
+      "placa-resena-google-nfc",
+      "stand-resena-google-nfc"
+    ],
+    "relatedBlogSlugs": [
+      "set-up-google-business-profile-and-ask-for-reviews",
+      "maxreviewer-alternative-google-review-plates",
+      "how-to-get-more-google-reviews-nfc-qr",
+      "nfc-plate-vs-printed-qr-code-for-reviews",
+      "how-to-use-your-yume-google-review-plate",
+      "guide-for-planners-working-with-custom-favors-supplier"
+    ],
+    "quoteMessage": "Hi, I am interested in the NFC plate and stand for Google reviews.",
+    "sources": [
+      {
+        "label": "Google: tips to get reviews",
+        "url": "https://support.google.com/business/answer/3474122?hl=en"
+      },
+      {
+        "label": "Google: prohibited and restricted content",
+        "url": "https://support.google.com/business/answer/7400114?hl=en"
+      }
+    ]
+  },
+  {
+    "slug": "how-to-run-a-customer-satisfaction-survey",
+    "title": "How to run a customer satisfaction survey",
+    "metaTitle": "Customer satisfaction survey: questions and guide",
+    "description": "Create a customer satisfaction survey, choose useful questions and share it by QR code, receipt or WhatsApp.",
+    "category": "Guides",
+    "publishedAt": "2026-11-03",
+    "modifiedAt": "2026-11-03",
+    "intro": "A customer satisfaction survey helps you listen to experiences and find opportunities to improve. You can create one with a free form or a WhatsApp message; keep the survey separate from any invitation to post a public review.",
+    "sections": [
+      {
+        "heading": "What is a customer satisfaction survey for?",
+        "body": [
+          "It is a short set of questions about the experience of people who bought a product or received a service. Answers can reveal what works and what needs attention. First decide what you want to improve and avoid requesting information you do not need."
+        ]
+      },
+      {
+        "heading": "How many questions and what types should you use?",
+        "body": [
+          "Start with six to eight clear questions: combine consistent scales with one open question. CSAT can measure satisfaction from 1 to 5; NPS asks likelihood to recommend from 0 to 10. Explain the endpoints of each scale so answers can be compared."
+        ]
+      },
+      {
+        "heading": "What customer satisfaction survey questions can you ask?",
+        "body": [
+          "Use simple questions about service, the product and waiting time, along with a recommendation scale and an open response. Adapt each question to what your business offers and explain the endpoints of the scales before you share the form with customers.",
+          "Try these seven questions: 1. How satisfied were you with the service, from 1 to 5? 2. With the product or service, from 1 to 5? 3. With the wait, from 1 to 5? 4. Was the information clear? 5. Did you find what you needed? 6. How likely are you to recommend us, from 0 to 10? 7. What could we improve?"
+        ]
+      },
+      {
+        "heading": "Where and when can you use a QR survey?",
+        "body": [
+          "Share a QR code leading to a form at the counter or on a receipt, or send questions by WhatsApp after the purchase or service. Explain that responding is voluntary and choose a time close to the experience without interrupting the customer."
+        ]
+      },
+      {
+        "heading": "How should you read and use the results?",
+        "body": [
+          "Review answers question by question and look for recurring themes in open comments. Consider how many people responded before drawing conclusions; a few responses may not represent everyone. Choose a concrete improvement, assign follow-up and compare later feedback with care."
+        ]
+      },
+      {
+        "heading": "How can you invite reviews without filtering customers?",
+        "body": [
+          "Keep the survey and review request separate and offer both to all customers. Sending only happy customers to Google or discouraging unhappy customers violates its review policy. The plate gives everyone the same NFC or QR path to leave an honest review.",
+          "Yume sells the plate and stand, not a survey tool. It configures both paths with the review link before shipping; the plate costs MXN $140 and the stand MXN $200, one-time, from one piece."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can I order one piece?",
+        "a": "Yes. You can order one plate or stand; both have NFC and QR configured with your review link before shipping."
+      },
+      {
+        "q": "Does the piece guarantee more reviews?",
+        "a": "No. It makes the link easier to reach; each person decides whether to leave feedback and what to write."
+      }
+    ],
+    "relatedProductSlugs": [
+      "placa-resena-google-nfc",
+      "stand-resena-google-nfc"
+    ],
+    "relatedBlogSlugs": [
+      "set-up-google-business-profile-and-ask-for-reviews",
+      "maxreviewer-alternative-google-review-plates",
+      "how-to-get-more-google-reviews-nfc-qr",
+      "nfc-plate-vs-printed-qr-code-for-reviews",
+      "how-to-use-your-yume-google-review-plate",
+      "google-review-plate-for-medical-practices",
+      "google-review-plate-for-restaurants",
+      "google-review-plate-for-salons-and-barbershops",
+      "google-review-plate-for-event-planners-and-venues"
+    ],
+    "quoteMessage": "Hi, I am interested in the NFC plate and stand for Google reviews.",
+    "sources": [
+      {
+        "label": "Google: tips to get reviews",
+        "url": "https://support.google.com/business/answer/3474122?hl=en"
+      },
+      {
+        "label": "Google: prohibited and restricted content",
+        "url": "https://support.google.com/business/answer/7400114?hl=en"
+      }
+    ]
+  },
+  {
     slug: BLOG_SLUG_EN["alternativa-a-maxreviewer-placas-resenas-google"],
     title: "MaxReviewer alternative: Google review plates for one business",
     metaTitle: "MaxReviewer alternative: Google review plates",
-    description: "Compare MaxReviewer and Yume: a multi-location platform or a configured NFC and QR plate for your business at a one-time price.",
+    description: "Compare MaxReviewer and Yume: a multi-location platform or an NFC and QR plate for your business, from 1 piece at a one-time price.",
     category: "Guides",
     publishedAt: "2026-11-03",
     modifiedAt: "2026-11-03",
@@ -35,7 +443,7 @@ export const blogPostsEn: BlogPost[] = [
       { q: "Who sets up the NFC and QR?", a: "Yume programs the NFC and generates the QR with your review link before shipping." },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
-    relatedBlogSlugs: [BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"], BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"], BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"], BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"]],
+    relatedBlogSlugs: [BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"], BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"], BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"], BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"], BLOG_SLUG_EN["placa-resenas-google-para-consultorios"], BLOG_SLUG_EN["placa-resenas-google-para-restaurantes"], BLOG_SLUG_EN["placa-resenas-google-para-salones-esteticas-y-barberias"], BLOG_SLUG_EN["placa-resenas-google-para-planners-y-eventos"], BLOG_SLUG_EN["como-hacer-una-encuesta-de-satisfaccion-del-cliente"]],
     quoteMessage: "Hi, I am interested in an NFC plate or stand for Google reviews.",
     sources: [
       { label: "MaxReviewer: plans (accessed November 2026)", url: "https://maxreviewer.com/planes" },
@@ -67,7 +475,7 @@ export const blogPostsEn: BlogPost[] = [
       { q: "Does a plate guarantee more reviews?", a: "No. A plate makes the link easier to reach; each customer decides whether to review and what to write." },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
-    relatedBlogSlugs: [BLOG_SLUG_EN["alternativa-a-maxreviewer-placas-resenas-google"], BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"], BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"], BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"]],
+    relatedBlogSlugs: [BLOG_SLUG_EN["alternativa-a-maxreviewer-placas-resenas-google"], BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"], BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"], BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"], BLOG_SLUG_EN["placa-resenas-google-para-consultorios"], BLOG_SLUG_EN["placa-resenas-google-para-restaurantes"], BLOG_SLUG_EN["placa-resenas-google-para-salones-esteticas-y-barberias"], BLOG_SLUG_EN["placa-resenas-google-para-planners-y-eventos"], BLOG_SLUG_EN["como-hacer-una-encuesta-de-satisfaccion-del-cliente"]],
     quoteMessage: "Hi, I would like to learn about NFC plates and stands for Google reviews.",
     sources: [
       { label: "Google: tips to get reviews", url: "https://support.google.com/business/answer/3474122?hl=en" },
@@ -1723,7 +2131,7 @@ export const blogPostsEn: BlogPost[] = [
         a: "The version without a stand sticks directly onto the counter, register, or wall. The version with a stand sits upright on a desk or table with nothing to stick down.",
       },
     ],
-    relatedBlogSlugs: [BLOG_SLUG_EN["alternativa-a-maxreviewer-placas-resenas-google"], BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"], BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"], BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"]],
+    relatedBlogSlugs: [BLOG_SLUG_EN["alternativa-a-maxreviewer-placas-resenas-google"], BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"], BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"], BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"], BLOG_SLUG_EN["placa-resenas-google-para-consultorios"], BLOG_SLUG_EN["placa-resenas-google-para-restaurantes"], BLOG_SLUG_EN["placa-resenas-google-para-salones-esteticas-y-barberias"], BLOG_SLUG_EN["placa-resenas-google-para-planners-y-eventos"], BLOG_SLUG_EN["como-hacer-una-encuesta-de-satisfaccion-del-cliente"]],
     relatedProductSlugs: ["stand-resena-google-nfc", "placa-resena-google-nfc"],
   },
   {
@@ -1762,7 +2170,7 @@ export const blogPostsEn: BlogPost[] = [
         a: "No. NFC adds a second way to use the plate, it does not replace the QR code. The customer can tap the phone or scan the code with the camera. Having both on the same plate means no customer is left unable to use it, and the design matches your brand.",
       },
     ],
-    relatedBlogSlugs: [BLOG_SLUG_EN["alternativa-a-maxreviewer-placas-resenas-google"], BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"], BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"], BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"]],
+    relatedBlogSlugs: [BLOG_SLUG_EN["alternativa-a-maxreviewer-placas-resenas-google"], BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"], BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"], BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"], BLOG_SLUG_EN["placa-resenas-google-para-consultorios"], BLOG_SLUG_EN["placa-resenas-google-para-restaurantes"], BLOG_SLUG_EN["placa-resenas-google-para-salones-esteticas-y-barberias"], BLOG_SLUG_EN["placa-resenas-google-para-planners-y-eventos"], BLOG_SLUG_EN["como-hacer-una-encuesta-de-satisfaccion-del-cliente"]],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
   },
   {
@@ -1867,7 +2275,7 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
-    relatedBlogSlugs: [BLOG_SLUG_EN["alternativa-a-maxreviewer-placas-resenas-google"], BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"], BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"], BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"]],
+    relatedBlogSlugs: [BLOG_SLUG_EN["alternativa-a-maxreviewer-placas-resenas-google"], BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"], BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"], BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"], BLOG_SLUG_EN["placa-resenas-google-para-consultorios"], BLOG_SLUG_EN["placa-resenas-google-para-restaurantes"], BLOG_SLUG_EN["placa-resenas-google-para-salones-esteticas-y-barberias"], BLOG_SLUG_EN["placa-resenas-google-para-planners-y-eventos"], BLOG_SLUG_EN["como-hacer-una-encuesta-de-satisfaccion-del-cliente"]],
   },
   {
     slug: BLOG_SLUG_EN["papeleria-personalizada-vs-plantillas-genericas"],

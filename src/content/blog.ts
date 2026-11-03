@@ -58,10 +58,418 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    "slug": "placa-resenas-google-para-consultorios",
+    "title": "Placa de reseñas de Google para consultorios",
+    "metaTitle": "Placa de reseñas Google para consultorios",
+    "description": "Descubre dónde colocar una placa NFC y QR en tu consultorio y cómo invitar a pacientes a compartir una opinión honesta.",
+    "category": "Guías",
+    "publishedAt": "2026-11-03",
+    "modifiedAt": "2026-11-03",
+    "intro": "Una placa de reseñas de Google para consultorios facilita que cada paciente encuentre el enlace de la ficha, sin obligarlo a escribir. Una invitación discreta y el cuidado de su privacidad deben acompañar cualquier petición.",
+    "sections": [
+      {
+        "heading": "¿Dónde colocar la placa en un consultorio?",
+        "body": [
+          "Recepción y sala de espera son lugares prácticos si la pieza queda visible sin obstaculizar el paso. Elige una superficie accesible y comprueba el enlace con un teléfono. La placa incluye adhesivo; el stand puede colocarse de pie sobre un mostrador."
+        ]
+      },
+      {
+        "heading": "¿Cuándo pedir una opinión a los pacientes?",
+        "body": [
+          "Al terminar la visita o al salir de recepción puedes ofrecer el enlace con discreción, siempre dejando que la persona decida. Evita interrumpir una conversación privada o insistir cuando alguien no quiera participar; también puede responder más tarde desde su teléfono."
+        ]
+      },
+      {
+        "heading": "¿Cómo invitar sin presionar ni ofrecer incentivos?",
+        "body": [
+          "Pide a todos los pacientes una opinión honesta, sin sugerir una calificación ni ofrecer descuentos o regalos. Por ejemplo: «Si lo desea, puede compartir su experiencia en Google». Según Google, los incentivos a cambio de reseñas están prohibidos y cuentan como interacción falsa."
+        ]
+      },
+      {
+        "heading": "¿Cómo responder sin revelar información de salud?",
+        "body": [
+          "Agradece de manera general y nunca incluyas información de salud del paciente ni detalles de su atención en una respuesta pública. Si hace falta dar seguimiento, ofrece un canal privado apropiado sin confirmar públicamente datos personales o circunstancias de la visita."
+        ]
+      },
+      {
+        "heading": "¿Qué formato puede usar un consultorio?",
+        "body": [
+          "La placa de Yume mide 12 × 12 cm y cuesta $140 MXN; el stand cuesta $200 MXN. Ambos tienen NFC y QR y están disponibles en blanco o negro. El pago es único y puedes pedir una pieza, sin app ni suscripción."
+        ]
+      },
+      {
+        "heading": "¿Cómo preparar el enlace y otros materiales?",
+        "body": [
+          "Comprueba que la ficha corresponda al consultorio y comparte su enlace de reseñas con Yume: el NFC y el QR se configuran antes del envío. Para complementar la identificación del consultorio, consulta también nuestra guía de tarjetas de presentación para consultorio."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Puedo pedir una sola pieza?",
+        "a": "Sí. Puedes pedir una placa o un stand; ambos tienen NFC y QR configurados con tu enlace de reseñas antes del envío."
+      },
+      {
+        "q": "¿La pieza garantiza más reseñas?",
+        "a": "No. Facilita el acceso al enlace; cada persona decide si deja una opinión y qué escribe."
+      }
+    ],
+    "relatedProductSlugs": [
+      "placa-resena-google-nfc",
+      "stand-resena-google-nfc"
+    ],
+    "relatedBlogSlugs": [
+      "como-configurar-perfil-de-google-y-pedir-resenas",
+      "alternativa-a-maxreviewer-placas-resenas-google",
+      "como-conseguir-mas-resenas-de-google-nfc-qr",
+      "placa-nfc-vs-codigo-qr-impreso-resenas",
+      "como-usar-placa-resenas-google-yume",
+      "tarjetas-de-presentacion-consultorio"
+    ],
+    "quoteMessage": "Hola, me interesan la placa y el stand NFC para reseñas de Google.",
+    "sources": [
+      {
+        "label": "Google: consejos para recibir reseñas",
+        "url": "https://support.google.com/business/answer/3474122?hl=es"
+      },
+      {
+        "label": "Google: contenido prohibido y restringido",
+        "url": "https://support.google.com/business/answer/7400114?hl=es"
+      }
+    ]
+  },
+  {
+    "slug": "placa-resenas-google-para-restaurantes",
+    "title": "Placa de reseñas de Google para restaurantes",
+    "metaTitle": "Placa de reseñas Google para restaurantes",
+    "description": "Ideas para colocar una placa de reseñas NFC y QR en mesa, caja o pedidos para llevar y pedir opiniones honestas.",
+    "category": "Guías",
+    "publishedAt": "2026-11-03",
+    "modifiedAt": "2026-11-03",
+    "intro": "Una placa de reseñas de Google para restaurantes puede acercar el enlace de tu ficha a quienes visitan un solo local. Elige un lugar visible y pide opiniones honestas al final de la experiencia, sin condicionar la respuesta.",
+    "sections": [
+      {
+        "heading": "¿Dónde colocar la placa en el restaurante?",
+        "body": [
+          "Una mesa, la caja o el área de entrega para llevar pueden facilitar que la persona vea el enlace al terminar. Elige un sitio accesible que no estorbe el servicio y verifica que el NFC y el QR abran la ficha correcta."
+        ]
+      },
+      {
+        "heading": "¿Cuándo conviene pedir una reseña?",
+        "body": [
+          "Al cerrar la cuenta o entregar un pedido para llevar, invita con amabilidad y deja que el cliente decida si participa. Evita interrumpir la comida o insistir. La persona puede abrir el enlace en ese momento o elegir no escribir."
+        ]
+      },
+      {
+        "heading": "¿Conviene una placa o un stand?",
+        "body": [
+          "La placa incluye adhesivo para fijarla y mide 12 × 12 cm; el stand se coloca de pie sobre una superficie. La placa cuesta $140 MXN y el stand $200 MXN. Ambos tienen NFC y QR, con pago único y desde una pieza."
+        ]
+      },
+      {
+        "heading": "¿Cómo pedir opiniones sin condicionar la respuesta?",
+        "body": [
+          "Ofrece el enlace a todos los clientes reales y pide una opinión honesta sin sugerir estrellas. No ofrezcas descuentos ni productos gratis a cambio: la ayuda de Google prohíbe los incentivos por reseñas. Acepta tanto comentarios positivos como negativos y evita presionar."
+        ]
+      },
+      {
+        "heading": "¿Cómo se prepara la pieza para tu local?",
+        "body": [
+          "Comparte el enlace de reseñas de la ficha de tu restaurante al hacer el pedido. Yume configura el NFC y el QR con ese enlace antes del envío. Puedes elegir blanco o negro y usar la pieza sin app ni suscripción."
+        ]
+      },
+      {
+        "heading": "¿Qué hacer después de recibir una reseña?",
+        "body": [
+          "Lee los comentarios con atención y agradece de forma breve y profesional. Si alguien señala un problema, escucha y ofrece un canal adecuado para darle seguimiento sin discutir en público. Revisa también que los datos y horarios de tu ficha sigan correctos."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Puedo pedir una sola pieza?",
+        "a": "Sí. Puedes pedir una placa o un stand; ambos tienen NFC y QR configurados con tu enlace de reseñas antes del envío."
+      },
+      {
+        "q": "¿La pieza garantiza más reseñas?",
+        "a": "No. Facilita el acceso al enlace; cada persona decide si deja una opinión y qué escribe."
+      }
+    ],
+    "relatedProductSlugs": [
+      "placa-resena-google-nfc",
+      "stand-resena-google-nfc"
+    ],
+    "relatedBlogSlugs": [
+      "como-configurar-perfil-de-google-y-pedir-resenas",
+      "alternativa-a-maxreviewer-placas-resenas-google",
+      "como-conseguir-mas-resenas-de-google-nfc-qr",
+      "placa-nfc-vs-codigo-qr-impreso-resenas",
+      "como-usar-placa-resenas-google-yume"
+    ],
+    "quoteMessage": "Hola, me interesan la placa y el stand NFC para reseñas de Google.",
+    "sources": [
+      {
+        "label": "Google: consejos para recibir reseñas",
+        "url": "https://support.google.com/business/answer/3474122?hl=es"
+      },
+      {
+        "label": "Google: contenido prohibido y restringido",
+        "url": "https://support.google.com/business/answer/7400114?hl=es"
+      }
+    ]
+  },
+  {
+    "slug": "placa-resenas-google-para-salones-esteticas-y-barberias",
+    "title": "Placa de reseñas de Google para salones, estéticas y barberías",
+    "metaTitle": "Placa de reseñas Google para salones y barberías",
+    "description": "Elige dónde colocar una placa NFC y QR y cómo pedir reseñas honestas en tu salón, estética o barbería.",
+    "category": "Guías",
+    "publishedAt": "2026-11-03",
+    "modifiedAt": "2026-11-03",
+    "intro": "Una placa de reseñas de Google para salones, estéticas y barberías facilita el acceso a la ficha de un negocio. Puede colocarse cerca de la recepción o caja para ofrecer a cada cliente una forma sencilla de compartir su experiencia.",
+    "sections": [
+      {
+        "heading": "¿Dónde colocar la pieza en el salón?",
+        "body": [
+          "Recepción, caja o una mesa de espera son opciones para colocar la pieza a la vista sin interrumpir el servicio. Comprueba que el cliente pueda acercar su teléfono o escanear el QR con comodidad y que el enlace corresponda al negocio."
+        ]
+      },
+      {
+        "heading": "¿En qué momento pedir una opinión?",
+        "body": [
+          "Al terminar la cita o al pagar puedes invitar al cliente a compartir su experiencia, con tiempo y sin presionarlo. Ofrece la misma oportunidad a todos los clientes reales; cada persona decide si quiere escribir y qué desea contar sobre su visita."
+        ]
+      },
+      {
+        "heading": "¿Qué formato elegir para el espacio?",
+        "body": [
+          "La placa mide 12 × 12 cm e incluye adhesivo; el stand se coloca de pie. La placa cuesta $140 MXN y el stand $200 MXN, con pago único. Ambos están disponibles en blanco o negro y puedes pedir una pieza."
+        ]
+      },
+      {
+        "heading": "¿Cómo pedir reseñas de forma respetuosa?",
+        "body": [
+          "Pide una opinión honesta sin sugerir una calificación ni seleccionar solo a quienes parecen satisfechos. No ofrezcas servicios gratis ni descuentos a cambio de reseñas: Google considera prohibidos estos incentivos. Una frase sencilla puede ser «Si deseas, comparte tu experiencia en Google»."
+        ]
+      },
+      {
+        "heading": "¿Cómo funciona el NFC y el QR?",
+        "body": [
+          "Yume configura el NFC y el QR con el enlace de reseñas del negocio antes del envío. El cliente puede acercar su teléfono o escanear el código para abrirlo. La pieza no necesita app ni suscripción y no incluye un dashboard."
+        ]
+      },
+      {
+        "heading": "¿Cómo cuidar la conversación pública?",
+        "body": [
+          "Agradece las opiniones de manera breve y profesional, sin compartir información privada de quien visitó el negocio. Si surge una queja, escucha y ofrece un canal apropiado para darle seguimiento. Mantén actualizados los horarios y datos de contacto de la ficha."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Puedo pedir una sola pieza?",
+        "a": "Sí. Puedes pedir una placa o un stand; ambos tienen NFC y QR configurados con tu enlace de reseñas antes del envío."
+      },
+      {
+        "q": "¿La pieza garantiza más reseñas?",
+        "a": "No. Facilita el acceso al enlace; cada persona decide si deja una opinión y qué escribe."
+      }
+    ],
+    "relatedProductSlugs": [
+      "placa-resena-google-nfc",
+      "stand-resena-google-nfc"
+    ],
+    "relatedBlogSlugs": [
+      "como-configurar-perfil-de-google-y-pedir-resenas",
+      "alternativa-a-maxreviewer-placas-resenas-google",
+      "como-conseguir-mas-resenas-de-google-nfc-qr",
+      "placa-nfc-vs-codigo-qr-impreso-resenas",
+      "como-usar-placa-resenas-google-yume"
+    ],
+    "quoteMessage": "Hola, me interesan la placa y el stand NFC para reseñas de Google.",
+    "sources": [
+      {
+        "label": "Google: consejos para recibir reseñas",
+        "url": "https://support.google.com/business/answer/3474122?hl=es"
+      },
+      {
+        "label": "Google: contenido prohibido y restringido",
+        "url": "https://support.google.com/business/answer/7400114?hl=es"
+      }
+    ]
+  },
+  {
+    "slug": "placa-resenas-google-para-planners-y-eventos",
+    "title": "Placa de reseñas de Google para planners y eventos",
+    "metaTitle": "Placa de reseñas Google para planners y eventos",
+    "description": "Cómo planners, recintos y proveedores de eventos pueden compartir su enlace de reseñas con una placa NFC y QR.",
+    "category": "Guías",
+    "publishedAt": "2026-11-03",
+    "modifiedAt": "2026-11-03",
+    "intro": "Una placa de reseñas de Google para planners y eventos acerca el enlace de la ficha de un negocio a sus clientes. Las opiniones honestas pueden servir como prueba social para quienes buscan un planner, recinto o proveedor para su celebración.",
+    "sections": [
+      {
+        "heading": "¿Qué perfil debe recibir las reseñas?",
+        "body": [
+          "Usa el enlace de la ficha del negocio que prestó el servicio, siempre que cumpla los requisitos de Google para tener un perfil. Un planner o proveedor de servicios puede revisar su elegibilidad y completar datos claros sobre su actividad y contacto."
+        ]
+      },
+      {
+        "heading": "¿Dónde compartir el enlace durante un evento?",
+        "body": [
+          "Un recinto puede colocar la pieza en recepción; un proveedor puede mostrarla en su mesa de atención cuando sea apropiado. Elige un lugar accesible que no interrumpa la celebración y asegúrate de que el enlace corresponda a tu propio negocio."
+        ]
+      },
+      {
+        "heading": "¿Cuándo invitar a los clientes a opinar?",
+        "body": [
+          "Después del servicio o al cerrar la coordinación, ofrece el enlace al cliente sin interrumpir momentos importantes del evento. Una invitación por mensaje también permite que responda después. La participación es voluntaria y cada persona decide qué escribir sobre su experiencia."
+        ]
+      },
+      {
+        "heading": "¿Cómo pedir reseñas honestas?",
+        "body": [
+          "Invita a todos tus clientes reales, no solo a quienes consideres satisfechos, y no sugieras una calificación. Según Google, ofrecer regalos o descuentos a cambio de reseñas está prohibido. Acepta las opiniones positivas y negativas sin presionar ni condicionar la invitación."
+        ]
+      },
+      {
+        "heading": "¿Qué pieza se adapta a tu forma de trabajo?",
+        "body": [
+          "La placa de 12 × 12 cm incluye adhesivo y cuesta $140 MXN; el stand se coloca de pie y cuesta $200 MXN. Ambos tienen NFC y QR, están disponibles en blanco o negro y se pueden pedir desde una pieza con pago único."
+        ]
+      },
+      {
+        "heading": "¿Cómo preparar el enlace y otros detalles?",
+        "body": [
+          "Yume configura el NFC y el QR con el enlace de reseñas del cliente antes de enviar la pieza; no requiere app ni suscripción. Para organizar otros materiales del evento, consulta también la guía para planners sobre proveedores de detalles personalizados."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Puedo pedir una sola pieza?",
+        "a": "Sí. Puedes pedir una placa o un stand; ambos tienen NFC y QR configurados con tu enlace de reseñas antes del envío."
+      },
+      {
+        "q": "¿La pieza garantiza más reseñas?",
+        "a": "No. Facilita el acceso al enlace; cada persona decide si deja una opinión y qué escribe."
+      }
+    ],
+    "relatedProductSlugs": [
+      "placa-resena-google-nfc",
+      "stand-resena-google-nfc"
+    ],
+    "relatedBlogSlugs": [
+      "como-configurar-perfil-de-google-y-pedir-resenas",
+      "alternativa-a-maxreviewer-placas-resenas-google",
+      "como-conseguir-mas-resenas-de-google-nfc-qr",
+      "placa-nfc-vs-codigo-qr-impreso-resenas",
+      "como-usar-placa-resenas-google-yume",
+      "guia-planners-proveedor-detalles-personalizados"
+    ],
+    "quoteMessage": "Hola, me interesan la placa y el stand NFC para reseñas de Google.",
+    "sources": [
+      {
+        "label": "Google: consejos para recibir reseñas",
+        "url": "https://support.google.com/business/answer/3474122?hl=es"
+      },
+      {
+        "label": "Google: contenido prohibido y restringido",
+        "url": "https://support.google.com/business/answer/7400114?hl=es"
+      }
+    ]
+  },
+  {
+    "slug": "como-hacer-una-encuesta-de-satisfaccion-del-cliente",
+    "title": "Cómo hacer una encuesta de satisfacción del cliente",
+    "metaTitle": "Encuesta de satisfacción del cliente: guía y preguntas",
+    "description": "Aprende a crear una encuesta de satisfacción del cliente, elegir preguntas y compartirla por QR, ticket o WhatsApp.",
+    "category": "Guías",
+    "publishedAt": "2026-11-03",
+    "modifiedAt": "2026-11-03",
+    "intro": "Una encuesta de satisfacción del cliente ayuda a escuchar experiencias y detectar oportunidades de mejora. Puedes crearla con un formulario gratuito o un mensaje de WhatsApp; mantén esta encuesta separada de cualquier invitación a escribir una reseña pública.",
+    "sections": [
+      {
+        "heading": "¿Qué es una encuesta de satisfacción y para qué sirve?",
+        "body": [
+          "Es un conjunto breve de preguntas para conocer la experiencia de quienes compraron o recibieron un servicio. Sus respuestas ayudan a identificar aspectos que funcionan y problemas que conviene revisar. Define primero qué decisión quieres mejorar y evita pedir datos que no necesitas."
+        ]
+      },
+      {
+        "heading": "¿Cuántas preguntas y de qué tipo conviene usar?",
+        "body": [
+          "Empieza con seis a ocho preguntas claras: combina escalas consistentes con una pregunta abierta. CSAT puede medir satisfacción de 1 a 5; NPS pregunta la probabilidad de recomendar de 0 a 10. Explica los extremos de cada escala para que las respuestas sean comparables."
+        ]
+      },
+      {
+        "heading": "¿Qué preguntas para encuesta de satisfacción puedes usar?",
+        "body": [
+          "Usa preguntas sencillas sobre la atención, el producto y el tiempo de espera, además de una escala de recomendación y un espacio abierto. Ajusta cada pregunta a lo que ofreces y explica los extremos de las escalas antes de compartir el formulario.",
+          "Prueba estas siete preguntas: 1. ¿Qué tan satisfecho quedaste con la atención, de 1 a 5? 2. ¿Con el producto o servicio, de 1 a 5? 3. ¿Con el tiempo de espera, de 1 a 5? 4. ¿Fue clara la información? 5. ¿Encontraste lo que necesitabas? 6. ¿Qué tan probable es que nos recomiendes, de 0 a 10? 7. ¿Qué podríamos mejorar?"
+        ]
+      },
+      {
+        "heading": "¿Dónde y cuándo aplicar la encuesta con código QR?",
+        "body": [
+          "Comparte un QR hacia un formulario en el mostrador o en el ticket, o envía las preguntas por WhatsApp después de la compra o el servicio. Explica que responder es voluntario y elige un momento cercano a la experiencia sin interrumpir al cliente."
+        ]
+      },
+      {
+        "heading": "¿Cómo leer y utilizar los resultados?",
+        "body": [
+          "Revisa las respuestas por pregunta y busca temas recurrentes en los comentarios abiertos. Considera cuántas personas respondieron antes de sacar conclusiones; unas pocas respuestas no representan necesariamente a todos. Elige una mejora concreta, asigna seguimiento y compara los comentarios posteriores con cuidado."
+        ]
+      },
+      {
+        "heading": "¿Cómo invitar a una reseña sin filtrar clientes?",
+        "body": [
+          "Mantén la encuesta y la petición de reseña separadas y ofrece ambas a todos los clientes. Enviar solo a clientes satisfechos a Google o desalentar a los insatisfechos va contra su política de reseñas. La placa ofrece a todos la misma vía por NFC o QR para dejar una opinión honesta.",
+          "Yume vende la placa y el stand, no una herramienta de encuestas. Configura ambas vías con el enlace de reseñas antes del envío; la placa cuesta $140 MXN y el stand $200 MXN, pago único, desde una pieza."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Puedo pedir una sola pieza?",
+        "a": "Sí. Puedes pedir una placa o un stand; ambos tienen NFC y QR configurados con tu enlace de reseñas antes del envío."
+      },
+      {
+        "q": "¿La pieza garantiza más reseñas?",
+        "a": "No. Facilita el acceso al enlace; cada persona decide si deja una opinión y qué escribe."
+      }
+    ],
+    "relatedProductSlugs": [
+      "placa-resena-google-nfc",
+      "stand-resena-google-nfc"
+    ],
+    "relatedBlogSlugs": [
+      "como-configurar-perfil-de-google-y-pedir-resenas",
+      "alternativa-a-maxreviewer-placas-resenas-google",
+      "como-conseguir-mas-resenas-de-google-nfc-qr",
+      "placa-nfc-vs-codigo-qr-impreso-resenas",
+      "como-usar-placa-resenas-google-yume",
+      "placa-resenas-google-para-consultorios",
+      "placa-resenas-google-para-restaurantes",
+      "placa-resenas-google-para-salones-esteticas-y-barberias",
+      "placa-resenas-google-para-planners-y-eventos"
+    ],
+    "quoteMessage": "Hola, me interesan la placa y el stand NFC para reseñas de Google.",
+    "sources": [
+      {
+        "label": "Google: consejos para recibir reseñas",
+        "url": "https://support.google.com/business/answer/3474122?hl=es"
+      },
+      {
+        "label": "Google: contenido prohibido y restringido",
+        "url": "https://support.google.com/business/answer/7400114?hl=es"
+      }
+    ]
+  },
+  {
     slug: "alternativa-a-maxreviewer-placas-resenas-google",
     title: "Alternativa a MaxReviewer: placas de reseñas de Google para un solo negocio",
     metaTitle: "Alternativa a MaxReviewer: placas de reseñas",
-    description: "Compara MaxReviewer y Yume: plataforma para varias sucursales o placa NFC y QR configurada con pago único para tu negocio.",
+    description: "Compara MaxReviewer y Yume: plataforma para varias sucursales o placa NFC y QR con pago único para tu negocio, desde 1 pieza.",
     category: "Guías",
     publishedAt: "2026-11-03",
     modifiedAt: "2026-11-03",
@@ -86,7 +494,7 @@ export const blogPosts: BlogPost[] = [
       { q: "¿Quién configura el NFC y el QR?", a: "Yume programa el NFC y genera el QR con tu enlace de reseñas antes del envío." },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
-    relatedBlogSlugs: ["como-configurar-perfil-de-google-y-pedir-resenas", "como-conseguir-mas-resenas-de-google-nfc-qr", "placa-nfc-vs-codigo-qr-impreso-resenas", "como-usar-placa-resenas-google-yume"],
+    relatedBlogSlugs: ["como-configurar-perfil-de-google-y-pedir-resenas", "como-conseguir-mas-resenas-de-google-nfc-qr", "placa-nfc-vs-codigo-qr-impreso-resenas", "como-usar-placa-resenas-google-yume", "placa-resenas-google-para-consultorios", "placa-resenas-google-para-restaurantes", "placa-resenas-google-para-salones-esteticas-y-barberias", "placa-resenas-google-para-planners-y-eventos", "como-hacer-una-encuesta-de-satisfaccion-del-cliente"],
     quoteMessage: "Hola, me interesan la placa o el stand NFC para reseñas de Google.",
     sources: [
       { label: "MaxReviewer: planes (consulta noviembre 2026)", url: "https://maxreviewer.com/planes" },
@@ -118,7 +526,7 @@ export const blogPosts: BlogPost[] = [
       { q: "¿Una placa garantiza más reseñas?", a: "No. Una placa facilita el acceso al enlace; cada cliente decide si deja una reseña y qué escribe." },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
-    relatedBlogSlugs: ["alternativa-a-maxreviewer-placas-resenas-google", "como-conseguir-mas-resenas-de-google-nfc-qr", "placa-nfc-vs-codigo-qr-impreso-resenas", "como-usar-placa-resenas-google-yume"],
+    relatedBlogSlugs: ["alternativa-a-maxreviewer-placas-resenas-google", "como-conseguir-mas-resenas-de-google-nfc-qr", "placa-nfc-vs-codigo-qr-impreso-resenas", "como-usar-placa-resenas-google-yume", "placa-resenas-google-para-consultorios", "placa-resenas-google-para-restaurantes", "placa-resenas-google-para-salones-esteticas-y-barberias", "placa-resenas-google-para-planners-y-eventos", "como-hacer-una-encuesta-de-satisfaccion-del-cliente"],
     quoteMessage: "Hola, me interesa conocer las placas y stands NFC para reseñas de Google.",
     sources: [
       { label: "Google: consejos para recibir reseñas", url: "https://support.google.com/business/answer/3474122?hl=es" },
@@ -1919,7 +2327,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
-    relatedBlogSlugs: ["alternativa-a-maxreviewer-placas-resenas-google", "placa-nfc-vs-codigo-qr-impreso-resenas", "como-usar-placa-resenas-google-yume", "como-configurar-perfil-de-google-y-pedir-resenas"],
+    relatedBlogSlugs: ["alternativa-a-maxreviewer-placas-resenas-google", "placa-nfc-vs-codigo-qr-impreso-resenas", "como-usar-placa-resenas-google-yume", "como-configurar-perfil-de-google-y-pedir-resenas", "placa-resenas-google-para-consultorios", "placa-resenas-google-para-restaurantes", "placa-resenas-google-para-salones-esteticas-y-barberias", "placa-resenas-google-para-planners-y-eventos", "como-hacer-una-encuesta-de-satisfaccion-del-cliente"],
     faq: [
       {
         q: "¿Qué es una placa de reseñas de Google?",
@@ -2033,7 +2441,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
-    relatedBlogSlugs: ["alternativa-a-maxreviewer-placas-resenas-google", "como-conseguir-mas-resenas-de-google-nfc-qr", "como-usar-placa-resenas-google-yume", "como-configurar-perfil-de-google-y-pedir-resenas"],
+    relatedBlogSlugs: ["alternativa-a-maxreviewer-placas-resenas-google", "como-conseguir-mas-resenas-de-google-nfc-qr", "como-usar-placa-resenas-google-yume", "como-configurar-perfil-de-google-y-pedir-resenas", "placa-resenas-google-para-consultorios", "placa-resenas-google-para-restaurantes", "placa-resenas-google-para-salones-esteticas-y-barberias", "placa-resenas-google-para-planners-y-eventos", "como-hacer-una-encuesta-de-satisfaccion-del-cliente"],
     faq: [
       {
         q: "¿El NFC reemplaza al código QR?",
@@ -2173,7 +2581,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
-    relatedBlogSlugs: ["alternativa-a-maxreviewer-placas-resenas-google", "como-conseguir-mas-resenas-de-google-nfc-qr", "placa-nfc-vs-codigo-qr-impreso-resenas", "como-configurar-perfil-de-google-y-pedir-resenas"],
+    relatedBlogSlugs: ["alternativa-a-maxreviewer-placas-resenas-google", "como-conseguir-mas-resenas-de-google-nfc-qr", "placa-nfc-vs-codigo-qr-impreso-resenas", "como-configurar-perfil-de-google-y-pedir-resenas", "placa-resenas-google-para-consultorios", "placa-resenas-google-para-restaurantes", "placa-resenas-google-para-salones-esteticas-y-barberias", "placa-resenas-google-para-planners-y-eventos", "como-hacer-una-encuesta-de-satisfaccion-del-cliente"],
   },
   {
     slug: "papeleria-personalizada-vs-plantillas-genericas",

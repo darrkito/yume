@@ -18,6 +18,12 @@ export const PRODUCT_SLUG_EN: Record<string, string> = {
 };
 
 export const BLOG_SLUG_EN: Record<string, string> = {
+  "placa-resenas-google-para-consultorios": "google-review-plate-for-medical-practices",
+  "placa-resenas-google-para-restaurantes": "google-review-plate-for-restaurants",
+  "placa-resenas-google-para-salones-esteticas-y-barberias": "google-review-plate-for-salons-and-barbershops",
+  "placa-resenas-google-para-planners-y-eventos": "google-review-plate-for-event-planners-and-venues",
+  "como-hacer-una-encuesta-de-satisfaccion-del-cliente": "how-to-run-a-customer-satisfaction-survey",
+
   "alternativa-a-maxreviewer-placas-resenas-google": "maxreviewer-alternative-google-review-plates",
   "buen-fin-2026-stickers-y-dulceros-personalizados": "buen-fin-2026-custom-stickers-and-party-favor-boxes",
   "recetarios-medicos-personalizados-guadalajara": "custom-medical-prescription-pads-guadalajara",
