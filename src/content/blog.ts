@@ -3988,6 +3988,86 @@ export const blogPosts: BlogPost[] = [
       { label: "Greenvelope: When to send wedding invitations and save the dates", url: "https://www.greenvelope.com/resources/when-to-send-wedding-invitations-and-save-the-dates" },
     ],
   },
+  {
+    slug: "dulceros-para-xv-anos-elegantes",
+    title: "Dulceros para XV años elegantes: ideas y cantidades",
+    metaTitle: "Dulceros para XV años elegantes: ideas y cantidades",
+    description:
+      "Cómo elegir dulceros para XV años elegantes: qué los hace finos, cuántos pedir, qué poner dentro y cómo pedir el diseño con prueba digital.",
+    category: "Guías",
+    publishedAt: "2026-11-03",
+    intro:
+      "Una mesa de XV años se recuerda por los detalles, y el dulcero es lo que cada invitado se lleva a casa. Aquí tienes cómo elegir dulceros para XV años elegantes: qué los hace verse finos, cómo coordinarlos con la fiesta, cuántos pedir y qué poner dentro. Está pensado para mamás, papás y planners que quieren una mesa que se vea planeada.",
+    sections: [
+      {
+        heading: "Qué hace elegante a un dulcero de XV años",
+        body: [
+          "Un dulcero de XV años se ve elegante cuando usa pocos colores, un nombre legible y una tipografía discreta, y cuando combina con la invitación, el pastel y la decoración de la mesa. La elegancia viene de la coordinación y del detalle personalizado, no de llenarlo de adornos ni de usar un kit genérico.",
+          "Al buscar mesas de dulces para XV años en un marketplace aparecen sobre todo kits de mesa vintage en MDF, de precio bajo y para armar, y cajitas transparentes que se venden en paquetes de 20, 40 o 50 piezas. Son opciones de volumen. Un dulcero con el nombre de la quinceañera y los colores de su fiesta es otro tipo de detalle.",
+        ],
+      },
+      {
+        heading: "Dulceros para XV años elegantes: paleta, nombre y tipografía",
+        body: [
+          "Elige una paleta corta tomada de la invitación o del vestido, pon el nombre de la quinceañera en una tipografía clara y deja espacio vacío alrededor. Si nos mandas una foto de la invitación o de la decoración, adaptamos el diseño a esos colores, y antes de producir recibes una prueba digital.",
+          "Nuestro dulcero es tipo lunch box, con asa, y la personalización incluye el nombre y la temática. Para un XV, la temática puede ser tan sencilla como los colores de la fiesta con el nombre de la quinceañera, sin más elementos.",
+          "Si coordinas el evento como planner, puedes mandarnos la paleta y la invitación de tu cliente y revisar la prueba digital directo por WhatsApp, sin intermediarios.",
+        ],
+      },
+      {
+        heading: "Cuántos dulceros pedir y cuántos dulces calcular",
+        body: [
+          "Pide un dulcero por cada persona que quieras que se lleve el detalle: toda la lista de invitados, solo la familia cercana o solo la mesa principal. El pedido mínimo es de 10 piezas y puedes escribir la cantidad exacta que necesitas.",
+          "Para calcular los dulces, Bodas.net, en su guía de buffets de dulces para bodas, sugiere de 3 a 4 raciones por persona si no hay pastel y unas 2 si lo hay. Son cifras de una mesa de postres de boda, no de lo que cabe en una caja, así que tómalas solo como orden de magnitud, sobre todo en un XV con baile y vals.",
+          "La misma guía señala que los niños suelen consumir más dulces que los adultos y que las cenas generan más consumo que los banquetes del mediodía. Úsalo para ajustar tus cálculos si tu lista tiene muchos niños o si la fiesta es de noche.",
+        ],
+      },
+      {
+        heading: "Qué poner dentro de un dulcero elegante de XV años",
+        body: [
+          "Para que el dulcero se vea elegante, cuida la presentación de cada pieza: dulces pequeños, de tamaño parecido y con variedad de sabores y texturas. Bodas.net recomienda de 5 a 7 variedades de postre en una mesa de bodas, y esa pauta se puede adaptar a un XV.",
+          "Elige dulces que combinen con la paleta del diseño para que el conjunto se vea coordinado, ya sea en tonos neutros o en los colores de la fiesta.",
+          "Para más ideas según el tipo de invitado, revisa la guía de [qué poner en un dulcero](/blog/que-poner-en-un-dulcero).",
+        ],
+      },
+      {
+        heading: "Cómo pedir tus dulceros con prueba digital",
+        body: [
+          "Cuéntanos por WhatsApp el nombre de la quinceañera, los colores de la fiesta y cuántos dulceros necesitas. Te enviamos una prueba digital del diseño antes de producir, y nada se produce hasta que la apruebas. Puedes ver los [dulceros personalizados](/productos/dulceros-personalizados) en la tienda y mandarnos una foto de la invitación como referencia.",
+          "Trabajamos por pedido desde Guadalajara, Jalisco, con envío a todo México. El plazo de producción cuenta desde que apruebas la prueba digital, así que pide con tiempo antes de la fiesta y confirma por WhatsApp la fecha que necesitas.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["dulceros-personalizados"],
+    relatedBlogSlugs: ["que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "dulceros-navidenos-personalizados"],
+    faq: [
+      {
+        q: "¿Los dulceros incluyen dulces?",
+        a: "No. El dulcero llega armado y vacío, listo para llenar con los dulces que tú elijas.",
+      },
+      {
+        q: "¿Qué incluye la personalización de un dulcero?",
+        a: "El nombre y la temática que elijas. Te mandamos una prueba digital antes de producir y nada se produce hasta que la apruebas.",
+      },
+      {
+        q: "¿Cuál es el pedido mínimo de dulceros?",
+        a: "El pedido mínimo es de 10 piezas, y puedes escribir la cantidad exacta que necesitas a partir de ahí.",
+      },
+      {
+        q: "¿Cuántas variedades de dulce conviene poner?",
+        a: "Bodas.net recomienda de 5 a 7 variedades de postre en una mesa de bodas. Es una guía de boda que se puede adaptar a un XV.",
+      },
+      {
+        q: "¿Hacen envíos a todo México?",
+        a: "Sí. Producimos por pedido desde Guadalajara, Jalisco, y enviamos a todo México.",
+      },
+    ],
+    sources: [
+      { label: "Bodas.net: Buffets de dulces para bodas", url: "https://www.bodas.net/articulos/buffets-de-dulces-para-bodas--c733" },
+      { label: "Mercado Libre: Mesa de dulces vintage (listado)", url: "https://listado.mercadolibre.com.mx/mesa-de-dulces-vintage" },
+      { label: "Mercado Libre: Cajitas de acetato (listado)", url: "https://listado.mercadolibre.com.mx/cajitas-de-acetato" },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string) {

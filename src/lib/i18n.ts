@@ -68,6 +68,7 @@ export const BLOG_SLUG_EN: Record<string, string> = {
   "detalles-de-mesa-boda-personalizados": "personalized-wedding-table-details",
   "mesa-de-dulces-para-boda": "wedding-candy-table-custom-candy-boxes",
   "cuando-enviar-invitaciones-de-boda": "when-to-send-wedding-invitations",
+  "dulceros-para-xv-anos-elegantes": "elegant-quinceanera-candy-boxes",
 };
 
 export const PRODUCT_SLUG_ES: Record<string, string> = Object.fromEntries(

@@ -3425,6 +3425,86 @@ export const blogPostsEn: BlogPost[] = [
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado", "dulceros-personalizados"],
     relatedBlogSlugs: [BLOG_SLUG_EN["etiquetas-navidenas-personalizadas"], BLOG_SLUG_EN["dulceros-navidenos-personalizados"]],
   },
+  {
+    slug: BLOG_SLUG_EN["dulceros-para-xv-anos-elegantes"],
+    title: "Elegant Quinceañera Candy Boxes: Ideas and Quantities",
+    metaTitle: "Elegant Quinceañera Candy Boxes: Ideas and Quantities",
+    description:
+      "How to choose elegant quinceañera candy boxes: what makes them look refined, how many to order, what to put inside and how to order with a digital proof.",
+    category: "Guides",
+    publishedAt: "2026-11-03",
+    intro:
+      "A quinceañera table is remembered for its details, and the candy box is what each guest takes home. Here is how to choose elegant quinceañera candy boxes: what makes them look refined, how to match them to the party, how many to order and what to put inside. It is written for moms, dads and planners who want a table that looks planned.",
+    sections: [
+      {
+        heading: "What makes a quinceañera candy box elegant",
+        body: [
+          "A quinceañera candy box looks elegant when it uses a short palette, a readable name and a discreet typeface, and when it matches the invitation, the cake and the table decor. Elegance comes from coordination and a personalized detail, not from piling on ornaments or using a generic kit.",
+          "When you search for quinceañera candy tables on a marketplace, you mostly find low-priced vintage MDF table kits to assemble, and clear boxes sold in packs of 20, 40 or 50 pieces. Those are volume options. A candy box with the quinceañera's name and the colors of her party is a different kind of detail.",
+        ],
+      },
+      {
+        heading: "Elegant quinceañera candy boxes: palette, name and typeface",
+        body: [
+          "Pick a short palette taken from the invitation or the dress, put the quinceañera's name in a clear typeface and leave empty space around it. If you send us a photo of the invitation or the decor, we adapt the design to those colors, and you get a digital proof before production.",
+          "Our candy box is a lunch box style with a handle, and personalization includes the name and the theme. For a quinceañera, the theme can be as simple as the party colors with her name, with nothing else added.",
+          "If you coordinate the event as a planner, you can send us your client's palette and invitation and review the digital proof directly on WhatsApp, with no middlemen.",
+        ],
+      },
+      {
+        heading: "How many candy boxes to order and how many sweets to plan",
+        body: [
+          "Order one candy box for each person who should take the favor home: every guest, only close family or only the main table. The minimum order is 10 pieces and you can type the exact quantity you need.",
+          "To plan the sweets, Bodas.net, in its guide to wedding candy buffets, suggests 3 to 4 servings per person if there is no cake and about 2 if there is one. Those figures are for a wedding dessert table, not for what fits in a box, so treat them only as an order of magnitude, especially at a quinceañera with a waltz and dancing.",
+          "The same guide notes that children tend to eat more sweets than adults and that dinners generate more sweet consumption than midday banquets. Use that to adjust your estimate if your list has many children or the party is at night.",
+        ],
+      },
+      {
+        heading: "What to put inside an elegant quinceañera candy box",
+        body: [
+          "For the candy box to look elegant, care about how each piece is presented: small candies of similar size, with a variety of flavors and textures. Bodas.net recommends 5 to 7 dessert varieties for a wedding table, and that guideline can be adapted to a quinceañera.",
+          "Choose candies that match the design palette so the whole set looks coordinated, whether in neutral tones or in the party colors.",
+          "For more ideas by type of guest, read [what to put in a party favor box](/en/blog/what-to-put-in-a-party-favor-box).",
+        ],
+      },
+      {
+        heading: "How to order with a digital proof",
+        body: [
+          "Tell us on WhatsApp the quinceañera's name, the party colors and how many candy boxes you need. We send you a digital proof of the design before production, and nothing is produced until you approve it. You can see the personalized candy boxes in the shop and send a photo of the invitation as reference.",
+          "We work to order from Guadalajara, Jalisco, with shipping across Mexico. The production time starts when you approve the digital proof, so order well before the party and confirm on WhatsApp the date you need.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["dulceros-personalizados"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["que-poner-en-un-dulcero"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"], BLOG_SLUG_EN["dulceros-navidenos-personalizados"]],
+    faq: [
+      {
+        q: "Do the candy boxes come with candy?",
+        a: "No. The candy box arrives assembled and empty, ready to fill with the candy you choose.",
+      },
+      {
+        q: "What does personalization include?",
+        a: "The name and the theme you choose. We send a digital proof before production and nothing is produced until you approve it.",
+      },
+      {
+        q: "What is the minimum order for candy boxes?",
+        a: "The minimum order is 10 pieces, and from there you can type the exact quantity you need.",
+      },
+      {
+        q: "How many candy varieties should I include?",
+        a: "Bodas.net recommends 5 to 7 dessert varieties for a wedding table. It is a wedding guideline that can be adapted to a quinceañera.",
+      },
+      {
+        q: "Do you ship across Mexico?",
+        a: "Yes. We produce to order from Guadalajara, Jalisco, and ship across Mexico.",
+      },
+    ],
+    sources: [
+      { label: "Bodas.net: Wedding candy buffets (in Spanish)", url: "https://www.bodas.net/articulos/buffets-de-dulces-para-bodas--c733" },
+      { label: "Mercado Libre: Vintage candy table (listing, in Spanish)", url: "https://listado.mercadolibre.com.mx/mesa-de-dulces-vintage" },
+      { label: "Mercado Libre: Acetate boxes (listing, in Spanish)", url: "https://listado.mercadolibre.com.mx/cajitas-de-acetato" },
+    ],
+  },
 ];
 
 export function getBlogPostEn(slug: string) {
