@@ -4971,6 +4971,77 @@ export const blogPosts: BlogPost[] = [
       { label: "Exclusive Italy Weddings: bolsas de actividades para niños en bodas (en inglés)", url: "https://www.exclusiveitalyweddings.com/blog/wedding-party-ideas-children-activity-bags" },
     ],
   },
+  {
+    slug: "aniversario-empresa-detalles-personalizados",
+    title: "Detalles personalizados de aniversario para tu empresa",
+    metaTitle: "Detalles personalizados evento empresarial aniversario",
+    description:
+      "Cómo elegir detalles personalizados para un evento empresarial o aniversario: dulceros y stickers con logo, nombre del evento y prueba digital.",
+    category: "Guías",
+    publishedAt: "2026-11-03",
+    intro:
+      "Un aniversario de empresa, un lanzamiento o una comida con clientes se recuerdan por detalles pequeños que llevan el nombre correcto. Aquí verás qué personalizar según el evento, cuándo conviene un dulcero con logo o un sticker y cómo planear un pedido pequeño por evento, con prueba digital antes de producir. Está pensado para la empresa que organiza y para la planner que coordina.",
+    sections: [
+      {
+        heading: "Qué detalles personalizados funcionan en un evento empresarial",
+        body: [
+          "Funciona el detalle que lleva algo propio del evento: el nombre de la empresa, la cifra o fecha del aniversario, el nombre del cliente o un mensaje breve. Según la guía de MOO, añadir nombre, fecha o mensaje convierte un objeto funcional en algo que se conserva. Un dulcero o un sticker con logo cumplen con eso.",
+          "Un obsequio genérico se parece a cualquier otro. MOO apunta que el momento oportuno importa más que un gran gesto al año y que cada regalo debe sentirse dirigido a esa persona. Por eso conviene diseñar el detalle para un evento concreto, no escoger uno de catálogo.",
+        ],
+      },
+      {
+        heading: "Qué personalizar en un aniversario, un lanzamiento o un evento con clientes",
+        body: [
+          "Cambia solo lo que se personaliza: en un aniversario, la fecha o cifra; en un lanzamiento, el nombre del producto o proyecto; en un evento con clientes, el nombre del cliente o del evento. El resto, como logo y colores de marca, se mantiene.",
+          "MOO sugiere, por ejemplo, libretas con el nombre y la fecha de un proyecto compartido, o una caja con nota a mano para los clientes principales. La misma lógica aplica a un dulcero o a un sticker.",
+        ],
+      },
+      {
+        heading: "Dulcero personalizado con logo para tu evento",
+        body: [
+          "El dulcero personalizado es una opción concreta para un evento de empresa. Es tipo lunch box, con asa, llega armado y vacío para que tú elijas qué lleva dentro, y la personalización incluye el nombre y la temática, además del logo de tu empresa. El pedido mínimo es de 10 piezas.",
+          "Para ideas de relleno, lee [qué poner en un dulcero](/blog/que-poner-en-un-dulcero). Si tu evento es en Guadalajara, mira [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara).",
+        ],
+      },
+      {
+        heading: "Stickers con logo para acompañar la entrega",
+        body: [
+          "Los stickers con logo sirven para acompañar el dulcero o decorar una botella de bienvenida. Puedes pedirlos con el logo de tu empresa o un diseño del aniversario. Los [stickers con tu logo](/productos/stickers-logo-personalizado) tienen mínimo de 50 piezas, se cortan troquelados o semitroquelados y se imprimen en mate, brillante u holográfico.",
+          "Si prefieres una ilustración del evento en lugar del logo, existen los [stickers de vinil personalizados](/productos/stickers-vinil-impermeable), con mínimo de 40 piezas. Los de vinil pasan por prueba digital antes de imprimir.",
+        ],
+      },
+      {
+        heading: "Cómo planear el pedido de un evento con clientes",
+        body: [
+          "Planea el pedido desde la lista de invitados y el mínimo de cada pieza: 10 dulceros o 50 stickers con logo. Define el nombre del evento, la cifra o fecha del aniversario y el mensaje breve. Antes de producir recibes una prueba digital, y nada se imprime sin tu aprobación.",
+          "Si coordinas el evento como planner, mándanos por WhatsApp una foto de la invitación o de la decoración y adaptamos el diseño a esos colores. Para confirmar fechas de producción y envío, escríbenos antes de fijar el día del evento.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "dulceros-navidenos-personalizados"],
+    faq: [
+      {
+        q: "¿Puedo poner el logo de mi empresa en el dulcero?",
+        a: "Sí. La personalización incluye el nombre y la temática que elijas, incluido el logo de tu marca, y te mandamos una prueba digital antes de producir.",
+      },
+      {
+        q: "¿Los dulceros incluyen dulces?",
+        a: "No. El dulcero llega armado y vacío, listo para llenar con lo que tú elijas.",
+      },
+      {
+        q: "¿Cuánto tarda la prueba digital de los stickers de vinil?",
+        a: "Llega normalmente en un máximo de 24 horas después de tu pago e incluye hasta 2 rondas de ajustes.",
+      },
+      {
+        q: "¿En qué se diferencian los stickers con logo y los de vinil?",
+        a: "Los stickers con tu logo están pensados para el logo de tu negocio y piden mínimo 50 piezas. Los de vinil sirven para cualquier diseño, personaje o foto y piden mínimo 40 piezas.",
+      },
+    ],
+    sources: [
+      { label: "MOO: ideas de obsequios a clientes", url: "https://www.moo.com/blog/es/inspiracion/ideas-para-obsequios-a-clientes" },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string) {

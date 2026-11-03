@@ -4269,6 +4269,76 @@ export const blogPostsEn: BlogPost[] = [
       { label: "Exclusive Italy Weddings: children's activity bags for weddings", url: "https://www.exclusiveitalyweddings.com/blog/wedding-party-ideas-children-activity-bags" },
     ],
   },
+  {
+    slug: "company-anniversary-custom-details",
+    title: "Custom details for your company anniversary",
+    metaTitle: "Custom details for a company anniversary event",
+    description:
+      "How to choose custom details for a company anniversary or client event: candy boxes and logo stickers with the event name, plus a digital proof.",
+    category: "Guides",
+    publishedAt: "2026-11-03",
+    intro:
+      "A company anniversary, a launch or a lunch with clients is remembered through small details that carry the right name. Here you will see what to personalize for each event, when a candy box with your logo or a sticker makes sense, and how to plan a small order per event, with a digital proof before production. It is written for the company that hosts and for the planner who coordinates.",
+    sections: [
+      {
+        heading: "Which custom details work at a company event",
+        body: [
+          "The details that work carry something specific to the event: the company name, the anniversary date or number, the client's name or a short message. MOO's guide says adding a name, date or message turns a functional object into something people keep. A candy box or a logo sticker can do that.",
+          "A generic giveaway looks like any other. MOO notes that timing matters more than one big gesture a year and that each gift should feel meant for that person. That is why it helps to design the detail for one specific event instead of picking one from a catalog.",
+        ],
+      },
+      {
+        heading: "What to personalize for an anniversary, a launch or a client event",
+        body: [
+          "Change only what gets personalized: for an anniversary, the date or number; for a launch, the product or project name; for a client event, the client's or event's name. The rest, such as the logo and brand colors, stays the same across every piece.",
+          "MOO suggests, for example, notebooks with the name and date of a shared project, or a box with a handwritten note for key clients. The same logic applies to a candy box or a sticker.",
+        ],
+      },
+      {
+        heading: "Custom candy box with your logo for the event",
+        body: [
+          "The custom candy box is a concrete option for a company event. It is a lunch box style with a handle, arrives assembled and empty so you choose what goes inside, and the personalization includes the name and theme, plus your company logo. The minimum order is 10 pieces.",
+          "Because it arrives empty, the filling is up to you. Add the event name, the date and your brand colors in the design, and you get a piece that looks planned for that occasion.",
+        ],
+      },
+      {
+        heading: "Logo stickers to go with the handout",
+        body: [
+          "Logo stickers can go alongside the candy box or decorate a welcome bottle. You can order them with your company logo or an anniversary design. Logo stickers have a 50-piece minimum, come die cut or kiss cut, and are printed in matte, glossy or holographic.",
+          "If you prefer an illustration for the event instead of the logo, there are custom vinyl stickers with a 40-piece minimum. They go through a digital proof before printing.",
+        ],
+      },
+      {
+        heading: "How to plan an order for a client event",
+        body: [
+          "Plan the order from the guest list and each piece's minimum: 10 candy boxes or 50 logo stickers. Define the event name, the anniversary date or number and a short message. Before production you receive a digital proof, and nothing is printed without your approval.",
+          "If you coordinate the event as a planner, send us a photo of the invitation or the decoration on WhatsApp and we will adapt the design to those colors. To confirm production and shipping dates, write to us before you set the event day.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
+    faq: [
+      {
+        q: "Can I put my company logo on the candy box?",
+        a: "Yes. The personalization includes the name and theme you choose, including your brand's logo, and we send a digital proof before producing.",
+      },
+      {
+        q: "Do the candy boxes come with candy?",
+        a: "No. The candy box arrives assembled and empty, ready to fill with whatever you choose.",
+      },
+      {
+        q: "How long does the digital proof take for vinyl stickers?",
+        a: "It normally arrives within 24 hours after your payment and includes up to 2 rounds of adjustments.",
+      },
+      {
+        q: "What is the difference between logo stickers and vinyl stickers?",
+        a: "Logo stickers are meant for your business logo and have a 50-piece minimum. Vinyl stickers work for any design, character or photo and have a 40-piece minimum.",
+      },
+    ],
+    sources: [
+      { label: "MOO: client gift ideas (in Spanish)", url: "https://www.moo.com/blog/es/inspiracion/ideas-para-obsequios-a-clientes" },
+    ],
+  },
 ];
 
 export function getBlogPostEn(slug: string) {
