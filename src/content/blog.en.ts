@@ -3245,30 +3245,45 @@ export const blogPostsEn: BlogPost[] = [
       "How to set up a wedding candy table: how many sweets to plan, what to put in each candy box and how to personalize them with a digital proof.",
     category: "Guides",
     publishedAt: "2026-11-11",
+    modifiedAt: "2026-11-03",
     intro:
-      "A well-planned candy table looks good, photographs well and gets enjoyed. This guide covers how to estimate the sweets, what to put in each candy box, how to set up the table and how to personalize the candy boxes so they match your wedding palette.",
+      "A well-planned wedding candy table looks good, photographs well and gets enjoyed. This guide covers how many sweets to estimate, how many candy boxes you need, what to put in each one, how to set up the table, what each label should say and how to personalize the candy boxes so they match your wedding palette. There is also a section for wedding planners.",
     sections: [
       {
         heading: "How many sweets to plan per guest for your wedding candy table",
         body: [
-          "As a starting point, Bodas.net suggests about 150 g of sweets per guest at small weddings, about 100 g at medium ones and about 80 g at large ones. These are rough figures from a guide in Spain, not a rule. For 100 guests, that guide gives about 10 kg as a starting point.",
-          "If you add mini brownies, donuts or chocolates, you can reduce the loose sweets. Bodas.net also guides by medium jars: 4 to 6 for 50 guests, 10 to 12 for 50 to 150, and 15 or 16 for about 200. The candy table complements dessert and the banquet, it does not replace them.",
+          "As a starting point, Bodas.net suggests about 150 g of sweets per guest at small weddings, about 100 g at medium ones and about 80 g at large ones. For 100 guests that is about 10 kg if the table is mostly candy. These are rough figures from a guide in Spain, not a rule.",
+          "If you add mini brownies, donuts, chocolates or cookies, you can reduce the loose sweets. The candy table complements dessert and the banquet, it does not replace them.",
           "Crehana notes that the amount depends on the guests, the duration, the venue and the catering, so it is worth fine-tuning the number with your wedding planner or the venue.",
+        ],
+      },
+      {
+        heading: "How many candy boxes or jars you need on the table",
+        body: [
+          "Bodas.net guides by medium jars: 4 to 6 for 50 guests, 10 to 12 for 50 to 150, and about 15 or 16 for 200. It is a reference for how many containers to fill, not a rule. Adjust it to how many kinds of sweets you want to show and the size of your table.",
+          "So it helps to start with the kinds of sweets you want to offer and then set the number of containers. Our minimum order for candy boxes is 10 pieces, and our guide to [personalized candy boxes](/en/blog/wedding-quinceanera-baby-shower-favor-boxes) shows what they are like.",
         ],
       },
       {
         heading: "What sweets to put in each candy box",
         body: [
-          "Choose variety and label every candy box. Crehana suggests at least 6 kinds of sweets as a reference, and Bodas.net recommends labeling flavors and allergens and keeping gluten-free, sugar-free or vegan options separate. The Yume candy box arrives assembled and empty, so you decide what goes in each one.",
-          "Bodas.net suggests small bags of sweets with a personalized label as a favor for guests. For more filling ideas, see our guide on [what to put in a candy box](/en/blog/what-to-put-in-a-party-favor-box).",
+          "Choose variety and label every candy box. Crehana suggests at least 6 kinds of sweets as a reference, and Bodas.net recommends mixing classics such as gummies, marshmallows and chocolates with minis, cake pops, brownies or decorated cookies. The Yume candy box arrives assembled and empty, so you decide what goes in each one.",
+          "For more filling ideas, see our guide on [what to put in a candy box](/en/blog/what-to-put-in-a-party-favor-box).",
         ],
       },
       {
         heading: "How to set up a wedding candy table step by step",
         body: [
-          "Define a concept and a palette, choose a focal point and arrange by height: low items in front, tall ones at the back. Crehana proposes 10 steps from inspiration to graphic design, with signs and bunting, and they include a sketch of the table.",
-          "Bodas.net adds clear containers, trays at different heights or wooden crates, a coherent style line and tongs for serving. As a hygienic option without lines, it proposes individual servings.",
+          "Define a concept and a palette, choose a focal point and arrange by height: low items in front, tall ones at the back. Bodas.net recommends clear containers, trays at different heights or wooden crates so the contents show, and keeping order with a coherent style line.",
+          "Crehana proposes 10 steps from inspiration to graphic design, with signs and bunting, and they include a sketch of the table. Bodas.net adds tongs for serving and, as a hygienic option without lines, individual servings.",
           "Candy boxes bring color and a design of your own to the table and, once personalized, repeat the design of your wedding. If you also want favors to hand out, see our [personalized wedding favors](/en/blog/personalized-wedding-favors-with-name-and-date).",
+        ],
+      },
+      {
+        heading: "Table labels: flavors, allergens and finishing touches",
+        body: [
+          "A useful label says what is in each candy box. Bodas.net advises labeling flavors, listing allergens and marking gluten-free, sugar-free or vegan options. That way guests choose with confidence and the table looks tidy as well as pretty. You can also add small signs with the couple's names.",
+          "As a personalized touch, Bodas.net suggests sealed bags with a label showing the wedding date and the couple's names or initials. Another option is to leave bags or jars at the end of the table so each guest serves themselves.",
         ],
       },
       {
@@ -3280,10 +3295,17 @@ export const blogPostsEn: BlogPost[] = [
         ],
       },
       {
-        heading: "When to order the candy boxes and how to coordinate with your planner",
+        heading: "When to order the candy boxes for your candy table",
         body: [
           "Order the candy boxes once you have settled the palette and the guest count, to leave time for the digital proof and your approval. If you work with a wedding planner, share the approved design and the table sketch with her. Message us on WhatsApp with your wedding date.",
           "When you request a quote, tell us how many guests you have and how many candy boxes you want.",
+        ],
+      },
+      {
+        heading: "Wedding candy table with a planner: what to share with us",
+        body: [
+          "If you are a wedding planner or work with one, what helps most is having the guest count, the palette and the table sketch defined. With that we quote the candy boxes, send a digital proof for approval and coordinate everything on WhatsApp, with direct contact with you.",
+          "Each event is quoted separately, so you can message us with the details of every wedding you organize.",
         ],
       },
     ],
@@ -3297,8 +3319,16 @@ export const blogPostsEn: BlogPost[] = [
         a: "Bodas.net, in a guide from Spain, suggests about 150 g per guest at small weddings, about 100 g at medium ones and about 80 g at large ones. These are rough figures, not a rule.",
       },
       {
+        q: "How many jars or candy boxes do I need on the table?",
+        a: "Bodas.net guides by medium jars: 4 to 6 for 50 guests, 10 to 12 for 50 to 150, and about 15 or 16 for 200. It is a reference, not a rule.",
+      },
+      {
         q: "Do the candy boxes include sweets?",
         a: "No. The candy box arrives assembled and empty, ready to fill with the sweets you choose.",
+      },
+      {
+        q: "What should the table labels say?",
+        a: "Bodas.net advises labeling flavors, listing allergens and marking gluten-free, sugar-free or vegan options.",
       },
       {
         q: "What does candy box personalization include?",
@@ -3307,6 +3337,10 @@ export const blogPostsEn: BlogPost[] = [
       {
         q: "Does the candy table replace dessert?",
         a: "No. According to Bodas.net, the candy table complements dessert and the banquet, it does not replace them.",
+      },
+      {
+        q: "When should I order the candy boxes?",
+        a: "Once you have settled the palette and the guest count, to leave time for the digital proof and your approval. Message us on WhatsApp with your wedding date.",
       },
       {
         q: "What is the minimum order for candy boxes?",

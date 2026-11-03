@@ -3864,30 +3864,45 @@ export const blogPosts: BlogPost[] = [
       "Cómo armar una mesa de dulces para boda: cuántos dulces calcular, qué poner en cada dulcero, cómo montarla y personalizar dulceros con prueba digital.",
     category: "Guías",
     publishedAt: "2026-11-11",
+    modifiedAt: "2026-11-03",
     intro:
-      "Una mesa de dulces bien pensada se ve, se fotografía y se disfruta. En esta guía encuentras cómo calcular los dulces, qué poner en cada dulcero, cómo montar la mesa y cómo personalizar los dulceros para que combinen con la paleta de tu boda.",
+      "Una mesa de dulces para boda bien pensada se ve, se fotografía y se disfruta. En esta guía encuentras cuántos dulces calcular, cuántos dulceros necesitas, qué poner en cada uno, cómo montar la mesa, qué debe decir cada etiqueta y cómo personalizar los dulceros para que combinen con la paleta de tu boda. También hay una sección para wedding planners.",
     sections: [
       {
         heading: "Cuántos dulces calcular para la mesa de dulces de tu boda",
         body: [
-          "Como punto de partida, Bodas.net propone unos 150 g de chucherías por invitado en bodas pequeñas, unos 100 g en medianas y unos 80 g en grandes. Son cifras orientativas de una guía de España, no una norma. Para 100 invitados, esa guía da unos 10 kg como punto de partida.",
-          "Si añades mini brownies, donuts o bombones, puedes reducir la cantidad de dulce suelto. Bodas.net también orienta por tarros medianos: de 4 a 6 para 50 invitados, de 10 a 12 para entre 50 y 150, y 15 o 16 para unos 200. La mesa acompaña al postre y al banquete, no los sustituye.",
+          "Como punto de partida, Bodas.net propone unos 150 g de dulces por invitado en bodas pequeñas, unos 100 g en medianas y unos 80 g en grandes. Para 100 invitados serían unos 10 kg si la mesa es sobre todo de golosinas. Son cifras orientativas de una guía de España, no una norma.",
+          "Si añades mini brownies, donuts, bombones o galletas, puedes reducir la cantidad de dulce suelto. La mesa acompaña al postre y al banquete, no los sustituye.",
           "Crehana recuerda que la cantidad depende de los invitados, la duración, el lugar y el catering, así que conviene afinar la cifra con tu wedding planner o con el salón.",
+        ],
+      },
+      {
+        heading: "Cuántos dulceros o tarros necesitas en la mesa",
+        body: [
+          "Bodas.net orienta con tarros medianos: de 4 a 6 para 50 invitados, de 10 a 12 para entre 50 y 150, y unos 15 o 16 para 200. Es una referencia para saber cuántos recipientes llenar, no una regla. Ajústala según cuántos tipos de dulce quieras mostrar y el tamaño de tu mesa.",
+          "Por eso conviene empezar por los tipos de dulce que quieres ofrecer y después definir el número de recipientes. Nuestro pedido mínimo de dulceros es de 10 piezas, y en la página de [dulceros personalizados](/productos/dulceros-personalizados) ves el precio vigente.",
         ],
       },
       {
         heading: "Qué dulces poner en cada dulcero de la mesa",
         body: [
-          "Elige variedad y etiqueta cada dulcero. Crehana sugiere al menos 6 variedades de dulces como referencia, y Bodas.net recomienda etiquetar sabores y alérgenos y separar las opciones sin gluten, sin azúcar o veganas. El dulcero de Yume llega armado y vacío, así que tú decides qué lleva cada uno.",
-          "Bodas.net sugiere bolsitas de chuches con etiqueta personalizada como detalle para invitados. Para más ideas de relleno, revisa nuestra guía de [qué poner en un dulcero](/blog/que-poner-en-un-dulcero).",
+          "Elige variedad y etiqueta cada dulcero. Crehana sugiere al menos 6 variedades de dulces como referencia, y Bodas.net recomienda combinar clásicos como gominolas, nubes y bombones con minis, cake pops, brownies o galletas decoradas. El dulcero de Yume llega armado y vacío, así que tú decides qué lleva cada uno.",
+          "Para más ideas de relleno, revisa nuestra guía de [qué poner en un dulcero](/blog/que-poner-en-un-dulcero).",
         ],
       },
       {
         heading: "Cómo armar la mesa de dulces para boda paso a paso",
         body: [
-          "Define un concepto y una paleta, elige un punto de atención y acomoda por alturas: lo bajo al frente y lo alto al fondo. Crehana propone 10 pasos que van de la inspiración al diseño gráfico, con cartelitos y banderines, e incluyen un croquis de la mesa.",
-          "Bodas.net añade recipientes transparentes, bandejas a distintas alturas o cajas de madera, una línea de estilo coherente y pinzas para servirse. Como alternativa higiénica y sin filas, propone presentaciones individuales.",
+          "Define un concepto y una paleta, elige un punto de atención y acomoda por alturas: lo bajo al frente y lo alto al fondo. Bodas.net recomienda recipientes transparentes, bandejas a distintas alturas o cajas de madera para que se vea el contenido, y mantener el orden con una línea de estilo coherente.",
+          "Crehana propone 10 pasos que van de la inspiración al diseño gráfico, con cartelitos y banderines, e incluyen un croquis de la mesa. Bodas.net añade pinzas para servirse y, como alternativa higiénica y sin filas, las presentaciones individuales.",
           "Los dulceros dan color y un diseño propio a la mesa y, si los personalizas, repiten el diseño de tu boda. Si además buscas detalles para entregar, mira los [souvenirs de boda personalizados](/blog/souvenirs-de-boda-personalizados).",
+        ],
+      },
+      {
+        heading: "Etiquetas para la mesa: sabores, alérgenos y detalles",
+        body: [
+          "Una etiqueta útil dice qué hay en cada dulcero. Bodas.net aconseja etiquetar los sabores, indicar los alérgenos y señalar las opciones sin gluten, sin azúcar o veganas. Así tus invitados eligen con seguridad y la mesa se ve ordenada, además de bonita. También puedes sumar cartelitos con los nombres de la pareja.",
+          "Como detalle personalizado, Bodas.net propone bolsitas cerradas con una etiqueta con la fecha de la boda y los nombres o las iniciales de la pareja. Otra opción es dejar bolsas o tarros al final de la mesa para que cada invitado se sirva.",
         ],
       },
       {
@@ -3899,10 +3914,17 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "Cuándo pedir los dulceros y cómo coordinarlos con tu planner",
+        heading: "Cuándo pedir los dulceros de tu mesa de dulces",
         body: [
           "Pide los dulceros cuando tengas definidos la paleta y el número de invitados, para dar tiempo a la prueba digital y a tu aprobación. Si trabajas con wedding planner, comparte con ella el diseño aprobado y el croquis de la mesa. Escríbenos por WhatsApp con la fecha de tu boda.",
           "Al cotizar, dinos cuántos invitados tienes y cuántos dulceros quieres.",
+        ],
+      },
+      {
+        heading: "Mesa de dulces con wedding planner: qué compartir con nosotros",
+        body: [
+          "Si eres wedding planner o trabajas con una, lo útil es tener definidos el número de invitados, la paleta y el croquis de la mesa. Con eso cotizamos los dulceros, enviamos una prueba digital para que el diseño se apruebe y coordinamos todo por WhatsApp, con trato directo contigo.",
+          "Cada evento se cotiza por separado, así que puedes escribirnos con los datos de cada boda que organices.",
         ],
       },
     ],
@@ -3916,8 +3938,16 @@ export const blogPosts: BlogPost[] = [
         a: "Bodas.net, en una guía de España, orienta con unos 150 g por invitado en bodas pequeñas, unos 100 g en medianas y unos 80 g en grandes. Son cifras orientativas, no una norma.",
       },
       {
+        q: "¿Cuántos tarros o dulceros se necesitan en la mesa?",
+        a: "Bodas.net orienta con tarros medianos: de 4 a 6 para 50 invitados, de 10 a 12 para entre 50 y 150, y unos 15 o 16 para 200. Es una referencia, no una regla.",
+      },
+      {
         q: "¿Los dulceros incluyen dulces?",
         a: "No. El dulcero llega armado y vacío, listo para llenar con los dulces que tú elijas.",
+      },
+      {
+        q: "¿Qué conviene indicar en las etiquetas de la mesa?",
+        a: "Bodas.net aconseja etiquetar los sabores, indicar los alérgenos y señalar las opciones sin gluten, sin azúcar o veganas.",
       },
       {
         q: "¿Qué incluye la personalización del dulcero?",
@@ -3926,6 +3956,10 @@ export const blogPosts: BlogPost[] = [
       {
         q: "¿La mesa de dulces sustituye al postre?",
         a: "No. Según Bodas.net, la mesa de dulces acompaña al postre y al banquete, no los sustituye.",
+      },
+      {
+        q: "¿Cuándo conviene pedir los dulceros?",
+        a: "Cuando ya tengas definidos la paleta y el número de invitados, para dar tiempo a la prueba digital y a tu aprobación. Escríbenos por WhatsApp con la fecha de tu boda.",
       },
       {
         q: "¿Cuál es el pedido mínimo de dulceros?",
