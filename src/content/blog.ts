@@ -4028,16 +4028,17 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "dulceros-para-xv-anos-elegantes",
     title: "Dulceros para XV años elegantes: ideas y cantidades",
-    metaTitle: "Dulceros para XV años elegantes: ideas y cantidades",
+    metaTitle: "Recuerdos para XV años modernos: dulceros elegantes",
     description:
       "Cómo elegir dulceros para XV años elegantes: qué los hace finos, cuántos pedir, qué poner dentro y cómo pedir el diseño con prueba digital.",
     category: "Guías",
     publishedAt: "2026-11-03",
+    modifiedAt: "2026-11-03",
     intro:
       "Una mesa de XV años se recuerda por los detalles, y el dulcero es lo que cada invitado se lleva a casa. Aquí tienes cómo elegir dulceros para XV años elegantes: qué los hace verse finos, cómo coordinarlos con la fiesta, cuántos pedir y qué poner dentro. Está pensado para mamás, papás y planners que quieren una mesa que se vea planeada.",
     sections: [
       {
-        heading: "Qué hace elegante a un dulcero de XV años",
+        heading: "Recuerdos para XV años y 15 años modernos: dulceros elegantes",
         body: [
           "Un dulcero de XV años se ve elegante cuando usa pocos colores, un nombre legible y una tipografía discreta, y cuando combina con la invitación, el pastel y la decoración de la mesa. La elegancia viene de la coordinación y del detalle personalizado, no de llenarlo de adornos ni de usar un kit genérico.",
           "Al buscar mesas de dulces para XV años en un marketplace aparecen sobre todo kits de mesa vintage en MDF, de precio bajo y para armar, y cajitas transparentes que se venden en paquetes de 20, 40 o 50 piezas. Son opciones de volumen. Un dulcero con el nombre de la quinceañera y los colores de su fiesta es otro tipo de detalle.",

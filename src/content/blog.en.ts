@@ -3447,16 +3447,17 @@ export const blogPostsEn: BlogPost[] = [
   {
     slug: BLOG_SLUG_EN["dulceros-para-xv-anos-elegantes"],
     title: "Elegant Quinceañera Candy Boxes: Ideas and Quantities",
-    metaTitle: "Elegant Quinceañera Candy Boxes: Ideas and Quantities",
+    metaTitle: "Modern Quinceañera Favors: Elegant Candy Boxes",
     description:
       "How to choose elegant quinceañera candy boxes: what makes them look refined, how many to order, what to put inside and how to order with a digital proof.",
     category: "Guides",
     publishedAt: "2026-11-03",
+    modifiedAt: "2026-11-03",
     intro:
       "A quinceañera table is remembered for its details, and the candy box is what each guest takes home. Here is how to choose elegant quinceañera candy boxes: what makes them look refined, how to match them to the party, how many to order and what to put inside. It is written for moms, dads and planners who want a table that looks planned.",
     sections: [
       {
-        heading: "What makes a quinceañera candy box elegant",
+        heading: "Modern quinceañera favors: elegant candy boxes",
         body: [
           "A quinceañera candy box looks elegant when it uses a short palette, a readable name and a discreet typeface, and when it matches the invitation, the cake and the table decor. Elegance comes from coordination and a personalized detail, not from piling on ornaments or using a generic kit.",
           "When you search for quinceañera candy tables on a marketplace, you mostly find low-priced vintage MDF table kits to assemble, and clear boxes sold in packs of 20, 40 or 50 pieces. Those are volume options. A candy box with the quinceañera's name and the colors of her party is a different kind of detail.",
