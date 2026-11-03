@@ -69,7 +69,7 @@ export const blogPostsEn: BlogPost[] = [
     ],
     "relatedBlogSlugs": [
       "set-up-google-business-profile-and-ask-for-reviews",
-      "maxreviewer-alternative-google-review-plates",
+      "google-review-plates-one-time-price-vs-subscription",
       "how-to-get-more-google-reviews-nfc-qr",
       "nfc-plate-vs-printed-qr-code-for-reviews",
       "how-to-use-your-yume-google-review-plate",
@@ -150,7 +150,7 @@ export const blogPostsEn: BlogPost[] = [
     ],
     "relatedBlogSlugs": [
       "set-up-google-business-profile-and-ask-for-reviews",
-      "maxreviewer-alternative-google-review-plates",
+      "google-review-plates-one-time-price-vs-subscription",
       "how-to-get-more-google-reviews-nfc-qr",
       "nfc-plate-vs-printed-qr-code-for-reviews",
       "how-to-use-your-yume-google-review-plate"
@@ -230,7 +230,7 @@ export const blogPostsEn: BlogPost[] = [
     ],
     "relatedBlogSlugs": [
       "set-up-google-business-profile-and-ask-for-reviews",
-      "maxreviewer-alternative-google-review-plates",
+      "google-review-plates-one-time-price-vs-subscription",
       "how-to-get-more-google-reviews-nfc-qr",
       "nfc-plate-vs-printed-qr-code-for-reviews",
       "how-to-use-your-yume-google-review-plate"
@@ -310,7 +310,7 @@ export const blogPostsEn: BlogPost[] = [
     ],
     "relatedBlogSlugs": [
       "set-up-google-business-profile-and-ask-for-reviews",
-      "maxreviewer-alternative-google-review-plates",
+      "google-review-plates-one-time-price-vs-subscription",
       "how-to-get-more-google-reviews-nfc-qr",
       "nfc-plate-vs-printed-qr-code-for-reviews",
       "how-to-use-your-yume-google-review-plate",
@@ -393,7 +393,7 @@ export const blogPostsEn: BlogPost[] = [
     ],
     "relatedBlogSlugs": [
       "set-up-google-business-profile-and-ask-for-reviews",
-      "maxreviewer-alternative-google-review-plates",
+      "google-review-plates-one-time-price-vs-subscription",
       "how-to-get-more-google-reviews-nfc-qr",
       "nfc-plate-vs-printed-qr-code-for-reviews",
       "how-to-use-your-yume-google-review-plate",
@@ -415,26 +415,25 @@ export const blogPostsEn: BlogPost[] = [
     ]
   },
   {
-    slug: BLOG_SLUG_EN["alternativa-a-maxreviewer-placas-resenas-google"],
-    title: "MaxReviewer alternative: Google review plates for one business",
-    metaTitle: "MaxReviewer alternative: Google review plates",
-    description: "Compare MaxReviewer and Yume: a multi-location platform or an NFC and QR plate for your business, from 1 piece at a one-time price.",
+    slug: BLOG_SLUG_EN["placas-resenas-google-pago-unico-vs-suscripcion"],
+    title: "Google review plates: one-time price vs monthly subscription",
+    metaTitle: "Google review plates: one-time price vs subscription",
+    description: "Compare a Google review plate with no subscription against plate and monthly platform services. Yume starts at MXN $140.",
     category: "Guides",
     publishedAt: "2026-11-03",
     modifiedAt: "2026-11-03",
-    intro: "If you are looking for a MaxReviewer alternative, first decide whether you need a multi-location platform or a configured plate that makes one business's review link easier to reach.",
+    intro: "When comparing Google review plates without a subscription, check the price of the piece and whether you need a monthly platform. Yume offers a configured plate or stand for a one-time price with no monthly fee.",
     sections: [
-      { heading: "Which option fits your business?", body: ["MaxReviewer is a better fit for chains or franchises that need a multi-location dashboard. Yume suits a clinic, restaurant, salon or event planner that wants a plate or stand with NFC and QR configured for its review link, at a one-time price."] },
-      { heading: "How do MaxReviewer and Yume compare?", body: ["The table separates the physical product from the platform: MaxReviewer offers both separately, while Yume offers the configured piece without a platform. MaxReviewer figures are according to its public website in November 2026; its plan prices are in MXN plus VAT."], table: { headers: ["Feature", "MaxReviewer", "Yume"], rows: [
-        ["Best for", "Chains and franchises needing multi-location management", "One business that wants to make its review link accessible"],
-        ["Plate price", "Generic plate on Amazon MX; check price", "Plate MXN $140; stand MXN $200, one-time payment"],
-        ["Platform/dashboard", "Dashboard, location reports, alerts and AI sentiment insights", "No platform or dashboard"],
-        ["Monthly fee", "No monthly fee for plates; platform per brand from MXN $799/month for up to 5 locations, plus VAT", "No subscription or monthly fee"],
-        ["Setup", "Ask MaxReviewer about plate options", "We program NFC and generate the QR with your link before shipping"],
-        ["Minimum order", "Custom plates from 20 pieces", "You can order one piece"],
+      { heading: "One-time price or subscription platform", body: ["Some services on the market combine a plate with a subscription platform; their published plans start at around MXN $800 per month plus VAT according to their public websites (accessed November 2026). Those services may also sell the plate separately. Yume offers the configured piece without a platform or monthly fee, for less than the monthly plan mentioned above.", "If you manage many locations and need centralized reports, a platform can make sense. For one business looking to make its review link easier to reach, a one-time purchase may be enough."] },
+      { heading: "Costs and features compared", body: ["The 12-month comparison for one location assumes the monthly plan is kept for the full year. The platform calculation is MXN $799 × 12 = $9,588, or approximately $9,600 plus VAT; it excludes the cost of the piece."], table: { headers: ["Feature", "Plate + subscription platform service (other options)", "Yume"], rows: [
+        ["Monthly cost", "From around MXN $800 plus VAT for the platform", "No monthly fee"],
+        ["Cost of the piece", "Ask the service; it may be sold separately", "Plate MXN $140 or stand MXN $200, one-time payment"],
+        ["12-month cost for one location", "From around MXN $9,600 per year plus VAT for the platform alone, on a monthly plan", "MXN $140 or $200 total"],
+        ["Minimum order", "Ask the service", "You can order one piece"],
+        ["Dashboard", "Some platforms offer reports and alerts", "Not included; manage reviews in your Google Business Profile"],
+        ["Best for", "Multiple locations needing reports", "One business"],
       ] } },
-      { heading: "How much does MaxReviewer's platform cost?", body: ["According to its public website in November 2026, MaxReviewer charges per brand: up to 5 locations cost MXN $799 per month or $7,990 per year; up to 10 cost $1,499 per month; and up to 20 cost $2,799 per month. Prices are plus VAT. Its plates have no monthly fee."] },
-      { heading: "What comes with a Yume plate or stand?", body: ["Yume makes each piece to order, programs the NFC and generates the QR with the customer's review link before shipping. The plate includes adhesive; the stand sits upright. Both are available in white or black and work without an app or subscription."] },
+      { heading: "What comes with a Yume plate or stand?", body: ["Yume makes each piece to order, programs the NFC and generates the QR with your review link before shipping. The plate includes adhesive; the stand sits upright. Both are available in white or black and work without an app or subscription."] },
     ],
     faq: [
       { q: "Do I need a dashboard?", a: "Not to use a Yume plate. It has no dashboard; you manage reviews in your own Google Business Profile. A multi-location platform may be useful if you need centralized reports and alerts." },
@@ -445,10 +444,6 @@ export const blogPostsEn: BlogPost[] = [
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
     relatedBlogSlugs: [BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"], BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"], BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"], BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"], BLOG_SLUG_EN["placa-resenas-google-para-consultorios"], BLOG_SLUG_EN["placa-resenas-google-para-restaurantes"], BLOG_SLUG_EN["placa-resenas-google-para-salones-esteticas-y-barberias"], BLOG_SLUG_EN["placa-resenas-google-para-planners-y-eventos"], BLOG_SLUG_EN["como-hacer-una-encuesta-de-satisfaccion-del-cliente"]],
     quoteMessage: "Hi, I am interested in an NFC plate or stand for Google reviews.",
-    sources: [
-      { label: "MaxReviewer: plans (accessed November 2026)", url: "https://maxreviewer.com/planes" },
-      { label: "MaxReviewer: plates (accessed November 2026)", url: "https://maxreviewer.com/placas" },
-    ],
   },
   {
     slug: BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"],
@@ -475,7 +470,7 @@ export const blogPostsEn: BlogPost[] = [
       { q: "Does a plate guarantee more reviews?", a: "No. A plate makes the link easier to reach; each customer decides whether to review and what to write." },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
-    relatedBlogSlugs: [BLOG_SLUG_EN["alternativa-a-maxreviewer-placas-resenas-google"], BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"], BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"], BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"], BLOG_SLUG_EN["placa-resenas-google-para-consultorios"], BLOG_SLUG_EN["placa-resenas-google-para-restaurantes"], BLOG_SLUG_EN["placa-resenas-google-para-salones-esteticas-y-barberias"], BLOG_SLUG_EN["placa-resenas-google-para-planners-y-eventos"], BLOG_SLUG_EN["como-hacer-una-encuesta-de-satisfaccion-del-cliente"]],
+    relatedBlogSlugs: [BLOG_SLUG_EN["placas-resenas-google-pago-unico-vs-suscripcion"], BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"], BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"], BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"], BLOG_SLUG_EN["placa-resenas-google-para-consultorios"], BLOG_SLUG_EN["placa-resenas-google-para-restaurantes"], BLOG_SLUG_EN["placa-resenas-google-para-salones-esteticas-y-barberias"], BLOG_SLUG_EN["placa-resenas-google-para-planners-y-eventos"], BLOG_SLUG_EN["como-hacer-una-encuesta-de-satisfaccion-del-cliente"]],
     quoteMessage: "Hi, I would like to learn about NFC plates and stands for Google reviews.",
     sources: [
       { label: "Google: tips to get reviews", url: "https://support.google.com/business/answer/3474122?hl=en" },
@@ -2131,7 +2126,7 @@ export const blogPostsEn: BlogPost[] = [
         a: "The version without a stand sticks directly onto the counter, register, or wall. The version with a stand sits upright on a desk or table with nothing to stick down.",
       },
     ],
-    relatedBlogSlugs: [BLOG_SLUG_EN["alternativa-a-maxreviewer-placas-resenas-google"], BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"], BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"], BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"], BLOG_SLUG_EN["placa-resenas-google-para-consultorios"], BLOG_SLUG_EN["placa-resenas-google-para-restaurantes"], BLOG_SLUG_EN["placa-resenas-google-para-salones-esteticas-y-barberias"], BLOG_SLUG_EN["placa-resenas-google-para-planners-y-eventos"], BLOG_SLUG_EN["como-hacer-una-encuesta-de-satisfaccion-del-cliente"]],
+    relatedBlogSlugs: [BLOG_SLUG_EN["placas-resenas-google-pago-unico-vs-suscripcion"], BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"], BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"], BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"], BLOG_SLUG_EN["placa-resenas-google-para-consultorios"], BLOG_SLUG_EN["placa-resenas-google-para-restaurantes"], BLOG_SLUG_EN["placa-resenas-google-para-salones-esteticas-y-barberias"], BLOG_SLUG_EN["placa-resenas-google-para-planners-y-eventos"], BLOG_SLUG_EN["como-hacer-una-encuesta-de-satisfaccion-del-cliente"]],
     relatedProductSlugs: ["stand-resena-google-nfc", "placa-resena-google-nfc"],
   },
   {
@@ -2170,7 +2165,7 @@ export const blogPostsEn: BlogPost[] = [
         a: "No. NFC adds a second way to use the plate, it does not replace the QR code. The customer can tap the phone or scan the code with the camera. Having both on the same plate means no customer is left unable to use it, and the design matches your brand.",
       },
     ],
-    relatedBlogSlugs: [BLOG_SLUG_EN["alternativa-a-maxreviewer-placas-resenas-google"], BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"], BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"], BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"], BLOG_SLUG_EN["placa-resenas-google-para-consultorios"], BLOG_SLUG_EN["placa-resenas-google-para-restaurantes"], BLOG_SLUG_EN["placa-resenas-google-para-salones-esteticas-y-barberias"], BLOG_SLUG_EN["placa-resenas-google-para-planners-y-eventos"], BLOG_SLUG_EN["como-hacer-una-encuesta-de-satisfaccion-del-cliente"]],
+    relatedBlogSlugs: [BLOG_SLUG_EN["placas-resenas-google-pago-unico-vs-suscripcion"], BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"], BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"], BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"], BLOG_SLUG_EN["placa-resenas-google-para-consultorios"], BLOG_SLUG_EN["placa-resenas-google-para-restaurantes"], BLOG_SLUG_EN["placa-resenas-google-para-salones-esteticas-y-barberias"], BLOG_SLUG_EN["placa-resenas-google-para-planners-y-eventos"], BLOG_SLUG_EN["como-hacer-una-encuesta-de-satisfaccion-del-cliente"]],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
   },
   {
@@ -2275,7 +2270,7 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
-    relatedBlogSlugs: [BLOG_SLUG_EN["alternativa-a-maxreviewer-placas-resenas-google"], BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"], BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"], BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"], BLOG_SLUG_EN["placa-resenas-google-para-consultorios"], BLOG_SLUG_EN["placa-resenas-google-para-restaurantes"], BLOG_SLUG_EN["placa-resenas-google-para-salones-esteticas-y-barberias"], BLOG_SLUG_EN["placa-resenas-google-para-planners-y-eventos"], BLOG_SLUG_EN["como-hacer-una-encuesta-de-satisfaccion-del-cliente"]],
+    relatedBlogSlugs: [BLOG_SLUG_EN["placas-resenas-google-pago-unico-vs-suscripcion"], BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"], BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"], BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"], BLOG_SLUG_EN["placa-resenas-google-para-consultorios"], BLOG_SLUG_EN["placa-resenas-google-para-restaurantes"], BLOG_SLUG_EN["placa-resenas-google-para-salones-esteticas-y-barberias"], BLOG_SLUG_EN["placa-resenas-google-para-planners-y-eventos"], BLOG_SLUG_EN["como-hacer-una-encuesta-de-satisfaccion-del-cliente"]],
   },
   {
     slug: BLOG_SLUG_EN["papeleria-personalizada-vs-plantillas-genericas"],

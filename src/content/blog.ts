@@ -120,7 +120,7 @@ export const blogPosts: BlogPost[] = [
     ],
     "relatedBlogSlugs": [
       "como-configurar-perfil-de-google-y-pedir-resenas",
-      "alternativa-a-maxreviewer-placas-resenas-google",
+      "placas-resenas-google-pago-unico-vs-suscripcion",
       "como-conseguir-mas-resenas-de-google-nfc-qr",
       "placa-nfc-vs-codigo-qr-impreso-resenas",
       "como-usar-placa-resenas-google-yume",
@@ -201,7 +201,7 @@ export const blogPosts: BlogPost[] = [
     ],
     "relatedBlogSlugs": [
       "como-configurar-perfil-de-google-y-pedir-resenas",
-      "alternativa-a-maxreviewer-placas-resenas-google",
+      "placas-resenas-google-pago-unico-vs-suscripcion",
       "como-conseguir-mas-resenas-de-google-nfc-qr",
       "placa-nfc-vs-codigo-qr-impreso-resenas",
       "como-usar-placa-resenas-google-yume"
@@ -281,7 +281,7 @@ export const blogPosts: BlogPost[] = [
     ],
     "relatedBlogSlugs": [
       "como-configurar-perfil-de-google-y-pedir-resenas",
-      "alternativa-a-maxreviewer-placas-resenas-google",
+      "placas-resenas-google-pago-unico-vs-suscripcion",
       "como-conseguir-mas-resenas-de-google-nfc-qr",
       "placa-nfc-vs-codigo-qr-impreso-resenas",
       "como-usar-placa-resenas-google-yume"
@@ -361,7 +361,7 @@ export const blogPosts: BlogPost[] = [
     ],
     "relatedBlogSlugs": [
       "como-configurar-perfil-de-google-y-pedir-resenas",
-      "alternativa-a-maxreviewer-placas-resenas-google",
+      "placas-resenas-google-pago-unico-vs-suscripcion",
       "como-conseguir-mas-resenas-de-google-nfc-qr",
       "placa-nfc-vs-codigo-qr-impreso-resenas",
       "como-usar-placa-resenas-google-yume",
@@ -444,7 +444,7 @@ export const blogPosts: BlogPost[] = [
     ],
     "relatedBlogSlugs": [
       "como-configurar-perfil-de-google-y-pedir-resenas",
-      "alternativa-a-maxreviewer-placas-resenas-google",
+      "placas-resenas-google-pago-unico-vs-suscripcion",
       "como-conseguir-mas-resenas-de-google-nfc-qr",
       "placa-nfc-vs-codigo-qr-impreso-resenas",
       "como-usar-placa-resenas-google-yume",
@@ -466,26 +466,25 @@ export const blogPosts: BlogPost[] = [
     ]
   },
   {
-    slug: "alternativa-a-maxreviewer-placas-resenas-google",
-    title: "Alternativa a MaxReviewer: placas de reseñas de Google para un solo negocio",
-    metaTitle: "Alternativa a MaxReviewer: placas de reseñas",
-    description: "Compara MaxReviewer y Yume: plataforma para varias sucursales o placa NFC y QR con pago único para tu negocio, desde 1 pieza.",
+    slug: "placas-resenas-google-pago-unico-vs-suscripcion",
+    title: "Placas de reseñas de Google: pago único vs suscripción mensual",
+    metaTitle: "Placas de reseñas Google: pago único vs suscripción",
+    description: "Compara el precio de una placa de reseñas Google sin suscripción con servicios de placa y plataforma mensual. Yume desde $140 MXN.",
     category: "Guías",
     publishedAt: "2026-11-03",
     modifiedAt: "2026-11-03",
-    intro: "Si buscas una alternativa a MaxReviewer, empieza por decidir si necesitas una plataforma para varias sucursales o una placa configurada para facilitar el acceso a las reseñas de un negocio.",
+    intro: "Al comparar placas de reseñas Google sin suscripción, revisa el precio de la pieza y si necesitas una plataforma mensual. Yume ofrece una placa o stand configurado con pago único y sin mensualidad.",
     sections: [
-      { heading: "¿Qué opción conviene para tu negocio?", body: ["MaxReviewer encaja mejor con cadenas o franquicias que necesitan un dashboard para varias sucursales. Yume encaja con un consultorio, restaurante, salón o planner que quiere una placa o stand con NFC y QR configurados para su enlace de reseñas, con un pago único." ] },
-      { heading: "¿Cómo se comparan MaxReviewer y Yume?", body: ["La tabla distingue el producto físico de la plataforma: MaxReviewer ofrece ambos por separado, mientras que Yume ofrece la pieza configurada sin plataforma. Los datos de MaxReviewer son según su sitio público, noviembre 2026; los precios de sus planes son en MXN más IVA."], table: { headers: ["Aspecto", "MaxReviewer", "Yume"], rows: [
-        ["Ideal para", "Cadenas y franquicias que necesitan gestión de varias sucursales", "Un negocio que quiere facilitar el acceso a su enlace de reseñas"],
-        ["Precio de la placa", "Placa genérica en Amazon MX; consultar precio", "Placa $140 MXN; stand $200 MXN, pago único"],
-        ["Plataforma/dashboard", "Dashboard, reportes por sucursal, alertas e insights de sentimiento con IA", "Sin plataforma ni dashboard"],
-        ["Mensualidad", "Placas sin mensualidad; plataforma por marca desde $799/mes para hasta 5 sucursales, más IVA", "Sin suscripción ni mensualidad"],
-        ["Configuración", "Consultar opciones de placas con MaxReviewer", "Programamos NFC y generamos QR con el enlace antes del envío"],
-        ["Pedido mínimo", "Placas personalizadas desde 20 piezas", "Puedes pedir una pieza"],
+      { heading: "Pago único o plataforma por suscripción", body: ["Algunos servicios del mercado combinan la placa con una plataforma por suscripción; sus planes publicados parten de alrededor de $800 MXN al mes más IVA según sus sitios públicos (consulta noviembre 2026). En esos servicios, la placa por sí sola puede venderse por separado. Yume ofrece la pieza configurada sin plataforma ni cuota mensual, por un costo menor que el plan mensual indicado.", "Si administras muchas sucursales y necesitas reportes centralizados, una plataforma puede tener sentido. Para un solo negocio que busca facilitar el acceso a su enlace de reseñas, una pieza de pago único puede ser suficiente."] },
+      { heading: "Comparación de costos y funciones", body: ["La comparación de 12 meses para una sucursal supone contratar el plan mensual durante todo el año. El cálculo de plataforma es $799 × 12 = $9,588 MXN, aproximadamente $9,600 más IVA; no incluye el costo de la pieza."], table: { headers: ["Aspecto", "Servicio de placa + plataforma por suscripción (otras opciones)", "Yume"], rows: [
+        ["Costo mensual", "Desde alrededor de $800 MXN más IVA por la plataforma", "Sin mensualidad"],
+        ["Costo de la pieza", "Consultar; puede venderse por separado", "Placa $140 MXN o stand $200 MXN, pago único"],
+        ["Costo en 12 meses para una sucursal", "Desde alrededor de $9,600 MXN al año más IVA solo en plataforma, si contratas plan mensual", "$140 MXN o $200 MXN en total"],
+        ["Pedido mínimo", "Consultar con el servicio", "Puedes pedir una pieza"],
+        ["Dashboard", "Algunas plataformas ofrecen reportes y alertas", "No incluye; administras las reseñas en tu perfil de Google"],
+        ["Ideal para", "Varias sucursales que necesitan reportes", "Un solo negocio"],
       ] } },
-      { heading: "¿Cuánto cuesta la plataforma de MaxReviewer?", body: ["Según su sitio público en noviembre de 2026, MaxReviewer cobra por marca: hasta 5 sucursales cuestan $799 al mes o $7,990 al año; hasta 10, $1,499 al mes; y hasta 20, $2,799 al mes. Los precios son MXN más IVA. Sus placas no tienen mensualidad." ] },
-      { heading: "¿Qué recibes con una placa o stand de Yume?", body: ["Yume produce la pieza sobre pedido y programa el NFC y genera el QR con el enlace de reseñas del cliente antes de enviarla. La placa incluye adhesivo; el stand se coloca de pie. Ambos están disponibles en blanco o negro y funcionan sin app ni suscripción." ] },
+      { heading: "¿Qué recibes con una placa o stand de Yume?", body: ["Yume produce la pieza sobre pedido, programa el NFC y genera el QR con tu enlace de reseñas antes del envío. La placa incluye adhesivo; el stand se coloca de pie. Ambos están disponibles en blanco o negro y funcionan sin app ni suscripción."] },
     ],
     faq: [
       { q: "¿Necesito un dashboard?", a: "No para usar la placa de Yume. La pieza no incluye dashboard; administras las reseñas en tu propio perfil de empresa de Google. Una plataforma para varias sucursales puede ser útil si necesitas reportes y alertas centralizados." },
@@ -496,10 +495,6 @@ export const blogPosts: BlogPost[] = [
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
     relatedBlogSlugs: ["como-configurar-perfil-de-google-y-pedir-resenas", "como-conseguir-mas-resenas-de-google-nfc-qr", "placa-nfc-vs-codigo-qr-impreso-resenas", "como-usar-placa-resenas-google-yume", "placa-resenas-google-para-consultorios", "placa-resenas-google-para-restaurantes", "placa-resenas-google-para-salones-esteticas-y-barberias", "placa-resenas-google-para-planners-y-eventos", "como-hacer-una-encuesta-de-satisfaccion-del-cliente"],
     quoteMessage: "Hola, me interesan la placa o el stand NFC para reseñas de Google.",
-    sources: [
-      { label: "MaxReviewer: planes (consulta noviembre 2026)", url: "https://maxreviewer.com/planes" },
-      { label: "MaxReviewer: placas (consulta noviembre 2026)", url: "https://maxreviewer.com/placas" },
-    ],
   },
   {
     slug: "como-configurar-perfil-de-google-y-pedir-resenas",
@@ -526,7 +521,7 @@ export const blogPosts: BlogPost[] = [
       { q: "¿Una placa garantiza más reseñas?", a: "No. Una placa facilita el acceso al enlace; cada cliente decide si deja una reseña y qué escribe." },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
-    relatedBlogSlugs: ["alternativa-a-maxreviewer-placas-resenas-google", "como-conseguir-mas-resenas-de-google-nfc-qr", "placa-nfc-vs-codigo-qr-impreso-resenas", "como-usar-placa-resenas-google-yume", "placa-resenas-google-para-consultorios", "placa-resenas-google-para-restaurantes", "placa-resenas-google-para-salones-esteticas-y-barberias", "placa-resenas-google-para-planners-y-eventos", "como-hacer-una-encuesta-de-satisfaccion-del-cliente"],
+    relatedBlogSlugs: ["placas-resenas-google-pago-unico-vs-suscripcion", "como-conseguir-mas-resenas-de-google-nfc-qr", "placa-nfc-vs-codigo-qr-impreso-resenas", "como-usar-placa-resenas-google-yume", "placa-resenas-google-para-consultorios", "placa-resenas-google-para-restaurantes", "placa-resenas-google-para-salones-esteticas-y-barberias", "placa-resenas-google-para-planners-y-eventos", "como-hacer-una-encuesta-de-satisfaccion-del-cliente"],
     quoteMessage: "Hola, me interesa conocer las placas y stands NFC para reseñas de Google.",
     sources: [
       { label: "Google: consejos para recibir reseñas", url: "https://support.google.com/business/answer/3474122?hl=es" },
@@ -2327,7 +2322,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
-    relatedBlogSlugs: ["alternativa-a-maxreviewer-placas-resenas-google", "placa-nfc-vs-codigo-qr-impreso-resenas", "como-usar-placa-resenas-google-yume", "como-configurar-perfil-de-google-y-pedir-resenas", "placa-resenas-google-para-consultorios", "placa-resenas-google-para-restaurantes", "placa-resenas-google-para-salones-esteticas-y-barberias", "placa-resenas-google-para-planners-y-eventos", "como-hacer-una-encuesta-de-satisfaccion-del-cliente"],
+    relatedBlogSlugs: ["placas-resenas-google-pago-unico-vs-suscripcion", "placa-nfc-vs-codigo-qr-impreso-resenas", "como-usar-placa-resenas-google-yume", "como-configurar-perfil-de-google-y-pedir-resenas", "placa-resenas-google-para-consultorios", "placa-resenas-google-para-restaurantes", "placa-resenas-google-para-salones-esteticas-y-barberias", "placa-resenas-google-para-planners-y-eventos", "como-hacer-una-encuesta-de-satisfaccion-del-cliente"],
     faq: [
       {
         q: "¿Qué es una placa de reseñas de Google?",
@@ -2441,7 +2436,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
-    relatedBlogSlugs: ["alternativa-a-maxreviewer-placas-resenas-google", "como-conseguir-mas-resenas-de-google-nfc-qr", "como-usar-placa-resenas-google-yume", "como-configurar-perfil-de-google-y-pedir-resenas", "placa-resenas-google-para-consultorios", "placa-resenas-google-para-restaurantes", "placa-resenas-google-para-salones-esteticas-y-barberias", "placa-resenas-google-para-planners-y-eventos", "como-hacer-una-encuesta-de-satisfaccion-del-cliente"],
+    relatedBlogSlugs: ["placas-resenas-google-pago-unico-vs-suscripcion", "como-conseguir-mas-resenas-de-google-nfc-qr", "como-usar-placa-resenas-google-yume", "como-configurar-perfil-de-google-y-pedir-resenas", "placa-resenas-google-para-consultorios", "placa-resenas-google-para-restaurantes", "placa-resenas-google-para-salones-esteticas-y-barberias", "placa-resenas-google-para-planners-y-eventos", "como-hacer-una-encuesta-de-satisfaccion-del-cliente"],
     faq: [
       {
         q: "¿El NFC reemplaza al código QR?",
@@ -2581,7 +2576,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
-    relatedBlogSlugs: ["alternativa-a-maxreviewer-placas-resenas-google", "como-conseguir-mas-resenas-de-google-nfc-qr", "placa-nfc-vs-codigo-qr-impreso-resenas", "como-configurar-perfil-de-google-y-pedir-resenas", "placa-resenas-google-para-consultorios", "placa-resenas-google-para-restaurantes", "placa-resenas-google-para-salones-esteticas-y-barberias", "placa-resenas-google-para-planners-y-eventos", "como-hacer-una-encuesta-de-satisfaccion-del-cliente"],
+    relatedBlogSlugs: ["placas-resenas-google-pago-unico-vs-suscripcion", "como-conseguir-mas-resenas-de-google-nfc-qr", "placa-nfc-vs-codigo-qr-impreso-resenas", "como-configurar-perfil-de-google-y-pedir-resenas", "placa-resenas-google-para-consultorios", "placa-resenas-google-para-restaurantes", "placa-resenas-google-para-salones-esteticas-y-barberias", "placa-resenas-google-para-planners-y-eventos", "como-hacer-una-encuesta-de-satisfaccion-del-cliente"],
   },
   {
     slug: "papeleria-personalizada-vs-plantillas-genericas",

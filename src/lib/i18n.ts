@@ -24,7 +24,7 @@ export const BLOG_SLUG_EN: Record<string, string> = {
   "placa-resenas-google-para-planners-y-eventos": "google-review-plate-for-event-planners-and-venues",
   "como-hacer-una-encuesta-de-satisfaccion-del-cliente": "how-to-run-a-customer-satisfaction-survey",
 
-  "alternativa-a-maxreviewer-placas-resenas-google": "maxreviewer-alternative-google-review-plates",
+  "placas-resenas-google-pago-unico-vs-suscripcion": "google-review-plates-one-time-price-vs-subscription",
   "buen-fin-2026-stickers-y-dulceros-personalizados": "buen-fin-2026-custom-stickers-and-party-favor-boxes",
   "recetarios-medicos-personalizados-guadalajara": "custom-medical-prescription-pads-guadalajara",
   "stickers-personalizados-para-negocios-guadalajara": "custom-stickers-for-businesses-guadalajara",

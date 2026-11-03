@@ -37,6 +37,8 @@ const nextConfig: NextConfig = {
       { source: "/shop", destination: "/en/products", permanent: true },
       ...pairs(PAGE_SLUG_EN, "productos", "products"),
       { source: "/products/:slug", destination: "/en/products/:slug", permanent: true },
+      { source: "/blog/alternativa-a-maxreviewer-placas-resenas-google", destination: "/blog/placas-resenas-google-pago-unico-vs-suscripcion", permanent: true },
+      { source: "/en/blog/maxreviewer-alternative-google-review-plates", destination: "/en/blog/google-review-plates-one-time-price-vs-subscription", permanent: true },
       ...pairs(BLOG_SLUG_EN, "blog", "blog"),
     ].filter((r, i, all) => r.source !== r.destination && all.findIndex((o) => o.source === r.source) === i);
   },
