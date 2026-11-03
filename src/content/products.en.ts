@@ -327,6 +327,9 @@ export const productsEn: Record<string, ProductTranslation> = {
         q: "What's the difference with the Stand version?",
         a: "Same plate, same ready-to-use setup: the Stand adds a base so it stands upright on a desk or counter without needing to be stuck down.",
       },
+      { q: "Does it have a monthly fee or subscription?", a: "No. It is a one-time payment, with no subscription or monthly fee." },
+      { q: "Is it for one business or several locations?", a: "It is configured with your business's Google review link. The piece does not include a platform for managing multiple locations." },
+      { q: "Do I need a dashboard?", a: "No. The Yume piece has no dashboard; you manage reviews in your own Google Business Profile." },
     ],
   },
   "stand-resena-google-nfc": {
@@ -381,6 +384,9 @@ export const productsEn: Record<string, ProductTranslation> = {
         q: "What's the difference with the Plate version?",
         a: "Same ready-to-use setup: the Plate has no base, sticks on with the included adhesive, and costs less.",
       },
+      { q: "Does it have a monthly fee or subscription?", a: "No. It is a one-time payment, with no subscription or monthly fee." },
+      { q: "Is it for one business or several locations?", a: "It is configured with your business's Google review link. The piece does not include a platform for managing multiple locations." },
+      { q: "Do I need a dashboard?", a: "No. The Yume piece has no dashboard; you manage reviews in your own Google Business Profile." },
     ],
   },
 };

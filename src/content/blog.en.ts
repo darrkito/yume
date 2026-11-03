@@ -1,11 +1,79 @@
 import type { BlogPost } from "@/content/blog";
 import { priceOf, perPiece, casablancaBranchNames, recetarioPrice } from "@/content/blog";
-import { tierPriceRows } from "@/content/products";
+import { getProduct, tierPriceRows } from "@/content/products";
 import { CASABLANCA_BRANCHES, CASABLANCA_PRICE, FREE_SHIPPING_THRESHOLD, NATIONAL_SHIPPING_PRICE, NATIONAL_TRANSIT_DAYS, PICKUP_EXTRA_DAYS, PRODUCTION_DAYS } from "@/content/shipping";
 import { BLOG_SLUG_EN } from "@/lib/i18n";
 import { dulceroPostsEn } from "@/content/blog-dulceros.en";
 
 export const blogPostsEn: BlogPost[] = [
+  {
+    slug: BLOG_SLUG_EN["alternativa-a-maxreviewer-placas-resenas-google"],
+    title: "MaxReviewer alternative: Google review plates for one business",
+    metaTitle: "MaxReviewer alternative: Google review plates",
+    description: "Compare MaxReviewer and Yume: a multi-location platform or a configured NFC and QR plate for your business at a one-time price.",
+    category: "Guides",
+    publishedAt: "2026-11-03",
+    modifiedAt: "2026-11-03",
+    intro: "If you are looking for a MaxReviewer alternative, first decide whether you need a multi-location platform or a configured plate that makes one business's review link easier to reach.",
+    sections: [
+      { heading: "Which option fits your business?", body: ["MaxReviewer is a better fit for chains or franchises that need a multi-location dashboard. Yume suits a clinic, restaurant, salon or event planner that wants a plate or stand with NFC and QR configured for its review link, at a one-time price."] },
+      { heading: "How do MaxReviewer and Yume compare?", body: ["The table separates the physical product from the platform: MaxReviewer offers both separately, while Yume offers the configured piece without a platform. MaxReviewer figures are according to its public website in November 2026; its plan prices are in MXN plus VAT."], table: { headers: ["Feature", "MaxReviewer", "Yume"], rows: [
+        ["Best for", "Chains and franchises needing multi-location management", "One business that wants to make its review link accessible"],
+        ["Plate price", "Generic plate on Amazon MX; check price", "Plate MXN $140; stand MXN $200, one-time payment"],
+        ["Platform/dashboard", "Dashboard, location reports, alerts and AI sentiment insights", "No platform or dashboard"],
+        ["Monthly fee", "No monthly fee for plates; platform per brand from MXN $799/month for up to 5 locations, plus VAT", "No subscription or monthly fee"],
+        ["Setup", "Ask MaxReviewer about plate options", "We program NFC and generate the QR with your link before shipping"],
+        ["Minimum order", "Custom plates from 20 pieces", "You can order one piece"],
+      ] } },
+      { heading: "How much does MaxReviewer's platform cost?", body: ["According to its public website in November 2026, MaxReviewer charges per brand: up to 5 locations cost MXN $799 per month or $7,990 per year; up to 10 cost $1,499 per month; and up to 20 cost $2,799 per month. Prices are plus VAT. Its plates have no monthly fee."] },
+      { heading: "What comes with a Yume plate or stand?", body: ["Yume makes each piece to order, programs the NFC and generates the QR with the customer's review link before shipping. The plate includes adhesive; the stand sits upright. Both are available in white or black and work without an app or subscription."] },
+    ],
+    faq: [
+      { q: "Do I need a dashboard?", a: "Not to use a Yume plate. It has no dashboard; you manage reviews in your own Google Business Profile. A multi-location platform may be useful if you need centralized reports and alerts." },
+      { q: "How much does a plate without a subscription cost?", a: "The Yume plate costs MXN $140 and the stand MXN $200, with a one-time payment and no subscription." },
+      { q: "Does a plate guarantee more reviews?", a: "No. It makes the link easier to reach, but each customer decides whether to leave a review and what to write." },
+      { q: "Who sets up the NFC and QR?", a: "Yume programs the NFC and generates the QR with your review link before shipping." },
+    ],
+    relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"], BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"], BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"], BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"]],
+    quoteMessage: "Hi, I am interested in an NFC plate or stand for Google reviews.",
+    sources: [
+      { label: "MaxReviewer: plans (accessed November 2026)", url: "https://maxreviewer.com/planes" },
+      { label: "MaxReviewer: plates (accessed November 2026)", url: "https://maxreviewer.com/placas" },
+    ],
+  },
+  {
+    slug: BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"],
+    title: "How to Set Up Your Google Business Profile and Ask for Reviews",
+    metaTitle: "Google Business Profile: Setup and Reviews",
+    description: "Set up your Google Business Profile, complete your details and ask for honest reviews using a direct link, QR code or NFC plate.",
+    category: "Guides",
+    publishedAt: "2026-11-03",
+    modifiedAt: "2026-11-03",
+    intro: "A Google Business Profile helps introduce your business to people searching for it. This guide covers the general steps to set it up and ask customers for reviews respectfully, whether you run a restaurant, a practice or an event service in Mexico.",
+    sections: [
+      { heading: "What is a Google Business Profile and why does it matter?", body: ["A Google Business Profile is a listing an eligible business can use to present information on Google, including Search and Maps. It can show useful details and receive customer reviews, so people who find you can learn about your business and decide how to contact you.", "You may also know it by its former name, Google My Business. Keeping information accurate helps people understand what you offer and how to find you; it does not guarantee a position in search results."] },
+      { heading: "How do you claim or create a business profile?", body: ["First search for your business name and location on Google Maps or Google Business Profile. If a listing already exists, request access to manage it; if there is no listing and your business meets Google's requirements, start creating a profile and provide the requested details.", "Follow Google's verification instructions to confirm you can manage the business. Available verification options vary by profile and may change, so use the instructions shown for your situation. Avoid creating a duplicate and keep access to the account you use to manage the listing."] },
+      { heading: "What should you complete so customers can find you?", body: ["Choose a category that describes your main activity and complete your hours, phone number, photos and description with accurate, current information. Look at the listing as a customer would: they should understand what you do, when you are open and how to contact you.", "Update special hours when needed and use representative photos of your premises, services or work. An event vendor can describe their service clearly; a practice can check that its phone number and office hours are correct."] },
+      { heading: "How can you ask for reviews while following Google's rules?", body: ["Ask real customers for an honest opinion and share the direct link without pressure or suggesting a rating. Do not offer discounts or free products in exchange for a review: Google considers incentives for reviews fake engagement and strictly prohibits them.", "Ask all real customers, not just those you think will be happy, and accept what they write. Do not post or commission fake reviews. For example: “If you would like to tell us about your experience, an honest review would help us.” Customers can respond later or decline."] },
+      { heading: "How can a direct link, QR code or NFC plate make reviews easier?", body: ["Share your profile's direct review link in a message or use a QR code customers can scan. You can also place an NFC and QR plate at reception, the register or a table, so customers can choose how to open the link on their phone.", `The Yume plate costs $${getProduct("placa-resena-google-nfc")!.price} MXN and includes adhesive; the Yume stand costs $${getProduct("stand-resena-google-nfc")!.price} MXN and sits upright. Both have NFC and QR. A printed QR code or plate only removes steps; it does not replace asking. Test the link before sharing it.`, "Invite customers politely and consistently, without promising results or influencing their opinion. Contact us on WhatsApp if you need help choosing a format."] },
+      { heading: "When and how should you respond to reviews?", body: ["Check reviews regularly and respond to positive and negative feedback, aiming to reply promptly. Thank the customer in a brief, professional message; if something went wrong, listen, apologize when appropriate and offer a suitable channel for follow-up without arguing in public.", "Do not share private information or details of a person's care, especially at a medical practice. A respectful response also shows other readers how you handle feedback."] },
+      { heading: "What other questions come up often?", body: ["Business owners often ask about cost, verification and how to request feedback. The answers below cover the essentials for getting started and keeping the listing accurate; check Google's help resources if the options shown in your own profile are different."] },
+    ],
+    faq: [
+      { q: "Is a Google Business Profile free?", a: "Google lets eligible businesses create and manage a Business Profile at no charge." },
+      { q: "Do I need to verify my business?", a: "Follow Google's instructions to verify the profile. Available verification options can vary." },
+      { q: "Can I ask for reviews over WhatsApp?", a: "Yes. Share the direct link and invite an honest opinion without incentives or pressure." },
+      { q: "Does a plate guarantee more reviews?", a: "No. A plate makes the link easier to reach; each customer decides whether to review and what to write." },
+    ],
+    relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["alternativa-a-maxreviewer-placas-resenas-google"], BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"], BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"], BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"]],
+    quoteMessage: "Hi, I would like to learn about NFC plates and stands for Google reviews.",
+    sources: [
+      { label: "Google: tips to get reviews", url: "https://support.google.com/business/answer/3474122?hl=en" },
+      { label: "Google: prohibited and restricted content", url: "https://support.google.com/business/answer/7400114?hl=en" },
+    ],
+  },
   {
     slug: BLOG_SLUG_EN["recuerdos-baby-shower-personalizados"],
     title: "Personalized Baby Shower Favors: Ideas for Guests",
@@ -1655,6 +1723,7 @@ export const blogPostsEn: BlogPost[] = [
         a: "The version without a stand sticks directly onto the counter, register, or wall. The version with a stand sits upright on a desk or table with nothing to stick down.",
       },
     ],
+    relatedBlogSlugs: [BLOG_SLUG_EN["alternativa-a-maxreviewer-placas-resenas-google"], BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"], BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"], BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"]],
     relatedProductSlugs: ["stand-resena-google-nfc", "placa-resena-google-nfc"],
   },
   {
@@ -1693,6 +1762,7 @@ export const blogPostsEn: BlogPost[] = [
         a: "No. NFC adds a second way to use the plate, it does not replace the QR code. The customer can tap the phone or scan the code with the camera. Having both on the same plate means no customer is left unable to use it, and the design matches your brand.",
       },
     ],
+    relatedBlogSlugs: [BLOG_SLUG_EN["alternativa-a-maxreviewer-placas-resenas-google"], BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"], BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"], BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"]],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
   },
   {
@@ -1797,7 +1867,7 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
-    relatedBlogSlugs: [BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"], BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"]],
+    relatedBlogSlugs: [BLOG_SLUG_EN["alternativa-a-maxreviewer-placas-resenas-google"], BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"], BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"], BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"]],
   },
   {
     slug: BLOG_SLUG_EN["papeleria-personalizada-vs-plantillas-genericas"],

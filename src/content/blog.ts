@@ -58,6 +58,74 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "alternativa-a-maxreviewer-placas-resenas-google",
+    title: "Alternativa a MaxReviewer: placas de reseñas de Google para un solo negocio",
+    metaTitle: "Alternativa a MaxReviewer: placas de reseñas",
+    description: "Compara MaxReviewer y Yume: plataforma para varias sucursales o placa NFC y QR configurada con pago único para tu negocio.",
+    category: "Guías",
+    publishedAt: "2026-11-03",
+    modifiedAt: "2026-11-03",
+    intro: "Si buscas una alternativa a MaxReviewer, empieza por decidir si necesitas una plataforma para varias sucursales o una placa configurada para facilitar el acceso a las reseñas de un negocio.",
+    sections: [
+      { heading: "¿Qué opción conviene para tu negocio?", body: ["MaxReviewer encaja mejor con cadenas o franquicias que necesitan un dashboard para varias sucursales. Yume encaja con un consultorio, restaurante, salón o planner que quiere una placa o stand con NFC y QR configurados para su enlace de reseñas, con un pago único." ] },
+      { heading: "¿Cómo se comparan MaxReviewer y Yume?", body: ["La tabla distingue el producto físico de la plataforma: MaxReviewer ofrece ambos por separado, mientras que Yume ofrece la pieza configurada sin plataforma. Los datos de MaxReviewer son según su sitio público, noviembre 2026; los precios de sus planes son en MXN más IVA."], table: { headers: ["Aspecto", "MaxReviewer", "Yume"], rows: [
+        ["Ideal para", "Cadenas y franquicias que necesitan gestión de varias sucursales", "Un negocio que quiere facilitar el acceso a su enlace de reseñas"],
+        ["Precio de la placa", "Placa genérica en Amazon MX; consultar precio", "Placa $140 MXN; stand $200 MXN, pago único"],
+        ["Plataforma/dashboard", "Dashboard, reportes por sucursal, alertas e insights de sentimiento con IA", "Sin plataforma ni dashboard"],
+        ["Mensualidad", "Placas sin mensualidad; plataforma por marca desde $799/mes para hasta 5 sucursales, más IVA", "Sin suscripción ni mensualidad"],
+        ["Configuración", "Consultar opciones de placas con MaxReviewer", "Programamos NFC y generamos QR con el enlace antes del envío"],
+        ["Pedido mínimo", "Placas personalizadas desde 20 piezas", "Puedes pedir una pieza"],
+      ] } },
+      { heading: "¿Cuánto cuesta la plataforma de MaxReviewer?", body: ["Según su sitio público en noviembre de 2026, MaxReviewer cobra por marca: hasta 5 sucursales cuestan $799 al mes o $7,990 al año; hasta 10, $1,499 al mes; y hasta 20, $2,799 al mes. Los precios son MXN más IVA. Sus placas no tienen mensualidad." ] },
+      { heading: "¿Qué recibes con una placa o stand de Yume?", body: ["Yume produce la pieza sobre pedido y programa el NFC y genera el QR con el enlace de reseñas del cliente antes de enviarla. La placa incluye adhesivo; el stand se coloca de pie. Ambos están disponibles en blanco o negro y funcionan sin app ni suscripción." ] },
+    ],
+    faq: [
+      { q: "¿Necesito un dashboard?", a: "No para usar la placa de Yume. La pieza no incluye dashboard; administras las reseñas en tu propio perfil de empresa de Google. Una plataforma para varias sucursales puede ser útil si necesitas reportes y alertas centralizados." },
+      { q: "¿Cuánto cuesta una placa sin suscripción?", a: "La placa de Yume cuesta $140 MXN y el stand $200 MXN, con pago único y sin suscripción." },
+      { q: "¿Una placa garantiza más reseñas?", a: "No. Facilita el acceso al enlace, pero cada cliente decide si deja una reseña y qué escribe." },
+      { q: "¿Quién configura el NFC y el QR?", a: "Yume programa el NFC y genera el QR con tu enlace de reseñas antes del envío." },
+    ],
+    relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
+    relatedBlogSlugs: ["como-configurar-perfil-de-google-y-pedir-resenas", "como-conseguir-mas-resenas-de-google-nfc-qr", "placa-nfc-vs-codigo-qr-impreso-resenas", "como-usar-placa-resenas-google-yume"],
+    quoteMessage: "Hola, me interesan la placa o el stand NFC para reseñas de Google.",
+    sources: [
+      { label: "MaxReviewer: planes (consulta noviembre 2026)", url: "https://maxreviewer.com/planes" },
+      { label: "MaxReviewer: placas (consulta noviembre 2026)", url: "https://maxreviewer.com/placas" },
+    ],
+  },
+  {
+    slug: "como-configurar-perfil-de-google-y-pedir-resenas",
+    title: "Cómo configurar tu perfil de empresa de Google y pedir reseñas",
+    metaTitle: "Perfil de empresa de Google: configuración y reseñas",
+    description: "Configura tu perfil de empresa de Google, completa tus datos y aprende a pedir reseñas honestas con un enlace, QR o placa NFC.",
+    category: "Guías",
+    publishedAt: "2026-11-03",
+    modifiedAt: "2026-11-03",
+    intro: "Un perfil de empresa de Google ayuda a presentar tu negocio a personas que lo buscan. Esta guía reúne los pasos generales para configurarlo y pedir reseñas a tus clientes de forma respetuosa, desde un restaurante o consultorio hasta un servicio para eventos en México.",
+    sections: [
+      { heading: "¿Qué es el perfil de empresa de Google y por qué importa?", body: ["El perfil de empresa de Google es la ficha con la que un negocio elegible puede presentar información en Google, incluido Maps y la búsqueda. Permite mostrar datos útiles y recibir opiniones de clientes, para que quienes te encuentran puedan conocer tu actividad y decidir cómo contactarte.", "También se conoce por su nombre anterior, Google My Business. Mantener la información correcta ayuda a que las personas sepan qué ofreces y cómo localizarte; no garantiza una posición en los resultados."] },
+      { heading: "¿Cómo reclamar o dar de alta tu negocio?", body: ["Busca primero el nombre y la ubicación de tu negocio en Google Maps o en Google Business Profile. Si ya existe una ficha, solicita su administración; si no existe y tu negocio cumple los requisitos de Google, inicia el alta y proporciona los datos que se soliciten.", "Sigue el proceso de verificación indicado por Google para confirmar que puedes administrar el negocio. Las opciones disponibles varían según el perfil y pueden cambiar; revisa las indicaciones que aparezcan en tu caso. Evita crear una ficha duplicada y mantén el acceso a la cuenta que uses para gestionarla."] },
+      { heading: "¿Qué completar para que te encuentren?", body: ["Elige una categoría que describa tu actividad principal y completa el horario, teléfono, fotos y descripción con información fiel y vigente. Revisa los datos como lo haría un cliente: debe poder entender qué haces, cuándo atiendes y cómo comunicarse contigo sin encontrar información contradictoria.", "Actualiza horarios especiales cuando corresponda y usa fotos representativas del local, los servicios o el trabajo realizado. Un proveedor de eventos puede describir su servicio con claridad; un consultorio puede revisar que su teléfono y horario de atención sean correctos."] },
+      { heading: "¿Cómo pedir reseñas sin romper las reglas de Google?", body: ["Pide una opinión honesta a tus clientes reales y comparte el enlace directo sin presionar ni sugerir una calificación. No ofrezcas descuentos ni productos gratis a cambio de una reseña: según la ayuda de Google Business Profile, ofrecer algo así está estrictamente prohibido y cuenta como interacción falsa.", "Pide a todos tus clientes reales, no solo a quienes crees que estarán contentos, y acepta lo que escriban. No publiques ni encargues reseñas falsas. Por ejemplo: «Si quieres contarnos cómo te fue, nos ayudas mucho con una reseña honesta». La persona puede responder después o no hacerlo."] },
+      { heading: "¿Cómo facilitar la reseña con un enlace, QR o placa NFC?", body: ["Comparte el enlace directo de reseñas de tu ficha por mensaje o usa un código QR para que el cliente lo escanee. También puedes colocar una placa con NFC y QR en recepción, caja o una mesa: el cliente elige cómo abrir el enlace desde su teléfono.", `La placa de Yume cuesta $${getProduct("placa-resena-google-nfc")!.price} MXN e incluye adhesivo; el stand de Yume cuesta $${getProduct("stand-resena-google-nfc")!.price} MXN y se coloca de pie. Ambos tienen NFC y QR. Un QR impreso o una placa solo reduce pasos: no sustituye pedir la reseña. Prueba el enlace antes de compartirlo.`, "Si buscas cómo conseguir más reseñas en Google, empieza por una invitación amable y constante, sin prometer resultados ni condicionar la opinión. Para elegir un formato, escríbenos por WhatsApp."] },
+      { heading: "¿Cuándo y cómo responder reseñas?", body: ["Revisa las reseñas con regularidad y responde tanto las positivas como las negativas, procurando hacerlo pronto. Agradece la opinión con un mensaje breve y profesional; si hubo un problema, escucha, discúlpate cuando corresponda y ofrece un canal adecuado para darle seguimiento sin discutir en público.", "No compartas datos privados de la persona ni detalles de su atención, especialmente en un consultorio. Una respuesta respetuosa también ayuda a quienes leen la ficha a entender cómo atiendes los comentarios."] },
+      { heading: "¿Qué otras dudas son frecuentes?", body: ["Al administrar una ficha surgen preguntas sobre el costo, la verificación y la forma de pedir opiniones. Estas respuestas resumen lo esencial para empezar y cuidar la información del negocio; consulta la ayuda de Google si las opciones disponibles en tu perfil son diferentes."] },
+    ],
+    faq: [
+      { q: "¿El perfil de empresa de Google es gratis?", a: "Google permite crear y administrar un perfil de empresa sin costo para negocios elegibles." },
+      { q: "¿Necesito verificar mi negocio?", a: "Sigue las indicaciones de Google para verificar el perfil. Las opciones de verificación disponibles pueden variar." },
+      { q: "¿Puedo pedir reseñas por WhatsApp?", a: "Sí. Comparte el enlace directo e invita a una opinión honesta, sin incentivos ni presión." },
+      { q: "¿Una placa garantiza más reseñas?", a: "No. Una placa facilita el acceso al enlace; cada cliente decide si deja una reseña y qué escribe." },
+    ],
+    relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
+    relatedBlogSlugs: ["alternativa-a-maxreviewer-placas-resenas-google", "como-conseguir-mas-resenas-de-google-nfc-qr", "placa-nfc-vs-codigo-qr-impreso-resenas", "como-usar-placa-resenas-google-yume"],
+    quoteMessage: "Hola, me interesa conocer las placas y stands NFC para reseñas de Google.",
+    sources: [
+      { label: "Google: consejos para recibir reseñas", url: "https://support.google.com/business/answer/3474122?hl=es" },
+      { label: "Google: contenido prohibido y restringido", url: "https://support.google.com/business/answer/7400114?hl=es" },
+    ],
+  },
+  {
     slug: "recuerdos-baby-shower-personalizados",
     title: "Recuerdos para baby shower personalizados: ideas para invitados",
     metaTitle: "Recuerdos para baby shower personalizados: ideas",
@@ -1851,7 +1919,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
-    relatedBlogSlugs: ["placa-nfc-vs-codigo-qr-impreso-resenas", "como-usar-placa-resenas-google-yume"],
+    relatedBlogSlugs: ["alternativa-a-maxreviewer-placas-resenas-google", "placa-nfc-vs-codigo-qr-impreso-resenas", "como-usar-placa-resenas-google-yume", "como-configurar-perfil-de-google-y-pedir-resenas"],
     faq: [
       {
         q: "¿Qué es una placa de reseñas de Google?",
@@ -1965,7 +2033,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
-    relatedBlogSlugs: ["como-conseguir-mas-resenas-de-google-nfc-qr", "como-usar-placa-resenas-google-yume"],
+    relatedBlogSlugs: ["alternativa-a-maxreviewer-placas-resenas-google", "como-conseguir-mas-resenas-de-google-nfc-qr", "como-usar-placa-resenas-google-yume", "como-configurar-perfil-de-google-y-pedir-resenas"],
     faq: [
       {
         q: "¿El NFC reemplaza al código QR?",
@@ -2105,7 +2173,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
-    relatedBlogSlugs: ["como-conseguir-mas-resenas-de-google-nfc-qr", "placa-nfc-vs-codigo-qr-impreso-resenas"],
+    relatedBlogSlugs: ["alternativa-a-maxreviewer-placas-resenas-google", "como-conseguir-mas-resenas-de-google-nfc-qr", "placa-nfc-vs-codigo-qr-impreso-resenas", "como-configurar-perfil-de-google-y-pedir-resenas"],
   },
   {
     slug: "papeleria-personalizada-vs-plantillas-genericas",

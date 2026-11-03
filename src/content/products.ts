@@ -455,6 +455,9 @@ export const products: Product[] = [
         q: "¿Cuál es la diferencia con el Stand con base?",
         a: "Es la misma placa y la misma configuración lista para usar; el Stand agrega una base para colocarla de pie sobre un escritorio o mostrador sin necesidad de pegarla.",
       },
+      { q: "¿Tiene mensualidad o suscripción?", a: "No. Es un pago único, sin suscripción ni mensualidad." },
+      { q: "¿Es para un solo negocio o para varias sucursales?", a: "Se configura con el enlace de reseñas de tu negocio. La pieza no incluye una plataforma para administrar varias sucursales." },
+      { q: "¿Hace falta un dashboard?", a: "No. La pieza de Yume no tiene dashboard; administras las reseñas en tu propio perfil de empresa de Google." },
     ],
   },
   {
@@ -521,6 +524,9 @@ export const products: Product[] = [
         q: "¿Cuál es la diferencia con la Placa sin base?",
         a: "Es la misma configuración lista para usar; la Placa no tiene base, se pega con el adhesivo incluido, y cuesta menos.",
       },
+      { q: "¿Tiene mensualidad o suscripción?", a: "No. Es un pago único, sin suscripción ni mensualidad." },
+      { q: "¿Es para un solo negocio o para varias sucursales?", a: "Se configura con el enlace de reseñas de tu negocio. La pieza no incluye una plataforma para administrar varias sucursales." },
+      { q: "¿Hace falta un dashboard?", a: "No. La pieza de Yume no tiene dashboard; administras las reseñas en tu propio perfil de empresa de Google." },
     ],
   },
   {

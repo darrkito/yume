@@ -18,6 +18,7 @@ export const PRODUCT_SLUG_EN: Record<string, string> = {
 };
 
 export const BLOG_SLUG_EN: Record<string, string> = {
+  "alternativa-a-maxreviewer-placas-resenas-google": "maxreviewer-alternative-google-review-plates",
   "buen-fin-2026-stickers-y-dulceros-personalizados": "buen-fin-2026-custom-stickers-and-party-favor-boxes",
   "recetarios-medicos-personalizados-guadalajara": "custom-medical-prescription-pads-guadalajara",
   "stickers-personalizados-para-negocios-guadalajara": "custom-stickers-for-businesses-guadalajara",
@@ -36,6 +37,7 @@ export const BLOG_SLUG_EN: Record<string, string> = {
   "menu-de-boda-personalizado": "custom-wedding-menus",
   "tarjetas-de-presentacion-consultorio": "business-cards-for-your-practice",
   "yume-vs-imprentas-recetarios-medicos": "yume-vs-online-prescription-pad-print-shops",
+  "como-configurar-perfil-de-google-y-pedir-resenas": "set-up-google-business-profile-and-ask-for-reviews",
   "como-conseguir-mas-resenas-de-google-nfc-qr": "how-to-get-more-google-reviews-nfc-qr",
   "placa-nfc-vs-codigo-qr-impreso-resenas": "nfc-plate-vs-printed-qr-code-for-reviews",
   "como-usar-placa-resenas-google-yume": "how-to-use-your-yume-google-review-plate",
