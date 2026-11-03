@@ -629,15 +629,15 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "tatuajes-temporales-personalizados-para-eventos",
-    title: "Tatuajes temporales personalizados para eventos y bodas",
-    metaTitle: "Tatuajes temporales personalizados para eventos",
+    title: "Tatuajes temporales personalizados en Guadalajara para fiestas y eventos",
+    metaTitle: "Tatuajes temporales personalizados en Guadalajara",
     description:
-      "Tatuajes temporales personalizados para eventos: bodas, XV años, posadas y activaciones. Qué necesitamos para cotizar y cómo es la prueba digital.",
+      "Tatuajes temporales personalizados en Guadalajara para bodas, XV años y fiestas: cómo cotizar por WhatsApp y recibir prueba digital antes de producir.",
     category: "Guías",
     publishedAt: "2026-08-31",
-    modifiedAt: "2026-10-28",
+    modifiedAt: "2026-11-03",
     intro:
-      "Un tatuaje temporal con tu logo o con un diseño hecho para la ocasión deja huella en un evento, y literalmente. Los tatuajes temporales personalizados para eventos funcionan igual para una boda, unos XV años o una activación de marca. Aquí te explicamos para qué eventos sirven, cómo diseñarlos, qué necesitamos para cotizar y cómo planear el pedido con tiempo.",
+      "Un tatuaje temporal con tu logo o con un diseño hecho para la ocasión deja huella en un evento, y literalmente. Si tu fiesta es en Guadalajara o Zapopan, los tatuajes temporales personalizados funcionan igual para una boda, unos XV años, un baby shower, una posada o un evento de empresa. Aquí te explicamos para qué eventos sirven, cómo diseñarlos, qué cuidar si hay piel sensible, qué necesitamos para cotizar y cómo planear el pedido con tiempo.",
     sections: [
       {
         heading: "¿Cómo pedir tatuajes temporales personalizados para eventos?",
@@ -648,11 +648,19 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
+        heading: "Tatuajes temporales personalizados en Guadalajara y Zapopan",
+        body: [
+          "Producimos tus tatuajes temporales personalizados en Guadalajara y enviamos a todo México, así que si tu fiesta es en Guadalajara o Zapopan trabajas directo con quien los hace. Cotizas por WhatsApp, apruebas una prueba digital y nos dices la fecha y la ciudad de entrega.",
+          "Esto le sirve a quien organiza una celebración para alguien querido, a las wedding planners y event planners que piden un detalle distinto para cada cliente, y a las empresas que preparan una posada o un evento con clientes. En todos los casos el pedido es por evento, con diseño propio y trato directo.",
+          "Si quieres ver cómo se ve el trabajo terminado, en la [galería de trabajos](/galeria) hay fotos de tatuajes temporales que hemos producido.",
+        ],
+      },
+      {
         heading: "Para qué eventos sirven los tatuajes temporales",
         body: [
           "Los tatuajes temporales personalizados sirven para bodas y XV años, activaciones de marca, eventos de empresa y eventos deportivos o escolares. La persona se los lleva puestos y los muestra durante toda la celebración, así que funcionan como un detalle que se mueve por todo el salón y se convierte en recuerdo.",
-          "Los vemos más seguido en tres contextos. El primero son las activaciones de marca: ferias, lanzamientos, stands en eventos y regalos promocionales. El segundo son las bodas y los XV años, con las iniciales, la fecha o un ícono relacionado con el festejo. El tercero son los eventos deportivos o escolares, con el logo del equipo o de la institución.",
-          "A diferencia de una etiqueta, un tatuaje temporal se lo lleva la persona puesto. Funciona como una pieza que la gente usa y muestra durante el resto del evento, no como algo que termina guardado en una bolsa. También sirve para un lanzamiento, un aniversario o un evento con clientes, donde quieres que cada asistente lleve tu marca de una forma ligera y distinta a un folleto.",
+          "Los vemos más seguido en tres contextos. El primero son las bodas y los XV años, con las iniciales, la fecha o un ícono relacionado con el festejo. El segundo son los eventos de empresa, como posadas, lanzamientos y aniversarios, con el logo de la marca. El tercero son los eventos deportivos o escolares, con el logo del equipo o de la institución.",
+          "A diferencia de una etiqueta, un tatuaje temporal se lo lleva la persona puesto. Funciona como una pieza que la gente usa y muestra durante el resto del evento, no como algo que termina guardado en una bolsa. Para ver ideas por ocasión, revisa la guía de [tatuajes temporales para bodas y fiestas](/blog/tatuajes-temporales-para-boda-eventos-y-fiestas).",
         ],
       },
       {
@@ -661,16 +669,23 @@ export const blogPosts: BlogPost[] = [
           "Un buen diseño de tatuaje temporal es simple y se lee a primera vista: iniciales, una fecha, un ícono del festejo o tu logo. Entre menos detalle tenga, mejor se entiende en un tamaño pequeño sobre la piel, y más fácil es que combine con la decoración del evento.",
           "Para una boda, lo más práctico es usar las iniciales de la pareja y la fecha, o un ícono sencillo que represente su historia. Si tienes la invitación o la paleta de la decoración, mándanos una foto y adaptamos el diseño para que se vea como parte del mismo evento.",
           "Para XV años o un cumpleaños, funciona el nombre de la festejada o del festejado con un detalle de la temática. Para una empresa, lo más fácil es tu logo limpio, sin textos largos, porque se lee mejor en tamaño chico.",
-          "Si ya estás armando la mesa de dulces o los souvenirs, piensa el tatuaje como parte del conjunto: el mismo diseño puede acompañar a los dulceros personalizados y a los stickers de vinil. Así todo el evento se ve planeado.",
+          "Si ya estás armando la mesa de dulces o los souvenirs, piensa el tatuaje como parte del conjunto: el mismo diseño puede acompañar a los [dulceros personalizados](/blog/dulceros-personalizados-guadalajara) y a los [stickers de vinil](/productos/stickers-vinil-impermeable). Así todo el evento se ve planeado.",
+        ],
+      },
+      {
+        heading: "¿Son seguros los tatuajes temporales para niños y piel sensible?",
+        body: [
+          "Depende de las tintas, y por eso conviene preguntar por los ingredientes antes de pedir. La FDA de Estados Unidos recibe reportes de alergias a tintas de tatuaje y dice que una erupción puede indicar reacción alérgica. Si alguien tiene piel sensible, consulta a un profesional de salud ante enrojecimiento, bultos o erupción.",
+          "La FDA también explica que el PPD (parafenilendiamina) de algunas tintas puede causar alergia a otros productos, como los tintes para el cabello. Su página trata de tatuajes permanentes, así que la usamos solo como motivo para ser prudentes, no como descripción de las tintas de un tatuaje temporal.",
+          "Si en tu evento habrá niños o personas con alergias, escríbenos por WhatsApp antes de pedir y lo revisamos contigo. Sobre la duración, una referencia indica que los tatuajes temporales tipo calcomanía duran de horas a días, según el tipo, la zona del cuerpo y el cuidado. Para ver cómo quitarlos, lee [cuánto duran y cómo quitarlos](/blog/cuanto-duran-los-tatuajes-temporales-y-como-quitarlos).",
         ],
       },
       {
         heading: "Qué necesitamos para cotizar tus tatuajes temporales",
         body: [
           "Para cotizar necesitamos tres datos: tu logo o diseño, el tamaño aproximado que buscas y la cantidad para tu evento. Si el diseño lleva texto, como un nombre, una fecha o una frase, avísanos para confirmar que se vea legible en el tamaño final antes de producir.",
-          "Lo ideal es un archivo de tu logo con buena resolución. Si no lo tienes, mándanos lo que tengas y te decimos si se puede usar. Con el tamaño aproximado sabemos cuánto detalle cabe, y con la cantidad podemos cotizar bien.",
-          "Una regla práctica para la cantidad: piensa en uno por invitado o asistente y suma unos cuantos de más, por si llega alguien de último momento. Si es la primera vez que pides, escríbenos y te ayudamos a calcularla.",
-          "Antes de producir te mandamos una prueba digital del diseño para que la apruebes. Así confirmas cómo se va a ver antes de que se imprima la cantidad completa. Si quieres ver trabajos reales, en la galería hay fotos de tatuajes temporales que hemos producido.",
+          "Si no tienes tu logo a la mano, mándanos lo que tengas y te decimos si se puede usar. Con el tamaño aproximado sabemos cuánto detalle cabe, y con la cantidad podemos cotizar bien. Si es la primera vez que pides, escríbenos y te ayudamos a calcularla.",
+          "Antes de producir te mandamos una prueba digital del diseño para que la apruebes. Así confirmas cómo se va a ver antes de que se imprima la cantidad completa. Puedes empezar desde la página de [tatuajes temporales personalizados](/productos/tatuajes-temporales-personalizados).",
         ],
       },
       {
@@ -703,11 +718,15 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Qué necesito para cotizar?",
-        a: "Tu logo o diseño (de preferencia en un archivo con buena resolución), el tamaño aproximado y la cantidad. Si el diseño lleva texto, dínoslo para confirmar que se vea legible.",
+        a: "Tu logo o diseño, el tamaño aproximado y la cantidad. Si el diseño lleva texto, dínoslo para confirmar que se vea legible.",
       },
       {
         q: "¿Producen en Guadalajara y envían a todo México?",
         a: "Sí. Producimos en Guadalajara y enviamos a todo México.",
+      },
+      {
+        q: "¿Atienden eventos en Guadalajara y Zapopan?",
+        a: "Sí. Producimos en Guadalajara y enviamos a todo México. Escríbenos por WhatsApp con la fecha y la ciudad de entrega de tu evento y te cotizamos.",
       },
       {
         q: "¿Emiten factura?",
@@ -718,9 +737,21 @@ export const blogPosts: BlogPost[] = [
         a: "Sí. Se pueden hacer con las iniciales, la fecha o un ícono relacionado con el festejo, y también con tu logo en eventos de empresa, deportivos o escolares.",
       },
       {
+        q: "¿Son seguros para niños y piel sensible?",
+        a: "Depende de las tintas. La FDA recibe reportes de alergias a tintas de tatuaje y recomienda consultar a un profesional de salud si hay enrojecimiento, bultos o erupción. Si alguien en tu evento tiene piel sensible o alergias, escríbenos antes de pedir.",
+      },
+      {
+        q: "¿Cuánto duran los tatuajes temporales?",
+        a: "Una referencia externa indica que los tatuajes temporales tipo calcomanía duran de horas a días, según el tipo, la zona del cuerpo y el cuidado.",
+      },
+      {
         q: "¿Puedo ver ejemplos reales?",
         a: "Sí. En la galería del sitio hay fotos de tatuajes temporales que hemos producido.",
       },
+    ],
+    sources: [
+      { label: "FDA: Piense antes de tatuarse, la seguridad de los tatuajes", url: "https://www.fda.gov/consumers/articulos-para-el-consumidor-en-espanol/piense-antes-de-tatuarse-la-seguridad-de-los-tatuajes" },
+      { label: "Temporary Tattoos: seguridad del producto", url: "https://www.temporarytattoos.com/pages/product-safety" },
     ],
     serviceLink: { href: "/productos/tatuajes-temporales-personalizados", label: "Ver tatuajes temporales personalizados" },
     quoteMessage: "Hola, me interesa cotizar tatuajes temporales personalizados.",
