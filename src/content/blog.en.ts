@@ -3132,8 +3132,9 @@ export const blogPostsEn: BlogPost[] = [
       "Personalized wedding table details: how to match menu, favor box and stickers in one design so the table looks planned.",
     category: "Guides",
     publishedAt: "2026-10-29",
+    modifiedAt: "2026-11-03",
     intro:
-      "A wedding table looks planned when every piece seems to belong to the same set. Menu, favor box and stickers can share the same color, the same lettering and the same symbol, and the whole table feels cared for. Here is how to combine them, in what order to decide, and what to check per guest and per table before asking for a quote.",
+      "A wedding table looks planned when every piece seems to belong to the same set. Menu, favor box and stickers can share the same color, the same lettering and the same symbol, and the whole table feels cared for. Here is how to combine them, what goes on the menu card, how to handle allergies, when to lock the design, and what to check per guest and per table before asking for a quote.",
     sections: [
       {
         heading: "Which personalized wedding table details work together",
@@ -3147,6 +3148,21 @@ export const blogPostsEn: BlogPost[] = [
         body: [
           `One way to simplify the table is to use the menu as the place card too, with each guest's name above the menu. That way a single piece does two jobs and the table looks cleaner. For more ideas, see the Yume [personalized wedding menu](/en/blog/${BLOG_SLUG_EN["menu-de-boda-personalizado"]}), which is quoted over WhatsApp.`,
           "A wedding stationery guide also suggests one detail per place setting, such as a small vase, a party cookie with a label or a mini bottle with a name label. Fewer pieces per seat, all with the same design, give a more elegant result than many different pieces.",
+        ],
+      },
+      {
+        heading: "What goes on a wedding menu card",
+        body: [
+          "A menu card carries a header with the couple's names or monogram, an optional date, and the dishes in serving order with a short description. Pairings and a closing line are optional. This comes from Paperlust, a stationery guide, and it is a reference, not a rule.",
+          "Send us your menu on WhatsApp and we will quote it.",
+        ],
+      },
+      {
+        heading: "Allergies and diets on the wedding menu",
+        body: [
+          "To mark diets on the menu, a stationery guide recommends letter abbreviations (V, VE, GF, DF, N, SF) after the dish name, with a key at the bottom. For serious allergies it suggests a line that points guests to the catering team, because the card is not an allergy management document.",
+          "WeddingWire Canada proposes leaving room on the RSVP for allergies and diets, asking the caterer for the ingredient list of each dish and sharing it with guests who have allergies. It also suggests posting the menu on the wedding website and, for buffets, labeling dishes (vegan, vegetarian, gluten-free, nut-free) and letting guests with allergies serve themselves first.",
+          "So on the card, it is best to put only the abbreviations and the key, and leave allergy handling to the caterer. Tell us which ones you want to mark and we will place them in the design.",
         ],
       },
       {
@@ -3164,15 +3180,22 @@ export const blogPostsEn: BlogPost[] = [
         ],
       },
       {
+        heading: "When to lock the menu design and order the pieces",
+        body: [
+          "Close the menu design once the caterer has confirmed the menu. Paperlust, a stationery supplier, says that usually happens 6 to 8 weeks before the wedding, but that is only its reference, not an industry standard. For your own order timing with Yume, message us on WhatsApp.",
+          "At Yume, the wedding menu is quoted over WhatsApp. For [vinyl stickers](/en/products/stickers-vinil-impermeable), the digital proof usually arrives within 24 hours at most after your payment, with up to 2 rounds of adjustments, and we print nothing without your approval.",
+        ],
+      },
+      {
         heading: "Checklist per guest and per table",
         body: [
           "A short checklist avoids forgotten items: per guest, check a card or menu with their name, a keepsake and the label or sticker that goes with it; per table, check the numbered marker, menu or card and the shared piece. Confirm everything against your guest list before ordering.",
-          "Quantities depend on your guest list and how many tables you have. Message us on WhatsApp with those numbers and we will quote the menu and the other pieces. We are in Guadalajara and ship across Mexico.",
+          "Add to the list the allergies and diets your guests report on the RSVP and confirm them with the caterer before locking the menu text. Quantities depend on your guest list and how many tables you have. Message us on WhatsApp with those numbers and we will quote the menu and the other pieces. We are in Guadalajara and ship across Mexico.",
         ],
       },
     ],
     relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
-    relatedBlogSlugs: [BLOG_SLUG_EN["menu-de-boda-personalizado"], "personalized-wedding-favors-with-name-and-date"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["menu-de-boda-personalizado"], "personalized-wedding-favors-with-name-and-date", "personalized-party-favor-boxes-guadalajara"],
     faq: [
       {
         q: "How much does the wedding menu cost?",
@@ -3194,10 +3217,24 @@ export const blogPostsEn: BlogPost[] = [
         q: "Do you ship outside Guadalajara?",
         a: "Yes. We work from Guadalajara and ship across Mexico.",
       },
+      {
+        q: "What goes on a wedding menu card?",
+        a: "According to a stationery guide, a header with the couple's names or monogram, an optional date, the dishes in serving order with a short description, dietary symbols and a key. Pairings and a closing line are optional.",
+      },
+      {
+        q: "How do I mark allergies or diets on the menu?",
+        a: "A stationery guide recommends letter abbreviations (V, VE, GF, DF, N, SF) after the dish name, with a key at the bottom, and a line pointing to the caterer for serious allergies, because the card is not an allergy management document.",
+      },
+      {
+        q: "When should I lock the menu design?",
+        a: "Once the caterer has confirmed the menu. Paperlust, a stationery supplier, says that is usually 6 to 8 weeks before the wedding, but that is only its reference. For your timing with Yume, message us on WhatsApp.",
+      },
     ],
     sources: [
       { label: "The Budget Savvy Bride: how stickers can elevate your wedding", url: "https://thebudgetsavvybride.com/how-stickers-can-elevate-your-wedding/" },
       { label: "Mary Hollis Huddleston: place cards, menus, resources and tips", url: "https://maryhollishuddleston.squarespace.com/blog/place-cards-menus-resources-and-tips" },
+      { label: "Paperlust: wedding menu card guide", url: "https://paperlust.co/blog/?p=15638" },
+      { label: "WeddingWire Canada: how to handle guests' food allergies and dietary restrictions", url: "https://weddingwire.ca/wedding-ideas/8-ways-to-handle-guests-food-allergies-and-dietary-restrictions--c297" },
     ],
   },
   {

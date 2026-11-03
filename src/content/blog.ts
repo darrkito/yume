@@ -3751,8 +3751,9 @@ export const blogPosts: BlogPost[] = [
       "Detalles personalizados para mesa de boda: cómo unir menú, dulcero y stickers con un mismo diseño para que la mesa se vea planeada.",
     category: "Guías",
     publishedAt: "2026-10-29",
+    modifiedAt: "2026-11-03",
     intro:
-      "Una mesa de boda se ve planeada cuando cada pieza parece parte de lo mismo. Menú, dulcero y stickers pueden llevar el mismo color, la misma letra y el mismo símbolo, y entonces el conjunto se siente cuidado. Aquí tienes cómo combinarlos, en qué orden decidir y qué revisar por invitado y por mesa antes de cotizar.",
+      "Una mesa de boda se ve planeada cuando cada pieza parece parte de lo mismo. Menú, dulcero y stickers pueden llevar el mismo color, la misma letra y el mismo símbolo, y entonces el conjunto se siente cuidado. Aquí tienes cómo combinarlos, qué lleva la tarjeta de menú, cómo tratar las alergias, cuándo cerrar el diseño y qué revisar por invitado y por mesa antes de cotizar.",
     sections: [
       {
         heading: "Qué detalles personalizados para mesa de boda funcionan juntos",
@@ -3766,6 +3767,21 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Una forma de simplificar la mesa es usar el menú también como tarjeta de lugar, con el nombre de cada invitado arriba del menú. Así una sola pieza cumple dos funciones y la mesa se ve más limpia. Si quieres ver más ideas, revisa el [menú de boda personalizado](/blog/menu-de-boda-personalizado) de Yume, que se cotiza por WhatsApp.",
           "Una guía de papelería de boda propone además un solo detalle por puesto, por ejemplo un florero pequeño, una galleta de fiesta con etiqueta o una mini botella con etiqueta con el nombre. Menos piezas por lugar, pero todas con el mismo diseño, dan un resultado más elegante que muchas piezas distintas.",
+        ],
+      },
+      {
+        heading: "Qué lleva la tarjeta de menú de boda",
+        body: [
+          "Una tarjeta de menú lleva un encabezado con el nombre de la pareja o el monograma, la fecha si quieres, y los platos en orden de servicio con una descripción breve. Los maridajes y la frase de cierre son opcionales. Esa referencia viene de Paperlust, una guía de papelería, y no es una norma.",
+          "Mándanos tu menú por WhatsApp y lo cotizamos.",
+        ],
+      },
+      {
+        heading: "Alergias y dietas en el menú de boda",
+        body: [
+          "Si quieres marcar dietas en el menú, una guía de papelería recomienda abreviaturas con letras (V, VE, GF, DF, N, SF) después del nombre del plato, con una leyenda al pie. Para alergias graves sugiere una línea que remita al equipo de catering, porque la tarjeta no es un documento de gestión de alergias.",
+          "WeddingWire Canadá propone dejar espacio en el RSVP para alergias y dietas, pedirle al catering la lista de ingredientes de cada plato y compartirla con los invitados que tienen alergias. También sugiere publicar el menú en el sitio web de la boda y, si hay buffet, etiquetar los platos (vegano, vegetariano, sin gluten, sin nueces) y dejar que quien tiene alergias se sirva primero.",
+          "Por eso, en la tarjeta conviene poner solo las abreviaturas y la leyenda, y dejar el manejo de alergias en manos del catering. Cuéntanos cuáles quieres marcar y las acomodamos en el diseño.",
         ],
       },
       {
@@ -3783,10 +3799,17 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
+        heading: "Cuándo cerrar el diseño del menú y pedir las piezas",
+        body: [
+          "Cierra el diseño del menú cuando el catering ya lo haya confirmado. Paperlust, un proveedor de papelería, indica que eso suele ocurrir entre 6 y 8 semanas antes de la boda, pero es solo su referencia y no un estándar del sector. Para los tiempos de tu pedido con Yume, escríbenos por WhatsApp.",
+          "En Yume, el menú de boda se cotiza por WhatsApp. En los [stickers de vinil](/productos/stickers-vinil-impermeable) la prueba digital llega normalmente en un máximo de 24 horas después de tu pago, con hasta 2 rondas de ajustes, y no imprimimos nada sin tu aprobación.",
+        ],
+      },
+      {
         heading: "Checklist por invitado y por mesa",
         body: [
           "Un checklist corto evita olvidos: por invitado, revisa tarjeta o menú con su nombre, un detalle de recuerdo y la etiqueta o sticker que lo acompaña; por mesa, revisa marcador con número, menú o carta y la pieza compartida. Confirma todo contra tu lista de invitados antes de pedir.",
-          "Las cantidades dependen de tu lista de invitados y de cuántas mesas tengas. Escríbenos por WhatsApp con esos números y te cotizamos el menú y el resto de las piezas. Estamos en Guadalajara y enviamos a todo México.",
+          "Suma a la lista las alergias y dietas que reporten tus invitados en el RSVP y confírmalas con el catering antes de cerrar el texto del menú. Las cantidades dependen de tu lista de invitados y de cuántas mesas tengas. Escríbenos por WhatsApp con esos números y te cotizamos el menú y el resto de las piezas. Estamos en Guadalajara y enviamos a todo México.",
         ],
       },
     ],
@@ -3813,10 +3836,24 @@ export const blogPosts: BlogPost[] = [
         q: "¿Envían fuera de Guadalajara?",
         a: "Sí. Trabajamos desde Guadalajara y enviamos a todo México.",
       },
+      {
+        q: "¿Qué lleva una tarjeta de menú de boda?",
+        a: "Según una guía de papelería, lleva un encabezado con el nombre de la pareja o el monograma, la fecha (opcional), los platos en orden de servicio con una descripción breve, símbolos dietéticos y una leyenda. Los maridajes y la frase de cierre son opcionales.",
+      },
+      {
+        q: "¿Cómo marco alergias o dietas en el menú?",
+        a: "Una guía de papelería recomienda abreviaturas con letras (V, VE, GF, DF, N, SF) tras el nombre del plato, con una leyenda al pie, y una línea que remita al catering en alergias graves, porque la tarjeta no es un documento de gestión de alergias.",
+      },
+      {
+        q: "¿Cuándo debo cerrar el diseño del menú?",
+        a: "Cuando el catering ya confirmó el menú. Paperlust, un proveedor de papelería, indica que suele ser entre 6 y 8 semanas antes de la boda, pero es solo su referencia. Para los tiempos de tu pedido con Yume, escríbenos por WhatsApp.",
+      },
     ],
     sources: [
       { label: "The Budget Savvy Bride: cómo los stickers pueden realzar tu boda", url: "https://thebudgetsavvybride.com/how-stickers-can-elevate-your-wedding/" },
       { label: "Mary Hollis Huddleston: tarjetas de lugar, menús, recursos y consejos", url: "https://maryhollishuddleston.squarespace.com/blog/place-cards-menus-resources-and-tips" },
+      { label: "Paperlust: guía de tarjetas de menú de boda", url: "https://paperlust.co/blog/?p=15638" },
+      { label: "WeddingWire Canadá: cómo manejar alergias y restricciones alimentarias de los invitados", url: "https://weddingwire.ca/wedding-ideas/8-ways-to-handle-guests-food-allergies-and-dietary-restrictions--c297" },
     ],
   },
   {
