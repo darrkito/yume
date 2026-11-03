@@ -3907,16 +3907,23 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "souvenirs-de-boda-personalizados",
-    title: "Recuerdos de boda personalizados: ideas con nombre y fecha",
-    metaTitle: "Recuerdos de boda personalizados con nombre y fecha",
+    title: "Qué regalar a los invitados de una boda: ideas con nombre y fecha",
+    metaTitle: "Qué regalar a los invitados de una boda: ideas",
     description:
-      "Recuerdos de boda personalizados con nombre y fecha: ideas con dulceros y stickers, cuántos pedir y cuándo cotizar. Hechos en Guadalajara.",
+      "Qué regalar a los invitados de una boda: ideas con nombre y fecha en dulceros, stickers y tatuajes temporales, cuántos pedir y cuándo cotizar.",
     category: "Guías",
     publishedAt: "2026-10-28",
     modifiedAt: "2026-11-03",
     intro:
-      "Los recuerdos de boda personalizados, también llamados souvenirs, con el nombre de los novios y la fecha convierten un detalle de mesa en algo que tus invitados sí quieren llevarse a casa. Pero hoy el nombre y la fecha solos ya no bastan: lo que se queda es una pieza con diseño propio. Esta guía te explica qué souvenirs de boda personalizados puedes pedir en Yume, cómo darles un diseño elegante, cuántos pedir, cómo combinarlos con el resto de tu papelería y cuándo cotizar para llegar con calma a tu boda.",
+      "¿Qué regalar a los invitados de una boda? Un recuerdo con el nombre de los novios y la fecha convierte un detalle de mesa en algo que tus invitados sí quieren llevarse a casa. Pero hoy el nombre y la fecha solos ya no bastan: lo que se queda es una pieza con diseño propio. Esta guía te explica qué souvenirs de boda personalizados puedes pedir en Yume, cómo darles un diseño elegante, cuántos pedir, cómo combinarlos con el resto de tu papelería y cuándo cotizar para llegar con calma a tu boda.",
     sections: [
+      {
+        heading: "¿Qué regalar a los invitados de una boda?",
+        body: [
+          "Para elegir qué regalar a los invitados de una boda, busca un detalle que cada persona pueda llevarse y conservar, con el nombre de los novios y la fecha dentro de un diseño propio. En Yume puedes pedir dulceros, stickers de vinil y tatuajes temporales, y ves el diseño en prueba digital antes de producir.",
+          "Más abajo verás cómo funciona cada una de esas tres piezas, cuántas conviene pedir según tu lista de invitados, cuánto cuestan por cantidad y con cuánta anticipación conviene cotizar.",
+        ],
+      },
       {
         heading: "¿Qué hace especial a un recuerdo de boda personalizado?",
         body: [
@@ -3973,8 +3980,8 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Recuerdos de boda elegantes y sencillos",
         body: [
-          "Un diseño sencillo puede reunir los nombres de la pareja, la fecha y los colores de la celebración. Piensa primero en cómo quieres entregar el detalle: un dulcero personalizado ofrece espacio para que elijas su contenido, mientras que un sticker de vinil puede cerrar una bolsita o decorar un frasco. Los dulceros llegan armados y vacíos, y los stickers llevan el diseño que compartas.",
-          "Puedes usar la misma idea visual en ambos o elegir una sola pieza para cada invitado. Antes de producir, recibirás una prueba digital para revisar el diseño. Para coordinarlo con los lugares de tus invitados, consulta las ideas de [detalles de mesa para boda](/blog/detalles-de-mesa-boda-personalizados).",
+          "Un diseño sencillo puede reunir los nombres de la pareja, la fecha y los colores de la celebración. Piensa primero en cómo quieres entregar el detalle: un dulcero personalizado ofrece espacio para que elijas su contenido, mientras que un sticker de vinil puede cerrar una bolsita o decorar un frasco.",
+          "Los dulceros llegan armados y vacíos, y los stickers llevan el diseño que compartas. Puedes usar la misma idea visual en ambos o elegir una sola pieza para cada invitado. Antes de producir, recibirás una prueba digital para revisar el diseño. Para coordinarlo con los lugares de tus invitados, consulta las ideas de [detalles de mesa para boda](/blog/detalles-de-mesa-boda-personalizados).",
         ],
       },
       {
@@ -4000,6 +4007,10 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     faq: [
+      {
+        q: "¿Qué regalar a los invitados de una boda si quiero algo más que nombre y fecha?",
+        a: "Crónica recomienda personalizar según el gusto y la identidad de la pareja, no solo con la fecha o las iniciales. Cuéntanos tu paleta y un detalle de su historia, y lo llevamos a la prueba digital de tu dulcero o tus stickers.",
+      },
       {
         q: "¿Qué recuerdos de boda puedo dar a los invitados?",
         a: "Puedes dar dulceros personalizados para llenar, stickers de vinil con tu diseño o tatuajes temporales, que se cotizan por WhatsApp según el diseño y la cantidad.",
