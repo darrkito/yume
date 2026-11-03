@@ -7,6 +7,26 @@ import { dulceroPostsEn } from "@/content/blog-dulceros.en";
 
 export const blogPostsEn: BlogPost[] = [
   {
+    slug: BLOG_SLUG_EN["recuerdos-baby-shower-personalizados"],
+    title: "Personalized Baby Shower Favors: Ideas for Guests",
+    metaTitle: "Personalized Baby Shower Favors: Ideas",
+    description: "Personalized baby shower favor ideas for girls, boys or neutral palettes: favor boxes, stickers, quantities, prices and timing.",
+    category: "Guides",
+    publishedAt: "2026-11-03",
+    modifiedAt: "2026-11-03",
+    intro: "Personalized baby shower favors give each guest a detail connected to welcoming the baby. A name, a palette and a presentation can bring the favor into the celebration.",
+    sections: [
+      { heading: "What to give as a baby shower favor", body: ["A favor box with the baby's name and the party theme gives each guest a personal detail. It arrives assembled and empty for you to fill. A matching sticker can decorate or seal the favor.", "Decide whether to place one at each seat, hand them out at the end or set them beside the candy table. For filling ideas, see [what to put in a favor box](/en/blog/what-to-put-in-a-party-favor-box)."] },
+      { heading: "Baby shower favors for a girl", body: ["Pink, cream or the family's chosen palette can accompany the baby's name. Coordinate the box and sticker with the invitation or table."] },
+      { heading: "Baby shower favors for a boy", body: ["Try blue, green or the celebration's colors. The name and a simple illustration can appear on both the box and sticker."] },
+      { heading: "Original favors with neutral palettes", body: ["Beige, white or soft green can create a neutral look. Choose a theme meaningful to the family and leave room for the name; you will receive a digital proof to review before production."] },
+      { heading: "How many to order and what they cost", body: [`Count confirmed guests and decide whether to give one per person or family; consider extras. The minimum is 10 favor boxes. The first 100 pieces cost $${priceOf("dulceros-personalizados", 10)} MXN for 10 or $${priceOf("dulceros-personalizados", 50)} MXN for 50; quantities above 100 are quoted on WhatsApp.`, "The minimum for vinyl stickers is 40 pieces. See the [social event favor box guide](/en/blog/wedding-quinceanera-baby-shower-favor-boxes) for ideas for other celebrations."] },
+      { heading: "When to order favors", body: [`Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after digital proof approval. Add ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} business days for national shipping or ${PICKUP_EXTRA_DAYS} business day for Casa Blanca pickup in Guadalajara.`, "Allow time to decide on the name and theme and review the proof. Share your date and quantity on WhatsApp if you need to confirm the schedule."] },
+    ],
+    relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["dulceros-para-eventos-sociales-boda-xv-baby-shower"], BLOG_SLUG_EN["que-poner-en-un-dulcero"]],
+  },
+  {
     slug: BLOG_SLUG_EN["recetarios-medicos-personalizados-guadalajara"],
     title: "Custom Medical Prescription Pads in Guadalajara: A Guide for Your Practice",
     metaTitle: "Custom Medical Prescription Pads in Guadalajara",

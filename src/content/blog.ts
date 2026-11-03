@@ -58,6 +58,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "recuerdos-baby-shower-personalizados",
+    title: "Recuerdos para baby shower personalizados: ideas para invitados",
+    metaTitle: "Recuerdos para baby shower personalizados: ideas",
+    description: "Ideas de recuerdos para baby shower personalizados para niña, niño o con colores neutros: dulceros, stickers, cantidades, precios y tiempos.",
+    category: "Guías",
+    publishedAt: "2026-11-03",
+    modifiedAt: "2026-11-03",
+    intro: "Los recuerdos para baby shower personalizados dan a cada invitado un detalle ligado a la bienvenida del bebé. Un nombre, una paleta y una forma de entrega pueden hacer que el recuerdo se integre con la celebración.",
+    sections: [
+      { heading: "Qué regalar como recuerdo de baby shower", body: ["Un dulcero con el nombre del bebé y la temática del festejo sirve para entregar un detalle a cada invitado. Llega armado y vacío: tú eliges qué poner dentro. Un sticker con el mismo diseño puede decorar o cerrar el recuerdo.", "Piensa en cómo se entregará: en cada lugar, al final de la celebración o junto a la mesa de dulces. Para elegir el relleno, revisa [qué poner en un dulcero](/blog/que-poner-en-un-dulcero)."] },
+      { heading: "Recuerdos para baby shower de niña", body: ["Una paleta rosa, crema o la que elija la familia puede acompañar el nombre del bebé. Coordina el diseño del dulcero y el sticker con la invitación o la mesa."] },
+      { heading: "Recuerdos para baby shower de niño", body: ["Para un niño, prueba azul, verde o los colores de la celebración. El nombre y una ilustración sencilla pueden repetirse en el dulcero y el sticker."] },
+      { heading: "Recuerdos originales con paletas neutras", body: ["Beige, blanco o verde suave funcionan para una propuesta neutral. Elige una temática propia de la familia y deja espacio para el nombre; antes de producir recibirás una prueba digital para revisar el diseño."] },
+      { heading: "Cuántos pedir y cuánto cuestan", body: [`Cuenta los invitados confirmados y decide si entregarás uno por persona o por familia; considera piezas extra. El mínimo es de 10 dulceros. Las primeras 100 piezas cuestan $${priceOf("dulceros-personalizados", 10)} MXN por 10 o $${priceOf("dulceros-personalizados", 50)} MXN por 50; arriba de 100 se cotiza por WhatsApp.`, "Los stickers de vinil tienen un mínimo de 40 piezas. Consulta la [guía de dulceros para eventos sociales](/blog/dulceros-para-eventos-sociales-boda-xv-baby-shower) para comparar ideas para otras celebraciones."] },
+      { heading: "Cuándo pedir los recuerdos", body: [`La producción toma ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles desde la aprobación de la prueba digital. Suma ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días hábiles de envío nacional o ${PICKUP_EXTRA_DAYS} día hábil para recoger en Casa Blanca en Guadalajara.`, "Deja tiempo para definir el nombre, la temática y revisar la prueba. Comparte la fecha y la cantidad por WhatsApp si necesitas confirmar la planificación."] },
+    ],
+    relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["dulceros-para-eventos-sociales-boda-xv-baby-shower", "que-poner-en-un-dulcero"],
+  },
+  {
     slug: "recetarios-medicos-personalizados-guadalajara",
     title: "Recetarios médicos personalizados en Guadalajara: guía para tu consultorio",
     metaTitle: "Recetarios médicos en Guadalajara: guía y membrete",
