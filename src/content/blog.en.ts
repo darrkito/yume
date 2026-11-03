@@ -2878,16 +2878,17 @@ export const blogPostsEn: BlogPost[] = [
   {
     slug: "personalized-company-posada-favors",
     title: "Company posada favors: ideas for clients and your team",
+    metaTitle: "Personalized Corporate Christmas Gifts",
     description:
-      "Company posada favors: ideas for clients and your team, budget per person, when to order and what to ask your accountant.",
+      "Personalized corporate Christmas gifts: elegant and original posada ideas for clients and teams, and what to ask your accountant.",
     category: "Guías",
     publishedAt: "2026-11-04",
-    modifiedAt: "2026-10-30",
+    modifiedAt: "2026-11-03",
     intro:
       "Company posadas are coming, and with them the question of what to give your team and your clients. Company posada favors designed for that event are a simple option and feel thought out. Here are ideas by type of guest, a budget reference per person, a calendar to count back from the date and what to check with your accountant.",
     sections: [
       {
-        heading: "Which company posada favors you can choose",
+        heading: "Personalized corporate Christmas gifts: elegant and original ideas",
         body: [
           "For a company posada, choose the favor by who receives it: your team, your clients or both. A personalized candy box with a name and logo, or stickers with the posada design, are a simple option. What matters is that the design feels made for that event, not a generic gift.",
           "Many year-end gift guides focus on grocery baskets, kits, tumblers or gift cards. An event favor goes another way: it carries the person's name or your posada design, so it feels like part of the celebration and not a generic present.",

@@ -3515,16 +3515,17 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "detalles-posada-empresa-personalizados",
     title: "Detalles para posada de empresa: clientes y equipo",
+    metaTitle: "Regalos corporativos de Navidad personalizados",
     description:
-      "Detalles para posada de empresa: ideas para clientes y equipo, presupuesto por persona, cuándo pedirlos y qué consultar al contador.",
+      "Regalos corporativos de Navidad personalizados: ideas elegantes y originales para posadas, clientes y equipo, y qué consultar al contador.",
     category: "Guías",
     publishedAt: "2026-11-04",
-    modifiedAt: "2026-10-30",
+    modifiedAt: "2026-11-03",
     intro:
       "Las posadas de empresa se acercan y con ellas la pregunta de qué entregar a tu equipo y a tus clientes. Los detalles para posada de empresa con diseño hecho para ese evento son una opción sencilla y se sienten pensados. Aquí tienes ideas por tipo de invitado, una referencia de presupuesto por persona, un calendario para contar hacia atrás y lo que conviene consultar con tu contador.",
     sections: [
       {
-        heading: "Qué detalles para posada de empresa puedes elegir",
+        heading: "Regalos corporativos de Navidad personalizados: ideas elegantes y originales",
         body: [
           "Para una posada de empresa conviene elegir el detalle según quién lo recibe: el equipo, los clientes o ambos. Un dulcero con nombre y logo, o stickers con el diseño de la posada, son una opción sencilla. Lo importante es que el diseño se sienta hecho para ese evento y no un regalo genérico.",
           "Muchas guías de regalos de fin de año se enfocan en despensas, kits, termos o tarjetas de regalo. Un detalle de evento va por otro lado: lleva el nombre de la persona o el diseño de tu posada, y por eso se siente parte de la celebración y no un obsequio genérico.",
