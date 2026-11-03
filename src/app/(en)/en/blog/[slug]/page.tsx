@@ -9,6 +9,7 @@ import { formatBlogDate } from "@/lib/format";
 import { topicsFor } from "@/lib/blog-topics";
 import { hreflangFor, PRODUCT_SLUG_EN, BLOG_SLUG_ES } from "@/lib/i18n";
 import { BlogProductCard } from "@/components/BlogProductCard";
+import { BlogTopCta } from "@/components/BlogTopCta";
 import { BlogTable } from "@/components/BlogTable";
 import { BlogQuickFacts } from "@/components/BlogQuickFacts";
 import { BlogFaq } from "@/components/BlogFaq";
@@ -80,6 +81,8 @@ export default async function BlogPostPageEn({ params }: { params: Promise<{ slu
           {post.download.label}
         </a>
       )}
+
+      <BlogTopCta post={post} products={relatedProducts} lang="en" />
 
       <div className="mt-10 space-y-10">
         {post.sections.map((section, i) => (

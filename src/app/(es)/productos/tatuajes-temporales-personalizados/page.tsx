@@ -3,9 +3,9 @@ import { pageMetadata } from "@/lib/seo";
 import { TattooPage } from "@/components/TattooPage";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Tatuajes Temporales Personalizados con tu Logo o Foto",
+  title: "Tatuajes Temporales Personalizados Guadalajara",
   description:
-    "Tatuajes temporales personalizados con tu logo, diseño o foto para fiestas, bodas y eventos. Prueba digital incluida. Cotiza por WhatsApp; envíos a todo México.",
+    "Tatuajes temporales personalizados en Guadalajara: tu logo o foto para fiestas, bodas y eventos. Cotiza por WhatsApp; envío a todo México.",
   path: "/productos/tatuajes-temporales-personalizados",
 });
 

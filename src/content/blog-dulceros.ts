@@ -795,7 +795,6 @@ export const dulceroPosts: BlogPost[] = [
       "Recuerdos para XV años personalizados: cuántos pedir, cómo combinar el dulcero con la mesa de dulces, tiempos y prueba digital.",
     category: "Guías",
     publishedAt: PUBLISHED,
-    modifiedAt: "2026-11-23",
     intro:
       "Los recuerdos para XV años personalizados se ven mejor cuando son pocos, tienen diseño cuidado y combinan con la fiesta. En bodas, XV años y baby showers, el dulcero puede ser parte de la mesa de dulces o el recuerdo que cada familia se lleva al final. Aquí tienes ideas por evento, cuántos recuerdos pedir, qué poner dentro y con cuánto tiempo hacerlo.",
     sections: [
@@ -935,7 +934,6 @@ export const dulceroPosts: BlogPost[] = [
     description: "Qué dulces poner en un dulcero, cuántas piezas lleva según su tamaño, cuánto repartir por invitado y cómo combinar variedades, texturas y colores.",
     category: "Guías",
     publishedAt: PUBLISHED,
-    modifiedAt: "2026-11-09",
     intro:
       "Un dulcero se ve completo con 8 a 12 piezas: un chocolate, una gomita o paleta, un dulce enchilado o ácido, un dulce tradicional mexicano y una botana chica, más un detalle que no sea dulce, como stickers. Abajo tienes la lista por tipo de dulce y por edad, cuántas piezas caben según el tamaño del dulcero y cómo repartirlas por invitado, pensada para una cajita tipo lunch box de 15.7 × 11.7 × 9.9 cm.",
     sections: [

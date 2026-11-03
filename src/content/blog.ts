@@ -174,7 +174,7 @@ export const blogPosts: BlogPost[] = [
       "Etiquetas personalizadas en GDL: dónde imprimirlas, qué opción elegir para tu evento o marca y cómo pedirlas paso a paso por WhatsApp con prueba digital.",
     category: "Guías",
     publishedAt: "2026-08-28",
-    modifiedAt: "2026-11-25",
+    modifiedAt: "2026-10-30",
     intro:
       "Si buscas etiquetas personalizadas en GDL, lo primero es saber qué camino te conviene: un estudio con trato directo, una imprenta industrial o una plataforma en línea. Aquí te explicamos las diferencias, cuándo conviene una etiqueta o un sticker para un evento o una marca pequeña, y cómo pedir paso a paso. En Guadalajara hay además un movimiento fuerte de emprendimientos pequeños (repostería, ropa, velas, joyería, café) que venden en bazares o por redes, y una etiqueta con tu logo hace que su marca se vea consistente.",
     sections: [
