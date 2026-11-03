@@ -4905,6 +4905,72 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "dulceros-para-ninos-invitados-boda",
+    title: "Dulceros para niños en una boda: ideas y cómo entregarlos",
+    description:
+      "Ideas de dulceros para niños en una boda: qué poner según la edad, cómo combinarlos con la boda y cuándo entregarlos a cada niño.",
+    category: "Guías",
+    publishedAt: "2026-11-03",
+    intro:
+      "Los niños también son invitados, y un detalle con su nombre los hace sentir parte del día. Un dulcero individual, pensado con los colores de la boda, se ve planeado y le da a cada niño algo propio. Aquí tienes qué elegir, qué poner dentro según la edad, cómo personalizarlo, cuándo entregarlo y cuántos pedir.",
+    sections: [
+      {
+        heading: "Dulceros para niños en una boda: qué conviene elegir",
+        body: [
+          "Para los niños de una boda conviene un dulcero individual con su nombre y los colores de la boda. Así cada niño recibe algo propio, que se ve como parte del diseño y no como un detalle suelto. Llega armado y vacío, y tú eliges qué lleva dentro.",
+          "Nuestro dulcero es tipo lunch box, con asa, y la personalización incluye nombre y temática. Aquí hablamos de una pieza por niño, distinta de una mesa de dulces compartida por todos los invitados.",
+        ],
+      },
+      {
+        heading: "Qué poner dentro según la edad de cada niño",
+        body: [
+          "Una guía de bolsas de actividades para bodas en Italia propone ajustar el contenido por edad: de 2 a 5 años, libro para colorear, crayones, marionetas de dedo y plastilina; de 6 a 10, lápices, origami, coches de madera y un rompecabezas; de 11 a 13, rompecabezas 3D y origami.",
+          "Esas ideas son un punto de partida para llenar un dulcero que llega vacío. La misma guía aconseja evitar lo que manche, como lápices en lugar de rotuladores. Un resultado de búsqueda en español advierte evitar objetos pequeños que los niños puedan tragar. Para más ideas de relleno, lee [qué poner en un dulcero](/blog/que-poner-en-un-dulcero).",
+        ],
+      },
+      {
+        heading: "Cómo personalizar el dulcero para que combine con la boda",
+        body: [
+          "Cada dulcero lleva el nombre del niño y una temática. Para que combine con la boda, mándanos una foto de la invitación o de la decoración y adaptamos el diseño a esos colores. Antes de producir te enviamos una prueba digital, y nada se produce hasta que la apruebas.",
+          "La guía de Italia también sugiere un libro de actividades imprimible con los nombres de los novios en la portada y baberos bordados con la fecha de la boda para los más pequeños. Son ideas de esa guía, no de nuestro catálogo: nuestro dulcero se personaliza con nombre y temática.",
+        ],
+      },
+      {
+        heading: "Cuándo y cómo entregar los dulceros a los niños",
+        body: [
+          "Una guía de bodas en Italia prepara con antelación las bolsas de los niños, las monta en el lugar de la boda, las etiqueta con el nombre de cada niño y las reparte. También recomienda una mesa solo para niños. Sirve como referencia de logística.",
+          "Con un dulcero con nombre ese orden se simplifica: cada niño encuentra el suyo. Si trabajas con una wedding planner, compártele la lista de nombres para que ella los coloque. Recuerda que el pedido mínimo es de 10 piezas.",
+        ],
+      },
+      {
+        heading: "Cuántos dulceros pedir y cómo cotizarlos",
+        body: [
+          "El pedido mínimo es de 10 piezas. Cuenta los niños confirmados en tu lista de invitados, escríbenos por WhatsApp con sus nombres y una foto de la invitación, y te cotizamos. Si tu boda es en Guadalajara, Zapopan o en cualquier parte de México, te los enviamos.",
+          "Conoce los [dulceros personalizados](/productos/dulceros-personalizados) para ver el producto y, si la boda es cerca de casa, revisa la guía de [dulceros en Guadalajara](/blog/dulceros-personalizados-guadalajara).",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["dulceros-personalizados"],
+    relatedBlogSlugs: ["que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara"],
+    faq: [
+      {
+        q: "¿Los dulceros incluyen dulces?",
+        a: "No. El dulcero llega armado y vacío, listo para llenar con los dulces o detalles que tú elijas.",
+      },
+      {
+        q: "¿Qué incluye la personalización?",
+        a: "El nombre y la temática que elijas. Te mandamos una prueba digital antes de producir y nada se produce hasta que la apruebas.",
+      },
+      {
+        q: "¿Cuántos dulceros pido para una boda?",
+        a: "Uno por cada niño confirmado en tu lista, con un pedido mínimo de 10 piezas.",
+      },
+    ],
+    sources: [
+      { label: "Exclusive Italy Weddings: bolsas de actividades para niños en bodas (en inglés)", url: "https://www.exclusiveitalyweddings.com/blog/wedding-party-ideas-children-activity-bags" },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string) {

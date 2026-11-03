@@ -4203,6 +4203,72 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "wedding-candy-boxes-for-kids",
+    title: "Candy Boxes for Kids at a Wedding: Ideas and How to Hand Them Out",
+    metaTitle: "Candy Boxes for Kids at a Wedding: Ideas",
+    description:
+      "Candy box ideas for kids at a wedding: what to put inside by age, how to match them to the wedding and when to hand them out.",
+    category: "Guides",
+    publishedAt: "2026-11-03",
+    intro:
+      "Children are guests too, and a gift with their name makes them feel part of the day. An individual candy box, designed with the wedding colors, looks planned and gives each child something of their own. Here is what to choose, what to put inside by age, how to personalize it, when to hand it out and how many to order.",
+    sections: [
+      {
+        heading: "Candy boxes for kids at a wedding: what to choose",
+        body: [
+          "For the children at a wedding, choose an individual candy box with each child's name and the wedding colors. Every child gets something of their own that looks like part of the design, not an afterthought. It arrives assembled and empty, so you decide what goes inside.",
+          "Our candy box is a lunch box style with a handle, and personalization includes the name and a theme. This is one piece per child, different from a candy table shared by all the guests.",
+        ],
+      },
+      {
+        heading: "What to put inside by each child's age",
+        body: [
+          "A guide to children's activity bags for weddings in Italy adjusts the contents by age: for ages 2 to 5, a coloring book, crayons, finger puppets and modeling clay; for 6 to 10, pencils, origami, wooden cars and a puzzle; for 11 to 13, 3D puzzles and origami.",
+          "Those ideas are a starting point for filling a candy box that arrives empty. The same guide advises avoiding anything that stains, such as pencils instead of markers. A Spanish-language search result also warns against small objects children could swallow. For more filling ideas, read [what to put in a candy box](/blog/que-poner-en-un-dulcero).",
+        ],
+      },
+      {
+        heading: "How to personalize the box to match the wedding",
+        body: [
+          "Each candy box carries the child's name and a theme. To match the wedding, send us a photo of the invitation or the decoration and we adapt the design to those colors. Before producing, we send a digital proof, and nothing is produced until you approve it.",
+          "The Italian guide also suggests a printable activity book with the couple's names on the cover, and embroidered bibs with the wedding date for the youngest. Those are ideas from that guide, not from our catalog: our candy box is personalized with name and theme.",
+        ],
+      },
+      {
+        heading: "When and how to hand them out to the children",
+        body: [
+          "A wedding guide from Italy prepares the children's bags ahead of time, sets them up at the venue, labels each with the child's name and hands them out. It also recommends a table just for children. Use it as a logistics reference.",
+          "With a named candy box that order gets simpler: each child finds their own. If you work with a wedding planner, share the list of names so she can place them. Remember the minimum order is 10 pieces.",
+        ],
+      },
+      {
+        heading: "How many candy boxes to order and how to get a quote",
+        body: [
+          "The minimum order is 10 pieces. Count the confirmed children on your guest list, message us on WhatsApp with their names and a photo of the invitation, and we will quote it. If your wedding is in Guadalajara, Zapopan or anywhere in Mexico, we ship to you.",
+          "See the [personalized candy boxes](/productos/dulceros-personalizados) page for the product and, if the wedding is close to home, read the guide to [candy boxes in Guadalajara](/blog/dulceros-personalizados-guadalajara).",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["dulceros-personalizados"],
+    faq: [
+      {
+        q: "Do the candy boxes include candy?",
+        a: "No. The candy box arrives assembled and empty, ready to fill with the candy or gifts you choose.",
+      },
+      {
+        q: "What does personalization include?",
+        a: "The name and the theme you choose. We send a digital proof before producing and nothing is produced until you approve it.",
+      },
+      {
+        q: "How many candy boxes should I order for a wedding?",
+        a: "One for each confirmed child on your list, with a minimum order of 10 pieces.",
+      },
+    ],
+    sources: [
+      { label: "Exclusive Italy Weddings: children's activity bags for weddings", url: "https://www.exclusiveitalyweddings.com/blog/wedding-party-ideas-children-activity-bags" },
+    ],
+  },
 ];
 
 export function getBlogPostEn(slug: string) {
