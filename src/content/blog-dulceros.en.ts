@@ -161,7 +161,7 @@ export const dulceroPostsEn: BlogPost[] = [
         a: "Order in November or, at the latest, the first week of December for posadas from the 16th to the 24th. In December couriers slow down and holidays don't count as business days. If you're in Guadalajara, picking up at a Casa Blanca branch is usually faster than national shipping.",
       },
     ],
-    relatedBlogSlugs: [en("etiquetas-navidenas-personalizadas"), en("dulceros-para-eventos-empresariales"), en("que-poner-en-un-dulcero"), en("dulceros-personalizados-guadalajara")],
+    relatedBlogSlugs: [en("etiquetas-navidenas-personalizadas"), en("dulceros-para-eventos-empresariales"), en("que-poner-en-un-dulcero"), en("dulceros-personalizados-guadalajara"), en("buen-fin-2026-stickers-y-dulceros-personalizados")],
   },
   {
     slug: en("dulceros-para-dia-del-nino"),

@@ -367,7 +367,7 @@ export const dulceroPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["etiquetas-navidenas-personalizadas", "dulceros-para-eventos-empresariales", "que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara"],
+    relatedBlogSlugs: ["etiquetas-navidenas-personalizadas", "dulceros-para-eventos-empresariales", "que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "buen-fin-2026-stickers-y-dulceros-personalizados"],
     sources: [
       {
         label: "Cuándo empiezan las posadas 2025 en México y cuánto cuesta hacer una posada (InformaBTL)",

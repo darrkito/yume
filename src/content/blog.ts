@@ -3354,7 +3354,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
-    relatedBlogSlugs: ["dulceros-navidenos-personalizados", "stickers-para-empaques-de-negocio", "cuanto-tarda-un-pedido-de-stickers-personalizados"],
+    relatedBlogSlugs: ["dulceros-navidenos-personalizados", "stickers-para-empaques-de-negocio", "cuanto-tarda-un-pedido-de-stickers-personalizados", "buen-fin-2026-stickers-y-dulceros-personalizados"],
     faq: [
       {
         q: "¿Cuánto cuestan las etiquetas navideñas personalizadas?",
@@ -3494,6 +3494,62 @@ export const blogPosts: BlogPost[] = [
       { label: "Crónica: Dile adiós a los recuerdos de boda que terminan en la basura, lo que sí se quedan tus invitados en 2026", url: "https://www.cronica.com.mx/tendencias/2026/09/04/dile-adios-a-los-recuerdos-de-boda-que-terminan-en-la-basura-esto-es-lo-que-si-se-quedan-tus-invitados-en-2026/" },
       { label: "Publimetro México: Souvenirs para bodas 2026, las tendencias que ganan terreno", url: "https://www.publimetro.com.mx/virales/2026/10/02/souvenirs-para-bodas-2026-las-tendencias-que-ganan-terreno/" },
     ],
+  },
+  {
+    slug: "buen-fin-2026-stickers-y-dulceros-personalizados",
+    title: "Buen Fin 2026 en Studio Yume: 15% de descuento en stickers, dulceros y más",
+    metaTitle: "Buen Fin 2026: 15% en stickers y dulceros",
+    description: "Buen Fin 2026, del 13 al 17 de noviembre: 15% de descuento en toda la tienda de Studio Yume con el cupón YumeBuenFin, sin monto mínimo. Así se aplica.",
+    category: "Guías",
+    publishedAt: "2026-11-03",
+    intro: "El Buen Fin 2026 va del 13 al 17 de noviembre y en Studio Yume tienes 15% de descuento en toda la tienda en línea con el cupón YumeBuenFin, sin monto mínimo. Aquí está cómo aplicarlo, qué productos entran, cómo funciona el envío y qué conviene tener listo antes del 13 para pedir sin prisas.",
+    sections: [
+      {
+        heading: "Cuánto es el descuento y cuándo es válido",
+        body: [
+          "El cupón YumeBuenFin da 15% de descuento sobre los productos de la tienda en línea. No tiene monto mínimo: aplica igual a un pedido chico que a uno grande.",
+          "Es válido del 13 de noviembre a las 00:00 al 17 de noviembre a las 23:59, hora de Ciudad de México. Fuera de esas fechas la tienda no lo acepta.",
+        ],
+      },
+      {
+        heading: "Cómo aplicar el cupón YumeBuenFin",
+        body: [
+          "Agrega tus productos al carrito y entra a la página de pago. En el resumen del pedido encontrarás el campo «¿Tienes un cupón?»: escribe YumeBuenFin (da igual si usas mayúsculas o minúsculas) y toca «Aplicar». El descuento aparece en tu total antes de pagar.",
+          "Si el cupón no se acepta, revisa la fecha: antes del 13 o después del 17 de noviembre no es válido.",
+        ],
+      },
+      {
+        heading: "Qué productos entran en el Buen Fin",
+        body: [
+          "El cupón aplica a los productos que se compran en la tienda en línea: [stickers de vinil personalizados](/productos/stickers-vinil-impermeable), [etiquetas con tu logo](/productos/stickers-logo-personalizado), [dulceros personalizados](/productos/dulceros-personalizados), [placas de reseñas de Google con NFC](/productos/placa-resena-google-nfc), [stands de reseñas](/productos/stand-resena-google-nfc) y [recetarios médicos personalizados](/productos/recetario-medico-personalizado).",
+          "Los [tatuajes temporales personalizados](/productos/tatuajes-temporales-personalizados) se cotizan por WhatsApp según el diseño y la cantidad, así que no se compran con el cupón en la tienda en línea. Si te interesan, escríbenos y te contestamos.",
+        ],
+      },
+      {
+        heading: "Envío y recolección durante el Buen Fin",
+        body: [
+          `El envío a todo México cuesta $${NATIONAL_SHIPPING_PRICE} y es gratis en compras de $${FREE_SHIPPING_THRESHOLD} o más. Esa regla se calcula con el total antes del descuento, así que el cupón no te quita el envío gratis.`,
+          `Si estás en Guadalajara, también puedes recoger en una sucursal Casa Blanca por $${CASABLANCA_PRICE}, gratis en compras de $${FREE_SHIPPING_THRESHOLD} o más.`,
+        ],
+      },
+      {
+        heading: "Qué tener listo antes del 13 de noviembre",
+        body: [
+          "Para pedir rápido, ten a la mano tu logo o tu diseño en buena resolución, el texto exacto que quieres imprimir (nombres, fechas, mensajes) y la cantidad. Los pedidos mínimos son 10 piezas en dulceros y 40 piezas en stickers de vinil.",
+          "Después de tu pago te enviamos la prueba digital normalmente en un máximo de 24 horas, con hasta 2 rondas de ajustes. No se imprime nada sin tu aprobación.",
+          "Si piensas en regalos o posadas de diciembre, revisa las guías de [etiquetas navideñas personalizadas](/blog/etiquetas-navidenas-personalizadas) y de [dulceros navideños](/blog/dulceros-navidenos-personalizados).",
+        ],
+      },
+    ],
+    faq: [
+      { q: "¿Cuándo es el Buen Fin 2026 en Studio Yume?", a: "Del 13 al 17 de noviembre de 2026, hora de Ciudad de México." },
+      { q: "¿Cuál es el cupón del Buen Fin?", a: "YumeBuenFin: 15% de descuento sobre los productos de la tienda en línea, sin monto mínimo." },
+      { q: "¿El cupón se puede usar después del 17 de noviembre?", a: "No. Solo es válido durante las fechas del Buen Fin." },
+      { q: "¿El cupón quita el envío gratis?", a: `No. El envío gratis desde $${FREE_SHIPPING_THRESHOLD} se calcula con el total antes del descuento.` },
+      { q: "¿Aplica a los tatuajes temporales?", a: "Los tatuajes temporales se cotizan por WhatsApp y no se pagan con el cupón de la tienda en línea." },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado", "dulceros-personalizados"],
+    relatedBlogSlugs: ["etiquetas-navidenas-personalizadas", "dulceros-navidenos-personalizados"],
   },
   // Dulceros cluster lives in its own file (blog-dulceros.ts).
   ...dulceroPosts,

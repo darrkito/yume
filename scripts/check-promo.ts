@@ -2,7 +2,7 @@
 // Guards the Buen Fin coupon: date window (CDMX), case-insensitive code, and
 // that server line prices add up exactly to what the checkout UI previews.
 import assert from "node:assert";
-import { activePromo, BUEN_FIN, discountedPrice } from "../src/lib/promo";
+import { activePromo, BUEN_FIN, discountedPrice, promoPhase } from "../src/lib/promo";
 
 const at = (iso: string) => Date.parse(iso);
 assert.equal(activePromo("YumeBuenFin", at("2026-11-12T23:59:59-06:00")), null, "before start");
@@ -36,3 +36,10 @@ async function main() {
   console.log("check-promo OK");
 }
 main();
+
+assert.equal(promoPhase(at("2026-11-02T23:59:59-06:00")), "off");
+assert.equal(promoPhase(at("2026-11-03T00:00:00-06:00")), "teaser");
+assert.equal(promoPhase(at("2026-11-12T23:59:59-06:00")), "teaser");
+assert.equal(promoPhase(at("2026-11-13T00:00:00-06:00")), "live");
+assert.equal(promoPhase(at("2026-11-17T23:59:59-06:00")), "live");
+assert.equal(promoPhase(at("2026-11-18T00:00:00-06:00")), "off");

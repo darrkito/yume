@@ -11,6 +11,7 @@ import { formatMXN } from "@/lib/format";
 import { HeroJarLazy } from "@/components/HeroJarLazy";
 import { HeroPhotos } from "@/components/HeroPhotos";
 import { CartReminder } from "@/components/CartReminder";
+import { BuenFinStrip } from "@/components/BuenFinStrip";
 import { QuoteCard } from "@/components/QuoteCard";
 import { QuoteBand } from "@/components/QuoteBand";
 import { ProductRail } from "@/components/ProductRail";
@@ -59,6 +60,7 @@ export default function Home() {
   return (
     <>
       <CartReminder />
+      <BuenFinStrip lang="es" />
       {/* Hero */}
       <section className="desk-lamp-wash">
         <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-8 px-6 pb-6 pt-8 sm:grid-cols-2 sm:gap-12 sm:pb-20 sm:pt-20">

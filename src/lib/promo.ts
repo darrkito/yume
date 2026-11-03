@@ -4,11 +4,15 @@
 export const BUEN_FIN = {
   code: "YumeBuenFin",
   pct: 15,
+  teaserFrom: Date.parse("2026-11-03T00:00:00-06:00"),
   startsAt: Date.parse("2026-11-13T00:00:00-06:00"),
   endsAt: Date.parse("2026-11-18T00:00:00-06:00"), // exclusive: valid through Nov 17, 23:59 CDMX
 };
 
 export type Promo = typeof BUEN_FIN;
+export type PromoPhase = "off" | "teaser" | "live";
+
+export const promoPhase = (now = Date.now()): PromoPhase => now >= BUEN_FIN.endsAt || now < BUEN_FIN.teaserFrom ? "off" : now < BUEN_FIN.startsAt ? "teaser" : "live";
 
 export const promoLive = (now = Date.now()) => now >= BUEN_FIN.startsAt && now < BUEN_FIN.endsAt;
 

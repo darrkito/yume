@@ -1,5 +1,7 @@
 export type Lang = "es" | "en";
 
+export const BUEN_FIN_POST = { es: "buen-fin-2026-stickers-y-dulceros-personalizados", en: "buen-fin-2026-custom-stickers-and-party-favor-boxes" } as const;
+
 // Spanish stays at bare paths (studioyume.mx/productos) as the priority
 // market (Guadalajara/Jalisco/México) — English is the secondary, prefixed
 // /en/... tree with its own real English slugs (not just an /en/productos
@@ -16,6 +18,7 @@ export const PRODUCT_SLUG_EN: Record<string, string> = {
 };
 
 export const BLOG_SLUG_EN: Record<string, string> = {
+  "buen-fin-2026-stickers-y-dulceros-personalizados": "buen-fin-2026-custom-stickers-and-party-favor-boxes",
   "recetarios-medicos-personalizados-guadalajara": "custom-medical-prescription-pads-guadalajara",
   "stickers-personalizados-para-negocios-guadalajara": "custom-stickers-for-businesses-guadalajara",
   "papeleria-personalizada-para-negocios-jalisco": "custom-stationery-for-businesses-jalisco",
@@ -346,6 +349,11 @@ export const UI: Record<Lang, Record<string, string>> = {
     promoRemove: "Quitar cupón",
     promoDiscount: "Cupón {code} (-{pct}%)",
     promoBanner: "Buen Fin: 15% de descuento en toda la tienda con el cupón {code}, sin monto mínimo. Válido hasta el 17 de noviembre.",
+    promoTeaser: "Se viene el Buen Fin: del 13 al 17 de noviembre, 15% de descuento en toda la tienda con el cupón {code}, sin monto mínimo.",
+    promoLearnMore: "Ver detalles",
+    buenFinHomeTitle: "Se viene el Buen Fin: 15% en toda la tienda",
+    buenFinHomeBody: "Del 13 al 17 de noviembre usa el cupón {code} en stickers de vinil, etiquetas con logo, dulceros, placas de reseñas y recetarios. Sin monto mínimo. El cupón se aplica al pagar en la tienda en línea.",
+    buenFinHomeCta: "Cómo aprovechar el Buen Fin",
     emptyCartHelp: "¿Necesitas algo a la medida o una cantidad distinta?",
     phoneHelp: "Lo usamos para enviarte la prueba digital por WhatsApp.",
     whatsappGuidance: "¿Dudas o un diseño especial? Cotiza por WhatsApp",
@@ -558,6 +566,11 @@ export const UI: Record<Lang, Record<string, string>> = {
     promoRemove: "Remove coupon",
     promoDiscount: "Coupon {code} (-{pct}%)",
     promoBanner: "Buen Fin: 15% off the whole store with code {code}, no minimum. Valid through November 17.",
+    promoTeaser: "Buen Fin is coming: November 13-17, 15% off the whole store with code {code}, no minimum.",
+    promoLearnMore: "See details",
+    buenFinHomeTitle: "Buen Fin is coming: 15% off the whole store",
+    buenFinHomeBody: "From November 13 to 17 use code {code} on vinyl stickers, logo labels, party favor boxes, review plates and prescription pads. No minimum. The code is applied at checkout in the online store.",
+    buenFinHomeCta: "How to get the most out of Buen Fin",
     emptyCartHelp: "Need something custom or a different quantity?",
     phoneHelp: "We use this to send you the digital proof on WhatsApp.",
     whatsappGuidance: "Questions or a special design? Get a WhatsApp quote",

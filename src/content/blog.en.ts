@@ -2832,7 +2832,7 @@ export const blogPostsEn: BlogPost[] = [
         a: `Order in November or, at the latest, the first week of December. Once you approve the digital proof, the order takes ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days to reach your door anywhere in Mexico. That leaves room to adjust the design and for couriers, which are busier in December.`,
       },
     ],
-    relatedBlogSlugs: [BLOG_SLUG_EN["dulceros-navidenos-personalizados"], BLOG_SLUG_EN["stickers-para-empaques-de-negocio"], BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"]],
+    relatedBlogSlugs: [BLOG_SLUG_EN["dulceros-navidenos-personalizados"], BLOG_SLUG_EN["stickers-para-empaques-de-negocio"], BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"], BLOG_SLUG_EN["buen-fin-2026-stickers-y-dulceros-personalizados"]],
     download: { href: "/descargas/printable-christmas-gift-tags.pdf", label: "Free download: printable Christmas gift tags (PDF, color and black and white)" },
   },
   {
@@ -3368,6 +3368,62 @@ export const blogPostsEn: BlogPost[] = [
       { label: "Bodas.net: Consejos sobre el envío de las invitaciones de boda", url: "https://www.bodas.net/articulos/consejos-sobre-el-envio-de-las-invitaciones-de-boda--c565" },
       { label: "Greenvelope: When to send wedding invitations and save the dates", url: "https://www.greenvelope.com/resources/when-to-send-wedding-invitations-and-save-the-dates" },
     ],
+  },
+  {
+    slug: BLOG_SLUG_EN["buen-fin-2026-stickers-y-dulceros-personalizados"],
+    title: "Buen Fin 2026 at Studio Yume: 15% off stickers, party favor boxes and more",
+    metaTitle: "Buen Fin 2026: 15% off stickers and favor boxes",
+    description: "Buen Fin 2026, November 13-17: 15% off the whole Studio Yume online store with code YumeBuenFin, no minimum. Here is how to apply it.",
+    category: "Guides",
+    publishedAt: "2026-11-03",
+    intro: "Buen Fin 2026 runs November 13 to 17, and at Studio Yume you get 15% off the whole online store with code YumeBuenFin, no minimum order. Here is how to apply it, which products are included, how shipping works and what to have ready before the 13th.",
+    sections: [
+      {
+        heading: "How much is the discount and when is it valid",
+        body: [
+          "Code YumeBuenFin gives 15% off products in the online store. There is no minimum: it applies equally to small and large orders.",
+          "It is valid from November 13 at 00:00 to November 17 at 23:59, Mexico City time. Outside those dates the store will not accept it.",
+        ],
+      },
+      {
+        heading: "How to apply code YumeBuenFin",
+        body: [
+          "Add your products to the cart and go to the checkout page. In the order summary you will find the field ‘Have a coupon?’: enter YumeBuenFin (uppercase or lowercase both work) and tap ‘Apply’. The discount appears in your total before you pay.",
+          "If the code is not accepted, check the date: it is not valid before November 13 or after November 17.",
+        ],
+      },
+      {
+        heading: "Which products are included",
+        body: [
+          "The code applies to products purchased in the online store: [custom vinyl stickers](/en/products/waterproof-vinyl-stickers), [labels with your logo](/en/products/custom-logo-stickers), [personalized party favor boxes](/en/products/personalized-party-favor-boxes), [Google review NFC plates](/en/products/google-review-nfc-plate), [review stands](/en/products/google-review-nfc-stand) and [custom medical prescription pads](/en/products/medical-prescription-pads).",
+          "[Custom temporary tattoos](/en/products/custom-temporary-tattoos) are quoted over WhatsApp by design and quantity, so they are not bought with the code in the online store. If you are interested, message us.",
+        ],
+      },
+      {
+        heading: "Shipping and pickup during Buen Fin",
+        body: [
+          `Shipping anywhere in Mexico costs $${NATIONAL_SHIPPING_PRICE} and is free on purchases of $${FREE_SHIPPING_THRESHOLD} or more. That rule is calculated using the total before the discount, so the code does not take away free shipping.`,
+          `If you are in Guadalajara, you can also pick up at a Casa Blanca branch for $${CASABLANCA_PRICE}, free on purchases of $${FREE_SHIPPING_THRESHOLD} or more.`,
+        ],
+      },
+      {
+        heading: "What to have ready before November 13",
+        body: [
+          "To order quickly, have your logo or design in good resolution, the exact text you want printed (names, dates, messages) and the quantity ready. Minimum orders are 10 party favor boxes and 40 vinyl stickers.",
+          "After payment we normally send your digital proof within 24 hours, with up to 2 rounds of adjustments. Nothing is printed without your approval.",
+          "If you are planning gifts or December posadas, see the guides to [custom Christmas labels](/en/blog/custom-christmas-labels) and [Christmas treat boxes](/en/blog/personalized-christmas-treat-boxes).",
+        ],
+      },
+    ],
+    faq: [
+      { q: "When is Buen Fin 2026 at Studio Yume?", a: "November 13 to 17, 2026, Mexico City time." },
+      { q: "What is the Buen Fin code?", a: "YumeBuenFin: 15% off products in the online store, with no minimum." },
+      { q: "Can the code be used after November 17?", a: "No. It is only valid during the Buen Fin dates." },
+      { q: "Does the code take away free shipping?", a: `No. Free shipping from $${FREE_SHIPPING_THRESHOLD} is calculated using the total before the discount.` },
+      { q: "Does it apply to temporary tattoos?", a: "Temporary tattoos are quoted over WhatsApp and are not paid for with the online store code." },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado", "dulceros-personalizados"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["etiquetas-navidenas-personalizadas"], BLOG_SLUG_EN["dulceros-navidenos-personalizados"]],
   },
 ];
 
