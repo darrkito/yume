@@ -1753,12 +1753,12 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "como-conseguir-mas-resenas-de-google-nfc-qr",
     title: "Placa de reseñas de Google con NFC: qué es y cuánto cuesta",
-    metaTitle: "Placa de reseñas de Google con NFC: qué es y cuánto cuesta",
+    metaTitle: "Placas de reseñas de Google: qué son y cuánto cuestan",
     description:
-      "Qué es una placa de reseñas de Google con NFC y QR, cómo funciona, cuánto cuesta y cómo usarla para pedir más reseñas sin romper las reglas de Google.",
+      "Conoce las placas de reseñas de Google con NFC y QR: cómo funcionan, cuánto cuestan y cómo pedir reseñas respetando las reglas de Google.",
     category: "Guías",
     publishedAt: "2026-09-15",
-    modifiedAt: "2026-11-02",
+    modifiedAt: "2026-11-03",
     intro:
       "Pedir una reseña de Google casi siempre es incómodo: le dictas a tu cliente el nombre del negocio, él lo busca, filtra entre varios resultados parecidos y a veces se rinde antes de encontrar el correcto. Una placa con NFC y código QR resuelve justo ese paso: lleva directo a la ficha correcta en dos segundos, sin que el cliente tenga que buscar nada. Aquí tienes qué es una placa de reseñas de Google, cómo funciona, dónde ver cuánto cuesta y el método completo: cuándo pedir la reseña, qué decir, dónde colocar la placa, qué reglas de Google debes respetar y cómo responder cuando lleguen las opiniones.",
     sections: [

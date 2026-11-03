@@ -35,11 +35,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!product || !t) return notFoundMetadata("en");
   const ogImage = product.image ?? "/og-image.jpg";
   const description = fitDescription(t.metaDescription ?? t.description);
+  const title = t.metaTitle ?? t.name;
   return {
-    title: t.name,
+    title,
     description,
     alternates: { canonical: `/en/products/${slug}`, languages: hreflangFor(`/productos/${esSlug}`) },
-    openGraph: { title: t.name, description, type: "website", url: `/en/products/${slug}`, siteName: SITE.name, locale: ogLocale("en"), images: [ogImage] },
+    openGraph: { title, description, type: "website", url: `/en/products/${slug}`, siteName: SITE.name, locale: ogLocale("en"), images: [ogImage] },
     twitter: { card: "summary_large_image", images: [ogImage] },
   };
 }

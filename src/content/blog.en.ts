@@ -1614,11 +1614,12 @@ export const blogPostsEn: BlogPost[] = [
   {
     slug: BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"],
     title: "How to Get More Google Reviews with an NFC and QR Plate",
-    metaTitle: "How to Get More Google Reviews with NFC and QR",
+    metaTitle: "Google Review Plates: Get More Reviews with NFC & QR",
     description:
-      "Why Google reviews matter for a local business and how a plate with NFC and a QR code makes it easy for customers to leave one on the spot, with zero friction.",
+      "Learn how Google review plates with NFC and QR work, where to place them, and how they help customers leave a review.",
     category: "Guides",
     publishedAt: "2026-09-15",
+    modifiedAt: "2026-11-03",
     intro:
       "Asking for a Google review is almost always awkward: you spell out your business name, the customer searches for it, sifts through several similar-looking results, and sometimes gives up before finding the right one. A plate with NFC and a QR code solves exactly that step: it goes straight to the correct listing in two seconds, with nothing for the customer to search for.",
     sections: [

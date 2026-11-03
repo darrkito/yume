@@ -2,6 +2,7 @@ import { getProduct, parseVariant, pieceCount, type Product } from "@/content/pr
 
 export interface ProductTranslation {
   name: string;
+  metaTitle?: string;
   category: string;
   description: string;
   /** Short summary for <meta description>/OG: falls back to `description` when unset. */
@@ -276,6 +277,7 @@ export const productsEn: Record<string, ProductTranslation> = {
     ],
   },
   "placa-resena-google-nfc": {
+    metaTitle: "Google review plate (NFC & QR) | $140 MXN",
     name: "Google Review Plate (NFC and QR)",
     category: "NFC & QR Google Review Plates and Stands",
     specs: [
@@ -289,7 +291,7 @@ export const productsEn: Record<string, ProductTranslation> = {
     description:
       "A plate for getting more Google reviews with NFC and QR technology, perfect for a counter, register, or table. We configure it with your business's link before shipping: the NFC is already programmed and the QR is already ready to use: nothing to install, set up, or subscribe to on your end. Includes adhesive backing so you can stick it anywhere. Available in white or black.",
     metaDescription:
-      "NFC and QR plate for Google reviews, 12 × 12 cm, ready to use with zero setup or subscription. White or black, adhesive included. From $140 MXN.",
+      "Google review plate with NFC and QR, ready to use without an app or subscription. Available in white or black, with adhesive.",
     details: [
       "Customers tap with their phone (NFC) or scan the QR: both go straight to leaving a Google review",
       "Arrives configured with your business's link: NFC and QR ready to use",
@@ -328,6 +330,7 @@ export const productsEn: Record<string, ProductTranslation> = {
     ],
   },
   "stand-resena-google-nfc": {
+    metaTitle: "Google review stand (NFC & QR) | $200 MXN",
     name: "Google Review Stand (NFC and QR)",
     category: "NFC & QR Google Review Plates and Stands",
     specs: [
@@ -342,7 +345,7 @@ export const productsEn: Record<string, ProductTranslation> = {
     description:
       "A freestanding stand for getting more Google reviews with NFC and QR technology, for a counter, register, or table without needing to stick it down. We configure it with your business's link before shipping: the NFC is already programmed and the QR is already ready to use: nothing to install, set up, or subscribe to on your end. Available in white or black.",
     metaDescription:
-      "NFC and QR stand for Google reviews with its own base, ready to use with zero setup or subscription. White or black. From $200 MXN.",
+      "Google review stand with NFC and QR, ready to use without an app or subscription. Available in white or black.",
     details: [
       "Customers tap with their phone (NFC) or scan the QR: both go straight to leaving a Google review",
       "Arrives configured with your business's link: NFC and QR ready to use",
