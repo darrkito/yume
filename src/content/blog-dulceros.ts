@@ -584,16 +584,24 @@ export const dulceroPosts: BlogPost[] = [
   },
   {
     slug: "dulceros-para-bautizo-y-primera-comunion",
-    title: "Dulceros y recuerdos para bautizo y primera comunión",
-    metaTitle: "Dulceros para bautizo y primera comunión: ideas",
+    title: "Qué poner en un dulcero de bautizo y de primera comunión",
+    metaTitle: "Qué poner en un dulcero de bautizo y comunión",
     description:
-      "Dulceros personalizados para bautizo y primera comunión: diseños, qué datos poner, qué meter dentro, cuántos pedir, precio y tiempos de entrega.",
+      "Qué poner en un dulcero de bautizo o primera comunión, cuántos dulces calcular, cuántas variedades y cómo montarlo. Incluye precio y tiempos de entrega.",
     category: "Guías",
     publishedAt: PUBLISHED,
-    modifiedAt: "2026-10-26",
+    modifiedAt: "2026-11-03",
     intro:
-      "En un bautizo o una primera comunión, el recuerdo que se llevan los invitados suele ser parte importante de la celebración. Un dulcero personalizado con el nombre del niño o la niña y la fecha funciona como recuerdo y como detalle de dulces a la vez. Aquí tienes ideas de diseño, qué datos poner, qué meter dentro, cuántos pedir, cuánto cuesta y con cuánta anticipación hacer el pedido para que se vea a la altura del evento.",
+      "En un bautizo o una primera comunión, el recuerdo que se llevan los invitados suele ser parte importante de la celebración. Un dulcero personalizado con el nombre del niño o la niña y la fecha funciona como recuerdo y como detalle de dulces a la vez. Aquí respondemos qué poner dentro, cuántos dulces calcular por invitado, cuántas variedades elegir, cómo montarlo, cuánto cuesta y con cuánta anticipación pedirlo.",
     sections: [
+      {
+        heading: "Qué poner en un dulcero de bautizo: lo esencial",
+        body: [
+          "Para un dulcero de bautizo, mezcla unos dulces clásicos con algunas opciones especiales y mantén un estilo coherente con la mesa. Funcionan los chocolates finos, las almendras cubiertas, las peladillas, los mazapanes y las galletas decoradas. El dulcero llega vacío, así que tú eliges el relleno y el presupuesto.",
+          "Si buscas algo más elegante, una guía de mesas de dulces para bodas sugiere macarons, trufas y minipasteles. Es una referencia de bodas, no una norma de bautizo. Si quieres que dure como recuerdo, agrega un rosario pequeño, una medallita o una vela, o unos stickers con el nombre.",
+          "Pregunta por alergias antes de comprar si invitas a niños que no conoces bien. Para más ideas por edad, revisa la [guía de qué poner en un dulcero](/blog/que-poner-en-un-dulcero).",
+        ],
+      },
       {
         heading: "Qué dulcero conviene para un bautizo o una primera comunión",
         body: [
@@ -602,9 +610,25 @@ export const dulceroPosts: BlogPost[] = [
         ],
       },
       {
+        heading: "Cuántos dulces calcular por invitado: una estimación",
+        body: [
+          "Como referencia, una guía de mesas de dulces para bodas calcula unos 150 g por invitado en eventos pequeños, unos 100 g en medianos y unos 80 g en grandes. Es una estimación de otro tipo de evento, no una norma de bautizo ni de comunión, así que úsala solo como punto de partida.",
+          "La misma guía propone partir de unos 10 kg de dulces para 100 invitados cuando la mesa es principalmente de dulces, y aclara que no sustituye al postre ni al banquete. Se puede bajar la cantidad si añades minis, donas, bombones o galletas decoradas.",
+          "Si usas frascos, la guía orienta con 4 a 6 frascos medianos para 50 invitados, 10 a 12 para 50 a 150 y 15 a 16 para unos 200. Son cifras de una candy bar de bodas. Si entregas un dulcero por invitado, el cálculo es por caja: mira la sección de precio más abajo.",
+        ],
+      },
+      {
+        heading: "Cuántas variedades poner y cómo montar la mesa",
+        body: [
+          "La guía de bodas que consultamos no fija un número de variedades: recomienda mantener coherencia en lugar de mezclar demasiado. Elige un estilo claro, juega con colores, alturas y texturas, y rotula cada sabor. Frascos transparentes, bandejas a distintas alturas y pedestales ayudan a que la mesa se vea ordenada.",
+          "Marca los alérgenos y, si puedes, indica opciones sin gluten, sin azúcar o veganas. Pon pinzas para servirse. La guía señala que las presentaciones individuales son higiénicas y evitan filas, y un dulcero por invitado es justamente una presentación individual.",
+          "La misma guía sugiere bolsitas para llevar con etiqueta personalizada; ahí caben unos [stickers con el nombre](/productos/stickers-vinil-impermeable). Para decidir entre [cajas, bolsas o vasos](/blog/cajas-bolsas-o-vasos-dulceros-cual-elegir), compara cómo quieres entregarlo.",
+        ],
+      },
+      {
         heading: "Diseños que funcionan",
         body: [
-          "Para bautizo, los tonos pastel (azul, rosa, beige, blanco) con una paloma, una cruz o angelitos son los más pedidos. Para primera comunión, el blanco con dorado, un cáliz o una cruz sencilla y el nombre en letra elegante. Nuestra personalización incluye el nombre y la temática que elijas.",
+          "Para bautizo, puedes usar tonos pastel (azul, rosa, beige, blanco) con una paloma, una cruz o angelitos. Para primera comunión, blanco con dorado, un cáliz o una cruz sencilla y el nombre en letra elegante. Nuestra personalización incluye el nombre y la temática que elijas.",
           "Si la fiesta tiene una paleta de colores definida, mándanos la invitación y adaptamos el diseño del dulcero a esos tonos para que combine con la mesa de dulces. Antes de producir te mandamos una prueba digital, y nada se produce hasta que la apruebas.",
           "Un consejo práctico: si el evento tiene mucha decoración, elige un diseño sencillo con el nombre bien grande. Si la decoración es sobria, puedes permitirte más detalle en el dulcero.",
         ],
@@ -612,44 +636,47 @@ export const dulceroPosts: BlogPost[] = [
       {
         heading: "Qué datos poner en el dulcero",
         body: [
-          "Lo más común es poner el nombre del niño o la niña, el tipo de celebración (Mi bautizo, Mi primera comunión) y la fecha. Con esos tres datos el dulcero ya funciona como recuerdo, y todo lo demás es opcional: padrinos, una frase corta o el lugar.",
+          "Lo básico es poner el nombre del niño o la niña, el tipo de celebración (Mi bautizo, Mi primera comunión) y la fecha. Con esos tres datos el dulcero ya funciona como recuerdo, y todo lo demás es opcional: padrinos, una frase corta o el lugar.",
           "Algunas familias agregan el nombre de los padrinos o una frase corta de agradecimiento. Si hay hermanos que celebran juntos, puedes poner los dos nombres en el mismo diseño.",
           "Revisa bien la ortografía de los nombres y la fecha en la prueba digital antes de aprobarla: es el último paso antes de producir, y un error ahí se repite en todas las piezas.",
         ],
       },
       {
-        heading: "Qué poner dentro de un dulcero de bautizo o comunión",
-        body: [
-          "Para un evento familiar con niños y adultos, funcionan bien los chocolates finos, las almendras cubiertas, las peladillas, los mazapanes y las galletas decoradas. El dulcero llega vacío, sin dulces, así que tú decides el relleno y el presupuesto.",
-          "Si quieres que dure como recuerdo, agrega un rosario pequeño, una medallita o una vela. Unos stickers con el nombre o el diseño de la fiesta también son un buen detalle sin azúcar.",
-          "Pregunta por alergias (cacahuate y chocolate son las más comunes) si invitas a niños que no conoces bien, y arma un dulcero de prueba antes de comprar todo para calcular cuánto necesitas. Para más ideas por edad, revisa la guía de qué poner en un dulcero.",
-        ],
-      },
-      {
         heading: "Cuántos pedir y cuánto cuesta",
         body: [
-          `Primeras 100 piezas: $${dulceroUnit} MXN por dulcero, con pedido mínimo de 10 piezas. 30 dulceros son $${dulceroTotal(30)} y 50 son $${dulceroTotal(50)}. Arriba de 100 piezas es precio mayoreo: escríbenos por WhatsApp y te cotizamos.`,
-          `Pide uno por familia o uno por invitado, según tu presupuesto. Si es por familia, cuenta las familias confirmadas y suma 2 o 3 extra para los que llegan sin avisar. Desde $${FREE_SHIPPING_THRESHOLD} de compra el envío nacional es gratis, y en la zona metropolitana de Guadalajara puedes recogerlos por $${CASABLANCA_PRICE} en cualquiera de las ${CASABLANCA_BRANCHES.length} sucursales de paquetería Casa Blanca.`,
-          "Si la fiesta combina bautizo con una comida para muchos invitados, puedes pedir una parte con el diseño completo para la mesa principal y otra con un diseño más sencillo para el resto, todo en la misma orden.",
+          `Primeras 100 piezas: $${dulceroUnit} MXN por [dulcero personalizado](/productos/${DULCERO}), con pedido mínimo de 10 piezas. 30 dulceros son $${dulceroTotal(30)} y 50 son $${dulceroTotal(50)}. Arriba de 100 piezas es precio mayoreo: escríbenos por WhatsApp y te cotizamos. Pide uno por invitado o uno por familia, según tu presupuesto, y cuenta solo a los confirmados.`,
+          `Desde $${FREE_SHIPPING_THRESHOLD} de compra el envío nacional es gratis, y en la zona metropolitana de Guadalajara puedes recogerlos por $${CASABLANCA_PRICE} en cualquiera de las ${CASABLANCA_BRANCHES.length} sucursales de paquetería Casa Blanca.`,
         ],
       },
       {
         heading: "Cuándo pedirlos para que lleguen a tiempo",
         body: [
-          `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba digital, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional (o ${PICKUP_EXTRA_DAYS} día hábil si recoges en una sucursal Casa Blanca de Guadalajara). Para no ir con prisas, inicia el pedido con unas tres semanas de anticipación.`,
+          `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba digital, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional (o ${PICKUP_EXTRA_DAYS} día hábil si recoges en una sucursal Casa Blanca de Guadalajara). Esos días se cuentan desde que apruebas la prueba, así que conviene resolver pronto nombres y fecha.`,
           "El Código de Derecho Canónico (canon 867) dice que los padres deben procurar que los niños sean bautizados en las primeras semanas de vida. Por eso, si ya tienes fecha en la parroquia, conviene pedir los dulceros pronto, sin esperar a tener resuelto todo lo demás.",
-          "Confirma la lista de niños, los nombres y la fecha antes de aprobar el diseño para no perder días en correcciones. Si el evento cae en una temporada con muchas celebraciones, pídelos con más anticipación.",
+          "Confirma la lista de niños, los nombres y la fecha antes de aprobar el diseño para no perder días en correcciones.",
         ],
       },
       {
         heading: "Cómo pedirlos",
         body: [
           "Puedes pedirlos desde la tienda en línea eligiendo la cantidad y pagando con tarjeta, OXXO o SPEI, o cotizar primero por WhatsApp si quieres platicar el diseño antes de pagar. En ambos casos recibes una prueba digital antes de que se produzca nada.",
-          "Si tu evento incluye otros recuerdos, como stickers para sellar bolsitas o decorar lo que va dentro, pueden pedirse en la misma orden. Y si organizas también una boda, XV años o baby shower, tienes la guía de dulceros para eventos sociales.",
+          "Si tu evento incluye otros recuerdos, como stickers para sellar bolsitas o decorar lo que va dentro, pueden pedirse en la misma orden. Y si organizas también una boda, XV años o baby shower, tienes la [guía de dulceros para eventos sociales](/blog/dulceros-para-eventos-sociales-boda-xv-baby-shower). Si estás en la zona, revisa los [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara).",
         ],
       },
     ],
     faq: [
+      {
+        q: "¿Qué se pone en un dulcero de bautizo?",
+        a: "Una guía de mesas de dulces para bodas recomienda mezclar dulces clásicos con algunas opciones especiales y mantener coherencia en el estilo. Puedes usar chocolates finos, almendras cubiertas, peladillas, mazapanes o galletas decoradas. El dulcero llega vacío y tú eliges el relleno.",
+      },
+      {
+        q: "¿Cuántos dulces calcular por invitado?",
+        a: "Como referencia de mesas de dulces en bodas, unos 150 g por invitado en eventos pequeños, unos 100 g en medianos y unos 80 g en grandes. Es una estimación de otro tipo de evento, no una norma de bautizo ni de comunión.",
+      },
+      {
+        q: "¿Cuántas variedades de dulces debe llevar?",
+        a: "La guía de bodas que consultamos no fija un número. Recomienda combinar clásicos con algunas opciones especiales y mantener coherencia en lugar de mezclar demasiado.",
+      },
       {
         q: "¿Los dulceros para bautizo y comunión incluyen dulces?",
         a: "No. El dulcero llega armado y vacío, listo para llenar con los dulces o recuerdos que tú elijas.",
@@ -664,7 +691,7 @@ export const dulceroPosts: BlogPost[] = [
       },
       {
         q: "¿Qué datos lleva el dulcero?",
-        a: "Lo más común es el nombre del niño o la niña, el tipo de celebración (Mi bautizo, Mi primera comunión) y la fecha. Puedes agregar padrinos o una frase corta. Te mandamos una prueba digital para revisar la ortografía antes de producir.",
+        a: "Lo básico es el nombre del niño o la niña, el tipo de celebración (Mi bautizo, Mi primera comunión) y la fecha. Puedes agregar padrinos o una frase corta. Te mandamos una prueba digital para revisar la ortografía antes de producir.",
       },
       {
         q: "¿Cuánto tardan en llegar?",
@@ -679,6 +706,10 @@ export const dulceroPosts: BlogPost[] = [
       {
         label: "Código de Derecho Canónico (Santa Sede): libro IV, canon 867 sobre el bautismo de los niños",
         url: "https://www.vatican.va/archive/cod-iuris-canonici/eng/documents/cic_lib4-cann834-878_en.html",
+      },
+      {
+        label: "Bodas.net: todo lo que debéis saber antes de montar una candy bar (cantidades, qué poner y montaje)",
+        url: "https://www.bodas.net/articulos/todo-lo-que-debeis-saber-antes-de-montar-una-candy-bar--c2448",
       },
     ],
     relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
