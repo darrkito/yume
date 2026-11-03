@@ -584,8 +584,8 @@ export const dulceroPosts: BlogPost[] = [
   },
   {
     slug: "dulceros-para-bautizo-y-primera-comunion",
-    title: "Qué poner en un dulcero de bautizo y de primera comunión",
-    metaTitle: "Qué poner en un dulcero de bautizo y comunión",
+    title: "Recuerdos de bautizo para niña y niño y primera comunión",
+    metaTitle: "Recuerdos de bautizo para niña y niño y comunión",
     description:
       "Qué poner en un dulcero de bautizo o primera comunión, cuántos dulces calcular, cuántas variedades y cómo montarlo. Incluye precio y tiempos de entrega.",
     category: "Guías",
@@ -594,6 +594,9 @@ export const dulceroPosts: BlogPost[] = [
     intro:
       "En un bautizo o una primera comunión, el recuerdo que se llevan los invitados suele ser parte importante de la celebración. Un dulcero personalizado con el nombre del niño o la niña y la fecha funciona como recuerdo y como detalle de dulces a la vez. Aquí respondemos qué poner dentro, cuántos dulces calcular por invitado, cuántas variedades elegir, cómo montarlo, cuánto cuesta y con cuánta anticipación pedirlo.",
     sections: [
+      { heading: "Recuerdos de bautizo para niña", body: ["Un dulcero con el nombre y la temática de la celebración puede llevar una paleta rosa, beige o la que prefiera la familia. Complementa el detalle con stickers coordinados y revisa la prueba digital antes de aprobarla."] },
+      { heading: "Recuerdos de bautizo para niño", body: ["Para un niño, elige una paleta azul, neutra o del color de la invitación y personaliza el dulcero con su nombre. Llega armado y vacío para que la familia elija el relleno; los stickers pueden acompañarlo."] },
+      { heading: "Recuerdos de primera comunión", body: ["Para primera comunión, el nombre y una temática en blanco o en los colores del evento dan unidad al dulcero y a los stickers. Comparte los datos y revisa la prueba antes de producir."] },
       {
         heading: "Qué poner en un dulcero de bautizo: lo esencial",
         body: [

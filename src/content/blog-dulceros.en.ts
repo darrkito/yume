@@ -324,16 +324,19 @@ export const dulceroPostsEn: BlogPost[] = [
   },
   {
     slug: en("dulceros-para-bautizo-y-primera-comunion"),
-    title: "Favor Boxes for Baptisms and First Communions",
-    metaTitle: "Baptism and First Communion Favor Boxes",
+    title: "Baptism Favors for Girls and Boys and First Communion",
+    metaTitle: "Baptism Favors for Girls and Boys and Communion",
     description:
       "Personalized favor boxes for baptisms and first communions: designs, what details to include, what to put inside, how many to order, price and delivery times.",
     category: "Guides",
     publishedAt: PUBLISHED,
-    modifiedAt: "2026-10-26",
+    modifiedAt: "2026-11-03",
     intro:
       "At a baptism or first communion, the keepsake guests take home is often an important part of the celebration. A personalized favor box with the child's name and the date works as both a keepsake and a treat. Here are ideas for design, which details to include, what to put inside, how many to order, what it costs and how far ahead to order so it looks worthy of the occasion.",
     sections: [
+      { heading: "Baptism favors for a girl", body: ["A favor box with her name and the celebration's theme can use pink, beige or the family's chosen palette. Add matching stickers and review the digital proof before approval."] },
+      { heading: "Baptism favors for a boy", body: ["Choose blue, neutral or invitation colors and personalize the box with his name. It arrives assembled and empty for the family to fill; stickers can accompany it."] },
+      { heading: "First communion favors", body: ["For a first communion, the child's name and a theme in white or the event colors can coordinate the box and stickers. Share the details and review the proof before production."] },
       {
         heading: "Which favor box suits a baptism or first communion",
         body: [
