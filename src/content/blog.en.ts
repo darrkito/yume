@@ -3282,7 +3282,7 @@ export const blogPostsEn: BlogPost[] = [
     ],
   },
   {
-    slug: "cuando-enviar-invitaciones-de-boda",
+    slug: BLOG_SLUG_EN["cuando-enviar-invitaciones-de-boda"],
     title: "When to Send Wedding Invitations and What to Include",
     description:
       "When to send wedding invitations: guiding timelines for the save the date, the invitation and the RSVP, plus the details each piece should carry.",
@@ -3337,7 +3337,7 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: [],
-    relatedBlogSlugs: ["mesa-de-dulces-para-boda", "dulceros-personalizados-guadalajara"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["mesa-de-dulces-para-boda"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"]],
     faq: [
       {
         q: "How far ahead should wedding invitations be sent?",

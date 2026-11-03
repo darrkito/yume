@@ -203,6 +203,36 @@ export const dulceroPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: [DULCERO],
+    faq: [
+      {
+        q: "Do the favor boxes include candy?",
+        a: "No. The favor box arrives assembled and empty, ready to fill with the candy or treats you choose.",
+      },
+      {
+        q: "How much does a Children's Day favor box cost?",
+        a: `First 100 pieces: $${dulceroUnit} MXN per piece, with a minimum order of 10. Above 100 pieces, wholesale pricing is quoted on WhatsApp. National shipping is free from $${FREE_SHIPPING_THRESHOLD}.`,
+      },
+      {
+        q: "When is Children's Day in Mexico?",
+        a: "Children's Day in Mexico is April 30.",
+      },
+      {
+        q: "Can I send candy to school?",
+        a: "According to a 2025 article, SEP guidelines prohibit selling food and drinks with warning labels on school premises. The source discusses sales and does not mention gifts, so it is safest to ask the school what it allows before sending the order.",
+      },
+      {
+        q: "Which candies should young children avoid?",
+        a: "Hard candy, gummies and chewing gum are among the foods with the highest choking risk for young children, according to the Spanish Association of Pediatrics, which mentions them for children up to 3 to 6 years old.",
+      },
+      {
+        q: "Can I put each student's name on a box?",
+        a: "Yes. Tell us when requesting a quote if you want each student's name on their favor box, and we will work out how to organize the list with you. We send you a digital proof before production.",
+      },
+      {
+        q: "How long do they take to arrive?",
+        a: `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after you approve the proof, plus ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} days of national shipping, or ${PICKUP_EXTRA_DAYS} business day if you pick up at a Casa Blanca branch in Guadalajara.`,
+      },
+    ],
     relatedBlogSlugs: [en("que-poner-en-un-dulcero"), en("ideas-de-dulceros-para-fiesta-infantil"), en("dulceros-para-graduacion")],
   },
   {
