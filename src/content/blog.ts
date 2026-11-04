@@ -4709,79 +4709,83 @@ export const blogPosts: BlogPost[] = [
     slug: "cuando-enviar-invitaciones-de-boda",
     title: "Cuándo enviar invitaciones de boda y qué datos incluir",
     description:
-      "Cuándo enviar invitaciones de boda: plazos orientativos para el save the date, la invitación y la confirmación, y los datos que lleva cada pieza.",
+      "Cuándo enviar invitaciones de boda: plazos para el save the date, la invitación y el RSVP según Zola, Ceci y Greenvelope, y qué datos incluir.",
     category: "Guías",
     publishedAt: "2026-11-02",
+    modifiedAt: "2026-11-04",
     intro:
-      "Las invitaciones de boda no se mandan cuando uno se acuerda: dependen de la distancia, de los invitados que viajan y de la fecha en que el banquete necesita el conteo final. Aquí tienes rangos orientativos para el save the date, la invitación y la confirmación, un cronograma que puedes usar con tus clientes y los datos que debe llevar cada pieza.",
+      "Las guías no coinciden en una sola cifra para saber cuándo enviar invitaciones de boda: los plazos cambian si la boda es local o de destino y si hay invitados que viajan. Aquí tienes los rangos de cada fuente, con su nombre, una tabla para ordenar tu calendario de atrás hacia adelante y lo que debe llevar la invitación para que tus invitados respondan a tiempo.",
     sections: [
       {
-        heading: "Cuándo enviar invitaciones de boda: el plazo general",
+        heading: "Cuándo enviar invitaciones de boda: el plazo según cada fuente",
         body: [
-          "Lo más habitual en español es enviar las invitaciones formales con 3 o 4 meses de antelación. Si algunos invitados tienen que viajar, conviene adelantarlas a entre 4 y 6 meses. Son rangos orientativos, no una regla única, y las fuentes en inglés manejan plazos más cortos para bodas locales.",
-          "Para comparar: el calendario de Greenvelope, pensado para Estados Unidos, propone invitaciones 6 a 8 semanas antes en una boda estándar y 10 a 12 semanas en una boda de destino. Las invitaciones digitales siguen los mismos plazos que las impresas, aunque lleguen al instante. Si la boda es lejos de donde vive la mayoría o hay invitados de otro país, amplía el plazo para que reserven transporte y alojamiento y pidan días libres.",
+          "Para una boda local, Zola indica en su resumen que las invitaciones formales suelen enviarse de 6 a 8 semanas antes, pero su propio detalle habla de 3 a 4 meses. Como la misma fuente se contradice, toma un rango y no una cifra única, y adelántalo si hay invitados que viajan.",
+          "Para una boda de destino, una síntesis de guías de Paperlust, Joy, Greenvelope y 4over4 propone enviar la invitación de 10 a 12 semanas antes, o de 3 a 4 meses antes si no hubo save the date. Zola también recomienda sumar unas semanas cuando hay invitados que vienen del extranjero.",
         ],
       },
       {
         heading: "Cuándo enviar el save the date",
         body: [
-          "Bodas.net sugiere el save the date entre 7 y 9 meses antes, aunque otro artículo de la misma web dice de 10 a 12 meses. Greenvelope propone 6 a 8 meses en una boda estándar y 8 a 12 en una de destino. Como las fuentes no coinciden, trata estas cifras como un rango orientativo.",
-          "Se envía solo a los hogares que recibirán invitación. Puedes omitirlo si el compromiso es corto, la lista es pequeña y local, o todos ya conocen la fecha.",
+          "Zola recomienda enviar el save the date de 7 a 10 meses antes de la boda, y de 10 a 12 meses si cae en fin de semana largo o es de destino. Ceci New York pide como mínimo 6 meses, siempre con fecha y lugar confirmados para que los invitados planeen sus vuelos.",
+          "En bodas de destino, la síntesis de guías antes citada sube el rango a 8 a 12 meses antes, y algunas guías llegan hasta 14. Greenvelope sugiere omitir el save the date cuando faltan menos de unas 8 semanas y enviar directamente la invitación formal.",
         ],
       },
       {
         heading: "Qué fecha límite de confirmación poner",
         body: [
-          "La fecha límite de confirmación debe caer aproximadamente una semana antes de que el banquetero necesite el conteo final. Además, entre el día en que se recibe la invitación y esa fecha debe haber al menos 2 semanas. Así tus invitados tienen tiempo de responder y tú de ajustar mesas y cantidades.",
-          "Greenvelope recomienda un recordatorio una semana antes del límite y otro el día del límite, solo a quienes no han respondido, y un seguimiento personal 1 o 2 días después. Su calendario ubica la confirmación 3 a 4 semanas antes de la boda en una boda estándar y unas 6 semanas antes en una de destino.",
+          "Zola ubica la fecha límite de confirmación aproximadamente un mes antes de la boda, y suma unas semanas si hay invitados que viajan del extranjero. Greenvelope recomienda dejar al menos 3 semanas entre esa fecha y el evento, para poder cerrar con tus proveedores.",
+          "Ceci New York da 4 a 6 semanas antes en bodas locales y 6 a 8 en bodas de destino. La síntesis de guías de destino sugiere de 5 a 8 semanas, porque vuelos, bloqueo de hotel y lista final necesitan más margen. En su detalle para bodas locales, Zola habla de 3 a 4 semanas.",
         ],
       },
       {
         heading: "Un cronograma hacia atrás para planear el envío",
         body: [
-          "Empieza por la fecha de la boda y retrocede: primero el conteo final del banquete, luego la fecha límite de confirmación, luego el envío de la invitación y, antes de todo eso, el diseño y la cotización. Usa los rangos de esta guía y deja margen, porque la impresión y la entrega también toman tiempo.",
-          "Ejemplo orientativo con invitados locales: save the date de 7 a 9 meses antes, invitación impresa de 3 a 4 meses antes y confirmación al menos 2 semanas después de recibirla, siempre una semana antes del conteo final. Con invitados que viajan: save the date de 8 a 12 meses antes, invitación de 4 a 6 meses antes y confirmación unas 6 semanas antes de la boda. Es una combinación de las fuentes citadas, no una regla.",
-          "El diseño y la cotización de tus invitaciones tienen que quedar listos antes de la fecha de envío. En Yume te mandamos una prueba digital antes de producir, y nada se produce hasta que la apruebas. Si estás armando otros detalles para la misma boda, revisa nuestra guía de [mesa de dulces para boda](/blog/mesa-de-dulces-para-boda).",
+          "Parte de la fecha de la boda y retrocede: primero la fecha límite de confirmación, luego el envío de la invitación y, antes, el save the date. Con los rangos de Zola, una boda local con envío 8 semanas antes pide confirmar 3 o 4 semanas antes.",
+          "Esta tabla junta los rangos de cada fuente. No coinciden entre sí, así que elige un punto dentro de ellos según tu lista de invitados.",
         ],
+        table: {
+          headers: ["Pieza", "Boda local", "Boda de destino"],
+          rows: [
+            ["Save the date", "7 a 10 meses antes (Zola); mínimo 6 meses (Ceci New York)", "8 a 12 meses antes, algunas guías hasta 14 (síntesis de guías de destino)"],
+            ["Invitación", "6 a 8 semanas antes (resumen de Zola)", "10 a 12 semanas antes, o 3 a 4 meses si no hubo save the date (síntesis de guías de destino)"],
+            ["Confirmación", "3 a 4 semanas antes (Zola); 4 a 6 semanas antes (Ceci New York)", "5 a 8 semanas antes (síntesis de guías de destino); 6 a 8 semanas antes (Ceci New York)"],
+          ],
+        },
       },
       {
-        heading: "Qué datos incluir en cada pieza",
+        heading: "Qué debe llevar la invitación para recibir respuestas",
         body: [
-          "Cada pieza lleva lo suyo. El save the date: nombres, fecha, ciudad o destino, una línea que avise que la invitación formal llegará después y la web de boda si ya existe. La invitación suma hora, lugar, fecha límite de confirmación bien visible y medio para confirmar. La tarjeta de detalles reúne el resto.",
-          "En la invitación, si pides elegir menú o tienes preguntas especiales, inclúyelas junto a la fecha límite. En una boda de destino añade datos de viaje, bloque de habitaciones e itinerario del fin de semana. Para enviarlas necesitas el nombre de cada invitado y su dirección completa: calle, número, código postal, localidad y piso.",
-          "En la tarjeta de detalles puedes poner el código de vestimenta, la web o mesa de regalos y si la invitación incluye niños o acompañante. Si mandas las invitaciones por correo o mensajería, conviene llamar para confirmar que llegaron.",
+          "Según Zola, la invitación debe incluir una forma de responder, ya sea el sitio web de la boda o una tarjeta RSVP con sobre prepagado o con dirección, y una fecha límite de confirmación explícita. Sin esos dos elementos, tus invitados no sabrán cómo ni cuándo contestar.",
+          "Si solo unos pocos invitados vienen de otro país, Zola sugiere avisarles antes por mensaje o correo, aunque la invitación formal salga en el calendario normal. El save the date, según Ceci New York, se manda solo cuando la fecha y el lugar ya están confirmados.",
+          "Cuando tengas el calendario, define el diseño de tus invitaciones. En Yume te enviamos una prueba digital antes de producir, y nada se produce hasta que la apruebas. Si estás armando otros detalles de la misma boda, revisa nuestra guía de [mesa de dulces para boda](/blog/mesa-de-dulces-para-boda).",
         ],
       },
       {
         heading: "Un cronograma para wedding planners",
         body: [
-          "Si eres wedding planner, convierte estos rangos en un cronograma por cliente: fecha de la boda, conteo final del banquete, límite de confirmación, envío de la invitación y cierre del diseño. Marca aparte las bodas con invitados que viajan, porque su plazo es mayor. Con un solo documento tu cliente sabe qué decidir y cuándo.",
-          "En Yume trabajamos con wedding planners: diseño con prueba digital y trato directo por WhatsApp. Para los detalles de mesa, revisa la guía de [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara). Escríbenos por WhatsApp con tiempo para cotizar las invitaciones de tu boda o las de tu cliente.",
+          "Si eres wedding planner, arma por cliente una línea de tiempo con tres fechas: save the date, envío de la invitación y límite de confirmación. Marca aparte las bodas con invitados que viajan, porque las guías dan plazos más amplios para ellas.",
+          "En Yume trabajamos con wedding planners: diseño con prueba digital y trato directo por WhatsApp. Para los detalles de mesa de tu cliente, revisa la guía de [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara). Escríbenos por WhatsApp para cotizar las invitaciones de tu boda o las de tu cliente.",
         ],
       },
     ],
-    relatedProductSlugs: [],
+    relatedProductSlugs: ["stickers-vinil-impermeable"],
     relatedBlogSlugs: ["mesa-de-dulces-para-boda", "dulceros-personalizados-guadalajara"],
     faq: [
       {
         q: "¿Con cuánto tiempo se envían las invitaciones de boda?",
-        a: "Lo habitual en español es de 3 a 4 meses antes de la boda, y de 4 a 6 meses si los invitados tienen que viajar. Son rangos orientativos: según la fuente, los plazos cambian.",
-      },
-      {
-        q: "¿Cuándo se envía el save the date?",
-        a: "Bodas.net sugiere entre 7 y 9 meses antes, aunque otro artículo suyo dice de 10 a 12 meses. Greenvelope propone 6 a 8 meses en una boda estándar y 8 a 12 en una de destino. Las fuentes no coinciden, así que es un rango orientativo.",
-      },
-      {
-        q: "¿Las invitaciones digitales siguen otros plazos?",
-        a: "No. Siguen los mismos plazos que las impresas, aunque lleguen al instante. Si hay invitados de otro país o la boda es lejos de donde vive la mayoría, conviene ampliar el plazo.",
-      },
-      {
-        q: "¿Qué fecha límite de confirmación debo poner?",
-        a: "Una que caiga aproximadamente una semana antes de que el banquetero necesite el conteo final, con al menos 2 semanas entre recibir la invitación y esa fecha.",
+        a: "Depende de la fuente. Zola da 6 a 8 semanas en su resumen para una boda local, pero su detalle habla de 3 a 4 meses. Para bodas de destino, una síntesis de guías propone de 10 a 12 semanas.",
       },
       {
         q: "¿Se puede omitir el save the date?",
-        a: "Sí, si el compromiso es corto, la lista es pequeña y local, o todos ya conocen la fecha.",
+        a: "Sí. Greenvelope sugiere omitirlo cuando faltan menos de unas 8 semanas para la boda y enviar directamente la invitación formal.",
+      },
+      {
+        q: "¿Cuándo debe vencer la confirmación de asistencia?",
+        a: "Zola la ubica aproximadamente un mes antes de la boda. Greenvelope recomienda dejar al menos 3 semanas entre esa fecha y la boda para cerrar con los proveedores.",
+      },
+      {
+        q: "¿Qué necesita la invitación para que respondan?",
+        a: "Según Zola, una forma de responder (sitio web de la boda o tarjeta RSVP con sobre prepagado o con dirección) y una fecha límite de confirmación explícita.",
       },
       {
         q: "¿Cómo cotizo mis invitaciones de boda con Yume?",
@@ -4789,8 +4793,10 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     sources: [
-      { label: "Bodas.net: Consejos sobre el envío de las invitaciones de boda", url: "https://www.bodas.net/articulos/consejos-sobre-el-envio-de-las-invitaciones-de-boda--c565" },
+      { label: "Zola: When should you send out your wedding invitations", url: "https://zola.com/expert-advice/when-should-you-send-out-your-wedding-invitations" },
       { label: "Greenvelope: When to send wedding invitations and save the dates", url: "https://www.greenvelope.com/resources/when-to-send-wedding-invitations-and-save-the-dates" },
+      { label: "Ceci New York: A timeline for mailing save the dates, invitations and requesting RSVPs", url: "https://www.cecinewyork.com/blogs/ceci-style/ceci-tip-a-timeline-for-mailing-save-the-dates-invitations-and-requesting-rsvps" },
+      { label: "Paperlust: guía de bodas de destino", url: "https://paperlust.co/blog/?p=11511" },
     ],
   },
   {
