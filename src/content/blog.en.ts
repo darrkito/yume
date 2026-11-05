@@ -3630,15 +3630,15 @@ export const blogPostsEn: BlogPost[] = [
   },
   {
     slug: "personalized-company-posada-favors",
-    title: "Company posada favors: ideas for clients and your team",
-    metaTitle: "Personalized Corporate Christmas Gifts",
+    title: "Personalized candy boxes for company posadas",
+    metaTitle: "Personalized candy boxes for company posadas",
     description:
-      "Personalized corporate Christmas gifts: elegant and original posada ideas for clients and teams, and what to ask your accountant.",
+      "Personalized candy boxes for company posadas: how many to order, how to add your logo, when to order and what to check with your accountant.",
     category: "Guías",
     publishedAt: "2026-11-04",
-    modifiedAt: "2026-11-03",
+    modifiedAt: "2026-11-05",
     intro:
-      "Company posadas are coming, and with them the question of what to give your team and your clients. Company posada favors designed for that event are a simple option and feel thought out. Here are ideas by type of guest, a budget reference per person, a calendar to count back from the date and what to check with your accountant.",
+      "Company posadas are coming, and with them the question of what to give your team and your clients. Personalized candy boxes for company posadas, with each person's name or your logo, are a simple option and feel thought out. Here is how many to order, how the logo is applied, ideas by type of guest, a budget reference per person, a calendar to count back from the date and what to check with your accountant.",
     sections: [
       {
         heading: "Personalized corporate Christmas gifts: elegant and original ideas",
@@ -3647,6 +3647,27 @@ export const blogPostsEn: BlogPost[] = [
           "Many year-end gift guides focus on grocery baskets, kits, tumblers or gift cards. An event favor goes another way: it carries the person's name or your posada design, so it feels like part of the celebration and not a generic present.",
           "Our [personalized candy box](/en/products) is a lunch box style with a handle, arrives assembled and empty, and its personalization includes a name, a theme and your brand logo. For filling ideas, see [what to put in a party favor box](/en/blog/what-to-put-in-a-party-favor-box); for the season, see [personalized Christmas treat boxes](/en/blog/personalized-christmas-treat-boxes).",
           "If you prefer something that is not edible, [personalized vinyl stickers](/en/products) carry the design you send us, such as the posada name or the event illustration. Before production we send you a digital proof, and nothing is produced until you approve it.",
+        ],
+      },
+      {
+        heading: "Personalized candy boxes for company posadas: how many to order",
+        body: [
+          "To know how many candy boxes to order, start with the confirmed people, split team and clients, and add a margin for last-minute guests, new hires and replacements. It is a practical Yume rule, not a standard. The minimum order is 10 pieces, so you can fit the quantity to your list.",
+          "Count each group separately: the team gets a candy box with their name or the team name, and clients get one with your logo and the posada name. If your team works in several locations, define the list by location before quoting, because we ship across Mexico.",
+        ],
+      },
+      {
+        heading: "How to put your company logo on a candy box",
+        body: [
+          "Our candy box personalization includes a name, a theme and your brand logo. Send us your logo on WhatsApp along with the posada name; before production we send you a digital proof, and nothing is produced until you approve it.",
+          "If you want the candy box to match the decoration or invitation of your posada, send us a photo and we adapt the design to those colors. For the team you can use each person's name and, for clients, your logo with the posada name. See the options on the [personalized candy box](/en/products) page.",
+        ],
+      },
+      {
+        heading: "An order for a specific event, not an industrial order",
+        body: [
+          "Your order is for a specific event: a posada with its date, its guest list and its design. The candy box arrives assembled and empty, and you decide what goes inside. You can order the quantity you need for that celebration, starting at 10 pieces.",
+          "For filling ideas, see [what to put in a party favor box](/en/blog/what-to-put-in-a-party-favor-box). If your list mixes team and clients, message us on WhatsApp with the number of guests in each group and the posada date.",
         ],
       },
       {
@@ -3663,6 +3684,13 @@ export const blogPostsEn: BlogPost[] = [
           "The posada favor for your team is an extra and does not replace the aguinaldo. Article 87 of Mexico's Federal Labor Law sets the aguinaldo at no less than 15 days of salary, paid before December 20. Think of the favor as an extra with a name or team design.",
           "For an office posada, a candy box with each person's name, or with the team name and your logo, is a simple favor. If your team works in several locations, we ship across Mexico, so it helps to define the list of people before quoting.",
           "Before giving any gift to your team, check with your accountant how it is classified: as a benefit, income in kind or another concept. The way it is delivered and its commercial name do not determine it.",
+        ],
+      },
+      {
+        heading: "The posada is not mandatory: what to consider if the cost is shared",
+        body: [
+          "A workplace posada is not mandatory. According to a note from El Imparcial, the company cannot impose attendance or financial contributions, nor deduct money, affect the evaluation or condition benefits for not taking part. It is a press note, not the text of the law, so ask a specialist if in doubt.",
+          "If your company pays for the candy boxes, there is no forced contribution from staff and the candy box works as a favor given by the company. If you plan to share the cost, the note reminds that a contribution cannot be imposed.",
         ],
       },
       {
@@ -3694,6 +3722,18 @@ export const blogPostsEn: BlogPost[] = [
     relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable", "stickers-logo-personalizado"],
     relatedBlogSlugs: [BLOG_SLUG_EN["dulceros-navidenos-personalizados"], BLOG_SLUG_EN["que-poner-en-un-dulcero"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"]],
     faq: [
+      {
+        q: "How many candy boxes should I order for a company posada?",
+        a: "Count the confirmed people, split team and clients and add a margin for surprises. It is a practical Yume rule, not an industry standard. The minimum order is 10 pieces.",
+      },
+      {
+        q: "Can I put my company logo on the candy box?",
+        a: "Yes. Send us your logo on WhatsApp along with the posada name and we send you a digital proof before production. Nothing is produced until you approve it.",
+      },
+      {
+        q: "Is it mandatory to take part or contribute to the company posada?",
+        a: "According to a note from El Imparcial, the company cannot impose attendance or financial contributions, nor deduct money or affect the evaluation for not taking part. It is a press note, not the text of the law.",
+      },
       {
         q: "Does a posada favor replace the aguinaldo?",
         a: "No. Article 87 of Mexico's Federal Labor Law sets the aguinaldo at no less than 15 days of salary, paid before December 20, and the employer cannot cite economic difficulties to skip or reduce it. The posada favor is an extra.",
@@ -3732,6 +3772,7 @@ export const blogPostsEn: BlogPost[] = [
       { label: "Siempre al Día: deductibility of year-end expenses", url: "https://siemprealdia.co/mexico/fiscal/deducibilidad-de-gastos-de-fin-de-ano/" },
       { label: "Pluxee: ideal corporate gift guide", url: "https://www.pluxee.mx/blog/guia-regalo-corporativo-ideal/" },
       { label: "ContadorMX: how to make gifts to employees or clients deductible", url: "https://contadormx.com/como-hacer-deducibles-regalos-a-empleados-o-clientes/" },
+      { label: "El Imparcial: can they force me to chip in for my workplace posada?", url: "https://www.elimparcial.com/mexico/2025/12/01/pueden-obligarme-a-cooperar-para-la-posada-de-mi-trabajo-esto-dice-la-lft/" },
     ],
   },
   {

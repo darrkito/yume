@@ -4576,15 +4576,15 @@ export const blogPosts: BlogPost[] = [
   ...dulceroPosts,
   {
     slug: "detalles-posada-empresa-personalizados",
-    title: "Detalles para posada de empresa: clientes y equipo",
-    metaTitle: "Regalos corporativos de Navidad personalizados",
+    title: "Dulceros para posada de empresa personalizados",
+    metaTitle: "Dulceros para posada de empresa personalizados",
     description:
-      "Regalos corporativos de Navidad personalizados: ideas elegantes y originales para posadas, clientes y equipo, y qué consultar al contador.",
+      "Dulceros para posada de empresa personalizados: cuántos pedir, cómo poner tu logo, cuándo pedirlos y qué consultar con tu contador.",
     category: "Guías",
     publishedAt: "2026-11-04",
-    modifiedAt: "2026-11-03",
+    modifiedAt: "2026-11-05",
     intro:
-      "Las posadas de empresa se acercan y con ellas la pregunta de qué entregar a tu equipo y a tus clientes. Los detalles para posada de empresa con diseño hecho para ese evento son una opción sencilla y se sienten pensados. Aquí tienes ideas por tipo de invitado, una referencia de presupuesto por persona, un calendario para contar hacia atrás y lo que conviene consultar con tu contador.",
+      "Las posadas de empresa se acercan y con ellas la pregunta de qué entregar a tu equipo y a tus clientes. Los dulceros para posada de empresa personalizados, con el nombre de cada persona o tu logo, son una opción sencilla y se sienten pensados. Aquí tienes cuántos pedir, cómo se aplica el logo, ideas por tipo de invitado, una referencia de presupuesto por persona, un calendario para contar hacia atrás y lo que conviene consultar con tu contador.",
     sections: [
       {
         heading: "Regalos corporativos de Navidad personalizados: ideas elegantes y originales",
@@ -4593,6 +4593,27 @@ export const blogPosts: BlogPost[] = [
           "Muchas guías de regalos de fin de año se enfocan en despensas, kits, termos o tarjetas de regalo. Un detalle de evento va por otro lado: lleva el nombre de la persona o el diseño de tu posada, y por eso se siente parte de la celebración y no un obsequio genérico.",
           "Nuestro [dulcero personalizado](/productos/dulceros-personalizados) es tipo lunch box, con asa, llega armado y vacío, y su personalización incluye nombre, temática y logo de tu marca. Si buscas ideas de relleno, revisa [qué poner en un dulcero](/blog/que-poner-en-un-dulcero); para la temporada, mira los [dulceros navideños personalizados](/blog/dulceros-navidenos-personalizados).",
           "Si prefieres algo que no sea comestible, los [stickers de vinil personalizados](/productos/stickers-vinil-impermeable) llevan el diseño que tú nos mandes, como el nombre de la posada o la ilustración del evento. Antes de producir te enviamos una prueba digital, y nada se produce hasta que la apruebas.",
+        ],
+      },
+      {
+        heading: "Dulceros para posada de empresa personalizados: cuántos pedir",
+        body: [
+          "Para saber cuántos dulceros pedir, empieza por las personas confirmadas, separa equipo y clientes, y suma un margen para invitados de última hora, personal que se incorpore y reposición. Es una regla práctica de Yume, no un estándar. El pedido mínimo es de 10 piezas, así que puedes ajustar la cantidad a tu lista.",
+          "Cuenta cada grupo por separado: el equipo recibe un dulcero con su nombre o con el nombre del equipo, y los clientes uno con tu logo y el nombre de la posada. Si tu equipo está en varias ubicaciones, define la lista por ubicación antes de cotizar, porque enviamos a todo México.",
+        ],
+      },
+      {
+        heading: "Cómo poner el logo de tu empresa en un dulcero",
+        body: [
+          "Nuestro dulcero incluye en su personalización nombre, temática y el logo de tu marca. Envíanos tu logo por WhatsApp junto con el nombre de la posada; antes de producir te mandamos una prueba digital y nada se produce hasta que la apruebas.",
+          "Si quieres que el dulcero combine con la decoración o la invitación de tu posada, mándanos una foto y adaptamos el diseño a esos colores. Para el equipo puedes usar el nombre de cada persona y, para clientes, tu logo con el nombre de la posada. Revisa las opciones en la página del [dulcero personalizado](/productos/dulceros-personalizados).",
+        ],
+      },
+      {
+        heading: "Un pedido para un evento concreto, no un pedido industrial",
+        body: [
+          "Tu pedido es para un evento concreto: una posada con su fecha, su lista de invitados y su diseño. El dulcero llega armado y vacío, y tú decides qué lleva dentro. Puedes pedir la cantidad que necesitas para esa celebración, desde 10 piezas.",
+          "Para ideas de relleno revisa [qué poner en un dulcero](/blog/que-poner-en-un-dulcero). Si tu lista combina equipo y clientes, escríbenos por WhatsApp con el número de invitados de cada grupo y la fecha de la posada.",
         ],
       },
       {
@@ -4609,6 +4630,13 @@ export const blogPosts: BlogPost[] = [
           "El detalle de posada para tu equipo es un extra y no reemplaza el aguinaldo. La Ley Federal del Trabajo, en su artículo 87, fija el aguinaldo en al menos 15 días de salario, pagado antes del 20 de diciembre. Piensa el detalle como un extra con nombre o diseño del equipo.",
           "Para una posada en la oficina, un dulcero con el nombre de cada persona, o con el nombre del equipo y tu logo, es un detalle sencillo. Si tu equipo trabaja en varias ubicaciones, enviamos a todo México, así que conviene definir la lista de personas antes de cotizar.",
           "Antes de entregar cualquier regalo a tu equipo, consulta con tu contador cómo se clasifica: como prestación, ingreso en especie u otro concepto. La forma de entrega y el nombre comercial no lo determinan.",
+        ],
+      },
+      {
+        heading: "La posada no es obligatoria: qué considerar si el costo se reparte",
+        body: [
+          "La posada laboral no es obligatoria. Según una nota de El Imparcial, la empresa no puede imponer la asistencia ni la cooperación económica, ni descontar dinero, afectar la evaluación o condicionar prestaciones por no participar. Es una nota periodística, no el texto de la ley, así que ante dudas consulta a un especialista.",
+          "Si tu empresa paga los dulceros, no hay cooperación forzada del personal y el dulcero funciona como un detalle que da la empresa. Si piensas repartir el costo, la nota recuerda que la cooperación no se puede imponer.",
         ],
       },
       {
@@ -4640,6 +4668,18 @@ export const blogPosts: BlogPost[] = [
     relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable", "stickers-logo-personalizado"],
     relatedBlogSlugs: ["dulceros-navidenos-personalizados", "que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara"],
     faq: [
+      {
+        q: "¿Cuántos dulceros debo pedir para una posada de empresa?",
+        a: "Cuenta las personas confirmadas, separa equipo y clientes y suma un margen para imprevistos. Es una regla práctica de Yume, no un estándar de la industria. El pedido mínimo es de 10 piezas.",
+      },
+      {
+        q: "¿Puedo poner el logo de mi empresa en el dulcero?",
+        a: "Sí. Envíanos tu logo por WhatsApp junto con el nombre de la posada y te mandamos una prueba digital antes de producir. Nada se produce hasta que la apruebas.",
+      },
+      {
+        q: "¿Es obligatorio participar o cooperar en la posada de la empresa?",
+        a: "Según una nota de El Imparcial, la empresa no puede imponer la asistencia ni la cooperación económica, ni descontar dinero o afectar la evaluación por no participar. Es una nota periodística, no el texto de la ley.",
+      },
       {
         q: "¿El detalle de posada sustituye el aguinaldo?",
         a: "No. El artículo 87 de la Ley Federal del Trabajo fija el aguinaldo en al menos 15 días de salario, pagado antes del 20 de diciembre, y el patrón no puede alegar dificultades económicas para no pagarlo ni reducirlo. El detalle de posada es un extra.",
@@ -4678,6 +4718,7 @@ export const blogPosts: BlogPost[] = [
       { label: "Siempre al Día: deducibilidad de gastos de fin de año", url: "https://siemprealdia.co/mexico/fiscal/deducibilidad-de-gastos-de-fin-de-ano/" },
       { label: "Pluxee: guía de regalo corporativo ideal", url: "https://www.pluxee.mx/blog/guia-regalo-corporativo-ideal/" },
       { label: "ContadorMX: cómo hacer deducibles regalos a empleados o clientes", url: "https://contadormx.com/como-hacer-deducibles-regalos-a-empleados-o-clientes/" },
+      { label: "El Imparcial: ¿pueden obligarme a cooperar para la posada de mi trabajo?", url: "https://www.elimparcial.com/mexico/2025/12/01/pueden-obligarme-a-cooperar-para-la-posada-de-mi-trabajo-esto-dice-la-lft/" },
     ],
   },
   {
