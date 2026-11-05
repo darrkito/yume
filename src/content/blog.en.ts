@@ -115,50 +115,69 @@ export const blogPostsEn: BlogPost[] = [
     "slug": "google-review-plate-for-restaurants",
     "title": "Google review plate for restaurants",
     "metaTitle": "Google review plate for restaurants",
-    "description": "Find a place for an NFC and QR plate at your restaurant and invite honest feedback at the right moment.",
+    "description": "How to use a Google review plate for restaurants: where to place it, what the text can say, how to make the QR and ask without incentives.",
     "category": "Guides",
     "publishedAt": "2026-11-03",
-    "modifiedAt": "2026-11-03",
-    "intro": "A Google review plate for restaurants can bring the listing link closer to customers at a single location. Choose a visible place and invite honest feedback at the end of the experience without influencing the response.",
+    "modifiedAt": "2026-11-05",
+    "intro": "A Google review plate for restaurants brings your listing link closer to customers at a single location, right when they finish eating or pick up an order. This guide covers where to place it, how to generate and test the QR before printing, what text it can carry, how to choose between a plate and a stand, and how to reply to what comes in, following Google’s official help pages.",
     "sections": [
       {
-        "heading": "Where can a restaurant place the plate?",
+        "heading": "Where should a restaurant place the review plate?",
         "body": [
-          "A table, register or takeout collection area can make the link visible as customers finish. Choose an accessible location that does not obstruct service and check that both NFC and QR open the correct listing before inviting customers to use them."
+          "Place the plate where customers have a calm moment at the end of the visit: on the table, next to the register or at the takeout pickup area. Google suggests sharing the link or QR printed in the venue. Choose a visible spot that does not block service and test that it opens your listing.",
+          "Each spot plays a different role. On the table, the plate sits with customers while they linger and they decide whether to scan it. At the register, it is visible while the bill is paid. At the takeout pickup area, it reaches people who never sat down. You can combine two spots if your service allows it, always using the same link.",
+          "Google also suggests sharing the link on receipts, in thank-you emails or at the end of a chat, and lets you send the request by email, WhatsApp or Facebook. So the NFC review plate is one channel among several, not the only one, and the same link works in all of them."
         ]
       },
       {
-        "heading": "When should you ask for a review?",
+        "heading": "How do you generate the review QR before printing?",
         "body": [
-          "When closing the bill or handing over a takeout order, invite customers politely and let them decide whether to participate. Avoid interrupting their meal or insisting. They can open the link at that moment or choose not to write anything."
+          "Generate the link and QR code from a computer, not from your phone. Open your business profile, choose Read reviews, then Get more reviews, and copy the link or save the QR image with a right click. Then scan it with your phone and confirm it opens your restaurant.",
+          "The steps, in order: 1) open your Google business profile from a computer; 2) go to Read reviews; 3) choose Get more reviews; 4) copy the link, or right-click the QR and choose Save image as.",
+          "The exact button name can change depending on the profile. If you do not see “Get more reviews”, look for an equivalent option inside Read reviews. Run the scan test before sending anything to print: it is the simplest way to avoid leaving a code on the table that does not open your listing."
+        ]
+      },
+      {
+        "heading": "What text can the review plate carry?",
+        "body": [
+          "Use a neutral, friendly invitation, such as “If you enjoyed your visit, tell us about your experience.” Do not offer discounts, desserts or free products in exchange for a review, because Google prohibits incentives and treats them as deceptive content. Do not ask for a number of stars either: ask for an honest opinion.",
+          "Other phrases that work without conditions: “Your opinion helps us improve” or “Tell us how it went.” All of them invite without promising anything in return and without steering what the person writes.",
+          "Offer the link to all your real customers, not only those who seem happy."
         ]
       },
       {
         "heading": "Should you choose a plate or a stand?",
         "body": [
-          "The plate includes adhesive and measures 12 × 12 cm; the stand sits upright on a surface. The plate costs MXN $140 and the stand MXN $200. Both have NFC and QR, with a one-time payment and orders from one piece."
-        ]
-      },
-      {
-        "heading": "How can you ask without influencing feedback?",
-        "body": [
-          "Offer the link to all real customers and request an honest opinion without suggesting stars. Do not offer discounts or free products in exchange: Google prohibits review incentives. Accept positive and negative comments alike and avoid putting pressure on anyone."
+          "The plate includes adhesive and measures 12 × 12 cm; the stand sits upright on a surface. The plate costs MXN $140 and the stand MXN $200. Both have NFC and QR, with a one-time payment and orders from one piece.",
+          "The [NFC review plate](/productos/placa-resena-google-nfc) is fixed at one spot in the venue; the [NFC review stand](/productos/stand-resena-google-nfc) stands upright, for example on a table or at the counter. Choose based on where you want it and whether you prefer to fix it or move it.",
+          "If cost is your concern, see the guide on [one-time price versus subscription](/en/blog/google-review-plates-one-time-price-vs-subscription)."
         ]
       },
       {
         "heading": "How is the piece prepared for your restaurant?",
         "body": [
-          "Share your restaurant listing’s review link when placing the order. Yume configures the NFC and QR with that link before shipping. Choose white or black and use the piece without an app or subscription; it does not include a dashboard."
+          "Share your restaurant listing’s review link when placing the order. Yume configures the NFC and QR with that link before shipping. Choose white or black, and use the piece without an app or subscription, so you pay no monthly fee for it.",
+          "When it arrives, scan the QR and tap your phone to confirm that both open the correct listing before placing it in front of customers. It does not include a dashboard."
         ]
       },
       {
-        "heading": "What should you do after receiving a review?",
+        "heading": "How should you reply to the reviews you receive?",
         "body": [
-          "Read feedback carefully and thank the customer briefly and professionally. If someone raises a problem, listen and offer an appropriate channel for follow-up without arguing publicly. Check that your listing’s contact details and opening hours are still accurate as well."
+          "Reply with brief, clear and polite messages, without offers or promotions. Avoid generic thanks, use the customer’s name and respond quickly. If the issue is complex, move it to a private channel without exposing customer data. A review that violates Google’s policies can be reported.",
+          "Replying is part of the process: the plate helps opinions arrive and your answer shows how you serve customers. If someone points out a problem, listen, say thanks and offer a channel for follow-up without arguing in public.",
+          "Check also that your listing’s contact details and opening hours are still accurate."
         ]
       }
     ],
     "faq": [
+      {
+        "q": "What does a customer need to leave a review?",
+        "a": "A Google account, even if it is not Gmail. Someone without an account will not be able to leave a review after scanning the plate."
+      },
+      {
+        "q": "Can I offer something so a customer removes a negative review?",
+        "a": "No. Google also prohibits offering incentives to change a review or to remove a negative one."
+      },
       {
         "q": "Can I order one piece?",
         "a": "Yes. You can order one plate or stand; both have NFC and QR configured with your review link before shipping."
@@ -173,14 +192,18 @@ export const blogPostsEn: BlogPost[] = [
       "stand-resena-google-nfc"
     ],
     "relatedBlogSlugs": [
-      "set-up-google-business-profile-and-ask-for-reviews",
-      "google-review-plates-one-time-price-vs-subscription",
-      "how-to-get-more-google-reviews-nfc-qr",
-      "nfc-plate-vs-printed-qr-code-for-reviews",
-      "how-to-use-your-yume-google-review-plate"
+      "google-review-plates-one-time-price-vs-subscription"
     ],
     "quoteMessage": "Hi, I am interested in the NFC plate and stand for Google reviews.",
     "sources": [
+      {
+        "label": "Google: get your review link and QR code",
+        "url": "https://support.google.com/business/answer/16816815?hl=en"
+      },
+      {
+        "label": "Google: reply to reviews and incentives policy",
+        "url": "https://support.google.com/business/answer/7035772"
+      },
       {
         "label": "Google: tips to get reviews",
         "url": "https://support.google.com/business/answer/3474122?hl=en"
