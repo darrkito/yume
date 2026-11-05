@@ -5498,6 +5498,96 @@ export const blogPosts: BlogPost[] = [
       { label: "MOO: ideas de obsequios a clientes", url: "https://www.moo.com/blog/es/inspiracion/ideas-para-obsequios-a-clientes" },
     ],
   },
+  {
+    slug: "guia-wedding-planners-detalles-personalizados-guadalajara",
+    title: "Proveedor de detalles personalizados para wedding planners en Guadalajara",
+    metaTitle: "Proveedor de detalles personalizados para wedding planners",
+    description:
+      "Cómo trabajar con un proveedor de detalles personalizados en Guadalajara: cotización, pruebas digitales y piezas para bodas.",
+    category: "Guías",
+    publishedAt: "2026-11-05",
+    intro:
+      "Coordinas varias bodas y necesitas un proveedor que entregue la misma calidad en cada una. Esta guía te explica cómo pedir cotización, aprobar pruebas digitales, fijar fechas y reunir dulceros, stickers y tatuajes temporales en una misma línea visual para tus clientes en Guadalajara, Zapopan y todo México.",
+    sections: [
+      {
+        heading: "Qué debe ofrecer un proveedor de detalles personalizados para wedding planners",
+        body: [
+          "Un proveedor de detalles personalizados para wedding planners debe darte un proceso claro: cotización por evento, diseño con prueba digital antes de producir, comunicación directa y piezas coherentes entre sí. Tu volumen es por boda, no industrial, así que lo importante es que cada evento se vea planeado y que sepas qué esperar en cada paso.",
+          "El directorio de detalles de bodas de Bodas.net en Guadalajara reúne talleres de regalos personalizados, pero está pensado como directorio de pareja a proveedor. Esta guía es para ti, que coordinas varias bodas. Si quieres ver primero una de las piezas, revisa nuestros [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara).",
+        ],
+      },
+      {
+        heading: "Cómo pedir una cotización por evento",
+        body: [
+          "Para cotizar una boda escríbenos por WhatsApp con los datos básicos del evento: fecha, ciudad, número de invitados, paleta de colores, las piezas que te interesan y los textos o nombres que llevarán. Con eso podemos orientarte sobre cantidades y mínimos, y avisarte si algo necesita confirmarse antes de producir.",
+          "Los mínimos publicados son de 10 piezas para dulceros y de 40 piezas para [stickers de vinil personalizados](/productos/stickers-vinil-impermeable). Cuéntanos tu evento completo y cotizamos las piezas juntas.",
+        ],
+      },
+      {
+        heading: "Pruebas digitales y aprobación de textos",
+        body: [
+          "Para dulceros y stickers te enviamos una prueba digital antes de producir, y nada se produce sin tu aprobación. Revisa en ella nombres, fechas, ortografía y colores con la pareja, porque ese es el punto de control del pedido. Conviene que una sola persona, tú o la pareja, tenga la última palabra.",
+          "En los stickers de vinil, la prueba llega normalmente en un máximo de 24 horas después del pago e incluye hasta 2 rondas de ajustes.",
+        ],
+      },
+      {
+        heading: "Fechas límite: cuándo cerrar textos y cambios",
+        body: [
+          "Cierra los textos y la aprobación con margen, no la semana de la boda. Una guía de planificación de La Bastilla recomienda repasar los detalles con todos los proveedores aproximadamente un mes antes del evento. Usa ese punto como fecha de referencia para que ningún cambio de última hora te comprometa la entrega.",
+          "Los plazos de producción y envío de cada pieza te los confirmamos por WhatsApp al cotizar, una vez que conocemos la fecha de tu evento.",
+        ],
+      },
+      {
+        heading: "Un paquete coherente: dulceros, stickers y tatuajes temporales",
+        body: [
+          "Cuando los dulceros, los stickers y los tatuajes temporales comparten paleta, tipografía y textos, la boda se ve planeada de principio a fin. Diseñarlos juntos para un mismo evento te da una identidad visual consistente, y tú coordinas un solo proveedor en lugar de varios.",
+          "El dulcero llega armado y vacío, con nombre y temática; tú o la pareja deciden qué lleva dentro. Para ideas de relleno, revisa [qué poner en un dulcero](/blog/que-poner-en-un-dulcero). Los tatuajes temporales para eventos se cotizan por WhatsApp.",
+        ],
+      },
+      {
+        heading: "Qué pedir por escrito a tu proveedor",
+        body: [
+          "Pide por escrito lo que acordaron: piezas y cantidades, textos finales, número de pruebas digitales incluidas, fecha límite de cambios, forma de pago, plazo de producción y forma de entrega. Un resumen por WhatsApp o correo evita malentendidos y te sirve de respaldo cuando la pareja cambia de opinión.",
+          "Una reseña de un proveedor de detalles de boda en Bodas.net elogia la entrega puntual y el empaque cuidado, dos puntos que conviene acordar de antemano.",
+        ],
+        table: {
+          headers: ["Qué confirmar", "Para qué sirve"],
+          rows: [
+            ["Piezas y cantidades", "Que el pedido cubra a todos los invitados"],
+            ["Textos finales", "Evitar errores en nombres y fechas"],
+            ["Pruebas digitales y ajustes", "Saber cuántas revisiones hay"],
+            ["Fecha límite de cambios", "Proteger la entrega"],
+            ["Pago, plazo y entrega", "Coordinar tu calendario del evento"],
+          ],
+        },
+      },
+      {
+        heading: "Cómo empezar con tu próxima boda",
+        body: [
+          "Cuéntanos la fecha, el número de invitados y la paleta de tu próxima boda, y armamos una cotización de las piezas que necesites. Si trabajas varias bodas al año, podemos mantener un criterio de diseño y comunicación constante contigo. Escríbenos por WhatsApp desde el botón de cotización al final de esta página.",
+        ],
+      },
+    ],
+    relatedProductSlugs: [],
+    relatedBlogSlugs: ["dulceros-personalizados-guadalajara", "que-poner-en-un-dulcero"],
+    quoteMessage:
+      "Hola, soy wedding planner y quiero cotizar detalles personalizados para una boda: dulceros, stickers y tatuajes temporales.",
+    sources: [
+      { label: "Bodas.net: detalles de bodas en Guadalajara", url: "https://www.bodas.net/bodas/proveedores/detalles-de-bodas/guadalajara" },
+      { label: "Bodas.net: reseña de Detalle & Memoria", url: "https://www.bodas.net/detalles-de-bodas/detalle&memoria--e256961" },
+      { label: "La Bastilla: libro de planificación de bodas", url: "https://miboda.labastilla.com/sites/all/themes/personalizado/img/Libro_Bodas_La_Bastilla.pdf" },
+    ],
+    faq: [
+      {
+        q: "¿Envían las piezas fuera de Guadalajara?",
+        a: "Sí, enviamos a todo México. Cuéntanos la ciudad de tu evento por WhatsApp y te confirmamos la entrega.",
+      },
+      {
+        q: "¿Se pueden cotizar tatuajes temporales para una boda?",
+        a: "Sí. Los tatuajes temporales para eventos se cotizan por WhatsApp junto con las demás piezas de tu evento.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string) {

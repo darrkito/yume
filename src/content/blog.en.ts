@@ -4567,6 +4567,95 @@ export const blogPostsEn: BlogPost[] = [
       { label: "MOO: client gift ideas (in Spanish)", url: "https://www.moo.com/blog/es/inspiracion/ideas-para-obsequios-a-clientes" },
     ],
   },
+  {
+    slug: "wedding-planner-custom-details-guadalajara",
+    title: "Custom details supplier for wedding planners in Guadalajara",
+    metaTitle: "Custom details supplier for wedding planners",
+    description:
+      "How to work with a custom details supplier in Guadalajara: quotes, digital proofs and matching pieces for weddings.",
+    category: "Guides",
+    publishedAt: "2026-11-05",
+    intro:
+      "You coordinate several weddings and need a supplier who delivers the same quality every time. This guide explains how to request a quote, approve digital proofs, set deadlines and bring candy boxes, stickers and temporary tattoos together in one visual line for your clients in Guadalajara, Zapopan and all of Mexico.",
+    sections: [
+      {
+        heading: "What a custom details supplier for wedding planners should offer",
+        body: [
+          "A custom details supplier for wedding planners should give you a clear process: a quote per event, a design with a digital proof before production, direct communication and pieces that match each other. Your volume is per wedding, not industrial, so what matters is that every event looks planned and you know what to expect at each step.",
+          "The wedding details directory on Bodas.net for Guadalajara lists custom gift workshops, but it is built as a couple-to-supplier directory. This guide is for you, the planner who coordinates several weddings. To see one of the pieces first, check our [custom candy boxes in Guadalajara](/blog/dulceros-personalizados-guadalajara).",
+        ],
+      },
+      {
+        heading: "How to request a quote per event",
+        body: [
+          "To quote a wedding, message us on WhatsApp with the basics of the event: date, city, number of guests, color palette, the pieces you are interested in and the texts or names they will carry. With that we can guide you on quantities and minimums, and tell you if anything needs confirming before production.",
+          "Published minimums are 10 pieces for candy boxes and 40 pieces for [custom vinyl stickers](/productos/stickers-vinil-impermeable). Tell us about your whole event and we quote the pieces together.",
+        ],
+      },
+      {
+        heading: "Digital proofs and text approval",
+        body: [
+          "For candy boxes and stickers we send a digital proof before production, and nothing is produced without your approval. Check names, dates, spelling and colors with the couple, because that is the control point of the order. It helps if one person, you or the couple, has the final say.",
+          "For vinyl stickers, the proof normally arrives within 24 hours after payment and includes up to 2 rounds of adjustments.",
+        ],
+      },
+      {
+        heading: "Deadlines: when to lock texts and changes",
+        body: [
+          "Lock texts and approval with room to spare, not the week of the wedding. A La Bastilla planning guide recommends reviewing details with all suppliers about one month before the event. Use that as a reference date so a last-minute change does not put your delivery at risk.",
+          "We confirm production and shipping times for each piece over WhatsApp when we quote, once we know your event date.",
+        ],
+      },
+      {
+        heading: "A matching set: candy boxes, stickers and temporary tattoos",
+        body: [
+          "When candy boxes, stickers and temporary tattoos share a palette, typography and texts, the wedding looks planned from start to finish. Designing them together for one event gives you a consistent visual identity, and you coordinate a single supplier instead of several.",
+          "The candy box arrives assembled and empty, with a name and theme; you or the couple decide what goes inside. For filling ideas, see [what to put in a candy box](/blog/que-poner-en-un-dulcero). Temporary tattoos for events are quoted over WhatsApp.",
+        ],
+      },
+      {
+        heading: "What to ask your supplier to put in writing",
+        body: [
+          "Ask for what you agreed in writing: pieces and quantities, final texts, number of digital proofs included, change deadline, payment method, production time and delivery method. A summary over WhatsApp or email prevents misunderstandings and gives you backup when the couple changes their mind.",
+          "A review of a wedding details supplier on Bodas.net praises punctual delivery and careful packaging, two points worth agreeing on in advance.",
+        ],
+        table: {
+          headers: ["What to confirm", "Why it matters"],
+          rows: [
+            ["Pieces and quantities", "The order covers every guest"],
+            ["Final texts", "Avoid mistakes in names and dates"],
+            ["Digital proofs and adjustments", "Know how many revisions there are"],
+            ["Change deadline", "Protect the delivery"],
+            ["Payment, timing and delivery", "Fit your event calendar"],
+          ],
+        },
+      },
+      {
+        heading: "How to start with your next wedding",
+        body: [
+          "Tell us the date, the number of guests and the palette of your next wedding, and we will put together a quote for the pieces you need. If you work several weddings a year, we can keep a consistent design and communication approach with you. Message us on WhatsApp from the quote button at the end of this page.",
+        ],
+      },
+    ],
+    relatedProductSlugs: [],
+    quoteMessage:
+      "Hi, I'm a wedding planner and I'd like a quote for custom wedding details: candy boxes, stickers and temporary tattoos.",
+    sources: [
+      { label: "Bodas.net: wedding details in Guadalajara (in Spanish)", url: "https://www.bodas.net/bodas/proveedores/detalles-de-bodas/guadalajara" },
+      { label: "Bodas.net: Detalle & Memoria review (in Spanish)", url: "https://www.bodas.net/detalles-de-bodas/detalle&memoria--e256961" },
+      { label: "La Bastilla: wedding planning book (in Spanish)", url: "https://miboda.labastilla.com/sites/all/themes/personalizado/img/Libro_Bodas_La_Bastilla.pdf" },
+    ],
+    faq: [
+      {
+        q: "Do you ship pieces outside Guadalajara?",
+        a: "Yes, we ship all over Mexico. Tell us your event city over WhatsApp and we confirm delivery.",
+      },
+      {
+        q: "Can I get a quote for temporary tattoos for a wedding?",
+        a: "Yes. Temporary tattoos for events are quoted over WhatsApp together with the rest of your event pieces.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPostEn(slug: string) {
