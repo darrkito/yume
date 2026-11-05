@@ -10,46 +10,66 @@ export const blogPostsEn: BlogPost[] = [
     "slug": "google-review-plate-for-medical-practices",
     "title": "Google review plate for medical practices",
     "metaTitle": "Google review plate for medical practices",
-    "description": "Find a place for an NFC and QR review plate and invite patients to share honest feedback respectfully.",
+    "description": "How to use a Google review plate in your medical practice: where to place it, how to get the QR, what not to offer patients and how to reply.",
     "category": "Guides",
     "publishedAt": "2026-11-03",
-    "modifiedAt": "2026-11-03",
-    "intro": "A Google review plate for medical practices makes the listing easier for each patient to find, without requiring anyone to write. A discreet invitation and care for patient privacy should accompany every request.",
+    "modifiedAt": "2026-11-05",
+    "intro": "A Google review plate for medical practices makes the listing easier for each patient to find, without requiring anyone to write. This guide explains how to get the link and QR, where to place the plate, how to invite reviews without incentives, what Google may do if it detects fake engagement and how to reply without exposing health information.",
     "sections": [
+      {
+        "heading": "What is a Google review plate for medical practices?",
+        "body": [
+          "It is a physical piece with NFC and a QR code that takes the patient straight to the review box on your practice's Google listing. It does not write or rate for anyone: it only removes steps for people who choose to comment. It goes at reception or in the waiting room.",
+          "A plate does not guarantee more reviews: each person decides whether to comment and what to write. What it does is keep the link in sight inside your practice, so anyone who wants to share their experience does not have to search for your listing or remember its exact name."
+        ]
+      },
+      {
+        "heading": "How do you get the Google review link and QR?",
+        "body": [
+          "Sign in to your Business Profile on a computer, open “Read reviews” and choose “Get more reviews”. There you can copy the link or download the QR with “Save image as”. According to Google, the QR can only be generated from a desktop browser, not from a phone.",
+          "Some third-party sites, not official ones, say the short link usually ends in /review and that a QR made with the profile link opens the full listing instead of the review box. Google does not document that format and it could change, so test the link before producing the plate."
+        ]
+      },
       {
         "heading": "Where can a practice place the plate?",
         "body": [
-          "Reception and the waiting room are practical places if the piece is visible without blocking access. Choose a surface patients can reach and test the link with a phone. The plate includes adhesive; the stand sits upright on a counter."
+          "Reception and the waiting room are practical places if the piece is clearly visible without blocking access. Choose a surface patients can reach and test the link with a phone. The plate includes adhesive; the stand sits upright on a counter.",
+          "Google suggests sharing the link or QR on receipts, thank-you emails, chat or a QR printed at your location, and also by email, WhatsApp or Facebook. In a practice, that can mean the plate at reception and, if you prefer, the same link sent by WhatsApp after the appointment."
         ]
       },
       {
         "heading": "When should you invite patients to review?",
         "body": [
-          "At the end of a visit or on leaving reception, offer the link discreetly and let each person decide. Avoid interrupting a private conversation or insisting if someone declines. Patients can also choose to respond later on their own phone."
+          "At the end of a visit or on leaving reception, offer the link discreetly and politely, and let each person decide. Avoid interrupting a private conversation or insisting if someone declines. Patients can also choose to respond later on their own phone.",
+          "Ask all patients, not only those who seem satisfied, so the reviews reflect the real care your practice provides. A short, friendly invitation, repeated with the same ease for everyone, works better than a long speech at the counter."
         ]
       },
       {
         "heading": "How can you ask without pressure or incentives?",
         "body": [
-          "Ask all patients for an honest opinion, without suggesting a rating or offering discounts or gifts. For example: “If you wish, you can share your experience on Google.” According to Google, incentives in exchange for reviews are prohibited and count as fake engagement."
+          "Ask all patients for an honest opinion, without suggesting a rating or offering discounts or gifts. For example: “If you wish, you can share your experience on Google.” According to Google, incentives in exchange for reviews are prohibited and count as fake engagement.",
+          "The same Google policy covers posting, changing or deleting negative reviews. If Google detects fake engagement, it may restrict the profile: block new reviews or ratings for a time, temporarily unpublish existing reviews or show a public notice. It emails you first and the restriction can be appealed."
         ]
       },
       {
         "heading": "How should you respond while protecting privacy?",
         "body": [
-          "Thank the person in general terms and never disclose patient health information or details of their care in a public reply. If follow-up is needed, offer an appropriate private channel without publicly confirming personal information or the circumstances of a visit."
+          "Thank the person in general terms and never disclose patient health information or details of their care in a public reply. If follow-up is needed, offer an appropriate private channel without publicly confirming personal information or the circumstances of a visit.",
+          "The plate only invites feedback. Do not use it to promise results or to highlight patient cases: a short, courteous reply without clinical details protects the privacy of the person who wrote and your own."
         ]
       },
       {
         "heading": "Which format can a practice use?",
         "body": [
-          "The Yume plate measures 12 × 12 cm and costs MXN $140; the stand costs MXN $200. Both have NFC and QR and come in white or black. Payment is one-time and you can order one piece without an app or subscription."
+          "Yume offers two formats: the plate, with adhesive, and the stand, which sits upright on a counter. Both have NFC and QR, come in white or black and can be ordered one piece at a time, with no app or subscription. The current price is on each product page.",
+          "If your reception has little wall space, the stand on the counter means nothing needs to be stuck on. If you prefer a fixed piece next to the door or the front desk window, the plate with adhesive is the one that stays in place."
         ]
       },
       {
-        "heading": "How do you prepare the link and other materials?",
+        "heading": "What should you check before ordering the plate?",
         "body": [
-          "Check that the listing belongs to your practice and share its review link with Yume: NFC and QR are configured before shipping. To complement your practice’s identification materials, see our practical guide to business cards for your practice as well."
+          "Before production, confirm that the listing belongs to your practice, that the link opens the review box and not just the profile, and that you tested it on an iPhone and an Android. Then send the link to Yume so the NFC and QR are configured before shipping.",
+          "Run the test on someone else's phone, without your account signed in, to see what a patient will see. If something does not open as expected, fix the link before ordering the piece."
         ]
       }
     ],
@@ -61,29 +81,33 @@ export const blogPostsEn: BlogPost[] = [
       {
         "q": "Does the piece guarantee more reviews?",
         "a": "No. It makes the link easier to reach; each person decides whether to leave feedback and what to write."
+      },
+      {
+        "q": "Can I give a discount in exchange for a review?",
+        "a": "No. Google prohibits offering free or discounted products or services in exchange for reviews and treats it as fake engagement."
+      },
+      {
+        "q": "Can I generate the QR from my phone?",
+        "a": "According to Google, the QR can only be generated from a desktop browser. From there you download it with the “Save image as” option."
+      },
+      {
+        "q": "What can happen if Google detects fake engagement?",
+        "a": "Google may restrict the profile: block new reviews or ratings for a time, temporarily unpublish existing reviews or show a notice to the public. It emails you first and you can appeal."
       }
     ],
     "relatedProductSlugs": [
       "placa-resena-google-nfc",
       "stand-resena-google-nfc"
     ],
-    "relatedBlogSlugs": [
-      "set-up-google-business-profile-and-ask-for-reviews",
-      "google-review-plates-one-time-price-vs-subscription",
-      "how-to-get-more-google-reviews-nfc-qr",
-      "nfc-plate-vs-printed-qr-code-for-reviews",
-      "how-to-use-your-yume-google-review-plate",
-      "business-cards-for-your-practice"
-    ],
     "quoteMessage": "Hi, I am interested in the NFC plate and stand for Google reviews.",
     "sources": [
       {
-        "label": "Google: tips to get reviews",
-        "url": "https://support.google.com/business/answer/3474122?hl=en"
+        "label": "Google: reviews, fake engagement and how to get more reviews",
+        "url": "https://support.google.com/business/answer/16816815?hl=en"
       },
       {
-        "label": "Google: prohibited and restricted content",
-        "url": "https://support.google.com/business/answer/7400114?hl=en"
+        "label": "Google: profile restrictions for fake engagement",
+        "url": "https://support.google.com/business/answer/14114287"
       }
     ]
   },
