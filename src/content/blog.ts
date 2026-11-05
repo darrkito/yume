@@ -5051,24 +5051,23 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "dulceros-para-xv-anos-elegantes",
     title: "Dulceros para XV años elegantes: ideas y cantidades",
-    metaTitle: "Recuerdos para XV años modernos: dulceros elegantes",
     description:
-      "Cómo elegir dulceros para XV años elegantes: qué los hace finos, cuántos pedir, qué poner dentro y cómo pedir el diseño con prueba digital.",
+      "Dulceros para XV años elegantes: paleta, cantidades de dulce por invitado, montaje de la mesa y cómo pedirlos con prueba digital.",
     category: "Guías",
     publishedAt: "2026-11-03",
-    modifiedAt: "2026-11-03",
+    modifiedAt: "2026-11-05",
     intro:
-      "Una mesa de XV años se recuerda por los detalles, y el dulcero es lo que cada invitado se lleva a casa. Aquí tienes cómo elegir dulceros para XV años elegantes: qué los hace verse finos, cómo coordinarlos con la fiesta, cuántos pedir y qué poner dentro. Está pensado para mamás, papás y planners que quieren una mesa que se vea planeada.",
+      "Una mesa de XV años se recuerda por los detalles, y el dulcero es lo que cada invitado se lleva a casa. Aquí tienes cómo elegir dulceros para XV años elegantes: qué los hace verse finos, cómo coordinarlos con la fiesta, cuántos pedir, cuántos dulces calcular por invitado y cómo montar la mesa de dulces. Está pensado para mamás, papás y planners que quieren una mesa que se vea planeada.",
     sections: [
       {
-        heading: "Recuerdos para XV años y 15 años modernos: dulceros elegantes",
+        heading: "Dulceros para XV años elegantes: qué los hace finos",
         body: [
           "Un dulcero de XV años se ve elegante cuando usa pocos colores, un nombre legible y una tipografía discreta, y cuando combina con la invitación, el pastel y la decoración de la mesa. La elegancia viene de la coordinación y del detalle personalizado, no de llenarlo de adornos ni de usar un kit genérico.",
           "Al buscar mesas de dulces para XV años en un marketplace aparecen sobre todo kits de mesa vintage en MDF, de precio bajo y para armar, y cajitas transparentes que se venden en paquetes de 20, 40 o 50 piezas. Son opciones de volumen. Un dulcero con el nombre de la quinceañera y los colores de su fiesta es otro tipo de detalle.",
         ],
       },
       {
-        heading: "Dulceros para XV años elegantes: paleta, nombre y tipografía",
+        heading: "Paleta, nombre y tipografía para recuerdos de XV años modernos",
         body: [
           "Elige una paleta corta tomada de la invitación o del vestido, pon el nombre de la quinceañera en una tipografía clara y deja espacio vacío alrededor. Si nos mandas una foto de la invitación o de la decoración, adaptamos el diseño a esos colores, y antes de producir recibes una prueba digital.",
           "Nuestro dulcero es tipo lunch box, con asa, y la personalización incluye el nombre y la temática. Para un XV, la temática puede ser tan sencilla como los colores de la fiesta con el nombre de la quinceañera, sin más elementos.",
@@ -5084,6 +5083,31 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
+        heading: "Mesa de dulces para XV años: gramos por invitado",
+        body: [
+          "Una regla práctica de candy bar, tomada de guías en inglés para bodas, calcula entre un cuarto y media libra de dulce por invitado, unos 115 a 225 gramos. Es una referencia orientativa, no una norma de XV años: se ajusta a la baja si hay pastel y a la alza si hay muchos niños.",
+          "La tabla multiplica ese rango por el número de invitados. Los totales son aproximados: redondea según tu fiesta.",
+          "Como ejemplo de una tienda, una guía de candy bar para 24 a 30 personas propone entre 5 y 7 kg de dulces surtidos, con 8 recipientes de distintos tamaños, 3 pinzas o palas y marcadores para identificar cada dulce. Es un caso concreto, no una regla.",
+          "Compra de más antes que de menos si la mesa va a estar abierta mucho tiempo, y baja la cantidad si ya habrá pastel u otros postres.",
+        ],
+        table: {
+          headers: ["Invitados", "Dulce en total (guía)"],
+          rows: [
+            ["30", "3.5 a 6.8 kg"],
+            ["50", "5.8 a 11.3 kg"],
+            ["80", "9.2 a 18 kg"],
+            ["100", "11.5 a 22.5 kg"],
+          ],
+        },
+      },
+      {
+        heading: "Montaje de la mesa de dulces: mesa, alturas y color",
+        body: [
+          "Una mesa de unos 80 por 120 a 160 centímetros alcanza para 30 a 40 personas, según una guía de montaje de La Fiesta de Olivia. Cúbrela con un mantel hasta el piso, pon las piezas altas al centro y al fondo, y usa cajas o bases para crear niveles.",
+          "Mantén una paleta de color coherente con la de tus [dulceros personalizados](/productos/dulceros-personalizados) y combina formas y sabores. La misma guía sugiere tener en cuenta a los invitados celíacos, por ejemplo con malvaviscos sin gluten, y marcar cada dulce para que todos sepan qué toman.",
+        ],
+      },
+      {
         heading: "Qué poner dentro de un dulcero elegante de XV años",
         body: [
           "Para que el dulcero se vea elegante, cuida la presentación de cada pieza: dulces pequeños, de tamaño parecido y con variedad de sabores y texturas. Bodas.net recomienda de 5 a 7 variedades de postre en una mesa de bodas, y esa pauta se puede adaptar a un XV.",
@@ -5092,10 +5116,10 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "Cómo pedir tus dulceros con prueba digital",
+        heading: "Cómo pedir tus dulceros para XV años con prueba digital",
         body: [
           "Cuéntanos por WhatsApp el nombre de la quinceañera, los colores de la fiesta y cuántos dulceros necesitas. Te enviamos una prueba digital del diseño antes de producir, y nada se produce hasta que la apruebas. Puedes ver los [dulceros personalizados](/productos/dulceros-personalizados) en la tienda y mandarnos una foto de la invitación como referencia.",
-          "Trabajamos por pedido desde Guadalajara, Jalisco, con envío a todo México. El plazo de producción cuenta desde que apruebas la prueba digital, así que pide con tiempo antes de la fiesta y confirma por WhatsApp la fecha que necesitas.",
+          "Trabajamos por pedido desde Guadalajara, Jalisco, con envío a todo México. El plazo de producción cuenta desde que apruebas la prueba digital, así que pide con tiempo antes de la fiesta y confirma por WhatsApp la fecha que necesitas. Si buscas otra opción cerca de ti, mira los [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara).",
         ],
       },
     ],
@@ -5119,12 +5143,21 @@ export const blogPosts: BlogPost[] = [
         a: "Bodas.net recomienda de 5 a 7 variedades de postre en una mesa de bodas. Es una guía de boda que se puede adaptar a un XV.",
       },
       {
+        q: "¿Cuántos gramos de dulce calculo por invitado?",
+        a: "Una regla práctica de candy bar en inglés habla de un cuarto a media libra por invitado, unos 115 a 225 gramos. Es una referencia orientativa de bodas, no una norma de XV años.",
+      },
+      {
+        q: "¿Qué tamaño de mesa necesito para la mesa de dulces?",
+        a: "Una guía de montaje de La Fiesta de Olivia menciona una mesa de unos 80 por 120 a 160 centímetros para 30 a 40 personas, con mantel hasta el piso y niveles con cajas o bases.",
+      },
+      {
         q: "¿Hacen envíos a todo México?",
         a: "Sí. Producimos por pedido desde Guadalajara, Jalisco, y enviamos a todo México.",
       },
     ],
     sources: [
       { label: "Bodas.net: Buffets de dulces para bodas", url: "https://www.bodas.net/articulos/buffets-de-dulces-para-bodas--c733" },
+      { label: "La Fiesta de Olivia: Cómo montar tu candy bar", url: "https://shop.lafiestadeolivia.com/blogs/blog/17973332-como-montar-tu-misma-un-candy-bar-y-no-morir-en-el-intento" },
       { label: "Mercado Libre: Mesa de dulces vintage (listado)", url: "https://listado.mercadolibre.com.mx/mesa-de-dulces-vintage" },
       { label: "Mercado Libre: Cajitas de acetato (listado)", url: "https://listado.mercadolibre.com.mx/cajitas-de-acetato" },
     ],
