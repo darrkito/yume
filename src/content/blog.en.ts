@@ -4409,14 +4409,16 @@ export const blogPostsEn: BlogPost[] = [
       "Candy box ideas for kids at a wedding: what to put inside by age, how to match them to the wedding and when to hand them out.",
     category: "Guides",
     publishedAt: "2026-11-03",
+    modifiedAt: "2026-11-05",
     intro:
-      "Children are guests too, and a gift with their name makes them feel part of the day. An individual candy box, designed with the wedding colors, looks planned and gives each child something of their own. Here is what to choose, what to put inside by age, how to personalize it, when to hand it out and how many to order.",
+      "Children are guests too, and a gift with their name makes them feel part of the day. An individual candy box, designed with the wedding colors, looks planned and gives each child something of their own. Here is what to choose, what to put inside by age, how to handle allergies, how to personalize it, when and who hands it out, and how many to order.",
     sections: [
       {
         heading: "Candy boxes for kids at a wedding: what to choose",
         body: [
           "For the children at a wedding, choose an individual candy box with each child's name and the wedding colors. Every child gets something of their own that looks like part of the design, not an afterthought. It arrives assembled and empty, so you decide what goes inside.",
           "Our candy box is a lunch box style with a handle, and personalization includes the name and a theme. This is one piece per child, different from a candy table shared by all the guests.",
+          "A Bodas.net guide (from 2012, so it may be somewhat dated) recommends leaving a small gift on each child's plate, such as a bag of candy, a toy or a storybook, so they find it when they sit down. A named candy box serves the same purpose and looks like part of the decor.",
         ],
       },
       {
@@ -4424,6 +4426,13 @@ export const blogPostsEn: BlogPost[] = [
         body: [
           "A guide to children's activity bags for weddings in Italy adjusts the contents by age: for ages 2 to 5, a coloring book, crayons, finger puppets and modeling clay; for 6 to 10, pencils, origami, wooden cars and a puzzle; for 11 to 13, 3D puzzles and origami.",
           "Those ideas are a starting point for filling a candy box that arrives empty. The same guide advises avoiding anything that stains, such as pencils instead of markers. A Spanish-language search result also warns against small objects children could swallow. For more filling ideas, read [what to put in a candy box](/blog/que-poner-en-un-dulcero).",
+        ],
+      },
+      {
+        heading: "Allergies and intolerances: ask before filling the box",
+        body: [
+          "Before choosing the filling, ask parents about intolerances or allergies for each child. Bodas.net makes that recommendation for children's meals, and it applies to candy too: you can add the question when guests confirm attendance, or leave it to your planner, and flag the contents on a label.",
+          "Because the candy box arrives empty, you decide what goes inside and can adjust the filling for each child.",
         ],
       },
       {
@@ -4437,7 +4446,15 @@ export const blogPostsEn: BlogPost[] = [
         heading: "When and how to hand them out to the children",
         body: [
           "A wedding guide from Italy prepares the children's bags ahead of time, sets them up at the venue, labels each with the child's name and hands them out. It also recommends a table just for children. Use it as a logistics reference.",
-          "With a named candy box that order gets simpler: each child finds their own. If you work with a wedding planner, share the list of names so she can place them. Remember the minimum order is 10 pieces.",
+          "With a named candy box that order gets simpler: each child finds their own.",
+          "There are three possible moments: on the plate so they find it when they sit down, in hand during the party, or at the end to take home. Pick the one that fits your wedding schedule.",
+        ],
+      },
+      {
+        heading: "Who hands out the candy boxes: monitor, planner or venue",
+        body: [
+          "Someone has to hand each candy box to the right child. Bodas.net proposes one monitor for every four children to accompany them, help them eat and keep them entertained; it is a Spanish guide from 2012. That person, your wedding planner or the venue staff can hand them out, depending on what you agree with them.",
+          "If you work with a planner, share the list of names and the time you want them handed out. Since every candy box carries a name, whoever hands them out does not have to guess who each one is for.",
         ],
       },
       {
@@ -4462,9 +4479,22 @@ export const blogPostsEn: BlogPost[] = [
         q: "How many candy boxes should I order for a wedding?",
         a: "One for each confirmed child on your list, with a minimum order of 10 pieces.",
       },
+      {
+        q: "When should each child get their candy box?",
+        a: "It can be on the plate when they sit down, in hand during the party, or at the end to take home. Bodas.net suggests leaving a small gift on each child's plate; set the moment with your planner or the venue.",
+      },
+      {
+        q: "How do I look after guests' allergies?",
+        a: "Ask parents about intolerances or allergies before choosing the filling, as Bodas.net suggests for children's meals. The candy box arrives empty, so you decide what goes inside.",
+      },
+      {
+        q: "Who can hand out the candy boxes at the wedding?",
+        a: "Whoever accompanies the children, your wedding planner or the venue staff. Bodas.net proposes one monitor for every four children in its 2012 guide.",
+      },
     ],
     sources: [
       { label: "Exclusive Italy Weddings: children's activity bags for weddings", url: "https://www.exclusiveitalyweddings.com/blog/wedding-party-ideas-children-activity-bags" },
+      { label: "Bodas.net: the children's table (2012 guide, in Spanish)", url: "https://www.bodas.net/articulos/la-mesa-de-los-ninos--c1194" },
     ],
   },
   {

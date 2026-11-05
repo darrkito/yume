@@ -5272,14 +5272,16 @@ export const blogPosts: BlogPost[] = [
       "Ideas de dulceros para niños en una boda: qué poner según la edad, cómo combinarlos con la boda y cuándo entregarlos a cada niño.",
     category: "Guías",
     publishedAt: "2026-11-03",
+    modifiedAt: "2026-11-05",
     intro:
-      "Los niños también son invitados, y un detalle con su nombre los hace sentir parte del día. Un dulcero individual, pensado con los colores de la boda, se ve planeado y le da a cada niño algo propio. Aquí tienes qué elegir, qué poner dentro según la edad, cómo personalizarlo, cuándo entregarlo y cuántos pedir.",
+      "Los niños también son invitados, y un detalle con su nombre los hace sentir parte del día. Un dulcero individual, pensado con los colores de la boda, se ve planeado y le da a cada niño algo propio. Aquí tienes qué elegir, qué poner dentro según la edad, cómo cuidar las alergias, cómo personalizarlo, cuándo y quién lo entrega, y cuántos pedir.",
     sections: [
       {
         heading: "Dulceros para niños en una boda: qué conviene elegir",
         body: [
           "Para los niños de una boda conviene un dulcero individual con su nombre y los colores de la boda. Así cada niño recibe algo propio, que se ve como parte del diseño y no como un detalle suelto. Llega armado y vacío, y tú eliges qué lleva dentro.",
           "Nuestro dulcero es tipo lunch box, con asa, y la personalización incluye nombre y temática. Aquí hablamos de una pieza por niño, distinta de una mesa de dulces compartida por todos los invitados.",
+          "Una guía de Bodas.net (de 2012, así que puede estar algo desactualizada) recomienda dejar un detalle sobre el plato de cada niño, como una bolsa de caramelos, un juguete o un cuento, para que lo encuentren al sentarse. Un dulcero con nombre cumple esa misma función y se ve como parte de la decoración.",
         ],
       },
       {
@@ -5287,6 +5289,13 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Una guía de bolsas de actividades para bodas en Italia propone ajustar el contenido por edad: de 2 a 5 años, libro para colorear, crayones, marionetas de dedo y plastilina; de 6 a 10, lápices, origami, coches de madera y un rompecabezas; de 11 a 13, rompecabezas 3D y origami.",
           "Esas ideas son un punto de partida para llenar un dulcero que llega vacío. La misma guía aconseja evitar lo que manche, como lápices en lugar de rotuladores. Un resultado de búsqueda en español advierte evitar objetos pequeños que los niños puedan tragar. Para más ideas de relleno, lee [qué poner en un dulcero](/blog/que-poner-en-un-dulcero).",
+        ],
+      },
+      {
+        heading: "Alergias e intolerancias: pregunta antes de llenar el dulcero",
+        body: [
+          "Antes de elegir el relleno, pregunta a los padres por intolerancias o alergias de cada niño. Bodas.net hace esa recomendación para la comida infantil, y aplica igual a los dulces: puedes incluir la pregunta al confirmar asistencia o dejársela a tu planner, y avisar del contenido en una etiqueta.",
+          "Como el dulcero llega vacío, tú decides qué lleva dentro y puedes ajustar el relleno de cada niño.",
         ],
       },
       {
@@ -5300,7 +5309,15 @@ export const blogPosts: BlogPost[] = [
         heading: "Cuándo y cómo entregar los dulceros a los niños",
         body: [
           "Una guía de bodas en Italia prepara con antelación las bolsas de los niños, las monta en el lugar de la boda, las etiqueta con el nombre de cada niño y las reparte. También recomienda una mesa solo para niños. Sirve como referencia de logística.",
-          "Con un dulcero con nombre ese orden se simplifica: cada niño encuentra el suyo. Si trabajas con una wedding planner, compártele la lista de nombres para que ella los coloque. Recuerda que el pedido mínimo es de 10 piezas.",
+          "Con un dulcero con nombre ese orden se simplifica: cada niño encuentra el suyo.",
+          "Hay tres momentos posibles: sobre el plato para que lo encuentren al sentarse, en mano durante la fiesta o al final para llevar a casa. Elige el que mejor encaje con el programa de tu boda.",
+        ],
+      },
+      {
+        heading: "Quién reparte los dulceros: monitora, planner o salón",
+        body: [
+          "Alguien debe encargarse de entregar cada dulcero a su niño. Bodas.net propone una monitora por cada cuatro niños para acompañarlos, ayudarlos a comer y entretenerlos; es una guía española de 2012. Esa persona, tu wedding planner o el personal del salón pueden repartirlos, según lo que acuerdes con ellos.",
+          "Si trabajas con una planner, compártele la lista de nombres y la hora en que quieres que se entreguen. Como cada dulcero lleva un nombre, quien los reparta no tiene que adivinar para quién es cada uno.",
         ],
       },
       {
@@ -5326,9 +5343,22 @@ export const blogPosts: BlogPost[] = [
         q: "¿Cuántos dulceros pido para una boda?",
         a: "Uno por cada niño confirmado en tu lista, con un pedido mínimo de 10 piezas.",
       },
+      {
+        q: "¿En qué momento se entrega el dulcero a cada niño?",
+        a: "Puede ser sobre el plato al sentarse, en mano durante la fiesta o al final para llevar a casa. Bodas.net sugiere dejar un detalle sobre el plato de cada niño; define el momento con tu planner o con el salón.",
+      },
+      {
+        q: "¿Cómo cuido las alergias de los niños invitados?",
+        a: "Pregunta a los padres por intolerancias o alergias antes de elegir el relleno, como sugiere Bodas.net para la comida infantil. El dulcero llega vacío, así que tú decides qué lleva dentro.",
+      },
+      {
+        q: "¿Quién puede repartir los dulceros en la boda?",
+        a: "Quien acompañe a los niños, tu wedding planner o el personal del salón. Bodas.net propone una monitora por cada cuatro niños en su guía de 2012.",
+      },
     ],
     sources: [
       { label: "Exclusive Italy Weddings: bolsas de actividades para niños en bodas (en inglés)", url: "https://www.exclusiveitalyweddings.com/blog/wedding-party-ideas-children-activity-bags" },
+      { label: "Bodas.net: la mesa de los niños (guía de 2012)", url: "https://www.bodas.net/articulos/la-mesa-de-los-ninos--c1194" },
     ],
   },
   {
