@@ -325,58 +325,105 @@ export const blogPosts: BlogPost[] = [
   {
     "slug": "placa-resenas-google-para-planners-y-eventos",
     "title": "Placa de reseñas de Google para planners y eventos",
-    "metaTitle": "Placa de reseñas Google para planners y eventos",
-    "description": "Cómo planners, recintos y proveedores de eventos pueden compartir su enlace de reseñas con una placa NFC y QR.",
+    "metaTitle": "Placa de reseñas de Google para planners y eventos",
+    "description": "Cómo usar una placa de reseñas de Google en eventos: obtener el enlace oficial, qué texto poner, cuándo pedir la reseña y qué no ofrecer a cambio.",
     "category": "Guías",
     "publishedAt": "2026-11-03",
-    "modifiedAt": "2026-11-03",
-    "intro": "Una placa de reseñas de Google para planners y eventos acerca el enlace de la ficha de un negocio a sus clientes. Las opiniones honestas pueden servir como prueba social para quienes buscan un planner, recinto o proveedor para su celebración.",
+    "modifiedAt": "2026-11-05",
+    "intro": "Una placa de reseñas de Google para planners y eventos acerca el enlace de tu ficha a tus clientes. Las opiniones honestas sirven como prueba social para quienes buscan un planner, recinto o proveedor para su celebración. Aquí verás cómo obtener el enlace oficial, dónde mostrar la placa, cuándo pedir la reseña y qué no ofrecer a cambio, para que la invitación sea cuidada y honesta.",
     "sections": [
       {
-        "heading": "¿Qué perfil debe recibir las reseñas?",
+        "heading": "Placa de reseñas de Google: ¿qué perfil debe recibirlas?",
         "body": [
-          "Usa el enlace de la ficha del negocio que prestó el servicio, siempre que cumpla los requisitos de Google para tener un perfil. Un planner o proveedor de servicios puede revisar su elegibilidad y completar datos claros sobre su actividad y contacto."
+          "La placa debe llevar al perfil del negocio que prestó el servicio: el planner, el recinto o el proveedor, siempre que cumpla los requisitos de Google para tener ficha. Si una planner coordina y otro proveedor ejecuta, cada quien usa su propio enlace, para que la opinión llegue al negocio correcto.",
+          "Antes de producir cualquier pieza, confirma que el enlace sea el de tu propio negocio y que abra la ficha correcta."
         ]
       },
       {
-        "heading": "¿Dónde compartir el enlace durante un evento?",
+        "heading": "¿Cómo obtener el enlace y el QR oficial de reseñas?",
         "body": [
-          "Un recinto puede colocar la pieza en recepción; un proveedor puede mostrarla en su mesa de atención cuando sea apropiado. Elige un lugar accesible que no interrumpa la celebración y asegúrate de que el enlace corresponda a tu propio negocio."
+          "Desde tu Perfil de Negocio de Google entra a «Leer reseñas», elige «Obtener más reseñas» y copia el enlace o descarga el código QR con clic derecho y guardar imagen. Google indica que el QR solo se genera desde un navegador de computadora, no desde el celular.",
+          "Copia el enlace tal como lo entrega Google, sin escribirlo a mano, y compártelo con Yume para configurar tu pieza."
         ]
       },
       {
-        "heading": "¿Cuándo invitar a los clientes a opinar?",
+        "heading": "¿Dónde mostrar la placa durante un evento?",
         "body": [
-          "Después del servicio o al cerrar la coordinación, ofrece el enlace al cliente sin interrumpir momentos importantes del evento. Una invitación por mensaje también permite que responda después. La participación es voluntaria y cada persona decide qué escribir sobre su experiencia."
+          "Colócala donde las personas la vean sin que interrumpa la celebración: en recepción si eres recinto, o en tu mesa de atención si eres proveedor. Google sugiere mostrar el QR o el enlace en recibos, correos de agradecimiento, al final de un chat o impreso en el local.",
+          "Si trabajas con clientes por WhatsApp, también puedes enviar la solicitud por ese medio, por correo o por Facebook, según Google. La placa en el evento y el mensaje posterior se complementan."
         ]
       },
       {
-        "heading": "¿Cómo pedir reseñas honestas?",
+        "heading": "¿Cuándo pedir la reseña sin saturar el evento?",
         "body": [
-          "Invita a todos tus clientes reales, no solo a quienes consideres satisfechos, y no sugieras una calificación. Según Google, ofrecer regalos o descuentos a cambio de reseñas está prohibido. Acepta las opiniones positivas y negativas sin presionar ni condicionar la invitación."
+          "Pídela después del servicio o al cerrar la coordinación, no en medio de los momentos importantes. La participación es voluntaria y cada persona decide qué escribir. Un reporte sobre las políticas de Google señala que no se debe presionar a calificar en el local ni dictar lo que debe decir la reseña.",
+          "Ese mismo reporte indica que Google vigila volúmenes o patrones inusuales de reseñas. Si muchos invitados reseñan el mismo día, puede verse atípico, así que conviene espaciar las solicitudes en lugar de concentrarlas en una sola noche."
         ]
       },
       {
-        "heading": "¿Qué pieza se adapta a tu forma de trabajo?",
+        "heading": "¿Cómo pedir reseñas honestas, sin incentivos?",
         "body": [
-          "La placa de 12 × 12 cm incluye adhesivo y cuesta $140 MXN; el stand se coloca de pie y cuesta $200 MXN. Ambos tienen NFC y QR, están disponibles en blanco o negro y se pueden pedir desde una pieza con pago único."
+          "Invita a todos tus clientes reales, no solo a quienes creas satisfechos, y no sugieras una calificación. Google prohíbe ofrecer bienes o servicios gratis o con descuento a cambio de una reseña, y las opiniones deben venir de experiencias reales. Acepta las positivas y las negativas.",
+          "Esto aplica también si eres planner y regalas o descuentas parte del evento a cambio de reseñas: no lo hagas. Para el texto cerca de la placa, usa una invitación neutra como «Cuéntanos tu experiencia», sin guion y sin «déjanos 5 estrellas»."
         ]
       },
       {
-        "heading": "¿Cómo preparar el enlace y otros detalles?",
+        "heading": "¿Qué mensaje acompaña a la placa?",
         "body": [
-          "Yume configura el NFC y el QR con el enlace de reseñas del cliente antes de enviar la pieza; no requiere app ni suscripción. Para organizar otros materiales del evento, consulta también la guía para planners sobre proveedores de detalles personalizados."
+          "Usa un mensaje breve y neutro cerca de la placa, como «Cuéntanos tu experiencia», sin pedir cinco estrellas ni indicar qué escribir. La pieza trae NFC y QR para que el cliente elija: acercar el celular al NFC o escanear el código, ambos con el mismo enlace de reseñas.",
+          "Evita textos largos o promesas. La placa facilita el acceso al enlace, pero no garantiza más reseñas: cada persona decide si opina y qué escribe. Si quieres explicar el propósito, basta una frase que invite a compartir la experiencia con honestidad."
+        ]
+      },
+      {
+        "heading": "Placa o stand: ¿qué pieza se adapta a tu forma de trabajo?",
+        "body": [
+          "La placa de 12 × 12 cm incluye adhesivo y cuesta $140 MXN; el stand se coloca de pie y cuesta $200 MXN. Ambos tienen NFC y QR, están disponibles en blanco o negro y se pueden pedir desde una pieza con pago único.",
+          "Si buscas un lugar fijo, como una recepción, revisa la [placa de reseñas NFC y QR](/productos/placa-resena-google-nfc). Si prefieres algo que se apoye sobre una mesa, el [stand de reseñas NFC](/productos/stand-resena-google-nfc) se coloca de pie."
+        ],
+        "table": {
+          "headers": ["Pieza", "Formato", "Precio", "Colores"],
+          "rows": [
+            ["Placa", "12 × 12 cm, con adhesivo", "$140 MXN", "Blanco o negro"],
+            ["Stand", "Se coloca de pie", "$200 MXN", "Blanco o negro"]
+          ]
+        }
+      },
+      {
+        "heading": "¿Cómo prepara Yume tu pieza?",
+        "body": [
+          "Yume configura el NFC y el QR con el enlace de reseñas de tu negocio antes de enviar la pieza. No requiere app ni suscripción: el pago es único. Si quieres cotizar o resolver dudas, escríbenos por WhatsApp y te ayudamos a definir qué pieza te conviene.",
+          "Si además preparas detalles para tus invitados, mira nuestros [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara) para complementar a tu proveedor de detalles."
         ]
       }
     ],
     "faq": [
       {
         "q": "¿Puedo pedir una sola pieza?",
-        "a": "Sí. Puedes pedir una placa o un stand; ambos tienen NFC y QR configurados con tu enlace de reseñas antes del envío."
+        "a": "Sí. Tanto la placa como el stand se pueden pedir desde una pieza, con pago único, y llegan con NFC y QR configurados con tu enlace de reseñas."
       },
       {
         "q": "¿La pieza garantiza más reseñas?",
         "a": "No. Facilita el acceso al enlace; cada persona decide si deja una opinión y qué escribe."
+      },
+      {
+        "q": "¿Puedo generar el QR de reseñas desde mi celular?",
+        "a": "Según Google, los QR de reseñas solo se pueden generar desde un navegador de computadora. Desde el celular puedes copiar el enlace, pero no descargar el QR."
+      },
+      {
+        "q": "¿Puedo ofrecer un descuento a cambio de una reseña?",
+        "a": "No. Google prohíbe ofrecer bienes o servicios gratis o con descuento a cambio de una reseña, y las reseñas deben venir de experiencias reales."
+      },
+      {
+        "q": "¿Debo pedir reseñas solo a los clientes contentos?",
+        "a": "No. Lo correcto es invitar a todos tus clientes reales, sin filtrar y sin sugerir una calificación."
+      },
+      {
+        "q": "¿Necesito app o suscripción para usar la placa?",
+        "a": "No. Yume configura el NFC y el QR con tu enlace antes del envío, con pago único y sin suscripción."
+      },
+      {
+        "q": "¿Cuánto cuestan la placa y el stand?",
+        "a": "La placa de 12 × 12 cm con adhesivo cuesta $140 MXN y el stand de pie cuesta $200 MXN. Ambos están disponibles en blanco o negro."
       }
     ],
     "relatedProductSlugs": [
@@ -384,15 +431,14 @@ export const blogPosts: BlogPost[] = [
       "stand-resena-google-nfc"
     ],
     "relatedBlogSlugs": [
-      "como-configurar-perfil-de-google-y-pedir-resenas",
-      "placas-resenas-google-pago-unico-vs-suscripcion",
-      "como-conseguir-mas-resenas-de-google-nfc-qr",
-      "placa-nfc-vs-codigo-qr-impreso-resenas",
-      "como-usar-placa-resenas-google-yume",
-      "guia-planners-proveedor-detalles-personalizados"
+      "dulceros-personalizados-guadalajara"
     ],
     "quoteMessage": "Hola, me interesan la placa y el stand NFC para reseñas de Google.",
     "sources": [
+      {
+        "label": "Google: obtener el enlace y el QR de reseñas (en inglés)",
+        "url": "https://support.google.com/business/answer/16816815?hl=en"
+      },
       {
         "label": "Google: consejos para recibir reseñas",
         "url": "https://support.google.com/business/answer/3474122?hl=es"
@@ -400,6 +446,10 @@ export const blogPosts: BlogPost[] = [
       {
         "label": "Google: contenido prohibido y restringido",
         "url": "https://support.google.com/business/answer/7400114?hl=es"
+      },
+      {
+        "label": "Search Engine Roundtable: políticas de reseñas de Google (en inglés)",
+        "url": "https://www.seroundtable.com/google-business-profile-review-policies-updated-40962.html"
       }
     ]
   },
