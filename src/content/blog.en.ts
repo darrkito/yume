@@ -405,49 +405,78 @@ export const blogPostsEn: BlogPost[] = [
     "description": "Create a customer satisfaction survey, choose useful questions and share it by QR code, receipt or WhatsApp.",
     "category": "Guides",
     "publishedAt": "2026-11-03",
-    "modifiedAt": "2026-11-03",
-    "intro": "A customer satisfaction survey helps you listen to experiences and find opportunities to improve. You can create one with a free form or a WhatsApp message; keep the survey separate from any invitation to post a public review.",
+    "modifiedAt": "2026-11-05",
+    "intro": "A customer satisfaction survey helps you hear how the experience went and decide what to improve. In this guide you choose the metric (CSAT, NPS or CES), write a few clear questions, decide when to send it by WhatsApp, QR code or receipt and turn the answers into actions. Keep the survey separate from any invitation to post a public review.",
     "sections": [
       {
         "heading": "What is a customer satisfaction survey for?",
         "body": [
-          "It is a short set of questions about the experience of people who bought a product or received a service. Answers can reveal what works and what needs attention. First decide what you want to improve and avoid requesting information you do not need."
+          "A customer satisfaction survey is a short set of questions that measures how someone experienced a purchase, a delivery or a service. It shows what worked and what failed, and helps you choose one concrete improvement. Before writing it, define which decision you will make with the answers.",
+          "If you sell custom pieces made to order, it helps to separate two moments: a delivery survey, to learn how the order arrived, and a recommendation survey, to learn whether people would speak well of the business. Mixing them in one form confuses the person answering. And avoid asking for information you will not use."
         ]
+      },
+      {
+        "heading": "Which metric should you choose: CSAT, NPS or CES?",
+        "body": [
+          "CSAT asks how satisfied someone was with a specific interaction, on a scale from 1 to 5. NPS asks how likely they are to recommend you, from 0 to 10. CES measures how much effort it took to get something done. Choose the one that matches what you want to learn.",
+          "In NPS, a 9 or 10 makes someone a promoter and a score from 0 to 6 makes them a detractor; the result is the percentage of promoters minus the percentage of detractors. CSAT is calculated as the percentage of 4 and 5 answers. The references in the table come from one provider's guide, so use them as orientation, not as an industry standard."
+        ],
+        "table": {
+          "headers": ["Metric", "Scale", "How it is calculated", "Orientative reference"],
+          "rows": [
+            ["CSAT", "1 to 5", "% of 4 and 5 answers", "80 to 89%"],
+            ["NPS", "0 to 10", "% of promoters minus % of detractors", "+30 to +59"],
+            ["CES", "1 to 5", "Average of the answers", "4.0 to 4.4"]
+          ]
+        }
       },
       {
         "heading": "How many questions and what types should you use?",
         "body": [
-          "Start with six to eight clear questions: combine consistent scales with one open question. CSAT can measure satisfaction from 1 to 5; NPS asks likelihood to recommend from 0 to 10. Explain the endpoints of each scale so answers can be compared."
+          "There is no single ideal length that works for every business. What helps is giving each question a purpose: one scale to measure, one to compare and one open question to understand why. If a question will not change any decision, remove it. On WhatsApp, send one question per message.",
+          "Use the same scale for similar questions and explain the endpoints, for example \"1 is very dissatisfied and 5 is very satisfied\". On WhatsApp it works to give a simple instruction, such as \"reply with the number only\", so answers are easy to compare."
         ]
       },
       {
         "heading": "What customer satisfaction survey questions can you ask?",
         "body": [
-          "Use simple questions about service, the product and waiting time, along with a recommendation scale and an open response. Adapt each question to what your business offers and explain the endpoints of the scales before you share the form with customers.",
-          "Try these seven questions: 1. How satisfied were you with the service, from 1 to 5? 2. With the product or service, from 1 to 5? 3. With the wait, from 1 to 5? 4. Was the information clear? 5. Did you find what you needed? 6. How likely are you to recommend us, from 0 to 10? 7. What could we improve?"
+          "Use simple questions about service, the product and waiting time, plus a recommendation scale and an open response so people can explain their answer. Adapt each question to what your business offers and explain the endpoints of the scales before you share the form with customers.",
+          "Try these seven questions: 1. How satisfied were you with the service, from 1 to 5? 2. With the product or service, from 1 to 5? 3. With the wait, from 1 to 5? 4. Was the information clear? 5. Did you find what you needed? 6. How likely are you to recommend us, from 0 to 10? 7. What could we improve?",
+          "If the survey is for the delivery of a custom order, you can swap in some of these: Does the piece look like the design you approved? Did it arrive in the agreed time? Did the packaging arrive in good condition? How was the service over WhatsApp?"
         ]
       },
       {
         "heading": "Where and when can you use a QR survey?",
         "body": [
-          "Share a QR code leading to a form at the counter or on a receipt, or send questions by WhatsApp after the purchase or service. Explain that responding is voluntary and choose a time close to the experience without interrupting the customer."
+          "Share a QR code leading to a form at the counter or on a receipt, or send the questions by WhatsApp after the purchase or service. Explain that responding is voluntary and choose a moment close to the experience, without interrupting the customer.",
+          "According to one provider's guide, CSAT is sent within 2 minutes after the conversation closes, NPS between 24 and 48 hours after an important interaction such as a purchase, and CES right after the process is completed. Waiting more than an hour significantly reduces responses. For a custom order, this supports sending a delivery survey and, separately, a recommendation survey.",
+          "On frequency, sources disagree: some ask for CSAT on every closed ticket and others prefer doing it periodically to avoid overloading people. The same guide suggests at most one CSAT survey per customer every 7 days and NPS once a month or once a quarter."
         ]
       },
       {
         "heading": "How should you read and use the results?",
         "body": [
-          "Review answers question by question and look for recurring themes in open comments. Consider how many people responded before drawing conclusions; a few responses may not represent everyone. Choose a concrete improvement, assign follow-up and compare later feedback with care."
+          "Review the answers question by question and look for themes that repeat in the open comments. Consider how many people responded before drawing conclusions, because a few answers may not represent everyone. Choose one concrete improvement, assign someone to follow up and compare later feedback with care.",
+          "The most common mistakes that guide mentions are sending the survey late, combining several questions in one message, not acting on the results and not reading the open comments. Each one makes the survey less useful."
         ]
       },
       {
         "heading": "How can you invite reviews without filtering customers?",
         "body": [
-          "Keep the survey and review request separate and offer both to all customers. Sending only happy customers to Google or discouraging unhappy customers violates its review policy. The plate gives everyone the same NFC or QR path to leave an honest review.",
-          "Yume sells the plate and stand, not a survey tool. It configures both paths with the review link before shipping; the plate costs MXN $140 and the stand MXN $200, one-time, from one piece."
+          "Keep the survey and the review request separate and offer both to all customers. Sending only happy customers to Google or discouraging unhappy ones goes against its review policy. The plate gives everyone the same NFC or QR path to leave an honest review.",
+          "Yume sells the plate and stand, not a survey tool. Yume configures both paths with the review link before shipping; the plate costs MXN $140 and the stand MXN $200, one-time, from one piece."
         ]
       }
     ],
     "faq": [
+      {
+        "q": "What response rate can I expect?",
+        "a": "There is no universal figure. One provider's guide cites 40 to 60% on WhatsApp versus 5 to 15% by email, but that is the provider's own figure, not an independent study."
+      },
+      {
+        "q": "What should I do if a customer gives a low score?",
+        "a": "If CSAT is 1 to 3, that guide recommends adding an open question about what to improve. That way you learn what to fix instead of only seeing the number."
+      },
       {
         "q": "Can I order one piece?",
         "a": "Yes. You can order one plate or stand; both have NFC and QR configured with your review link before shipping."
@@ -481,6 +510,10 @@ export const blogPostsEn: BlogPost[] = [
       {
         "label": "Google: prohibited and restricted content",
         "url": "https://support.google.com/business/answer/7400114?hl=en"
+      },
+      {
+        "label": "Aurora Inbox: how to measure customer satisfaction on WhatsApp",
+        "url": "https://www.aurorainbox.com/2026/02/27/medir-satisfaccion-cliente-whatsapp/"
       }
     ]
   },

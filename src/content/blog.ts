@@ -460,49 +460,78 @@ export const blogPosts: BlogPost[] = [
     "description": "Aprende a crear una encuesta de satisfacción del cliente, elegir preguntas y compartirla por QR, ticket o WhatsApp.",
     "category": "Guías",
     "publishedAt": "2026-11-03",
-    "modifiedAt": "2026-11-03",
-    "intro": "Una encuesta de satisfacción del cliente ayuda a escuchar experiencias y detectar oportunidades de mejora. Puedes crearla con un formulario gratuito o un mensaje de WhatsApp; mantén esta encuesta separada de cualquier invitación a escribir una reseña pública.",
+    "modifiedAt": "2026-11-05",
+    "intro": "Una encuesta de satisfacción del cliente te ayuda a escuchar cómo fue la experiencia y a decidir qué mejorar. En esta guía eliges la métrica (CSAT, NPS o CES), armas pocas preguntas claras, decides cuándo enviarla por WhatsApp, QR o ticket y conviertes las respuestas en acciones. Mantén la encuesta separada de cualquier invitación a escribir una reseña pública.",
     "sections": [
       {
-        "heading": "¿Qué es una encuesta de satisfacción y para qué sirve?",
+        "heading": "¿Qué es una encuesta de satisfacción del cliente y para qué sirve?",
         "body": [
-          "Es un conjunto breve de preguntas para conocer la experiencia de quienes compraron o recibieron un servicio. Sus respuestas ayudan a identificar aspectos que funcionan y problemas que conviene revisar. Define primero qué decisión quieres mejorar y evita pedir datos que no necesitas."
+          "Una encuesta de satisfacción del cliente es un conjunto breve de preguntas que mide cómo vivió alguien una compra, una entrega o un servicio. Sirve para detectar qué funcionó y qué falló, y para decidir una mejora concreta. Antes de escribirla, define qué decisión tomarás con las respuestas.",
+          "Si vendes piezas personalizadas por encargo, conviene separar dos momentos: una encuesta de entrega, para saber cómo llegó el pedido, y otra de recomendación, para saber si hablarías bien del negocio. Mezclarlas en un solo formulario confunde a quien responde. Y evita pedir datos que no vas a usar."
         ]
+      },
+      {
+        "heading": "¿Qué métrica elegir: CSAT, NPS o CES?",
+        "body": [
+          "CSAT pregunta qué tan satisfecho quedó la persona con una interacción concreta, en una escala de 1 a 5. NPS pregunta qué tan probable es que te recomiende, de 0 a 10. CES mide el esfuerzo que le costó resolver algo. Elige según lo que quieras saber.",
+          "En el NPS, quien responde 9 o 10 es promotor y quien responde de 0 a 6 es detractor; el resultado es el porcentaje de promotores menos el porcentaje de detractores. El CSAT se calcula como el porcentaje de respuestas 4 y 5. Las referencias de la tabla vienen de la guía de un solo proveedor, así que úsalas como orientación y no como estándar del sector."
+        ],
+        "table": {
+          "headers": ["Métrica", "Escala", "Cómo se calcula", "Referencia orientativa"],
+          "rows": [
+            ["CSAT", "1 a 5", "% de respuestas 4 y 5", "80 a 89%"],
+            ["NPS", "0 a 10", "% de promotores menos % de detractores", "+30 a +59"],
+            ["CES", "1 a 5", "Promedio de las respuestas", "4.0 a 4.4"]
+          ]
+        }
       },
       {
         "heading": "¿Cuántas preguntas y de qué tipo conviene usar?",
         "body": [
-          "Empieza con seis a ocho preguntas claras: combina escalas consistentes con una pregunta abierta. CSAT puede medir satisfacción de 1 a 5; NPS pregunta la probabilidad de recomendar de 0 a 10. Explica los extremos de cada escala para que las respuestas sean comparables."
+          "No hay una longitud ideal que sirva para todos los negocios. Lo que sí ayuda es que cada pregunta tenga un propósito: una escala para medir, otra para comparar y una abierta para entender el porqué. Si una pregunta no cambia ninguna decisión, quítala. Por WhatsApp, envía una pregunta por mensaje.",
+          "Usa la misma escala en preguntas parecidas y explica los extremos, por ejemplo «1 es muy insatisfecho y 5 es muy satisfecho». Por WhatsApp funciona dar una instrucción simple, como «responde solo con el número», para que las respuestas sean fáciles de comparar."
         ]
       },
       {
         "heading": "¿Qué preguntas para encuesta de satisfacción puedes usar?",
         "body": [
-          "Usa preguntas sencillas sobre la atención, el producto y el tiempo de espera, además de una escala de recomendación y un espacio abierto. Ajusta cada pregunta a lo que ofreces y explica los extremos de las escalas antes de compartir el formulario.",
-          "Prueba estas siete preguntas: 1. ¿Qué tan satisfecho quedaste con la atención, de 1 a 5? 2. ¿Con el producto o servicio, de 1 a 5? 3. ¿Con el tiempo de espera, de 1 a 5? 4. ¿Fue clara la información? 5. ¿Encontraste lo que necesitabas? 6. ¿Qué tan probable es que nos recomiendes, de 0 a 10? 7. ¿Qué podríamos mejorar?"
+          "Usa preguntas sencillas sobre la atención, el producto y el tiempo de espera, además de una escala de recomendación y un espacio abierto para que expliquen su respuesta. Ajusta cada pregunta a lo que ofreces y explica los extremos de las escalas antes de compartir el formulario con tus clientes.",
+          "Prueba estas siete preguntas: 1. ¿Qué tan satisfecho quedaste con la atención, de 1 a 5? 2. ¿Con el producto o servicio, de 1 a 5? 3. ¿Con el tiempo de espera, de 1 a 5? 4. ¿Fue clara la información? 5. ¿Encontraste lo que necesitabas? 6. ¿Qué tan probable es que nos recomiendes, de 0 a 10? 7. ¿Qué podríamos mejorar?",
+          "Si la encuesta es para la entrega de un pedido personalizado, puedes cambiar algunas por estas: ¿La pieza se parece al diseño que aprobaste? ¿Llegó en el tiempo acordado? ¿El empaque llegó en buen estado? ¿Cómo fue el trato por WhatsApp?"
         ]
       },
       {
         "heading": "¿Dónde y cuándo aplicar la encuesta con código QR?",
         "body": [
-          "Comparte un QR hacia un formulario en el mostrador o en el ticket, o envía las preguntas por WhatsApp después de la compra o el servicio. Explica que responder es voluntario y elige un momento cercano a la experiencia sin interrumpir al cliente."
+          "Comparte un QR hacia un formulario en el mostrador o en el ticket, o envía las preguntas por WhatsApp después de la compra o el servicio. Explica que responder es voluntario y elige un momento cercano a la experiencia, sin interrumpir al cliente.",
+          "Según una guía de un proveedor, el CSAT se envía dentro de los 2 minutos posteriores al cierre de la conversación, el NPS entre 24 y 48 horas después de una interacción importante, como una compra, y el CES justo después de completar el proceso. Esperar más de una hora reduce de forma importante la respuesta. Para un pedido personalizado, esto apoya enviar una encuesta de entrega y, por separado, otra de recomendación.",
+          "Sobre la frecuencia, las fuentes no coinciden: unas piden CSAT en cada ticket cerrado y otras prefieren hacerlo de forma periódica para no saturar. La misma guía sugiere como máximo una encuesta CSAT por cliente cada 7 días y el NPS una vez al mes o al trimestre."
         ]
       },
       {
         "heading": "¿Cómo leer y utilizar los resultados?",
         "body": [
-          "Revisa las respuestas por pregunta y busca temas recurrentes en los comentarios abiertos. Considera cuántas personas respondieron antes de sacar conclusiones; unas pocas respuestas no representan necesariamente a todos. Elige una mejora concreta, asigna seguimiento y compara los comentarios posteriores con cuidado."
+          "Revisa las respuestas pregunta por pregunta y busca temas que se repitan en los comentarios abiertos. Considera cuántas personas respondieron antes de sacar conclusiones, porque pocas respuestas no representan necesariamente a todos. Elige una mejora concreta, asigna a alguien su seguimiento y compara los comentarios posteriores con cuidado.",
+          "Los errores más comunes que menciona esa guía son enviar la encuesta tarde, juntar varias preguntas en un mensaje, no actuar sobre los resultados y no leer los comentarios abiertos. Cada uno hace que la encuesta pierda utilidad."
         ]
       },
       {
         "heading": "¿Cómo invitar a una reseña sin filtrar clientes?",
         "body": [
           "Mantén la encuesta y la petición de reseña separadas y ofrece ambas a todos los clientes. Enviar solo a clientes satisfechos a Google o desalentar a los insatisfechos va contra su política de reseñas. La placa ofrece a todos la misma vía por NFC o QR para dejar una opinión honesta.",
-          "Yume vende la placa y el stand, no una herramienta de encuestas. Configura ambas vías con el enlace de reseñas antes del envío; la placa cuesta $140 MXN y el stand $200 MXN, pago único, desde una pieza."
+          "Yume vende la placa y el stand, no una herramienta de encuestas. Yume configura ambas vías con el enlace de reseñas antes del envío; la placa cuesta $140 MXN y el stand $200 MXN, pago único, desde una pieza."
         ]
       }
     ],
     "faq": [
+      {
+        "q": "¿Qué tasa de respuesta puedo esperar?",
+        "a": "No hay una cifra universal. Una guía de un proveedor cita entre 40 y 60% por WhatsApp frente a entre 5 y 15% por correo, pero es una cifra del propio proveedor y no un estudio independiente."
+      },
+      {
+        "q": "¿Qué hago si un cliente da una calificación baja?",
+        "a": "Si el CSAT es de 1 a 3, esa guía recomienda agregar una pregunta abierta sobre qué mejorar. Así sabes qué corregir en lugar de ver solo el número."
+      },
       {
         "q": "¿Puedo pedir una sola pieza?",
         "a": "Sí. Puedes pedir una placa o un stand; ambos tienen NFC y QR configurados con tu enlace de reseñas antes del envío."
@@ -536,6 +565,10 @@ export const blogPosts: BlogPost[] = [
       {
         "label": "Google: contenido prohibido y restringido",
         "url": "https://support.google.com/business/answer/7400114?hl=es"
+      },
+      {
+        "label": "Aurora Inbox: cómo medir la satisfacción del cliente por WhatsApp",
+        "url": "https://www.aurorainbox.com/2026/02/27/medir-satisfaccion-cliente-whatsapp/"
       }
     ]
   },
