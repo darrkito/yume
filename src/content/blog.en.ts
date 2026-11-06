@@ -4656,6 +4656,79 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "personalized-surprise-gift-ideas-candy-boxes",
+    title: "Personalized Surprise Gift Ideas with Candy Boxes",
+    description:
+      "Personalized surprise gift ideas with candy for mom or your partner: what goes in the candy box, what to personalize and how to order.",
+    category: "Guides",
+    publishedAt: "2026-11-05",
+    intro:
+      "Giving candy is easy; making it feel like a personalized surprise gift is the hard part. A candy box (dulcero) with a name and a theme turns your mom's or partner's favorite sweets into a gift that looks planned. Here are ideas by occasion, what to personalize, what to put inside and how to order with time to spare.",
+    sections: [
+      {
+        heading: "Personalized surprise gift: what makes it special",
+        body: [
+          "A personalized surprise gift works when it carries something that only makes sense for that person: a name, a theme or a detail they love. In Mexico, according to YouGov, 56% of people buying a gift for their mom choose food and drinks and 37% choose something personalized. A candy box brings both together.",
+          "A gift guide for mom from Odin Lake separates personalized gifts (albums, jewelry with names or dates) from food gifts, where personalization is limited to a handwritten note and the wrapping. A candy box with a name and a theme joins both ideas: it is food and it is a design made for one person.",
+        ],
+      },
+      {
+        heading: "Surprise gift ideas with candy for mom",
+        body: [
+          "For mom, a candy box with her name and a theme she recognizes, like flowers or her favorite colors, works well. You choose what goes inside: her usual sweets, chocolates or cookies. That way the gift looks cared for and tastes like what she loves.",
+          "If the surprise comes from several children, you can order one candy box for each sister, aunt or grandmother, each with her own name. The minimum order is 10 pieces, so this idea fits best when the gift is shared among several people.",
+        ],
+      },
+      {
+        heading: "Ideas for your partner: anniversary, birthday and Valentine's Day",
+        body: [
+          "For your partner, the candy box can carry both your names and a theme that recalls something about you two, like a trip or a color. It works for an anniversary, a birthday or Valentine's Day. The sweets inside are their favorites, and the design is what turns it into a gift and not just a box of candy.",
+          "For an anniversary, a candy box with both names and the colors that represent you two looks like a planned detail.",
+        ],
+      },
+      {
+        heading: "What to personalize: name, theme and details",
+        body: [
+          "The personalization of our candy box includes the name and the theme you choose. With that you can build a gift for one person, with a theme they like. Any other detail, like a date or a phrase, is checked over WhatsApp when you request a quote, because it depends on the design.",
+          "Our candy box is lunch box style, with a handle. Send us a reference of the colors or the style that person likes and we adapt the design.",
+        ],
+      },
+      {
+        heading: "What to put inside the gift candy box",
+        body: [
+          "The candy box arrives assembled and empty, so you decide what goes inside, and that is where the surprise is. Pick the recipient's favorite sweets: chocolates, cookies, gummies or traditional Mexican candy. What matters is that the filling feels like that person and the design of the candy box does the rest.",
+          "On budget: in the same YouGov survey, the most common spending range for a gift for mom in Mexico is $201 to $1,000 pesos (58%), and 9% spend between $1,001 and $1,900. Think of this gift as a thoughtful mid-range detail, where the design and what goes inside matter more than the lowest price.",
+        ],
+      },
+      {
+        heading: "How to coordinate the surprise and order ahead",
+        body: [
+          "Order the candy box ahead of time: you quote over WhatsApp, we send a digital proof of the design, and nothing is produced until you approve it. For a specific date, like an anniversary or Valentine's Day, ask about production and shipping times before you decide.",
+          "We serve Guadalajara, Zapopan and ship across Mexico. Write to us on WhatsApp with the occasion, the name and the date you need it, and we will tell you what is possible.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable"],
+    sources: [
+      { label: "Emprendedor: Mother's Day 2026 gifts and Mexicans' budgets, YouGov (in Spanish)", url: "https://emprendedor.com/dia-madres-2026-regalos-presupuesto-mexicanos/" },
+      { label: "Odin Lake: meaningful gifts for mom (in Spanish)", url: "https://odinlake.com/es/blogs/all-blogs/thoughtful-gifts-to-make-mom-feel-special-on-mothers-day" },
+    ],
+    faq: [
+      {
+        q: "Do the candy boxes come with candy?",
+        a: "No. The candy box arrives assembled and empty, ready for you to fill with the sweets you choose.",
+      },
+      {
+        q: "What can be personalized on the candy box?",
+        a: "The name and the theme you choose. If you want to add a date or a phrase, write to us on WhatsApp when you quote and we will confirm.",
+      },
+      {
+        q: "How far ahead should I order for a special date?",
+        a: "It depends on the date. Write to us on WhatsApp with the day you need it and we will confirm production and shipping times.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPostEn(slug: string) {

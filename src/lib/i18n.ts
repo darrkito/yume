@@ -82,6 +82,7 @@ export const BLOG_SLUG_EN: Record<string, string> = {
   "dulceros-para-ninos-invitados-boda": "wedding-candy-boxes-for-kids",
   "aniversario-empresa-detalles-personalizados": "company-anniversary-custom-details",
   "guia-wedding-planners-detalles-personalizados-guadalajara": "wedding-planner-custom-details-guadalajara",
+  "regalo-sorpresa-personalizado-ideas-con-dulceros": "personalized-surprise-gift-ideas-candy-boxes",
 };
 
 export const PRODUCT_SLUG_ES: Record<string, string> = Object.fromEntries(

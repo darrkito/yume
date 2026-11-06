@@ -5588,6 +5588,80 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "regalo-sorpresa-personalizado-ideas-con-dulceros",
+    title: "Regalo sorpresa personalizado: ideas con dulceros",
+    description:
+      "Ideas de regalo sorpresa personalizado con dulces para mamá o tu pareja: qué poner en el dulcero, qué personalizar y cómo pedirlo con prueba digital.",
+    category: "Guías",
+    publishedAt: "2026-11-05",
+    intro:
+      "Regalar dulces es fácil; lograr que se sientan como un regalo sorpresa personalizado es lo difícil. Un dulcero con nombre y temática convierte los dulces favoritos de mamá o de tu pareja en un detalle que se ve pensado. Aquí van ideas por ocasión, qué personalizar, qué poner dentro y cómo pedirlo con tiempo.",
+    sections: [
+      {
+        heading: "Regalo sorpresa personalizado: qué lo hace especial",
+        body: [
+          "Un regalo sorpresa personalizado funciona cuando lleva algo que solo tiene sentido para esa persona: su nombre, una temática o un detalle que le encante. En México, según YouGov, el 56% de quienes compran regalo para su mamá elige comida y bebida y el 37% elige algo personalizado. Un dulcero une las dos ideas.",
+          "Una guía de regalos para mamá de Odin Lake separa los regalos personalizados (álbumes, joyas con nombres o fechas) de los de comida, donde la personalización se limita a una nota escrita a mano y al envoltorio. Un dulcero con nombre y temática junta ambas ideas: es comida y es un diseño hecho para una persona.",
+        ],
+      },
+      {
+        heading: "Ideas de regalo sorpresa con dulces para mamá",
+        body: [
+          "Para mamá funciona un dulcero con su nombre y una temática que ella reconozca, como flores o sus colores favoritos. Tú eliges qué lleva dentro: sus dulces de siempre, chocolates o galletas. Así el regalo se ve cuidado y sabe a lo que a ella le gusta.",
+          "Si la sorpresa es de parte de varios hijos, puedes pedir un dulcero para cada hermana, tía o abuela, cada uno con su nombre. El pedido mínimo es de 10 piezas, así que esta idea encaja mejor cuando el regalo se reparte entre varias personas.",
+        ],
+      },
+      {
+        heading: "Ideas para tu pareja: aniversario, cumpleaños y San Valentín",
+        body: [
+          "Para tu pareja, el dulcero puede llevar sus nombres juntos y una temática que recuerde algo de ustedes, como un viaje o un color. Funciona para un aniversario, un cumpleaños o San Valentín. Adentro van sus dulces favoritos, y el diseño es lo que lo vuelve un regalo y no solo una caja de dulces.",
+          "Para un aniversario, un dulcero con los dos nombres y los colores que los representan se ve como un detalle planeado.",
+        ],
+      },
+      {
+        heading: "Qué personalizar: nombre, temática y detalles",
+        body: [
+          "La personalización de nuestro dulcero incluye el nombre y la temática que elijas. Con eso puedes armar un regalo para una persona concreta, con un tema que le guste. Cualquier otro detalle, como una fecha o una frase, se consulta por WhatsApp al cotizar, porque depende del diseño.",
+          "Nuestro dulcero es tipo lunch box, con asa. Mándanos una referencia de los colores o del estilo que le gusta a esa persona y adaptamos el diseño.",
+        ],
+      },
+      {
+        heading: "Qué poner dentro del dulcero de regalo",
+        body: [
+          "El dulcero llega armado y vacío, así que tú decides el relleno y ahí está la sorpresa. Elige los dulces favoritos de quien lo recibe: chocolates, galletas, gomitas o dulces tradicionales mexicanos. Lo importante es que el relleno se parezca a esa persona y que el diseño del dulcero haga el resto.",
+          "Sobre el presupuesto: en la misma encuesta de YouGov, el rango de gasto más común para un regalo a mamá en México es de $201 a $1,000 (58%), y un 9% gasta entre $1,001 y $1,900. Piensa este regalo como un detalle de valor medio, donde pesan el diseño y lo que pones dentro, no el precio más bajo.",
+        ],
+      },
+      {
+        heading: "Cómo coordinar la sorpresa y pedirlo con anticipación",
+        body: [
+          "Pide el dulcero con anticipación: primero cotizas por WhatsApp, te enviamos una prueba digital del diseño y nada se produce hasta que la apruebas. Para fechas concretas, como un aniversario o San Valentín, pregunta por los tiempos de producción y envío antes de decidir.",
+          "Atendemos Guadalajara, Zapopan y enviamos a todo México. Escríbenos por WhatsApp con la ocasión, el nombre y la fecha en que lo necesitas, y te decimos qué se puede hacer.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara"],
+    sources: [
+      { label: "Emprendedor: regalos del Día de las Madres 2026 y presupuesto de los mexicanos (YouGov)", url: "https://emprendedor.com/dia-madres-2026-regalos-presupuesto-mexicanos/" },
+      { label: "Odin Lake: regalos con significado para mamá", url: "https://odinlake.com/es/blogs/all-blogs/thoughtful-gifts-to-make-mom-feel-special-on-mothers-day" },
+    ],
+    faq: [
+      {
+        q: "¿Los dulceros incluyen dulces?",
+        a: "No. El dulcero llega armado y vacío, listo para que lo llenes con los dulces que elijas.",
+      },
+      {
+        q: "¿Qué se puede personalizar en el dulcero?",
+        a: "El nombre y la temática que elijas. Si quieres sumar una fecha o una frase, escríbenos por WhatsApp al cotizar y te confirmamos.",
+      },
+      {
+        q: "¿Con cuánto tiempo debo pedirlo para una fecha especial?",
+        a: "Depende de la fecha. Escríbenos por WhatsApp con el día en que lo necesitas y te confirmamos los tiempos de producción y envío.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string) {
