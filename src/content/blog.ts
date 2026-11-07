@@ -5194,15 +5194,29 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "dulceros-para-xv-anos-elegantes",
-    title: "Dulceros para XV años elegantes: ideas y cantidades",
+    title: "Qué dulces poner en un dulcero para XV años",
     description:
-      "Dulceros para XV años elegantes: paleta, cantidades de dulce por invitado, montaje de la mesa y cómo pedirlos con prueba digital.",
+      "Qué dulces poner en un dulcero para XV años: clásicos y un detalle sorpresa, cómo combinarlos con la paleta, montar y rotular la mesa y pedir tus dulceros.",
     category: "Guías",
     publishedAt: "2026-11-03",
-    modifiedAt: "2026-11-05",
+    modifiedAt: "2026-11-07",
     intro:
-      "Una mesa de XV años se recuerda por los detalles, y el dulcero es lo que cada invitado se lleva a casa. Aquí tienes cómo elegir dulceros para XV años elegantes: qué los hace verse finos, cómo coordinarlos con la fiesta, cuántos pedir, cuántos dulces calcular por invitado y cómo montar la mesa de dulces. Está pensado para mamás, papás y planners que quieren una mesa que se vea planeada.",
+      "Qué dulces poner en un dulcero para XV años es la duda que más pesa cuando quieres una mesa que se vea planeada. Aquí tienes qué combinar, cómo coordinarlo con la paleta de la fiesta, cuántos dulceros pedir, cómo montar y rotular la mesa de dulces y cómo pedirlos con prueba digital. Está pensado para mamás, papás y planners que cuidan el detalle.",
     sections: [
+      {
+        heading: "Qué dulces poner en un dulcero para XV años",
+        body: [
+          "Para un dulcero de XV años combina clásicos como gomitas, galletas decoradas, mini brownies y bombones con un detalle sorpresa. Bodas.net recomienda esa mezcla y añadir opciones sin gluten, veganas o sin azúcar. El dulcero llega vacío, así que tú eliges el relleno.",
+          "En una mesa de bodas, Bodas.net recomienda de 5 a 7 variedades de postre, una pauta que se puede adaptar a un XV. Si quieres más ideas de relleno, revisa la guía de [qué poner en un dulcero](/blog/que-poner-en-un-dulcero), y consulta los [dulceros personalizados](/productos/dulceros-personalizados) que preparamos con el nombre de la quinceañera.",
+        ],
+      },
+      {
+        heading: "¿Qué dulces combinan con una fiesta elegante de XV años?",
+        body: [
+          "Los que siguen la paleta de la fiesta. Bodas.net aconseja elegir 2 o 3 colores protagonistas y repetirlos en dulces, flores, cintas, carteles y recipientes. Así el dulcero, la mesa y la decoración se ven como un solo conjunto, y la mesa luce planeada en lugar de una suma de dulces sueltos.",
+          "La misma guía explica que la paleta se adapta al estilo del evento: dorado y espejos para uno glam, crema y verde para uno rústico. Elige los dulces por su color antes que por su marca, y deja que el dulcero con los colores de la fiesta cierre el conjunto.",
+        ],
+      },
       {
         heading: "Dulceros para XV años elegantes: qué los hace finos",
         body: [
@@ -5227,36 +5241,17 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "Mesa de dulces para XV años: gramos por invitado",
-        body: [
-          "Una regla práctica de candy bar, tomada de guías en inglés para bodas, calcula entre un cuarto y media libra de dulce por invitado, unos 115 a 225 gramos. Es una referencia orientativa, no una norma de XV años: se ajusta a la baja si hay pastel y a la alza si hay muchos niños.",
-          "La tabla multiplica ese rango por el número de invitados. Los totales son aproximados: redondea según tu fiesta.",
-          "Como ejemplo de una tienda, una guía de candy bar para 24 a 30 personas propone entre 5 y 7 kg de dulces surtidos, con 8 recipientes de distintos tamaños, 3 pinzas o palas y marcadores para identificar cada dulce. Es un caso concreto, no una regla.",
-          "Compra de más antes que de menos si la mesa va a estar abierta mucho tiempo, y baja la cantidad si ya habrá pastel u otros postres.",
-        ],
-        table: {
-          headers: ["Invitados", "Dulce en total (guía)"],
-          rows: [
-            ["30", "3.5 a 6.8 kg"],
-            ["50", "5.8 a 11.3 kg"],
-            ["80", "9.2 a 18 kg"],
-            ["100", "11.5 a 22.5 kg"],
-          ],
-        },
-      },
-      {
         heading: "Montaje de la mesa de dulces: mesa, alturas y color",
         body: [
           "Una mesa de unos 80 por 120 a 160 centímetros alcanza para 30 a 40 personas, según una guía de montaje de La Fiesta de Olivia. Cúbrela con un mantel hasta el piso, pon las piezas altas al centro y al fondo, y usa cajas o bases para crear niveles.",
-          "Mantén una paleta de color coherente con la de tus [dulceros personalizados](/productos/dulceros-personalizados) y combina formas y sabores. La misma guía sugiere tener en cuenta a los invitados celíacos, por ejemplo con malvaviscos sin gluten, y marcar cada dulce para que todos sepan qué toman.",
+          "Bodas.net recomienda repartir los dulces a distintas alturas, usar recipientes variados como frascos de cristal, cajas de madera o soportes de varios pisos, ordenarlos por bloques de color y cuidar que ningún elemento tape a otro.",
+          "Mantén una paleta de color coherente con la de tus [dulceros personalizados](/productos/dulceros-personalizados) y combina formas y sabores. La guía de La Fiesta de Olivia sugiere tener en cuenta a los invitados celíacos, por ejemplo con malvaviscos sin gluten, y marcar cada dulce para que todos sepan qué toman.",
         ],
       },
       {
-        heading: "Qué poner dentro de un dulcero elegante de XV años",
+        heading: "Cómo rotular los dulces y qué dejar a la mano",
         body: [
-          "Para que el dulcero se vea elegante, cuida la presentación de cada pieza: dulces pequeños, de tamaño parecido y con variedad de sabores y texturas. Bodas.net recomienda de 5 a 7 variedades de postre en una mesa de bodas, y esa pauta se puede adaptar a un XV.",
-          "Elige dulces que combinen con la paleta del diseño para que el conjunto se vea coordinado, ya sea en tonos neutros o en los colores de la fiesta.",
-          "Para más ideas según el tipo de invitado, revisa la guía de [qué poner en un dulcero](/blog/que-poner-en-un-dulcero).",
+          "Coloca carteles que indiquen sabores, alérgenos u opciones veganas, y que combinen con la papelería de la fiesta. Bodas.net también recomienda dejar servilletas, pinzas o cucharitas a mano y preparar bolsitas o tarros para que los invitados se lleven dulces. Así cada persona sabe qué dulce toma.",
         ],
       },
       {
@@ -5271,6 +5266,10 @@ export const blogPosts: BlogPost[] = [
     relatedBlogSlugs: ["que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "dulceros-navidenos-personalizados"],
     faq: [
       {
+        q: "¿Qué dulces poner en un dulcero para XV años?",
+        a: "Combina clásicos como gomitas, galletas decoradas, mini brownies y bombones con un detalle sorpresa, siguiendo la guía de Bodas.net adaptada a un XV.",
+      },
+      {
         q: "¿Los dulceros incluyen dulces?",
         a: "No. El dulcero llega armado y vacío, listo para llenar con los dulces que tú elijas.",
       },
@@ -5283,12 +5282,16 @@ export const blogPosts: BlogPost[] = [
         a: "El pedido mínimo es de 10 piezas, y puedes escribir la cantidad exacta que necesitas a partir de ahí.",
       },
       {
-        q: "¿Cuántas variedades de dulce conviene poner?",
-        a: "Bodas.net recomienda de 5 a 7 variedades de postre en una mesa de bodas. Es una guía de boda que se puede adaptar a un XV.",
+        q: "¿Cuántos colores conviene usar en la mesa de dulces?",
+        a: "Bodas.net aconseja elegir 2 o 3 colores protagonistas y repetirlos en dulces, flores, cintas, carteles y recipientes.",
       },
       {
-        q: "¿Cuántos gramos de dulce calculo por invitado?",
-        a: "Una regla práctica de candy bar en inglés habla de un cuarto a media libra por invitado, unos 115 a 225 gramos. Es una referencia orientativa de bodas, no una norma de XV años.",
+        q: "¿Conviene poner carteles en los dulces?",
+        a: "Sí. Bodas.net indica que los carteles pueden señalar sabores, alérgenos u opciones veganas, y que deben combinar con la papelería de la fiesta.",
+      },
+      {
+        q: "¿Cuántas variedades de dulce conviene poner?",
+        a: "Bodas.net recomienda de 5 a 7 variedades de postre en una mesa de bodas. Es una guía de boda que se puede adaptar a un XV.",
       },
       {
         q: "¿Qué tamaño de mesa necesito para la mesa de dulces?",
@@ -5300,6 +5303,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     sources: [
+      { label: "Bodas.net: Cómo decorar la mesa de dulces de la boda", url: "https://www.bodas.net/articulos/como-decorar-la-mesa-de-dulces-de-la-boda--c960" },
       { label: "Bodas.net: Buffets de dulces para bodas", url: "https://www.bodas.net/articulos/buffets-de-dulces-para-bodas--c733" },
       { label: "La Fiesta de Olivia: Cómo montar tu candy bar", url: "https://shop.lafiestadeolivia.com/blogs/blog/17973332-como-montar-tu-misma-un-candy-bar-y-no-morir-en-el-intento" },
       { label: "Mercado Libre: Mesa de dulces vintage (listado)", url: "https://listado.mercadolibre.com.mx/mesa-de-dulces-vintage" },
