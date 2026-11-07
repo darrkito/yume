@@ -4874,6 +4874,97 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "how-many-candy-boxes-to-order-for-a-wedding",
+    title: "How many candy boxes to order for a wedding",
+    description:
+      "How many candy boxes to order for a wedding: turn confirmed guests into pieces, plan a reserve and know when to lock the count with your planner.",
+    category: "Guides",
+    publishedAt: "2026-11-07",
+    intro:
+      "Before ordering your wedding candy boxes it helps to know how many you need: one per guest covers the handout, but not the couple, the candy table or last-minute changes. This guide shows you how to go from the guest list to the final number of pieces, written for brides and for wedding planners.",
+    sections: [
+      {
+        heading: "How many candy boxes to order for a wedding: the simple rule",
+        body: [
+          "Order one candy box per confirmed guest, or one per couple or family if you hand them out that way, then add a reserve for the couple, the candy table and any last-minute changes. Close the count after RSVPs arrive, because the guest list can change right up to the end.",
+          "This differs from a candy bar. Candy bar guides, such as Bodas.net's, calculate by weight of sweets or by number of jars, because the candy is served loose. A candy box is an individual piece, so it is counted per person.",
+        ],
+      },
+      {
+        heading: "Per person or per couple: how to count candy boxes",
+        body: [
+          "Count per person if every guest takes home their own candy box with their name or the wedding design. Count per couple or family if you leave one for each group that arrives together. Decide this first, because it changes the total and how your planner organizes the handout.",
+          "Children count too if they get their own favor. Write them on the list before adding up, and decide with the couple or family whether a guest who comes with a plus-one gets one box or two.",
+        ],
+      },
+      {
+        heading: "From guests to pieces: a step-by-step example",
+        body: [
+          "Add your confirmed guests, add pieces for the couple and the candy table, and finish with a reserve. With 120 confirmed guests, one candy box per person, 2 for the couple, 4 for the candy table and a reserve of 6, the order would be 132 pieces. This is an illustrative example, not a third-party figure.",
+          "The numbers in the table only show the sum; change each line to fit your list. The minimum order for candy boxes is 10 pieces, and you can order any quantity from there.",
+        ],
+        table: {
+          headers: ["Item", "Pieces", "How it is counted"],
+          rows: [
+            ["Confirmed guests", "120", "One per person"],
+            ["Couple", "2", "One for each"],
+            ["Candy table", "4", "To display on the table"],
+            ["Reserve", "6", "Last-minute changes and damaged pieces"],
+            ["Order total", "132", "Sum of everything"],
+          ],
+        },
+      },
+      {
+        heading: "How many extra candy boxes to reserve",
+        body: [
+          "There is no fixed number of extras that works for every wedding. Zola explains that it depends on the price of each piece: with cheap favors, having spares costs little, and with expensive ones it may not be worth it. Reserve more if guests may switch from No to Yes, or if the wedding is a destination wedding.",
+          "Candy boxes are ordered by the piece from 10, so the reserve adjusts to whatever number you decide.",
+        ],
+      },
+      {
+        heading: "Candy boxes for the candy table and for each place setting",
+        body: [
+          "Separate three uses before counting: the candy box handed to each guest, the ones displayed filled on the candy table, and the reserve. This way you do not mix handout pieces with decoration pieces, and you can close each figure separately once you have the final list.",
+          "According to Bodas.net, a candy bar accompanies dessert and the banquet rather than replacing them, and is usually placed near the dance floor or opened after the meal.",
+          "The candy box arrives assembled and empty, so you choose what goes inside.",
+        ],
+      },
+      {
+        heading: "When to lock the number and how to coordinate with your planner",
+        body: [
+          "Lock the quantity once you have attendance confirmations, and tell your supplier your wedding date. If you work with a wedding planner, ask for the final list per person or per couple, so the order, the digital proof and the delivery all use the same number.",
+          "Before production we send you a digital proof of the design, and nothing is produced until you approve it. Production and shipping times depend on your date: write to us on WhatsApp with your wedding day and we will confirm them.",
+        ],
+      },
+    ],
+    relatedProductSlugs: [],
+    quoteMessage: "Hi, I would like a quote for personalized candy boxes for my wedding.",
+    sources: [
+      {
+        label: "Bodas.net: everything to know before setting up a candy bar (Spanish)",
+        url: "https://www.bodas.net/articulos/todo-lo-que-debeis-saber-antes-de-montar-una-candy-bar--c2448",
+      },
+      {
+        label: "Zola: should you buy extra wedding favors?",
+        url: "https://www.zola.com/expert-advice/should-you-buy-extra-wedding-favors",
+      },
+    ],
+    faq: [
+      {
+        q: "How many candy boxes should I order for a wedding of 100 guests?",
+        a: "Start from one candy box per confirmed guest, which is 100 pieces, and add those for the couple, the candy table and the reserve you decide.",
+      },
+      {
+        q: "Do the candy boxes come with candy?",
+        a: "No. The candy box arrives assembled and empty, ready to fill with whatever you choose.",
+      },
+      {
+        q: "What is the minimum order for candy boxes?",
+        a: "The minimum order is 10 pieces, and from there you can order the exact quantity you need.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPostEn(slug: string) {
