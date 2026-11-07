@@ -707,13 +707,13 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "recuerdos-baby-shower-personalizados",
-    title: "Recuerdos para baby shower personalizados: ideas para invitados",
-    metaTitle: "Recuerdos para baby shower personalizados: ideas",
-    description: "Ideas de recuerdos para baby shower personalizados para niña, niño o con colores neutros: dulceros, stickers, cantidades, precios y tiempos.",
+    title: "Dulceros para baby shower personalizados: qué poner y cuántos pedir",
+    metaTitle: "Dulceros para baby shower personalizados: qué poner",
+    description: "Dulceros para baby shower personalizados: qué poner dentro, cuántos pedir con un ejemplo de cálculo, precios y tiempos.",
     category: "Guías",
     publishedAt: "2026-11-03",
-    modifiedAt: "2026-11-05",
-    intro: "Los recuerdos para baby shower personalizados son el último detalle que se lleva cada invitado, y por eso conviene pensarlos con la misma calma que la invitación o la mesa. Aquí encuentras cómo elegir uno, cómo personalizarlo con nombre, paleta y prueba digital, cuántos pedir, cuánto cuestan y con qué tiempo pedirlos, tanto si organizas tú la fiesta como si trabajas con una planner.",
+    modifiedAt: "2026-11-07",
+    intro: "Los dulceros para baby shower personalizados son el último detalle que se lleva cada invitado, y por eso conviene pensarlos con la misma calma que la invitación o la mesa. Aquí encuentras qué poner dentro, cómo elegir entre dulcero individual y mesa de dulces, cuántos pedir con un ejemplo de cálculo, cuánto cuestan y con qué tiempo pedirlos, tanto si organizas tú la fiesta como si trabajas con una planner.",
     sections: [
       {
         heading: "Qué recuerdo de baby shower elegir",
@@ -721,6 +721,20 @@ export const blogPosts: BlogPost[] = [
           "Elige un recuerdo pequeño, igual para cada invitado y fácil de llevar a casa. Un dulcero personalizado cumple con eso: llega armado y vacío, tiene asa y se llena con lo que tú decidas. Lo que lo hace especial es el diseño, no solo el nombre del bebé.",
           "Una guía de checklist para baby showers describe el recuerdo ideal como algo pequeño, igual para todos y colocado cerca de la salida. Sus ejemplos son algo comestible, una planta, una vela o un sobre de semillas. Un [dulcero personalizado](/productos/dulceros-personalizados) entra en esa idea, con la ventaja de que el diseño es propio de tu fiesta y no uno de catálogo.",
           "Una nota de Crónica sobre recuerdos de boda en México en 2026 apunta en la misma dirección: los invitados conservan piezas útiles y con diseño propio, mientras que los recuerdos genéricos suelen acabar olvidados. Aplicado al baby shower, la idea es sumar diseño y utilidad, no solo poner un nombre. Para decidir qué lleva dentro, revisa [qué poner en un dulcero](/blog/que-poner-en-un-dulcero).",
+        ],
+      },
+      {
+        heading: "Dulceros para baby shower personalizados: qué poner dentro",
+        body: [
+          "El dulcero llega armado y vacío, así que tú eliges el relleno. Una guía en español sobre baby shower propone como recuerdos comestibles galletas decoradas, chocolates y dulces en empaques que reflejen el tema de la fiesta, y dice que los dulces siempre son un éxito. Tú decides la combinación que va con tu paleta.",
+          "La personalización del dulcero incluye el nombre y la temática, así que ahí va lo que une el relleno con el resto de la fiesta: el nombre del bebé o de la mamá y la paleta que elegiste. Puedes pedir tus [dulceros para baby shower](/productos/dulceros-personalizados) con el nombre y la temática de tu fiesta.",
+        ],
+      },
+      {
+        heading: "Dulcero individual o mesa de dulces: cuál elegir",
+        body: [
+          "El dulcero individual es una pieza por invitado con su empaque personalizado, y se lleva a casa. La mesa de dulces es compartida y se queda en la fiesta como parte de la decoración. Si quieres que cada persona se vaya con un recuerdo propio, elige el dulcero; la mesa funciona como complemento.",
+          "La misma guía en español menciona cupcakes y galletas para la mesa de dulces, y por separado propone los empaques personalizados como recuerdo comestible. Dos piezas distintas, dos papeles distintos: la mesa se disfruta en la fiesta y el dulcero es lo último que se lleva cada invitado.",
         ],
       },
       {
@@ -741,10 +755,11 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "Cuántos recuerdos pedir y cuánto cuestan",
+        heading: "Cuántos dulceros pedir para un baby shower y cuánto cuestan",
         body: [
-          `Pide un recuerdo por cada invitado confirmado, o uno por familia si así lo decides. El mínimo es de 10 dulceros. Primeras 100 piezas: $${priceOf("dulceros-personalizados", 10)} MXN por 10 o $${priceOf("dulceros-personalizados", 50)} MXN por 50. Arriba de 100 piezas es precio mayoreo y se cotiza por WhatsApp.`,
-          `Los stickers de vinil tienen un mínimo de 40 piezas, que cuestan $${priceOf("stickers-vinil-impermeable", 40)} MXN. Cuando cierres la lista de confirmados sabrás cuántos invitados son, y de ahí sale la cantidad de dulceros y de stickers.`,
+          "Pide un dulcero por invitado confirmado y suma 10% de margen. El margen cubre a un acompañante que no estaba en la lista, a quien se lleva uno para alguien que no pudo ir y a una pieza dañada. Es la regla de 1.1 por invitado que usa una calculadora de recuerdos para eventos de adultos.",
+          `Ejemplo: con 40 invitados confirmados, 40 por 1.1 son 44 dulceros. Primeras 100 piezas: 44 dulceros cuestan $${priceOf("dulceros-personalizados", 44)} MXN. El mínimo es de 10 piezas: 10 dulceros cuestan $${priceOf("dulceros-personalizados", 10)} MXN y 50 cuestan $${priceOf("dulceros-personalizados", 50)} MXN. Arriba de 100 piezas es precio mayoreo y se cotiza por WhatsApp.`,
+          `Los stickers de vinil tienen un mínimo de 40 piezas, que cuestan $${priceOf("stickers-vinil-impermeable", 40)} MXN. Cuando cierres la lista de confirmados, aplica la cuenta anterior para los dulceros y decide cuántos stickers sumar.`,
           "Si quieres comparar ideas para otras celebraciones, consulta la [guía de dulceros para eventos sociales](/blog/dulceros-para-eventos-sociales-boda-xv-baby-shower).",
         ],
       },
@@ -769,6 +784,8 @@ export const blogPosts: BlogPost[] = [
     sources: [
       { label: "Visu: checklist para baby shower", url: "https://visu.network/es/articulos/checklist-para-baby-shower/" },
       { label: "Crónica: recuerdos de boda que sí se quedan los invitados en 2026", url: "https://www.cronica.com.mx/tendencias/2026/09/04/dile-adios-a-los-recuerdos-de-boda-que-terminan-en-la-basura-esto-es-lo-que-si-se-quedan-tus-invitados-en-2026/" },
+      { label: "HaceCuentas: calculadora de regalos y souvenirs por invitado", url: "https://hacecuentas.com/calculadora-regalos-invitado-souvenir" },
+      { label: "Guía Infantil: ideas para regalar a los invitados en un baby shower", url: "https://www.guiainfantil.com/bebes/canastilla-ajuar/decoracion-e-ideas-para-regalar-a-los-invitados-en-un-baby-shower/" },
     ],
     faq: [
       {
@@ -780,12 +797,24 @@ export const blogPosts: BlogPost[] = [
         a: "No. El dulcero llega armado y vacío, listo para llenar con los dulces o detalles que tú elijas.",
       },
       {
+        q: "¿Qué puedo poner dentro de un dulcero de baby shower?",
+        a: "Una guía en español sobre baby shower propone galletas decoradas, chocolates y dulces en empaques que reflejen el tema de la fiesta.",
+      },
+      {
+        q: "¿Cuántos dulceros pido si confirman 60 invitados?",
+        a: "Con la regla de 1.1 por invitado serían 66 dulceros: uno por persona más 10% de margen.",
+      },
+      {
         q: "¿Cuál es el pedido mínimo?",
         a: "Para dulceros personalizados el mínimo es de 10 piezas. Para stickers de vinil el mínimo es de 40 piezas.",
       },
       {
         q: "¿Puedo ver el diseño antes de que se produzca?",
         a: "Sí. Te enviamos una prueba digital antes de producir, y nada se produce hasta que la apruebas.",
+      },
+      {
+        q: "¿Cuánto tardan en llegar los dulceros?",
+        a: `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional, o ${PICKUP_EXTRA_DAYS} día hábil si recoges en una sucursal Casa Blanca de Guadalajara.`,
       },
       {
         q: "¿Con cuánta anticipación conviene empezar a planear el baby shower?",
