@@ -664,6 +664,10 @@ export const blogPostsEn: BlogPost[] = [
       { heading: "How many to order and what they cost", body: [`Count confirmed guests and decide whether to give one per person or family; consider extras. The minimum is 10 favor boxes. The first 100 pieces cost $${priceOf("dulceros-personalizados", 10)} MXN for 10 or $${priceOf("dulceros-personalizados", 50)} MXN for 50; quantities above 100 are quoted on WhatsApp.`, "The minimum for vinyl stickers is 40 pieces. See the [social event favor box guide](/en/blog/wedding-quinceanera-baby-shower-favor-boxes) for ideas for other celebrations."] },
       { heading: "When to order favors", body: [`Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after digital proof approval. Add ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} business days for national shipping or ${PICKUP_EXTRA_DAYS} business day for Casa Blanca pickup in Guadalajara.`, "Allow time to decide on the name and theme and review the proof. Share your date and quantity on WhatsApp if you need to confirm the schedule."] },
     ],
+    faq: [
+      { q: "Can I personalize baby shower favors for a girl, a boy or a neutral palette?", a: "Yes. Pink, blue, green, beige or white palettes can accompany the baby's name on the favor box and the sticker. You receive a digital proof to review before production." },
+      { q: "When should I order baby shower favors?", a: `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after digital proof approval. Add ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} business days for national shipping or ${PICKUP_EXTRA_DAYS} business day for Casa Blanca pickup in Guadalajara.` },
+    ],
     relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
     relatedBlogSlugs: [BLOG_SLUG_EN["dulceros-para-eventos-sociales-boda-xv-baby-shower"], BLOG_SLUG_EN["que-poner-en-un-dulcero"]],
   },
@@ -2570,6 +2574,10 @@ export const blogPostsEn: BlogPost[] = [
           "We produce in Guadalajara and ship anywhere in Mexico, so the same process applies whether your business sells at local markets or ships to other states.",
         ],
       },
+    ],
+    faq: [
+      { q: "How do I get a quote for stickers with my logo?", a: "Send your logo as a PNG, PDF, AI, or SVG with a transparent background over WhatsApp, along with the quantity and size you want. We prepare a digital proof before printing." },
+      { q: "Do you ship stickers outside Guadalajara?", a: "We produce in Guadalajara and ship anywhere in Mexico." },
     ],
     relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
   },
