@@ -4198,44 +4198,64 @@ export const blogPosts: BlogPost[] = [
     title: "Impresión de etiquetas personalizadas: en rollo, en hoja o por pieza",
     metaTitle: "Impresión de etiquetas: en rollo, en hoja o por pieza",
     description:
-      "Impresión de etiquetas en rollo, en hoja o por pieza: cuál te conviene según cuántas necesitas y cómo las vas a pegar, con precios reales desde 50 piezas.",
+      "Impresión de etiquetas en rollo, en hoja o por pieza: cuál elegir según cantidad, diseños y material, con precios reales desde 50 piezas.",
     category: "Guías",
     publishedAt: "2026-10-20",
+    modifiedAt: "2026-11-07",
     intro:
-      "Cuando buscas dónde mandar a hacer etiquetas para tu producto o tu negocio, la primera decisión no es el diseño sino el formato: hay imprentas que trabajan etiquetas en rollo, otras que imprimen hojas completas y otras que te entregan cada etiqueta cortada a su forma. Cada formato tiene sentido para un tipo de negocio distinto, y elegir el equivocado es la forma más común de pagar de más o de terminar con etiquetas que no te sirven.",
+      "Cuando buscas dónde mandar a hacer la impresión de etiquetas, la primera decisión no es el diseño sino el formato: hay imprentas que trabajan etiquetas en rollo, otras que imprimen hojas completas y otras que te entregan cada etiqueta cortada a su forma. Cada formato tiene sentido para una necesidad distinta, ya sea el empaque de tu negocio, los detalles de una boda o el souvenir de un baby shower, y elegir el equivocado es la forma más común de pagar de más o de terminar con etiquetas que no te sirven.",
     sections: [
+      {
+        heading: "Impresión de etiquetas: qué cambia entre rollo, hoja y pieza",
+        body: [
+          "La diferencia está en cómo llegan y cómo se aplican. El rollo es una tira continua sobre un respaldo, pensada para tiradas largas y volúmenes altos. La hoja viene precortada y se despega a mano. La pieza se corta a la forma de tu diseño y la pides por cantidad exacta.",
+          "Avery presenta la hoja como la opción para pruebas de diseño y tiradas cortas de temporada, y el rollo para pedidos grandes. La pieza cortada a la forma de tu diseño es lo que hacemos en Yume.",
+          "Con estas tres ideas claras, el resto de la guía te ayuda a decidir según cantidad, forma de aplicación, número de diseños y material.",
+        ],
+      },
       {
         heading: "Etiquetas en rollo: para volumen y máquinas etiquetadoras",
         body: [
-          "Las etiquetas en rollo se imprimen una tras otra sobre una tira con respaldo y están pensadas para negocios que etiquetan muchos productos iguales: bebidas, alimentos empacados, cosmética en serie. Su ventaja es que se aplican con una máquina etiquetadora o un despachador, sin despegarlas una por una.",
-          "La contraparte es que se suelen trabajar en tirajes grandes del mismo diseño: si apenas estás arrancando o cambias de diseño seguido, terminas comprando más de las que vas a usar. En Yume no tenemos etiquetas en rollo en el catálogo; si tu producción usa etiquetadora, escríbenos por WhatsApp antes de pedir y te decimos si podemos ayudarte.",
+          "Las etiquetas en rollo convienen cuando repites el mismo diseño muchas veces y las aplicas con una máquina etiquetadora. Se pueden usar también a mano desde un soporte, pero su ventaja real aparece en tiradas largas. En Yume no tenemos rollo en el catálogo, así que escríbenos por WhatsApp antes de pedir si lo necesitas.",
+          "Otra diferencia práctica es la impresión: un rollo imprimible necesita una impresora específica. Según Avery, con prensas digitales no hay cargos por placas ni por cuatricromía, y con flexografía es probable que haya cargos extra.",
+          "La contraparte es que se suelen trabajar en tirajes grandes del mismo diseño: si apenas estás arrancando o cambias de diseño seguido, terminas comprando más de las que vas a usar.",
         ],
       },
       {
         heading: "Etiquetas en hoja: varias en un mismo pliego",
         body: [
-          "En hoja, varias etiquetas se imprimen juntas y las despegas a mano. Es el formato de las hojas de etiquetas para impresora de oficina y de muchas imprentas rápidas: práctico cuando tus etiquetas son rectangulares o redondas y las vas a pegar tú.",
-          "El límite está en la forma y el material: en hojas estándar sueles elegir entre medidas ya definidas, y si son de papel no aguantan bien el agua ni el roce. Si estás pensando en imprimirlas en casa, en nuestra guía de dónde imprimir stickers personalizados comparamos imprimir tú mismo contra mandarlas a hacer.",
+          "La hoja trae varias etiquetas precortadas en un pliego de 8.5 x 11 pulgadas que se despegan a mano. Es práctica para necesidades pequeñas u ocasionales y para probar un diseño, y se imprime en impresoras estándar de inyección de tinta o láser. Su límite son las medidas y formas ya definidas.",
+          "Si estás pensando en imprimirlas en casa, en nuestra guía de [dónde imprimir stickers personalizados](/blog/donde-imprimir-stickers-personalizados-mexico) comparamos imprimir tú mismo contra mandarlas a hacer.",
         ],
       },
       {
         heading: "Etiquetas por pieza: cortadas a la forma de tu diseño",
         body: [
-          "La tercera opción es la que trabajamos en Yume: cada etiqueta sigue la forma de tu logo o diseño y la pides por cantidad exacta de piezas, no por hoja ni por rollo. Eliges troquelado (cada etiqueta suelta, cortada por completo a su silueta) o semitroquelado (cortada a la forma, pero sobre su hoja de respaldo para despegarla cuando la uses).",
-          "Es el formato que mejor le queda a marcas pequeñas y medianas que etiquetan a mano: empaques, bolsas, frascos, velas o cajas de envío. Pides desde 50 piezas con tu logo, sin comprometerte a un tiraje grande, y antes de imprimir te mandamos una prueba digital para aprobar.",
+          "La etiqueta por pieza sigue la silueta de tu logo o diseño y la pides por cantidad exacta, no por hoja ni por rollo. Puedes elegir troquelado, con cada etiqueta suelta, o semitroquelado, cortada a la forma sobre su respaldo. Es el formato que trabajamos en Yume, desde 50 piezas con tu logo.",
+          "Es el formato que mejor le queda a quien pega a mano y necesita variedad: empaques, bolsas, frascos, velas, cajas de envío o detalles de un evento. Pides sin comprometerte a un tiraje grande, y antes de imprimir te mandamos una prueba digital para aprobar.",
+          "Puedes ver las [etiquetas con tu logo](/productos/stickers-logo-personalizado) o los [stickers de vinil](/productos/stickers-vinil-impermeable) con tu diseño, personaje o foto.",
         ],
       },
       {
-        heading: "Material y acabado",
+        heading: "Etiquetas para eventos: por qué casi nunca necesitas rollo",
         body: [
-          "Nuestras etiquetas son de vinil y resistentes al agua; los Stickers de Vinil Personalizados además resisten el sol y los rayones. La diferencia contra el papel se nota sobre todo en productos que se mojan o se manejan mucho, y la explicamos a detalle en nuestra guía de vinil vs. papel.",
-          "En acabado eliges mate, brillante u holográfico (el holográfico suma $0.50 por pieza).",
+          "Un evento suele pedir varios diseños en cantidades pequeñas: una para los souvenirs, otra para la mesa de dulces, otra para las copas. Por eso encaja mejor la hoja o la pieza, y el rollo se queda para repetir el mismo diseño muchas veces.",
+          "Si tu boda, baby shower, bautizo o evento de empresa lleva un diseño distinto por cada detalle, con la etiqueta por pieza pides la cantidad exacta de cada uno: desde 50 piezas en las etiquetas con tu logo y desde 40 en los stickers de vinil con tu diseño.",
+        ],
+      },
+      {
+        heading: "Material y acabado: el formato no da la resistencia al agua",
+        body: [
+          "Lo que resiste el agua es el material, no el formato. Una etiqueta de papel no se vuelve impermeable, y los consejos para proteger la impresión funcionan mejor con base de película. Nuestras etiquetas son de vinil y resistentes al agua; si habrá hielo, hieleras o botellas frías, pide siempre un material resistente.",
+          "Los Stickers de Vinil Personalizados además resisten el sol y los rayones. En acabado eliges mate, brillante u holográfico (el holográfico suma $0.50 por pieza). La comparación completa está en nuestra guía de [vinil vs. papel](/blog/stickers-vinil-vs-papel-diferencias).",
+          "Si imprimes en casa con inyección de tinta, Online Labels recomienda usar el ajuste de papel fotográfico o brillante y dejar secar al menos unas horas, idealmente 24. Para protección extra menciona barniz en spray transparente brillante o una hoja de sobrecapa transparente.",
         ],
       },
       {
         heading: "Cuánto cuesta la impresión de etiquetas por pieza",
         body: [
-          `Estos son los precios reales de nuestro catálogo. Pasando las 100 piezas, cada pieza extra va a precio mayoreo, 10% menos. El envío va aparte: $${NATIONAL_SHIPPING_PRICE} a todo México o $${CASABLANCA_PRICE} si recoges en una sucursal Casa Blanca de Guadalajara, y es gratis en compras de $${FREE_SHIPPING_THRESHOLD} o más.`,
+          `Primeras 100 piezas: precios reales de nuestro catálogo en la tabla. Pasando las 100 piezas, cada pieza extra va a precio mayoreo, 10% menos. El envío va aparte: $${NATIONAL_SHIPPING_PRICE} a todo México o $${CASABLANCA_PRICE} si recoges en una sucursal Casa Blanca de Guadalajara, y es gratis en compras de $${FREE_SHIPPING_THRESHOLD} o más.`,
+          "El pedido mínimo es de 50 piezas en las etiquetas con tu logo y de 40 piezas en los stickers de vinil, así que pides cerca del número que de verdad vas a usar.",
         ],
         table: {
           headers: ["Cantidad", "Etiquetas con tu logo", "Stickers de vinil (tu diseño)"],
@@ -4245,10 +4265,11 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Cómo elegir en 4 preguntas",
         body: [
+          "Cuatro preguntas resuelven casi todo: cuántas necesitas y de cuántos diseños, cómo las vas a pegar, qué forma tiene tu logo y si se van a mojar. Con esas respuestas sabes si te conviene rollo, hoja o pieza, sin comprar de más ni quedarte con etiquetas que no te sirven.",
           "¿Cuántas necesitas? Si son decenas o cientos, por pieza. Si son miles del mismo diseño cada mes, vale la pena cotizar en rollo.",
           "¿Cómo las vas a pegar? A mano: por pieza o en hoja. Con máquina etiquetadora: en rollo.",
           "¿Qué forma tiene tu logo? Si no es un rectángulo o un círculo, una etiqueta cortada a su forma se ve mucho mejor que un cuadro con fondo blanco alrededor.",
-          "¿Se va a mojar o a manejar mucho? Entonces vinil, no papel.",
+          "¿Se va a mojar o a manejar mucho? Entonces pide un material resistente, como el vinil, y no papel.",
         ],
       },
     ],
@@ -4258,12 +4279,16 @@ export const blogPosts: BlogPost[] = [
         a: "Depende de cómo las aplicas: en rollo si usas máquina etiquetadora o despachador y pides tirajes grandes del mismo diseño; en hoja o por pieza si las pegas a mano y necesitas cantidades más chicas.",
       },
       {
+        q: "¿Puedo imprimir etiquetas en hoja con mi impresora de oficina?",
+        a: "Según Avery, las hojas de etiquetas se imprimen en impresoras estándar de inyección de tinta o láser, a diferencia de un rollo imprimible, que necesita una impresora específica.",
+      },
+      {
         q: "¿Cuál es el mínimo para imprimir etiquetas en Yume?",
         a: "50 piezas en las Etiquetas con tu Logo y 40 piezas en los Stickers de Vinil Personalizados.",
       },
       {
         q: "¿Cuánto cuestan 100 etiquetas personalizadas?",
-        a: `100 etiquetas con tu logo cuestan $${priceOf("stickers-logo-personalizado", 100)} y 100 stickers de vinil con tu diseño cuestan $${priceOf("stickers-vinil-impermeable", 100)}. Pasando las 100 piezas, cada pieza extra va a precio mayoreo.`,
+        a: `Primeras 100 piezas: 100 etiquetas con tu logo cuestan $${priceOf("stickers-logo-personalizado", 100)} y 100 stickers de vinil con tu diseño cuestan $${priceOf("stickers-vinil-impermeable", 100)}. Pasando las 100 piezas, cada pieza extra va a precio mayoreo.`,
       },
       {
         q: "¿Imprimen etiquetas en rollo?",
@@ -4271,15 +4296,19 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Las etiquetas resisten el agua?",
-        a: "Sí, todas nuestras etiquetas y stickers son de vinil resistente al agua.",
+        a: "Sí, todas nuestras etiquetas y stickers son de vinil resistente al agua. Lo que decide la resistencia es el material y no el formato: una etiqueta de papel no se vuelve impermeable.",
       },
       {
         q: "¿Cuánto tarda la impresión de mis etiquetas?",
         a: `La prueba digital llega en un máximo de 24 horas después del pago. Desde que la apruebas, tu pedido llega a domicilio en ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles, o está listo para recoger en Casa Blanca (Guadalajara) en ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles.`,
       },
     ],
-    relatedProductSlugs: ["stickers-logo-personalizado"],
-    relatedBlogSlugs: ["stickers-vinil-vs-papel-diferencias", "troquelado-vs-semitroquelado-stickers", "donde-imprimir-stickers-personalizados-mexico"],
+    relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["stickers-vinil-vs-papel-diferencias", "donde-imprimir-stickers-personalizados-mexico"],
+    sources: [
+      { label: "Avery: ¿etiquetas en rollo o en hoja?", url: "https://www.avery.com/blog/should-you-use-roll-labels-or-sheet-labels/" },
+      { label: "Online Labels: cómo hacer etiquetas resistentes al agua", url: "https://www.onlinelabels.com/articles/how-to-make-labels-waterproof" },
+    ],
   },
   {
     slug: "etiquetas-navidenas-personalizadas",
