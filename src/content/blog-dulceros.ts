@@ -1342,6 +1342,79 @@ export const dulceroPosts: BlogPost[] = [
     ],
   },
   {
+    slug: "cuantos-souvenirs-pedir-por-evento",
+    title: "Cuántos detalles pedir por evento según el tipo de fiesta",
+    description:
+      "Cuántos detalles pedir por evento: tabla por tipo de fiesta, fórmula para planners y cuándo cerrar la cifra final de piezas.",
+    category: "Guías",
+    publishedAt: "2026-11-07",
+    modifiedAt: "2026-11-07",
+    intro:
+      "Si manejas varios eventos a la vez, la pregunta de cuántos detalles pedir por evento aparece en cada uno. Las fuentes abiertas no coinciden: unas cuentan un detalle por invitado y otras uno por pareja o familia. Aquí tienes una tabla por tipo de fiesta, una fórmula que puedes copiar a tu hoja de cálculo y un criterio para cerrar la cifra final.",
+    sections: [
+      {
+        heading: "Cuántos detalles pedir por evento: la regla base",
+        body: [
+          "La regla base es partir de los invitados confirmados y sumar un margen según el tipo de fiesta. Hacecuentas usa 1,1 detalles por invitado en eventos de adultos, es decir, 10% extra. Otras fuentes cuentan por pareja o familia, así que primero decide cómo contarás y después aplica el margen.",
+          "Las fuentes divergen. Una nota de El Imparcial sobre recuerdos para XV años dice que no hace falta uno por persona: sugiere uno por familia o pareja, más algunos extras. Su ejemplo es que para 100 invitados bastan unos 60 o 70 recuerdos. Es un ejemplo de esa nota, no una regla para todos los eventos.",
+        ],
+      },
+      {
+        heading: "Tabla por tipo de fiesta: cómo contar y qué margen usar",
+        body: [
+          "La tabla resume cómo contar y qué margen usar en seis tipos de evento. Solo hay cifras de margen donde una fuente abierta las da: adultos y cumpleaños infantil. En el resto, el margen es criterio tuyo y de tu cliente, y lo confirmas antes de cerrar el pedido.",
+          "El margen cubre confirmaciones tardías, piezas dañadas y el reproceso de la prueba digital. Son cifras de referencia de fuentes abiertas, no una norma del sector.",
+        ],
+        table: {
+          headers: ["Tipo de fiesta", "Cómo contar", "Margen de referencia"],
+          rows: [
+            ["Boda", "Por invitado o por pareja, según lo acuerdes con tu cliente", "Referencia de adultos: 1,1 por invitado (Hacecuentas)"],
+            ["XV años", "Por persona, o por familia o pareja (El Imparcial)", "Algunos extras, sin porcentaje en la fuente. Ejemplo de El Imparcial: 60 o 70 para 100 invitados"],
+            ["Bautizo", "Por invitado o por familia, según el evento", "Referencia de adultos: 1,1 por invitado (Hacecuentas). Sin cifra propia para este tipo"],
+            ["Baby shower", "Por invitado o por familia, según el evento", "Referencia de adultos: 1,1 por invitado (Hacecuentas). Sin cifra propia para este tipo"],
+            ["Cumpleaños infantil", "Por niño", "1 por niño y 2 o 3 extra a mano (Hacecuentas)"],
+            ["Corporativo", "Por asistente confirmado", "Referencia de adultos: 1,1 por invitado (Hacecuentas). Sin cifra propia para este tipo"],
+          ],
+        },
+      },
+      {
+        heading: "Fórmula para planners: invitados confirmados y piezas a producir",
+        body: [
+          "Copia esta fórmula: piezas a producir es igual a las unidades de conteo confirmadas por el factor del margen. La unidad puede ser invitado, pareja o familia. Con 80 invitados adultos y la referencia de 1,1, salen 88 piezas. Guarda dos cifras separadas: invitados confirmados y piezas a producir.",
+          "Si llevas varios eventos, usa una fila por evento con su tipo de fiesta, su unidad de conteo y su factor. Así cada evento tiene su propia cifra y no arrastras el margen de uno a otro. Para ver ideas de qué poner en cada pieza, revisa la guía de [qué poner en un dulcero](/blog/que-poner-en-un-dulcero).",
+          "Si tu cliente quiere un detalle distinto al dulcero, como [stickers de vinil personalizados](/productos/stickers-vinil-impermeable), la fórmula es la misma: cuenta primero y aplica el margen después. También puedes revisar [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara).",
+        ],
+      },
+      {
+        heading: "¿Cuándo cerrar la cifra final de piezas?",
+        body: [
+          "Cierra la cifra final cuando tu cliente tenga la lista de confirmados definitiva y apruebe la prueba digital, porque los días de producción se cuentan desde esa aprobación. Antes de eso, sigue ajustando tu hoja y confirma por WhatsApp cualquier duda.",
+          `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba digital, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional. Con esos plazos, deja la lista de confirmados cerrada con margen antes de la fecha del evento.`,
+        ],
+      },
+    ],
+    relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara"],
+    sources: [
+      { label: "Hacecuentas: calculadora de regalos por invitado (souvenirs)", url: "https://hacecuentas.com/calculadora-regalos-invitado-souvenir" },
+      { label: "El Imparcial: recuerdos para 15 años", url: "https://www.elimparcial.com/locurioso/2026/05/14/recuerdos-para-15-anos-ideas-originales-con-fotos-que-las-quinceaneras-guardaran-para-siempre/" },
+    ],
+    faq: [
+      {
+        q: "¿Cuántos detalles pedir por invitado?",
+        a: "Hacecuentas usa 1,1 por invitado en eventos de adultos, es decir, 10% extra. En cumpleaños infantiles usa 1 por niño y recomienda sumar 2 o 3 a mano.",
+      },
+      {
+        q: "¿Un detalle por persona o uno por pareja?",
+        a: "Las fuentes no coinciden. Hacecuentas cuenta por invitado y El Imparcial sugiere uno por familia o pareja en XV años. Decide con tu cliente cómo contar antes de aplicar el margen.",
+      },
+      {
+        q: "¿Bastan 60 o 70 recuerdos para 100 invitados?",
+        a: "Es el ejemplo que da El Imparcial en una nota sobre XV años, contando por familia o pareja. No es una regla general para todos los eventos.",
+      },
+    ],
+  },
+  {
     slug: "dulceros-dia-de-muertos-noviembre",
     title: "Dulceros para Día de Muertos y noviembre: ideas para el salón y la fiesta",
     metaTitle: "Dulceros para Día de Muertos y noviembre: ideas",
