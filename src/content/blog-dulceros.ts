@@ -1343,46 +1343,65 @@ export const dulceroPosts: BlogPost[] = [
   },
   {
     slug: "cuantos-souvenirs-pedir-por-evento",
-    title: "Cuántos detalles pedir por evento según el tipo de fiesta",
+    title: "Cuántos souvenirs pedir por evento: guía por tipo de fiesta",
+    metaTitle: "Cuántos souvenirs pedir por evento: guía por fiesta",
     description:
-      "Cuántos detalles pedir por evento: tabla por tipo de fiesta, fórmula para planners y cuándo cerrar la cifra final de piezas.",
+      "Cuántos souvenirs pedir por evento: cómo contar en bodas, XV años, bautizos y fiestas infantiles, qué margen usar y cuándo cerrar la cifra final.",
     category: "Guías",
     publishedAt: "2026-11-07",
     modifiedAt: "2026-11-07",
     intro:
-      "Si manejas varios eventos a la vez, la pregunta de cuántos detalles pedir por evento aparece en cada uno. Las fuentes abiertas no coinciden: unas cuentan un detalle por invitado y otras uno por pareja o familia. Aquí tienes una tabla por tipo de fiesta, una fórmula que puedes copiar a tu hoja de cálculo y un criterio para cerrar la cifra final.",
+      "Si organizas un evento, o varios a la vez, la pregunta de cuántos souvenirs pedir aparece siempre antes de cerrar el pedido. Pedir de menos deja a un invitado sin su recuerdo, y pedir de más sube el costo sin necesidad. Aquí tienes cómo contar según el tipo de fiesta, una fórmula para tu hoja de cálculo y el momento de cerrar la cifra final.",
     sections: [
       {
-        heading: "Cuántos detalles pedir por evento: la regla base",
+        heading: "Cuántos souvenirs pedir por evento: la regla base",
         body: [
-          "La regla base es partir de los invitados confirmados y sumar un margen según el tipo de fiesta. Hacecuentas usa 1,1 detalles por invitado en eventos de adultos, es decir, 10% extra. Otras fuentes cuentan por pareja o familia, así que primero decide cómo contarás y después aplica el margen.",
-          "Las fuentes divergen. Una nota de El Imparcial sobre recuerdos para XV años dice que no hace falta uno por persona: sugiere uno por familia o pareja, más algunos extras. Su ejemplo es que para 100 invitados bastan unos 60 o 70 recuerdos. Es un ejemplo de esa nota, no una regla para todos los eventos.",
+          "Parte de los invitados confirmados y súmale un margen pequeño. La calculadora de Hacecuentas usa 1.1 souvenirs por invitado en eventos de adultos, es decir, 10% extra, para cubrir a un acompañante no anotado o una pieza que se rompe. En cumpleaños infantiles cuenta 1 por niño y suma dos o tres a mano.",
+          "Esa calculadora cubre solo dos casos: eventos de adultos y cumpleaños infantiles. Para bodas, XV años, bautizos, baby showers y eventos de empresa no encontramos una regla verificable en fuentes abiertas, así que no te damos una cifra inventada. En esos casos la decisión es de tu evento: qué unidad cuentas y cuánto margen te da tranquilidad.",
+          "El margen de 10% tiene una lógica fácil de entender: cubre a alguien que llega sin haber avisado o una pieza que no sale como esperabas. Si tu lista ya está cerrada y confirmada, el margen puede ser pequeño. Si todavía faltan respuestas, conviene tenerlas antes de calcular.",
         ],
       },
       {
-        heading: "Tabla por tipo de fiesta: cómo contar y qué margen usar",
+        heading: "Invitados confirmados o invitados totales: cuál contar",
         body: [
-          "La tabla resume cómo contar y qué margen usar en seis tipos de evento. Solo hay cifras de margen donde una fuente abierta las da: adultos y cumpleaños infantil. En el resto, el margen es criterio tuyo y de tu cliente, y lo confirmas antes de cerrar el pedido.",
-          "El margen cubre confirmaciones tardías, piezas dañadas y el reproceso de la prueba digital. Son cifras de referencia de fuentes abiertas, no una norma del sector.",
+          "Cuenta los invitados confirmados, no la lista total de invitaciones enviadas. Una lista total incluye a quienes tal vez no asistan, y producir de más sube el costo sin necesidad. Guarda dos cifras separadas en tu hoja: invitados confirmados y piezas a producir, y calcula la segunda a partir de la primera.",
+          "Imagina una boda con 120 invitaciones enviadas y 90 confirmaciones. Tu punto de partida son los 90, no los 120. Con la referencia de 1.1 para adultos, 90 por 1.1 son 99 piezas. Si después llegan más confirmaciones, actualizas la primera cifra y recalculas la segunda, sin tocar el resto de tu hoja.",
+          "Separar las dos cifras también ayuda a hablar con tu cliente. Él piensa en personas y tú piensas en piezas. Cuando ambos ven cuántos son los confirmados y cuántas son las piezas, es más fácil explicar por qué el pedido no coincide exactamente con la lista.",
+        ],
+      },
+      {
+        heading: "Tabla por tipo de fiesta: cómo contar en cada evento",
+        body: [
+          "La tabla indica qué unidad conviene contar en cada tipo de evento. Solo hay cifra de margen donde una fuente abierta la da: adultos y cumpleaños infantil. En bodas, XV años, bautizos, baby showers y eventos de empresa, la unidad y el margen los acuerdas con tu cliente antes de producir.",
+          "En un cumpleaños infantil la unidad es el niño. Con 25 niños confirmados, la referencia da 25 más dos o tres, es decir, entre 27 y 28 piezas.",
+          "En una boda, un XV años o un bautizo suelen llegar familias completas. Por eso la pregunta no es solo cuántas personas asisten, sino si un recuerdo alcanza para toda la familia o cada persona recibirá el suyo. Esa decisión depende del estilo del evento y del presupuesto, y la tomas con tu cliente.",
         ],
         table: {
           headers: ["Tipo de fiesta", "Cómo contar", "Margen de referencia"],
           rows: [
-            ["Boda", "Por invitado o por pareja, según lo acuerdes con tu cliente", "Referencia de adultos: 1,1 por invitado (Hacecuentas)"],
-            ["XV años", "Por persona, o por familia o pareja (El Imparcial)", "Algunos extras, sin porcentaje en la fuente. Ejemplo de El Imparcial: 60 o 70 para 100 invitados"],
-            ["Bautizo", "Por invitado o por familia, según el evento", "Referencia de adultos: 1,1 por invitado (Hacecuentas). Sin cifra propia para este tipo"],
-            ["Baby shower", "Por invitado o por familia, según el evento", "Referencia de adultos: 1,1 por invitado (Hacecuentas). Sin cifra propia para este tipo"],
+            ["Boda", "Por invitado, pareja o familia, según lo acuerdes con tu cliente", "Sin regla verificable. Si cuentas por invitado adulto, referencia de 1.1 (Hacecuentas)"],
+            ["XV años", "Por invitado, pareja o familia, según lo acuerdes con tu cliente", "Sin regla verificable. Si cuentas por invitado adulto, referencia de 1.1 (Hacecuentas)"],
+            ["Bautizo", "Por invitado o por familia, según el evento", "Sin regla verificable. Si cuentas por invitado adulto, referencia de 1.1 (Hacecuentas)"],
+            ["Baby shower", "Por invitado o por familia, según el evento", "Sin regla verificable. Si cuentas por invitado adulto, referencia de 1.1 (Hacecuentas)"],
             ["Cumpleaños infantil", "Por niño", "1 por niño y 2 o 3 extra a mano (Hacecuentas)"],
-            ["Corporativo", "Por asistente confirmado", "Referencia de adultos: 1,1 por invitado (Hacecuentas). Sin cifra propia para este tipo"],
+            ["Evento de empresa", "Por asistente confirmado", "Sin regla verificable. Si cuentas por asistente adulto, referencia de 1.1 (Hacecuentas)"],
           ],
         },
       },
       {
-        heading: "Fórmula para planners: invitados confirmados y piezas a producir",
+        heading: "Fórmula para planners: de la lista confirmada a las piezas a producir",
         body: [
-          "Copia esta fórmula: piezas a producir es igual a las unidades de conteo confirmadas por el factor del margen. La unidad puede ser invitado, pareja o familia. Con 80 invitados adultos y la referencia de 1,1, salen 88 piezas. Guarda dos cifras separadas: invitados confirmados y piezas a producir.",
-          "Si llevas varios eventos, usa una fila por evento con su tipo de fiesta, su unidad de conteo y su factor. Así cada evento tiene su propia cifra y no arrastras el margen de uno a otro. Para ver ideas de qué poner en cada pieza, revisa la guía de [qué poner en un dulcero](/blog/que-poner-en-un-dulcero).",
-          "Si tu cliente quiere un detalle distinto al dulcero, como [stickers de vinil personalizados](/productos/stickers-vinil-impermeable), la fórmula es la misma: cuenta primero y aplica el margen después. También puedes revisar [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara).",
+          "Piezas a producir es igual a las unidades confirmadas por el factor de margen. La unidad puede ser invitado, pareja, familia o niño. Con 80 invitados adultos confirmados y el factor de 1.1 salen 88 piezas. Usa una fila por evento en tu hoja, con su propio tipo de fiesta, unidad y factor.",
+          "Así cada evento tiene su propia cifra y no arrastras el margen de uno a otro. Las columnas mínimas son cuatro: tipo de fiesta, unidad de conteo, confirmados y factor. La quinta, piezas a producir, se calcula sola.",
+          `Para decidir qué lleva cada pieza, revisa la guía de [qué poner en un dulcero](/blog/que-poner-en-un-dulcero). Si tu cliente prefiere otro detalle, como [stickers de vinil personalizados](/productos/stickers-vinil-impermeable), la fórmula es la misma: cuenta primero y aplica el margen después. También puedes ver [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara).`,
+        ],
+      },
+      {
+        heading: "Qué acordar con tu cliente antes de producir",
+        body: [
+          "Acuerda por escrito tres cosas: qué unidad se cuenta (invitado, pareja, familia o niño), cuál es la fecha de cierre de la lista de confirmados y quién aprueba la prueba digital. Con esas tres decisiones, la cifra de piezas deja de cambiar y tu cliente sabe qué esperar.",
+          "En un evento de empresa, define también si los asistentes incluyen a invitados de clientes y si habrá registro previo, porque de ahí sale la lista confirmada. En una boda o un XV años, aclara si el recuerdo es para cada persona o para cada familia.",
+          "Antes de producir te enviamos una prueba digital, y nada se produce hasta que la apruebas. Por eso la cifra final de piezas se cierra junto con esa aprobación y no antes.",
         ],
       },
       {
@@ -1392,25 +1411,39 @@ export const dulceroPosts: BlogPost[] = [
           `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba digital, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional. Con esos plazos, deja la lista de confirmados cerrada con margen antes de la fecha del evento.`,
         ],
       },
+      {
+        heading: "Precio de los dulceros según tu cantidad",
+        body: [
+          `Primeras 100 piezas: $${dulceroUnit} MXN por dulcero, con pedido mínimo de 10 piezas, así que puedes pedir la cantidad que calculaste. Arriba de 100 piezas es precio mayoreo: escríbenos por WhatsApp y te cotizamos. Desde $${FREE_SHIPPING_THRESHOLD} de compra el envío nacional es gratis.`,
+          `Siguiendo los ejemplos de arriba, 88 dulceros son $${dulceroTotal(88)} y 99 son $${dulceroTotal(99)}. Puedes ver el detalle de los [dulceros personalizados](/productos/${DULCERO}) y elegir la cantidad exacta que salió de tu fórmula.`,
+        ],
+      },
     ],
     relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara"],
+    relatedBlogSlugs: ["que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "dulceros-navidenos-personalizados"],
     sources: [
       { label: "Hacecuentas: calculadora de regalos por invitado (souvenirs)", url: "https://hacecuentas.com/calculadora-regalos-invitado-souvenir" },
-      { label: "El Imparcial: recuerdos para 15 años", url: "https://www.elimparcial.com/locurioso/2026/05/14/recuerdos-para-15-anos-ideas-originales-con-fotos-que-las-quinceaneras-guardaran-para-siempre/" },
     ],
     faq: [
       {
-        q: "¿Cuántos detalles pedir por invitado?",
-        a: "Hacecuentas usa 1,1 por invitado en eventos de adultos, es decir, 10% extra. En cumpleaños infantiles usa 1 por niño y recomienda sumar 2 o 3 a mano.",
+        q: "¿Cuántos souvenirs pedir por invitado?",
+        a: "Hacecuentas usa 1.1 por invitado en eventos de adultos, es decir, 10% extra. En cumpleaños infantiles usa 1 por niño y recomienda sumar 2 o 3 a mano.",
       },
       {
-        q: "¿Un detalle por persona o uno por pareja?",
-        a: "Las fuentes no coinciden. Hacecuentas cuenta por invitado y El Imparcial sugiere uno por familia o pareja en XV años. Decide con tu cliente cómo contar antes de aplicar el margen.",
+        q: "¿Cuento los invitados confirmados o la lista total?",
+        a: "Los confirmados. Calcula las piezas a producir a partir de esa cifra y actualízala si llegan más confirmaciones antes de aprobar la prueba digital.",
       },
       {
-        q: "¿Bastan 60 o 70 recuerdos para 100 invitados?",
-        a: "Es el ejemplo que da El Imparcial en una nota sobre XV años, contando por familia o pareja. No es una regla general para todos los eventos.",
+        q: "¿Hay una regla para bodas, XV años o bautizos?",
+        a: "No encontramos una regla verificable en fuentes abiertas para esos eventos. La unidad de conteo y el margen se acuerdan con tu cliente antes de producir.",
+      },
+      {
+        q: "¿Cuál es el pedido mínimo de dulceros y cuánto cuestan?",
+        a: `El pedido mínimo es de 10 piezas. Primeras 100 piezas: $${dulceroUnit} MXN por dulcero. Arriba de 100 piezas es precio mayoreo y se cotiza por WhatsApp.`,
+      },
+      {
+        q: "¿Cuánto tardan en llegar?",
+        a: `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba digital, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional.`,
       },
     ],
   },
