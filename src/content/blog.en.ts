@@ -4643,9 +4643,10 @@ export const blogPostsEn: BlogPost[] = [
     title: "Custom details supplier for wedding planners in Guadalajara",
     metaTitle: "Custom details supplier for wedding planners",
     description:
-      "How to work with a custom details supplier in Guadalajara: quotes, digital proofs and matching pieces for weddings.",
+      "A guide for wedding planners in Guadalajara: how to quote custom details per event, approve digital proofs and coordinate matching wedding pieces.",
     category: "Guides",
     publishedAt: "2026-11-05",
+    modifiedAt: "2026-11-07",
     intro:
       "You coordinate several weddings and need a supplier who delivers the same quality every time. This guide explains how to request a quote, approve digital proofs, set deadlines and bring candy boxes, stickers and temporary tattoos together in one visual line for your clients in Guadalajara, Zapopan and all of Mexico.",
     sections: [
@@ -4660,13 +4661,29 @@ export const blogPostsEn: BlogPost[] = [
         heading: "How to request a quote per event",
         body: [
           "To quote a wedding, message us on WhatsApp with the basics of the event: date, city, number of guests, color palette, the pieces you are interested in and the texts or names they will carry. With that we can guide you on quantities and minimums, and tell you if anything needs confirming before production.",
-          "Published minimums are 10 pieces for candy boxes and 40 pieces for [custom vinyl stickers](/productos/stickers-vinil-impermeable). Tell us about your whole event and we quote the pieces together.",
+          "Published minimums are 10 pieces for candy boxes, 40 pieces for [custom vinyl stickers](/productos/stickers-vinil-impermeable) and 50 pieces for logo labels. Tell us about your whole event and we quote the pieces together.",
+        ],
+        table: {
+          headers: ["Brief detail", "What it lets us define"],
+          rows: [
+            ["Date and city", "How to coordinate delivery"],
+            ["Number of guests", "Quantities and minimums"],
+            ["Color palette", "A design that matches the decor"],
+            ["Pieces of interest", "What is quoted together"],
+            ["Texts and names", "A correct digital proof from the start"],
+          ],
+        },
+      },
+      {
+        heading: "How a per-wedding order works",
+        body: [
+          "Each wedding is quoted as a separate order: you send us the brief over WhatsApp with date, city, guests, palette, pieces and texts, and we quote the event's pieces together. That way each wedding has its own quote and you can keep a consistent visual line across the weddings you coordinate.",
         ],
       },
       {
         heading: "Digital proofs and text approval",
         body: [
-          "For candy boxes and stickers we send a digital proof before production, and nothing is produced without your approval. Check names, dates, spelling and colors with the couple, because that is the control point of the order. It helps if one person, you or the couple, has the final say.",
+          "For vinyl stickers we send a digital proof before printing, and nothing is printed without your approval. Check names, dates, spelling and colors with the couple, because that is the control point of the order. It helps if one person, you or the couple, has the final say.",
           "For vinyl stickers, the proof normally arrives within 24 hours after payment and includes up to 2 rounds of adjustments.",
         ],
       },
@@ -4682,6 +4699,7 @@ export const blogPostsEn: BlogPost[] = [
         body: [
           "When candy boxes, stickers and temporary tattoos share a palette, typography and texts, the wedding looks planned from start to finish. Designing them together for one event gives you a consistent visual identity, and you coordinate a single supplier instead of several.",
           "The candy box arrives assembled and empty, with a name and theme; you or the couple decide what goes inside. For filling ideas, see [what to put in a candy box](/blog/que-poner-en-un-dulcero). Temporary tattoos for events are quoted over WhatsApp.",
+          "Vinyl stickers can be ordered with a die cut or kiss cut, and with a matte, glossy or holographic finish. If you also want to brand your own deliverables, we have [labels with your logo](/productos/stickers-logo-personalizado).",
         ],
       },
       {
@@ -4724,6 +4742,14 @@ export const blogPostsEn: BlogPost[] = [
       {
         q: "Can I get a quote for temporary tattoos for a wedding?",
         a: "Yes. Temporary tattoos for events are quoted over WhatsApp together with the rest of your event pieces.",
+      },
+      {
+        q: "Can I combine candy boxes and stickers in one order?",
+        a: "Yes. Tell us about your whole event over WhatsApp and we quote the pieces together.",
+      },
+      {
+        q: "Do the candy boxes come with candy?",
+        a: "No. The candy box arrives assembled and empty, with a name and theme, so you or the couple decide what goes inside.",
       },
     ],
   },

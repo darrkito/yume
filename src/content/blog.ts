@@ -5615,9 +5615,10 @@ export const blogPosts: BlogPost[] = [
     title: "Proveedor de detalles personalizados para wedding planners en Guadalajara",
     metaTitle: "Proveedor de detalles personalizados para wedding planners",
     description:
-      "Cómo trabajar con un proveedor de detalles personalizados en Guadalajara: cotización, pruebas digitales y piezas para bodas.",
+      "Guía para wedding planners en Guadalajara: cómo cotizar detalles personalizados por evento, aprobar pruebas digitales y coordinar piezas para bodas.",
     category: "Guías",
     publishedAt: "2026-11-05",
+    modifiedAt: "2026-11-07",
     intro:
       "Coordinas varias bodas y necesitas un proveedor que entregue la misma calidad en cada una. Esta guía te explica cómo pedir cotización, aprobar pruebas digitales, fijar fechas y reunir dulceros, stickers y tatuajes temporales en una misma línea visual para tus clientes en Guadalajara, Zapopan y todo México.",
     sections: [
@@ -5632,13 +5633,29 @@ export const blogPosts: BlogPost[] = [
         heading: "Cómo pedir una cotización por evento",
         body: [
           "Para cotizar una boda escríbenos por WhatsApp con los datos básicos del evento: fecha, ciudad, número de invitados, paleta de colores, las piezas que te interesan y los textos o nombres que llevarán. Con eso podemos orientarte sobre cantidades y mínimos, y avisarte si algo necesita confirmarse antes de producir.",
-          "Los mínimos publicados son de 10 piezas para dulceros y de 40 piezas para [stickers de vinil personalizados](/productos/stickers-vinil-impermeable). Cuéntanos tu evento completo y cotizamos las piezas juntas.",
+          "Los mínimos publicados son de 10 piezas para dulceros, de 40 piezas para [stickers de vinil personalizados](/productos/stickers-vinil-impermeable) y de 50 piezas para etiquetas con logo. Cuéntanos tu evento completo y cotizamos las piezas juntas.",
+        ],
+        table: {
+          headers: ["Dato del brief", "Qué nos permite definir"],
+          rows: [
+            ["Fecha y ciudad", "Cómo coordinar la entrega"],
+            ["Número de invitados", "Cantidades y mínimos"],
+            ["Paleta de colores", "Un diseño coherente con la decoración"],
+            ["Piezas de interés", "Qué se cotiza junto"],
+            ["Textos y nombres", "Una prueba digital correcta desde el inicio"],
+          ],
+        },
+      },
+      {
+        heading: "Cómo se maneja un pedido por boda",
+        body: [
+          "Cada boda se cotiza como un pedido aparte: tú nos mandas el brief por WhatsApp con fecha, ciudad, invitados, paleta, piezas y textos, y cotizamos las piezas del evento juntas. Así cada boda tiene su propia cotización y puedes mantener una línea visual constante entre las bodas que coordinas.",
         ],
       },
       {
         heading: "Pruebas digitales y aprobación de textos",
         body: [
-          "Para dulceros y stickers te enviamos una prueba digital antes de producir, y nada se produce sin tu aprobación. Revisa en ella nombres, fechas, ortografía y colores con la pareja, porque ese es el punto de control del pedido. Conviene que una sola persona, tú o la pareja, tenga la última palabra.",
+          "Para los stickers de vinil te enviamos una prueba digital antes de imprimir, y no se imprime nada sin tu aprobación. Revisa en ella nombres, fechas, ortografía y colores con la pareja, porque ese es el punto de control del pedido. Conviene que una sola persona, tú o la pareja, tenga la última palabra.",
           "En los stickers de vinil, la prueba llega normalmente en un máximo de 24 horas después del pago e incluye hasta 2 rondas de ajustes.",
         ],
       },
@@ -5654,6 +5671,7 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Cuando los dulceros, los stickers y los tatuajes temporales comparten paleta, tipografía y textos, la boda se ve planeada de principio a fin. Diseñarlos juntos para un mismo evento te da una identidad visual consistente, y tú coordinas un solo proveedor en lugar de varios.",
           "El dulcero llega armado y vacío, con nombre y temática; tú o la pareja deciden qué lleva dentro. Para ideas de relleno, revisa [qué poner en un dulcero](/blog/que-poner-en-un-dulcero). Los tatuajes temporales para eventos se cotizan por WhatsApp.",
+          "Los stickers de vinil se pueden pedir con corte troquelado o semitroquelado, y con acabado mate, brillante u holográfico. Si además quieres marcar tus propios entregables, tenemos [etiquetas con tu logo](/productos/stickers-logo-personalizado).",
         ],
       },
       {
@@ -5697,6 +5715,14 @@ export const blogPosts: BlogPost[] = [
       {
         q: "¿Se pueden cotizar tatuajes temporales para una boda?",
         a: "Sí. Los tatuajes temporales para eventos se cotizan por WhatsApp junto con las demás piezas de tu evento.",
+      },
+      {
+        q: "¿Puedo combinar dulceros y stickers en un mismo pedido?",
+        a: "Sí. Cuéntanos tu evento completo por WhatsApp y cotizamos las piezas juntas.",
+      },
+      {
+        q: "¿Los dulceros incluyen dulces?",
+        a: "No. El dulcero llega armado y vacío, con nombre y temática, para que tú o la pareja decidan qué lleva dentro.",
       },
     ],
   },
