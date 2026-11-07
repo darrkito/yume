@@ -5696,15 +5696,17 @@ export const blogPosts: BlogPost[] = [
     slug: "regalo-sorpresa-personalizado-ideas-con-dulceros",
     title: "Regalo sorpresa personalizado: ideas con dulceros",
     description:
-      "Ideas de regalo sorpresa personalizado con dulces para mamá o tu pareja: qué poner en el dulcero, qué personalizar y cómo pedirlo con prueba digital.",
+      "Ideas de regalo sorpresa personalizado con dulceros para mamá, pareja o boda: qué poner dentro, qué personalizar y cómo planear la entrega.",
     category: "Guías",
     publishedAt: "2026-11-05",
+    modifiedAt: "2026-11-07",
     intro:
-      "Regalar dulces es fácil; lograr que se sientan como un regalo sorpresa personalizado es lo difícil. Un dulcero con nombre y temática convierte los dulces favoritos de mamá o de tu pareja en un detalle que se ve pensado. Aquí van ideas por ocasión, qué personalizar, qué poner dentro y cómo pedirlo con tiempo.",
+      "Regalar dulces es fácil; lograr que se sientan como un regalo sorpresa personalizado es lo difícil. Un dulcero con nombre y temática convierte los dulces favoritos de mamá, de tu pareja o de tus invitados en un detalle que se ve pensado. Aquí van ideas por ocasión y por persona, dulces regionales de México para darle historia, qué personalizar, qué poner dentro y cómo pedirlo con tiempo.",
     sections: [
       {
-        heading: "Regalo sorpresa personalizado: qué lo hace especial",
+        heading: "¿Qué es un regalo sorpresa personalizado con dulcero?",
         body: [
+          "Un dulcero personalizado es un contenedor tipo lunch box, con asa, que lleva el nombre y la temática que elijas y llega armado y vacío para que tú lo llenes. Sirve de regalo sorpresa en cumpleaños, aniversarios y bodas, y también como detalle de mesa para un evento.",
           "Un regalo sorpresa personalizado funciona cuando lleva algo que solo tiene sentido para esa persona: su nombre, una temática o un detalle que le encante. En México, según YouGov, el 56% de quienes compran regalo para su mamá elige comida y bebida y el 37% elige algo personalizado. Un dulcero une las dos ideas.",
           "Una guía de regalos para mamá de Odin Lake separa los regalos personalizados (álbumes, joyas con nombres o fechas) de los de comida, donde la personalización se limita a una nota escrita a mano y al envoltorio. Un dulcero con nombre y temática junta ambas ideas: es comida y es un diseño hecho para una persona.",
         ],
@@ -5713,7 +5715,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Ideas de regalo sorpresa con dulces para mamá",
         body: [
           "Para mamá funciona un dulcero con su nombre y una temática que ella reconozca, como flores o sus colores favoritos. Tú eliges qué lleva dentro: sus dulces de siempre, chocolates o galletas. Así el regalo se ve cuidado y sabe a lo que a ella le gusta.",
-          "Si la sorpresa es de parte de varios hijos, puedes pedir un dulcero para cada hermana, tía o abuela, cada uno con su nombre. El pedido mínimo es de 10 piezas, así que esta idea encaja mejor cuando el regalo se reparte entre varias personas.",
+          "Si la sorpresa es de parte de varios hijos, puedes pedir un dulcero para cada hermana, tía o abuela, cada uno con su nombre. El pedido mínimo es de 10 piezas, así que esta idea encaja mejor cuando el regalo se reparte entre varias personas. Si no sabes qué llevar dentro, revisa la guía de [qué poner en un dulcero](/blog/que-poner-en-un-dulcero).",
         ],
       },
       {
@@ -5724,10 +5726,35 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
+        heading: "Ideas rápidas por ocasión: una tabla para decidir",
+        body: [
+          "Si buscas una idea rápida, piensa en tres cosas: a quién va dirigida la sorpresa, qué ocasión celebra y qué dulces le gustan. Con esas tres respuestas ya puedes definir el nombre, la temática y el relleno del dulcero, y pedir la prueba digital.",
+          "La tabla resume ideas de diseño y relleno. Son sugerencias: la temática final la defines tú y la adaptamos a tus referencias.",
+        ],
+        table: {
+          headers: ["Ocasión", "Nombre y temática", "Relleno"],
+          rows: [
+            ["Cumpleaños de mamá", "Su nombre y flores o sus colores favoritos", "Sus dulces de siempre"],
+            ["Aniversario", "Los dos nombres y los colores que los representan", "Los dulces favoritos de ambos"],
+            ["San Valentín", "Sus nombres y un detalle de ustedes, como un viaje", "Chocolates o galletas"],
+            ["Sorpresa de varios hijos", "Un nombre por cada hermana, tía o abuela", "Dulces tradicionales mexicanos"],
+            ["Boda o evento", "El nombre del evento y su temática", "Dulces regionales mexicanos"],
+          ],
+        },
+      },
+      {
+        heading: "Dulces regionales de México: un detalle con historia",
+        body: [
+          "Los dulces típicos mexicanos tienen origen prehispánico: se endulzaban con miel de maguey, hormiga mielera, caña de maíz y abeja pipiola, y después el piloncillo los sustituyó. Por eso un relleno de dulces tradicionales le da historia al dulcero, más allá del sabor.",
+          "Según BBVA, cada dulce se asocia a una región: muéganos de Huamantla, Tlaxcala; alegrías de Xochimilco, CDMX; cocadas de Veracruz; camote de Puebla; glorias de Linares, Nuevo León; jamoncillo de Axochiapan, Morelos; y dulce de leche o manjar de Celaya, Guanajuato. Si la persona homenajeada es de uno de esos lugares, puedes rellenar el dulcero con dulces de su estado.",
+          "El mismo artículo presenta el dulce artesanal como portador de recuerdos, experiencias y emociones, y esa es justo la idea de un regalo sorpresa: que el relleno le recuerde algo a quien lo recibe.",
+        ],
+      },
+      {
         heading: "Qué personalizar: nombre, temática y detalles",
         body: [
           "La personalización de nuestro dulcero incluye el nombre y la temática que elijas. Con eso puedes armar un regalo para una persona concreta, con un tema que le guste. Cualquier otro detalle, como una fecha o una frase, se consulta por WhatsApp al cotizar, porque depende del diseño.",
-          "Nuestro dulcero es tipo lunch box, con asa. Mándanos una referencia de los colores o del estilo que le gusta a esa persona y adaptamos el diseño.",
+          "Nuestro dulcero es tipo lunch box, con asa. Mándanos una referencia de los colores o del estilo que le gusta a esa persona y adaptamos el diseño. Si quieres sumar un detalle pequeño con el mismo diseño, también puedes pedir [stickers de vinil personalizados](/productos/stickers-vinil-impermeable).",
         ],
       },
       {
@@ -5738,18 +5765,27 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
+        heading: "Para bodas, planners y eventos de empresa",
+        body: [
+          "Un dulcero también funciona como detalle de mesa o recuerdo para una boda, un cumpleaños o un evento de empresa. Si eres planner o organizas un evento, puedes pedir varios con el nombre y la temática del evento, siempre con prueba digital antes de producir.",
+          "El pedido mínimo es de 10 piezas y la cantidad exacta y los tiempos de tu evento se confirman por WhatsApp al cotizar. Si tu fecha cae en temporada, revisa las ideas de [dulceros para Día de Muertos y noviembre](/blog/dulceros-dia-de-muertos-noviembre) o de [dulceros navideños personalizados](/blog/dulceros-navidenos-personalizados).",
+        ],
+      },
+      {
         heading: "Cómo coordinar la sorpresa y pedirlo con anticipación",
         body: [
           "Pide el dulcero con anticipación: primero cotizas por WhatsApp, te enviamos una prueba digital del diseño y nada se produce hasta que la apruebas. Para fechas concretas, como un aniversario o San Valentín, pregunta por los tiempos de producción y envío antes de decidir.",
-          "Atendemos Guadalajara, Zapopan y enviamos a todo México. Escríbenos por WhatsApp con la ocasión, el nombre y la fecha en que lo necesitas, y te decimos qué se puede hacer.",
+          "Un orden sencillo: define a quién va dirigida la sorpresa y la ocasión, elige el nombre y la temática, manda una referencia de colores, cotiza por WhatsApp, aprueba la prueba digital y, cuando llegue, rellena el dulcero con los dulces que elegiste.",
+          "Atendemos Guadalajara, Zapopan y enviamos a todo México. Si estás en la zona, revisa los [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara). Escríbenos por WhatsApp con la ocasión, el nombre y la fecha en que lo necesitas, y te decimos qué se puede hacer.",
         ],
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara"],
+    relatedBlogSlugs: ["que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "dulceros-dia-de-muertos-noviembre", "dulceros-navidenos-personalizados"],
     sources: [
       { label: "Emprendedor: regalos del Día de las Madres 2026 y presupuesto de los mexicanos (YouGov)", url: "https://emprendedor.com/dia-madres-2026-regalos-presupuesto-mexicanos/" },
       { label: "Odin Lake: regalos con significado para mamá", url: "https://odinlake.com/es/blogs/all-blogs/thoughtful-gifts-to-make-mom-feel-special-on-mothers-day" },
+      { label: "BBVA: los dulces típicos, una tradición artesanal de México", url: "https://www.bbva.com/es/mx/los-dulces-tipicos-una-tradicion-artesanal-de-mexico/" },
     ],
     faq: [
       {
@@ -5761,8 +5797,20 @@ export const blogPosts: BlogPost[] = [
         a: "El nombre y la temática que elijas. Si quieres sumar una fecha o una frase, escríbenos por WhatsApp al cotizar y te confirmamos.",
       },
       {
+        q: "¿Cuál es el pedido mínimo?",
+        a: "El pedido mínimo es de 10 piezas, así que conviene cuando el regalo se reparte entre varias personas o cubre un evento.",
+      },
+      {
+        q: "¿Veo el diseño antes de que se produzca?",
+        a: "Sí. Te enviamos una prueba digital del diseño y nada se produce hasta que la apruebas.",
+      },
+      {
         q: "¿Con cuánto tiempo debo pedirlo para una fecha especial?",
         a: "Depende de la fecha. Escríbenos por WhatsApp con el día en que lo necesitas y te confirmamos los tiempos de producción y envío.",
+      },
+      {
+        q: "¿De dónde son los muéganos y las cocadas?",
+        a: "Según BBVA, los muéganos se asocian a Huamantla, Tlaxcala, y las cocadas a Veracruz. Puedes usar dulces de la región de la persona homenajeada como relleno.",
       },
     ],
   },

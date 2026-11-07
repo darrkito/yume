@@ -4731,15 +4731,17 @@ export const blogPostsEn: BlogPost[] = [
     slug: "personalized-surprise-gift-ideas-candy-boxes",
     title: "Personalized Surprise Gift Ideas with Candy Boxes",
     description:
-      "Personalized surprise gift ideas with candy for mom or your partner: what goes in the candy box, what to personalize and how to order.",
+      "Personalized surprise gift ideas with candy boxes for mom, your partner or a wedding: what goes inside, what to personalize and how to plan delivery.",
     category: "Guides",
     publishedAt: "2026-11-05",
+    modifiedAt: "2026-11-07",
     intro:
-      "Giving candy is easy; making it feel like a personalized surprise gift is the hard part. A candy box (dulcero) with a name and a theme turns your mom's or partner's favorite sweets into a gift that looks planned. Here are ideas by occasion, what to personalize, what to put inside and how to order with time to spare.",
+      "Giving candy is easy; making it feel like a personalized surprise gift is the hard part. A candy box (dulcero) with a name and a theme turns the favorite sweets of your mom, your partner or your guests into a gift that looks planned. Here are ideas by occasion and by person, regional Mexican sweets to add some history, what to personalize, what to put inside and how to order with time to spare.",
     sections: [
       {
-        heading: "Personalized surprise gift: what makes it special",
+        heading: "What is a personalized surprise gift with a candy box?",
         body: [
+          "A personalized candy box (dulcero) is a lunch box style container with a handle that carries the name and theme you choose and arrives assembled and empty for you to fill. It works as a surprise gift for birthdays, anniversaries and weddings, and also as a table detail for an event.",
           "A personalized surprise gift works when it carries something that only makes sense for that person: a name, a theme or a detail they love. In Mexico, according to YouGov, 56% of people buying a gift for their mom choose food and drinks and 37% choose something personalized. A candy box brings both together.",
           "A gift guide for mom from Odin Lake separates personalized gifts (albums, jewelry with names or dates) from food gifts, where personalization is limited to a handwritten note and the wrapping. A candy box with a name and a theme joins both ideas: it is food and it is a design made for one person.",
         ],
@@ -4759,6 +4761,31 @@ export const blogPostsEn: BlogPost[] = [
         ],
       },
       {
+        heading: "Quick ideas by occasion: a table to decide",
+        body: [
+          "If you want a quick idea, think of three things: who the surprise is for, which occasion it celebrates and which sweets they like. With those three answers you can define the name, the theme and the filling of the candy box, and ask for the digital proof.",
+          "The table sums up design and filling ideas. They are suggestions: you define the final theme and we adapt it to your references.",
+        ],
+        table: {
+          headers: ["Occasion", "Name and theme", "Filling"],
+          rows: [
+            ["Mom's birthday", "Her name and flowers or her favorite colors", "Her usual sweets"],
+            ["Anniversary", "Both names and the colors that represent you", "Both of your favorite sweets"],
+            ["Valentine's Day", "Your names and a detail about you two, like a trip", "Chocolates or cookies"],
+            ["Surprise from several children", "One name for each sister, aunt or grandmother", "Traditional Mexican candy"],
+            ["Wedding or event", "The event's name and its theme", "Regional Mexican sweets"],
+          ],
+        },
+      },
+      {
+        heading: "Regional Mexican sweets: a detail with history",
+        body: [
+          "Traditional Mexican sweets have pre-Hispanic origins: they were sweetened with maguey honey, honey ants, corn cane and pipiola bee honey, and later piloncillo replaced them. That is why traditional candy as filling gives the candy box some history, beyond the flavor.",
+          "According to BBVA, each sweet is tied to a region: muéganos from Huamantla, Tlaxcala; alegrías from Xochimilco, Mexico City; cocadas from Veracruz; camote from Puebla; glorias from Linares, Nuevo León; jamoncillo from Axochiapan, Morelos; and dulce de leche or manjar from Celaya, Guanajuato. If the person comes from one of those places, you can fill the candy box with sweets from their state.",
+          "The same article presents artisanal candy as a carrier of memories, experiences and emotions, which is exactly the idea of a surprise gift: the filling reminds the recipient of something.",
+        ],
+      },
+      {
         heading: "What to personalize: name, theme and details",
         body: [
           "The personalization of our candy box includes the name and the theme you choose. With that you can build a gift for one person, with a theme they like. Any other detail, like a date or a phrase, is checked over WhatsApp when you request a quote, because it depends on the design.",
@@ -4773,9 +4800,17 @@ export const blogPostsEn: BlogPost[] = [
         ],
       },
       {
+        heading: "For weddings, planners and company events",
+        body: [
+          "A candy box can also work as a table detail or keepsake for a wedding, a birthday or a company event. If you are a planner or you organize an event, you can order several with the event's name and theme, always with a digital proof before production.",
+          "The minimum order is 10 pieces, and the exact quantity and the timing for your event are confirmed over WhatsApp when you request a quote.",
+        ],
+      },
+      {
         heading: "How to coordinate the surprise and order ahead",
         body: [
           "Order the candy box ahead of time: you quote over WhatsApp, we send a digital proof of the design, and nothing is produced until you approve it. For a specific date, like an anniversary or Valentine's Day, ask about production and shipping times before you decide.",
+          "A simple order: define who the surprise is for and the occasion, choose the name and the theme, send a color reference, quote over WhatsApp, approve the digital proof and, when it arrives, fill the candy box with the sweets you chose.",
           "We serve Guadalajara, Zapopan and ship across Mexico. Write to us on WhatsApp with the occasion, the name and the date you need it, and we will tell you what is possible.",
         ],
       },
@@ -4784,6 +4819,7 @@ export const blogPostsEn: BlogPost[] = [
     sources: [
       { label: "Emprendedor: Mother's Day 2026 gifts and Mexicans' budgets, YouGov (in Spanish)", url: "https://emprendedor.com/dia-madres-2026-regalos-presupuesto-mexicanos/" },
       { label: "Odin Lake: meaningful gifts for mom (in Spanish)", url: "https://odinlake.com/es/blogs/all-blogs/thoughtful-gifts-to-make-mom-feel-special-on-mothers-day" },
+      { label: "BBVA: traditional sweets, an artisanal tradition of Mexico (in Spanish)", url: "https://www.bbva.com/es/mx/los-dulces-tipicos-una-tradicion-artesanal-de-mexico/" },
     ],
     faq: [
       {
@@ -4795,8 +4831,20 @@ export const blogPostsEn: BlogPost[] = [
         a: "The name and the theme you choose. If you want to add a date or a phrase, write to us on WhatsApp when you quote and we will confirm.",
       },
       {
+        q: "What is the minimum order?",
+        a: "The minimum order is 10 pieces, so it fits when the gift is shared among several people or covers an event.",
+      },
+      {
+        q: "Do I see the design before it is produced?",
+        a: "Yes. We send a digital proof of the design and nothing is produced until you approve it.",
+      },
+      {
         q: "How far ahead should I order for a special date?",
         a: "It depends on the date. Write to us on WhatsApp with the day you need it and we will confirm production and shipping times.",
+      },
+      {
+        q: "Where are muéganos and cocadas from?",
+        a: "According to BBVA, muéganos are tied to Huamantla, Tlaxcala, and cocadas to Veracruz. You can use sweets from the honoree's region as filling.",
       },
     ],
   },
