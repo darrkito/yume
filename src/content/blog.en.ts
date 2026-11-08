@@ -3954,7 +3954,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "When to lock the menu design and order the pieces",
         body: [
           "Close the menu design once the caterer has confirmed the menu. Paperlust, a stationery supplier, says that usually happens 6 to 8 weeks before the wedding, but that is only its reference, not an industry standard. For your own order timing with Yume, message us on WhatsApp.",
-          "At Yume, the wedding menu is quoted over WhatsApp. For [vinyl stickers](/en/products/stickers-vinil-impermeable), the digital proof usually arrives within 24 hours at most after your payment, with up to 2 rounds of adjustments, and we print nothing without your approval.",
+          "At Yume, the wedding menu is quoted over WhatsApp. For [vinyl stickers](/en/products/waterproof-vinyl-stickers), the digital proof usually arrives within 24 hours at most after your payment, with up to 2 rounds of adjustments, and we print nothing without your approval.",
         ],
       },
       {

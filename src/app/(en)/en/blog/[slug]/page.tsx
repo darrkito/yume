@@ -12,6 +12,7 @@ import { BlogProductCard } from "@/components/BlogProductCard";
 import { BlogTopCta } from "@/components/BlogTopCta";
 import { BlogTable } from "@/components/BlogTable";
 import { BlogQuickFacts } from "@/components/BlogQuickFacts";
+import { BlogParagraph } from "@/components/BlogParagraph";
 import { BlogFaq } from "@/components/BlogFaq";
 import { blogPostingSchema, blogPostMetadata, breadcrumbSchema, notFoundMetadata } from "@/lib/seo";
 
@@ -91,7 +92,7 @@ export default async function BlogPostPageEn({ params }: { params: Promise<{ slu
             <div className="mt-3 space-y-3">
               {section.body.map((paragraph, i) => (
                 <p key={i} className="text-sm leading-relaxed text-ink-soft">
-                  {paragraph}
+                  <BlogParagraph text={paragraph} lang="en" />
                 </p>
               ))}
             </div>

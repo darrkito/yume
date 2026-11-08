@@ -938,4 +938,110 @@ export const dulceroPostsEn: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: en("cuantos-souvenirs-pedir-por-evento"),
+    title: "How Many Party Favors to Order per Event: A Guide by Party Type",
+    metaTitle: "How Many Party Favors to Order per Event",
+    description:
+      "How many party favors to order per event: how to count for weddings, quinceañeras, baptisms and kids' parties, what margin to use and when to lock the final number.",
+    category: "Guides",
+    publishedAt: "2026-11-07",
+    modifiedAt: "2026-11-07",
+    intro:
+      "If you plan an event, or several at once, the question of how many party favors to order always comes up before you close the order. Ordering too few leaves a guest without a keepsake, and ordering too many raises the cost for nothing. Here is how to count by party type, a formula for your spreadsheet and the moment to lock the final number.",
+    sections: [
+      {
+        heading: "How many party favors to order per event: the base rule",
+        body: [
+          "Start from confirmed guests and add a small margin. The Hacecuentas calculator uses 1.1 favors per guest at adult events, that is 10% extra, to cover an unlisted plus-one or a piece that gets damaged. For kids' birthdays it counts 1 per child and you add two or three by hand.",
+          "That calculator covers only two cases: adult events and kids' birthdays. For weddings, quinceañeras, baptisms, baby showers and company events we found no verifiable rule in open sources, so we won't give you an invented figure. In those cases the decision is yours: which unit you count and how much margin gives you peace of mind.",
+          "The 10% margin has an easy logic: it covers someone who arrives without notice or a piece that doesn't turn out as expected. If your list is already closed and confirmed, the margin can be small. If answers are still missing, it is better to have them before you calculate.",
+        ],
+      },
+      {
+        heading: "Confirmed guests or total guests: which to count",
+        body: [
+          "Count confirmed guests, not the total number of invitations sent. A total list includes people who may not attend, and producing extra raises the cost for nothing. Keep two separate figures in your sheet: confirmed guests and pieces to produce, and calculate the second from the first.",
+          "Imagine a wedding with 120 invitations sent and 90 confirmations. Your starting point is 90, not 120. With the adult reference of 1.1, 90 times 1.1 is 99 pieces. If more confirmations arrive later, you update the first figure and recalculate the second, without touching the rest of your sheet.",
+          "Separating the two figures also helps when talking to your client. They think in people and you think in pieces. When both see how many are confirmed and how many pieces that means, it is easier to explain why the order doesn't exactly match the guest list.",
+        ],
+      },
+      {
+        heading: "Table by party type: how to count at each event",
+        body: [
+          "The table shows which unit makes sense to count at each type of event. A margin figure is given only where an open source provides one: adults and kids' birthdays. For weddings, quinceañeras, baptisms, baby showers and company events, you agree the unit and margin with your client before production.",
+          "At a kids' birthday the unit is the child. With 25 confirmed children, the reference gives 25 plus two or three, that is between 27 and 28 pieces.",
+          "At a wedding, a quinceañera or a baptism, whole families often attend. So the question is not just how many people come, but whether one keepsake covers the whole family or each person gets their own. That decision depends on the style of the event and the budget, and you make it with your client.",
+        ],
+        table: {
+          headers: ["Party type", "How to count", "Reference margin"],
+          rows: [
+            ["Wedding", "Per guest, couple or family, as agreed with your client", "No verifiable rule. If you count per adult guest, reference of 1.1 (Hacecuentas)"],
+            ["Quinceañera", "Per guest, couple or family, as agreed with your client", "No verifiable rule. If you count per adult guest, reference of 1.1 (Hacecuentas)"],
+            ["Baptism", "Per guest or per family, depending on the event", "No verifiable rule. If you count per adult guest, reference of 1.1 (Hacecuentas)"],
+            ["Baby shower", "Per guest or per family, depending on the event", "No verifiable rule. If you count per adult guest, reference of 1.1 (Hacecuentas)"],
+            ["Kids' birthday", "Per child", "1 per child plus 2 or 3 extra by hand (Hacecuentas)"],
+            ["Company event", "Per confirmed attendee", "No verifiable rule. If you count per adult attendee, reference of 1.1 (Hacecuentas)"],
+          ],
+        },
+      },
+      {
+        heading: "Formula for planners: from the confirmed list to pieces to produce",
+        body: [
+          "Pieces to produce equal the confirmed units times the margin factor. The unit can be guest, couple, family or child. With 80 confirmed adult guests and a factor of 1.1 you get 88 pieces. Use one row per event in your sheet, each with its own party type, unit and factor.",
+          "That way every event has its own figure and you don't carry one event's margin into another. The minimum columns are four: party type, counting unit, confirmed and factor. The fifth, pieces to produce, calculates itself.",
+          "To decide what goes in each piece, see the guide on [what to put in a party favor box](/en/blog/what-to-put-in-a-party-favor-box). If your client prefers another keepsake, such as [custom vinyl stickers](/en/products/waterproof-vinyl-stickers), the formula is the same: count first and apply the margin after. You can also see [personalized party favor boxes in Guadalajara](/en/blog/personalized-party-favor-boxes-guadalajara).",
+        ],
+      },
+      {
+        heading: "What to agree with your client before production",
+        body: [
+          "Agree three things in writing: which unit is counted (guest, couple, family or child), the closing date for the confirmed list and who approves the digital proof. With those three decisions the piece count stops changing and your client knows what to expect.",
+          "At a company event, also define whether attendees include client guests and whether there is advance registration, because the confirmed list comes from there. At a wedding or a quinceañera, clarify whether the keepsake is for each person or for each family.",
+          "Before production we send you a digital proof, and nothing is produced until you approve it. That is why the final piece count is closed together with that approval and not before.",
+        ],
+      },
+      {
+        heading: "When to lock the final number of pieces",
+        body: [
+          "Lock the final number when your client has the definitive confirmed list and approves the digital proof, because production days are counted from that approval. Before that, keep adjusting your sheet and confirm any doubt on WhatsApp.",
+          `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after you approve the digital proof, plus ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} days of national shipping. With those timelines, close the confirmed list with room to spare before the event date.`,
+        ],
+      },
+      {
+        heading: "Favor box prices by quantity",
+        body: [
+          `First 100 pieces: $${dulceroUnit} MXN per favor box, with a minimum order of 10 pieces, so you can order the quantity you calculated. Above 100 pieces it's wholesale pricing: message us on WhatsApp and we'll quote you. Orders from $${FREE_SHIPPING_THRESHOLD} ship free within Mexico.`,
+          `Following the examples above, 88 favor boxes are $${dulceroTotal(88)} and 99 are $${dulceroTotal(99)}. You can see the details of the [personalized favor boxes](/en/products/personalized-party-favor-boxes) and choose the exact quantity from your formula.`,
+        ],
+      },
+    ],
+    relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
+    relatedBlogSlugs: [en("que-poner-en-un-dulcero"), en("dulceros-personalizados-guadalajara"), en("dulceros-navidenos-personalizados")],
+    sources: [
+      { label: "Hacecuentas: guest gift calculator (party favors)", url: "https://hacecuentas.com/calculadora-regalos-invitado-souvenir" },
+    ],
+    faq: [
+      {
+        q: "How many party favors should I order per guest?",
+        a: "Hacecuentas uses 1.1 per guest at adult events, that is 10% extra. For kids' birthdays it uses 1 per child and recommends adding 2 or 3 by hand.",
+      },
+      {
+        q: "Do I count confirmed guests or the total list?",
+        a: "Confirmed guests. Calculate the pieces to produce from that figure and update it if more confirmations arrive before you approve the digital proof.",
+      },
+      {
+        q: "Is there a rule for weddings, quinceañeras or baptisms?",
+        a: "We found no verifiable rule in open sources for those events. The counting unit and the margin are agreed with your client before production.",
+      },
+      {
+        q: "What is the minimum order for favor boxes and how much do they cost?",
+        a: `The minimum order is 10 pieces. First 100 pieces: $${dulceroUnit} MXN per favor box. Above 100 pieces it's wholesale pricing, quoted on WhatsApp.`,
+      },
+      {
+        q: "How long does it take to arrive?",
+        a: `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after you approve the digital proof, plus ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} days of national shipping.`,
+      },
+    ],
+  },
 ];
