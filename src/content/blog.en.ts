@@ -5227,6 +5227,105 @@ export const blogPostsEn: BlogPost[] = [
       { label: "Easy Weddings: When to order your bombonieres", url: "https://www.easyweddings.com.au/articles/when-to-order-your-bombonieres/" },
     ],
   },
+  {
+    slug: "wedding-favor-budget-per-guest",
+    title: "How Much Wedding Favors Cost per Guest",
+    description:
+      "Learn how to calculate how much wedding favors cost per guest: a simple formula, a sample budget and what moves the price, with no invented prices.",
+    category: "Guides",
+    publishedAt: "2026-11-09",
+    intro:
+      "Wedding favors have no fixed price, and almost no guide explains how to work out yours. Here is a step-by-step method: set a limit per guest, multiply it by your pieces and bring a clear number to request a quote.",
+    sections: [
+      {
+        heading: "How much do wedding favors cost per guest in Mexico?",
+        body: [
+          "There is no single price. A Mexican wedding cost guide from Cronoshare says the favors budget can start at $50 MXN per guest and go up, with no cap or average given. That is why it helps to calculate your own limit based on your wedding instead of copying someone else's number.",
+          "That $50 MXN floor comes from a general guide, not from the price of a personalized keepsake. We also did not find a reliable national average of favor spending per guest in Mexico, so a calculation method is the most useful tool.",
+        ],
+      },
+      {
+        heading: "Step 1: set a limit from the spend per guest",
+        body: [
+          "Divide the total cost of your wedding by your guest count to get the spend per guest. Using Cronoshare's figure, about $180,000 MXN for about 100 guests, that comes to roughly $1,800 MXN per guest, and a $50 favor would be around 3% of it. Use it only as an illustration.",
+          "The same page gives a total range of $180,000 to $350,000 MXN but does not say for how many guests the high figure is, so this division only applies to the 100-guest figure.",
+        ],
+      },
+      {
+        heading: "Step 2: count pieces, not only guests",
+        body: [
+          "Multiply your limit by the number of pieces, not always by the number of guests. If you give one favor per couple or family instead of one per person, the quantity drops and you can put more budget into each piece. Decide this before asking for a quote.",
+        ],
+      },
+      {
+        heading: "Step 3: add what moves the price of each piece",
+        body: [
+          "The final price of a favor depends on several factors, not only the object: the material, the level of personalization, the packaging and the shipping. Add them into one per-piece figure before comparing options, so you do not find extra costs after you have already chosen a design.",
+          "These are the questions worth asking every supplier so you can compare on equal terms.",
+        ],
+        table: {
+          headers: ["Item", "What to ask"],
+          rows: [
+            ["Material", "What material is it and what does it cost per piece?"],
+            ["Personalization", "Do names, dates or a custom design change the price?"],
+            ["Packaging", "Is it included or charged separately?"],
+            ["Shipping", "Is it delivered in your area or shipped, and what does it cost?"],
+          ],
+        },
+      },
+      {
+        heading: "Detail and design before the lowest price",
+        body: [
+          "If you want a favor that looks planned, compare by detail and design, not by the lowest price. A favor with your guests' names or with the style of your wedding feels thoughtful, and that is the value you are paying for.",
+          "At Yume we make personalized candy boxes, which arrive assembled and empty so you choose what goes inside, and custom vinyl stickers, with a digital proof before printing.",
+        ],
+      },
+      {
+        heading: "Formula and example with hypothetical numbers",
+        body: [
+          "The formula is: limit per piece × number of pieces + packaging and shipping = total favors budget. Below is an example with made-up figures, only to practice: they are not real prices and not Yume prices. Swap in your own numbers and the quotes you receive.",
+          "With one piece per guest, the same budget gives $60 MXN per piece; with 70 pieces (couples and families share), it gives about $85 MXN per piece. That limit per piece is the one you take to get quotes.",
+        ],
+        table: {
+          headers: ["Item (hypothetical numbers)", "Value"],
+          rows: [
+            ["Total spend per guest", "$2,000 MXN"],
+            ["Share for favors", "3%"],
+            ["Limit per guest", "$60 MXN"],
+            ["Guests", "100"],
+            ["Favors budget", "$6,000 MXN"],
+            ["Pieces (one per couple or family)", "70"],
+            ["Limit per piece", "about $85 MXN"],
+          ],
+        },
+      },
+      {
+        heading: "How to request a quote for wedding favors",
+        body: [
+          "To get a useful quote, bring three details: the number of guests or pieces, your wedding date and the style you want. With that we can guide you on which option from our catalog fits your limit per piece. Message us on WhatsApp and we will quote your case.",
+          "If you are a wedding planner, we quote per event, with the number of pieces each wedding needs.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable"],
+    sources: [
+      { label: "Cronoshare: how much a wedding costs in Mexico", url: "https://www.cronoshare.com.mx/cuanto-cuesta/boda-mexico" },
+    ],
+    faq: [
+      {
+        q: "Is there an average spend on wedding favors in Mexico?",
+        a: "We did not find a reliable national average. Cronoshare only gives a guiding floor of $50 MXN per guest and up, which is why it helps to calculate your own limit.",
+      },
+      {
+        q: "What share of the budget should go to favors?",
+        a: "There is no rule. With Cronoshare's figures, a $50 favor would be close to 3% of about $1,800 MXN per guest, and that is only an illustrative reference.",
+      },
+      {
+        q: "Do you quote per event for wedding planners?",
+        a: "Yes, we quote per event, with the number of pieces each wedding needs. Message us on WhatsApp.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPostEn(slug: string) {

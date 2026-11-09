@@ -88,6 +88,7 @@ export const BLOG_SLUG_EN: Record<string, string> = {
   "que-dulces-poner-en-dulcero-de-boda": "what-sweets-to-put-in-a-wedding-candy-dish",
   "prueba-digital-pedido-evento-planners": "digital-proof-event-order-planners",
   "cuando-pedir-souvenirs-de-boda": "when-to-order-wedding-favors",
+  "presupuesto-recuerdos-de-boda-por-invitado": "wedding-favor-budget-per-guest",
 };
 
 export const PRODUCT_SLUG_ES: Record<string, string> = Object.fromEntries(
