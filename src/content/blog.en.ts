@@ -5159,6 +5159,74 @@ export const blogPostsEn: BlogPost[] = [
       { label: "Reverie Paper Co.: FAQs", url: "https://reverie-paper-co.squarespace.com/faqs" },
     ],
   },
+  {
+    slug: "when-to-order-wedding-favors",
+    title: "When to Order Wedding Favors: A Step-by-Step Calendar",
+    description:
+      "When to order wedding favors: a calendar counted back from your wedding date, what to decide first, and what to do if time is short.",
+    category: "Guides",
+    publishedAt: "2026-11-09",
+    intro:
+      "Wedding favors need to be ordered earlier than it seems. This calendar runs backward from your wedding date: what to decide, when, and what to do if time is already short. It is designed for brides and wedding planners who want every detail to arrive without rushing.",
+    sections: [
+      {
+        heading: "When to order wedding favors: the reference calendar",
+        body: [
+          "As a reference, start looking for ideas and requesting samples about 6 months before the wedding, place your order 2 to 3 months before, and call your supplier one week before to confirm delivery and quantities. This is the calendar Easy Weddings suggests. The real lead time depends on the workshop and on whether the piece is personalized.",
+          "These dates are a reference from a foreign guide. Before you set your calendar, ask your supplier how long their piece takes.",
+        ],
+        table: {
+          headers: ["Stage", "When (reference)", "What you do"],
+          rows: [
+            ["Search and test", "About 6 months before", "Look at ideas and request samples"],
+            ["Choose and order", "2 to 3 months before", "Decide on the piece and place the order"],
+            ["Confirm", "1 week before", "Call the supplier to confirm delivery and quantities"],
+          ],
+        },
+      },
+      {
+        heading: "What to decide first and what to leave for later",
+        body: [
+          "Set the idea and the design of the piece first, and leave the final guest count for later. According to Easy Weddings, it is easier to increase the number of favors than to reduce it, so it makes sense to start from an estimated quantity and raise it if needed, rather than ordering too many from the start.",
+          "Easy Weddings also advises ordering a few extras, to cover guests who do not attend and favors for the couple. If your piece includes names, dates or photos, that guide recommends sending them and asking for a sample to review before the order.",
+        ],
+      },
+      {
+        heading: "Personalized pieces and digital proof: how much margin to leave",
+        body: [
+          "A personalized piece goes through a design review before it is produced. At Yume, vinyl stickers get a digital proof before printing, with up to 2 rounds of adjustments, and nothing is printed without your approval. That is why it makes sense to leave margin in your calendar for that review.",
+          "If your favors are stickers, see the [custom vinyl stickers](/productos/stickers-vinil-impermeable) or the [stickers with your logo](/productos/stickers-logo-personalizado). To know how long your specific piece takes, message us on WhatsApp with your wedding date. If you are a wedding planner, share the event date and the piece with us so we can tell you the lead time before you commit it to your client.",
+        ],
+      },
+      {
+        heading: "What if my wedding is less than a month away?",
+        body: [
+          "Message us on WhatsApp as soon as possible with your wedding date, the piece you have in mind and the approximate quantity, and we will tell you whether we can make it in time. A short deadline is not always impossible, but it depends on the piece and the workshop, so it is best to confirm it before deciding.",
+        ],
+      },
+      {
+        heading: "Where to receive them: at the wedding venue or at home",
+        body: [
+          "Decide early whether the favors will arrive at the wedding venue the day before or at your home. Easy Weddings raises this decision so you can check them before the event. If you work with a wedding planner, ask them to coordinate with you how the package is received.",
+          "Browse the [product catalog](/productos) and, if you organize several weddings, message us on WhatsApp with the dates for each one.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
+    faq: [
+      {
+        q: "Do you send a digital proof before printing?",
+        a: "Yes, for vinyl stickers the digital proof usually arrives within 24 hours after your payment and includes up to 2 rounds of adjustments. We do not print anything without your approval.",
+      },
+      {
+        q: "Are the lead times in this guide Yume's?",
+        a: "No. They are a reference from Easy Weddings. The lead time for your piece depends on the product and the workshop: ask us on WhatsApp.",
+      },
+    ],
+    sources: [
+      { label: "Easy Weddings: When to order your bombonieres", url: "https://www.easyweddings.com.au/articles/when-to-order-your-bombonieres/" },
+    ],
+  },
 ];
 
 export function getBlogPostEn(slug: string) {
