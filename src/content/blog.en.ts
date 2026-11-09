@@ -4998,6 +4998,83 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "what-sweets-to-put-in-a-wedding-candy-dish",
+    title: "What sweets to put in a wedding candy dish: ideas for adults",
+    description:
+      "What sweets to put in a wedding candy dish for adult guests: ideas by profile, how many kinds to pick, sample amounts and how to present them.",
+    category: "Guides",
+    publishedAt: "2026-11-09",
+    intro:
+      "A wedding candy dish does not need to be a huge table of colorful candy. With adult guests, what counts is a short selection, well presented and coordinated with the rest of the banquet. This guide is for you, your partner and the wedding planner: which sweets to put, how many kinds to pick, how much per guest and how to present them.",
+    sections: [
+      {
+        heading: "What sweets to put in a wedding candy dish for adults",
+        body: [
+          "For adult guests, pick a few well-chosen sweets instead of a mountain of colorful candy. Bodas.net groups candy bar sweets into classics, small bites and elegant options, and for adults the elegant group, with macarons, truffles and mini pastries, is the most relevant one for your candy dish.",
+          "A candy dish is smaller than a full candy table, so you do not need to cover all three groups: choose one or two pieces from each according to the style of your wedding. For more filling ideas, see [what to put in a candy dish](/blog/que-poner-en-un-dulcero).",
+        ],
+      },
+      {
+        heading: "Ideas by profile: classic, chocolate, fruity and sweet-and-salty",
+        body: [
+          "A simple way to decide is to build the dish by profile: classic, chocolate, fruity, sweet-and-salty and one sugar-free or vegan option. With one piece from each profile, every guest finds something they like and the dish looks varied without filling up with options nobody finishes.",
+        ],
+        table: {
+          headers: ["Profile", "Ideas"],
+          rows: [
+            ["Classic", "Marshmallows, soft candies, licorice and gummies"],
+            ["Chocolate", "Truffles, mini brownies and decorated cookies"],
+            ["Fruity", "Gummies and dried fruit"],
+            ["Sweet-and-salty", "Nuts next to a sweet"],
+            ["Sugar-free or vegan", "One well-labeled option, as Bodas.net and Butter Be Mine suggest"],
+          ],
+        },
+      },
+      {
+        heading: "How many kinds of sweets and how much per guest",
+        body: [
+          "A US candy guide recommends 7 to 10 kinds of candy for a full buffet, so a small candy dish needs fewer options. For amounts, Bodas.net suggests about 150 g per guest at small weddings, about 100 g at medium ones and about 80 g at large ones.",
+          "For 100 guests, Bodas.net suggests starting from about 10 kg if almost everything is candy, and reducing it if you add brownies, donuts or other pastries. Butter Be Mine gives between 90 and 113 g per guest. These are references from those sites for a full table, not a rule for your candy dish.",
+        ],
+      },
+      {
+        heading: "How to present it: jars, heights and labels",
+        body: [
+          "Use clear containers at different heights, tongs or spoons, and labels with the name of each sweet and its allergens. That way guests can see what is there and the table looks tidy. Bodas.net also recommends marking gluten-free, sugar-free or vegan options.",
+          "Butter Be Mine suggests a palette of one main color and one accent color.",
+        ],
+      },
+      {
+        heading: "Diets, allergens and options for guests who skip dessert",
+        body: [
+          "Label flavors and allergens, and clearly mark gluten-free, sugar-free, vegan or dairy-free options. Butter Be Mine also suggests dried fruit and nuts for guests who do not eat sweets. This way nobody is left without something to choose, and each guest knows what they can eat without asking.",
+        ],
+      },
+      {
+        heading: "Where to place it and how to send guests home with sweets",
+        body: [
+          "Bodas.net advises placing the candy bar near the dance floor or opening it after the banquet, and the same idea works for a small candy dish. If you want the gift to continue at home, Butter Be Mine suggests offering small bags so guests can take sweets with them.",
+          "If you want the candy dish to carry the couple's names and your wedding theme, see our [custom candy dishes](/blog/dulceros-personalizados-guadalajara) and message us on WhatsApp for a quote. You can also add [custom vinyl stickers](/productos/stickers-vinil-impermeable) with your design.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable"],
+    sources: [
+      { label: "Bodas.net: everything to know before setting up a candy bar (Spanish)", url: "https://www.bodas.net/articulos/todo-lo-que-debeis-saber-antes-de-montar-una-candy-bar--c2448" },
+      { label: "Butter Be Mine: how to design a wedding candy buffet", url: "https://www.butterbemine.com/blogs/wedding-food/14777569-how-to-design-a-wedding-candy-buffet" },
+    ],
+    faq: [
+      {
+        q: "Do the candy dishes come with sweets?",
+        a: "No. The candy dish arrives assembled and empty, so you choose what goes inside.",
+      },
+      {
+        q: "What does personalization of the candy dish include?",
+        a: "The name and the theme you choose. We send a digital proof before production.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPostEn(slug: string) {

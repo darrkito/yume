@@ -6003,6 +6003,84 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "que-dulces-poner-en-dulcero-de-boda",
+    title: "Qué dulces poner en un dulcero de boda: ideas para adultos",
+    description:
+      "Qué dulces poner en un dulcero de boda para invitados adultos: ideas por perfil, cuántos tipos elegir, cantidades orientativas y cómo presentarlos.",
+    category: "Guías",
+    publishedAt: "2026-11-09",
+    intro:
+      "Un dulcero de boda no necesita ser una mesa enorme de chuches. Si tus invitados son adultos, lo que cuenta es una selección corta, bien presentada y coordinada con el resto del banquete. Esta guía es para ti, para tu pareja y para la wedding planner: qué dulces poner, cuántos tipos elegir, cuánto por invitado y cómo presentarlos.",
+    sections: [
+      {
+        heading: "Qué dulces poner en un dulcero de boda para adultos",
+        body: [
+          "Para invitados adultos conviene elegir pocos dulces y bien escogidos, en vez de una montaña de chuches de colores. Bodas.net agrupa los dulces en clásicos, bocados pequeños y opciones elegantes, y para adultos el grupo elegante, con macarons, trufas y mini pastelería, es el más relevante para tu dulcero.",
+          "Un dulcero es más pequeño que una mesa de dulces completa, así que no necesitas cubrir los tres grupos: escoge una o dos piezas de cada uno según el estilo de tu boda. Si quieres más ideas de relleno, revisa [qué poner en un dulcero](/blog/que-poner-en-un-dulcero).",
+        ],
+      },
+      {
+        heading: "Ideas por perfil: clásico, chocolate, frutal y salado-dulce",
+        body: [
+          "Una forma sencilla de decidir es armar el dulcero por perfiles: clásico, chocolate, frutal, salado-dulce y una opción sin azúcar o vegana. Con una pieza de cada perfil, cada invitado encuentra algo a su gusto y el dulcero se ve variado sin llenarse de opciones que nadie termina.",
+        ],
+        table: {
+          headers: ["Perfil", "Ideas"],
+          rows: [
+            ["Clásico", "Nubes, caramelos blandos, regaliz y gominolas"],
+            ["Chocolate", "Trufas, mini brownies y galletas decoradas"],
+            ["Frutal", "Gominolas y fruta deshidratada"],
+            ["Salado-dulce", "Nueces junto a un dulce"],
+            ["Sin azúcar o vegano", "Una opción bien rotulada, como sugieren Bodas.net y Butter Be Mine"],
+          ],
+        },
+      },
+      {
+        heading: "Cuántos tipos de dulce elegir y cuánto por invitado",
+        body: [
+          "Una guía de dulces de EE. UU. recomienda de 7 a 10 tipos de dulce para un buffet completo, así que un dulcero pequeño necesita menos opciones. Para las cantidades, Bodas.net propone unos 150 g por invitado en bodas pequeñas, unos 100 g en medianas y unos 80 g en grandes.",
+          "Para 100 invitados, Bodas.net sugiere partir de unos 10 kg si casi todo es dulce, y reducirlo si añades brownies, donuts u otra repostería. Butter Be Mine da entre 90 y 113 g por invitado. Son referencias de esos sitios para una mesa completa, no una regla para tu dulcero.",
+        ],
+      },
+      {
+        heading: "Cómo presentar el dulcero: frascos, alturas y rotulado",
+        body: [
+          "Usa recipientes transparentes con alturas variadas, pinzas o cucharas y rótulos con el nombre de cada dulce y sus alérgenos. Así los invitados ven lo que hay y la mesa se ve ordenada. Bodas.net también recomienda marcar las opciones sin gluten, sin azúcar o veganas.",
+          "Butter Be Mine sugiere una paleta de un color principal y uno de acento.",
+        ],
+      },
+      {
+        heading: "Dietas, alérgenos y opciones para quien no come dulce",
+        body: [
+          "Rotula sabores y alérgenos, y marca con claridad las opciones sin gluten, sin azúcar, veganas o sin lácteos. Butter Be Mine propone, además, fruta deshidratada y nueces para quien no come dulce. Así nadie se queda sin nada que elegir y cada invitado sabe qué puede comer sin preguntar.",
+        ],
+      },
+      {
+        heading: "Dónde colocarlo y cómo darlo para llevar",
+        body: [
+          "Bodas.net aconseja ubicar la candy bar cerca de la pista de baile o abrirla después del banquete. Para un dulcero pequeño puedes seguir la misma idea. Y si quieres que el detalle continúe en casa, Butter Be Mine sugiere ofrecer bolsitas para que los invitados se lleven dulces.",
+          "Si quieres que el dulcero lleve el nombre de los novios y la temática de tu boda, conoce nuestros [dulceros personalizados](/blog/dulceros-personalizados-guadalajara) y escríbenos por WhatsApp para cotizar. También puedes sumar [stickers de vinil personalizados](/productos/stickers-vinil-impermeable) con tu diseño.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara"],
+    sources: [
+      { label: "Bodas.net: todo lo que debéis saber antes de montar una candy bar", url: "https://www.bodas.net/articulos/todo-lo-que-debeis-saber-antes-de-montar-una-candy-bar--c2448" },
+      { label: "Butter Be Mine: how to design a wedding candy buffet", url: "https://www.butterbemine.com/blogs/wedding-food/14777569-how-to-design-a-wedding-candy-buffet" },
+    ],
+    faq: [
+      {
+        q: "¿Los dulceros incluyen dulces?",
+        a: "No. El dulcero llega armado y vacío, así que tú eliges lo que lleva dentro.",
+      },
+      {
+        q: "¿Qué incluye la personalización del dulcero?",
+        a: "El nombre y la temática que elijas. Te mandamos una prueba digital antes de producir.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string) {
