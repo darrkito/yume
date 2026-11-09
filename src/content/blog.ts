@@ -6081,6 +6081,90 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "prueba-digital-pedido-evento-planners",
+    title: "Prueba digital en pedidos de evento para planners",
+    description:
+      "Cómo aprobar la prueba digital de un diseño personalizado para evento sin retrasos: qué entregar, qué revisar y cómo calcular tu calendario.",
+    category: "Guías",
+    publishedAt: "2026-11-09",
+    intro:
+      "Para una planner, la prueba digital es el último filtro antes de producir. Si llega con datos completos y comentarios ordenados, hay menos vueltas; si no, puede mover toda la fecha del evento. Aquí tienes qué entregar, qué revisar, cómo reunir las opiniones de todos y cómo calcular tu calendario hacia atrás.",
+    sections: [
+      {
+        heading: "Prueba digital para planners: qué es y por qué marca el calendario",
+        body: [
+          "La prueba digital es una imagen de tu diseño personalizado que revisas antes de producir. Para una planner es el punto de arranque de la producción: nada se imprime sin tu aprobación, y en varias tiendas que consultamos un cambio posterior implica rehacer la pieza. Por eso conviene tratarla como una entrega formal.",
+          "En Yume trabajamos con prueba digital antes de producir, por ejemplo en los [stickers de vinil personalizados](/productos/stickers-vinil-impermeable). Para otras piezas del evento, pregunta por WhatsApp cuántas rondas de ajustes incluye tu pedido.",
+        ],
+      },
+      {
+        heading: "Qué datos entregar antes de que llegue la prueba",
+        body: [
+          "Entrega todo en un solo mensaje: textos finales ya corregidos, nombres completos, fecha y hora del evento, cantidades, paleta de colores y la referencia de la invitación o la decoración. Si el diseño parte de información incompleta, la prueba se repite y puedes gastar las rondas de ajustes incluidas.",
+          "Como referencia, Reverie Paper Co. empieza a contar el plazo de su prueba cuando recibe el texto final. Es la política de esa tienda, no un estándar del sector ni un plazo de Yume.",
+        ],
+      },
+      {
+        heading: "Qué revisar en la prueba antes de aprobarla",
+        body: [
+          "Revisa primero lo que no se puede corregir después: ortografía de los nombres, fechas, horarios, cantidades, medidas y ubicación del diseño en la pieza. Compara cada dato con la información final del cliente. Made & True, una tienda de letreros para bodas, pide revisar también el formato de las fechas.",
+          "Forever Fiances, otra tienda, explica que después de la aprobación final no vuelve a revisar ortografía, puntuación ni contenido, porque la prueba aprobada se usa directamente para fabricar. Es su política, pero muestra por qué conviene revisar con calma.",
+        ],
+        table: {
+          headers: ["Qué revisar", "Pregunta para confirmar"],
+          rows: [
+            ["Nombres", "¿Están escritos como los quiere el cliente?"],
+            ["Fecha y horario", "¿Coinciden con la invitación final?"],
+            ["Cantidades", "¿Es el número de piezas que pediste?"],
+            ["Medidas y ubicación", "¿El diseño está donde debe y con el tamaño acordado?"],
+            ["Colores", "¿Siguen la paleta del evento? Recuerda que la pantalla puede variar."],
+          ],
+        },
+      },
+      {
+        heading: "Cómo reunir los comentarios de todos sin gastar rondas",
+        body: [
+          "Nombra a una sola persona que reciba los comentarios de la planner, el cliente, la familia o la empresa, y manda a tu proveedor un único mensaje con todos los cambios juntos. Así una ronda de ajustes cubre todas las opiniones. Reverie Paper Co. pide comentarios concisos justamente para no gastar rondas.",
+          "Si trabajas por WhatsApp con Yume, reenvía la prueba al grupo de decisores, junta las respuestas y contesta una sola vez con una lista numerada, por ejemplo para unos [stickers con tu logo](/productos/stickers-logo-personalizado) del evento. Cuando todos estén de acuerdo, escribe un 'aprobado' claro.",
+        ],
+      },
+      {
+        heading: "Por qué el color en pantalla puede variar del impreso",
+        body: [
+          "La prueba digital se ve en una pantalla, y el color y el tamaño pueden verse distintos que en el impreso. Forever Fiances lo advierte y explica que el papel y el método de impresión, offset o digital, también afectan el color. Si el color es crítico, coméntalo antes de aprobar.",
+          "Para que varias piezas del mismo evento combinen, Forever Fiances recomienda usar el mismo papel y pedir e imprimir todo al mismo tiempo. Consulta con Yume por WhatsApp qué conviene en tu caso: no prometemos que la pantalla muestre el color exacto del impreso.",
+        ],
+      },
+      {
+        heading: "Cómo calcular tu calendario hacia atrás desde la fecha del evento",
+        body: [
+          "Parte de la fecha del evento y resta, en este orden: el tiempo de envío, el de producción, el de la aprobación y el de diseño. El resultado es tu fecha límite para entregar los datos finales. Pregunta por WhatsApp los plazos de tu pedido y de tu ciudad antes de fijar fechas con el cliente.",
+          "Como referencia de otras tiendas: Made & True pide enviar los detalles finales unas 4 semanas antes de la boda, y Reverie Paper Co. suma de 4 a 6 semanas de diseño si hay artwork personalizado. Son sus plazos, no los de Yume. Cuando tengas tu fecha límite, cotiza tus [stickers personalizados para eventos](/productos/stickers-vinil-impermeable) por WhatsApp.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
+    faq: [
+      {
+        q: "¿Cuánto tarda la prueba digital de los stickers de vinil?",
+        a: "Normalmente llega en un máximo de 24 horas después de tu pago e incluye hasta 2 rondas de ajustes.",
+      },
+      {
+        q: "¿La prueba siempre viene incluida en el pedido?",
+        a: "Depende del proveedor. Made & True, por ejemplo, la incluye gratis en algunos letreros y la cobra aparte en otros. En Yume, confirma por WhatsApp qué incluye tu pedido.",
+      },
+      {
+        q: "¿Las rondas extra se cobran?",
+        a: "En las tiendas que consultamos, las rondas incluidas son pocas y las extra tienen costo, pero son políticas individuales de cada tienda. Pregunta por WhatsApp cómo funciona en tu pedido.",
+      },
+    ],
+    sources: [
+      { label: "Forever Fiances: proceso de aprobación", url: "https://foreverfiances.helpscoutdocs.com/article/36-what-is-the-approval-process" },
+      { label: "Made & True: cómo pedir letreros personalizados para boda", url: "https://madeandtrue.com/blogs/news/how-to-order-custom-wedding-signage" },
+      { label: "Reverie Paper Co.: preguntas frecuentes", url: "https://reverie-paper-co.squarespace.com/faqs" },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string) {

@@ -5075,6 +5075,90 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "digital-proof-event-order-planners",
+    title: "Digital proof for event orders: a guide for planners",
+    description:
+      "How to approve a custom event design digital proof without delays: what to send, what to check and how to plan your timeline backwards.",
+    category: "Guides",
+    publishedAt: "2026-11-09",
+    intro:
+      "For a planner, the digital proof is the last filter before production. If it arrives with complete details and organized comments, there are fewer rounds; if not, it can move the whole event date. Here is what to send, what to check, how to gather everyone's opinions and how to plan your timeline backwards.",
+    sections: [
+      {
+        heading: "Digital proof for planners: what it is and why it sets the calendar",
+        body: [
+          "A digital proof is an image of your custom design that you review before production. For a planner it is the starting point of production: nothing is printed without your approval, and at several stores we checked, a later change means remaking the piece. That is why it pays to treat it as a formal handoff.",
+          "At Yume we work with a digital proof before production, for example with our [custom vinyl stickers](/productos/stickers-vinil-impermeable). For other event pieces, ask on WhatsApp how many adjustment rounds your order includes.",
+        ],
+      },
+      {
+        heading: "What details to send before the proof arrives",
+        body: [
+          "Send everything in a single message: final proofread texts, full names, event date and time, quantities, color palette and a reference of the invitation or decor. If the design starts from incomplete information, the proof gets repeated and you may use up the included adjustment rounds.",
+          "As a reference, Reverie Paper Co. starts counting its proof timeline when it receives the final text. That is the policy of that store, not an industry standard or a Yume lead time.",
+        ],
+      },
+      {
+        heading: "What to check in the proof before approving it",
+        body: [
+          "Check first what cannot be fixed later: spelling of names, dates, times, quantities, measurements and where the design sits on the piece. Compare each detail with the client's final information. Made & True, a wedding signage store, also asks you to check date formatting.",
+          "Forever Fiances, another store, explains that after final approval it does not review spelling, punctuation or content again, because the approved proof is used directly to manufacture. That is its policy, but it shows why a calm review matters.",
+        ],
+        table: {
+          headers: ["What to check", "Question to confirm"],
+          rows: [
+            ["Names", "Are they spelled the way the client wants?"],
+            ["Date and time", "Do they match the final invitation?"],
+            ["Quantities", "Is it the number of pieces you ordered?"],
+            ["Measurements and placement", "Is the design where it should be and at the agreed size?"],
+            ["Colors", "Do they follow the event palette? Remember that screens can vary."],
+          ],
+        },
+      },
+      {
+        heading: "How to gather everyone's comments without using up rounds",
+        body: [
+          "Name one person to collect comments from the planner, the client, the family or the company, and send your supplier a single message with all changes together. That way one adjustment round covers every opinion. Reverie Paper Co. asks for concise comments precisely to avoid using up rounds.",
+          "If you work on WhatsApp with Yume, forward the proof to the group of decision makers, collect their answers and reply once with a numbered list, for example for [stickers with your logo](/productos/stickers-logo-personalizado) for the event. When everyone agrees, write a clear 'approved'.",
+        ],
+      },
+      {
+        heading: "Why screen color can differ from the printed piece",
+        body: [
+          "A digital proof is viewed on a screen, so color and size can look different from the printed piece. Forever Fiances warns about this and explains that the paper and the printing method, offset or digital, also affect color. If color is critical, mention it before approving.",
+          "For several pieces of the same event to match, Forever Fiances recommends using the same paper and ordering and printing everything at the same time. Ask Yume on WhatsApp what suits your case: we do not promise that the screen shows the exact printed color.",
+        ],
+      },
+      {
+        heading: "How to plan your timeline backwards from the event date",
+        body: [
+          "Start from the event date and subtract, in this order: shipping time, production time, approval time and design time. The result is your deadline to deliver final details. Ask on WhatsApp for the lead times of your order and your city before setting dates with the client.",
+          "As a reference from other stores: Made & True asks for final details about 4 weeks before the wedding, and Reverie Paper Co. adds 4 to 6 weeks of design when there is custom artwork. Those are their lead times, not Yume's. Once you have your deadline, request a quote for your [custom stickers for events](/productos/stickers-vinil-impermeable) on WhatsApp.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
+    faq: [
+      {
+        q: "How long does the digital proof take for vinyl stickers?",
+        a: "It normally arrives within 24 hours after your payment and includes up to 2 rounds of adjustments.",
+      },
+      {
+        q: "Is the proof always included in the order?",
+        a: "It depends on the supplier. Made & True, for example, includes it free on some signs and charges for it on others. At Yume, confirm on WhatsApp what your order includes.",
+      },
+      {
+        q: "Do extra rounds cost money?",
+        a: "At the stores we checked, included rounds are few and extra ones have a cost, but these are individual store policies. Ask on WhatsApp how it works for your order.",
+      },
+    ],
+    sources: [
+      { label: "Forever Fiances: approval process", url: "https://foreverfiances.helpscoutdocs.com/article/36-what-is-the-approval-process" },
+      { label: "Made & True: how to order custom wedding signage", url: "https://madeandtrue.com/blogs/news/how-to-order-custom-wedding-signage" },
+      { label: "Reverie Paper Co.: FAQs", url: "https://reverie-paper-co.squarespace.com/faqs" },
+    ],
+  },
 ];
 
 export function getBlogPostEn(slug: string) {
