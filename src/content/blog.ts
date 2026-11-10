@@ -1854,15 +1854,61 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "datos-obligatorios-receta-medica-mexico",
-    title: "Formato de receta médica en México: qué debe llevar",
-    metaTitle: "Formato de receta médica en México: qué debe llevar",
-    description: "Qué datos lleva una receta médica en México: membrete, datos del paciente e indicaciones, qué dice la NOM-004-SSA3-2012 y qué conviene preimprimir.",
+    title: "Datos obligatorios de una receta médica en México",
+    metaTitle: "Datos obligatorios de una receta médica en México",
+    description: "Qué datos lleva una receta médica en México, los tipos de receta del artículo 226 de la LGS, su vigencia y qué conviene preimprimir en tu recetario.",
     category: "Guías",
     publishedAt: "2026-09-09",
-    modifiedAt: "2026-10-26",
+    modifiedAt: "2026-11-10",
     intro:
-      "Si estás por pedir tu primer recetario personalizado, es normal preguntarte qué datos debe llevar exactamente. Esta es información general basada en lo que se acostumbra en consultorios de México y en la norma oficial NOM-004-SSA3-2012 del expediente clínico (que enlistamos al final): no sustituye lo que tu colegio de médicos, tu estado o la institución donde trabajas exija de forma específica, así que siempre vale la pena confirmarlo con ellos antes de mandar a imprimir. Aquí separamos lo que va fijo en el membrete de lo que escribes con cada paciente, qué pide la norma sobre lo que escribes y cómo revisar tu diseño antes de producir.",
+      "Si estás por pedir tu primer recetario personalizado, es normal preguntarte cuáles son los datos obligatorios de una receta médica en México. Esta es información general basada en la Ley General de Salud, la NOM-004-SSA3-2012 del expediente clínico y lo que se acostumbra en consultorios (las fuentes están al final): no sustituye lo que tu colegio de médicos, tu estado o tu institución exijan, así que confírmalo antes de mandar a imprimir. Aquí separamos los tipos de receta, lo que va fijo en el membrete y lo que escribes con cada paciente.",
     sections: [
+      {
+        heading: "Qué datos debe llevar una receta médica en México",
+        body: [
+          "Una receta médica en México lleva los datos de quien prescribe (nombre, domicilio completo y cédula profesional), la fecha, la firma autógrafa y las indicaciones del tratamiento: dosis, presentación, vía, frecuencia y duración. Estos datos se atribuyen a la normativa sanitaria y conviene confirmarlos con tu colegio o institución.",
+          "Del lado de quien prescribe van el nombre, el domicilio completo y la cédula profesional. Del lado del tratamiento van la dosis, la presentación, la vía, la frecuencia y la duración. La fecha y la firma autógrafa cierran la receta. En un recetario personalizado, lo fijo va en el membrete y lo demás lo escribes tú.",
+        ],
+      },
+      {
+        heading: "Tipos de receta según el artículo 226 de la LGS",
+        body: [
+          "El artículo 226 de la Ley General de Salud divide los medicamentos en seis fracciones según la receta que exigen: especial, retenida, surtible hasta tres veces, resurtible, y dos grupos que se venden sin receta. Por eso no todas las recetas funcionan igual ni duran lo mismo.",
+          "La fracción de un medicamento no depende del diseño de tu recetario. Para saber cuál aplica a un medicamento concreto, consulta a tu médico o a la farmacia.",
+        ],
+        table: {
+          headers: ["Fracción", "Receta que exige", "Cómo se surte"],
+          rows: [
+            ["I", "Receta o permiso especial", "Consulta a tu médico o a la farmacia"],
+            ["II", "Receta retenida", "Se retiene; vigencia de 30 días desde su elaboración"],
+            ["III", "Receta que se sella en cada surtido", "Hasta 3 veces; se retiene en el tercero"],
+            ["IV", "Receta", "Se resurte las veces que indique el médico"],
+            ["V", "Sin receta", "Solo en farmacias"],
+            ["VI", "Sin receta", "No requiere receta"],
+          ],
+        },
+      },
+      {
+        heading: "Cuánto dura una receta médica: vigencia y surtido",
+        body: [
+          "Los 30 días de vigencia que se mencionan mucho corresponden a la receta retenida de la fracción II del artículo 226, no a todas las recetas. Cuenta desde que el médico la elabora. Para otros tipos de receta y casos particulares, pregunta a tu médico o a la farmacia.",
+          "La receta de la fracción II puede incluir hasta dos presentaciones del mismo producto. La de la fracción III se surte hasta 3 veces, se sella en cada surtido y la farmacia la retiene en el tercero.",
+        ],
+      },
+      {
+        heading: "Nombre genérico o marca: cómo se indica el medicamento",
+        body: [
+          "El artículo 226 de la LGS indica que el médico prescribe por denominación genérica. Puede añadir una marca de su preferencia, siempre que informe al paciente sobre las opciones terapéuticas. Ante cualquier duda sobre el medicamento indicado, pregunta a tu médico o a la farmacia.",
+          "Esto aplica a lo que escribe quien prescribe en cada receta; no cambia lo que va preimpreso en el membrete.",
+        ],
+      },
+      {
+        heading: "Recetas de estupefacientes: un caso aparte",
+        body: [
+          "Los estupefacientes no se prescriben en una receta común. Se usan recetarios especiales con código de barras asignado por la Secretaría de Salud o por las autoridades sanitarias estatales, y los formulan los profesionales autorizados para tratamientos no mayores de 30 días. Confirma el trámite con la autoridad sanitaria.",
+          "El recetario personalizado de Yume es para la receta común. Si necesitas folio o código de barras para algún trámite o institución, avísalo al cotizar.",
+        ],
+      },
       {
         heading: "Qué dice la NOM-004-SSA3-2012 sobre lo que escribes",
         body: [
@@ -1907,7 +1953,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Qué incluye el recetario de Yume y cuánto tarda",
         body: [
-          `El Recetario Médico Personalizado trae 100 hojas tamaño Media Carta (14 × 21.5 cm) en papel Bond de 90 gr, color blanco, con tu membrete preimpreso. Cuesta $${recetarioPrice("sin-diseno")} MXN si ya tienes tu diseño y $${recetarioPrice("con-diseno")} MXN si lo diseñamos contigo, y apruebas una prueba digital antes de imprimir.`,
+          `El [Recetario Médico Personalizado](/productos/recetario-medico-personalizado) trae 100 hojas tamaño Media Carta (14 × 21.5 cm) en papel Bond de 90 gr, color blanco, con tu membrete preimpreso. Cuesta $${recetarioPrice("sin-diseno")} MXN si ya tienes tu diseño y $${recetarioPrice("con-diseno")} MXN si lo diseñamos contigo, y apruebas una prueba digital antes de imprimir.`,
           `La prueba digital llega normalmente en un máximo de 24 horas después del pago. Desde que la apruebas, recoger en una sucursal Casa Blanca toma ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles y el envío a domicilio ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles, en cualquier parte de México.`,
           "Si todavía no tienes logo o membrete, la opción con diseño sirve para armarlo desde cero con tus datos profesionales. Si ya lo tienes en formato editable, la opción sin diseño es suficiente.",
         ],
@@ -1916,8 +1962,14 @@ export const blogPosts: BlogPost[] = [
         heading: "Qué revisar antes de mandar a imprimir",
         body: [
           "Antes de aprobar revisa cuatro cosas: que tu nombre y tu cédula coincidan con tu documento, que el teléfono y la dirección estén vigentes, que tu colegio o institución no pida otro formato, y que todo se lea bien en la prueba digital. Un error preimpreso se repite en las 100 hojas.",
-          "Si tus recetas necesitan folio o código de barras para algún trámite o institución, avísalo al cotizar: es información que hay que confirmar antes de imprimir, no algo que se pueda corregir después.",
           "Pídele a alguien más que lea la prueba digital contigo, sobre todo los números de cédula y de teléfono: es fácil no ver un dígito cambiado en tus propios datos.",
+        ],
+      },
+      {
+        heading: "Qué revisar en una receta antes de ir a la farmacia",
+        body: [
+          "Antes de salir del consultorio, revisa que la receta traiga los datos de quien prescribe, la fecha, la firma y el medicamento con dosis, vía, frecuencia y duración, todo con letra legible. Si algo falta o no se entiende, pídele a tu médico que lo aclare antes de ir a la farmacia.",
+          "Si estás por pedir tu recetario, compara [recetario impreso o digital](/blog/recetario-medico-impreso-vs-digital) y [con diseño o sin diseño](/blog/recetario-medico-con-diseno-vs-sin-diseno). Si trabajas en Guadalajara, revisa los [recetarios médicos personalizados en Guadalajara](/blog/recetarios-medicos-personalizados-guadalajara).",
         ],
       },
     ],
@@ -1935,6 +1987,18 @@ export const blogPosts: BlogPost[] = [
       {
         q: "¿Qué datos van preimpresos y cuáles se escriben a mano?",
         a: "Preimpresos van los datos fijos del membrete: nombre, especialidad, cédula y datos del consultorio. A mano se escribe lo que cambia con cada paciente: su nombre, la fecha, el medicamento con dosis y duración, y tu firma.",
+      },
+      {
+        q: "¿Toda receta médica vale 30 días?",
+        a: "No. Según el artículo 226 de la Ley General de Salud, los 30 días desde su elaboración corresponden a la receta retenida de la fracción II. Para otros casos, consulta a tu médico o a la farmacia.",
+      },
+      {
+        q: "¿Cuántas veces se puede surtir una receta?",
+        a: "Depende de la fracción del medicamento. La de la fracción III se surte hasta 3 veces, se sella en cada surtido y se retiene en el tercero; la de la fracción IV se resurte las veces que indique el médico.",
+      },
+      {
+        q: "¿La receta debe ir con el nombre genérico del medicamento?",
+        a: "Sí. El artículo 226 de la LGS indica que se prescribe por denominación genérica, y el médico puede indicar una marca de su preferencia informando al paciente sobre las opciones terapéuticas.",
       },
       {
         q: "¿Qué tamaño y cuántas hojas tiene el recetario de Yume?",
@@ -1957,6 +2021,18 @@ export const blogPosts: BlogPost[] = [
       {
         label: "NOM-004-SSA3-2012, Diario Oficial de la Federación",
         url: "https://dof.gob.mx/nota_detalle_popup.php?codigo=5272787",
+      },
+      {
+        label: "Ley General de Salud, artículo 226",
+        url: "https://mley.mx/LGS/articulo/226/",
+      },
+      {
+        label: "Ley General de Salud, artículo 241",
+        url: "https://mley.mx/LGS/articulo/241/",
+      },
+      {
+        label: "Artículo académico sobre la receta médica, SciELO México",
+        url: "https://www.scielo.org.mx/pdf/prh/v38n2/2524-1710-prh-38-2-60.pdf",
       },
     ],
   },
