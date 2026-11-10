@@ -3748,19 +3748,19 @@ export const blogPosts: BlogPost[] = [
     title: "Troquelado vs semitroquelado: qué tipo de corte elegir para tus stickers",
     metaTitle: "Troquelado vs semitroquelado: cuál elegir en stickers",
     description:
-      "Troquelado vs semitroquelado (die cut y kiss cut): cuál elegir para souvenirs, regalos y eventos, y cómo pedirlo en Yume con prueba digital antes de imprimir.",
+      "Troquelado vs semitroquelado (die cut y kiss cut): qué cambia, cuál elegir para souvenirs y eventos, y cómo pedirlo en Yume con prueba digital.",
     category: "Guías",
     publishedAt: "2026-10-16",
-    modifiedAt: "2026-10-26",
+    modifiedAt: "2026-11-10",
     intro:
       "Al pedir stickers personalizados te topas con dos palabras: troquelado y semitroquelado. En Yume hacemos los dos y tú eliges al pedir. Esta guía explica qué es cada uno, en qué se diferencian y cuál te conviene según el uso que le vas a dar, sea un souvenir de boda, un detalle para tus invitados, un regalo o el empaque de tu marca.",
     sections: [
       {
-        heading: "¿Qué es un sticker troquelado y qué es uno semitroquelado?",
+        heading: "Troquelado vs semitroquelado: qué es cada corte",
         body: [
-          "El sticker troquelado (die cut) se corta por completo, vinil y base juntos, y lo recibes suelto. El semitroquelado (kiss cut) se corta solo en el vinil y llega pegado a su hoja de respaldo. En los dos, la forma sigue el contorno de tu diseño.",
-          "Un sticker troquelado (en inglés, die cut) se corta por completo siguiendo el contorno del diseño: el vinil y su base se cortan juntos, así que recibes cada sticker suelto, con la forma exacta de tu logo, personaje o foto.",
-          "Un sticker semitroquelado (en inglés, kiss cut) se corta solo en el vinil, sin atravesar la hoja base. El contorno queda marcado, pero los stickers siguen pegados a su hoja de respaldo y los despegas uno por uno cuando los vas a usar.",
+          "En el troquelado (die cut) el corte atraviesa el vinil y también la base, así que cada sticker queda como una pieza suelta. En el semitroquelado (kiss cut) el corte atraviesa solo el vinil y la base queda entera alrededor del diseño. En ambos casos la forma sigue el contorno de tu diseño.",
+          "Dicho de otra forma: en un sticker troquelado cada pieza queda separada de su base y la recibes suelta, con la forma exacta de tu logo, personaje o foto, lista para usar.",
+          "En un sticker semitroquelado el contorno queda marcado en el vinil, pero la hoja de respaldo sigue entera. Los despegas uno por uno cuando los vas a usar, y esa hoja entera hace más fácil despegarlos y manipularlos.",
         ],
         table: {
           headers: ["Aspecto", "Troquelado (die cut)", "Semitroquelado (kiss cut)"],
@@ -3775,32 +3775,43 @@ export const blogPosts: BlogPost[] = [
         heading: "¿Cuál conviene según el uso?",
         body: [
           "Elige troquelado si el sticker se entrega o se pega de uno en uno, y semitroquelado si quieres tenerlos juntos y protegidos hasta usarlos. Los dos usan el mismo vinil premium y la misma forma de tu diseño: lo que cambia es el corte y cómo recibes el pedido.",
-          "El troquelado tiene sentido cuando el sticker se va a entregar o pegar de uno en uno: un sello para cerrar una bolsa, una etiqueta para un producto, un regalo para un cliente. Llega listo para despegar, sin hoja de por medio.",
-          "El semitroquelado tiene sentido cuando quieres tener tus stickers juntos y protegidos hasta usarlos: para llevarlos a un bazar o una feria, repartirlos en un evento o guardar una cantidad para ir usándola. La hoja de respaldo los mantiene ordenados y limpios.",
+          "El troquelado conviene sobre todo cuando la forma del sticker es parte del diseño, porque cada pieza ya viene recortada y lista para usar: un sello para cerrar una bolsa, un regalo para un cliente o un detalle para cada invitado.",
+          "El semitroquelado conviene cuando quieres tus stickers juntos y ordenados hasta usarlos: para llevarlos a un bazar o una feria, repartirlos en un evento o guardar una cantidad para ir usándola.",
           "Si no estás seguro, piensa en cómo vas a usarlos: uno por uno, o en tanda.",
         ],
+        table: {
+          headers: ["Si tu caso es...", "Te conviene"],
+          rows: [
+            ["Cada persona recibe su sticker suelto", "Troquelado"],
+            ["Vas a repartir o colocar los stickers desde una hoja", "Semitroquelado"],
+            ["La forma recortada es parte del diseño", "Troquelado"],
+            ["Quieres despegarlos con más facilidad", "Semitroquelado"],
+          ],
+        },
       },
       {
         heading: "¿Qué corte conviene para souvenirs, bodas y eventos?",
         body: [
           "Para un evento, el troquelado suele ser lo más práctico si cada invitado se lleva su sticker, y el semitroquelado si tú o tu planner van a repartirlos o a colocarlos en la mesa. Es una guía de uso, no una regla: cualquiera de los dos funciona en un evento.",
           "Imagina un sticker con el nombre de los novios y la fecha para cerrar la bolsita de un recuerdo, o uno con el nombre del festejado para la mesa de dulces. En esos casos el troquelado llega listo para pegar, sin que nadie tenga que cortar nada.",
-          "Si vas a armar los detalles con calma antes del evento, por ejemplo pegando un sticker en cada caja o bolsa en una tarde, el semitroquelado te los deja ordenados en su hoja mientras trabajas. Para ver más ideas de uso en bodas, XV años y fiestas, lee nuestra guía de stickers para bodas, eventos y fiestas.",
+          "Si vas a armar los detalles con calma antes del evento, por ejemplo pegando un sticker en cada caja o bolsa en una tarde, el semitroquelado te los deja ordenados en su hoja mientras trabajas.",
+          "Una referencia: según StickerApp, una tienda de impresión, el respaldo sobrante del semitroquelado puede llevar información extra, como un logo o instrucciones de cuidado. Si te interesa usar el respaldo así, escríbenos por WhatsApp antes de pagar y lo revisamos. Para más ideas de uso, lee nuestra [guía de stickers para bodas y eventos](/blog/stickers-para-bodas-eventos-y-fiestas).",
         ],
       },
       {
         heading: "¿Qué corte conviene para tu marca, empaque o regalos?",
         body: [
           "Si vas a sellar empaques o pegar etiquetas una por una, el troquelado te ahorra pasos. Si vas a llevar stickers a una feria o repartirlos en tanda, el semitroquelado los mantiene juntos. En ambos casos eliges el corte en la página del producto antes de pagar.",
-          "Para el logo de tu negocio, la opción es Stickers y Etiquetas con tu Logo. Para un personaje, una mascota, una foto o cualquier otro diseño, es Stickers de Vinil Personalizados. Los dos aceptan los dos cortes, así que la decisión del producto y la del corte son independientes.",
-          "Si tu duda es entre vinil y papel, revisa la comparación de stickers de vinil vs papel. En Yume trabajamos solo vinil, así que el corte es la decisión de diseño que te queda por tomar.",
+          "Para el logo de tu negocio, la opción es [Stickers y Etiquetas con tu Logo](/productos/stickers-logo-personalizado). Para un personaje, una mascota, una foto o cualquier otro diseño, es [Stickers de Vinil Personalizados](/productos/stickers-vinil-impermeable). Los dos aceptan los dos cortes, así que la decisión del producto y la del corte son independientes.",
+          "En Yume los stickers se venden por cantidad de piezas, no por planilla. Como referencia, StickerApp separa sus productos así: hojas de stickers para varios diseños distintos y singles on sheet para un mismo diseño repetido. Si tu duda es entre vinil y papel, revisa la comparación de [stickers de vinil vs papel](/blog/stickers-vinil-vs-papel-diferencias).",
         ],
       },
       {
         heading: "Cómo elegir el tipo de corte al pedir",
         body: [
           "Eliges el corte, Troquelado o Semitroquelado, en la página del producto antes de agregar al carrito, junto con el acabado: mate, brillante u holográfico. Lo que elijas queda guardado en tu pedido, y antes de imprimir recibes una prueba digital para confirmar cómo se ve.",
-          "Las páginas de producto son Stickers de Vinil Personalizados y Stickers y Etiquetas con tu Logo. El acabado holográfico tiene un costo extra de $0.50 por pieza, que ves al elegirlo.",
+          "El acabado holográfico tiene un costo extra de $0.50 por pieza, que ves al elegirlo. El corte no agrega costo por pieza.",
+          "La prueba digital llega normalmente en un máximo de 24 horas después del pago e incluye hasta 2 rondas de ajustes. Nada se imprime sin tu aprobación, así que si compras para un cliente o para una clienta, puedes mostrarle el diseño antes de producir.",
           "Si tienes dudas sobre cuál te conviene para tu caso, escríbenos por WhatsApp antes de pagar y lo revisamos contigo.",
         ],
       },
@@ -3818,8 +3829,8 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "¿Cuánto tarda mi pedido y cómo lo recibo?",
         body: [
-          `Desde que apruebas la prueba digital, tu pedido llega a domicilio en ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles, o está listo para recoger en Casa Blanca en ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles. Producimos en Guadalajara y enviamos a todo México.`,
-          `El envío cuesta $${NATIONAL_SHIPPING_PRICE} MXN y es gratis en compras de $${FREE_SHIPPING_THRESHOLD} MXN o más. Si tu evento tiene fecha, calcula estos días hacia atrás y deja margen para la prueba digital, que llega normalmente en un máximo de 24 horas después del pago e incluye hasta 2 rondas de ajustes. Para más detalle, lee cuánto tarda un pedido de stickers personalizados.`,
+          `Desde que apruebas la prueba digital, tu pedido llega a domicilio en ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles, o está listo para recoger en Casa Blanca en ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles. Producimos en Guadalajara y enviamos a todo México, y los días se cuentan desde la aprobación de tu prueba.`,
+          `El envío cuesta $${NATIONAL_SHIPPING_PRICE} MXN y es gratis en compras de $${FREE_SHIPPING_THRESHOLD} MXN o más. Si tu evento tiene fecha, calcula estos días hacia atrás y deja margen para la prueba digital. Para más detalle, lee [cuánto tarda un pedido de stickers](/blog/cuanto-tarda-un-pedido-de-stickers-personalizados).`,
         ],
       },
     ],
@@ -3831,6 +3842,14 @@ export const blogPosts: BlogPost[] = [
       {
         q: "¿Qué significan die cut y kiss cut?",
         a: "Son los nombres en inglés: die cut es troquelado y kiss cut es semitroquelado.",
+      },
+      {
+        q: "¿Cuál se despega más fácil?",
+        a: "El semitroquelado. Según StickerApp, como el respaldo queda entero, este corte es más fácil de despegar y manipular.",
+      },
+      {
+        q: "¿Qué se puede hacer con el respaldo del semitroquelado?",
+        a: "Según StickerApp, el respaldo sobrante puede llevar información extra, como un logo o instrucciones de cuidado. Si quieres usarlo así en Yume, escríbenos por WhatsApp antes de pagar para confirmarlo.",
       },
       {
         q: "¿Puedo elegir el corte al pedir?",
@@ -3859,6 +3878,9 @@ export const blogPosts: BlogPost[] = [
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
     relatedBlogSlugs: ["stickers-vinil-vs-papel-diferencias", "stickers-para-bodas-eventos-y-fiestas", "cuanto-tarda-un-pedido-de-stickers-personalizados", "donde-imprimir-stickers-personalizados-mexico"],
+    sources: [
+      { label: "StickerApp: Die cut vs kiss cut stickers", url: "https://stickerapp.com/support/stickers/products/die-cut/die-cut-vs-kiss-cut-stickers" },
+    ],
   },
   {
     slug: "cuanto-duran-los-tatuajes-temporales-y-como-quitarlos",
