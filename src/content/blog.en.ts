@@ -4015,7 +4015,7 @@ export const blogPostsEn: BlogPost[] = [
     description:
       "How to set up a wedding candy table: how many sweets to plan, what to put in each candy box and how to personalize them with a digital proof.",
     category: "Guides",
-    publishedAt: "2026-11-11",
+    publishedAt: "2026-11-10",
     modifiedAt: "2026-11-03",
     intro:
       "A well-planned wedding candy table looks good, photographs well and gets enjoyed. This guide covers how many sweets to estimate, how many candy boxes you need, what to put in each one, how to set up the table, what each label should say and how to personalize the candy boxes so they match your wedding palette. There is also a section for wedding planners.",
@@ -5392,6 +5392,96 @@ export const blogPostsEn: BlogPost[] = [
       {
         q: "Do you quote per event for wedding planners?",
         a: "Yes, we quote per event, with the number of pieces each wedding needs. Message us on WhatsApp.",
+      },
+    ],
+  },
+  {
+    slug: "planner-checklist-custom-favors-order-event",
+    title: "Planner checklist: ordering custom event favors",
+    description:
+      "Planner checklist with the details a supplier needs to quote and produce custom event favors: quantity, texts, colors, proof and delivery.",
+    category: "Guides",
+    publishedAt: "2026-11-10",
+    intro:
+      "An order of custom favors moves faster when the supplier has every detail from the start. This checklist gathers what a planner should have ready before asking for a quote: quantity, texts, design, digital proof, the deadline to lock the order and delivery.",
+    sections: [
+      {
+        heading: "Planner checklist for ordering custom event favors",
+        body: [
+          "A supplier needs nine details to quote and produce well: event date and place, confirmed quantity, how it was counted, buffer, texts and names, palette and references, digital proof, the deadline to lock the quantity, and delivery with a direct contact. Gather them before you write and the order moves forward without back and forth.",
+          "Below we go through each point. If this is your first order with a new supplier, start with the [guide for planners](/en/blog/guide-for-planners-working-with-custom-favors-supplier).",
+        ],
+        table: {
+          headers: ["Detail", "What the supplier needs to know"],
+          rows: [
+            ["Date and place", "When and where the event is"],
+            ["Quantity", "Confirmed total and how it was counted"],
+            ["Buffer", "Whether extras are ordered and how many the budget can hold"],
+            ["Texts", "Names, date and phrase with exact spelling"],
+            ["Design", "Palette, references and logo"],
+            ["Digital proof", "Who approves it"],
+            ["Cutoff", "Deadline to confirm the quantity"],
+            ["Delivery", "Where and when it is received, and a WhatsApp contact"],
+          ],
+        },
+      },
+      {
+        heading: "Quantity: how to count it and how much buffer to leave",
+        body: [
+          "Give the confirmed quantity and say how you counted it: per guest, per couple or per table. On the buffer, Zola suggests a small margin when the favor is inexpensive and, when it is costly or personalized, limiting extras to what the budget can hold. Zola gives no fixed number.",
+          "Zola lists as reasons for extras pieces damaged, broken or lost in shipping (worse for destination weddings), fragile pieces, guests added at the last minute and guests who go from no to yes. Some couples accept that a few guests go without a favor.",
+          "If your order is [personalized party favor boxes](/en/products/personalized-party-favor-boxes), the minimum order is 10 pieces. For other calculations by event type, see [how many favors to order](/en/blog/how-many-party-favors-to-order-per-event).",
+        ],
+      },
+      {
+        heading: "Texts, names and who approves them",
+        body: [
+          "Hand the supplier the final texts already written: names, date, phrase and any detail that will be printed, with exact spelling. Name one person to approve them, either your client or you. That way the digital proof is reviewed once and not corrected with different versions from several people.",
+          "Ask what the personalization includes. For the favor boxes, for example, it includes the name and the theme you choose, with your brand logo if you need it.",
+        ],
+      },
+      {
+        heading: "Palette, references and logos",
+        body: [
+          "Share the event color palette and visual references: a photo of the invitation, the decor or the setup. If your client has a logo or monogram, send that too. With this the supplier adapts the design to the event, not to a generic design, before preparing the digital proof.",
+          "If you are unsure what to send, tell us from the [contact page](/en/contact) and we will guide you on WhatsApp.",
+        ],
+      },
+      {
+        heading: "Digital proof and the deadline to lock the quantity",
+        body: [
+          "Before production we send a digital proof, and nothing is produced until you approve it. Decide who approves it and ask the supplier until when you can change the quantity and what can be adjusted after approval. Those rules depend on each supplier, so keep them in writing.",
+          "To see how the review works step by step, read about the [digital proof for planners](/en/blog/digital-proof-event-order-planners).",
+        ],
+      },
+      {
+        heading: "Delivery and direct contact",
+        body: [
+          "Tell the supplier where and when you need the pieces: the event date is not the delivery date. Give the city and address, and whether you receive them in Guadalajara or in another city in the country. Leave a direct WhatsApp contact, of whoever decides, to settle questions on the spot.",
+          "If you organize events often, visit the [page for planners](/en/planners) and request a quote on WhatsApp with your details at hand.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["guide-for-planners-working-with-custom-favors-supplier", "digital-proof-event-order-planners", "how-many-party-favors-to-order-per-event"],
+    sources: [
+      {
+        label: "Zola: Should you buy extra wedding favors?",
+        url: "https://www.zola.com/expert-advice/should-you-buy-extra-wedding-favors",
+      },
+    ],
+    faq: [
+      {
+        q: "How many extra pieces should I order?",
+        a: "Zola gives no fixed number. It recommends a small buffer when the favor is inexpensive (it mentions about 10 extra) and, when it is costly or personalized, limiting extras to what the budget can hold.",
+      },
+      {
+        q: "What is the minimum order for personalized favor boxes?",
+        a: "The minimum order is 10 pieces.",
+      },
+      {
+        q: "Do you quote per event?",
+        a: "Yes, we quote per event, with the number of pieces you need. Message us on WhatsApp.",
       },
     ],
   },

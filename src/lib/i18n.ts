@@ -89,6 +89,7 @@ export const BLOG_SLUG_EN: Record<string, string> = {
   "prueba-digital-pedido-evento-planners": "digital-proof-event-order-planners",
   "cuando-pedir-souvenirs-de-boda": "when-to-order-wedding-favors",
   "presupuesto-recuerdos-de-boda-por-invitado": "wedding-favor-budget-per-guest",
+  "checklist-planners-pedido-detalles-evento": "planner-checklist-custom-favors-order-event",
 };
 
 export const PRODUCT_SLUG_ES: Record<string, string> = Object.fromEntries(

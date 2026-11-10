@@ -5128,7 +5128,7 @@ export const blogPosts: BlogPost[] = [
     description:
       "Cómo armar una mesa de dulces para boda: cuántos dulces calcular, qué poner en cada dulcero, cómo montarla y personalizar dulceros con prueba digital.",
     category: "Guías",
-    publishedAt: "2026-11-11",
+    publishedAt: "2026-11-10",
     modifiedAt: "2026-11-03",
     intro:
       "Una mesa de dulces para boda bien pensada se ve, se fotografía y se disfruta. En esta guía encuentras cuántos dulces calcular, cuántos dulceros necesitas, qué poner en cada uno, cómo montar la mesa, qué debe decir cada etiqueta y cómo personalizar los dulceros para que combinen con la paleta de tu boda. También hay una sección para wedding planners.",
@@ -6499,6 +6499,96 @@ export const blogPosts: BlogPost[] = [
       {
         q: "¿Cotizan por evento para wedding planners?",
         a: "Sí, cotizamos por evento, con el número de piezas que necesite cada boda. Escríbenos por WhatsApp.",
+      },
+    ],
+  },
+  {
+    slug: "checklist-planners-pedido-detalles-evento",
+    title: "Checklist planner: pedido de detalles personalizados",
+    description:
+      "Checklist para planners: los datos que un proveedor necesita para cotizar y producir los detalles personalizados de tu evento.",
+    category: "Guías",
+    publishedAt: "2026-11-10",
+    intro:
+      "Un pedido de detalles personalizados avanza más rápido cuando el proveedor tiene todos los datos desde el inicio. Esta checklist reúne lo que conviene tener listo como planner antes de pedir una cotización: cantidad, textos, diseño, prueba digital, fecha de cierre y entrega.",
+    sections: [
+      {
+        heading: "Checklist de planner para pedir detalles personalizados de un evento",
+        body: [
+          "Un proveedor necesita nueve datos para cotizar y producir bien: fecha y lugar del evento, cantidad confirmada, cómo se contó, colchón, textos y nombres, paleta y referencias, prueba digital, fecha para cerrar la cantidad y entrega con contacto directo. Si los reúnes antes de escribirle, el pedido avanza sin idas y vueltas.",
+          "Abajo desarrollamos cada punto. Si es tu primer pedido con un proveedor nuevo, empieza por la [guía para planners](/blog/guia-planners-proveedor-detalles-personalizados).",
+        ],
+        table: {
+          headers: ["Dato", "Qué necesita saber el proveedor"],
+          rows: [
+            ["Fecha y lugar", "Cuándo y dónde es el evento"],
+            ["Cantidad", "Total confirmado y cómo se contó"],
+            ["Colchón", "Si se piden extras y cuántos aguanta el presupuesto"],
+            ["Textos", "Nombres, fecha y frase con ortografía exacta"],
+            ["Diseño", "Paleta, referencias y logotipo"],
+            ["Prueba digital", "Quién la aprueba"],
+            ["Cierre", "Fecha límite para confirmar la cantidad"],
+            ["Entrega", "Dónde y cuándo se recibe, y contacto por WhatsApp"],
+          ],
+        },
+      },
+      {
+        heading: "Cantidad: cómo contarla y cuánto colchón dejar",
+        body: [
+          "Indica la cantidad confirmada y cómo la contaste: por invitado, por pareja o por mesa. Sobre el colchón, Zola sugiere un margen pequeño cuando el detalle es barato y, si es costoso o personalizado, limitar los extras a lo que aguante el presupuesto. Zola no da una cifra fija.",
+          "Zola cita como motivos para pedir extras las piezas dañadas, rotas o perdidas en el envío (más grave en bodas de destino), las piezas frágiles, los invitados añadidos a última hora y los que pasan de no a sí. Algunas parejas aceptan que unos pocos invitados se queden sin detalle.",
+          "Si tu pedido es de [dulceros personalizados](/productos/dulceros-personalizados), el pedido mínimo es de 10 piezas. Para otros cálculos por tipo de evento, revisa [cuántos souvenirs pedir](/blog/cuantos-souvenirs-pedir-por-evento).",
+        ],
+      },
+      {
+        heading: "Textos, nombres y quién los aprueba",
+        body: [
+          "Entrega al proveedor los textos finales ya escritos: nombres, fecha, frase y cualquier dato que irá impreso, con la ortografía exacta. Designa a una sola persona que los apruebe, sea tu clienta o tú. Así la prueba digital se revisa una vez y no se corrige con versiones distintas de varias personas.",
+          "Pregunta qué incluye la personalización. En los dulceros, por ejemplo, incluye el nombre y la temática que elijas, con el logo de tu marca si lo necesitas.",
+        ],
+      },
+      {
+        heading: "Paleta, referencias y logotipos",
+        body: [
+          "Comparte la paleta de colores del evento y referencias visuales: foto de la invitación, de la decoración o del montaje. Si tu cliente tiene logotipo o monograma, envíalo también. Con eso el proveedor adapta el diseño al evento, y no a un diseño genérico, antes de preparar la prueba digital.",
+          "Si dudas qué enviar, cuéntanos desde la [página de contacto](/contacto) y te orientamos por WhatsApp.",
+        ],
+      },
+      {
+        heading: "Prueba digital y fecha para cerrar la cantidad",
+        body: [
+          "Antes de producir te enviamos una prueba digital, y nada se produce hasta que la apruebas. Define quién la aprueba y pregunta al proveedor hasta cuándo puedes cambiar la cantidad y qué se puede ajustar después de aprobarla. Esas reglas dependen de cada proveedor y conviene tenerlas por escrito.",
+          "Para ver cómo funciona la revisión paso a paso, consulta la [prueba digital para planners](/blog/prueba-digital-pedido-evento-planners).",
+        ],
+      },
+      {
+        heading: "Entrega y contacto directo",
+        body: [
+          "Dile al proveedor dónde y cuándo necesitas recibir las piezas: la fecha del evento no es la fecha de entrega. Indica ciudad y dirección, y si lo recibes en Guadalajara o en otra ciudad del país. Deja un contacto directo por WhatsApp, de quien decide, para resolver dudas en el momento.",
+          "Si organizas eventos con frecuencia, visita la [página para planners](/planners) y cotiza por WhatsApp con tus datos a la mano.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["guia-planners-proveedor-detalles-personalizados", "prueba-digital-pedido-evento-planners", "cuantos-souvenirs-pedir-por-evento"],
+    sources: [
+      {
+        label: "Zola: ¿Debes comprar detalles de boda extra? (Should you buy extra wedding favors)",
+        url: "https://www.zola.com/expert-advice/should-you-buy-extra-wedding-favors",
+      },
+    ],
+    faq: [
+      {
+        q: "¿Cuántas piezas extra debo pedir?",
+        a: "Zola no da una cifra fija. Recomienda un colchón pequeño cuando el detalle es barato (menciona unos 10 de más) y, cuando es costoso o personalizado, limitar los extras a lo que aguante el presupuesto.",
+      },
+      {
+        q: "¿Cuál es el pedido mínimo de dulceros personalizados?",
+        a: "El pedido mínimo es de 10 piezas.",
+      },
+      {
+        q: "¿Cotizan por evento?",
+        a: "Sí, cotizamos por evento, con el número de piezas que necesites. Escríbenos por WhatsApp.",
       },
     ],
   },
