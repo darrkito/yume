@@ -6273,37 +6273,62 @@ export const blogPosts: BlogPost[] = [
       "Cuándo pedir souvenirs de boda: calendario por etapas desde la fecha del evento, qué decidir primero y qué hacer si tu boda es en menos de un mes.",
     category: "Guías",
     publishedAt: "2026-11-09",
+    modifiedAt: "2026-11-10",
     intro:
-      "Los souvenirs de boda se piden antes de lo que parece. Este calendario va de la fecha de tu boda hacia atrás: qué decidir, cuándo y qué hacer si el tiempo ya es corto. Está pensado para novias y wedding planners que quieren que cada detalle llegue sin prisas.",
+      "Los souvenirs de boda se piden antes de lo que parece, pero no hay una fecha única: depende del proveedor y de cuánto personalices la pieza. Esta guía ordena el proceso por etapas: qué decidir, cuándo reservar con una cantidad estimada, cuándo cerrar el número final y qué fecha de entrega marcar. Está pensada para novias y wedding planners que quieren que cada detalle llegue sin prisas.",
     sections: [
       {
-        heading: "Cuándo pedir souvenirs de boda: el calendario de referencia",
+        heading: "Cuándo pedir souvenirs de boda: plazos de referencia",
         body: [
-          "Como referencia, empieza a buscar ideas y pedir muestras unos 6 meses antes de la boda, haz el pedido entre 2 y 3 meses antes y llama al proveedor una semana antes para confirmar entrega y cantidades. Es el calendario que propone Easy Weddings. El plazo real depende del taller y de si la pieza es personalizada.",
-          "Estas fechas son una referencia de una guía extranjera. Antes de fijar tu calendario, pregunta a tu proveedor cuánto tarda su pieza.",
+          "No hay un plazo único. En respuestas de proveedores australianos, lo más habitual es pedir entre 3 y 6 semanas antes de la boda, pero uno pide mínimo 12 semanas y otro prefiere 3 meses. Son referencias de otro país, no de México: el plazo real depende de tu proveedor y de cuánto personalices.",
+          "Otro proveedor sugiere entre 1 y 3 meses según sea personalizado o de catálogo. Estas respuestas son de 2021 y vienen de Easy Weddings, un sitio australiano. Úsalas para ubicarte, y confirma el plazo con quien vaya a hacer tu pieza.",
         ],
         table: {
-          headers: ["Etapa", "Cuándo (referencia)", "Qué haces"],
+          headers: ["Etapa", "Cuándo", "Qué haces"],
           rows: [
-            ["Buscar y probar", "Unos 6 meses antes", "Ver ideas y pedir muestras"],
-            ["Elegir y pedir", "2 a 3 meses antes", "Decidir la pieza y hacer el pedido"],
-            ["Confirmar", "1 semana antes", "Llamar al proveedor para confirmar entrega y cantidades"],
+            ["Elegir la pieza", "Lo primero", "Definir idea, diseño y nivel de personalización"],
+            ["Reservar", "Con cantidad estimada", "Apartar el pedido sin esperar todas las confirmaciones"],
+            ["Cerrar el número final", "Al tener las confirmaciones", "Confirmar cantidad y nombres con tu proveedor"],
+            ["Aprobar la prueba digital", "Antes de imprimir, si tu pieza la lleva", "Revisar el diseño antes de producir"],
+            ["Entrega", "Antes de la boda, con margen", "Marcar la fecha límite de entrega"],
           ],
         },
       },
       {
-        heading: "Qué decidir primero y qué dejar para después",
+        heading: "¿Cuándo reservar y cuándo cerrar el número de invitados?",
         body: [
-          "Fija primero la idea y el diseño de la pieza, y deja la cifra final de invitados para más tarde. Según Easy Weddings, es más fácil aumentar el número de recuerdos que reducirlo, así que conviene partir de una cantidad estimada y subirla si hace falta, en lugar de pedir de más desde el inicio.",
-          "Easy Weddings también aconseja pedir unos extras, pensando en invitados que no asistan y en recuerdos para los novios. Si tu pieza lleva nombres, fechas o fotos, esa guía recomienda enviarlos y pedir una muestra para revisarla antes del pedido.",
+          "Reserva con una cantidad estimada y cierra la cifra final cuando tengas las confirmaciones de asistencia. Un proveedor australiano lo permite: se aparta el pedido y los nombres y el número final se confirman unas 3 a 4 semanas antes de la fecha de envío. Pregunta a tu proveedor si ofrece algo parecido.",
+          "Si tu detalle lleva el nombre de cada invitado, otro proveedor sugiere pedirlo con 4 a 8 semanas de antelación, para no depender de que lleguen todas las confirmaciones de asistencia. Por eso conviene fijar primero la idea y el diseño, y dejar la cifra final para después.",
         ],
       },
       {
-        heading: "Piezas personalizadas y prueba digital: cuánto margen dejar",
+        heading: "Cuántas piezas pedir y qué margen dejar",
         body: [
-          "Una pieza personalizada pasa por una revisión del diseño antes de producirse. En Yume, los stickers de vinil llevan prueba digital antes de imprimir, con hasta 2 rondas de ajustes, y no se imprime nada sin tu aprobación. Por eso conviene dejar margen en tu calendario para esa revisión.",
-          "Si tus souvenirs son stickers, mira los [stickers de vinil personalizados](/productos/stickers-vinil-impermeable) o las [etiquetas con tu logo](/productos/stickers-logo-personalizado). Para saber cuánto tarda tu pieza concreta, escríbenos por WhatsApp con la fecha de tu boda. Si eres wedding planner, comparte con nosotros la fecha del evento y la pieza para que te digamos el plazo antes de comprometerlo con tu clienta.",
+          "Parte del número de invitados confirmados y suma un pequeño margen. Un proveedor recomienda pedir algunas unidades de más para regalar a quienes trabajan en la boda, por ejemplo el celebrante, el fotógrafo o el peluquero. Cuántas extra necesitas depende de tu boda, así que defínelo con tu proveedor.",
         ],
+      },
+      {
+        heading: "Prueba digital y entrega: la fecha que sí debes marcar",
+        body: [
+          "Marca en tu calendario la fecha límite de entrega, no solo la del pedido. El envío o la recogida cuentan aparte de la producción, y el plazo depende del método de entrega y de la fecha de envío que necesites. En las piezas personalizadas, suma también la revisión del diseño.",
+          "En Yume, los stickers de vinil llevan prueba digital antes de imprimir, con hasta 2 rondas de ajustes, y no se imprime nada sin tu aprobación. Si tus souvenirs son stickers, mira los [stickers de vinil personalizados](/productos/stickers-vinil-impermeable) o las [etiquetas con tu logo](/productos/stickers-logo-personalizado). Para saber cuánto tarda tu pieza concreta, escríbenos por WhatsApp con la fecha de tu boda.",
+        ],
+      },
+      {
+        heading: "Calendario de hitos para wedding planners",
+        body: [
+          "Si coordinas varias bodas, lleva un cuadro de hitos por evento con las fechas clave: reserva con cantidad estimada, cierre del número final, aprobación de la prueba digital si tu pieza la lleva y entrega con margen. Pregunta a cada proveedor su plazo antes de fijarlas.",
+          "En Yume atendemos a wedding planners con trato directo por WhatsApp. Comparte con nosotros la fecha del evento y la pieza para que te digamos el plazo antes de comprometerlo con tu clienta.",
+        ],
+        table: {
+          headers: ["Hito", "Qué defines"],
+          rows: [
+            ["Reserva", "Pieza y cantidad estimada"],
+            ["Número final", "Cantidad según invitados confirmados"],
+            ["Prueba digital", "Diseño, si tu pieza lleva prueba"],
+            ["Entrega", "Lugar y fecha límite"],
+          ],
+        },
       },
       {
         heading: "¿Qué hago si mi boda es en menos de un mes?",
@@ -6314,7 +6339,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Dónde recibirlos: en el lugar de la boda o en tu casa",
         body: [
-          "Decide con tiempo si los souvenirs llegarán al lugar de la boda el día anterior o a tu casa. Easy Weddings plantea esta decisión para que puedas revisarlos antes del evento. Si trabajas con una wedding planner, pídele que coordine contigo la recepción del paquete.",
+          "Decide con tiempo si los souvenirs llegarán al lugar de la boda o a tu casa, porque el método de entrega influye en el plazo. Si trabajas con una wedding planner, pídele que coordine contigo la recepción del paquete y la fecha límite de entrega.",
           "Mira el [catálogo de productos](/productos) y, si organizas varias bodas, escríbenos por WhatsApp con las fechas de cada una.",
         ],
       },
@@ -6322,16 +6347,24 @@ export const blogPosts: BlogPost[] = [
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
     faq: [
       {
+        q: "¿Cuándo debo pedir los souvenirs de mi boda?",
+        a: "Depende del proveedor y de cuánto personalices. Lo más habitual en la referencia australiana es de 3 a 6 semanas antes, pero confirma el plazo con quien haga tu pieza.",
+      },
+      {
         q: "¿Hacen prueba digital antes de imprimir?",
         a: "Sí, en los stickers de vinil la prueba digital llega normalmente en un máximo de 24 horas después de tu pago e incluye hasta 2 rondas de ajustes. No imprimimos nada sin tu aprobación.",
       },
       {
+        q: "¿El envío cuenta dentro del plazo de producción?",
+        a: "No, el envío o la recogida cuentan aparte. Por eso conviene marcar la fecha límite de entrega y no solo la del pedido.",
+      },
+      {
         q: "¿Los plazos de esta guía son los de Yume?",
-        a: "No. Son una referencia de Easy Weddings. El plazo de tu pieza depende del producto y del taller: pregúntanos por WhatsApp.",
+        a: "No. Son referencias de proveedores australianos, publicadas por Easy Weddings con respuestas de 2021. El plazo de tu pieza depende del producto: pregúntanos por WhatsApp con la fecha de tu boda.",
       },
     ],
     sources: [
-      { label: "Easy Weddings: When to order your bombonieres", url: "https://www.easyweddings.com.au/articles/when-to-order-your-bombonieres/" },
+      { label: "Easy Weddings: Bomboniere lead time", url: "https://easyweddings.com.au/Bomboniere/advice/bomboniere-lead-time" },
     ],
   },
   {

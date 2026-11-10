@@ -5166,48 +5166,73 @@ export const blogPostsEn: BlogPost[] = [
       "When to order wedding favors: a calendar counted back from your wedding date, what to decide first, and what to do if time is short.",
     category: "Guides",
     publishedAt: "2026-11-09",
+    modifiedAt: "2026-11-10",
     intro:
-      "Wedding favors need to be ordered earlier than it seems. This calendar runs backward from your wedding date: what to decide, when, and what to do if time is already short. It is designed for brides and wedding planners who want every detail to arrive without rushing.",
+      "Wedding favors need to be ordered earlier than it seems, but there is no single date: it depends on the supplier and on how much you personalize the piece. This guide breaks the process into stages: what to decide, when to reserve with an estimated quantity, when to close the final count and which delivery date to mark. It is designed for brides and wedding planners who want every detail to arrive without rushing.",
     sections: [
       {
-        heading: "When to order wedding favors: the reference calendar",
+        heading: "When to order wedding favors: reference lead times",
         body: [
-          "As a reference, start looking for ideas and requesting samples about 6 months before the wedding, place your order 2 to 3 months before, and call your supplier one week before to confirm delivery and quantities. This is the calendar Easy Weddings suggests. The real lead time depends on the workshop and on whether the piece is personalized.",
-          "These dates are a reference from a foreign guide. Before you set your calendar, ask your supplier how long their piece takes.",
+          "There is no single lead time. In answers from Australian suppliers, the most common advice is to order 3 to 6 weeks before the wedding, but one asks for at least 12 weeks and another prefers 3 months. These are references from another country, not Mexico: the real lead time depends on your supplier and how much you personalize.",
+          "Another supplier suggests 1 to 3 months depending on whether the piece is personalized or from a catalog. These answers date from 2021 and come from Easy Weddings, an Australian site. Use them to get your bearings, and confirm the lead time with whoever will make your piece.",
         ],
         table: {
-          headers: ["Stage", "When (reference)", "What you do"],
+          headers: ["Stage", "When", "What you do"],
           rows: [
-            ["Search and test", "About 6 months before", "Look at ideas and request samples"],
-            ["Choose and order", "2 to 3 months before", "Decide on the piece and place the order"],
-            ["Confirm", "1 week before", "Call the supplier to confirm delivery and quantities"],
+            ["Choose the piece", "First", "Define the idea, design and level of personalization"],
+            ["Reserve", "With an estimated quantity", "Hold the order without waiting for every confirmation"],
+            ["Close the final count", "Once you have the confirmations", "Confirm quantity and names with your supplier"],
+            ["Approve the digital proof", "Before printing, if your piece has one", "Review the design before production"],
+            ["Delivery", "Before the wedding, with a margin", "Mark the delivery deadline"],
           ],
         },
       },
       {
-        heading: "What to decide first and what to leave for later",
+        heading: "When to reserve and when to close the guest count",
         body: [
-          "Set the idea and the design of the piece first, and leave the final guest count for later. According to Easy Weddings, it is easier to increase the number of favors than to reduce it, so it makes sense to start from an estimated quantity and raise it if needed, rather than ordering too many from the start.",
-          "Easy Weddings also advises ordering a few extras, to cover guests who do not attend and favors for the couple. If your piece includes names, dates or photos, that guide recommends sending them and asking for a sample to review before the order.",
+          "Reserve with an estimated quantity and close the final count once you have the attendance confirmations. One Australian supplier allows this: the order is held, and the final guest number and names are confirmed about 3 to 4 weeks before the shipping date. Ask your supplier whether they offer something similar.",
+          "If your favor carries each guest's name, another supplier suggests ordering it 4 to 8 weeks ahead, so you do not depend on every attendance confirmation arriving. That is why it makes sense to set the idea and design first and leave the final count for later.",
         ],
       },
       {
-        heading: "Personalized pieces and digital proof: how much margin to leave",
+        heading: "How many pieces to order and what margin to leave",
         body: [
-          "A personalized piece goes through a design review before it is produced. At Yume, vinyl stickers get a digital proof before printing, with up to 2 rounds of adjustments, and nothing is printed without your approval. That is why it makes sense to leave margin in your calendar for that review.",
-          "If your favors are stickers, see the [custom vinyl stickers](/productos/stickers-vinil-impermeable) or the [stickers with your logo](/productos/stickers-logo-personalizado). To know how long your specific piece takes, message us on WhatsApp with your wedding date. If you are a wedding planner, share the event date and the piece with us so we can tell you the lead time before you commit it to your client.",
+          "Start from the number of confirmed guests and add a small margin. One supplier recommends ordering a few extra units to give to the people who work at the wedding, for example the celebrant, the photographer or the hairdresser. How many extras you need depends on your wedding, so settle it with your supplier.",
         ],
+      },
+      {
+        heading: "Digital proof and delivery: the date you should mark",
+        body: [
+          "Mark the delivery deadline on your calendar, not just the order date. Shipping or pickup counts separately from production, and the lead time depends on the delivery method and the shipping date you need. For personalized pieces, also add time for the design review.",
+          "At Yume, vinyl stickers get a digital proof before printing, with up to 2 rounds of adjustments, and nothing is printed without your approval. If your favors are stickers, see the [custom vinyl stickers](/productos/stickers-vinil-impermeable) or the [stickers with your logo](/productos/stickers-logo-personalizado). To know how long your specific piece takes, message us on WhatsApp with your wedding date.",
+        ],
+      },
+      {
+        heading: "A milestone calendar for wedding planners",
+        body: [
+          "If you coordinate several weddings, keep a milestone table for each event with the key dates: reservation with an estimated quantity, final count, digital proof approval if your piece has one, and delivery with a margin. Ask each supplier for their lead time before you set them.",
+          "At Yume we work with wedding planners through direct WhatsApp contact. Share the event date and the piece with us so we can tell you the lead time before you commit it to your client.",
+        ],
+        table: {
+          headers: ["Milestone", "What you define"],
+          rows: [
+            ["Reservation", "Piece and estimated quantity"],
+            ["Final count", "Quantity based on confirmed guests"],
+            ["Digital proof", "Design, if your piece has a proof"],
+            ["Delivery", "Place and deadline"],
+          ],
+        },
       },
       {
         heading: "What if my wedding is less than a month away?",
         body: [
-          "Message us on WhatsApp as soon as possible with your wedding date, the piece you have in mind and the approximate quantity, and we will tell you whether we can make it in time. A short deadline is not always impossible, but it depends on the piece and the workshop, so it is best to confirm it before deciding.",
+          "Message us on WhatsApp as soon as possible with your wedding date, the piece you have in mind and the approximate quantity, and we will tell you whether we can make it in time. A short deadline is not always impossible, but it depends on the piece and the workshop, so confirm it before deciding.",
         ],
       },
       {
         heading: "Where to receive them: at the wedding venue or at home",
         body: [
-          "Decide early whether the favors will arrive at the wedding venue the day before or at your home. Easy Weddings raises this decision so you can check them before the event. If you work with a wedding planner, ask them to coordinate with you how the package is received.",
+          "Decide early whether the favors will arrive at the wedding venue or at your home, because the delivery method affects the lead time. If you work with a wedding planner, ask them to coordinate with you how the package is received and the delivery deadline.",
           "Browse the [product catalog](/productos) and, if you organize several weddings, message us on WhatsApp with the dates for each one.",
         ],
       },
@@ -5215,16 +5240,24 @@ export const blogPostsEn: BlogPost[] = [
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
     faq: [
       {
+        q: "When should I order my wedding favors?",
+        a: "It depends on the supplier and on how much you personalize. The most common answer in the Australian reference is 3 to 6 weeks before, but confirm the lead time with whoever makes your piece.",
+      },
+      {
         q: "Do you send a digital proof before printing?",
         a: "Yes, for vinyl stickers the digital proof usually arrives within 24 hours after your payment and includes up to 2 rounds of adjustments. We do not print anything without your approval.",
       },
       {
+        q: "Does shipping count inside the production lead time?",
+        a: "No, shipping or pickup counts separately. That is why it makes sense to mark the delivery deadline and not just the order date.",
+      },
+      {
         q: "Are the lead times in this guide Yume's?",
-        a: "No. They are a reference from Easy Weddings. The lead time for your piece depends on the product and the workshop: ask us on WhatsApp.",
+        a: "No. They are references from Australian suppliers, published by Easy Weddings with answers from 2021. The lead time for your piece depends on the product: ask us on WhatsApp with your wedding date.",
       },
     ],
     sources: [
-      { label: "Easy Weddings: When to order your bombonieres", url: "https://www.easyweddings.com.au/articles/when-to-order-your-bombonieres/" },
+      { label: "Easy Weddings: Bomboniere lead time", url: "https://easyweddings.com.au/Bomboniere/advice/bomboniere-lead-time" },
     ],
   },
   {
