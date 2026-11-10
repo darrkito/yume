@@ -605,12 +605,12 @@ export const dulceroPosts: BlogPost[] = [
     slug: "dulceros-para-bautizo-y-primera-comunion",
     title: "Dulceros para primera comunión Guadalajara y bautizo",
     description:
-      "Dulceros para primera comunión Guadalajara y bautizo: cuántos pedir según tus invitados confirmados y cuándo cerrar el pedido, con prueba digital.",
+      "Dulceros para primera comunión Guadalajara y bautizo: cuántos pedir, cuándo cerrar el pedido, qué poner dentro y cómo planear el calendario.",
     category: "Guías",
     publishedAt: PUBLISHED,
-    modifiedAt: "2026-11-05",
+    modifiedAt: "2026-11-10",
     intro:
-      "En un bautizo o una primera comunión, el recuerdo que se llevan los invitados suele ser parte importante de la celebración. Si buscas dulceros para primera comunión en Guadalajara, aquí respondemos cuántos pedir según tu lista, cuándo cerrar el pedido y qué hacer si la lista cambia, además de qué poner dentro, cómo diseñarlo y cuánto cuesta. Es una guía para familias y también para planners que coordinan el detalle de sus clientes.",
+      "En un bautizo o una primera comunión, el recuerdo que se llevan los invitados suele ser parte importante de la celebración. Si buscas dulceros para primera comunión en Guadalajara, aquí respondemos cuántos pedir según tu lista, cuándo cerrar el pedido y qué hacer si la lista cambia, además de cómo se arma el calendario, qué poner dentro, cómo diseñarlo y cuánto cuesta. Es una guía para familias y también para planners que coordinan el detalle de sus clientes.",
     sections: [
       {
         heading: "Dulceros para primera comunión Guadalajara: qué pedir y cuándo",
@@ -658,10 +658,24 @@ export const dulceroPosts: BlogPost[] = [
         ],
       },
       {
+        heading: "Primera comunión: la fecha se conoce con meses de margen",
+        body: [
+          "La fecha de una primera comunión se conoce con mucha anticipación, porque antes el niño o la niña cursa la catequesis, que según ADN40 dura al menos uno o dos años, dependiendo de la parroquia. Eso te da meses de margen para elegir diseño, definir la lista y pedir con calma.",
+          "Para la comunión, ADN40 menciona que se piden acta de nacimiento, fe de bautismo (original y copia) y haber cursado la catequesis. La edad también depende de la parroquia: la Arquidiócesis de México fija nueve años como mínimo, pero esa es una norma de esa arquidiócesis, no de Guadalajara. Confirma las reglas con tu parroquia.",
+        ],
+      },
+      {
         heading: "Qué hacer si la lista de invitados cambia a última hora",
         body: [
           `Si la lista cambia antes de aprobar la prueba digital, escríbenos por WhatsApp y ajustamos la cantidad del pedido. Dentro de las primeras 100 piezas el precio por dulcero es el mismo ($${dulceroUnit} MXN), con mínimo de 10 piezas. Nada se produce hasta que apruebas la prueba.`,
           "Después de aprobarla, los cambios de cantidad dependen del paso en que va tu pedido: escríbenos por WhatsApp cuanto antes y te decimos qué es posible.",
+        ],
+      },
+      {
+        heading: "Detalle para los padrinos de bautizo y comunión",
+        body: [
+          "Según ADN40, los padrinos de comunión deben ser católicos y estar confirmados, y si están casados se pide acta de matrimonio por la Iglesia. Son parte central de la ceremonia, así que conviene decidir pronto si recibirán un dulcero igual al de los invitados o uno con un nombre distinto. Escríbenos por WhatsApp y lo platicamos.",
+          "Si quieres que el dulcero de los padrinos lleve su nombre o una frase corta, cuéntanos al pedir y lo revisas en la prueba digital junto con el resto del diseño.",
         ],
       },
       {
@@ -708,7 +722,7 @@ export const dulceroPosts: BlogPost[] = [
         heading: "Cómo pedirlos",
         body: [
           "Puedes pedirlos desde la tienda en línea eligiendo la cantidad y pagando con tarjeta, OXXO o SPEI, o cotizar primero por WhatsApp si quieres platicar el diseño antes de pagar. En ambos casos recibes una prueba digital antes de que se produzca nada.",
-          "Si organizas también una boda, XV años o baby shower, tienes la [guía de dulceros para eventos sociales](/blog/dulceros-para-eventos-sociales-boda-xv-baby-shower). Para decidir cómo entregarlos, compara [cajas, bolsas o vasos](/blog/cajas-bolsas-o-vasos-dulceros-cual-elegir). Si estás en la zona, revisa los [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara).",
+          `Puedes empezar por la página de [dulceros personalizados](/productos/${DULCERO}). Si organizas también una boda, XV años o baby shower, tienes la [guía de dulceros para eventos sociales](/blog/dulceros-para-eventos-sociales-boda-xv-baby-shower). Para decidir cómo entregarlos, compara [cajas, bolsas o vasos](/blog/cajas-bolsas-o-vasos-dulceros-cual-elegir). Si estás en la zona, revisa los [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara).`,
         ],
       },
     ],
@@ -722,12 +736,24 @@ export const dulceroPosts: BlogPost[] = [
         a: `Primeras 100 piezas: $${dulceroUnit} MXN por pieza, con pedido mínimo de 10. Arriba de 100 piezas es precio mayoreo y se cotiza por WhatsApp. Desde $${FREE_SHIPPING_THRESHOLD} el envío nacional es gratis.`,
       },
       {
+        q: "¿Cuándo conviene pedir los dulceros?",
+        a: "En cuanto tengas la fecha de la misa y la lista de invitados confirmada. Los días de producción se cuentan desde que apruebas la prueba digital, así que conviene cerrar nombre, fecha y cantidad con tiempo.",
+      },
+      {
         q: "¿Cuánto tardan en llegar?",
         a: `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional, o ${PICKUP_EXTRA_DAYS} día hábil si recoges en una sucursal Casa Blanca de Guadalajara.`,
       },
       {
+        q: "¿Se entrega en Guadalajara?",
+        a: `Sí. En la zona metropolitana de Guadalajara puedes recogerlos por $${CASABLANCA_PRICE} en cualquiera de las ${CASABLANCA_BRANCHES.length} sucursales de paquetería Casa Blanca. También enviamos a todo México.`,
+      },
+      {
         q: "¿Qué pasa si cambia la lista de invitados?",
         a: "Si el cambio llega antes de aprobar la prueba digital, escríbenos por WhatsApp y ajustamos la cantidad. Nada se produce hasta que apruebas la prueba.",
+      },
+      {
+        q: "¿Qué incluye la prueba digital?",
+        a: "Es la vista previa de tu dulcero con el nombre, la fecha y los colores que elegiste. La revisas antes de que se produzca y nada se produce hasta que la apruebas.",
       },
       {
         q: "¿Los dulceros para bautizo y comunión incluyen dulces?",
@@ -736,6 +762,14 @@ export const dulceroPosts: BlogPost[] = [
       {
         q: "¿Qué datos lleva el dulcero?",
         a: "Lo básico es el nombre del niño o la niña, el tipo de celebración (Mi bautizo, Mi primera comunión) y la fecha. Puedes agregar padrinos o una frase corta. Te mandamos una prueba digital para revisar la ortografía antes de producir.",
+      },
+      {
+        q: "¿Se puede personalizar un dulcero para los padrinos?",
+        a: "Sí, cuéntanos al pedir si los padrinos llevarán el mismo diseño o uno con su nombre y lo revisas en la prueba digital. Escríbenos por WhatsApp para platicarlo.",
+      },
+      {
+        q: "¿A qué edad se hace la primera comunión?",
+        a: "Depende de la parroquia. Según ADN40, la Arquidiócesis de México fija nueve años como edad mínima, y algunas parroquias aceptan niños más pequeños si ya fueron a catecismo. Es una norma de esa arquidiócesis, no de Guadalajara, así que confírmalo con tu parroquia.",
       },
       {
         q: "¿Cuántos dulces calcular por invitado?",
@@ -747,6 +781,10 @@ export const dulceroPosts: BlogPost[] = [
       },
     ],
     sources: [
+      {
+        label: "ADN40: cuál es la mejor edad para hacer la primera comunión (edad, catequesis, requisitos y padrinos)",
+        url: "https://www.adn40.mx/mexico/2025-10-24/cual-es-la-mejor-edad-para-hacer-la-primera-comunion/",
+      },
       {
         label: "Código de Derecho Canónico (Santa Sede): libro IV, canon 867 sobre el bautismo de los niños",
         url: "https://www.vatican.va/archive/cod-iuris-canonici/eng/documents/cic_lib4-cann834-878_en.html",
