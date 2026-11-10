@@ -6108,70 +6108,105 @@ export const blogPosts: BlogPost[] = [
     slug: "que-dulces-poner-en-dulcero-de-boda",
     title: "Qué dulces poner en un dulcero de boda: ideas para adultos",
     description:
-      "Qué dulces poner en un dulcero de boda para invitados adultos: ideas por perfil, cuántos tipos elegir, cantidades orientativas y cómo presentarlos.",
+      "Qué dulces poner en un dulcero de boda para adultos: ideas por perfil, cuántos tipos elegir, cuántos gramos por invitado y cómo presentarlos.",
     category: "Guías",
     publishedAt: "2026-11-09",
+    modifiedAt: "2026-11-10",
     intro:
-      "Un dulcero de boda no necesita ser una mesa enorme de chuches. Si tus invitados son adultos, lo que cuenta es una selección corta, bien presentada y coordinada con el resto del banquete. Esta guía es para ti, para tu pareja y para la wedding planner: qué dulces poner, cuántos tipos elegir, cuánto por invitado y cómo presentarlos.",
+      "Un dulcero de boda no necesita ser una mesa enorme de golosinas. Si tus invitados son adultos, lo que cuenta es una selección corta, con sabores cuidados y coordinada con el resto del banquete. Esta guía es para ti, para tu pareja y para la wedding planner: qué dulces poner, cuántos tipos elegir, cuántos gramos calcular por invitado y cómo presentarlos.",
     sections: [
       {
         heading: "Qué dulces poner en un dulcero de boda para adultos",
         body: [
-          "Para invitados adultos conviene elegir pocos dulces y bien escogidos, en vez de una montaña de chuches de colores. Bodas.net agrupa los dulces en clásicos, bocados pequeños y opciones elegantes, y para adultos el grupo elegante, con macarons, trufas y mini pastelería, es el más relevante para tu dulcero.",
-          "Un dulcero es más pequeño que una mesa de dulces completa, así que no necesitas cubrir los tres grupos: escoge una o dos piezas de cada uno según el estilo de tu boda. Si quieres más ideas de relleno, revisa [qué poner en un dulcero](/blog/que-poner-en-un-dulcero).",
+          "Para invitados adultos conviene una selección corta y con carácter: chocolate amargo, frutos secos, cítricos, algún toque con licor y un dulce clásico para quien prefiere lo sencillo. Elige piezas que se coman en un bocado y que combinen con el menú, en lugar de llenar la mesa de golosinas infantiles.",
+          "Un dulcero es más pequeño que una mesa de dulces completa. Si lo que buscas es una mesa grande, revisa nuestra guía de [mesa de dulces para boda](/blog/mesa-de-dulces-para-boda). Si quieres más ideas de relleno, revisa [qué poner en un dulcero](/blog/que-poner-en-un-dulcero).",
         ],
       },
       {
         heading: "Ideas por perfil: clásico, chocolate, frutal y salado-dulce",
         body: [
-          "Una forma sencilla de decidir es armar el dulcero por perfiles: clásico, chocolate, frutal, salado-dulce y una opción sin azúcar o vegana. Con una pieza de cada perfil, cada invitado encuentra algo a su gusto y el dulcero se ve variado sin llenarse de opciones que nadie termina.",
+          "Arma el dulcero por perfiles de sabor y toma una o dos piezas de cada uno: clásico, chocolate, frutal, salado-dulce y una opción sin azúcar o vegana. Así cada invitado adulto encuentra algo a su gusto, la selección se ve variada y no se llena de opciones que nadie termina.",
         ],
         table: {
-          headers: ["Perfil", "Ideas"],
+          headers: ["Perfil", "Ideas para adultos"],
           rows: [
             ["Clásico", "Nubes, caramelos blandos, regaliz y gominolas"],
-            ["Chocolate", "Trufas, mini brownies y galletas decoradas"],
-            ["Frutal", "Gominolas y fruta deshidratada"],
-            ["Salado-dulce", "Nueces junto a un dulce"],
-            ["Sin azúcar o vegano", "Una opción bien rotulada, como sugieren Bodas.net y Butter Be Mine"],
+            ["Chocolate", "Trufas, chocolate amargo y mini brownies"],
+            ["Frutal", "Gominolas, fruta deshidratada y cítricos confitados"],
+            ["Salado-dulce", "Nueces o almendras junto a un dulce"],
+            ["Con licor", "Bombones rellenos de licor, solo para adultos"],
+            ["Sin azúcar o vegano", "Una opción bien rotulada"],
           ],
         },
       },
       {
-        heading: "Cuántos tipos de dulce elegir y cuánto por invitado",
+        heading: "Cuántos tipos de dulce elegir y cuántos gramos por invitado",
         body: [
-          "Una guía de dulces de EE. UU. recomienda de 7 a 10 tipos de dulce para un buffet completo, así que un dulcero pequeño necesita menos opciones. Para las cantidades, Bodas.net propone unos 150 g por invitado en bodas pequeñas, unos 100 g en medianas y unos 80 g en grandes.",
-          "Para 100 invitados, Bodas.net sugiere partir de unos 10 kg si casi todo es dulce, y reducirlo si añades brownies, donuts u otra repostería. Butter Be Mine da entre 90 y 113 g por invitado. Son referencias de esos sitios para una mesa completa, no una regla para tu dulcero.",
+          "Elige de 4 a 7 tipos de dulce: variedad, no cantidad. Como punto de partida, calcula de 150 a 200 g por invitado si hay otros postres. Son referencias aproximadas de calculadoras y guías, no una norma oficial, y se ajustan según el horario, el menú y si los dulces se llevan a casa.",
+          "Una calculadora argentina baja a 80 a 100 g si la mesa es solo decorativa y sube a unos 300 g si sustituye a la mesa de postres. En inglés, otra calculadora propone de 2 a 4 oz (unos 50 a 113 g) por invitado si hay otros postres, y de 4 a 6 oz (113 a 170 g) si el dulce es lo principal. Una guía de un minorista habla de un tercio a media libra por invitado y recomienda pasarse un poco antes que quedarse corto.",
+          "Son guías de vendedores y calculadoras, no datos medidos. Como cuenta sobre esas referencias: para 100 invitados con otros postres, de 150 a 200 g por invitado suman de 15 a 20 kg en total.",
+        ],
+        table: {
+          headers: ["Papel del dulcero", "Referencia aproximada"],
+          rows: [
+            ["Solo decorativo", "80 a 100 g por invitado"],
+            ["Con otros postres", "150 a 200 g por invitado"],
+            ["Sustituye la mesa de postres", "Unos 300 g por invitado"],
+            ["Referencia en inglés, con otros postres", "2 a 4 oz (unos 50 a 113 g) por invitado"],
+          ],
+        },
+      },
+      {
+        heading: "Cómo ajustar el dulcero al menú y al horario de la boda",
+        body: [
+          "Piensa en el dulcero como parte del banquete, no como un añadido. Si ya hay postre, el dulce pasa a ser un detalle y bastan cantidades menores; si sustituye al postre, necesitas más. Según Bodas.net, a mediodía se consume menos dulce que en una cena nupcial más ligera.",
+          "Bodas.net también señala que en un banquete clásico se sirve una ración de postre por invitado y que conviene reservar algo extra. Con ese dato, define primero el papel del dulcero y después elige la cantidad de la tabla anterior.",
+          "Pregunta a tu catering o a tu planner si ya hay postre y a qué hora se abrirá el dulcero.",
         ],
       },
       {
-        heading: "Cómo presentar el dulcero: frascos, alturas y rotulado",
+        heading: "Cómo presentar el dulcero: rótulos y personalización",
         body: [
-          "Usa recipientes transparentes con alturas variadas, pinzas o cucharas y rótulos con el nombre de cada dulce y sus alérgenos. Así los invitados ven lo que hay y la mesa se ve ordenada. Bodas.net también recomienda marcar las opciones sin gluten, sin azúcar o veganas.",
-          "Butter Be Mine sugiere una paleta de un color principal y uno de acento.",
+          "Presenta pocas opciones bien cuidadas: una selección corta se ve ordenada y no saturada. Agrúpalos por perfil, rotula cada dulce con su nombre y deja que el dulcero lleve el nombre de los novios y la temática de tu boda, para que la mesa se vea coordinada con el resto del evento.",
+          "Nuestros [dulceros personalizados](/productos/dulceros-personalizados) llegan armados y vacíos, así que tú eliges lo que lleva dentro. La personalización incluye el nombre y la temática que elijas, y te enviamos una prueba digital antes de producir. Para calcular cuántos necesitas, revisa [cuántos dulceros pedir para una boda](/blog/cuantos-dulceros-pedir-para-una-boda) y escríbenos por WhatsApp para cotizar.",
         ],
       },
       {
-        heading: "Dietas, alérgenos y opciones para quien no come dulce",
+        heading: "Dulces para llevar a casa: cuántas bolsitas por invitado",
         body: [
-          "Rotula sabores y alérgenos, y marca con claridad las opciones sin gluten, sin azúcar, veganas o sin lácteos. Butter Be Mine propone, además, fruta deshidratada y nueces para quien no come dulce. Así nadie se queda sin nada que elegir y cada invitado sabe qué puede comer sin preguntar.",
+          "Si los invitados se llevan dulces a casa, calcula de una a una y media bolsitas por invitado, según una calculadora argentina. El tamaño del envase condiciona cuánto dulce cabe por persona, y si la boda es sobre todo de adultos, las bolsitas más pequeñas ahorran dinero.",
+          "Si quieres que el detalle se vea igual de cuidado en casa, puedes sumar [stickers de vinil personalizados](/productos/stickers-vinil-impermeable) con tu diseño. Te enviamos una prueba digital antes de imprimir.",
         ],
       },
       {
-        heading: "Dónde colocarlo y cómo darlo para llevar",
+        heading: "Cómo decidir tu dulcero en cuatro preguntas",
         body: [
-          "Bodas.net aconseja ubicar la candy bar cerca de la pista de baile o abrirla después del banquete. Para un dulcero pequeño puedes seguir la misma idea. Y si quieres que el detalle continúe en casa, Butter Be Mine sugiere ofrecer bolsitas para que los invitados se lleven dulces.",
-          "Si quieres que el dulcero lleve el nombre de los novios y la temática de tu boda, conoce nuestros [dulceros personalizados](/blog/dulceros-personalizados-guadalajara) y escríbenos por WhatsApp para cotizar. También puedes sumar [stickers de vinil personalizados](/productos/stickers-vinil-impermeable) con tu diseño.",
+          "Antes de comprar, responde cuatro preguntas: ¿el dulcero sustituye al postre o lo acompaña?, ¿los invitados comerán los dulces en la boda o se los llevarán?, ¿a qué hora se abre la mesa? y ¿cuántos adultos asisten? Con esas respuestas, el rango de gramos y la variedad se definen casi solos.",
+          "Como ejemplo aritmético con esas referencias: para 100 invitados con una mesa solo decorativa, de 80 a 100 g suman de 8 a 10 kg. Son cuentas sobre referencias aproximadas, no una cantidad garantizada.",
         ],
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara"],
+    relatedBlogSlugs: ["que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "mesa-de-dulces-para-boda", "cuantos-dulceros-pedir-para-una-boda"],
     sources: [
-      { label: "Bodas.net: todo lo que debéis saber antes de montar una candy bar", url: "https://www.bodas.net/articulos/todo-lo-que-debeis-saber-antes-de-montar-una-candy-bar--c2448" },
-      { label: "Butter Be Mine: how to design a wedding candy buffet", url: "https://www.butterbemine.com/blogs/wedding-food/14777569-how-to-design-a-wedding-candy-buffet" },
+      { label: "HaceCuentas: calculadora de candy bar por personas", url: "https://hacecuentas.com/calculadora-candy-bar-personas" },
+      { label: "Candystore.com: guía definitiva de buffets de dulces (en inglés)", url: "https://candystore.com/blog/candy-buffets/ultimate-candy-buffets-guide" },
+      { label: "Bodas.net: buffets de dulces para bodas", url: "https://www.bodas.net/articulos/buffets-de-dulces-para-bodas--c733" },
+      { label: "Diario Bahía de Cádiz: qué se necesita para crear la mejor mesa dulce para una boda", url: "https://diariobahiadecadiz.com/el-resto-del-mundo/que-se-necesita-para-crear-la-mejor-mesa-dulce-para-una-boda" },
     ],
     faq: [
+      {
+        q: "¿Cuántos gramos de dulce calculo por invitado?",
+        a: "Como punto de partida, de 150 a 200 g por invitado si hay otros postres, según una calculadora argentina. Es una referencia aproximada, no una norma oficial.",
+      },
+      {
+        q: "¿Cuántos tipos de dulce conviene poner?",
+        a: "Un diario español recomienda de cuatro a siete opciones distintas: variedad y no cantidad.",
+      },
+      {
+        q: "¿Cuántas bolsitas para llevar calculo por invitado?",
+        a: "Una calculadora argentina recomienda de 1 a 1.5 bolsitas por invitado.",
+      },
       {
         q: "¿Los dulceros incluyen dulces?",
         a: "No. El dulcero llega armado y vacío, así que tú eliges lo que lleva dentro.",

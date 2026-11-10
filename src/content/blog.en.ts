@@ -5002,69 +5002,105 @@ export const blogPostsEn: BlogPost[] = [
     slug: "what-sweets-to-put-in-a-wedding-candy-dish",
     title: "What sweets to put in a wedding candy dish: ideas for adults",
     description:
-      "What sweets to put in a wedding candy dish for adult guests: ideas by profile, how many kinds to pick, sample amounts and how to present them.",
+      "What sweets to put in a wedding candy dish for adults: ideas by profile, how many kinds to pick, grams per guest and how to present them.",
     category: "Guides",
     publishedAt: "2026-11-09",
+    modifiedAt: "2026-11-10",
     intro:
-      "A wedding candy dish does not need to be a huge table of colorful candy. With adult guests, what counts is a short selection, well presented and coordinated with the rest of the banquet. This guide is for you, your partner and the wedding planner: which sweets to put, how many kinds to pick, how much per guest and how to present them.",
+      "A wedding candy dish does not need to be a huge table of candy. With adult guests, what counts is a short selection, with well-chosen flavors and coordinated with the rest of the banquet. This guide is for you, your partner and the wedding planner: which sweets to put, how many kinds to pick, how many grams to plan per guest and how to present them.",
     sections: [
       {
         heading: "What sweets to put in a wedding candy dish for adults",
         body: [
-          "For adult guests, pick a few well-chosen sweets instead of a mountain of colorful candy. Bodas.net groups candy bar sweets into classics, small bites and elegant options, and for adults the elegant group, with macarons, truffles and mini pastries, is the most relevant one for your candy dish.",
-          "A candy dish is smaller than a full candy table, so you do not need to cover all three groups: choose one or two pieces from each according to the style of your wedding. For more filling ideas, see [what to put in a candy dish](/blog/que-poner-en-un-dulcero).",
+          "For adult guests, a short selection with character works best: dark chocolate, nuts, citrus, a touch of liqueur and one classic sweet for anyone who prefers something simple. Pick pieces that can be eaten in one bite and that go with the menu, instead of filling the table with children's candy.",
+          "A candy dish is smaller than a full candy table. If you want a large table, see our guide to the [wedding candy table](/en/blog/wedding-candy-table-custom-candy-boxes). For more filling ideas, see [what to put in a party favor box](/en/blog/what-to-put-in-a-party-favor-box).",
         ],
       },
       {
         heading: "Ideas by profile: classic, chocolate, fruity and sweet-and-salty",
         body: [
-          "A simple way to decide is to build the dish by profile: classic, chocolate, fruity, sweet-and-salty and one sugar-free or vegan option. With one piece from each profile, every guest finds something they like and the dish looks varied without filling up with options nobody finishes.",
+          "Build the dish by flavor profile and take one or two pieces from each: classic, chocolate, fruity, sweet-and-salty and one sugar-free or vegan option. That way every adult guest finds something they like, the selection looks varied and it does not fill up with options nobody finishes.",
         ],
         table: {
-          headers: ["Profile", "Ideas"],
+          headers: ["Profile", "Ideas for adults"],
           rows: [
             ["Classic", "Marshmallows, soft candies, licorice and gummies"],
-            ["Chocolate", "Truffles, mini brownies and decorated cookies"],
-            ["Fruity", "Gummies and dried fruit"],
-            ["Sweet-and-salty", "Nuts next to a sweet"],
-            ["Sugar-free or vegan", "One well-labeled option, as Bodas.net and Butter Be Mine suggest"],
+            ["Chocolate", "Truffles, dark chocolate and mini brownies"],
+            ["Fruity", "Gummies, dried fruit and candied citrus"],
+            ["Sweet-and-salty", "Walnuts or almonds next to a sweet"],
+            ["With liqueur", "Liqueur-filled chocolates, for adults only"],
+            ["Sugar-free or vegan", "One well-labeled option"],
           ],
         },
       },
       {
-        heading: "How many kinds of sweets and how much per guest",
+        heading: "How many kinds of sweets and how many grams per guest",
         body: [
-          "A US candy guide recommends 7 to 10 kinds of candy for a full buffet, so a small candy dish needs fewer options. For amounts, Bodas.net suggests about 150 g per guest at small weddings, about 100 g at medium ones and about 80 g at large ones.",
-          "For 100 guests, Bodas.net suggests starting from about 10 kg if almost everything is candy, and reducing it if you add brownies, donuts or other pastries. Butter Be Mine gives between 90 and 113 g per guest. These are references from those sites for a full table, not a rule for your candy dish.",
+          "Choose four to seven kinds of sweets: variety, not quantity. As a starting point, plan 150 to 200 g per guest if there are other desserts. These are approximate references from calculators and guides, not an official rule, and they change with the time of day, the menu and whether guests take sweets home.",
+          "An Argentine calculator drops to 80 to 100 g if the table is only decorative and rises to about 300 g if it replaces the dessert table. In English, another calculator suggests 2 to 4 oz (about 50 to 113 g) per guest if there are other desserts, and 4 to 6 oz (113 to 170 g) if the sweets are the main event. A candy retailer's guide speaks of one third to half a pound per guest and recommends going a little over rather than falling short.",
+          "These are seller guides and calculators, not measured data. As simple math on those references: for 100 guests with other desserts, 150 to 200 g per guest adds up to 15 to 20 kg in total.",
+        ],
+        table: {
+          headers: ["Role of the candy dish", "Approximate reference"],
+          rows: [
+            ["Decorative only", "80 to 100 g per guest"],
+            ["With other desserts", "150 to 200 g per guest"],
+            ["Replaces the dessert table", "About 300 g per guest"],
+            ["English reference, with other desserts", "2 to 4 oz (about 50 to 113 g) per guest"],
+          ],
+        },
+      },
+      {
+        heading: "How to match the candy dish to the menu and the time of day",
+        body: [
+          "Think of the candy dish as part of the banquet, not an add-on. If there is already dessert, the sweets become a small touch and smaller amounts are enough; if they replace dessert, you need more. According to Bodas.net, less sweet is eaten at midday than at a lighter wedding dinner.",
+          "Bodas.net also notes that a classic banquet serves one dessert portion per guest and that it is wise to keep something extra in reserve. With that in mind, define the role of the candy dish first and then pick the amount from the table above.",
+          "Ask your caterer or planner whether there is already dessert and what time the candy dish will open.",
         ],
       },
       {
-        heading: "How to present it: jars, heights and labels",
+        heading: "How to present the candy dish: labels and personalization",
         body: [
-          "Use clear containers at different heights, tongs or spoons, and labels with the name of each sweet and its allergens. That way guests can see what is there and the table looks tidy. Bodas.net also recommends marking gluten-free, sugar-free or vegan options.",
-          "Butter Be Mine suggests a palette of one main color and one accent color.",
+          "Present a few well-kept options: a short selection looks tidy rather than crowded. Group the sweets by profile, label each one with its name and let the candy dish carry the couple's names and your wedding theme, so the table feels coordinated with the rest of the event.",
+          "Our [custom candy boxes](/en/products/personalized-party-favor-boxes) arrive assembled and empty, so you choose what goes inside. Personalization includes the name and the theme you choose, and we send a digital proof before production. To work out how many you need, see [how many candy boxes to order for a wedding](/en/blog/how-many-candy-boxes-to-order-for-a-wedding) and message us on WhatsApp for a quote.",
         ],
       },
       {
-        heading: "Diets, allergens and options for guests who skip dessert",
+        heading: "Sweets to take home: how many small bags per guest",
         body: [
-          "Label flavors and allergens, and clearly mark gluten-free, sugar-free, vegan or dairy-free options. Butter Be Mine also suggests dried fruit and nuts for guests who do not eat sweets. This way nobody is left without something to choose, and each guest knows what they can eat without asking.",
+          "If guests take sweets home, plan one to one and a half small bags per guest, according to an Argentine calculator. Container size limits how much candy fits per person, and if the wedding is mostly adults, smaller bags save money.",
+          "If you want the gift to look just as polished at home, you can add [custom vinyl stickers](/en/products/waterproof-vinyl-stickers) with your design. We send a digital proof before printing.",
         ],
       },
       {
-        heading: "Where to place it and how to send guests home with sweets",
+        heading: "How to decide on your candy dish in four questions",
         body: [
-          "Bodas.net advises placing the candy bar near the dance floor or opening it after the banquet, and the same idea works for a small candy dish. If you want the gift to continue at home, Butter Be Mine suggests offering small bags so guests can take sweets with them.",
-          "If you want the candy dish to carry the couple's names and your wedding theme, see our [custom candy dishes](/blog/dulceros-personalizados-guadalajara) and message us on WhatsApp for a quote. You can also add [custom vinyl stickers](/productos/stickers-vinil-impermeable) with your design.",
+          "Before buying, answer four questions: do the sweets replace dessert or go with it, will guests eat them at the wedding or take them home, what time does the table open, and how many adults are attending? With those answers, the gram range and the variety almost decide themselves.",
+          "As simple math on those references: for 100 guests with a decorative-only table, 80 to 100 g adds up to 8 to 10 kg. These are calculations on approximate references, not a guaranteed amount.",
         ],
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["what-to-put-in-a-party-favor-box", "personalized-party-favor-boxes-guadalajara", "wedding-candy-table-custom-candy-boxes", "how-many-candy-boxes-to-order-for-a-wedding"],
     sources: [
-      { label: "Bodas.net: everything to know before setting up a candy bar (Spanish)", url: "https://www.bodas.net/articulos/todo-lo-que-debeis-saber-antes-de-montar-una-candy-bar--c2448" },
-      { label: "Butter Be Mine: how to design a wedding candy buffet", url: "https://www.butterbemine.com/blogs/wedding-food/14777569-how-to-design-a-wedding-candy-buffet" },
+      { label: "HaceCuentas: candy bar calculator by number of guests (Spanish)", url: "https://hacecuentas.com/calculadora-candy-bar-personas" },
+      { label: "Candystore.com: ultimate candy buffets guide", url: "https://candystore.com/blog/candy-buffets/ultimate-candy-buffets-guide" },
+      { label: "Bodas.net: candy buffets for weddings (Spanish)", url: "https://www.bodas.net/articulos/buffets-de-dulces-para-bodas--c733" },
+      { label: "Diario Bahía de Cádiz: what you need for the best wedding candy table (Spanish)", url: "https://diariobahiadecadiz.com/el-resto-del-mundo/que-se-necesita-para-crear-la-mejor-mesa-dulce-para-una-boda" },
     ],
     faq: [
+      {
+        q: "How many grams of sweets should I plan per guest?",
+        a: "As a starting point, 150 to 200 g per guest if there are other desserts, according to an Argentine calculator. It is an approximate reference, not an official rule.",
+      },
+      {
+        q: "How many kinds of sweets should I put out?",
+        a: "A Spanish newspaper recommends four to seven different options: variety, not quantity.",
+      },
+      {
+        q: "How many small bags to take home should I plan per guest?",
+        a: "An Argentine calculator recommends 1 to 1.5 small bags per guest.",
+      },
       {
         q: "Do the candy dishes come with sweets?",
         a: "No. The candy dish arrives assembled and empty, so you choose what goes inside.",
