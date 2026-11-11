@@ -13,7 +13,7 @@ import { readAiSource } from "@/lib/ai-source";
 import { PersonalizationFields } from "@/components/PersonalizationFields";
 import type { PersonalizationInput } from "@/content/personalization";
 import { clearCheckoutDraft, ShippingForm } from "@/components/ShippingForm";
-import { getProduct, type Product } from "@/content/products";
+import { getProduct, lineNeedsDesign, type Product } from "@/content/products";
 import { productsEn } from "@/content/products.en";
 import type { Customer, DeliveryInfo } from "@/lib/orders";
 import { deliverySurcharge, type DeliveryMethod } from "@/content/shipping";
@@ -88,9 +88,8 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
   }, [error]);
   const t = UI[lang];
   const nameOf = (p: Product) => (lang === "en" ? (productsEn[p.slug]?.name ?? p.name) : p.name);
-  const designProducts = [...new Set(items.map((i) => i.slug))]
-    .map((slug) => getProduct(slug))
-    .filter((p): p is Product => Boolean(p?.requiresImage));
+  const designSlugs = [...new Set(items.filter((i) => { const p = getProduct(i.slug); return p && lineNeedsDesign(p, i.variantId); }).map((i) => i.slug))];
+  const designProducts = designSlugs.map((slug) => getProduct(slug)!);
   const missingDesigns = designProducts.filter((p) => !getDesignFile(p.slug) && !uploaded[p.slug]);
   // Derived live, so the message disappears as soon as the shopper fixes it.
   const designBlocked = missingDesigns.length > 0 && !sendDesignLater;
@@ -99,13 +98,13 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
   // before the form is submitted; the submitted `delivery` wins after that.
   const [formMethod, setFormMethod] = useState<DeliveryMethod | null>(null);
   const summaryMethod = delivery?.method ?? formMethod;
-  const surcharge = summaryMethod ? deliverySurcharge(summaryMethod, total) : 0;
   // Coupon preview only: the server re-checks code and dates and prices each
   // line the same way (discountedPrice per unit), so totals match to the cent.
   const [promoInput, setPromoInput] = useState("");
   const [promo, setPromo] = useState<Promo | null>(null);
   const [promoError, setPromoError] = useState(false);
   const discount = promo ? total - items.reduce((sum, i) => sum + discountedPrice(i.price, promo) * i.qty, 0) : 0;
+  const surcharge = summaryMethod ? deliverySurcharge(summaryMethod, total - discount) : 0;
   const grandTotal = total - discount + surcharge;
   const deliveryLabel = summaryMethod === "recoleccion_casablanca" ? t.casablancaPickup : t.nationalShipping;
 
@@ -116,9 +115,7 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
   const uploadDesignFiles = async (): Promise<DesignFileUpload[]> => {
     const uploads: DesignFileUpload[] = [];
     const cache = { ...uploaded };
-    for (const slug of [...new Set(items.map((i) => i.slug))]) {
-      const product = getProduct(slug);
-      if (!product?.requiresImage) continue;
+    for (const slug of designSlugs) {
       const file = getDesignFile(slug);
       const done = cache[slug];
       // Already uploaded (same file, or the file is gone after a reload): reuse.
@@ -148,7 +145,7 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
       });
       const data = await res.json().catch(() => ({}));
       if (!res.ok) throw new Error(data.error ?? t.couldNotUploadFile);
-      const upload = { slug, productName: product.name, fileName: file.name, url: data.url };
+      const upload = { slug, productName: getProduct(slug)!.name, fileName: file.name, url: data.url };
       cache[slug] = { key: fileKey(file), upload };
       uploads.push(upload);
     }
@@ -290,7 +287,7 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
             <div className="mt-10" hidden={mode !== "form"}>
               <ShippingForm
                 lang={lang}
-                subtotal={total}
+                subtotal={total - discount}
                 onMethodChange={setFormMethod}
                 beforeSubmit={
                   <>

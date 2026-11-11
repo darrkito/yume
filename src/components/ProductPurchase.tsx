@@ -10,7 +10,7 @@ import { DesignSheet } from "@/components/DesignSheet";
 import { LineOptionPicker } from "@/components/LineOptionPicker";
 import { QtyInput } from "@/components/QtyInput";
 import { LogoUploadNote } from "@/components/LogoUploadNote";
-import { cartItemLabel, defaultVariantId, hasVariants, hasWholesale, MAX_PIECES, pieceCount, piecesForAmount, resolvePrice, tieredPrice, wholesaleRate, withPieces, type Product } from "@/content/products";
+import { cartItemLabel, defaultVariantId, lineNeedsDesign, hasVariants, hasWholesale, MAX_PIECES, pieceCount, piecesForAmount, resolvePrice, tieredPrice, wholesaleRate, withPieces, type Product } from "@/content/products";
 import { cartItemLabelEn, getProductTranslation } from "@/content/products.en";
 import { waLink } from "@/content/site";
 import { CASABLANCA_PRICE, FREE_SHIPPING_THRESHOLD, NATIONAL_SHIPPING_PRICE } from "@/content/shipping";
@@ -38,8 +38,9 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
   const [designLater, setDesignLater] = useState(false);
   const designDialog = useRef<HTMLDialogElement>(null);
   const buyAfterChoice = useRef(false);
-  const needsDesign = Boolean(product.requiresImage) && !getDesignFile(product.slug) && !designLater;
   const [variantId, setVariantId] = useState<string | undefined>(defaultVariantId(product));
+  const wantsDesign = lineNeedsDesign(product, variantId);
+  const needsDesign = wantsDesign && !getDesignFile(product.slug) && !designLater;
   useEffect(() => {
     window.dispatchEvent(new CustomEvent("yume:variant", { detail: { slug: product.slug, variantId } }));
   }, [product.slug, variantId]);
@@ -361,7 +362,7 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
 
       {nudge}
 
-      {product.requiresImage && <LogoUploadNote slug={product.slug} lang={lang} hint={t.uploadLaterHint} />}
+      {wantsDesign && <LogoUploadNote slug={product.slug} lang={lang} hint={t.uploadLaterHint} />}
 
       <div className="mt-6 flex flex-col items-start">
         <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
@@ -441,7 +442,7 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
           )}
         </div>
       </div>
-      {product.requiresImage && (
+      {wantsDesign && (
         <DesignSheet
           ref={designDialog}
           lang={lang}

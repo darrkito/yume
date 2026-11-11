@@ -102,8 +102,8 @@ export function validateCartItems(items: unknown, extras: { personalization?: un
   if (extras.lang === "en") checked[0].locale = "en";
   if (isAiSource(extras.src)) checked[0].src = extras.src;
 
-  // Shipping stays computed on the pre-discount subtotal by the routes, so the
-  // coupon never costs a shopper their free shipping.
+  // Routes compute shipping on the post-discount subtotal: the coupon can cost
+  // a shopper their free shipping (owner decision, Buen Fin 2026).
   if (typeof extras.promoCode === "string" && extras.promoCode.trim()) {
     const promo = activePromo(extras.promoCode);
     if (!promo) throw new Error("El cupón no es válido o ya expiró.");

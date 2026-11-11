@@ -15,8 +15,8 @@ export async function createCheckoutPro(body: Record<string, unknown>): Promise<
   const delivery = validateDelivery(body.delivery);
   const designFileUrls = validateDesignFileUrls(body.designFileUrls);
   const subtotal = items.reduce((sum, item) => sum + item.price * item.qty, 0);
-  const listSubtotal = items.reduce((sum, item) => sum + (item.listPrice ?? item.price) * item.qty, 0);
-  const surcharge = deliverySurcharge(delivery.method, listSubtotal);
+  // Free shipping is judged on the amount actually paid (after any coupon).
+  const surcharge = deliverySurcharge(delivery.method, subtotal);
   const total = subtotal + surcharge;
 
   const order = await createPendingOrder({ customer, delivery, items, total, designFileUrls });

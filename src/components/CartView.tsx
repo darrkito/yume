@@ -5,7 +5,7 @@ import Link from "next/link";
 import { X, ImageUp, CreditCard, Truck, CheckCircle2, Clock, ShieldCheck, MessageCircle } from "lucide-react";
 import { useCart, type CartItem } from "@/components/CartContext";
 import { useDesignFiles } from "@/components/DesignFileContext";
-import { getProduct, hasVariants, MAX_PIECES, pieceCount, resolvePrice, withPieces } from "@/content/products";
+import { getProduct, hasVariants, lineNeedsDesign, MAX_PIECES, pieceCount, resolvePrice, withPieces } from "@/content/products";
 import { getProductTranslation, productsEn } from "@/content/products.en";
 import { QtyInput } from "@/components/QtyInput";
 import { cartLine } from "@/components/useAddProduct";
@@ -108,9 +108,8 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
     return null;
   })();
 
-  const itemsRequiringImage = [...new Set(items.map((i) => i.slug))]
-    .map((slug) => getProduct(slug))
-    .filter((p): p is NonNullable<typeof p> => Boolean(p?.requiresImage));
+  const itemsRequiringImage = [...new Set(items.filter((i) => { const p = getProduct(i.slug); return p && lineNeedsDesign(p, i.variantId); }).map((i) => i.slug))]
+    .map((slug) => getProduct(slug)!);
 
   const buildWaMessage = () => {
     const lines = items.map((i) => `- ${itemName(i, lang)} x${i.qty}: ${formatMXN(i.price * i.qty)}`).join("\n");

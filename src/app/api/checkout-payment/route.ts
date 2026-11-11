@@ -26,8 +26,7 @@ export async function POST(req: NextRequest) {
     const delivery = validateDelivery(body.delivery);
     const designFileUrls = validateDesignFileUrls(body.designFileUrls);
     const subtotal = items.reduce((sum, item) => sum + item.price * item.qty, 0);
-    const listSubtotal = items.reduce((sum, item) => sum + (item.listPrice ?? item.price) * item.qty, 0);
-    const total = subtotal + deliverySurcharge(delivery.method, listSubtotal);
+    const total = subtotal + deliverySurcharge(delivery.method, subtotal); // post-coupon amount decides free shipping
     const formData = body.formData ?? {};
 
     const order = await createPendingOrder({ customer, delivery, items, total, designFileUrls });

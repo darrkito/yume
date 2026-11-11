@@ -619,6 +619,11 @@ export const pieceCount = (product: Product, variantId?: string): number | null 
   return qty >= product.tiers.baseQty && qty <= MAX_PIECES ? qty : null;
 };
 
+/** True when this cart line needs a logo/design file: the product always does
+ * (stickers) or the buyer picked a "-logo" variant (NFC plate/stand). */
+export const lineNeedsDesign = (product: Product, variantId?: string): boolean =>
+  Boolean(product.requiresImage) || Boolean(variantId?.endsWith("-logo"));
+
 export const isValidVariant = (product: Product, variantId?: string): boolean =>
   !hasVariants(product) ||
   pieceCount(product, variantId) !== null ||

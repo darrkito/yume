@@ -1,6 +1,6 @@
 import { aiSourceLabel } from "@/lib/ai-source";
 import { orderLocale, type Order } from "@/lib/orders";
-import { getProduct, type Product } from "@/content/products";
+import { getProduct, lineNeedsDesign, type Product } from "@/content/products";
 import { getCasablancaBranch } from "@/content/shipping";
 import { SITE, waLink } from "@/content/site";
 import {
@@ -24,9 +24,9 @@ import {
 // order itself (server-side catalog + stored uploads), not a client flag.
 function missingDesignNames(order: Order): string[] {
   const uploaded = new Set((order.design_file_urls ?? []).flatMap((f) => [f.productName, f.slug ?? ""]));
-  return [...new Set(order.items.map((i) => i.slug))]
+  return [...new Set(order.items.filter((i) => { const p = getProduct(i.slug); return p && lineNeedsDesign(p, i.variantId); }).map((i) => i.slug))]
     .map((slug) => getProduct(slug))
-    .filter((p): p is Product => Boolean(p?.requiresImage) && !uploaded.has(p!.name) && !uploaded.has(p!.slug))
+    .filter((p): p is Product => Boolean(p) && !uploaded.has(p!.name) && !uploaded.has(p!.slug))
     .map((p) => p.name);
 }
 
