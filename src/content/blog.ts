@@ -4971,17 +4971,18 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "guia-planners-proveedor-detalles-personalizados",
-    title: "Proveedor de detalles personalizados para planners",
+    title: "Proveedor de detalles personalizados para wedding planner en Guadalajara",
+    metaTitle: "Proveedor de detalles para wedding planner Guadalajara",
     description:
-      "Proveedor de detalles personalizados para planners: qué enviar para cotizar, cómo aprobar la prueba digital, cuándo cerrar cantidades y cómo coordinar.",
+      "Proveedor de detalles personalizados para wedding planner en Guadalajara: brief, prueba digital, aprobación por escrito y calendario hacia atrás.",
     category: "Guías",
     publishedAt: "2026-10-29",
-    modifiedAt: "2026-11-03",
+    modifiedAt: "2026-11-11",
     intro:
-      "Si organizas bodas o eventos, tu trabajo es que todo llegue a tiempo y que tu cliente quede feliz. Un proveedor de detalles personalizados puede ayudarte o complicarte la vida. Esta guía explica cómo trabajamos en Yume con planners: qué mandar para cotizar, cómo se aprueba la prueba digital, qué confirmar por escrito, cuándo conviene empezar y cómo se cuida el trato por WhatsApp.",
+      "Si organizas bodas en Guadalajara, tu trabajo es que todo llegue a tiempo y que la pareja quede feliz. Un proveedor de detalles personalizados puede ayudarte o complicarte la vida. Esta guía explica cómo trabajamos en Yume con wedding planners: qué datos reunir, cómo es el flujo del pedido, cómo se aprueba la prueba digital y cómo se coordina todo por WhatsApp, evento por evento.",
     sections: [
       {
-        heading: "Qué esperar de un proveedor de detalles personalizados para planners",
+        heading: "Qué esperar de un proveedor de detalles personalizados para wedding planner en Guadalajara",
         body: [
           "Un buen proveedor de detalles personalizados le da a la planner tres cosas: una prueba digital que la pareja pueda aprobar, fechas claras por escrito y trato directo por WhatsApp. Así no tiene que adivinar ni perseguir a nadie, y su cliente ve el detalle antes de que se produzca nada.",
           "Según Bodas.net, la planner contrata proveedores, supervisa el timing del día y organiza pruebas, pero no decide sin consultar a la pareja. Por eso el proveedor ideal facilita esa aprobación. En Yume trabajamos desde Guadalajara, con envíos a todo México.",
@@ -4991,81 +4992,91 @@ export const blogPosts: BlogPost[] = [
         heading: "Qué productos puedes pedir para un evento",
         body: [
           "Para un evento puedes pedir dulceros con nombre y temática, stickers con el diseño de la boda, tatuajes temporales, menús de boda e invitaciones. Los stickers y los dulceros tienen precio publicado en el sitio; los menús, las invitaciones y los tatuajes se cotizan por WhatsApp según el evento.",
-          "El dulcero llega armado y vacío, con el nombre y la temática que elijas, para que tú decidas qué lleva dentro. Si buscas ideas para la mesa de dulces, revisa nuestra guía de [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara). Si quieres un detalle con el diseño de la boda, mira los [stickers de vinil personalizados](/productos/stickers-vinil-impermeable).",
+          "El dulcero llega armado y vacío, con el nombre y la temática que elijas, para que tú decidas qué lleva dentro. Puedes ver los [dulceros personalizados](/productos/dulceros-personalizados) o revisar nuestra guía de [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara). Si quieres un detalle con el diseño de la boda, mira los [stickers de vinil personalizados](/productos/stickers-vinil-impermeable).",
+        ],
+      },
+      {
+        heading: "Qué datos reunir antes de hacer el pedido",
+        body: [
+          "Antes de escribirnos, reúne cinco datos: nombres de la pareja, fecha de la boda, paleta de colores, número de invitados y las referencias que tengas, como una foto de la invitación o de la decoración. Con eso armamos la prueba digital sin ir y venir de mensajes, y cada pieza queda pensada para ese evento.",
+          "Si todavía no tienes definido el diseño, manda la foto de la invitación o de la decoración y partimos de ahí. Para menús, invitaciones y tatuajes temporales, te damos la cotización y los tiempos por WhatsApp según tu evento. Para ordenar tu información, usa este [checklist para planners](/blog/checklist-planners-pedido-detalles-evento).",
+        ],
+      },
+      {
+        heading: "Cómo es el flujo de un pedido, de la cotización a la entrega",
+        body: [
+          "El flujo es sencillo: la planner envía el brief por WhatsApp, preparamos la prueba digital, la pareja la revisa, se aprueba por escrito, se produce y se entrega. En los productos de la tienda, la producción se cuenta desde la aprobación de la prueba digital.",
+          "Para menús, invitaciones y tatuajes temporales, que se cotizan caso por caso, el proceso y los tiempos se confirman por WhatsApp según tu evento.",
         ],
       },
       {
         heading: "Cómo se aprueba una prueba digital sin enredos",
         body: [
           "La prueba digital es el diseño que ves antes de producir. En los stickers de vinil llega normalmente en un máximo de 24 horas después del pago, incluye hasta 2 rondas de ajustes y no se imprime nada sin tu aprobación. Para otros productos, confirma el proceso por WhatsApp.",
-          "Como la planner no decide sin consultar a la pareja, conviene enviar la prueba como imagen en el chat y que la aprobación quede escrita en el mismo hilo. Así todos ven la misma versión y nada se produce hasta que se aprueba.",
-          "Al aprobar, escribe también la cantidad final de piezas. Esa línea evita dudas si después cambia la lista de invitados.",
-        ],
-      },
-      {
-        heading: "Qué incluir en el brief para cotizar por WhatsApp",
-        body: [
-          "Para cotizar rápido, mándanos por WhatsApp la fecha del evento, la cantidad de piezas, la paleta de colores, los textos con nombres y fecha, y las referencias que tengas. Con eso preparamos la prueba digital sin ir y venir de mensajes.",
-          "Si todavía no tienes definido el diseño, manda una foto de la invitación o de la decoración y partimos de ahí. Para menús, invitaciones y tatuajes temporales, te damos la cotización y los tiempos por WhatsApp según tu evento.",
+          "Como la planner no decide sin consultar a la pareja, conviene enviar la prueba como imagen en el chat y que la aprobación quede escrita en el mismo hilo. Así todos ven la misma versión y nada se produce hasta que se aprueba. Antes de producir el lote completo, conviene confirmar el color en la prueba aprobada.",
+          "Al aprobar, escribe también la cantidad final de piezas. Esa línea evita dudas si después cambia la lista de invitados. Si quieres ver el proceso con más detalle, lee cómo funciona la [prueba digital en pedidos de evento](/blog/prueba-digital-pedido-evento-planners).",
         ],
       },
       {
         heading: "Qué confirmar por escrito antes de prometer una fecha",
         body: [
           "Antes de prometerle una fecha a tu cliente, confirma por escrito tres datos con tu proveedor: la cantidad final de piezas, la fecha límite para aprobar la prueba digital y la fecha de entrega. Con esos tres datos en el mismo chat, cualquier cambio queda registrado y nadie discute después qué se acordó.",
-          "Los plazos cambian mucho de un proveedor a otro. Easy Weddings, una guía australiana, muestra proveedores de detalles con mínimos que van de 2 a 3 semanas hasta 12 semanas. No es una referencia para México, pero ilustra por qué conviene pedir el plazo por escrito a cada uno.",
-          "Si cada pieza lleva el nombre del invitado, la confirmación de asistencia marca el calendario. YAY! Wedding Favours, citado en esa misma guía de Easy Weddings, recomienda de 4 a 8 semanas para piezas con nombres. Por eso ayuda acordar desde el inicio una fecha de cierre de la lista de invitados.",
+          "Si cada pieza lleva el nombre del invitado, la confirmación de asistencia marca el calendario, así que ayuda acordar desde el inicio una fecha de cierre de la lista de invitados.",
         ],
       },
       {
-        heading: "Piezas de respaldo y margen por retrasos",
-        body: [
-          "Antes de fijar la cantidad, define con tu cliente si necesitas piezas de respaldo y cuánto margen de tiempo dejar. La guía australiana de Easy Weddings lo recoge para agradecer a otros proveedores del evento y absorber imprevistos de envío. Es una referencia de fuera, no una regla de Yume.",
-          "YAY! Wedding Favours sugiere pedir más piezas que invitados, por ejemplo para agradecer al celebrante o al fotógrafo, y Brand Candy recomienda sumar 2 semanas por posibles retrasos de envío. Cuántas piezas de respaldo te convienen lo defines con tu cliente; escríbenos por WhatsApp y lo cotizamos.",
-        ],
-      },
-      {
-        heading: "Cuándo empezar para que todo llegue a tiempo",
+        heading: "Cuándo empezar: el calendario hacia atrás desde la boda",
         body: [
           "Empieza en cuanto tengas la fecha y una idea del diseño, porque el tiempo de producción se cuenta desde que se aprueba la prueba digital, no desde que haces el pedido. Mientras más tarde se apruebe, más tarde llega tu pedido.",
-          "Piensa el calendario hacia atrás desde la fecha del evento: primero la entrega, luego la producción, después la aprobación de la prueba, el cierre de la lista de invitados y el brief. Los días de producción y envío de los productos de la tienda aparecen en la página de cada uno.",
-          "Para menús, invitaciones y tatuajes, pregúntanos la fecha por WhatsApp antes de prometer nada a tu cliente. Si buscas ideas para los invitados, mira estos [souvenirs de boda personalizados](/blog/souvenirs-de-boda-personalizados).",
+          "Piensa el calendario hacia atrás desde la fecha de la boda: primero la entrega, luego la producción, después la aprobación de la prueba, el cierre de la lista de invitados y el brief. Los días de producción y envío de los productos de la tienda aparecen en la página de cada uno.",
+          "Como contraste, la ficha en Bodas.net de un proveedor de detalles de Guadalajara, España, recomienda empezar con 6 a 9 meses de antelación porque trabaja sobre pedido. Es la referencia de ese proveedor, no una regla de Yume. Para menús, invitaciones y tatuajes, pregúntanos la fecha por WhatsApp antes de prometer nada a tu cliente. Si buscas ideas para los invitados, lee [cuándo pedir souvenirs de boda](/blog/cuando-pedir-souvenirs-de-boda) o mira estos [souvenirs de boda personalizados](/blog/souvenirs-de-boda-personalizados).",
+        ],
+      },
+      {
+        heading: "Pedidos por evento, no en serie",
+        body: [
+          "Yume trabaja por evento, no en volumen industrial. Cada boda tiene sus nombres, su fecha y su paleta, así que cada pedido se prepara por separado. Si manejas varias bodas al año, puedes escribirnos para cada una y platicar cómo acomodar tus pedidos, siempre con la misma ruta de brief, prueba y aprobación.",
+          "Si trabajas con nosotros de forma recurrente, conoce la página de [Yume para planners](/planners).",
         ],
       },
       {
         heading: "Entrega y trato por WhatsApp para que tu cliente quede contento",
         body: [
           "Yume produce en Guadalajara y envía a todo México; en la zona metropolitana también puedes recoger en una sucursal Casa Blanca. Dinos la sede y la fecha del evento desde el inicio para que la entrega quede planeada junto con tu calendario.",
-          "Todo el trato es por WhatsApp: cotización, prueba digital y aprobación en un solo chat. Si manejas varios eventos al año, escríbenos y platicamos cómo acomodar tus pedidos.",
+          "Todo el trato es por WhatsApp: cotización, prueba digital y aprobación en un solo chat.",
         ],
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
-    relatedBlogSlugs: ["souvenirs-de-boda-personalizados", "dulceros-personalizados-guadalajara"],
+    relatedBlogSlugs: ["souvenirs-de-boda-personalizados", "dulceros-personalizados-guadalajara", "prueba-digital-pedido-evento-planners", "checklist-planners-pedido-detalles-evento"],
     faq: [
       {
         q: "¿Qué productos puedo pedir para un evento?",
         a: "Dulceros, stickers, tatuajes temporales, menús de boda e invitaciones. Los stickers y dulceros tienen precio publicado en el sitio; menús, invitaciones y tatuajes se cotizan por WhatsApp.",
       },
       {
-        q: "¿Cuánto tarda la prueba digital?",
-        a: "En los stickers de vinil llega normalmente en un máximo de 24 horas después del pago. Para otros productos, confirma el tiempo por WhatsApp.",
-      },
-      {
-        q: "¿Cuántas rondas de ajustes incluye?",
-        a: "Los stickers de vinil incluyen hasta 2 rondas de ajustes en la prueba digital. Para otros productos, consúltalo por WhatsApp.",
+        q: "¿Cuánto tarda la prueba digital y cuántas rondas incluye?",
+        a: "En los stickers de vinil llega normalmente en un máximo de 24 horas después del pago e incluye hasta 2 rondas de ajustes. Para otros productos, confirma el tiempo y las rondas por WhatsApp.",
       },
       {
         q: "¿Se produce algo antes de que yo apruebe?",
         a: "No. En los stickers de vinil no imprimimos nada sin tu aprobación, y el tiempo de producción se cuenta desde que apruebas la prueba digital.",
       },
       {
+        q: "¿Qué datos necesito para pedir un detalle personalizado de boda?",
+        a: "Nombres de la pareja, fecha de la boda, paleta de colores, número de invitados y las referencias que tengas, como una foto de la invitación o de la decoración.",
+      },
+      {
         q: "¿Qué debo confirmar por escrito antes de prometer una fecha?",
         a: "La cantidad final de piezas, la fecha límite para aprobar la prueba digital y la fecha de entrega. Para los productos de la tienda, los días de producción y envío aparecen en la página de cada uno; para menús, invitaciones y tatuajes, pregunta por WhatsApp.",
       },
       {
-        q: "¿Los plazos de otros proveedores sirven como referencia?",
-        a: "Solo como contexto. Una guía australiana de Easy Weddings muestra mínimos que van de 2 a 3 semanas hasta 12 semanas según el proveedor, así que lo más seguro es pedir el plazo por escrito a cada uno.",
+        q: "¿Con cuánta anticipación debo empezar?",
+        a: "Depende del producto y de cuándo apruebes la prueba digital. Como referencia externa, un proveedor de Guadalajara, España, recomienda en Bodas.net de 6 a 9 meses porque trabaja sobre pedido, pero no es una regla de Yume.",
+      },
+      {
+        q: "¿Trabajan por evento o por volumen?",
+        a: "Por evento. Cada boda se prepara por separado, con su brief, su prueba digital y su aprobación, y el trato es directo por WhatsApp.",
       },
       {
         q: "¿El dulcero incluye dulces?",
@@ -5078,7 +5089,7 @@ export const blogPosts: BlogPost[] = [
     ],
     sources: [
       { label: "Bodas.net: ¿Qué tipo de wedding planner necesitas?", url: "https://www.bodas.net/articulos/que-tipo-de-wedding-planner-necesitas--c3716" },
-      { label: "Easy Weddings: plazos de entrega de bomboniere (guía de Australia)", url: "https://easyweddings.com.au/Bomboniere/advice/bomboniere-lead-time" },
+      { label: "Bodas.net: ficha de Evana Creativas, detalles de boda (Guadalajara, España)", url: "https://www.bodas.net/detalles-de-bodas/evana-creativas--e304499" },
     ],
   },
   {

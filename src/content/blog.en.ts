@@ -3785,17 +3785,17 @@ export const blogPostsEn: BlogPost[] = [
   },
   {
     slug: "guide-for-planners-working-with-custom-favors-supplier",
-    title: "Custom Favors Supplier for Wedding Planners",
+    title: "Custom Favors Supplier for Wedding Planners in Guadalajara",
     description:
-      "How planners work with a custom favors supplier: what to send for a quote, digital proof approval, final counts and timing, all on WhatsApp.",
+      "How wedding planners in Guadalajara work with a custom favors supplier: brief, digital proof, written approval and a backwards calendar.",
     category: "Guides",
     publishedAt: "2026-10-29",
-    modifiedAt: "2026-11-03",
+    modifiedAt: "2026-11-11",
     intro:
-      "If you plan weddings or events, your job is to have everything arrive on time and your client happy. A custom favors supplier can make that easier or harder. This guide explains how we work with planners at Yume: what to send for a quote, how the digital proof is approved, what to confirm in writing, when to start and how we handle contact on WhatsApp.",
+      "If you plan weddings in Guadalajara, your job is to have everything arrive on time and the couple happy. A custom favors supplier can make that easier or harder. This guide explains how we work with wedding planners at Yume: what details to gather, how the order flows, how the digital proof is approved and how everything is coordinated on WhatsApp, event by event.",
     sections: [
       {
-        heading: "What to expect from a custom favors supplier for wedding planners",
+        heading: "What to expect from a custom favors supplier for wedding planners in Guadalajara",
         body: [
           "A good custom favors supplier gives the planner three things: a digital proof the couple can approve, clear dates in writing, and direct contact on WhatsApp. That way the planner does not have to guess or chase anyone, and the client sees the favor before anything is produced.",
           "According to Bodas.net, the planner hires vendors, oversees the timing of the day and organizes trials, but does not decide without consulting the couple. That is why the ideal supplier makes approval easy. At Yume we work from Guadalajara and ship across Mexico.",
@@ -3805,81 +3805,91 @@ export const blogPostsEn: BlogPost[] = [
         heading: "Which products you can order for an event",
         body: [
           "For an event you can order candy boxes with a name and theme, stickers with the wedding design, temporary tattoos, wedding menus and invitations. Stickers and candy boxes have prices listed on the site; menus, invitations and tattoos are quoted on WhatsApp based on the event.",
-          "The candy box arrives assembled and empty, with the name and theme you choose, so you decide what goes inside. For more ideas for the candy table, read our guide to [personalized party favor boxes in Guadalajara](/en/blog/personalized-party-favor-boxes-guadalajara).",
+          "The candy box arrives assembled and empty, with the name and theme you choose, so you decide what goes inside. See the [personalized party favor boxes](/en/products/personalized-party-favor-boxes) or read our guide to [personalized party favor boxes in Guadalajara](/en/blog/personalized-party-favor-boxes-guadalajara). For a detail with the wedding design, look at the [waterproof vinyl stickers](/en/products/waterproof-vinyl-stickers).",
+        ],
+      },
+      {
+        heading: "What to gather before you place the order",
+        body: [
+          "Before writing to us, gather five details: the couple's names, the wedding date, the color palette, the number of guests and any references you have, such as a photo of the invitation or the decor. With that we build the digital proof without long message threads, and each piece is made for that event.",
+          "If the design is not defined yet, send a photo of the invitation or the decor and we start from there. For menus, invitations and temporary tattoos, we give you the quote and timing on WhatsApp based on your event. To organize your information, use this [planner checklist for custom favors](/en/blog/planner-checklist-custom-favors-order-event).",
+        ],
+      },
+      {
+        heading: "How an order flows from quote to delivery",
+        body: [
+          "The flow is straightforward: the planner sends the brief on WhatsApp, we prepare the digital proof, the couple reviews it, approval is given in writing, then the order is produced and delivered. For store products, production time counts from the approval of the digital proof.",
+          "For menus, invitations and temporary tattoos, which are quoted case by case, the process and timing are confirmed on WhatsApp based on your event.",
         ],
       },
       {
         heading: "How a digital proof gets approved without back and forth",
         body: [
           "A digital proof is the design you see before production. For vinyl stickers it normally arrives within 24 hours of payment, includes up to 2 rounds of changes, and nothing is printed without your approval. For other products, confirm the process on WhatsApp.",
-          "Since the planner does not decide without consulting the couple, it helps to send the proof as an image in the chat and keep the approval written in the same thread. Everyone sees the same version, and nothing is produced until it is approved.",
-          "When approving, also write the final piece count. That line avoids doubts if the guest list changes later.",
-        ],
-      },
-      {
-        heading: "What to include in the brief to get a quote on WhatsApp",
-        body: [
-          "To get a quote quickly, send us on WhatsApp the event date, the number of pieces, the color palette, the texts with names and date, and any references you have. With that we prepare the digital proof without long message threads.",
-          "If the design is not defined yet, send a photo of the invitation or the decor and we start from there. For menus, invitations and temporary tattoos, we give you the quote and timing on WhatsApp based on your event.",
+          "Since the planner does not decide without consulting the couple, it helps to send the proof as an image in the chat and keep the approval written in the same thread. Everyone sees the same version, and nothing is produced until it is approved. Before producing the full batch, it helps to confirm the color on the approved proof.",
+          "When approving, also write the final piece count. That line avoids doubts if the guest list changes later. For more detail, read how the [digital proof works for event orders](/en/blog/digital-proof-event-order-planners).",
         ],
       },
       {
         heading: "What to confirm in writing before promising a date",
         body: [
           "Before promising your client a date, confirm three things in writing with your supplier: the final piece count, the deadline to approve the digital proof, and the delivery date. With all three in the same chat, any change is on record and nobody argues later about what was agreed.",
-          "Lead times vary a lot between suppliers. Easy Weddings, an Australian guide, shows favor suppliers with minimums ranging from 2 to 3 weeks up to 12 weeks. It is not a reference for Mexico, but it shows why you should ask each supplier for the lead time in writing.",
-          "If each piece carries the guest's name, RSVPs set the calendar. YAY! Wedding Favours, quoted in that same Easy Weddings guide, recommends 4 to 8 weeks for pieces with names. That is why it helps to agree on a guest list closing date from the start.",
+          "If each piece carries the guest's name, RSVPs set the calendar, so it helps to agree from the start on a closing date for the guest list.",
         ],
       },
       {
-        heading: "Backup pieces and a time buffer for delays",
-        body: [
-          "Before fixing the quantity, decide with your client whether you need backup pieces and how much extra time to leave. The Australian Easy Weddings guide lists both to thank other event vendors and absorb shipping surprises. It is a foreign reference, not a Yume rule.",
-          "YAY! Wedding Favours suggests ordering more pieces than guests, for example to thank the celebrant or the photographer, and Brand Candy recommends adding 2 weeks for possible shipping delays. How many backup pieces suit you is something to settle with your client; write to us on WhatsApp and we will quote it.",
-        ],
-      },
-      {
-        heading: "When to start so everything arrives on time",
+        heading: "When to start: the calendar backwards from the wedding",
         body: [
           "Start as soon as you have the date and a rough idea of the design, because production time counts from the moment the digital proof is approved, not from when you place the order. The later the approval, the later your order arrives.",
-          "Plan the calendar backwards from the event date: delivery first, then production, then proof approval, the guest list closing and the brief. Production and shipping days for store products appear on each product page.",
-          "For menus, invitations and tattoos, ask us for the date on WhatsApp before promising anything to your client. For guest gift ideas, see these [personalized wedding favors](/en/blog/personalized-wedding-favors-with-name-and-date).",
+          "Plan the calendar backwards from the wedding date: delivery first, then production, then proof approval, the guest list closing and the brief. Production and shipping days for store products appear on each product page.",
+          "As a contrast, the Bodas.net listing of a favors supplier in Guadalajara, Spain, recommends starting 6 to 9 months ahead because it works to order. That is that supplier's reference, not a Yume rule. For menus, invitations and tattoos, ask us for the date on WhatsApp before promising anything to your client. For guest gift ideas, read [when to order wedding favors](/en/blog/when-to-order-wedding-favors) or see these [personalized wedding favors](/en/blog/personalized-wedding-favors-with-name-and-date).",
+        ],
+      },
+      {
+        heading: "Orders by event, not in series",
+        body: [
+          "Yume works event by event, not in industrial volume. Every wedding has its own names, date and palette, so each order is prepared separately. If you handle several weddings a year, you can write to us for each one and talk through how to organize your orders, always using the same path of brief, proof and approval.",
+          "If you work with us on a recurring basis, see the page for [Yume for planners](/en/planners).",
         ],
       },
       {
         heading: "Delivery and WhatsApp contact so your client is happy",
         body: [
           "Yume produces in Guadalajara and ships across Mexico; in the Guadalajara metro area you can also pick up at a Casa Blanca branch. Tell us the venue and event date from the start so delivery can be planned around your calendar.",
-          "All contact happens on WhatsApp: quote, digital proof and approval in a single chat. If you handle several events a year, write to us and we will talk about how to organize your orders.",
+          "All contact happens on WhatsApp: quote, digital proof and approval in a single chat.",
         ],
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
-    relatedBlogSlugs: [BLOG_SLUG_EN["souvenirs-de-boda-personalizados"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"]],
+    relatedBlogSlugs: [BLOG_SLUG_EN["souvenirs-de-boda-personalizados"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"], "digital-proof-event-order-planners", "planner-checklist-custom-favors-order-event"],
     faq: [
       {
         q: "Which products can I order for an event?",
         a: "Candy boxes, stickers, temporary tattoos, wedding menus and invitations. Stickers and candy boxes have prices listed on the site; menus, invitations and tattoos are quoted on WhatsApp.",
       },
       {
-        q: "How long does the digital proof take?",
-        a: "For vinyl stickers it normally arrives within 24 hours of payment. For other products, confirm the timing on WhatsApp.",
-      },
-      {
-        q: "How many rounds of changes are included?",
-        a: "Vinyl stickers include up to 2 rounds of changes on the digital proof. For other products, ask on WhatsApp.",
+        q: "How long does the digital proof take and how many rounds of changes are included?",
+        a: "For vinyl stickers it normally arrives within 24 hours of payment and includes up to 2 rounds of changes. For other products, confirm the timing and rounds on WhatsApp.",
       },
       {
         q: "Is anything produced before I approve?",
         a: "No. For vinyl stickers we print nothing without your approval, and production time counts from the moment you approve the digital proof.",
       },
       {
+        q: "What details do I need to order a personalized wedding favor?",
+        a: "The couple's names, the wedding date, the color palette, the number of guests and any references you have, such as a photo of the invitation or the decor.",
+      },
+      {
         q: "What should I confirm in writing before promising a date?",
         a: "The final piece count, the deadline to approve the digital proof and the delivery date. For store products, production and shipping days appear on each product page; for menus, invitations and tattoos, ask on WhatsApp.",
       },
       {
-        q: "Are other suppliers' lead times a useful reference?",
-        a: "Only as context. An Australian Easy Weddings guide shows minimums from 2 to 3 weeks up to 12 weeks depending on the supplier, so the safest move is to ask each one for the lead time in writing.",
+        q: "How far ahead should I start?",
+        a: "It depends on the product and on when you approve the digital proof. As an outside reference, a supplier in Guadalajara, Spain, recommends 6 to 9 months on Bodas.net because it works to order, but that is not a Yume rule.",
+      },
+      {
+        q: "Do you work by event or by volume?",
+        a: "By event. Each wedding is prepared separately, with its own brief, digital proof and approval, and contact is direct on WhatsApp.",
       },
       {
         q: "Does the candy box include candy?",
@@ -3892,7 +3902,7 @@ export const blogPostsEn: BlogPost[] = [
     ],
     sources: [
       { label: "Bodas.net: What type of wedding planner do you need?", url: "https://www.bodas.net/articulos/que-tipo-de-wedding-planner-necesitas--c3716" },
-      { label: "Easy Weddings: bomboniere lead times (Australian guide)", url: "https://easyweddings.com.au/Bomboniere/advice/bomboniere-lead-time" },
+      { label: "Bodas.net: Evana Creativas wedding favors listing (Guadalajara, Spain)", url: "https://www.bodas.net/detalles-de-bodas/evana-creativas--e304499" },
     ],
   },
   {
