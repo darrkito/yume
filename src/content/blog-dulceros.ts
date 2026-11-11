@@ -581,15 +581,42 @@ export const dulceroPosts: BlogPost[] = [
   },
   {
     slug: "dulceros-para-bautizo-y-primera-comunion",
-    title: "Dulceros para primera comunión Guadalajara y bautizo",
+    title: "Qué regalar a los invitados de un bautizo: dulceros",
     description:
-      "Dulceros para primera comunión Guadalajara y bautizo: cuántos pedir, cuándo cerrar el pedido, qué poner dentro y cómo planear el calendario.",
+      "Qué regalar a los invitados de un bautizo: dulceros y detalles personalizados, cómo elegir según el invitado, cuántos pedir, precio y fechas.",
     category: "Guías",
     publishedAt: PUBLISHED,
-    modifiedAt: "2026-11-10",
+    modifiedAt: "2026-11-11",
     intro:
-      "En un bautizo o una primera comunión, el recuerdo que se llevan los invitados suele ser parte importante de la celebración. Si buscas dulceros para primera comunión en Guadalajara, aquí respondemos cuántos pedir según tu lista, cuándo cerrar el pedido y qué hacer si la lista cambia, además de cómo se arma el calendario, qué poner dentro, cómo diseñarlo y cuánto cuesta. Es una guía para familias y también para planners que coordinan el detalle de sus clientes.",
+      "Si te preguntas qué regalar a los invitados de un bautizo, aquí tienes un criterio para elegir entre dulces, galletas o una vela, y cómo un dulcero personalizado puede ser el recuerdo. También respondemos lo que buscas si necesitas dulceros para primera comunión en Guadalajara: cuántos pedir según tu lista, cuándo cerrar el pedido, qué poner dentro, cómo diseñarlo y cuánto cuesta. Es una guía para familias y también para planners que coordinan el detalle de sus clientes.",
     sections: [
+      {
+        heading: "Qué regalar a los invitados de un bautizo: cómo decidir",
+        body: [
+          "Lo que conviene regalar a los invitados de un bautizo es un detalle que se pueda consumir o guardar, con el nombre del niño o la niña y la fecha. Un dulcero personalizado cumple las dos cosas: lleva dulces dentro y la caja queda como recuerdo. Decide según quién lo recibe: familia cercana o invitados generales.",
+          "Pregúntate tres cosas: quién lo recibe, si se va a comer o a guardar y si combina con la invitación. Con esas tres respuestas, la decisión se reduce a pocas opciones.",
+        ],
+      },
+      {
+        heading: "Ideas de recuerdo para invitados: lo que proponen otras guías",
+        body: [
+          "Guiainfantil reúne nueve ideas de recuerdo para invitados de bautizo: marco de fotos, galletas decoradas o cakepops, figurita pinza para foto, bolsitas de tul con dulces, caja de galletas, cucurucho de caramelos, cestita de caramelos, cesta de tela y vela personalizada con fecha y nombre del bebé.",
+          "Es una lista general, sin cantidades ni precios. Guiainfantil presenta las galletas en caja como opción económica y vistosa, envueltas en papel de seda con lazo grande. Las galletas y los cakepops se comen, así que es probable que se consuman en lugar de quedar guardados.",
+        ],
+      },
+      {
+        heading: "Familia cercana o invitados generales: qué dar a cada uno",
+        body: [
+          "Para invitados generales basta un recuerdo común con el nombre del niño o la niña y la fecha. Para familia cercana, padrinos y abuelos puedes pensar en algo distinto, con su nombre. Define los grupos antes de contar piezas, porque cada grupo puede llevar un diseño diferente y su propia cantidad.",
+        ],
+      },
+      {
+        heading: "Dulcero y detalle personalizado en un solo conjunto",
+        body: [
+          "El dulcero y los stickers del mismo diseño llevan el nombre y la fecha, y así el recuerdo y la mesa de dulces se ven como un solo conjunto. El dulcero llega armado y vacío, tú eliges el relleno, y los stickers del nombre pueden acompañarlo. Revisas todo junto en la prueba digital.",
+          "Si también organizas un baby shower, revisa los [recuerdos de baby shower personalizados](/blog/recuerdos-baby-shower-personalizados).",
+        ],
+      },
       {
         heading: "Dulceros para primera comunión Guadalajara: qué pedir y cuándo",
         body: [
@@ -706,6 +733,18 @@ export const dulceroPosts: BlogPost[] = [
     ],
     faq: [
       {
+        q: "¿Qué regalar a los invitados de un bautizo?",
+        a: "Un detalle con el nombre del niño o la niña y la fecha, que se pueda comer o guardar. Un dulcero personalizado llega vacío para que elijas el relleno. Guiainfantil propone otras ideas, como bolsitas de tul con dulces, galletas decoradas o una vela personalizada.",
+      },
+      {
+        q: "¿El dulcero sustituye al recuerdo de bautizo?",
+        a: "Puede ser el recuerdo: lleva dulces para comer y una caja con nombre y fecha para guardar. Si prefieres sumar otro detalle, como unos stickers con el nombre, decídelo según tus invitados y tu presupuesto.",
+      },
+      {
+        q: "¿Cuántos recuerditos pedir para un bautizo?",
+        a: "Cuenta los invitados confirmados y define a quién le toca uno. Con el dulcero el pedido mínimo es de 10 piezas, y si la lista cambia antes de aprobar la prueba digital ajustamos la cantidad por WhatsApp.",
+      },
+      {
         q: "¿Cuántos dulceros debo pedir para una primera comunión?",
         a: "Parte de los invitados confirmados y define a quién le toca uno: solo niños, niños y adultos, o también padrinos y familia cercana. El pedido mínimo es de 10 piezas.",
       },
@@ -760,6 +799,10 @@ export const dulceroPosts: BlogPost[] = [
     ],
     sources: [
       {
+        label: "Guiainfantil: ideas para regalar en el bautizo del bebé (recuerdos para invitados)",
+        url: "https://www.guiainfantil.com/galerias/bebes/ideas-para-regalar-en-el-bautizo-del-bebe/",
+      },
+      {
         label: "ADN40: cuál es la mejor edad para hacer la primera comunión (edad, catequesis, requisitos y padrinos)",
         url: "https://www.adn40.mx/mexico/2025-10-24/cual-es-la-mejor-edad-para-hacer-la-primera-comunion/",
       },
@@ -773,7 +816,7 @@ export const dulceroPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["dulceros-para-eventos-sociales-boda-xv-baby-shower", "que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "cajas-bolsas-o-vasos-dulceros-cual-elegir"],
+    relatedBlogSlugs: ["dulceros-para-eventos-sociales-boda-xv-baby-shower", "que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "cajas-bolsas-o-vasos-dulceros-cual-elegir", "recuerdos-baby-shower-personalizados"],
   },
   {
     slug: "dulceros-para-eventos-empresariales",
