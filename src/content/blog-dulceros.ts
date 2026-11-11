@@ -802,37 +802,34 @@ export const dulceroPosts: BlogPost[] = [
     title: "Dulceros para eventos empresariales: detalles con el logo de tu empresa",
     metaTitle: "Dulceros para eventos empresariales con tu logo",
     description:
-      "Dulceros personalizados con el logo de tu empresa para posadas, aniversarios y eventos con clientes: diseño, cantidades, precio y tiempos de entrega.",
+      "Dulceros para eventos empresariales con el logo de tu empresa: ocasiones, diseño, cantidades, precio y tiempos de entrega para posadas y aniversarios.",
     category: "Guías",
     publishedAt: PUBLISHED,
-    modifiedAt: "2026-10-26",
+    modifiedAt: "2026-11-11",
     intro:
       "Los dulceros no son solo para fiestas infantiles. Con el logo y los colores de tu empresa, una cajita tipo lunch box es un detalle corporativo que se ve cuidado: para la posada de fin de año, el aniversario de la empresa, la bienvenida de nuevos colaboradores o un evento con clientes. Esta guía explica cómo pedir dulceros para eventos empresariales en Guadalajara o con envío a todo México: ocasiones, diseño, qué meter dentro, cantidades, precio y tiempos.",
     sections: [
       {
-        heading: "Ocasiones en las que funcionan los dulceros corporativos",
+        heading: "Dulceros para eventos empresariales: cuándo tienen sentido",
         body: [
-          "Los dulceros personalizados funcionan en cualquier evento de empresa donde quieras que cada persona se lleve un detalle con tu marca: posadas, aniversarios, kits de bienvenida, lanzamientos y eventos con clientes. Cada caja lleva el logo y los colores de tu empresa, así que el recuerdo llega a casa o al escritorio.",
-          "Estas son las ocasiones donde más sentido tienen: la posada o el convivio de fin de año, el aniversario de la empresa, el kit de bienvenida para nuevos colaboradores, un lanzamiento de producto, un evento con clientes o proveedores, el Día del Niño para los hijos de los empleados y los stands en ferias o expos.",
-          "En todos los casos el dulcero cumple dos funciones: es un detalle para la persona y lleva tu marca a su casa o escritorio. A diferencia de una bolsa genérica, una caja con el nombre de tu empresa y un mensaje propio hace que el evento se vea planeado.",
-          "Si el evento es para un equipo grande, puedes dar un dulcero por persona. Si es una cena con clientes, uno por lugar en la mesa se ve como parte del montaje.",
+          "Los dulceros para eventos empresariales funcionan cuando quieres que cada persona se lleve un detalle con tu marca: posadas, aniversarios, kits de bienvenida, lanzamientos y eventos con clientes. Cada caja lleva el logo y los colores de tu empresa, así que el recuerdo llega a casa o al escritorio.",
+          "Estas son las ocasiones donde más sentido tienen: la [posada o el convivio de fin de año](/blog/detalles-posada-empresa-personalizados), el [aniversario de la empresa](/blog/aniversario-empresa-detalles-personalizados), el kit de bienvenida para nuevos colaboradores, un lanzamiento de producto, un evento con clientes o proveedores, el Día del Niño para los hijos de los empleados y los stands en ferias o expos.",
+          "A diferencia de una bolsa genérica, una caja con el nombre de tu empresa y un mensaje propio hace que el evento se vea planeado. Si el evento es para un equipo grande, puedes dar un dulcero por persona. Si es una cena con clientes, uno por lugar en la mesa se ve como parte del montaje.",
         ],
       },
       {
         heading: "Cómo se ve el dulcero con el logo de tu empresa",
         body: [
-          "Diseñamos el dulcero con tu logo, los colores de tu identidad y, si quieres, un mensaje corto. Antes de producir te mandamos una prueba digital y nada se produce hasta que la apruebas. Envía tu logo en PNG, PDF, AI o SVG en buena calidad para trabajar con él.",
-          "Cada dulcero es una caja tipo lunch box con asa, de cartulina opalina, y mide 15.7 × 11.7 × 9.9 cm. La personalización incluye el nombre y la temática, que en un evento de empresa son tu logo y tus colores, con un mensaje como Gracias por un gran año o Bienvenido al equipo.",
-          "Cuando mandes el logo, incluye también los colores de la marca y el texto exacto que quieres. Revisa en la prueba digital la ortografía, el nombre de la empresa y el año del evento, porque es el último paso antes de producir. Si varias personas aprueban, designa a una sola para responder y evitar idas y vueltas.",
-          "Para cerrar o complementar el detalle, también puedes pedir stickers con tu logo y usarlos para sellar bolsitas o decorar lo que va dentro.",
+          "Diseñamos el dulcero con tu logo, los colores de tu identidad y, si quieres, un mensaje corto. Antes de producir te mandamos una prueba digital y nada se produce hasta que la apruebas. Cada dulcero es una caja tipo lunch box con asa, de cartulina opalina, y mide 15.7 × 11.7 × 9.9 cm.",
+          "La personalización incluye el nombre y la temática, que en un evento de empresa son tu logo y tus colores, con un mensaje como Gracias por un gran año o Bienvenido al equipo. Cuando mandes el logo, incluye también los colores de la marca y el texto exacto que quieres.",
+          "Para cerrar o complementar el detalle, también puedes pedir [stickers con logo](/productos/stickers-logo-personalizado) y usarlos para sellar bolsitas o decorar lo que va dentro.",
         ],
       },
       {
         heading: "Qué meter en un dulcero para un evento de empresa",
         body: [
-          "El dulcero llega armado y vacío, así que tú decides qué lleva dentro: dulces, un chocolate, galletas o un detalle de tu marca, como unos stickers con tu logo. Mide 15.7 × 11.7 × 9.9 cm, por lo que conviene armar uno de prueba antes de comprar el relleno de todos.",
-          "Algunas ideas: chocolates, galletas, dulces tradicionales mexicanos o botanas, más algo que no sea dulce, como stickers con tu logo o una tarjeta de agradecimiento. Entre 8 y 12 piezas de dulce se ve completo en esta caja.",
-          "Pregunta por alergias al equipo o a los invitados (cacahuate y chocolate son las más comunes) y, si hay dudas, prepara también una opción sin esos ingredientes. Para más ideas por tipo de dulce, revisa la guía de qué poner en un dulcero.",
+          "El dulcero llega armado y vacío, así que tú decides qué lleva dentro: dulces, un chocolate, galletas o un detalle de tu marca, como unos [stickers con tu logo](/productos/stickers-logo-personalizado). Como mide 15.7 × 11.7 × 9.9 cm, conviene armar uno de prueba antes de comprar el relleno de todos.",
+          "Algunas ideas: chocolates, galletas, dulces tradicionales mexicanos o botanas, más algo que no sea dulce, como una tarjeta de agradecimiento. Pregunta por alergias al equipo o a los invitados (cacahuate y chocolate son las más comunes) y, si hay dudas, prepara también una opción sin esos ingredientes. Para más ideas por tipo de dulce, revisa la guía de [qué poner en un dulcero](/blog/que-poner-en-un-dulcero).",
         ],
       },
       {
@@ -840,7 +837,13 @@ export const dulceroPosts: BlogPost[] = [
         body: [
           `Primeras 100 piezas: $${dulceroUnit} MXN por dulcero, con pedido mínimo de 10 piezas y sin paquetes cerrados. Arriba de 100 piezas es precio mayoreo y se cotiza por WhatsApp. Desde $${FREE_SHIPPING_THRESHOLD} de compra el envío nacional es gratis. Pides el número exacto de invitados o colaboradores.`,
           `Por ejemplo, 18 dulceros para un equipo pequeño son $${dulceroTotal(18)}, 40 son $${dulceroTotal(40)} y 100 son $${dulceroTotal(100)}. Si estás en la zona metropolitana de Guadalajara, puedes recogerlos en cualquiera de las ${CASABLANCA_BRANCHES.length} sucursales de paquetería Casa Blanca; en pedidos menores a $${FREE_SHIPPING_THRESHOLD} la recolección cuesta $${CASABLANCA_PRICE}.`,
-          "Cuenta a los asistentes confirmados y suma 2 o 3 dulceros extra por si se agrega alguien de último momento. Puedes pagar con tarjeta, OXXO o SPEI. Ten en cuenta que no emitimos factura (CFDI); si tu empresa la necesita, escríbenos antes de pedir.",
+          "Cuenta a los asistentes confirmados para pedir la cantidad exacta. Puedes ver el producto y armar tu pedido en la página de [dulceros personalizados](/productos/dulceros-personalizados), o revisar la guía de [dulceros en Guadalajara](/blog/dulceros-personalizados-guadalajara).",
+        ],
+      },
+      {
+        heading: "Qué incluye el pedido, pago y factura",
+        body: [
+          "Cada dulcero llega armado y vacío, con tu logo, tus colores y, si quieres, un mensaje corto, además de una prueba digital que apruebas antes de producir. No incluye dulces ni relleno. Puedes pagar con tarjeta, OXXO o SPEI. No emitimos factura (CFDI); si tu empresa la necesita, escríbenos antes de pedir.",
           "Para pedidos grandes, escríbenos por WhatsApp antes de pagar: así confirmamos fechas y cualquier detalle de tu evento.",
         ],
       },
@@ -848,8 +851,7 @@ export const dulceroPosts: BlogPost[] = [
         heading: "Tiempos de entrega para un evento corporativo",
         body: [
           `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba digital, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional, o ${PICKUP_EXTRA_DAYS} día hábil si recoges en una sucursal Casa Blanca de Guadalajara. Si la aprobación pasa por varias personas, empieza el pedido con dos o tres semanas de anticipación.`,
-          `Sumando el máximo de producción y envío nacional son ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles, sin contar lo que tarde tu equipo en aprobar la prueba. Cuenta hacia atrás desde la fecha del evento y deja margen.`,
-          "Las posadas se concentran en diciembre; si tu fecha cae en esas semanas, empieza antes. Los dulceros te llegan armados, así que el día del evento solo tienes que llenarlos y acomodarlos.",
+          `Sumando el máximo de producción y envío nacional son ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles, sin contar lo que tarde tu equipo en aprobar la prueba. Los dulceros te llegan armados, así que el día del evento solo tienes que llenarlos y acomodarlos. Si tu evento es una posada con tema navideño, revisa la guía de [dulceros navideños](/blog/dulceros-navidenos-personalizados).`,
         ],
       },
       {
@@ -857,7 +859,7 @@ export const dulceroPosts: BlogPost[] = [
         body: [
           "Si organizas eventos para empresas o clientes, puedes pedir por evento: la cantidad exacta, un diseño con la identidad de cada cliente y una prueba digital que se aprueba antes de producir. Para coordinar fechas y detalles, escríbenos por WhatsApp antes de pagar.",
           "Un flujo que funciona: mándanos la fecha del evento, el número de asistentes y el logo; revisa la prueba digital con tu cliente; confirma la cantidad final; y haz el pedido con margen para el envío.",
-          "Además de dulceros, cotizamos stickers con logo, tatuajes temporales para eventos e invitaciones personalizadas, para que todo el evento tenga un mismo estilo visual.",
+          "Además de dulceros, cotizamos stickers con logo, [tatuajes temporales para eventos](/blog/tatuajes-temporales-personalizados-para-eventos) e [invitaciones personalizadas](/blog/como-pedir-invitaciones-personalizadas-para-eventos), para que todo el evento tenga un mismo estilo visual.",
         ],
       },
     ],
@@ -865,10 +867,6 @@ export const dulceroPosts: BlogPost[] = [
       {
         q: "¿Puedo poner el logo de mi empresa en los dulceros?",
         a: "Sí. La personalización incluye nombre y temática: tu logo, tus colores y, si quieres, un mensaje corto. Te mandamos una prueba digital para que la apruebes antes de producir.",
-      },
-      {
-        q: "¿En qué formato mando mi logo?",
-        a: "En PNG, PDF, AI o SVG, en buena calidad.",
       },
       {
         q: "¿Cuántos dulceros mínimo puedo pedir?",
@@ -887,6 +885,10 @@ export const dulceroPosts: BlogPost[] = [
         a: `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional. Si la aprobación pasa por varias personas, conviene empezar con dos o tres semanas de anticipación.`,
       },
       {
+        q: "¿Puedo recoger mi pedido en Guadalajara?",
+        a: `Sí, en cualquiera de las ${CASABLANCA_BRANCHES.length} sucursales de paquetería Casa Blanca de la zona metropolitana. En pedidos menores a $${FREE_SHIPPING_THRESHOLD} la recolección cuesta $${CASABLANCA_PRICE}.`,
+      },
+      {
         q: "¿Emiten factura?",
         a: "No emitimos factura (CFDI). Si tu empresa la necesita, escríbenos antes de pedir.",
       },
@@ -898,6 +900,9 @@ export const dulceroPosts: BlogPost[] = [
       "que-poner-en-un-dulcero",
       "como-pedir-invitaciones-personalizadas-para-eventos",
       "tatuajes-temporales-personalizados-para-eventos",
+      "detalles-posada-empresa-personalizados",
+      "aniversario-empresa-detalles-personalizados",
+      "dulceros-personalizados-guadalajara",
     ],
   },
   {
