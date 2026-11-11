@@ -5432,8 +5432,9 @@ export const blogPostsEn: BlogPost[] = [
       "Planner checklist with the details a supplier needs to quote and produce custom event favors: quantity, texts, colors, proof and delivery.",
     category: "Guides",
     publishedAt: "2026-11-10",
+    modifiedAt: "2026-11-11",
     intro:
-      "An order of custom favors moves faster when the supplier has every detail from the start. This checklist gathers what a planner should have ready before asking for a quote: quantity, texts, design, digital proof, the deadline to lock the order and delivery.",
+      "An order of custom favors moves faster when the supplier has every detail from the start. This checklist gathers what a planner should have ready before asking for a quote: quantity, texts, design, a timeline by type of piece, digital proof, the deadline to lock the order and delivery.",
     sections: [
       {
         heading: "Planner checklist for ordering custom event favors",
@@ -5464,6 +5465,30 @@ export const blogPostsEn: BlogPost[] = [
         ],
       },
       {
+        heading: "Timeline: what to order first and what waits for the final count",
+        body: [
+          "Order the generic pieces first, the ones without guest names, and leave for last the pieces that depend on the final count and the seating chart. As a general reference, Paperlust proposes an order by weeks before the event. It is a US stationery blog, so use it as a guide, not a rule.",
+          "Paperlust suggests ordering menus 8 to 10 weeks before the event, ceremony programs and signs 6 to 8 weeks before, and place cards and table numbers 4 to 6 weeks before. All of them are used on the day of the event. It also proposes closing RSVPs 4 to 6 weeks before.",
+          "Yume's own lead times are the ones that apply to your order: confirm them with us when you request a quote on WhatsApp. For menus, see [custom wedding menus](/en/blog/custom-wedding-menus). For invitations, read [how to order event invitations](/en/blog/how-to-order-custom-event-invitations). For keepsakes, see [when to order wedding favors](/en/blog/when-to-order-wedding-favors).",
+        ],
+        table: {
+          headers: ["Piece", "Paperlust reference"],
+          rows: [
+            ["Menus", "8 to 10 weeks before"],
+            ["Ceremony programs and signs", "6 to 8 weeks before"],
+            ["Place cards and table numbers", "4 to 6 weeks before"],
+            ["RSVP deadline", "4 to 6 weeks before"],
+          ],
+        },
+      },
+      {
+        heading: "Generic pieces and named pieces: how to split them",
+        body: [
+          "Split your order into two groups. Generic pieces, like signs, can be ordered early. Pieces with names, like place cards, depend on the final count and the seating chart. Paperlust notes that caterers usually ask for the confirmed guest count 2 to 4 weeks before the event.",
+          "Paperlust recommends closing the seating chart before ordering place cards. For a wedding, see [how many candy boxes to order for a wedding](/en/blog/how-many-candy-boxes-to-order-for-a-wedding) to work out the quantity from your count.",
+        ],
+      },
+      {
         heading: "Texts, names and who approves them",
         body: [
           "Hand the supplier the final texts already written: names, date, phrase and any detail that will be printed, with exact spelling. Name one person to approve them, either your client or you. That way the digital proof is reviewed once and not corrected with different versions from several people.",
@@ -5481,6 +5506,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "Digital proof and the deadline to lock the quantity",
         body: [
           "Before production we send a digital proof, and nothing is produced until you approve it. Decide who approves it and ask the supplier until when you can change the quantity and what can be adjusted after approval. Those rules depend on each supplier, so keep them in writing.",
+          "As a reference, Paperlust says its digital proof arrives in 1 to 2 business days, with two rounds of edits included, and estimates 4 to 6 weeks from brief to delivery.",
           "To see how the review works step by step, read about the [digital proof for planners](/en/blog/digital-proof-event-order-planners).",
         ],
       },
@@ -5488,16 +5514,21 @@ export const blogPostsEn: BlogPost[] = [
         heading: "Delivery and direct contact",
         body: [
           "Tell the supplier where and when you need the pieces: the event date is not the delivery date. Give the city and address, and whether you receive them in Guadalajara or in another city in the country. Leave a direct WhatsApp contact, of whoever decides, to settle questions on the spot.",
+          "As a reference, Paperlust recommends delivering the stationery to the event venue during the last week.",
           "If you organize events often, visit the [page for planners](/en/planners) and request a quote on WhatsApp with your details at hand.",
         ],
       },
     ],
     relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["guide-for-planners-working-with-custom-favors-supplier", "digital-proof-event-order-planners", "how-many-party-favors-to-order-per-event"],
+    relatedBlogSlugs: ["guide-for-planners-working-with-custom-favors-supplier", "digital-proof-event-order-planners", "how-many-party-favors-to-order-per-event", "when-to-order-wedding-favors"],
     sources: [
       {
         label: "Zola: Should you buy extra wedding favors?",
         url: "https://www.zola.com/expert-advice/should-you-buy-extra-wedding-favors",
+      },
+      {
+        label: "Paperlust: Wedding planning checklist",
+        url: "https://paperlust.co/blog/wedding-planning-checklist/",
       },
     ],
     faq: [
@@ -5512,6 +5543,10 @@ export const blogPostsEn: BlogPost[] = [
       {
         q: "Do you quote per event?",
         a: "Yes, we quote per event, with the number of pieces you need. Message us on WhatsApp.",
+      },
+      {
+        q: "How long does the digital proof take for vinyl stickers?",
+        a: "The digital proof usually arrives within 24 hours after payment and includes up to 2 rounds of adjustments. We print nothing without your approval.",
       },
     ],
   },

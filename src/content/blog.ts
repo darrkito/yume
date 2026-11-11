@@ -6612,8 +6612,9 @@ export const blogPosts: BlogPost[] = [
       "Checklist para planners: los datos que un proveedor necesita para cotizar y producir los detalles personalizados de tu evento.",
     category: "Guías",
     publishedAt: "2026-11-10",
+    modifiedAt: "2026-11-11",
     intro:
-      "Un pedido de detalles personalizados avanza más rápido cuando el proveedor tiene todos los datos desde el inicio. Esta checklist reúne lo que conviene tener listo como planner antes de pedir una cotización: cantidad, textos, diseño, prueba digital, fecha de cierre y entrega.",
+      "Un pedido de detalles personalizados avanza más rápido cuando el proveedor tiene todos los datos desde el inicio. Esta checklist reúne lo que conviene tener listo como planner antes de pedir una cotización: cantidad, textos, diseño, cronograma por tipo de pieza, prueba digital, fecha de cierre y entrega.",
     sections: [
       {
         heading: "Checklist de planner para pedir detalles personalizados de un evento",
@@ -6644,6 +6645,30 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
+        heading: "Cronograma: qué pedir primero y qué esperar al conteo final",
+        body: [
+          "Pide primero las piezas genéricas, las que no llevan nombres de invitados, y deja para el final las que dependen del conteo y del plano de mesas. Como referencia general, Paperlust propone un orden por semanas antes del evento. Es un blog de papelería de Estados Unidos, así que úsalo como guía y no como regla.",
+          "Paperlust sugiere pedir los menús 8 a 10 semanas antes del evento, los programas de ceremonia y los letreros 6 a 8 semanas antes, y las tarjetas de lugar y los números de mesa 4 a 6 semanas antes. Todas se usan el día del evento. También propone cerrar el RSVP 4 a 6 semanas antes.",
+          "Los plazos propios de Yume son los que valen para tu pedido: confírmalos con nosotros al cotizar por WhatsApp. Para menús, revisa el [menú de boda personalizado](/blog/menu-de-boda-personalizado). Para invitaciones, lee [cómo pedir invitaciones](/blog/como-pedir-invitaciones-personalizadas-para-eventos). Para recuerdos, consulta [cuándo pedir souvenirs de boda](/blog/cuando-pedir-souvenirs-de-boda).",
+        ],
+        table: {
+          headers: ["Pieza", "Referencia de Paperlust"],
+          rows: [
+            ["Menús", "8 a 10 semanas antes"],
+            ["Programas de ceremonia y letreros", "6 a 8 semanas antes"],
+            ["Tarjetas de lugar y números de mesa", "4 a 6 semanas antes"],
+            ["Cierre de RSVP", "4 a 6 semanas antes"],
+          ],
+        },
+      },
+      {
+        heading: "Piezas genéricas y piezas con nombre: cómo separarlas",
+        body: [
+          "Separa tu pedido en dos grupos. Las piezas genéricas, como los letreros, se pueden pedir con anticipación. Las piezas con nombres, como las tarjetas de lugar, dependen del conteo final y del plano de mesas. Paperlust indica que el catering suele pedir el número confirmado de invitados 2 a 4 semanas antes.",
+          "Paperlust recomienda cerrar el plano de mesas antes de pedir las tarjetas de lugar. Si tu evento es una boda, revisa [cuántos dulceros pedir para una boda](/blog/cuantos-dulceros-pedir-para-una-boda) y calcula la cantidad con tu conteo.",
+        ],
+      },
+      {
         heading: "Textos, nombres y quién los aprueba",
         body: [
           "Entrega al proveedor los textos finales ya escritos: nombres, fecha, frase y cualquier dato que irá impreso, con la ortografía exacta. Designa a una sola persona que los apruebe, sea tu clienta o tú. Así la prueba digital se revisa una vez y no se corrige con versiones distintas de varias personas.",
@@ -6661,6 +6686,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Prueba digital y fecha para cerrar la cantidad",
         body: [
           "Antes de producir te enviamos una prueba digital, y nada se produce hasta que la apruebas. Define quién la aprueba y pregunta al proveedor hasta cuándo puedes cambiar la cantidad y qué se puede ajustar después de aprobarla. Esas reglas dependen de cada proveedor y conviene tenerlas por escrito.",
+          "Como referencia, Paperlust indica que su prueba digital llega en 1 a 2 días hábiles, con dos rondas de ediciones incluidas, y calcula 4 a 6 semanas desde el brief hasta la entrega.",
           "Para ver cómo funciona la revisión paso a paso, consulta la [prueba digital para planners](/blog/prueba-digital-pedido-evento-planners).",
         ],
       },
@@ -6668,16 +6694,21 @@ export const blogPosts: BlogPost[] = [
         heading: "Entrega y contacto directo",
         body: [
           "Dile al proveedor dónde y cuándo necesitas recibir las piezas: la fecha del evento no es la fecha de entrega. Indica ciudad y dirección, y si lo recibes en Guadalajara o en otra ciudad del país. Deja un contacto directo por WhatsApp, de quien decide, para resolver dudas en el momento.",
+          "Como referencia, Paperlust recomienda entregar la papelería en el lugar del evento durante la última semana.",
           "Si organizas eventos con frecuencia, visita la [página para planners](/planners) y cotiza por WhatsApp con tus datos a la mano.",
         ],
       },
     ],
     relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["guia-planners-proveedor-detalles-personalizados", "prueba-digital-pedido-evento-planners", "cuantos-souvenirs-pedir-por-evento"],
+    relatedBlogSlugs: ["guia-planners-proveedor-detalles-personalizados", "prueba-digital-pedido-evento-planners", "cuantos-souvenirs-pedir-por-evento", "cuando-pedir-souvenirs-de-boda"],
     sources: [
       {
         label: "Zola: ¿Debes comprar detalles de boda extra? (Should you buy extra wedding favors)",
         url: "https://www.zola.com/expert-advice/should-you-buy-extra-wedding-favors",
+      },
+      {
+        label: "Paperlust: Wedding planning checklist",
+        url: "https://paperlust.co/blog/wedding-planning-checklist/",
       },
     ],
     faq: [
@@ -6692,6 +6723,10 @@ export const blogPosts: BlogPost[] = [
       {
         q: "¿Cotizan por evento?",
         a: "Sí, cotizamos por evento, con el número de piezas que necesites. Escríbenos por WhatsApp.",
+      },
+      {
+        q: "¿Cuánto tarda la prueba digital en los stickers de vinil?",
+        a: "La prueba digital llega normalmente en un máximo de 24 horas después de tu pago e incluye hasta 2 rondas de ajustes. No imprimimos nada sin tu aprobación.",
       },
     ],
   },
