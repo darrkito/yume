@@ -90,6 +90,7 @@ export const BLOG_SLUG_EN: Record<string, string> = {
   "cuando-pedir-souvenirs-de-boda": "when-to-order-wedding-favors",
   "presupuesto-recuerdos-de-boda-por-invitado": "wedding-favor-budget-per-guest",
   "checklist-planners-pedido-detalles-evento": "planner-checklist-custom-favors-order-event",
+  "detalles-evento-con-clientes-personalizados": "custom-details-for-client-events",
 };
 
 export const PRODUCT_SLUG_ES: Record<string, string> = Object.fromEntries(

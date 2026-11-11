@@ -5515,6 +5515,99 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "custom-details-for-client-events",
+    title: "Custom details for a client event",
+    description:
+      "Custom details for a client event: what to hand out by event type and a simple rule to work out how many to order.",
+    category: "Guides",
+    publishedAt: "2026-11-11",
+    intro:
+      "A client event is a chance to say thank you, and a detail with your logo or company name helps the event look planned. This guide helps you choose the detail by event type, work out how many to order and decide how to hand it out.",
+    sections: [
+      {
+        heading: "Custom details for a client event: what to choose",
+        body: [
+          "For a client event, choose a detail that works as a thank-you gesture, with your company's logo or name, and not as a hook to get people to attend. Pick the piece by event type: launch, anniversary with clients, dinner or open house.",
+          "For a launch or a dinner you can use [personalized party favor boxes](/en/products/personalized-party-favor-boxes), which arrive assembled and empty so you choose what goes inside. If you prefer something lighter, [custom logo stickers](/en/products/custom-logo-stickers) also work. For other cases, see [corporate event favor boxes](/en/blog/corporate-event-favor-boxes-with-logo) and [company anniversary custom details](/en/blog/company-anniversary-custom-details).",
+          "If you need variants within the same event, message us on WhatsApp and we will review it with you.",
+        ],
+        table: {
+          headers: ["Event type", "Possible detail", "How to hand it out"],
+          rows: [
+            ["Launch", "Personalized favor box with your logo", "At the exit or at the check-in table"],
+            ["Anniversary with clients", "Favor box with the anniversary theme and your logo", "At each seat, with a card"],
+            ["Dinner", "Favor box with your company name", "On the table"],
+            ["Open house", "Stickers with your logo", "At the exit"],
+          ],
+        },
+      },
+      {
+        heading: "How many custom details to order for a client event",
+        body: [
+          "A practical rule: order for the confirmed guests plus a few extra pieces for surprise guests, sponsors and your team. This is our own rule, not a figure from any source. Do not subtract the expected no-show: it tells you how many pieces will likely be left over, because it varies a lot between events.",
+          "The Pheedloop report on more than 1,070 in-person events with check-in gives a median no-show of about 20% and an average of 29%. In free events the median rises to about 28%, versus about 17% in paid ones. An invitation-only event is usually free for the guest.",
+          "With small groups, absence weighs more. The report does not say how many events fall in each size range, so treat it as guidance.",
+          "Example with the 32% median for 10 to 49 expected guests: with 40 confirmed, about 27 people would arrive and about 13 pieces would be left over if you order for all 40. It is only a calculation example, not a prediction.",
+          "This data comes from general in-person events, not from Mexico or corporate gifts. No-show is calculated as 1 minus check-ins divided by expected, and it includes speakers and unregistered people. Use it as a reference and rely on the history of your own events.",
+          "For personalized favor boxes the minimum order is 10 pieces, so you can adjust the quantity to the number you need.",
+        ],
+        table: {
+          headers: ["Expected guests", "Median no-show"],
+          rows: [
+            ["10 to 49", "~32%"],
+            ["50 to 149", "~23%"],
+            ["150 to 499", "~19%"],
+            ["500 to 999", "~18%"],
+            ["1,000 or more", "~19%"],
+          ],
+        },
+      },
+      {
+        heading: "How to hand out the detail without waste",
+        body: [
+          "There are three ways to hand out the detail: at each guest's seat, at the exit or together with a personalized card. Each one changes how many pieces get used. At the seat, pieces are set out even if someone does not show; at the exit they go only to those who attended, so spare pieces are kept.",
+          "To work out quantities by event type, see [how many party favors to order](/en/blog/how-many-party-favors-to-order-per-event).",
+        ],
+      },
+      {
+        heading: "When to lock the quantity and approve the design",
+        body: [
+          "Close the quantity first with your confirmed guest list, then approve the design. We send a digital proof before producing, and nothing is produced until you approve it. If your event has a fixed date, message us on WhatsApp with it so we can review timing before you decide.",
+          "To see how the process works for events, read about the [digital proof for events](/en/blog/digital-proof-event-order-planners).",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["dulceros-personalizados", "stickers-logo-personalizado"],
+    relatedBlogSlugs: [
+      "how-many-party-favors-to-order-per-event",
+      "company-anniversary-custom-details",
+      "personalized-company-posada-favors",
+      "corporate-event-favor-boxes-with-logo",
+      "digital-proof-event-order-planners",
+    ],
+    sources: [
+      { label: "Pheedloop: Event Data Lab Report 5 (no-show at in-person events)", url: "https://pheedloop.com/blog/event-data-lab-report-5" },
+    ],
+    faq: [
+      {
+        q: "Do the favor boxes come with candy?",
+        a: "No. The favor box arrives assembled and empty, ready to fill with whatever you choose.",
+      },
+      {
+        q: "Can I add my company logo?",
+        a: "Yes. Personalization includes the name and the theme you choose, including your brand logo. We send a digital proof before producing.",
+      },
+      {
+        q: "What is the minimum order for personalized favor boxes?",
+        a: "The minimum order is 10 pieces.",
+      },
+      {
+        q: "Are the no-show figures from Mexico?",
+        a: "No. They come from a Pheedloop report on general in-person events, not from Mexico or corporate gifts. Use them only as a reference.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPostEn(slug: string) {

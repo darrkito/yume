@@ -6695,6 +6695,99 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "detalles-evento-con-clientes-personalizados",
+    title: "Detalles personalizados para evento con clientes",
+    description:
+      "Detalles personalizados para evento con clientes: qué entregar según el tipo de evento y una regla para calcular cuántos pedir.",
+    category: "Guías",
+    publishedAt: "2026-11-11",
+    intro:
+      "Un evento con clientes es una ocasión para agradecer, y un detalle con tu logo o el nombre de tu empresa ayuda a que el evento se vea planeado. Esta guía te ayuda a elegir el detalle según el tipo de evento, a calcular cuántos pedir y a decidir cómo entregarlo.",
+    sections: [
+      {
+        heading: "Detalles personalizados para evento con clientes: qué elegir",
+        body: [
+          "Para un evento con clientes conviene un detalle que funcione como gesto de agradecimiento, con tu logo o el nombre de tu empresa, y no como gancho para que asistan. Elige la pieza según el tipo de evento: lanzamiento, aniversario con clientes, cena u open house.",
+          "Para un lanzamiento o una cena puedes usar [dulceros personalizados](/productos/dulceros-personalizados), que llegan armados y vacíos para que tú elijas qué llevan dentro. Si prefieres un detalle más ligero, [stickers con tu logo](/productos/stickers-logo-personalizado) también funcionan. Para ver otros casos, revisa [dulceros para eventos empresariales](/blog/dulceros-para-eventos-empresariales) y [detalles para aniversario de empresa](/blog/aniversario-empresa-detalles-personalizados).",
+          "Si necesitas variantes dentro del mismo evento, escríbenos por WhatsApp y lo revisamos contigo.",
+        ],
+        table: {
+          headers: ["Tipo de evento", "Detalle posible", "Cómo entregarlo"],
+          rows: [
+            ["Lanzamiento", "Dulcero personalizado con tu logo", "A la salida o en la mesa de registro"],
+            ["Aniversario con clientes", "Dulcero con la temática del aniversario y tu logo", "En cada lugar, con una tarjeta"],
+            ["Cena", "Dulcero con el nombre de tu empresa", "En la mesa"],
+            ["Open house", "Stickers con tu logo", "A la salida"],
+          ],
+        },
+      },
+      {
+        heading: "Cuántos detalles pedir para un evento con clientes",
+        body: [
+          "Una regla práctica: pide los confirmados más unas piezas extra para invitados sorpresa, patrocinadores y tu equipo. Es una regla propia, no una cifra de ninguna fuente. La ausencia esperada no se resta: te dice cuántas piezas probablemente sobren, porque varía mucho de un evento a otro.",
+          "El informe de Pheedloop sobre más de 1,070 eventos presenciales con check-in da una mediana de no-show de alrededor de 20 % y una media de 29 %. En eventos gratuitos la mediana sube a cerca de 28 %, frente a cerca de 17 % en los de pago. Un evento por invitación suele ser gratuito para el invitado.",
+          "Con grupos pequeños la ausencia pesa más. El informe no da cuántos eventos hay en cada rango de tamaño, así que tómalo como orientación.",
+          "Ejemplo con la mediana de 32 % para 10 a 49 esperados: con 40 confirmados, llegarían alrededor de 27 personas y sobrarían unas 13 piezas si pides para los 40. Es solo un ejemplo de cálculo, no una predicción.",
+          "Estos datos son de eventos presenciales generales, no de México ni de regalos corporativos. El no-show se calcula como 1 menos check-ins entre esperados, e incluye ponentes y personas no registradas. Úsalos como referencia y apóyate en el historial de tus propios eventos.",
+          "En dulceros personalizados el pedido mínimo es de 10 piezas, así que puedes ajustar la cantidad al número que necesitas.",
+        ],
+        table: {
+          headers: ["Invitados esperados", "Mediana de no-show"],
+          rows: [
+            ["10 a 49", "~32 %"],
+            ["50 a 149", "~23 %"],
+            ["150 a 499", "~19 %"],
+            ["500 a 999", "~18 %"],
+            ["1,000 o más", "~19 %"],
+          ],
+        },
+      },
+      {
+        heading: "Cómo repartir el detalle sin desperdiciar",
+        body: [
+          "Hay tres formas de entregar el detalle: en la mesa de cada invitado, a la salida o junto con una tarjeta personalizada. Cada una cambia cuántas piezas se usan. En la mesa se reparten todas aunque alguien no llegue; a la salida solo se entregan a quienes asistieron, así que las piezas sobrantes se conservan.",
+          "Para calcular la cantidad por tipo de evento, revisa [cuántos souvenirs pedir por evento](/blog/cuantos-souvenirs-pedir-por-evento).",
+        ],
+      },
+      {
+        heading: "Cuándo cerrar la cantidad y aprobar el diseño",
+        body: [
+          "Cierra primero la cantidad con la lista de confirmados y después aprueba el diseño. Te enviamos una prueba digital antes de producir, y nada se produce hasta que la apruebas. Si tu evento tiene fecha fija, pídenos cotizar por WhatsApp con tu fecha para revisar los tiempos antes de decidir.",
+          "Si quieres ver cómo funciona el proceso en eventos, lee sobre la [prueba digital para eventos](/blog/prueba-digital-pedido-evento-planners).",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["dulceros-personalizados", "stickers-logo-personalizado"],
+    relatedBlogSlugs: [
+      "cuantos-souvenirs-pedir-por-evento",
+      "aniversario-empresa-detalles-personalizados",
+      "detalles-posada-empresa-personalizados",
+      "dulceros-para-eventos-empresariales",
+      "prueba-digital-pedido-evento-planners",
+    ],
+    sources: [
+      { label: "Pheedloop: Event Data Lab Report 5 (no-show en eventos presenciales)", url: "https://pheedloop.com/blog/event-data-lab-report-5" },
+    ],
+    faq: [
+      {
+        q: "¿Los dulceros incluyen dulces?",
+        a: "No. El dulcero llega armado y vacío, listo para llenar con lo que tú elijas.",
+      },
+      {
+        q: "¿Puedo poner el logo de mi empresa?",
+        a: "Sí. La personalización incluye el nombre y la temática que elijas, incluido el logo de tu marca. Te mandamos una prueba digital antes de producir.",
+      },
+      {
+        q: "¿Cuál es el pedido mínimo de dulceros personalizados?",
+        a: "El pedido mínimo es de 10 piezas.",
+      },
+      {
+        q: "¿Las cifras de no-show son de México?",
+        a: "No. Vienen de un informe de Pheedloop sobre eventos presenciales generales, no de México ni de regalos corporativos. Úsalas solo como referencia.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string) {
