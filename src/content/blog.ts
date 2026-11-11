@@ -1832,20 +1832,20 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "recetario-medico-con-diseno-vs-sin-diseno",
-    title: "Recetario médico con diseño vs. sin diseño: ¿cuál te conviene?",
-    metaTitle: "Diseño de recetario médico: con o sin diseño",
-    description: `Recetario médico con diseño o sin diseño: qué incluye cada opción, cuánto cuesta ($${recetarioPrice("sin-diseno")} sin diseño, $${recetarioPrice("con-diseno")} con diseño) y cuándo conviene cada una.`,
+    title: "Recetario médico con diseño vs sin diseño: ¿cuál elegir?",
+    metaTitle: "Recetario médico con diseño vs sin diseño",
+    description: `Recetario médico con diseño vs sin diseño: qué incluye cada uno, cuánto cuesta ($${recetarioPrice("sin-diseno")} sin diseño, $${recetarioPrice("con-diseno")} con diseño) y cuál te conviene.`,
     category: "Guías",
     publishedAt: "2026-09-09",
-    modifiedAt: "2026-10-26",
+    modifiedAt: "2026-11-11",
     intro:
-      "Al cotizar el recetario médico personalizado en Yume vas a ver dos opciones con precio distinto: \"sin diseño\" y \"con diseño\". No es solo una diferencia de precio: es una diferencia real en el trabajo que hacemos por ti. Aquí te explicamos qué incluye cada una, qué necesitas tener listo, cómo es el proceso y cuánto tarda, para que elijas la que te conviene sin dar vueltas.",
+      "Al cotizar el recetario médico personalizado en Yume vas a ver dos opciones con precio distinto: \"sin diseño\" y \"con diseño\". No es solo una diferencia de precio: es una diferencia real en el trabajo que hacemos por ti. Aquí comparamos el recetario médico con diseño vs sin diseño: qué incluye cada opción, qué necesitas tener listo, cómo es el proceso y cuánto tarda, para que elijas la que te conviene sin dar vueltas.",
     sections: [
       {
-        heading: "Qué incluye cada opción",
+        heading: "Recetario médico con diseño vs sin diseño: qué incluye cada opción",
         body: [
-          `"Sin diseño" ($${recetarioPrice("sin-diseno")}) es para cuando ya tienes el membrete armado (un archivo editable con tu logo, tus datos y el layout que quieres) y solo necesitas que lo imprimamos en las 100 hojas Media Carta con papel Bond 90 gr.`,
-          `"Con diseño" ($${recetarioPrice("con-diseno")}) incluye que diseñemos el membrete contigo desde cero: nos das tus datos (nombre, cédula profesional, especialidad, dirección del consultorio) y armamos una propuesta visual, que ajustamos contigo hasta que quede como quieres, antes de imprimir.`,
+          `La opción sin diseño ($${recetarioPrice("sin-diseno")}) es para quien ya tiene su membrete en un archivo editable y solo necesita imprimirlo. La opción con diseño ($${recetarioPrice("con-diseno")}) incluye que armemos el membrete contigo desde cero. En ambos casos recibes un recetario de 100 hojas Media Carta en papel Bond 90 gr, con prueba digital antes de imprimir.`,
+          `Para la opción con diseño nos das tus datos (nombre, cédula profesional, especialidad, dirección del consultorio) y armamos una propuesta visual que ajustamos contigo hasta que quede como quieres, antes de imprimir.`,
           `La diferencia de precio entre una y otra es de $${recetarioPrice("con-diseno") - recetarioPrice("sin-diseno")}: es lo que cuesta que alguien arme y afine el diseño de tu membrete en lugar de que tú lo traigas resuelto.`,
         ],
         table: {
@@ -1860,28 +1860,28 @@ export const blogPosts: BlogPost[] = [
         },
       },
       {
-        heading: "Cuándo conviene cada una",
+        heading: "Cuándo conviene el recetario con diseño y cuándo sin diseño",
         body: [
-          "Elige \"sin diseño\" si ya tienes tu membrete en un archivo editable y solo necesitas imprimirlo; elige \"con diseño\" si es tu primer recetario personalizado, si el que tenías se ve anticuado o si no tienes el archivo a la mano. La decisión depende de qué tan resuelto esté tu membrete hoy, no del tamaño de tu consultorio.",
-          "Si ya trabajaste tu membrete con un diseñador o lo tienes de una imprenta anterior en formato editable, \"sin diseño\" es la opción más rápida y económica: nosotros solo producimos lo que ya tienes resuelto.",
-          "Si es tu primer recetario personalizado, si el que tenías se ve anticuado, o simplemente no tienes el archivo editable a la mano, \"con diseño\" te ahorra tener que resolver esa parte por tu cuenta o contratar a alguien más antes de poder imprimir.",
-          "Un caso intermedio: tienes tu logo pero no el membrete completo armado. Ahí también conviene \"con diseño\", porque el trabajo está en acomodar tu logo y tus datos en la hoja, no solo en imprimirlos.",
+          `Elige "sin diseño" si ya tienes tu membrete en un archivo editable y solo necesitas imprimirlo; elige "con diseño" si es tu primer recetario personalizado, si el que tenías se ve anticuado o si no tienes el archivo a la mano. La decisión depende de qué tan resuelto esté tu membrete hoy, no del tamaño de tu consultorio.`,
+          `Si ya trabajaste tu membrete con un diseñador o lo tienes de una imprenta anterior en formato editable, "sin diseño" es la opción más rápida y económica: nosotros solo producimos lo que ya tienes resuelto.`,
+          `Si es tu primer recetario personalizado, si el que tenías se ve anticuado, o simplemente no tienes el archivo editable a la mano, "con diseño" te ahorra tener que resolver esa parte por tu cuenta o contratar a alguien más antes de poder imprimir.`,
+          `Un caso intermedio: tienes tu logo pero no el membrete completo armado. Ahí también conviene "con diseño", porque el trabajo está en acomodar tu logo y tus datos en la hoja, no solo en imprimirlos.`,
         ],
       },
       {
         heading: "Qué necesitas tener listo para empezar",
         body: [
-          "Para \"sin diseño\" necesitas tu membrete en un archivo editable; para \"con diseño\" solo necesitas tus datos profesionales y, si lo tienes, tu logo. En ambos casos conviene revisar tus datos antes de cotizar, porque son lo que va a quedar impreso en las 100 hojas.",
-          "Los datos que normalmente van en el membrete son tu nombre completo, especialidad, número de cédula profesional (y cédula de especialidad si aplica), dirección del consultorio, teléfono y, si quieres, horario de consulta. Si tienes dudas sobre qué incluir, revisa nuestra guía sobre qué datos lleva una receta médica en México.",
-          "Si trabajas en más de un consultorio, dilo desde la cotización: lo más limpio suele ser un membrete por ubicación. Cuéntanos cuántos necesitas por WhatsApp y lo cotizamos contigo.",
+          `Para "sin diseño" necesitas tu membrete en un archivo editable; para "con diseño" solo necesitas tus datos profesionales y, si lo tienes, tu logo. En ambos casos conviene revisar tus datos antes de cotizar, porque son lo que va a quedar impreso en las 100 hojas.`,
+          `Los datos que normalmente van en el membrete son tu nombre completo, especialidad, número de cédula profesional (y cédula de especialidad si aplica), dirección del consultorio, teléfono y, si quieres, horario de consulta. Si tienes dudas sobre qué incluir, revisa [qué datos lleva una receta médica en México](/blog/datos-obligatorios-receta-medica-mexico).`,
+          `Si trabajas en más de un consultorio, dilo desde la cotización: lo más limpio suele ser un membrete por ubicación. Cuéntanos cuántos necesitas por WhatsApp y lo cotizamos contigo.`,
         ],
       },
       {
         heading: "El proceso es el mismo en ambos casos",
         body: [
-          "Elijas la opción que elijas, el paso de aprobación es igual: antes de mandar a producción te enviamos una prueba digital del membrete final. Nada se imprime hasta que tú la apruebas, así confirmas que la cédula, el teléfono y el resto de tus datos estén correctos.",
-          "Puedes cambiar de opción durante la cotización si al ver el proceso decides que prefieres que lo diseñemos nosotros: solo dínoslo por WhatsApp antes de aprobar la prueba digital.",
-          "Revisa la prueba con calma y dato por dato: la cédula, el número telefónico y la dirección son los que más importa que salgan exactos, porque después de la aprobación se manda a producción.",
+          `Elijas la opción que elijas, el paso de aprobación es igual: antes de mandar a producción te enviamos una prueba digital del membrete final. Nada se imprime hasta que tú la apruebas, así confirmas que la cédula, el teléfono y el resto de tus datos estén correctos.`,
+          `Puedes cambiar de opción durante la cotización si al ver el proceso decides que prefieres que lo diseñemos nosotros: solo dínoslo por WhatsApp antes de aprobar la prueba digital.`,
+          `Revisa la prueba con calma y dato por dato: la cédula, el número telefónico y la dirección son los que más importa que salgan exactos, porque después de la aprobación se manda a producción.`,
         ],
       },
       {
@@ -1894,9 +1894,16 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Cómo decidir en un minuto",
         body: [
-          "Hazte tres preguntas: ¿tengo mi membrete en un archivo que pueda editar?, ¿me gusta cómo se ve?, ¿tengo todos mis datos a la mano? Si respondes sí a las tres, \"sin diseño\" es suficiente. Si alguna respuesta es no, \"con diseño\" te resuelve ese pendiente dentro del mismo pedido.",
-          "Y si ya tienes el recetario resuelto, el mismo membrete te sirve de base para otras piezas del consultorio, como tus tarjetas de presentación, sin empezar de cero cada vez.",
-          "Si no estás seguro, escríbenos por WhatsApp con tu archivo o tu logo y te decimos cuál opción aplica a tu caso antes de que pagues.",
+          `Hazte tres preguntas: ¿tengo mi membrete en un archivo que pueda editar?, ¿me gusta cómo se ve?, ¿tengo todos mis datos a la mano? Si respondes sí a las tres, "sin diseño" es suficiente. Si alguna respuesta es no, "con diseño" te resuelve ese pendiente dentro del mismo pedido.`,
+          `Y si ya tienes el recetario resuelto, el mismo membrete te sirve de base para otras piezas del consultorio, como tus [tarjetas de presentación para consultorio](/blog/tarjetas-de-presentacion-consultorio), sin empezar de cero cada vez.`,
+          `Si no estás seguro, escríbenos por WhatsApp con tu archivo o tu logo y te decimos cuál opción aplica a tu caso antes de que pagues. Cuando estés listo, elige tu opción en el [recetario médico personalizado](/productos/recetario-medico-personalizado).`,
+        ],
+      },
+      {
+        heading: "Más guías para tu recetario médico personalizado",
+        body: [
+          `Si todavía comparas opciones para tu consultorio, estas guías te ayudan a decidir antes de pagar: ve el [recetario médico personalizado](/productos/recetario-medico-personalizado) con su precio y opciones, compara [recetario impreso vs digital](/blog/recetario-medico-impreso-vs-digital) y revisa cómo [Yume se compara con otras imprentas de recetarios](/blog/yume-vs-imprentas-recetarios-medicos).`,
+          `Si tu consultorio está en Guadalajara, también tienes la guía de [recetarios médicos personalizados en Guadalajara](/blog/recetarios-medicos-personalizados-guadalajara).`,
         ],
       },
     ],
@@ -1920,6 +1927,10 @@ export const blogPosts: BlogPost[] = [
       {
         q: "¿Puedo cambiar de sin diseño a con diseño?",
         a: "Sí. Avísanos por WhatsApp durante la cotización, antes de aprobar la prueba digital.",
+      },
+      {
+        q: "¿Puedo pedir un membrete distinto para cada consultorio?",
+        a: "Sí. Dilo desde la cotización y cuéntanos por WhatsApp cuántos necesitas: lo más limpio suele ser un membrete por ubicación.",
       },
       {
         q: "¿Cuánto tarda en llegar?",
