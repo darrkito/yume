@@ -3084,22 +3084,22 @@ export const blogPosts: BlogPost[] = [
       "Papelería personalizada vs. plantillas genéricas: qué cambia en una boda, un evento o tu marca y cuándo conviene el diseño a medida.",
     category: "Guías",
     publishedAt: "2026-09-23",
-    modifiedAt: "2026-10-26",
+    modifiedAt: "2026-11-11",
     intro:
-      "Cuando cotizas papelería es fácil toparte con dos tipos de proveedor muy distintos: el que te vende una plantilla genérica ya lista, y el que diseña la pieza a la medida de tu evento o de tu marca. Los dos resuelven \"tener papelería impresa\", pero no resuelven lo mismo. Si estás planeando una boda, un bautizo, unos XV años o un detalle para alguien especial, la diferencia se nota en la mesa. Aquí está lo que cambia entre diseño a medida y plantilla, y cuándo cada opción tiene sentido.",
+      "Cuando cotizas papelería es fácil toparte con dos tipos de proveedor muy distintos: el que te vende una plantilla genérica ya lista, y el que diseña la pieza a la medida de tu evento o de tu marca. Los dos resuelven tener papelería impresa, pero no resuelven lo mismo. Si estás planeando una boda, un bautizo, unos XV años o un detalle para alguien especial, la diferencia se nota en la mesa. Aquí está lo que cambia entre papelería personalizada y plantilla, y cuándo cada opción tiene sentido.",
     sections: [
       {
         heading: "Qué es una plantilla genérica (y por qué es tan barata)",
         body: [
           "Una plantilla genérica es un molde de diseño ya hecho en el que solo cambias un dato, como tu nombre o la fecha, sin tocar la composición. La tipografía, los colores y la distribución los define el proveedor, no tú. Es barata porque el mismo molde se reutiliza para muchos clientes distintos.",
-          "El problema no es que se vea mal, sino que no se ve tuyo: es común encontrarte con otro negocio usando exactamente la misma plantilla, solo con el nombre cambiado. En un evento pasa igual: si tus invitados ya vieron esa misma invitación en otra fiesta, el detalle pierde el efecto de \"esto lo hicieron para nosotros\".",
+          "El problema no es que se vea mal, sino que no se ve tuyo: es común encontrarte con otro negocio usando exactamente la misma plantilla, solo con el nombre cambiado. En un evento pasa igual: si tus invitados ya vieron esa misma invitación en otra fiesta, el detalle pierde el efecto de algo hecho para ustedes.",
         ],
       },
       {
-        heading: "Diseño a medida vs. plantilla: qué cambia para tu marca",
+        heading: "Papelería personalizada vs. plantilla: qué cambia para tu marca",
         body: [
           "Con diseño a medida, la pieza se arma desde cero con tus colores, tu tipografía si ya tienes una y la información real de tu evento, negocio o consultorio. Con plantilla eliges de un catálogo cerrado y solo rellenas campos. La diferencia está en el control: tú decides cómo se ve, no el molde.",
-          "Eso importa más de lo que parece en papelería personalizada: es la pieza que tu invitado, cliente o paciente tiene literalmente en la mano, así que comunica tanto como tu logo en la fachada.",
+          "Eso importa más de lo que parece en papelería personalizada: es la pieza que tu invitado, cliente o paciente tiene literalmente en la mano, así que comunica tanto como tu logo en la fachada. Si es para tu negocio, revisa la guía de [papelería personalizada para negocios](/blog/papeleria-personalizada-para-negocios-jalisco).",
           "La otra diferencia práctica es el proceso: con diseño a medida te mandamos una prueba digital del diseño final antes de imprimir, para que apruebes (o pidas ajustes) antes de que se produzca una sola pieza.",
         ],
         table: {
@@ -3116,7 +3116,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Para bodas y eventos: por qué el detalle a medida sí se nota",
         body: [
           "En un evento, la papelería es lo que tus invitados tocan, leen y a veces se llevan a casa. Cuando el menú, la invitación o el sticker comparten estilo y llevan los nombres reales de la ocasión, el evento se ve planeado. Una plantilla suelta rara vez logra esa coherencia entre piezas.",
-          "En Yume trabajamos por cotización los menús de boda, las invitaciones, los stickers para bodas y eventos, los tatuajes temporales y los dulceros. Si ya tienes paleta de colores o una referencia visual, la usamos de base para que todas las piezas se vean como una sola familia. Si estás armando una boda, empieza por el menú de boda personalizado, que suele ser la pieza que más se luce en la mesa.",
+          "En Yume trabajamos por cotización los menús de boda, las invitaciones, los stickers para bodas y eventos, los tatuajes temporales y los dulceros. Si ya tienes paleta de colores o una referencia visual, la usamos de base para que todas las piezas se vean como una sola familia. Si estás armando una boda, empieza por el [menú de boda personalizado](/blog/menu-de-boda-personalizado), que suele ser la pieza que más se luce en la mesa. También puedes ver cómo [pedir invitaciones personalizadas](/blog/como-pedir-invitaciones-personalizadas-para-eventos) y las ideas de [stickers para bodas](/blog/stickers-para-bodas-eventos-y-fiestas).",
           "Si eres wedding planner o event planner, el flujo es el mismo: nos mandas los datos del evento por WhatsApp, te enviamos la prueba digital y, cuando tu cliente la aprueba, pasa a producción. Así puedes mostrarle el diseño antes de que se imprima una sola pieza.",
         ],
       },
@@ -3132,14 +3132,14 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Yume opera como una imprenta personalizada en Guadalajara, no como una imprenta de plantillas. Cada recetario, etiqueta o pieza de papelería se diseña con los datos reales de quien la pide, pasa por una prueba digital que tú apruebas y se envía a todo México desde Guadalajara.",
           "Si ya tienes un logo o una identidad de marca, la adaptamos directo a la pieza; si no la tienes, la construimos contigo antes de llegar a la prueba digital. En ambos casos, lo que recibes es una pieza que es tuya, no una plantilla con tu nombre encima.",
-          `Para piezas de uso diario, el catálogo tiene precios claros: las primeras 100 piezas de las Etiquetas con tu Logo cuestan $${priceOf("stickers-logo-personalizado", 100)} MXN, y arriba de 100 piezas entras a precio mayoreo. El recetario de 100 hojas cuesta $${recetarioPrice("sin-diseno")} MXN si ya tienes tu diseño y $${recetarioPrice("con-diseno")} MXN si lo diseñamos contigo. Para invitaciones, menús de boda y otras piezas de evento cotizamos por WhatsApp según cantidad y formato.`,
+          `Para piezas de uso diario, el catálogo tiene precios claros: las primeras 100 piezas de las [Etiquetas con tu Logo](/productos/stickers-logo-personalizado) cuestan $${priceOf("stickers-logo-personalizado", 100)} MXN, y arriba de 100 piezas entras a precio mayoreo. El [recetario médico personalizado](/productos/recetario-medico-personalizado) de 100 hojas cuesta $${recetarioPrice("sin-diseno")} MXN si ya tienes tu diseño y $${recetarioPrice("con-diseno")} MXN si lo diseñamos contigo. Para invitaciones, menús de boda y otras piezas de evento cotizamos por WhatsApp según cantidad y formato.`,
         ],
       },
       {
         heading: "Cómo empezar tu pedido a medida",
         body: [
           "Escríbenos por WhatsApp con el tipo de pieza, la cantidad y, si los tienes, tu logo o referencias de estilo. Te mandamos una prueba digital y no se produce nada hasta que la apruebas. Después recibes tu pedido por paquetería o lo recoges en una sucursal Casa Blanca.",
-          `Una vez aprobada la prueba, recoger en Casa Blanca toma ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles y el envío a domicilio ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles. Para un evento con fecha, conviene cotizar con tiempo para que haya margen de ajustes. Para el paso a paso completo, revisa cómo pedir papelería personalizada en línea.`,
+          `Una vez aprobada la prueba, recoger en Casa Blanca toma ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles y el envío a domicilio ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles. Para un evento con fecha, conviene cotizar con tiempo para que haya margen de ajustes. Para el paso a paso completo, revisa cómo [pedir papelería personalizada en línea](/blog/como-pedir-papeleria-personalizada-en-linea).`,
         ],
       },
     ],
