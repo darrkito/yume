@@ -1,6 +1,6 @@
 import { Preference } from "mercadopago";
 import { checkoutBaseUrl, getMpClient, notificationUrl, validateCartItems } from "@/lib/mercadopago";
-import { createPendingOrder, validateCustomer, validateDelivery, validateDesignFileUrls } from "@/lib/orders";
+import { createPendingOrder, validateCustomer, validateDelivery, validateDesignFileUrls, assertPromoUnused } from "@/lib/orders";
 import { deliverySurcharge } from "@/content/shipping";
 
 // Creates the pending order and its Mercado Pago Checkout Pro preference.
@@ -14,6 +14,7 @@ export async function createCheckoutPro(body: Record<string, unknown>): Promise<
   const customer = validateCustomer(body.customer);
   const delivery = validateDelivery(body.delivery);
   const designFileUrls = validateDesignFileUrls(body.designFileUrls);
+  await assertPromoUnused(items);
   const subtotal = items.reduce((sum, item) => sum + item.price * item.qty, 0);
   // Free shipping is judged on the amount actually paid (after any coupon).
   const surcharge = deliverySurcharge(delivery.method, subtotal);

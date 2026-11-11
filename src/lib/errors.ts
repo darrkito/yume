@@ -15,6 +15,8 @@ const EN: [string, string][] = [
   ["El teléfono debe", "The phone number must have 10 digits."],
   ["Elige cómo quieres recibir", "Choose how you want to receive your order (home delivery or pickup)."],
   ["Selecciona una sucursal", "Choose a valid Casa Blanca branch."],
+  ["El cupón ya fue utilizado", "This coupon has already been used."],
+  ["No pudimos validar el cupón", "We couldn't validate the coupon. Try again."],
   ["El cupón no es válido", "This coupon is not valid or has expired."],
   ["Demasiados intentos", "Too many attempts. Wait a minute and try again."],
 ];

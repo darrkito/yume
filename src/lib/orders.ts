@@ -1,5 +1,6 @@
 import { getSupabaseClient } from "@/lib/supabase";
 import type { CheckoutItem } from "@/lib/mercadopago";
+import { activePromo } from "@/lib/promo";
 import { getCasablancaBranch, type DeliveryMethod } from "@/content/shipping";
 import type { OrderStatus } from "@/lib/payment-state";
 
@@ -407,4 +408,19 @@ export async function cleanupOrphanUploads(dryRun = false): Promise<{ checked: n
     if (removeError) throw removeError;
   }
   return { checked: files?.length ?? 0, deleted: orphans.length };
+}
+
+/** Single-use coupons stop working once a paid order has used one. Throws a
+ * Spanish message (localizeError translates it). Items carry the code in
+ * `items[0].promo` (see validateCartItems). */
+export async function assertPromoUnused(items: CheckoutItem[]): Promise<void> {
+  const code = items[0]?.promo;
+  if (!code || !activePromo(code)?.singleUse) return;
+  const { count, error } = await getSupabaseClient()
+    .from("orders")
+    .select("id", { count: "exact", head: true })
+    .eq("status", "paid")
+    .contains("items", JSON.stringify([{ promo: code }]));
+  if (error) throw new Error("No pudimos validar el cupón. Intenta de nuevo.");
+  if (count) throw new Error("El cupón ya fue utilizado.");
 }

@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Payment } from "mercadopago";
 import { getMpClient, notificationUrl, validateCartItems } from "@/lib/mercadopago";
-import { createPendingOrder, validateCustomer, validateDelivery, validateDesignFileUrls } from "@/lib/orders";
+import { createPendingOrder, validateCustomer, validateDelivery, validateDesignFileUrls, assertPromoUnused } from "@/lib/orders";
 import { applyPayment } from "@/lib/payments";
 import { localizeError } from "@/lib/errors";
 import { rateLimited } from "@/lib/rate-limit";
@@ -25,6 +25,7 @@ export async function POST(req: NextRequest) {
     const customer = validateCustomer(body.customer);
     const delivery = validateDelivery(body.delivery);
     const designFileUrls = validateDesignFileUrls(body.designFileUrls);
+    await assertPromoUnused(items);
     const subtotal = items.reduce((sum, item) => sum + item.price * item.qty, 0);
     const total = subtotal + deliverySurcharge(delivery.method, subtotal); // post-coupon amount decides free shipping
     const formData = body.formData ?? {};
