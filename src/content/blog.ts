@@ -1546,15 +1546,15 @@ export const blogPosts: BlogPost[] = [
     title: "Cómo pedir invitaciones personalizadas para eventos",
     metaTitle: "Invitaciones personalizadas para eventos en México",
     description:
-      "Qué datos preparar para cotizar invitaciones personalizadas de boda, XV años o evento, cómo funciona la prueba digital y envíos a todo México desde Guadalajara.",
+      "Cómo pedir invitaciones personalizadas para eventos: datos para cotizar, prueba digital, formato impreso o digital y envíos a todo México.",
     category: "Guías",
     publishedAt: "2026-08-31",
-    modifiedAt: "2026-10-26",
+    modifiedAt: "2026-11-11",
     intro:
       "Ya sea una boda, unos XV años, un baby shower o un evento corporativo, la invitación suele ser lo primero que tus invitados ven del evento: vale la pena que se vea a la altura de lo que estás organizando. La invitación es solo una pieza dentro de la papelería para eventos (junto con menús, tarjetas de mesa o agradecimientos), y así funciona el proceso para pedir invitaciones personalizadas en México desde Yume.",
     sections: [
       {
-        heading: "Qué información necesitamos para cotizar",
+        heading: "Qué información necesitamos para cotizar invitaciones personalizadas",
         body: [
           "Para cotizar tus invitaciones necesitamos cinco datos: el tipo de evento y la fecha, la cantidad de invitaciones, el texto completo (nombres, lugar, horario e indicaciones), una referencia de estilo si la tienes y el formato: impresa, digital o ambas. Con eso armamos la cotización por WhatsApp, aunque todavía no tengas todo definido.",
           "La referencia de estilo puede ser una foto, una paleta de colores, la decoración del salón o una invitación que te gustó. No necesitas llegar con el diseño resuelto: justo para eso sirve la propuesta que te enviamos como prueba digital.",
@@ -1564,13 +1564,13 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Cómo calcular cuántas invitaciones pedir",
         body: [
-          "Cuenta una invitación por hogar o por pareja, no por persona, salvo que quieras una por invitado con su nombre. Suma unas cuantas de reserva para invitados de último momento y para ti y tu familia. Dinos la cifra aproximada y ajustamos la cotización cuando confirmes tu lista.",
+          "Cuenta una invitación por hogar o por pareja, no por persona, salvo que quieras una por invitado con su nombre. Dinos la cifra aproximada de tu lista y armamos la cotización con ese número; la ajustamos cuando confirmes a tus invitados.",
           "Si tu lista todavía cambia, empieza con el número que estimas y avísanos cuando se confirme. Es mejor cotizar con una cifra aproximada que esperar semanas a tener la lista final.",
           "Para invitaciones digitales la cantidad pesa menos, porque el mismo archivo se comparte con todos tus invitados. En ese caso lo importante es cuidar que el texto y el diseño queden bien en la pantalla de un celular.",
         ],
       },
       {
-        heading: "Cómo redactar el texto de tu invitación",
+        heading: "Cómo redactar el texto de tus invitaciones personalizadas",
         body: [
           "Incluye quién invita, qué se celebra, fecha, hora de inicio, lugar con dirección completa y la forma de confirmar asistencia. Si hay código de vestimenta o una indicación especial, añádela en una línea corta. Revisa nombres y números dos veces: un dato equivocado se repite en cada pieza.",
           "Escribe los nombres como quieres que aparezcan, con apellidos, títulos o apodos si es el caso. Para eventos corporativos, confirma la razón social o el nombre comercial tal como lo usa la empresa.",
@@ -1578,52 +1578,52 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "El proceso de diseño y aprobación",
+        heading: "El proceso de diseño y aprobación de la prueba digital",
         body: [
           "Con tus datos armamos una propuesta de diseño y te la enviamos como prueba digital. Puedes pedir ajustes antes de aprobarla, y solo cuando apruebas el diseño final pasa a producción. Corregir un color o un texto en esta etapa es mucho más fácil que después de imprimir.",
-          "Una vez que apruebas, se manda a producción si pediste invitaciones impresas, o te entregamos el archivo final listo para enviar si son digitales o ambas. Nada se imprime sin tu visto bueno.",
+          "Una vez que apruebas, se manda a producción si pediste invitaciones impresas, o te entregamos el archivo final listo para enviar si son digitales o ambas. Nada se imprime sin tu visto bueno. Si quieres ver cómo funciona la revisión con otros pedidos de evento, lee la guía de [prueba digital para planners](/blog/prueba-digital-pedido-evento-planners).",
         ],
       },
       {
-        heading: "Impresa, digital o ambas",
+        heading: "Invitaciones personalizadas impresas, digitales o ambas",
         body: [
           "Puedes pedir invitación impresa, digital para compartir por WhatsApp, o ambas. El proceso de diseño es el mismo y solo cambia el formato final. Por ejemplo, puedes imprimir para tus invitados más cercanos y enviar la versión digital al resto. Dinos qué prefieres y lo cotizamos así.",
           "La impresa es un detalle que tus invitados pueden conservar. La digital se comparte al instante y es útil cuando la lista crece o cambia cerca de la fecha del evento.",
         ],
       },
       {
-        heading: "Que la invitación combine con el resto de tu papelería",
+        heading: "Que tus invitaciones combinen con el resto de tu papelería",
         body: [
-          "La invitación funciona mejor cuando comparte línea de diseño con el resto de los detalles. En Yume también cotizamos menús de boda, stickers para bodas y eventos, dulceros y tatuajes temporales, y se pueden coordinar bajo el mismo estilo para que el evento se vea planeado de principio a fin.",
-          "Si todavía estás decidiendo qué pedir, en las guías relacionadas al final de esta página encuentras cada pieza explicada: el menú de boda personalizado, los stickers para bodas, eventos y fiestas, y los dulceros para eventos sociales.",
+          "La invitación funciona mejor cuando comparte línea de diseño con el resto de los detalles. En Yume también cotizamos [menús de boda](/blog/menu-de-boda-personalizado), [stickers para bodas y eventos](/blog/stickers-para-bodas-eventos-y-fiestas), dulceros y tatuajes temporales, y se pueden coordinar bajo el mismo estilo para que el evento se vea planeado de principio a fin.",
+          "Si necesitas detalles para la mesa, revisa los [dulceros personalizados](/productos/dulceros-personalizados) y los [stickers de vinil](/productos/stickers-vinil-impermeable), o la guía de [tatuajes temporales para bodas y eventos](/blog/tatuajes-temporales-para-boda-eventos-y-fiestas). Para ver también los dulceros en el contexto de una celebración completa, está la guía de [dulceros para eventos sociales](/blog/dulceros-para-eventos-sociales-boda-xv-baby-shower).",
         ],
       },
       {
-        heading: "Si eres planner: invitaciones para tus clientes",
+        heading: "Si eres planner: invitaciones personalizadas para tus clientes",
         body: [
           "Si organizas eventos para otras personas, puedes trabajar con nosotros evento por evento: cada cliente recibe su propia propuesta con prueba digital, y tú la revisas y apruebas con ellos. La atención es directa por WhatsApp, así que dudas y ajustes se resuelven sin intermediarios.",
           "Para cotizar, manda los mismos datos que para cualquier evento: fecha, cantidad, texto, estilo y formato. Si tu cliente ya tiene paleta o referencias de decoración, compártelas desde el primer mensaje para que la propuesta salga alineada.",
         ],
       },
       {
-        heading: "Invitaciones para boda en Guadalajara, envíos a todo México",
+        heading: "Invitaciones personalizadas para boda en Guadalajara y todo México",
         body: [
           "Producimos en Guadalajara y enviamos a todo México, así que puedes pedir invitaciones para una boda en Jalisco o en cualquier otro estado con el mismo proceso de diseño y aprobación de principio a fin. Estar en Guadalajara no es requisito para cotizar con nosotros.",
-          "Si tu boda es en Guadalajara o la zona metropolitana, el proceso es el mismo, con la ventaja de un tiempo de entrega un poco más corto por cercanía. Para cualquier otra ciudad, el envío se coordina al cotizar.",
+          "Si tu boda es en Guadalajara o la zona metropolitana, el proceso es el mismo. Para cualquier otra ciudad, el envío se coordina al cotizar. Si todavía estás decidiendo las fechas, revisa [cuándo enviar invitaciones de boda](/blog/cuando-enviar-invitaciones-de-boda).",
         ],
       },
       {
         heading: "Qué revisar antes de aprobar la prueba digital",
         body: [
-          "Los errores más frecuentes son fechas u horarios equivocados, nombres mal escritos y direcciones incompletas. Antes de aprobar, pide a otra persona que lea la prueba completa y confirma cada dato contra tu fuente: el salón, tu lista de invitados o la información de la empresa.",
+          "Antes de aprobar la prueba, revisa fechas, horarios, nombres y direcciones una por una. Pide a otra persona que lea la prueba completa y confirma cada dato contra tu fuente: el salón, tu lista de invitados o la información de la empresa.",
           "Revisa también cómo se ve el diseño: que el texto se lea con facilidad, que los colores se parezcan a los que tienes en mente y que no falte ninguna indicación importante. Cuando todo esté bien, nos das tu visto bueno y pasamos a producción.",
         ],
       },
       {
-        heading: "Cuándo empezar a cotizar",
+        heading: "Cuándo empezar a cotizar tus invitaciones",
         body: [
-          "Conviene cotizar con tiempo de anticipación al evento: así hay margen para ajustar el diseño sin apurar la producción ni el envío. Si tu evento ya tiene fecha, puedes escribirnos desde ahora aunque todavía no tengas todos los detalles definidos.",
-          "Cuéntanos el tipo de evento, la fecha aproximada y la cantidad que estimas necesitar, y armamos la cotización desde ahí. Los tiempos de producción y entrega se confirman al cotizar, según tu pedido.",
+          "Conviene cotizar con tiempo de anticipación al evento: así hay margen para ajustar el diseño sin apurar la producción ni el envío. Si tu evento ya tiene fecha, puedes escribirnos desde ahora aunque todavía no tengas todos los detalles definidos. Los tiempos de producción y entrega se confirman al cotizar.",
+          "Cuéntanos el tipo de evento, la fecha aproximada y la cantidad que estimas necesitar, y armamos la cotización desde ahí.",
         ],
       },
     ],
@@ -1658,7 +1658,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["menu-de-boda-personalizado", "stickers-para-bodas-eventos-y-fiestas", "dulceros-para-eventos-sociales-boda-xv-baby-shower", "tatuajes-temporales-para-boda-eventos-y-fiestas", "papeleria-personalizada-vs-plantillas-genericas", "como-pedir-papeleria-personalizada-en-linea"],
+    relatedBlogSlugs: ["menu-de-boda-personalizado", "stickers-para-bodas-eventos-y-fiestas", "dulceros-para-eventos-sociales-boda-xv-baby-shower", "tatuajes-temporales-para-boda-eventos-y-fiestas", "papeleria-personalizada-vs-plantillas-genericas", "como-pedir-papeleria-personalizada-en-linea", "prueba-digital-pedido-evento-planners", "cuando-enviar-invitaciones-de-boda"],
     quoteMessage: "Hola, me interesa cotizar invitaciones personalizadas para un evento.",
   },
   {
