@@ -40,6 +40,9 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
   const buyAfterChoice = useRef(false);
   const needsDesign = Boolean(product.requiresImage) && !getDesignFile(product.slug) && !designLater;
   const [variantId, setVariantId] = useState<string | undefined>(defaultVariantId(product));
+  useEffect(() => {
+    window.dispatchEvent(new CustomEvent("yume:variant", { detail: { slug: product.slug, variantId } }));
+  }, [product.slug, variantId]);
   const [units, setUnits] = useState(1);
   const [justAdded, setJustAdded] = useState(false);
   const [showBar, setShowBar] = useState(false);
@@ -48,6 +51,10 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
   const t = UI[lang];
   const translation = lang === "en" ? getProductTranslation(product.slug) : undefined;
 
+  // Products with "-logo" variants get a color picker + a "con tu logo" yes/no.
+  const hasLogoOption = Boolean(product.variants?.some((v) => v.id.endsWith("-logo")));
+  const withLogo = Boolean(variantId?.endsWith("-logo"));
+  const baseColor = (variantId ?? "").replace(/-logo$/, "");
   const price = resolvePrice(product, variantId);
   const label = lang === "en" ? cartItemLabelEn(product, variantId) : cartItemLabel(product, variantId);
   const variantLabel = (variantIdValue: string, fallback: string) =>
@@ -246,7 +253,44 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
         </div>
       )}
 
-      {hasVariants(product) && product.variants!.length <= RADIO_VS_SELECT_THRESHOLD && (
+      {hasLogoOption && (
+        <fieldset className="mt-5">
+          <legend className="text-xs text-ink-soft">{t.chooseOption}</legend>
+          <div className="mt-3 grid grid-cols-2 gap-2">
+            {product.variants!.filter((v) => !v.id.endsWith("-logo")).map((v) => (
+              <button
+                key={v.id}
+                type="button"
+                aria-pressed={baseColor === v.id}
+                onClick={() => setVariantId(withLogo ? `${v.id}-logo` : v.id)}
+                className={`min-h-11 rounded-xl border px-4 py-2.5 text-sm transition-colors ${baseColor === v.id ? "border-brand bg-brand-tint text-ink" : "border-line text-ink-soft hover:border-brand"}`}
+              >
+                {variantLabel(v.id, v.label)}
+              </button>
+            ))}
+          </div>
+          <p className="mt-4 text-xs text-ink-soft">{lang === "en" ? "With your custom logo?" : "¿Con tu logo personalizado?"}</p>
+          <div className="mt-2 grid grid-cols-2 gap-2">
+            {[false, true].map((on) => {
+              const target = on ? `${baseColor}-logo` : baseColor;
+              const extra = product.variants!.find((v) => v.id === target)!.price;
+              return (
+                <button
+                  key={String(on)}
+                  type="button"
+                  aria-pressed={withLogo === on}
+                  onClick={() => setVariantId(target)}
+                  className={`min-h-11 rounded-xl border px-4 py-2.5 text-sm transition-colors ${withLogo === on ? "border-brand bg-brand-tint text-ink" : "border-line text-ink-soft hover:border-brand"}`}
+                >
+                  {on ? (lang === "en" ? "Yes" : "Sí") : "No"} · {formatMXN(extra)} MXN
+                </button>
+              );
+            })}
+          </div>
+        </fieldset>
+      )}
+
+      {!hasLogoOption && hasVariants(product) && product.variants!.length <= RADIO_VS_SELECT_THRESHOLD && (
         <fieldset className="mt-5">
           <legend className="text-xs text-ink-soft">{t.chooseOption}</legend>
           <div className="mt-3 flex flex-col gap-2">

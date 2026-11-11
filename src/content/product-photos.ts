@@ -43,6 +43,26 @@ const STATIC_PHOTOS: Record<string, Record<Lang, ProductPhoto[]>> = {
   },
 };
 
+// Shown instead of the regular photos when the buyer picks "con tu logo".
+const LOGO_PHOTOS: Record<string, Record<Lang, ProductPhoto[]>> = {
+  "placa-resena-google-nfc": {
+    es: [{ src: "/placa-resena-google-nfc-logo.webp", width: 640, height: 960, alt: "Placa para reseñas de Google con NFC y QR personalizada con el logo del negocio" }],
+    en: [{ src: "/placa-resena-google-nfc-logo.webp", width: 640, height: 960, alt: "Google review plate with NFC and QR customized with the business logo" }],
+  },
+  "stand-resena-google-nfc": {
+    es: [
+      { src: "/stand-resena-google-nfc-logo-frente.webp", width: 750, height: 1000, alt: "Stand para reseñas de Google con NFC y QR personalizado con logo, vista de frente" },
+      { src: "/stand-resena-google-nfc-logo-lado.webp", width: 750, height: 1000, alt: "Stand para reseñas de Google con NFC y QR personalizado con logo, vista lateral" },
+    ],
+    en: [
+      { src: "/stand-resena-google-nfc-logo-frente.webp", width: 750, height: 1000, alt: "Google review stand with NFC and QR customized with a logo, front view" },
+      { src: "/stand-resena-google-nfc-logo-lado.webp", width: 750, height: 1000, alt: "Google review stand with NFC and QR customized with a logo, side view" },
+    ],
+  },
+};
+
+export const logoPhotos = (slug: string, lang: Lang): ProductPhoto[] => LOGO_PHOTOS[slug]?.[lang] ?? [];
+
 export function productPhotos(slug: string, lang: Lang): ProductPhoto[] {
   const items = lang === "en" ? getGalleryItemsEn() : galleryItems;
   const fromGallery = (GALLERY_SLUGS[slug] ?? []).flatMap((g) => {

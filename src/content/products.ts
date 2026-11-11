@@ -422,6 +422,7 @@ export const products: Product[] = [
       "Disponible en blanco o negro",
       "12 × 12 cm, 0.2 cm de grosor",
       "También disponible con base para escritorio: ver Stand para Reseñas de Google",
+      "Opcional: con tu logo personalizado por $155 (nos lo envías por WhatsApp)",
     ],
     image: "/placa-resena-google-nfc-colores.webp",
     imageWidth: 781,
@@ -429,6 +430,8 @@ export const products: Product[] = [
     variants: [
       { id: "blanco", label: "Blanco", price: 140, default: true },
       { id: "negro", label: "Negro", price: 140 },
+      { id: "blanco-logo", label: "Blanco con tu logo", price: 155 },
+      { id: "negro-logo", label: "Negro con tu logo", price: 155 },
     ],
     faq: [
       {
@@ -490,6 +493,7 @@ export const products: Product[] = [
       "Disponible en blanco o negro",
       "12.75 cm de alto, 7.6 cm de ancho, base de 5 cm de profundidad",
       "También disponible sin base, con adhesivo: ver Placa para Reseñas de Google",
+      "Opcional: con tu logo personalizado por $215 (nos lo envías por WhatsApp)",
     ],
     // The two-color shot leads; white and black follow as the second and third photos.
     image: "/stand-resena-google-nfc-colores.webp",
@@ -498,6 +502,8 @@ export const products: Product[] = [
     variants: [
       { id: "blanco", label: "Blanco", price: 200, default: true },
       { id: "negro", label: "Negro", price: 200 },
+      { id: "blanco-logo", label: "Blanco con tu logo", price: 215 },
+      { id: "negro-logo", label: "Negro con tu logo", price: 215 },
     ],
     faq: [
       {

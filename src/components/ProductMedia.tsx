@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import type { Product } from "@/content/products";
 import type { ProductPhoto } from "@/content/product-photos";
@@ -11,19 +11,34 @@ import { ProductVisual } from "@/components/ProductVisual";
 export function ProductMedia({
   product,
   photos,
+  logoPhotos = [],
   badge,
   thumbLabel,
 }: {
   product: Product;
   photos: ProductPhoto[];
+  /** Replaces the whole photo set while a "-logo" variant is selected. */
+  logoPhotos?: ProductPhoto[];
   badge?: string;
   thumbLabel: string;
 }) {
   const main: ProductPhoto | undefined = product.image
     ? { src: product.image, width: product.imageWidth ?? 380, height: product.imageHeight ?? 380, alt: product.name }
     : undefined;
-  const all = main ? [main, ...photos] : [];
+  const [logo, setLogo] = useState(false);
   const [active, setActive] = useState(0);
+  // ProductPurchase (a sibling) announces the selected variant.
+  useEffect(() => {
+    const on = (e: Event) => {
+      const d = (e as CustomEvent<{ slug: string; variantId?: string }>).detail;
+      if (d.slug !== product.slug) return;
+      setLogo(Boolean(d.variantId?.endsWith("-logo")) && logoPhotos.length > 0);
+      setActive(0);
+    };
+    window.addEventListener("yume:variant", on);
+    return () => window.removeEventListener("yume:variant", on);
+  }, [product.slug, logoPhotos.length]);
+  const all = logo ? logoPhotos : main ? [main, ...photos] : [];
   // Swipe left/right on the photo to page through them (phones). Only
   // clearly horizontal drags count, so vertical page scroll is untouched.
   const touchStart = useRef<{ x: number; y: number } | null>(null);
@@ -55,7 +70,7 @@ export function ProductMedia({
           </span>
         )}
         <div className="product-zoom-img">
-          <ProductVisual product={product} photo={active > 0 ? all[active] : undefined} />
+          <ProductVisual product={product} photo={logo || active > 0 ? all[active] : undefined} />
         </div>
       </div>
       {all.length > 1 && (

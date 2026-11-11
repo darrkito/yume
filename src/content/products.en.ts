@@ -300,8 +300,9 @@ export const productsEn: Record<string, ProductTranslation> = {
       "Available in white or black",
       "12 × 12 cm, 0.2 cm thick",
       "Also available with a stand: see Google Review Stand",
+      "Optional: with your custom logo for $155 (send it to us over WhatsApp)",
     ],
-    variantLabels: { blanco: "White", negro: "Black" },
+    variantLabels: { blanco: "White", negro: "Black", "blanco-logo": "White with your logo", "negro-logo": "Black with your logo" },
     faq: [
       {
         q: "Do I need to set up the NFC or QR myself?",
@@ -357,8 +358,9 @@ export const productsEn: Record<string, ProductTranslation> = {
       "Available in white or black",
       "12.75 cm tall, 7.6 cm wide, 5 cm base depth",
       "Also available without a stand, with adhesive: see Google Review Plate",
+      "Optional: with your custom logo for $215 (send it to us over WhatsApp)",
     ],
-    variantLabels: { blanco: "White", negro: "Black" },
+    variantLabels: { blanco: "White", negro: "Black", "blanco-logo": "White with your logo", "negro-logo": "Black with your logo" },
     faq: [
       {
         q: "Do I need to set up the NFC or QR myself?",

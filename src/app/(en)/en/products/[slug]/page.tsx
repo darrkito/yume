@@ -8,7 +8,7 @@ import { getProductTranslation } from "@/content/products.en";
 import { SITE } from "@/content/site";
 import { breadcrumbSchema, fitDescription, notFoundMetadata, ogLocale, productPageSchema } from "@/lib/seo";
 import { ProductMedia } from "@/components/ProductMedia";
-import { productPhotos } from "@/content/product-photos";
+import { logoPhotos, productPhotos } from "@/content/product-photos";
 import { ProductPurchase } from "@/components/ProductPurchase";
 import { InfiniteGalleryStrip } from "@/components/InfiniteGalleryStrip";
 import { RelatedProducts } from "@/components/RelatedProducts";
@@ -89,7 +89,7 @@ export default async function ProductPageEn({ params }: { params: Promise<{ slug
 
       <div className="grid gap-8 sm:gap-14 sm:grid-cols-2 sm:items-start">
         <div className="sm:sticky sm:top-24 sm:self-start">
-          <ProductMedia product={product} photos={productPhotos(product.slug, "en")} badge={product.isNew ? "New" : undefined} thumbLabel="Product photos" />
+          <ProductMedia product={product} photos={productPhotos(product.slug, "en")} logoPhotos={logoPhotos(product.slug, "en")} badge={product.isNew ? "New" : undefined} thumbLabel="Product photos" />
         </div>
 
         <div>
