@@ -13,6 +13,7 @@ const EN: [string, string][] = [
   ["Falta nombre, correo", "Name, email and phone are required."],
   ["El correo no es válido", "The email address is not valid."],
   ["El teléfono debe", "The phone number must have 10 digits."],
+  ["Elige cómo quieres recibir", "Choose how you want to receive your order (home delivery or pickup)."],
   ["Selecciona una sucursal", "Choose a valid Casa Blanca branch."],
   ["El cupón no es válido", "This coupon is not valid or has expired."],
   ["Demasiados intentos", "Too many attempts. Wait a minute and try again."],

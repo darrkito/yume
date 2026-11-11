@@ -92,8 +92,8 @@ export function validateDelivery(raw: unknown): DeliveryInfo {
     return { method: "recoleccion_casablanca", shippingAddress: null, casablancaBranch: branchId };
   }
 
-  // Default to national shipping — matches the form's default and keeps
-  // existing callers (that never sent a `delivery` field) working.
+  // No silent default: the shopper (or agent) must explicitly pick a method.
+  if (method !== "envio_nacional") throw new Error("Elige cómo quieres recibir tu pedido (envío a domicilio o recolección).");
   return { method: "envio_nacional", shippingAddress: validateShippingAddress(d?.shippingAddress), casablancaBranch: null };
 }
 
