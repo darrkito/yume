@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { X, ImageUp, CreditCard, Truck, CheckCircle2, Clock, ShieldCheck, MessageCircle } from "lucide-react";
+import { X, ImageUp, ArrowRight, Truck, CheckCircle2, Clock, ShieldCheck, MessageCircle } from "lucide-react";
 import { useCart, type CartItem } from "@/components/CartContext";
 import { PromoField, usePromo } from "@/components/PromoField";
 import { discountedPrice } from "@/lib/promo";
@@ -377,7 +377,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
           href={checkoutHref}
           className="flex w-full items-center justify-center gap-2 rounded-full bg-brand px-8 py-4 text-center text-base font-semibold text-white transition-colors hover:bg-brand-deep active:scale-[0.98] sm:w-auto"
         >
-          <CreditCard size={18} aria-hidden="true" /> {t.payOnline}
+          <ArrowRight size={18} aria-hidden="true" /> {t.payOnline}
         </Link>
         <p className="max-w-md text-xs leading-relaxed text-ink-soft">{t.factProof}</p>
         <CtaFillLink
@@ -429,7 +429,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
             {!method && <span className="ml-1 text-xs font-normal text-ink-soft">{t.plusShipping}</span>}
           </p>
           <Link href={checkoutHref} className="btn-soft btn-soft-solid min-h-11 shrink-0 px-6 text-sm">
-            <CreditCard size={16} aria-hidden="true" /> {t.pay}
+            <ArrowRight size={16} aria-hidden="true" /> {t.pay}
           </Link>
         </div>
       </div>
