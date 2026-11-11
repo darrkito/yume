@@ -83,6 +83,14 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
   const checkoutPath = lang === "en" ? "/en/checkout" : "/pago";
   // ShippingForm reads ?entrega= to preselect the same option at checkout.
   const checkoutHref = method ? `${checkoutPath}?entrega=${method === "recoleccion_casablanca" ? "casablanca" : "nacional"}` : checkoutPath;
+  const [methodMissing, setMethodMissing] = useState(false);
+  // Can't continue without choosing how to receive the order.
+  const guard = (e: React.MouseEvent) => {
+    if (method) return;
+    e.preventDefault();
+    setMethodMissing(true);
+    document.getElementById("cart-delivery")?.scrollIntoView({ behavior: "smooth", block: "center" });
+  };
   const shipping = method ? deliverySurcharge(method, net) : 0;
 
   // Mobile: the pay button sits well below the fold, so a fixed bar carries
@@ -331,7 +339,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
           <div className="mt-2 flex items-center justify-between text-sm"><span className="text-ink-soft">{t.promoDiscount.replace("{code}", promo.code).replace("{pct}", String(promo.pct))}</span><span className="font-medium text-brand">-{formatMXN(discount)}</span></div>
         )}
         <PromoField promo={promo} setPromo={setPromo} lang={lang} id="cart-promo-code" />
-        <fieldset className="mt-4">
+        <fieldset id="cart-delivery" className="mt-4">
           <legend className="text-sm text-ink-soft">{t.deliveryChoice}</legend>
           <div className="mt-2 grid gap-2 sm:grid-cols-2">
             {([
@@ -345,7 +353,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
                 }`}
               >
                 <span className="flex items-center gap-3">
-                  <input type="radio" name="cart-delivery" value={value} checked={method === value} onChange={() => setMethod(value)} className="accent-brand" />
+                  <input type="radio" name="cart-delivery" value={value} checked={method === value} onChange={() => { setMethod(value); setMethodMissing(false); }} className="accent-brand" />
                   {label}
                 </span>
                 <span className="font-semibold text-ink">{cost === 0 ? t.freeShipping : formatMXN(cost)}</span>
@@ -353,6 +361,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
             ))}
           </div>
         </fieldset>
+        {methodMissing && !method && <p role="alert" className="mt-2 text-sm font-medium text-brand">{t.chooseDeliveryFirst}</p>}
         {method && dates && (
           <p className="mt-3 flex items-start gap-2 text-sm text-ink">
             <Clock size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />
@@ -375,6 +384,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
         <Link
           ref={payRef}
           href={checkoutHref}
+          onClick={guard}
           className="flex w-full items-center justify-center gap-2 rounded-full bg-brand px-8 py-4 text-center text-base font-semibold text-white transition-colors hover:bg-brand-deep active:scale-[0.98] sm:w-auto"
         >
           <ArrowRight size={18} aria-hidden="true" /> {t.payOnline}
@@ -428,7 +438,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
             {formatMXN(total + shipping)} MXN
             {!method && <span className="ml-1 text-xs font-normal text-ink-soft">{t.plusShipping}</span>}
           </p>
-          <Link href={checkoutHref} className="btn-soft btn-soft-solid min-h-11 shrink-0 px-6 text-sm">
+          <Link href={checkoutHref} onClick={guard} className="btn-soft btn-soft-solid min-h-11 shrink-0 px-6 text-sm">
             <ArrowRight size={16} aria-hidden="true" /> {t.pay}
           </Link>
         </div>
