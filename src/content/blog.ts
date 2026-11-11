@@ -6409,33 +6409,35 @@ export const blogPosts: BlogPost[] = [
       "Aprende a calcular cuánto cuestan los recuerdos de boda por invitado: fórmula, ejemplo y qué mueve el costo, sin inventar precios. Luego cotiza.",
     category: "Guías",
     publishedAt: "2026-11-09",
+    modifiedAt: "2026-11-10",
     intro:
-      "Los recuerdos de boda no tienen un precio fijo, y casi ninguna guía explica cómo calcular el tuyo. Aquí tienes un método en pasos: fijar un tope por invitado, multiplicarlo por tus piezas y llevar un número claro a cotizar.",
+      "Los recuerdos de boda no tienen un precio fijo, y casi ninguna guía explica cómo calcular el tuyo. Aquí tienes un método en pasos: fijar un tope por invitado, decidir cuántas piezas necesitas, sumar lo que mueve el precio de cada una y llevar un número claro a cotizar.",
     sections: [
       {
         heading: "¿Cuánto cuestan los recuerdos de boda por invitado en México?",
         body: [
-          "No existe un precio único. Una guía de costos de bodas en México, Cronoshare, indica que el presupuesto para recuerdos puede ir desde los $50 MXN por invitado en adelante, sin dar tope ni promedio. Por eso conviene calcular tu propio tope según tu boda, no copiar una cifra ajena.",
-          "Ese piso de $50 MXN viene de una guía general, no del precio de un detalle personalizado. Tampoco encontramos un promedio nacional confiable de gasto en recuerdos por invitado, así que lo más útil es un método de cálculo.",
+          "No hay un precio único por invitado, porque depende de la pieza, la personalización y el empaque. No encontramos un promedio nacional confiable de lo que se gasta en recuerdos en México, así que lo más útil es calcular tu propio tope por invitado con un método sencillo, en lugar de copiar una cifra ajena.",
+          "Para ubicarte, el Wedding Industry Report México 2024, que cita Cronoshare, estima una boda promedio en unos $155,000 MXN para 146 invitados, cerca de $1,062 MXN por invitado en todo el evento. Es el gasto de la boda completa, no del recuerdo.",
         ],
       },
       {
         heading: "Paso 1: fija un tope con el gasto por invitado",
         body: [
-          "Divide el costo total de tu boda entre tus invitados y obtendrás el gasto por invitado. Con la cifra de Cronoshare, unos $180,000 MXN para unos 100 invitados, salen cerca de $1,800 MXN por invitado, y un recuerdo de $50 sería alrededor del 3% de eso. Úsalo solo como referencia ilustrativa.",
-          "La misma página da un rango total de $180,000 a $350,000 MXN, pero no dice para cuántos invitados es la cifra alta, así que esta división solo aplica a la cifra de 100 invitados.",
+          "Divide el costo total de tu boda entre el número de invitados para obtener tu gasto por invitado. Ese número es el techo de referencia: el recuerdo es solo una parte de ese total. Decide qué parte quieres destinarle antes de cotizar, porque sin un tope por invitado cualquier cotización parece razonable y es difícil comparar.",
+          "Con la cifra del Wedding Industry Report México 2024, unos $1,062 MXN por invitado, un recuerdo hipotético de $50 sería cerca del 5% de ese gasto. Es solo una ilustración, no una recomendación.",
         ],
       },
       {
         heading: "Paso 2: cuenta piezas, no solo invitados",
         body: [
-          "Multiplica tu tope por el número de piezas, no siempre por el número de invitados. Si entregas un recuerdo por pareja o por familia en lugar de uno por persona, la cantidad baja y puedes destinar más presupuesto a cada pieza. Define esto antes de pedir cotización.",
+          "Multiplica tu tope por el número de piezas, no siempre por el número de invitados. Si entregas un recuerdo por pareja o por familia en lugar de uno por persona, la cantidad baja y puedes destinar más presupuesto a cada pieza. Define este criterio antes de pedir cotización.",
+          "Si dudas sobre la cantidad, la guía de [cuántos souvenirs pedir por evento](/blog/cuantos-souvenirs-pedir-por-evento) te ayuda a decidirlo.",
         ],
       },
       {
         heading: "Paso 3: suma lo que mueve el precio de cada pieza",
         body: [
-          "El precio final de un recuerdo depende de varios factores, no solo del objeto: el material, el nivel de personalización, el empaque y el envío. Súmalos en una sola cifra por pieza antes de comparar opciones, para no descubrir costos extra cuando ya hayas elegido el diseño.",
+          "El precio final de un recuerdo depende de varios factores, no solo del objeto: el material, el nivel de personalización, el empaque y el envío. Súmalos en una sola cifra por pieza antes de comparar opciones, para no descubrir costos extra cuando ya elegiste el diseño.",
           "Estas son las preguntas que conviene hacer a cada proveedor para comparar en igualdad de condiciones.",
         ],
         table: {
@@ -6444,15 +6446,24 @@ export const blogPosts: BlogPost[] = [
             ["Material", "¿Qué material es y cuánto cuesta por pieza?"],
             ["Personalización", "¿El nombre, la fecha o un diseño propio cambian el precio?"],
             ["Empaque", "¿Va incluido o se cobra aparte?"],
+            ["Piezas extra", "¿Cuántas piezas adicionales necesito y cuánto cuestan?"],
             ["Envío", "¿Se entrega en tu zona o se envía, y cuánto cuesta?"],
           ],
         },
       },
       {
-        heading: "Detalle y diseño antes que el precio más bajo",
+        heading: "Cómo calcular el costo real por invitado de tus recuerdos",
         body: [
-          "Si buscas un recuerdo que se vea planeado, conviene comparar por detalle y diseño, no por el precio más bajo. Un recuerdo con el nombre de tus invitados o con el estilo de tu boda se siente pensado, y ese es el valor que pagas.",
-          "En Yume trabajamos dulceros personalizados, que llegan armados y vacíos para que tú elijas qué lleva dentro, y [stickers de vinil personalizados](/productos/stickers-vinil-impermeable), con prueba digital antes de imprimir. Si te inclinas por dulceros, revisa [qué poner en un dulcero](/blog/que-poner-en-un-dulcero) y [dulceros personalizados](/blog/dulceros-personalizados-guadalajara).",
+          "El costo real por invitado se obtiene dividiendo el total que pagas por los recuerdos entre el número de invitados. Incluye el costo de cada pieza, el empaque, la personalización, el envío y cualquier pieza extra que pidas. Así compruebas si tu tope por invitado se cumple con el total de la cotización.",
+          "Las piezas extra suman al total y suben el costo por invitado. En símbolos: (costo por pieza × número de piezas + empaque y envío) ÷ número de invitados = costo real por invitado. El ejemplo con cifras hipotéticas está más abajo.",
+        ],
+      },
+      {
+        heading: "Recuerdo personalizado o detalle genérico: qué cambia en el costo",
+        body: [
+          "Un recuerdo personalizado lleva el nombre, la fecha o el estilo de tu boda, y por eso se siente planeado; un detalle genérico es el mismo para cualquier evento. Compáralos por lo que aportan a tu mesa y no solo por el precio, y pide en cada caso el costo total por pieza.",
+          "En Yume trabajamos [dulceros personalizados](/productos/dulceros-personalizados), que llegan armados y vacíos para que tú elijas qué lleva dentro, y [stickers de vinil personalizados](/productos/stickers-vinil-impermeable), con prueba digital antes de imprimir. Para ver los precios actuales, entra a la página de cada producto.",
+          "Si te inclinas por dulceros, revisa [qué poner en un dulcero](/blog/que-poner-en-un-dulcero) y [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara). Para ideas con el nombre y la fecha de tu boda, mira los [souvenirs de boda personalizados](/blog/souvenirs-de-boda-personalizados).",
         ],
       },
       {
@@ -6478,23 +6489,31 @@ export const blogPosts: BlogPost[] = [
         heading: "Cómo pedir una cotización de recuerdos de boda",
         body: [
           "Para cotizar bien, lleva tres datos: número de invitados o de piezas, fecha de tu boda y estilo que buscas. Con eso podemos orientarte sobre qué opción de nuestro catálogo cabe en tu tope por pieza. Escríbenos por WhatsApp y cotizamos tu caso.",
-          "Si eres wedding planner, cotizamos por evento, con el número de piezas que necesite cada boda.",
+          "Si eres wedding planner, cotizamos por evento, con el número de piezas que necesite cada boda. Para saber con cuánta anticipación pedir, revisa [cuándo pedir souvenirs de boda](/blog/cuando-pedir-souvenirs-de-boda).",
         ],
       },
     ],
-    relatedProductSlugs: ["stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["dulceros-personalizados-guadalajara", "que-poner-en-un-dulcero"],
+    relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["dulceros-personalizados-guadalajara", "que-poner-en-un-dulcero", "cuantos-souvenirs-pedir-por-evento", "souvenirs-de-boda-personalizados", "cuando-pedir-souvenirs-de-boda"],
     sources: [
       { label: "Cronoshare: cuánto cuesta una boda en México", url: "https://www.cronoshare.com.mx/cuanto-cuesta/boda-mexico" },
     ],
     faq: [
       {
         q: "¿Hay un promedio de gasto en recuerdos de boda en México?",
-        a: "No encontramos un promedio nacional confiable. Cronoshare solo da un piso orientativo de $50 MXN por invitado en adelante, por eso conviene calcular tu propio tope.",
+        a: "No encontramos un promedio nacional confiable de gasto solo en recuerdos. Por eso conviene calcular tu propio tope por invitado.",
       },
       {
         q: "¿Qué porcentaje del presupuesto va a los recuerdos?",
-        a: "No hay una norma. Con las cifras de Cronoshare, un recuerdo de $50 sería cerca del 3% de unos $1,800 MXN por invitado, y es solo una referencia ilustrativa.",
+        a: "No encontramos una fuente que fije un porcentaje. Las cifras de la tabla de ejemplo son hipotéticas, solo para practicar, y no son una norma.",
+      },
+      {
+        q: "¿Una pieza por invitado o una por pareja?",
+        a: "Puedes entregar una por pareja o por familia. La cantidad baja y puedes destinar más presupuesto a cada pieza.",
+      },
+      {
+        q: "¿Los dulceros incluyen dulces?",
+        a: "No. El dulcero llega armado y vacío, listo para llenar con los dulces o detalles que tú elijas.",
       },
       {
         q: "¿Cotizan por evento para wedding planners?",

@@ -5303,27 +5303,29 @@ export const blogPostsEn: BlogPost[] = [
       "Learn how to calculate how much wedding favors cost per guest: a simple formula, a sample budget and what moves the price, with no invented prices.",
     category: "Guides",
     publishedAt: "2026-11-09",
+    modifiedAt: "2026-11-10",
     intro:
-      "Wedding favors have no fixed price, and almost no guide explains how to work out yours. Here is a step-by-step method: set a limit per guest, multiply it by your pieces and bring a clear number to request a quote.",
+      "Wedding favors have no fixed price, and almost no guide explains how to work out yours. Here is a step-by-step method: set a limit per guest, decide how many pieces you need, add up what moves the price of each one and bring a clear number to request a quote.",
     sections: [
       {
         heading: "How much do wedding favors cost per guest in Mexico?",
         body: [
-          "There is no single price. A Mexican wedding cost guide from Cronoshare says the favors budget can start at $50 MXN per guest and go up, with no cap or average given. That is why it helps to calculate your own limit based on your wedding instead of copying someone else's number.",
-          "That $50 MXN floor comes from a general guide, not from the price of a personalized keepsake. We also did not find a reliable national average of favor spending per guest in Mexico, so a calculation method is the most useful tool.",
+          "There is no single price per guest, because it depends on the piece, the personalization and the packaging. We did not find a reliable national average of what is spent on favors in Mexico, so the most useful step is to calculate your own limit per guest with a simple method instead of copying someone else's number.",
+          "For context, the Wedding Industry Report México 2024, cited by Cronoshare, puts an average wedding at about $155,000 MXN for 146 guests, close to $1,062 MXN per guest for the whole event. That is the cost of the full wedding, not of the favor.",
         ],
       },
       {
         heading: "Step 1: set a limit from the spend per guest",
         body: [
-          "Divide the total cost of your wedding by your guest count to get the spend per guest. Using Cronoshare's figure, about $180,000 MXN for about 100 guests, that comes to roughly $1,800 MXN per guest, and a $50 favor would be around 3% of it. Use it only as an illustration.",
-          "The same page gives a total range of $180,000 to $350,000 MXN but does not say for how many guests the high figure is, so this division only applies to the 100-guest figure.",
+          "Divide the total cost of your wedding by your guest count to get the spend per guest. That number is your reference ceiling: the favor is only one part of that total. Decide what share you want to give it before asking for quotes, because without a limit per guest any quote looks reasonable.",
+          "Using the Wedding Industry Report México 2024 figure, about $1,062 MXN per guest, a hypothetical $50 favor would be close to 5% of that spend. It is only an illustration, not a recommendation.",
         ],
       },
       {
         heading: "Step 2: count pieces, not only guests",
         body: [
           "Multiply your limit by the number of pieces, not always by the number of guests. If you give one favor per couple or family instead of one per person, the quantity drops and you can put more budget into each piece. Decide this before asking for a quote.",
+          "If you are unsure about quantity, the guide on [how many party favors to order per event](/en/blog/how-many-party-favors-to-order-per-event) can help you decide.",
         ],
       },
       {
@@ -5338,15 +5340,24 @@ export const blogPostsEn: BlogPost[] = [
             ["Material", "What material is it and what does it cost per piece?"],
             ["Personalization", "Do names, dates or a custom design change the price?"],
             ["Packaging", "Is it included or charged separately?"],
+            ["Extra pieces", "How many additional pieces do I need and what do they cost?"],
             ["Shipping", "Is it delivered in your area or shipped, and what does it cost?"],
           ],
         },
       },
       {
-        heading: "Detail and design before the lowest price",
+        heading: "How to work out the real cost per guest of your favors",
         body: [
-          "If you want a favor that looks planned, compare by detail and design, not by the lowest price. A favor with your guests' names or with the style of your wedding feels thoughtful, and that is the value you are paying for.",
-          "At Yume we make personalized candy boxes, which arrive assembled and empty so you choose what goes inside, and custom vinyl stickers, with a digital proof before printing.",
+          "The real cost per guest is the total you pay for the favors divided by your guest count. It includes the cost of each piece, the packaging, the personalization, the shipping and any extra pieces you order. That way you can check whether the quote total fits your limit per guest.",
+          "Extra pieces add to the total and raise the cost per guest. In symbols: (cost per piece × number of pieces + packaging and shipping) ÷ number of guests = real cost per guest. The example with hypothetical numbers is further below.",
+        ],
+      },
+      {
+        heading: "Personalized favor or generic keepsake: what changes the cost",
+        body: [
+          "A personalized favor carries your names, your date or your wedding style, which is why it feels planned; a generic keepsake is the same for any event. Compare them by what they add to your table, not only by price, and ask for the full cost per piece in each case.",
+          "At Yume we make [personalized candy boxes](/en/products/personalized-party-favor-boxes), which arrive assembled and empty so you choose what goes inside, and [custom vinyl stickers](/en/products/waterproof-vinyl-stickers), with a digital proof before printing. For current prices, see each product page.",
+          "For ideas on what goes inside, read [what to put in a party favor box](/en/blog/what-to-put-in-a-party-favor-box) and [personalized wedding favors with name and date](/en/blog/personalized-wedding-favors-with-name-and-date).",
         ],
       },
       {
@@ -5372,22 +5383,31 @@ export const blogPostsEn: BlogPost[] = [
         heading: "How to request a quote for wedding favors",
         body: [
           "To get a useful quote, bring three details: the number of guests or pieces, your wedding date and the style you want. With that we can guide you on which option from our catalog fits your limit per piece. Message us on WhatsApp and we will quote your case.",
-          "If you are a wedding planner, we quote per event, with the number of pieces each wedding needs.",
+          "If you are a wedding planner, we quote per event, with the number of pieces each wedding needs. To know how early to order, see [when to order wedding favors](/en/blog/when-to-order-wedding-favors).",
         ],
       },
     ],
-    relatedProductSlugs: ["stickers-vinil-impermeable"],
+    relatedProductSlugs: ["personalized-party-favor-boxes", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["personalized-party-favor-boxes-guadalajara", "what-to-put-in-a-party-favor-box", "how-many-party-favors-to-order-per-event", "personalized-wedding-favors-with-name-and-date", "when-to-order-wedding-favors"],
     sources: [
       { label: "Cronoshare: how much a wedding costs in Mexico", url: "https://www.cronoshare.com.mx/cuanto-cuesta/boda-mexico" },
     ],
     faq: [
       {
         q: "Is there an average spend on wedding favors in Mexico?",
-        a: "We did not find a reliable national average. Cronoshare only gives a guiding floor of $50 MXN per guest and up, which is why it helps to calculate your own limit.",
+        a: "We did not find a reliable national average of spend on favors alone. That is why it helps to calculate your own limit per guest.",
       },
       {
         q: "What share of the budget should go to favors?",
-        a: "There is no rule. With Cronoshare's figures, a $50 favor would be close to 3% of about $1,800 MXN per guest, and that is only an illustrative reference.",
+        a: "We did not find a source that sets a percentage. The figures in the example table are hypothetical, only for practice, and are not a rule.",
+      },
+      {
+        q: "One favor per guest or one per couple?",
+        a: "You can give one per couple or family. The quantity drops and you can put more budget into each piece.",
+      },
+      {
+        q: "Do the candy boxes come with candy?",
+        a: "No. The candy box arrives assembled and empty, ready to fill with the sweets or details you choose.",
       },
       {
         q: "Do you quote per event for wedding planners?",
