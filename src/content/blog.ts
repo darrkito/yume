@@ -723,13 +723,13 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "recuerdos-baby-shower-personalizados",
-    title: "Dulceros para baby shower personalizados: qué poner y cuántos pedir",
-    metaTitle: "Dulceros para baby shower personalizados: qué poner",
-    description: "Dulceros para baby shower personalizados: qué poner dentro, cuántos pedir con un ejemplo de cálculo, precios y tiempos.",
+    title: "Qué regalar a los invitados de un baby shower",
+    metaTitle: "Qué regalar a los invitados de un baby shower",
+    description: "Qué regalar a los invitados de un baby shower además de dulces: dulceros, stickers y tatuajes temporales, cómo combinarlos y cuándo pedirlos.",
     category: "Guías",
     publishedAt: "2026-11-03",
-    modifiedAt: "2026-11-07",
-    intro: "Los dulceros para baby shower personalizados son el último detalle que se lleva cada invitado, y por eso conviene pensarlos con la misma calma que la invitación o la mesa. Aquí encuentras qué poner dentro, cómo elegir entre dulcero individual y mesa de dulces, cuántos pedir con un ejemplo de cálculo, cuánto cuestan y con qué tiempo pedirlos, tanto si organizas tú la fiesta como si trabajas con una planner.",
+    modifiedAt: "2026-11-11",
+    intro: "Si te preguntas qué regalar a los invitados de un baby shower además de dulces, tienes tres opciones que Yume produce con el diseño de tu fiesta: dulcero, sticker y tatuaje temporal. Aquí las comparas, ves cuál conviene según el invitado, cuántos pedir con un ejemplo de cálculo y con qué tiempo hacerlo, tanto si organizas tú como si trabajas con una planner.",
     sections: [
       {
         heading: "Qué recuerdo de baby shower elegir",
@@ -738,6 +738,29 @@ export const blogPosts: BlogPost[] = [
           "Una guía de checklist para baby showers describe el recuerdo ideal como algo pequeño, igual para todos y colocado cerca de la salida. Sus ejemplos son algo comestible, una planta, una vela o un sobre de semillas. Un [dulcero personalizado](/productos/dulceros-personalizados) entra en esa idea, con la ventaja de que el diseño es propio de tu fiesta y no uno de catálogo.",
           "Una nota de Crónica sobre recuerdos de boda en México en 2026 apunta en la misma dirección: los invitados conservan piezas útiles y con diseño propio, mientras que los recuerdos genéricos suelen acabar olvidados. Aplicado al baby shower, la idea es sumar diseño y utilidad, no solo poner un nombre. Para decidir qué lleva dentro, revisa [qué poner en un dulcero](/blog/que-poner-en-un-dulcero).",
         ],
+      },
+      {
+        heading: "Qué regalar a los invitados de un baby shower además de dulces",
+        body: [
+          "Además de dulces, puedes regalar un sticker con el diseño de la fiesta o un tatuaje temporal con el nombre del bebé, solos o dentro de un dulcero. Yume produce las tres piezas con la misma paleta, así que combinan con la invitación y la decoración.",
+          "El criterio que más repiten las guías es ligar el recuerdo al tema de la fiesta o al nombre del bebé. Mercado Libre da como ejemplos de tema selva, cuentos de hadas y nubes y estrellas. Un [sticker de vinil](/productos/stickers-vinil-impermeable) o un tatuaje temporal con ese tema cumple el criterio con una pieza que es solo de tu fiesta.",
+          "Si quieres ver la opción de tatuajes, entra a [tatuajes temporales personalizados](/productos/tatuajes-temporales-personalizados) para revisar sus condiciones de compra.",
+        ],
+      },
+      {
+        heading: "Dulces, stickers o tatuajes: qué se consume y qué se conserva",
+        body: [
+          "Lo comestible se consume. Guía Infantil califica la utilidad de los dulces como baja porque se consumen, y las plantas como sobre todo decorativas, con personalización baja. Por eso conviene sumar una pieza que el invitado conserve o use, con tu diseño propio en lugar de uno genérico de catálogo.",
+          "La misma guía destaca como más cotidianos los jabones, las tazas y los separadores de libros. En la tabla ves cómo se comparan las tres piezas que Yume produce.",
+        ],
+        table: {
+          headers: ["Recuerdo", "Qué es", "Personalización", "Se consume o se conserva"],
+          rows: [
+            ["Dulcero personalizado", "Empaque tipo lunch box con asa, llega armado y vacío", "Nombre y temática", "El relleno se consume y lo eliges tú"],
+            ["Sticker de vinil", "Vinil premium con tu diseño, personaje o foto", "Tu diseño, personaje o foto", "Resistente al agua, al sol y a rayones"],
+            ["Tatuaje temporal", "Tatuaje temporal personalizado para la fiesta", "Tu diseño", "Temporal por definición"],
+          ],
+        },
       },
       {
         heading: "Dulceros para baby shower personalizados: qué poner dentro",
@@ -763,11 +786,27 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
+        heading: "Qué recuerdo conviene según el tipo de invitado",
+        body: [
+          "Para adultos y abuelas funciona un dulcero con un sticker del mismo diseño, porque combina lo que se come con algo que se queda. Para niños invitados, el dulcero con un tatuaje temporal suma algo para jugar. Si hay de todo, repite el mismo diseño en todas las piezas.",
+          "Guía Infantil recomienda preparar pequeños premios si habrá juegos en el baby shower. Un sticker o un [tatuaje temporal](/productos/tatuajes-temporales-personalizados) con el diseño de la fiesta puede cumplir ese papel.",
+          "Para más ideas con tatuajes, revisa [tatuajes temporales para fiestas](/blog/tatuajes-temporales-para-boda-eventos-y-fiestas) y [cuánto duran los tatuajes temporales](/blog/cuanto-duran-los-tatuajes-temporales-y-como-quitarlos).",
+        ],
+      },
+      {
         heading: "Cómo personalizar un recuerdo de baby shower",
         body: [
           "Personalizar bien es más que escribir un nombre. Define qué nombre va (el del bebé o el de la mamá), la paleta del evento y una ilustración sencilla. Antes de producir recibes una prueba digital para revisar el diseño, y nada se produce hasta que la apruebas.",
           "Si ya tienes la invitación o fotos de la decoración, mándalas por WhatsApp y adaptamos el diseño a esos colores. Así el recuerdo no se ve como una pieza aparte, sino como el cierre natural de la fiesta.",
           "Un sticker con el mismo diseño puede decorar o cerrar el recuerdo. Los [stickers de vinil personalizados](/productos/stickers-vinil-impermeable) se hacen con tu diseño, personaje o foto y se venden por cantidad de piezas, así que puedes repetir la ilustración del dulcero en cada uno.",
+        ],
+      },
+      {
+        heading: "Cómo combinar dulcero, sticker y tatuaje sin que se vea improvisado",
+        body: [
+          "La combinación más sencilla es un dulcero con un sticker del mismo diseño. Con niños, suma un tatuaje temporal. Lo importante es que nombre, ilustración y paleta se repitan en cada pieza y coincidan con la invitación, así el recuerdo se ve parte de la fiesta y no un añadido de último momento.",
+          "Canva ofrece plantillas gratuitas de etiquetas de baby shower para descargar e imprimir. Es la ruta casera: una etiqueta sobre un producto genérico. Con Yume el diseño se adapta a tu paleta y recibes una prueba digital antes de producir.",
+          "Si trabajas con una planner, mándale las mismas fotos de invitación y decoración para que el diseño de las tres piezas salga de una sola base.",
         ],
       },
       {
@@ -784,7 +823,7 @@ export const blogPosts: BlogPost[] = [
         body: [
           `La producción toma ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles desde la aprobación de la prueba digital, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días hábiles de envío nacional o ${PICKUP_EXTRA_DAYS} día hábil para recoger en Casa Blanca en Guadalajara. Pídelos con holgura para definir el nombre, la temática y revisar la prueba.`,
           "Como referencia general, la guía de checklist que citamos sugiere empezar a planear unas 8 semanas antes, enviar invitaciones unas 4 semanas antes y fijar la fecha límite de confirmación unas 2 semanas antes. También propone comprar el envoltorio de los recuerdos y los artículos no perecederos unas 2 semanas antes. Puedes usar ese calendario y sumarle el tiempo de producción de arriba.",
-          "Comparte la fecha del baby shower y la cantidad por WhatsApp si necesitas confirmar la planificación antes de pedir.",
+          "Guía Infantil también recomienda organizar el evento con varias semanas de antelación. Para stickers y tatuajes temporales, comparte la fecha del baby shower y la cantidad por WhatsApp y confirmamos la planificación antes de pedir.",
         ],
       },
       {
@@ -795,15 +834,29 @@ export const blogPosts: BlogPost[] = [
         ],
       },
     ],
-    relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["dulceros-para-eventos-sociales-boda-xv-baby-shower", "que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara"],
+    relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable", "tatuajes-temporales-personalizados"],
+    relatedBlogSlugs: ["dulceros-para-eventos-sociales-boda-xv-baby-shower", "que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "tatuajes-temporales-para-boda-eventos-y-fiestas"],
     sources: [
       { label: "Visu: checklist para baby shower", url: "https://visu.network/es/articulos/checklist-para-baby-shower/" },
       { label: "Crónica: recuerdos de boda que sí se quedan los invitados en 2026", url: "https://www.cronica.com.mx/tendencias/2026/09/04/dile-adios-a-los-recuerdos-de-boda-que-terminan-en-la-basura-esto-es-lo-que-si-se-quedan-tus-invitados-en-2026/" },
       { label: "HaceCuentas: calculadora de regalos y souvenirs por invitado", url: "https://hacecuentas.com/calculadora-regalos-invitado-souvenir" },
       { label: "Guía Infantil: ideas para regalar a los invitados en un baby shower", url: "https://www.guiainfantil.com/bebes/canastilla-ajuar/decoracion-e-ideas-para-regalar-a-los-invitados-en-un-baby-shower/" },
+      { label: "Mercado Libre Perú: ideas de recuerdos para baby shower", url: "https://www.mercadolibre.com.pe/blog/tr/ideas-recuerdo-baby-shower" },
+      { label: "Canva: plantillas de etiquetas para baby shower", url: "https://www.canva.com/es_mx/crear/etiquetas/baby-shower/" },
     ],
     faq: [
+      {
+        q: "¿Qué puedo regalar a los invitados de un baby shower además de dulces?",
+        a: "Con Yume puedes elegir un dulcero personalizado, un sticker de vinil con el diseño de tu fiesta o un tatuaje temporal personalizado, solos o combinados con el mismo diseño.",
+      },
+      {
+        q: "¿Qué recuerdos repiten las guías de compras?",
+        a: "Una guía de Mercado Libre Perú lista bolsitas con dulces, jabones artesanales, aromáticos y lápices personalizados. Guía Infantil suma suculentas, velas, separadores de libros, fotos instantáneas y tazas con el nombre del bebé.",
+      },
+      {
+        q: "¿Puedo combinar un dulcero con un sticker?",
+        a: "Sí. Puedes repetir el mismo diseño en ambos. El dulcero se pide desde 10 piezas y el sticker de vinil desde 40.",
+      },
       {
         q: "¿Qué características tiene un buen recuerdo de baby shower?",
         a: "Según una guía de checklist para baby showers, debe ser pequeño, igual para cada invitado, colocado cerca de la salida y fácil de llevar a casa. Algunos ejemplos son algo comestible, una planta, una vela o un sobre de semillas.",
