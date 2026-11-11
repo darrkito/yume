@@ -4,6 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { X, ImageUp, CreditCard, Truck, CheckCircle2, Clock, ShieldCheck, MessageCircle } from "lucide-react";
 import { useCart, type CartItem } from "@/components/CartContext";
+import { PromoField, usePromo } from "@/components/PromoField";
+import { discountedPrice } from "@/lib/promo";
 import { useDesignFiles } from "@/components/DesignFileContext";
 import { getProduct, hasVariants, lineNeedsDesign, MAX_PIECES, pieceCount, resolvePrice, withPieces } from "@/content/products";
 import { getProductTranslation, productsEn } from "@/content/products.en";
@@ -33,6 +35,11 @@ const ATTACH_MSG = {
 export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
   const { items, removeItem, updateQty, replaceLine, total, clear, cartNotice, dismissNotice, ready } = useCart();
   const { getDesignFile } = useDesignFiles();
+  // Coupon applies here too; free shipping is judged on the discounted amount.
+  const [promo, setPromo] = usePromo();
+  const discount = promo ? total - items.reduce((sum, i) => sum + discountedPrice(i.price, promo) * i.qty, 0) : 0;
+  const net = total - discount;
+  const grossFree = promo ? (FREE_SHIPPING_THRESHOLD * 100) / (100 - promo.pct) : FREE_SHIPPING_THRESHOLD;
   // No default: preselecting $199 national shipping made a $100 order read
   // as $290 at first sight. The shopper picks, then sees the real total.
   const [method, setMethod] = useState<DeliveryMethod | null>(null);
@@ -76,7 +83,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
   const checkoutPath = lang === "en" ? "/en/checkout" : "/pago";
   // ShippingForm reads ?entrega= to preselect the same option at checkout.
   const checkoutHref = method ? `${checkoutPath}?entrega=${method === "recoleccion_casablanca" ? "casablanca" : "nacional"}` : checkoutPath;
-  const shipping = method ? deliverySurcharge(method, total) : 0;
+  const shipping = method ? deliverySurcharge(method, net) : 0;
 
   // Mobile: the pay button sits well below the fold, so a fixed bar carries
   // it whenever the real one isn't on screen (same idea as the PDP's bar).
@@ -91,7 +98,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
   // Honest free-shipping nudge: the smallest bump of a sticker line already
   // in the cart that crosses the threshold (rounded up to a tidy 10).
   const nudge = (() => {
-    if (total >= FREE_SHIPPING_THRESHOLD) return null;
+    if (net >= FREE_SHIPPING_THRESHOLD) return null;
     for (const item of items) {
       const product = getProduct(item.slug);
       const perPiece = product ? pieceCount(product, item.variantId) : null;
@@ -99,7 +106,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
       const rest = total - item.price * item.qty;
       const priceAt = (n: number) => resolvePrice(product, withPieces(item.variantId, n));
       for (let n = perPiece * item.qty + 1; n <= MAX_PIECES; n++) {
-        if (rest + priceAt(n) >= FREE_SHIPPING_THRESHOLD) {
+        if (rest + priceAt(n) >= grossFree) {
           const qty = Math.min(MAX_PIECES, Math.ceil(n / 10) * 10);
           return { item, product, qty, newTotal: rest + priceAt(qty) };
         }
@@ -293,13 +300,13 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
         </div>
       )}
 
-      {total < FREE_SHIPPING_THRESHOLD && (
+      {net < FREE_SHIPPING_THRESHOLD && (
         <div className="mt-8 rounded-xl border border-line bg-paper-raised p-4">
-          <p className="text-sm text-ink">{t.freeShippingProgress.replace("{remaining}", formatMXN(FREE_SHIPPING_THRESHOLD - total))}</p>
+          <p className="text-sm text-ink">{t.freeShippingProgress.replace("{remaining}", formatMXN(FREE_SHIPPING_THRESHOLD - net))}</p>
           <div className="mt-3 h-1.5 w-full overflow-hidden rounded-full bg-line">
             <div
               className="h-full origin-left rounded-full bg-brand transition-transform duration-300"
-              style={{ transform: `scaleX(${Math.min(1, total / FREE_SHIPPING_THRESHOLD)})` }}
+              style={{ transform: `scaleX(${Math.min(1, net / FREE_SHIPPING_THRESHOLD)})` }}
             />
           </div>
           {nudge && (
@@ -314,18 +321,22 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
           )}
         </div>
       )}
-      {total >= FREE_SHIPPING_THRESHOLD && (
+      {net >= FREE_SHIPPING_THRESHOLD && (
         <div className="mt-8 flex items-start gap-2 rounded-xl border border-line bg-paper-raised p-4 text-sm text-ink"><Truck size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.freeShippingReached}</div>
       )}
 
       <div className="mt-8 border-t border-line pt-6">
         <div className="flex items-center justify-between text-sm text-ink-soft"><span>{t.subtotal}</span><span>{formatMXN(total)} MXN</span></div>
+        {promo && (
+          <div className="mt-2 flex items-center justify-between text-sm"><span className="text-ink-soft">{t.promoDiscount.replace("{code}", promo.code).replace("{pct}", String(promo.pct))}</span><span className="font-medium text-brand">-{formatMXN(discount)}</span></div>
+        )}
+        <PromoField promo={promo} setPromo={setPromo} lang={lang} id="cart-promo-code" />
         <fieldset className="mt-4">
           <legend className="text-sm text-ink-soft">{t.deliveryChoice}</legend>
           <div className="mt-2 grid gap-2 sm:grid-cols-2">
             {([
-              ["recoleccion_casablanca", t.pickupGdl, deliverySurcharge("recoleccion_casablanca", total)],
-              ["envio_nacional", t.nationalShipping, deliverySurcharge("envio_nacional", total)],
+              ["recoleccion_casablanca", t.pickupGdl, deliverySurcharge("recoleccion_casablanca", net)],
+              ["envio_nacional", t.nationalShipping, deliverySurcharge("envio_nacional", net)],
             ] as const).map(([value, label, cost]) => (
               <label
                 key={value}
@@ -353,7 +364,7 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
         <div className="mt-4 flex items-baseline justify-between gap-3 border-t border-line pt-4">
           <p className="text-sm text-ink-soft">{t.total}</p>
           <p className="font-display text-2xl text-ink">
-            {formatMXN(total + shipping)} MXN
+            {formatMXN(net + shipping)} MXN
             {!method && <span className="ml-1.5 font-sans text-sm text-ink-soft">{t.plusShipping}</span>}
           </p>
         </div>

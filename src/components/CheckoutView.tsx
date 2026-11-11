@@ -18,7 +18,8 @@ import { productsEn } from "@/content/products.en";
 import type { Customer, DeliveryInfo } from "@/lib/orders";
 import { deliverySurcharge, type DeliveryMethod } from "@/content/shipping";
 import { formatMXN } from "@/lib/format";
-import { activePromo, discountedPrice, promoLive, type Promo } from "@/lib/promo";
+import { discountedPrice } from "@/lib/promo";
+import { PromoField, usePromo } from "@/components/PromoField";
 import { UI, type Lang } from "@/lib/i18n";
 
 type Mode = "form" | "choose" | "onsite";
@@ -100,9 +101,7 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
   const summaryMethod = delivery?.method ?? formMethod;
   // Coupon preview only: the server re-checks code and dates and prices each
   // line the same way (discountedPrice per unit), so totals match to the cent.
-  const [promoInput, setPromoInput] = useState("");
-  const [promo, setPromo] = useState<Promo | null>(null);
-  const [promoError, setPromoError] = useState(false);
+  const [promo, setPromo] = usePromo();
   const discount = promo ? total - items.reduce((sum, i) => sum + discountedPrice(i.price, promo) * i.qty, 0) : 0;
   const surcharge = summaryMethod ? deliverySurcharge(summaryMethod, total - discount) : 0;
   const grandTotal = total - discount + surcharge;
@@ -232,40 +231,7 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
               <p className="text-sm text-ink-soft">{t.total}</p>
               <p className="font-display text-2xl text-ink">{formatMXN(grandTotal)} MXN</p>
             </div>
-            {mode !== "onsite" && (promo ? (
-              <button type="button" onClick={() => setPromo(null)} className="mt-3 inline-flex min-h-11 items-center text-xs text-ink-soft transition-colors hover:text-brand">
-                {t.promoRemove}
-              </button>
-            ) : (
-              <form
-                className="mt-4"
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  const p = activePromo(promoInput);
-                  setPromo(p);
-                  setPromoError(!p);
-                  if (p) track("promo_applied");
-                }}
-              >
-                <label htmlFor="promo-code" className="text-xs font-medium text-ink-soft">{t.promoLabel}</label>
-                <div className="mt-1 flex gap-2">
-                  <input
-                    id="promo-code"
-                    value={promoInput}
-                    onChange={(e) => { setPromoInput(e.target.value); setPromoError(false); }}
-                    autoCapitalize="off"
-                    autoComplete="off"
-                    spellCheck={false}
-                    placeholder={promoLive() ? "YumeBuenFin" : undefined}
-                    className="min-h-11 w-full rounded-xl border border-line bg-paper-raised px-3 text-sm text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand"
-                  />
-                  <button type="submit" className="min-h-11 shrink-0 rounded-xl border border-line px-4 text-sm font-semibold text-ink transition-colors hover:border-brand">
-                    {t.promoApply}
-                  </button>
-                </div>
-                {promoError && <p role="alert" className="mt-1 text-xs font-medium text-brand">{t.promoInvalid}</p>}
-              </form>
-            ))}
+            {mode !== "onsite" && <PromoField promo={promo} setPromo={setPromo} lang={lang} id="promo-code" />}
             <ul className="mt-5 space-y-2 text-sm text-ink">
               <li className="flex items-start gap-2"><ShieldCheck size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.securePayment}</li>
               <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.afterPayment}</li>
