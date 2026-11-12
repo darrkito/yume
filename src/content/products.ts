@@ -81,7 +81,7 @@ export const FINISH_OPTIONS: LineOption[] = [
 /** Sticker size: the base rate of the product is the "chico" price; the rest add a fixed amount per piece. */
 export const SIZE_OPTIONS: LineOption[] = [
   { id: "chico", label: L("Chico (hasta 4 cm)", "Small (up to 4 cm)") },
-  { id: "mediano", label: L("Mediano (de 4 a 6 cm)", "Medium (4 to 6 cm)"), extraPerPiece: 1.5 },
+  { id: "mediano", label: L("Mediano (de 5 a 6 cm)", "Medium (5 to 6 cm)"), extraPerPiece: 1.5 },
   { id: "grande", label: L("Grande (de 7 a 8 cm)", "Large (7 to 8 cm)"), extraPerPiece: 3 },
 ];
 const DEFAULT_SUFFIX = `|${CUT_OPTIONS[0].id}|${FINISH_OPTIONS[0].id}|${SIZE_OPTIONS[0].id}`;
@@ -188,7 +188,7 @@ export const products: Product[] = [
     showGallery: true,
     specs: [
       { label: "Mínimo de compra", value: "40 piezas" },
-      { label: "Precio por pieza", value: "Chico (hasta 4 cm) $3.50 · Mediano (4 a 6 cm) $5 · Grande (7 a 8 cm) $6.50" },
+      { label: "Precio por pieza", value: "Chico (hasta 4 cm) $3.50 · Mediano (5 a 6 cm) $5 · Grande (7 a 8 cm) $6.50" },
       { label: "Otras medidas", value: "Más grande o algo específico: se cotiza por WhatsApp" },
       { label: "Material", value: "Vinil premium" },
       { label: "Laminado", value: "BOPP de alta calidad en todos los stickers" },
@@ -198,13 +198,13 @@ export const products: Product[] = [
       { label: "Personalización", value: "Tu diseño, personaje o foto" },
     ],
     description:
-      "Stickers troquelados en vinil premium con laminado BOPP de alta calidad, resistentes al agua, al sol y a rayones: para cualquier diseño, personaje o foto que quieras convertir en sticker, no solo logos. Se venden por pieza y el precio depende del tamaño: chico (hasta 4 cm) $3.50 c/u, mediano (de 4 a 6 cm) $5 c/u y grande (de 7 a 8 cm) $6.50 c/u. Si necesitas una medida más grande o algo más específico, lo cotizamos por WhatsApp. Envíanos tu imagen o diseño y te mandamos una prueba digital antes de imprimir.",
+      "Stickers troquelados en vinil premium con laminado BOPP de alta calidad, resistentes al agua, al sol y a rayones: para cualquier diseño, personaje o foto que quieras convertir en sticker, no solo logos. Se venden por pieza y el precio depende del tamaño: chico (hasta 4 cm) $3.50 c/u, mediano (de 5 a 6 cm) $5 c/u y grande (de 7 a 8 cm) $6.50 c/u. Si necesitas una medida más grande o algo más específico, lo cotizamos por WhatsApp. Envíanos tu imagen o diseño y te mandamos una prueba digital antes de imprimir.",
     metaDescription: "Stickers personalizados de vinil impermeable con tu diseño, personaje o foto. Desde $3.50 por pieza según tamaño, mínimo 40. Envíos a todo México.",
     details: [
       "Todos con laminado BOPP de alta calidad; el acabado (mate, brillante u holográfico) lo eliges tú",
       "Vinil premium con corte a la forma del diseño: troquelado o semitroquelado, tú eliges al pedir",
       "Se venden por cantidad de piezas, mínimo 40",
-      "Tres tamaños: chico hasta 4 cm ($3.50 c/u), mediano de 4 a 6 cm ($5 c/u) y grande de 7 a 8 cm ($6.50 c/u)",
+      "Tres tamaños: chico hasta 4 cm ($3.50 c/u), mediano de 5 a 6 cm ($5 c/u) y grande de 7 a 8 cm ($6.50 c/u)",
       "¿Más grande o algo específico? Se cotiza por WhatsApp",
       "Pide la cantidad exacta que necesitas: elígela o escríbela",
       "Resistentes al agua, al sol y a rayones",
@@ -239,7 +239,7 @@ export const products: Product[] = [
       },
       {
         q: "¿Cuál es el precio de los stickers de vinil?",
-        a: "Depende del tamaño: chico (hasta 4 cm) $3.50 c/u, mediano (de 4 a 6 cm) $5 c/u y grande (de 7 a 8 cm) $6.50 c/u, con mínimo de 40 piezas. El acabado holográfico suma $0.50 por pieza. Por ejemplo, 100 stickers chicos son $350 y 100 medianos son $500.",
+        a: "Depende del tamaño: chico (hasta 4 cm) $3.50 c/u, mediano (de 5 a 6 cm) $5 c/u y grande (de 7 a 8 cm) $6.50 c/u, con mínimo de 40 piezas. El acabado holográfico suma $0.50 por pieza. Por ejemplo, 100 stickers chicos son $350 y 100 medianos son $500.",
       },
       {
         q: "¿Y si necesito un sticker más grande de 9 cm o una medida específica?",
@@ -273,7 +273,7 @@ export const products: Product[] = [
     showGallery: true,
     specs: [
       { label: "Mínimo de compra", value: "50 piezas" },
-      { label: "Precio por pieza", value: "Chico (hasta 4 cm) $3 · Mediano (4 a 6 cm) $4.50 · Grande (7 a 8 cm) $6" },
+      { label: "Precio por pieza", value: "Chico (hasta 4 cm) $3 · Mediano (5 a 6 cm) $4.50 · Grande (7 a 8 cm) $6" },
       { label: "Otras medidas", value: "Más grande o algo específico: se cotiza por WhatsApp" },
       { label: "Laminado", value: "BOPP de alta calidad en todos los stickers" },
       { label: "Tipo de corte", value: "Troquelado o semitroquelado, tú eliges al pedir" },
@@ -283,12 +283,12 @@ export const products: Product[] = [
       { label: "Producción", value: "Sobre pedido" },
     ],
     description:
-      "Stickers y etiquetas personalizadas con tu logo o diseño, con laminado BOPP de alta calidad y resistentes al agua: etiquetas para productos, etiquetas para empaques, bolsas y cajas de tu negocio. Se venden por pieza y el precio depende del tamaño: chico (hasta 4 cm) $3 c/u, mediano (de 4 a 6 cm) $4.50 c/u y grande (de 7 a 8 cm) $6 c/u. Si necesitas una medida más grande o algo más específico, lo cotizamos por WhatsApp. Envíanos tu imagen (o el diseño que quieras convertir en etiqueta) y te mandamos una prueba digital antes de imprimir.",
+      "Stickers y etiquetas personalizadas con tu logo o diseño, con laminado BOPP de alta calidad y resistentes al agua: etiquetas para productos, etiquetas para empaques, bolsas y cajas de tu negocio. Se venden por pieza y el precio depende del tamaño: chico (hasta 4 cm) $3 c/u, mediano (de 5 a 6 cm) $4.50 c/u y grande (de 7 a 8 cm) $6 c/u. Si necesitas una medida más grande o algo más específico, lo cotizamos por WhatsApp. Envíanos tu imagen (o el diseño que quieras convertir en etiqueta) y te mandamos una prueba digital antes de imprimir.",
     metaDescription: "Etiquetas y stickers con tu logo para productos y empaques, resistentes al agua. Desde $3 por pieza según tamaño, mínimo 50. Envíos a todo México.",
     details: [
       "Todos con laminado BOPP de alta calidad; el acabado (mate, brillante u holográfico) lo eliges tú",
       "Se venden por cantidad de piezas, mínimo 50",
-      "Tres tamaños: chico hasta 4 cm ($3 c/u), mediano de 4 a 6 cm ($4.50 c/u) y grande de 7 a 8 cm ($6 c/u)",
+      "Tres tamaños: chico hasta 4 cm ($3 c/u), mediano de 5 a 6 cm ($4.50 c/u) y grande de 7 a 8 cm ($6 c/u)",
       "¿Más grande o algo específico? Se cotiza por WhatsApp",
       "Pide la cantidad exacta que necesitas: elígela o escríbela",
       "Resistentes al agua",
@@ -319,7 +319,7 @@ export const products: Product[] = [
       },
       {
         q: "¿Cuál es el precio de las etiquetas?",
-        a: "Depende del tamaño: chico (hasta 4 cm) $3 c/u, mediano (de 4 a 6 cm) $4.50 c/u y grande (de 7 a 8 cm) $6 c/u, con mínimo de 50 piezas. El acabado holográfico suma $0.50 por pieza. Por ejemplo, 100 etiquetas chicas son $300 y 100 medianas son $450. Si necesitas más de 9 cm o una medida específica, cotizamos por WhatsApp.",
+        a: "Depende del tamaño: chico (hasta 4 cm) $3 c/u, mediano (de 5 a 6 cm) $4.50 c/u y grande (de 7 a 8 cm) $6 c/u, con mínimo de 50 piezas. El acabado holográfico suma $0.50 por pieza. Por ejemplo, 100 etiquetas chicas son $300 y 100 medianas son $450. Si necesitas más de 9 cm o una medida específica, cotizamos por WhatsApp.",
       },
       {
         q: "¿Las etiquetas son resistentes al agua?",
