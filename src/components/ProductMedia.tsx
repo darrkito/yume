@@ -74,7 +74,7 @@ export function ProductMedia({
         </div>
       </div>
       {all.length > 1 && (
-        <ul className="mt-4 flex gap-3" aria-label={thumbLabel}>
+        <ul className="mt-4 flex flex-wrap gap-3" aria-label={thumbLabel}>
           {all.map((ph, i) => (
             <li key={ph.src}>
               <button
