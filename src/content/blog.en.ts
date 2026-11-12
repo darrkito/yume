@@ -661,7 +661,7 @@ export const blogPostsEn: BlogPost[] = [
       { heading: "Baby shower favors for a girl", body: ["Pink, cream or the family's chosen palette can accompany the baby's name. Coordinate the box and sticker with the invitation or table."] },
       { heading: "Baby shower favors for a boy", body: ["Try blue, green or the celebration's colors. The name and a simple illustration can appear on both the box and sticker."] },
       { heading: "Original favors with neutral palettes", body: ["Beige, white or soft green can create a neutral look. Choose a theme meaningful to the family and leave room for the name; you will receive a digital proof to review before production."] },
-      { heading: "How many to order and what they cost", body: [`Count confirmed guests and decide whether to give one per person or family; consider extras. The minimum is 10 favor boxes. The first 100 pieces cost $${priceOf("dulceros-personalizados", 10)} MXN for 10 or $${priceOf("dulceros-personalizados", 50)} MXN for 50; quantities above 100 are quoted on WhatsApp.`, "The minimum for vinyl stickers is 40 pieces. See the [social event favor box guide](/en/blog/wedding-quinceanera-baby-shower-favor-boxes) for ideas for other celebrations."] },
+      { heading: "How many to order and what they cost", body: [`Count confirmed guests and decide whether to give one per person or family; consider extras. The minimum is 10 favor boxes. 100 pieces (small size) cost $${priceOf("dulceros-personalizados", 10)} MXN for 10 or $${priceOf("dulceros-personalizados", 50)} MXN for 50; quantities above 100 are quoted on WhatsApp.`, "The minimum for vinyl stickers is 40 pieces. See the [social event favor box guide](/en/blog/wedding-quinceanera-baby-shower-favor-boxes) for ideas for other celebrations."] },
       { heading: "When to order favors", body: [`Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after digital proof approval. Add ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} business days for national shipping or ${PICKUP_EXTRA_DAYS} business day for Casa Blanca pickup in Guadalajara.`, "Allow time to decide on the name and theme and review the proof. Share your date and quantity on WhatsApp if you need to confirm the schedule."] },
     ],
     faq: [
@@ -802,7 +802,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "Custom sticker and label prices",
         body: [
-          "We sell by piece count, not by sheet, and there are two options: Logo Stickers & Labels, made for your business logo (50 pieces minimum), and Custom Vinyl Stickers, for any design, character or photo (40 pieces minimum). On both, past 100 pieces every extra piece is at wholesale price, 10% off.",
+          "We sell by piece count, not by sheet, and there are two options: Logo Stickers & Labels, made for your business logo (50 pieces minimum), and Custom Vinyl Stickers, for any design, character or photo (40 pieces minimum).",
           "On both you choose the cut (die-cut to your design's shape, or kiss-cut) and the finish: matte, glossy or holographic (holographic adds $0.50 per piece). All of them are water-resistant.",
         ],
         table: {
@@ -846,7 +846,7 @@ export const blogPostsEn: BlogPost[] = [
       },
       {
         q: "How much do 100 stickers with my logo cost?",
-        a: `100 pieces cost $${priceOf("stickers-logo-personalizado", 100)} MXN. Past 100, every extra piece is at wholesale price: for example, 200 pieces are $${priceOf("stickers-logo-personalizado", 200)} and 300 pieces are $${priceOf("stickers-logo-personalizado", 300)} MXN.`,
+        a: `100 pieces cost $${priceOf("stickers-logo-personalizado", 100)} MXN.`,
       },
       {
         q: "What is the minimum order?",
@@ -911,7 +911,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "How much custom stationery costs",
         body: [
-          `The first 100 pieces of Logo Stickers & Labels cost $${priceOf("stickers-logo-personalizado", 100)} MXN. Past 100 you get wholesale price, 10% off each extra piece. The 100-sheet medical prescription pad costs $${recetarioPrice("sin-diseno")} MXN if you already have your design and $${recetarioPrice("con-diseno")} MXN if we design it with you.`,
+          `100 pieces (small size) of Logo Stickers & Labels cost $${priceOf("stickers-logo-personalizado", 100)} MXN. The 100-sheet medical prescription pad costs $${recetarioPrice("sin-diseno")} MXN if you already have your design and $${recetarioPrice("con-diseno")} MXN if we design it with you.`,
           "The minimum order is 50 pieces for Logo Stickers & Labels and 40 pieces for Custom Vinyl Stickers. This table shows what each quantity costs, so you order what you will really use:",
         ],
         table: {
@@ -952,7 +952,7 @@ export const blogPostsEn: BlogPost[] = [
       },
       {
         q: "How much do stickers with my logo cost?",
-        a: `The first 100 pieces cost $${priceOf("stickers-logo-personalizado", 100)} MXN. Past 100 you get wholesale price: for example, 200 pieces cost $${priceOf("stickers-logo-personalizado", 200)} MXN.`,
+        a: `100 pieces (small size) cost $${priceOf("stickers-logo-personalizado", 100)} MXN.`,
       },
       {
         q: "How much does a custom medical prescription pad cost?",
@@ -1018,7 +1018,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "How much custom stationery costs",
         body: [
-          `Price depends on the product. The 100-sheet medical prescription pad costs $${recetarioPrice("sin-diseno")} MXN if you already have your design and $${recetarioPrice("con-diseno")} MXN if we design it with you. For logo stickers, the first 100 pieces cost $${priceOf("stickers-logo-personalizado", 100)} MXN; past 100 you get wholesale price, 10% off each extra piece.`,
+          `Price depends on the product. The 100-sheet medical prescription pad costs $${recetarioPrice("sin-diseno")} MXN if you already have your design and $${recetarioPrice("con-diseno")} MXN if we design it with you.`,
           "Stickers and labels are sold by piece count, not by sheet, so you order the quantity you actually need. The minimum is 50 pieces for Logo Stickers & Labels and 40 pieces for Custom Vinyl Stickers. This table shows what each quantity costs:",
         ],
         table: {
@@ -1061,7 +1061,7 @@ export const blogPostsEn: BlogPost[] = [
       },
       {
         q: "How much do 100 stickers with my logo cost?",
-        a: `The first 100 pieces cost $${priceOf("stickers-logo-personalizado", 100)} MXN. Past 100 you get wholesale price: for example, 200 pieces cost $${priceOf("stickers-logo-personalizado", 200)} MXN.`,
+        a: `100 pieces (small size) cost $${priceOf("stickers-logo-personalizado", 100)} MXN.`,
       },
       {
         q: "What is the minimum order for stickers and labels?",
@@ -1415,7 +1415,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "Quantity and price",
         body: [
-          `First 100 pieces: $${priceOf("stickers-vinil-impermeable", 100)}. Vinyl stickers are sold by piece count, not by sheet, with a minimum order of 40 pieces. Past 100, every extra piece is at wholesale price (10% off the base price).`,
+          `100 pieces (small size): $${priceOf("stickers-vinil-impermeable", 100)}. Vinyl stickers are sold by piece count, not by sheet, with a minimum order of 40 pieces.`,
           `For reference: 150 pieces come out to $${priceOf("stickers-vinil-impermeable", 150)} and 200 to $${priceOf("stickers-vinil-impermeable", 200)} MXN. Order the exact quantity you need: you pick it or type it in when you place your order.`,
           "It's the same premium vinyl, resistant to water, sun, and scratches, that we use for any other custom design, so it holds up well on water bottles, laptops, or wherever you want to stick it.",
         ],
@@ -1452,7 +1452,7 @@ export const blogPostsEn: BlogPost[] = [
       },
       {
         q: "How much do my pet's stickers cost?",
-        a: `First 100 pieces: $${priceOf("stickers-vinil-impermeable", 100)} MXN. Past 100, every extra piece is at wholesale price: 150 pieces cost $${priceOf("stickers-vinil-impermeable", 150)} and 200 pieces $${priceOf("stickers-vinil-impermeable", 200)}. The minimum order is 40 pieces.`,
+        a: `100 pieces (small size): $${priceOf("stickers-vinil-impermeable", 100)} MXN. The minimum order is 40 pieces.`,
       },
       {
         q: "Are the stickers water and sun resistant?",
@@ -1699,7 +1699,7 @@ export const blogPostsEn: BlogPost[] = [
     slug: BLOG_SLUG_EN["yume-vs-imprentas-online-stickers"],
     title: "Yume vs. Online Sticker Print Shops: What to Compare Before You Order",
     metaTitle: "Yume vs. Online Sticker Print Shops",
-    description: `We compare Yume with online sticker print shops in Mexico. First 100 pieces: $${priceOf("stickers-vinil-impermeable", 100)} MXN, with a digital proof and shipping across Mexico.`,
+    description: `We compare Yume with online sticker print shops in Mexico. 100 pieces (small size): $${priceOf("stickers-vinil-impermeable", 100)} MXN, with a digital proof and shipping across Mexico.`,
     category: "Guides",
     publishedAt: "2026-09-09",
     modifiedAt: "2026-10-26",
@@ -1723,22 +1723,22 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "The numbers",
         body: [
-          `First 100 pieces at Yume: $${priceOf("stickers-vinil-impermeable", 100)} MXN in vinyl and $${priceOf("stickers-logo-personalizado", 100)} MXN in logo labels, with a minimum order of $${priceOf("stickers-vinil-impermeable", 40)} MXN in vinyl. The Mexican print shops we reviewed charge $1.83 to $11.00 MXN per piece and require minimums of $319 to $550 MXN.`,
+          `100 pieces (small size) at Yume: $${priceOf("stickers-vinil-impermeable", 100)} MXN in vinyl and $${priceOf("stickers-logo-personalizado", 100)} MXN in logo labels, with a minimum order of $${priceOf("stickers-vinil-impermeable", 40)} MXN in vinyl. The Mexican print shops we reviewed charge $1.83 to $11.00 MXN per piece and require minimums of $319 to $550 MXN.`,
           "At some print shops the real minimum is only reached by buying several full sheets at once, which is why it's worth looking at the minimum in pesos and not just the per-piece price.",
         ],
         table: {
           headers: ["", "Price per piece", "Minimum order"],
           rows: [
             ["Mexican print shops reviewed (public prices, September 2026)", "$1.83 to $11.00 MXN", "$319 to $550 MXN"],
-            ["Yume: Custom Logo Stickers (first 100 pieces)", `$${perPiece("stickers-logo-personalizado", 100)} MXN`, `$${priceOf("stickers-logo-personalizado", 50)} MXN (50 pieces)`],
-            ["Yume: Waterproof Vinyl Stickers (first 100 pieces)", `$${perPiece("stickers-vinil-impermeable", 100)} MXN`, `$${priceOf("stickers-vinil-impermeable", 40)} MXN (40 pieces)`],
+            ["Yume: Custom Logo Stickers (100 pieces, small size)", `$${perPiece("stickers-logo-personalizado", 100)} MXN`, `$${priceOf("stickers-logo-personalizado", 50)} MXN (50 pieces)`],
+            ["Yume: Waterproof Vinyl Stickers (100 pieces, small size)", `$${perPiece("stickers-vinil-impermeable", 100)} MXN`, `$${priceOf("stickers-vinil-impermeable", 40)} MXN (40 pieces)`],
           ],
         },
       },
       {
-        heading: "What ordering more than 100 pieces costs at Yume",
+        heading: "What each size costs at Yume",
         body: [
-          "First 100 pieces: regular per-piece price. Past 100, every extra piece is at wholesale price, 10% less. That's why the per-piece price drops a little when you order more. The table shows the total and the per-piece price at common quantities for an event or a business.",
+          "100 pieces (small size): regular per-piece price. That's why the per-piece price drops a little when you order more. The table shows the total and the per-piece price at common quantities for an event or a business.",
           `For example, 200 vinyl pieces cost $${priceOf("stickers-vinil-impermeable", 200)} MXN ($${perPiece("stickers-vinil-impermeable", 200)} each). Order the quantity you need: you pick it or type it when you place your order.`,
         ],
         table: {
@@ -1796,7 +1796,7 @@ export const blogPostsEn: BlogPost[] = [
       },
       {
         q: "How much do stickers cost at Yume?",
-        a: `First 100 pieces: $${priceOf("stickers-vinil-impermeable", 100)} MXN in vinyl and $${priceOf("stickers-logo-personalizado", 100)} MXN in logo labels. Past 100, every extra piece is at wholesale price: 200 vinyl pieces cost $${priceOf("stickers-vinil-impermeable", 200)} MXN.`,
+        a: `100 pieces (small size): $${priceOf("stickers-vinil-impermeable", 100)} MXN in vinyl and $${priceOf("stickers-logo-personalizado", 100)} MXN in logo labels.`,
       },
       {
         q: "Are they sold by sheet or by piece?",
@@ -1826,7 +1826,7 @@ export const blogPostsEn: BlogPost[] = [
     slug: BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"],
     title: "Vinyl vs. Paper: Why Your Custom Stickers Should Be Vinyl",
     metaTitle: "Custom Stickers: Vinyl vs. Paper",
-    description: `Vinyl vs paper stickers: when each one makes sense. First 100 pieces: $${priceOf("stickers-vinil-impermeable", 100)} MXN, with a digital proof and shipping across Mexico.`,
+    description: `Vinyl vs paper stickers: when each one makes sense. 100 pieces (small size): $${priceOf("stickers-vinil-impermeable", 100)} MXN, with a digital proof and shipping across Mexico.`,
     category: "Guides",
     publishedAt: "2026-09-09",
     modifiedAt: "2026-10-26",
@@ -1878,7 +1878,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "How much vinyl stickers cost",
         body: [
-          `First 100 pieces: $${priceOf("stickers-vinil-impermeable", 100)} MXN for vinyl stickers and $${priceOf("stickers-logo-personalizado", 100)} MXN for logo stickers. Past 100 pieces, every extra piece is at wholesale price (10% off). The minimum order is 40 pieces for vinyl and 50 for logo stickers.`,
+          `100 pieces (small size): $${priceOf("stickers-vinil-impermeable", 100)} MXN for vinyl stickers and $${priceOf("stickers-logo-personalizado", 100)} MXN for logo stickers. The minimum order is 40 pieces for vinyl and 50 for logo stickers.`,
           `As a reference, 150 vinyl pieces cost $${priceOf("stickers-vinil-impermeable", 150)} and 200 pieces cost $${priceOf("stickers-vinil-impermeable", 200)} MXN. Order the exact quantity you need: you pick it or type it in when you place your order.`,
         ],
         table: {
@@ -1910,7 +1910,7 @@ export const blogPostsEn: BlogPost[] = [
       },
       {
         q: "How much do vinyl stickers cost?",
-        a: `First 100 pieces: $${priceOf("stickers-vinil-impermeable", 100)} MXN. Past 100, every extra piece is at wholesale price: 150 pieces cost $${priceOf("stickers-vinil-impermeable", 150)} and 200 pieces $${priceOf("stickers-vinil-impermeable", 200)}. The minimum order is 40 pieces.`,
+        a: `100 pieces (small size): $${priceOf("stickers-vinil-impermeable", 100)} MXN. The minimum order is 40 pieces.`,
       },
       {
         q: "Are they sold by sheet or by piece?",
@@ -2502,7 +2502,7 @@ export const blogPostsEn: BlogPost[] = [
         body: [
           "Yume operates as a custom print shop in Guadalajara, not a template shop. Every prescription pad, label or piece of stationery is designed around the real details of whoever orders it, goes through a digital proof you approve, and ships across Mexico from Guadalajara.",
           "If you already have a logo or brand identity, we adapt it directly into the piece; if you don't, we build it with you before reaching the digital proof stage. Either way, what you get is a piece that's actually yours, not a template with your name stamped on it.",
-          `For everyday pieces the catalog has clear prices: the first 100 pieces of the Labels with your Logo cost $${priceOf("stickers-logo-personalizado", 100)} MXN, and past 100 pieces you get wholesale price. The 100-sheet prescription pad costs $${recetarioPrice("sin-diseno")} MXN if you already have your design and $${recetarioPrice("con-diseno")} MXN if we design it with you. For invitations, wedding menus and other event pieces we quote on WhatsApp based on quantity and format.`,
+          `The 100-sheet prescription pad costs $${recetarioPrice("sin-diseno")} MXN if you already have your design and $${recetarioPrice("con-diseno")} MXN if we design it with you. For invitations, wedding menus and other event pieces we quote on WhatsApp based on quantity and format.`,
         ],
       },
       {
@@ -2528,7 +2528,7 @@ export const blogPostsEn: BlogPost[] = [
       },
       {
         q: "How much do labels with my logo cost?",
-        a: `The first 100 pieces cost $${priceOf("stickers-logo-personalizado", 100)} MXN. Past 100 you get wholesale price: for example, 200 pieces cost $${priceOf("stickers-logo-personalizado", 200)} MXN.`,
+        a: `100 pieces (small size) cost $${priceOf("stickers-logo-personalizado", 100)} MXN.`,
       },
       {
         q: "How long does my order take?",
@@ -2585,7 +2585,7 @@ export const blogPostsEn: BlogPost[] = [
     slug: BLOG_SLUG_EN["stickers-para-marca-pequena-vs-grande"],
     title: "Stickers for Small vs. Large Brands: How Many to Order",
     metaTitle: "Stickers for Small vs. Large Brands",
-    description: `How many stickers to order if your brand is small or large, or for an event. First 100 pieces: $${priceOf("stickers-logo-personalizado", 100)} MXN, with a digital proof.`,
+    description: `How many stickers to order if your brand is small or large, or for an event. 100 pieces (small size): $${priceOf("stickers-logo-personalizado", 100)} MXN, with a digital proof.`,
     category: "Guides",
     publishedAt: "2026-09-23",
     modifiedAt: "2026-10-26",
@@ -2603,7 +2603,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "If your brand already sells often: the per-piece price drops",
         body: [
-          `If you already sell often, ordering more makes sense: the first 100 pieces cost $${priceOf("stickers-logo-personalizado", 100)} MXN for custom logo stickers and $${priceOf("stickers-vinil-impermeable", 100)} MXN for vinyl. Past 100 you reach wholesale price and every extra piece costs 10% less, so the per-piece price drops the more you order.`,
+          `If you already sell often, ordering more makes sense: 100 pieces (small size) cost $${priceOf("stickers-logo-personalizado", 100)} MXN for custom logo stickers and $${priceOf("stickers-vinil-impermeable", 100)} MXN for vinyl.`,
           "It's the same process and the same provider: you pay less per piece and nothing else changes. If you need more than the quantity selector shows, request a quote over WhatsApp and we'll adjust the order.",
           "The table below shows the total and the per-piece price at typical quantities, taken from the catalog.",
         ],
@@ -2623,7 +2623,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "How to pick the right quantity for your stage",
         body: [
-          "Choose based on what you know today. If you don't know how many you'll use, start with the minimum (50 or 40 pieces) and reorder as it runs out. If you already have a known pace, estimate 2 to 3 months of use and order in the range where wholesale price applies (over 100 pieces). For an event, order close to your real guest count.",
+          "Choose based on what you know today. If you don't know how many you'll use, start with the minimum (50 or 40 pieces) and reorder as it runs out. For an event, order close to your real guest count.",
           "The process is identical in every case: you send your logo or design, we send a digital proof, you approve it, and it gets produced. The only thing that changes is the quantity you pick.",
           "You also don't have to decide everything at once. You can order a first batch, see how it gets used, and repeat the same design later without starting over.",
         ],
@@ -2657,11 +2657,11 @@ export const blogPostsEn: BlogPost[] = [
       },
       {
         q: "How much do stickers cost if I'm just starting?",
-        a: `The minimum costs $${priceOf("stickers-logo-personalizado", 50)} MXN for 50 custom logo stickers and $${priceOf("stickers-vinil-impermeable", 40)} MXN for 40 vinyl stickers. First 100 pieces: $${priceOf("stickers-logo-personalizado", 100)} MXN for logo stickers and $${priceOf("stickers-vinil-impermeable", 100)} MXN for vinyl.`,
+        a: `The minimum costs $${priceOf("stickers-logo-personalizado", 50)} MXN for 50 custom logo stickers and $${priceOf("stickers-vinil-impermeable", 40)} MXN for 40 vinyl stickers. 100 pieces (small size): $${priceOf("stickers-logo-personalizado", 100)} MXN for logo stickers and $${priceOf("stickers-vinil-impermeable", 100)} MXN for vinyl.`,
       },
       {
-        q: "What happens if I order more than 100 pieces?",
-        a: `Past 100 pieces you reach wholesale price: every extra piece costs 10% less. For example, 200 vinyl pieces cost $${priceOf("stickers-vinil-impermeable", 200)} MXN.`,
+        q: "Does the price change with size?",
+        a: `Yes: the per-piece price depends on size. Small (up to 5 cm) is the base price, medium (5 to 7 cm) adds $2 per piece and large (7 to 9 cm) adds $4. For example, 200 small vinyl pieces cost $${priceOf("stickers-vinil-impermeable", 200)} MXN.`,
       },
       {
         q: "Can I use the stickers for an event instead of a business?",
@@ -2694,7 +2694,7 @@ export const blogPostsEn: BlogPost[] = [
     slug: BLOG_SLUG_EN["stickers-para-bodas-eventos-y-fiestas"],
     title: "Stickers for Weddings, Events, and Parties: Ideas and How to Order",
     metaTitle: "Stickers for Weddings, Events, and Parties",
-    description: `Stickers for weddings, events, and parties: uses, sizes, and formats. First 100 pieces: $${priceOf("stickers-logo-personalizado", 100)} MXN, with a digital proof and shipping across Mexico.`,
+    description: `Stickers for weddings, events, and parties: uses, sizes, and formats. 100 pieces (small size): $${priceOf("stickers-logo-personalizado", 100)} MXN, with a digital proof and shipping across Mexico.`,
     category: "Guides",
     publishedAt: "2026-09-23",
     modifiedAt: "2026-10-26",
@@ -2730,7 +2730,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "How many stickers to order and what they cost",
         body: [
-          `First 100 pieces: $${priceOf("stickers-logo-personalizado", 100)} MXN for custom logo stickers and $${priceOf("stickers-vinil-impermeable", 100)} MXN for vinyl stickers. Past 100, every extra piece is at wholesale price. The minimum order is 50 pieces for logo stickers and 40 for vinyl, so you can order close to your event's real guest or table count.`,
+          `100 pieces (small size): $${priceOf("stickers-logo-personalizado", 100)} MXN for custom logo stickers and $${priceOf("stickers-vinil-impermeable", 100)} MXN for vinyl stickers. The minimum order is 50 pieces for logo stickers and 40 for vinyl, so you can order close to your event's real guest or table count.`,
           "A simple way to count: one piece per guest if they go on bags or bottles, one per envelope if you're sealing invitations, plus a few extra for tables, signs, and photos. Price by quantity:",
         ],
         table: {
@@ -2767,7 +2767,7 @@ export const blogPostsEn: BlogPost[] = [
       },
       {
         q: "How much do stickers for my event cost?",
-        a: `First 100 pieces: $${priceOf("stickers-logo-personalizado", 100)} MXN for custom logo stickers and $${priceOf("stickers-vinil-impermeable", 100)} MXN for vinyl stickers. Past 100, every extra piece is at wholesale price: 200 vinyl pieces cost $${priceOf("stickers-vinil-impermeable", 200)} MXN.`,
+        a: `100 pieces (small size): $${priceOf("stickers-logo-personalizado", 100)} MXN for custom logo stickers and $${priceOf("stickers-vinil-impermeable", 100)} MXN for vinyl stickers.`,
       },
       {
         q: "What is the minimum order?",
@@ -2865,7 +2865,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "How much does it cost to print custom stickers in Mexico?",
         body: [
-          "At Yume, printing custom stickers starts at $140 MXN: 40 pieces of waterproof vinyl stickers ($3.50 each) or 50 pieces of custom logo stickers ($3.00 each). The first 100 pieces are at the regular price and every piece beyond 100 drops 10% (wholesale price). Shipping anywhere in Mexico is free from $750 MXN, and so is pickup in Guadalajara.",
+          "At Yume, printing custom stickers starts at $160 MXN: 40 small (up to 5 cm) waterproof vinyl stickers at $4 each, or 50 small custom logo stickers at $3.50 each. Medium (5 to 7 cm) adds $2 per piece and large (7 to 9 cm) adds $4. Shipping anywhere in Mexico is free from $750 MXN, and so is pickup in Guadalajara.",
           "Price by quantity (minimum order is 50 pieces for logo stickers and 40 for vinyl):",
         ],
         table: {
@@ -3029,7 +3029,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "How much do die cut and kiss cut stickers cost?",
         body: [
-          `First 100 pieces: $${priceOf("stickers-vinil-impermeable", 100)} MXN for Waterproof Vinyl Stickers and $${priceOf("stickers-logo-personalizado", 100)} MXN for Custom Logo Stickers. Above 100, each extra piece is at wholesale price. The minimum order is 40 pieces for vinyl and 50 for logo stickers.`,
+          `100 pieces (small size): $${priceOf("stickers-vinil-impermeable", 100)} MXN for Waterproof Vinyl Stickers and $${priceOf("stickers-logo-personalizado", 100)} MXN for Custom Logo Stickers. The minimum order is 40 pieces for vinyl and 50 for logo stickers.`,
           "Choosing die cut or kiss cut does not change the base price in the table. Order the exact quantity you need: you pick or type it when you place your order.",
         ],
         table: {
@@ -3064,7 +3064,7 @@ export const blogPostsEn: BlogPost[] = [
       },
       {
         q: "How much do they cost?",
-        a: `First 100 pieces: $${priceOf("stickers-vinil-impermeable", 100)} MXN for vinyl and $${priceOf("stickers-logo-personalizado", 100)} MXN for logo stickers. Above 100 it is wholesale price. The minimum is 40 pieces for vinyl and 50 for logo stickers.`,
+        a: `100 pieces (small size): $${priceOf("stickers-vinil-impermeable", 100)} MXN for vinyl and $${priceOf("stickers-logo-personalizado", 100)} MXN for logo stickers. The minimum is 40 pieces for vinyl and 50 for logo stickers.`,
       },
       {
         q: "Can I see it before it is printed?",
@@ -3143,7 +3143,7 @@ export const blogPostsEn: BlogPost[] = [
     slug: BLOG_SLUG_EN["etiquetas-escolares-personalizadas-guadalajara"],
     title: "Custom school labels in Guadalajara: back-to-school guide",
     metaTitle: "Custom school labels: back-to-school guide",
-    description: `Custom school labels in Guadalajara: what goes on them, where to stick them, how many to order. First 100 pieces: $${priceOf("stickers-vinil-impermeable", 100)}, digital proof, shipping across Mexico.`,
+    description: `Custom school labels in Guadalajara: what goes on them, where to stick them, how many to order. 100 pieces (small size): $${priceOf("stickers-vinil-impermeable", 100)}, digital proof, shipping across Mexico.`,
     category: "Guides",
     publishedAt: "2026-10-17",
     modifiedAt: "2026-10-26",
@@ -3179,7 +3179,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "How to order custom school labels",
         body: [
-          `They are quoted on WhatsApp: send us the name (or names, for siblings), the design you like, and how many pieces you need. We work with vinyl stickers from 40 pieces. First 100 pieces: $${priceOf("stickers-vinil-impermeable", 100)}. Above 100 pieces, each extra piece is at wholesale price.`,
+          `They are quoted on WhatsApp: send us the name (or names, for siblings), the design you like, and how many pieces you need. We work with vinyl stickers from 40 pieces. 100 pieces (small size): $${priceOf("stickers-vinil-impermeable", 100)}.`,
           "We send a digital proof, normally within 24 hours of payment, with up to 2 rounds of adjustments. We print nothing without your approval. Here is the price by quantity:",
         ],
         table: {
@@ -3207,7 +3207,7 @@ export const blogPostsEn: BlogPost[] = [
     faq: [
       {
         q: "How much do custom school labels cost?",
-        a: `First 100 pieces: $${priceOf("stickers-vinil-impermeable", 100)}. Above 100 pieces, each extra piece is at wholesale price: 150 pieces cost $${priceOf("stickers-vinil-impermeable", 150)} and 200 pieces $${priceOf("stickers-vinil-impermeable", 200)}.`,
+        a: `100 pieces (small size): $${priceOf("stickers-vinil-impermeable", 100)}.`,
       },
       {
         q: "What is the minimum order?",
@@ -3304,7 +3304,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "How much name labels cost and how to get a quote",
         body: [
-          `Custom vinyl labels start at 40 pieces. First 100 pieces: $${priceOf("stickers-vinil-impermeable", 100)}. Above 100 pieces, each extra piece is at wholesale price. Send us the name, the design, and the quantity on WhatsApp, and we send a digital proof before printing.`,
+          `Custom vinyl labels start at 40 pieces. 100 pieces (small size): $${priceOf("stickers-vinil-impermeable", 100)}. Send us the name, the design, and the quantity on WhatsApp, and we send a digital proof before printing.`,
           "The proof normally arrives within 24 hours of payment, with up to 2 rounds of adjustments. We print nothing without your approval. Here is the price by quantity:",
         ],
         table: {
@@ -3332,7 +3332,7 @@ export const blogPostsEn: BlogPost[] = [
       },
       {
         q: "How much do name labels cost?",
-        a: `First 100 pieces: $${priceOf("stickers-vinil-impermeable", 100)}. Above 100 pieces, each extra piece is at wholesale price: 150 pieces cost $${priceOf("stickers-vinil-impermeable", 150)} and 200 pieces $${priceOf("stickers-vinil-impermeable", 200)}.`,
+        a: `100 pieces (small size): $${priceOf("stickers-vinil-impermeable", 100)}.`,
       },
       {
         q: "What is the minimum order?",
@@ -3398,7 +3398,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "How much label printing by the piece costs",
         body: [
-          `These are the real prices from our catalog. Past 100 pieces, every extra piece is at wholesale price, 10% off. Shipping is separate: $${NATIONAL_SHIPPING_PRICE} MXN anywhere in Mexico or $${CASABLANCA_PRICE} MXN if you pick up at a Casa Blanca branch in Guadalajara, and it's free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more.`,
+          `These are the real prices from our catalog. Shipping is separate: $${NATIONAL_SHIPPING_PRICE} MXN anywhere in Mexico or $${CASABLANCA_PRICE} MXN if you pick up at a Casa Blanca branch in Guadalajara, and it's free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more.`,
         ],
         table: {
           headers: ["Quantity", "Logo stickers & labels", "Vinyl stickers (your design)"],
@@ -3426,7 +3426,7 @@ export const blogPostsEn: BlogPost[] = [
       },
       {
         q: "How much do 100 custom labels cost?",
-        a: `100 labels with your logo cost $${priceOf("stickers-logo-personalizado", 100)} MXN and 100 vinyl stickers with your design cost $${priceOf("stickers-vinil-impermeable", 100)} MXN. Past 100 pieces, every extra piece is at wholesale price.`,
+        a: `100 labels with your logo cost $${priceOf("stickers-logo-personalizado", 100)} MXN and 100 vinyl stickers with your design cost $${priceOf("stickers-vinil-impermeable", 100)} MXN.`,
       },
       {
         q: "Do you print roll labels?",
@@ -3482,10 +3482,10 @@ export const blogPostsEn: BlogPost[] = [
           "The cut follows the shape of your design: round, ornament or star shaped, or square. You choose die cut (each label loose) or kiss cut (several on one sheet, easy to peel). The finish can be matte, glossy or holographic; holographic looks very festive and costs $0.50 MXN more per piece.",
         ],
         table: {
-          headers: ["Product", "Minimum", "First 100 pieces", "Over 100"],
+          headers: ["Product", "Minimum", "100 pieces (small size)", "Medium / large size"],
           rows: [
-            ["Custom vinyl stickers (any design, name or photo)", "40 pieces", "$350 MXN", "$3.15 MXN per extra piece"],
-            ["Logo stickers and labels (businesses)", "50 pieces", "$300 MXN", "$2.70 MXN per extra piece"],
+            ["Custom vinyl stickers (any design, name or photo)", "40 pieces", "$400 MXN", "Medium +$2, large +$4 per piece"],
+            ["Logo stickers and labels (businesses)", "50 pieces", "$350 MXN", "Medium +$2, large +$4 per piece"],
           ],
         },
       },
@@ -3540,7 +3540,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "How many wedding favors to order and what do they cost?",
         body: [
           "Order one favor per guest or one per family or couple, plus a few extra for the couple's table, photos and surprises. Start from your confirmed guest list, because at Yume you buy the exact number of pieces and the minimum depends on the product.",
-          `The minimum is 10 favor boxes and 40 vinyl stickers. First 100 pieces: 100 favor boxes cost $${priceOf("dulceros-personalizados", 100)} MXN and 100 vinyl stickers cost $${priceOf("stickers-vinil-impermeable", 100)} MXN. For stickers, past 100 pieces each extra piece is at wholesale price. Temporary tattoos are quoted over WhatsApp.`,
+          `The minimum is 10 favor boxes and 40 vinyl stickers. 100 favor boxes cost $${priceOf("dulceros-personalizados", 100)} MXN and 100 small vinyl stickers (up to 5 cm) cost $${priceOf("stickers-vinil-impermeable", 100)} MXN. Temporary tattoos are quoted over WhatsApp.`,
           "A practical count: with 80 guests, order 80 pieces plus 5 or 10 spare. Price by quantity:",
         ],
         table: {

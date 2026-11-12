@@ -10,7 +10,7 @@ import { DesignSheet } from "@/components/DesignSheet";
 import { LineOptionPicker } from "@/components/LineOptionPicker";
 import { QtyInput } from "@/components/QtyInput";
 import { LogoUploadNote } from "@/components/LogoUploadNote";
-import { cartItemLabel, defaultVariantId, lineNeedsDesign, hasVariants, hasWholesale, MAX_PIECES, pieceCount, piecesForAmount, resolvePrice, tieredPrice, wholesaleRate, withPieces, type Product } from "@/content/products";
+import { cartItemLabel, defaultVariantId, lineNeedsDesign, hasVariants, hasWholesale, MAX_PIECES, pieceCount, resolvePrice, tieredPrice, wholesaleRate, withPieces, type Product } from "@/content/products";
 import { cartItemLabelEn, getProductTranslation } from "@/content/products.en";
 import { waLink } from "@/content/site";
 import { CASABLANCA_PRICE, FREE_SHIPPING_THRESHOLD, NATIONAL_SHIPPING_PRICE } from "@/content/shipping";
@@ -114,7 +114,7 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
       </p>
     );
   } else if (tiers) {
-    const n = piecesForAmount(tiers, FREE_SHIPPING_THRESHOLD);
+    const n = Math.max(tiers.baseQty, Math.ceil(FREE_SHIPPING_THRESHOLD / (price / (pieces || tiers.baseQty))));
     nudge = (
       <button type="button" onClick={() => setVariantId(withPieces(variantId, n))} className={nudgeClass}>
         <Truck size={16} aria-hidden="true" />
@@ -199,7 +199,7 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
             >
               {product.variants!.map((v) => (
                 <option key={v.id} value={v.id}>
-                  {v.id} {t.pieces} · {formatMXN(v.price)}
+                  {v.id} {t.pieces} · {formatMXN(resolvePrice(product, withPieces(variantId, Number(v.id))))}
                 </option>
               ))}
               {!product.variants?.some((v) => v.id === String(pieces)) && (
@@ -230,7 +230,7 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
 
       {product.lineOptions && (
         <>
-          <LineOptionPicker variantId={variantId} onChange={setVariantId} lang={lang} />
+          <LineOptionPicker baseRate={product.tiers!.rate} variantId={variantId} onChange={setVariantId} lang={lang} />
         </>
       )}
 
@@ -323,7 +323,7 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
       {tiers && !hasWholesale(tiers) && (
         <div className="mt-3 rounded-xl bg-brand-tint px-4 py-3 text-sm">
           <p className="text-ink">
-            {t.tierFlat.replace("{unit}", formatMXN(tiers.rate)).replace("{min}", String(tiers.baseQty))}
+            {t.tierFlat.replace("{unit}", formatMXN(pieces ? price / pieces : tiers.rate)).replace("{min}", String(tiers.baseQty))}
           </p>
         </div>
       )}

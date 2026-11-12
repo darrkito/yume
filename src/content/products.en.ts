@@ -150,8 +150,8 @@ export const productsEn: Record<string, ProductTranslation> = {
     category: "Custom Stickers",
     specs: [
       { label: "Minimum order", value: "50 pieces" },
-      { label: "First 100 pieces", value: "$300 ($3.00 each)" },
-      { label: "Wholesale price", value: "Over 100 pieces: each extra piece at $2.70 (10% off)" },
+      { label: "Price per piece", value: "Small (up to 5 cm) $3.50 · Medium (5 to 7 cm) $5.50 · Large (7 to 9 cm) $7.50" },
+      { label: "Other sizes", value: "Bigger or something specific: quoted on WhatsApp" },
       { label: "Cut type", value: "Die cut or kiss cut, you choose when ordering" },
       { label: "Finish", value: "Matte, glossy or holographic (holographic +$0.50 per piece)" },
       { label: "Customization", value: "Your logo or design" },
@@ -159,13 +159,13 @@ export const productsEn: Record<string, ProductTranslation> = {
       { label: "Production", value: "Made to order" },
     ],
     description:
-      "Custom stickers with your logo or design, water-resistant. Sold by piece count, not by sheet: the first 100 pieces are $300 ($3.00 each), and the more you order, the better: go past 100 and you unlock wholesale pricing, with every extra piece at $2.70, 10% off. Send us your image (or the design you'd like turned into a sticker) and we'll send a digital proof before printing.",
+      "Custom stickers with your logo or design, water-resistant. Sold by piece, priced by size: small (up to 5 cm) $3.50 each, medium (5 to 7 cm) $5.50 each and large (7 to 9 cm) $7.50 each. Need something bigger or more specific? We quote it on WhatsApp. Send us your image (or the design you'd like turned into a sticker) and we'll send a digital proof before printing.",
     metaDescription:
-      "Custom stickers with your logo, water-resistant. First 100 pieces for $300, with wholesale pricing on every extra piece. Digital proof before printing.",
+      "Custom stickers with your logo, water-resistant. From $3.50 per piece depending on size. Digital proof before printing.",
     details: [
       "Sold by piece count, 50-piece minimum",
-      "First 100 pieces: $300 ($3.00 each)",
-      "Over 100 pieces: wholesale price, every extra piece at $2.70 (10% off)",
+      "Three sizes: small up to 5 cm ($3.50 each), medium 5 to 7 cm ($5.50 each), large 7 to 9 cm ($7.50 each)",
+      "Bigger or something specific? Quoted on WhatsApp",
       "Order the exact amount you need: pick it or type it",
       "Water-resistant",
       "We print your logo or the design you send us",
@@ -188,7 +188,7 @@ export const productsEn: Record<string, ProductTranslation> = {
       },
       {
         q: "What's the price of the stickers?",
-        a: "The first 100 pieces are $300 ($3.00 each). Go past 100 and you unlock wholesale pricing: every extra piece is $2.70, 10% off. For example, 150 pieces is $435 and 300 pieces is $840.",
+        a: "It depends on the size: small (up to 5 cm) $3.50 each, medium (5 to 7 cm) $5.50 each, large (7 to 9 cm) $7.50 each, 50-piece minimum. Holographic adds $0.50 per piece. For example, 100 small labels are $350 and 100 medium are $550. Need more than 9 cm or a specific size? We quote it on WhatsApp.",
       },
       {
         q: "Are the stickers water-resistant?",
@@ -217,8 +217,8 @@ export const productsEn: Record<string, ProductTranslation> = {
     category: "Custom Vinyl Stickers",
     specs: [
       { label: "Minimum order", value: "40 pieces" },
-      { label: "First 100 pieces", value: "$350 ($3.50 each)" },
-      { label: "Wholesale price", value: "Over 100 pieces: each extra piece at $3.15 (10% off)" },
+      { label: "Price per piece", value: "Small (up to 5 cm) $4 · Medium (5 to 7 cm) $6 · Large (7 to 9 cm) $8" },
+      { label: "Other sizes", value: "Bigger or something specific: quoted on WhatsApp" },
       { label: "Material", value: "Premium vinyl" },
       { label: "Cut type", value: "Die cut or kiss cut, you choose when ordering" },
       { label: "Finish", value: "Matte, glossy or holographic (holographic +$0.50 per piece)" },
@@ -226,14 +226,14 @@ export const productsEn: Record<string, ProductTranslation> = {
       { label: "Customization", value: "Your design, character, or photo" },
     ],
     description:
-      "Die-cut stickers on premium vinyl, resistant to water, sun, and scratches: for any design, character, or photo you want turned into a sticker, not just logos. Sold by piece count, not by sheet: the first 100 pieces are $350 ($3.50 each), and the more you order, the better: go past 100 and you unlock wholesale pricing, with every extra piece at $3.15, 10% off. Send us your image or design and we'll send a digital proof before printing.",
+      "Die-cut stickers on premium vinyl, resistant to water, sun, and scratches: for any design, character, or photo you want turned into a sticker, not just logos. Sold by piece, priced by size: small (up to 5 cm) $4 each, medium (5 to 7 cm) $6 each and large (7 to 9 cm) $8 each. Need something bigger or more specific? We quote it on WhatsApp. Send us your image or design and we'll send a digital proof before printing.",
     metaDescription:
-      "Custom vinyl stickers, resistant to water, sun, and scratches. Any design, character, or photo. First 100 pieces for $350, with wholesale pricing on every extra piece.",
+      "Custom vinyl stickers, resistant to water, sun, and scratches. Any design, character, or photo. From $4 per piece depending on size.",
     details: [
       "Premium vinyl cut to the shape of your design: die cut or kiss cut, you choose when ordering",
       "Sold by piece count, 40-piece minimum",
-      "First 100 pieces: $350 ($3.50 each)",
-      "Over 100 pieces: wholesale price, every extra piece at $3.15 (10% off)",
+      "Three sizes: small up to 5 cm ($4 each), medium 5 to 7 cm ($6 each), large 7 to 9 cm ($8 each)",
+      "Bigger or something specific? Quoted on WhatsApp",
       "Order the exact amount you need: pick it or type it",
       "Water, sun, and scratch resistant",
       "Great for your favorite characters, pets, photos, or any design",
@@ -260,7 +260,7 @@ export const productsEn: Record<string, ProductTranslation> = {
       },
       {
         q: "What's the price of the vinyl stickers?",
-        a: "The first 100 pieces are $350 ($3.50 each). Go past 100 and you unlock wholesale pricing: every extra piece is $3.15, 10% off. For example, 150 pieces is $507.50 and 200 pieces is $665.",
+        a: "It depends on the size: small (up to 5 cm) $4 each, medium (5 to 7 cm) $6 each, large (7 to 9 cm) $8 each, 40-piece minimum. Holographic adds $0.50 per piece. For example, 100 small stickers are $400 and 100 medium are $600. Need more than 9 cm or a specific size? We quote it on WhatsApp.",
       },
       {
         q: "Is the vinyl water and sun resistant?",
@@ -403,7 +403,7 @@ export function cartItemLabelEn(product: Product, variantId?: string): string {
   const pieces = pieceCount(product, variantId);
   if (pieces !== null) {
     const v = parseVariant(variantId);
-    return [`${t.name}: ${pieces} pieces`, v.cut?.label.en, v.finish?.label.en].filter(Boolean).join(" · ");
+    return [`${t.name}: ${pieces} pieces`, v.cut?.label.en, v.finish?.label.en, product.lineOptions ? v.size.label.en : undefined].filter(Boolean).join(" · ");
   }
   const variant = product.variants?.find((v) => v.id === variantId);
   if (!variant) return t.name;

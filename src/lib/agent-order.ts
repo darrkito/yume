@@ -2,7 +2,7 @@
 // order: friendly fields -> the catalog's variantId, an exact price, and a
 // cart link the shopper opens to pay. Shared by the MCP server, the A2A agent
 // and the cart page (which reads the same link format). No React here.
-import { CUT_OPTIONS, FINISH_OPTIONS, cartItemLabel, defaultVariantId, getProduct, hasVariants, isValidVariant, resolvePrice, type Product } from "@/content/products";
+import { CUT_OPTIONS, FINISH_OPTIONS, SIZE_OPTIONS, cartItemLabel, defaultVariantId, getProduct, hasVariants, isValidVariant, resolvePrice, type Product } from "@/content/products";
 import { cartItemLabelEn } from "@/content/products.en";
 import { PERSONALIZATION } from "@/content/personalization";
 import { FREE_SHIPPING_THRESHOLD, deliverySurcharge } from "@/content/shipping";
@@ -28,7 +28,7 @@ export function normalizeLine(raw: unknown): AgentLine {
   let variantId = typeof r.variantId === "string" ? r.variantId : undefined;
   if (!variantId && product.tiers) {
     const base = String(r.pieces ?? product.tiers.baseQty);
-    variantId = product.lineOptions ? `${base}|${String(r.cut ?? CUT_OPTIONS[0].id)}|${String(r.finish ?? FINISH_OPTIONS[0].id)}` : base;
+    variantId = product.lineOptions ? `${base}|${String(r.cut ?? CUT_OPTIONS[0].id)}|${String(r.finish ?? FINISH_OPTIONS[0].id)}|${String(r.size ?? SIZE_OPTIONS[0].id)}` : base;
   } else if (!variantId && hasVariants(product)) {
     variantId = typeof r.option === "string" ? r.option : defaultVariantId(product);
   }
@@ -117,7 +117,9 @@ export function orderGuide(product: Product, lang: "es" | "en") {
         ? {
             cutOptions: CUT_OPTIONS.map((o) => ({ id: o.id, label: o.label[lang] })),
             finishOptions: FINISH_OPTIONS.map((o) => ({ id: o.id, label: o.label[lang], extraPerPiece: o.extraPerPiece ?? 0 })),
-            variantIdFormat: "<pieces>|<cut>|<finish>, e.g. 150|troquelado|holografico",
+            sizeOptions: SIZE_OPTIONS.map((o) => ({ id: o.id, label: o.label[lang], extraPerPiece: o.extraPerPiece ?? 0 })),
+            sizeNote: "Base price per piece is the chico (small) price; mediano and grande add extraPerPiece. Larger or custom sizes: quote on WhatsApp.",
+            variantIdFormat: "<pieces>|<cut>|<finish>|<size>, e.g. 150|troquelado|holografico|mediano",
           }
         : { variantIdFormat: "<pieces>, e.g. 20" }),
       ...base,

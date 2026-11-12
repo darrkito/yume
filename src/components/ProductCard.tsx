@@ -63,7 +63,7 @@ export function ProductCard({
           <p className="mt-1 text-xs leading-relaxed text-ink-soft">
             {hasWholesale(tiers)
               ? t.cardTier.replace("{qty}", String(tiers.discountQty)).replace("{price}", formatMXN(tieredPrice(tiers, tiers.discountQty)))
-              : t.cardFlat.replace("{unit}", formatMXN(tiers.rate)).replace("{min}", String(tiers.baseQty))}
+              : t.cardFlat.replace("{unit}", (product.lineOptions ? t.from : "") + formatMXN(tiers.rate)).replace("{min}", String(tiers.baseQty))}
           </p>
         )}
         {!product.quickBuy && (

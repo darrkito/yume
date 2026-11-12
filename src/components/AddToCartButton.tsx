@@ -43,7 +43,7 @@ export function AddToCartButton({ product, compact = false, lang = "es" }: { pro
           ))}
         </select>
       )}
-      {product.lineOptions && <LineOptionPicker variantId={variantId} onChange={setVariantId} lang={lang} compact />}
+      {product.lineOptions && <LineOptionPicker baseRate={product.tiers!.rate} variantId={variantId} onChange={setVariantId} lang={lang} compact />}
       <button
         type="button"
         onClick={handleAdd}

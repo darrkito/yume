@@ -58,7 +58,7 @@ export interface Product {
    * (a design, a letterhead) and its card routes to the product page. */
   quickBuy?: boolean;
   /** Stickers: cut type and finish are chosen on the product page and ride in
-   * the cart line's variantId as "<pieces>|<cut>|<finish>" (see lineVariantId). */
+   * the cart line's variantId as "<pieces>|<cut>|<finish>|<size>" (see lineVariantId). */
   lineOptions?: boolean;
 }
 
@@ -78,16 +78,24 @@ export const FINISH_OPTIONS: LineOption[] = [
   { id: "brillante", label: L("Brillante", "Glossy") },
   { id: "holografico", label: L("Holográfico", "Holographic"), extraPerPiece: 0.5 },
 ];
-const DEFAULT_SUFFIX = `|${CUT_OPTIONS[0].id}|${FINISH_OPTIONS[0].id}`;
+/** Sticker size: the base rate of the product is the "chico" price; the rest add a fixed amount per piece. */
+export const SIZE_OPTIONS: LineOption[] = [
+  { id: "chico", label: L("Chico (hasta 5 cm)", "Small (up to 5 cm)") },
+  { id: "mediano", label: L("Mediano (de 5 a 7 cm)", "Medium (5 to 7 cm)"), extraPerPiece: 2 },
+  { id: "grande", label: L("Grande (de 7 a 9 cm)", "Large (7 to 9 cm)"), extraPerPiece: 4 },
+];
+const DEFAULT_SUFFIX = `|${CUT_OPTIONS[0].id}|${FINISH_OPTIONS[0].id}|${SIZE_OPTIONS[0].id}`;
 
 /** "80|troquelado|mate" -> { base: "80", cut, finish }; ids not in the catalog come back undefined. */
 export function parseVariant(variantId?: string) {
-  const [base = "", cut, finish, ...rest] = (variantId ?? "").split("|");
+  const [base = "", cut, finish, size, ...rest] = (variantId ?? "").split("|");
   return {
     base,
     cut: CUT_OPTIONS.find((o) => o.id === cut),
     finish: FINISH_OPTIONS.find((o) => o.id === finish),
-    shapeOk: rest.length === 0 && (cut === undefined) === (finish === undefined),
+    // Carts saved before sizes existed carry only cut|finish: they price as "chico".
+    size: SIZE_OPTIONS.find((o) => o.id === size) ?? SIZE_OPTIONS[0],
+    shapeOk: rest.length === 0 && (cut === undefined) === (finish === undefined) && (size === undefined || SIZE_OPTIONS.some((o) => o.id === size)),
     hasSuffix: cut !== undefined || finish !== undefined,
   };
 }
@@ -104,7 +112,7 @@ export const optionSuffix = (variantId?: string) => {
   return i < 0 ? "" : variantId!.slice(i);
 };
 
-export const lineVariantId = (pieces: number, cutId: string, finishId: string) => `${pieces}|${cutId}|${finishId}`;
+export const lineVariantId = (pieces: number, cutId: string, finishId: string, sizeId: string = SIZE_OPTIONS[0].id) => `${pieces}|${cutId}|${finishId}|${sizeId}`;
 
 /** Per-piece pricing for products sold by piece count (stickers): a flat
  * rate up to `discountQty`, then every piece beyond it at the wholesale
@@ -147,15 +155,15 @@ function buildTieredVariants(t: TierPricing, presets: number, presetStep = t.ste
   });
 }
 
-// Stickers: 50 piezas mínimo a $3.00/pieza ($150); las primeras 100 cuestan
-// $300 y cada pieza extra después de 100 va a precio mayoreo, $2.70 (10% menos).
-const STICKER_TIERS: TierPricing = { baseQty: 50, rate: 3.0, stepQty: 25, discountQty: 100, discountedStepPrice: 67.5 };
+// Etiquetas con logo: 50 piezas mínimo, precio por pieza según tamaño (sin mayoreo):
+// chico $3.50, mediano $5.50, grande $7.50 (`rate` = chico; ver SIZE_OPTIONS).
+const STICKER_TIERS: TierPricing = { baseQty: 50, rate: 3.5, stepQty: 25, discountQty: MAX_PIECES, discountedStepPrice: 87.5 };
 const stickerVariants = buildTieredVariants(STICKER_TIERS, 10); // presets 50→300
 const STICKER_BASE_PRICE = tieredPrice(STICKER_TIERS, STICKER_TIERS.baseQty);
 
-// Vinyl: 40 piezas mínimo a $3.50/pieza ($140); las primeras 100 cuestan $350
-// y cada pieza extra después de 100 va a precio mayoreo, $3.15 (10% menos).
-const VINYL_TIERS: TierPricing = { baseQty: 40, rate: 3.5, stepQty: 10, discountQty: 100, discountedStepPrice: 31.5 };
+// Vinil: 40 piezas mínimo, precio por pieza según tamaño (sin mayoreo):
+// chico $4, mediano $6, grande $8 (`rate` = chico; ver SIZE_OPTIONS).
+const VINYL_TIERS: TierPricing = { baseQty: 40, rate: 4, stepQty: 10, discountQty: MAX_PIECES, discountedStepPrice: 40 };
 const vinylStickerVariants = buildTieredVariants(VINYL_TIERS, 10); // presets 40→140
 const VINYL_BASE_PRICE = tieredPrice(VINYL_TIERS, VINYL_TIERS.baseQty);
 
@@ -169,7 +177,7 @@ export const products: Product[] = [
   {
     slug: "stickers-vinil-impermeable",
     name: "Stickers de Vinil Personalizados",
-    metaTitle: "Stickers Personalizados de Vinil | 100 por $350",
+    metaTitle: "Stickers Personalizados de Vinil | Desde $4 c/u",
     price: VINYL_BASE_PRICE,
     currency: "MXN",
     updatedAt: "2026-10-17",
@@ -180,8 +188,8 @@ export const products: Product[] = [
     showGallery: true,
     specs: [
       { label: "Mínimo de compra", value: "40 piezas" },
-      { label: "Primeras 100 piezas", value: "$350 ($3.50 c/u)" },
-      { label: "Precio mayoreo", value: "Más de 100 piezas: cada pieza extra a $3.15 (10% menos)" },
+      { label: "Precio por pieza", value: "Chico (hasta 5 cm) $4 · Mediano (5 a 7 cm) $6 · Grande (7 a 9 cm) $8" },
+      { label: "Otras medidas", value: "Más grande o algo específico: se cotiza por WhatsApp" },
       { label: "Material", value: "Vinil premium" },
       { label: "Tipo de corte", value: "Troquelado o semitroquelado, tú eliges al pedir" },
       { label: "Acabado", value: "Mate, brillante u holográfico (holográfico +$0.50 por pieza)" },
@@ -189,13 +197,13 @@ export const products: Product[] = [
       { label: "Personalización", value: "Tu diseño, personaje o foto" },
     ],
     description:
-      "Stickers troquelados en vinil premium, resistentes al agua, al sol y a rayones: para cualquier diseño, personaje o foto que quieras convertir en sticker, no solo logos. Se venden por cantidad de piezas, no por planilla: las primeras 100 piezas cuestan $350 ($3.50 c/u) y, entre más pidas, mejor: pasando las 100 entras a precio mayoreo y cada pieza extra te sale en $3.15, 10% menos. Envíanos tu imagen o diseño y te mandamos una prueba digital antes de imprimir.",
-    metaDescription: "Stickers personalizados de vinil impermeable con tu diseño, personaje o foto. Primeras 100 piezas por $350, mínimo 40. Envíos a todo México.",
+      "Stickers troquelados en vinil premium, resistentes al agua, al sol y a rayones: para cualquier diseño, personaje o foto que quieras convertir en sticker, no solo logos. Se venden por pieza y el precio depende del tamaño: chico (hasta 5 cm) $4 c/u, mediano (de 5 a 7 cm) $6 c/u y grande (de 7 a 9 cm) $8 c/u. Si necesitas una medida más grande o algo más específico, lo cotizamos por WhatsApp. Envíanos tu imagen o diseño y te mandamos una prueba digital antes de imprimir.",
+    metaDescription: "Stickers personalizados de vinil impermeable con tu diseño, personaje o foto. Desde $4 por pieza según tamaño, mínimo 40. Envíos a todo México.",
     details: [
       "Vinil premium con corte a la forma del diseño: troquelado o semitroquelado, tú eliges al pedir",
       "Se venden por cantidad de piezas, mínimo 40",
-      "Primeras 100 piezas: $350 ($3.50 c/u)",
-      "Más de 100 piezas: precio mayoreo, cada pieza extra a $3.15 (10% menos)",
+      "Tres tamaños: chico hasta 5 cm ($4 c/u), mediano de 5 a 7 cm ($6 c/u) y grande de 7 a 9 cm ($8 c/u)",
+      "¿Más grande o algo específico? Se cotiza por WhatsApp",
       "Pide la cantidad exacta que necesitas: elígela o escríbela",
       "Resistentes al agua, al sol y a rayones",
       "Ideal para tus personajes favoritos, mascotas, fotos o cualquier diseño",
@@ -225,7 +233,11 @@ export const products: Product[] = [
       },
       {
         q: "¿Cuál es el precio de los stickers de vinil?",
-        a: "Las primeras 100 piezas cuestan $350 ($3.50 c/u). Y pasando las 100 entras a precio mayoreo: cada pieza extra te sale en $3.15, 10% menos. Por ejemplo, 150 piezas son $507.50 y 200 piezas son $665.",
+        a: "Depende del tamaño: chico (hasta 5 cm) $4 c/u, mediano (de 5 a 7 cm) $6 c/u y grande (de 7 a 9 cm) $8 c/u, con mínimo de 40 piezas. El acabado holográfico suma $0.50 por pieza. Por ejemplo, 100 stickers chicos son $400 y 100 medianos son $600.",
+      },
+      {
+        q: "¿Y si necesito un sticker más grande de 9 cm o una medida específica?",
+        a: "Escríbenos por WhatsApp con la medida y la cantidad y te cotizamos aparte.",
       },
       {
         q: "¿El vinil resiste el agua y el sol?",
@@ -244,7 +256,7 @@ export const products: Product[] = [
   {
     slug: "stickers-logo-personalizado",
     name: "Stickers y Etiquetas con tu Logo",
-    metaTitle: "Etiquetas Personalizadas con Logo | 100 por $300",
+    metaTitle: "Etiquetas Personalizadas con Logo | Desde $3.50 c/u",
     price: STICKER_BASE_PRICE,
     currency: "MXN",
     updatedAt: "2026-10-17",
@@ -255,8 +267,8 @@ export const products: Product[] = [
     showGallery: true,
     specs: [
       { label: "Mínimo de compra", value: "50 piezas" },
-      { label: "Primeras 100 piezas", value: "$300 ($3.00 c/u)" },
-      { label: "Precio mayoreo", value: "Más de 100 piezas: cada pieza extra a $2.70 (10% menos)" },
+      { label: "Precio por pieza", value: "Chico (hasta 5 cm) $3.50 · Mediano (5 a 7 cm) $5.50 · Grande (7 a 9 cm) $7.50" },
+      { label: "Otras medidas", value: "Más grande o algo específico: se cotiza por WhatsApp" },
       { label: "Tipo de corte", value: "Troquelado o semitroquelado, tú eliges al pedir" },
       { label: "Acabado", value: "Mate, brillante u holográfico (holográfico +$0.50 por pieza)" },
       { label: "Personalización", value: "Tu logo o diseño" },
@@ -264,12 +276,12 @@ export const products: Product[] = [
       { label: "Producción", value: "Sobre pedido" },
     ],
     description:
-      "Stickers y etiquetas personalizadas con tu logo o diseño, resistentes al agua: etiquetas para productos, etiquetas para empaques, bolsas y cajas de tu negocio. Se venden por cantidad de piezas, no por hoja: las primeras 100 piezas cuestan $300 ($3.00 c/u) y, entre más pidas, mejor: pasando las 100 entras a precio mayoreo y cada pieza extra te sale en $2.70, 10% menos. Envíanos tu imagen (o el diseño que quieras convertir en etiqueta) y te mandamos una prueba digital antes de imprimir.",
-    metaDescription: "Etiquetas y stickers con tu logo para productos y empaques, resistentes al agua. Primeras 100 piezas por $300, mínimo 50. Envíos a todo México.",
+      "Stickers y etiquetas personalizadas con tu logo o diseño, resistentes al agua: etiquetas para productos, etiquetas para empaques, bolsas y cajas de tu negocio. Se venden por pieza y el precio depende del tamaño: chico (hasta 5 cm) $3.50 c/u, mediano (de 5 a 7 cm) $5.50 c/u y grande (de 7 a 9 cm) $7.50 c/u. Si necesitas una medida más grande o algo más específico, lo cotizamos por WhatsApp. Envíanos tu imagen (o el diseño que quieras convertir en etiqueta) y te mandamos una prueba digital antes de imprimir.",
+    metaDescription: "Etiquetas y stickers con tu logo para productos y empaques, resistentes al agua. Desde $3.50 por pieza según tamaño, mínimo 50. Envíos a todo México.",
     details: [
       "Se venden por cantidad de piezas, mínimo 50",
-      "Primeras 100 piezas: $300 ($3.00 c/u)",
-      "Más de 100 piezas: precio mayoreo, cada pieza extra a $2.70 (10% menos)",
+      "Tres tamaños: chico hasta 5 cm ($3.50 c/u), mediano de 5 a 7 cm ($5.50 c/u) y grande de 7 a 9 cm ($7.50 c/u)",
+      "¿Más grande o algo específico? Se cotiza por WhatsApp",
       "Pide la cantidad exacta que necesitas: elígela o escríbela",
       "Resistentes al agua",
       "Imprimimos tu logo o el diseño que nos envíes",
@@ -295,7 +307,7 @@ export const products: Product[] = [
       },
       {
         q: "¿Cuál es el precio de las etiquetas?",
-        a: "Las primeras 100 piezas cuestan $300 ($3.00 c/u). Y pasando las 100 entras a precio mayoreo: cada pieza extra te sale en $2.70, 10% menos. Por ejemplo, 150 piezas son $435 y 300 piezas son $840.",
+        a: "Depende del tamaño: chico (hasta 5 cm) $3.50 c/u, mediano (de 5 a 7 cm) $5.50 c/u y grande (de 7 a 9 cm) $7.50 c/u, con mínimo de 50 piezas. El acabado holográfico suma $0.50 por pieza. Por ejemplo, 100 etiquetas chicas son $350 y 100 medianas son $550. Si necesitas más de 9 cm o una medida específica, cotizamos por WhatsApp.",
       },
       {
         q: "¿Las etiquetas son resistentes al agua?",
@@ -632,7 +644,8 @@ export const isValidVariant = (product: Product, variantId?: string): boolean =>
 export const resolvePrice = (product: Product, variantId?: string): number => {
   const pieces = pieceCount(product, variantId);
   if (pieces !== null) {
-    const extra = parseVariant(variantId).finish?.extraPerPiece ?? 0;
+    const v = parseVariant(variantId);
+    const extra = (v.finish?.extraPerPiece ?? 0) + (v.size.extraPerPiece ?? 0);
     return Math.round((tieredPrice(product.tiers!, pieces) + extra * pieces) * 100) / 100;
   }
   const variant = product.variants?.find((v) => v.id === variantId);
@@ -643,7 +656,7 @@ export const cartItemLabel = (product: Product, variantId?: string): string => {
   const pieces = pieceCount(product, variantId);
   if (pieces !== null) {
     const v = parseVariant(variantId);
-    return [`${product.name}: ${pieces} piezas`, v.cut?.label.es, v.finish?.label.es].filter(Boolean).join(" · ");
+    return [`${product.name}: ${pieces} piezas`, v.cut?.label.es, v.finish?.label.es, product.lineOptions ? v.size.label.es : undefined].filter(Boolean).join(" · ");
   }
   const variant = product.variants?.find((v) => v.id === variantId);
   return variant ? `${product.name}: ${variant.label}` : product.name;

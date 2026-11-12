@@ -1057,7 +1057,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "De qué depende el precio de los stickers personalizados",
         body: [
-          "Vendemos por cantidad de piezas, no por hoja. El precio depende de la opción que elijas, de la cantidad y del acabado: mate y brillante cuestan igual y el holográfico tiene un costo extra por pieza. Primeras 100 piezas van a precio de lista; pasando las 100, cada pieza extra va a precio mayoreo, 10% menos.",
+          "Vendemos por cantidad de piezas, no por hoja. El precio depende de la opción que elijas, de la cantidad y del acabado: mate y brillante cuestan igual y el holográfico tiene un costo extra por pieza.",
           "Hay dos opciones: las Etiquetas con tu Logo, pensadas para el logo de tu negocio o tu evento (mínimo 50 piezas), y los Stickers de Vinil Personalizados, para cualquier diseño, personaje o foto (mínimo 40 piezas). En ambas eliges el corte (troquelado, a la forma de tu diseño, o semitroquelado) y el acabado: mate, brillante u holográfico. Todas son resistentes al agua.",
         ],
         table: {
@@ -1123,7 +1123,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Cuánto cuestan 100 etiquetas con mi logo?",
-        a: `100 piezas cuestan $${priceOf("stickers-logo-personalizado", 100)}. Pasando las 100, cada pieza extra va a precio mayoreo: por ejemplo, 200 piezas son $${priceOf("stickers-logo-personalizado", 200)} y 300 piezas son $${priceOf("stickers-logo-personalizado", 300)}.`,
+        a: `100 piezas cuestan $${priceOf("stickers-logo-personalizado", 100)}.`,
       },
       {
         q: "¿Cuál es el pedido mínimo?",
@@ -1188,7 +1188,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Cuánto cuesta la papelería personalizada",
         body: [
-          `Las primeras 100 piezas de Etiquetas con tu Logo cuestan $${priceOf("stickers-logo-personalizado", 100)} MXN. Pasando las 100 entras a precio mayoreo, 10% menos por pieza extra. El recetario médico de 100 hojas cuesta $${recetarioPrice("sin-diseno")} MXN si ya tienes tu diseño y $${recetarioPrice("con-diseno")} MXN si lo diseñamos contigo.`,
+          `Las 100 piezas (tamaño chico) de Etiquetas con tu Logo cuestan $${priceOf("stickers-logo-personalizado", 100)} MXN. El recetario médico de 100 hojas cuesta $${recetarioPrice("sin-diseno")} MXN si ya tienes tu diseño y $${recetarioPrice("con-diseno")} MXN si lo diseñamos contigo.`,
           "El mínimo de pedido es de 50 piezas en las Etiquetas con tu Logo y de 40 piezas en los Stickers de Vinil Personalizados. Esta tabla muestra cuánto cuesta cada cantidad, para que pidas lo que de verdad vas a usar:",
         ],
         table: {
@@ -1229,7 +1229,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Cuánto cuestan las etiquetas con mi logo?",
-        a: `Las primeras 100 piezas cuestan $${priceOf("stickers-logo-personalizado", 100)} MXN. Pasando las 100 entras a precio mayoreo: por ejemplo, 200 piezas cuestan $${priceOf("stickers-logo-personalizado", 200)} MXN.`,
+        a: `Las 100 piezas (tamaño chico) cuestan $${priceOf("stickers-logo-personalizado", 100)} MXN.`,
       },
       {
         q: "¿Cuánto cuesta un recetario médico personalizado?",
@@ -1295,7 +1295,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Cuánto cuesta pedir papelería personalizada",
         body: [
-          `El precio depende del producto. El recetario médico de 100 hojas cuesta $${recetarioPrice("sin-diseno")} MXN si ya tienes tu diseño y $${recetarioPrice("con-diseno")} MXN si lo diseñamos contigo. En etiquetas con tu logo, las primeras 100 piezas cuestan $${priceOf("stickers-logo-personalizado", 100)} MXN; pasando las 100 entras a precio mayoreo, 10% menos por pieza extra.`,
+          `El precio depende del producto. El recetario médico de 100 hojas cuesta $${recetarioPrice("sin-diseno")} MXN si ya tienes tu diseño y $${recetarioPrice("con-diseno")} MXN si lo diseñamos contigo.`,
           "Las etiquetas y los stickers se venden por cantidad de piezas, no por hoja, así que pides la cantidad que de verdad necesitas. El mínimo es de 50 piezas en las Etiquetas con tu Logo y de 40 piezas en los Stickers de Vinil Personalizados. Esta tabla muestra cuánto cuesta cada cantidad:",
         ],
         table: {
@@ -1338,7 +1338,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Cuánto cuestan 100 etiquetas con mi logo?",
-        a: `Las primeras 100 piezas cuestan $${priceOf("stickers-logo-personalizado", 100)} MXN. Pasando las 100 entras a precio mayoreo: por ejemplo, 200 piezas cuestan $${priceOf("stickers-logo-personalizado", 200)} MXN.`,
+        a: `Las 100 piezas (tamaño chico) cuestan $${priceOf("stickers-logo-personalizado", 100)} MXN.`,
       },
       {
         q: "¿Cuál es el pedido mínimo de etiquetas y stickers?",
@@ -1766,7 +1766,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Cantidad y precio de los stickers de tu mascota",
         body: [
-          `Primeras 100 piezas: $${priceOf("stickers-vinil-impermeable", 100)}. Los stickers de vinil se venden por cantidad de piezas, no por planilla, con un mínimo de compra de 40 piezas. Pasando las 100, cada pieza extra va a precio mayoreo, 10% menos que el precio base. Pide la cantidad exacta que necesitas: la eliges o la escribes al hacer tu pedido.`,
+          `100 piezas (tamaño chico): $${priceOf("stickers-vinil-impermeable", 100)}. Los stickers de vinil se venden por cantidad de piezas, no por planilla, con un mínimo de compra de 40 piezas. Pide la cantidad exacta que necesitas: la eliges o la escribes al hacer tu pedido.`,
           `Como referencia: 150 piezas quedan en $${priceOf("stickers-vinil-impermeable", 150)} y 200 en $${priceOf("stickers-vinil-impermeable", 200)}. Puedes ver todas las opciones en la página de [stickers de vinil personalizados](/productos/stickers-vinil-impermeable).`,
           "Es el mismo vinil premium resistente al agua, al sol y a rayones que usamos para cualquier otro diseño personalizado, así que aguanta bien en botellas de agua, laptops o donde quieras pegarlo. Si quieres comparar materiales, lee [vinil vs. papel](/blog/stickers-vinil-vs-papel-diferencias).",
         ],
@@ -1804,7 +1804,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Cuánto cuestan los stickers de mi mascota?",
-        a: `Primeras 100 piezas: $${priceOf("stickers-vinil-impermeable", 100)}. Pasando las 100, cada pieza extra va a precio mayoreo: 150 piezas cuestan $${priceOf("stickers-vinil-impermeable", 150)} y 200 piezas $${priceOf("stickers-vinil-impermeable", 200)}. El mínimo de compra es de 40 piezas.`,
+        a: `100 piezas (tamaño chico): $${priceOf("stickers-vinil-impermeable", 100)}. El mínimo de compra es de 40 piezas.`,
       },
       {
         q: "¿Qué corte y acabado puedo elegir?",
@@ -2132,7 +2132,7 @@ export const blogPosts: BlogPost[] = [
     slug: "yume-vs-imprentas-online-stickers",
     title: "Yume vs. imprentas online de stickers: qué comparar antes de pedir",
     metaTitle: "Yume vs. imprentas online de stickers",
-    description: `Comparamos Yume con imprentas online de stickers en México. Primeras 100 piezas: $${priceOf("stickers-vinil-impermeable", 100)}, con prueba digital y envío a todo México.`,
+    description: `Comparamos Yume con imprentas online de stickers en México. 100 piezas (tamaño chico): $${priceOf("stickers-vinil-impermeable", 100)}, con prueba digital y envío a todo México.`,
     category: "Guías",
     publishedAt: "2026-09-09",
     modifiedAt: "2026-10-26",
@@ -2156,22 +2156,22 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Los números",
         body: [
-          `Primeras 100 piezas en Yume: $${priceOf("stickers-vinil-impermeable", 100)} en vinil y $${priceOf("stickers-logo-personalizado", 100)} en etiquetas con logo, con mínimo de compra de $${priceOf("stickers-vinil-impermeable", 40)} MXN en vinil. Las imprentas mexicanas que revisamos cobran de $1.83 a $11.00 MXN por pieza y piden mínimos de $319 a $550 MXN.`,
+          `100 piezas (tamaño chico) en Yume: $${priceOf("stickers-vinil-impermeable", 100)} en vinil y $${priceOf("stickers-logo-personalizado", 100)} en etiquetas con logo, con mínimo de compra de $${priceOf("stickers-vinil-impermeable", 40)} MXN en vinil. Las imprentas mexicanas que revisamos cobran de $1.83 a $11.00 MXN por pieza y piden mínimos de $319 a $550 MXN.`,
           "En algunas imprentas el mínimo real solo se alcanza comprando varias planillas completas de una vez, por eso conviene mirar el mínimo en pesos y no solo el precio por pieza.",
         ],
         table: {
           headers: ["", "Precio por pieza", "Mínimo de compra"],
           rows: [
             ["Imprentas mexicanas revisadas (precios públicos, septiembre 2026)", "$1.83 a $11.00 MXN", "$319 a $550 MXN"],
-            ["Yume: Stickers y Etiquetas con tu Logo (primeras 100 piezas)", `$${perPiece("stickers-logo-personalizado", 100)} MXN`, `$${priceOf("stickers-logo-personalizado", 50)} MXN (50 piezas)`],
-            ["Yume: Stickers de Vinil Personalizados (primeras 100 piezas)", `$${perPiece("stickers-vinil-impermeable", 100)} MXN`, `$${priceOf("stickers-vinil-impermeable", 40)} MXN (40 piezas)`],
+            ["Yume: Stickers y Etiquetas con tu Logo (100 piezas, tamaño chico)", `$${perPiece("stickers-logo-personalizado", 100)} MXN`, `$${priceOf("stickers-logo-personalizado", 50)} MXN (50 piezas)`],
+            ["Yume: Stickers de Vinil Personalizados (100 piezas, tamaño chico)", `$${perPiece("stickers-vinil-impermeable", 100)} MXN`, `$${priceOf("stickers-vinil-impermeable", 40)} MXN (40 piezas)`],
           ],
         },
       },
       {
-        heading: "Cuánto cuesta pedir más de 100 piezas en Yume",
+        heading: "Cuánto cuesta cada tamaño en Yume",
         body: [
-          "Primeras 100 piezas: precio normal por pieza. Pasando las 100, cada pieza extra va a precio mayoreo, 10% menos. Por eso el precio por pieza baja un poco cuando pides más. La tabla muestra el total y el precio por pieza en cantidades comunes para un evento o un negocio.",
+          "100 piezas (tamaño chico): precio normal por pieza. Por eso el precio por pieza baja un poco cuando pides más. La tabla muestra el total y el precio por pieza en cantidades comunes para un evento o un negocio.",
           `Como ejemplo, 200 piezas de vinil cuestan $${priceOf("stickers-vinil-impermeable", 200)} ($${perPiece("stickers-vinil-impermeable", 200)} c/u). Pide la cantidad que necesitas: la eliges o la escribes al hacer tu pedido.`,
         ],
         table: {
@@ -2229,7 +2229,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Cuánto cuestan los stickers en Yume?",
-        a: `Primeras 100 piezas: $${priceOf("stickers-vinil-impermeable", 100)} en vinil y $${priceOf("stickers-logo-personalizado", 100)} en etiquetas con logo. Pasando las 100, cada pieza extra va a precio mayoreo: 200 piezas de vinil cuestan $${priceOf("stickers-vinil-impermeable", 200)}.`,
+        a: `100 piezas (tamaño chico): $${priceOf("stickers-vinil-impermeable", 100)} en vinil y $${priceOf("stickers-logo-personalizado", 100)} en etiquetas con logo.`,
       },
       {
         q: "¿Se venden por planilla o por pieza?",
@@ -2259,7 +2259,7 @@ export const blogPosts: BlogPost[] = [
     slug: "stickers-vinil-vs-papel-diferencias",
     title: "Stickers de vinil vs papel: cuál elegir para tu evento",
     metaTitle: "Stickers de vinil vs papel: ¿cuál te conviene?",
-    description: `Stickers de vinil vs papel para bodas, fiestas y regalos: qué cambia con agua y sol. Primeras 100 piezas: $${priceOf("stickers-vinil-impermeable", 100)}, con prueba digital.`,
+    description: `Stickers de vinil vs papel para bodas, fiestas y regalos: qué cambia con agua y sol. 100 piezas (tamaño chico): $${priceOf("stickers-vinil-impermeable", 100)}, con prueba digital.`,
     category: "Guías",
     publishedAt: "2026-09-09",
     modifiedAt: "2026-10-29",
@@ -2315,7 +2315,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Cuánto cuestan los stickers de vinil",
         body: [
-          `Primeras 100 piezas: $${priceOf("stickers-vinil-impermeable", 100)} en Stickers de Vinil Personalizados y $${priceOf("stickers-logo-personalizado", 100)} en etiquetas con tu logo. Pasando las 100 piezas, cada pieza extra va a precio mayoreo, 10% menos. El mínimo es de 40 piezas en vinil y de 50 en etiquetas con logo, y pides la cantidad exacta que necesitas.`,
+          `100 piezas (tamaño chico): $${priceOf("stickers-vinil-impermeable", 100)} en Stickers de Vinil Personalizados y $${priceOf("stickers-logo-personalizado", 100)} en etiquetas con tu logo. El mínimo es de 40 piezas en vinil y de 50 en etiquetas con logo, y pides la cantidad exacta que necesitas.`,
           `Como referencia, 150 piezas de vinil cuestan $${priceOf("stickers-vinil-impermeable", 150)} y 200 piezas cuestan $${priceOf("stickers-vinil-impermeable", 200)}. Para un evento, cuenta a tus invitados y suma unas cuantas piezas de repuesto.`,
         ],
         table: {
@@ -2351,7 +2351,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Cuánto cuestan los stickers de vinil?",
-        a: `Primeras 100 piezas: $${priceOf("stickers-vinil-impermeable", 100)}. Pasando las 100, cada pieza extra va a precio mayoreo: 150 piezas cuestan $${priceOf("stickers-vinil-impermeable", 150)} y 200 piezas $${priceOf("stickers-vinil-impermeable", 200)}. El mínimo de compra es de 40 piezas.`,
+        a: `100 piezas (tamaño chico): $${priceOf("stickers-vinil-impermeable", 100)}. El mínimo de compra es de 40 piezas.`,
       },
       {
         q: "¿Se venden por planilla o por pieza?",
@@ -3171,7 +3171,7 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Yume opera como una imprenta personalizada en Guadalajara, no como una imprenta de plantillas. Cada recetario, etiqueta o pieza de papelería se diseña con los datos reales de quien la pide, pasa por una prueba digital que tú apruebas y se envía a todo México desde Guadalajara.",
           "Si ya tienes un logo o una identidad de marca, la adaptamos directo a la pieza; si no la tienes, la construimos contigo antes de llegar a la prueba digital. En ambos casos, lo que recibes es una pieza que es tuya, no una plantilla con tu nombre encima.",
-          `Para piezas de uso diario, el catálogo tiene precios claros: las primeras 100 piezas de las [Etiquetas con tu Logo](/productos/stickers-logo-personalizado) cuestan $${priceOf("stickers-logo-personalizado", 100)} MXN, y arriba de 100 piezas entras a precio mayoreo. El [recetario médico personalizado](/productos/recetario-medico-personalizado) de 100 hojas cuesta $${recetarioPrice("sin-diseno")} MXN si ya tienes tu diseño y $${recetarioPrice("con-diseno")} MXN si lo diseñamos contigo. Para invitaciones, menús de boda y otras piezas de evento cotizamos por WhatsApp según cantidad y formato.`,
+          `El [recetario médico personalizado](/productos/recetario-medico-personalizado) de 100 hojas cuesta $${recetarioPrice("sin-diseno")} MXN si ya tienes tu diseño y $${recetarioPrice("con-diseno")} MXN si lo diseñamos contigo. Para invitaciones, menús de boda y otras piezas de evento cotizamos por WhatsApp según cantidad y formato.`,
         ],
       },
       {
@@ -3197,7 +3197,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Cuánto cuestan las etiquetas con mi logo?",
-        a: `Las primeras 100 piezas cuestan $${priceOf("stickers-logo-personalizado", 100)} MXN. Pasando las 100 entras a precio mayoreo: por ejemplo, 200 piezas cuestan $${priceOf("stickers-logo-personalizado", 200)} MXN.`,
+        a: `Las 100 piezas (tamaño chico) cuestan $${priceOf("stickers-logo-personalizado", 100)} MXN.`,
       },
       {
         q: "¿Cuánto tarda mi pedido?",
@@ -3318,7 +3318,7 @@ export const blogPosts: BlogPost[] = [
     slug: "stickers-para-marca-pequena-vs-grande",
     title: "Stickers para marca pequeña vs grande: cuántos pedir",
     metaTitle: "Stickers para marca pequeña vs grande",
-    description: `Cuántos stickers pedir si tu marca es chica o grande, o si es para un evento. Primeras 100 piezas: $${priceOf("stickers-logo-personalizado", 100)}, con prueba digital.`,
+    description: `Cuántos stickers pedir si tu marca es chica o grande, o si es para un evento. 100 piezas (tamaño chico): $${priceOf("stickers-logo-personalizado", 100)}, con prueba digital.`,
     category: "Guías",
     publishedAt: "2026-09-23",
     modifiedAt: "2026-10-26",
@@ -3336,7 +3336,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Si tu marca ya vende seguido: el precio por pieza baja",
         body: [
-          `Si ya vendes seguido, conviene pedir más: las primeras 100 piezas cuestan $${priceOf("stickers-logo-personalizado", 100)} en etiquetas con tu logo y $${priceOf("stickers-vinil-impermeable", 100)} en vinil. Pasando las 100 entras a precio mayoreo y cada pieza extra cuesta 10% menos, así que el precio por pieza baja mientras más pides.`,
+          `Si ya vendes seguido, conviene pedir más: las 100 piezas (tamaño chico) cuestan $${priceOf("stickers-logo-personalizado", 100)} en etiquetas con tu logo y $${priceOf("stickers-vinil-impermeable", 100)} en vinil.`,
           "Es el mismo proceso y el mismo proveedor: pagas menos por pieza sin cambiar nada más. Si necesitas una cantidad mayor a la que muestra el selector, cotiza directo por WhatsApp y ajustamos el pedido.",
           "La tabla de abajo muestra el total y el precio por pieza en cantidades típicas, tomados del catálogo.",
         ],
@@ -3356,7 +3356,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Cómo elegir la cantidad correcta para tu etapa",
         body: [
-          `Elige según lo que sabes hoy. Si no sabes cuánto vas a usar, empieza con el mínimo (50 o 40 piezas) y repite el pedido conforme se agote. Si ya tienes un ritmo conocido, calcula 2 a 3 meses de uso y pide en el rango donde ya aplica el precio mayoreo (más de 100 piezas). Para un evento, pide cerca del número real de invitados.`,
+          `Elige según lo que sabes hoy. Si no sabes cuánto vas a usar, empieza con el mínimo (50 o 40 piezas) y repite el pedido conforme se agote. Para un evento, pide cerca del número real de invitados.`,
           "En todos los casos el proceso es idéntico: mandas tu logo o diseño, te enviamos una prueba digital, apruebas y se produce. Lo único que cambia es la cantidad que eliges.",
           "Tampoco necesitas decidir todo de una vez. Puedes pedir una primera tanda, ver cómo se usa y repetir el mismo diseño después sin volver a empezar.",
         ],
@@ -3390,11 +3390,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Cuánto cuestan los stickers si apenas empiezo?",
-        a: `El mínimo cuesta $${priceOf("stickers-logo-personalizado", 50)} por 50 piezas en etiquetas con tu logo y $${priceOf("stickers-vinil-impermeable", 40)} por 40 piezas en vinil. Primeras 100 piezas: $${priceOf("stickers-logo-personalizado", 100)} en etiquetas con logo y $${priceOf("stickers-vinil-impermeable", 100)} en vinil.`,
+        a: `El mínimo cuesta $${priceOf("stickers-logo-personalizado", 50)} por 50 piezas en etiquetas con tu logo y $${priceOf("stickers-vinil-impermeable", 40)} por 40 piezas en vinil. 100 piezas (tamaño chico): $${priceOf("stickers-logo-personalizado", 100)} en etiquetas con logo y $${priceOf("stickers-vinil-impermeable", 100)} en vinil.`,
       },
       {
-        q: "¿Qué pasa si pido más de 100 piezas?",
-        a: `Pasando las 100 piezas entras a precio mayoreo: cada pieza extra cuesta 10% menos. Por ejemplo, 200 piezas de vinil cuestan $${priceOf("stickers-vinil-impermeable", 200)}.`,
+        q: "¿El precio cambia según el tamaño?",
+        a: `Sí: el precio por pieza depende del tamaño. Chico (hasta 5 cm) es el precio base, mediano (de 5 a 7 cm) suma $2 por pieza y grande (de 7 a 9 cm) suma $4. Por ejemplo, 200 piezas de vinil chicas cuestan $${priceOf("stickers-vinil-impermeable", 200)}.`,
       },
       {
         q: "¿Puedo usar los stickers para un evento y no para mi negocio?",
@@ -3419,7 +3419,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "stickers-para-bodas-eventos-y-fiestas",
     title: "Stickers personalizados para bodas, eventos y fiestas",
-    description: `Stickers personalizados para bodas, eventos y fiestas: bolsitas, cajas y botellas. Primeras 100 piezas: $${priceOf("stickers-logo-personalizado", 100)}, con prueba digital.`,
+    description: `Stickers personalizados para bodas, eventos y fiestas: bolsitas, cajas y botellas. 100 piezas (tamaño chico): $${priceOf("stickers-logo-personalizado", 100)}, con prueba digital.`,
     category: "Guías",
     publishedAt: "2026-09-23",
     modifiedAt: "2026-11-11",
@@ -3468,7 +3468,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Cuántos stickers pedir y cuánto cuestan",
         body: [
-          `Primeras 100 piezas: $${priceOf("stickers-logo-personalizado", 100)} en etiquetas con tu logo y $${priceOf("stickers-vinil-impermeable", 100)} en stickers de vinil. Pasando las 100, cada pieza extra va a precio mayoreo. El mínimo de compra es de 50 piezas en etiquetas con logo y de 40 en vinil, así que pides cerca del número real de invitados o mesas de tu evento.`,
+          `100 piezas (tamaño chico): $${priceOf("stickers-logo-personalizado", 100)} en etiquetas con tu logo y $${priceOf("stickers-vinil-impermeable", 100)} en stickers de vinil. El mínimo de compra es de 50 piezas en etiquetas con logo y de 40 en vinil, así que pides cerca del número real de invitados o mesas de tu evento.`,
           "Precio por cantidad:",
         ],
         table: {
@@ -3498,7 +3498,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Cuánto cuestan los stickers para mi evento?",
-        a: `Primeras 100 piezas: $${priceOf("stickers-logo-personalizado", 100)} en etiquetas con tu logo y $${priceOf("stickers-vinil-impermeable", 100)} en stickers de vinil. Pasando las 100, cada pieza extra va a precio mayoreo: 200 piezas de vinil cuestan $${priceOf("stickers-vinil-impermeable", 200)}.`,
+        a: `100 piezas (tamaño chico): $${priceOf("stickers-logo-personalizado", 100)} en etiquetas con tu logo y $${priceOf("stickers-vinil-impermeable", 100)} en stickers de vinil.`,
       },
       {
         q: "¿Cuál es el pedido mínimo?",
@@ -3681,7 +3681,7 @@ export const blogPosts: BlogPost[] = [
     slug: "donde-imprimir-stickers-personalizados-mexico",
     title: "Dónde imprimir stickers personalizados en México: qué necesitas y cómo pedirlos",
     metaTitle: "Dónde imprimir stickers personalizados: precio 2026",
-    description: "Dónde imprimir stickers personalizados en México y cuánto cuestan: primeras 100 piezas por $350, qué archivo enviar y envío a todo el país.",
+    description: "Dónde imprimir stickers personalizados en México y cuánto cuestan: desde $4 por pieza según el tamaño, qué archivo enviar y envío a todo el país.",
     category: "Guías",
     publishedAt: "2026-09-29",
     modifiedAt: "2026-10-29",
@@ -3691,7 +3691,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "¿Cuánto cuesta imprimir stickers personalizados en México?",
         body: [
-          "Primeras 100 piezas: $350 en stickers de vinil ($3.50 c/u, mínimo 40) y $300 en etiquetas con tu logo ($3.00 c/u, mínimo 50). Pasando de 100 piezas es precio mayoreo y cada pieza extra baja 10%. El envío a todo México es gratis desde $750 MXN.",
+          "Stickers de vinil desde $4 c/u (mínimo 40) y etiquetas con tu logo desde $3.50 c/u (mínimo 50); el precio depende del tamaño: chico hasta 5 cm, mediano de 5 a 7 cm y grande de 7 a 9 cm. El envío a todo México es gratis desde $750 MXN.",
           "Se venden por cantidad de piezas, no por planilla, así que pides la cantidad exacta que necesitas. El corte (troquelado o semitroquelado) y los acabados mate y brillante no cambian el precio; el holográfico suma un costo extra por pieza.",
           "Precio por cantidad (el mínimo de compra es 50 piezas en etiquetas con logo y 40 en vinil):",
         ],
@@ -3787,7 +3787,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Cuánto cuestan 100 stickers personalizados?",
-        a: "Primeras 100 piezas: $350 en stickers de vinil y $300 en etiquetas con tu logo. Pasando de 100 piezas es precio mayoreo y cada pieza extra baja 10%. Por ejemplo, 150 piezas de vinil son $507.50 y 200 piezas son $665.",
+        a: "Stickers de vinil desde $4 c/u y etiquetas con tu logo desde $3.50 c/u, según el tamaño (chico hasta 5 cm, mediano de 5 a 7 cm, grande de 7 a 9 cm). Por ejemplo, 100 stickers de vinil chicos son $400 y 100 medianos son $600.",
       },
       {
         q: "¿Qué archivo debo enviar para imprimir mis stickers?",
@@ -4010,7 +4010,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "¿Cuánto cuestan los stickers troquelados y semitroquelados?",
         body: [
-          `Primeras 100 piezas: $${priceOf("stickers-vinil-impermeable", 100)} MXN en Stickers de Vinil Personalizados y $${priceOf("stickers-logo-personalizado", 100)} MXN en Stickers y Etiquetas con tu Logo. Pasando las 100, cada pieza extra va a precio mayoreo. El mínimo de compra es de 40 piezas en vinil y de 50 en etiquetas con logo.`,
+          `100 piezas (tamaño chico): $${priceOf("stickers-vinil-impermeable", 100)} MXN en Stickers de Vinil Personalizados y $${priceOf("stickers-logo-personalizado", 100)} MXN en Stickers y Etiquetas con tu Logo. El mínimo de compra es de 40 piezas en vinil y de 50 en etiquetas con logo.`,
           "Elegir troquelado o semitroquelado no cambia el precio base que ves en la tabla. Pide la cantidad exacta que necesitas: la eliges o la escribes al hacer tu pedido.",
         ],
         table: {
@@ -4057,7 +4057,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Cuánto cuestan?",
-        a: `Primeras 100 piezas: $${priceOf("stickers-vinil-impermeable", 100)} MXN en vinil y $${priceOf("stickers-logo-personalizado", 100)} MXN en etiquetas con logo. Pasando las 100 es precio mayoreo. El mínimo es de 40 piezas en vinil y de 50 en etiquetas con logo.`,
+        a: `100 piezas (tamaño chico): $${priceOf("stickers-vinil-impermeable", 100)} MXN en vinil y $${priceOf("stickers-logo-personalizado", 100)} MXN en etiquetas con logo. El mínimo es de 40 piezas en vinil y de 50 en etiquetas con logo.`,
       },
       {
         q: "¿Veo cómo queda antes de imprimir?",
@@ -4194,7 +4194,7 @@ export const blogPosts: BlogPost[] = [
     slug: "etiquetas-escolares-personalizadas-guadalajara",
     title: "Etiquetas escolares personalizadas en Guadalajara: guía",
     metaTitle: "Etiquetas escolares personalizadas en Guadalajara",
-    description: `Etiquetas escolares personalizadas en Guadalajara: qué llevan, cuántas pedir y cuándo. Primeras 100 piezas: $${priceOf("stickers-vinil-impermeable", 100)}, prueba digital y envío a todo México.`,
+    description: `Etiquetas escolares personalizadas en Guadalajara: qué llevan, cuántas pedir y cuándo. 100 piezas (tamaño chico): $${priceOf("stickers-vinil-impermeable", 100)}, prueba digital y envío a todo México.`,
     category: "Guías",
     publishedAt: "2026-10-17",
     modifiedAt: "2026-11-10",
@@ -4219,7 +4219,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "¿Cómo se piden las etiquetas escolares personalizadas?",
         body: [
-          `Se cotizan por WhatsApp: nos mandas el nombre o los nombres, el diseño que te gusta y cuántas piezas necesitas. Trabajamos con stickers de vinil desde 40 piezas. Primeras 100 piezas: $${priceOf("stickers-vinil-impermeable", 100)}. Pasando las 100, cada pieza extra va a precio mayoreo.`,
+          `Se cotizan por WhatsApp: nos mandas el nombre o los nombres, el diseño que te gusta y cuántas piezas necesitas. Trabajamos con stickers de vinil desde 40 piezas. 100 piezas (tamaño chico): $${priceOf("stickers-vinil-impermeable", 100)}.`,
           "Te mandamos una prueba digital, normalmente en un máximo de 24 horas después del pago, con hasta 2 rondas de ajustes. No imprimimos nada sin tu aprobación. Así se ve el precio por cantidad:",
         ],
         table: {
@@ -4230,7 +4230,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "¿Cuántas etiquetas pedir para el ciclo escolar?",
         body: [
-          "Cuenta cada útil de la lista y multiplícalo por el número de hijos. Como se venden por cantidad de piezas y no por planilla, puedes pedir cerca del número real, con un mínimo de 40 piezas. Pasando las 100 piezas, cada pieza extra va a precio mayoreo.",
+          "Cuenta cada útil de la lista y multiplícalo por el número de hijos. Como se venden por cantidad de piezas y no por planilla, puedes pedir cerca del número real, con un mínimo de 40 piezas.",
           "Si ya tienes la lista de útiles, escríbenos con ella por WhatsApp y te ayudamos a calcular cuántas etiquetas necesitas. Para decidir el material, revisa la diferencia entre [vinil y papel](/blog/stickers-vinil-vs-papel-diferencias).",
         ],
       },
@@ -4262,7 +4262,7 @@ export const blogPosts: BlogPost[] = [
     faq: [
       {
         q: "¿Cuánto cuestan las etiquetas escolares personalizadas?",
-        a: `Primeras 100 piezas: $${priceOf("stickers-vinil-impermeable", 100)}. Pasando las 100, cada pieza extra va a precio mayoreo: 150 piezas cuestan $${priceOf("stickers-vinil-impermeable", 150)} y 200 piezas $${priceOf("stickers-vinil-impermeable", 200)}.`,
+        a: `100 piezas (tamaño chico): $${priceOf("stickers-vinil-impermeable", 100)}.`,
       },
       {
         q: "¿Cuál es el pedido mínimo?",
@@ -4358,7 +4358,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Cuánto cuestan las etiquetas con nombre y cómo cotizarlas",
         body: [
-          `Las etiquetas de vinil personalizadas empiezan en 40 piezas. Primeras 100 piezas: $${priceOf("stickers-vinil-impermeable", 100)}. Pasando las 100, cada pieza extra va a precio mayoreo. Mándanos por WhatsApp el nombre, el diseño y la cantidad, y te mandamos una prueba digital antes de imprimir.`,
+          `Las etiquetas de vinil personalizadas empiezan en 40 piezas. 100 piezas (tamaño chico): $${priceOf("stickers-vinil-impermeable", 100)}. Mándanos por WhatsApp el nombre, el diseño y la cantidad, y te mandamos una prueba digital antes de imprimir.`,
           "La prueba llega normalmente en un máximo de 24 horas después del pago, con hasta 2 rondas de ajustes. No imprimimos nada sin tu aprobación. Así se ve el precio por cantidad:",
         ],
         table: {
@@ -4386,7 +4386,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Cuánto cuestan las etiquetas con nombre?",
-        a: `Primeras 100 piezas: $${priceOf("stickers-vinil-impermeable", 100)}. Pasando las 100, cada pieza extra va a precio mayoreo: 150 piezas cuestan $${priceOf("stickers-vinil-impermeable", 150)} y 200 piezas $${priceOf("stickers-vinil-impermeable", 200)}.`,
+        a: `100 piezas (tamaño chico): $${priceOf("stickers-vinil-impermeable", 100)}.`,
       },
       {
         q: "¿Cuál es el pedido mínimo?",
@@ -4471,7 +4471,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Cuánto cuesta la impresión de etiquetas por pieza",
         body: [
-          `Primeras 100 piezas: precios reales de nuestro catálogo en la tabla. Pasando las 100 piezas, cada pieza extra va a precio mayoreo, 10% menos. El envío va aparte: $${NATIONAL_SHIPPING_PRICE} a todo México o $${CASABLANCA_PRICE} si recoges en una sucursal Casa Blanca de Guadalajara, y es gratis en compras de $${FREE_SHIPPING_THRESHOLD} o más.`,
+          `100 piezas (tamaño chico): precios reales de nuestro catálogo en la tabla. El envío va aparte: $${NATIONAL_SHIPPING_PRICE} a todo México o $${CASABLANCA_PRICE} si recoges en una sucursal Casa Blanca de Guadalajara, y es gratis en compras de $${FREE_SHIPPING_THRESHOLD} o más.`,
           "El pedido mínimo es de 50 piezas en las etiquetas con tu logo y de 40 piezas en los stickers de vinil, así que pides cerca del número que de verdad vas a usar.",
         ],
         table: {
@@ -4505,7 +4505,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Cuánto cuestan 100 etiquetas personalizadas?",
-        a: `Primeras 100 piezas: 100 etiquetas con tu logo cuestan $${priceOf("stickers-logo-personalizado", 100)} y 100 stickers de vinil con tu diseño cuestan $${priceOf("stickers-vinil-impermeable", 100)}. Pasando las 100 piezas, cada pieza extra va a precio mayoreo.`,
+        a: `100 piezas (tamaño chico): 100 etiquetas con tu logo cuestan $${priceOf("stickers-logo-personalizado", 100)} y 100 stickers de vinil con tu diseño cuestan $${priceOf("stickers-vinil-impermeable", 100)}.`,
       },
       {
         q: "¿Imprimen etiquetas en rollo?",
@@ -4574,13 +4574,13 @@ export const blogPosts: BlogPost[] = [
         heading: "Forma, acabado y precio de las etiquetas en vinil",
         body: [
           "El corte sigue la forma de tu diseño: redondas, de esfera, de estrella o cuadradas. Eliges troquelado, cada etiqueta suelta, o semitroquelado, varias en una hoja y fáciles de despegar. El acabado puede ser mate, brillante u holográfico, y el holográfico tiene un costo extra por pieza.",
-          `Primeras 100 piezas: $${priceOf("stickers-vinil-impermeable", 100)} en los stickers de vinil personalizados, con mínimo de 40 piezas, y $${priceOf("stickers-logo-personalizado", 100)} en las etiquetas con tu logo, con mínimo de 50 piezas. Arriba de 100 piezas es precio mayoreo en cada pieza extra.`,
+          `100 piezas (tamaño chico): $${priceOf("stickers-vinil-impermeable", 100)} en los stickers de vinil personalizados, con mínimo de 40 piezas, y $${priceOf("stickers-logo-personalizado", 100)} en las etiquetas con tu logo, con mínimo de 50 piezas.`,
         ],
         table: {
-          headers: ["Producto", "Mínimo", "Primeras 100 piezas", "Más de 100"],
+          headers: ["Producto", "Mínimo", "100 piezas (tamaño chico)", "Tamaño mediano / grande"],
           rows: [
-            ["Stickers de vinil personalizados (cualquier diseño, nombre o foto)", "40 piezas", `$${priceOf("stickers-vinil-impermeable", 100)}`, "Precio mayoreo en cada pieza extra"],
-            ["Stickers y etiquetas con tu logo (negocios)", "50 piezas", `$${priceOf("stickers-logo-personalizado", 100)}`, "Precio mayoreo en cada pieza extra"],
+            ["Stickers de vinil personalizados (cualquier diseño, nombre o foto)", "40 piezas", `$${priceOf("stickers-vinil-impermeable", 100)}`, "Mediano +$2 y grande +$4 por pieza"],
+            ["Stickers y etiquetas con tu logo (negocios)", "50 piezas", `$${priceOf("stickers-logo-personalizado", 100)}`, "Mediano +$2 y grande +$4 por pieza"],
           ],
         },
       },
@@ -4597,7 +4597,7 @@ export const blogPosts: BlogPost[] = [
     faq: [
       {
         q: "¿Cuánto cuestan las etiquetas navideñas personalizadas?",
-        a: `Primeras 100 piezas: $${priceOf("stickers-vinil-impermeable", 100)} en stickers de vinil personalizados (mínimo 40 piezas) y $${priceOf("stickers-logo-personalizado", 100)} en etiquetas con tu logo (mínimo 50 piezas). Arriba de 100 piezas es precio mayoreo en cada pieza extra.`,
+        a: `100 piezas (tamaño chico): $${priceOf("stickers-vinil-impermeable", 100)} en stickers de vinil personalizados (mínimo 40 piezas) y $${priceOf("stickers-logo-personalizado", 100)} en etiquetas con tu logo (mínimo 50 piezas).`,
       },
       {
         q: "¿Hay etiquetas navideñas gratis para imprimir?",
@@ -4671,7 +4671,7 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Pide un souvenir por invitado o uno por familia o pareja, más unos cuantos extra para la mesa de novios, fotos e imprevistos. Lo importante es partir de tu lista confirmada de asistentes, porque en Yume se vende por pieza exacta y el mínimo cambia según el producto.",
           "El mínimo es de 10 dulceros y de 40 stickers de vinil. Los tatuajes temporales se cotizan por WhatsApp. Una cuenta práctica: si tienes 80 invitados, pide 80 piezas más 5 o 10 de reserva.",
-          `Primeras 100 piezas: 100 dulceros cuestan $${priceOf("dulceros-personalizados", 100)} y 100 stickers de vinil cuestan $${priceOf("stickers-vinil-impermeable", 100)}. En stickers, pasando las 100 piezas cada pieza extra va a precio mayoreo. Precio por cantidad:`,
+          `100 dulceros cuestan $${priceOf("dulceros-personalizados", 100)} y 100 stickers de vinil chicos (hasta 5 cm) cuestan $${priceOf("stickers-vinil-impermeable", 100)}. Precio por cantidad:`,
         ],
         table: {
           headers: ["Piezas", "Dulceros personalizados", "Stickers de vinil"],
