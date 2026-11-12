@@ -1178,7 +1178,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Qué piezas de papelería puedes pedir en Yume",
         body: [
-          "En Yume puedes pedir recetarios médicos, etiquetas con tu logo y stickers de vinil, todos con precio publicado en la tienda. También cotizamos por WhatsApp invitaciones, menús y tatuajes temporales para eventos. Cada pedido pasa por una prueba digital antes de imprimirse.",
+          "En Yume puedes pedir recetarios médicos, etiquetas con tu logo y stickers de vinil, todos con precio publicado en la tienda. Todos nuestros stickers llevan laminado BOPP de alta calidad. También cotizamos por WhatsApp invitaciones, menús y tatuajes temporales para eventos. Cada pedido pasa por una prueba digital antes de imprimirse.",
           "Recetario médico personalizado: para consultorios en Guadalajara, Zapopan o cualquier ciudad de Jalisco. Lo puedes pedir sin diseño, si ya traes el tuyo, o con diseño, si lo armamos contigo. Hay una guía completa de recetarios médicos personalizados en Guadalajara con los datos que lleva el membrete.",
           "Etiquetas con tu logo y stickers de vinil: sirven para cerrar empaques, identificar productos o dar un detalle de marca a tus clientes. Se venden por cantidad de piezas, no por hoja. Si vendes productos, también tenemos una guía de stickers personalizados para negocios en Guadalajara.",
           "Piezas para eventos: invitaciones, menús y tatuajes temporales no tienen precio fijo en la tienda porque dependen del diseño y la cantidad. Se cotizan por WhatsApp, y el diseño pasa por la misma prueba digital que el resto de los pedidos.",
@@ -1294,7 +1294,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Cuánto cuesta pedir papelería personalizada",
         body: [
           `El precio depende del producto. El recetario médico de 100 hojas cuesta $${recetarioPrice("sin-diseno")} MXN si ya tienes tu diseño y $${recetarioPrice("con-diseno")} MXN si lo diseñamos contigo.`,
-          "Las etiquetas y los stickers se venden por cantidad de piezas, no por hoja, así que pides la cantidad que de verdad necesitas. El mínimo es de 50 piezas en las Etiquetas con tu Logo y de 40 piezas en los Stickers de Vinil Personalizados. Esta tabla muestra cuánto cuesta cada cantidad:",
+          "Las etiquetas y los stickers se venden por cantidad de piezas, no por hoja, así que pides la cantidad que de verdad necesitas. El mínimo es de 50 piezas en las Etiquetas con tu Logo y de 40 piezas en los Stickers de Vinil Personalizados. Todos nuestros stickers llevan laminado BOPP de alta calidad. Esta tabla muestra cuánto cuesta cada cantidad:",
         ],
         table: {
           ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
@@ -3673,7 +3673,7 @@ export const blogPosts: BlogPost[] = [
     slug: "donde-imprimir-stickers-personalizados-mexico",
     title: "Dónde imprimir stickers personalizados en México: qué necesitas y cómo pedirlos",
     metaTitle: "Dónde imprimir stickers personalizados: precio 2026",
-    description: "Dónde imprimir stickers personalizados en México y cuánto cuestan: desde $4 por pieza según el tamaño, qué archivo enviar y envío a todo el país.",
+    description: "Dónde imprimir stickers personalizados en México y cuánto cuestan: desde $3 por pieza según el tamaño, qué archivo enviar y envío a todo el país.",
     category: "Guías",
     publishedAt: "2026-09-29",
     modifiedAt: "2026-10-29",
@@ -5017,7 +5017,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Qué productos puedes pedir para un evento",
         body: [
           "Para un evento puedes pedir dulceros con nombre y temática, stickers con el diseño de la boda, tatuajes temporales, menús de boda e invitaciones. Los stickers y los dulceros tienen precio publicado en el sitio; los menús, las invitaciones y los tatuajes se cotizan por WhatsApp según el evento.",
-          "El dulcero llega armado y vacío, con el nombre y la temática que elijas, para que tú decidas qué lleva dentro. Puedes ver los [dulceros personalizados](/productos/dulceros-personalizados) o revisar nuestra guía de [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara). Si quieres un detalle con el diseño de la boda, mira los [stickers de vinil personalizados](/productos/stickers-vinil-impermeable).",
+          "El dulcero llega armado y vacío, con el nombre y la temática que elijas, para que tú decidas qué lleva dentro. Puedes ver los [dulceros personalizados](/productos/dulceros-personalizados) o revisar nuestra guía de [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara). Si quieres un detalle con el diseño de la boda, mira los [stickers de vinil personalizados](/productos/stickers-vinil-impermeable). Todos nuestros stickers llevan laminado BOPP de alta calidad.",
         ],
       },
       {
@@ -5800,7 +5800,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Stickers con logo para acompañar el detalle de aniversario",
         body: [
           "Los stickers con logo sirven para acompañar el dulcero o decorar una botella de bienvenida. Puedes pedirlos con el logo de tu empresa o un diseño del aniversario. Los [stickers con tu logo](/productos/stickers-logo-personalizado) tienen mínimo de 50 piezas, se cortan troquelados o semitroquelados y se imprimen en mate, brillante u holográfico.",
-          "Si prefieres una ilustración del evento en lugar del logo, existen los [stickers de vinil personalizados](/productos/stickers-vinil-impermeable), con mínimo de 40 piezas. Los de vinil pasan por prueba digital antes de imprimir.",
+          "Si prefieres una ilustración del evento en lugar del logo, existen los [stickers de vinil personalizados](/productos/stickers-vinil-impermeable), con mínimo de 40 piezas. Todos nuestros stickers llevan laminado BOPP de alta calidad. Los de vinil pasan por prueba digital antes de imprimir.",
         ],
       },
       {
@@ -5872,7 +5872,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Cómo pedir una cotización por evento",
         body: [
           "Para cotizar una boda escríbenos por WhatsApp con los datos básicos del evento: fecha, ciudad, número de invitados, paleta de colores, las piezas que te interesan y los textos o nombres que llevarán. Con eso podemos orientarte sobre cantidades y mínimos, y avisarte si algo necesita confirmarse antes de producir.",
-          "Los mínimos publicados son de 10 piezas para dulceros, de 40 piezas para [stickers de vinil personalizados](/productos/stickers-vinil-impermeable) y de 50 piezas para etiquetas con logo. Cuéntanos tu evento completo y cotizamos las piezas juntas.",
+          "Los mínimos publicados son de 10 piezas para dulceros, de 40 piezas para [stickers de vinil personalizados](/productos/stickers-vinil-impermeable) y de 50 piezas para etiquetas con logo. Todos nuestros stickers llevan laminado BOPP de alta calidad. Cuéntanos tu evento completo y cotizamos las piezas juntas.",
         ],
         table: {
           headers: ["Dato del brief", "Qué nos permite definir"],

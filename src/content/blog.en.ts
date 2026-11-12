@@ -901,7 +901,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "Which stationery pieces you can order at Yume",
         body: [
-          "At Yume you can order medical prescription pads, logo stickers and labels, and vinyl stickers, all with prices published in the shop. We also quote invitations, menus and temporary tattoos for events on WhatsApp. Every order goes through a digital proof before it is printed.",
+          "At Yume you can order medical prescription pads, logo stickers and labels, and vinyl stickers, all with prices published in the shop. All of our stickers come with high-quality BOPP lamination. We also quote invitations, menus and temporary tattoos for events on WhatsApp. Every order goes through a digital proof before it is printed.",
           "Custom medical prescription pad: for practices in Guadalajara, Zapopan or anywhere in Jalisco. You can order it without design, if you already have yours, or with design, if we build it with you. There is a full guide to custom medical prescription pads in Guadalajara covering what goes on the letterhead.",
           "Logo stickers & labels and vinyl stickers: they work for sealing packaging, identifying products or giving customers a branded detail. They're sold by piece count, not by sheet. If you sell products, we also have a guide to custom stickers for businesses in Guadalajara.",
           "Event pieces: invitations, menus and temporary tattoos don't have a fixed shop price because they depend on the design and quantity. They are quoted on WhatsApp, and the design goes through the same digital proof as every other order.",
@@ -1017,7 +1017,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "How much custom stationery costs",
         body: [
           `Price depends on the product. The 100-sheet medical prescription pad costs $${recetarioPrice("sin-diseno")} MXN if you already have your design and $${recetarioPrice("con-diseno")} MXN if we design it with you.`,
-          "Stickers and labels are sold by piece count, not by sheet, so you order the quantity you actually need. The minimum is 50 pieces for Logo Stickers & Labels and 40 pieces for Custom Vinyl Stickers. This table shows what each quantity costs:",
+          "Stickers and labels are sold by piece count, not by sheet, so you order the quantity you actually need. The minimum is 50 pieces for Logo Stickers & Labels and 40 pieces for Custom Vinyl Stickers. All of our stickers come with high-quality BOPP lamination. This table shows what each quantity costs:",
         ],
         table: {
           ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
@@ -2557,7 +2557,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "Custom labels for your business: what format to order",
         body: [
-          "For packaging, the most common choice is a round or square sticker, 3 to 5 cm, with the logo centered, sized to look good on a bag flap or the center of a box. If your packaging is a bottle or jar, an oval or rectangular format usually fits the curve better.",
+          "For packaging, the most common choice is a round or square sticker in the small (up to 4 cm) or medium (5 to 6 cm) size, with the logo centered, sized to look good on a bag flap or the center of a box. If your packaging is a bottle or jar, an oval or rectangular format usually fits the curve better.",
           "At Yume we sell custom labels by piece count, not by sheet: you can order the exact quantity your business needs at a given moment, without buying more just to fill a full sheet.",
         ],
       },
@@ -2714,7 +2714,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "What format to order depending on the use",
         body: [
-          "For favor bags or envelopes, a round or oval sticker 3 to 5 cm is the most common size. For bottles or cans, a rectangle or a die-cut matching your design's shape works best, and if it will get wet, order water-resistant vinyl instead of paper.",
+          "For favor bags or envelopes, a round or oval sticker in the small (up to 4 cm) or medium (5 to 6 cm) size is the most common choice. For bottles or cans, a rectangle or a die-cut matching your design's shape works best, and if it will get wet, order water-resistant vinyl instead of paper.",
           "On curved surfaces like a bottle or a can, a die-cut to your design's exact shape looks cleaner than a generic square. If you're unsure between die-cut and kiss-cut, read our die-cut vs. kiss-cut comparison.",
           "If the sticker will be on something that gets wet (a cooler, a bottle, outdoors), vinyl is the safe choice; to see how it differs from paper, check our vinyl vs. paper stickers guide. When ordering vinyl you also pick the finish: matte, glossy, or holographic (holographic has an extra per-piece cost, which you see on the product page). All of our stickers come with high-quality BOPP lamination.",
           "At Yume these sell by piece count, not by sheet: you can order exactly the number of guests or tables your event has, without buying more than you need.",
@@ -2755,7 +2755,7 @@ export const blogPostsEn: BlogPost[] = [
     faq: [
       {
         q: "What sticker size works for favor bags?",
-        a: "A round or oval sticker 3 to 5 cm is the most common size for favor bags and invitation envelopes.",
+        a: "A round or oval sticker, small (up to 4 cm) or medium (5 to 6 cm), is the most common size for favor bags and invitation envelopes.",
       },
       {
         q: "How much do stickers for my event cost?",
@@ -3436,7 +3436,7 @@ export const blogPostsEn: BlogPost[] = [
     title: "Custom Christmas labels: for gifts, bottles and your business packaging",
     metaTitle: "Christmas gift tags: free printable PDF or custom vinyl",
     description:
-      "Christmas gift tags: download the free printable PDF or order custom vinyl labels, 100 pieces for $350 MXN. Made in Guadalajara, shipping across Mexico.",
+      "Christmas gift tags: download the free printable PDF or order custom vinyl labels, from $3.50 each depending on size. Made in Guadalajara, shipping across Mexico.",
     category: "Guides",
     publishedAt: "2026-10-19",
     intro:
