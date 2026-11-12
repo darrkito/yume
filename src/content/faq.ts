@@ -79,5 +79,7 @@ export function getFaqCategories(): FaqCategory[] {
 // through to the full page.
 export function getFeaturedFaq(): FaqItem[] {
   const categories = getFaqCategories();
-  return [categories[0].items[4], categories[1].items[0], categories[2].items[3]];
+  // The sticker pick is found by question, not position, so adding an FAQ to the product never swaps it.
+  const stickerPrice = categories[2].items.find((i) => /precio/i.test(i.q)) ?? categories[2].items[0];
+  return [categories[0].items[4], categories[1].items[0], stickerPrice];
 }

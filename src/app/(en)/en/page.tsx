@@ -29,7 +29,6 @@ const NO_MINIMUMS = [
   "One prescription pad or 40-50 stickers, not hundreds",
   "Flexible pricing from $140 MXN",
   "No bulk minimums like other print shops",
-  "All of our stickers come with high-quality BOPP lamination",
 ];
 
 const HOW_IT_WORKS = [

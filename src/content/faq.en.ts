@@ -57,5 +57,6 @@ export function getFaqCategoriesEn(): FaqCategory[] {
 
 export function getFeaturedFaqEn(): FaqItem[] {
   const categories = getFaqCategoriesEn();
-  return [categories[0].items[4], categories[1].items[0], categories[2].items[3]];
+  const stickerPrice = categories[2].items.find((i) => /price/i.test(i.q)) ?? categories[2].items[0];
+  return [categories[0].items[4], categories[1].items[0], stickerPrice];
 }

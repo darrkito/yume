@@ -194,7 +194,7 @@ export const productsEn: Record<string, ProductTranslation> = {
       },
       {
         q: "What's the price of the stickers?",
-        a: "It depends on the size: small (up to 4 cm) $3 each, medium (5 to 6 cm) $4.50 each, large (7 to 8 cm) $6 each, 50-piece minimum. Holographic adds $0.50 per piece. For example, 100 small labels are $300 and 100 medium are $450. Need more than 9 cm or a specific size? We quote it on WhatsApp.",
+        a: "It depends on the size: small (up to 4 cm) $3 each, medium (5 to 6 cm) $4.50 each, large (7 to 8 cm) $6 each, 50-piece minimum. Holographic adds $0.50 per piece. For example, 100 small labels are $300 and 100 medium are $450. Need more than 8 cm or a specific size? We quote it on WhatsApp.",
       },
       {
         q: "Are the stickers water-resistant?",
@@ -272,7 +272,7 @@ export const productsEn: Record<string, ProductTranslation> = {
       },
       {
         q: "What's the price of the vinyl stickers?",
-        a: "It depends on the size: small (up to 4 cm) $3.50 each, medium (5 to 6 cm) $5 each, large (7 to 8 cm) $6.50 each, 40-piece minimum. Holographic adds $0.50 per piece. For example, 100 small stickers are $350 and 100 medium are $500. Need more than 9 cm or a specific size? We quote it on WhatsApp.",
+        a: "It depends on the size: small (up to 4 cm) $3.50 each, medium (5 to 6 cm) $5 each, large (7 to 8 cm) $6.50 each, 40-piece minimum. Holographic adds $0.50 per piece. For example, 100 small stickers are $350 and 100 medium are $500. Need more than 8 cm or a specific size? We quote it on WhatsApp.",
       },
       {
         q: "Is the vinyl water and sun resistant?",

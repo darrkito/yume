@@ -242,7 +242,7 @@ export const products: Product[] = [
         a: "Depende del tamaño: chico (hasta 4 cm) $3.50 c/u, mediano (de 5 a 6 cm) $5 c/u y grande (de 7 a 8 cm) $6.50 c/u, con mínimo de 40 piezas. El acabado holográfico suma $0.50 por pieza. Por ejemplo, 100 stickers chicos son $350 y 100 medianos son $500.",
       },
       {
-        q: "¿Y si necesito un sticker más grande de 9 cm o una medida específica?",
+        q: "¿Y si necesito un sticker más grande de 8 cm o una medida específica?",
         a: "Escríbenos por WhatsApp con la medida y la cantidad y te cotizamos aparte.",
       },
       {
@@ -319,7 +319,7 @@ export const products: Product[] = [
       },
       {
         q: "¿Cuál es el precio de las etiquetas?",
-        a: "Depende del tamaño: chico (hasta 4 cm) $3 c/u, mediano (de 5 a 6 cm) $4.50 c/u y grande (de 7 a 8 cm) $6 c/u, con mínimo de 50 piezas. El acabado holográfico suma $0.50 por pieza. Por ejemplo, 100 etiquetas chicas son $300 y 100 medianas son $450. Si necesitas más de 9 cm o una medida específica, cotizamos por WhatsApp.",
+        a: "Depende del tamaño: chico (hasta 4 cm) $3 c/u, mediano (de 5 a 6 cm) $4.50 c/u y grande (de 7 a 8 cm) $6 c/u, con mínimo de 50 piezas. El acabado holográfico suma $0.50 por pieza. Por ejemplo, 100 etiquetas chicas son $300 y 100 medianas son $450. Si necesitas más de 8 cm o una medida específica, cotizamos por WhatsApp.",
       },
       {
         q: "¿Las etiquetas son resistentes al agua?",

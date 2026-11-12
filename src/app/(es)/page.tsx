@@ -32,7 +32,6 @@ const NO_MINIMUMS = [
   "Un recetario o desde 40-50 piezas de stickers, no cientos",
   "Precios flexibles desde $140 MXN",
   "Sin planillas de mínimos como otros talleres",
-  "Todos nuestros stickers llevan laminado BOPP de alta calidad",
 ];
 
 const HOW_IT_WORKS = [
