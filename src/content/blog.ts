@@ -2375,20 +2375,20 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "menu-de-boda-personalizado",
-    title: "Papelería para boda: qué pedir y con cuánta anticipación",
-    metaTitle: "Papelería para boda: qué pedir y cuándo",
+    title: "Menú de boda personalizado: cómo pedirlo y cuándo",
+    metaTitle: "Menú de boda personalizado: cómo pedirlo y cuándo",
     description:
-      "Papelería para boda: calendario por piezas (save the date, invitaciones, menú y stickers), qué datos necesitas y cuándo cotizar por WhatsApp.",
+      "Menú de boda personalizado: qué texto poner, uno por invitado o por mesa, cómo se aprueba el diseño y cuándo cotizar por WhatsApp.",
     category: "Guías",
     publishedAt: "2026-09-09",
-    modifiedAt: "2026-11-03",
+    modifiedAt: "2026-11-11",
     intro:
-      "La papelería para boda no es una sola pieza: es un conjunto que va del save the date al menú, y cada pieza se pide en un momento distinto. Esta guía te da un orden de decisiones, rangos de referencia para cada pieza, los datos que necesitas para cotizar y cómo pedir tu menú de boda personalizado en Yume. Para tiempos y precios reales, cotizamos por WhatsApp.",
+      "Un menú de boda personalizado es una de las piezas de la papelería del evento, y se decide junto con el save the date, la invitación y los stickers. Esta guía te da un orden de decisiones, referencias de calendario, los datos que necesitas para cotizar y cómo pedirlo en Yume. Para tiempos y precios reales, cotizamos por WhatsApp.",
     sections: [
       {
-        heading: "Papelería para boda: qué piezas incluye y en qué orden decidirla",
+        heading: "Menú de boda personalizado: qué es y qué piezas lo acompañan",
         body: [
-          "La papelería para boda es el conjunto de piezas que acompañan al evento, como save the date, invitación, menú y stickers. Se decide en orden: primero la lista de invitados y el menú definitivo, luego el diseño con prueba digital y al final la producción. Conviene que todas compartan una línea gráfica.",
+          "Un menú de boda personalizado es la tarjeta con los platillos de tu banquete, diseñada con los nombres de los novios, la fecha y el estilo de tu evento. Forma parte de la papelería de boda, junto con el save the date, la invitación y los stickers, y conviene que todas compartan una misma línea gráfica.",
           "Las piezas dependen unas de otras: la lista de invitados define cuántas necesitas y el banquete define el texto del menú. Por eso el orden importa más que la fecha exacta de cada pedido.",
           "Yume cotiza el menú, las [invitaciones personalizadas para eventos](/blog/como-pedir-invitaciones-personalizadas-para-eventos) y los [stickers de vinil personalizados](/productos/stickers-vinil-impermeable) para cerrar sobres o sellar bolsitas. Si necesitas otra pieza, como place cards o programas, pregúntanos por WhatsApp si podemos cotizarla.",
         ],
@@ -2419,8 +2419,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "¿Cambia el calendario si viajan tus invitados o es temporada alta?",
         body: [
-          "Sí. Según guías en inglés, el save the date de una boda local se pide de 6 a 8 meses antes, y el de una boda de destino o en temporada alta, de 12 a 14 meses. Son rangos de referencia, no una regla, y otras guías dan cifras distintas.",
-          "Esos rangos vienen de guías en inglés y no de fuentes de México. Si tu boda es en temporada alta o tus invitados viajan, dínoslo al cotizar para tenerlo en cuenta.",
+          "Puede cambiar, y por eso conviene avisarnos. Si tu boda es en temporada alta o tus invitados viajan, dínoslo al cotizar para tenerlo en cuenta al fijar el calendario. Las guías dan rangos distintos para estos casos, así que no hay una cifra única: cuenta hacia atrás desde tu fecha y confirma por WhatsApp los tiempos reales de cada pieza.",
         ],
       },
       {
@@ -2428,10 +2427,11 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Si coordinas bodas, la papelería es un solo proyecto con varias piezas que dependen unas de otras. Reúne por cliente la lista de invitados, el menú definitivo y la referencia visual, y cotiza el conjunto en un solo mensaje por WhatsApp. Así recibes una propuesta con prueba digital y una línea de diseño común.",
           "Pide la prueba digital de cada pieza y confirma con tu cliente antes de aprobar: solo cuando se aprueba el diseño final pasa a producción. Si trabajas con varias bodas al año, escríbenos por WhatsApp para coordinar cantidades y fechas de cada evento.",
+          "Para más detalle, revisa la [guía para wedding planners en Guadalajara](/blog/guia-wedding-planners-detalles-personalizados-guadalajara) y cómo funciona la [prueba digital para planners](/blog/prueba-digital-pedido-evento-planners).",
         ],
       },
       {
-        heading: "Qué información necesitamos para cotizar tu menú",
+        heading: "Qué información necesitamos para cotizar tu menú de boda personalizado",
         body: [
           "Para cotizar un menú de boda necesitamos cuatro cosas: la cantidad de menús, el texto exacto de cada uno, la fecha del evento y una idea de estilo. Con eso preparamos la cotización y la propuesta de diseño. Si todavía no tienes todo definido, escríbenos igual y lo vamos completando contigo.",
           "La cantidad suele ser un menú por invitado o por mesa, según cómo lo quieras montar. El texto son los platillos, en el orden en que se sirven. Y la referencia visual importa sobre todo si quieres que combine con las invitaciones u otra papelería que ya estés pidiendo para el mismo evento.",
@@ -2450,7 +2450,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Qué texto poner y cómo revisarlo",
         body: [
           "El texto de un menú de boda lleva el título (por ejemplo los nombres de los novios o la fecha), los tiempos de la comida en orden y los platillos de cada uno. Antes de enviarlo, confirma cada nombre con tu banquetero: el texto que mandes es el que se imprime tal cual.",
-          "Una estructura que funciona: entrada, sopa o crema, plato fuerte, postre y, si aplica, la bebida o el brindis. No hace falta describir cada ingrediente. Entre más corto y claro, más fácil de leer a media luz en la mesa y más espacio queda para que el diseño respire.",
+          "Una estructura posible: entrada, sopa o crema, plato fuerte, postre y, si aplica, la bebida o el brindis. Entre más corto y claro el texto, más espacio queda para el diseño.",
           "Para revisar sin errores, pide a una segunda persona que lea el texto completo, sobre todo nombres propios, acentos y cantidades. Revisa también que el orden coincida con el que realmente se va a servir. En la prueba digital tienes oportunidad de pedir correcciones antes de que se imprima algo.",
         ],
       },
@@ -2467,7 +2467,7 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Para que el menú se vea como parte del mismo evento, usa la misma línea de diseño que tus invitaciones: mismos colores, misma tipografía y mismos detalles. Así la mesa, el sobre y la bolsita de regalo se leen como un solo conjunto y no como piezas compradas por separado.",
           "Para sellar bolsitas o cerrar sobres con el mismo diseño, revisa los [stickers para bodas](/blog/stickers-para-bodas-eventos-y-fiestas), y para el detalle que se lleva cada invitado, los [dulceros para bodas](/blog/dulceros-para-eventos-sociales-boda-xv-baby-shower) o los [dulceros personalizados](/productos/dulceros-personalizados).",
-          "También puedes alinear los detalles del evento con [tatuajes temporales para boda](/blog/tatuajes-temporales-para-boda-eventos-y-fiestas) en la pista de baile. Cuando tengas el diseño del menú, pídenos que lo adaptemos al resto de piezas: reutilizar la misma línea evita rehacer decisiones de estilo desde cero.",
+          "También puedes alinear los detalles del evento con [tatuajes temporales para boda](/blog/tatuajes-temporales-para-boda-eventos-y-fiestas) en la pista de baile. Para el resto de la mesa, mira los [detalles de mesa para boda](/blog/detalles-de-mesa-boda-personalizados). Cuando tengas el diseño del menú, pídenos que lo adaptemos al resto de piezas: reutilizar la misma línea evita rehacer decisiones de estilo desde cero.",
         ],
       },
       {
@@ -2513,7 +2513,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable", "dulceros-personalizados"],
-    relatedBlogSlugs: ["como-pedir-invitaciones-personalizadas-para-eventos", "stickers-para-bodas-eventos-y-fiestas", "papeleria-personalizada-vs-plantillas-genericas", "dulceros-para-eventos-sociales-boda-xv-baby-shower", "tatuajes-temporales-para-boda-eventos-y-fiestas"],
+    relatedBlogSlugs: ["como-pedir-invitaciones-personalizadas-para-eventos", "stickers-para-bodas-eventos-y-fiestas", "papeleria-personalizada-vs-plantillas-genericas", "dulceros-para-eventos-sociales-boda-xv-baby-shower", "tatuajes-temporales-para-boda-eventos-y-fiestas", "detalles-de-mesa-boda-personalizados", "guia-wedding-planners-detalles-personalizados-guadalajara"],
     quoteMessage: "Hola, me interesa cotizar la papelería de mi boda (menú, invitaciones y stickers).",
     sources: [
       { label: "Bodas.net: anuncia tu boda con un save the date", url: "https://www.bodas.net/articulos/anuncia-tu-boda-con-un-save-the-date--c983" },
