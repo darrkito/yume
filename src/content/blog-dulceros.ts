@@ -292,7 +292,7 @@ export const dulceroPosts: BlogPost[] = [
       "Dulceros navideños personalizados para posadas, la escuela y el intercambio: diseños, qué poner dentro, cuántos pedir y cuándo ordenarlos.",
     category: "Guías",
     publishedAt: PUBLISHED,
-    modifiedAt: "2026-10-29",
+    modifiedAt: "2026-11-12",
     intro:
       "Las posadas se celebran del 16 al 24 de diciembre, y entre festivales de la escuela, convivios de la oficina e intercambios, el dulcero navideño personalizado se vuelve el detalle que se ve pensado. Con el nombre de quien lo recibe, convierte el clásico aguinaldo de dulces en un recuerdo. Esta guía cubre diseño, usos, cantidades y, sobre todo, con cuánto tiempo pedirlos.",
     sections: [
@@ -312,10 +312,16 @@ export const dulceroPosts: BlogPost[] = [
         ],
       },
       {
+        heading: "Qué poner dentro de un dulcero navideño",
+        body: [
+          "El dulcero llega vacío, así que tú decides el relleno. Para una posada funcionan los dulces, los cacahuates, la colación y las mandarinas pequeñas, y puedes sumar un detalle como stickers del mismo diseño. Para más ideas por edad, revisa la guía de [qué poner en un dulcero](/blog/que-poner-en-un-dulcero).",
+        ],
+      },
+      {
         heading: "Dulceros navideños para el salón de clases",
         body: [
           "Para un salón, lo más sencillo es un solo diseño para todo el grupo, con el nombre del salón o de la escuela y una temática navideña. Pides un dulcero por alumno, y como el mínimo es de 10 piezas, el número se ajusta a la medida de tu grupo.",
-          "Antes de comprar el relleno, pregunta a la escuela o a la asociación de padres si hay reglas sobre dulces o alergias en el grupo. Para ideas de relleno por edad, revisa la guía de [qué poner en un dulcero](/blog/que-poner-en-un-dulcero).",
+          "Antes de comprar el relleno, pregunta a la escuela o a la asociación de padres si hay reglas sobre dulces o alergias en el grupo.",
         ],
       },
       {
@@ -328,7 +334,7 @@ export const dulceroPosts: BlogPost[] = [
         heading: "Dulceros navideños para empresas y oficinas",
         body: [
           "Para el convivio de una oficina o un negocio, usa los colores de tu marca con un detalle navideño y tu logo. El dulcero se ve festivo sin perder tu imagen, y la personalización puede incluir el nombre de tu empresa, el de cada invitado o una temática de fin de año.",
-          "Si organizas un evento con clientes o equipo, revisa la guía de [dulceros para eventos empresariales](/blog/dulceros-para-eventos-empresariales). Para empaques o bolsas del mismo evento, mira las [etiquetas navideñas personalizadas](/blog/etiquetas-navidenas-personalizadas).",
+          "Si organizas un evento con clientes o equipo, revisa la guía de [dulceros para eventos empresariales](/blog/dulceros-para-eventos-empresariales). Para la fiesta de fin de año de tu empresa, mira los [detalles para posada de empresa](/blog/detalles-posada-empresa-personalizados). Para empaques o bolsas del mismo evento, mira las [etiquetas navideñas personalizadas](/blog/etiquetas-navidenas-personalizadas).",
         ],
       },
       {
@@ -354,7 +360,7 @@ export const dulceroPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["etiquetas-navidenas-personalizadas", "dulceros-para-eventos-empresariales", "que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "buen-fin-2026-stickers-y-dulceros-personalizados"],
+    relatedBlogSlugs: ["etiquetas-navidenas-personalizadas", "dulceros-para-eventos-empresariales", "que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "buen-fin-2026-stickers-y-dulceros-personalizados", "detalles-posada-empresa-personalizados"],
     sources: [
       {
         label: "Cuándo empiezan las posadas 2025 en México y cuánto cuesta hacer una posada (InformaBTL)",
@@ -371,8 +377,16 @@ export const dulceroPosts: BlogPost[] = [
         a: `Primeras 100 piezas: $${dulceroUnit} MXN por pieza, con pedido mínimo de 10. Arriba de 100 piezas es precio mayoreo y se cotiza por WhatsApp. Desde $${FREE_SHIPPING_THRESHOLD} el envío nacional es gratis.`,
       },
       {
+        q: "¿Cuál es el pedido mínimo?",
+        a: "El pedido mínimo es de 10 piezas, así que puedes pedir el número exacto de invitados, alumnos o participantes del intercambio.",
+      },
+      {
         q: "¿Qué incluye la personalización?",
         a: "El nombre (del festejado, del grupo o de tu empresa) y la temática que elijas, incluido el logo de tu marca. Te mandamos una prueba digital antes de producir.",
+      },
+      {
+        q: "¿Puedo pedir un diseño para todo el salón de clases?",
+        a: "Sí. Lo más sencillo es un solo diseño para todo el grupo, con el nombre del salón o de la escuela y una temática navideña.",
       },
       {
         q: "¿Cuánto mide el dulcero?",
