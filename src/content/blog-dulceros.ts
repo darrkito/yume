@@ -109,20 +109,20 @@ export const dulceroPosts: BlogPost[] = [
   },
   {
     slug: "ideas-de-dulceros-para-fiesta-infantil",
-    title: "Dulceros para cumpleaños de niña: ideas por tema y cómo personalizarlos",
-    metaTitle: "Dulceros para cumpleaños de niña: ideas por tema",
+    title: "Ideas de dulceros para fiesta infantil y cumpleaños de niña",
+    metaTitle: "Ideas de dulceros para fiesta infantil por tema",
     description:
-      "Dulceros para cumpleaños de niña: ideas por tema, paletas de color, qué personalizar, cuántos pedir y cuándo pedirlos con prueba digital.",
+      "Ideas de dulceros para fiesta infantil: temas, paletas de color, qué personalizar, cuántos pedir y cuándo pedirlos con prueba digital.",
     category: "Guías",
     publishedAt: PUBLISHED,
-    modifiedAt: "2026-11-11",
+    modifiedAt: "2026-11-12",
     intro:
-      "El dulcero es de lo último que se llevan los invitados de la fiesta, y muchas veces lo primero que enseñan en casa. Por eso vale la pena que combine con la temática del cumpleaños y lleve el nombre de la festejada. Aquí tienes ideas de dulceros para cumpleaños de niña por tema, paletas de color, qué se puede personalizar, cuántos pedir, qué llevan dentro y cuándo pedirlos para que lleguen a tiempo.",
+      "El dulcero es de lo último que se llevan los invitados de la fiesta, y muchas veces lo primero que enseñan en casa. Por eso vale la pena que combine con la temática del cumpleaños y lleve el nombre de la festejada. Aquí tienes ideas de dulceros para fiesta infantil y cumpleaños de niña por tema, paletas de color, qué se puede personalizar, cuántos pedir, qué llevan dentro y cuándo pedirlos para que lleguen a tiempo.",
     sections: [
       {
-        heading: "Dulceros para cumpleaños de niña: cómo elegir el tema",
+        heading: "Ideas de dulceros para fiesta infantil: cómo elegir el tema",
         body: [
-          "Para un dulcero de cumpleaños de niña, elige el tema que ya está en la fiesta: el del pastel, la invitación y la decoración. Si no hay un tema definido, usa una paleta de dos o tres colores con su nombre y su edad al frente. Así el dulcero se ve parte de la fiesta.",
+          "Para un dulcero de fiesta infantil, elige el tema que ya está en la fiesta: el del pastel, la invitación y la decoración. Si no hay un tema definido, usa una paleta de dos o tres colores con su nombre y su edad al frente. Así el dulcero se ve parte de la fiesta.",
           "Una guía casera de Guiainfantil sugiere usar los colores y las figuras del tema favorito del niño y dejar que participe en el diseño. Es una referencia de otro sitio, pero la idea sirve: pregúntale a la festejada qué colores quiere ver.",
           "Mándanos una foto de la invitación o de la decoración y adaptamos el diseño del dulcero a esos colores. Antes de producir te enviamos una prueba digital, y nada se produce hasta que la apruebas.",
         ],
@@ -142,6 +142,15 @@ export const dulceroPosts: BlogPost[] = [
           "Rosa pastel con dorado se siente delicado y festivo, y va con princesa o tea party. Lila con blanco se ve fresco y limpio, y acompaña bien a unicornio, mariposas o sirena. Salvia con durazno es suave y natural, ideal para jardín o boho. Rojo con crema es más clásico y llamativo, y va con bailarina.",
           "Si ya tienes globos, manteles o el fondo de fotos, toma una foto con todo junto y mándala al cotizar. Con esa referencia ajustamos los colores del dulcero y te lo mostramos en la prueba digital.",
         ],
+        table: {
+          headers: ["Paleta", "Va bien con"],
+          rows: [
+            ["Rosa pastel con dorado", "Princesa o tea party"],
+            ["Lila con blanco", "Unicornio, mariposas o sirena"],
+            ["Salvia con durazno", "Jardín o boho"],
+            ["Rojo con crema", "Bailarina"],
+          ],
+        },
       },
       {
         heading: "Qué se personaliza en un dulcero de cumpleaños",
