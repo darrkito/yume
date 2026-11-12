@@ -6789,17 +6789,19 @@ export const blogPosts: BlogPost[] = [
     slug: "detalles-evento-con-clientes-personalizados",
     title: "Detalles personalizados para evento con clientes",
     description:
-      "Detalles personalizados para evento con clientes: qué entregar según el tipo de evento y una regla para calcular cuántos pedir.",
+      "Detalles personalizados para evento con clientes: qué entregar según el tipo de evento, cuántos pedir y cómo cuadrar el calendario con prueba digital.",
     category: "Guías",
     publishedAt: "2026-11-11",
+    modifiedAt: "2026-11-12",
     intro:
-      "Un evento con clientes es una ocasión para agradecer, y un detalle con tu logo o el nombre de tu empresa ayuda a que el evento se vea planeado. Esta guía te ayuda a elegir el detalle según el tipo de evento, a calcular cuántos pedir y a decidir cómo entregarlo.",
+      "Un evento con clientes es una ocasión para agradecer, y un detalle con tu logo o el nombre de tu empresa ayuda a que el evento se vea planeado. Esta guía te ayuda a elegir el detalle según el tipo de evento, a calcular cuántos pedir, a decidir cómo entregarlo y a ordenar el calendario hacia atrás desde la fecha de tu evento.",
     sections: [
       {
         heading: "Detalles personalizados para evento con clientes: qué elegir",
         body: [
           "Para un evento con clientes conviene un detalle que funcione como gesto de agradecimiento, con tu logo o el nombre de tu empresa, y no como gancho para que asistan. Elige la pieza según el tipo de evento: lanzamiento, aniversario con clientes, cena u open house.",
-          "Para un lanzamiento o una cena puedes usar [dulceros personalizados](/productos/dulceros-personalizados), que llegan armados y vacíos para que tú elijas qué llevan dentro. Si prefieres un detalle más ligero, [stickers con tu logo](/productos/stickers-logo-personalizado) también funcionan. Para ver otros casos, revisa [dulceros para eventos empresariales](/blog/dulceros-para-eventos-empresariales) y [detalles para aniversario de empresa](/blog/aniversario-empresa-detalles-personalizados).",
+          "Para un lanzamiento o una cena puedes usar [dulceros personalizados](/productos/dulceros-personalizados), que llegan armados y vacíos para que tú elijas qué llevan dentro. Si prefieres un detalle más ligero, [stickers con tu logo](/productos/stickers-logo-personalizado) también funcionan. Para ver otros casos, revisa [dulceros para eventos empresariales](/blog/dulceros-para-eventos-empresariales) y [detalles para aniversario de empresa](/blog/aniversario-empresa-detalles-personalizados). Si tu evento es una posada, mira los [detalles para posada de empresa](/blog/detalles-posada-empresa-personalizados).",
+          "Los estudios de ASI (Advertising Specialty Institute) de 2012 a 2015 reportan que cerca de 85 a 87 % de quienes reciben un artículo promocional recuerda al anunciante. Son cifras de hace años y de otro contexto, así que tómalas como una idea general: un detalle bien elegido se recuerda.",
           "Si necesitas variantes dentro del mismo evento, escríbenos por WhatsApp y lo revisamos contigo.",
         ],
         table: {
@@ -6841,10 +6843,29 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "Cuándo cerrar la cantidad y aprobar el diseño",
+        heading: "Calendario hacia atrás desde la fecha del evento",
         body: [
-          "Cierra primero la cantidad con la lista de confirmados y después aprueba el diseño. Te enviamos una prueba digital antes de producir, y nada se produce hasta que la apruebas. Si tu evento tiene fecha fija, pídenos cotizar por WhatsApp con tu fecha para revisar los tiempos antes de decidir.",
-          "Si quieres ver cómo funciona el proceso en eventos, lee sobre la [prueba digital para eventos](/blog/prueba-digital-pedido-evento-planners).",
+          "Empieza por la fecha del evento y ve hacia atrás: entrega, producción, aprobación de la prueba digital, brief con tu diseño y lista de confirmados. Los plazos de producción y envío de Yume se confirman por WhatsApp con tu fecha, así que escríbenos antes de fijar la entrega con tus clientes.",
+          "Cierra primero la cantidad con la lista de confirmados y después aprueba el diseño. Te enviamos una prueba digital antes de producir, y nada se produce hasta que la apruebas.",
+          "Si la lista cambia después de aprobar el diseño, avísanos por WhatsApp lo antes posible para revisar qué se puede ajustar.",
+          "Si quieres ver cómo funciona el proceso en eventos, lee sobre la [prueba digital para eventos](/blog/prueba-digital-pedido-evento-planners). Si organizas eventos para otros, el [checklist de pedido para planners](/blog/checklist-planners-pedido-detalles-evento) te ayuda a no olvidar nada.",
+        ],
+        table: {
+          headers: ["Etapa (de atrás hacia adelante)", "Qué pasa"],
+          rows: [
+            ["Fecha del evento", "Punto de partida para contar hacia atrás"],
+            ["Entrega", "El pedido llega antes del evento"],
+            ["Producción", "Empieza cuando apruebas la prueba digital"],
+            ["Aprobación", "Revisas la prueba digital y la apruebas"],
+            ["Brief y cantidad", "Cierras la lista de confirmados y nos mandas tu logo o idea"],
+          ],
+        },
+      },
+      {
+        heading: "Regalos para clientes y deducibilidad: qué confirmar",
+        body: [
+          "La deducibilidad de un regalo corporativo en México depende de quién lo recibe, de cómo se entrega y de su tratamiento fiscal, según señala Pluxee México. Aquí no damos reglas ni montos: antes de fijar presupuesto, confirma tu caso con tu contador.",
+          "Esto no es asesoría fiscal; solo es un recordatorio para que lo revises antes de decidir.",
         ],
       },
     ],
@@ -6855,9 +6876,12 @@ export const blogPosts: BlogPost[] = [
       "detalles-posada-empresa-personalizados",
       "dulceros-para-eventos-empresariales",
       "prueba-digital-pedido-evento-planners",
+      "checklist-planners-pedido-detalles-evento",
     ],
     sources: [
       { label: "Pheedloop: Event Data Lab Report 5 (no-show en eventos presenciales)", url: "https://pheedloop.com/blog/event-data-lab-report-5" },
+      { label: "ASI: estudio sobre productos promocionales (2012)", url: "https://members.asicentral.com/news/press/press-releases/november-2012/new-asi-study-promo-products-deliver-bigger-better-bang-for-buck/" },
+      { label: "Pluxee México: guía del regalo corporativo ideal", url: "https://www.pluxee.mx/blog/guia-regalo-corporativo-ideal/" },
     ],
     faq: [
       {
@@ -6871,6 +6895,14 @@ export const blogPosts: BlogPost[] = [
       {
         q: "¿Cuál es el pedido mínimo de dulceros personalizados?",
         a: "El pedido mínimo es de 10 piezas.",
+      },
+      {
+        q: "¿Cuánto antes debo pedir para mi evento con clientes?",
+        a: "Depende de tu fecha. Los tiempos de producción y envío se confirman por WhatsApp: escríbenos con la fecha de tu evento y la cantidad que necesitas.",
+      },
+      {
+        q: "¿Trabajan con planners y empresas?",
+        a: "Sí. Trabajamos con planners y empresas que organizan eventos, con diseño y prueba digital antes de producir y trato directo por WhatsApp.",
       },
       {
         q: "¿Las cifras de no-show son de México?",

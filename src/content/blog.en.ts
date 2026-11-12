@@ -5556,17 +5556,19 @@ export const blogPostsEn: BlogPost[] = [
     slug: "custom-details-for-client-events",
     title: "Custom details for a client event",
     description:
-      "Custom details for a client event: what to hand out by event type and a simple rule to work out how many to order.",
+      "Custom details for a client event: what to hand out by event type, how many to order and how to plan the calendar with a digital proof.",
     category: "Guides",
     publishedAt: "2026-11-11",
+    modifiedAt: "2026-11-12",
     intro:
-      "A client event is a chance to say thank you, and a detail with your logo or company name helps the event look planned. This guide helps you choose the detail by event type, work out how many to order and decide how to hand it out.",
+      "A client event is a chance to say thank you, and a detail with your logo or company name helps the event look planned. This guide helps you choose the detail by event type, work out how many to order, decide how to hand it out and plan the calendar backward from your event date.",
     sections: [
       {
         heading: "Custom details for a client event: what to choose",
         body: [
           "For a client event, choose a detail that works as a thank-you gesture, with your company's logo or name, and not as a hook to get people to attend. Pick the piece by event type: launch, anniversary with clients, dinner or open house.",
-          "For a launch or a dinner you can use [personalized party favor boxes](/en/products/personalized-party-favor-boxes), which arrive assembled and empty so you choose what goes inside. If you prefer something lighter, [custom logo stickers](/en/products/custom-logo-stickers) also work. For other cases, see [corporate event favor boxes](/en/blog/corporate-event-favor-boxes-with-logo) and [company anniversary custom details](/en/blog/company-anniversary-custom-details).",
+          "For a launch or a dinner you can use [personalized party favor boxes](/en/products/personalized-party-favor-boxes), which arrive assembled and empty so you choose what goes inside. If you prefer something lighter, [custom logo stickers](/en/products/custom-logo-stickers) also work. For other cases, see [corporate event favor boxes](/en/blog/corporate-event-favor-boxes-with-logo) and [company anniversary custom details](/en/blog/company-anniversary-custom-details). If your event is a holiday party, see [company posada favors](/en/blog/personalized-company-posada-favors).",
+          "ASI (Advertising Specialty Institute) studies from 2012 to 2015 report that about 85 to 87% of people who receive a promotional item remember the advertiser. These are figures from years ago and from another context, so take them as a general idea: a well-chosen detail gets remembered.",
           "If you need variants within the same event, message us on WhatsApp and we will review it with you.",
         ],
         table: {
@@ -5608,10 +5610,29 @@ export const blogPostsEn: BlogPost[] = [
         ],
       },
       {
-        heading: "When to lock the quantity and approve the design",
+        heading: "Plan the calendar backward from the event date",
         body: [
-          "Close the quantity first with your confirmed guest list, then approve the design. We send a digital proof before producing, and nothing is produced until you approve it. If your event has a fixed date, message us on WhatsApp with it so we can review timing before you decide.",
-          "To see how the process works for events, read about the [digital proof for events](/en/blog/digital-proof-event-order-planners).",
+          "Start from the event date and work backward: delivery, production, digital proof approval, brief with your design and the confirmed guest list. Yume's production and shipping times are confirmed over WhatsApp with your date, so message us before you promise a delivery date to your clients.",
+          "Close the quantity first with your confirmed guest list, then approve the design. We send a digital proof before producing, and nothing is produced until you approve it.",
+          "If the list changes after you approve the design, tell us on WhatsApp as soon as possible so we can review what can be adjusted.",
+          "To see how the process works for events, read about the [digital proof for events](/en/blog/digital-proof-event-order-planners). If you organize events for others, the [planner checklist for favor orders](/en/blog/planner-checklist-custom-favors-order-event) helps you cover everything.",
+        ],
+        table: {
+          headers: ["Stage (from last to first)", "What happens"],
+          rows: [
+            ["Event date", "Starting point to count backward"],
+            ["Delivery", "The order arrives before the event"],
+            ["Production", "Starts when you approve the digital proof"],
+            ["Approval", "You review the digital proof and approve it"],
+            ["Brief and quantity", "You close the confirmed guest list and send us your logo or idea"],
+          ],
+        },
+      },
+      {
+        heading: "Client gifts and tax deductibility: what to confirm",
+        body: [
+          "Whether a corporate gift is tax deductible in Mexico depends on who receives it, how it is delivered and its tax treatment. Pluxee Mexico notes this in its corporate gift guide. We give no rules or amounts here: confirm your case with your accountant before setting a budget.",
+          "This is not tax advice; it is only a reminder to check before you decide.",
         ],
       },
     ],
@@ -5622,9 +5643,12 @@ export const blogPostsEn: BlogPost[] = [
       "personalized-company-posada-favors",
       "corporate-event-favor-boxes-with-logo",
       "digital-proof-event-order-planners",
+      "planner-checklist-custom-favors-order-event",
     ],
     sources: [
       { label: "Pheedloop: Event Data Lab Report 5 (no-show at in-person events)", url: "https://pheedloop.com/blog/event-data-lab-report-5" },
+      { label: "ASI: promotional products study (2012)", url: "https://members.asicentral.com/news/press/press-releases/november-2012/new-asi-study-promo-products-deliver-bigger-better-bang-for-buck/" },
+      { label: "Pluxee Mexico: ideal corporate gift guide", url: "https://www.pluxee.mx/blog/guia-regalo-corporativo-ideal/" },
     ],
     faq: [
       {
@@ -5638,6 +5662,14 @@ export const blogPostsEn: BlogPost[] = [
       {
         q: "What is the minimum order for personalized favor boxes?",
         a: "The minimum order is 10 pieces.",
+      },
+      {
+        q: "How far ahead should I order for my client event?",
+        a: "It depends on your date. Production and shipping times are confirmed over WhatsApp: message us with your event date and the quantity you need.",
+      },
+      {
+        q: "Do you work with planners and companies?",
+        a: "Yes. We work with planners and companies that organize events, with a design and digital proof before production and direct contact over WhatsApp.",
       },
       {
         q: "Are the no-show figures from Mexico?",
