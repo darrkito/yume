@@ -1,6 +1,6 @@
 import type { BlogPost } from "@/content/blog";
 import { priceOf, perPiece, casablancaBranchNames, recetarioPrice } from "@/content/blog";
-import { getProduct, tierPriceRows } from "@/content/products";
+import { getProduct, sizeTable } from "@/content/products";
 import { CASABLANCA_BRANCHES, CASABLANCA_PRICE, FREE_SHIPPING_THRESHOLD, NATIONAL_SHIPPING_PRICE, NATIONAL_TRANSIT_DAYS, PICKUP_EXTRA_DAYS, PRODUCTION_DAYS } from "@/content/shipping";
 import { BLOG_SLUG_EN } from "@/lib/i18n";
 import { dulceroPostsEn } from "@/content/blog-dulceros.en";
@@ -806,8 +806,7 @@ export const blogPostsEn: BlogPost[] = [
           "On both you choose the cut (die-cut to your design's shape, or kiss-cut) and the finish: matte, glossy or holographic (holographic adds $0.50 per piece). All of them are water-resistant.",
         ],
         table: {
-          headers: ["Quantity", "Logo stickers & labels", "Vinyl stickers (your design)"],
-          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
+          ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
         },
       },
       {
@@ -915,8 +914,7 @@ export const blogPostsEn: BlogPost[] = [
           "The minimum order is 50 pieces for Logo Stickers & Labels and 40 pieces for Custom Vinyl Stickers. This table shows what each quantity costs, so you order what you will really use:",
         ],
         table: {
-          headers: ["Quantity", "Logo stickers & labels", "Vinyl stickers (your design)"],
-          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
+          ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
         },
       },
       {
@@ -1022,8 +1020,7 @@ export const blogPostsEn: BlogPost[] = [
           "Stickers and labels are sold by piece count, not by sheet, so you order the quantity you actually need. The minimum is 50 pieces for Logo Stickers & Labels and 40 pieces for Custom Vinyl Stickers. This table shows what each quantity costs:",
         ],
         table: {
-          headers: ["Quantity", "Logo stickers & labels", "Vinyl stickers (your design)"],
-          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
+          ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
         },
       },
       {
@@ -1420,8 +1417,7 @@ export const blogPostsEn: BlogPost[] = [
           "It's the same premium vinyl, resistant to water, sun, and scratches, that we use for any other custom design, so it holds up well on water bottles, laptops, or wherever you want to stick it.",
         ],
         table: {
-          headers: ["Pieces", "Price"],
-          rows: tierPriceRows(["stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
+          ...sizeTable(["stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
         },
       },
       {
@@ -1742,8 +1738,7 @@ export const blogPostsEn: BlogPost[] = [
           `For example, 200 vinyl pieces cost $${priceOf("stickers-vinil-impermeable", 200)} MXN ($${perPiece("stickers-vinil-impermeable", 200)} each). Order the quantity you need: you pick it or type it when you place your order.`,
         ],
         table: {
-          headers: ["Pieces", "Custom Logo Stickers", "Vinyl Stickers"],
-          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
+          ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
         },
       },
       {
@@ -1882,8 +1877,7 @@ export const blogPostsEn: BlogPost[] = [
           `As a reference, 150 vinyl pieces cost $${priceOf("stickers-vinil-impermeable", 150)} and 200 pieces cost $${priceOf("stickers-vinil-impermeable", 200)} MXN. Order the exact quantity you need: you pick it or type it in when you place your order.`,
         ],
         table: {
-          headers: ["Pieces", "Price"],
-          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
+          ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
         },
       },
       {
@@ -2608,8 +2602,7 @@ export const blogPostsEn: BlogPost[] = [
           "The table below shows the total and the per-piece price at typical quantities, taken from the catalog.",
         ],
         table: {
-          headers: ["Pieces", "Custom logo stickers", "Vinyl stickers"],
-          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
+          ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
         },
       },
       {
@@ -2734,8 +2727,7 @@ export const blogPostsEn: BlogPost[] = [
           "A simple way to count: one piece per guest if they go on bags or bottles, one per envelope if you're sealing invitations, plus a few extra for tables, signs, and photos. Price by quantity:",
         ],
         table: {
-          headers: ["Pieces", "Custom logo stickers", "Vinyl stickers"],
-          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
+          ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
         },
       },
       {
@@ -2869,8 +2861,7 @@ export const blogPostsEn: BlogPost[] = [
           "Price by quantity (minimum order is 50 pieces for logo stickers and 40 for vinyl):",
         ],
         table: {
-          headers: ["Quantity", "Custom logo stickers", "Waterproof vinyl stickers"],
-          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
+          ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
         },
       },
       {
@@ -3033,8 +3024,7 @@ export const blogPostsEn: BlogPost[] = [
           "Choosing die cut or kiss cut does not change the base price in the table. Order the exact quantity you need: you pick or type it when you place your order.",
         ],
         table: {
-          headers: ["Quantity", "Logo stickers & labels", "Vinyl stickers (your design)"],
-          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
+          ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
         },
       },
       {
@@ -3183,8 +3173,7 @@ export const blogPostsEn: BlogPost[] = [
           "We send a digital proof, normally within 24 hours of payment, with up to 2 rounds of adjustments. We print nothing without your approval. Here is the price by quantity:",
         ],
         table: {
-          headers: ["Pieces", "Vinyl stickers"],
-          rows: tierPriceRows(["stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
+          ...sizeTable(["stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
         },
       },
       {
@@ -3308,8 +3297,7 @@ export const blogPostsEn: BlogPost[] = [
           "The proof normally arrives within 24 hours of payment, with up to 2 rounds of adjustments. We print nothing without your approval. Here is the price by quantity:",
         ],
         table: {
-          headers: ["Pieces", "Vinyl stickers"],
-          rows: tierPriceRows(["stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
+          ...sizeTable(["stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
         },
       },
       {
@@ -3401,8 +3389,7 @@ export const blogPostsEn: BlogPost[] = [
           `These are the real prices from our catalog. Shipping is separate: $${NATIONAL_SHIPPING_PRICE} MXN anywhere in Mexico or $${CASABLANCA_PRICE} MXN if you pick up at a Casa Blanca branch in Guadalajara, and it's free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more.`,
         ],
         table: {
-          headers: ["Quantity", "Logo stickers & labels", "Vinyl stickers (your design)"],
-          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
+          ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
         },
       },
       {
@@ -3482,11 +3469,7 @@ export const blogPostsEn: BlogPost[] = [
           "The cut follows the shape of your design: round, ornament or star shaped, or square. You choose die cut (each label loose) or kiss cut (several on one sheet, easy to peel). The finish can be matte, glossy or holographic; holographic looks very festive and costs $0.50 MXN more per piece.",
         ],
         table: {
-          headers: ["Product", "Minimum", "100 pieces (small size)", "Medium / large size"],
-          rows: [
-            ["Custom vinyl stickers (any design, name or photo)", "40 pieces", "$400 MXN", "Medium +$2, large +$4 per piece"],
-            ["Logo stickers and labels (businesses)", "50 pieces", "$350 MXN", "Medium +$2, large +$4 per piece"],
-          ],
+          ...sizeTable(["stickers-vinil-impermeable", "stickers-logo-personalizado"], [100], "en"),
         },
       },
       {
@@ -3544,8 +3527,7 @@ export const blogPostsEn: BlogPost[] = [
           "A practical count: with 80 guests, order 80 pieces plus 5 or 10 spare. Price by quantity:",
         ],
         table: {
-          headers: ["Pieces", "Personalized favor boxes", "Vinyl stickers"],
-          rows: tierPriceRows(["dulceros-personalizados", "stickers-vinil-impermeable"], [50, 100, 200], "en"),
+          ...sizeTable(["dulceros-personalizados", "stickers-vinil-impermeable"], [50, 100, 200], "en"),
         },
       },
       {

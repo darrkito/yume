@@ -1,5 +1,5 @@
 import { dulceroPosts } from "@/content/blog-dulceros";
-import { getProduct, tieredPrice, tierPriceRows } from "@/content/products";
+import { getProduct, tieredPrice, sizeTable } from "@/content/products";
 import { CASABLANCA_BRANCHES, CASABLANCA_PRICE, FREE_SHIPPING_THRESHOLD, NATIONAL_SHIPPING_PRICE, NATIONAL_TRANSIT_DAYS, PICKUP_EXTRA_DAYS, PRODUCTION_DAYS } from "@/content/shipping";
 
 // Catalog-derived figures for posts, so copy never drifts from real prices.
@@ -1061,8 +1061,7 @@ export const blogPosts: BlogPost[] = [
           "Hay dos opciones: las Etiquetas con tu Logo, pensadas para el logo de tu negocio o tu evento (mínimo 50 piezas), y los Stickers de Vinil Personalizados, para cualquier diseño, personaje o foto (mínimo 40 piezas). En ambas eliges el corte (troquelado, a la forma de tu diseño, o semitroquelado) y el acabado: mate, brillante u holográfico. Todas son resistentes al agua.",
         ],
         table: {
-          headers: ["Cantidad", "Etiquetas con tu logo", "Stickers de vinil (tu diseño)"],
-          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
+          ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
         },
       },
       {
@@ -1192,8 +1191,7 @@ export const blogPosts: BlogPost[] = [
           "El mínimo de pedido es de 50 piezas en las Etiquetas con tu Logo y de 40 piezas en los Stickers de Vinil Personalizados. Esta tabla muestra cuánto cuesta cada cantidad, para que pidas lo que de verdad vas a usar:",
         ],
         table: {
-          headers: ["Cantidad", "Etiquetas con tu logo", "Stickers de vinil (tu diseño)"],
-          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
+          ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
         },
       },
       {
@@ -1299,8 +1297,7 @@ export const blogPosts: BlogPost[] = [
           "Las etiquetas y los stickers se venden por cantidad de piezas, no por hoja, así que pides la cantidad que de verdad necesitas. El mínimo es de 50 piezas en las Etiquetas con tu Logo y de 40 piezas en los Stickers de Vinil Personalizados. Esta tabla muestra cuánto cuesta cada cantidad:",
         ],
         table: {
-          headers: ["Cantidad", "Etiquetas con tu logo", "Stickers de vinil (tu diseño)"],
-          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
+          ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
         },
       },
       {
@@ -1771,8 +1768,7 @@ export const blogPosts: BlogPost[] = [
           "Es el mismo vinil premium resistente al agua, al sol y a rayones que usamos para cualquier otro diseño personalizado, así que aguanta bien en botellas de agua, laptops o donde quieras pegarlo. Si quieres comparar materiales, lee [vinil vs. papel](/blog/stickers-vinil-vs-papel-diferencias).",
         ],
         table: {
-          headers: ["Piezas", "Precio"],
-          rows: tierPriceRows(["stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
+          ...sizeTable(["stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
         },
       },
       {
@@ -2175,8 +2171,7 @@ export const blogPosts: BlogPost[] = [
           `Como ejemplo, 200 piezas de vinil cuestan $${priceOf("stickers-vinil-impermeable", 200)} ($${perPiece("stickers-vinil-impermeable", 200)} c/u). Pide la cantidad que necesitas: la eliges o la escribes al hacer tu pedido.`,
         ],
         table: {
-          headers: ["Piezas", "Etiquetas con tu logo", "Stickers de vinil"],
-          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
+          ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
         },
       },
       {
@@ -2319,8 +2314,7 @@ export const blogPosts: BlogPost[] = [
           `Como referencia, 150 piezas de vinil cuestan $${priceOf("stickers-vinil-impermeable", 150)} y 200 piezas cuestan $${priceOf("stickers-vinil-impermeable", 200)}. Para un evento, cuenta a tus invitados y suma unas cuantas piezas de repuesto.`,
         ],
         table: {
-          headers: ["Piezas", "Precio"],
-          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 150, 200, 300], "es"),
+          ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 150, 200, 300], "es"),
         },
       },
       {
@@ -3341,8 +3335,7 @@ export const blogPosts: BlogPost[] = [
           "La tabla de abajo muestra el total y el precio por pieza en cantidades típicas, tomados del catálogo.",
         ],
         table: {
-          headers: ["Piezas", "Etiquetas con tu logo", "Stickers de vinil"],
-          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
+          ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
         },
       },
       {
@@ -3472,8 +3465,7 @@ export const blogPosts: BlogPost[] = [
           "Precio por cantidad:",
         ],
         table: {
-          headers: ["Piezas", "Etiquetas con tu logo", "Stickers de vinil"],
-          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
+          ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
         },
       },
       {
@@ -3696,8 +3688,7 @@ export const blogPosts: BlogPost[] = [
           "Precio por cantidad (el mínimo de compra es 50 piezas en etiquetas con logo y 40 en vinil):",
         ],
         table: {
-          headers: ["Cantidad", "Etiquetas con tu logo", "Stickers de vinil"],
-          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
+          ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
         },
       },
       {
@@ -4014,8 +4005,7 @@ export const blogPosts: BlogPost[] = [
           "Elegir troquelado o semitroquelado no cambia el precio base que ves en la tabla. Pide la cantidad exacta que necesitas: la eliges o la escribes al hacer tu pedido.",
         ],
         table: {
-          headers: ["Piezas", "Etiquetas con tu logo", "Stickers de vinil"],
-          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
+          ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
         },
       },
       {
@@ -4223,8 +4213,7 @@ export const blogPosts: BlogPost[] = [
           "Te mandamos una prueba digital, normalmente en un máximo de 24 horas después del pago, con hasta 2 rondas de ajustes. No imprimimos nada sin tu aprobación. Así se ve el precio por cantidad:",
         ],
         table: {
-          headers: ["Piezas", "Stickers de vinil"],
-          rows: tierPriceRows(["stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
+          ...sizeTable(["stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
         },
       },
       {
@@ -4362,8 +4351,7 @@ export const blogPosts: BlogPost[] = [
           "La prueba llega normalmente en un máximo de 24 horas después del pago, con hasta 2 rondas de ajustes. No imprimimos nada sin tu aprobación. Así se ve el precio por cantidad:",
         ],
         table: {
-          headers: ["Piezas", "Stickers de vinil"],
-          rows: tierPriceRows(["stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
+          ...sizeTable(["stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
         },
       },
       {
@@ -4475,8 +4463,7 @@ export const blogPosts: BlogPost[] = [
           "El pedido mínimo es de 50 piezas en las etiquetas con tu logo y de 40 piezas en los stickers de vinil, así que pides cerca del número que de verdad vas a usar.",
         ],
         table: {
-          headers: ["Cantidad", "Etiquetas con tu logo", "Stickers de vinil (tu diseño)"],
-          rows: tierPriceRows(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
+          ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
         },
       },
       {
@@ -4577,11 +4564,7 @@ export const blogPosts: BlogPost[] = [
           `100 piezas (tamaño chico): $${priceOf("stickers-vinil-impermeable", 100)} en los stickers de vinil personalizados, con mínimo de 40 piezas, y $${priceOf("stickers-logo-personalizado", 100)} en las etiquetas con tu logo, con mínimo de 50 piezas.`,
         ],
         table: {
-          headers: ["Producto", "Mínimo", "100 piezas (tamaño chico)", "Tamaño mediano / grande"],
-          rows: [
-            ["Stickers de vinil personalizados (cualquier diseño, nombre o foto)", "40 piezas", `$${priceOf("stickers-vinil-impermeable", 100)}`, "Mediano +$2 y grande +$4 por pieza"],
-            ["Stickers y etiquetas con tu logo (negocios)", "50 piezas", `$${priceOf("stickers-logo-personalizado", 100)}`, "Mediano +$2 y grande +$4 por pieza"],
-          ],
+          ...sizeTable(["stickers-vinil-impermeable", "stickers-logo-personalizado"], [100], "es"),
         },
       },
       {
@@ -4674,8 +4657,7 @@ export const blogPosts: BlogPost[] = [
           `100 dulceros cuestan $${priceOf("dulceros-personalizados", 100)} y 100 stickers de vinil chicos (hasta 5 cm) cuestan $${priceOf("stickers-vinil-impermeable", 100)}. Precio por cantidad:`,
         ],
         table: {
-          headers: ["Piezas", "Dulceros personalizados", "Stickers de vinil"],
-          rows: tierPriceRows(["dulceros-personalizados", "stickers-vinil-impermeable"], [50, 100, 200], "es"),
+          ...sizeTable(["dulceros-personalizados", "stickers-vinil-impermeable"], [50, 100, 200], "es"),
         },
       },
       {

@@ -662,17 +662,33 @@ export const cartItemLabel = (product: Product, variantId?: string): string => {
   return variant ? `${product.name}: ${variant.label}` : product.name;
 };
 
-/** Price table rows for per-piece products, computed from the catalog so blog
- * and product tables can never drift from the real prices. */
-export function tierPriceRows(slugs: string[], quantities: number[], lang: "es" | "en"): string[][] {
+const TABLE_LABELS: Record<string, { es: string; en: string }> = {
+  "stickers-vinil-impermeable": { es: "Stickers de vinil", en: "Vinyl stickers" },
+  "stickers-logo-personalizado": { es: "Etiquetas con tu logo", en: "Logo labels" },
+  "dulceros-personalizados": { es: "Dulceros", en: "Favor boxes" },
+};
+
+/** Blog/product price table, one column per sticker size (chico/mediano/grande),
+ * computed from the catalog so it can never drift from what the cart charges.
+ * One product: rows are quantities. Several: a leading product column. Products
+ * without sizes (dulceros) show their single price under the first size. */
+export function sizeTable(slugs: string[], quantities: number[], lang: "es" | "en"): { headers: string[]; rows: string[][] } {
   const fmt = (n: number) => `$${n.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
-  return quantities.map((q) => [
-    `${q} ${lang === "en" ? "pieces" : "piezas"}`,
-    ...slugs.map((slug) => {
-      const t = getProduct(slug)?.tiers;
-      if (!t) return "";
-      const total = tieredPrice(t, q);
-      return `${fmt(total)} (${fmt(total / q)} ${lang === "en" ? "each" : "c/u"})`;
-    }),
-  ]);
+  const each = lang === "en" ? "each" : "c/u";
+  const multi = slugs.length > 1;
+  const rows = slugs.flatMap((slug) => {
+    const product = getProduct(slug)!;
+    return quantities.map((q) => {
+      const cells = SIZE_OPTIONS.map((size, i) => {
+        if (!product.lineOptions && i > 0) return "—";
+        const total = product.lineOptions ? resolvePrice(product, lineVariantId(q, CUT_OPTIONS[0].id, FINISH_OPTIONS[0].id, size.id)) : tieredPrice(product.tiers!, q);
+        return `${fmt(total)} (${fmt(total / q)} ${each})`;
+      });
+      return [...(multi ? [TABLE_LABELS[slug]?.[lang] ?? product.name] : []), `${q} ${lang === "en" ? "pieces" : "piezas"}`, ...cells];
+    });
+  });
+  return {
+    headers: [...(multi ? [lang === "en" ? "Product" : "Producto"] : []), lang === "en" ? "Pieces" : "Piezas", ...SIZE_OPTIONS.map((o) => o.label[lang])],
+    rows,
+  };
 }
