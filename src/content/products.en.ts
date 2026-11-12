@@ -150,7 +150,7 @@ export const productsEn: Record<string, ProductTranslation> = {
     category: "Custom Stickers",
     specs: [
       { label: "Minimum order", value: "50 pieces" },
-      { label: "Price per piece", value: "Small (up to 5 cm) $3.50 · Medium (5 to 7 cm) $5.50 · Large (7 to 9 cm) $7.50" },
+      { label: "Price per piece", value: "Small (up to 5 cm) $3 · Medium (5 to 7 cm) $4.50 · Large (7 to 8 cm) $6" },
       { label: "Other sizes", value: "Bigger or something specific: quoted on WhatsApp" },
       { label: "Cut type", value: "Die cut or kiss cut, you choose when ordering" },
       { label: "Finish", value: "Matte, glossy or holographic (holographic +$0.50 per piece)" },
@@ -159,12 +159,12 @@ export const productsEn: Record<string, ProductTranslation> = {
       { label: "Production", value: "Made to order" },
     ],
     description:
-      "Custom stickers with your logo or design, water-resistant. Sold by piece, priced by size: small (up to 5 cm) $3.50 each, medium (5 to 7 cm) $5.50 each and large (7 to 9 cm) $7.50 each. Need something bigger or more specific? We quote it on WhatsApp. Send us your image (or the design you'd like turned into a sticker) and we'll send a digital proof before printing.",
+      "Custom stickers with your logo or design, water-resistant. Sold by piece, priced by size: small (up to 5 cm) $3 each, medium (5 to 7 cm) $4.50 each and large (7 to 8 cm) $6 each. Need something bigger or more specific? We quote it on WhatsApp. Send us your image (or the design you'd like turned into a sticker) and we'll send a digital proof before printing.",
     metaDescription:
-      "Custom stickers with your logo, water-resistant. From $3.50 per piece depending on size. Digital proof before printing.",
+      "Custom stickers with your logo, water-resistant. From $3 per piece depending on size. Digital proof before printing.",
     details: [
       "Sold by piece count, 50-piece minimum",
-      "Three sizes: small up to 5 cm ($3.50 each), medium 5 to 7 cm ($5.50 each), large 7 to 9 cm ($7.50 each)",
+      "Three sizes: small up to 5 cm ($3 each), medium 5 to 7 cm ($4.50 each), large 7 to 8 cm ($6 each)",
       "Bigger or something specific? Quoted on WhatsApp",
       "Order the exact amount you need: pick it or type it",
       "Water-resistant",
@@ -188,7 +188,7 @@ export const productsEn: Record<string, ProductTranslation> = {
       },
       {
         q: "What's the price of the stickers?",
-        a: "It depends on the size: small (up to 5 cm) $3.50 each, medium (5 to 7 cm) $5.50 each, large (7 to 9 cm) $7.50 each, 50-piece minimum. Holographic adds $0.50 per piece. For example, 100 small labels are $350 and 100 medium are $550. Need more than 9 cm or a specific size? We quote it on WhatsApp.",
+        a: "It depends on the size: small (up to 5 cm) $3 each, medium (5 to 7 cm) $4.50 each, large (7 to 8 cm) $6 each, 50-piece minimum. Holographic adds $0.50 per piece. For example, 100 small labels are $300 and 100 medium are $450. Need more than 9 cm or a specific size? We quote it on WhatsApp.",
       },
       {
         q: "Are the stickers water-resistant?",
@@ -217,7 +217,7 @@ export const productsEn: Record<string, ProductTranslation> = {
     category: "Custom Vinyl Stickers",
     specs: [
       { label: "Minimum order", value: "40 pieces" },
-      { label: "Price per piece", value: "Small (up to 5 cm) $4 · Medium (5 to 7 cm) $6 · Large (7 to 9 cm) $8" },
+      { label: "Price per piece", value: "Small (up to 5 cm) $3.50 · Medium (5 to 7 cm) $5 · Large (7 to 8 cm) $6.50" },
       { label: "Other sizes", value: "Bigger or something specific: quoted on WhatsApp" },
       { label: "Material", value: "Premium vinyl" },
       { label: "Cut type", value: "Die cut or kiss cut, you choose when ordering" },
@@ -226,13 +226,13 @@ export const productsEn: Record<string, ProductTranslation> = {
       { label: "Customization", value: "Your design, character, or photo" },
     ],
     description:
-      "Die-cut stickers on premium vinyl, resistant to water, sun, and scratches: for any design, character, or photo you want turned into a sticker, not just logos. Sold by piece, priced by size: small (up to 5 cm) $4 each, medium (5 to 7 cm) $6 each and large (7 to 9 cm) $8 each. Need something bigger or more specific? We quote it on WhatsApp. Send us your image or design and we'll send a digital proof before printing.",
+      "Die-cut stickers on premium vinyl, resistant to water, sun, and scratches: for any design, character, or photo you want turned into a sticker, not just logos. Sold by piece, priced by size: small (up to 5 cm) $3.50 each, medium (5 to 7 cm) $5 each and large (7 to 8 cm) $6.50 each. Need something bigger or more specific? We quote it on WhatsApp. Send us your image or design and we'll send a digital proof before printing.",
     metaDescription:
-      "Custom vinyl stickers, resistant to water, sun, and scratches. Any design, character, or photo. From $4 per piece depending on size.",
+      "Custom vinyl stickers, resistant to water, sun, and scratches. Any design, character, or photo. From $3.50 per piece depending on size.",
     details: [
       "Premium vinyl cut to the shape of your design: die cut or kiss cut, you choose when ordering",
       "Sold by piece count, 40-piece minimum",
-      "Three sizes: small up to 5 cm ($4 each), medium 5 to 7 cm ($6 each), large 7 to 9 cm ($8 each)",
+      "Three sizes: small up to 5 cm ($3.50 each), medium 5 to 7 cm ($5 each), large 7 to 8 cm ($6.50 each)",
       "Bigger or something specific? Quoted on WhatsApp",
       "Order the exact amount you need: pick it or type it",
       "Water, sun, and scratch resistant",
@@ -260,7 +260,7 @@ export const productsEn: Record<string, ProductTranslation> = {
       },
       {
         q: "What's the price of the vinyl stickers?",
-        a: "It depends on the size: small (up to 5 cm) $4 each, medium (5 to 7 cm) $6 each, large (7 to 9 cm) $8 each, 40-piece minimum. Holographic adds $0.50 per piece. For example, 100 small stickers are $400 and 100 medium are $600. Need more than 9 cm or a specific size? We quote it on WhatsApp.",
+        a: "It depends on the size: small (up to 5 cm) $3.50 each, medium (5 to 7 cm) $5 each, large (7 to 8 cm) $6.50 each, 40-piece minimum. Holographic adds $0.50 per piece. For example, 100 small stickers are $350 and 100 medium are $500. Need more than 9 cm or a specific size? We quote it on WhatsApp.",
       },
       {
         q: "Is the vinyl water and sun resistant?",
