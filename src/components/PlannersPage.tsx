@@ -39,7 +39,7 @@ const COPY = {
       },
       {
         title: "Stickers de vinil",
-        body: `Para sellar bolsitas de regalo, decorar el detalle de la mesa o combinar con tu papelería. Vinil resistente al agua y al sol, con tu diseño o el de la pareja. Mínimo ${VINYL_MIN} piezas; 100 stickers chicos (hasta 5 cm) cuestan ${formatMXN(VINYL_100)}.`,
+        body: `Para sellar bolsitas de regalo, decorar el detalle de la mesa o combinar con tu papelería. Vinil resistente al agua y al sol, con tu diseño o el de la pareja. Mínimo ${VINYL_MIN} piezas; 100 stickers chicos (hasta 4 cm) cuestan ${formatMXN(VINYL_100)}.`,
         href: "/productos/stickers-vinil-impermeable",
         link: "Ver stickers y precios",
       },
@@ -110,7 +110,7 @@ const COPY = {
       },
       {
         title: "Vinyl stickers",
-        body: `To seal gift bags, decorate the table favor, or match your stationery. Water- and sun-resistant vinyl, with your design or the couple's. Minimum ${VINYL_MIN} pieces; 100 small stickers (up to 5 cm) are ${formatMXN(VINYL_100)}.`,
+        body: `To seal gift bags, decorate the table favor, or match your stationery. Water- and sun-resistant vinyl, with your design or the couple's. Minimum ${VINYL_MIN} pieces; 100 small stickers (up to 4 cm) are ${formatMXN(VINYL_100)}.`,
         href: "/productos/stickers-vinil-impermeable",
         link: "See stickers and prices",
       },

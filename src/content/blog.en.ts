@@ -2654,7 +2654,7 @@ export const blogPostsEn: BlogPost[] = [
       },
       {
         q: "Does the price change with size?",
-        a: `Yes: the per-piece price depends on size. Small (up to 5 cm) is the base price, medium (5 to 7 cm) adds $1.50 per piece and large (7 to 8 cm) adds $3. For example, 200 small vinyl pieces cost $${priceOf("stickers-vinil-impermeable", 200)} MXN.`,
+        a: `Yes: the per-piece price depends on size. Small (up to 4 cm) is the base price, medium (4 to 6 cm) adds $1.50 per piece and large (7 to 8 cm) adds $3. For example, 200 small vinyl pieces cost $${priceOf("stickers-vinil-impermeable", 200)} MXN.`,
       },
       {
         q: "Can I use the stickers for an event instead of a business?",
@@ -2857,7 +2857,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "How much does it cost to print custom stickers in Mexico?",
         body: [
-          "At Yume, printing custom stickers starts at $140 MXN: 40 small (up to 5 cm) waterproof vinyl stickers at $3.50 each, or 50 small custom logo stickers at $3 each. Medium (5 to 7 cm) adds $1.50 per piece and large (7 to 8 cm) adds $3. Shipping anywhere in Mexico is free from $750 MXN, and so is pickup in Guadalajara.",
+          "At Yume, printing custom stickers starts at $140 MXN: 40 small (up to 4 cm) waterproof vinyl stickers at $3.50 each, or 50 small custom logo stickers at $3 each. Medium (4 to 6 cm) adds $1.50 per piece and large (7 to 8 cm) adds $3. Shipping anywhere in Mexico is free from $750 MXN, and so is pickup in Guadalajara.",
           "Price by quantity (minimum order is 50 pieces for logo stickers and 40 for vinyl):",
         ],
         table: {
@@ -3523,7 +3523,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "How many wedding favors to order and what do they cost?",
         body: [
           "Order one favor per guest or one per family or couple, plus a few extra for the couple's table, photos and surprises. Start from your confirmed guest list, because at Yume you buy the exact number of pieces and the minimum depends on the product.",
-          `The minimum is 10 favor boxes and 40 vinyl stickers. 100 favor boxes cost $${priceOf("dulceros-personalizados", 100)} MXN and 100 small vinyl stickers (up to 5 cm) cost $${priceOf("stickers-vinil-impermeable", 100)} MXN. Temporary tattoos are quoted over WhatsApp.`,
+          `The minimum is 10 favor boxes and 40 vinyl stickers. 100 favor boxes cost $${priceOf("dulceros-personalizados", 100)} MXN and 100 small vinyl stickers (up to 4 cm) cost $${priceOf("stickers-vinil-impermeable", 100)} MXN. Temporary tattoos are quoted over WhatsApp.`,
           "A practical count: with 80 guests, order 80 pieces plus 5 or 10 spare. Price by quantity:",
         ],
         table: {

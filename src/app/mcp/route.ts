@@ -39,7 +39,7 @@ const ITEMS_PARAM = {
         pieces: { type: "integer", description: "Piece count for per-piece products (at least orderGuide.minPieces)" },
         cut: { type: "string", enum: ["troquelado", "semitroquelado"], description: "Stickers only: die cut or kiss cut (default troquelado)" },
         finish: { type: "string", enum: ["mate", "brillante", "holografico"], description: "Stickers only (default mate; holografico +0.50 MXN per piece)" },
-        size: { type: "string", enum: ["chico", "mediano", "grande"], description: "Stickers only: chico up to 5 cm (base price), mediano 5-7 cm (+1.50 MXN per piece), grande 7-8 cm (+3 MXN per piece). Default chico" },
+        size: { type: "string", enum: ["chico", "mediano", "grande"], description: "Stickers only: chico up to 4 cm (base price), mediano 4-6 cm (+1.50 MXN per piece), grande 7-8 cm (+3 MXN per piece). Default chico" },
         option: { type: "string", description: "Option id for option products, e.g. negro, con-diseno" },
         variantId: { type: "string", description: "Raw variant id instead of the fields above" },
         qty: { type: "integer", description: "Units of this line, default 1" },

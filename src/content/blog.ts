@@ -3387,7 +3387,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿El precio cambia según el tamaño?",
-        a: `Sí: el precio por pieza depende del tamaño. Chico (hasta 5 cm) es el precio base, mediano (de 5 a 7 cm) suma $1.50 por pieza y grande (de 7 a 8 cm) suma $3. Por ejemplo, 200 piezas de vinil chicas cuestan $${priceOf("stickers-vinil-impermeable", 200)}.`,
+        a: `Sí: el precio por pieza depende del tamaño. Chico (hasta 4 cm) es el precio base, mediano (de 4 a 6 cm) suma $1.50 por pieza y grande (de 7 a 8 cm) suma $3. Por ejemplo, 200 piezas de vinil chicas cuestan $${priceOf("stickers-vinil-impermeable", 200)}.`,
       },
       {
         q: "¿Puedo usar los stickers para un evento y no para mi negocio?",
@@ -3683,7 +3683,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "¿Cuánto cuesta imprimir stickers personalizados en México?",
         body: [
-          "Stickers de vinil desde $3.50 c/u (mínimo 40) y etiquetas con tu logo desde $3 c/u (mínimo 50); el precio depende del tamaño: chico hasta 5 cm, mediano de 5 a 7 cm y grande de 7 a 8 cm. El envío a todo México es gratis desde $750 MXN.",
+          "Stickers de vinil desde $3.50 c/u (mínimo 40) y etiquetas con tu logo desde $3 c/u (mínimo 50); el precio depende del tamaño: chico hasta 4 cm, mediano de 4 a 6 cm y grande de 7 a 8 cm. El envío a todo México es gratis desde $750 MXN.",
           "Se venden por cantidad de piezas, no por planilla, así que pides la cantidad exacta que necesitas. El corte (troquelado o semitroquelado) y los acabados mate y brillante no cambian el precio; el holográfico suma un costo extra por pieza.",
           "Precio por cantidad (el mínimo de compra es 50 piezas en etiquetas con logo y 40 en vinil):",
         ],
@@ -3778,7 +3778,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Cuánto cuestan 100 stickers personalizados?",
-        a: "Stickers de vinil desde $3.50 c/u y etiquetas con tu logo desde $3 c/u, según el tamaño (chico hasta 5 cm, mediano de 5 a 7 cm, grande de 7 a 8 cm). Por ejemplo, 100 stickers de vinil chicos son $350 y 100 medianos son $500.",
+        a: "Stickers de vinil desde $3.50 c/u y etiquetas con tu logo desde $3 c/u, según el tamaño (chico hasta 4 cm, mediano de 4 a 6 cm, grande de 7 a 8 cm). Por ejemplo, 100 stickers de vinil chicos son $350 y 100 medianos son $500.",
       },
       {
         q: "¿Qué archivo debo enviar para imprimir mis stickers?",
@@ -4654,7 +4654,7 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Pide un souvenir por invitado o uno por familia o pareja, más unos cuantos extra para la mesa de novios, fotos e imprevistos. Lo importante es partir de tu lista confirmada de asistentes, porque en Yume se vende por pieza exacta y el mínimo cambia según el producto.",
           "El mínimo es de 10 dulceros y de 40 stickers de vinil. Los tatuajes temporales se cotizan por WhatsApp. Una cuenta práctica: si tienes 80 invitados, pide 80 piezas más 5 o 10 de reserva.",
-          `100 dulceros cuestan $${priceOf("dulceros-personalizados", 100)} y 100 stickers de vinil chicos (hasta 5 cm) cuestan $${priceOf("stickers-vinil-impermeable", 100)}. Precio por cantidad:`,
+          `100 dulceros cuestan $${priceOf("dulceros-personalizados", 100)} y 100 stickers de vinil chicos (hasta 4 cm) cuestan $${priceOf("stickers-vinil-impermeable", 100)}. Precio por cantidad:`,
         ],
         table: {
           ...sizeTable(["dulceros-personalizados", "stickers-vinil-impermeable"], [50, 100, 200], "es"),
