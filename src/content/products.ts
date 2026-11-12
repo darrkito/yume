@@ -191,15 +191,17 @@ export const products: Product[] = [
       { label: "Precio por pieza", value: "Chico (hasta 5 cm) $3.50 · Mediano (5 a 7 cm) $5 · Grande (7 a 8 cm) $6.50" },
       { label: "Otras medidas", value: "Más grande o algo específico: se cotiza por WhatsApp" },
       { label: "Material", value: "Vinil premium" },
+      { label: "Laminado", value: "BOPP de alta calidad en todos los stickers" },
       { label: "Tipo de corte", value: "Troquelado o semitroquelado, tú eliges al pedir" },
-      { label: "Acabado", value: "Mate, brillante u holográfico (holográfico +$0.50 por pieza)" },
+      { label: "Acabado", value: "Mate, brillante u holográfico, como lo prefieras (holográfico +$0.50 por pieza)" },
       { label: "Resistencia", value: "Al agua, al sol y a rayones" },
       { label: "Personalización", value: "Tu diseño, personaje o foto" },
     ],
     description:
-      "Stickers troquelados en vinil premium, resistentes al agua, al sol y a rayones: para cualquier diseño, personaje o foto que quieras convertir en sticker, no solo logos. Se venden por pieza y el precio depende del tamaño: chico (hasta 5 cm) $3.50 c/u, mediano (de 5 a 7 cm) $5 c/u y grande (de 7 a 8 cm) $6.50 c/u. Si necesitas una medida más grande o algo más específico, lo cotizamos por WhatsApp. Envíanos tu imagen o diseño y te mandamos una prueba digital antes de imprimir.",
+      "Stickers troquelados en vinil premium con laminado BOPP de alta calidad, resistentes al agua, al sol y a rayones: para cualquier diseño, personaje o foto que quieras convertir en sticker, no solo logos. Se venden por pieza y el precio depende del tamaño: chico (hasta 5 cm) $3.50 c/u, mediano (de 5 a 7 cm) $5 c/u y grande (de 7 a 8 cm) $6.50 c/u. Si necesitas una medida más grande o algo más específico, lo cotizamos por WhatsApp. Envíanos tu imagen o diseño y te mandamos una prueba digital antes de imprimir.",
     metaDescription: "Stickers personalizados de vinil impermeable con tu diseño, personaje o foto. Desde $3.50 por pieza según tamaño, mínimo 40. Envíos a todo México.",
     details: [
+      "Todos con laminado BOPP de alta calidad; el acabado (mate, brillante u holográfico) lo eliges tú",
       "Vinil premium con corte a la forma del diseño: troquelado o semitroquelado, tú eliges al pedir",
       "Se venden por cantidad de piezas, mínimo 40",
       "Tres tamaños: chico hasta 5 cm ($3.50 c/u), mediano de 5 a 7 cm ($5 c/u) y grande de 7 a 8 cm ($6.50 c/u)",
@@ -215,6 +217,10 @@ export const products: Product[] = [
     imageHeight: 1280,
     requiresImage: true,
     faq: [
+      {
+        q: "¿Qué es el laminado BOPP y todos los stickers lo llevan?",
+        a: "Sí, todos nuestros stickers llevan laminado BOPP, una película de alta calidad muy reconocida en la industria de las etiquetas. Lo que eliges tú es el acabado: mate, brillante u holográfico. El laminado BOPP va siempre incluido, sin costo extra.",
+      },
       {
         q: "¿En qué se diferencian de los Stickers y Etiquetas con tu Logo?",
         a: "Es el mismo tipo de vinil, pero con distinto mínimo y escalón de precio: Stickers y Etiquetas con tu Logo está pensado para el logo de tu negocio (desde 50 piezas), mientras que Stickers de Vinil Personalizados es para cualquier diseño, personaje, mascota o foto que quieras convertir en sticker (desde 40 piezas).",
@@ -269,16 +275,18 @@ export const products: Product[] = [
       { label: "Mínimo de compra", value: "50 piezas" },
       { label: "Precio por pieza", value: "Chico (hasta 5 cm) $3 · Mediano (5 a 7 cm) $4.50 · Grande (7 a 8 cm) $6" },
       { label: "Otras medidas", value: "Más grande o algo específico: se cotiza por WhatsApp" },
+      { label: "Laminado", value: "BOPP de alta calidad en todos los stickers" },
       { label: "Tipo de corte", value: "Troquelado o semitroquelado, tú eliges al pedir" },
-      { label: "Acabado", value: "Mate, brillante u holográfico (holográfico +$0.50 por pieza)" },
+      { label: "Acabado", value: "Mate, brillante u holográfico, como lo prefieras (holográfico +$0.50 por pieza)" },
       { label: "Personalización", value: "Tu logo o diseño" },
       { label: "Resistencia", value: "Resistentes al agua" },
       { label: "Producción", value: "Sobre pedido" },
     ],
     description:
-      "Stickers y etiquetas personalizadas con tu logo o diseño, resistentes al agua: etiquetas para productos, etiquetas para empaques, bolsas y cajas de tu negocio. Se venden por pieza y el precio depende del tamaño: chico (hasta 5 cm) $3 c/u, mediano (de 5 a 7 cm) $4.50 c/u y grande (de 7 a 8 cm) $6 c/u. Si necesitas una medida más grande o algo más específico, lo cotizamos por WhatsApp. Envíanos tu imagen (o el diseño que quieras convertir en etiqueta) y te mandamos una prueba digital antes de imprimir.",
+      "Stickers y etiquetas personalizadas con tu logo o diseño, con laminado BOPP de alta calidad y resistentes al agua: etiquetas para productos, etiquetas para empaques, bolsas y cajas de tu negocio. Se venden por pieza y el precio depende del tamaño: chico (hasta 5 cm) $3 c/u, mediano (de 5 a 7 cm) $4.50 c/u y grande (de 7 a 8 cm) $6 c/u. Si necesitas una medida más grande o algo más específico, lo cotizamos por WhatsApp. Envíanos tu imagen (o el diseño que quieras convertir en etiqueta) y te mandamos una prueba digital antes de imprimir.",
     metaDescription: "Etiquetas y stickers con tu logo para productos y empaques, resistentes al agua. Desde $3 por pieza según tamaño, mínimo 50. Envíos a todo México.",
     details: [
+      "Todos con laminado BOPP de alta calidad; el acabado (mate, brillante u holográfico) lo eliges tú",
       "Se venden por cantidad de piezas, mínimo 50",
       "Tres tamaños: chico hasta 5 cm ($3 c/u), mediano de 5 a 7 cm ($4.50 c/u) y grande de 7 a 8 cm ($6 c/u)",
       "¿Más grande o algo específico? Se cotiza por WhatsApp",
@@ -293,6 +301,10 @@ export const products: Product[] = [
     imageHeight: 1164,
     requiresImage: true,
     faq: [
+      {
+        q: "¿Qué es el laminado BOPP y todos los stickers lo llevan?",
+        a: "Sí, todos nuestros stickers llevan laminado BOPP, una película de alta calidad muy reconocida en la industria de las etiquetas. Lo que eliges tú es el acabado: mate, brillante u holográfico. El laminado BOPP va siempre incluido, sin costo extra.",
+      },
       {
         q: "¿Cómo se vende la etiqueta, por hoja o por pieza?",
         a: "Se vende por cantidad de piezas, no por hoja.",

@@ -152,17 +152,19 @@ export const productsEn: Record<string, ProductTranslation> = {
       { label: "Minimum order", value: "50 pieces" },
       { label: "Price per piece", value: "Small (up to 5 cm) $3 · Medium (5 to 7 cm) $4.50 · Large (7 to 8 cm) $6" },
       { label: "Other sizes", value: "Bigger or something specific: quoted on WhatsApp" },
+      { label: "Lamination", value: "High-quality BOPP on every sticker" },
       { label: "Cut type", value: "Die cut or kiss cut, you choose when ordering" },
-      { label: "Finish", value: "Matte, glossy or holographic (holographic +$0.50 per piece)" },
+      { label: "Finish", value: "Matte, glossy or holographic, your choice (holographic +$0.50 per piece)" },
       { label: "Customization", value: "Your logo or design" },
       { label: "Durability", value: "Water-resistant" },
       { label: "Production", value: "Made to order" },
     ],
     description:
-      "Custom stickers with your logo or design, water-resistant. Sold by piece, priced by size: small (up to 5 cm) $3 each, medium (5 to 7 cm) $4.50 each and large (7 to 8 cm) $6 each. Need something bigger or more specific? We quote it on WhatsApp. Send us your image (or the design you'd like turned into a sticker) and we'll send a digital proof before printing.",
+      "Custom stickers with your logo or design, with high-quality BOPP lamination and water-resistant. Sold by piece, priced by size: small (up to 5 cm) $3 each, medium (5 to 7 cm) $4.50 each and large (7 to 8 cm) $6 each. Need something bigger or more specific? We quote it on WhatsApp. Send us your image (or the design you'd like turned into a sticker) and we'll send a digital proof before printing.",
     metaDescription:
       "Custom stickers with your logo, water-resistant. From $3 per piece depending on size. Digital proof before printing.",
     details: [
+      "All with high-quality BOPP lamination; you choose the finish (matte, glossy or holographic)",
       "Sold by piece count, 50-piece minimum",
       "Three sizes: small up to 5 cm ($3 each), medium 5 to 7 cm ($4.50 each), large 7 to 8 cm ($6 each)",
       "Bigger or something specific? Quoted on WhatsApp",
@@ -174,6 +176,10 @@ export const productsEn: Record<string, ProductTranslation> = {
     ],
     variantLabels: stickerVariantLabelsEn,
     faq: [
+      {
+        q: "What is BOPP lamination and do all stickers have it?",
+        a: "Yes, all of our stickers come with BOPP lamination, a high-quality film widely recognized in the label industry. What you choose is the finish: matte, glossy or holographic. The BOPP lamination is always included at no extra cost.",
+      },
       {
         q: "Is the sticker sold by sheet or by piece?",
         a: "It's sold by piece count, not by sheet.",
@@ -220,16 +226,18 @@ export const productsEn: Record<string, ProductTranslation> = {
       { label: "Price per piece", value: "Small (up to 5 cm) $3.50 · Medium (5 to 7 cm) $5 · Large (7 to 8 cm) $6.50" },
       { label: "Other sizes", value: "Bigger or something specific: quoted on WhatsApp" },
       { label: "Material", value: "Premium vinyl" },
+      { label: "Lamination", value: "High-quality BOPP on every sticker" },
       { label: "Cut type", value: "Die cut or kiss cut, you choose when ordering" },
-      { label: "Finish", value: "Matte, glossy or holographic (holographic +$0.50 per piece)" },
+      { label: "Finish", value: "Matte, glossy or holographic, your choice (holographic +$0.50 per piece)" },
       { label: "Durability", value: "Water, sun, and scratch resistant" },
       { label: "Customization", value: "Your design, character, or photo" },
     ],
     description:
-      "Die-cut stickers on premium vinyl, resistant to water, sun, and scratches: for any design, character, or photo you want turned into a sticker, not just logos. Sold by piece, priced by size: small (up to 5 cm) $3.50 each, medium (5 to 7 cm) $5 each and large (7 to 8 cm) $6.50 each. Need something bigger or more specific? We quote it on WhatsApp. Send us your image or design and we'll send a digital proof before printing.",
+      "Die-cut stickers on premium vinyl with high-quality BOPP lamination, resistant to water, sun, and scratches: for any design, character, or photo you want turned into a sticker, not just logos. Sold by piece, priced by size: small (up to 5 cm) $3.50 each, medium (5 to 7 cm) $5 each and large (7 to 8 cm) $6.50 each. Need something bigger or more specific? We quote it on WhatsApp. Send us your image or design and we'll send a digital proof before printing.",
     metaDescription:
       "Custom vinyl stickers, resistant to water, sun, and scratches. Any design, character, or photo. From $3.50 per piece depending on size.",
     details: [
+      "All with high-quality BOPP lamination; you choose the finish (matte, glossy or holographic)",
       "Premium vinyl cut to the shape of your design: die cut or kiss cut, you choose when ordering",
       "Sold by piece count, 40-piece minimum",
       "Three sizes: small up to 5 cm ($3.50 each), medium 5 to 7 cm ($5 each), large 7 to 8 cm ($6.50 each)",
@@ -242,6 +250,10 @@ export const productsEn: Record<string, ProductTranslation> = {
     ],
     variantLabels: vinylStickerVariantLabelsEn,
     faq: [
+      {
+        q: "What is BOPP lamination and do all stickers have it?",
+        a: "Yes, all of our stickers come with BOPP lamination, a high-quality film widely recognized in the label industry. What you choose is the finish: matte, glossy or holographic. The BOPP lamination is always included at no extra cost.",
+      },
       {
         q: "How is this different from Custom Logo Stickers?",
         a: "Same vinyl, but a different minimum and price step: Custom Logo Stickers is meant for your business logo (starting at 50 pieces), while Waterproof Vinyl Stickers is for any design, character, pet, or photo you want turned into a sticker (starting at 40 pieces).",

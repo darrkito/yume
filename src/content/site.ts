@@ -24,9 +24,9 @@ export const SITE = {
   homeTitle: "Studio Yume | Stickers, Etiquetas y Dulceros Personalizados",
   homeTitleEn: "Custom Vinyl Stickers & Stationery in Guadalajara | Yume",
   description:
-    "Stickers y etiquetas personalizadas desde $140, dulceros para fiestas, tatuajes temporales y recetarios médicos. Hechos en Guadalajara, envíos a todo México.",
+    "Stickers y etiquetas personalizadas con laminado BOPP desde $140, dulceros para fiestas, tatuajes temporales y recetarios médicos. Hechos en Guadalajara, envíos a todo México.",
   descriptionEn:
-    "Custom vinyl stickers and logo stickers from $140 MXN, temporary tattoos and custom stationery. Made in Guadalajara, shipping across Mexico.",
+    "Custom vinyl stickers and logo stickers with BOPP lamination from $140 MXN, temporary tattoos and custom stationery. Made in Guadalajara, shipping across Mexico.",
   whatsappNumber: "523318958175",
   /** Same number as whatsappNumber, as people dial it in Mexico. */
   phoneDisplay: "33 1895 8175",

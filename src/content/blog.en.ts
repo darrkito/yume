@@ -803,7 +803,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "Custom sticker and label prices",
         body: [
           "We sell by piece count, not by sheet, and there are two options: Logo Stickers & Labels, made for your business logo (50 pieces minimum), and Custom Vinyl Stickers, for any design, character or photo (40 pieces minimum).",
-          "On both you choose the cut (die-cut to your design's shape, or kiss-cut) and the finish: matte, glossy or holographic (holographic adds $0.50 per piece). All of them are water-resistant.",
+          "On both you choose the cut (die-cut to your design's shape, or kiss-cut) and the finish: matte, glossy or holographic (holographic adds $0.50 per piece). All of our stickers come with high-quality BOPP lamination. All of them are water-resistant.",
         ],
         table: {
           ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
@@ -1406,7 +1406,7 @@ export const blogPostsEn: BlogPost[] = [
           "The sticker is cut to the exact shape of your pet's silhouette, or to the full photo if you'd rather keep a background or frame. It isn't a generic square or circle, which is what makes it a die-cut vinyl sticker. Before printing you get a digital proof to confirm the cut and colors.",
           "You can see real examples of pets already turned into stickers in our gallery. The proof works the same as with any other design we work on: nothing is printed until you approve it.",
           "When ordering you choose the cut type: die-cut or kiss-cut. If you're unsure which suits your pet, read our die-cut vs. kiss-cut comparison.",
-          "You also choose the finish: matte, glossy, or holographic. For a photo with lots of fur detail, matte and glossy are the most straightforward options; holographic has an extra per-piece cost, which you see when you select it on the product page.",
+          "You also choose the finish: matte, glossy, or holographic. All of our stickers come with high-quality BOPP lamination. For a photo with lots of fur detail, matte and glossy are the most straightforward options; holographic has an extra per-piece cost, which you see when you select it on the product page.",
         ],
       },
       {
@@ -1705,7 +1705,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "How is Yume different from other online sticker print shops?",
         body: [
-          "Yume sells by the exact number of pieces, from 40 in vinyl and 50 in logo labels, with a digital proof before printing and shipping across Mexico. Its per-piece price sits within the range of the Mexican print shops we reviewed in September 2026, and its minimum order is lower than all of theirs.",
+          "Yume sells by the exact number of pieces, from 40 in vinyl and 50 in logo labels, with a digital proof before printing and shipping across Mexico. All of our stickers come with high-quality BOPP lamination, and you choose the finish. Its per-piece price sits within the range of the Mexican print shops we reviewed in September 2026, and its minimum order is lower than all of theirs.",
           "The difference you notice most when ordering is that you don't have to buy full sheets: you choose how many pieces you need, whether for the guests at a wedding, the tables at a party or your brand's packaging.",
         ],
       },
@@ -1865,7 +1865,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "Cut and finish: what you can choose",
         body: [
-          "With vinyl you choose two things when ordering: the type of cut and the finish. The cut can be die-cut or kiss-cut, and the finish matte, glossy or holographic. Holographic costs an extra $0.50 per piece, which you see when you select it on the product page.",
+          "With vinyl you choose two things when ordering: the type of cut and the finish. The cut can be die-cut or kiss-cut, and the finish matte, glossy or holographic. All of our stickers come with high-quality BOPP lamination. Holographic costs an extra $0.50 per piece, which you see when you select it on the product page.",
           "If you're unsure which cut fits you, read our die-cut vs. kiss-cut comparison, where we explain when each one makes sense.",
           "Cut and finish are design decisions: the material stays the same premium vinyl. Before printing you receive a digital proof to confirm how the design looks.",
         ],
@@ -2551,7 +2551,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "The most common uses for packaging stickers",
         body: [
           "The ones we see most: sealing the flap of a paper or kraft bag, closing a cardboard box, labeling the bottom or lid of a jar, or sticking directly onto the product (candles, soaps, cosmetics). In every case, the sticker does two jobs at once: it closes the packaging and marks it as yours.",
-          "If your packaging travels or can get wet (shipments, refrigerated products, drinks), it's worth using a water-resistant sticker instead of a regular paper label, which peels or runs with moisture.",
+          "If your packaging travels or can get wet (shipments, refrigerated products, drinks), it's worth using a water-resistant sticker instead of a regular paper label, which peels or runs with moisture. All of our stickers come with high-quality BOPP lamination, and you choose the finish.",
         ],
       },
       {
@@ -2625,7 +2625,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "Which material and cut to choose, whatever your order size",
         body: [
           "Choose vinyl if the sticker will get wet, sit in the sun, or get scratched, and choose die-cut if you want it to follow the exact outline of your design. Yume's vinyl resists water, sun, and scratches, according to the product page. Each product lets you pick between die-cut and kiss-cut when you order.",
-          "You also pick the finish: matte, glossy, or holographic. Holographic has an extra per-piece cost you see on the product page. If you're unsure about material or cut, these two guides help: vinyl vs. paper stickers and die-cut vs. kiss-cut.",
+          "You also pick the finish: matte, glossy, or holographic. All of our stickers come with high-quality BOPP lamination. Holographic has an extra per-piece cost you see on the product page. If you're unsure about material or cut, these two guides help: vinyl vs. paper stickers and die-cut vs. kiss-cut.",
         ],
       },
       {
@@ -2716,7 +2716,7 @@ export const blogPostsEn: BlogPost[] = [
         body: [
           "For favor bags or envelopes, a round or oval sticker 3 to 5 cm is the most common size. For bottles or cans, a rectangle or a die-cut matching your design's shape works best, and if it will get wet, order water-resistant vinyl instead of paper.",
           "On curved surfaces like a bottle or a can, a die-cut to your design's exact shape looks cleaner than a generic square. If you're unsure between die-cut and kiss-cut, read our die-cut vs. kiss-cut comparison.",
-          "If the sticker will be on something that gets wet (a cooler, a bottle, outdoors), vinyl is the safe choice; to see how it differs from paper, check our vinyl vs. paper stickers guide. When ordering vinyl you also pick the finish: matte, glossy, or holographic (holographic has an extra per-piece cost, which you see on the product page).",
+          "If the sticker will be on something that gets wet (a cooler, a bottle, outdoors), vinyl is the safe choice; to see how it differs from paper, check our vinyl vs. paper stickers guide. When ordering vinyl you also pick the finish: matte, glossy, or holographic (holographic has an extra per-piece cost, which you see on the product page). All of our stickers come with high-quality BOPP lamination.",
           "At Yume these sell by piece count, not by sheet: you can order exactly the number of guests or tables your event has, without buying more than you need.",
         ],
       },
@@ -2852,7 +2852,7 @@ export const blogPostsEn: BlogPost[] = [
     publishedAt: "2026-09-29",
     modifiedAt: "2026-10-18",
     intro:
-      "If you're looking for where to print custom stickers in Mexico, most options fall into two groups: printing them yourself at home (with vinyl and a special printer) or ordering them from a shop that already has die-cutting equipment. This guide covers the second option: what you need ready and how ordering your stickers online works, without buying equipment or visiting a shop in person.",
+      "If you're looking for where to print custom stickers in Mexico, most options fall into two groups: printing them yourself at home (with vinyl and a special printer) or ordering them from a shop that already has die-cutting equipment. All of our stickers come with high-quality BOPP lamination, and you choose the finish. This guide covers the second option: what you need ready and how ordering your stickers online works, without buying equipment or visiting a shop in person.",
     sections: [
       {
         heading: "How much does it cost to print custom stickers in Mexico?",
@@ -3012,7 +3012,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "How to choose the cut type when you order",
         body: [
-          "You pick the cut, Die cut or Kiss cut, on the product page before adding to your cart, together with the finish: matte, glossy, or holographic. What you choose is saved with your order, and before printing you receive a digital proof to confirm how it looks.",
+          "You pick the cut, Die cut or Kiss cut, on the product page before adding to your cart, together with the finish: matte, glossy, or holographic. All of our stickers come with high-quality BOPP lamination. What you choose is saved with your order, and before printing you receive a digital proof to confirm how it looks.",
           "The product pages are Waterproof Vinyl Stickers and Custom Logo Stickers. The holographic finish has an extra cost of $0.50 per piece, which you see when you select it.",
           "If you are not sure which fits your case, message us on WhatsApp before paying and we will go over it with you.",
         ],
@@ -3138,7 +3138,7 @@ export const blogPostsEn: BlogPost[] = [
     publishedAt: "2026-10-17",
     modifiedAt: "2026-10-26",
     intro:
-      "School labels are stickers with a child's name (and sometimes their class or a drawing) to mark notebooks, lunch boxes, bottles, and backpacks so nothing gets lost or mixed up in the classroom. At Yume we make them in water-resistant vinyl, with the design you choose. This guide covers what goes on them, which school supplies they suit, how many to order, what they cost, when to place the order, and how they reach your home or a branch in Guadalajara.",
+      "School labels are stickers with a child's name (and sometimes their class or a drawing) to mark notebooks, lunch boxes, bottles, and backpacks so nothing gets lost or mixed up in the classroom. At Yume we make them in water-resistant vinyl, with the design you choose. All of our stickers come with high-quality BOPP lamination, and you choose the finish. This guide covers what goes on them, which school supplies they suit, how many to order, what they cost, when to place the order, and how they reach your home or a branch in Guadalajara.",
     sections: [
       {
         heading: "What goes on a school label",
@@ -3233,7 +3233,7 @@ export const blogPostsEn: BlogPost[] = [
     title: "Name labels for bottles, lunch boxes, and backpacks: where to stick them and how to care for them",
     metaTitle: "Name labels for bottles, lunch boxes, and backpacks",
     description:
-      "Where to stick name labels on bottles, lunch boxes, and backpacks, how to apply them so they last, and which design to pick. Water-resistant vinyl.",
+      "Where to stick name labels on bottles, lunch boxes, and backpacks, how to apply them so they last, and which design to pick. Water-resistant vinyl. All of our stickers come with high-quality BOPP lamination, and you choose the finish.",
     category: "Guides",
     publishedAt: "2026-10-17",
     modifiedAt: "2026-10-26",
@@ -3380,7 +3380,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "Material and finish",
         body: [
           "Our labels are vinyl and water-resistant; Custom Vinyl Stickers also resist sun and scratches. The difference compared with paper shows most on products that get wet or handled a lot, and we explain it in detail in our vinyl vs. paper guide.",
-          "For the finish you choose matte, glossy or holographic (holographic adds $0.50 per piece).",
+          "For the finish you choose matte, glossy or holographic (holographic adds $0.50 per piece). All of our stickers come with high-quality BOPP lamination.",
         ],
       },
       {
@@ -3466,7 +3466,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "Shape, finish and price",
         body: [
-          "The cut follows the shape of your design: round, ornament or star shaped, or square. You choose die cut (each label loose) or kiss cut (several on one sheet, easy to peel). The finish can be matte, glossy or holographic; holographic looks very festive and costs $0.50 MXN more per piece.",
+          "The cut follows the shape of your design: round, ornament or star shaped, or square. You choose die cut (each label loose) or kiss cut (several on one sheet, easy to peel). The finish can be matte, glossy or holographic; holographic looks very festive and costs $0.50 MXN more per piece. All of our stickers come with high-quality BOPP lamination.",
         ],
         table: {
           ...sizeTable(["stickers-vinil-impermeable", "stickers-logo-personalizado"], [100], "en"),
@@ -4229,7 +4229,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "Which products are included",
         body: [
-          "The code applies to products purchased in the online store: [custom vinyl stickers](/en/products/waterproof-vinyl-stickers), [labels with your logo](/en/products/custom-logo-stickers), [personalized party favor boxes](/en/products/personalized-party-favor-boxes), [Google review NFC plates](/en/products/google-review-nfc-plate), [review stands](/en/products/google-review-nfc-stand) and [custom medical prescription pads](/en/products/medical-prescription-pads).",
+          "The code applies to products purchased in the online store: [custom vinyl stickers](/en/products/waterproof-vinyl-stickers), [labels with your logo](/en/products/custom-logo-stickers), [personalized party favor boxes](/en/products/personalized-party-favor-boxes), [Google review NFC plates](/en/products/google-review-nfc-plate), [review stands](/en/products/google-review-nfc-stand) and [custom medical prescription pads](/en/products/medical-prescription-pads). All of our stickers come with high-quality BOPP lamination, and you choose the finish.",
           "[Custom temporary tattoos](/en/products/custom-temporary-tattoos) are quoted over WhatsApp by design and quantity, so they are not bought with the code in the online store. If you are interested, message us.",
         ],
       },

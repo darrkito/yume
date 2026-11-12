@@ -11,6 +11,7 @@ const COPY = {
     finish: "Acabado",
     size: "Tamaño",
     sizeHint: "¿Necesitas más grande o algo más específico? Lo cotizamos por WhatsApp.",
+    finishHint: "Todos nuestros stickers llevan laminado BOPP; el acabado es a tu gusto.",
     perPiece: "c/u",
   },
   en: {
@@ -19,6 +20,7 @@ const COPY = {
     finish: "Finish",
     size: "Size",
     sizeHint: "Need something bigger or more specific? We quote it on WhatsApp.",
+    finishHint: "All of our stickers come with BOPP lamination; the finish is your choice.",
     perPiece: "each",
   },
 };
@@ -54,6 +56,7 @@ export function LineOptionPicker({ variantId, onChange, lang, baseRate, compact 
         })}
       </div>
       {kind === "cut" && <p className="mt-2 max-w-md text-xs leading-relaxed text-ink-soft">{oc.cutHint}</p>}
+      {kind === "finish" && <p className="mt-2 max-w-md text-xs leading-relaxed text-ink-soft">{oc.finishHint}</p>}
       {kind === "size" && <p className="mt-2 max-w-md text-xs leading-relaxed text-ink-soft">{oc.sizeHint}</p>}
     </fieldset>
   );

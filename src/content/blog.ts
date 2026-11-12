@@ -1058,7 +1058,7 @@ export const blogPosts: BlogPost[] = [
         heading: "De qué depende el precio de los stickers personalizados",
         body: [
           "Vendemos por cantidad de piezas, no por hoja. El precio depende de la opción que elijas, de la cantidad y del acabado: mate y brillante cuestan igual y el holográfico tiene un costo extra por pieza.",
-          "Hay dos opciones: las Etiquetas con tu Logo, pensadas para el logo de tu negocio o tu evento (mínimo 50 piezas), y los Stickers de Vinil Personalizados, para cualquier diseño, personaje o foto (mínimo 40 piezas). En ambas eliges el corte (troquelado, a la forma de tu diseño, o semitroquelado) y el acabado: mate, brillante u holográfico. Todas son resistentes al agua.",
+          "Hay dos opciones: las Etiquetas con tu Logo, pensadas para el logo de tu negocio o tu evento (mínimo 50 piezas), y los Stickers de Vinil Personalizados, para cualquier diseño, personaje o foto (mínimo 40 piezas). En ambas eliges el corte (troquelado, a la forma de tu diseño, o semitroquelado) y el acabado: mate, brillante u holográfico. Todos nuestros stickers llevan laminado BOPP de alta calidad. Todas son resistentes al agua.",
         ],
         table: {
           ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
@@ -1757,7 +1757,7 @@ export const blogPosts: BlogPost[] = [
           "El sticker se corta a la forma exacta de la silueta de tu mascota, o de la foto completa si prefieres conservar un fondo o marco. No es un cuadrado ni un círculo genérico: por eso hablamos de vinil troquelado. Antes de imprimir recibes una prueba digital para confirmar corte y colores.",
           "Puedes ver ejemplos reales de mascotas ya convertidas en sticker en [nuestra galería](/galeria). Funciona igual que con cualquier otro diseño que trabajamos: no se imprime hasta que apruebas la prueba.",
           "Al pedir eliges el tipo de corte: troquelado o semitroquelado. Si dudas cuál te conviene para tu mascota, revisa la comparación de [troquelado vs. semitroquelado](/blog/troquelado-vs-semitroquelado-stickers).",
-          "También eliges el acabado: mate, brillante u holográfico. El holográfico tiene un costo extra por pieza, que ves al elegirlo en la página del producto.",
+          "También eliges el acabado: mate, brillante u holográfico. Todos nuestros stickers llevan laminado BOPP de alta calidad. El holográfico tiene un costo extra por pieza, que ves al elegirlo en la página del producto.",
         ],
       },
       {
@@ -2138,7 +2138,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "¿En qué se diferencia Yume de otras imprentas online de stickers?",
         body: [
-          "Yume vende por cantidad exacta de piezas, desde 40 en vinil y 50 en etiquetas con logo, con prueba digital antes de imprimir y envío a todo México. Su precio por pieza queda dentro del rango de las imprentas mexicanas que revisamos en septiembre de 2026, y su mínimo de compra es menor que el de todas ellas.",
+          "Yume vende por cantidad exacta de piezas, desde 40 en vinil y 50 en etiquetas con logo, con prueba digital antes de imprimir y envío a todo México. Todos nuestros stickers llevan laminado BOPP de alta calidad, y el acabado lo eliges tú. Su precio por pieza queda dentro del rango de las imprentas mexicanas que revisamos en septiembre de 2026, y su mínimo de compra es menor que el de todas ellas.",
           "La diferencia que más se nota al pedir es que no tienes que comprar planillas completas: eliges cuántas piezas necesitas, ya sea para los invitados de una boda, las mesas de una fiesta o el empaque de tu marca.",
         ],
       },
@@ -2303,7 +2303,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Corte y acabado: lo que sí puedes elegir",
         body: [
-          "Con el vinil eliges dos cosas al pedir: el corte, que puede ser troquelado o semitroquelado, y el acabado, que puede ser mate, brillante u holográfico. El holográfico tiene un costo extra por pieza. El material no cambia: sigue siendo el mismo vinil premium, así que son decisiones de diseño.",
+          "Con el vinil eliges dos cosas al pedir: el corte, que puede ser troquelado o semitroquelado, y el acabado, que puede ser mate, brillante u holográfico. Todos nuestros stickers llevan laminado BOPP de alta calidad. El holográfico tiene un costo extra por pieza. El material no cambia: sigue siendo el mismo vinil premium, así que son decisiones de diseño.",
           "Si dudas cuál corte te conviene, lee nuestra comparación de troquelado vs. semitroquelado, donde explicamos cuándo conviene cada uno. Antes de imprimir recibes una prueba digital para confirmar cómo se ve el diseño.",
         ],
       },
@@ -3252,7 +3252,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Etiquetas personalizadas para empaques: qué pedir",
         body: [
-          "Al pedir define cuatro cosas: la forma de corte, el acabado, la cantidad y el tamaño. En Yume eliges corte troquelado o semitroquelado, y acabado mate, brillante u holográfico. Se venden por pieza, no por planilla, y antes de imprimir recibes una prueba digital para aprobar.",
+          "Al pedir define cuatro cosas: la forma de corte, el acabado, la cantidad y el tamaño. En Yume eliges corte troquelado o semitroquelado, y acabado mate, brillante u holográfico. Todos nuestros stickers llevan laminado BOPP de alta calidad. Se venden por pieza, no por planilla, y antes de imprimir recibes una prueba digital para aprobar.",
           "Para el logo de tu negocio o de tu evento, revisa los [stickers con tu logo](/productos/stickers-logo-personalizado), que se piden desde 50 piezas. Si quieres convertir un personaje, una mascota o una foto en sticker, los [stickers de vinil personalizados](/productos/stickers-vinil-impermeable) se piden desde 40 piezas. El acabado holográfico tiene un costo extra por pieza.",
           "Como pides la cantidad exacta, no compras de más solo para llenar una planilla. En los stickers de vinil, la prueba digital llega normalmente en un máximo de 24 horas después del pago e incluye hasta 2 rondas de ajustes. Si dudas entre materiales, lee la comparación de [vinil contra papel](/blog/stickers-vinil-vs-papel-diferencias)."
         ],
@@ -3358,7 +3358,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Qué material y qué corte elegir sin importar el tamaño de tu pedido",
         body: [
           "Elige vinil si el sticker va a mojarse, a estar al sol o a rayarse, y elige corte troquelado si quieres que siga la silueta exacta de tu diseño. El vinil de Yume resiste agua, sol y rayones, según la ficha del producto. Cada producto te deja escoger entre troquelado y semitroquelado al pedir.",
-          "También eliges el acabado: mate, brillante u holográfico. El holográfico tiene un costo extra por pieza que ves en la página del producto. Si dudas entre material o corte, estas dos guías te ayudan: stickers de vinil vs. papel y troquelado vs. semitroquelado.",
+          "También eliges el acabado: mate, brillante u holográfico. Todos nuestros stickers llevan laminado BOPP de alta calidad. El holográfico tiene un costo extra por pieza que ves en la página del producto. Si dudas entre material o corte, estas dos guías te ayudan: stickers de vinil vs. papel y troquelado vs. semitroquelado.",
         ],
       },
       {
@@ -3445,7 +3445,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Qué formato pedir según el empaque",
         body: [
-          "Al pedir eliges el corte: troquelado, que sigue la forma exacta de tu diseño, o semitroquelado. También eliges el acabado: mate, brillante u holográfico, este último con un costo extra por pieza. Mándanos qué vas a sellar y verás el resultado en la prueba digital.",
+          "Al pedir eliges el corte: troquelado, que sigue la forma exacta de tu diseño, o semitroquelado. También eliges el acabado: mate, brillante u holográfico, este último con un costo extra por pieza. Todos nuestros stickers llevan laminado BOPP de alta calidad. Mándanos qué vas a sellar y verás el resultado en la prueba digital.",
           "Para entender mejor la diferencia entre cortes, lee [troquelado vs. semitroquelado](/blog/troquelado-vs-semitroquelado-stickers).",
           "Para un logo o un monograma de los novios, las [etiquetas con tu logo](/productos/stickers-logo-personalizado) son resistentes al agua. Para cualquier otro diseño, personaje o ilustración del tema, pide los [stickers de vinil](/productos/stickers-vinil-impermeable). En Yume se venden por cantidad de piezas, no por planilla.",
         ],
@@ -3732,7 +3732,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Corte y acabado: cómo elegir tus stickers personalizados",
         body: [
-          "Al pedir eliges el tipo de corte (troquelado o semitroquelado) y el acabado (mate, brillante u holográfico). Los dos cortes y los acabados mate y brillante cuestan lo mismo; el holográfico suma un costo extra por cada pieza. Si dudas cuál te conviene, escríbenos y te orientamos.",
+          "Al pedir eliges el tipo de corte (troquelado o semitroquelado) y el acabado (mate, brillante u holográfico). Todos nuestros stickers llevan laminado BOPP de alta calidad. Los dos cortes y los acabados mate y brillante cuestan lo mismo; el holográfico suma un costo extra por cada pieza. Si dudas cuál te conviene, escríbenos y te orientamos.",
           "El troquelado corta el material y el respaldo siguiendo la silueta del diseño: cada sticker queda individual, ideal para sellar una bolsita o pegarlo en una copa. El semitroquelado corta solo el material y deja el respaldo, útil si los vas a entregar en hoja o los vas a pegar uno por uno.",
           "El vinil es premium y resiste el agua, el sol y los rayones. Las etiquetas con tu logo también son resistentes al agua.",
           "Antes de pegar cualquier sticker, limpia y seca la superficie: no se adhiere bien sobre superficies húmedas, grasosas o con polvo, como una copa recién lavada o una caja polvosa. Si dudas entre vinil y papel, revisa la guía de diferencias entre vinil y papel.",
@@ -3874,7 +3874,7 @@ export const blogPosts: BlogPost[] = [
           `Parte de la fecha de tu evento y cuenta hacia atrás: primero el envío o la recolección, luego los ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles de producción y, antes de todo, los días que tardes en aprobar la prueba digital. Con esa suma sabes qué día debes pagar, y conviene dejar un margen por si pides un ajuste.`,
           `En un envío a domicilio, la estimación va de ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles desde la aprobación; en recolección, de ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS}. A esa cifra súmale los días que tardes tú en revisar y aprobar la prueba.`,
           "Esta cuenta sirve para una boda, un cumpleaños, un baby shower o un evento de empresa. Si organizas varios eventos, haz la misma cuenta para cada uno, con su propia fecha. Para fechas con mucha demanda, como Navidad o graduaciones, conviene pedir con al menos dos semanas de anticipación.",
-          "Cuando tengas la fecha clara, elige entre [stickers de vinil personalizados](/productos/stickers-vinil-impermeable), para cualquier diseño, personaje o foto, y [stickers con tu logo](/productos/stickers-logo-personalizado), para tu marca o tu evento.",
+          "Cuando tengas la fecha clara, elige entre [stickers de vinil personalizados](/productos/stickers-vinil-impermeable), para cualquier diseño, personaje o foto, y [stickers con tu logo](/productos/stickers-logo-personalizado), para tu marca o tu evento. Todos nuestros stickers llevan laminado BOPP de alta calidad, y el acabado lo eliges tú.",
         ],
       },
       {
@@ -3992,7 +3992,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Cómo elegir el tipo de corte al pedir",
         body: [
-          "Eliges el corte, Troquelado o Semitroquelado, en la página del producto antes de agregar al carrito, junto con el acabado: mate, brillante u holográfico. Lo que elijas queda guardado en tu pedido, y antes de imprimir recibes una prueba digital para confirmar cómo se ve.",
+          "Eliges el corte, Troquelado o Semitroquelado, en la página del producto antes de agregar al carrito, junto con el acabado: mate, brillante u holográfico. Todos nuestros stickers llevan laminado BOPP de alta calidad. Lo que elijas queda guardado en tu pedido, y antes de imprimir recibes una prueba digital para confirmar cómo se ve.",
           "El acabado holográfico tiene un costo extra de $0.50 por pieza, que ves al elegirlo. El corte no agrega costo por pieza.",
           "La prueba digital llega normalmente en un máximo de 24 horas después del pago e incluye hasta 2 rondas de ajustes. Nada se imprime sin tu aprobación, así que si compras para un cliente o para una clienta, puedes mostrarle el diseño antes de producir.",
           "Si tienes dudas sobre cuál te conviene para tu caso, escríbenos por WhatsApp antes de pagar y lo revisamos contigo.",
@@ -4189,7 +4189,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-10-17",
     modifiedAt: "2026-11-10",
     intro:
-      "Las etiquetas escolares son pegatinas con el nombre del niño (y a veces su grupo o un dibujo) para marcar cuadernos, loncheras, botellas y mochilas, y que nada se pierda ni se confunda en el salón. En Yume las hacemos en vinil resistente al agua, con el diseño que tú elijas. Esta guía explica qué llevan, en qué útiles se pegan, cuántas conviene pedir, cuánto cuestan, cuándo pedirlas en el ciclo 2026-2027 y cómo llegan a tu casa o a una sucursal en Guadalajara.",
+      "Las etiquetas escolares son pegatinas con el nombre del niño (y a veces su grupo o un dibujo) para marcar cuadernos, loncheras, botellas y mochilas, y que nada se pierda ni se confunda en el salón. En Yume las hacemos en vinil resistente al agua, con el diseño que tú elijas. Todos nuestros stickers llevan laminado BOPP de alta calidad, y el acabado lo eliges tú. Esta guía explica qué llevan, en qué útiles se pegan, cuántas conviene pedir, cuánto cuestan, cuándo pedirlas en el ciclo 2026-2027 y cómo llegan a tu casa o a una sucursal en Guadalajara.",
     sections: [
       {
         heading: "Etiquetas escolares personalizadas: qué llevan",
@@ -4287,7 +4287,7 @@ export const blogPosts: BlogPost[] = [
     title: "Etiquetas con nombre para botellas, loncheras y mochilas: dónde pegarlas y cómo cuidarlas",
     metaTitle: "Etiquetas con nombre para botellas, loncheras y mochilas",
     description:
-      "Dónde pegar etiquetas con nombre en botellas, loncheras y mochilas, cómo aplicarlas para que duren y qué diseño elegir. Vinil resistente al agua.",
+      "Dónde pegar etiquetas con nombre en botellas, loncheras y mochilas, cómo aplicarlas para que duren y qué diseño elegir. Vinil resistente al agua. Todos nuestros stickers llevan laminado BOPP de alta calidad, y el acabado lo eliges tú.",
     category: "Guías",
     publishedAt: "2026-10-17",
     modifiedAt: "2026-10-26",
@@ -4452,7 +4452,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Material y acabado: el formato no da la resistencia al agua",
         body: [
           "Lo que resiste el agua es el material, no el formato. Una etiqueta de papel no se vuelve impermeable, y los consejos para proteger la impresión funcionan mejor con base de película. Nuestras etiquetas son de vinil y resistentes al agua; si habrá hielo, hieleras o botellas frías, pide siempre un material resistente.",
-          "Los Stickers de Vinil Personalizados además resisten el sol y los rayones. En acabado eliges mate, brillante u holográfico (el holográfico suma $0.50 por pieza). La comparación completa está en nuestra guía de [vinil vs. papel](/blog/stickers-vinil-vs-papel-diferencias).",
+          "Los Stickers de Vinil Personalizados además resisten el sol y los rayones. En acabado eliges mate, brillante u holográfico (el holográfico suma $0.50 por pieza). Todos nuestros stickers llevan laminado BOPP de alta calidad. La comparación completa está en nuestra guía de [vinil vs. papel](/blog/stickers-vinil-vs-papel-diferencias).",
           "Si imprimes en casa con inyección de tinta, Online Labels recomienda usar el ajuste de papel fotográfico o brillante y dejar secar al menos unas horas, idealmente 24. Para protección extra menciona barniz en spray transparente brillante o una hoja de sobrecapa transparente.",
         ],
       },
@@ -4560,7 +4560,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Forma, acabado y precio de las etiquetas en vinil",
         body: [
-          "El corte sigue la forma de tu diseño: redondas, de esfera, de estrella o cuadradas. Eliges troquelado, cada etiqueta suelta, o semitroquelado, varias en una hoja y fáciles de despegar. El acabado puede ser mate, brillante u holográfico, y el holográfico tiene un costo extra por pieza.",
+          "El corte sigue la forma de tu diseño: redondas, de esfera, de estrella o cuadradas. Eliges troquelado, cada etiqueta suelta, o semitroquelado, varias en una hoja y fáciles de despegar. El acabado puede ser mate, brillante u holográfico, y el holográfico tiene un costo extra por pieza. Todos nuestros stickers llevan laminado BOPP de alta calidad.",
           `100 piezas (tamaño chico): $${priceOf("stickers-vinil-impermeable", 100)} en los stickers de vinil personalizados, con mínimo de 40 piezas, y $${priceOf("stickers-logo-personalizado", 100)} en las etiquetas con tu logo, con mínimo de 50 piezas.`,
         ],
         table: {
@@ -4784,7 +4784,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Qué stickers y dulceros personalizados entran en el Buen Fin",
         body: [
-          "El cupón aplica a los productos de la tienda en línea, como [stickers de vinil personalizados](/productos/stickers-vinil-impermeable), [etiquetas con tu logo](/productos/stickers-logo-personalizado) y [dulceros personalizados](/productos/dulceros-personalizados). Los tatuajes temporales se cotizan por WhatsApp según diseño y cantidad, por lo que no se pagan con el cupón en la tienda.",
+          "El cupón aplica a los productos de la tienda en línea, como [stickers de vinil personalizados](/productos/stickers-vinil-impermeable), [etiquetas con tu logo](/productos/stickers-logo-personalizado) y [dulceros personalizados](/productos/dulceros-personalizados). Todos nuestros stickers llevan laminado BOPP de alta calidad, y el acabado lo eliges tú. Los tatuajes temporales se cotizan por WhatsApp según diseño y cantidad, por lo que no se pagan con el cupón en la tienda.",
           "Esto es lo que ofrece cada uno y desde cuántas piezas se pide:",
         ],
         table: {

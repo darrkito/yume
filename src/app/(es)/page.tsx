@@ -32,6 +32,7 @@ const NO_MINIMUMS = [
   "Un recetario o desde 40-50 piezas de stickers, no cientos",
   "Precios flexibles desde $140 MXN",
   "Sin planillas de mínimos como otros talleres",
+  "Todos nuestros stickers llevan laminado BOPP de alta calidad",
 ];
 
 const HOW_IT_WORKS = [
@@ -70,7 +71,7 @@ export default function Home() {
             </h1>
             <p className="mt-6 max-w-md text-base leading-relaxed text-ink-soft">
               Papelería y artículos personalizados hechos sobre pedido en Guadalajara: recetarios médicos, etiquetas y
-              piezas a tu medida, aprobadas contigo antes de imprimir.
+              piezas a tu medida, aprobadas contigo antes de imprimir. Todos nuestros stickers llevan laminado BOPP de alta calidad.
             </p>
             <div className="animate-fade-up animate-fade-up-2 mt-6 flex flex-wrap gap-4 sm:mt-8">
               <Link href="/productos" className="btn-soft btn-soft-solid">

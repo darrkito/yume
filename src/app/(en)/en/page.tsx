@@ -29,6 +29,7 @@ const NO_MINIMUMS = [
   "One prescription pad or 40-50 stickers, not hundreds",
   "Flexible pricing from $140 MXN",
   "No bulk minimums like other print shops",
+  "All of our stickers come with high-quality BOPP lamination",
 ];
 
 const HOW_IT_WORKS = [
@@ -73,7 +74,7 @@ export default function HomeEn() {
             </h1>
             <p className="mt-6 max-w-md text-base leading-relaxed text-ink-soft">
               Custom stationery made to order in Guadalajara: medical prescription pads, stickers, and pieces built
-              to your specs, approved with you before printing.
+              to your specs, approved with you before printing. All of our stickers come with high-quality BOPP lamination.
             </p>
             <div className="animate-fade-up animate-fade-up-2 mt-6 flex flex-wrap gap-4 sm:mt-8">
               <Link href="/en/products" className="btn-soft btn-soft-solid">
