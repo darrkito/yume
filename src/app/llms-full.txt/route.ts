@@ -29,6 +29,7 @@ export function GET() {
     faqMarkdown("es"),
     faqMarkdown("en"),
     blogListMarkdown("es"),
+    blogListMarkdown("en"),
   ].filter(Boolean);
   return new Response(parts.join("\n\n---\n\n"), { headers: { "Content-Type": "text/plain; charset=utf-8" } });
 }

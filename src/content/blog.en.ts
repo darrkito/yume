@@ -4528,59 +4528,92 @@ export const blogPostsEn: BlogPost[] = [
   },
   {
     slug: BLOG_SLUG_EN["buen-fin-2026-stickers-y-dulceros-personalizados"],
-    title: "Buen Fin 2026 at Studio Yume: 15% off stickers, party favor boxes and more",
+    title: "Buen Fin 2026: 15% off custom stickers and party favor boxes",
     metaTitle: "Buen Fin 2026: 15% off stickers and favor boxes",
-    description: "Buen Fin 2026, November 13-17: 15% off the whole Studio Yume online store with code YumeBuenFin, no minimum. Here is how to apply it.",
+    description: "Buen Fin 2026, November 13-17: 15% off custom stickers and party favor boxes with code YumeBuenFin, no minimum. Here is how to apply it.",
     category: "Guides",
     publishedAt: "2026-11-03",
-    intro: "Buen Fin 2026 runs November 13 to 17, and at Studio Yume you get 15% off the whole online store with code YumeBuenFin, no minimum order. Here is how to apply it, which products are included, how shipping works and what to have ready before the 13th.",
+    modifiedAt: "2026-11-04",
+    intro: "Buen Fin 2026 runs November 13 to 17, and at Studio Yume you get 15% off stickers, party favor boxes and more products in the online store with code YumeBuenFin, with no minimum order. Here are the dates, how to apply the code, which products are included, how shipping works and how to take your time ordering custom pieces for a wedding, baby shower, quinceañera or company posada.",
     sections: [
       {
-        heading: "How much is the discount and when is it valid",
+        heading: "Buen Fin 2026: dates and discounts on stickers and favor boxes",
         body: [
-          "Code YumeBuenFin gives 15% off products in the online store. There is no minimum: it applies equally to small and large orders.",
-          "It is valid from November 13 at 00:00 to November 17 at 23:59, Mexico City time. Outside those dates the store will not accept it.",
+          "Buen Fin 2026 runs from Friday, November 13 to Tuesday, November 17, coinciding with the long weekend for the Mexican Revolution. At Studio Yume, code YumeBuenFin gives 15% off products in the online store, with no minimum order, during those same five days.",
+          "The code is valid from November 13 at 00:00 to November 17 at 23:59, Mexico City time. Outside those dates the store will not accept it. It applies equally to small and large orders.",
+          "Buen Fin is coordinated by the Ministry of Economy and Concanaco Servytur, with chains, micro, small and medium businesses and online stores taking part. Since it falls on a long weekend, it helps to have your order planned before Friday the 13th.",
         ],
       },
       {
-        heading: "How to apply code YumeBuenFin",
+        heading: "How to apply code YumeBuenFin to your order",
         body: [
-          "Add your products to the cart and go to the checkout page. In the order summary you will find the field ‘Have a coupon?’: enter YumeBuenFin (uppercase or lowercase both work) and tap ‘Apply’. The discount appears in your total before you pay.",
+          "Add your products to the cart, go to checkout and find the 'Have a coupon?' field in the order summary. Enter YumeBuenFin, in uppercase or lowercase, and tap 'Apply'. The discount appears in your total before you pay. It only works from November 13 to 17.",
           "If the code is not accepted, check the date: it is not valid before November 13 or after November 17.",
         ],
       },
       {
-        heading: "Which products are included",
+        heading: "Which custom stickers and favor boxes are included in Buen Fin",
         body: [
-          "The code applies to products purchased in the online store: [custom vinyl stickers](/en/products/waterproof-vinyl-stickers), [labels with your logo](/en/products/custom-logo-stickers), [personalized party favor boxes](/en/products/personalized-party-favor-boxes), [Google review NFC plates](/en/products/google-review-nfc-plate), [review stands](/en/products/google-review-nfc-stand) and [custom medical prescription pads](/en/products/medical-prescription-pads). All of our stickers come with high-quality BOPP lamination, and you choose the finish.",
-          "[Custom temporary tattoos](/en/products/custom-temporary-tattoos) are quoted over WhatsApp by design and quantity, so they are not bought with the code in the online store. If you are interested, message us.",
+          "The code applies to products in the online store, such as [custom vinyl stickers](/en/products/waterproof-vinyl-stickers), [labels with your logo](/en/products/custom-logo-stickers) and [personalized party favor boxes](/en/products/personalized-party-favor-boxes). All our stickers have high-quality BOPP lamination, and you choose the finish. Temporary tattoos are quoted through our messaging service according to design and quantity, so they are not paid for with the store code.",
+          "Here is what each product offers and the minimum number of pieces you can order:",
+        ],
+        table: {
+          headers: ["Product", "Minimum order", "What it is for"],
+          rows: [
+            ["Custom vinyl stickers", "40 pieces", "Any design, character, pet or photo"],
+            ["Stickers and labels with your logo", "50 pieces", "Your brand logo or design"],
+            ["Personalized party favor boxes", "10 pieces", "Name and theme, including your brand logo"],
+          ],
+        },
+      },
+      {
+        heading: "How to shop confidently for a custom order",
+        body: [
+          "A custom order is made to your specifications, so take your time when buying. Before paying, check delivery terms, returns and shipping costs, and keep your receipts and electronic confirmations, as Profeco recommends. At Studio Yume you receive a digital proof before printing, and nothing is produced without your approval.",
+          "Before Buen Fin, it also helps to set a budget and note the base price of what you want so you can compare it with the offer. According to media reports citing Profeco, its Buen Fin price comparison microsite shows price histories for categories such as appliances, computers, televisions and major appliances. It does not include personalized items, so compare quotes and conditions directly for a custom order.",
+          "If you have questions about your order, message us before paying.",
         ],
       },
       {
         heading: "Shipping and pickup during Buen Fin",
         body: [
-          `Shipping anywhere in Mexico costs $${NATIONAL_SHIPPING_PRICE} and is free on purchases of $${FREE_SHIPPING_THRESHOLD} or more. That rule is calculated using the total before the discount, so the code does not take away free shipping.`,
-          `If you are in Guadalajara, you can also pick up at a Casa Blanca branch for $${CASABLANCA_PRICE}, free on purchases of $${FREE_SHIPPING_THRESHOLD} or more.`,
+          `Shipping anywhere in Mexico costs $${NATIONAL_SHIPPING_PRICE} and is free on purchases of $${FREE_SHIPPING_THRESHOLD} or more. This is calculated using the total before the discount, so the code does not take away free shipping. If you are in Guadalajara, you can also pick up at a local branch for $${CASABLANCA_PRICE}, free from $${FREE_SHIPPING_THRESHOLD}.`,
+          "Since Buen Fin falls on a long weekend, ask us through our messaging service about timing for your event date before paying.",
+        ],
+      },
+      {
+        heading: "Buen Fin for weddings, baby showers, quinceañeras and posadas",
+        body: [
+          "Buen Fin is a chance to plan details for events already on your calendar: weddings, baby showers, baptisms, communions, quinceañeras and company posadas. You can order personalized favor boxes and stickers with the name of the person being celebrated at the discount, provided you have the design, text and quantity ready.",
+          "If you are a wedding or event planner, you can order pieces for a client's already confirmed event. Send us the design, text and quantity, and we will send a digital proof before production.",
+          "For a posada or company event, the favor box includes your brand name and logo. For filling ideas, see [what to put in a party favor box](/en/blog/what-to-put-in-a-party-favor-box), and if you are nearby, explore [personalized party favor boxes in Guadalajara](/en/blog/personalized-party-favor-boxes-guadalajara).",
         ],
       },
       {
         heading: "What to have ready before November 13",
         body: [
-          "To order quickly, have your logo or design in good resolution, the exact text you want printed (names, dates, messages) and the quantity ready. Minimum orders are 10 party favor boxes and 40 vinyl stickers.",
-          "After payment we normally send your digital proof within 24 hours, with up to 2 rounds of adjustments. Nothing is printed without your approval.",
+          "To order without rushing, have your logo or design, the exact text you want printed, such as names, dates and messages, and the quantity ready. Minimum orders are 10 party favor boxes and 40 vinyl stickers. Once you have those details, apply the code and proceed to payment.",
+          "After payment we normally send your digital proof within a maximum of 24 hours, with up to 2 rounds of adjustments. Nothing is printed without your approval.",
           "If you are planning gifts or December posadas, see the guides to [custom Christmas labels](/en/blog/custom-christmas-labels) and [Christmas treat boxes](/en/blog/personalized-christmas-treat-boxes).",
         ],
       },
     ],
     faq: [
       { q: "When is Buen Fin 2026 at Studio Yume?", a: "November 13 to 17, 2026, Mexico City time." },
+      { q: "How many days does Buen Fin 2026 last?", a: "Five consecutive days, from Friday to Tuesday, coinciding with the long weekend for the Mexican Revolution." },
+      { q: "Who coordinates Buen Fin?", a: "The Ministry of Economy and Concanaco Servytur." },
       { q: "What is the Buen Fin code?", a: "YumeBuenFin: 15% off products in the online store, with no minimum." },
       { q: "Can the code be used after November 17?", a: "No. It is only valid during the Buen Fin dates." },
       { q: "Does the code take away free shipping?", a: `No. Free shipping from $${FREE_SHIPPING_THRESHOLD} is calculated using the total before the discount.` },
-      { q: "Does it apply to temporary tattoos?", a: "Temporary tattoos are quoted over WhatsApp and are not paid for with the online store code." },
+      { q: "Does it apply to temporary tattoos?", a: "Temporary tattoos are quoted through our messaging service and are not paid for with the online store code." },
+      { q: "Can I order wedding or baby shower details with the code?", a: "Yes, if the product is purchased in the online store, such as personalized favor boxes or stickers. For pieces quoted through our messaging service, write to us and we will reply." },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado", "dulceros-personalizados"],
     relatedBlogSlugs: [BLOG_SLUG_EN["etiquetas-navidenas-personalizadas"], BLOG_SLUG_EN["dulceros-navidenos-personalizados"]],
+    sources: [
+      { label: "Buen Fin 2026: official dates and Profeco recommendations", url: "https://ruptura360.mx/periodismo-de-servicio/el-buen-fin-2026-fechas-oficiales-mexico/" },
+      { label: "Profeco launches a price comparison microsite for Buen Fin 2026", url: "https://www.publimetro.com.mx/noticias/2026/10/27/profeco-lanza-micrositio-para-comparar-precios-en-el-buen-fin-2026/" },
+    ],
   },
   {
     slug: BLOG_SLUG_EN["dulceros-para-xv-anos-elegantes"],
