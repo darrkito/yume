@@ -6708,6 +6708,7 @@ export const blogPostsEn: BlogPost[] = [
       "Google review policies made clear: what you can do when asking for reviews, what is prohibited, and how to ask all your customers equally.",
     category: "Guides",
     publishedAt: "2026-11-13",
+    modifiedAt: "2026-11-13",
     intro:
       "Asking for reviews on Google is allowed, but several common practices go against the Google Maps policy: giving discounts for reviewing, filtering out unhappy customers, or trying to influence what they write. This guide separates what you can do from what you can't, based on the official text, and closes with an example of asking everyone equally.",
     sections: [
@@ -6753,8 +6754,15 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "In-store pressure, paid reviews and reviewing yourself",
         body: [
-          "The policy we reviewed covers incentives, influencing the rating and conflicts of interest, such as a current or past employment or contractual relationship with the business. It does not mention in-store pressure or reviewing yourself in those words, but both try to influence what gets published, so the prudent choice is to avoid them.",
+          "The policy we reviewed covers incentives, influencing the rating and conflicts of interest, such as an employment or contractual relationship with the business. It does not mention in-store pressure or reviewing yourself in those words, but both try to influence what gets published, so the prudent choice is to avoid them.",
           "Paying someone to review falls under the prohibition on payments in exchange for reviews. And if the reviewer has an employment or contractual relationship with the business, the policy treats it as a possible conflict of interest. The safest path is to let real customers who lived the experience write the reviews.",
+        ],
+      },
+      {
+        heading: "Quick checklist to review your review process",
+        body: [
+          "Before you put up a QR code or a plate, check four things: you ask all your real customers, you offer nothing in return, you do not ask first whether they were happy, and you do not suggest a rating or text. If all four hold, your way of asking matches what the policy says.",
+          "Once that is clear, choose the spot with the guide on [where to put your plate](/en/blog/where-to-put-your-google-review-plate). If your business serves food or health, see how it applies to [restaurants](/en/blog/google-review-plate-for-restaurants) and [medical practices](/en/blog/google-review-plate-for-medical-practices). And if you prefer a countertop piece, see the [Google review NFC stand](/en/products/google-review-nfc-stand).",
         ],
       },
       {
@@ -6768,7 +6776,7 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
-    relatedBlogSlugs: ["set-up-google-business-profile-and-ask-for-reviews", "how-to-get-more-google-reviews-nfc-qr", "nfc-plate-vs-printed-qr-code-for-reviews", "how-to-use-your-yume-google-review-plate"],
+    relatedBlogSlugs: ["set-up-google-business-profile-and-ask-for-reviews", "how-to-get-more-google-reviews-nfc-qr", "nfc-plate-vs-printed-qr-code-for-reviews", "how-to-use-your-yume-google-review-plate", "where-to-put-your-google-review-plate"],
     sources: [
       { label: "Google: Maps content policy (user-contributed content, in Spanish)", url: "https://support.google.com/contributionpolicy/answer/7400114?hl=es" },
     ],
@@ -6792,6 +6800,14 @@ export const blogPostsEn: BlogPost[] = [
       {
         q: "Does the plate guarantee more reviews?",
         a: "No. It makes the step easier for someone who already wants to leave an opinion, but it does not guarantee a number of reviews.",
+      },
+      {
+        q: "What do I do if a customer complains in person?",
+        a: "You can help them, but the invitation to review should not depend on their answer.",
+      },
+      {
+        q: "Can Google's rules change?",
+        a: "Yes. Before building your process, check the official page listed under Sources at the end.",
       },
     ],
   },

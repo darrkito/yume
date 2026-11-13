@@ -6987,6 +6987,7 @@ export const blogPosts: BlogPost[] = [
       "Políticas de reseñas de Google en claro: qué sí puedes hacer al pedirlas, qué está prohibido y cómo pedirlas a todos tus clientes por igual.",
     category: "Guías",
     publishedAt: "2026-11-13",
+    modifiedAt: "2026-11-13",
     intro:
       "Pedir reseñas en Google está permitido, pero hay prácticas muy comunes que la política de Google Maps no acepta: dar descuentos por reseñar, filtrar a los clientes contentos o intentar influir en lo que escriben. Esta guía separa lo que sí puedes hacer de lo que no, con base en el texto oficial, y cierra con un ejemplo para pedir la reseña a todos por igual.",
     sections: [
@@ -7037,6 +7038,13 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
+        heading: "Lista rápida para revisar tu proceso de reseñas",
+        body: [
+          "Antes de poner un QR o una placa, revisa que tu proceso cumpla cuatro cosas: pides a todos tus clientes reales, no ofreces nada a cambio, no preguntas primero si estuvieron contentos y no sugieres calificación ni texto. Si las cuatro se cumplen, tu forma de pedir va alineada con lo que dice la política.",
+          "Cuando lo tengas claro, decide el lugar con la guía de [dónde poner tu placa](/blog/donde-poner-placa-resenas-google). Si tu negocio es de comida o de salud, mira cómo se aplica en [restaurantes](/blog/placa-resenas-google-para-restaurantes) y en [consultorios](/blog/placa-resenas-google-para-consultorios). Y si prefieres una pieza de mostrador, conoce el [stand de reseñas NFC](/productos/stand-resena-google-nfc).",
+        ],
+      },
+      {
         heading: "Cómo pedir la reseña a todos por igual con placa NFC o QR",
         body: [
           "Pide la reseña a todos tus clientes por igual y deja que cada quien escriba lo que piensa. La placa NFC o el código QR solo son el camino al enlace oficial de tu perfil: no cambian las reglas. Lo que cuenta es que no ofrezcas nada a cambio ni elijas a quién se lo pides.",
@@ -7047,7 +7055,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
-    relatedBlogSlugs: ["como-configurar-perfil-de-google-y-pedir-resenas", "como-conseguir-mas-resenas-de-google-nfc-qr", "placa-nfc-vs-codigo-qr-impreso-resenas", "como-usar-placa-resenas-google-yume"],
+    relatedBlogSlugs: ["como-configurar-perfil-de-google-y-pedir-resenas", "como-conseguir-mas-resenas-de-google-nfc-qr", "placa-nfc-vs-codigo-qr-impreso-resenas", "como-usar-placa-resenas-google-yume", "donde-poner-placa-resenas-google"],
     sources: [
       { label: "Google: política de contenido de Maps (contenido enviado por usuarios)", url: "https://support.google.com/contributionpolicy/answer/7400114?hl=es" },
     ],
@@ -7071,6 +7079,14 @@ export const blogPosts: BlogPost[] = [
       {
         q: "¿La placa garantiza más reseñas?",
         a: "No. Facilita el paso a quien ya quiere dejar su opinión, pero no garantiza una cantidad de reseñas.",
+      },
+      {
+        q: "¿Qué hago si un cliente se queja en persona?",
+        a: "Puedes atenderlo, pero la invitación a reseñar no debe depender de lo que responda.",
+      },
+      {
+        q: "¿Las reglas de Google pueden cambiar?",
+        a: "Sí. Antes de armar tu proceso de pedido revisa la página oficial que aparece en Fuentes al final.",
       },
     ],
   },
