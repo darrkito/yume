@@ -6538,31 +6538,47 @@ export const blogPostsEn: BlogPost[] = [
     slug: "does-nfc-plate-work-iphone-android",
     title: "NFC Plate on iPhone and Android: What to Know",
     description:
-      "Does an NFC plate work with iPhone and Android? On most recent phones, yes, without an app. Here is when it fails and how the backup QR helps.",
+      "Does an NFC plate work with iPhone and Android? iPhone XS or later and Android with NFC on read it without an app. What to do if it fails.",
     category: "Guides",
     publishedAt: "2026-11-13",
+    modifiedAt: "2026-11-13",
     intro:
-      "Before buying an NFC plate, the most honest question is whether it will work with your customers' phones. The short answer is yes on almost all recent iPhones and Android phones, without an app, but with limits worth knowing. Here they are, explained calmly, along with the 5-second test you can run when yours arrives.",
+      "Before buying an NFC plate, the most honest question is whether it will work with your guests' or customers' phones. The short answer: an iPhone XS or later and Android phones with NFC on read it without an app, but with conditions few people explain. Here they are, with a checklist for when it does not read and the test worth running before you put it on display.",
     sections: [
       {
         heading: "Does an NFC plate work with iPhone and Android without an app?",
         body: [
-          "Yes, on most recent iPhones and Android phones the plate reads without installing anything. Apple documents background NFC tag reading from the iPhone XS onward, and a regular web link opens in the browser. Still, there are situations where it does not respond, which is why the plate carries a backup QR.",
-          "On Android, the developer documentation recommends the NDEF format for the broadest compatibility across devices. A Spanish-language guide also notes that reading is usually more direct on Android than on iPhone, though that is best taken as a general reference.",
+          "Yes. An iPhone XS or later reads the plate in the background without opening any app, as long as it carries an https link. On Android, the plate reads with the screen on and NFC turned on. No method covers every phone, so the plate also carries a backup QR.",
+          "This is exactly what many sellers simplify with the line works on every phone. The real answer has conditions, and knowing them saves you surprises on the day the plate is already on display.",
         ],
       },
       {
         heading: "What happens on an iPhone when you tap the plate",
         body: [
-          "On an iPhone, a notification appears on the screen and the person has to tap it to open the content; it does not open by itself. The screen must also be on: if the phone is locked, it first asks to be unlocked. It is a small step, but nobody should expect a single tap.",
-          "According to Apple, if the link has no associated app, it opens in Safari. In other words, to see a web page the person does not need to install anything.",
+          "On an iPhone, a notification appears on the screen and the person has to tap it to open the link; it does not open by itself. Apple documents this background reading from the iPhone XS onward, and it only processes NDEF tags with a URL record. If the link has no associated app, it opens in Safari.",
+          "Apple reads only the first URL record in the message and does not support custom URL schemes, so regular https links are the safe choice. If your plate points to Instagram, WhatsApp, Maps or a photo album, make it an https link.",
         ],
       },
       {
-        heading: "When an NFC plate does not respond",
+        heading: "What an Android phone needs to read the plate",
         body: [
-          "There are cases where the plate does not read: an iPhone older than the XS, airplane mode, the camera open, Apple Pay or Wallet in use, or another app's NFC scan in progress. It can also fail if the phone has not been unlocked since it was turned on. Some thick or metal cases can interfere.",
-          "With an iPhone older than the XS you cannot assume the plate works without an app, so we do not promise compatibility with every model. If any of this happens, the person loses nothing: they use the QR.",
+          "An Android phone with NFC reads the plate when the screen is on and NFC is turned on in settings. If the person sees no response, first check that NFC is active. For the broadest compatibility across devices, the Android documentation recommends the NDEF format.",
+          "There are many Android brands and models, so we do not give reading distances or promise exact models. The most useful step is to test the plate with the phones your audience actually uses.",
+        ],
+      },
+      {
+        heading: "Why an iPhone does not read the plate: a checklist",
+        body: [
+          "If an iPhone does not read the plate, check five things: that it is an XS or later, that it has been unlocked at least once since it was turned on, that airplane mode is off, that the camera is not in use, and that no Apple Pay payment is in progress.",
+          "It also will not work if another app has an NFC scan in progress. With an iPhone older than the XS you cannot assume the plate works without an app, so we do not promise compatibility with every model. To retry, bring the top of the iPhone to the center of the plate. If it still does not respond, the person scans the QR.",
+        ],
+      },
+      {
+        heading: "Metal and phone cases: what can interfere with the plate",
+        body: [
+          "Nearby metal distorts the NFC field, and a standard plate stuck on a metal surface may stop reading. Plates made for metal include a ferrite layer that shields them, which is why they are thicker. Before sticking yours down, test it on the real surface.",
+          "Cases with metal rings, plates or card slots can interfere, and very thick ones can reduce the reading range. This is practical advice, not a measurement: on your first test keep the case on, and if there is no response, remove it and try again.",
+          "If you were planning to place it on metal, [ask us on WhatsApp](/en/contact) before ordering and we will look at your case.",
         ],
       },
       {
@@ -6573,31 +6589,45 @@ export const blogPostsEn: BlogPost[] = [
         ],
       },
       {
-        heading: "A 5-second test before you put it on display",
+        heading: "A quick test before you put it on display",
         body: [
-          "Hold the back of the phone to the plate with the screen on, and do not remove the case on the first try. On an iPhone, tap the notification that appears. If nothing happens within a few seconds, scan the QR with the camera. With those two paths, almost anyone reaches the same link.",
-          "Run this test when you receive it, with your phone and, if you can, someone else's. To decide where to place it, read [how to use your plate](/en/blog/how-to-use-your-yume-google-review-plate). If you prefer something free-standing with no sticking, see the [Google review NFC stand](/en/products/google-review-nfc-stand).",
+          "Test with the real phone and in the real spot where the plate will live: the table, the counter or the stand. Hold the back of the phone to it with the screen on; on an iPhone, tap the notification. If nothing happens within a few seconds, scan the QR with the camera.",
+          "For an event, test with the plate already mounted in its holder, not loose on a table. Suppliers recommend testing before ordering in volume. To decide where to place it, read [how to use your plate](/en/blog/how-to-use-your-yume-google-review-plate) and [where to put your plate](/en/blog/where-to-put-your-google-review-plate). If you work in events, see the [plate for planners and venues](/en/blog/google-review-plate-for-event-planners-and-venues). If you prefer something free-standing with no sticking, see the [Google review NFC stand](/en/products/google-review-nfc-stand).",
         ],
       },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
-    relatedBlogSlugs: ["nfc-plate-vs-printed-qr-code-for-reviews", "how-to-use-your-yume-google-review-plate", "google-review-plates-one-time-price-vs-subscription", "how-to-get-more-google-reviews-nfc-qr"],
+    relatedBlogSlugs: ["nfc-plate-vs-printed-qr-code-for-reviews", "how-to-use-your-yume-google-review-plate", "where-to-put-your-google-review-plate", "google-review-plate-for-event-planners-and-venues", "google-review-plates-one-time-price-vs-subscription", "how-to-get-more-google-reviews-nfc-qr"],
     sources: [
       { label: "Apple Developer: Adding support for background tag reading", url: "https://developer.apple.com/documentation/corenfc/adding-support-for-background-tag-reading.md" },
       { label: "Android Developers: NFC basics", url: "https://developer.android.com/develop/connectivity/nfc/nfc?hl=es" },
+      { label: "GoToTags: Background tag reading on iOS", url: "https://gototags.com/help/ios/nfc/reading/background" },
+      { label: "IoT For All: NFC, metallic interference and ferrite", url: "https://www.iotforall.com/nfc-metallic-interference-ferrite-solutions" },
     ],
     faq: [
       {
         q: "Does my customer need to install an app to use the plate?",
-        a: "Not on iPhone XS and later, nor on recent Android phones. For a web link, the phone's own reading is enough, and the Yume plate needs no app or subscription.",
+        a: "Not on iPhone XS and later, nor on Android phones with NFC on. For a web link, the phone's own reading is enough, and the Yume plate needs no app or subscription.",
+      },
+      {
+        q: "From which iPhone does background reading work?",
+        a: "Apple documents background tag reading from the iPhone XS onward. It only processes NDEF tags with a URL record.",
       },
       {
         q: "What if the iPhone is very old?",
         a: "With an iPhone older than the XS you cannot assume the plate works without an app. In that case, the person scans the QR that is already printed on it.",
       },
       {
+        q: "What if an Android phone does not read the plate?",
+        a: "Check that NFC is turned on in settings and that the screen is on. If it still does not respond, scan the QR with the camera.",
+      },
+      {
         q: "Does the phone case affect reading?",
-        a: "Some thick or metal cases can interfere. Do not remove it on your first test: if it does not respond, take it off and try again, or use the QR.",
+        a: "Cases with metal rings, plates or card slots can interfere, and very thick ones can reduce the range. If there is no response, remove the case and try again, or use the QR.",
+      },
+      {
+        q: "Does the plate work stuck on metal?",
+        a: "It can fail: nearby metal distorts the NFC field, and a standard plate on a metal surface may stop reading. Always test on the real surface.",
       },
       {
         q: "Why does the iPhone ask me to tap a notification?",
