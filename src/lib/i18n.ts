@@ -95,6 +95,7 @@ export const BLOG_SLUG_EN: Record<string, string> = {
   "donde-poner-placa-resenas-google": "where-to-put-your-google-review-plate",
   "que-si-y-que-no-pedir-resenas-google-politicas": "google-review-policies-what-you-can-and-cannot-do",
   "resenas-google-dentistas-consultorios": "google-reviews-for-dentists-how-to-ask",
+  "como-conseguir-resenas-google-restaurante-cafeteria": "how-to-get-google-reviews-restaurant-cafe",
 };
 
 export const PRODUCT_SLUG_ES: Record<string, string> = Object.fromEntries(

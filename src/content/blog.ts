@@ -7250,6 +7250,83 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "como-conseguir-resenas-google-restaurante-cafeteria",
+    title: "Reseñas Google para restaurante y cafetería: guía práctica",
+    description:
+      "Cómo conseguir reseñas de Google para tu restaurante o cafetería: dónde pedirlas en mesa y caja, qué prohíbe Google y cómo responder.",
+    category: "Guías",
+    publishedAt: "2026-11-13",
+    intro:
+      "Si tienes un restaurante o una cafetería, tus clientes ya opinan de ti: la pregunta es si esa opinión llega a Google. Aquí tienes cómo pedir reseñas en la mesa y en la caja, con un guion corto para tu equipo, y qué cosas te prohíbe Google para que no pongas en riesgo tu perfil.",
+    sections: [
+      {
+        heading: "Reseñas de Google para tu restaurante: por dónde empezar",
+        body: [
+          "Para conseguir reseñas de Google en un restaurante o cafetería, pide en el momento justo, facilita el paso con un enlace o código QR del Perfil de Empresa y nunca ofrezcas nada a cambio. Google recomienda recordar a tus clientes que pueden reseñar, y permite crear ese enlace y ese QR.",
+          "En esta guía vemos dónde pedirla en mesa y caja, qué decir, cuándo conviene una placa NFC, qué prohíbe Google y cómo responder.",
+        ],
+      },
+      {
+        heading: "Dónde pedir reseñas en mesa y en caja",
+        body: [
+          "Los dos puntos naturales son la caja y la mesa. En la caja, la placa va a la altura de los ojos, junto a la terminal de pago. En la mesa, sirve cuando el cliente ya terminó de comer. Un código escondido bajo el mostrador no se usa, así que ponlo donde el cliente mira.",
+          "Otros lugares que sugerimos son la salida y el ticket o el empaque para llevar.",
+        ],
+      },
+      {
+        heading: "Qué decir: guion corto para meseros y cajeros",
+        body: [
+          "Un buen guion es corto, neutral y sin presión. Lo importante es agradecer, invitar y señalar la placa, sin insistir ni pedir una calificación en particular. Por ejemplo: «Gracias por venir. Si quieres contarnos cómo te fue, nos ayuda una reseña en Google; acerca tu celular a la placa».",
+          "Para dejar una reseña, el cliente necesita iniciar sesión en una cuenta de Google. Puede crear una con un correo que no sea de Gmail. Es una fricción real: si alguien no tiene cuenta a la mano, no lo presiones; puede hacerlo después.",
+        ],
+      },
+      {
+        heading: "Enlace directo, placa NFC o QR: cuál usar",
+        body: [
+          "Pedirlo de palabra funciona, pero depende de que el cliente recuerde el nombre de tu negocio y lo busque. Un enlace directo, un QR o una placa NFC le ahorran ese camino: abre tu formulario de reseña con un toque o un escaneo. Google permite crear el enlace y el QR desde tu Perfil de Empresa.",
+          "La [placa NFC para reseñas](/productos/placa-resena-google-nfc) de Yume llega ya programada con el enlace de reseñas de tu negocio y con el QR de respaldo impreso. Es de pago único, sin suscripción ni app. Va con adhesivo; si prefieres algo de pie, el [stand NFC para reseñas](/productos/stand-resena-google-nfc) no se pega.",
+          "No todos los celulares leen NFC igual, por eso existe el QR de respaldo. Para comparar ambas opciones, lee [NFC contra QR impreso](/blog/placa-nfc-vs-codigo-qr-impreso-resenas).",
+        ],
+      },
+      {
+        heading: "Qué prohíbe Google al pedir reseñas de tu restaurante",
+        body: [
+          "Google prohíbe ofrecer productos o servicios gratis o con descuento a cambio de reseñas, de cambiarlas o de eliminar las negativas. En un restaurante, eso incluye regalar un postre, un café o un descuento por reseñar. Google lo considera interacción falsa y está estrictamente prohibido.",
+          "Las reseñas deben reflejar una experiencia auténtica, y las infracciones pueden llevar a restricciones en tu Perfil de Empresa. La alternativa legítima es agradecer, pedir con naturalidad y responder.",
+        ],
+      },
+      {
+        heading: "Cómo responder reseñas, también las negativas",
+        body: [
+          "Varias guías de reseñas recomiendan responder todas, no solo las positivas. A una reseña buena, agradece con una frase. A una negativa, responde con calma y sin discutir. Nunca ofrezcas algo a cambio de que la cambien, porque Google lo prohíbe.",
+          "Para configurar tu perfil y el enlace paso a paso, revisa [configurar tu perfil de Google](/blog/como-configurar-perfil-de-google-y-pedir-resenas).",
+        ],
+      },
+      {
+        heading: "Pide a todos tus clientes, no solo a los contentos",
+        body: [
+          "Conviene pedir la reseña a todos los clientes y no solo a los que salen contentos. Varias guías de reseñas lo consideran buena práctica, porque elegir a quién pedir sería una selección interesada. No es texto literal de Google, es una recomendación de guías secundarias.",
+          "Para ver cómo aplica esto a tu giro, lee [placa de reseñas para restaurantes](/blog/placa-resenas-google-para-restaurantes).",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
+    relatedBlogSlugs: ["placa-resenas-google-para-restaurantes", "placa-nfc-vs-codigo-qr-impreso-resenas", "como-configurar-perfil-de-google-y-pedir-resenas"],
+    sources: [
+      { label: "Ayuda de Perfil de Empresa de Google: política de reseñas", url: "https://support.google.com/business/answer/3474122?hl=es" },
+    ],
+    faq: [
+      {
+        q: "¿Una placa garantiza más reseñas?",
+        a: "No. La placa facilita el paso al cliente, pero no garantiza reseñas. Que alguien reseñe depende de su experiencia y de que decida hacerlo.",
+      },
+      {
+        q: "¿Pedir reseñas con un QR me puede traer problemas con Google?",
+        a: "Google recomienda recordar a tus clientes que pueden reseñar y permite crear un enlace y un código QR en tu Perfil de Empresa. Lo prohibido es ofrecer algo a cambio. Las infracciones pueden llevar a restricciones en el perfil.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string) {

@@ -6017,6 +6017,83 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "how-to-get-google-reviews-restaurant-cafe",
+    title: "Google Reviews for Restaurants and Cafés: Practical Guide",
+    description:
+      "How to get Google reviews for your restaurant or café: where to ask at the table and register, what Google prohibits and how to reply.",
+    category: "Guides",
+    publishedAt: "2026-11-13",
+    intro:
+      "If you run a restaurant or a café, your customers already have opinions about you: the question is whether those opinions reach Google. Here is how to ask for reviews at the table and the register, with a short script for your team, and what Google prohibits so you do not put your profile at risk.",
+    sections: [
+      {
+        heading: "Google reviews for your restaurant: where to start",
+        body: [
+          "To get Google reviews for a restaurant or café, ask at the right moment, make it easy with a link or QR code from your Business Profile, and never offer anything in return. Google recommends reminding customers they can leave reviews, and it lets you create that link and QR code.",
+          "This guide covers where to ask at the table and the register, what to say, when an NFC plate makes sense, what Google prohibits and how to reply.",
+        ],
+      },
+      {
+        heading: "Where to ask for reviews: table and register",
+        body: [
+          "The two natural spots are the register and the table. At the register, put the plate at eye level, next to the card terminal. At the table, use it once the customer has finished eating. A code hidden under the counter does not get used, so place it where customers look.",
+          "Other spots we suggest are the exit and the receipt or takeout packaging.",
+        ],
+      },
+      {
+        heading: "What to say: a short script for waiters and cashiers",
+        body: [
+          "A good script is short, neutral and pressure-free. What matters is thanking, inviting and pointing to the plate, without insisting or asking for a particular rating. For example: “Thanks for coming. If you would like to tell us how it went, a Google review helps us; hold your phone near the plate.”",
+          "To leave a review, the customer must sign in to a Google account. They can create one with an email address that is not Gmail. This is real friction: if someone has no account handy, do not pressure them; they can do it later.",
+        ],
+      },
+      {
+        heading: "Direct link, NFC plate or QR: which one to use",
+        body: [
+          "Asking in person works, but it depends on the customer remembering your business name and searching for it. A direct link, a QR code or an NFC plate saves that step: it opens your review form with a tap or a scan. Google lets you create the link and the QR code from your Business Profile.",
+          "The Yume [NFC review plate](/en/products/google-review-nfc-plate) arrives already programmed with your business review link and with a backup QR printed on it. It is a one-time payment, with no subscription and no app. It comes with adhesive; if you prefer something freestanding, the [NFC review stand](/en/products/google-review-nfc-stand) does not need to be stuck down.",
+          "Not every phone reads NFC the same way, which is why the backup QR is there. To compare both options, read [NFC versus printed QR](/en/blog/nfc-plate-vs-printed-qr-code-for-reviews).",
+        ],
+      },
+      {
+        heading: "What Google prohibits when you ask for restaurant reviews",
+        body: [
+          "Google prohibits offering free or discounted products or services in exchange for reviews, for changing them or for removing negative ones. In a restaurant, that includes giving away a dessert, a coffee or a discount for reviewing. Google treats it as fake engagement and it is strictly prohibited.",
+          "Reviews must reflect an authentic experience, and violations can lead to restrictions on your Business Profile. The legitimate alternative is to thank customers, ask naturally and reply.",
+        ],
+      },
+      {
+        heading: "How to reply to reviews, including negative ones",
+        body: [
+          "Several review guides recommend replying to all of them, not only the positive ones. To a good review, say thanks in a sentence. To a negative one, reply calmly and without arguing. Never offer anything in exchange for changing it, because Google prohibits that.",
+          "To set up your profile and link step by step, see [set up your Google profile](/en/blog/set-up-google-business-profile-and-ask-for-reviews).",
+        ],
+      },
+      {
+        heading: "Ask every customer, not only the happy ones",
+        body: [
+          "It is best to ask every customer for a review, not only those who leave happy. Several review guides treat this as good practice, because choosing who to ask would be cherry-picking. It is not literal Google text, it is a recommendation from secondary guides.",
+          "To see how this applies to your business type, read [review plate for restaurants](/en/blog/google-review-plate-for-restaurants).",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
+    relatedBlogSlugs: ["google-review-plate-for-restaurants", "nfc-plate-vs-printed-qr-code-for-reviews", "set-up-google-business-profile-and-ask-for-reviews"],
+    sources: [
+      { label: "Google Business Profile Help: review policy", url: "https://support.google.com/business/answer/3474122?hl=es" },
+    ],
+    faq: [
+      {
+        q: "Does a plate guarantee more reviews?",
+        a: "No. The plate makes the step easier for the customer, but it does not guarantee reviews. Whether someone reviews depends on their experience and their choice to do it.",
+      },
+      {
+        q: "Can asking for reviews with a QR code get me in trouble with Google?",
+        a: "Google recommends reminding customers they can leave reviews and lets you create a link and a QR code in your Business Profile. What is prohibited is offering something in return. Violations can lead to restrictions on the profile.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPostEn(slug: string) {
