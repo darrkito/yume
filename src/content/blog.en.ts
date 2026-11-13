@@ -911,28 +911,42 @@ export const blogPostsEn: BlogPost[] = [
   },
   {
     slug: BLOG_SLUG_EN["stickers-personalizados-para-negocios-guadalajara"],
-    title: "Custom Stickers for Your Business in Guadalajara: A Quick Guide",
-    metaTitle: "Custom Stickers for Your Business in Guadalajara",
+    title: "Custom Stickers and Labels in Guadalajara",
+    metaTitle: "Custom Stickers in Guadalajara: How to Order",
     description:
-      "How to use custom stickers if you have a brand, a small business, or a stall at bazaars in Guadalajara: what format to order and what file to send for your logo.",
+      "Custom stickers and labels in Guadalajara for weddings and events: how to choose, what affects the price, and how to order with a digital proof.",
     category: "Guides",
     publishedAt: "2026-08-28",
-    modifiedAt: "2026-10-20",
+    modifiedAt: "2026-11-05",
     intro:
-      "Guadalajara has a strong small-business scene (bakeries, clothing brands, candle makers, jewelry, coffee) selling at bazaars, pop-up markets, or directly through social media. A sticker with your logo is one of the cheapest ways to make your brand look consistent on every order that goes out, with no need for special packaging.",
+      "If you're looking for custom stickers in Guadalajara, the first step is to decide which option suits you: a studio with personal service, an industrial printer, or an online platform. Here we explain the differences, when to choose a label or sticker for a wedding, event, or small brand, what affects the price, and how to order step by step. A label or sticker with your design gives an event or brand a polished, consistent look.",
     sections: [
       {
-        heading: "What they're actually used for",
+        heading: "Custom stickers in Guadalajara: where to order",
         body: [
-          "The most common uses we see: sealing packaging bags or boxes, sticking on the bottom of products (candles, soaps, jars), closing shipping envelopes, or simply handing them out loose as a little extra with the order: they work like a small business card that also decorates.",
-          "If you sell at bazaars or markets in Guadalajara, having stickers with your logo on every paper bag helps people recognize you next time, without spending on expensive custom packaging from day one.",
+          "In Guadalajara, you can order custom stickers from a studio with personal service, an industrial printer, or an online platform. For an event or small brand, a studio is often a better fit because you can review your design with a person before printing. Yume produces to order in Guadalajara and provides service through WhatsApp.",
+          "We make pieces for individual events or small brands, with a digital proof before production. Industrial or mass production isn't our focus, but message us on WhatsApp and we'll discuss your needs.",
         ],
       },
       {
-        heading: "Custom sticker and label prices",
+        heading: "Labels or stickers for weddings and events: which to choose",
         body: [
-          "We sell by piece count, not by sheet, and there are two options: Logo Stickers & Labels, made for your business logo (50 pieces minimum), and Custom Vinyl Stickers, for any design, character or photo (40 pieces minimum).",
-          "On both you choose the cut (die-cut to your design's shape, or kiss-cut) and the finish: matte, glossy or holographic (holographic adds $0.50 per piece). All of our stickers come with high-quality BOPP lamination. All of them are water-resistant.",
+          "The difference is in how you use them, not how you order: for both, you choose a cut and finish and receive a digital proof. Logo labels have a 50-piece minimum and work well with your logo or your own design. Vinyl stickers have a 40-piece minimum and can feature any design, character, or photo.",
+          "Our [custom logo labels](/en/products/custom-logo-stickers) and [vinyl stickers](/en/products/waterproof-vinyl-stickers) can be used for a wedding, christening, baby shower, or birthday. Tell us the occasion and colors on WhatsApp and we'll help you choose the best option. If you're a planner, you can order the exact quantity you need for each event, with a digital proof before production.",
+        ],
+      },
+      {
+        heading: "What custom labels are used for",
+        body: [
+          "Common uses include sealing packaging bags or boxes, placing them on the bottom of products such as candles, soaps, or jars, closing shipping envelopes, or giving them out loose as a little extra with an order. They work like a small business card that also decorates, and can also be a favor for event guests.",
+          "If you sell at bazaars or markets in Guadalajara, having labels with your logo on every paper bag helps people recognize you next time, without spending on expensive custom packaging from the start.",
+        ],
+      },
+      {
+        heading: "What affects the price of custom stickers",
+        body: [
+          "We sell by piece count, not by sheet. The price depends on the option, quantity, and finish you choose: matte and glossy cost the same, while holographic has an extra cost per piece.",
+          "There are two options: Logo Stickers & Labels, designed for your business or event logo (50 pieces minimum), and Custom Vinyl Stickers, for any design, character, or photo (40 pieces minimum). For both, you choose the cut (die-cut to your design's shape, or kiss-cut) and the finish: matte, glossy, or holographic. All our stickers have high-quality BOPP lamination. They are all water-resistant.",
         ],
         table: {
           ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
@@ -941,39 +955,61 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "What quantity to order",
         body: [
-          "Since we sell by the piece, you order the exact quantity you need instead of full sheets: from 50 with your logo, enough to match the order to your business's actual size without buying more than you need.",
-          "All of our stickers are water-resistant, so they hold up well on packaging that gets wet or handled often (bags, bottles, shipments). Let us know the shape or size you prefer when requesting a quote, and we'll send you a digital proof before printing.",
+          "Because we sell by the piece, you can order the exact quantity you need instead of full sheets. The minimum is 50 pieces with your logo and 40 vinyl stickers, so you can match the order to the actual size of your event or small business without buying more than you need.",
+          "Tell us your preferred shape or size when requesting a quote and we'll send you a digital proof before printing. If you're unsure which format to choose, see our guide to [rolls, sheets, or individual pieces](/en/blog/label-printing-roll-sheet-or-by-the-piece).",
         ],
       },
       {
         heading: "Pick up in Guadalajara or get it delivered",
         body: [
-          `We don't have a storefront, but we produce in Guadalajara. If you're in the metro area you can pick up your order at one of ${CASABLANCA_BRANCHES.length} Casa Blanca parcel branches for $${CASABLANCA_PRICE} MXN: ${casablancaBranchNames}. You choose the branch at checkout.`,
-          `If you'd rather have it delivered to your home or business, shipping anywhere in Mexico is $${NATIONAL_SHIPPING_PRICE} MXN. On orders of $${FREE_SHIPPING_THRESHOLD} MXN or more, both shipping and pickup are free.`,
-          `The digital proof normally arrives within 24 hours of payment. Once you approve it, Casa Blanca pickup takes ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days and home delivery ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days.`,
+          `We don't have a storefront, but we produce in Guadalajara. In the metro area, you can pick up your order at one of ${CASABLANCA_BRANCHES.length} Casa Blanca parcel branches for $${CASABLANCA_PRICE} MXN, or have it delivered anywhere in Mexico for $${NATIONAL_SHIPPING_PRICE} MXN. Both options are free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more.`,
+          `The pickup branches are: ${casablancaBranchNames}. You choose the branch at checkout.`,
+          `The digital proof normally arrives within 24 hours of payment. Once you approve it, Casa Blanca pickup takes ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days and home delivery takes ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days.`,
         ],
       },
       {
-        heading: "What file to send for your logo",
+        heading: "What information to send for a quote",
         body: [
-          "Ideally a PNG, PDF, AI, or SVG with a transparent background: that way the sticker looks clean without a white box around it. If you only have your logo as a JPG or a photo, we can also work with that, but we'll let you know if it needs to be vectorized or improved in quality before printing.",
-          "If you don't have a logo designed yet, let us know when you request a quote: we can help you put together something simple based on your brand before moving to production.",
+          "To request a quote, send us your logo or design, the number of pieces, how you'll use them, and your event date on WhatsApp. We'll tell you which option suits you and prepare a digital proof. If you don't have a logo yet, let us know when requesting a quote and we'll discuss your needs.",
+          "If your file needs adjustments, we'll let you know while preparing the digital proof, before production.",
         ],
       },
       {
-        heading: "How the process works",
+        heading: "How to order custom stickers step by step",
         body: [
-          "You order in the online store (choose quantity, cut and finish, and upload your logo) or ask for a quote on WhatsApp first if you have questions. We send you a digital proof with up to 2 rounds of changes, and we print nothing until you approve it: so you never find a typo with every sticker already printed.",
+          "Ordering is simple: choose the option and quantity, send your logo or design, and receive a digital proof before printing. You can buy in the online store or request a quote on WhatsApp first if you have questions. Nothing is produced until you approve the proof.",
+          "Step 1: choose logo labels or vinyl stickers, the cut (die-cut or kiss-cut), and the finish (matte, glossy, or holographic). Step 2: enter the exact quantity, starting at 50 pieces with a logo or 40 in vinyl. Step 3: upload your design or send it on WhatsApp. Step 4: review the digital proof, with up to 2 rounds of adjustments, and approve it. Step 5: pick up at a Casa Blanca branch or receive it at home.",
+          "If you're unsure whether vinyl or paper is right for you, read our comparison of [vinyl and paper stickers](/en/blog/vinyl-vs-paper-stickers-differences).",
         ],
       },
     ],
     faq: [
       {
+        q: "Where can I print custom stickers and labels in Guadalajara?",
+        a: "You can choose a design studio, an industrial printer, or an online platform. We're a studio: we produce to order in Guadalajara, send a digital proof, and provide service through WhatsApp, without a storefront.",
+      },
+      {
+        q: "Do you take industrial or mass-production orders?",
+        a: "That isn't our focus, but message us on WhatsApp and we'll discuss your needs. We mainly make pieces for an event or a small brand.",
+      },
+      {
+        q: "Do you make labels for weddings and events?",
+        a: "Yes, we make stickers and labels for weddings and events. Tell us the occasion and colors on WhatsApp and we'll help you choose between logo labels and vinyl stickers.",
+      },
+      {
+        q: "Can I request a quote on WhatsApp before buying?",
+        a: "Yes. You can request a quote on WhatsApp or buy directly from the online store. In both cases, you receive a digital proof and we print nothing until you approve it.",
+      },
+      {
+        q: "How many rounds of adjustments are included in the digital proof?",
+        a: "The digital proof includes up to 2 rounds of adjustments. We print nothing without your approval.",
+      },
+      {
         q: "Do you have a physical store in Guadalajara?",
         a: `No. We produce to order in Guadalajara and deliver two ways: pickup at one of ${CASABLANCA_BRANCHES.length} Casa Blanca branches in the metro area ($${CASABLANCA_PRICE} MXN) or home delivery ($${NATIONAL_SHIPPING_PRICE} MXN anywhere in Mexico). Both are free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more.`,
       },
       {
-        q: "How much do 100 stickers with my logo cost?",
+        q: "How much do 100 labels with my logo cost?",
         a: `100 pieces cost $${priceOf("stickers-logo-personalizado", 100)} MXN.`,
       },
       {
@@ -985,8 +1021,8 @@ export const blogPostsEn: BlogPost[] = [
         a: `The digital proof arrives within 24 hours of payment. Once you approve it, your order is ready for Casa Blanca pickup in ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days, or reaches your home in ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days.`,
       },
       {
-        q: "Are the stickers water-resistant?",
-        a: "Yes, all of our stickers and labels are water-resistant.",
+        q: "Are the labels water-resistant?",
+        a: "Yes, all of our labels and stickers are water-resistant.",
       },
       {
         q: "Do you ship outside Guadalajara?",
@@ -1337,35 +1373,79 @@ export const blogPostsEn: BlogPost[] = [
   },
   {
     slug: BLOG_SLUG_EN["tatuajes-temporales-personalizados-para-eventos"],
-    title: "Custom Temporary Tattoos for Events and Brands",
-    metaTitle: "Temporary Tattoos with Your Logo for Events",
+    title: "Custom Temporary Tattoos in Guadalajara for Parties and Events",
+    metaTitle: "Custom Temporary Tattoos in Guadalajara",
     description:
-      "Temporary tattoos with your logo for events, brand activations, and celebrations: what they're used for, what we need to quote yours, and how to order custom temporary tattoos in Mexico.",
+      "Custom temporary tattoos in Guadalajara for weddings, quinceañeras, and parties: how to get a quote on WhatsApp and receive a digital proof before production.",
     category: "Guides",
     publishedAt: "2026-08-31",
-    modifiedAt: "2026-10-06",
+    modifiedAt: "2026-11-03",
     intro:
-      "A temporary tattoo with your logo or a design made for the occasion is an effective, affordable way to leave a mark at an event: literally. Temporary tattoos for events work just as well for brand activations as for personal celebrations, and ordering custom temporary tattoos in Mexico is as simple as any other made-to-order product at Yume.",
+      "A temporary tattoo with your logo or a design made for the occasion leaves a mark at an event, literally. If your party is in Guadalajara or Zapopan, custom temporary tattoos work just as well for a wedding, quinceañera, baby shower, posada, or company event. Here we explain which events they're suited to, how to design them, what to consider for sensitive skin, what we need for a quote, and how to plan your order in advance.",
     sections: [
       {
-        heading: "What they're actually used for",
+        heading: "How to order custom temporary tattoos for events",
         body: [
-          "We see them most often in three contexts: brand activations (trade shows, launches, event booths, promotional giveaways), weddings and quinceañeras (with initials, a date, or an icon related to the celebration), and school or sports events (with the team or institution's logo).",
-          "Unlike a sticker, a temporary tattoo is worn by the person: it works like a piece of merchandise people wear and show off for the rest of the event, not something that just stays in a bag.",
+          "Custom temporary tattoos for events are ordered through WhatsApp because they don't have a published fixed price: we quote them based on your design, size, and quantity. We send you a digital proof before production, usually within 24 hours, with up to 2 rounds of adjustments, and we don't print anything without your approval.",
+          "We produce in Guadalajara and ship throughout Mexico, so you can order no matter what state your event is in. We don't issue invoices (CFDI); if your company needs one, let us know when requesting a quote.",
+          "To get started, message us on WhatsApp with the event date, approximate quantity, and your logo or a design reference. With that, we'll prepare a quote and explain the next steps.",
         ],
       },
       {
-        heading: "What we need to quote yours",
+        heading: "Custom temporary tattoos in Guadalajara and Zapopan",
         body: [
-          "Your logo or the design you want turned into a tattoo (ideally a high-resolution file), the approximate size you're looking for, and the quantity you need for your event. If the design includes text (a name, date, or phrase), let us know so we can confirm it'll be legible at the final size.",
-          "As with any custom product, before producing we'll send you a digital proof of the design to approve: so you can confirm exactly how it'll look before the full quantity gets printed.",
+          "We produce your custom temporary tattoos in Guadalajara and ship throughout Mexico, so if your party is in Guadalajara or Zapopan, you work directly with the people who make them. Request a quote on WhatsApp, approve a digital proof, and tell us the delivery date and city.",
+          "This works for people organizing a celebration for a loved one, wedding and event planners ordering a different detail for each client, and companies planning a posada or a client event. In every case, each order is for a specific event, with its own design and direct communication.",
+          "If you'd like to see the finished work, our [work gallery](/en/gallery) has photos of temporary tattoos we've produced.",
         ],
       },
       {
-        heading: "Why go custom instead of generic",
+        heading: "What events are temporary tattoos suited to?",
         body: [
-          "A generic temporary tattoo (a smiley face, a star, a catalog design) doesn't communicate anything about your brand or your event: it looks the same as the one at any other party or fair. Temporary tattoos with your logo, your colors, or the name of the celebration mean whoever wears them stays directly associated with your brand or event for the rest of the day: which is exactly the point of using one.",
-          "We produce in Guadalajara and ship anywhere in Mexico, so you can order custom temporary tattoos no matter what state your event is in. If you have an event or activation coming up and want to quote custom temporary tattoos with your own design, message us directly on WhatsApp with the details.",
+          "Custom temporary tattoos work for weddings and quinceañeras, brand activations, company events, and sports or school events. Guests wear and show them throughout the celebration, so they become a detail that travels around the room and turns into a keepsake.",
+          "We see them most often in three contexts. The first is weddings and quinceañeras, with initials, the date, or an icon related to the celebration. The second is company events, such as posadas, launches, and anniversaries, with the brand's logo. The third is sports or school events, with the team or institution's logo.",
+          "Unlike a label, a temporary tattoo is worn by the person. It's a piece people wear and show for the rest of the event, rather than something that ends up in a bag. For ideas by occasion, see the guide to [temporary tattoos for weddings and parties](/en/blog/temporary-tattoos-for-weddings-events-and-parties).",
+        ],
+      },
+      {
+        heading: "Design ideas for weddings, quinceañeras, and company events",
+        body: [
+          "A good temporary tattoo design is simple and easy to read at a glance: initials, a date, a celebration icon, or your logo. The less detail it has, the easier it is to make out at a small size on skin and to match with the event decor.",
+          "For a wedding, the most practical choice is the couple's initials and the date, or a simple icon that represents their story. If you have the invitation or the decor's color palette, send us a photo and we'll adapt the design so it looks like part of the same event.",
+          "For a quinceañera or birthday, the guest of honor's name with a detail from the theme works well. For a company, a clean logo without long text is the easiest option because it reads better at a small size.",
+          "If you're already putting together the candy table or favors, think of the tattoo as part of the set: the same design can accompany [custom favor boxes](/en/blog/personalized-party-favor-boxes-guadalajara) and [vinyl stickers](/en/products/waterproof-vinyl-stickers). That way the whole event looks coordinated.",
+        ],
+      },
+      {
+        heading: "Are temporary tattoos safe for children and sensitive skin?",
+        body: [
+          "It depends on the inks, which is why it's a good idea to ask about the ingredients before ordering. The US FDA receives reports of allergies to tattoo inks and says a rash may indicate an allergic reaction. If someone has sensitive skin, consult a health professional about redness, bumps, or a rash.",
+          "The FDA also explains that PPD (paraphenylenediamine) in some inks can cause an allergy to other products, such as hair dyes. Its page is about permanent tattoos, so we use it only as a reason to be cautious, not as a description of temporary tattoo inks.",
+          "If children or people with allergies will attend your event, message us on WhatsApp before ordering and we'll discuss it with you. As for duration, one reference says decal-style temporary tattoos last from hours to days, depending on the type, body area, and care. To learn how to remove them, read [how long they last and how to remove them](/en/blog/how-long-do-temporary-tattoos-last-and-how-to-remove-them).",
+        ],
+      },
+      {
+        heading: "What we need to quote your temporary tattoos",
+        body: [
+          "We need three things for a quote: your logo or design, the approximate size you want, and the quantity for your event. If the design includes text, such as a name, date, or phrase, let us know so we can confirm it's legible at the final size before production.",
+          "If you don't have your logo handy, send us what you have and we'll tell you whether it can be used. The approximate size tells us how much detail will fit, and the quantity lets us prepare an accurate quote. If it's your first order, message us and we'll help you work out how many you need.",
+          "Before production, we send you a digital proof of the design for approval. That way you can confirm how it will look before the full quantity is printed. You can start from the [custom temporary tattoos](/en/products/custom-temporary-tattoos) page.",
+        ],
+      },
+      {
+        heading: "Why customize them instead of buying generic tattoos",
+        body: [
+          "A generic temporary tattoo, such as a smiley face or a star from a catalog, looks the same at any party and says nothing about your event. A custom one carries your logo, colors, or the name of the celebration, and the person wearing it stays associated with your event for the rest of the day.",
+          "We produce in Guadalajara and ship anywhere in Mexico, so you can request a quote for custom temporary tattoos no matter what state your event is in.",
+          "Your own design also lets you control the overall result: making sure the colors match your decor, the name is spelled correctly, and the logo looks as it should. With a generic design, you can't control any of that. If you have an event coming up, message us directly on WhatsApp with the details.",
+        ],
+      },
+      {
+        heading: "How to plan your order in advance",
+        body: [
+          "It's best to message us as soon as you have the event date, even if the design isn't settled yet. With the date, approximate quantity, and a reference for your logo or invitation, we can prepare a quote, send you the digital proof, and confirm whether production and shipping can be completed in time.",
+          "If you're a wedding or event planner, the process is the same: one order per event, with each client's design and direct communication on WhatsApp. Send us the event reference and we'll prepare a quote.",
+          "If it's for your company or a family celebration, share the date, delivery city, and how many people you expect. The sooner you message us, the more time there is to adjust the design and approve the proof without rushing.",
         ],
       },
     ],
@@ -1375,17 +1455,48 @@ export const blogPostsEn: BlogPost[] = [
     quoteMessage: "Hi, I'm interested in getting a quote for custom temporary tattoos.",
     faq: [
       {
-        q: "Can I get temporary tattoos with my own logo or event name?",
-        a: "Yes. Temporary tattoos with your logo, your colors, or the name of the celebration keep whoever wears them associated with your brand or event for the rest of the day.",
+        q: "How much do custom temporary tattoos cost?",
+        a: "They don't have a published fixed price. They are quoted on WhatsApp based on your design, size, and the quantity you need for your event.",
       },
       {
-        q: "Do you ship custom temporary tattoos outside Guadalajara?",
-        a: "Yes. We produce in Guadalajara and ship anywhere in Mexico, so you can order no matter what state your event is in.",
+        q: "Do you send a proof before production?",
+        a: "Yes. We send you a digital proof, usually within 24 hours, with up to 2 rounds of adjustments. We don't print anything without your approval.",
       },
       {
-        q: "How do I quote custom temporary tattoos?",
-        a: "Message us directly on WhatsApp with the details of your event or activation and your own design.",
+        q: "What do I need for a quote?",
+        a: "Your logo or design, the approximate size, and the quantity. If the design includes text, let us know so we can confirm it's legible.",
       },
+      {
+        q: "Do you produce in Guadalajara and ship throughout Mexico?",
+        a: "Yes. We produce in Guadalajara and ship throughout Mexico.",
+      },
+      {
+        q: "Do you serve events in Guadalajara and Zapopan?",
+        a: "Yes. We produce in Guadalajara and ship throughout Mexico. Message us on WhatsApp with your event date and delivery city and we'll prepare a quote.",
+      },
+      {
+        q: "Do you issue invoices?",
+        a: "We don't issue invoices (CFDI). If your company needs one, let us know when requesting a quote.",
+      },
+      {
+        q: "Are they suitable for weddings and quinceañeras?",
+        a: "Yes. They can feature initials, a date, or an icon related to the celebration, as well as your logo for company, sports, or school events.",
+      },
+      {
+        q: "Are they safe for children and sensitive skin?",
+        a: "It depends on the inks. The FDA receives reports of allergies to tattoo inks and recommends consulting a health professional if there is redness, bumps, or a rash. If someone at your event has sensitive skin or allergies, message us before ordering.",
+      },
+      {
+        q: "How long do temporary tattoos last?",
+        a: "An external reference says decal-style temporary tattoos last from hours to days, depending on the type, body area, and care.",
+      },
+      {
+        q: "Can I see real examples?",
+        a: "Yes. The site's gallery has photos of temporary tattoos we've produced.",
+      },
+    ],
+    sources: [
+      { label: "FDA: Think before you ink, tattoo safety", url: "https://www.fda.gov/consumers/articulos-para-el-consumidor-en-espanol/piense-antes-de-tatuarse-la-seguridad-de-los-tatuajes" },
     ],
   },
   {
@@ -1707,16 +1818,62 @@ export const blogPostsEn: BlogPost[] = [
   },
   {
     slug: BLOG_SLUG_EN["datos-obligatorios-receta-medica-mexico"],
-    title: "What a Medical Prescription Must Include in Mexico: A General Guide",
+    title: "Required Information on a Medical Prescription in Mexico",
     metaTitle: "What a Medical Prescription Must Include in Mexico",
     description:
-      "What goes on a medical prescription in Mexico: letterhead, patient details and medication, what NOM-004-SSA3-2012 says, and what to preprint on your pad.",
+      "What a medical prescription in Mexico includes, the prescription types under Article 226 of the General Health Law, their validity, and what to preprint on your pad.",
     category: "Guides",
     publishedAt: "2026-09-09",
-    modifiedAt: "2026-10-26",
+    modifiedAt: "2026-11-10",
     intro:
-      "If you're about to order your first custom prescription pad, it's normal to wonder exactly what information it needs to include. This is general information based on common practice at medical offices in Mexico and Mexico's official clinical-record standard NOM-004-SSA3-2012 (listed at the end): it doesn't replace whatever your professional board, state, or institution specifically requires, so it's always worth confirming with them before printing. Here we separate what stays fixed on the letterhead from what you write for each patient, what the standard asks of what you write, and how to check your design before production.",
+      "If you're about to order your first custom prescription pad, it's normal to wonder what information a medical prescription in Mexico must include. This is general information based on the General Health Law, NOM-004-SSA3-2012 on clinical records, and common practice in medical offices (sources are at the end). It doesn't replace what your medical board, state, or institution requires, so confirm with them before sending your pad to print. Here we separate prescription types, what stays fixed on the letterhead, and what you write for each patient.",
     sections: [
+      {
+        heading: "What a medical prescription in Mexico must include",
+        body: [
+          "A medical prescription in Mexico includes the prescriber's details (name, full address, and professional license number), the date, a handwritten signature, and treatment instructions: dose, formulation, route, frequency, and duration. These requirements are attributed to health regulations and are worth confirming with your board or institution.",
+          "The prescriber's details are their name, full address, and professional license number. The treatment details are the dose, formulation, route, frequency, and duration. The date and handwritten signature complete the prescription. On a custom pad, the fixed details go on the letterhead and you write in the rest.",
+        ],
+      },
+      {
+        heading: "Prescription types under Article 226 of the General Health Law",
+        body: [
+          "Article 226 of the General Health Law divides medications into six categories according to the prescription they require: a special prescription, a retained prescription, a prescription that can be filled up to three times, a refillable prescription, and two groups sold without a prescription. That's why prescriptions don't all work the same way or remain valid for the same length of time.",
+          "A medication's category doesn't depend on your pad's design. To find out which category applies to a particular medication, ask your doctor or pharmacy.",
+        ],
+        table: {
+          headers: ["Category", "Prescription required", "How it is filled"],
+          rows: [
+            ["I", "Special prescription or permit", "Ask your doctor or pharmacy"],
+            ["II", "Retained prescription", "Retained; valid for 30 days from the date written"],
+            ["III", "Prescription stamped each time it is filled", "Up to 3 times; retained on the third fill"],
+            ["IV", "Prescription", "Refilled as many times as the doctor specifies"],
+            ["V", "No prescription", "Only at pharmacies"],
+            ["VI", "No prescription", "No prescription required"],
+          ],
+        },
+      },
+      {
+        heading: "How long a prescription lasts: validity and fills",
+        body: [
+          "The frequently mentioned 30-day validity period applies to retained prescriptions in category II of Article 226, not to all prescriptions. It runs from the date the doctor writes the prescription. For other prescription types and particular cases, ask your doctor or pharmacy.",
+          "A category II prescription may include up to two presentations of the same product. A category III prescription can be filled up to 3 times, is stamped each time, and is retained by the pharmacy on the third fill.",
+        ],
+      },
+      {
+        heading: "Generic name or brand: how medication is specified",
+        body: [
+          "Article 226 of the General Health Law says that doctors prescribe using the generic name. They may add a preferred brand, provided they inform the patient about therapeutic options. If you have questions about the prescribed medication, ask your doctor or pharmacy.",
+          "This applies to what the prescriber writes on each prescription; it doesn't change what is preprinted on the letterhead.",
+        ],
+      },
+      {
+        heading: "Narcotic prescriptions: a separate case",
+        body: [
+          "Narcotics are not prescribed on an ordinary prescription. Special prescription pads are used, with a barcode assigned by the Ministry of Health or state health authorities; authorized professionals write them for treatments lasting no more than 30 days. Confirm the procedure with the health authority.",
+          "Yume's custom prescription pad is for ordinary prescriptions. If you need a serial number or barcode for a procedure or institution, let us know when requesting a quote.",
+        ],
+      },
       {
         heading: "What NOM-004-SSA3-2012 says about what you write",
         body: [
@@ -1761,7 +1918,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "What the Yume pad includes and how long it takes",
         body: [
-          `The Custom Medical Prescription Pad has 100 sheets in Half Letter size (14 × 21.5 cm) on 90 gr Bond paper, white, with your letterhead preprinted. It costs $${recetarioPrice("sin-diseno")} MXN if you already have your design and $${recetarioPrice("con-diseno")} MXN if we design it with you, and you approve a digital proof before printing.`,
+          `The [Custom Medical Prescription Pad](/en/products/medical-prescription-pads) has 100 sheets in Half Letter size (14 × 21.5 cm) on 90 gr Bond paper, white, with your letterhead preprinted. It costs $${recetarioPrice("sin-diseno")} MXN if you already have your design and $${recetarioPrice("con-diseno")} MXN if we design it with you, and you approve a digital proof before printing.`,
           `The digital proof normally arrives within 24 hours of payment. Once you approve it, Casa Blanca pickup takes ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days and home delivery ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days, anywhere in Mexico.`,
           "If you don't have a logo or letterhead yet, the option with design builds one from scratch with your professional details. If you already have it in an editable format, the option without design is enough.",
         ],
@@ -1770,8 +1927,14 @@ export const blogPostsEn: BlogPost[] = [
         heading: "What to check before sending it to print",
         body: [
           "Before approving, check four things: that your name and license number match your document, that the phone and address are current, that your board or institution doesn't ask for a different format, and that everything reads clearly on the digital proof. A preprinted mistake is repeated on all 100 sheets.",
-          "If your prescriptions need a folio number or barcode for a specific process or institution, say so when you request the quote: it's information that has to be confirmed before printing, not something you can fix afterwards.",
           "Ask someone else to read the digital proof with you, especially the license and phone numbers: it's easy to miss a swapped digit in your own details.",
+        ],
+      },
+      {
+        heading: "What to check on a prescription before going to the pharmacy",
+        body: [
+          "Before leaving the office, check that the prescription includes the prescriber's details, the date, signature, and medication with dose, route, frequency, and duration, all written legibly. If anything is missing or unclear, ask your doctor to clarify it before going to the pharmacy.",
+          "If you're about to order your pad, compare [printed and digital prescription pads](/en/blog/printed-vs-digital-prescription-pads) and [pads with and without design](/en/blog/prescription-pad-with-design-vs-without-design). If you work in Guadalajara, see [custom medical prescription pads in Guadalajara](/en/blog/custom-medical-prescription-pads-guadalajara).",
         ],
       },
     ],
@@ -1797,6 +1960,18 @@ export const blogPostsEn: BlogPost[] = [
         a: "The fixed letterhead details are preprinted: name, specialty, license number and practice details. You handwrite what changes per patient: their name, the date, the medication with dosage and duration, and your signature.",
       },
       {
+        q: "Is every medical prescription valid for 30 days?",
+        a: "No. Under Article 226 of the General Health Law, the 30 days from the date written apply to retained category II prescriptions. For other cases, ask your doctor or pharmacy.",
+      },
+      {
+        q: "How many times can a prescription be filled?",
+        a: "It depends on the medication's category. A category III prescription can be filled up to 3 times, is stamped each time, and is retained on the third fill; a category IV prescription can be refilled as many times as the doctor specifies.",
+      },
+      {
+        q: "Must the prescription use the medication's generic name?",
+        a: "Yes. Article 226 of the General Health Law says prescriptions use the generic name, and the doctor may specify a preferred brand while informing the patient about therapeutic options.",
+      },
+      {
         q: "What size is the Yume prescription pad and how many sheets does it have?",
         a: "100 sheets in Half Letter size (14 × 21.5 cm), on 90 gr Bond paper, white.",
       },
@@ -1817,6 +1992,18 @@ export const blogPostsEn: BlogPost[] = [
       {
         label: "NOM-004-SSA3-2012, Diario Oficial de la Federación (Mexico)",
         url: "https://dof.gob.mx/nota_detalle_popup.php?codigo=5272787",
+      },
+      {
+        label: "General Health Law, Article 226",
+        url: "https://mley.mx/LGS/articulo/226/",
+      },
+      {
+        label: "General Health Law, Article 241",
+        url: "https://mley.mx/LGS/articulo/241/",
+      },
+      {
+        label: "Academic article on medical prescriptions, SciELO Mexico",
+        url: "https://www.scielo.org.mx/pdf/prh/v38n2/2524-1710-prh-38-2-60.pdf",
       },
     ],
   },
@@ -2083,7 +2270,7 @@ export const blogPostsEn: BlogPost[] = [
             ["Save the date", "Send 10 to 12 months before (wedding guide)", "Names, full date and, if applicable, the city. It does not need the venue, map, dress code or RSVP."],
             ["Invitation", "Send about 3 months before (wedding guide); order it before then", "The details omitted from the save the date, such as venue, map, dress code and RSVP"],
             ["Menu", "After confirming the catering; Spanish-language guides rarely give a printing date", "Quantity, exact text in order, event date and style"],
-            ["Stickers and details", "No reference timeline in the sources; request a quote on WhatsApp", "Quantity and the same design style as the rest of the stationery"],
+            ["Stickers and details", "No reference timeline in the guides; request a quote on WhatsApp", "Quantity and the same design style as the rest of the stationery"],
           ],
         },
       },
@@ -2199,9 +2386,6 @@ export const blogPostsEn: BlogPost[] = [
       BLOG_SLUG_EN["tatuajes-temporales-para-boda-eventos-y-fiestas"],
     ],
     quoteMessage: "Hi, I'm interested in getting a quote for custom wedding menus.",
-    sources: [
-      { label: "Wedding guide: announcing your wedding with a save the date", url: "https://www.bodas.net/articulos/anuncia-tu-boda-con-un-save-the-date--c983" },
-    ],
   },
   {
     slug: BLOG_SLUG_EN["tarjetas-de-presentacion-consultorio"],
@@ -2777,39 +2961,97 @@ export const blogPostsEn: BlogPost[] = [
   {
     slug: BLOG_SLUG_EN["stickers-para-empaques-de-negocio"],
     title: "Guide to Stickers for Business Packaging: How to Use Them and What to Order",
-    metaTitle: "Stickers for Business Packaging",
+    metaTitle: "Stickers for Business Packaging: What to Order",
     description:
-      "How to use stickers for product packaging: sealing bags and boxes, labeling products, and what to order if you need custom labels for your business or stickers with your logo in Guadalajara.",
+      "How to use stickers for business and event packaging: sealing boxes and bags, what to order, what file to send, and how to request your digital proof.",
     category: "Guides",
     publishedAt: "2026-09-23",
     intro:
-      "Packaging is one of the cheapest touchpoints to upgrade in a business: you don't need to change your box or bag, just seal or decorate it with a sticker carrying your logo. This guide covers the most common uses for packaging stickers and what to order depending on the type of packaging you use.",
+      "Packaging is one of the easiest touchpoints to improve: you don't need to change your box or bag, just seal or decorate it with a sticker bearing your logo, your name, or the names of the people being celebrated. This guide covers the most common uses for business and event packaging stickers, what to order, what file to send, and how to get a quote.",
     sections: [
       {
-        heading: "The most common uses for packaging stickers",
+        heading: "What business packaging stickers are used for",
         body: [
-          "The ones we see most: sealing the flap of a paper or kraft bag, closing a cardboard box, labeling the bottom or lid of a jar, or sticking directly onto the product (candles, soaps, cosmetics). In every case, the sticker does two jobs at once: it closes the packaging and marks it as yours.",
-          "If your packaging travels or can get wet (shipments, refrigerated products, drinks), it's worth using a water-resistant sticker instead of a regular paper label, which peels or runs with moisture. All of our stickers come with high-quality BOPP lamination, and you choose the finish.",
+          "Business packaging stickers can seal a bag or box, identify the product, and add a branded detail without changing the packaging. They go on the flap, lid, or front and work just as well for a shop, a wedding gift, or a welcome kit.",
+          "The uses we see most often are sealing the flap of a paper or kraft bag, closing a cardboard box, labeling a jar lid, or sticking one directly onto a product such as a candle, soap, or cosmetic. In each case, the sticker does two jobs at once: it seals the packaging and identifies it as yours.",
+          "Our logo stickers and labels are water-resistant, according to the product page. If your packaging will travel or be handled a lot, confirm over WhatsApp which material best suits your needs before deciding.",
         ],
       },
       {
-        heading: "Custom labels for your business: what format to order",
+        heading: "Where to place a sticker on each type of packaging",
         body: [
-          "For packaging, the most common choice is a round or square sticker in the small (up to 4 cm) or medium (5 to 6 cm) size, with the logo centered, sized to look good on a bag flap or the center of a box. If your packaging is a bottle or jar, an oval or rectangular format usually fits the curve better.",
-          "At Yume we sell custom labels by piece count, not by sheet: you can order the exact quantity your business needs at a given moment, without buying more just to fill a full sheet.",
+          "Each package calls for a different placement: on a bag, the sticker goes on the flap to seal it; on a gift box, on the lid or closure; and on a card or guest favor, in a corner or in the center. Choose the spot before deciding on the size.",
+          "Thinking about placement first helps you avoid ordering a sticker that covers the box design or is too small for the flap. If you have the packaging on hand, measure it and send us the measurement along with your logo.",
+        ],
+        table: {
+          headers: ["Packaging", "Where the sticker goes", "What it does"],
+          rows: [
+            ["Paper or kraft bag", "On the flap", "Seals the bag and displays your brand"],
+            ["Cardboard or gift box", "On the lid or closure", "Closes and identifies the box"],
+            ["Jar or product", "On the lid or directly on the product", "Labels the product"],
+            ["Card or guest favor", "In a corner or in the center", "Personalizes the favor"],
+          ],
+        },
+      },
+      {
+        heading: "Stickers for event packaging: weddings, gifts, and kits",
+        body: [
+          "At an event, a sticker turns simple packaging into a thoughtful detail: it seals a favor bag, closes a gift box, or identifies a welcome kit with the names of the people being celebrated or the company logo. Stickers are ordered by piece, so you can match the quantity to your guest count.",
+          "They work for weddings, baptisms, quinceañeras, baby showers, posadas, and company events. If you organize events for other people, you can order a different design for each event and approve it in the digital proof before production.",
+          "If you're also considering a detail for the candy table, see our [personalized party favor boxes in Guadalajara](/en/blog/personalized-party-favor-boxes-guadalajara): you can repeat the sticker's colors and name so everything looks coordinated.",
         ],
       },
       {
-        heading: "Stickers with your logo in Guadalajara: how to get a quote",
+        heading: "Custom packaging labels: what to order",
         body: [
-          "If you have your logo as a PNG, PDF, AI, or SVG with a transparent background, you can send it directly over WhatsApp along with the quantity and size you're after, and we'll prepare a digital proof before printing. If you don't have a finished logo yet, we can also help you put together a simple one to start with.",
-          "We produce in Guadalajara and ship anywhere in Mexico, so the same process applies whether your business sells at local markets or ships to other states.",
+          "When ordering, decide on four things: the cut, finish, quantity, and size. At Yume you can choose die-cut or kiss-cut, with a matte, glossy, or holographic finish. All our stickers have high-quality BOPP lamination. They are sold by piece, not by sheet, and you receive a digital proof to approve before printing.",
+          "For your business or event logo, see [stickers with your logo](/en/products/custom-logo-stickers), available from 50 pieces. If you want to turn a character, pet, or photo into a sticker, [custom vinyl stickers](/en/products/waterproof-vinyl-stickers) are available from 40 pieces. The holographic finish has an extra cost per piece.",
+          "Because you order the exact quantity, you don't buy extras just to fill a sheet. For vinyl stickers, the digital proof normally arrives within 24 hours of payment and includes up to 2 rounds of adjustments. If you're unsure about materials, read the comparison of [vinyl versus paper](/en/blog/vinyl-vs-paper-stickers-differences).",
+        ],
+      },
+      {
+        heading: "What file to send and what to check before printing",
+        body: [
+          "Send your logo in the best format you have and check that nothing important is too close to the edge. As a general reference, some print shops ask for vector artwork or images of at least 300 PPI, and each shop has its own template. Confirm the measurements with the person printing your order.",
+          "At Yume, you can send your logo as a PNG, PDF, AI, or SVG with a transparent background directly over WhatsApp. If you don't have a finished logo yet, we can also help you create a simple one to get started.",
+          "Bleed: this is the design margin that extends beyond the cut line. As general references, some providers use 1/16 inch and others recommend 1/8 inch (3 mm). This is not a universal standard: it varies by provider.",
+          "Margins and text: as a general reference, logos, QR codes, and key text should be at least 1/8 inch (3 mm) inside the cut line. Another reference suggests body text should exceed 6 pt and the brand name or important information should exceed 8 pt. It's helpful to view the file at 100%, its actual print size.",
+        ],
+      },
+      {
+        heading: "Timing and quotes over WhatsApp",
+        body: [
+          "For a quote, message us over WhatsApp with your logo and the quantity and size you want. We'll prepare a digital proof before printing, and nothing is produced without your approval. We produce in Guadalajara and ship throughout Mexico, so the process is the same for a local event or one in another state.",
+          "If your packaging is for a specific date, such as a wedding or posada, order ahead and check the guide to [sticker order timelines](/en/blog/how-long-do-custom-stickers-take-to-arrive).",
+          "If you're still deciding whether your brand needs a few or many stickers, the guide to [stickers for small or large brands](/en/blog/stickers-for-small-vs-large-brands) can help you consider the quantity.",
         ],
       },
     ],
     faq: [
-      { q: "How do I get a quote for stickers with my logo?", a: "Send your logo as a PNG, PDF, AI, or SVG with a transparent background over WhatsApp, along with the quantity and size you want. We prepare a digital proof before printing." },
-      { q: "Do you ship stickers outside Guadalajara?", a: "We produce in Guadalajara and ship anywhere in Mexico." },
+      {
+        q: "Are stickers sold by the sheet?",
+        a: "No. They are sold by piece count, so you order the exact quantity you need.",
+      },
+      {
+        q: "What is the minimum order?",
+        a: "Stickers and labels with your logo start at 50 pieces. Custom vinyl stickers, for any design, character, or photo, start at 40 pieces.",
+      },
+      {
+        q: "Which cuts and finishes can I choose?",
+        a: "Die-cut or kiss-cut, with a matte, glossy, or holographic finish. Holographic has an extra cost per piece.",
+      },
+      {
+        q: "What file format can I send?",
+        a: "You can send your logo as a PNG, PDF, AI, or SVG with a transparent background over WhatsApp. As a general reference, some providers ask for vector artwork or images of at least 300 PPI.",
+      },
+      {
+        q: "How much bleed does the design need?",
+        a: "It depends on the provider: as general references, some use 1/16 inch and others recommend 1/8 inch (3 mm). These are not universal standards, so confirm with the printer's template.",
+      },
+      {
+        q: "Will I see the design before printing?",
+        a: "Yes. We send you a digital proof and print nothing without your approval. For vinyl stickers, it normally arrives within 24 hours of payment, with up to 2 rounds of adjustments.",
+      },
     ],
     relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
   },
@@ -3145,55 +3387,134 @@ export const blogPostsEn: BlogPost[] = [
   {
     slug: BLOG_SLUG_EN["donde-imprimir-stickers-personalizados-mexico"],
     title: "Where to Print Custom Stickers in Mexico: What You Need and How to Order",
-    metaTitle: "Where to Print Custom Stickers in Mexico: 2026 Prices",
-    description:
-      "What you need ready to get your custom stickers printed in Mexico (file, size, quantity) and how ordering online works, without needing to visit a print shop in person.",
+    metaTitle: "Where to Print Custom Stickers: 2026 Prices",
+    description: "Where to print custom stickers in Mexico and how much they cost: from $3 per piece depending on size, what file to send, and shipping nationwide.",
     category: "Guides",
     publishedAt: "2026-09-29",
-    modifiedAt: "2026-10-18",
+    modifiedAt: "2026-11-12",
     intro:
-      "If you're looking for where to print custom stickers in Mexico, most options fall into two groups: printing them yourself at home (with vinyl and a special printer) or ordering them from a shop that already has die-cutting equipment. All of our stickers come with high-quality BOPP lamination, and you choose the finish. This guide covers the second option: what you need ready and how ordering your stickers online works, without buying equipment or visiting a shop in person.",
+      "If you're looking for where to print custom stickers in Mexico, most options fall into two groups: printing them yourself at home (with vinyl and a special printer) or ordering them from a print shop that already has die-cutting equipment. This guide covers the second option: what to have ready, what to send, and how to order your stickers online, whether for your brand, a wedding, or any event, without buying equipment or visiting a print shop in person.",
     sections: [
       {
         heading: "How much does it cost to print custom stickers in Mexico?",
         body: [
-          "At Yume, printing custom stickers starts at $140 MXN: 40 small (up to 4 cm) waterproof vinyl stickers at $3.50 each, or 50 small custom logo stickers at $3 each. Medium (5 to 6 cm) adds $1.50 per piece and large (7 to 8 cm) adds $3. Shipping anywhere in Mexico is free from $750 MXN, and so is pickup in Guadalajara.",
-          "Price by quantity (minimum order is 50 pieces for logo stickers and 40 for vinyl):",
+          "Vinyl stickers start at $3.50 each (minimum 40) and labels with your logo start at $3 each (minimum 50), depending on size: small up to 4 cm, medium from 5 to 6 cm, and large from 7 to 8 cm. Shipping throughout Mexico is free on orders of $750 MXN or more.",
+          "They are sold by piece, not by sheet, so you can order the exact quantity you need. Both cuts and the matte and glossy finishes cost the same; holographic adds $0.50 per piece. For example, 100 small vinyl stickers cost $350 and 100 medium ones cost $500.",
+          "Price by quantity (minimum order is 50 pieces for logo labels and 40 for vinyl):",
         ],
         table: {
           ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
         },
       },
       {
-        heading: "Printing it yourself vs. ordering it done",
+        heading: "Printing stickers at home vs. ordering them printed",
         body: [
-          "Printing at home makes sense if you already have, or want to invest in, a special printer and vinyl by the roll, and your volume is low. For most businesses and individuals, it's cheaper and simpler to order from a shop that already has die-cutting equipment: no need to buy or learn a machine for an order of 50 or 100 pieces.",
-          "The difference shows most in the finish: a die cut made with professional equipment follows the exact outline of the design, something hard to replicate with scissors or a home cutter.",
+          "If you want die-cut, water-resistant stickers in the quantity you need, the most practical option is to order them printed. Ordering them saves you from buying cutting equipment and cutting each piece yourself. Printing at home only makes sense for a few pieces if you already have a printer and tools.",
+          "Many searches start with phrases like ‘stickers to print’ or ‘custom stickers.’ Anyone printing at home has to cut each piece individually.",
+          "For an order of 40, 50, or 100 pieces, ordering them is usually simplest: there's no need to buy a machine or learn how to use it. See the product at [custom vinyl stickers](/en/products/waterproof-vinyl-stickers).",
+        ],
+      },
+      {
+        heading: "How to choose where to print custom stickers",
+        body: [
+          "Compare five things before choosing: whether they send a digital proof before printing, the cuts they offer, the minimum number of pieces, whether they charge per piece or per sheet, and the shipping cost. This helps you compare similar offers without focusing only on the listed price.",
+          "At Yume, we send you a digital proof and nothing is produced until you approve it. You choose die cut or kiss cut, the minimum is 40 vinyl pieces and 50 logo labels, they are sold per piece, and shipping is free from $750 MXN.",
+          "To see how this process compares with other online options, read [Yume vs. online print shops](/en/blog/yume-vs-online-sticker-print-shops).",
+        ],
+      },
+      {
+        heading: "Vinyl stickers or logo labels: which should you order?",
+        body: [
+          "Stickers and Labels with Your Logo are designed for your business logo and start at 50 pieces. Custom Vinyl Stickers work for any design, character, pet, or photo and start at 40 pieces. They use the same type of vinyl, with different minimums and prices per piece.",
+          "For your own design, a character, or a photo of your pet, see [custom vinyl stickers](/en/products/waterproof-vinyl-stickers). If you want to seal or identify items with your brand, see [labels with your logo](/en/products/custom-logo-stickers).",
         ],
       },
       {
         heading: "What to have ready before requesting a quote",
         body: [
-          "Your design, logo, character, or photo (ideally PNG, PDF, AI, or SVG with a transparent background; a JPG or photo also works, though it may need cleanup before printing), the approximate size you want, and the quantity of pieces.",
-          "Your design doesn't need to be 100% finished: a reference or sketch is enough to start a quote and adjust before the digital proof.",
+          "You need three things: your design, logo, or photo; the approximate size you want; and the number of pieces. It doesn't have to be finished: a reference or sketch is enough for us to start a quote and make adjustments before the digital proof. If it's for an event, include the date.",
+          "The size doesn't have to be exact: if you're unsure, tell us where you'll stick it and we'll adjust it in the digital proof. For quantity, you can specify the exact number you need from the minimum upward.",
+          "If your design has a special shape or a key color, such as one from an event palette, let us know from the start and we'll review it with you before production. With your event date, we can review the timing with you before you approve the digital proof.",
         ],
       },
       {
-        heading: "How ordering online works",
+        heading: "Cut and finish: how to choose your custom stickers",
         body: [
-          "Send your design and quantity via WhatsApp or from the online shop, we confirm price and send you a digital proof of the sticker before printing: you can request size or color adjustments at that stage. Once you approve it, it goes to production and ships anywhere in Mexico.",
-          "The whole process happens remotely, so it works the same whether you're in Guadalajara (where we produce) or any other city in the country.",
+          "When ordering, you choose the cut (die cut or kiss cut) and finish (matte, glossy, or holographic). All our stickers have high-quality BOPP lamination. Both cuts and the matte and glossy finishes cost the same; holographic adds $0.50 per piece.",
+          "Die cutting cuts the material and backing along the design's outline, leaving each sticker separate, ideal for sealing a small bag or sticking on a glass. Kiss cutting cuts only the material and leaves the backing intact, useful if you plan to hand them out on a sheet or apply them one by one. Find more detail in [die cut vs. kiss cut](/en/blog/die-cut-vs-kiss-cut-stickers).",
+          "The vinyl is premium and resists water, sun, and scratches. Labels with your logo are also water-resistant. If you're choosing between vinyl and paper, read about the [differences between vinyl and paper](/en/blog/vinyl-vs-paper-stickers-differences).",
+        ],
+      },
+      {
+        heading: "How ordering custom stickers online works",
+        body: [
+          "Send your design and quantity by WhatsApp or through the online store, and we'll confirm the price and send you a digital proof before printing. You can request size or color adjustments; once you approve it, your order is produced and shipped anywhere in Mexico.",
+          "The digital proof normally arrives within 24 hours of payment and includes up to 2 rounds of adjustments. To find out when your order will arrive, see [how long an order takes](/en/blog/how-long-do-custom-stickers-take-to-arrive).",
+        ],
+      },
+      {
+        heading: "Custom stickers for weddings, birthdays, and events",
+        body: [
+          "Yes, you can order custom stickers for an event, with the names of the people being celebrated, a design for the occasion, or your own drawing. Orders start at 40 pieces, so you can match the quantity to your guest count. Tell us your event date via WhatsApp and we'll review the timing with you.",
+          "For example, use a design with names and the date on wedding or christening favors, or the guest of honor's favorite character at a birthday party. You can use them to seal small bags or gift boxes, or accompany a table favor. If you prefer a photo, that's possible too: we'll turn it into a die-cut sticker. Find more ideas in [stickers for weddings and events](/en/blog/stickers-for-weddings-events-and-parties) and [pet stickers](/en/blog/custom-pet-stickers).",
+          "If you're organizing someone else's event as a wedding or event planner, send us the design your client approved, the quantity, and the date via WhatsApp. We work with a digital proof and direct communication, so each event gets its own design without surprises.",
+        ],
+      },
+      {
+        heading: "How far ahead to order your custom stickers",
+        body: [
+          "Order with time to spare: each order is made to order, and the clock starts when you approve the digital proof, not when you pay. Tell us your event date via WhatsApp and we'll review production and shipping times with you before you approve it.",
+          "A useful order of steps: first decide on the design and quantity, then send your design, take your time reviewing the digital proof (which includes up to 2 rounds of adjustments), and only then approve it.",
+        ],
+      },
+      {
+        heading: "Where to print custom stickers in Guadalajara and the rest of Mexico",
+        body: [
+          "We produce in Guadalajara, Jalisco, and ship throughout Mexico; if you're in the metropolitan area, you can pick up at one of 11 Casa Blanca branches. The whole process is remote, so ordering from another city is just as easy.",
+          "Home delivery costs $199 MXN and pickup at a Casa Blanca branch costs $20 MXN; both are free on orders of $750 MXN or more.",
         ],
       },
     ],
     faq: [
       {
-        q: "Can I order custom stickers online from any city in Mexico?",
-        a: "Yes. The whole process happens remotely, so it works the same whether you're in Guadalajara, where we produce, or any other city in the country.",
+        q: "What is the minimum number of stickers I can order?",
+        a: "The minimum is 40 vinyl stickers and 50 labels with your logo. They are sold by piece, not by sheet, and you can specify the exact quantity you need.",
       },
       {
-        q: "Do I see the sticker before it is printed?",
-        a: "Yes. We confirm the price and send you a digital proof before printing, and you can request size or color adjustments at that stage.",
+        q: "How much do 100 custom stickers cost?",
+        a: "Vinyl stickers start at $3.50 each and labels with your logo at $3 each, depending on size (small up to 4 cm, medium 5 to 6 cm, large 7 to 8 cm). For example, 100 small vinyl stickers cost $350 and 100 medium ones cost $500.",
+      },
+      {
+        q: "What should I send to order my stickers?",
+        a: "Your design, logo, photo, or a reference, the approximate size, and the quantity. It doesn't have to be finished: a reference or sketch is enough to start a quote and make adjustments in the digital proof.",
+      },
+      {
+        q: "What is the difference between die cut and kiss cut?",
+        a: "Die cutting cuts the material and backing along the outline, leaving each sticker separate. Kiss cutting cuts only the material and leaves the backing. At Yume, you choose either when ordering, and the price is the same.",
+      },
+      {
+        q: "Can I see how they look before printing?",
+        a: "Yes. We send you a digital proof, normally within 24 hours of payment, with up to 2 rounds of adjustments. We print nothing without your approval.",
+      },
+      {
+        q: "Do the stickers resist water and sun?",
+        a: "Vinyl stickers are made from premium vinyl resistant to water, sun, and scratches. Labels with your logo are water-resistant.",
+      },
+      {
+        q: "Can I choose die cut or kiss cut and the finish?",
+        a: "Yes, you choose the cut (die cut or kiss cut) and finish (matte, glossy, or holographic) when ordering. Holographic adds $0.50 per piece; the others do not.",
+      },
+      {
+        q: "Can I make stickers with a photo of my pet or a character?",
+        a: "Yes. Send us the photo or reference and we'll prepare a digital proof before printing. You can also order them with characters or your own designs.",
+      },
+      {
+        q: "Can I order stickers for a wedding or event?",
+        a: "Yes. You can order them with the names of the people being celebrated, a date, or a design for the occasion, starting at 40 vinyl pieces. Tell us your event date via WhatsApp and we'll review the timing with you.",
+      },
+      {
+        q: "How much is shipping, and is pickup available in Guadalajara?",
+        a: "Home delivery throughout Mexico costs $199 MXN and is free from $750 MXN. If you're in Guadalajara or its metropolitan area, you can pick up at one of 11 Casa Blanca branches for $20 MXN, also free from $750 MXN.",
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
@@ -3202,18 +3523,19 @@ export const blogPostsEn: BlogPost[] = [
   {
     slug: BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"],
     title: "How Long Do Custom Stickers Take to Arrive? Real Turnaround Times",
-    metaTitle: "How Long Do Custom Stickers Take to Arrive?",
+    metaTitle: "How Long Does a Custom Sticker Order Take?",
     description:
-      "Real turnaround times for a custom sticker order at Yume: digital proof, production, shipping across Mexico or pickup in Guadalajara, and how to order ahead for a deadline.",
+      "How long a custom sticker order takes at Yume: digital proof, production, and shipping across Mexico or pickup in Guadalajara.",
     category: "Guides",
     publishedAt: "2026-10-06",
     intro:
-      "If you need your stickers by a certain date (a launch, a trade show, a party), the first thing to know is how many days each stage takes. These are the real turnaround times of a Yume order, from payment to having it in your hands.",
+      "If you need your stickers by a certain date, whether for a wedding, birthday, baby shower, company event, or launch, the first thing to know is how many days each stage takes. These are the real turnaround times for a Yume order, from payment to having it in your hands, and how to count backwards from your date so you can order on time.",
     sections: [
       {
         heading: "How long does a custom sticker order take to arrive?",
         body: [
           `From the moment you approve the digital proof, an order takes ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days to reach your door anywhere in Mexico, or ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days if you pick it up at a Casa Blanca branch in Guadalajara. The digital proof normally arrives within 24 hours of payment.`,
+          "The full timeline has four parts: the digital proof, your approval, production, and shipping or pickup. The table shows how long each stage takes; the total starts when you approve the proof, not when you pay.",
         ],
         table: {
           headers: ["Stage", "Time"],
@@ -3227,23 +3549,44 @@ export const blogPostsEn: BlogPost[] = [
         },
       },
       {
-        heading: "What makes it faster or slower",
+        heading: "The stages of your order, one by one",
         body: [
-          "The production clock starts when you approve the digital proof, not when you pay: the sooner you review and approve it, the sooner your order goes into production. Having your logo or design ready from the start (PNG, PDF, AI or SVG) avoids back-and-forth.",
-          "Days are business days, so weekends do not count; public holidays are not counted in the estimate either, which is why it is approximate.",
+          "A sticker order goes through the digital proof, your approval, production, and delivery, either to your door or at a branch. The proof normally arrives within 24 hours of payment and includes up to 2 rounds of changes. Nothing is printed without your approval, and the production clock starts when you approve it.",
+          "Digital proof: this is an image of how your sticker will look. If you want a change, you can request up to 2 rounds of changes.",
+          `Production: once you approve the proof, your order goes into production, which takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days.`,
+          `Delivery: home delivery anywhere in Mexico adds ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} business days. If you pick up at a Casa Blanca branch in Guadalajara, it adds ${PICKUP_EXTRA_DAYS} business day.`,
         ],
       },
       {
-        heading: "How to order ahead when you have a deadline",
+        heading: "What makes it faster or slower",
         body: [
-          "Count backwards from your date: add the production and shipping (or pickup) days and leave a margin in case you ask for a change on the proof. For high-demand dates such as Christmas or graduations, order at least two weeks ahead.",
-          "If your date is tight, message us on WhatsApp before paying and we will check together whether it fits.",
+          "The biggest factor is how quickly you approve the digital proof, because the production clock starts then, not when you pay. The days are business days: weekends do not count, and public holidays are not included in the estimate either, so it is approximate.",
+          "If you request changes to the proof, your approval may come later, delaying the start of production. Having your logo or design ready from the start (in PNG, PDF, AI, or SVG) avoids back-and-forth.",
+          "Payment matters too: the proof normally arrives within 24 hours after you pay. Choosing home delivery or pickup in Guadalajara changes the total, as shown in the table.",
+        ],
+      },
+      {
+        heading: "How to plan backwards from your event date",
+        body: [
+          `Start with your event date and count backwards: first shipping or pickup, then the ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days for production and, before all that, the days you take to approve the digital proof. Add them up to find the day you need to pay, and leave a margin in case you request a change.`,
+          `For home delivery, the estimate is ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days from approval; for pickup, it is ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS}. Add the days you take to review and approve the proof to that figure.`,
+          "This calculation works for a wedding, birthday, baby shower, or company event. If you organize several events, make the same calculation for each one using its own date. For high-demand dates such as Christmas or graduations, it is best to order at least two weeks ahead.",
+          "Once you know your date, choose between [custom vinyl stickers](/en/products/waterproof-vinyl-stickers), for any design, character, or photo, and [stickers with your logo](/en/products/custom-logo-stickers), for your brand or event. All our stickers have high-quality BOPP lamination, and you choose the finish.",
+        ],
+      },
+      {
+        heading: "What to tell us if your order is for an event",
+        body: [
+          "If your order is for a wedding, birthday, baby shower, or company event, tell us the date in your first message. With that information, we can check the timeline with you before you pay. It is the safest way to avoid surprises when the event cannot be moved.",
+          "If your deadline is very tight, message us on WhatsApp before paying and we will check together whether there is enough time. Also tell us whether you prefer home delivery or pickup in Guadalajara, because it changes the calculation.",
+          `If you are still comparing options, see [where to print stickers in Mexico](/en/blog/${BLOG_SLUG_EN["donde-imprimir-stickers-personalizados-mexico"]}) and [Yume compared with other print shops](/en/blog/${BLOG_SLUG_EN["yume-vs-imprentas-online-stickers"]}).`,
         ],
       },
       {
         heading: "What if I am in Guadalajara?",
         body: [
           "You can pick your order up at one of the Casa Blanca branches in the metro area: it adds just 1 business day to production. Pickup costs $20 MXN and is free on orders of $750 MXN or more, just like home delivery.",
+          "There are 11 Casa Blanca branches in the Guadalajara metro area, so you can choose the one closest to you.",
         ],
       },
     ],
@@ -3251,8 +3594,32 @@ export const blogPostsEn: BlogPost[] = [
     relatedBlogSlugs: [BLOG_SLUG_EN["donde-imprimir-stickers-personalizados-mexico"], BLOG_SLUG_EN["yume-vs-imprentas-online-stickers"]],
     faq: [
       {
-        q: "Can I pick up my custom stickers in Guadalajara?",
-        a: "Yes. You can pick your order up at one of the Casa Blanca branches in the Guadalajara metro area. Pickup adds just 1 business day to production, costs $20 MXN, and is free on orders of $750 MXN or more, just like home delivery.",
+        q: "How long does a custom sticker order take?",
+        a: `From the moment you approve the digital proof, it takes ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days for home delivery anywhere in Mexico, or ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days if you pick it up at a Casa Blanca branch in Guadalajara.`,
+      },
+      {
+        q: "When does production time start?",
+        a: "It starts when you approve the digital proof, not when you pay. The sooner you review and approve it, the sooner your order goes into production.",
+      },
+      {
+        q: "How long does the digital proof take?",
+        a: "The digital proof normally arrives within 24 hours after your payment and includes up to 2 rounds of changes.",
+      },
+      {
+        q: "Is anything printed before I approve the proof?",
+        a: "No. We do not print anything without your approval of the digital proof.",
+      },
+      {
+        q: "Do weekends and public holidays count towards the timeline?",
+        a: "The timeline is in business days, so weekends do not count. Public holidays are not included in the estimate, which is why it is approximate.",
+      },
+      {
+        q: "How long does it take if I pick up my order in Guadalajara?",
+        a: `Pickup at a Casa Blanca branch in the Guadalajara metro area adds ${PICKUP_EXTRA_DAYS} business day to production. Pickup costs $20 MXN and is free on orders of $750 MXN or more.`,
+      },
+      {
+        q: "What if my event deadline is very tight?",
+        a: "Message us on WhatsApp before paying with your event date, and we will check together whether there is enough time.",
       },
     ],
   },
@@ -3373,30 +3740,55 @@ export const blogPostsEn: BlogPost[] = [
     title: "How long do temporary tattoos last and how do you remove them?",
     metaTitle: "How long temporary tattoos last and how to remove them",
     description:
-      "How long temporary tattoos last (a few hours to a couple of days), how to apply them step by step, and how to remove them with body oil, lotion, or alcohol. A Yume guide.",
+      "How long temporary tattoos last, what affects their duration, how to apply and remove them with oil, and why to avoid black henna.",
     category: "Guides",
     publishedAt: "2026-10-17",
     intro:
-      "Water-transfer temporary tattoos last from a few hours to a couple of days, depending on the area of the body and how much they are rubbed. This guide covers the most common questions: how long they last, how to apply them, how to remove them, and where they can go, using the instruction card we use at Yume.",
+      "How long temporary tattoos last is the most common question before a party, wedding, or activation. The short answer: water-transfer tattoos last from hours to a few days, depending on the area of the body and how much they are rubbed. Here is what affects their duration, how to apply them, how to remove them gently, and a warning about black henna.",
     sections: [
       {
         heading: "How long do temporary tattoos last?",
         body: [
-          "It depends on the area and on friction. On parts that move or rub against clothing (wrist, neck, knees) they wear off sooner; on the arm or leg, with less friction, they last longer. The maker of the transfer paper we use states the tattoo lasts at least 48 hours if left untouched.",
-          "For a party, a wedding, or a one-day activation that is plenty: they are made for celebrations, not for lasting weeks. What shortens them most is constant rubbing, tight clothing, and any oil, lotion, or alcohol that touches the tattoo.",
+          "Water-transfer temporary tattoos last at least 48 hours if they are not rubbed, according to the specifications for the paper we use. Some temporary tattoo shops give a range of 3 to 7 days for decals. This is a reference, not a guarantee: it depends on the area of the body and friction.",
+          "For a party, a wedding, or a one-day activation that is plenty: these tattoos are made for celebrations, not to last for weeks. Constant rubbing, tight clothing, and any oil, lotion, or alcohol that touches the tattoo shorten its life the most.",
+        ],
+      },
+      {
+        heading: "What affects duration: body area and product type",
+        body: [
+          "Duration depends mainly on the area of the body and the type of product. Where there is friction, sweat, or oil, the tattoo wears off sooner; where there is little friction, it lasts longer. A decal, semipermanent ink, and henna do not last the same amount of time, so it helps to know which one you have.",
+          "On parts that move or rub against clothing, such as the wrist, neck, or knees, they wear off sooner. On the arm or leg, with less friction, they last longer. Shops mention 1 to 3 days in areas with oil, sweat, or friction, and 5 to 7 days or more in areas with little friction.",
+          "According to those same shops, water-transfer decals last 3 to 7 days, semipermanent ink can last 10 to 14 days or longer, and henna lasts longer than a decal. These figures come from sellers, without an independent study, so use them as a guide.",
         ],
       },
       {
         heading: "How to apply them, step by step",
         body: [
-          "1. Pick your tattoo and peel off the protective plastic film. 2. Place it face down, with the design directly on clean, dry skin. 3. Soak the paper well with water and press with your hand for 20 to 30 seconds. 4. Gently peel the paper off and wait a few seconds for it to dry before touching the tattoo.",
-          "Two details help: clean, dry skin with no lotion before applying, and not moving the paper while you press.",
+          "Apply them in four steps: remove the plastic film, place the tattoo design-side down on clean, dry skin, wet the paper thoroughly with water and press for 20 to 30 seconds, then gently remove the paper. Wait a few seconds for the tattoo to dry before touching it.",
+          "That is the procedure on the instruction card we use at Yume. Two details help it turn out better: clean, dry skin with no lotion before application, and keeping the paper still while you press it.",
+        ],
+      },
+      {
+        heading: "How to prepare your skin so they last longer",
+        body: [
+          "To help them last longer, shop guides recommend washing the skin with soap and water, drying it completely, and avoiding lotion or oil beforehand because they form a barrier against the adhesive. They also suggest avoiding friction, sun, and water after application. This is advice from sellers, not from a study.",
+          "If you are wearing the tattoo to a party, apply it to freshly washed, dry skin and save lotions and oils for later, when you want to remove it.",
         ],
       },
       {
         heading: "How to remove temporary tattoos",
         body: [
-          "With body oil, lotion, or rubbing alcohol, rubbing gently until it comes off. There is no need to scrape or use tools: calm rubbing is enough. If you leave them, they simply wear off over the following days.",
+          "The usual way to remove one is with baby, coconut, or olive oil: apply it to the tattoo, leave it on for a moment, rub gently with cotton, and wash with soap and water. There is no need to scrape or use objects.",
+          "Isopropyl alcohol is stronger and dries out the skin. Use it sparingly, test it on a small area first, keep it away from the eyes and mucous membranes, and do not use it on irritated skin.",
+          "After removing the tattoo, moisturize the skin. Repeat the oil step if any of the design remains.",
+        ],
+      },
+      {
+        heading: "Black henna: why it is not the same as a temporary tattoo",
+        body: [
+          "Black henna is not the same as a water-transfer temporary tattoo. The US FDA warns that it is often darkened with PPD (paraphenylenediamine), a hair dye that US law does not permit in cosmetics for the skin. This is a US warning, not a Mexican regulation.",
+          "Reactions can appear immediately or up to 2 to 3 weeks later. They include redness, blisters, weeping lesions, loss of pigment, increased sensitivity to sunlight, and permanent scars; some cases required emergency care. Someone who becomes sensitized may also react to latex, hair dyes, and textile dyes.",
+          "The FDA also states that traditional henna is approved only for hair, not for skin.",
         ],
       },
       {
@@ -3407,25 +3799,48 @@ export const blogPostsEn: BlogPost[] = [
         ],
       },
       {
-        heading: "Custom temporary tattoos: with your logo, design, or photo",
+        heading: "Custom temporary tattoos for parties and events",
         body: [
-          "At Yume we make custom temporary tattoos with your logo, your design, or your photos: stamps, characters, couple or childhood photos. They are quoted on WhatsApp based on design, size, and quantity; production takes 2 to 3 business days after the 50% deposit, and we ship across Mexico or you can pick them up in Guadalajara.",
+          "At Yume we make custom temporary tattoos with your logo, your design, or your photos: stamps, characters, couple or childhood photos. They are quoted on WhatsApp based on design, size, and quantity. Production takes 2 to 3 business days after the 50% deposit, and we ship across Mexico or you can pick them up in Guadalajara.",
+          "See the service at [custom temporary tattoos](/en/products/custom-temporary-tattoos).",
+          `More ideas: [tattoos for events](/en/blog/${BLOG_SLUG_EN["tatuajes-temporales-personalizados-para-eventos"]}), [tattoos for weddings](/en/blog/${BLOG_SLUG_EN["tatuajes-temporales-para-boda-eventos-y-fiestas"]}), and [vinyl stickers](/en/products/waterproof-vinyl-stickers) with the same design.`,
         ],
       },
     ],
     relatedProductSlugs: [],
     faq: [
       {
-        q: "Can I order custom temporary tattoos with my own logo or design?",
-        a: "Yes. We make custom temporary tattoos with your logo, your design or your photos. They are quoted on WhatsApp based on design, size and quantity. Production takes 2 to 3 business days after the 50% deposit, and we ship across Mexico or you can pick them up in Guadalajara.",
+        q: "How long do temporary tattoos last?",
+        a: "The maker of the transfer paper we use says they last at least 48 hours if they are not rubbed. Some shops give a range of 3 to 7 days for decals. This is a reference: it varies with the area of the body and friction.",
+      },
+      {
+        q: "What shortens the life of a temporary tattoo?",
+        a: "Constant rubbing, tight clothing, sweat, and any oil, lotion, or alcohol that touches the tattoo. Temporary tattoo shops mention 1 to 3 days in areas with oil, sweat, or friction.",
+      },
+      {
+        q: "How do you remove a temporary tattoo?",
+        a: "With body, baby, coconut, or olive oil: apply it, leave it on for a moment, rub gently with cotton, and wash with soap and water. There is no need to scrape. Moisturize the skin afterward.",
+      },
+      {
+        q: "Can I remove it with alcohol?",
+        a: "Isopropyl alcohol is stronger and dries out the skin. Use it sparingly, test it on a small area first, keep it away from the eyes and mucous membranes, and do not use it on irritated skin.",
+      },
+      {
+        q: "What is black henna and why is there a warning about it?",
+        a: "According to the US FDA, black henna is often darkened with PPD, a hair dye that US law does not permit in cosmetics for the skin. Reactions can appear up to 2 to 3 weeks later.",
+      },
+      {
+        q: "Can children wear them?",
+        a: "They are for external use. If there is sensitive skin or an allergy, try a small one first; for children, an adult should apply and supervise. The paper maker gives no minimum age.",
+      },
+      {
+        q: "How long does an order of custom temporary tattoos take?",
+        a: "Production takes 2 to 3 business days after the 50% deposit. They are quoted on WhatsApp based on design, size, and quantity, and we ship across Mexico or you can pick them up in Guadalajara.",
       },
     ],
     relatedBlogSlugs: ["custom-temporary-tattoos-for-events-and-brands", "temporary-tattoos-for-weddings-events-and-parties"],
     serviceLink: { href: "/en/products/custom-temporary-tattoos", label: "See custom temporary tattoos" },
     quoteMessage: "Hi, I'd like a quote for custom temporary tattoos.\n\nSize:\nQuantity:\nDo I already have a design? (yes / no):",
-    sources: [
-      { label: "MECOLOUR transfer paper listing on Amazon (lasts at least 48 hours untouched)", url: "https://www.amazon.com/dp/B09C25DL8G" },
-    ],
   },
   // Dulceros cluster lives in its own file (blog-dulceros.en.ts).
   ...dulceroPostsEn,
@@ -3649,44 +4064,63 @@ export const blogPostsEn: BlogPost[] = [
     title: "Custom Label Printing: Roll, Sheet or By the Piece",
     metaTitle: "Label Printing: Roll, Sheet or By the Piece",
     description:
-      "Label printing on rolls, sheets or by the piece: which one fits depending on how many you need and how you'll apply them, with real prices from 50 pieces.",
+      "Label printing on rolls, sheets or by the piece: which to choose based on quantity, designs and material, with real prices from 50 pieces.",
     category: "Guides",
     publishedAt: "2026-10-20",
     intro:
-      "When you look for somewhere to print labels for your product or business, the first decision isn't the design but the format: some print shops work with roll labels, others print full sheets, and others deliver each label cut to its shape. Each format makes sense for a different kind of business, and picking the wrong one is the most common way to overpay or end up with labels you can't use.",
+      "When you're looking for somewhere to print labels, the first decision isn't the design but the format: some print shops work with roll labels, others print full sheets, and others deliver each label cut to its shape. Each format suits a different need, whether it's your business packaging, wedding details or baby shower favors, and choosing the wrong one is the most common way to overpay or end up with labels you can't use.",
     sections: [
+      {
+        heading: "Label printing: what changes between rolls, sheets and individual pieces",
+        body: [
+          "The difference is how they arrive and how you apply them. A roll is a continuous strip on a backing, intended for long runs and high volumes. Sheets come precut and are peeled by hand. Individual labels are cut to your design's shape and ordered in the exact quantity you need.",
+          "Sheets are an option for testing designs and short seasonal runs, while rolls suit large orders. Labels cut to your design's shape are what we make at Yume.",
+          "With those three ideas in mind, the rest of this guide helps you decide based on quantity, application method, number of designs and material.",
+        ],
+      },
       {
         heading: "Roll labels: for volume and labeling machines",
         body: [
-          "Roll labels are printed one after another on a backed strip and are made for businesses that label lots of identical products: drinks, packaged food, cosmetics made in series. Their advantage is that they're applied with a labeling machine or a dispenser, without peeling them one by one.",
-          "The trade-off is that they're usually produced in large runs of the same design: if you're just starting out or change designs often, you end up buying more than you'll use. Yume doesn't offer roll labels in its catalog; if your production uses a labeling machine, message us on WhatsApp before ordering and we'll tell you whether we can help.",
+          "Roll labels are useful when you repeat the same design many times and apply them with a labeling machine. You can also apply them by hand from a dispenser, but their real advantage appears in long runs. Yume doesn't have rolls in its catalog, so message us on WhatsApp before ordering if you need them.",
+          "Another practical difference is printing: a printable roll needs a dedicated printer. As a general reference, digital presses have no plate or four-color printing charges, while flexography is likely to involve extra charges.",
+          "The trade-off is that rolls are usually produced in large runs of the same design: if you're just starting out or change designs often, you end up buying more than you'll use.",
         ],
       },
       {
         heading: "Sheet labels: several on one page",
         body: [
-          "On a sheet, several labels are printed together and you peel them off by hand. It's the format of office-printer label sheets and many quick-print shops: practical when your labels are rectangles or circles and you'll apply them yourself.",
-          "The limits are shape and material: standard sheets usually come in preset sizes, and paper doesn't hold up well to water or handling. If you're thinking of printing them at home, our guide on where to print custom stickers compares printing yourself with having them made.",
+          "A sheet has several precut labels on an 8.5 x 11-inch page that you peel by hand. It's practical for small or occasional needs and for testing a design, and can be printed on standard inkjet or laser printers. Its limitation is the preset sizes and shapes.",
+          "If you're thinking of printing at home, our guide on [where to print custom stickers](/en/blog/where-to-print-custom-stickers-mexico) compares printing them yourself with having them made.",
         ],
       },
       {
         heading: "Labels by the piece: cut to your design's shape",
         body: [
-          "The third option is the one we work with at Yume: each label follows the shape of your logo or design and you order the exact number of pieces, not by sheet or roll. You choose die-cut (each label loose, cut all the way around its outline) or kiss-cut (cut to shape but left on its backing sheet, to peel when you use it).",
-          "It's the format that best fits small and mid-size brands that label by hand: packaging, bags, jars, candles or shipping boxes. You order from 50 pieces with your logo, without committing to a large run, and we send you a digital proof to approve before printing.",
+          "An individual label follows the outline of your logo or design, and you order an exact quantity rather than a sheet or roll. You can choose die-cut, with each label separate, or kiss-cut, cut to shape on its backing. This is the format we make at Yume, starting at 50 pieces with your logo.",
+          "It's the best fit for anyone applying labels by hand who needs variety: packaging, bags, jars, candles, shipping boxes or event details. You can order without committing to a large run, and we'll send you a digital proof to approve before printing.",
+          "You can see our [labels with your logo](/en/products/custom-logo-stickers) or [vinyl stickers](/en/products/waterproof-vinyl-stickers) with your design, character or photo.",
         ],
       },
       {
-        heading: "Material and finish",
+        heading: "Event labels: why you rarely need a roll",
         body: [
-          "Our labels are vinyl and water-resistant; Custom Vinyl Stickers also resist sun and scratches. The difference compared with paper shows most on products that get wet or handled a lot, and we explain it in detail in our vinyl vs. paper guide.",
-          "For the finish you choose matte, glossy or holographic (holographic adds $0.50 per piece). All of our stickers come with high-quality BOPP lamination.",
+          "An event often calls for several designs in small quantities: one for the favors, another for the candy table and another for the glasses. That's why sheets or individual pieces are a better fit, while rolls are suited to repeating the same design many times.",
+          "If your wedding, baby shower, christening or company event has a different design for each detail, ordering by the piece lets you get the exact quantity of each: from 50 labels with your logo and from 40 vinyl stickers with your design.",
+        ],
+      },
+      {
+        heading: "Material and finish: the format doesn't make labels water-resistant",
+        body: [
+          "Water resistance comes from the material, not the format. A paper label doesn't become waterproof, and tips for protecting the print work best on a film base. Our labels are vinyl and water-resistant; if there will be ice, coolers or cold bottles, always ask for a resistant material.",
+          "Custom Vinyl Stickers also resist sun and scratches. For the finish, choose matte, glossy or holographic (holographic adds $0.50 per piece). All our stickers have high-quality BOPP lamination. See the full comparison in our [vinyl vs. paper](/en/blog/vinyl-vs-paper-stickers-differences) guide.",
+          "If you print at home with an inkjet printer, one guide recommends using the photo or glossy paper setting and letting the print dry for at least a few hours, ideally 24. For extra protection, it mentions clear glossy spray varnish or a clear overlay sheet.",
         ],
       },
       {
         heading: "How much label printing by the piece costs",
         body: [
-          `These are the real prices from our catalog. Shipping is separate: $${NATIONAL_SHIPPING_PRICE} MXN anywhere in Mexico or $${CASABLANCA_PRICE} MXN if you pick up at a Casa Blanca branch in Guadalajara, and it's free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more.`,
+          `100 pieces (small size): see the table for real prices from our catalog. Shipping is separate: $${NATIONAL_SHIPPING_PRICE} MXN anywhere in Mexico or $${CASABLANCA_PRICE} MXN for pickup at a branch in Guadalajara, and it's free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more.`,
+          "The minimum order is 50 labels with your logo and 40 vinyl stickers, so you can order close to the number you'll actually use.",
         ],
         table: {
           ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
@@ -3695,17 +4129,22 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "How to choose in 4 questions",
         body: [
-          "How many do you need? Dozens or hundreds: by the piece. Thousands of the same design every month: it's worth getting a roll quote.",
-          "How will you apply them? By hand: by the piece or on sheets. With a labeling machine: rolls.",
+          "Four questions resolve almost everything: how many you need and how many designs, how you'll apply them, what shape your logo is and whether they'll get wet. With those answers, you can decide whether rolls, sheets or individual pieces suit you without buying too many or ending up with labels you can't use.",
+          "How many do you need? If it's dozens or hundreds, order by the piece. If it's thousands of the same design every month, it's worth getting a roll quote.",
+          "How will you apply them? By hand: by the piece or on sheets. With a labeling machine: on a roll.",
           "What shape is your logo? If it isn't a rectangle or a circle, a label cut to its shape looks much better than a square with a white background around it.",
-          "Will it get wet or handled a lot? Then vinyl, not paper.",
+          "Will it get wet or handled a lot? Then ask for a resistant material such as vinyl, not paper.",
         ],
       },
     ],
     faq: [
       {
         q: "Which is better, roll labels or sheet labels?",
-        a: "It depends on how you apply them: rolls if you use a labeling machine or dispenser and order large runs of the same design; sheets or by the piece if you apply them by hand and need smaller quantities.",
+        a: "It depends on how you apply them: rolls if you use a labeling machine or dispenser and order large runs of the same design; sheets or individual pieces if you apply them by hand and need smaller quantities.",
+      },
+      {
+        q: "Can I print sheet labels with my office printer?",
+        a: "As a general reference, label sheets can be printed on standard inkjet or laser printers, unlike a printable roll, which needs a dedicated printer.",
       },
       {
         q: "What is the minimum to print labels at Yume?",
@@ -3713,7 +4152,7 @@ export const blogPostsEn: BlogPost[] = [
       },
       {
         q: "How much do 100 custom labels cost?",
-        a: `100 labels with your logo cost $${priceOf("stickers-logo-personalizado", 100)} MXN and 100 vinyl stickers with your design cost $${priceOf("stickers-vinil-impermeable", 100)} MXN.`,
+        a: `100 pieces (small size): 100 labels with your logo cost $${priceOf("stickers-logo-personalizado", 100)} MXN and 100 vinyl stickers with your design cost $${priceOf("stickers-vinil-impermeable", 100)} MXN.`,
       },
       {
         q: "Do you print roll labels?",
@@ -3721,11 +4160,11 @@ export const blogPostsEn: BlogPost[] = [
       },
       {
         q: "Are the labels water-resistant?",
-        a: "Yes, all of our labels and stickers are water-resistant vinyl.",
+        a: "Yes, all our labels and stickers are water-resistant vinyl. The material, not the format, determines resistance: a paper label doesn't become waterproof.",
       },
       {
         q: "How long does printing my labels take?",
-        a: `The digital proof arrives within 24 hours of payment. Once you approve it, your order reaches your home in ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days, or is ready for Casa Blanca pickup (Guadalajara) in ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days.`,
+        a: `The digital proof arrives within 24 hours of payment. Once you approve it, your order reaches your home in ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days, or is ready for pickup at a branch in Guadalajara in ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days.`,
       },
     ],
     relatedProductSlugs: ["stickers-logo-personalizado"],
@@ -3733,58 +4172,104 @@ export const blogPostsEn: BlogPost[] = [
   },
   {
     slug: BLOG_SLUG_EN["etiquetas-navidenas-personalizadas"],
-    title: "Custom Christmas labels: for gifts, bottles and your business packaging",
-    metaTitle: "Christmas gift tags: free printable PDF or custom vinyl",
+    title: "Custom Christmas Labels for Gifts and Bottles",
+    metaTitle: "Custom Christmas Labels: Free PDF or Vinyl",
     description:
-      "Christmas gift tags: download the free printable PDF or order custom vinyl labels, from $3.50 each depending on size. Made in Guadalajara, shipping across Mexico.",
+      "Custom vinyl Christmas labels for gifts, bottles and packaging, or download the free printable PDF. Made in Guadalajara.",
     category: "Guides",
     publishedAt: "2026-10-19",
     intro:
-      "A Christmas label with the family name, a message or your business logo turns any gift, bottle or treat bag into something made for the person who gets it. At Yume we make them in vinyl, with your design and in any shape you want. Here is what goes on them, what they are used for and the latest date to order so they arrive before Christmas.",
+      "A Christmas label with your family name, a message or your business logo turns any gift, bottle or holiday treat bag into something made especially for the person receiving it. Yume's custom Christmas labels are made in vinyl, with your design and in any shape you want. Here's what to put on them, how to use them, which material to choose, what they cost and when to order so they arrive before Christmas.",
     sections: [
       {
-        heading: "What goes on Christmas labels",
+        heading: "What goes on custom Christmas labels",
         body: [
-          "The most common choice is a short message (\"Feliz Navidad\", \"With love from the López family\", \"Happy holidays 2026\") next to a Christmas drawing: a tree, an ornament, a star or a snowman. You can also use a photo, each person's name to mark their gifts or, for a business, your logo with a holiday touch.",
-          "Tell us what you want to say and the style you like, and we send you a digital proof before printing. Nothing gets printed without your approval.",
+          "Custom Christmas labels feature a short message and a seasonal illustration: a tree, an ornament, a star or a snowman. You can also add each person's name, a photo or your business logo with a Christmas touch. Tell us what you want to say and we'll send you a digital proof.",
+          "Some messages that work well are ‘Merry Christmas’, ‘With love from the López family’ or ‘Happy holidays 2026’.",
+          "The digital proof normally arrives within 24 hours of payment and includes up to 2 rounds of adjustments. We print nothing without your approval.",
         ],
       },
       {
-        heading: "What they are used for",
+        heading: "How labels for gifts and bottles are used",
         body: [
-          "Gifts: on the box or bag, instead of a paper tag that gets lost. Bottles of wine, ponche or liquor you are giving away. Aguinaldo treat bags and posada party favor boxes. And businesses: on the packaging, bags and boxes of your December orders, or on gifts for your customers.",
-          "Because vinyl is water resistant, the labels hold up on bottles that come out of the fridge or bags that get wet.",
+          "Christmas labels are mainly used on gifts, bottles, holiday treat bags and posada favor boxes. They also work on packaging and boxes for December orders. Because they are water-resistant vinyl, they hold up on bottles coming out of the fridge or bags that get wet.",
+          `For gifts, put one on the box or bag instead of a paper tag that can get lost. For bottles of wine, ponche or liquor you're giving away, a label with the recipient's name completely changes the presentation. On holiday treat bags and posada favor boxes, the same label ties the whole set together. For favor boxes, see [custom Christmas favor boxes](/en/blog/${BLOG_SLUG_EN["dulceros-navidenos-personalizados"]}).`,
+          `If you have a business, put them on the packaging, bags and boxes for your December orders, or on gifts for your customers. Here are more ideas for [packaging stickers](/en/blog/${BLOG_SLUG_EN["stickers-para-empaques-de-negocio"]}).`,
         ],
       },
       {
-        heading: "Free printable Christmas tags",
+        heading: "Christmas labels for posadas and dinners with guests",
         body: [
-          "If you only need a few, download our free sheet (above): 12 tags per page with room for \"To\" and \"From\", in a color version and a black and white one for kids to color in. Print it on letter size cardstock or sticker paper and cut along the dotted line.",
-          "For lots of gifts, bottles or business packaging, printed vinyl labels last longer, resist water and carry your own design, name or logo.",
+          "For a posada or dinner with guests, custom Christmas labels can carry each person's name on their gift or glass, while the same design ties the whole table together. For a company event, add your logo and a seasonal message.",
+          `If you're organizing your company's posada, see [personalized company posada details](/en/blog/${BLOG_SLUG_EN["detalles-posada-empresa-personalizados"]}). If you're a planner organizing several events, we'll prepare the pieces for each event with a digital proof and direct service via WhatsApp.`,
         ],
       },
       {
-        heading: "Shape, finish and price",
+        heading: "Which label to choose for each use",
         body: [
-          "The cut follows the shape of your design: round, ornament or star shaped, or square. You choose die cut (each label loose) or kiss cut (several on one sheet, easy to peel). The finish can be matte, glossy or holographic; holographic looks very festive and costs $0.50 MXN more per piece. All of our stickers come with high-quality BOPP lamination.",
+          "If the label will go on a bottle in ice or in the fridge, on a bag that gets wet or on something handled often, choose vinyl: it resists water, sunlight and scratches. If you need a sheet for a few indoor gifts, the free PDF may be enough.",
+          "For your business logo, use [custom logo labels](/en/products/custom-logo-stickers). For names, characters, pets or photos, choose [custom vinyl stickers](/en/products/waterproof-vinyl-stickers). They use the same type of vinyl, with different minimum quantities and price tiers.",
+        ],
+      },
+      {
+        heading: "Free printable Christmas labels",
+        body: [
+          "Download our free PDF sheet: it has 12 labels per page with space for ‘To’ and ‘From’, in a color version and a black and white version for children to color. Print it at letter size on cardstock or adhesive paper and cut along the dotted line.",
+          "For lots of gifts, bottles or packages, printed vinyl labels resist water and carry your own design, name or logo. See real examples in the [work gallery](/en/gallery).",
+        ],
+      },
+      {
+        heading: "Shape, finish and price of vinyl labels",
+        body: [
+          "The cut follows your design's shape: round, ornament-shaped, star-shaped or square. Choose die-cut or kiss-cut when ordering. The finish can be matte, glossy or holographic, with an extra cost per piece for holographic. All our stickers have high-quality BOPP lamination.",
+          `First 100 pieces (small size): $${priceOf("stickers-vinil-impermeable", 100)} for [custom vinyl stickers](/en/products/waterproof-vinyl-stickers), with a 40-piece minimum, and $${priceOf("stickers-logo-personalizado", 100)} for [custom logo labels](/en/products/custom-logo-stickers), with a 50-piece minimum.`,
+          `If you're unsure which cut to choose, compare [die-cut and kiss-cut stickers](/en/blog/${BLOG_SLUG_EN["troquelado-vs-semitroquelado-stickers"]}).`,
         ],
         table: {
           ...sizeTable(["stickers-vinil-impermeable", "stickers-logo-personalizado"], [100], "en"),
         },
       },
       {
-        heading: "Latest date to order for Christmas",
+        heading: "When to order for delivery before Christmas",
         body: [
-          `The digital proof usually arrives within 24 hours of payment. Once you approve it, the order takes ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days to reach your door anywhere in Mexico, or ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days if you pick it up at a Casa Blanca branch in Guadalajara.`,
-          "So it is best to order in November or, at the latest, the first week of December: that leaves room to adjust the design and for couriers, which are busier in December. If you are also giving party favor boxes, you can order everything together; shipping is free on orders of $750 MXN or more.",
+          `The digital proof normally arrives within 24 hours of payment. Once you approve it, the order takes ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days to reach your home anywhere in Mexico, or ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days if you pick it up at a Casa Blanca branch in Guadalajara.`,
+          `Using those times, count backward from the date you need the labels and add time for the digital proof. If you're also giving favor boxes, you can order everything together. To understand each stage, see [how long an order takes](/en/blog/${BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"]}).`,
         ],
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
     faq: [
       {
-        q: "What is the latest date to order custom Christmas labels?",
-        a: `Order in November or, at the latest, the first week of December. Once you approve the digital proof, the order takes ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days to reach your door anywhere in Mexico. That leaves room to adjust the design and for couriers, which are busier in December.`,
+        q: "How much do custom Christmas labels cost?",
+        a: `First 100 pieces (small size): $${priceOf("stickers-vinil-impermeable", 100)} for custom vinyl stickers (40-piece minimum) and $${priceOf("stickers-logo-personalizado", 100)} for custom logo labels (50-piece minimum).`,
+      },
+      {
+        q: "Are there free printable Christmas labels?",
+        a: "Yes. You can download a PDF sheet with 12 labels per page and space for To and From, in color and black and white. Print it at letter size.",
+      },
+      {
+        q: "Are vinyl labels water-resistant?",
+        a: "Yes. Custom vinyl stickers are made from premium vinyl that resists water, sunlight and scratches, and custom logo labels are water-resistant.",
+      },
+      {
+        q: "What shapes and finishes can I choose?",
+        a: "You can choose die-cut or kiss-cut when ordering. The finish can be matte, glossy or holographic; holographic has an extra cost per piece.",
+      },
+      {
+        q: "What's the difference between vinyl stickers and logo labels?",
+        a: "They use the same type of vinyl, with different minimum quantities and price tiers. Logo labels are designed for your business logo (from 50 pieces); custom vinyl stickers work for any design, character, pet or photo (from 40 pieces).",
+      },
+      {
+        q: "Can I see the design before it's printed?",
+        a: "Yes. You receive a digital proof with up to 2 rounds of adjustments, and we print nothing without your approval.",
+      },
+      {
+        q: "How long do the labels take to arrive?",
+        a: `Once you approve the proof, the order takes ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days to reach your home in Mexico, or ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days if you pick it up at a Casa Blanca branch in Guadalajara.`,
+      },
+      {
+        q: "Is free shipping or pickup available in Guadalajara?",
+        a: `National shipping is free on purchases of $${FREE_SHIPPING_THRESHOLD} or more. In the Guadalajara metro area, you can pick up for $${CASABLANCA_PRICE} at any of the ${CASABLANCA_BRANCHES.length} Casa Blanca parcel branches.`,
       },
     ],
     relatedBlogSlugs: [BLOG_SLUG_EN["dulceros-navidenos-personalizados"], BLOG_SLUG_EN["stickers-para-empaques-de-negocio"], BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"], BLOG_SLUG_EN["buen-fin-2026-stickers-y-dulceros-personalizados"]],
@@ -4103,7 +4588,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "What to expect from a custom favors supplier for wedding planners in Guadalajara",
         body: [
           "A good custom favors supplier gives the planner three things: a digital proof the couple can approve, clear dates in writing, and direct contact on WhatsApp. That way the planner does not have to guess or chase anyone, and the client sees the favor before anything is produced.",
-          "According to Bodas.net, the planner hires vendors, oversees the timing of the day and organizes trials, but does not decide without consulting the couple. That is why the ideal supplier makes approval easy. At Yume we work from Guadalajara and ship across Mexico.",
+          "According to industry guides, the planner hires vendors, oversees the timing of the day and organizes trials, but does not decide without consulting the couple. That is why the ideal supplier makes approval easy. At Yume we work from Guadalajara and ship across Mexico.",
         ],
       },
       {
@@ -4147,7 +4632,7 @@ export const blogPostsEn: BlogPost[] = [
         body: [
           "Start as soon as you have the date and a rough idea of the design, because production time counts from the moment the digital proof is approved, not from when you place the order. The later the approval, the later your order arrives.",
           "Plan the calendar backwards from the wedding date: delivery first, then production, then proof approval, the guest list closing and the brief. Production and shipping days for store products appear on each product page.",
-          "As a contrast, the Bodas.net listing of a favors supplier in Guadalajara, Spain, recommends starting 6 to 9 months ahead because it works to order. That is that supplier's reference, not a Yume rule. For menus, invitations and tattoos, ask us for the date on WhatsApp before promising anything to your client. For guest gift ideas, read [when to order wedding favors](/en/blog/when-to-order-wedding-favors) or see these [personalized wedding favors](/en/blog/personalized-wedding-favors-with-name-and-date).",
+          "As an outside reference, a favors supplier in Guadalajara, Spain, recommends starting 6 to 9 months ahead because it works to order. That is that supplier's reference, not a Yume rule. For menus, invitations and tattoos, ask us for the date on WhatsApp before promising anything to your client. For guest gift ideas, read [when to order wedding favors](/en/blog/when-to-order-wedding-favors) or see these [personalized wedding favors](/en/blog/personalized-wedding-favors-with-name-and-date).",
         ],
       },
       {
@@ -4160,7 +4645,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "Delivery and WhatsApp contact so your client is happy",
         body: [
-          "Yume produces in Guadalajara and ships across Mexico; in the Guadalajara metro area you can also pick up at a Casa Blanca branch. Tell us the venue and event date from the start so delivery can be planned around your calendar.",
+          "Yume produces in Guadalajara and ships across Mexico; in the Guadalajara metro area you can also arrange pickup. Tell us the venue and event date from the start so delivery can be planned around your calendar.",
           "All contact happens on WhatsApp: quote, digital proof and approval in a single chat.",
         ],
       },
@@ -4190,7 +4675,7 @@ export const blogPostsEn: BlogPost[] = [
       },
       {
         q: "How far ahead should I start?",
-        a: "It depends on the product and on when you approve the digital proof. As an outside reference, a supplier in Guadalajara, Spain, recommends 6 to 9 months on Bodas.net because it works to order, but that is not a Yume rule.",
+        a: "It depends on the product and on when you approve the digital proof. As an outside reference, a supplier in Guadalajara, Spain, recommends 6 to 9 months because it works to order, but that is not a Yume rule.",
       },
       {
         q: "Do you work by event or by volume?",
@@ -4202,12 +4687,8 @@ export const blogPostsEn: BlogPost[] = [
       },
       {
         q: "Where do you produce and where do you ship?",
-        a: "We produce in Guadalajara, Jalisco, and ship across Mexico. In the Guadalajara metro area you can also pick up at a Casa Blanca branch.",
+        a: "We produce in Guadalajara, Jalisco, and ship across Mexico. In the Guadalajara metro area you can also arrange pickup.",
       },
-    ],
-    sources: [
-      { label: "Bodas.net: What type of wedding planner do you need?", url: "https://www.bodas.net/articulos/que-tipo-de-wedding-planner-necesitas--c3716" },
-      { label: "Bodas.net: Evana Creativas wedding favors listing (Guadalajara, Spain)", url: "https://www.bodas.net/detalles-de-bodas/evana-creativas--e304499" },
     ],
   },
   {
@@ -4239,7 +4720,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "What goes on a wedding menu card",
         body: [
-          "A menu card carries a header with the couple's names or monogram, an optional date, and the dishes in serving order with a short description. Pairings and a closing line are optional. This comes from Paperlust, a stationery guide, and it is a reference, not a rule.",
+          "A menu card carries a header with the couple's names or monogram, an optional date, and the dishes in serving order with a short description. Pairings and a closing line are optional. A stationery guide offers this as a reference, not a rule.",
           "Send us your menu on WhatsApp and we will quote it.",
         ],
       },
@@ -4247,7 +4728,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "Allergies and diets on the wedding menu",
         body: [
           "To mark diets on the menu, a stationery guide recommends letter abbreviations (V, VE, GF, DF, N, SF) after the dish name, with a key at the bottom. For serious allergies it suggests a line that points guests to the catering team, because the card is not an allergy management document.",
-          "WeddingWire Canada proposes leaving room on the RSVP for allergies and diets, asking the caterer for the ingredient list of each dish and sharing it with guests who have allergies. It also suggests posting the menu on the wedding website and, for buffets, labeling dishes (vegan, vegetarian, gluten-free, nut-free) and letting guests with allergies serve themselves first.",
+          "A wedding guide proposes leaving room on the RSVP for allergies and diets, asking the caterer for the ingredient list of each dish and sharing it with guests who have allergies. It also suggests posting the menu on the wedding website and, for buffets, labeling dishes (vegan, vegetarian, gluten-free, nut-free) and letting guests with allergies serve themselves first.",
           "So on the card, it is best to put only the abbreviations and the key, and leave allergy handling to the caterer. Tell us which ones you want to mark and we will place them in the design.",
         ],
       },
@@ -4268,7 +4749,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "When to lock the menu design and order the pieces",
         body: [
-          "Close the menu design once the caterer has confirmed the menu. Paperlust, a stationery supplier, says that usually happens 6 to 8 weeks before the wedding, but that is only its reference, not an industry standard. For your own order timing with Yume, message us on WhatsApp.",
+          "Close the menu design once the caterer has confirmed the menu. One stationery guide says that usually happens 6 to 8 weeks before the wedding, but that is only a general reference, not an industry standard. For your own order timing with Yume, message us on WhatsApp.",
           "At Yume, the wedding menu is quoted over WhatsApp. For [vinyl stickers](/en/products/waterproof-vinyl-stickers), the digital proof usually arrives within 24 hours at most after your payment, with up to 2 rounds of adjustments, and we print nothing without your approval.",
         ],
       },
@@ -4313,15 +4794,10 @@ export const blogPostsEn: BlogPost[] = [
       },
       {
         q: "When should I lock the menu design?",
-        a: "Once the caterer has confirmed the menu. Paperlust, a stationery supplier, says that is usually 6 to 8 weeks before the wedding, but that is only its reference. For your timing with Yume, message us on WhatsApp.",
+        a: "Once the caterer has confirmed the menu. One stationery guide suggests 6 to 8 weeks before the wedding as a general reference. For your timing with Yume, message us on WhatsApp.",
       },
     ],
-    sources: [
-      { label: "The Budget Savvy Bride: how stickers can elevate your wedding", url: "https://thebudgetsavvybride.com/how-stickers-can-elevate-your-wedding/" },
-      { label: "Mary Hollis Huddleston: place cards, menus, resources and tips", url: "https://maryhollishuddleston.squarespace.com/blog/place-cards-menus-resources-and-tips" },
-      { label: "Paperlust: wedding menu card guide", url: "https://paperlust.co/blog/?p=15638" },
-      { label: "WeddingWire Canada: how to handle guests' food allergies and dietary restrictions", url: "https://weddingwire.ca/wedding-ideas/8-ways-to-handle-guests-food-allergies-and-dietary-restrictions--c297" },
-    ],
+
   },
   {
     slug: "wedding-candy-table-custom-candy-boxes",
@@ -4338,38 +4814,38 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "How many sweets to plan per guest for your wedding candy table",
         body: [
-          "As a starting point, Bodas.net suggests about 150 g of sweets per guest at small weddings, about 100 g at medium ones and about 80 g at large ones. For 100 guests that is about 10 kg if the table is mostly candy. These are rough figures from a guide in Spain, not a rule.",
+          "As a starting point, an industry guide suggests about 150 g of sweets per guest at small weddings, about 100 g at medium ones and about 80 g at large ones. For 100 guests that is about 10 kg if the table is mostly candy. These are rough figures from a guide in Spain, not a rule.",
           "If you add mini brownies, donuts, chocolates or cookies, you can reduce the loose sweets. The candy table complements dessert and the banquet, it does not replace them.",
-          "Crehana notes that the amount depends on the guests, the duration, the venue and the catering, so it is worth fine-tuning the number with your wedding planner or the venue.",
+          "An industry guide notes that the amount depends on the guests, the duration, the venue and the catering, so it is worth fine-tuning the number with your wedding planner or the venue.",
         ],
       },
       {
         heading: "How many candy boxes or jars you need on the table",
         body: [
-          "Bodas.net guides by medium jars: 4 to 6 for 50 guests, 10 to 12 for 50 to 150, and about 15 or 16 for 200. It is a reference for how many containers to fill, not a rule. Adjust it to how many kinds of sweets you want to show and the size of your table.",
+          "An industry guide suggests using medium jars: 4 to 6 for 50 guests, 10 to 12 for 50 to 150, and about 15 or 16 for 200. It is a reference for how many containers to fill, not a rule. Adjust it to how many kinds of sweets you want to show and the size of your table.",
           "So it helps to start with the kinds of sweets you want to offer and then set the number of containers. Our minimum order for candy boxes is 10 pieces, and our guide to [personalized candy boxes](/en/blog/wedding-quinceanera-baby-shower-favor-boxes) shows what they are like.",
         ],
       },
       {
         heading: "What sweets to put in each candy box",
         body: [
-          "Choose variety and label every candy box. Crehana suggests at least 6 kinds of sweets as a reference, and Bodas.net recommends mixing classics such as gummies, marshmallows and chocolates with minis, cake pops, brownies or decorated cookies. The Yume candy box arrives assembled and empty, so you decide what goes in each one.",
+          "Choose variety and label every candy box. An industry guide suggests at least 6 kinds of sweets as a reference, and another recommends mixing classics such as gummies, marshmallows and chocolates with minis, cake pops, brownies or decorated cookies. The Yume candy box arrives assembled and empty, so you decide what goes in each one.",
           "For more filling ideas, see our guide on [what to put in a candy box](/en/blog/what-to-put-in-a-party-favor-box).",
         ],
       },
       {
         heading: "How to set up a wedding candy table step by step",
         body: [
-          "Define a concept and a palette, choose a focal point and arrange by height: low items in front, tall ones at the back. Bodas.net recommends clear containers, trays at different heights or wooden crates so the contents show, and keeping order with a coherent style line.",
-          "Crehana proposes 10 steps from inspiration to graphic design, with signs and bunting, and they include a sketch of the table. Bodas.net adds tongs for serving and, as a hygienic option without lines, individual servings.",
+          "Define a concept and a palette, choose a focal point and arrange by height: low items in front, tall ones at the back. An industry guide recommends clear containers, trays at different heights or wooden crates so the contents show, and keeping order with a coherent style line.",
+          "One industry guide proposes 10 steps from inspiration to graphic design, with signs and bunting, and they include a sketch of the table. another guide adds tongs for serving and, as a hygienic option without lines, individual servings.",
           "Candy boxes bring color and a design of your own to the table and, once personalized, repeat the design of your wedding. If you also want favors to hand out, see our [personalized wedding favors](/en/blog/personalized-wedding-favors-with-name-and-date).",
         ],
       },
       {
         heading: "Table labels: flavors, allergens and finishing touches",
         body: [
-          "A useful label says what is in each candy box. Bodas.net advises labeling flavors, listing allergens and marking gluten-free, sugar-free or vegan options. That way guests choose with confidence and the table looks tidy as well as pretty. You can also add small signs with the couple's names.",
-          "As a personalized touch, Bodas.net suggests sealed bags with a label showing the wedding date and the couple's names or initials. Another option is to leave bags or jars at the end of the table so each guest serves themselves.",
+          "A useful label says what is in each candy box. An industry guide advises labeling flavors, listing allergens and marking gluten-free, sugar-free or vegan options. That way guests choose with confidence and the table looks tidy as well as pretty. You can also add small signs with the couple's names.",
+          "As a personalized touch, an industry guide suggests sealed bags with a label showing the wedding date and the couple's names or initials. Another option is to leave bags or jars at the end of the table so each guest serves themselves.",
         ],
       },
       {
@@ -4402,11 +4878,11 @@ export const blogPostsEn: BlogPost[] = [
     faq: [
       {
         q: "How many sweets should I plan per guest at a wedding?",
-        a: "Bodas.net, in a guide from Spain, suggests about 150 g per guest at small weddings, about 100 g at medium ones and about 80 g at large ones. These are rough figures, not a rule.",
+        a: "An industry guide from Spain suggests about 150 g per guest at small weddings, about 100 g at medium ones and about 80 g at large ones. These are rough figures, not a rule.",
       },
       {
         q: "How many jars or candy boxes do I need on the table?",
-        a: "Bodas.net guides by medium jars: 4 to 6 for 50 guests, 10 to 12 for 50 to 150, and about 15 or 16 for 200. It is a reference, not a rule.",
+        a: "An industry guide suggests using medium jars: 4 to 6 for 50 guests, 10 to 12 for 50 to 150, and about 15 or 16 for 200. It is a reference, not a rule.",
       },
       {
         q: "Do the candy boxes include sweets?",
@@ -4414,7 +4890,7 @@ export const blogPostsEn: BlogPost[] = [
       },
       {
         q: "What should the table labels say?",
-        a: "Bodas.net advises labeling flavors, listing allergens and marking gluten-free, sugar-free or vegan options.",
+        a: "An industry guide advises labeling flavors, listing allergens and marking gluten-free, sugar-free or vegan options.",
       },
       {
         q: "What does candy box personalization include?",
@@ -4422,7 +4898,7 @@ export const blogPostsEn: BlogPost[] = [
       },
       {
         q: "Does the candy table replace dessert?",
-        a: "No. According to Bodas.net, the candy table complements dessert and the banquet, it does not replace them.",
+        a: "No. According to an industry guide, the candy table complements dessert and the banquet, it does not replace them.",
       },
       {
         q: "When should I order the candy boxes?",
@@ -4432,10 +4908,6 @@ export const blogPostsEn: BlogPost[] = [
         q: "What is the minimum order for candy boxes?",
         a: "The minimum order is 10 pieces.",
       },
-    ],
-    sources: [
-      { label: "Bodas.net: Todo lo que debéis saber antes de montar una candy bar", url: "https://www.bodas.net/articulos/todo-lo-que-debeis-saber-antes-de-montar-una-candy-bar--c2448" },
-      { label: "Crehana: Cómo armar una mesa de dulces", url: "https://www.crehana.com/blog/estilo-vida/como-armar-mesa-dulce/" },
     ],
   },
   {
@@ -4452,13 +4924,13 @@ export const blogPostsEn: BlogPost[] = [
         heading: "When to send wedding invitations: the general window",
         body: [
           "In Spanish-language sources, the usual advice is to send formal invitations 3 or 4 months ahead. If some guests have to travel, move that up to between 4 and 6 months. These are guiding ranges, not a single rule, and English-language sources use shorter windows for local weddings.",
-          "For comparison: the Greenvelope calendar, written for the United States, proposes invitations 6 to 8 weeks ahead for a standard wedding and 10 to 12 weeks for a destination wedding. Digital invitations follow the same timelines as printed ones, even though they arrive instantly. If the wedding is far from where most guests live, or some guests come from another country, widen the window so they can book transport and lodging and request time off.",
+          "For comparison, a U.S. wedding guide proposes invitations 6 to 8 weeks ahead for a standard wedding and 10 to 12 weeks for a destination wedding. Digital invitations follow the same timelines as printed ones, even though they arrive instantly. If the wedding is far from where most guests live, or some guests come from another country, widen the window so they can book transport and lodging and request time off.",
         ],
       },
       {
         heading: "When to send the save the date",
         body: [
-          "Bodas.net suggests sending the save the date 7 to 9 months ahead, although another article on the same site says 10 to 12 months. Greenvelope proposes 6 to 8 months for a standard wedding and 8 to 12 for a destination one. Since the sources disagree, treat these figures as a guiding range.",
+          "Wedding guides suggest sending the save the date 7 to 9 months ahead, although another guide says 10 to 12 months. Another reference proposes 6 to 8 months for a standard wedding and 8 to 12 for a destination one. Since the sources disagree, treat these figures as a guiding range.",
           "It goes only to the households that will receive an invitation. You can skip it if the engagement is short, the list is small and local, or everyone already knows the date.",
         ],
       },
@@ -4466,7 +4938,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "What RSVP deadline to set",
         body: [
           "The RSVP deadline should fall about one week before the caterer needs the final headcount. Also, there should be at least 2 weeks between the day guests receive the invitation and that deadline. That gives your guests time to reply and gives you time to adjust tables and quantities.",
-          "Greenvelope recommends one reminder a week before the deadline and another on the deadline day, only to guests who have not replied, and a personal follow-up 1 or 2 days later. Its calendar places the RSVP 3 to 4 weeks before the wedding for a standard wedding and about 6 weeks before for a destination one.",
+          "One wedding guide recommends a reminder a week before the deadline and another on the deadline day, only to guests who have not replied, and a personal follow-up 1 or 2 days later. It places the RSVP 3 to 4 weeks before the wedding for a standard wedding and about 6 weeks before for a destination one.",
         ],
       },
       {
@@ -4502,7 +4974,7 @@ export const blogPostsEn: BlogPost[] = [
       },
       {
         q: "When should the save the date be sent?",
-        a: "Bodas.net suggests 7 to 9 months ahead, although another of its articles says 10 to 12 months. Greenvelope proposes 6 to 8 months for a standard wedding and 8 to 12 for a destination one. The sources disagree, so it is a guiding range.",
+        a: "Wedding guides suggest 7 to 9 months ahead, although another guide says 10 to 12 months. Another reference proposes 6 to 8 months for a standard wedding and 8 to 12 for a destination one. The sources disagree, so it is a guiding range.",
       },
       {
         q: "Do digital invitations follow different timelines?",
@@ -4520,10 +4992,6 @@ export const blogPostsEn: BlogPost[] = [
         q: "How do I get a quote for my wedding invitations from Yume?",
         a: "Write to us on WhatsApp early and we will quote you. We send a digital proof before producing, and nothing is produced until you approve it.",
       },
-    ],
-    sources: [
-      { label: "Bodas.net: Consejos sobre el envío de las invitaciones de boda", url: "https://www.bodas.net/articulos/consejos-sobre-el-envio-de-las-invitaciones-de-boda--c565" },
-      { label: "Greenvelope: When to send wedding invitations and save the dates", url: "https://www.greenvelope.com/resources/when-to-send-wedding-invitations-and-save-the-dates" },
     ],
   },
   {
@@ -4699,13 +5167,6 @@ export const blogPostsEn: BlogPost[] = [
       { q: "What size table do I need for the candy display?", a: "A setup guide mentions a table about 80 by 120 to 160 centimeters for 30 to 40 people, with a floor-length tablecloth and levels made with boxes or stands." },
       { q: "Do you ship across Mexico?", a: "Yes. We produce to order from Guadalajara, Jalisco, and ship across Mexico." },
     ],
-    sources: [
-      { label: "Wedding guide: How to decorate a wedding candy table (in Spanish)", url: "https://www.bodas.net/articulos/como-decorar-la-mesa-de-dulces-de-la-boda--c960" },
-      { label: "Wedding guide: Wedding candy buffets (in Spanish)", url: "https://www.bodas.net/articulos/buffets-de-dulces-para-bodas--c733" },
-      { label: "Party setup guide: How to set up a candy bar (in Spanish)", url: "https://shop.lafiestadeolivia.com/blogs/blog/17973332-como-montar-tu-misma-un-candy-bar-y-no-morir-en-el-intento" },
-      { label: "Marketplace: Vintage candy table listing (in Spanish)", url: "https://listado.mercadolibre.com.mx/mesa-de-dulces-vintage" },
-      { label: "Marketplace: Acetate box listing (in Spanish)", url: "https://listado.mercadolibre.com.mx/cajitas-de-acetato" },
-    ],
   },
   {
     slug: "personalized-adult-birthday-favors",
@@ -4826,7 +5287,7 @@ export const blogPostsEn: BlogPost[] = [
         body: [
           "For the children at a wedding, choose an individual candy box with each child's name and the wedding colors. Every child gets something of their own that looks like part of the design, not an afterthought. It arrives assembled and empty, so you decide what goes inside.",
           "Our candy box is a lunch box style with a handle, and personalization includes the name and a theme. This is one piece per child, different from a candy table shared by all the guests.",
-          "A Bodas.net guide (from 2012, so it may be somewhat dated) recommends leaving a small gift on each child's plate, such as a bag of candy, a toy or a storybook, so they find it when they sit down. A named candy box serves the same purpose and looks like part of the decor.",
+          "A wedding guide from 2012, which may be somewhat dated, recommends leaving a small gift on each child's plate, such as a bag of candy, a toy or a storybook, so they find it when they sit down. A named candy box serves the same purpose and looks like part of the decor.",
         ],
       },
       {
@@ -4839,7 +5300,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "Allergies and intolerances: ask before filling the box",
         body: [
-          "Before choosing the filling, ask parents about intolerances or allergies for each child. Bodas.net makes that recommendation for children's meals, and it applies to candy too: you can add the question when guests confirm attendance, or leave it to your planner, and flag the contents on a label.",
+          "Before choosing the filling, ask parents about intolerances or allergies for each child. A wedding guide makes that recommendation for children's meals, and it applies to candy too: you can add the question when guests confirm attendance, or leave it to your planner, and flag the contents on a label.",
           "Because the candy box arrives empty, you decide what goes inside and can adjust the filling for each child.",
         ],
       },
@@ -4861,7 +5322,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "Who hands out the candy boxes: monitor, planner or venue",
         body: [
-          "Someone has to hand each candy box to the right child. Bodas.net proposes one monitor for every four children to accompany them, help them eat and keep them entertained; it is a Spanish guide from 2012. That person, your wedding planner or the venue staff can hand them out, depending on what you agree with them.",
+          "Someone has to hand each candy box to the right child. A Spanish wedding guide from 2012 proposes one monitor for every four children to accompany them, help them eat and keep them entertained. That person, your wedding planner or the venue staff can hand them out, depending on what you agree with them.",
           "If you work with a planner, share the list of names and the time you want them handed out. Since every candy box carries a name, whoever hands them out does not have to guess who each one is for.",
         ],
       },
@@ -4889,21 +5350,18 @@ export const blogPostsEn: BlogPost[] = [
       },
       {
         q: "When should each child get their candy box?",
-        a: "It can be on the plate when they sit down, in hand during the party, or at the end to take home. Bodas.net suggests leaving a small gift on each child's plate; set the moment with your planner or the venue.",
+        a: "It can be on the plate when they sit down, in hand during the party, or at the end to take home. A wedding guide suggests leaving a small gift on each child's plate; set the moment with your planner or the venue.",
       },
       {
         q: "How do I look after guests' allergies?",
-        a: "Ask parents about intolerances or allergies before choosing the filling, as Bodas.net suggests for children's meals. The candy box arrives empty, so you decide what goes inside.",
+        a: "Ask parents about intolerances or allergies before choosing the filling, as a wedding guide suggests for children's meals. The candy box arrives empty, so you decide what goes inside.",
       },
       {
         q: "Who can hand out the candy boxes at the wedding?",
-        a: "Whoever accompanies the children, your wedding planner or the venue staff. Bodas.net proposes one monitor for every four children in its 2012 guide.",
+        a: "Whoever accompanies the children, your wedding planner or the venue staff. A wedding guide from 2012 proposes one monitor for every four children.",
       },
     ],
-    sources: [
-      { label: "Exclusive Italy Weddings: children's activity bags for weddings", url: "https://www.exclusiveitalyweddings.com/blog/wedding-party-ideas-children-activity-bags" },
-      { label: "Bodas.net: the children's table (2012 guide, in Spanish)", url: "https://www.bodas.net/articulos/la-mesa-de-los-ninos--c1194" },
-    ],
+
   },
   {
     slug: "company-anniversary-custom-details",
@@ -4921,7 +5379,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "Custom company anniversary details: how to choose",
         body: [
           "Choose the detail by the anniversary milestone and by who receives it. Common milestones are 5, 10, 20, 30, 40 and 50 years or more, and recipients are usually the team, clients and partners. A detail with the company name and the anniversary number feels made for the occasion.",
-          "MOO's guide says adding a name, date or message turns a functional object into something people keep. A candy box or a logo sticker can do that. MOO also notes that timing matters more than one big gesture a year and that each gift should feel meant for that person. That is why it helps to design the detail for one specific event instead of picking one from a catalog.",
+          "An industry guide says adding a name, date or message turns a functional object into something people keep. A candy box or a logo sticker can do that. The guide also notes that timing matters more than one big gesture a year and that each gift should feel meant for that person. That is why it helps to design the detail for one specific event instead of picking one from a catalog.",
         ],
       },
       {
@@ -4935,7 +5393,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "Which detail to give the team, clients and partners",
         body: [
           "Think first about who receives it. For the team, a detail with the anniversary number and the company name. For clients, one with their name or the event's name. For partners, one with your logo and a short thank-you message. The message changes, not the brand identity.",
-          "MOO suggests, for example, notebooks with the name and date of a shared project, or a box with a handwritten note for key clients. The same logic applies to a candy box or a sticker: the client's or the event's name makes it feel meant for that person.",
+          "An industry guide suggests, for example, notebooks with the name and date of a shared project, or a box with a handwritten note for key clients. The same logic applies to a candy box or a sticker: the client's or the event's name makes it feel meant for that person.",
         ],
       },
       {
@@ -4990,12 +5448,6 @@ export const blogPostsEn: BlogPost[] = [
         a: "The sources we reviewed give no amount limits or exact invoice (CFDI) requirements for client gifts. Ask your accountant before buying.",
       },
     ],
-    sources: [
-      { label: "MOO: client gift ideas (in Spanish)", url: "https://www.moo.com/blog/es/inspiracion/ideas-para-obsequios-a-clientes" },
-      { label: "El Contribuyente: when gifts and samples for clients are deductible (in Spanish)", url: "https://www.elcontribuyente.mx/2024/07/cuando-son-deducibles-los-regalos-y-muestras-para-clientes/" },
-      { label: "ContadorMX: making gifts to employees or clients deductible (in Spanish)", url: "https://contadormx.com/como-hacer-deducibles-regalos-a-empleados-o-clientes/" },
-      { label: "Asest: company anniversary ideas (in Spanish)", url: "https://asest.es/story/aniversario-empresarial-ideas/" },
-    ],
   },
   {
     slug: "wedding-planner-custom-details-guadalajara",
@@ -5013,7 +5465,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "What a custom details supplier for wedding planners should offer",
         body: [
           "A custom details supplier for wedding planners should give you a clear process: a quote per event, a design with a digital proof before production, direct communication and pieces that match each other. Your volume is per wedding, not industrial, so what matters is that every event looks planned and you know what to expect at each step.",
-          "The wedding details directory on Bodas.net for Guadalajara lists custom gift workshops, but it is built as a couple-to-supplier directory. This guide is for you, the planner who coordinates several weddings. To see one of the pieces first, check our [custom candy boxes in Guadalajara](/blog/dulceros-personalizados-guadalajara).",
+          "This guide is for you, the planner who coordinates several weddings. To see one of the pieces first, check our [custom candy boxes in Guadalajara](/blog/dulceros-personalizados-guadalajara).",
         ],
       },
       {
@@ -5049,7 +5501,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "Deadlines: when to lock texts and changes",
         body: [
-          "Lock texts and approval with room to spare, not the week of the wedding. A La Bastilla planning guide recommends reviewing details with all suppliers about one month before the event. Use that as a reference date so a last-minute change does not put your delivery at risk.",
+          "Lock texts and approval with room to spare, not the week of the wedding. A planning guide recommends reviewing details with all suppliers about one month before the event. Use that as a reference date so a last-minute change does not put your delivery at risk.",
           "We confirm production and shipping times for each piece over WhatsApp when we quote, once we know your event date.",
         ],
       },
@@ -5065,7 +5517,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "What to ask your supplier to put in writing",
         body: [
           "Ask for what you agreed in writing: pieces and quantities, final texts, number of digital proofs included, change deadline, payment method, production time and delivery method. A summary over WhatsApp or email prevents misunderstandings and gives you backup when the couple changes their mind.",
-          "A review of a wedding details supplier on Bodas.net praises punctual delivery and careful packaging, two points worth agreeing on in advance.",
+          "It is worth agreeing on punctual delivery and careful packaging in advance.",
         ],
         table: {
           headers: ["What to confirm", "Why it matters"],
@@ -5088,11 +5540,7 @@ export const blogPostsEn: BlogPost[] = [
     relatedProductSlugs: [],
     quoteMessage:
       "Hi, I'm a wedding planner and I'd like a quote for custom wedding details: candy boxes, stickers and temporary tattoos.",
-    sources: [
-      { label: "Bodas.net: wedding details in Guadalajara (in Spanish)", url: "https://www.bodas.net/bodas/proveedores/detalles-de-bodas/guadalajara" },
-      { label: "Bodas.net: Detalle & Memoria review (in Spanish)", url: "https://www.bodas.net/detalles-de-bodas/detalle&memoria--e256961" },
-      { label: "La Bastilla: wedding planning book (in Spanish)", url: "https://miboda.labastilla.com/sites/all/themes/personalizado/img/Libro_Bodas_La_Bastilla.pdf" },
-    ],
+    sources: [],
     faq: [
       {
         q: "Do you ship pieces outside Guadalajara?",
@@ -5248,7 +5696,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "How many candy boxes to order for a wedding: the simple rule",
         body: [
           "Order one candy box per confirmed guest, or one per couple or family if you hand them out that way, then add a reserve for the couple, the candy table and any last-minute changes. Close the count after RSVPs arrive, because the guest list can change right up to the end.",
-          "This differs from a candy bar. Candy bar guides, such as Bodas.net's, calculate by weight of sweets or by number of jars, because the candy is served loose. A candy box is an individual piece, so it is counted per person.",
+          "This differs from a candy bar. Candy bar guides calculate by weight of sweets or by number of jars, because the candy is served loose. A candy box is an individual piece, so it is counted per person.",
         ],
       },
       {
@@ -5294,14 +5742,14 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "How many extra candy boxes to reserve",
         body: [
-          "There is no fixed number of extras that works for every wedding. Zola explains that it depends on the price of each piece: with cheap favors, having spares costs little, and with expensive ones it may not be worth it. Reserve more if guests may switch from No to Yes, or if the wedding is a destination wedding.",
+          "There is no fixed number of extras that works for every wedding. A general guideline is that it depends on the price of each piece: with cheap favors, having spares costs little, and with expensive ones it may not be worth it. Reserve more if guests may switch from No to Yes, or if the wedding is a destination wedding.",
           "Candy boxes are ordered by the piece from 10, so the reserve adjusts to whatever number you decide.",
         ],
       },
       {
         heading: "Candy bar or candy box: why they are not counted the same way",
         body: [
-          "A candy bar is calculated by weight of sweets or by number of jars because the candy is served loose; an individual candy box is counted by the piece. Bodas.net gives figures for the candy bar, not for candy boxes, so they do not tell you how many pieces to order.",
+          "A candy bar is calculated by weight of sweets or by number of jars because the candy is served loose; an individual candy box is counted by the piece. Industry guides give figures for the candy bar, not for candy boxes, so they do not tell you how many pieces to order.",
           "As a reference from that guide, written for a candy bar of sweets: about 150 g per guest at small weddings, about 100 g at medium ones and about 80 g at large ones. It suggests 4 to 6 medium jars for 50 guests, 10 or 12 for 50 to 150 and 15 or 16 for about 200, and gives about 10 kg of sweets for 100 people as an example.",
           "What is useful from those figures is the underlying idea: the amount per person goes down when there are more guests. With candy boxes the logic is different, because each piece already holds its own portion.",
         ],
@@ -5310,7 +5758,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "Candy boxes for the candy table and for each place setting",
         body: [
           "Separate three uses before counting: the candy box handed to each guest, the ones displayed filled on the candy table, and the reserve. This way you do not mix handout pieces with decoration pieces, and you can close each figure separately once you have the final list.",
-          "According to Bodas.net, a candy bar accompanies dessert and the banquet rather than replacing them, and is usually placed near the dance floor or opened after the meal.",
+          "According to industry guides, a candy bar accompanies dessert and the banquet rather than replacing them, and is usually placed near the dance floor or opened after the meal.",
           "The candy box arrives assembled and empty, so you choose what goes inside.",
         ],
       },
@@ -5324,16 +5772,7 @@ export const blogPostsEn: BlogPost[] = [
     ],
     relatedProductSlugs: [],
     quoteMessage: "Hi, I would like a quote for personalized candy boxes for my wedding.",
-    sources: [
-      {
-        label: "Bodas.net: everything to know before setting up a candy bar (Spanish)",
-        url: "https://www.bodas.net/articulos/todo-lo-que-debeis-saber-antes-de-montar-una-candy-bar--c2448",
-      },
-      {
-        label: "Zola: should you buy extra wedding favors?",
-        url: "https://www.zola.com/expert-advice/should-you-buy-extra-wedding-favors",
-      },
-    ],
+    sources: [],
     faq: [
       {
         q: "How many candy boxes should I order for a wedding of 100 guests?",
@@ -5412,8 +5851,8 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "How to match the candy dish to the menu and the time of day",
         body: [
-          "Think of the candy dish as part of the banquet, not an add-on. If there is already dessert, the sweets become a small touch and smaller amounts are enough; if they replace dessert, you need more. According to Bodas.net, less sweet is eaten at midday than at a lighter wedding dinner.",
-          "Bodas.net also notes that a classic banquet serves one dessert portion per guest and that it is wise to keep something extra in reserve. With that in mind, define the role of the candy dish first and then pick the amount from the table above.",
+          "Think of the candy dish as part of the banquet, not an add-on. If there is already dessert, the sweets become a small touch and smaller amounts are enough; if they replace dessert, you need more. According to an industry guide, less sweet is eaten at midday than at a lighter wedding dinner.",
+          "The same guide notes that a classic banquet serves one dessert portion per guest and that it is wise to keep something extra in reserve. With that in mind, define the role of the candy dish first and then pick the amount from the table above.",
           "Ask your caterer or planner whether there is already dessert and what time the candy dish will open.",
         ],
       },
@@ -5441,12 +5880,6 @@ export const blogPostsEn: BlogPost[] = [
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable"],
     relatedBlogSlugs: ["what-to-put-in-a-party-favor-box", "personalized-party-favor-boxes-guadalajara", "wedding-candy-table-custom-candy-boxes", "how-many-candy-boxes-to-order-for-a-wedding"],
-    sources: [
-      { label: "HaceCuentas: candy bar calculator by number of guests (Spanish)", url: "https://hacecuentas.com/calculadora-candy-bar-personas" },
-      { label: "Candystore.com: ultimate candy buffets guide", url: "https://candystore.com/blog/candy-buffets/ultimate-candy-buffets-guide" },
-      { label: "Bodas.net: candy buffets for weddings (Spanish)", url: "https://www.bodas.net/articulos/buffets-de-dulces-para-bodas--c733" },
-      { label: "Diario Bahía de Cádiz: what you need for the best wedding candy table (Spanish)", url: "https://diariobahiadecadiz.com/el-resto-del-mundo/que-se-necesita-para-crear-la-mejor-mesa-dulce-para-una-boda" },
-    ],
     faq: [
       {
         q: "How many grams of sweets should I plan per guest?",
@@ -5493,7 +5926,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "What details to send before the proof arrives",
         body: [
           "Send everything in a single message: final proofread texts, full names, event date and time, quantities, color palette and a reference of the invitation or decor. With incomplete details the proof gets repeated and you may use up the included adjustment rounds, so wait until you have the final version.",
-          "As a reference, Reverie Paper Co. starts counting its proof timeline when it receives the final text, and another stationery designer counts its timeline from the moment it receives contract, payment and final text. Those are those stores' policies, not an industry standard or a Yume lead time. If your client is still deciding the text, wait until it is settled before asking for the proof.",
+          "As a reference, one stationery supplier starts counting its proof timeline when it receives the final text, and another counts its timeline from the moment it receives the contract, payment and final text. Those are individual suppliers' policies, not an industry standard or a Yume lead time. If your client is still deciding the text, wait until it is settled before asking for the proof.",
           "To keep everything you need to gather per event in one place, see the [planner checklist for custom favors orders](/en/blog/planner-checklist-custom-favors-order-event).",
         ],
       },
@@ -5501,7 +5934,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "How to gather everyone's comments without using up rounds",
         body: [
           "Name one person to collect comments from the planner, the client, the family or the company, and send your supplier a single message with all changes together. That way one adjustment round covers every opinion. Yume's vinyl stickers include up to 2 adjustment rounds.",
-          "Many suppliers limit rounds. One wedding stationery studio includes two rounds of revision, and another allows two rounds plus a final proof, with a charge for each extra proof. These are examples from individual suppliers, not a market rule. Reverie Paper Co. asks for concise comments precisely to avoid using up rounds.",
+          "Many suppliers limit rounds. One wedding stationery studio includes two rounds of revision, and another allows two rounds plus a final proof, with a charge for each extra proof. These are examples from individual suppliers, not a market rule. One supplier asks for concise comments to avoid using up rounds.",
           "If you work on WhatsApp with Yume, forward the proof to the group of decision makers, collect their answers and reply once with a numbered list, for example for [stickers with your logo](/en/products/custom-logo-stickers) for the event. When everyone agrees, write a clear 'approved'.",
         ],
       },
@@ -5509,7 +5942,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "What to check in the proof before approving it",
         body: [
           "Check first what cannot be fixed later: spelling of names, dates, times, quantities, measurements and where the design sits on the piece. Compare each detail with the client's final information. Some print shops are not responsible for errors that were already in the approved proof.",
-          "Made & True, a wedding signage store, also asks you to check date formatting. Forever Fiances explains that after final approval it does not review spelling, punctuation or content again, because the approved proof is used directly to manufacture. Sticker Giant states that once an order is in production, changes can no longer be made. Those are their policies, but they show why a calm review matters before you sign off.",
+          "One wedding signage supplier also asks you to check date formatting. Another supplier explains that after final approval it does not review spelling, punctuation or content again, because the approved proof is used directly to manufacture. Another states that once an order is in production, changes can no longer be made. Those are their policies, but they show why a calm review matters before you sign off.",
         ],
         table: {
           headers: ["What to check", "Question to confirm"],
@@ -5527,7 +5960,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "Why screen color can differ from the printed piece",
         body: [
           "Screens emit light (RGB) while paper reflects light off ink (CMYK), so very bright or saturated tones often look duller when printed. A digital proof is only a simulation and depends on a calibrated monitor: it does not guarantee the exact color you see on your phone screen.",
-          "Canva recommends ordering a printed copy to test color before a large order. Forever Fiances adds that the paper and the printing method, offset or digital, also affect color, and that for several pieces to match it helps to use the same paper and order and print everything at the same time.",
+          "One printing guide recommends ordering a printed copy to test color before a large order. Another supplier notes that the paper and the printing method, offset or digital, also affect color, and that for several pieces to match it helps to use the same paper and order and print everything at the same time.",
           "If the wedding or client color is critical, say so before approving and ask on WhatsApp what options exist for your order. We do not promise that the screen shows the exact printed color.",
         ],
       },
@@ -5535,7 +5968,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "How to plan your timeline backwards from the event date",
         body: [
           "Start from the event date and subtract, in this order: shipping time, production time, approval time and design time. The result is your deadline to deliver final details. Ask on WhatsApp for the lead times of your order and your city before setting dates with the client.",
-          "As a reference from other stores: Made & True asks for final details about 4 weeks before the wedding, Reverie Paper Co. adds 4 to 6 weeks of design when there is custom artwork, and a semi-custom supplier sends the full stationery proof about 2 to 3 weeks after receiving the final text. Those are their lead times, not Yume's, and they vary a lot from one studio to another.",
+          "As a reference from other stores: one supplier asks for final details about 4 weeks before the wedding, another adds 4 to 6 weeks of design when there is custom artwork, and a semi-custom supplier sends the full stationery proof about 2 to 3 weeks after receiving the final text. Those are their lead times, not Yume's, and they vary a lot from one studio to another.",
           "To see how timing works on a sticker order, read [how long custom stickers take to arrive](/en/blog/how-long-do-custom-stickers-take-to-arrive). If you work with Yume regularly, see the [planners page](/en/planners) and the [guide for working with a favors supplier](/en/blog/guide-for-planners-working-with-custom-favors-supplier). Once you have your deadline, request a quote for your [custom stickers for events](/en/products/waterproof-vinyl-stickers) on WhatsApp.",
         ],
       },
@@ -5549,7 +5982,7 @@ export const blogPostsEn: BlogPost[] = [
       },
       {
         q: "Is the proof always included in the order?",
-        a: "It depends on the supplier. Made & True, for example, includes it free on some signs and charges for it on others. At Yume, confirm on WhatsApp what your order includes.",
+        a: "It depends on the supplier. One supplier, for example, includes it free on some signs and charges for it on others. At Yume, confirm on WhatsApp what your order includes.",
       },
       {
         q: "Do extra rounds cost money?",
@@ -5564,15 +5997,7 @@ export const blogPostsEn: BlogPost[] = [
         a: "Nothing is printed without your approval, and approving gives the green light to production. Check names, dates and addresses before approving and confirm on WhatsApp what changes your order accepts afterwards.",
       },
     ],
-    sources: [
-      { label: "Forever Fiances: approval process", url: "https://foreverfiances.helpscoutdocs.com/article/36-what-is-the-approval-process" },
-      { label: "Made & True: how to order custom wedding signage", url: "https://madeandtrue.com/blogs/news/how-to-order-custom-wedding-signage" },
-      { label: "Reverie Paper Co.: FAQs", url: "https://reverie-paper-co.squarespace.com/faqs" },
-      { label: "Sticker Giant: proofing and production timeline", url: "https://support.stickergiant.com/hc/en-us/articles/219066348-Proofing-Timeline-What-to-Expect-After-You-Place-Your-Order" },
-      { label: "Stationery studio: our process", url: "https://carol-sullivan.squarespace.com/our-process" },
-      { label: "Stationery studio: process timeline", url: "https://wouldntitbelovely.squarespace.com/process-timeline" },
-      { label: "Canva: CMYK for print", url: "https://www.canva.com/es_mx/help/cmyk-for-print/" },
-    ],
+
   },
   {
     slug: "when-to-order-wedding-favors",
@@ -6482,14 +6907,14 @@ export const blogPostsEn: BlogPost[] = [
         heading: "Vinyl or paper? How to choose the material for the use",
         body: [
           "Choose based on where the sticker will live. If it goes on bottles with ice or in a humid place, vinyl is the better fit. If it is a dry piece, like an envelope, a box or a card, the material matters less. We work with premium vinyl with BOPP lamination, water, sun and scratch resistant.",
-          "According to MOO, an online printer, matte paper is the most economical and versatile but does not resist water or intense humidity, and vinyl suits humidity or outdoor use. The finish can be matte, glossy or holographic. To compare in depth, read [vinyl vs paper stickers](/en/blog/vinyl-vs-paper-stickers-differences) and check [die cut vs kiss cut](/en/blog/die-cut-vs-kiss-cut-stickers) to choose the cut.",
+          "According to a printing guide, matte paper is the most economical and versatile but does not resist water or intense humidity, and vinyl suits humidity or outdoor use. The finish can be matte, glossy or holographic. To compare in depth, read [vinyl vs paper stickers](/en/blog/vinyl-vs-paper-stickers-differences) and check [die cut vs kiss cut](/en/blog/die-cut-vs-kiss-cut-stickers) to choose the cut.",
         ],
       },
       {
         heading: "What sticker size keeps names and dates readable",
         body: [
           "Our vinyl stickers come in three sizes: small up to 4 cm, medium from 5 to 6 cm and large from 7 to 8 cm. If the design has names, a date or a phrase, choose medium or large so the text reads comfortably. For larger sizes, we quote by WhatsApp.",
-          "As a reference, one online provider's guide (MOO) recommends not going below about 5×5 cm when the design has letters. That is that provider's guideline, not a rule, and it helps you choose between sizes.",
+          "As a reference, one online provider's guide recommends not going below about 5×5 cm when the design has letters. That is that provider's guideline, not a rule, and it helps you choose between sizes.",
         ],
       },
       {
@@ -6502,7 +6927,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "What to check in your design before printing",
         body: [
-          "Before sending your design, a useful reference comes from MOO, an online printer: extend the background to the bleed to avoid white edges after cutting, and keep text and logos inside the safe zone. These are that provider's guidelines; for your order, confirm the file with us by WhatsApp.",
+          "Before sending your design, a useful reference from a printing guide is: extend the background to the bleed to avoid white edges after cutting, and keep text and logos inside the safe zone. These are that provider's guidelines; for your order, confirm the file with us by WhatsApp.",
           "You can send us your design, a character or a photo, and we send a digital proof before printing so you can review names, dates and colors.",
         ],
       },
@@ -6541,11 +6966,6 @@ export const blogPostsEn: BlogPost[] = [
         q: "Can I use my own design or a photo?",
         a: "Yes. You can send us your design, a character or a photo, and we prepare a digital proof before printing.",
       },
-    ],
-    sources: [
-      { label: "MOO: vinyl stickers (material and use with humidity)", url: "https://www.moo.com/es-us/stickers/vinyl-stickers" },
-      { label: "MOO: rectangular vinyl stickers (bleed and safe zone)", url: "https://www.moo.com/es-us/stickers/rectangular/vinyl-stickers" },
-      { label: "MOO: stickers (recommended size with text)", url: "https://www.moo.com/es-us/stickers" },
     ],
   },
 ];

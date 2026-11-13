@@ -734,10 +734,7 @@ export const dulceroPostsEn: BlogPost[] = [
       { q: "When should a child be baptized according to the Code of Canon Law?", a: "Canon 867 says parents should take care that infants are baptized in the first few weeks of life. That's why it helps to order the boxes as soon as you have a parish date." },
     ],
     sources: [
-      { label: "Parenting guide: baptism keepsake ideas for guests", url: "https://www.guiainfantil.com/galerias/bebes/ideas-para-regalar-en-el-bautizo-del-bebe/" },
-      { label: "First communion guide: age, catechism, requirements and godparents", url: "https://www.adn40.mx/mexico/2025-10-24/cual-es-la-mejor-edad-para-hacer-la-primera-comunion/" },
       { label: "Code of Canon Law (Holy See): Book IV, canon 867 on the baptism of infants", url: "https://www.vatican.va/archive/cod-iuris-canonici/eng/documents/cic_lib4-cann834-878_en.html" },
-      { label: "Wedding dessert table guide: quantities, fillings and setup", url: "https://www.bodas.net/articulos/todo-lo-que-debeis-saber-antes-de-montar-una-candy-bar--c2448" },
     ],
     relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
     relatedBlogSlugs: [en("dulceros-para-eventos-sociales-boda-xv-baby-shower"), en("que-poner-en-un-dulcero"), en("dulceros-personalizados-guadalajara"), en("cajas-bolsas-o-vasos-dulceros-cual-elegir")],
@@ -1104,12 +1101,6 @@ export const dulceroPostsEn: BlogPost[] = [
     ],
     relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
     relatedBlogSlugs: [en("ideas-de-dulceros-para-fiesta-infantil"), en("cajas-bolsas-o-vasos-dulceros-cual-elegir"), en("dulceros-personalizados-guadalajara")],
-    sources: [
-      {
-        label: "Wedding guide: what to know before setting up a candy bar",
-        url: "https://www.bodas.net/articulos/todo-lo-que-debeis-saber-antes-de-montar-una-candy-bar--c2448",
-      },
-    ],
   },
   {
     slug: en("dulceros-de-halloween"),
