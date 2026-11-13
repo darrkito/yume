@@ -7196,21 +7196,29 @@ export const blogPosts: BlogPost[] = [
       "Cómo conseguir reseñas de Google para tu restaurante o cafetería: dónde pedirlas en mesa y caja, qué prohíbe Google y cómo responder.",
     category: "Guías",
     publishedAt: "2026-11-13",
+    modifiedAt: "2026-11-13",
     intro:
-      "Si tienes un restaurante o una cafetería, tus clientes ya opinan de ti: la pregunta es si esa opinión llega a Google. Aquí tienes cómo pedir reseñas en la mesa y en la caja, con un guion corto para tu equipo, y qué cosas te prohíbe Google para que no pongas en riesgo tu perfil.",
+      "Si tienes un restaurante o una cafetería, tus clientes ya opinan de ti: la pregunta es si esa opinión llega a Google. Aquí tienes cómo pedir reseñas en la mesa y en la caja, con un guion corto para tu equipo, qué cosas te prohíbe Google para que no pongas en riesgo tu perfil y cómo responder cuando llega una reseña negativa.",
     sections: [
       {
         heading: "Reseñas de Google para tu restaurante: por dónde empezar",
         body: [
           "Para conseguir reseñas de Google en un restaurante o cafetería, pide en el momento justo, facilita el paso con un enlace o código QR del Perfil de Empresa y nunca ofrezcas nada a cambio. Google recomienda recordar a tus clientes que pueden reseñar, y permite crear ese enlace y ese QR.",
-          "En esta guía vemos dónde pedirla en mesa y caja, qué decir, cuándo conviene una placa NFC, qué prohíbe Google y cómo responder.",
+          "En esta guía vemos por qué importan las reseñas, dónde pedirlas en mesa y caja, qué decir, cuándo conviene una placa NFC, qué prohíbe Google y cómo responder.",
+        ],
+      },
+      {
+        heading: "Por qué importan las reseñas antes de que alguien reserve",
+        body: [
+          "Muchos comensales revisan las reseñas antes de elegir dónde comer. Según una encuesta de TheFork a más de 6.000 usuarios, el 62% de los comensales en España descarta un restaurante si encuentra malas reseñas antes de reservar. Es un dato de España, no de México, pero muestra el peso que tiene la opinión pública de tu local.",
+          "La cifra viene de una plataforma de reservas, así que tómala como referencia y no como promesa de resultados. Lo que sí depende de ti es que quien te visite tenga una forma sencilla de contar su experiencia.",
         ],
       },
       {
         heading: "Dónde pedir reseñas en mesa y en caja",
         body: [
           "Los dos puntos naturales son la caja y la mesa. En la caja, la placa va a la altura de los ojos, junto a la terminal de pago. En la mesa, sirve cuando el cliente ya terminó de comer. Un código escondido bajo el mostrador no se usa, así que ponlo donde el cliente mira.",
-          "Otros lugares que sugerimos son la salida y el ticket o el empaque para llevar.",
+          "Otros lugares que sugerimos son la salida y el ticket o el empaque para llevar. Para ver errores comunes de colocación, lee [dónde poner la placa de reseñas](/blog/donde-poner-placa-resenas-google).",
         ],
       },
       {
@@ -7225,7 +7233,7 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Pedirlo de palabra funciona, pero depende de que el cliente recuerde el nombre de tu negocio y lo busque. Un enlace directo, un QR o una placa NFC le ahorran ese camino: abre tu formulario de reseña con un toque o un escaneo. Google permite crear el enlace y el QR desde tu Perfil de Empresa.",
           "La [placa NFC para reseñas](/productos/placa-resena-google-nfc) de Yume llega ya programada con el enlace de reseñas de tu negocio y con el QR de respaldo impreso. Es de pago único, sin suscripción ni app. Va con adhesivo; si prefieres algo de pie, el [stand NFC para reseñas](/productos/stand-resena-google-nfc) no se pega.",
-          "No todos los celulares leen NFC igual, por eso existe el QR de respaldo. Para comparar ambas opciones, lee [NFC contra QR impreso](/blog/placa-nfc-vs-codigo-qr-impreso-resenas).",
+          "No todos los celulares leen NFC igual, por eso existe el QR de respaldo. Para comparar ambas opciones, lee [NFC contra QR impreso](/blog/placa-nfc-vs-codigo-qr-impreso-resenas). Si te preguntas por los celulares de tus clientes, revisa si la [placa NFC funciona con iPhone y Android](/blog/placa-nfc-funciona-iphone-android).",
         ],
       },
       {
@@ -7233,27 +7241,34 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Google prohíbe ofrecer productos o servicios gratis o con descuento a cambio de reseñas, de cambiarlas o de eliminar las negativas. En un restaurante, eso incluye regalar un postre, un café o un descuento por reseñar. Google lo considera interacción falsa y está estrictamente prohibido.",
           "Las reseñas deben reflejar una experiencia auténtica, y las infracciones pueden llevar a restricciones en tu Perfil de Empresa. La alternativa legítima es agradecer, pedir con naturalidad y responder.",
+          "Según medios especializados que dan seguimiento a la política, Google puede quitar las reseñas incentivadas y las restricciones pueden acumularse si las infracciones se repiten. También piden reportar carteles, volantes o códigos QR que ofrezcan incentivos, así que tu QR puede invitar a reseñar, pero no debe prometer nada a cambio.",
+          "Para un repaso más amplio de lo permitido, lee [políticas de reseñas de Google](/blog/que-si-y-que-no-pedir-resenas-google-politicas).",
         ],
       },
       {
         heading: "Cómo responder reseñas, también las negativas",
         body: [
           "Varias guías de reseñas recomiendan responder todas, no solo las positivas. A una reseña buena, agradece con una frase. A una negativa, responde con calma y sin discutir. Nunca ofrezcas algo a cambio de que la cambien, porque Google lo prohíbe.",
+          "Un protocolo breve para una reseña negativa: léela con calma antes de contestar, agradece que el cliente se tomó el tiempo, reconoce lo que vivió sin discutir los detalles en público e invítalo a seguir la conversación por un canal directo. No prometas compensaciones a cambio de que cambie su opinión.",
           "Para configurar tu perfil y el enlace paso a paso, revisa [configurar tu perfil de Google](/blog/como-configurar-perfil-de-google-y-pedir-resenas).",
         ],
       },
       {
         heading: "Pide a todos tus clientes, no solo a los contentos",
         body: [
-          "Conviene pedir la reseña a todos los clientes y no solo a los que salen contentos. Varias guías de reseñas lo consideran buena práctica, porque elegir a quién pedir sería una selección interesada. No es texto literal de Google, es una recomendación de guías secundarias.",
-          "Para ver cómo aplica esto a tu giro, lee [placa de reseñas para restaurantes](/blog/placa-resenas-google-para-restaurantes).",
+          "Conviene pedir la reseña a todos los clientes y no solo a los que salen contentos. Según blogs de terceros que citan la política de Google, pedir reseñas solo a clientes satisfechos o desalentar las negativas también está prohibido. Elegir a quién pedir sería una selección interesada.",
+          "Eso es una lectura de fuentes secundarias, no texto literal de Google. Para ver cómo aplica esto a tu giro, lee [placa de reseñas para restaurantes](/blog/placa-resenas-google-para-restaurantes).",
         ],
       },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
-    relatedBlogSlugs: ["placa-resenas-google-para-restaurantes", "placa-nfc-vs-codigo-qr-impreso-resenas", "como-configurar-perfil-de-google-y-pedir-resenas"],
+    relatedBlogSlugs: ["placa-resenas-google-para-restaurantes", "placa-nfc-vs-codigo-qr-impreso-resenas", "como-configurar-perfil-de-google-y-pedir-resenas", "que-si-y-que-no-pedir-resenas-google-politicas", "donde-poner-placa-resenas-google"],
     sources: [
       { label: "Ayuda de Perfil de Empresa de Google: política de reseñas", url: "https://support.google.com/business/answer/3474122?hl=es" },
+      { label: "Vinetur: encuesta de TheFork sobre reseñas y reservas en España", url: "https://www.vinetur.com/20260715104301/el-62-de-los-espanoles-descarta-un-restaurante-por-sus-malas-resenas-antes-de-reservar.html" },
+      { label: "PinMeto: reseñas incentivadas y Google (fuente secundaria)", url: "https://www.pinmeto.com/news/google-incentivized-reviews-penalty-2026/" },
+      { label: "PinMeto: restricciones acumulables por infracciones repetidas (fuente secundaria)", url: "https://www.pinmeto.com/news/google-review-restrictions-stack-repeat-violations-2026/" },
+      { label: "Search Engine Roundtable: restricciones del Perfil de Empresa por reseñas", url: "https://seroundtable.com/google-reviews-restrictions-business-profile-violations-38068.html" },
     ],
     faq: [
       {
@@ -7263,6 +7278,18 @@ export const blogPosts: BlogPost[] = [
       {
         q: "¿Pedir reseñas con un QR me puede traer problemas con Google?",
         a: "Google recomienda recordar a tus clientes que pueden reseñar y permite crear un enlace y un código QR en tu Perfil de Empresa. Lo prohibido es ofrecer algo a cambio. Las infracciones pueden llevar a restricciones en el perfil.",
+      },
+      {
+        q: "¿Puedo regalar un postre a quien deje una reseña?",
+        a: "No. Google prohíbe ofrecer productos, servicios gratis o descuentos a cambio de reseñas. Agradece de palabra y deja que cada cliente decida.",
+      },
+      {
+        q: "¿Puedo pedir reseñas solo a los clientes que salieron contentos?",
+        a: "Es mejor no hacerlo. Según blogs de terceros que citan la política de Google (no es texto oficial), pedir solo a clientes satisfechos no está permitido. Usa el mismo guion con todos.",
+      },
+      {
+        q: "¿El 62% de TheFork aplica a México?",
+        a: "No hay un dato para México en este artículo. El 62% viene de una encuesta de TheFork en España y se cita solo como referencia.",
       },
     ],
   },
