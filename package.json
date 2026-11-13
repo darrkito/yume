@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "indexnow": "node scripts/indexnow.mjs"
+    "indexnow": "node scripts/indexnow.mjs",
+    "parity": "npx tsx scripts/parity-check.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.8.0",
