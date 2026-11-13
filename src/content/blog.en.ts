@@ -588,56 +588,69 @@ export const blogPostsEn: BlogPost[] = [
     slug: BLOG_SLUG_EN["placas-resenas-google-pago-unico-vs-suscripcion"],
     title: "Google review plates: one-time price vs monthly subscription",
     metaTitle: "Google review plates: one-time price vs subscription",
-    description: "Compare a Google review plate with no subscription against plate and monthly platform services. Yume starts at MXN $140.",
+    description: "Compare Google review plates without subscriptions over 12 and 24 months, check the link and wording. Yume plates start at $140 MXN.",
     category: "Guides",
     publishedAt: "2026-11-03",
-    modifiedAt: "2026-11-03",
-    intro: "When comparing Google review plates without a subscription, check the price of the piece and whether you need a monthly platform. Yume offers a configured plate or stand for a one-time price with no monthly fee.",
+    modifiedAt: "2026-11-07",
+    intro: "When choosing Google review plates, the key question is whether to pay for the piece once or subscribe to a platform with a monthly fee. Here you can compare costs over 12 and 24 months, see what to check so the link works, and choose wording that respects Google’s rules. Yume offers a plate or stand for a one-time payment with no monthly fee.",
     sections: [
-      { heading: "One-time price or subscription platform", body: ["Some services on the market combine a plate with a subscription platform; their published plans start at around MXN $800 per month plus VAT according to their public websites (accessed November 2026). Those services may also sell the plate separately. Yume offers the configured piece without a platform or monthly fee, for less than the monthly plan mentioned above.", "If you manage many locations and need centralized reports, a platform can make sense. For one business looking to make its review link easier to reach, a one-time purchase may be enough."] },
-      { heading: "Costs and features compared", body: ["The 12-month comparison for one location assumes the monthly plan is kept for the full year. The platform calculation is MXN $799 × 12 = $9,588, or approximately $9,600 plus VAT; it excludes the cost of the piece."], table: { headers: ["Feature", "Plate + subscription platform service (other options)", "Yume"], rows: [
-        ["Monthly cost", "From around MXN $800 plus VAT for the platform", "No monthly fee"],
-        ["Cost of the piece", "Ask the service; it may be sold separately", "Plate MXN $140 or stand MXN $200, one-time payment"],
-        ["12-month cost for one location", "From around MXN $9,600 per year plus VAT for the platform alone, on a monthly plan", "MXN $140 or $200 total"],
-        ["Minimum order", "Ask the service", "You can order one piece"],
-        ["Dashboard", "Some platforms offer reports and alerts", "Not included; manage reviews in your Google Business Profile"],
-        ["Best for", "Multiple locations needing reports", "One business"],
+      { heading: "One-time payment or monthly subscription?", body: ["A one-time payment is useful when you have one location and only need to make it easy for customers to reach your review link. A subscription can make sense if you manage several locations and want monitoring and responses through software. The monthly payment is for the software, not the piece.", "According to a market comparison, subscriptions are often sold by quote with annual contracts and are considered excessive for a single location. It also notes that if you change services later, you lose the automation you had set up.", "For a shop, café, salon, or event venue that wants a well-presented piece beside the checkout or reception, a one-time purchase covers the essential need: making the link easy to access."] },
+      { heading: "How much do Google review plates cost over 12 and 24 months?", body: ["The Yume plate costs $140 MXN and the stand costs $200 MXN as a one-time payment, so the cost remains the same after 12 or 24 months. A market comparison places subscription platforms between $50 and $300 USD per month, approximately.", "The table uses approximate ranges from that comparison, which are in dollars, so they are not converted to pesos. Subscription totals simply multiply the monthly range by 12 and 24 months."], table: { headers: ["Option", "Approximate cost", "12 months", "24 months"], rows: [
+        ["Yume plate", "$140 MXN, one-time payment", "$140 MXN", "$140 MXN"],
+        ["Yume stand", "$200 MXN, one-time payment", "$200 MXN", "$200 MXN"],
+        ["One-time NFC + QR from a marketplace", "$13 to $48 USD", "Same one-time payment", "Same one-time payment"],
+        ["Generic marketplace options", "$5 to $25 USD", "Same one-time payment", "Same one-time payment"],
+        ["Subscription platform", "$50 to $300 USD per month", "$600 to $3,600 USD", "$1,200 to $7,200 USD"],
+        ["Homemade printed QR", "Free, with very low durability", "Free", "Free"],
       ] } },
-      { heading: "What comes with a Yume plate or stand?", body: ["Yume makes each piece to order, programs the NFC and generates the QR with your review link before shipping. The plate includes adhesive; the stand sits upright. Both are available in white or black and work without an app or subscription."] },
+      { heading: "What to check before buying a Google review plate", body: ["Check that both the NFC and QR open the direct link for leaving a review, not just the business profile. With generic plates, the buyer sometimes programs the tags and may save the wrong link. Test the piece with your phone before putting it in place.", "Quality and after-sales support vary greatly between sellers, so ask who programs the piece and who will help if something goes wrong. With Yume, the piece arrives with the NFC programmed and the QR generated using your review link.", "Also think about where it will live. A permanent plate is harder to relocate than a card, so take time to choose its position. Remember that the object alone does not ask for a review: someone on the team needs to mention it."] },
+      { heading: "What wording can you put on the plate under Google’s rules?", body: ["Use wording that invites feedback without offering anything in return. Google does not allow incentives such as discounts or gifts for posting reviews, or for changing or removing negative ones. It does allow requests for reviews that reflect an authentic experience, provided you do not try to influence the rating.", "A simple message such as ‘How was your visit today? Scan and tell us about your experience’ invites feedback without promising prizes or asking for a particular rating.", "The same policy prohibits pressuring customers while they are on the premises. It also does not allow asking staff for a specific number of reviews or specific content, such as mentioning an employee. The plate can invite feedback while the team remains cordial and avoids being insistent."] },
+      { heading: "What do you receive with a Yume plate or stand?", body: ["Yume makes the piece to order, programs the NFC and generates the QR with your review link before shipping. The plate includes adhesive; the stand sits upright. Both are available in white or black and work without an app or subscription.", "See the [Google review NFC plate](/en/products/google-review-nfc-plate) or the [Google review stand](/en/products/google-review-nfc-stand) and choose according to where you plan to place it.", `The piece does not include a dashboard: you manage reviews in your own Google profile. To learn more, read [how to get more reviews with NFC and QR](/en/blog/${BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"]}), compare an [NFC plate with a printed QR](/en/blog/${BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"]}), and see [how to use the review plate](/en/blog/${BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"]}).`] },
     ],
     faq: [
-      { q: "Do I need a dashboard?", a: "Not to use a Yume plate. It has no dashboard; you manage reviews in your own Google Business Profile. A multi-location platform may be useful if you need centralized reports and alerts." },
-      { q: "How much does a plate without a subscription cost?", a: "The Yume plate costs MXN $140 and the stand MXN $200, with a one-time payment and no subscription." },
+      { q: "Do I need a dashboard?", a: "Not to use a Yume plate. The piece has no dashboard; you manage reviews in your own Google Business Profile. A multi-location platform may be useful if you need centralized reports and alerts." },
+      { q: "How much does a plate without a subscription cost?", a: "The Yume plate costs $140 MXN and the stand $200 MXN, with a one-time payment and no subscription." },
       { q: "Does a plate guarantee more reviews?", a: "No. It makes the link easier to reach, but each customer decides whether to leave a review and what to write." },
       { q: "Who sets up the NFC and QR?", a: "Yume programs the NFC and generates the QR with your review link before shipping." },
+      { q: "Which link should the plate open?", a: "According to a market comparison, generic plates can be programmed with the profile link instead of the direct review link. Test the piece with your phone before putting it in place." },
+      { q: "Can I move the piece later?", a: "The stand sits upright, so you can move it. The plate uses adhesive, so choose its location carefully before attaching it." },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
     relatedBlogSlugs: [BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"], BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"], BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"], BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"], BLOG_SLUG_EN["placa-resenas-google-para-consultorios"], BLOG_SLUG_EN["placa-resenas-google-para-restaurantes"], BLOG_SLUG_EN["placa-resenas-google-para-salones-esteticas-y-barberias"], BLOG_SLUG_EN["placa-resenas-google-para-planners-y-eventos"], BLOG_SLUG_EN["como-hacer-una-encuesta-de-satisfaccion-del-cliente"]],
     quoteMessage: "Hi, I am interested in an NFC plate or stand for Google reviews.",
+    sources: [
+      { label: "Google: contribution policy", url: "https://support.google.com/contributionpolicy/answer/7400114?hl=en" },
+      { label: "NFC plate and review platform comparison", url: "https://onrec.com/node/129063" },
+    ],
   },
   {
     slug: BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"],
     title: "How to Set Up Your Google Business Profile and Ask for Reviews",
     metaTitle: "Google Business Profile: Setup and Reviews",
-    description: "Set up your Google Business Profile, complete your details and ask for honest reviews using a direct link, QR code or NFC plate.",
+    description: "Learn to set up your Google Business Profile, verify it by video and ask for honest reviews with a link, QR code or WhatsApp while following the rules.",
     category: "Guides",
     publishedAt: "2026-11-03",
-    modifiedAt: "2026-11-03",
-    intro: "A Google Business Profile helps introduce your business to people searching for it. This guide covers the general steps to set it up and ask customers for reviews respectfully, whether you run a restaurant, a practice or an event service in Mexico.",
+    modifiedAt: "2026-11-07",
+    intro: "A Google Business Profile helps introduce your business to people searching for it. This guide brings together the steps to set it up, verify it with a video if you work from home or by appointment, and ask customers for reviews respectfully, whether you run a restaurant, a practice or an event service in Mexico.",
     sections: [
-      { heading: "What is a Google Business Profile and why does it matter?", body: ["A Google Business Profile is a listing an eligible business can use to present information on Google, including Search and Maps. It can show useful details and receive customer reviews, so people who find you can learn about your business and decide how to contact you.", "You may also know it by its former name, Google My Business. Keeping information accurate helps people understand what you offer and how to find you; it does not guarantee a position in search results."] },
-      { heading: "How do you claim or create a business profile?", body: ["First search for your business name and location on Google Maps or Google Business Profile. If a listing already exists, request access to manage it; if there is no listing and your business meets Google's requirements, start creating a profile and provide the requested details.", "Follow Google's verification instructions to confirm you can manage the business. Available verification options vary by profile and may change, so use the instructions shown for your situation. Avoid creating a duplicate and keep access to the account you use to manage the listing."] },
-      { heading: "What should you complete so customers can find you?", body: ["Choose a category that describes your main activity and complete your hours, phone number, photos and description with accurate, current information. Look at the listing as a customer would: they should understand what you do, when you are open and how to contact you.", "Update special hours when needed and use representative photos of your premises, services or work. An event vendor can describe their service clearly; a practice can check that its phone number and office hours are correct."] },
-      { heading: "How can you ask for reviews while following Google's rules?", body: ["Ask real customers for an honest opinion and share the direct link without pressure or suggesting a rating. Do not offer discounts or free products in exchange for a review: Google considers incentives for reviews fake engagement and strictly prohibits them.", "Ask all real customers, not just those you think will be happy, and accept what they write. Do not post or commission fake reviews. For example: “If you would like to tell us about your experience, an honest review would help us.” Customers can respond later or decline."] },
-      { heading: "How can a direct link, QR code or NFC plate make reviews easier?", body: ["Share your profile's direct review link in a message or use a QR code customers can scan. You can also place an NFC and QR plate at reception, the register or a table, so customers can choose how to open the link on their phone.", `The Yume plate costs $${getProduct("placa-resena-google-nfc")!.price} MXN and includes adhesive; the Yume stand costs $${getProduct("stand-resena-google-nfc")!.price} MXN and sits upright. Both have NFC and QR. A printed QR code or plate only removes steps; it does not replace asking. Test the link before sharing it.`, "Invite customers politely and consistently, without promising results or influencing their opinion. Contact us on WhatsApp if you need help choosing a format."] },
-      { heading: "When and how should you respond to reviews?", body: ["Check reviews regularly and respond to positive and negative feedback, aiming to reply promptly. Thank the customer in a brief, professional message; if something went wrong, listen, apologize when appropriate and offer a suitable channel for follow-up without arguing in public.", "Do not share private information or details of a person's care, especially at a medical practice. A respectful response also shows other readers how you handle feedback."] },
-      { heading: "What other questions come up often?", body: ["Business owners often ask about cost, verification and how to request feedback. The answers below cover the essentials for getting started and keeping the listing accurate; check Google's help resources if the options shown in your own profile are different."] },
+      { heading: "What is a Google Business Profile and why does it matter?", body: ["A Google Business Profile is a listing an eligible business can use to present information on Google, including Maps and Search. It can show useful details and receive customer reviews, so people who find you can learn about your business and decide how to contact you.", "It is also known by its former name, Google My Business. Keeping information accurate helps people understand what you offer and how to find you; it does not guarantee a position in search results."] },
+      { heading: "How do you claim or create a business profile?", body: ["First search for your business name and location on Google Maps or Google Business Profile. If a listing already exists, request access to manage it; if there is no listing and your business meets Google's requirements, start creating a profile and provide the requested details.", "Follow Google's verification process to confirm you can manage the business. Available options vary by profile and may change, so check the instructions shown in your case. Avoid creating a duplicate listing and keep access to the account you use to manage it."] },
+      { heading: "How do you verify your Google profile with a video?", body: ["Google may request a verification video recorded live on your phone, unedited, in one continuous recording and at least 30 seconds long. If your business operates from home and you take your service to the customer, show street signs, your tools or products, and proof of management without showing sensitive information or other people's faces.", "According to Google, proof of management can be a service in progress, a branded asset or a document in the business's name, such as a utility bill. If your business does not receive customers at its address, Google says not to add that address to the profile.", "The video is recorded and uploaded from your phone through the profile, and prerecorded videos are not accepted. It helps to make the tour in one take: the street, your workspace and proof that you manage the business."] },
+      { heading: "What should you complete so customers can find you?", body: ["Choose a category that describes your main activity and complete your hours, phone number, photos and description with accurate, current information. Look at the details as a customer would: they should understand what you do, when you are open and how to contact you without finding conflicting information.", "Update special hours when needed and use representative photos of your premises, services or completed work. An event vendor can describe their service clearly; a practice can check that its phone number and office hours are correct."] },
+      { heading: "How can you ask for reviews while following Google's rules?", body: ["Ask your real customers for an honest opinion and share the direct link without pressure or suggesting a rating. Do not offer discounts or free products in exchange for a review: according to Google Business Profile Help, offering something like this is strictly prohibited and counts as fake engagement.", "Reviews should reflect an authentic experience. Ask all your real customers, not just those you think will be happy, and accept what they write. Do not post or commission fake reviews."] },
+      { heading: "How do you generate a review link or QR code?", body: ["The review link and QR code are generated from the Business Profile in a desktop browser; they cannot be generated on a phone. Open the profile, choose ‘Read reviews’, then ‘Get more reviews’, and copy the link or download the QR code by right-clicking and choosing ‘Save image as…’.", "After copying the link, open it on your phone to check that it leads to your listing. If you download the QR code, save the image to print on a card or use in a message."] },
+      { heading: "When and how should you ask for a review after delivery?", body: ["Google allows you to share the request by email, WhatsApp or Facebook, and suggests putting the link or QR code on receipts, in thank-you emails, at the end of a chat or as a printed code in the store. Choose the channel you already use with your customer.", "If you sell gifts for moms, planners or businesses with events, a WhatsApp message after delivery or a card with a QR code inside the package are two natural ways to ask. For example: ‘Thank you for trusting us with your event. If you would like to tell us how it went, here is the link for an honest review.’", "The person may respond later or choose not to. Asking kindly and without conditions is what keeps the review authentic."] },
+      { heading: "How can a link, QR code or NFC plate make reviews easier?", body: ["Share your listing's direct review link in a message or use a QR code customers can scan. You can also place an NFC and QR plate at reception, the register or a table: the customer chooses how to open the link on their phone.", `The Yume [NFC review plate](/en/products/google-review-nfc-plate) costs $${getProduct("placa-resena-google-nfc")!.price} MXN and includes adhesive; the Yume [NFC review stand](/en/products/google-review-nfc-stand) costs $${getProduct("stand-resena-google-nfc")!.price} MXN and sits upright. Both have NFC and QR. A printed QR code or plate only removes steps: it does not replace asking for a review.`, `If you are unsure which format to choose, read the comparison of an [NFC plate and a printed QR code](/en/blog/${BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"]}). And if you are looking for ideas to [get more reviews](/en/blog/${BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"]}), start with a kind, consistent invitation, without promising results or placing conditions on the opinion. To choose a format, contact us on WhatsApp.`] },
+      { heading: "When and how should you respond to reviews?", body: ["Check reviews regularly and respond to both positive and negative feedback, aiming to reply promptly. Thank the customer in a brief, professional message; if something went wrong, listen, apologize when appropriate and offer a suitable channel for follow-up without arguing in public.", "Do not share the person's private information or details of their care, especially at a medical practice. A respectful response also helps people reading the listing understand how you handle feedback.", "If a review violates Google's policies, you can report it from your listing by selecting the reason. An honest negative review should be answered, not reported."] },
     ],
     faq: [
       { q: "Is a Google Business Profile free?", a: "Google lets eligible businesses create and manage a Business Profile at no charge." },
-      { q: "Do I need to verify my business?", a: "Follow Google's instructions to verify the profile. Available verification options can vary." },
+      { q: "Do I need to verify my business?", a: "Follow Google's instructions to verify the profile. Available verification options can vary, and in some cases Google asks for a video recorded live on a phone." },
+      { q: "How long does verification video review take?", a: "According to Google, review can take up to 5 business days. If it is rejected, the profile shows the reasons and you can record another video that includes everything from the first one plus what was missing." },
+      { q: "Can I verify an online-only business?", a: "According to Google, online-only businesses without in-person service are not eligible for verification." },
       { q: "Can I ask for reviews over WhatsApp?", a: "Yes. Share the direct link and invite an honest opinion without incentives or pressure." },
-      { q: "Does a plate guarantee more reviews?", a: "No. A plate makes the link easier to reach; each customer decides whether to review and what to write." },
+      { q: "Can I pay to remove a negative review?", a: "No. Google prohibits paying to post, change or remove reviews, including negative ones." },
+      { q: "Does a plate guarantee more reviews?", a: "No. A plate makes the link easier to reach; each customer decides whether to leave a review and what to write." },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
     relatedBlogSlugs: [BLOG_SLUG_EN["placas-resenas-google-pago-unico-vs-suscripcion"], BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"], BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"], BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"], BLOG_SLUG_EN["placa-resenas-google-para-consultorios"], BLOG_SLUG_EN["placa-resenas-google-para-restaurantes"], BLOG_SLUG_EN["placa-resenas-google-para-salones-esteticas-y-barberias"], BLOG_SLUG_EN["placa-resenas-google-para-planners-y-eventos"], BLOG_SLUG_EN["como-hacer-una-encuesta-de-satisfaccion-del-cliente"]],
@@ -645,6 +658,9 @@ export const blogPostsEn: BlogPost[] = [
     sources: [
       { label: "Google: tips to get reviews", url: "https://support.google.com/business/answer/3474122?hl=en" },
       { label: "Google: prohibited and restricted content", url: "https://support.google.com/business/answer/7400114?hl=en" },
+      { label: "Google: ask for reviews with a link or QR code", url: "https://support.google.com/business/answer/16816815?hl=en" },
+      { label: "Google: verify your profile with a video", url: "https://support.google.com/business/answer/14271705?hl=en" },
+      { label: "Ionos: how to get Google reviews (third-party guide)", url: "https://www.ionos.com/es-us/digitalguide/online-marketing/vender-en-internet/como-conseguir-resenas-en-google/" },
     ],
   },
   {
@@ -2252,47 +2268,86 @@ export const blogPostsEn: BlogPost[] = [
   },
   {
     slug: BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"],
-    title: "How to Get More Google Reviews with an NFC and QR Plate",
-    metaTitle: "Google Review Plates: Get More Reviews with NFC & QR",
+    title: "Google Review Plate with NFC: What It Is and What It Costs",
+    metaTitle: "Google Review Plates: What They Are and What They Cost",
     description:
-      "Learn how Google review plates with NFC and QR work, where to place them, and how they help customers leave a review.",
+      "Learn about Google review plates with NFC and QR: how they work, what they cost, and how to ask for reviews while following Google's rules.",
     category: "Guides",
     publishedAt: "2026-09-15",
     modifiedAt: "2026-11-03",
     intro:
-      "Asking for a Google review is almost always awkward: you spell out your business name, the customer searches for it, sifts through several similar-looking results, and sometimes gives up before finding the right one. A plate with NFC and a QR code solves exactly that step: it goes straight to the correct listing in two seconds, with nothing for the customer to search for.",
+      "Asking for a Google review is almost always awkward: you give your customer the business name, they search for it, sift through similar results, and sometimes give up before finding the right one. A plate with NFC and a QR code solves that step: it takes them straight to the correct listing in two seconds, with nothing to search for. Here is what a Google review plate is, how it works, where to see its price, and the full method: when to ask, what to say, where to put the plate, which Google rules to follow, and how to respond when reviews arrive.",
     sections: [
-      {
-        heading: "Why timing matters more than the message",
-        body: [
-          "The best time to ask for a review is right when a customer is satisfied: at checkout, when picking up their order, on their way out of your office. If in that moment they have to pull out their phone, search for your business by hand, and pick it out among similar results, many simply won't, not because they don't want to leave a review, but because the process took more effort than they were willing to spend right then.",
-          "An NFC/QR plate removes that friction: the customer taps their phone or scans the code and lands straight on the \"leave a review\" screen for your listing, with nothing to type and no similar results to pick through.",
-        ],
-      },
-      {
-        heading: "NFC and QR together, not one or the other",
-        body: [
-          "NFC (the same \"tap to pay\" technology already used by bank cards) works with nearly any modern phone, Android or iPhone, with no app to open: the customer just taps their phone against the plate. The QR code is the backup for everything else: phones with NFC turned off, or customers who'd rather just use the camera.",
-          "Having both on the same plate covers practically any phone without relying on the customer knowing what NFC even is.",
-        ],
-      },
-      {
-        heading: "Where to place it so it actually gets used",
-        body: [
-          "The spots that work best: next to the register, on the front desk, on the table when the bill arrives, or on the desk at the end of an appointment: anywhere the customer is already in front of you at the moment they decide whether they're satisfied.",
-          "The version without a stand sticks directly onto those spots (counter, register, wall); the version with a stand sits upright on a desk or table with nothing to stick down, useful if you move it around often or don't want a permanent adhesive.",
-        ],
-      },
+      { heading: "What is a Google review plate with NFC?", body: [
+        "A Google review plate is a physical piece with an NFC chip and a QR code, both linked to your business's review link. The customer taps or scans it with their phone and goes straight to the screen for writing a review on your Google listing, without searching for you manually.",
+        "Depending on who sells it, you may find it called an NFC plate, a review card, or a Google review stand when it sits on a base. The idea is the same: shorten the path between your customer and the review form. At Yume we have two formats: a plate that sticks to a fixed spot and a stand that sits upright.",
+        "What it does not do: it does not publish reviews on its own or guarantee a rating. Your customer always writes the review using their Google account, and what they say depends on their experience with you."
+      ] },
+      { heading: "How a review plate works, step by step", body: [
+        "The customer brings their phone close to the plate or scans the QR code with the camera, and the review screen for your Google listing opens. They sign in to their Google account, write their opinion, and publish it. You do not need to dictate your business name or guide them through search results.",
+        "From your side, there are three moments. First, you mention the review at the end of the service. Second, the customer taps or scans the plate. Third, they write what they think, and you respond when it arrives.",
+        "The NFC chip stores the link to the review screen and is read when a phone is brought close, without opening an app, provided the phone has NFC and it is enabled. Otherwise, the QR code does the same job using the camera."
+      ] },
+      { heading: "How to get more Google reviews: the three-step method", body: [
+        "To get more Google reviews, ask at the end of the service while the experience is fresh, give the customer one-step access to your listing, and respond to every review that arrives. A plate with NFC and a QR code takes care of the second point: it takes the customer straight to your listing without searching.",
+        "The first step is timing: ask while the experience is fresh. The second is removing friction: customers should not have to type your business name or choose between similar results. The third is consistency: respond to the reviews you receive and ask again with each new customer. No step does the job alone, but together they turn an awkward request into a simple part of your daily service.",
+        "A plate does not guarantee a number of reviews or a particular rating: it only makes the path easier. Whether customers leave a review and what they write depend on their experience with you."
+      ] },
+      { heading: "Why timing matters more than the message", body: [
+        "The best time to ask for a review is just after the customer receives your service: at checkout, when picking up an order, or on the way out of the office. If they have to search for your business by hand at that moment, many put it off and never get around to it.",
+        "It is not necessarily that they do not want to leave a review: the process takes more time than they were willing to spend at that moment. An NFC/QR plate removes that friction: the customer taps their phone or scans the code and goes straight to the leave-a-review screen on your Google listing, without typing anything or choosing between similar results.",
+        "A practical detail: according to Google Business Profile Help, customers must sign in to a Google account to leave a review. If someone cannot sign in at that moment, do not insist: invite them to do it later at their leisure, from home."
+      ] },
+      { heading: "NFC and QR together", body: [
+        "NFC works by bringing the phone close to the plate, without opening an app, provided the phone has NFC and it is enabled. The QR code is the backup: it works with the camera when NFC is unavailable. Having both on one plate covers more customers.",
+        "NFC is the same tap-to-pay technology already used by bank cards, so many customers recognize it without an explanation. QR covers the other cases: phones with NFC turned off, or people who prefer to point their camera. Google itself mentions a link and a QR code as ways to ask for reviews.",
+        "For a detailed comparison, see the guide to an NFC plate versus a printed QR code, where we explain what each option offers."
+      ] },
+      { heading: "Where to place the plate so it actually gets used", body: [
+        "Place it where the customer is already in front of you when they decide whether they are satisfied: next to the register, on the reception counter, on the table when the bill arrives, or on the office desk. It should be visible, within reach, and out of the way of payment.",
+        "Think about your customer's journey: at what point have they received what they came for but have not yet left? That is where the plate belongs. If you leave it in a corner, or somewhere they only see as they hurry out, almost nobody will tap it.",
+        "The version without a base sticks directly to those spots (counter, register, wall). The stand version sits upright on a desk or table without adhesive, useful if you move it often or do not want to leave permanent adhesive."
+      ] },
+      { heading: "What to say when asking for a review", body: [
+        "Ask in person with a short sentence at the end of the service: 'If you would like to tell us how it went, an honest review would help us a lot; just tap your phone here.' Ask for an honest opinion without suggesting a rating or offering anything in return.",
+        "The plate does not replace your voice: someone who sees the sign without anyone mentioning it may walk right past. A kind phrase, said naturally, turns a plate into an invitation. You do not need a long script or repeated requests; mentioning it once and pointing to the plate is enough.",
+        "Adapt the tone to your business. It might sound calmer in an office and warmer in a cafe, but in either case keep the request brief and sincere, and let the customer feel free to say no without pressure."
+      ] },
+      { heading: "What not to do: Google's rules on asking for reviews", body: [
+        "Do not offer discounts or free products in exchange for a review: according to Google Business Profile Help, offering something like that is strictly prohibited and counts as fake engagement. Ask all your real customers, not just those you think will be happy, and accept what they write.",
+        "If someone had a bad experience, the healthiest response is to listen, respond respectfully, and solve the problem, rather than buy their silence.",
+        "An honest review, even an imperfect one, gives someone getting to know your business more confidence than a list of identical compliments. Ask naturally and let each customer say what they think."
+      ] },
+      { heading: "How to respond to reviews", body: [
+        "Respond to the reviews you receive, both good and bad. Google recommends responding to show that customer feedback matters, using a friendly, professional tone and brief replies. If the review is negative, apologize when appropriate, respond promptly, and do not share private details about the person who wrote it.",
+        "A short, personal response is enough: say thank you, mention something specific the customer shared, and, if there was a problem, say what you will do about it. Signing with your name or initials makes the response more human.",
+        "Avoid arguing with or attacking the person: other customers will read your response too."
+      ] },
+      { heading: "Plate or stand: which suits you?", body: [
+        "Choose the plate if you have a fixed spot to stick it, such as a counter, register, or wall. Choose the stand if you prefer to place it upright on a desk or table without permanent adhesive, or if you move it frequently.",
+        "Think about your space: an office with a desk and a reception area with a counter have different needs. If you are unsure, write to us on WhatsApp, tell us about your premises, and we will help you choose. To see how it works step by step, check the guide to using the Google review plate.",
+        "If you were looking for a Google review stand, this is the format: the same idea as the plate, standing upright on a base."
+      ] },
+      { heading: "How much does a Google review plate cost?", body: [
+        "To see how much a Yume Google review plate costs, open the plate or stand product page: the current price is always shown there. Both come in your choice of white or black, and the price is the same for both colors.",
+        "If you compare other options, do not look at price alone. Check whether it has NFC and a QR code, whether the link can be changed, and whether the support will hold up where you plan to place it. Remember that no plate guarantees reviews: what changes is how easy you make it for your customer."
+      ] },
     ],
     faq: [
-      {
-        q: "Where is the best place to put the NFC review plate?",
-        a: "Next to the register, on the front desk, on the table when the bill arrives, or on the desk at the end of an appointment: anywhere the customer is already in front of you when they decide whether they're satisfied.",
-      },
-      {
-        q: "What is the difference between the version with and without a stand?",
-        a: "The version without a stand sticks directly onto the counter, register, or wall. The version with a stand sits upright on a desk or table with nothing to stick down.",
-      },
+      { q: "What is a Google review plate?", a: "It is a physical piece with an NFC chip and a QR code linked to your business's review link. The customer taps or scans it with their phone and goes straight to the screen for leaving a review on your Google listing." },
+      { q: "How much does a Google review plate cost?", a: "The current price of the Yume plate and stand appears on each product page. Both come in white or black, at the same price in either color." },
+      { q: "What is a Google review stand?", a: "It is the version of the plate that stands upright on a desk or table without adhesive. At Yume, it is the Google review stand with NFC and QR." },
+      { q: "What colors does the plate come in?", a: "The plate and stand come in white or black. The color does not change the price." },
+      { q: "Does an NFC and QR plate guarantee more reviews?", a: "No. The plate only removes friction: it takes the customer straight to your listing. Whether they leave a review and what they write depend on their experience with you and on your asking at the right time." },
+      { q: "Do my customers need a Google account to leave a review?", a: "Yes. According to Google Business Profile Help, customers must sign in to a Google account to leave a review." },
+      { q: "Can I give a discount in exchange for a review?", a: "No. Google says offering free or discounted products or services in exchange for reviews is strictly prohibited and considered fake engagement." },
+      { q: "Why does the plate have NFC and QR?", a: "NFC lets customers tap with their phone without opening an app, provided NFC is enabled on the phone. QR is the backup for anyone who prefers the camera or does not have NFC available." },
+      { q: "Should I respond to reviews?", a: "Yes. Google recommends responding to show customer feedback matters: use a friendly, professional tone and brief replies, and apologize when appropriate for negative experiences without sharing the customer's private information." },
+      { q: "Which is better, the plate or the stand?", a: "The plate sticks to a fixed spot, such as a counter, register, or wall. The stand sits upright on a desk or table without adhesive, useful if you move it often." },
+      { q: "How do I ask for reviews with a link or QR code?", a: "Google's help says you can ask for reviews by sharing a Google link or a QR code for your listing. The Yume NFC and QR plate brings both access methods together in one piece." },
+    ],
+    sources: [
+      { label: "Google Business Profile Help: Read and reply to reviews, and ask customers for reviews", url: "https://support.google.com/business/answer/3474122?hl=en" },
     ],
     relatedBlogSlugs: [BLOG_SLUG_EN["placas-resenas-google-pago-unico-vs-suscripcion"], BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"], BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"], BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"], BLOG_SLUG_EN["placa-resenas-google-para-consultorios"], BLOG_SLUG_EN["placa-resenas-google-para-restaurantes"], BLOG_SLUG_EN["placa-resenas-google-para-salones-esteticas-y-barberias"], BLOG_SLUG_EN["placa-resenas-google-para-planners-y-eventos"], BLOG_SLUG_EN["como-hacer-una-encuesta-de-satisfaccion-del-cliente"]],
     relatedProductSlugs: ["stand-resena-google-nfc", "placa-resena-google-nfc"],
