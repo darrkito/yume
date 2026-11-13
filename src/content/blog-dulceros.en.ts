@@ -103,7 +103,7 @@ export const dulceroPostsEn: BlogPost[] = [
         ],
       },
     ],
-    relatedProductSlugs: [DULCERO],
+    relatedProductSlugs: ["dulceros-personalizados"],
     faq: [
       { q: "How much does a personalized favor box cost?", a: `First 100 pieces: $${dulceroUnit} MXN per favor box, with a minimum order of 10. Above 100 pieces, wholesale pricing applies and is quoted by message. National shipping is free on orders from $${FREE_SHIPPING_THRESHOLD}.` },
       { q: "What is the minimum order?", a: "The minimum order is 10 pieces, and you can order the exact quantity you need without fixed packs." },
@@ -116,7 +116,7 @@ export const dulceroPostsEn: BlogPost[] = [
       { q: "Can I pick them up in Guadalajara?", a: `Yes. In the Guadalajara metropolitan area you can pick them up for $${CASABLANCA_PRICE} at any of the ${CASABLANCA_BRANCHES.length} parcel pickup branches.` },
       { q: "Do you ship outside Guadalajara?", a: "Yes, we ship by courier throughout Mexico." },
     ],
-    relatedBlogSlugs: [en("ideas-de-dulceros-para-fiesta-infantil"), en("que-poner-en-un-dulcero"), en("dulceros-para-eventos-empresariales")],
+    relatedBlogSlugs: [en("ideas-de-dulceros-para-fiesta-infantil"), en("que-poner-en-un-dulcero"), en("dulceros-para-eventos-empresariales"), en("dulceros-dia-de-muertos-noviembre"), en("dulceros-navidenos-personalizados"), en("cuantos-dulceros-pedir-para-una-boda"), en("dulceros-para-bautizo-y-primera-comunion"), en("dulceros-para-xv-anos-elegantes"), en("mesa-de-dulces-para-boda")],
   },
   {
     slug: en("ideas-de-dulceros-para-fiesta-infantil"),
@@ -325,7 +325,7 @@ export const dulceroPostsEn: BlogPost[] = [
         ],
       },
     ],
-    relatedProductSlugs: [DULCERO],
+    relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
     sources: [
       {
         label: "When posadas begin in Mexico and how much a posada costs (InformaBTL)",
@@ -366,7 +366,7 @@ export const dulceroPostsEn: BlogPost[] = [
         a: "Posadas are celebrated from December 16 to 24, so it is a good idea to order in November.",
       },
     ],
-    relatedBlogSlugs: [en("etiquetas-navidenas-personalizadas"), en("dulceros-para-eventos-empresariales"), en("que-poner-en-un-dulcero"), en("dulceros-personalizados-guadalajara"), en("buen-fin-2026-stickers-y-dulceros-personalizados")],
+    relatedBlogSlugs: [en("etiquetas-navidenas-personalizadas"), en("dulceros-para-eventos-empresariales"), en("que-poner-en-un-dulcero"), en("dulceros-personalizados-guadalajara"), en("buen-fin-2026-stickers-y-dulceros-personalizados"), en("detalles-posada-empresa-personalizados")],
   },
   {
     slug: en("dulceros-para-dia-del-nino"),
@@ -419,7 +419,7 @@ export const dulceroPostsEn: BlogPost[] = [
         ],
       },
     ],
-    relatedProductSlugs: [DULCERO],
+    relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
     faq: [
       {
         q: "Do the favor boxes include candy?",
@@ -450,7 +450,7 @@ export const dulceroPostsEn: BlogPost[] = [
         a: `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after you approve the proof, plus ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} days of national shipping, or ${PICKUP_EXTRA_DAYS} business day if you pick up at a parcel branch in Guadalajara.`,
       },
     ],
-    relatedBlogSlugs: [en("que-poner-en-un-dulcero"), en("ideas-de-dulceros-para-fiesta-infantil"), en("dulceros-para-graduacion")],
+    relatedBlogSlugs: [en("que-poner-en-un-dulcero"), en("ideas-de-dulceros-para-fiesta-infantil"), en("dulceros-para-graduacion"), en("dulceros-personalizados-guadalajara")],
     sources: [
       {
         label: "News report: Sheinbaum and SEP maintain the restriction on candy in schools",
@@ -736,8 +736,8 @@ export const dulceroPostsEn: BlogPost[] = [
     sources: [
       { label: "Code of Canon Law (Holy See): Book IV, canon 867 on the baptism of infants", url: "https://www.vatican.va/archive/cod-iuris-canonici/eng/documents/cic_lib4-cann834-878_en.html" },
     ],
-    relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
-    relatedBlogSlugs: [en("dulceros-para-eventos-sociales-boda-xv-baby-shower"), en("que-poner-en-un-dulcero"), en("dulceros-personalizados-guadalajara"), en("cajas-bolsas-o-vasos-dulceros-cual-elegir")],
+    relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: [en("dulceros-para-eventos-sociales-boda-xv-baby-shower"), en("que-poner-en-un-dulcero"), en("dulceros-personalizados-guadalajara"), en("cajas-bolsas-o-vasos-dulceros-cual-elegir"), en("recuerdos-baby-shower-personalizados")],
   },
   {
     slug: en("dulceros-para-eventos-empresariales"),
@@ -839,14 +839,8 @@ export const dulceroPostsEn: BlogPost[] = [
         a: "We do not issue invoices (CFDI). If your company needs one, message us before ordering.",
       },
     ],
-    relatedProductSlugs: [DULCERO, "stickers-logo-personalizado"],
-    relatedBlogSlugs: [
-      en("dulceros-navidenos-personalizados"),
-      en("dulceros-para-eventos-sociales-boda-xv-baby-shower"),
-      en("que-poner-en-un-dulcero"),
-      en("como-pedir-invitaciones-personalizadas-para-eventos"),
-      en("tatuajes-temporales-personalizados-para-eventos"),
-    ],
+    relatedProductSlugs: ["dulceros-personalizados", "stickers-logo-personalizado"],
+    relatedBlogSlugs: [en("dulceros-navidenos-personalizados"), en("dulceros-para-eventos-sociales-boda-xv-baby-shower"), en("que-poner-en-un-dulcero"), en("como-pedir-invitaciones-personalizadas-para-eventos"), en("tatuajes-temporales-personalizados-para-eventos"), en("detalles-posada-empresa-personalizados"), en("aniversario-empresa-detalles-personalizados"), en("dulceros-personalizados-guadalajara")],
   },
   {
     slug: en("dulceros-para-eventos-sociales-boda-xv-baby-shower"),
@@ -979,8 +973,8 @@ export const dulceroPostsEn: BlogPost[] = [
         a: "The birthday girl's name, the date and the party's color or theme. You receive a digital proof before production, and nothing is produced until you approve it.",
       },
     ],
-    relatedProductSlugs: [DULCERO],
-    relatedBlogSlugs: [en("dulceros-para-bautizo-y-primera-comunion"), en("que-poner-en-un-dulcero"), en("dulceros-para-eventos-empresariales")],
+    relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: [en("dulceros-para-bautizo-y-primera-comunion"), en("que-poner-en-un-dulcero"), en("dulceros-para-eventos-empresariales"), en("dulceros-personalizados-guadalajara")],
     sources: [
       {
         label: "Quinceañera keepsake ideas with photos",
@@ -1268,15 +1262,8 @@ export const dulceroPostsEn: BlogPost[] = [
         ],
       },
     ],
-    relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
-    relatedBlogSlugs: [
-      en("ideas-de-dulceros-para-fiesta-infantil"),
-      en("que-poner-en-un-dulcero"),
-      en("dulceros-personalizados-guadalajara"),
-      en("dulceros-para-eventos-sociales-boda-xv-baby-shower"),
-      en("dulceros-para-bautizo-y-primera-comunion"),
-      en("dulceros-para-graduacion"),
-    ],
+    relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: [en("ideas-de-dulceros-para-fiesta-infantil"), en("que-poner-en-un-dulcero"), en("dulceros-personalizados-guadalajara"), en("dulceros-para-eventos-sociales-boda-xv-baby-shower"), en("dulceros-para-bautizo-y-primera-comunion"), en("dulceros-para-graduacion"), en("cuantos-dulceros-pedir-para-una-boda")],
     faq: [
       {
         q: "Which is better for party favors: a box, a bag or a cup?",

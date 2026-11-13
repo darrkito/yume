@@ -187,13 +187,8 @@ export const blogPostsEn: BlogPost[] = [
         "a": "No. It makes the link easier to reach; each person decides whether to leave feedback and what to write."
       }
     ],
-    "relatedProductSlugs": [
-      "placa-resena-google-nfc",
-      "stand-resena-google-nfc"
-    ],
-    "relatedBlogSlugs": [
-      "google-review-plates-one-time-price-vs-subscription"
-    ],
+    "relatedProductSlugs": ["placa-resena-google-nfc", "stand-resena-google-nfc"],
+    "relatedBlogSlugs": [BLOG_SLUG_EN["placas-resenas-google-pago-unico-vs-suscripcion"], BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"], BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"], BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"]],
     "quoteMessage": "Hi, I am interested in the NFC plate and stand for Google reviews.",
     "sources": [
       {
@@ -442,10 +437,8 @@ export const blogPostsEn: BlogPost[] = [
         "a": "The 12 × 12 cm plate with adhesive costs MXN $140 and the upright stand costs MXN $200. Both are available in white or black."
       }
     ],
-    "relatedProductSlugs": [
-      "placa-resena-google-nfc",
-      "stand-resena-google-nfc"
-    ],
+    relatedBlogSlugs: [BLOG_SLUG_EN["dulceros-personalizados-guadalajara"]],
+    "relatedProductSlugs": ["placa-resena-google-nfc", "stand-resena-google-nfc"],
     "quoteMessage": "Hi, I am interested in the NFC plate and stand for Google reviews.",
     "sources": [
       {
@@ -613,7 +606,7 @@ export const blogPostsEn: BlogPost[] = [
       { q: "Can I move the piece later?", a: "The stand sits upright, so you can move it. The plate uses adhesive, so choose its location carefully before attaching it." },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
-    relatedBlogSlugs: [BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"], BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"], BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"], BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"], BLOG_SLUG_EN["placa-resenas-google-para-consultorios"], BLOG_SLUG_EN["placa-resenas-google-para-restaurantes"], BLOG_SLUG_EN["placa-resenas-google-para-salones-esteticas-y-barberias"], BLOG_SLUG_EN["placa-resenas-google-para-planners-y-eventos"], BLOG_SLUG_EN["como-hacer-una-encuesta-de-satisfaccion-del-cliente"]],
+    relatedBlogSlugs: [BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"], BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"], BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"]],
     quoteMessage: "Hi, I am interested in an NFC plate or stand for Google reviews.",
     sources: [
       { label: "Google: contribution policy", url: "https://support.google.com/contributionpolicy/answer/7400114?hl=en" },
@@ -771,8 +764,8 @@ export const blogPostsEn: BlogPost[] = [
         ],
       },
     ],
-    relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
-    relatedBlogSlugs: [BLOG_SLUG_EN["dulceros-para-eventos-sociales-boda-xv-baby-shower"], BLOG_SLUG_EN["que-poner-en-un-dulcero"]],
+    relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable", "tatuajes-temporales-personalizados"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["dulceros-para-eventos-sociales-boda-xv-baby-shower"], BLOG_SLUG_EN["que-poner-en-un-dulcero"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"], BLOG_SLUG_EN["tatuajes-temporales-para-boda-eventos-y-fiestas"]],
     faq: [
       { q: "What can I give baby shower guests besides candy?", a: "At Yume you can choose a personalized favor box, a vinyl sticker with your party design or a custom temporary tattoo, on their own or combined with the same design." },
       { q: "What favors appear in shopping guides?", a: "One shopping guide lists bags of candy, handmade soaps, scented items and personalized pencils. Another guide adds succulents, candles, bookmarks, instant photos and mugs with the baby's name." },
@@ -1042,8 +1035,8 @@ export const blogPostsEn: BlogPost[] = [
         a: "We don't issue invoices (CFDI). Your receipt is the order confirmation email. If your company needs an invoice, message us on WhatsApp before paying.",
       },
     ],
-    relatedProductSlugs: ["stickers-logo-personalizado"],
-    relatedBlogSlugs: [BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"], BLOG_SLUG_EN["stickers-para-empaques-de-negocio"], BLOG_SLUG_EN["impresion-de-etiquetas-rollo-hoja-o-por-pieza"]],
+    relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"], BLOG_SLUG_EN["stickers-para-empaques-de-negocio"], BLOG_SLUG_EN["impresion-de-etiquetas-rollo-hoja-o-por-pieza"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"]],
   },
   {
     slug: BLOG_SLUG_EN["papeleria-personalizada-para-negocios-jalisco"],
@@ -1168,7 +1161,7 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["recetario-medico-personalizado", "stickers-logo-personalizado", "stickers-vinil-impermeable"],
-    relatedBlogSlugs: [BLOG_SLUG_EN["como-pedir-papeleria-personalizada-en-linea"], BLOG_SLUG_EN["papeleria-personalizada-vs-plantillas-genericas"], BLOG_SLUG_EN["stickers-personalizados-para-negocios-guadalajara"], BLOG_SLUG_EN["recetarios-medicos-personalizados-guadalajara"], BLOG_SLUG_EN["como-pedir-invitaciones-personalizadas-para-eventos"], BLOG_SLUG_EN["menu-de-boda-personalizado"]],
+    relatedBlogSlugs: [BLOG_SLUG_EN["como-pedir-papeleria-personalizada-en-linea"], BLOG_SLUG_EN["papeleria-personalizada-vs-plantillas-genericas"], BLOG_SLUG_EN["stickers-personalizados-para-negocios-guadalajara"], BLOG_SLUG_EN["recetarios-medicos-personalizados-guadalajara"], BLOG_SLUG_EN["como-pedir-invitaciones-personalizadas-para-eventos"], BLOG_SLUG_EN["menu-de-boda-personalizado"], BLOG_SLUG_EN["guia-planners-proveedor-detalles-personalizados"]],
   },
   {
     slug: BLOG_SLUG_EN["como-pedir-papeleria-personalizada-en-linea"],
@@ -1470,8 +1463,8 @@ export const blogPostsEn: BlogPost[] = [
         ],
       },
     ],
-    relatedProductSlugs: [],
-    relatedBlogSlugs: ["temporary-tattoos-for-weddings-events-and-parties", "how-long-do-temporary-tattoos-last-and-how-to-remove-them"],
+    relatedProductSlugs: ["stickers-vinil-impermeable"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["tatuajes-temporales-para-boda-eventos-y-fiestas"], BLOG_SLUG_EN["cuanto-duran-los-tatuajes-temporales-y-como-quitarlos"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"]],
     serviceLink: { href: "/en/products/custom-temporary-tattoos", label: "See custom temporary tattoos" },
     quoteMessage: "Hi, I'm interested in getting a quote for custom temporary tattoos.",
     faq: [
@@ -1637,7 +1630,7 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
-    relatedBlogSlugs: [BLOG_SLUG_EN["menu-de-boda-personalizado"], BLOG_SLUG_EN["stickers-para-bodas-eventos-y-fiestas"], BLOG_SLUG_EN["dulceros-para-eventos-sociales-boda-xv-baby-shower"], BLOG_SLUG_EN["tatuajes-temporales-para-boda-eventos-y-fiestas"], BLOG_SLUG_EN["papeleria-personalizada-vs-plantillas-genericas"], BLOG_SLUG_EN["como-pedir-papeleria-personalizada-en-linea"]],
+    relatedBlogSlugs: [BLOG_SLUG_EN["menu-de-boda-personalizado"], BLOG_SLUG_EN["stickers-para-bodas-eventos-y-fiestas"], BLOG_SLUG_EN["dulceros-para-eventos-sociales-boda-xv-baby-shower"], BLOG_SLUG_EN["tatuajes-temporales-para-boda-eventos-y-fiestas"], BLOG_SLUG_EN["papeleria-personalizada-vs-plantillas-genericas"], BLOG_SLUG_EN["como-pedir-papeleria-personalizada-en-linea"], BLOG_SLUG_EN["prueba-digital-pedido-evento-planners"], BLOG_SLUG_EN["cuando-enviar-invitaciones-de-boda"]],
     quoteMessage: "Hi, I'm interested in getting a quote for custom event invitations.",
   },
   {
@@ -2287,7 +2280,7 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
-    relatedBlogSlugs: [BLOG_SLUG_EN["troquelado-vs-semitroquelado-stickers"], BLOG_SLUG_EN["yume-vs-imprentas-online-stickers"], BLOG_SLUG_EN["donde-imprimir-stickers-personalizados-mexico"], BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"], BLOG_SLUG_EN["stickers-personalizados-para-mascotas"], BLOG_SLUG_EN["stickers-personalizados-para-negocios-guadalajara"]],
+    relatedBlogSlugs: [BLOG_SLUG_EN["troquelado-vs-semitroquelado-stickers"], BLOG_SLUG_EN["stickers-para-bodas-eventos-y-fiestas"], BLOG_SLUG_EN["yume-vs-imprentas-online-stickers"], BLOG_SLUG_EN["donde-imprimir-stickers-personalizados-mexico"], BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"], BLOG_SLUG_EN["stickers-personalizados-para-mascotas"], BLOG_SLUG_EN["stickers-personalizados-para-negocios-guadalajara"]],
   },
   {
     slug: BLOG_SLUG_EN["menu-de-boda-personalizado"],
@@ -2429,13 +2422,7 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable", "dulceros-personalizados"],
-    relatedBlogSlugs: [
-      BLOG_SLUG_EN["como-pedir-invitaciones-personalizadas-para-eventos"],
-      BLOG_SLUG_EN["stickers-para-bodas-eventos-y-fiestas"],
-      BLOG_SLUG_EN["papeleria-personalizada-vs-plantillas-genericas"],
-      BLOG_SLUG_EN["dulceros-para-eventos-sociales-boda-xv-baby-shower"],
-      BLOG_SLUG_EN["tatuajes-temporales-para-boda-eventos-y-fiestas"],
-    ],
+    relatedBlogSlugs: [BLOG_SLUG_EN["como-pedir-invitaciones-personalizadas-para-eventos"], BLOG_SLUG_EN["stickers-para-bodas-eventos-y-fiestas"], BLOG_SLUG_EN["papeleria-personalizada-vs-plantillas-genericas"], BLOG_SLUG_EN["dulceros-para-eventos-sociales-boda-xv-baby-shower"], BLOG_SLUG_EN["tatuajes-temporales-para-boda-eventos-y-fiestas"], BLOG_SLUG_EN["detalles-de-mesa-boda-personalizados"], BLOG_SLUG_EN["guia-wedding-planners-detalles-personalizados-guadalajara"]],
     quoteMessage: "Hi, I'm interested in getting a quote for custom wedding menus.",
   },
   {
@@ -2549,13 +2536,7 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["recetario-medico-personalizado"],
-    relatedBlogSlugs: [
-      BLOG_SLUG_EN["recetarios-medicos-personalizados-guadalajara"],
-      BLOG_SLUG_EN["recetario-medico-impreso-vs-digital"],
-      BLOG_SLUG_EN["recetario-medico-con-diseno-vs-sin-diseno"],
-      BLOG_SLUG_EN["datos-obligatorios-receta-medica-mexico"],
-      BLOG_SLUG_EN["yume-vs-imprentas-recetarios-medicos"],
-    ],
+    relatedBlogSlugs: [BLOG_SLUG_EN["recetarios-medicos-personalizados-guadalajara"], BLOG_SLUG_EN["recetario-medico-impreso-vs-digital"], BLOG_SLUG_EN["recetario-medico-con-diseno-vs-sin-diseno"], BLOG_SLUG_EN["datos-obligatorios-receta-medica-mexico"], BLOG_SLUG_EN["yume-vs-imprentas-recetarios-medicos"], BLOG_SLUG_EN["placa-resenas-google-para-consultorios"]],
     quoteMessage: "Hi, I'm interested in getting a quote for business cards for my medical practice.",
   },
   {
@@ -2766,8 +2747,8 @@ export const blogPostsEn: BlogPost[] = [
     sources: [
       { label: "Google Business Profile Help: Read and reply to reviews, and ask customers for reviews", url: "https://support.google.com/business/answer/3474122?hl=en" },
     ],
-    relatedBlogSlugs: [BLOG_SLUG_EN["placas-resenas-google-pago-unico-vs-suscripcion"], BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"], BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"], BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"], BLOG_SLUG_EN["placa-resenas-google-para-consultorios"], BLOG_SLUG_EN["placa-resenas-google-para-restaurantes"], BLOG_SLUG_EN["placa-resenas-google-para-salones-esteticas-y-barberias"], BLOG_SLUG_EN["placa-resenas-google-para-planners-y-eventos"], BLOG_SLUG_EN["como-hacer-una-encuesta-de-satisfaccion-del-cliente"]],
-    relatedProductSlugs: ["stand-resena-google-nfc", "placa-resena-google-nfc"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["placas-resenas-google-pago-unico-vs-suscripcion"], BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"], BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"], BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"], BLOG_SLUG_EN["placa-resenas-google-para-consultorios"], BLOG_SLUG_EN["placa-resenas-google-para-restaurantes"], BLOG_SLUG_EN["placa-resenas-google-para-salones-esteticas-y-barberias"], BLOG_SLUG_EN["placa-resenas-google-para-planners-y-eventos"], BLOG_SLUG_EN["como-hacer-una-encuesta-de-satisfaccion-del-cliente"]],
+    relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
   },
   {
     slug: BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"],
@@ -3126,6 +3107,7 @@ export const blogPostsEn: BlogPost[] = [
         a: "Yes. We send you a digital proof and print nothing without your approval. For vinyl stickers, it normally arrives within 24 hours of payment, with up to 2 rounds of adjustments.",
       },
     ],
+    relatedBlogSlugs: [BLOG_SLUG_EN["stickers-para-marca-pequena-vs-grande"], BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"], BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"]],
     relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
   },
   {
@@ -3346,15 +3328,7 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
-    relatedBlogSlugs: [
-      BLOG_SLUG_EN["tatuajes-temporales-para-boda-eventos-y-fiestas"],
-      BLOG_SLUG_EN["menu-de-boda-personalizado"],
-      BLOG_SLUG_EN["como-pedir-invitaciones-personalizadas-para-eventos"],
-      BLOG_SLUG_EN["dulceros-para-eventos-sociales-boda-xv-baby-shower"],
-      BLOG_SLUG_EN["troquelado-vs-semitroquelado-stickers"],
-      BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"],
-      BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"],
-    ],
+    relatedBlogSlugs: [BLOG_SLUG_EN["tatuajes-temporales-para-boda-eventos-y-fiestas"], BLOG_SLUG_EN["menu-de-boda-personalizado"], BLOG_SLUG_EN["como-pedir-invitaciones-personalizadas-para-eventos"], BLOG_SLUG_EN["dulceros-para-eventos-sociales-boda-xv-baby-shower"], BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"], BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"], BLOG_SLUG_EN["troquelado-vs-semitroquelado-stickers"], BLOG_SLUG_EN["donde-imprimir-stickers-personalizados-mexico"]],
   },
   {
     slug: BLOG_SLUG_EN["tatuajes-temporales-para-boda-eventos-y-fiestas"],
@@ -3447,7 +3421,7 @@ export const blogPostsEn: BlogPost[] = [
         ],
       },
     ],
-    relatedProductSlugs: [],
+    relatedProductSlugs: ["stickers-vinil-impermeable"],
     faq: [
       { q: "How long do temporary tattoos last?", a: "According to the FDA, temporary decal tattoos fade in hours or days, and henna tattoos can last up to 3 or 4 weeks. Duration depends on the type of product and each person's skin." },
       { q: "Are temporary tattoos safe for a party?", a: "The FDA warns that inks or colorants can irritate skin and cause rashes, so consider testing a small area before the event. We did not find a specific Mexican standard for temporary tattoos." },
@@ -3463,7 +3437,7 @@ export const blogPostsEn: BlogPost[] = [
       { label: "News report: FDA warning on temporary tattoos and their effects", url: "https://www.vozdeamerica.com/a/fda-advierte-sobre-tatuajes-temporales-y-consecuencias/1916158.html" },
       { label: "Skin care recommendations for Halloween or Day of the Dead makeup", url: "https://www.cronica.com.mx/tendencias/2026/10/29/te-vas-a-maquillar-para-halloween-o-dia-de-muertos-estas-son-las-mejores-recomendaciones-para-evitar-danos-y-cuidar-tu-piel/" },
     ],
-    relatedBlogSlugs: ["custom-temporary-tattoos-for-events-and-brands", "how-long-do-temporary-tattoos-last-and-how-to-remove-them"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["tatuajes-temporales-personalizados-para-eventos"], BLOG_SLUG_EN["cuanto-duran-los-tatuajes-temporales-y-como-quitarlos"]],
     serviceLink: { href: "/en/products/custom-temporary-tattoos", label: "See custom temporary tattoos" },
     quoteMessage: "Hi, I'm interested in getting a quote for temporary tattoos for a wedding, event, or party.",
   },
@@ -3601,7 +3575,7 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
-    relatedBlogSlugs: [BLOG_SLUG_EN["yume-vs-imprentas-online-stickers"], BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"], BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"]],
+    relatedBlogSlugs: [BLOG_SLUG_EN["yume-vs-imprentas-online-stickers"], BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"], BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"], BLOG_SLUG_EN["troquelado-vs-semitroquelado-stickers"], BLOG_SLUG_EN["stickers-para-bodas-eventos-y-fiestas"]],
   },
   {
     slug: BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"],
@@ -3913,7 +3887,7 @@ export const blogPostsEn: BlogPost[] = [
         ],
       },
     ],
-    relatedProductSlugs: [],
+    relatedProductSlugs: ["stickers-vinil-impermeable"],
     faq: [
       {
         q: "How long do temporary tattoos last?",
@@ -3944,7 +3918,7 @@ export const blogPostsEn: BlogPost[] = [
         a: "Production takes 2 to 3 business days after the 50% deposit. They are quoted on WhatsApp based on design, size, and quantity, and we ship across Mexico or you can pick them up in Guadalajara.",
       },
     ],
-    relatedBlogSlugs: ["custom-temporary-tattoos-for-events-and-brands", "temporary-tattoos-for-weddings-events-and-parties"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["tatuajes-temporales-personalizados-para-eventos"], BLOG_SLUG_EN["tatuajes-temporales-para-boda-eventos-y-fiestas"]],
     serviceLink: { href: "/en/products/custom-temporary-tattoos", label: "See custom temporary tattoos" },
     quoteMessage: "Hi, I'd like a quote for custom temporary tattoos.\n\nSize:\nQuantity:\nDo I already have a design? (yes / no):",
   },
@@ -4044,8 +4018,8 @@ export const blogPostsEn: BlogPost[] = [
         a: `Yes, we ship across Mexico for $${NATIONAL_SHIPPING_PRICE}, free on purchases of $${FREE_SHIPPING_THRESHOLD} or more. In the Guadalajara metro area you can also pick up at one of ${CASABLANCA_BRANCHES.length} Casa Blanca branches for $${CASABLANCA_PRICE}.`,
       },
     ],
-    relatedProductSlugs: ["stickers-vinil-impermeable"],
-    relatedBlogSlugs: [BLOG_SLUG_EN["etiquetas-con-nombre-para-botellas-loncheras-y-mochilas"], BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"], BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"], BLOG_SLUG_EN["impresion-de-etiquetas-rollo-hoja-o-por-pieza"], BLOG_SLUG_EN["troquelado-vs-semitroquelado-stickers"]],
+    relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"], BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"]],
     serviceLink: { href: "/en/products/waterproof-vinyl-stickers", label: "See custom vinyl stickers" },
     quoteMessage: "Hi, I'd like a quote for custom school labels.\n\nName(s):\nApproximate quantity:\nDo I already have a design? (yes / no):",
   },
@@ -4273,8 +4247,8 @@ export const blogPostsEn: BlogPost[] = [
         a: `The digital proof arrives within 24 hours of payment. Once you approve it, your order reaches your home in ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days, or is ready for pickup at a branch in Guadalajara in ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days.`,
       },
     ],
-    relatedProductSlugs: ["stickers-logo-personalizado"],
-    relatedBlogSlugs: [BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"], BLOG_SLUG_EN["troquelado-vs-semitroquelado-stickers"], BLOG_SLUG_EN["donde-imprimir-stickers-personalizados-mexico"]],
+    relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"], BLOG_SLUG_EN["donde-imprimir-stickers-personalizados-mexico"]],
   },
   {
     slug: BLOG_SLUG_EN["etiquetas-navidenas-personalizadas"],
@@ -4378,7 +4352,7 @@ export const blogPostsEn: BlogPost[] = [
         a: `National shipping is free on purchases of $${FREE_SHIPPING_THRESHOLD} or more. In the Guadalajara metro area, you can pick up for $${CASABLANCA_PRICE} at any of the ${CASABLANCA_BRANCHES.length} Casa Blanca parcel branches.`,
       },
     ],
-    relatedBlogSlugs: [BLOG_SLUG_EN["dulceros-navidenos-personalizados"], BLOG_SLUG_EN["stickers-para-empaques-de-negocio"], BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"], BLOG_SLUG_EN["buen-fin-2026-stickers-y-dulceros-personalizados"]],
+    relatedBlogSlugs: [BLOG_SLUG_EN["dulceros-navidenos-personalizados"], BLOG_SLUG_EN["detalles-posada-empresa-personalizados"], BLOG_SLUG_EN["stickers-para-empaques-de-negocio"], BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"], BLOG_SLUG_EN["troquelado-vs-semitroquelado-stickers"], BLOG_SLUG_EN["buen-fin-2026-stickers-y-dulceros-personalizados"]],
     download: { href: "/descargas/printable-christmas-gift-tags.pdf", label: "Free download: printable Christmas gift tags (PDF, color and black and white)" },
   },
   {
@@ -4524,7 +4498,7 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
-    relatedBlogSlugs: [BLOG_SLUG_EN["dulceros-para-eventos-sociales-boda-xv-baby-shower"], BLOG_SLUG_EN["stickers-para-bodas-eventos-y-fiestas"], BLOG_SLUG_EN["como-pedir-invitaciones-personalizadas-para-eventos"], BLOG_SLUG_EN["menu-de-boda-personalizado"], BLOG_SLUG_EN["tatuajes-temporales-para-boda-eventos-y-fiestas"]],
+    relatedBlogSlugs: [BLOG_SLUG_EN["dulceros-para-eventos-sociales-boda-xv-baby-shower"], BLOG_SLUG_EN["stickers-para-bodas-eventos-y-fiestas"], BLOG_SLUG_EN["como-pedir-invitaciones-personalizadas-para-eventos"], BLOG_SLUG_EN["menu-de-boda-personalizado"], BLOG_SLUG_EN["tatuajes-temporales-para-boda-eventos-y-fiestas"], BLOG_SLUG_EN["cuando-pedir-souvenirs-de-boda"], BLOG_SLUG_EN["cuantos-souvenirs-pedir-por-evento"], BLOG_SLUG_EN["presupuesto-recuerdos-de-boda-por-invitado"]],
     serviceLink: { href: "/en/products/custom-temporary-tattoos", label: "See custom temporary tattoos" },
     quoteMessage: "Hi, I'd like a quote for personalized wedding favors.",
     sources: [
@@ -4865,7 +4839,7 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
-    relatedBlogSlugs: [BLOG_SLUG_EN["menu-de-boda-personalizado"], "personalized-wedding-favors-with-name-and-date", "personalized-party-favor-boxes-guadalajara"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["menu-de-boda-personalizado"], BLOG_SLUG_EN["souvenirs-de-boda-personalizados"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"], BLOG_SLUG_EN["que-poner-en-un-dulcero"]],
     faq: [
       {
         q: "How much does the wedding menu cost?",
@@ -5075,7 +5049,7 @@ export const blogPostsEn: BlogPost[] = [
         ],
       },
     ],
-    relatedProductSlugs: [],
+    relatedProductSlugs: ["stickers-vinil-impermeable"],
     relatedBlogSlugs: [BLOG_SLUG_EN["mesa-de-dulces-para-boda"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"]],
     faq: [
       {
@@ -5183,7 +5157,7 @@ export const blogPostsEn: BlogPost[] = [
       { q: "Can I order wedding or baby shower details with the code?", a: "Yes, if the product is purchased in the online store, such as personalized favor boxes or stickers. For pieces quoted through our messaging service, write to us and we will reply." },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado", "dulceros-personalizados"],
-    relatedBlogSlugs: [BLOG_SLUG_EN["etiquetas-navidenas-personalizadas"], BLOG_SLUG_EN["dulceros-navidenos-personalizados"]],
+    relatedBlogSlugs: [BLOG_SLUG_EN["etiquetas-navidenas-personalizadas"], BLOG_SLUG_EN["dulceros-navidenos-personalizados"], BLOG_SLUG_EN["que-poner-en-un-dulcero"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"]],
     sources: [
       { label: "Buen Fin 2026: official dates and Profeco recommendations", url: "https://ruptura360.mx/periodismo-de-servicio/el-buen-fin-2026-fechas-oficiales-mexico/" },
       { label: "Profeco launches a price comparison microsite for Buen Fin 2026", url: "https://www.publimetro.com.mx/noticias/2026/10/27/profeco-lanza-micrositio-para-comparar-precios-en-el-buen-fin-2026/" },
@@ -5372,6 +5346,7 @@ export const blogPostsEn: BlogPost[] = [
         a: "According to an industry guide, a minimalist style only needs the name and the date. You can add the party colors if you want it to match the invitation.",
       },
     ],
+    relatedBlogSlugs: [BLOG_SLUG_EN["dulceros-personalizados-guadalajara"], BLOG_SLUG_EN["que-poner-en-un-dulcero"]],
     sources: [],
   },
   {
@@ -5465,6 +5440,7 @@ export const blogPostsEn: BlogPost[] = [
         a: "Whoever accompanies the children, your wedding planner or the venue staff. A wedding guide from 2012 proposes one monitor for every four children.",
       },
     ],
+    relatedBlogSlugs: [BLOG_SLUG_EN["que-poner-en-un-dulcero"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"]],
 
   },
   {
@@ -5552,6 +5528,8 @@ export const blogPostsEn: BlogPost[] = [
         a: "The sources we reviewed give no amount limits or exact invoice (CFDI) requirements for client gifts. Ask your accountant before buying.",
       },
     ],
+    relatedBlogSlugs: [BLOG_SLUG_EN["que-poner-en-un-dulcero"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"], BLOG_SLUG_EN["dulceros-navidenos-personalizados"]],
+
   },
   {
     slug: "wedding-planner-custom-details-guadalajara",
@@ -5663,6 +5641,8 @@ export const blogPostsEn: BlogPost[] = [
         a: "No. The candy box arrives assembled and empty, with a name and theme, so you or the couple decide what goes inside.",
       },
     ],
+    relatedBlogSlugs: [BLOG_SLUG_EN["dulceros-personalizados-guadalajara"], BLOG_SLUG_EN["que-poner-en-un-dulcero"]],
+
   },
   {
     slug: "personalized-surprise-gift-ideas-candy-boxes",
@@ -5781,6 +5761,8 @@ export const blogPostsEn: BlogPost[] = [
         a: "According to a regional guide, muéganos are tied to Huamantla, Tlaxcala, and cocadas to Veracruz. You can use sweets from the honoree's region as filling.",
       },
     ],
+    relatedBlogSlugs: [BLOG_SLUG_EN["que-poner-en-un-dulcero"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"], BLOG_SLUG_EN["dulceros-dia-de-muertos-noviembre"], BLOG_SLUG_EN["dulceros-navidenos-personalizados"]],
+
   },
   {
     slug: "how-many-candy-boxes-to-order-for-a-wedding",
@@ -5897,6 +5879,8 @@ export const blogPostsEn: BlogPost[] = [
         a: "The minimum order is 10 pieces, and from there you can order the exact quantity you need.",
       },
     ],
+    relatedBlogSlugs: [BLOG_SLUG_EN["mesa-de-dulces-para-boda"], BLOG_SLUG_EN["que-poner-en-un-dulcero"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"]],
+
   },
   {
     slug: "what-sweets-to-put-in-a-wedding-candy-dish",
@@ -6290,8 +6274,8 @@ export const blogPostsEn: BlogPost[] = [
         ],
       },
     ],
-    relatedProductSlugs: ["personalized-party-favor-boxes", "stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["personalized-party-favor-boxes-guadalajara", "what-to-put-in-a-party-favor-box", "how-many-party-favors-to-order-per-event", "personalized-wedding-favors-with-name-and-date", "when-to-order-wedding-favors"],
+    relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["dulceros-personalizados-guadalajara"], BLOG_SLUG_EN["que-poner-en-un-dulcero"], BLOG_SLUG_EN["cuantos-souvenirs-pedir-por-evento"], BLOG_SLUG_EN["souvenirs-de-boda-personalizados"], BLOG_SLUG_EN["cuando-pedir-souvenirs-de-boda"]],
     sources: [],
     faq: [
       {
@@ -6865,8 +6849,8 @@ export const blogPostsEn: BlogPost[] = [
         ],
       },
     ],
-    relatedProductSlugs: ["google-review-nfc-plate", "google-review-nfc-stand"],
-    relatedBlogSlugs: ["google-review-plate-for-medical-practices", "how-to-get-more-google-reviews-nfc-qr", "set-up-google-business-profile-and-ask-for-reviews", "nfc-plate-vs-printed-qr-code-for-reviews"],
+    relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["placa-resenas-google-para-consultorios"], BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"], BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"], BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"]],
     sources: [
       { label: "Google: contribution content policies (reviews)", url: "https://support.google.com/contributionpolicy/answer/7400114?hl=es" },
     ],
