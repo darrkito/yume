@@ -5677,6 +5677,77 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "does-nfc-plate-work-iphone-android",
+    title: "NFC Plate on iPhone and Android: What to Know",
+    description:
+      "Does an NFC plate work with iPhone and Android? On most recent phones, yes, without an app. Here is when it fails and how the backup QR helps.",
+    category: "Guides",
+    publishedAt: "2026-11-13",
+    intro:
+      "Before buying an NFC plate, the most honest question is whether it will work with your customers' phones. The short answer is yes on almost all recent iPhones and Android phones, without an app, but with limits worth knowing. Here they are, explained calmly, along with the 5-second test you can run when yours arrives.",
+    sections: [
+      {
+        heading: "Does an NFC plate work with iPhone and Android without an app?",
+        body: [
+          "Yes, on most recent iPhones and Android phones the plate reads without installing anything. Apple documents background NFC tag reading from the iPhone XS onward, and a regular web link opens in the browser. Still, there are situations where it does not respond, which is why the plate carries a backup QR.",
+          "On Android, the developer documentation recommends the NDEF format for the broadest compatibility across devices. A Spanish-language guide also notes that reading is usually more direct on Android than on iPhone, though that is best taken as a general reference.",
+        ],
+      },
+      {
+        heading: "What happens on an iPhone when you tap the plate",
+        body: [
+          "On an iPhone, a notification appears on the screen and the person has to tap it to open the content; it does not open by itself. The screen must also be on: if the phone is locked, it first asks to be unlocked. It is a small step, but nobody should expect a single tap.",
+          "According to Apple, if the link has no associated app, it opens in Safari. In other words, to see a web page the person does not need to install anything.",
+        ],
+      },
+      {
+        heading: "When an NFC plate does not respond",
+        body: [
+          "There are cases where the plate does not read: an iPhone older than the XS, airplane mode, the camera open, Apple Pay or Wallet in use, or another app's NFC scan in progress. It can also fail if the phone has not been unlocked since it was turned on. Some thick or metal cases can interfere.",
+          "With an iPhone older than the XS you cannot assume the plate works without an app, so we do not promise compatibility with every model. If any of this happens, the person loses nothing: they use the QR.",
+        ],
+      },
+      {
+        heading: "Why the plate has a backup QR",
+        body: [
+          "Because no reading method works on every phone. Apple notes that not all devices support background tag reading and recommends offering an alternative. That is why the Yume plate comes with the QR already printed: if NFC does not respond, the person opens the camera and scans.",
+          "The [Google review NFC plate](/en/products/google-review-nfc-plate) arrives already programmed with your business's review link, with no app and no subscription. For the full comparison, read [NFC plate vs printed QR](/en/blog/nfc-plate-vs-printed-qr-code-for-reviews).",
+        ],
+      },
+      {
+        heading: "A 5-second test before you put it on display",
+        body: [
+          "Hold the back of the phone to the plate with the screen on, and do not remove the case on the first try. On an iPhone, tap the notification that appears. If nothing happens within a few seconds, scan the QR with the camera. With those two paths, almost anyone reaches the same link.",
+          "Run this test when you receive it, with your phone and, if you can, someone else's. To decide where to place it, read [how to use your plate](/en/blog/how-to-use-your-yume-google-review-plate). If you prefer something free-standing with no sticking, see the [Google review NFC stand](/en/products/google-review-nfc-stand).",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
+    relatedBlogSlugs: ["nfc-plate-vs-printed-qr-code-for-reviews", "how-to-use-your-yume-google-review-plate", "google-review-plates-one-time-price-vs-subscription", "how-to-get-more-google-reviews-nfc-qr"],
+    sources: [
+      { label: "Apple Developer: Adding support for background tag reading", url: "https://developer.apple.com/documentation/corenfc/adding-support-for-background-tag-reading.md" },
+      { label: "Android Developers: NFC basics", url: "https://developer.android.com/develop/connectivity/nfc/nfc?hl=es" },
+    ],
+    faq: [
+      {
+        q: "Does my customer need to install an app to use the plate?",
+        a: "Not on iPhone XS and later, nor on recent Android phones. For a web link, the phone's own reading is enough, and the Yume plate needs no app or subscription.",
+      },
+      {
+        q: "What if the iPhone is very old?",
+        a: "With an iPhone older than the XS you cannot assume the plate works without an app. In that case, the person scans the QR that is already printed on it.",
+      },
+      {
+        q: "Does the phone case affect reading?",
+        a: "Some thick or metal cases can interfere. Do not remove it on your first test: if it does not respond, take it off and try again, or use the QR.",
+      },
+      {
+        q: "Why does the iPhone ask me to tap a notification?",
+        a: "Because that is how Apple documents background reading: a notification appears and the person taps it to open the content.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPostEn(slug: string) {

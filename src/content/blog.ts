@@ -6910,6 +6910,77 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "placa-nfc-funciona-iphone-android",
+    title: "Placa NFC con iPhone y Android: qué debes saber",
+    description:
+      "¿La placa NFC funciona con iPhone y Android? Sí en la mayoría de los recientes, sin app. Te decimos cuándo falla y cómo ayuda el QR de respaldo.",
+    category: "Guías",
+    publishedAt: "2026-11-13",
+    intro:
+      "Antes de comprar una placa NFC, la duda más honesta es si funcionará con el teléfono de tus clientes. La respuesta corta es que sí con casi todos los iPhone y Android recientes, sin app, pero con límites que conviene conocer. Aquí los explicamos con calma, junto con la prueba de 5 segundos que puedes hacer al recibir la tuya.",
+    sections: [
+      {
+        heading: "¿La placa NFC funciona con iPhone y Android sin app?",
+        body: [
+          "Sí, en casi todos los iPhone y Android recientes la placa se lee sin instalar nada. Apple documenta la lectura de etiquetas NFC en segundo plano desde el iPhone XS, y un enlace web normal se abre en el navegador. Aun así, hay situaciones en que no responde, y por eso lleva un QR de respaldo.",
+          "En Android, la documentación para desarrolladores recomienda el formato NDEF para lograr la máxima compatibilidad entre dispositivos. Una guía en español señala además que en Android la lectura suele ser más directa que en iPhone, aunque conviene tomarlo como una referencia general.",
+        ],
+      },
+      {
+        heading: "Qué pasa en un iPhone al acercar la placa",
+        body: [
+          "En un iPhone aparece una notificación en la pantalla y la persona debe tocarla para abrir el contenido; no se abre sola. Además, la pantalla debe estar encendida: si el teléfono está bloqueado, primero pide desbloquearlo. Es un gesto pequeño, pero conviene decirlo para que nadie espere un toque y listo.",
+          "Según Apple, si el enlace no tiene una app asociada, se abre en Safari. Es decir, para ver una página web la persona no necesita instalar nada.",
+        ],
+      },
+      {
+        heading: "Cuándo la placa NFC no responde",
+        body: [
+          "Hay casos en que la placa no se lee: un iPhone anterior al XS, el modo avión, la cámara abierta, Apple Pay o Wallet en uso, o una lectura NFC de otra app en curso. También puede fallar si el teléfono no se ha desbloqueado desde que se encendió. Algunos estuches gruesos o con metal pueden interferir.",
+          "Con un iPhone anterior al XS no se puede dar por hecho que la placa funcione sin app, así que no prometemos compatibilidad con todos los modelos. Si algo de esto pasa, la persona no pierde nada: usa el QR.",
+        ],
+      },
+      {
+        heading: "Por qué la placa lleva un QR de respaldo",
+        body: [
+          "Porque ningún método de lectura funciona en todos los teléfonos. Apple indica que no todos los dispositivos admiten la lectura en segundo plano y recomienda ofrecer una alternativa. Por eso la placa de Yume lleva el QR ya impreso: si el NFC no responde, la persona abre la cámara y escanea.",
+          "La [placa de reseñas NFC](/productos/placa-resena-google-nfc) se entrega ya programada con el enlace de reseñas de tu negocio, sin app ni suscripción. Si quieres ver la comparación completa, revisa [placa NFC frente al QR impreso](/blog/placa-nfc-vs-codigo-qr-impreso-resenas).",
+        ],
+      },
+      {
+        heading: "Prueba de 5 segundos antes de ponerla a la vista",
+        body: [
+          "Acerca la parte trasera del teléfono a la placa, con la pantalla encendida y sin quitar el estuche en la primera prueba. En iPhone, toca la notificación que aparece. Si en unos segundos no pasa nada, escanea el QR con la cámara. Con esos dos caminos, casi cualquier persona llega al mismo enlace.",
+          "Haz esta prueba al recibirla, con tu teléfono y con el de alguien más si puedes. Para ver dónde colocarla, revisa [cómo usar la placa](/blog/como-usar-placa-resenas-google-yume). Si prefieres algo de pie y sin pegar, mira el [stand de reseñas NFC](/productos/stand-resena-google-nfc).",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
+    relatedBlogSlugs: ["placa-nfc-vs-codigo-qr-impreso-resenas", "como-usar-placa-resenas-google-yume", "placas-resenas-google-pago-unico-vs-suscripcion", "como-conseguir-mas-resenas-de-google-nfc-qr"],
+    sources: [
+      { label: "Apple Developer: Adding support for background tag reading", url: "https://developer.apple.com/documentation/corenfc/adding-support-for-background-tag-reading.md" },
+      { label: "Android Developers: Funciones básicas de NFC", url: "https://developer.android.com/develop/connectivity/nfc/nfc?hl=es" },
+    ],
+    faq: [
+      {
+        q: "¿Mi cliente necesita instalar una app para usar la placa?",
+        a: "No en los iPhone XS y posteriores, ni en los Android recientes. Con un enlace web basta la lectura del teléfono, y la placa de Yume no requiere app ni suscripción.",
+      },
+      {
+        q: "¿Qué hago si el iPhone es muy viejo?",
+        a: "Con un iPhone anterior al XS no se puede dar por hecho que la placa funcione sin app. En ese caso, la persona escanea el QR que ya viene impreso.",
+      },
+      {
+        q: "¿El estuche afecta la lectura?",
+        a: "Algunos estuches gruesos o con metal pueden interferir. En tu primera prueba no lo quites: si no responde, quítalo y vuelve a intentar, o usa el QR.",
+      },
+      {
+        q: "¿Por qué el iPhone pide tocar una notificación?",
+        a: "Porque así lo documenta Apple para la lectura en segundo plano: aparece una notificación y la persona la toca para abrir el contenido.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string) {

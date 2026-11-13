@@ -91,6 +91,7 @@ export const BLOG_SLUG_EN: Record<string, string> = {
   "presupuesto-recuerdos-de-boda-por-invitado": "wedding-favor-budget-per-guest",
   "checklist-planners-pedido-detalles-evento": "planner-checklist-custom-favors-order-event",
   "detalles-evento-con-clientes-personalizados": "custom-details-for-client-events",
+  "placa-nfc-funciona-iphone-android": "does-nfc-plate-work-iphone-android",
 };
 
 export const PRODUCT_SLUG_ES: Record<string, string> = Object.fromEntries(
