@@ -92,6 +92,7 @@ export const BLOG_SLUG_EN: Record<string, string> = {
   "checklist-planners-pedido-detalles-evento": "planner-checklist-custom-favors-order-event",
   "detalles-evento-con-clientes-personalizados": "custom-details-for-client-events",
   "placa-nfc-funciona-iphone-android": "does-nfc-plate-work-iphone-android",
+  "donde-poner-placa-resenas-google": "where-to-put-your-google-review-plate",
 };
 
 export const PRODUCT_SLUG_ES: Record<string, string> = Object.fromEntries(

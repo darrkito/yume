@@ -6981,6 +6981,103 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "donde-poner-placa-resenas-google",
+    title: "Dónde poner el QR de reseñas de Google: caja, mesa o recepción",
+    metaTitle: "Dónde poner el QR de reseñas de Google: caja y mesa",
+    description:
+      "Dónde poner el QR de reseñas de Google en tu negocio: caja, mesa o recepción, a qué altura, qué texto llevar y qué errores evitar con una sola placa.",
+    category: "Guías",
+    publishedAt: "2026-11-13",
+    intro:
+      "Una placa de reseñas solo sirve si el cliente la ve y sabe qué hacer: un QR escondido no se usa. Esta guía te dice dónde ponerla según tu tipo de negocio (caja, mesa o recepción), cómo dejarla a la altura de los ojos, qué texto llevar y qué errores evitar. Está pensada para un negocio con una sola placa.",
+    sections: [
+      {
+        heading: "Dónde poner el QR de reseñas de Google si solo tienes una placa",
+        body: [
+          "Pon la placa donde el cliente ya está parado o sentado, a la altura de los ojos: junto a la terminal de pago, en la mesa o en la recepción después del servicio. Elige un solo lugar principal y complétalo con uno más si hace falta.",
+          "La tabla resume la regla: el lugar depende de cuándo termina la atención en tu negocio.",
+        ],
+        table: {
+          headers: ["Tipo de negocio", "Mejor lugar", "Cuándo la ve el cliente"],
+          rows: [
+            ["Tienda o local con caja", "Junto a la terminal de pago", "Al pagar"],
+            ["Restaurante o cafetería", "Mesa, y caja como segunda opción", "Durante la visita y al pagar"],
+            ["Consultorio, salón o barbería", "Recepción o mostrador", "Al terminar la atención"],
+          ],
+        },
+      },
+      {
+        heading: "Caja: junto a la terminal de pago",
+        body: [
+          "La caja es una de las ubicaciones que las guías de proveedores de QR señalan como de mejor rendimiento. Colócala junto a la terminal de pago, a la altura de los ojos, de frente y sin nada que la tape. Una de esas guías sugiere un soporte un poco por encima del lector de tarjetas.",
+          "Esa guía cita una cifra de 15 a 20% para la zona de pago (atribuida a MapLift). Tómala como orientativa: viene de un proveedor de QR, no de un estudio independiente, y tu resultado depende de tu flujo de clientes. Un QR escondido detrás de la caja o bajo el nivel del mostrador no se escanea.",
+        ],
+      },
+      {
+        heading: "Mesa: a la vista durante la visita",
+        body: [
+          "En restaurantes y cafeterías, la placa de mesa funciona cuando queda en la línea de visión de quien está sentado, sin estorbar la conversación ni la comida. Si el cliente tiene que mover platos o vasos para verla, ya quedó en mal lugar. Para mesas, un stand de pie evita pegar nada.",
+          "La misma guía atribuye 12% a los porta-carteles de mesa en restaurantes (cifra atribuida a MapLift), también orientativa. Si tu negocio es un restaurante, revisa la guía de [placa de reseñas para restaurantes](/blog/placa-resenas-google-para-restaurantes).",
+        ],
+      },
+      {
+        heading: "Recepción: después del servicio, nunca antes",
+        body: [
+          "En consultorios, salones y otros negocios con recepción, la placa va en el mostrador o en la zona de espera posterior al servicio, cuando el cliente ya vivió la atención. Pedir la reseña antes del servicio es prematuro, según la guía de proveedor consultada, y además no tiene sentido: aún no hay experiencia que opinar.",
+          "Si atiendes en consultorio, tienes una guía específica para [placa de reseñas para consultorios](/blog/placa-resenas-google-para-consultorios), y si tienes salón o barbería, la de [salones, estéticas y barberías](/blog/placa-resenas-google-para-salones-esteticas-y-barberias). En ambos casos la placa va a la vista de todos, no solo de quien parece conforme.",
+        ],
+      },
+      {
+        heading: "Qué texto poner junto a la placa",
+        body: [
+          "Pon una frase corta y clara que diga qué hacer: sin un texto explicativo, una guía de proveedor reporta que el escaneo baja de 73% a 39%. Tus clientes necesitan saber que es para dejar una reseña y que basta con acercar el celular o escanear.",
+          "Dos ejemplos de textos cortos que sugiere esa guía: en el mostrador, «¿Qué tal tu visita? Escanea para dejar una reseña rápida», y a la salida, «Gracias por venir. Escanea y cuéntanos cómo nos fue». Si además mencionas la placa en voz alta, la guía estima hasta 40% más de escaneos, otra cifra de proveedor.",
+        ],
+      },
+      {
+        heading: "Errores que hacen que nadie la use",
+        body: [
+          "Los errores más comunes son esconder la placa detrás de la caja o bajo el nivel del mostrador, dejarla sin texto, llenar el local de códigos distintos y pedir la reseña antes de atender. Cualquiera de ellos basta para que el cliente ni la vea ni sepa qué hacer con ella.",
+          "Más placas no es mejor: varios códigos en el mismo local confunden, y bastan dos o tres ubicaciones. Para decidir entre NFC y QR impreso, mira la comparación de [placa NFC o QR impreso](/blog/placa-nfc-vs-codigo-qr-impreso-resenas).",
+        ],
+      },
+      {
+        heading: "Cómo pedirla sin incentivos y a todos los clientes",
+        body: [
+          "Google prohíbe ofrecer pagos, descuentos o bienes y servicios gratis a cambio de reseñas, y también pedir reseñas positivas solo a ciertos clientes. Por eso la placa debe estar a la vista de todos, con un texto neutral, y sin promoción atada a la reseña. Pedir reseñas auténticas sin incentivo sí está permitido.",
+          "Una placa fija en un lugar visible ayuda a que las reseñas lleguen de forma constante, en lugar de en un solo día. Si quieres ver cómo se prepara el perfil, revisa [cómo pedir reseñas de Google](/blog/como-configurar-perfil-de-google-y-pedir-resenas).",
+        ],
+      },
+      {
+        heading: "Elegido el lugar: qué incluye la placa de Yume",
+        body: [
+          "La placa de Yume llega ya programada con el enlace de reseñas de tu negocio y con el QR de respaldo impreso, así que el cliente puede acercar el celular o escanear el QR desde el mismo lugar. La placa lleva adhesivo; el stand se para solo, sin pegar.",
+          "Es pago único, sin suscripción ni app. Mira la [placa de reseñas NFC](/productos/placa-resena-google-nfc) para caja o recepción y el [stand de reseñas NFC](/productos/stand-resena-google-nfc) para mesas. Cuando recibas la tuya, sigue [cómo usar tu placa de Yume](/blog/como-usar-placa-resenas-google-yume).",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
+    relatedBlogSlugs: ["como-usar-placa-resenas-google-yume", "placa-resenas-google-para-restaurantes", "placa-resenas-google-para-consultorios", "placa-nfc-vs-codigo-qr-impreso-resenas"],
+    sources: [
+      { label: "Google: política de contenido de contribuciones (reseñas)", url: "https://support.google.com/contributionpolicy/answer/7400114?hl=es" },
+      { label: "Visu: dónde poner el QR de reseñas (guía de un proveedor de QR)", url: "https://visu.network/es/articulos/donde-poner-el-qr-de-resenas/" },
+    ],
+    faq: [
+      {
+        q: "¿Puedo dar un descuento a quien deje una reseña?",
+        a: "No. Según la política de Google, está prohibido ofrecer pagos, descuentos o bienes y servicios gratis a cambio de reseñas. Tampoco puedes pedirla solo a clientes selectos.",
+      },
+      {
+        q: "¿Las cifras de rendimiento por ubicación son seguras?",
+        a: "No. Vienen de una guía de un proveedor de QR que las atribuye a MapLift, no de un estudio independiente. Úsalas solo como referencia.",
+      },
+      {
+        q: "¿La placa de Yume necesita suscripción?",
+        a: "No. Es pago único, sin suscripción ni app, y se entrega programada con el enlace de reseñas de tu negocio.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string) {
