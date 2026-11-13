@@ -7327,6 +7327,93 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "impresion-de-stickers-para-eventos",
+    title: "Impresión de stickers para bodas y eventos",
+    description:
+      "Guía de impresión de stickers para bodas y eventos: dónde usarlos, vinil o papel, tamaño legible, cantidades y cómo coordinarlos con tu papelería.",
+    category: "Guías",
+    publishedAt: "2026-11-13",
+    intro:
+      "La impresión de stickers para una boda o un evento no se decide como un pedido de catálogo: importa dónde va cada sticker, con qué material, qué tamaño se lee bien y cuántos necesitas. Esta guía te ayuda a decidir con calma y a pedir con la prueba digital en la mano.",
+    sections: [
+      {
+        heading: "Impresión de stickers para eventos: en qué piezas van",
+        body: [
+          "La impresión de stickers para eventos sirve para cerrar y personalizar piezas que ya tienes: sobres de invitación, bolsitas de detalles, cajas, botellas, vasos, tarjetas de agradecimiento y kits de bienvenida. Un mismo diseño en todas ellas hace que la boda o el evento se vea planeado, sin tener que mandar a hacer cada pieza por separado.",
+          "Si buscas ideas por ocasión, revisa la guía de [stickers para bodas, eventos y fiestas](/blog/stickers-para-bodas-eventos-y-fiestas). Si el sticker acompañará un recuerdo para tus invitados, combínalo con los [souvenirs de boda personalizados](/blog/souvenirs-de-boda-personalizados). Aquí nos enfocamos en cómo decidir y pedir.",
+        ],
+      },
+      {
+        heading: "¿Vinil o papel? Cómo elegir el material según el uso",
+        body: [
+          "Elige según dónde va a vivir el sticker. Si va en botellas con hielo o en un lugar con humedad, conviene vinil. Si es una pieza seca, como un sobre, una caja o una tarjeta, el material pesa menos. Aquí trabajamos vinil premium con laminado BOPP, resistente al agua, al sol y a rayones.",
+          "Según MOO, una imprenta en línea, el papel mate es el más económico y versátil, pero no resiste agua ni humedad intensa, y el vinil conviene para humedad o exterior. El acabado puede ser mate, brillante u holográfico. Para comparar a fondo, lee [vinil vs papel en stickers](/blog/stickers-vinil-vs-papel-diferencias) y revisa [troquelado vs semitroquelado](/blog/troquelado-vs-semitroquelado-stickers) para elegir el corte.",
+        ],
+      },
+      {
+        heading: "Qué tamaño de sticker mantiene legibles nombres y fechas",
+        body: [
+          "Nuestros stickers de vinil se hacen en tres tamaños: chico hasta 4 cm, mediano de 5 a 6 cm y grande de 7 a 8 cm. Si el diseño lleva nombres, fecha o una frase, elige mediano o grande para que el texto se lea con comodidad. Para medidas mayores, cotizamos por WhatsApp.",
+          "Como referencia, la guía de un proveedor en línea (MOO) recomienda no bajar de unos 5×5 cm cuando el diseño lleva letras. Es una pauta de ese proveedor, no una norma, y sirve para decidir entre los tamaños.",
+        ],
+      },
+      {
+        heading: "Cómo coordinar los stickers con tu papelería y tu paleta",
+        body: [
+          "Parte de los colores y la tipografía de la invitación o del menú, y repítelos en el sticker. Así el sello del sobre, la etiqueta de la bolsita y la tarjeta de agradecimiento parecen una sola familia. Si ya tienes la papelería, mándanos una foto por WhatsApp para trabajar el diseño con esa paleta.",
+          "Si aún no tienes la papelería, empieza por [cómo pedir papelería personalizada en línea](/blog/como-pedir-papeleria-personalizada-en-linea) y después pide los stickers con los mismos colores. Para la mesa, mira los [detalles de mesa de boda personalizados](/blog/detalles-de-mesa-boda-personalizados). Si quieres un nombre distinto en cada sticker, pregunta por WhatsApp si es posible en tu pedido.",
+        ],
+      },
+      {
+        heading: "Qué revisar en tu diseño antes de imprimir",
+        body: [
+          "Antes de mandar tu diseño, una referencia útil viene de MOO, una imprenta en línea: extiende el fondo hasta el sangrado para evitar bordes blancos tras el corte y deja textos y logos dentro de la zona segura. Son pautas de ese proveedor; para tu pedido, confirma el archivo con nosotros por WhatsApp.",
+          "Puedes enviarnos tu diseño, un personaje o una foto, y te mandamos una prueba digital antes de imprimir para que revises nombres, fechas y colores.",
+        ],
+      },
+      {
+        heading: "Cuántos stickers pedir para tu evento",
+        body: [
+          "Cuenta primero cuántas piezas vas a decorar: invitados, mesas y regalos. Nuestro pedido mínimo de stickers de vinil es de 40 piezas y puedes escribir la cantidad exacta que necesitas, no solo las opciones del menú. Si quieres un margen para imprevistos, súmalo a tu cuenta antes de pedir.",
+          "El precio por pieza depende del tamaño y lo ves en la ficha de [stickers de vinil personalizados](/productos/stickers-vinil-impermeable). Para calcular las piezas de otros detalles del evento, usa la guía de [cuántos souvenirs pedir por evento](/blog/cuantos-souvenirs-pedir-por-evento).",
+        ],
+      },
+      {
+        heading: "Cómo pedir: prueba digital y trato directo por WhatsApp",
+        body: [
+          "Envías tu diseño, foto o idea y te mandamos una prueba digital antes de imprimir. Eliges tipo de corte, acabado y tamaño, y resolvemos dudas directo por WhatsApp. Es un proceso pensado para novias, familiares, planners y empresas que organizan un evento concreto.",
+          "Los tiempos de producción y envío los explicamos en [cuánto tarda un pedido de stickers](/blog/cuanto-tarda-un-pedido-de-stickers-personalizados). Si organizas eventos para clientes, revisa la [prueba digital para planners](/blog/prueba-digital-pedido-evento-planners) y la página para [planners](/planners).",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable"],
+    relatedBlogSlugs: [
+      "stickers-para-bodas-eventos-y-fiestas",
+      "stickers-vinil-vs-papel-diferencias",
+      "souvenirs-de-boda-personalizados",
+      "cuanto-tarda-un-pedido-de-stickers-personalizados",
+    ],
+    faq: [
+      {
+        q: "¿Los stickers aguantan en botellas con agua?",
+        a: "Sí. Son de vinil premium resistente al agua, al sol y a rayones, y aguantan bien en botellas o superficies que se mojan.",
+      },
+      {
+        q: "¿Puedo pedir una medida mayor a 8 cm?",
+        a: "Sí. Escríbenos por WhatsApp con la medida y la cantidad y te cotizamos aparte.",
+      },
+      {
+        q: "¿Puedo usar mi propio diseño o una foto?",
+        a: "Sí. Puedes enviarnos tu diseño, un personaje o una foto, y te preparamos una prueba digital antes de imprimir.",
+      },
+    ],
+    sources: [
+      { label: "MOO: stickers de vinil (material y uso con humedad)", url: "https://www.moo.com/es-us/stickers/vinyl-stickers" },
+      { label: "MOO: stickers de vinil rectangulares (sangrado y zona segura)", url: "https://www.moo.com/es-us/stickers/rectangular/vinyl-stickers" },
+      { label: "MOO: stickers (tamaño recomendado con texto)", url: "https://www.moo.com/es-us/stickers" },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string) {

@@ -6094,6 +6094,93 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "sticker-printing-for-events",
+    title: "Sticker Printing for Weddings and Events",
+    description:
+      "A guide to sticker printing for weddings and events: where to use them, vinyl or paper, readable sizes, quantities and matching your stationery.",
+    category: "Guides",
+    publishedAt: "2026-11-13",
+    intro:
+      "Sticker printing for a wedding or an event is not a catalog decision: what matters is where each sticker goes, which material, which size stays readable and how many you need. This guide helps you decide calmly and order with the digital proof in hand.",
+    sections: [
+      {
+        heading: "Sticker printing for events: where they go",
+        body: [
+          "Sticker printing for events lets you finish and personalize pieces you already have: invitation envelopes, favor bags, boxes, bottles, cups, thank-you cards and welcome kits. One design across all of them makes the wedding or event look planned, without ordering each piece separately.",
+          "For ideas by occasion, read the guide to [stickers for weddings, events and parties](/en/blog/stickers-for-weddings-events-and-parties). If the sticker will go with a keepsake for your guests, pair it with [personalized wedding favors](/en/blog/personalized-wedding-favors-with-name-and-date). Here we focus on how to decide and order.",
+        ],
+      },
+      {
+        heading: "Vinyl or paper? How to choose the material for the use",
+        body: [
+          "Choose based on where the sticker will live. If it goes on bottles with ice or in a humid place, vinyl is the better fit. If it is a dry piece, like an envelope, a box or a card, the material matters less. We work with premium vinyl with BOPP lamination, water, sun and scratch resistant.",
+          "According to MOO, an online printer, matte paper is the most economical and versatile but does not resist water or intense humidity, and vinyl suits humidity or outdoor use. The finish can be matte, glossy or holographic. To compare in depth, read [vinyl vs paper stickers](/en/blog/vinyl-vs-paper-stickers-differences) and check [die cut vs kiss cut](/en/blog/die-cut-vs-kiss-cut-stickers) to choose the cut.",
+        ],
+      },
+      {
+        heading: "What sticker size keeps names and dates readable",
+        body: [
+          "Our vinyl stickers come in three sizes: small up to 4 cm, medium from 5 to 6 cm and large from 7 to 8 cm. If the design has names, a date or a phrase, choose medium or large so the text reads comfortably. For larger sizes, we quote by WhatsApp.",
+          "As a reference, one online provider's guide (MOO) recommends not going below about 5×5 cm when the design has letters. That is that provider's guideline, not a rule, and it helps you choose between sizes.",
+        ],
+      },
+      {
+        heading: "How to match stickers to your stationery and color palette",
+        body: [
+          "Start from the colors and typography of the invitation or menu, and repeat them on the sticker. That way the envelope seal, the favor bag label and the thank-you card look like one family. If you already have your stationery, send us a photo by WhatsApp so we can work the design with that palette.",
+          "If you do not have stationery yet, start with [how to order custom stationery online](/en/blog/how-to-order-custom-stationery-online) and then order the stickers in the same colors. For the table, see [personalized wedding table details](/en/blog/personalized-wedding-table-details). If you want a different name on each sticker, ask on WhatsApp whether it is possible for your order.",
+        ],
+      },
+      {
+        heading: "What to check in your design before printing",
+        body: [
+          "Before sending your design, a useful reference comes from MOO, an online printer: extend the background to the bleed to avoid white edges after cutting, and keep text and logos inside the safe zone. These are that provider's guidelines; for your order, confirm the file with us by WhatsApp.",
+          "You can send us your design, a character or a photo, and we send a digital proof before printing so you can review names, dates and colors.",
+        ],
+      },
+      {
+        heading: "How many stickers to order for your event",
+        body: [
+          "First count how many pieces you will decorate: guests, tables and gifts. Our minimum order for vinyl stickers is 40 pieces and you can type the exact quantity you need, not just the menu options. If you want a margin for last-minute needs, add it to your count before ordering.",
+          "The price per piece depends on the size and you can see it on the [custom vinyl stickers](/en/products/waterproof-vinyl-stickers) page. To count the pieces for other event details, use the guide on [how many party favors to order per event](/en/blog/how-many-party-favors-to-order-per-event).",
+        ],
+      },
+      {
+        heading: "How to order: digital proof and direct WhatsApp contact",
+        body: [
+          "You send your design, photo or idea and we send a digital proof before printing. You choose the cut type, finish and size, and we answer questions directly on WhatsApp. The process is built for brides, family members, planners and companies organizing a specific event.",
+          "We explain production and shipping times in [how long custom stickers take to arrive](/en/blog/how-long-do-custom-stickers-take-to-arrive). If you organize events for clients, read the [digital proof for planners](/en/blog/digital-proof-event-order-planners) and the page for [planners](/en/planners).",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable"],
+    relatedBlogSlugs: [
+      "stickers-for-weddings-events-and-parties",
+      "vinyl-vs-paper-stickers-differences",
+      "personalized-wedding-favors-with-name-and-date",
+      "how-long-do-custom-stickers-take-to-arrive",
+    ],
+    faq: [
+      {
+        q: "Do the stickers hold up on bottles with water?",
+        a: "Yes. They are premium vinyl, resistant to water, sun and scratches, and hold up well on bottles or surfaces that get wet.",
+      },
+      {
+        q: "Can I order a size larger than 8 cm?",
+        a: "Yes. Write to us on WhatsApp with the size and quantity and we quote it separately.",
+      },
+      {
+        q: "Can I use my own design or a photo?",
+        a: "Yes. You can send us your design, a character or a photo, and we prepare a digital proof before printing.",
+      },
+    ],
+    sources: [
+      { label: "MOO: vinyl stickers (material and use with humidity)", url: "https://www.moo.com/es-us/stickers/vinyl-stickers" },
+      { label: "MOO: rectangular vinyl stickers (bleed and safe zone)", url: "https://www.moo.com/es-us/stickers/rectangular/vinyl-stickers" },
+      { label: "MOO: stickers (recommended size with text)", url: "https://www.moo.com/es-us/stickers" },
+    ],
+  },
 ];
 
 export function getBlogPostEn(slug: string) {
