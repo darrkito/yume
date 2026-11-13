@@ -93,6 +93,7 @@ export const BLOG_SLUG_EN: Record<string, string> = {
   "detalles-evento-con-clientes-personalizados": "custom-details-for-client-events",
   "placa-nfc-funciona-iphone-android": "does-nfc-plate-work-iphone-android",
   "donde-poner-placa-resenas-google": "where-to-put-your-google-review-plate",
+  "que-si-y-que-no-pedir-resenas-google-politicas": "google-review-policies-what-you-can-and-cannot-do",
 };
 
 export const PRODUCT_SLUG_ES: Record<string, string> = Object.fromEntries(

@@ -7078,6 +7078,100 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "que-si-y-que-no-pedir-resenas-google-politicas",
+    title: "Políticas de reseñas de Google: qué sí y qué no pedir",
+    description:
+      "Políticas de reseñas de Google en claro: qué sí puedes hacer al pedirlas, qué está prohibido y cómo pedirlas a todos tus clientes por igual.",
+    category: "Guías",
+    publishedAt: "2026-11-13",
+    intro:
+      "Pedir reseñas en Google está permitido, pero hay prácticas muy comunes que la política de Google Maps no acepta: dar descuentos por reseñar, filtrar a los clientes contentos o intentar influir en lo que escriben. Esta guía separa lo que sí puedes hacer de lo que no, con base en el texto oficial, y cierra con un ejemplo para pedir la reseña a todos por igual.",
+    sections: [
+      {
+        heading: "Políticas de reseñas de Google en resumen",
+        body: [
+          "La política de contenido de Google Maps permite pedir reseñas que reflejen una experiencia auténtica. Lo que prohíbe es ofrecer incentivos, como pagos, descuentos o productos gratis, pedir reseñas positivas de forma selectiva, desalentar las negativas o influir en la valoración y el contenido. Todo lo demás de esta guía sale de ahí.",
+          "Las reglas pueden cambiar, así que antes de armar tu proceso de pedido revisa la página oficial que aparece en Fuentes al final.",
+        ],
+      },
+      {
+        heading: "Qué sí puedes hacer al pedir reseñas en Google",
+        body: [
+          "Puedes pedir reseñas a tus clientes y animarlos a contar su experiencia real. La política lo acepta mientras no ofrezcas nada a cambio ni intentes influir en la calificación o en lo que escriben. Pedirlo a todos por igual, con un enlace o un código QR a tu perfil, es una forma sencilla de hacerlo.",
+          "En la práctica, eso incluye pedir la reseña a todos tus clientes reales, compartir el enlace a tu perfil, mostrar un código QR y dejar que cada persona escriba con sus palabras y elija su propia calificación. Si aún no tienes el perfil listo, empieza con la guía para [configurar tu perfil de Google y pedir reseñas](/blog/como-configurar-perfil-de-google-y-pedir-resenas).",
+        ],
+      },
+      {
+        heading: "Qué está prohibido al pedir reseñas en Google",
+        body: [
+          "Está prohibido ofrecer pagos, descuentos o bienes y servicios gratis a cambio de reseñas, y también ofrecer algo por cambiar o retirar una reseña negativa. Tampoco puedes desalentar las reseñas negativas ni pedir reseñas positivas solo a ciertos clientes. Estas prácticas van contra la política de contenido de Google Maps.",
+          "La tabla resume lo que dice el texto oficial aplicado a situaciones comunes de un negocio.",
+        ],
+        table: {
+          headers: ["Práctica", "¿Se puede?", "Por qué"],
+          rows: [
+            ["Pedir la reseña a todos tus clientes", "Sí", "La política acepta solicitar contenido que represente una experiencia auténtica"],
+            ["Compartir un enlace o un QR a tu perfil", "Sí, sin ofrecer nada a cambio", "Solo cambia cómo llega la petición"],
+            ["Descuento, regalo o pago por reseñar", "No", "Es un incentivo"],
+            ["Ofrecer algo por cambiar o quitar una reseña negativa", "No", "También entra en la prohibición de incentivos"],
+            ["Pedir reseña solo a quienes están contentos", "No", "Es solicitar reseñas positivas de forma selectiva"],
+            ["Pedir cinco estrellas o dictar qué escribir", "No", "Busca influir en la valoración o en el contenido"],
+          ],
+        },
+      },
+      {
+        heading: "Filtrar solo a los clientes contentos: por qué no",
+        body: [
+          "Filtrar significa preguntar primero si el cliente está contento y enviar a Google solo a quienes dicen que sí. Es pedir reseñas positivas de forma selectiva, y la política de Google Maps lo prohíbe. Aunque parezca cuidar tu reputación, deja fuera la experiencia real de tus demás clientes.",
+          "Pedir a todos por igual evita el problema de raíz: no hay una primera pregunta que decida quién recibe el enlace. Si un cliente se queja en persona, puedes atenderlo, pero la invitación a reseñar no debe depender de lo que responda.",
+        ],
+      },
+      {
+        heading: "Presión en el local, reseñas pagadas y reseñas propias",
+        body: [
+          "La política que revisamos habla de incentivos, de influir en la valoración y de conflictos de intereses, como una relación laboral o contractual con el negocio. No menciona con esas palabras la presión en el local ni reseñarse a uno mismo, pero ambas buscan influir en lo que se publica, así que lo prudente es evitarlas.",
+          "Pagar a alguien por reseñar entra en la prohibición de pagos a cambio de reseñas. Y si quien reseña tiene una relación laboral o contractual con el negocio, la política lo trata como posible conflicto de intereses. Lo más seguro es que reseñen clientes reales que vivieron la experiencia.",
+        ],
+      },
+      {
+        heading: "Cómo pedir la reseña a todos por igual con placa NFC o QR",
+        body: [
+          "Pide la reseña a todos tus clientes por igual y deja que cada quien escriba lo que piensa. La placa NFC o el código QR solo son el camino al enlace oficial de tu perfil: no cambian las reglas. Lo que cuenta es que no ofrezcas nada a cambio ni elijas a quién se lo pides.",
+          "Un mensaje neutral que sirve para todos: “Si quieres, una reseña de tu experiencia nos ayuda mucho. Acerca tu celular a la placa o escanea el QR.” No menciona descuentos, no pregunta si estuvo contento y no pide una calificación concreta.",
+          "Nuestra [placa de reseñas NFC](/productos/placa-resena-google-nfc) se entrega ya programada con el enlace de reseñas de tu negocio y con el QR de respaldo impreso. Se paga una sola vez, sin suscripción ni app. No promete más reseñas: facilita el paso, y las reglas de esta guía siguen siendo las mismas.",
+          "Para elegir entre ambos medios, revisa [placa NFC o QR impreso](/blog/placa-nfc-vs-codigo-qr-impreso-resenas), y para colocarla y usarla, [cómo usar tu placa](/blog/como-usar-placa-resenas-google-yume).",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
+    relatedBlogSlugs: ["como-configurar-perfil-de-google-y-pedir-resenas", "como-conseguir-mas-resenas-de-google-nfc-qr", "placa-nfc-vs-codigo-qr-impreso-resenas", "como-usar-placa-resenas-google-yume"],
+    sources: [
+      { label: "Google: política de contenido de Maps (contenido enviado por usuarios)", url: "https://support.google.com/contributionpolicy/answer/7400114?hl=es" },
+    ],
+    faq: [
+      {
+        q: "¿Puedo pedir reseñas a mis clientes en Google?",
+        a: "Sí, mientras la reseña refleje una experiencia auténtica y no ofrezcas nada a cambio.",
+      },
+      {
+        q: "¿Puedo dar un descuento o un regalo por una reseña?",
+        a: "No. Los pagos, descuentos y bienes o servicios gratuitos a cambio de reseñas son incentivos que la política prohíbe.",
+      },
+      {
+        q: "¿Puedo pedir la reseña solo a los clientes contentos?",
+        a: "No. Solicitar reseñas positivas de forma selectiva, o desalentar las negativas, va contra la política de Google Maps.",
+      },
+      {
+        q: "¿Una placa NFC o un QR rompe las reglas?",
+        a: "No por sí solos. La política que revisamos no menciona NFC ni QR: regula lo que ofreces y a quién se lo pides. La placa solo lleva al enlace de reseñas de tu perfil.",
+      },
+      {
+        q: "¿La placa garantiza más reseñas?",
+        a: "No. Facilita el paso a quien ya quiere dejar su opinión, pero no garantiza una cantidad de reseñas.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string) {

@@ -5845,6 +5845,100 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "google-review-policies-what-you-can-and-cannot-do",
+    title: "Google review policies: what you can and can't ask for",
+    description:
+      "Google review policies made clear: what you can do when asking for reviews, what is prohibited, and how to ask all your customers equally.",
+    category: "Guides",
+    publishedAt: "2026-11-13",
+    intro:
+      "Asking for reviews on Google is allowed, but several common practices go against the Google Maps policy: giving discounts for reviewing, filtering out unhappy customers, or trying to influence what they write. This guide separates what you can do from what you can't, based on the official text, and closes with an example of asking everyone equally.",
+    sections: [
+      {
+        heading: "Google review policies at a glance",
+        body: [
+          "Google's Maps content policy lets you ask for reviews that reflect an authentic experience. What it prohibits is offering incentives, such as payments, discounts or free goods, asking for positive reviews selectively, discouraging negative ones, or trying to influence the rating and the content. Everything else in this guide builds on that.",
+          "Rules can change, so before building your process check the official page listed under Sources at the end.",
+        ],
+      },
+      {
+        heading: "What you can do when asking for Google reviews",
+        body: [
+          "You can ask your customers for reviews and encourage them to describe their real experience. The policy accepts this as long as you offer nothing in return and do not try to influence the rating or what they write. Asking everyone equally, with a link or QR code to your profile, is an easy way to do it.",
+          "In practice, that includes asking all your real customers, sharing the link to your profile, showing a QR code, and letting each person write in their own words and choose their own rating. If your profile is not ready yet, start with the guide to [setting up your Google Business Profile and asking for reviews](/en/blog/set-up-google-business-profile-and-ask-for-reviews).",
+        ],
+      },
+      {
+        heading: "What is prohibited when asking for Google reviews",
+        body: [
+          "Offering payments, discounts or free goods and services in exchange for reviews is prohibited, and so is offering something to change or remove a negative review. You also cannot discourage negative reviews or ask only certain customers for positive ones. These practices go against Google Maps' content policy.",
+          "The table summarizes what the official text says, applied to common situations in a business.",
+        ],
+        table: {
+          headers: ["Practice", "Allowed?", "Why"],
+          rows: [
+            ["Asking all your customers for a review", "Yes", "The policy accepts requesting content that represents an authentic experience"],
+            ["Sharing a link or QR code to your profile", "Yes, offering nothing in return", "It only changes how the request arrives"],
+            ["Discount, gift or payment for reviewing", "No", "It is an incentive"],
+            ["Offering something to change or remove a negative review", "No", "Also covered by the incentives prohibition"],
+            ["Asking only happy customers for a review", "No", "It is asking for positive reviews selectively"],
+            ["Asking for five stars or dictating what to write", "No", "It tries to influence the rating or the content"],
+          ],
+        },
+      },
+      {
+        heading: "Filtering only happy customers: why not",
+        body: [
+          "Gating means first asking whether the customer is happy and sending only those who say yes to Google. That is asking for positive reviews selectively, and the Google Maps policy prohibits it. Even if it seems to protect your reputation, it leaves out the real experience of your other customers.",
+          "Asking everyone equally avoids the problem at the root: there is no first question deciding who gets the link. If a customer complains in person, you can help them, but the invitation to review should not depend on their answer.",
+        ],
+      },
+      {
+        heading: "In-store pressure, paid reviews and reviewing yourself",
+        body: [
+          "The policy we reviewed covers incentives, influencing the rating and conflicts of interest, such as a current or past employment or contractual relationship with the business. It does not mention in-store pressure or reviewing yourself in those words, but both try to influence what gets published, so the prudent choice is to avoid them.",
+          "Paying someone to review falls under the prohibition on payments in exchange for reviews. And if the reviewer has an employment or contractual relationship with the business, the policy treats it as a possible conflict of interest. The safest path is to let real customers who lived the experience write the reviews.",
+        ],
+      },
+      {
+        heading: "How to ask everyone equally with an NFC plate or QR",
+        body: [
+          "Ask every customer the same way and let each person write what they think. The NFC plate or QR code is only the path to your profile's review link: it does not change the rules. What matters is that you offer nothing in return and do not choose whom to ask.",
+          "A neutral message that works for everyone: “If you like, a review of your experience helps us a lot. Hold your phone near the plate or scan the QR.” It mentions no discounts, does not ask whether they were happy and does not request a specific rating.",
+          "Our [Google review NFC plate](/en/products/google-review-nfc-plate) arrives already programmed with your business's review link and with the backup QR printed on it. You pay once, with no subscription and no app. It does not promise more reviews: it makes the step easier, and the rules in this guide stay the same.",
+          "To choose between the two options, read [NFC plate or printed QR](/en/blog/nfc-plate-vs-printed-qr-code-for-reviews), and for placing and using it, [how to use your plate](/en/blog/how-to-use-your-yume-google-review-plate).",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
+    relatedBlogSlugs: ["set-up-google-business-profile-and-ask-for-reviews", "how-to-get-more-google-reviews-nfc-qr", "nfc-plate-vs-printed-qr-code-for-reviews", "how-to-use-your-yume-google-review-plate"],
+    sources: [
+      { label: "Google: Maps content policy (user-contributed content, in Spanish)", url: "https://support.google.com/contributionpolicy/answer/7400114?hl=es" },
+    ],
+    faq: [
+      {
+        q: "Can I ask my customers for reviews on Google?",
+        a: "Yes, as long as the review reflects an authentic experience and you offer nothing in return.",
+      },
+      {
+        q: "Can I give a discount or a gift for a review?",
+        a: "No. Payments, discounts and free goods or services in exchange for reviews are incentives the policy prohibits.",
+      },
+      {
+        q: "Can I ask only happy customers for a review?",
+        a: "No. Requesting positive reviews selectively, or discouraging negative ones, goes against the Google Maps policy.",
+      },
+      {
+        q: "Does an NFC plate or a QR code break the rules?",
+        a: "Not by themselves. The policy we reviewed does not mention NFC or QR: it regulates what you offer and whom you ask. The plate only leads to your profile's review link.",
+      },
+      {
+        q: "Does the plate guarantee more reviews?",
+        a: "No. It makes the step easier for someone who already wants to leave an opinion, but it does not guarantee a number of reviews.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPostEn(slug: string) {
