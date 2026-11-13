@@ -2254,17 +2254,17 @@ export const blogPosts: BlogPost[] = [
     slug: "stickers-vinil-vs-papel-diferencias",
     title: "Stickers de vinil vs papel: cuál elegir para tu evento",
     metaTitle: "Stickers de vinil vs papel: ¿cuál te conviene?",
-    description: `Stickers de vinil vs papel para bodas, fiestas y regalos: qué cambia con agua y sol. 100 piezas (tamaño chico): $${priceOf("stickers-vinil-impermeable", 100)}, con prueba digital.`,
+    description: `Stickers de vinil vs papel para bodas y fiestas: qué cambia con agua y sol. Primeras 100 piezas (tamaño chico): $${priceOf("stickers-vinil-impermeable", 100)}, con prueba digital.`,
     category: "Guías",
     publishedAt: "2026-09-09",
-    modifiedAt: "2026-10-29",
+    modifiedAt: "2026-11-13",
     intro:
       "Si vas a regalar o a preparar un detalle para una boda, unos XV años, un bautizo o un baby shower, elegir entre stickers de vinil y de papel cambia cómo aguanta la pieza en la mesa, en la copa o en la bolsita. Aquí te explicamos la diferencia, qué pasa con el agua y el hielo, cuándo conviene cada material, cuánto cuesta y por qué en Yume trabajamos solo vinil.",
     sections: [
       {
         heading: "Stickers de vinil vs papel: la diferencia que importa",
         body: [
-          "La diferencia principal entre stickers de vinil y de papel es el material. El vinil es un plástico flexible y, según la ficha de nuestros stickers, resiste el agua, el sol y los rayones. Por eso lo usamos en piezas que se manipulan, se mojan o se exponen a la luz, como botellas y laptops.",
+          "La diferencia principal entre stickers de vinil y de papel es el material. Según la ficha de nuestros stickers, el vinil premium resiste el agua, el sol y los rayones, por eso lo usamos en piezas que se manipulan, se mojan o se exponen a la luz, como botellas y laptops.",
           "Del papel no te damos cifras de duración: Yume no lo produce y no tenemos pruebas propias. Cuando compares cotizaciones, pregunta siempre el material exacto y el acabado, porque ahí está la diferencia real de lo que vas a recibir.",
         ],
       },
@@ -2273,6 +2273,7 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Los stickers de vinil de Yume son resistentes al agua, según la ficha del producto, así que una copa, un vaso o un frasco con hielo es un uso razonable como detalle de mesa. No los prometemos para remojo prolongado ni lavado intenso. Si tienes un caso especial, escríbenos por WhatsApp y lo revisamos antes de producir.",
           "Para bodas, XV años, bautizos o baby showers, estos stickers suelen ir en copas, vasos, bolsitas o frascos de recuerdo. Cuéntanos dónde va a ir el tuyo, por ejemplo una copa con bebida fría o un frasco con hielo, y te decimos con honestidad qué esperar antes de producir.",
+          "Para más ideas de uso en celebraciones, revisa la guía de [stickers para bodas y fiestas](/blog/stickers-para-bodas-eventos-y-fiestas).",
         ],
       },
       {
@@ -2296,22 +2297,23 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Por qué en Yume trabajamos solo vinil",
         body: [
-          "En Yume trabajamos solo vinil porque preferimos ofrecer un material que sabemos que aguanta. Nuestros dos productos de sticker, Stickers de Vinil Personalizados y Stickers y Etiquetas con tu Logo, se hacen en vinil premium con corte troquelado o semitroquelado, y siempre recibes prueba digital antes de producir.",
+          "En Yume trabajamos solo vinil porque preferimos ofrecer un material que sabemos que aguanta. Nuestros dos productos de sticker, [Stickers de Vinil Personalizados](/productos/stickers-vinil-impermeable) y [Stickers y Etiquetas con tu Logo](/productos/stickers-logo-personalizado), se hacen en vinil premium con corte troquelado o semitroquelado, y siempre recibes prueba digital antes de producir.",
           "Para un detalle de boda, de XV años o de baby shower, el producto es Stickers de Vinil Personalizados: cualquier diseño, personaje o foto. Si es el logo de tu negocio, es Stickers y Etiquetas con tu Logo. Ambos se venden por cantidad de piezas, no por planilla.",
         ],
       },
       {
         heading: "Corte y acabado: lo que sí puedes elegir",
         body: [
-          "Con el vinil eliges dos cosas al pedir: el corte, que puede ser troquelado o semitroquelado, y el acabado, que puede ser mate, brillante u holográfico. Todos nuestros stickers llevan laminado BOPP de alta calidad. El holográfico tiene un costo extra por pieza. El material no cambia: sigue siendo el mismo vinil premium, así que son decisiones de diseño.",
-          "Si dudas cuál corte te conviene, lee nuestra comparación de troquelado vs. semitroquelado, donde explicamos cuándo conviene cada uno. Antes de imprimir recibes una prueba digital para confirmar cómo se ve el diseño.",
+          "Con el vinil eliges dos cosas al pedir: el corte, que puede ser troquelado o semitroquelado, y el acabado, que puede ser mate, brillante u holográfico. Todos nuestros stickers llevan laminado BOPP de alta calidad. El holográfico tiene un costo extra por pieza.",
+          "El material no cambia: sigue siendo el mismo vinil premium, así que son decisiones de diseño. Si dudas cuál corte te conviene, lee la comparación de [troquelado vs semitroquelado](/blog/troquelado-vs-semitroquelado-stickers). Antes de imprimir recibes una prueba digital para confirmar cómo se ve el diseño.",
+          "También eliges el tamaño: chico hasta 4 cm, mediano de 5 a 6 cm y grande de 7 a 8 cm. Si necesitas una medida más grande o algo específico, lo cotizamos por WhatsApp.",
         ],
       },
       {
         heading: "Cuánto cuestan los stickers de vinil",
         body: [
-          `100 piezas (tamaño chico): $${priceOf("stickers-vinil-impermeable", 100)} en Stickers de Vinil Personalizados y $${priceOf("stickers-logo-personalizado", 100)} en etiquetas con tu logo. El mínimo es de 40 piezas en vinil y de 50 en etiquetas con logo, y pides la cantidad exacta que necesitas.`,
-          `Como referencia, 150 piezas de vinil cuestan $${priceOf("stickers-vinil-impermeable", 150)} y 200 piezas cuestan $${priceOf("stickers-vinil-impermeable", 200)}. Para un evento, cuenta a tus invitados y suma unas cuantas piezas de repuesto.`,
+          `Primeras 100 piezas (tamaño chico): $${priceOf("stickers-vinil-impermeable", 100)} en Stickers de Vinil Personalizados y $${priceOf("stickers-logo-personalizado", 100)} en etiquetas con tu logo. El mínimo es de 40 piezas en vinil y de 50 en etiquetas con logo, y pides la cantidad exacta que necesitas, porque se venden por pieza.`,
+          `Arriba de 100 piezas es precio mayoreo: 150 piezas de vinil cuestan $${priceOf("stickers-vinil-impermeable", 150)} y 200 piezas cuestan $${priceOf("stickers-vinil-impermeable", 200)}. Puedes ver todas las opciones en la página de [stickers de vinil personalizados](/productos/stickers-vinil-impermeable).`,
         ],
         table: {
           ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 150, 200, 300], "es"),
@@ -2322,7 +2324,7 @@ export const blogPosts: BlogPost[] = [
         body: [
           `Mándanos tu diseño por WhatsApp o desde la tienda y te enviamos una prueba digital, normalmente en un máximo de 24 horas después del pago, con hasta 2 rondas de ajustes. Desde que la apruebas, llega a domicilio en ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles.`,
           `Si estás en Guadalajara, tu pedido puede estar listo para recoger en Casa Blanca en ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles. Puedes enviarnos tu logo, personaje, foto o idea en el formato que tengas, aunque no sea el ideal. Producimos en Guadalajara y enviamos a todo México.`,
-          "Si quieres comparar Yume con otras opciones, revisa nuestra comparación con imprentas online o la guía de dónde imprimir stickers en México.",
+          "Para ver el detalle de plazos, lee [cuánto tarda un pedido de stickers](/blog/cuanto-tarda-un-pedido-de-stickers-personalizados). Si quieres comparar Yume con otras opciones, revisa la [comparación con imprentas online](/blog/yume-vs-imprentas-online-stickers) o la guía de [dónde imprimir stickers en México](/blog/donde-imprimir-stickers-personalizados-mexico).",
         ],
       },
     ],
@@ -2344,8 +2346,12 @@ export const blogPosts: BlogPost[] = [
         a: "Puedes elegir corte troquelado o semitroquelado, y acabado mate, brillante u holográfico. El holográfico tiene un costo extra por pieza que ves al elegirlo en la página del producto.",
       },
       {
+        q: "¿Qué tamaños de sticker hay?",
+        a: "Chico (hasta 4 cm), mediano (de 5 a 6 cm) y grande (de 7 a 8 cm). Si necesitas una medida más grande o algo específico, lo cotizamos por WhatsApp.",
+      },
+      {
         q: "¿Cuánto cuestan los stickers de vinil?",
-        a: `100 piezas (tamaño chico): $${priceOf("stickers-vinil-impermeable", 100)}. El mínimo de compra es de 40 piezas.`,
+        a: `Primeras 100 piezas (tamaño chico): $${priceOf("stickers-vinil-impermeable", 100)}. Arriba de 100 piezas es precio mayoreo. El mínimo de compra es de 40 piezas.`,
       },
       {
         q: "¿Se venden por planilla o por pieza?",
