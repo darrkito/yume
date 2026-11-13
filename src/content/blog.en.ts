@@ -440,19 +440,11 @@ export const blogPostsEn: BlogPost[] = [
     relatedBlogSlugs: [BLOG_SLUG_EN["dulceros-personalizados-guadalajara"]],
     "relatedProductSlugs": ["placa-resena-google-nfc", "stand-resena-google-nfc"],
     "quoteMessage": "Hi, I am interested in the NFC plate and stand for Google reviews.",
-    "sources": [
-      {
-        "label": "Google: get your review link and QR code",
-        "url": "https://support.google.com/business/answer/16816815?hl=en"
-      },
-      {
-        "label": "Google: tips to get reviews",
-        "url": "https://support.google.com/business/answer/3474122?hl=en"
-      },
-      {
-        "label": "Google: prohibited and restricted content",
-        "url": "https://support.google.com/business/answer/7400114?hl=en"
-      }
+    sources: [
+      { label: "Google: get the review link and QR code (in English)", url: "https://support.google.com/business/answer/16816815?hl=en" },
+      { label: "Google: tips for getting reviews", url: "https://support.google.com/business/answer/3474122?hl=es" },
+      { label: "Google: prohibited and restricted content", url: "https://support.google.com/business/answer/7400114?hl=es" },
+      { label: "Search Engine Roundtable: Google review policies (in English)", url: "https://www.seroundtable.com/google-business-profile-review-policies-updated-40962.html" },
     ]
   },
   {
@@ -1393,7 +1385,7 @@ export const blogPostsEn: BlogPost[] = [
       "Custom temporary tattoos in Guadalajara for weddings, quinceañeras, and parties: how to get a quote on WhatsApp and receive a digital proof before production.",
     category: "Guides",
     publishedAt: "2026-08-31",
-    modifiedAt: "2026-11-03",
+    modifiedAt: "2026-11-13",
     intro:
       "A temporary tattoo with your logo or a design made for the occasion leaves a mark at an event, literally. If your party is in Guadalajara or Zapopan, custom temporary tattoos work just as well for a wedding, quinceañera, baby shower, posada, or company event. Here we explain which events they're suited to, how to design them, what to consider for sensitive skin, what we need for a quote, and how to plan your order in advance.",
     sections: [
@@ -1401,7 +1393,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "How to order custom temporary tattoos for events",
         body: [
           "Custom temporary tattoos for events are ordered through WhatsApp because they don't have a published fixed price: we quote them based on your design, size, and quantity. We send you a digital proof before production, usually within 24 hours, with up to 2 rounds of adjustments, and we don't print anything without your approval.",
-          "We produce in Guadalajara and ship throughout Mexico, so you can order no matter what state your event is in. We don't issue invoices (CFDI); if your company needs one, let us know when requesting a quote.",
+          "We don't issue invoices (CFDI); if your company needs one, let us know when requesting a quote.",
           "To get started, message us on WhatsApp with the event date, approximate quantity, and your logo or a design reference. With that, we'll prepare a quote and explain the next steps.",
         ],
       },
@@ -1418,7 +1410,7 @@ export const blogPostsEn: BlogPost[] = [
         body: [
           "Custom temporary tattoos work for weddings and quinceañeras, brand activations, company events, and sports or school events. Guests wear and show them throughout the celebration, so they become a detail that travels around the room and turns into a keepsake.",
           "We see them most often in three contexts. The first is weddings and quinceañeras, with initials, the date, or an icon related to the celebration. The second is company events, such as posadas, launches, and anniversaries, with the brand's logo. The third is sports or school events, with the team or institution's logo.",
-          "Unlike a label, a temporary tattoo is worn by the person. It's a piece people wear and show for the rest of the event, rather than something that ends up in a bag. For ideas by occasion, see the guide to [temporary tattoos for weddings and parties](/en/blog/temporary-tattoos-for-weddings-events-and-parties).",
+          `Unlike a label, a temporary tattoo is worn by the person. For ideas by occasion, see the guide to [temporary tattoos for weddings and parties](/en/blog/${BLOG_SLUG_EN["tatuajes-temporales-para-boda-eventos-y-fiestas"]}). If you are looking for another detail for the same event, see [stickers for events](/en/blog/${BLOG_SLUG_EN["stickers-para-bodas-eventos-y-fiestas"]}).`,
         ],
       },
       {
@@ -1427,7 +1419,7 @@ export const blogPostsEn: BlogPost[] = [
           "A good temporary tattoo design is simple and easy to read at a glance: initials, a date, a celebration icon, or your logo. The less detail it has, the easier it is to make out at a small size on skin and to match with the event decor.",
           "For a wedding, the most practical choice is the couple's initials and the date, or a simple icon that represents their story. If you have the invitation or the decor's color palette, send us a photo and we'll adapt the design so it looks like part of the same event.",
           "For a quinceañera or birthday, the guest of honor's name with a detail from the theme works well. For a company, a clean logo without long text is the easiest option because it reads better at a small size.",
-          "If you're already putting together the candy table or favors, think of the tattoo as part of the set: the same design can accompany [custom favor boxes](/en/blog/personalized-party-favor-boxes-guadalajara) and [vinyl stickers](/en/products/waterproof-vinyl-stickers). That way the whole event looks coordinated.",
+          `If you're already putting together the candy table or favors, think of the tattoo as part of the set: the same design can accompany [custom favor boxes](/en/blog/${BLOG_SLUG_EN["dulceros-personalizados-guadalajara"]}) and [vinyl stickers](/en/products/waterproof-vinyl-stickers). That way the whole event looks coordinated.`,
         ],
       },
       {
@@ -1435,36 +1427,35 @@ export const blogPostsEn: BlogPost[] = [
         body: [
           "It depends on the inks, which is why it's a good idea to ask about the ingredients before ordering. The US FDA receives reports of allergies to tattoo inks and says a rash may indicate an allergic reaction. If someone has sensitive skin, consult a health professional about redness, bumps, or a rash.",
           "The FDA also explains that PPD (paraphenylenediamine) in some inks can cause an allergy to other products, such as hair dyes. Its page is about permanent tattoos, so we use it only as a reason to be cautious, not as a description of temporary tattoo inks.",
-          "If children or people with allergies will attend your event, message us on WhatsApp before ordering and we'll discuss it with you. As for duration, one reference says decal-style temporary tattoos last from hours to days, depending on the type, body area, and care. To learn how to remove them, read [how long they last and how to remove them](/en/blog/how-long-do-temporary-tattoos-last-and-how-to-remove-them).",
+          `If children or people with allergies will attend your event, message us on WhatsApp before ordering and we'll discuss it with you. To learn how long they last and how to remove them, read [how long they last and how to remove them](/en/blog/${BLOG_SLUG_EN["cuanto-duran-los-tatuajes-temporales-y-como-quitarlos"]}).`,
         ],
       },
       {
         heading: "What we need to quote your temporary tattoos",
         body: [
           "We need three things for a quote: your logo or design, the approximate size you want, and the quantity for your event. If the design includes text, such as a name, date, or phrase, let us know so we can confirm it's legible at the final size before production.",
-          "If you don't have your logo handy, send us what you have and we'll tell you whether it can be used. The approximate size tells us how much detail will fit, and the quantity lets us prepare an accurate quote. If it's your first order, message us and we'll help you work out how many you need.",
-          "Before production, we send you a digital proof of the design for approval. That way you can confirm how it will look before the full quantity is printed. You can start from the [custom temporary tattoos](/en/products/custom-temporary-tattoos) page.",
+          "If you don't have your logo handy, send us what you have and we'll tell you whether it can be used. Before production, we send you a digital proof of the design for approval, so you can confirm how it will look before the full quantity is printed.",
+          "You can start from the [custom temporary tattoos](/en/products/custom-temporary-tattoos) page.",
         ],
       },
       {
         heading: "Why customize them instead of buying generic tattoos",
         body: [
           "A generic temporary tattoo, such as a smiley face or a star from a catalog, looks the same at any party and says nothing about your event. A custom one carries your logo, colors, or the name of the celebration, and the person wearing it stays associated with your event for the rest of the day.",
-          "We produce in Guadalajara and ship anywhere in Mexico, so you can request a quote for custom temporary tattoos no matter what state your event is in.",
-          "Your own design also lets you control the overall result: making sure the colors match your decor, the name is spelled correctly, and the logo looks as it should. With a generic design, you can't control any of that. If you have an event coming up, message us directly on WhatsApp with the details.",
+          "Your own design also lets you control the overall result: making sure the colors match your decor, the name is spelled correctly, and the logo looks as it should. With a generic design, you can't control any of that.",
         ],
       },
       {
         heading: "How to plan your order in advance",
         body: [
           "It's best to message us as soon as you have the event date, even if the design isn't settled yet. With the date, approximate quantity, and a reference for your logo or invitation, we can prepare a quote, send you the digital proof, and confirm whether production and shipping can be completed in time.",
-          "If you're a wedding or event planner, the process is the same: one order per event, with each client's design and direct communication on WhatsApp. Send us the event reference and we'll prepare a quote.",
+          `If you're a wedding or event planner, the process is the same: one order per event, with each client's design and direct communication on WhatsApp. Here we explain how the [digital proof for your order](/en/blog/${BLOG_SLUG_EN["prueba-digital-pedido-evento-planners"]}) works.`,
           "If it's for your company or a family celebration, share the date, delivery city, and how many people you expect. The sooner you message us, the more time there is to adjust the design and approve the proof without rushing.",
         ],
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable"],
-    relatedBlogSlugs: [BLOG_SLUG_EN["tatuajes-temporales-para-boda-eventos-y-fiestas"], BLOG_SLUG_EN["cuanto-duran-los-tatuajes-temporales-y-como-quitarlos"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"]],
+    relatedBlogSlugs: [BLOG_SLUG_EN["tatuajes-temporales-para-boda-eventos-y-fiestas"], BLOG_SLUG_EN["cuanto-duran-los-tatuajes-temporales-y-como-quitarlos"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"], BLOG_SLUG_EN["prueba-digital-pedido-evento-planners"], BLOG_SLUG_EN["stickers-para-bodas-eventos-y-fiestas"]],
     serviceLink: { href: "/en/products/custom-temporary-tattoos", label: "See custom temporary tattoos" },
     quoteMessage: "Hi, I'm interested in getting a quote for custom temporary tattoos.",
     faq: [
@@ -1482,11 +1473,7 @@ export const blogPostsEn: BlogPost[] = [
       },
       {
         q: "Do you produce in Guadalajara and ship throughout Mexico?",
-        a: "Yes. We produce in Guadalajara and ship throughout Mexico.",
-      },
-      {
-        q: "Do you serve events in Guadalajara and Zapopan?",
-        a: "Yes. We produce in Guadalajara and ship throughout Mexico. Message us on WhatsApp with your event date and delivery city and we'll prepare a quote.",
+        a: "Yes. We produce in Guadalajara and ship throughout Mexico, so we serve events in Guadalajara, Zapopan, and other states. Message us on WhatsApp with the date and delivery city.",
       },
       {
         q: "Do you issue invoices?",
@@ -1501,8 +1488,8 @@ export const blogPostsEn: BlogPost[] = [
         a: "It depends on the inks. The FDA receives reports of allergies to tattoo inks and recommends consulting a health professional if there is redness, bumps, or a rash. If someone at your event has sensitive skin or allergies, message us before ordering.",
       },
       {
-        q: "How long do temporary tattoos last?",
-        a: "An external reference says decal-style temporary tattoos last from hours to days, depending on the type, body area, and care.",
+        q: "Can I combine them with favor boxes or stickers?",
+        a: "Yes. We produce custom favor boxes and vinyl stickers, and you can use the same design on all three for a coordinated event.",
       },
       {
         q: "Can I see real examples?",
@@ -2169,17 +2156,17 @@ export const blogPostsEn: BlogPost[] = [
     slug: BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"],
     title: "Vinyl vs. Paper Stickers: Which to Choose for Your Event",
     metaTitle: "Vinyl vs. Paper Stickers: Which Is Right for You?",
-    description: `Vinyl vs. paper stickers for weddings, parties and gifts: what changes with water and sun. 100 pieces (small size): $${priceOf("stickers-vinil-impermeable", 100)}, with a digital proof.`,
+    description: `Vinyl vs. paper stickers for weddings and parties: what changes with water and sun. 100 pieces (small size): $${priceOf("stickers-vinil-impermeable", 100)}, with a digital proof.`,
     category: "Guides",
     publishedAt: "2026-09-09",
-    modifiedAt: "2026-10-29",
+    modifiedAt: "2026-11-13",
     intro:
       "If you're giving a gift or preparing a detail for a wedding, quinceañera, baptism or baby shower, choosing between vinyl and paper stickers changes how the piece holds up on the table, on a glass or on a small bag. Here we explain the difference, what happens with water and ice, when each material makes sense, how much it costs and why Yume works only with vinyl.",
     sections: [
       {
         heading: "Vinyl vs. paper stickers: the difference that matters",
         body: [
-          "The main difference between vinyl and paper stickers is the material. Vinyl is a flexible plastic and, according to our sticker specifications, resists water, sun and scratches. That's why we use it for pieces that are handled, get wet or are exposed to light, such as bottles and laptops.",
+          "The main difference between vinyl and paper stickers is the material. According to our sticker specifications, premium vinyl resists water, sun and scratches. That's why we use it for pieces that are handled, get wet or are exposed to light, such as bottles and laptops.",
           "We don't give durability figures for paper: Yume doesn't produce it and we don't have our own test results. When comparing quotes, always ask about the exact material and finish, because that's where the real difference in what you'll receive lies.",
         ],
       },
@@ -2188,6 +2175,7 @@ export const blogPostsEn: BlogPost[] = [
         body: [
           "Yume's vinyl stickers are water-resistant according to the product specifications, so a glass, cup or jar with ice is a reasonable use as a table detail. We don't promise they'll withstand prolonged soaking or intense washing. If you have a special case, message us on WhatsApp and we'll review it before production.",
           "For weddings, quinceañeras, baptisms or baby showers, these stickers often go on glasses, cups, bags or souvenir jars. Tell us where yours will go, for example on a glass with a cold drink or a jar with ice, and we'll honestly tell you what to expect before production.",
+          `For more ideas for celebrations, see our guide to [stickers for weddings and parties](/en/blog/${BLOG_SLUG_EN["stickers-para-bodas-eventos-y-fiestas"]}).`,
         ],
       },
       {
@@ -2211,22 +2199,23 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "Why Yume works only with vinyl",
         body: [
-          "At Yume we only work with vinyl because we prefer to offer a material we know holds up. Both of our sticker products, Custom Vinyl Stickers and Stickers and Labels with Your Logo, are made from premium vinyl with die-cut or kiss-cut cutting, and you always receive a digital proof before production.",
+          "At Yume we only work with vinyl because we prefer to offer a material we know holds up. Both of our sticker products, [Custom Vinyl Stickers](/en/products/waterproof-vinyl-stickers) and [Stickers and Labels with Your Logo](/en/products/custom-logo-stickers), are made from premium vinyl with die-cut or kiss-cut cutting, and you always receive a digital proof before production.",
           "For a wedding, quinceañera or baby shower detail, the product is Custom Vinyl Stickers: any design, character or photo. For your business logo, it's Stickers and Labels with Your Logo. Both are sold by piece count, not by sheet.",
         ],
       },
       {
         heading: "Cut and finish: what you can choose",
         body: [
-          "With vinyl you choose two things when ordering: the cut, which can be die-cut or kiss-cut, and the finish, which can be matte, glossy or holographic. All our stickers have high-quality BOPP lamination. Holographic has an extra cost per piece. The material doesn't change: it's still the same premium vinyl, so these are design decisions.",
-          "If you're unsure which cut suits you, read our die-cut vs. kiss-cut comparison, where we explain when each makes sense. Before printing you receive a digital proof to confirm how the design looks.",
+          "With vinyl you choose two things when ordering: the cut, which can be die-cut or kiss-cut, and the finish, which can be matte, glossy or holographic. All our stickers have high-quality BOPP lamination. Holographic has an extra cost per piece.",
+          `The material doesn't change: it's still the same premium vinyl, so these are design decisions. If you're unsure which cut suits you, read our [die-cut vs. kiss-cut comparison](/en/blog/${BLOG_SLUG_EN["troquelado-vs-semitroquelado-stickers"]}). Before printing you receive a digital proof to confirm how the design looks.`,
+          "You also choose the size: small up to 4 cm, medium from 5 to 6 cm, and large from 7 to 8 cm. If you need a larger size or something specific, we can quote it on WhatsApp.",
         ],
       },
       {
         heading: "How much vinyl stickers cost",
         body: [
-          `100 pieces (small size): $${priceOf("stickers-vinil-impermeable", 100)} for Custom Vinyl Stickers and $${priceOf("stickers-logo-personalizado", 100)} for labels with your logo. The minimum is 40 vinyl pieces and 50 logo labels, and you order the exact quantity you need.`,
-          `As a reference, 150 vinyl pieces cost $${priceOf("stickers-vinil-impermeable", 150)} and 200 pieces cost $${priceOf("stickers-vinil-impermeable", 200)}. For an event, count your guests and add a few spare pieces.`,
+          `100 pieces (small size): $${priceOf("stickers-vinil-impermeable", 100)} for Custom Vinyl Stickers and $${priceOf("stickers-logo-personalizado", 100)} for labels with your logo. The minimum is 40 vinyl pieces and 50 logo labels, and you order the exact quantity you need, because they are sold by piece.`,
+          `Orders above 100 pieces receive wholesale pricing: 150 vinyl pieces cost $${priceOf("stickers-vinil-impermeable", 150)} and 200 pieces cost $${priceOf("stickers-vinil-impermeable", 200)}. See all the options on the [custom vinyl stickers](/en/products/waterproof-vinyl-stickers) page.`,
         ],
         table: {
           ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 150, 200, 300], "en"),
@@ -2237,7 +2226,7 @@ export const blogPostsEn: BlogPost[] = [
         body: [
           `Send us your design through WhatsApp or the shop and we'll send you a digital proof, normally within 24 hours of payment, with up to 2 rounds of adjustments. From approval, it arrives at your door in ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days.`,
           `If you're in Guadalajara, your order can be ready for pickup at Casa Blanca in ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days. You can send us your logo, character, photo or idea in whatever format you have, even if it isn't ideal. We produce in Guadalajara and ship throughout Mexico.`,
-          "If you want to compare Yume with other options, check our comparison with online print shops or the guide to where to print stickers in Mexico.",
+          `For detailed timelines, read [how long a sticker order takes](/en/blog/${BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"]}). If you want to compare Yume with other options, see our [comparison with online print shops](/en/blog/${BLOG_SLUG_EN["yume-vs-imprentas-online-stickers"]}) or the guide to [where to print stickers in Mexico](/en/blog/${BLOG_SLUG_EN["donde-imprimir-stickers-personalizados-mexico"]}).`,
         ],
       },
     ],
@@ -2259,8 +2248,12 @@ export const blogPostsEn: BlogPost[] = [
         a: "You can choose die-cut or kiss-cut, and a matte, glossy or holographic finish. Holographic has an extra cost per piece that you see when selecting it on the product page.",
       },
       {
+        q: "What sticker sizes are available?",
+        a: "Small (up to 4 cm), medium (5 to 6 cm), and large (7 to 8 cm). If you need a larger size or something specific, we can quote it on WhatsApp.",
+      },
+      {
         q: "How much do vinyl stickers cost?",
-        a: `100 pieces (small size): $${priceOf("stickers-vinil-impermeable", 100)}. The minimum order is 40 pieces.`,
+        a: `100 pieces (small size): $${priceOf("stickers-vinil-impermeable", 100)}. Orders above 100 pieces receive wholesale pricing. The minimum order is 40 pieces.`,
       },
       {
         q: "Are they sold by sheet or by piece?",
@@ -2758,14 +2751,21 @@ export const blogPostsEn: BlogPost[] = [
       "Real differences between a plate with an NFC chip and a homemade sign with just a printed QR code for collecting Google reviews at your business.",
     category: "Guides",
     publishedAt: "2026-09-15",
-    modifiedAt: "2026-10-29",
+    modifiedAt: "2026-11-13",
     intro: "Printing a QR code on a sheet of paper and placing it on the counter is free and anyone can do it. So why consider an NFC plate? Both lead to the same review page. The difference is in convenience, which phones can use each option, the impression the piece makes, and the Google rules that apply to both.",
     sections: [
       { heading: "NFC plate vs. QR code: the practical difference", body: [
         "The main difference is how the customer reaches the review page. With QR, they open the camera and scan. With NFC, they bring their phone close to the plate and tap. Both lead to the same place, so neither guarantees more reviews on its own. What changes is convenience and which phones can use it.",
         "A printed QR code is the more familiar option: almost everyone knows how to scan one and only needs a camera. To scan well, it must be large enough and have clear space around it. NFC adds a single tap without aiming or focusing, but the customer needs NFC turned on, and the location and surface material can affect the reading.",
         "These points come from a review card supplier's guide, not an independent test. That is why we do not give percentages or exact compatibility lists: it depends on each phone model and its settings."
-      ] },
+      ], table: {
+        headers: ["Aspect", "QR code", "NFC"],
+        rows: [
+          ["How to use it", "Open the camera and scan", "Bring the phone close and tap"],
+          ["What the phone needs", "A camera", "NFC enabled"],
+          ["What to consider", "Enough size and clear space around it", "The location and surface, which can affect reading"],
+        ],
+      } },
       { heading: "When to use QR and when to use NFC", body: [
         "QR is useful when you want any phone with a camera to be able to use it, including on printed material. NFC is useful for a quick tap, provided the customer has NFC enabled. Since not every phone has it enabled, it is safer not to rely on just one.",
         "Think about where the piece will go and who will use it. At reception or a counter, the customer is close enough to choose between tapping and scanning. At an event table, guests have different phones, so a visible QR code is a backup if tapping does not work. In a welcome kit, the piece is seen up close and can accompany a friendly note inviting guests to share their experience.",
@@ -2773,17 +2773,22 @@ export const blogPostsEn: BlogPost[] = [
       ] },
       { heading: "Why a plate with NFC and QR is the best option", body: [
         "The safest option is one piece with both NFC and QR. Customers with NFC enabled can tap, and those without it can scan. It is useful to have that backup and test with common phones before buying in volume.",
-        "Our [NFC review plate](/en/products/google-review-nfc-plate) combines both ways to use it in one object, and the [NFC review stand](/en/products/google-review-nfc-stand) does the same in a version that sits on a surface. Both are available in white or black.",
+        "Our [NFC review plate](/en/products/google-review-nfc-plate) combines both ways to use it in one object and includes adhesive to fix it in place. The [NFC review stand](/en/products/google-review-nfc-stand) does the same in an upright version without adhesive. Both are available in white or black.",
         "Before using it at your business or an event, test it with two or three different phones, including yours and someone else's. To see how it is set up and presented to customers, read the guide to [using the review plate](/en/blog/how-to-use-your-yume-google-review-plate)."
+      ] },
+      { heading: "What changes in cost and setup", body: [
+        "Printing a QR code on a sheet of paper is free, but you generate the link and print it yourself. Our plate arrives already programmed with your business's review link and with the backup QR code printed on it. You can buy just one, with a one-time payment and no subscription or app.",
+        `If you are comparing it with plates that charge monthly, see the analysis of [one-time payment vs. subscription](/en/blog/${BLOG_SLUG_EN["placas-resenas-google-pago-unico-vs-suscripcion"]}). And if you are concerned about which phones can read it, the guide to [NFC on iPhone and Android](/en/blog/${BLOG_SLUG_EN["placa-nfc-funciona-iphone-android"]}) explains it frankly.`,
       ] },
       { heading: "Image and design: make the piece fit your brand or event", body: [
         "A sheet with a QR code sends a different message from a plate designed to look like part of a brand or event. For planners, businesses and anyone who cares about details, the finish matters. Our plates and stands come in white or black to match the space where they are placed.",
-        "A practice, café, store or event venue reception already pays attention to its image: a piece that fits the décor stands out more than a loose notice. If you organize events, it can also be another detail on the welcome table or guest service desk."
+        "A practice, café, store or event venue reception already pays attention to its image: a piece that fits the décor stands out more than a loose notice. If you organize events, it can also be another detail on the welcome table or guest service desk.",
+        `To choose a location, see [where to place the plate](/en/blog/${BLOG_SLUG_EN["donde-poner-placa-resenas-google"]}).`
       ] },
       { heading: "Google rules that apply equally to QR and NFC", body: [
         "Google allows businesses to ask for genuine reviews, but not to offer incentives, request only positive reviews or discourage negative ones. These rules apply equally to an NFC plate and a QR code because the method does not change the policy. The text on the piece should be neutral.",
         "According to Google Maps content policy, businesses must not offer payment, discounts, free goods or services in exchange for a review, a change to one or the removal of a negative review. Nor should they select who is asked for a review. That is why the plate should not say things like 'leave 5 stars and get a gift.'",
-        "The policy also says not to request specific content or pressure staff to leave ratings at the business. A simple phrase like 'Tell us about your experience' invites feedback without dictating what to write."
+        `The policy also says not to request specific content or pressure staff to leave ratings at the business. A simple phrase like 'Tell us about your experience' invites feedback without dictating what to write. For more detail, read [what you can and cannot ask for](/en/blog/${BLOG_SLUG_EN["que-si-y-que-no-pedir-resenas-google-politicas"]}).`
       ] },
       { heading: "What to expect: convenience, not a guarantee of more reviews", body: [
         "Neither option ensures more reviews on its own. There is no reliable figure to support that claim: a well-placed piece and a friendly request may help, nothing more. Use them to make the process easier, not as a guarantee.",
@@ -2793,12 +2798,15 @@ export const blogPostsEn: BlogPost[] = [
     faq: [
       { q: "Does NFC replace the QR code?", a: "No. Some customers have NFC turned off or a phone that does not detect it reliably, so it is useful to add a QR code as backup. A piece with NFC and QR is the safest choice." },
       { q: "Can a printed QR code be used to ask for reviews?", a: "Yes. It works with any phone with a camera and on printed material. It must be large enough and have clear space around it to scan well." },
+      { q: "Does the Yume plate arrive ready to use?", a: "Yes. It arrives already programmed with your business's review link and with the backup QR code printed on it." },
+      { q: "Do I need to pay for a subscription or install an app?", a: "No. The plate and stand can be purchased from one piece, with a one-time payment and no subscription or app." },
+      { q: "What is the difference between the plate and the stand?", a: "The plate includes adhesive to fix it in place. The stand sits upright and does not need adhesive. Both are available in white or black." },
       { q: "Can I offer a discount or gift in exchange for a review?", a: "No. Google policy prohibits incentives such as payments, discounts, free goods or services in exchange for a review, whether you use an NFC plate or a QR code." },
       { q: "Can I ask only satisfied customers for reviews?", a: "No. Google does not allow selectively requesting positive reviews or discouraging negative ones. You may ask for genuine reviews without influencing the rating or content." },
       { q: "What text should I put on the plate?", a: "Use neutral wording, such as 'Tell us about your experience.' Google says not to request specific content in a review." },
       { q: "Will NFC get me more reviews?", a: "There is no reliable figure to support that claim." },
     ],
-    relatedBlogSlugs: [BLOG_SLUG_EN["placas-resenas-google-pago-unico-vs-suscripcion"], BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"], BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"], BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"], BLOG_SLUG_EN["placa-resenas-google-para-consultorios"], BLOG_SLUG_EN["placa-resenas-google-para-restaurantes"], BLOG_SLUG_EN["placa-resenas-google-para-salones-esteticas-y-barberias"], BLOG_SLUG_EN["placa-resenas-google-para-planners-y-eventos"], BLOG_SLUG_EN["como-hacer-una-encuesta-de-satisfaccion-del-cliente"]],
+    relatedBlogSlugs: [BLOG_SLUG_EN["placas-resenas-google-pago-unico-vs-suscripcion"], BLOG_SLUG_EN["placa-nfc-funciona-iphone-android"], BLOG_SLUG_EN["donde-poner-placa-resenas-google"], BLOG_SLUG_EN["que-si-y-que-no-pedir-resenas-google-politicas"], BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"], BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"], BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"], BLOG_SLUG_EN["placa-resenas-google-para-consultorios"], BLOG_SLUG_EN["placa-resenas-google-para-restaurantes"], BLOG_SLUG_EN["placa-resenas-google-para-salones-esteticas-y-barberias"], BLOG_SLUG_EN["placa-resenas-google-para-planners-y-eventos"], BLOG_SLUG_EN["como-hacer-una-encuesta-de-satisfaccion-del-cliente"]],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
     sources: [
       { label: "Google Maps content policy: reviews", url: "https://support.google.com/contributionpolicy/answer/7400114?hl=en" },
@@ -3327,6 +3335,9 @@ export const blogPostsEn: BlogPost[] = [
         a: `Yes, we ship across Mexico for $${NATIONAL_SHIPPING_PRICE} MXN, free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more.`,
       },
     ],
+    sources: [
+      { label: "Crónica: wedding favors guests actually keep in 2026", url: "https://www.cronica.com.mx/tendencias/2026/09/04/dile-adios-a-los-recuerdos-de-boda-que-terminan-en-la-basura-esto-es-lo-que-si-se-quedan-tus-invitados-en-2026/" },
+    ],
     relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
     relatedBlogSlugs: [BLOG_SLUG_EN["tatuajes-temporales-para-boda-eventos-y-fiestas"], BLOG_SLUG_EN["menu-de-boda-personalizado"], BLOG_SLUG_EN["como-pedir-invitaciones-personalizadas-para-eventos"], BLOG_SLUG_EN["dulceros-para-eventos-sociales-boda-xv-baby-shower"], BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"], BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"], BLOG_SLUG_EN["troquelado-vs-semitroquelado-stickers"], BLOG_SLUG_EN["donde-imprimir-stickers-personalizados-mexico"]],
   },
@@ -3338,7 +3349,7 @@ export const blogPostsEn: BlogPost[] = [
       "Temporary tattoo ideas for parties in Mexico, from weddings and quinceañeras to baby showers and posadas, with skin care tips and how to request a quote.",
     category: "Guides",
     publishedAt: "2026-09-23",
-    modifiedAt: "2026-11-03",
+    modifiedAt: "2026-11-13",
     intro:
       `A temporary tattoo with the couple's initials, the guest of honor's name or the party theme is a detail guests wear for the rest of the event. Here are temporary tattoo ideas for parties in Mexico, organized by event: weddings, bachelorette parties, quinceañeras, first communions, baptisms, baby showers, birthdays, graduations, posadas and company events, plus skin care tips and what we need to prepare a quote. If you are looking for the version for brands, see our guide to [temporary tattoos for events](/en/blog/${BLOG_SLUG_EN["tatuajes-temporales-personalizados-para-eventos"]}).`,
     sections: [
@@ -3346,7 +3357,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "Temporary tattoos for parties in Mexico: which type to choose",
         body: [
           "For a party in Mexico, choose decal temporary tattoos with a design made for the event: the name, date, theme or color palette of the celebration. They are applied on the spot, worn during the party and appear in photos. That makes the detail feel planned for your celebration.",
-          "In stores and marketplaces, they often appear as a generic product for birthdays or bachelorette parties. We make them for each event: tell us the occasion and we adapt the design.",
+          `In stores and marketplaces, they often appear as a generic product for birthdays or bachelorette parties. We make them for each event: tell us the occasion and we adapt the design. For a wedding, combine them with your [custom wedding favors](/en/blog/${BLOG_SLUG_EN["souvenirs-de-boda-personalizados"]}) to keep everything coordinated.`,
         ],
       },
       {
@@ -3402,22 +3413,22 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "Temporary tattoos for planners and company events",
         body: [
-          "If you organize weddings or events, we work on an event-by-event basis: we send a digital proof before production and you speak directly with us by message. You decide the quantity based on the number of guests. This works for wedding planners, event planners and companies organizing posadas, anniversaries or launches.",
-          "When the event already has a color palette, invitation or decorations, send us a photo or reference and we will adapt the design to match. At a company event, the tattoo can carry the logo and event name and be handed out at registration.",
+          "If you organize weddings or events, we work on an event-by-event basis: we send a digital proof before production and you speak directly with us on WhatsApp. You decide the quantity based on the number of guests. This works for wedding planners, event planners and companies organizing posadas, anniversaries or launches.",
+          `When the event already has a color palette, invitation or decorations, send us a photo or reference and we will adapt the design to match. At a company event, the tattoo can carry the logo and event name and be handed out at registration. To see how approval works, read the guide to [digital proofs for planners](/en/blog/${BLOG_SLUG_EN["prueba-digital-pedido-evento-planners"]}).`,
         ],
       },
       {
         heading: "What we need to quote temporary tattoos for your party",
         body: [
           "We need the design, name or phrase you want, or a reference to the theme if you do not have a design yet, the approximate size and the quantity based on your guest count. With those details we prepare your quote and, before production, send a digital proof for you to approve how it will look.",
-          "We produce in Guadalajara and ship anywhere in Mexico, so you can request a quote wherever the celebration takes place. Write to us with your event date and we will confirm the timing. Temporary tattoos are quoted by message and do not have a published price. Visit the [custom temporary tattoos](/en/products/custom-temporary-tattoos) page to start your quote.",
+          "We produce in Guadalajara and ship anywhere in Mexico, so you can request a quote wherever the celebration takes place. Write to us with your event date and we will confirm the timing. Temporary tattoos are quoted via WhatsApp and do not have a published price. Visit the [custom temporary tattoos](/en/products/custom-temporary-tattoos) page to start your quote.",
         ],
       },
       {
         heading: "How to match them with the rest of your stationery",
         body: [
           "If you are already customizing invitations, a wedding menu or stickers for the celebration, use the same design or color palette on the temporary tattoos. That makes them feel part of the same celebration. Tell us which other pieces you have in progress so we can coordinate the design.",
-          "If you also want a detail that can be stuck on and kept, see our [custom vinyl stickers](/en/products/waterproof-vinyl-stickers). Using the same design on both gives your event a coordinated, carefully considered look.",
+          `If you also want a detail that can be stuck on and kept, see our [custom vinyl stickers](/en/products/waterproof-vinyl-stickers). For more ideas, see the [custom wedding menu](/en/blog/${BLOG_SLUG_EN["menu-de-boda-personalizado"]}) and [stickers for weddings and parties](/en/blog/${BLOG_SLUG_EN["stickers-para-bodas-eventos-y-fiestas"]}). Using the same design throughout gives your event a coordinated, carefully considered look.`,
         ],
       },
     ],
@@ -3425,19 +3436,20 @@ export const blogPostsEn: BlogPost[] = [
     faq: [
       { q: "How long do temporary tattoos last?", a: "According to the FDA, temporary decal tattoos fade in hours or days, and henna tattoos can last up to 3 or 4 weeks. Duration depends on the type of product and each person's skin." },
       { q: "Are temporary tattoos safe for a party?", a: "The FDA warns that inks or colorants can irritate skin and cause rashes, so consider testing a small area before the event. We did not find a specific Mexican standard for temporary tattoos." },
-      { q: "How far in advance should I order them?", a: "It depends on your design and event date. Write to us by message with the date and we will confirm the timing. Before production we send you a digital proof to approve." },
+      { q: "How far in advance should I order them?", a: "It depends on your design and event date. Write to us on WhatsApp with the date and we will confirm the timing. Before production we send you a digital proof to approve." },
+      { q: "Can they include my wedding name and date?", a: "Yes. You can request the couple's initials, name or date, and we will adapt the design to your wedding palette. Before production, we send a digital proof for you to approve how it will look." },
       { q: "Can they be used at children's parties?", a: "Yes, they can be an activity at a children's party, with characters or designs from the theme. Test a small area first, especially if a child has sensitive skin." },
       { q: "Is black henna a good idea for a party?", a: "The FDA says black henna may contain hair dye or other colorants to make it last longer, and has not approved henna or hair dye for use on skin. For a party, choose decal tattoos." },
       { q: "What do I need to request a quote for temporary tattoos?", a: "The design, name or phrase (or a reference to the theme), the approximate size and the quantity based on the number of guests." },
-      { q: "How much do temporary tattoos cost?", a: "They are quoted by message based on your design and quantity, because there is no published price on the site." },
+      { q: "How much do temporary tattoos cost?", a: "They are quoted via WhatsApp based on your design and quantity, because there is no published price on the site." },
       { q: "Do you ship throughout Mexico?", a: "Yes. We produce in Guadalajara and ship anywhere in Mexico." },
     ],
     sources: [
       { label: "FDA: Tattoos and Permanent Makeup", url: "https://www.fda.gov/consumers/free-publications-women/tatuajes-y-maquillaje-permanente-tattoos-and-permanent-makeup" },
-      { label: "News report: FDA warning on temporary tattoos and their effects", url: "https://www.vozdeamerica.com/a/fda-advierte-sobre-tatuajes-temporales-y-consecuencias/1916158.html" },
-      { label: "Skin care recommendations for Halloween or Day of the Dead makeup", url: "https://www.cronica.com.mx/tendencias/2026/10/29/te-vas-a-maquillar-para-halloween-o-dia-de-muertos-estas-son-las-mejores-recomendaciones-para-evitar-danos-y-cuidar-tu-piel/" },
+      { label: "Voz de América: FDA warns about temporary tattoos and their consequences", url: "https://www.vozdeamerica.com/a/fda-advierte-sobre-tatuajes-temporales-y-consecuencias/1916158.html" },
+      { label: "Crónica: recommendations for Halloween or Day of the Dead makeup", url: "https://www.cronica.com.mx/tendencias/2026/10/29/te-vas-a-maquillar-para-halloween-o-dia-de-muertos-estas-son-las-mejores-recomendaciones-para-evitar-danos-y-cuidar-tu-piel/" },
     ],
-    relatedBlogSlugs: [BLOG_SLUG_EN["tatuajes-temporales-personalizados-para-eventos"], BLOG_SLUG_EN["cuanto-duran-los-tatuajes-temporales-y-como-quitarlos"]],
+    relatedBlogSlugs: [BLOG_SLUG_EN["tatuajes-temporales-personalizados-para-eventos"], BLOG_SLUG_EN["cuanto-duran-los-tatuajes-temporales-y-como-quitarlos"], BLOG_SLUG_EN["souvenirs-de-boda-personalizados"], BLOG_SLUG_EN["stickers-para-bodas-eventos-y-fiestas"], BLOG_SLUG_EN["menu-de-boda-personalizado"], BLOG_SLUG_EN["prueba-digital-pedido-evento-planners"]],
     serviceLink: { href: "/en/products/custom-temporary-tattoos", label: "See custom temporary tattoos" },
     quoteMessage: "Hi, I'm interested in getting a quote for temporary tattoos for a wedding, event, or party.",
   },
@@ -4017,6 +4029,9 @@ export const blogPostsEn: BlogPost[] = [
         q: "Do you ship outside Guadalajara?",
         a: `Yes, we ship across Mexico for $${NATIONAL_SHIPPING_PRICE}, free on purchases of $${FREE_SHIPPING_THRESHOLD} or more. In the Guadalajara metro area you can also pick up at one of ${CASABLANCA_BRANCHES.length} Casa Blanca branches for $${CASABLANCA_PRICE}.`,
       },
+    ],
+    sources: [
+      { label: "UnoTV: SEP school calendar for 2026-2027", url: "https://www.unotv.com/nacional/cuando-regresan-a-clases-sep-fija-la-fecha-para-iniciar-el-ciclo-escolar-2026-2027/" },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
     relatedBlogSlugs: [BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"], BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"]],
@@ -4646,7 +4661,6 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     sources: [
-      { label: "El Contribuyente: deadline to pay the aguinaldo to workers", url: "https://www.elcontribuyente.mx/2022/12/cual-es-la-fecha-limite-para-entregar-el-aguinaldo-a-los-trabajadores/" },
       { label: "El Imparcial: can they force me to chip in for my workplace posada?", url: "https://www.elimparcial.com/mexico/2025/12/01/pueden-obligarme-a-cooperar-para-la-posada-de-mi-trabajo-esto-dice-la-lft/" },
     ],
   },
