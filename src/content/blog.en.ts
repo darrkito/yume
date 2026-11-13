@@ -6989,13 +6989,14 @@ export const blogPostsEn: BlogPost[] = [
   },
   {
     slug: "sticker-printing-for-events",
-    title: "Sticker Printing for Weddings and Events",
+    title: "Sticker Printing for Events and Weddings",
     description:
-      "A guide to sticker printing for weddings and events: where to use them, vinyl or paper, readable sizes, quantities and matching your stationery.",
+      "A guide to sticker printing for events and weddings: where to use them, vinyl or paper, readable sizes, quantities and how to order with a digital proof.",
     category: "Guides",
     publishedAt: "2026-11-13",
+    modifiedAt: "2026-11-13",
     intro:
-      "Sticker printing for a wedding or an event is not a catalog decision: what matters is where each sticker goes, which material, which size stays readable and how many you need. This guide helps you decide calmly and order with the digital proof in hand.",
+      "Sticker printing for events and weddings is not a catalog decision: what matters is where each sticker goes, which material, which size stays readable and how many you need. This guide helps you decide calmly and order with the digital proof in hand.",
     sections: [
       {
         heading: "Sticker printing for events: where they go",
@@ -7005,54 +7006,84 @@ export const blogPostsEn: BlogPost[] = [
         ],
       },
       {
+        heading: "Stickers with purpose: from loose souvenir to useful detail",
+        body: [
+          "The wedding keepsakes gaining ground in 2026 are personalized ones with a reason to exist after the party. So think of the sticker as the label on a useful detail, such as welcome kits, bottles or packaging, not as a loose sticker with initials.",
+          "According to Publimetro México, generic objects, single-use ones and those that only carry names and a date are losing ground. A sticker that seals a package or identifies a bottle inside a welcome kit has a job to do, which makes more sense as a keepsake. If your detail is a treat, see our [personalized candy boxes](/en/products/personalized-party-favor-boxes).",
+        ],
+      },
+      {
         heading: "Vinyl or paper? How to choose the material for the use",
         body: [
           "Choose based on where the sticker will live. If it goes on bottles with ice or in a humid place, vinyl is the better fit. If it is a dry piece, like an envelope, a box or a card, the material matters less. We work with premium vinyl with BOPP lamination, water, sun and scratch resistant.",
-          "According to a printing guide, matte paper is the most economical and versatile but does not resist water or intense humidity, and vinyl suits humidity or outdoor use. The finish can be matte, glossy or holographic. To compare in depth, read [vinyl vs paper stickers](/en/blog/vinyl-vs-paper-stickers-differences) and check [die cut vs kiss cut](/en/blog/die-cut-vs-kiss-cut-stickers) to choose the cut.",
+          "The finish can be matte, glossy or holographic, and the cut die cut or kiss cut: you choose them when you order. To compare in depth, read [vinyl vs paper stickers](/en/blog/vinyl-vs-paper-stickers-differences) and check [die cut vs kiss cut](/en/blog/die-cut-vs-kiss-cut-stickers) to choose the cut.",
         ],
       },
       {
         heading: "What sticker size keeps names and dates readable",
         body: [
           "Our vinyl stickers come in three sizes: small up to 4 cm, medium from 5 to 6 cm and large from 7 to 8 cm. If the design has names, a date or a phrase, choose medium or large so the text reads comfortably. For larger sizes, we quote by WhatsApp.",
-          "As a reference, one online provider's guide recommends not going below about 5×5 cm when the design has letters. That is that provider's guideline, not a rule, and it helps you choose between sizes.",
+          "You choose the size on the product page along with the cut and the finish, and it sets the price per piece. If you are unsure which size fits your piece, send us a photo on WhatsApp.",
         ],
+        table: {
+          headers: ["Size", "Measure"],
+          rows: [
+            ["Small", "Up to 4 cm"],
+            ["Medium", "5 to 6 cm"],
+            ["Large", "7 to 8 cm"],
+            ["Larger", "Quoted by WhatsApp"],
+          ],
+        },
       },
       {
         heading: "How to match stickers to your stationery and color palette",
         body: [
           "Start from the colors and typography of the invitation or menu, and repeat them on the sticker. That way the envelope seal, the favor bag label and the thank-you card look like one family. If you already have your stationery, send us a photo by WhatsApp so we can work the design with that palette.",
-          "If you do not have stationery yet, start with [how to order custom stationery online](/en/blog/how-to-order-custom-stationery-online) and then order the stickers in the same colors. For the table, see [personalized wedding table details](/en/blog/personalized-wedding-table-details). If you want a different name on each sticker, ask on WhatsApp whether it is possible for your order.",
+          "If you do not have stationery yet, start with [how to order custom stationery online](/en/blog/how-to-order-custom-stationery-online) or [custom event invitations](/en/blog/how-to-order-custom-event-invitations), and then order the stickers in the same colors. For the table, see [personalized wedding table details](/en/blog/personalized-wedding-table-details) and [custom wedding menus](/en/blog/custom-wedding-menus). If you want a different name on each sticker, ask on WhatsApp whether it is possible for your order.",
         ],
       },
       {
-        heading: "What to check in your design before printing",
+        heading: "What to check in the digital proof before printing",
         body: [
-          "Before sending your design, a useful reference from a printing guide is: extend the background to the bleed to avoid white edges after cutting, and keep text and logos inside the safe zone. These are that provider's guidelines; for your order, confirm the file with us by WhatsApp.",
-          "You can send us your design, a character or a photo, and we send a digital proof before printing so you can review names, dates and colors.",
+          "Before printing, we send a digital proof so you can review names, dates and colors. It is the moment to confirm every word is spelled right, the colors match your stationery, and the cut and finish you chose are the ones you want. You can send us your design, a character or a photo.",
+          "If you have questions about your file, confirm it with us on WhatsApp before sending it.",
         ],
       },
       {
         heading: "How many stickers to order for your event",
         body: [
-          "First count how many pieces you will decorate: guests, tables and gifts. Our minimum order for vinyl stickers is 40 pieces and you can type the exact quantity you need, not just the menu options. If you want a margin for last-minute needs, add it to your count before ordering.",
-          "The price per piece depends on the size and you can see it on the [custom vinyl stickers](/en/products/waterproof-vinyl-stickers) page. To count the pieces for other event details, use the guide on [how many party favors to order per event](/en/blog/how-many-party-favors-to-order-per-event).",
+          "First count how many pieces you will decorate: guests, tables and gifts. Our minimum order for vinyl stickers is 40 pieces and you can type the exact quantity you need, not just the menu options. That lets you order exactly the number of pieces your event needs.",
+          "The price per piece depends on the size and you can see it on the [custom vinyl stickers](/en/products/waterproof-vinyl-stickers) page. If the sticker carries your brand or company logo, see the [custom logo stickers](/en/products/custom-logo-stickers). To count the pieces for other event details, use the guide on [how many party favors to order per event](/en/blog/how-many-party-favors-to-order-per-event).",
+        ],
+      },
+      {
+        heading: "How to work with planners and family members who organize the order",
+        body: [
+          "If you organize the event for someone else, decide who approves the design and who receives the order, and use the digital proof as the point of agreement. That way the bride, the planner or the relative sees names, date and colors before printing, and contact stays direct on WhatsApp.",
+          "If you work with clients, read the [digital proof for planners](/en/blog/digital-proof-event-order-planners), the [planner checklist for custom favors](/en/blog/planner-checklist-custom-favors-order-event) and the page for [planners](/en/planners).",
         ],
       },
       {
         heading: "How to order: digital proof and direct WhatsApp contact",
         body: [
           "You send your design, photo or idea and we send a digital proof before printing. You choose the cut type, finish and size, and we answer questions directly on WhatsApp. The process is built for brides, family members, planners and companies organizing a specific event.",
-          "We explain production and shipping times in [how long custom stickers take to arrive](/en/blog/how-long-do-custom-stickers-take-to-arrive). If you organize events for clients, read the [digital proof for planners](/en/blog/digital-proof-event-order-planners) and the page for [planners](/en/planners).",
+          "We explain production and shipping times in [how long custom stickers take to arrive](/en/blog/how-long-do-custom-stickers-take-to-arrive). To compare printing options, see [where to print custom stickers in Mexico](/en/blog/where-to-print-custom-stickers-mexico).",
         ],
       },
     ],
-    relatedProductSlugs: ["stickers-vinil-impermeable"],
+    relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
     relatedBlogSlugs: [
       "stickers-for-weddings-events-and-parties",
       "vinyl-vs-paper-stickers-differences",
       "personalized-wedding-favors-with-name-and-date",
       "how-long-do-custom-stickers-take-to-arrive",
+      "digital-proof-event-order-planners",
+    ],
+    sources: [
+      {
+        label: "Publimetro México: wedding souvenirs 2026, the trends gaining ground",
+        url: "https://www.publimetro.com.mx/virales/2026/10/02/souvenirs-para-bodas-2026-las-tendencias-que-ganan-terreno/",
+      },
     ],
     faq: [
       {
@@ -7066,6 +7097,14 @@ export const blogPostsEn: BlogPost[] = [
       {
         q: "Can I use my own design or a photo?",
         a: "Yes. You can send us your design, a character or a photo, and we prepare a digital proof before printing.",
+      },
+      {
+        q: "Which finishes and cut types are available?",
+        a: "The cut can be die cut or kiss cut, and the finish matte, glossy or holographic. You choose them when you place your order.",
+      },
+      {
+        q: "What if the sticker is for my business logo?",
+        a: "For your business or brand logo there are logo stickers starting at 50 pieces. For any design, character or photo, custom vinyl stickers start at 40 pieces.",
       },
     ],
   },
