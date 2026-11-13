@@ -26,7 +26,7 @@ export const dulceroPosts: BlogPost[] = [
     description: `Dulceros personalizados en Guadalajara: primeras 100 piezas a $${dulceroUnit} c/u, mínimo 10. Medidas, material, tiempos y cómo pedirlos. Envío a todo México.`,
     category: "Guías",
     publishedAt: PUBLISHED,
-    modifiedAt: "2026-10-29",
+    modifiedAt: "2026-11-13",
     intro:
       "Un dulcero personalizado es la cajita que se lleva cada invitado al terminar la fiesta: con el nombre del festejado y la temática del evento, deja de ser una bolsa genérica y se vuelve parte de la decoración. En Yume los hacemos tipo lunch box, con asa, desde Guadalajara y con envío a todo México. Esta guía reúne lo que necesitas saber antes de pedirlos para un cumpleaños, un baby shower, una boda o un evento de tu empresa: precio, medidas, material, tiempos y cómo funciona el diseño.",
     sections: [
@@ -44,12 +44,51 @@ export const dulceroPosts: BlogPost[] = [
           "El dulcero mide 15.7 × 11.7 × 9.9 cm (6.2 × 4.6 × 3.9 pulgadas), es tipo lunch box y tiene asa. Está hecho de cartulina opalina y te llega armado y vacío, listo para llenar con los dulces o detalles que tú elijas, sin doblar ni pegar nada.",
           "La cartulina opalina es lisa y firme, y da buen acabado a la impresión. Como llega sin dulces, tú decides el relleno.",
         ],
+        table: {
+          headers: ["Dato", "Detalle"],
+          rows: [
+            ["Medidas", "15.7 × 11.7 × 9.9 cm"],
+            ["Estilo", "Tipo lunch box, con asa"],
+            ["Material", "Cartulina opalina"],
+            ["Cómo llega", "Armado y vacío"],
+          ],
+        },
       },
       {
         heading: "Qué incluye la personalización del dulcero",
         body: [
           "Cada dulcero lleva el nombre que nos indiques, ya sea el del festejado, los novios, el bebé o tu empresa, y la temática que elijas. Antes de producir te enviamos una prueba digital del diseño, y nada se produce hasta que la apruebas.",
           "La temática puede ser el personaje favorito del niño, una paleta de colores, un deporte, un estilo navideño o el logo de tu marca para un evento corporativo. Si lo necesitas para una boda o un baby shower, cuéntanos la ocasión y los colores por WhatsApp y te cotizamos.",
+        ],
+      },
+      {
+        heading: "Cuántos dulceros pedir y cuánto suma cada pedido",
+        body: [
+          "Puedes pedir desde 10 piezas y la cantidad exacta que necesites, sin paquetes cerrados, así que puedes igualar el número de invitados. Para una boda, la guía de [cuántos dulceros pedir](/blog/cuantos-dulceros-pedir-para-una-boda) te ayuda a calcular la cantidad. Arriba de 100 piezas es precio mayoreo y se cotiza por WhatsApp.",
+          "Esta tabla muestra el total de algunos pedidos dentro de las primeras 100 piezas, sin envío:",
+        ],
+        table: {
+          headers: ["Piezas", "Total en MXN"],
+          rows: [
+            ["25", `$${dulceroTotal(25)}`],
+            ["50", `$${dulceroTotal(50)}`],
+            ["75", `$${dulceroTotal(75)}`],
+            ["100", `$${dulceroTotal(100)}`],
+          ],
+        },
+      },
+      {
+        heading: "Dulceros para boda, XV años, bautizo y primera comunión",
+        body: [
+          "Los dulceros se personalizan con el nombre y la temática de cada ocasión, así que sirven para bodas, XV años, bautizos y primeras comuniones. Cuéntanos la fecha, la cantidad y los colores por WhatsApp y te cotizamos; antes de producir recibes una prueba digital y nada se produce hasta que la apruebas.",
+          "Si buscas ideas por ocasión, revisa los dulceros para [bautizo y primera comunión](/blog/dulceros-para-bautizo-y-primera-comunion), los dulceros de [XV años elegantes](/blog/dulceros-para-xv-anos-elegantes) y la [mesa de dulces](/blog/mesa-de-dulces-para-boda) para una boda.",
+        ],
+      },
+      {
+        heading: "Dulceros para eventos de empresa y planners",
+        body: [
+          "Los dulceros llevan el logo y los colores de tu marca, así que sirven para posadas, aniversarios y eventos con clientes. Si organizas eventos para otras personas, el trato es directo por WhatsApp, con prueba digital antes de producir, y cotizas la fecha, la cantidad y los colores.",
+          "Para equipos y empresas, revisa los [dulceros para eventos empresariales](/blog/dulceros-para-eventos-empresariales), donde el diseño lleva tu logo y los colores de tu marca. Si trabajas como planner, la [guía para wedding planners](/blog/guia-wedding-planners-detalles-personalizados-guadalajara) explica cómo coordinar el pedido, y el artículo sobre la [prueba digital del pedido](/blog/prueba-digital-pedido-evento-planners) detalla ese paso.",
         ],
       },
       {
@@ -66,16 +105,9 @@ export const dulceroPosts: BlogPost[] = [
           `Pídelos directamente en la página de [dulceros personalizados tipo lunch box](/productos/${DULCERO}). Si necesitas ideas para el relleno, revisa [qué poner en un dulcero](/blog/que-poner-en-un-dulcero), y para una fiesta de niños, las [ideas de dulceros para fiesta infantil](/blog/ideas-de-dulceros-para-fiesta-infantil).`,
         ],
       },
-      {
-        heading: "Dulceros para bodas, fiestas y eventos de empresa",
-        body: [
-          "Los dulceros funcionan para cumpleaños, baby showers, bautizos, bodas y eventos de empresa, porque cada uno lleva el nombre y la temática del evento. Cuéntanos la fecha, la cantidad y los colores por WhatsApp y te cotizamos. Si organizas eventos para otras personas, el trato es directo por WhatsApp y con prueba digital.",
-          "Para equipos y empresas, revisa los [dulceros para eventos empresariales](/blog/dulceros-para-eventos-empresariales), donde el diseño lleva tu logo y los colores de tu marca.",
-        ],
-      },
     ],
     relatedProductSlugs: [DULCERO],
-    relatedBlogSlugs: ["ideas-de-dulceros-para-fiesta-infantil", "que-poner-en-un-dulcero", "dulceros-para-eventos-empresariales", "dulceros-dia-de-muertos-noviembre", "dulceros-navidenos-personalizados"],
+    relatedBlogSlugs: ["ideas-de-dulceros-para-fiesta-infantil", "que-poner-en-un-dulcero", "dulceros-para-eventos-empresariales", "dulceros-dia-de-muertos-noviembre", "dulceros-navidenos-personalizados", "cuantos-dulceros-pedir-para-una-boda", "dulceros-para-bautizo-y-primera-comunion", "dulceros-para-xv-anos-elegantes", "mesa-de-dulces-para-boda"],
     faq: [
       {
         q: "¿Cuánto cuesta un dulcero personalizado?",
@@ -98,12 +130,24 @@ export const dulceroPosts: BlogPost[] = [
         a: "El nombre (del festejado, los novios, el bebé o tu empresa) y la temática que elijas, incluido el logo de tu marca. Te mandamos una prueba digital antes de producir y nada se produce hasta que la apruebas.",
       },
       {
+        q: "¿Puedo pedir dulceros para una boda?",
+        a: "Sí. Cuéntanos la fecha, la cantidad y los colores por WhatsApp y te cotizamos. Cada dulcero lleva el nombre de los novios y la temática que elijas.",
+      },
+      {
+        q: "¿Cómo se cotiza un pedido de más de 100 piezas?",
+        a: "Arriba de 100 piezas es precio mayoreo. Escríbenos por WhatsApp con la cantidad y la fecha de tu evento y te cotizamos.",
+      },
+      {
         q: "¿Cuánto tardan en llegar?",
         a: `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días hábiles de envío nacional, o ${PICKUP_EXTRA_DAYS} día hábil si recoges en una sucursal Casa Blanca de Guadalajara.`,
       },
       {
         q: "¿Puedo recogerlos en Guadalajara?",
         a: `Sí. En la zona metropolitana de Guadalajara puedes recogerlos por $${CASABLANCA_PRICE} en cualquiera de las ${CASABLANCA_BRANCHES.length} sucursales de paquetería Casa Blanca.`,
+      },
+      {
+        q: "¿Envían fuera de Guadalajara?",
+        a: "Sí, enviamos a todo México por paquetería.",
       },
     ],
   },
