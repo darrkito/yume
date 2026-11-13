@@ -6892,14 +6892,16 @@ export const blogPosts: BlogPost[] = [
       "Dónde poner el QR de reseñas de Google en tu negocio: caja, mesa o recepción, a qué altura, qué texto llevar y qué errores evitar con una sola placa.",
     category: "Guías",
     publishedAt: "2026-11-13",
+    modifiedAt: "2026-11-13",
     intro:
       "Una placa de reseñas solo sirve si el cliente la ve y sabe qué hacer: un QR escondido no se usa. Esta guía te dice dónde ponerla según tu tipo de negocio (caja, mesa o recepción), cómo dejarla a la altura de los ojos, qué texto llevar y qué errores evitar. Está pensada para un negocio con una sola placa.",
     sections: [
       {
         heading: "Dónde poner el QR de reseñas de Google si solo tienes una placa",
         body: [
-          "Pon la placa donde el cliente ya está parado o sentado, a la altura de los ojos: junto a la terminal de pago, en la mesa o en la recepción después del servicio. Elige un solo lugar principal y complétalo con uno más si hace falta.",
+          "Pon la placa donde el cliente ya está parado o sentado, a la altura de los ojos: junto a la terminal de pago, en la mesa o en la recepción después del servicio. Elige un solo lugar principal y complétalo con uno más solo si hace falta.",
           "La tabla resume la regla: el lugar depende de cuándo termina la atención en tu negocio.",
+          "Si aún no tienes placa, mira la [placa de reseñas NFC](/productos/placa-resena-google-nfc) de Yume.",
         ],
         table: {
           headers: ["Tipo de negocio", "Mejor lugar", "Cuándo la ve el cliente"],
@@ -6953,19 +6955,38 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
+        heading: "Placa o stand: cuál va en cada lugar",
+        body: [
+          "Si el lugar es una caja o un mostrador donde puedes pegar, la placa con adhesivo es la opción natural. Si es una mesa donde no quieres pegar nada, el stand se para solo. Ambos se entregan programados con el enlace de reseñas de tu negocio, así que eliges según la superficie y no según la función.",
+          "Mira la [placa de reseñas NFC](/productos/placa-resena-google-nfc) para caja o recepción y el [stand de reseñas NFC](/productos/stand-resena-google-nfc) para mesas.",
+        ],
+      },
+      {
         heading: "Elegido el lugar: qué incluye la placa de Yume",
         body: [
-          "La placa de Yume llega ya programada con el enlace de reseñas de tu negocio y con el QR de respaldo impreso, así que el cliente puede acercar el celular o escanear el QR desde el mismo lugar. La placa lleva adhesivo; el stand se para solo, sin pegar.",
-          "Es pago único, sin suscripción ni app. Mira la [placa de reseñas NFC](/productos/placa-resena-google-nfc) para caja o recepción y el [stand de reseñas NFC](/productos/stand-resena-google-nfc) para mesas. Cuando recibas la tuya, sigue [cómo usar tu placa de Yume](/blog/como-usar-placa-resenas-google-yume).",
+          "La placa de Yume llega ya programada con el enlace de reseñas de tu negocio y con el QR de respaldo impreso, así que el cliente puede acercar el celular o escanear el QR desde el mismo lugar. Es pago único, sin suscripción ni app.",
+          "Para comparar el costo con otras opciones, revisa [pago único o suscripción](/blog/placas-resenas-google-pago-unico-vs-suscripcion). Si dudas de si el celular de tus clientes la lee, mira [si la placa NFC funciona en iPhone y Android](/blog/placa-nfc-funciona-iphone-android). Cuando recibas la tuya, sigue [cómo usar tu placa de Yume](/blog/como-usar-placa-resenas-google-yume).",
         ],
       },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
-    relatedBlogSlugs: ["como-usar-placa-resenas-google-yume", "placa-resenas-google-para-restaurantes", "placa-resenas-google-para-consultorios", "placa-nfc-vs-codigo-qr-impreso-resenas"],
+    relatedBlogSlugs: ["como-usar-placa-resenas-google-yume", "placa-resenas-google-para-restaurantes", "placa-resenas-google-para-consultorios", "placa-nfc-vs-codigo-qr-impreso-resenas", "placas-resenas-google-pago-unico-vs-suscripcion", "placa-nfc-funciona-iphone-android"],
     sources: [
       { label: "Google: política de contenido de contribuciones (reseñas)", url: "https://support.google.com/contributionpolicy/answer/7400114?hl=es" },
     ],
     faq: [
+      {
+        q: "¿Dónde pongo la placa si solo tengo una?",
+        a: "Donde el cliente ya está parado o sentado, a la altura de los ojos: junto a la terminal de pago en una tienda, en la mesa en un restaurante o en la recepción en un consultorio, salón o barbería.",
+      },
+      {
+        q: "¿Puedo pedir la reseña antes del servicio?",
+        a: "No conviene: aún no hay experiencia que opinar. Lo mejor es que el cliente vea la placa al terminar la atención.",
+      },
+      {
+        q: "¿Placa o stand para una mesa?",
+        a: "Para mesas conviene el stand, que se para solo y no se pega. La placa lleva adhesivo y va mejor en una caja o un mostrador.",
+      },
       {
         q: "¿Puedo dar un descuento a quien deje una reseña?",
         a: "No. Según la política de Google, está prohibido ofrecer pagos, descuentos o bienes y servicios gratis a cambio de reseñas. Tampoco puedes pedirla solo a clientes selectos.",

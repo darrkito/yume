@@ -6613,6 +6613,7 @@ export const blogPostsEn: BlogPost[] = [
       "Where to put your Google review QR plate: checkout, table or reception, at what height, what text to add and which mistakes to avoid.",
     category: "Guides",
     publishedAt: "2026-11-13",
+    modifiedAt: "2026-11-13",
     intro:
       "A review plate only works if the customer sees it and knows what to do: a hidden QR does not get used. This guide tells you where to put it depending on your type of business (checkout, table or reception), how to place it at eye level, what text to add and which mistakes to avoid. It is written for a business with a single plate.",
     sections: [
@@ -6621,6 +6622,7 @@ export const blogPostsEn: BlogPost[] = [
         body: [
           "Put the plate where the customer already is, standing or seated, at eye level: next to the card terminal, on the table or at reception after the service. Choose one main spot and add a second only if you need it.",
           "The table sums up the rule: the right spot depends on when the service ends in your business.",
+          "If you do not have a plate yet, see Yume's [NFC review plate](/en/products/google-review-nfc-plate).",
         ],
         table: {
           headers: ["Type of business", "Best spot", "When the customer sees it"],
@@ -6674,19 +6676,38 @@ export const blogPostsEn: BlogPost[] = [
         ],
       },
       {
+        heading: "Plate or stand: which one fits each spot",
+        body: [
+          "If the spot is a counter or register where you can stick things, the plate with adhesive is the natural choice. If it is a table where you do not want to stick anything, the stand stands on its own. Both arrive programmed with your business's review link, so you choose by surface, not by function.",
+          "See the [NFC review plate](/en/products/google-review-nfc-plate) for checkout or reception and the [NFC review stand](/en/products/google-review-nfc-stand) for tables.",
+        ],
+      },
+      {
         heading: "After choosing the spot: what Yume's plate includes",
         body: [
-          "Yume's plate arrives already programmed with your business's review link and with the backup QR printed on it, so the customer can tap their phone or scan the QR from the same spot. The plate has adhesive; the stand stands on its own, with no sticking.",
-          "It is a one-time payment, with no subscription and no app. See the [NFC review plate](/en/products/google-review-nfc-plate) for checkout or reception and the [NFC review stand](/en/products/google-review-nfc-stand) for tables. When yours arrives, follow [how to use your Yume plate](/en/blog/how-to-use-your-yume-google-review-plate).",
+          "Yume's plate arrives already programmed with your business's review link and with the backup QR printed on it, so the customer can tap their phone or scan the QR from the same spot. It is a one-time payment, with no subscription and no app.",
+          "To compare the cost with other options, read [one-time price vs subscription](/en/blog/google-review-plates-one-time-price-vs-subscription). If you wonder whether your customers' phones can read it, see [whether an NFC plate works on iPhone and Android](/en/blog/does-nfc-plate-work-iphone-android). When yours arrives, follow [how to use your Yume plate](/en/blog/how-to-use-your-yume-google-review-plate).",
         ],
       },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
-    relatedBlogSlugs: ["how-to-use-your-yume-google-review-plate", "google-review-plate-for-restaurants", "google-review-plate-for-medical-practices", "nfc-plate-vs-printed-qr-code-for-reviews"],
+    relatedBlogSlugs: ["how-to-use-your-yume-google-review-plate", "google-review-plate-for-restaurants", "google-review-plate-for-medical-practices", "nfc-plate-vs-printed-qr-code-for-reviews", "google-review-plates-one-time-price-vs-subscription", "does-nfc-plate-work-iphone-android"],
     sources: [
       { label: "Google: contribution content policy (reviews)", url: "https://support.google.com/contributionpolicy/answer/7400114?hl=es" },
     ],
     faq: [
+      {
+        q: "Where do I put the plate if I only have one?",
+        a: "Where the customer already is, standing or seated, at eye level: next to the card terminal in a shop, on the table in a restaurant, or at reception in a clinic, salon or barbershop.",
+      },
+      {
+        q: "Can I ask for the review before the service?",
+        a: "It is not a good idea: there is nothing to review yet. It is better for the customer to see the plate when the service ends.",
+      },
+      {
+        q: "Plate or stand for a table?",
+        a: "For tables, the stand: it stands on its own and nothing gets stuck down. The plate has adhesive and fits better at a register or counter.",
+      },
       {
         q: "Can I give a discount to anyone who leaves a review?",
         a: "No. Under Google's policy, offering payments, discounts or free goods and services in exchange for reviews is prohibited. You also cannot ask only selected customers.",
