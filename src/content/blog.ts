@@ -3523,7 +3523,7 @@ export const blogPosts: BlogPost[] = [
     description: "Ideas de tatuajes temporales para fiestas en México por tipo de evento: boda, XV años, baby shower y posada, con cuidados de piel y cómo cotizar.",
     category: "Guías",
     publishedAt: "2026-09-23",
-    modifiedAt: "2026-11-03",
+    modifiedAt: "2026-11-13",
     intro:
       "Un tatuaje temporal con las iniciales de los novios, el nombre de la festejada o el motivo de la fiesta es un detalle que el invitado se lleva puesto el resto del evento. Aquí encuentras tatuajes temporales para fiestas en México ordenados por tipo de evento: boda, despedida, XV años, primera comunión, bautizo, baby shower, cumpleaños, graduación, posada y evento de empresa, con cuidados de piel y lo que necesitamos para cotizar. Si buscas la versión para marcas, revisa nuestra guía de [tatuajes temporales para eventos](/blog/tatuajes-temporales-personalizados-para-eventos).",
     sections: [
@@ -3531,7 +3531,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Tatuajes temporales para fiestas en México: qué tipo conviene",
         body: [
           "Para una fiesta en México conviene elegir tatuajes temporales de calcomanía con un diseño pensado para el evento: nombre, fecha, motivo o paleta de la celebración. Se aplican en el momento, se lucen durante la fiesta y salen en las fotos. Así el detalle se ve planeado y no genérico.",
-          "En tiendas y marketplaces suelen aparecer como un producto genérico para cumpleaños o despedidas. Nosotros los trabajamos por evento: nos cuentas la ocasión y adaptamos el diseño.",
+          "En tiendas y marketplaces suelen aparecer como un producto genérico para cumpleaños o despedidas. Nosotros los trabajamos por evento: nos cuentas la ocasión y adaptamos el diseño. Si es para una boda, combínalos con tus [souvenirs de boda personalizados](/blog/souvenirs-de-boda-personalizados) para que todo siga una misma línea.",
         ],
       },
       {
@@ -3588,7 +3588,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Tatuajes temporales para planners y eventos de empresa",
         body: [
           "Si organizas bodas o eventos, trabajamos por evento: te mandamos una prueba digital antes de producir y hablas directo con nosotros por WhatsApp. La cantidad la defines según el número de invitados. Sirve para wedding planners, event planners y empresas que organizan posadas, aniversarios o lanzamientos.",
-          "Cuando el evento ya tiene paleta de colores, invitación o decoración, mándanos una foto o una referencia y adaptamos el diseño a esa línea. En un evento de empresa, el tatuaje puede llevar el logo y el nombre del evento y entregarse en el registro.",
+          "Cuando el evento ya tiene paleta de colores, invitación o decoración, mándanos una foto o una referencia y adaptamos el diseño a esa línea. En un evento de empresa, el tatuaje puede llevar el logo y el nombre del evento y entregarse en el registro. Para ver cómo funciona la aprobación, revisa la guía de [prueba digital para planners](/blog/prueba-digital-pedido-evento-planners).",
         ],
       },
       {
@@ -3602,12 +3602,12 @@ export const blogPosts: BlogPost[] = [
         heading: "Cómo combinarlos con el resto de tu papelería",
         body: [
           "Si ya personalizas invitaciones, menú de boda o stickers para la celebración, usa el mismo diseño o la misma paleta de colores en los tatuajes temporales. Así se sienten parte del mismo festejo y no un producto aparte. Cuéntanos qué otras piezas tienes en proceso para alinear el diseño.",
-          "Si además quieres un detalle que se pueda pegar y guardar, mira nuestros [stickers de vinil personalizados](/productos/stickers-vinil-impermeable). Con el mismo diseño en ambos, tu evento se ve completo y cuidado.",
+          "Si además quieres un detalle que se pueda pegar y guardar, mira nuestros [stickers de vinil personalizados](/productos/stickers-vinil-impermeable). Para más ideas, revisa el [menú de boda personalizado](/blog/menu-de-boda-personalizado) y los [stickers para bodas y fiestas](/blog/stickers-para-bodas-eventos-y-fiestas). Con el mismo diseño en todo, tu evento se ve completo y cuidado.",
         ],
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["tatuajes-temporales-personalizados-para-eventos", "cuanto-duran-los-tatuajes-temporales-y-como-quitarlos"],
+    relatedBlogSlugs: ["tatuajes-temporales-personalizados-para-eventos", "cuanto-duran-los-tatuajes-temporales-y-como-quitarlos", "souvenirs-de-boda-personalizados", "stickers-para-bodas-eventos-y-fiestas", "menu-de-boda-personalizado", "prueba-digital-pedido-evento-planners"],
     serviceLink: { href: "/productos/tatuajes-temporales-personalizados", label: "Ver tatuajes temporales personalizados" },
     quoteMessage: "Hola, me interesa cotizar tatuajes temporales para una boda, evento o fiesta.",
     faq: [
@@ -3622,6 +3622,10 @@ export const blogPosts: BlogPost[] = [
       {
         q: "¿Con cuánta anticipación debo pedirlos?",
         a: "Depende de tu diseño y de la fecha del evento. Escríbenos por WhatsApp con la fecha y te confirmamos los tiempos. Antes de producir te mandamos una prueba digital para que la apruebes.",
+      },
+      {
+        q: "¿Pueden llevar el nombre y la fecha de mi boda?",
+        a: "Sí. Puedes pedir las iniciales de los novios, el nombre o la fecha, y adaptamos el diseño a la paleta de tu boda. Antes de producir te mandamos una prueba digital para que apruebes cómo se verá.",
       },
       {
         q: "¿Sirven para fiestas infantiles?",
