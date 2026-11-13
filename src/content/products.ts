@@ -488,6 +488,7 @@ export const products: Product[] = [
       { q: "¿Tiene mensualidad o suscripción?", a: "No. Es un pago único, sin suscripción ni mensualidad." },
       { q: "¿Es para un solo negocio o para varias sucursales?", a: "Se configura con el enlace de reseñas de tu negocio. La pieza no incluye una plataforma para administrar varias sucursales." },
       { q: "¿Hace falta un dashboard?", a: "No. La pieza de Yume no tiene dashboard; administras las reseñas en tu propio perfil de empresa de Google." },
+      { q: "¿Cuánto tarda en llegar?", a: "Se hace sobre pedido y está sujeto a disponibilidad. Normalmente son 3-5 días hábiles de producción y 2-5 de envío, pero por la alta demanda la producción puede tardar de 2 a 3 semanas. Te recomendamos preguntar disponibilidad por WhatsApp antes de pagar." },
     ],
   },
   {
@@ -561,6 +562,7 @@ export const products: Product[] = [
       { q: "¿Tiene mensualidad o suscripción?", a: "No. Es un pago único, sin suscripción ni mensualidad." },
       { q: "¿Es para un solo negocio o para varias sucursales?", a: "Se configura con el enlace de reseñas de tu negocio. La pieza no incluye una plataforma para administrar varias sucursales." },
       { q: "¿Hace falta un dashboard?", a: "No. La pieza de Yume no tiene dashboard; administras las reseñas en tu propio perfil de empresa de Google." },
+      { q: "¿Cuánto tarda en llegar?", a: "Se hace sobre pedido y está sujeto a disponibilidad. Normalmente son 3-5 días hábiles de producción y 2-5 de envío, pero por la alta demanda la producción puede tardar de 2 a 3 semanas. Te recomendamos preguntar disponibilidad por WhatsApp antes de pagar." },
     ],
   },
   {

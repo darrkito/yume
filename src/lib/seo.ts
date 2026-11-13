@@ -166,7 +166,7 @@ export function productPageSchema(
   { lang, path, name, description, category, images }: { lang: Lang; path: string; name: string; description: string; category: string; images: string[] },
 ) {
   const url = `${SITE.url}${path}`;
-  const handlingTime = { "@type": "QuantitativeValue", minValue: PRODUCTION_DAYS.min, maxValue: PRODUCTION_DAYS.max, unitCode: "DAY" };
+  const handlingTime = { "@type": "QuantitativeValue", minValue: PRODUCTION_DAYS.min, maxValue: product.availabilityNote ? 15 : PRODUCTION_DAYS.max, unitCode: "DAY" };
   return {
     "@context": "https://schema.org",
     "@type": "Product",

@@ -62,7 +62,7 @@ export default function ContactoPage() {
       <div className="mt-12 border-t border-line pt-8">
         <h2 className="font-display text-xl text-ink">Sobre los tiempos de entrega</h2>
         <p className="mt-2 max-w-xl text-sm leading-relaxed text-ink-soft">
-          Cada pieza se produce sobre pedido: normalmente 3-5 días de producción después de que apruebas tu prueba digital, más 2-5 días de envío (o recoges en Casa Blanca, Guadalajara). Si tienes una fecha límite, escríbenos por WhatsApp y te confirmamos si llegamos.
+          Cada pieza se produce sobre pedido: normalmente 3-5 días de producción después de que apruebas tu prueba digital, más 2-5 días de envío (o recoges en Casa Blanca, Guadalajara). Si tienes una fecha límite, escríbenos por WhatsApp y te confirmamos si llegamos. Excepción: las placas y stands NFC para reseñas de Google se hacen sobre pedido y están sujetos a disponibilidad; por la alta demanda pueden tardar de 2 a 3 semanas de producción, así que conviene preguntar disponibilidad.
         </p>
       </div>
       <ShopCta lang="es" />

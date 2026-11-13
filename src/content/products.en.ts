@@ -345,6 +345,7 @@ export const productsEn: Record<string, ProductTranslation> = {
       { q: "Does it have a monthly fee or subscription?", a: "No. It is a one-time payment, with no subscription or monthly fee." },
       { q: "Is it for one business or several locations?", a: "It is configured with your business's Google review link. The piece does not include a platform for managing multiple locations." },
       { q: "Do I need a dashboard?", a: "No. The Yume piece has no dashboard; you manage reviews in your own Google Business Profile." },
+      { q: "How long does it take to arrive?", a: "It is made to order and subject to availability. Usually it is 3-5 business days of production and 2-5 of shipping, but because of high demand production can take 2 to 3 weeks. We recommend asking about availability on WhatsApp before paying." },
     ],
   },
   "stand-resena-google-nfc": {
@@ -404,6 +405,7 @@ export const productsEn: Record<string, ProductTranslation> = {
       { q: "Does it have a monthly fee or subscription?", a: "No. It is a one-time payment, with no subscription or monthly fee." },
       { q: "Is it for one business or several locations?", a: "It is configured with your business's Google review link. The piece does not include a platform for managing multiple locations." },
       { q: "Do I need a dashboard?", a: "No. The Yume piece has no dashboard; you manage reviews in your own Google Business Profile." },
+      { q: "How long does it take to arrive?", a: "It is made to order and subject to availability. Usually it is 3-5 business days of production and 2-5 of shipping, but because of high demand production can take 2 to 3 weeks. We recommend asking about availability on WhatsApp before paying." },
     ],
   },
 };

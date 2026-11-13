@@ -3,7 +3,7 @@
 // cart link the shopper opens to pay. Shared by the MCP server, the A2A agent
 // and the cart page (which reads the same link format). No React here.
 import { CUT_OPTIONS, FINISH_OPTIONS, SIZE_OPTIONS, cartItemLabel, defaultVariantId, getProduct, hasVariants, isValidVariant, resolvePrice, type Product } from "@/content/products";
-import { cartItemLabelEn } from "@/content/products.en";
+import { cartItemLabelEn, getProductTranslation } from "@/content/products.en";
 import { PERSONALIZATION } from "@/content/personalization";
 import { FREE_SHIPPING_THRESHOLD, deliverySurcharge } from "@/content/shipping";
 import { SITE } from "@/content/site";
@@ -103,6 +103,7 @@ export function orderGuide(product: Product, lang: "es" | "en") {
     ...(f.onlyVariant ? { onlyForOption: f.onlyVariant } : {}),
   }));
   const base = {
+    ...(product.availabilityNote ? { availabilityNote: lang === "en" ? getProductTranslation(product.slug)?.availabilityNote : product.availabilityNote } : {}),
     personalizationFields: fields,
     designFile: product.requiresImage
       ? "Needs the customer's logo/design. Agents cannot upload it: after paying, the customer sends it by WhatsApp (+52 33 1895 8175)."

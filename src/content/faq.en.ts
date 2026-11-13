@@ -18,7 +18,7 @@ export const generalFaqEn: FaqItem[] = [
   },
   {
     q: "How long does my order take?",
-    a: "Everything is made to order: usually 3-5 days of production after you approve your digital proof, plus 2-5 days of home delivery. Have a deadline? Message us and we'll confirm.",
+    a: "Everything is made to order: usually 3-5 days of production after you approve your digital proof, plus 2-5 days of home delivery. Have a deadline? Message us and we'll confirm. Exception: the NFC Google review plates and stands are made to order and subject to availability; because of high demand they can take 2 to 3 weeks of production, so it is best to ask about availability.",
   },
   {
     q: "How can I get a quote or place an order?",

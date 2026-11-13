@@ -1,6 +1,7 @@
 import { aiSourceLabel } from "@/lib/ai-source";
 import { orderLocale, type Order } from "@/lib/orders";
 import { getProduct, lineNeedsDesign, type Product } from "@/content/products";
+import { getProductTranslation } from "@/content/products.en";
 import { getCasablancaBranch } from "@/content/shipping";
 import { SITE, waLink } from "@/content/site";
 import {
@@ -158,6 +159,8 @@ export function customerConfirmationEmail(order: Order): { subject: string; html
   const orderShort = order.id.slice(0, 8);
   const firstName = esc(order.customer_name.split(" ")[0] || order.customer_name);
   const missing = missingDesignNames(order);
+  const availabilityItem = order.items.find((i) => getProduct(i.slug)?.availabilityNote);
+  const availabilityNote = availabilityItem && (en ? getProductTranslation(availabilityItem.slug)?.availabilityNote : getProduct(availabilityItem.slug)?.availabilityNote);
 
   const waHref = waLink(en ? `Hi! I have a question about my order #${orderShort}` : `Hola! Tengo una duda sobre mi pedido #${orderShort}`);
   const designWaHref = waLink(
@@ -193,7 +196,7 @@ export function customerConfirmationEmail(order: Order): { subject: string; html
     row(
       heading2(en ? "What happens next" : "Qué sigue") +
         steps(
-          en
+          [...(en
             ? [
                 "We contact you on WhatsApp or by email to confirm your order details.",
                 "You approve your digital proof within 24 hours (it includes up to 2 rounds of adjustments). We print nothing without your approval.",
@@ -207,7 +210,7 @@ export function customerConfirmationEmail(order: Order): { subject: string; html
                 isPickup
                   ? "Producimos tu pedido (3-5 días hábiles) y lo dejamos en tu sucursal Casa Blanca (1 día hábil más). Te avisamos por WhatsApp y correo, con el comprobante que necesitas presentar para recogerlo."
                   : "Producimos tu pedido (3-5 días hábiles) y lo enviamos (2-5 días hábiles). Te avisamos por WhatsApp y correo cuando salga rumbo a tu domicilio.",
-              ],
+              ]), ...(availabilityNote ? [esc(availabilityNote)] : [])],
         ),
       "28px 40px 0",
     ) +

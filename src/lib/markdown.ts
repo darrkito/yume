@@ -35,6 +35,8 @@ function productMarkdownFor(product: Product, lang: "es" | "en"): string {
   const faq = t?.faq ?? product.faq;
 
   const lines = [`# ${name}`, "", description, "", lang === "en" ? "## Specs" : "## Especificaciones"];
+  const availabilityNote = lang === "en" ? t?.availabilityNote : product.availabilityNote;
+  if (availabilityNote) lines.splice(4, 0, `availabilityNote: ${availabilityNote}`, "");
   for (const s of specs) lines.push(`- **${s.label}:** ${s.value}`);
   lines.push("", lang === "en" ? "## Details" : "## Detalles");
   for (const d of details) lines.push(`- ${d}`);

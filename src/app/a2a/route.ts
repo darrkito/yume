@@ -69,7 +69,7 @@ function matchAnswerEs(text: string): string {
     const slug = isStand ? "stand-resena-google-nfc" : "placa-resena-google-nfc";
     const p = products.find((prod) => prod.slug === slug) ?? products.find((prod) => prod.slug === "placa-resena-google-nfc");
     if (!p) return "No encontré ese producto en el catálogo.";
-    return `${p.name}: $${p.price.toFixed(2)} MXN. ${p.description} Más info: ${SITE.url}/productos/${p.slug}`;
+    return `${p.name}: $${p.price.toFixed(2)} MXN. ${p.description}${p.availabilityNote ? `\navailabilityNote: ${p.availabilityNote}` : ""} Más info: ${SITE.url}/productos/${p.slug}`;
   }
 
   if (/vinil|personaje|mascota|perro|gato/.test(q)) {
@@ -156,7 +156,7 @@ function matchAnswerEn(text: string): string {
     const p = products.find((prod) => prod.slug === slug) ?? products.find((prod) => prod.slug === "placa-resena-google-nfc");
     const t = p ? productsEn[p.slug] : undefined;
     if (!p || !t) return "I couldn't find that product in the catalog.";
-    return `${t.name}: $${p.price.toFixed(2)} MXN. ${t.description} More info: ${SITE.url}/en/products/${slug === "stand-resena-google-nfc" ? "google-review-nfc-stand" : "google-review-nfc-plate"}`;
+    return `${t.name}: $${p.price.toFixed(2)} MXN. ${t.description}${p.availabilityNote && t.availabilityNote ? `\navailabilityNote: ${t.availabilityNote}` : ""} More info: ${SITE.url}/en/products/${slug === "stand-resena-google-nfc" ? "google-review-nfc-stand" : "google-review-nfc-plate"}`;
   }
 
   if (/vinyl|character|pet\b|\bdog\b|\bcat\b/.test(q)) {

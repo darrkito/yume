@@ -2,13 +2,17 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { CheckCircle2, Loader2, XCircle } from "lucide-react";
+import { CheckCircle2, Loader2, XCircle, Info } from "lucide-react";
 import { useCart, type CartItem } from "@/components/CartContext";
 import { clearCheckoutDraft, DRAFT_KEY } from "@/components/ShippingForm";
 import { GoogleReviewsOptIn } from "@/components/GoogleReviewsOptIn";
 import type { DeliveryMethod } from "@/content/shipping";
 import { ReceiptPrinter } from "@/components/ReceiptPrinter";
 import { UI, type Lang } from "@/lib/i18n";
+import { cartAvailabilityNote } from "@/content/availability";
+import { getProduct } from "@/content/products";
+import { getProductTranslation } from "@/content/products.en";
+import { waLink } from "@/content/site";
 
 const ICONS = { success: CheckCircle2, pending: Loader2, error: XCircle } as const;
 
@@ -38,6 +42,11 @@ export function CheckoutStatus({
   const [confirmed, setConfirmed] = useState<{ id: string; number: string; total: number; shipping: number; delivery: DeliveryMethod } | null>(null);
   const [receipt, setReceipt] = useState<{ items: CartItem[]; total: number; shipping: number; number: string; email: string } | null>(null);
   const captured = useRef(false);
+  const receiptItems = receipt?.items ?? [];
+  const availabilityNote = cartAvailabilityNote(receiptItems.map((item) => item.slug), lang);
+  const availabilityNames = [...new Set(receiptItems.filter((item) => cartAvailabilityNote([item.slug], lang)).map((item) => item.slug))]
+    .map((slug) => lang === "en" ? getProductTranslation(slug)?.name : getProduct(slug)?.name)
+    .filter(Boolean).join(", ");
 
   useEffect(() => {
     if (!clearCart) return;
@@ -96,6 +105,12 @@ export function CheckoutStatus({
             ))}
           </ol>
           <p className="mt-4 border-t border-line pt-3 text-xs leading-relaxed text-ink-soft">{t.nextDesign}</p>
+        </div>
+      )}
+      {availabilityNote && (variant === "success" || variant === "pending") && (
+        <div className="mt-4 flex items-start gap-2 text-left text-sm text-ink">
+          <Info size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />
+          <span>{availabilityNote}<a className="block text-xs underline" href={waLink(t.availabilityWaMsg.replace("{label}", availabilityNames))} target="_blank" rel="noopener noreferrer">{t.askAvailability}</a></span>
         </div>
       )}
       <Link

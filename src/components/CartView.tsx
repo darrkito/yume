@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { X, ImageUp, ArrowRight, Truck, CheckCircle2, Clock, ShieldCheck, MessageCircle } from "lucide-react";
+import { X, ImageUp, ArrowRight, Truck, CheckCircle2, Clock, ShieldCheck, MessageCircle, Info } from "lucide-react";
 import { useCart, type CartItem } from "@/components/CartContext";
 import { PromoField, usePromo } from "@/components/PromoField";
 import { discountedPrice } from "@/lib/promo";
@@ -17,6 +17,7 @@ import { useDeliveryDates } from "@/components/useDeliveryDates";
 import { RelatedProducts } from "@/components/RelatedProducts";
 import { CtaFillLink } from "@/components/CtaFillLink";
 import { waLink } from "@/content/site";
+import { cartAvailabilityNote } from "@/content/availability";
 import { FREE_SHIPPING_THRESHOLD, deliverySurcharge, type DeliveryMethod } from "@/content/shipping";
 import { formatMXN } from "@/lib/format";
 import { PRODUCT_SLUG_EN, UI, type Lang } from "@/lib/i18n";
@@ -79,6 +80,10 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
     window.history.replaceState(null, "", window.location.pathname);
   }, [replaceLine, lang]);
   const t = UI[lang];
+  const availabilityNote = cartAvailabilityNote(items.map((item) => item.slug), lang);
+  const availabilityNames = [...new Set(items.filter((item) => cartAvailabilityNote([item.slug], lang)).map((item) => item.slug))]
+    .map((slug) => lang === "en" ? getProductTranslation(slug)?.name : getProduct(slug)?.name)
+    .filter(Boolean).join(", ");
   const shopHref = lang === "en" ? "/en/products" : "/productos";
   const checkoutPath = lang === "en" ? "/en/checkout" : "/pago";
   // ShippingForm reads ?entrega= to preselect the same option at checkout.
@@ -369,6 +374,12 @@ export function CartView({ lang = "es" }: { lang?: Lang } = {}) {
               ? t.pickupEstimate.replace("{from}", dates.pickup.from).replace("{to}", dates.pickup.to)
               : t.deliveryEstimate.replace("{from}", dates.national.from).replace("{to}", dates.national.to)}
           </p>
+        )}
+        {availabilityNote && (
+          <div className="mt-3 flex items-start gap-2 text-sm text-ink">
+            <Info size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />
+            <span>{availabilityNote}<a className="block text-xs underline" href={waLink(t.availabilityWaMsg.replace("{label}", availabilityNames))} target="_blank" rel="noopener noreferrer">{t.askAvailability}</a></span>
+          </div>
         )}
         <div className="mt-4 flex items-baseline justify-between gap-3 border-t border-line pt-4">
           <p className="text-sm text-ink-soft">{t.total}</p>

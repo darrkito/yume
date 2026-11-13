@@ -15,6 +15,8 @@ import type { PersonalizationInput } from "@/content/personalization";
 import { clearCheckoutDraft, ShippingForm } from "@/components/ShippingForm";
 import { getProduct, lineNeedsDesign, type Product } from "@/content/products";
 import { productsEn } from "@/content/products.en";
+import { cartAvailabilityNote } from "@/content/availability";
+import { waLink } from "@/content/site";
 import type { Customer, DeliveryInfo } from "@/lib/orders";
 import { deliverySurcharge, type DeliveryMethod } from "@/content/shipping";
 import { formatMXN } from "@/lib/format";
@@ -88,6 +90,10 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
     if (error) errorRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
   }, [error]);
   const t = UI[lang];
+  const availabilityNote = cartAvailabilityNote(items.map((item) => item.slug), lang);
+  const availabilityNames = [...new Set(items.filter((item) => cartAvailabilityNote([item.slug], lang)).map((item) => item.slug))]
+    .map((slug) => lang === "en" ? productsEn[slug]?.name : getProduct(slug)?.name)
+    .filter(Boolean).join(", ");
   const nameOf = (p: Product) => (lang === "en" ? (productsEn[p.slug]?.name ?? p.name) : p.name);
   const designSlugs = [...new Set(items.filter((i) => { const p = getProduct(i.slug); return p && lineNeedsDesign(p, i.variantId); }).map((i) => i.slug))];
   const designProducts = designSlugs.map((slug) => getProduct(slug)!);
@@ -232,6 +238,12 @@ export function CheckoutView({ lang = "es" }: { lang?: Lang } = {}) {
               <p className="font-display text-2xl text-ink">{formatMXN(grandTotal)} MXN</p>
             </div>
             {mode !== "onsite" && <PromoField promo={promo} setPromo={setPromo} lang={lang} id="promo-code" />}
+            {availabilityNote && (
+              <div className="mt-5 flex items-start gap-2 text-sm text-ink">
+                <Info size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />
+                <span>{availabilityNote}<a className="block text-xs underline" href={waLink(t.availabilityWaMsg.replace("{label}", availabilityNames))} target="_blank" rel="noopener noreferrer">{t.askAvailability}</a></span>
+              </div>
+            )}
             <ul className="mt-5 space-y-2 text-sm text-ink">
               <li className="flex items-start gap-2"><ShieldCheck size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.securePayment}</li>
               <li className="flex items-start gap-2"><CheckCircle2 size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />{t.afterPayment}</li>

@@ -35,7 +35,7 @@ export const generalFaq: FaqItem[] = [
   },
   {
     q: "¿Cuánto tiempo tarda mi pedido?",
-    a: "Todo se hace sobre pedido: normalmente 3-5 días de producción después de que apruebas tu prueba digital, más 2-5 días de envío a domicilio. ¿Tienes fecha límite? Escríbenos y te confirmamos.",
+    a: "Todo se hace sobre pedido: normalmente 3-5 días de producción después de que apruebas tu prueba digital, más 2-5 días de envío a domicilio. ¿Tienes fecha límite? Escríbenos y te confirmamos. Excepción: las placas y stands NFC para reseñas de Google se hacen sobre pedido y están sujetos a disponibilidad; por la alta demanda pueden tardar de 2 a 3 semanas de producción, así que conviene preguntar disponibilidad.",
   },
   {
     q: "¿Cómo puedo cotizar o hacer un pedido?",

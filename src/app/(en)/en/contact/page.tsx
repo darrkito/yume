@@ -63,7 +63,7 @@ export default function ContactPageEn() {
       <div className="mt-12 border-t border-line pt-8">
         <h2 className="font-display text-xl text-ink">On turnaround times</h2>
         <p className="mt-2 max-w-xl text-sm leading-relaxed text-ink-soft">
-          Every piece is made to order: usually 3-5 days of production after you approve your digital proof, plus 2-5 days of shipping (or pick up at Casa Blanca, Guadalajara). Have a deadline? Message us on WhatsApp and we&apos;ll confirm whether we can make it.
+          Every piece is made to order: usually 3-5 days of production after you approve your digital proof, plus 2-5 days of shipping (or pick up at Casa Blanca, Guadalajara). Have a deadline? Message us on WhatsApp and we&apos;ll confirm whether we can make it. Exception: the NFC Google review plates and stands are made to order and subject to availability; because of high demand they can take 2 to 3 weeks of production, so it is best to ask about availability.
         </p>
       </div>
       <ShopCta lang="en" />
