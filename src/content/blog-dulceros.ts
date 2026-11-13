@@ -667,8 +667,8 @@ export const dulceroPosts: BlogPost[] = [
       {
         heading: "Ideas de recuerdo para invitados: lo que proponen otras guías",
         body: [
-          "Guiainfantil reúne nueve ideas de recuerdo para invitados de bautizo: marco de fotos, galletas decoradas o cakepops, figurita pinza para foto, bolsitas de tul con dulces, caja de galletas, cucurucho de caramelos, cestita de caramelos, cesta de tela y vela personalizada con fecha y nombre del bebé.",
-          "Es una lista general, sin cantidades ni precios. Guiainfantil presenta las galletas en caja como opción económica y vistosa, envueltas en papel de seda con lazo grande. Las galletas y los cakepops se comen, así que es probable que se consuman en lugar de quedar guardados.",
+          "Una guía de celebraciones reúne nueve ideas de recuerdo para invitados de bautizo: marco de fotos, galletas decoradas o cakepops, figurita pinza para foto, bolsitas de tul con dulces, caja de galletas, cucurucho de caramelos, cestita de caramelos, cesta de tela y vela personalizada con fecha y nombre del bebé.",
+          "Es una lista general, sin cantidades ni precios. La guía presenta las galletas en caja como opción económica y vistosa, envueltas en papel de seda con lazo grande. Las galletas y los cakepops se comen, así que es probable que se consuman en lugar de quedar guardados.",
         ],
       },
       {
@@ -702,7 +702,7 @@ export const dulceroPosts: BlogPost[] = [
         heading: "Cuánto cuesta pedir dulceros para tu lista",
         body: [
           `Primeras 100 piezas: $${dulceroUnit} MXN por [dulcero personalizado](/productos/${DULCERO}), con pedido mínimo de 10 piezas. 30 dulceros son $${dulceroTotal(30)} y 50 son $${dulceroTotal(50)}. Arriba de 100 piezas es precio mayoreo: escríbenos por WhatsApp y te cotizamos. Multiplica el precio por pieza por tus invitados confirmados y tendrás el presupuesto de dulceros.`,
-          `Desde $${FREE_SHIPPING_THRESHOLD} de compra el envío nacional es gratis, y en la zona metropolitana de Guadalajara puedes recogerlos por $${CASABLANCA_PRICE} en cualquiera de las ${CASABLANCA_BRANCHES.length} sucursales de paquetería Casa Blanca.`,
+          `Desde $${FREE_SHIPPING_THRESHOLD} de compra el envío nacional es gratis, y en la zona metropolitana de Guadalajara puedes recogerlos por $${CASABLANCA_PRICE} en cualquiera de las ${CASABLANCA_BRANCHES.length} sucursales de paquetería disponibles.`,
         ],
         table: {
           headers: ["Primeras 100 piezas", "Total"],
@@ -717,7 +717,7 @@ export const dulceroPosts: BlogPost[] = [
       {
         heading: "Cuándo cerrar el pedido para que lleguen a tiempo",
         body: [
-          `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba digital, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional, o ${PICKUP_EXTRA_DAYS} día hábil si recoges en una sucursal Casa Blanca de Guadalajara. Esos días se cuentan desde que apruebas la prueba, así que conviene cerrar pronto nombre, fecha y cantidad.`,
+          `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba digital, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional, o ${PICKUP_EXTRA_DAYS} día hábil si recoges en una sucursal de paquetería disponible en Guadalajara. Esos días se cuentan desde que apruebas la prueba, así que conviene cerrar pronto nombre, fecha y cantidad.`,
           "Cuenta hacia atrás desde el día en que necesitas los dulceros en la mano y ten confirmada la lista de invitados antes de aprobar la prueba digital.",
         ],
       },
@@ -732,8 +732,8 @@ export const dulceroPosts: BlogPost[] = [
       {
         heading: "Primera comunión: la fecha se conoce con meses de margen",
         body: [
-          "La fecha de una primera comunión se conoce con mucha anticipación, porque antes el niño o la niña cursa la catequesis, que según ADN40 dura al menos uno o dos años, dependiendo de la parroquia. Eso te da meses de margen para elegir diseño, definir la lista y pedir con calma.",
-          "Para la comunión, ADN40 menciona que se piden acta de nacimiento, fe de bautismo (original y copia) y haber cursado la catequesis. La edad también depende de la parroquia: la Arquidiócesis de México fija nueve años como mínimo, pero esa es una norma de esa arquidiócesis, no de Guadalajara. Confirma las reglas con tu parroquia.",
+          "La fecha de una primera comunión se conoce con mucha anticipación, porque antes el niño o la niña cursa la catequesis, que según una guía externa dura al menos uno o dos años, dependiendo de la parroquia. Eso te da meses de margen para elegir diseño, definir la lista y pedir con calma.",
+          "Para la comunión, una guía externa menciona que se piden acta de nacimiento, fe de bautismo (original y copia) y haber cursado la catequesis. La edad también depende de la parroquia: la Arquidiócesis de México fija nueve años como mínimo, pero esa es una norma de esa arquidiócesis, no de Guadalajara. Confirma las reglas con tu parroquia.",
         ],
       },
       {
@@ -746,7 +746,7 @@ export const dulceroPosts: BlogPost[] = [
       {
         heading: "Detalle para los padrinos de bautizo y comunión",
         body: [
-          "Según ADN40, los padrinos de comunión deben ser católicos y estar confirmados, y si están casados se pide acta de matrimonio por la Iglesia. Son parte central de la ceremonia, así que conviene decidir pronto si recibirán un dulcero igual al de los invitados o uno con un nombre distinto. Escríbenos por WhatsApp y lo platicamos.",
+          "Según una guía externa, los padrinos de comunión deben ser católicos y estar confirmados, y si están casados se pide acta de matrimonio por la Iglesia. Son parte central de la ceremonia, así que conviene decidir pronto si recibirán un dulcero igual al de los invitados o uno con un nombre distinto. Escríbenos por WhatsApp y lo platicamos.",
           "Si quieres que el dulcero de los padrinos lleve su nombre o una frase corta, cuéntanos al pedir y lo revisas en la prueba digital junto con el resto del diseño.",
         ],
       },
@@ -801,7 +801,7 @@ export const dulceroPosts: BlogPost[] = [
     faq: [
       {
         q: "¿Qué regalar a los invitados de un bautizo?",
-        a: "Un detalle con el nombre del niño o la niña y la fecha, que se pueda comer o guardar. Un dulcero personalizado llega vacío para que elijas el relleno. Guiainfantil propone otras ideas, como bolsitas de tul con dulces, galletas decoradas o una vela personalizada.",
+        a: "Un detalle con el nombre del niño o la niña y la fecha, que se pueda comer o guardar. Un dulcero personalizado llega vacío para que elijas el relleno. Otras ideas incluyen bolsitas de tul con dulces, galletas decoradas o una vela personalizada.",
       },
       {
         q: "¿El dulcero sustituye al recuerdo de bautizo?",
@@ -825,11 +825,11 @@ export const dulceroPosts: BlogPost[] = [
       },
       {
         q: "¿Cuánto tardan en llegar?",
-        a: `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional, o ${PICKUP_EXTRA_DAYS} día hábil si recoges en una sucursal Casa Blanca de Guadalajara.`,
+        a: `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional, o ${PICKUP_EXTRA_DAYS} día hábil si recoges en una sucursal de paquetería disponible en Guadalajara.`,
       },
       {
         q: "¿Se entrega en Guadalajara?",
-        a: `Sí. En la zona metropolitana de Guadalajara puedes recogerlos por $${CASABLANCA_PRICE} en cualquiera de las ${CASABLANCA_BRANCHES.length} sucursales de paquetería Casa Blanca. También enviamos a todo México.`,
+        a: `Sí. En la zona metropolitana de Guadalajara puedes recogerlos por $${CASABLANCA_PRICE} en cualquiera de las ${CASABLANCA_BRANCHES.length} sucursales de paquetería disponibles. También enviamos a todo México.`,
       },
       {
         q: "¿Qué pasa si cambia la lista de invitados?",
@@ -853,7 +853,7 @@ export const dulceroPosts: BlogPost[] = [
       },
       {
         q: "¿A qué edad se hace la primera comunión?",
-        a: "Depende de la parroquia. Según ADN40, la Arquidiócesis de México fija nueve años como edad mínima, y algunas parroquias aceptan niños más pequeños si ya fueron a catecismo. Es una norma de esa arquidiócesis, no de Guadalajara, así que confírmalo con tu parroquia.",
+        a: "Depende de la parroquia. Según una guía externa, la Arquidiócesis de México fija nueve años como edad mínima, y algunas parroquias aceptan niños más pequeños si ya fueron a catecismo. Es una norma de esa arquidiócesis, no de Guadalajara, así que confírmalo con tu parroquia.",
       },
       {
         q: "¿Cuántos dulces calcular por invitado?",
@@ -866,20 +866,8 @@ export const dulceroPosts: BlogPost[] = [
     ],
     sources: [
       {
-        label: "Guiainfantil: ideas para regalar en el bautizo del bebé (recuerdos para invitados)",
-        url: "https://www.guiainfantil.com/galerias/bebes/ideas-para-regalar-en-el-bautizo-del-bebe/",
-      },
-      {
-        label: "ADN40: cuál es la mejor edad para hacer la primera comunión (edad, catequesis, requisitos y padrinos)",
-        url: "https://www.adn40.mx/mexico/2025-10-24/cual-es-la-mejor-edad-para-hacer-la-primera-comunion/",
-      },
-      {
         label: "Código de Derecho Canónico (Santa Sede): libro IV, canon 867 sobre el bautismo de los niños",
         url: "https://www.vatican.va/archive/cod-iuris-canonici/eng/documents/cic_lib4-cann834-878_en.html",
-      },
-      {
-        label: "Bodas.net: todo lo que debéis saber antes de montar una candy bar (cantidades, qué poner y montaje)",
-        url: "https://www.bodas.net/articulos/todo-lo-que-debeis-saber-antes-de-montar-una-candy-bar--c2448",
       },
     ],
     relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
@@ -1177,7 +1165,7 @@ export const dulceroPosts: BlogPost[] = [
           "Paletas y chicles: llenan espacio con poco volumen.",
           "Botanas saladas: una bolsita de papitas, palomitas o cacahuates japoneses (solo si no hay alergias) equilibra tanto dulce.",
           "Un detalle sin azúcar: stickers, una pulsera, burbujas o una libreta chica. Es lo que se conserva cuando el dulce ya se acabó.",
-          "Si quieres un toque más especial, la guía de candy bar de Bodas.net recomienda combinar los dulces clásicos con algunos especiales, como gomitas, mini donas, chocolates, galletas decoradas, cake pops o mini brownies.",
+          "Si quieres un toque más especial, las guías del sector recomiendan combinar los dulces clásicos con algunos especiales, como gomitas, mini donas, chocolates, galletas decoradas, cake pops o mini brownies.",
         ],
       },
       {
@@ -1192,11 +1180,11 @@ export const dulceroPosts: BlogPost[] = [
       {
         heading: "Cuántos gramos de dulce por invitado en una mesa de dulces",
         body: [
-          "Para una mesa de dulces, Bodas.net propone bajar los gramos por invitado según crece la boda: unos 150 g en bodas pequeñas, unos 100 g en medianas y unos 80 g en grandes. Es una regla práctica que escala con los invitados, no una cifra única ni una norma.",
-          "Como ejemplo, la misma guía da unos 10 kg de dulces como punto de partida para 100 invitados cuando la mesa es sobre todo de dulces. Esa cantidad se puede reducir si añades mini brownies, donas o chocolates.",
+          "Para una mesa de dulces, una referencia general propone bajar los gramos por invitado según crece la boda: unos 150 g en bodas pequeñas, unos 100 g en medianas y unos 80 g en grandes. Es una regla práctica que escala con los invitados, no una cifra única ni una norma.",
+          "Como ejemplo, una referencia general da unos 10 kg de dulces como punto de partida para 100 invitados cuando la mesa es sobre todo de dulces. Esa cantidad se puede reducir si añades mini brownies, donas o chocolates.",
         ],
         table: {
-          headers: ["Tamaño de la boda", "Gramos de dulce por invitado (referencia de Bodas.net)"],
+          headers: ["Tamaño de la boda", "Gramos de dulce por invitado (referencia general)"],
           rows: [
             ["Pequeña", "Unos 150 g"],
             ["Mediana", "Unos 100 g"],
@@ -1207,10 +1195,10 @@ export const dulceroPosts: BlogPost[] = [
       {
         heading: "Cuántos frascos necesitas para una mesa de dulces",
         body: [
-          "Bodas.net traduce los gramos a contenedores con frascos medianos: de 4 a 6 para unos 50 invitados, de 10 a 12 para 50 a 150 invitados y de 15 a 16 para unos 200. Sirven como referencia visual para repartir los dulces por variedad, no como medida exacta.",
+          "Una referencia general traduce los gramos a contenedores con frascos medianos: de 4 a 6 para unos 50 invitados, de 10 a 12 para 50 a 150 invitados y de 15 a 16 para unos 200. Sirven como referencia visual para repartir los dulces por variedad, no como medida exacta.",
         ],
         table: {
-          headers: ["Invitados", "Frascos medianos (referencia de Bodas.net)"],
+          headers: ["Invitados", "Frascos medianos (referencia general)"],
           rows: [
             ["Unos 50", "4 a 6"],
             ["50 a 150", "10 a 12"],
@@ -1221,7 +1209,7 @@ export const dulceroPosts: BlogPost[] = [
       {
         heading: "Cómo repartir los dulces por altura y color",
         body: [
-          "Para que la mesa se vea planeada, la guía de Bodas.net recomienda recipientes transparentes, charolas a distintas alturas, bases escalonadas, cajas de madera y elevadores. Así los dulces se lucen mejor y la mesa gana volumen sin amontonar todo en un solo nivel.",
+          "Para que la mesa se vea planeada, las guías del sector recomiendan recipientes transparentes, charolas a distintas alturas, bases escalonadas, cajas de madera y elevadores. Así los dulces se lucen mejor y la mesa gana volumen sin amontonar todo en un solo nivel.",
           "Reparte las piezas en partes parecidas, sin dejar que un solo dulce domine, y mezcla texturas (cremoso, crujiente, esponjoso) y colores en cada nivel.",
         ],
       },
@@ -1229,7 +1217,7 @@ export const dulceroPosts: BlogPost[] = [
         heading: "Qué ajustar si es boda, XV o bautizo",
         body: [
           "En una boda, un XV o un bautizo, el dulcero se vuelve un detalle de mesa y no solo un relleno infantil. Puede llevar el nombre y la temática que elijas, y conviene cuidar el relleno: en bodas y XV años funcionan bien las almendras cubiertas o los chocolates finos.",
-          "Si además armas una mesa de dulces, la guía de Bodas.net indica que suele ir cerca de la pista de baile o abrirse después del banquete. Los invitados toman pequeñas cantidades durante la fiesta, porque la mesa complementa el postre y no lo sustituye.",
+          "Si además armas una mesa de dulces, las guías del sector indican que suele ir cerca de la pista de baile o abrirse después del banquete. Los invitados toman pequeñas cantidades durante la fiesta, porque la mesa complementa el postre y no lo sustituye.",
         ],
       },
       {
@@ -1261,15 +1249,15 @@ export const dulceroPosts: BlogPost[] = [
       },
       {
         q: "¿Cuántos gramos de dulce calculo por invitado en una mesa de dulces?",
-        a: "Según la guía de candy bar de Bodas.net, unos 150 g por invitado en bodas pequeñas, unos 100 g en medianas y unos 80 g en grandes. Es una regla práctica, no una norma.",
+        a: "Como referencia general, unos 150 g por invitado en bodas pequeñas, unos 100 g en medianas y unos 80 g en grandes. Es una regla práctica, no una norma.",
       },
       {
         q: "¿Cuántos kilos de dulce necesito para 100 invitados?",
-        a: "Bodas.net da unos 10 kg como punto de partida para 100 invitados si la mesa es sobre todo de dulces. Puedes reducirlo si añades mini brownies, donas o chocolates.",
+        a: "Como referencia general, se consideran unos 10 kg como punto de partida para 100 invitados si la mesa es sobre todo de dulces. Puedes reducirlo si añades mini brownies, donas o chocolates.",
       },
       {
         q: "¿Cuántos frascos necesito para una mesa de dulces?",
-        a: "Como referencia de Bodas.net, de 4 a 6 frascos medianos para unos 50 invitados, de 10 a 12 para 50 a 150 invitados y de 15 a 16 para unos 200.",
+        a: "Como referencia general, de 4 a 6 frascos medianos para unos 50 invitados, de 10 a 12 para 50 a 150 invitados y de 15 a 16 para unos 200.",
       },
       {
         q: "¿Qué dulces son seguros para niños de 1 a 5 años?",
@@ -1290,12 +1278,7 @@ export const dulceroPosts: BlogPost[] = [
     ],
     relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
     relatedBlogSlugs: ["ideas-de-dulceros-para-fiesta-infantil", "cajas-bolsas-o-vasos-dulceros-cual-elegir", "dulceros-personalizados-guadalajara"],
-    sources: [
-      {
-        label: "Bodas.net: todo lo que debéis saber antes de montar una candy bar",
-        url: "https://www.bodas.net/articulos/todo-lo-que-debeis-saber-antes-de-montar-una-candy-bar--c2448",
-      },
-    ],
+    sources: [],
   },
   {
     slug: "dulceros-de-halloween",

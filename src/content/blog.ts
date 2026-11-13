@@ -656,8 +656,8 @@ export const blogPosts: BlogPost[] = [
       { heading: "Cuánto cuestan las placas de reseñas de Google en 12 y 24 meses", body: ["La placa de Yume cuesta $140 MXN y el stand $200 MXN, pago único, así que a 12 o 24 meses sigues en esa cifra. Un comparativo de mercado ubica las plataformas por suscripción entre $50 y $300 USD al mes (cifras aproximadas).", "La tabla usa rangos aproximados de ese comparativo, que están en dólares, por eso no se convierten a pesos. Los totales de suscripción son simple multiplicación del rango mensual por 12 y por 24 meses."], table: { headers: ["Opción", "Costo aproximado", "12 meses", "24 meses"], rows: [
         ["Placa de Yume", "$140 MXN, pago único", "$140 MXN", "$140 MXN"],
         ["Stand de Yume", "$200 MXN, pago único", "$200 MXN", "$200 MXN"],
-        ["NFC + QR de pago único en Etsy", "$13 a $48 USD", "Mismo pago único", "Mismo pago único"],
-        ["Genéricos de Amazon o eBay", "$5 a $25 USD", "Mismo pago único", "Mismo pago único"],
+        ["NFC + QR de pago único en tiendas en línea", "$13 a $48 USD", "Mismo pago único", "Mismo pago único"],
+        ["Genéricos de tiendas en línea", "$5 a $25 USD", "Mismo pago único", "Mismo pago único"],
         ["Plataforma por suscripción", "$50 a $300 USD al mes", "$600 a $3,600 USD", "$1,200 a $7,200 USD"],
         ["QR impreso casero", "Gratis, con durabilidad muy baja", "Gratis", "Gratis"],
       ] } },
@@ -678,7 +678,6 @@ export const blogPosts: BlogPost[] = [
     quoteMessage: "Hola, me interesan la placa o el stand NFC para reseñas de Google.",
     sources: [
       { label: "Google: política de contribuciones", url: "https://support.google.com/contributionpolicy/answer/7400114?hl=es" },
-      { label: "Comparativo de placas NFC y plataformas de reseñas", url: "https://onrec.com/node/129063" },
     ],
   },
   {
@@ -736,21 +735,21 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Elige un recuerdo pequeño, igual para cada invitado y fácil de llevar a casa. Un dulcero personalizado cumple con eso: llega armado y vacío, tiene asa y se llena con lo que tú decidas. Lo que lo hace especial es el diseño, no solo el nombre del bebé.",
           "Una guía de checklist para baby showers describe el recuerdo ideal como algo pequeño, igual para todos y colocado cerca de la salida. Sus ejemplos son algo comestible, una planta, una vela o un sobre de semillas. Un [dulcero personalizado](/productos/dulceros-personalizados) entra en esa idea, con la ventaja de que el diseño es propio de tu fiesta y no uno de catálogo.",
-          "Una nota de Crónica sobre recuerdos de boda en México en 2026 apunta en la misma dirección: los invitados conservan piezas útiles y con diseño propio, mientras que los recuerdos genéricos suelen acabar olvidados. Aplicado al baby shower, la idea es sumar diseño y utilidad, no solo poner un nombre. Para decidir qué lleva dentro, revisa [qué poner en un dulcero](/blog/que-poner-en-un-dulcero).",
+          "Una nota sobre recuerdos de boda en México en 2026 apunta en la misma dirección: los invitados conservan piezas útiles y con diseño propio, mientras que los recuerdos genéricos suelen acabar olvidados. Aplicado al baby shower, la idea es sumar diseño y utilidad, no solo poner un nombre. Para decidir qué lleva dentro, revisa [qué poner en un dulcero](/blog/que-poner-en-un-dulcero).",
         ],
       },
       {
         heading: "Qué regalar a los invitados de un baby shower además de dulces",
         body: [
           "Además de dulces, puedes regalar un sticker con el diseño de la fiesta o un tatuaje temporal con el nombre del bebé, solos o dentro de un dulcero. Yume produce las tres piezas con la misma paleta, así que combinan con la invitación y la decoración.",
-          "El criterio que más repiten las guías es ligar el recuerdo al tema de la fiesta o al nombre del bebé. Mercado Libre da como ejemplos de tema selva, cuentos de hadas y nubes y estrellas. Un [sticker de vinil](/productos/stickers-vinil-impermeable) o un tatuaje temporal con ese tema cumple el criterio con una pieza que es solo de tu fiesta.",
+          "El criterio que más repiten las guías es ligar el recuerdo al tema de la fiesta o al nombre del bebé. Una guía da como ejemplos de tema selva, cuentos de hadas y nubes y estrellas. Un [sticker de vinil](/productos/stickers-vinil-impermeable) o un tatuaje temporal con ese tema cumple el criterio con una pieza que es solo de tu fiesta.",
           "Si quieres ver la opción de tatuajes, entra a [tatuajes temporales personalizados](/productos/tatuajes-temporales-personalizados) para revisar sus condiciones de compra.",
         ],
       },
       {
         heading: "Dulces, stickers o tatuajes: qué se consume y qué se conserva",
         body: [
-          "Lo comestible se consume. Guía Infantil califica la utilidad de los dulces como baja porque se consumen, y las plantas como sobre todo decorativas, con personalización baja. Por eso conviene sumar una pieza que el invitado conserve o use, con tu diseño propio en lugar de uno genérico de catálogo.",
+          "Lo comestible se consume. Una guía califica la utilidad de los dulces como baja porque se consumen, y las plantas como sobre todo decorativas, con personalización baja. Por eso conviene sumar una pieza que el invitado conserve o use, con tu diseño propio en lugar de uno genérico de catálogo.",
           "La misma guía destaca como más cotidianos los jabones, las tazas y los separadores de libros. En la tabla ves cómo se comparan las tres piezas que Yume produce.",
         ],
         table: {
@@ -789,7 +788,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Qué recuerdo conviene según el tipo de invitado",
         body: [
           "Para adultos y abuelas funciona un dulcero con un sticker del mismo diseño, porque combina lo que se come con algo que se queda. Para niños invitados, el dulcero con un tatuaje temporal suma algo para jugar. Si hay de todo, repite el mismo diseño en todas las piezas.",
-          "Guía Infantil recomienda preparar pequeños premios si habrá juegos en el baby shower. Un sticker o un [tatuaje temporal](/productos/tatuajes-temporales-personalizados) con el diseño de la fiesta puede cumplir ese papel.",
+          "Una guía recomienda preparar pequeños premios si habrá juegos en el baby shower. Un sticker o un [tatuaje temporal](/productos/tatuajes-temporales-personalizados) con el diseño de la fiesta puede cumplir ese papel.",
           "Para más ideas con tatuajes, revisa [tatuajes temporales para fiestas](/blog/tatuajes-temporales-para-boda-eventos-y-fiestas) y [cuánto duran los tatuajes temporales](/blog/cuanto-duran-los-tatuajes-temporales-y-como-quitarlos).",
         ],
       },
@@ -805,7 +804,6 @@ export const blogPosts: BlogPost[] = [
         heading: "Cómo combinar dulcero, sticker y tatuaje sin que se vea improvisado",
         body: [
           "La combinación más sencilla es un dulcero con un sticker del mismo diseño. Con niños, suma un tatuaje temporal. Lo importante es que nombre, ilustración y paleta se repitan en cada pieza y coincidan con la invitación, así el recuerdo se ve parte de la fiesta y no un añadido de último momento.",
-          "Canva ofrece plantillas gratuitas de etiquetas de baby shower para descargar e imprimir. Es la ruta casera: una etiqueta sobre un producto genérico. Con Yume el diseño se adapta a tu paleta y recibes una prueba digital antes de producir.",
           "Si trabajas con una planner, mándale las mismas fotos de invitación y decoración para que el diseño de las tres piezas salga de una sola base.",
         ],
       },
@@ -821,29 +819,21 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Cuándo pedir los recuerdos de baby shower",
         body: [
-          `La producción toma ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles desde la aprobación de la prueba digital, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días hábiles de envío nacional o ${PICKUP_EXTRA_DAYS} día hábil para recoger en Casa Blanca en Guadalajara. Pídelos con holgura para definir el nombre, la temática y revisar la prueba.`,
+          `La producción toma ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles desde la aprobación de la prueba digital, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días hábiles de envío nacional o ${PICKUP_EXTRA_DAYS} día hábil para recoger en Guadalajara. Pídelos con holgura para definir el nombre, la temática y revisar la prueba.`,
           "Como referencia general, la guía de checklist que citamos sugiere empezar a planear unas 8 semanas antes, enviar invitaciones unas 4 semanas antes y fijar la fecha límite de confirmación unas 2 semanas antes. También propone comprar el envoltorio de los recuerdos y los artículos no perecederos unas 2 semanas antes. Puedes usar ese calendario y sumarle el tiempo de producción de arriba.",
-          "Guía Infantil también recomienda organizar el evento con varias semanas de antelación. Para stickers y tatuajes temporales, comparte la fecha del baby shower y la cantidad por WhatsApp y confirmamos la planificación antes de pedir.",
+          "Una guía también recomienda organizar el evento con varias semanas de antelación. Para stickers y tatuajes temporales, comparte la fecha del baby shower y la cantidad por WhatsApp y confirmamos la planificación antes de pedir.",
         ],
       },
       {
         heading: "Baby shower con planner: tiempos y trato directo",
         body: [
           "Si organizas el baby shower con una planner, o eres planner, el flujo es simple: compartes fecha, cantidad, nombre y paleta por WhatsApp, recibes una prueba digital y apruebas antes de producir. Así los tiempos quedan claros desde el inicio y el recuerdo combina con el resto del evento.",
-          "Atendemos Guadalajara y Zapopan, y enviamos a todo México. Si el evento es en la zona metropolitana de Guadalajara, puedes recoger en Casa Blanca. Para más detalles de pedidos en tu ciudad, revisa [dulceros en Guadalajara](/blog/dulceros-personalizados-guadalajara).",
+          "Atendemos Guadalajara y Zapopan, y enviamos a todo México. Si el evento es en la zona metropolitana de Guadalajara, puedes recoger en una sucursal. Para más detalles de pedidos en tu ciudad, revisa [dulceros en Guadalajara](/blog/dulceros-personalizados-guadalajara).",
         ],
       },
     ],
     relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable", "tatuajes-temporales-personalizados"],
     relatedBlogSlugs: ["dulceros-para-eventos-sociales-boda-xv-baby-shower", "que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "tatuajes-temporales-para-boda-eventos-y-fiestas"],
-    sources: [
-      { label: "Visu: checklist para baby shower", url: "https://visu.network/es/articulos/checklist-para-baby-shower/" },
-      { label: "Crónica: recuerdos de boda que sí se quedan los invitados en 2026", url: "https://www.cronica.com.mx/tendencias/2026/09/04/dile-adios-a-los-recuerdos-de-boda-que-terminan-en-la-basura-esto-es-lo-que-si-se-quedan-tus-invitados-en-2026/" },
-      { label: "HaceCuentas: calculadora de regalos y souvenirs por invitado", url: "https://hacecuentas.com/calculadora-regalos-invitado-souvenir" },
-      { label: "Guía Infantil: ideas para regalar a los invitados en un baby shower", url: "https://www.guiainfantil.com/bebes/canastilla-ajuar/decoracion-e-ideas-para-regalar-a-los-invitados-en-un-baby-shower/" },
-      { label: "Mercado Libre Perú: ideas de recuerdos para baby shower", url: "https://www.mercadolibre.com.pe/blog/tr/ideas-recuerdo-baby-shower" },
-      { label: "Canva: plantillas de etiquetas para baby shower", url: "https://www.canva.com/es_mx/crear/etiquetas/baby-shower/" },
-    ],
     faq: [
       {
         q: "¿Qué puedo regalar a los invitados de un baby shower además de dulces?",
@@ -851,7 +841,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Qué recuerdos repiten las guías de compras?",
-        a: "Una guía de Mercado Libre Perú lista bolsitas con dulces, jabones artesanales, aromáticos y lápices personalizados. Guía Infantil suma suculentas, velas, separadores de libros, fotos instantáneas y tazas con el nombre del bebé.",
+        a: "Una guía de compras lista bolsitas con dulces, jabones artesanales, aromáticos y lápices personalizados. Otra guía suma suculentas, velas, separadores de libros, fotos instantáneas y tazas con el nombre del bebé.",
       },
       {
         q: "¿Puedo combinar un dulcero con un sticker?",
@@ -883,7 +873,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Cuánto tardan en llegar los dulceros?",
-        a: `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional, o ${PICKUP_EXTRA_DAYS} día hábil si recoges en una sucursal Casa Blanca de Guadalajara.`,
+        a: `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional, o ${PICKUP_EXTRA_DAYS} día hábil si recoges en una sucursal de Guadalajara.`,
       },
       {
         q: "¿Con cuánta anticipación conviene empezar a planear el baby shower?",
@@ -2402,14 +2392,14 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Calendario hacia atrás: cuándo pedir cada pieza",
         body: [
-          "No existe un plazo único: según Bodas.net, el save the date se envía entre 10 y 12 meses antes de la boda y las invitaciones unos 3 meses antes, pero otras guías dan rangos distintos. Usa estas cifras como referencia, cuenta hacia atrás desde tu fecha y cotiza por WhatsApp para saber tiempos reales.",
+          "No existe un plazo único: según guías del sector, el save the date se envía entre 10 y 12 meses antes de la boda y las invitaciones unos 3 meses antes, pero otras guías dan rangos distintos. Usa estas cifras como referencia, cuenta hacia atrás desde tu fecha y cotiza por WhatsApp para saber tiempos reales.",
           "Son rangos de referencia de guías, no tiempos de producción de Yume. Si tu boda es pronto, escríbenos cuanto antes con tu fecha.",
         ],
         table: {
           headers: ["Pieza", "Referencia", "Qué debe llevar o qué necesitas"],
           rows: [
-            ["Save the date", "Se envía entre 10 y 12 meses antes (Bodas.net)", "Nombres, fecha completa y, si aplica, la ciudad. No necesita sede, mapa, dress code ni RSVP."],
-            ["Invitación", "Se envía unos 3 meses antes (Bodas.net); pídela antes de esa fecha", "Los datos que el save the date deja fuera, como sede, mapa, dress code y RSVP"],
+            ["Save the date", "Se envía entre 10 y 12 meses antes (referencia de guías del sector)", "Nombres, fecha completa y, si aplica, la ciudad. No necesita sede, mapa, dress code ni RSVP."],
+            ["Invitación", "Se envía unos 3 meses antes (referencia de guías del sector); pídela antes de esa fecha", "Los datos que el save the date deja fuera, como sede, mapa, dress code y RSVP"],
             ["Menú", "Después de cerrar el banquete; las guías en español casi no dan fecha de impresión", "Cantidad, texto exacto en orden, fecha del evento y estilo"],
             ["Stickers y detalles", "Sin plazo de referencia en las fuentes; cotiza por WhatsApp", "Cantidad y la misma línea de diseño del resto de la papelería"],
           ],
@@ -2491,7 +2481,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Cuándo se envía el save the date?",
-        a: "Según Bodas.net, entre 10 y 12 meses antes de la boda, con los nombres, la fecha completa y, si aplica, la ciudad. Otras guías dan rangos distintos, así que tómalo como referencia.",
+        a: "Según guías del sector, entre 10 y 12 meses antes de la boda, con los nombres, la fecha completa y, si aplica, la ciudad. Otras guías dan rangos distintos, así que tómalo como referencia.",
       },
       {
         q: "¿Qué datos necesito para cotizar un menú de boda?",
@@ -2521,9 +2511,6 @@ export const blogPosts: BlogPost[] = [
     relatedProductSlugs: ["stickers-vinil-impermeable", "dulceros-personalizados"],
     relatedBlogSlugs: ["como-pedir-invitaciones-personalizadas-para-eventos", "stickers-para-bodas-eventos-y-fiestas", "papeleria-personalizada-vs-plantillas-genericas", "dulceros-para-eventos-sociales-boda-xv-baby-shower", "tatuajes-temporales-para-boda-eventos-y-fiestas", "detalles-de-mesa-boda-personalizados", "guia-wedding-planners-detalles-personalizados-guadalajara"],
     quoteMessage: "Hola, me interesa cotizar la papelería de mi boda (menú, invitaciones y stickers).",
-    sources: [
-      { label: "Bodas.net: anuncia tu boda con un save the date", url: "https://www.bodas.net/articulos/anuncia-tu-boda-con-un-save-the-date--c983" },
-    ],
   },
   {
     slug: "tarjetas-de-presentacion-consultorio",
@@ -3268,10 +3255,10 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Qué archivo mandar y qué revisar antes de imprimir",
         body: [
-          "Manda tu logo en el mejor formato que tengas y revisa que nada importante quede pegado al borde. Como referencia de Sticker Mule, piden arte vectorial o imágenes de al menos 300 PPI, y cada taller tiene su propia plantilla. Confirma las medidas con quien imprime tu pedido.",
+          "Manda tu logo en el mejor formato que tengas y revisa que nada importante quede pegado al borde. Como referencia general, algunos talleres piden arte vectorial o imágenes de al menos 300 PPI, y cada taller tiene su propia plantilla. Confirma las medidas con quien imprime tu pedido.",
           "En Yume puedes mandar tu logo en PNG, PDF, AI o SVG con fondo transparente directo por WhatsApp. Si todavía no tienes un logo definido, también podemos ayudarte a construir uno simple para arrancar.",
-          "Sangrado: es el margen de diseño que se extiende más allá de la línea de corte. Como referencia, Sticker Mule usa 1/16 de pulgada y Moo recomienda 1/8 de pulgada (3 mm). No es una norma universal: varía según el proveedor.",
-          "Márgenes y texto: Moo sugiere dejar logotipos, códigos QR y texto clave al menos 1/8 de pulgada (3 mm) dentro del corte. Como referencia de ese mismo proveedor, el cuerpo de texto debe superar los 6 pt y el nombre de marca o la información importante los 8 pt. Conviene ver el archivo al 100 %, que es el tamaño real de impresión.",
+          "Sangrado: es el margen de diseño que se extiende más allá de la línea de corte. Como referencias generales, algunos proveedores usan 1/16 de pulgada y otros recomiendan 1/8 de pulgada (3 mm). No es una norma universal: varía según el proveedor.",
+          "Márgenes y texto: como referencia general, se sugiere dejar logotipos, códigos QR y texto clave al menos 1/8 de pulgada (3 mm) dentro del corte. Otra referencia indica que el cuerpo de texto debe superar los 6 pt y el nombre de marca o la información importante los 8 pt. Conviene ver el archivo al 100 %, que es el tamaño real de impresión.",
         ],
       },
       {
@@ -3285,10 +3272,6 @@ export const blogPosts: BlogPost[] = [
     ],
     relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
     relatedBlogSlugs: ["stickers-para-marca-pequena-vs-grande", "stickers-vinil-vs-papel-diferencias", "cuanto-tarda-un-pedido-de-stickers-personalizados", "dulceros-personalizados-guadalajara"],
-    sources: [
-      { label: "Sticker Mule: requisitos de arte para stickers y etiquetas", url: "https://stickermule.com/support/what-are-your-artwork-requirements-for-stickers-and-labels" },
-      { label: "Moo: errores comunes al diseñar stickers", url: "https://www.moo.com/blog/ca/inspiration/sticker-design-mistakes" },
-    ],
     faq: [
       {
         q: "¿Los stickers se venden por planilla?",
@@ -3304,11 +3287,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Qué formato de archivo puedo mandar?",
-        a: "Puedes mandar tu logo en PNG, PDF, AI o SVG con fondo transparente por WhatsApp. Como referencia, Sticker Mule pide arte vectorial o imágenes de al menos 300 PPI.",
+        a: "Puedes mandar tu logo en PNG, PDF, AI o SVG con fondo transparente por WhatsApp. Como referencia general, algunos proveedores piden arte vectorial o imágenes de al menos 300 PPI.",
       },
       {
         q: "¿Cuánto sangrado necesita el diseño?",
-        a: "Depende del proveedor: Sticker Mule usa 1/16 de pulgada y Moo recomienda 1/8 de pulgada (3 mm). Son referencias, no una norma universal, así que confirma con la plantilla de quien imprime.",
+        a: "Depende del proveedor: como referencias generales, algunos usan 1/16 de pulgada y otros recomiendan 1/8 de pulgada (3 mm). No son una norma universal, así que confirma con la plantilla de quien imprime.",
       },
       {
         q: "¿Veo el diseño antes de imprimir?",
@@ -4162,14 +4145,6 @@ export const blogPosts: BlogPost[] = [
     ],
     serviceLink: { href: "/productos/tatuajes-temporales-personalizados", label: "Ver tatuajes temporales personalizados" },
     quoteMessage: "Hola, quiero cotizar tatuajes temporales personalizados.\n\nTamaño:\nCantidad:\n¿Ya tengo diseño? (sí / no):",
-    sources: [
-      { label: "Ficha del papel de transferencia MECOLOUR en Amazon (duración: al menos 48 horas sin frotar)", url: "https://www.amazon.com/dp/B09C25DL8G" },
-      { label: "Practical Dermatology: la FDA advierte sobre los riesgos de los tatuajes de henna negra", url: "https://practicaldermatology.com/news/fda-warns-public-about-black-henna-tattoo-risks/2458159/" },
-      { label: "Temporary Tattoos: cuánto dura un tatuaje temporal (referencia de tienda)", url: "https://www.temporarytattoos.com/blogs/news/how-long-does-a-temporary-tattoo-last" },
-      { label: "Temporary Tattoos: cuánto duran según la zona del cuerpo (referencia de tienda)", url: "https://www.temporarytattoos.com/blogs/news/how-long-do-temporary-tattoos-last" },
-      { label: "Temporary Tattoos: cómo hacer que duren más (guía de tienda)", url: "https://www.temporarytattoos.com/blogs/news/how-to-make-temporary-tattoos-last-longer" },
-      { label: "Temporalis: cómo quitar un tatuaje temporal (guía comercial)", url: "https://pro.temporalis.tattoo/blogs/magazine/remove-temporary-tattoo" },
-    ],
   },
   {
     slug: "etiquetas-escolares-personalizadas-guadalajara",
@@ -4405,7 +4380,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Impresión de etiquetas: qué cambia entre rollo, hoja y pieza",
         body: [
           "La diferencia está en cómo llegan y cómo se aplican. El rollo es una tira continua sobre un respaldo, pensada para tiradas largas y volúmenes altos. La hoja viene precortada y se despega a mano. La pieza se corta a la forma de tu diseño y la pides por cantidad exacta.",
-          "Avery presenta la hoja como la opción para pruebas de diseño y tiradas cortas de temporada, y el rollo para pedidos grandes. La pieza cortada a la forma de tu diseño es lo que hacemos en Yume.",
+          "La hoja es una opción para pruebas de diseño y tiradas cortas de temporada, y el rollo para pedidos grandes. La pieza cortada a la forma de tu diseño es lo que hacemos en Yume.",
           "Con estas tres ideas claras, el resto de la guía te ayuda a decidir según cantidad, forma de aplicación, número de diseños y material.",
         ],
       },
@@ -4413,7 +4388,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Etiquetas en rollo: para volumen y máquinas etiquetadoras",
         body: [
           "Las etiquetas en rollo convienen cuando repites el mismo diseño muchas veces y las aplicas con una máquina etiquetadora. Se pueden usar también a mano desde un soporte, pero su ventaja real aparece en tiradas largas. En Yume no tenemos rollo en el catálogo, así que escríbenos por WhatsApp antes de pedir si lo necesitas.",
-          "Otra diferencia práctica es la impresión: un rollo imprimible necesita una impresora específica. Según Avery, con prensas digitales no hay cargos por placas ni por cuatricromía, y con flexografía es probable que haya cargos extra.",
+          "Otra diferencia práctica es la impresión: un rollo imprimible necesita una impresora específica. Como referencia general, con prensas digitales no hay cargos por placas ni por cuatricromía, y con flexografía es probable que haya cargos extra.",
           "La contraparte es que se suelen trabajar en tirajes grandes del mismo diseño: si apenas estás arrancando o cambias de diseño seguido, terminas comprando más de las que vas a usar.",
         ],
       },
@@ -4444,13 +4419,13 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Lo que resiste el agua es el material, no el formato. Una etiqueta de papel no se vuelve impermeable, y los consejos para proteger la impresión funcionan mejor con base de película. Nuestras etiquetas son de vinil y resistentes al agua; si habrá hielo, hieleras o botellas frías, pide siempre un material resistente.",
           "Los Stickers de Vinil Personalizados además resisten el sol y los rayones. En acabado eliges mate, brillante u holográfico (el holográfico suma $0.50 por pieza). Todos nuestros stickers llevan laminado BOPP de alta calidad. La comparación completa está en nuestra guía de [vinil vs. papel](/blog/stickers-vinil-vs-papel-diferencias).",
-          "Si imprimes en casa con inyección de tinta, Online Labels recomienda usar el ajuste de papel fotográfico o brillante y dejar secar al menos unas horas, idealmente 24. Para protección extra menciona barniz en spray transparente brillante o una hoja de sobrecapa transparente.",
+          "Si imprimes en casa con inyección de tinta, Una guía recomienda usar el ajuste de papel fotográfico o brillante y dejar secar al menos unas horas, idealmente 24. Para protección extra menciona barniz en spray transparente brillante o una hoja de sobrecapa transparente.",
         ],
       },
       {
         heading: "Cuánto cuesta la impresión de etiquetas por pieza",
         body: [
-          `100 piezas (tamaño chico): precios reales de nuestro catálogo en la tabla. El envío va aparte: $${NATIONAL_SHIPPING_PRICE} a todo México o $${CASABLANCA_PRICE} si recoges en una sucursal Casa Blanca de Guadalajara, y es gratis en compras de $${FREE_SHIPPING_THRESHOLD} o más.`,
+          `100 piezas (tamaño chico): precios reales de nuestro catálogo en la tabla. El envío va aparte: $${NATIONAL_SHIPPING_PRICE} a todo México o $${CASABLANCA_PRICE} si recoges en una sucursal de Guadalajara, y es gratis en compras de $${FREE_SHIPPING_THRESHOLD} o más.`,
           "El pedido mínimo es de 50 piezas en las etiquetas con tu logo y de 40 piezas en los stickers de vinil, así que pides cerca del número que de verdad vas a usar.",
         ],
         table: {
@@ -4475,7 +4450,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Puedo imprimir etiquetas en hoja con mi impresora de oficina?",
-        a: "Según Avery, las hojas de etiquetas se imprimen en impresoras estándar de inyección de tinta o láser, a diferencia de un rollo imprimible, que necesita una impresora específica.",
+        a: "Como referencia general, las hojas de etiquetas se imprimen en impresoras estándar de inyección de tinta o láser, a diferencia de un rollo imprimible, que necesita una impresora específica.",
       },
       {
         q: "¿Cuál es el mínimo para imprimir etiquetas en Yume?",
@@ -4495,15 +4470,12 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Cuánto tarda la impresión de mis etiquetas?",
-        a: `La prueba digital llega en un máximo de 24 horas después del pago. Desde que la apruebas, tu pedido llega a domicilio en ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles, o está listo para recoger en Casa Blanca (Guadalajara) en ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles.`,
+        a: `La prueba digital llega en un máximo de 24 horas después del pago. Desde que la apruebas, tu pedido llega a domicilio en ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles, o está listo para recoger en una sucursal de Guadalajara en ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles.`,
       },
     ],
     relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
     relatedBlogSlugs: ["stickers-vinil-vs-papel-diferencias", "donde-imprimir-stickers-personalizados-mexico"],
-    sources: [
-      { label: "Avery: ¿etiquetas en rollo o en hoja?", url: "https://www.avery.com/blog/should-you-use-roll-labels-or-sheet-labels/" },
-      { label: "Online Labels: cómo hacer etiquetas resistentes al agua", url: "https://www.onlinelabels.com/articles/how-to-make-labels-waterproof" },
-    ],
+
   },
   {
     slug: "etiquetas-navidenas-personalizadas",
@@ -5016,7 +4988,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Qué esperar de un proveedor de detalles personalizados para wedding planner en Guadalajara",
         body: [
           "Un buen proveedor de detalles personalizados le da a la planner tres cosas: una prueba digital que la pareja pueda aprobar, fechas claras por escrito y trato directo por WhatsApp. Así no tiene que adivinar ni perseguir a nadie, y su cliente ve el detalle antes de que se produzca nada.",
-          "Según Bodas.net, la planner contrata proveedores, supervisa el timing del día y organiza pruebas, pero no decide sin consultar a la pareja. Por eso el proveedor ideal facilita esa aprobación. En Yume trabajamos desde Guadalajara, con envíos a todo México.",
+          "Según guías del sector, la planner contrata proveedores, supervisa el timing del día y organiza pruebas, pero no decide sin consultar a la pareja. Por eso el proveedor ideal facilita esa aprobación. En Yume trabajamos desde Guadalajara, con envíos a todo México.",
         ],
       },
       {
@@ -5060,7 +5032,7 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Empieza en cuanto tengas la fecha y una idea del diseño, porque el tiempo de producción se cuenta desde que se aprueba la prueba digital, no desde que haces el pedido. Mientras más tarde se apruebe, más tarde llega tu pedido.",
           "Piensa el calendario hacia atrás desde la fecha de la boda: primero la entrega, luego la producción, después la aprobación de la prueba, el cierre de la lista de invitados y el brief. Los días de producción y envío de los productos de la tienda aparecen en la página de cada uno.",
-          "Como contraste, la ficha en Bodas.net de un proveedor de detalles de Guadalajara, España, recomienda empezar con 6 a 9 meses de antelación porque trabaja sobre pedido. Es la referencia de ese proveedor, no una regla de Yume. Para menús, invitaciones y tatuajes, pregúntanos la fecha por WhatsApp antes de prometer nada a tu cliente. Si buscas ideas para los invitados, lee [cuándo pedir souvenirs de boda](/blog/cuando-pedir-souvenirs-de-boda) o mira estos [souvenirs de boda personalizados](/blog/souvenirs-de-boda-personalizados).",
+          "Como referencia externa, un proveedor de detalles de Guadalajara, España, recomienda empezar con 6 a 9 meses de antelación porque trabaja sobre pedido. Es la referencia de ese proveedor, no una regla de Yume. Para menús, invitaciones y tatuajes, pregúntanos la fecha por WhatsApp antes de prometer nada a tu cliente. Si buscas ideas para los invitados, lee [cuándo pedir souvenirs de boda](/blog/cuando-pedir-souvenirs-de-boda) o mira estos [souvenirs de boda personalizados](/blog/souvenirs-de-boda-personalizados).",
         ],
       },
       {
@@ -5073,7 +5045,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Entrega y trato por WhatsApp para que tu cliente quede contento",
         body: [
-          "Yume produce en Guadalajara y envía a todo México; en la zona metropolitana también puedes recoger en una sucursal Casa Blanca. Dinos la sede y la fecha del evento desde el inicio para que la entrega quede planeada junto con tu calendario.",
+          "Yume produce en Guadalajara y envía a todo México; en la zona metropolitana también puedes recoger en una sucursal. Dinos la sede y la fecha del evento desde el inicio para que la entrega quede planeada junto con tu calendario.",
           "Todo el trato es por WhatsApp: cotización, prueba digital y aprobación en un solo chat.",
         ],
       },
@@ -5103,7 +5075,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Con cuánta anticipación debo empezar?",
-        a: "Depende del producto y de cuándo apruebes la prueba digital. Como referencia externa, un proveedor de Guadalajara, España, recomienda en Bodas.net de 6 a 9 meses porque trabaja sobre pedido, pero no es una regla de Yume.",
+        a: "Depende del producto y de cuándo apruebes la prueba digital. Como referencia externa, un proveedor de Guadalajara, España, recomienda de 6 a 9 meses porque trabaja sobre pedido, pero no es una regla de Yume.",
       },
       {
         q: "¿Trabajan por evento o por volumen?",
@@ -5115,12 +5087,8 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Dónde producen y a dónde envían?",
-        a: "Producimos en Guadalajara, Jalisco, y enviamos a todo México. En la zona metropolitana de Guadalajara también puedes recoger en una sucursal Casa Blanca.",
+        a: "Producimos en Guadalajara, Jalisco, y enviamos a todo México. En la zona metropolitana de Guadalajara también puedes recoger en una sucursal.",
       },
-    ],
-    sources: [
-      { label: "Bodas.net: ¿Qué tipo de wedding planner necesitas?", url: "https://www.bodas.net/articulos/que-tipo-de-wedding-planner-necesitas--c3716" },
-      { label: "Bodas.net: ficha de Evana Creativas, detalles de boda (Guadalajara, España)", url: "https://www.bodas.net/detalles-de-bodas/evana-creativas--e304499" },
     ],
   },
   {
@@ -5152,7 +5120,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Qué lleva la tarjeta de menú de boda",
         body: [
-          "Una tarjeta de menú lleva un encabezado con el nombre de la pareja o el monograma, la fecha si quieres, y los platos en orden de servicio con una descripción breve. Los maridajes y la frase de cierre son opcionales. Esa referencia viene de Paperlust, una guía de papelería, y no es una norma.",
+          "Una tarjeta de menú lleva un encabezado con el nombre de la pareja o el monograma, la fecha si quieres, y los platos en orden de servicio con una descripción breve. Los maridajes y la frase de cierre son opcionales. Esa referencia viene de una guía de papelería y no es una norma.",
           "Mándanos tu menú por WhatsApp y lo cotizamos.",
         ],
       },
@@ -5160,7 +5128,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Alergias y dietas en el menú de boda",
         body: [
           "Si quieres marcar dietas en el menú, una guía de papelería recomienda abreviaturas con letras (V, VE, GF, DF, N, SF) después del nombre del plato, con una leyenda al pie. Para alergias graves sugiere una línea que remita al equipo de catering, porque la tarjeta no es un documento de gestión de alergias.",
-          "WeddingWire Canadá propone dejar espacio en el RSVP para alergias y dietas, pedirle al catering la lista de ingredientes de cada plato y compartirla con los invitados que tienen alergias. También sugiere publicar el menú en el sitio web de la boda y, si hay buffet, etiquetar los platos (vegano, vegetariano, sin gluten, sin nueces) y dejar que quien tiene alergias se sirva primero.",
+          "Una guía de bodas propone dejar espacio en el RSVP para alergias y dietas, pedirle al catering la lista de ingredientes de cada plato y compartirla con los invitados que tienen alergias. También sugiere publicar el menú en el sitio web de la boda y, si hay buffet, etiquetar los platos (vegano, vegetariano, sin gluten, sin nueces) y dejar que quien tiene alergias se sirva primero.",
           "Por eso, en la tarjeta conviene poner solo las abreviaturas y la leyenda, y dejar el manejo de alergias en manos del catering. Cuéntanos cuáles quieres marcar y las acomodamos en el diseño.",
         ],
       },
@@ -5181,7 +5149,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Cuándo cerrar el diseño del menú y pedir las piezas",
         body: [
-          "Cierra el diseño del menú cuando el catering ya lo haya confirmado. Paperlust, un proveedor de papelería, indica que eso suele ocurrir entre 6 y 8 semanas antes de la boda, pero es solo su referencia y no un estándar del sector. Para los tiempos de tu pedido con Yume, escríbenos por WhatsApp.",
+          "Cierra el diseño del menú cuando el catering ya lo haya confirmado. Una referencia de papelería indica que eso suele ocurrir entre 6 y 8 semanas antes de la boda, pero no es un estándar del sector. Para los tiempos de tu pedido con Yume, escríbenos por WhatsApp.",
           "En Yume, el menú de boda se cotiza por WhatsApp. En los [stickers de vinil](/productos/stickers-vinil-impermeable) la prueba digital llega normalmente en un máximo de 24 horas después de tu pago, con hasta 2 rondas de ajustes, y no imprimimos nada sin tu aprobación.",
         ],
       },
@@ -5226,14 +5194,8 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Cuándo debo cerrar el diseño del menú?",
-        a: "Cuando el catering ya confirmó el menú. Paperlust, un proveedor de papelería, indica que suele ser entre 6 y 8 semanas antes de la boda, pero es solo su referencia. Para los tiempos de tu pedido con Yume, escríbenos por WhatsApp.",
+        a: "Cuando el catering ya confirmó el menú. Una referencia de papelería indica que suele ser entre 6 y 8 semanas antes de la boda, pero no es un estándar del sector. Para los tiempos de tu pedido con Yume, escríbenos por WhatsApp.",
       },
-    ],
-    sources: [
-      { label: "The Budget Savvy Bride: cómo los stickers pueden realzar tu boda", url: "https://thebudgetsavvybride.com/how-stickers-can-elevate-your-wedding/" },
-      { label: "Mary Hollis Huddleston: tarjetas de lugar, menús, recursos y consejos", url: "https://maryhollishuddleston.squarespace.com/blog/place-cards-menus-resources-and-tips" },
-      { label: "Paperlust: guía de tarjetas de menú de boda", url: "https://paperlust.co/blog/?p=15638" },
-      { label: "WeddingWire Canadá: cómo manejar alergias y restricciones alimentarias de los invitados", url: "https://weddingwire.ca/wedding-ideas/8-ways-to-handle-guests-food-allergies-and-dietary-restrictions--c297" },
     ],
   },
   {
@@ -5251,38 +5213,38 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Cuántos dulces calcular para la mesa de dulces de tu boda",
         body: [
-          "Como punto de partida, Bodas.net propone unos 150 g de dulces por invitado en bodas pequeñas, unos 100 g en medianas y unos 80 g en grandes. Para 100 invitados serían unos 10 kg si la mesa es sobre todo de golosinas. Son cifras orientativas de una guía de España, no una norma.",
+          "Como punto de partida, una guía del sector propone unos 150 g de dulces por invitado en bodas pequeñas, unos 100 g en medianas y unos 80 g en grandes. Para 100 invitados serían unos 10 kg si la mesa es sobre todo de golosinas. Son cifras orientativas de una guía de España, no una norma.",
           "Si añades mini brownies, donuts, bombones o galletas, puedes reducir la cantidad de dulce suelto. La mesa acompaña al postre y al banquete, no los sustituye.",
-          "Crehana recuerda que la cantidad depende de los invitados, la duración, el lugar y el catering, así que conviene afinar la cifra con tu wedding planner o con el salón.",
+          "Una guía del sector recuerda que la cantidad depende de los invitados, la duración, el lugar y el catering, así que conviene afinar la cifra con tu wedding planner o con el salón.",
         ],
       },
       {
         heading: "Cuántos dulceros o tarros necesitas en la mesa",
         body: [
-          "Bodas.net orienta con tarros medianos: de 4 a 6 para 50 invitados, de 10 a 12 para entre 50 y 150, y unos 15 o 16 para 200. Es una referencia para saber cuántos recipientes llenar, no una regla. Ajústala según cuántos tipos de dulce quieras mostrar y el tamaño de tu mesa.",
+          "Una guía del sector orienta con tarros medianos: de 4 a 6 para 50 invitados, de 10 a 12 para entre 50 y 150, y unos 15 o 16 para 200. Es una referencia para saber cuántos recipientes llenar, no una regla. Ajústala según cuántos tipos de dulce quieras mostrar y el tamaño de tu mesa.",
           "Por eso conviene empezar por los tipos de dulce que quieres ofrecer y después definir el número de recipientes. Nuestro pedido mínimo de dulceros es de 10 piezas, y en la página de [dulceros personalizados](/productos/dulceros-personalizados) ves el precio vigente.",
         ],
       },
       {
         heading: "Qué dulces poner en cada dulcero de la mesa",
         body: [
-          "Elige variedad y etiqueta cada dulcero. Crehana sugiere al menos 6 variedades de dulces como referencia, y Bodas.net recomienda combinar clásicos como gominolas, nubes y bombones con minis, cake pops, brownies o galletas decoradas. El dulcero de Yume llega armado y vacío, así que tú decides qué lleva cada uno.",
+          "Elige variedad y etiqueta cada dulcero. Una guía del sector sugiere al menos 6 variedades de dulces como referencia, y otra guía recomienda combinar clásicos como gominolas, nubes y bombones con minis, cake pops, brownies o galletas decoradas. El dulcero de Yume llega armado y vacío, así que tú decides qué lleva cada uno.",
           "Para más ideas de relleno, revisa nuestra guía de [qué poner en un dulcero](/blog/que-poner-en-un-dulcero).",
         ],
       },
       {
         heading: "Cómo armar la mesa de dulces para boda paso a paso",
         body: [
-          "Define un concepto y una paleta, elige un punto de atención y acomoda por alturas: lo bajo al frente y lo alto al fondo. Bodas.net recomienda recipientes transparentes, bandejas a distintas alturas o cajas de madera para que se vea el contenido, y mantener el orden con una línea de estilo coherente.",
-          "Crehana propone 10 pasos que van de la inspiración al diseño gráfico, con cartelitos y banderines, e incluyen un croquis de la mesa. Bodas.net añade pinzas para servirse y, como alternativa higiénica y sin filas, las presentaciones individuales.",
+          "Define un concepto y una paleta, elige un punto de atención y acomoda por alturas: lo bajo al frente y lo alto al fondo. Una guía del sector recomienda recipientes transparentes, bandejas a distintas alturas o cajas de madera para que se vea el contenido, y mantener el orden con una línea de estilo coherente.",
+          "Una guía del sector propone 10 pasos que van de la inspiración al diseño gráfico, con cartelitos y banderines, e incluyen un croquis de la mesa. Otra guía añade pinzas para servirse y, como alternativa higiénica y sin filas, las presentaciones individuales.",
           "Los dulceros dan color y un diseño propio a la mesa y, si los personalizas, repiten el diseño de tu boda. Si además buscas detalles para entregar, mira los [souvenirs de boda personalizados](/blog/souvenirs-de-boda-personalizados).",
         ],
       },
       {
         heading: "Etiquetas para la mesa: sabores, alérgenos y detalles",
         body: [
-          "Una etiqueta útil dice qué hay en cada dulcero. Bodas.net aconseja etiquetar los sabores, indicar los alérgenos y señalar las opciones sin gluten, sin azúcar o veganas. Así tus invitados eligen con seguridad y la mesa se ve ordenada, además de bonita. También puedes sumar cartelitos con los nombres de la pareja.",
-          "Como detalle personalizado, Bodas.net propone bolsitas cerradas con una etiqueta con la fecha de la boda y los nombres o las iniciales de la pareja. Otra opción es dejar bolsas o tarros al final de la mesa para que cada invitado se sirva.",
+          "Una etiqueta útil dice qué hay en cada dulcero. Una guía del sector aconseja etiquetar los sabores, indicar los alérgenos y señalar las opciones sin gluten, sin azúcar o veganas. Así tus invitados eligen con seguridad y la mesa se ve ordenada, además de bonita. También puedes sumar cartelitos con los nombres de la pareja.",
+          "Como detalle personalizado, una guía del sector propone bolsitas cerradas con una etiqueta con la fecha de la boda y los nombres o las iniciales de la pareja. Otra opción es dejar bolsas o tarros al final de la mesa para que cada invitado se sirva.",
         ],
       },
       {
@@ -5315,11 +5277,11 @@ export const blogPosts: BlogPost[] = [
     faq: [
       {
         q: "¿Cuántos dulces calcular por invitado en una boda?",
-        a: "Bodas.net, en una guía de España, orienta con unos 150 g por invitado en bodas pequeñas, unos 100 g en medianas y unos 80 g en grandes. Son cifras orientativas, no una norma.",
+        a: "Una guía de España orienta con unos 150 g por invitado en bodas pequeñas, unos 100 g en medianas y unos 80 g en grandes. Son cifras orientativas, no una norma.",
       },
       {
         q: "¿Cuántos tarros o dulceros se necesitan en la mesa?",
-        a: "Bodas.net orienta con tarros medianos: de 4 a 6 para 50 invitados, de 10 a 12 para entre 50 y 150, y unos 15 o 16 para 200. Es una referencia, no una regla.",
+        a: "Una guía del sector orienta con tarros medianos: de 4 a 6 para 50 invitados, de 10 a 12 para entre 50 y 150, y unos 15 o 16 para 200. Es una referencia, no una regla.",
       },
       {
         q: "¿Los dulceros incluyen dulces?",
@@ -5327,7 +5289,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Qué conviene indicar en las etiquetas de la mesa?",
-        a: "Bodas.net aconseja etiquetar los sabores, indicar los alérgenos y señalar las opciones sin gluten, sin azúcar o veganas.",
+        a: "Una guía del sector aconseja etiquetar los sabores, indicar los alérgenos y señalar las opciones sin gluten, sin azúcar o veganas.",
       },
       {
         q: "¿Qué incluye la personalización del dulcero?",
@@ -5335,7 +5297,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿La mesa de dulces sustituye al postre?",
-        a: "No. Según Bodas.net, la mesa de dulces acompaña al postre y al banquete, no los sustituye.",
+        a: "No. Según una guía del sector, la mesa de dulces acompaña al postre y al banquete, no los sustituye.",
       },
       {
         q: "¿Cuándo conviene pedir los dulceros?",
@@ -5345,10 +5307,6 @@ export const blogPosts: BlogPost[] = [
         q: "¿Cuál es el pedido mínimo de dulceros?",
         a: "El pedido mínimo es de 10 piezas.",
       },
-    ],
-    sources: [
-      { label: "Bodas.net: Todo lo que debéis saber antes de montar una candy bar", url: "https://www.bodas.net/articulos/todo-lo-que-debeis-saber-antes-de-montar-una-candy-bar--c2448" },
-      { label: "Crehana: Cómo armar una mesa de dulces", url: "https://www.crehana.com/blog/estilo-vida/como-armar-mesa-dulce/" },
     ],
   },
   {
@@ -5459,14 +5417,14 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Qué dulces poner en un dulcero para XV años",
         body: [
-          "Para un dulcero de XV años combina clásicos como gomitas, galletas decoradas, mini brownies y bombones con un detalle sorpresa. Bodas.net recomienda esa mezcla y añadir opciones sin gluten, veganas o sin azúcar. El dulcero llega vacío, así que tú eliges el relleno.",
-          "En una mesa de bodas, Bodas.net recomienda de 5 a 7 variedades de postre, una pauta que se puede adaptar a un XV. Si quieres más ideas de relleno, revisa la guía de [qué poner en un dulcero](/blog/que-poner-en-un-dulcero), y consulta los [dulceros personalizados](/productos/dulceros-personalizados) que preparamos con el nombre de la quinceañera.",
+          "Para un dulcero de XV años combina clásicos como gomitas, galletas decoradas, mini brownies y bombones con un detalle sorpresa. Las guías del sector recomiendan esa mezcla y añadir opciones sin gluten, veganas o sin azúcar. El dulcero llega vacío, así que tú eliges el relleno.",
+          "En una mesa de bodas, una guía del sector recomienda de 5 a 7 variedades de postre, una pauta que se puede adaptar a un XV. Si quieres más ideas de relleno, revisa la guía de [qué poner en un dulcero](/blog/que-poner-en-un-dulcero), y consulta los [dulceros personalizados](/productos/dulceros-personalizados) que preparamos con el nombre de la quinceañera.",
         ],
       },
       {
         heading: "¿Qué dulces combinan con una fiesta elegante de XV años?",
         body: [
-          "Los que siguen la paleta de la fiesta. Bodas.net aconseja elegir 2 o 3 colores protagonistas y repetirlos en dulces, flores, cintas, carteles y recipientes. Así el dulcero, la mesa y la decoración se ven como un solo conjunto, y la mesa luce planeada en lugar de una suma de dulces sueltos.",
+          "Los que siguen la paleta de la fiesta. Una guía del sector aconseja elegir 2 o 3 colores protagonistas y repetirlos en dulces, flores, cintas, carteles y recipientes. Así el dulcero, la mesa y la decoración se ven como un solo conjunto, y la mesa luce planeada en lugar de una suma de dulces sueltos.",
           "La misma guía explica que la paleta se adapta al estilo del evento: dorado y espejos para uno glam, crema y verde para uno rústico. Elige los dulces por su color antes que por su marca, y deja que el dulcero con los colores de la fiesta cierre el conjunto.",
         ],
       },
@@ -5489,22 +5447,22 @@ export const blogPosts: BlogPost[] = [
         heading: "Cuántos dulceros pedir y cuántos dulces calcular",
         body: [
           "Pide un dulcero por cada persona que quieras que se lleve el detalle: toda la lista de invitados, solo la familia cercana o solo la mesa principal. El pedido mínimo es de 10 piezas y puedes escribir la cantidad exacta que necesitas.",
-          "Para calcular los dulces, Bodas.net, en su guía de buffets de dulces para bodas, sugiere de 3 a 4 raciones por persona si no hay pastel y unas 2 si lo hay. Son cifras de una mesa de postres de boda, no de lo que cabe en una caja, así que tómalas solo como orden de magnitud, sobre todo en un XV con baile y vals.",
+          "Para calcular los dulces, una guía del sector sobre buffets de dulces para bodas sugiere de 3 a 4 raciones por persona si no hay pastel y unas 2 si lo hay. Son cifras de una mesa de postres de boda, no de lo que cabe en una caja, así que tómalas solo como orden de magnitud, sobre todo en un XV con baile y vals.",
           "La misma guía señala que los niños suelen consumir más dulces que los adultos y que las cenas generan más consumo que los banquetes del mediodía. Úsalo para ajustar tus cálculos si tu lista tiene muchos niños o si la fiesta es de noche.",
         ],
       },
       {
         heading: "Montaje de la mesa de dulces: mesa, alturas y color",
         body: [
-          "Una mesa de unos 80 por 120 a 160 centímetros alcanza para 30 a 40 personas, según una guía de montaje de La Fiesta de Olivia. Cúbrela con un mantel hasta el piso, pon las piezas altas al centro y al fondo, y usa cajas o bases para crear niveles.",
-          "Bodas.net recomienda repartir los dulces a distintas alturas, usar recipientes variados como frascos de cristal, cajas de madera o soportes de varios pisos, ordenarlos por bloques de color y cuidar que ningún elemento tape a otro.",
-          "Mantén una paleta de color coherente con la de tus [dulceros personalizados](/productos/dulceros-personalizados) y combina formas y sabores. La guía de La Fiesta de Olivia sugiere tener en cuenta a los invitados celíacos, por ejemplo con malvaviscos sin gluten, y marcar cada dulce para que todos sepan qué toman.",
+          "Una mesa de unos 80 por 120 a 160 centímetros alcanza para 30 a 40 personas, según una guía de montaje. Cúbrela con un mantel hasta el piso, pon las piezas altas al centro y al fondo, y usa cajas o bases para crear niveles.",
+          "Una guía del sector recomienda repartir los dulces a distintas alturas, usar recipientes variados como frascos de cristal, cajas de madera o soportes de varios pisos, ordenarlos por bloques de color y cuidar que ningún elemento tape a otro.",
+          "Mantén una paleta de color coherente con la de tus [dulceros personalizados](/productos/dulceros-personalizados) y combina formas y sabores. Una guía de montaje sugiere tener en cuenta a los invitados celíacos, por ejemplo con malvaviscos sin gluten, y marcar cada dulce para que todos sepan qué toman.",
         ],
       },
       {
         heading: "Cómo rotular los dulces y qué dejar a la mano",
         body: [
-          "Coloca carteles que indiquen sabores, alérgenos u opciones veganas, y que combinen con la papelería de la fiesta. Bodas.net también recomienda dejar servilletas, pinzas o cucharitas a mano y preparar bolsitas o tarros para que los invitados se lleven dulces. Así cada persona sabe qué dulce toma.",
+          "Coloca carteles que indiquen sabores, alérgenos u opciones veganas, y que combinen con la papelería de la fiesta. También conviene dejar servilletas, pinzas o cucharitas a mano y preparar bolsitas o tarros para que los invitados se lleven dulces. Así cada persona sabe qué dulce toma.",
         ],
       },
       {
@@ -5520,7 +5478,7 @@ export const blogPosts: BlogPost[] = [
     faq: [
       {
         q: "¿Qué dulces poner en un dulcero para XV años?",
-        a: "Combina clásicos como gomitas, galletas decoradas, mini brownies y bombones con un detalle sorpresa, siguiendo la guía de Bodas.net adaptada a un XV.",
+        a: "Combina clásicos como gomitas, galletas decoradas, mini brownies y bombones con un detalle sorpresa, siguiendo una guía del sector adaptada a un XV.",
       },
       {
         q: "¿Los dulceros incluyen dulces?",
@@ -5536,32 +5494,26 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Cuántos colores conviene usar en la mesa de dulces?",
-        a: "Bodas.net aconseja elegir 2 o 3 colores protagonistas y repetirlos en dulces, flores, cintas, carteles y recipientes.",
+        a: "Una guía del sector aconseja elegir 2 o 3 colores protagonistas y repetirlos en dulces, flores, cintas, carteles y recipientes.",
       },
       {
         q: "¿Conviene poner carteles en los dulces?",
-        a: "Sí. Bodas.net indica que los carteles pueden señalar sabores, alérgenos u opciones veganas, y que deben combinar con la papelería de la fiesta.",
+        a: "Sí. Una guía del sector indica que los carteles pueden señalar sabores, alérgenos u opciones veganas, y que deben combinar con la papelería de la fiesta.",
       },
       {
         q: "¿Cuántas variedades de dulce conviene poner?",
-        a: "Bodas.net recomienda de 5 a 7 variedades de postre en una mesa de bodas. Es una guía de boda que se puede adaptar a un XV.",
+        a: "Una guía del sector recomienda de 5 a 7 variedades de postre en una mesa de bodas. Es una guía de boda que se puede adaptar a un XV.",
       },
       {
         q: "¿Qué tamaño de mesa necesito para la mesa de dulces?",
-        a: "Una guía de montaje de La Fiesta de Olivia menciona una mesa de unos 80 por 120 a 160 centímetros para 30 a 40 personas, con mantel hasta el piso y niveles con cajas o bases.",
+        a: "Una guía de montaje menciona una mesa de unos 80 por 120 a 160 centímetros para 30 a 40 personas, con mantel hasta el piso y niveles con cajas o bases.",
       },
       {
         q: "¿Hacen envíos a todo México?",
         a: "Sí. Producimos por pedido desde Guadalajara, Jalisco, y enviamos a todo México.",
       },
     ],
-    sources: [
-      { label: "Bodas.net: Cómo decorar la mesa de dulces de la boda", url: "https://www.bodas.net/articulos/como-decorar-la-mesa-de-dulces-de-la-boda--c960" },
-      { label: "Bodas.net: Buffets de dulces para bodas", url: "https://www.bodas.net/articulos/buffets-de-dulces-para-bodas--c733" },
-      { label: "La Fiesta de Olivia: Cómo montar tu candy bar", url: "https://shop.lafiestadeolivia.com/blogs/blog/17973332-como-montar-tu-misma-un-candy-bar-y-no-morir-en-el-intento" },
-      { label: "Mercado Libre: Mesa de dulces vintage (listado)", url: "https://listado.mercadolibre.com.mx/mesa-de-dulces-vintage" },
-      { label: "Mercado Libre: Cajitas de acetato (listado)", url: "https://listado.mercadolibre.com.mx/cajitas-de-acetato" },
-    ],
+    sources: [],
   },
   {
     slug: "detalles-cumpleanos-adultos-personalizados",
@@ -5682,7 +5634,7 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Para los niños de una boda conviene un dulcero individual con su nombre y los colores de la boda. Así cada niño recibe algo propio, que se ve como parte del diseño y no como un detalle suelto. Llega armado y vacío, y tú eliges qué lleva dentro.",
           "Nuestro dulcero es tipo lunch box, con asa, y la personalización incluye nombre y temática. Aquí hablamos de una pieza por niño, distinta de una mesa de dulces compartida por todos los invitados.",
-          "Una guía de Bodas.net (de 2012, así que puede estar algo desactualizada) recomienda dejar un detalle sobre el plato de cada niño, como una bolsa de caramelos, un juguete o un cuento, para que lo encuentren al sentarse. Un dulcero con nombre cumple esa misma función y se ve como parte de la decoración.",
+          "Una guía del sector (de 2012, así que puede estar algo desactualizada) recomienda dejar un detalle sobre el plato de cada niño, como una bolsa de caramelos, un juguete o un cuento, para que lo encuentren al sentarse. Un dulcero con nombre cumple esa misma función y se ve como parte de la decoración.",
         ],
       },
       {
@@ -5695,7 +5647,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Alergias e intolerancias: pregunta antes de llenar el dulcero",
         body: [
-          "Antes de elegir el relleno, pregunta a los padres por intolerancias o alergias de cada niño. Bodas.net hace esa recomendación para la comida infantil, y aplica igual a los dulces: puedes incluir la pregunta al confirmar asistencia o dejársela a tu planner, y avisar del contenido en una etiqueta.",
+          "Antes de elegir el relleno, pregunta a los padres por intolerancias o alergias de cada niño. Una guía del sector hace esa recomendación para la comida infantil, y aplica igual a los dulces: puedes incluir la pregunta al confirmar asistencia o dejársela a tu planner, y avisar del contenido en una etiqueta.",
           "Como el dulcero llega vacío, tú decides qué lleva dentro y puedes ajustar el relleno de cada niño.",
         ],
       },
@@ -5717,7 +5669,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Quién reparte los dulceros: monitora, planner o salón",
         body: [
-          "Alguien debe encargarse de entregar cada dulcero a su niño. Bodas.net propone una monitora por cada cuatro niños para acompañarlos, ayudarlos a comer y entretenerlos; es una guía española de 2012. Esa persona, tu wedding planner o el personal del salón pueden repartirlos, según lo que acuerdes con ellos.",
+          "Alguien debe encargarse de entregar cada dulcero a su niño. Una guía del sector propone una monitora por cada cuatro niños para acompañarlos, ayudarlos a comer y entretenerlos; es una guía española de 2012. Esa persona, tu wedding planner o el personal del salón pueden repartirlos, según lo que acuerdes con ellos.",
           "Si trabajas con una planner, compártele la lista de nombres y la hora en que quieres que se entreguen. Como cada dulcero lleva un nombre, quien los reparta no tiene que adivinar para quién es cada uno.",
         ],
       },
@@ -5746,21 +5698,18 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿En qué momento se entrega el dulcero a cada niño?",
-        a: "Puede ser sobre el plato al sentarse, en mano durante la fiesta o al final para llevar a casa. Bodas.net sugiere dejar un detalle sobre el plato de cada niño; define el momento con tu planner o con el salón.",
+        a: "Puede ser sobre el plato al sentarse, en mano durante la fiesta o al final para llevar a casa. Una guía del sector sugiere dejar un detalle sobre el plato de cada niño; define el momento con tu planner o con el salón.",
       },
       {
         q: "¿Cómo cuido las alergias de los niños invitados?",
-        a: "Pregunta a los padres por intolerancias o alergias antes de elegir el relleno, como sugiere Bodas.net para la comida infantil. El dulcero llega vacío, así que tú decides qué lleva dentro.",
+        a: "Pregunta a los padres por intolerancias o alergias antes de elegir el relleno, como sugiere una guía del sector para la comida infantil. El dulcero llega vacío, así que tú decides qué lleva dentro.",
       },
       {
         q: "¿Quién puede repartir los dulceros en la boda?",
-        a: "Quien acompañe a los niños, tu wedding planner o el personal del salón. Bodas.net propone una monitora por cada cuatro niños en su guía de 2012.",
+        a: "Quien acompañe a los niños, tu wedding planner o el personal del salón. Una guía del sector propone una monitora por cada cuatro niños en su guía de 2012.",
       },
     ],
-    sources: [
-      { label: "Exclusive Italy Weddings: bolsas de actividades para niños en bodas (en inglés)", url: "https://www.exclusiveitalyweddings.com/blog/wedding-party-ideas-children-activity-bags" },
-      { label: "Bodas.net: la mesa de los niños (guía de 2012)", url: "https://www.bodas.net/articulos/la-mesa-de-los-ninos--c1194" },
-    ],
+    sources: [],
   },
   {
     slug: "aniversario-empresa-detalles-personalizados",
@@ -5778,7 +5727,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Detalles personalizados de aniversario para empresa: cómo elegir",
         body: [
           "Elige el detalle según el hito del aniversario y quién lo recibe. Los hitos habituales son 5, 10, 20, 30, 40 y 50 años o más, y los destinatarios suelen ser el equipo, los clientes y los aliados. Un detalle con el nombre de la empresa y la cifra del aniversario se siente hecho para la ocasión.",
-          "Según la guía de MOO, añadir nombre, fecha o mensaje convierte un objeto funcional en algo que se conserva. Un dulcero o un sticker con logo cumplen con eso. MOO apunta además que el momento oportuno importa más que un gran gesto al año y que cada regalo debe sentirse dirigido a esa persona. Por eso conviene diseñar el detalle para un evento concreto, no escoger uno de catálogo.",
+          "Según una guía del sector, añadir nombre, fecha o mensaje convierte un objeto funcional en algo que se conserva. Un dulcero o un sticker con logo cumplen con eso. La guía apunta además que el momento oportuno importa más que un gran gesto al año y que cada regalo debe sentirse dirigido a esa persona. Por eso conviene diseñar el detalle para un evento concreto, no escoger uno de catálogo.",
         ],
       },
       {
@@ -5792,7 +5741,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Qué detalle dar al equipo, a los clientes y a los aliados",
         body: [
           "Piensa primero en quién lo recibe. Al equipo le habla un detalle del aniversario con la cifra y el nombre de la empresa. A los clientes, uno con su nombre o el del evento. A los aliados, uno con tu logo y un mensaje breve de agradecimiento. Cambia el mensaje, no la identidad de marca.",
-          "MOO sugiere, por ejemplo, libretas con el nombre y la fecha de un proyecto compartido, o una caja con nota a mano para los clientes principales. La misma lógica aplica a un dulcero o a un sticker: el nombre del cliente o del evento hace que se sienta dirigido a esa persona.",
+          "Una guía del sector sugiere, por ejemplo, libretas con el nombre y la fecha de un proyecto compartido, o una caja con nota a mano para los clientes principales. La misma lógica aplica a un dulcero o a un sticker: el nombre del cliente o del evento hace que se sienta dirigido a esa persona.",
         ],
       },
       {
@@ -5848,12 +5797,7 @@ export const blogPosts: BlogPost[] = [
         a: "Las fuentes que revisamos no dan límites de monto ni los requisitos exactos de CFDI para regalos a clientes. Pregunta a tu contador antes de comprar.",
       },
     ],
-    sources: [
-      { label: "MOO: ideas de obsequios a clientes", url: "https://www.moo.com/blog/es/inspiracion/ideas-para-obsequios-a-clientes" },
-      { label: "El Contribuyente: cuándo son deducibles los regalos y muestras para clientes", url: "https://www.elcontribuyente.mx/2024/07/cuando-son-deducibles-los-regalos-y-muestras-para-clientes/" },
-      { label: "ContadorMX: cómo hacer deducibles regalos a empleados o clientes", url: "https://contadormx.com/como-hacer-deducibles-regalos-a-empleados-o-clientes/" },
-      { label: "Asest: ideas de aniversario empresarial", url: "https://asest.es/story/aniversario-empresarial-ideas/" },
-    ],
+    sources: [],
   },
   {
     slug: "guia-wedding-planners-detalles-personalizados-guadalajara",
@@ -5871,7 +5815,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Qué debe ofrecer un proveedor de detalles personalizados para wedding planners",
         body: [
           "Un proveedor de detalles personalizados para wedding planners debe darte un proceso claro: cotización por evento, diseño con prueba digital antes de producir, comunicación directa y piezas coherentes entre sí. Tu volumen es por boda, no industrial, así que lo importante es que cada evento se vea planeado y que sepas qué esperar en cada paso.",
-          "El directorio de detalles de bodas de Bodas.net en Guadalajara reúne talleres de regalos personalizados, pero está pensado como directorio de pareja a proveedor. Esta guía es para ti, que coordinas varias bodas. Si quieres ver primero una de las piezas, revisa nuestros [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara).",
+          "Esta guía es para ti, que coordinas varias bodas. Si quieres ver primero una de las piezas, revisa nuestros [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara).",
         ],
       },
       {
@@ -5907,7 +5851,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Fechas límite: cuándo cerrar textos y cambios",
         body: [
-          "Cierra los textos y la aprobación con margen, no la semana de la boda. Una guía de planificación de La Bastilla recomienda repasar los detalles con todos los proveedores aproximadamente un mes antes del evento. Usa ese punto como fecha de referencia para que ningún cambio de última hora te comprometa la entrega.",
+          "Cierra los textos y la aprobación con margen, no la semana de la boda. Una guía de planificación recomienda repasar los detalles con todos los proveedores aproximadamente un mes antes del evento. Usa ese punto como fecha de referencia para que ningún cambio de última hora te comprometa la entrega.",
           "Los plazos de producción y envío de cada pieza te los confirmamos por WhatsApp al cotizar, una vez que conocemos la fecha de tu evento.",
         ],
       },
@@ -5923,7 +5867,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Qué pedir por escrito a tu proveedor",
         body: [
           "Pide por escrito lo que acordaron: piezas y cantidades, textos finales, número de pruebas digitales incluidas, fecha límite de cambios, forma de pago, plazo de producción y forma de entrega. Un resumen por WhatsApp o correo evita malentendidos y te sirve de respaldo cuando la pareja cambia de opinión.",
-          "Una reseña de un proveedor de detalles de boda en Bodas.net elogia la entrega puntual y el empaque cuidado, dos puntos que conviene acordar de antemano.",
+          "Conviene acordar de antemano la entrega puntual y el cuidado del empaque.",
         ],
         table: {
           headers: ["Qué confirmar", "Para qué sirve"],
@@ -5947,11 +5891,7 @@ export const blogPosts: BlogPost[] = [
     relatedBlogSlugs: ["dulceros-personalizados-guadalajara", "que-poner-en-un-dulcero"],
     quoteMessage:
       "Hola, soy wedding planner y quiero cotizar detalles personalizados para una boda: dulceros, stickers y tatuajes temporales.",
-    sources: [
-      { label: "Bodas.net: detalles de bodas en Guadalajara", url: "https://www.bodas.net/bodas/proveedores/detalles-de-bodas/guadalajara" },
-      { label: "Bodas.net: reseña de Detalle & Memoria", url: "https://www.bodas.net/detalles-de-bodas/detalle&memoria--e256961" },
-      { label: "La Bastilla: libro de planificación de bodas", url: "https://miboda.labastilla.com/sites/all/themes/personalizado/img/Libro_Bodas_La_Bastilla.pdf" },
-    ],
+    sources: [],
     faq: [
       {
         q: "¿Envían las piezas fuera de Guadalajara?",
@@ -6108,7 +6048,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Cuántos dulceros pedir para una boda: la regla simple",
         body: [
           "Pide un dulcero por cada invitado confirmado, o uno por pareja o familia si los entregas así, y suma una reserva para los novios, la mesa de dulces y cualquier cambio de último momento. La cuenta se cierra después de recibir las confirmaciones, no antes, porque el número de invitados puede cambiar hasta el final.",
-          "Esta regla es distinta a la de una candy bar. Las guías de candy bar, como la de Bodas.net, calculan por peso de golosinas o por número de tarros, porque el dulce va a granel. Un dulcero es una pieza individual, así que se cuenta por persona.",
+          "Esta regla es distinta a la de una candy bar. Las guías de candy bar calculan por peso de golosinas o por número de tarros, porque el dulce va a granel. Un dulcero es una pieza individual, así que se cuenta por persona.",
         ],
       },
       {
@@ -6154,14 +6094,14 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Cuántos dulceros extra reservar",
         body: [
-          "No hay una cantidad fija de extras que sirva para todas las bodas. Zola explica que depende del precio de cada pieza: con detalles baratos sobrar casi no pesa, con piezas caras quizá no compense. Reserva más si hay invitados que pueden pasar de No a Sí, o si la boda es de destino.",
+          "No hay una cantidad fija de extras que sirva para todas las bodas. Según guías del sector, depende del precio de cada pieza: con detalles baratos sobrar casi no pesa, con piezas caras quizá no compense. Reserva más si hay invitados que pueden pasar de No a Sí, o si la boda es de destino.",
           "Los dulceros se piden por pieza desde 10, así que la reserva se ajusta al número que tú decidas.",
         ],
       },
       {
         heading: "Candy bar o dulcero: por qué no se cuentan igual",
         body: [
-          "Una candy bar se calcula por peso de golosinas o por tarros porque el dulce va a granel; un dulcero individual se cuenta por pieza. Bodas.net da cifras para la candy bar, no para dulceros, así que no sirven para decidir cuántas piezas pedir.",
+          "Una candy bar se calcula por peso de golosinas o por tarros porque el dulce va a granel; un dulcero individual se cuenta por pieza. Las cifras para la candy bar no sirven para decidir cuántas piezas de dulceros pedir.",
           "Como referencia de esa guía, pensada para una candy bar de golosinas: unos 150 g por invitado en bodas pequeñas, unos 100 g en medianas y unos 80 g en grandes. Propone 4 a 6 tarros medianos para 50 invitados, 10 o 12 para 50 a 150 y 15 o 16 para unos 200, y da como ejemplo unos 10 kg de golosinas para 100 personas.",
           "Lo que sí te sirve de esas cifras es la idea de fondo: la cantidad por persona baja cuando hay más invitados. Con dulceros la lógica es otra, porque cada pieza ya lleva su porción dentro.",
         ],
@@ -6170,7 +6110,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Dulceros para la mesa de dulces y para cada lugar",
         body: [
           "Separa tres usos antes de contar: el dulcero que se entrega a cada invitado, los que se exhiben llenos en la mesa de dulces y la reserva. Así no mezclas piezas de entrega con piezas de decoración, y puedes cerrar cada cifra por separado cuando tengas la lista final.",
-          "Según Bodas.net, la candy bar acompaña al postre y al banquete, no los sustituye, y suele ponerse cerca de la pista de baile o abrirse después de comer. Para el diseño y el armado de esa mesa, revisa nuestra guía de [mesa de dulces para boda](/blog/mesa-de-dulces-para-boda).",
+          "Según guías del sector, la candy bar acompaña al postre y al banquete, no los sustituye, y suele ponerse cerca de la pista de baile o abrirse después de comer. Para el diseño y el armado de esa mesa, revisa nuestra guía de [mesa de dulces para boda](/blog/mesa-de-dulces-para-boda).",
           "El dulcero llega armado y vacío, así que lo que va dentro lo eliges tú. Si necesitas ideas, mira [qué poner en un dulcero](/blog/que-poner-en-un-dulcero).",
         ],
       },
@@ -6186,16 +6126,6 @@ export const blogPosts: BlogPost[] = [
     relatedProductSlugs: [],
     relatedBlogSlugs: ["mesa-de-dulces-para-boda", "que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara"],
     quoteMessage: "Hola, quiero cotizar dulceros personalizados para mi boda.",
-    sources: [
-      {
-        label: "Bodas.net: todo lo que debéis saber antes de montar una candy bar",
-        url: "https://www.bodas.net/articulos/todo-lo-que-debeis-saber-antes-de-montar-una-candy-bar--c2448",
-      },
-      {
-        label: "Zola: ¿conviene comprar recuerdos de boda extra?",
-        url: "https://www.zola.com/expert-advice/should-you-buy-extra-wedding-favors",
-      },
-    ],
     faq: [
       {
         q: "¿Cuántos dulceros pedir para una boda de 100 invitados?",
@@ -6274,8 +6204,8 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Cómo ajustar el dulcero al menú y al horario de la boda",
         body: [
-          "Piensa en el dulcero como parte del banquete, no como un añadido. Si ya hay postre, el dulce pasa a ser un detalle y bastan cantidades menores; si sustituye al postre, necesitas más. Según Bodas.net, a mediodía se consume menos dulce que en una cena nupcial más ligera.",
-          "Bodas.net también señala que en un banquete clásico se sirve una ración de postre por invitado y que conviene reservar algo extra. Con ese dato, define primero el papel del dulcero y después elige la cantidad de la tabla anterior.",
+          "Piensa en el dulcero como parte del banquete, no como un añadido. Si ya hay postre, el dulce pasa a ser un detalle y bastan cantidades menores; si sustituye al postre, necesitas más. Según una guía del sector, a mediodía se consume menos dulce que en una cena nupcial más ligera.",
+          "La misma guía señala que en un banquete clásico se sirve una ración de postre por invitado y que conviene reservar algo extra. Con ese dato, define primero el papel del dulcero y después elige la cantidad de la tabla anterior.",
           "Pregunta a tu catering o a tu planner si ya hay postre y a qué hora se abrirá el dulcero.",
         ],
       },
@@ -6303,12 +6233,6 @@ export const blogPosts: BlogPost[] = [
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable"],
     relatedBlogSlugs: ["que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "mesa-de-dulces-para-boda", "cuantos-dulceros-pedir-para-una-boda"],
-    sources: [
-      { label: "HaceCuentas: calculadora de candy bar por personas", url: "https://hacecuentas.com/calculadora-candy-bar-personas" },
-      { label: "Candystore.com: guía definitiva de buffets de dulces (en inglés)", url: "https://candystore.com/blog/candy-buffets/ultimate-candy-buffets-guide" },
-      { label: "Bodas.net: buffets de dulces para bodas", url: "https://www.bodas.net/articulos/buffets-de-dulces-para-bodas--c733" },
-      { label: "Diario Bahía de Cádiz: qué se necesita para crear la mejor mesa dulce para una boda", url: "https://diariobahiadecadiz.com/el-resto-del-mundo/que-se-necesita-para-crear-la-mejor-mesa-dulce-para-una-boda" },
-    ],
     faq: [
       {
         q: "¿Cuántos gramos de dulce calculo por invitado?",
@@ -6355,7 +6279,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Qué datos entregar antes de que llegue la prueba",
         body: [
           "Entrega todo en un solo mensaje: textos finales ya corregidos, nombres completos, fecha y hora del evento, cantidades, paleta de colores y la referencia de la invitación o la decoración. Con datos incompletos la prueba se repite y puedes gastar las rondas de ajustes incluidas, así que espera a tener la versión final.",
-          "Como referencia, Reverie Paper Co. empieza a contar el plazo de su prueba cuando recibe el texto final, y otro diseñador de papelería cuenta su plazo desde que recibe contrato, pago y texto final. Son políticas de esas tiendas, no un estándar del sector ni un plazo de Yume. Si tu cliente aún está decidiendo el texto, espera a tenerlo cerrado antes de pedir la prueba.",
+          "Como referencia, Un proveedor de papelería empieza a contar el plazo de su prueba cuando recibe el texto final, y otro diseñador de papelería cuenta su plazo desde que recibe contrato, pago y texto final. Son políticas de esas tiendas, no un estándar del sector ni un plazo de Yume. Si tu cliente aún está decidiendo el texto, espera a tenerlo cerrado antes de pedir la prueba.",
           "Para tener a la mano todo lo que debes juntar por evento, revisa el [checklist de pedido para planners](/blog/checklist-planners-pedido-detalles-evento).",
         ],
       },
@@ -6363,7 +6287,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Cómo reunir los comentarios de todos sin gastar rondas",
         body: [
           "Nombra a una sola persona que reciba los comentarios de la planner, el cliente, la familia o la empresa, y manda al proveedor un único mensaje con todos los cambios juntos. Así una ronda de ajustes cubre todas las opiniones. En los stickers de vinil de Yume se incluyen hasta 2 rondas.",
-          "Muchos proveedores limitan las rondas. Un estudio de papelería de boda incluye dos rondas de revisión, y otro permite dos rondas más una prueba final, con cargo por cada prueba extra. Son ejemplos de proveedores individuales, no una regla del mercado. Reverie Paper Co. pide comentarios concisos justamente para no gastar rondas.",
+          "Muchos proveedores limitan las rondas. Un estudio de papelería de boda incluye dos rondas de revisión, y otro permite dos rondas más una prueba final, con cargo por cada prueba extra. Son ejemplos de proveedores individuales, no una regla del mercado. Otro proveedor pide comentarios concisos justamente para no gastar rondas.",
           "Si trabajas por WhatsApp con Yume, reenvía la prueba al grupo de decisores, junta las respuestas y contesta una sola vez con una lista numerada, por ejemplo para unos [stickers con tu logo](/productos/stickers-logo-personalizado) del evento. Cuando todos estén de acuerdo, escribe un 'aprobado' claro.",
         ],
       },
@@ -6371,7 +6295,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Qué revisar en la prueba antes de aprobarla",
         body: [
           "Revisa primero lo que no se puede corregir después: ortografía de los nombres, fechas, horarios, cantidades, medidas y ubicación del diseño en la pieza. Compara cada dato con la información final del cliente. Algunas imprentas no responden por errores que ya estaban en la prueba aprobada.",
-          "Made & True, una tienda de letreros para bodas, pide revisar también el formato de las fechas. Forever Fiances explica que después de la aprobación final no vuelve a revisar ortografía, puntuación ni contenido, porque la prueba aprobada se usa directamente para fabricar. Sticker Giant indica que una vez en producción ya no se pueden hacer cambios. Son sus políticas, pero muestran por qué conviene revisar con calma antes de firmar.",
+          "Una tienda de letreros para bodas pide revisar también el formato de las fechas. Otro proveedor explica que después de la aprobación final no vuelve a revisar ortografía, puntuación ni contenido, porque la prueba aprobada se usa directamente para fabricar. Una imprenta indica que una vez en producción ya no se pueden hacer cambios. Son políticas individuales, pero muestran por qué conviene revisar con calma antes de firmar.",
         ],
         table: {
           headers: ["Qué revisar", "Pregunta para confirmar"],
@@ -6389,7 +6313,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Por qué el color en pantalla puede variar del impreso",
         body: [
           "La pantalla emite luz (RGB) y el papel refleja luz sobre la tinta (CMYK), por eso los tonos muy brillantes o saturados suelen verse más apagados al imprimir. La prueba digital es una simulación y depende de un monitor calibrado: no garantiza el color exacto que ves en la pantalla de tu teléfono.",
-          "Canva recomienda pedir una copia impresa para probar el color antes de un pedido grande. Forever Fiances añade que el papel y el método de impresión, offset o digital, también afectan el color, y que para que varias piezas combinen conviene usar el mismo papel y pedir e imprimir todo al mismo tiempo.",
+          "Una guía de impresión recomienda pedir una copia impresa para probar el color antes de un pedido grande. Otro proveedor añade que el papel y el método de impresión, offset o digital, también afectan el color, y que para que varias piezas combinen conviene usar el mismo papel y pedir e imprimir todo al mismo tiempo.",
           "Si el color de la boda o de tu cliente es crítico, dilo antes de aprobar y pregunta por WhatsApp qué opciones hay para tu pedido. No prometemos que la pantalla muestre el color exacto del impreso.",
         ],
       },
@@ -6397,7 +6321,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Cómo calcular tu calendario hacia atrás desde la fecha del evento",
         body: [
           "Parte de la fecha del evento y resta, en este orden: el tiempo de envío, el de producción, el de la aprobación y el de diseño. El resultado es tu fecha límite para entregar los datos finales. Pregunta por WhatsApp los plazos de tu pedido y de tu ciudad antes de fijar fechas con el cliente.",
-          "Como referencia de otras tiendas: Made & True pide enviar los detalles finales unas 4 semanas antes de la boda, Reverie Paper Co. suma de 4 a 6 semanas de diseño si hay artwork personalizado, y un proveedor semipersonalizado envía la prueba de la papelería completa unas 2 a 3 semanas después de recibir el texto final. Son sus plazos, no los de Yume, y varían mucho de un estudio a otro.",
+          "Como referencia de otras tiendas: una tienda de letreros pide enviar los detalles finales unas 4 semanas antes de la boda, un proveedor de papelería suma de 4 a 6 semanas de diseño si hay artwork personalizado, y un proveedor semipersonalizado envía la prueba de la papelería completa unas 2 a 3 semanas después de recibir el texto final. Son sus plazos, no los de Yume, y varían mucho de un estudio a otro.",
           "Para ver cómo se cuentan los tiempos de un pedido de stickers, lee [cuánto tarda un pedido de stickers](/blog/cuanto-tarda-un-pedido-de-stickers-personalizados). Si trabajas con Yume de forma recurrente, conoce la [página para planners](/planners) y la [guía para trabajar con un proveedor](/blog/guia-planners-proveedor-detalles-personalizados). Cuando tengas tu fecha límite, cotiza tus [stickers personalizados para eventos](/productos/stickers-vinil-impermeable) por WhatsApp.",
         ],
       },
@@ -6411,7 +6335,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿La prueba siempre viene incluida en el pedido?",
-        a: "Depende del proveedor. Made & True, por ejemplo, la incluye gratis en algunos letreros y la cobra aparte en otros. En Yume, confirma por WhatsApp qué incluye tu pedido.",
+        a: "Depende del proveedor. Un proveedor de letreros, por ejemplo, la incluye gratis en algunos y la cobra aparte en otros. En Yume, confirma por WhatsApp qué incluye tu pedido.",
       },
       {
         q: "¿Las rondas extra se cobran?",
@@ -6426,15 +6350,7 @@ export const blogPosts: BlogPost[] = [
         a: "Nada se imprime sin tu aprobación, y al aprobar das luz verde a la producción. Revisa nombres, fechas y direcciones antes de aprobar y confirma por WhatsApp qué cambios acepta tu pedido después.",
       },
     ],
-    sources: [
-      { label: "Forever Fiances: proceso de aprobación", url: "https://foreverfiances.helpscoutdocs.com/article/36-what-is-the-approval-process" },
-      { label: "Made & True: cómo pedir letreros personalizados para boda", url: "https://madeandtrue.com/blogs/news/how-to-order-custom-wedding-signage" },
-      { label: "Reverie Paper Co.: preguntas frecuentes", url: "https://reverie-paper-co.squarespace.com/faqs" },
-      { label: "Sticker Giant: tiempos de prueba y producción", url: "https://support.stickergiant.com/hc/en-us/articles/219066348-Proofing-Timeline-What-to-Expect-After-You-Place-Your-Order" },
-      { label: "Estudio de papelería: proceso de trabajo", url: "https://carol-sullivan.squarespace.com/our-process" },
-      { label: "Estudio de papelería: cronograma del proceso", url: "https://wouldntitbelovely.squarespace.com/process-timeline" },
-      { label: "Canva: CMYK para impresión", url: "https://www.canva.com/es_mx/help/cmyk-for-print/" },
-    ],
+
   },
   {
     slug: "cuando-pedir-souvenirs-de-boda",
@@ -7344,14 +7260,14 @@ export const blogPosts: BlogPost[] = [
         heading: "¿Vinil o papel? Cómo elegir el material según el uso",
         body: [
           "Elige según dónde va a vivir el sticker. Si va en botellas con hielo o en un lugar con humedad, conviene vinil. Si es una pieza seca, como un sobre, una caja o una tarjeta, el material pesa menos. Aquí trabajamos vinil premium con laminado BOPP, resistente al agua, al sol y a rayones.",
-          "Según MOO, una imprenta en línea, el papel mate es el más económico y versátil, pero no resiste agua ni humedad intensa, y el vinil conviene para humedad o exterior. El acabado puede ser mate, brillante u holográfico. Para comparar a fondo, lee [vinil vs papel en stickers](/blog/stickers-vinil-vs-papel-diferencias) y revisa [troquelado vs semitroquelado](/blog/troquelado-vs-semitroquelado-stickers) para elegir el corte.",
+          "Según una guía de impresión, el papel mate es el más económico y versátil, pero no resiste agua ni humedad intensa, y el vinil conviene para humedad o exterior. El acabado puede ser mate, brillante u holográfico. Para comparar a fondo, lee [vinil vs papel en stickers](/blog/stickers-vinil-vs-papel-diferencias) y revisa [troquelado vs semitroquelado](/blog/troquelado-vs-semitroquelado-stickers) para elegir el corte.",
         ],
       },
       {
         heading: "Qué tamaño de sticker mantiene legibles nombres y fechas",
         body: [
           "Nuestros stickers de vinil se hacen en tres tamaños: chico hasta 4 cm, mediano de 5 a 6 cm y grande de 7 a 8 cm. Si el diseño lleva nombres, fecha o una frase, elige mediano o grande para que el texto se lea con comodidad. Para medidas mayores, cotizamos por WhatsApp.",
-          "Como referencia, la guía de un proveedor en línea (MOO) recomienda no bajar de unos 5×5 cm cuando el diseño lleva letras. Es una pauta de ese proveedor, no una norma, y sirve para decidir entre los tamaños.",
+          "Como referencia, la guía de un proveedor en línea recomienda no bajar de unos 5×5 cm cuando el diseño lleva letras. Es una pauta de ese proveedor, no una norma, y sirve para decidir entre los tamaños.",
         ],
       },
       {
@@ -7364,7 +7280,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Qué revisar en tu diseño antes de imprimir",
         body: [
-          "Antes de mandar tu diseño, una referencia útil viene de MOO, una imprenta en línea: extiende el fondo hasta el sangrado para evitar bordes blancos tras el corte y deja textos y logos dentro de la zona segura. Son pautas de ese proveedor; para tu pedido, confirma el archivo con nosotros por WhatsApp.",
+          "Antes de mandar tu diseño, una guía de impresión recomienda extender el fondo hasta el sangrado para evitar bordes blancos tras el corte y dejar textos y logos dentro de la zona segura. Son pautas de un proveedor; para tu pedido, confirma el archivo con nosotros por WhatsApp.",
           "Puedes enviarnos tu diseño, un personaje o una foto, y te mandamos una prueba digital antes de imprimir para que revises nombres, fechas y colores.",
         ],
       },
@@ -7403,11 +7319,6 @@ export const blogPosts: BlogPost[] = [
         q: "¿Puedo usar mi propio diseño o una foto?",
         a: "Sí. Puedes enviarnos tu diseño, un personaje o una foto, y te preparamos una prueba digital antes de imprimir.",
       },
-    ],
-    sources: [
-      { label: "MOO: stickers de vinil (material y uso con humedad)", url: "https://www.moo.com/es-us/stickers/vinyl-stickers" },
-      { label: "MOO: stickers de vinil rectangulares (sangrado y zona segura)", url: "https://www.moo.com/es-us/stickers/rectangular/vinyl-stickers" },
-      { label: "MOO: stickers (tamaño recomendado con texto)", url: "https://www.moo.com/es-us/stickers" },
     ],
   },
 ];
