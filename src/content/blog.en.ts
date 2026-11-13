@@ -620,7 +620,6 @@ export const blogPostsEn: BlogPost[] = [
     quoteMessage: "Hi, I am interested in an NFC plate or stand for Google reviews.",
     sources: [
       { label: "Google: contribution policy", url: "https://support.google.com/contributionpolicy/answer/7400114?hl=en" },
-      { label: "NFC plate and review platform comparison", url: "https://onrec.com/node/129063" },
     ],
   },
   {
@@ -660,7 +659,6 @@ export const blogPostsEn: BlogPost[] = [
       { label: "Google: prohibited and restricted content", url: "https://support.google.com/business/answer/7400114?hl=en" },
       { label: "Google: ask for reviews with a link or QR code", url: "https://support.google.com/business/answer/16816815?hl=en" },
       { label: "Google: verify your profile with a video", url: "https://support.google.com/business/answer/14271705?hl=en" },
-      { label: "Ionos: how to get Google reviews (third-party guide)", url: "https://www.ionos.com/es-us/digitalguide/online-marketing/vender-en-internet/como-conseguir-resenas-en-google/" },
     ],
   },
   {
@@ -677,7 +675,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "Which baby shower favor to choose",
         body: [
           "Choose a small favor, the same for each guest and easy to take home. A personalized favor box fits: it arrives assembled and empty, has a handle, and you fill it with whatever you choose. What makes it special is the design, not just the baby's name.",
-          "A baby shower checklist guide describes the ideal favor as something small, the same for everyone and placed near the exit. Its examples include something edible, a plant, a candle or a packet of seeds. A [personalized favor box](/en/products/personalized-party-favor-boxes) fits that idea, with the advantage of a design made for your party instead of one from a catalog.",
+          "Baby shower guides describe the ideal favor as something small, the same for everyone and placed near the exit. Examples include something edible, a plant, a candle or a packet of seeds. A [personalized favor box](/en/products/personalized-party-favor-boxes) fits that idea, with the advantage of a design made for your party instead of one from a catalog.",
           "A 2026 article on wedding favors in Mexico points in the same direction: guests keep useful pieces with their own design, while generic favors tend to be forgotten. Applied to a baby shower, the idea is to combine design and usefulness, not just add a name. To decide what goes inside, see [what to put in a favor box](/en/blog/what-to-put-in-a-party-favor-box).",
         ],
       },
@@ -685,15 +683,15 @@ export const blogPostsEn: BlogPost[] = [
         heading: "What to give baby shower guests besides candy",
         body: [
           "Besides candy, you can give a sticker with the party design or a temporary tattoo with the baby's name, on their own or inside a favor box. Yume produces all three pieces in the same palette, so they match the invitation and decorations.",
-          "The criterion guides repeat most often is to connect the favor to the party theme or the baby's name. A shopping guide gives jungle, fairy tales, and clouds and stars as examples of themes. A [vinyl sticker](/en/products/waterproof-vinyl-stickers) or temporary tattoo with that theme meets the criterion with a piece made just for your party.",
+          "The criterion guides repeat most often is to connect the favor to the party theme or the baby's name. Baby shower guides give jungle, fairy tales, and clouds and stars as examples of themes. A [vinyl sticker](/en/products/waterproof-vinyl-stickers) or temporary tattoo with that theme meets the criterion with a piece made just for your party.",
           "If you want to see the tattoo option, visit [custom temporary tattoos](/en/products/custom-temporary-tattoos) to review the purchase conditions.",
         ],
       },
       {
         heading: "Candy, stickers or tattoos: what gets consumed and what gets kept",
         body: [
-          "Edible items get consumed. One baby shower guide rates candy low for usefulness because it gets consumed, and plants as mostly decorative with little personalization. That's why it helps to add a piece guests can keep or use, with your own design instead of a generic catalog design.",
-          "The same guide highlights soap, mugs and bookmarks as more useful in everyday life. The table compares the three pieces Yume produces.",
+          "Edible items get consumed, while plants are mostly decorative. That's why it helps to add a piece guests can keep or use, with your own design instead of a generic catalog design.",
+          "Soap, mugs and bookmarks can be useful in everyday life. The table compares the three pieces Yume produces.",
         ],
         table: {
           headers: ["Favor", "What it is", "Personalization", "Consumed or kept"],
@@ -747,14 +745,14 @@ export const blogPostsEn: BlogPost[] = [
         heading: "How to combine a favor box, sticker and tattoo without an improvised look",
         body: [
           "The simplest combination is a favor box with a sticker in the same design. For children, add a temporary tattoo. Repeat the name, illustration and palette on each piece and match them to the invitation, so the favor looks like part of the party rather than a last-minute addition.",
-          "One design service offers free baby shower label templates to download and print. That's the DIY route: a label on a generic product. With Yume, the design is adapted to your palette and you receive a digital proof before production.",
+          "A DIY option is to print a label for a generic product. With Yume, the design is adapted to your palette and you receive a digital proof before production.",
           "If you're working with a planner, send them the same invitation and decoration photos so the designs for all three pieces start from the same base.",
         ],
       },
       {
         heading: "How many baby shower favor boxes to order and what they cost",
         body: [
-          "Order one favor box per confirmed guest and add a 10% margin. The margin covers an unlisted companion, someone taking one for a person who couldn't attend, and a damaged piece. That's the 1.1-per-guest rule used by an event favor calculator for adults.",
+          "Order one favor box per confirmed guest and add a 10% margin. The margin covers an unlisted companion, someone taking one for a person who couldn't attend, and a damaged piece. This 1.1-per-guest rule is a general planning reference.",
           `Example: with 40 confirmed guests, 40 times 1.1 makes 44 favor boxes. For the first 100 pieces, 44 boxes cost $${priceOf("dulceros-personalizados", 44)} MXN. The minimum is 10 pieces: 10 boxes cost $${priceOf("dulceros-personalizados", 10)} MXN and 50 cost $${priceOf("dulceros-personalizados", 50)} MXN. Above 100 pieces, wholesale pricing is quoted on WhatsApp.`,
           `Vinyl stickers have a minimum of 40 pieces, which cost $${priceOf("stickers-vinil-impermeable", 40)} MXN. Once your confirmed guest list is final, use the calculation above for the boxes and decide how many stickers to add.`,
           "To compare ideas for other celebrations, see the [social event favor box guide](/en/blog/wedding-quinceanera-baby-shower-favor-boxes).",
@@ -764,7 +762,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "When to order baby shower favors",
         body: [
           `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days from approval of the digital proof, plus ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} business days for national shipping or ${PICKUP_EXTRA_DAYS} business day for pickup at Casa Blanca in Guadalajara. Order with time to spare to decide on the name and theme and review the proof.`,
-          "As a general reference, the checklist guide suggests starting to plan about 8 weeks ahead, sending invitations about 4 weeks ahead and setting the RSVP deadline about 2 weeks ahead. It also suggests buying favor wrapping and nonperishable items about 2 weeks ahead. You can use that schedule and add the production time above.",
+          "As a general reference, baby shower guides suggest starting to plan about 8 weeks ahead, sending invitations about 4 weeks ahead and setting the RSVP deadline about 2 weeks ahead. They also suggest buying favor wrapping and nonperishable items about 2 weeks ahead. You can use that schedule and add the production time above.",
           "Another baby shower guide also recommends organizing the event several weeks in advance. For stickers and temporary tattoos, share the baby shower date and quantity on WhatsApp and we'll confirm the schedule before you order.",
         ],
       },
@@ -778,26 +776,18 @@ export const blogPostsEn: BlogPost[] = [
     ],
     relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
     relatedBlogSlugs: [BLOG_SLUG_EN["dulceros-para-eventos-sociales-boda-xv-baby-shower"], BLOG_SLUG_EN["que-poner-en-un-dulcero"]],
-    sources: [
-      { label: "Baby shower checklist", url: "https://visu.network/es/articulos/checklist-para-baby-shower/" },
-      { label: "Wedding favors guests keep in 2026", url: "https://www.cronica.com.mx/tendencias/2026/09/04/dile-adios-a-los-recuerdos-de-boda-que-terminan-en-la-basura-esto-es-lo-que-si-se-quedan-tus-invitados-en-2026/" },
-      { label: "Gifts and favors per guest calculator", url: "https://hacecuentas.com/calculadora-regalos-invitado-souvenir" },
-      { label: "Baby shower guest gift ideas", url: "https://www.guiainfantil.com/bebes/canastilla-ajuar/decoracion-e-ideas-para-regalar-a-los-invitados-en-un-baby-shower/" },
-      { label: "Baby shower favor ideas", url: "https://www.mercadolibre.com.pe/blog/tr/ideas-recuerdo-baby-shower" },
-      { label: "Baby shower label templates", url: "https://www.canva.com/es_mx/crear/etiquetas/baby-shower/" },
-    ],
     faq: [
       { q: "What can I give baby shower guests besides candy?", a: "At Yume you can choose a personalized favor box, a vinyl sticker with your party design or a custom temporary tattoo, on their own or combined with the same design." },
       { q: "What favors appear in shopping guides?", a: "One shopping guide lists bags of candy, handmade soaps, scented items and personalized pencils. Another guide adds succulents, candles, bookmarks, instant photos and mugs with the baby's name." },
       { q: "Can I combine a favor box with a sticker?", a: "Yes. You can repeat the same design on both. Favor boxes start at 10 pieces and vinyl stickers at 40." },
-      { q: "What makes a good baby shower favor?", a: "According to a baby shower checklist guide, it should be small, the same for each guest, placed near the exit and easy to take home. Examples include something edible, a plant, a candle or a packet of seeds." },
+      { q: "What makes a good baby shower favor?", a: "According to baby shower guides, it should be small, the same for each guest, placed near the exit and easy to take home. Examples include something edible, a plant, a candle or a packet of seeds." },
       { q: "Do the favor boxes include candy?", a: "No. The box arrives assembled and empty, ready to fill with the candy or details you choose." },
       { q: "What can I put inside a baby shower favor box?", a: "A Spanish-language baby shower guide suggests decorated cookies, chocolates and candy in packaging that reflects the party theme." },
       { q: "How many favor boxes should I order if 60 guests confirm?", a: "Using the rule of 1.1 per guest, that's 66 boxes: one per person plus a 10% margin." },
       { q: "What is the minimum order?", a: "The minimum for personalized favor boxes is 10 pieces. For vinyl stickers, the minimum is 40 pieces." },
       { q: "Can I see the design before production?", a: "Yes. We send you a digital proof before production, and nothing is produced until you approve it." },
       { q: "How long do favor boxes take to arrive?", a: `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after proof approval, plus ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} days for national shipping, or ${PICKUP_EXTRA_DAYS} business day if you pick up at a Casa Blanca branch in Guadalajara.` },
-      { q: "How far ahead should I start planning the baby shower?", a: "A baby shower checklist guide suggests starting about 8 weeks ahead, sending invitations about 4 weeks ahead and closing RSVPs about 2 weeks ahead. For the personalized favor, add production and shipping time." },
+      { q: "How far ahead should I start planning the baby shower?", a: "Baby shower guides suggest starting about 8 weeks ahead, sending invitations about 4 weeks ahead and closing RSVPs about 2 weeks ahead. For the personalized favor, add production and shipping time." },
     ],
   },
   {
@@ -4471,7 +4461,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "Budget per person: team and client company posada favors",
         body: [
-          "As a reference, the Pluxee guide, a gift card provider, suggests per person: $300 to $700 MXN for operational or large-group staff, $700 to $1,500 for middle managers and over $1,500 for executives or key clients. It is a commercial guide, not a rule, and it helps you split your list.",
+          "As a reference, an industry guide suggests per person: $300 to $700 MXN for operational or large-group staff, $700 to $1,500 for middle managers and over $1,500 for executives or key clients. It is a commercial guide, not a rule, and it helps you split your list.",
           "With that reference, the list sorts itself out. For the whole team, think of a uniform favor with each person's name or the team name, such as a personalized candy box. For key clients, a piece with more design and your logo fits there.",
           "The price of our pieces depends on the product and the quantity, and it appears on each page: see the [personalized candy box](/en/products) or [stickers with your logo](/en/products) for the current price. If your list mixes team and clients, message us on WhatsApp and we help you quote both groups.",
         ],
@@ -4494,25 +4484,25 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "Favors for clients: what to consider before gifting",
         body: [
-          "For clients, choose a favor tied to your brand and the event, not an individual gift. According to Pluxee and ContadorMX, gifts to clients in general are not deductible, except those tied to selling products or made for advertising. Check with your accountant before deciding.",
+          "For clients, choose a favor tied to your brand and the event, not an individual gift. According to external tax guides, gifts to clients in general are not deductible, except those tied to selling products or made for advertising. Check with your accountant before deciding.",
           "A candy box with your logo and the posada name, or [stickers with your logo](/en/products), are brand favors your clients take home from the event. This does not promise they are deductible: individual gifts usually face tax restrictions, and your accountant validates each case.",
-          "ContadorMX also recommends keeping a delivery record signed or stamped by the person who receives the gift. Ask your accountant whether it suits your case.",
+          "An external tax guide also recommends keeping a delivery record signed or stamped by the person who receives the gift. Ask your accountant whether it suits your case.",
         ],
       },
       {
         heading: "Count back from the date: when to order your posada favors",
         body: [
           "To get your favors on time, count back from the date of your posada: first delivery, then production, then approval of the digital proof, and at the start the design. That shows you when to write to us, instead of everything piling up in December.",
-          "Pluxee recommends planning gifts several weeks before delivery, especially with personalization, volume or shipments to several locations. That is why it helps to write to us once you have the date and a rough guest list, and not the week of the posada.",
+          "An industry guide recommends planning gifts several weeks before delivery, especially with personalization, volume or shipments to several locations. That is why it helps to write to us once you have the date and a rough guest list, and not the week of the posada.",
           "Production starts when you approve the digital proof, so that approval is the date that matters most. The estimated delivery date appears on the product page and in the cart.",
-          "We ship across Mexico and, if you are in the Guadalajara metro area, you can pick up at a Casa Blanca branch. For options from Jalisco, see [personalized party favor boxes in Guadalajara](/en/blog/personalized-party-favor-boxes-guadalajara). Message us on WhatsApp with your posada date and we count back with you.",
+          "We ship across Mexico and, if you are in the Guadalajara metro area, you can arrange pickup. For options from Jalisco, see [personalized party favor boxes in Guadalajara](/en/blog/personalized-party-favor-boxes-guadalajara). Message us on WhatsApp with your posada date and we count back with you.",
         ],
       },
       {
         heading: "Invoice and accountant: what to check before quoting",
         body: [
           "Before quoting, check with your accountant whether you need an invoice, because a valid CFDI alone does not guarantee the deduction. You also have to prove the transaction, that the expense is strictly necessary and that payment uses an authorized method. Your accountant decides what applies in your case.",
-          "As a reference, Pluxee lists these proof points: payments over $2,000 MXN by bank transfer, nominative check or card, a CFDI, accounting records and a list of recipients as good practice. It is a provider's guide, not tax advice.",
+          "As a general reference, an external guide lists these proof points: payments over $2,000 MXN by bank transfer, nominative check or card, a CFDI, accounting records and a list of recipients as good practice. It is a provider's guide, not tax advice.",
           "Tell us on WhatsApp how many guests there are, splitting team and clients, and the posada date, and we will quote your favors.",
         ],
       },
@@ -4538,15 +4528,15 @@ export const blogPostsEn: BlogPost[] = [
       },
       {
         q: "Are company posada favors deductible?",
-        a: "There is no general, automatic deduction for posadas or Christmas dinners. It depends on the purpose, the recipients and the documentation. Pluxee and ContadorMX indicate that gifts to clients in general are not deductible. Check with your accountant.",
+        a: "There is no general, automatic deduction for posadas or Christmas dinners. It depends on the purpose, the recipients and the documentation. External tax guides indicate that gifts to clients in general are not deductible. Check with your accountant.",
       },
       {
         q: "How much should I budget per person for a company posada?",
-        a: "As a Pluxee reference: $300 to $700 MXN for operational or large-group staff, $700 to $1,500 for middle managers and over $1,500 for executives or key clients. It is a provider's commercial guide, not a rule.",
+        a: "As a general reference: $300 to $700 MXN for operational or large-group staff, $700 to $1,500 for middle managers and over $1,500 for executives or key clients. It is a provider's commercial guide, not a rule.",
       },
       {
         q: "When should I order my posada favors?",
-        a: "Pluxee recommends planning several weeks ahead, especially with personalization, volume or several locations. Count back from the posada date: delivery, production, digital proof approval and design. The estimated delivery date appears on the product page and in the cart.",
+        a: "An industry guide recommends planning several weeks ahead, especially with personalization, volume or several locations. Count back from the posada date: delivery, production, digital proof approval and design. The estimated delivery date appears on the product page and in the cart.",
       },
       {
         q: "Do the candy boxes come with candy?",
@@ -4558,18 +4548,15 @@ export const blogPostsEn: BlogPost[] = [
       },
       {
         q: "Which receipts should I keep for the posada favors?",
-        a: "According to Pluxee: a CFDI, accounting records, payment by an authorized method (bank transfer, nominative check or card for payments over $2,000 MXN) and a list of recipients as good practice. Your accountant confirms what applies in your case.",
+        a: "As a general reference: a CFDI, accounting records, payment by an authorized method (bank transfer, nominative check or card for payments over $2,000 MXN) and a list of recipients as good practice. Your accountant confirms what applies in your case.",
       },
       {
         q: "Do you ship the favors across Mexico?",
-        a: "Yes, we ship across Mexico. If you are in the Guadalajara metro area, you can pick up at a Casa Blanca branch.",
+        a: "Yes, we ship across Mexico. If you are in the Guadalajara metro area, you can arrange pickup.",
       },
     ],
     sources: [
       { label: "El Contribuyente: deadline to pay the aguinaldo to workers", url: "https://www.elcontribuyente.mx/2022/12/cual-es-la-fecha-limite-para-entregar-el-aguinaldo-a-los-trabajadores/" },
-      { label: "Siempre al Día: deductibility of year-end expenses", url: "https://siemprealdia.co/mexico/fiscal/deducibilidad-de-gastos-de-fin-de-ano/" },
-      { label: "Pluxee: ideal corporate gift guide", url: "https://www.pluxee.mx/blog/guia-regalo-corporativo-ideal/" },
-      { label: "ContadorMX: how to make gifts to employees or clients deductible", url: "https://contadormx.com/como-hacer-deducibles-regalos-a-empleados-o-clientes/" },
       { label: "El Imparcial: can they force me to chip in for my workplace posada?", url: "https://www.elimparcial.com/mexico/2025/12/01/pueden-obligarme-a-cooperar-para-la-posada-de-mi-trabajo-esto-dice-la-lft/" },
     ],
   },
@@ -5184,7 +5171,7 @@ export const blogPostsEn: BlogPost[] = [
         body: [
           "For an adult birthday, choose an understated favor that carries the guest of honor's name and the year, and repeat the same design on every piece. At Yume you can combine candy boxes, vinyl stickers and temporary tattoos for events, all with a digital proof before production.",
           "Many offers for these ages are novelty items: mugs, shirts or temporary tattoos with phrases like '50 and fabulous', or standard templates from online shops. If you are planning a surprise for your mom, dad or partner, think about the whole set before choosing separate pieces.",
-          "A US custom-product blog (Imprint) gives examples such as bottle openers, reusable cups and tote bags with the milestone age. Those are ideas from that market. Here we suggest pieces that Yume does produce and that look good on a party table.",
+          "A custom-product guide gives examples such as bottle openers, reusable cups and tote bags with the milestone age. Those are ideas from that market. Here we suggest pieces that Yume does produce and that look good on a party table.",
         ],
       },
       {
@@ -5206,7 +5193,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "What to personalize: name, year, photo or palette",
         body: [
           "Each piece can carry one or more of these elements: the guest of honor's name, the age they are turning, a photo or the party colors. What matters is repeating the same elements on every piece, so it reads as one set and not as favors from different shops.",
-          "Imprint also suggests including the name, the date or an inside joke, and coordinating colors, typeface and graphics with the invitation and the decor. If you already have the invitation, use it as a reference so everything looks like it belongs to the same party.",
+          "An industry guide also suggests including the name, the date or an inside joke, and coordinating colors, typeface and graphics with the invitation and the decor. If you already have the invitation, use it as a reference so everything looks like it belongs to the same party.",
           "At Yume you can order [personalized candy boxes in Guadalajara](/blog/dulceros-personalizados-guadalajara) (in Spanish) with a name and theme, [custom vinyl stickers](/productos/stickers-vinil-impermeable) with your design or photo, and temporary tattoos for events by quote. Everything comes with a digital proof before production.",
         ],
       },
@@ -5263,12 +5250,10 @@ export const blogPostsEn: BlogPost[] = [
       },
       {
         q: "What should I include for a minimalist design?",
-        a: "According to Imprint, a minimalist style only needs the name and the date. You can add the party colors if you want it to match the invitation.",
+        a: "According to an industry guide, a minimalist style only needs the name and the date. You can add the party colors if you want it to match the invitation.",
       },
     ],
-    sources: [
-      { label: "Imprint: Custom birthday party favors ideas", url: "https://imprint.com/blog/2026/02/26/custom-birthday-party-favors-ideas/" },
-    ],
+    sources: [],
   },
   {
     slug: "wedding-candy-boxes-for-kids",
@@ -5575,8 +5560,8 @@ export const blogPostsEn: BlogPost[] = [
         heading: "What is a personalized surprise gift with a candy box?",
         body: [
           "A personalized candy box (dulcero) is a lunch box style container with a handle that carries the name and theme you choose and arrives assembled and empty for you to fill. It works as a surprise gift for birthdays, anniversaries and weddings, and also as a table detail for an event.",
-          "A personalized surprise gift works when it carries something that only makes sense for that person: a name, a theme or a detail they love. In Mexico, according to YouGov, 56% of people buying a gift for their mom choose food and drinks and 37% choose something personalized. A candy box brings both together.",
-          "A gift guide for mom from Odin Lake separates personalized gifts (albums, jewelry with names or dates) from food gifts, where personalization is limited to a handwritten note and the wrapping. A candy box with a name and a theme joins both ideas: it is food and it is a design made for one person.",
+          "A personalized surprise gift works when it carries something that only makes sense for that person: a name, a theme or a detail they love. In Mexico, according to a survey, 56% of people buying a gift for their mom choose food and drinks and 37% choose something personalized. A candy box brings both together.",
+          "A gift guide for mom separates personalized gifts (albums, jewelry with names or dates) from food gifts, where personalization is limited to a handwritten note and the wrapping. A candy box with a name and a theme joins both ideas: it is food and it is a design made for one person.",
         ],
       },
       {
@@ -5614,7 +5599,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "Regional Mexican sweets: a detail with history",
         body: [
           "Traditional Mexican sweets have pre-Hispanic origins: they were sweetened with maguey honey, honey ants, corn cane and pipiola bee honey, and later piloncillo replaced them. That is why traditional candy as filling gives the candy box some history, beyond the flavor.",
-          "According to BBVA, each sweet is tied to a region: muéganos from Huamantla, Tlaxcala; alegrías from Xochimilco, Mexico City; cocadas from Veracruz; camote from Puebla; glorias from Linares, Nuevo León; jamoncillo from Axochiapan, Morelos; and dulce de leche or manjar from Celaya, Guanajuato. If the person comes from one of those places, you can fill the candy box with sweets from their state.",
+          "According to a regional guide, each sweet is tied to a region: muéganos from Huamantla, Tlaxcala; alegrías from Xochimilco, Mexico City; cocadas from Veracruz; camote from Puebla; glorias from Linares, Nuevo León; jamoncillo from Axochiapan, Morelos; and dulce de leche or manjar from Celaya, Guanajuato. If the person comes from one of those places, you can fill the candy box with sweets from their state.",
           "The same article presents artisanal candy as a carrier of memories, experiences and emotions, which is exactly the idea of a surprise gift: the filling reminds the recipient of something.",
         ],
       },
@@ -5629,7 +5614,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "What to put inside the gift candy box",
         body: [
           "The candy box arrives assembled and empty, so you decide what goes inside, and that is where the surprise is. Pick the recipient's favorite sweets: chocolates, cookies, gummies or traditional Mexican candy. What matters is that the filling feels like that person and the design of the candy box does the rest.",
-          "On budget: in the same YouGov survey, the most common spending range for a gift for mom in Mexico is $201 to $1,000 pesos (58%), and 9% spend between $1,001 and $1,900. Think of this gift as a thoughtful mid-range detail, where the design and what goes inside matter more than the lowest price.",
+          "On budget: in the same survey, the most common spending range for a gift for mom in Mexico is $201 to $1,000 pesos (58%), and 9% spend between $1,001 and $1,900. Think of this gift as a thoughtful mid-range detail, where the design and what goes inside matter more than the lowest price.",
         ],
       },
       {
@@ -5650,9 +5635,6 @@ export const blogPostsEn: BlogPost[] = [
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable"],
     sources: [
-      { label: "Emprendedor: Mother's Day 2026 gifts and Mexicans' budgets, YouGov (in Spanish)", url: "https://emprendedor.com/dia-madres-2026-regalos-presupuesto-mexicanos/" },
-      { label: "Odin Lake: meaningful gifts for mom (in Spanish)", url: "https://odinlake.com/es/blogs/all-blogs/thoughtful-gifts-to-make-mom-feel-special-on-mothers-day" },
-      { label: "BBVA: traditional sweets, an artisanal tradition of Mexico (in Spanish)", url: "https://www.bbva.com/es/mx/los-dulces-tipicos-una-tradicion-artesanal-de-mexico/" },
     ],
     faq: [
       {
@@ -5677,7 +5659,7 @@ export const blogPostsEn: BlogPost[] = [
       },
       {
         q: "Where are muéganos and cocadas from?",
-        a: "According to BBVA, muéganos are tied to Huamantla, Tlaxcala, and cocadas to Veracruz. You can use sweets from the honoree's region as filling.",
+        a: "According to a regional guide, muéganos are tied to Huamantla, Tlaxcala, and cocadas to Veracruz. You can use sweets from the honoree's region as filling.",
       },
     ],
   },
@@ -6014,7 +5996,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "When to order wedding favors: reference lead times",
         body: [
           "There is no single lead time. In answers from Australian suppliers, the most common advice is to order 3 to 6 weeks before the wedding, but one asks for at least 12 weeks and another prefers 3 months. These are references from another country, not Mexico: the real lead time depends on your supplier and how much you personalize.",
-          "Another supplier suggests 1 to 3 months depending on whether the piece is personalized or from a catalog. These answers date from 2021 and come from Easy Weddings, an Australian site. Use them to get your bearings, and confirm the lead time with whoever will make your piece.",
+          "Another supplier suggests 1 to 3 months depending on whether the piece is personalized or from a catalog. These answers come from an Australian industry reference published in 2021. Use them to get your bearings, and confirm the lead time with whoever will make your piece.",
         ],
         table: {
           headers: ["Stage", "When", "What you do"],
@@ -6093,11 +6075,8 @@ export const blogPostsEn: BlogPost[] = [
       },
       {
         q: "Are the lead times in this guide Yume's?",
-        a: "No. They are references from Australian suppliers, published by Easy Weddings with answers from 2021. The lead time for your piece depends on the product: ask us on WhatsApp with your wedding date.",
+        a: "No. They are references from Australian suppliers, published in an industry guide with answers from 2021. The lead time for your piece depends on the product: ask us on WhatsApp with your wedding date.",
       },
-    ],
-    sources: [
-      { label: "Easy Weddings: Bomboniere lead time", url: "https://easyweddings.com.au/Bomboniere/advice/bomboniere-lead-time" },
     ],
   },
   {
@@ -6115,14 +6094,14 @@ export const blogPostsEn: BlogPost[] = [
         heading: "How much do wedding favors cost per guest in Mexico?",
         body: [
           "There is no single price per guest, because it depends on the piece, the personalization and the packaging. We did not find a reliable national average of what is spent on favors in Mexico, so the most useful step is to calculate your own limit per guest with a simple method instead of copying someone else's number.",
-          "For context, the Wedding Industry Report México 2024, cited by Cronoshare, puts an average wedding at about $155,000 MXN for 146 guests, close to $1,062 MXN per guest for the whole event. That is the cost of the full wedding, not of the favor.",
+          "For context, a 2024 estimate puts an average wedding in Mexico at about $155,000 MXN for 146 guests, close to $1,062 MXN per guest for the whole event. That is the cost of the full wedding, not of the favor.",
         ],
       },
       {
         heading: "Step 1: set a limit from the spend per guest",
         body: [
           "Divide the total cost of your wedding by your guest count to get the spend per guest. That number is your reference ceiling: the favor is only one part of that total. Decide what share you want to give it before asking for quotes, because without a limit per guest any quote looks reasonable.",
-          "Using the Wedding Industry Report México 2024 figure, about $1,062 MXN per guest, a hypothetical $50 favor would be close to 5% of that spend. It is only an illustration, not a recommendation.",
+          "Using the 2024 estimate of about $1,062 MXN per guest, a hypothetical $50 favor would be close to 5% of that spend. It is only an illustration, not a recommendation.",
         ],
       },
       {
@@ -6193,9 +6172,7 @@ export const blogPostsEn: BlogPost[] = [
     ],
     relatedProductSlugs: ["personalized-party-favor-boxes", "stickers-vinil-impermeable"],
     relatedBlogSlugs: ["personalized-party-favor-boxes-guadalajara", "what-to-put-in-a-party-favor-box", "how-many-party-favors-to-order-per-event", "personalized-wedding-favors-with-name-and-date", "when-to-order-wedding-favors"],
-    sources: [
-      { label: "Cronoshare: how much a wedding costs in Mexico", url: "https://www.cronoshare.com.mx/cuanto-cuesta/boda-mexico" },
-    ],
+    sources: [],
     faq: [
       {
         q: "Is there an average spend on wedding favors in Mexico?",
@@ -6253,20 +6230,20 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "Quantity: how to count it and how much buffer to leave",
         body: [
-          "Give the confirmed quantity and say how you counted it: per guest, per couple or per table. On the buffer, Zola suggests a small margin when the favor is inexpensive and, when it is costly or personalized, limiting extras to what the budget can hold. Zola gives no fixed number.",
-          "Zola lists as reasons for extras pieces damaged, broken or lost in shipping (worse for destination weddings), fragile pieces, guests added at the last minute and guests who go from no to yes. Some couples accept that a few guests go without a favor.",
+          "Give the confirmed quantity and say how you counted it: per guest, per couple or per table. On the buffer, a general guideline suggests a small margin when the favor is inexpensive and, when it is costly or personalized, limiting extras to what the budget can hold. There is no fixed number.",
+          "Reasons for extras include pieces damaged, broken or lost in shipping (worse for destination weddings), fragile pieces, guests added at the last minute and guests who go from no to yes. Some couples accept that a few guests go without a favor.",
           "If your order is [personalized party favor boxes](/en/products/personalized-party-favor-boxes), the minimum order is 10 pieces. For other calculations by event type, see [how many favors to order](/en/blog/how-many-party-favors-to-order-per-event).",
         ],
       },
       {
         heading: "Timeline: what to order first and what waits for the final count",
         body: [
-          "Order the generic pieces first, the ones without guest names, and leave for last the pieces that depend on the final count and the seating chart. As a general reference, Paperlust proposes an order by weeks before the event. It is a US stationery blog, so use it as a guide, not a rule.",
-          "Paperlust suggests ordering menus 8 to 10 weeks before the event, ceremony programs and signs 6 to 8 weeks before, and place cards and table numbers 4 to 6 weeks before. All of them are used on the day of the event. It also proposes closing RSVPs 4 to 6 weeks before.",
+          "Order the generic pieces first, the ones without guest names, and leave for last the pieces that depend on the final count and the seating chart. As a general reference, a general timeline suggests an order by weeks before the event.",
+          "A general timeline suggests ordering menus 8 to 10 weeks before the event, ceremony programs and signs 6 to 8 weeks before, and place cards and table numbers 4 to 6 weeks before. All of them are used on the day of the event. The same timeline suggests closing RSVPs 4 to 6 weeks before.",
           "Yume's own lead times are the ones that apply to your order: confirm them with us when you request a quote on WhatsApp. For menus, see [custom wedding menus](/en/blog/custom-wedding-menus). For invitations, read [how to order event invitations](/en/blog/how-to-order-custom-event-invitations). For keepsakes, see [when to order wedding favors](/en/blog/when-to-order-wedding-favors).",
         ],
         table: {
-          headers: ["Piece", "Paperlust reference"],
+          headers: ["Piece", "General reference"],
           rows: [
             ["Menus", "8 to 10 weeks before"],
             ["Ceremony programs and signs", "6 to 8 weeks before"],
@@ -6278,8 +6255,8 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "Generic pieces and named pieces: how to split them",
         body: [
-          "Split your order into two groups. Generic pieces, like signs, can be ordered early. Pieces with names, like place cards, depend on the final count and the seating chart. Paperlust notes that caterers usually ask for the confirmed guest count 2 to 4 weeks before the event.",
-          "Paperlust recommends closing the seating chart before ordering place cards. For a wedding, see [how many candy boxes to order for a wedding](/en/blog/how-many-candy-boxes-to-order-for-a-wedding) to work out the quantity from your count.",
+          "Split your order into two groups. Generic pieces, like signs, can be ordered early. Pieces with names, like place cards, depend on the final count and the seating chart. As a general reference, caterers may ask for the confirmed guest count 2 to 4 weeks before the event.",
+          "Close the seating chart before ordering place cards. For a wedding, see [how many candy boxes to order for a wedding](/en/blog/how-many-candy-boxes-to-order-for-a-wedding) to work out the quantity from your count.",
         ],
       },
       {
@@ -6300,7 +6277,6 @@ export const blogPostsEn: BlogPost[] = [
         heading: "Digital proof and the deadline to lock the quantity",
         body: [
           "Before production we send a digital proof, and nothing is produced until you approve it. Decide who approves it and ask the supplier until when you can change the quantity and what can be adjusted after approval. Those rules depend on each supplier, so keep them in writing.",
-          "As a reference, Paperlust says its digital proof arrives in 1 to 2 business days, with two rounds of edits included, and estimates 4 to 6 weeks from brief to delivery.",
           "To see how the review works step by step, read about the [digital proof for planners](/en/blog/digital-proof-event-order-planners).",
         ],
       },
@@ -6308,27 +6284,17 @@ export const blogPostsEn: BlogPost[] = [
         heading: "Delivery and direct contact",
         body: [
           "Tell the supplier where and when you need the pieces: the event date is not the delivery date. Give the city and address, and whether you receive them in Guadalajara or in another city in the country. Leave a direct WhatsApp contact, of whoever decides, to settle questions on the spot.",
-          "As a reference, Paperlust recommends delivering the stationery to the event venue during the last week.",
+          "As a reference, a general guideline recommends delivering the stationery to the event venue during the last week.",
           "If you organize events often, visit the [page for planners](/en/planners) and request a quote on WhatsApp with your details at hand.",
         ],
       },
     ],
     relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
     relatedBlogSlugs: ["guide-for-planners-working-with-custom-favors-supplier", "digital-proof-event-order-planners", "how-many-party-favors-to-order-per-event", "when-to-order-wedding-favors"],
-    sources: [
-      {
-        label: "Zola: Should you buy extra wedding favors?",
-        url: "https://www.zola.com/expert-advice/should-you-buy-extra-wedding-favors",
-      },
-      {
-        label: "Paperlust: Wedding planning checklist",
-        url: "https://paperlust.co/blog/wedding-planning-checklist/",
-      },
-    ],
     faq: [
       {
         q: "How many extra pieces should I order?",
-        a: "Zola gives no fixed number. It recommends a small buffer when the favor is inexpensive (it mentions about 10 extra) and, when it is costly or personalized, limiting extras to what the budget can hold.",
+        a: "There is no fixed number. A general guideline suggests a small buffer when the favor is inexpensive (for example, about 10 extra) and, when it is costly or personalized, limiting extras to what the budget can hold.",
       },
       {
         q: "What is the minimum order for personalized favor boxes?",
@@ -6377,7 +6343,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "How many custom details to order for a client event",
         body: [
           "A practical rule: order for the confirmed guests plus a few extra pieces for surprise guests, sponsors and your team. This is our own rule, not a figure from any source. Do not subtract the expected no-show: it tells you how many pieces will likely be left over, because it varies a lot between events.",
-          "The Pheedloop report on more than 1,070 in-person events with check-in gives a median no-show of about 20% and an average of 29%. In free events the median rises to about 28%, versus about 17% in paid ones. An invitation-only event is usually free for the guest.",
+          "A report on more than 1,070 in-person events with check-in gives a median no-show of about 20% and an average of 29%. In free events the median rises to about 28%, versus about 17% in paid ones. An invitation-only event is usually free for the guest.",
           "With small groups, absence weighs more. The report does not say how many events fall in each size range, so treat it as guidance.",
           "Example with the 32% median for 10 to 49 expected guests: with 40 confirmed, about 27 people would arrive and about 13 pieces would be left over if you order for all 40. It is only a calculation example, not a prediction.",
           "This data comes from general in-person events, not from Mexico or corporate gifts. No-show is calculated as 1 minus check-ins divided by expected, and it includes speakers and unregistered people. Use it as a reference and rely on the history of your own events.",
@@ -6423,7 +6389,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "Client gifts and tax deductibility: what to confirm",
         body: [
-          "Whether a corporate gift is tax deductible in Mexico depends on who receives it, how it is delivered and its tax treatment. Pluxee Mexico notes this in its corporate gift guide. We give no rules or amounts here: confirm your case with your accountant before setting a budget.",
+          "Whether a corporate gift is tax deductible in Mexico depends on who receives it, how it is delivered and its tax treatment. We give no rules or amounts here: confirm your case with your accountant before setting a budget.",
           "This is not tax advice; it is only a reminder to check before you decide.",
         ],
       },
@@ -6436,11 +6402,6 @@ export const blogPostsEn: BlogPost[] = [
       "corporate-event-favor-boxes-with-logo",
       "digital-proof-event-order-planners",
       "planner-checklist-custom-favors-order-event",
-    ],
-    sources: [
-      { label: "Pheedloop: Event Data Lab Report 5 (no-show at in-person events)", url: "https://pheedloop.com/blog/event-data-lab-report-5" },
-      { label: "ASI: promotional products study (2012)", url: "https://members.asicentral.com/news/press/press-releases/november-2012/new-asi-study-promo-products-deliver-bigger-better-bang-for-buck/" },
-      { label: "Pluxee Mexico: ideal corporate gift guide", url: "https://www.pluxee.mx/blog/guia-regalo-corporativo-ideal/" },
     ],
     faq: [
       {
@@ -6465,7 +6426,7 @@ export const blogPostsEn: BlogPost[] = [
       },
       {
         q: "Are the no-show figures from Mexico?",
-        a: "No. They come from a Pheedloop report on general in-person events, not from Mexico or corporate gifts. Use them only as a reference.",
+        a: "No. They come from an industry report on general in-person events, not from Mexico or corporate gifts. Use them only as a reference.",
       },
     ],
   },
@@ -6570,14 +6531,14 @@ export const blogPostsEn: BlogPost[] = [
         heading: "Checkout: next to the card terminal",
         body: [
           "Checkout is one of the spots that QR vendor guides single out as top performing. Place the plate next to the card terminal, at eye level, facing the customer and with nothing covering it. One of those guides suggests a holder slightly above the card reader.",
-          "That guide cites a figure of 15 to 20% for the payment area (attributed to MapLift). Treat it as a rough reference: it comes from a QR vendor, not an independent study, and your result depends on your customer flow. A QR hidden behind the register or below counter level does not get scanned.",
+          "As a general reference, a guide cites a figure of 15 to 20% for the payment area. Treat it as a rough reference: it comes from a QR vendor, not an independent study, and your result depends on your customer flow. A QR hidden behind the register or below counter level does not get scanned.",
         ],
       },
       {
         heading: "Table: in view during the visit",
         body: [
           "At restaurants and cafes, a table plate works when it sits in the line of sight of whoever is seated, without getting in the way of conversation or food. If the customer has to move plates or glasses to see it, it is in the wrong spot. For tables, a free-standing stand means nothing gets stuck down.",
-          "The same guide attributes 12% to table holders at restaurants (attributed to MapLift), also a rough reference. If your business is a restaurant, see our guide to the [Google review plate for restaurants](/en/blog/google-review-plate-for-restaurants).",
+          "As a general reference, the same guide attributes 12% to table holders at restaurants, also a rough figure. If your business is a restaurant, see our guide to the [Google review plate for restaurants](/en/blog/google-review-plate-for-restaurants).",
         ],
       },
       {
@@ -6620,7 +6581,6 @@ export const blogPostsEn: BlogPost[] = [
     relatedBlogSlugs: ["how-to-use-your-yume-google-review-plate", "google-review-plate-for-restaurants", "google-review-plate-for-medical-practices", "nfc-plate-vs-printed-qr-code-for-reviews"],
     sources: [
       { label: "Google: contribution content policy (reviews)", url: "https://support.google.com/contributionpolicy/answer/7400114?hl=es" },
-      { label: "Visu: where to put the review QR (a QR vendor's guide, in Spanish)", url: "https://visu.network/es/articulos/donde-poner-el-qr-de-resenas/" },
     ],
     faq: [
       {
@@ -6629,7 +6589,7 @@ export const blogPostsEn: BlogPost[] = [
       },
       {
         q: "Are the performance figures by location reliable?",
-        a: "No. They come from a QR vendor's guide that attributes them to MapLift, not from an independent study. Use them only as a reference.",
+        a: "No. They come from a QR vendor's guide, not from an independent study. Use them only as a reference.",
       },
       {
         q: "Does Yume's plate need a subscription?",

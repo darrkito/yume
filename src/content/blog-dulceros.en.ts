@@ -1397,8 +1397,8 @@ export const dulceroPostsEn: BlogPost[] = [
       {
         heading: "How many party favors to order per event: the base rule",
         body: [
-          "Start from confirmed guests and add a small margin. The Hacecuentas calculator uses 1.1 favors per guest at adult events, that is 10% extra, to cover an unlisted plus-one or a piece that gets damaged. For kids' birthdays it counts 1 per child and you add two or three by hand.",
-          "That calculator covers only two cases: adult events and kids' birthdays. For weddings, quinceañeras, baptisms, baby showers and company events we found no verifiable rule in open sources, so we won't give you an invented figure. In those cases the decision is yours: which unit you count and how much margin gives you peace of mind.",
+          "Start from confirmed guests and add a small margin. One general reference is 1.1 favors per guest at adult events, that is 10% extra, to cover an unlisted plus-one or a piece that gets damaged. For kids' birthdays, another reference is 1 per child plus two or three extra.",
+          "Those references cover only two cases: adult events and kids' birthdays. For weddings, quinceañeras, baptisms, baby showers and company events we found no verifiable rule in open sources, so we won't give you an invented figure. In those cases the decision is yours: which unit you count and how much margin gives you peace of mind.",
           "The 10% margin has an easy logic: it covers someone who arrives without notice or a piece that doesn't turn out as expected. If your list is already closed and confirmed, the margin can be small. If answers are still missing, it is better to have them before you calculate.",
         ],
       },
@@ -1413,19 +1413,19 @@ export const dulceroPostsEn: BlogPost[] = [
       {
         heading: "Table by party type: how to count at each event",
         body: [
-          "The table shows which unit makes sense to count at each type of event. A margin figure is given only where an open source provides one: adults and kids' birthdays. For weddings, quinceañeras, baptisms, baby showers and company events, you agree the unit and margin with your client before production.",
+          "The table shows which unit makes sense to count at each type of event. A general margin reference is given for adults and kids' birthdays. For weddings, quinceañeras, baptisms, baby showers and company events, you agree the unit and margin with your client before production.",
           "At a kids' birthday the unit is the child. With 25 confirmed children, the reference gives 25 plus two or three, that is between 27 and 28 pieces.",
           "At a wedding, a quinceañera or a baptism, whole families often attend. So the question is not just how many people come, but whether one keepsake covers the whole family or each person gets their own. That decision depends on the style of the event and the budget, and you make it with your client.",
         ],
         table: {
           headers: ["Party type", "How to count", "Reference margin"],
           rows: [
-            ["Wedding", "Per guest, couple or family, as agreed with your client", "No verifiable rule. If you count per adult guest, reference of 1.1 (Hacecuentas)"],
-            ["Quinceañera", "Per guest, couple or family, as agreed with your client", "No verifiable rule. If you count per adult guest, reference of 1.1 (Hacecuentas)"],
-            ["Baptism", "Per guest or per family, depending on the event", "No verifiable rule. If you count per adult guest, reference of 1.1 (Hacecuentas)"],
-            ["Baby shower", "Per guest or per family, depending on the event", "No verifiable rule. If you count per adult guest, reference of 1.1 (Hacecuentas)"],
-            ["Kids' birthday", "Per child", "1 per child plus 2 or 3 extra by hand (Hacecuentas)"],
-            ["Company event", "Per confirmed attendee", "No verifiable rule. If you count per adult attendee, reference of 1.1 (Hacecuentas)"],
+            ["Wedding", "Per guest, couple or family, as agreed with your client", "No verifiable rule. If you count per adult guest, reference of 1.1"],
+            ["Quinceañera", "Per guest, couple or family, as agreed with your client", "No verifiable rule. If you count per adult guest, reference of 1.1"],
+            ["Baptism", "Per guest or per family, depending on the event", "No verifiable rule. If you count per adult guest, reference of 1.1"],
+            ["Baby shower", "Per guest or per family, depending on the event", "No verifiable rule. If you count per adult guest, reference of 1.1"],
+            ["Kids' birthday", "Per child", "1 per child plus 2 or 3 extra by hand"],
+            ["Company event", "Per confirmed attendee", "No verifiable rule. If you count per adult attendee, reference of 1.1"],
           ],
         },
       },
@@ -1462,13 +1462,10 @@ export const dulceroPostsEn: BlogPost[] = [
     ],
     relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
     relatedBlogSlugs: [en("que-poner-en-un-dulcero"), en("dulceros-personalizados-guadalajara"), en("dulceros-navidenos-personalizados")],
-    sources: [
-      { label: "Hacecuentas: guest gift calculator (party favors)", url: "https://hacecuentas.com/calculadora-regalos-invitado-souvenir" },
-    ],
     faq: [
       {
         q: "How many party favors should I order per guest?",
-        a: "Hacecuentas uses 1.1 per guest at adult events, that is 10% extra. For kids' birthdays it uses 1 per child and recommends adding 2 or 3 by hand.",
+        a: "One general reference is 1.1 per guest at adult events, that is 10% extra. For kids' birthdays, another reference is 1 per child plus 2 or 3 extra.",
       },
       {
         q: "Do I count confirmed guests or the total list?",
