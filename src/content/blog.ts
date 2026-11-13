@@ -2906,7 +2906,7 @@ export const blogPosts: BlogPost[] = [
       "Placa NFC vs. código QR impreso para pedir reseñas de Google: cuándo conviene cada uno, sus límites y por qué lo mejor es una pieza con ambos.",
     category: "Guías",
     publishedAt: "2026-09-15",
-    modifiedAt: "2026-10-29",
+    modifiedAt: "2026-11-13",
     intro:
       "Imprimir un código QR en una hoja y ponerlo en el mostrador es gratis y cualquiera lo puede hacer. Entonces, ¿por qué considerar una placa con NFC? La respuesta no es que uno funcione y el otro no: los dos llevan a la misma página de reseñas. La diferencia está en la comodidad, en los teléfonos donde funciona cada uno, en la imagen que proyecta la pieza y en las reglas de Google que aplican a ambos.",
     sections: [
@@ -2917,6 +2917,14 @@ export const blogPosts: BlogPost[] = [
           "Un QR impreso es el medio más conocido: casi todo el mundo sabe escanearlo y solo necesita una cámara. Para que se lea bien, debe ser lo bastante grande y tener espacio libre alrededor. El NFC agrega un solo toque, sin apuntar ni enfocar, pero depende de que el cliente tenga NFC activado, y la ubicación y el material de la superficie pueden afectar la lectura.",
           "Estos puntos vienen de una guía de tarjetas de reseña de un proveedor, no de una prueba independiente. Por eso no damos porcentajes ni listas exactas de compatibilidad: depende del modelo y de los ajustes de cada teléfono.",
         ],
+        table: {
+          headers: ["Aspecto", "Código QR", "NFC"],
+          rows: [
+            ["Cómo se usa", "Abre la cámara y escanea", "Acerca el teléfono y toca"],
+            ["Qué necesita el teléfono", "Una cámara", "NFC activado"],
+            ["Qué cuidar", "Tamaño suficiente y espacio libre alrededor", "La ubicación y la superficie, que pueden afectar la lectura"],
+          ],
+        },
       },
       {
         heading: "Cuándo conviene el QR y cuándo el NFC",
@@ -2930,8 +2938,15 @@ export const blogPosts: BlogPost[] = [
         heading: "Por qué la mejor opción es una placa con NFC y QR",
         body: [
           "La opción más segura es una sola pieza que tenga NFC y QR. Así el cliente que tiene NFC activado toca y el que no lo tiene escanea. Conviene tener ese respaldo y probar con teléfonos comunes antes de comprar en volumen.",
-          "Nuestra [placa de reseñas NFC](/productos/placa-resena-google-nfc) reúne las dos formas de usarla en el mismo objeto, y el [stand de reseñas NFC](/productos/stand-resena-google-nfc) lo hace en versión para colocar sobre una superficie. Ambos se ofrecen en blanco o negro.",
-          "Antes de usarla en tu negocio o en un evento, pruébala con dos o tres teléfonos distintos, el tuyo y el de alguien más. Si quieres ver cómo se configura y se presenta al cliente, revisa la guía para [usar la placa de reseñas](/blog/como-usar-placa-resenas-google-yume).",
+          "Nuestra [placa de reseñas NFC](/productos/placa-resena-google-nfc) reúne las dos formas de usarla en el mismo objeto y lleva adhesivo para fijarla. El [stand de reseñas NFC](/productos/stand-resena-google-nfc) lo hace en versión de pie, sin pegar. Ambos se ofrecen en blanco o negro.",
+          "Antes de usarla en tu negocio o en un evento, pruébala con dos o tres teléfonos distintos, el tuyo y el de alguien más. Si quieres ver cómo se presenta al cliente, revisa la guía para [usar la placa de reseñas](/blog/como-usar-placa-resenas-google-yume).",
+        ],
+      },
+      {
+        heading: "Qué cambia en costo y configuración",
+        body: [
+          "Imprimir un QR en una hoja es gratis, pero tú generas el enlace y lo imprimes. Nuestra placa llega ya programada con el enlace de reseñas de tu negocio y con el QR de respaldo impreso. Se compra desde una pieza, con pago único y sin suscripción ni app.",
+          "Si comparas con placas que cobran mensualidad, mira el análisis de [pago único vs. suscripción](/blog/placas-resenas-google-pago-unico-vs-suscripcion). Y si te preocupa qué teléfonos la leen, la guía de [NFC en iPhone y Android](/blog/placa-nfc-funciona-iphone-android) lo explica con franqueza.",
         ],
       },
       {
@@ -2939,6 +2954,7 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Una hoja con un QR comunica algo distinto que una placa diseñada para verse como parte de la marca o del evento. Para planners, empresas y quienes cuidan cada detalle, el acabado importa. Nuestras placas y stands se ofrecen en blanco o negro, para combinar con el espacio donde se colocan.",
           "Un consultorio, una cafetería, una tienda o la recepción de un salón de eventos ya cuidan su imagen: una pieza que se integra con la decoración se nota más que un aviso suelto. Si organizas eventos, también puede ser un detalle más de la mesa de bienvenida o del módulo de atención a invitados.",
+          "Para elegir el lugar, revisa [dónde poner la placa](/blog/donde-poner-placa-resenas-google).",
         ],
       },
       {
@@ -2946,19 +2962,19 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Google permite pedir reseñas genuinas, pero no ofrecer incentivos a cambio, ni pedir solo reseñas positivas, ni desalentar las negativas. Estas reglas aplican igual a una placa NFC y a un código QR, porque el medio no cambia la política. El texto de la pieza debe ser neutral.",
           "Según la política de contenido de Google Maps, no se debe ofrecer pago, descuentos, bienes o servicios gratis a cambio de una reseña, de modificarla o de quitar una negativa. Tampoco se debe filtrar a quién se le pide la reseña. Por eso la placa no debe decir cosas como 'deja 5 estrellas y te regalamos algo'.",
-          "La política también indica no pedir contenido específico ni presionar al personal para que deje calificaciones en el local. Un texto sencillo como 'Cuéntanos tu experiencia' cumple: invita sin dictar qué escribir.",
+          "La política también indica no pedir contenido específico ni presionar al personal para que deje calificaciones en el local. Un texto sencillo como 'Cuéntanos tu experiencia' cumple: invita sin dictar qué escribir. Para más detalle, lee [qué sí y qué no pedir](/blog/que-si-y-que-no-pedir-resenas-google-politicas).",
         ],
       },
       {
         heading: "Qué esperar: una facilidad, no una garantía de más reseñas",
         body: [
-          "Ninguna de las dos opciones asegura más reseñas por sí sola. No hay una cifra confiable que lo respalde: una pieza bien ubicada y una petición amable pueden ayudar, nada más. Úsalas como facilitador, no como garantía.",
-          "Lo que sí puedes controlar es que la pieza esté a la vista, que funcione al probarla y que la petición sea amable y honesta. Para ideas sobre cómo pedirlas sin salirte de las reglas, lee [cómo conseguir más reseñas de Google](/blog/como-conseguir-mas-resenas-de-google-nfc-qr).",
+          "Ninguna de las dos opciones asegura más reseñas por sí sola. No hay una cifra confiable que lo respalde: una pieza bien ubicada y una petición amable pueden ayudar, nada más. Úsalas como facilitador, no como garantía, y revisa que la pieza esté a la vista.",
+          "Lo que sí puedes controlar es que funcione al probarla y que la petición sea amable y honesta. Para ideas sobre cómo pedirlas sin salirte de las reglas, lee [cómo conseguir más reseñas de Google](/blog/como-conseguir-mas-resenas-de-google-nfc-qr).",
         ],
       },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
-    relatedBlogSlugs: ["placas-resenas-google-pago-unico-vs-suscripcion", "como-conseguir-mas-resenas-de-google-nfc-qr", "como-usar-placa-resenas-google-yume", "como-configurar-perfil-de-google-y-pedir-resenas", "placa-resenas-google-para-consultorios", "placa-resenas-google-para-restaurantes", "placa-resenas-google-para-salones-esteticas-y-barberias", "placa-resenas-google-para-planners-y-eventos", "como-hacer-una-encuesta-de-satisfaccion-del-cliente"],
+    relatedBlogSlugs: ["placas-resenas-google-pago-unico-vs-suscripcion", "placa-nfc-funciona-iphone-android", "donde-poner-placa-resenas-google", "que-si-y-que-no-pedir-resenas-google-politicas", "como-conseguir-mas-resenas-de-google-nfc-qr", "como-usar-placa-resenas-google-yume", "como-configurar-perfil-de-google-y-pedir-resenas", "placa-resenas-google-para-consultorios", "placa-resenas-google-para-restaurantes", "placa-resenas-google-para-salones-esteticas-y-barberias", "placa-resenas-google-para-planners-y-eventos", "como-hacer-una-encuesta-de-satisfaccion-del-cliente"],
     faq: [
       {
         q: "¿El NFC reemplaza al código QR?",
@@ -2967,6 +2983,18 @@ export const blogPosts: BlogPost[] = [
       {
         q: "¿Un código QR impreso sirve para pedir reseñas?",
         a: "Sí. Funciona con cualquier teléfono con cámara y en material impreso. Debe ser lo bastante grande y tener espacio libre alrededor para escanearse bien.",
+      },
+      {
+        q: "¿La placa de Yume viene lista para usarse?",
+        a: "Sí. Se entrega ya programada con el enlace de reseñas de tu negocio y con el QR de respaldo impreso.",
+      },
+      {
+        q: "¿Hay que pagar suscripción o instalar una app?",
+        a: "No. La placa y el stand se compran desde una pieza, con pago único, sin suscripción ni app.",
+      },
+      {
+        q: "¿Cuál es la diferencia entre la placa y el stand?",
+        a: "La placa lleva adhesivo para fijarla. El stand es de pie y no se pega. Ambos se ofrecen en blanco o negro.",
       },
       {
         q: "¿Puedo dar un descuento o un regalo a cambio de una reseña?",
