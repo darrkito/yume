@@ -747,7 +747,7 @@ export const dulceroPostsEn: BlogPost[] = [
       "Personalized favor boxes with your company logo for holiday parties, anniversaries and client events: design, quantities, price and delivery times.",
     category: "Guides",
     publishedAt: PUBLISHED,
-    modifiedAt: "2026-10-26",
+    modifiedAt: "2026-11-11",
     intro:
       "Favor boxes aren't just for kids' parties. With your company's logo and colors, a lunch-box-style treat box is a corporate gift that looks well put together: for the year-end posada, the company anniversary, welcome kits for new team members or a client event. This guide explains how to order corporate event favor boxes in Guadalajara or with shipping across Mexico: occasions, design, what to put inside, quantities, price and timing.",
     sections: [
@@ -755,7 +755,7 @@ export const dulceroPostsEn: BlogPost[] = [
         heading: "Occasions where corporate favor boxes work",
         body: [
           "Personalized favor boxes work at any company event where you want each person to take home a gift with your brand: holiday parties, anniversaries, welcome kits, launches and client events. Every box carries your logo and brand colors, so the keepsake goes home with them or to their desk.",
-          "These are the occasions where they make the most sense: the year-end posada or holiday party, the company anniversary, the welcome kit for new team members, a product launch, a client or supplier event, Children's Day for employees' kids, and booths at trade shows or expos.",
+          `These are the occasions where they make the most sense: the [year-end posada or holiday party](/en/blog/${en("detalles-posada-empresa-personalizados")}), the [company anniversary](/en/blog/${en("aniversario-empresa-detalles-personalizados")}), the welcome kit for new team members, a product launch, a client or supplier event, Children's Day for employees' kids, and booths at trade shows or expos.`,
           "In every case the box does two jobs: it's a gift for the person, and it takes your brand home or to their desk. Unlike a generic bag, a box with your company's name and your own message makes the event look planned.",
           "For a large team, you can give one box per person. For a dinner with clients, one at each place setting looks like part of the table.",
         ],
@@ -763,18 +763,18 @@ export const dulceroPostsEn: BlogPost[] = [
       {
         heading: "How the favor box looks with your company logo",
         body: [
-          "We design the box with your logo, your brand colors and, if you like, a short message. Before production we send a digital proof, and nothing is produced until you approve it. Send your logo in PNG, PDF, AI or SVG in good quality so we can work with it.",
+          "We design the box with your logo, your brand colors and, if you like, a short message. Before production we send a digital proof, and nothing is produced until you approve it.",
           "Each box is a lunch-box style box with a handle, made of opalina cardstock, and measures 15.7 × 11.7 × 9.9 cm (6.2 × 4.6 × 3.9 in). Customization includes the name and theme, which for a company event means your logo and colors, with a message such as Thanks for a great year or Welcome to the team.",
-          "When you send the logo, include your brand colors and the exact text you want. Check the spelling, the company name and the event year on the digital proof, because it's the last step before production. If several people approve, name one person to reply so you avoid back and forth.",
-          "To seal or complement the gift, you can also order stickers with your logo and use them to close small bags or decorate what goes inside.",
+          "When you send the logo, include your brand colors and the exact text you want.",
+          "To seal or complement the gift, you can also order [logo stickers](/en/products/custom-logo-stickers) and use them to close small bags or decorate what goes inside.",
         ],
       },
       {
         heading: "What to put inside a favor box for a company event",
         body: [
-          "The box arrives assembled and empty, so you decide what goes inside: candy, a chocolate, cookies or a branded touch like stickers with your logo. It measures 15.7 × 11.7 × 9.9 cm, so it's worth assembling one test box before buying the filling for everyone.",
-          "A few ideas: chocolates, cookies, traditional Mexican candy or snacks, plus something that isn't candy, like stickers with your logo or a thank-you card. Between 8 and 12 pieces of candy looks full in this box.",
-          "Ask your team or guests about allergies (peanuts and chocolate are the most common) and, if in doubt, prepare an option without those ingredients too. For more ideas by type of candy, see our guide on what to put in a favor box.",
+          "The box arrives assembled and empty, so you decide what goes inside: candy, a chocolate, cookies or a branded touch like [stickers with your logo](/en/products/custom-logo-stickers). It measures 15.7 × 11.7 × 9.9 cm, so it's worth assembling one test box before buying the filling for everyone.",
+          "A few ideas: chocolates, cookies, traditional Mexican candy or snacks, plus something that isn't candy, like stickers with your logo or a thank-you card.",
+          `Ask your team or guests about allergies (peanuts and chocolate are the most common) and, if in doubt, prepare an option without those ingredients too. For more ideas by type of candy, see our guide on [what to put in a favor box](/en/blog/${en("que-poner-en-un-dulcero")}).`,
         ],
       },
       {
@@ -782,7 +782,13 @@ export const dulceroPostsEn: BlogPost[] = [
         body: [
           `First 100 pieces: $${dulceroUnit} MXN per box, with a minimum order of 10 and no fixed packs. Above 100 pieces it's wholesale pricing: message us on WhatsApp for a quote. Orders from $${FREE_SHIPPING_THRESHOLD} MXN ship free across Mexico. You order the exact number of guests or team members.`,
           `For example, 18 boxes for a small team are $${dulceroTotal(18)}, 40 are $${dulceroTotal(40)} and 100 are $${dulceroTotal(100)}. In the Guadalajara metro area you can pick them up at any of the ${CASABLANCA_BRANCHES.length} Casa Blanca parcel branches; on orders under $${FREE_SHIPPING_THRESHOLD} pickup costs $${CASABLANCA_PRICE}.`,
-          "Count the confirmed attendees and add 2 or 3 extra boxes in case someone is added at the last minute. You can pay by card, OXXO or SPEI. Note that we do not issue invoices (CFDI); if your company needs one, message us before ordering.",
+          `Count the confirmed attendees to order the exact quantity. See the product and place your order on the [personalized favor boxes](/en/products/personalized-party-favor-boxes) page, or read the guide to [favor boxes in Guadalajara](/en/blog/${en("dulceros-personalizados-guadalajara")}).`,
+        ],
+      },
+      {
+        heading: "What the order includes, payment and invoices",
+        body: [
+          "Each favor box arrives assembled and empty, with your logo, colors and, if you like, a short message, plus a digital proof you approve before production. Candy and filling are not included. You can pay by card, OXXO or SPEI. We do not issue invoices (CFDI); if your company needs one, message us before ordering.",
           "For large orders, message us on WhatsApp before paying so we can confirm dates and any details of your event.",
         ],
       },
@@ -790,8 +796,8 @@ export const dulceroPostsEn: BlogPost[] = [
         heading: "Delivery timing for a corporate event",
         body: [
           `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after you approve the digital proof, plus ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} days of national shipping, or ${PICKUP_EXTRA_DAYS} business day if you pick up at a Casa Blanca branch in Guadalajara. If approval goes through several people, start the order two or three weeks ahead.`,
-          `Adding the maximum of production and national shipping gives ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days, not counting the time your team takes to approve the proof. Count backwards from the event date and leave a margin.`,
-          "Posadas cluster in December; if your date falls in those weeks, start earlier. The boxes arrive assembled, so on the day of the event you only need to fill and arrange them.",
+          `Adding the maximum of production and national shipping gives ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days, not counting the time your team takes to approve the proof.`,
+          `The boxes arrive assembled, so on the day of the event you only need to fill and arrange them. If your posada has a Christmas theme, see the guide to [Christmas favor boxes](/en/blog/${en("dulceros-navidenos-personalizados")}).`,
         ],
       },
       {
@@ -799,7 +805,7 @@ export const dulceroPostsEn: BlogPost[] = [
         body: [
           "If you plan events for companies or clients, you can order per event: the exact quantity, a design with each client's identity and a digital proof that gets approved before production. To coordinate dates and details, message us on WhatsApp before paying.",
           "A workflow that works: send us the event date, the number of attendees and the logo; review the digital proof with your client; confirm the final quantity; and place the order with a margin for shipping.",
-          "Besides favor boxes, we quote stickers with logos, temporary tattoos for events and custom invitations, so the whole event shares one visual style.",
+          `Besides favor boxes, we quote stickers with logos, [temporary tattoos for events](/en/blog/${en("tatuajes-temporales-personalizados-para-eventos")}) and [custom invitations](/en/blog/${en("como-pedir-invitaciones-personalizadas-para-eventos")}), so the whole event shares one visual style.`,
         ],
       },
     ],
@@ -807,10 +813,6 @@ export const dulceroPostsEn: BlogPost[] = [
       {
         q: "Can I put my company logo on the favor boxes?",
         a: "Yes. Customization includes the name and theme: your logo, your colors and, if you like, a short message. We send a digital proof for you to approve before production.",
-      },
-      {
-        q: "What file format should I send my logo in?",
-        a: "PNG, PDF, AI or SVG, in good quality.",
       },
       {
         q: "What is the minimum number of boxes I can order?",
@@ -827,6 +829,10 @@ export const dulceroPostsEn: BlogPost[] = [
       {
         q: "How far ahead should I order for a year-end posada?",
         a: `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after you approve the proof, plus ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} days of national shipping. If approval goes through several people, it's best to start two or three weeks ahead.`,
+      },
+      {
+        q: "Can I pick up my order in Guadalajara?",
+        a: `Yes, at any of the ${CASABLANCA_BRANCHES.length} Casa Blanca parcel branches in the metropolitan area. For orders under $${FREE_SHIPPING_THRESHOLD}, pickup costs $${CASABLANCA_PRICE}.`,
       },
       {
         q: "Do you issue invoices?",
@@ -1200,63 +1206,65 @@ export const dulceroPostsEn: BlogPost[] = [
       "Favor boxes, goodie bags, treat cups or fabric pouches: compare presentation, personalization, price and which one suits your party or event.",
     category: "Guides",
     publishedAt: PUBLISHED,
-    modifiedAt: "2026-10-26",
+    modifiedAt: "2026-11-11",
     intro:
       "Look for party favors and you'll find lots of options: cellophane or paper goodie bags, plastic treat cups, fabric pouches and cardstock boxes. None is best at everything; it depends on the occasion, guest age and how much you want the favor to look like part of the decor. This comparison helps you decide, with the price, size and timing of our personalized box so you can compare with real numbers.",
     sections: [
       {
-        heading: "What to compare before you decide",
+        heading: "Favor boxes, goodie bags or treat cups: what to compare before you decide",
         body: [
           "Compare four things: whether it stands up on the table, how much surface you have to personalize, whether it arrives ready to fill and how many pieces you need. A bag or a cup solves quantity; a box also solves presentation. Settle the occasion and guest count first, then the format.",
           "If the event has a candy table, photos or a set color palette, presentation matters more. If the favor is handed out at the door and goes straight to the car, simple matters more. With small children, also think about whether they can carry it themselves.",
         ],
       },
       {
-        heading: "Goodie bags",
+        heading: "Goodie bags: when they work",
         body: [
-          "Goodie bags are the easiest option to find, but they sag under the weight, don't stand up on the table and are almost always personalized only with a label or sticker on the front. They work for very large parties or as an inner bag inside another favor.",
-          "If you go with bags, a sticker with the name and theme helps them look more polished. You can look at our waterproof vinyl stickers for that touch.",
+          "Goodie bags are the easiest option to find, but they don't stand up on the table and are almost always personalized only with a label or sticker on the front. They work for very large parties or as an inner bag inside another favor.",
+          "If you go with bags, a sticker with the name and theme helps them look more polished. You can look at our [waterproof vinyl stickers](/en/products/waterproof-vinyl-stickers) for that touch.",
         ],
       },
       {
-        heading: "Treat cups and fabric pouches",
+        heading: "Treat cups and fabric pouches: reusable, with limits",
         body: [
           "Plastic treat cups are reusable, but they take up space, are hard to personalize with a name and the theme is usually generic. Fabric pouches look nice and can be reused, though they cost more and adding a name raises the price of each piece. They make sense when a second use matters more than presentation.",
           "What to watch is the table: a cup or a pouch can't carry a full design with the name and theme, so the result depends more on what you put around it.",
         ],
       },
       {
-        heading: "Lunch-box-style favor boxes",
+        heading: "Personalized lunch-box-style favor boxes",
         body: [
           "A lunch-box-style favor box stands on its own, looks tidy on the candy table and is fully personalized: the name and the theme cover the whole design, not just a label. It has a handle for kids to carry and room for candy and a small gift.",
-          "At Yume we make it in opaline cardstock, 15.7 × 11.7 × 9.9 cm, with the name and theme you choose. It arrives assembled and empty, without candy, ready to fill. Before production we send a digital proof, and nothing is produced until you approve it.",
+          "At Yume we make our [personalized favor boxes](/en/products/personalized-party-favor-boxes) in opaline cardstock, 15.7 × 11.7 × 9.9 cm, with the name and theme you choose. They arrive assembled and empty, without candy, ready to fill. Before production we send a digital proof, and nothing is produced until you approve it.",
         ],
       },
       {
         heading: "For weddings, baby showers, baptisms and other events",
         body: [
           "For a wedding, a baby shower or a baptism, the personalized box is the better fit: the design takes the event's colors and the name or date, and it looks like part of the candy table. For planners, it's one detail per event, with a digital proof and direct contact on WhatsApp.",
-          "Send us a photo of the invitation or the decor and we'll match the design to those colors. For a company, you can add your logo. If your event needs something different from what we describe here, message us on WhatsApp and we'll go over it with you before you decide. For more ideas by occasion, see our guides to favor boxes for social events, for baptisms and first communions, and for graduations.",
+          "Send us a photo of the invitation or the decor and we'll match the design to those colors. For a company, you can add your logo. If your event needs something different from what we describe here, message us on WhatsApp and we'll go over it with you before you decide.",
+          `For more ideas by occasion, see our guides to [favor boxes for social events](/en/blog/${en("dulceros-para-eventos-sociales-boda-xv-baby-shower")}), [favor boxes for baptisms and first communions](/en/blog/${en("dulceros-para-bautizo-y-primera-comunion")}) and [favor boxes for graduations](/en/blog/${en("dulceros-para-graduacion")}). For a wedding, see also the guide to [how many favor boxes to order for a wedding](/en/blog/${en("cuantos-dulceros-pedir-para-una-boda")}).`,
         ],
       },
       {
         heading: "Price and how many to order",
         body: [
           `First 100 pieces: $${dulceroUnit} MXN per box, with a minimum order of 10. 10 boxes are $${dulceroTotal(10)}, 20 are $${dulceroTotal(20)} and 30 are $${dulceroTotal(30)}. Above 100 pieces it's wholesale pricing, quoted on WhatsApp. You order the exact number of guests, with no fixed packs.`,
-          `Orders from $${FREE_SHIPPING_THRESHOLD} MXN ship free across Mexico. In the Guadalajara metro area you can pick them up for $${CASABLANCA_PRICE} at any of the ${CASABLANCA_BRANCHES.length} Casa Blanca parcel branches. Add 1 or 2 extra in case a guest shows up last minute.`,
+          `Orders from $${FREE_SHIPPING_THRESHOLD} MXN ship free across Mexico. In the Guadalajara metro area you can pick them up for $${CASABLANCA_PRICE} at any of the ${CASABLANCA_BRANCHES.length} Casa Blanca parcel branches.`,
         ],
       },
       {
         heading: "When to order so they arrive on time",
         body: [
           `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after you approve the digital proof, plus ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} days of national shipping (or ${PICKUP_EXTRA_DAYS} business day if you pick up at a Casa Blanca branch in Guadalajara). Count back from your event date and leave room to review the proof.`,
-          "If you're torn between formats, assemble one test box with your candy before ordering everything, to see how the filling fits. Our guide on what to put in a favor box has a list by age.",
+          `To choose the filling, our guide on [what to put in a favor box](/en/blog/${en("que-poner-en-un-dulcero")}) has a list by age. If you're in Guadalajara, see also [personalized favor boxes in Guadalajara](/en/blog/${en("dulceros-personalizados-guadalajara")}).`,
         ],
       },
       {
-        heading: "Which to choose",
+        heading: "Which to choose: box, bag, cup or pouch",
         body: [
           "Pick a goodie bag if you need something simple for lots of guests, a cup or pouch if you want something reusable, and a personalized box if you want the favor to match the party, carry the birthday child's name and look like part of the decor. It's the option that stands out most on the table.",
+          `For a children's party, see the [children's party favor box ideas](/en/blog/${en("ideas-de-dulceros-para-fiesta-infantil")}) and, when you're ready, visit [personalized favor boxes](/en/products/personalized-party-favor-boxes) to choose your quantity.`,
         ],
       },
     ],
@@ -1291,8 +1299,16 @@ export const dulceroPostsEn: BlogPost[] = [
         a: "The name (of the birthday child, the group or your company) and the theme you choose, including your logo if it's for a business. We send a digital proof before production.",
       },
       {
+        q: "What is the minimum number of favor boxes I can order?",
+        a: "The minimum order is 10 pieces. You order the exact number of guests, with no fixed packs.",
+      },
+      {
         q: "How long does it take to arrive?",
         a: `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after you approve the digital proof, plus ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} days of national shipping.`,
+      },
+      {
+        q: "Can I pick up my order in Guadalajara?",
+        a: `Yes. In the Guadalajara metro area you can pick it up for $${CASABLANCA_PRICE} at any of the ${CASABLANCA_BRANCHES.length} Casa Blanca parcel branches, with ${PICKUP_EXTRA_DAYS} extra business day after production.`,
       },
     ],
   },

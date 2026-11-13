@@ -126,7 +126,7 @@ export const blogPostsEn: BlogPost[] = [
         "body": [
           "Place the plate where customers have a calm moment at the end of the visit: on the table, next to the register or at the takeout pickup area. Google suggests sharing the link or QR printed in the venue. Choose a visible spot that does not block service and test that it opens your listing.",
           "Each spot plays a different role. On the table, the plate sits with customers while they linger and they decide whether to scan it. At the register, it is visible while the bill is paid. At the takeout pickup area, it reaches people who never sat down. You can combine two spots if your service allows it, always using the same link.",
-          "Google also suggests sharing the link on receipts, in thank-you emails or at the end of a chat, and lets you send the request by email, WhatsApp or Facebook. So the NFC review plate is one channel among several, not the only one, and the same link works in all of them."
+          "Google also suggests sharing the link on receipts, in thank-you emails or at the end of a chat, and lets you send the request by email or WhatsApp. So the [NFC review plate](/en/products/google-review-nfc-plate) is one channel among several, not the only one, and the same link works in all of them."
         ]
       },
       {
@@ -149,15 +149,15 @@ export const blogPostsEn: BlogPost[] = [
         "heading": "Should you choose a plate or a stand?",
         "body": [
           "The plate includes adhesive and measures 12 × 12 cm; the stand sits upright on a surface. The plate costs MXN $140 and the stand MXN $200. Both have NFC and QR, with a one-time payment and orders from one piece.",
-          "The [NFC review plate](/productos/placa-resena-google-nfc) is fixed at one spot in the venue; the [NFC review stand](/productos/stand-resena-google-nfc) stands upright, for example on a table or at the counter. Choose based on where you want it and whether you prefer to fix it or move it.",
-          "If cost is your concern, see the guide on [one-time price versus subscription](/en/blog/google-review-plates-one-time-price-vs-subscription)."
+          "The [NFC review plate](/en/products/google-review-nfc-plate) is fixed at one spot in the venue; the [NFC review stand](/en/products/google-review-nfc-stand) stands upright, for example on a table or at the counter. Choose based on where you want it and whether you prefer to fix it or move it.",
+          "If you are unsure about NFC and a printed QR code, read the [comparison of NFC and QR](/en/blog/nfc-plate-vs-printed-qr-code-for-reviews). If cost is your concern, see the guide on [one-time price versus subscription](/en/blog/google-review-plates-one-time-price-vs-subscription)."
         ]
       },
       {
         "heading": "How is the piece prepared for your restaurant?",
         "body": [
           "Share your restaurant listing’s review link when placing the order. Yume configures the NFC and QR with that link before shipping. Choose white or black, and use the piece without an app or subscription, so you pay no monthly fee for it.",
-          "When it arrives, scan the QR and tap your phone to confirm that both open the correct listing before placing it in front of customers. It does not include a dashboard."
+          "When it arrives, scan the QR and tap your phone to confirm that both open the correct listing before placing it in front of customers. For a step-by-step guide, see [how to use the plate](/en/blog/how-to-use-your-yume-google-review-plate)."
         ]
       },
       {
@@ -165,7 +165,7 @@ export const blogPostsEn: BlogPost[] = [
         "body": [
           "Reply with brief, clear and polite messages, without offers or promotions. Avoid generic thanks, use the customer’s name and respond quickly. If the issue is complex, move it to a private channel without exposing customer data. A review that violates Google’s policies can be reported.",
           "Replying is part of the process: the plate helps opinions arrive and your answer shows how you serve customers. If someone points out a problem, listen, say thanks and offer a channel for follow-up without arguing in public.",
-          "Check also that your listing’s contact details and opening hours are still accurate."
+          "For more on getting feedback consistently, read the guide to [getting more reviews](/en/blog/how-to-get-more-google-reviews-nfc-qr). Check also that your listing’s contact details and opening hours are still accurate."
         ]
       }
     ],
@@ -366,7 +366,7 @@ export const blogPostsEn: BlogPost[] = [
         "heading": "Where should you display the plate during an event?",
         "body": [
           "Place it where people can see it without interrupting the celebration: at reception if you run a venue, or at your service table if you are a vendor. Google suggests showing the QR code or link on receipts, thank-you emails, at the end of a chat or printed in your location.",
-          "If you work with clients over WhatsApp, Google also lets you send the request by that channel, by email or by Facebook. The plate at the event and a later message work together."
+          "If you work with clients over WhatsApp, Google also lets you send the request by that channel or by email. The plate at the event and a later message work together."
         ]
       },
       {
@@ -394,7 +394,7 @@ export const blogPostsEn: BlogPost[] = [
         "heading": "Plate or stand: which piece fits the way you work?",
         "body": [
           "The 12 × 12 cm plate includes adhesive and costs MXN $140; the stand sits upright and costs MXN $200. Both have NFC and QR, are available in white or black and can be ordered from one piece with one-time payment.",
-          "If you need a fixed spot, such as a reception desk, the plate is the one to consider. If you prefer something that stands on a table, the stand sits upright."
+          "If you need a fixed spot, such as a reception desk, consider the [NFC and QR review plate](/en/products/google-review-nfc-plate). If you prefer something that stands on a table, the [NFC review stand](/en/products/google-review-nfc-stand) sits upright."
         ],
         "table": {
           "headers": ["Piece", "Format", "Price", "Colors"],
@@ -407,7 +407,8 @@ export const blogPostsEn: BlogPost[] = [
       {
         "heading": "How does Yume prepare your piece?",
         "body": [
-          "Yume configures the NFC and QR with your business’s review link before shipping the piece. It requires no app or subscription: payment is one-time. If you want a quote or have questions, message us on WhatsApp and we will help you choose the right piece."
+          "Yume configures the NFC and QR with your business’s review link before shipping the piece. It requires no app or subscription: payment is one-time. If you want a quote or have questions, message us on WhatsApp and we will help you choose the right piece.",
+          "If you are also preparing favors for your guests, see our [personalized party favor boxes in Guadalajara](/en/blog/personalized-party-favor-boxes-guadalajara) to complement your favor supplier."
         ]
       }
     ],
@@ -458,10 +459,6 @@ export const blogPostsEn: BlogPost[] = [
       {
         "label": "Google: prohibited and restricted content",
         "url": "https://support.google.com/business/answer/7400114?hl=en"
-      },
-      {
-        "label": "Search Engine Roundtable: Google review policies update",
-        "url": "https://www.seroundtable.com/google-business-profile-review-policies-updated-40962.html"
       }
     ]
   },
@@ -798,9 +795,9 @@ export const blogPostsEn: BlogPost[] = [
       `What goes on the letterhead, what size to use, and what a custom medical prescription pad costs in Guadalajara: from $${recetarioPrice("sin-diseno")}, with a digital proof.`,
     category: "Guides",
     publishedAt: "2026-08-28",
-    modifiedAt: "2026-10-26",
+    modifiedAt: "2026-11-11",
     intro:
-      "If you run a practice in Guadalajara, Zapopan, or anywhere in Jalisco, the prescription pad you use every day is also part of your practice's image. A generic one bought at any stationery store doesn't communicate the same thing as one with your letterhead, your license number, and your practice's own design. This guide covers what you need to know before ordering a custom one.",
+      "If you run a practice in Guadalajara, Zapopan, or anywhere in Jalisco, the prescription pad you use every day is also part of your practice's image. A generic one bought at any stationery store doesn't communicate the same thing as one with your letterhead, your license number, and your practice's own design. This guide covers what you need to know before ordering a [custom medical prescription pad](/en/products/medical-prescription-pads).",
     sections: [
       {
         heading: "What goes on your letterhead",
@@ -808,15 +805,15 @@ export const blogPostsEn: BlogPost[] = [
           "Your letterhead should include your full name, specialty, professional license number (and specialty license, if applicable), and your practice's contact details: address, phone and, if you want, office hours. These are the fixed details printed once so you don't handwrite them on every prescription.",
           "If you share a practice with other specialists or work out of more than one location, it's common to use a separate letterhead per location instead of trying to fit everything onto one: it looks cleaner and avoids confusing the patient.",
           "Before requesting a quote, gather your details exactly as they appear on your official documents: copy your license number instead of retyping it from memory, and confirm that the phone and address are the ones you want patients to use. If you already have a logo, send it; if not, you can choose the option with design and we'll build it with you.",
-          "To see which details get filled in later, for each patient, and which are better left preprinted, read the guide on the prescription format in Mexico.",
+          "To see which details get filled in later, for each patient, and which are better left preprinted, read the guide on [medical prescription information in Mexico](/en/blog/required-information-medical-prescription-mexico).",
         ],
       },
       {
-        heading: "Size and paper: what's standard in Mexico",
+        heading: "Medical prescription pad size and paper",
         body: [
-          "At Yume the prescription pad is Half Letter (14 × 21.5 cm), 100 sheets, on white 90 gsm Bond paper. It's the size most used in practices in Mexico: it fits in any folder or file without folding and is comfortable to write on by hand.",
+          "At Yume the prescription pad is Half Letter (14 × 21.5 cm), 100 sheets, on white 90 gsm Bond paper. This is the format we produce for the custom medical prescription pad: it fits in a folder or file without folding and leaves room to handwrite each prescription.",
           "If your practice handles prescriptions for specific procedures (for example, with a folio number or barcode for some institution), mention it when requesting a quote: that's information that needs to be confirmed before printing, not something to improvise afterward.",
-          "If you're unsure whether to print or move to a digital prescription, check the comparison between printed and digital prescription pads before deciding.",
+          "If you're unsure whether to print or move to a digital prescription, check the comparison between [printed and digital prescription pads](/en/blog/printed-vs-digital-prescription-pads) before deciding.",
         ],
       },
       {
@@ -824,7 +821,7 @@ export const blogPostsEn: BlogPost[] = [
         body: [
           `A 100-sheet prescription pad costs $${recetarioPrice("sin-diseno")} if you already have your design ready and $${recetarioPrice("con-diseno")} if we design it with you. Either way you get a digital proof of the letterhead and we only produce once you approve it. Prices are in Mexican pesos and per complete pad.`,
           "The difference between the two options is the design work: \"without design\" is for when you already have an editable file with your letterhead, and \"with design\" includes us building the letterhead with you from your professional details, with the adjustments you need before printing.",
-          "If you need more than one pad, for example one per practice location, message us on WhatsApp and we'll quote them together. To choose between the two options calmly, the guide on prescription pads with vs. without design explains what each includes.",
+          "If you need more than one pad, for example one per practice location, message us on WhatsApp and we'll quote them together. To choose between the two options calmly, the guide on [prescription pads with or without design](/en/blog/prescription-pad-with-design-vs-without-design) explains what each includes.",
         ],
         table: {
           headers: ["Option", "Price", "What it includes"],
@@ -840,6 +837,7 @@ export const blogPostsEn: BlogPost[] = [
           "The process is the same in Guadalajara as in any other city in Mexico, because the design is approved remotely: you request a quote via WhatsApp or the online shop, send your details or logo, review the digital proof, and only once you approve it does it go to production.",
           "That approval step is what prevents the most common mistake when customizing stationery: sending something to print without having seen the final design, and finding a typo in the license number or phone number only after all 100 sheets are already printed.",
           "When the digital proof arrives, calmly check four things: your name is spelled correctly, the license number matches your document, the phone number reaches the right practice, and the address is complete. If something is off, ask for the change right then, when it's easiest to fix.",
+          "For the general steps to order stationery remotely, read [how to order custom stationery online](/en/blog/how-to-order-custom-stationery-online).",
         ],
       },
       {
@@ -862,7 +860,16 @@ export const blogPostsEn: BlogPost[] = [
         heading: "A prescription pad and a business card with the same design",
         body: [
           "If you also want a business card, you can quote both with the same letterhead: same typography, same colors and same details. Your practice looks more consistent, you don't coordinate two separate designs, and patients recognize your image from the prescription to the card they take home from the visit.",
-          "Business cards are quoted case by case on WhatsApp. The guide on business cards for your practice covers which details to prepare. And if you're comparing providers, the comparison of Yume with other prescription pad print shops can help you decide.",
+          "Business cards are quoted case by case on WhatsApp. The guide on [business cards for your practice](/en/blog/business-cards-for-your-practice) covers which details to prepare. And if you're comparing providers, see [Yume compared with other print shops](/en/blog/yume-vs-online-prescription-pad-print-shops).",
+        ],
+      },
+      {
+        heading: "Three questions to answer before requesting a quote",
+        body: [
+          "To decide at your own pace, start with three questions: whether you will print prescriptions or use digital ones, whether you already have a design ready, and which details will be preprinted. Each has its own guide. With the answers clear, ordering your custom medical prescription pad in Guadalajara is easier, and you arrive at the digital proof with your details ready.",
+          "Print or digital: the comparison of [printed and digital prescription pads](/en/blog/printed-vs-digital-prescription-pads) helps you choose the format.",
+          "Your own design or a design made with you: the guide to [with or without design](/en/blog/prescription-pad-with-design-vs-without-design) explains the difference between the two options.",
+          "Once everything is clear, you can order your [custom medical prescription pad](/en/products/medical-prescription-pads) in the online shop or request a quote on WhatsApp.",
         ],
       },
     ],
@@ -884,12 +891,24 @@ export const blogPostsEn: BlogPost[] = [
         a: "Yes. You can send your design in an editable format (the without-design option) or ask us to design it from scratch with you (the with-design option).",
       },
       {
+        q: "What does the option with design include?",
+        a: "It includes building the letterhead with you from your professional details, with the adjustments you need before printing.",
+      },
+      {
         q: "How long does my order take to arrive?",
         a: `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after the proof is approved. By courier, add ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} business days; at a Casa Blanca branch, add ${PICKUP_EXTRA_DAYS} business day.`,
       },
       {
         q: "Do you ship outside Guadalajara?",
         a: `Yes. We produce in Guadalajara and ship anywhere in Mexico for $${NATIONAL_SHIPPING_PRICE}. On purchases of $${FREE_SHIPPING_THRESHOLD} or more, shipping is free.`,
+      },
+      {
+        q: "Where can I pick up my prescription pad in Guadalajara?",
+        a: `At one of the ${CASABLANCA_BRANCHES.length} Casa Blanca branches in the metropolitan area, for $${CASABLANCA_PRICE}. The branches are: ${casablancaBranchNames}.`,
+      },
+      {
+        q: "Can I order more than one prescription pad?",
+        a: "Yes. If you need more than one, for example one per practice location, message us on WhatsApp and we will quote them together.",
       },
       {
         q: "Do you issue invoices?",
@@ -1034,12 +1053,12 @@ export const blogPostsEn: BlogPost[] = [
       "Custom stationery for businesses in Jalisco: prescription pads, labels and stickers with your brand, real prices, a digital proof and shipping across Mexico.",
     category: "Local Business",
     publishedAt: "2026-08-28",
-    modifiedAt: "2026-10-26",
+    modifiedAt: "2026-11-12",
     intro:
       "Whether you run a medical practice or a small business selling at bazaars in Guadalajara, the custom stationery you use every day (prescription pads, stickers, labels) is one of the simplest ways to look consistent. It's not the flashiest part of a business, but it's the part the customer or patient is literally holding in their hand. This guide covers which pieces you can customize, what they cost, how we work from Guadalajara and where it makes sense to start.",
     sections: [
       {
-        heading: "What custom stationery is and why it matters for your business",
+        heading: "What custom stationery for businesses in Jalisco is",
         body: [
           "Custom stationery is any printed piece that carries your name, logo and real details: prescription pads, labels, stickers, menus or invitations. For a business in Jalisco it matters because it's what your customer or patient holds in their hand, and done well it signals order and care without a full rebrand.",
           "Think about a person's path through your business: they get a prescription, open a bag, see a label on a jar or take home a keepsake from your event. Each piece is a moment where your brand shows up (or doesn't). When they all look alike, the business reads as one well-kept whole.",
@@ -1048,8 +1067,8 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "Consistency before quantity",
         body: [
-          "You don't need to redesign your entire business to look more professional: sometimes it's enough for the prescription pad, the delivery bag, and the sticker that seals the package to use the same logo and the same colors. It's cheaper than a full rebrand and the effect is just as noticeable.",
-          "That's why at Yume we work made-to-order and tailored to you instead of selling generic templates: every piece is designed with your real details and your real brand, not a mold some other business is also using. If you want to compare calmly, read our comparison of custom stationery vs. generic templates.",
+          "You don't need to redesign your entire business to look more professional: sometimes it's enough for the prescription pad, the delivery bag, and the sticker that seals the package to use the same logo and the same colors. That way, each piece is recognizable as part of one brand.",
+          "That's why at Yume we work made-to-order and tailored to you instead of selling generic templates: every piece is designed with your real details and your real brand, not a mold some other business is also using. If you want to compare calmly, read our comparison of [custom stationery vs. generic templates](/en/blog/custom-stationery-vs-generic-templates).",
           "A good starting point is to check three things on everything you print: the logo is the same, the colors match, and the phone or WhatsApp number is the same on every piece. That gives you a consistent base before you order anything new.",
         ],
       },
@@ -1057,9 +1076,16 @@ export const blogPostsEn: BlogPost[] = [
         heading: "Which stationery pieces you can order at Yume",
         body: [
           "At Yume you can order medical prescription pads, logo stickers and labels, and vinyl stickers, all with prices published in the shop. All of our stickers come with high-quality BOPP lamination. We also quote invitations, menus and temporary tattoos for events on WhatsApp. Every order goes through a digital proof before it is printed.",
-          "Custom medical prescription pad: for practices in Guadalajara, Zapopan or anywhere in Jalisco. You can order it without design, if you already have yours, or with design, if we build it with you. There is a full guide to custom medical prescription pads in Guadalajara covering what goes on the letterhead.",
-          "Logo stickers & labels and vinyl stickers: they work for sealing packaging, identifying products or giving customers a branded detail. They're sold by piece count, not by sheet. If you sell products, we also have a guide to custom stickers for businesses in Guadalajara.",
+          "For practices in Guadalajara, Zapopan or anywhere in Jalisco, you can order a [custom medical prescription pad](/en/products/medical-prescription-pads) without design, if you already have yours, or with design, if we build it with you. There is a full guide to [custom medical prescription pads in Guadalajara](/en/blog/custom-medical-prescription-pads-guadalajara) covering what goes on the letterhead.",
+          "[Logo Stickers & Labels](/en/products/custom-logo-stickers) and [vinyl stickers](/en/products/waterproof-vinyl-stickers) work for sealing packaging, identifying products or giving customers a branded detail. They're sold by piece count, not by sheet. If you sell products, we also have a guide to [custom stickers for businesses in Guadalajara](/en/blog/custom-stickers-for-businesses-guadalajara).",
           "Event pieces: invitations, menus and temporary tattoos don't have a fixed shop price because they depend on the design and quantity. They are quoted on WhatsApp, and the design goes through the same digital proof as every other order.",
+        ],
+      },
+      {
+        heading: "Vinyl stickers: choose your size, cut and finish",
+        body: [
+          "When ordering Custom Vinyl Stickers, you choose the size, cut and finish. Sizes are small (up to 4 cm), medium (5 to 6 cm) and large (7 to 8 cm). The cut can be die-cut or kiss-cut, and the finish matte, glossy or holographic. All have BOPP lamination.",
+          "If you are deciding between the two cuts, see the guide to [die-cut vs. kiss-cut stickers](/en/blog/die-cut-vs-kiss-cut-stickers). If you need a size larger than 8 cm or something more specific, request a quote on WhatsApp.",
         ],
       },
       {
@@ -1076,7 +1102,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "Made in Guadalajara, shipped across Mexico",
         body: [
           "We produce in Guadalajara, Jalisco, and ship anywhere in Mexico. There is no storefront: you request a quote, approve the digital proof and receive your order by courier or pick it up at a Casa Blanca branch in the metro area. Timeframes count business days only, starting when you approve.",
-          "If you're in the Guadalajara metro area (Zapopan, Tlaquepaque, Tonalá) turnaround tends to be a bit faster simply due to proximity, but the quoting, design, and approval process is the same no matter which city in Mexico you're in.",
+          "The quoting, design and approval process is the same no matter which city in Mexico you're in, including Zapopan, Tlaquepaque and Tonalá.",
           `The digital proof normally arrives within 24 hours of payment. Once you approve it, Casa Blanca pickup takes ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days and home delivery ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days. Shipping is $${NATIONAL_SHIPPING_PRICE} MXN anywhere in Mexico and free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more.`,
           `If you pick up, you can choose from ${CASABLANCA_BRANCHES.length} Casa Blanca branches (${casablancaBranchNames}) for $${CASABLANCA_PRICE} MXN, also free from $${FREE_SHIPPING_THRESHOLD} MXN. You choose the branch at checkout.`,
         ],
@@ -1085,15 +1111,16 @@ export const blogPostsEn: BlogPost[] = [
         heading: "Stationery for your business events",
         body: [
           "If your business hosts a holiday party, an anniversary or a launch, you can add pieces with the same design: stickers, invitations, menus or temporary tattoos. Invitations, menus and tattoos are quoted on WhatsApp based on quantity and design, so message us with the date and guest count.",
-          "The same consistency logic applies to an event: when the invitation, the menu and the keepsake guests take home share a design, everything looks planned. For ideas on each piece, see our guides to custom event invitations, custom wedding menus and stickers for weddings, events and parties.",
-          "If you're a planner or coordinate events for other people, tell us on WhatsApp the quantity per event and the date, and we'll tell you how to schedule the digital proof with enough time.",
+          "The same consistency logic applies to an event: when the invitation, the menu and the keepsake guests take home share a design, everything looks planned. For ideas on each piece, see our guides to [custom event invitations](/en/blog/how-to-order-custom-event-invitations), [custom wedding menus](/en/blog/custom-wedding-menus) and [stickers for weddings and events](/en/blog/stickers-for-weddings-events-and-parties).",
+          "If it is a company holiday party or anniversary, see our guides to [company posada favors](/en/blog/personalized-company-posada-favors) and [company anniversary details](/en/blog/company-anniversary-custom-details).",
+          "If you're a planner or coordinate events for other people, tell us on WhatsApp the quantity per event and the date, and we'll tell you how to schedule the digital proof with enough time. Here is a [guide for planners](/en/blog/guide-for-planners-working-with-custom-favors-supplier).",
         ],
       },
       {
         heading: "Where to start",
         body: [
           "Start with the piece you use most: the prescription pad if you run a practice, the logo stickers if you sell a product. Send your details or your logo on WhatsApp or from the shop, review the digital proof and approve it. Nothing is printed before you approve it.",
-          "You can request a quote directly on WhatsApp or browse the full catalog in the shop: either way, the next step is the same: send us your details or your logo so we can put together the digital proof. For the full step-by-step, read how to order custom stationery online.",
+          "You can request a quote directly on WhatsApp or browse the full [product catalog](/en/products): either way, the next step is the same: send us your details or your logo so we can put together the digital proof. For the full step-by-step, read how to [order custom stationery online](/en/blog/how-to-order-custom-stationery-online).",
           "If you don't have a finished logo yet, tell us when you request the quote: we can work on it together before the digital proof stage; you don't need to arrive with everything figured out.",
         ],
       },
@@ -1114,6 +1141,10 @@ export const blogPostsEn: BlogPost[] = [
       {
         q: "What is the minimum order?",
         a: "50 pieces for Logo Stickers & Labels and 40 pieces for Custom Vinyl Stickers.",
+      },
+      {
+        q: "Can I choose the finish and cut of the vinyl stickers?",
+        a: "Yes. The finish can be matte, glossy or holographic, and the cut die-cut or kiss-cut. All have BOPP lamination.",
       },
       {
         q: "Do you have a physical store in Guadalajara?",
@@ -1497,7 +1528,7 @@ export const blogPostsEn: BlogPost[] = [
       "What to prepare to quote custom invitations for a wedding, quinceañera, or event, how the digital proof works, and shipping across Mexico from Guadalajara.",
     category: "Guides",
     publishedAt: "2026-08-31",
-    modifiedAt: "2026-10-26",
+    modifiedAt: "2026-11-11",
     intro:
       "Whether it's a wedding, a quinceañera, a baby shower, or a corporate event, the invitation is usually the first thing your guests see of the event: it's worth having it match what you're putting together. The invitation is just one piece of your event stationery (along with menus, place cards, or thank-you cards), and here's how the process works to order custom event invitations from Yume.",
     sections: [
@@ -1512,7 +1543,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "How many invitations to order",
         body: [
-          "Count one invitation per household or couple, not per person, unless you want one per guest with their name on it. Add a few spares for last-minute guests and for you and your family. Give us the approximate number and we adjust the quote once your list is confirmed.",
+          "Count one invitation per household or couple, not per person, unless you want one per guest with their name on it. Tell us the approximate number on your list and we will prepare the quote with that number, then adjust it when you confirm your guests.",
           "If your list is still changing, start with the number you estimate and let us know when it's confirmed. It's better to quote with an approximate figure than to wait weeks for the final list.",
           "For digital invitations, quantity matters less, because the same file is shared with all your guests. In that case what matters is making sure the text and design look good on a phone screen.",
         ],
@@ -1529,7 +1560,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "The design and approval process",
         body: [
           "With your details we put together a design proposal and send it to you as a digital proof. You can request adjustments before approving it, and only once you approve the final design does it go to production. Fixing a color or a line of text at this stage is much easier than after printing.",
-          "Once you approve, it goes to production if you ordered printed invitations, or we deliver the final file ready to send if they are digital or both. Nothing is printed without your approval.",
+          `Once you approve, it goes to production if you ordered printed invitations, or we deliver the final file ready to send if they are digital or both. Nothing is printed without your approval. To see how review works for other event orders, read the guide to [digital proofs for planners](/en/blog/${BLOG_SLUG_EN["prueba-digital-pedido-evento-planners"]}).`,
         ],
       },
       {
@@ -1542,8 +1573,8 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "Matching your invitation to the rest of your stationery",
         body: [
-          "An invitation works best when it shares a design line with the rest of your details. At Yume we also quote wedding menus, stickers for weddings and events, favor boxes, and temporary tattoos, and they can be coordinated under the same style so the event looks planned from start to finish.",
-          "If you're still deciding what to order, the related guides at the end of this page explain each piece: custom wedding menus, stickers for weddings, events and parties, and favor boxes for social events.",
+          `An invitation works best when it shares a design line with the rest of your details. At Yume we also quote [wedding menus](/en/blog/${BLOG_SLUG_EN["menu-de-boda-personalizado"]}), [stickers for weddings and events](/en/blog/${BLOG_SLUG_EN["stickers-para-bodas-eventos-y-fiestas"]}), favor boxes, and temporary tattoos, and they can be coordinated under the same style so the event looks planned from start to finish.`,
+          `If you need table details, see [custom favor boxes](/en/products/personalized-party-favor-boxes) and [vinyl stickers](/en/products/waterproof-vinyl-stickers), or the guide to [temporary tattoos for weddings and events](/en/blog/${BLOG_SLUG_EN["tatuajes-temporales-para-boda-eventos-y-fiestas"]}). To see favor boxes in the context of a complete celebration, read the guide to [favor boxes for social events](/en/blog/${BLOG_SLUG_EN["dulceros-para-eventos-sociales-boda-xv-baby-shower"]}).`,
         ],
       },
       {
@@ -1557,13 +1588,13 @@ export const blogPostsEn: BlogPost[] = [
         heading: "Wedding invitations in Guadalajara, shipping across Mexico",
         body: [
           "We produce in Guadalajara and ship across Mexico, so you can order invitations for a wedding in Jalisco or in any other state with the same design and approval process from start to finish. You don't need to be in Guadalajara to quote with us.",
-          "If your wedding is in Guadalajara or the metro area, the process is the same, with the advantage of a slightly faster turnaround thanks to proximity. For any other city, shipping is arranged when we quote.",
+          `If your wedding is in Guadalajara or the metro area, the process is the same. For any other city, shipping is arranged when we quote. If you are still deciding on dates, see [when to send wedding invitations](/en/blog/${BLOG_SLUG_EN["cuando-enviar-invitaciones-de-boda"]}).`,
         ],
       },
       {
         heading: "What to check before approving the digital proof",
         body: [
-          "The most common mistakes are wrong dates or times, misspelled names, and incomplete addresses. Before approving, ask someone else to read the whole proof and confirm every detail against your source: the venue, your guest list, or the company's information.",
+          "Before approving the proof, check dates, times, names, and addresses one by one. Ask someone else to read the whole proof and confirm every detail against your source: the venue, your guest list, or the company's information.",
           "Also check how the design looks: that the text is easy to read, that the colors resemble what you have in mind, and that no important note is missing. When everything is right, give us your go-ahead and we move to production.",
         ],
       },
@@ -1617,34 +1648,32 @@ export const blogPostsEn: BlogPost[] = [
       "How to order a die-cut sticker from a photo of your dog or cat: what photo to send, what the final result looks like, and how much it costs at Yume.",
     category: "Guides",
     publishedAt: "2026-09-09",
-    modifiedAt: "2026-10-26",
+    modifiedAt: "2026-11-10",
     intro:
       "One of the most common requests we get for Waterproof Vinyl Stickers isn't a logo or a cartoon character: it's a photo of someone's pet. Turning your dog or cat into a die-cut sticker of its silhouette is one of our most common orders, and one of the easiest to quote. This guide covers what photo to send, what the result looks like, what it costs, how long it takes, and ideas for gifting or selling pet stickers.",
     sections: [
       {
-        heading: "What photo to send",
+        heading: "What photo to send for custom pet stickers",
         body: [
           "Send a photo where your pet is fully visible, well lit, and not blocked by anything else. You don't need a professional photo: a phone is enough. The clearer the outline against the background, the cleaner the die cut around the silhouette turns out.",
           "If you have a few photos of the same pet, send us all of them when requesting a quote: sometimes one works better than another for the cutout, so we can pick the best one together before building the digital proof.",
-          "A few practical tips: shoot at your pet's eye level rather than from above, so the face and body aren't distorted; avoid strong backlight, which darkens fur and hides detail; and if the fur is the same color as the background, look for a wall or floor that contrasts. A black dog on a black couch is hard to cut out well.",
-          "If your pet won't sit still, take several shots in a row and pick the best. A photo of your pet sitting or lying down also works well, because the silhouette is more compact and the sticker is easier to apply and peel.",
         ],
       },
       {
         heading: "What the result looks like",
         body: [
           "The sticker is cut to the exact shape of your pet's silhouette, or to the full photo if you'd rather keep a background or frame. It isn't a generic square or circle, which is what makes it a die-cut vinyl sticker. Before printing you get a digital proof to confirm the cut and colors.",
-          "You can see real examples of pets already turned into stickers in our gallery. The proof works the same as with any other design we work on: nothing is printed until you approve it.",
-          "When ordering you choose the cut type: die-cut or kiss-cut. If you're unsure which suits your pet, read our die-cut vs. kiss-cut comparison.",
-          "You also choose the finish: matte, glossy, or holographic. All of our stickers come with high-quality BOPP lamination. For a photo with lots of fur detail, matte and glossy are the most straightforward options; holographic has an extra per-piece cost, which you see when you select it on the product page.",
+          "You can see real examples of pets already turned into stickers in [our gallery](/en/gallery). The proof works the same as with any other design we work on: nothing is printed until you approve it.",
+          `When ordering you choose the cut type: die-cut or kiss-cut. If you're unsure which suits your pet, read our [die-cut vs. kiss-cut comparison](/en/blog/${BLOG_SLUG_EN["troquelado-vs-semitroquelado-stickers"]}).`,
+          "You also choose the finish: matte, glossy, or holographic. All of our stickers come with high-quality BOPP lamination. Holographic has an extra per-piece cost, which you see when you select it on the product page.",
         ],
       },
       {
-        heading: "Quantity and price",
+        heading: "Quantity and price of your pet stickers",
         body: [
           `100 pieces (small size): $${priceOf("stickers-vinil-impermeable", 100)}. Vinyl stickers are sold by piece count, not by sheet, with a minimum order of 40 pieces.`,
-          `For reference: 150 pieces come out to $${priceOf("stickers-vinil-impermeable", 150)} and 200 to $${priceOf("stickers-vinil-impermeable", 200)} MXN. Order the exact quantity you need: you pick it or type it in when you place your order.`,
-          "It's the same premium vinyl, resistant to water, sun, and scratches, that we use for any other custom design, so it holds up well on water bottles, laptops, or wherever you want to stick it.",
+          `For reference: 150 pieces come out to $${priceOf("stickers-vinil-impermeable", 150)} and 200 to $${priceOf("stickers-vinil-impermeable", 200)} MXN. Order the exact quantity you need: you pick it or type it in when you place your order. See all the options on the [custom vinyl stickers](/en/products/waterproof-vinyl-stickers) page.`,
+          `It's the same premium vinyl, resistant to water, sun, and scratches, that we use for any other custom design, so it holds up well on water bottles, laptops, or wherever you want to stick it. To compare materials, read [vinyl vs. paper](/en/blog/${BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"]}).`,
         ],
         table: {
           ...sizeTable(["stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
@@ -1654,7 +1683,8 @@ export const blogPostsEn: BlogPost[] = [
         heading: "How long it takes and how it's delivered",
         body: [
           `The digital proof normally arrives within 24 hours of payment. Once you approve it, the order takes ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days to reach your door anywhere in Mexico, or ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days if you pick it up at a Casa Blanca branch in Guadalajara.`,
-          `Home delivery is $${NATIONAL_SHIPPING_PRICE} MXN and branch pickup is $${CASABLANCA_PRICE} MXN. On orders of $${FREE_SHIPPING_THRESHOLD} MXN or more, both are free. If it's a gift with a deadline, quote early so there's room to adjust the proof.`,
+          `Home delivery is $${NATIONAL_SHIPPING_PRICE} MXN and branch pickup is $${CASABLANCA_PRICE} MXN. On orders of $${FREE_SHIPPING_THRESHOLD} MXN or more, both are free.`,
+          `If it's a gift with a deadline, quote early so there's room to adjust the proof. For all the timelines, see [how long an order takes](/en/blog/${BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"]}).`,
         ],
       },
       {
@@ -1663,7 +1693,7 @@ export const blogPostsEn: BlogPost[] = [
           "A pet sticker works as a gift, a keepsake, and a product to sell. The practical way to decide is to think about who will receive it and where it will be stuck, because that drives the size and quantity worth ordering.",
           "For personal use, order a few pieces with your dog or cat's photo and stick them on your water bottle, laptop, or helmet. As a gift, a pet cutout is an easy personal touch for a birthday or for someone who just adopted. If your pet has passed away, a sticker of its silhouette is a simple way to keep its image close.",
           "For pet businesses such as groomers, vet clinics, daycares, or pet stores, you can use photos of your clients' pets (with their permission) or your own pet as a brand image.",
-          "If you're organizing an event, such as a wedding where the pet is part of the family, you can also include a sticker of its silhouette among the event details.",
+          `If you're organizing an event, such as a wedding where the pet is part of the family, you can also include a sticker of its silhouette among the event details. See more ideas in [stickers for weddings and events](/en/blog/${BLOG_SLUG_EN["stickers-para-bodas-eventos-y-fiestas"]}).`,
         ],
       },
     ],
@@ -1681,8 +1711,16 @@ export const blogPostsEn: BlogPost[] = [
         a: `100 pieces (small size): $${priceOf("stickers-vinil-impermeable", 100)} MXN. The minimum order is 40 pieces.`,
       },
       {
+        q: "What cut and finish can I choose?",
+        a: "You can choose a die-cut or kiss-cut, and a matte, glossy, or holographic finish. Holographic has an extra per-piece cost, shown when you select it on the product page.",
+      },
+      {
         q: "Are the stickers water and sun resistant?",
         a: "Yes. They are printed on premium vinyl that resists water, sun, and scratches, per the product page.",
+      },
+      {
+        q: "Can I request adjustments to the digital proof?",
+        a: "Yes. The proof includes up to 2 rounds of adjustments, and we print nothing without your approval.",
       },
       {
         q: "How long does my order take?",
@@ -1704,14 +1742,14 @@ export const blogPostsEn: BlogPost[] = [
       "The real difference between ordering your custom medical prescription pad with logo and design work included or print-only, their prices, and when each option makes sense.",
     category: "Guides",
     publishedAt: "2026-09-09",
-    modifiedAt: "2026-10-26",
+    modifiedAt: "2026-11-11",
     intro:
       "When you request a quote for the custom medical prescription pad at Yume, you'll see two options at different prices: \"without design\" and \"with design.\" It's not just a price difference: it's a real difference in the work we do for you. Here's what each one includes, what you need to have ready, how the process works, and how long it takes, so you can pick the right one without going back and forth.",
     sections: [
       {
-        heading: "What each option includes",
+        heading: "Prescription pad with design vs. without design: what each option includes",
         body: [
-          `"Without design" ($${recetarioPrice("sin-diseno")}) is for when you already have your letterhead put together (an editable file with your logo, your details, and the layout you want) and you just need us to print it on the 100 Half-Letter sheets of 90 gr Bond paper.`,
+          `"Without design" ($${recetarioPrice("sin-diseno")}) is for when you already have your letterhead put together (an editable file with your logo, your details, and the layout you want) and you just need us to print it. Both options include a 100-sheet Half-Letter pad on 90 gr Bond paper, with a digital proof before printing.`,
           `"With design" ($${recetarioPrice("con-diseno")}) includes designing the letterhead with you from scratch: you give us your details (name, professional license number, specialty, practice address) and we put together a visual proposal, which we adjust with you until it looks the way you want, before printing.`,
           `The price gap between the two is $${recetarioPrice("con-diseno") - recetarioPrice("sin-diseno")}: that's what it costs to have someone build and refine your letterhead instead of you bringing it ready.`,
         ],
@@ -1727,7 +1765,7 @@ export const blogPostsEn: BlogPost[] = [
         },
       },
       {
-        heading: "When each one makes sense",
+        heading: "When to choose a prescription pad with or without design",
         body: [
           "Choose \"without design\" if you already have your letterhead as an editable file and only need it printed; choose \"with design\" if this is your first custom pad, your old one looks outdated, or you don't have the file on hand. The deciding factor is how finished your letterhead is today, not the size of your practice.",
           "If you already worked out your letterhead with a designer or have it from a previous print shop in an editable format, \"without design\" is the faster, more affordable option: we're just producing what you've already sorted out.",
@@ -1739,7 +1777,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "What you need ready to get started",
         body: [
           "For \"without design\" you need your letterhead as an editable file; for \"with design\" you only need your professional details and, if you have it, your logo. Either way, double-check your details before requesting a quote, because they're what ends up printed on all 100 sheets.",
-          "The details that usually go on a letterhead are your full name, specialty, professional license number (and specialty license, if applicable), practice address, phone number and, if you want, office hours. If you're unsure what to include, read our guide on what a medical prescription must include in Mexico.",
+          "The details that usually go on a letterhead are your full name, specialty, professional license number (and specialty license, if applicable), practice address, phone number and, if you want, office hours. If you're unsure what to include, read our guide on [what a medical prescription must include in Mexico](/en/blog/required-information-medical-prescription-mexico).",
           "If you work out of more than one practice, say so when you request the quote: the cleanest approach is usually one letterhead per location. Tell us how many you need on WhatsApp and we'll quote it with you.",
         ],
       },
@@ -1762,8 +1800,15 @@ export const blogPostsEn: BlogPost[] = [
         heading: "How to decide in a minute",
         body: [
           "Ask yourself three questions: do I have my letterhead in a file I can edit, do I like how it looks, and do I have all my details on hand? If all three are yes, \"without design\" is enough. If any answer is no, \"with design\" solves that gap within the same order.",
-          "And once your pad is sorted, the same letterhead works as the base for other pieces for your practice, like your business cards, so you don't start from scratch each time.",
-          "If you're not sure, message us on WhatsApp with your file or logo and we'll tell you which option fits your case before you pay.",
+          "And once your pad is sorted, the same letterhead works as the base for other pieces for your practice, like your [business cards for your practice](/en/blog/business-cards-for-your-practice), so you don't start from scratch each time.",
+          "If you're not sure, message us on WhatsApp with your file or logo and we'll tell you which option fits your case before you pay. When you're ready, choose your option on the [custom medical prescription pad](/en/products/medical-prescription-pads).",
+        ],
+      },
+      {
+        heading: "More guides for your custom medical prescription pad",
+        body: [
+          "If you're still comparing options for your practice, these guides can help you decide before you pay: see the [custom medical prescription pad](/en/products/medical-prescription-pads) with its price and options, compare [printed vs. digital prescription pads](/en/blog/printed-vs-digital-prescription-pads), and see how [Yume compares with other prescription pad print shops](/en/blog/yume-vs-online-prescription-pad-print-shops).",
+          "If your practice is in Guadalajara, see the guide to [custom medical prescription pads in Guadalajara](/en/blog/custom-medical-prescription-pads-guadalajara).",
         ],
       },
     ],
@@ -1787,6 +1832,10 @@ export const blogPostsEn: BlogPost[] = [
       {
         q: "Can I switch from without design to with design?",
         a: "Yes. Let us know on WhatsApp during the quote, before approving the digital proof.",
+      },
+      {
+        q: "Can I order a different letterhead for each practice?",
+        a: "Yes. Mention it when requesting your quote and tell us on WhatsApp how many you need: one letterhead per location is usually the cleanest approach.",
       },
       {
         q: "How long does it take to arrive?",
@@ -2125,104 +2174,116 @@ export const blogPostsEn: BlogPost[] = [
   },
   {
     slug: BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"],
-    title: "Vinyl vs. Paper: Why Your Custom Stickers Should Be Vinyl",
-    metaTitle: "Custom Stickers: Vinyl vs. Paper",
-    description: `Vinyl vs paper stickers: when each one makes sense. 100 pieces (small size): $${priceOf("stickers-vinil-impermeable", 100)} MXN, with a digital proof and shipping across Mexico.`,
+    title: "Vinyl vs. Paper Stickers: Which to Choose for Your Event",
+    metaTitle: "Vinyl vs. Paper Stickers: Which Is Right for You?",
+    description: `Vinyl vs. paper stickers for weddings, parties and gifts: what changes with water and sun. 100 pieces (small size): $${priceOf("stickers-vinil-impermeable", 100)}, with a digital proof.`,
     category: "Guides",
     publishedAt: "2026-09-09",
-    modifiedAt: "2026-10-26",
+    modifiedAt: "2026-10-29",
     intro:
-      "If you've never ordered custom stickers before, it's easy to miss the difference between vinyl and paper until one gets wet, fades in the sun, or tears when you peel it. Here's the real difference, where it matters most, how to choose the cut and finish, and why at Yume we work exclusively with vinyl.",
+      "If you're giving a gift or preparing a detail for a wedding, quinceañera, baptism or baby shower, choosing between vinyl and paper stickers changes how the piece holds up on the table, on a glass or on a small bag. Here we explain the difference, what happens with water and ice, when each material makes sense, how much it costs and why Yume works only with vinyl.",
     sections: [
       {
-        heading: "The difference isn't just the material",
+        heading: "Vinyl vs. paper stickers: the difference that matters",
         body: [
-          "The main difference is durability. A regular paper sticker gets wet, fades in the sun, and tears easily. Vinyl is a flexible plastic that resists water, sun, and scratches, according to the spec sheet of our vinyl stickers. That is why vinyl lasts longer on surfaces that get used or wet.",
-          "A paper sticker works fine for short-lived, indoor use, or anywhere the weather won't get to it. Vinyl holds up well on bottles that get washed, laptops that travel with you, skateboards, or any surface that gets wet or spends time outdoors.",
-          "Another difference is what happens when you peel and handle it: paper tears easily if you try to reposition it, while vinyl is flexible. If the sticker will be touched a lot, choose the material that can take that treatment.",
+          "The main difference between vinyl and paper stickers is the material. Vinyl is a flexible plastic and, according to our sticker specifications, resists water, sun and scratches. That's why we use it for pieces that are handled, get wet or are exposed to light, such as bottles and laptops.",
+          "We don't give durability figures for paper: Yume doesn't produce it and we don't have our own test results. When comparing quotes, always ask about the exact material and finish, because that's where the real difference in what you'll receive lies.",
         ],
       },
       {
-        heading: "Where the difference matters most",
+        heading: "What happens on a glass, cup or jar with ice?",
         body: [
-          "It matters most when the sticker gets wet, sits in the sun, or is handled often. On a water bottle, refrigerated packaging, a car, a window, a laptop, or a suitcase, vinyl is the option that actually lasts without fading or peeling off.",
-          "For something used once, indoors (like a detail inside a gift box that will never touch water or sun) the difference matters less, but even there, vinyl looks and feels more premium to the touch.",
-          "A quick way to decide: ask yourself three questions. Will it get wet? Will it sit in the sun? Will many people touch it? If any answer is yes, order vinyl. If all three are no and it's a one-time use, paper could be enough, but at Yume we only work with vinyl.",
+          "Yume's vinyl stickers are water-resistant according to the product specifications, so a glass, cup or jar with ice is a reasonable use as a table detail. We don't promise they'll withstand prolonged soaking or intense washing. If you have a special case, message us on WhatsApp and we'll review it before production.",
+          "For weddings, quinceañeras, baptisms or baby showers, these stickers often go on glasses, cups, bags or souvenir jars. Tell us where yours will go, for example on a glass with a cold drink or a jar with ice, and we'll honestly tell you what to expect before production.",
+        ],
+      },
+      {
+        heading: "When to choose vinyl and when to choose another material",
+        body: [
+          "Vinyl makes sense when the sticker gets wet, is exposed to light or is touched by many people, as on glasses, bottles, laptops or packaging. For a one-time indoor invitation, another material may be enough, but at Yume we only make vinyl. Ask yourself three questions: will it get wet, get sun or be touched by many people?",
+          "If you answer yes to any of the three, order vinyl. If all three answers are no and the piece is for one-time use, the decision is yours, and we'll clearly tell you that we don't produce another material.",
         ],
         table: {
-          headers: ["Situation", "What fits best"],
+          headers: ["Situation", "What makes sense"],
           rows: [
+            ["Souvenir glass, cup or jar", "Vinyl, because of contact with water or ice"],
             ["Water bottle, tumbler or cooler", "Vinyl, because of water contact"],
             ["Laptop, suitcase or skateboard", "Vinyl, because of rubbing and scratches"],
             ["Car or window", "Vinyl, because of sun exposure"],
-            ["Your brand's packaging", "Vinyl, so it arrives and lasts the same"],
-            ["Indoor one-time detail", "The difference matters less, but vinyl feels more premium"],
+            ["Packaging or gift bag", "Vinyl, so it arrives and lasts the same"],
+            ["One-time indoor invitation", "Another material may be enough; at Yume we only make vinyl"],
           ],
         },
       },
       {
-        heading: "Why at Yume we only work with vinyl",
+        heading: "Why Yume works only with vinyl",
         body: [
-          "At Yume we only work with vinyl because we'd rather offer one material we know holds up. Both of our sticker products (Custom Logo Stickers and Waterproof Vinyl Stickers) are made from premium vinyl with die-cut or kiss-cut cutting, not paper.",
-          "We'd rather offer one material that holds up than a cheaper option that looks fine at first and deteriorates fast. That way, whether the sticker ends up on your brand's packaging, your laptop, or a package you're shipping to a customer, you know it'll arrive and hold up in the same condition.",
-          "If your design is a logo for your business, the option is Custom Logo Stickers. If it's a character, a pet, a photo, or any other design, it's Waterproof Vinyl Stickers. Both are sold by piece count, not by sheet.",
+          "At Yume we only work with vinyl because we prefer to offer a material we know holds up. Both of our sticker products, Custom Vinyl Stickers and Stickers and Labels with Your Logo, are made from premium vinyl with die-cut or kiss-cut cutting, and you always receive a digital proof before production.",
+          "For a wedding, quinceañera or baby shower detail, the product is Custom Vinyl Stickers: any design, character or photo. For your business logo, it's Stickers and Labels with Your Logo. Both are sold by piece count, not by sheet.",
         ],
       },
       {
         heading: "Cut and finish: what you can choose",
         body: [
-          "With vinyl you choose two things when ordering: the type of cut and the finish. The cut can be die-cut or kiss-cut, and the finish matte, glossy or holographic. All of our stickers come with high-quality BOPP lamination. Holographic costs an extra $0.50 per piece, which you see when you select it on the product page.",
-          "If you're unsure which cut fits you, read our die-cut vs. kiss-cut comparison, where we explain when each one makes sense.",
-          "Cut and finish are design decisions: the material stays the same premium vinyl. Before printing you receive a digital proof to confirm how the design looks.",
+          "With vinyl you choose two things when ordering: the cut, which can be die-cut or kiss-cut, and the finish, which can be matte, glossy or holographic. All our stickers have high-quality BOPP lamination. Holographic has an extra cost per piece. The material doesn't change: it's still the same premium vinyl, so these are design decisions.",
+          "If you're unsure which cut suits you, read our die-cut vs. kiss-cut comparison, where we explain when each makes sense. Before printing you receive a digital proof to confirm how the design looks.",
         ],
       },
       {
         heading: "How much vinyl stickers cost",
         body: [
-          `100 pieces (small size): $${priceOf("stickers-vinil-impermeable", 100)} MXN for vinyl stickers and $${priceOf("stickers-logo-personalizado", 100)} MXN for logo stickers. The minimum order is 40 pieces for vinyl and 50 for logo stickers.`,
-          `As a reference, 150 vinyl pieces cost $${priceOf("stickers-vinil-impermeable", 150)} and 200 pieces cost $${priceOf("stickers-vinil-impermeable", 200)} MXN. Order the exact quantity you need: you pick it or type it in when you place your order.`,
+          `100 pieces (small size): $${priceOf("stickers-vinil-impermeable", 100)} for Custom Vinyl Stickers and $${priceOf("stickers-logo-personalizado", 100)} for labels with your logo. The minimum is 40 vinyl pieces and 50 logo labels, and you order the exact quantity you need.`,
+          `As a reference, 150 vinyl pieces cost $${priceOf("stickers-vinil-impermeable", 150)} and 200 pieces cost $${priceOf("stickers-vinil-impermeable", 200)}. For an event, count your guests and add a few spare pieces.`,
         ],
         table: {
-          ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
+          ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 150, 200, 300], "en"),
         },
       },
       {
-        heading: "Where to design and order your stickers online",
+        heading: "How to order and when they arrive",
         body: [
-          "You can order online without a finished design. Send us your logo, character, photo, or pet via WhatsApp or from the online shop, in whatever format you have, even if it's not ideal, and we'll build a digital proof before printing. You can request size or color adjustments at that stage.",
-          `The digital proof normally arrives within 24 hours of payment and includes up to 2 rounds of adjustments. From the moment you approve it, your order arrives at your door in ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days, or is ready for pickup at Casa Blanca in ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days.`,
-          "The whole process happens remotely: you request a quote, approve the design, and receive your order at home no matter what city in Mexico you're in, even though we produce in Guadalajara. To see how Yume compares with other options, check our comparison with online print shops or the guide on where to print stickers in Mexico.",
+          `Send us your design through WhatsApp or the shop and we'll send you a digital proof, normally within 24 hours of payment, with up to 2 rounds of adjustments. From approval, it arrives at your door in ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days.`,
+          `If you're in Guadalajara, your order can be ready for pickup at Casa Blanca in ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days. You can send us your logo, character, photo or idea in whatever format you have, even if it isn't ideal. We produce in Guadalajara and ship throughout Mexico.`,
+          "If you want to compare Yume with other options, check our comparison with online print shops or the guide to where to print stickers in Mexico.",
         ],
       },
     ],
     faq: [
       {
         q: "Do vinyl stickers resist water and sun?",
-        a: "Yes. They are printed on premium vinyl that resists water, sun and scratches, according to the product spec sheet. They hold up well on bottles, laptops, skateboards or surfaces that get wet or sit in the sun.",
+        a: "Yes. They are printed on premium vinyl that resists water, sun and scratches, according to the product specifications. We don't promise they'll withstand prolonged soaking or intense washing.",
+      },
+      {
+        q: "Can I put a sticker on a glass, cup or jar with ice?",
+        a: "Yume's vinyl is water-resistant according to the product specifications, so this is a reasonable use as a table detail. We don't promise it will withstand prolonged soaking or intense washing. If you have a special case, message us on WhatsApp.",
       },
       {
         q: "Does Yume make paper stickers?",
-        a: "No. Both of our sticker products are made from premium vinyl. We'd rather offer one material we know holds up.",
+        a: "No. Both of our sticker products are made from premium vinyl. We prefer to offer one material we know holds up.",
       },
       {
         q: "Which cuts and finishes can I choose?",
-        a: "You can choose die-cut or kiss-cut, and a matte, glossy or holographic finish. Holographic costs $0.50 more per piece.",
+        a: "You can choose die-cut or kiss-cut, and a matte, glossy or holographic finish. Holographic has an extra cost per piece that you see when selecting it on the product page.",
       },
       {
         q: "How much do vinyl stickers cost?",
-        a: `100 pieces (small size): $${priceOf("stickers-vinil-impermeable", 100)} MXN. The minimum order is 40 pieces.`,
+        a: `100 pieces (small size): $${priceOf("stickers-vinil-impermeable", 100)}. The minimum order is 40 pieces.`,
       },
       {
         q: "Are they sold by sheet or by piece?",
-        a: "By piece count, not by sheet. You order the exact quantity you need, starting at 40 pieces for vinyl and 50 for logo stickers.",
+        a: "By piece count, not by sheet. You order the exact quantity you need, starting at 40 vinyl pieces and 50 labels with your logo.",
       },
       {
         q: "Can I see how they'll look before printing?",
         a: "Yes. We send a digital proof, normally within 24 hours of payment, with up to 2 rounds of adjustments. We don't print anything without your approval.",
       },
       {
+        q: "Can I order stickers for a wedding or party?",
+        a: "Yes. You can order vinyl stickers with your event design. Send us your idea on WhatsApp and we'll send you a digital proof before production.",
+      },
+      {
         q: "How long does an order take and how much is shipping?",
-        a: `From the moment you approve the proof, your order arrives at your door in ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days. Shipping costs $${NATIONAL_SHIPPING_PRICE} MXN and is free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more.`,
+        a: `From the moment you approve the proof, your order arrives at your door in ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days. Shipping costs $${NATIONAL_SHIPPING_PRICE} and is free on orders of $${FREE_SHIPPING_THRESHOLD} or more.`,
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
@@ -2385,12 +2446,12 @@ export const blogPostsEn: BlogPost[] = [
       "What you need to quote business cards for your medical practice, how the digital proof works, and why it pays to order them with your prescription pad.",
     category: "Guides",
     publishedAt: "2026-09-09",
-    modifiedAt: "2026-10-26",
+    modifiedAt: "2026-11-10",
     intro:
       "If you've already ordered your custom medical prescription pad, it's common to want a matching business card: it's one of the first things a patient takes away from the visit, along with the prescription. This guide covers what to prepare, how to check your license number, what belongs on the card, and how the quote process works at Yume.",
     sections: [
       {
-        heading: "What information we need",
+        heading: "What information you need to request a quote for your practice business cards",
         body: [
           "To quote your card we need your full name, specialty, professional license number (and specialty license, if applicable), your practice's contact details, and the quantity of cards. These are the same details your prescription pad uses, so if you've already ordered one, most of it is ready.",
           "Contact details means the practice address, phone and, if you want, social media, email or website. If you work at more than one practice, tell us which one goes on the card or whether you'd like a different card for each location.",
@@ -2402,7 +2463,7 @@ export const blogPostsEn: BlogPost[] = [
         body: [
           "Before printing, copy your license number exactly as it appears on your official cédula, instead of retyping it from memory. In Mexico the cédula profesional is handled by the SEP's Dirección General de Profesiones, and the exact number is the one that must be printed.",
           "If you applied for your cédula online, the SEP delivers it in digital format by email. According to the SEP's announcement, physical cédulas remain valid, so either one works to copy the exact number. A specialty license is a separate number, so confirm it separately.",
-          "A single wrong digit means reprinting the whole run. That's why, when we send you the digital proof, you should check the license number against your document before approving.",
+          "A single wrong digit means reprinting the whole run. That's why, when we send you the digital proof, you should check the license number against your document before approving. To learn what information a prescription needs, see [the required information on a medical prescription in Mexico](/en/blog/required-information-medical-prescription-mexico).",
         ],
       },
       {
@@ -2411,30 +2472,40 @@ export const blogPostsEn: BlogPost[] = [
           "A practice card works best with a few legible details: your name, specialty, license number, phone, address and one digital contact. That's a design recommendation, not a rule: your medical association, institution or state may ask for other details, so confirm with them if you work under one.",
           "Leave off anything that changes often. If your hours, phone or fees change every few months, don't print them on a whole run of cards: prefer a stable detail, like your email or a QR code to your website or online booking page.",
           "If you use a QR code, test it with your phone on the digital proof before approving. Also make sure the text is a comfortable size: patients often look at the card days later, at home, not in your office.",
+          "If you also want patients to leave you reviews, see the [review plate for medical practices](/en/blog/google-review-plate-for-medical-practices).",
         ],
       },
       {
-        heading: "The design and approval process",
+        heading: "The design and approval process for your card",
         body: [
-          "The process is: you send your details, we build a proposal, we send you a digital proof, and we only go to production once you approve it. You can request adjustments on the proof, which is the cheapest moment to fix a mistake.",
-          "With your details, we put together a design proposal and send you a digital proof before printing. It's much easier to fix your license number or phone number at this stage than after the cards are already printed.",
+          "The process is: you send your details, we build a proposal, we send you a digital proof, and we only go to production once you approve it. You can request adjustments on the proof, which is the cheapest moment to fix a mistake, such as your license or phone number.",
           "Once you approve the final design, it goes to production. The process is the same whether you order the card on its own or together with your prescription pad in the same quote. We produce in Guadalajara and ship anywhere in Mexico; we confirm timing and cost for your order when we quote.",
         ],
       },
       {
-        heading: "Why order it alongside your prescription pad",
+        heading: "Why order your cards alongside your prescription pad",
         body: [
           "Ordering together gives you a single letterhead for both pieces: same typography, same colors, same details. Your practice looks more consistent and you don't pay for or coordinate two separate designs. It's the same logic behind a consistent look across all your stationery.",
-          `If you already have your letterhead ready, the 100-sheet Half-Letter prescription pad costs $${recetarioPrice("sin-diseno")} MXN. If you want us to design it with you, it costs $${recetarioPrice("con-diseno")} MXN. That same design is the base for your card, so you don't start from zero with each piece.`,
-          "If you don't have your custom prescription pad yet, you can quote both together from scratch and we'll put together a single letterhead design that works for both pieces. To understand the difference between the two pad options, read our guide on prescription pads with design vs. without design.",
+          `If you already have your letterhead ready, the 100-sheet Half-Letter [custom medical prescription pad](/en/products/medical-prescription-pads) costs $${recetarioPrice("sin-diseno")} MXN. If you want us to design it with you, it costs $${recetarioPrice("con-diseno")} MXN. That same design is the base for your card, so you don't start from zero with each piece.`,
+          "If you don't have your custom prescription pad yet, you can quote both together from scratch and we'll put together a single letterhead design that works for both pieces. To understand the difference between the two pad options, read [prescription pads with design vs. without design](/en/blog/prescription-pad-with-design-vs-without-design). If you are in Guadalajara, see also [custom medical prescription pads in Guadalajara](/en/blog/custom-medical-prescription-pads-guadalajara).",
         ],
       },
       {
-        heading: "How to quote your business card",
+        heading: "How to request a quote for your business cards on WhatsApp",
         body: [
           "Quoting is simple: message us on WhatsApp with your details, the number of cards and, if you have it, your logo or letterhead. Business cards are quoted case by case, so we reply with the price for your specific order, not a generic rate.",
-          "To speed things up, have these ready: name and specialty as you want them to appear, license number(s), phone, address, email or social media, quantity, and whether you want the same design as your prescription pad. If you don't have a pad yet, tell us and we'll quote both pieces together.",
+          "To speed up your quote, have the information in this table ready. If you don't have a prescription pad yet, tell us and we'll quote both pieces together.",
         ],
+        table: {
+          headers: ["Information", "How to prepare it"],
+          rows: [
+            ["Name and specialty", "As you want them to appear"],
+            ["License number(s)", "Copied from your official document"],
+            ["Contact details", "Phone, address, email or social media"],
+            ["Quantity", "How many cards you need"],
+            ["Design", "Logo or letterhead, or the same as your prescription pad"],
+          ],
+        },
       },
     ],
     faq: [
@@ -2457,6 +2528,10 @@ export const blogPostsEn: BlogPost[] = [
       {
         q: "How much is the prescription pad I can order with the card?",
         a: `The 100-sheet Half-Letter prescription pad costs $${recetarioPrice("sin-diseno")} MXN if you already have your design and $${recetarioPrice("con-diseno")} MXN if we design it with you.`,
+      },
+      {
+        q: "What if I work at more than one practice?",
+        a: "When requesting a quote, tell us which practice should appear on the card or whether you would prefer a different card for each location.",
       },
       {
         q: "Do you ship outside Guadalajara?",
@@ -2756,12 +2831,12 @@ export const blogPostsEn: BlogPost[] = [
       "Which link to send us, how to test your NFC and QR plate the day it arrives, and where to place it so customers leave a Google review in seconds.",
     category: "Guides",
     publishedAt: "2026-09-15",
-    modifiedAt: "2026-10-26",
+    modifiedAt: "2026-11-11",
     intro:
       "Unlike other NFC plates sold \"blank\" that ask you to program them yourself with an app, Yume's plates arrive with the NFC and QR already configured with your business's link from the moment we produce them: you take it out of the box and it's already ready for your customers to use. This guide walks you through what to send us, how to test it, where to put it, and what to do if something changes at your business.",
     sections: [
       {
-        heading: "What we need from you before we produce it",
+        heading: "What we need from you before producing your Google review plate",
         body: [
           "We only need your Google review link or, if you don't have it handy, your business's exact name as it appears on Google. After your purchase we ask for it over WhatsApp, and we use it to program the NFC and generate the QR code before producing your plate.",
           "The more precise the detail, the better: if your business shares a name with others, send the direct link or your listing's address so the plate leads to the right one. That's the point of this step: your customers won't have to search for you among similar results.",
@@ -2773,6 +2848,7 @@ export const blogPostsEn: BlogPost[] = [
         body: [
           "There are two versions with the same setup: the Plate, 12 × 12 cm and 0.2 cm thick, with adhesive to stick it down, and the Stand, 12.75 cm tall and 7.6 cm wide, with a 5 cm deep base so it stands upright. Both come in white or black and carry NFC and a QR code.",
           "Choose the Plate if you have a fixed spot to stick it, like the wall next to the register or the front of the counter. Choose the Stand if you'll move it around or prefer no adhesive, since it rests on any flat surface. Both are made to order.",
+          "See the details of the [Google review Plate](/en/products/google-review-nfc-plate) and [Google review Stand](/en/products/google-review-nfc-stand) on their product pages.",
         ],
         table: {
           headers: ["", "Plate", "Stand"],
@@ -2785,7 +2861,7 @@ export const blogPostsEn: BlogPost[] = [
         },
       },
       {
-        heading: "The day it arrives: how to test it",
+        heading: "The day it arrives: how to test your plate",
         body: [
           "The plate arrives working: there's nothing to install or scan to activate it. Before putting it out, tap your own phone against the plate and then scan the QR with the camera. Both should take you straight to the screen for leaving a review for your business.",
           "If you have the no-stand version, stick it down with the adhesive already on the back, on a clean, dry surface. If you have the Stand, just set it in place.",
@@ -2793,10 +2869,10 @@ export const blogPostsEn: BlogPost[] = [
         ],
       },
       {
-        heading: "How your customer uses it",
+        heading: "How your customer uses it to leave a review",
         body: [
-          "Your customer has two paths and both end in the same place: tap their phone against the plate (NFC) or scan the QR code with the camera. They install nothing. NFC is the same \"tap to pay\" technology used by contactless terminals.",
-          "The QR is the backup: it works when the phone has NFC turned off or when the person would rather use the camera. That's why the code should stay visible and uncovered, even though NFC is the quickest route.",
+          "Your customer has two paths and both end in the same place: tap their phone against the plate (NFC) or scan the QR code with the camera. They do not install anything or need to create an account with us. They simply reach the screen to leave a review of your business.",
+          `The QR is the backup: it works when the phone has NFC turned off or when the person would rather use the camera. That's why the code should stay visible and uncovered, even though NFC is the quickest route. To compare both options, see [NFC plate vs. printed QR](/en/blog/${BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"]}).`,
           "A good moment to mention it is when your customer is already happy: at checkout, when picking up an order, or at the end of an appointment. One short sentence is enough: \"If you were happy today, you can leave us a review by tapping your phone here\".",
         ],
       },
@@ -2805,13 +2881,20 @@ export const blogPostsEn: BlogPost[] = [
         body: [
           "Place it where your customer is already in front of you when deciding whether they were satisfied: next to the register, on the front desk, on the table when the bill arrives, or on the desk at the end of an appointment. Avoid corners or far-off walls where nobody stops.",
           "Make sure the front of the plate isn't hidden behind objects, card holders, or cables, because NFC is read by bringing the phone close and the QR needs to be fully visible. Check once in a while that it's clean and in plain sight.",
+          `We have placement guides for [medical practices](/en/blog/${BLOG_SLUG_EN["placa-resenas-google-para-consultorios"]}), [restaurants](/en/blog/${BLOG_SLUG_EN["placa-resenas-google-para-restaurantes"]}), [salons and barbershops](/en/blog/${BLOG_SLUG_EN["placa-resenas-google-para-salones-esteticas-y-barberias"]}), and [events](/en/blog/${BLOG_SLUG_EN["placa-resenas-google-para-planners-y-eventos"]}).`,
         ],
       },
       {
         heading: "If your business changes its name or Google listing",
         body: [
-          "Message us on WhatsApp and we'll sort it out with you: depending on the case, it can be solved by reprogramming the same plate or may require a new one. Tell us what changed and what the new link is so we can give you a concrete answer.",
-          "It's not something the end customer can change on their own from their phone, precisely to prevent anyone else from reconfiguring it without you knowing. If the plate leads to the wrong listing, tell us before putting it into use.",
+          "Message us on WhatsApp and we'll sort it out with you: depending on the case, it can be solved by reprogramming the same plate or may require a new one. Tell us what changed and what the new link is so we can give you a concrete answer. If the plate leads to the wrong listing, tell us before putting it into use.",
+        ],
+      },
+      {
+        heading: "After placing it: how to get more reviews",
+        body: [
+          `Putting the plate in place is the first step; next, get into the habit of mentioning it when your customer is happy. If your business listing is not ready yet, see how to [set up your Google profile](/en/blog/${BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"]}) and ask for reviews. For ideas on when and how to ask, read about [getting more reviews](/en/blog/${BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"]}) with NFC and QR.`,
+          `If you are unsure between a one-time payment and a subscription, compare [one-time payment vs. subscription](/en/blog/${BLOG_SLUG_EN["placas-resenas-google-pago-unico-vs-suscripcion"]}). To get to know your customers better, you can also [create a customer satisfaction survey](/en/blog/${BLOG_SLUG_EN["como-hacer-una-encuesta-de-satisfaccion-del-cliente"]}).`,
         ],
       },
     ],
@@ -2860,7 +2943,7 @@ export const blogPostsEn: BlogPost[] = [
       "Custom stationery vs. generic templates: what changes for a wedding, an event or your brand, and when custom design is worth it.",
     category: "Guides",
     publishedAt: "2026-09-23",
-    modifiedAt: "2026-10-26",
+    modifiedAt: "2026-11-11",
     intro:
       "When you're quoting stationery, it's easy to run into two very different kinds of supplier: one who sells you a generic template already made, and one who designs the piece around your event or brand from scratch. Both solve \"having printed stationery,\" but they don't solve the same problem. If you're planning a wedding, a baptism, a quinceañera or a gift for someone special, the difference shows on the table. Here's what changes between custom design and a template, and when each one makes sense.",
     sections: [
@@ -2875,7 +2958,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "Custom design vs. template: what changes for your brand",
         body: [
           "With custom design, the piece is built from scratch with your colors, your typography if you already have one, and the real details of your event, business or practice. With a template you pick from a closed catalog and fill in fields. The difference is control: you decide how it looks, not the mold.",
-          "That matters more than it seems for custom stationery: it's the piece your guest, customer or patient literally holds in their hand, so it communicates as much as your logo on your storefront.",
+          `That matters more than it seems for custom stationery: it's the piece your guest, customer or patient literally holds in their hand, so it communicates as much as your logo on your storefront. For your business, see the guide to [custom stationery for businesses](/en/blog/${BLOG_SLUG_EN["papeleria-personalizada-para-negocios-jalisco"]}).`,
           "The other practical difference is the process: with custom design we send you a digital proof of the final design before printing, so you approve it (or ask for changes) before a single piece goes into production.",
         ],
         table: {
@@ -2892,7 +2975,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "For weddings and events: why custom detail shows",
         body: [
           "At an event, stationery is what your guests touch, read and sometimes take home. When the menu, the invitation and the sticker share a style and carry the real names for the occasion, the event looks planned. A loose template rarely achieves that coherence across pieces.",
-          "At Yume we handle wedding menus, invitations, stickers for weddings and events, temporary tattoos and candy boxes by quote. If you already have a color palette or a visual reference, we use it as the base so every piece looks like one family. If you're putting a wedding together, start with the custom wedding menu, usually the piece that shines most on the table.",
+          `At Yume we handle wedding menus, invitations, stickers for weddings and events, temporary tattoos and candy boxes by quote. If you already have a color palette or a visual reference, we use it as the base so every piece looks like one family. If you're putting a wedding together, start with the [custom wedding menu](/en/blog/${BLOG_SLUG_EN["menu-de-boda-personalizado"]}), usually the piece that shines most on the table. You can also see how to [order custom invitations](/en/blog/${BLOG_SLUG_EN["como-pedir-invitaciones-personalizadas-para-eventos"]}) and ideas for [wedding stickers](/en/blog/${BLOG_SLUG_EN["stickers-para-bodas-eventos-y-fiestas"]}).`,
           "If you're a wedding or event planner, the flow is the same: send us the event details on WhatsApp, we send the digital proof and, once your client approves it, it goes into production. That way you can show the design before a single piece is printed.",
         ],
       },
@@ -2908,14 +2991,14 @@ export const blogPostsEn: BlogPost[] = [
         body: [
           "Yume operates as a custom print shop in Guadalajara, not a template shop. Every prescription pad, label or piece of stationery is designed around the real details of whoever orders it, goes through a digital proof you approve, and ships across Mexico from Guadalajara.",
           "If you already have a logo or brand identity, we adapt it directly into the piece; if you don't, we build it with you before reaching the digital proof stage. Either way, what you get is a piece that's actually yours, not a template with your name stamped on it.",
-          `The 100-sheet prescription pad costs $${recetarioPrice("sin-diseno")} MXN if you already have your design and $${recetarioPrice("con-diseno")} MXN if we design it with you. For invitations, wedding menus and other event pieces we quote on WhatsApp based on quantity and format.`,
+          `The 100-sheet [custom medical prescription pad](/en/products/medical-prescription-pads) costs $${recetarioPrice("sin-diseno")} MXN if you already have your design and $${recetarioPrice("con-diseno")} MXN if we design it with you. For invitations, wedding menus and other event pieces we quote on WhatsApp based on quantity and format.`,
         ],
       },
       {
         heading: "How to start your custom order",
         body: [
           "Message us on WhatsApp with the type of piece, the quantity and, if you have them, your logo or style references. We send a digital proof and nothing is produced until you approve it. Then you receive your order by parcel or pick it up at a Casa Blanca branch.",
-          `Once the proof is approved, Casa Blanca pickup takes ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days and home delivery ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days. For an event with a date, quote early so there's room for adjustments. For the full step by step, see how to order custom stationery online.`,
+          `Once the proof is approved, Casa Blanca pickup takes ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days and home delivery ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days. For an event with a date, quote early so there's room for adjustments. For the full step by step, see how to [order custom stationery online](/en/blog/${BLOG_SLUG_EN["como-pedir-papeleria-personalizada-en-linea"]}).`,
         ],
       },
     ],
@@ -3160,72 +3243,78 @@ export const blogPostsEn: BlogPost[] = [
     description: `Stickers for weddings, events, and parties: uses, sizes, and formats. 100 pieces (small size): $${priceOf("stickers-logo-personalizado", 100)} MXN, with a digital proof and shipping across Mexico.`,
     category: "Guides",
     publishedAt: "2026-09-23",
-    modifiedAt: "2026-10-26",
+    modifiedAt: "2026-11-11",
     intro:
-      "Custom stickers are trending as a celebration detail: they've become a real hit at weddings, quinceañeras, and parties of every kind, sealing favor bags, decorating the table, or matched to the rest of the event's stationery. A sticker with the couple's names, the event date, or the party's theme is one of the cheapest ways to personalize a celebration: it doesn't replace the invitation or the menu, but it ties everything else together visually. This guide covers the most common uses for stickers at weddings, events, and parties, and what to order depending on the type of celebration.",
+      "A sticker with the couple's names, the date, or the party theme turns a favor bag or box into a detail that looks planned. This guide explains how to use stickers for weddings, events, and parties on favor bags, boxes, envelopes, and bottles, which format to order, how many to buy, and how far in advance to order for weddings, quinceañeras, baptisms, and parties.",
     sections: [
       {
-        heading: "Why they've become so popular",
+        heading: "Stickers for weddings, events, and parties: why they make a favor special",
         body: [
-          "Custom stickers have become popular at celebrations because they're a small detail that shows up in photos and on every gift a guest takes home, they cost little per piece, and they stick to almost any surface. That makes them easy to add to any budget or event size.",
-          "It's a trend we see grow wedding after wedding, party after party. Unlike a generic party favor, a sticker carries the name, date, or theme of your celebration, so it feels made for that event instead of bought off a shelf.",
+          "A custom sticker with names, a date, or a theme turns a generic favor into a detail made for your event. It appears in photos, seals bags, boxes, and bottles, and keeps a consistent look across the table. It works for weddings, quinceañeras, baptisms, and children's parties.",
+          "A trend toward distinctive, functional favors with their own aesthetic makes a simple label a way to personalize the detail. A sticker with names or a date serves that purpose.",
         ],
       },
       {
-        heading: "The most common uses at a celebration",
+        heading: "Custom stickers for favor bags",
         body: [
-          "The most common uses are sealing candy or gift bags, closing invitation envelopes, decorating the centerpiece or welcome sign, and sticking on bottles or cans for the toast. At weddings and quinceañeras they carry names or the date; at themed parties, the theme's design.",
-          "By type of celebration, these are the ideas requested most:",
-          "Wedding: the couple's initials and the date to seal favor bags, invitation envelopes, or jars on the candy table. Quinceañera: the honoree's name or the party theme on bags, bottles, and keepsakes.",
-          "Baby shower, baptism, or first communion: the guest of honor's name or a theme icon on small boxes and keepsake bags. Kids' party: the theme's character or design on favor boxes and surprise bags. Bachelorette party or company event: a phrase, a logo, or the event name on bottles and gifts for attendees.",
-          "If you're already ordering custom invitations or a custom wedding menu, using the same design on the stickers makes the whole event feel like one cohesive piece, not separate items bought apart from each other.",
+          "To seal a favor bag, order a sticker with the couple's initials, the date, or the guest of honor's name. Stickers are sold by the piece, so you can order close to the number of guests, and you receive a digital proof before printing.",
+          "These ideas work for different celebrations:",
+          "Wedding: the couple's initials and the date for favor bags, invitation envelopes, or jars on the candy table. Quinceañera: the honoree's name or the party theme on bags, bottles, and keepsakes.",
+          "Baby shower, baptism, or first communion: the guest of honor's name or a theme icon on small boxes and favor bags. Kids' party: the theme's character or design on favor boxes and surprise bags. Bachelorette party or company event: a phrase, a logo, or the event name on bottles and gifts for attendees.",
         ],
       },
       {
-        heading: "What format to order depending on the use",
+        heading: "Favor boxes and other packaging",
         body: [
-          "For favor bags or envelopes, a round or oval sticker in the small (up to 4 cm) or medium (5 to 6 cm) size is the most common choice. For bottles or cans, a rectangle or a die-cut matching your design's shape works best, and if it will get wet, order water-resistant vinyl instead of paper.",
-          "On curved surfaces like a bottle or a can, a die-cut to your design's exact shape looks cleaner than a generic square. If you're unsure between die-cut and kiss-cut, read our die-cut vs. kiss-cut comparison.",
-          "If the sticker will be on something that gets wet (a cooler, a bottle, outdoors), vinyl is the safe choice; to see how it differs from paper, check our vinyl vs. paper stickers guide. When ordering vinyl you also pick the finish: matte, glossy, or holographic (holographic has an extra per-piece cost, which you see on the product page). All of our stickers come with high-quality BOPP lamination.",
-          "At Yume these sell by piece count, not by sheet: you can order exactly the number of guests or tables your event has, without buying more than you need.",
+          "On a favor box, the sticker serves as a seal or a label with the event name. It can also go on invitation envelopes, candy table jars, and bottles for the toast. Choose vinyl if the packaging might get wet: Yume's vinyl resists water, sun, and scratches.",
+          `If you're unsure between vinyl and paper, see [vinyl vs. paper stickers](/en/blog/${BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"]}). If the favor is a candy box, see [wedding favor boxes](/en/blog/${BLOG_SLUG_EN["dulceros-para-eventos-sociales-boda-xv-baby-shower"]}), which pair well with a matching sticker.`,
+        ],
+      },
+      {
+        heading: "What format to order for your packaging",
+        body: [
+          "When ordering, choose the cut: die-cut, which follows the exact shape of your design, or kiss-cut. You also choose a matte, glossy, or holographic finish; holographic costs extra per piece. All our stickers have high-quality BOPP lamination. Send us what you plan to seal and see the result in the digital proof.",
+          `For more on the difference between cuts, read [die-cut vs. kiss-cut](/en/blog/${BLOG_SLUG_EN["troquelado-vs-semitroquelado-stickers"]}).`,
+          "For a logo or the couple's monogram, [custom logo stickers](/en/products/custom-logo-stickers) resist water. For any other design, character, or themed illustration, order [vinyl stickers](/en/products/waterproof-vinyl-stickers). At Yume they are sold by piece count, not by sheet.",
+        ],
+      },
+      {
+        heading: "How to match the sticker to the event palette",
+        body: [
+          "Use the same palette, typeface, and initials on the sticker, invitation, and menu, and the event reads as one piece. Define the design once and order each piece using the same file, so colors and style match across the event stationery.",
+          `If you don't have your stationery yet, start with [custom invitations](/en/blog/${BLOG_SLUG_EN["como-pedir-invitaciones-personalizadas-para-eventos"]}) and the [custom wedding menu](/en/blog/${BLOG_SLUG_EN["menu-de-boda-personalizado"]}), and leave the stickers for last: the design will already be set. For younger guests, there are also [temporary tattoos for parties](/en/blog/${BLOG_SLUG_EN["tatuajes-temporales-para-boda-eventos-y-fiestas"]}).`,
+          "If you're organizing a client's event, send us the event design and quantity: we work with a digital proof and direct communication on WhatsApp.",
         ],
       },
       {
         heading: "How many stickers to order and what they cost",
         body: [
           `100 pieces (small size): $${priceOf("stickers-logo-personalizado", 100)} MXN for custom logo stickers and $${priceOf("stickers-vinil-impermeable", 100)} MXN for vinyl stickers. The minimum order is 50 pieces for logo stickers and 40 for vinyl, so you can order close to your event's real guest or table count.`,
-          "A simple way to count: one piece per guest if they go on bags or bottles, one per envelope if you're sealing invitations, plus a few extra for tables, signs, and photos. Price by quantity:",
+          "Price by quantity:",
         ],
         table: {
           ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
         },
       },
       {
-        heading: "How to match them with the rest of your stationery",
-        body: [
-          "Use the same palette, typeface, and initials on the sticker, the invitation, and the menu, and the event reads as one piece. The most practical approach is to define the design once and order each piece from that same file, so colors and style match everywhere.",
-          "If you don't have your stationery yet, start with the invitation and the wedding menu, and leave the stickers for last: the design will already be set. For guest details you can also look at our favor boxes for weddings, quinceañeras, and baby showers and our temporary tattoos for parties.",
-        ],
-      },
-      {
-        heading: "How long it takes and how it's delivered",
+        heading: "How long it takes and how far in advance to order",
         body: [
           `The digital proof normally arrives within 24 hours of payment. Once you approve it, your order reaches your door in ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days anywhere in Mexico, or is ready for pickup at a Casa Blanca branch in Guadalajara in ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days.`,
-          `Home delivery costs $${NATIONAL_SHIPPING_PRICE} MXN and branch pickup $${CASABLANCA_PRICE} MXN; on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more, both are free. If your event has a fixed date, order with some margin so you can adjust the proof before production.`,
+          `Home delivery costs $${NATIONAL_SHIPPING_PRICE} MXN and branch pickup $${CASABLANCA_PRICE} MXN; on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more, both are free. For the full process, read [how long a sticker order takes](/en/blog/${BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"]}).`,
         ],
       },
       {
-        heading: "How to get a quote for yours",
+        heading: "Where to print your stickers and how to request a quote",
         body: [
           "To get a quote, send us the names, the date, the style or colors (or your finished design), and the quantity you need. We prepare a digital proof before printing, and nothing is produced until you approve it. We produce in Guadalajara and ship across Mexico.",
-          "If your event already has invitations or a custom menu, let us know: we can match the sticker to the same design. The process is the same no matter where your wedding, event, or party is.",
+          `If you're comparing options, see [where to print custom stickers](/en/blog/${BLOG_SLUG_EN["donde-imprimir-stickers-personalizados-mexico"]}). If your event already has invitations or a custom menu, let us know: we can match the sticker to the same design. The process is the same no matter where your wedding, event, or party is.`,
         ],
       },
     ],
     faq: [
       {
-        q: "What sticker size works for favor bags?",
-        a: "A round or oval sticker, small (up to 4 cm) or medium (5 to 6 cm), is the most common size for favor bags and invitation envelopes.",
+        q: "What sticker works for sealing favor bags?",
+        a: "You can order it die-cut or kiss-cut, with a matte, glossy, or holographic finish. Send us the design, names, and date, and see the digital proof before printing.",
       },
       {
         q: "How much do stickers for my event cost?",
@@ -3238,6 +3327,10 @@ export const blogPostsEn: BlogPost[] = [
       {
         q: "Can I order stickers with my wedding names and date?",
         a: "Yes. Send us the names, the date, and the style or colors you want, or your finished design, and we'll send a digital proof before printing.",
+      },
+      {
+        q: "Can I match the sticker to my invitations or menu?",
+        a: "Yes. If your event already has invitations or a custom menu, let us know and we can match the sticker to the same design.",
       },
       {
         q: "Do the stickers hold up on bottles and coolers?",
@@ -3621,7 +3714,7 @@ export const blogPostsEn: BlogPost[] = [
       "Die cut vs kiss cut stickers (troquelado and semitroquelado): which to choose for favors, gifts and events, and how to order at Yume with a digital proof first.",
     category: "Guides",
     publishedAt: "2026-10-16",
-    modifiedAt: "2026-10-26",
+    modifiedAt: "2026-11-10",
     intro:
       "When you order custom stickers you run into two terms: die cut and kiss cut (troquelado and semitroquelado in Spanish). Yume makes both and you choose when you order. This guide explains what each one is, how they differ, and which fits your use, whether it is a wedding favor, a detail for your guests, a gift, or your brand's packaging.",
     sections: [
@@ -3630,7 +3723,7 @@ export const blogPostsEn: BlogPost[] = [
         body: [
           "A die cut sticker (troquelado) is cut all the way through, vinyl and backing together, and you get it loose. A kiss cut sticker (semitroquelado) is cut through the vinyl only and stays on its backing sheet. Both follow the outline of your design.",
           "A die cut sticker (troquelado) is cut all the way through along the outline of your design: the vinyl and its backing are cut together, so you get each sticker loose, in the exact shape of your logo, character, or photo.",
-          "A kiss cut sticker (semitroquelado) is cut through the vinyl only, not the backing sheet. The outline is marked, but the stickers stay on their backing and you peel them off one by one when you use them.",
+          "A kiss cut sticker (semitroquelado) is cut through the vinyl only, not the backing sheet. The outline is marked, but the backing sheet stays whole. You peel the stickers off one by one when you use them, and the whole sheet makes them easier to peel and handle.",
         ],
         table: {
           headers: ["Feature", "Die cut (troquelado)", "Kiss cut (semitroquelado)"],
@@ -3645,32 +3738,43 @@ export const blogPostsEn: BlogPost[] = [
         heading: "Which one fits your use?",
         body: [
           "Choose die cut if each sticker is handed out or applied one at a time, and kiss cut if you want them kept together and protected until you use them. Both use the same premium vinyl and the same shape of your design: what changes is the cut and how the order arrives.",
-          "Die cut makes sense when stickers are handed out or applied one at a time: a seal to close a bag, a label for a product, a gift for a customer. It arrives ready to peel, with no sheet in between.",
+          "Die cut is especially useful when the sticker shape is part of the design, because each piece arrives cut out and ready to use: a seal for a bag, a gift for a customer, or a detail for each guest.",
           "Kiss cut makes sense when you want your stickers kept together and protected until you use them: for a market stall or trade show, for handing out at an event, or for holding a stock to use over time. The backing sheet keeps them organized and clean.",
           "If you are unsure, think about how you will use them: one at a time, or in batches.",
         ],
+        table: {
+          headers: ["If your situation is...", "Choose"],
+          rows: [
+            ["Each person receives a loose sticker", "Die cut"],
+            ["You will hand out or apply stickers from a sheet", "Kiss cut"],
+            ["The cut-out shape is part of the design", "Die cut"],
+            ["You want to peel them more easily", "Kiss cut"],
+          ],
+        },
       },
       {
         heading: "Which cut fits favors, weddings, and events?",
         body: [
           "For an event, die cut is usually the most practical if each guest takes home their own sticker, and kiss cut if you or your planner will hand them out or place them on tables. It is a usage guide, not a rule: either one works at an event.",
           "Picture a sticker with the couple's names and the date sealing a small favor bag, or one with the guest of honor's name on the dessert table. In those cases die cut arrives ready to stick, with nobody having to cut anything.",
-          "If you will assemble the details calmly before the event, for example putting a sticker on each box or bag over an afternoon, kiss cut keeps them organized on their sheet while you work. For more ideas for weddings, quinceañeras, and parties, read our guide to stickers for weddings, events, and parties.",
+          "If you will assemble the details calmly before the event, for example putting a sticker on each box or bag over an afternoon, kiss cut keeps them organized on their sheet while you work.",
+          `For reference, an industry source notes that the extra backing on a kiss cut sticker can carry additional information, such as a logo or care instructions. If you are interested in using the backing this way, message us on WhatsApp before paying and we will check. For more ideas, read our [guide to stickers for weddings and events](/en/blog/${BLOG_SLUG_EN["stickers-para-bodas-eventos-y-fiestas"]}).`,
         ],
       },
       {
         heading: "Which cut fits your brand, packaging, or gifts?",
         body: [
           "If you seal packages or apply labels one by one, die cut saves you steps. If you take stickers to a fair or hand them out in batches, kiss cut keeps them together. Either way, you pick the cut on the product page before paying.",
-          "For your business logo, the option is Custom Logo Stickers. For a character, a pet, a photo, or any other design, it is Waterproof Vinyl Stickers. Both accept both cuts, so the product choice and the cut choice are independent.",
-          "If your question is vinyl or paper, see our vinyl vs paper stickers comparison. At Yume we only work with vinyl, so the cut is the design decision you have left to make.",
+          "For your business logo, the option is [Custom Logo Stickers](/en/products/custom-logo-stickers). For a character, a pet, a photo, or any other design, it is [Waterproof Vinyl Stickers](/en/products/waterproof-vinyl-stickers). Both accept both cuts, so the product choice and the cut choice are independent.",
+          `At Yume stickers are sold by piece count, not by sheet. If you are deciding between vinyl and paper, see our [vinyl vs paper stickers comparison](/en/blog/${BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"]}).`,
         ],
       },
       {
         heading: "How to choose the cut type when you order",
         body: [
           "You pick the cut, Die cut or Kiss cut, on the product page before adding to your cart, together with the finish: matte, glossy, or holographic. All of our stickers come with high-quality BOPP lamination. What you choose is saved with your order, and before printing you receive a digital proof to confirm how it looks.",
-          "The product pages are Waterproof Vinyl Stickers and Custom Logo Stickers. The holographic finish has an extra cost of $0.50 per piece, which you see when you select it.",
+          "The holographic finish has an extra cost of $0.50 per piece, which you see when you select it. The cut does not add a cost per piece.",
+          "The digital proof normally arrives within 24 hours of payment and includes up to 2 rounds of adjustments. Nothing is printed without your approval, so if you are buying for a client, you can show them the design before production.",
           "If you are not sure which fits your case, message us on WhatsApp before paying and we will go over it with you.",
         ],
       },
@@ -3687,8 +3791,8 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "How long does my order take and how do I receive it?",
         body: [
-          `From the moment you approve the digital proof, your order arrives at home in ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days, or is ready for pickup at Casa Blanca in ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days. We produce in Guadalajara and ship across Mexico.`,
-          `Shipping costs $${NATIONAL_SHIPPING_PRICE} MXN and is free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more. If your event has a date, count these days backward and leave room for the digital proof, which normally arrives within 24 hours of payment and includes up to 2 rounds of adjustments. For more detail, read how long a custom sticker order takes.`,
+          `From the moment you approve the digital proof, your order arrives at home in ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days, or is ready for pickup at Casa Blanca in ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days. We produce in Guadalajara and ship across Mexico, and the days are counted from your proof approval.`,
+          `Shipping costs $${NATIONAL_SHIPPING_PRICE} MXN and is free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more. If your event has a date, count these days backward and leave room for the digital proof. For more detail, read [how long a custom sticker order takes](/en/blog/${BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"]}).`,
         ],
       },
     ],
@@ -3696,6 +3800,18 @@ export const blogPostsEn: BlogPost[] = [
       {
         q: "What is the difference between die cut and kiss cut?",
         a: "Die cut (troquelado) is cut all the way through, vinyl and backing, and you get it loose. Kiss cut (semitroquelado) is cut through the vinyl only and arrives on its backing sheet. In both cases the shape follows your design outline.",
+      },
+      {
+        q: "What do die cut and kiss cut mean?",
+        a: "They are the English names: die cut means troquelado and kiss cut means semitroquelado.",
+      },
+      {
+        q: "Which is easier to peel?",
+        a: "Kiss cut. Because the backing stays whole, this cut is easier to peel and handle.",
+      },
+      {
+        q: "What can the backing of a kiss cut sticker be used for?",
+        a: "According to an industry source, the extra backing can carry information such as a logo or care instructions. If you want to use it this way at Yume, message us on WhatsApp before paying to confirm.",
       },
       {
         q: "Can I choose the cut when I order?",
@@ -3841,35 +3957,24 @@ export const blogPostsEn: BlogPost[] = [
     description: `Custom school labels in Guadalajara: what goes on them, where to stick them, how many to order. 100 pieces (small size): $${priceOf("stickers-vinil-impermeable", 100)}, digital proof, shipping across Mexico.`,
     category: "Guides",
     publishedAt: "2026-10-17",
-    modifiedAt: "2026-10-26",
+    modifiedAt: "2026-11-10",
     intro:
-      "School labels are stickers with a child's name (and sometimes their class or a drawing) to mark notebooks, lunch boxes, bottles, and backpacks so nothing gets lost or mixed up in the classroom. At Yume we make them in water-resistant vinyl, with the design you choose. All of our stickers come with high-quality BOPP lamination, and you choose the finish. This guide covers what goes on them, which school supplies they suit, how many to order, what they cost, when to place the order, and how they reach your home or a branch in Guadalajara.",
+      "School labels are stickers with a child's name (and sometimes their class or a drawing) to mark notebooks, lunch boxes, bottles, and backpacks so nothing gets lost or mixed up in the classroom. At Yume we make them in water-resistant vinyl, with the design you choose. All of our stickers come with high-quality BOPP lamination, and you choose the finish. This guide covers what goes on them, which school supplies they suit, how many to order, what they cost, when to order during the 2026-2027 school year, and how they reach your home or a branch in Guadalajara.",
     sections: [
       {
-        heading: "What goes on a school label",
+        heading: "Custom school labels: what goes on them",
         body: [
-          "A school label carries, at minimum, the child's name in large, easy-to-read letters. Many families add the grade or class, plus a drawing or icon (a star, an animal, a color) so younger kids recognize their things before they can read.",
-          "For older kids, something simple works better: first and last name, with good contrast between the letters and the background so it reads from a distance. For siblings, pick a different color for each so they know which is theirs without reading.",
-          "You can also add a phone number to the backpack and lunch box labels. Tell us what you want and we send a digital proof before printing.",
+          "A school label carries, at minimum, the child's name in large, easy-to-read letters. Many families add the grade or class, plus a drawing or icon so younger kids recognize their things before they can read.",
+          "For older kids, something simple works better: first and last name, with good contrast between the letters and the background. For siblings, pick a different color for each so they know which is theirs without reading.",
+          "If you prefer, you can also add a contact phone number to backpack and lunch box labels. Tell us what you want to include and we will prepare it with you before printing.",
         ],
       },
       {
-        heading: "Which school supplies they go on",
+        heading: "Which school supplies can you put labels on?",
         body: [
-          "School labels go on notebooks and books, pencil cases, lunch boxes, water bottles, thermoses, and backpacks. Because the vinyl resists water, sun, and scratches, they hold up on items that get wet, travel a lot, and are cleaned often.",
-          "Stick the label on a clean, dry, flat surface rather than on an edge, a seam, or a raised area, which is where labels peel first. Press from the center out to push the air out, and wait a while before the first time it gets wet.",
-          "The table is a quick guide to where each one fits best. For more on bottles, lunch boxes, and backpacks, read our guide to name labels.",
+          "School labels go on notebooks, books, pencil cases, lunch boxes, water bottles, thermoses, and backpacks. According to the product page, Yume vinyl resists water, sun, and scratches, so it is intended for items that get wet, travel around, and are cleaned often.",
+          "For names and designs, use [custom vinyl stickers](/en/products/waterproof-vinyl-stickers), available from 40 pieces. For school or class kits with a logo, there are [labels with your logo](/en/products/custom-logo-stickers), available from 50 pieces.",
         ],
-        table: {
-          headers: ["Item", "Where to stick it"],
-          rows: [
-            ["Notebooks and books", "On the cover, on a clean, flat area"],
-            ["Pencil case", "On a smooth part of the outside"],
-            ["Lunch box", "On the lid or a smooth side"],
-            ["Bottle or thermos", "On a smooth part of the body, away from the lid and the base"],
-            ["Backpack", "On a flat area outside, or inside if you would rather it not show"],
-          ],
-        },
       },
       {
         heading: "How to order custom school labels",
@@ -3882,19 +3987,34 @@ export const blogPostsEn: BlogPost[] = [
         },
       },
       {
-        heading: "How many labels to order for the school year",
+        heading: "How many labels should you order for the school year?",
         body: [
-          "A practical count is to tally every item on the supply list, multiply by the number of kids, and add a few spares. Since they are sold by the piece rather than by the sheet, you can order close to the number you actually need, with a minimum of 40 pieces.",
-          "An example of the count: if a child takes 10 notebooks, a pencil case, a lunch box, a bottle, and a backpack, that is 14 labels; with two siblings, 28, and with a few spares you reach 40 pieces.",
-          "If you already have the supply list, send it and we will help you work out how many labels you need. To pick the right format, you can also read the difference between vinyl and paper and how labels are ordered on a roll, sheet, or by the piece.",
+          "Count every item on the supply list and multiply by the number of children. Since labels are sold by the piece rather than by the sheet, you can order close to the number you actually need, with a minimum of 40 pieces.",
+          `If you already have the supply list, send it to us on WhatsApp and we will help you work out how many labels you need. To choose the material, see the difference between [vinyl and paper](/en/blog/${BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"]}).`,
         ],
       },
       {
-        heading: "When to order and how to receive them",
+        heading: "When should you order labels during the 2026-2027 school year?",
         body: [
-          `The digital proof normally arrives within 24 hours of payment. Once you approve it, the order reaches your door in ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days anywhere in Mexico, or is ready for pickup at a Casa Blanca branch in Guadalajara in ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days.`,
-          `Home delivery costs $${NATIONAL_SHIPPING_PRICE} and branch pickup $${CASABLANCA_PRICE}; on purchases of $${FREE_SHIPPING_THRESHOLD} or more, both are free. Order a few weeks before the school year starts so there is room to adjust the design, production, and shipping. We produce in Guadalajara and you pick the branch at checkout.`,
-          "For a stage-by-stage breakdown, see how long custom stickers take to arrive.",
+          "The 2026-2027 basic education school year started on August 31, 2026 and ends on July 9, 2027. With the school year underway, back-to-school orders have already passed, but there is time to plan new or replacement labels before classes resume on January 7, 2027.",
+          "These dates from the SEP calendar can help you plan an order:",
+        ],
+        table: {
+          headers: ["Date", "Event"],
+          rows: [
+            ["August 31, 2026", "Start of the 2026-2027 school year"],
+            ["December 21, 2026 to January 5, 2027", "Winter break"],
+            ["January 7, 2027", "Classes resume"],
+            ["March 22 to April 3, 2027", "Holy Week"],
+            ["July 9, 2027", "End of the school year"],
+          ],
+        },
+      },
+      {
+        heading: "How can you receive labels in Guadalajara or across Mexico?",
+        body: [
+          `Once you approve the digital proof, the order reaches your door in ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days anywhere in Mexico, or is ready for pickup at a Casa Blanca branch in Guadalajara in ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days. The digital proof normally arrives within 24 hours of payment.`,
+          `We produce in Guadalajara and you can choose the branch at checkout. For each stage, see [how long a custom sticker order takes](/en/blog/${BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"]}).`,
         ],
       },
     ],
@@ -3909,19 +4029,15 @@ export const blogPostsEn: BlogPost[] = [
       },
       {
         q: "Are the labels water-resistant?",
-        a: "They are printed on premium vinyl that resists water, sun, and scratches, per the product page. Even so, do not scrape them or leave them soaking for long.",
+        a: "They are printed on premium vinyl that resists water, sun, and scratches, per the product page.",
       },
       {
         q: "Can I order labels with the names of several siblings?",
         a: "Yes. Send us the names, the design you like, and the quantity, and we send a digital proof before printing.",
       },
       {
-        q: "Do I see the label before it is printed?",
-        a: "Yes. The digital proof normally arrives within 24 hours of payment, with up to 2 rounds of adjustments. We print nothing without your approval.",
-      },
-      {
-        q: "How long does the order take?",
-        a: `Once you approve the proof, it reaches your door in ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days, or is ready for pickup at Casa Blanca in ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days.`,
+        q: "When do classes resume after winter break?",
+        a: "According to the SEP calendar for the 2026-2027 school year, winter break runs from December 21, 2026 to January 5, 2027, and classes resume on January 7, 2027.",
       },
       {
         q: "Do you ship outside Guadalajara?",
@@ -4905,50 +5021,57 @@ export const blogPostsEn: BlogPost[] = [
     category: "Guides",
     publishedAt: "2026-11-02",
     intro:
-      "Wedding invitations are not sent whenever you remember: the timing depends on distance, on guests who travel and on the date your caterer needs the final headcount. Here are guiding ranges for the save the date, the invitation and the RSVP, a timeline you can use with your clients and the details each piece should carry.",
+      "Guides do not agree on a single answer to when to send wedding invitations: the timing changes for local and destination weddings and when guests are traveling. Here are guiding ranges, a table to work backward from your wedding date and the details your invitation needs so guests can reply on time.",
     sections: [
       {
-        heading: "When to send wedding invitations: the general window",
+        heading: "When to send wedding invitations: the timeline according to each source",
         body: [
-          "In Spanish-language sources, the usual advice is to send formal invitations 3 or 4 months ahead. If some guests have to travel, move that up to between 4 and 6 months. These are guiding ranges, not a single rule, and English-language sources use shorter windows for local weddings.",
-          "For comparison, a U.S. wedding guide proposes invitations 6 to 8 weeks ahead for a standard wedding and 10 to 12 weeks for a destination wedding. Digital invitations follow the same timelines as printed ones, even though they arrive instantly. If the wedding is far from where most guests live, or some guests come from another country, widen the window so they can book transport and lodging and request time off.",
+          "For a local wedding, one industry guide places the formal invitation send date 6 to 8 weeks ahead, although it also mentions 3 to 4 months. Use these timelines as a reference and send earlier if guests are traveling.",
+          "For a destination wedding, a synthesis of industry guides suggests sending invitations 10 to 12 weeks ahead, or 3 to 4 months ahead if there was no save the date. Another guide recommends adding a few weeks when guests are coming from abroad.",
         ],
       },
       {
         heading: "When to send the save the date",
         body: [
-          "Wedding guides suggest sending the save the date 7 to 9 months ahead, although another guide says 10 to 12 months. Another reference proposes 6 to 8 months for a standard wedding and 8 to 12 for a destination one. Since the sources disagree, treat these figures as a guiding range.",
-          "It goes only to the households that will receive an invitation. You can skip it if the engagement is short, the list is small and local, or everyone already knows the date.",
+          "One industry guide recommends sending the save the date 7 to 10 months before the wedding, or 10 to 12 months ahead if it falls on a long weekend or is a destination wedding. Another guide suggests at least 6 months, always with the date and venue confirmed so guests can plan their flights.",
+          "For destination weddings, the synthesis of guides cited above raises the range to 8 to 12 months ahead, and some guides go as far as 14. One industry guide suggests skipping the save the date when there are fewer than about 8 weeks left and sending the formal invitation directly.",
         ],
       },
       {
         heading: "What RSVP deadline to set",
         body: [
-          "The RSVP deadline should fall about one week before the caterer needs the final headcount. Also, there should be at least 2 weeks between the day guests receive the invitation and that deadline. That gives your guests time to reply and gives you time to adjust tables and quantities.",
-          "One wedding guide recommends a reminder a week before the deadline and another on the deadline day, only to guests who have not replied, and a personal follow-up 1 or 2 days later. It places the RSVP 3 to 4 weeks before the wedding for a standard wedding and about 6 weeks before for a destination one.",
+          "One industry guide places the RSVP deadline about a month before the wedding and adds a few weeks if guests are traveling from abroad. Another guide recommends leaving at least 3 weeks between that date and the event so you can finalize arrangements with your vendors.",
+          "One industry guide suggests 4 to 6 weeks ahead for local weddings and 6 to 8 for destination weddings. The synthesis of destination wedding guides suggests 5 to 8 weeks, because flights, hotel blocks and the final guest list need more time. Another guide suggests 3 to 4 weeks for local weddings.",
         ],
       },
       {
         heading: "A backward timeline to plan your send date",
         body: [
-          "Start with the wedding date and work backward: first the final catering headcount, then the RSVP deadline, then the invitation send date and, before all of that, the design and the quote. Use the ranges in this guide and leave a margin, because printing and delivery also take time.",
-          "Guiding example with local guests: save the date 7 to 9 months ahead, printed invitation 3 to 4 months ahead and an RSVP at least 2 weeks after it is received, always one week before the final headcount. With traveling guests: save the date 8 to 12 months ahead, invitation 4 to 6 months ahead and an RSVP about 6 weeks before the wedding. It combines the cited sources and is not a rule.",
-          "The design and the quote for your invitations must be ready before the send date. At Yume we send you a digital proof before producing, and nothing is produced until you approve it. If you are putting together other details for the same wedding, see our guide to the [wedding candy table](/en/blog/wedding-candy-table-custom-candy-boxes).",
+          "Start with the wedding date and work backward: first the RSVP deadline, then the invitation send date and, before that, the save the date. As a reference, a local wedding with invitations sent 8 weeks ahead calls for replies 3 or 4 weeks before the wedding.",
+          "This table brings together the ranges from each source. They do not all agree, so choose a point within them based on your guest list.",
         ],
+        table: {
+          headers: ["Piece", "Local wedding", "Destination wedding"],
+          rows: [
+            ["Save the date", "7 to 10 months ahead; at least 6 months according to another guide", "8 to 12 months ahead, some guides up to 14 (synthesis of destination wedding guides)"],
+            ["Invitation", "6 to 8 weeks ahead according to one industry guide", "10 to 12 weeks ahead, or 3 to 4 months if there was no save the date (synthesis of destination wedding guides)"],
+            ["RSVP", "3 to 4 weeks ahead; 4 to 6 weeks according to another guide", "5 to 8 weeks ahead (synthesis of destination wedding guides); 6 to 8 weeks ahead according to another guide"],
+          ],
+        },
       },
       {
-        heading: "What details to include on each piece",
+        heading: "What the invitation needs to receive replies",
         body: [
-          "Each piece carries its own details. The save the date: names, date, city or destination, a line saying the formal invitation will follow, and the wedding website if one exists. The invitation adds time, venue, a clearly visible RSVP deadline and a way to confirm. The details card holds the rest.",
-          "On the invitation, if you ask guests to choose a menu or have special questions, place them next to the deadline. For a destination wedding, add travel details, a room block and the weekend itinerary. To mail them you need each guest's name and full address: street, number, postal code, town and apartment.",
-          "On the details card you can put the dress code, the wedding website or gift registry, and whether the invitation includes children or a plus-one. If you send invitations by mail or courier, it helps to call and confirm they arrived.",
+          "According to one industry guide, the invitation should include a way to reply, either the wedding website or an RSVP card with a prepaid or addressed envelope, and an explicit RSVP deadline. Without those two elements, your guests will not know how or when to respond.",
+          "If only a few guests are coming from another country, one industry guide suggests letting them know earlier by message or email, even if the formal invitation goes out on the normal schedule. According to another guide, the save the date is sent only once the date and venue are confirmed.",
+          "Once you have the timeline, decide on your invitation design. At Yume we send you a digital proof before producing, and nothing is produced until you approve it. If you are putting together other details for the same wedding, see our guide to the [wedding candy table](/en/blog/wedding-candy-table-custom-candy-boxes).",
         ],
       },
       {
         heading: "A timeline for wedding planners",
         body: [
-          "If you are a wedding planner, turn these ranges into a timeline for each client: wedding date, final catering headcount, RSVP deadline, invitation send date and design sign-off. Mark weddings with traveling guests separately, because they need a longer window. One document tells your client what to decide and when.",
-          "At Yume we work with wedding planners: design with a digital proof and direct contact on WhatsApp. For table details, see our guide to [personalized party favor boxes in Guadalajara](/en/blog/personalized-party-favor-boxes-guadalajara). Write to us on WhatsApp early to get a quote for your wedding invitations or your client's.",
+          "If you are a wedding planner, make a timeline for each client with three dates: the save the date, invitation send date and RSVP deadline. Mark weddings with traveling guests separately, because guides give them longer timelines.",
+          "At Yume we work with wedding planners: design with a digital proof and direct contact on WhatsApp. For your client's table details, see our guide to [personalized party favor boxes in Guadalajara](/en/blog/personalized-party-favor-boxes-guadalajara). Write to us on WhatsApp to get a quote for your wedding invitations or your client's.",
         ],
       },
     ],
@@ -4957,23 +5080,19 @@ export const blogPostsEn: BlogPost[] = [
     faq: [
       {
         q: "How far ahead should wedding invitations be sent?",
-        a: "In Spanish-language sources the usual window is 3 to 4 months before the wedding, and 4 to 6 months if guests have to travel. These are guiding ranges: timelines change depending on the source.",
-      },
-      {
-        q: "When should the save the date be sent?",
-        a: "Wedding guides suggest 7 to 9 months ahead, although another guide says 10 to 12 months. Another reference proposes 6 to 8 months for a standard wedding and 8 to 12 for a destination one. The sources disagree, so it is a guiding range.",
-      },
-      {
-        q: "Do digital invitations follow different timelines?",
-        a: "No. They follow the same timelines as printed ones, even though they arrive instantly. If guests come from another country or the wedding is far from where most guests live, widen the window.",
-      },
-      {
-        q: "What RSVP deadline should I set?",
-        a: "One that falls about a week before the caterer needs the final headcount, with at least 2 weeks between receiving the invitation and that date.",
+        a: "It depends on the source. One industry guide gives 6 to 8 weeks for a local wedding but also mentions 3 to 4 months. For destination weddings, a synthesis of guides suggests 10 to 12 weeks.",
       },
       {
         q: "Can the save the date be skipped?",
-        a: "Yes, if the engagement is short, the list is small and local, or everyone already knows the date.",
+        a: "Yes. One industry guide suggests skipping it when there are fewer than about 8 weeks until the wedding and sending the formal invitation directly.",
+      },
+      {
+        q: "When should the RSVP deadline fall?",
+        a: "One industry guide places it about a month before the wedding. Another recommends leaving at least 3 weeks between that date and the wedding to finalize arrangements with vendors.",
+      },
+      {
+        q: "What does the invitation need so guests can reply?",
+        a: "According to one industry guide, a way to reply (the wedding website or an RSVP card with a prepaid or addressed envelope) and an explicit RSVP deadline.",
       },
       {
         q: "How do I get a quote for my wedding invitations from Yume?",
@@ -5385,14 +5504,14 @@ export const blogPostsEn: BlogPost[] = [
         heading: "Custom candy box with your logo for your company anniversary",
         body: [
           "The custom candy box is a concrete option for a company event. It is a lunch box style with a handle, arrives assembled and empty so you choose what goes inside, and the personalization includes the name and theme, plus your company logo. The minimum order is 10 pieces.",
-          "Because it arrives empty, the filling is up to you. Add the event name, the anniversary number and your brand colors in the design, and you get a piece that looks planned for that occasion.",
+          "Because it arrives empty, the filling is up to you. Add the event name, the anniversary number and your brand colors in the design, and you get a piece that looks planned for that occasion. For filling ideas, read [what to put in a party favor box](/en/blog/what-to-put-in-a-party-favor-box). If your event is in Guadalajara, see [personalized party favor boxes in Guadalajara](/en/blog/personalized-party-favor-boxes-guadalajara).",
         ],
       },
       {
         heading: "Logo stickers to go with the anniversary detail",
         body: [
-          "Logo stickers can go alongside the candy box or decorate a welcome bottle. You can order them with your company logo or an anniversary design. Logo stickers have a 50-piece minimum, come die cut or kiss cut, and are printed in matte, glossy or holographic.",
-          "If you prefer an illustration for the event instead of the logo, there are custom vinyl stickers with a 40-piece minimum. They go through a digital proof before printing.",
+          "Logo stickers can go alongside the candy box or decorate a welcome bottle. You can order them with your company logo or an anniversary design. [Custom logo stickers](/en/products/custom-logo-stickers) have a 50-piece minimum, come die cut or kiss cut, and are printed in matte, glossy or holographic.",
+          "If you prefer an illustration for the event instead of the logo, there are [custom vinyl stickers](/en/products/waterproof-vinyl-stickers) with a 40-piece minimum. All our stickers have high-quality BOPP laminate. Vinyl stickers go through a digital proof before printing.",
         ],
       },
       {
@@ -5406,7 +5525,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "How to plan the anniversary order with your planner",
         body: [
           "Plan the order from the guest list and each piece's minimum: 10 candy boxes, 50 logo stickers or 40 vinyl stickers. Define the event name, the anniversary date or number and a short message. Before production you receive a digital proof, and nothing is printed without your approval.",
-          "If you coordinate the event as a planner, send us a photo of the invitation or the decoration on WhatsApp and we will adapt the design to those colors. To confirm production and shipping dates, write to us before you set the event day.",
+          "If you coordinate the event as a planner, send us a photo of the invitation or the decoration on WhatsApp and we will adapt the design to those colors. To confirm production and shipping dates, write to us before you set the event day. If your anniversary falls during posada season, see [personalized Christmas treat boxes](/en/blog/personalized-christmas-treat-boxes).",
         ],
       },
     ],
@@ -5568,7 +5687,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "Surprise gift ideas with candy for mom",
         body: [
           "For mom, a candy box with her name and a theme she recognizes, like flowers or her favorite colors, works well. You choose what goes inside: her usual sweets, chocolates or cookies. That way the gift looks cared for and tastes like what she loves.",
-          "If the surprise comes from several children, you can order one candy box for each sister, aunt or grandmother, each with her own name. The minimum order is 10 pieces, so this idea fits best when the gift is shared among several people.",
+          `If the surprise comes from several children, you can order one candy box for each sister, aunt or grandmother, each with her own name. The minimum order is 10 pieces, so this idea fits best when the gift is shared among several people. If you are unsure what to put inside, see the guide to [what to put in a candy box](/en/blog/${BLOG_SLUG_EN["que-poner-en-un-dulcero"]}).`,
         ],
       },
       {
@@ -5607,7 +5726,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "What to personalize: name, theme and details",
         body: [
           "The personalization of our candy box includes the name and the theme you choose. With that you can build a gift for one person, with a theme they like. Any other detail, like a date or a phrase, is checked over WhatsApp when you request a quote, because it depends on the design.",
-          "Our candy box is lunch box style, with a handle. Send us a reference of the colors or the style that person likes and we adapt the design.",
+          "Our candy box is lunch box style, with a handle. Send us a reference of the colors or the style that person likes and we adapt the design. If you want to add a small detail with the same design, you can also order [personalized vinyl stickers](/en/products/waterproof-vinyl-stickers).",
         ],
       },
       {
@@ -5621,7 +5740,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "For weddings, planners and company events",
         body: [
           "A candy box can also work as a table detail or keepsake for a wedding, a birthday or a company event. If you are a planner or you organize an event, you can order several with the event's name and theme, always with a digital proof before production.",
-          "The minimum order is 10 pieces, and the exact quantity and the timing for your event are confirmed over WhatsApp when you request a quote.",
+          `The minimum order is 10 pieces, and the exact quantity and the timing for your event are confirmed over WhatsApp when you request a quote. If your date falls in season, see ideas for [Day of the Dead and November candy boxes](/en/blog/${BLOG_SLUG_EN["dulceros-dia-de-muertos-noviembre"]}) or [personalized Christmas candy boxes](/en/blog/${BLOG_SLUG_EN["dulceros-navidenos-personalizados"]}).`,
         ],
       },
       {
@@ -5629,7 +5748,7 @@ export const blogPostsEn: BlogPost[] = [
         body: [
           "Order the candy box ahead of time: you quote over WhatsApp, we send a digital proof of the design, and nothing is produced until you approve it. For a specific date, like an anniversary or Valentine's Day, ask about production and shipping times before you decide.",
           "A simple order: define who the surprise is for and the occasion, choose the name and the theme, send a color reference, quote over WhatsApp, approve the digital proof and, when it arrives, fill the candy box with the sweets you chose.",
-          "We serve Guadalajara, Zapopan and ship across Mexico. Write to us on WhatsApp with the occasion, the name and the date you need it, and we will tell you what is possible.",
+          `We serve Guadalajara, Zapopan and ship across Mexico. If you are in the area, see [personalized candy boxes in Guadalajara](/en/blog/${BLOG_SLUG_EN["dulceros-personalizados-guadalajara"]}). Write to us on WhatsApp with the occasion, the name and the date you need it, and we will tell you what is possible.`,
         ],
       },
     ],
@@ -5740,8 +5859,8 @@ export const blogPostsEn: BlogPost[] = [
         heading: "Candy boxes for the candy table and for each place setting",
         body: [
           "Separate three uses before counting: the candy box handed to each guest, the ones displayed filled on the candy table, and the reserve. This way you do not mix handout pieces with decoration pieces, and you can close each figure separately once you have the final list.",
-          "According to industry guides, a candy bar accompanies dessert and the banquet rather than replacing them, and is usually placed near the dance floor or opened after the meal.",
-          "The candy box arrives assembled and empty, so you choose what goes inside.",
+          "According to industry guides, a candy bar accompanies dessert and the banquet rather than replacing them, and is usually placed near the dance floor or opened after the meal. For the design and setup of the table, see our guide to a [wedding candy table](/en/blog/wedding-candy-table-custom-candy-boxes).",
+          "The candy box arrives assembled and empty, so you choose what goes inside. If you need ideas, see [what to put in a candy box](/en/blog/what-to-put-in-a-party-favor-box).",
         ],
       },
       {
@@ -5749,6 +5868,7 @@ export const blogPostsEn: BlogPost[] = [
         body: [
           "Lock the quantity once you have attendance confirmations, and tell your supplier your wedding date. If you work with a wedding planner, ask for the final list per person or per couple, so the order, the digital proof and the delivery all use the same number.",
           "Before production we send you a digital proof of the design, and nothing is produced until you approve it. Production and shipping times depend on your date: write to us on WhatsApp with your wedding day and we will confirm them.",
+          "If you want to see how we work, discover our [personalized candy boxes](/en/blog/personalized-party-favor-boxes-guadalajara) in Guadalajara, with shipping throughout Mexico.",
         ],
       },
     ],
