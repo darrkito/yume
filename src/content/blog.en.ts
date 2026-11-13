@@ -2305,36 +2305,51 @@ export const blogPostsEn: BlogPost[] = [
       "Real differences between a plate with an NFC chip and a homemade sign with just a printed QR code for collecting Google reviews at your business.",
     category: "Guides",
     publishedAt: "2026-09-15",
-    intro:
-      "Printing a QR code on a sheet of paper and taping it to the counter is free and anyone can do it. So why pay for a plate with NFC? The difference isn't whether it works (a printed QR also leads to the review), it's durability, how easy it is to use, and the impression it leaves.",
+    modifiedAt: "2026-10-29",
+    intro: "Printing a QR code on a sheet of paper and placing it on the counter is free and anyone can do it. So why consider an NFC plate? Both lead to the same review page. The difference is in convenience, which phones can use each option, the impression the piece makes, and the Google rules that apply to both.",
     sections: [
-      {
-        heading: "Durability: paper vs. a rigid plate",
-        body: [
-          "A printed sheet with a QR code wears out fast: it bends, gets wet, fades in the window sun, or just starts looking out of place after a few weeks on the counter. A rigid plate holds up to daily use at a business without discoloring or bending, and it reads as part of the counter, not an improvised notice.",
-        ],
-      },
-      {
-        heading: "NFC: one more option for the customer, not a QR replacement",
-        body: [
-          "A homemade sign only has a QR code: it works, but depends on the customer opening their camera and framing the shot correctly. NFC adds a second way to use it: just tap the phone, no aiming or focusing needed, something more people already recognize from contactless payment terminals. Having both on the same plate means no customer is left unable to use it.",
-        ],
-      },
-      {
-        heading: "Brand impression",
-        body: [
-          "A QR code printed on a letter-size sheet communicates something different than a plate designed to match your brand, in white or black, made to stay on the counter permanently. For a business that already cares about its image (a practice, a café, a shop), the difference shows.",
-        ],
-      },
+      { heading: "NFC plate vs. QR code: the practical difference", body: [
+        "The main difference is how the customer reaches the review page. With QR, they open the camera and scan. With NFC, they bring their phone close to the plate and tap. Both lead to the same place, so neither guarantees more reviews on its own. What changes is convenience and which phones can use it.",
+        "A printed QR code is the more familiar option: almost everyone knows how to scan one and only needs a camera. To scan well, it must be large enough and have clear space around it. NFC adds a single tap without aiming or focusing, but the customer needs NFC turned on, and the location and surface material can affect the reading.",
+        "These points come from a review card supplier's guide, not an independent test. That is why we do not give percentages or exact compatibility lists: it depends on each phone model and its settings."
+      ] },
+      { heading: "When to use QR and when to use NFC", body: [
+        "QR is useful when you want any phone with a camera to be able to use it, including on printed material. NFC is useful for a quick tap, provided the customer has NFC enabled. Since not every phone has it enabled, it is safer not to rely on just one.",
+        "Think about where the piece will go and who will use it. At reception or a counter, the customer is close enough to choose between tapping and scanning. At an event table, guests have different phones, so a visible QR code is a backup if tapping does not work. In a welcome kit, the piece is seen up close and can accompany a friendly note inviting guests to share their experience.",
+        "If you are only printing a QR code on a sheet of paper, make it large, keep decorations off the code and place it somewhere customers can take their time aiming the camera."
+      ] },
+      { heading: "Why a plate with NFC and QR is the best option", body: [
+        "The safest option is one piece with both NFC and QR. Customers with NFC enabled can tap, and those without it can scan. It is useful to have that backup and test with common phones before buying in volume.",
+        "Our [NFC review plate](/en/products/google-review-nfc-plate) combines both ways to use it in one object, and the [NFC review stand](/en/products/google-review-nfc-stand) does the same in a version that sits on a surface. Both are available in white or black.",
+        "Before using it at your business or an event, test it with two or three different phones, including yours and someone else's. To see how it is set up and presented to customers, read the guide to [using the review plate](/en/blog/how-to-use-your-yume-google-review-plate)."
+      ] },
+      { heading: "Image and design: make the piece fit your brand or event", body: [
+        "A sheet with a QR code sends a different message from a plate designed to look like part of a brand or event. For planners, businesses and anyone who cares about details, the finish matters. Our plates and stands come in white or black to match the space where they are placed.",
+        "A practice, café, store or event venue reception already pays attention to its image: a piece that fits the décor stands out more than a loose notice. If you organize events, it can also be another detail on the welcome table or guest service desk."
+      ] },
+      { heading: "Google rules that apply equally to QR and NFC", body: [
+        "Google allows businesses to ask for genuine reviews, but not to offer incentives, request only positive reviews or discourage negative ones. These rules apply equally to an NFC plate and a QR code because the method does not change the policy. The text on the piece should be neutral.",
+        "According to Google Maps content policy, businesses must not offer payment, discounts, free goods or services in exchange for a review, a change to one or the removal of a negative review. Nor should they select who is asked for a review. That is why the plate should not say things like 'leave 5 stars and get a gift.'",
+        "The policy also says not to request specific content or pressure staff to leave ratings at the business. A simple phrase like 'Tell us about your experience' invites feedback without dictating what to write."
+      ] },
+      { heading: "What to expect: convenience, not a guarantee of more reviews", body: [
+        "Neither option ensures more reviews on its own. There is no reliable figure to support that claim: a well-placed piece and a friendly request may help, nothing more. Use them to make the process easier, not as a guarantee.",
+        "What you can control is whether the piece is visible, whether it works when tested and whether the request is friendly and honest. For ideas on asking within the rules, read [how to get more Google reviews](/en/blog/how-to-get-more-google-reviews-nfc-qr)."
+      ] },
     ],
     faq: [
-      {
-        q: "Does NFC replace the QR code on a review plate?",
-        a: "No. NFC adds a second way to use the plate, it does not replace the QR code. The customer can tap the phone or scan the code with the camera. Having both on the same plate means no customer is left unable to use it, and the design matches your brand.",
-      },
+      { q: "Does NFC replace the QR code?", a: "No. Some customers have NFC turned off or a phone that does not detect it reliably, so it is useful to add a QR code as backup. A piece with NFC and QR is the safest choice." },
+      { q: "Can a printed QR code be used to ask for reviews?", a: "Yes. It works with any phone with a camera and on printed material. It must be large enough and have clear space around it to scan well." },
+      { q: "Can I offer a discount or gift in exchange for a review?", a: "No. Google policy prohibits incentives such as payments, discounts, free goods or services in exchange for a review, whether you use an NFC plate or a QR code." },
+      { q: "Can I ask only satisfied customers for reviews?", a: "No. Google does not allow selectively requesting positive reviews or discouraging negative ones. You may ask for genuine reviews without influencing the rating or content." },
+      { q: "What text should I put on the plate?", a: "Use neutral wording, such as 'Tell us about your experience.' Google says not to request specific content in a review." },
+      { q: "Will NFC get me more reviews?", a: "There is no reliable figure to support that claim." },
     ],
     relatedBlogSlugs: [BLOG_SLUG_EN["placas-resenas-google-pago-unico-vs-suscripcion"], BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"], BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"], BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"], BLOG_SLUG_EN["placa-resenas-google-para-consultorios"], BLOG_SLUG_EN["placa-resenas-google-para-restaurantes"], BLOG_SLUG_EN["placa-resenas-google-para-salones-esteticas-y-barberias"], BLOG_SLUG_EN["placa-resenas-google-para-planners-y-eventos"], BLOG_SLUG_EN["como-hacer-una-encuesta-de-satisfaccion-del-cliente"]],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
+    sources: [
+      { label: "Google Maps content policy: reviews", url: "https://support.google.com/contributionpolicy/answer/7400114?hl=en" },
+    ],
   },
   {
     slug: BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"],

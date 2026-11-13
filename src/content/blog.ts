@@ -2943,7 +2943,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Por qué la mejor opción es una placa con NFC y QR",
         body: [
-          "La opción más segura es una sola pieza que tenga NFC y QR. Así el cliente que tiene NFC activado toca y el que no lo tiene escanea. La guía de QRCodeChimp recomienda justo ese respaldo y sugiere probar con teléfonos comunes antes de comprar en volumen.",
+          "La opción más segura es una sola pieza que tenga NFC y QR. Así el cliente que tiene NFC activado toca y el que no lo tiene escanea. Conviene tener ese respaldo y probar con teléfonos comunes antes de comprar en volumen.",
           "Nuestra [placa de reseñas NFC](/productos/placa-resena-google-nfc) reúne las dos formas de usarla en el mismo objeto, y el [stand de reseñas NFC](/productos/stand-resena-google-nfc) lo hace en versión para colocar sobre una superficie. Ambos se ofrecen en blanco o negro.",
           "Antes de usarla en tu negocio o en un evento, pruébala con dos o tres teléfonos distintos, el tuyo y el de alguien más. Si quieres ver cómo se configura y se presenta al cliente, revisa la guía para [usar la placa de reseñas](/blog/como-usar-placa-resenas-google-yume).",
         ],
@@ -2966,7 +2966,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Qué esperar: una facilidad, no una garantía de más reseñas",
         body: [
-          "Ninguna de las dos opciones asegura más reseñas por sí sola. La guía de QRCodeChimp, que es de un proveedor y no un estudio independiente, solo dice que las tarjetas pueden ayudar si están bien ubicadas y van acompañadas de una petición amable. Úsalas como facilitador, no como garantía.",
+          "Ninguna de las dos opciones asegura más reseñas por sí sola. No hay una cifra confiable que lo respalde: una pieza bien ubicada y una petición amable pueden ayudar, nada más. Úsalas como facilitador, no como garantía.",
           "Lo que sí puedes controlar es que la pieza esté a la vista, que funcione al probarla y que la petición sea amable y honesta. Para ideas sobre cómo pedirlas sin salirte de las reglas, lee [cómo conseguir más reseñas de Google](/blog/como-conseguir-mas-resenas-de-google-nfc-qr).",
         ],
       },
@@ -2976,7 +2976,7 @@ export const blogPosts: BlogPost[] = [
     faq: [
       {
         q: "¿El NFC reemplaza al código QR?",
-        a: "No. Algunos clientes tienen el NFC apagado o un teléfono donde la detección falla, y la guía de QRCodeChimp recomienda agregar un QR de respaldo. Lo más seguro es una pieza con NFC y QR.",
+        a: "No. Algunos clientes tienen el NFC apagado o un teléfono donde la detección falla; por eso conviene agregar un QR de respaldo. Lo más seguro es una pieza con NFC y QR.",
       },
       {
         q: "¿Un código QR impreso sirve para pedir reseñas?",
@@ -2996,17 +2996,13 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Con NFC voy a recibir más reseñas?",
-        a: "No hay una cifra confiable que lo respalde. La guía consultada solo dice que las tarjetas pueden ayudar si están bien ubicadas y van con una petición amable.",
+        a: "No hay una cifra confiable que lo respalde.",
       },
     ],
     sources: [
       {
         label: "Política de contenido de Google Maps: reseñas",
         url: "https://support.google.com/contributionpolicy/answer/7400114",
-      },
-      {
-        label: "QRCodeChimp: guía de tarjetas de reseñas de Google",
-        url: "https://www.qrcodechimp.com/google-review-cards/",
       },
     ],
   },
