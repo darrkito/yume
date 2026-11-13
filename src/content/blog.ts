@@ -717,7 +717,6 @@ export const blogPosts: BlogPost[] = [
       { label: "Google: contenido prohibido y restringido", url: "https://support.google.com/business/answer/7400114?hl=es" },
       { label: "Google: pedir reseñas con enlace o código QR", url: "https://support.google.com/business/answer/16816815?hl=es" },
       { label: "Google: verificación de perfil con video", url: "https://support.google.com/business/answer/14271705?hl=en" },
-      { label: "Ionos: cómo conseguir reseñas en Google (guía de terceros)", url: "https://www.ionos.com/es-us/digitalguide/online-marketing/vender-en-internet/como-conseguir-resenas-en-google/" },
     ],
   },
   {
@@ -1609,7 +1608,6 @@ export const blogPosts: BlogPost[] = [
     ],
     sources: [
       { label: "FDA: Piense antes de tatuarse, la seguridad de los tatuajes", url: "https://www.fda.gov/consumers/articulos-para-el-consumidor-en-espanol/piense-antes-de-tatuarse-la-seguridad-de-los-tatuajes" },
-      { label: "Temporary Tattoos: seguridad del producto", url: "https://www.temporarytattoos.com/pages/product-safety" },
     ],
     serviceLink: { href: "/productos/tatuajes-temporales-personalizados", label: "Ver tatuajes temporales personalizados" },
     quoteMessage: "Hola, me interesa cotizar tatuajes temporales personalizados.",
@@ -3952,7 +3950,7 @@ export const blogPosts: BlogPost[] = [
           "Para un evento, el troquelado suele ser lo más práctico si cada invitado se lleva su sticker, y el semitroquelado si tú o tu planner van a repartirlos o a colocarlos en la mesa. Es una guía de uso, no una regla: cualquiera de los dos funciona en un evento.",
           "Imagina un sticker con el nombre de los novios y la fecha para cerrar la bolsita de un recuerdo, o uno con el nombre del festejado para la mesa de dulces. En esos casos el troquelado llega listo para pegar, sin que nadie tenga que cortar nada.",
           "Si vas a armar los detalles con calma antes del evento, por ejemplo pegando un sticker en cada caja o bolsa en una tarde, el semitroquelado te los deja ordenados en su hoja mientras trabajas.",
-          "Una referencia: según StickerApp, una tienda de impresión, el respaldo sobrante del semitroquelado puede llevar información extra, como un logo o instrucciones de cuidado. Si te interesa usar el respaldo así, escríbenos por WhatsApp antes de pagar y lo revisamos. Para más ideas de uso, lee nuestra [guía de stickers para bodas y eventos](/blog/stickers-para-bodas-eventos-y-fiestas).",
+          "Una referencia: según una referencia del sector, el respaldo sobrante del semitroquelado puede llevar información extra, como un logo o instrucciones de cuidado. Si te interesa usar el respaldo así, escríbenos por WhatsApp antes de pagar y lo revisamos. Para más ideas de uso, lee nuestra [guía de stickers para bodas y eventos](/blog/stickers-para-bodas-eventos-y-fiestas).",
         ],
       },
       {
@@ -3960,7 +3958,7 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Si vas a sellar empaques o pegar etiquetas una por una, el troquelado te ahorra pasos. Si vas a llevar stickers a una feria o repartirlos en tanda, el semitroquelado los mantiene juntos. En ambos casos eliges el corte en la página del producto antes de pagar.",
           "Para el logo de tu negocio, la opción es [Stickers y Etiquetas con tu Logo](/productos/stickers-logo-personalizado). Para un personaje, una mascota, una foto o cualquier otro diseño, es [Stickers de Vinil Personalizados](/productos/stickers-vinil-impermeable). Los dos aceptan los dos cortes, así que la decisión del producto y la del corte son independientes.",
-          "En Yume los stickers se venden por cantidad de piezas, no por planilla. Como referencia, StickerApp separa sus productos así: hojas de stickers para varios diseños distintos y singles on sheet para un mismo diseño repetido. Si tu duda es entre vinil y papel, revisa la comparación de [stickers de vinil vs papel](/blog/stickers-vinil-vs-papel-diferencias).",
+          "En Yume los stickers se venden por cantidad de piezas, no por planilla. Si tu duda es entre vinil y papel, revisa la comparación de [stickers de vinil vs papel](/blog/stickers-vinil-vs-papel-diferencias).",
         ],
       },
       {
@@ -4001,11 +3999,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Cuál se despega más fácil?",
-        a: "El semitroquelado. Según StickerApp, como el respaldo queda entero, este corte es más fácil de despegar y manipular.",
+        a: "El semitroquelado. Como el respaldo queda entero, este corte es más fácil de despegar y manipular.",
       },
       {
         q: "¿Qué se puede hacer con el respaldo del semitroquelado?",
-        a: "Según StickerApp, el respaldo sobrante puede llevar información extra, como un logo o instrucciones de cuidado. Si quieres usarlo así en Yume, escríbenos por WhatsApp antes de pagar para confirmarlo.",
+        a: "Según una referencia del sector, el respaldo sobrante puede llevar información extra, como un logo o instrucciones de cuidado. Si quieres usarlo así en Yume, escríbenos por WhatsApp antes de pagar para confirmarlo.",
       },
       {
         q: "¿Puedo elegir el corte al pedir?",
@@ -4034,9 +4032,6 @@ export const blogPosts: BlogPost[] = [
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
     relatedBlogSlugs: ["stickers-vinil-vs-papel-diferencias", "stickers-para-bodas-eventos-y-fiestas", "cuanto-tarda-un-pedido-de-stickers-personalizados", "donde-imprimir-stickers-personalizados-mexico"],
-    sources: [
-      { label: "StickerApp: Die cut vs kiss cut stickers", url: "https://stickerapp.com/support/stickers/products/die-cut/die-cut-vs-kiss-cut-stickers" },
-    ],
   },
   {
     slug: "cuanto-duran-los-tatuajes-temporales-y-como-quitarlos",
@@ -4870,7 +4865,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Cuánto presupuestar por persona: equipo y clientes",
         body: [
-          "Como referencia, la guía de Pluxee, proveedor de tarjetas de regalo, sugiere por persona: de $300 a $700 MXN para equipo operativo o masivo, de $700 a $1,500 para mandos medios y más de $1,500 para ejecutivos o clientes clave. Es una guía comercial, no una norma, y sirve para dividir tu lista.",
+          "Como referencia, una guía del sector sugiere por persona: de $300 a $700 MXN para equipo operativo o masivo, de $700 a $1,500 para mandos medios y más de $1,500 para ejecutivos o clientes clave. Es una guía comercial, no una norma, y sirve para dividir tu lista.",
           "Con esa referencia, la lista se ordena fácil. Para todo el equipo, piensa en un detalle uniforme con el nombre de cada persona o del equipo, como un dulcero personalizado. Para clientes clave, conviene una pieza con más diseño y tu logo.",
           "El precio de nuestras piezas depende del producto y de la cantidad, y aparece en cada página: revisa el [dulcero personalizado](/productos/dulceros-personalizados) o los [stickers con tu logo](/productos/stickers-logo-personalizado) para ver el precio vigente. Si tu lista combina equipo y clientes, escríbenos por WhatsApp y te ayudamos a cotizar ambos grupos.",
         ],
@@ -4893,25 +4888,25 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Detalles para clientes: qué considerar antes de regalar",
         body: [
-          "Para clientes, elige un detalle ligado a tu marca y al evento, no un regalo individual. Según Pluxee y ContadorMX, los obsequios a clientes en general no son deducibles, salvo los ligados a la venta de productos o con fin publicitario. Consulta a tu contador antes de decidir.",
+          "Para clientes, elige un detalle ligado a tu marca y al evento, no un regalo individual. Según referencias del sector, los obsequios a clientes en general no son deducibles, salvo los ligados a la venta de productos o con fin publicitario. Consulta a tu contador antes de decidir.",
           "Un dulcero con tu logo y el nombre de la posada, o [stickers con tu logo](/productos/stickers-logo-personalizado), son detalles de marca que tus clientes se llevan del evento. Esto no promete que sean deducibles: los regalos individuales suelen tener restricciones fiscales, y tu contador valida cada caso.",
-          "ContadorMX también recomienda llevar un control de entrega con firma o sello de quien recibe. Pregunta a tu contador si te conviene en tu caso.",
+          "Una referencia del sector también recomienda llevar un control de entrega con firma o sello de quien recibe. Pregunta a tu contador si te conviene en tu caso.",
         ],
       },
       {
         heading: "Calendario inverso: cuándo pedir los detalles de tu posada",
         body: [
           "Para que tus detalles lleguen a tiempo, cuenta hacia atrás desde la fecha de tu posada: primero la entrega, luego la producción, después la aprobación de la prueba digital y al inicio el diseño. Así ves cuándo debes escribirnos, sin depender de que los tiempos se junten en diciembre.",
-          "Pluxee recomienda planear los regalos varias semanas antes de la entrega, sobre todo si hay personalización, volumen o envíos a varias ubicaciones. Por eso conviene escribirnos cuando ya tengas la fecha y una lista aproximada de invitados, y no la semana de la posada.",
+          "Una guía del sector recomienda planear los regalos varias semanas antes de la entrega, sobre todo si hay personalización, volumen o envíos a varias ubicaciones. Por eso conviene escribirnos cuando ya tengas la fecha y una lista aproximada de invitados, y no la semana de la posada.",
           "La producción empieza cuando apruebas la prueba digital, así que esa aprobación es la fecha que más cuenta. La fecha estimada de entrega aparece en la página del producto y en el carrito.",
-          "Enviamos a todo México y, si estás en la zona metropolitana de Guadalajara, puedes recoger en una sucursal Casa Blanca. Si quieres ver opciones desde Jalisco, revisa los [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara). Escríbenos por WhatsApp con la fecha de tu posada y contamos hacia atrás contigo.",
+          "Enviamos a todo México y, si estás en la zona metropolitana de Guadalajara, puedes recoger en una sucursal. Si quieres ver opciones desde Jalisco, revisa los [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara). Escríbenos por WhatsApp con la fecha de tu posada y contamos hacia atrás contigo.",
         ],
       },
       {
         heading: "Factura y contador: qué consultar antes de cotizar",
         body: [
           "Antes de cotizar, consulta con tu contador si necesitas factura, porque un CFDI válido por sí solo no garantiza la deducción. También hay que acreditar la operación, que el gasto sea estrictamente indispensable y que el pago sea por un medio autorizado. Tu contador es quien decide qué aplica en tu caso.",
-          "Como referencia, Pluxee menciona estos puntos de comprobación: pagos de más de $2,000 MXN por transferencia, cheque nominativo o tarjeta, CFDI, registro contable y una lista de beneficiarios como buena práctica. Es la guía de un proveedor, no asesoría fiscal.",
+          "Como referencia, una guía del sector menciona estos puntos de comprobación: pagos de más de $2,000 MXN por transferencia, cheque nominativo o tarjeta, CFDI, registro contable y una lista de beneficiarios como buena práctica. Es la guía de un proveedor, no asesoría fiscal.",
           "Cuéntanos por WhatsApp cuántos invitados son, separando equipo y clientes, y la fecha de la posada, y te cotizamos tus detalles.",
         ],
       },
@@ -4937,15 +4932,15 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Los detalles de una posada de empresa son deducibles?",
-        a: "No hay una deducción general y automática para posadas ni cenas navideñas. Depende de la finalidad, los beneficiarios y la documentación. Pluxee y ContadorMX indican que los obsequios a clientes en general no son deducibles. Consulta a tu contador.",
+        a: "No hay una deducción general y automática para posadas ni cenas navideñas. Depende de la finalidad, los beneficiarios y la documentación. Referencias del sector indican que los obsequios a clientes en general no son deducibles. Consulta a tu contador.",
       },
       {
         q: "¿Cuánto presupuestar por persona en una posada de empresa?",
-        a: "Como referencia de Pluxee: de $300 a $700 MXN para equipo operativo o masivo, de $700 a $1,500 para mandos medios y más de $1,500 para ejecutivos o clientes clave. Es una guía comercial de un proveedor, no una norma.",
+        a: "Como referencia general: de $300 a $700 MXN para equipo operativo o masivo, de $700 a $1,500 para mandos medios y más de $1,500 para ejecutivos o clientes clave. Es una guía comercial de un proveedor, no una norma.",
       },
       {
         q: "¿Cuándo debo pedir los detalles de mi posada?",
-        a: "Pluxee recomienda planear varias semanas antes, sobre todo con personalización, volumen o varias ubicaciones. Cuenta hacia atrás desde la fecha de la posada: entrega, producción, aprobación de la prueba digital y diseño. La fecha estimada aparece en la página del producto y en el carrito.",
+        a: "Una guía del sector recomienda planear varias semanas antes, sobre todo con personalización, volumen o varias ubicaciones. Cuenta hacia atrás desde la fecha de la posada: entrega, producción, aprobación de la prueba digital y diseño. La fecha estimada aparece en la página del producto y en el carrito.",
       },
       {
         q: "¿Los dulceros incluyen dulces?",
@@ -4957,18 +4952,14 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Qué comprobantes conviene guardar de los detalles de la posada?",
-        a: "Según Pluxee: CFDI, registro contable, pago por medio autorizado (transferencia, cheque nominativo o tarjeta en pagos de más de $2,000 MXN) y una lista de beneficiarios como buena práctica. Tu contador confirma qué aplica en tu caso.",
+        a: "Como referencia general: CFDI, registro contable, pago por medio autorizado (transferencia, cheque nominativo o tarjeta en pagos de más de $2,000 MXN) y una lista de beneficiarios como buena práctica. Tu contador confirma qué aplica en tu caso.",
       },
       {
         q: "¿Envían los detalles a todo México?",
-        a: "Sí, enviamos a todo México. Si estás en la zona metropolitana de Guadalajara, puedes recoger en una sucursal Casa Blanca.",
+        a: "Sí, enviamos a todo México. Si estás en la zona metropolitana de Guadalajara, puedes recoger en una sucursal.",
       },
     ],
     sources: [
-      { label: "El Contribuyente: fecha límite para entregar el aguinaldo a los trabajadores", url: "https://www.elcontribuyente.mx/2022/12/cual-es-la-fecha-limite-para-entregar-el-aguinaldo-a-los-trabajadores/" },
-      { label: "Siempre al Día: deducibilidad de gastos de fin de año", url: "https://siemprealdia.co/mexico/fiscal/deducibilidad-de-gastos-de-fin-de-ano/" },
-      { label: "Pluxee: guía de regalo corporativo ideal", url: "https://www.pluxee.mx/blog/guia-regalo-corporativo-ideal/" },
-      { label: "ContadorMX: cómo hacer deducibles regalos a empleados o clientes", url: "https://contadormx.com/como-hacer-deducibles-regalos-a-empleados-o-clientes/" },
       { label: "El Imparcial: ¿pueden obligarme a cooperar para la posada de mi trabajo?", url: "https://www.elimparcial.com/mexico/2025/12/01/pueden-obligarme-a-cooperar-para-la-posada-de-mi-trabajo-esto-dice-la-lft/" },
     ],
   },
@@ -5313,54 +5304,54 @@ export const blogPosts: BlogPost[] = [
     slug: "cuando-enviar-invitaciones-de-boda",
     title: "Cuándo enviar invitaciones de boda y qué datos incluir",
     description:
-      "Cuándo enviar invitaciones de boda: plazos para el save the date, la invitación y el RSVP según Zola, Ceci y Greenvelope, y qué datos incluir.",
+      "Cuándo enviar invitaciones de boda: plazos para el save the date, la invitación y el RSVP y qué datos incluir.",
     category: "Guías",
     publishedAt: "2026-11-02",
     modifiedAt: "2026-11-04",
     intro:
-      "Las guías no coinciden en una sola cifra para saber cuándo enviar invitaciones de boda: los plazos cambian si la boda es local o de destino y si hay invitados que viajan. Aquí tienes los rangos de cada fuente, con su nombre, una tabla para ordenar tu calendario de atrás hacia adelante y lo que debe llevar la invitación para que tus invitados respondan a tiempo.",
+      "Las guías no coinciden en una sola cifra para saber cuándo enviar invitaciones de boda: los plazos cambian si la boda es local o de destino y si hay invitados que viajan. Aquí tienes rangos de referencia, una tabla para ordenar tu calendario de atrás hacia adelante y lo que debe llevar la invitación para que tus invitados respondan a tiempo.",
     sections: [
       {
         heading: "Cuándo enviar invitaciones de boda: el plazo según cada fuente",
         body: [
-          "Para una boda local, Zola indica en su resumen que las invitaciones formales suelen enviarse de 6 a 8 semanas antes, pero su propio detalle habla de 3 a 4 meses. Como la misma fuente se contradice, toma un rango y no una cifra única, y adelántalo si hay invitados que viajan.",
-          "Para una boda de destino, una síntesis de guías de Paperlust, Joy, Greenvelope y 4over4 propone enviar la invitación de 10 a 12 semanas antes, o de 3 a 4 meses antes si no hubo save the date. Zola también recomienda sumar unas semanas cuando hay invitados que vienen del extranjero.",
+          "Para una boda local, una guía del sector sitúa el envío de las invitaciones formales entre 6 y 8 semanas antes, aunque también menciona de 3 a 4 meses. Toma estos plazos como referencia y adelanta el envío si hay invitados que viajan.",
+          "Para una boda de destino, una síntesis de guías del sector propone enviar la invitación de 10 a 12 semanas antes, o de 3 a 4 meses antes si no hubo save the date. Otra guía recomienda sumar unas semanas cuando hay invitados que vienen del extranjero.",
         ],
       },
       {
         heading: "Cuándo enviar el save the date",
         body: [
-          "Zola recomienda enviar el save the date de 7 a 10 meses antes de la boda, y de 10 a 12 meses si cae en fin de semana largo o es de destino. Ceci New York pide como mínimo 6 meses, siempre con fecha y lugar confirmados para que los invitados planeen sus vuelos.",
-          "En bodas de destino, la síntesis de guías antes citada sube el rango a 8 a 12 meses antes, y algunas guías llegan hasta 14. Greenvelope sugiere omitir el save the date cuando faltan menos de unas 8 semanas y enviar directamente la invitación formal.",
+          "Una guía del sector recomienda enviar el save the date de 7 a 10 meses antes de la boda, y de 10 a 12 meses si cae en fin de semana largo o es de destino. Otra guía sugiere como mínimo 6 meses, siempre con fecha y lugar confirmados para que los invitados planeen sus vuelos.",
+          "En bodas de destino, la síntesis de guías antes citada sube el rango a 8 a 12 meses antes, y algunas guías llegan hasta 14. Una guía del sector sugiere omitir el save the date cuando faltan menos de unas 8 semanas y enviar directamente la invitación formal.",
         ],
       },
       {
         heading: "Qué fecha límite de confirmación poner",
         body: [
-          "Zola ubica la fecha límite de confirmación aproximadamente un mes antes de la boda, y suma unas semanas si hay invitados que viajan del extranjero. Greenvelope recomienda dejar al menos 3 semanas entre esa fecha y el evento, para poder cerrar con tus proveedores.",
-          "Ceci New York da 4 a 6 semanas antes en bodas locales y 6 a 8 en bodas de destino. La síntesis de guías de destino sugiere de 5 a 8 semanas, porque vuelos, bloqueo de hotel y lista final necesitan más margen. En su detalle para bodas locales, Zola habla de 3 a 4 semanas.",
+          "Una guía del sector ubica la fecha límite de confirmación aproximadamente un mes antes de la boda, y suma unas semanas si hay invitados que viajan del extranjero. Otra guía recomienda dejar al menos 3 semanas entre esa fecha y el evento, para poder cerrar con tus proveedores.",
+          "Una guía del sector propone de 4 a 6 semanas antes en bodas locales y 6 a 8 en bodas de destino. La síntesis de guías de destino sugiere de 5 a 8 semanas, porque vuelos, bloqueo de hotel y lista final necesitan más margen. Otra guía habla de 3 a 4 semanas para bodas locales.",
         ],
       },
       {
         heading: "Un cronograma hacia atrás para planear el envío",
         body: [
-          "Parte de la fecha de la boda y retrocede: primero la fecha límite de confirmación, luego el envío de la invitación y, antes, el save the date. Con los rangos de Zola, una boda local con envío 8 semanas antes pide confirmar 3 o 4 semanas antes.",
+          "Parte de la fecha de la boda y retrocede: primero la fecha límite de confirmación, luego el envío de la invitación y, antes, el save the date. Como referencia, una boda local con envío 8 semanas antes pide confirmar 3 o 4 semanas antes.",
           "Esta tabla junta los rangos de cada fuente. No coinciden entre sí, así que elige un punto dentro de ellos según tu lista de invitados.",
         ],
         table: {
           headers: ["Pieza", "Boda local", "Boda de destino"],
           rows: [
-            ["Save the date", "7 a 10 meses antes (Zola); mínimo 6 meses (Ceci New York)", "8 a 12 meses antes, algunas guías hasta 14 (síntesis de guías de destino)"],
-            ["Invitación", "6 a 8 semanas antes (resumen de Zola)", "10 a 12 semanas antes, o 3 a 4 meses si no hubo save the date (síntesis de guías de destino)"],
-            ["Confirmación", "3 a 4 semanas antes (Zola); 4 a 6 semanas antes (Ceci New York)", "5 a 8 semanas antes (síntesis de guías de destino); 6 a 8 semanas antes (Ceci New York)"],
+            ["Save the date", "7 a 10 meses antes; mínimo 6 meses según otra guía", "8 a 12 meses antes, algunas guías hasta 14 (síntesis de guías de destino)"],
+            ["Invitación", "6 a 8 semanas antes según una guía del sector", "10 a 12 semanas antes, o 3 a 4 meses si no hubo save the date (síntesis de guías de destino)"],
+            ["Confirmación", "3 a 4 semanas antes; 4 a 6 semanas según otra guía", "5 a 8 semanas antes (síntesis de guías de destino); 6 a 8 semanas antes según otra guía"],
           ],
         },
       },
       {
         heading: "Qué debe llevar la invitación para recibir respuestas",
         body: [
-          "Según Zola, la invitación debe incluir una forma de responder, ya sea el sitio web de la boda o una tarjeta RSVP con sobre prepagado o con dirección, y una fecha límite de confirmación explícita. Sin esos dos elementos, tus invitados no sabrán cómo ni cuándo contestar.",
-          "Si solo unos pocos invitados vienen de otro país, Zola sugiere avisarles antes por mensaje o correo, aunque la invitación formal salga en el calendario normal. El save the date, según Ceci New York, se manda solo cuando la fecha y el lugar ya están confirmados.",
+          "Según una guía del sector, la invitación debe incluir una forma de responder, ya sea el sitio web de la boda o una tarjeta RSVP con sobre prepagado o con dirección, y una fecha límite de confirmación explícita. Sin esos dos elementos, tus invitados no sabrán cómo ni cuándo contestar.",
+          "Si solo unos pocos invitados vienen de otro país, una guía del sector sugiere avisarles antes por mensaje o correo, aunque la invitación formal salga en el calendario normal. El save the date, según otra guía, se manda solo cuando la fecha y el lugar ya están confirmados.",
           "Cuando tengas el calendario, define el diseño de tus invitaciones. En Yume te enviamos una prueba digital antes de producir, y nada se produce hasta que la apruebas. Si estás armando otros detalles de la misma boda, revisa nuestra guía de [mesa de dulces para boda](/blog/mesa-de-dulces-para-boda).",
         ],
       },
@@ -5377,30 +5368,24 @@ export const blogPosts: BlogPost[] = [
     faq: [
       {
         q: "¿Con cuánto tiempo se envían las invitaciones de boda?",
-        a: "Depende de la fuente. Zola da 6 a 8 semanas en su resumen para una boda local, pero su detalle habla de 3 a 4 meses. Para bodas de destino, una síntesis de guías propone de 10 a 12 semanas.",
+        a: "Depende de la fuente. Una guía del sector da de 6 a 8 semanas para una boda local, pero también habla de 3 a 4 meses. Para bodas de destino, una síntesis de guías propone de 10 a 12 semanas.",
       },
       {
         q: "¿Se puede omitir el save the date?",
-        a: "Sí. Greenvelope sugiere omitirlo cuando faltan menos de unas 8 semanas para la boda y enviar directamente la invitación formal.",
+        a: "Sí. Una guía del sector sugiere omitirlo cuando faltan menos de unas 8 semanas para la boda y enviar directamente la invitación formal.",
       },
       {
         q: "¿Cuándo debe vencer la confirmación de asistencia?",
-        a: "Zola la ubica aproximadamente un mes antes de la boda. Greenvelope recomienda dejar al menos 3 semanas entre esa fecha y la boda para cerrar con los proveedores.",
+        a: "Una guía del sector la ubica aproximadamente un mes antes de la boda. Otra guía recomienda dejar al menos 3 semanas entre esa fecha y la boda para cerrar con los proveedores.",
       },
       {
         q: "¿Qué necesita la invitación para que respondan?",
-        a: "Según Zola, una forma de responder (sitio web de la boda o tarjeta RSVP con sobre prepagado o con dirección) y una fecha límite de confirmación explícita.",
+        a: "Según una guía del sector, una forma de responder (sitio web de la boda o tarjeta RSVP con sobre prepagado o con dirección) y una fecha límite de confirmación explícita.",
       },
       {
         q: "¿Cómo cotizo mis invitaciones de boda con Yume?",
         a: "Escríbenos por WhatsApp con tiempo y te cotizamos. Te mandamos una prueba digital antes de producir, y nada se produce hasta que la apruebas.",
       },
-    ],
-    sources: [
-      { label: "Zola: When should you send out your wedding invitations", url: "https://zola.com/expert-advice/when-should-you-send-out-your-wedding-invitations" },
-      { label: "Greenvelope: When to send wedding invitations and save the dates", url: "https://www.greenvelope.com/resources/when-to-send-wedding-invitations-and-save-the-dates" },
-      { label: "Ceci New York: A timeline for mailing save the dates, invitations and requesting RSVPs", url: "https://www.cecinewyork.com/blogs/ceci-style/ceci-tip-a-timeline-for-mailing-save-the-dates-invitations-and-requesting-rsvps" },
-      { label: "Paperlust: guía de bodas de destino", url: "https://paperlust.co/blog/?p=11511" },
     ],
   },
   {
@@ -5531,7 +5516,7 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Para un cumpleaños de adulto conviene elegir un recuerdo sobrio que lleve el nombre y el año del festejado, y repetir el mismo diseño en todas las piezas. En Yume puedes combinar dulceros, stickers de vinil y tatuajes temporales para eventos, todos con prueba digital antes de producir.",
           "Muchas ofertas para estas edades son de novedad: tazas, camisetas o tatuajes con frases como '50 y fabuloso', o plantillas estándar de tiendas en línea. Si organizas una sorpresa para tu mamá, tu papá o tu pareja, conviene pensar el conjunto completo antes de elegir piezas sueltas.",
-          "Un blog de producto personalizado de EE. UU. (Imprint) da ejemplos como abridores, vasos reutilizables y tote bags con la edad del hito. Son ideas de ese mercado. Aquí te proponemos piezas que Yume sí produce y que se ven bien en una mesa de fiesta.",
+          "Una guía de producto personalizado de EE. UU. da ejemplos como abridores, vasos reutilizables y tote bags con la edad del hito. Son ideas de ese mercado. Aquí te proponemos piezas que Yume sí produce y que se ven bien en una mesa de fiesta.",
         ],
       },
       {
@@ -5553,7 +5538,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Qué personalizar: nombre, año, foto o paleta",
         body: [
           "Cada pieza puede llevar uno o varios de estos elementos: el nombre del festejado, el año que cumple, una foto o los colores de la fiesta. Lo importante es repetir los mismos elementos en todas las piezas para que se vea como un solo conjunto y no como detalles de distintas tiendas.",
-          "Imprint también sugiere incluir el nombre, la fecha o una broma interna, y coordinar colores, tipografía y gráficos con la invitación y la decoración. Si ya tienes la invitación, úsala como referencia para que todo se vea de la misma fiesta.",
+          "Una guía del sector también sugiere incluir el nombre, la fecha o una broma interna, y coordinar colores, tipografía y gráficos con la invitación y la decoración. Si ya tienes la invitación, úsala como referencia para que todo se vea de la misma fiesta.",
           "En Yume puedes pedir [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara) con nombre y temática, [stickers de vinil personalizados](/productos/stickers-vinil-impermeable) con tu diseño o foto, y tatuajes temporales para eventos por cotización. Todo con prueba digital antes de producir.",
         ],
       },
@@ -5611,12 +5596,10 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Qué pongo si quiero un diseño minimalista?",
-        a: "Según Imprint, para un estilo minimalista basta con el nombre y la fecha. Puedes sumar los colores de la fiesta si quieres que combine con la invitación.",
+        a: "Según una guía del sector, para un estilo minimalista basta con el nombre y la fecha. Puedes sumar los colores de la fiesta si quieres que combine con la invitación.",
       },
     ],
-    sources: [
-      { label: "Imprint: Custom birthday party favors ideas", url: "https://imprint.com/blog/2026/02/26/custom-birthday-party-favors-ideas/" },
-    ],
+    sources: [],
   },
   {
     slug: "dulceros-para-ninos-invitados-boda",
@@ -5926,8 +5909,8 @@ export const blogPosts: BlogPost[] = [
         heading: "¿Qué es un regalo sorpresa personalizado con dulcero?",
         body: [
           "Un dulcero personalizado es un contenedor tipo lunch box, con asa, que lleva el nombre y la temática que elijas y llega armado y vacío para que tú lo llenes. Sirve de regalo sorpresa en cumpleaños, aniversarios y bodas, y también como detalle de mesa para un evento.",
-          "Un regalo sorpresa personalizado funciona cuando lleva algo que solo tiene sentido para esa persona: su nombre, una temática o un detalle que le encante. En México, según YouGov, el 56% de quienes compran regalo para su mamá elige comida y bebida y el 37% elige algo personalizado. Un dulcero une las dos ideas.",
-          "Una guía de regalos para mamá de Odin Lake separa los regalos personalizados (álbumes, joyas con nombres o fechas) de los de comida, donde la personalización se limita a una nota escrita a mano y al envoltorio. Un dulcero con nombre y temática junta ambas ideas: es comida y es un diseño hecho para una persona.",
+          "Un regalo sorpresa personalizado funciona cuando lleva algo que solo tiene sentido para esa persona: su nombre, una temática o un detalle que le encante. En México, según una encuesta, el 56% de quienes compran regalo para su mamá elige comida y bebida y el 37% elige algo personalizado. Un dulcero une las dos ideas.",
+          "Una guía de regalos para mamá separa los regalos personalizados (álbumes, joyas con nombres o fechas) de los de comida, donde la personalización se limita a una nota escrita a mano y al envoltorio. Un dulcero con nombre y temática junta ambas ideas: es comida y es un diseño hecho para una persona.",
         ],
       },
       {
@@ -5965,7 +5948,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Dulces regionales de México: un detalle con historia",
         body: [
           "Los dulces típicos mexicanos tienen origen prehispánico: se endulzaban con miel de maguey, hormiga mielera, caña de maíz y abeja pipiola, y después el piloncillo los sustituyó. Por eso un relleno de dulces tradicionales le da historia al dulcero, más allá del sabor.",
-          "Según BBVA, cada dulce se asocia a una región: muéganos de Huamantla, Tlaxcala; alegrías de Xochimilco, CDMX; cocadas de Veracruz; camote de Puebla; glorias de Linares, Nuevo León; jamoncillo de Axochiapan, Morelos; y dulce de leche o manjar de Celaya, Guanajuato. Si la persona homenajeada es de uno de esos lugares, puedes rellenar el dulcero con dulces de su estado.",
+          "Según una referencia sobre dulces tradicionales, cada dulce se asocia a una región: muéganos de Huamantla, Tlaxcala; alegrías de Xochimilco, CDMX; cocadas de Veracruz; camote de Puebla; glorias de Linares, Nuevo León; jamoncillo de Axochiapan, Morelos; y dulce de leche o manjar de Celaya, Guanajuato. Si la persona homenajeada es de uno de esos lugares, puedes rellenar el dulcero con dulces de su estado.",
           "El mismo artículo presenta el dulce artesanal como portador de recuerdos, experiencias y emociones, y esa es justo la idea de un regalo sorpresa: que el relleno le recuerde algo a quien lo recibe.",
         ],
       },
@@ -5980,7 +5963,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Qué poner dentro del dulcero de regalo",
         body: [
           "El dulcero llega armado y vacío, así que tú decides el relleno y ahí está la sorpresa. Elige los dulces favoritos de quien lo recibe: chocolates, galletas, gomitas o dulces tradicionales mexicanos. Lo importante es que el relleno se parezca a esa persona y que el diseño del dulcero haga el resto.",
-          "Sobre el presupuesto: en la misma encuesta de YouGov, el rango de gasto más común para un regalo a mamá en México es de $201 a $1,000 (58%), y un 9% gasta entre $1,001 y $1,900. Piensa este regalo como un detalle de valor medio, donde pesan el diseño y lo que pones dentro, no el precio más bajo.",
+          "Sobre el presupuesto: en la misma encuesta, el rango de gasto más común para un regalo a mamá en México es de $201 a $1,000 (58%), y un 9% gasta entre $1,001 y $1,900. Piensa este regalo como un detalle de valor medio, donde pesan el diseño y lo que pones dentro, no el precio más bajo.",
         ],
       },
       {
@@ -6001,11 +5984,7 @@ export const blogPosts: BlogPost[] = [
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable"],
     relatedBlogSlugs: ["que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "dulceros-dia-de-muertos-noviembre", "dulceros-navidenos-personalizados"],
-    sources: [
-      { label: "Emprendedor: regalos del Día de las Madres 2026 y presupuesto de los mexicanos (YouGov)", url: "https://emprendedor.com/dia-madres-2026-regalos-presupuesto-mexicanos/" },
-      { label: "Odin Lake: regalos con significado para mamá", url: "https://odinlake.com/es/blogs/all-blogs/thoughtful-gifts-to-make-mom-feel-special-on-mothers-day" },
-      { label: "BBVA: los dulces típicos, una tradición artesanal de México", url: "https://www.bbva.com/es/mx/los-dulces-tipicos-una-tradicion-artesanal-de-mexico/" },
-    ],
+    sources: [],
     faq: [
       {
         q: "¿Los dulceros incluyen dulces?",
@@ -6029,7 +6008,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿De dónde son los muéganos y las cocadas?",
-        a: "Según BBVA, los muéganos se asocian a Huamantla, Tlaxcala, y las cocadas a Veracruz. Puedes usar dulces de la región de la persona homenajeada como relleno.",
+        a: "Según una referencia sobre dulces tradicionales, los muéganos se asocian a Huamantla, Tlaxcala, y las cocadas a Veracruz. Puedes usar dulces de la región de la persona homenajeada como relleno.",
       },
     ],
   },
@@ -6367,7 +6346,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Cuándo pedir souvenirs de boda: plazos de referencia",
         body: [
           "No hay un plazo único. En respuestas de proveedores australianos, lo más habitual es pedir entre 3 y 6 semanas antes de la boda, pero uno pide mínimo 12 semanas y otro prefiere 3 meses. Son referencias de otro país, no de México: el plazo real depende de tu proveedor y de cuánto personalices.",
-          "Otro proveedor sugiere entre 1 y 3 meses según sea personalizado o de catálogo. Estas respuestas son de 2021 y vienen de Easy Weddings, un sitio australiano. Úsalas para ubicarte, y confirma el plazo con quien vaya a hacer tu pieza.",
+          "Otro proveedor sugiere entre 1 y 3 meses según sea personalizado o de catálogo. Estas respuestas son de 2021 y corresponden a una referencia australiana. Úsalas para ubicarte, y confirma el plazo con quien vaya a hacer tu pieza.",
         ],
         table: {
           headers: ["Etapa", "Cuándo", "Qué haces"],
@@ -6446,11 +6425,8 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Los plazos de esta guía son los de Yume?",
-        a: "No. Son referencias de proveedores australianos, publicadas por Easy Weddings con respuestas de 2021. El plazo de tu pieza depende del producto: pregúntanos por WhatsApp con la fecha de tu boda.",
+        a: "No. Son referencias de proveedores australianos, basadas en respuestas de 2021. El plazo de tu pieza depende del producto: pregúntanos por WhatsApp con la fecha de tu boda.",
       },
-    ],
-    sources: [
-      { label: "Easy Weddings: Bomboniere lead time", url: "https://easyweddings.com.au/Bomboniere/advice/bomboniere-lead-time" },
     ],
   },
   {
@@ -6468,14 +6444,14 @@ export const blogPosts: BlogPost[] = [
         heading: "¿Cuánto cuestan los recuerdos de boda por invitado en México?",
         body: [
           "No hay un precio único por invitado, porque depende de la pieza, la personalización y el empaque. No encontramos un promedio nacional confiable de lo que se gasta en recuerdos en México, así que lo más útil es calcular tu propio tope por invitado con un método sencillo, en lugar de copiar una cifra ajena.",
-          "Para ubicarte, el Wedding Industry Report México 2024, que cita Cronoshare, estima una boda promedio en unos $155,000 MXN para 146 invitados, cerca de $1,062 MXN por invitado en todo el evento. Es el gasto de la boda completa, no del recuerdo.",
+          "Como referencia general, una estimación de 2024 sitúa el gasto de una boda promedio en México en unos $155,000 MXN para 146 invitados, cerca de $1,062 MXN por invitado en todo el evento. Es el gasto de la boda completa, no del recuerdo.",
         ],
       },
       {
         heading: "Paso 1: fija un tope con el gasto por invitado",
         body: [
           "Divide el costo total de tu boda entre el número de invitados para obtener tu gasto por invitado. Ese número es el techo de referencia: el recuerdo es solo una parte de ese total. Decide qué parte quieres destinarle antes de cotizar, porque sin un tope por invitado cualquier cotización parece razonable y es difícil comparar.",
-          "Con la cifra del Wedding Industry Report México 2024, unos $1,062 MXN por invitado, un recuerdo hipotético de $50 sería cerca del 5% de ese gasto. Es solo una ilustración, no una recomendación.",
+          "Con la referencia general de unos $1,062 MXN por invitado, un recuerdo hipotético de $50 sería cerca del 5% de ese gasto. Es solo una ilustración, no una recomendación.",
         ],
       },
       {
@@ -6546,9 +6522,6 @@ export const blogPosts: BlogPost[] = [
     ],
     relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
     relatedBlogSlugs: ["dulceros-personalizados-guadalajara", "que-poner-en-un-dulcero", "cuantos-souvenirs-pedir-por-evento", "souvenirs-de-boda-personalizados", "cuando-pedir-souvenirs-de-boda"],
-    sources: [
-      { label: "Cronoshare: cuánto cuesta una boda en México", url: "https://www.cronoshare.com.mx/cuanto-cuesta/boda-mexico" },
-    ],
     faq: [
       {
         q: "¿Hay un promedio de gasto en recuerdos de boda en México?",
@@ -6606,20 +6579,20 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Cantidad: cómo contarla y cuánto colchón dejar",
         body: [
-          "Indica la cantidad confirmada y cómo la contaste: por invitado, por pareja o por mesa. Sobre el colchón, Zola sugiere un margen pequeño cuando el detalle es barato y, si es costoso o personalizado, limitar los extras a lo que aguante el presupuesto. Zola no da una cifra fija.",
-          "Zola cita como motivos para pedir extras las piezas dañadas, rotas o perdidas en el envío (más grave en bodas de destino), las piezas frágiles, los invitados añadidos a última hora y los que pasan de no a sí. Algunas parejas aceptan que unos pocos invitados se queden sin detalle.",
+          "Indica la cantidad confirmada y cómo la contaste: por invitado, por pareja o por mesa. Como referencia general, deja un margen pequeño cuando el detalle es barato y, si es costoso o personalizado, limita los extras a lo que aguante el presupuesto. No hay una cifra fija.",
+          "Entre los motivos para pedir extras están las piezas dañadas, rotas o perdidas en el envío (más grave en bodas de destino), las piezas frágiles, los invitados añadidos a última hora y los que pasan de no a sí. Algunas parejas aceptan que unos pocos invitados se queden sin detalle.",
           "Si tu pedido es de [dulceros personalizados](/productos/dulceros-personalizados), el pedido mínimo es de 10 piezas. Para otros cálculos por tipo de evento, revisa [cuántos souvenirs pedir](/blog/cuantos-souvenirs-pedir-por-evento).",
         ],
       },
       {
         heading: "Cronograma: qué pedir primero y qué esperar al conteo final",
         body: [
-          "Pide primero las piezas genéricas, las que no llevan nombres de invitados, y deja para el final las que dependen del conteo y del plano de mesas. Como referencia general, Paperlust propone un orden por semanas antes del evento. Es un blog de papelería de Estados Unidos, así que úsalo como guía y no como regla.",
-          "Paperlust sugiere pedir los menús 8 a 10 semanas antes del evento, los programas de ceremonia y los letreros 6 a 8 semanas antes, y las tarjetas de lugar y los números de mesa 4 a 6 semanas antes. Todas se usan el día del evento. También propone cerrar el RSVP 4 a 6 semanas antes.",
+          "Pide primero las piezas genéricas, las que no llevan nombres de invitados, y deja para el final las que dependen del conteo y del plano de mesas. Como referencia general, puedes organizar las piezas por semanas antes del evento. Usa este calendario como guía y no como regla.",
+          "Como referencia general, puedes pedir los menús 8 a 10 semanas antes del evento, los programas de ceremonia y los letreros 6 a 8 semanas antes, y las tarjetas de lugar y los números de mesa 4 a 6 semanas antes. Todas se usan el día del evento. También puedes cerrar el RSVP 4 a 6 semanas antes.",
           "Los plazos propios de Yume son los que valen para tu pedido: confírmalos con nosotros al cotizar por WhatsApp. Para menús, revisa el [menú de boda personalizado](/blog/menu-de-boda-personalizado). Para invitaciones, lee [cómo pedir invitaciones](/blog/como-pedir-invitaciones-personalizadas-para-eventos). Para recuerdos, consulta [cuándo pedir souvenirs de boda](/blog/cuando-pedir-souvenirs-de-boda).",
         ],
         table: {
-          headers: ["Pieza", "Referencia de Paperlust"],
+          headers: ["Pieza", "Referencia general"],
           rows: [
             ["Menús", "8 a 10 semanas antes"],
             ["Programas de ceremonia y letreros", "6 a 8 semanas antes"],
@@ -6631,8 +6604,8 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Piezas genéricas y piezas con nombre: cómo separarlas",
         body: [
-          "Separa tu pedido en dos grupos. Las piezas genéricas, como los letreros, se pueden pedir con anticipación. Las piezas con nombres, como las tarjetas de lugar, dependen del conteo final y del plano de mesas. Paperlust indica que el catering suele pedir el número confirmado de invitados 2 a 4 semanas antes.",
-          "Paperlust recomienda cerrar el plano de mesas antes de pedir las tarjetas de lugar. Si tu evento es una boda, revisa [cuántos dulceros pedir para una boda](/blog/cuantos-dulceros-pedir-para-una-boda) y calcula la cantidad con tu conteo.",
+          "Separa tu pedido en dos grupos. Las piezas genéricas, como los letreros, se pueden pedir con anticipación. Las piezas con nombres, como las tarjetas de lugar, dependen del conteo final y del plano de mesas. Como referencia general, el catering suele pedir el número confirmado de invitados 2 a 4 semanas antes.",
+          "Conviene cerrar el plano de mesas antes de pedir las tarjetas de lugar. Si tu evento es una boda, revisa [cuántos dulceros pedir para una boda](/blog/cuantos-dulceros-pedir-para-una-boda) y calcula la cantidad con tu conteo.",
         ],
       },
       {
@@ -6653,7 +6626,6 @@ export const blogPosts: BlogPost[] = [
         heading: "Prueba digital y fecha para cerrar la cantidad",
         body: [
           "Antes de producir te enviamos una prueba digital, y nada se produce hasta que la apruebas. Define quién la aprueba y pregunta al proveedor hasta cuándo puedes cambiar la cantidad y qué se puede ajustar después de aprobarla. Esas reglas dependen de cada proveedor y conviene tenerlas por escrito.",
-          "Como referencia, Paperlust indica que su prueba digital llega en 1 a 2 días hábiles, con dos rondas de ediciones incluidas, y calcula 4 a 6 semanas desde el brief hasta la entrega.",
           "Para ver cómo funciona la revisión paso a paso, consulta la [prueba digital para planners](/blog/prueba-digital-pedido-evento-planners).",
         ],
       },
@@ -6661,27 +6633,17 @@ export const blogPosts: BlogPost[] = [
         heading: "Entrega y contacto directo",
         body: [
           "Dile al proveedor dónde y cuándo necesitas recibir las piezas: la fecha del evento no es la fecha de entrega. Indica ciudad y dirección, y si lo recibes en Guadalajara o en otra ciudad del país. Deja un contacto directo por WhatsApp, de quien decide, para resolver dudas en el momento.",
-          "Como referencia, Paperlust recomienda entregar la papelería en el lugar del evento durante la última semana.",
+          "Como referencia general, puedes entregar la papelería en el lugar del evento durante la última semana.",
           "Si organizas eventos con frecuencia, visita la [página para planners](/planners) y cotiza por WhatsApp con tus datos a la mano.",
         ],
       },
     ],
     relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
     relatedBlogSlugs: ["guia-planners-proveedor-detalles-personalizados", "prueba-digital-pedido-evento-planners", "cuantos-souvenirs-pedir-por-evento", "cuando-pedir-souvenirs-de-boda"],
-    sources: [
-      {
-        label: "Zola: ¿Debes comprar detalles de boda extra? (Should you buy extra wedding favors)",
-        url: "https://www.zola.com/expert-advice/should-you-buy-extra-wedding-favors",
-      },
-      {
-        label: "Paperlust: Wedding planning checklist",
-        url: "https://paperlust.co/blog/wedding-planning-checklist/",
-      },
-    ],
     faq: [
       {
         q: "¿Cuántas piezas extra debo pedir?",
-        a: "Zola no da una cifra fija. Recomienda un colchón pequeño cuando el detalle es barato (menciona unos 10 de más) y, cuando es costoso o personalizado, limitar los extras a lo que aguante el presupuesto.",
+        a: "No hay una cifra fija. Como referencia general, puedes dejar un colchón pequeño cuando el detalle es barato (por ejemplo, unos 10 de más) y, cuando es costoso o personalizado, limitar los extras a lo que aguante el presupuesto.",
       },
       {
         q: "¿Cuál es el pedido mínimo de dulceros personalizados?",
@@ -6713,7 +6675,7 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Para un evento con clientes conviene un detalle que funcione como gesto de agradecimiento, con tu logo o el nombre de tu empresa, y no como gancho para que asistan. Elige la pieza según el tipo de evento: lanzamiento, aniversario con clientes, cena u open house.",
           "Para un lanzamiento o una cena puedes usar [dulceros personalizados](/productos/dulceros-personalizados), que llegan armados y vacíos para que tú elijas qué llevan dentro. Si prefieres un detalle más ligero, [stickers con tu logo](/productos/stickers-logo-personalizado) también funcionan. Para ver otros casos, revisa [dulceros para eventos empresariales](/blog/dulceros-para-eventos-empresariales) y [detalles para aniversario de empresa](/blog/aniversario-empresa-detalles-personalizados). Si tu evento es una posada, mira los [detalles para posada de empresa](/blog/detalles-posada-empresa-personalizados).",
-          "Los estudios de ASI (Advertising Specialty Institute) de 2012 a 2015 reportan que cerca de 85 a 87 % de quienes reciben un artículo promocional recuerda al anunciante. Son cifras de hace años y de otro contexto, así que tómalas como una idea general: un detalle bien elegido se recuerda.",
+          "Estudios del sector de 2012 a 2015 reportan que cerca de 85 a 87 % de quienes reciben un artículo promocional recuerda al anunciante. Son cifras de hace años y de otro contexto, así que tómalas como una idea general: un detalle bien elegido se recuerda.",
           "Si necesitas variantes dentro del mismo evento, escríbenos por WhatsApp y lo revisamos contigo.",
         ],
         table: {
@@ -6730,7 +6692,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Cuántos detalles pedir para un evento con clientes",
         body: [
           "Una regla práctica: pide los confirmados más unas piezas extra para invitados sorpresa, patrocinadores y tu equipo. Es una regla propia, no una cifra de ninguna fuente. La ausencia esperada no se resta: te dice cuántas piezas probablemente sobren, porque varía mucho de un evento a otro.",
-          "El informe de Pheedloop sobre más de 1,070 eventos presenciales con check-in da una mediana de no-show de alrededor de 20 % y una media de 29 %. En eventos gratuitos la mediana sube a cerca de 28 %, frente a cerca de 17 % en los de pago. Un evento por invitación suele ser gratuito para el invitado.",
+          "Un informe sobre más de 1,070 eventos presenciales con check-in da una mediana de no-show de alrededor de 20 % y una media de 29 %. En eventos gratuitos la mediana sube a cerca de 28 %, frente a cerca de 17 % en los de pago. Un evento por invitación suele ser gratuito para el invitado.",
           "Con grupos pequeños la ausencia pesa más. El informe no da cuántos eventos hay en cada rango de tamaño, así que tómalo como orientación.",
           "Ejemplo con la mediana de 32 % para 10 a 49 esperados: con 40 confirmados, llegarían alrededor de 27 personas y sobrarían unas 13 piezas si pides para los 40. Es solo un ejemplo de cálculo, no una predicción.",
           "Estos datos son de eventos presenciales generales, no de México ni de regalos corporativos. El no-show se calcula como 1 menos check-ins entre esperados, e incluye ponentes y personas no registradas. Úsalos como referencia y apóyate en el historial de tus propios eventos.",
@@ -6776,7 +6738,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Regalos para clientes y deducibilidad: qué confirmar",
         body: [
-          "La deducibilidad de un regalo corporativo en México depende de quién lo recibe, de cómo se entrega y de su tratamiento fiscal, según señala Pluxee México. Aquí no damos reglas ni montos: antes de fijar presupuesto, confirma tu caso con tu contador.",
+          "La deducibilidad de un regalo corporativo en México depende de quién lo recibe, de cómo se entrega y de su tratamiento fiscal, según una guía del sector. Aquí no damos reglas ni montos: antes de fijar presupuesto, confirma tu caso con tu contador.",
           "Esto no es asesoría fiscal; solo es un recordatorio para que lo revises antes de decidir.",
         ],
       },
@@ -6790,11 +6752,7 @@ export const blogPosts: BlogPost[] = [
       "prueba-digital-pedido-evento-planners",
       "checklist-planners-pedido-detalles-evento",
     ],
-    sources: [
-      { label: "Pheedloop: Event Data Lab Report 5 (no-show en eventos presenciales)", url: "https://pheedloop.com/blog/event-data-lab-report-5" },
-      { label: "ASI: estudio sobre productos promocionales (2012)", url: "https://members.asicentral.com/news/press/press-releases/november-2012/new-asi-study-promo-products-deliver-bigger-better-bang-for-buck/" },
-      { label: "Pluxee México: guía del regalo corporativo ideal", url: "https://www.pluxee.mx/blog/guia-regalo-corporativo-ideal/" },
-    ],
+    sources: [],
     faq: [
       {
         q: "¿Los dulceros incluyen dulces?",
@@ -6818,7 +6776,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Las cifras de no-show son de México?",
-        a: "No. Vienen de un informe de Pheedloop sobre eventos presenciales generales, no de México ni de regalos corporativos. Úsalas solo como referencia.",
+        a: "No. Vienen de un informe sobre eventos presenciales generales, no de México ni de regalos corporativos. Úsalas solo como referencia.",
       },
     ],
   },
@@ -6923,14 +6881,14 @@ export const blogPosts: BlogPost[] = [
         heading: "Caja: junto a la terminal de pago",
         body: [
           "La caja es una de las ubicaciones que las guías de proveedores de QR señalan como de mejor rendimiento. Colócala junto a la terminal de pago, a la altura de los ojos, de frente y sin nada que la tape. Una de esas guías sugiere un soporte un poco por encima del lector de tarjetas.",
-          "Esa guía cita una cifra de 15 a 20% para la zona de pago (atribuida a MapLift). Tómala como orientativa: viene de un proveedor de QR, no de un estudio independiente, y tu resultado depende de tu flujo de clientes. Un QR escondido detrás de la caja o bajo el nivel del mostrador no se escanea.",
+          "Como referencia general, una guía cita una cifra de 15 a 20% para la zona de pago. Tómala como orientativa: viene de un proveedor de QR, no de un estudio independiente, y tu resultado depende de tu flujo de clientes. Un QR escondido detrás de la caja o bajo el nivel del mostrador no se escanea.",
         ],
       },
       {
         heading: "Mesa: a la vista durante la visita",
         body: [
           "En restaurantes y cafeterías, la placa de mesa funciona cuando queda en la línea de visión de quien está sentado, sin estorbar la conversación ni la comida. Si el cliente tiene que mover platos o vasos para verla, ya quedó en mal lugar. Para mesas, un stand de pie evita pegar nada.",
-          "La misma guía atribuye 12% a los porta-carteles de mesa en restaurantes (cifra atribuida a MapLift), también orientativa. Si tu negocio es un restaurante, revisa la guía de [placa de reseñas para restaurantes](/blog/placa-resenas-google-para-restaurantes).",
+          "Como referencia general, la misma guía atribuye 12% a los porta-carteles de mesa en restaurantes, una cifra orientativa. Si tu negocio es un restaurante, revisa la guía de [placa de reseñas para restaurantes](/blog/placa-resenas-google-para-restaurantes).",
         ],
       },
       {
@@ -6973,7 +6931,6 @@ export const blogPosts: BlogPost[] = [
     relatedBlogSlugs: ["como-usar-placa-resenas-google-yume", "placa-resenas-google-para-restaurantes", "placa-resenas-google-para-consultorios", "placa-nfc-vs-codigo-qr-impreso-resenas"],
     sources: [
       { label: "Google: política de contenido de contribuciones (reseñas)", url: "https://support.google.com/contributionpolicy/answer/7400114?hl=es" },
-      { label: "Visu: dónde poner el QR de reseñas (guía de un proveedor de QR)", url: "https://visu.network/es/articulos/donde-poner-el-qr-de-resenas/" },
     ],
     faq: [
       {
@@ -6982,7 +6939,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Las cifras de rendimiento por ubicación son seguras?",
-        a: "No. Vienen de una guía de un proveedor de QR que las atribuye a MapLift, no de un estudio independiente. Úsalas solo como referencia.",
+        a: "No. Vienen de una guía de un proveedor de QR, no de un estudio independiente. Úsalas solo como referencia.",
       },
       {
         q: "¿La placa de Yume necesita suscripción?",

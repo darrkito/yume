@@ -1500,8 +1500,8 @@ export const dulceroPosts: BlogPost[] = [
       {
         heading: "Cuántos souvenirs pedir por evento: la regla base",
         body: [
-          "Parte de los invitados confirmados y súmale un margen pequeño. La calculadora de Hacecuentas usa 1.1 souvenirs por invitado en eventos de adultos, es decir, 10% extra, para cubrir a un acompañante no anotado o una pieza que se rompe. En cumpleaños infantiles cuenta 1 por niño y suma dos o tres a mano.",
-          "Esa calculadora cubre solo dos casos: eventos de adultos y cumpleaños infantiles. Para bodas, XV años, bautizos, baby showers y eventos de empresa no encontramos una regla verificable en fuentes abiertas, así que no te damos una cifra inventada. En esos casos la decisión es de tu evento: qué unidad cuentas y cuánto margen te da tranquilidad.",
+          "Parte de los invitados confirmados y súmale un margen pequeño. Una referencia general es calcular 1.1 souvenirs por invitado en eventos de adultos, es decir, 10% extra, para cubrir a un acompañante no anotado o una pieza que se rompe. En cumpleaños infantiles cuenta 1 por niño y suma dos o tres a mano.",
+          "Estas referencias cubren dos casos: eventos de adultos y cumpleaños infantiles. Para bodas, XV años, bautizos, baby showers y eventos de empresa no encontramos una regla verificable en fuentes abiertas, así que no te damos una cifra inventada. En esos casos la decisión es de tu evento: qué unidad cuentas y cuánto margen te da tranquilidad.",
           "El margen de 10% tiene una lógica fácil de entender: cubre a alguien que llega sin haber avisado o una pieza que no sale como esperabas. Si tu lista ya está cerrada y confirmada, el margen puede ser pequeño. Si todavía faltan respuestas, conviene tenerlas antes de calcular.",
         ],
       },
@@ -1516,19 +1516,19 @@ export const dulceroPosts: BlogPost[] = [
       {
         heading: "Tabla por tipo de fiesta: cómo contar en cada evento",
         body: [
-          "La tabla indica qué unidad conviene contar en cada tipo de evento. Solo hay cifra de margen donde una fuente abierta la da: adultos y cumpleaños infantil. En bodas, XV años, bautizos, baby showers y eventos de empresa, la unidad y el margen los acuerdas con tu cliente antes de producir.",
+          "La tabla indica qué unidad conviene contar en cada tipo de evento. Como referencia general, se indican cifras de margen para adultos y cumpleaños infantiles. En bodas, XV años, bautizos, baby showers y eventos de empresa, la unidad y el margen los acuerdas con tu cliente antes de producir.",
           "En un cumpleaños infantil la unidad es el niño. Con 25 niños confirmados, la referencia da 25 más dos o tres, es decir, entre 27 y 28 piezas.",
           "En una boda, un XV años o un bautizo suelen llegar familias completas. Por eso la pregunta no es solo cuántas personas asisten, sino si un recuerdo alcanza para toda la familia o cada persona recibirá el suyo. Esa decisión depende del estilo del evento y del presupuesto, y la tomas con tu cliente.",
         ],
         table: {
           headers: ["Tipo de fiesta", "Cómo contar", "Margen de referencia"],
           rows: [
-            ["Boda", "Por invitado, pareja o familia, según lo acuerdes con tu cliente", "Sin regla verificable. Si cuentas por invitado adulto, referencia de 1.1 (Hacecuentas)"],
-            ["XV años", "Por invitado, pareja o familia, según lo acuerdes con tu cliente", "Sin regla verificable. Si cuentas por invitado adulto, referencia de 1.1 (Hacecuentas)"],
-            ["Bautizo", "Por invitado o por familia, según el evento", "Sin regla verificable. Si cuentas por invitado adulto, referencia de 1.1 (Hacecuentas)"],
-            ["Baby shower", "Por invitado o por familia, según el evento", "Sin regla verificable. Si cuentas por invitado adulto, referencia de 1.1 (Hacecuentas)"],
-            ["Cumpleaños infantil", "Por niño", "1 por niño y 2 o 3 extra a mano (Hacecuentas)"],
-            ["Evento de empresa", "Por asistente confirmado", "Sin regla verificable. Si cuentas por asistente adulto, referencia de 1.1 (Hacecuentas)"],
+            ["Boda", "Por invitado, pareja o familia, según lo acuerdes con tu cliente", "Sin regla verificable. Si cuentas por invitado adulto, referencia de 1.1"],
+            ["XV años", "Por invitado, pareja o familia, según lo acuerdes con tu cliente", "Sin regla verificable. Si cuentas por invitado adulto, referencia de 1.1"],
+            ["Bautizo", "Por invitado o por familia, según el evento", "Sin regla verificable. Si cuentas por invitado adulto, referencia de 1.1"],
+            ["Baby shower", "Por invitado o por familia, según el evento", "Sin regla verificable. Si cuentas por invitado adulto, referencia de 1.1"],
+            ["Cumpleaños infantil", "Por niño", "1 por niño y 2 o 3 extra a mano"],
+            ["Evento de empresa", "Por asistente confirmado", "Sin regla verificable. Si cuentas por asistente adulto, referencia de 1.1"],
           ],
         },
       },
@@ -1565,13 +1565,10 @@ export const dulceroPosts: BlogPost[] = [
     ],
     relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
     relatedBlogSlugs: ["que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "dulceros-navidenos-personalizados"],
-    sources: [
-      { label: "Hacecuentas: calculadora de regalos por invitado (souvenirs)", url: "https://hacecuentas.com/calculadora-regalos-invitado-souvenir" },
-    ],
     faq: [
       {
         q: "¿Cuántos souvenirs pedir por invitado?",
-        a: "Hacecuentas usa 1.1 por invitado en eventos de adultos, es decir, 10% extra. En cumpleaños infantiles usa 1 por niño y recomienda sumar 2 o 3 a mano.",
+        a: "Como referencia general, calcula 1.1 por invitado en eventos de adultos, es decir, 10% extra. En cumpleaños infantiles cuenta 1 por niño y suma 2 o 3 a mano.",
       },
       {
         q: "¿Cuento los invitados confirmados o la lista total?",
