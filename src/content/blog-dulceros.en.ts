@@ -324,105 +324,174 @@ export const dulceroPostsEn: BlogPost[] = [
   },
   {
     slug: en("dulceros-para-bautizo-y-primera-comunion"),
-    title: "Baptism Favors for Girls and Boys and First Communion",
-    metaTitle: "Baptism Favors for Girls and Boys and Communion",
+    title: "What to Give Baptism Guests: Favor Boxes",
+    metaTitle: "What to Give Baptism Guests: Favor Boxes",
     description:
-      "Personalized favor boxes for baptisms and first communions: designs, what details to include, what to put inside, how many to order, price and delivery times.",
+      "What to give baptism guests: personalized favor boxes and keepsakes, how to choose for each guest, how many to order, prices and timing.",
     category: "Guides",
     publishedAt: PUBLISHED,
-    modifiedAt: "2026-11-03",
+    modifiedAt: "2026-11-11",
     intro:
-      "At a baptism or first communion, the keepsake guests take home is often an important part of the celebration. A personalized favor box with the child's name and the date works as both a keepsake and a treat. Here are ideas for design, which details to include, what to put inside, how many to order, what it costs and how far ahead to order so it looks worthy of the occasion.",
+      "If you're wondering what to give baptism guests, here's how to choose between candy, cookies or a candle, and how a personalized favor box can be the keepsake. We also answer questions about first communion favor boxes in Guadalajara: how many to order from your guest list, when to finalize the order, what to put inside, how to design it and what it costs. This guide is for families and planners coordinating the details for their clients.",
     sections: [
-      { heading: "Baptism favors for a girl", body: ["A favor box with her name and the celebration's theme can use pink, beige or the family's chosen palette. Add matching stickers and review the digital proof before approval."] },
-      { heading: "Baptism favors for a boy", body: ["Choose blue, neutral or invitation colors and personalize the box with his name. It arrives assembled and empty for the family to fill; stickers can accompany it."] },
-      { heading: "First communion favors", body: ["For a first communion, the child's name and a theme in white or the event colors can coordinate the box and stickers. Share the details and review the proof before production."] },
       {
-        heading: "Which favor box suits a baptism or first communion",
+        heading: "What to give baptism guests: how to decide",
         body: [
-          "Choose a box with the child's name, the type of celebration and the date, in the party's color palette. It's lunch-box style with a handle, measures 15.7 × 11.7 × 9.9 cm and arrives assembled and empty, so you decide what goes inside.",
-          "It works as the keepsake you hand out as guests leave the church and as part of the dessert table at the reception. The handle makes it easy to carry, and the name and date turn it into a keepsake after the event.",
+          "A good gift for baptism guests is something they can eat or keep, with the child's name and the date. A personalized favor box does both: it holds candy and the box remains as a keepsake. Decide according to who receives it: close family or general guests.",
+          "Ask yourself three questions: who will receive it, whether it will be eaten or kept, and whether it matches the invitation. Those answers narrow the decision down to a few options.",
         ],
       },
       {
-        heading: "Designs that work",
+        heading: "Guest keepsake ideas from other guides",
         body: [
-          "For baptisms, pastel tones (blue, pink, beige, white) with a dove, a cross or little angels are the most requested. For first communions, white with gold, a chalice or a simple cross, and the name in an elegant script. Our customization includes the name and the theme you choose.",
-          "If the party has a set color palette, send us the invitation and we'll match the box design to those colors so it fits the dessert table. Before production we send a digital proof, and nothing is produced until you approve it.",
-          "A practical tip: if the event has a lot of decoration, pick a simple design with the name nice and big. If the decor is understated, you can afford more detail on the box.",
+          "One parenting guide brings together nine baptism keepsake ideas: a photo frame, decorated cookies or cake pops, a figurine photo clip, tulle bags with candy, a box of cookies, a candy cone, a little candy basket, a fabric basket and a personalized candle with the baby's name and date.",
+          "It's a general list without quantities or prices. The guide presents boxed cookies wrapped in tissue paper with a large bow as an affordable, attractive option. Cookies and cake pops are edible, so they're likely to be eaten rather than kept.",
         ],
       },
       {
-        heading: "What details to put on the box",
+        heading: "Close family or general guests: what to give each",
         body: [
-          "The most common are the child's name, the type of celebration (My Baptism, My First Communion) and the date. With those three details the box already works as a keepsake, and everything else is optional: godparents, a short line or the venue.",
-          "Some families add the godparents' names or a short thank-you line. If siblings are celebrating together, you can put both names on the same design.",
-          "Check the spelling of every name and the date on the digital proof before approving it: it's the last step before production, and a mistake there is repeated on every box.",
+          "For general guests, a shared keepsake with the child's name and date is enough. For close family, godparents and grandparents, you might choose something different with their own names. Define the groups before counting pieces, since each group can have a different design and quantity.",
         ],
       },
       {
-        heading: "What to put inside a baptism or communion favor box",
+        heading: "A favor box and personalized detail as one set",
         body: [
-          "For a family event with kids and adults, fine chocolates, candied almonds, Jordan almonds, mazapanes or decorated cookies all work well. The box arrives empty, without candy, so you decide the filling and the budget.",
-          "If you want it to last as a keepsake, add a small rosary, a medal or a candle. Stickers with the name or the party design are also a good sugar-free extra.",
-          "Ask about allergies (peanut and chocolate are the most common) if you're inviting kids you don't know well, and fill one test box before buying everything to work out how much you need. For more ideas by age, see our guide on what to put in a party favor box.",
+          "The favor box and stickers in the same design carry the name and date, making the keepsake and dessert table look like one coordinated set. The box arrives assembled and empty, you choose the filling, and name stickers can accompany it. You review everything together in the digital proof.",
+          `If you're also planning a baby shower, see the [personalized baby shower favors](/en/blog/${en("recuerdos-baby-shower-personalizados")}).`,
         ],
       },
       {
-        heading: "How many to order and what it costs",
+        heading: "First communion favor boxes in Guadalajara: what and when to order",
         body: [
-          `First 100 pieces: $${dulceroUnit} MXN per box, with a minimum order of 10. 30 boxes are $${dulceroTotal(30)} and 50 are $${dulceroTotal(50)}. Above 100 pieces it's wholesale pricing: message us on WhatsApp and we'll quote you.`,
-          `Order one per family or one per guest, depending on your budget. If it's per family, count the confirmed families and add 2 or 3 extra for people who show up unannounced. Orders from $${FREE_SHIPPING_THRESHOLD} ship free across Mexico, and in the Guadalajara metro area you can pick them up for $${CASABLANCA_PRICE} at any of the ${CASABLANCA_BRANCHES.length} Casa Blanca parcel branches.`,
-          "If the party pairs a baptism with a big meal for many guests, you can order some with the full design for the main table and some with a simpler design for everyone else, all in the same order.",
+          "For a first communion or baptism in Guadalajara, choose a favor box with the child's name, the celebration and the date, in the party's color palette. It arrives assembled and empty, so you choose the filling, and you review a digital proof before production.",
+          "It's a lunch-box style box with a handle. It works both as a keepsake handed out as guests leave the church and on the reception dessert table. With the name and date, it remains a keepsake after the event.",
         ],
       },
       {
-        heading: "When to order so they arrive on time",
+        heading: "How many boxes to order for confirmed guests",
         body: [
-          `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after you approve the digital proof, plus ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} days of national shipping (or ${PICKUP_EXTRA_DAYS} business day if you pick up at a Casa Blanca branch in Guadalajara). To avoid rushing, start the order about three weeks ahead.`,
-          "The Code of Canon Law (canon 867) says parents are obliged to take care that infants are baptized in the first few weeks. So if you already have a date at the parish, order the boxes early instead of waiting until everything else is settled.",
-          "Confirm the list of children, the names and the date before approving the design so you don't lose days on corrections. If the event falls in a season with a lot of celebrations, order further ahead.",
+          "Start with your confirmed guest list, not the invitations sent. Before counting, decide who gets a box: children only, children and adults, godparents and close family. Once you've made that rule, the number of pieces follows directly; the minimum order is 10 pieces.",
+          "If you order one per family instead of one per guest, count confirmed families. If godparents or people helping at the event also receive one, add them separately to find the total.",
+        ],
+      },
+      {
+        heading: "How much favor boxes for your list cost",
+        body: [
+          `First 100 pieces: $${dulceroUnit} MXN per [personalized favor box](/en/products/personalized-party-favor-boxes), with a minimum order of 10 pieces. 30 boxes are $${dulceroTotal(30)} and 50 are $${dulceroTotal(50)}. Above 100 pieces it's wholesale pricing: message us and we'll quote you. Multiply the price per piece by your confirmed guests to budget for the boxes.`,
+          `Orders from $${FREE_SHIPPING_THRESHOLD} ship free across Mexico, and in the Guadalajara metro area you can pick them up for $${CASABLANCA_PRICE} at any of the ${CASABLANCA_BRANCHES.length} parcel pickup branches.`,
+        ],
+        table: {
+          headers: ["First 100 pieces", "Total"],
+          rows: [
+            ["10 favor boxes", `$${dulceroTotal(10)} MXN`],
+            ["30 favor boxes", `$${dulceroTotal(30)} MXN`],
+            ["50 favor boxes", `$${dulceroTotal(50)} MXN`],
+            ["100 favor boxes", `$${dulceroTotal(100)} MXN`],
+          ],
+        },
+      },
+      {
+        heading: "When to finalize your order so it arrives on time",
+        body: [
+          `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after you approve the digital proof, plus ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} days of national shipping, or ${PICKUP_EXTRA_DAYS} business day if you pick up at a Guadalajara parcel branch. Those days count from proof approval, so it's best to settle the name, date and quantity early.`,
+          "Count backwards from the day you need the boxes in hand and confirm the guest list before approving the digital proof.",
+        ],
+      },
+      {
+        heading: "Baptism and communion calendar: count back from the Mass",
+        body: [
+          "If you hand out the boxes as guests leave the church, count backwards from the Mass date, not the party date. If you only place them on the reception table, the party date is your deadline. First decide where you'll hand them out.",
+          "The Code of Canon Law (canon 867) says parents should take care that infants are baptized in the first few weeks of life. So if you already have a parish date, it's a good idea to order the boxes early.",
+          "Each parish sets its own calendar: confirm your Mass date with yours before finalizing the order.",
+        ],
+      },
+      {
+        heading: "First communion: the date is known months ahead",
+        body: [
+          "A first communion date is known well in advance because the child first attends catechism, which a published guide says takes at least one or two years depending on the parish. That gives you months to choose a design, settle the list and order without rushing.",
+          "The guide says communion requirements include a birth certificate, baptism certificate (original and copy) and completion of catechism. Age also depends on the parish: the Archdiocese of Mexico sets a minimum of nine years, but that's its own rule, not Guadalajara's. Confirm the rules with your parish.",
+        ],
+      },
+      {
+        heading: "What to do if the guest list changes at the last minute",
+        body: [
+          `If the list changes before you approve the digital proof, message us and we'll adjust the order quantity. Within the first 100 pieces, the price per box stays the same ($${dulceroUnit} MXN), with a minimum of 10 pieces. Nothing is produced until you approve the proof.`,
+          "After approval, quantity changes depend on the stage of your order: message us as soon as possible and we'll tell you what's possible.",
+        ],
+      },
+      {
+        heading: "A detail for baptism and communion godparents",
+        body: [
+          "A published guide says communion godparents must be Catholic and confirmed, and married godparents must provide a Church marriage certificate. They're central to the ceremony, so decide early whether they'll receive the same box as guests or one with a different name. Message us and we can discuss it.",
+          "If you'd like the godparents' box to carry their name or a short phrase, tell us when ordering and review it on the digital proof along with the rest of the design.",
+        ],
+      },
+      {
+        heading: "Baptism favors for a girl",
+        body: ["For a girl, the box carries her name and the celebration's theme in pink, beige or the family's preferred palette. Add coordinated stickers and review the digital proof before approving it, so the name, date and colors look as you imagined."],
+      },
+      {
+        heading: "Baptism favors for a boy",
+        body: ["For a boy, choose blue, neutral or invitation colors and personalize the box with his name and the date. It arrives assembled and empty so the family can choose the filling, and matching stickers can accompany it."],
+      },
+      {
+        heading: "First communion favors",
+        body: ["For a first communion, the name and a theme in white or the event colors bring the box and stickers together. Share the child's details and the invitation colors with us, and review the digital proof before production."],
+      },
+      {
+        heading: "What to put inside a baptism favor box",
+        body: [
+          "A wedding dessert table guide recommends mixing classic candy with a few special options and keeping a consistent style. You can use fine chocolates, coated almonds, Jordan almonds, mazapanes or decorated cookies. The box arrives assembled and empty, so you choose the filling and its budget.",
+          "If you want it to last as a keepsake, add a small rosary, a medal or a candle, or some [name stickers](/en/products/waterproof-vinyl-stickers). Ask about allergies before shopping if you're inviting children you don't know well.",
+        ],
+      },
+      {
+        heading: "How much candy to calculate per guest: a reference",
+        body: [
+          "A wedding dessert table guide estimates about 150 g per guest for small events, 100 g for medium events and 80 g for large events. That's a reference for another type of event, not a baptism or communion rule, so use it only as a starting point.",
+          `If you give one box per guest, the calculation is per box and what changes is the filling you put inside. For more ideas by age, see the [guide to what to put in a favor box](/en/blog/${en("que-poner-en-un-dulcero")}).`,
+        ],
+      },
+      {
+        heading: "Designs and details for the favor box",
+        body: [
+          "The basics are the child's name, the type of celebration (My Baptism, My First Communion) and the date. Those three details make the box a keepsake; everything else is optional: godparents, a short phrase or the venue.",
+          "For a baptism, try pastel tones with a dove, cross or little angels. For first communion, try white and gold, a chalice or simple cross, and the name in an elegant script. If you have the invitation, send it to us and we'll adapt the design to its colors.",
+          "Check the spelling of names and the date carefully on the digital proof before approving it: an error there is repeated on every piece. Nothing is produced until you approve it.",
         ],
       },
       {
         heading: "How to order",
         body: [
-          "You can order from the online store by choosing the quantity and paying by card, OXXO or SPEI, or get a quote on WhatsApp first if you'd like to talk through the design before paying. Either way you get a digital proof before anything is produced.",
-          "If your event includes other keepsakes, such as stickers to seal little bags or decorate what goes inside, they can go in the same order. And if you're also planning a wedding, quinceañera or baby shower, see our guide to favor boxes for social events.",
+          "You can order from the online store by choosing the quantity and paying by card, at a convenience store or by bank transfer, or request a quote by message first if you'd like to discuss the design before paying. Either way, you receive a digital proof before anything is produced.",
+          `Start at the [personalized favor boxes](/en/products/personalized-party-favor-boxes) page. If you're also organizing a wedding, quinceañera or baby shower, see the [guide to favor boxes for social events](/en/blog/${en("dulceros-para-eventos-sociales-boda-xv-baby-shower")}). To decide how to hand them out, compare [boxes, bags or cups](/en/blog/${en("cajas-bolsas-o-vasos-dulceros-cual-elegir")}). If you're in the area, see [personalized favor boxes in Guadalajara](/en/blog/${en("dulceros-personalizados-guadalajara")}).`,
         ],
       },
     ],
     faq: [
-      {
-        q: "Do the baptism and communion favor boxes come with candy?",
-        a: "No. The box arrives assembled and empty, ready to fill with whatever candy or keepsakes you choose.",
-      },
-      {
-        q: "How much does a baptism or first communion favor box cost?",
-        a: `First 100 pieces: $${dulceroUnit} MXN each, with a minimum order of 10. Above 100 pieces it's wholesale pricing, quoted on WhatsApp. Orders from $${FREE_SHIPPING_THRESHOLD} ship free across Mexico.`,
-      },
-      {
-        q: "What size is the box?",
-        a: "It measures 15.7 × 11.7 × 9.9 cm (6.2 × 4.6 × 3.9 inches), is made of opaline cardstock, has a handle and arrives assembled.",
-      },
-      {
-        q: "What details go on the box?",
-        a: "The most common are the child's name, the type of celebration (My Baptism, My First Communion) and the date. You can add godparents or a short line. We send a digital proof so you can check the spelling before production.",
-      },
-      {
-        q: "How long does delivery take?",
-        a: `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after you approve the proof, plus ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} days of national shipping, or ${PICKUP_EXTRA_DAYS} business day if you pick up at a Casa Blanca branch in Guadalajara.`,
-      },
-      {
-        q: "When should a child be baptized according to the Code of Canon Law?",
-        a: "Canon 867 says parents are obliged to take care that infants are baptized in the first few weeks. That's why it helps to order the boxes as soon as you have a date at the parish.",
-      },
+      { q: "What should I give baptism guests?", a: "Give a detail with the child's name and date that can be eaten or kept. A personalized favor box arrives empty so you can choose the filling. Other guides suggest tulle candy bags, decorated cookies or a personalized candle." },
+      { q: "Can the favor box replace a baptism keepsake?", a: "It can be the keepsake: it holds candy to eat and a box with the name and date to keep. If you'd like another detail, such as name stickers, decide according to your guests and budget." },
+      { q: "How many baptism keepsakes should I order?", a: "Count confirmed guests and decide who gets one. The minimum favor box order is 10 pieces, and if the list changes before you approve the digital proof, message us to adjust the quantity." },
+      { q: "How many first communion favor boxes should I order?", a: "Start with confirmed guests and decide who gets one: children only, children and adults, or godparents and close family too. The minimum order is 10 pieces." },
+      { q: "How much does a baptism or first communion favor box cost?", a: `First 100 pieces: $${dulceroUnit} MXN per piece, with a minimum order of 10. Above 100 pieces it's wholesale pricing, quoted by message. Orders from $${FREE_SHIPPING_THRESHOLD} ship free across Mexico.` },
+      { q: "When should I order the favor boxes?", a: "As soon as you have the Mass date and confirmed guest list. Production days count from approval of the digital proof, so settle the name, date and quantity in good time." },
+      { q: "How long does delivery take?", a: `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after proof approval, plus ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} days of national shipping, or ${PICKUP_EXTRA_DAYS} business day for pickup at a Guadalajara parcel branch.` },
+      { q: "Do you deliver in Guadalajara?", a: `Yes. In the Guadalajara metro area you can pick them up for $${CASABLANCA_PRICE} at any of the ${CASABLANCA_BRANCHES.length} parcel branches. We also ship across Mexico.` },
+      { q: "What if the guest list changes?", a: "If it changes before you approve the digital proof, message us and we'll adjust the quantity. Nothing is produced until you approve the proof." },
+      { q: "What does the digital proof include?", a: "It's a preview of your favor box with the name, date and colors you chose. You review it before production, and nothing is produced until you approve it." },
+      { q: "Do baptism and communion favor boxes include candy?", a: "No. The box arrives assembled and empty, ready to fill with the candy or keepsakes you choose." },
+      { q: "What details go on the box?", a: "The basics are the child's name, the type of celebration (My Baptism, My First Communion) and the date. You can add godparents or a short phrase. We send a digital proof to check spelling before production." },
+      { q: "Can a favor box be personalized for godparents?", a: "Yes. Tell us when ordering whether the godparents will have the same design or one with their name, and review it on the digital proof. Message us to discuss it." },
+      { q: "At what age is first communion?", a: "It depends on the parish. A published guide says the Archdiocese of Mexico sets nine as the minimum age, and some parishes accept younger children who have attended catechism. That's a rule of that archdiocese, not Guadalajara, so confirm with your parish." },
+      { q: "How much candy should I calculate per guest?", a: "As a wedding dessert table reference, about 150 g per guest for small events, 100 g for medium events and 80 g for large events. It's an estimate for another kind of event, not a baptism or communion rule." },
+      { q: "When should a child be baptized according to the Code of Canon Law?", a: "Canon 867 says parents should take care that infants are baptized in the first few weeks of life. That's why it helps to order the boxes as soon as you have a parish date." },
     ],
     sources: [
-      {
-        label: "Code of Canon Law (Holy See): Book IV, canon 867 on the baptism of infants",
-        url: "https://www.vatican.va/archive/cod-iuris-canonici/eng/documents/cic_lib4-cann834-878_en.html",
-      },
+      { label: "Parenting guide: baptism keepsake ideas for guests", url: "https://www.guiainfantil.com/galerias/bebes/ideas-para-regalar-en-el-bautizo-del-bebe/" },
+      { label: "First communion guide: age, catechism, requirements and godparents", url: "https://www.adn40.mx/mexico/2025-10-24/cual-es-la-mejor-edad-para-hacer-la-primera-comunion/" },
+      { label: "Code of Canon Law (Holy See): Book IV, canon 867 on the baptism of infants", url: "https://www.vatican.va/archive/cod-iuris-canonici/eng/documents/cic_lib4-cann834-878_en.html" },
+      { label: "Wedding dessert table guide: quantities, fillings and setup", url: "https://www.bodas.net/articulos/todo-lo-que-debeis-saber-antes-de-montar-una-candy-bar--c2448" },
     ],
     relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
     relatedBlogSlugs: [en("dulceros-para-eventos-sociales-boda-xv-baby-shower"), en("que-poner-en-un-dulcero"), en("dulceros-personalizados-guadalajara"), en("cajas-bolsas-o-vasos-dulceros-cual-elegir")],
@@ -532,53 +601,143 @@ export const dulceroPostsEn: BlogPost[] = [
   },
   {
     slug: en("dulceros-para-eventos-sociales-boda-xv-baby-shower"),
-    title: "Favor Boxes for Weddings, Quinceañeras and Baby Showers",
-    metaTitle: "Wedding, Quinceañera and Baby Shower Favor Boxes",
+    title: "Personalized Quinceañera Keepsakes: Favor Boxes and Details",
+    metaTitle: "Personalized Quinceañera Keepsakes and Favor Boxes",
     description:
-      "Personalized favor box ideas for weddings, quinceañeras, baby showers and other social events: designs for each event, what to put inside, how many to order and when.",
+      "Personalized quinceañera keepsakes: how many to order, how to match favor boxes to the candy table, production timing and digital proofs.",
     category: "Guides",
     publishedAt: PUBLISHED,
     intro:
-      "At weddings, quinceañeras and baby showers, favor boxes are usually part of the candy table or handed out as a keepsake at the end of the event. Personalized with the names and colors of the celebration, they look like part of the decor rather than a last-minute detail. Here are ideas for each type of event.",
+      "Personalized quinceañera keepsakes look best when there are fewer of them, the design is carefully considered and they match the party. At weddings, quinceañeras and baby showers, a favor box can be part of the candy table or the keepsake each family takes home at the end. Here are ideas for each event, how many keepsakes to order, what to put inside and how far ahead to order.",
     sections: [
       {
-        heading: "Weddings",
+        heading: "Favor boxes for social events: what they are and when to use them",
         body: [
-          "For weddings, the couple's names and the date in the wedding colors work well: white with gold, sage green, terracotta or the color of the flowers. They can go on the candy table so each guest fills their own, or be filled and placed at each seat as a keepsake.",
-          "If there are kids at the wedding, a box with a more playful theme for the kids' table is a touch parents appreciate.",
+          "A favor box is a lunch-box-style container with a handle that arrives assembled and empty so you can choose the filling. At social events it serves as a keepsake or as part of the candy table. It is personalized with names, the date and the party colors, and you receive a digital proof before production.",
+          "You can put it on the table for each guest to fill, or hand it out already filled at the end of the event. Customization includes the name and theme you choose, so the same format works for an elegant wedding, a quinceañera or a baby shower.",
         ],
       },
       {
-        heading: "Quinceañeras",
+        heading: "Weddings: favor boxes with the couple's names",
         body: [
-          "For a quinceañera, the birthday girl's name with the color or theme of her party (an elegant style, a floral look or the theme she chose) and the date. They're usually ordered for all guests or just for the court of honor.",
+          "For a wedding, a favor box with the couple's names and the date in the celebration's colors works well. It can go on the candy table for each guest to fill, or already filled at each place as a keepsake. Before production we send you a digital proof for approval.",
+          "Colors that work well for a wedding include white and gold, sage green, terracotta or the shade of the flowers. To make it part of the decor, use the same palette as the invitation and centerpieces.",
+          "If there are children at the wedding, a favor box with a more playful theme for the children's table is a detail parents appreciate.",
+        ],
+      },
+      {
+        heading: "Quinceañeras: favor boxes with the birthday girl's name",
+        body: [
+          "For a quinceañera, the favor box carries the birthday girl's name, the date and her party's color or theme, whether elegant, floral or another theme she chooses. You can order them for all guests or only for the court of honor and escorts, depending on your budget.",
+          "If you order only for the court, remember that the minimum order is 10 pieces. If they are for all guests, count the final guest list first and add one or two extras.",
+        ],
+      },
+      {
+        heading: "Personalized quinceañera keepsakes: what options are there?",
+        body: [
+          "Ideas suggested by an article about personalized quinceañera keepsakes include photo magnets, keychains, mini frames, candles, candy bags, fans and bracelets. A favor box with the birthday girl's name offers something different: a keepsake with its own design that can also be part of the candy table.",
+          `Yume makes the [personalized favor box](/en/products/personalized-party-favor-boxes) with the name, date and theme of your party. You can get the other details on that list, such as magnets or keychains, from another supplier. If you want to add a small detail inside the box, you can order [personalized vinyl stickers](/en/products/waterproof-vinyl-stickers) with the same design.`,
+        ],
+      },
+      {
+        heading: "How many quinceañera keepsakes to order for your guests",
+        body: [
+          "You do not need one keepsake per person: the article recommends one per family or couple, plus a few extras. Its example is 100 guests, for whom 60 to 70 keepsakes are enough. This is a reference from one article, so count the families and couples on your final list before deciding.",
+          `For example, 65 favor boxes cost $${dulceroTotal(65)} MXN at the price for the first 100 pieces. The minimum order is 10 pieces, so you can also order a separate batch for the court, escorts or close family.`,
+        ],
+      },
+      {
+        heading: "Fewer pieces, better design: what to personalize",
+        body: [
+          "The article advises choosing a few attractive, useful pieces over many details nobody will use, and making the keepsake reflect the birthday girl. For a favor box, that means personalizing her name, the date and the party color or theme, which is what our customization includes.",
+          "The same article suggests ordering a sample beforehand when the keepsake includes a photo. At Yume, you receive a digital proof before production, and nothing is produced until you approve it.",
+        ],
+      },
+      {
+        heading: "How to match the favor box to the candy table and party theme",
+        body: [
+          "Use the same palette from the invitation and decor on the favor box, and place it on the candy table for each guest to fill or hand it out already filled at the end. That way the keepsake looks like part of the planned celebration.",
+          `Send us a photo of the invitation or decor and we will adapt the design to those colors. To choose a filling for your event, see [what to put in a favor box](/en/blog/${en("que-poner-en-un-dulcero")}).`,
         ],
       },
       {
         heading: "Baby showers and gender reveals",
         body: [
-          "For a baby shower, the baby's name (or Baby + last name if there's no name yet) in pastel tones. For a gender reveal, a neutral design with boy or girl? works both before and after the surprise.",
+          "For a baby shower, the favor box carries the baby's name, or Baby and the family name if the baby does not have a name yet, in pastel colors. For a gender reveal, a neutral design with the question boy or girl works before and after the surprise.",
+          "It is an easy detail to hand out at the end of the party, and guests take home a keepsake with the baby's name.",
         ],
       },
       {
-        heading: "How many to order, price and timing",
+        heading: "What to put inside a favor box for your event",
         body: [
-          "Each box is $75 MXN with a minimum of 10: 50 guests is $3,750 and 80 is $6,000, with free national shipping from $750. Production takes 3 to 5 business days after you approve the digital proof, plus shipping; for large events, order three or four weeks ahead. They arrive assembled, ready to fill.",
+          "The favor box arrives empty, so you decide on the filling. Traditional candies, cookies, chocolates and a small detail such as stickers all work. Ask about allergies before buying and put together a test box to calculate how much of each item you need.",
+          `For more ideas by age and type of event, see the guide to [what to put in a favor box](/en/blog/${en("que-poner-en-un-dulcero")}). For a wedding, choose candy that will keep well without refrigeration during the party.`,
+        ],
+      },
+      {
+        heading: "For event planners: how to order favor boxes for clients",
+        body: [
+          "If you organize events, agree on the names, date, colors and quantity with your client before ordering. We send you a digital proof for your client's approval, and nothing is produced until then. You can arrange everything directly by message. The minimum order is 10 pieces, so you can order for each event.",
+          `Have the invitation or decor colors handy to request the design in the same palette, and tell us about them by message. If your client has more than one event, such as a baptism and first communion, see also [favor boxes for baptisms and first communions](/en/blog/${en("dulceros-para-bautizo-y-primera-comunion")}).`,
+        ],
+      },
+      {
+        heading: "How many favor boxes to order and what they cost",
+        body: [
+          `First 100 pieces: $${dulceroUnit} MXN per favor box, with a minimum order of 10 pieces. For 50 guests the cost is $${dulceroTotal(50)} and for 80 it is $${dulceroTotal(80)}. Above 100 pieces, wholesale pricing applies: message us for a quote. National shipping is free from $${FREE_SHIPPING_THRESHOLD}. Add one or two extras in case more guests arrive.`,
+          `In the Guadalajara metropolitan area, you can pick them up for $${CASABLANCA_PRICE} at any of the ${CASABLANCA_BRANCHES.length} parcel service branches. For more about local delivery, see [personalized favor boxes in Guadalajara](/en/blog/${en("dulceros-personalizados-guadalajara")}).`,
+        ],
+      },
+      {
+        heading: "When to order so they arrive on time",
+        body: [
+          `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after you approve the digital proof, plus ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} days for national shipping. For a quinceañera, the order is design, digital proof, approval, production and delivery before the event. The article recommends ordering several weeks in advance.`,
+          `If you pick up at a parcel branch in Guadalajara, add ${PICKUP_EXTRA_DAYS} business day. For large events, it is best to order three or four weeks ahead. Leave that margin to adjust the design without rushing and confirm the final guest count before approving the proof.`,
         ],
       },
     ],
     faq: [
       {
-        q: "Do the favor boxes arrive assembled?",
-        a: "Yes. They arrive assembled, ready to fill.",
+        q: "Do the favor boxes include candy?",
+        a: "No. The favor box arrives assembled and empty, ready to fill with the candy or details you choose.",
       },
       {
-        q: "How far ahead should I order favor boxes for a large event?",
-        a: "For large events, order three or four weeks ahead. Production takes 3 to 5 business days after you approve the digital proof, plus shipping time.",
+        q: "How much does a personalized favor box cost?",
+        a: `First 100 pieces: $${dulceroUnit} MXN per piece, with a minimum order of 10. Above 100 pieces, wholesale pricing applies and a quote is available by message. National shipping is free from $${FREE_SHIPPING_THRESHOLD}.`,
+      },
+      {
+        q: "What does the customization include?",
+        a: "The name (of the couple, birthday girl, baby or company) and the theme you choose, including your brand logo. We send you a digital proof before production.",
+      },
+      {
+        q: "How many favor boxes should I order for my event?",
+        a: "Order for the number of guests who will receive one and add one or two extras. The minimum is 10 pieces, so you can also order just for the court, children's table or a small group.",
+      },
+      {
+        q: "How long do they take to arrive?",
+        a: `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after proof approval, plus ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} days for national shipping, or ${PICKUP_EXTRA_DAYS} business day if you collect at a parcel branch in Guadalajara.`,
+      },
+      {
+        q: "How many quinceañera keepsakes do I need for 100 guests?",
+        a: "You do not need one per person. One article recommends one per family or couple plus a few extras and gives an example of 60 to 70 keepsakes for 100 guests. This is a reference from one article: count your families and couples before deciding.",
+      },
+      {
+        q: "How far ahead should I order quinceañera keepsakes?",
+        a: `One article recommends ordering several weeks ahead. At Yume, production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after digital proof approval, plus shipping or pickup. For large events, order three or four weeks ahead.`,
+      },
+      {
+        q: "What can I personalize on a quinceañera favor box?",
+        a: "The birthday girl's name, the date and the party's color or theme. You receive a digital proof before production, and nothing is produced until you approve it.",
       },
     ],
     relatedProductSlugs: [DULCERO],
     relatedBlogSlugs: [en("dulceros-para-bautizo-y-primera-comunion"), en("que-poner-en-un-dulcero"), en("dulceros-para-eventos-empresariales")],
+    sources: [
+      {
+        label: "Quinceañera keepsake ideas with photos",
+        url: "https://www.elimparcial.com/locurioso/2026/05/14/recuerdos-para-15-anos-ideas-originales-con-fotos-que-las-quinceaneras-guardaran-para-siempre/",
+      },
+    ],
   },
   {
     slug: en("que-poner-en-un-dulcero"),

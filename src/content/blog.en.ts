@@ -665,27 +665,140 @@ export const blogPostsEn: BlogPost[] = [
   },
   {
     slug: BLOG_SLUG_EN["recuerdos-baby-shower-personalizados"],
-    title: "Personalized Baby Shower Favors: Ideas for Guests",
-    metaTitle: "Personalized Baby Shower Favors: Ideas",
-    description: "Personalized baby shower favor ideas for girls, boys or neutral palettes: favor boxes, stickers, quantities, prices and timing.",
+    title: "What to Give Baby Shower Guests",
+    metaTitle: "What to Give Baby Shower Guests",
+    description: "What to give baby shower guests besides candy: favor boxes, stickers and temporary tattoos, how to combine them and when to order them.",
     category: "Guides",
     publishedAt: "2026-11-03",
-    modifiedAt: "2026-11-03",
-    intro: "Personalized baby shower favors give each guest a detail connected to welcoming the baby. A name, a palette and a presentation can bring the favor into the celebration.",
+    modifiedAt: "2026-11-11",
+    intro: "If you're wondering what to give baby shower guests besides candy, Yume produces three options with your party design: a favor box, a sticker and a temporary tattoo. Here you can compare them, see which suits each guest, calculate how many to order with an example, and decide when to order, whether you're organizing the party yourself or working with a planner.",
     sections: [
-      { heading: "What to give as a baby shower favor", body: ["A favor box with the baby's name and the party theme gives each guest a personal detail. It arrives assembled and empty for you to fill. A matching sticker can decorate or seal the favor.", "Decide whether to place one at each seat, hand them out at the end or set them beside the candy table. For filling ideas, see [what to put in a favor box](/en/blog/what-to-put-in-a-party-favor-box)."] },
-      { heading: "Baby shower favors for a girl", body: ["Pink, cream or the family's chosen palette can accompany the baby's name. Coordinate the box and sticker with the invitation or table."] },
-      { heading: "Baby shower favors for a boy", body: ["Try blue, green or the celebration's colors. The name and a simple illustration can appear on both the box and sticker."] },
-      { heading: "Original favors with neutral palettes", body: ["Beige, white or soft green can create a neutral look. Choose a theme meaningful to the family and leave room for the name; you will receive a digital proof to review before production."] },
-      { heading: "How many to order and what they cost", body: [`Count confirmed guests and decide whether to give one per person or family; consider extras. The minimum is 10 favor boxes. 100 pieces (small size) cost $${priceOf("dulceros-personalizados", 10)} MXN for 10 or $${priceOf("dulceros-personalizados", 50)} MXN for 50; quantities above 100 are quoted on WhatsApp.`, "The minimum for vinyl stickers is 40 pieces. See the [social event favor box guide](/en/blog/wedding-quinceanera-baby-shower-favor-boxes) for ideas for other celebrations."] },
-      { heading: "When to order favors", body: [`Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after digital proof approval. Add ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} business days for national shipping or ${PICKUP_EXTRA_DAYS} business day for Casa Blanca pickup in Guadalajara.`, "Allow time to decide on the name and theme and review the proof. Share your date and quantity on WhatsApp if you need to confirm the schedule."] },
-    ],
-    faq: [
-      { q: "Can I personalize baby shower favors for a girl, a boy or a neutral palette?", a: "Yes. Pink, blue, green, beige or white palettes can accompany the baby's name on the favor box and the sticker. You receive a digital proof to review before production." },
-      { q: "When should I order baby shower favors?", a: `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after digital proof approval. Add ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} business days for national shipping or ${PICKUP_EXTRA_DAYS} business day for Casa Blanca pickup in Guadalajara.` },
+      {
+        heading: "Which baby shower favor to choose",
+        body: [
+          "Choose a small favor, the same for each guest and easy to take home. A personalized favor box fits: it arrives assembled and empty, has a handle, and you fill it with whatever you choose. What makes it special is the design, not just the baby's name.",
+          "A baby shower checklist guide describes the ideal favor as something small, the same for everyone and placed near the exit. Its examples include something edible, a plant, a candle or a packet of seeds. A [personalized favor box](/en/products/personalized-party-favor-boxes) fits that idea, with the advantage of a design made for your party instead of one from a catalog.",
+          "A 2026 article on wedding favors in Mexico points in the same direction: guests keep useful pieces with their own design, while generic favors tend to be forgotten. Applied to a baby shower, the idea is to combine design and usefulness, not just add a name. To decide what goes inside, see [what to put in a favor box](/en/blog/what-to-put-in-a-party-favor-box).",
+        ],
+      },
+      {
+        heading: "What to give baby shower guests besides candy",
+        body: [
+          "Besides candy, you can give a sticker with the party design or a temporary tattoo with the baby's name, on their own or inside a favor box. Yume produces all three pieces in the same palette, so they match the invitation and decorations.",
+          "The criterion guides repeat most often is to connect the favor to the party theme or the baby's name. A shopping guide gives jungle, fairy tales, and clouds and stars as examples of themes. A [vinyl sticker](/en/products/waterproof-vinyl-stickers) or temporary tattoo with that theme meets the criterion with a piece made just for your party.",
+          "If you want to see the tattoo option, visit [custom temporary tattoos](/en/products/custom-temporary-tattoos) to review the purchase conditions.",
+        ],
+      },
+      {
+        heading: "Candy, stickers or tattoos: what gets consumed and what gets kept",
+        body: [
+          "Edible items get consumed. One baby shower guide rates candy low for usefulness because it gets consumed, and plants as mostly decorative with little personalization. That's why it helps to add a piece guests can keep or use, with your own design instead of a generic catalog design.",
+          "The same guide highlights soap, mugs and bookmarks as more useful in everyday life. The table compares the three pieces Yume produces.",
+        ],
+        table: {
+          headers: ["Favor", "What it is", "Personalization", "Consumed or kept"],
+          rows: [
+            ["Personalized favor box", "Lunch box-style packaging with a handle, arriving assembled and empty", "Name and theme", "You choose the filling, which gets consumed"],
+            ["Vinyl sticker", "Premium vinyl with your design, character or photo", "Your design, character or photo", "Resistant to water, sun and scratches"],
+            ["Temporary tattoo", "Custom temporary tattoo for the party", "Your design", "Temporary by definition"],
+          ],
+        },
+      },
+      {
+        heading: "Personalized baby shower favor boxes: what to put inside",
+        body: [
+          "The favor box arrives assembled and empty, so you choose the filling. A Spanish-language baby shower guide suggests decorated cookies, chocolates and candy in packaging that reflects the party theme as edible favors, and says candy is always a hit. You choose the combination that goes with your palette.",
+          "The box personalization includes the name and theme, bringing the filling together with the rest of the party: the baby's or mother's name and your chosen palette. You can order your [baby shower favor boxes](/en/products/personalized-party-favor-boxes) with your party's name and theme.",
+        ],
+      },
+      {
+        heading: "Individual favor box or candy table: which to choose",
+        body: [
+          "An individual favor box is one piece per guest in personalized packaging that they take home. A candy table is shared and stays at the party as part of the decorations. If you want each person to leave with their own favor, choose the box; the table works as a complement.",
+          "The same Spanish-language guide mentions cupcakes and cookies for the candy table, and separately suggests personalized packaging as an edible favor. They serve different roles: the table is enjoyed at the party and the box is the last thing each guest takes home.",
+        ],
+      },
+      {
+        heading: "Baby shower favors for a girl, a boy or a neutral palette",
+        body: [
+          "For a girl, a boy or a neutral palette, the rule is the same: use the party colors and repeat the design on each piece. You can choose pink or cream, blue or green, and beige, white or soft green. Make the baby's or mother's name visible.",
+          "For a girl, pink, cream or the family's chosen palette can accompany the baby's name. Coordinate the box and sticker designs with the invitation or table so everything looks like part of the same celebration.",
+          "For a boy, try blue, green or the celebration's colors. The name and a simple illustration can be repeated on the box and sticker, so each guest takes home a piece that matches what they saw at the party.",
+          "If the family prefers a neutral look, beige, white or soft green work well. Choose your own theme and leave room for the name; before production you'll receive a digital proof to review the result.",
+        ],
+      },
+      {
+        heading: "Which favor suits each type of guest",
+        body: [
+          "For adults and grandmothers, a favor box with a sticker in the same design works well because it combines something edible with something to keep. For children, a box with a temporary tattoo adds something to play with. If you have a mix of guests, repeat the same design across all pieces.",
+          "A baby shower guide recommends preparing small prizes if there will be games. A sticker or [temporary tattoo](/en/products/custom-temporary-tattoos) with the party design can serve that purpose.",
+          "For more tattoo ideas, see [temporary tattoos for parties](/en/blog/temporary-tattoos-for-weddings-events-and-parties) and [how long temporary tattoos last](/en/blog/how-long-do-temporary-tattoos-last-and-how-to-remove-them).",
+        ],
+      },
+      {
+        heading: "How to personalize a baby shower favor",
+        body: [
+          "Good personalization means more than writing a name. Decide whose name to use, the baby's or the mother's, along with the event palette and a simple illustration. Before production you receive a digital proof to review the design, and nothing is produced until you approve it.",
+          "If you already have the invitation or photos of the decorations, send them by WhatsApp and we'll adapt the design to those colors. That way the favor feels like a natural finish to the party instead of a separate piece.",
+          "A sticker in the same design can decorate or seal the favor. [Custom vinyl stickers](/en/products/waterproof-vinyl-stickers) are made with your design, character or photo and sold by piece count, so you can repeat the box illustration on each one.",
+        ],
+      },
+      {
+        heading: "How to combine a favor box, sticker and tattoo without an improvised look",
+        body: [
+          "The simplest combination is a favor box with a sticker in the same design. For children, add a temporary tattoo. Repeat the name, illustration and palette on each piece and match them to the invitation, so the favor looks like part of the party rather than a last-minute addition.",
+          "One design service offers free baby shower label templates to download and print. That's the DIY route: a label on a generic product. With Yume, the design is adapted to your palette and you receive a digital proof before production.",
+          "If you're working with a planner, send them the same invitation and decoration photos so the designs for all three pieces start from the same base.",
+        ],
+      },
+      {
+        heading: "How many baby shower favor boxes to order and what they cost",
+        body: [
+          "Order one favor box per confirmed guest and add a 10% margin. The margin covers an unlisted companion, someone taking one for a person who couldn't attend, and a damaged piece. That's the 1.1-per-guest rule used by an event favor calculator for adults.",
+          `Example: with 40 confirmed guests, 40 times 1.1 makes 44 favor boxes. For the first 100 pieces, 44 boxes cost $${priceOf("dulceros-personalizados", 44)} MXN. The minimum is 10 pieces: 10 boxes cost $${priceOf("dulceros-personalizados", 10)} MXN and 50 cost $${priceOf("dulceros-personalizados", 50)} MXN. Above 100 pieces, wholesale pricing is quoted on WhatsApp.`,
+          `Vinyl stickers have a minimum of 40 pieces, which cost $${priceOf("stickers-vinil-impermeable", 40)} MXN. Once your confirmed guest list is final, use the calculation above for the boxes and decide how many stickers to add.`,
+          "To compare ideas for other celebrations, see the [social event favor box guide](/en/blog/wedding-quinceanera-baby-shower-favor-boxes).",
+        ],
+      },
+      {
+        heading: "When to order baby shower favors",
+        body: [
+          `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days from approval of the digital proof, plus ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} business days for national shipping or ${PICKUP_EXTRA_DAYS} business day for pickup at Casa Blanca in Guadalajara. Order with time to spare to decide on the name and theme and review the proof.`,
+          "As a general reference, the checklist guide suggests starting to plan about 8 weeks ahead, sending invitations about 4 weeks ahead and setting the RSVP deadline about 2 weeks ahead. It also suggests buying favor wrapping and nonperishable items about 2 weeks ahead. You can use that schedule and add the production time above.",
+          "Another baby shower guide also recommends organizing the event several weeks in advance. For stickers and temporary tattoos, share the baby shower date and quantity on WhatsApp and we'll confirm the schedule before you order.",
+        ],
+      },
+      {
+        heading: "Baby shower with a planner: timing and direct contact",
+        body: [
+          "If you're organizing the baby shower with a planner, or you're a planner yourself, the process is simple: share the date, quantity, name and palette on WhatsApp, receive a digital proof and approve it before production. That makes the timing clear from the start and helps the favor match the rest of the event.",
+          "We serve Guadalajara and Zapopan and ship throughout Mexico. If the event is in the Guadalajara metropolitan area, you can pick up at Casa Blanca. For more details about ordering in your city, see [favor boxes in Guadalajara](/en/blog/personalized-party-favor-boxes-guadalajara).",
+        ],
+      },
     ],
     relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
     relatedBlogSlugs: [BLOG_SLUG_EN["dulceros-para-eventos-sociales-boda-xv-baby-shower"], BLOG_SLUG_EN["que-poner-en-un-dulcero"]],
+    sources: [
+      { label: "Baby shower checklist", url: "https://visu.network/es/articulos/checklist-para-baby-shower/" },
+      { label: "Wedding favors guests keep in 2026", url: "https://www.cronica.com.mx/tendencias/2026/09/04/dile-adios-a-los-recuerdos-de-boda-que-terminan-en-la-basura-esto-es-lo-que-si-se-quedan-tus-invitados-en-2026/" },
+      { label: "Gifts and favors per guest calculator", url: "https://hacecuentas.com/calculadora-regalos-invitado-souvenir" },
+      { label: "Baby shower guest gift ideas", url: "https://www.guiainfantil.com/bebes/canastilla-ajuar/decoracion-e-ideas-para-regalar-a-los-invitados-en-un-baby-shower/" },
+      { label: "Baby shower favor ideas", url: "https://www.mercadolibre.com.pe/blog/tr/ideas-recuerdo-baby-shower" },
+      { label: "Baby shower label templates", url: "https://www.canva.com/es_mx/crear/etiquetas/baby-shower/" },
+    ],
+    faq: [
+      { q: "What can I give baby shower guests besides candy?", a: "At Yume you can choose a personalized favor box, a vinyl sticker with your party design or a custom temporary tattoo, on their own or combined with the same design." },
+      { q: "What favors appear in shopping guides?", a: "One shopping guide lists bags of candy, handmade soaps, scented items and personalized pencils. Another guide adds succulents, candles, bookmarks, instant photos and mugs with the baby's name." },
+      { q: "Can I combine a favor box with a sticker?", a: "Yes. You can repeat the same design on both. Favor boxes start at 10 pieces and vinyl stickers at 40." },
+      { q: "What makes a good baby shower favor?", a: "According to a baby shower checklist guide, it should be small, the same for each guest, placed near the exit and easy to take home. Examples include something edible, a plant, a candle or a packet of seeds." },
+      { q: "Do the favor boxes include candy?", a: "No. The box arrives assembled and empty, ready to fill with the candy or details you choose." },
+      { q: "What can I put inside a baby shower favor box?", a: "A Spanish-language baby shower guide suggests decorated cookies, chocolates and candy in packaging that reflects the party theme." },
+      { q: "How many favor boxes should I order if 60 guests confirm?", a: "Using the rule of 1.1 per guest, that's 66 boxes: one per person plus a 10% margin." },
+      { q: "What is the minimum order?", a: "The minimum for personalized favor boxes is 10 pieces. For vinyl stickers, the minimum is 40 pieces." },
+      { q: "Can I see the design before production?", a: "Yes. We send you a digital proof before production, and nothing is produced until you approve it." },
+      { q: "How long do favor boxes take to arrive?", a: `Production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days after proof approval, plus ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} days for national shipping, or ${PICKUP_EXTRA_DAYS} business day if you pick up at a Casa Blanca branch in Guadalajara.` },
+      { q: "How far ahead should I start planning the baby shower?", a: "A baby shower checklist guide suggests starting about 8 weeks ahead, sending invitations about 4 weeks ahead and closing RSVPs about 2 weeks ahead. For the personalized favor, add production and shipping time." },
+    ],
   },
   {
     slug: BLOG_SLUG_EN["recetarios-medicos-personalizados-guadalajara"],
@@ -1941,15 +2054,60 @@ export const blogPostsEn: BlogPost[] = [
   {
     slug: BLOG_SLUG_EN["menu-de-boda-personalizado"],
     title: "Custom Wedding Menus: How to Order Yours",
-    metaTitle: "Custom Wedding Menus",
+    metaTitle: "Custom Wedding Menus: How and When to Order",
     description:
-      "Custom wedding menu: what details to have ready, one per guest or per table, how to proofread the text, and how the digital proof works before printing.",
+      "Custom wedding menu: what text to include, one per guest or table, how to approve the design and when to request a quote on WhatsApp.",
     category: "Guides",
     publishedAt: "2026-09-09",
-    modifiedAt: "2026-10-26",
+    modifiedAt: "2026-11-11",
     intro:
-      "The menu is one of those wedding pieces guests hold in their hand through the whole dinner: it's worth having it match the rest of the event's stationery instead of being generic. This guide covers what to decide before requesting a quote, what text to include, how to proofread it without errors, and how the process works to order yours custom at Yume.",
+      "A custom wedding menu is one piece of your event stationery, chosen alongside the save the date, invitation and stickers. This guide gives you an order for decisions, timeline references, the details needed for a quote and how to order from Yume. For actual timing and prices, request a quote on WhatsApp.",
     sections: [
+      {
+        heading: "Custom wedding menus and the pieces that accompany them",
+        body: [
+          "A custom wedding menu is a card listing the dishes at your reception, designed with the couple's names, the date and the style of your event. It is part of the wedding stationery, alongside the save the date, invitation and stickers, and it helps if all of them share the same visual style.",
+          "The pieces depend on one another: your guest list determines how many you need and the catering determines the menu text. That is why the order of decisions matters more than the exact date of each order.",
+          `Yume quotes menus, [custom event invitations](/en/blog/${BLOG_SLUG_EN["como-pedir-invitaciones-personalizadas-para-eventos"]}) and [custom vinyl stickers](/en/products/waterproof-vinyl-stickers) for closing envelopes or sealing bags. If you need another piece, such as place cards or programs, ask us on WhatsApp whether we can quote it.`,
+        ],
+      },
+      {
+        heading: "Working backward: when to order each piece",
+        body: [
+          "There is no single timeline: one wedding guide recommends sending the save the date 10 to 12 months before the wedding and invitations about 3 months before, but other guides give different ranges. Use these figures as a reference, count backward from your date and request a quote on WhatsApp for actual timing.",
+          "These are reference ranges from guides, not Yume production times. If your wedding is soon, message us as early as possible with your date.",
+        ],
+        table: {
+          headers: ["Piece", "Reference", "What to include or prepare"],
+          rows: [
+            ["Save the date", "Send 10 to 12 months before (wedding guide)", "Names, full date and, if applicable, the city. It does not need the venue, map, dress code or RSVP."],
+            ["Invitation", "Send about 3 months before (wedding guide); order it before then", "The details omitted from the save the date, such as venue, map, dress code and RSVP"],
+            ["Menu", "After confirming the catering; Spanish-language guides rarely give a printing date", "Quantity, exact text in order, event date and style"],
+            ["Stickers and details", "No reference timeline in the sources; request a quote on WhatsApp", "Quantity and the same design style as the rest of the stationery"],
+          ],
+        },
+      },
+      {
+        heading: "Why finalize the menu before ordering the rest",
+        body: [
+          "The menu text comes from the catering, so it depends on the meal being confirmed. If you order invitations and menus with an approved design and a dish changes afterward, already designed pieces would need adjustment. That is why it helps to settle the final menu first and then order the stationery that accompanies it.",
+          "In the Spanish-language guides we reviewed, the menu rarely appears in the timelines: the tasting is treated as a separate step without a printing date. Confirm the catering, write the menu text and then settle the design for all the stationery so every piece shares the same visual style.",
+        ],
+      },
+      {
+        heading: "Does the timeline change for traveling guests or peak season?",
+        body: [
+          "It can, so let us know. If your wedding is in peak season or your guests are traveling, tell us when requesting a quote so we can take that into account when setting the schedule. Guides give different ranges for these cases, so there is no single figure: count backward from your date and confirm the actual timing for each piece on WhatsApp.",
+        ],
+      },
+      {
+        heading: "For planners: coordinating stationery for several weddings",
+        body: [
+          "If you coordinate weddings, stationery is one project with several interdependent pieces. Gather each client's guest list, final menu and visual reference, and request a quote for the whole set in one WhatsApp message. You will receive a proposal with a digital proof and a shared design style.",
+          "Request a digital proof for each piece and confirm it with your client before approving: only when the final design is approved does it go to production. If you work on several weddings a year, message us on WhatsApp to coordinate quantities and dates for each event.",
+          `For more detail, read the [Guadalajara wedding planner guide](/en/blog/${BLOG_SLUG_EN["guia-wedding-planners-detalles-personalizados-guadalajara"]}) and how the [digital proof for planners](/en/blog/${BLOG_SLUG_EN["prueba-digital-pedido-evento-planners"]}) works.`,
+        ],
+      },
       {
         heading: "What information we need",
         body: [
@@ -1970,7 +2128,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "What text to include and how to proofread it",
         body: [
           "A wedding menu's text has a title (for example the couple's names or the date), the courses in order, and the dishes for each. Before sending it, confirm every dish name with your caterer: the text you send is exactly what gets printed.",
-          "A structure that works: starter, soup or cream, main course, dessert and, if it applies, the drink or toast. You don't need to describe every ingredient. The shorter and clearer it is, the easier it reads in dim light at the table, and the more room the design has to breathe.",
+          "One possible structure: starter, soup or cream, main course, dessert and, if applicable, the drink or toast. The shorter and clearer the text, the more room remains for the design.",
           "To proofread without errors, ask a second person to read the full text, especially proper names, accents and quantities. Also check that the order matches what will actually be served. The digital proof is your chance to request corrections before anything is printed.",
         ],
       },
@@ -1986,20 +2144,27 @@ export const blogPostsEn: BlogPost[] = [
         heading: "How to match it with the rest of your stationery",
         body: [
           "For the menu to feel part of the same event, use the same design line as your invitations: same colors, same typeface, same details. That way the table, the envelope and the gift bag read as one set instead of pieces bought separately.",
-          "If you're already ordering invitations, see the guide on quoting them in our custom event invitations post. To seal gift bags or close envelopes with the same design, check the stickers for weddings, and for the keepsake each guest takes home, the wedding favor boxes. The links are below, under Keep reading.",
-          "You can also tie in the event's details with temporary tattoos for the dance floor. Once the menu design is ready, ask us to adapt it to the other pieces: reusing the same line saves you from remaking style decisions from scratch.",
+          `To seal bags or close envelopes with the same design, see [wedding stickers](/en/blog/${BLOG_SLUG_EN["stickers-para-bodas-eventos-y-fiestas"]}), and for the detail each guest takes home, [wedding favor boxes](/en/blog/${BLOG_SLUG_EN["dulceros-para-eventos-sociales-boda-xv-baby-shower"]}) or [personalized favor boxes](/en/products/personalized-party-favor-boxes).`,
+          `You can also coordinate the event details with [temporary wedding tattoos](/en/blog/${BLOG_SLUG_EN["tatuajes-temporales-para-boda-eventos-y-fiestas"]}) on the dance floor. For the rest of the table, see [wedding table details](/en/blog/${BLOG_SLUG_EN["detalles-de-mesa-boda-personalizados"]}). Once you have the menu design, ask us to adapt it to the other pieces: reusing the same style saves you from making those decisions again from scratch.`,
         ],
       },
       {
-        heading: "When to start requesting a quote",
+        heading: "When to request a stationery quote from Yume",
         body: [
-          "Request the menu quote as soon as your catering is locked in, even if minor tweaks remain. That leaves room to review the digital proof, fix the text and receive the order without rushing before the wedding. Quoting early is what reduces stress the most.",
-          "Since the menu is usually confirmed once your catering is locked in, it tends to get quoted a bit later than invitations: but it's still worth doing with time to spare, so there's room to adjust the design without rushing production or shipping.",
-          "Reach out with the type of event, the approximate date, and the quantity you estimate you'll need, and we'll build the quote from there. We produce in Guadalajara and ship anywhere in Mexico, so the process is the same wherever your wedding is.",
+          "Request a quote as soon as you have a date, an approximate guest list and confirmed catering, even if minor adjustments remain. Message us on WhatsApp with the event type, date and pieces you want, and we will give you actual timing and prices. We produce in Guadalajara and ship throughout Mexico.",
+          `If you are deciding between a custom design and a ready-made one, see [custom stationery versus templates](/en/blog/${BLOG_SLUG_EN["papeleria-personalizada-vs-plantillas-genericas"]}).`,
         ],
       },
     ],
     faq: [
+      {
+        q: "How far in advance should I order my wedding stationery?",
+        a: "There is no single timeline. Count backward from your wedding date, finalize the menu first and request a quote on WhatsApp for the actual timing and prices of each piece.",
+      },
+      {
+        q: "When should the save the date be sent?",
+        a: "One wedding guide recommends 10 to 12 months before the wedding, with the names, full date and, if applicable, the city. Other guides give different ranges, so treat this as a reference.",
+      },
       {
         q: "What details do I need to quote a wedding menu?",
         a: "The number of menus, the exact text (the dishes in serving order), the wedding date and, if you have one, a style reference. If you're also ordering invitations or other stationery, let us know so we can match the design.",
@@ -2034,6 +2199,9 @@ export const blogPostsEn: BlogPost[] = [
       BLOG_SLUG_EN["tatuajes-temporales-para-boda-eventos-y-fiestas"],
     ],
     quoteMessage: "Hi, I'm interested in getting a quote for custom wedding menus.",
+    sources: [
+      { label: "Wedding guide: announcing your wedding with a save the date", url: "https://www.bodas.net/articulos/anuncia-tu-boda-con-un-save-the-date--c983" },
+    ],
   },
   {
     slug: BLOG_SLUG_EN["tarjetas-de-presentacion-consultorio"],
@@ -2865,48 +3033,110 @@ export const blogPostsEn: BlogPost[] = [
   },
   {
     slug: BLOG_SLUG_EN["tatuajes-temporales-para-boda-eventos-y-fiestas"],
-    title: "Temporary Tattoos for Weddings, Events, and Parties: How to Use Them",
-    metaTitle: "Temporary Tattoos for Parties and Celebrations",
+    title: "Temporary Tattoos for Parties in Mexico: Ideas by Event",
+    metaTitle: "Temporary Tattoos for Parties in Mexico: Ideas",
     description:
-      "Temporary tattoos for weddings, events, and parties as a guest favor: quinceañeras, bachelorette parties, kids' parties, and themed celebrations. What we need to quote yours.",
+      "Temporary tattoo ideas for parties in Mexico, from weddings and quinceañeras to baby showers and posadas, with skin care tips and how to request a quote.",
     category: "Guides",
     publishedAt: "2026-09-23",
+    modifiedAt: "2026-11-03",
     intro:
-      "Temporary tattoos are trending as a party detail: they've become a real hit at weddings, quinceañeras, and celebrations of every kind, for the opposite reason a sticker or a keepsake works: the guest wears it for the rest of the event instead of tucking it away. Beyond brand activations (see also our guide to custom temporary tattoos for events and brands), this format is an increasingly popular favor for personal celebrations: weddings, quinceañeras, bachelorette parties, and kids' parties.",
+      `A temporary tattoo with the couple's initials, the guest of honor's name or the party theme is a detail guests wear for the rest of the event. Here are temporary tattoo ideas for parties in Mexico, organized by event: weddings, bachelorette parties, quinceañeras, first communions, baptisms, baby showers, birthdays, graduations, posadas and company events, plus skin care tips and what we need to prepare a quote. If you are looking for the version for brands, see our guide to [temporary tattoos for events](/en/blog/${BLOG_SLUG_EN["tatuajes-temporales-personalizados-para-eventos"]}).`,
     sections: [
       {
-        heading: "Why they've become so popular at parties",
+        heading: "Temporary tattoos for parties in Mexico: which type to choose",
         body: [
-          "More and more weddings and parties are building them into the guest experience itself, not just handing them out as a gift: they go on in the moment, stay visible for the rest of the celebration, and end up in the event photos. That mix of low cost and high visual payoff is exactly what's made them so popular at celebrations of every size.",
+          "For a party in Mexico, choose decal temporary tattoos with a design made for the event: the name, date, theme or color palette of the celebration. They are applied on the spot, worn during the party and appear in photos. That makes the detail feel planned for your celebration.",
+          "In stores and marketplaces, they often appear as a generic product for birthdays or bachelorette parties. We make them for each event: tell us the occasion and we adapt the design.",
         ],
       },
       {
-        heading: "Which celebrations request them most",
+        heading: "Temporary tattoo ideas by event type",
         body: [
-          "The most common: bachelorette parties (with a phrase, date, or icon related to the bride-to-be), quinceañeras (with the honoree's name or the party's theme), weddings (the couple's initials or the date, as a detail at the welcome table), and kids' parties (characters or designs matching the party theme).",
-          "They work especially well as an activity for the youngest guests at a kids' party, or as a photogenic detail at bachelorette parties and quinceañeras.",
+          "Each party calls for a different detail. This table brings together design ideas for ten types of event in Mexico and when to hand them out. These are starting points: tell us your event's name, date, theme and color palette and we will put together a proposal for you.",
+        ],
+        table: {
+          headers: ["Event", "Design idea", "When to hand them out"],
+          rows: [
+            ["Wedding", "The couple's initials or date, in the wedding palette", "Welcome table or favor as guests leave"],
+            ["Bachelorette party", "A phrase, date or group icon", "At the beginning, for photos"],
+            ["Quinceañera", "The guest of honor's name and the party theme", "During the reception"],
+            ["First communion", "The child's name and a simple symbol", "As guests arrive"],
+            ["Baptism", "Name and date in soft colors", "As a favor on the table"],
+            ["Baby shower", "The baby's name or the party theme", "Welcome table"],
+            ["Birthday", "Name and age, or characters from the theme", "As an activity for guests"],
+            ["Graduation", "Name, graduating class or school", "After the ceremony"],
+            ["Posada", "A Christmas motif and the group's name", "On arrival"],
+            ["Corporate event", "Logo and event name", "At registration or in the welcome kit"],
+          ],
+        },
+      },
+      {
+        heading: "How are temporary tattoos used during the party?",
+        body: [
+          "You can hand them out in three ways: at the welcome table as a detail for each guest, as a favor at the end of the party, or at an application station where guests put them on during the event. The choice depends on the type of party and how much time your guests have.",
+          "At a wedding or quinceañera, the welcome table can work well because guests wear them from the start. At a birthday or baby shower, an application station becomes an activity. If a planner is organizing the celebration, they can include it in the event flow.",
         ],
       },
       {
-        heading: "What we need to quote yours",
+        heading: "Skin care with temporary party tattoos",
         body: [
-          "The design, name, or phrase you want (or a reference for the party theme if you don't have a design yet), the approximate size, and the quantity you need based on your guest count. Before producing, we send you a digital proof so you can approve how it'll look.",
-          "We produce in Guadalajara and ship anywhere in Mexico, so you can quote temporary tattoos for your wedding, event, or party no matter where the celebration is.",
+          "Before the event, consider testing a small area of skin, especially for guests with sensitive skin, and do not apply the tattoo to irritated skin. The FDA warns that inks or colorants can irritate skin and cause rashes. This test is a general recommendation, not an FDA rule.",
+          "According to a news report on the FDA warning, temporary tattoos should use only colors approved for cosmetics on the skin. Specialists cited in an article about seasonal makeup recommend testing for allergies at least 24 hours beforehand and keeping skin moisturized.",
+          "In that same article, COFEPRIS recommends avoiding makeup from informal establishments and checking the label. It discusses makeup, not temporary tattoos, so we use it only as an analogy. We did not find a specific Mexican standard for temporary tattoos.",
+        ],
+      },
+      {
+        heading: "How long do temporary tattoos for parties last?",
+        body: [
+          "It depends on the type of product. According to the FDA, temporary decal tattoos fade in hours or days, while henna tattoos can last up to 3 or 4 weeks. Decals are the shorter-lived option, so think of them as a keepsake for the day of the event.",
+          `That is why we do not promise an exact number of days: duration varies by product and each person's skin. For more detail, read [how long they last and how to remove them](/en/blog/${BLOG_SLUG_EN["cuanto-duran-los-tatuajes-temporales-y-como-quitarlos"]}).`,
+        ],
+      },
+      {
+        heading: "Decal or black henna: which to choose for a party",
+        body: [
+          "For a party with guests, choose decal tattoos. The FDA says black henna may contain hair dye or other colorants to make it last longer, and that it has not approved henna or hair dye for use on skin. Avoid black henna from an improvised stand.",
+          "If someone offers henna for your party, ask what it contains before applying it to your guests' skin. A decal tattoo with your own design also lets you control how each piece looks because you approve it beforehand in a digital proof.",
+        ],
+      },
+      {
+        heading: "Temporary tattoos for planners and company events",
+        body: [
+          "If you organize weddings or events, we work on an event-by-event basis: we send a digital proof before production and you speak directly with us by message. You decide the quantity based on the number of guests. This works for wedding planners, event planners and companies organizing posadas, anniversaries or launches.",
+          "When the event already has a color palette, invitation or decorations, send us a photo or reference and we will adapt the design to match. At a company event, the tattoo can carry the logo and event name and be handed out at registration.",
+        ],
+      },
+      {
+        heading: "What we need to quote temporary tattoos for your party",
+        body: [
+          "We need the design, name or phrase you want, or a reference to the theme if you do not have a design yet, the approximate size and the quantity based on your guest count. With those details we prepare your quote and, before production, send a digital proof for you to approve how it will look.",
+          "We produce in Guadalajara and ship anywhere in Mexico, so you can request a quote wherever the celebration takes place. Write to us with your event date and we will confirm the timing. Temporary tattoos are quoted by message and do not have a published price. Visit the [custom temporary tattoos](/en/products/custom-temporary-tattoos) page to start your quote.",
         ],
       },
       {
         heading: "How to match them with the rest of your stationery",
         body: [
-          "If you're already customizing invitations, a wedding menu, or stickers for the celebration, using the same design or color palette on the temporary tattoos makes it feel like part of the same event, not a separate product. Let us know if you already have other pieces in progress so we can match the design.",
+          "If you are already customizing invitations, a wedding menu or stickers for the celebration, use the same design or color palette on the temporary tattoos. That makes them feel part of the same celebration. Tell us which other pieces you have in progress so we can coordinate the design.",
+          "If you also want a detail that can be stuck on and kept, see our [custom vinyl stickers](/en/products/waterproof-vinyl-stickers). Using the same design on both gives your event a coordinated, carefully considered look.",
         ],
       },
     ],
     relatedProductSlugs: [],
     faq: [
-      {
-        q: "Can temporary tattoos match the rest of my wedding stationery?",
-        a: "Yes. If you are already customizing invitations, a wedding menu or stickers, we can use the same design or color palette on the temporary tattoos so they feel like part of the same event. Let us know which other pieces you have in progress so we can match the design.",
-      },
+      { q: "How long do temporary tattoos last?", a: "According to the FDA, temporary decal tattoos fade in hours or days, and henna tattoos can last up to 3 or 4 weeks. Duration depends on the type of product and each person's skin." },
+      { q: "Are temporary tattoos safe for a party?", a: "The FDA warns that inks or colorants can irritate skin and cause rashes, so consider testing a small area before the event. We did not find a specific Mexican standard for temporary tattoos." },
+      { q: "How far in advance should I order them?", a: "It depends on your design and event date. Write to us by message with the date and we will confirm the timing. Before production we send you a digital proof to approve." },
+      { q: "Can they be used at children's parties?", a: "Yes, they can be an activity at a children's party, with characters or designs from the theme. Test a small area first, especially if a child has sensitive skin." },
+      { q: "Is black henna a good idea for a party?", a: "The FDA says black henna may contain hair dye or other colorants to make it last longer, and has not approved henna or hair dye for use on skin. For a party, choose decal tattoos." },
+      { q: "What do I need to request a quote for temporary tattoos?", a: "The design, name or phrase (or a reference to the theme), the approximate size and the quantity based on the number of guests." },
+      { q: "How much do temporary tattoos cost?", a: "They are quoted by message based on your design and quantity, because there is no published price on the site." },
+      { q: "Do you ship throughout Mexico?", a: "Yes. We produce in Guadalajara and ship anywhere in Mexico." },
+    ],
+    sources: [
+      { label: "FDA: Tattoos and Permanent Makeup", url: "https://www.fda.gov/consumers/free-publications-women/tatuajes-y-maquillaje-permanente-tattoos-and-permanent-makeup" },
+      { label: "News report: FDA warning on temporary tattoos and their effects", url: "https://www.vozdeamerica.com/a/fda-advierte-sobre-tatuajes-temporales-y-consecuencias/1916158.html" },
+      { label: "Skin care recommendations for Halloween or Day of the Dead makeup", url: "https://www.cronica.com.mx/tendencias/2026/10/29/te-vas-a-maquillar-para-halloween-o-dia-de-muertos-estas-son-las-mejores-recomendaciones-para-evitar-danos-y-cuidar-tu-piel/" },
     ],
     relatedBlogSlugs: ["custom-temporary-tattoos-for-events-and-brands", "how-long-do-temporary-tattoos-last-and-how-to-remove-them"],
     serviceLink: { href: "/en/products/custom-temporary-tattoos", label: "See custom temporary tattoos" },
@@ -3565,36 +3795,51 @@ export const blogPostsEn: BlogPost[] = [
     title: "Personalized Wedding Favors: Ideas with Name and Date",
     metaTitle: "Personalized Wedding Favors with Name and Date",
     description:
-      "Personalized wedding favors with name and date: ideas with favor boxes and stickers, how many to order and when to request a quote. Made in Guadalajara.",
+      "Personalized wedding favors with names and date: favor boxes, stickers and temporary tattoos, how many to order, quantity prices and when to request a quote.",
     category: "Guides",
     publishedAt: "2026-10-28",
-    modifiedAt: "2026-11-03",
+    modifiedAt: "2026-11-13",
     intro:
-      "Personalized wedding favors with the couple's names and the wedding date turn a table detail into a keepsake your guests actually want to take home. This guide covers which pieces you can personalize at Yume, how many to order, how to match them with the rest of your stationery and when to request a quote so you reach your wedding calmly.",
+      "Personalized wedding favors turn a table detail into something your guests will want to take home: a keepsake with the couple's names and date in a unique design. Names and date alone are no longer enough; what lasts is a piece designed for your wedding. This guide explains what you can order at Yume, how to give it an elegant design, how many to order, how to match your stationery and when to request a quote so you can prepare without rushing.",
     sections: [
+      {
+        heading: "What should you give wedding guests?",
+        body: [
+          "Choose a favor each guest can take home and keep, with the couple's names and date in a unique design. At Yume you can order favor boxes, vinyl stickers and temporary tattoos, and see the design in a digital proof before production.",
+          "Below you will see how each of these three pieces works, how many to order based on your guest list, what they cost by quantity and how far ahead to request a quote.",
+        ],
+      },
       {
         heading: "What makes a personalized wedding favor special?",
         body: [
           "A personalized wedding favor is a small gift each guest takes home with the couple's names, the date or the wedding's design. It thanks them for coming and leaves a tangible keepsake. What makes it valuable is that it has a use, or a place, after the party.",
-          "Publimetro México reports that couples in 2026 prefer useful, lasting pieces over single-use objects. Chic Magazine México adds that personalizing goes beyond names, initials or a date: it is about reflecting the couple's style. Both articles are listed under Sources at the end.",
-          "Those articles cite examples such as bottles, art prints and home fragrances. We do not make those. What we make is paper and vinyl with your design, and the idea still applies: a detail made for your wedding, with your colors and your story, not a generic one.",
+          "An article published in September 2026 reports a trend toward hyperpersonalization: pieces guests use, display or enjoy instead of disposable magnets, candy or candles. Another suggests a numbered illustration made for the wedding can become decoration, unlike a keepsake printed only with names and date. Both articles are listed under Sources at the end.",
+          "Those articles cite examples such as labeled bottles, numbered art and home fragrances. We do not make those. What we make is paper and vinyl with your design, and the idea still applies: a detail made for your wedding, with your colors and your story, not a generic one.",
+        ],
+      },
+      {
+        heading: "How do you personalize wedding favors with names and date elegantly?",
+        body: [
+          "For an elegant result, integrate the names and date into a design using the couple's colors and a detail from their story, instead of leaving them as standalone text. An article suggests pieces with the couple's own colors and illustrations become keepsakes. At Yume you see it first in a digital proof.",
+          "The article also mentions two ideas: a neutral, functional design with one piece for every guest, and giving fewer pieces chosen more intentionally. With our paper and vinyl, that means one design for everyone, in your colors, with the names and date integrated into the composition.",
+          "When you contact us, tell us your palette and whether there is a detail from your story you want in the design, such as a place, a flower or an illustration. We include it in the digital proof and produce nothing until you approve it.",
         ],
       },
       {
         heading: "Personalized wedding favor ideas with name and date",
         body: [
           "At Yume you can make three kinds of wedding favor: favor boxes with the couple's names, stickers with initials and date to seal your details, and temporary tattoos for the dance floor. All three are designed with you and we show you a digital proof before producing.",
-          "Favor boxes: a small handled box in opalina cardstock, with the couple's names and your wedding's theme. It arrives assembled and empty, ready to fill. It can go on the candy table so each guest builds their own, or arrive already filled at each place setting.",
-          "Stickers: initials and date on water-resistant vinyl to seal gift bags, close invitation envelopes or decorate jars on the candy table. It is the simplest way to make a simple detail look planned.",
-          "Temporary tattoos: the couple's initials or the date as a detail at the welcome table or on the dance floor. Guests wear them for the rest of the party and they show up in photos. They are quoted by design and quantity.",
+          `Favor boxes: a small handled box in opalina cardstock, with the couple's names and your wedding's theme. It arrives assembled and empty, ready to fill. It can go on the candy table so each guest builds their own, or be placed already filled at each place setting. Explore [personalized favor boxes](/en/products/personalized-party-favor-boxes) and the guide to [favor boxes for weddings, quinceañeras and baby showers](/en/blog/${BLOG_SLUG_EN["dulceros-para-eventos-sociales-boda-xv-baby-shower"]}).`,
+          `Stickers: initials and date on water-resistant [vinyl stickers](/en/products/waterproof-vinyl-stickers) to seal gift bags, close invitation envelopes or decorate candy table jars. For more ideas, see [stickers for weddings and events](/en/blog/${BLOG_SLUG_EN["stickers-para-bodas-eventos-y-fiestas"]}).`,
+          `Temporary tattoos: the couple's initials or the date as a detail at the welcome table or on the dance floor. Guests wear them for the rest of the party and they show up in photos. They are quoted by design and quantity. See [custom temporary tattoos](/en/products/custom-temporary-tattoos) and the guide to [temporary tattoos for weddings](/en/blog/${BLOG_SLUG_EN["tatuajes-temporales-para-boda-eventos-y-fiestas"]}).`,
         ],
       },
       {
         heading: "How many wedding favors to order and what do they cost?",
         body: [
-          "Order one favor per guest or one per family or couple, plus a few extra for the couple's table, photos and surprises. Start from your confirmed guest list, because at Yume you buy the exact number of pieces and the minimum depends on the product.",
-          `The minimum is 10 favor boxes and 40 vinyl stickers. 100 favor boxes cost $${priceOf("dulceros-personalizados", 100)} MXN and 100 small vinyl stickers (up to 4 cm) cost $${priceOf("stickers-vinil-impermeable", 100)} MXN. Temporary tattoos are quoted over WhatsApp.`,
-          "A practical count: with 80 guests, order 80 pieces plus 5 or 10 spare. Price by quantity:",
+          "Order one favor per confirmed guest. At Yume pieces are sold in exact quantities, so start with your guest list: the minimum is 10 favor boxes and 40 vinyl stickers, and temporary tattoos are quoted over WhatsApp by design and quantity.",
+          `To decide on quantities and budget, see [how many favors to order per event](/en/blog/${BLOG_SLUG_EN["cuantos-souvenirs-pedir-por-evento"]}) and the [wedding favor budget per guest](/en/blog/${BLOG_SLUG_EN["presupuesto-recuerdos-de-boda-por-invitado"]}).`,
+          `100 favor boxes cost $${priceOf("dulceros-personalizados", 100)} and 100 small vinyl stickers (up to 4 cm) cost $${priceOf("stickers-vinil-impermeable", 100)}. Price by quantity:`,
         ],
         table: {
           ...sizeTable(["dulceros-personalizados", "stickers-vinil-impermeable"], [50, 100, 200], "en"),
@@ -3604,7 +3849,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "How do you match favors with your invitations and menu?",
         body: [
           "Use the same design everywhere: same colors, same typography and same initials on the invitation, the menu and the favor. The wedding then reads as one planned set instead of loose pieces. Define the design once, approve the digital proof and order each piece with that same file.",
-          "If you do not have your stationery yet, start with the invitations and the wedding menu and leave the favors for later: you will already have your design line. Below, under Keep reading, you will find the guide for each piece.",
+          `If you do not have your stationery yet, start with the invitations and wedding menu and leave the favors for later: you will already have your design line. See the guides to [ordering personalized invitations](/en/blog/${BLOG_SLUG_EN["como-pedir-invitaciones-personalizadas-para-eventos"]}) and the [personalized wedding menu](/en/blog/${BLOG_SLUG_EN["menu-de-boda-personalizado"]}).`,
           "If you are a wedding planner organizing a client's wedding, send us the palette, the style and the confirmed guest list. We deal with you directly over WhatsApp and you can review the digital proof with your client before approving.",
         ],
       },
@@ -3612,15 +3857,15 @@ export const blogPostsEn: BlogPost[] = [
         heading: "When should you order wedding favors?",
         body: [
           "Request a quote as soon as you have a date, a venue and an idea of your colors, and order for real when the guest list is nearly final. That leaves room to review the digital proof, make adjustments and receive the order without rushing, especially if your event has a fixed date.",
-          `The digital proof usually arrives within 24 hours of payment. Once you approve it, your order takes ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days to reach your door anywhere in Mexico, or is ready for pickup at a Casa Blanca branch in Guadalajara in ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days.`,
-          `Home delivery costs $${NATIONAL_SHIPPING_PRICE} MXN and is free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more. If you are also ordering invitations or menus, it helps to coordinate everything in one conversation so each piece's timing fits your date.`,
+          `The digital proof usually arrives within 24 hours of payment and includes up to 2 rounds of adjustments. Once you approve it, your order takes ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} to ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} business days to reach your door anywhere in Mexico, or is ready for pickup at a pickup branch in Guadalajara in ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} to ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} business days.`,
+          `Home delivery costs $${NATIONAL_SHIPPING_PRICE} MXN and is free on orders of $${FREE_SHIPPING_THRESHOLD} MXN or more. If you are also ordering invitations or menus, it helps to coordinate everything in one conversation so each piece's timing fits your date. For the full schedule, see [when to order wedding favors](/en/blog/${BLOG_SLUG_EN["cuando-pedir-souvenirs-de-boda"]}).`,
         ],
       },
       {
         heading: "Elegant and simple wedding favors",
         body: [
           "A simple design can bring together the couple's names, the date and the colors of the celebration. Start by thinking about how you want to hand out the favor: a personalized favor box gives you space to choose what goes inside, while a vinyl sticker can close a bag or decorate a jar. The boxes arrive assembled and empty, and the stickers carry the design you share.",
-          "You can use the same visual idea on both or choose one piece for each guest. Before production, you receive a digital proof to review the design. To coordinate it with your guests' places, explore these [personalized wedding table details](/en/blog/personalized-wedding-table-details).",
+          `You can use the same visual idea on both or choose one piece for each guest. Before production, you receive a digital proof to review the design. To coordinate it with your guests' places, explore these [personalized wedding table details](/en/blog/${BLOG_SLUG_EN["detalles-de-mesa-boda-personalizados"]}).`,
         ],
       },
       {
@@ -3633,7 +3878,7 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "Wedding favors for guests: what to give",
         body: [
-          "To choose what to give, start with your guest list and the moment in the celebration. You can prepare one favor box per person and fill it with what you choose, or place the boxes on a table for guests to pick up. The [wedding candy table guide](/en/blog/wedding-candy-table-custom-candy-boxes) offers ideas for organizing that space.",
+          `To choose what to give, start with your guest list and the moment in the celebration. You can prepare one favor box per person and fill it with what you choose, or place the boxes on a table for guests to pick up. The [wedding candy table guide](/en/blog/${BLOG_SLUG_EN["mesa-de-dulces-para-boda"]}) offers ideas for organizing that space.`,
           "Another option is vinyl stickers with your wedding design, on their own or to close a detail you already have. If you prefer temporary tattoos, request a quote over WhatsApp with your design and quantity. Review the digital proof before approving it so the names and date appear as you want them.",
         ],
       },
@@ -3641,11 +3886,15 @@ export const blogPostsEn: BlogPost[] = [
         heading: "How to request a quote for your wedding favors",
         body: [
           "Message us on WhatsApp with the couple's names, the date, your colors or your finished design, and your guest count. We prepare the quote, and before producing we send a digital proof: nothing is produced until you approve it. We produce in Guadalajara and ship across Mexico.",
-          "If your wedding is in Guadalajara, you can also pick up at a Casa Blanca branch. If it is in another city, the design and approval process is the same.",
+          "If your wedding is in Guadalajara, you can also pick up at a pickup branch. If it is in another city, the design and approval process is the same.",
         ],
       },
     ],
     faq: [
+      {
+        q: "What can I give wedding guests if I want more than names and date?",
+        a: "One article recommends personalizing to reflect the couple's taste and identity, beyond the date or initials. Tell us your palette and a detail from your story, and we will include it in the digital proof for your favor boxes or stickers.",
+      },
       {
         q: "What wedding favors can I give my guests?",
         a: "You can give personalized favor boxes to fill, vinyl stickers with your design or temporary tattoos, which are quoted over WhatsApp by design and quantity.",
@@ -3659,8 +3908,12 @@ export const blogPostsEn: BlogPost[] = [
         a: "Personalized favor boxes with the couple's names and your wedding's theme, vinyl stickers with initials and date, and temporary tattoos with your design. We do not make bottles or fragrances.",
       },
       {
+        q: "What kind of wedding favor is trending?",
+        a: "According to an article from September 2026, the trend is hyperpersonalization: pieces guests use, display or enjoy instead of disposable magnets, candy or candles. Another adds that the couple's own colors and illustrations make the piece a keepsake.",
+      },
+      {
         q: "Can I see the design before it is produced?",
-        a: "Yes. We send a digital proof before producing and nothing is made until you approve it.",
+        a: "Yes. We send a digital proof before producing and nothing is made until you approve it. It usually arrives within 24 hours of payment and includes up to 2 rounds of adjustments.",
       },
       {
         q: "What is the minimum order?",
@@ -3685,7 +3938,7 @@ export const blogPostsEn: BlogPost[] = [
     quoteMessage: "Hi, I'd like a quote for personalized wedding favors.",
     sources: [
       { label: "Publimetro México: Souvenirs para bodas 2026, las tendencias que ganan terreno", url: "https://www.publimetro.com.mx/virales/2026/10/02/souvenirs-para-bodas-2026-las-tendencias-que-ganan-terreno/" },
-      { label: "Chic Magazine México: Tendencias en souvenirs y recuerdos para bodas 2027", url: "https://www.chicmagazine.com.mx/consejos/tendencias-souvenirs-recuerdos-para-bodas-2027-ideas-originales" },
+      { label: "Crónica: Dile adiós a los recuerdos de boda que terminan en la basura, lo que sí se quedan tus invitados en 2026", url: "https://www.cronica.com.mx/tendencias/2026/09/04/dile-adios-a-los-recuerdos-de-boda-que-terminan-en-la-basura-esto-es-lo-que-si-se-quedan-tus-invitados-en-2026/" },
     ],
   },
   {
@@ -4331,83 +4584,94 @@ export const blogPostsEn: BlogPost[] = [
   },
   {
     slug: BLOG_SLUG_EN["dulceros-para-xv-anos-elegantes"],
-    title: "Elegant Quinceañera Candy Boxes: Ideas and Quantities",
-    metaTitle: "Modern Quinceañera Favors: Elegant Candy Boxes",
+    title: "What Candy to Put in a Quinceañera Favor Box",
+    metaTitle: "What Candy to Put in a Quinceañera Favor Box",
     description:
-      "How to choose elegant quinceañera candy boxes: what makes them look refined, how many to order, what to put inside and how to order with a digital proof.",
+      "What candy to put in a quinceañera favor box: mix classics and a surprise, match the palette, set up and label the table, and order your boxes.",
     category: "Guides",
     publishedAt: "2026-11-03",
-    modifiedAt: "2026-11-03",
+    modifiedAt: "2026-11-07",
     intro:
-      "A quinceañera table is remembered for its details, and the candy box is what each guest takes home. Here is how to choose elegant quinceañera candy boxes: what makes them look refined, how to match them to the party, how many to order and what to put inside. It is written for moms, dads and planners who want a table that looks planned.",
+      "What candy to put in a quinceañera favor box is a big question when you want a table that looks thoughtfully planned. Here is what to combine, how to coordinate it with the party palette, how many boxes to order, how to set up and label the candy table, and how to order with a digital proof. It is for moms, dads and planners who care about the details.",
     sections: [
       {
-        heading: "Modern quinceañera favors: elegant candy boxes",
+        heading: "What candy to put in a quinceañera favor box",
         body: [
-          "A quinceañera candy box looks elegant when it uses a short palette, a readable name and a discreet typeface, and when it matches the invitation, the cake and the table decor. Elegance comes from coordination and a personalized detail, not from piling on ornaments or using a generic kit.",
-          "When you search for quinceañera candy tables on a marketplace, you mostly find low-priced vintage MDF table kits to assemble, and clear boxes sold in packs of 20, 40 or 50 pieces. Those are volume options. A candy box with the quinceañera's name and the colors of her party is a different kind of detail.",
+          "For a quinceañera favor box, combine classics such as gummies, decorated cookies, mini brownies and marshmallows with a surprise. A wedding guide recommends that mix and adding gluten-free, vegan or sugar-free options. The box arrives empty, so you choose the filling.",
+          "For a wedding table, a wedding guide recommends 5 to 7 dessert varieties, a guideline that can be adapted to a quinceañera. For more filling ideas, read [what to put in a party favor box](/en/blog/what-to-put-in-a-party-favor-box), and see the [personalized party favor boxes](/en/products/personalized-party-favor-boxes) we make with the quinceañera's name.",
         ],
       },
       {
-        heading: "Elegant quinceañera candy boxes: palette, name and typeface",
+        heading: "What candy goes with an elegant quinceañera?",
         body: [
-          "Pick a short palette taken from the invitation or the dress, put the quinceañera's name in a clear typeface and leave empty space around it. If you send us a photo of the invitation or the decor, we adapt the design to those colors, and you get a digital proof before production.",
-          "Our candy box is a lunch box style with a handle, and personalization includes the name and the theme. For a quinceañera, the theme can be as simple as the party colors with her name, with nothing else added.",
-          "If you coordinate the event as a planner, you can send us your client's palette and invitation and review the digital proof directly on WhatsApp, with no middlemen.",
+          "Choose candy that follows the party palette. A wedding guide advises choosing 2 or 3 main colors and repeating them in the candy, flowers, ribbons, signs and containers. That makes the favor box, table and decor look like one set, and the table looks planned rather than like a collection of separate sweets.",
+          "The same guide explains that the palette can suit the event style: gold and mirrors for a glam event, cream and green for a rustic one. Choose candy by color before brand, and let a box in the party colors bring the set together.",
+        ],
+      },
+      {
+        heading: "Elegant quinceañera candy boxes: what makes them refined",
+        body: [
+          "A quinceañera candy box looks elegant when it uses a few colors, a readable name and a discreet typeface, and when it matches the invitation, cake and table decor. Elegance comes from coordination and a personalized detail, rather than lots of ornaments or a generic kit.",
+          "A marketplace search for quinceañera candy tables mainly shows low-priced vintage MDF table kits to assemble and clear boxes sold in packs of 20, 40 or 50 pieces. These are volume options. A box with the quinceañera's name and her party colors is a different kind of detail.",
+        ],
+      },
+      {
+        heading: "Palette, name and typeface for modern quinceañera favors",
+        body: [
+          "Choose a short palette from the invitation or dress, put the quinceañera's name in a clear typeface and leave empty space around it. If you send us a photo of the invitation or decor, we adapt the design to those colors, and you receive a digital proof before production.",
+          "Our candy box is a lunch box style with a handle, and personalization includes the name and theme. For a quinceañera, the theme can be as simple as the party colors and the quinceañera's name, with nothing else added.",
+          "If you are planning the event for a client, you can send us their palette and invitation and review the digital proof directly with us, without intermediaries.",
         ],
       },
       {
         heading: "How many candy boxes to order and how many sweets to plan",
         body: [
-          "Order one candy box for each person who should take the favor home: every guest, only close family or only the main table. The minimum order is 10 pieces and you can type the exact quantity you need.",
-          "To plan the sweets, Bodas.net, in its guide to wedding candy buffets, suggests 3 to 4 servings per person if there is no cake and about 2 if there is one. Those figures are for a wedding dessert table, not for what fits in a box, so treat them only as an order of magnitude, especially at a quinceañera with a waltz and dancing.",
-          "The same guide notes that children tend to eat more sweets than adults and that dinners generate more sweet consumption than midday banquets. Use that to adjust your estimate if your list has many children or the party is at night.",
+          "Order one candy box for each person you want to take the favor home: everyone on the guest list, only close family or only the main table. The minimum order is 10 pieces and you can enter the exact quantity you need.",
+          "To estimate the sweets, a wedding candy buffet guide suggests 3 to 4 servings per person if there is no cake and about 2 if there is one. Those figures are for a wedding dessert table, not what fits in a box, so use them only as an order of magnitude, especially at a quinceañera with dancing and a waltz.",
+          "The same guide notes that children tend to eat more sweets than adults and that dinners generate more consumption than midday banquets. Use that to adjust your estimate if your guest list has many children or the party is at night.",
         ],
       },
       {
-        heading: "What to put inside an elegant quinceañera candy box",
+        heading: "Setting up the candy table: table, heights and color",
         body: [
-          "For the candy box to look elegant, care about how each piece is presented: small candies of similar size, with a variety of flavors and textures. Bodas.net recommends 5 to 7 dessert varieties for a wedding table, and that guideline can be adapted to a quinceañera.",
-          "Choose candies that match the design palette so the whole set looks coordinated, whether in neutral tones or in the party colors.",
-          "For more ideas by type of guest, read [what to put in a party favor box](/en/blog/what-to-put-in-a-party-favor-box).",
+          "According to a setup guide, a table about 80 by 120 to 160 centimeters is enough for 30 to 40 people. Cover it with a floor-length tablecloth, place tall pieces in the center and at the back, and use boxes or stands to create levels.",
+          "A wedding guide recommends arranging sweets at different heights, using varied containers such as glass jars, wooden boxes or tiered stands, grouping them in blocks of color and making sure nothing hides another item.",
+          "Keep the palette consistent with your [personalized party favor boxes](/en/products/personalized-party-favor-boxes) and combine shapes and flavors. The setup guide suggests considering guests with celiac disease, for example with gluten-free marshmallows, and labeling each sweet so everyone knows what they are taking.",
         ],
       },
       {
-        heading: "How to order with a digital proof",
+        heading: "How to label the sweets and what to keep handy",
         body: [
-          "Tell us on WhatsApp the quinceañera's name, the party colors and how many candy boxes you need. We send you a digital proof of the design before production, and nothing is produced until you approve it. You can see the personalized candy boxes in the shop and send a photo of the invitation as reference.",
-          "We work to order from Guadalajara, Jalisco, with shipping across Mexico. The production time starts when you approve the digital proof, so order well before the party and confirm on WhatsApp the date you need.",
+          "Put up signs showing flavors, allergens or vegan options, coordinated with the party stationery. A wedding guide also recommends keeping napkins, tongs or small spoons handy and preparing bags or jars for guests to take sweets home. That way everyone knows what they are taking.",
+        ],
+      },
+      {
+        heading: "How to order quinceañera candy boxes with a digital proof",
+        body: [
+          "Send us the quinceañera's name, the party colors and how many candy boxes you need. We send a digital proof of the design before production, and nothing is produced until you approve it. You can see the [personalized party favor boxes](/en/products/personalized-party-favor-boxes) in the shop and send us a photo of the invitation for reference.",
+          "We work to order from Guadalajara, Jalisco, with shipping across Mexico. Production time starts when you approve the digital proof, so order ahead of the party and message us to confirm the date you need. For another option near you, see [personalized party favor boxes in Guadalajara](/en/blog/personalized-party-favor-boxes-guadalajara).",
         ],
       },
     ],
     relatedProductSlugs: ["dulceros-personalizados"],
     relatedBlogSlugs: [BLOG_SLUG_EN["que-poner-en-un-dulcero"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"], BLOG_SLUG_EN["dulceros-navidenos-personalizados"]],
     faq: [
-      {
-        q: "Do the candy boxes come with candy?",
-        a: "No. The candy box arrives assembled and empty, ready to fill with the candy you choose.",
-      },
-      {
-        q: "What does personalization include?",
-        a: "The name and the theme you choose. We send a digital proof before production and nothing is produced until you approve it.",
-      },
-      {
-        q: "What is the minimum order for candy boxes?",
-        a: "The minimum order is 10 pieces, and from there you can type the exact quantity you need.",
-      },
-      {
-        q: "How many candy varieties should I include?",
-        a: "Bodas.net recommends 5 to 7 dessert varieties for a wedding table. It is a wedding guideline that can be adapted to a quinceañera.",
-      },
-      {
-        q: "Do you ship across Mexico?",
-        a: "Yes. We produce to order from Guadalajara, Jalisco, and ship across Mexico.",
-      },
+      { q: "What candy should I put in a quinceañera favor box?", a: "Combine classics such as gummies, decorated cookies, mini brownies and marshmallows with a surprise, following a wedding guide adapted to a quinceañera." },
+      { q: "Do the candy boxes come with candy?", a: "No. The candy box arrives assembled and empty, ready to fill with the candy you choose." },
+      { q: "What does personalization include?", a: "The name and the theme you choose. We send a digital proof before production and nothing is produced until you approve it." },
+      { q: "What is the minimum order for candy boxes?", a: "The minimum order is 10 pieces, and from there you can enter the exact quantity you need." },
+      { q: "How many colors should I use on the candy table?", a: "A wedding guide advises choosing 2 or 3 main colors and repeating them in the candy, flowers, ribbons, signs and containers." },
+      { q: "Should I put signs by the sweets?", a: "Yes. A wedding guide says signs can show flavors, allergens or vegan options and should match the party stationery." },
+      { q: "How many candy varieties should I include?", a: "A wedding guide recommends 5 to 7 dessert varieties for a wedding table. This guideline can be adapted to a quinceañera." },
+      { q: "What size table do I need for the candy display?", a: "A setup guide mentions a table about 80 by 120 to 160 centimeters for 30 to 40 people, with a floor-length tablecloth and levels made with boxes or stands." },
+      { q: "Do you ship across Mexico?", a: "Yes. We produce to order from Guadalajara, Jalisco, and ship across Mexico." },
     ],
     sources: [
-      { label: "Bodas.net: Wedding candy buffets (in Spanish)", url: "https://www.bodas.net/articulos/buffets-de-dulces-para-bodas--c733" },
-      { label: "Mercado Libre: Vintage candy table (listing, in Spanish)", url: "https://listado.mercadolibre.com.mx/mesa-de-dulces-vintage" },
-      { label: "Mercado Libre: Acetate boxes (listing, in Spanish)", url: "https://listado.mercadolibre.com.mx/cajitas-de-acetato" },
+      { label: "Wedding guide: How to decorate a wedding candy table (in Spanish)", url: "https://www.bodas.net/articulos/como-decorar-la-mesa-de-dulces-de-la-boda--c960" },
+      { label: "Wedding guide: Wedding candy buffets (in Spanish)", url: "https://www.bodas.net/articulos/buffets-de-dulces-para-bodas--c733" },
+      { label: "Party setup guide: How to set up a candy bar (in Spanish)", url: "https://shop.lafiestadeolivia.com/blogs/blog/17973332-como-montar-tu-misma-un-candy-bar-y-no-morir-en-el-intento" },
+      { label: "Marketplace: Vintage candy table listing (in Spanish)", url: "https://listado.mercadolibre.com.mx/mesa-de-dulces-vintage" },
+      { label: "Marketplace: Acetate box listing (in Spanish)", url: "https://listado.mercadolibre.com.mx/cajitas-de-acetato" },
     ],
   },
   {
