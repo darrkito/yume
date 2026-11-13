@@ -5,6 +5,7 @@ export interface ProductTranslation {
   metaTitle?: string;
   category: string;
   description: string;
+  availabilityNote?: string;
   /** Short summary for <meta description>/OG: falls back to `description` when unset. */
   metaDescription?: string;
   details: string[];
@@ -289,6 +290,7 @@ export const productsEn: Record<string, ProductTranslation> = {
     ],
   },
   "placa-resena-google-nfc": {
+    availabilityNote: "This product is made to order and subject to availability. Because of high demand, production can take 2 to 3 weeks. It is best to ask about availability before paying.",
     metaTitle: "Google review plates from 1 piece | $140 MXN",
     name: "Google Review Plate (NFC and QR)",
     category: "NFC & QR Google Review Plates and Stands",
@@ -346,6 +348,7 @@ export const productsEn: Record<string, ProductTranslation> = {
     ],
   },
   "stand-resena-google-nfc": {
+    availabilityNote: "This product is made to order and subject to availability. Because of high demand, production can take 2 to 3 weeks. It is best to ask about availability before paying.",
     metaTitle: "Google review stand from 1 piece | $200 MXN",
     name: "Google Review Stand (NFC and QR)",
     category: "NFC & QR Google Review Plates and Stands",

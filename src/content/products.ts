@@ -16,6 +16,8 @@ export interface Product {
   category: string;
   specs: { label: string; value: string }[];
   description: string;
+  /** Aviso sobre pedido / disponibilidad que se muestra bajo la fecha de entrega. */
+  availabilityNote?: string;
   /** Short summary for <meta description>/OG: falls back to `description`
    * when unset. `description` doubles as the visible on-page paragraph, so
    * long ones need a separate, search-length-appropriate summary here. */
@@ -419,6 +421,7 @@ export const products: Product[] = [
   },
   {
     slug: "placa-resena-google-nfc",
+    availabilityNote: "Este producto se hace sobre pedido y está sujeto a disponibilidad. Por la alta demanda, la producción puede tardar de 2 a 3 semanas. Es mejor preguntar disponibilidad antes de pagar.",
     name: "Placa para Reseñas de Google (NFC y QR)",
     price: 140,
     currency: "MXN",
@@ -437,7 +440,7 @@ export const products: Product[] = [
     description:
       "Placa para conseguir más reseñas de Google, con tecnología NFC y código QR, ideal para mostrador, caja o mesa. La configuramos con el enlace de tu negocio antes de enviártela: el NFC ya está programado y el QR ya está listo para usar, no necesitas instalar ni configurar nada, ni pagar ninguna suscripción. Incluye adhesivo para pegarla donde prefieras. Disponible en blanco o negro.",
     metaDescription: "Placas de reseñas Google con NFC y QR, desde 1 pieza por $140. Sin app ni suscripción; adhesivo incluido.",
-    updatedAt: "2026-10-17",
+    updatedAt: "2026-11-13",
     details: [
       "Tus clientes tocan con el celular (NFC) o escanean el QR: ambos llevan directo a dejar una reseña en Google",
       "Se entrega configurada con el enlace de tu negocio: NFC y QR listos para usar",
@@ -489,6 +492,7 @@ export const products: Product[] = [
   },
   {
     slug: "stand-resena-google-nfc",
+    availabilityNote: "Este producto se hace sobre pedido y está sujeto a disponibilidad. Por la alta demanda, la producción puede tardar de 2 a 3 semanas. Es mejor preguntar disponibilidad antes de pagar.",
     name: "Stand para Reseñas de Google (NFC y QR)",
     price: 200,
     currency: "MXN",
@@ -508,7 +512,7 @@ export const products: Product[] = [
     description:
       "Stand con base para conseguir más reseñas de Google, con tecnología NFC y código QR, para colocar de pie sobre mostrador, caja o mesa sin necesidad de pegarlo. La configuramos con el enlace de tu negocio antes de enviártelo: el NFC ya está programado y el QR ya está listo para usar, no necesitas instalar ni configurar nada, ni pagar ninguna suscripción. Disponible en blanco o negro.",
     metaDescription: "Stand para reseñas Google con NFC y QR, desde 1 pieza por $200. Blanco o negro, sin app ni suscripción.",
-    updatedAt: "2026-10-17",
+    updatedAt: "2026-11-13",
     details: [
       "Tus clientes tocan con el celular (NFC) o escanean el QR: ambos llevan directo a dejar una reseña en Google",
       "Se entrega configurado con el enlace de tu negocio: NFC y QR listos para usar",

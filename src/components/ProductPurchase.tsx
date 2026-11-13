@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import { ImageUp, ShoppingBag, Check, CheckCircle2, Clock, MapPin, MessageCircle, Truck, Zap } from "lucide-react";
+import { ImageUp, ShoppingBag, Check, CheckCircle2, Clock, Info, MapPin, MessageCircle, Truck, Zap } from "lucide-react";
 import { useAddProduct } from "@/components/useAddProduct";
 import { useDeliveryDates } from "@/components/useDeliveryDates";
 import { useDesignFiles } from "@/components/DesignFileContext";
@@ -51,6 +51,7 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
   const addButtonRef = useRef<HTMLButtonElement>(null);
   const t = UI[lang];
   const translation = lang === "en" ? getProductTranslation(product.slug) : undefined;
+  const availabilityNote = lang === "en" ? translation?.availabilityNote : product.availabilityNote;
 
   // Products with "-logo" variants get a color picker + a "con tu logo" yes/no.
   const hasLogoOption = Boolean(product.variants?.some((v) => v.id.endsWith("-logo")));
@@ -396,6 +397,12 @@ export function ProductPurchase({ product, lang = "es" }: { product: Product; la
               {dates && <span className="block text-xs text-ink-soft">{t.deliveryEstimateNote}</span>}
             </span>
           </li>
+          {availabilityNote && <li className="flex items-start gap-2"><Info size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" />
+            <span>
+              {availabilityNote}
+              <a className="block text-xs underline" href={waLink(t.availabilityWaMsg.replace("{label}", label))} target="_blank" rel="noopener noreferrer">{t.askAvailability}</a>
+            </span>
+          </li>}
           <li className="flex items-start gap-2"><MapPin size={16} className="mt-0.5 shrink-0 text-brand" aria-hidden="true" /><span>
               {t.factPickup.replace("{pickup}", formatMXN(CASABLANCA_PRICE)).replace("{threshold}", formatMXN(FREE_SHIPPING_THRESHOLD))}
               {dates && <span className="block text-xs text-ink-soft">{t.pickupEstimate.replace("{from}", dates.pickup.from).replace("{to}", dates.pickup.to)}</span>}
