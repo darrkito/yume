@@ -5939,6 +5939,84 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "google-reviews-for-dentists-how-to-ask",
+    title: "Google Reviews for Dentists: How to Ask the Right Way",
+    description:
+      "How to ask for Google reviews at your dental practice with no incentives, no pressure and no clinical details: when, what to say and how to reply.",
+    category: "Guides",
+    publishedAt: "2026-11-13",
+    intro:
+      "Asking for Google reviews at a dental practice is not like asking in a cafe: patient trust and privacy come first. This guide explains what you can do, what you cannot, when to offer the plate at reception and how to reply without revealing anyone's details.",
+    sections: [
+      {
+        heading: "How to ask patients for Google reviews without breaking the rules",
+        body: [
+          "You can ask your patients for Google reviews as long as they are genuine, free of incentives and not scripted. Invite everyone equally, do not offer discounts or gifts, and do not pressure anyone in the office. The invitation is an open door, not a task the patient has to complete.",
+          "Before asking, make sure your profile is complete. Here is how to [set up your Google profile](/en/blog/set-up-google-business-profile-and-ask-for-reviews) so it is ready to receive reviews.",
+        ],
+      },
+      {
+        heading: "What you should never offer or ask a patient",
+        body: [
+          "Google prohibits payments, discounts or free services in exchange for a review, and also in exchange for changing or removing a negative one. It also does not allow asking only happy patients, or requesting specific content such as naming a team member. Content obtained with an incentive is removed.",
+          "Google also does not allow review quotas for staff. If someone on your team makes the invitation, it should be the same for every patient, with no targets or prizes, and without discouraging anyone who wants to leave criticism.",
+        ],
+      },
+      {
+        heading: "When and how to offer the NFC plate at reception",
+        body: [
+          "Offer the plate when saying goodbye, as a discreet invitation, without insisting and without a fixed script. Leave it in view at reception so patients can tap their phone whenever they like. Google does not allow pressuring anyone to review while they are on the premises, so if they skip it, that is fine.",
+          "A short, neutral line could be: \"If you like, you can share your opinion about the care you received; tap your phone on the plate.\" Say it the same way to every patient.",
+          "The Yume [NFC review plate](/en/products/google-review-nfc-plate) arrives already programmed with your practice's review link and with the backup QR printed on it. You can buy from 1 piece, with a one-time payment, no subscription and no app. There is also a standing stand that does not need sticking. To see how it fits your field, read the [review plate for medical practices](/en/blog/google-review-plate-for-medical-practices).",
+        ],
+      },
+      {
+        heading: "What to ask for in the review: experience, not clinical details",
+        body: [
+          "Invite patients to describe their experience: the service, punctuality and how clearly things were explained. Do not suggest text about diagnoses or treatment results. Google prohibits sharing personal or medical information without consent and treats misleading health content as misinformation, and you cannot promise clinical results.",
+          "Avoid asking them to name a team member or a specific treatment. If a patient decides to write about their own case, that is their choice, but your invitation should not lead them there.",
+        ],
+      },
+      {
+        heading: "How to reply to a review without revealing the person is your patient",
+        body: [
+          "Reply with thanks and without confirming that the person was a patient or mentioning their treatment. As a precaution, your reply is public and patient privacy comes first. Invite them to continue by a private channel, such as the office phone, and answer both positive and negative reviews.",
+          "Do not repeat a name, reason for the visit or appointment date in your reply. A message such as \"Thank you for your comment, your opinion matters to us. Contact the office so we can help you personally\" confirms nothing about anyone.",
+        ],
+      },
+      {
+        heading: "Why patient trust matters more than the stars",
+        body: [
+          "For a practice, a review helps another person decide whether to trust you, and that depends on it being honest. So ask everyone, accept criticism and do not filter. A perfect rating earned through tricks can cost you removed reviews and your patients' trust.",
+          "To make it a habit, compare the [NFC plate and printed QR](/en/blog/nfc-plate-vs-printed-qr-code-for-reviews) and see how to [get more reviews with NFC](/en/blog/how-to-get-more-google-reviews-nfc-qr).",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["google-review-nfc-plate", "google-review-nfc-stand"],
+    relatedBlogSlugs: ["google-review-plate-for-medical-practices", "how-to-get-more-google-reviews-nfc-qr", "set-up-google-business-profile-and-ask-for-reviews", "nfc-plate-vs-printed-qr-code-for-reviews"],
+    sources: [
+      { label: "Google: contribution content policies (reviews)", url: "https://support.google.com/contributionpolicy/answer/7400114?hl=es" },
+    ],
+    faq: [
+      {
+        q: "Can I give a discount to anyone who leaves a review?",
+        a: "No. Google prohibits offering payments, discounts or free goods and services in exchange for a review, and content published for an incentive is removed.",
+      },
+      {
+        q: "Can I ask for the review only from patients who left happy?",
+        a: "No. Google does not allow discouraging negative reviews or asking only happy customers for positive ones. Everyone is invited equally.",
+      },
+      {
+        q: "What should I suggest the patient write?",
+        a: "Nothing specific. Google does not allow requesting specific content and prohibits sharing someone's medical information without their consent. You can invite them to talk about their experience, with no script.",
+      },
+      {
+        q: "Does the NFC plate guarantee more reviews?",
+        a: "No. It makes it easier to reach the review link, but leaving a review is each patient's decision.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPostEn(slug: string) {

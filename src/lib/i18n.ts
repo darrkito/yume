@@ -94,6 +94,7 @@ export const BLOG_SLUG_EN: Record<string, string> = {
   "placa-nfc-funciona-iphone-android": "does-nfc-plate-work-iphone-android",
   "donde-poner-placa-resenas-google": "where-to-put-your-google-review-plate",
   "que-si-y-que-no-pedir-resenas-google-politicas": "google-review-policies-what-you-can-and-cannot-do",
+  "resenas-google-dentistas-consultorios": "google-reviews-for-dentists-how-to-ask",
 };
 
 export const PRODUCT_SLUG_ES: Record<string, string> = Object.fromEntries(

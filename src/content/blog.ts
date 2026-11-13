@@ -7172,6 +7172,84 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "resenas-google-dentistas-consultorios",
+    title: "Reseñas de Google para dentistas: cómo pedirlas bien",
+    description:
+      "Cómo pedir reseñas de Google en tu consultorio dental sin incentivos, sin presión y sin datos clínicos: cuándo, con qué guion y cómo responder.",
+    category: "Guías",
+    publishedAt: "2026-11-13",
+    intro:
+      "Pedir reseñas de Google en un consultorio dental no se parece a pedirlas en una cafetería: aquí la confianza y la privacidad del paciente van primero. Esta guía te explica qué sí puedes hacer, qué no, cuándo ofrecer la placa en recepción y cómo responder sin revelar datos de nadie.",
+    sections: [
+      {
+        heading: "Cómo pedir reseñas de Google a tus pacientes sin romper las reglas",
+        body: [
+          "Puedes pedir reseñas de Google a tus pacientes siempre que sean auténticas, sin incentivos y sin dictar lo que deben decir. Invita a todos por igual, no ofrezcas descuentos ni regalos y no presiones en el consultorio. La invitación es una puerta abierta, no una tarea que el paciente debe cumplir.",
+          "Antes de pedir nada, revisa que tu perfil esté completo. Aquí tienes cómo [configurar tu perfil de Google](/blog/como-configurar-perfil-de-google-y-pedir-resenas) y dejarlo listo para recibir opiniones.",
+        ],
+      },
+      {
+        heading: "Qué nunca debes ofrecer ni pedir a un paciente",
+        body: [
+          "Google prohíbe dar pagos, descuentos o servicios gratis a cambio de una reseña, y también a cambio de cambiar o retirar una negativa. Tampoco permite pedir reseñas solo a pacientes contentos ni pedir contenido concreto, como mencionar a una persona del equipo. El contenido obtenido con incentivo se elimina.",
+          "Google tampoco permite ponerle cuotas de reseñas al personal. Si alguien del equipo hace la invitación, que sea igual para todos los pacientes, sin metas ni premios, y sin desalentar a quien quiera dejar una crítica.",
+        ],
+      },
+      {
+        heading: "Cuándo y cómo ofrecer la placa NFC en recepción",
+        body: [
+          "Ofrece la placa al despedirte, como una invitación discreta, sin insistir y sin guion fijo. Déjala a la vista en recepción para que el paciente la acerque a su celular cuando quiera. Google no permite presionar a nadie para reseñar mientras está en el local, así que si no la usa, no pasa nada.",
+          "Un guion corto y neutral puede ser: «Si quieres, puedes dejar tu opinión sobre la atención; acerca tu celular a la placa». Dilo igual a todos los pacientes.",
+          "La [placa NFC para reseñas](/productos/placa-resena-google-nfc) de Yume se entrega ya programada con el enlace de reseñas de tu consultorio y con el QR de respaldo impreso. Se compra desde 1 pieza, con pago único, sin suscripción ni app. También hay un stand de pie que no se pega. Para ver cómo encaja en tu giro, revisa la [placa de reseñas para consultorios](/blog/placa-resenas-google-para-consultorios).",
+        ],
+      },
+      {
+        heading: "Qué pedir en la reseña: experiencia, no datos clínicos",
+        body: [
+          "Invita al paciente a contar su experiencia: trato, puntualidad y claridad de las explicaciones. No sugieras textos sobre diagnósticos ni resultados de tratamientos. Google prohíbe compartir información personal o médica sin consentimiento y considera desinformación el contenido de salud engañoso, además de que no puedes prometer resultados clínicos.",
+          "Evita pedir que mencionen a una persona del equipo o un tratamiento específico. Si un paciente decide escribir sobre su caso, es decisión suya, pero tu invitación no debe llevarlo ahí.",
+        ],
+      },
+      {
+        heading: "Cómo responder una reseña sin revelar que es tu paciente",
+        body: [
+          "Responde con agradecimiento y sin confirmar que la persona fue paciente ni mencionar su tratamiento. Por prudencia, tu respuesta es pública y la privacidad del paciente va primero. Invita a continuar la conversación por un canal privado, como el teléfono del consultorio, y responde tanto las positivas como las negativas.",
+          "No repitas en tu respuesta nombre, motivo de consulta ni fecha de cita. Un mensaje como «Gracias por tu comentario, nos importa tu opinión. Escríbenos al consultorio para atenderte personalmente» no confirma nada sobre nadie.",
+        ],
+      },
+      {
+        heading: "Por qué la confianza del paciente pesa más que las estrellas",
+        body: [
+          "En un consultorio, la reseña sirve para que otra persona decida si confiar en ti, y eso depende de que sea honesta. Por eso conviene pedirla a todos, aceptar las críticas y no filtrar. Una calificación perfecta lograda con trampas puede costarte reseñas eliminadas y la confianza de tus pacientes.",
+          "Si quieres convertirlo en hábito, compara la [placa NFC y el QR impreso](/blog/placa-nfc-vs-codigo-qr-impreso-resenas) y revisa cómo [conseguir más reseñas con NFC](/blog/como-conseguir-mas-resenas-de-google-nfc-qr).",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
+    relatedBlogSlugs: ["placa-resenas-google-para-consultorios", "como-conseguir-mas-resenas-de-google-nfc-qr", "como-configurar-perfil-de-google-y-pedir-resenas", "placa-nfc-vs-codigo-qr-impreso-resenas"],
+    sources: [
+      { label: "Google: políticas de contenido de las contribuciones (reseñas)", url: "https://support.google.com/contributionpolicy/answer/7400114?hl=es" },
+    ],
+    faq: [
+      {
+        q: "¿Puedo dar un descuento a quien deje una reseña?",
+        a: "No. Google prohíbe ofrecer pagos, descuentos o bienes y servicios gratis a cambio de una reseña, y el contenido publicado por un incentivo se elimina.",
+      },
+      {
+        q: "¿Puedo pedir la reseña solo a los pacientes que salieron contentos?",
+        a: "No. Google no permite desalentar las reseñas negativas ni pedir reseñas positivas solo a los clientes contentos. Se invita a todos por igual.",
+      },
+      {
+        q: "¿Qué le sugiero al paciente que escriba?",
+        a: "Nada concreto. Google no permite pedir contenido específico y prohíbe compartir información médica de alguien sin su consentimiento. Puedes invitarlo a hablar de su experiencia, sin guion.",
+      },
+      {
+        q: "¿La placa NFC garantiza más reseñas?",
+        a: "No. Facilita el paso al enlace de reseñas, pero dejar una reseña es decisión de cada paciente.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string) {
