@@ -1380,7 +1380,7 @@ export const blogPostsEn: BlogPost[] = [
   {
     slug: BLOG_SLUG_EN["tatuajes-temporales-personalizados-para-eventos"],
     title: "Custom Temporary Tattoos in Guadalajara for Parties and Events",
-    metaTitle: "Custom Temporary Tattoos in Guadalajara",
+    metaTitle: "Temporary Tattoos for Events in Guadalajara: Guide",
     description:
       "Custom temporary tattoos in Guadalajara for weddings, quinceañeras, and parties: how to get a quote on WhatsApp and receive a digital proof before production.",
     category: "Guides",
