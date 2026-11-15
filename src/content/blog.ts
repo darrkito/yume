@@ -5423,115 +5423,103 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "dulceros-para-xv-anos-elegantes",
-    title: "Qué dulces poner en un dulcero para XV años",
+    title: "Dulceros para 15 años: ideas elegantes y personalización",
     description:
-      "Qué dulces poner en un dulcero para XV años: clásicos y un detalle sorpresa, cómo combinarlos con la paleta, montar y rotular la mesa y pedir tus dulceros.",
+      "Dulceros para 15 años: ideas elegantes, qué personalizar, cómo presentar y etiquetar los dulces, cuántos pedir y cómo hacerlo con prueba digital.",
     category: "Guías",
     publishedAt: "2026-11-03",
-    modifiedAt: "2026-11-07",
+    modifiedAt: "2026-11-15",
     intro:
-      "Qué dulces poner en un dulcero para XV años es la duda que más pesa cuando quieres una mesa que se vea planeada. Aquí tienes qué combinar, cómo coordinarlo con la paleta de la fiesta, cuántos dulceros pedir, cómo montar y rotular la mesa de dulces y cómo pedirlos con prueba digital. Está pensado para mamás, papás y planners que cuidan el detalle.",
+      "Si buscas dulceros para 15 años, la pregunta no es solo qué poner dentro, sino cómo lograr que se vean pensados para la quinceañera. Aquí tienes qué personalizar, cómo presentar y etiquetar los dulces, cuántos dulceros pedir y cómo hacerlo con prueba digital. Está escrito para mamás, papás y planners que cuidan el detalle.",
     sections: [
       {
-        heading: "Qué dulces poner en un dulcero para XV años",
+        heading: "Dulceros para 15 años: qué ofrecer y cómo elegirlos",
         body: [
-          "Para un dulcero de XV años combina clásicos como gomitas, galletas decoradas, mini brownies y bombones con un detalle sorpresa. Las guías del sector recomiendan esa mezcla y añadir opciones sin gluten, veganas o sin azúcar. El dulcero llega vacío, así que tú eliges el relleno.",
-          "En una mesa de bodas, una guía del sector recomienda de 5 a 7 variedades de postre, una pauta que se puede adaptar a un XV. Si quieres más ideas de relleno, revisa la guía de [qué poner en un dulcero](/blog/que-poner-en-un-dulcero), y consulta los [dulceros personalizados](/productos/dulceros-personalizados) que preparamos con el nombre de la quinceañera.",
+          "Un dulcero para 15 años funciona mejor cuando el invitado se lo lleva cerrado, con el nombre de la quinceañera y un contenido que combine con la fiesta. Nuestro dulcero llega armado y vacío, tipo lunch box con asa, así que tú eliges si lleva golosinas, galletas o bombones.",
+          "Si quieres más ideas de relleno, revisa la guía de [qué poner en un dulcero](/blog/que-poner-en-un-dulcero), y mira los [dulceros personalizados](/productos/dulceros-personalizados) que preparamos con el nombre de la quinceañera.",
         ],
       },
       {
-        heading: "¿Qué dulces combinan con una fiesta elegante de XV años?",
+        heading: "¿Qué se puede personalizar en un dulcero de XV años?",
         body: [
-          "Los que siguen la paleta de la fiesta. Una guía del sector aconseja elegir 2 o 3 colores protagonistas y repetirlos en dulces, flores, cintas, carteles y recipientes. Así el dulcero, la mesa y la decoración se ven como un solo conjunto, y la mesa luce planeada en lugar de una suma de dulces sueltos.",
-          "La misma guía explica que la paleta se adapta al estilo del evento: dorado y espejos para uno glam, crema y verde para uno rústico. Elige los dulces por su color antes que por su marca, y deja que el dulcero con los colores de la fiesta cierre el conjunto.",
+          "En nuestro dulcero la personalización incluye el nombre de la quinceañera y la temática, que puede ser tan sencilla como los colores de su fiesta. Si quieres sumar otro detalle, como la fecha o las iniciales, escríbenos por WhatsApp y lo confirmamos antes de diseñar.",
+          "Una guía de candy bar para bodas sugiere cerrar los dulces con una etiqueta personalizada con fecha y nombres o iniciales, y adaptar todo al tema del evento. Es una idea que se traslada bien a un XV.",
         ],
       },
       {
-        heading: "Dulceros para XV años elegantes: qué los hace finos",
+        heading: "Qué hace elegante a un dulcero de XV años",
         body: [
-          "Un dulcero de XV años se ve elegante cuando usa pocos colores, un nombre legible y una tipografía discreta, y cuando combina con la invitación, el pastel y la decoración de la mesa. La elegancia viene de la coordinación y del detalle personalizado, no de llenarlo de adornos ni de usar un kit genérico.",
-          "Al buscar mesas de dulces para XV años en un marketplace aparecen sobre todo kits de mesa vintage en MDF, de precio bajo y para armar, y cajitas transparentes que se venden en paquetes de 20, 40 o 50 piezas. Son opciones de volumen. Un dulcero con el nombre de la quinceañera y los colores de su fiesta es otro tipo de detalle.",
+          "Un dulcero de XV años se ve elegante cuando usa pocos colores, un nombre legible y una tipografía discreta, y cuando combina con la invitación y la decoración de la mesa. La elegancia viene de la coordinación, no de sumar adornos. Si nos mandas una foto de la invitación, adaptamos el diseño a esos colores.",
+          "Antes de producir recibes una prueba digital y nada se produce hasta que la apruebas. Si coordinas el evento como planner, mándanos la paleta y la invitación de tu cliente y revisa la prueba directo por WhatsApp. Aquí explicamos [cómo funciona la prueba digital](/blog/prueba-digital-pedido-evento-planners).",
         ],
       },
       {
-        heading: "Paleta, nombre y tipografía para recuerdos de XV años modernos",
+        heading: "Cómo presentar los dulces para que se vean premium",
         body: [
-          "Elige una paleta corta tomada de la invitación o del vestido, pon el nombre de la quinceañera en una tipografía clara y deja espacio vacío alrededor. Si nos mandas una foto de la invitación o de la decoración, adaptamos el diseño a esos colores, y antes de producir recibes una prueba digital.",
-          "Nuestro dulcero es tipo lunch box, con asa, y la personalización incluye el nombre y la temática. Para un XV, la temática puede ser tan sencilla como los colores de la fiesta con el nombre de la quinceañera, sin más elementos.",
-          "Si coordinas el evento como planner, puedes mandarnos la paleta y la invitación de tu cliente y revisar la prueba digital directo por WhatsApp, sin intermediarios.",
+          "Una guía de candy bar para bodas recomienda envases transparentes, bandejas a distintas alturas, cajas de madera y soportes que dejen ver el contenido. También señala que las presentaciones individuales son más higiénicas y evitan colas. La guía habla de candy bars de bodas, así que tómalo como referencia para adaptar a un XV.",
+          "Para montar la mesa completa, revisa la guía de la [mesa de dulces para boda](/blog/mesa-de-dulces-para-boda), que se puede adaptar a un XV.",
+        ],
+      },
+      {
+        heading: "Cómo etiquetar sabores y alérgenos en la mesa",
+        body: [
+          "La misma guía sugiere etiquetar los sabores y los alérgenos, e indicar qué opciones son sin gluten, sin azúcar o veganas. Así cada invitado sabe qué toma y nadie tiene que preguntar. Es una guía de candy bar para bodas, así que sirve como referencia para adaptar a un XV.",
         ],
       },
       {
         heading: "Cuántos dulceros pedir y cuántos dulces calcular",
         body: [
-          "Pide un dulcero por cada persona que quieras que se lleve el detalle: toda la lista de invitados, solo la familia cercana o solo la mesa principal. El pedido mínimo es de 10 piezas y puedes escribir la cantidad exacta que necesitas.",
-          "Para calcular los dulces, una guía del sector sobre buffets de dulces para bodas sugiere de 3 a 4 raciones por persona si no hay pastel y unas 2 si lo hay. Son cifras de una mesa de postres de boda, no de lo que cabe en una caja, así que tómalas solo como orden de magnitud, sobre todo en un XV con baile y vals.",
-          "La misma guía señala que los niños suelen consumir más dulces que los adultos y que las cenas generan más consumo que los banquetes del mediodía. Úsalo para ajustar tus cálculos si tu lista tiene muchos niños o si la fiesta es de noche.",
+          "Pide un dulcero por cada persona que quieras que se lleve el detalle: toda la lista, solo la familia cercana o la mesa principal. El pedido mínimo es de 10 piezas y puedes escribir la cantidad exacta. Para calcular el relleno, usa como orientación una guía de bodas, no una regla de XV.",
+          "Esa guía de candy bar calcula unos 150 g por invitado en eventos pequeños, 100 g en medianos y 80 g en grandes, y unos 10 kg para 100 personas si solo hay golosinas. Con brownies, galletas o bombones se puede reducir. Es una referencia española para bodas, no una cifra de XV.",
+          "Para ver cómo se calcula en otro evento, revisa [cuántos dulceros pedir para una boda](/blog/cuantos-dulceros-pedir-para-una-boda).",
         ],
       },
       {
-        heading: "Montaje de la mesa de dulces: mesa, alturas y color",
+        heading: "Cómo pedir tus dulceros para 15 años con prueba digital",
         body: [
-          "Una mesa de unos 80 por 120 a 160 centímetros alcanza para 30 a 40 personas, según una guía de montaje. Cúbrela con un mantel hasta el piso, pon las piezas altas al centro y al fondo, y usa cajas o bases para crear niveles.",
-          "Una guía del sector recomienda repartir los dulces a distintas alturas, usar recipientes variados como frascos de cristal, cajas de madera o soportes de varios pisos, ordenarlos por bloques de color y cuidar que ningún elemento tape a otro.",
-          "Mantén una paleta de color coherente con la de tus [dulceros personalizados](/productos/dulceros-personalizados) y combina formas y sabores. Una guía de montaje sugiere tener en cuenta a los invitados celíacos, por ejemplo con malvaviscos sin gluten, y marcar cada dulce para que todos sepan qué toman.",
-        ],
-      },
-      {
-        heading: "Cómo rotular los dulces y qué dejar a la mano",
-        body: [
-          "Coloca carteles que indiquen sabores, alérgenos u opciones veganas, y que combinen con la papelería de la fiesta. También conviene dejar servilletas, pinzas o cucharitas a mano y preparar bolsitas o tarros para que los invitados se lleven dulces. Así cada persona sabe qué dulce toma.",
-        ],
-      },
-      {
-        heading: "Cómo pedir tus dulceros para XV años con prueba digital",
-        body: [
-          "Cuéntanos por WhatsApp el nombre de la quinceañera, los colores de la fiesta y cuántos dulceros necesitas. Te enviamos una prueba digital del diseño antes de producir, y nada se produce hasta que la apruebas. Puedes ver los [dulceros personalizados](/productos/dulceros-personalizados) en la tienda y mandarnos una foto de la invitación como referencia.",
-          "Trabajamos por pedido desde Guadalajara, Jalisco, con envío a todo México. El plazo de producción cuenta desde que apruebas la prueba digital, así que pide con tiempo antes de la fiesta y confirma por WhatsApp la fecha que necesitas. Si buscas otra opción cerca de ti, mira los [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara).",
+          "Cuéntanos por WhatsApp el nombre de la quinceañera, los colores de la fiesta y cuántos dulceros necesitas. Te enviamos una prueba digital del diseño antes de producir, y nada se produce hasta que la apruebas. Puedes mandarnos una foto de la invitación como referencia.",
+          "Trabajamos por pedido desde Guadalajara, Jalisco, con envío a todo México. El plazo de producción cuenta desde que apruebas la prueba digital, así que pide con tiempo y confirma por WhatsApp la fecha que necesitas. Ve la ficha de los [dulceros personalizados](/productos/dulceros-personalizados) o, si estás cerca, mira los [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara).",
         ],
       },
     ],
     relatedProductSlugs: ["dulceros-personalizados"],
-    relatedBlogSlugs: ["que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "dulceros-navidenos-personalizados"],
+    relatedBlogSlugs: ["que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "cuantos-dulceros-pedir-para-una-boda", "mesa-de-dulces-para-boda"],
     faq: [
       {
-        q: "¿Qué dulces poner en un dulcero para XV años?",
-        a: "Combina clásicos como gomitas, galletas decoradas, mini brownies y bombones con un detalle sorpresa, siguiendo una guía del sector adaptada a un XV.",
-      },
-      {
-        q: "¿Los dulceros incluyen dulces?",
+        q: "¿Los dulceros para 15 años incluyen dulces?",
         a: "No. El dulcero llega armado y vacío, listo para llenar con los dulces que tú elijas.",
       },
       {
         q: "¿Qué incluye la personalización de un dulcero?",
-        a: "El nombre y la temática que elijas. Te mandamos una prueba digital antes de producir y nada se produce hasta que la apruebas.",
+        a: "El nombre y la temática que elijas. Si quieres añadir la fecha o las iniciales, escríbenos por WhatsApp y lo confirmamos.",
       },
       {
         q: "¿Cuál es el pedido mínimo de dulceros?",
         a: "El pedido mínimo es de 10 piezas, y puedes escribir la cantidad exacta que necesitas a partir de ahí.",
       },
       {
-        q: "¿Cuántos colores conviene usar en la mesa de dulces?",
-        a: "Una guía del sector aconseja elegir 2 o 3 colores protagonistas y repetirlos en dulces, flores, cintas, carteles y recipientes.",
+        q: "¿Cuántos gramos de dulce calculo por invitado?",
+        a: "Una guía española de candy bar para bodas habla de 80 a 150 g por invitado según el tamaño del evento. Es una referencia de bodas, úsala solo como orientación en un XV.",
       },
       {
-        q: "¿Conviene poner carteles en los dulces?",
-        a: "Sí. Una guía del sector indica que los carteles pueden señalar sabores, alérgenos u opciones veganas, y que deben combinar con la papelería de la fiesta.",
+        q: "¿Conviene etiquetar los dulces?",
+        a: "Sí. La misma guía sugiere etiquetar sabores y alérgenos, e indicar las opciones sin gluten, sin azúcar o veganas.",
       },
       {
-        q: "¿Cuántas variedades de dulce conviene poner?",
-        a: "Una guía del sector recomienda de 5 a 7 variedades de postre en una mesa de bodas. Es una guía de boda que se puede adaptar a un XV.",
-      },
-      {
-        q: "¿Qué tamaño de mesa necesito para la mesa de dulces?",
-        a: "Una guía de montaje menciona una mesa de unos 80 por 120 a 160 centímetros para 30 a 40 personas, con mantel hasta el piso y niveles con cajas o bases.",
+        q: "¿Recibo una prueba antes de producir?",
+        a: "Sí. Te mandamos una prueba digital del diseño y nada se produce hasta que la apruebas.",
       },
       {
         q: "¿Hacen envíos a todo México?",
         a: "Sí. Producimos por pedido desde Guadalajara, Jalisco, y enviamos a todo México.",
       },
     ],
-    sources: [],
+    sources: [
+      {
+        label: "Todo lo que debéis saber antes de montar una candy bar (Bodas.net)",
+        url: "https://www.bodas.net/articulos/todo-lo-que-debeis-saber-antes-de-montar-una-candy-bar--c2448",
+      },
+    ],
   },
   {
     slug: "detalles-cumpleanos-adultos-personalizados",
