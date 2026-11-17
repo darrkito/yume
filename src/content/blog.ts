@@ -5230,7 +5230,7 @@ export const blogPosts: BlogPost[] = [
       "Cómo armar una mesa de dulces para boda: cuántos dulces calcular, qué poner en cada dulcero, cómo montarla y personalizar dulceros con prueba digital.",
     category: "Guías",
     publishedAt: "2026-11-10",
-    modifiedAt: "2026-11-03",
+    modifiedAt: "2026-11-17",
     intro:
       "Una mesa de dulces para boda bien pensada se ve, se fotografía y se disfruta. En esta guía encuentras cuántos dulces calcular, cuántos dulceros necesitas, qué poner en cada uno, cómo montar la mesa, qué debe decir cada etiqueta y cómo personalizar los dulceros para que combinen con la paleta de tu boda. También hay una sección para wedding planners.",
     sections: [
@@ -5246,22 +5246,22 @@ export const blogPosts: BlogPost[] = [
         heading: "Cuántos dulceros o tarros necesitas en la mesa",
         body: [
           "Una guía del sector orienta con tarros medianos: de 4 a 6 para 50 invitados, de 10 a 12 para entre 50 y 150, y unos 15 o 16 para 200. Es una referencia para saber cuántos recipientes llenar, no una regla. Ajústala según cuántos tipos de dulce quieras mostrar y el tamaño de tu mesa.",
-          "Por eso conviene empezar por los tipos de dulce que quieres ofrecer y después definir el número de recipientes. Nuestro pedido mínimo de dulceros es de 10 piezas, y en la página de [dulceros personalizados](/productos/dulceros-personalizados) ves el precio vigente.",
+          "Conviene empezar por los tipos de dulce que quieres ofrecer y después definir el número de recipientes. Nuestro pedido mínimo de [dulceros personalizados](/productos/dulceros-personalizados) es de 10 piezas, y en su página ves el precio vigente. Para más detalle por número de invitados, revisa [cuántos dulceros pedir para una boda](/blog/cuantos-dulceros-pedir-para-una-boda).",
         ],
       },
       {
         heading: "Qué dulces poner en cada dulcero de la mesa",
         body: [
-          "Elige variedad y etiqueta cada dulcero. Una guía del sector sugiere al menos 6 variedades de dulces como referencia, y otra guía recomienda combinar clásicos como gominolas, nubes y bombones con minis, cake pops, brownies o galletas decoradas. El dulcero de Yume llega armado y vacío, así que tú decides qué lleva cada uno.",
-          "Para más ideas de relleno, revisa nuestra guía de [qué poner en un dulcero](/blog/que-poner-en-un-dulcero).",
+          "Elige variedad y etiqueta cada dulcero. Una guía del sector sugiere al menos 6 variedades de dulces como referencia, y otra recomienda combinar clásicos como gominolas, nubes y bombones con minis, cake pops, brownies o galletas decoradas. El dulcero de Yume llega armado y vacío, así que tú decides qué lleva cada uno.",
+          "Para más ideas de relleno, revisa nuestra guía de [qué poner en un dulcero](/blog/que-poner-en-un-dulcero) y la de [qué dulces poner en un dulcero de boda](/blog/que-dulces-poner-en-dulcero-de-boda).",
         ],
       },
       {
         heading: "Cómo armar la mesa de dulces para boda paso a paso",
         body: [
-          "Define un concepto y una paleta, elige un punto de atención y acomoda por alturas: lo bajo al frente y lo alto al fondo. Una guía del sector recomienda recipientes transparentes, bandejas a distintas alturas o cajas de madera para que se vea el contenido, y mantener el orden con una línea de estilo coherente.",
+          "Define un concepto y una paleta, elige un punto de atención y acomoda por alturas: lo bajo al frente y lo alto al fondo. Una guía del sector recomienda recipientes transparentes, bandejas a distintas alturas o cajas de madera para que se vea el contenido, y mantener una línea de estilo coherente.",
           "Una guía del sector propone 10 pasos que van de la inspiración al diseño gráfico, con cartelitos y banderines, e incluyen un croquis de la mesa. Otra guía añade pinzas para servirse y, como alternativa higiénica y sin filas, las presentaciones individuales.",
-          "Los dulceros dan color y un diseño propio a la mesa y, si los personalizas, repiten el diseño de tu boda. Si además buscas detalles para entregar, mira los [souvenirs de boda personalizados](/blog/souvenirs-de-boda-personalizados).",
+          "Los dulceros dan color y un diseño propio a la mesa y, si los personalizas, repiten el diseño de tu boda. Si además buscas detalles para entregar, mira los [souvenirs de boda personalizados](/blog/souvenirs-de-boda-personalizados) y los [detalles de mesa para boda](/blog/detalles-de-mesa-boda-personalizados).",
         ],
       },
       {
@@ -5283,7 +5283,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Cuándo pedir los dulceros de tu mesa de dulces",
         body: [
           "Pide los dulceros cuando tengas definidos la paleta y el número de invitados, para dar tiempo a la prueba digital y a tu aprobación. Si trabajas con wedding planner, comparte con ella el diseño aprobado y el croquis de la mesa. Escríbenos por WhatsApp con la fecha de tu boda.",
-          "Al cotizar, dinos cuántos invitados tienes y cuántos dulceros quieres.",
+          "Al cotizar, dinos cuántos invitados tienes y cuántos dulceros quieres. Si también planeas souvenirs, mira [cuándo pedir souvenirs de boda](/blog/cuando-pedir-souvenirs-de-boda).",
         ],
       },
       {
@@ -5295,7 +5295,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["dulceros-personalizados"],
-    relatedBlogSlugs: ["que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "souvenirs-de-boda-personalizados"],
+    relatedBlogSlugs: ["que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "souvenirs-de-boda-personalizados", "cuantos-dulceros-pedir-para-una-boda"],
     serviceLink: { href: "/productos/dulceros-personalizados", label: "Ver dulceros personalizados" },
     quoteMessage: "Hola, me interesa cotizar dulceros personalizados para mi mesa de dulces de boda.",
     faq: [

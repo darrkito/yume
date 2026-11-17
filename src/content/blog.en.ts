@@ -4898,7 +4898,7 @@ export const blogPostsEn: BlogPost[] = [
       "How to set up a wedding candy table: how many sweets to plan, what to put in each candy box and how to personalize them with a digital proof.",
     category: "Guides",
     publishedAt: "2026-11-10",
-    modifiedAt: "2026-11-03",
+    modifiedAt: "2026-11-17",
     intro:
       "A well-planned wedding candy table looks good, photographs well and gets enjoyed. This guide covers how many sweets to estimate, how many candy boxes you need, what to put in each one, how to set up the table, what each label should say and how to personalize the candy boxes so they match your wedding palette. There is also a section for wedding planners.",
     sections: [
@@ -4914,22 +4914,22 @@ export const blogPostsEn: BlogPost[] = [
         heading: "How many candy boxes or jars you need on the table",
         body: [
           "An industry guide suggests using medium jars: 4 to 6 for 50 guests, 10 to 12 for 50 to 150, and about 15 or 16 for 200. It is a reference for how many containers to fill, not a rule. Adjust it to how many kinds of sweets you want to show and the size of your table.",
-          "So it helps to start with the kinds of sweets you want to offer and then set the number of containers. Our minimum order for candy boxes is 10 pieces, and our guide to [personalized candy boxes](/en/blog/wedding-quinceanera-baby-shower-favor-boxes) shows what they are like.",
+          "So it helps to start with the kinds of sweets you want to offer and then set the number of containers. Our minimum order for [personalized candy boxes](/en/products/personalized-party-favor-boxes) is 10 pieces, and the product page shows the current price. For more detail by guest count, see [how many candy boxes to order for a wedding](/en/blog/how-many-candy-boxes-to-order-for-a-wedding).",
         ],
       },
       {
         heading: "What sweets to put in each candy box",
         body: [
           "Choose variety and label every candy box. An industry guide suggests at least 6 kinds of sweets as a reference, and another recommends mixing classics such as gummies, marshmallows and chocolates with minis, cake pops, brownies or decorated cookies. The Yume candy box arrives assembled and empty, so you decide what goes in each one.",
-          "For more filling ideas, see our guide on [what to put in a candy box](/en/blog/what-to-put-in-a-party-favor-box).",
+          "For more filling ideas, see our guide on [what to put in a candy box](/en/blog/what-to-put-in-a-party-favor-box) and the one on [what sweets to put in a wedding candy dish](/en/blog/what-sweets-to-put-in-a-wedding-candy-dish).",
         ],
       },
       {
         heading: "How to set up a wedding candy table step by step",
         body: [
-          "Define a concept and a palette, choose a focal point and arrange by height: low items in front, tall ones at the back. An industry guide recommends clear containers, trays at different heights or wooden crates so the contents show, and keeping order with a coherent style line.",
-          "One industry guide proposes 10 steps from inspiration to graphic design, with signs and bunting, and they include a sketch of the table. another guide adds tongs for serving and, as a hygienic option without lines, individual servings.",
-          "Candy boxes bring color and a design of your own to the table and, once personalized, repeat the design of your wedding. If you also want favors to hand out, see our [personalized wedding favors](/en/blog/personalized-wedding-favors-with-name-and-date).",
+          "Define a concept and a palette, choose a focal point and arrange by height: low items in front, tall ones at the back. An industry guide recommends clear containers, trays at different heights or wooden crates so the contents show, and keeping a coherent style line.",
+          "One industry guide proposes 10 steps from inspiration to graphic design, with signs and bunting, and they include a sketch of the table. Another guide adds tongs for serving and, as a hygienic option without lines, individual servings.",
+          "Candy boxes bring color and a design of your own to the table and, once personalized, repeat the design of your wedding. If you also want favors to hand out, see our [personalized wedding favors](/en/blog/personalized-wedding-favors-with-name-and-date) and our [wedding table details](/en/blog/personalized-wedding-table-details).",
         ],
       },
       {
@@ -4943,7 +4943,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "How to personalize candy boxes for a wedding",
         body: [
           "A Yume candy box is personalized with the name and theme you choose, for example the couple's names and your wedding colors. Before producing, we send you a digital proof, and nothing is produced until you approve it. That way the table and the keepsake look like one design.",
-          "Our candy box is lunch box style, with a handle, and arrives assembled and empty. The minimum order is 10 pieces. You can request a quote on WhatsApp.",
+          "Our candy box is lunch box style, with a handle, and arrives assembled and empty. The minimum order is 10 pieces. You can see the [personalized candy boxes](/en/products/personalized-party-favor-boxes) and request a quote on WhatsApp.",
           "Send us a photo of your invitation or the decor and we adapt the design to those colors. If you want to include another detail, such as the date, message us on WhatsApp and we will confirm it before quoting. If you are in the area, also see our [candy boxes in Guadalajara](/en/blog/personalized-party-favor-boxes-guadalajara).",
         ],
       },
@@ -4951,7 +4951,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "When to order the candy boxes for your candy table",
         body: [
           "Order the candy boxes once you have settled the palette and the guest count, to leave time for the digital proof and your approval. If you work with a wedding planner, share the approved design and the table sketch with her. Message us on WhatsApp with your wedding date.",
-          "When you request a quote, tell us how many guests you have and how many candy boxes you want.",
+          "When you request a quote, tell us how many guests you have and how many candy boxes you want. If you are also planning favors, see [when to order wedding favors](/en/blog/when-to-order-wedding-favors).",
         ],
       },
       {
@@ -4963,8 +4963,8 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["dulceros-personalizados"],
-    relatedBlogSlugs: [BLOG_SLUG_EN["que-poner-en-un-dulcero"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"], BLOG_SLUG_EN["souvenirs-de-boda-personalizados"]],
-    serviceLink: { href: "/en/blog/wedding-quinceanera-baby-shower-favor-boxes", label: "See personalized candy boxes" },
+    relatedBlogSlugs: [BLOG_SLUG_EN["que-poner-en-un-dulcero"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"], BLOG_SLUG_EN["souvenirs-de-boda-personalizados"], BLOG_SLUG_EN["cuantos-dulceros-pedir-para-una-boda"]],
+    serviceLink: { href: "/en/products/personalized-party-favor-boxes", label: "See personalized candy boxes" },
     quoteMessage: "Hi, I'd like a quote for personalized candy boxes for my wedding candy table.",
     faq: [
       {
