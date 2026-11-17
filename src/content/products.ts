@@ -264,7 +264,7 @@ export const products: Product[] = [
   {
     slug: "stickers-logo-personalizado",
     name: "Stickers y Etiquetas con tu Logo",
-    metaTitle: "Etiquetas Personalizadas con Logo | Desde $3 c/u",
+    metaTitle: "Etiquetas Personalizadas GDL con Logo | Desde $3 c/u",
     price: STICKER_BASE_PRICE,
     currency: "MXN",
     updatedAt: "2026-10-17",

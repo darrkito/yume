@@ -151,6 +151,9 @@ export default function HomeEn() {
         <Link href="/en/products" className="mt-10 inline-flex min-h-11 items-center text-sm font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
           Choose my product →
         </Link>
+        <Link href="/en/blog/how-much-does-it-cost-to-print-stickers" className="mt-2 flex min-h-11 w-fit items-center text-sm font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
+          How much does it cost to print stickers? →
+        </Link>
       </section>
 
       {/* Featured product */}

@@ -1012,8 +1012,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "stickers-personalizados-para-negocios-guadalajara",
-    title: "Stickers y etiquetas personalizadas en Guadalajara",
-    metaTitle: "Stickers personalizados en Guadalajara: cómo pedir",
+    title: "Etiquetas personalizadas GDL: stickers y etiquetas en Guadalajara",
+    metaTitle: "Etiquetas personalizadas GDL | Etiquetas Guadalajara",
     description:
       "Stickers y etiquetas personalizadas en Guadalajara para bodas y eventos: cómo elegir, de qué depende el precio y cómo pedir con prueba digital.",
     category: "Guías",
@@ -7946,6 +7946,81 @@ export const blogPosts: BlogPost[] = [
       {
         q: "¿Qué conviene guardar al comprar detalles para el equipo?",
         a: "Según Pluxee, el CFDI, el comprobante de pago y la evidencia de quién recibió el regalo. Valídalo con tu contador.",
+      },
+    ],
+  },
+  {
+    slug: "cuanto-cuesta-imprimir-stickers",
+    title: "Cuánto cuesta imprimir stickers personalizados",
+    metaTitle: "Cuánto cuesta imprimir stickers: precios desde $3",
+    description: "Cuánto cuesta imprimir stickers personalizados: desde $3 por pieza según tamaño y cantidad, mínimo 40 piezas, qué cambia el precio y cuánto cuesta el envío.",
+    category: "Guías",
+    publishedAt: "2026-11-17",
+    modifiedAt: "2026-11-17",
+    intro:
+      "Cuánto cuesta imprimir stickers depende de tres cosas: el tamaño, la cantidad de piezas y el acabado. Aquí tienes los precios reales de Yume, con tabla por cantidad, ejemplos y lo que suma o no suma al total, para que sepas cuánto gastarás antes de pedir.",
+    sections: [
+      {
+        heading: "¿Cuánto cuesta imprimir stickers personalizados?",
+        body: [
+          `Los stickers de vinil cuestan desde $3.50 por pieza y las etiquetas con tu logo desde $3, según el tamaño: chico hasta 4 cm, mediano de 5 a 6 cm y grande de 7 a 8 cm. El mínimo es de 40 piezas en vinil y de 50 en etiquetas con logo. Se vende por pieza, no por planilla.`,
+          "Precio por cantidad en cada tamaño:",
+        ],
+        table: {
+          ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
+        },
+      },
+      {
+        heading: "De qué depende el precio de los stickers",
+        body: [
+          "Pesan tres cosas: el tamaño del sticker, cuántas piezas pides y el acabado. A mayor cantidad, el precio por pieza baja según la tabla. Los dos cortes (troquelado y semitroquelado) y los acabados mate y brillante cuestan lo mismo; el holográfico suma $0.50 por pieza.",
+          "Todos llevan laminado BOPP de alta calidad y vinil premium resistente al agua, al sol y a los rayones, así que no pagas extra por eso. Para entender qué corte te conviene, lee [troquelado vs semitroquelado](/blog/troquelado-vs-semitroquelado-stickers).",
+        ],
+      },
+      {
+        heading: "Ejemplos de cuánto cuesta un pedido",
+        body: [
+          "Con el precio por pieza, el cálculo es directo: 100 stickers de vinil chicos son $350 y 100 medianos son $500, antes del envío. Si pides el acabado holográfico, suma $0.50 por cada pieza.",
+          "Si lo que necesitas es el logo de tu negocio en etiquetas, mira las [etiquetas personalizadas con logo](/productos/stickers-logo-personalizado), desde 50 piezas. Para un diseño, personaje o la foto de tu mascota, los [stickers de vinil personalizados](/productos/stickers-vinil-impermeable) arrancan en 40 piezas.",
+        ],
+      },
+      {
+        heading: "Cuánto cuesta el envío",
+        body: [
+          `El envío a domicilio a todo México cuesta $${NATIONAL_SHIPPING_PRICE} MXN y es gratis desde $${FREE_SHIPPING_THRESHOLD} MXN de compra. Si estás en la zona metropolitana de Guadalajara, Jalisco, puedes recoger tu pedido por $${CASABLANCA_PRICE} en una de las ${CASABLANCA_BRANCHES.length} sucursales de paquetería Casa Blanca.`,
+          "Las medidas mayores a 8 cm o algo específico no están en la tabla: escríbenos por WhatsApp con la medida y la cantidad y te cotizamos aparte.",
+        ],
+      },
+      {
+        heading: "Cómo saber cuánto costará tu pedido",
+        body: [
+          "Elige el tamaño y la cantidad en la ficha del producto y el precio se calcula al momento. Antes de imprimir recibes una prueba digital, normalmente en un máximo de 24 horas después de tu pago, con hasta 2 rondas de ajustes. No se produce nada hasta que la apruebas.",
+          "Si todavía comparas opciones, revisa [dónde imprimir stickers personalizados en México](/blog/donde-imprimir-stickers-personalizados-mexico) y la guía de [stickers y etiquetas en Guadalajara](/blog/stickers-personalizados-para-negocios-guadalajara).",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
+    relatedBlogSlugs: ["donde-imprimir-stickers-personalizados-mexico", "troquelado-vs-semitroquelado-stickers", "stickers-personalizados-para-negocios-guadalajara"],
+    faq: [
+      {
+        q: "¿Cuánto cuesta imprimir 100 stickers?",
+        a: "100 stickers de vinil chicos (hasta 4 cm) cuestan $350 y 100 medianos (de 5 a 6 cm) cuestan $500, antes del envío. El acabado holográfico suma $0.50 por pieza.",
+      },
+      {
+        q: "¿Cuál es el mínimo para pedir stickers?",
+        a: "El mínimo es de 40 piezas en stickers de vinil y de 50 en etiquetas con tu logo.",
+      },
+      {
+        q: "¿El corte o el acabado cambian el precio?",
+        a: "No, troquelado y semitroquelado cuestan lo mismo, y también los acabados mate y brillante. Solo el holográfico suma $0.50 por pieza.",
+      },
+      {
+        q: "¿Cuánto cuesta el envío de los stickers?",
+        a: `El envío a todo México cuesta $${NATIONAL_SHIPPING_PRICE} MXN y es gratis desde $${FREE_SHIPPING_THRESHOLD} MXN de compra. En la zona metropolitana de Guadalajara puedes recoger por $${CASABLANCA_PRICE} en sucursales Casa Blanca.`,
+      },
+      {
+        q: "¿Y si necesito una medida mayor a 8 cm?",
+        a: "Escríbenos por WhatsApp con la medida y la cantidad y te cotizamos aparte.",
       },
     ],
   },

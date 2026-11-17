@@ -905,8 +905,8 @@ export const blogPostsEn: BlogPost[] = [
   },
   {
     slug: BLOG_SLUG_EN["stickers-personalizados-para-negocios-guadalajara"],
-    title: "Custom Stickers and Labels in Guadalajara",
-    metaTitle: "Custom Stickers in Guadalajara: How to Order",
+    title: "Custom Labels in Guadalajara (GDL): Stickers and Labels",
+    metaTitle: "Custom Labels Guadalajara (GDL) | Stickers & Labels",
     description:
       "Custom stickers and labels in Guadalajara for weddings and events: how to choose, what affects the price, and how to order with a digital proof.",
     category: "Guides",
@@ -7656,6 +7656,81 @@ export const blogPostsEn: BlogPost[] = [
       {
         q: "What should I keep when buying gifts for the team?",
         a: "According to Pluxee, the CFDI invoice, the payment receipt and proof of who received the gift. Confirm it with your accountant.",
+      },
+    ],
+  },
+  {
+    slug: BLOG_SLUG_EN["cuanto-cuesta-imprimir-stickers"],
+    title: "How Much Does It Cost to Print Custom Stickers",
+    metaTitle: "How Much to Print Stickers: Prices From $3",
+    description: "How much it costs to print custom stickers: from $3 per piece by size and quantity, 40-piece minimum, what changes the price and shipping cost.",
+    category: "Guides",
+    publishedAt: "2026-11-17",
+    modifiedAt: "2026-11-17",
+    intro:
+      "What printing stickers costs depends on three things: size, number of pieces and finish. Here are Yume's real prices, with a quantity table, examples and what does or doesn't change the total, so you know what you'll spend before ordering.",
+    sections: [
+      {
+        heading: "How much does it cost to print custom stickers?",
+        body: [
+          "Vinyl stickers start at $3.50 per piece and logo labels at $3, depending on size: small up to 4 cm, medium 5 to 6 cm and large 7 to 8 cm. The minimum is 40 pieces for vinyl and 50 for logo labels. They are sold per piece, not per sheet.",
+          "Price by quantity in each size:",
+        ],
+        table: {
+          ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
+        },
+      },
+      {
+        heading: "What the price of stickers depends on",
+        body: [
+          "Three things matter: the size of the sticker, how many pieces you order and the finish. The more you order, the lower the price per piece, as the table shows. Both cuts (die-cut and kiss-cut) and the matte and glossy finishes cost the same; holographic adds $0.50 per piece.",
+          "All of them have high-quality BOPP lamination and premium vinyl that resists water, sun and scratches, so you don't pay extra for that. To choose a cut, read [die-cut vs kiss-cut](/en/blog/die-cut-vs-kiss-cut-stickers).",
+        ],
+      },
+      {
+        heading: "Examples of what an order costs",
+        body: [
+          "With the price per piece the math is simple: 100 small vinyl stickers are $350 and 100 medium ones are $500, before shipping. If you choose the holographic finish, add $0.50 per piece.",
+          "If you need your business logo on labels, see [custom logo labels](/en/products/custom-logo-stickers), from 50 pieces. For a design, a character or your pet's photo, [custom vinyl stickers](/en/products/waterproof-vinyl-stickers) start at 40 pieces.",
+        ],
+      },
+      {
+        heading: "How much shipping costs",
+        body: [
+          `Home delivery across Mexico costs $${NATIONAL_SHIPPING_PRICE} MXN and is free on purchases of $${FREE_SHIPPING_THRESHOLD} MXN or more. If you are in the Guadalajara, Jalisco metro area, you can pick up your order for $${CASABLANCA_PRICE} at one of ${CASABLANCA_BRANCHES.length} Casa Blanca courier branches.`,
+          "Sizes over 8 cm or anything specific are not in the table: message us on WhatsApp with the size and quantity and we'll quote it separately.",
+        ],
+      },
+      {
+        heading: "How to know what your order will cost",
+        body: [
+          "Pick the size and quantity on the product page and the price is calculated instantly. Before printing you get a digital proof, normally within 24 hours of payment, with up to 2 rounds of changes. Nothing is produced until you approve it.",
+          "If you are still comparing options, read [where to print custom stickers in Mexico](/en/blog/where-to-print-custom-stickers-mexico) and the guide to [stickers and labels in Guadalajara](/en/blog/custom-stickers-for-businesses-guadalajara).",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
+    relatedBlogSlugs: [BLOG_SLUG_EN["donde-imprimir-stickers-personalizados-mexico"], BLOG_SLUG_EN["troquelado-vs-semitroquelado-stickers"], BLOG_SLUG_EN["stickers-personalizados-para-negocios-guadalajara"]],
+    faq: [
+      {
+        q: "How much does it cost to print 100 stickers?",
+        a: "100 small vinyl stickers (up to 4 cm) cost $350 and 100 medium ones (5 to 6 cm) cost $500, before shipping. The holographic finish adds $0.50 per piece.",
+      },
+      {
+        q: "What is the minimum order for stickers?",
+        a: "The minimum is 40 pieces for vinyl stickers and 50 for logo labels.",
+      },
+      {
+        q: "Do the cut or the finish change the price?",
+        a: "No. Die-cut and kiss-cut cost the same, and so do matte and glossy. Only holographic adds $0.50 per piece.",
+      },
+      {
+        q: "How much does shipping cost?",
+        a: `Shipping across Mexico costs $${NATIONAL_SHIPPING_PRICE} MXN and is free on purchases of $${FREE_SHIPPING_THRESHOLD} MXN or more. In the Guadalajara metro area you can pick up for $${CASABLANCA_PRICE} at Casa Blanca branches.`,
+      },
+      {
+        q: "What if I need a size over 8 cm?",
+        a: "Message us on WhatsApp with the size and quantity and we'll quote it separately.",
       },
     ],
   },

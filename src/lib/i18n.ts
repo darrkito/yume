@@ -38,6 +38,7 @@ export const BLOG_SLUG_EN: Record<string, string> = {
   "datos-obligatorios-receta-medica-mexico": "required-information-medical-prescription-mexico",
   "yume-vs-imprentas-online-stickers": "yume-vs-online-sticker-print-shops",
   "troquelado-vs-semitroquelado-stickers": "die-cut-vs-kiss-cut-stickers",
+  "cuanto-cuesta-imprimir-stickers": "how-much-does-it-cost-to-print-stickers",
   "cuanto-tarda-un-pedido-de-stickers-personalizados": "how-long-do-custom-stickers-take-to-arrive",
   "stickers-vinil-vs-papel-diferencias": "vinyl-vs-paper-stickers-differences",
   "menu-de-boda-personalizado": "custom-wedding-menus",

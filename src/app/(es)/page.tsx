@@ -148,6 +148,9 @@ export default function Home() {
         <Link href="/productos" className="mt-10 inline-flex min-h-11 items-center text-sm font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
           Elegir mi producto →
         </Link>
+        <Link href="/blog/cuanto-cuesta-imprimir-stickers" className="mt-2 flex min-h-11 w-fit items-center text-sm font-semibold text-brand transition-colors hover:text-brand-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand">
+          ¿Cuánto cuesta imprimir stickers? →
+        </Link>
       </section>
 
       {/* Featured product */}
