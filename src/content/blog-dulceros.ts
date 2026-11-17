@@ -1171,14 +1171,13 @@ export const dulceroPosts: BlogPost[] = [
   },
   {
     slug: "que-poner-en-un-dulcero",
-    title: "Tipos de dulces para dulceros: cuáles elegir por ocasión",
-    metaTitle: "Tipos de dulces para dulceros: cuáles elegir por ocasión",
-    description: "Tipos de dulces para dulceros según la ocasión: boda, XV años o bautizo. Qué elegir, cuántos poner por invitado y cómo combinar texturas y colores.",
+    title: "Qué poner en un dulcero: tipos de dulces por ocasión",
+    description: "Qué poner en un dulcero según la ocasión y la edad: tipos de dulces, cuántas piezas caben, cuántos por invitado y cómo acomodarlos.",
     category: "Guías",
     publishedAt: PUBLISHED,
     modifiedAt: "2026-11-17",
     intro:
-      "Un dulcero se ve completo con 8 a 12 piezas: un chocolate, una gomita o paleta, un dulce enchilado o ácido, un dulce tradicional mexicano y una botana chica, más un detalle que no sea dulce, como stickers. Abajo tienes los tipos de dulces para dulceros y cómo elegirlos según la ocasión, qué poner por edad, cuántas piezas caben según el tamaño, cuánto repartir por invitado en una mesa de dulces y cómo acomodarlo por altura y color.",
+      "Qué poner en un dulcero: un dulcero se ve completo con 8 a 12 piezas, entre un chocolate, una gomita o paleta, un dulce enchilado o ácido, un dulce tradicional mexicano y una botana chica, más un detalle que no sea dulce, como stickers. Abajo tienes los tipos de dulces para dulceros y cómo elegirlos según la ocasión, qué poner por edad, cuántas piezas caben según el tamaño, cuánto repartir por invitado en una mesa de dulces y cómo acomodarlo por altura y color.",
     sections: [
       {
         heading: "Qué poner en un dulcero y cuántos por invitado",
@@ -1313,6 +1312,13 @@ export const dulceroPosts: BlogPost[] = [
         ],
       },
       {
+        heading: "Qué poner en un dulcero para otras fiestas",
+        body: [
+          "Una mezcla de chocolate, gomita o paleta, algo enchilado o ácido, algo tradicional y una botana, más un detalle sin azúcar, es un buen punto de partida en cualquier fiesta. Ajusta después según la ocasión con las guías de abajo, que traen más ideas.",
+          "Para una fiesta de niños, mira los [dulceros para el Día del Niño](/blog/dulceros-para-dia-del-nino). Para fin de año, los [dulceros navideños](/blog/dulceros-navidenos-personalizados). En octubre, los [dulceros de Halloween](/blog/dulceros-de-halloween). Para una graduación, los [dulceros para graduación](/blog/dulceros-para-graduacion). Y para un evento de empresa, los [dulceros para eventos empresariales](/blog/dulceros-para-eventos-empresariales).",
+        ],
+      },
+      {
         heading: "Cuánto cuesta el dulcero y qué más puedes revisar",
         body: [
           `Primeras 100 piezas: $${dulceroUnit} MXN por dulcero personalizado, con pedido mínimo de 10 piezas. Llega armado y vacío, así que tú eliges qué lleva dentro. Arriba de 100 piezas es precio mayoreo: escríbenos por WhatsApp y te cotizamos. Antes de producir te enviamos una prueba digital para que apruebes el diseño.`,
@@ -1367,11 +1373,19 @@ export const dulceroPosts: BlogPost[] = [
       },
       {
         q: "¿Cuánto cuesta un dulcero personalizado?",
-        a: `Primeras 100 piezas: $${dulceroUnit} MXN por pieza, con pedido mínimo de 10. Arriba de 100 piezas es precio mayoreo y se cotiza por WhatsApp.`,
+        a: `Primeras 100 piezas: $${dulceroUnit} MXN por pieza, con pedido mínimo de 10. Arriba de 100 piezas es precio mayoreo y se cotiza por WhatsApp. Desde $${FREE_SHIPPING_THRESHOLD} el envío nacional es gratis.`,
+      },
+      {
+        q: "¿Qué incluye la personalización del dulcero?",
+        a: "El nombre (del festejado, del grupo o de tu empresa) y la temática que elijas, incluido el logo de tu marca. Te mandamos una prueba digital antes de producir.",
+      },
+      {
+        q: "¿Cuánto tardan en llegar los dulceros?",
+        a: `La producción toma de ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles después de aprobar la prueba, más ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días de envío nacional, o ${PICKUP_EXTRA_DAYS} día hábil si recoges en una sucursal Casa Blanca de Guadalajara.`,
       },
     ],
     relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["que-dulces-poner-en-dulcero-de-boda", "dulceros-para-xv-anos-elegantes", "dulceros-para-bautizo-y-primera-comunion", "ideas-de-dulceros-para-fiesta-infantil", "cajas-bolsas-o-vasos-dulceros-cual-elegir", "dulceros-personalizados-guadalajara"],
+    relatedBlogSlugs: ["que-dulces-poner-en-dulcero-de-boda", "dulceros-para-xv-anos-elegantes", "dulceros-para-bautizo-y-primera-comunion", "ideas-de-dulceros-para-fiesta-infantil", "cajas-bolsas-o-vasos-dulceros-cual-elegir", "dulceros-personalizados-guadalajara", "dulceros-para-dia-del-nino", "dulceros-para-graduacion"],
     sources: [
       { label: "Bodas.net: buffets de dulces para bodas", url: "https://www.bodas.net/articulos/buffets-de-dulces-para-bodas--c733" },
     ],
