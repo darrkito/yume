@@ -7201,6 +7201,100 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "what-candy-to-put-in-a-candy-box-by-occasion",
+    title: "What sweets to put in a candy box by occasion",
+    description:
+      "What sweets can you put in a candy box by occasion: ideas for weddings, quinceañeras, baby showers and baptisms, and how to keep a color line.",
+    category: "Guides",
+    publishedAt: "2026-11-17",
+    intro:
+      "A candy box looks its best when the filling matches the occasion and the event colors. Here are ideas for what sweets to put in a candy box at a wedding, a quinceañera, a baby shower or a baptism, how to present them and when to order a personalized one.",
+    sections: [
+      {
+        heading: "What sweets can you put in a candy box: the general rule",
+        body: [
+          "What you put in a candy box depends on the occasion, who receives it and the event colors. A mix of classic sweets and a few more elegant pieces works well, as long as they look striking and match the design. The candy box arrives empty, so you choose the filling.",
+          "A wedding guide from Spain suggests mixing classic sweets, such as gummies, marshmallows, mini donuts, bonbons, decorated cookies, cake pops or small brownies, with more elegant pieces, such as macarons, truffles or mini pastries. It also recommends choosing sweets that look striking, not just tasty. These are ideas meant for full candy tables.",
+          "For more ideas by age and party type, see [what to put in a party favor box](/en/blog/what-to-put-in-a-party-favor-box).",
+        ],
+      },
+      {
+        heading: "What sweets to put in a wedding candy box",
+        body: [
+          "For a wedding, go for a sober palette and sweets that look polished: macarons, truffles or mini pastries pair well with gummies or bonbons. This is an editorial recommendation from Yume, not a rule. Keep one style line, romantic, vintage or minimalist, and let the candy box design follow it.",
+          "For more ideas, see the [wedding candy dish](/en/blog/what-sweets-to-put-in-a-wedding-candy-dish) guide and [how many candy boxes](/en/blog/how-many-candy-boxes-to-order-for-a-wedding) to order.",
+        ],
+      },
+      {
+        heading: "What sweets to put in a quinceañera candy box",
+        body: [
+          "For a quinceañera, pick sweets that match the party color: decorated cookies, bonbons or truffles in the chosen palette. This is an editorial suggestion from Yume. What matters is that the filling and the candy box design look like part of the same event, not loose pieces.",
+          "Find more ideas in [elegant quinceañera candy boxes](/en/blog/elegant-quinceanera-candy-boxes).",
+        ],
+      },
+      {
+        heading: "What sweets to put in a baby shower candy box",
+        body: [
+          "At a baby shower, soft and colorful sweets work well, such as gummies, marshmallows or decorated cookies in the theme colors. This is an editorial recommendation from Yume. Let the candy box design carry the name of the guest of honor or the theme, so the filling and the packaging tell one story.",
+          "For more options, see [baby shower favors](/en/blog/personalized-baby-shower-favors).",
+        ],
+      },
+      {
+        heading: "What sweets to put in a baptism candy box",
+        body: [
+          "For a baptism, a simple and delicate line works well: decorated cookies, marshmallows or bonbons in light colors. This is an editorial suggestion from Yume, not a rule. If the candy box carries the baptized child's name, the detail becomes a keepsake of the celebration, as well as a gift for guests.",
+          "For more ideas, see [baptism favor boxes](/en/blog/baptism-and-first-communion-favor-boxes).",
+        ],
+      },
+      {
+        heading: "Labels, allergens and presentation",
+        body: [
+          "Label flavors and allergens, and mark any gluten-free, sugar-free or vegan options. According to a wedding guide from Spain, individual servings avoid queues and are considered more hygienic. A candy box per guest is already an individual serving, and if you also set up a table, tongs help.",
+        ],
+      },
+      {
+        heading: "How much candy to put per guest",
+        body: [
+          "As a reference, a wedding guide from Spain suggests 80 to 150 grams of sweets per person for a full candy table, depending on the size of the wedding. It is not a figure for a candy box, nor verified for Mexico. For your own candy box, build a test one and adjust the filling before buying everything.",
+          "If you are also planning a table, see the [wedding candy table](/en/blog/wedding-candy-table-custom-candy-boxes) guide.",
+        ],
+      },
+      {
+        heading: "How to order your personalized candy box",
+        body: [
+          "Yume candy boxes arrive assembled and empty, with the name of the person receiving it and the theme you choose, so you decide the filling. Before production we send a digital proof, and nothing is produced until you approve it. The minimum order is 10 pieces.",
+          "See our [personalized party favor boxes](/en/products/personalized-party-favor-boxes) or write to us from [contact](/en/contact) to get a quote for your event. If you organize events for other people, see the page for [planners](/en/planners).",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["dulceros-personalizados"],
+    relatedBlogSlugs: ["what-to-put-in-a-party-favor-box", "what-sweets-to-put-in-a-wedding-candy-dish", "elegant-quinceanera-candy-boxes", "personalized-baby-shower-favors", "baptism-and-first-communion-favor-boxes"],
+    sources: [
+      {
+        label: "Bodas.net: everything to know before setting up a candy bar (in Spanish)",
+        url: "https://www.bodas.net/articulos/todo-lo-que-debeis-saber-antes-de-montar-una-candy-bar--c2448",
+      },
+    ],
+    faq: [
+      {
+        q: "Do the candy boxes include candy?",
+        a: "No. The candy box arrives assembled and empty, ready to fill with the sweets you choose.",
+      },
+      {
+        q: "What does personalization include?",
+        a: "The name of the person receiving it and the theme you choose. We send a digital proof before production.",
+      },
+      {
+        q: "What sweets can I put in a wedding candy box?",
+        a: "A mix of classic sweets, such as gummies or bonbons, with a more elegant piece, such as macarons or truffles, within one style line. This is an editorial recommendation from Yume.",
+      },
+      {
+        q: "What sweets work best for a quinceañera, baby shower or baptism?",
+        a: "For a quinceañera, decorated cookies, bonbons or truffles in the party palette. For a baby shower, gummies, marshmallows or decorated cookies in the theme colors. For a baptism, decorated cookies, marshmallows or bonbons in light colors. These are editorial suggestions from Yume.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPostEn(slug: string) {

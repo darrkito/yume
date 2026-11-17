@@ -7454,6 +7454,100 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "que-dulces-le-puedo-poner-a-un-dulcero",
+    title: "Qué dulces le puedo poner a un dulcero según la ocasión",
+    description:
+      "Qué dulces le puedo poner a un dulcero según la ocasión: ideas para boda, XV años, baby shower y bautizo, y cómo mantener una línea de color.",
+    category: "Guías",
+    publishedAt: "2026-11-17",
+    intro:
+      "Un dulcero se ve bien cuando el relleno combina con la ocasión y con los colores del evento. Aquí tienes ideas de qué dulces ponerle a un dulcero en una boda, unos XV años, un baby shower o un bautizo, cómo presentarlos y cuándo pedir uno personalizado.",
+    sections: [
+      {
+        heading: "Qué dulces le puedo poner a un dulcero: la regla general",
+        body: [
+          "Lo que le pongas a un dulcero depende de la ocasión, de quién lo recibe y de los colores del evento. Una mezcla de dulces clásicos y alguna pieza más elegante funciona bien, siempre que se vean vistosos y combinen con el diseño. El dulcero llega vacío, así que tú decides el relleno.",
+          "Una guía de bodas de España sugiere mezclar dulces clásicos, como gomitas, nubes, mini donuts, bombones, galletas decoradas, cake pops o brownies pequeños, con piezas más elegantes, como macarons, trufas o pastelitos mini. También recomienda elegir dulces vistosos, no solo ricos. Son ideas pensadas para mesas de dulces completas.",
+          "Para ver más ideas por edad y tipo de fiesta, revisa [qué poner en un dulcero](/blog/que-poner-en-un-dulcero).",
+        ],
+      },
+      {
+        heading: "Qué dulces poner en un dulcero de boda",
+        body: [
+          "Para boda, apuesta por una paleta sobria y dulces que se vean cuidados: macarons, trufas o pastelitos mini conviven bien con gomitas o bombones. Es una recomendación editorial de Yume, no una norma. Mantén una sola línea de estilo, romántica, vintage o minimalista, y que el diseño del dulcero la siga.",
+          "Si quieres más ideas, revisa el [dulcero de boda](/blog/que-dulces-poner-en-dulcero-de-boda) y [cuántos dulceros pedir](/blog/cuantos-dulceros-pedir-para-una-boda).",
+        ],
+      },
+      {
+        heading: "Qué dulces poner en un dulcero de XV años",
+        body: [
+          "Para XV años puedes ir por dulces que combinen con el color de la fiesta: galletas decoradas, bombones o trufas en la paleta elegida. Es una sugerencia editorial de Yume. Lo importante es que el relleno y el diseño del dulcero se vean como parte del mismo evento, no como piezas sueltas.",
+          "Encuentra más ideas en [dulceros para XV años](/blog/dulceros-para-xv-anos-elegantes).",
+        ],
+      },
+      {
+        heading: "Qué dulces poner en un dulcero de baby shower",
+        body: [
+          "En un baby shower funcionan los dulces suaves y coloridos, como gomitas, nubes o galletas decoradas, en los tonos de la temática. Es una recomendación editorial de Yume. Conviene que cada dulce se distinga fácil y que el diseño lleve el nombre del festejado o la temática.",
+          "Si buscas más opciones, mira los [recuerdos de baby shower](/blog/recuerdos-baby-shower-personalizados).",
+        ],
+      },
+      {
+        heading: "Qué dulces poner en un dulcero de bautizo",
+        body: [
+          "Para un bautizo conviene una línea sencilla y delicada: galletas decoradas, nubes o bombones en colores claros. Es una sugerencia editorial de Yume, no una regla. Si el dulcero lleva el nombre del bautizado, el detalle se vuelve un recuerdo de la celebración, además de un obsequio para los invitados.",
+          "Para más ideas, revisa los [dulceros para bautizo](/blog/dulceros-para-bautizo-y-primera-comunion).",
+        ],
+      },
+      {
+        heading: "Etiquetas, alérgenos y presentación",
+        body: [
+          "Conviene etiquetar sabores y alérgenos, y señalar si hay opciones sin gluten, sin azúcar o veganas. Según una guía de bodas de España, las presentaciones individuales evitan colas y se consideran más higiénicas. Un dulcero por invitado ya es una presentación individual, y si además hay mesa, ayudan las pinzas.",
+        ],
+      },
+      {
+        heading: "Cuánto dulce poner por invitado",
+        body: [
+          "Como referencia, una guía de bodas de España calcula entre 80 y 150 gramos de golosinas por persona en una mesa de dulces completa, según el tamaño de la boda. No es una cifra para un dulcero ni está comprobada en México. Para tu dulcero, arma uno de prueba y ajusta el relleno antes de comprar todo.",
+          "Si además armarás una mesa, revisa la guía de [mesa de dulces para boda](/blog/mesa-de-dulces-para-boda).",
+        ],
+      },
+      {
+        heading: "Cómo pedir tu dulcero personalizado",
+        body: [
+          "El dulcero de Yume llega armado y vacío, con el nombre de quien lo recibe y la temática que elijas, para que tú decidas el relleno. Antes de producir te enviamos una prueba digital, y nada se produce hasta que la apruebas. El pedido mínimo es de 10 piezas.",
+          "Conoce nuestros [dulceros personalizados](/productos/dulceros-personalizados) o escríbenos desde [contacto](/contacto) para cotizar tu evento. Si organizas eventos para otras personas, revisa la página de [planners](/planners).",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["dulceros-personalizados"],
+    relatedBlogSlugs: ["que-poner-en-un-dulcero", "que-dulces-poner-en-dulcero-de-boda", "dulceros-para-xv-anos-elegantes", "recuerdos-baby-shower-personalizados", "dulceros-para-bautizo-y-primera-comunion"],
+    sources: [
+      {
+        label: "Bodas.net: todo lo que debéis saber antes de montar una candy bar",
+        url: "https://www.bodas.net/articulos/todo-lo-que-debeis-saber-antes-de-montar-una-candy-bar--c2448",
+      },
+    ],
+    faq: [
+      {
+        q: "¿Los dulceros incluyen dulces?",
+        a: "No. El dulcero llega armado y vacío, listo para llenar con los dulces que tú elijas.",
+      },
+      {
+        q: "¿Qué incluye la personalización?",
+        a: "El nombre de quien lo recibe y la temática que elijas. Te enviamos una prueba digital antes de producir.",
+      },
+      {
+        q: "¿Qué dulces le puedo poner a un dulcero de boda?",
+        a: "Una mezcla de dulces clásicos, como gomitas o bombones, con alguna pieza más elegante, como macarons o trufas, dentro de una sola línea de estilo. Es una recomendación editorial de Yume.",
+      },
+      {
+        q: "¿Qué dulces van mejor en XV años, baby shower o bautizo?",
+        a: "Para XV años, galletas decoradas, bombones o trufas en la paleta de la fiesta. Para baby shower, gomitas, nubes o galletas decoradas en los tonos de la temática. Para bautizo, galletas decoradas, nubes o bombones en colores claros. Son sugerencias editoriales de Yume.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string) {
