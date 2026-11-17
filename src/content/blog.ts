@@ -4507,15 +4507,15 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "etiquetas-navidenas-personalizadas",
-    title: "Etiquetas navideñas personalizadas para regalos y botellas",
-    metaTitle: "Etiquetas navideñas personalizadas: PDF gratis o vinil",
+    title: "Etiquetas para posada y fin de año personalizadas",
+    metaTitle: "Etiquetas para posada y navideñas: PDF gratis o vinil",
     description:
-      "Etiquetas navideñas personalizadas en vinil para regalos, botellas y empaques, o descarga gratis el PDF para imprimir. Hechas en Guadalajara.",
+      "Etiquetas para posada y fin de año: qué pedir para aguinaldos, bebidas e intercambio, con prueba digital y fechas. Vinil o PDF gratis.",
     category: "Guías",
     publishedAt: "2026-10-19",
-    modifiedAt: "2026-11-12",
+    modifiedAt: "2026-11-17",
     intro:
-      "Una etiqueta navideña con el nombre de la familia, un mensaje o el logo de tu negocio convierte cualquier regalo, botella o bolsita de aguinaldo en algo hecho especialmente para quien lo recibe. Las etiquetas navideñas personalizadas de Yume se hacen en vinil, con tu diseño y en la forma que quieras. Aquí va qué se les pone, en qué se usan, qué material elegir, cuánto cuestan y hasta cuándo conviene pedirlas para que lleguen antes de Navidad.",
+      "Una posada tiene varios momentos que piden un detalle con nombre: el aguinaldo, la mesa de bebidas, el intercambio y el recuerdo del invitado. Las etiquetas para posada de Yume se hacen en vinil, con tu diseño y en la forma que quieras, para la familia, la escuela o la empresa. Aquí va qué etiqueta va en cada momento, qué material elegir, cuánto cuestan y cuándo pedirlas para que lleguen a tiempo.",
     sections: [
       {
         heading: "Qué llevan las etiquetas navideñas personalizadas",
@@ -4534,10 +4534,28 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "Etiquetas navideñas para posadas y cenas con invitados",
+        heading: "Etiquetas para posada: cuál va en cada momento",
         body: [
-          "Para una posada o una cena con invitados, las etiquetas navideñas personalizadas llevan el nombre de cada persona en su regalo o en su copa, y el mismo diseño une toda la mesa. Si es un evento de empresa, suma tu logo y un mensaje de temporada.",
-          "Si organizas la posada de tu empresa, revisa los [detalles para posada de empresa](/blog/detalles-posada-empresa-personalizados). Si eres planner y organizas varios eventos, te preparamos las piezas de cada evento con prueba digital y trato directo por WhatsApp.",
+          "En una posada hay cuatro momentos naturales para una etiqueta: la bolsita de aguinaldo, la mesa de bebidas, el regalo del intercambio y el recuerdo que se lleva cada invitado. Con el mismo diseño y un texto distinto en cada una, toda la posada se ve planeada.",
+          "Según la guía de posadas de Pluxee, los aguinaldos suelen ser bolsitas con dulces, cacahuates, mandarinas, tejocotes o fruta, y la fiesta suma piñata, ponche, tamales, pozole, juegos e intercambio de regalos. Varios de esos elementos admiten su propia etiqueta.",
+          "Si en lugar de una fiesta grande haces una cena con invitados, el nombre de cada persona en su copa o en su regalo, con un mismo diseño en toda la mesa, logra el mismo efecto.",
+        ],
+        table: {
+          headers: ["Momento", "Qué lleva la etiqueta", "Ejemplo de texto"],
+          rows: [
+            ["Aguinaldo", "Nombre del invitado y un mensaje corto", "“Feliz posada, Ana”"],
+            ["Mesa de bebidas", "Nombre de la bebida o de la familia", "“Ponche de la familia López”"],
+            ["Intercambio", "Para y De", "“Para: Luis. De: Marta”"],
+            ["Recuerdo", "Nombre y evento", "“Posada, familia López”"],
+          ],
+        },
+      },
+      {
+        heading: "Etiquetas para posada de empresa o de planner",
+        body: [
+          "Para una posada de empresa o de un evento que organiza una planner, la etiqueta lleva el nombre de la empresa, el nombre del evento y, si quieres, el de cada colaborador o invitado. Así cada regalo, bolsa y botella se identifica y el evento se ve cuidado de principio a fin.",
+          "Runa HR señala que la posada y los regalos a empleados pueden ser deducibles como previsión social, y que los regalos y eventos para clientes también pueden serlo. Eso no significa que aplique de forma automática a las etiquetas: consulta a tu contador antes de decidir.",
+          "Para ideas de regalos de empresa, revisa los [detalles para posada de empresa](/blog/detalles-posada-empresa-personalizados). Si organizas varios eventos, mira la [guía para planners](/blog/guia-planners-proveedor-detalles-personalizados) y cómo funciona la [prueba digital de eventos](/blog/prueba-digital-pedido-evento-planners).",
         ],
       },
       {
@@ -4566,15 +4584,23 @@ export const blogPosts: BlogPost[] = [
         },
       },
       {
-        heading: "Hasta cuándo pedirlas para que lleguen antes de Navidad",
+        heading: "Cómo pedir las etiquetas de tu posada por WhatsApp",
         body: [
+          "Para pedir las etiquetas de tu posada, escríbenos por WhatsApp con la fecha del evento, los momentos en que usarás etiquetas (aguinaldo, bebidas, intercambio o recuerdo) y el texto de cada una. Con eso preparamos la prueba digital de cada etiqueta antes de producir.",
+          "Si tu posada es de empresa, dinos el nombre de la empresa y del evento; si eres planner, el de cada cliente. Si también necesitas dulceros para los aguinaldos, puedes pedir todo junto desde la ficha de [dulceros personalizados](/productos/dulceros-personalizados).",
+        ],
+      },
+      {
+        heading: "Cuándo pedir tus etiquetas para posada antes de Navidad",
+        body: [
+          "Las posadas tradicionales van del 16 al 24 de diciembre, pero hoy muchas familias, escuelas y empresas hacen una sola en el mes. Por eso cuenta hacia atrás desde la fecha de tu evento, no desde el 16: resta el envío, la producción y la prueba digital.",
           `La prueba digital llega normalmente en un máximo de 24 horas después del pago. Desde que la apruebas, el pedido tarda ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles en llegar a tu domicilio en cualquier parte de México, o ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles si lo recoges en una sucursal Casa Blanca en Guadalajara.`,
-          "Con esos tiempos, cuenta hacia atrás desde la fecha en que necesitas las etiquetas y suma los días de la prueba digital. Si también vas a regalar dulceros, puedes pedir todo junto. Para entender cada etapa, revisa [cuánto tarda un pedido](/blog/cuanto-tarda-un-pedido-de-stickers-personalizados).",
+          "Para entender cada etapa, revisa [cuánto tarda un pedido](/blog/cuanto-tarda-un-pedido-de-stickers-personalizados).",
         ],
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
-    relatedBlogSlugs: ["dulceros-navidenos-personalizados", "detalles-posada-empresa-personalizados", "stickers-para-empaques-de-negocio", "cuanto-tarda-un-pedido-de-stickers-personalizados", "troquelado-vs-semitroquelado-stickers", "buen-fin-2026-stickers-y-dulceros-personalizados"],
+    relatedBlogSlugs: ["dulceros-navidenos-personalizados", "detalles-posada-empresa-personalizados", "guia-planners-proveedor-detalles-personalizados", "prueba-digital-pedido-evento-planners", "stickers-para-empaques-de-negocio", "cuanto-tarda-un-pedido-de-stickers-personalizados", "troquelado-vs-semitroquelado-stickers", "buen-fin-2026-stickers-y-dulceros-personalizados"],
     faq: [
       {
         q: "¿Cuánto cuestan las etiquetas navideñas personalizadas?",
@@ -4608,6 +4634,18 @@ export const blogPosts: BlogPost[] = [
         q: "¿Hay envío gratis o recolección en Guadalajara?",
         a: `Desde $${FREE_SHIPPING_THRESHOLD} de compra el envío nacional es gratis. Si estás en la zona metropolitana de Guadalajara, puedes recoger por $${CASABLANCA_PRICE} en cualquiera de las ${CASABLANCA_BRANCHES.length} sucursales de paquetería Casa Blanca.`,
       },
+      {
+        q: "¿En qué fechas se hacen las posadas?",
+        a: "Según Pluxee, las posadas tradicionales van del 16 al 24 de diciembre, nueve noches. Hoy muchas familias, escuelas y empresas hacen una sola posada en diciembre.",
+      },
+      {
+        q: "¿Puedo pedir etiquetas para la posada de mi empresa con el nombre de cada colaborador?",
+        a: "Sí. Puedes sumar el nombre de la empresa, el del evento y el de cada persona, y te mandamos una prueba digital antes de imprimir. Escríbenos por WhatsApp con los detalles de tu evento.",
+      },
+    ],
+    sources: [
+      { label: "Pluxee México: cómo organizar una posada navideña", url: "https://www.pluxee.mx/blog/posada-navidena/" },
+      { label: "Runa HR: ¿puedo deducir los gastos de la posada y los regalos de mi empresa?", url: "https://runahr.com/mx/hr-management/puedo-deducir-los-gastos-de-la-posada-y-los-regalos-de-mi-empresa/" },
     ],
     download: { href: "/descargas/etiquetas-navidenas-para-imprimir.pdf", label: "Descarga gratis: etiquetas navideñas para imprimir (PDF, color y blanco y negro)" },
   },
