@@ -100,6 +100,7 @@ export const BLOG_SLUG_EN: Record<string, string> = {
   "que-dulces-le-puedo-poner-a-un-dulcero": "what-candy-to-put-in-a-candy-box-by-occasion",
   "detalles-personalizados-intercambio-navideno": "custom-details-for-christmas-gift-exchange",
   "detalles-souvenirs-fiesta-ano-nuevo": "personalized-new-years-eve-party-favors",
+  "etiquetas-stickers-regalos-reyes-magos-rosca": "three-kings-gift-labels-stickers-rosca",
 };
 
 export const PRODUCT_SLUG_ES: Record<string, string> = Object.fromEntries(

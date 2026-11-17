@@ -7739,6 +7739,84 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "etiquetas-stickers-regalos-reyes-magos-rosca",
+    title: "Etiquetas Reyes Magos para regalos y rosca",
+    description:
+      "Etiquetas Reyes Magos para regalos y rosca: qué poner, cómo elegir tamaño y acabado, ideas para la Candelaria y cuándo pedirlas con prueba digital.",
+    category: "Guías",
+    publishedAt: "2026-11-17",
+    intro:
+      "Enero llega con la rosca, los regalos de Reyes y, semanas después, la Candelaria. Una etiqueta o un sticker con nombre y mensaje convierte un regalo cualquiera en un detalle que se ve planeado. Aquí tienes qué poner en las etiquetas Reyes Magos para regalos y para la rosca, cómo elegir tamaño y acabado, y en qué orden pedirlas.",
+    sections: [
+      {
+        heading: "Etiquetas Reyes Magos para regalos: qué poner en ellas",
+        body: [
+          "Una etiqueta de Reyes Magos funciona mejor cuando lleva el nombre de quien recibe el regalo y un mensaje corto, como «De parte de los Reyes» o una frase de la familia. Con esos dos datos el regalo se ve pensado, sin saturar el diseño ni competir con el papel.",
+        ],
+      },
+      {
+        heading: "Dos momentos para usarlas: la rosca del 6 de enero y la Candelaria",
+        body: [
+          "En México la rosca se parte el 6 de enero, Día de Reyes, y la Candelaria es el 2 de febrero. Quien encuentra el muñeco se vuelve padrino o madrina del Niño y organiza la comida de tamales. Eso te da dos momentos para usar etiquetas.",
+          "Según Chilango, el muñeco representa al Niño Jesús, escondido de Herodes por María y José. La tradición mezcla costumbres españolas con otras prehispánicas, así que conviene un diseño sobrio y respetuoso.",
+        ],
+      },
+      {
+        heading: "Quién las usa: familias, planners, posadas y empresas",
+        body: [
+          "Las etiquetas de Reyes sirven a familias que quieren regalos bien presentados, a planners que preparan un evento de enero y a empresas que mandan rosca o regalos a clientes y equipo. Cada caso pide un mensaje distinto, pero comparten la misma lógica: nombre, mensaje y un diseño sencillo.",
+          "Si trabajas con clientes, revisa los [detalles para eventos con clientes](/blog/detalles-evento-con-clientes-personalizados) y la página de [planners](/planners). Para equipos de trabajo, la guía de [posadas de empresa](/blog/detalles-posada-empresa-personalizados) también aplica en enero.",
+        ],
+      },
+      {
+        heading: "Tamaño, corte y acabado: cómo elegir tu sticker",
+        body: [
+          "En los stickers de vinil eliges tamaño, corte y acabado. Hay tres tamaños, chico hasta 4 cm, mediano de 5 a 6 cm y grande de 7 a 8 cm; el corte es troquelado o semitroquelado; y el acabado, mate, brillante u holográfico.",
+          "Los [stickers de vinil personalizados](/productos/stickers-vinil-impermeable) son resistentes al agua, al sol y a rayones, y el pedido mínimo es de 40 piezas. Si el regalo es de tu negocio, existen los [stickers con tu logo](/productos/stickers-logo-personalizado). Para decidir el corte, lee [troquelado o semitroquelado](/blog/troquelado-vs-semitroquelado-stickers).",
+        ],
+      },
+      {
+        heading: "Qué te da un pedido personalizado frente a un sticker genérico",
+        body: [
+          "Los resultados de búsqueda para estas etiquetas muestran packs genéricos de stickers de Reyes, por ejemplo con coronas. En Yume el diseño lleva tu nombre y tu mensaje, te enviamos una prueba digital antes de imprimir y nada se produce hasta que la apruebas.",
+          "Si tu idea es para un evento o un regalo de empresa, escríbenos por WhatsApp y te cotizamos. Los precios y las cantidades los ves en la ficha de cada producto.",
+        ],
+      },
+      {
+        heading: "Cuándo pedir tus etiquetas para llegar a enero",
+        body: [
+          "Antes de imprimir recibes una prueba digital y nada se produce hasta que la apruebas. Los días exactos están en la [guía de tiempos de stickers](/blog/cuanto-tarda-un-pedido-de-stickers-personalizados), y el Día de Reyes es el 6 de enero, así que conviene empezar pronto.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
+    relatedBlogSlugs: ["etiquetas-navidenas-personalizadas", "detalles-posada-empresa-personalizados", "troquelado-vs-semitroquelado-stickers", "cuanto-tarda-un-pedido-de-stickers-personalizados"],
+    sources: [
+      {
+        label: "Chilango: Rosca de Reyes, por qué hay que poner los tamales el 2 de febrero si te sale el niño",
+        url: "https://www.chilango.com/noticias/rosca-de-reyes-por-que-hay-que-poner-los-tamales-el-2-de-febrero-si-te-sale-el-nino/",
+      },
+    ],
+    faq: [
+      {
+        q: "¿Qué representa el muñeco de la rosca?",
+        a: "Según Chilango, representa al Niño Jesús, escondido de Herodes por María y José.",
+      },
+      {
+        q: "¿Los stickers de vinil resisten el agua y el sol?",
+        a: "Sí, el vinil de nuestros stickers es resistente al agua, al sol y a rayones.",
+      },
+      {
+        q: "¿Cuál es el pedido mínimo de stickers de vinil?",
+        a: "El mínimo es de 40 piezas.",
+      },
+      {
+        q: "¿Puedo pedir una medida especial?",
+        a: "Sí. Si necesitas algo más grande o específico, escríbenos por WhatsApp y lo cotizamos.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string) {

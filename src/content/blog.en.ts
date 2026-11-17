@@ -7448,6 +7448,84 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "three-kings-gift-labels-stickers-rosca",
+    title: "Three Kings gift labels and stickers for the rosca",
+    description:
+      "Three Kings gift labels and rosca stickers: what to print, how to pick size and finish, ideas for Candlemas and how to order with a digital proof.",
+    category: "Guides",
+    publishedAt: "2026-11-17",
+    intro:
+      "January brings the rosca, the Three Kings gifts and, a few weeks later, Candlemas. A label or sticker with a name and a message turns an ordinary gift into a detail that looks planned. Here is what to put on Three Kings gift labels and rosca stickers, how to pick size and finish, and the order in which to request them.",
+    sections: [
+      {
+        heading: "Three Kings gift labels: what to put on them",
+        body: [
+          "A Three Kings label works best when it carries the recipient's name and a short message, such as «From the Three Kings» or a family line. With those two details the gift looks thought out, without crowding the design or competing with the wrapping.",
+        ],
+      },
+      {
+        heading: "Two moments to use them: the January 6 rosca and Candlemas",
+        body: [
+          "In Mexico the rosca is shared on January 6, Three Kings Day, and Candlemas is on February 2. Whoever finds the figurine becomes godfather or godmother of the Child and organizes the tamales meal. That gives you two moments to use labels.",
+          "According to Chilango, the figurine represents the Baby Jesus, hidden from Herod by Mary and Joseph. The tradition blends Spanish customs with pre-Hispanic ones, so a sober, respectful design fits best.",
+        ],
+      },
+      {
+        heading: "Who uses them: families, planners, posadas and companies",
+        body: [
+          "Three Kings labels suit families who want well presented gifts, planners preparing a January event and companies sending rosca or gifts to clients and teams. Each case needs a different message, but they share the same logic: a name, a message and a simple design.",
+          "If you work with clients, see the [custom details for client events](/en/blog/custom-details-for-client-events) and the [planners](/en/planners) page. For teams, the [company posada favors](/en/blog/personalized-company-posada-favors) guide also applies in January.",
+        ],
+      },
+      {
+        heading: "Size, cut and finish: how to choose your sticker",
+        body: [
+          "With vinyl stickers you choose size, cut and finish. There are three sizes: small up to 4 cm, medium 5 to 6 cm and large 7 to 8 cm. The cut is die cut or kiss cut, and the finish is matte, glossy or holographic.",
+          "[Custom vinyl stickers](/en/products/waterproof-vinyl-stickers) are resistant to water, sun and scratches, and the minimum order is 40 pieces. If the gift comes from your business, there are [stickers with your logo](/en/products/custom-logo-stickers). To decide the cut, read [die cut vs kiss cut](/en/blog/die-cut-vs-kiss-cut-stickers).",
+        ],
+      },
+      {
+        heading: "What a custom order gives you over a generic sticker",
+        body: [
+          "Search results for these labels show generic Three Kings sticker packs, for example with crowns on them. At Yume the design carries your name and message, we send a digital proof before printing and nothing is produced until you approve it.",
+          "If your idea is for an event or a company gift, message us on WhatsApp and we will quote it. Prices and quantities are on each product page.",
+        ],
+      },
+      {
+        heading: "When to order your labels to arrive for January",
+        body: [
+          "Before printing you receive a digital proof of your labels with your name and message, and nothing is produced until you approve it. Exact days are in the [sticker timing guide](/en/blog/how-long-do-custom-stickers-take-to-arrive), and Three Kings Day is January 6, so it pays to start early.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
+    relatedBlogSlugs: ["custom-christmas-labels", "personalized-company-posada-favors", "die-cut-vs-kiss-cut-stickers", "how-long-do-custom-stickers-take-to-arrive"],
+    sources: [
+      {
+        label: "Chilango: Rosca de Reyes, why you put out tamales on February 2 if you find the baby",
+        url: "https://www.chilango.com/noticias/rosca-de-reyes-por-que-hay-que-poner-los-tamales-el-2-de-febrero-si-te-sale-el-nino/",
+      },
+    ],
+    faq: [
+      {
+        q: "What does the figurine in the rosca represent?",
+        a: "According to Chilango, it represents the Baby Jesus, hidden from Herod by Mary and Joseph.",
+      },
+      {
+        q: "Do vinyl stickers resist water and sun?",
+        a: "Yes, our sticker vinyl is resistant to water, sun and scratches.",
+      },
+      {
+        q: "What is the minimum order for vinyl stickers?",
+        a: "The minimum is 40 pieces.",
+      },
+      {
+        q: "Can I ask for a special size?",
+        a: "Yes. If you need something larger or more specific, message us on WhatsApp and we will quote it.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPostEn(slug: string) {
