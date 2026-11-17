@@ -7370,6 +7370,84 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "personalized-new-years-eve-party-favors",
+    title: "Personalized New Year's Eve Party Favor Ideas",
+    description:
+      "New Year's Eve party favor ideas: grapes, candles, lentils and toasts turned into personalized details for your guests.",
+    category: "Guides",
+    publishedAt: "2026-11-17",
+    intro:
+      "Year-end parties already come with their own rituals: the 12 grapes, colored candles and lentils. This guide shows you how to turn them into personalized favors for your guests, what Yume can do for each one and how to order.",
+    sections: [
+      {
+        heading: "Year-end party favor ideas from Mexican midnight rituals",
+        body: [
+          "The best year-end party favors turn a midnight ritual into a detail with a name on it: a bag for the 12 grapes, a candle with a wish, lentils in a small bag or a toast box. That way each guest takes home something useful that same night.",
+          "The rituals repeated most in Mexico are the 12 grapes, colored candles, lentils and other seeds, suitcases to attract travel, abundance sheep with a red ribbon and colored underwear. They are popular beliefs, not rules: use them as the theme of the favor, not as a promise.",
+        ],
+      },
+      {
+        heading: "A bag of 12 grapes: the easiest favor to personalize",
+        body: [
+          "The 12 grapes, one per chime, are the easiest ritual to turn into a favor: each grape stands for a month and a wish. You buy the grapes and hand out 12 per guest, inside a box with their name or in a small bag with a sticker in your party design.",
+          "A design can show the twelve months or a short phrase for each month, in your party colors. If you turn it into a sticker, [vinyl stickers](/en/products/waterproof-vinyl-stickers) work for any design, not just logos.",
+        ],
+      },
+      {
+        heading: "Candles, lentils and resolutions: more favors for guests",
+        body: [
+          "Besides the grapes, you can put together three more details: a candle with a wish, lentils in a small bag and a purpose phrase on a sticker. You buy the candles and lentils; with Yume you personalize the vinyl sticker design with your theme, a name or the new year. Message us on WhatsApp for a quote.",
+          "Colored candles have popular meanings: according to Grupo Animal, yellow is linked to financial abundance, red to love, blue to harmony, orange to success and white to peace. Use them as the color palette of the design. Some families also give small bags of raw lentils, so a sticker with your theme fits well.",
+        ],
+      },
+      {
+        heading: "A toast box: one favor per guest",
+        body: [
+          "The toast box brings everything into one favor: a personalized party favor box with the guest's name and a New Year theme. It arrives assembled and empty, so you choose what goes inside, such as candy or a small extra. It is a lunch box style, with a handle.",
+          "If you are not sure what to put in, read the guide on [what to put in a party favor box](/en/blog/what-to-put-in-a-party-favor-box). The price per piece and the minimum order are on the page for [personalized party favor boxes](/en/products/personalized-party-favor-boxes). If you want your brand logo in the design, it can be included too.",
+        ],
+      },
+      {
+        heading: "Who it is for: home parties, planners and companies",
+        body: [
+          "This kind of favor works in three cases: a party at home, an event run by a planner and a company year-end celebration. In all three, the personalized detail is decided ahead of time, because it is designed first and produced afterward.",
+          "If you organize events for other people, see the [guide for planners](/en/blog/guide-for-planners-working-with-custom-favors-supplier) and how to work out [how many favors to order](/en/blog/how-many-party-favors-to-order-per-event). If it is your company's year-end celebration, the guide to [company posada favors](/en/blog/personalized-company-posada-favors) applies too. For a home party, a name, a theme and colors are enough.",
+        ],
+      },
+      {
+        heading: "How to order your year-end party favors",
+        body: [
+          "To order your year-end favors, message us on WhatsApp with the number of guests, the theme and the colors. We send a digital proof before producing, and nothing is produced until you approve it. Current prices and timing are on each product page.",
+          "You can send us a photo of the invitation or the decoration and we adapt the design to those colors. Here is how the [digital proof for event orders](/en/blog/digital-proof-event-order-planners) works.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["personalized-company-posada-favors", "how-many-party-favors-to-order-per-event", "what-to-put-in-a-party-favor-box", "guide-for-planners-working-with-custom-favors-supplier"],
+    sources: [
+      { label: "Grupo Animal: New Year rituals and their meaning (in Spanish)", url: "https://grupoanimal.mx/estilo-de-vida/rituales-para-ano-nuevo-2022-significado" },
+      { label: "Chilango: why 12 grapes are eaten on New Year's (in Spanish)", url: "https://www.chilango.com/noticias/por-que-se-comen-12-uvas-en-ano-nuevo-origen-de-esta-tradicion/" },
+    ],
+    faq: [
+      {
+        q: "Do the favor boxes include grapes, candles or lentils?",
+        a: "No. The box arrives assembled and empty, ready to fill with whatever you choose.",
+      },
+      {
+        q: "Do New Year rituals work?",
+        a: "They are popular beliefs and the sources do not agree on every detail. Yume does not promise results: we use them as a theme to design the favor.",
+      },
+      {
+        q: "Are the 12 grapes a Mexican tradition by origin?",
+        a: "No, they come from Spain. According to Chilango, in 1909 there was a big harvest and producers sold lucky grapes in packs of 12. In Mexico people eat one grape per chime, and each one is a month and a wish.",
+      },
+      {
+        q: "Can I put my logo on the favor box?",
+        a: "Yes. Personalization includes the name, the theme you choose and your brand logo.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPostEn(slug: string) {

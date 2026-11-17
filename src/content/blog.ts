@@ -7661,6 +7661,84 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "detalles-souvenirs-fiesta-ano-nuevo",
+    title: "Ideas de souvenirs de fin de año personalizados",
+    description:
+      "Ideas de souvenirs de fin de año para Año Nuevo: uvas, velas, lentejas y brindis convertidos en detalles personalizados para tus invitados.",
+    category: "Guías",
+    publishedAt: "2026-11-17",
+    intro:
+      "Las fiestas de fin de año ya traen sus propios rituales: las 12 uvas, las velas de colores y las lentejas. Esta guía te muestra cómo convertirlos en detalles personalizados para tus invitados, qué puede hacer Yume en cada uno y cómo pedirlos.",
+    sections: [
+      {
+        heading: "Ideas de souvenirs de fin de año con rituales de la noche",
+        body: [
+          "Los mejores souvenirs de fin de año son los que convierten un ritual de la noche en un detalle con nombre: una bolsita para las 12 uvas, una vela con un deseo, lentejas en bolsita o una caja de brindis. Así el invitado se lleva algo útil esa misma noche.",
+          "Los rituales que más se repiten en México son las 12 uvas, las velas de colores, las lentejas y otras semillas, las maletas para atraer viajes, los borregos de la abundancia con listón rojo y la ropa interior de colores. Son creencias populares, no reglas: úsalas como tema del detalle, no como promesa.",
+        ],
+      },
+      {
+        heading: "Bolsita de 12 uvas: el detalle más fácil de personalizar",
+        body: [
+          "Las 12 uvas, una por campanada, son el ritual más fácil de convertir en detalle: cada uva representa un mes y un deseo. Tú compras las uvas y las repartes, 12 por invitado, dentro de un dulcero con su nombre, o en una bolsita con un sticker del diseño de tu fiesta.",
+          "Un diseño puede llevar los doce meses o una frase corta por mes, en los colores de tu fiesta. Si lo conviertes en sticker, los [stickers de vinil](/productos/stickers-vinil-impermeable) sirven para cualquier diseño, no solo para logos.",
+        ],
+      },
+      {
+        heading: "Velas, lentejas y propósitos: más detalles para invitados",
+        body: [
+          "Además de las uvas, puedes armar tres detalles más: una vela con un deseo, lentejas en una bolsita y una frase de propósito en un sticker. Las velas y las lentejas las compras tú; con Yume personalizas el diseño de los stickers de vinil con tu tema, un nombre o el año nuevo. Escríbenos por WhatsApp para cotizar.",
+          "Las velas de colores tienen significados populares: según Grupo Animal, la amarilla se asocia con la abundancia económica, la roja con el amor, la azul con la armonía, la naranja con el éxito y la blanca con la paz. Úsalos como paleta del diseño. Algunas familias también regalan bolsitas de lentejas crudas, así que un sticker con tu tema encaja bien.",
+        ],
+      },
+      {
+        heading: "Caja de brindis: un solo detalle por invitado",
+        body: [
+          "La caja de brindis junta todo en un solo detalle: un dulcero personalizado con el nombre del invitado y el tema de Año Nuevo. Llega armado y vacío, así que tú eliges qué lleva dentro, como dulces o un detalle pequeño. Es tipo lunch box, con asa.",
+          "Si no sabes qué poner, revisa la guía de [qué poner en un dulcero](/blog/que-poner-en-un-dulcero). El precio por pieza y el mínimo de pedido están en la ficha de [dulceros personalizados](/productos/dulceros-personalizados). Si quieres que el logo de tu marca aparezca en el diseño, también se puede incluir.",
+        ],
+      },
+      {
+        heading: "Para quién es: fiesta en casa, planners y empresas",
+        body: [
+          "Este tipo de souvenir funciona en tres casos: una fiesta en casa, un evento que organiza una planner y un cierre de año de empresa. En los tres, el detalle personalizado se decide con anticipación, porque primero se diseña y después se produce.",
+          "Si organizas eventos para otras personas, mira la [guía para planners](/blog/guia-planners-proveedor-detalles-personalizados) y cómo calcular [cuántos souvenirs pedir](/blog/cuantos-souvenirs-pedir-por-evento). Si es el cierre de año de tu empresa, la guía de [detalles de posada de empresa](/blog/detalles-posada-empresa-personalizados) aplica igual. Para una fiesta en casa, bastan el nombre, el tema y los colores.",
+        ],
+      },
+      {
+        heading: "Cómo pedir tus souvenirs de fin de año",
+        body: [
+          "Para pedir tus souvenirs de fin de año, escríbenos por WhatsApp con la cantidad de invitados, el tema y los colores. Te mandamos una prueba digital antes de producir, y nada se produce hasta que la apruebas. Los precios y tiempos vigentes están en la ficha de cada producto.",
+          "Puedes mandarnos una foto de la invitación o de la decoración y adaptamos el diseño a esos colores. Aquí explicamos cómo funciona la [prueba digital del pedido](/blog/prueba-digital-pedido-evento-planners).",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["detalles-posada-empresa-personalizados", "cuantos-souvenirs-pedir-por-evento", "que-poner-en-un-dulcero", "guia-planners-proveedor-detalles-personalizados"],
+    sources: [
+      { label: "Grupo Animal: rituales para Año Nuevo y su significado", url: "https://grupoanimal.mx/estilo-de-vida/rituales-para-ano-nuevo-2022-significado" },
+      { label: "Chilango: por qué se comen 12 uvas en Año Nuevo", url: "https://www.chilango.com/noticias/por-que-se-comen-12-uvas-en-ano-nuevo-origen-de-esta-tradicion/" },
+    ],
+    faq: [
+      {
+        q: "¿Los dulceros incluyen uvas, velas o lentejas?",
+        a: "No. El dulcero llega armado y vacío, listo para llenar con lo que tú elijas.",
+      },
+      {
+        q: "¿Los rituales de Año Nuevo funcionan?",
+        a: "Son creencias populares y las fuentes no coinciden en todos los detalles. Yume no promete resultados: los usamos como tema para diseñar el detalle.",
+      },
+      {
+        q: "¿Las 12 uvas son una tradición mexicana de origen?",
+        a: "No, vienen de España. Según Chilango, en 1909 hubo una gran cosecha y los productores vendieron las uvas de la suerte en paquetes de 12. En México se come una uva por campanada, y cada una es un mes y un deseo.",
+      },
+      {
+        q: "¿Puedo poner mi logo en el dulcero?",
+        a: "Sí. La personalización incluye el nombre, la temática que elijas y el logo de tu marca.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string) {
