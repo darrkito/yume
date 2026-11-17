@@ -3460,7 +3460,7 @@ export const blogPostsEn: BlogPost[] = [
     description: "Where to print custom stickers in Mexico and how much they cost: from $3 per piece depending on size, what file to send, and shipping nationwide.",
     category: "Guides",
     publishedAt: "2026-09-29",
-    modifiedAt: "2026-11-12",
+    modifiedAt: "2026-11-17",
     intro:
       "If you're looking for where to print custom stickers in Mexico, most options fall into two groups: printing them yourself at home (with vinyl and a special printer) or ordering them from a print shop that already has die-cutting equipment. This guide covers the second option: what to have ready, what to send, and how to order your stickers online, whether for your brand, a wedding, or any event, without buying equipment or visiting a print shop in person.",
     sections: [
@@ -3530,6 +3530,26 @@ export const blogPostsEn: BlogPost[] = [
         ],
       },
       {
+        heading: "Die-cut sticker printing: what your order includes",
+        body: [
+          "A die-cut sticker order includes premium vinyl with high-quality BOPP lamination, the cut to the shape of your design, the finish you choose (matte, glossy or holographic) and a digital proof before printing, with up to 2 rounds of changes. All of that is already in the price per piece.",
+          `The only things that add to the total are the holographic finish ($0.50 per piece) and shipping, which is free from $${FREE_SHIPPING_THRESHOLD} MXN. The cut, die-cut or kiss-cut, costs the same.`,
+        ],
+      },
+      {
+        heading: "How die-cut sticker printing works, step by step",
+        body: [
+          `1. You choose the product, size and quantity. 2. You send your design, character or photo. 3. You get the digital proof, normally within 24 hours of payment. 4. You approve it or ask for changes. 5. It is produced in ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days from approval. 6. It ships across Mexico in ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max} business days.`,
+          "Nothing is printed without your approval. If you want to understand the cuts first, read [die-cut vs kiss-cut](/en/blog/die-cut-vs-kiss-cut-stickers).",
+        ],
+      },
+      {
+        heading: "Real examples of die-cut stickers",
+        body: [
+          "In the [gallery](/en/gallery) you can see real die-cut vinyl work: sheets of characters, a bottle and a laptop covered in stickers, pet silhouettes made from customers' photos and logos on coffee bags.",
+        ],
+      },
+      {
         heading: "How far ahead to order your custom stickers",
         body: [
           "Order with time to spare: each order is made to order, and the clock starts when you approve the digital proof, not when you pay. Tell us your event date via WhatsApp and we'll review production and shipping times with you before you approve it.",
@@ -3545,6 +3565,18 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     faq: [
+      {
+        q: "What does the price of die-cut stickers include?",
+        a: "It includes premium vinyl with BOPP lamination, the cut to the shape, the matte or glossy finish and the digital proof with up to 2 rounds of changes. Only the holographic finish and shipping add to the total.",
+      },
+      {
+        q: "How long does die-cut sticker printing take?",
+        a: `The digital proof normally arrives within 24 hours of payment. Once you approve it, production takes ${PRODUCTION_DAYS.min} to ${PRODUCTION_DAYS.max} business days and shipping across Mexico ${NATIONAL_TRANSIT_DAYS.min} to ${NATIONAL_TRANSIT_DAYS.max}.`,
+      },
+      {
+        q: "Can I see examples of finished die-cut stickers?",
+        a: "Yes, Yume's gallery has real work: sheets of characters, pets made from customers' photos, laptops, bottles and logos on bags.",
+      },
       {
         q: "What is the minimum number of stickers I can order?",
         a: "The minimum is 40 vinyl stickers and 50 labels with your logo. They are sold by piece, not by sheet, and you can specify the exact quantity you need.",

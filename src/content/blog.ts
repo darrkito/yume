@@ -3698,7 +3698,7 @@ export const blogPosts: BlogPost[] = [
     description: "Dónde imprimir stickers personalizados en México y cuánto cuestan: desde $3 por pieza según el tamaño, qué archivo enviar y envío a todo el país.",
     category: "Guías",
     publishedAt: "2026-09-29",
-    modifiedAt: "2026-11-12",
+    modifiedAt: "2026-11-17",
     intro:
       "Si buscas dónde imprimir stickers personalizados en México, la mayoría de las opciones caen en dos grupos: imprimirlos tú mismo en casa (con vinil y una impresora especial) o mandarlos a hacer con una imprenta que ya tiene el equipo de corte troquelado. Esta guía cubre la segunda opción: qué necesitas tener listo, qué enviar y cómo funciona el proceso para mandar a imprimir tus stickers en línea, sea para tu marca, para una boda o para cualquier evento, sin comprar equipo ni ir a una imprenta física.",
     sections: [
@@ -3768,6 +3768,26 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
+        heading: "Impresión de stickers troquelados: qué incluye tu pedido",
+        body: [
+          "Un pedido de stickers troquelados incluye el vinil premium con laminado BOPP de alta calidad, el corte a la silueta de tu diseño, el acabado que elijas (mate, brillante u holográfico) y una prueba digital antes de imprimir, con hasta 2 rondas de ajustes. Todo eso ya está en el precio por pieza.",
+          `Lo único que suma al total es el acabado holográfico ($0.50 por pieza) y el envío, que es gratis desde $${FREE_SHIPPING_THRESHOLD} MXN. El corte, ya sea troquelado o semitroquelado, cuesta lo mismo.`,
+        ],
+      },
+      {
+        heading: "Cómo es el proceso de impresión de stickers troquelados, paso a paso",
+        body: [
+          `1. Eliges el producto, el tamaño y la cantidad. 2. Nos mandas tu diseño, personaje o foto. 3. Recibes la prueba digital, normalmente en un máximo de 24 horas después del pago. 4. La apruebas o pides ajustes. 5. Se produce, en ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles desde que la apruebas. 6. Se envía a todo México, en ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max} días hábiles.`,
+          "No se imprime nada sin tu aprobación. Si prefieres entender primero la diferencia entre los cortes, lee [troquelado vs semitroquelado](/blog/troquelado-vs-semitroquelado-stickers).",
+        ],
+      },
+      {
+        heading: "Ejemplos reales de stickers troquelados",
+        body: [
+          "En la [galería](/galeria) puedes ver trabajos reales de vinil troquelado: planillas con personajes, un termo y una laptop cubiertos de stickers, siluetas de mascotas hechas con fotos de clientes y logos en bolsas de café.",
+        ],
+      },
+      {
         heading: "Cuánto antes pedir tus stickers personalizados",
         body: [
           "Pide con margen: el pedido se produce sobre pedido y el reloj empieza cuando apruebas la prueba digital, no cuando pagas. Cuéntanos la fecha de tu evento por WhatsApp y revisamos contigo los tiempos de producción y envío antes de que apruebes.",
@@ -3785,6 +3805,18 @@ export const blogPosts: BlogPost[] = [
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
     relatedBlogSlugs: ["yume-vs-imprentas-online-stickers", "stickers-vinil-vs-papel-diferencias", "cuanto-tarda-un-pedido-de-stickers-personalizados", "troquelado-vs-semitroquelado-stickers", "stickers-para-bodas-eventos-y-fiestas"],
     faq: [
+      {
+        q: "¿Qué incluye el precio de los stickers troquelados?",
+        a: "Incluye el vinil premium con laminado BOPP, el corte a la silueta, el acabado mate o brillante y la prueba digital con hasta 2 rondas de ajustes. Solo el acabado holográfico y el envío suman al total.",
+      },
+      {
+        q: "¿Cuánto tarda la impresión de stickers troquelados?",
+        a: `La prueba digital llega normalmente en un máximo de 24 horas después del pago. Desde que la apruebas, la producción toma ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles y el envío a todo México ${NATIONAL_TRANSIT_DAYS.min} a ${NATIONAL_TRANSIT_DAYS.max}.`,
+      },
+      {
+        q: "¿Puedo ver ejemplos de stickers troquelados ya hechos?",
+        a: "Sí, en la galería de Yume hay trabajos reales: planillas de personajes, mascotas hechas con fotos de clientes, laptops, termos y logos en bolsas.",
+      },
       {
         q: "¿Cuántos stickers mínimo puedo pedir?",
         a: "El mínimo es de 40 piezas en stickers de vinil y de 50 piezas en etiquetas con tu logo. Se venden por cantidad de piezas, no por planilla, y puedes escribir la cantidad exacta que necesitas.",
