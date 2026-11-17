@@ -1028,7 +1028,7 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
-    relatedBlogSlugs: [BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"], BLOG_SLUG_EN["stickers-para-empaques-de-negocio"], BLOG_SLUG_EN["impresion-de-etiquetas-rollo-hoja-o-por-pieza"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"]],
+    relatedBlogSlugs: [BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"], BLOG_SLUG_EN["stickers-para-empaques-de-negocio"], BLOG_SLUG_EN["impresion-de-etiquetas-rollo-hoja-o-por-pieza"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"], "custom-labels-and-stickers-near-me-guadalajara", BLOG_SLUG_EN["cuanto-cuesta-imprimir-stickers"]],
   },
   {
     slug: BLOG_SLUG_EN["papeleria-personalizada-para-negocios-jalisco"],
@@ -3467,13 +3467,8 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "How much does it cost to print custom stickers in Mexico?",
         body: [
-          "Vinyl stickers start at $3.50 each (minimum 40) and labels with your logo start at $3 each (minimum 50), depending on size: small up to 4 cm, medium from 5 to 6 cm, and large from 7 to 8 cm. Shipping throughout Mexico is free on orders of $750 MXN or more.",
-          "They are sold by piece, not by sheet, so you can order the exact quantity you need. Both cuts and the matte and glossy finishes cost the same; holographic adds $0.50 per piece. For example, 100 small vinyl stickers cost $350 and 100 medium ones cost $500.",
-          "Price by quantity (minimum order is 50 pieces for logo labels and 40 for vinyl):",
+          "Vinyl stickers start at $3.50 each (minimum 40) and logo labels at $3 each (minimum 50), depending on size. They are sold per piece, not per sheet. For the quantity table, examples and shipping, read [how much it costs to print stickers](/en/blog/how-much-does-it-cost-to-print-stickers).",
         ],
-        table: {
-          ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "en"),
-        },
       },
       {
         heading: "Printing stickers at home vs. ordering them printed",
@@ -3619,7 +3614,7 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
-    relatedBlogSlugs: [BLOG_SLUG_EN["yume-vs-imprentas-online-stickers"], BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"], BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"], BLOG_SLUG_EN["troquelado-vs-semitroquelado-stickers"], BLOG_SLUG_EN["stickers-para-bodas-eventos-y-fiestas"]],
+    relatedBlogSlugs: [BLOG_SLUG_EN["yume-vs-imprentas-online-stickers"], BLOG_SLUG_EN["stickers-vinil-vs-papel-diferencias"], BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"], BLOG_SLUG_EN["troquelado-vs-semitroquelado-stickers"], BLOG_SLUG_EN["stickers-para-bodas-eventos-y-fiestas"], BLOG_SLUG_EN["cuanto-cuesta-imprimir-stickers"], BLOG_SLUG_EN["stickers-personalizados-para-negocios-guadalajara"], "custom-labels-and-stickers-near-me-guadalajara"],
   },
   {
     slug: BLOG_SLUG_EN["cuanto-tarda-un-pedido-de-stickers-personalizados"],
@@ -4652,7 +4647,7 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable", "stickers-logo-personalizado"],
-    relatedBlogSlugs: [BLOG_SLUG_EN["dulceros-navidenos-personalizados"], BLOG_SLUG_EN["que-poner-en-un-dulcero"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"], BLOG_SLUG_EN["dulceros-para-eventos-empresariales"], BLOG_SLUG_EN["aniversario-empresa-detalles-personalizados"], BLOG_SLUG_EN["detalles-evento-con-clientes-personalizados"]],
+    relatedBlogSlugs: [BLOG_SLUG_EN["dulceros-navidenos-personalizados"], BLOG_SLUG_EN["que-poner-en-un-dulcero"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"], BLOG_SLUG_EN["dulceros-para-eventos-empresariales"], BLOG_SLUG_EN["aniversario-empresa-detalles-personalizados"], BLOG_SLUG_EN["detalles-evento-con-clientes-personalizados"], "year-end-gifts-for-employees-and-clients-personalized", "custom-details-for-christmas-gift-exchange"],
     faq: [
       {
         q: "How many candy boxes should I order for a company posada?",
@@ -7381,7 +7376,7 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["personalized-christmas-treat-boxes", "personalized-company-posada-favors", "guide-for-planners-working-with-custom-favors-supplier", "custom-christmas-labels"],
+    relatedBlogSlugs: ["personalized-christmas-treat-boxes", "personalized-company-posada-favors", "guide-for-planners-working-with-custom-favors-supplier", "custom-christmas-labels", "year-end-gifts-for-employees-and-clients-personalized"],
     sources: [
       { label: "Publimetro: the new trend for Christmas gift exchanges among groups of friends (in Spanish)", url: "https://www.publimetro.co/entretenimiento/2025/12/04/la-nueva-tendencia-para-intercambio-navideno-entre-grupos-de-amigas-y-amigos/" },
       { label: "PatPat: fun Christmas gift exchange ideas", url: "https://www.patpat.com/es/blogs/holidays/fun-christmas-gift-exchange-ideas" },
@@ -7675,7 +7670,7 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["dulceros-personalizados", "stickers-logo-personalizado"],
-    relatedBlogSlugs: ["personalized-company-posada-favors", "custom-details-for-client-events", "personalized-christmas-treat-boxes", "company-anniversary-custom-details"],
+    relatedBlogSlugs: ["personalized-company-posada-favors", "custom-details-for-client-events", "personalized-christmas-treat-boxes", "company-anniversary-custom-details", "custom-details-for-christmas-gift-exchange"],
     sources: [
       { label: "Pluxee: ideal corporate gift guide", url: "https://www.pluxee.mx/blog/guia-regalo-corporativo-ideal/" },
       { label: "Pluxee: Christmas gifts for employees", url: "https://www.pluxee.mx/blog/regalos-navidenos-empleados/" },
@@ -7813,7 +7808,7 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["where-to-print-custom-stickers-mexico", "how-long-do-custom-stickers-take-to-arrive", "stickers-for-weddings-events-and-parties", "digital-proof-event-order-planners"],
+    relatedBlogSlugs: ["where-to-print-custom-stickers-mexico", "how-long-do-custom-stickers-take-to-arrive", "stickers-for-weddings-events-and-parties", "digital-proof-event-order-planners", BLOG_SLUG_EN["stickers-personalizados-para-negocios-guadalajara"], BLOG_SLUG_EN["cuanto-cuesta-imprimir-stickers"]],
     faq: [
       {
         q: "Do you have a physical store in Guadalajara?",

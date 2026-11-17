@@ -1135,7 +1135,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["stickers-vinil-vs-papel-diferencias", "stickers-para-empaques-de-negocio", "impresion-de-etiquetas-rollo-hoja-o-por-pieza", "dulceros-personalizados-guadalajara"],
+    relatedBlogSlugs: ["stickers-vinil-vs-papel-diferencias", "stickers-para-empaques-de-negocio", "impresion-de-etiquetas-rollo-hoja-o-por-pieza", "dulceros-personalizados-guadalajara", "etiquetas-stickers-personalizados-cerca-de-mi-guadalajara", "cuanto-cuesta-imprimir-stickers"],
   },
   {
     slug: "papeleria-personalizada-para-negocios-jalisco",
@@ -3705,13 +3705,8 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "¿Cuánto cuesta imprimir stickers personalizados en México?",
         body: [
-          "Stickers de vinil desde $3.50 c/u (mínimo 40) y etiquetas con tu logo desde $3 c/u (mínimo 50), según el tamaño: chico hasta 4 cm, mediano de 5 a 6 cm y grande de 7 a 8 cm. El envío a todo México es gratis desde $750 MXN.",
-          "Se venden por cantidad de piezas, no por planilla, así que pides la cantidad exacta que necesitas. Los dos cortes y los acabados mate y brillante no cambian el precio; el holográfico suma $0.50 por pieza. Por ejemplo, 100 stickers de vinil chicos son $350 y 100 medianos son $500.",
-          "Precio por cantidad (el mínimo de compra es 50 piezas en etiquetas con logo y 40 en vinil):",
+          "Los stickers de vinil cuestan desde $3.50 c/u (mínimo 40) y las etiquetas con tu logo desde $3 c/u (mínimo 50), según el tamaño. Se venden por pieza, no por planilla. Para ver la tabla por cantidad, ejemplos y el envío, lee [cuánto cuesta imprimir stickers](/blog/cuanto-cuesta-imprimir-stickers).",
         ],
-        table: {
-          ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
-        },
       },
       {
         heading: "Stickers para imprimir en casa vs. mandarlos a imprimir",
@@ -3803,7 +3798,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
-    relatedBlogSlugs: ["yume-vs-imprentas-online-stickers", "stickers-vinil-vs-papel-diferencias", "cuanto-tarda-un-pedido-de-stickers-personalizados", "troquelado-vs-semitroquelado-stickers", "stickers-para-bodas-eventos-y-fiestas"],
+    relatedBlogSlugs: ["yume-vs-imprentas-online-stickers", "stickers-vinil-vs-papel-diferencias", "cuanto-tarda-un-pedido-de-stickers-personalizados", "troquelado-vs-semitroquelado-stickers", "stickers-para-bodas-eventos-y-fiestas", "cuanto-cuesta-imprimir-stickers", "stickers-personalizados-para-negocios-guadalajara", "etiquetas-stickers-personalizados-cerca-de-mi-guadalajara"],
     faq: [
       {
         q: "¿Qué incluye el precio de los stickers troquelados?",
@@ -5022,7 +5017,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable", "stickers-logo-personalizado"],
-    relatedBlogSlugs: ["dulceros-navidenos-personalizados", "que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "dulceros-para-eventos-empresariales", "aniversario-empresa-detalles-personalizados", "detalles-evento-con-clientes-personalizados"],
+    relatedBlogSlugs: ["dulceros-navidenos-personalizados", "que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "dulceros-para-eventos-empresariales", "aniversario-empresa-detalles-personalizados", "detalles-evento-con-clientes-personalizados", "detalles-fin-de-ano-clientes-colaboradores-personalizados", "detalles-personalizados-intercambio-navideno"],
     faq: [
       {
         q: "¿Cuántos dulceros debo pedir para una posada de empresa?",
@@ -7711,7 +7706,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["dulceros-navidenos-personalizados", "detalles-posada-empresa-personalizados", "guia-planners-proveedor-detalles-personalizados", "etiquetas-navidenas-personalizadas"],
+    relatedBlogSlugs: ["dulceros-navidenos-personalizados", "detalles-posada-empresa-personalizados", "guia-planners-proveedor-detalles-personalizados", "etiquetas-navidenas-personalizadas", "detalles-fin-de-ano-clientes-colaboradores-personalizados"],
     sources: [
       { label: "Publimetro: la nueva tendencia para intercambio navideño entre grupos de amigas y amigos", url: "https://www.publimetro.co/entretenimiento/2025/12/04/la-nueva-tendencia-para-intercambio-navideno-entre-grupos-de-amigas-y-amigos/" },
       { label: "PatPat: ideas divertidas de intercambio de regalos navideños", url: "https://www.patpat.com/es/blogs/holidays/fun-christmas-gift-exchange-ideas" },
@@ -8004,7 +7999,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["dulceros-personalizados", "stickers-logo-personalizado"],
-    relatedBlogSlugs: ["detalles-posada-empresa-personalizados", "detalles-evento-con-clientes-personalizados", "dulceros-navidenos-personalizados", "aniversario-empresa-detalles-personalizados"],
+    relatedBlogSlugs: ["detalles-posada-empresa-personalizados", "detalles-evento-con-clientes-personalizados", "dulceros-navidenos-personalizados", "aniversario-empresa-detalles-personalizados", "detalles-personalizados-intercambio-navideno"],
     sources: [
       { label: "Pluxee: guía de regalo corporativo ideal", url: "https://www.pluxee.mx/blog/guia-regalo-corporativo-ideal/" },
       { label: "Pluxee: regalos navideños para empleados", url: "https://www.pluxee.mx/blog/regalos-navidenos-empleados/" },
@@ -8142,7 +8137,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["donde-imprimir-stickers-personalizados-mexico", "cuanto-tarda-un-pedido-de-stickers-personalizados", "stickers-para-bodas-eventos-y-fiestas", "prueba-digital-pedido-evento-planners"],
+    relatedBlogSlugs: ["donde-imprimir-stickers-personalizados-mexico", "cuanto-tarda-un-pedido-de-stickers-personalizados", "stickers-para-bodas-eventos-y-fiestas", "prueba-digital-pedido-evento-planners", "stickers-personalizados-para-negocios-guadalajara", "cuanto-cuesta-imprimir-stickers"],
     faq: [
       {
         q: "¿Tienen tienda física en Guadalajara?",
