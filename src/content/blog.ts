@@ -7817,6 +7817,75 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "dulceros-detalles-fin-de-ano-escolar",
+    title: "Dulceros fin de año escolar: detalles y cuándo pedir",
+    description:
+      "Dulceros fin de año escolar: qué detalle va con cada nivel, cómo personalizarlo y cuándo pedir según el calendario SEP 2026-2027.",
+    category: "Guías",
+    publishedAt: "2026-11-17",
+    intro:
+      "Cuando el ciclo escolar se acerca a su cierre, llegan las preguntas: qué darle a tu hijo o a su grupo, a las maestras y a los invitados de la ceremonia. Un dulcero con nombre, generación o tema convierte los dulces de siempre en un detalle que se ve pensado. Aquí encuentras cuándo conviene pedir según el calendario SEP, qué va con cada nivel y qué confirmar con la escuela.",
+    sections: [
+      {
+        heading: "Cuándo pedir dulceros para el cierre del ciclo escolar 2026-2027",
+        body: [
+          "Según el calendario de la SEP, el ciclo escolar 2026-2027 de educación básica termina el viernes 9 de julio de 2027. Del regreso de Semana Santa, el lunes 5 de abril de 2027, al cierre hay unas 13 semanas. Confirma la fecha real con tu escuela.",
+          "Semana Santa 2027 va del 22 de marzo al 2 de abril. En el ciclo anterior, el fin de clases fue el 15 de julio de 2026, y algunos estados lo adelantaron por las altas temperaturas. Por eso la fecha de cierre puede cambiar según el estado o la escuela, y conviene preguntarla antes de fijar tu plazo.",
+          "Para los tiempos de producción y envío de tu pedido, escríbenos por WhatsApp desde la [página de contacto](/contacto) con la fecha de la ceremonia y te confirmamos. Si aún comparas opciones, mira los [dulceros personalizados](/productos/dulceros-personalizados).",
+        ],
+      },
+      {
+        heading: "Dulceros fin de año escolar: qué detalle va con cada nivel",
+        body: [
+          "Se gradúan cuatro niveles: preescolar, primaria, secundaria y preparatoria. En todos funciona la misma lógica: un dulcero con el nombre de cada persona y la generación o el tema del grupo. Lo que cambia es quién lo recibe: alumnos, maestras o invitados a la ceremonia.",
+          "Por nivel, la lista de pedido es la misma: preescolar, primaria, secundaria o preparatoria; nombre de cada persona, generación o tema del grupo, y cantidad para alumnos, maestras e invitados. La fecha de ceremonia de cada nivel la confirma la escuela.",
+        ],
+      },
+      {
+        heading: "Cómo personalizar el dulcero: nombre, generación o tema",
+        body: [
+          "El dulcero se personaliza con nombre, temática y logo. Llega armado y vacío, así que tú eliges qué lleva dentro. Con eso el detalle se ve hecho para el grupo que lo recibe. Antes de producir te enviamos una prueba digital, y nada se produce hasta que la apruebas.",
+          "Un kínder de Monterrey entregó a cada alumno un obsequio con foto, dulces, botella personalizada y rompecabezas, según una nota que resume un video viral. Es un ejemplo anecdótico, no una cifra. Si quieres algo parecido, puedes sumar [stickers de vinil personalizados](/productos/stickers-vinil-impermeable) con el mismo diseño del dulcero.",
+        ],
+      },
+      {
+        heading: "Qué confirmar con la escuela antes de pedir",
+        body: [
+          "Confirma con la escuela tres cosas: la fecha real de cierre y de la ceremonia, cuántos alumnos y maestras reciben detalle, y qué se permite entregar. La fecha del 9 de julio es la de la SEP para educación básica y puede cambiar por estado o escuela.",
+          "Pregunta también si la escuela tiene reglas sobre lo que se puede entregar en el plantel, porque no las verificamos y pueden variar. Para ideas de relleno, revisa [qué poner en un dulcero](/blog/que-poner-en-un-dulcero).",
+        ],
+      },
+      {
+        heading: "Pedidos para planners, escuelas y empresas",
+        body: [
+          "Yume trabaja pedidos por evento, no producción industrial: piezas para una ceremonia, una fiesta de graduación o un grupo concreto. Si organizas como planner, escuela o empresa, manda la fecha, la cantidad y una referencia del diseño por WhatsApp, y te respondemos con una prueba digital antes de producir.",
+          "Si buscas una guía por ocasión, revisa los [dulceros para graduación](/blog/dulceros-para-graduacion). Si coordinas varios pedidos, el [checklist para planners](/blog/checklist-planners-pedido-detalles-evento) te ayuda a ordenar la información, y la [página de planners](/planners) explica cómo trabajamos. Para el precio vigente, consulta la ficha de los [dulceros personalizados](/productos/dulceros-personalizados).",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["dulceros-para-graduacion", "que-poner-en-un-dulcero", "checklist-planners-pedido-detalles-evento", "dulceros-personalizados-guadalajara"],
+    sources: [
+      { label: "UnoTV: la SEP publica el calendario escolar 2026-2027", url: "https://www.unotv.com/nacional/sep-publica-calendario-escolar-2026-2027-vacaciones-puentes-y-fechas-clave/" },
+      { label: "N+: graduación 2026, niveles y fechas de cierre", url: "https://www.nmas.com.mx/sociedad/educacion/frases-graduacion-2026-discurso-despedida-palabras-preescolar-primaria-secundaria-preparatoria/" },
+      { label: "El Tiempo: fiesta de graduación de kínder en Monterrey", url: "https://www.eltiempo.com/cultura/gente/mama-es-viral-por-compartir-la-lujosa-fiesta-de-graduacion-de-kinder-de-su-hijo-desde-robots-gigantes-hasta-camaras-instantaneas-3361485" },
+    ],
+    faq: [
+      {
+        q: "¿Cuántos días de clases tiene el ciclo escolar 2026-2027?",
+        a: "Según el calendario de la SEP para educación básica, el ciclo tiene 185 días de clases y empezó el 31 de agosto de 2026.",
+      },
+      {
+        q: "¿Qué fechas del calendario sirven para ubicar mis plazos?",
+        a: "Los días de Consejo Técnico y puentes de 2027 incluyen el 30 de abril, el 28 de mayo y el 25 de junio. Sirven para contar hacia atrás desde el cierre, siempre confirmando el calendario de tu escuela.",
+      },
+      {
+        q: "¿Cuánto tarda mi pedido si la ceremonia es en julio?",
+        a: "Escríbenos por WhatsApp con la fecha de la ceremonia y la cantidad, y te confirmamos los tiempos de producción y envío para tu caso.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string) {

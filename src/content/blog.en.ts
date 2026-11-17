@@ -7526,6 +7526,76 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "end-of-school-year-party-favor-boxes",
+    title: "End-of-school-year favor boxes: details and when to order",
+    metaTitle: "End-of-school-year favor boxes: when to order",
+    description:
+      "End-of-school-year favor boxes: which detail fits each level, how to personalize it and when to order based on the 2026-2027 SEP calendar.",
+    category: "Guides",
+    publishedAt: "2026-11-17",
+    intro:
+      "When the school year nears its close, the questions start: what to give your child or their group, the teachers and the guests at the ceremony. A favor box with a name, graduating class or theme turns everyday candy into a detail that looks planned. Here you will find when to order based on the SEP calendar, what fits each level and what to confirm with the school.",
+    sections: [
+      {
+        heading: "When to order favor boxes for the 2026-2027 school year close",
+        body: [
+          "According to the SEP calendar, the 2026-2027 school year for basic education ends on Friday, July 9, 2027. From the return after Holy Week on Monday, April 5, 2027, to the close there are about 13 weeks. Confirm the real date with your school.",
+          "Holy Week 2027 runs from March 22 to April 2. In the previous school year, classes ended on July 15, 2026, and some states moved it earlier because of high temperatures. So the closing date can change by state or school, and it is worth asking before you set your deadline.",
+          "For production and shipping times on your order, message us on WhatsApp from the [contact page](/en/contact) with your ceremony date and we will confirm. If you are still comparing options, see the [personalized party favor boxes](/en/products/personalized-party-favor-boxes).",
+        ],
+      },
+      {
+        heading: "End-of-school-year favor boxes: which detail fits each level",
+        body: [
+          "Four levels graduate: preschool, elementary, middle school and high school. The same logic works for all of them: a favor box with each person's name and the graduating class or group theme. What changes is who receives it: students, teachers or ceremony guests.",
+          "By level, the order list is the same: preschool, elementary, middle school or high school; each person's name, graduating class or group theme, and a quantity for students, teachers and guests. The school confirms the ceremony date for each level.",
+        ],
+      },
+      {
+        heading: "How to personalize the favor box: name, class or theme",
+        body: [
+          "The favor box is personalized with a name, a theme and a logo. It arrives assembled and empty, so you choose what goes inside. That way the detail looks made for the group that receives it. Before production we send a digital proof, and nothing is produced until you approve it.",
+          "A kindergarten in Monterrey gave each student a keepsake with a photo, candy, a personalized bottle and a puzzle, according to an article summarizing a viral video. It is an anecdotal example, not a statistic. For something similar, you can add [custom vinyl stickers](/en/products/waterproof-vinyl-stickers) with the same design as the favor box.",
+        ],
+      },
+      {
+        heading: "What to confirm with the school before ordering",
+        body: [
+          "Confirm three things with the school: the real closing date and ceremony date, how many students and teachers will receive a detail, and what is allowed to be handed out. July 9 is the SEP date for basic education and it can change by state or school.",
+          "Also ask whether the school has rules about what can be handed out on campus, because we have not verified them and they can vary. For filling ideas, see [what to put in a party favor box](/en/blog/what-to-put-in-a-party-favor-box).",
+        ],
+      },
+      {
+        heading: "Orders for planners, schools and companies",
+        body: [
+          "Yume works on event-based orders, not industrial production: pieces for a ceremony, a graduation party or a specific group. If you organize as a planner, school or company, send the date, the quantity and a design reference by WhatsApp, and we reply with a digital proof before producing.",
+          "If you want a guide by occasion, see the [graduation favor boxes](/en/blog/graduation-favor-boxes). If you coordinate several orders, the [planner checklist](/en/blog/planner-checklist-custom-favors-order-event) helps you organize the information, and the [planners page](/en/planners) explains how we work. For the current price, see the [personalized party favor boxes](/en/products/personalized-party-favor-boxes) page.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["graduation-favor-boxes", "what-to-put-in-a-party-favor-box", "planner-checklist-custom-favors-order-event", "personalized-party-favor-boxes-guadalajara"],
+    sources: [
+      { label: "UnoTV: SEP publishes the 2026-2027 school calendar", url: "https://www.unotv.com/nacional/sep-publica-calendario-escolar-2026-2027-vacaciones-puentes-y-fechas-clave/" },
+      { label: "N+: graduation 2026, levels and closing dates", url: "https://www.nmas.com.mx/sociedad/educacion/frases-graduacion-2026-discurso-despedida-palabras-preescolar-primaria-secundaria-preparatoria/" },
+      { label: "El Tiempo: kindergarten graduation party in Monterrey", url: "https://www.eltiempo.com/cultura/gente/mama-es-viral-por-compartir-la-lujosa-fiesta-de-graduacion-de-kinder-de-su-hijo-desde-robots-gigantes-hasta-camaras-instantaneas-3361485" },
+    ],
+    faq: [
+      {
+        q: "How many class days does the 2026-2027 school year have?",
+        a: "According to the SEP calendar for basic education, the school year has 185 class days and started on August 31, 2026.",
+      },
+      {
+        q: "Which calendar dates help me place my deadlines?",
+        a: "The 2027 Consejo Técnico days and long weekends include April 30, May 28 and June 25. They help you count backwards from the close, always confirming your own school's calendar.",
+      },
+      {
+        q: "How long will my order take if the ceremony is in July?",
+        a: "Message us on WhatsApp with your ceremony date and quantity, and we will confirm production and shipping times for your case.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPostEn(slug: string) {
