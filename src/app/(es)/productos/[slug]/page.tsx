@@ -5,7 +5,8 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getProduct, products } from "@/content/products";
 import { SITE } from "@/content/site";
-import { breadcrumbSchema, fitDescription, notFoundMetadata, ogLocale, productPageSchema } from "@/lib/seo";
+import { breadcrumbSchema, fitDescription, notFoundMetadata, ogLocale, productPageSchema, videoSchemas } from "@/lib/seo";
+import { ProductVideos } from "@/components/ProductVideos";
 import { ProductMedia } from "@/components/ProductMedia";
 import { logoPhotos, productPhotos } from "@/content/product-photos";
 import { ProductPurchase } from "@/components/ProductPurchase";
@@ -131,6 +132,8 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         />
       )}
 
+      <ProductVideos slug={product.slug} lang="es" />
+
       <ProductPriceTable product={product} lang="es" />
 
       <LocalPickup lang="es" />
@@ -149,6 +152,9 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       </div>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
+      {videoSchemas(product.slug, "es").map((v) => (
+        <script key={v.contentUrl} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(v) }} />
+      ))}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
     </section>

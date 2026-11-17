@@ -6,7 +6,8 @@ import Link from "next/link";
 import { getProduct, products } from "@/content/products";
 import { getProductTranslation } from "@/content/products.en";
 import { SITE } from "@/content/site";
-import { breadcrumbSchema, fitDescription, notFoundMetadata, ogLocale, productPageSchema } from "@/lib/seo";
+import { breadcrumbSchema, fitDescription, notFoundMetadata, ogLocale, productPageSchema, videoSchemas } from "@/lib/seo";
+import { ProductVideos } from "@/components/ProductVideos";
 import { ProductMedia } from "@/components/ProductMedia";
 import { logoPhotos, productPhotos } from "@/content/product-photos";
 import { ProductPurchase } from "@/components/ProductPurchase";
@@ -136,6 +137,8 @@ export default async function ProductPageEn({ params }: { params: Promise<{ slug
         />
       )}
 
+      <ProductVideos slug={product.slug} lang="en" />
+
       <ProductPriceTable product={product} lang="en" />
 
       <LocalPickup lang="en" />
@@ -154,6 +157,9 @@ export default async function ProductPageEn({ params }: { params: Promise<{ slug
       </div>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
+      {videoSchemas(product.slug, "en").map((v) => (
+        <script key={v.contentUrl} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(v) }} />
+      ))}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
     </section>

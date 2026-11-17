@@ -1,3 +1,4 @@
+import { productVideos } from "@/content/product-videos";
 import type { Metadata } from "next";
 import { hreflangFor, enPathToEsPath, type Lang } from "@/lib/i18n";
 import { SITE } from "@/content/site";
@@ -342,4 +343,17 @@ export function blogPostMetadata(post: BlogPost, { lang, path, languages }: { la
     },
     twitter: { card: "summary_large_image", images: [image] },
   };
+}
+
+export function videoSchemas(slug: string, lang: Lang) {
+  return (productVideos[slug] ?? []).map((v) => ({
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    name: v.text[lang].name,
+    description: v.text[lang].description,
+    thumbnailUrl: `${SITE.url}${v.poster}`,
+    contentUrl: `${SITE.url}${v.src}`,
+    uploadDate: v.uploadDate,
+    duration: `PT${v.seconds}S`,
+  }));
 }
