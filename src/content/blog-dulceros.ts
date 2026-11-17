@@ -1123,14 +1123,14 @@ export const dulceroPosts: BlogPost[] = [
   },
   {
     slug: "que-poner-en-un-dulcero",
-    title: "Qué poner en un dulcero: dulces, cuántos y cómo",
-    metaTitle: "Qué poner en un dulcero: dulces y cuántos por invitado",
-    description: "Qué poner en un dulcero: qué dulces elegir, cuántos por invitado, cuántas piezas caben y cómo repartirlos por altura, color y tipo de evento.",
+    title: "Tipos de dulces para dulceros: cuáles elegir por ocasión",
+    metaTitle: "Tipos de dulces para dulceros: cuáles elegir por ocasión",
+    description: "Tipos de dulces para dulceros según la ocasión: boda, XV años o bautizo. Qué elegir, cuántos poner por invitado y cómo combinar texturas y colores.",
     category: "Guías",
     publishedAt: PUBLISHED,
-    modifiedAt: "2026-11-03",
+    modifiedAt: "2026-11-17",
     intro:
-      "Un dulcero se ve completo con 8 a 12 piezas: un chocolate, una gomita o paleta, un dulce enchilado o ácido, un dulce tradicional mexicano y una botana chica, más un detalle que no sea dulce, como stickers. Abajo tienes qué poner en un dulcero por tipo de dulce y por edad, cuántas piezas caben según el tamaño, cuánto repartir por invitado en una mesa de dulces y cómo acomodarlo por altura y color.",
+      "Un dulcero se ve completo con 8 a 12 piezas: un chocolate, una gomita o paleta, un dulce enchilado o ácido, un dulce tradicional mexicano y una botana chica, más un detalle que no sea dulce, como stickers. Abajo tienes los tipos de dulces para dulceros y cómo elegirlos según la ocasión, qué poner por edad, cuántas piezas caben según el tamaño, cuánto repartir por invitado en una mesa de dulces y cómo acomodarlo por altura y color.",
     sections: [
       {
         heading: "Qué poner en un dulcero y cuántos por invitado",
@@ -1167,6 +1167,38 @@ export const dulceroPosts: BlogPost[] = [
           "Un detalle sin azúcar: stickers, una pulsera, burbujas o una libreta chica. Es lo que se conserva cuando el dulce ya se acabó.",
           "Si quieres un toque más especial, las guías del sector recomiendan combinar los dulces clásicos con algunos especiales, como gomitas, mini donas, chocolates, galletas decoradas, cake pops o mini brownies.",
         ],
+      },
+      {
+        heading: "Tipos de dulces para dulceros: consistentes y golosinas",
+        body: [
+          "Los tipos de dulces para dulceros se dividen en dos grupos: los postres consistentes, como brownies, tartaletas, macarons o cake pops, y las golosinas, como regaliz, nubes, caramelos, paletas y gomitas. Para un dulcero conviene mezclar ambos grupos y variar texturas, cremosas, crujientes y esponjosas, para que cada invitado encuentre algo que le guste.",
+          "Los dulces mexicanos de fiesta que se ven en listados de venta, como malvaviscos, obleas y rollos de guayaba y coco, entran en el grupo de las golosinas y le dan sabor local al dulcero. Son ejemplos de lo que se vende, no un ranking de los más elegidos.",
+        ],
+        table: {
+          headers: ["Grupo", "Ejemplos", "A quién le va mejor"],
+          rows: [
+            ["Postres consistentes", "Brownies, tartaletas, macarons, cake pops, merengues", "Invitados adultos, que prefieren opciones ligeras"],
+            ["Golosinas", "Regaliz, nubes, caramelos, paletas, gomitas", "Niños, que comen más golosinas"],
+          ],
+        },
+      },
+      {
+        heading: "Cómo elegir el tipo de dulce según la ocasión: boda, XV o bautizo",
+        body: [
+          "Para elegir el tipo de dulce según la ocasión, define primero quién va a comer y a qué hora es la fiesta. En una boda, un XV o un bautizo con mayoría de adultos conviene lo ligero; si hay muchos niños, las golosinas ganan. Después ajusta los colores a la paleta de la mesa.",
+          "Según una guía de bodas, al mediodía el banquete es más contundente y se come menos dulce, mientras que en la cena se toma más. Los adultos prefieren cremas, bocaditos de fruta o tartaletas, y a los niños les va bien una bolsa individual de gominolas.",
+          "En la práctica, el dulce de una mesa se elige por tipo de evento y por el color dominante. Si tu dulcero lleva nombre y temática, mándanos los colores de la invitación y adaptamos el diseño; antes de producir te enviamos una prueba digital.",
+          "Para ver más a fondo cada caso, revisa los [dulces para dulcero de boda](/blog/que-dulces-poner-en-dulcero-de-boda), los [dulceros para XV años](/blog/dulceros-para-xv-anos-elegantes), los [dulceros para bautizo](/blog/dulceros-para-bautizo-y-primera-comunion) y los [recuerdos de baby shower](/blog/recuerdos-baby-shower-personalizados).",
+        ],
+        table: {
+          headers: ["Situación", "Qué priorizar", "Ejemplos"],
+          rows: [
+            ["Mayoría de adultos", "Opciones ligeras", "Cremas, bocaditos de fruta, tartaletas"],
+            ["Muchos niños", "Golosinas", "Gomitas en bolsa individual, paletas, nubes"],
+            ["Fiesta al mediodía", "Se come menos dulce después de un banquete contundente", "Pocas variedades, bien elegidas"],
+            ["Fiesta de noche", "Se toma más dulce", "Más variedad de postres y golosinas"],
+          ],
+        },
       },
       {
         heading: "Qué poner en un dulcero según la edad de los invitados",
@@ -1207,6 +1239,12 @@ export const dulceroPosts: BlogPost[] = [
         },
       },
       {
+        heading: "Cuántas variedades y raciones de dulce poner",
+        body: [
+          "Una guía de bodas sugiere entre 5 y 7 variedades de postres y unas 3 o 4 raciones por persona si no hay pastel, o unas 2 si lo hay. Son cifras aproximadas para un buffet de dulces, y cambian con lo copiosa que sea la comida y el apetito de los invitados.",
+        ],
+      },
+      {
         heading: "Cómo repartir los dulces por altura y color",
         body: [
           "Para que la mesa se vea planeada, las guías del sector recomiendan recipientes transparentes, charolas a distintas alturas, bases escalonadas, cajas de madera y elevadores. Así los dulces se lucen mejor y la mesa gana volumen sin amontonar todo en un solo nivel.",
@@ -1236,8 +1274,16 @@ export const dulceroPosts: BlogPost[] = [
     ],
     faq: [
       {
-        q: "¿Qué dulces se ponen en un dulcero?",
-        a: "Una mezcla de chocolate, gomitas o paletas, un dulce enchilado o ácido, un dulce tradicional mexicano y una botana pequeña, más un detalle que no sea dulce. Ajusta la mezcla según la edad de los invitados.",
+        q: "¿Qué tipo de dulces se ponen en un dulcero?",
+        a: "Una mezcla de chocolate, gomitas o paletas, un dulce enchilado o ácido, un dulce tradicional mexicano y una botana pequeña, más un detalle que no sea dulce. Ajusta la mezcla según la edad de los invitados y la ocasión.",
+      },
+      {
+        q: "¿Qué tipos de dulces hay para un dulcero de boda, XV o bautizo?",
+        a: "Se dividen en postres consistentes, como brownies, tartaletas, macarons o cake pops, y golosinas, como nubes, paletas, caramelos y gomitas. Con mayoría de adultos conviene lo ligero; con muchos niños, las golosinas.",
+      },
+      {
+        q: "¿Cuántas variedades de dulce conviene poner?",
+        a: "Una guía de bodas sugiere de 5 a 7 variedades de postres para un buffet de dulces. Es una cifra aproximada.",
       },
       {
         q: "¿Cuántos dulces lleva un dulcero?",
@@ -1277,8 +1323,10 @@ export const dulceroPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["ideas-de-dulceros-para-fiesta-infantil", "cajas-bolsas-o-vasos-dulceros-cual-elegir", "dulceros-personalizados-guadalajara"],
-    sources: [],
+    relatedBlogSlugs: ["que-dulces-poner-en-dulcero-de-boda", "dulceros-para-xv-anos-elegantes", "dulceros-para-bautizo-y-primera-comunion", "ideas-de-dulceros-para-fiesta-infantil", "cajas-bolsas-o-vasos-dulceros-cual-elegir", "dulceros-personalizados-guadalajara"],
+    sources: [
+      { label: "Bodas.net: buffets de dulces para bodas", url: "https://www.bodas.net/articulos/buffets-de-dulces-para-bodas--c733" },
+    ],
   },
   {
     slug: "dulceros-de-halloween",
