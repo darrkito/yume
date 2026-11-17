@@ -7548,6 +7548,81 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "detalles-personalizados-intercambio-navideno",
+    title: "Detalles personalizados para intercambio navideño: ideas",
+    description:
+      "Ideas de detalles personalizados para tu intercambio navideño: qué personalizar en amigo secreto, regalo robado y posada, y cuándo pedirlos.",
+    category: "Guías",
+    publishedAt: "2026-11-17",
+    intro:
+      "Un intercambio navideño sale mejor cuando el detalle encaja con la dinámica. Aquí tienes ideas de regalos personalizados para amigo secreto, regalo robado y posada, qué conviene personalizar en cada una y cuándo pedirlos.",
+    sections: [
+      {
+        heading: "Qué conviene personalizar en un intercambio navideño",
+        body: [
+          "En un intercambio navideño conviene personalizar según la dinámica. En el amigo secreto, donde sabes quién recibe, puedes usar su nombre. En el regalo robado y el elefante blanco, el regalo debe gustarle a cualquiera, así que funciona mejor un diseño con tema o estilo y sin nombre propio.",
+          "Muchas listas de ideas se quedan en objetos genéricos y mencionan la personalización de pasada. Aquí la idea es otra: decidir primero la dinámica y después qué detalle personalizar.",
+        ],
+      },
+      {
+        heading: "Amigo secreto: un detalle con nombre",
+        body: [
+          "En el amigo secreto cada persona recibe un destinatario concreto, así que ahí sí tiene sentido poner el nombre. Un dulcero personalizado con su nombre y una temática navideña se ve pensado para esa persona. Tú eliges qué lleva dentro, porque el dulcero llega armado y vacío.",
+          "Si conoces sus gustos, el relleno puede reflejarlos. Un buen criterio es elegir algo que la persona use y no quede olvidado. Puedes ver cómo es el producto en nuestros [dulceros personalizados](/productos/dulceros-personalizados).",
+        ],
+      },
+      {
+        heading: "Regalo robado: diseño temático sin nombre",
+        body: [
+          "En el regalo robado se acuerda un tipo de regalo y un tope de precio, y cada participante puede robar un regalo ya abierto. Como cualquiera puede quedárselo, conviene un diseño temático navideño sin nombre propio, con colores y motivos de la temporada que guste a cualquiera.",
+          "Según Publimetro, es una variante del Santa Secreto que se difundió en redes en 2025. En la versión de mini regalos, cada persona compra tantos obsequios como jugadores haya.",
+        ],
+      },
+      {
+        heading: "Posada familiar o de empresa: un mismo diseño para el grupo",
+        body: [
+          "Si en tu posada familiar o de empresa todos los invitados reciben lo mismo, conviene un solo diseño navideño para el grupo, con el nombre de la empresa, el logo o la familia, y una prueba digital para aprobarlo antes de producir.",
+          "Para ideas pensadas para equipos de trabajo, revisa los [detalles para posada de empresa](/blog/detalles-posada-empresa-personalizados). Si prefieres algo de temporada para repartir, mira los [dulceros navideños personalizados](/blog/dulceros-navidenos-personalizados).",
+        ],
+      },
+      {
+        heading: "Para planners y organizadoras: presentación cuidada",
+        body: [
+          "Si organizas el intercambio o eres planner, un detalle de bajo volumen con presentación cuidada hace que el evento se vea planeado. Lo práctico es definir la dinámica, el diseño y la cantidad antes de pedir, y aprobar una prueba digital antes de que se produzca.",
+          "Si trabajas con eventos de clientes, la [guía para planners](/blog/guia-planners-proveedor-detalles-personalizados) explica cómo coordinar pedidos con un proveedor de detalles personalizados.",
+        ],
+      },
+      {
+        heading: "Cuándo pedir tu detalle personalizado",
+        body: [
+          "Para saber precio y tiempos de tu pedido, revisa la ficha del producto o escríbenos por WhatsApp con la cantidad de personas y la fecha de tu intercambio, y te decimos qué alcanza a llegar a tiempo. Conviene pedir antes de diciembre, para dejar margen a la prueba digital, la producción y el envío.",
+          "Si quieres sumar un detalle pequeño con el mismo diseño, mira los [stickers de vinil personalizados](/productos/stickers-vinil-impermeable), que también llevan prueba digital antes de imprimir.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["dulceros-navidenos-personalizados", "detalles-posada-empresa-personalizados", "guia-planners-proveedor-detalles-personalizados", "etiquetas-navidenas-personalizadas"],
+    sources: [
+      { label: "Publimetro: la nueva tendencia para intercambio navideño entre grupos de amigas y amigos", url: "https://www.publimetro.co/entretenimiento/2025/12/04/la-nueva-tendencia-para-intercambio-navideno-entre-grupos-de-amigas-y-amigos/" },
+      { label: "PatPat: ideas divertidas de intercambio de regalos navideños", url: "https://www.patpat.com/es/blogs/holidays/fun-christmas-gift-exchange-ideas" },
+      { label: "BBVA México: regalos para intercambio", url: "https://www.bbva.mx/educacion-financiera/blog/regalos-para-intercambio.html" },
+    ],
+    faq: [
+      {
+        q: "¿Debo poner nombre en el regalo de un intercambio?",
+        a: "Depende de la dinámica: en el amigo secreto sí, porque sabes quién lo recibe. En el regalo robado y el elefante blanco es mejor un diseño con tema o estilo y sin nombre propio.",
+      },
+      {
+        q: "¿El dulcero incluye dulces?",
+        a: "No. El dulcero llega armado y vacío, listo para llenar con lo que tú elijas.",
+      },
+      {
+        q: "¿Puedo ver el diseño antes de que se produzca?",
+        a: "Sí. Te enviamos una prueba digital y nada se produce hasta que la apruebas.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string) {

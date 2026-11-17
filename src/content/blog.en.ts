@@ -7295,6 +7295,81 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "custom-details-for-christmas-gift-exchange",
+    title: "Personalized Details for a Christmas Gift Exchange: Ideas",
+    description:
+      "Ideas for personalized details for your Christmas gift exchange: what to personalize for secret Santa, stolen gift and posada, and when to order.",
+    category: "Guides",
+    publishedAt: "2026-11-17",
+    intro:
+      "A Christmas gift exchange works best when the detail fits the format. Here are personalized gift ideas for secret Santa, stolen gift and posada, what to personalize in each one and when to order.",
+    sections: [
+      {
+        heading: "What to personalize in a Christmas gift exchange",
+        body: [
+          "In a Christmas gift exchange, personalize according to the format. In secret Santa, where you know who receives the gift, you can use their name. In stolen gift and white elephant games, anyone may end up with it, so a themed or styled design without a personal name works better.",
+          "Many idea lists stay with generic objects and mention personalization only in passing. The approach here is different: choose the format first, then decide which detail to personalize.",
+        ],
+      },
+      {
+        heading: "Secret Santa: a detail with a name",
+        body: [
+          "In secret Santa each person gets a specific recipient, so this is where a name makes sense. A personalized candy box with their name and a Christmas theme looks made for that person. You choose what goes inside, because the box arrives assembled and empty.",
+          "If you know their tastes, the filling can reflect them. A good rule is to choose something the person will use and not forget in a drawer. You can see the product in our [personalized party favor boxes](/en/products/personalized-party-favor-boxes).",
+        ],
+      },
+      {
+        heading: "Stolen gift: a themed design without a name",
+        body: [
+          "In the stolen gift game the group agrees on a type of gift and a price cap, and each player can steal a gift that is already open. Since anyone can end up with it, choose a Christmas-themed design without a personal name, with seasonal colors and motifs that anyone would like.",
+          "According to Publimetro, it is a variant of Secret Santa that spread on social media in 2025. In the mini gifts version, each person buys as many gifts as there are players.",
+        ],
+      },
+      {
+        heading: "Family or company posada: one design for the group",
+        body: [
+          "If at your family or company posada every guest receives the same gift, choose a single Christmas design for the group, with the company name, the logo or the family name, and a digital proof so you can approve it before production.",
+          "For ideas aimed at work teams, see these [company posada favors](/en/blog/personalized-company-posada-favors). If you prefer something seasonal to hand out, take a look at the [personalized Christmas treat boxes](/en/blog/personalized-christmas-treat-boxes).",
+        ],
+      },
+      {
+        heading: "For planners and organizers: a polished presentation",
+        body: [
+          "If you organize the exchange or you are a planner, a small-batch detail with a polished presentation makes the event look planned. The practical approach is to define the format, the design and the quantity before ordering, and approve a digital proof before anything is produced.",
+          "If you work on client events, the [guide for planners](/en/blog/guide-for-planners-working-with-custom-favors-supplier) explains how to coordinate orders with a custom favors supplier.",
+        ],
+      },
+      {
+        heading: "When to order your personalized gift",
+        body: [
+          "To know the price and timing of your order, check the product page or message us on WhatsApp with the number of people and the date of your exchange, and we will tell you what can arrive on time. It is best to order before December, to leave room for the digital proof, production and shipping.",
+          "If you want to add a small extra in the same design, take a look at the [custom vinyl stickers](/en/products/waterproof-vinyl-stickers), which also come with a digital proof before printing.",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["personalized-christmas-treat-boxes", "personalized-company-posada-favors", "guide-for-planners-working-with-custom-favors-supplier", "custom-christmas-labels"],
+    sources: [
+      { label: "Publimetro: the new trend for Christmas gift exchanges among groups of friends (in Spanish)", url: "https://www.publimetro.co/entretenimiento/2025/12/04/la-nueva-tendencia-para-intercambio-navideno-entre-grupos-de-amigas-y-amigos/" },
+      { label: "PatPat: fun Christmas gift exchange ideas", url: "https://www.patpat.com/es/blogs/holidays/fun-christmas-gift-exchange-ideas" },
+      { label: "BBVA México: gift exchange ideas (in Spanish)", url: "https://www.bbva.mx/educacion-financiera/blog/regalos-para-intercambio.html" },
+    ],
+    faq: [
+      {
+        q: "Should I put a name on a gift exchange present?",
+        a: "It depends on the format: in secret Santa yes, because you know who receives it. In stolen gift and white elephant games, a themed or styled design without a personal name works better.",
+      },
+      {
+        q: "Do the candy boxes come with candy?",
+        a: "No. The box arrives assembled and empty, ready to fill with whatever you choose.",
+      },
+      {
+        q: "Can I see the design before it is produced?",
+        a: "Yes. We send you a digital proof and nothing is produced until you approve it.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPostEn(slug: string) {
