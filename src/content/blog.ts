@@ -8162,6 +8162,93 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "etiquetas-personalizadas-velas-jabones-productos-artesanales",
+    title: "Etiquetas para velas personalizadas, jabones y más",
+    description:
+      "Etiquetas para velas personalizadas, jabones y piezas artesanales: tamaños, acabados, corte, mínimos y prueba digital antes de imprimir.",
+    category: "Guías",
+    publishedAt: "2026-11-17",
+    intro:
+      "Una vela o un jabón con una etiqueta que lleva un nombre y una fecha deja de ser un producto y se vuelve un recuerdo. Si buscas etiquetas para velas personalizadas para un evento, aquí ves qué etiqueta de Yume conviene, qué tamaños hay, cuál es el mínimo y cómo se pide con prueba digital.",
+    sections: [
+      {
+        heading: "Etiquetas para velas personalizadas: qué pedir para un evento",
+        body: [
+          "Para un detalle de evento, pide etiquetas con el nombre de los festejados, la fecha o tu logo, en vinil con laminado BOPP y el tamaño que mejor acomode a tu vela, jabón o pieza artesanal. Las pides por pieza, en tirajes pensados para un evento concreto, y ves una prueba digital antes de imprimir.",
+          "Yume imprime las etiquetas. La vela, el jabón o la pieza artesanal los consigues tú, porque no fabricamos ni vendemos esos productos.",
+        ],
+      },
+      {
+        heading: "Ideas de etiqueta por ocasión",
+        body: [
+          "Para una boda, la etiqueta puede llevar los nombres y la fecha; para un baby shower, el nombre del bebé; para una posada o un evento de empresa, tu logo. La misma vela o el mismo jabón cambia de significado según lo que diga la etiqueta.",
+          "Para cada ocasión hay una guía con más ideas: [souvenirs de boda personalizados](/blog/souvenirs-de-boda-personalizados), [recuerdos para baby shower](/blog/recuerdos-baby-shower-personalizados) y [detalles de posada para empresa](/blog/detalles-posada-empresa-personalizados).",
+        ],
+      },
+      {
+        heading: "Vinil o BOPP: qué material y acabado eliges",
+        body: [
+          "No tienes que escoger entre vinil y BOPP: las etiquetas de Yume son de vinil premium y todas llevan laminado BOPP de alta calidad, sin costo extra. Lo que sí eliges es el acabado, mate, brillante u holográfico, y el tipo de corte, troquelado o semitroquelado.",
+          "El acabado holográfico tiene un costo extra por pieza, que ves en la ficha del producto. Si dudas entre los dos cortes, revisa [troquelado y semitroquelado](/blog/troquelado-vs-semitroquelado-stickers); si comparas con papel, está la guía de [vinil frente a papel](/blog/stickers-vinil-vs-papel-diferencias).",
+        ],
+      },
+      {
+        heading: "Qué tamaño de etiqueta elegir para velas y jabones",
+        body: [
+          "Hay tres tamaños: chico, hasta 4 cm; mediano, de 5 a 6 cm; y grande, de 7 a 8 cm. El precio por pieza sube con el tamaño. Si necesitas una medida mayor o algo específico, se cotiza por WhatsApp con la medida y la cantidad.",
+          "El tamaño se elige en la ficha de [stickers de vinil personalizados](/productos/stickers-vinil-impermeable), junto con el corte y el acabado.",
+        ],
+        table: {
+          headers: ["Tamaño", "Medida", "Cómo se pide"],
+          rows: [
+            ["Chico", "Hasta 4 cm", "Se elige en la ficha del producto"],
+            ["Mediano", "De 5 a 6 cm", "Suma un costo por pieza sobre el chico"],
+            ["Grande", "De 7 a 8 cm", "Suma un costo por pieza sobre el chico"],
+            ["Más grande o específico", "Según tu pedido", "Se cotiza por WhatsApp"],
+          ],
+        },
+      },
+      {
+        heading: "Mínimo de piezas y precio por etiqueta",
+        body: [
+          "El mínimo es de 40 piezas en los stickers de vinil personalizados, que sirven para cualquier diseño. Pasando el mínimo puedes escribir la cantidad exacta que necesitas, por ejemplo una por cada detalle de tu evento. Se venden por pieza, no por planilla.",
+          "El precio por pieza depende del tamaño y se muestra en la ficha de [stickers de vinil personalizados](/productos/stickers-vinil-impermeable), donde también eliges el corte y el acabado.",
+        ],
+      },
+      {
+        heading: "Cómo pedir con prueba digital por WhatsApp",
+        body: [
+          "Eliges producto, tamaño, corte y acabado en la ficha, y nos mandas tu logo, imagen o diseño por WhatsApp. Antes de imprimir recibes una prueba digital para revisar nombres, fechas y colores. Para un evento con varias piezas, esa prueba es el momento de corregir todo.",
+          "Si organizas eventos para clientes, revisa la guía de [prueba digital para planners](/blog/prueba-digital-pedido-evento-planners). Para saber los tiempos, consulta [cuánto tarda un pedido](/blog/cuanto-tarda-un-pedido-de-stickers-personalizados).",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["troquelado-vs-semitroquelado-stickers", "stickers-para-bodas-eventos-y-fiestas", "prueba-digital-pedido-evento-planners", "souvenirs-de-boda-personalizados"],
+    faq: [
+      {
+        q: "¿Yume vende las velas o los jabones?",
+        a: "No. Yume imprime las etiquetas; la vela, el jabón o la pieza artesanal los consigues tú.",
+      },
+      {
+        q: "¿Puedo usar mi propio diseño o una foto?",
+        a: "Sí. Puedes mandarnos tu logo, tu diseño o una foto por WhatsApp y te enviamos una prueba digital antes de imprimir.",
+      },
+      {
+        q: "¿El acabado holográfico cuesta más?",
+        a: "Sí, suma un costo extra por pieza. El mate y el brillante no tienen ese cargo, y puedes ver el total en la ficha del producto.",
+      },
+      {
+        q: "¿Qué tamaños de etiqueta hay?",
+        a: "Chico, hasta 4 cm; mediano, de 5 a 6 cm; y grande, de 7 a 8 cm. Si necesitas una medida mayor, escríbenos por WhatsApp con la medida y la cantidad y te cotizamos aparte.",
+      },
+      {
+        q: "¿Cuál es el mínimo de piezas?",
+        a: "El mínimo es de 40 piezas en stickers de vinil personalizados. Se venden por pieza, no por planilla.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string) {

@@ -7833,6 +7833,93 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "custom-labels-for-candles-soaps-and-handmade-products",
+    title: "Custom Candle Labels, Soaps and Handmade Products",
+    description:
+      "Custom candle labels for soaps and handmade pieces: sizes, finishes, cut type, minimums and a digital proof before printing.",
+    category: "Guides",
+    publishedAt: "2026-11-17",
+    intro:
+      "A candle or a soap with a label that carries a name and a date stops being a product and becomes a keepsake. If you are looking for custom candle labels for an event, here is which Yume label fits, which sizes exist, what the minimum is and how to order with a digital proof.",
+    sections: [
+      {
+        heading: "Custom candle labels: what to order for an event",
+        body: [
+          "For an event favor, order labels with the honorees' names, the date or your logo, in vinyl with BOPP lamination and the size that best suits your candle, soap or handmade piece. You order by the piece, in runs sized for one specific event, and you see a digital proof before anything is printed.",
+          "Yume prints the labels. You source the candle, soap or handmade piece yourself, because we don't make or sell those products.",
+        ],
+      },
+      {
+        heading: "Label ideas by occasion",
+        body: [
+          "For a wedding, the label can carry the couple's names and the date; for a baby shower, the baby's name; for a posada or a company event, your logo. The same candle or soap takes on a different meaning depending on what its label says.",
+          "There is a guide with more ideas for each occasion: [personalized wedding favors](/en/blog/personalized-wedding-favors-with-name-and-date), [baby shower favors](/en/blog/personalized-baby-shower-favors) and [company posada favors](/en/blog/personalized-company-posada-favors).",
+        ],
+      },
+      {
+        heading: "Vinyl or BOPP: which material and finish you choose",
+        body: [
+          "You don't have to choose between vinyl and BOPP: Yume labels are premium vinyl and all of them carry high-quality BOPP lamination at no extra cost. What you do choose is the finish, matte, glossy or holographic, and the cut type, die cut or kiss cut.",
+          "The holographic finish has an extra cost per piece, which you see on the product page. If you are unsure between the two cuts, read [die cut vs kiss cut](/en/blog/die-cut-vs-kiss-cut-stickers); if you are comparing with paper, see [vinyl vs paper stickers](/en/blog/vinyl-vs-paper-stickers-differences).",
+        ],
+      },
+      {
+        heading: "Which label size to choose for candles and soaps",
+        body: [
+          "There are three sizes: small, up to 4 cm; medium, 5 to 6 cm; and large, 7 to 8 cm. The price per piece goes up with the size. If you need something larger or a specific size, we quote it on WhatsApp with the measurements and quantity.",
+          "You pick the size on the [custom vinyl stickers](/en/products/waterproof-vinyl-stickers) page, together with the cut and the finish.",
+        ],
+        table: {
+          headers: ["Size", "Measurement", "How to order"],
+          rows: [
+            ["Small", "Up to 4 cm", "Chosen on the product page"],
+            ["Medium", "5 to 6 cm", "Adds a cost per piece over small"],
+            ["Large", "7 to 8 cm", "Adds a cost per piece over small"],
+            ["Larger or specific", "Based on your order", "Quoted on WhatsApp"],
+          ],
+        },
+      },
+      {
+        heading: "Minimum pieces and price per label",
+        body: [
+          "The minimum is 40 pieces for custom vinyl stickers, which work for any design. Once you pass the minimum you can type the exact quantity you need, for example one per favor at your event. They are sold by the piece, not by the sheet.",
+          "The price per piece depends on the size and is shown on the [custom vinyl stickers](/en/products/waterproof-vinyl-stickers) page, where you also choose the cut and the finish.",
+        ],
+      },
+      {
+        heading: "How to order with a digital proof on WhatsApp",
+        body: [
+          "You pick the product, size, cut and finish on the product page, and send us your logo, image or design on WhatsApp. Before printing you receive a digital proof to check names, dates and colors. For an event with many pieces, that proof is the moment to fix everything.",
+          "If you organize events for clients, read the guide on the [digital proof for planners](/en/blog/digital-proof-event-order-planners). For timing, see [how long custom stickers take](/en/blog/how-long-do-custom-stickers-take-to-arrive).",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["die-cut-vs-kiss-cut-stickers", "stickers-for-weddings-events-and-parties", "digital-proof-event-order-planners", "personalized-wedding-favors-with-name-and-date"],
+    faq: [
+      {
+        q: "Does Yume sell the candles or the soaps?",
+        a: "No. Yume prints the labels; you source the candle, soap or handmade piece yourself.",
+      },
+      {
+        q: "Can I use my own design or a photo?",
+        a: "Yes. You can send us your logo, your design or a photo on WhatsApp and we send a digital proof before printing.",
+      },
+      {
+        q: "Does the holographic finish cost more?",
+        a: "Yes, it adds an extra cost per piece. Matte and glossy don't carry that charge, and you can see the total on the product page.",
+      },
+      {
+        q: "Which label sizes are available?",
+        a: "Small, up to 4 cm; medium, 5 to 6 cm; and large, 7 to 8 cm. If you need a larger size, message us on WhatsApp with the size and quantity and we'll quote it separately.",
+      },
+      {
+        q: "What is the minimum number of pieces?",
+        a: "The minimum is 40 pieces for custom vinyl stickers. They are sold by the piece, not by the sheet.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPostEn(slug: string) {
