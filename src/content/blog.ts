@@ -4861,7 +4861,7 @@ export const blogPosts: BlogPost[] = [
       "Dulceros para posada de empresa personalizados: cuántos pedir, cómo poner tu logo, cuándo pedirlos y qué consultar con tu contador.",
     category: "Guías",
     publishedAt: "2026-11-04",
-    modifiedAt: "2026-11-05",
+    modifiedAt: "2026-11-17",
     intro:
       "Las posadas de empresa se acercan y con ellas la pregunta de qué entregar a tu equipo y a tus clientes. Los dulceros para posada de empresa personalizados, con el nombre de cada persona o tu logo, son una opción sencilla y se sienten pensados. Aquí tienes cuántos pedir, cómo se aplica el logo, ideas por tipo de invitado, una referencia de presupuesto por persona, un calendario para contar hacia atrás y lo que conviene consultar con tu contador.",
     sections: [
@@ -4927,6 +4927,13 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
+        heading: "Otros eventos de empresa: aniversario y eventos con clientes",
+        body: [
+          "Una posada no es el único evento de empresa que pide detalles personalizados. Si celebras un aniversario o recibes a clientes, el mismo dulcero con logo funciona, y cada ocasión tiene su propia guía. Elige la que se parezca a tu evento y escríbenos por WhatsApp con la fecha y el número de invitados.",
+          "Para un aniversario, revisa el [aniversario de tu empresa](/blog/aniversario-empresa-detalles-personalizados). Para recibir invitados, mira los [eventos con clientes](/blog/detalles-evento-con-clientes-personalizados). Si organizas algo más grande, consulta los [dulceros para eventos empresariales](/blog/dulceros-para-eventos-empresariales).",
+        ],
+      },
+      {
         heading: "Calendario inverso: cuándo pedir los detalles de tu posada",
         body: [
           "Para que tus detalles lleguen a tiempo, cuenta hacia atrás desde la fecha de tu posada: primero la entrega, luego la producción, después la aprobación de la prueba digital y al inicio el diseño. Así ves cuándo debes escribirnos, sin depender de que los tiempos se junten en diciembre.",
@@ -4945,7 +4952,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable", "stickers-logo-personalizado"],
-    relatedBlogSlugs: ["dulceros-navidenos-personalizados", "que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara"],
+    relatedBlogSlugs: ["dulceros-navidenos-personalizados", "que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "dulceros-para-eventos-empresariales", "aniversario-empresa-detalles-personalizados", "detalles-evento-con-clientes-personalizados"],
     faq: [
       {
         q: "¿Cuántos dulceros debo pedir para una posada de empresa?",

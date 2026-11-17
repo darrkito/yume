@@ -4529,7 +4529,7 @@ export const blogPostsEn: BlogPost[] = [
       "Personalized candy boxes for company posadas: how many to order, how to add your logo, when to order and what to check with your accountant.",
     category: "Guías",
     publishedAt: "2026-11-04",
-    modifiedAt: "2026-11-05",
+    modifiedAt: "2026-11-17",
     intro:
       "Company posadas are coming, and with them the question of what to give your team and your clients. Personalized candy boxes for company posadas, with each person's name or your logo, are a simple option and feel thought out. Here is how many to order, how the logo is applied, ideas by type of guest, a budget reference per person, a calendar to count back from the date and what to check with your accountant.",
     sections: [
@@ -4538,8 +4538,8 @@ export const blogPostsEn: BlogPost[] = [
         body: [
           "For a company posada, choose the favor by who receives it: your team, your clients or both. A personalized candy box with a name and logo, or stickers with the posada design, are a simple option. What matters is that the design feels made for that event, not a generic gift.",
           "Many year-end gift guides focus on grocery baskets, kits, tumblers or gift cards. An event favor goes another way: it carries the person's name or your posada design, so it feels like part of the celebration and not a generic present.",
-          "Our [personalized candy box](/en/products) is a lunch box style with a handle, arrives assembled and empty, and its personalization includes a name, a theme and your brand logo. For filling ideas, see [what to put in a party favor box](/en/blog/what-to-put-in-a-party-favor-box); for the season, see [personalized Christmas treat boxes](/en/blog/personalized-christmas-treat-boxes).",
-          "If you prefer something that is not edible, [personalized vinyl stickers](/en/products) carry the design you send us, such as the posada name or the event illustration. Before production we send you a digital proof, and nothing is produced until you approve it.",
+          "Our [personalized candy box](/en/products/personalized-party-favor-boxes) is a lunch box style with a handle, arrives assembled and empty, and its personalization includes a name, a theme and your brand logo. For filling ideas, see [what to put in a party favor box](/en/blog/what-to-put-in-a-party-favor-box); for the season, see [personalized Christmas treat boxes](/en/blog/personalized-christmas-treat-boxes).",
+          "If you prefer something that is not edible, [personalized vinyl stickers](/en/products/waterproof-vinyl-stickers) carry the design you send us, such as the posada name or the event illustration. Before production we send you a digital proof, and nothing is produced until you approve it.",
         ],
       },
       {
@@ -4552,8 +4552,8 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "How to put your company logo on a candy box",
         body: [
-          "Our candy box personalization includes a name, a theme and your brand logo. Send us your logo on WhatsApp along with the posada name; before production we send you a digital proof, and nothing is produced until you approve it.",
-          "If you want the candy box to match the decoration or invitation of your posada, send us a photo and we adapt the design to those colors. For the team you can use each person's name and, for clients, your logo with the posada name. See the options on the [personalized candy box](/en/products) page.",
+          "Our candy box personalization includes a name, a theme and your brand logo. Just send us your logo on WhatsApp along with the posada name; before production we send you a digital proof, and nothing is produced until you approve it.",
+          "If you want the candy box to match the decoration or invitation of your posada, send us a photo and we adapt the design to those colors. For the team you can use each person's name and, for clients, your logo with the posada name. See the options on the [personalized candy box](/en/products/personalized-party-favor-boxes) page.",
         ],
       },
       {
@@ -4568,7 +4568,7 @@ export const blogPostsEn: BlogPost[] = [
         body: [
           "As a reference, an industry guide suggests per person: $300 to $700 MXN for operational or large-group staff, $700 to $1,500 for middle managers and over $1,500 for executives or key clients. It is a commercial guide, not a rule, and it helps you split your list.",
           "With that reference, the list sorts itself out. For the whole team, think of a uniform favor with each person's name or the team name, such as a personalized candy box. For key clients, a piece with more design and your logo fits there.",
-          "The price of our pieces depends on the product and the quantity, and it appears on each page: see the [personalized candy box](/en/products) or [stickers with your logo](/en/products) for the current price. If your list mixes team and clients, message us on WhatsApp and we help you quote both groups.",
+          "The price of our pieces depends on the product and the quantity, and it appears on each page: see the [personalized candy box](/en/products/personalized-party-favor-boxes) or [stickers with your logo](/en/products/custom-logo-stickers) for the current price. If your list mixes team and clients, message us on WhatsApp and we help you quote both groups.",
         ],
       },
       {
@@ -4590,8 +4590,15 @@ export const blogPostsEn: BlogPost[] = [
         heading: "Favors for clients: what to consider before gifting",
         body: [
           "For clients, choose a favor tied to your brand and the event, not an individual gift. According to external tax guides, gifts to clients in general are not deductible, except those tied to selling products or made for advertising. Check with your accountant before deciding.",
-          "A candy box with your logo and the posada name, or [stickers with your logo](/en/products), are brand favors your clients take home from the event. This does not promise they are deductible: individual gifts usually face tax restrictions, and your accountant validates each case.",
+          "A candy box with your logo and the posada name, or [stickers with your logo](/en/products/custom-logo-stickers), are brand favors your clients take home from the event. This does not promise they are deductible: individual gifts usually face tax restrictions, and your accountant validates each case.",
           "An external tax guide also recommends keeping a delivery record signed or stamped by the person who receives the gift. Ask your accountant whether it suits your case.",
+        ],
+      },
+      {
+        heading: "Other company events: anniversaries and client events",
+        body: [
+          "A posada is not the only company event that calls for personalized favors. If you are celebrating an anniversary or hosting clients, the same candy box with your logo works, and each occasion has its own guide. Pick the one closest to your event and message us on WhatsApp with the date and guest count.",
+          "For an anniversary, see the [company anniversary](/en/blog/company-anniversary-custom-details) guide. For hosting guests, see [client events](/en/blog/custom-details-for-client-events). If you are planning something bigger, check the [corporate event favor boxes](/en/blog/corporate-event-favor-boxes-with-logo).",
         ],
       },
       {
@@ -4613,7 +4620,7 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable", "stickers-logo-personalizado"],
-    relatedBlogSlugs: [BLOG_SLUG_EN["dulceros-navidenos-personalizados"], BLOG_SLUG_EN["que-poner-en-un-dulcero"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"]],
+    relatedBlogSlugs: [BLOG_SLUG_EN["dulceros-navidenos-personalizados"], BLOG_SLUG_EN["que-poner-en-un-dulcero"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"], BLOG_SLUG_EN["dulceros-para-eventos-empresariales"], BLOG_SLUG_EN["aniversario-empresa-detalles-personalizados"], BLOG_SLUG_EN["detalles-evento-con-clientes-personalizados"]],
     faq: [
       {
         q: "How many candy boxes should I order for a company posada?",
@@ -4624,35 +4631,35 @@ export const blogPostsEn: BlogPost[] = [
         a: "Yes. Send us your logo on WhatsApp along with the posada name and we send you a digital proof before production. Nothing is produced until you approve it.",
       },
       {
-        q: "Is it mandatory to take part or contribute to the company posada?",
+        q: "Is it mandatory to take part or chip in for the company posada?",
         a: "According to a note from El Imparcial, the company cannot impose attendance or financial contributions, nor deduct money or affect the evaluation for not taking part. It is a press note, not the text of the law.",
       },
       {
-        q: "Does a posada favor replace the aguinaldo?",
-        a: "No. Article 87 of Mexico's Federal Labor Law sets the aguinaldo at no less than 15 days of salary, paid before December 20, and the employer cannot cite economic difficulties to skip or reduce it. The posada favor is an extra.",
+        q: "Does the posada favor replace the aguinaldo?",
+        a: "No. Article 87 of Mexico's Federal Labor Law sets the aguinaldo at no less than 15 days of salary, paid before December 20, and the employer cannot claim economic difficulty to skip or reduce it. The posada favor is an extra.",
       },
       {
-        q: "Are company posada favors deductible?",
-        a: "There is no general, automatic deduction for posadas or Christmas dinners. It depends on the purpose, the recipients and the documentation. External tax guides indicate that gifts to clients in general are not deductible. Check with your accountant.",
+        q: "Are company posada favors tax deductible?",
+        a: "There is no general, automatic deduction for posadas or Christmas dinners. It depends on the purpose, the recipients and the documentation. Industry references say gifts to clients in general are not deductible. Check with your accountant.",
       },
       {
         q: "How much should I budget per person for a company posada?",
-        a: "As a general reference: $300 to $700 MXN for operational or large-group staff, $700 to $1,500 for middle managers and over $1,500 for executives or key clients. It is a provider's commercial guide, not a rule.",
+        a: "As a general reference: $300 to $700 MXN for operational or large-group staff, $700 to $1,500 for middle managers and over $1,500 for executives or key clients. It is a commercial guide from a provider, not a rule.",
       },
       {
         q: "When should I order my posada favors?",
-        a: "An industry guide recommends planning several weeks ahead, especially with personalization, volume or several locations. Count back from the posada date: delivery, production, digital proof approval and design. The estimated delivery date appears on the product page and in the cart.",
+        a: "An industry guide recommends planning several weeks ahead, especially with personalization, volume or several locations. Count back from the posada date: delivery, production, digital proof approval and design. The estimated date appears on the product page and in the cart.",
       },
       {
-        q: "Do the candy boxes come with candy?",
-        a: "No. The candy box arrives assembled and empty, ready to fill with the candy or favors you choose.",
+        q: "Do the candy boxes include candy?",
+        a: "No. The candy box arrives assembled and empty, ready to fill with the sweets or favors you choose.",
       },
       {
         q: "What does candy box personalization include?",
         a: "The name (of the person, the team or your company) and the theme you choose, including your brand logo. We send you a digital proof before production.",
       },
       {
-        q: "Which receipts should I keep for the posada favors?",
+        q: "Which documents should I keep for posada favors?",
         a: "As a general reference: a CFDI, accounting records, payment by an authorized method (bank transfer, nominative check or card for payments over $2,000 MXN) and a list of recipients as good practice. Your accountant confirms what applies in your case.",
       },
       {
