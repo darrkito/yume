@@ -7920,6 +7920,91 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "custom-labels-for-bazaars-and-entrepreneurs-guadalajara",
+    title: "Custom labels for entrepreneurs and bazaars",
+    description:
+      "Custom labels for entrepreneurs selling at bazaars in Guadalajara: which material, size and quantity to order, with real product data.",
+    category: "Guides",
+    publishedAt: "2026-11-17",
+    intro:
+      "If you sell at bazaars in Guadalajara, your label is part of your brand: it is the first thing customers see and what they take home. Here is a guide to decide which label to order, what size and how many pieces, for small runs and with the real data of our products.",
+    sections: [
+      {
+        heading: "Custom labels for entrepreneurs: what to order first",
+        body: [
+          "If you sell at bazaars, order a vinyl label with BOPP laminate and your brand logo. Choose the size to fit your packaging, the cut to fit your logo's shape and the finish to match your stall's style. All Yume stickers include BOPP laminate.",
+          "There are two products for this. [Stickers and Labels with your Logo](/en/products/custom-logo-stickers) is for your business logo, from 50 pieces. [Custom Vinyl Stickers](/en/products/waterproof-vinyl-stickers) works for any design, character or photo, from 40 pieces.",
+          "Emprendedor.com recommends treating the label and packaging as a brand tool: it catches the eye on the shelf, communicates the personality of the product and builds trust. For a bazaar stall, that idea applies directly to your label.",
+        ],
+      },
+      {
+        heading: "What label size to order for your product",
+        body: [
+          "Yume stickers come in three sizes: small, up to 4 cm; medium, 5 to 6 cm; and large, 7 to 8 cm. The price per piece changes with the size, and you can see the exact amount on each product page. If you need a larger size, we quote it on WhatsApp.",
+          "Before printing we send you a digital proof, so you see the size and design before production. If you need a different size, message us the size and quantity and we'll quote it separately.",
+        ],
+      },
+      {
+        heading: "Die cut, kiss cut and finish: how to decide",
+        body: [
+          "When you order, you choose two things: the cut and the finish. The cut can be die cut or kiss cut, and the finish can be matte, glossy or holographic. Holographic has an extra cost per piece, shown on the product page. BOPP laminate is always included at no extra cost.",
+          "To understand the difference between the two cuts, read the guide to [die cut vs kiss cut](/en/blog/die-cut-vs-kiss-cut-stickers). To compare vinyl with paper, see [vinyl vs paper stickers](/en/blog/vinyl-vs-paper-stickers-differences).",
+        ],
+      },
+      {
+        heading: "How many pieces to order for a bazaar",
+        body: [
+          "The minimums are clear: 50 pieces for Stickers and Labels with your Logo and 40 pieces for Custom Vinyl Stickers. Beyond the minimum you can choose the exact quantity you need, in any whole number. For a small bazaar run, that lets you order what you will really use.",
+          "Emprendedor.com notes that digital printing suits short runs, such as market tests, seasonal products and limited editions. If you want to test a new design at a bazaar, you can order the minimum.",
+          "To see the price per piece for each size, go to the page for [labels with your logo](/en/products/custom-logo-stickers) or the one for [vinyl stickers](/en/products/waterproof-vinyl-stickers).",
+        ],
+      },
+      {
+        heading: "Are labels sold by sheet or by piece?",
+        body: [
+          "At Yume, labels are sold by number of pieces, not by sheet. That fits a small bazaar run, because you order the number of labels you need and not a full sheet with more pieces than you will use, and the minimum depends on the product you choose.",
+          "To compare formats, read the guide to [labels on a roll, sheet or by the piece](/en/blog/label-printing-roll-sheet-or-by-the-piece).",
+        ],
+      },
+      {
+        heading: "What to send us to start your order",
+        body: [
+          "To start you only need your logo or design. On the product page you choose quantity, size, cut and finish, and then you attach your file in the WhatsApp chat. With your design we send a digital proof before printing, so you can review it calmly.",
+          "If your brand does not have a defined logo yet, [custom vinyl stickers](/en/products/waterproof-vinyl-stickers) accept any design, character or photo. To see how they are used on business packaging, read [stickers for business packaging](/en/blog/stickers-for-business-packaging).",
+        ],
+      },
+      {
+        heading: "Labels for Guadalajara bazaars: ordering and delivery",
+        body: [
+          "If you are in Guadalajara or Zapopan, you can order online or on WhatsApp and get a digital proof before printing. You can check production and shipping times in the guide to [how long a sticker order takes](/en/blog/how-long-do-custom-stickers-take-to-arrive), and it pays to review them before your bazaar date.",
+          "If the bazaar is outside the city, we ship across Mexico. For more ideas, see [custom stickers for businesses in Guadalajara](/en/blog/custom-stickers-for-businesses-guadalajara) or [contact us](/en/contact).",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["custom-stickers-for-businesses-guadalajara", "stickers-for-business-packaging", "die-cut-vs-kiss-cut-stickers", "label-printing-roll-sheet-or-by-the-piece"],
+    sources: [
+      {
+        label: "Emprendedor.com: Packaging, improve your sales from the packaging without breaking the budget (in Spanish)",
+        url: "https://emprendedor.com/packaging-mejorar-tus-ventas-desde-el-empaque-y-sin-romper-el-presupuesto/",
+      },
+    ],
+    faq: [
+      {
+        q: "Can I see the design before it is printed?",
+        a: "Yes, we send you a digital proof before printing.",
+      },
+      {
+        q: "What if I need a label larger than 8 cm?",
+        a: "Message us on WhatsApp with the size and quantity and we'll quote it separately.",
+      },
+      {
+        q: "Are the logo labels and the vinyl stickers the same material?",
+        a: "It is the same type of vinyl, with a different minimum: from 50 pieces for your business logo and from 40 pieces for any other design.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPostEn(slug: string) {

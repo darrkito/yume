@@ -106,6 +106,7 @@ export const BLOG_SLUG_EN: Record<string, string> = {
   "detalles-fin-de-ano-clientes-colaboradores-personalizados": "year-end-gifts-for-employees-and-clients-personalized",
   "etiquetas-stickers-personalizados-cerca-de-mi-guadalajara": "custom-labels-and-stickers-near-me-guadalajara",
   "etiquetas-personalizadas-velas-jabones-productos-artesanales": "custom-labels-for-candles-soaps-and-handmade-products",
+  "etiquetas-personalizadas-bazares-emprendedores-guadalajara": "custom-labels-for-bazaars-and-entrepreneurs-guadalajara",
 };
 
 export const PRODUCT_SLUG_ES: Record<string, string> = Object.fromEntries(

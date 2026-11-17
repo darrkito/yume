@@ -8249,6 +8249,91 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "etiquetas-personalizadas-bazares-emprendedores-guadalajara",
+    title: "Etiquetas personalizadas para emprendedores y bazares",
+    description:
+      "Etiquetas personalizadas para emprendedores que venden en bazares de Guadalajara: qué material, tamaño y cantidad pedir, con datos reales del producto.",
+    category: "Guías",
+    publishedAt: "2026-11-17",
+    intro:
+      "Si vendes en bazares de Guadalajara, tu etiqueta es parte de tu marca: es lo primero que el cliente ve y lo que se lleva a casa. Aquí tienes una guía para decidir qué etiqueta pedir, de qué tamaño y cuántas piezas, pensada para tirajes chicos y con los datos reales de nuestros productos.",
+    sections: [
+      {
+        heading: "Etiquetas personalizadas para emprendedores: qué pedir primero",
+        body: [
+          "Si vendes en bazares, pide una etiqueta de vinil con laminado BOPP y el logo de tu marca. Elige el tamaño según el empaque, el corte según la forma de tu logo y el acabado según el estilo de tu puesto. Todos los stickers de Yume llevan laminado BOPP incluido.",
+          "Hay dos productos pensados para esto. [Stickers y Etiquetas con tu Logo](/productos/stickers-logo-personalizado) es para el logo de tu negocio, desde 50 piezas. [Stickers de Vinil Personalizados](/productos/stickers-vinil-impermeable) sirve para cualquier diseño, personaje o foto, desde 40 piezas.",
+          "Emprendedor.com recomienda tratar la etiqueta y el empaque como una herramienta de marca: llama la atención en el anaquel, comunica la personalidad del producto y genera confianza. Para un puesto de bazar, esa idea aplica directo a tu etiqueta.",
+        ],
+      },
+      {
+        heading: "Qué tamaño de etiqueta pedir para tu producto",
+        body: [
+          "Los stickers de Yume se piden en tres tamaños: chico, hasta 4 cm; mediano, de 5 a 6 cm; y grande, de 7 a 8 cm. El precio por pieza cambia con el tamaño, y puedes ver el monto exacto en la página de cada producto. Si necesitas una medida mayor, se cotiza por WhatsApp.",
+          "Antes de imprimir te mandamos una prueba digital, así ves el tamaño y el diseño antes de que se produzca. Si necesitas una medida distinta, escríbenos la medida y la cantidad y te cotizamos aparte.",
+        ],
+      },
+      {
+        heading: "Troquelado, semitroquelado y acabado: cómo decidir",
+        body: [
+          "Al hacer tu pedido eliges dos cosas: el corte y el acabado. El corte puede ser troquelado o semitroquelado, y el acabado puede ser mate, brillante u holográfico. El holográfico tiene un costo extra por pieza que ves en la página del producto. El laminado BOPP va siempre incluido, sin costo extra.",
+          "Si quieres entender la diferencia entre los dos cortes, revisa la guía de [troquelado vs semitroquelado](/blog/troquelado-vs-semitroquelado-stickers). Para comparar vinil con papel, está la guía de [vinil vs papel](/blog/stickers-vinil-vs-papel-diferencias).",
+        ],
+      },
+      {
+        heading: "Cuántas piezas pedir para un bazar",
+        body: [
+          "Los mínimos son claros: 50 piezas para Stickers y Etiquetas con tu Logo y 40 piezas para Stickers de Vinil Personalizados. Después del mínimo puedes elegir la cantidad exacta que necesitas, en cualquier número entero. Para un tiraje chico de bazar, eso te permite pedir lo que de verdad vas a usar.",
+          "Emprendedor.com señala que la impresión digital sirve para tiradas cortas, como pruebas de mercado, productos de temporada y ediciones limitadas. Si quieres probar un diseño nuevo en un bazar, puedes pedir el mínimo.",
+          "Para ver el precio por pieza de cada tamaño, entra a la página de [etiquetas con tu logo](/productos/stickers-logo-personalizado) o a la de [stickers de vinil](/productos/stickers-vinil-impermeable).",
+        ],
+      },
+      {
+        heading: "¿Se venden por planilla o por pieza?",
+        body: [
+          "En Yume las etiquetas se venden por cantidad de piezas, no por planilla. Eso encaja con un tiraje chico de bazar, porque pides el número de etiquetas que necesitas y no una hoja completa con más piezas de las que vas a usar, y el mínimo depende del producto que elijas.",
+          "Para comparar formatos, revisa la guía de [etiquetas en rollo, hoja o por pieza](/blog/impresion-de-etiquetas-rollo-hoja-o-por-pieza).",
+        ],
+      },
+      {
+        heading: "Qué mandarnos para empezar tu pedido",
+        body: [
+          "Para empezar solo necesitas tu logo o tu diseño. En la página del producto puedes elegir cantidad, tamaño, corte y acabado, y después adjuntas tu archivo en el chat de WhatsApp. Con tu diseño te mandamos una prueba digital antes de imprimir, para que lo revises con calma.",
+          "Si tu marca aún no tiene un logo definido, los [stickers de vinil personalizados](/productos/stickers-vinil-impermeable) aceptan cualquier diseño, personaje o foto. Para ver cómo se usan en el empaque de un negocio, lee [stickers para empaques de negocio](/blog/stickers-para-empaques-de-negocio).",
+        ],
+      },
+      {
+        heading: "Etiquetas para bazares en Guadalajara: pedido y entrega",
+        body: [
+          "Si estás en Guadalajara o Zapopan, puedes pedir en línea o por WhatsApp y recibir una prueba digital antes de imprimir. Los plazos de producción y envío los ves en la guía de [cuánto tarda un pedido de stickers](/blog/cuanto-tarda-un-pedido-de-stickers-personalizados), y conviene revisarlos antes de la fecha de tu bazar.",
+          "Si tu bazar es fuera de la ciudad, enviamos a todo México. Para más ideas de uso, revisa [stickers personalizados para negocios en Guadalajara](/blog/stickers-personalizados-para-negocios-guadalajara) o [escríbenos por contacto](/contacto).",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["stickers-personalizados-para-negocios-guadalajara", "stickers-para-empaques-de-negocio", "troquelado-vs-semitroquelado-stickers", "impresion-de-etiquetas-rollo-hoja-o-por-pieza"],
+    sources: [
+      {
+        label: "Emprendedor.com: Packaging, mejora tus ventas desde el empaque y sin romper el presupuesto",
+        url: "https://emprendedor.com/packaging-mejorar-tus-ventas-desde-el-empaque-y-sin-romper-el-presupuesto/",
+      },
+    ],
+    faq: [
+      {
+        q: "¿Puedo ver el diseño antes de que se imprima?",
+        a: "Sí, te mandamos una prueba digital antes de imprimir.",
+      },
+      {
+        q: "¿Qué hago si necesito una etiqueta de más de 8 cm?",
+        a: "Escríbenos por WhatsApp con la medida y la cantidad y te cotizamos aparte.",
+      },
+      {
+        q: "¿Las etiquetas con logo y los stickers de vinil son el mismo material?",
+        a: "Es el mismo tipo de vinil, con distinto mínimo: desde 50 piezas para el logo de tu negocio y desde 40 piezas para cualquier otro diseño.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string) {
