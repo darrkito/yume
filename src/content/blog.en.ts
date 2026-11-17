@@ -4839,21 +4839,21 @@ export const blogPostsEn: BlogPost[] = [
       "Personalized wedding table details: how to match menu, favor box and stickers in one design so the table looks planned.",
     category: "Guides",
     publishedAt: "2026-10-29",
-    modifiedAt: "2026-11-03",
+    modifiedAt: "2026-11-17",
     intro:
       "A wedding table looks planned when every piece seems to belong to the same set. Menu, favor box and stickers can share the same color, the same lettering and the same symbol, and the whole table feels cared for. Here is how to combine them, what goes on the menu card, how to handle allergies, when to lock the design, and what to check per guest and per table before asking for a quote.",
     sections: [
       {
         heading: "Which personalized wedding table details work together",
         body: [
-          "Personalized wedding table details look planned when they share one system: a palette, a typeface and a symbol or monogram that repeats. The menu, the favor box and the stickers are different pieces, but with that common thread the table reads as one set and not as separate purchases.",
+          "Personalized wedding table details work together when they share one system: a palette, a typeface and a symbol or monogram that repeats. The menu, the favor box and the stickers are different pieces, but with that common thread the table reads as one set and not as separate purchases.",
           "Stickers reach the most places. A wedding blog mentions labels for wine or water bottles, which can also work as numbered table markers, phrases or monograms on cutlery or plates, candles and favor jars. If you have a different idea, message us on WhatsApp and we will see if it can be done.",
         ],
       },
       {
         heading: "The wedding menu as a place card",
         body: [
-          `One way to simplify the table is to use the menu as the place card too, with each guest's name above the menu. That way a single piece does two jobs and the table looks cleaner. For more ideas, see the Yume [personalized wedding menu](/en/blog/${BLOG_SLUG_EN["menu-de-boda-personalizado"]}), which is quoted over WhatsApp.`,
+          "One way to simplify the table is to use the menu as the place card too, with each guest's name above the menu. That way a single piece does two jobs and the table looks cleaner. For more ideas, see the Yume [personalized wedding menu](/en/blog/custom-wedding-menus), which is quoted over WhatsApp.",
           "A wedding stationery guide also suggests one detail per place setting, such as a small vase, a party cookie with a label or a mini bottle with a name label. Fewer pieces per seat, all with the same design, give a more elegant result than many different pieces.",
         ],
       },
@@ -4876,21 +4876,21 @@ export const blogPostsEn: BlogPost[] = [
         heading: "Favor box and stickers: one detail per place",
         body: [
           "To keep the table from feeling crowded, pick one detail per place and repeat its design everywhere else. It can be a favor box with the guest's name or a sticker with the wedding monogram on a label. What matters is that colors and symbol match the menu.",
-          "The favor box arrives assembled and empty, so you decide what goes inside, and personalization includes name and theme. To see it in more detail, read about [personalized favor boxes in Guadalajara](/en/blog/personalized-party-favor-boxes-guadalajara). For the keepsake guests take home, see [personalized wedding favors](/en/blog/personalized-wedding-favors-with-name-and-date).",
+          "The favor box arrives assembled and empty, so you decide what goes inside, and personalization includes name and theme. See the [personalized party favor boxes](/en/products/personalized-party-favor-boxes) page or read about [personalized favor boxes in Guadalajara](/en/blog/personalized-party-favor-boxes-guadalajara). For labels and markers with your monogram, there are the [stickers with your logo](/en/products/custom-logo-stickers).",
         ],
       },
       {
         heading: "The order of decisions for a table that looks planned",
         body: [
           "Decide in this order: first the palette, then the typeface and finally the symbol or monogram that will repeat. With those three decisions made, every piece is designed on the same base and nothing has to be redone when you add the menu, the favor box or the stickers.",
-          "Message us on WhatsApp to get a quote and we will tell you how to align the design with your palette. The wedding menu is quoted over WhatsApp. For stickers and favor boxes we send you a digital proof before production, and nothing is produced until you approve it. If you work with a wedding planner, share the palette and the proof with her so the pieces match the rest of the decor.",
+          "Message us on WhatsApp to get a quote and we will tell you how to align the design with your palette. For stickers and favor boxes we send you a digital proof before production, and nothing is produced until you approve it. If you work with a wedding planner, share the palette and the proof with her so the pieces match the rest of the decor.",
         ],
       },
       {
         heading: "When to lock the menu design and order the pieces",
         body: [
           "Close the menu design once the caterer has confirmed the menu. One stationery guide says that usually happens 6 to 8 weeks before the wedding, but that is only a general reference, not an industry standard. For your own order timing with Yume, message us on WhatsApp.",
-          "At Yume, the wedding menu is quoted over WhatsApp. For [vinyl stickers](/en/products/waterproof-vinyl-stickers), the digital proof usually arrives within 24 hours at most after your payment, with up to 2 rounds of adjustments, and we print nothing without your approval.",
+          "The wedding menu is quoted over WhatsApp. For [vinyl stickers](/en/products/waterproof-vinyl-stickers), we send a digital proof before printing and we print nothing without your approval.",
         ],
       },
       {
@@ -4900,9 +4900,16 @@ export const blogPostsEn: BlogPost[] = [
           "Add to the list the allergies and diets your guests report on the RSVP and confirm them with the caterer before locking the menu text. Quantities depend on your guest list and how many tables you have. Message us on WhatsApp with those numbers and we will quote the menu and the other pieces. We are in Guadalajara and ship across Mexico.",
         ],
       },
+      {
+        heading: "What to plan after the table details",
+        body: [
+          "Once the table system is set, the next step is to decide the keepsake guests take home and the candy table. Each topic has its own guide: here are the links so you can keep planning with the same design and not start from zero on every piece.",
+          "Read about the [wedding candy table](/en/blog/wedding-candy-table-custom-candy-boxes), the [wedding favor budget per guest](/en/blog/wedding-favor-budget-per-guest) and [when to order wedding favors](/en/blog/when-to-order-wedding-favors). For the keepsake guests take home, see also [personalized wedding favors](/en/blog/personalized-wedding-favors-with-name-and-date).",
+        ],
+      },
     ],
-    relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
-    relatedBlogSlugs: [BLOG_SLUG_EN["menu-de-boda-personalizado"], BLOG_SLUG_EN["souvenirs-de-boda-personalizados"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"], BLOG_SLUG_EN["que-poner-en-un-dulcero"]],
+    relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable", "dulceros-personalizados"],
+    relatedBlogSlugs: ["custom-wedding-menus", "personalized-wedding-favors-with-name-and-date", "personalized-party-favor-boxes-guadalajara", "what-to-put-in-a-party-favor-box", "wedding-candy-table-custom-candy-boxes"],
     faq: [
       {
         q: "How much does the wedding menu cost?",
@@ -4921,6 +4928,10 @@ export const blogPostsEn: BlogPost[] = [
         a: "No. The favor box arrives assembled and empty, ready to fill with the candy or details you choose.",
       },
       {
+        q: "Which pieces can I match on the table with one design?",
+        a: "The wedding menu (quoted over WhatsApp), personalized favor boxes and stickers for labels and markers. What matters is that they share palette, typeface and symbol.",
+      },
+      {
         q: "Do you ship outside Guadalajara?",
         a: "Yes. We work from Guadalajara and ship across Mexico.",
       },
@@ -4937,7 +4948,6 @@ export const blogPostsEn: BlogPost[] = [
         a: "Once the caterer has confirmed the menu. One stationery guide suggests 6 to 8 weeks before the wedding as a general reference. For your timing with Yume, message us on WhatsApp.",
       },
     ],
-
   },
   {
     slug: "wedding-candy-table-custom-candy-boxes",

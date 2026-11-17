@@ -5210,14 +5210,14 @@ export const blogPosts: BlogPost[] = [
       "Detalles personalizados para mesa de boda: cómo unir menú, dulcero y stickers con un mismo diseño para que la mesa se vea planeada.",
     category: "Guías",
     publishedAt: "2026-10-29",
-    modifiedAt: "2026-11-03",
+    modifiedAt: "2026-11-17",
     intro:
       "Una mesa de boda se ve planeada cuando cada pieza parece parte de lo mismo. Menú, dulcero y stickers pueden llevar el mismo color, la misma letra y el mismo símbolo, y entonces el conjunto se siente cuidado. Aquí tienes cómo combinarlos, qué lleva la tarjeta de menú, cómo tratar las alergias, cuándo cerrar el diseño y qué revisar por invitado y por mesa antes de cotizar.",
     sections: [
       {
         heading: "Qué detalles personalizados para mesa de boda funcionan juntos",
         body: [
-          "Los detalles personalizados para mesa de boda se ven planeados cuando comparten un mismo sistema: una paleta, una tipografía y un símbolo o monograma que se repite. El menú, el dulcero y los stickers son piezas distintas, pero con ese hilo conductor la mesa se lee como un solo conjunto y no como compras sueltas.",
+          "Los detalles personalizados para mesa de boda funcionan juntos cuando comparten un mismo sistema: una paleta, una tipografía y un símbolo o monograma que se repite. El menú, el dulcero y los stickers son piezas distintas, pero con ese hilo conductor la mesa se lee como un solo conjunto y no como compras sueltas.",
           "Los stickers son los que más lugares alcanzan. Un blog de bodas menciona etiquetas para botellas de vino o agua, que también sirven como marcadores de mesa con número, frases o monogramas en cubiertos o platos, velas y frascos de recuerdo. Si tienes una idea distinta, escríbenos por WhatsApp y vemos si se puede hacer.",
         ],
       },
@@ -5247,21 +5247,21 @@ export const blogPosts: BlogPost[] = [
         heading: "Dulcero y stickers: un detalle por puesto",
         body: [
           "Para que la mesa no se sature, elige un solo detalle por puesto y repite su diseño en lo demás. Puede ser un dulcero con el nombre del invitado o un sticker con el monograma de la boda en una etiqueta. Lo importante es que colores y símbolo coincidan con el menú.",
-          "El dulcero llega armado y vacío, así que tú decides qué lleva dentro, y la personalización incluye nombre y temática. Si quieres verlo con calma, revisa los [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara). Para el recuerdo que se llevan a casa, mira los [souvenirs de boda personalizados](/blog/souvenirs-de-boda-personalizados). Y para etiquetas y marcadores con tu monograma, están los [stickers con tu logo](/productos/stickers-logo-personalizado).",
+          "El dulcero llega armado y vacío, así que tú decides qué lleva dentro, y la personalización incluye nombre y temática. Puedes verlo en la ficha de [dulceros personalizados](/productos/dulceros-personalizados) o en la guía de [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara). Para etiquetas y marcadores con tu monograma, están los [stickers con tu logo](/productos/stickers-logo-personalizado).",
         ],
       },
       {
         heading: "Orden de decisiones para una mesa que se vea planeada",
         body: [
           "Decide en este orden: primero la paleta, luego la tipografía y por último el símbolo o monograma que se repetirá. Con esas tres decisiones tomadas, cada pieza se diseña sobre la misma base y no hay que rehacer nada al sumar el menú, el dulcero o los stickers.",
-          "Escríbenos por WhatsApp para cotizar y te decimos cómo alinear el diseño con tu paleta. El menú de boda se cotiza por WhatsApp. En stickers y dulceros te enviamos una prueba digital antes de producir, y nada se produce hasta que la apruebas. Si trabajas con una wedding planner, comparte con ella la paleta y la prueba para que las piezas coincidan con el resto de la decoración.",
+          "Escríbenos por WhatsApp para cotizar y te decimos cómo alinear el diseño con tu paleta. En stickers y dulceros te enviamos una prueba digital antes de producir, y nada se produce hasta que la apruebas. Si trabajas con una wedding planner, comparte con ella la paleta y la prueba para que las piezas coincidan con el resto de la decoración.",
         ],
       },
       {
         heading: "Cuándo cerrar el diseño del menú y pedir las piezas",
         body: [
           "Cierra el diseño del menú cuando el catering ya lo haya confirmado. Una referencia de papelería indica que eso suele ocurrir entre 6 y 8 semanas antes de la boda, pero no es un estándar del sector. Para los tiempos de tu pedido con Yume, escríbenos por WhatsApp.",
-          "En Yume, el menú de boda se cotiza por WhatsApp. En los [stickers de vinil](/productos/stickers-vinil-impermeable) la prueba digital llega normalmente en un máximo de 24 horas después de tu pago, con hasta 2 rondas de ajustes, y no imprimimos nada sin tu aprobación.",
+          "El menú de boda se cotiza por WhatsApp. En los [stickers de vinil](/productos/stickers-vinil-impermeable) te enviamos una prueba digital antes de imprimir y no imprimimos nada sin tu aprobación.",
         ],
       },
       {
@@ -5271,9 +5271,16 @@ export const blogPosts: BlogPost[] = [
           "Suma a la lista las alergias y dietas que reporten tus invitados en el RSVP y confírmalas con el catering antes de cerrar el texto del menú. Las cantidades dependen de tu lista de invitados y de cuántas mesas tengas. Escríbenos por WhatsApp con esos números y te cotizamos el menú y el resto de las piezas. Estamos en Guadalajara y enviamos a todo México.",
         ],
       },
+      {
+        heading: "Qué planear después de los detalles de mesa",
+        body: [
+          "Si ya tienes definido el sistema de la mesa, el siguiente paso es decidir el recuerdo que se llevan los invitados y la mesa de dulces. Cada tema tiene su guía: aquí te dejamos los enlaces para seguir planeando con el mismo diseño y sin empezar de cero cada pieza.",
+          "Revisa la guía de [mesa de dulces para boda](/blog/mesa-de-dulces-para-boda), el [presupuesto de recuerdos por invitado](/blog/presupuesto-recuerdos-de-boda-por-invitado) y [cuándo pedir souvenirs de boda](/blog/cuando-pedir-souvenirs-de-boda). Para el recuerdo que se llevan a casa, mira también los [souvenirs de boda personalizados](/blog/souvenirs-de-boda-personalizados).",
+        ],
+      },
     ],
-    relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["menu-de-boda-personalizado", "souvenirs-de-boda-personalizados", "dulceros-personalizados-guadalajara", "que-poner-en-un-dulcero"],
+    relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable", "dulceros-personalizados"],
+    relatedBlogSlugs: ["menu-de-boda-personalizado", "souvenirs-de-boda-personalizados", "dulceros-personalizados-guadalajara", "que-poner-en-un-dulcero", "mesa-de-dulces-para-boda"],
     faq: [
       {
         q: "¿Cuánto cuesta el menú de boda?",
@@ -5290,6 +5297,10 @@ export const blogPosts: BlogPost[] = [
       {
         q: "¿Los dulceros incluyen dulces?",
         a: "No. El dulcero llega armado y vacío, listo para llenar con los dulces o detalles que tú elijas.",
+      },
+      {
+        q: "¿Qué piezas puedo combinar en la mesa con un mismo diseño?",
+        a: "Menú de boda (se cotiza por WhatsApp), dulceros personalizados y stickers para etiquetas y marcadores. Lo importante es que compartan paleta, tipografía y símbolo.",
       },
       {
         q: "¿Envían fuera de Guadalajara?",
