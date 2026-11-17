@@ -330,26 +330,40 @@ export const dulceroPosts: BlogPost[] = [
   },
   {
     slug: "dulceros-navidenos-personalizados",
-    title: "Dulceros navideños personalizados: para posadas, la escuela y el intercambio",
-    metaTitle: "Dulceros navideños personalizados para posadas",
+    title: "Dulceros para posada: casa, escuela y empresa",
+    metaTitle: "Dulceros para posada: casa, escuela y empresa",
     description:
-      "Dulceros navideños personalizados para posadas, la escuela y el intercambio: diseños, qué poner dentro, cuántos pedir y cuándo ordenarlos.",
+      "Dulceros para posada personalizados para casa, escuela y empresa: cuál elegir, qué poner dentro, cuántos pedir, factura y cuándo ordenarlos.",
     category: "Guías",
     publishedAt: PUBLISHED,
-    modifiedAt: "2026-11-12",
+    modifiedAt: "2026-11-17",
     intro:
-      "Las posadas se celebran del 16 al 24 de diciembre, y entre festivales de la escuela, convivios de la oficina e intercambios, el dulcero navideño personalizado se vuelve el detalle que se ve pensado. Con el nombre de quien lo recibe, convierte el clásico aguinaldo de dulces en un recuerdo. Esta guía cubre diseño, usos, cantidades y, sobre todo, con cuánto tiempo pedirlos.",
+      "Las posadas se celebran del 16 al 24 de diciembre, y un dulcero para posada con el nombre de quien lo recibe convierte el clásico aguinaldo de dulces en un recuerdo. Esta guía separa tres casos: la posada en casa, en la escuela y en la empresa, con diseño, cantidades, factura y, sobre todo, con cuánto tiempo pedirlos.",
     sections: [
+      {
+        heading: "Dulceros para posada: qué cambia entre casa, escuela y empresa",
+        body: [
+          "Un dulcero para posada funciona igual en casa, escuela o empresa: llega armado y vacío, con nombre y temática. Lo que cambia es quién lo recibe. En casa es un detalle para cada invitado, en la escuela es uno por alumno con diseño de grupo, y en la empresa es una pieza para un evento con diseño aprobado antes.",
+          `Todos parten de nuestro [dulcero personalizado](/productos/${DULCERO}). Esta tabla resume cómo se arma cada caso.`,
+        ],
+        table: {
+          headers: ["Posada", "Qué lleva el diseño", "Cuántos pedir"],
+          rows: [
+            ["Casa", "Apellido de la familia o nombre de cada niño", "El número de invitados"],
+            ["Escuela", "Nombre del grupo o de la escuela", "Un dulcero por alumno"],
+            ["Empresa", "Colores de tu marca, logo y un detalle navideño", "Según el evento; arriba de 100 piezas se cotiza por WhatsApp"],
+          ],
+        },
+      },
       {
         heading: "Qué dulcero navideño personalizado elegir",
         body: [
           "Un dulcero navideño personalizado funciona mejor con el nombre de quien lo recibe y una temática sencilla de la temporada, como rojo y verde con dorado, pinos o nieve. Sirve para posadas, el salón de clases o un intercambio, y llega armado y vacío para que tú elijas qué lleva dentro.",
           "Los clásicos funcionan: rojo y verde con detalles dorados, nieve y pinos, estilo nórdico en blanco y rojo, o una temática infantil con Santa, renos y muñecos de nieve. Para la escuela va el nombre del grupo o del salón; para una posada familiar, el apellido de la familia o el nombre de cada niño.",
-          `Nuestro [dulcero personalizado](/productos/${DULCERO}) es tipo lunch box, con asa, e incluye nombre y temática.`,
         ],
       },
       {
-        heading: "Dulceros navideños para posadas y aguinaldos",
+        heading: "Dulceros para posada en casa y aguinaldos",
         body: [
           "En una posada, el dulcero tipo lunch box con asa reemplaza la bolsa de aguinaldo tradicional: cabe una buena porción de dulces, cacahuates, colación o mandarinas pequeñas y los niños lo cargan fácil mientras rompen la piñata. Llega armado, así que el día de la posada solo lo llenas.",
           "Mide 15.7 × 11.7 × 9.9 cm. Muchas oficinas, escuelas y familias han optado por simplificar sus posadas y reducir el gasto, y un detalle compacto con nombre encaja bien con esa idea.",
@@ -362,7 +376,7 @@ export const dulceroPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "Dulceros navideños para el salón de clases",
+        heading: "Dulceros para la posada del salón de clases",
         body: [
           "Para un salón, lo más sencillo es un solo diseño para todo el grupo, con el nombre del salón o de la escuela y una temática navideña. Pides un dulcero por alumno, y como el mínimo es de 10 piezas, el número se ajusta a la medida de tu grupo.",
           "Antes de comprar el relleno, pregunta a la escuela o a la asociación de padres si hay reglas sobre dulces o alergias en el grupo.",
@@ -375,10 +389,24 @@ export const dulceroPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "Dulceros navideños para empresas y oficinas",
+        heading: "Dulceros para posada de empresa: diseño, trato y tiempos",
         body: [
-          "Para el convivio de una oficina o un negocio, usa los colores de tu marca con un detalle navideño y tu logo. El dulcero se ve festivo sin perder tu imagen, y la personalización puede incluir el nombre de tu empresa, el de cada invitado o una temática de fin de año.",
-          "Si organizas un evento con clientes o equipo, revisa la guía de [dulceros para eventos empresariales](/blog/dulceros-para-eventos-empresariales). Para la fiesta de fin de año de tu empresa, mira los [detalles para posada de empresa](/blog/detalles-posada-empresa-personalizados). Para empaques o bolsas del mismo evento, mira las [etiquetas navideñas personalizadas](/blog/etiquetas-navidenas-personalizadas).",
+          "Para la posada de una empresa, el dulcero se pide para un evento concreto: llevas los colores de tu marca, tu logo y un detalle navideño, y el diseño se aprueba con prueba digital antes de producir. El trato es directo por WhatsApp, así que las fechas y cantidades se acuerdan por ahí.",
+          "La personalización puede incluir el nombre de tu empresa, el de cada invitado o una temática de fin de año. Si organizas un evento con clientes o equipo, revisa la guía de [dulceros para eventos empresariales](/blog/dulceros-para-eventos-empresariales). Para la fiesta de fin de año, mira los [detalles para posada de empresa](/blog/detalles-posada-empresa-personalizados). Si eres planner y coordinas varias posadas, consulta la [guía para planners](/blog/guia-planners-proveedor-detalles-personalizados). Para empaques o bolsas del mismo evento, mira las [etiquetas navideñas personalizadas](/blog/etiquetas-navidenas-personalizadas).",
+        ],
+      },
+      {
+        heading: "Por qué las empresas adelantan su posada: el aguinaldo",
+        body: [
+          "Muchas empresas hacen su posada en las semanas en que se paga el aguinaldo, que por ley debe pagarse antes del 20 de diciembre. Por eso conviene cerrar el pedido de dulceros de empresa con bastante anticipación a esas fechas y a la posada.",
+          "Es solo una referencia de calendario, no una regla sobre cómo o cuándo hacer una posada.",
+        ],
+      },
+      {
+        heading: "Factura y gasto de la posada de empresa",
+        body: [
+          "Si el dulcero es para una posada de empresa, avisa desde el inicio que necesitas factura y confirma con tu contador si el gasto aplica. Según portales contables, la deducción de posadas y regalos a empleados depende de cada caso y del contrato de trabajo, así que no hay una respuesta única.",
+          "Escríbenos por WhatsApp antes de pagar para confirmar la facturación de tu pedido. Los CFDI originales deben conservarse cinco años, según el artículo 30 del Código Fiscal de la Federación.",
         ],
       },
       {
@@ -404,11 +432,23 @@ export const dulceroPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: [DULCERO, "stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["etiquetas-navidenas-personalizadas", "dulceros-para-eventos-empresariales", "que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "buen-fin-2026-stickers-y-dulceros-personalizados", "detalles-posada-empresa-personalizados"],
+    relatedBlogSlugs: ["etiquetas-navidenas-personalizadas", "dulceros-para-eventos-empresariales", "que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "buen-fin-2026-stickers-y-dulceros-personalizados", "detalles-posada-empresa-personalizados", "guia-planners-proveedor-detalles-personalizados"],
     sources: [
       {
         label: "Cuándo empiezan las posadas 2025 en México y cuánto cuesta hacer una posada (InformaBTL)",
         url: "https://www.informabtl.com/cuando-empiezan-las-posadas-2025-en-mexico-cuanto-cuesta-hacer-una-posada/",
+      },
+      {
+        label: "Aguinaldo 2026 en México: cómo calcularlo y fecha límite de pago (Líder Empresarial)",
+        url: "https://www.liderempresarial.com/aguinaldo-2026-en-mexico-como-calcularlo-y-cual-es-la-fecha-limite-de-pago-aqui-lo-que-debes-saber/amp/",
+      },
+      {
+        label: "Gastos de posadas navideñas y fiesta de empleados: deducibilidad de ISR (El Conta)",
+        url: "https://elconta.mx/gastos-posadas-navidenas-fiesta-empleados-deducible-isr/",
+      },
+      {
+        label: "Deducciones autorizadas para empresas en México (Alegra)",
+        url: "https://blog.alegra.com/mexico/deducciones-autorizadas-para-empresas/",
       },
     ],
     faq: [
@@ -417,7 +457,7 @@ export const dulceroPosts: BlogPost[] = [
         a: "No. El dulcero llega armado y vacío, listo para llenar con los dulces o detalles que tú elijas.",
       },
       {
-        q: "¿Cuánto cuesta un dulcero navideño personalizado?",
+        q: "¿Cuánto cuesta un dulcero para posada?",
         a: `Primeras 100 piezas: $${dulceroUnit} MXN por pieza, con pedido mínimo de 10. Arriba de 100 piezas es precio mayoreo y se cotiza por WhatsApp. Desde $${FREE_SHIPPING_THRESHOLD} el envío nacional es gratis.`,
       },
       {
@@ -431,6 +471,14 @@ export const dulceroPosts: BlogPost[] = [
       {
         q: "¿Puedo pedir un diseño para todo el salón de clases?",
         a: "Sí. Lo más sencillo es un solo diseño para todo el grupo, con el nombre del salón o de la escuela y una temática navideña.",
+      },
+      {
+        q: "¿Puedo pedir dulceros para la posada de mi empresa?",
+        a: "Sí. Puedes llevar los colores de tu marca y tu logo, y el diseño se aprueba con prueba digital antes de producir. Las fechas y cantidades se acuerdan por WhatsApp.",
+      },
+      {
+        q: "¿Pueden dar factura por los dulceros de la empresa?",
+        a: "Escríbenos por WhatsApp antes de pagar para confirmar la facturación de tu pedido. Si el gasto es deducible depende de cada empresa, así que consúltalo con tu contador.",
       },
       {
         q: "¿Cuánto mide el dulcero?",
