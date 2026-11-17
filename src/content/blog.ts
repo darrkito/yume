@@ -5483,21 +5483,37 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "dulceros-para-xv-anos-elegantes",
-    title: "Dulceros para 15 años: ideas elegantes y personalización",
+    title: "Dulceros para 15 años mujer: ideas con nombre y tema",
     description:
-      "Dulceros para 15 años: ideas elegantes, qué personalizar, cómo presentar y etiquetar los dulces, cuántos pedir y cómo hacerlo con prueba digital.",
+      "Dulceros para 15 años mujer: ideas por tema y paleta, cómo integrar el nombre, qué personalizar, cuántos pedir y cómo aprobar la prueba digital.",
     category: "Guías",
     publishedAt: "2026-11-03",
-    modifiedAt: "2026-11-15",
+    modifiedAt: "2026-11-17",
     intro:
-      "Si buscas dulceros para 15 años, la pregunta no es solo qué poner dentro, sino cómo lograr que se vean pensados para la quinceañera. Aquí tienes qué personalizar, cómo presentar y etiquetar los dulces, cuántos dulceros pedir y cómo hacerlo con prueba digital. Está escrito para mamás, papás y planners que cuidan el detalle.",
+      "Si buscas dulceros para 15 años mujer, la pregunta no es solo qué poner dentro, sino cómo lograr que combinen con el nombre y el tema de la quinceañera. Aquí tienes ideas de tema por paleta, cómo integrar el nombre, qué personalizar, cómo presentar y etiquetar los dulces, cuántos dulceros pedir y cómo hacerlo con prueba digital. Está escrito para mamás, papás y planners que cuidan el detalle.",
     sections: [
       {
-        heading: "Dulceros para 15 años: qué ofrecer y cómo elegirlos",
+        heading: "Dulceros para 15 años mujer: qué ofrecer y cómo elegirlos",
         body: [
           "Un dulcero para 15 años funciona mejor cuando el invitado se lo lleva cerrado, con el nombre de la quinceañera y un contenido que combine con la fiesta. Nuestro dulcero llega armado y vacío, tipo lunch box con asa, así que tú eliges si lleva golosinas, galletas o bombones.",
           "Si quieres más ideas de relleno, revisa la guía de [qué poner en un dulcero](/blog/que-poner-en-un-dulcero), y mira los [dulceros personalizados](/productos/dulceros-personalizados) que preparamos con el nombre de la quinceañera.",
         ],
+      },
+      {
+        heading: "Ideas de tema para dulceros de 15 años con nombre",
+        body: [
+          "Un tema se define con una paleta de color y un motivo, no con adornos sueltos. Elige dos o tres colores de la fiesta y un motivo, como flores o un monograma, y platícalo con nosotros por WhatsApp para llevarlo al dulcero junto con el nombre de la quinceañera.",
+          "Estas ideas son puntos de partida de paleta y motivo, no tendencias medidas. Mándanos los colores de tu invitación y adaptamos el diseño a ellos.",
+        ],
+        table: {
+          headers: ["Idea de tema", "Paleta", "Cómo se integra el nombre"],
+          rows: [
+            ["Jardín de flores", "Rosa palo, blanco y verde salvia", "Nombre centrado, con un motivo floral discreto"],
+            ["Noche de gala", "Negro, blanco y champaña", "Iniciales como monograma y nombre en una sola línea"],
+            ["Cuento de hadas", "Lila, azul cielo y blanco", "Nombre y fecha, con un motivo de estrellas"],
+            ["Clásico de un solo color", "El color de la fiesta en dos tonos", "Solo el nombre, con mucho espacio libre"],
+          ],
+        },
       },
       {
         heading: "¿Qué se puede personalizar en un dulcero de XV años?",
@@ -5510,13 +5526,23 @@ export const blogPosts: BlogPost[] = [
         heading: "Qué hace elegante a un dulcero de XV años",
         body: [
           "Un dulcero de XV años se ve elegante cuando usa pocos colores, un nombre legible y una tipografía discreta, y cuando combina con la invitación y la decoración de la mesa. La elegancia viene de la coordinación, no de sumar adornos. Si nos mandas una foto de la invitación, adaptamos el diseño a esos colores.",
+          "Para que el nombre no se vea genérico, decide si va solo el de pila o completo, y si lo acompañas de la fecha o las iniciales; lo confirmamos por WhatsApp antes de diseñar.",
           "Antes de producir recibes una prueba digital y nada se produce hasta que la apruebas. Si coordinas el evento como planner, mándanos la paleta y la invitación de tu cliente y revisa la prueba directo por WhatsApp. Aquí explicamos [cómo funciona la prueba digital](/blog/prueba-digital-pedido-evento-planners).",
+        ],
+      },
+      {
+        heading: "Dulcero de lujo o mesa de postres: cómo combinarlos",
+        body: [
+          "Si habrá mesa de postres, el dulcero funciona mejor como detalle de despedida que como el postre principal. Una nota de Diario de Yucatán sobre mesas de postres temáticas propone calcular de 3.5 a 4 piezas individuales por invitado. Así el dulcero no carga todo el volumen y se luce como recuerdo.",
+          "Esa nota describe la mesa como una selección de bocados individuales de alta repostería, en lugar de un pastel gigante. No es una guía de XV, así que tómala como referencia para adaptar.",
+          "También recomienda mantener la mesa lejos del sol directo, aire acondicionado a 21 °C para cremas y coberturas y una planta de luz de respaldo. Aplica a los postres con cremas que lleve tu mesa.",
         ],
       },
       {
         heading: "Cómo presentar los dulces para que se vean premium",
         body: [
           "Una guía de candy bar para bodas recomienda envases transparentes, bandejas a distintas alturas, cajas de madera y soportes que dejen ver el contenido. También señala que las presentaciones individuales son más higiénicas y evitan colas. La guía habla de candy bars de bodas, así que tómalo como referencia para adaptar a un XV.",
+          "La nota de Diario de Yucatán propone pedestales de mármol blanco o negro a distintas alturas, repisas con marcos de latón dorado mate, caminos de mesa de lino en gris taupe, arena o verde salvia, y minicards de papel de algodón que describen cada postre.",
           "Para montar la mesa completa, revisa la guía de la [mesa de dulces para boda](/blog/mesa-de-dulces-para-boda), que se puede adaptar a un XV.",
         ],
       },
@@ -5524,6 +5550,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Cómo etiquetar sabores y alérgenos en la mesa",
         body: [
           "La misma guía sugiere etiquetar los sabores y los alérgenos, e indicar qué opciones son sin gluten, sin azúcar o veganas. Así cada invitado sabe qué toma y nadie tiene que preguntar. Es una guía de candy bar para bodas, así que sirve como referencia para adaptar a un XV.",
+          "La nota de Diario de Yucatán recomienda al menos dos opciones sin gluten y una vegana, bien etiquetadas.",
         ],
       },
       {
@@ -5538,12 +5565,12 @@ export const blogPosts: BlogPost[] = [
         heading: "Cómo pedir tus dulceros para 15 años con prueba digital",
         body: [
           "Cuéntanos por WhatsApp el nombre de la quinceañera, los colores de la fiesta y cuántos dulceros necesitas. Te enviamos una prueba digital del diseño antes de producir, y nada se produce hasta que la apruebas. Puedes mandarnos una foto de la invitación como referencia.",
-          "Trabajamos por pedido desde Guadalajara, Jalisco, con envío a todo México. El plazo de producción cuenta desde que apruebas la prueba digital, así que pide con tiempo y confirma por WhatsApp la fecha que necesitas. Ve la ficha de los [dulceros personalizados](/productos/dulceros-personalizados) o, si estás cerca, mira los [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara).",
+          "Trabajamos por pedido desde Guadalajara, Jalisco, con envío a todo México. Ve la ficha de los [dulceros personalizados](/productos/dulceros-personalizados) o, si estás cerca, mira los [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara).",
         ],
       },
     ],
     relatedProductSlugs: ["dulceros-personalizados"],
-    relatedBlogSlugs: ["que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "cuantos-dulceros-pedir-para-una-boda", "mesa-de-dulces-para-boda"],
+    relatedBlogSlugs: ["que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "cuantos-dulceros-pedir-para-una-boda", "mesa-de-dulces-para-boda", "dulceros-para-eventos-sociales-boda-xv-baby-shower"],
     faq: [
       {
         q: "¿Los dulceros para 15 años incluyen dulces?",
@@ -5552,6 +5579,10 @@ export const blogPosts: BlogPost[] = [
       {
         q: "¿Qué incluye la personalización de un dulcero?",
         a: "El nombre y la temática que elijas. Si quieres añadir la fecha o las iniciales, escríbenos por WhatsApp y lo confirmamos.",
+      },
+      {
+        q: "¿Cómo elijo el tema y los colores del dulcero?",
+        a: "Parte de la invitación y la decoración: escoge dos o tres colores y un motivo, y mándanos una foto de la invitación. Con eso preparamos una prueba digital para que ajustes lo que haga falta.",
       },
       {
         q: "¿Cuál es el pedido mínimo de dulceros?",
@@ -5570,6 +5601,10 @@ export const blogPosts: BlogPost[] = [
         a: "Sí. Te mandamos una prueba digital del diseño y nada se produce hasta que la apruebas.",
       },
       {
+        q: "¿Con cuánto tiempo debo pedirlos?",
+        a: "Escríbenos por WhatsApp con la fecha de tu evento y lo platicamos antes de diseñar.",
+      },
+      {
         q: "¿Hacen envíos a todo México?",
         a: "Sí. Producimos por pedido desde Guadalajara, Jalisco, y enviamos a todo México.",
       },
@@ -5578,6 +5613,10 @@ export const blogPosts: BlogPost[] = [
       {
         label: "Todo lo que debéis saber antes de montar una candy bar (Bodas.net)",
         url: "https://www.bodas.net/articulos/todo-lo-que-debeis-saber-antes-de-montar-una-candy-bar--c2448",
+      },
+      {
+        label: "Mesa de postres temática: alta repostería y diseño escultórico (Diario de Yucatán)",
+        url: "https://www.yucatan.com.mx/sociales/2026/10/26/mesa-de-postres-tematica-alta-reposteria-y-diseno-escultorico.html",
       },
     ],
   },
