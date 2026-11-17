@@ -102,6 +102,7 @@ export const BLOG_SLUG_EN: Record<string, string> = {
   "detalles-souvenirs-fiesta-ano-nuevo": "personalized-new-years-eve-party-favors",
   "etiquetas-stickers-regalos-reyes-magos-rosca": "three-kings-gift-labels-stickers-rosca",
   "dulceros-detalles-fin-de-ano-escolar": "end-of-school-year-party-favor-boxes",
+  "detalles-fin-de-ano-clientes-colaboradores-personalizados": "year-end-gifts-for-employees-and-clients-personalized",
 };
 
 export const PRODUCT_SLUG_ES: Record<string, string> = Object.fromEntries(

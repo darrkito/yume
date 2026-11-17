@@ -7596,6 +7596,69 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "year-end-gifts-for-employees-and-clients-personalized",
+    title: "Year-End Gifts for Employees and Clients, Personalized",
+    description:
+      "Year-end gifts for employees and clients: budget by level, restrained personalization and what to confirm with your accountant.",
+    category: "Guides",
+    publishedAt: "2026-11-17",
+    intro:
+      "Year-end brings posadas, closings and thank-yous for your team and your clients. To get the gift right, set a budget by level, personalize it without it looking like advertising and order in time. This guide is for companies and planners who organize posadas or welcome kits.",
+    sections: [
+      {
+        heading: "How much to spend per person on year-end gifts",
+        body: [
+          "According to Pluxee, a benefits provider, the guide budget per person in Mexico is $300 to $700 MXN for operational or large teams, $700 to $1,500 MXN for middle managers, and over $1,500 MXN for executives and key clients. It is a guide, not a rule.",
+          "If you already have a budget per person, tell us on WhatsApp how many people it is and we will look at which gift fits, for example a [favor box with a name](/en/products/personalized-party-favor-boxes).",
+        ],
+      },
+      {
+        heading: "How to personalize a gift without it looking like advertising",
+        body: [
+          "Personalize with each person's name, a short message and a restrained design. Pluxee recommends a discreet logo so the gift does not look like a promotional item, and suggests pairing the kit with a message from leadership. That way the recipient feels thought of, not handed advertising.",
+          "With Yume you can personalize a [personalized favor box](/en/products/personalized-party-favor-boxes) with your brand name and logo, or use [logo stickers](/en/products/custom-logo-stickers) to seal a package.",
+        ],
+      },
+      {
+        heading: "Common gift ideas and where a handmade detail stands out",
+        body: [
+          "Guides from other providers repeat kits with sweatshirts, thermoses or mugs, vouchers, gadgets, gourmet baskets and days off. Most are catalog gifts. What you see least is a piece made with a name, a message and a design of its own for each person or event, and that is where a personalized detail stands out.",
+          "If you are organizing a posada, see the [company posada favors](/en/blog/personalized-company-posada-favors). For clients, see the [details for client events](/en/blog/custom-details-for-client-events).",
+        ],
+      },
+      {
+        heading: "Employees and clients are treated differently for tax purposes",
+        body: [
+          "According to Pluxee, gifts to employees can be deductible if there is a CFDI invoice, accounting records and a proper payment method, and gifts to clients in general are not, unless they relate directly to the sale and are offered to clients in general. It is a commercial guide: confirm with accounting.",
+          "The same guide says payments over $2,000 MXN must be made by transfer, nominative check, card or another authorized method. Confirm with your accountant what applies to your company.",
+        ],
+      },
+      {
+        heading: "When to order year-end personalized gifts",
+        body: [
+          "Order several weeks ahead if there is personalization, volume or shipping to several sites, as Pluxee recommends. That guide gives no specific deadline. A digital proof is reviewed before production, so leave room to approve it before your posadas and before any shipping to other sites.",
+          "To know how long your order takes, message us on WhatsApp with your event date. If you coordinate several orders, lean on the [planner checklist](/en/blog/planner-checklist-custom-favors-order-event) and the guide to the [digital proof](/en/blog/digital-proof-event-order-planners).",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["dulceros-personalizados", "stickers-logo-personalizado"],
+    relatedBlogSlugs: ["personalized-company-posada-favors", "custom-details-for-client-events", "personalized-christmas-treat-boxes", "company-anniversary-custom-details"],
+    sources: [
+      { label: "Pluxee: ideal corporate gift guide", url: "https://www.pluxee.mx/blog/guia-regalo-corporativo-ideal/" },
+      { label: "Pluxee: Christmas gifts for employees", url: "https://www.pluxee.mx/blog/regalos-navidenos-empleados/" },
+    ],
+    faq: [
+      {
+        q: "Are the budgets by level a rule?",
+        a: "No. They are a guide from Pluxee, a benefits provider, to organize how much to spend per person by level.",
+      },
+      {
+        q: "What should I keep when buying gifts for the team?",
+        a: "According to Pluxee, the CFDI invoice, the payment receipt and proof of who received the gift. Confirm it with your accountant.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPostEn(slug: string) {

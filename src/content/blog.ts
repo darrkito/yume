@@ -7886,6 +7886,69 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "detalles-fin-de-ano-clientes-colaboradores-personalizados",
+    title: "Detalles fin de año para colaboradores y clientes",
+    description:
+      "Detalles fin de año para colaboradores y clientes: presupuesto por nivel, personalización sobria y qué validar con contabilidad.",
+    category: "Guías",
+    publishedAt: "2026-11-17",
+    intro:
+      "Fin de año trae posadas, cierres y agradecimientos para tu equipo y tus clientes. Para acertar con el detalle conviene definir el presupuesto por nivel, personalizarlo sin que parezca publicidad y pedirlo con tiempo. Esta guía es para empresas y planners que organizan posadas o kits de bienvenida.",
+    sections: [
+      {
+        heading: "Detalles fin de año para colaboradores: cuánto invertir por nivel",
+        body: [
+          "Según Pluxee, un proveedor de beneficios, el presupuesto orientativo por persona en México es de $300 a $700 MXN para equipos operativos o masivos, de $700 a $1,500 MXN para mandos medios y de más de $1,500 MXN para ejecutivos y clientes clave. Es una guía, no una norma.",
+          "Si ya tienes tu presupuesto por persona, cuéntanos por WhatsApp cuántas personas son y revisamos qué detalle encaja, por ejemplo un [dulcero con nombre](/productos/dulceros-personalizados).",
+        ],
+      },
+      {
+        heading: "Cómo personalizar un detalle sin que parezca publicidad",
+        body: [
+          "Personaliza con el nombre de cada persona, un mensaje breve y un diseño sobrio. Pluxee recomienda un logo discreto para que el detalle no parezca un artículo promocional, y sugiere acompañar el kit con un mensaje del liderazgo. Así quien lo recibe siente que pensaron en él, no que le regalaron propaganda.",
+          "Con Yume puedes personalizar un [dulcero personalizado](/productos/dulceros-personalizados) con el nombre y el logo de tu marca, o usar [stickers con logo](/productos/stickers-logo-personalizado) para cerrar un empaque.",
+        ],
+      },
+      {
+        heading: "Ideas comunes y dónde destaca un detalle artesanal",
+        body: [
+          "Las guías de otros proveedores repiten kits con sudaderas, termos o tazas, vales, gadgets, canastas gourmet y días libres. Casi todas son regalos de catálogo. Lo que menos se ve es la pieza hecha con nombre, mensaje y diseño propio por persona o por evento, y ahí es donde un detalle personalizado se distingue.",
+          "Si organizas una posada, revisa los [detalles para posada de empresa](/blog/detalles-posada-empresa-personalizados). Para clientes, mira los [detalles para eventos con clientes](/blog/detalles-evento-con-clientes-personalizados).",
+        ],
+      },
+      {
+        heading: "Colaboradores y clientes no se manejan igual en lo fiscal",
+        body: [
+          "Según Pluxee, los regalos a colaboradores pueden ser deducibles si hay CFDI, registro contable y medio de pago adecuado, y los obsequios a clientes en general no lo son, salvo que se relacionen directamente con la venta y se ofrezcan a clientes en general. Es una guía comercial: valídalo con contabilidad.",
+          "La misma guía indica que los pagos de más de $2,000 MXN deben hacerse por transferencia, cheque nominativo, tarjeta u otro medio autorizado. Confirma con tu contador lo que aplique a tu empresa.",
+        ],
+      },
+      {
+        heading: "Cuándo pedir los detalles personalizados de fin de año",
+        body: [
+          "Pide con varias semanas de anticipación si hay personalización, volumen o envíos a varias sedes, como recomienda Pluxee. Esa guía no da una fecha límite concreta. Antes de producir se revisa una prueba digital, así que deja margen para aprobarla antes de tus posadas.",
+          "Para saber cuánto tarda tu pedido, escríbenos por WhatsApp con tu fecha de evento. Si coordinas varios pedidos, apóyate en el [checklist para planners](/blog/checklist-planners-pedido-detalles-evento) y en la guía de [prueba digital](/blog/prueba-digital-pedido-evento-planners).",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["dulceros-personalizados", "stickers-logo-personalizado"],
+    relatedBlogSlugs: ["detalles-posada-empresa-personalizados", "detalles-evento-con-clientes-personalizados", "dulceros-navidenos-personalizados", "aniversario-empresa-detalles-personalizados"],
+    sources: [
+      { label: "Pluxee: guía de regalo corporativo ideal", url: "https://www.pluxee.mx/blog/guia-regalo-corporativo-ideal/" },
+      { label: "Pluxee: regalos navideños para empleados", url: "https://www.pluxee.mx/blog/regalos-navidenos-empleados/" },
+    ],
+    faq: [
+      {
+        q: "¿Los presupuestos por nivel son una norma?",
+        a: "No. Son una guía orientativa de Pluxee, un proveedor de beneficios, para ordenar cuánto invertir por persona según el nivel.",
+      },
+      {
+        q: "¿Qué conviene guardar al comprar detalles para el equipo?",
+        a: "Según Pluxee, el CFDI, el comprobante de pago y la evidencia de quién recibió el regalo. Valídalo con tu contador.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string) {
