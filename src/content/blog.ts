@@ -8095,6 +8095,73 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "etiquetas-stickers-personalizados-cerca-de-mi-guadalajara",
+    title: "Etiquetas personalizadas cerca de mí en Guadalajara",
+    description:
+      "Etiquetas y stickers personalizados cerca de mí en Guadalajara: no tenemos tienda, producimos aquí, recoges en Casa Blanca o te enviamos.",
+    category: "Guías",
+    publishedAt: "2026-11-17",
+    intro:
+      "Si buscaste etiquetas personalizadas cerca de mí en Guadalajara, la respuesta honesta es esta: Yume no tiene tienda física, pero produce aquí, ofrece recolección en Casa Blanca y envía a todo el país. Esta guía explica cómo pedir paso a paso, para que tus etiquetas y stickers lleguen listos para tu boda, baby shower, cumpleaños o evento de empresa.",
+    sections: [
+      {
+        heading: "¿Hay etiquetas personalizadas cerca de mí sin tienda física?",
+        body: [
+          "Sí. Yume no tiene tienda física, pero produce en Guadalajara, ofrece recolección en paquetería Casa Blanca y envía a todo México. Para etiquetas y stickers personalizados, estar cerca importa menos que ver una prueba digital antes de imprimir, conocer los tiempos y confirmar el acabado.",
+          "Por eso, en lugar de buscar el punto de venta más cercano, conviene saber cómo funciona el pedido de principio a fin. Aquí lo explicamos paso a paso, pensado para bodas, baby showers, cumpleaños y eventos de empresa.",
+        ],
+      },
+      {
+        heading: "Cómo pedir etiquetas o stickers por WhatsApp paso a paso",
+        body: [
+          "Escribes por WhatsApp con tu idea o tu diseño, eliges tipo de producto, corte y acabado, recibes una prueba digital y, cuando la apruebas, se produce en Guadalajara. Después eliges recoger en Casa Blanca o recibirlo por envío nacional. Nada se imprime hasta que tú aceptas la prueba.",
+          "El corte puede ser troquelado o semitroquelado, y el acabado mate, brillante u holográfico. Si dudas entre los dos cortes, revisa la guía de [troquelado vs semitroquelado](/blog/troquelado-vs-semitroquelado-stickers).",
+        ],
+      },
+      {
+        heading: "Qué puedes pedir: stickers de vinil, etiquetas con logo y más",
+        body: [
+          "Para un evento, lo más práctico son los [stickers de vinil personalizados](/productos/stickers-vinil-impermeable) con tu diseño, personaje o foto, que llevan laminado BOPP y resisten agua, sol y rayones. Si necesitas el logo de una marca, existen los [stickers con tu logo](/productos/stickers-logo-personalizado). Tamaños y mínimos están en cada ficha de producto.",
+          "Si buscas ideas para una ocasión concreta, mira la guía de [stickers para bodas y fiestas](/blog/stickers-para-bodas-eventos-y-fiestas). Y si lo tuyo son los útiles escolares, hay una guía de [etiquetas escolares en Guadalajara](/blog/etiquetas-escolares-personalizadas-guadalajara).",
+        ],
+      },
+      {
+        heading: "Recolección en Casa Blanca o envío: cómo recibes tu pedido",
+        body: [
+          "Si estás en Guadalajara o su zona, puedes elegir recolección en una sucursal de paquetería Casa Blanca. Si estás en otra ciudad, el pedido sale por envío nacional a todo México. Los costos y plazos vigentes están en la ficha del producto y en la guía de tiempos.",
+          "Para calcular fechas con un evento en mente, lee [cuánto tarda un pedido](/blog/cuanto-tarda-un-pedido-de-stickers-personalizados) de stickers personalizados.",
+        ],
+      },
+      {
+        heading: "Qué conviene revisar antes de elegir proveedor, más que la cercanía",
+        body: [
+          "Antes de la distancia, revisa cuatro cosas: si te dan prueba digital antes de producir, quién produce y dónde, qué acabado tendrá la etiqueta y qué plazo te dan frente a la fecha de tu evento. Con eso claro, pedir a distancia es una decisión informada.",
+          "En Yume, la prueba digital va antes de imprimir, la producción es en Guadalajara y el acabado lo eliges tú. Si tu pieza va a mojarse, el vinil resiste agua, sol y rayones según la ficha del producto; para entender la diferencia, lee [vinil o papel](/blog/stickers-vinil-vs-papel-diferencias). Si comparas opciones, revisa [Yume frente a imprentas online](/blog/yume-vs-imprentas-online-stickers).",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["donde-imprimir-stickers-personalizados-mexico", "cuanto-tarda-un-pedido-de-stickers-personalizados", "stickers-para-bodas-eventos-y-fiestas", "prueba-digital-pedido-evento-planners"],
+    faq: [
+      {
+        q: "¿Tienen tienda física en Guadalajara?",
+        a: "No. Producimos en Guadalajara, ofrecemos recolección en paquetería Casa Blanca y enviamos a todo México.",
+      },
+      {
+        q: "¿Puedo ver mi diseño antes de que se imprima?",
+        a: "Sí. Te enviamos una prueba digital antes de imprimir y nada se produce hasta que la apruebas.",
+      },
+      {
+        q: "¿Qué acabados y cortes puedo elegir?",
+        a: "El corte puede ser troquelado o semitroquelado, y el acabado mate, brillante u holográfico.",
+      },
+      {
+        q: "¿Pueden enviarme el pedido si vivo fuera de Guadalajara?",
+        a: "Sí, el envío nacional llega a todo México. Los costos y plazos vigentes están en la ficha del producto.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string) {

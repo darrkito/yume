@@ -7766,6 +7766,73 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "custom-labels-and-stickers-near-me-guadalajara",
+    title: "Custom Labels Near Me in Guadalajara: How to Order",
+    description:
+      "Custom labels and stickers near me in Guadalajara: no physical store, produced here, pickup at Casa Blanca or shipping across Mexico.",
+    category: "Guides",
+    publishedAt: "2026-11-17",
+    intro:
+      "If you searched for custom labels near me in Guadalajara, here is the honest answer: Yume has no physical store, but it produces here, offers pickup at Casa Blanca and ships across the country. This guide explains how to order step by step, so your labels and stickers arrive ready for your wedding, baby shower, birthday or company event.",
+    sections: [
+      {
+        heading: "Are there custom labels near me without a physical store?",
+        body: [
+          "Yes. Yume has no physical store, but it produces in Guadalajara, offers pickup at Casa Blanca parcel service branches and ships across Mexico. For custom labels and stickers, being close matters less than seeing a digital proof before printing, knowing the timing and confirming the finish.",
+          "So instead of looking for the nearest point of sale, it helps to know how the order works from start to finish. Here it is step by step, written for weddings, baby showers, birthdays and company events.",
+        ],
+      },
+      {
+        heading: "How to order labels or stickers on WhatsApp step by step",
+        body: [
+          "You message us on WhatsApp with your idea or design, choose the product, cut and finish, get a digital proof and, once you approve it, it is produced in Guadalajara. Then you choose pickup at Casa Blanca or national shipping. Nothing is printed until you accept the proof.",
+          "The cut can be die cut or kiss cut, and the finish matte, glossy or holographic. If you are unsure between the two cuts, read the guide on [die cut vs kiss cut](/en/blog/die-cut-vs-kiss-cut-stickers).",
+        ],
+      },
+      {
+        heading: "What you can order: vinyl stickers, logo labels and more",
+        body: [
+          "For an event, the most practical choice is [custom vinyl stickers](/en/products/waterproof-vinyl-stickers) with your design, character or photo, which carry BOPP lamination and resist water, sun and scratches. If you need a brand logo, there are [logo stickers](/en/products/custom-logo-stickers). Sizes and minimums are listed on each product page.",
+          "For ideas for a specific occasion, see the guide to [stickers for weddings and parties](/en/blog/stickers-for-weddings-events-and-parties). If you are shopping for school supplies, there is a guide to [school labels in Guadalajara](/en/blog/custom-school-labels-guadalajara).",
+        ],
+      },
+      {
+        heading: "Casa Blanca pickup or shipping: how you receive your order",
+        body: [
+          "If you are in Guadalajara or nearby, you can choose pickup at a Casa Blanca parcel service branch. If you are in another city, the order ships across Mexico. Current costs and lead times are on the product page and in our timing guide.",
+          "To work out dates with an event in mind, read [how long an order takes](/en/blog/how-long-do-custom-stickers-take-to-arrive) for custom stickers.",
+        ],
+      },
+      {
+        heading: "What to check before choosing a supplier, more than distance",
+        body: [
+          "Before distance, check four things: whether you get a digital proof before production, who produces and where, what finish the label will have, and what lead time you get against your event date. With that clear, ordering remotely is an informed decision.",
+          "At Yume, the digital proof comes before printing, production is in Guadalajara and you choose the finish. If your piece will get wet, the vinyl resists water, sun and scratches according to the product page; to understand the difference, read [vinyl or paper](/en/blog/vinyl-vs-paper-stickers-differences). If you are comparing options, see [Yume vs online print shops](/en/blog/yume-vs-online-sticker-print-shops).",
+        ],
+      },
+    ],
+    relatedProductSlugs: ["stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["where-to-print-custom-stickers-mexico", "how-long-do-custom-stickers-take-to-arrive", "stickers-for-weddings-events-and-parties", "digital-proof-event-order-planners"],
+    faq: [
+      {
+        q: "Do you have a physical store in Guadalajara?",
+        a: "No. We produce in Guadalajara, offer pickup at Casa Blanca parcel service and ship across Mexico.",
+      },
+      {
+        q: "Can I see my design before it is printed?",
+        a: "Yes. We send a digital proof before printing and nothing is produced until you approve it.",
+      },
+      {
+        q: "Which cuts and finishes can I choose?",
+        a: "The cut can be die cut or kiss cut, and the finish matte, glossy or holographic.",
+      },
+      {
+        q: "Can you ship my order if I live outside Guadalajara?",
+        a: "Yes, national shipping reaches all of Mexico. Current costs and lead times are on the product page.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPostEn(slug: string) {

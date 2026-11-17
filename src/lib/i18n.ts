@@ -104,6 +104,7 @@ export const BLOG_SLUG_EN: Record<string, string> = {
   "etiquetas-stickers-regalos-reyes-magos-rosca": "three-kings-gift-labels-stickers-rosca",
   "dulceros-detalles-fin-de-ano-escolar": "end-of-school-year-party-favor-boxes",
   "detalles-fin-de-ano-clientes-colaboradores-personalizados": "year-end-gifts-for-employees-and-clients-personalized",
+  "etiquetas-stickers-personalizados-cerca-de-mi-guadalajara": "custom-labels-and-stickers-near-me-guadalajara",
 };
 
 export const PRODUCT_SLUG_ES: Record<string, string> = Object.fromEntries(
