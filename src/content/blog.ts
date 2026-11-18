@@ -8170,65 +8170,88 @@ export const blogPosts: BlogPost[] = [
     slug: "etiquetas-stickers-regalos-reyes-magos-rosca",
     title: "Etiquetas Reyes Magos para regalos y rosca",
     description:
-      "Etiquetas Reyes Magos para regalos y rosca: qué poner, cómo elegir tamaño y acabado, ideas para la Candelaria y cuándo pedirlas con prueba digital.",
+      "Etiquetas Reyes Magos para regalos, rosca y Candelaria: qué texto poner, qué tamaño elegir y cuándo pedirlas con prueba digital antes de imprimir.",
     category: "Guías",
     publishedAt: "2026-11-17",
+    modifiedAt: "2026-11-18",
     intro:
-      "Enero llega con la rosca, los regalos de Reyes y, semanas después, la Candelaria. Una etiqueta o un sticker con nombre y mensaje convierte un regalo cualquiera en un detalle que se ve planeado. Aquí tienes qué poner en las etiquetas Reyes Magos para regalos y para la rosca, cómo elegir tamaño y acabado, y en qué orden pedirlas.",
+      "Enero llega con los regalos de Reyes, la rosca y, semanas después, la Candelaria. Una etiqueta o un sticker con nombre y mensaje convierte un regalo cualquiera en un detalle que se ve planeado. Aquí tienes qué poner en las etiquetas Reyes Magos para regalos, rosca y tamales, cómo elegir tamaño y acabado, y cuándo pedirlas para llegar a tiempo.",
     sections: [
       {
         heading: "Etiquetas Reyes Magos para regalos: qué poner en ellas",
         body: [
           "Una etiqueta de Reyes Magos funciona mejor cuando lleva el nombre de quien recibe el regalo y un mensaje corto, como «De parte de los Reyes» o una frase de la familia. Con esos dos datos el regalo se ve pensado, sin saturar el diseño ni competir con el papel.",
+          "Puedes usar frases como «Para Sofía, de los Reyes Magos» o «Con cariño, tu familia». Si el regalo sale de tu negocio, suma tu logo: para eso existen los [stickers con tu logo](/productos/stickers-logo-personalizado).",
         ],
       },
       {
-        heading: "Dos momentos para usarlas: la rosca del 6 de enero y la Candelaria",
+        heading: "Calendario de la rosca: 6 de enero y Candelaria el 2 de febrero",
         body: [
-          "En México la rosca se parte el 6 de enero, Día de Reyes, y la Candelaria es el 2 de febrero. Quien encuentra el muñeco se vuelve padrino o madrina del Niño y organiza la comida de tamales. Eso te da dos momentos para usar etiquetas.",
-          "Según Chilango, el muñeco representa al Niño Jesús, escondido de Herodes por María y José. La tradición mezcla costumbres españolas con otras prehispánicas, así que conviene un diseño sobrio y respetuoso.",
+          "La rosca se parte el 6 de enero, Día de Reyes. Quien encuentra la figura del Niño Dios invita los tamales el 2 de febrero, Día de la Candelaria. Esas son dos fechas con una sola temática, así que puedes pensar un juego de etiquetas para regalos, la rosca y los tamales.",
+          "El 2 de febrero cae 40 días después de Navidad, por la presentación del Niño Jesús en el templo, y en México marca el cierre del ciclo navideño. Muchas familias llevan al Niño Dios vestido a bendecir a la iglesia y luego comen tamales y atole.",
+          "Como es una tradición familiar y con carga religiosa para muchas personas, conviene un diseño sobrio y respetuoso, con el nombre bien visible.",
         ],
       },
       {
-        heading: "Quién las usa: familias, planners, posadas y empresas",
+        heading: "Qué texto poner en cada etiqueta: regalo, rosca y tamales",
         body: [
-          "Las etiquetas de Reyes sirven a familias que quieren regalos bien presentados, a planners que preparan un evento de enero y a empresas que mandan rosca o regalos a clientes y equipo. Cada caso pide un mensaje distinto, pero comparten la misma lógica: nombre, mensaje y un diseño sencillo.",
-          "Si trabajas con clientes, revisa los [detalles para eventos con clientes](/blog/detalles-evento-con-clientes-personalizados) y la página de [planners](/planners). Para equipos de trabajo, la guía de [posadas de empresa](/blog/detalles-posada-empresa-personalizados) también aplica en enero.",
+          "Piensa en tres piezas: la etiqueta del regalo con el nombre y «De parte de los Reyes», la de la caja o bolsa de la rosca con un mensaje de enero, y la de los tamales de la Candelaria. Cada una lleva el nombre o un mensaje corto para que el conjunto se vea parejo.",
+          "Para la etiqueta de los tamales, el nombre de quien invita y una frase como «Hoy toca tamales» bastan. La tabla resume las tres piezas.",
+        ],
+        table: {
+          headers: ["Pieza", "Cuándo se usa", "Qué texto llevar"],
+          rows: [
+            ["Etiqueta del regalo", "6 de enero", "Nombre de quien recibe y «De parte de los Reyes»"],
+            ["Etiqueta de la rosca", "6 de enero", "Mensaje de enero y nombre de quien la regala"],
+            ["Etiqueta de los tamales", "2 de febrero", "Nombre de quien invita y «Hoy toca tamales»"],
+          ],
+        },
+      },
+      {
+        heading: "Etiquetas Reyes Magos para familias, planners y empresas",
+        body: [
+          "Las etiquetas de Reyes sirven a familias que quieren regalos bien presentados, a planners que preparan un evento de enero y a empresas que mandan rosca o regalos a clientes y equipo. Cada caso pide un mensaje distinto, pero comparten la lógica: nombre, mensaje y un diseño sencillo.",
+          "Si trabajas con clientes, revisa los [detalles para eventos con clientes](/blog/detalles-evento-con-clientes-personalizados) y la página de [planners](/planners). Para equipos de trabajo, la guía de [posadas de empresa](/blog/detalles-posada-empresa-personalizados) también aplica en enero, y los [detalles de fin de año para clientes y colaboradores](/blog/detalles-fin-de-ano-clientes-colaboradores-personalizados) te dan más ideas.",
         ],
       },
       {
         heading: "Tamaño, corte y acabado: cómo elegir tu sticker",
         body: [
-          "En los stickers de vinil eliges tamaño, corte y acabado. Hay tres tamaños, chico hasta 4 cm, mediano de 5 a 6 cm y grande de 7 a 8 cm; el corte es troquelado o semitroquelado; y el acabado, mate, brillante u holográfico.",
-          "Los [stickers de vinil personalizados](/productos/stickers-vinil-impermeable) son resistentes al agua, al sol y a rayones, y el pedido mínimo es de 40 piezas. Si el regalo es de tu negocio, existen los [stickers con tu logo](/productos/stickers-logo-personalizado). Para decidir el corte, lee [troquelado o semitroquelado](/blog/troquelado-vs-semitroquelado-stickers).",
+          "En los stickers de vinil eliges tamaño, corte y acabado. Hay tres tamaños: chico hasta 4 cm, mediano de 5 a 6 cm y grande de 7 a 8 cm. El corte es troquelado o semitroquelado, y el acabado es mate, brillante u holográfico.",
+          "Los [stickers de vinil personalizados](/productos/stickers-vinil-impermeable) son resistentes al agua, al sol y a rayones, llevan laminado BOPP y el pedido mínimo es de 40 piezas. Si necesitas una medida más grande o algo específico, se cotiza por WhatsApp.",
+          "Para decidir el corte, lee [troquelado o semitroquelado](/blog/troquelado-vs-semitroquelado-stickers).",
         ],
       },
       {
-        heading: "Qué te da un pedido personalizado frente a un sticker genérico",
+        heading: "Qué te da un pedido personalizado frente a un pack genérico",
         body: [
-          "Los resultados de búsqueda para estas etiquetas muestran packs genéricos de stickers de Reyes, por ejemplo con coronas. En Yume el diseño lleva tu nombre y tu mensaje, te enviamos una prueba digital antes de imprimir y nada se produce hasta que la apruebas.",
+          "Los sets que se venden en línea suelen ser stickers genéricos con coronas de Reyes, iguales para todos. En Yume el diseño lleva tu nombre y tu mensaje, recibes una prueba digital antes de imprimir y nada se produce hasta que la apruebas. Es la diferencia entre un adorno y un detalle tuyo.",
           "Si tu idea es para un evento o un regalo de empresa, escríbenos por WhatsApp y te cotizamos. Los precios y las cantidades los ves en la ficha de cada producto.",
         ],
       },
       {
-        heading: "Cuándo pedir tus etiquetas para llegar a enero",
+        heading: "Cuándo pedir tus etiquetas Reyes Magos para llegar a enero",
         body: [
-          "Antes de imprimir recibes una prueba digital y nada se produce hasta que la apruebas. Los días exactos están en la [guía de tiempos de stickers](/blog/cuanto-tarda-un-pedido-de-stickers-personalizados), y el Día de Reyes es el 6 de enero, así que conviene empezar pronto.",
+          "Pide con tiempo, porque el Día de Reyes es el 6 de enero y antes de producir debes aprobar una prueba digital. Nada se imprime hasta que la apruebas. Los días exactos de producción y envío están en la [guía de tiempos de stickers](/blog/cuanto-tarda-un-pedido-de-stickers-personalizados), con la que puedes contar hacia atrás desde tu fecha.",
         ],
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
-    relatedBlogSlugs: ["etiquetas-navidenas-personalizadas", "detalles-posada-empresa-personalizados", "troquelado-vs-semitroquelado-stickers", "cuanto-tarda-un-pedido-de-stickers-personalizados"],
+    relatedBlogSlugs: ["etiquetas-navidenas-personalizadas", "detalles-posada-empresa-personalizados", "troquelado-vs-semitroquelado-stickers", "cuanto-tarda-un-pedido-de-stickers-personalizados", "detalles-evento-con-clientes-personalizados"],
     sources: [
       {
-        label: "Chilango: Rosca de Reyes, por qué hay que poner los tamales el 2 de febrero si te sale el niño",
-        url: "https://www.chilango.com/noticias/rosca-de-reyes-por-que-hay-que-poner-los-tamales-el-2-de-febrero-si-te-sale-el-nino/",
+        label: "UnoTV: Día de la Candelaria, por qué se comen tamales el 2 de febrero",
+        url: "https://www.unotv.com/nacional/dia-de-la-candelaria-por-que-se-comen-tamales-2-febrero/",
+      },
+      {
+        label: "Pepa Paper: set de stickers de Reyes Magos (ejemplo de pack genérico)",
+        url: "https://pepapaper.com/en/products/set-de-8-stickers-reyes-magos",
       },
     ],
     faq: [
       {
-        q: "¿Qué representa el muñeco de la rosca?",
-        a: "Según Chilango, representa al Niño Jesús, escondido de Herodes por María y José.",
+        q: "¿Qué quiere decir la palabra tamal?",
+        a: "Según UnoTV, viene del náhuatl «tamalli», que significa «envuelto», y los tamales tienen origen prehispánico.",
       },
       {
         q: "¿Los stickers de vinil resisten el agua y el sol?",
@@ -8241,6 +8264,10 @@ export const blogPosts: BlogPost[] = [
       {
         q: "¿Puedo pedir una medida especial?",
         a: "Sí. Si necesitas algo más grande o específico, escríbenos por WhatsApp y lo cotizamos.",
+      },
+      {
+        q: "¿Veo mi etiqueta antes de que se imprima?",
+        a: "Sí. Te enviamos una prueba digital y nada se produce hasta que la apruebas.",
       },
     ],
   },

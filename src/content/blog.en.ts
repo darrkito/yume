@@ -7748,65 +7748,88 @@ export const blogPostsEn: BlogPost[] = [
     slug: "three-kings-gift-labels-stickers-rosca",
     title: "Three Kings gift labels and stickers for the rosca",
     description:
-      "Three Kings gift labels and rosca stickers: what to print, how to pick size and finish, ideas for Candlemas and how to order with a digital proof.",
+      "Three Kings gift labels for gifts, rosca and Candlemas: what text to print, which size to pick and when to order with a digital proof.",
     category: "Guides",
     publishedAt: "2026-11-17",
+    modifiedAt: "2026-11-18",
     intro:
-      "January brings the rosca, the Three Kings gifts and, a few weeks later, Candlemas. A label or sticker with a name and a message turns an ordinary gift into a detail that looks planned. Here is what to put on Three Kings gift labels and rosca stickers, how to pick size and finish, and the order in which to request them.",
+      "January brings the Three Kings gifts, the rosca and, a few weeks later, Candlemas. A label or sticker with a name and a message turns an ordinary gift into a detail that looks planned. Here is what to put on Three Kings gift labels for gifts, rosca and tamales, how to pick size and finish, and when to order so they arrive on time.",
     sections: [
       {
         heading: "Three Kings gift labels: what to put on them",
         body: [
           "A Three Kings label works best when it carries the recipient's name and a short message, such as «From the Three Kings» or a family line. With those two details the gift looks thought out, without crowding the design or competing with the wrapping.",
+          "You can use lines like «For Sofía, from the Three Kings» or «With love, your family». If the gift comes from your business, add your logo: that is what the [stickers with your logo](/en/products/custom-logo-stickers) are for.",
         ],
       },
       {
-        heading: "Two moments to use them: the January 6 rosca and Candlemas",
+        heading: "The rosca calendar: January 6 and Candlemas on February 2",
         body: [
-          "In Mexico the rosca is shared on January 6, Three Kings Day, and Candlemas is on February 2. Whoever finds the figurine becomes godfather or godmother of the Child and organizes the tamales meal. That gives you two moments to use labels.",
-          "According to Chilango, the figurine represents the Baby Jesus, hidden from Herod by Mary and Joseph. The tradition blends Spanish customs with pre-Hispanic ones, so a sober, respectful design fits best.",
+          "The rosca is shared on January 6, Three Kings Day. Whoever finds the Baby Jesus figurine invites everyone to tamales on February 2, Candlemas. Those are two dates with one theme, so you can plan one set of labels for the gifts, the rosca and the tamales.",
+          "February 2 falls 40 days after Christmas, for the presentation of the Child Jesus in the temple, and in Mexico it closes the Christmas cycle. Many families take a dressed Baby Jesus to church to be blessed and then eat tamales and atole.",
+          "Because it is a family tradition with religious meaning for many people, a sober, respectful design with the name clearly visible fits best.",
         ],
       },
       {
-        heading: "Who uses them: families, planners, posadas and companies",
+        heading: "What text to put on each label: gift, rosca and tamales",
+        body: [
+          "Think of three pieces: the gift label with the name and «From the Three Kings», the one for the rosca box or bag with a January message, and the one for the Candlemas tamales. Each carries a name or a short message so the set looks consistent.",
+          "For the tamales label, the name of whoever invites plus a line such as «Today it's tamales» is enough. The table sums up the three pieces.",
+        ],
+        table: {
+          headers: ["Piece", "When it is used", "What text to print"],
+          rows: [
+            ["Gift label", "January 6", "Recipient's name and «From the Three Kings»"],
+            ["Rosca label", "January 6", "A January message and the giver's name"],
+            ["Tamales label", "February 2", "Host's name and «Today it's tamales»"],
+          ],
+        },
+      },
+      {
+        heading: "Three Kings labels for families, planners and companies",
         body: [
           "Three Kings labels suit families who want well presented gifts, planners preparing a January event and companies sending rosca or gifts to clients and teams. Each case needs a different message, but they share the same logic: a name, a message and a simple design.",
-          "If you work with clients, see the [custom details for client events](/en/blog/custom-details-for-client-events) and the [planners](/en/planners) page. For teams, the [company posada favors](/en/blog/personalized-company-posada-favors) guide also applies in January.",
+          "If you work with clients, see the [custom details for client events](/en/blog/custom-details-for-client-events) and the [planners](/en/planners) page. For teams, the [company posada favors](/en/blog/personalized-company-posada-favors) guide also applies in January, and the [year-end gifts for employees and clients](/en/blog/year-end-gifts-for-employees-and-clients-personalized) give you more ideas.",
         ],
       },
       {
         heading: "Size, cut and finish: how to choose your sticker",
         body: [
           "With vinyl stickers you choose size, cut and finish. There are three sizes: small up to 4 cm, medium 5 to 6 cm and large 7 to 8 cm. The cut is die cut or kiss cut, and the finish is matte, glossy or holographic.",
-          "[Custom vinyl stickers](/en/products/waterproof-vinyl-stickers) are resistant to water, sun and scratches, and the minimum order is 40 pieces. If the gift comes from your business, there are [stickers with your logo](/en/products/custom-logo-stickers). To decide the cut, read [die cut vs kiss cut](/en/blog/die-cut-vs-kiss-cut-stickers).",
+          "[Custom vinyl stickers](/en/products/waterproof-vinyl-stickers) are resistant to water, sun and scratches, carry a BOPP laminate and the minimum order is 40 pieces. If you need a larger size or something specific, we quote it on WhatsApp.",
+          "To decide the cut, read [die cut vs kiss cut](/en/blog/die-cut-vs-kiss-cut-stickers).",
         ],
       },
       {
-        heading: "What a custom order gives you over a generic sticker",
+        heading: "What a custom order gives you over a generic pack",
         body: [
-          "Search results for these labels show generic Three Kings sticker packs, for example with crowns on them. At Yume the design carries your name and message, we send a digital proof before printing and nothing is produced until you approve it.",
+          "Online sets are usually generic stickers with Three Kings crowns, the same for everyone. At Yume the design carries your name and your message, you get a digital proof before printing and nothing is produced until you approve it. That is the difference between decoration and a detail that is yours.",
           "If your idea is for an event or a company gift, message us on WhatsApp and we will quote it. Prices and quantities are on each product page.",
         ],
       },
       {
-        heading: "When to order your labels to arrive for January",
+        heading: "When to order your Three Kings labels to arrive for January",
         body: [
-          "Before printing you receive a digital proof of your labels with your name and message, and nothing is produced until you approve it. Exact days are in the [sticker timing guide](/en/blog/how-long-do-custom-stickers-take-to-arrive), and Three Kings Day is January 6, so it pays to start early.",
+          "Order early, because Three Kings Day is January 6 and you must approve a digital proof before production. Nothing is printed until you approve it. Exact production and shipping days are in the [sticker timing guide](/en/blog/how-long-do-custom-stickers-take-to-arrive), so you can count back from your date.",
         ],
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
-    relatedBlogSlugs: ["custom-christmas-labels", "personalized-company-posada-favors", "die-cut-vs-kiss-cut-stickers", "how-long-do-custom-stickers-take-to-arrive"],
+    relatedBlogSlugs: ["custom-christmas-labels", "personalized-company-posada-favors", "die-cut-vs-kiss-cut-stickers", "how-long-do-custom-stickers-take-to-arrive", "custom-details-for-client-events"],
     sources: [
       {
-        label: "Chilango: Rosca de Reyes, why you put out tamales on February 2 if you find the baby",
-        url: "https://www.chilango.com/noticias/rosca-de-reyes-por-que-hay-que-poner-los-tamales-el-2-de-febrero-si-te-sale-el-nino/",
+        label: "UnoTV: Candlemas Day, why tamales are eaten on February 2 (in Spanish)",
+        url: "https://www.unotv.com/nacional/dia-de-la-candelaria-por-que-se-comen-tamales-2-febrero/",
+      },
+      {
+        label: "Pepa Paper: Three Kings sticker set (example of a generic pack)",
+        url: "https://pepapaper.com/en/products/set-de-8-stickers-reyes-magos",
       },
     ],
     faq: [
       {
-        q: "What does the figurine in the rosca represent?",
-        a: "According to Chilango, it represents the Baby Jesus, hidden from Herod by Mary and Joseph.",
+        q: "What does the word tamal mean?",
+        a: "According to UnoTV, it comes from the Nahuatl «tamalli», meaning «wrapped», and tamales have pre-Hispanic origins.",
       },
       {
         q: "Do vinyl stickers resist water and sun?",
@@ -7819,6 +7842,10 @@ export const blogPostsEn: BlogPost[] = [
       {
         q: "Can I ask for a special size?",
         a: "Yes. If you need something larger or more specific, message us on WhatsApp and we will quote it.",
+      },
+      {
+        q: "Do I see my label before it is printed?",
+        a: "Yes. We send you a digital proof and nothing is produced until you approve it.",
       },
     ],
   },
