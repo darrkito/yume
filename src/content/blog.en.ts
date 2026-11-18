@@ -7925,42 +7925,68 @@ export const blogPostsEn: BlogPost[] = [
       "Year-end gifts for employees and clients: budget by level, restrained personalization and what to confirm with your accountant.",
     category: "Guides",
     publishedAt: "2026-11-17",
+    modifiedAt: "2026-11-18",
     intro:
-      "Year-end brings posadas, closings and thank-yous for your team and your clients. To get the gift right, set a budget by level, personalize it without it looking like advertising and order in time. This guide is for companies and planners who organize posadas or welcome kits.",
+      "Year-end brings posadas, closings and thank-yous for your team and your clients. To get year-end gifts for employees and clients right, set a budget by level, personalize without it looking like advertising, understand the basic tax rule and order in time. This guide is for companies and planners who organize posadas, welcome kits or client deliveries.",
     sections: [
       {
-        heading: "How much to spend per person on year-end gifts",
+        heading: "Year-end gifts for employees: how much to spend per level",
         body: [
-          "According to Pluxee, a benefits provider, the guide budget per person in Mexico is $300 to $700 MXN for operational or large teams, $700 to $1,500 MXN for middle managers, and over $1,500 MXN for executives and key clients. It is a guide, not a rule.",
-          "If you already have a budget per person, tell us on WhatsApp how many people it is and we will look at which gift fits, for example a [favor box with a name](/en/products/personalized-party-favor-boxes).",
+          "As a reference, Pluxee, a benefits provider, suggests $300 to $700 MXN per person for operational or large teams, $700 to $1,500 MXN for middle managers, and over $1,500 MXN for key clients and executives. It is a segmentation guide, not a rule.",
+          "With three groups defined, you set the budget for each before choosing the piece and avoid improvising at the end. If you already have your amount per person, tell us on WhatsApp how many people it is and we will look at which gift fits, for example a [favor box with a name](/en/products/personalized-party-favor-boxes).",
         ],
+        table: {
+          headers: ["Level", "Reference per person (Pluxee)"],
+          rows: [
+            ["Operational or large teams", "$300 to $700 MXN"],
+            ["Middle managers", "$700 to $1,500 MXN"],
+            ["Key clients and executives", "Over $1,500 MXN"],
+          ],
+        },
       },
       {
         heading: "How to personalize a gift without it looking like advertising",
         body: [
-          "Personalize with each person's name, a short message and a restrained design. Pluxee recommends a discreet logo so the gift does not look like a promotional item, and suggests pairing the kit with a message from leadership. That way the recipient feels thought of, not handed advertising.",
-          "With Yume you can personalize a [personalized favor box](/en/products/personalized-party-favor-boxes) with your brand name and logo, or use [logo stickers](/en/products/custom-logo-stickers) to seal a package.",
+          "Personalize with each person's name, a short message and a restrained design. Pluxee recommends a discreet logo so the gift does not look promotional. That way the recipient feels someone thought of them, not that they received advertising. With Yume, a digital proof is sent before production.",
+          "With Yume you can personalize a [personalized favor box](/en/products/personalized-party-favor-boxes) with your brand name and logo, or use [logo stickers](/en/products/custom-logo-stickers) to seal a package. In the digital proof you review the name, the message and the logo before anything is produced.",
         ],
       },
       {
-        heading: "Common gift ideas and where a handmade detail stands out",
+        heading: "A personalized detail versus a catalog gift",
         body: [
-          "Guides from other providers repeat kits with sweatshirts, thermoses or mugs, vouchers, gadgets, gourmet baskets and days off. Most are catalog gifts. What you see least is a piece made with a name, a message and a design of its own for each person or event, and that is where a personalized detail stands out.",
-          "If you are organizing a posada, see the [company posada favors](/en/blog/personalized-company-posada-favors). For clients, see the [details for client events](/en/blog/custom-details-for-client-events).",
+          "A catalog gift looks like the one any other company hands out. A personalized detail carries the recipient's name, a message and a design made for your event or brand, with a digital proof before production. That difference makes it look planned, especially at posadas and client deliveries.",
+          "Guides from corporate gift providers tend to cover deductibility, budget by level and logistics, and treat the gift as one more catalog item. If you are organizing a posada, see the [company posada favors](/en/blog/personalized-company-posada-favors). For clients, see the [details for client events](/en/blog/custom-details-for-client-events).",
+          "For a gift exchange among coworkers, the guide to [Christmas gift exchange details](/en/blog/custom-details-for-christmas-gift-exchange) has more ideas. And if your company is celebrating a milestone, see the [company anniversary details](/en/blog/company-anniversary-custom-details).",
         ],
       },
       {
         heading: "Employees and clients are treated differently for tax purposes",
         body: [
-          "According to Pluxee, gifts to employees can be deductible if there is a CFDI invoice, accounting records and a proper payment method, and gifts to clients in general are not, unless they relate directly to the sale and are offered to clients in general. It is a commercial guide: confirm with accounting.",
-          "The same guide says payments over $2,000 MXN must be made by transfer, nominative check, card or another authorized method. Confirm with your accountant what applies to your company.",
+          "In general, gifts to clients are not deductible, unless they relate directly to the sale of goods or services and are offered to clients in a general way (LISR art. 28, section III). A one-off gift for a specific client is not automatically deductible. Confirm with your accountant.",
+          "For employees, Pluxee says the gift can be 100% deductible if it is not exempt income for the worker and the tax requirements are met, such as a CFDI invoice and accounting records. It is a provider's blog, not an SAT ruling, so confirm the treatment with accounting.",
+          "The same guide notes that payments over $2,000 MXN must be made by transfer, nominative check or card (LISR art. 27). Check with your accountant what applies to your company before buying.",
+        ],
+      },
+      {
+        heading: "The year-end gift does not replace the aguinaldo",
+        body: [
+          "No. The aguinaldo is a labor benefit that the Federal Labor Law (art. 87) requires you to pay before December 20, that is, by December 19, 2026, with a minimum of 15 days of salary. The year-end gift is delivered separately and does not replace it.",
+          "Keep that date in mind when you build your calendar: if you hand out the gift together with the posada, it is an extra gesture and not part of the aguinaldo payment.",
         ],
       },
       {
         heading: "When to order year-end personalized gifts",
         body: [
-          "Order several weeks ahead if there is personalization, volume or shipping to several sites, as Pluxee recommends. That guide gives no specific deadline. A digital proof is reviewed before production, so leave room to approve it before your posadas and before any shipping to other sites.",
-          "To know how long your order takes, message us on WhatsApp with your event date. If you coordinate several orders, lean on the [planner checklist](/en/blog/planner-checklist-custom-favors-order-event) and the guide to the [digital proof](/en/blog/digital-proof-event-order-planners).",
+          "Order several weeks ahead, especially if there is personalization, volume or shipping to several locations. Buying at the last minute reduces availability and personalization. Pluxee gives no exact number of weeks, so for your specific date message us on WhatsApp and we will tell you the production times.",
+          "Count backwards from the date of your posada or delivery, and leave room to approve the digital proof, produce and, if needed, ship. If you coordinate several orders, lean on the [planner checklist](/en/blog/planner-checklist-custom-favors-order-event) and the guide to the [digital proof](/en/blog/digital-proof-event-order-planners).",
+        ],
+      },
+      {
+        heading: "How to order if you organize your company's posada or delivery",
+        body: [
+          "If you coordinate the posada or the delivery, first define the list of people, the budget by level and the date. With that, Yume prepares the design, sends you a digital proof and you work directly on WhatsApp until approval. Nothing is produced until you approve the proof.",
+          "You can use one restrained design for the whole team and add each person's name, or a version for key clients with your logo. If you are a planner or an agency, the [guide for planners](/en/blog/guide-for-planners-working-with-custom-favors-supplier) explains how to work with a custom favors supplier.",
+          "The favor box arrives assembled and empty, so you choose what goes inside.",
         ],
       },
     ],
@@ -7968,16 +7994,36 @@ export const blogPostsEn: BlogPost[] = [
     relatedBlogSlugs: ["personalized-company-posada-favors", "custom-details-for-client-events", "personalized-christmas-treat-boxes", "company-anniversary-custom-details", "custom-details-for-christmas-gift-exchange"],
     sources: [
       { label: "Pluxee: ideal corporate gift guide", url: "https://www.pluxee.mx/blog/guia-regalo-corporativo-ideal/" },
-      { label: "Pluxee: Christmas gifts for employees", url: "https://www.pluxee.mx/blog/regalos-navidenos-empleados/" },
+      { label: "Uno TV: when the 2026 aguinaldo is due, deadline and calculation", url: "https://www.unotv.com/negocios/cuando-cae-el-aguinaldo-2026-fecha-limite-y-calculo-del-pago/" },
     ],
     faq: [
       {
         q: "Are the budgets by level a rule?",
-        a: "No. They are a guide from Pluxee, a benefits provider, to organize how much to spend per person by level.",
+        a: "No. They are a guide from Pluxee, a benefits provider, to organize how much to spend per person: $300 to $700 MXN for operational teams, $700 to $1,500 MXN for middle managers and over $1,500 MXN for key clients.",
+      },
+      {
+        q: "Can I deduct gifts to clients?",
+        a: "In general no. The exception is that they relate directly to the sale of goods or services and are offered to clients in a general way. A one-off gift for a specific client is not automatically deductible. Confirm with your accountant.",
+      },
+      {
+        q: "Are gifts to employees deductible?",
+        a: "According to Pluxee they can be 100% deductible if they are not exempt income for the worker and the tax requirements are met. It is a provider's blog, not an SAT ruling: confirm with accounting.",
       },
       {
         q: "What should I keep when buying gifts for the team?",
-        a: "According to Pluxee, the CFDI invoice, the payment receipt and proof of who received the gift. Confirm it with your accountant.",
+        a: "According to Pluxee, the CFDI invoice, the accounting record and, as good practice, proof of who received the gift. Confirm it with your accountant.",
+      },
+      {
+        q: "Does the year-end gift replace the aguinaldo?",
+        a: "No. The aguinaldo is paid before December 20, by December 19, 2026, and the minimum is 15 days of salary. The gift is delivered separately.",
+      },
+      {
+        q: "How far ahead should I order?",
+        a: "Several weeks ahead if there is personalization, volume or shipping to several locations. Pluxee gives no exact number of weeks, so message us on WhatsApp with your date and we will tell you the production times.",
+      },
+      {
+        q: "Can I add my company logo?",
+        a: "Yes. The personalized favor box carries your brand name and logo, and you review a digital proof before production. Pluxee recommends a discreet logo so the gift does not look promotional.",
       },
     ],
   },
