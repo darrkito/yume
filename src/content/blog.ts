@@ -6331,20 +6331,43 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "que-dulces-poner-en-dulcero-de-boda",
-    title: "Qué dulces poner en un dulcero de boda: ideas para adultos",
+    title: "Ideas de dulces para dulceros: boda, XV años y baby shower",
     description:
-      "Qué dulces poner en un dulcero de boda para adultos: ideas por perfil, cuántos tipos elegir, cuántos gramos por invitado y cómo presentarlos.",
+      "Ideas de dulces para dulceros de boda, XV años y baby shower: qué poner según el evento, cuántos tipos elegir, cuánto calcular y cómo presentarlos.",
     category: "Guías",
     publishedAt: "2026-11-09",
-    modifiedAt: "2026-11-10",
+    modifiedAt: "2026-11-18",
     intro:
-      "Un dulcero de boda no necesita ser una mesa enorme de golosinas. Si tus invitados son adultos, lo que cuenta es una selección corta, con sabores cuidados y coordinada con el resto del banquete. Esta guía es para ti, para tu pareja y para la wedding planner: qué dulces poner, cuántos tipos elegir, cuántos gramos calcular por invitado y cómo presentarlos.",
+      "Las ideas de dulces para dulceros cambian según el evento: una boda pide elegancia, unos XV años piden color y un baby shower pide ternura. Esta guía es para ti, para tu pareja y para la wedding planner: qué dulces poner según la ocasión, cuántos tipos elegir, cuántos gramos calcular por invitado y cómo presentarlos.",
     sections: [
+      {
+        heading: "Ideas de dulces para dulceros según el evento",
+        body: [
+          "Las mejores ideas de dulces para dulceros cambian con el evento. En una boda conviene algo elegante y discreto que combine con la paleta; en unos XV años, más color, tema y variedad; en un baby shower, dulces suaves con un detalle de bebé. Elige primero el estilo y luego las piezas.",
+          "Bodas.net propone macarons, trufas y pastelitos mini para un estilo más elegante, y gomitas, nubes, mini donuts, bombones, galletas decoradas y cake pops para uno más lúdico. También insiste en elegir dulces que, además de ricos, sean visuales y combinen con la temática del evento.",
+          "Para ver cada ocasión con más detalle, revisa nuestras ideas de [dulceros para XV años](/blog/dulceros-para-xv-anos-elegantes), los [recuerdos de baby shower](/blog/recuerdos-baby-shower-personalizados) y la guía de [dulceros para eventos sociales](/blog/dulceros-para-eventos-sociales-boda-xv-baby-shower).",
+        ],
+        table: {
+          headers: ["Evento", "Estilo", "Ideas de dulces"],
+          rows: [
+            ["Boda", "Elegante y discreto", "Macarons, trufas y pastelitos mini"],
+            ["XV años", "Más color y variedad", "Gomitas, nubes, galletas decoradas y cake pops en los colores del tema"],
+            ["Baby shower", "Suave, con detalle de bebé", "Nubes, bombones y galletas decoradas en tonos suaves"],
+          ],
+        },
+      },
+      {
+        heading: "Dulcero individual o mesa de dulces: cuál elegir",
+        body: [
+          "Un dulcero individual es un envase por invitado, con su nombre; una mesa de dulces es una mesa central donde cada quien se sirve. Pueden convivir, pero resuelven cosas distintas: el dulcero es un recuerdo personal y la mesa es parte de la decoración.",
+          "Bodas.net recomienda recipientes transparentes y pinzas para servirse en una mesa de dulces. En un dulcero individual cada invitado recibe su envase listo, con el nombre y la temática del evento. Si te inclinas por la mesa, revisa la guía de [mesa de dulces para boda](/blog/mesa-de-dulces-para-boda).",
+        ],
+      },
       {
         heading: "Qué dulces poner en un dulcero de boda para adultos",
         body: [
           "Para invitados adultos conviene una selección corta y con carácter: chocolate amargo, frutos secos, cítricos, algún toque con licor y un dulce clásico para quien prefiere lo sencillo. Elige piezas que se coman en un bocado y que combinen con el menú, en lugar de llenar la mesa de golosinas infantiles.",
-          "Un dulcero es más pequeño que una mesa de dulces completa. Si lo que buscas es una mesa grande, revisa nuestra guía de [mesa de dulces para boda](/blog/mesa-de-dulces-para-boda). Si quieres más ideas de relleno, revisa [qué poner en un dulcero](/blog/que-poner-en-un-dulcero).",
+          "Un dulcero es más pequeño que una mesa de dulces completa. Si quieres más ideas de relleno, revisa [qué poner en un dulcero](/blog/que-poner-en-un-dulcero).",
         ],
       },
       {
@@ -6412,7 +6435,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "mesa-de-dulces-para-boda", "cuantos-dulceros-pedir-para-una-boda"],
+    relatedBlogSlugs: ["que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "mesa-de-dulces-para-boda", "cuantos-dulceros-pedir-para-una-boda", "dulceros-para-xv-anos-elegantes", "recuerdos-baby-shower-personalizados", "dulceros-para-eventos-sociales-boda-xv-baby-shower"],
     faq: [
       {
         q: "¿Cuántos gramos de dulce calculo por invitado?",
@@ -6427,6 +6450,14 @@ export const blogPosts: BlogPost[] = [
         a: "Una calculadora argentina recomienda de 1 a 1.5 bolsitas por invitado.",
       },
       {
+        q: "¿Qué dulces poner en un dulcero de XV años o baby shower?",
+        a: "Para un estilo más lúdico, Bodas.net propone gomitas, nubes, mini donuts, bombones, galletas decoradas y cake pops. Elige los colores según la temática del evento.",
+      },
+      {
+        q: "¿Debo señalar los alérgenos de los dulces?",
+        a: "Bodas.net aconseja etiquetar los sabores, señalar los alérgenos y ofrecer opciones sin gluten, sin azúcar o veganas.",
+      },
+      {
         q: "¿Los dulceros incluyen dulces?",
         a: "No. El dulcero llega armado y vacío, así que tú eliges lo que lleva dentro.",
       },
@@ -6434,6 +6465,10 @@ export const blogPosts: BlogPost[] = [
         q: "¿Qué incluye la personalización del dulcero?",
         a: "El nombre y la temática que elijas. Te mandamos una prueba digital antes de producir.",
       },
+    ],
+    sources: [
+      { label: "Bodas.net: todo lo que debéis saber antes de montar una candy bar", url: "https://www.bodas.net/articulos/todo-lo-que-debeis-saber-antes-de-montar-una-candy-bar--c2448" },
+      { label: "Bodas.net: cómo decorar la mesa de dulces de la boda", url: "https://www.bodas.net/articulos/como-decorar-la-mesa-de-dulces-de-la-boda--c960" },
     ],
   },
   {

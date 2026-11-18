@@ -5957,20 +5957,43 @@ export const blogPostsEn: BlogPost[] = [
   },
   {
     slug: "what-sweets-to-put-in-a-wedding-candy-dish",
-    title: "What sweets to put in a wedding candy dish: ideas for adults",
+    title: "Candy dish ideas for weddings, XV años and baby showers",
     description:
-      "What sweets to put in a wedding candy dish for adults: ideas by profile, how many kinds to pick, grams per guest and how to present them.",
+      "Candy dish ideas for weddings, XV años and baby showers: what to put by event, how many kinds to pick, how much to plan and how to present them.",
     category: "Guides",
     publishedAt: "2026-11-09",
-    modifiedAt: "2026-11-10",
+    modifiedAt: "2026-11-18",
     intro:
-      "A wedding candy dish does not need to be a huge table of candy. With adult guests, what counts is a short selection, with well-chosen flavors and coordinated with the rest of the banquet. This guide is for you, your partner and the wedding planner: which sweets to put, how many kinds to pick, how many grams to plan per guest and how to present them.",
+      "Ideas for sweets to put in a candy dish change with the event: a wedding calls for elegance, XV años call for color and a baby shower calls for tenderness. This guide is for you, your partner and the wedding planner: which sweets to put by occasion, how many kinds to pick, how many grams to plan per guest and how to present them.",
     sections: [
+      {
+        heading: "Candy dish ideas by event",
+        body: [
+          "The best sweets for a candy dish change with the event. A wedding calls for something elegant and discreet that matches the palette; XV años call for more color, theme and variety; a baby shower calls for soft sweets with a baby touch. Pick the style first, then the pieces.",
+          "Bodas.net suggests macarons, truffles and mini pastries for a more elegant style, and gummies, marshmallows, mini donuts, chocolates, decorated cookies and cake pops for a more playful one. It also insists on choosing sweets that look good and match the theme of the event.",
+          "For more detail on each occasion, see our ideas for [elegant quinceañera candy boxes](/en/blog/elegant-quinceanera-candy-boxes), [baby shower favors](/en/blog/personalized-baby-shower-favors) and the guide to [wedding, XV and baby shower favor boxes](/en/blog/wedding-quinceanera-baby-shower-favor-boxes).",
+        ],
+        table: {
+          headers: ["Event", "Style", "Sweet ideas"],
+          rows: [
+            ["Wedding", "Elegant and discreet", "Macarons, truffles and mini pastries"],
+            ["XV años", "More color and variety", "Gummies, marshmallows, decorated cookies and cake pops in the theme colors"],
+            ["Baby shower", "Soft, with a baby touch", "Marshmallows, chocolates and decorated cookies in soft tones"],
+          ],
+        },
+      },
+      {
+        heading: "Individual candy dish or candy table: which to choose",
+        body: [
+          "An individual candy dish is one container per guest, with their name on it; a candy table is a central display where everyone serves themselves. They can coexist, but they solve different things: the candy dish is a personal keepsake and the table is part of the decor.",
+          "Bodas.net recommends transparent containers and tongs for self-service on a candy table. With an individual candy dish, each guest receives a ready container with the name and the theme of the event. If you lean toward a table, see our guide to the [wedding candy table](/en/blog/wedding-candy-table-custom-candy-boxes).",
+        ],
+      },
       {
         heading: "What sweets to put in a wedding candy dish for adults",
         body: [
           "For adult guests, a short selection with character works best: dark chocolate, nuts, citrus, a touch of liqueur and one classic sweet for anyone who prefers something simple. Pick pieces that can be eaten in one bite and that go with the menu, instead of filling the table with children's candy.",
-          "A candy dish is smaller than a full candy table. If you want a large table, see our guide to the [wedding candy table](/en/blog/wedding-candy-table-custom-candy-boxes). For more filling ideas, see [what to put in a party favor box](/en/blog/what-to-put-in-a-party-favor-box).",
+          "A candy dish is smaller than a full candy table. For more filling ideas, see [what to put in a party favor box](/en/blog/what-to-put-in-a-party-favor-box).",
         ],
       },
       {
@@ -6038,7 +6061,7 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["what-to-put-in-a-party-favor-box", "personalized-party-favor-boxes-guadalajara", "wedding-candy-table-custom-candy-boxes", "how-many-candy-boxes-to-order-for-a-wedding"],
+    relatedBlogSlugs: ["what-to-put-in-a-party-favor-box", "personalized-party-favor-boxes-guadalajara", "wedding-candy-table-custom-candy-boxes", "how-many-candy-boxes-to-order-for-a-wedding", "elegant-quinceanera-candy-boxes", "personalized-baby-shower-favors", "wedding-quinceanera-baby-shower-favor-boxes"],
     faq: [
       {
         q: "How many grams of sweets should I plan per guest?",
@@ -6053,6 +6076,14 @@ export const blogPostsEn: BlogPost[] = [
         a: "An Argentine calculator recommends 1 to 1.5 small bags per guest.",
       },
       {
+        q: "What sweets can I put in a candy dish for XV años or a baby shower?",
+        a: "For a more playful style, Bodas.net suggests gummies, marshmallows, mini donuts, chocolates, decorated cookies and cake pops. Choose the colors to match the theme of the event.",
+      },
+      {
+        q: "Should I flag allergens on the sweets?",
+        a: "Bodas.net advises labeling flavors, flagging allergens and offering gluten-free, sugar-free or vegan options.",
+      },
+      {
         q: "Do the candy dishes come with sweets?",
         a: "No. The candy dish arrives assembled and empty, so you choose what goes inside.",
       },
@@ -6060,6 +6091,10 @@ export const blogPostsEn: BlogPost[] = [
         q: "What does personalization of the candy dish include?",
         a: "The name and the theme you choose. We send a digital proof before production.",
       },
+    ],
+    sources: [
+      { label: "Bodas.net: everything to know before setting up a candy bar (in Spanish)", url: "https://www.bodas.net/articulos/todo-lo-que-debeis-saber-antes-de-montar-una-candy-bar--c2448" },
+      { label: "Bodas.net: how to decorate the wedding candy table (in Spanish)", url: "https://www.bodas.net/articulos/como-decorar-la-mesa-de-dulces-de-la-boda--c960" },
     ],
   },
   {
