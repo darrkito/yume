@@ -7572,8 +7572,9 @@ export const blogPostsEn: BlogPost[] = [
       "Ideas for personalized details for your Christmas gift exchange: what to personalize for secret Santa, stolen gift and posada, and when to order.",
     category: "Guides",
     publishedAt: "2026-11-17",
+    modifiedAt: "2026-11-18",
     intro:
-      "A Christmas gift exchange works best when the detail fits the format. Here are personalized gift ideas for secret Santa, stolen gift and posada, what to personalize in each one and when to order.",
+      "A Christmas gift exchange works best when the detail fits the format. Here are personalized gift ideas for secret Santa, stolen gift and posada, a spending reference, how to avoid name or timing mistakes and when to order.",
     sections: [
       {
         heading: "What to personalize in a Christmas gift exchange",
@@ -7594,6 +7595,15 @@ export const blogPostsEn: BlogPost[] = [
         body: [
           "In the stolen gift game the group agrees on a type of gift and a price cap, and each player can steal a gift that is already open. Since anyone can end up with it, choose a Christmas-themed design without a personal name, with seasonal colors and motifs that anyone would like.",
           "According to Publimetro, it is a variant of Secret Santa that spread on social media in 2025. In the mini gifts version, each person buys as many gifts as there are players.",
+          "Another common alternative is the white elephant, where everyone brings a wrapped gift, unlabeled and within the budget. Since it is not meant for anyone in particular, a gift with a name fits secret Santa better.",
+        ],
+      },
+      {
+        heading: "How much to spend on a Christmas gift exchange in Mexico",
+        body: [
+          "As a 2024 reference, a casino.mx survey cited by Expansión put the average spend at 773 pesos per person. That figure is two years old and is not a cap for your group. Set the budget before the draw and tell everyone so the gifts feel even.",
+          "In the same article, women spend an average of 970 pesos per gift and men 590. Also, 73% of consumers planned to pay for gifts with their aguinaldo (year-end bonus).",
+          "Secret Santa guides agree on four rules: set the budget before the draw, draw names randomly and in secret, share wish lists or theme limits, and set the exchange date early. Their dollar ranges are from the U.S. and are not a reference for Mexico.",
         ],
       },
       {
@@ -7607,7 +7617,15 @@ export const blogPostsEn: BlogPost[] = [
         heading: "For planners and organizers: a polished presentation",
         body: [
           "If you organize the exchange or you are a planner, a small-batch detail with a polished presentation makes the event look planned. The practical approach is to define the format, the design and the quantity before ordering, and approve a digital proof before anything is produced.",
-          "If you work on client events, the [guide for planners](/en/blog/guide-for-planners-working-with-custom-favors-supplier) explains how to coordinate orders with a custom favors supplier.",
+          "If you work on client events, the [guide for planners](/en/blog/guide-for-planners-working-with-custom-favors-supplier) explains how to coordinate orders with a custom favors supplier, and the [planner checklist](/en/blog/planner-checklist-custom-favors-order-event) helps you get everything ready before ordering.",
+        ],
+      },
+      {
+        heading: "How to avoid name and timing mistakes",
+        body: [
+          "Two mistakes can be avoided with time: a misspelled name and an order placed too late. To manage both, confirm the spelling of each name once the draw is done, review the digital proof carefully before approving it and message us with the date of your exchange to find out what can arrive on time.",
+          "If the draw happens late and a name is only known at the last minute, one option is a themed design without a name, like the one for stolen gift, so you do not depend on that detail. In an office group, it helps if one person gathers the list and the quantity and messages us on WhatsApp.",
+          "To understand how a proof is reviewed before production, read about the [digital proof for events](/en/blog/digital-proof-event-order-planners).",
         ],
       },
       {
@@ -7619,16 +7637,26 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["personalized-christmas-treat-boxes", "personalized-company-posada-favors", "guide-for-planners-working-with-custom-favors-supplier", "custom-christmas-labels", "year-end-gifts-for-employees-and-clients-personalized"],
+    relatedBlogSlugs: ["personalized-christmas-treat-boxes", "personalized-company-posada-favors", "guide-for-planners-working-with-custom-favors-supplier", "custom-christmas-labels", "year-end-gifts-for-employees-and-clients-personalized", "planner-checklist-custom-favors-order-event", "digital-proof-event-order-planners"],
     sources: [
       { label: "Publimetro: the new trend for Christmas gift exchanges among groups of friends (in Spanish)", url: "https://www.publimetro.co/entretenimiento/2025/12/04/la-nueva-tendencia-para-intercambio-navideno-entre-grupos-de-amigas-y-amigos/" },
       { label: "PatPat: fun Christmas gift exchange ideas", url: "https://www.patpat.com/es/blogs/holidays/fun-christmas-gift-exchange-ideas" },
       { label: "BBVA México: gift exchange ideas (in Spanish)", url: "https://www.bbva.mx/educacion-financiera/blog/regalos-para-intercambio.html" },
+      { label: "Expansión: men vs. women, who are the stingiest Santa Clauses (December 2024, in Spanish)", url: "https://expansion.mx/finanzas-personales/2024/12/06/hombres-vs-mujeres-quienes-son-los-santa-claus-mas-codos" },
+      { label: "GiftList: 10 Secret Santa gift exchange rules", url: "https://giftlist.com/blog/10-secret-santa-gift-exchange-rules-everyone-should-know" },
     ],
     faq: [
       {
         q: "Should I put a name on a gift exchange present?",
         a: "It depends on the format: in secret Santa yes, because you know who receives it. In stolen gift and white elephant games, a themed or styled design without a personal name works better.",
+      },
+      {
+        q: "How much do people spend on average in a gift exchange in Mexico?",
+        a: "A casino.mx survey cited by Expansión in December 2024 put the average at 773 pesos per person. It is a 2024 reference, not a current figure.",
+      },
+      {
+        q: "What are the basic rules of a secret Santa?",
+        a: "Guides agree on setting the budget before the draw, drawing names randomly and in secret, sharing wish lists or theme limits and setting the exchange date early.",
       },
       {
         q: "Do the candy boxes come with candy?",

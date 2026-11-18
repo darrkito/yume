@@ -7994,8 +7994,9 @@ export const blogPosts: BlogPost[] = [
       "Ideas de detalles personalizados para tu intercambio navideño: qué personalizar en amigo secreto, regalo robado y posada, y cuándo pedirlos.",
     category: "Guías",
     publishedAt: "2026-11-17",
+    modifiedAt: "2026-11-18",
     intro:
-      "Un intercambio navideño sale mejor cuando el detalle encaja con la dinámica. Aquí tienes ideas de regalos personalizados para amigo secreto, regalo robado y posada, qué conviene personalizar en cada una y cuándo pedirlos.",
+      "Un intercambio navideño sale mejor cuando el detalle encaja con la dinámica. Aquí tienes ideas de regalos personalizados para amigo secreto, regalo robado y posada, cuánto gastar como referencia, cómo evitar errores de nombre o de tiempo y cuándo pedirlos.",
     sections: [
       {
         heading: "Qué conviene personalizar en un intercambio navideño",
@@ -8016,6 +8017,15 @@ export const blogPosts: BlogPost[] = [
         body: [
           "En el regalo robado se acuerda un tipo de regalo y un tope de precio, y cada participante puede robar un regalo ya abierto. Como cualquiera puede quedárselo, conviene un diseño temático navideño sin nombre propio, con colores y motivos de la temporada que guste a cualquiera.",
           "Según Publimetro, es una variante del Santa Secreto que se difundió en redes en 2025. En la versión de mini regalos, cada persona compra tantos obsequios como jugadores haya.",
+          "Otra alternativa común es el elefante blanco, donde cada quien lleva un regalo envuelto, sin etiqueta y dentro del presupuesto. Como no va dirigido a nadie en particular, el detalle con nombre encaja mejor en el amigo secreto.",
+        ],
+      },
+      {
+        heading: "Cuánto gastar en un intercambio navideño en México",
+        body: [
+          "Como referencia de 2024, una encuesta de casino.mx citada por Expansión ubicó el gasto promedio en 773 pesos por persona. Es una cifra de hace dos años, no un tope para tu grupo. Fija el presupuesto antes del sorteo y avisa a todos para que los regalos sean parejos.",
+          "En la misma nota, las mujeres gastan en promedio 970 pesos por regalo y los hombres 590. Además, el 73% de los consumidores planeaba pagar los regalos con el aguinaldo.",
+          "Las guías de Secret Santa coinciden en cuatro reglas: fijar el presupuesto antes del sorteo, sortear los nombres al azar y en secreto, compartir listas de deseos o límites de temática, y fijar pronto la fecha. Sus rangos en dólares son de EE. UU. y no sirven de referencia para México.",
         ],
       },
       {
@@ -8029,7 +8039,15 @@ export const blogPosts: BlogPost[] = [
         heading: "Para planners y organizadoras: presentación cuidada",
         body: [
           "Si organizas el intercambio o eres planner, un detalle de bajo volumen con presentación cuidada hace que el evento se vea planeado. Lo práctico es definir la dinámica, el diseño y la cantidad antes de pedir, y aprobar una prueba digital antes de que se produzca.",
-          "Si trabajas con eventos de clientes, la [guía para planners](/blog/guia-planners-proveedor-detalles-personalizados) explica cómo coordinar pedidos con un proveedor de detalles personalizados.",
+          "Si trabajas con eventos de clientes, la [guía para planners](/blog/guia-planners-proveedor-detalles-personalizados) explica cómo coordinar pedidos con un proveedor de detalles personalizados, y el [checklist para planners](/blog/checklist-planners-pedido-detalles-evento) te ayuda a tener todo listo antes de pedir.",
+        ],
+      },
+      {
+        heading: "Cómo evitar errores de nombre y de tiempo",
+        body: [
+          "Dos errores se pueden evitar con tiempo: un nombre mal escrito y un pedido hecho tarde. Para lograrlo, confirma la ortografía de cada nombre cuando salga el sorteo, revisa la prueba digital con calma antes de aprobarla y escríbenos con la fecha de tu intercambio para saber qué alcanza a llegar a tiempo.",
+          "Si el sorteo se hace tarde y el nombre se conoce a última hora, una opción es elegir un diseño temático sin nombre, como el del regalo robado, para no depender de ese dato. En un grupo de oficina, conviene que una sola persona reúna la lista y la cantidad y nos escriba por WhatsApp.",
+          "Para entender cómo se revisa una prueba antes de producir, lee sobre la [prueba digital para eventos](/blog/prueba-digital-pedido-evento-planners).",
         ],
       },
       {
@@ -8041,16 +8059,26 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["dulceros-navidenos-personalizados", "detalles-posada-empresa-personalizados", "guia-planners-proveedor-detalles-personalizados", "etiquetas-navidenas-personalizadas", "detalles-fin-de-ano-clientes-colaboradores-personalizados"],
+    relatedBlogSlugs: ["dulceros-navidenos-personalizados", "detalles-posada-empresa-personalizados", "guia-planners-proveedor-detalles-personalizados", "etiquetas-navidenas-personalizadas", "detalles-fin-de-ano-clientes-colaboradores-personalizados", "checklist-planners-pedido-detalles-evento", "prueba-digital-pedido-evento-planners"],
     sources: [
       { label: "Publimetro: la nueva tendencia para intercambio navideño entre grupos de amigas y amigos", url: "https://www.publimetro.co/entretenimiento/2025/12/04/la-nueva-tendencia-para-intercambio-navideno-entre-grupos-de-amigas-y-amigos/" },
       { label: "PatPat: ideas divertidas de intercambio de regalos navideños", url: "https://www.patpat.com/es/blogs/holidays/fun-christmas-gift-exchange-ideas" },
       { label: "BBVA México: regalos para intercambio", url: "https://www.bbva.mx/educacion-financiera/blog/regalos-para-intercambio.html" },
+      { label: "Expansión: hombres vs. mujeres, quiénes son los Santa Claus más codos (diciembre de 2024)", url: "https://expansion.mx/finanzas-personales/2024/12/06/hombres-vs-mujeres-quienes-son-los-santa-claus-mas-codos" },
+      { label: "GiftList: 10 reglas de Secret Santa (en inglés)", url: "https://giftlist.com/blog/10-secret-santa-gift-exchange-rules-everyone-should-know" },
     ],
     faq: [
       {
         q: "¿Debo poner nombre en el regalo de un intercambio?",
         a: "Depende de la dinámica: en el amigo secreto sí, porque sabes quién lo recibe. En el regalo robado y el elefante blanco es mejor un diseño con tema o estilo y sin nombre propio.",
+      },
+      {
+        q: "¿Cuánto se gasta en promedio en un intercambio en México?",
+        a: "Una encuesta de casino.mx citada por Expansión en diciembre de 2024 ubicó el promedio en 773 pesos por persona. Es una referencia de 2024, no una cifra actual.",
+      },
+      {
+        q: "¿Qué reglas básicas tiene un amigo secreto?",
+        a: "Las guías coinciden en fijar el presupuesto antes del sorteo, sortear los nombres al azar y en secreto, compartir listas de deseos o límites de temática y fijar pronto la fecha del intercambio.",
       },
       {
         q: "¿El dulcero incluye dulces?",
