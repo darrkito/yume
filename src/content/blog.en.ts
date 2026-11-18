@@ -7647,8 +7647,9 @@ export const blogPostsEn: BlogPost[] = [
       "New Year's Eve party favor ideas: grapes, candles, lentils and toasts turned into personalized details for your guests.",
     category: "Guides",
     publishedAt: "2026-11-17",
+    modifiedAt: "2026-11-18",
     intro:
-      "Year-end parties already come with their own rituals: the 12 grapes, colored candles and lentils. This guide shows you how to turn them into personalized favors for your guests, what Yume can do for each one and how to order.",
+      "Year-end parties already come with their own rituals: the 12 grapes, colored candles and lentils. This guide shows you how to turn them into personalized favors for your guests, which 2026 trends you can adapt, what Yume can do for each one and how to order.",
     sections: [
       {
         heading: "Year-end party favor ideas from Mexican midnight rituals",
@@ -7662,6 +7663,7 @@ export const blogPostsEn: BlogPost[] = [
         body: [
           "The 12 grapes, one per chime, are the easiest ritual to turn into a favor: each grape stands for a month and a wish. You buy the grapes and hand out 12 per guest, inside a box with their name or in a small bag with a sticker in your party design.",
           "A design can show the twelve months or a short phrase for each month, in your party colors. If you turn it into a sticker, [vinyl stickers](/en/products/waterproof-vinyl-stickers) work for any design, not just logos.",
+          "According to El Libro Clásico de la Navidad en México, cited by Gastrolab, the New Year dinner resembles the Christmas one and adds a bowl of grapes, and it is also customary to wear something new. You can bring that into the design: a new-year label or a sticker with the twelve wishes.",
         ],
       },
       {
@@ -7679,11 +7681,26 @@ export const blogPostsEn: BlogPost[] = [
         ],
       },
       {
+        heading: "Which 2026 favor trends can you adapt to New Year's Eve",
+        body: [
+          "2026 wedding favor trends point to fewer pieces that are more intentional: something the guest will want to keep. This is an adaptation, not a year-end rule, but it works as a guide: choose a favor that is useful, lasting and meaningful, not a single-use object.",
+          "Publimetro, citing Vogue México, names personalization, purpose and durability as the core of the trend, and mentions neutral, functional designs that suit any guest. A specialist, Diego Castro, calls objects that tie a scent, a texture or a design to a moment «sensory anchors». For New Year's Eve, that anchor can be the palette and the message of the night.",
+        ],
+      },
+      {
         heading: "Who it is for: home parties, planners and companies",
         body: [
           "This kind of favor works in three cases: a party at home, an event run by a planner and a company year-end celebration. In all three, the personalized detail is decided ahead of time, because it is designed first and produced afterward.",
-          "If you organize events for other people, see the [guide for planners](/en/blog/guide-for-planners-working-with-custom-favors-supplier) and how to work out [how many favors to order](/en/blog/how-many-party-favors-to-order-per-event). If it is your company's year-end celebration, the guide to [company posada favors](/en/blog/personalized-company-posada-favors) applies too. For a home party, a name, a theme and colors are enough.",
+          "If you organize events for other people, see the [guide for planners](/en/blog/guide-for-planners-working-with-custom-favors-supplier) and how to work out [how many favors to order](/en/blog/how-many-party-favors-to-order-per-event). If it is your company's year-end celebration, the guide to [company posada favors](/en/blog/personalized-company-posada-favors) applies too, and there are ideas for [client gifts](/en/blog/year-end-gifts-for-employees-and-clients-personalized). For a home party, a name, a theme and colors are enough.",
         ],
+        table: {
+          headers: ["Event", "What fits", "What you personalize"],
+          rows: [
+            ["Family dinner", "Favor box with the 12 grapes", "Guest name and theme"],
+            ["Wedding or planner event", "One design on a box or sticker", "Palette, names and event message"],
+            ["Company posada or year-end party", "Favor box with the logo", "Logo, name and theme"],
+          ],
+        },
       },
       {
         heading: "How to order your year-end party favors",
@@ -7697,7 +7714,8 @@ export const blogPostsEn: BlogPost[] = [
     relatedBlogSlugs: ["personalized-company-posada-favors", "how-many-party-favors-to-order-per-event", "what-to-put-in-a-party-favor-box", "guide-for-planners-working-with-custom-favors-supplier"],
     sources: [
       { label: "Grupo Animal: New Year rituals and their meaning (in Spanish)", url: "https://grupoanimal.mx/estilo-de-vida/rituales-para-ano-nuevo-2022-significado" },
-      { label: "Chilango: why 12 grapes are eaten on New Year's (in Spanish)", url: "https://www.chilango.com/noticias/por-que-se-comen-12-uvas-en-ano-nuevo-origen-de-esta-tradicion/" },
+      { label: "Gastrolab: wishes of the year and the tradition of eating 12 grapes (in Spanish)", url: "https://www.gastrolabweb.com/especiales/2023/12/29/deseos-del-ano-enterate-como-surge-la-tradicion-de-comer-12-uvas-para-recibir-el-ano-nuevo-43879.html" },
+      { label: "Publimetro: 2026 wedding favors, the trends gaining ground (in Spanish)", url: "https://www.publimetro.com.mx/virales/2026/10/02/souvenirs-para-bodas-2026-las-tendencias-que-ganan-terreno/" },
     ],
     faq: [
       {
@@ -7710,11 +7728,19 @@ export const blogPostsEn: BlogPost[] = [
       },
       {
         q: "Are the 12 grapes a Mexican tradition by origin?",
-        a: "No, they come from Spain. According to Chilango, in 1909 there was a big harvest and producers sold lucky grapes in packs of 12. In Mexico people eat one grape per chime, and each one is a month and a wish.",
+        a: "There is no single version of the origin. Gastrolab gathers two: a group of people in Madrid who ate twelve grapes at the Puerta del Sol with the chimes, and the one most accepted according to Turismo Madrid, in 1909, when growers from the Levante gave away their surplus grapes. The custom is said to have reached the Americas with the Spanish.",
       },
       {
         q: "Can I put my logo on the favor box?",
         a: "Yes. Personalization includes the name, the theme you choose and your brand logo.",
+      },
+      {
+        q: "Can the twelve wishes go on a sticker?",
+        a: "Yes. Vinyl stickers work for any design, not just logos, and we send a digital proof before printing.",
+      },
+      {
+        q: "Where do the 2026 favor trends come from?",
+        a: "From a Publimetro article dated October 2, 2026 about wedding favors. It is a qualitative analysis with no figures, and here we use it as an adaptation for year-end.",
       },
     ],
   },

@@ -8069,8 +8069,9 @@ export const blogPosts: BlogPost[] = [
       "Ideas de souvenirs de fin de año para Año Nuevo: uvas, velas, lentejas y brindis convertidos en detalles personalizados para tus invitados.",
     category: "Guías",
     publishedAt: "2026-11-17",
+    modifiedAt: "2026-11-18",
     intro:
-      "Las fiestas de fin de año ya traen sus propios rituales: las 12 uvas, las velas de colores y las lentejas. Esta guía te muestra cómo convertirlos en detalles personalizados para tus invitados, qué puede hacer Yume en cada uno y cómo pedirlos.",
+      "Las fiestas de fin de año ya traen sus propios rituales: las 12 uvas, las velas de colores y las lentejas. Esta guía te muestra cómo convertirlos en detalles personalizados para tus invitados, qué tendencias de 2026 puedes adaptar, qué puede hacer Yume en cada uno y cómo pedirlos.",
     sections: [
       {
         heading: "Ideas de souvenirs de fin de año con rituales de la noche",
@@ -8084,6 +8085,7 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Las 12 uvas, una por campanada, son el ritual más fácil de convertir en detalle: cada uva representa un mes y un deseo. Tú compras las uvas y las repartes, 12 por invitado, dentro de un dulcero con su nombre, o en una bolsita con un sticker del diseño de tu fiesta.",
           "Un diseño puede llevar los doce meses o una frase corta por mes, en los colores de tu fiesta. Si lo conviertes en sticker, los [stickers de vinil](/productos/stickers-vinil-impermeable) sirven para cualquier diseño, no solo para logos.",
+          "Según El Libro Clásico de la Navidad en México, citado por Gastrolab, la cena de Año Nuevo se parece a la de Navidad y suma un frutero de uvas, y también es costumbre estrenar una prenda. Puedes llevar eso al diseño: una etiqueta del año nuevo o un sticker con los doce deseos.",
         ],
       },
       {
@@ -8101,11 +8103,26 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
+        heading: "Qué tendencias de 2026 puedes adaptar a fin de año",
+        body: [
+          "Las tendencias de souvenirs de boda 2026 apuntan a menos piezas pero más intencionales: algo que el invitado quiera conservar. Es una adaptación, no una regla de fin de año, pero sirve de guía: elige un detalle útil, duradero y con significado, no un objeto de un solo uso.",
+          "Publimetro, que cita a Vogue México, señala la personalización, el propósito y la durabilidad como ejes de la tendencia, y menciona diseños neutros y funcionales que sirvan a cualquier invitado. Un especialista, Diego Castro, llama «anclas sensoriales» a los objetos que ligan un aroma, una textura o un diseño con un momento. Para Año Nuevo, esa ancla puede ser la paleta y el mensaje de la noche.",
+        ],
+      },
+      {
         heading: "Para quién es: fiesta en casa, planners y empresas",
         body: [
           "Este tipo de souvenir funciona en tres casos: una fiesta en casa, un evento que organiza una planner y un cierre de año de empresa. En los tres, el detalle personalizado se decide con anticipación, porque primero se diseña y después se produce.",
-          "Si organizas eventos para otras personas, mira la [guía para planners](/blog/guia-planners-proveedor-detalles-personalizados) y cómo calcular [cuántos souvenirs pedir](/blog/cuantos-souvenirs-pedir-por-evento). Si es el cierre de año de tu empresa, la guía de [detalles de posada de empresa](/blog/detalles-posada-empresa-personalizados) aplica igual. Para una fiesta en casa, bastan el nombre, el tema y los colores.",
+          "Si organizas eventos para otras personas, mira la [guía para planners](/blog/guia-planners-proveedor-detalles-personalizados) y cómo calcular [cuántos souvenirs pedir](/blog/cuantos-souvenirs-pedir-por-evento). Si es el cierre de año de tu empresa, la guía de [detalles de posada de empresa](/blog/detalles-posada-empresa-personalizados) aplica igual, y también hay ideas de [detalles para clientes](/blog/detalles-fin-de-ano-clientes-colaboradores-personalizados). Para una fiesta en casa, bastan el nombre, el tema y los colores.",
         ],
+        table: {
+          headers: ["Evento", "Qué conviene", "Qué personalizas"],
+          rows: [
+            ["Cena familiar", "Dulcero con las 12 uvas", "Nombre del invitado y tema"],
+            ["Boda o evento de planner", "Un solo diseño en dulcero o sticker", "Paleta, nombres y mensaje del evento"],
+            ["Posada o cierre de año de empresa", "Dulcero con el logo", "Logo, nombre y tema"],
+          ],
+        },
       },
       {
         heading: "Cómo pedir tus souvenirs de fin de año",
@@ -8119,7 +8136,8 @@ export const blogPosts: BlogPost[] = [
     relatedBlogSlugs: ["detalles-posada-empresa-personalizados", "cuantos-souvenirs-pedir-por-evento", "que-poner-en-un-dulcero", "guia-planners-proveedor-detalles-personalizados"],
     sources: [
       { label: "Grupo Animal: rituales para Año Nuevo y su significado", url: "https://grupoanimal.mx/estilo-de-vida/rituales-para-ano-nuevo-2022-significado" },
-      { label: "Chilango: por qué se comen 12 uvas en Año Nuevo", url: "https://www.chilango.com/noticias/por-que-se-comen-12-uvas-en-ano-nuevo-origen-de-esta-tradicion/" },
+      { label: "Gastrolab: deseos del año y la tradición de comer 12 uvas", url: "https://www.gastrolabweb.com/especiales/2023/12/29/deseos-del-ano-enterate-como-surge-la-tradicion-de-comer-12-uvas-para-recibir-el-ano-nuevo-43879.html" },
+      { label: "Publimetro: souvenirs para bodas 2026, las tendencias que ganan terreno", url: "https://www.publimetro.com.mx/virales/2026/10/02/souvenirs-para-bodas-2026-las-tendencias-que-ganan-terreno/" },
     ],
     faq: [
       {
@@ -8132,11 +8150,19 @@ export const blogPosts: BlogPost[] = [
       },
       {
         q: "¿Las 12 uvas son una tradición mexicana de origen?",
-        a: "No, vienen de España. Según Chilango, en 1909 hubo una gran cosecha y los productores vendieron las uvas de la suerte en paquetes de 12. En México se come una uva por campanada, y cada una es un mes y un deseo.",
+        a: "No hay una sola versión del origen. Gastrolab recoge dos: unos madrileños que comieron doce uvas en la Puerta del Sol con las campanadas, y la más aceptada según Turismo Madrid, en 1909, cuando viticultores levantinos repartieron gratis su excedente. Se dice que la costumbre llegó a América con los españoles.",
       },
       {
         q: "¿Puedo poner mi logo en el dulcero?",
         a: "Sí. La personalización incluye el nombre, la temática que elijas y el logo de tu marca.",
+      },
+      {
+        q: "¿Pueden ir los doce deseos en un sticker?",
+        a: "Sí. Los stickers de vinil sirven para cualquier diseño, no solo para logos, y te mandamos una prueba digital antes de imprimir.",
+      },
+      {
+        q: "¿De dónde salen las tendencias de souvenirs de 2026?",
+        a: "De una nota de Publimetro del 2 de octubre de 2026 sobre souvenirs de boda. Es un análisis cualitativo, sin cifras, y aquí lo usamos como adaptación para fin de año.",
       },
     ],
   },
