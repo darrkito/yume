@@ -5657,25 +5657,25 @@ export const blogPosts: BlogPost[] = [
     slug: "cuando-enviar-invitaciones-de-boda",
     title: "Cuándo enviar invitaciones de boda y qué datos incluir",
     description:
-      "Cuándo enviar invitaciones de boda: plazos para el save the date, la invitación y el RSVP y qué datos incluir.",
+      "Cuándo enviar invitaciones de boda: plazos para el save the date, la invitación y el RSVP según guías del sector, con tabla y qué datos incluir.",
     category: "Guías",
     publishedAt: "2026-11-02",
-    modifiedAt: "2026-11-04",
+    modifiedAt: "2026-11-18",
     intro:
       "Las guías no coinciden en una sola cifra para saber cuándo enviar invitaciones de boda: los plazos cambian si la boda es local o de destino y si hay invitados que viajan. Aquí tienes rangos de referencia, una tabla para ordenar tu calendario de atrás hacia adelante y lo que debe llevar la invitación para que tus invitados respondan a tiempo.",
     sections: [
       {
         heading: "Cuándo enviar invitaciones de boda: el plazo según cada fuente",
         body: [
-          "Para una boda local, una guía del sector sitúa el envío de las invitaciones formales entre 6 y 8 semanas antes, aunque también menciona de 3 a 4 meses. Toma estos plazos como referencia y adelanta el envío si hay invitados que viajan.",
-          "Para una boda de destino, una síntesis de guías del sector propone enviar la invitación de 10 a 12 semanas antes, o de 3 a 4 meses antes si no hubo save the date. Otra guía recomienda sumar unas semanas cuando hay invitados que vienen del extranjero.",
+          "Para una boda local, una guía del sector sitúa el envío de las invitaciones formales entre 6 y 8 semanas antes, aunque también menciona de 3 a 4 meses. Para una boda de destino, una síntesis de guías propone de 10 a 12 semanas antes. Adelanta el envío si hay invitados que viajan.",
+          "Si no hubo save the date, la síntesis de guías de destino sube el plazo a 3 a 4 meses antes. Otra guía recomienda sumar unas semanas cuando hay invitados que vienen del extranjero. Toma estos plazos como referencia, no como regla fija.",
         ],
       },
       {
         heading: "Cuándo enviar el save the date",
         body: [
-          "Una guía del sector recomienda enviar el save the date de 7 a 10 meses antes de la boda, y de 10 a 12 meses si cae en fin de semana largo o es de destino. Otra guía sugiere como mínimo 6 meses, siempre con fecha y lugar confirmados para que los invitados planeen sus vuelos.",
-          "En bodas de destino, la síntesis de guías antes citada sube el rango a 8 a 12 meses antes, y algunas guías llegan hasta 14. Una guía del sector sugiere omitir el save the date cuando faltan menos de unas 8 semanas y enviar directamente la invitación formal.",
+          "Una guía del sector recomienda enviar el save the date de 7 a 10 meses antes de la boda, y de 10 a 12 meses si cae en fin de semana largo o es de destino. Otra guía sugiere como mínimo 6 meses, con fecha y lugar ya confirmados.",
+          "En bodas de destino, la síntesis de guías antes citada sube el rango a 8 a 12 meses antes, y algunas guías llegan hasta 14. El motivo es que tus invitados necesitan tiempo para planear sus vuelos. Una guía del sector sugiere omitir el save the date cuando faltan menos de unas 8 semanas y enviar directamente la invitación formal.",
         ],
       },
       {
@@ -5705,19 +5705,26 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Según una guía del sector, la invitación debe incluir una forma de responder, ya sea el sitio web de la boda o una tarjeta RSVP con sobre prepagado o con dirección, y una fecha límite de confirmación explícita. Sin esos dos elementos, tus invitados no sabrán cómo ni cuándo contestar.",
           "Si solo unos pocos invitados vienen de otro país, una guía del sector sugiere avisarles antes por mensaje o correo, aunque la invitación formal salga en el calendario normal. El save the date, según otra guía, se manda solo cuando la fecha y el lugar ya están confirmados.",
-          "Cuando tengas el calendario, define el diseño de tus invitaciones. En Yume te enviamos una prueba digital antes de producir, y nada se produce hasta que la apruebas. Si estás armando otros detalles de la misma boda, revisa nuestra guía de [mesa de dulces para boda](/blog/mesa-de-dulces-para-boda).",
+          "Cuando tengas el calendario, define el diseño de tus invitaciones. En Yume te enviamos una prueba digital antes de producir, y nada se produce hasta que la apruebas. Para saber cómo preparar el pedido, revisa la guía de [cómo pedir invitaciones personalizadas](/blog/como-pedir-invitaciones-personalizadas-para-eventos).",
+        ],
+      },
+      {
+        heading: "Qué más ordenar en el calendario de tu boda",
+        body: [
+          "Las invitaciones son solo una parte del calendario de tu boda. Cuando ya tengas definidas las fechas de envío y de confirmación, puedes planear con calma los otros detalles: recuerdos para invitados, detalles de mesa y menú. Cada uno tiene su propia guía en nuestro blog.",
+          "Para los recuerdos, revisa [cuándo pedir souvenirs de boda](/blog/cuando-pedir-souvenirs-de-boda) y las ideas de [souvenirs de boda personalizados](/blog/souvenirs-de-boda-personalizados). Para la mesa, mira nuestros [dulceros personalizados](/productos/dulceros-personalizados), la guía de [mesa de dulces para boda](/blog/mesa-de-dulces-para-boda) y la del [menú de boda personalizado](/blog/menu-de-boda-personalizado).",
         ],
       },
       {
         heading: "Un cronograma para wedding planners",
         body: [
           "Si eres wedding planner, arma por cliente una línea de tiempo con tres fechas: save the date, envío de la invitación y límite de confirmación. Marca aparte las bodas con invitados que viajan, porque las guías dan plazos más amplios para ellas.",
-          "En Yume trabajamos con wedding planners: diseño con prueba digital y trato directo por WhatsApp. Para los detalles de mesa de tu cliente, revisa la guía de [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara). Escríbenos por WhatsApp para cotizar las invitaciones de tu boda o las de tu cliente.",
+          "En Yume trabajamos con wedding planners: diseño con prueba digital y trato directo por WhatsApp. Para los detalles de mesa de tu cliente, revisa la [guía para wedding planners](/blog/guia-wedding-planners-detalles-personalizados-guadalajara) y la de [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara). Escríbenos por WhatsApp para cotizar las invitaciones de tu boda o las de tu cliente.",
         ],
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["mesa-de-dulces-para-boda", "dulceros-personalizados-guadalajara"],
+    relatedBlogSlugs: ["como-pedir-invitaciones-personalizadas-para-eventos", "cuando-pedir-souvenirs-de-boda", "mesa-de-dulces-para-boda", "dulceros-personalizados-guadalajara", "guia-wedding-planners-detalles-personalizados-guadalajara"],
     faq: [
       {
         q: "¿Con cuánto tiempo se envían las invitaciones de boda?",
@@ -5734,6 +5741,14 @@ export const blogPosts: BlogPost[] = [
       {
         q: "¿Qué necesita la invitación para que respondan?",
         a: "Según una guía del sector, una forma de responder (sitio web de la boda o tarjeta RSVP con sobre prepagado o con dirección) y una fecha límite de confirmación explícita.",
+      },
+      {
+        q: "¿Cuándo se manda el save the date?",
+        a: "Una guía del sector lo recomienda de 7 a 10 meses antes de una boda local. Otra guía sugiere mínimo 6 meses, siempre con fecha y lugar ya confirmados.",
+      },
+      {
+        q: "¿Cómo aviso a los invitados que vienen de otro país?",
+        a: "Una guía del sector sugiere avisarles antes por mensaje o correo, aunque la invitación formal salga en el calendario normal.",
       },
       {
         q: "¿Cómo cotizo mis invitaciones de boda con Yume?",
