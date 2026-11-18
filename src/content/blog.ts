@@ -4101,23 +4101,48 @@ export const blogPosts: BlogPost[] = [
       "Cuánto duran los tatuajes temporales, de qué depende, cómo aplicarlos y quitarlos con aceite, y por qué conviene evitar la henna negra.",
     category: "Guías",
     publishedAt: "2026-10-17",
-    modifiedAt: "2026-10-29",
+    modifiedAt: "2026-11-18",
     intro:
-      "Cuánto duran los tatuajes temporales es la duda más común antes de una fiesta, una boda o una activación. La respuesta corta: los de transferencia con agua duran de horas a unos días, según la zona del cuerpo y cuánto se froten. Aquí encuentras de qué depende la duración, cómo aplicarlos, cómo quitarlos con calma y una alerta sobre la henna negra.",
+      "Cuánto duran los tatuajes temporales es la duda más común antes de una fiesta, una boda o una activación. La respuesta corta: de 1 a 7 días, según el tipo de producto, la zona del cuerpo y cuánto se froten. Aquí encuentras una tabla por zona y tipo, qué los borra antes, cuándo aplicarlos antes de un evento, cómo quitarlos con calma y una alerta sobre la henna negra.",
     sections: [
       {
         heading: "¿Cuánto duran los tatuajes temporales?",
         body: [
-          "Los tatuajes temporales de transferencia con agua duran al menos 48 horas si no se frotan, según la ficha del papel que usamos. Algunas tiendas de tatuajes temporales dan un rango de 3 a 7 días para calcomanías. Es una referencia, no una garantía: depende de la zona del cuerpo y del roce.",
-          "Para una fiesta, una boda o una activación de un día sobra tiempo: son tatuajes pensados para celebraciones, no para durar semanas. Lo que más los acorta es el roce constante, la ropa apretada y cualquier aceite, crema o alcohol que toque el tatuaje.",
+          "Un tatuaje temporal dura entre 1 y 7 días, según el tipo y la zona. El papel de transferencia que usamos indica al menos 48 horas si no se frota, y las tiendas dan rangos de 3 a 7 días. Son referencias, no garantías: cambian con el roce, el agua y el producto.",
+          "Para una fiesta, una boda o una activación de un día alcanza con holgura: son tatuajes pensados para celebraciones, no para durar semanas. Lo que más los acorta es el roce constante y la ropa apretada.",
         ],
       },
       {
         heading: "Qué cambia la duración: zona del cuerpo y tipo de producto",
         body: [
           "La duración cambia sobre todo con la zona del cuerpo y con el tipo de producto. Donde hay roce, sudor o aceite el tatuaje se gasta antes; donde casi no hay fricción aguanta más. Una calcomanía, una tinta semipermanente y la henna no duran lo mismo, así que conviene saber cuál tienes.",
-          "En partes que se mueven o se rozan con la ropa, como la muñeca, el cuello o las rodillas, se desgastan antes. En el brazo o la pierna, con menos fricción, aguantan más. Las tiendas mencionan 1 a 3 días en zonas con aceite, sudor o roce, y 5 a 7 días o más en zonas de poco roce.",
-          "Según esas mismas tiendas, la calcomanía de agua dura 3 a 7 días, la tinta semipermanente puede llegar a 10 o 14 días o más, y la henna dura más que una calcomanía. Son cifras de vendedores, sin estudio independiente, así que tómalas como orientación.",
+          "Ink-Bond explica que los semipermanentes duran más porque tiñen la capa superior de la piel, pero no da una cifra de días. Son estimaciones de un vendedor, sin estudio independiente, así que tómalas como orientación.",
+        ],
+      },
+      {
+        heading: "Duración por zona del cuerpo y por tipo de tatuaje",
+        body: [
+          "Según Ink-Bond, un vendedor de tatuajes temporales, la muñeca dura de 2 a 4 días como máximo y la cara de 1 a 3 días. El brazo superior, el hombro, la espalda alta y la pantorrilla lateral aguantan más. Son estimaciones del vendedor, no una norma, y varían con el producto.",
+          "La tabla resume los rangos de esa misma fuente. Úsala como referencia para planear, no como promesa.",
+        ],
+        table: {
+          headers: ["Caso", "Duración orientativa", "Detalle"],
+          rows: [
+            ["Transfer estándar", "Unos 1 a 3 días", "Estimación de Ink-Bond"],
+            ["Resistente al agua", "Unos 3 a 5 días si no se frota", "Estimación de Ink-Bond"],
+            ["Actividad normal", "3 a 5 días, hasta 7 con cuidado", "Estimación de Ink-Bond"],
+            ["Fricción fuerte o humedad constante", "1 a 2 días", "Estimación de Ink-Bond"],
+            ["Muñeca", "2 a 4 días como máximo", "Lavado de manos, reloj y movimiento"],
+            ["Cara", "1 a 3 días", "Sebo y desmaquillado"],
+            ["Brazo superior, hombro, espalda alta y pantorrilla lateral", "Duran más que en muñeca y cara", "Zonas donde mejor aguantan según Ink-Bond"],
+          ],
+        },
+      },
+      {
+        heading: "Qué hace que un tatuaje temporal se borre antes",
+        body: [
+          "Se borran antes por piel que no estaba limpia, mojarlos antes de que fijen, aplicar crema muy pronto, la fricción de toallas, la ropa ajustada o el equipo de gimnasio, y el sudor fuerte. Según Ink-Bond, la actividad con fricción fuerte o humedad constante los deja en 1 a 2 días.",
+          "Nadar a diario acorta la duración y un baño caliente largo es arriesgado, según Ink-Bond. Una ducha rápida no es problema.",
         ],
       },
       {
@@ -4132,6 +4157,13 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Para que duren más, las guías de tiendas recomiendan lavar la piel con agua y jabón, secarla por completo y no poner crema ni aceite antes, porque funcionan como barrera contra el adhesivo. También sugieren evitar el roce, el sol y el agua después de aplicar. Es consejo de vendedores, no de un estudio.",
           "Si vas a usar el tatuaje en una fiesta, aplícalo con la piel recién lavada y seca, y deja las cremas y los aceites para después, cuando quieras quitarlo.",
+        ],
+      },
+      {
+        heading: "Cuándo aplicarlo antes de una fiesta, boda o posada",
+        body: [
+          "Aplícalo el mismo día del evento o el anterior, sobre piel limpia, seca y sin crema. Ink-Bond recomienda esperar de 6 a 8 horas antes de bañarse, y estima 1 a 3 días para un transfer estándar. Con esos tiempos, un evento de una noche debería quedar cubierto.",
+          "Evita los productos con aceite y la exfoliación antes de aplicarlo, y si se moja, seca a toques sin frotar.",
         ],
       },
       {
@@ -4174,8 +4206,16 @@ export const blogPosts: BlogPost[] = [
         a: "El fabricante del papel de transferencia que usamos indica que duran al menos 48 horas si no se frotan. Algunas tiendas dan un rango de 3 a 7 días para calcomanías. Es una referencia: cambia con la zona del cuerpo y el roce.",
       },
       {
+        q: "¿Cuánto dura un tatuaje temporal en la muñeca o en la cara?",
+        a: "Según Ink-Bond, en la muñeca dura de 2 a 4 días como máximo y en la cara de 1 a 3 días. Es una estimación de un vendedor y cambia con el producto.",
+      },
+      {
         q: "¿Qué acorta la duración de un tatuaje temporal?",
-        a: "El roce constante, la ropa apretada, el sudor y cualquier aceite, crema o alcohol que toque el tatuaje. Las tiendas de tatuajes temporales mencionan 1 a 3 días en zonas con aceite, sudor o roce.",
+        a: "El roce constante, la ropa ajustada, el equipo de gimnasio, el sudor fuerte, los productos con aceite y la crema aplicada muy pronto. Según Ink-Bond, con fricción fuerte o humedad constante duran de 1 a 2 días.",
+      },
+      {
+        q: "¿Cuándo puedo mojarlo después de aplicarlo?",
+        a: "Ink-Bond recomienda esperar de 6 a 8 horas antes de bañarte. Una ducha rápida no es problema, pero un baño caliente largo es arriesgado.",
       },
       {
         q: "¿Cómo se quita un tatuaje temporal?",
@@ -4200,6 +4240,9 @@ export const blogPosts: BlogPost[] = [
     ],
     serviceLink: { href: "/productos/tatuajes-temporales-personalizados", label: "Ver tatuajes temporales personalizados" },
     quoteMessage: "Hola, quiero cotizar tatuajes temporales personalizados.\n\nTamaño:\nCantidad:\n¿Ya tengo diseño? (sí / no):",
+    sources: [
+      { label: "Ink-Bond: cuánto duran los tatuajes temporales según tipo y zona de la piel", url: "https://www.ink-bond.com/en-ca/blogs/news/how-long-do-temporary-tattoos-last-by-type-skin-area" },
+    ],
   },
   {
     slug: "etiquetas-escolares-personalizadas-guadalajara",
