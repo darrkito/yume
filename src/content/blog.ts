@@ -4269,7 +4269,7 @@ export const blogPosts: BlogPost[] = [
         heading: "¿Cuánto duran los tatuajes temporales?",
         body: [
           "Un tatuaje temporal dura entre 1 y 7 días, según el tipo y la zona. El papel de transferencia que usamos indica al menos 48 horas si no se frota, y las tiendas dan rangos de 3 a 7 días. Son referencias, no garantías: cambian con el roce, el agua y el producto.",
-          "Para una fiesta, una boda o una activación de un día alcanza con holgura: son tatuajes pensados para celebraciones, no para durar semanas. Lo que más los acorta es el roce constante y la ropa apretada.",
+          "Para una fiesta, una boda o una activación de un día alcanza con holgura: son tatuajes pensados para celebraciones, no para durar semanas. Lo que más los acorta es el roce constante y la ropa apretada. Si los quieres para un evento, mira nuestros [tatuajes temporales personalizados](/productos/tatuajes-temporales-personalizados).",
         ],
       },
       {
@@ -4359,7 +4359,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["tatuajes-temporales-personalizados-para-eventos", "tatuajes-temporales-para-boda-eventos-y-fiestas"],
+    relatedBlogSlugs: ["tatuajes-temporales-personalizados-para-eventos", "tatuajes-temporales-para-boda-eventos-y-fiestas", "stickers-para-bodas-eventos-y-fiestas"],
     faq: [
       {
         q: "¿Cuánto duran los tatuajes temporales?",
@@ -4392,6 +4392,10 @@ export const blogPosts: BlogPost[] = [
       {
         q: "¿Se pueden poner a niños?",
         a: "Son de uso externo. Si hay piel sensible o alergias, prueba primero con uno pequeño, y en niños que un adulto los aplique y supervise. El fabricante del papel no indica una edad mínima.",
+      },
+      {
+        q: "¿Puedo personalizar tatuajes temporales con mi logo?",
+        a: "Sí. En Yume los hacemos a la medida con tu logo, tu diseño o tus fotos, y se cotizan por WhatsApp según diseño, tamaño y cantidad.",
       },
       {
         q: "¿Cuánto tarda un pedido de tatuajes temporales personalizados?",
