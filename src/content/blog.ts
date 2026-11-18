@@ -8492,17 +8492,19 @@ export const blogPosts: BlogPost[] = [
     slug: "etiquetas-personalizadas-velas-jabones-productos-artesanales",
     title: "Etiquetas para velas personalizadas, jabones y más",
     description:
-      "Etiquetas para velas personalizadas, jabones y piezas artesanales: tamaños, acabados, corte, mínimos y prueba digital antes de imprimir.",
+      "Etiquetas para velas personalizadas, jabones y piezas artesanales para eventos: tamaños, acabados, corte, mínimo de 40 piezas y prueba digital.",
     category: "Guías",
     publishedAt: "2026-11-17",
+    modifiedAt: "2026-11-18",
     intro:
-      "Una vela o un jabón con una etiqueta que lleva un nombre y una fecha deja de ser un producto y se vuelve un recuerdo. Si buscas etiquetas para velas personalizadas para un evento, aquí ves qué etiqueta de Yume conviene, qué tamaños hay, cuál es el mínimo y cómo se pide con prueba digital.",
+      "Una vela o un jabón con una etiqueta que lleva un nombre y una fecha deja de ser un producto y se vuelve un recuerdo. Si buscas etiquetas para velas personalizadas para una boda, un baby shower, un kit de bienvenida o un regalo corporativo, aquí ves qué etiqueta de Yume conviene, qué tamaños hay, cuál es el mínimo, cómo se pide con prueba digital y qué conviene confirmar si además vendes tu producto.",
     sections: [
       {
         heading: "Etiquetas para velas personalizadas: qué pedir para un evento",
         body: [
           "Para un detalle de evento, pide etiquetas con el nombre de los festejados, la fecha o tu logo, en vinil con laminado BOPP y el tamaño que mejor acomode a tu vela, jabón o pieza artesanal. Las pides por pieza, en tirajes pensados para un evento concreto, y ves una prueba digital antes de imprimir.",
           "Yume imprime las etiquetas. La vela, el jabón o la pieza artesanal los consigues tú, porque no fabricamos ni vendemos esos productos.",
+          "Funciona para bodas, baby showers, kits de bienvenida y regalos corporativos. Si eres planner, puedes coordinar el pedido de tu cliente directo por WhatsApp, con prueba digital antes de producir. El proceso completo está en la [guía para planners](/blog/guia-planners-proveedor-detalles-personalizados).",
         ],
       },
       {
@@ -8510,6 +8512,7 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Para una boda, la etiqueta puede llevar los nombres y la fecha; para un baby shower, el nombre del bebé; para una posada o un evento de empresa, tu logo. La misma vela o el mismo jabón cambia de significado según lo que diga la etiqueta.",
           "Para cada ocasión hay una guía con más ideas: [souvenirs de boda personalizados](/blog/souvenirs-de-boda-personalizados), [recuerdos para baby shower](/blog/recuerdos-baby-shower-personalizados) y [detalles de posada para empresa](/blog/detalles-posada-empresa-personalizados).",
+          "Para empresas, el mismo formato sirve en [aniversarios de empresa](/blog/aniversario-empresa-detalles-personalizados) y en [detalles para eventos con clientes](/blog/detalles-evento-con-clientes-personalizados), con tu logo en lugar de nombres.",
         ],
       },
       {
@@ -8517,6 +8520,7 @@ export const blogPosts: BlogPost[] = [
         body: [
           "No tienes que escoger entre vinil y BOPP: las etiquetas de Yume son de vinil premium y todas llevan laminado BOPP de alta calidad, sin costo extra. Lo que sí eliges es el acabado, mate, brillante u holográfico, y el tipo de corte, troquelado o semitroquelado.",
           "El acabado holográfico tiene un costo extra por pieza, que ves en la ficha del producto. Si dudas entre los dos cortes, revisa [troquelado y semitroquelado](/blog/troquelado-vs-semitroquelado-stickers); si comparas con papel, está la guía de [vinil frente a papel](/blog/stickers-vinil-vs-papel-diferencias).",
+          "Según la ficha del producto, el vinil es resistente al agua, al sol y a rayones. Puedes ver ejemplos reales de trabajos anteriores en la [galería de Yume](/galeria).",
         ],
       },
       {
@@ -8536,22 +8540,38 @@ export const blogPosts: BlogPost[] = [
         },
       },
       {
+        heading: "Etiqueta de regalo o de producto a la venta: qué confirmar",
+        body: [
+          "Una etiqueta de detalle de evento y la etiqueta de un producto que vendes no son lo mismo. Si vendes velas o jabones, pueden aplicar normas de etiquetado que dependen del país y del producto. Esta guía no las sustituye: confírmalas con la autoridad competente antes de imprimir tu pedido.",
+          "En México, si vas a vender velas o jabones, confirma con COFEPRIS o con la Secretaría de Economía qué norma de etiquetado aplica a tu producto. Aquí no afirmamos cuál corresponde, porque depende del producto y de cómo lo vendas.",
+          "En Estados Unidos, la CPSC indica que el único requisito obligatorio para velas es el límite de plomo en mechas con alma metálica: 0,06 % en peso. Los envíos a granel a minoristas deben llevar la leyenda «Conforms to 16 CFR 1500.17(a)(13)», que no hace falta en el empaque de venta al consumidor. Esto solo importa si vendes o envías a ese país.",
+          "Cuando sepas qué texto lleva tu etiqueta, mándalo por WhatsApp y revísalo en la prueba digital antes de imprimir.",
+        ],
+      },
+      {
         heading: "Mínimo de piezas y precio por etiqueta",
         body: [
           "El mínimo es de 40 piezas en los stickers de vinil personalizados, que sirven para cualquier diseño. Pasando el mínimo puedes escribir la cantidad exacta que necesitas, por ejemplo una por cada detalle de tu evento. Se venden por pieza, no por planilla.",
           "El precio por pieza depende del tamaño y se muestra en la ficha de [stickers de vinil personalizados](/productos/stickers-vinil-impermeable), donde también eliges el corte y el acabado.",
+          "Si lo que quieres es repetir el logo de tu negocio en una etiqueta, la ficha de [etiquetas con tu logo](/productos/stickers-logo-personalizado) parte de 50 piezas.",
         ],
       },
       {
         heading: "Cómo pedir con prueba digital por WhatsApp",
         body: [
           "Eliges producto, tamaño, corte y acabado en la ficha, y nos mandas tu logo, imagen o diseño por WhatsApp. Antes de imprimir recibes una prueba digital para revisar nombres, fechas y colores. Para un evento con varias piezas, esa prueba es el momento de corregir todo.",
-          "Si organizas eventos para clientes, revisa la guía de [prueba digital para planners](/blog/prueba-digital-pedido-evento-planners). Para saber los tiempos, consulta [cuánto tarda un pedido](/blog/cuanto-tarda-un-pedido-de-stickers-personalizados).",
+          "Si organizas eventos para clientes, revisa la guía de [prueba digital para planners](/blog/prueba-digital-pedido-evento-planners) y el [checklist de pedido para planners](/blog/checklist-planners-pedido-detalles-evento). Para saber los tiempos, consulta [cuánto tarda un pedido](/blog/cuanto-tarda-un-pedido-de-stickers-personalizados).",
         ],
       },
     ],
-    relatedProductSlugs: ["stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["troquelado-vs-semitroquelado-stickers", "stickers-para-bodas-eventos-y-fiestas", "prueba-digital-pedido-evento-planners", "souvenirs-de-boda-personalizados"],
+    relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
+    relatedBlogSlugs: ["troquelado-vs-semitroquelado-stickers", "stickers-para-bodas-eventos-y-fiestas", "prueba-digital-pedido-evento-planners", "souvenirs-de-boda-personalizados", "guia-planners-proveedor-detalles-personalizados"],
+    sources: [
+      {
+        label: "CPSC: Candles (guía para negocios, EE. UU.)",
+        url: "https://www.cpsc.gov/Business--Manufacturing/Business-Education/Business-Guidance/Candles",
+      },
+    ],
     faq: [
       {
         q: "¿Yume vende las velas o los jabones?",
@@ -8572,6 +8592,18 @@ export const blogPosts: BlogPost[] = [
       {
         q: "¿Cuál es el mínimo de piezas?",
         a: "El mínimo es de 40 piezas en stickers de vinil personalizados. Se venden por pieza, no por planilla.",
+      },
+      {
+        q: "¿Yume me dice qué norma aplica a mi vela o jabón?",
+        a: "No. Si vas a vender tu producto, confirma con COFEPRIS o con la Secretaría de Economía qué norma de etiquetado aplica. Yume imprime el texto que apruebas en la prueba digital.",
+      },
+      {
+        q: "¿Las normas ASTM de velas son obligatorias en EE. UU.?",
+        a: "Según la CPSC, las normas ASTM F2058, F2179 y F2417 son voluntarias: son consensos de la industria y no son obligatorias por ley.",
+      },
+      {
+        q: "Soy planner: ¿puedo coordinar el pedido de mi cliente?",
+        a: "Sí. Puedes coordinarlo por WhatsApp y revisar la prueba digital antes de producir.",
       },
     ],
   },

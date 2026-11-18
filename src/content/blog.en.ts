@@ -8049,17 +8049,19 @@ export const blogPostsEn: BlogPost[] = [
     slug: "custom-labels-for-candles-soaps-and-handmade-products",
     title: "Custom Candle Labels, Soaps and Handmade Products",
     description:
-      "Custom candle labels for soaps and handmade pieces: sizes, finishes, cut type, minimums and a digital proof before printing.",
+      "Custom candle labels for soaps and handmade pieces at events: sizes, finishes, cut type, 40-piece minimum and a digital proof before printing.",
     category: "Guides",
     publishedAt: "2026-11-17",
+    modifiedAt: "2026-11-18",
     intro:
-      "A candle or a soap with a label that carries a name and a date stops being a product and becomes a keepsake. If you are looking for custom candle labels for an event, here is which Yume label fits, which sizes exist, what the minimum is and how to order with a digital proof.",
+      "A candle or a soap with a label that carries a name and a date stops being a product and becomes a keepsake. If you are looking for custom candle labels for a wedding, a baby shower, a welcome kit or a corporate gift, here is which Yume label fits, which sizes exist, what the minimum is, how to order with a digital proof and what to confirm if you also sell your product.",
     sections: [
       {
         heading: "Custom candle labels: what to order for an event",
         body: [
           "For an event favor, order labels with the honorees' names, the date or your logo, in vinyl with BOPP lamination and the size that best suits your candle, soap or handmade piece. You order by the piece, in runs sized for one specific event, and you see a digital proof before anything is printed.",
           "Yume prints the labels. You source the candle, soap or handmade piece yourself, because we don't make or sell those products.",
+          "It works for weddings, baby showers, welcome kits and corporate gifts. If you are a planner, you can coordinate your client's order directly on WhatsApp, with a digital proof before production. The full process is in the [guide for planners](/en/blog/guide-for-planners-working-with-custom-favors-supplier).",
         ],
       },
       {
@@ -8067,6 +8069,7 @@ export const blogPostsEn: BlogPost[] = [
         body: [
           "For a wedding, the label can carry the couple's names and the date; for a baby shower, the baby's name; for a posada or a company event, your logo. The same candle or soap takes on a different meaning depending on what its label says.",
           "There is a guide with more ideas for each occasion: [personalized wedding favors](/en/blog/personalized-wedding-favors-with-name-and-date), [baby shower favors](/en/blog/personalized-baby-shower-favors) and [company posada favors](/en/blog/personalized-company-posada-favors).",
+          "For companies, the same format works for [company anniversaries](/en/blog/company-anniversary-custom-details) and [details for client events](/en/blog/custom-details-for-client-events), with your logo instead of names.",
         ],
       },
       {
@@ -8074,6 +8077,7 @@ export const blogPostsEn: BlogPost[] = [
         body: [
           "You don't have to choose between vinyl and BOPP: Yume labels are premium vinyl and all of them carry high-quality BOPP lamination at no extra cost. What you do choose is the finish, matte, glossy or holographic, and the cut type, die cut or kiss cut.",
           "The holographic finish has an extra cost per piece, which you see on the product page. If you are unsure between the two cuts, read [die cut vs kiss cut](/en/blog/die-cut-vs-kiss-cut-stickers); if you are comparing with paper, see [vinyl vs paper stickers](/en/blog/vinyl-vs-paper-stickers-differences).",
+          "According to the product page, the vinyl is resistant to water, sun and scratches. You can see real examples of past work in the [Yume gallery](/en/gallery).",
         ],
       },
       {
@@ -8093,22 +8097,38 @@ export const blogPostsEn: BlogPost[] = [
         },
       },
       {
+        heading: "Gift label or label for a product you sell: what to confirm",
+        body: [
+          "An event-favor label and the label of a product you sell are not the same thing. If you sell candles or soaps, labeling rules may apply, and they depend on the country and the product. This guide does not replace them: confirm them with the competent authority before printing your order.",
+          "In Mexico, if you plan to sell candles or soaps, confirm with COFEPRIS or the Secretaría de Economía which labeling rule applies to your product. We do not state which one applies here, because it depends on the product and how you sell it.",
+          "In the United States, the CPSC says the only mandatory requirement for candles is the lead limit in metal-core wicks: 0.06% by weight. Bulk shipments to retailers must carry the legend «Conforms to 16 CFR 1500.17(a)(13)», which is not needed on consumer retail packaging. This only matters if you sell or ship to that country.",
+          "Once you know what text your label carries, send it on WhatsApp and review it in the digital proof before printing.",
+        ],
+      },
+      {
         heading: "Minimum pieces and price per label",
         body: [
           "The minimum is 40 pieces for custom vinyl stickers, which work for any design. Once you pass the minimum you can type the exact quantity you need, for example one per favor at your event. They are sold by the piece, not by the sheet.",
           "The price per piece depends on the size and is shown on the [custom vinyl stickers](/en/products/waterproof-vinyl-stickers) page, where you also choose the cut and the finish.",
+          "If what you want is to repeat your business logo on a label, the [custom logo stickers](/en/products/custom-logo-stickers) page starts at 50 pieces.",
         ],
       },
       {
         heading: "How to order with a digital proof on WhatsApp",
         body: [
           "You pick the product, size, cut and finish on the product page, and send us your logo, image or design on WhatsApp. Before printing you receive a digital proof to check names, dates and colors. For an event with many pieces, that proof is the moment to fix everything.",
-          "If you organize events for clients, read the guide on the [digital proof for planners](/en/blog/digital-proof-event-order-planners). For timing, see [how long custom stickers take](/en/blog/how-long-do-custom-stickers-take-to-arrive).",
+          "If you organize events for clients, read the guide on the [digital proof for planners](/en/blog/digital-proof-event-order-planners) and the [planner order checklist](/en/blog/planner-checklist-custom-favors-order-event). For timing, see [how long custom stickers take](/en/blog/how-long-do-custom-stickers-take-to-arrive).",
         ],
       },
     ],
-    relatedProductSlugs: ["stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["die-cut-vs-kiss-cut-stickers", "stickers-for-weddings-events-and-parties", "digital-proof-event-order-planners", "personalized-wedding-favors-with-name-and-date"],
+    relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
+    relatedBlogSlugs: ["die-cut-vs-kiss-cut-stickers", "stickers-for-weddings-events-and-parties", "digital-proof-event-order-planners", "personalized-wedding-favors-with-name-and-date", "guide-for-planners-working-with-custom-favors-supplier"],
+    sources: [
+      {
+        label: "CPSC: Candles (business guidance, U.S.)",
+        url: "https://www.cpsc.gov/Business--Manufacturing/Business-Education/Business-Guidance/Candles",
+      },
+    ],
     faq: [
       {
         q: "Does Yume sell the candles or the soaps?",
@@ -8129,6 +8149,18 @@ export const blogPostsEn: BlogPost[] = [
       {
         q: "What is the minimum number of pieces?",
         a: "The minimum is 40 pieces for custom vinyl stickers. They are sold by the piece, not by the sheet.",
+      },
+      {
+        q: "Does Yume tell me which rule applies to my candle or soap?",
+        a: "No. If you plan to sell your product, confirm with COFEPRIS or the Secretaría de Economía which labeling rule applies. Yume prints the text you approve in the digital proof.",
+      },
+      {
+        q: "Are the ASTM candle standards mandatory in the U.S.?",
+        a: "According to the CPSC, ASTM F2058, F2179 and F2417 are voluntary: they are industry consensus standards and are not required by law.",
+      },
+      {
+        q: "I'm a planner: can I coordinate my client's order?",
+        a: "Yes. You can coordinate it on WhatsApp and review the digital proof before production.",
       },
     ],
   },
