@@ -8108,20 +8108,28 @@ export const blogPostsEn: BlogPost[] = [
   },
   {
     slug: "custom-labels-for-bazaars-and-entrepreneurs-guadalajara",
-    title: "Custom labels for entrepreneurs and bazaars",
+    title: "Custom labels for bazaars and entrepreneurs",
     description:
-      "Custom labels for entrepreneurs selling at bazaars in Guadalajara: which material, size and quantity to order, with real product data.",
+      "Custom labels for bazaars in Guadalajara: which material, size and quantity to order, and when a brand label is not enough.",
     category: "Guides",
     publishedAt: "2026-11-17",
+    modifiedAt: "2026-11-18",
     intro:
-      "If you sell at bazaars in Guadalajara, your label is part of your brand: it is the first thing customers see and what they take home. Here is a guide to decide which label to order, what size and how many pieces, for small runs and with the real data of our products.",
+      "If you sell at bazaars in Guadalajara, your label is part of your brand: it is the first thing customers see and what they take home. Here is a guide to decide which material, size and quantity of labels to order, when a brand label is not enough and how to use the same pieces as an event detail, for small runs and with the real data of our products.",
     sections: [
       {
-        heading: "Custom labels for entrepreneurs: what to order first",
+        heading: "Custom labels for bazaars: what to order first",
         body: [
-          "If you sell at bazaars, order a vinyl label with BOPP laminate and your brand logo. Choose the size to fit your packaging, the cut to fit your logo's shape and the finish to match your stall's style. All Yume stickers include BOPP laminate.",
+          "For a bazaar stall, order a vinyl label with BOPP laminate and your logo. Choose the size to fit your packaging, the cut to fit your brand's shape and the finish to match the style of your table. BOPP laminate is included in every Yume sticker.",
           "There are two products for this. [Stickers and Labels with your Logo](/en/products/custom-logo-stickers) is for your business logo, from 50 pieces. [Custom Vinyl Stickers](/en/products/waterproof-vinyl-stickers) works for any design, character or photo, from 40 pieces.",
           "Emprendedor.com recommends treating the label and packaging as a brand tool: it catches the eye on the shelf, communicates the personality of the product and builds trust. For a bazaar stall, that idea applies directly to your label.",
+        ],
+      },
+      {
+        heading: "Which material to choose for your bazaar product",
+        body: [
+          "Choose the material by where the label will live. According to COSMOS, paper suits temporary or indoor use and is inexpensive, while vinyl is the right pick when you need resistance to water and abrasion. Yume works with premium vinyl, resistant to water, sun and scratches, with BOPP laminate included.",
+          "As a practical rule derived from that guide: paper for dry packaging, and vinyl when there is moisture, refrigeration or rubbing. At Yume, labels are vinyl. To see the difference in more detail, read [vinyl vs paper](/en/blog/vinyl-vs-paper-stickers-differences).",
         ],
       },
       {
@@ -8135,7 +8143,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "Die cut, kiss cut and finish: how to decide",
         body: [
           "When you order, you choose two things: the cut and the finish. The cut can be die cut or kiss cut, and the finish can be matte, glossy or holographic. Holographic has an extra cost per piece, shown on the product page. BOPP laminate is always included at no extra cost.",
-          "To understand the difference between the two cuts, read the guide to [die cut vs kiss cut](/en/blog/die-cut-vs-kiss-cut-stickers). To compare vinyl with paper, see [vinyl vs paper stickers](/en/blog/vinyl-vs-paper-stickers-differences).",
+          "To understand the difference between the two cuts, read the guide to [die cut vs kiss cut](/en/blog/die-cut-vs-kiss-cut-stickers).",
         ],
       },
       {
@@ -8154,6 +8162,13 @@ export const blogPostsEn: BlogPost[] = [
         ],
       },
       {
+        heading: "Brand label or legal labeling: when it is not enough",
+        body: [
+          "A decorative brand label does not replace a product's legal labeling. In Mexico, NOM-050-SCFI-2004 covers commercial information and general product labeling, and prepackaged food and non-alcoholic beverages are also covered by NOM-051-SCFI/SSA1-2010. Check which standard applies to what you sell before you print.",
+          "The exact requirements are in the official text: consult it on the PLATIICA page of Mexico's Secretaría de Economía. A brand label can accompany that labeling, but it does not replace it. If you sell [candles, soaps or other handmade products](/en/blog/custom-labels-for-candles-soaps-and-handmade-products), read that guide too.",
+        ],
+      },
+      {
         heading: "What to send us to start your order",
         body: [
           "To start you only need your logo or design. On the product page you choose quantity, size, cut and finish, and then you attach your file in the WhatsApp chat. With your design we send a digital proof before printing, so you can review it calmly.",
@@ -8161,19 +8176,38 @@ export const blogPostsEn: BlogPost[] = [
         ],
       },
       {
+        heading: "Labels as an event detail: planners and companies",
+        body: [
+          "The same labels can be an event detail: for a wedding, a posada or a launch. They are ordered per event, with the exact quantity you need and a digital proof before production, in small runs. Planners and companies can order them with the event name or a logo.",
+          "For ideas by occasion, see [stickers for weddings and events](/en/blog/stickers-for-weddings-events-and-parties) and [sticker printing for events](/en/blog/sticker-printing-for-events). If you work as an organizer, visit the [planners page](/en/planners).",
+        ],
+      },
+      {
         heading: "Labels for Guadalajara bazaars: ordering and delivery",
         body: [
-          "If you are in Guadalajara or Zapopan, you can order online or on WhatsApp and get a digital proof before printing. You can check production and shipping times in the guide to [how long a sticker order takes](/en/blog/how-long-do-custom-stickers-take-to-arrive), and it pays to review them before your bazaar date.",
-          "If the bazaar is outside the city, we ship across Mexico. For more ideas, see [custom stickers for businesses in Guadalajara](/en/blog/custom-stickers-for-businesses-guadalajara) or [contact us](/en/contact).",
+          "If you are in Guadalajara or Zapopan, you can order online or on WhatsApp and get a digital proof before printing. If the bazaar is outside the city, we ship across Mexico. Check the production and shipping timelines before your event date.",
+          "You can see the timelines in the guide to [how long a sticker order takes](/en/blog/how-long-do-custom-stickers-take-to-arrive). For more ideas, see [custom stickers for businesses in Guadalajara](/en/blog/custom-stickers-for-businesses-guadalajara) or [contact us](/en/contact).",
         ],
       },
     ],
     relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["custom-stickers-for-businesses-guadalajara", "stickers-for-business-packaging", "die-cut-vs-kiss-cut-stickers", "label-printing-roll-sheet-or-by-the-piece"],
+    relatedBlogSlugs: ["custom-stickers-for-businesses-guadalajara", "stickers-for-business-packaging", "die-cut-vs-kiss-cut-stickers", "label-printing-roll-sheet-or-by-the-piece", "vinyl-vs-paper-stickers-differences", "sticker-printing-for-events"],
     sources: [
       {
         label: "Emprendedor.com: Packaging, improve your sales from the packaging without breaking the budget (in Spanish)",
         url: "https://emprendedor.com/packaging-mejorar-tus-ventas-desde-el-empaque-y-sin-romper-el-presupuesto/",
+      },
+      {
+        label: "COSMOS: Custom labels (in Spanish)",
+        url: "https://www.cosmos.com.mx/wiki/etiquetas-personalizadas-cjl1.html",
+      },
+      {
+        label: "Secretaría de Economía (PLATIICA): NOM-050-SCFI-2004 (in Spanish)",
+        url: "https://platiica.economia.gob.mx/normalizacion/?p=35427",
+      },
+      {
+        label: "NOM-051-SCFI/SSA1-2010: labeling of prepackaged food and non-alcoholic beverages (in Spanish)",
+        url: "https://www.globalstd.com/pdf/cursos/etiquetado/nom-051-SCFISSA1-2010_rq_16_rv6.pdf",
       },
     ],
     faq: [
@@ -8188,6 +8222,18 @@ export const blogPostsEn: BlogPost[] = [
       {
         q: "Are the logo labels and the vinyl stickers the same material?",
         a: "It is the same type of vinyl, with a different minimum: from 50 pieces for your business logo and from 40 pieces for any other design.",
+      },
+      {
+        q: "Does a custom label meet Mexico's labeling standard?",
+        a: "Not by itself. NOM-050-SCFI-2004 covers general product labeling, and prepackaged food and non-alcoholic beverages are also covered by NOM-051-SCFI/SSA1-2010. Check the official text to see what applies to your product.",
+      },
+      {
+        q: "Which material suits a product that gets wet or rubbed?",
+        a: "According to COSMOS, vinyl is the right pick when you need resistance to water and abrasion. Yume stickers are premium vinyl, resistant to water, sun and scratches.",
+      },
+      {
+        q: "Can I order these labels for an event instead of a bazaar?",
+        a: "Yes. They are sold by number of pieces, so you order the exact quantity you need, and you get a digital proof before printing.",
       },
     ],
   },
