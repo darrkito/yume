@@ -7,6 +7,152 @@ import { dulceroPostsEn } from "@/content/blog-dulceros.en";
 
 export const blogPostsEn: BlogPost[] = [
   {
+    "slug": "nfc-review-card-or-plate-which-to-choose",
+    "title": "NFC card for Google reviews: plate or stand?",
+    "metaTitle": "NFC review card: plate or stand?",
+    "description": "Compare NFC review plates and stands by size, placement, NFC, QR, and how they differ from a small card.",
+    "category": "Guides",
+    "publishedAt": "2026-11-18",
+    "modifiedAt": "2026-11-18",
+    "intro": "If you are looking for an NFC card for Google reviews, first consider which format fits your counter. Some people call it a card, others a plate or stand. This guide compares the two Yume pieces, where they go, and what happens when a customer taps a phone or scans the code.",
+    "sections": [
+      {
+        "heading": "Is an NFC review card the same as a plate or stand?",
+        "body": [
+          "Card, plate, and stand are names used for pieces that bring customers to a review link. At Yume you can choose a 12 × 12 cm plate or a stand with a base; we do not offer a credit-card-size card here. Both include NFC and QR.",
+          "The distinction matters if you imagined a small piece to carry in a wallet. The plate is designed to be fixed using the included adhesive, while the stand sits upright. Being larger than a credit card gives these pieces a surface that is easier to see and tap with a phone at a counter.",
+          "You do not have to choose based on the name you saw in a search. Think first about the space you have and whether you want to leave the piece fixed or move it. Then compare the dimensions and options available for each product."
+        ]
+      },
+      {
+        "heading": "When should you choose the plate?",
+        "body": [
+          "Choose the plate if you have a spot where you want to keep your review link visible. It measures 12 × 12 cm and is 0.2 cm thick; adhesive is included to fix it in place. It comes in white or black and combines NFC and a QR code.",
+          "For example, consider a spot at the register, counter, or table where customers can bring their phones close. Before sticking it down, check the location and test the reading there. That lets you check that the link opens as expected and that the QR stays visible.",
+          "The [NFC review plate](/en/products/google-review-nfc-plate) arrives configured with your business link. The version without a logo costs $140 MXN per piece; you can also choose the version with your logo. Visit its product page to see the variants before deciding."
+        ]
+      },
+      {
+        "heading": "When should you choose the NFC stand?",
+        "body": [
+          "The stand suits a place where you prefer an upright piece that you can move without peeling it off. It has an independent base, measures 12.75 cm high and 7.6 cm wide, and has a 5 cm deep base. It stands on a counter or table without glue.",
+          "It also comes in white or black, with NFC and QR configured to your link. The upright format lets you place the code in view on a flat surface. Consider both the base footprint and the height when choosing its location.",
+          "The [NFC review stand](/en/products/google-review-nfc-stand) costs $200 MXN without a logo and has a logo option. If you need to move it between a table and the counter, its base means you do not have to fix it to each surface."
+        ]
+      },
+      {
+        "heading": "How do customers open the review link with iPhone or Android?",
+        "body": [
+          "The customer brings a phone close to read the NFC or scans the QR with the camera; both lead to the review link configured for your business. No Yume app or subscription is needed. NFC reading depends on the phone and its settings, so the QR offers another route.",
+          "Phones do not all read NFC in the same way. If someone cannot open the link by tapping their phone, they can use the QR code. Test both options when the piece arrives and in the place where you plan to use it.",
+          "The guide to [how the NFC plate works with iPhone and Android](/en/blog/does-nfc-plate-work-iphone-android) explains reading conditions and what to check if a phone does not respond. There is no need to promise that every device will behave the same way."
+        ]
+      },
+      {
+        "heading": "What should you check before ordering?",
+        "body": [
+          "Decide where the piece will go, measure the space, and choose between adhesive and a base. Then select white or black and, if you want, the logo variant. Yume configures the NFC and QR with your business review link before sending the piece.",
+          "The plate and stand are made to order and subject to availability. Because of high demand, production can take 2 to 3 weeks; it is best to ask about availability before paying. Keep that timing in mind when deciding when to order.",
+          "The format makes it easier to share the link, but your customer decides whether to write and what to say. For more context, read [how to get more reviews with NFC and QR](/en/blog/how-to-get-more-google-reviews-nfc-qr) and the [comparison of an NFC plate and printed QR](/en/blog/nfc-plate-vs-printed-qr-code-for-reviews)."
+        ]
+      }
+    ],
+    "relatedProductSlugs": [
+      "placa-resena-google-nfc",
+      "stand-resena-google-nfc"
+    ],
+    "relatedBlogSlugs": [
+      "how-to-get-more-google-reviews-nfc-qr",
+      "nfc-plate-vs-printed-qr-code-for-reviews",
+      "does-nfc-plate-work-iphone-android",
+      "custom-nfc-plate-with-your-logo"
+    ],
+    "sources": [],
+    "faq": [
+      {
+        "q": "Does Yume sell a credit-card-size card?",
+        "a": "No. It offers a 12 × 12 cm plate and a stand with a base; both include NFC and QR."
+      },
+      {
+        "q": "Do the plate and stand require a subscription?",
+        "a": "No. Both arrive configured and work without an app or subscription."
+      }
+    ]
+  },
+  {
+    "slug": "custom-nfc-plate-with-your-logo",
+    "title": "Custom NFC plate with your logo for Google reviews",
+    "metaTitle": "Custom NFC plate with your logo for reviews",
+    "description": "See prices for NFC plates and stands with a logo, how to send your image, and what to consider before ordering.",
+    "category": "Guides",
+    "publishedAt": "2026-11-18",
+    "modifiedAt": "2026-11-18",
+    "intro": "A custom NFC plate can carry your business logo and your Google review link. At Yume you can choose an adhesive plate or an upright stand. This guide brings together the catalog options, their prices, and how to share your logo for your order.",
+    "sections": [
+      {
+        "heading": "What does a custom NFC plate with a logo include?",
+        "body": [
+          "The plate with a logo includes NFC and a QR code configured with your business review link. It measures 12 × 12 cm, includes adhesive, and is available in white or black. The logo version costs $155 MXN per piece; the version without a logo costs $140 MXN.",
+          "Your customer can tap their phone or scan the QR to open the link. The piece arrives configured, with no app to install and no subscription to pay for. The logo is a customization option; the NFC and QR still lead to your business review link.",
+          "You can check the variants and format on the [NFC review plate](/en/products/google-review-nfc-plate) page. Before choosing, consider where you will put it and whether you want to fix it with the included adhesive."
+        ]
+      },
+      {
+        "heading": "Is there also a custom stand with a logo?",
+        "body": [
+          "Yes. The stand with a logo costs $215 MXN per piece; without a logo it costs $200 MXN. It includes NFC and QR configured with your review link and is available in white or black. Its base holds it upright on a table or counter without sticking it down.",
+          "The choice depends on where you want to use it. The plate is fixed with adhesive; the stand has an independent base and can be moved. Both options arrive ready to use, with your business link already configured.",
+          "See the [NFC review stand](/en/products/google-review-nfc-stand) to choose the color and logo option. Check the available space on your table or counter before selecting the format you prefer."
+        ]
+      },
+      {
+        "heading": "How do I send my logo for the piece?",
+        "body": [
+          "When you choose a logo variant, you can optionally upload your file during the purchase or send it later via WhatsApp. If you do not have the file at hand when placing your order, you can use the option to send it later that way.",
+          "First select the format, color, and logo option. Review the order information to confirm you chose the variant you want. Sending the image and configuring the link are separate things: both relate to your customized piece.",
+          "If you have questions before paying, you can ask via WhatsApp. You do not need to assume that the logo and link are the same file: the logo visually identifies your business, while the link is the destination configured in the NFC and QR."
+        ]
+      },
+      {
+        "heading": "How is the review link configured?",
+        "body": [
+          "Yume programs the NFC and generates the QR with your business review link before shipping. After purchase, Yume asks you via WhatsApp for your review link or your business’s exact name on Google so it can configure your piece.",
+          "The setup applies to both the plate and the stand. When your piece arrives, you can tap a phone or scan the QR and check that it opens the expected link. If you choose the plate, check it in the place where you plan to put it.",
+          "Customers use NFC or QR to reach the link; they do not need to install a Yume app. The product does not require a subscription either. The logo option changes the customization you choose, not the need to share the correct business details."
+        ]
+      },
+      {
+        "heading": "How long does a plate or stand with a logo take?",
+        "body": [
+          "The plate and stand are made to order and subject to availability. Because of high demand, production can take 2 to 3 weeks. It is best to ask about availability before paying, especially if you need the piece for a particular date.",
+          "When planning your order, consider the production time and prepare your business information. You can upload the logo during the purchase or send it later via WhatsApp; you will also be asked for the review link or exact business name for setup.",
+          "Before confirming, check the format and variant price: plate without logo $140, plate with logo $155, stand without logo $200, and stand with logo $215, in Mexican pesos. Both pieces are offered in white or black."
+        ]
+      }
+    ],
+    "relatedProductSlugs": [
+      "placa-resena-google-nfc",
+      "stand-resena-google-nfc"
+    ],
+    "relatedBlogSlugs": [
+      "nfc-review-card-or-plate-which-to-choose",
+      "how-to-get-more-google-reviews-nfc-qr",
+      "nfc-plate-vs-printed-qr-code-for-reviews"
+    ],
+    "sources": [],
+    "faq": [
+      {
+        "q": "Can I send the logo after buying?",
+        "a": "Yes. You can optionally upload it during the purchase or send it later via WhatsApp."
+      },
+      {
+        "q": "Does the logo version need a subscription?",
+        "a": "No. The plate and stand work without an app or subscription and arrive configured with your link."
+      }
+    ]
+  },
+
+  {
     "slug": "google-review-plate-for-medical-practices",
     "title": "Google review plate for medical practices",
     "metaTitle": "Google review plate for medical practices",
@@ -2660,18 +2806,18 @@ export const blogPostsEn: BlogPost[] = [
   {
     slug: BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"],
     title: "Google Review Plate with NFC: What It Is and What It Costs",
-    metaTitle: "Google Review Plates: What They Are and What They Cost",
+    metaTitle: "Google Reviews with NFC: Plate Guide and Cost",
     description:
       "Learn about Google review plates with NFC and QR: how they work, what they cost, and how to ask for reviews while following Google's rules.",
     category: "Guides",
     publishedAt: "2026-09-15",
-    modifiedAt: "2026-11-03",
+    modifiedAt: "2026-11-18",
     intro:
       "Asking for a Google review is almost always awkward: you give your customer the business name, they search for it, sift through similar results, and sometimes give up before finding the right one. A plate with NFC and a QR code solves that step: it takes them straight to the correct listing in two seconds, with nothing to search for. Here is what a Google review plate is, how it works, where to see its price, and the full method: when to ask, what to say, where to put the plate, which Google rules to follow, and how to respond when reviews arrive.",
     sections: [
       { heading: "What is a Google review plate with NFC?", body: [
         "A Google review plate is a physical piece with an NFC chip and a QR code, both linked to your business's review link. The customer taps or scans it with their phone and goes straight to the screen for writing a review on your Google listing, without searching for you manually.",
-        "Depending on who sells it, you may find it called an NFC plate, a review card, or a Google review stand when it sits on a base. The idea is the same: shorten the path between your customer and the review form. At Yume we have two formats: a plate that sticks to a fixed spot and a stand that sits upright.",
+        "Depending on who sells it, you may find it called an NFC plate, a review card, an NFC stand, or a Google review stand when it sits on a base. The idea is the same: shorten the path between your customer and the review form. At Yume we have two formats: a plate that sticks to a fixed spot and a stand that sits upright.",
         "What it does not do: it does not publish reviews on its own or guarantee a rating. Your customer always writes the review using their Google account, and what they say depends on their experience with you."
       ] },
       { heading: "How a review plate works, step by step", body: [
@@ -2740,18 +2886,18 @@ export const blogPostsEn: BlogPost[] = [
     sources: [
       { label: "Google Business Profile Help: Read and reply to reviews, and ask customers for reviews", url: "https://support.google.com/business/answer/3474122?hl=en" },
     ],
-    relatedBlogSlugs: [BLOG_SLUG_EN["placas-resenas-google-pago-unico-vs-suscripcion"], BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"], BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"], BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"], BLOG_SLUG_EN["placa-resenas-google-para-consultorios"], BLOG_SLUG_EN["placa-resenas-google-para-restaurantes"], BLOG_SLUG_EN["placa-resenas-google-para-salones-esteticas-y-barberias"], BLOG_SLUG_EN["placa-resenas-google-para-planners-y-eventos"], BLOG_SLUG_EN["como-hacer-una-encuesta-de-satisfaccion-del-cliente"]],
+    relatedBlogSlugs: ["nfc-review-card-or-plate-which-to-choose", "custom-nfc-plate-with-your-logo", BLOG_SLUG_EN["placas-resenas-google-pago-unico-vs-suscripcion"], BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"], BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"], BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"], BLOG_SLUG_EN["placa-resenas-google-para-consultorios"], BLOG_SLUG_EN["placa-resenas-google-para-restaurantes"], BLOG_SLUG_EN["placa-resenas-google-para-salones-esteticas-y-barberias"], BLOG_SLUG_EN["placa-resenas-google-para-planners-y-eventos"], BLOG_SLUG_EN["como-hacer-una-encuesta-de-satisfaccion-del-cliente"]],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
   },
   {
     slug: BLOG_SLUG_EN["placa-nfc-vs-codigo-qr-impreso-resenas"],
     title: "NFC Plate vs. Printed QR Code: Which One Should You Use for Reviews?",
-    metaTitle: "NFC Plate vs. Printed QR Code for Reviews",
+    metaTitle: "NFC Plate vs. Printed QR for Google Reviews",
     description:
       "Real differences between a plate with an NFC chip and a homemade sign with just a printed QR code for collecting Google reviews at your business.",
     category: "Guides",
     publishedAt: "2026-09-15",
-    modifiedAt: "2026-11-13",
+    modifiedAt: "2026-11-18",
     intro: "Printing a QR code on a sheet of paper and placing it on the counter is free and anyone can do it. So why consider an NFC plate? Both lead to the same review page. The difference is in convenience, which phones can use each option, the impression the piece makes, and the Google rules that apply to both.",
     sections: [
       { heading: "NFC plate vs. QR code: the practical difference", body: [
@@ -2806,7 +2952,7 @@ export const blogPostsEn: BlogPost[] = [
       { q: "What text should I put on the plate?", a: "Use neutral wording, such as 'Tell us about your experience.' Google says not to request specific content in a review." },
       { q: "Will NFC get me more reviews?", a: "There is no reliable figure to support that claim." },
     ],
-    relatedBlogSlugs: [BLOG_SLUG_EN["placas-resenas-google-pago-unico-vs-suscripcion"], BLOG_SLUG_EN["placa-nfc-funciona-iphone-android"], BLOG_SLUG_EN["donde-poner-placa-resenas-google"], BLOG_SLUG_EN["que-si-y-que-no-pedir-resenas-google-politicas"], BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"], BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"], BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"], BLOG_SLUG_EN["placa-resenas-google-para-consultorios"], BLOG_SLUG_EN["placa-resenas-google-para-restaurantes"], BLOG_SLUG_EN["placa-resenas-google-para-salones-esteticas-y-barberias"], BLOG_SLUG_EN["placa-resenas-google-para-planners-y-eventos"], BLOG_SLUG_EN["como-hacer-una-encuesta-de-satisfaccion-del-cliente"]],
+    relatedBlogSlugs: ["nfc-review-card-or-plate-which-to-choose", "custom-nfc-plate-with-your-logo", BLOG_SLUG_EN["placas-resenas-google-pago-unico-vs-suscripcion"], BLOG_SLUG_EN["placa-nfc-funciona-iphone-android"], BLOG_SLUG_EN["donde-poner-placa-resenas-google"], BLOG_SLUG_EN["que-si-y-que-no-pedir-resenas-google-politicas"], BLOG_SLUG_EN["como-conseguir-mas-resenas-de-google-nfc-qr"], BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"], BLOG_SLUG_EN["como-configurar-perfil-de-google-y-pedir-resenas"], BLOG_SLUG_EN["placa-resenas-google-para-consultorios"], BLOG_SLUG_EN["placa-resenas-google-para-restaurantes"], BLOG_SLUG_EN["placa-resenas-google-para-salones-esteticas-y-barberias"], BLOG_SLUG_EN["placa-resenas-google-para-planners-y-eventos"], BLOG_SLUG_EN["como-hacer-una-encuesta-de-satisfaccion-del-cliente"]],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
     sources: [
       { label: "Google Maps content policy: reviews", url: "https://support.google.com/contributionpolicy/answer/7400114?hl=en" },
@@ -6705,7 +6851,7 @@ export const blogPostsEn: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["placa-resena-google-nfc", "stand-resena-google-nfc"],
-    relatedBlogSlugs: ["nfc-plate-vs-printed-qr-code-for-reviews", "how-to-use-your-yume-google-review-plate", "where-to-put-your-google-review-plate", "google-review-plate-for-event-planners-and-venues", "google-review-plates-one-time-price-vs-subscription", "how-to-get-more-google-reviews-nfc-qr"],
+    relatedBlogSlugs: ["nfc-review-card-or-plate-which-to-choose", "custom-nfc-plate-with-your-logo", "nfc-plate-vs-printed-qr-code-for-reviews", "how-to-use-your-yume-google-review-plate", "where-to-put-your-google-review-plate", "google-review-plate-for-event-planners-and-venues", "google-review-plates-one-time-price-vs-subscription", "how-to-get-more-google-reviews-nfc-qr"],
     sources: [
       { label: "Apple Developer: Adding support for background tag reading", url: "https://developer.apple.com/documentation/corenfc/adding-support-for-background-tag-reading.md" },
       { label: "Android Developers: NFC basics", url: "https://developer.android.com/develop/connectivity/nfc/nfc?hl=es" },

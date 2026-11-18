@@ -436,10 +436,10 @@ export const products: Product[] = [
       { label: "Instalación", value: "Ninguna, se entrega lista para usar" },
       { label: "Producción", value: "Sobre pedido" },
     ],
-    metaTitle: "Placas de reseñas Google desde 1 pieza | $140",
+    metaTitle: "Placa NFC para reseñas de Google | desde $140",
     description:
       "Placa para conseguir más reseñas de Google, con tecnología NFC y código QR, ideal para mostrador, caja o mesa. La configuramos con el enlace de tu negocio antes de enviártela: el NFC ya está programado y el QR ya está listo para usar, no necesitas instalar ni configurar nada, ni pagar ninguna suscripción. Incluye adhesivo para pegarla donde prefieras. Disponible en blanco o negro.",
-    metaDescription: "Placas de reseñas Google con NFC y QR, desde 1 pieza por $140. Sin app ni suscripción; adhesivo incluido.",
+    metaDescription: "Placa NFC y QR para reseñas de Google, desde 1 pieza por $140. Se entrega programada con tu enlace, sin app ni suscripción; adhesivo incluido.",
     updatedAt: "2026-11-13",
     details: [
       "Tus clientes tocan con el celular (NFC) o escanean el QR: ambos llevan directo a dejar una reseña en Google",
@@ -509,10 +509,10 @@ export const products: Product[] = [
       { label: "Instalación", value: "Ninguna, se entrega lista para usar" },
       { label: "Producción", value: "Sobre pedido" },
     ],
-    metaTitle: "Stand de reseñas Google desde 1 pieza | $200",
+    metaTitle: "Stand NFC para reseñas de Google | desde $200",
     description:
       "Stand con base para conseguir más reseñas de Google, con tecnología NFC y código QR, para colocar de pie sobre mostrador, caja o mesa sin necesidad de pegarlo. La configuramos con el enlace de tu negocio antes de enviártelo: el NFC ya está programado y el QR ya está listo para usar, no necesitas instalar ni configurar nada, ni pagar ninguna suscripción. Disponible en blanco o negro.",
-    metaDescription: "Stand para reseñas Google con NFC y QR, desde 1 pieza por $200. Blanco o negro, sin app ni suscripción.",
+    metaDescription: "Stand NFC y QR (soporte de pie) para reseñas de Google, desde 1 pieza por $200. Blanco o negro, sin app ni suscripción.",
     updatedAt: "2026-11-13",
     details: [
       "Tus clientes tocan con el celular (NFC) o escanean el QR: ambos llevan directo a dejar una reseña en Google",
@@ -535,6 +535,7 @@ export const products: Product[] = [
       { id: "negro-logo", label: "Negro con tu logo", price: 215 },
     ],
     faq: [
+      { q: "¿Qué es un stand o soporte NFC para reseñas?", a: "Es un soporte con base que se coloca de pie sobre un mostrador o mesa, sin necesidad de pegarlo. Su NFC y QR llevan al enlace de reseñas y se entrega ya configurado." },
       {
         q: "¿Necesito configurar el NFC o el QR yo mismo?",
         a: "No. Nosotros programamos el NFC y generamos el código QR con el enlace de tu reseña de Google antes de enviarte tu stand: lo recibes listo para usar.",

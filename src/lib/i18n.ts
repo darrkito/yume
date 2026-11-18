@@ -93,6 +93,8 @@ export const BLOG_SLUG_EN: Record<string, string> = {
   "checklist-planners-pedido-detalles-evento": "planner-checklist-custom-favors-order-event",
   "detalles-evento-con-clientes-personalizados": "custom-details-for-client-events",
   "placa-nfc-funciona-iphone-android": "does-nfc-plate-work-iphone-android",
+  "tarjeta-nfc-resenas-google-que-elegir": "nfc-review-card-or-plate-which-to-choose",
+  "placa-nfc-personalizada-con-logo": "custom-nfc-plate-with-your-logo",
   "donde-poner-placa-resenas-google": "where-to-put-your-google-review-plate",
   "que-si-y-que-no-pedir-resenas-google-politicas": "google-review-policies-what-you-can-and-cannot-do",
   "resenas-google-dentistas-consultorios": "google-reviews-for-dentists-how-to-ask",
