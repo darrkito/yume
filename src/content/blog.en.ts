@@ -7752,22 +7752,39 @@ export const blogPostsEn: BlogPost[] = [
       "End-of-school-year favor boxes: which detail fits each level, how to personalize it and when to order based on the 2026-2027 SEP calendar.",
     category: "Guides",
     publishedAt: "2026-11-17",
+    modifiedAt: "2026-11-18",
     intro:
-      "When the school year nears its close, the questions start: what to give your child or their group, the teachers and the guests at the ceremony. A favor box with a name, graduating class or theme turns everyday candy into a detail that looks planned. Here you will find when to order based on the SEP calendar, what fits each level and what to confirm with the school.",
+      "When the school year nears its close, the questions start: what to give your child or their group, the teachers and the guests at the ceremony. A favor box with a name, graduating class or theme turns everyday candy into a detail that looks planned. Here you will find a timeline based on the SEP calendar, what fits each level and what to confirm with the school.",
     sections: [
       {
         heading: "When to order favor boxes for the 2026-2027 school year close",
         body: [
-          "According to the SEP calendar, the 2026-2027 school year for basic education ends on Friday, July 9, 2027. From the return after Holy Week on Monday, April 5, 2027, to the close there are about 13 weeks. Confirm the real date with your school.",
-          "Holy Week 2027 runs from March 22 to April 2. In the previous school year, classes ended on July 15, 2026, and some states moved it earlier because of high temperatures. So the closing date can change by state or school, and it is worth asking before you set your deadline.",
+          "According to the 2026-2027 SEP calendar, the last day of classes for basic education is Friday, July 9, 2027, with 185 effective class days. To order without rushing, count backwards from that date and confirm with your school, because each state or school can adjust it.",
+          "July 9, 2027 is the SEP date for basic education. If the group is in high school, confirm the calendar with its campus. Farewell ceremonies and parties tend to fall in the last weeks, which tend to have a lighter academic load, although that is an inference and not an official date.",
           "For production and shipping times on your order, message us on WhatsApp from the [contact page](/en/contact) with your ceremony date and we will confirm. If you are still comparing options, see the [personalized party favor boxes](/en/products/personalized-party-favor-boxes).",
         ],
+      },
+      {
+        heading: "A timeline to order without rushing before the breaks",
+        body: [
+          "A simple timeline: define the group and the design now, approve the digital proof before winter break (December 21, 2026 to January 5, 2027) or before Holy Week (March 22 to April 2, 2027), and have delivery settled well before July 9, 2027.",
+          "Ordering before those breaks keeps the design and the approval from slipping. We confirm production and shipping times for your order on WhatsApp based on your ceremony date.",
+        ],
+        table: {
+          headers: ["2026-2027 SEP calendar date", "What it marks"],
+          rows: [
+            ["December 21, 2026 to January 5, 2027", "Winter break"],
+            ["March 22 to April 2, 2027", "Holy Week"],
+            ["April 5, 2027", "Return to classes"],
+            ["July 9, 2027", "Last day of classes for basic education"],
+          ],
+        },
       },
       {
         heading: "End-of-school-year favor boxes: which detail fits each level",
         body: [
           "Four levels graduate: preschool, elementary, middle school and high school. The same logic works for all of them: a favor box with each person's name and the graduating class or group theme. What changes is who receives it: students, teachers or ceremony guests.",
-          "By level, the order list is the same: preschool, elementary, middle school or high school; each person's name, graduating class or group theme, and a quantity for students, teachers and guests. The school confirms the ceremony date for each level.",
+          "On the teachers' favor boxes you can use each teacher's name, and on the guests' boxes the name of the graduating class or group. The school confirms the ceremony date for each level.",
         ],
       },
       {
@@ -7775,13 +7792,14 @@ export const blogPostsEn: BlogPost[] = [
         body: [
           "The favor box is personalized with a name, a theme and a logo. It arrives assembled and empty, so you choose what goes inside. That way the detail looks made for the group that receives it. Before production we send a digital proof, and nothing is produced until you approve it.",
           "A kindergarten in Monterrey gave each student a keepsake with a photo, candy, a personalized bottle and a puzzle, according to an article summarizing a viral video. It is an anecdotal example, not a statistic. For something similar, you can add [custom vinyl stickers](/en/products/waterproof-vinyl-stickers) with the same design as the favor box.",
+          "If you prefer a detail without an individual name, a design with the graduating class or the group theme works equally for everyone.",
         ],
       },
       {
         heading: "What to confirm with the school before ordering",
         body: [
           "Confirm three things with the school: the real closing date and ceremony date, how many students and teachers will receive a detail, and what is allowed to be handed out. July 9 is the SEP date for basic education and it can change by state or school.",
-          "Also ask whether the school has rules about what can be handed out on campus, because we have not verified them and they can vary. For filling ideas, see [what to put in a party favor box](/en/blog/what-to-put-in-a-party-favor-box).",
+          "Also ask whether the school has rules about what can be handed out on campus, because we have not verified them and they can vary. For filling ideas, see [what to put in a party favor box](/en/blog/what-to-put-in-a-party-favor-box), and to work out quantities, [how many party favors to order per event](/en/blog/how-many-party-favors-to-order-per-event).",
         ],
       },
       {
@@ -7795,18 +7813,26 @@ export const blogPostsEn: BlogPost[] = [
     relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
     relatedBlogSlugs: ["graduation-favor-boxes", "what-to-put-in-a-party-favor-box", "planner-checklist-custom-favors-order-event", "personalized-party-favor-boxes-guadalajara"],
     sources: [
-      { label: "UnoTV: SEP publishes the 2026-2027 school calendar", url: "https://www.unotv.com/nacional/sep-publica-calendario-escolar-2026-2027-vacaciones-puentes-y-fechas-clave/" },
+      { label: "N+: when is the last day of classes under the 2026-2027 SEP calendar", url: "https://www.nmas.com.mx/sociedad/educacion/cuando-sera-ultimo-dia-clases-segun-nuevo-calendario-sep-2026-2027-fecha-exacta-fin-ciclo/" },
       { label: "N+: graduation 2026, levels and closing dates", url: "https://www.nmas.com.mx/sociedad/educacion/frases-graduacion-2026-discurso-despedida-palabras-preescolar-primaria-secundaria-preparatoria/" },
       { label: "El Tiempo: kindergarten graduation party in Monterrey", url: "https://www.eltiempo.com/cultura/gente/mama-es-viral-por-compartir-la-lujosa-fiesta-de-graduacion-de-kinder-de-su-hijo-desde-robots-gigantes-hasta-camaras-instantaneas-3361485" },
     ],
     faq: [
       {
         q: "How many class days does the 2026-2027 school year have?",
-        a: "According to the SEP calendar for basic education, the school year has 185 class days and started on August 31, 2026.",
+        a: "According to the SEP calendar for basic education, the school year has 185 effective class days.",
       },
       {
-        q: "Which calendar dates help me place my deadlines?",
-        a: "The 2027 Consejo Técnico days and long weekends include April 30, May 28 and June 25. They help you count backwards from the close, always confirming your own school's calendar.",
+        q: "Is the closing date the same at every school?",
+        a: "Each state or school can adjust the dates of the SEP calendar. Confirm the closing date and the ceremony date with yours before you set your order.",
+      },
+      {
+        q: "When is winter break in the 2026-2027 school year?",
+        a: "According to the SEP calendar, it runs from December 21, 2026 to January 5, 2027.",
+      },
+      {
+        q: "Do the favor boxes come with candy?",
+        a: "No. The favor box arrives assembled and empty, so you choose what goes inside.",
       },
       {
         q: "How long will my order take if the ceremony is in July?",

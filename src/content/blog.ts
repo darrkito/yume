@@ -8173,22 +8173,39 @@ export const blogPosts: BlogPost[] = [
       "Dulceros fin de año escolar: qué detalle va con cada nivel, cómo personalizarlo y cuándo pedir según el calendario SEP 2026-2027.",
     category: "Guías",
     publishedAt: "2026-11-17",
+    modifiedAt: "2026-11-18",
     intro:
-      "Cuando el ciclo escolar se acerca a su cierre, llegan las preguntas: qué darle a tu hijo o a su grupo, a las maestras y a los invitados de la ceremonia. Un dulcero con nombre, generación o tema convierte los dulces de siempre en un detalle que se ve pensado. Aquí encuentras cuándo conviene pedir según el calendario SEP, qué va con cada nivel y qué confirmar con la escuela.",
+      "Cuando el ciclo escolar se acerca a su cierre, llegan las preguntas: qué darle a tu hijo o a su grupo, a las maestras y a los invitados de la ceremonia. Un dulcero con nombre, generación o tema convierte los dulces de siempre en un detalle que se ve pensado. Aquí encuentras la línea de tiempo según el calendario SEP, qué va con cada nivel y qué confirmar con la escuela.",
     sections: [
       {
         heading: "Cuándo pedir dulceros para el cierre del ciclo escolar 2026-2027",
         body: [
-          "Según el calendario de la SEP, el ciclo escolar 2026-2027 de educación básica termina el viernes 9 de julio de 2027. Del regreso de Semana Santa, el lunes 5 de abril de 2027, al cierre hay unas 13 semanas. Confirma la fecha real con tu escuela.",
-          "Semana Santa 2027 va del 22 de marzo al 2 de abril. En el ciclo anterior, el fin de clases fue el 15 de julio de 2026, y algunos estados lo adelantaron por las altas temperaturas. Por eso la fecha de cierre puede cambiar según el estado o la escuela, y conviene preguntarla antes de fijar tu plazo.",
+          "Según el calendario de la SEP 2026-2027, el último día de clases de educación básica es el viernes 9 de julio de 2027, con 185 días efectivos de clase. Para pedir con calma, cuenta hacia atrás desde esa fecha y confirma con tu escuela, porque cada estado o plantel puede ajustarla.",
+          "El 9 de julio de 2027 es la fecha de la SEP para educación básica. Si el grupo es de preparatoria, confirma el calendario con su plantel. Las ceremonias y convivios de despedida suelen caer en las últimas semanas, que suelen tener menos carga académica, aunque esa es una inferencia y no una fecha oficial.",
           "Para los tiempos de producción y envío de tu pedido, escríbenos por WhatsApp desde la [página de contacto](/contacto) con la fecha de la ceremonia y te confirmamos. Si aún comparas opciones, mira los [dulceros personalizados](/productos/dulceros-personalizados).",
         ],
+      },
+      {
+        heading: "Línea de tiempo para pedir sin prisa antes de las vacaciones",
+        body: [
+          "Una línea de tiempo simple: define ahora el grupo y el diseño, aprueba la prueba digital antes de las vacaciones de invierno (21 de diciembre de 2026 al 5 de enero de 2027) o de Semana Santa (22 de marzo al 2 de abril de 2027), y deja la entrega lista antes del 9 de julio de 2027.",
+          "Pedir antes de esos cortes evita que el diseño y la aprobación se retrasen. Los tiempos de producción y envío de tu pedido te los confirmamos por WhatsApp según la fecha de tu ceremonia.",
+        ],
+        table: {
+          headers: ["Fecha del calendario SEP 2026-2027", "Qué marca"],
+          rows: [
+            ["21 de diciembre de 2026 al 5 de enero de 2027", "Vacaciones de invierno"],
+            ["22 de marzo al 2 de abril de 2027", "Semana Santa"],
+            ["5 de abril de 2027", "Regreso a clases"],
+            ["9 de julio de 2027", "Último día de clases de educación básica"],
+          ],
+        },
       },
       {
         heading: "Dulceros fin de año escolar: qué detalle va con cada nivel",
         body: [
           "Se gradúan cuatro niveles: preescolar, primaria, secundaria y preparatoria. En todos funciona la misma lógica: un dulcero con el nombre de cada persona y la generación o el tema del grupo. Lo que cambia es quién lo recibe: alumnos, maestras o invitados a la ceremonia.",
-          "Por nivel, la lista de pedido es la misma: preescolar, primaria, secundaria o preparatoria; nombre de cada persona, generación o tema del grupo, y cantidad para alumnos, maestras e invitados. La fecha de ceremonia de cada nivel la confirma la escuela.",
+          "En el dulcero de las maestras puedes usar el nombre de cada una, y en el de los invitados el nombre de la generación o del grupo. La fecha de la ceremonia de cada nivel la confirma la escuela.",
         ],
       },
       {
@@ -8196,13 +8213,14 @@ export const blogPosts: BlogPost[] = [
         body: [
           "El dulcero se personaliza con nombre, temática y logo. Llega armado y vacío, así que tú eliges qué lleva dentro. Con eso el detalle se ve hecho para el grupo que lo recibe. Antes de producir te enviamos una prueba digital, y nada se produce hasta que la apruebas.",
           "Un kínder de Monterrey entregó a cada alumno un obsequio con foto, dulces, botella personalizada y rompecabezas, según una nota que resume un video viral. Es un ejemplo anecdótico, no una cifra. Si quieres algo parecido, puedes sumar [stickers de vinil personalizados](/productos/stickers-vinil-impermeable) con el mismo diseño del dulcero.",
+          "Si prefieres un detalle sin nombre individual, un diseño con la generación o el tema del grupo sirve para todos por igual.",
         ],
       },
       {
         heading: "Qué confirmar con la escuela antes de pedir",
         body: [
           "Confirma con la escuela tres cosas: la fecha real de cierre y de la ceremonia, cuántos alumnos y maestras reciben detalle, y qué se permite entregar. La fecha del 9 de julio es la de la SEP para educación básica y puede cambiar por estado o escuela.",
-          "Pregunta también si la escuela tiene reglas sobre lo que se puede entregar en el plantel, porque no las verificamos y pueden variar. Para ideas de relleno, revisa [qué poner en un dulcero](/blog/que-poner-en-un-dulcero).",
+          "Pregunta también si la escuela tiene reglas sobre lo que se puede entregar en el plantel, porque no las verificamos y pueden variar. Para ideas de relleno, revisa [qué poner en un dulcero](/blog/que-poner-en-un-dulcero), y para calcular cantidades, [cuántos souvenirs pedir por evento](/blog/cuantos-souvenirs-pedir-por-evento).",
         ],
       },
       {
@@ -8216,18 +8234,26 @@ export const blogPosts: BlogPost[] = [
     relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
     relatedBlogSlugs: ["dulceros-para-graduacion", "que-poner-en-un-dulcero", "checklist-planners-pedido-detalles-evento", "dulceros-personalizados-guadalajara"],
     sources: [
-      { label: "UnoTV: la SEP publica el calendario escolar 2026-2027", url: "https://www.unotv.com/nacional/sep-publica-calendario-escolar-2026-2027-vacaciones-puentes-y-fechas-clave/" },
+      { label: "N+: cuándo será el último día de clases según el calendario SEP 2026-2027", url: "https://www.nmas.com.mx/sociedad/educacion/cuando-sera-ultimo-dia-clases-segun-nuevo-calendario-sep-2026-2027-fecha-exacta-fin-ciclo/" },
       { label: "N+: graduación 2026, niveles y fechas de cierre", url: "https://www.nmas.com.mx/sociedad/educacion/frases-graduacion-2026-discurso-despedida-palabras-preescolar-primaria-secundaria-preparatoria/" },
       { label: "El Tiempo: fiesta de graduación de kínder en Monterrey", url: "https://www.eltiempo.com/cultura/gente/mama-es-viral-por-compartir-la-lujosa-fiesta-de-graduacion-de-kinder-de-su-hijo-desde-robots-gigantes-hasta-camaras-instantaneas-3361485" },
     ],
     faq: [
       {
         q: "¿Cuántos días de clases tiene el ciclo escolar 2026-2027?",
-        a: "Según el calendario de la SEP para educación básica, el ciclo tiene 185 días de clases y empezó el 31 de agosto de 2026.",
+        a: "Según el calendario de la SEP para educación básica, el ciclo tiene 185 días efectivos de clase.",
       },
       {
-        q: "¿Qué fechas del calendario sirven para ubicar mis plazos?",
-        a: "Los días de Consejo Técnico y puentes de 2027 incluyen el 30 de abril, el 28 de mayo y el 25 de junio. Sirven para contar hacia atrás desde el cierre, siempre confirmando el calendario de tu escuela.",
+        q: "¿La fecha de cierre es igual en todas las escuelas?",
+        a: "Cada estado o escuela puede ajustar las fechas del calendario SEP. Confirma con la tuya la fecha de cierre y la de la ceremonia antes de fijar tu pedido.",
+      },
+      {
+        q: "¿Cuándo son las vacaciones de invierno del ciclo 2026-2027?",
+        a: "Según el calendario de la SEP, van del 21 de diciembre de 2026 al 5 de enero de 2027.",
+      },
+      {
+        q: "¿Los dulceros incluyen dulces?",
+        a: "No. El dulcero llega armado y vacío, para que tú elijas qué lleva dentro.",
       },
       {
         q: "¿Cuánto tarda mi pedido si la ceremonia es en julio?",
