@@ -8503,16 +8503,18 @@ export const blogPosts: BlogPost[] = [
     slug: "etiquetas-stickers-personalizados-cerca-de-mi-guadalajara",
     title: "Etiquetas personalizadas cerca de mí en Guadalajara",
     description:
-      "Etiquetas y stickers personalizados cerca de mí en Guadalajara: no tenemos tienda, producimos aquí, recoges en Casa Blanca o te enviamos.",
+      "Etiquetas y stickers personalizados cerca de mí en Guadalajara: sin tienda física, con prueba digital, recolección en Casa Blanca o envío nacional.",
     category: "Guías",
     publishedAt: "2026-11-17",
+    modifiedAt: "2026-11-18",
     intro:
-      "Si buscaste etiquetas personalizadas cerca de mí en Guadalajara, la respuesta honesta es esta: Yume no tiene tienda física, pero produce aquí, ofrece recolección en Casa Blanca y envía a todo el país. Esta guía explica cómo pedir paso a paso, para que tus etiquetas y stickers lleguen listos para tu boda, baby shower, cumpleaños o evento de empresa.",
+      "Si buscaste etiquetas personalizadas cerca de mí en Guadalajara, la respuesta honesta es esta: Yume no tiene tienda física, pero produce aquí, ofrece recolección en Casa Blanca y envía a todo el país. Esta guía explica cómo pedir paso a paso, qué material elegir y qué revisar antes de decidir, para que tus etiquetas y stickers lleguen listos para tu boda, baby shower, cumpleaños o evento de empresa.",
     sections: [
       {
         heading: "¿Hay etiquetas personalizadas cerca de mí sin tienda física?",
         body: [
           "Sí. Yume no tiene tienda física, pero produce en Guadalajara, ofrece recolección en paquetería Casa Blanca y envía a todo México. Para etiquetas y stickers personalizados, estar cerca importa menos que ver una prueba digital antes de imprimir, conocer los tiempos y confirmar el acabado.",
+          "La página de etiquetas troqueladas de Sticker Mule, una tienda en línea, no indica dirección, taller ni recolección en Guadalajara. Aquí el pedido se arma para tu evento y lo hablas directo por WhatsApp.",
           "Por eso, en lugar de buscar el punto de venta más cercano, conviene saber cómo funciona el pedido de principio a fin. Aquí lo explicamos paso a paso, pensado para bodas, baby showers, cumpleaños y eventos de empresa.",
         ],
       },
@@ -8520,6 +8522,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Cómo pedir etiquetas o stickers por WhatsApp paso a paso",
         body: [
           "Escribes por WhatsApp con tu idea o tu diseño, eliges tipo de producto, corte y acabado, recibes una prueba digital y, cuando la apruebas, se produce en Guadalajara. Después eliges recoger en Casa Blanca o recibirlo por envío nacional. Nada se imprime hasta que tú aceptas la prueba.",
+          "Paso 1: nos mandas tu diseño, personaje, foto o logo, o nos cuentas la idea. Paso 2: eliges el corte y el acabado. Paso 3: recibes la prueba digital. Paso 4: la apruebas y se produce en Guadalajara. Paso 5: eliges recolección en Casa Blanca o envío nacional.",
           "El corte puede ser troquelado o semitroquelado, y el acabado mate, brillante u holográfico. Si dudas entre los dos cortes, revisa la guía de [troquelado vs semitroquelado](/blog/troquelado-vs-semitroquelado-stickers).",
         ],
       },
@@ -8527,26 +8530,48 @@ export const blogPosts: BlogPost[] = [
         heading: "Qué puedes pedir: stickers de vinil, etiquetas con logo y más",
         body: [
           "Para un evento, lo más práctico son los [stickers de vinil personalizados](/productos/stickers-vinil-impermeable) con tu diseño, personaje o foto, que llevan laminado BOPP y resisten agua, sol y rayones. Si necesitas el logo de una marca, existen los [stickers con tu logo](/productos/stickers-logo-personalizado). Tamaños y mínimos están en cada ficha de producto.",
+          "Los stickers de vinil se venden por pieza, no por planilla, con mínimo de 40 piezas; los stickers con tu logo, con mínimo de 50. En vinil hay tres tamaños: chico (hasta 4 cm), mediano (de 5 a 6 cm) y grande (de 7 a 8 cm). Si necesitas algo más grande o una medida específica, se cotiza por WhatsApp.",
           "Si buscas ideas para una ocasión concreta, mira la guía de [stickers para bodas y fiestas](/blog/stickers-para-bodas-eventos-y-fiestas). Y si lo tuyo son los útiles escolares, hay una guía de [etiquetas escolares en Guadalajara](/blog/etiquetas-escolares-personalizadas-guadalajara).",
+        ],
+      },
+      {
+        heading: "Vinil o papel: qué material conviene según el uso",
+        body: [
+          "Elegir el material depende del uso: si la etiqueta va a mojarse, a tocarse o a salir al exterior, conviene vinil. El vinil de Yume resiste agua, sol y rayones según la ficha del producto. Para uso seco, el papel es otra opción, pero las fuentes no coinciden en qué tanto aguanta la humedad un papel laminado.",
+          "Un proveedor en línea describe sus adhesivos de vinil como resistentes al agua, a la intemperie y a los arañazos, y su papel mate sin laminar como resistente a ambientes húmedos, aunque no lo presenta como impermeable. Un fabricante de vinil, en cambio, sostiene que el papel couché no resiste el agua aunque esté laminado. Tómalo como una orientación y no como una regla.",
+          "Si no sabes cuál te conviene, cuéntanos por WhatsApp para qué lo usarás. Para profundizar en la diferencia, lee [vinil o papel](/blog/stickers-vinil-vs-papel-diferencias).",
+        ],
+      },
+      {
+        heading: "Para qué eventos sirven las etiquetas y stickers a la medida",
+        body: [
+          "Sirven para bodas, baby showers, cumpleaños, bautizos, XV años y eventos de empresa, siempre como un detalle pensado para esa ocasión. Como cada evento tiene sus colores y su fecha, lo mejor es escribirnos por WhatsApp con tu idea, y te enviamos una prueba digital antes de producir. Nada se imprime sin tu aprobación.",
+          "Si eres planner y coordinas varios eventos, la guía de [prueba digital para planners](/blog/prueba-digital-pedido-evento-planners) explica cómo revisar y aprobar cada pieza antes de producir.",
         ],
       },
       {
         heading: "Recolección en Casa Blanca o envío: cómo recibes tu pedido",
         body: [
           "Si estás en Guadalajara o su zona, puedes elegir recolección en una sucursal de paquetería Casa Blanca. Si estás en otra ciudad, el pedido sale por envío nacional a todo México. Los costos y plazos vigentes están en la ficha del producto y en la guía de tiempos.",
-          "Para calcular fechas con un evento en mente, lee [cuánto tarda un pedido](/blog/cuanto-tarda-un-pedido-de-stickers-personalizados) de stickers personalizados.",
+          "La sucursal es de la paquetería, no una tienda de Yume. Para calcular fechas con un evento en mente, lee [cuánto tarda un pedido](/blog/cuanto-tarda-un-pedido-de-stickers-personalizados) de stickers personalizados.",
         ],
       },
       {
         heading: "Qué conviene revisar antes de elegir proveedor, más que la cercanía",
         body: [
           "Antes de la distancia, revisa cuatro cosas: si te dan prueba digital antes de producir, quién produce y dónde, qué acabado tendrá la etiqueta y qué plazo te dan frente a la fecha de tu evento. Con eso claro, pedir a distancia es una decisión informada.",
-          "En Yume, la prueba digital va antes de imprimir, la producción es en Guadalajara y el acabado lo eliges tú. Si tu pieza va a mojarse, el vinil resiste agua, sol y rayones según la ficha del producto; para entender la diferencia, lee [vinil o papel](/blog/stickers-vinil-vs-papel-diferencias). Si comparas opciones, revisa [Yume frente a imprentas online](/blog/yume-vs-imprentas-online-stickers).",
+          "La página de vinil de MOO, una tienda en línea, vende por hojas y sin tamaños personalizados, y no menciona prueba digital ni tiempos de entrega. En Yume, la prueba digital va antes de imprimir, la producción es en Guadalajara y el acabado lo eliges tú.",
+          "Si comparas opciones, revisa [Yume frente a imprentas online](/blog/yume-vs-imprentas-online-stickers), [dónde imprimir stickers en México](/blog/donde-imprimir-stickers-personalizados-mexico) y [cuánto cuesta imprimir stickers](/blog/cuanto-cuesta-imprimir-stickers).",
         ],
       },
     ],
-    relatedProductSlugs: ["stickers-vinil-impermeable"],
+    relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
     relatedBlogSlugs: ["donde-imprimir-stickers-personalizados-mexico", "cuanto-tarda-un-pedido-de-stickers-personalizados", "stickers-para-bodas-eventos-y-fiestas", "prueba-digital-pedido-evento-planners", "stickers-personalizados-para-negocios-guadalajara", "cuanto-cuesta-imprimir-stickers"],
+    sources: [
+      { label: "MOO: adhesivos de vinilo", url: "https://www.moo.com/es-us/stickers/vinyl-stickers" },
+      { label: "Ferax: vinil adhesivo o papel couché, cuál elegir", url: "https://ferax.com.br/blog/vinil-adesivo-jato-tinta/vinil-adesivo-ferax-para-impressora-jato-de-tinta-ou-papel-couche-autoadesivo-qual-escolher/" },
+      { label: "Sticker Mule: etiquetas troqueladas", url: "https://stickermule.com/mx/products/die-cut-labels" },
+    ],
     faq: [
       {
         q: "¿Tienen tienda física en Guadalajara?",
@@ -8563,6 +8588,18 @@ export const blogPosts: BlogPost[] = [
       {
         q: "¿Pueden enviarme el pedido si vivo fuera de Guadalajara?",
         a: "Sí, el envío nacional llega a todo México. Los costos y plazos vigentes están en la ficha del producto.",
+      },
+      {
+        q: "¿Los stickers se venden por planilla o por pieza?",
+        a: "Se venden por cantidad de piezas, no por planilla. En stickers de vinil el mínimo es de 40 piezas.",
+      },
+      {
+        q: "¿El vinil resiste el agua y el sol?",
+        a: "Sí. Según la ficha del producto, el vinil premium resiste el agua, el sol y los rayones.",
+      },
+      {
+        q: "¿Qué pasa si necesito una medida más grande de 8 cm?",
+        a: "Escríbenos por WhatsApp con la medida y la cantidad, y te cotizamos aparte.",
       },
     ],
   },

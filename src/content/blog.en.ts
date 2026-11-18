@@ -8060,16 +8060,18 @@ export const blogPostsEn: BlogPost[] = [
     slug: "custom-labels-and-stickers-near-me-guadalajara",
     title: "Custom Labels Near Me in Guadalajara: How to Order",
     description:
-      "Custom labels and stickers near me in Guadalajara: no physical store, produced here, pickup at Casa Blanca or shipping across Mexico.",
+      "Custom labels and stickers near me in Guadalajara: no physical store, digital proof, pickup at Casa Blanca or shipping across Mexico.",
     category: "Guides",
     publishedAt: "2026-11-17",
+    modifiedAt: "2026-11-18",
     intro:
-      "If you searched for custom labels near me in Guadalajara, here is the honest answer: Yume has no physical store, but it produces here, offers pickup at Casa Blanca and ships across the country. This guide explains how to order step by step, so your labels and stickers arrive ready for your wedding, baby shower, birthday or company event.",
+      "If you searched for custom labels near me in Guadalajara, here is the honest answer: Yume has no physical store, but it produces here, offers pickup at Casa Blanca and ships across the country. This guide explains how to order step by step, which material to choose and what to check before deciding, so your labels and stickers arrive ready for your wedding, baby shower, birthday or company event.",
     sections: [
       {
         heading: "Are there custom labels near me without a physical store?",
         body: [
           "Yes. Yume has no physical store, but it produces in Guadalajara, offers pickup at Casa Blanca parcel service branches and ships across Mexico. For custom labels and stickers, being close matters less than seeing a digital proof before printing, knowing the timing and confirming the finish.",
+          "The die-cut labels page of Sticker Mule, an online shop, does not list an address, workshop or pickup in Guadalajara. Here the order is built for your event and you talk to us directly on WhatsApp.",
           "So instead of looking for the nearest point of sale, it helps to know how the order works from start to finish. Here it is step by step, written for weddings, baby showers, birthdays and company events.",
         ],
       },
@@ -8077,6 +8079,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "How to order labels or stickers on WhatsApp step by step",
         body: [
           "You message us on WhatsApp with your idea or design, choose the product, cut and finish, get a digital proof and, once you approve it, it is produced in Guadalajara. Then you choose pickup at Casa Blanca or national shipping. Nothing is printed until you accept the proof.",
+          "Step 1: send us your design, character, photo or logo, or tell us the idea. Step 2: choose the cut and the finish. Step 3: receive the digital proof. Step 4: approve it and it is produced in Guadalajara. Step 5: choose pickup at Casa Blanca or national shipping.",
           "The cut can be die cut or kiss cut, and the finish matte, glossy or holographic. If you are unsure between the two cuts, read the guide on [die cut vs kiss cut](/en/blog/die-cut-vs-kiss-cut-stickers).",
         ],
       },
@@ -8084,26 +8087,48 @@ export const blogPostsEn: BlogPost[] = [
         heading: "What you can order: vinyl stickers, logo labels and more",
         body: [
           "For an event, the most practical choice is [custom vinyl stickers](/en/products/waterproof-vinyl-stickers) with your design, character or photo, which carry BOPP lamination and resist water, sun and scratches. If you need a brand logo, there are [logo stickers](/en/products/custom-logo-stickers). Sizes and minimums are listed on each product page.",
+          "Vinyl stickers are sold by the piece, not by the sheet, with a minimum of 40 pieces; logo stickers have a minimum of 50. Vinyl comes in three sizes: small (up to 4 cm), medium (5 to 6 cm) and large (7 to 8 cm). If you need something bigger or a specific size, we quote it on WhatsApp.",
           "For ideas for a specific occasion, see the guide to [stickers for weddings and parties](/en/blog/stickers-for-weddings-events-and-parties). If you are shopping for school supplies, there is a guide to [school labels in Guadalajara](/en/blog/custom-school-labels-guadalajara).",
+        ],
+      },
+      {
+        heading: "Vinyl or paper: which material fits your use",
+        body: [
+          "Choosing a material depends on use: if the label will get wet, be handled or go outdoors, vinyl is the better fit. Yume's vinyl resists water, sun and scratches according to the product page. For dry use, paper is another option, but the sources disagree on how well laminated paper handles moisture.",
+          "One online provider describes its vinyl stickers as resistant to water, weather and scratches, and its unlaminated matte paper as resistant to humid environments, though it does not present it as waterproof. A vinyl manufacturer, on the other hand, claims that coated paper does not resist water even when laminated. Take it as guidance, not as a rule.",
+          "If you are not sure which fits, tell us on WhatsApp what you will use it for. To go deeper on the difference, read [vinyl or paper](/en/blog/vinyl-vs-paper-stickers-differences).",
+        ],
+      },
+      {
+        heading: "Which events custom labels and stickers suit",
+        body: [
+          "They suit weddings, baby showers, birthdays, christenings, quinceañeras and company events, always as a detail made for that occasion. Since every event has its own colors and date, the best step is to message us on WhatsApp with your idea. We send a digital proof before producing, and nothing is printed without your approval.",
+          "If you are a planner coordinating several events, the guide to the [digital proof for planners](/en/blog/digital-proof-event-order-planners) explains how to review and approve each piece before production.",
         ],
       },
       {
         heading: "Casa Blanca pickup or shipping: how you receive your order",
         body: [
           "If you are in Guadalajara or nearby, you can choose pickup at a Casa Blanca parcel service branch. If you are in another city, the order ships across Mexico. Current costs and lead times are on the product page and in our timing guide.",
-          "To work out dates with an event in mind, read [how long an order takes](/en/blog/how-long-do-custom-stickers-take-to-arrive) for custom stickers.",
+          "The branch belongs to the parcel service, not to a Yume store. To work out dates with an event in mind, read [how long an order takes](/en/blog/how-long-do-custom-stickers-take-to-arrive) for custom stickers.",
         ],
       },
       {
         heading: "What to check before choosing a supplier, more than distance",
         body: [
           "Before distance, check four things: whether you get a digital proof before production, who produces and where, what finish the label will have, and what lead time you get against your event date. With that clear, ordering remotely is an informed decision.",
-          "At Yume, the digital proof comes before printing, production is in Guadalajara and you choose the finish. If your piece will get wet, the vinyl resists water, sun and scratches according to the product page; to understand the difference, read [vinyl or paper](/en/blog/vinyl-vs-paper-stickers-differences). If you are comparing options, see [Yume vs online print shops](/en/blog/yume-vs-online-sticker-print-shops).",
+          "The MOO vinyl page, an online shop, sells by the sheet and without custom sizes, and does not mention a digital proof or delivery times. At Yume, the digital proof comes before printing, production is in Guadalajara and you choose the finish.",
+          "If you are comparing options, see [Yume vs online print shops](/en/blog/yume-vs-online-sticker-print-shops), [where to print custom stickers in Mexico](/en/blog/where-to-print-custom-stickers-mexico) and [how much it costs to print stickers](/en/blog/how-much-does-it-cost-to-print-stickers).",
         ],
       },
     ],
-    relatedProductSlugs: ["stickers-vinil-impermeable"],
+    relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
     relatedBlogSlugs: ["where-to-print-custom-stickers-mexico", "how-long-do-custom-stickers-take-to-arrive", "stickers-for-weddings-events-and-parties", "digital-proof-event-order-planners", BLOG_SLUG_EN["stickers-personalizados-para-negocios-guadalajara"], BLOG_SLUG_EN["cuanto-cuesta-imprimir-stickers"]],
+    sources: [
+      { label: "MOO: vinyl stickers", url: "https://www.moo.com/es-us/stickers/vinyl-stickers" },
+      { label: "Ferax: adhesive vinyl or coated paper, which to choose", url: "https://ferax.com.br/blog/vinil-adesivo-jato-tinta/vinil-adesivo-ferax-para-impressora-jato-de-tinta-ou-papel-couche-autoadesivo-qual-escolher/" },
+      { label: "Sticker Mule: die-cut labels", url: "https://stickermule.com/mx/products/die-cut-labels" },
+    ],
     faq: [
       {
         q: "Do you have a physical store in Guadalajara?",
@@ -8120,6 +8145,18 @@ export const blogPostsEn: BlogPost[] = [
       {
         q: "Can you ship my order if I live outside Guadalajara?",
         a: "Yes, national shipping reaches all of Mexico. Current costs and lead times are on the product page.",
+      },
+      {
+        q: "Are stickers sold by the sheet or by the piece?",
+        a: "They are sold by the number of pieces, not by the sheet. For vinyl stickers the minimum is 40 pieces.",
+      },
+      {
+        q: "Does the vinyl resist water and sun?",
+        a: "Yes. According to the product page, the premium vinyl resists water, sun and scratches.",
+      },
+      {
+        q: "What if I need a size larger than 8 cm?",
+        a: "Message us on WhatsApp with the size and quantity and we will quote it separately.",
       },
     ],
   },
