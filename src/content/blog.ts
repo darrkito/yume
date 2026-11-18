@@ -8268,18 +8268,19 @@ export const blogPosts: BlogPost[] = [
     slug: "cuanto-cuesta-imprimir-stickers",
     title: "Cuánto cuesta imprimir stickers personalizados",
     metaTitle: "Cuánto cuesta imprimir stickers: precios desde $3",
-    description: "Cuánto cuesta imprimir stickers personalizados: desde $3 por pieza según tamaño y cantidad, mínimo 40 piezas, qué cambia el precio y cuánto cuesta el envío.",
+    description: "Cuánto cuesta imprimir stickers personalizados: desde $3 por pieza según tamaño, mínimo 40 piezas, qué cambia el precio y cuánto cuesta el envío.",
     category: "Guías",
     publishedAt: "2026-11-17",
-    modifiedAt: "2026-11-17",
+    modifiedAt: "2026-11-18",
     intro:
-      "Cuánto cuesta imprimir stickers depende de tres cosas: el tamaño, la cantidad de piezas y el acabado. Aquí tienes los precios reales de Yume, con tabla por cantidad, ejemplos y lo que suma o no suma al total, para que sepas cuánto gastarás antes de pedir.",
+      "Cuánto cuesta imprimir stickers depende del tamaño, el acabado y la cantidad de piezas. Aquí tienes los precios reales de Yume, con tabla por cantidad, ejemplos de pedidos y lo que suma o no suma al total, para que sepas cuánto gastarás antes de pedir.",
     sections: [
       {
         heading: "¿Cuánto cuesta imprimir stickers personalizados?",
         body: [
-          `Los stickers de vinil cuestan desde $3.50 por pieza y las etiquetas con tu logo desde $3, según el tamaño: chico hasta 4 cm, mediano de 5 a 6 cm y grande de 7 a 8 cm. El mínimo es de 40 piezas en vinil y de 50 en etiquetas con logo. Se vende por pieza, no por planilla.`,
-          "Precio por cantidad en cada tamaño:",
+          `Los stickers de vinil cuestan desde $3.50 por pieza y las etiquetas con tu logo desde $3, según el tamaño: chico hasta 4 cm, mediano de 5 a 6 cm y grande de 7 a 8 cm. El mínimo es de 40 piezas en vinil y de 50 en etiquetas con tu logo.`,
+          "Se vende por pieza, no por planilla. En vinil, el chico cuesta $3.50, el mediano $5 y el grande $6.50 por pieza. En etiquetas con tu logo, el chico cuesta $3, el mediano $4.50 y el grande $6. El precio por pieza es el mismo a cualquier cantidad, así que el total crece en línea recta.",
+          "Precio total por cantidad en cada tamaño:",
         ],
         table: {
           ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
@@ -8288,38 +8289,51 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "De qué depende el precio de los stickers",
         body: [
-          "Pesan tres cosas: el tamaño del sticker, cuántas piezas pides y el acabado. A mayor cantidad, el precio por pieza baja según la tabla. Los dos cortes (troquelado y semitroquelado) y los acabados mate y brillante cuestan lo mismo; el holográfico suma $0.50 por pieza.",
-          "Todos llevan laminado BOPP de alta calidad y vinil premium resistente al agua, al sol y a los rayones, así que no pagas extra por eso. Para entender qué corte te conviene, lee [troquelado vs semitroquelado](/blog/troquelado-vs-semitroquelado-stickers).",
+          "En Yume el precio depende del tamaño y de la cantidad de piezas. El corte, troquelado o semitroquelado, y los acabados mate y brillante cuestan lo mismo. Solo el acabado holográfico suma $0.50 por pieza, y los tamaños mediano y grande suman un monto fijo por pieza sobre el precio del chico.",
+          "Todos llevan laminado BOPP de alta calidad y vinil premium resistente al agua, al sol y a los rayones, así que no pagas extra por eso. El troquelado corta el vinil y el papel de respaldo; el semitroquelado corta solo el vinil. Para entender qué corte te conviene, lee [troquelado vs semitroquelado](/blog/troquelado-vs-semitroquelado-stickers).",
+          "En otros proveedores también pesan la forma, el material y la urgencia del pedido. En una guía de precios de un proveedor de EE. UU., los círculos, cuadrados y rectángulos no llevan recargo de corte y los contornos personalizados cuestan más. Por eso conviene confirmar siempre la cotización. Si dudas entre materiales, revisa [stickers de vinil vs papel](/blog/stickers-vinil-vs-papel-diferencias).",
         ],
       },
       {
         heading: "Ejemplos de cuánto cuesta un pedido",
         body: [
-          "Con el precio por pieza, el cálculo es directo: 100 stickers de vinil chicos son $350 y 100 medianos son $500, antes del envío. Si pides el acabado holográfico, suma $0.50 por cada pieza.",
+          "Con el precio por pieza el cálculo es directo: 100 stickers de vinil chicos son $350, 100 medianos son $500 y 100 grandes son $650, antes del envío. Si eliges el acabado holográfico, suma $0.50 por cada pieza, es decir, $50 más por cada 100.",
           "Si lo que necesitas es el logo de tu negocio en etiquetas, mira las [etiquetas personalizadas con logo](/productos/stickers-logo-personalizado), desde 50 piezas. Para un diseño, personaje o la foto de tu mascota, los [stickers de vinil personalizados](/productos/stickers-vinil-impermeable) arrancan en 40 piezas.",
+          "Si los quieres para una boda, un bautizo o un cumpleaños, revisa las ideas de [stickers para bodas, eventos y fiestas](/blog/stickers-para-bodas-eventos-y-fiestas) y la guía de [impresión de stickers para eventos](/blog/impresion-de-stickers-para-eventos).",
+        ],
+      },
+      {
+        heading: "¿Pedir más stickers baja el precio por pieza?",
+        body: [
+          "En Yume, no: el precio por pieza es el mismo a cualquier cantidad, y solo cambia con el tamaño y el acabado. Por eso 40 o 100 piezas se calculan igual, multiplicando. En otros lugares sí suele bajar con el volumen, así que compara el total final y no solo el precio por pieza.",
+          `Lo que sí te conviene es juntar todo en un solo pedido: sumas piezas y llegas al envío gratis desde $${FREE_SHIPPING_THRESHOLD} MXN de compra. Así pagas un solo envío en lugar de varios.`,
         ],
       },
       {
         heading: "Cuánto cuesta el envío",
         body: [
           `El envío a domicilio a todo México cuesta $${NATIONAL_SHIPPING_PRICE} MXN y es gratis desde $${FREE_SHIPPING_THRESHOLD} MXN de compra. Si estás en la zona metropolitana de Guadalajara, Jalisco, puedes recoger tu pedido por $${CASABLANCA_PRICE} en una de las ${CASABLANCA_BRANCHES.length} sucursales de paquetería Casa Blanca.`,
-          "Las medidas mayores a 8 cm o algo específico no están en la tabla: escríbenos por WhatsApp con la medida y la cantidad y te cotizamos aparte.",
+          "Cuando compares precios, suma el envío al costo de las piezas: así comparas el total real y no solo el precio por sticker.",
         ],
       },
       {
         heading: "Cómo saber cuánto costará tu pedido",
         body: [
-          "Elige el tamaño y la cantidad en la ficha del producto y el precio se calcula al momento. Antes de imprimir recibes una prueba digital, normalmente en un máximo de 24 horas después de tu pago, con hasta 2 rondas de ajustes. No se produce nada hasta que la apruebas.",
+          "Para saber cuánto costará tu pedido, elige el tamaño, el corte, el acabado y la cantidad en la ficha del producto: el precio se calcula al momento. Si necesitas una medida mayor a 8 cm o algo específico, escríbenos por WhatsApp con la medida y la cantidad y te cotizamos aparte.",
+          "Antes de imprimir recibes una prueba digital, normalmente en un máximo de 24 horas después de tu pago, con hasta 2 rondas de ajustes. No se produce nada hasta que la apruebas. Para planear tu fecha, revisa [cuánto tarda un pedido de stickers](/blog/cuanto-tarda-un-pedido-de-stickers-personalizados).",
           "Si todavía comparas opciones, revisa [dónde imprimir stickers personalizados en México](/blog/donde-imprimir-stickers-personalizados-mexico) y la guía de [stickers y etiquetas en Guadalajara](/blog/stickers-personalizados-para-negocios-guadalajara).",
         ],
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable", "stickers-logo-personalizado"],
-    relatedBlogSlugs: ["donde-imprimir-stickers-personalizados-mexico", "troquelado-vs-semitroquelado-stickers", "stickers-personalizados-para-negocios-guadalajara"],
+    relatedBlogSlugs: ["donde-imprimir-stickers-personalizados-mexico", "troquelado-vs-semitroquelado-stickers", "stickers-personalizados-para-negocios-guadalajara", "stickers-vinil-vs-papel-diferencias", "cuanto-tarda-un-pedido-de-stickers-personalizados"],
+    sources: [
+      { label: "Guía de precios de stickers personalizados (4over4)", url: "https://www.4over4.com/guide/how-much-do-custom-stickers-cost-pricing-guide" },
+    ],
     faq: [
       {
         q: "¿Cuánto cuesta imprimir 100 stickers?",
-        a: "100 stickers de vinil chicos (hasta 4 cm) cuestan $350 y 100 medianos (de 5 a 6 cm) cuestan $500, antes del envío. El acabado holográfico suma $0.50 por pieza.",
+        a: "100 stickers de vinil chicos (hasta 4 cm) cuestan $350, 100 medianos (de 5 a 6 cm) cuestan $500 y 100 grandes (de 7 a 8 cm) cuestan $650, antes del envío. El acabado holográfico suma $0.50 por pieza.",
       },
       {
         q: "¿Cuál es el mínimo para pedir stickers?",
@@ -8330,12 +8344,20 @@ export const blogPosts: BlogPost[] = [
         a: "No, troquelado y semitroquelado cuestan lo mismo, y también los acabados mate y brillante. Solo el holográfico suma $0.50 por pieza.",
       },
       {
+        q: "¿Se venden por planilla o por pieza?",
+        a: "Se venden por pieza, no por planilla. Tú eliges la cantidad exacta que necesitas, desde el mínimo de cada producto.",
+      },
+      {
         q: "¿Cuánto cuesta el envío de los stickers?",
         a: `El envío a todo México cuesta $${NATIONAL_SHIPPING_PRICE} MXN y es gratis desde $${FREE_SHIPPING_THRESHOLD} MXN de compra. En la zona metropolitana de Guadalajara puedes recoger por $${CASABLANCA_PRICE} en sucursales Casa Blanca.`,
       },
       {
         q: "¿Y si necesito una medida mayor a 8 cm?",
         a: "Escríbenos por WhatsApp con la medida y la cantidad y te cotizamos aparte.",
+      },
+      {
+        q: "¿Veo mi diseño antes de que se imprima?",
+        a: "Sí. Recibes una prueba digital, normalmente en un máximo de 24 horas después de tu pago, con hasta 2 rondas de ajustes. No se produce nada hasta que la apruebas.",
       },
     ],
   },
