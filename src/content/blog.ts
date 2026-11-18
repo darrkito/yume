@@ -1416,7 +1416,7 @@ export const blogPosts: BlogPost[] = [
       "Cómo pedir papelería personalizada en línea en México: qué preparar, cómo funciona la prueba digital, cuánto cuesta y cuánto tarda tu pedido.",
     category: "Guías",
     publishedAt: "2026-08-31",
-    modifiedAt: "2026-10-26",
+    modifiedAt: "2026-11-18",
     intro:
       "No necesitas visitar una imprenta física para tener papelería con tu marca: en Yume funcionamos como una imprenta online en Guadalajara, con todo el proceso a distancia y envíos a cualquier ciudad de México. Esta guía explica paso a paso cómo cotizar papelería personalizada y pedirla en línea, para que sepas qué preparar antes de escribirnos.",
     sections: [
@@ -1429,19 +1429,26 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
+        heading: "Qué producto de papelería conviene pedir en línea",
+        body: [
+          "Entre lo que puedes pedir en línea están el recetario médico personalizado, las etiquetas con tu logo y los stickers de vinil personalizados. Elige según lo que necesitas: el recetario para tu consultorio, las etiquetas para el logo de tu negocio y los stickers para cualquier diseño, personaje o foto que quieras.",
+          "Puedes ver cada producto en su ficha: [recetario médico personalizado](/productos/recetario-medico-personalizado), [etiquetas con tu logo](/productos/stickers-logo-personalizado) y [stickers de vinil personalizados](/productos/stickers-vinil-impermeable). Si dudas entre un diseño propio y una plantilla, lee [papelería personalizada vs plantillas genéricas](/blog/papeleria-personalizada-vs-plantillas-genericas).",
+        ],
+      },
+      {
         heading: "Qué necesitas tener listo antes de cotizar",
         body: [
           "Para cotizar rápido, ten a la mano los datos de tu pieza y la cantidad que quieres. En un recetario médico son tu nombre, especialidad, cédula y datos del consultorio; en etiquetas, el archivo de tu logo o diseño. Si algo te falta, dínoslo al cotizar y lo resolvemos juntos.",
           "Para un recetario médico: tu nombre completo, especialidad, número de cédula profesional y los datos de contacto de tu consultorio. Para etiquetas con tu logo: el archivo de tu diseño (idealmente PNG, PDF, AI o SVG con fondo transparente) y la cantidad que quieres.",
           "Si todavía no tienes un logo o diseño terminado, dínoslo al cotizar de todas formas: se puede trabajar en conjunto antes de llegar a la prueba digital, no es necesario llegar con todo resuelto. En el recetario esto se refleja en el precio: tienes la opción sin diseño (ya traes tu diseño listo) y la opción con diseño (lo diseñamos contigo).",
-          "Si quieres profundizar en esa decisión, lee nuestra guía de recetario médico con diseño vs. sin diseño.",
+          "Si quieres profundizar en esa decisión, lee nuestra guía de [recetario médico con diseño vs. sin diseño](/blog/recetario-medico-con-diseno-vs-sin-diseno).",
         ],
       },
       {
         heading: "Cuánto cuesta pedir papelería personalizada",
         body: [
-          `El precio depende del producto. El recetario médico de 100 hojas cuesta $${recetarioPrice("sin-diseno")} MXN si ya tienes tu diseño y $${recetarioPrice("con-diseno")} MXN si lo diseñamos contigo.`,
-          "Las etiquetas y los stickers se venden por cantidad de piezas, no por hoja, así que pides la cantidad que de verdad necesitas. El mínimo es de 50 piezas en las Etiquetas con tu Logo y de 40 piezas en los Stickers de Vinil Personalizados. Todos nuestros stickers llevan laminado BOPP de alta calidad. Esta tabla muestra cuánto cuesta cada cantidad:",
+          `El precio depende del producto. El recetario médico de 100 hojas cuesta $${recetarioPrice("sin-diseno")} MXN si ya tienes tu diseño y $${recetarioPrice("con-diseno")} MXN si lo diseñamos contigo. Las etiquetas y los stickers se venden por pieza, con mínimo de 50 y 40 piezas, y el precio cambia según el tamaño que elijas.`,
+          "Pides la cantidad que de verdad necesitas, no por hoja. Todos nuestros stickers llevan laminado BOPP de alta calidad. Esta tabla muestra cuánto cuesta cada cantidad:",
         ],
         table: {
           ...sizeTable(["stickers-logo-personalizado", "stickers-vinil-impermeable"], [50, 100, 200, 300], "es"),
@@ -1452,7 +1459,7 @@ export const blogPosts: BlogPost[] = [
         body: [
           `La prueba digital llega normalmente en un máximo de 24 horas después del pago. Desde que la apruebas, recoger en Casa Blanca toma ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS} días hábiles y el envío a domicilio ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles. Esos plazos cuentan solo días hábiles.`,
           `El envío a cualquier parte de México cuesta $${NATIONAL_SHIPPING_PRICE} MXN y es gratis en compras de $${FREE_SHIPPING_THRESHOLD} MXN o más. Si estás en Guadalajara o su zona metropolitana, puedes recoger en una de las ${CASABLANCA_BRANCHES.length} sucursales de paquetería Casa Blanca (${casablancaBranchNames}) por $${CASABLANCA_PRICE} MXN, también gratis desde $${FREE_SHIPPING_THRESHOLD} MXN. Eliges la sucursal al pagar.`,
-          "Como el tiempo corre desde que apruebas la prueba digital, responder rápido es la forma más efectiva de recibir tu pedido antes. Más detalle sobre plazos en nuestra guía de cuánto tarda un pedido de stickers personalizados.",
+          "Como el tiempo corre desde que apruebas la prueba digital, responder rápido es la forma más efectiva de recibir tu pedido antes. Más detalle sobre plazos en nuestra guía de [cuánto tarda un pedido de stickers personalizados](/blog/cuanto-tarda-un-pedido-de-stickers-personalizados).",
         ],
       },
       {
@@ -1467,7 +1474,7 @@ export const blogPosts: BlogPost[] = [
         body: [
           "No, no necesitas una imprenta física para pedir papelería personalizada. Yume produce en Guadalajara, pero opera en línea: cotizas, apruebas el diseño y recibes tu pedido sin ir a un mostrador ni llevar archivos en USB, desde cualquier ciudad de México.",
           "Aunque producimos en Guadalajara, Jalisco, no operamos como una imprenta de mostrador: somos una imprenta online en Guadalajara. Tu pedido llega a tu domicilio o, dentro de la zona metropolitana, a la sucursal Casa Blanca que te quede más cerca. Todo el proceso, desde cotizar hasta aprobar el diseño final, pasa por WhatsApp o correo, así que el servicio funciona igual si estás en la ciudad o en cualquier otro estado de México.",
-          "Eso sí: si estás en la zona metropolitana de Guadalajara el tiempo de entrega suele ser un poco más corto por cercanía, aunque el proceso de cotización y aprobación es idéntico para todo el país: puedes pedir papelería en línea desde México sin importar en qué ciudad estés.",
+          "Eso sí: si estás en la zona metropolitana de Guadalajara el tiempo de entrega suele ser un poco más corto por cercanía, aunque el proceso de cotización y aprobación es idéntico para todo el país. Si tienes un negocio en Jalisco, revisa también la guía de [papelería personalizada para negocios en Jalisco](/blog/papeleria-personalizada-para-negocios-jalisco) y la de [dónde imprimir stickers personalizados](/blog/donde-imprimir-stickers-personalizados-mexico).",
         ],
       },
     ],
@@ -1499,6 +1506,14 @@ export const blogPosts: BlogPost[] = [
       {
         q: "¿Se imprime algo antes de que yo apruebe el diseño?",
         a: "No. Todo pedido pasa primero por una prueba digital y no se manda a producción hasta que la apruebas.",
+      },
+      {
+        q: "¿Puedo pedir si todavía no tengo logo o diseño?",
+        a: "Sí. Dínoslo al cotizar y se puede trabajar en conjunto antes de llegar a la prueba digital. En el recetario existe la opción con diseño, en la que lo diseñamos contigo.",
+      },
+      {
+        q: "¿Cuántas rondas de ajustes incluye la prueba de etiquetas y stickers?",
+        a: "La prueba de etiquetas y stickers incluye hasta 2 rondas de ajustes.",
       },
       {
         q: "¿Emiten factura?",
