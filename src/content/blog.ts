@@ -315,15 +315,16 @@ export const blogPosts: BlogPost[] = [
     "description": "Cómo usar una placa de reseñas de Google para restaurantes: dónde ponerla, qué texto lleva, cómo generar el QR y pedir opiniones sin incentivos.",
     "category": "Guías",
     "publishedAt": "2026-11-03",
-    "modifiedAt": "2026-11-05",
-    "intro": "Una placa de reseñas de Google para restaurantes acerca el enlace de tu ficha a quienes visitan un solo local, justo cuando terminan de comer o de recoger su pedido. Esta guía te dice dónde ponerla, cómo generar y probar el QR antes de imprimir, qué texto sí puede llevar, qué elegir entre placa y stand, y cómo responder lo que llegue, siguiendo la ayuda oficial de Google.",
+    "modifiedAt": "2026-11-19",
+    "intro": "Una placa de reseñas de Google para restaurantes acerca el enlace de tu ficha a quienes visitan un solo local, justo cuando terminan de comer o de recoger su pedido. Esta guía te dice dónde ponerla, cómo generar y probar el QR antes de imprimir, qué texto sí puede llevar, qué decir en el equipo, qué elegir entre placa y stand, y cómo responder lo que llegue, siguiendo la ayuda oficial de Google.",
     "sections": [
       {
-        "heading": "¿Dónde colocar la placa de reseñas en el restaurante?",
+        "heading": "¿Dónde colocar la placa de reseñas de Google en un restaurante?",
         "body": [
           "Coloca la placa donde el cliente tenga un momento tranquilo al terminar: sobre la mesa, junto a la caja o en el área de entrega para llevar. Google sugiere compartir el enlace o el QR impreso en el local. Elige un sitio visible que no estorbe el servicio y prueba que abra tu ficha.",
           "Cada lugar cumple un papel distinto. En la mesa, la placa acompaña la sobremesa y el cliente decide si la escanea. En la caja, aparece mientras se paga la cuenta. En el área de entrega para llevar, llega a quien no se sienta en el local. Puedes combinar dos puntos si tu servicio lo permite, siempre con el mismo enlace.",
-          "Google también sugiere compartir el enlace en recibos, en correos de agradecimiento o al final de un chat, y permite enviar la solicitud por correo, WhatsApp o Facebook. Así, la [placa de reseñas NFC](/productos/placa-resena-google-nfc) es un canal más, no el único, y el mismo enlace sirve en todos."
+          "Google también sugiere compartir el enlace en recibos, en correos de agradecimiento o al final de un chat, y permite enviar la solicitud por correo, WhatsApp o Facebook. Así, la [placa de reseñas NFC](/productos/placa-resena-google-nfc) es un canal más, no el único, y el mismo enlace sirve en todos.",
+          "Para ver más puntos del local, lee [dónde poner la placa](/blog/donde-poner-placa-resenas-google). Si tu negocio es una cafetería, revisa también [reseñas para restaurantes y cafeterías](/blog/como-conseguir-resenas-google-restaurante-cafeteria)."
         ]
       },
       {
@@ -331,7 +332,8 @@ export const blogPosts: BlogPost[] = [
         "body": [
           "Genera el enlace y el QR desde una computadora, no desde el móvil. Entra a tu perfil de empresa, abre Leer reseñas, elige Obtener más reseñas y copia el enlace o guarda la imagen del QR con clic derecho. Después escanéalo con tu celular y confirma que abre tu restaurante.",
           "Los pasos, en orden: 1) abre tu perfil de empresa en Google desde una computadora; 2) entra a Leer reseñas; 3) elige Obtener más reseñas; 4) copia el enlace, o haz clic derecho sobre el QR y elige Guardar imagen como.",
-          "El nombre exacto del botón puede cambiar según el perfil. Si no ves «Obtener más reseñas», busca una opción equivalente dentro de Leer reseñas. Haz la prueba de escaneo antes de mandar a imprimir cualquier placa: es la forma más simple de evitar que quede en la mesa un código que no abre tu ficha."
+          "El nombre exacto del botón puede cambiar según el perfil. Si no ves «Obtener más reseñas», busca una opción equivalente dentro de Leer reseñas. Haz la prueba de escaneo antes de mandar a imprimir cualquier placa: es la forma más simple de evitar que quede en la mesa un código que no abre tu ficha.",
+          "Si aún no tienes tu ficha lista, sigue la guía para [configurar tu perfil de Google](/blog/como-configurar-perfil-de-google-y-pedir-resenas)."
         ]
       },
       {
@@ -339,19 +341,33 @@ export const blogPosts: BlogPost[] = [
         "body": [
           "Usa una invitación neutra y amable, como «Si disfrutaste tu visita, cuéntanos tu experiencia». No ofrezcas descuentos, postres ni productos gratis a cambio de una reseña, porque Google prohíbe los incentivos y los trata como contenido engañoso. Tampoco pidas un número de estrellas: pide una opinión honesta.",
           "Otras frases que funcionan sin condicionar: «Tu opinión nos ayuda a mejorar» o «Cuéntanos cómo te fue». Todas invitan sin prometer nada a cambio y sin dirigir lo que la persona va a escribir.",
-          "Ofrece el enlace a todos tus clientes reales, no solo a quienes parecen satisfechos."
+          "Ofrece el enlace a todos tus clientes reales, no solo a quienes parecen satisfechos. Para ver qué sí y qué no, consulta [qué sí y qué no pedir en reseñas](/blog/que-si-y-que-no-pedir-resenas-google-politicas)."
         ]
       },
       {
-        "heading": "¿Conviene una placa o un stand?",
+        "heading": "¿Qué le dice el equipo al cliente sobre la placa?",
         "body": [
-          "La placa incluye adhesivo para fijarla y mide 12 × 12 cm; el stand se coloca de pie sobre una superficie. La placa cuesta $140 MXN y el stand $200 MXN. Ambos tienen NFC y QR, con pago único y desde una pieza.",
-          "La [placa de reseñas NFC](/productos/placa-resena-google-nfc) se fija en un punto del local; el [stand de reseñas NFC](/productos/stand-resena-google-nfc) se apoya de pie, por ejemplo en una mesa o en el mostrador. Elige según el lugar donde la quieras y si prefieres fijarla o poder moverla.",
+          "Basta una frase corta y neutral al entregar la cuenta o el pedido, por ejemplo: «Si te gustó la atención, nos ayuda una reseña; acerca tu celular a la placa». La placa hace el resto, así que el equipo no necesita explicar pasos ni insistir.",
+          "Un guion corto también ayuda a que todo el equipo diga lo mismo. Si el cliente prefiere no hacerlo, no se insiste."
+        ]
+      },
+      {
+        "heading": "¿Conviene una placa o un stand de reseñas?",
+        "body": [
+          "La placa incluye adhesivo para fijarla en un punto del local; el stand se coloca de pie sobre una superficie. Ambos tienen NFC y QR, con pago único y desde una pieza. Los precios vigentes están en la ficha de cada producto.",
+          "Usa la [placa de reseñas NFC](/productos/placa-resena-google-nfc) para un lugar fijo, como la caja, y el [stand de reseñas NFC](/productos/stand-resena-google-nfc) para una mesa o un mostrador donde quizá quieras moverlo.",
           "Si dudas entre NFC y un QR impreso, revisa la [comparación entre NFC y QR](/blog/placa-nfc-vs-codigo-qr-impreso-resenas). Y si te preocupa el costo, aquí está la guía de [pago único o suscripción](/blog/placas-resenas-google-pago-unico-vs-suscripcion)."
         ]
       },
       {
-        "heading": "¿Cómo se prepara la pieza para tu local?",
+        "heading": "¿La placa funciona con todos los celulares?",
+        "body": [
+          "La mayoría de los celulares Android y iPhone recientes lee NFC sin instalar una app, pero algunos iPhone antiguos y ciertos estuches pueden no leerla. Por eso la pieza lleva también un QR de respaldo ya impreso: quien no pueda acercar el celular puede escanearlo.",
+          "Para más detalle, lee sobre [NFC en iPhone y Android](/blog/placa-nfc-funciona-iphone-android)."
+        ]
+      },
+      {
+        "heading": "¿Cómo se prepara la pieza para tu restaurante?",
         "body": [
           "Comparte el enlace de reseñas de tu ficha al hacer el pedido. Yume configura el NFC y el QR con ese enlace antes del envío. Puedes elegir blanco o negro, y la pieza funciona sin app ni suscripción, así que no pagas mensualidad por ella.",
           "Cuando te llegue, escanea el QR y acerca tu celular para comprobar que ambos abren la ficha correcta antes de ponerla frente a tus clientes. Para ver el uso paso a paso, consulta la guía de [cómo usar la placa](/blog/como-usar-placa-resenas-google-yume)."
@@ -380,6 +396,10 @@ export const blogPosts: BlogPost[] = [
         "a": "Sí. Puedes pedir una placa o un stand; ambos tienen NFC y QR configurados con tu enlace de reseñas antes del envío."
       },
       {
+        "q": "¿Qué recibo al comprar la placa?",
+        "a": "Una pieza ya programada con el enlace de reseñas de tu negocio y con el QR de respaldo impreso. Al recibirla, solo la pruebas y la colocas."
+      },
+      {
         "q": "¿La pieza garantiza más reseñas?",
         "a": "No. Facilita el acceso al enlace; cada persona decide si deja una opinión y qué escribe."
       }
@@ -392,7 +412,11 @@ export const blogPosts: BlogPost[] = [
       "placas-resenas-google-pago-unico-vs-suscripcion",
       "como-conseguir-mas-resenas-de-google-nfc-qr",
       "placa-nfc-vs-codigo-qr-impreso-resenas",
-      "como-usar-placa-resenas-google-yume"
+      "como-usar-placa-resenas-google-yume",
+      "donde-poner-placa-resenas-google",
+      "como-conseguir-resenas-google-restaurante-cafeteria",
+      "que-si-y-que-no-pedir-resenas-google-politicas",
+      "placa-nfc-funciona-iphone-android"
     ],
     "quoteMessage": "Hola, me interesan la placa y el stand NFC para reseñas de Google.",
     "sources": [
