@@ -5675,7 +5675,7 @@ export const blogPostsEn: BlogPost[] = [
       "Candy box ideas for kids at a wedding: what to put inside by age, how to match them to the wedding and when to hand them out.",
     category: "Guides",
     publishedAt: "2026-11-03",
-    modifiedAt: "2026-11-05",
+    modifiedAt: "2026-11-19",
     intro:
       "Children are guests too, and a gift with their name makes them feel part of the day. An individual candy box, designed with the wedding colors, looks planned and gives each child something of their own. Here is what to choose, what to put inside by age, how to handle allergies, how to personalize it, when and who hands it out, and how many to order.",
     sections: [
@@ -5683,7 +5683,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "Candy boxes for kids at a wedding: what to choose",
         body: [
           "For the children at a wedding, choose an individual candy box with each child's name and the wedding colors. Every child gets something of their own that looks like part of the design, not an afterthought. It arrives assembled and empty, so you decide what goes inside.",
-          "Our candy box is a lunch box style with a handle, and personalization includes the name and a theme. This is one piece per child, different from a candy table shared by all the guests.",
+          "Our candy box is a lunch box style with a handle, and personalization includes the name and a theme. This is one piece per child, different from a [wedding candy table](/en/blog/" + BLOG_SLUG_EN["mesa-de-dulces-para-boda"] + ") shared by all the guests.",
           "A wedding guide from 2012, which may be somewhat dated, recommends leaving a small gift on each child's plate, such as a bag of candy, a toy or a storybook, so they find it when they sit down. A named candy box serves the same purpose and looks like part of the decor.",
         ],
       },
@@ -5691,7 +5691,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "What to put inside by each child's age",
         body: [
           "A guide to children's activity bags for weddings in Italy adjusts the contents by age: for ages 2 to 5, a coloring book, crayons, finger puppets and modeling clay; for 6 to 10, pencils, origami, wooden cars and a puzzle; for 11 to 13, 3D puzzles and origami.",
-          "Those ideas are a starting point for filling a candy box that arrives empty. The same guide advises avoiding anything that stains, such as pencils instead of markers. A Spanish-language search result also warns against small objects children could swallow. For more filling ideas, read [what to put in a candy box](/blog/que-poner-en-un-dulcero).",
+          "Those ideas are a starting point for filling a candy box that arrives empty. The same guide advises avoiding anything that stains, such as pencils instead of markers. A Spanish-language search result also warns against small objects children could swallow. For more filling ideas, read [what to put in a candy box](/en/blog/" + BLOG_SLUG_EN["que-poner-en-un-dulcero"] + ").",
         ],
       },
       {
@@ -5705,7 +5705,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "How to personalize the box to match the wedding",
         body: [
           "Each candy box carries the child's name and a theme. To match the wedding, send us a photo of the invitation or the decoration and we adapt the design to those colors. Before producing, we send a digital proof, and nothing is produced until you approve it.",
-          "The Italian guide also suggests a printable activity book with the couple's names on the cover, and embroidered bibs with the wedding date for the youngest. Those are ideas from that guide, not from our catalog: our candy box is personalized with name and theme.",
+          "The Italian guide also suggests a printable activity book with the couple's names on the cover, and embroidered bibs with the wedding date for the youngest. Those are ideas from that guide, not from our catalog: our candy box is personalized with name and theme. If you also want a gift for the adults, see [personalized wedding favors](/en/blog/" + BLOG_SLUG_EN["souvenirs-de-boda-personalizados"] + ").",
         ],
       },
       {
@@ -5720,14 +5720,14 @@ export const blogPostsEn: BlogPost[] = [
         heading: "Who hands out the candy boxes: monitor, planner or venue",
         body: [
           "Someone has to hand each candy box to the right child. A Spanish wedding guide from 2012 proposes one monitor for every four children to accompany them, help them eat and keep them entertained. That person, your wedding planner or the venue staff can hand them out, depending on what you agree with them.",
-          "If you work with a planner, share the list of names and the time you want them handed out. Since every candy box carries a name, whoever hands them out does not have to guess who each one is for.",
+          "If you work with a planner, share the list of names and the time you want them handed out. Since every candy box carries a name, whoever hands them out does not have to guess who each one is for. If you are looking for a planner in the city, see the [wedding planner guide](/en/blog/" + BLOG_SLUG_EN["guia-wedding-planners-detalles-personalizados-guadalajara"] + ").",
         ],
       },
       {
         heading: "How many candy boxes to order and how to get a quote",
         body: [
           "The minimum order is 10 pieces. Count the confirmed children on your guest list, message us on WhatsApp with their names and a photo of the invitation, and we will quote it. If your wedding is in Guadalajara, Zapopan or anywhere in Mexico, we ship to you.",
-          "See the [personalized candy boxes](/productos/dulceros-personalizados) page for the product and, if the wedding is close to home, read the guide to [candy boxes in Guadalajara](/blog/dulceros-personalizados-guadalajara).",
+          "See the [personalized candy boxes](/en/products/personalized-party-favor-boxes) page for the product. If the wedding is close to home, read the guide to [candy boxes in Guadalajara](/en/blog/" + BLOG_SLUG_EN["dulceros-personalizados-guadalajara"] + "); to plan quantities per event, read [how many candy boxes to order](/en/blog/" + BLOG_SLUG_EN["cuantos-dulceros-pedir-para-una-boda"] + ").",
         ],
       },
     ],
@@ -5758,8 +5758,7 @@ export const blogPostsEn: BlogPost[] = [
         a: "Whoever accompanies the children, your wedding planner or the venue staff. A wedding guide from 2012 proposes one monitor for every four children.",
       },
     ],
-    relatedBlogSlugs: [BLOG_SLUG_EN["que-poner-en-un-dulcero"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"]],
-
+    relatedBlogSlugs: [BLOG_SLUG_EN["que-poner-en-un-dulcero"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"], BLOG_SLUG_EN["cuantos-dulceros-pedir-para-una-boda"], BLOG_SLUG_EN["mesa-de-dulces-para-boda"], BLOG_SLUG_EN["souvenirs-de-boda-personalizados"], BLOG_SLUG_EN["guia-wedding-planners-detalles-personalizados-guadalajara"]],
   },
   {
     slug: "company-anniversary-custom-details",

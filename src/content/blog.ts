@@ -6117,7 +6117,7 @@ export const blogPosts: BlogPost[] = [
       "Ideas de dulceros para niños en una boda: qué poner según la edad, cómo combinarlos con la boda y cuándo entregarlos a cada niño.",
     category: "Guías",
     publishedAt: "2026-11-03",
-    modifiedAt: "2026-11-05",
+    modifiedAt: "2026-11-19",
     intro:
       "Los niños también son invitados, y un detalle con su nombre los hace sentir parte del día. Un dulcero individual, pensado con los colores de la boda, se ve planeado y le da a cada niño algo propio. Aquí tienes qué elegir, qué poner dentro según la edad, cómo cuidar las alergias, cómo personalizarlo, cuándo y quién lo entrega, y cuántos pedir.",
     sections: [
@@ -6125,7 +6125,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Dulceros para niños en una boda: qué conviene elegir",
         body: [
           "Para los niños de una boda conviene un dulcero individual con su nombre y los colores de la boda. Así cada niño recibe algo propio, que se ve como parte del diseño y no como un detalle suelto. Llega armado y vacío, y tú eliges qué lleva dentro.",
-          "Nuestro dulcero es tipo lunch box, con asa, y la personalización incluye nombre y temática. Aquí hablamos de una pieza por niño, distinta de una mesa de dulces compartida por todos los invitados.",
+          "Nuestro dulcero es tipo lunch box, con asa, y la personalización incluye nombre y temática. Aquí hablamos de una pieza por niño, distinta de una [mesa de dulces para boda](/blog/mesa-de-dulces-para-boda) compartida por todos los invitados.",
           "Una guía del sector (de 2012, así que puede estar algo desactualizada) recomienda dejar un detalle sobre el plato de cada niño, como una bolsa de caramelos, un juguete o un cuento, para que lo encuentren al sentarse. Un dulcero con nombre cumple esa misma función y se ve como parte de la decoración.",
         ],
       },
@@ -6147,7 +6147,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Cómo personalizar el dulcero para que combine con la boda",
         body: [
           "Cada dulcero lleva el nombre del niño y una temática. Para que combine con la boda, mándanos una foto de la invitación o de la decoración y adaptamos el diseño a esos colores. Antes de producir te enviamos una prueba digital, y nada se produce hasta que la apruebas.",
-          "La guía de Italia también sugiere un libro de actividades imprimible con los nombres de los novios en la portada y baberos bordados con la fecha de la boda para los más pequeños. Son ideas de esa guía, no de nuestro catálogo: nuestro dulcero se personaliza con nombre y temática.",
+          "La guía de Italia también sugiere un libro de actividades imprimible con los nombres de los novios en la portada y baberos bordados con la fecha de la boda para los más pequeños. Son ideas de esa guía, no de nuestro catálogo: nuestro dulcero se personaliza con nombre y temática. Si también buscas un detalle para los adultos, revisa los [souvenirs de boda personalizados](/blog/souvenirs-de-boda-personalizados).",
         ],
       },
       {
@@ -6162,19 +6162,19 @@ export const blogPosts: BlogPost[] = [
         heading: "Quién reparte los dulceros: monitora, planner o salón",
         body: [
           "Alguien debe encargarse de entregar cada dulcero a su niño. Una guía del sector propone una monitora por cada cuatro niños para acompañarlos, ayudarlos a comer y entretenerlos; es una guía española de 2012. Esa persona, tu wedding planner o el personal del salón pueden repartirlos, según lo que acuerdes con ellos.",
-          "Si trabajas con una planner, compártele la lista de nombres y la hora en que quieres que se entreguen. Como cada dulcero lleva un nombre, quien los reparta no tiene que adivinar para quién es cada uno.",
+          "Si trabajas con una planner, compártele la lista de nombres y la hora en que quieres que se entreguen. Como cada dulcero lleva un nombre, quien los reparta no tiene que adivinar para quién es cada uno. Si buscas planner en la ciudad, revisa la [guía de wedding planners](/blog/guia-wedding-planners-detalles-personalizados-guadalajara).",
         ],
       },
       {
         heading: "Cuántos dulceros pedir y cómo cotizarlos",
         body: [
           "El pedido mínimo es de 10 piezas. Cuenta los niños confirmados en tu lista de invitados, escríbenos por WhatsApp con sus nombres y una foto de la invitación, y te cotizamos. Si tu boda es en Guadalajara, Zapopan o en cualquier parte de México, te los enviamos.",
-          "Conoce los [dulceros personalizados](/productos/dulceros-personalizados) para ver el producto y, si la boda es cerca de casa, revisa la guía de [dulceros en Guadalajara](/blog/dulceros-personalizados-guadalajara).",
+          "Conoce los [dulceros personalizados](/productos/dulceros-personalizados) para ver el producto. Si la boda es cerca de casa, revisa la guía de [dulceros en Guadalajara](/blog/dulceros-personalizados-guadalajara); para calcular cantidades por evento, lee [cuántos dulceros pedir](/blog/cuantos-dulceros-pedir-para-una-boda).",
         ],
       },
     ],
     relatedProductSlugs: ["dulceros-personalizados"],
-    relatedBlogSlugs: ["que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara"],
+    relatedBlogSlugs: ["que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "cuantos-dulceros-pedir-para-una-boda", "mesa-de-dulces-para-boda", "souvenirs-de-boda-personalizados", "guia-wedding-planners-detalles-personalizados-guadalajara"],
     faq: [
       {
         q: "¿Los dulceros incluyen dulces?",
