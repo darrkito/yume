@@ -5474,16 +5474,16 @@ export const blogPostsEn: BlogPost[] = [
       "Personalized birthday favors for adults turning 30, 40, 50 or 60: what to choose, what to personalize, when to order and how to avoid mistakes.",
     category: "Guides",
     publishedAt: "2026-11-03",
-    modifiedAt: "2026-11-05",
+    modifiedAt: "2026-11-19",
     intro:
-      "Turning 30, 40, 50 or 60 deserves a detail that feels thought out, not a party-store joke. If you are planning a surprise for your mom, dad or partner, or a client's celebration, here is a visual style for each decade, what to personalize, when to order and how to avoid mistakes with the digital proof.",
+      "Turning 30, 40, 50 or 60 deserves a detail that feels thought out, not a party-store joke. If you are planning a surprise for your mom, dad or partner, or a client's celebration, here are ideas for personalized birthday favors for adults: a visual style for each decade, what to personalize, how to combine pieces and how to avoid mistakes with the digital proof.",
     sections: [
       {
         heading: "Which personalized birthday favors for adults to choose by milestone",
         body: [
           "For an adult birthday, choose an understated favor that carries the guest of honor's name and the year, and repeat the same design on every piece. At Yume you can combine candy boxes, vinyl stickers and temporary tattoos for events, all with a digital proof before production.",
-          "Many offers for these ages are novelty items: mugs, shirts or temporary tattoos with phrases like '50 and fabulous', or standard templates from online shops. If you are planning a surprise for your mom, dad or partner, think about the whole set before choosing separate pieces.",
-          "A custom-product guide gives examples such as bottle openers, reusable cups and tote bags with the milestone age. Those are ideas from that market. Here we suggest pieces that Yume does produce and that look good on a party table.",
+          "If you are planning a surprise for your mom, dad or partner, think about the whole set before choosing separate pieces. A set with the same name, year and palette looks planned; pieces from different shops look improvised.",
+          "For more ideas, see these [surprise gift ideas with candy boxes](/en/blog/personalized-surprise-gift-ideas-candy-boxes).",
         ],
       },
       {
@@ -5505,36 +5505,38 @@ export const blogPostsEn: BlogPost[] = [
         heading: "What to personalize: name, year, photo or palette",
         body: [
           "Each piece can carry one or more of these elements: the guest of honor's name, the age they are turning, a photo or the party colors. What matters is repeating the same elements on every piece, so it reads as one set and not as favors from different shops.",
-          "An industry guide also suggests including the name, the date or an inside joke, and coordinating colors, typeface and graphics with the invitation and the decor. If you already have the invitation, use it as a reference so everything looks like it belongs to the same party.",
-          "At Yume you can order [personalized candy boxes in Guadalajara](/blog/dulceros-personalizados-guadalajara) (in Spanish) with a name and theme, [custom vinyl stickers](/productos/stickers-vinil-impermeable) with your design or photo, and temporary tattoos for events by quote. Everything comes with a digital proof before production.",
+          "If you already have the invitation, use it as a reference so everything looks like it belongs to the same party: send us a photo and we adapt the design to those colors.",
+          "At Yume you can order [personalized party favor boxes in Guadalajara](/en/blog/personalized-party-favor-boxes-guadalajara) with a name and theme, [custom vinyl stickers](/en/products/waterproof-vinyl-stickers) with your design or photo, and temporary tattoos for events by quote. Everything comes with a digital proof before production.",
         ],
       },
       {
         heading: "How to combine candy boxes, stickers and temporary tattoos",
         body: [
           "Think of three pieces with the same design: the candy box as the main favor, a sticker as an extra keepsake and a temporary tattoo to liven up the party. If they repeat the name, year and palette, the three read as a polished set and not as party filler.",
-          "The candy box arrives assembled and empty, so you choose what goes inside. For ideas, see [what to put in a candy box](/blog/que-poner-en-un-dulcero) (in Spanish). Keep the minimums in mind: candy boxes start at 10 pieces and vinyl stickers at 40.",
+          "The candy box arrives assembled and empty, so you choose what goes inside. For ideas, see [what to put in a party favor box](/en/blog/what-to-put-in-a-party-favor-box). Keep the minimums in mind: candy boxes start at 10 pieces and vinyl stickers at 40.",
+          "To see how tattoos work at a party, read about [custom temporary tattoos for events](/en/blog/custom-temporary-tattoos-for-events-and-brands).",
         ],
       },
       {
         heading: "When to order and how to avoid mistakes with the digital proof",
         body: [
-          "As a general rule, a US custom-product blog recommends ordering adult birthday favors 2 to 4 weeks ahead. That is an outside reference, not a Yume deadline. For your exact dates, message us on WhatsApp, and always review the digital proof before you approve it.",
-          "The same blog points out common mistakes: misspelling names or dates, not reviewing the digital proof before production, ignoring the minimum order and buying at the last minute. At Yume the digital proof reaches you before production, so check the guest of honor's name and year carefully before approving.",
+          "Order with room to spare rather than at the last minute, so there is time to review the digital proof with the guest of honor or whoever is helping you organize. For your exact dates, message us on WhatsApp and we will confirm them for the pieces you choose.",
+          "Before approving, check the name, year and colors on the digital proof. Yume sends it before production. To see how it works, read about the [digital proof for event orders](/en/blog/digital-proof-event-order-planners).",
         ],
       },
       {
         heading: "Adult birthdays for planners and companies: pieces per event",
         body: [
           "If you organize a client's celebration or your company's event, think in pieces per event: one design with name, year and palette for every guest. Yume works with a digital proof and direct contact on WhatsApp, so you can adjust the design before production.",
-          "For planners, an adult birthday works like any other event: you define the name, year and palette with your client, send us that reference and we send the digital proof for them to approve. For a company, the same applies with the group name or your logo. To see how an event order comes together, read these [candy box ideas for November](/blog/dulceros-dia-de-muertos-noviembre) (in Spanish). For larger quantities, message us on WhatsApp and we will quote it.",
+          "For planners, an adult birthday works like any other event: you define the name, year and palette with your client, send us that reference and we send the digital proof for them to approve. For a company, the same applies with the group name or your logo.",
+          "If you work with suppliers, read the [guide for planners](/en/blog/guide-for-planners-working-with-custom-favors-supplier) and [how many favors to order per event](/en/blog/how-many-party-favors-to-order-per-event). For larger quantities, message us on WhatsApp and we will quote it.",
         ],
       },
       {
         heading: "How to order: design, digital proof and WhatsApp",
         body: [
           "The process is simple: you message us on WhatsApp, tell us who it is for and the style you imagine, and we prepare the design. Before producing, we send you a digital proof, and nothing is produced until you approve it. You arrive at the party with a favor you have already seen and approved.",
-          "For prices and timing, message us on WhatsApp and we will quote the pieces you choose.",
+          "To choose pieces and quantities, see the [custom vinyl stickers](/en/products/waterproof-vinyl-stickers) or message us on WhatsApp.",
         ],
       },
     ],
@@ -5561,11 +5563,15 @@ export const blogPostsEn: BlogPost[] = [
         a: "Candy boxes start at 10 pieces and custom vinyl stickers at 40 pieces.",
       },
       {
-        q: "What should I include for a minimalist design?",
-        a: "According to an industry guide, a minimalist style only needs the name and the date. You can add the party colors if you want it to match the invitation.",
+        q: "What can I personalize on each piece?",
+        a: "The guest of honor's name, the age they are turning, a photo or the party colors. It works best to repeat the same elements on every piece.",
+      },
+      {
+        q: "Can I order for a client's birthday or for my company?",
+        a: "Yes. You define the name, year and palette, send us the reference and we send the digital proof. For larger quantities, message us on WhatsApp and we will quote it.",
       },
     ],
-    relatedBlogSlugs: [BLOG_SLUG_EN["dulceros-personalizados-guadalajara"], BLOG_SLUG_EN["que-poner-en-un-dulcero"]],
+    relatedBlogSlugs: [BLOG_SLUG_EN["dulceros-personalizados-guadalajara"], BLOG_SLUG_EN["que-poner-en-un-dulcero"], BLOG_SLUG_EN["regalo-sorpresa-personalizado-ideas-con-dulceros"], BLOG_SLUG_EN["tatuajes-temporales-personalizados-para-eventos"], BLOG_SLUG_EN["prueba-digital-pedido-evento-planners"]],
     sources: [],
   },
   {

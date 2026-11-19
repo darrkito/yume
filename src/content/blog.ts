@@ -5902,16 +5902,16 @@ export const blogPosts: BlogPost[] = [
       "Recuerdos personalizados para cumpleaños de adultos: qué elegir para los 30, 40, 50 y 60, qué personalizar, cuándo pedir y cómo evitar errores.",
     category: "Guías",
     publishedAt: "2026-11-03",
-    modifiedAt: "2026-11-05",
+    modifiedAt: "2026-11-19",
     intro:
-      "Cumplir 30, 40, 50 o 60 años merece un detalle que se sienta pensado, no una broma de cotillón. Si preparas una sorpresa para tu mamá, tu papá o tu pareja, o el festejo de un cliente, aquí tienes una línea visual por década, qué personalizar, cuándo pedir y cómo evitar errores con la prueba digital.",
+      "Cumplir 30, 40, 50 o 60 años merece un detalle que se sienta pensado, no una broma de cotillón. Si preparas una sorpresa para tu mamá, tu papá o tu pareja, o el festejo de un cliente, aquí tienes ideas de recuerdos personalizados para cumpleaños de adultos: una línea visual por década, qué personalizar, cómo combinar piezas y cómo evitar errores con la prueba digital.",
     sections: [
       {
         heading: "Qué recuerdos personalizados para cumpleaños de adultos elegir por hito",
         body: [
           "Para un cumpleaños de adulto conviene elegir un recuerdo sobrio que lleve el nombre y el año del festejado, y repetir el mismo diseño en todas las piezas. En Yume puedes combinar dulceros, stickers de vinil y tatuajes temporales para eventos, todos con prueba digital antes de producir.",
-          "Muchas ofertas para estas edades son de novedad: tazas, camisetas o tatuajes con frases como '50 y fabuloso', o plantillas estándar de tiendas en línea. Si organizas una sorpresa para tu mamá, tu papá o tu pareja, conviene pensar el conjunto completo antes de elegir piezas sueltas.",
-          "Una guía de producto personalizado de EE. UU. da ejemplos como abridores, vasos reutilizables y tote bags con la edad del hito. Son ideas de ese mercado. Aquí te proponemos piezas que Yume sí produce y que se ven bien en una mesa de fiesta.",
+          "Si organizas una sorpresa para tu mamá, tu papá o tu pareja, conviene pensar el conjunto completo antes de elegir piezas sueltas. Un conjunto con el mismo nombre, año y paleta se ve planeado; piezas de distintas tiendas se ven improvisadas.",
+          "Si buscas más ideas, revisa estas propuestas de [regalo sorpresa con dulceros](/blog/regalo-sorpresa-personalizado-ideas-con-dulceros).",
         ],
       },
       {
@@ -5933,7 +5933,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Qué personalizar: nombre, año, foto o paleta",
         body: [
           "Cada pieza puede llevar uno o varios de estos elementos: el nombre del festejado, el año que cumple, una foto o los colores de la fiesta. Lo importante es repetir los mismos elementos en todas las piezas para que se vea como un solo conjunto y no como detalles de distintas tiendas.",
-          "Una guía del sector también sugiere incluir el nombre, la fecha o una broma interna, y coordinar colores, tipografía y gráficos con la invitación y la decoración. Si ya tienes la invitación, úsala como referencia para que todo se vea de la misma fiesta.",
+          "Si ya tienes la invitación, úsala como referencia para que todo se vea de la misma fiesta: mándanos una foto y adaptamos el diseño a esos colores.",
           "En Yume puedes pedir [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara) con nombre y temática, [stickers de vinil personalizados](/productos/stickers-vinil-impermeable) con tu diseño o foto, y tatuajes temporales para eventos por cotización. Todo con prueba digital antes de producir.",
         ],
       },
@@ -5942,32 +5942,34 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Piensa en tres piezas con el mismo diseño: el dulcero como detalle principal, un sticker como recuerdo adicional y un tatuaje temporal para animar la fiesta. Si repiten nombre, año y paleta, los tres se leen como un conjunto cuidado y no como cotillón.",
           "El dulcero llega armado y vacío, así que tú eliges qué lleva dentro. Si necesitas ideas, revisa [qué poner en un dulcero](/blog/que-poner-en-un-dulcero). Ten en cuenta los mínimos: el dulcero se pide desde 10 piezas y los stickers de vinil desde 40.",
+          "Para ver cómo se usan los tatuajes en una fiesta, lee sobre [tatuajes temporales para eventos](/blog/tatuajes-temporales-personalizados-para-eventos).",
         ],
       },
       {
         heading: "Cuándo pedir y cómo evitar errores con la prueba digital",
         body: [
-          "Como regla general, un blog estadounidense de producto personalizado recomienda pedir recuerdos de cumpleaños para adultos con 2 a 4 semanas de anticipación. Es una referencia externa, no un plazo de Yume. Para tus tiempos exactos, escríbenos por WhatsApp, y revisa siempre la prueba digital antes de aprobar.",
-          "El mismo blog señala errores comunes: escribir mal nombres o fechas, no revisar la prueba digital antes de producir, ignorar el pedido mínimo y comprar a última hora. En Yume la prueba digital te llega antes de producir, así que revisa con calma el nombre y el año del festejado antes de aprobar.",
+          "Pide con calma y no a última hora, para que haya tiempo de revisar la prueba digital con quien cumple años o con quien te ayuda a organizar. Para tus tiempos exactos, escríbenos por WhatsApp y te los confirmamos según las piezas que elijas.",
+          "Antes de aprobar, revisa en la prueba digital el nombre, el año y los colores. Yume te la envía antes de producir. Para ver cómo funciona, lee sobre la [prueba digital en pedidos de evento](/blog/prueba-digital-pedido-evento-planners).",
         ],
       },
       {
         heading: "Cumpleaños de adultos para planners y empresas: piezas por evento",
         body: [
           "Si organizas el festejo de un cliente o de tu empresa, piensa en piezas por evento: un mismo diseño con nombre, año y paleta para todos los invitados. Yume trabaja con prueba digital y trato directo por WhatsApp, así que puedes ajustar el diseño antes de producir.",
-          "Para planners, el cumpleaños de un adulto se resuelve como cualquier evento: defines nombre, año y paleta con tu cliente, nos mandas esa referencia y te enviamos la prueba digital para que la apruebe. Para una empresa, aplica lo mismo con el nombre del grupo o tu logo. Si quieres ver cómo se arma un pedido por evento, revisa estas [ideas de dulceros para noviembre](/blog/dulceros-dia-de-muertos-noviembre). Si la cantidad es grande, escríbenos por WhatsApp y te cotizamos.",
+          "Para planners, el cumpleaños de un adulto se resuelve como cualquier evento: defines nombre, año y paleta con tu cliente, nos mandas esa referencia y te enviamos la prueba digital para que la apruebe. Para una empresa, aplica lo mismo con el nombre del grupo o tu logo.",
+          "Si trabajas con proveedores, revisa la [guía para planners](/blog/guia-planners-proveedor-detalles-personalizados) y [cuántos recuerdos pedir por evento](/blog/cuantos-souvenirs-pedir-por-evento). Si la cantidad es grande, escríbenos por WhatsApp y te cotizamos.",
         ],
       },
       {
         heading: "Cómo pedirlo: diseño, prueba digital y WhatsApp",
         body: [
           "El proceso es directo: nos escribes por WhatsApp, nos cuentas para quién es y qué estilo imaginas, y preparamos el diseño. Antes de producir te enviamos una prueba digital, y nada se produce hasta que la apruebas. Así llegas a la fiesta con un detalle que ya viste y aprobaste.",
-          "Para precios y tiempos, escríbenos por WhatsApp y te cotizamos según las piezas que elijas.",
+          "Para elegir piezas y cantidades, conoce los [stickers de vinil personalizados](/productos/stickers-vinil-impermeable) o escríbenos por WhatsApp.",
         ],
       },
     ],
     relatedProductSlugs: ["stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["dulceros-personalizados-guadalajara", "que-poner-en-un-dulcero"],
+    relatedBlogSlugs: ["dulceros-personalizados-guadalajara", "que-poner-en-un-dulcero", "regalo-sorpresa-personalizado-ideas-con-dulceros", "tatuajes-temporales-personalizados-para-eventos", "prueba-digital-pedido-evento-planners"],
     faq: [
       {
         q: "¿Qué piezas puedo combinar para un cumpleaños de adulto?",
@@ -5990,8 +5992,12 @@ export const blogPosts: BlogPost[] = [
         a: "El dulcero se pide desde 10 piezas y los stickers de vinil personalizados desde 40 piezas.",
       },
       {
-        q: "¿Qué pongo si quiero un diseño minimalista?",
-        a: "Según una guía del sector, para un estilo minimalista basta con el nombre y la fecha. Puedes sumar los colores de la fiesta si quieres que combine con la invitación.",
+        q: "¿Qué puedo personalizar en cada pieza?",
+        a: "El nombre del festejado, el año que cumple, una foto o los colores de la fiesta. Conviene repetir los mismos elementos en todas las piezas.",
+      },
+      {
+        q: "¿Puedo pedir para el cumpleaños de un cliente o de mi empresa?",
+        a: "Sí. Defines nombre, año y paleta, nos mandas la referencia y te enviamos la prueba digital. Con cantidades grandes, escríbenos por WhatsApp y te cotizamos.",
       },
     ],
     sources: [],
