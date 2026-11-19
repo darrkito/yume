@@ -5688,36 +5688,50 @@ export const blogPostsEn: BlogPost[] = [
       "How to choose custom company anniversary details by milestone and recipient, with your logo and a digital proof. For companies and planners.",
     category: "Guides",
     publishedAt: "2026-11-03",
-    modifiedAt: "2026-11-05",
+    modifiedAt: "2026-11-19",
     intro:
-      "A company anniversary is remembered through small details that carry the right name: the number of years, the logo and a short message. Here you will see how to choose the detail by milestone (5, 10, 20, 30, 40 or 50 years) and by who receives it, when a candy box with your logo or a sticker makes sense, what to check with your accountant, and how to plan a small order per event, with a digital proof before production. It is written for the company that hosts and for the planner who coordinates.",
+      "A company anniversary is remembered through small details that carry the right name: the number of years, the logo and a short message. Here you will see how to choose the detail by milestone (5, 10, 20, 30, 40 or 50 years) and by who receives it, when a candy box with your logo or a sticker makes sense, what to ask your accountant, and how to plan a small order per event, with a digital proof before production. It is written for the company that hosts and for the planner who coordinates.",
     sections: [
       {
         heading: "Custom company anniversary details: how to choose",
         body: [
           "Choose the detail by the anniversary milestone and by who receives it. Common milestones are 5, 10, 20, 30, 40 and 50 years or more, and recipients are usually the team, clients and partners. A detail with the company name and the anniversary number feels made for the occasion.",
-          "An industry guide says adding a name, date or message turns a functional object into something people keep. A candy box or a logo sticker can do that. The guide also notes that timing matters more than one big gesture a year and that each gift should feel meant for that person. That is why it helps to design the detail for one specific event instead of picking one from a catalog.",
+          "That is why it helps to design the detail for one specific event instead of picking one from a catalog. With the name, the number and a short message, a candy box or a logo sticker stops being a generic object and is tied to that date. Below you will see each option.",
         ],
       },
       {
         heading: "What to personalize for each anniversary milestone",
         body: [
-          "The most common anniversary milestones are 5, 10, 20, 30, 40 and 50 years. At each one, what changes is the number and the message; the logo and brand colors stay the same. That way the detail is tied to that specific date.",
-          "Gifts with a logo help strengthen the relationship with employees and clients, according to a guide to company anniversary ideas. For your order, define three things: the anniversary number or date, a short message and the event name. With that, the design with your logo is ready for the digital proof.",
+          "At each milestone the number and the message change, while the logo and brand colors stay the same. The most common milestones are 5, 10, 20, 30, 40 and 50 years. For your order, define three things: the anniversary number or date, a short message and the event name.",
+          "With those three things and your logo, the design is ready for the digital proof you receive before production. Whether it is a 5 or a 50 year anniversary, you only change the number and the text; the brand identity is the same on every piece.",
         ],
       },
       {
         heading: "Which detail to give the team, clients and partners",
         body: [
           "Think first about who receives it. For the team, a detail with the anniversary number and the company name. For clients, one with their name or the event's name. For partners, one with your logo and a short thank-you message. The message changes, not the brand identity.",
-          "An industry guide suggests, for example, notebooks with the name and date of a shared project, or a box with a handwritten note for key clients. The same logic applies to a candy box or a sticker: the client's or the event's name makes it feel meant for that person.",
+          "If the anniversary is celebrated with your clients, see ideas for [client events](/en/blog/custom-details-for-client-events). And if it falls near the end of the year, check the [year-end gifts](/en/blog/year-end-gifts-for-employees-and-clients-personalized) for employees and clients.",
         ],
+      },
+      {
+        heading: "Which piece to choose: candy box, logo sticker or vinyl sticker",
+        body: [
+          "For a company anniversary you have three pieces: a custom candy box from 10 pieces, logo stickers from 50 and vinyl stickers from 40. The candy box is handed out with your filling; the stickers go with it or decorate other items. This table summarizes each minimum and what you can personalize.",
+        ],
+        table: {
+          headers: ["Piece", "Minimum", "What it is for", "What is personalized"],
+          rows: [
+            ["Custom candy box", "10 pieces", "Arrives assembled and empty, you choose the filling", "Name, theme and your company logo"],
+            ["Logo stickers", "50 pieces", "Go with the candy box or decorate a welcome bottle", "Logo, die cut or kiss cut, matte, glossy or holographic finish"],
+            ["Vinyl stickers", "40 pieces", "Carry an event illustration instead of the logo", "Any design, character or photo"],
+          ],
+        },
       },
       {
         heading: "Custom candy box with your logo for your company anniversary",
         body: [
           "The custom candy box is a concrete option for a company event. It is a lunch box style with a handle, arrives assembled and empty so you choose what goes inside, and the personalization includes the name and theme, plus your company logo. The minimum order is 10 pieces.",
-          "Because it arrives empty, the filling is up to you. Add the event name, the anniversary number and your brand colors in the design, and you get a piece that looks planned for that occasion. For filling ideas, read [what to put in a party favor box](/en/blog/what-to-put-in-a-party-favor-box). If your event is in Guadalajara, see [personalized party favor boxes in Guadalajara](/en/blog/personalized-party-favor-boxes-guadalajara).",
+          "Because it arrives empty, the filling is up to you. Add the event name, the anniversary number and your brand colors in the design, and you get a piece that looks planned for that occasion. See the [personalized party favor boxes](/en/products/personalized-party-favor-boxes) and read [what to put in a party favor box](/en/blog/what-to-put-in-a-party-favor-box) for filling ideas. For other company events, see [corporate event favor boxes](/en/blog/corporate-event-favor-boxes-with-logo). If your event is in Guadalajara, check [party favor boxes in Guadalajara](/en/blog/personalized-party-favor-boxes-guadalajara).",
         ],
       },
       {
@@ -5730,19 +5744,19 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "Is an anniversary gift deductible? What to ask your accountant",
         body: [
-          "It depends on who receives it and how you document it. According to a tax article, Article 28, section III of Mexico's Income Tax Law (LISR) makes gifts non-deductible in general, except those tied to sales or services and offered to clients in a general way. Confirm your case with your accountant.",
-          "That is why an anniversary detail given to all clients fits that exception better than a gift to one particular client. For employees, several accounting firm sources say gifts could be deductible as social benefits (Article 7 of the LISR) if they meet requirements such as an invoice (CFDI), accounting records and bank payment, and that cash gifts count as income for the worker. The sources do not fully agree on in-kind gifts. This is general guidance, not tax advice.",
+          "Deductibility depends on who receives the detail and how you document it, and it can change case by case. Before buying, ask your accountant whether the detail is for clients, employees or partners, and what paperwork you need. Yume does not give tax advice.",
+          "Bring your accountant the type of detail, the number of pieces and who will receive them. With that, they can advise you on how to document it. This is general guidance, not tax advice.",
         ],
       },
       {
         heading: "How to plan the anniversary order with your planner",
         body: [
-          "Plan the order from the guest list and each piece's minimum: 10 candy boxes, 50 logo stickers or 40 vinyl stickers. Define the event name, the anniversary date or number and a short message. Before production you receive a digital proof, and nothing is printed without your approval.",
-          "If you coordinate the event as a planner, send us a photo of the invitation or the decoration on WhatsApp and we will adapt the design to those colors. To confirm production and shipping dates, write to us before you set the event day. If your anniversary falls during posada season, see [personalized Christmas treat boxes](/en/blog/personalized-christmas-treat-boxes).",
+          "Plan the order from the guest list and each piece's minimum: 10 candy boxes, 50 logo stickers or 40 vinyl stickers. Define the event name, the anniversary date or number and a short message. Before production you receive a digital proof, and nothing is produced without your approval.",
+          "If you coordinate the event as a planner, send us a photo of the invitation or the decoration on WhatsApp and we will adapt the design to those colors. To confirm production and shipping dates, [contact us](/en/contact) before you set the event day. If your anniversary falls during posada season, see [personalized Christmas treat boxes](/en/blog/personalized-christmas-treat-boxes).",
         ],
       },
     ],
-    relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
+    relatedProductSlugs: ["dulceros-personalizados", "stickers-logo-personalizado", "stickers-vinil-impermeable"],
     faq: [
       {
         q: "Can I put my company logo on the candy box?",
@@ -5753,20 +5767,15 @@ export const blogPostsEn: BlogPost[] = [
         a: "No. The candy box arrives assembled and empty, ready to fill with whatever you choose.",
       },
       {
-        q: "How long does the digital proof take for vinyl stickers?",
-        a: "It normally arrives within 24 hours after your payment and includes up to 2 rounds of adjustments.",
+        q: "What is the minimum order for each piece?",
+        a: "The custom candy box has a 10-piece minimum, logo stickers 50 pieces and vinyl stickers 40 pieces.",
       },
       {
         q: "What is the difference between logo stickers and vinyl stickers?",
-        a: "Logo stickers are meant for your business logo and have a 50-piece minimum. Vinyl stickers work for any design, character or photo and have a 40-piece minimum.",
-      },
-      {
-        q: "Is there a maximum deductible amount for anniversary gifts?",
-        a: "The sources we reviewed give no amount limits or exact invoice (CFDI) requirements for client gifts. Ask your accountant before buying.",
+        a: "Logo stickers are meant for your business logo. Vinyl stickers work for any design, character or photo.",
       },
     ],
-    relatedBlogSlugs: [BLOG_SLUG_EN["que-poner-en-un-dulcero"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"], BLOG_SLUG_EN["dulceros-navidenos-personalizados"]],
-
+    relatedBlogSlugs: [BLOG_SLUG_EN["que-poner-en-un-dulcero"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"], BLOG_SLUG_EN["dulceros-navidenos-personalizados"], "corporate-event-favor-boxes-with-logo", "custom-details-for-client-events"],
   },
   {
     slug: "wedding-planner-custom-details-guadalajara",

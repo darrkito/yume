@@ -6128,62 +6128,76 @@ export const blogPosts: BlogPost[] = [
       "Cómo elegir detalles personalizados de aniversario para tu empresa: según el hito, el destinatario, con logo y prueba digital. Para empresas y planners.",
     category: "Guías",
     publishedAt: "2026-11-03",
-    modifiedAt: "2026-11-05",
+    modifiedAt: "2026-11-19",
     intro:
-      "Un aniversario de empresa se recuerda por detalles pequeños que llevan el nombre correcto: la cifra de los años, el logo y un mensaje breve. Aquí verás cómo elegir el detalle según el hito (5, 10, 20, 30, 40 o 50 años) y según quién lo recibe, cuándo conviene un dulcero con logo o un sticker, qué revisar con tu contador y cómo planear un pedido pequeño por evento, con prueba digital antes de producir. Está pensado para la empresa que organiza y para la planner que coordina.",
+      "Un aniversario de empresa se recuerda por detalles pequeños que llevan el nombre correcto: la cifra de los años, el logo y un mensaje breve. Aquí verás cómo elegir el detalle según el hito (5, 10, 20, 30, 40 o 50 años) y según quién lo recibe, cuándo conviene un dulcero con logo o un sticker, qué consultar con tu contador y cómo planear un pedido pequeño por evento, con prueba digital antes de producir. Está pensado para la empresa que organiza y para la planner que coordina.",
     sections: [
       {
         heading: "Detalles personalizados de aniversario para empresa: cómo elegir",
         body: [
           "Elige el detalle según el hito del aniversario y quién lo recibe. Los hitos habituales son 5, 10, 20, 30, 40 y 50 años o más, y los destinatarios suelen ser el equipo, los clientes y los aliados. Un detalle con el nombre de la empresa y la cifra del aniversario se siente hecho para la ocasión.",
-          "Según una guía del sector, añadir nombre, fecha o mensaje convierte un objeto funcional en algo que se conserva. Un dulcero o un sticker con logo cumplen con eso. La guía apunta además que el momento oportuno importa más que un gran gesto al año y que cada regalo debe sentirse dirigido a esa persona. Por eso conviene diseñar el detalle para un evento concreto, no escoger uno de catálogo.",
+          "Por eso conviene diseñar el detalle para un evento concreto y no escoger uno de catálogo. Con el nombre, la cifra y un mensaje breve, un dulcero o un sticker con logo deja de ser un objeto genérico y queda ligado a esa fecha. Abajo verás cada opción.",
         ],
       },
       {
         heading: "Qué personalizar según el hito del aniversario",
         body: [
-          "Los hitos de aniversario más habituales son 5, 10, 20, 30, 40 y 50 años. En cada uno, lo que cambia es la cifra y el mensaje; el logo y los colores de marca se mantienen. Así el detalle queda ligado a esa fecha concreta.",
-          "Los regalos con logotipo ayudan a afianzar la relación con empleados y clientes, según una guía de ideas de aniversario empresarial. Para tu pedido, define tres datos: la cifra o fecha del aniversario, el mensaje breve y el nombre del evento. Con eso, el diseño con tu logo queda listo para la prueba digital.",
+          "En cada hito cambia la cifra y el mensaje, mientras el logo y los colores de marca se mantienen. Los hitos más habituales son 5, 10, 20, 30, 40 y 50 años. Para tu pedido define tres datos: la cifra o fecha del aniversario, un mensaje breve y el nombre del evento.",
+          "Con esos tres datos y tu logo, el diseño queda listo para la prueba digital que recibes antes de producir. Si el aniversario es de 5 o de 50 años, solo cambias la cifra y el texto; la identidad de marca es la misma en todas las piezas.",
         ],
       },
       {
         heading: "Qué detalle dar al equipo, a los clientes y a los aliados",
         body: [
-          "Piensa primero en quién lo recibe. Al equipo le habla un detalle del aniversario con la cifra y el nombre de la empresa. A los clientes, uno con su nombre o el del evento. A los aliados, uno con tu logo y un mensaje breve de agradecimiento. Cambia el mensaje, no la identidad de marca.",
-          "Una guía del sector sugiere, por ejemplo, libretas con el nombre y la fecha de un proyecto compartido, o una caja con nota a mano para los clientes principales. La misma lógica aplica a un dulcero o a un sticker: el nombre del cliente o del evento hace que se sienta dirigido a esa persona.",
+          "Piensa primero en quién lo recibe. Al equipo le habla un detalle con la cifra del aniversario y el nombre de la empresa. A los clientes, uno con su nombre o el del evento. A los aliados, uno con tu logo y un mensaje breve de agradecimiento. Cambia el mensaje, no la identidad de marca.",
+          "Si el aniversario se celebra con tus clientes, mira ideas para [eventos con clientes](/blog/detalles-evento-con-clientes-personalizados). Y si cae cerca del cierre de año, revisa los [detalles de fin de año](/blog/detalles-fin-de-ano-clientes-colaboradores-personalizados) para clientes y colaboradores.",
         ],
+      },
+      {
+        heading: "Qué pieza elegir: dulcero, sticker con logo o sticker de vinil",
+        body: [
+          "Para un aniversario de empresa tienes tres piezas: dulcero personalizado desde 10 piezas, stickers con tu logo desde 50 y stickers de vinil desde 40. El dulcero se entrega con tu relleno; los stickers lo acompañan o decoran otras piezas. Esta tabla resume el mínimo y la personalización de cada una.",
+        ],
+        table: {
+          headers: ["Pieza", "Mínimo", "Para qué sirve", "Qué se personaliza"],
+          rows: [
+            ["Dulcero personalizado", "10 piezas", "Llega armado y vacío, tú eliges el relleno", "Nombre, temática y logo de tu empresa"],
+            ["Stickers con tu logo", "50 piezas", "Acompañar el dulcero o decorar una botella de bienvenida", "Logo, corte troquelado o semitroquelado, acabado mate, brillante u holográfico"],
+            ["Stickers de vinil", "40 piezas", "Llevar una ilustración del evento en lugar del logo", "Cualquier diseño, personaje o foto"],
+          ],
+        },
       },
       {
         heading: "Dulcero personalizado con logo para el aniversario de tu empresa",
         body: [
           "El dulcero personalizado es una opción concreta para un evento de empresa. Es tipo lunch box, con asa, llega armado y vacío para que tú elijas qué lleva dentro, y la personalización incluye el nombre y la temática, además del logo de tu empresa. El pedido mínimo es de 10 piezas.",
-          "Como llega vacío, el relleno lo decides tú. Pon en el diseño el nombre del evento, la cifra del aniversario y los colores de tu marca, y tendrás una pieza que se ve planeada para esa ocasión. Para ideas de relleno, lee [qué poner en un dulcero](/blog/que-poner-en-un-dulcero). Si tu evento es en Guadalajara, mira [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara).",
+          "Como llega vacío, el relleno lo decides tú. Pon en el diseño el nombre del evento, la cifra del aniversario y los colores de tu marca, y tendrás una pieza que se ve planeada para esa ocasión. Conoce los [dulceros personalizados](/productos/dulceros-personalizados) y lee [qué poner en un dulcero](/blog/que-poner-en-un-dulcero) para ideas de relleno. Para otros eventos de empresa, mira los [dulceros para eventos empresariales](/blog/dulceros-para-eventos-empresariales). Si tu evento es en Guadalajara, revisa [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara).",
         ],
       },
       {
         heading: "Stickers con logo para acompañar el detalle de aniversario",
         body: [
-          "Los stickers con logo sirven para acompañar el dulcero o decorar una botella de bienvenida. Puedes pedirlos con el logo de tu empresa o un diseño del aniversario. Los [stickers con tu logo](/productos/stickers-logo-personalizado) tienen mínimo de 50 piezas, se cortan troquelados o semitroquelados y se imprimen en mate, brillante u holográfico.",
+          "Los stickers con logo sirven para acompañar el dulcero o decorar una botella de bienvenida. Puedes pedirlos con el logo de tu empresa o con un diseño del aniversario. Los [stickers con tu logo](/productos/stickers-logo-personalizado) piden mínimo de 50 piezas, se cortan troquelados o semitroquelados y se imprimen en mate, brillante u holográfico.",
           "Si prefieres una ilustración del evento en lugar del logo, existen los [stickers de vinil personalizados](/productos/stickers-vinil-impermeable), con mínimo de 40 piezas. Todos nuestros stickers llevan laminado BOPP de alta calidad. Los de vinil pasan por prueba digital antes de imprimir.",
         ],
       },
       {
         heading: "¿Es deducible un detalle de aniversario? Qué consultar con tu contador",
         body: [
-          "Depende de a quién se lo des y de cómo lo documentes. Según una nota fiscal, el artículo 28, fracción III de la Ley del ISR establece que los obsequios y atenciones no son deducibles en general, salvo los relacionados con la venta o el servicio y ofrecidos a los clientes en forma general. Confirma tu caso con tu contador.",
-          "Por eso un detalle de aniversario entregado a todos los clientes encaja mejor en esa excepción que un regalo a un cliente en particular. Para empleados, varias fuentes de despachos contables indican que podrían ser deducibles como previsión social (artículo 7 de la LISR) si cumplen requisitos como CFDI, registro contable y pago bancarizado, y que los regalos en dinero se tratan como ingreso para el trabajador. Las fuentes no coinciden del todo sobre los regalos en especie. Esto es orientación general, no asesoría fiscal.",
+          "La deducibilidad depende de a quién entregas el detalle y de cómo lo documentas, y puede cambiar según el caso. Antes de comprar, pregunta a tu contador si el detalle es para clientes, empleados o aliados, y qué comprobantes necesitas. En Yume no damos asesoría fiscal.",
+          "Lleva a tu contador el tipo de detalle, la cantidad de piezas y quiénes lo recibirán. Con esos datos puede orientarte sobre cómo documentarlo. Esto es orientación general, no asesoría fiscal.",
         ],
       },
       {
         heading: "Cómo planear el pedido del aniversario con tu planner",
         body: [
-          "Planea el pedido desde la lista de invitados y el mínimo de cada pieza: 10 dulceros, 50 stickers con logo o 40 stickers de vinil. Define el nombre del evento, la cifra o fecha del aniversario y el mensaje breve. Antes de producir recibes una prueba digital, y nada se imprime sin tu aprobación.",
-          "Si coordinas el evento como planner, mándanos por WhatsApp una foto de la invitación o de la decoración y adaptamos el diseño a esos colores. Para confirmar fechas de producción y envío, escríbenos antes de fijar el día del evento. Si tu aniversario cae en temporada de posadas, revisa los [dulceros navideños personalizados](/blog/dulceros-navidenos-personalizados).",
+          "Planea el pedido desde la lista de invitados y el mínimo de cada pieza: 10 dulceros, 50 stickers con logo o 40 stickers de vinil. Define el nombre del evento, la cifra o fecha del aniversario y un mensaje breve. Antes de producir recibes una prueba digital, y nada se produce sin tu aprobación.",
+          "Si coordinas el evento como planner, mándanos por WhatsApp una foto de la invitación o de la decoración y adaptamos el diseño a esos colores. Para confirmar fechas de producción y envío, [contáctanos](/contacto) antes de fijar el día del evento. Si tu aniversario cae en temporada de posadas, revisa los [dulceros navideños personalizados](/blog/dulceros-navidenos-personalizados).",
         ],
       },
     ],
-    relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "dulceros-navidenos-personalizados"],
+    relatedProductSlugs: ["dulceros-personalizados", "stickers-logo-personalizado", "stickers-vinil-impermeable"],
+    relatedBlogSlugs: ["que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "dulceros-navidenos-personalizados", "dulceros-para-eventos-empresariales", "detalles-evento-con-clientes-personalizados"],
     faq: [
       {
         q: "¿Puedo poner el logo de mi empresa en el dulcero?",
@@ -6194,16 +6208,12 @@ export const blogPosts: BlogPost[] = [
         a: "No. El dulcero llega armado y vacío, listo para llenar con lo que tú elijas.",
       },
       {
-        q: "¿Cuánto tarda la prueba digital de los stickers de vinil?",
-        a: "Llega normalmente en un máximo de 24 horas después de tu pago e incluye hasta 2 rondas de ajustes.",
+        q: "¿Cuál es el pedido mínimo de cada pieza?",
+        a: "El dulcero personalizado pide mínimo 10 piezas, los stickers con tu logo 50 piezas y los stickers de vinil 40 piezas.",
       },
       {
         q: "¿En qué se diferencian los stickers con logo y los de vinil?",
-        a: "Los stickers con tu logo están pensados para el logo de tu negocio y piden mínimo 50 piezas. Los de vinil sirven para cualquier diseño, personaje o foto y piden mínimo 40 piezas.",
-      },
-      {
-        q: "¿Hay un monto máximo deducible para regalos de aniversario?",
-        a: "Las fuentes que revisamos no dan límites de monto ni los requisitos exactos de CFDI para regalos a clientes. Pregunta a tu contador antes de comprar.",
+        a: "Los stickers con tu logo están pensados para el logo de tu negocio. Los de vinil sirven para cualquier diseño, personaje o foto.",
       },
     ],
     sources: [],
