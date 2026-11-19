@@ -5763,7 +5763,7 @@ export const blogPosts: BlogPost[] = [
       "Dulceros para 15 años mujer: ideas por tema y paleta, cómo integrar el nombre, qué personalizar, cuántos pedir y cómo aprobar la prueba digital.",
     category: "Guías",
     publishedAt: "2026-11-03",
-    modifiedAt: "2026-11-17",
+    modifiedAt: "2026-11-19",
     intro:
       "Si buscas dulceros para 15 años mujer, la pregunta no es solo qué poner dentro, sino cómo lograr que combinen con el nombre y el tema de la quinceañera. Aquí tienes ideas de tema por paleta, cómo integrar el nombre, qué personalizar, cómo presentar y etiquetar los dulces, cuántos dulceros pedir y cómo hacerlo con prueba digital. Está escrito para mamás, papás y planners que cuidan el detalle.",
     sections: [
@@ -5778,7 +5778,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Ideas de tema para dulceros de 15 años con nombre",
         body: [
           "Un tema se define con una paleta de color y un motivo, no con adornos sueltos. Elige dos o tres colores de la fiesta y un motivo, como flores o un monograma, y platícalo con nosotros por WhatsApp para llevarlo al dulcero junto con el nombre de la quinceañera.",
-          "Estas ideas son puntos de partida de paleta y motivo, no tendencias medidas. Mándanos los colores de tu invitación y adaptamos el diseño a ellos.",
+          "Estas ideas son puntos de partida de paleta y motivo, no tendencias medidas. Mándanos los colores de tu invitación y adaptamos el diseño a ellos. Para ver ideas parecidas en otras fiestas, revisa los [dulceros para eventos sociales](/blog/dulceros-para-eventos-sociales-boda-xv-baby-shower).",
         ],
         table: {
           headers: ["Idea de tema", "Paleta", "Cómo se integra el nombre"],
@@ -5824,7 +5824,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Cómo etiquetar sabores y alérgenos en la mesa",
         body: [
-          "La misma guía sugiere etiquetar los sabores y los alérgenos, e indicar qué opciones son sin gluten, sin azúcar o veganas. Así cada invitado sabe qué toma y nadie tiene que preguntar. Es una guía de candy bar para bodas, así que sirve como referencia para adaptar a un XV.",
+          "La guía de Bodas.net sugiere etiquetar los sabores y los alérgenos, e indicar qué opciones son sin gluten, sin azúcar o veganas. Así cada invitado sabe qué toma y nadie tiene que preguntar. Es una guía de candy bar para bodas, así que sirve como referencia para adaptar a un XV.",
           "La nota de Diario de Yucatán recomienda al menos dos opciones sin gluten y una vegana, bien etiquetadas.",
         ],
       },
@@ -5852,6 +5852,10 @@ export const blogPosts: BlogPost[] = [
         a: "No. El dulcero llega armado y vacío, listo para llenar con los dulces que tú elijas.",
       },
       {
+        q: "¿Cómo es el dulcero que ofrecen?",
+        a: "Es tipo lunch box, con asa, y llega armado y vacío para que tú elijas qué lleva dentro.",
+      },
+      {
         q: "¿Qué incluye la personalización de un dulcero?",
         a: "El nombre y la temática que elijas. Si quieres añadir la fecha o las iniciales, escríbenos por WhatsApp y lo confirmamos.",
       },
@@ -5866,6 +5870,10 @@ export const blogPosts: BlogPost[] = [
       {
         q: "¿Cuántos gramos de dulce calculo por invitado?",
         a: "Una guía española de candy bar para bodas habla de 80 a 150 g por invitado según el tamaño del evento. Es una referencia de bodas, úsala solo como orientación en un XV.",
+      },
+      {
+        q: "¿Cuántas piezas de postre calculo por invitado en una mesa?",
+        a: "Una nota de Diario de Yucatán sobre mesas de postres temáticas propone calcular de 3.5 a 4 piezas individuales por invitado. No es una guía de XV, úsala como orientación.",
       },
       {
         q: "¿Conviene etiquetar los dulces?",
