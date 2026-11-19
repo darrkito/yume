@@ -498,9 +498,16 @@ export const blogPostsEn: BlogPost[] = [
     "description": "How to use a Google review plate at events: get the official link, what text to print, when to ask for reviews and what not to offer in return.",
     "category": "Guides",
     "publishedAt": "2026-11-03",
-    "modifiedAt": "2026-11-05",
+    "modifiedAt": "2026-11-19",
     "intro": "A Google review plate for event planners and venues makes your business listing easier for clients to reach. Honest reviews provide social proof for people looking for a planner, venue or vendor for their own celebration. Here is how to get the official link, where to display the plate, when to ask for a review and what not to offer in return, so the invitation stays careful and honest.",
     "sections": [
+      {
+        "heading": "Why do event planners and venues need Google reviews?",
+        "body": [
+          "Honest reviews work as social proof for people looking for a planner, venue or vendor for their celebration. A Google review plate for event planners and venues makes your listing link easier for clients to reach, but it does not guarantee reviews: each person decides whether to leave feedback.",
+          "If you want to see the full flow before deciding, read [how to use your Yume plate](/en/blog/how-to-use-your-yume-google-review-plate) and the [Google review policies](/en/blog/google-review-policies-what-you-can-and-cannot-do)."
+        ]
+      },
       {
         "heading": "Google review plate: which profile should receive the reviews?",
         "body": [
@@ -519,7 +526,8 @@ export const blogPostsEn: BlogPost[] = [
         "heading": "Where should you display the plate during an event?",
         "body": [
           "Place it where people can see it without interrupting the celebration: at reception if you run a venue, or at your service table if you are a vendor. Google suggests showing the QR code or link on receipts, thank-you emails, at the end of a chat or printed in your location.",
-          "If you work with clients over WhatsApp, Google also lets you send the request by that channel or by email. The plate at the event and a later message work together."
+          "If you work with clients over WhatsApp, Google also lets you send the request by that channel or by email. The plate at the event and a later message work together.",
+          "For more placement ideas, see [where to put the plate](/en/blog/where-to-put-your-google-review-plate)."
         ]
       },
       {
@@ -561,7 +569,8 @@ export const blogPostsEn: BlogPost[] = [
         "heading": "How does Yume prepare your piece?",
         "body": [
           "Yume configures the NFC and QR with your business’s review link before shipping the piece. It requires no app or subscription: payment is one-time. If you want a quote or have questions, message us on WhatsApp and we will help you choose the right piece.",
-          "If you are also preparing favors for your guests, see our [personalized party favor boxes in Guadalajara](/en/blog/personalized-party-favor-boxes-guadalajara) to complement your favor supplier."
+          "To compare pricing models, read [one-time price or subscription](/en/blog/google-review-plates-one-time-price-vs-subscription).",
+          "If you are also preparing favors for your guests, see our [personalized party favor boxes in Guadalajara](/en/blog/personalized-party-favor-boxes-guadalajara) and the [guide for planners](/en/blog/guide-for-planners-working-with-custom-favors-supplier) to complement your favor supplier."
         ]
       }
     ],
@@ -593,9 +602,24 @@ export const blogPostsEn: BlogPost[] = [
       {
         "q": "How much do the plate and the stand cost?",
         "a": "The 12 × 12 cm plate with adhesive costs MXN $140 and the upright stand costs MXN $200. Both are available in white or black."
+      },
+      {
+        "q": "Which link should I give Yume to configure my piece?",
+        "a": "The review link of your own business, copied exactly as Google provides it. Yume configures the NFC and QR with that link before shipping."
+      },
+      {
+        "q": "If several vendors work at one event, which profile receives the review?",
+        "a": "Each business uses its own link, so the review reaches the profile of whoever provided the service."
       }
     ],
-    relatedBlogSlugs: [BLOG_SLUG_EN["dulceros-personalizados-guadalajara"]],
+    relatedBlogSlugs: [
+      BLOG_SLUG_EN["dulceros-personalizados-guadalajara"],
+      BLOG_SLUG_EN["donde-poner-placa-resenas-google"],
+      BLOG_SLUG_EN["que-si-y-que-no-pedir-resenas-google-politicas"],
+      BLOG_SLUG_EN["como-usar-placa-resenas-google-yume"],
+      BLOG_SLUG_EN["placas-resenas-google-pago-unico-vs-suscripcion"],
+      BLOG_SLUG_EN["guia-planners-proveedor-detalles-personalizados"],
+    ],
     "relatedProductSlugs": ["placa-resena-google-nfc", "stand-resena-google-nfc"],
     "quoteMessage": "Hi, I am interested in the NFC plate and stand for Google reviews.",
     sources: [

@@ -557,9 +557,16 @@ export const blogPosts: BlogPost[] = [
     "description": "Cómo usar una placa de reseñas de Google en eventos: obtener el enlace oficial, qué texto poner, cuándo pedir la reseña y qué no ofrecer a cambio.",
     "category": "Guías",
     "publishedAt": "2026-11-03",
-    "modifiedAt": "2026-11-05",
+    "modifiedAt": "2026-11-19",
     "intro": "Una placa de reseñas de Google para planners y eventos acerca el enlace de tu ficha a tus clientes. Las opiniones honestas sirven como prueba social para quienes buscan un planner, recinto o proveedor para su celebración. Aquí verás cómo obtener el enlace oficial, dónde mostrar la placa, cuándo pedir la reseña y qué no ofrecer a cambio, para que la invitación sea cuidada y honesta.",
     "sections": [
+      {
+        "heading": "¿Para qué sirve una placa de reseñas en tu negocio de eventos?",
+        "body": [
+          "Las opiniones honestas funcionan como prueba social para quienes buscan un planner, recinto o proveedor para su celebración. Una placa de reseñas de Google para planners y eventos acerca el enlace de tu ficha a tus clientes, pero no garantiza reseñas: cada persona decide si opina y qué escribe.",
+          "Si quieres ver el flujo completo antes de decidir, revisa [cómo usar la placa de Yume](/blog/como-usar-placa-resenas-google-yume) y las [políticas de reseñas de Google](/blog/que-si-y-que-no-pedir-resenas-google-politicas)."
+        ]
+      },
       {
         "heading": "Placa de reseñas de Google: ¿qué perfil debe recibirlas?",
         "body": [
@@ -578,7 +585,8 @@ export const blogPosts: BlogPost[] = [
         "heading": "¿Dónde mostrar la placa durante un evento?",
         "body": [
           "Colócala donde las personas la vean sin que interrumpa la celebración: en recepción si eres recinto, o en tu mesa de atención si eres proveedor. Google sugiere mostrar el QR o el enlace en recibos, correos de agradecimiento, al final de un chat o impreso en el local.",
-          "Si trabajas con clientes por WhatsApp, también puedes enviar la solicitud por ese medio, por correo o por Facebook, según Google. La placa en el evento y el mensaje posterior se complementan."
+          "Si trabajas con clientes por WhatsApp, también puedes enviar la solicitud por ese medio, por correo o por Facebook, según Google. La placa en el evento y el mensaje posterior se complementan.",
+          "Para más ideas sobre ubicación, revisa [dónde poner la placa](/blog/donde-poner-placa-resenas-google)."
         ]
       },
       {
@@ -620,7 +628,8 @@ export const blogPosts: BlogPost[] = [
         "heading": "¿Cómo prepara Yume tu pieza?",
         "body": [
           "Yume configura el NFC y el QR con el enlace de reseñas de tu negocio antes de enviar la pieza. No requiere app ni suscripción: el pago es único. Si quieres cotizar o resolver dudas, escríbenos por WhatsApp y te ayudamos a definir qué pieza te conviene.",
-          "Si además preparas detalles para tus invitados, mira nuestros [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara) para complementar a tu proveedor de detalles."
+          "Para comparar modelos de cobro, lee [pago único o suscripción](/blog/placas-resenas-google-pago-unico-vs-suscripcion).",
+          "Si además preparas detalles para tus invitados, mira nuestros [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara) y la [guía para planners](/blog/guia-planners-proveedor-detalles-personalizados) para complementar a tu proveedor de detalles."
         ]
       }
     ],
@@ -652,6 +661,14 @@ export const blogPosts: BlogPost[] = [
       {
         "q": "¿Cuánto cuestan la placa y el stand?",
         "a": "La placa de 12 × 12 cm con adhesivo cuesta $140 MXN y el stand de pie cuesta $200 MXN. Ambos están disponibles en blanco o negro."
+      },
+      {
+        "q": "¿Qué enlace debo dar a Yume para configurar mi pieza?",
+        "a": "El enlace de reseñas de tu propio negocio, copiado tal como lo entrega Google. Yume configura el NFC y el QR con ese enlace antes del envío."
+      },
+      {
+        "q": "Si somos varios proveedores en un evento, ¿qué perfil recibe la reseña?",
+        "a": "Cada negocio usa su propio enlace, para que la opinión llegue al perfil de quien prestó el servicio."
       }
     ],
     "relatedProductSlugs": [
@@ -659,7 +676,12 @@ export const blogPosts: BlogPost[] = [
       "stand-resena-google-nfc"
     ],
     "relatedBlogSlugs": [
-      "dulceros-personalizados-guadalajara"
+      "dulceros-personalizados-guadalajara",
+      "donde-poner-placa-resenas-google",
+      "que-si-y-que-no-pedir-resenas-google-politicas",
+      "como-usar-placa-resenas-google-yume",
+      "placas-resenas-google-pago-unico-vs-suscripcion",
+      "guia-planners-proveedor-detalles-personalizados"
     ],
     "quoteMessage": "Hola, me interesan la placa y el stand NFC para reseñas de Google.",
     "sources": [
