@@ -10,17 +10,18 @@ export const blogPostsEn: BlogPost[] = [
     "slug": "nfc-review-card-or-plate-which-to-choose",
     "title": "NFC card for Google reviews: plate or stand?",
     "metaTitle": "NFC review card: plate or stand?",
-    "description": "Compare NFC review plates and stands by size, placement, NFC, QR, and how they differ from a small card.",
+    "description": "NFC card for Google reviews: compare Yume's plate and stand by size, placement, NFC and QR, and which one fits a counter or an event.",
     "category": "Guides",
     "publishedAt": "2026-11-18",
-    "modifiedAt": "2026-11-18",
-    "intro": "If you are looking for an NFC card for Google reviews, first consider which format fits your counter. Some people call it a card, others a plate or stand. This guide compares the two Yume pieces, where they go, and what happens when a customer taps a phone or scans the code.",
+    "modifiedAt": "2026-11-19",
+    "intro": "If you are looking for an NFC card for Google reviews, first consider which format fits your counter, your check-in table, or your event. Some people call it a card, others a plate or stand. This guide compares the two Yume pieces, where each one fits, where they go, and what happens when a customer taps a phone or scans the code.",
     "sections": [
       {
         "heading": "Is an NFC review card the same as a plate or stand?",
         "body": [
           "Card, plate, and stand are names used for pieces that bring customers to a review link. At Yume you can choose a 12 × 12 cm plate or a stand with a base; we do not offer a credit-card-size card here. Both include NFC and QR.",
           "The distinction matters if you imagined a small piece to carry in a wallet. The plate is designed to be fixed using the included adhesive, while the stand sits upright. Being larger than a credit card gives these pieces a surface that is easier to see and tap with a phone at a counter.",
+          "Google allows you to ask for reviews with a direct link or a QR code created from the Business Profile. That is where the link Yume configures on your piece comes from.",
           "You do not have to choose based on the name you saw in a search. Think first about the space you have and whether you want to leave the piece fixed or move it. Then compare the dimensions and options available for each product."
         ]
       },
@@ -29,7 +30,7 @@ export const blogPostsEn: BlogPost[] = [
         "body": [
           "Choose the plate if you have a spot where you want to keep your review link visible. It measures 12 × 12 cm and is 0.2 cm thick; adhesive is included to fix it in place. It comes in white or black and combines NFC and a QR code.",
           "For example, consider a spot at the register, counter, or table where customers can bring their phones close. Before sticking it down, check the location and test the reading there. That lets you check that the link opens as expected and that the QR stays visible.",
-          "The [NFC review plate](/en/products/google-review-nfc-plate) arrives configured with your business link. The version without a logo costs $140 MXN per piece; you can also choose the version with your logo. Visit its product page to see the variants before deciding."
+          "The [NFC review plate](/en/products/google-review-nfc-plate) arrives configured with your business link. First 100 pieces: $140 MXN per piece without a logo and $155 MXN with your logo. Above 100 pieces it is wholesale pricing. Visit its product page to see the variants before deciding."
         ]
       },
       {
@@ -37,14 +38,29 @@ export const blogPostsEn: BlogPost[] = [
         "body": [
           "The stand suits a place where you prefer an upright piece that you can move without peeling it off. It has an independent base, measures 12.75 cm high and 7.6 cm wide, and has a 5 cm deep base. It stands on a counter or table without glue.",
           "It also comes in white or black, with NFC and QR configured to your link. The upright format lets you place the code in view on a flat surface. Consider both the base footprint and the height when choosing its location.",
-          "The [NFC review stand](/en/products/google-review-nfc-stand) costs $200 MXN without a logo and has a logo option. If you need to move it between a table and the counter, its base means you do not have to fix it to each surface."
+          "The [NFC review stand](/en/products/google-review-nfc-stand) arrives configured the same way as the plate. First 100 pieces: $200 MXN without a logo and $215 MXN with your logo. If you need to move it between a table and the counter, its base means you do not have to fix it to each surface."
+        ]
+      },
+      {
+        "heading": "Plate or stand for a wedding, quinceañera, or event?",
+        "body": [
+          "For an event, the plate works best at a fixed spot, such as the check-in table, because it attaches with adhesive. The stand suits moving it between tables or from the counter to the bar, because it stands upright without glue. In both cases the QR serves as a backup.",
+          "If you work as a planner or run an event venue, the piece can also help you ask for feedback on your service. You will find more context in the guide to the [review plate for planners and venues](/en/blog/google-review-plate-for-event-planners-and-venues) and on the [planners](/en/planners) page."
+        ]
+      },
+      {
+        "heading": "What text should go next to the piece to follow Google's rules?",
+        "body": [
+          "Google's content policy prohibits offering incentives, such as payments, discounts, or free products, in exchange for reviews. It also prohibits discouraging negative reviews or asking only some customers for positive ones. A neutral line, such as “tell us about your experience”, invites an opinion without conditioning the rating.",
+          "That is why it is best not to write “give us 5 stars” on the piece, or to offer gifts or raffles for reviews. Google does allow encouraging people to share an authentic experience without incentives.",
+          "For more cases, read the guide on [what you can and cannot do with Google reviews](/en/blog/google-review-policies-what-you-can-and-cannot-do)."
         ]
       },
       {
         "heading": "How do customers open the review link with iPhone or Android?",
         "body": [
           "The customer brings a phone close to read the NFC or scans the QR with the camera; both lead to the review link configured for your business. No Yume app or subscription is needed. NFC reading depends on the phone and its settings, so the QR offers another route.",
-          "Phones do not all read NFC in the same way. If someone cannot open the link by tapping their phone, they can use the QR code. Test both options when the piece arrives and in the place where you plan to use it.",
+          "According to NFC card vendors, some Android phones ship with NFC turned off and a metal or thick case can block reading; on iPhone the reading zone is at the top back. These are vendor claims, not Yume's, and there are no verified compatibility figures. That is why it is worth testing with several phones, with and without a case.",
           "The guide to [how the NFC plate works with iPhone and Android](/en/blog/does-nfc-plate-work-iphone-android) explains reading conditions and what to check if a phone does not respond. There is no need to promise that every device will behave the same way."
         ]
       },
@@ -53,6 +69,7 @@ export const blogPostsEn: BlogPost[] = [
         "body": [
           "Decide where the piece will go, measure the space, and choose between adhesive and a base. Then select white or black and, if you want, the logo variant. Yume configures the NFC and QR with your business review link before sending the piece.",
           "The plate and stand are made to order and subject to availability. Because of high demand, production can take 2 to 3 weeks; it is best to ask about availability before paying. Keep that timing in mind when deciding when to order.",
+          "When it arrives, test the link with an iPhone and an Android phone, with and without a case, and also by scanning the QR.",
           "The format makes it easier to share the link, but your customer decides whether to write and what to say. For more context, read [how to get more reviews with NFC and QR](/en/blog/how-to-get-more-google-reviews-nfc-qr) and the [comparison of an NFC plate and printed QR](/en/blog/nfc-plate-vs-printed-qr-code-for-reviews)."
         ]
       }
@@ -67,7 +84,16 @@ export const blogPostsEn: BlogPost[] = [
       "does-nfc-plate-work-iphone-android",
       "custom-nfc-plate-with-your-logo"
     ],
-    "sources": [],
+    "sources": [
+      {
+        "label": "Google: ask for reviews with a link or QR code from the Business Profile",
+        "url": "https://support.google.com/business/answer/3474122?hl=es"
+      },
+      {
+        "label": "Google: content policy on reviews and incentives",
+        "url": "https://support.google.com/contributionpolicy/answer/7400114?hl=es"
+      }
+    ],
     "faq": [
       {
         "q": "Does Yume sell a credit-card-size card?",
@@ -76,6 +102,22 @@ export const blogPostsEn: BlogPost[] = [
       {
         "q": "Do the plate and stand require a subscription?",
         "a": "No. Both arrive configured and work without an app or subscription."
+      },
+      {
+        "q": "Can I offer a discount in exchange for a review?",
+        "a": "No. Google's content policy prohibits offering incentives, such as payments, discounts, or free products, in exchange for reviews."
+      },
+      {
+        "q": "Where does the review link come from?",
+        "a": "Google lets you create a direct link or a QR code to ask for reviews from the Business Profile. Yume configures that link on your piece."
+      },
+      {
+        "q": "How much do the plate and stand cost?",
+        "a": "First 100 pieces: the plate costs $140 MXN without a logo and $155 MXN with a logo; the stand costs $200 MXN without a logo and $215 MXN with a logo. Above 100 pieces it is wholesale pricing."
+      },
+      {
+        "q": "What colors are available?",
+        "a": "The plate and the stand are available in white or black."
       }
     ]
   },

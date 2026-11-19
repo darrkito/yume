@@ -61,17 +61,18 @@ export const blogPosts: BlogPost[] = [
     "slug": "tarjeta-nfc-resenas-google-que-elegir",
     "title": "Tarjeta NFC para reseñas de Google: ¿placa o stand?",
     "metaTitle": "Tarjeta NFC para reseñas Google: ¿placa o stand?",
-    "description": "Compara placa y stand NFC para reseñas de Google: tamaño, ubicación, NFC, QR y la diferencia con una tarjeta pequeña.",
+    "description": "Tarjeta NFC para reseñas de Google: compara placa y stand de Yume por tamaño, ubicación, NFC y QR, y cuál conviene en un mostrador o evento.",
     "category": "Guías",
     "publishedAt": "2026-11-18",
-    "modifiedAt": "2026-11-18",
-    "intro": "Si buscas una tarjeta NFC para reseñas de Google, antes de elegir revisa qué formato necesitas en tu mostrador. Algunas personas hablan de tarjeta, otras de placa o soporte. Aquí comparamos las dos piezas de Yume, cómo se colocan y qué ocurre cuando un cliente acerca su celular o escanea el código.",
+    "modifiedAt": "2026-11-19",
+    "intro": "Si buscas una tarjeta NFC para reseñas de Google, antes de elegir revisa qué formato necesitas en tu mostrador, en tu mesa de registro o en un evento. Algunas personas hablan de tarjeta, otras de placa o soporte. Aquí comparamos las dos piezas de Yume, dónde conviene cada una, cómo se colocan y qué ocurre cuando un cliente acerca su celular o escanea el código.",
     "sections": [
       {
         "heading": "¿Una tarjeta NFC para reseñas es lo mismo que una placa o soporte?",
         "body": [
-          "Tarjeta, placa y soporte son nombres que se usan para piezas que acercan al cliente al enlace de reseñas. En Yume puedes elegir una placa de 12 × 12 cm o un stand con base; no ofrecemos aquí una tarjeta del tamaño de una tarjeta bancaria. Ambos incluyen NFC y QR.",
+          "Tarjeta, placa y soporte son nombres que se usan para piezas que llevan al cliente al enlace de reseñas. En Yume puedes elegir una placa de 12 × 12 cm o un stand con base; no ofrecemos aquí una tarjeta del tamaño de una tarjeta bancaria. Ambos incluyen NFC y QR.",
           "La diferencia importa si imaginabas una pieza pequeña para llevar en la cartera. La placa está pensada para fijarse con el adhesivo incluido, mientras que el stand se apoya de pie. Al ser piezas más grandes que una tarjeta bancaria, ofrecen una superficie más fácil de ver y acercar al celular en un mostrador.",
+          "Google permite pedir reseñas con un enlace directo o un código QR creado desde el Perfil de Empresa. De ahí sale el enlace que Yume configura en tu pieza.",
           "No necesitas elegir por el nombre que viste en una búsqueda. Piensa primero en el espacio que tienes y en si quieres dejar la pieza fija o cambiarla de lugar. Después compara las medidas y las opciones disponibles en cada producto."
         ]
       },
@@ -80,7 +81,7 @@ export const blogPosts: BlogPost[] = [
         "body": [
           "Elige la placa si tienes un punto donde quieres dejar visible el enlace de reseñas. Mide 12 × 12 cm y tiene 0.2 cm de grosor; incluye adhesivo para fijarla. Está disponible en blanco o negro y combina NFC y código QR en una sola pieza.",
           "Por ejemplo, puedes considerar un espacio en caja, mostrador o mesa donde tus clientes puedan acercar el celular. Antes de pegarla, revisa el lugar y prueba la lectura allí. Así puedes comprobar que el enlace abre como esperas y que el QR queda a la vista.",
-          "La [placa NFC para reseñas](/productos/placa-resena-google-nfc) se entrega configurada con el enlace de tu negocio. La opción sin logo cuesta $140 MXN por pieza; también puedes elegir la versión con tu logo. Consulta su página para ver las variantes antes de decidir."
+          "La [placa NFC para reseñas](/productos/placa-resena-google-nfc) se entrega configurada con el enlace de tu negocio. Primeras 100 piezas: $140 MXN por pieza sin logo y $155 MXN con tu logo. Arriba de 100 piezas es precio mayoreo. Consulta su página para ver las variantes antes de decidir."
         ]
       },
       {
@@ -88,14 +89,29 @@ export const blogPosts: BlogPost[] = [
         "body": [
           "El stand conviene si prefieres una pieza de pie que puedas mover sin despegarla. Tiene una base independiente, mide 12.75 cm de alto y 7.6 cm de ancho, con una base de 5 cm de profundidad. Se coloca sobre mostrador o mesa sin pegamento.",
           "También está disponible en blanco o negro y lleva NFC y QR configurados con tu enlace. El formato de pie permite colocar el código a la vista sobre una superficie plana. Considera tanto el espacio de la base como la altura al elegir el sitio.",
-          "El [stand NFC para reseñas](/productos/stand-resena-google-nfc) cuesta $200 MXN en su versión sin logo y tiene una opción con logo. Si necesitas moverlo entre una mesa y el mostrador, su base evita que tengas que fijarlo a cada superficie."
+          "El [stand NFC para reseñas](/productos/stand-resena-google-nfc) se entrega configurado igual que la placa. Primeras 100 piezas: $200 MXN sin logo y $215 MXN con tu logo. Si necesitas moverlo entre una mesa y el mostrador, su base evita que tengas que fijarlo a cada superficie."
+        ]
+      },
+      {
+        "heading": "¿Placa o stand para una boda, unos XV años o un evento?",
+        "body": [
+          "Para un evento, la placa funciona mejor en un punto fijo, como la mesa de registro, porque se pega con adhesivo. El stand conviene cuando quieres moverlo entre mesas o del mostrador a la barra, porque se apoya de pie sin pegamento. En ambos casos el QR sirve de respaldo.",
+          "Si trabajas como planner o tienes un salón de eventos, la pieza también sirve para pedir una opinión sobre tu servicio. Tienes más contexto en la guía de [placa de reseñas para planners y eventos](/blog/placa-resenas-google-para-planners-y-eventos) y en la página de [planners](/planners)."
+        ]
+      },
+      {
+        "heading": "¿Qué texto poner junto a la pieza para respetar las reglas de Google?",
+        "body": [
+          "La política de contenido de Google prohíbe ofrecer incentivos, como pagos, descuentos o productos gratis, a cambio de reseñas, y también desalentar las reseñas negativas o pedir reseñas positivas solo a algunos clientes. Un texto neutro, como «cuéntanos tu experiencia», invita a opinar sin condicionar la calificación.",
+          "Por eso no conviene escribir «danos 5 estrellas» en la pieza, ni ofrecer regalos o sorteos por reseña. Google sí permite animar a publicar una experiencia auténtica sin incentivos.",
+          "Para ver más casos, lee la guía sobre [qué sí y qué no pedir en reseñas de Google](/blog/que-si-y-que-no-pedir-resenas-google-politicas)."
         ]
       },
       {
         "heading": "¿Cómo abren la reseña con iPhone o Android?",
         "body": [
           "El cliente acerca su celular para leer el NFC o escanea el QR con la cámara; ambos llevan al enlace de reseñas configurado para tu negocio. No se necesita una app de Yume ni una suscripción. La lectura NFC depende del teléfono y sus ajustes, así que el QR ofrece otra vía.",
-          "No todos los teléfonos leen NFC de la misma manera. Si una persona no consigue abrir el enlace al acercar el celular, puede usar el código QR. Prueba las dos opciones al recibir la pieza y en el lugar donde piensas usarla.",
+          "Según proveedores de tarjetas NFC, algunos Android traen el NFC desactivado de fábrica y una funda metálica o gruesa puede impedir la lectura; en iPhone la zona de lectura está en la parte superior trasera. Son datos de vendedores, no de Yume, y no hay cifras de compatibilidad verificadas. Por eso conviene probar con varios teléfonos, con y sin funda.",
           "La guía sobre [cómo funciona la placa NFC con iPhone y Android](/blog/placa-nfc-funciona-iphone-android) explica las condiciones de lectura y qué revisar si un teléfono no responde. No hace falta prometer que todos los equipos funcionarán igual."
         ]
       },
@@ -104,6 +120,7 @@ export const blogPosts: BlogPost[] = [
         "body": [
           "Decide dónde irá la pieza, mide el espacio y elige entre adhesivo y base. Después selecciona blanco o negro y, si quieres, la variante con logo. Yume configura el NFC y el QR con el enlace de reseñas de tu negocio antes de enviar la pieza.",
           "La placa y el stand se hacen sobre pedido y están sujetos a disponibilidad. Por la alta demanda, la producción puede tardar de 2 a 3 semanas; conviene preguntar disponibilidad antes de pagar. Ten presente ese plazo al decidir cuándo pedir.",
+          "Al recibirla, prueba el enlace con un iPhone y un Android, con y sin funda, y también escaneando el QR.",
           "El formato facilita compartir el enlace, pero tu cliente decide si quiere escribir y qué opinión dejar. Para ampliar el contexto, lee [cómo conseguir más reseñas con NFC y QR](/blog/como-conseguir-mas-resenas-de-google-nfc-qr) y la [comparación entre placa NFC y QR impreso](/blog/placa-nfc-vs-codigo-qr-impreso-resenas)."
         ]
       }
@@ -118,7 +135,16 @@ export const blogPosts: BlogPost[] = [
       "placa-nfc-funciona-iphone-android",
       "placa-nfc-personalizada-con-logo"
     ],
-    "sources": [],
+    "sources": [
+      {
+        "label": "Google: pedir reseñas con un enlace o código QR desde el Perfil de Empresa",
+        "url": "https://support.google.com/business/answer/3474122?hl=es"
+      },
+      {
+        "label": "Google: política de contenido sobre reseñas e incentivos",
+        "url": "https://support.google.com/contributionpolicy/answer/7400114?hl=es"
+      }
+    ],
     "faq": [
       {
         "q": "¿Yume vende una tarjeta del tamaño de una tarjeta bancaria?",
@@ -127,6 +153,22 @@ export const blogPosts: BlogPost[] = [
       {
         "q": "¿La placa y el stand requieren suscripción?",
         "a": "No. Ambos se entregan configurados y funcionan sin app ni suscripción."
+      },
+      {
+        "q": "¿Puedo ofrecer un descuento a cambio de una reseña?",
+        "a": "No. La política de contenido de Google prohíbe ofrecer incentivos, como pagos, descuentos o productos gratis, a cambio de reseñas."
+      },
+      {
+        "q": "¿De dónde sale el enlace de reseñas?",
+        "a": "Google permite crear un enlace directo o un código QR para pedir reseñas desde el Perfil de Empresa. Yume configura ese enlace en tu pieza."
+      },
+      {
+        "q": "¿Cuánto cuestan la placa y el stand?",
+        "a": "Primeras 100 piezas: la placa cuesta $140 MXN sin logo y $155 MXN con logo; el stand cuesta $200 MXN sin logo y $215 MXN con logo. Arriba de 100 piezas es precio mayoreo."
+      },
+      {
+        "q": "¿En qué colores están disponibles?",
+        "a": "La placa y el stand están disponibles en blanco o negro."
       }
     ]
   },
