@@ -125,11 +125,11 @@ export const blogPostsEn: BlogPost[] = [
     "slug": "custom-nfc-plate-with-your-logo",
     "title": "Custom NFC plate with your logo for Google reviews",
     "metaTitle": "Custom NFC plate with your logo for reviews",
-    "description": "See prices for NFC plates and stands with a logo, how to send your image, and what to consider before ordering.",
+    "description": "Custom NFC plate with your logo for Google reviews: plate and stand prices, how to send your logo, iPhone compatibility and where to place it.",
     "category": "Guides",
     "publishedAt": "2026-11-18",
-    "modifiedAt": "2026-11-18",
-    "intro": "A custom NFC plate can carry your business logo and your Google review link. At Yume you can choose an adhesive plate or an upright stand. This guide brings together the catalog options, their prices, and how to share your logo for your order.",
+    "modifiedAt": "2026-11-19",
+    "intro": "A custom NFC plate can carry your business logo and your Google review link. At Yume you can choose an adhesive plate or an upright stand. This guide brings together the catalog options, their prices, iPhone and Android compatibility, where to place it, and how to ask for reviews within Google's rules.",
     "sections": [
       {
         "heading": "What does a custom NFC plate with a logo include?",
@@ -158,9 +158,36 @@ export const blogPostsEn: BlogPost[] = [
       {
         "heading": "How is the review link configured?",
         "body": [
-          "Yume programs the NFC and generates the QR with your business review link before shipping. After purchase, Yume asks you via WhatsApp for your review link or your business’s exact name on Google so it can configure your piece.",
-          "The setup applies to both the plate and the stand. When your piece arrives, you can tap a phone or scan the QR and check that it opens the expected link. If you choose the plate, check it in the place where you plan to put it.",
-          "Customers use NFC or QR to reach the link; they do not need to install a Yume app. The product does not require a subscription either. The logo option changes the customization you choose, not the need to share the correct business details."
+          "Yume programs the NFC and generates the QR with your business review link before shipping. After purchase, Yume asks you via WhatsApp for your review link or your business’s exact name on Google so it can configure your piece. The setup applies to both the plate and the stand.",
+          "When your piece arrives, you can tap a phone or scan the QR and check that it opens the expected link. If you choose the plate, check it in the place where you plan to put it.",
+          "Customers use NFC or QR to reach the link; they do not need to install a Yume app. The product does not require a subscription either. To compare costs, see [one-time price vs subscription](/en/blog/google-review-plates-one-time-price-vs-subscription)."
+        ]
+      },
+      {
+        "heading": "Does the NFC plate work with iPhone and Android?",
+        "body": [
+          "It depends on the model. According to Wakdev, background reading on iPhone works from the XS and XR, and iPhones from the 7 can read with an app by starting the scan manually. Android reads natively on practically every phone with NFC. That is why the plate has a backup QR.",
+          "If your customer's phone cannot read NFC, they can open the link with the piece's backup QR. For more detail, see how the [NFC plate works on iPhone and Android](/en/blog/does-nfc-plate-work-iphone-android)."
+        ]
+      },
+      {
+        "heading": "Where should you place the plate with your logo?",
+        "body": [
+          "Avoid placing it on metal. According to ShopNFC, standard NFC tags do not work on metal surfaces, and on-metal tags with an anti-metal layer exist for those cases. Before sticking the plate on a cash register, a metal counter or a steel holder, test it in that spot with your phone.",
+          "For location ideas by type of business, see [where to put your review plate](/en/blog/where-to-put-your-google-review-plate)."
+        ]
+      },
+      {
+        "heading": "Does the NFC chip need more memory for a review link?",
+        "body": [
+          "According to Wakdev, the user memory of NXP chips is 144 bytes on the NTAG213, 504 on the NTAG215 and 888 on the NTAG216. A short URL fits on the NTAG213. This guide does not state which chip each piece uses, so confirm that detail via WhatsApp before buying."
+        ]
+      },
+      {
+        "heading": "How do you ask for reviews with the plate without breaking Google's rules?",
+        "body": [
+          "Google prohibits offering incentives, such as payments, discounts or free products and services, in exchange for posting, changing or removing a review. It also does not allow discouraging negative reviews or asking only certain customers. The plate should invite everyone equally, without trying to influence the rating.",
+          "A short, neutral script for every customer fits this: invite anyone who wishes to share their opinion, with no prize and no filtering. For details, see the [Google review policies](/en/blog/google-review-policies-what-you-can-and-cannot-do). If you run events, see the [review plate for planners](/en/blog/google-review-plate-for-event-planners-and-venues)."
         ]
       },
       {
@@ -179,9 +206,28 @@ export const blogPostsEn: BlogPost[] = [
     "relatedBlogSlugs": [
       "nfc-review-card-or-plate-which-to-choose",
       "how-to-get-more-google-reviews-nfc-qr",
-      "nfc-plate-vs-printed-qr-code-for-reviews"
+      "nfc-plate-vs-printed-qr-code-for-reviews",
+      "does-nfc-plate-work-iphone-android",
+      "where-to-put-your-google-review-plate"
     ],
-    "sources": [],
+    "sources": [
+      {
+        "label": "Google: user-generated content policy (reviews)",
+        "url": "https://support.google.com/contributionpolicy/answer/7400114?hl=es"
+      },
+      {
+        "label": "Wakdev: NXP NTAG213 chip",
+        "url": "https://www.wakdev.com/en/knowledge-base/nfc-chips/nxp-ntag213.html"
+      },
+      {
+        "label": "Wakdev: NXP NTAG216 chip",
+        "url": "https://www.wakdev.com/en/knowledge-base/nfc-chips/nxp-ntag216.html"
+      },
+      {
+        "label": "ShopNFC: NFC tag specifications",
+        "url": "https://shopnfc.com/en/content/6-nfc-tags-specs"
+      }
+    ],
     "faq": [
       {
         "q": "Can I send the logo after buying?",
@@ -190,6 +236,14 @@ export const blogPostsEn: BlogPost[] = [
       {
         "q": "Does the logo version need a subscription?",
         "a": "No. The plate and stand work without an app or subscription and arrive configured with your link."
+      },
+      {
+        "q": "What colors is it available in?",
+        "a": "The plate and the stand are offered in white or black, with or without a logo."
+      },
+      {
+        "q": "Can I give something to customers who leave a review?",
+        "a": "No. Under Google's policy, offering payments, discounts or free products and services in exchange for a review is a prohibited incentive."
       }
     ]
   },

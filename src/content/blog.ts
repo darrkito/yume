@@ -176,11 +176,11 @@ export const blogPosts: BlogPost[] = [
     "slug": "placa-nfc-personalizada-con-logo",
     "title": "Placa NFC personalizada con logo para reseñas de Google",
     "metaTitle": "Placa NFC personalizada con tu logo para reseñas",
-    "description": "Conoce los precios de placa y stand NFC con logo, cómo enviar tu imagen y qué considerar antes de pedir.",
+    "description": "Placa NFC personalizada con logo para reseñas de Google: precios de placa y stand, cómo enviar tu logo, compatibilidad con iPhone y dónde colocarla.",
     "category": "Guías",
     "publishedAt": "2026-11-18",
-    "modifiedAt": "2026-11-18",
-    "intro": "Una placa NFC personalizada puede llevar el logo de tu negocio y el enlace de reseñas de Google. En Yume puedes elegir una placa adhesiva o un stand de pie. Esta guía reúne las opciones del catálogo, sus precios y la forma de compartir tu logo para preparar tu pedido.",
+    "modifiedAt": "2026-11-19",
+    "intro": "Una placa NFC personalizada puede llevar el logo de tu negocio y el enlace de reseñas de Google. En Yume puedes elegir una placa adhesiva o un stand de pie. Esta guía reúne las opciones del catálogo, sus precios, la compatibilidad con iPhone y Android, dónde colocarla y cómo pedir reseñas dentro de las reglas de Google.",
     "sections": [
       {
         "heading": "¿Qué incluye una placa NFC personalizada con logo?",
@@ -211,7 +211,34 @@ export const blogPosts: BlogPost[] = [
         "body": [
           "Yume programa el NFC y genera el QR con el enlace de reseñas de tu negocio antes del envío. Después de la compra, te pide por WhatsApp el enlace de tu reseña o el nombre exacto de tu negocio en Google para configurar la pieza.",
           "La configuración se aplica tanto a la placa como al stand. Al recibir la pieza puedes acercar un teléfono o escanear el QR y comprobar que abre el enlace esperado. Si eliges la placa, haz la comprobación en el lugar donde piensas colocarla.",
-          "Tus clientes usan el NFC o el QR para llegar al enlace; no necesitan instalar una app de Yume. El producto tampoco requiere suscripción. La opción con logo cambia la personalización elegida, no la necesidad de compartir los datos correctos del negocio."
+          "Tus clientes usan el NFC o el QR para llegar al enlace; no necesitan instalar una app de Yume. El producto tampoco requiere suscripción. Si quieres comparar costos, mira [pago único o suscripción](/blog/placas-resenas-google-pago-unico-vs-suscripcion)."
+        ]
+      },
+      {
+        "heading": "¿Funciona la placa NFC con iPhone y con Android?",
+        "body": [
+          "Depende del modelo. Según Wakdev, en iPhone la lectura en segundo plano funciona desde el XS y el XR, y los iPhone desde el 7 pueden leer con una app, iniciando el escaneo a mano. Android lee de forma nativa en prácticamente todos los teléfonos con NFC. Por eso la placa trae QR de respaldo.",
+          "Si el celular de tu cliente no lee NFC, puede abrir el enlace con el QR de respaldo de la pieza. Para ver más detalle, revisa cómo funciona la [placa NFC en iPhone y Android](/blog/placa-nfc-funciona-iphone-android)."
+        ]
+      },
+      {
+        "heading": "¿Dónde conviene colocar la placa con logo?",
+        "body": [
+          "Evita colocarla sobre metal. Según ShopNFC, las etiquetas NFC estándar no funcionan sobre superficies metálicas y para esos casos existen etiquetas on-metal con capa antimetal. Antes de pegar la placa en una caja registradora, un mostrador metálico o un soporte de acero, pruébala en ese lugar con tu celular.",
+          "Para ideas de ubicación según el tipo de negocio, consulta [dónde poner la placa de reseñas](/blog/donde-poner-placa-resenas-google)."
+        ]
+      },
+      {
+        "heading": "¿El chip NFC necesita más memoria para un enlace de reseñas?",
+        "body": [
+          "Según Wakdev, la memoria de usuario de los chips NXP es de 144 bytes en el NTAG213, 504 en el NTAG215 y 888 en el NTAG216. Una URL corta cabe en el NTAG213. Esta guía no indica qué chip lleva cada pieza, así que confirma ese dato por WhatsApp antes de comprar."
+        ]
+      },
+      {
+        "heading": "¿Cómo pedir reseñas con la placa sin romper las reglas de Google?",
+        "body": [
+          "Google prohíbe ofrecer incentivos, como pagos, descuentos o productos y servicios gratis, a cambio de publicar, cambiar o retirar una reseña. Tampoco permite desalentar reseñas negativas ni pedirlas solo a ciertos clientes. La placa debe invitar a todos por igual, sin intentar influir en la calificación.",
+          "Un guion corto y neutral para todos los clientes cumple con esto: invita a quien quiera a dejar su opinión, sin premio y sin filtrar. Para el detalle, consulta las [políticas de reseñas de Google](/blog/que-si-y-que-no-pedir-resenas-google-politicas). Si organizas eventos, mira la [placa de reseñas para planners](/blog/placa-resenas-google-para-planners-y-eventos)."
         ]
       },
       {
@@ -230,9 +257,28 @@ export const blogPosts: BlogPost[] = [
     "relatedBlogSlugs": [
       "tarjeta-nfc-resenas-google-que-elegir",
       "como-conseguir-mas-resenas-de-google-nfc-qr",
-      "placa-nfc-vs-codigo-qr-impreso-resenas"
+      "placa-nfc-vs-codigo-qr-impreso-resenas",
+      "placa-nfc-funciona-iphone-android",
+      "donde-poner-placa-resenas-google"
     ],
-    "sources": [],
+    "sources": [
+      {
+        "label": "Google: política de contenido generado por usuarios (reseñas)",
+        "url": "https://support.google.com/contributionpolicy/answer/7400114?hl=es"
+      },
+      {
+        "label": "Wakdev: chip NXP NTAG213",
+        "url": "https://www.wakdev.com/en/knowledge-base/nfc-chips/nxp-ntag213.html"
+      },
+      {
+        "label": "Wakdev: chip NXP NTAG216",
+        "url": "https://www.wakdev.com/en/knowledge-base/nfc-chips/nxp-ntag216.html"
+      },
+      {
+        "label": "ShopNFC: especificaciones de etiquetas NFC",
+        "url": "https://shopnfc.com/en/content/6-nfc-tags-specs"
+      }
+    ],
     "faq": [
       {
         "q": "¿Puedo enviar el logo después de comprar?",
@@ -241,6 +287,14 @@ export const blogPosts: BlogPost[] = [
       {
         "q": "¿La versión con logo necesita una suscripción?",
         "a": "No. La placa y el stand funcionan sin app ni suscripción y se entregan configurados con tu enlace."
+      },
+      {
+        "q": "¿En qué colores está disponible?",
+        "a": "La placa y el stand se ofrecen en blanco o negro, con o sin logo."
+      },
+      {
+        "q": "¿Puedo regalar algo a quien deje una reseña?",
+        "a": "No. Según la política de Google, ofrecer pagos, descuentos o productos y servicios gratis a cambio de una reseña es un incentivo prohibido."
       }
     ]
   },
