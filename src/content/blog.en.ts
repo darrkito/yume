@@ -159,7 +159,7 @@ export const blogPostsEn: BlogPost[] = [
     "description": "How to use a Google review plate in your medical practice: where to place it, how to get the QR, what not to offer patients and how to reply.",
     "category": "Guides",
     "publishedAt": "2026-11-03",
-    "modifiedAt": "2026-11-05",
+    "modifiedAt": "2026-11-19",
     "intro": "A Google review plate for medical practices makes the listing easier for each patient to find, without requiring anyone to write. This guide explains how to get the link and QR, where to place the plate, how to invite reviews without incentives, what Google may do if it detects fake engagement and how to reply without exposing health information.",
     "sections": [
       {
@@ -173,14 +173,16 @@ export const blogPostsEn: BlogPost[] = [
         "heading": "How do you get the Google review link and QR?",
         "body": [
           "Sign in to your Business Profile on a computer, open “Read reviews” and choose “Get more reviews”. There you can copy the link or download the QR with “Save image as”. According to Google, the QR can only be generated from a desktop browser, not from a phone.",
-          "Some third-party sites, not official ones, say the short link usually ends in /review and that a QR made with the profile link opens the full listing instead of the review box. Google does not document that format and it could change, so test the link before producing the plate."
+          "Some third-party sites, not official ones, say the short link usually ends in /review and that a QR made with the profile link opens the full listing instead of the review box. Google does not document that format and it could change, so test the link before producing the plate.",
+          "If your listing is not set up yet, read how to [set up your Google profile](/en/blog/set-up-google-business-profile-and-ask-for-reviews) before asking for reviews."
         ]
       },
       {
         "heading": "Where can a practice place the plate?",
         "body": [
           "Reception and the waiting room are practical places if the piece is clearly visible without blocking access. Choose a surface patients can reach and test the link with a phone. The plate includes adhesive; the stand sits upright on a counter.",
-          "Google suggests sharing the link or QR on receipts, thank-you emails, chat or a QR printed at your location, and also by email, WhatsApp or Facebook. In a practice, that can mean the plate at reception and, if you prefer, the same link sent by WhatsApp after the appointment."
+          "Google suggests sharing the link or QR on receipts, thank-you emails, chat or a QR printed at your location, and also by email, WhatsApp or Facebook. In a practice, that can mean the plate at reception and, if you prefer, the same link sent by WhatsApp after the appointment.",
+          "For more placement ideas, see [where to put the plate](/en/blog/where-to-put-your-google-review-plate)."
         ]
       },
       {
@@ -194,29 +196,49 @@ export const blogPostsEn: BlogPost[] = [
         "heading": "How can you ask without pressure or incentives?",
         "body": [
           "Ask all patients for an honest opinion, without suggesting a rating or offering discounts or gifts. For example: “If you wish, you can share your experience on Google.” According to Google, incentives in exchange for reviews are prohibited and count as fake engagement.",
-          "The same Google policy covers posting, changing or deleting negative reviews. If Google detects fake engagement, it may restrict the profile: block new reviews or ratings for a time, temporarily unpublish existing reviews or show a public notice. It emails you first and the restriction can be appealed."
+          "The same Google policy covers posting, changing or deleting negative reviews. If Google detects fake engagement, it may restrict the profile: block new reviews or ratings for a time, temporarily unpublish existing reviews or show a public notice. It emails you first and the restriction can be appealed.",
+          "For a broader overview, read the [Google review policies](/en/blog/google-review-policies-what-you-can-and-cannot-do)."
         ]
       },
       {
         "heading": "How should you respond while protecting privacy?",
         "body": [
           "Thank the person in general terms and never disclose patient health information or details of their care in a public reply. If follow-up is needed, offer an appropriate private channel without publicly confirming personal information or the circumstances of a visit.",
-          "The plate only invites feedback. Do not use it to promise results or to highlight patient cases: a short, courteous reply without clinical details protects the privacy of the person who wrote and your own."
+          "The plate only invites feedback. Do not use it to promise results or to highlight patient cases: a short, courteous reply without clinical details protects the privacy of the person who wrote and your own.",
+          "If you are a dentist, also read [Google reviews for dentists](/en/blog/google-reviews-for-dentists-how-to-ask)."
         ]
       },
       {
         "heading": "Which format can a practice use?",
         "body": [
           "Yume offers two formats: the plate, with adhesive, and the stand, which sits upright on a counter. Both have NFC and QR, come in white or black and can be ordered one piece at a time, with no app or subscription. The current price is on each product page.",
-          "If your reception has little wall space, the stand on the counter means nothing needs to be stuck on. If you prefer a fixed piece next to the door or the front desk window, the plate with adhesive is the one that stays in place."
+          "If your reception has little wall space, the stand on the counter means nothing needs to be stuck on. If you prefer a fixed piece next to the door or the front desk window, the plate with adhesive is the one that stays in place.",
+          "See the [Google review NFC plate](/en/products/google-review-nfc-plate) or the [Google review NFC stand](/en/products/google-review-nfc-stand)."
         ]
       },
       {
         "heading": "What should you check before ordering the plate?",
         "body": [
           "Before production, confirm that the listing belongs to your practice, that the link opens the review box and not just the profile, and that you tested it on an iPhone and an Android. Then send the link to Yume so the NFC and QR are configured before shipping.",
-          "Run the test on someone else's phone, without your account signed in, to see what a patient will see. If something does not open as expected, fix the link before ordering the piece."
+          "Run the test on someone else's phone, without your account signed in, to see what a patient will see. If something does not open as expected, fix the link before ordering the piece.",
+          "If you have doubts about phones, read about [iPhone and Android compatibility](/en/blog/does-nfc-plate-work-iphone-android)."
         ]
+      },
+      {
+        "heading": "What does the full process look like, from listing to reception?",
+        "body": [
+          "The process has five steps: you get the link and QR from your Business Profile on a computer, test that it opens the review box, send the link to Yume to configure the piece and place it at reception. Then invite all patients equally, without incentives."
+        ],
+        "table": {
+          "headers": ["Step", "What to do"],
+          "rows": [
+            ["1", "Copy the link and download the QR from your Business Profile on a computer"],
+            ["2", "Test that the link opens the review box, on iPhone and Android"],
+            ["3", "Send the link to Yume so the NFC and QR are configured"],
+            ["4", "Place the plate or stand at reception or in the waiting room"],
+            ["5", "Invite all patients, without incentives or pressure"]
+          ]
+        }
       }
     ],
     "faq": [
@@ -239,11 +261,26 @@ export const blogPostsEn: BlogPost[] = [
       {
         "q": "What can happen if Google detects fake engagement?",
         "a": "Google may restrict the profile: block new reviews or ratings for a time, temporarily unpublish existing reviews or show a notice to the public. It emails you first and you can appeal."
+      },
+      {
+        "q": "Should I ask only satisfied patients for a review?",
+        "a": "No. Ask all patients equally so the reviews reflect the real care your practice provides."
+      },
+      {
+        "q": "Does the plate require an app or a subscription?",
+        "a": "No. Yume's plate and stand are ordered one piece at a time, with no app or subscription."
       }
     ],
     "relatedProductSlugs": [
       "placa-resena-google-nfc",
       "stand-resena-google-nfc"
+    ],
+    "relatedBlogSlugs": [
+      "google-reviews-for-dentists-how-to-ask",
+      "google-review-policies-what-you-can-and-cannot-do",
+      "where-to-put-your-google-review-plate",
+      "set-up-google-business-profile-and-ask-for-reviews",
+      "does-nfc-plate-work-iphone-android"
     ],
     "quoteMessage": "Hi, I am interested in the NFC plate and stand for Google reviews.",
     "sources": [

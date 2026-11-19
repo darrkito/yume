@@ -210,7 +210,7 @@ export const blogPosts: BlogPost[] = [
     "description": "Cómo usar una placa de reseñas de Google en tu consultorio: dónde ponerla, cómo sacar el QR, qué no ofrecer a pacientes y cómo responder.",
     "category": "Guías",
     "publishedAt": "2026-11-03",
-    "modifiedAt": "2026-11-05",
+    "modifiedAt": "2026-11-19",
     "intro": "Una placa de reseñas de Google para consultorios facilita que cada paciente encuentre el enlace de la ficha, sin obligarlo a escribir. Esta guía explica cómo obtener el enlace y el QR, dónde colocar la placa, cómo invitar sin ofrecer incentivos, qué puede pasar si Google detecta interacción falsa y cómo responder sin exponer datos de salud.",
     "sections": [
       {
@@ -224,14 +224,16 @@ export const blogPosts: BlogPost[] = [
         "heading": "¿Cómo obtener el enlace y el QR de reseñas de Google?",
         "body": [
           "Entra a tu Perfil de Empresa desde una computadora, abre «Leer reseñas» y elige «Consigue más reseñas». Ahí puedes copiar el enlace o descargar el QR con «Guardar imagen como». Según Google, el QR solo se genera desde un navegador de computadora, no desde el móvil.",
-          "Algunos sitios de terceros, no oficiales, señalan que el enlace corto suele terminar en /review y que un QR hecho con el enlace del perfil abre la ficha completa en lugar del cuadro de reseña. Ese formato no está documentado por Google y podría cambiar, por eso conviene probar el enlace antes de producir la placa."
+          "Algunos sitios de terceros, no oficiales, señalan que el enlace corto suele terminar en /review y que un QR hecho con el enlace del perfil abre la ficha completa en lugar del cuadro de reseña. Ese formato no está documentado por Google y podría cambiar, por eso conviene probar el enlace antes de producir la placa.",
+          "Si aún no configuras tu ficha, revisa cómo [configurar tu perfil de Google](/blog/como-configurar-perfil-de-google-y-pedir-resenas) antes de pedir reseñas."
         ]
       },
       {
         "heading": "¿Dónde colocar la placa en un consultorio?",
         "body": [
           "Recepción y sala de espera son lugares prácticos si la pieza queda visible sin obstaculizar el paso. Elige una superficie accesible y comprueba el enlace con un teléfono. La placa incluye adhesivo; el stand puede colocarse de pie sobre un mostrador.",
-          "Google sugiere compartir el enlace o el QR en recibos, correos de agradecimiento, chat o en un QR impreso en el local, y también por correo, WhatsApp o Facebook. En un consultorio, eso puede significar la placa en recepción y, si lo prefieres, el mismo enlace enviado por WhatsApp después de la consulta."
+          "Google sugiere compartir el enlace o el QR en recibos, correos de agradecimiento, chat o en un QR impreso en el local, y también por correo, WhatsApp o Facebook. En un consultorio, eso puede significar la placa en recepción y, si lo prefieres, el mismo enlace enviado por WhatsApp después de la consulta.",
+          "Para más ideas de ubicación, consulta [dónde poner la placa](/blog/donde-poner-placa-resenas-google)."
         ]
       },
       {
@@ -245,29 +247,49 @@ export const blogPosts: BlogPost[] = [
         "heading": "¿Cómo invitar sin presionar ni ofrecer incentivos?",
         "body": [
           "Pide a todos los pacientes una opinión honesta, sin sugerir una calificación ni ofrecer descuentos o regalos. Por ejemplo: «Si lo desea, puede compartir su experiencia en Google». Según Google, los incentivos a cambio de reseñas están prohibidos y cuentan como interacción falsa.",
-          "La misma política de Google incluye publicar, cambiar o eliminar reseñas negativas. Si detecta interacción falsa, Google puede restringir el perfil: bloquear nuevas reseñas o calificaciones por un tiempo, despublicar reseñas existentes de forma temporal o mostrar un aviso público. Antes avisa por correo y la restricción se puede apelar."
+          "La misma política de Google incluye publicar, cambiar o eliminar reseñas negativas. Si detecta interacción falsa, Google puede restringir el perfil: bloquear nuevas reseñas o calificaciones por un tiempo, despublicar reseñas existentes de forma temporal o mostrar un aviso público. Antes avisa por correo y la restricción se puede apelar.",
+          "Para un repaso más amplio, lee las [políticas de reseñas de Google](/blog/que-si-y-que-no-pedir-resenas-google-politicas)."
         ]
       },
       {
         "heading": "¿Cómo responder sin revelar información de salud?",
         "body": [
           "Agradece de manera general y nunca incluyas información de salud del paciente ni detalles de su atención en una respuesta pública. Si hace falta dar seguimiento, ofrece un canal privado apropiado sin confirmar públicamente datos personales o circunstancias de la visita.",
-          "La placa solo invita a opinar. No la uses para prometer resultados ni para destacar casos de pacientes: una respuesta corta, cordial y sin detalles clínicos protege la privacidad de quien escribió y la tuya."
+          "La placa solo invita a opinar. No la uses para prometer resultados ni para destacar casos de pacientes: una respuesta corta, cordial y sin detalles clínicos protege la privacidad de quien escribió y la tuya.",
+          "Si eres dentista, revisa también [reseñas de Google para dentistas](/blog/resenas-google-dentistas-consultorios)."
         ]
       },
       {
         "heading": "¿Qué formato puede usar un consultorio?",
         "body": [
           "Yume ofrece dos formatos: la placa, con adhesivo, y el stand, que se coloca de pie sobre un mostrador. Ambos tienen NFC y QR, vienen en blanco o negro y se pueden pedir por pieza, sin app ni suscripción. El precio vigente aparece en la página de cada producto.",
-          "Si tu recepción tiene poco espacio de pared, el stand sobre el mostrador evita pegar nada. Si prefieres una pieza fija junto a la puerta o la ventanilla, la placa con adhesivo es la opción que se queda en su lugar."
+          "Si tu recepción tiene poco espacio de pared, el stand sobre el mostrador evita pegar nada. Si prefieres una pieza fija junto a la puerta o la ventanilla, la placa con adhesivo es la opción que se queda en su lugar.",
+          "Conoce la [placa NFC para reseñas](/productos/placa-resena-google-nfc) o el [stand NFC para reseñas](/productos/stand-resena-google-nfc)."
         ]
       },
       {
         "heading": "¿Qué revisar antes de pedir la placa?",
         "body": [
           "Antes de producir, confirma que la ficha pertenece a tu consultorio, que el enlace abre el cuadro de reseña y no solo el perfil, y que lo probaste en iPhone y Android. Después envía el enlace a Yume para configurar el NFC y el QR antes del envío.",
-          "Haz la prueba con el teléfono de otra persona, sin tu sesión iniciada, para ver lo mismo que verá un paciente. Si algo no abre como esperabas, corrige el enlace antes de pedir la pieza."
+          "Haz la prueba con el teléfono de otra persona, sin tu sesión iniciada, para ver lo mismo que verá un paciente. Si algo no abre como esperabas, corrige el enlace antes de pedir la pieza.",
+          "Si tienes dudas sobre celulares, revisa la [compatibilidad con iPhone y Android](/blog/placa-nfc-funciona-iphone-android)."
         ]
+      },
+      {
+        "heading": "¿Cómo es el proceso completo, de la ficha a la recepción?",
+        "body": [
+          "El proceso tiene cinco pasos: obtienes el enlace y el QR desde tu Perfil de Empresa en una computadora, pruebas que abra el cuadro de reseña, envías el enlace a Yume para configurar la pieza y la colocas en recepción. Después invitas a todos los pacientes por igual, sin incentivos."
+        ],
+        "table": {
+          "headers": ["Paso", "Qué hacer"],
+          "rows": [
+            ["1", "Copia el enlace y descarga el QR desde tu Perfil de Empresa en una computadora"],
+            ["2", "Prueba que el enlace abra el cuadro de reseña, en iPhone y Android"],
+            ["3", "Envía el enlace a Yume para configurar el NFC y el QR"],
+            ["4", "Coloca la placa o el stand en recepción o en la sala de espera"],
+            ["5", "Invita a todos los pacientes, sin incentivos ni presión"]
+          ]
+        }
       }
     ],
     "faq": [
@@ -290,11 +312,26 @@ export const blogPosts: BlogPost[] = [
       {
         "q": "¿Qué puede pasar si Google detecta interacción falsa?",
         "a": "Google puede restringir el perfil: bloquear nuevas reseñas o calificaciones por un tiempo, despublicar reseñas existentes de forma temporal o mostrar un aviso al público. Avisa por correo antes y se puede apelar."
+      },
+      {
+        "q": "¿Debo pedir la reseña solo a los pacientes satisfechos?",
+        "a": "No. Pide la opinión a todos los pacientes por igual para que las reseñas reflejen la atención real del consultorio."
+      },
+      {
+        "q": "¿La placa requiere app o suscripción?",
+        "a": "No. La placa y el stand de Yume se piden por pieza, sin app ni suscripción."
       }
     ],
     "relatedProductSlugs": [
       "placa-resena-google-nfc",
       "stand-resena-google-nfc"
+    ],
+    "relatedBlogSlugs": [
+      "resenas-google-dentistas-consultorios",
+      "que-si-y-que-no-pedir-resenas-google-politicas",
+      "donde-poner-placa-resenas-google",
+      "como-configurar-perfil-de-google-y-pedir-resenas",
+      "placa-nfc-funciona-iphone-android"
     ],
     "quoteMessage": "Hola, me interesan la placa y el stand NFC para reseñas de Google.",
     "sources": [
