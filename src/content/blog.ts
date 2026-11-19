@@ -4054,7 +4054,7 @@ export const blogPosts: BlogPost[] = [
       "Cuánto tarda un pedido de stickers personalizados en Yume: prueba digital, producción y envío a todo México o recolección en Guadalajara.",
     category: "Guías",
     publishedAt: "2026-10-06",
-    modifiedAt: "2026-10-29",
+    modifiedAt: "2026-11-19",
     intro:
       "Si necesitas tus stickers para una fecha, ya sea una boda, un cumpleaños, un baby shower, un evento de tu empresa o un lanzamiento, lo primero es saber cuántos días tarda cada etapa. Estos son los tiempos reales de un pedido en Yume, desde que pagas hasta que lo tienes en tus manos, y cómo contar hacia atrás desde tu fecha para pedir a tiempo.",
     sections: [
@@ -4088,8 +4088,15 @@ export const blogPosts: BlogPost[] = [
         heading: "Qué hace que tarde más o menos",
         body: [
           "Lo que más mueve el plazo es qué tan rápido apruebas la prueba digital, porque el reloj de producción empieza ahí y no cuando pagas. Los días son hábiles: los fines de semana no cuentan, y los festivos tampoco están contados en la estimación, así que es un cálculo aproximado.",
-          "Si pides ajustes en la prueba, tu aprobación puede llegar más tarde, y con ella el inicio de la producción. Tener tu logo o diseño listo desde el principio (en PNG, PDF, AI o SVG) evita idas y vueltas.",
-          "El pago también importa: la prueba llega normalmente en un máximo de 24 horas después de pagar. Elegir envío a domicilio o recolección en Guadalajara cambia el total, como ves en la tabla.",
+          "Si pides ajustes en la prueba, tu aprobación puede llegar más tarde, y con ella el inicio de la producción.",
+          "Elegir envío a domicilio o recolección en Guadalajara también cambia el total, como ves en la tabla.",
+        ],
+      },
+      {
+        heading: "Qué eliges antes de pagar: corte, acabado y tamaño",
+        body: [
+          "Antes de pagar eliges la cantidad, el tamaño, el tipo de corte y el acabado de tus stickers. El corte puede ser troquelado o semitroquelado, y el acabado mate, brillante u holográfico. Decidirlo desde el primer mensaje te ayuda a planear tus fechas con claridad.",
+          "Los tamaños son chico (hasta 4 cm), mediano (de 5 a 6 cm) y grande (de 7 a 8 cm). Para elegir el corte, revisa [troquelado vs semitroquelado](/blog/troquelado-vs-semitroquelado-stickers); para ver cuánto cuesta cada tamaño, consulta [cuánto cuesta imprimir stickers](/blog/cuanto-cuesta-imprimir-stickers).",
         ],
       },
       {
@@ -4097,7 +4104,7 @@ export const blogPosts: BlogPost[] = [
         body: [
           `Parte de la fecha de tu evento y cuenta hacia atrás: primero el envío o la recolección, luego los ${PRODUCTION_DAYS.min} a ${PRODUCTION_DAYS.max} días hábiles de producción y, antes de todo, los días que tardes en aprobar la prueba digital. Con esa suma sabes qué día debes pagar, y conviene dejar un margen por si pides un ajuste.`,
           `En un envío a domicilio, la estimación va de ${PRODUCTION_DAYS.min + NATIONAL_TRANSIT_DAYS.min} a ${PRODUCTION_DAYS.max + NATIONAL_TRANSIT_DAYS.max} días hábiles desde la aprobación; en recolección, de ${PRODUCTION_DAYS.min + PICKUP_EXTRA_DAYS} a ${PRODUCTION_DAYS.max + PICKUP_EXTRA_DAYS}. A esa cifra súmale los días que tardes tú en revisar y aprobar la prueba.`,
-          "Esta cuenta sirve para una boda, un cumpleaños, un baby shower o un evento de empresa. Si organizas varios eventos, haz la misma cuenta para cada uno, con su propia fecha. Para fechas con mucha demanda, como Navidad o graduaciones, conviene pedir con al menos dos semanas de anticipación.",
+          "Esta cuenta sirve para una boda, un cumpleaños, un baby shower o un evento de empresa. Si organizas varios eventos, haz la misma cuenta para cada uno, con su propia fecha.",
           "Cuando tengas la fecha clara, elige entre [stickers de vinil personalizados](/productos/stickers-vinil-impermeable), para cualquier diseño, personaje o foto, y [stickers con tu logo](/productos/stickers-logo-personalizado), para tu marca o tu evento. Todos nuestros stickers llevan laminado BOPP de alta calidad, y el acabado lo eliges tú.",
         ],
       },
@@ -4106,7 +4113,7 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Si tu pedido es para una boda, un cumpleaños, un baby shower o un evento de tu empresa, avísanos la fecha desde el primer mensaje. Con ese dato revisamos contigo si el calendario alcanza, antes de que pagues. Es la forma más segura de evitar sorpresas cuando el evento no se puede mover.",
           "Si tu fecha es muy justa, escríbenos por WhatsApp antes de pagar y revisamos juntos si alcanza. Cuéntanos también si prefieres envío a domicilio o recolección en Guadalajara, porque cambia la cuenta.",
-          "Si todavía estás comparando opciones, revisa [dónde imprimir stickers en México](/blog/donde-imprimir-stickers-personalizados-mexico) y [Yume frente a otras imprentas](/blog/yume-vs-imprentas-online-stickers).",
+          "Para ideas de uso, revisa [stickers para bodas, eventos y fiestas](/blog/stickers-para-bodas-eventos-y-fiestas) e [impresión de stickers para eventos](/blog/impresion-de-stickers-para-eventos). Si todavía estás comparando opciones, mira [dónde imprimir stickers en México](/blog/donde-imprimir-stickers-personalizados-mexico) y [Yume frente a otras imprentas](/blog/yume-vs-imprentas-online-stickers).",
         ],
       },
       {
@@ -4118,7 +4125,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["stickers-logo-personalizado", "stickers-vinil-impermeable"],
-    relatedBlogSlugs: ["donde-imprimir-stickers-personalizados-mexico", "yume-vs-imprentas-online-stickers"],
+    relatedBlogSlugs: ["donde-imprimir-stickers-personalizados-mexico", "yume-vs-imprentas-online-stickers", "cuanto-cuesta-imprimir-stickers", "troquelado-vs-semitroquelado-stickers", "impresion-de-stickers-para-eventos"],
     faq: [
       {
         q: "¿Cuánto tarda un pedido de stickers personalizados?",
@@ -4143,6 +4150,14 @@ export const blogPosts: BlogPost[] = [
       {
         q: "¿Cuánto tarda si recojo mi pedido en Guadalajara?",
         a: `Se suma ${PICKUP_EXTRA_DAYS} día hábil a la producción si recoges en una sucursal Casa Blanca de la zona metropolitana de Guadalajara. La recolección cuesta $20 MXN y es gratis en compras de $750 MXN o más.`,
+      },
+      {
+        q: "¿Qué tipos de corte y acabado puedo elegir?",
+        a: "El corte puede ser troquelado o semitroquelado, y el acabado mate, brillante u holográfico. Todos los stickers llevan laminado BOPP de alta calidad.",
+      },
+      {
+        q: "¿Cuánto cuesta el envío a domicilio?",
+        a: "El envío a domicilio a todo México cuesta $199 MXN y es gratis en compras de $750 MXN o más.",
       },
       {
         q: "¿Qué hago si mi evento tiene una fecha muy justa?",
