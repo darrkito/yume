@@ -362,7 +362,7 @@ export const blogPostsEn: BlogPost[] = [
     "description": "How to get Google’s official review QR, what your Google review plate can say and where to place it in your salon or barbershop.",
     "category": "Guides",
     "publishedAt": "2026-11-03",
-    "modifiedAt": "2026-11-05",
+    "modifiedAt": "2026-11-19",
     "intro": "A Google review plate for salons and barbershops makes a single business’s listing easier to reach. Place it near reception or the register to offer each customer a simple way to share their experience if they choose. Before ordering a piece, it helps to know three things: how to get the official link, what the plate can say under Google’s rules, and where to put it so it gets used without pressuring anyone. This guide covers them step by step.",
     "sections": [
       {
@@ -370,7 +370,8 @@ export const blogPostsEn: BlogPost[] = [
         "body": [
           "According to Google, the link and QR code for requesting reviews can only be generated from a desktop browser, not from a phone. Open your business profile, choose Read reviews, select Get more reviews and click the share icon. There you copy the link or save the QR code.",
           "To save the QR code, right-click the image and choose save image. Before using the link, open it on your own phone to confirm it leads to your business’s listing.",
-          "With Yume, the NFC and QR on the [NFC review plate](/productos/placa-resena-google-nfc) are set up with your business’s review link before shipping."
+          "If your profile is not ready yet, the guide to [setting up your Google profile](/en/blog/set-up-google-business-profile-and-ask-for-reviews) walks you through it.",
+          "With Yume, the NFC and QR on the [NFC review plate](/en/products/google-review-nfc-plate) are set up with your business’s review link before shipping."
         ]
       },
       {
@@ -379,7 +380,8 @@ export const blogPostsEn: BlogPost[] = [
           "The plate should invite every customer equally to share an honest opinion, without incentives. Google allows asking for genuine reviews, but prohibits offering free or discounted goods or services in exchange for them, discouraging negative reviews, or selectively asking for positive ones. So the wording should be neutral and open to any rating.",
           "Avoid text like “Scan and get 10% off”, which offers an incentive, “5 stars only”, which tries to influence the rating, or “Mention your barber”, which dictates what the review says.",
           "The content policy also prohibits a business from asking its staff to request a set number of reviews, or reviews with specific content, such as an employee’s name. In salons and barbershops it is common to want clients to mention their stylist or barber, so the plate should include no names and no quotas.",
-          "Google treats offering goods or services in exchange for reviews as fake engagement, and the rule also covers posting, editing or removing reviews."
+          "Google treats offering goods or services in exchange for reviews as fake engagement, and the rule also covers posting, editing or removing reviews.",
+          "For more cases, see what you can and cannot do under the [Google review policies](/en/blog/google-review-policies-what-you-can-and-cannot-do)."
         ]
       },
       {
@@ -393,7 +395,8 @@ export const blogPostsEn: BlogPost[] = [
         "heading": "Where should you place the plate in a salon or barbershop?",
         "body": [
           "Google suggests placing the QR code or link on receipts, thank-you emails, at the end of a chat and as a printed QR in the store. For a salon or barbershop, that supports a physical plate at the register and sending the same link by WhatsApp after the appointment.",
-          "Inside the shop, reception, the register or a waiting table can keep the piece visible without interrupting service. Check that customers can comfortably tap their phone or scan the QR code."
+          "Inside the shop, reception, the register or a waiting table can keep the piece visible without interrupting service. Check that customers can comfortably tap their phone or scan the QR code.",
+          "For more placement ideas, see [where to put your plate](/en/blog/where-to-put-your-google-review-plate)."
         ]
       },
       {
@@ -414,14 +417,17 @@ export const blogPostsEn: BlogPost[] = [
       {
         "heading": "Which Google review plate format fits your space?",
         "body": [
-          "The plate measures 12 × 12 cm and includes adhesive; the stand sits upright. The plate costs MXN $140 and the stand MXN $200, with a one-time payment. Both carry NFC and QR, come in white or black, and you can order a single piece.",
-          "If you prefer a freestanding piece, see the [NFC review stand](/productos/stand-resena-google-nfc)."
+          "Yume’s plate costs MXN $140, or $155 with your logo, and includes adhesive. The stand costs MXN $200, or $215 with your logo, and sits upright without sticking. Both carry NFC and QR, come in white or black, are a one-time payment, and you can order a single piece.",
+          "If you prefer a freestanding piece, see the [NFC review stand](/en/products/google-review-nfc-stand).",
+          "To compare with monthly-subscription plates, read [one-time price vs subscription](/en/blog/google-review-plates-one-time-price-vs-subscription)."
         ]
       },
       {
         "heading": "How do the NFC and QR on the plate work?",
         "body": [
-          "Yume configures the NFC and QR with the business’s review link before shipping. Customers can tap their phone or scan the code to open that link on their own device. The piece needs no app or subscription and does not include a dashboard for managing reviews."
+          "Yume configures the NFC and QR with the business’s review link before shipping. Customers can tap their phone or scan the code to open that link on their own device. The piece needs no app or subscription and does not include a dashboard for managing reviews.",
+          "The backup QR is already printed on the piece.",
+          "If you wonder about phone compatibility, see [NFC on iPhone and Android](/en/blog/does-nfc-plate-work-iphone-android)."
         ]
       },
       {
@@ -453,6 +459,10 @@ export const blogPostsEn: BlogPost[] = [
         "a": "Yes. You can order one plate or stand; both have NFC and QR configured with your review link before shipping."
       },
       {
+        "q": "Do I have to pay a monthly fee?",
+        "a": "No. It is a one-time payment, with no subscription and no app."
+      },
+      {
         "q": "Does the piece guarantee more reviews?",
         "a": "No. It makes the link easier to reach; each person decides whether to leave feedback and what to write."
       }
@@ -465,7 +475,9 @@ export const blogPostsEn: BlogPost[] = [
       "google-review-plates-one-time-price-vs-subscription",
       "how-to-get-more-google-reviews-nfc-qr",
       "nfc-plate-vs-printed-qr-code-for-reviews",
-      "how-to-use-your-yume-google-review-plate"
+      "how-to-use-your-yume-google-review-plate",
+      "where-to-put-your-google-review-plate",
+      "google-review-policies-what-you-can-and-cannot-do"
     ],
     "quoteMessage": "Hi, I am interested in the NFC plate and stand for Google reviews.",
     "sources": [

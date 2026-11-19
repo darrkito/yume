@@ -421,7 +421,7 @@ export const blogPosts: BlogPost[] = [
     "description": "Cómo obtener el QR oficial de Google, qué puede decir tu placa de reseñas de Google y dónde colocarla en tu salón, estética o barbería.",
     "category": "Guías",
     "publishedAt": "2026-11-03",
-    "modifiedAt": "2026-11-05",
+    "modifiedAt": "2026-11-19",
     "intro": "Una placa de reseñas de Google para salones, estéticas y barberías facilita el acceso a la ficha de un negocio. Puede colocarse cerca de la recepción o caja para ofrecer a cada cliente una forma sencilla de compartir su experiencia. Antes de encargar una pieza conviene saber tres cosas: cómo se obtiene el enlace oficial, qué puede decir la placa según las reglas de Google y dónde ponerla para que se use sin presionar a nadie. Esta guía las resume paso a paso.",
     "sections": [
       {
@@ -429,6 +429,7 @@ export const blogPosts: BlogPost[] = [
         "body": [
           "Según Google, el enlace y el código QR para pedir reseñas se generan solo desde un navegador de computadora, no desde el móvil. Entras al perfil del negocio, abres Leer reseñas, eliges Obtener más reseñas y tocas el icono de compartir. Ahí copias el enlace o guardas el QR.",
           "Para guardar el QR, haz clic derecho sobre la imagen y elige guardar imagen. Antes de usar el enlace, ábrelo desde tu propio teléfono para confirmar que lleva a la ficha correcta de tu negocio.",
+          "Si todavía no tienes tu perfil listo, la guía para [configurar tu perfil de Google](/blog/como-configurar-perfil-de-google-y-pedir-resenas) te lleva paso a paso.",
           "Con Yume, el NFC y el QR de la [placa NFC para reseñas](/productos/placa-resena-google-nfc) se configuran con el enlace de reseñas de tu negocio antes del envío."
         ]
       },
@@ -438,7 +439,8 @@ export const blogPosts: BlogPost[] = [
           "La placa debe invitar a todos los clientes por igual a compartir una opinión honesta, sin incentivos. Google permite pedir reseñas genuinas, pero prohíbe ofrecer bienes o servicios gratis o con descuento a cambio de ellas, desalentar reseñas negativas o solicitar selectivamente reseñas positivas. Por eso el texto debe ser neutro y abierto a cualquier calificación.",
           "Evita textos como «Escanea y recibe 10% de descuento», que ofrece un incentivo, «Solo 5 estrellas», que busca influir en la calificación, o «Menciona a tu barbero», que dicta el contenido de la reseña.",
           "La política de contenido también prohíbe que el comercio pida a su personal solicitar un número determinado de reseñas, o reseñas con contenido específico, como el nombre de un empleado. En salones y barberías es común querer que mencionen a su estilista o barbero, así que la placa no debe incluir nombres ni cuotas.",
-          "Google trata el ofrecimiento de bienes o servicios a cambio de reseñas como interacción falsa, y la regla también cubre publicar, modificar o quitar reseñas."
+          "Google trata el ofrecimiento de bienes o servicios a cambio de reseñas como interacción falsa, y la regla también cubre publicar, modificar o quitar reseñas.",
+          "Para repasar más casos, revisa qué sí y qué no pedir según las [políticas de reseñas de Google](/blog/que-si-y-que-no-pedir-resenas-google-politicas)."
         ]
       },
       {
@@ -452,7 +454,8 @@ export const blogPosts: BlogPost[] = [
         "heading": "¿Dónde colocar la placa en un salón, estética o barbería?",
         "body": [
           "Google sugiere colocar el código QR o el enlace en recibos, correos de agradecimiento, al final de un chat y como QR impreso en la tienda. Para un salón, estética o barbería, eso respalda una placa física en el mostrador y el envío del mismo enlace por WhatsApp después de la cita.",
-          "Dentro del local, la recepción, la caja o una mesa de espera permiten tener la pieza a la vista sin interrumpir el servicio. Comprueba que el cliente pueda acercar su teléfono o escanear el QR con comodidad."
+          "Dentro del local, la recepción, la caja o una mesa de espera permiten tener la pieza a la vista sin interrumpir el servicio. Comprueba que el cliente pueda acercar su teléfono o escanear el QR con comodidad.",
+          "Para más ideas de ubicación, revisa [dónde poner la placa](/blog/donde-poner-placa-resenas-google)."
         ]
       },
       {
@@ -473,14 +476,17 @@ export const blogPosts: BlogPost[] = [
       {
         "heading": "¿Qué formato de placa de reseñas de Google elegir?",
         "body": [
-          "La placa mide 12 × 12 cm e incluye adhesivo; el stand se coloca de pie. La placa cuesta $140 MXN y el stand $200 MXN, con pago único. Ambos llevan NFC y QR, están disponibles en blanco o negro y puedes pedir una sola pieza.",
-          "Si prefieres una pieza de pie, revisa el [stand NFC para reseñas](/productos/stand-resena-google-nfc)."
+          "La placa de Yume cuesta $140 MXN, o $155 con tu logo, e incluye adhesivo. El stand cuesta $200 MXN, o $215 con tu logo, y se coloca de pie sin pegar. Ambos llevan NFC y QR, vienen en blanco o negro, son de pago único y puedes pedir una sola pieza.",
+          "Si prefieres una pieza de pie, revisa el [stand NFC para reseñas](/productos/stand-resena-google-nfc).",
+          "Para comparar con las placas de suscripción mensual, lee [pago único o suscripción](/blog/placas-resenas-google-pago-unico-vs-suscripcion)."
         ]
       },
       {
         "heading": "¿Cómo funcionan el NFC y el QR de la placa?",
         "body": [
-          "Yume configura el NFC y el QR con el enlace de reseñas del negocio antes del envío. El cliente puede acercar su teléfono o escanear el código para abrir ese enlace en su propio dispositivo. La pieza no necesita app ni suscripción y no incluye un dashboard para administrar reseñas."
+          "Yume configura el NFC y el QR con el enlace de reseñas del negocio antes del envío. El cliente puede acercar su teléfono o escanear el código para abrir ese enlace en su propio dispositivo. La pieza no necesita app ni suscripción y no incluye un dashboard para administrar reseñas.",
+          "El QR respaldo ya va impreso en la pieza.",
+          "Si dudas de la compatibilidad con tu celular, revisa [NFC en iPhone y Android](/blog/placa-nfc-funciona-iphone-android)."
         ]
       },
       {
@@ -512,6 +518,10 @@ export const blogPosts: BlogPost[] = [
         "a": "Sí. Puedes pedir una placa o un stand; ambos tienen NFC y QR configurados con tu enlace de reseñas antes del envío."
       },
       {
+        "q": "¿Tengo que pagar una mensualidad?",
+        "a": "No. El pago es único, sin suscripción ni app."
+      },
+      {
         "q": "¿La pieza garantiza más reseñas?",
         "a": "No. Facilita el acceso al enlace; cada persona decide si deja una opinión y qué escribe."
       }
@@ -524,7 +534,9 @@ export const blogPosts: BlogPost[] = [
       "placas-resenas-google-pago-unico-vs-suscripcion",
       "como-conseguir-mas-resenas-de-google-nfc-qr",
       "placa-nfc-vs-codigo-qr-impreso-resenas",
-      "como-usar-placa-resenas-google-yume"
+      "como-usar-placa-resenas-google-yume",
+      "donde-poner-placa-resenas-google",
+      "que-si-y-que-no-pedir-resenas-google-politicas"
     ],
     "quoteMessage": "Hola, me interesan la placa y el stand NFC para reseñas de Google.",
     "sources": [
