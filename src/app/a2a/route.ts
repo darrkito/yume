@@ -10,8 +10,9 @@ import { SITE, waLink } from "@/content/site";
 // fixed set of real questions, each answered from the same product/FAQ data
 // the site and the MCP server already serve. No LLM, no generated free text,
 // zero per-request cost. Wire format confirmed against a real reference
-// implementation: JSON-RPC method "message/send", response is a direct
-// Message object (not wrapped in a Task).
+// implementation. Serves A2A 1.0 ("SendMessage", ROLE_* enums, result wrapped
+// as {message}) and legacy 0.3 ("message/send", kind fields, bare Message) on
+// the same URL; a 0.3 client is assumed when no A2A-Version header is sent.
 //
 // Bilingual: detects English vs Spanish from the incoming message (English
 // keyword set checked first, Spanish is the default/priority-market
@@ -218,28 +219,35 @@ export async function POST(req: NextRequest) {
 
   const { id = null, method, params = {} } = body;
 
-  if (method !== "message/send") {
+  const v1 = method === "SendMessage";
+  if (!v1 && method !== "message/send") {
     return NextResponse.json({ jsonrpc: "2.0", id, error: { code: -32601, message: `Method not found: ${method}` } });
   }
+  const ver = req.headers.get("a2a-version");
+  if (ver && !["0.3", "1.0"].includes(ver.split(".").slice(0, 2).join("."))) {
+    return NextResponse.json({ jsonrpc: "2.0", id, error: { code: -32009, message: "Unsupported A2A version", data: { supported: ["1.0", "0.3"], requested: ver } } });
+  }
 
-  const message = params.message as { messageId?: string; contextId?: string; parts?: { kind: string; text?: string }[] } | undefined;
-  const textPart = message?.parts?.find((p) => p.kind === "text");
-  const inputText = textPart?.text ?? "";
+  const message = params.message as { messageId?: string; contextId?: string; parts?: { kind?: string; text?: string }[] } | undefined;
+  // v1 parts have no `kind`; a text part is whichever one carries `text`.
+  const inputText = message?.parts?.find((p) => typeof p.text === "string")?.text ?? "";
   const answer = matchAnswer(inputText);
+  const messageId = crypto.randomUUID();
 
+  if (v1) {
+    return NextResponse.json({
+      jsonrpc: "2.0",
+      id,
+      result: { message: { messageId, contextId: message?.contextId, role: "ROLE_AGENT", parts: [{ text: answer, mediaType: "text/plain" }] } },
+    });
+  }
   return NextResponse.json({
     jsonrpc: "2.0",
     id,
-    result: {
-      kind: "message",
-      role: "agent",
-      messageId: crypto.randomUUID(),
-      contextId: message?.contextId,
-      parts: [{ kind: "text", text: answer }],
-    },
+    result: { kind: "message", role: "agent", messageId, contextId: message?.contextId, parts: [{ kind: "text", text: answer }] },
   });
 }
 
 export async function GET() {
-  return NextResponse.json({ error: "Method not allowed. POST a JSON-RPC message/send request." }, { status: 405 });
+  return NextResponse.json({ error: "Method not allowed. POST a JSON-RPC SendMessage (or legacy message/send) request." }, { status: 405 });
 }

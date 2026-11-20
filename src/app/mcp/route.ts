@@ -14,7 +14,9 @@ import { createCheckoutPro } from "@/lib/checkout-pro";
 import { localizeError } from "@/lib/errors";
 import { rateLimited } from "@/lib/rate-limit";
 
-// Hand-rolled minimal MCP server (Streamable HTTP transport, 2025-06-18 spec).
+// Hand-rolled minimal MCP server (Streamable HTTP transport), dual-era:
+// modern 2026-07-28 (stateless, per-request _meta, server/discover) plus the
+// legacy initialize handshake for 2025-11-25 / 2025-06-18 clients.
 // Stateless, single POST endpoint returning synchronous JSON —
 // no session ID or SSE needed for a tool set that's all fast reads. Every
 // tool wraps the same content the site itself already serves (products,
@@ -303,12 +305,21 @@ async function callTool(name: string, args: Record<string, unknown>, req: NextRe
   }
 }
 
-function jsonRpcResult(id: unknown, result: unknown) {
-  return NextResponse.json({ jsonrpc: "2.0", id, result });
+const MODERN = "2026-07-28";
+const SUPPORTED_VERSIONS = [MODERN, "2025-11-25", "2025-06-18"];
+const SERVER_INFO = { name: "yume-mcp", title: SITE.name, version: "1.2.0" };
+const CAPABILITIES = { tools: { listChanged: false } };
+const META_VERSION = "io.modelcontextprotocol/protocolVersion";
+const META_SERVER_INFO = "io.modelcontextprotocol/serverInfo";
+// Content changes only on deploy, so a short public cache is safe.
+const CACHE = { ttlMs: 300000, cacheScope: "public" };
+
+function jsonRpcResult(id: unknown, result: Record<string, unknown>) {
+  return NextResponse.json({ jsonrpc: "2.0", id, result: { resultType: "complete", ...result, _meta: { [META_SERVER_INFO]: SERVER_INFO } } });
 }
 
-function jsonRpcError(id: unknown, code: number, message: string) {
-  return NextResponse.json({ jsonrpc: "2.0", id, error: { code, message } });
+function jsonRpcError(id: unknown, code: number, message: string, data?: unknown) {
+  return NextResponse.json({ jsonrpc: "2.0", id, error: { code, message, ...(data ? { data } : {}) } });
 }
 
 export async function POST(req: NextRequest) {
@@ -325,16 +336,31 @@ export async function POST(req: NextRequest) {
     return new NextResponse(null, { status: 202 });
   }
 
+  // Modern clients declare their version on every request via _meta.
+  const requested = (params._meta as Record<string, unknown> | undefined)?.[META_VERSION];
+  if (typeof requested === "string" && method !== "initialize" && !SUPPORTED_VERSIONS.includes(requested)) {
+    return jsonRpcError(id, -32022, "Unsupported protocol version", { supported: SUPPORTED_VERSIONS, requested });
+  }
+
   if (method === "initialize") {
+    const want = String(params.protocolVersion ?? "");
+    // Legacy handshake: echo the client's version if we speak it, else our newest legacy one.
+    const protocolVersion = SUPPORTED_VERSIONS.includes(want) && want !== MODERN ? want : "2025-11-25";
+    return NextResponse.json({ jsonrpc: "2.0", id, result: { protocolVersion, capabilities: CAPABILITIES, serverInfo: SERVER_INFO } });
+  }
+
+  if (method === "server/discover") {
     return jsonRpcResult(id, {
-      protocolVersion: "2025-06-18",
-      capabilities: { tools: { listChanged: false } },
-      serverInfo: { name: "yume-mcp", title: SITE.name, version: "1.0.0" },
+      supportedVersions: SUPPORTED_VERSIONS,
+      capabilities: CAPABILITIES,
+      instructions:
+        "Yume catalog, FAQ and blog in Spanish (default) or English (lang=en). Ordering: get_price_quote for exact prices, create_cart_link for a pre-filled cart, create_checkout (needs the customer's consent) for a Mercado Pago payment link the customer pays. Nothing is charged by a call.",
+      ...CACHE,
     });
   }
 
   if (method === "tools/list") {
-    return jsonRpcResult(id, { tools: TOOLS });
+    return jsonRpcResult(id, { tools: TOOLS, ...CACHE });
   }
 
   if (method === "tools/call") {
