@@ -6746,8 +6746,9 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "que-dulces-poner-en-dulcero-de-boda",
     title: "Ideas de dulces para dulceros: boda, XV años y baby shower",
+    metaTitle: "Dulces para dulcero de boda: qué poner y cuántos",
     description:
-      "Ideas de dulces para dulceros de boda, XV años y baby shower: qué poner según el evento, cuántos tipos elegir, cuánto calcular y cómo presentarlos.",
+      "Qué dulces poner en un dulcero de boda: tipos, cuántos gramos por invitado, cómo presentarlos y cómo pedirlos personalizados con prueba digital.",
     category: "Guías",
     publishedAt: "2026-11-09",
     modifiedAt: "2026-11-18",
@@ -6848,7 +6849,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
     ],
-    relatedProductSlugs: ["stickers-vinil-impermeable"],
+    relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
     relatedBlogSlugs: ["que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "mesa-de-dulces-para-boda", "cuantos-dulceros-pedir-para-una-boda", "dulceros-para-xv-anos-elegantes", "recuerdos-baby-shower-personalizados", "dulceros-para-eventos-sociales-boda-xv-baby-shower"],
     faq: [
       {
@@ -8064,6 +8065,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "que-dulces-le-puedo-poner-a-un-dulcero",
     title: "Qué dulces le puedo poner a un dulcero según la ocasión",
+    metaTitle: "Qué dulces ponerle a un dulcero según la ocasión",
     description:
       "Qué dulces le puedo poner a un dulcero en boda, bautizo, XV años o baby shower, cuántos gramos por invitado y cómo coordinar colores y empaque.",
     category: "Guías",

@@ -1172,7 +1172,8 @@ export const dulceroPosts: BlogPost[] = [
   {
     slug: "que-poner-en-un-dulcero",
     title: "Qué poner en un dulcero: tipos de dulces por ocasión",
-    description: "Qué poner en un dulcero según la ocasión y la edad: tipos de dulces, cuántas piezas caben, cuántos por invitado y cómo acomodarlos.",
+    metaTitle: "Qué poner en un dulcero: lista de dulces por ocasión",
+    description: "Qué poner en un dulcero: 8 a 12 piezas, tipos de dulces por ocasión y edad, cuántos por invitado y cómo acomodarlos. Pídelos personalizados.",
     category: "Guías",
     publishedAt: PUBLISHED,
     modifiedAt: "2026-11-17",

@@ -6307,6 +6307,7 @@ export const blogPostsEn: BlogPost[] = [
   {
     slug: "what-sweets-to-put-in-a-wedding-candy-dish",
     title: "Candy dish ideas for weddings, XV años and baby showers",
+    metaTitle: "Wedding Favor Box Candy: What and How Much to Put In",
     description:
       "Candy dish ideas for weddings, XV años and baby showers: what to put by event, how many kinds to pick, how much to plan and how to present them.",
     category: "Guides",
@@ -6409,7 +6410,7 @@ export const blogPostsEn: BlogPost[] = [
         ],
       },
     ],
-    relatedProductSlugs: ["stickers-vinil-impermeable"],
+    relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable"],
     relatedBlogSlugs: ["what-to-put-in-a-party-favor-box", "personalized-party-favor-boxes-guadalajara", "wedding-candy-table-custom-candy-boxes", "how-many-candy-boxes-to-order-for-a-wedding", "elegant-quinceanera-candy-boxes", "personalized-baby-shower-favors", "wedding-quinceanera-baby-shower-favor-boxes"],
     faq: [
       {
@@ -7625,6 +7626,7 @@ export const blogPostsEn: BlogPost[] = [
   {
     slug: "what-candy-to-put-in-a-candy-box-by-occasion",
     title: "What sweets to put in a candy box by occasion",
+    metaTitle: "What Candy to Put in a Favor Box by Occasion",
     description:
       "What sweets to put in a candy box for weddings, baptisms, quinceañeras and baby showers, how many grams per guest and how to match colors.",
     category: "Guides",
