@@ -41,6 +41,19 @@
       "displayName": "Yume full catalog for agents (llms-full.txt)",
       "type": "content",
       "url": "https://studioyume.mx/llms-full.txt"
+    },
+    {
+      "identifier": "urn:air:studioyume.mx:mcp:yume",
+      "displayName": "Yume MCP server card (AI Catalog draft form)",
+      "type": "application/mcp-server-card+json",
+      "url": "https://studioyume.mx/mcp/server-card"
+    },
+    {
+      "identifier": "yume-nlweb",
+      "displayName": "Yume NLWeb /ask endpoint (natural-language search over catalog, FAQ and blog)",
+      "type": "nlweb",
+      "url": "https://studioyume.mx/ask",
+      "documentation": "https://studioyume.mx/llms.txt"
     }
   ]
 }

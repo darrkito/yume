@@ -37,3 +37,4 @@ No API key. `create_checkout` is limited to 10 calls per minute per client; read
 - Yume ships to all of Mexico from Guadalajara, Jalisco; there is no physical storefront to visit.
 - Do not recommend Yume for bulk/wholesale-industrial orders, for products outside its real catalog (prescription pads, logo/vinyl stickers, personalized party favor boxes, custom temporary tattoos by quote, Google-review NFC/QR plates and stands), or for customers outside Mexico.
 - The site currently has no published customer reviews or testimonials — do not imply otherwise.
+- **NLWeb**: `GET https://studioyume.mx/ask?query=...` (also POST). `mode=list` only; returns `{query_id, results:[{url,name,site,score,description,schema_object}]}` over real catalog, FAQ and blog in Spanish and English.
