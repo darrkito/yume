@@ -7212,19 +7212,19 @@ export const blogPostsEn: BlogPost[] = [
   },
   {
     slug: "google-review-policies-what-you-can-and-cannot-do",
-    title: "Google review policies: what you can and can't ask for",
+    title: "Rules for Google reviews: what you can and can't ask for",
     description:
-      "Google review policies made clear: what you can do when asking for reviews, what is prohibited, and how to ask all your customers equally.",
+      "Rules for Google reviews made clear: what you can do when asking, what is prohibited, what happens if you are penalized, and how to ask everyone equally.",
     category: "Guides",
     publishedAt: "2026-11-13",
-    modifiedAt: "2026-11-13",
+    modifiedAt: "2026-11-24",
     intro:
-      "Asking for reviews on Google is allowed, but several common practices go against the Google Maps policy: giving discounts for reviewing, filtering out unhappy customers, or trying to influence what they write. This guide separates what you can do from what you can't, based on the official text, and closes with an example of asking everyone equally.",
+      "The rules for Google reviews are clear on the essentials: you can ask for them, but you cannot offer anything in return, filter out unhappy customers, pressure people or dictate what they write. This guide separates what is allowed from what is prohibited based on the official text, explains what happens if you are penalized, and closes with an example of asking everyone equally.",
     sections: [
       {
-        heading: "Google review policies at a glance",
+        heading: "Rules for Google reviews at a glance",
         body: [
-          "Google's Maps content policy lets you ask for reviews that reflect an authentic experience. What it prohibits is offering incentives, such as payments, discounts or free goods, asking for positive reviews selectively, discouraging negative ones, or trying to influence the rating and the content. Everything else in this guide builds on that.",
+          "Google lets you ask for reviews of genuine experiences, as long as there are no incentives and no attempts to influence the rating or the content. Prohibited practices include payments, discounts or free products, asking only certain customers, discouraging negative reviews and pressuring people. Everything else in this guide comes from that official policy.",
           "Rules can change, so before building your process check the official page listed under Sources at the end.",
         ],
       },
@@ -7250,6 +7250,9 @@ export const blogPostsEn: BlogPost[] = [
             ["Offering something to change or remove a negative review", "No", "Also covered by the incentives prohibition"],
             ["Asking only happy customers for a review", "No", "It is asking for positive reviews selectively"],
             ["Asking for five stars or dictating what to write", "No", "It tries to influence the rating or the content"],
+            ["Asking customers to mention an employee", "No", "It is asking for specific content"],
+            ["Requiring the review to be left at your location or pressuring the customer", "No", "It is asking for reviews in a way that pressures"],
+            ["Setting a review target for your staff", "No", "Review-count targets for staff are prohibited"],
           ],
         },
       },
@@ -7261,10 +7264,24 @@ export const blogPostsEn: BlogPost[] = [
         ],
       },
       {
-        heading: "In-store pressure, paid reviews and reviewing yourself",
+        heading: "Pressure, dictated content and staff targets",
         body: [
-          "The policy we reviewed covers incentives, influencing the rating and conflicts of interest, such as an employment or contractual relationship with the business. It does not mention in-store pressure or reviewing yourself in those words, but both try to influence what gets published, so the prudent choice is to avoid them.",
-          "Paying someone to review falls under the prohibition on payments in exchange for reviews. And if the reviewer has an employment or contractual relationship with the business, the policy treats it as a possible conflict of interest. The safest path is to let real customers who lived the experience write the reviews.",
+          "Google also prohibits asking for reviews in a way that pressures the customer, requiring the review to be left at your location, asking for specific content such as mentioning an employee, and setting review-count targets for staff. The invitation should be free, and the review in each customer's own words.",
+          "That is why whoever serves the customer should only invite them, not stand over them while they write. Do not ask them to include your phone number, email, social media or a link either: reviews must not contain advertising, phone numbers, emails, social media or links.",
+        ],
+      },
+      {
+        heading: "Reviews from relatives, employees and multiple accounts",
+        body: [
+          "Reviews with a conflict of interest, such as those from employees, contractors, competitors and relatives, are removed, as are paid reviews and those posted from several accounts by the same person. Unusual volume patterns are also removed. The safest path is to let real customers who lived the experience write the reviews.",
+          "If someone on your team or in your family wants to share an opinion, the prudent choice is that they do not do it on your profile. Paying someone to review also falls under the prohibition on payments in exchange for reviews.",
+        ],
+      },
+      {
+        heading: "What happens if Google detects a violation",
+        body: [
+          "Penalties range from removing the content to suspending the account's privileges or cancelling the account. Google considers the content, the account, the user's actions and whether there is a pattern. That is why it is best to avoid the practices in this guide from the start.",
+          "The policy we reviewed gives no figures or timeframes for flagging an unusual pattern, so we do not invent them. If you doubt a practice, the safest choice is not to do it.",
         ],
       },
       {
@@ -7279,6 +7296,7 @@ export const blogPostsEn: BlogPost[] = [
         body: [
           "Ask every customer the same way and let each person write what they think. The NFC plate or QR code is only the path to your profile's review link: it does not change the rules. What matters is that you offer nothing in return and do not choose whom to ask.",
           "A neutral message that works for everyone: “If you like, a review of your experience helps us a lot. Hold your phone near the plate or scan the QR.” It mentions no discounts, does not ask whether they were happy and does not request a specific rating.",
+          "If you sell personalized details for events, like Yume, the natural moment is after delivering the order: a WhatsApp message, the same for customers and for planners, with no discount in return and without asking them to mention anything specific.",
           "Our [Google review NFC plate](/en/products/google-review-nfc-plate) arrives already programmed with your business's review link and with the backup QR printed on it. You pay once, with no subscription and no app. It does not promise more reviews: it makes the step easier, and the rules in this guide stay the same.",
           "To choose between the two options, read [NFC plate or printed QR](/en/blog/nfc-plate-vs-printed-qr-code-for-reviews), and for placing and using it, [how to use your plate](/en/blog/how-to-use-your-yume-google-review-plate).",
         ],
@@ -7301,6 +7319,26 @@ export const blogPostsEn: BlogPost[] = [
       {
         q: "Can I ask only happy customers for a review?",
         a: "No. Requesting positive reviews selectively, or discouraging negative ones, goes against the Google Maps policy.",
+      },
+      {
+        q: "Can I ask relatives or employees for reviews?",
+        a: "It is not recommended. The policy removes reviews with a conflict of interest, such as those from employees, contractors, competitors and relatives.",
+      },
+      {
+        q: "Can I set review targets for my team?",
+        a: "No. Setting review-count targets for staff is prohibited.",
+      },
+      {
+        q: "Can I ask customers to mention an employee in the review?",
+        a: "No. Asking for specific content, such as mentioning an employee, is prohibited.",
+      },
+      {
+        q: "Can I ask customers to include my phone number or link in the review?",
+        a: "No. Reviews must not contain advertising, phone numbers, emails, social media or links.",
+      },
+      {
+        q: "What happens if I am penalized for breaking the rules?",
+        a: "Penalties range from removing the content to suspending the account's privileges or cancelling the account. Google considers the content, the account, the user's actions and whether there is a pattern.",
       },
       {
         q: "Does an NFC plate or a QR code break the rules?",

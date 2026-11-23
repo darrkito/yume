@@ -7692,19 +7692,19 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "que-si-y-que-no-pedir-resenas-google-politicas",
-    title: "Políticas de reseñas de Google: qué sí y qué no pedir",
+    title: "Reglas de Google para pedir reseñas: qué sí y qué no",
     description:
-      "Políticas de reseñas de Google en claro: qué sí puedes hacer al pedirlas, qué está prohibido y cómo pedirlas a todos tus clientes por igual.",
+      "Reglas de Google para pedir reseñas: qué sí puedes hacer, qué está prohibido, qué pasa si te sancionan y cómo pedirlas a todos tus clientes por igual.",
     category: "Guías",
     publishedAt: "2026-11-13",
-    modifiedAt: "2026-11-13",
+    modifiedAt: "2026-11-24",
     intro:
-      "Pedir reseñas en Google está permitido, pero hay prácticas muy comunes que la política de Google Maps no acepta: dar descuentos por reseñar, filtrar a los clientes contentos o intentar influir en lo que escriben. Esta guía separa lo que sí puedes hacer de lo que no, con base en el texto oficial, y cierra con un ejemplo para pedir la reseña a todos por igual.",
+      "Las reglas de Google para pedir reseñas son claras en lo esencial: puedes pedirlas, pero no ofrecer nada a cambio, no filtrar solo a los clientes contentos y no presionar ni dictar qué escribir. Esta guía separa lo permitido de lo prohibido con base en el texto oficial, explica qué pasa si te sancionan y cierra con un ejemplo para pedir la reseña a todos por igual.",
     sections: [
       {
-        heading: "Políticas de reseñas de Google en resumen",
+        heading: "Reglas de Google para reseñas en resumen",
         body: [
-          "La política de contenido de Google Maps permite pedir reseñas que reflejen una experiencia auténtica. Lo que prohíbe es ofrecer incentivos, como pagos, descuentos o productos gratis, pedir reseñas positivas de forma selectiva, desalentar las negativas o influir en la valoración y el contenido. Todo lo demás de esta guía sale de ahí.",
+          "Google permite pedir reseñas de experiencias genuinas, siempre que no haya incentivos ni intentos de influir en la calificación o en el contenido. Lo prohibido incluye pagos, descuentos o productos gratis, pedir reseñas solo a ciertos clientes, desalentar las negativas y presionar. Todo lo demás de esta guía sale de esa política oficial.",
           "Las reglas pueden cambiar, así que antes de armar tu proceso de pedido revisa la página oficial que aparece en Fuentes al final.",
         ],
       },
@@ -7730,6 +7730,9 @@ export const blogPosts: BlogPost[] = [
             ["Ofrecer algo por cambiar o quitar una reseña negativa", "No", "También entra en la prohibición de incentivos"],
             ["Pedir reseña solo a quienes están contentos", "No", "Es solicitar reseñas positivas de forma selectiva"],
             ["Pedir cinco estrellas o dictar qué escribir", "No", "Busca influir en la valoración o en el contenido"],
+            ["Pedir que mencionen a un empleado", "No", "Es pedir contenido específico"],
+            ["Exigir que la reseña se deje en el local o presionar al cliente", "No", "Es pedir reseñas de forma que presiona"],
+            ["Ponerle al personal una meta de reseñas", "No", "Fijar metas de cantidad para el personal está prohibido"],
           ],
         },
       },
@@ -7741,10 +7744,24 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "Presión en el local, reseñas pagadas y reseñas propias",
+        heading: "Presionar, dictar contenido y poner metas al personal",
         body: [
-          "La política que revisamos habla de incentivos, de influir en la valoración y de conflictos de intereses, como una relación laboral o contractual con el negocio. No menciona con esas palabras la presión en el local ni reseñarse a uno mismo, pero ambas buscan influir en lo que se publica, así que lo prudente es evitarlas.",
-          "Pagar a alguien por reseñar entra en la prohibición de pagos a cambio de reseñas. Y si quien reseña tiene una relación laboral o contractual con el negocio, la política lo trata como posible conflicto de intereses. Lo más seguro es que reseñen clientes reales que vivieron la experiencia.",
+          "Google también prohíbe pedir reseñas de forma que presione al cliente, exigir que la deje en el local, pedir contenido específico, como mencionar a un empleado, y fijar metas de cantidad de reseñas para el personal. La invitación debe ser libre y la reseña, con las palabras de cada cliente.",
+          "Por eso conviene que quien atiende al cliente solo lo invite y no lo acompañe a escribir. Tampoco pidas que incluyan tu teléfono, tu correo, tus redes o un enlace: las reseñas no deben llevar publicidad, teléfonos, correos, redes sociales ni enlaces.",
+        ],
+      },
+      {
+        heading: "Reseñas de familiares, empleados y varias cuentas",
+        body: [
+          "Las reseñas con conflicto de interés, como las de empleados, contratistas, competidores y familiares, se eliminan, igual que las pagadas y las publicadas desde varias cuentas por una misma persona. También se eliminan los patrones inusuales de volumen. Lo más seguro es que reseñen clientes reales que vivieron la experiencia.",
+          "Si alguien de tu equipo o de tu familia quiere opinar, lo prudente es que no lo haga en tu perfil. Pagar a alguien por reseñar entra, además, en la prohibición de pagos a cambio de reseñas.",
+        ],
+      },
+      {
+        heading: "Qué pasa si Google detecta un incumplimiento",
+        body: [
+          "Las sanciones van desde eliminar el contenido hasta suspender los privilegios de la cuenta o cancelarla. Google considera el contenido, la cuenta, las acciones del usuario y si hay un patrón. Por eso conviene evitar las prácticas de esta guía desde el inicio.",
+          "La política que revisamos no da cifras ni plazos para marcar un patrón inusual, así que no los inventamos. Si dudas de una práctica, la opción más segura es no hacerla.",
         ],
       },
       {
@@ -7759,6 +7776,7 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Pide la reseña a todos tus clientes por igual y deja que cada quien escriba lo que piensa. La placa NFC o el código QR solo son el camino al enlace oficial de tu perfil: no cambian las reglas. Lo que cuenta es que no ofrezcas nada a cambio ni elijas a quién se lo pides.",
           "Un mensaje neutral que sirve para todos: “Si quieres, una reseña de tu experiencia nos ayuda mucho. Acerca tu celular a la placa o escanea el QR.” No menciona descuentos, no pregunta si estuvo contento y no pide una calificación concreta.",
+          "Si vendes detalles personalizados para eventos, como Yume, el momento natural es después de entregar el pedido: un mensaje por WhatsApp, igual para clientes y para planners, sin descuento a cambio y sin pedir que mencionen algo concreto.",
           "Nuestra [placa de reseñas NFC](/productos/placa-resena-google-nfc) se entrega ya programada con el enlace de reseñas de tu negocio y con el QR de respaldo impreso. Se paga una sola vez, sin suscripción ni app. No promete más reseñas: facilita el paso, y las reglas de esta guía siguen siendo las mismas.",
           "Para elegir entre ambos medios, revisa [placa NFC o QR impreso](/blog/placa-nfc-vs-codigo-qr-impreso-resenas), y para colocarla y usarla, [cómo usar tu placa](/blog/como-usar-placa-resenas-google-yume).",
         ],
@@ -7781,6 +7799,26 @@ export const blogPosts: BlogPost[] = [
       {
         q: "¿Puedo pedir la reseña solo a los clientes contentos?",
         a: "No. Solicitar reseñas positivas de forma selectiva, o desalentar las negativas, va contra la política de Google Maps.",
+      },
+      {
+        q: "¿Puedo pedir reseñas a familiares o empleados?",
+        a: "No es lo recomendable. La política elimina las reseñas con conflicto de interés, como las de empleados, contratistas, competidores y familiares.",
+      },
+      {
+        q: "¿Puedo ponerle metas de reseñas a mi equipo?",
+        a: "No. Fijar metas de cantidad de reseñas para el personal está prohibido.",
+      },
+      {
+        q: "¿Puedo pedir que mencionen a un empleado en la reseña?",
+        a: "No. Pedir contenido específico, como mencionar a un empleado, está prohibido.",
+      },
+      {
+        q: "¿Puedo pedir que pongan mi teléfono o mi enlace en la reseña?",
+        a: "No. Las reseñas no deben incluir publicidad, teléfonos, correos, redes sociales ni enlaces.",
+      },
+      {
+        q: "¿Qué pasa si me sancionan por incumplir las reglas?",
+        a: "Las sanciones van desde eliminar el contenido hasta suspender los privilegios de la cuenta o cancelarla. Google considera el contenido, la cuenta, las acciones del usuario y si hay un patrón.",
       },
       {
         q: "¿Una placa NFC o un QR rompe las reglas?",
