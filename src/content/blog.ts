@@ -867,7 +867,7 @@ export const blogPosts: BlogPost[] = [
     "description": "Aprende a crear una encuesta de satisfacción del cliente, elegir preguntas y compartirla por QR, ticket o WhatsApp.",
     "category": "Guías",
     "publishedAt": "2026-11-03",
-    "modifiedAt": "2026-11-05",
+    "modifiedAt": "2026-11-23",
     "intro": "Una encuesta de satisfacción del cliente te ayuda a escuchar cómo fue la experiencia y a decidir qué mejorar. En esta guía eliges la métrica (CSAT, NPS o CES), armas pocas preguntas claras, decides cuándo enviarla por WhatsApp, QR o ticket y conviertes las respuestas en acciones. Mantén la encuesta separada de cualquier invitación a escribir una reseña pública.",
     "sections": [
       {
@@ -926,7 +926,8 @@ export const blogPosts: BlogPost[] = [
         "heading": "¿Cómo invitar a una reseña sin filtrar clientes?",
         "body": [
           "Mantén la encuesta y la petición de reseña separadas y ofrece ambas a todos los clientes. Enviar solo a clientes satisfechos a Google o desalentar a los insatisfechos va contra su política de reseñas. La placa ofrece a todos la misma vía por NFC o QR para dejar una opinión honesta.",
-          "Yume vende la placa y el stand, no una herramienta de encuestas. Yume configura ambas vías con el enlace de reseñas antes del envío; la placa cuesta $140 MXN y el stand $200 MXN, pago único, desde una pieza."
+          "Yume vende la [placa NFC para reseñas](/productos/placa-resena-google-nfc) y el [stand NFC para reseñas](/productos/stand-resena-google-nfc), no una herramienta de encuestas. Yume configura ambas vías con el enlace de reseñas antes del envío; la placa cuesta $140 MXN y el stand $200 MXN, pago único, desde una pieza.",
+          "Para dar el siguiente paso, revisa cómo [configurar tu perfil de Google](/blog/como-configurar-perfil-de-google-y-pedir-resenas) y cómo conseguir [reseñas con NFC y QR](/blog/como-conseguir-mas-resenas-de-google-nfc-qr). Si comparas costos, mira [pago único o suscripción](/blog/placas-resenas-google-pago-unico-vs-suscripcion)."
         ]
       }
     ],
@@ -938,6 +939,10 @@ export const blogPosts: BlogPost[] = [
       {
         "q": "¿Qué hago si un cliente da una calificación baja?",
         "a": "Si el CSAT es de 1 a 3, esa guía recomienda agregar una pregunta abierta sobre qué mejorar. Así sabes qué corregir en lugar de ver solo el número."
+      },
+      {
+        "q": "¿Dónde puedo leer las reglas de Google sobre reseñas?",
+        "a": "En las páginas de ayuda de Google Business Profile que aparecen en Fuentes, al final de esta guía: una sobre consejos para recibir reseñas y otra sobre contenido prohibido y restringido."
       },
       {
         "q": "¿Puedo pedir una sola pieza?",

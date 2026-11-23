@@ -789,7 +789,7 @@ export const blogPostsEn: BlogPost[] = [
     "description": "Create a customer satisfaction survey, choose useful questions and share it by QR code, receipt or WhatsApp.",
     "category": "Guides",
     "publishedAt": "2026-11-03",
-    "modifiedAt": "2026-11-05",
+    "modifiedAt": "2026-11-23",
     "intro": "A customer satisfaction survey helps you hear how the experience went and decide what to improve. In this guide you choose the metric (CSAT, NPS or CES), write a few clear questions, decide when to send it by WhatsApp, QR code or receipt and turn the answers into actions. Keep the survey separate from any invitation to post a public review.",
     "sections": [
       {
@@ -818,7 +818,7 @@ export const blogPostsEn: BlogPost[] = [
         "heading": "How many questions and what types should you use?",
         "body": [
           "There is no single ideal length that works for every business. What helps is giving each question a purpose: one scale to measure, one to compare and one open question to understand why. If a question will not change any decision, remove it. On WhatsApp, send one question per message.",
-          "Use the same scale for similar questions and explain the endpoints, for example \"1 is very dissatisfied and 5 is very satisfied\". On WhatsApp it works to give a simple instruction, such as \"reply with the number only\", so answers are easy to compare."
+          "Use the same scale for similar questions and explain the endpoints, for example “1 is very dissatisfied and 5 is very satisfied”. On WhatsApp it works to give a simple instruction, such as “reply with the number only”, so answers are easy to compare."
         ]
       },
       {
@@ -848,7 +848,8 @@ export const blogPostsEn: BlogPost[] = [
         "heading": "How can you invite reviews without filtering customers?",
         "body": [
           "Keep the survey and the review request separate and offer both to all customers. Sending only happy customers to Google or discouraging unhappy ones goes against its review policy. The plate gives everyone the same NFC or QR path to leave an honest review.",
-          "Yume sells the plate and stand, not a survey tool. Yume configures both paths with the review link before shipping; the plate costs MXN $140 and the stand MXN $200, one-time, from one piece."
+          "Yume sells the [Google review NFC plate](/en/products/google-review-nfc-plate) and the [review NFC stand](/en/products/google-review-nfc-stand), not a survey tool. Yume configures both paths with the review link before shipping; the plate costs MXN $140 and the stand MXN $200, one-time, from one piece.",
+          "For the next step, see how to [set up your Google profile](/en/blog/set-up-google-business-profile-and-ask-for-reviews) and how to get [reviews with NFC and QR](/en/blog/how-to-get-more-google-reviews-nfc-qr). If you are comparing costs, read [one-time price or subscription](/en/blog/google-review-plates-one-time-price-vs-subscription)."
         ]
       }
     ],
@@ -860,6 +861,10 @@ export const blogPostsEn: BlogPost[] = [
       {
         "q": "What should I do if a customer gives a low score?",
         "a": "If CSAT is 1 to 3, that guide recommends adding an open question about what to improve. That way you learn what to fix instead of only seeing the number."
+      },
+      {
+        "q": "Where can I read Google's rules on reviews?",
+        "a": "In the Google Business Profile help pages listed under Sources at the end of this guide: one on tips to get reviews and one on prohibited and restricted content."
       },
       {
         "q": "Can I order one piece?",
