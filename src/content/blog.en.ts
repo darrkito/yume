@@ -5966,22 +5966,24 @@ export const blogPostsEn: BlogPost[] = [
       "A guide for wedding planners in Guadalajara: how to quote custom details per event, approve digital proofs and coordinate matching wedding pieces.",
     category: "Guides",
     publishedAt: "2026-11-05",
-    modifiedAt: "2026-11-07",
+    modifiedAt: "2026-11-23",
     intro:
-      "You coordinate several weddings and need a supplier who delivers the same quality every time. This guide explains how to request a quote, approve digital proofs, set deadlines and bring candy boxes, stickers and temporary tattoos together in one visual line for your clients in Guadalajara, Zapopan and all of Mexico.",
+      "You coordinate several weddings and need a supplier who delivers the same quality every time. This guide explains how to request a quote, approve digital proofs, set deadlines and bring candy boxes, stickers and temporary tattoos together in one visual line for your clients in Guadalajara, Zapopan and all of Mexico. We also look at which pieces fit the 2026 trend and what to put in writing.",
     sections: [
       {
         heading: "What a custom details supplier for wedding planners should offer",
         body: [
           "A custom details supplier for wedding planners should give you a clear process: a quote per event, a design with a digital proof before production, direct communication and pieces that match each other. Your volume is per wedding, not industrial, so what matters is that every event looks planned and you know what to expect at each step.",
-          "This guide is for you, the planner who coordinates several weddings. To see one of the pieces first, check our [custom candy boxes in Guadalajara](/blog/dulceros-personalizados-guadalajara).",
+          "This guide is for you, the planner who coordinates several weddings in Guadalajara, Zapopan or beyond. To see one of the pieces first, check our [custom candy boxes in Guadalajara](/en/blog/personalized-party-favor-boxes-guadalajara).",
+          "For a wider view of working with a supplier, we have a [guide for planners](/en/blog/guide-for-planners-working-with-custom-favors-supplier). To build the order step by step, use the [planner checklist](/en/blog/planner-checklist-custom-favors-order-event).",
         ],
       },
       {
         heading: "How to request a quote per event",
         body: [
           "To quote a wedding, message us on WhatsApp with the basics of the event: date, city, number of guests, color palette, the pieces you are interested in and the texts or names they will carry. With that we can guide you on quantities and minimums, and tell you if anything needs confirming before production.",
-          "Published minimums are 10 pieces for candy boxes, 40 pieces for [custom vinyl stickers](/productos/stickers-vinil-impermeable) and 50 pieces for logo labels. Tell us about your whole event and we quote the pieces together.",
+          "Published minimums are 10 pieces for candy boxes, 40 pieces for [custom vinyl stickers](/en/products/waterproof-vinyl-stickers) and 50 pieces for logo labels. All our stickers carry high-quality BOPP lamination. Tell us about your whole event and we quote the pieces together.",
+          "To estimate how much you need per wedding, see [how many favors to order](/en/blog/how-many-party-favors-to-order-per-event).",
         ],
         table: {
           headers: ["Brief detail", "What it lets us define"],
@@ -5998,35 +6000,47 @@ export const blogPostsEn: BlogPost[] = [
         heading: "How a per-wedding order works",
         body: [
           "Each wedding is quoted as a separate order: you send us the brief over WhatsApp with date, city, guests, palette, pieces and texts, and we quote the event's pieces together. That way each wedding has its own quote and you can keep a consistent visual line across the weddings you coordinate.",
+          "Because the order is per event and not serial production, each wedding carries its own names, date and palette. You can keep your quality standard and still give each couple something different.",
+          "To talk budget with the couple, see the [favor budget per guest](/en/blog/wedding-favor-budget-per-guest).",
         ],
       },
       {
         heading: "Digital proofs and text approval",
         body: [
           "For vinyl stickers we send a digital proof before printing, and nothing is printed without your approval. Check names, dates, spelling and colors with the couple, because that is the control point of the order. It helps if one person, you or the couple, has the final say.",
-          "For vinyl stickers, the proof normally arrives within 24 hours after payment and includes up to 2 rounds of adjustments.",
+          "For vinyl stickers, the proof normally arrives within 24 hours after payment and includes up to 2 rounds of adjustments. For candy boxes we also send a digital proof before production, and nothing is produced until you approve it.",
+          "To see the full process, read about the [digital proof for event orders](/en/blog/digital-proof-event-order-planners).",
         ],
       },
       {
         heading: "Deadlines: when to lock texts and changes",
         body: [
-          "Lock texts and approval with room to spare, not the week of the wedding. A planning guide recommends reviewing details with all suppliers about one month before the event. Use that as a reference date so a last-minute change does not put your delivery at risk.",
-          "We confirm production and shipping times for each piece over WhatsApp when we quote, once we know your event date.",
+          "Lock texts and approval with room to spare, not the week of the wedding. We confirm production and shipping times for each piece over WhatsApp when we quote, once we know your event date. With that date in hand, you can set a change deadline with the couple before production starts.",
+          "To place your order date against the wedding date, see [when to order wedding favors](/en/blog/when-to-order-wedding-favors).",
         ],
       },
       {
         heading: "A matching set: candy boxes, stickers and temporary tattoos",
         body: [
           "When candy boxes, stickers and temporary tattoos share a palette, typography and texts, the wedding looks planned from start to finish. Designing them together for one event gives you a consistent visual identity, and you coordinate a single supplier instead of several.",
-          "The candy box arrives assembled and empty, with a name and theme; you or the couple decide what goes inside. For filling ideas, see [what to put in a candy box](/blog/que-poner-en-un-dulcero). Temporary tattoos for events are quoted over WhatsApp.",
-          "Vinyl stickers can be ordered with a die cut or kiss cut, and with a matte, glossy or holographic finish. If you also want to brand your own deliverables, we have [labels with your logo](/productos/stickers-logo-personalizado).",
+          "The [custom candy box](/en/products/personalized-party-favor-boxes) arrives assembled and empty, with a name and theme; you or the couple decide what goes inside. For filling ideas, see [what to put in a candy box](/en/blog/what-to-put-in-a-party-favor-box). [Temporary tattoos for events](/en/products/custom-temporary-tattoos) are quoted over WhatsApp.",
+          "Vinyl stickers can be ordered with a die cut or kiss cut, and with a matte, glossy or holographic finish. If you also want to brand your own deliverables, we have [labels with your logo](/en/products/custom-logo-stickers).",
+        ],
+      },
+      {
+        heading: "Useful, custom-designed pieces: the 2026 trend",
+        body: [
+          "2026 trend coverage agrees that wedding favors are moving away from generic objects: guests look for pieces they will use or keep, with the couple's own design. For you, that means proposing details with the event's name, date and palette, not one souvenir that is the same for everyone.",
+          "A Crónica article talks about hyper-personalization and objects guests can use or display long after the wedding. Publimetro, in October 2026, notes that the guest experience weighs more than details made only for the photo. These are trend pieces, not studies with statistics.",
+          "Wedding planner Elliott Trejo, in a Milenio article, mentions talavera, palm objects and color as a trend, adapted to each couple's personality, and says Guadalajara is a reference point with many wedding planners.",
+          "To back up your proposal with examples, see [personalized wedding favors](/en/blog/personalized-wedding-favors-with-name-and-date).",
         ],
       },
       {
         heading: "What to ask your supplier to put in writing",
         body: [
           "Ask for what you agreed in writing: pieces and quantities, final texts, number of digital proofs included, change deadline, payment method, production time and delivery method. A summary over WhatsApp or email prevents misunderstandings and gives you backup when the couple changes their mind.",
-          "It is worth agreeing on punctual delivery and careful packaging in advance.",
+          "For a fuller list to build the order, use the [planner checklist](/en/blog/planner-checklist-custom-favors-order-event).",
         ],
         table: {
           headers: ["What to confirm", "Why it matters"],
@@ -6043,13 +6057,27 @@ export const blogPostsEn: BlogPost[] = [
         heading: "How to start with your next wedding",
         body: [
           "Tell us the date, the number of guests and the palette of your next wedding, and we will put together a quote for the pieces you need. If you work several weddings a year, we can keep a consistent design and communication approach with you. Message us on WhatsApp from the quote button at the end of this page.",
+          "To learn more about how we work with event organizers, visit the [page for planners](/en/planners).",
         ],
       },
     ],
-    relatedProductSlugs: [],
+    relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable", "tatuajes-temporales-personalizados"],
     quoteMessage:
       "Hi, I'm a wedding planner and I'd like a quote for custom wedding details: candy boxes, stickers and temporary tattoos.",
-    sources: [],
+    sources: [
+      {
+        label: "Crónica: wedding favors guests actually keep in 2026 (in Spanish)",
+        url: "https://www.cronica.com.mx/tendencias/2026/09/04/dile-adios-a-los-recuerdos-de-boda-que-terminan-en-la-basura-esto-es-lo-que-si-se-quedan-tus-invitados-en-2026/",
+      },
+      {
+        label: "Publimetro: wedding souvenirs 2026, the trends gaining ground (in Spanish)",
+        url: "https://www.publimetro.com.mx/virales/2026/10/02/souvenirs-para-bodas-2026-las-tendencias-que-ganan-terreno/",
+      },
+      {
+        label: "Milenio: wedding planner Elliott Trejo reveals wedding trends (in Spanish)",
+        url: "https://www.milenio.com/estilo/wedding-planner-elliott-trejo-revela-tendencias-bodas",
+      },
+    ],
     faq: [
       {
         q: "Do you ship pieces outside Guadalajara?",
@@ -6067,9 +6095,20 @@ export const blogPostsEn: BlogPost[] = [
         q: "Do the candy boxes come with candy?",
         a: "No. The candy box arrives assembled and empty, with a name and theme, so you or the couple decide what goes inside.",
       },
+      {
+        q: "What are the order minimums?",
+        a: "Published minimums are 10 pieces for candy boxes, 40 pieces for custom vinyl stickers and 50 pieces for logo labels.",
+      },
+      {
+        q: "How long does the digital proof for stickers take?",
+        a: "For vinyl stickers, the proof normally arrives within 24 hours after payment and includes up to 2 rounds of adjustments.",
+      },
+      {
+        q: "Do the stickers have lamination?",
+        a: "Yes. All our stickers carry high-quality BOPP lamination, and you choose the finish: matte, glossy or holographic.",
+      },
     ],
-    relatedBlogSlugs: [BLOG_SLUG_EN["dulceros-personalizados-guadalajara"], BLOG_SLUG_EN["que-poner-en-un-dulcero"]],
-
+    relatedBlogSlugs: [BLOG_SLUG_EN["dulceros-personalizados-guadalajara"], BLOG_SLUG_EN["que-poner-en-un-dulcero"], BLOG_SLUG_EN["checklist-planners-pedido-detalles-evento"], BLOG_SLUG_EN["prueba-digital-pedido-evento-planners"], BLOG_SLUG_EN["cuando-pedir-souvenirs-de-boda"], BLOG_SLUG_EN["cuantos-souvenirs-pedir-por-evento"]],
   },
   {
     slug: "personalized-surprise-gift-ideas-candy-boxes",

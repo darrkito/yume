@@ -6454,15 +6454,16 @@ export const blogPosts: BlogPost[] = [
       "Guía para wedding planners en Guadalajara: cómo cotizar detalles personalizados por evento, aprobar pruebas digitales y coordinar piezas para bodas.",
     category: "Guías",
     publishedAt: "2026-11-05",
-    modifiedAt: "2026-11-07",
+    modifiedAt: "2026-11-23",
     intro:
-      "Coordinas varias bodas y necesitas un proveedor que entregue la misma calidad en cada una. Esta guía te explica cómo pedir cotización, aprobar pruebas digitales, fijar fechas y reunir dulceros, stickers y tatuajes temporales en una misma línea visual para tus clientes en Guadalajara, Zapopan y todo México.",
+      "Coordinas varias bodas y necesitas un proveedor que entregue la misma calidad en cada una. Esta guía te explica cómo pedir cotización, aprobar pruebas digitales, fijar fechas y reunir dulceros, stickers y tatuajes temporales en una misma línea visual para tus clientes en Guadalajara, Zapopan y todo México. También vemos qué piezas encajan con la tendencia de 2026 y qué conviene dejar por escrito.",
     sections: [
       {
         heading: "Qué debe ofrecer un proveedor de detalles personalizados para wedding planners",
         body: [
           "Un proveedor de detalles personalizados para wedding planners debe darte un proceso claro: cotización por evento, diseño con prueba digital antes de producir, comunicación directa y piezas coherentes entre sí. Tu volumen es por boda, no industrial, así que lo importante es que cada evento se vea planeado y que sepas qué esperar en cada paso.",
-          "Esta guía es para ti, que coordinas varias bodas. Si quieres ver primero una de las piezas, revisa nuestros [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara).",
+          "Esta guía es para ti, que coordinas varias bodas en Guadalajara, Zapopan o fuera de la ciudad. Si quieres ver primero una de las piezas, revisa nuestros [dulceros personalizados en Guadalajara](/blog/dulceros-personalizados-guadalajara).",
+          "Si buscas una visión más amplia de cómo trabajar con un proveedor, tenemos [la guía para planners](/blog/guia-planners-proveedor-detalles-personalizados). Y para armar el pedido paso a paso, un [checklist para planners](/blog/checklist-planners-pedido-detalles-evento).",
         ],
       },
       {
@@ -6470,6 +6471,7 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Para cotizar una boda escríbenos por WhatsApp con los datos básicos del evento: fecha, ciudad, número de invitados, paleta de colores, las piezas que te interesan y los textos o nombres que llevarán. Con eso podemos orientarte sobre cantidades y mínimos, y avisarte si algo necesita confirmarse antes de producir.",
           "Los mínimos publicados son de 10 piezas para dulceros, de 40 piezas para [stickers de vinil personalizados](/productos/stickers-vinil-impermeable) y de 50 piezas para etiquetas con logo. Todos nuestros stickers llevan laminado BOPP de alta calidad. Cuéntanos tu evento completo y cotizamos las piezas juntas.",
+          "Para calcular cuánto necesitas por boda, revisa [cuántos souvenirs pedir por evento](/blog/cuantos-souvenirs-pedir-por-evento).",
         ],
         table: {
           headers: ["Dato del brief", "Qué nos permite definir"],
@@ -6486,35 +6488,47 @@ export const blogPosts: BlogPost[] = [
         heading: "Cómo se maneja un pedido por boda",
         body: [
           "Cada boda se cotiza como un pedido aparte: tú nos mandas el brief por WhatsApp con fecha, ciudad, invitados, paleta, piezas y textos, y cotizamos las piezas del evento juntas. Así cada boda tiene su propia cotización y puedes mantener una línea visual constante entre las bodas que coordinas.",
+          "Como el pedido es por evento y no por producción en serie, cada boda lleva sus propios nombres, fecha y paleta. Puedes mantener tu criterio de calidad y aun así entregar a cada pareja algo distinto.",
+          "Para hablar de presupuesto con la pareja, revisa el [presupuesto de recuerdos por invitado](/blog/presupuesto-recuerdos-de-boda-por-invitado).",
         ],
       },
       {
         heading: "Pruebas digitales y aprobación de textos",
         body: [
           "Para los stickers de vinil te enviamos una prueba digital antes de imprimir, y no se imprime nada sin tu aprobación. Revisa en ella nombres, fechas, ortografía y colores con la pareja, porque ese es el punto de control del pedido. Conviene que una sola persona, tú o la pareja, tenga la última palabra.",
-          "En los stickers de vinil, la prueba llega normalmente en un máximo de 24 horas después del pago e incluye hasta 2 rondas de ajustes.",
+          "En los stickers de vinil, la prueba llega normalmente en un máximo de 24 horas después del pago e incluye hasta 2 rondas de ajustes. En los dulceros también te enviamos una prueba digital antes de producir, y nada se produce hasta que la apruebas.",
+          "Si quieres ver cómo funciona el proceso completo, lee sobre la [prueba digital para pedidos de eventos](/blog/prueba-digital-pedido-evento-planners).",
         ],
       },
       {
         heading: "Fechas límite: cuándo cerrar textos y cambios",
         body: [
-          "Cierra los textos y la aprobación con margen, no la semana de la boda. Una guía de planificación recomienda repasar los detalles con todos los proveedores aproximadamente un mes antes del evento. Usa ese punto como fecha de referencia para que ningún cambio de última hora te comprometa la entrega.",
-          "Los plazos de producción y envío de cada pieza te los confirmamos por WhatsApp al cotizar, una vez que conocemos la fecha de tu evento.",
+          "Cierra textos y aprobación con margen, no la semana de la boda. Los plazos de producción y envío de cada pieza se confirman por WhatsApp al cotizar, cuando ya conocemos la fecha de tu evento. Con esa fecha en mano puedes fijar con la pareja un día límite para cambios, antes de producir.",
+          "Para ubicar cuándo conviene hacer el pedido respecto a tu fecha, revisa [cuándo pedir souvenirs de boda](/blog/cuando-pedir-souvenirs-de-boda).",
         ],
       },
       {
         heading: "Un paquete coherente: dulceros, stickers y tatuajes temporales",
         body: [
           "Cuando los dulceros, los stickers y los tatuajes temporales comparten paleta, tipografía y textos, la boda se ve planeada de principio a fin. Diseñarlos juntos para un mismo evento te da una identidad visual consistente, y tú coordinas un solo proveedor en lugar de varios.",
-          "El dulcero llega armado y vacío, con nombre y temática; tú o la pareja deciden qué lleva dentro. Para ideas de relleno, revisa [qué poner en un dulcero](/blog/que-poner-en-un-dulcero). Los tatuajes temporales para eventos se cotizan por WhatsApp.",
+          "El [dulcero personalizado](/productos/dulceros-personalizados) llega armado y vacío, con nombre y temática; tú o la pareja deciden qué lleva dentro. Para ideas de relleno, revisa [qué poner en un dulcero](/blog/que-poner-en-un-dulcero). Los [tatuajes temporales para eventos](/productos/tatuajes-temporales-personalizados) se cotizan por WhatsApp.",
           "Los stickers de vinil se pueden pedir con corte troquelado o semitroquelado, y con acabado mate, brillante u holográfico. Si además quieres marcar tus propios entregables, tenemos [etiquetas con tu logo](/productos/stickers-logo-personalizado).",
+        ],
+      },
+      {
+        heading: "Piezas útiles y con diseño propio: la tendencia de 2026",
+        body: [
+          "Las notas de tendencias de 2026 coinciden en que los recuerdos de boda se alejan de los objetos genéricos: se buscan piezas que el invitado use o conserve, con diseño propio de la pareja. Para ti, eso significa proponer detalles con nombre, fecha y paleta del evento, no un souvenir igual para todas.",
+          "Una nota de Crónica habla de hiperpersonalización y de objetos que los invitados puedan usar o exhibir mucho después de la boda. Publimetro, en octubre de 2026, señala que pesa más la experiencia del invitado que los detalles pensados solo para la foto. Son notas de tendencias, no estudios con estadísticas.",
+          "El wedding planner Elliott Trejo, en una nota de Milenio, menciona talavera, objetos de palma y color como tendencia, adaptados a la personalidad de cada pareja, y comenta que Guadalajara es un referente con muchos wedding planners.",
+          "Si quieres apoyar tu propuesta con ejemplos, revisa [souvenirs de boda personalizados](/blog/souvenirs-de-boda-personalizados).",
         ],
       },
       {
         heading: "Qué pedir por escrito a tu proveedor",
         body: [
           "Pide por escrito lo que acordaron: piezas y cantidades, textos finales, número de pruebas digitales incluidas, fecha límite de cambios, forma de pago, plazo de producción y forma de entrega. Un resumen por WhatsApp o correo evita malentendidos y te sirve de respaldo cuando la pareja cambia de opinión.",
-          "Conviene acordar de antemano la entrega puntual y el cuidado del empaque.",
+          "Si quieres una lista más completa para armar el pedido, usa el [checklist para planners](/blog/checklist-planners-pedido-detalles-evento).",
         ],
         table: {
           headers: ["Qué confirmar", "Para qué sirve"],
@@ -6531,14 +6545,28 @@ export const blogPosts: BlogPost[] = [
         heading: "Cómo empezar con tu próxima boda",
         body: [
           "Cuéntanos la fecha, el número de invitados y la paleta de tu próxima boda, y armamos una cotización de las piezas que necesites. Si trabajas varias bodas al año, podemos mantener un criterio de diseño y comunicación constante contigo. Escríbenos por WhatsApp desde el botón de cotización al final de esta página.",
+          "Si quieres conocer más sobre cómo trabajamos con organizadoras de eventos, visita la [página para planners](/planners).",
         ],
       },
     ],
-    relatedProductSlugs: [],
-    relatedBlogSlugs: ["dulceros-personalizados-guadalajara", "que-poner-en-un-dulcero"],
+    relatedProductSlugs: ["dulceros-personalizados", "stickers-vinil-impermeable", "tatuajes-temporales-personalizados"],
+    relatedBlogSlugs: ["dulceros-personalizados-guadalajara", "que-poner-en-un-dulcero", "checklist-planners-pedido-detalles-evento", "prueba-digital-pedido-evento-planners", "cuando-pedir-souvenirs-de-boda", "cuantos-souvenirs-pedir-por-evento"],
     quoteMessage:
       "Hola, soy wedding planner y quiero cotizar detalles personalizados para una boda: dulceros, stickers y tatuajes temporales.",
-    sources: [],
+    sources: [
+      {
+        label: "Crónica: recuerdos de boda que sí se quedan tus invitados en 2026",
+        url: "https://www.cronica.com.mx/tendencias/2026/09/04/dile-adios-a-los-recuerdos-de-boda-que-terminan-en-la-basura-esto-es-lo-que-si-se-quedan-tus-invitados-en-2026/",
+      },
+      {
+        label: "Publimetro: souvenirs para bodas 2026, las tendencias que ganan terreno",
+        url: "https://www.publimetro.com.mx/virales/2026/10/02/souvenirs-para-bodas-2026-las-tendencias-que-ganan-terreno/",
+      },
+      {
+        label: "Milenio: el wedding planner Elliott Trejo revela tendencias de bodas",
+        url: "https://www.milenio.com/estilo/wedding-planner-elliott-trejo-revela-tendencias-bodas",
+      },
+    ],
     faq: [
       {
         q: "¿Envían las piezas fuera de Guadalajara?",
@@ -6555,6 +6583,18 @@ export const blogPosts: BlogPost[] = [
       {
         q: "¿Los dulceros incluyen dulces?",
         a: "No. El dulcero llega armado y vacío, con nombre y temática, para que tú o la pareja decidan qué lleva dentro.",
+      },
+      {
+        q: "¿Cuáles son los mínimos de pedido?",
+        a: "Los mínimos publicados son de 10 piezas para dulceros, de 40 piezas para stickers de vinil personalizados y de 50 piezas para etiquetas con logo.",
+      },
+      {
+        q: "¿Cuánto tarda la prueba digital de los stickers?",
+        a: "En los stickers de vinil, la prueba llega normalmente en un máximo de 24 horas después del pago e incluye hasta 2 rondas de ajustes.",
+      },
+      {
+        q: "¿Los stickers llevan laminado?",
+        a: "Sí. Todos nuestros stickers llevan laminado BOPP de alta calidad, y tú eliges el acabado: mate, brillante u holográfico.",
       },
     ],
   },
