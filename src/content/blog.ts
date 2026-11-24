@@ -8193,28 +8193,42 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "que-dulces-le-puedo-poner-a-un-dulcero",
-    title: "Qué dulces le puedo poner a un dulcero según la ocasión",
-    metaTitle: "Qué dulces ponerle a un dulcero según la ocasión",
+    title: "Qué dulces ponerle a un dulcero: guía por ocasión y edad",
+    metaTitle: "Qué dulces ponerle a un dulcero: guía por ocasión y edad",
     description:
-      "Qué dulces le puedo poner a un dulcero en boda, bautizo, XV años o baby shower, cuántos gramos por invitado y cómo coordinar colores y empaque.",
+      "Qué dulces ponerle a un dulcero según la ocasión y la edad: ideas para niños, adultos, boda, XV años y bautizo, cantidades y aviso de alérgenos.",
     category: "Guías",
     publishedAt: "2026-11-17",
-    modifiedAt: "2026-11-18",
+    modifiedAt: "2026-11-24",
     intro:
-      "Un dulcero se ve bien cuando el relleno combina con la ocasión y con los colores del evento. Aquí tienes qué dulces ponerle a un dulcero en una boda, un bautizo, unos XV años, un baby shower, una posada o un cumpleaños, cuántos gramos calcular por invitado y cómo coordinar colores y empaque para que todo se vea planeado.",
+      "Un dulcero se ve bien cuando el relleno combina con la edad de quien lo recibe, con la ocasión y con los colores del evento. Aquí tienes qué dulces ponerle a un dulcero para niños pequeños, niños mayores, adolescentes y adultos, y para boda, XV años, baby shower, bautizo, posada, cumpleaños y graduación. Incluye una referencia de cantidad por invitado, una nota para avisar de alérgenos y cómo coordinar colores y empaque.",
     sections: [
       {
-        heading: "Qué dulces le puedo poner a un dulcero: la regla general",
+        heading: "Qué dulces ponerle a un dulcero: la regla general",
         body: [
-          "Lo que le pongas a un dulcero depende de la ocasión, de quién lo recibe y de los colores del evento. Las guías de bodas recomiendan combinar dulces clásicos con algunos más especiales y visuales. El dulcero de Yume llega armado y vacío, así que tú decides el relleno y lo coordinas con el diseño.",
-          "Piensa en el relleno como parte del regalo: que se vea cuidado, que combine con el diseño y que cada dulce se distinga bien al abrir el dulcero. Para ver más ideas por edad y tipo de fiesta, revisa [qué poner en un dulcero](/blog/que-poner-en-un-dulcero).",
+          "Lo que le pongas a un dulcero depende de tres cosas: quién lo recibe, la ocasión y los colores del evento. Piensa primero en la edad de tus invitados y después en el estilo de la fiesta. El dulcero de Yume llega armado y vacío, así que tú decides el relleno.",
+          "Piensa en el relleno como parte del regalo: que se vea cuidado, que combine con el diseño y que cada dulce se distinga bien al abrir el dulcero. Para más ideas, revisa [qué poner en un dulcero](/blog/que-poner-en-un-dulcero).",
+        ],
+      },
+      {
+        heading: "Qué dulces ponerles a los niños según la edad",
+        body: [
+          "Para niños pequeños conviene elegir piezas pequeñas de sabor suave y porciones seguras, y revisar que no haya piezas sueltas que sean un riesgo. Es un criterio práctico que sugiere una tienda en línea, no una norma. Con niños mayores puedes subir la variedad y seguir la temática de la fiesta.",
+          "Si el dulcero es para una fiesta infantil, mira las [ideas de dulceros para fiesta infantil](/blog/ideas-de-dulceros-para-fiesta-infantil) y los [dulceros para el Día del Niño](/blog/dulceros-para-dia-del-nino). Para adolescentes, una mezcla de texturas y chocolate suele funcionar; es una sugerencia de la misma tienda, no una regla.",
+        ],
+      },
+      {
+        heading: "Qué dulces poner en un dulcero para adultos",
+        body: [
+          "Una guía de manualidades señala que los dulceros se reparten tanto a niños como a adultos, y que para los adultos se incluyen dulces que pican. Más allá de eso, funcionan el chocolate, las texturas variadas y un toque salado o picante para tus invitados, como sugerencia editorial de Yume.",
+          "Si es un cumpleaños, revisa los [detalles de cumpleaños para adultos](/blog/detalles-cumpleanos-adultos-personalizados).",
         ],
       },
       {
         heading: "Qué dulces poner en un dulcero de boda",
         body: [
-          "Para boda conviene una paleta sobria y una mezcla de dulces clásicos con algunos más especiales y visuales, como macarons o trufas. Si hay invitados diabéticos, suma opciones sin azúcar. Una guía de bodas sugiere entre 7 y 10 variedades en una mesa de dulces, para que cada invitado elija.",
-          "Mantén una sola línea de estilo, romántica, vintage o minimalista, y que el diseño del dulcero la siga. Si quieres más ideas, revisa el [dulcero de boda](/blog/que-dulces-poner-en-dulcero-de-boda), [cuántos dulceros pedir](/blog/cuantos-dulceros-pedir-para-una-boda) y los [souvenirs de boda personalizados](/blog/souvenirs-de-boda-personalizados).",
+          "Para boda conviene una paleta sobria y una mezcla de dulces clásicos con algunos más especiales y visuales, como macarons o trufas. Si hay invitados que no pueden comer azúcar, suma opciones sin azúcar. Es una sugerencia editorial de Yume: lo importante es que el relleno siga la línea de estilo de la boda.",
+          "Mantén una sola línea, romántica, vintage o minimalista, y que el diseño del dulcero la siga. Si quieres más ideas, revisa el [dulcero de boda](/blog/que-dulces-poner-en-dulcero-de-boda), [cuántos dulceros pedir](/blog/cuantos-dulceros-pedir-para-una-boda) y los [souvenirs de boda personalizados](/blog/souvenirs-de-boda-personalizados).",
         ],
       },
       {
@@ -8234,14 +8248,14 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Qué dulces poner en un dulcero de bautizo",
         body: [
-          "Para un bautizo, las guías recomiendan una paleta sobria, por ejemplo blanco y dorado, con galletas de vainilla que llevan la inicial del bebé. Suele ser un evento íntimo, así que conviene un detalle sencillo, con pocas variedades y colores coordinados. Si lleva el nombre del bautizado, se vuelve un recuerdo.",
+          "Para un bautizo conviene una paleta sobria, por ejemplo blanco y dorado, con pocas variedades y colores coordinados, porque suele ser un evento íntimo. Unas galletas sencillas con la inicial del bebé son una idea editorial de Yume. Si el dulcero lleva el nombre del bautizado, se vuelve un recuerdo.",
           "Para más ideas, revisa los [dulceros para bautizo](/blog/dulceros-para-bautizo-y-primera-comunion).",
         ],
       },
       {
         heading: "Qué dulces poner en un dulcero para posada o fiesta mexicana",
         body: [
-          "Para una fiesta mexicana o una posada puedes apostar por dulces tradicionales, como mazapanes, dulces de tamarindo y mango deshidratado, que aparecen en mesas mexicanas populares. Combinarlos con el diseño del dulcero y los colores de tu evento es una sugerencia editorial de Yume, no una norma.",
+          "Para una fiesta mexicana o una posada puedes apostar por dulces tradicionales, como mazapanes, dulces de tamarindo y mango deshidratado. Combinarlos con el diseño del dulcero y los colores de tu evento es una sugerencia editorial de Yume, no una norma. Así el relleno también se siente de la ocasión.",
           "Si organizas una posada o un evento con clientes, revisa los [detalles de posada para empresa](/blog/detalles-posada-empresa-personalizados) y los [dulceros para eventos empresariales](/blog/dulceros-para-eventos-empresariales).",
         ],
       },
@@ -8249,24 +8263,29 @@ export const blogPosts: BlogPost[] = [
         heading: "Qué dulces poner en un dulcero de cumpleaños o graduación",
         body: [
           "Para cumpleaños y graduaciones no hay una regla fija: elige dulces que le gusten a quien celebra y que combinen con los colores del evento. Es una recomendación editorial de Yume. Si los invitados son niños o adultos cambia el relleno, no la idea: una paleta coordinada y el nombre en el dulcero.",
-          "Para fiestas infantiles, mira las [ideas de dulceros para fiesta infantil](/blog/ideas-de-dulceros-para-fiesta-infantil). Para adultos, los [detalles de cumpleaños para adultos](/blog/detalles-cumpleanos-adultos-personalizados), y para cierres de ciclo, los [dulceros para graduación](/blog/dulceros-para-graduacion).",
+          "Para cierres de ciclo, revisa los [dulceros para graduación](/blog/dulceros-para-graduacion) y los [dulceros de fin de año escolar](/blog/dulceros-detalles-fin-de-ano-escolar).",
         ],
       },
       {
-        heading: "Cuántos gramos de dulce calcular por invitado",
+        heading: "Qué llevan y qué ponen en un dulcero: cómo armar la mezcla",
         body: [
-          "Las calculadoras de candy bar dan cifras distintas, y ninguna es norma. Hacé Cuentas calcula 150 a 200 gramos por persona en un candy bar estándar, y 80 a 100 si es solo decorativo. Bodas.net sugiere unos 100 gramos cuando los dulces son parte del banquete. Úsalas como referencia orientativa.",
-          "Separa el caso de dulces como parte del banquete del de mesa principal, como muestra la tabla.",
+          "Un dulcero bien armado combina pocas variedades que se distingan bien: algo de chocolate, algo suave, un dulce tradicional y, para adultos, un toque salado o picante. Esta mezcla es una propuesta editorial de Yume, no un estándar. Ajusta cada parte a la edad de quienes lo reciben.",
+          "Guiainfantil advierte que las peceras de cristal se usan más en eventos de adultos por el riesgo de que se rompan. Para comparar envases, revisa [cajas, bolsas o vasos dulceros](/blog/cajas-bolsas-o-vasos-dulceros-cual-elegir).",
         ],
-        table: {
-          headers: ["Situación", "Referencia por persona", "Fuente"],
-          rows: [
-            ["Mesa solo visual o decorativa", "80 a 100 g", "Hacé Cuentas"],
-            ["Dulces como parte del banquete", "Unos 100 g", "Bodas.net"],
-            ["Candy bar estándar", "150 a 200 g", "Hacé Cuentas"],
-            ["Mesa que reemplaza el postre", "300 g o más", "Hacé Cuentas"],
-          ],
-        },
+      },
+      {
+        heading: "Cómo avisar de alérgenos en el dulcero",
+        body: [
+          "Una tienda en línea sugiere separar los dulces que llevan frutos secos u otros alérgenos del resto. Es un criterio práctico, no una norma. Si tu evento tiene invitados con alergias, avisa a las familias qué lleva el dulcero antes de la fiesta, para que cada quien decida con tranquilidad.",
+          "Como el dulcero de Yume llega vacío, tú decides cada ingrediente que entra y puedes dejar fuera los que preocupen a tus invitados.",
+        ],
+      },
+      {
+        heading: "Cuánto dulce calcular por invitado",
+        body: [
+          "No hay una cifra única. Bodas.net, un sitio de España, menciona unos 100 gramos de dulces por persona como orientación para una candy bar. Úsala solo como referencia aproximada y ajústala según si el dulcero es un recuerdo pequeño o parte de una mesa de postres.",
+          "El pedido mínimo es de 10 piezas. Para bodas, revisa [cuántos dulceros pedir para una boda](/blog/cuantos-dulceros-pedir-para-una-boda).",
+        ],
       },
       {
         heading: "Cómo coordinar colores y empaque con tu evento",
@@ -8284,27 +8303,19 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     relatedProductSlugs: ["dulceros-personalizados"],
-    relatedBlogSlugs: ["que-poner-en-un-dulcero", "que-dulces-poner-en-dulcero-de-boda", "dulceros-para-xv-anos-elegantes", "recuerdos-baby-shower-personalizados", "dulceros-para-bautizo-y-primera-comunion", "mesa-de-dulces-para-boda", "dulceros-para-graduacion", "detalles-posada-empresa-personalizados"],
+    relatedBlogSlugs: ["que-poner-en-un-dulcero", "que-dulces-poner-en-dulcero-de-boda", "ideas-de-dulceros-para-fiesta-infantil", "dulceros-para-xv-anos-elegantes", "recuerdos-baby-shower-personalizados", "dulceros-para-bautizo-y-primera-comunion", "mesa-de-dulces-para-boda", "dulceros-para-graduacion", "detalles-posada-empresa-personalizados"],
     sources: [
       {
         label: "Bodas.net: todo lo que debéis saber antes de montar una candy bar",
         url: "https://www.bodas.net/articulos/todo-lo-que-debeis-saber-antes-de-montar-una-candy-bar--c2448",
       },
       {
-        label: "Bodas.net: cómo calcular la cantidad de comida para el banquete",
-        url: "https://www.bodas.net/articulos/como-calcular-la-cantidad-de-comida-para-el-banquete--c1693",
+        label: "Guiainfantil: cómo decorar de forma original tu dulcero",
+        url: "https://www.guiainfantil.com/ocio/manualidades/como-decorar-de-forma-original-tu-dulcero-6-ideas-para-hacer-en-casa/",
       },
       {
-        label: "Hacé Cuentas: calculadora de candy bar por personas",
-        url: "https://hacecuentas.com/calculadora-candy-bar-personas",
-      },
-      {
-        label: "Hola: cómo organizar una mesa de bautizo",
-        url: "https://www.hola.com/cocina/noticias/20200304162187/organiza-una-mesa-de-bautizo-recetas/",
-      },
-      {
-        label: "Chic Magazine: mesas de postres, cómo armarlas y decorarlas",
-        url: "https://www.chicmagazine.com.mx/foodies-y-viajes/mesas-de-postres-como-armarlas-y-decorarlas",
+        label: "Líder: dulces para cumpleaños",
+        url: "https://super.lider.cl/v/dulces-para-cumpleanos",
       },
     ],
     faq: [
@@ -8313,28 +8324,32 @@ export const blogPosts: BlogPost[] = [
         a: "No. El dulcero llega armado y vacío, listo para llenar con los dulces que tú elijas.",
       },
       {
-        q: "¿Qué incluye la personalización?",
-        a: "El nombre de quien lo recibe y la temática que elijas. Te enviamos una prueba digital antes de producir.",
+        q: "¿Cuál es el pedido mínimo de dulceros?",
+        a: "El pedido mínimo es de 10 piezas. Te enviamos una prueba digital antes de producir.",
       },
       {
-        q: "¿Cuál es el pedido mínimo de dulceros?",
-        a: "El pedido mínimo es de 10 piezas.",
+        q: "¿Qué dulces ponerle a un dulcero para niños pequeños?",
+        a: "Piezas pequeñas, de sabor suave y en porciones seguras, sin piezas sueltas que sean un riesgo. Es un criterio práctico que sugiere una tienda en línea, no una norma.",
+      },
+      {
+        q: "¿Qué dulces ponerle a un dulcero para adultos?",
+        a: "Chocolate, texturas variadas y, según una guía de manualidades, dulces que pican. El toque salado es una sugerencia editorial de Yume.",
+      },
+      {
+        q: "¿Qué llevan los dulceros de boda?",
+        a: "Una mezcla de dulces clásicos con algunos más especiales, como macarons o trufas, dentro de una sola línea de estilo, y opciones sin azúcar si hay invitados que no pueden comerla. Es una sugerencia editorial de Yume.",
       },
       {
         q: "¿Cuántos gramos de dulce pongo por invitado?",
-        a: "No hay una norma. Hacé Cuentas calcula 150 a 200 gramos por persona en un candy bar estándar y 80 a 100 si es solo decorativo, y Bodas.net sugiere unos 100 gramos cuando los dulces son parte del banquete.",
+        a: "No hay una norma. Bodas.net, de España, menciona unos 100 gramos por persona como referencia aproximada.",
       },
       {
-        q: "¿Qué dulces le puedo poner a un dulcero de boda?",
-        a: "Una mezcla de dulces clásicos con algunos más especiales, como macarons o trufas, dentro de una sola línea de estilo, y opciones sin azúcar si hay invitados diabéticos.",
+        q: "¿Qué dulces mexicanos ponen en un dulcero de posada?",
+        a: "Mazapanes, dulces de tamarindo y mango deshidratado son opciones tradicionales que sugerimos para una posada o fiesta mexicana.",
       },
       {
-        q: "¿Qué dulces van mejor en XV años, baby shower o bautizo?",
-        a: "Para XV años, galletas decoradas, bombones o trufas en la paleta de la fiesta. Para baby shower, gomitas, nubes o galletas decoradas en los tonos de la temática. Para bautizo, una paleta sobria, por ejemplo blanco y dorado, con galletas de vainilla con la inicial del bebé. Son sugerencias editoriales de Yume.",
-      },
-      {
-        q: "¿Qué dulces mexicanos puedo poner para una posada?",
-        a: "Mazapanes, dulces de tamarindo y mango deshidratado son dulces tradicionales que aparecen en mesas mexicanas populares.",
+        q: "¿Cómo aviso a las familias de los alérgenos?",
+        a: "Una tienda en línea sugiere separar los dulces con frutos secos u otros alérgenos. Avisa qué lleva el dulcero antes de la fiesta para que cada familia decida.",
       },
     ],
   },
