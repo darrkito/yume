@@ -6710,7 +6710,7 @@ export const blogPosts: BlogPost[] = [
       "Cuántos dulceros pedir para una boda: cómo pasar de invitados confirmados a piezas, cuánto reservar y cuándo cerrar el número con tu planner.",
     category: "Guías",
     publishedAt: "2026-11-07",
-    modifiedAt: "2026-11-09",
+    modifiedAt: "2026-11-24",
     intro:
       "Antes de pedir los dulceros de tu boda conviene tener claro cuántos necesitas: uno por invitado alcanza para entregar, pero no cubre a los novios, la mesa de dulces ni los cambios de última hora. Esta guía te muestra cómo pasar de la lista de invitados al número final de piezas, con ejemplos por tamaño de boda, pensada para novias y para wedding planners.",
     sections: [
@@ -6718,21 +6718,21 @@ export const blogPosts: BlogPost[] = [
         heading: "Cuántos dulceros pedir para una boda: la regla simple",
         body: [
           "Pide un dulcero por cada invitado confirmado, o uno por pareja o familia si los entregas así, y suma una reserva para los novios, la mesa de dulces y cualquier cambio de último momento. La cuenta se cierra después de recibir las confirmaciones, no antes, porque el número de invitados puede cambiar hasta el final.",
-          "Esta regla es distinta a la de una candy bar. Las guías de candy bar calculan por peso de golosinas o por número de tarros, porque el dulce va a granel. Un dulcero es una pieza individual, así que se cuenta por persona.",
+          "Una candy bar se sirve a granel; un dulcero es una pieza individual, así que se cuenta por persona o por grupo.",
         ],
       },
       {
         heading: "Por persona o por pareja: cómo contar los dulceros",
         body: [
           "Cuenta por persona si cada invitado se lleva su propio dulcero con su nombre o con el diseño de la boda. Cuenta por pareja o por familia si dejas uno por cada grupo que llega junto. Decide esto primero, porque cambia el total y también cómo tu planner organiza la entrega.",
-          "Los niños también cuentan si les corresponde su propio detalle. Anótalos en la lista antes de sumar, y decide con la pareja o con la familia si un invitado que va acompañado recibe uno o dos.",
+          "Los niños también cuentan si les corresponde su propio detalle. Anótalos antes de sumar, y si quieres algo pensado para ellos, mira los [dulceros para niños en la boda](/blog/dulceros-para-ninos-invitados-boda). Decide con la pareja o con la familia si un invitado que va acompañado recibe uno o dos.",
         ],
       },
       {
         heading: "De invitados a piezas: un ejemplo paso a paso",
         body: [
           "Suma tus invitados confirmados, agrega las piezas para los novios y la mesa, y termina con una reserva. Con 120 invitados confirmados, un dulcero por persona, 2 para los novios, 4 para la mesa de dulces y una reserva de 6, el pedido sería de 132 piezas. Es un ejemplo ilustrativo, no una cifra de un tercero.",
-          "Los números del cuadro solo muestran la suma; cambia cada línea según tu lista. El pedido mínimo de dulceros es de 10 piezas, y puedes pedir cualquier cantidad desde ahí.",
+          "Los números del cuadro solo muestran la suma; cambia cada línea según tu lista.",
         ],
         table: {
           headers: ["Concepto", "Piezas", "Cómo se cuenta"],
@@ -6749,7 +6749,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Ejemplos de cuántos dulceros pedir según el tamaño de la boda",
         body: [
           "Entregar por persona sigue la lista de invitados; entregar por pareja o familia sigue el número de grupos. Por eso la misma boda de 120 invitados puede pedir 132 piezas por persona u 80 por grupo, según el ejemplo de abajo. Elige cómo entregarás antes de contar y pide a tu planner la lista en ese formato.",
-          "Los extras de cada fila son supuestos de ejemplo, no una recomendación: cambia novios, mesa y reserva según tu boda. Recuerda que el pedido mínimo es de 10 piezas.",
+          "Los extras de cada fila son supuestos de ejemplo, no una recomendación: cambia novios, mesa y reserva según tu boda.",
         ],
         table: {
           headers: ["Boda de ejemplo", "Cómo se entrega", "Cuenta", "Total"],
@@ -6764,23 +6764,22 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Cuántos dulceros extra reservar",
         body: [
-          "No hay una cantidad fija de extras que sirva para todas las bodas. Según guías del sector, depende del precio de cada pieza: con detalles baratos sobrar casi no pesa, con piezas caras quizá no compense. Reserva más si hay invitados que pueden pasar de No a Sí, o si la boda es de destino.",
-          "Los dulceros se piden por pieza desde 10, así que la reserva se ajusta al número que tú decidas.",
+          "No hay una cantidad fija de extras que sirva para todas las bodas: la reserva la decides tú según cuánto margen quieras tener. Lo que sí está claro es el piso del pedido, que es de 10 piezas, y desde ahí puedes pedir cualquier cantidad exacta.",
+          "Si además estás armando el presupuesto, revisa el [presupuesto de recuerdos de boda](/blog/presupuesto-recuerdos-de-boda-por-invitado) por invitado.",
         ],
       },
       {
         heading: "Candy bar o dulcero: por qué no se cuentan igual",
         body: [
-          "Una candy bar se calcula por peso de golosinas o por tarros porque el dulce va a granel; un dulcero individual se cuenta por pieza. Las cifras para la candy bar no sirven para decidir cuántas piezas de dulceros pedir.",
-          "Como referencia de esa guía, pensada para una candy bar de golosinas: unos 150 g por invitado en bodas pequeñas, unos 100 g en medianas y unos 80 g en grandes. Propone 4 a 6 tarros medianos para 50 invitados, 10 o 12 para 50 a 150 y 15 o 16 para unos 200, y da como ejemplo unos 10 kg de golosinas para 100 personas.",
-          "Lo que sí te sirve de esas cifras es la idea de fondo: la cantidad por persona baja cuando hay más invitados. Con dulceros la lógica es otra, porque cada pieza ya lleva su porción dentro.",
+          "Una candy bar se sirve a granel, así que se planea por cantidad de golosinas. Un dulcero es una pieza individual que tú llenas con la porción de cada invitado, así que se cuenta por persona o por grupo. Por eso las cuentas de una candy bar no te dicen cuántas piezas pedir.",
+          "Con dulceros, lo que importa es la lista de invitados y la forma de entrega, no el peso de los dulces.",
         ],
       },
       {
         heading: "Dulceros para la mesa de dulces y para cada lugar",
         body: [
           "Separa tres usos antes de contar: el dulcero que se entrega a cada invitado, los que se exhiben llenos en la mesa de dulces y la reserva. Así no mezclas piezas de entrega con piezas de decoración, y puedes cerrar cada cifra por separado cuando tengas la lista final.",
-          "Según guías del sector, la candy bar acompaña al postre y al banquete, no los sustituye, y suele ponerse cerca de la pista de baile o abrirse después de comer. Para el diseño y el armado de esa mesa, revisa nuestra guía de [mesa de dulces para boda](/blog/mesa-de-dulces-para-boda).",
+          "Para el diseño y el armado de esa mesa, revisa nuestra guía de [mesa de dulces para boda](/blog/mesa-de-dulces-para-boda).",
           "El dulcero llega armado y vacío, así que lo que va dentro lo eliges tú. Si necesitas ideas, mira [qué poner en un dulcero](/blog/que-poner-en-un-dulcero).",
         ],
       },
@@ -6788,13 +6787,13 @@ export const blogPosts: BlogPost[] = [
         heading: "Cuándo cerrar el número y cómo coordinarlo con tu planner",
         body: [
           "Cierra la cantidad cuando ya tengas las confirmaciones de asistencia, y avisa a tu proveedor con la fecha de tu boda. Si trabajas con una wedding planner, pídele la lista final por persona o por pareja, así el pedido, la prueba digital y la entrega salen con el mismo número.",
-          "Antes de producir te enviamos una prueba digital del diseño, y nada se produce hasta que la apruebas. Los tiempos de producción y envío dependen de tu fecha: escríbenos por WhatsApp con el día de tu boda y te los confirmamos.",
-          "Si quieres ver cómo trabajamos, conoce nuestros [dulceros personalizados](/blog/dulceros-personalizados-guadalajara) en Guadalajara, con envío a todo México.",
+          "Antes de producir te enviamos una prueba digital del diseño, y nada se produce hasta que la apruebas. Los tiempos de producción y envío dependen de tu fecha: escríbenos por WhatsApp con el día de tu boda y te los confirmamos. Para planear las fechas de todos los recuerdos, mira [cuándo pedir souvenirs](/blog/cuando-pedir-souvenirs-de-boda).",
+          "Si quieres ver cómo trabajamos, conoce nuestros [dulceros personalizados](/productos/dulceros-personalizados) o la guía de [dulceros en Guadalajara](/blog/dulceros-personalizados-guadalajara), con envío a todo México.",
         ],
       },
     ],
-    relatedProductSlugs: [],
-    relatedBlogSlugs: ["mesa-de-dulces-para-boda", "que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara"],
+    relatedProductSlugs: ["dulceros-personalizados"],
+    relatedBlogSlugs: ["mesa-de-dulces-para-boda", "que-poner-en-un-dulcero", "dulceros-personalizados-guadalajara", "dulceros-para-ninos-invitados-boda", "cuando-pedir-souvenirs-de-boda", "presupuesto-recuerdos-de-boda-por-invitado"],
     quoteMessage: "Hola, quiero cotizar dulceros personalizados para mi boda.",
     faq: [
       {
@@ -6802,12 +6801,16 @@ export const blogPosts: BlogPost[] = [
         a: "Parte de un dulcero por invitado confirmado, es decir 100 piezas, y suma las de los novios, la mesa de dulces y la reserva que decidas.",
       },
       {
+        q: "¿Cuántos dulceros pedir para una boda de 50 invitados?",
+        a: "Como ejemplo ilustrativo: 50 por persona, 2 para los novios, 2 para la mesa y 2 de reserva suman 56 piezas. Cambia cada línea según tu lista.",
+      },
+      {
         q: "¿Cuántos dulceros pedir si entrego uno por pareja o familia?",
         a: "Cuenta los grupos que llegan juntos en lugar de los invitados, y suma después los de los novios, la mesa de dulces y tu reserva.",
       },
       {
         q: "¿Cuál es la diferencia entre una candy bar y un dulcero?",
-        a: "La candy bar se calcula por peso de golosinas o por tarros. El dulcero es una pieza individual y se cuenta por persona o por grupo.",
+        a: "La candy bar se sirve a granel. El dulcero es una pieza individual y se cuenta por persona o por grupo.",
       },
       {
         q: "¿Los dulceros incluyen dulces?",
@@ -6816,6 +6819,18 @@ export const blogPosts: BlogPost[] = [
       {
         q: "¿Cuál es el pedido mínimo de dulceros?",
         a: "El pedido mínimo es de 10 piezas, y desde ahí puedes pedir la cantidad exacta que necesitas.",
+      },
+      {
+        q: "¿Cuándo debo cerrar el número de dulceros?",
+        a: "Cuando ya tengas las confirmaciones de asistencia. Si trabajas con una planner, pídele la lista final por persona o por pareja.",
+      },
+      {
+        q: "¿Me muestran el diseño antes de producir?",
+        a: "Sí. Antes de producir te enviamos una prueba digital, y nada se produce hasta que la apruebas.",
+      },
+      {
+        q: "¿Hacen envíos a todo México?",
+        a: "Sí, enviamos desde Guadalajara a todo México. Escríbenos por WhatsApp con la fecha de tu boda y te confirmamos los tiempos.",
       },
     ],
   },

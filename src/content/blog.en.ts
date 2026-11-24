@@ -6223,7 +6223,7 @@ export const blogPostsEn: BlogPost[] = [
       "How many candy boxes to order for a wedding: turn confirmed guests into pieces, plan a reserve and know when to lock the count with your planner.",
     category: "Guides",
     publishedAt: "2026-11-07",
-    modifiedAt: "2026-11-09",
+    modifiedAt: "2026-11-24",
     intro:
       "Before ordering your wedding candy boxes it helps to know how many you need: one per guest covers the handout, but not the couple, the candy table or last-minute changes. This guide shows you how to go from the guest list to the final number of pieces, with examples by wedding size, written for brides and for wedding planners.",
     sections: [
@@ -6231,21 +6231,21 @@ export const blogPostsEn: BlogPost[] = [
         heading: "How many candy boxes to order for a wedding: the simple rule",
         body: [
           "Order one candy box per confirmed guest, or one per couple or family if you hand them out that way, then add a reserve for the couple, the candy table and any last-minute changes. Close the count after RSVPs arrive, because the guest list can change right up to the end.",
-          "This differs from a candy bar. Candy bar guides calculate by weight of sweets or by number of jars, because the candy is served loose. A candy box is an individual piece, so it is counted per person.",
+          "A candy bar is served loose; a candy box is an individual piece, so it is counted per person or per group.",
         ],
       },
       {
         heading: "Per person or per couple: how to count candy boxes",
         body: [
           "Count per person if every guest takes home their own candy box with their name or the wedding design. Count per couple or family if you leave one for each group that arrives together. Decide this first, because it changes the total and how your planner organizes the handout.",
-          "Children count too if they get their own favor. Write them on the list before adding up, and decide with the couple or family whether a guest who comes with a plus-one gets one box or two.",
+          "Children count too if they get their own favor. Write them on the list before adding up, and if you want something made for them, see our [candy boxes for kids at weddings](/en/blog/wedding-candy-boxes-for-kids). Decide with the couple or family whether a guest who comes with a plus-one gets one box or two.",
         ],
       },
       {
         heading: "From guests to pieces: a step-by-step example",
         body: [
           "Add your confirmed guests, add pieces for the couple and the candy table, and finish with a reserve. With 120 confirmed guests, one candy box per person, 2 for the couple, 4 for the candy table and a reserve of 6, the order would be 132 pieces. This is an illustrative example, not a third-party figure.",
-          "The numbers in the table only show the sum; change each line to fit your list. The minimum order for candy boxes is 10 pieces, and you can order any quantity from there.",
+          "The numbers in the table only show the sum; change each line to fit your list.",
         ],
         table: {
           headers: ["Item", "Pieces", "How it is counted"],
@@ -6262,7 +6262,7 @@ export const blogPostsEn: BlogPost[] = [
         heading: "Examples of how many candy boxes to order by wedding size",
         body: [
           "Delivering per person follows your guest list; delivering per couple or family follows the number of groups. That is why the same 120-guest wedding can order 132 pieces per person or 80 per group, based on the example below. Choose how you will hand them out before counting, and ask your planner for the list in that format.",
-          "The extras in each row are example assumptions, not a recommendation: change the couple, table and reserve to fit your wedding. Remember that the minimum order is 10 pieces.",
+          "The extras in each row are example assumptions, not a recommendation: change the couple, table and reserve to fit your wedding.",
         ],
         table: {
           headers: ["Example wedding", "How they are handed out", "Count", "Total"],
@@ -6277,23 +6277,22 @@ export const blogPostsEn: BlogPost[] = [
       {
         heading: "How many extra candy boxes to reserve",
         body: [
-          "There is no fixed number of extras that works for every wedding. A general guideline is that it depends on the price of each piece: with cheap favors, having spares costs little, and with expensive ones it may not be worth it. Reserve more if guests may switch from No to Yes, or if the wedding is a destination wedding.",
-          "Candy boxes are ordered by the piece from 10, so the reserve adjusts to whatever number you decide.",
+          "There is no fixed number of extras that works for every wedding: the reserve is yours to decide, based on how much margin you want. What is clear is the floor of the order, which is 10 pieces, and from there you can order any exact quantity.",
+          "If you are also building the budget, see the [wedding favor budget per guest](/en/blog/wedding-favor-budget-per-guest).",
         ],
       },
       {
         heading: "Candy bar or candy box: why they are not counted the same way",
         body: [
-          "A candy bar is calculated by weight of sweets or by number of jars because the candy is served loose; an individual candy box is counted by the piece. Industry guides give figures for the candy bar, not for candy boxes, so they do not tell you how many pieces to order.",
-          "As a reference from that guide, written for a candy bar of sweets: about 150 g per guest at small weddings, about 100 g at medium ones and about 80 g at large ones. It suggests 4 to 6 medium jars for 50 guests, 10 or 12 for 50 to 150 and 15 or 16 for about 200, and gives about 10 kg of sweets for 100 people as an example.",
-          "What is useful from those figures is the underlying idea: the amount per person goes down when there are more guests. With candy boxes the logic is different, because each piece already holds its own portion.",
+          "A candy bar is served loose, so it is planned by quantity of sweets. A candy box is an individual piece that you fill with each guest's portion, so it is counted per person or per group. That is why candy bar math does not tell you how many pieces to order.",
+          "With candy boxes, what matters is the guest list and how you hand them out, not the weight of the sweets.",
         ],
       },
       {
         heading: "Candy boxes for the candy table and for each place setting",
         body: [
           "Separate three uses before counting: the candy box handed to each guest, the ones displayed filled on the candy table, and the reserve. This way you do not mix handout pieces with decoration pieces, and you can close each figure separately once you have the final list.",
-          "According to industry guides, a candy bar accompanies dessert and the banquet rather than replacing them, and is usually placed near the dance floor or opened after the meal. For the design and setup of the table, see our guide to a [wedding candy table](/en/blog/wedding-candy-table-custom-candy-boxes).",
+          "For the design and setup of the table, see our guide to a [wedding candy table](/en/blog/wedding-candy-table-custom-candy-boxes).",
           "The candy box arrives assembled and empty, so you choose what goes inside. If you need ideas, see [what to put in a candy box](/en/blog/what-to-put-in-a-party-favor-box).",
         ],
       },
@@ -6301,12 +6300,12 @@ export const blogPostsEn: BlogPost[] = [
         heading: "When to lock the number and how to coordinate with your planner",
         body: [
           "Lock the quantity once you have attendance confirmations, and tell your supplier your wedding date. If you work with a wedding planner, ask for the final list per person or per couple, so the order, the digital proof and the delivery all use the same number.",
-          "Before production we send you a digital proof of the design, and nothing is produced until you approve it. Production and shipping times depend on your date: write to us on WhatsApp with your wedding day and we will confirm them.",
-          "If you want to see how we work, discover our [personalized candy boxes](/en/blog/personalized-party-favor-boxes-guadalajara) in Guadalajara, with shipping throughout Mexico.",
+          "Before production we send you a digital proof of the design, and nothing is produced until you approve it. Production and shipping times depend on your date: write to us on WhatsApp with your wedding day and we will confirm them. To plan the dates for all your keepsakes, see [when to order wedding favors](/en/blog/when-to-order-wedding-favors).",
+          "If you want to see how we work, discover our [personalized party favor boxes](/en/products/personalized-party-favor-boxes) or the guide to [candy boxes in Guadalajara](/en/blog/personalized-party-favor-boxes-guadalajara), with shipping throughout Mexico.",
         ],
       },
     ],
-    relatedProductSlugs: [],
+    relatedProductSlugs: ["dulceros-personalizados"],
     quoteMessage: "Hi, I would like a quote for personalized candy boxes for my wedding.",
     sources: [],
     faq: [
@@ -6315,12 +6314,16 @@ export const blogPostsEn: BlogPost[] = [
         a: "Start from one candy box per confirmed guest, which is 100 pieces, and add those for the couple, the candy table and the reserve you decide.",
       },
       {
+        q: "How many candy boxes should I order for a wedding of 50 guests?",
+        a: "As an illustrative example: 50 per person, 2 for the couple, 2 for the table and 2 in reserve add up to 56 pieces. Change each line to fit your list.",
+      },
+      {
         q: "How many candy boxes should I order if I give one per couple or family?",
         a: "Count the groups that arrive together instead of the guests, then add those for the couple, the candy table and your reserve.",
       },
       {
         q: "What is the difference between a candy bar and a candy box?",
-        a: "A candy bar is calculated by weight of sweets or by number of jars. A candy box is an individual piece and is counted per person or per group.",
+        a: "A candy bar is served loose. A candy box is an individual piece and is counted per person or per group.",
       },
       {
         q: "Do the candy boxes come with candy?",
@@ -6330,9 +6333,20 @@ export const blogPostsEn: BlogPost[] = [
         q: "What is the minimum order for candy boxes?",
         a: "The minimum order is 10 pieces, and from there you can order the exact quantity you need.",
       },
+      {
+        q: "When should I lock the number of candy boxes?",
+        a: "Once you have attendance confirmations. If you work with a planner, ask for the final list per person or per couple.",
+      },
+      {
+        q: "Do you show the design before producing?",
+        a: "Yes. Before production we send you a digital proof, and nothing is produced until you approve it.",
+      },
+      {
+        q: "Do you ship throughout Mexico?",
+        a: "Yes, we ship from Guadalajara throughout Mexico. Write to us on WhatsApp with your wedding date and we will confirm the timing.",
+      },
     ],
-    relatedBlogSlugs: [BLOG_SLUG_EN["mesa-de-dulces-para-boda"], BLOG_SLUG_EN["que-poner-en-un-dulcero"], BLOG_SLUG_EN["dulceros-personalizados-guadalajara"]],
-
+    relatedBlogSlugs: ["wedding-candy-table-custom-candy-boxes", "what-to-put-in-a-party-favor-box", "personalized-party-favor-boxes-guadalajara", "wedding-candy-boxes-for-kids", "when-to-order-wedding-favors", "wedding-favor-budget-per-guest"],
   },
   {
     slug: "what-sweets-to-put-in-a-wedding-candy-dish",
